@@ -86,26 +86,73 @@
         </div>
 
         <div class="hero-visual">
+
           <div
-            class="mastery-model mastery-model-equal"
+            class="mastery-model mastery-model-svg"
             aria-label="Adaptive mastery path: Practice, Repair, Bridge, and Master"
           >
-            <div class="model-ring model-ring-equal" aria-hidden="true">
-              <span class="model-node node-practice">1</span>
-              <span class="model-node node-repair">2</span>
-              <span class="model-node node-bridge">3</span>
-              <span class="model-node node-master">4</span>
+            <svg
+              class="mastery-path-svg"
+              viewBox="0 0 500 500"
+              role="img"
+              aria-labelledby="mastery-path-title mastery-path-desc"
+            >
+              <title id="mastery-path-title">Adaptive mastery path</title>
+              <desc id="mastery-path-desc">
+                Four equal stages move clockwise from Practice to Repair to Bridge to Master,
+                then return to Practice for a new learning cycle.
+              </desc>
 
-              <span class="path-arrow arrow-12"></span>
-              <span class="path-arrow arrow-23"></span>
-              <span class="path-arrow arrow-34"></span>
-              <span class="path-arrow arrow-41"></span>
+              <defs>
+                <marker
+                  id="path-arrowhead"
+                  viewBox="0 0 24 24"
+                  refX="21"
+                  refY="12"
+                  markerWidth="24"
+                  markerHeight="24"
+                  orient="auto"
+                  markerUnits="userSpaceOnUse"
+                >
+                  <path d="M 1 2 L 22 12 L 1 22 Z" fill="#061d46"></path>
+                </marker>
+              </defs>
 
-              <div class="model-center">
-                <span class="model-center-title">Adaptive</span>
-                <span class="model-center-label">Mastery Path</span>
-              </div>
-            </div>
+              <circle class="mastery-ring-shadow" cx="250" cy="250" r="210"></circle>
+                <path class="mastery-arc segment-practice" d="M 126.21 112.52 A 185 185 0 0 1 373.79 112.52" marker-end="url(#path-arrowhead)"></path>
+                <path class="mastery-arc segment-repair" d="M 387.48 126.21 A 185 185 0 0 1 387.48 373.79" marker-end="url(#path-arrowhead)"></path>
+                <path class="mastery-arc segment-bridge" d="M 373.79 387.48 A 185 185 0 0 1 126.21 387.48" marker-end="url(#path-arrowhead)"></path>
+                <path class="mastery-arc segment-master" d="M 112.52 373.79 A 185 185 0 0 1 112.52 126.21" marker-end="url(#path-arrowhead)"></path>
+              <circle class="mastery-center-disc" cx="250" cy="250" r="143"></circle>
+              <circle class="mastery-center-outline" cx="250" cy="250" r="132"></circle>
+
+              <g class="mastery-node" transform="translate(250 65)">
+                <circle r="23"></circle>
+                <text text-anchor="middle" dominant-baseline="central">1</text>
+              </g>
+
+              <g class="mastery-node" transform="translate(435 250)">
+                <circle r="23"></circle>
+                <text text-anchor="middle" dominant-baseline="central">2</text>
+              </g>
+
+              <g class="mastery-node" transform="translate(250 435)">
+                <circle r="23"></circle>
+                <text text-anchor="middle" dominant-baseline="central">3</text>
+              </g>
+
+              <g class="mastery-node" transform="translate(65 250)">
+                <circle r="23"></circle>
+                <text text-anchor="middle" dominant-baseline="central">4</text>
+              </g>
+
+              <text class="mastery-center-title-svg" x="250" y="248" text-anchor="middle">
+                Adaptive
+              </text>
+              <text class="mastery-center-label-svg" x="250" y="286" text-anchor="middle">
+                MASTERY PATH
+              </text>
+            </svg>
 
             <ol class="model-legend">
               <li><span>1</span> Practice</li>
@@ -114,6 +161,7 @@
               <li><span>4</span> Master</li>
             </ol>
           </div>
+
         </div>
       </div>
     </section>
