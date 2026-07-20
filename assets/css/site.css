@@ -1363,3 +1363,31 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================
+   TARGETED NAVIGATION + MISSION LINKS
+========================================= */
+.mission-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-card .mission-launch {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.mission-card p {
+  line-height: 1.68;
+}
+
+.game-library-card > p {
+  line-height: 1.68;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    gap: 16px;
+  }
+}
