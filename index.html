@@ -10,13 +10,13 @@
 
   <meta
     name="description"
-    content="Mastery Quests creates adaptive educational games built around retrieval practice, targeted feedback, and mastery learning."
+    content="Mastery Quests is an adaptive educational gaming platform built around retrieval practice, targeted feedback, and mastery learning."
   >
 
   <title>Mastery Quests | Adaptive Learning Games</title>
 
-  <link rel="stylesheet" href="/assets/css/site.css">
-  <script src="/assets/js/site.js" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
     <div class="site-container header-inner">
       <a class="brand" href="/" aria-label="Mastery Quests home">
         <img
-          src="/assets/images/mastery-quests-logo.png"
+          src="assets/images/mastery-quests-logo.png"
           alt="Mastery Quests"
           class="brand-logo"
         >
@@ -69,10 +69,16 @@
           </h1>
 
           <p class="hero-lead">
-            Mastery Quests combines retrieval practice, adaptive
-            feedback, and game-based progression to create learning
-            experiences that respond to what students know—and what
-            they still need to strengthen.
+            Mastery Quests is an adaptive educational gaming platform
+            that helps students master difficult concepts through
+            retrieval practice, targeted feedback, and game-based
+            progression.
+          </p>
+
+          <p class="hero-supporting">
+            Each experience responds to what students know, identifies
+            what still needs attention, and directs them through focused
+            repair and bridge practice before they move forward.
           </p>
 
           <div class="hero-actions">
@@ -92,13 +98,65 @@
           </ul>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="progress-orbit">
-            <div class="orbit-center">
-              <span class="orbit-value">75%</span>
-              <span class="orbit-label">Mastery path</span>
+        <div class="hero-visual">
+          <div class="mastery-model" aria-label="Practice, repair, bridge, and master">
+            <div class="model-ring" aria-hidden="true">
+              <span class="model-node node-practice">1</span>
+              <span class="model-node node-repair">2</span>
+              <span class="model-node node-bridge">3</span>
+              <span class="model-node node-master">4</span>
+
+              <div class="model-center">
+                <span class="model-center-title">Adaptive</span>
+                <span class="model-center-label">Mastery Path</span>
+              </div>
             </div>
+
+            <ol class="model-legend">
+              <li><span>1</span> Practice</li>
+              <li><span>2</span> Repair</li>
+              <li><span>3</span> Bridge</li>
+              <li><span>4</span> Master</li>
+            </ol>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section" aria-labelledby="audience-heading">
+      <div class="site-container">
+        <div class="audience-heading">
+          <p class="eyebrow">Designed for learning communities</p>
+          <h2 id="audience-heading">Built for students, faculty, and research.</h2>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card">
+            <p class="audience-label">Students</p>
+            <h3>Prepare with responsive practice.</h3>
+            <p>
+              Work through questions that adjust to performance and
+              receive targeted support when a concept needs more attention.
+            </p>
+          </article>
+
+          <article class="audience-card">
+            <p class="audience-label">Faculty</p>
+            <h3>Deploy a game or build your own.</h3>
+            <p>
+              Use ready-made economics collections or adapt the faculty
+              template and question-bank tools for another course.
+            </p>
+          </article>
+
+          <article class="audience-card">
+            <p class="audience-label">Researchers</p>
+            <h3>Study adaptive retrieval in practice.</h3>
+            <p>
+              Explore the instructional framework, design decisions,
+              implementation evidence, and future validation work.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -309,3 +367,4 @@
   </footer>
 </body>
 </html>
+
