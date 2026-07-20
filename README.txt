@@ -1,17 +1,28 @@
-Mastery Quests games links update
+Mastery Quests homepage simplification and research de-emphasis
 
-Updated:
-- Principles of Economics -> Principles of Macroeconomics
-- Added live hub link for The Economic Realm
-- Added live hub link for Managerial Test Prep
-- Added live hub link for Macro Review System
-- Added Intermediate Microeconomics as a coming-soon collection
-- Added live hub buttons to each collection detail page
+Replace these files:
 
-Live hubs:
-https://wjbyrd.github.io/The-Economic-Realm/
-https://wjbyrd.github.io/Managerial-Test-Prep/
-https://wjbyrd.github.io/Macro-Test-Prep/
+index.html
+games/index.html
+games/economic-realm/index.html
+games/managerial-test-prep/index.html
+games/macro-review-system/index.html
+games/faculty-template/index.html
+resources/index.html
+how-to/index.html
+about/index.html
+privacy/index.html
+assets/css/site.css
 
-Copy the package contents into the root of the local masteryquests-website repository,
-review the changes in GitHub Desktop, commit, and push.
+Changes:
+- Simplified the homepage to three main areas:
+  1. Hero and adaptive model
+  2. Three primary pathways
+  3. Compact explanation of the learning model
+- Removed the audience summary, collection summaries, and research feature from the homepage.
+- Redesigned the mastery ring into four equal quadrants.
+- Added visible directional arrows between each stage.
+- Standardized node placement and coloring.
+- Removed Research from the main navigation and footer across the site.
+- Reworded the About page so it does not imply an established research program.
+- Left the detailed privacy discussion of possible formal research intact because it is a data-use safeguard.
