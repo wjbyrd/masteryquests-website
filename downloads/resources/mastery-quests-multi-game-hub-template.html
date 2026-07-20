@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Game Hub</title>
+
+<!-- ============================================================
+MASTERY QUESTS — MULTI-GAME HUB TEMPLATE
+
+PURPOSE
+- Launch several Mastery Quests games from one page.
+- Show started, active, completed, and locked mission states.
+- Recommend the next game.
+- Read campaign progress and optional achievements from localStorage.
+
+NO IMAGES OR AUDIO ARE REQUIRED.
+This template is intentionally stripped down so faculty can edit one
+configuration block instead of chasing settings across the file.
+
+CRITICAL DEPLOYMENT RULE
+The hub and all games must be served from the SAME WEB ORIGIN for
+localStorage progress to be shared. The easiest setup is one GitHub
+Pages repository with the hub at the root and each game in a subfolder.
+
+Example repository:
+/index.html                  <- this hub (rename this file to index.html)
+/game-1/index.html           <- first game
+/game-2/index.html           <- second game
+/game-3/index.html           <- third game
+
+SAFE TO EDIT
+1. HUB_CONFIG in the JavaScript section.
+2. GAMES in the JavaScript section.
+3. Text and colors in the marked customization areas.
+
+DO NOT EDIT UNLESS YOU UNDERSTAND THE HUB
+- Progress-state functions
+- Storage-key builders
+- Ordered-unlock logic
+- Rendering functions
+
+GAME-TO-HUB STORAGE MAPPING
+For each game, its engine constants must use the same prefix and game key.
+If HUB_CONFIG.storagePrefix is "myCourseHub" and a game key is "module1",
+that game should use:
+
+const REALM_MISSION_KEY = "module1";
+const REALM_STARTED_KEY = "myCourseHub_module1_started";
+const REALM_COMPLETE_KEY = "myCourseHub_module1_complete";
+const REALM_STATUS_KEY = "myCourseHub_module1_status";
+const REALM_ROOM_KEY = "myCourseHub_module1_room";
+const REALM_TOTAL_CORRECT_KEY = "myCourseHub_totalCorrectAnswers";
+const REALM_BEST_STREAK_KEY = "myCourseHub_bestStreak";
+const REALM_EXAM_COMPLETE_KEY = "myCourseHub_examDrillCompleted";
+const REALM_TRIAL_BY_CLOCK_KEY = "myCourseHub_trialByClock";
+const REALM_PERFECT_CALIBRATION_KEY = "myCourseHub_perfectCalibration";
+const REALM_RETURN_AND_REBUILD_KEY = "myCourseHub_returnAndRebuild";
+
+The Version 4 game engine also writes optional mission keys such as:
+myCourseHub_module1_legendaryComplete
+myCourseHub_module1_artifactsCollected
+
+============================================================ -->
+
+<style>
+:root{
+  --bg:#07111f;
+  --panel:#0d1b2d;
+  --panel-2:#10243b;
+  --text:#edf6ff;
+  --muted:#a9bfd2;
+  --gold:#f3cf72;
+  --blue:#59c3ff;
+  --green:#66d19e;
+  --red:#ff7b7b;
+  --line:rgba(255,255,255,.14);
+  --shadow:0 20px 60px rgba(0,0,0,.38);
+}
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(89,195,255,.15), transparent 34%),
+    linear-gradient(180deg, #0a1728 0%, var(--bg) 52%, #040a12 100%);
+}
+
+button,a{font:inherit;}
+
+button:focus-visible,
+a:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
+
+.skip-link{
+  position:fixed;
+  left:12px;
+  top:-60px;
+  z-index:1000;
+  padding:10px 14px;
+  border-radius:8px;
+  background:#fff;
+  color:#000;
+  font-weight:700;
+  transition:top .15s ease;
+}
+
+.skip-link:focus{top:12px;}
+
+.page-shell{
+  width:min(1180px, calc(100% - 32px));
+  margin:0 auto;
+  padding:34px 0 56px;
+}
+
+.hub-header{
+  padding:30px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:
+    linear-gradient(135deg, rgba(89,195,255,.13), transparent 42%),
+    rgba(8,20,34,.88);
+  box-shadow:var(--shadow);
+}
+
+.hub-kicker{
+  margin:0 0 8px;
+  color:var(--blue);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+
+.hub-title{
+  margin:0;
+  font-size:clamp(34px, 6vw, 62px);
+  line-height:1;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--gold);
+  text-shadow:0 0 22px rgba(243,207,114,.22);
+}
+
+.hub-subtitle{
+  max-width:820px;
+  margin:14px 0 0;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.55;
+}
+
+.header-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:22px;
+}
+
+.control-btn{
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:10px 15px;
+  color:var(--text);
+  background:rgba(255,255,255,.05);
+  cursor:pointer;
+  transition:transform .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.control-btn:hover{
+  transform:translateY(-1px);
+  border-color:rgba(89,195,255,.58);
+  background:rgba(89,195,255,.10);
+}
+
+.control-btn.danger:hover{
+  border-color:rgba(255,123,123,.70);
+  background:rgba(255,123,123,.10);
+}
+
+.summary-grid{
+  display:grid;
+  grid-template-columns:minmax(0, 1.4fr) minmax(260px, .8fr);
+  gap:18px;
+  margin-top:22px;
+}
+
+.summary-card,
+.next-card,
+.achievements-panel{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(9,22,38,.82);
+  box-shadow:0 14px 36px rgba(0,0,0,.24);
+}
+
+.summary-card{padding:20px;}
+
+.summary-label,
+.section-label{
+  margin:0 0 7px;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.summary-value{
+  margin:0;
+  font-size:30px;
+  font-weight:900;
+  color:var(--gold);
+}
+
+.summary-copy{
+  margin:6px 0 0;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.progress-track{
+  height:13px;
+  margin-top:16px;
+  border-radius:999px;
+  overflow:hidden;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.progress-fill{
+  height:100%;
+  width:0;
+  border-radius:inherit;
+  background:linear-gradient(90deg, var(--blue), var(--gold));
+  box-shadow:0 0 18px rgba(89,195,255,.32);
+  transition:width .35s ease;
+}
+
+.next-card{
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.next-title{
+  margin:0;
+  font-size:22px;
+  color:var(--text);
+}
+
+.next-reason{
+  margin:8px 0 18px;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.primary-btn{
+  width:100%;
+  border:1px solid rgba(243,207,114,.58);
+  border-radius:10px;
+  padding:12px 16px;
+  background:linear-gradient(180deg, #234f72, #10253c);
+  color:#fff7d8;
+  font-weight:800;
+  cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.primary-btn:hover:not(:disabled){
+  transform:translateY(-2px);
+  border-color:var(--gold);
+  box-shadow:0 0 24px rgba(89,195,255,.22);
+}
+
+.primary-btn:disabled{
+  cursor:not-allowed;
+  opacity:.48;
+}
+
+.section-heading{
+  margin:34px 0 14px;
+}
+
+.section-heading h2{
+  margin:0;
+  font-size:28px;
+  color:var(--gold);
+}
+
+.section-heading p{
+  margin:7px 0 0;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.game-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:16px;
+}
+
+.game-card{
+  position:relative;
+  min-height:250px;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 13%, transparent), transparent 43%),
+    rgba(9,22,38,.90);
+  box-shadow:0 16px 34px rgba(0,0,0,.26);
+  overflow:hidden;
+}
+
+.game-card::after{
+  content:"";
+  position:absolute;
+  inset:auto -80px -95px auto;
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  background:color-mix(in srgb, var(--accent) 11%, transparent);
+  filter:blur(2px);
+  pointer-events:none;
+}
+
+.game-card[data-state="complete"]{
+  border-color:rgba(102,209,158,.50);
+}
+
+.game-card[data-state="active"]{
+  border-color:color-mix(in srgb, var(--accent) 68%, white 8%);
+}
+
+.game-card[data-state="locked"]{
+  opacity:.68;
+  filter:saturate(.5);
+}
+
+.card-topline{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:14px;
+}
+
+.game-number{
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border-radius:14px;
+  border:1px solid color-mix(in srgb, var(--accent) 54%, white 8%);
+  background:color-mix(in srgb, var(--accent) 13%, #07111f 87%);
+  color:#fff;
+  font-size:17px;
+  font-weight:900;
+  box-shadow:0 0 20px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.status-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+  background:rgba(0,0,0,.20);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.status-badge::before{
+  content:"";
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:currentColor;
+}
+
+.game-card[data-state="complete"] .status-badge{color:var(--green);}
+.game-card[data-state="active"] .status-badge{color:var(--blue);}
+.game-card[data-state="locked"] .status-badge{color:#8b98a5;}
+
+.game-title{
+  margin:18px 0 7px;
+  font-size:24px;
+  color:var(--text);
+}
+
+.game-description{
+  min-height:48px;
+  margin:0;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.game-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:17px 0;
+}
+
+.meta-chip{
+  padding:6px 9px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  color:#c8d8e6;
+  background:rgba(255,255,255,.04);
+  font-size:11px;
+}
+
+.game-launch{
+  position:relative;
+  z-index:2;
+  width:100%;
+  border:1px solid color-mix(in srgb, var(--accent) 58%, white 8%);
+  border-radius:10px;
+  padding:11px 14px;
+  color:#fff;
+  background:color-mix(in srgb, var(--accent) 22%, #0a1728 78%);
+  font-weight:800;
+  cursor:pointer;
+}
+
+.game-launch:hover:not(:disabled){
+  background:color-mix(in srgb, var(--accent) 30%, #0a1728 70%);
+}
+
+.game-launch:disabled{
+  cursor:not-allowed;
+  color:#8fa0af;
+  border-color:rgba(255,255,255,.10);
+  background:rgba(255,255,255,.04);
+}
+
+.achievements-panel{padding:18px;}
+
+.achievement-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:10px;
+}
+
+.achievement{
+  min-height:122px;
+  padding:13px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:13px;
+  background:rgba(255,255,255,.035);
+  opacity:.45;
+}
+
+.achievement.unlocked{
+  opacity:1;
+  border-color:rgba(243,207,114,.38);
+  background:linear-gradient(145deg, rgba(243,207,114,.08), rgba(89,195,255,.05));
+}
+
+.achievement-mark{
+  font-size:22px;
+  color:var(--gold);
+}
+
+.achievement-title{
+  margin:8px 0 4px;
+  font-weight:900;
+  color:var(--text);
+}
+
+.achievement-text{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.35;
+}
+
+.footer-note{
+  margin:28px 0 0;
+  color:#8499ab;
+  font-size:12px;
+  line-height:1.45;
+  text-align:center;
+}
+
+.modal-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(6px);
+}
+
+.modal-backdrop.active{display:flex;}
+
+.modal-card{
+  width:min(720px, 100%);
+  max-height:86vh;
+  overflow:auto;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#0a1728;
+  box-shadow:var(--shadow);
+}
+
+.modal-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  padding-bottom:14px;
+  border-bottom:1px solid var(--line);
+}
+
+.modal-title{
+  margin:0;
+  color:var(--gold);
+  font-size:26px;
+}
+
+.modal-close{
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:8px 11px;
+  color:var(--text);
+  background:rgba(255,255,255,.05);
+  cursor:pointer;
+}
+
+.modal-body{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.modal-body strong{color:var(--text);}
+.modal-body code{
+  padding:2px 5px;
+  border-radius:5px;
+  background:rgba(255,255,255,.08);
+  color:#d9efff;
+}
+
+@media(max-width:900px){
+  .summary-grid{grid-template-columns:1fr;}
+  .achievement-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
+}
+
+@media(max-width:680px){
+  .page-shell{width:min(100% - 20px, 1180px); padding-top:10px;}
+  .hub-header{padding:22px 18px; border-radius:16px;}
+  .game-grid{grid-template-columns:1fr;}
+  .achievement-grid{grid-template-columns:1fr;}
+  .game-description{min-height:auto;}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto !important; transition:none !important;}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#missionGrid">Skip to games</a>
+
+<main class="page-shell">
+  <header class="hub-header">
+    <p id="hubKicker" class="hub-kicker">Course Review System</p>
+    <h1 id="hubTitle" class="hub-title">Your Course Game Hub</h1>
+    <p id="hubSubtitle" class="hub-subtitle">Connect several adaptive review games into one course experience.</p>
+
+    <div class="header-actions">
+      <button class="control-btn" type="button" onclick="openHelp()">How This Hub Works</button>
+      <button class="control-btn danger" type="button" onclick="confirmResetProgress()">Reset Hub Progress</button>
+    </div>
+
+    <div class="summary-grid" aria-live="polite">
+      <section class="summary-card" aria-labelledby="progressSummaryHeading">
+        <p class="summary-label">Campaign Progress</p>
+        <h2 id="progressSummaryHeading" class="summary-value">0 of 0 games complete</h2>
+        <p id="progressSummaryCopy" class="summary-copy">Begin the first game to start recording hub progress.</p>
+        <div class="progress-track" aria-hidden="true">
+          <div id="overallProgressFill" class="progress-fill"></div>
+        </div>
+      </section>
+
+      <section class="next-card" aria-labelledby="nextMissionTitle">
+        <div>
+          <p class="summary-label">Recommended Next Game</p>
+          <h2 id="nextMissionTitle" class="next-title">Loading...</h2>
+          <p id="nextMissionReason" class="next-reason">Checking course progress.</p>
+        </div>
+        <button id="nextMissionButton" class="primary-btn" type="button">Open Game</button>
+      </section>
+    </div>
+  </header>
+
+  <section aria-labelledby="gamesHeading">
+    <div class="section-heading">
+      <p class="section-label">Available Games</p>
+      <h2 id="gamesHeading">Choose a Review Game</h2>
+      <p id="gamesInstruction">Games may be completed in order or selected freely, depending on the hub settings.</p>
+    </div>
+    <div id="missionGrid" class="game-grid"></div>
+  </section>
+
+  <section id="achievementSection" aria-labelledby="achievementHeading">
+    <div class="section-heading">
+      <p class="section-label">Optional Progress Layer</p>
+      <h2 id="achievementHeading">Hub Achievements</h2>
+      <p>Achievements summarize progress recorded across all games. They do not replace grades or course requirements.</p>
+    </div>
+    <div class="achievements-panel">
+      <div id="achievementGrid" class="achievement-grid"></div>
+    </div>
+  </section>
+
+  <p class="footer-note">Progress is stored in this browser. Clearing browser storage, using private browsing, or opening the hub on another device may remove or hide local progress unless separate telemetry is enabled.</p>
+</main>
+
+<div id="helpModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-hidden="true">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h2 id="helpTitle" class="modal-title">How This Hub Works</h2>
+      <button class="modal-close" type="button" onclick="closeHelp()" aria-label="Close help">Close</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>The hub does not contain the games.</strong> It launches separate HTML game files and reads their progress keys from browser storage.</p>
+      <p><strong>Use one repository and one web origin.</strong> The hub and games must be published together for browser storage to be shared reliably.</p>
+      <p><strong>Faculty configure the hub in one place.</strong> Edit <code>HUB_CONFIG</code> and the <code>GAMES</code> array in the JavaScript section. Each game must use matching storage keys.</p>
+      <p><strong>Ordered play is optional.</strong> When ordered locking is enabled, a game unlocks after the previous game is completed. When disabled, students may open any game.</p>
+      <p><strong>Local progress is not a gradebook.</strong> It is a convenience layer. Use telemetry or a required submission method when completion must be formally verified.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+SAFE TO EDIT — HUB CONFIGURATION
+
+Use a short storagePrefix with no spaces. It must be unique to the
+course or hub. Do not reuse the same prefix for unrelated hubs.
+============================================================ */
+const HUB_CONFIG = {
+  hubTitle: "YOUR COURSE GAME HUB",
+  kicker: "COURSE REVIEW SYSTEM",
+  subtitle: "Use this hub to launch connected adaptive review games, continue active runs, and view course-level progress.",
+  storagePrefix: "courseHub",
+  lockMissionsInOrder: true,
+  showAchievements: true,
+  showRoomProgress: true
+};
+
+/* ============================================================
+SAFE TO EDIT — GAME LIST
+
+Required fields:
+- key: unique lowercase identifier with no spaces
+- title: student-facing game name
+- description: short explanation
+- file: exact path to that game's HTML file
+
+Optional fields:
+- accent: CSS color used on the card
+- label: small number or abbreviation
+
+To add a game, copy one object and change every field.
+To remove a game, delete its entire object, including the comma.
+============================================================ */
+const GAMES = [
+  {
+    key: "game1",
+    title: "Game One",
+    description: "Replace this text with the chapter, module, unit, or skill set covered by the first game.",
+    file: "game-1/index.html",
+    accent: "#59c3ff",
+    label: "01"
+  },
+  {
+    key: "game2",
+    title: "Game Two",
+    description: "Replace this text with the content and purpose of the second game.",
+    file: "game-2/index.html",
+    accent: "#8b9dff",
+    label: "02"
+  },
+  {
+    key: "game3",
+    title: "Game Three",
+    description: "Replace this text with the content and purpose of the third game.",
+    file: "game-3/index.html",
+    accent: "#66d19e",
+    label: "03"
+  },
+  {
+    key: "game4",
+    title: "Game Four",
+    description: "Replace this text with the content and purpose of the fourth game.",
+    file: "game-4/index.html",
+    accent: "#f3cf72",
+    label: "04"
+  }
+];
+
+/* ============================================================
+CORE HUB LOGIC — DO NOT EDIT UNLESS YOU UNDERSTAND IT
+============================================================ */
+let nextGameKey = null;
+let lastFocusedElement = null;
+
+function prefixKey(suffix){
+  return `${HUB_CONFIG.storagePrefix}_${suffix}`;
+}
+
+function missionKeys(gameKey){
+  return {
+    started: prefixKey(`${gameKey}_started`),
+    complete: prefixKey(`${gameKey}_complete`),
+    status: prefixKey(`${gameKey}_status`),
+    room: prefixKey(`${gameKey}_room`),
+    legendary: prefixKey(`${gameKey}_legendaryComplete`),
+    legendaryAlt: prefixKey(`${gameKey}_legendary_complete`),
+    artifacts: prefixKey(`${gameKey}_artifactsCollected`)
+  };
+}
+
+function globalKeys(){
+  return {
+    totalCorrect: prefixKey("totalCorrectAnswers"),
+    bestStreak: prefixKey("bestStreak"),
+    examComplete: prefixKey("examDrillCompleted"),
+    trialByClock: prefixKey("trialByClock"),
+    perfectCalibration: prefixKey("perfectCalibration"),
+    returnAndRebuild: prefixKey("returnAndRebuild")
+  };
+}
+
+function isTrue(key){
+  return localStorage.getItem(key) === "true";
+}
+
+function numericValue(key){
+  const value = Number(localStorage.getItem(key) || 0);
+  return Number.isFinite(value) ? value : 0;
+}
+
+function getGameState(game){
+  const keys = missionKeys(game.key);
+  const status = String(localStorage.getItem(keys.status) || "").toLowerCase();
+  const room = numericValue(keys.room);
+  const complete = isTrue(keys.complete) || ["complete", "completed", "restored"].includes(status);
+  const started = isTrue(keys.started) || room > 1 || ["active", "contested", "started"].includes(status);
+  return {keys, complete, started, room};
+}
+
+function getOrderedGames(){
+  return [...GAMES];
+}
+
+function isGameUnlocked(index){
+  if(!HUB_CONFIG.lockMissionsInOrder || index === 0) return true;
+  const previous = getOrderedGames()[index - 1];
+  return previous ? getGameState(previous).complete : true;
+}
+
+function stateLabel(state, unlocked){
+  if(!unlocked) return "Locked";
+  if(state.complete) return "Complete";
+  if(state.started) return "In Progress";
+  return "Available";
+}
+
+function stateName(state, unlocked){
+  if(!unlocked) return "locked";
+  if(state.complete) return "complete";
+  if(state.started) return "active";
+  return "available";
+}
+
+function launchGame(gameKey){
+  const index = GAMES.findIndex(game => game.key === gameKey);
+  const game = GAMES[index];
+  if(!game) return;
+
+  if(!isGameUnlocked(index)){
+    alert("This game is locked. Complete the previous game first.");
+    return;
+  }
+
+  localStorage.setItem(prefixKey("selectedMission"), gameKey);
+  window.location.href = game.file;
+}
+
+function renderGames(){
+  const grid = document.getElementById("missionGrid");
+  grid.innerHTML = "";
+
+  GAMES.forEach((game, index) => {
+    const state = getGameState(game);
+    const unlocked = isGameUnlocked(index);
+    const card = document.createElement("article");
+    card.className = "game-card";
+    card.dataset.state = stateName(state, unlocked);
+    card.style.setProperty("--accent", game.accent || "#59c3ff");
+
+    const meta = [];
+    if(HUB_CONFIG.showRoomProgress && state.started && !state.complete && state.room > 0){
+      meta.push(`Room ${Math.min(Math.max(state.room, 1), 30)} of 30`);
+    }
+    if(state.complete){
+      const artifactCount = numericValue(state.keys.artifacts);
+      if(artifactCount > 0) meta.push(`${artifactCount} artifact${artifactCount === 1 ? "" : "s"}`);
+      if(isTrue(state.keys.legendary) || isTrue(state.keys.legendaryAlt)) meta.push("Legendary complete");
+    }
+    if(meta.length === 0) meta.push(unlocked ? "Ready to begin" : "Complete the previous game");
+
+    const buttonText = !unlocked ? "Locked" : state.complete ? "Review Game" : state.started ? "Continue Game" : "Begin Game";
+
+    card.innerHTML = `
+      <div class="card-topline">
+        <div class="game-number" aria-hidden="true">${escapeHtml(game.label || String(index + 1).padStart(2, "0"))}</div>
+        <span class="status-badge">${stateLabel(state, unlocked)}</span>
+      </div>
+      <h3 class="game-title">${escapeHtml(game.title)}</h3>
+      <p class="game-description">${escapeHtml(game.description)}</p>
+      <div class="game-meta">${meta.map(item => `<span class="meta-chip">${escapeHtml(item)}</span>`).join("")}</div>
+      <button class="game-launch" type="button" ${unlocked ? "" : "disabled"}>${buttonText}</button>
+    `;
+
+    const launch = card.querySelector(".game-launch");
+    if(unlocked) launch.addEventListener("click", () => launchGame(game.key));
+    grid.appendChild(card);
+  });
+}
+
+function renderSummary(){
+  const completed = GAMES.filter(game => getGameState(game).complete).length;
+  const started = GAMES.filter(game => {
+    const state = getGameState(game);
+    return state.started && !state.complete;
+  }).length;
+  const total = GAMES.length;
+  const percent = total ? Math.round((completed / total) * 100) : 0;
+
+  document.getElementById("progressSummaryHeading").textContent = `${completed} of ${total} games complete`;
+  document.getElementById("overallProgressFill").style.width = `${percent}%`;
+
+  let copy = "Begin the first game to start recording hub progress.";
+  if(completed === total && total > 0){
+    copy = "All games are complete. Students may return to any game for additional practice.";
+  } else if(completed > 0 && started > 0){
+    copy = `${completed} complete and ${started} currently in progress.`;
+  } else if(completed > 0){
+    copy = `${completed} complete. Continue to the next available game.`;
+  } else if(started > 0){
+    copy = `${started} game${started === 1 ? " is" : "s are"} currently in progress.`;
+  }
+  document.getElementById("progressSummaryCopy").textContent = copy;
+}
+
+function renderNextGame(){
+  const ordered = getOrderedGames();
+  nextGameKey = null;
+
+  for(let i = 0; i < ordered.length; i++){
+    const game = ordered[i];
+    const state = getGameState(game);
+    if(!state.complete && isGameUnlocked(i)){
+      nextGameKey = game.key;
+      break;
+    }
+  }
+
+  const title = document.getElementById("nextMissionTitle");
+  const reason = document.getElementById("nextMissionReason");
+  const button = document.getElementById("nextMissionButton");
+
+  if(!nextGameKey){
+    title.textContent = GAMES.length ? "All Games Complete" : "No Games Configured";
+    reason.textContent = GAMES.length ? "Every configured game has been completed." : "Add games to the GAMES configuration array.";
+    button.textContent = GAMES.length ? "Campaign Complete" : "No Game Available";
+    button.disabled = true;
+    button.onclick = null;
+    return;
+  }
+
+  const game = GAMES.find(item => item.key === nextGameKey);
+  const state = getGameState(game);
+  title.textContent = game.title;
+  reason.textContent = state.started && state.room > 1
+    ? `Continue the active run from approximately Room ${Math.min(state.room, 30)}.`
+    : "This is the next available game in the course sequence.";
+  button.textContent = state.started ? "Continue Recommended Game" : "Begin Recommended Game";
+  button.disabled = false;
+  button.onclick = () => launchGame(nextGameKey);
+}
+
+function getAchievements(){
+  const completedCount = GAMES.filter(game => getGameState(game).complete).length;
+  const total = GAMES.length;
+  const halfwayTarget = total ? Math.ceil(total / 2) : 1;
+  const globals = globalKeys();
+  const anyLegendary = GAMES.some(game => {
+    const keys = missionKeys(game.key);
+    return isTrue(keys.legendary) || isTrue(keys.legendaryAlt);
+  });
+
+  return [
+    {mark:"I", title:"First Victory", text:"Complete one game.", unlocked:completedCount >= 1},
+    {mark:"II", title:"Campaign Halfway", text:`Complete at least ${halfwayTarget} games.`, unlocked:completedCount >= halfwayTarget},
+    {mark:"III", title:"Campaign Complete", text:"Complete every configured game.", unlocked:total > 0 && completedCount === total},
+    {mark:"L", title:"Legendary Clear", text:"Complete Legendary Mode in any game.", unlocked:anyLegendary},
+    {mark:"E", title:"Exam Ready", text:"Complete an Exam Drill.", unlocked:isTrue(globals.examComplete)},
+    {mark:"T", title:"Beat the Clock", text:"Finish a Timed Trial before time expires.", unlocked:isTrue(globals.trialByClock)},
+    {mark:"10", title:"Ten-Answer Streak", text:"Record a best streak of at least 10.", unlocked:numericValue(globals.bestStreak) >= 10},
+    {mark:"100", title:"Century Mark", text:"Record at least 100 correct answers across the hub.", unlocked:numericValue(globals.totalCorrect) >= 100}
+  ];
+}
+
+function renderAchievements(){
+  const section = document.getElementById("achievementSection");
+  section.style.display = HUB_CONFIG.showAchievements ? "block" : "none";
+  if(!HUB_CONFIG.showAchievements) return;
+
+  const grid = document.getElementById("achievementGrid");
+  grid.innerHTML = "";
+  getAchievements().forEach(item => {
+    const card = document.createElement("div");
+    card.className = `achievement${item.unlocked ? " unlocked" : ""}`;
+    card.innerHTML = `
+      <div class="achievement-mark" aria-hidden="true">${escapeHtml(item.mark)}</div>
+      <div class="achievement-title">${escapeHtml(item.title)}</div>
+      <p class="achievement-text">${escapeHtml(item.text)}</p>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function escapeHtml(value){
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function applyHubText(){
+  document.title = HUB_CONFIG.hubTitle || "Course Game Hub";
+  document.getElementById("hubTitle").textContent = HUB_CONFIG.hubTitle || "Course Game Hub";
+  document.getElementById("hubKicker").textContent = HUB_CONFIG.kicker || "Course Review System";
+  document.getElementById("hubSubtitle").textContent = HUB_CONFIG.subtitle || "Launch connected review games.";
+  document.getElementById("gamesInstruction").textContent = HUB_CONFIG.lockMissionsInOrder
+    ? "Games unlock in sequence. Complete the previous game to open the next one."
+    : "All games are available. Choose the game that matches your current review needs.";
+}
+
+function refreshHub(){
+  applyHubText();
+  renderSummary();
+  renderNextGame();
+  renderGames();
+  renderAchievements();
+}
+
+function openHelp(){
+  lastFocusedElement = document.activeElement;
+  const modal = document.getElementById("helpModal");
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
+  modal.querySelector(".modal-close").focus();
+}
+
+function closeHelp(){
+  const modal = document.getElementById("helpModal");
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+  if(lastFocusedElement && typeof lastFocusedElement.focus === "function") lastFocusedElement.focus();
+}
+
+function confirmResetProgress(){
+  const confirmed = window.confirm(
+    `Reset all browser progress stored under the prefix "${HUB_CONFIG.storagePrefix}"? This cannot be undone.`
+  );
+  if(!confirmed) return;
+
+  const prefix = `${HUB_CONFIG.storagePrefix}_`;
+  const keysToRemove = [];
+  for(let i = 0; i < localStorage.length; i++){
+    const key = localStorage.key(i);
+    if(key && key.startsWith(prefix)) keysToRemove.push(key);
+  }
+  keysToRemove.forEach(key => localStorage.removeItem(key));
+  refreshHub();
+}
+
+window.addEventListener("pageshow", refreshHub);
+window.addEventListener("storage", refreshHub);
+document.addEventListener("visibilitychange", () => {
+  if(document.visibilityState === "visible") refreshHub();
+});
+
+document.addEventListener("keydown", event => {
+  if(event.key === "Escape") closeHelp();
+});
+
+document.getElementById("helpModal").addEventListener("click", event => {
+  if(event.target.id === "helpModal") closeHelp();
+});
+
+refreshHub();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+// =============================================
+// QUESTION BANKS — EXTERNALIZED
+// The question pools now live in your_game_name_question_bank.js.
+// Keep that file beside this index.html file in the GitHub Pages root.
+// =============================================
+</script><script src="your_game_name_question_bank.js?v=20260718_1"></script><script>
+if(!window.questionBanks){
+    throw new Error("Your game name question bank did not load. Check your_game_name_question_bank.js.");
+}
+if(!window.microSkillRepairPools || !window.microSkillBridgePools){
+    throw new Error("Your game name repair/bridge pools did not load. Check your_game_name_question_bank.js.");
+}
+console.log("Your Game Name question bank loaded", {
+    easy: questionBanks.easy?.length || 0,
+    medium: questionBanks.medium?.length || 0,
+    hard: questionBanks.hard?.length || 0,
+    elite: questionBanks.elite?.length || 0,
+    legendary: questionBanks.legendary?.length || 0
+});
