@@ -1,28 +1,28 @@
 <!-- =====================================================
-MASTERY QUESTS — BLANK FACULTY TEMPLATE
+MASTERY QUESTS — BLANK BUILDER TEMPLATE
 
 PURPOSE:
-This authoring file contains the complete adaptive engine and no active
-questions. Mode launch remains blocked until valid questions are added
-inside the clearly marked FACULTY QUESTION BANKS section.
+This file keeps the complete adaptive game engine but removes
+course-specific content. Faculty should add content instead of
+deleting somebody else's content first.
 
-SAFE TO EDIT:
-- Game title, stage names, guide text, checkpoint names
-- Milestone names, colors, and optional asset filenames
-- Question banks, repair questions, bridge questions
-- Objective labels
-
-PROTECTED ENGINE:
-- Adaptive selection, option shuffling, answer verification
-- Run-session invalidation and timer handling
-- Save/resume, mastery calculations, local telemetry and CSV
-- Boss progression, repair routing, and bridge routing
+EDIT THESE FIVE AREAS:
+1. Game title and stage names
+2. Main question pools
+3. Repair questions
+4. Bridge questions
+5. Optional theme text and visuals
 
 QUESTION ROUTING:
 - Add an explicit objective to every question.
 - Add a primarySkill to every question.
 - Use the same primarySkill on matching repair and bridge items.
 - inferObjective() and inferSkill() do not guess from wording.
+
+RUNTIME SAFETY:
+Empty or undersized pools receive obvious template placeholders.
+They keep the engine testable while a game is being built.
+Once a pool reaches its minimum size, placeholders are not added.
 
 PRIVACY:
 No email is requested.
@@ -39,7 +39,7 @@ DO NOT RENAME REQUIRED HTML IDS OR CORE ENGINE VARIABLES.
 <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <!-- Title can be changed to whatever the game needs -->
-<title>Blank Faculty Mastery Quest</title>
+<title>Blank Mastery Quest Builder</title>
    
 <style>
 /* =========================================
@@ -187,7 +187,7 @@ body::after{
 }
 
 /* PLACEHOLDER */
-#playerNameInput::placeholder,
+#emailInput::placeholder,
 #username::placeholder{
     color: rgba(224,242,254,0.55);
     font-style: italic;
@@ -247,21 +247,21 @@ body::after{
     pointer-events: none;
 }
 
-/* Tier 1 — Checkpoint One */
+/* Tier 1 — Supply Gatekeeper */
 .boss10 .boss-icon{
     filter:
         drop-shadow(0 0 6px rgba(56,189,248,0.88))
         drop-shadow(0 0 14px rgba(247,217,130,0.48));
 }
 
-/* Tier 2 — Checkpoint Two */
+/* Tier 2 — Elasticity Warden */
 .boss20 .boss-icon{
     filter:
         drop-shadow(0 0 8px rgba(14,165,233,0.94))
         drop-shadow(0 0 18px rgba(56,189,248,0.56));
 }
 
-/* Tier 3 — Final Checkpoint */
+/* Tier 3 — Market Arbiter */
 .boss30 .boss-icon{
     filter:
         drop-shadow(0 0 10px rgba(247,217,130,0.96))
@@ -470,7 +470,7 @@ h2 {
         0 2px 5px rgba(0,0,0,0.88);
 }
 
-/* Guide feedback text */	
+/* Add styling to Chancellor text */	
 #message {
     margin-top: 10px;
     font-style: italic;
@@ -483,8 +483,9 @@ h2 {
         0 2px 5px rgba(0,0,0,0.88);
 }
 
-/* Faculty Template feedback override */
-.blank-builder-template #message {
+/* Blank Mastery Quest override */
+.market-gate #message,
+.economic-realm #message {
     color: #c7ecff;
     font-size: 17px;
     font-style: italic;
@@ -956,7 +957,8 @@ button:active {
     animation: bossFloat 4s ease-in-out infinite;
 }
 
-/* Checkpoint one glow */
+/* Boss 1 — The Keeper of Scarcity */
+.scarcityGlow,
 .gatekeeperGlow {
     filter:
         drop-shadow(0 0 12px rgba(56,189,248,0.72))
@@ -964,7 +966,8 @@ button:active {
         drop-shadow(0 0 34px rgba(0,0,0,0.80));
 }
 
-/* Checkpoint two glow */
+/* Boss 2 — The Warden of Elasticity */
+.elasticityGlow,
 .wardenGlow {
     filter:
         drop-shadow(0 0 14px rgba(14,165,233,0.88))
@@ -973,8 +976,9 @@ button:active {
         drop-shadow(0 0 38px rgba(0,0,0,0.84));
 }
 
-/* Final checkpoint glow */
-.arbiterGlow {
+/* Boss 3 — The Arbiter of the blank mastery quest */
+.arbiterGlow,
+.marketArbiterGlow {
     filter:
         drop-shadow(0 0 16px rgba(247,217,130,0.92))
         drop-shadow(0 0 34px rgba(56,189,248,0.48))
@@ -1374,7 +1378,7 @@ button:active {
 }
    
 /* Wizard Box */
-/* Guide display panel — fixed width, do not remove flex settings */
+/* Chancellor display panel — fixed width, do not remove flex settings */
 #wizardBox{
     width:160px;
     min-width:160px;
@@ -2412,7 +2416,7 @@ body.game-active #soundToggle {
 
 
 /* =====================================================
-FACULTY TEMPLATE OVERRIDES — ASSET-FREE, GENERIC, AND LOCAL
+BLANK BUILDER OVERRIDES — ASSET-FREE, GENERIC, AND LOCAL
 ===================================================== */
 body{
     background:linear-gradient(135deg,#020617 0%,#0b2238 52%,#17324d 100%) !important;
@@ -2473,6 +2477,8 @@ body{
     box-shadow:0 0 28px rgba(56,189,248,.35);
 }
 
+#artifactVault,
+#artifactDrop,
 #soundToggle{
     display:none !important;
 }
@@ -2540,7 +2546,7 @@ SAFE TO EDIT (CUSTOMIZATION):
 DO NOT MODIFY (STRUCTURE/IDS):
 The following IDs are REQUIRED by JavaScript:
 
-- playerNameInput
+- usernameInput
 - gameBox
 - question
 - answers
@@ -2583,8 +2589,8 @@ Respect structure strictly.
 <!-- Start screen / player entry -->
 <div id="startScreen">
   <div class="start-content">
-    <h1 class="title">BLANK FACULTY QUEST</h1>
-    <input id="playerNameInput" type="text" maxlength="40" placeholder="Enter a name or initials" class="name-input" aria-label="Player name">
+    <h1 class="title">BLANK MASTERY QUEST</h1>
+    <input id="emailInput" type="text" maxlength="40" placeholder="Enter a name or initials" class="name-input" aria-label="Player name">
     <button class="start-btn" onclick="showModeSelect()">OPEN THE TEMPLATE</button>
 	<button id="continueRunBtn" class="start-btn secondary-start-btn" onclick="continueSavedRun()" style="display:none;">
     CONTINUE STANDARD RUN</button>
@@ -2594,7 +2600,7 @@ Respect structure strictly.
 <div id="modeSelectScreen" class="mode-select-screen" style="display:none;">
   <div class="mode-select-panel">
     <h1 class="mode-title">CHOOSE A MODE</h1>
-    <p class="mode-subtitle">Add valid questions in the marked authoring section before launching a mode.</p>
+    <p class="mode-subtitle">Choose how to test the blank adaptive engine.</p>
 
     <div class="mode-grid">
 <button class="mode-card" onclick="startSelectedMode('standard')" aria-label="Standard Campaign. Full 30-room run with bosses, artifacts, setbacks, save and resume status, and campaign progress.">
@@ -2661,14 +2667,14 @@ DO NOT REMOVE:
 ========================================= -->
 
 <div class="top-panel">
-    <div class="top-title">Blank Faculty Mastery Quest</div>
+    <div class="top-title">Blank Mastery Quest Builder</div>
 
     <div id="mazeTrackContainer">
         <div id="mazeTrack"></div>
     </div>
 
     <!-- Artifact slots (IDs must match unlock system in JS) -->
-<div id="artifactVault" style="display:none;">
+<div id="artifactVault">
     <h3>Acquired Artifacts</h3>
     <div class="vaultRow">
         <div id="vaultCompass" class="artifactSlot">
@@ -2735,7 +2741,7 @@ DO NOT REMOVE:
                 <div id="formulaHint" class="hint-box"></div>
             </div>
 
-            <div id="answers" class="answers"></div>
+            <div id="answers"></div>
 
             <!-- Artifact reward popup (triggered after boss victories) -->
             <div id="artifactDrop" style="display:none;">
@@ -2770,7 +2776,7 @@ DO NOT REMOVE:
 ========================================= -->
 
 <!-- =====================================================
-FACULTY TEMPLATE CONTENT MAP
+BLANK BUILDER CONTENT MAP
 
 MAIN QUESTION ARRAYS:
 - questionBanks.easy
@@ -2808,7 +2814,7 @@ That guessing game is gone. Good riddance.
  <script>
 
 // =============================================
-// AUDIO SYSTEM — SILENT FACULTY TEMPLATE COMPATIBILITY
+// AUDIO SYSTEM — DISABLED IN THE BLANK BUILDER
 // =============================================
 // No external media files are required. These no-op objects preserve
 // engine compatibility. Faculty can add audio later if they choose.
@@ -2875,15 +2881,6 @@ if (!isFullscreen) {
 // =============================================
 document.getElementById("gameBox").style.display = "none";
 document.querySelectorAll(".torch").forEach(t => t.style.display = "none");
-const GAME_BOX_TEMPLATE_HTML = document.getElementById("gameBox").innerHTML;
-
-function restoreGameplayShell(){
-    const gameBox = document.getElementById("gameBox");
-    if(gameBox && !document.getElementById("question")){
-        gameBox.innerHTML = GAME_BOX_TEMPLATE_HTML;
-    }
-    if(typeof latestResultsScreenHTML !== "undefined") latestResultsScreenHTML = "";
-}
 
 // =============================================
 // 2. Global Variables (Declared only ONCE)
@@ -2904,31 +2901,13 @@ let bossCheckpoint = 1;
 let correctAnswers = 0; 
 let maxStreak = 0; 
 let username = "";
+let studentEmail = "";
 let runID = "";
 let questionStartTime = 0;
 let streak = 0; 
 let startTime; // Will be set in startGame()
-let finalElapsedTimeMs = null;
-function getElapsedTimeMs(){ return Number.isFinite(finalElapsedTimeMs) ? finalElapsedTimeMs : (startTime ? (Date.now() - startTime) : 0); }
-function freezeCompletionTime(fallbackMs = 0){
-    if(!Number.isFinite(finalElapsedTimeMs)){
-        finalElapsedTimeMs = fallbackMs > 0 ? fallbackMs : (startTime ? (Date.now() - startTime) : 0);
-    }
-    return finalElapsedTimeMs;
-}
-const STORAGE_PREFIX = "masteryQuestFacultyBlank";
-const PLAYER_KEY = `${STORAGE_PREFIX}:player`;
-const RUN_ID_KEY = `${STORAGE_PREFIX}:runID`;
-const ROOM_KEY = `${STORAGE_PREFIX}:standard:room`;
-const CURRENT_MODE_KEY = `${STORAGE_PREFIX}:currentMode`;
-const ARTIFACT_STORAGE_KEYS = {
-    compass: `${STORAGE_PREFIX}:standard:artifact:one`,
-    lens: `${STORAGE_PREFIX}:standard:artifact:two`,
-    scales: `${STORAGE_PREFIX}:standard:artifact:three`
-};
-let room = localStorage.getItem(ROOM_KEY) ? parseInt(localStorage.getItem(ROOM_KEY), 10) : 1;
+let room = localStorage.getItem("blankBuilderRoom") ? parseInt(localStorage.getItem("blankBuilderRoom")) : 1;
 let currentQuestion = null;
-let answerSubmissionPending = false;
 let detourActive = false;
 let detourReturnRoom = null;
 let remediationState = {
@@ -2958,10 +2937,6 @@ const RAPID_GUESS_CONFIG = {
     minAttempts: 5,         // don't trigger until at least 5 recent attempts exist
     avgTimeMs: 3000,        // average under 3 seconds = suspicious
     maxAccuracy: 0.50,      // under 50% accuracy = not engaged
-    burstWindowSize: 4,
-    burstFastMs: 2500,
-    burstMinFast: 3,
-    burstMaxAccuracy: 0.25,
     lockMs: 4500            // pause length
 };
 let tagHistory = [];
@@ -2992,22 +2967,20 @@ let questionHistory = {
     legendaryBoss: [],
 };
 
-const SAVE_KEY = `${STORAGE_PREFIX}:save:v2`;
-const REALM_MISSION_KEY = "facultyBlank";
-const REALM_STARTED_KEY = `${STORAGE_PREFIX}:standard:started`;
-const REALM_COMPLETE_KEY = `${STORAGE_PREFIX}:standard:complete`;
-const REALM_STATUS_KEY = `${STORAGE_PREFIX}:standard:status`;
-const REALM_ROOM_KEY = `${STORAGE_PREFIX}:standard:progress`;
-const REALM_TOTAL_CORRECT_KEY = `${STORAGE_PREFIX}:standard:totalCorrect`;
-const REALM_BEST_STREAK_KEY = `${STORAGE_PREFIX}:standard:bestStreak`;
-const REALM_EXAM_COMPLETE_KEY = `${STORAGE_PREFIX}:exam:complete`;
-const REALM_TRIAL_BY_CLOCK_KEY = `${STORAGE_PREFIX}:timed:achievement`;
-const REALM_PERFECT_CALIBRATION_KEY = `${STORAGE_PREFIX}:standard:perfectCheckpoints`;
-const REALM_RETURN_AND_REBUILD_KEY = `${STORAGE_PREFIX}:standard:resumeComplete`;
+const SAVE_KEY = "blankBuilderSave_v1";
+const REALM_MISSION_KEY = "blankBuilder";
+const REALM_STARTED_KEY = "blankQuestCollection_blankBuilder_started";
+const REALM_COMPLETE_KEY = "blankQuestCollection_blankBuilder_complete";
+const REALM_STATUS_KEY = "blankQuestCollection_blankBuilder_status";
+const REALM_ROOM_KEY = "blankQuestCollection_blankBuilder_room";
+const REALM_TOTAL_CORRECT_KEY = "blankQuestCollection_totalCorrectAnswers";
+const REALM_BEST_STREAK_KEY = "blankQuestCollection_bestStreak";
+const REALM_EXAM_COMPLETE_KEY = "blankQuestCollection_examDrillCompleted";
+const REALM_TRIAL_BY_CLOCK_KEY = "blankQuestCollection_trialByClock";
+const REALM_PERFECT_CALIBRATION_KEY = "blankQuestCollection_perfectCalibration";
+const REALM_RETURN_AND_REBUILD_KEY = "blankQuestCollection_returnAndRebuild";
 
 let gameMode = "standard";
-let runSessionId = 0;
-let runEnding = false;
 let timedModeDurationMs = 10 * 60 * 1000;
 let timedModeEndTime = null;
 let timedModeTimerInterval = null;
@@ -3023,7 +2996,7 @@ let timedSetbacks = 0;
 //
 // Change point values here. Do not bury score math in answer().
 // =============================================
-const SCORE_ATTACK_STORAGE_PREFIX = `${STORAGE_PREFIX}:score`;
+const SCORE_ATTACK_STORAGE_PREFIX = "blankBuilderScoreAttack";
 
 const SCORE_ATTACK_CONFIG = {
     correct: 100,
@@ -3083,7 +3056,7 @@ function updateRealmMaxStat(key, value){
 }
 
 function getMissionAchievementPrefix(){
-    return `${STORAGE_PREFIX}:standard:achievement:${REALM_MISSION_KEY}`;
+    return `blankQuestCollection_${REALM_MISSION_KEY}`;
 }
 
 function markMissionLegendaryComplete(){
@@ -3096,7 +3069,7 @@ function setMissionArtifactCount(count){
 }
 
 function updateMissionArtifactCountFromVault(){
-    const artifactCount = Object.values(ARTIFACT_STORAGE_KEYS)
+    const artifactCount = ["vaultCompass", "vaultLens", "vaultScales"]
         .filter(key => localStorage.getItem(key) === "true").length;
 
     setMissionArtifactCount(artifactCount);
@@ -3106,8 +3079,11 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
     const safeRoom = Number.isFinite(Number(reachedRoom)) ? Number(reachedRoom) : 0;
 
-    updateRealmMaxStat(`${STORAGE_PREFIX}:timed:bestRoom`, safeRoom);
-    updateRealmMaxStat(`${STORAGE_PREFIX}:timed:bestAccuracy`, safeAccuracy);
+    updateRealmMaxStat("blankBuilderTimedBestRoom", safeRoom);
+    updateRealmMaxStat("blankBuilderTimedBestAccuracy", safeAccuracy);
+
+    updateRealmMaxStat("blankQuestCollection_timedBestRoom", safeRoom);
+    updateRealmMaxStat("blankQuestCollection_timedBestAccuracy", safeAccuracy);
 
     updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestRoom`, safeRoom);
     updateRealmMaxStat(`${getMissionAchievementPrefix()}_timedBestAccuracy`, safeAccuracy);
@@ -3119,12 +3095,10 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
 }
 
 function recordRealmCorrectAnswer(){
-    if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
 }
 
 function recordRealmStreak(value){
-    if(!modeAllowsRealmProgress()) return;
     updateRealmMaxStat(REALM_BEST_STREAK_KEY, value);
     updateRealmMaxStat(`${getMissionAchievementPrefix()}_bestStreak`, value);
 }
@@ -3160,36 +3134,8 @@ function checkReturnAndRebuildAchievement(){
     }
 }
 
-function modeAllowsSave(){ return gameMode === "standard"; }
+function modeAllowsSave(){ return gameMode === "standard" || gameMode === "legendary"; }
 function modeAllowsRealmProgress(){ return gameMode === "standard"; }
-function isRealmMissionComplete(){
-    return localStorage.getItem(REALM_COMPLETE_KEY) === "true";
-}
-function syncRealmAttemptState(){
-    if(!modeAllowsRealmProgress()) return;
-    localStorage.setItem(REALM_STARTED_KEY, "true");
-    if(isRealmMissionComplete()){
-        localStorage.setItem(REALM_STATUS_KEY, "complete");
-        localStorage.setItem(REALM_ROOM_KEY, "30");
-        return;
-    }
-    localStorage.setItem(REALM_STATUS_KEY, "active");
-    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));
-}
-function beginRunSession(){
-    runSessionId += 1;
-    return runSessionId;
-}
-function isRunSessionCurrent(sessionId){
-    return sessionId === runSessionId;
-}
-function scheduleForCurrentRun(callback, delay){
-    const scheduledSessionId = runSessionId;
-    return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
-        callback();
-    }, delay);
-}
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
@@ -3382,6 +3328,7 @@ function saveGameState(){
         maxStreak,
         streak,
         username,
+        studentEmail,
         runID,
         gameMode,
         conceptMemory,
@@ -3399,15 +3346,20 @@ function saveGameState(){
         },
 
         artifacts: {
-            vaultCompass: localStorage.getItem(ARTIFACT_STORAGE_KEYS.compass) === "true",
-            vaultLens: localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens) === "true",
-            vaultScales: localStorage.getItem(ARTIFACT_STORAGE_KEYS.scales) === "true"
+            vaultCompass: localStorage.getItem("vaultCompass") === "true",
+            vaultLens: localStorage.getItem("vaultLens") === "true",
+            vaultScales: localStorage.getItem("vaultScales") === "true"
         }
     };
 
     localStorage.setItem(getSaveKey(), JSON.stringify(saveData));
-    localStorage.setItem(ROOM_KEY, String(room));
-    syncRealmAttemptState();
+        localStorage.setItem("blankBuilderRoom", String(room));
+
+    if(modeAllowsRealmProgress()){
+	    localStorage.setItem(REALM_STARTED_KEY, "true");
+	    localStorage.setItem(REALM_STATUS_KEY, "contested");
+	    localStorage.setItem(REALM_ROOM_KEY, String(room));
+    }
 
     const autosave = document.getElementById("autosave");
     if(autosave){
@@ -3431,6 +3383,7 @@ function loadSavedGame(){
         streak = Number(saveData.streak || 0);
 
         username = saveData.username || username || "";
+        studentEmail = saveData.studentEmail || studentEmail || "";
         runID = saveData.runID || runID || "";
         gameMode = saveData.gameMode || gameMode || "standard";
 
@@ -3447,9 +3400,9 @@ function loadSavedGame(){
         bossMistakeCountThisRun = Number(saveData.achievementTracking?.bossMistakeCountThisRun || 0);
         bossesDefeatedThisRun = Number(saveData.achievementTracking?.bossesDefeatedThisRun || 0);
 
-        if(saveData.artifacts?.vaultCompass) localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
-        if(saveData.artifacts?.vaultLens) localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
-        if(saveData.artifacts?.vaultScales) localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
+        if(saveData.artifacts?.vaultCompass) localStorage.setItem("vaultCompass", "true");
+        if(saveData.artifacts?.vaultLens) localStorage.setItem("vaultLens", "true");
+        if(saveData.artifacts?.vaultScales) localStorage.setItem("vaultScales", "true");
 
         return true;
     } catch(error){
@@ -3463,14 +3416,14 @@ function clearSavedGame(){
     localStorage.removeItem(getSaveKey());
 
     if(modeAllowsSave()){
-        localStorage.removeItem(ROOM_KEY);
-        if(!isRealmMissionComplete()){
-            Object.values(ARTIFACT_STORAGE_KEYS).forEach(key => localStorage.removeItem(key));
-        }
+        localStorage.removeItem("blankBuilderRoom");
+        localStorage.removeItem("vaultCompass");
+        localStorage.removeItem("vaultLens");
+        localStorage.removeItem("vaultScales");
     }
 }
 
-function generateNeutralPlayerAlias(seed) {
+function generatePseudonymFromEmail(email) {
     const titles = [
         "Axiom", "Ledger", "Vector", "Meridian", "Signal", "Cipher",
         "Frontier", "Equity", "Oracle", "Index", "Summit", "Nexus",
@@ -3478,16 +3431,16 @@ function generateNeutralPlayerAlias(seed) {
     ];
 
     const roles = [
-        "Explorer", "Cartographer", "Navigator", "Builder", "Guide", "Recorder",
-        "Scholar", "Observer", "Reviewer", "Keeper", "Analyst", "Mediator",
+        "Appraiser", "Cartographer", "Arbiter", "Custodian", "Warden", "Registrar",
+        "Archivist", "Surveyor", "Magistrate", "Keeper", "Analyst", "Mediator",
         "Steward", "Scribe", "Sentinel", "Marshal", "Seeker", "Auditor"
     ];
 
     let hash = 0;
-    const cleanSeed = String(seed || "faculty-player").trim().toLowerCase();
+    const cleanEmail = email.trim().toLowerCase();
 
-    for (let i = 0; i < cleanSeed.length; i++) {
-        hash = ((hash << 5) - hash) + cleanSeed.charCodeAt(i);
+    for (let i = 0; i < cleanEmail.length; i++) {
+        hash = ((hash << 5) - hash) + cleanEmail.charCodeAt(i);
         hash |= 0;
     }
 
@@ -4332,8 +4285,16 @@ function getAdaptiveQuestion(poolName, targetTag = null, options = {}){
     const { mode = "support", preferredTypes = [], purpose = "diversify" } = options;
 
     if(!pool || pool.length === 0){
-        console.error(`Question selection stopped: questionBanks.${poolName} is empty.`);
-        return null;
+        return {
+            id: 999999,
+            q: "No question pool is available for this room. Check the questionBanks configuration.",
+            options: ["Continue", "Continue", "Continue", "Continue"],
+            a: 0,
+            tag: "system",
+            type: "default",
+            objective: "system_check",
+            feedback: "A question pool is missing."
+        };
     }
 
     // --- 🎯 TARGET SPECIFIC TAG IF PROVIDED ---
@@ -4438,15 +4399,15 @@ const artifacts = {
     scales: { img: "", title: "Milestone Three", text: "The final checkpoint is complete." }
 }
 
-function getFacultyBossName(){
+function getBlankBuilderBossName(){
     if(room === 10) return "Checkpoint One";
     if(room === 20) return "Checkpoint Two";
     if(room === 30) return "Final Checkpoint";
     return "Checkpoint";
 }
 
-function getFacultyBossLine({ isCorrect, tag, streak, bossHealth, responseTime }) {
-    const bossName = getFacultyBossName();
+function getBlankBuilderBossLine({ isCorrect, tag, streak, bossHealth, responseTime }) {
+    const bossName = getBlankBuilderBossName();
 
     if(isCorrect && streak >= 5) return `${bossName}: Strong streak. Keep the reasoning clean.`;
     if(isCorrect && bossHealth <= 2) return `${bossName}: Correct. The checkpoint is weakening.`;
@@ -4457,33 +4418,34 @@ function getFacultyBossLine({ isCorrect, tag, streak, bossHealth, responseTime }
 }
 
 // =============================================
-// PLAYER NAME RESTORE — SAFE TO MODIFY
+// USERNAME RESTORE — SAFE TO MODIFY
 // =============================================
 // Loads previously saved username from localStorage
 // and pre-fills the input field.
 //
 // SAFE TO EDIT:
-// - behavior (for example, remove this convenience for a fresh input each time)
+// - key name ("gauntletUser")
+// - behavior (e.g., remove if you want fresh input every time)
 //
 // WARNING:
-// Requires input element with id="playerNameInput"
+// Requires input element with id="usernameInput"
 //
 // Removing this will NOT break the game,
 // but will remove convenience for returning users.
 // =============================================
-const savedPlayerName = localStorage.getItem(PLAYER_KEY);
-const playerNameInput = document.getElementById("playerNameInput");
+const savedEmail = localStorage.getItem("blankBuilderPlayer");
+const emailInput = document.getElementById("emailInput");
 
-if (savedPlayerName && playerNameInput) {
-    playerNameInput.value = savedPlayerName;
+if (savedEmail && emailInput) {
+    emailInput.value = savedEmail;
 }
 
 function hasSavedGame(mode = "standard"){
     return !!localStorage.getItem(`${SAVE_KEY}_${mode}`);
 }
 
-function validateAndStorePlayerName(){
-    const inputName = document.getElementById("playerNameInput").value.trim();
+function validateAndStoreEmailForModeSelect(){
+    const inputName = document.getElementById("emailInput").value.trim();
 
     if (!inputName) {
         alert("Enter a name or initials.");
@@ -4491,17 +4453,17 @@ function validateAndStorePlayerName(){
     }
 
     username = inputName.slice(0, 40);
-    localStorage.setItem(PLAYER_KEY, username);
+    studentEmail = "";
+
+    localStorage.setItem("blankBuilderPlayer", username);
+    localStorage.setItem("gauntletUser", username);
 
     return true;
 }
 
 function showModeSelect(){
-    if(!validateAndStorePlayerName()) return;
+    if(!validateAndStoreEmailForModeSelect()) return;
 
-    beginRunSession();
-    runEnding = false;
-    closeGraphLightbox();
     setGameControlsVisible(false);
 
     document.getElementById("startScreen").style.display = "none";
@@ -4511,9 +4473,6 @@ function showModeSelect(){
 }
 
 function returnToTitleScreen(){
-    beginRunSession();
-    stopTimedModeClock();
-    closeGraphLightbox();
     setGameControlsVisible(false);
 
     const modeScreen = document.getElementById("modeSelectScreen");
@@ -4524,18 +4483,8 @@ function returnToTitleScreen(){
 }
 
 function startSelectedMode(mode){
-    const requestedMode = mode || "standard";
-    const preflight = validateFacultyMode(requestedMode);
-    if(!preflight.ok){
-        showFacultyPreflightFailure(requestedMode, preflight.issues);
-        return;
-    }
-
-    beginRunSession();
-    runEnding = false;
-    closeGraphLightbox();
-    gameMode = requestedMode;
-    localStorage.setItem(CURRENT_MODE_KEY, gameMode);
+    gameMode = mode || "standard";
+    localStorage.setItem("blankBuilderCurrentMode", gameMode);
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "none";
@@ -4559,6 +4508,12 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
+
             returnToModeSelectFromRun();
         }
     });
@@ -4630,6 +4585,22 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    stopTimedModeClock();
+
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    localStorage.setItem("blankBuilderTimedLastRoom", String(room));
+    localStorage.setItem("blankBuilderTimedLastHighestRoom", String(reachedRoom));
+    localStorage.setItem("blankBuilderTimedLastAccuracy", String(accuracy));
+    localStorage.setItem("blankBuilderTimedLastAttempts", String(totalAttempts));
+    localStorage.setItem("blankBuilderTimedLastStreak", String(maxStreak));
+
+    recordTimedTrialAchievementStats(accuracy, reachedRoom);
+
     returnToModeSelectFromRun();
 }
 
@@ -4641,25 +4612,13 @@ function showContinueButtonIfSaved(){
 }
 
 function startNewRun(){
-    const preflight = validateFacultyMode("standard");
-    if(!preflight.ok){
-        showFacultyPreflightFailure("standard", preflight.issues);
-        return;
-    }
     gameMode = "standard";
-    beginRunSession();
     clearSavedGame();
     startGame(false);
 }
 
 function continueSavedRun(){
-    const preflight = validateFacultyMode("standard");
-    if(!preflight.ok){
-        showFacultyPreflightFailure("standard", preflight.issues);
-        return;
-    }
     gameMode = "standard";
-    beginRunSession();
     resumedSavedRunThisSession = true;
     startGame(true);
 }
@@ -4695,15 +4654,7 @@ showContinueButtonIfSaved();
 // - progression bugs
 // =============================================
 function startGame(shouldResume = false) {
-    const preflight = validateFacultyMode(gameMode);
-    if(!preflight.ok){
-        showFacultyPreflightFailure(gameMode, preflight.issues);
-        return;
-    }
-
-    restoreGameplayShell();
-
-    const inputName = document.getElementById("playerNameInput").value.trim();
+    const inputName = document.getElementById("emailInput").value.trim();
 
     if (!inputName) {
         alert("Enter a name or initials.");
@@ -4711,12 +4662,10 @@ function startGame(shouldResume = false) {
     }
 
     username = inputName.slice(0, 40);
+    studentEmail = "";
 
 const hasSavedRun = shouldResume ? loadSavedGame() : false;
 if(!hasSavedRun){
-    finalElapsedTimeMs = null;
-    answerSubmissionPending = false;
-    runEnding = false;
     resumedSavedRunThisSession = false;
 }
 
@@ -4725,15 +4674,21 @@ if(!hasSavedRun){
     runID = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
-localStorage.setItem(PLAYER_KEY, username);
-localStorage.setItem(RUN_ID_KEY, runID);
-syncRealmAttemptState();
+localStorage.setItem("blankBuilderPlayer", username);
+localStorage.setItem("gauntletUser", username);
+localStorage.setItem("gauntletRunID", runID);
+if(modeAllowsRealmProgress()){
+    localStorage.setItem(REALM_STARTED_KEY, "true");
+    localStorage.setItem(REALM_STATUS_KEY, "contested");
+    localStorage.setItem(REALM_ROOM_KEY, String(room || 1));
+}
 	
 sendGameData({
     runID: runID,
     game: "Blank Mastery Quest",
     event: hasSavedRun ? "resume" : "start",
-    user: username
+    user: username,
+    email: studentEmail
 });
 
 // =============================================
@@ -4759,7 +4714,6 @@ if(!hasSavedRun){
 	rapidGuessHistory = [];
 	rapidGuessWarnings = 0;
 	rapidGuessLocked = false;
-    answerSubmissionPending = false;
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
 
@@ -4768,12 +4722,16 @@ if(!hasSavedRun){
     resetScoreAttackState();
 
     if(modeAllowsSave()){
-        localStorage.removeItem(ROOM_KEY);
-        if(!isRealmMissionComplete()){
-            Object.values(ARTIFACT_STORAGE_KEYS).forEach(key => localStorage.removeItem(key));
-        }
+            localStorage.removeItem("blankBuilderRoom");
+	    localStorage.removeItem("vaultCompass");
+	    localStorage.removeItem("vaultLens");
+	    localStorage.removeItem("vaultScales");
     }
-    syncRealmAttemptState();
+	if(modeAllowsRealmProgress()){
+	    localStorage.removeItem(REALM_COMPLETE_KEY);
+	    localStorage.setItem(REALM_STATUS_KEY, "contested");
+	    localStorage.setItem(REALM_ROOM_KEY, "1");
+	}
 	
     questionHistory = {
         easy: [], medium: [], hard: [], elite: [], legendary: [], calculation: [],
@@ -4797,7 +4755,7 @@ if(!hasSavedRun){
 	document.querySelector(".top-panel").style.display = "flex";
     document.getElementById("gameShell").style.display = "flex";
     document.getElementById("gameBox").style.display = "block";
-    document.getElementById("artifactVault").style.display = modeAllowsRealmProgress() ? "block" : "none";
+    document.getElementById("artifactVault").style.display = "block";
     document.querySelectorAll(".torch").forEach(t => t.style.display = "block");
 
 
@@ -4807,15 +4765,15 @@ if(!hasSavedRun){
    // IMPORTANT:
    // localStorage keys must match the HTML element ids.
    // =============================================    
-if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.compass)){
+if(localStorage.getItem("vaultCompass")){
     document.getElementById("vaultCompass").classList.add("unlocked");
 }
 
-if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens)){
+if(localStorage.getItem("vaultLens")){
     document.getElementById("vaultLens").classList.add("unlocked");
 }    
 
-if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.scales)){
+if(localStorage.getItem("vaultScales")){
     document.getElementById("vaultScales").classList.add("unlocked");
 }
   
@@ -4828,9 +4786,6 @@ if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.scale
 	 
 
 function resetRunStateForNewMode(){
-    finalElapsedTimeMs = null;
-    runEnding = false;
-    answerSubmissionPending = false;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -4950,33 +4905,26 @@ function updateTimedModeClock(){
 }
 
 function endTimedModeRun(){
-    if(gameMode !== "timed" || runEnding) return;
+    if(gameMode !== "timed") return;
 
-    beginRunSession();
-    runEnding = true;
-    answerSubmissionPending = true;
     stopTimedModeClock();
-    setAnswerButtonsDisabled(true);
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
-    const timeString = formatTime(totalTimeMs);
-    const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
+    const bestRoom = Number(localStorage.getItem("blankBuilderTimedBestRoom") || 0);
     if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
+        localStorage.setItem("blankBuilderTimedBestRoom", String(timedHighestRoom));
     }
 
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+    localStorage.setItem("blankBuilderTimedLastRoom", String(room));
+    localStorage.setItem("blankBuilderTimedLastHighestRoom", String(timedHighestRoom));
+    localStorage.setItem("blankBuilderTimedLastAccuracy", String(accuracy));
+    localStorage.setItem("blankBuilderTimedLastAttempts", String(totalAttempts));
+    localStorage.setItem("blankBuilderTimedLastStreak", String(maxStreak));
+    localStorage.setItem("blankBuilderTimedLastSetbacks", String(timedSetbacks));
 
     recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
 
@@ -4985,6 +4933,7 @@ function endTimedModeRun(){
         game: "Blank Mastery Quest",
         event: "timed_complete",
         user: username,
+        email: studentEmail,
         room: room,
         questionId: 0,
         correct: 1,
@@ -4994,13 +4943,12 @@ function endTimedModeRun(){
         responseTime: 0,
         attempt: totalAttempts,
         streak: streak,
-        elapsedTime: totalTimeMs,
+        elapsedTime: startTime ? (Date.now() - startTime) : 0,
         adaptiveMode: "timed_complete",
-        totalTime: totalTimeMs,
+        totalTime: timedModeDurationMs,
         accuracy: accuracy / 100,
         maxStreak: maxStreak,
-        totalAttempts: totalAttempts,
-        verificationCode: verificationCode
+        totalAttempts: totalAttempts
     });
 
     document.getElementById("bossMessage").innerText = "";
@@ -5017,15 +4965,11 @@ function endTimedModeRun(){
             Accuracy: ${accuracy}%<br>
             Total Attempts: ${totalAttempts}<br>
             Best Streak: ${maxStreak}<br>
-            Total Time: ${timeString}<br>
-            Run ID: <strong>${runID}</strong><br>
-            Verification Code: <strong>${verificationCode}</strong><br>
             Setbacks Taken: ${timedSetbacks}
         </div>
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
         <button class="continue-btn" onclick="restartTimedMode()">Retry Timed Trial</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
@@ -5036,27 +4980,14 @@ function endTimedModeRun(){
 
 function restartTimedMode(){
     gameMode = "timed";
-    runEnding = false;
     resetRunStateForNewMode();
     startSelectedMode("timed");
 }
 
 function returnToModeSelectFromRun(){
-    beginRunSession();
-    runEnding = true;
-    answerSubmissionPending = false;
     stopTimedModeClock();
     stopAllMusic();
-
-    const hallway = document.getElementById("hallwayTransition");
-    if(hallway) hallway.classList.remove("active");
     closeGraphLightbox();
-    closeGameModal();
-    const questionImageBox = document.getElementById("questionImageBox");
-    if(questionImageBox){
-        questionImageBox.innerHTML = "";
-        questionImageBox.style.display = "none";
-    }
 
     setGameControlsVisible(false);
 
@@ -5067,8 +4998,6 @@ function returnToModeSelectFromRun(){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
-    localStorage.removeItem(RUN_ID_KEY);
-    runID = "";
 }
 
 function getDifficultyForMode(){
@@ -5104,7 +5033,7 @@ function getDifficultyForMode(){
 // Allows pressing Enter to start the game
 // Improves usability, does not affect logic
 // =============================================
-document.getElementById("playerNameInput").addEventListener("keypress", function(event) {
+document.getElementById("emailInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
 
@@ -5206,43 +5135,130 @@ function wizardSpeak(text){
     msg.innerText = text;
 }     
     
-// Faculty-authored content begins at the marked section below.
-// Keep every active question complete and use a numeric a value from 0–3,
-// or a published aHash. The protected engine validates content at launch.
-
-// =====================================================
-// FACULTY QUESTION BANKS — SAFE TO EDIT
-// This blank authoring template contains no active questions.
-// Add content only inside this marked section.
-// Do not edit the protected engine below.
-// =====================================================
+// =============================================
+// QUESTION BANKS — PRIMARY EDIT AREA
+// =============================================
 //
-// Sample format (comment only; this object is not active):
+// REQUIRED FORMAT:
+//
 // {
-//     id: 1001,
-//     q: "Which choice best demonstrates the target idea?",
-//     options: ["Choice A", "Choice B", "Choice C", "Choice D"],
-//     a: 2,
-//     tag: "topic_label",
-//     type: "interpretation",
-//     objective: "LO1",
-//     difficulty: "easy",
-//     primarySkill: "skill_label",
-//     repairSkill: "skill_label",
-//     feedback: "Explain why the correct choice is best."
+//   id: UNIQUE NUMBER (DO NOT REUSE)
+//   q: "Question text",
+//   options: ["A","B","C","D"],
+//   a: INDEX OF CORRECT ANSWER (0–3),
+//   tag: "concept category",
+//   type: "definition | interpretation | calculation | trap",
+//   feedback: "Explanation shown after answer"
 // }
+//
+// RULES:
+// - IDs must be unique
+// - Always include 4 options
+// - Keep tags consistent (drives adaptive engine)
+// - Do NOT remove 'tag' or 'type'
+//
+// This is where instructors customize content.
+
+// =============================================
+// QUESTION BANKS — PASTE COURSE CONTENT HERE
+// =============================================
+//
+// Leave an array empty while building. The template adds visible
+// placeholders only when a pool is too small to test safely.
+// Real questions are never modified.
+//
+// REQUIRED: id, q, options, a, tag, type, objective,
+// primarySkill, repairSkill, feedback
+// =============================================
 
 const questionBanks = {
-    easy: [],
-    medium: [],
-    hard: [],
-    elite: [],
-    legendary: [],
-    easyBoss: [],
-    mediumBoss: [],
-    finalBoss: [],
-    legendaryBoss: []
+    easy: [
+        // Paste easy questions here.
+    ],
+    medium: [
+        // Paste medium questions here.
+    ],
+    hard: [
+        // Paste hard questions here.
+    ],
+    elite: [
+        // Paste elite questions here.
+    ],
+    legendary: [
+        // Paste legendary questions here.
+    ],
+    easyBoss: [
+        // Paste first-checkpoint questions here.
+    ],
+    mediumBoss: [
+        // Paste second-checkpoint questions here.
+    ],
+    finalBoss: [
+        // Paste final-checkpoint questions here.
+    ],
+    legendaryBoss: [
+        // Paste legendary checkpoint questions here.
+    ]
 };
+
+const TEMPLATE_POOL_MINIMUMS = {
+    easy: 12,
+    medium: 12,
+    hard: 10,
+    elite: 8,
+    legendary: 10,
+    easyBoss: 6,
+    mediumBoss: 6,
+    finalBoss: 6,
+    legendaryBoss: 6
+};
+
+function makeTemplatePlaceholder(poolName, index){
+    const baseByPool = {
+        easy: 100,
+        medium: 200,
+        hard: 300,
+        elite: 400,
+        legendary: 9000,
+        easyBoss: 2000,
+        mediumBoss: 3000,
+        finalBoss: 4000,
+        legendaryBoss: 9100
+    };
+
+    return {
+        id: 900000 + (baseByPool[poolName] || 0) + index,
+        q: `Template placeholder ${index + 1} for the ${poolName} pool. Replace this item with course content.`,
+        options: [
+            "Template placeholder",
+            "Course answer B",
+            "Course answer C",
+            "Course answer D"
+        ],
+        a: 0,
+        tag: "template_topic",
+        type: poolName.includes("Boss") ? "checkpoint" : "definition",
+        objective: "TEMPLATE_OBJECTIVE",
+        difficulty: poolName,
+        conceptCluster: "template_scaffold",
+        primarySkill: "template_skill",
+        secondarySkills: [],
+        repairSkill: "template_skill",
+        commonError: "template_content_not_replaced",
+        feedback: "The engine is working. Replace this placeholder with a real question before publishing."
+    };
+}
+
+Object.entries(TEMPLATE_POOL_MINIMUMS).forEach(([poolName, minimum]) => {
+    const pool = questionBanks[poolName];
+    if(!Array.isArray(pool)){
+        throw new Error(`questionBanks.${poolName} must be an array.`);
+    }
+
+    while(pool.length < minimum){
+        pool.push(makeTemplatePlaceholder(poolName, pool.length));
+    }
+});
 
 const objectiveLabels = {};
 
@@ -5262,142 +5278,53 @@ const objectiveLabels = {};
 // No keyword inference is used.
 // =============================================
 
-const repairQuestions = [];
-const bridgeQuestions = [];
-
-const microSkillRepairPools = {};
-const directSkillRepairRoutes = {};
-const microSkillBridgePools = {};
-
-// =====================================================
-// END FACULTY QUESTION BANKS
-// PROTECTED ENGINE BELOW
-// =====================================================
-
-const FACULTY_POOL_REQUIREMENTS = {
-    easy: 6,
-    medium: 6,
-    hard: 6,
-    elite: 4,
-    legendary: 6,
-    easyBoss: 3,
-    mediumBoss: 3,
-    finalBoss: 3,
-    legendaryBoss: 3,
-    repair: 1,
-    bridge: 1
-};
-
-const FACULTY_MODE_REQUIREMENTS = {
-    standard: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"],
-    timed: ["easy", "medium", "hard", "repair", "bridge"],
-    exam: ["easy", "medium", "hard", "repair", "bridge"],
-    legendary: ["legendary", "legendaryBoss"],
-    score: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"]
-};
-
-function getFacultyPool(poolName){
-    if(poolName === "repair") return repairQuestions;
-    if(poolName === "bridge") return bridgeQuestions;
-    return questionBanks[poolName];
-}
-
-function isValidPublishedAnswerHash(value){
-    if(typeof value !== "string") return false;
-    const normalized = value.trim().replace(/^sha256:/i, "");
-    return /^[a-f0-9]{64}$/i.test(normalized)
-        || /^[A-Za-z0-9+/]{43}=?$/.test(normalized);
-}
-
-function validateFacultyQuestion(question, poolName){
-    const invalidFields = [];
-    if(!question || typeof question !== "object") return ["question"];
-    if(question.id === undefined || question.id === null || String(question.id).trim() === "") invalidFields.push("id");
-    if(typeof question.q !== "string" || !question.q.trim()) invalidFields.push("q");
-    if(!Array.isArray(question.options) || question.options.length !== 4 || question.options.some(option => typeof option !== "string" || !option.trim())) invalidFields.push("options");
-    const numericAnswerValid = Number.isInteger(question.a) && question.a >= 0 && question.a <= 3;
-    if(!numericAnswerValid && !isValidPublishedAnswerHash(question.aHash)) invalidFields.push("a/aHash");
-    ["tag", "type", "objective", "primarySkill", "repairSkill", "feedback"].forEach(field => {
-        if(typeof question[field] !== "string" || !question[field].trim()) invalidFields.push(field);
-    });
-    if(poolName.toLowerCase().includes("boss") && (!Number.isInteger(question.bossStage) || question.bossStage < 1 || question.bossStage > 3)){
-        invalidFields.push("bossStage");
+const repairQuestions = [
+    {
+        id: 950001,
+        q: "Repair placeholder. Replace this with a simpler explanation or prerequisite check.",
+        options: ["Template placeholder", "Course answer B", "Course answer C", "Course answer D"],
+        a: 0,
+        tag: "template_topic",
+        type: "repair",
+        objective: "TEMPLATE_OBJECTIVE",
+        difficulty: "repair",
+        primarySkill: "template_skill",
+        repairSkill: "template_skill",
+        commonError: "template_content_not_replaced",
+        feedback: "This is the repair step. Replace it with targeted corrective practice."
     }
-    return invalidFields;
-}
+];
 
-function validateFacultyMode(mode){
-    const normalizedMode = mode || "standard";
-    const requiredPoolNames = FACULTY_MODE_REQUIREMENTS[normalizedMode] || FACULTY_MODE_REQUIREMENTS.standard;
-    const issues = [];
-    const seenIds = new Map();
-
-    requiredPoolNames.forEach(poolName => {
-        const pool = getFacultyPool(poolName);
-        const minimum = FACULTY_POOL_REQUIREMENTS[poolName] || 0;
-
-        if(!Array.isArray(pool)){
-            issues.push({pool: poolName, id: "—", issue: "Pool is not an array"});
-            return;
-        }
-
-        if(pool.length < minimum){
-            issues.push({pool: poolName, id: "—", issue: `Needs ${minimum}; found ${pool.length}`});
-        }
-
-        pool.forEach((question, index) => {
-            const fields = validateFacultyQuestion(question, poolName);
-            if(fields.length){
-                issues.push({pool: poolName, id: question?.id ?? `index ${index}`, issue: `Invalid: ${fields.join(", ")}`});
-            }
-
-            const key = String(question?.id ?? "");
-            if(key && seenIds.has(key)){
-                issues.push({pool: poolName, id: key, issue: `Duplicate ID also used in ${seenIds.get(key)}`});
-            } else if(key) {
-                seenIds.set(key, poolName);
-            }
-        });
-    });
-
-    if(issues.length){
-        console.group(`Faculty question-bank preflight: ${normalizedMode}`);
-        console.table(issues);
-        console.info("Preflight side-effect audit " + JSON.stringify({
-            runIDCreated: Boolean(runID),
-            saveCreated: Boolean(localStorage.getItem(`${SAVE_KEY}_${normalizedMode}`)),
-            telemetryCreated: Object.keys(localStorage).some(key => key.startsWith(TELEMETRY_PREFIX)),
-            completionCreated: Boolean(localStorage.getItem(REALM_COMPLETE_KEY))
-        }));
-        console.groupEnd();
-    } else {
-        console.info(`Faculty question-bank preflight passed for ${normalizedMode}.`);
+const bridgeQuestions = [
+    {
+        id: 960001,
+        q: "Bridge placeholder. Replace this with a new-context application of the repaired skill.",
+        options: ["Template placeholder", "Course answer B", "Course answer C", "Course answer D"],
+        a: 0,
+        tag: "template_topic",
+        type: "bridge",
+        objective: "TEMPLATE_OBJECTIVE",
+        difficulty: "bridge",
+        primarySkill: "template_skill",
+        repairSkill: "template_skill",
+        commonError: "template_content_not_replaced",
+        feedback: "This is the bridge step. Replace it with an application that returns the learner to the main objective."
     }
+];
 
-    return { ok: issues.length === 0, issues };
+function groupQuestionsBySkill(items){
+    return items.reduce((groups, question) => {
+        const skill = question.primarySkill || question.repairSkill;
+        if(!skill) return groups;
+        if(!groups[skill]) groups[skill] = [];
+        groups[skill].push(question);
+        return groups;
+    }, {});
 }
 
-function showFacultyPreflightFailure(mode, issues){
-    const summary = issues
-        .slice(0, 12)
-        .map(item => `${item.pool}: ${item.issue}${item.id !== "—" ? ` (ID ${item.id})` : ""}`)
-        .join("\n");
-    const more = issues.length > 12 ? `\n…and ${issues.length - 12} more issue(s). See the browser console.` : "";
-
-    showGameModal({
-        title: "Question Bank Preflight",
-        text: `This authoring template does not contain enough valid questions for ${getModeLabelForPreflight(mode)}. Add questions in the marked Faculty Question Banks section before launching the game.\n\n${summary}${more}`,
-        confirmText: "Return to Modes"
-    });
-}
-
-function getModeLabelForPreflight(mode){
-    if(mode === "timed") return "Timed Trial";
-    if(mode === "exam") return "Exam Drill";
-    if(mode === "legendary") return "Legendary Mode";
-    if(mode === "score") return "Score Attack";
-    return "Standard Campaign";
-}
+const microSkillRepairPools = groupQuestionsBySkill(repairQuestions);
+const directSkillRepairRoutes = { ...microSkillRepairPools };
+const microSkillBridgePools = groupQuestionsBySkill(bridgeQuestions);
 
 	  
 // =============================================
@@ -5430,56 +5357,35 @@ function getModeLabelForPreflight(mode){
 // This function ensures fairness in answer order.
 // =============================================   
 function shuffleOptions(question){
-    if(!question) return null;
-    const q = {
-        ...question,
-        options: [...(question.options || [])],
-        secondarySkills: [...(question.secondarySkills || [])]
+    let q = {
+        id: question.id,
+        q: question.q,
+        options: [...question.options],
+        a: question.a,
+        feedback: question.feedback,
+        hint: question.hint,
+        tag: question.tag,
+        type: question.type,
+        objective: question.objective,
+        image: question.image,
+		difficulty: question.difficulty,
+        conceptCluster: question.conceptCluster,
+        primarySkill: question.primarySkill,
+        secondarySkills: question.secondarySkills || [],
+        repairSkill: question.repairSkill,
+        commonError: question.commonError
     };
 
-    const correctText = Number.isInteger(question.a) && question.a >= 0 && question.a < q.options.length
-        ? question.options[question.a]
-        : null;
+    let correct = q.options[q.a];
 
     for(let i = q.options.length - 1; i > 0; i--){
         let j = Math.floor(Math.random() * (i + 1));
         [q.options[i], q.options[j]] = [q.options[j], q.options[i]];
     }
 
-    if(correctText !== null){
-        q.a = q.options.indexOf(correctText);
-    } else {
-        delete q.a;
-    }
+    q.a = q.options.indexOf(correct);
 
     return q;
-}
-
-function normalizeAnswerText(value){
-    return String(value ?? "").trim().replace(/\s+/g, " ").toLowerCase();
-}
-
-function bytesToHex(bytes){
-    return Array.from(bytes, byte => byte.toString(16).padStart(2, "0")).join("");
-}
-
-function bytesToBase64(bytes){
-    let binary = "";
-    bytes.forEach(byte => { binary += String.fromCharCode(byte); });
-    return btoa(binary);
-}
-
-async function isQuestionAnswerCorrect(question, selectedIndex){
-    if(!question || !Array.isArray(question.options)) return false;
-    if(Number.isInteger(question.a)) return selectedIndex === question.a;
-    if(typeof question.aHash !== "string") throw new Error("Question has no valid answer key.");
-    if(!window.crypto?.subtle) throw new Error("Secure answer verification is unavailable in this browser.");
-
-    const selectedText = normalizeAnswerText(question.options[selectedIndex]);
-    const digest = new Uint8Array(await window.crypto.subtle.digest("SHA-256", new TextEncoder().encode(selectedText)));
-    const expected = question.aHash.trim().replace(/^sha256:/i, "");
-    return expected.toLowerCase() === bytesToHex(digest)
-        || expected.replace(/=+$/, "") === bytesToBase64(digest).replace(/=+$/, "");
 }
 
 // =============================================
@@ -5778,19 +5684,15 @@ document.addEventListener("keydown", function(event){
 // Changing logic here will break progression.
      
 function loadQuestion() {
-    if(runEnding) return;
-    answerSubmissionPending = false;
-
     if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
         endTimedModeRun();
         return;
     }
 
-    if(gameMode === "exam" && room > 30){
+    if((gameMode === "timed" || gameMode === "exam") && room > 30){
         handlePracticeModeComplete();
         return;
     }
-    if(gameMode === "timed" && room > 30) room = 30;
 
     questionStartTime = Date.now(); 
     updateMazeTrack();
@@ -5864,10 +5766,6 @@ if (isBoss) {
 
     // 2. Select the specific question based on boss health
     currentQuestion = shuffleOptions(bossPool[3 - bossHealth]);
-    if(!currentQuestion){
-        showGameModal({title:"Question Selection Stopped",text:"A valid checkpoint question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
-        return;
-    }
 
     if (currentQuestion.image) {
         imageBox.innerHTML = `<img src="${currentQuestion.image}" alt="Question graph" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded question graph"><div class="graph-zoom-note">Click graph to enlarge</div>`;
@@ -5923,10 +5821,6 @@ if(gameMode === "legendary"){
             purpose: "stretch"
         })
     );
-    if(!currentQuestion){
-        showGameModal({title:"Question Selection Stopped",text:"A valid Legendary question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
-        return;
-    }
 
     if(currentQuestion.image){
         imageBox.innerHTML = `<img src="${currentQuestion.image}" alt="Question graph" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded question graph"><div class="graph-zoom-note">Click graph to enlarge</div>`;
@@ -5964,7 +5858,7 @@ if(gameMode === "legendary"){
         adjustedDiff = "hard";
     }
 
-    if(["medium","hard"].includes(diff) && profile.eliteReady && room < 30 && questionBanks.elite.length > 0){
+    if(["medium","hard"].includes(diff) && profile.eliteReady && room < 30){
         adjustedDiff = "elite";
         adaptiveMode = "challenge";
     }
@@ -5999,11 +5893,6 @@ else{
         })
     );
 }
-
-if(!currentQuestion){
-    showGameModal({title:"Question Selection Stopped",text:"A valid question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
-    return;
-}
 		
 if(currentQuestion.image){
     imageBox.innerHTML = `<img src="${currentQuestion.image}" alt="Question graph" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded question graph"><div class="graph-zoom-note">Click graph to enlarge</div>`;
@@ -6037,9 +5926,9 @@ if(currentQuestion.image){
     
   // --- Final Boss Entrance Shake ---
     if(diff === "finalBoss"){
-        scheduleForCurrentRun(()=>{
+        setTimeout(()=>{
         triggerBossShake();
-        scheduleForCurrentRun(triggerBossShake,450);
+        setTimeout(triggerBossShake,450);
         },200);
     }
 }
@@ -6069,7 +5958,6 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
-    answerSubmissionPending = false;
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -6121,16 +6009,9 @@ function checkRapidGuessing(isCorrect, responseTime){
 
     const avgTime = recent.reduce((sum, item) => sum + item.responseTime, 0) / recent.length;
     const accuracy = recent.reduce((sum, item) => sum + item.correct, 0) / recent.length;
-    const burst = recent.slice(-RAPID_GUESS_CONFIG.burstWindowSize);
-    const burstFastCount = burst.filter(item => item.responseTime < RAPID_GUESS_CONFIG.burstFastMs).length;
-    const burstAccuracy = burst.length ? burst.reduce((sum, item) => sum + item.correct, 0) / burst.length : 1;
-    const rollingPattern = avgTime < RAPID_GUESS_CONFIG.avgTimeMs && accuracy < RAPID_GUESS_CONFIG.maxAccuracy;
-    const burstPattern = burst.length === RAPID_GUESS_CONFIG.burstWindowSize
-        && burstFastCount >= RAPID_GUESS_CONFIG.burstMinFast
-        && burstAccuracy <= RAPID_GUESS_CONFIG.burstMaxAccuracy;
 
     return {
-        triggered: rollingPattern || burstPattern,
+        triggered: avgTime < RAPID_GUESS_CONFIG.avgTimeMs && accuracy < RAPID_GUESS_CONFIG.maxAccuracy,
         avgTime,
         accuracy
     };
@@ -6154,32 +6035,6 @@ function checkRapidGuessing(isCorrect, responseTime){
 // Check for artifact names and CHANGE
      
 async function answer(choice) {
-    const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
-
-    answerSubmissionPending = true;
-    setAnswerButtonsDisabled(true);
-
-    const responseTime = Date.now() - questionStartTime;
-    let isCorrect = false;
-
-    try {
-        isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
-    } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
-        console.error("Answer verification failed:", error);
-        answerSubmissionPending = false;
-        setAnswerButtonsDisabled(false);
-        document.getElementById("message").innerText = "The answer could not be verified. Please try again.";
-        showGameModal({
-            title: "Answer Check Unavailable",
-            text: "The answer could not be verified. The question is still active; close this message and try again.",
-            confirmText: "Return to Question"
-        });
-        return;
-    }
-
     // --- GLOBAL MEMORY DECAY ---
     for(let tag in conceptMemory){
     conceptMemory[tag] *= 0.95;
@@ -6190,6 +6045,8 @@ async function answer(choice) {
     const isBossRoom = isBossRoomForMode(room);
     const msgElement = document.getElementById("message");
     const wizard = document.getElementById("wizardImage");
+	const isCorrect = (choice === currentQuestion.a);
+	const responseTime = Date.now() - questionStartTime;
 
 // =============================================
 // RAPID GUESSING LOCKOUT
@@ -6217,9 +6074,9 @@ if(rapidGuess.triggered && !rapidGuessLocked){
         game: "Blank Mastery Quest",
         event: "rapid_guessing",
         user: username || "anonymous",
+        email: studentEmail || "",
         room: room,
         questionId: currentQuestion.id || 0,
-        selectedIndex: choice,
         correct: isCorrect ? 1 : 0,
         tag: currentQuestion.tag || "none",
         type: currentQuestion.type || "none",
@@ -6237,7 +6094,7 @@ if(rapidGuess.triggered && !rapidGuessLocked){
     // Same question. No movement. No reward.
     rapidGuessHistory = [];
 
-    scheduleForCurrentRun(() => {
+    setTimeout(() => {
         rapidGuessLocked = false;
         questionStartTime = Date.now();
         displayQuestion();
@@ -6281,9 +6138,9 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 		game: "Blank Mastery Quest",
         event: "question",
         user: username || "anonymous",
+		email: studentEmail || "",
         room: room,
         questionId: currentQuestion.id || 0,
-        selectedIndex: choice,
         correct: isCorrect ? 1 : 0,
         tag: currentQuestion.tag || "none",
         type: currentQuestion.type || "none",
@@ -6304,7 +6161,6 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
     if(modeUsesScoreAttack()){
         setAnswerButtonsDisabled(true);
         await waitForScoreAttackResolve(isCorrect);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
     }
 
     // =============================================
@@ -6329,7 +6185,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         wizardSpeak(getWizardFeedback("correct"));
        
         wizard.style.transform = "scale(1.1)";
-        scheduleForCurrentRun(()=>{
+        setTimeout(()=>{
         wizard.style.transform = "";
         },200);
 
@@ -6397,9 +6253,9 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         `<span class='fade-out-text'>${getRecoveryLine("complete")}</span>`;
 
     room = returnRoom;
-       if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
+       localStorage.setItem("blankBuilderRoom", room);
 
-    scheduleForCurrentRun(loadQuestion, TIMING.normal);
+    setTimeout(loadQuestion, TIMING.normal);
     return;
 }
 
@@ -6416,7 +6272,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         if(isBossRoom){
         bossHealth--;
         
-		const bossLine = getFacultyBossLine({
+		const bossLine = getBlankBuilderBossLine({
  		 isCorrect: true,
  		 tag: currentQuestion.tag || "",
 		  type: currentQuestion.type || "",
@@ -6433,7 +6289,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 		triggerBossShake();
         
         if (bossHealth > 0) {
-           scheduleForCurrentRun(loadQuestion, TIMING.boss);
+           setTimeout(loadQuestion, TIMING.boss);
            return;
         }
 			
@@ -6444,6 +6300,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 			game: "Blank Mastery Quest",
             event: "boss_defeated",
             user: username,
+		    email: studentEmail,
             room: room
          });
            
@@ -6453,19 +6310,19 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
  if(modeAllowsRealmProgress()){
     if(room === 10){
         document.getElementById("vaultCompass").classList.add("unlocked");
-        localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
+        localStorage.setItem("vaultCompass", "true");
         showArtifact(artifacts.compass.img, artifacts.compass.title, artifacts.compass.text);
     }
 
     if(room === 20){
         document.getElementById("vaultLens").classList.add("unlocked");
-        localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
+        localStorage.setItem("vaultLens", "true");
         showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
     }
 
     if(room === 30){
         document.getElementById("vaultScales").classList.add("unlocked");
-        localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
+        localStorage.setItem("vaultScales", "true");
         showArtifact(artifacts.scales.img, artifacts.scales.title, artifacts.scales.text);
     }
 
@@ -6486,7 +6343,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    room++;
    timedHighestRoom = Math.max(timedHighestRoom, Math.min(room, 30));
    saveGameState();
-        if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
+        localStorage.setItem("blankBuilderRoom", room);
 
    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
        endTimedModeRun();
@@ -6512,9 +6369,9 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
     wizardSpeak(getWizardFeedback("wrong"));
 
     wizard.style.transform = "translateX(-6px)";
-    scheduleForCurrentRun(() => {
+    setTimeout(() => {
         wizard.style.transform = "translateX(6px)";
-        scheduleForCurrentRun(() => {
+        setTimeout(() => {
             wizard.style.transform = "";
         }, 100);
     }, 100);
@@ -6528,7 +6385,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
     }
 
 	if(isBossRoom){
-	  const bossLine = getFacultyBossLine({
+	  const bossLine = getBlankBuilderBossLine({
     	isCorrect: false,
     	tag: currentQuestion.tag || "",
     	type: currentQuestion.type || "",
@@ -6611,7 +6468,7 @@ room = Math.max(bossCheckpoint, newRoom);
 
 if(gameMode === "timed") timedSetbacks++;
 
-    if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
+    localStorage.setItem("blankBuilderRoom", room);
 	
 showGameModal({
     title: "Wrong Turn",
@@ -6655,8 +6512,7 @@ function unlockArtifact(key) {
 
     if(slot){
         slot.classList.add("unlocked");
-        const storageKey = ARTIFACT_STORAGE_KEYS[key];
-        if(storageKey) localStorage.setItem(storageKey, "true");
+        localStorage.setItem(id, "true");
         updateMissionArtifactCountFromVault();
     }
 
@@ -6723,7 +6579,7 @@ function showHallwayTransition(feedback){
     overlay.classList.add("active");
     document.getElementById("srAnnouncements").innerText = `Correct. ${feedback}`;
 
-    scheduleForCurrentRun(() => {
+    setTimeout(() => {
         overlay.classList.remove("active");
         loadQuestion();
     }, 1800);
@@ -6739,14 +6595,8 @@ function showArtifact(img,title,text){
     let t = document.getElementById("artifactTitle");
     let p = document.getElementById("artifactText");
 
+    image.src = img;
     image.alt = title;
-    if(img){
-        image.src = img;
-        image.style.display = "block";
-    } else {
-        image.removeAttribute("src");
-        image.style.display = "none";
-    }
     t.innerText = title;
     p.innerText = text;
 
@@ -6855,7 +6705,7 @@ function showKnowledgeRoom(bossRoom) {
         <button id="continueBtn" class="continue-btn">${buttonLabel}</button>
     `;
 
-    scheduleForCurrentRun(() => {
+    setTimeout(() => {
         const continueButton = document.getElementById("continueBtn");
         if(!continueButton) return;
         continueButton.onclick = () => {
@@ -6881,12 +6731,9 @@ function showKnowledgeRoom(bossRoom) {
 
 
 function handleLegendaryVictory(){
-    if(runEnding) return;
-    beginRunSession();
-    runEnding = true;
-    answerSubmissionPending = true;
     stopTimedModeClock();
-    localStorage.setItem(`${STORAGE_PREFIX}:legendary:complete`, "true");
+    localStorage.setItem("blankQuestCollection_blankBuilder_legendary_complete", "true");
+    localStorage.setItem("blankBuilderLegendaryComplete", "true");
     clearSavedGame();
 
     bgMusic.pause();
@@ -6897,7 +6744,7 @@ function handleLegendaryVictory(){
         sfxVictory.play();
     }
 
-    const totalTimeMs = freezeCompletionTime();
+    const totalTimeMs = Date.now() - startTime;
     const timeString = formatTime(totalTimeMs);
     const accuracy = totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
     const verificationCode = generateCode(username + "|LEGENDARY", accuracy, maxStreak, totalTimeMs);
@@ -6907,6 +6754,7 @@ function handleLegendaryVictory(){
         game: "Blank Mastery Quest",
         event: "legendary_complete",
         user: username,
+        email: studentEmail,
         room: room,
         questionId: 0,
         correct: 1,
@@ -6946,15 +6794,12 @@ function handleLegendaryVictory(){
             Total Attempts: ${totalAttempts}<br>
             Best Streak: ${maxStreak}<br>
             Total Time: ${timeString}<br>
-            Run ID: <strong>${runID}</strong><br>
             Verification Code: <strong>${verificationCode}</strong>
         </div>
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
-        <button class="continue-btn" onclick="startSelectedMode('legendary')">Replay Legendary Mode</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
     `;
 
@@ -6968,18 +6813,13 @@ function handleLegendaryVictory(){
 // It does NOT mark Standard Campaign complete and does NOT unlock artifacts.
 // =============================================
 function handleScoreAttackVictory(){
-    if(runEnding) return;
-    beginRunSession();
-    runEnding = true;
-    answerSubmissionPending = true;
     stopTimedModeClock();
 
-    const totalTimeMs = freezeCompletionTime();
+    const totalTimeMs = startTime ? (Date.now() - startTime) : 0;
     const timeString = formatTime(totalTimeMs);
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const verificationCode = generateCode(username + "|SCORE", accuracy, maxStreak, totalTimeMs);
 
     storeScoreAttackFinalStats(accuracy, totalTimeMs);
 
@@ -6988,6 +6828,7 @@ function handleScoreAttackVictory(){
         game: "Blank Mastery Quest",
         event: "score_complete",
         user: username,
+        email: studentEmail,
         room: room,
         questionId: 0,
         correct: 1,
@@ -7005,8 +6846,7 @@ function handleScoreAttackVictory(){
         totalAttempts: totalAttempts,
         score: scoreAttackScore,
         bestScore: scoreAttackBestScore,
-        scoreEvents: JSON.stringify(scoreAttackEvents),
-        verificationCode: verificationCode
+        scoreEvents: JSON.stringify(scoreAttackEvents)
     });
 
     let scoreLine = "Respectable. The checkpoint noticed.";
@@ -7033,14 +6873,11 @@ function handleScoreAttackVictory(){
             Accuracy: ${accuracy}%<br>
             Total Attempts: ${totalAttempts}<br>
             Best Streak: ${maxStreak}<br>
-            Total Time: ${timeString}<br>
-            Run ID: <strong>${runID}</strong><br>
-            Verification Code: <strong>${verificationCode}</strong>
+            Total Time: ${timeString}
         </div>
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
         <button class="continue-btn" onclick="restartScoreAttackMode()">Retry Score Attack</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
@@ -7056,18 +6893,11 @@ function restartScoreAttackMode(){
 }
 
 function handlePracticeModeComplete(){
-    if(runEnding) return;
-    beginRunSession();
-    runEnding = true;
-    answerSubmissionPending = true;
     stopTimedModeClock();
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime();
-    const timeString = formatTime(totalTimeMs);
-    const verificationCode = generateCode(username + "|" + gameMode.toUpperCase(), accuracy, maxStreak, totalTimeMs);
 
 	if(gameMode === "exam"){
  	   markExamDrillCompleted();
@@ -7078,6 +6908,7 @@ function handlePracticeModeComplete(){
         game: "Blank Mastery Quest",
         event: `${gameMode}_complete`,
         user: username,
+        email: studentEmail,
         room: room,
         questionId: 0,
         correct: 1,
@@ -7087,13 +6918,12 @@ function handlePracticeModeComplete(){
         responseTime: 0,
         attempt: totalAttempts,
         streak: streak,
-        elapsedTime: totalTimeMs,
+        elapsedTime: startTime ? (Date.now() - startTime) : 0,
         adaptiveMode: `${gameMode}_complete`,
-        totalTime: totalTimeMs,
+        totalTime: startTime ? (Date.now() - startTime) : 0,
         accuracy: accuracy / 100,
         maxStreak: maxStreak,
-        totalAttempts: totalAttempts,
-        verificationCode: verificationCode
+        totalAttempts: totalAttempts
     });
 
     document.getElementById("bossMessage").innerText = "";
@@ -7108,17 +6938,12 @@ function handlePracticeModeComplete(){
             You reached the end of this practice path.<br><br>
             Accuracy: ${accuracy}%<br>
             Total Attempts: ${totalAttempts}<br>
-            Best Streak: ${maxStreak}<br>
-            Total Time: ${timeString}<br>
-            Run ID: <strong>${runID}</strong><br>
-            Verification Code: <strong>${verificationCode}</strong>
+            Best Streak: ${maxStreak}
         </div>
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
-        <button class="continue-btn" onclick="startSelectedMode('exam')">Replay Exam Drill</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
     `;
 
@@ -7143,9 +6968,9 @@ function handlePracticeModeComplete(){
 //
 // ---------------------------------------------
 // DO NOT CHANGE:
-// - string structure and file-specific salt
+// - string structure (name|acc|streak|total|CITADEL00)
 // - hashing logic
-// - return format ("MQB-...")
+// - return format ("QUEST-...")
 //
 // Changing this WILL:
 // - invalidate all existing completion codes
@@ -7160,7 +6985,7 @@ function handlePracticeModeComplete(){
 // It is a lightweight integrity check.
 // =============================================
 function generateCode(name, acc, streak, total){
-    let str = `${name}|${acc}|${streak}|${total}|MQB2026`;
+    let str = `${name}|${acc}|${streak}|${total}|QUEST07`;
     let hash = 0;
 
     for(let i = 0; i < str.length; i++){
@@ -7168,7 +6993,7 @@ function generateCode(name, acc, streak, total){
         hash |= 0;
     }
 
-    return "MQB-" + Math.abs(hash).toString(36).toUpperCase();
+    return "QUEST-" + Math.abs(hash).toString(36).toUpperCase();
 } 
 
 // =============================================
@@ -7213,11 +7038,6 @@ function handleVictory() {
         return;
     }
 
-    if(runEnding) return;
-    beginRunSession();
-    runEnding = true;
-    answerSubmissionPending = true;
-
     localStorage.setItem(REALM_STARTED_KEY, "true");
 	localStorage.setItem(REALM_COMPLETE_KEY, "true");
 	localStorage.setItem(REALM_STATUS_KEY, "restored");
@@ -7234,7 +7054,7 @@ function handleVictory() {
         sfxVictory.play();
     }
     
-    const totalTimeMs = freezeCompletionTime();
+    const totalTimeMs = Date.now() - startTime;
     const timeString = formatTime(totalTimeMs);
     const accuracy = Math.round((correctAnswers / totalAttempts) * 100);
     const verificationCode = generateCode(username, accuracy, maxStreak, totalTimeMs);
@@ -7244,6 +7064,7 @@ sendGameData({
 	game: "Blank Mastery Quest",
     event: "complete",
     user: username,
+	email: studentEmail,
     room: room,
     questionId: 0,
     correct: 1,
@@ -7318,7 +7139,6 @@ else if(accuracy < 75){
             <p>Player: <strong>${username}</strong></p>
             <p>Accuracy: <strong>${accuracy}%</strong> | Best Streak: <strong>${maxStreak}</strong></p>
             <p>Elapsed Time: <strong>${timeString}</strong> | Total Questions: <strong>${totalAttempts}</strong></p>
-            <p>Run ID: <strong>${runID}</strong></p>
             <p style="font-size:0.8em; color:#9ca3af;">Verification Code: <span id="vCode" style="color:#f0c86a;">${verificationCode}</span></p>
         </div>
 
@@ -7330,26 +7150,18 @@ else if(accuracy < 75){
             <button id="shareBtn" onclick="copyResults()" style="background:linear-gradient(180deg,#f0c86a,#9a6b1f); color:#111827; font-weight:bold; padding:12px 24px; border:1px solid rgba(255,255,255,0.25); border-radius:6px; cursor:pointer;">
                 Copy Results
             </button>
-            <button onclick="downloadTelemetryCsv()" style="background:linear-gradient(180deg,#1d4d73,#04101f); color:#f7d982; font-weight:bold; padding:12px 24px; border:1px solid rgba(247,217,130,0.55); border-radius:6px; cursor:pointer;">
-                Download Game Data
-            </button>
             <button onclick="showMasteryReportScreen()" style="background:linear-gradient(180deg,#1d4d73,#04101f); color:#f7d982; font-weight:bold; padding:12px 24px; border:1px solid rgba(247,217,130,0.55); border-radius:6px; cursor:pointer;">
                 View Mastery Report
             </button>
             <button onclick="location.reload()" style="background:transparent; color:#e5e7eb; border:1px solid rgba(229,231,235,0.55); padding:12px 24px; border-radius:6px; cursor:pointer;">
                 Run Again
             </button>
-            <button onclick="returnToModeSelectFromRun()" style="background:transparent; color:#e5e7eb; border:1px solid rgba(229,231,235,0.55); padding:12px 24px; border-radius:6px; cursor:pointer;">
-                Choose Another Mode
-            </button>
         </div>
     </div>
 `;
 
     // --- THEN RUN THE FADE-IN ---
-    const resultsSessionId = runSessionId;
     setTimeout(() => {
-        if(!isRunSessionCurrent(resultsSessionId)) return;
         const line = document.getElementById("archivistLine");
         if(line){
             line.style.transition = "opacity 1s ease";
@@ -7611,7 +7423,7 @@ function getMasteryReportModeName(){
 }
 
 function getMasteryReportData(){
-    const totalTimeMs = getElapsedTimeMs();
+    const totalTimeMs = startTime ? (Date.now() - startTime) : 0;
     const accuracy = totalAttempts > 0 ? correctAnswers / totalAttempts : 0;
     const tagEntries = getEntriesFromBuckets(masteryState.byTag || {}, "tag");
     const objectiveEntries = getEntriesFromBuckets(masteryState.byObjective || {}, "objective");
@@ -7794,7 +7606,6 @@ function showMasteryReportScreen(){
 
             <div class="mastery-actions">
                 <button class="continue-btn" onclick="copyMasteryReport()">Copy Report</button>
-                <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
                 ${report.noMajorWeakness && gameMode !== "legendary" ? `<button class="continue-btn" onclick="startSelectedMode('legendary')">Enter Legendary Mode</button>` : ""}
                 <button class="continue-btn secondary-modal-btn" onclick="restoreResultsScreen()">Back to Results</button>
                 <button class="continue-btn secondary-modal-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
@@ -7912,14 +7723,14 @@ function shuffleArray(arr){
 // Clearing browser data will erase scores.
 // =============================================
 function updateHighScores(newTimeMs) {
-    let scores = JSON.parse(localStorage.getItem(`${STORAGE_PREFIX}:standard:highScores`)) || [];
+    let scores = JSON.parse(localStorage.getItem("blankBuilderHighScores")) || [];
     scores.push({ name: username, time: newTimeMs, date: new Date().toLocaleDateString() });
     
     // Sort by time (lowest/fastest first) and keep top 5
     scores.sort((a, b) => a.time - b.time);
     scores = scores.slice(0, 5);
     
-    localStorage.setItem(`${STORAGE_PREFIX}:standard:highScores`, JSON.stringify(scores));
+    localStorage.setItem("blankBuilderHighScores", JSON.stringify(scores));
     return scores;
 }
 
@@ -7965,7 +7776,7 @@ function formatTime(ms) {
 // Removing those will break this function.
 // =============================================     
 function copyResults() {
-    const totalTimeMs = getElapsedTimeMs();
+    const totalTimeMs = Date.now() - startTime;
     const timeString = formatTime(totalTimeMs);
     const code = document.getElementById("vCode").innerText;
     const accuracy = Math.round((correctAnswers / totalAttempts) * 100);
@@ -7977,7 +7788,7 @@ Accuracy: ${accuracy}%
 Best Streak: ${maxStreak}
 Total Questions: ${totalAttempts}
 Code: ${code}
-Generated by the Faculty Mastery Quest Template`;
+Generated by the Blank Builder Template`;
 
     navigator.clipboard.writeText(shareText).then(() => {
         const btn = document.getElementById("shareBtn");
@@ -7994,132 +7805,9 @@ Generated by the Faculty Mastery Quest Template`;
     });
 }
 
-// =============================================
-// LOCAL TELEMETRY + COMPLETION CSV — PROTECTED ENGINE
-// No records leave this browser.
-// =============================================
-const TELEMETRY_PREFIX = `${STORAGE_PREFIX}:telemetry:`;
-const LATEST_TELEMETRY_RUN_KEY = `${STORAGE_PREFIX}:telemetry:latestRun`;
-const TELEMETRY_VERSION = "faculty-local-v1";
-const GAME_VERSION = "Faculty-Blank-2026.07.28";
-const TELEMETRY_COLUMNS = [
-    "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
-    "room","questionID","questionVersion","difficulty","selectedIndex","correct",
-    "rapidGuessing","tag","type","objective","responseTimeMs","attempt","streak",
-    "elapsedTimeMs","adaptiveMode","remediationStage","priorExposureCount",
-    "firstExposure","score","bestScore","totalTimeMs","accuracy","maxStreak",
-    "totalAttempts","verificationCode"
-];
-
-function createTelemetryEventID(){
-    if(window.crypto && typeof window.crypto.randomUUID === "function") return window.crypto.randomUUID();
-    return `evt-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
-}
-
-function getTelemetryKey(activeRunID = runID){
-    return `${TELEMETRY_PREFIX}${activeRunID || "unknown-run"}`;
-}
-
-function readLocalTelemetry(activeRunID = runID){
-    try {
-        const raw = localStorage.getItem(getTelemetryKey(activeRunID));
-        return raw ? JSON.parse(raw) : [];
-    } catch(error){
-        console.warn("Local game data could not be read:", error);
-        return [];
-    }
-}
-
-function sendGameData(data = {}){
-    try {
-        const activeRunID = data.runID || runID || localStorage.getItem(RUN_ID_KEY);
-        if(!activeRunID){
-            console.warn("Local game event ignored because no active run exists.");
-            return;
-        }
-
-        const records = readLocalTelemetry(activeRunID);
-        const questionID = Number(data.questionId ?? data.question ?? 0);
-        const normalizedMode = String(data.mode || gameMode || "standard").replace(/-complete$/, "");
-        const eventName = data.event || "";
-        const isResponseEvent = eventName === "question" || eventName === "rapid_guessing";
-        const isCompletionEvent = /(?:^|_)complete$/.test(eventName) || eventName === "complete";
-        const priorExposureCount = questionID > 0
-            ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
-            : 0;
-
-        const record = {
-            eventID: createTelemetryEventID(),
-            timestamp: new Date().toISOString(),
-            telemetryVersion: TELEMETRY_VERSION,
-            gameVersion: GAME_VERSION,
-            runID: activeRunID,
-            game: data.game || "Faculty Mastery Quest Blank",
-            mode: normalizedMode,
-            event: eventName,
-            room: Number(data.room ?? room ?? 0),
-            questionID,
-            questionVersion: Number(data.questionVersion ?? currentQuestion?.version ?? 1),
-            difficulty: data.difficulty || currentQuestion?.difficulty || (typeof getDifficultyForMode === "function" ? getDifficultyForMode() : ""),
-            selectedIndex: Number(data.selectedIndex ?? -1),
-            correct: isResponseEvent ? Number(data.correct ?? 0) : 0,
-            rapidGuessing: isResponseEvent ? Number(data.rapidGuessing ?? (eventName === "rapid_guessing" ? 1 : 0)) : 0,
-            tag: data.tag || "",
-            type: data.type || "",
-            objective: data.objective || "",
-            responseTimeMs: Number(data.responseTime ?? data.responseTimeMs ?? 0),
-            attempt: Number(data.attempt ?? 0),
-            streak: Number(data.streak ?? 0),
-            elapsedTimeMs: isCompletionEvent ? Number(data.totalTime ?? data.totalTimeMs ?? 0) : Number(data.elapsedTime ?? data.elapsedTimeMs ?? 0),
-            adaptiveMode: data.adaptiveMode || adaptiveMode || "",
-            remediationStage: data.remediationStage || (remediationState?.active ? remediationState.stage || "" : ""),
-            priorExposureCount,
-            firstExposure: questionID > 0 && priorExposureCount === 0 ? 1 : 0,
-            score: Number(data.score ?? scoreAttackScore ?? 0),
-            bestScore: Number(data.bestScore ?? scoreAttackBestScore ?? 0),
-            totalTimeMs: Number(data.totalTime ?? data.totalTimeMs ?? 0),
-            accuracy: Number(data.accuracy ?? 0),
-            maxStreak: Number(data.maxStreak ?? 0),
-            totalAttempts: Number(data.totalAttempts ?? data.attempts ?? 0),
-            verificationCode: data.verificationCode || data.code || ""
-        };
-
-        records.push(record);
-        if(records.length > 1500) records.splice(0, records.length - 1500);
-        localStorage.setItem(getTelemetryKey(activeRunID), JSON.stringify(records));
-        localStorage.setItem(LATEST_TELEMETRY_RUN_KEY, activeRunID);
-    } catch(error){
-        console.warn("Local game data could not be saved:", error);
-    }
-}
-
-function escapeCsvValue(value){
-    if(value === null || value === undefined) return '""';
-    return `"${String(value).replace(/"/g, '""')}"`;
-}
-
-function downloadTelemetryCsv(activeRunID = runID){
-    const resolvedRunID = activeRunID || localStorage.getItem(LATEST_TELEMETRY_RUN_KEY);
-    const records = resolvedRunID ? readLocalTelemetry(resolvedRunID) : [];
-    if(!records.length){
-        alert("No completed-run data are available.");
-        return;
-    }
-
-    const rows = [
-        TELEMETRY_COLUMNS.join(","),
-        ...records.map(record => TELEMETRY_COLUMNS.map(column => escapeCsvValue(record[column])).join(","))
-    ];
-    const blob = new Blob([rows.join("\r\n")], {type:"text/csv;charset=utf-8"});
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    const safeMode = String(records[records.length - 1]?.mode || "run").replace(/[^a-z0-9_-]+/gi, "-").toLowerCase();
-    link.href = url;
-    link.download = `faculty-mastery-quest-blank_${safeMode}_${resolvedRunID}.csv`;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+function sendGameData(data){
+    // Reporting is intentionally disabled in the blank builder.
+    // Progress and mastery data remain in this browser.
 }
    
 // =====================================================
