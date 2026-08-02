@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canvas Quiz Converter</title>
+  <meta name="description" content="Convert a formatted plain-text quiz into a Canvas-compatible QTI ZIP entirely in your browser.">
+  <style>
+    :root {
+      --ink: #173042;
+      --muted: #5f7280;
+      --teal: #0c6978;
+      --teal-dark: #074d59;
+      --teal-soft: #e9f5f6;
+      --gold: #b9851f;
+      --paper: #ffffff;
+      --canvas: #f4f7f8;
+      --line: #d7e0e5;
+      --danger: #9b2c2c;
+      --danger-soft: #fff1f1;
+      --success: #23633f;
+      --success-soft: #edf8f1;
+      --warning: #795800;
+      --warning-soft: #fff7d9;
+      --shadow: 0 18px 48px rgba(19, 48, 66, 0.12);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(12, 105, 120, 0.10), transparent 32rem),
+        linear-gradient(180deg, #ffffff 0, var(--canvas) 25rem);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    button, input, select, textarea { font: inherit; }
+
+    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
+      outline: 3px solid rgba(12, 105, 120, 0.28);
+      outline-offset: 2px;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 38px 0 56px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px;
+      border: 1px solid rgba(12, 105, 120, 0.16);
+      border-radius: 24px;
+      background: linear-gradient(135deg, #ffffff, #eef8f8);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -95px;
+      width: 260px;
+      height: 260px;
+      border: 32px solid rgba(12, 105, 120, 0.08);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 740px;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .privacy-note {
+      display: inline-flex;
+      gap: 9px;
+      align-items: center;
+      margin-top: 20px;
+      padding: 9px 13px;
+      border: 1px solid rgba(35, 99, 63, 0.22);
+      border-radius: 999px;
+      color: var(--success);
+      background: var(--success-soft);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+
+    .privacy-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 0 5px rgba(35, 99, 63, 0.10);
+    }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(310px, 0.75fr);
+      gap: 20px;
+      margin-top: 22px;
+      align-items: start;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: 0 10px 28px rgba(19, 48, 66, 0.07);
+    }
+
+    .card-header {
+      padding: 22px 24px 0;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: -0.015em;
+    }
+
+    .card-intro {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .card-body { padding: 20px 24px 24px; }
+
+    .drop-zone {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 148px;
+      padding: 24px;
+      border: 2px dashed #aac4ca;
+      border-radius: 15px;
+      background: #f7fbfb;
+      text-align: center;
+      transition: 150ms ease;
+    }
+
+    .drop-zone.is-dragging {
+      border-color: var(--teal);
+      background: var(--teal-soft);
+      transform: translateY(-1px);
+    }
+
+    .drop-zone strong { display: block; font-size: 1rem; }
+    .drop-zone span { display: block; margin-top: 4px; color: var(--muted); font-size: 0.88rem; }
+
+    .drop-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 15px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 760;
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+    }
+
+    .btn:hover:not(:disabled) { transform: translateY(-1px); }
+    .btn:disabled { opacity: 0.48; cursor: not-allowed; }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--teal);
+      box-shadow: 0 8px 18px rgba(12, 105, 120, 0.20);
+    }
+
+    .btn-primary:hover:not(:disabled) { background: var(--teal-dark); }
+
+    .btn-secondary {
+      color: var(--teal-dark);
+      border-color: #b8d0d5;
+      background: #fff;
+    }
+
+    .btn-quiet {
+      color: var(--muted);
+      border-color: var(--line);
+      background: #f7f9fa;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 19px 0;
+      color: #80909a;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .divider::before, .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 0.88rem;
+      font-weight: 780;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 410px;
+      resize: vertical;
+      padding: 16px;
+      border: 1px solid #bfcdd4;
+      border-radius: 12px;
+      color: #18313f;
+      background: #fbfcfd;
+      font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    textarea::placeholder { color: #8b9aa4; }
+
+    .file-status {
+      min-height: 23px;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .selected-files {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .file-chip {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      padding: 9px 11px;
+      border: 1px solid #d7e3e7;
+      border-radius: 10px;
+      background: #f8fbfb;
+      font-size: 0.84rem;
+    }
+
+    .file-chip strong {
+      overflow-wrap: anywhere;
+    }
+
+    .file-chip button {
+      flex: 0 0 auto;
+      padding: 4px 8px;
+      border: 1px solid #cfdbdf;
+      border-radius: 7px;
+      color: var(--danger);
+      background: #fff;
+      cursor: pointer;
+      font-weight: 750;
+    }
+
+    .format-note {
+      margin: 12px 0 0;
+      padding: 11px 12px;
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      color: #5d4a17;
+      background: var(--warning-soft);
+      font-size: 0.86rem;
+    }
+
+    .settings-grid {
+      display: grid;
+      gap: 15px;
+    }
+
+    .field input, .field select {
+      width: 100%;
+      min-height: 43px;
+      padding: 9px 11px;
+      border: 1px solid #bfcdd4;
+      border-radius: 10px;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 19px;
+    }
+
+    .summary-item {
+      min-height: 82px;
+      padding: 13px;
+      border: 1px solid #dbe5e9;
+      border-radius: 12px;
+      background: #f8fafb;
+    }
+
+    .summary-item.wide { grid-column: 1 / -1; }
+
+    .summary-label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 760;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .summary-value {
+      display: block;
+      margin-top: 5px;
+      overflow-wrap: anywhere;
+      font-size: 1.06rem;
+      font-weight: 820;
+    }
+
+    .actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .actions .btn { width: 100%; }
+
+    .validation-card {
+      margin-top: 20px;
+    }
+
+    .validation-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: var(--muted);
+      background: #edf1f3;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .status-pill.success { color: var(--success); background: var(--success-soft); }
+    .status-pill.danger { color: var(--danger); background: var(--danger-soft); }
+    .status-pill.warning { color: var(--warning); background: var(--warning-soft); }
+
+    .report {
+      display: grid;
+      gap: 10px;
+      margin-top: 17px;
+    }
+
+    .report-empty {
+      padding: 18px;
+      border: 1px dashed #c8d4d9;
+      border-radius: 12px;
+      color: var(--muted);
+      background: #fafcfc;
+    }
+
+    .report-group {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .report-group h3 {
+      margin: 0;
+      padding: 11px 14px;
+      font-size: 0.9rem;
+    }
+
+    .report-group.errors h3 { color: var(--danger); background: var(--danger-soft); }
+    .report-group.warnings h3 { color: var(--warning); background: var(--warning-soft); }
+    .report-group.successes h3 { color: var(--success); background: var(--success-soft); }
+
+    .report-list {
+      margin: 0;
+      padding: 12px 14px 14px 35px;
+    }
+
+    .report-list li + li { margin-top: 7px; }
+
+    .how-it-works {
+      margin-top: 20px;
+      padding: 24px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .step {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fbfcfd;
+    }
+
+    .step-number {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--teal);
+      font-size: 0.85rem;
+      font-weight: 850;
+    }
+
+    .step strong { display: block; margin-top: 11px; }
+    .step p { margin: 5px 0 0; color: var(--muted); font-size: 0.88rem; }
+
+    details {
+      margin-top: 18px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--teal-dark);
+      font-weight: 800;
+    }
+
+    pre {
+      overflow: auto;
+      padding: 15px;
+      border-radius: 11px;
+      background: #142b38;
+      color: #f2f7f9;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    .footer-note {
+      margin: 22px 0 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.82rem;
+    }
+
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 20;
+      max-width: min(420px, calc(100% - 36px));
+      padding: 13px 16px;
+      border-radius: 12px;
+      color: #fff;
+      background: #173042;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: 180ms ease;
+    }
+
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast.success { background: var(--success); }
+    .toast.error { background: var(--danger); }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 900px) {
+      .workspace { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 580px) {
+      .shell { width: min(100% - 20px, 1180px); padding-top: 14px; }
+      .hero { padding: 24px 20px; border-radius: 18px; }
+      .card-header { padding: 19px 18px 0; }
+      .card-body { padding: 17px 18px 20px; }
+      .summary { grid-template-columns: 1fr; }
+      .summary-item.wide { grid-column: auto; }
+      .steps { grid-template-columns: 1fr; }
+      textarea { min-height: 330px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Faculty Tool</p>
+      <h1 id="page-title">Canvas Quiz Converter</h1>
+      <p class="hero-copy">Turn a properly formatted plain-text quiz—and optional question images—into a Canvas-compatible QTI ZIP. No Python. No Command Prompt. No pretend code execution from a chatbot.</p>
+      <div class="privacy-note"><span class="privacy-dot" aria-hidden="true"></span>All conversion happens in this browser. Quiz content is not uploaded or stored.</div>
+    </section>
+
+    <section class="workspace" aria-label="Quiz conversion workspace">
+      <article class="card">
+        <div class="card-header">
+          <h2>1. Add the quiz files</h2>
+          <p class="card-intro">Upload one UTF-8 .txt quiz file and any images used by its questions, or paste the formatted quiz below.</p>
+        </div>
+        <div class="card-body">
+          <div id="dropZone" class="drop-zone">
+            <div>
+              <strong>Drop the quiz .txt file and any question images here</strong>
+              <span>Accepted: TXT, PNG, JPG/JPEG, and GIF. SVG files are blocked.</span>
+              <div class="drop-actions">
+                <button id="chooseFileButton" class="btn btn-secondary" type="button">Choose Quiz + Images</button>
+                <button id="loadSampleButton" class="btn btn-quiet" type="button">Load Text-Only Test Quiz</button>
+              </div>
+              <input id="fileInput" class="sr-only" type="file" multiple accept=".txt,text/plain,.png,image/png,.jpg,.jpeg,image/jpeg,.gif,image/gif">
+            </div>
+          </div>
+          <div id="fileStatus" class="file-status" aria-live="polite">No files selected.</div>
+          <div id="selectedFiles" class="selected-files" aria-live="polite"></div>
+
+          <div class="divider">or paste the quiz text</div>
+
+          <label for="quizText">Formatted quiz text</label>
+          <textarea id="quizText" spellcheck="false" placeholder="Quiz Title: ...&#10;Quiz Description: ...&#10;&#10;Title: ...&#10;Points: 10&#10;Image: graph.png&#10;Alt Text: A line graph showing...&#10;1: Question stem...&#10;Correct feedback...&#10;Incorrect feedback...&#10;*A) Correct answer&#10;B) Distractor&#10;C) Distractor&#10;D) Distractor"></textarea>
+          <p class="format-note"><strong>Using an image?</strong> Add an <code>Image:</code> line and an <code>Alt Text:</code> line between <code>Points:</code> and the numbered question stem. The image filename in the text must match an uploaded image.</p>
+        </div>
+      </article>
+
+      <aside class="card">
+        <div class="card-header">
+          <h2>2. Set and convert</h2>
+          <p class="card-intro">The defaults match the original converter.</p>
+        </div>
+        <div class="card-body">
+          <div class="settings-grid">
+            <div class="field">
+              <label for="attempts">Allowed attempts</label>
+              <input id="attempts" type="number" min="1" step="1" value="1">
+            </div>
+            <div class="field">
+              <label for="shuffle">Shuffle answer choices</label>
+              <select id="shuffle">
+                <option value="false" selected>No</option>
+                <option value="true">Yes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="quizType">Canvas quiz type</label>
+              <select id="quizType">
+                <option value="assignment" selected>Graded quiz</option>
+                <option value="practice_quiz">Practice quiz</option>
+                <option value="graded_survey">Graded survey</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="summary" aria-label="Detected quiz summary">
+            <div class="summary-item wide">
+              <span class="summary-label">Quiz title</span>
+              <span id="summaryTitle" class="summary-value">Not detected</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Questions</span>
+              <span id="summaryQuestions" class="summary-value">0</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Images loaded</span>
+              <span id="summaryImages" class="summary-value">0</span>
+            </div>
+            <div class="summary-item wide">
+              <span class="summary-label">Total points</span>
+              <span id="summaryPoints" class="summary-value">0</span>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button id="validateButton" class="btn btn-secondary" type="button">Validate Quiz</button>
+            <button id="convertButton" class="btn btn-primary" type="button">Create Canvas QTI ZIP</button>
+            <button id="downloadTextButton" class="btn btn-quiet" type="button">Download Quiz Text</button>
+            <button id="clearButton" class="btn btn-quiet" type="button">Clear</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card validation-card" aria-labelledby="validation-heading">
+      <div class="card-body">
+        <div class="validation-toolbar">
+          <div>
+            <h2 id="validation-heading">Validation report</h2>
+            <p class="card-intro">Errors block QTI creation. Warnings do not.</p>
+          </div>
+          <span id="statusPill" class="status-pill">Not checked</span>
+        </div>
+        <div id="report" class="report" aria-live="polite">
+          <div class="report-empty">Add a quiz, then select <strong>Validate Quiz</strong>.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card how-it-works" aria-labelledby="workflow-heading">
+      <h2 id="workflow-heading">The workflow</h2>
+      <div class="steps">
+        <div class="step"><span class="step-number">1</span><strong>Generate</strong><p>Use Copilot or another AI tool to draft the formatted quiz text.</p></div>
+        <div class="step"><span class="step-number">2</span><strong>Add images</strong><p>Have the AI write image-based questions and accurate alt text using the exact image filenames.</p></div>
+        <div class="step"><span class="step-number">3</span><strong>Review</strong><p>Verify every question, answer, image, alt-text description, feedback statement, and point value.</p></div>
+        <div class="step"><span class="step-number">4</span><strong>Convert</strong><p>Upload the quiz text and images, then create the QTI ZIP.</p></div>
+        <div class="step"><span class="step-number">5</span><strong>Import</strong><p>In Canvas, use Settings → Import Course Content → QTI .zip File.</p></div>
+      </div>
+
+      <details>
+        <summary>Show the required question format</summary>
+        <pre>Quiz Title: Quiz 3 – Consumer Choice and Demand
+Quiz Description: This quiz assesses consumer choice and utility maximization.
+
+Title: Scarcity and Choice (3.1)
+Points: 10
+Image: scarcity_graph.png
+Alt Text: A graph showing limited resources and competing uses.
+1: Why must consumers make choices?
+Correct! Limited resources require consumers to choose among alternatives.
+Not quite. Focus on the limits consumers face.
+*A) Resources are limited relative to wants
+B) All goods have identical prices
+C) Preferences never change
+D) Utility can always be measured exactly</pre>
+      </details>
+
+      <details>
+        <summary>Show the image-question workflow</summary>
+        <p>Upload an instructional image to the AI tool. Ask it to write one or more multiple-choice questions based on that image, produce concise alt text describing the information needed to answer the question, and append the questions to the existing quiz using the exact filename. Then upload the finished .txt file and the original images to this converter.</p>
+        <pre>Image: budget_line.png
+Alt Text: A budget line with good X on the horizontal axis and good Y on the vertical axis; the line runs from 10 units of Y to 20 units of X.
+7: Based on the graph, what is the opportunity cost of one unit of X?</pre>
+      </details>
+    </section>
+
+    <p class="footer-note">Version 1.1 • The downloaded ZIP should remain compressed when imported into Canvas.</p>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script id="converter-core">
+  window.ConverterCore = (() => {
+    "use strict";
+
+    const encoder = new TextEncoder();
+
+    function parseHeader(lines) {
+      let title = "";
+      let description = "";
+      for (const line of lines.slice(0, 15)) {
+        if (line.startsWith("Quiz Title:")) title = line.split(":").slice(1).join(":").trim();
+        else if (line.startsWith("Quiz Description:")) description = line.split(":").slice(1).join(":").trim();
+      }
+      return { title, description };
+    }
+
+    function parseQuestions(lines) {
+      let index = 0;
+      while (index < lines.length && !lines[index].startsWith("Title:")) index += 1;
+      const questions = [];
+
+      while (index < lines.length) {
+        const question = {
+          title: null,
+          points: null,
+          stem: null,
+          number: null,
+          feedbackCorrect: "",
+          feedbackIncorrect: "",
+          image: null,
+          altText: "",
+          choices: [],
+          correct: null,
+          starredCount: 0,
+          sourceLine: index + 1
+        };
+
+        if (index < lines.length && lines[index].startsWith("Title:")) {
+          question.title = lines[index].split(":").slice(1).join(":").trim();
+          index += 1;
+        }
+
+        if (index < lines.length && lines[index].startsWith("Points:")) {
+          const rawPoints = lines[index].split(":").slice(1).join(":").trim();
+          const parsedPoints = Number.parseInt(rawPoints, 10);
+          question.points = Number.isFinite(parsedPoints) ? parsedPoints : 1;
+          index += 1;
+        }
+
+        while (index < lines.length && !lines[index].trim()) index += 1;
+
+        let readingImageMetadata = true;
+        while (index < lines.length && readingImageMetadata) {
+          const line = lines[index];
+          if (line.startsWith("Image:")) {
+            question.image = line.split(":").slice(1).join(":").trim();
+            index += 1;
+          } else if (line.startsWith("Alt Text:")) {
+            question.altText = line.split(":").slice(1).join(":").trim();
+            index += 1;
+          } else if (!line.trim()) {
+            index += 1;
+          } else {
+            readingImageMetadata = false;
+          }
+        }
+
+        if (index < lines.length && /^\d+\s*:/.test(lines[index])) {
+          const match = lines[index].match(/^(\d+)\s*:\s*(.*)$/);
+          question.number = match ? Number.parseInt(match[1], 10) : null;
+          question.stem = match ? match[2].trim() : lines[index].split(":").slice(1).join(":").trim();
+          index += 1;
+        }
+
+        const feedback = [];
+        while (index < lines.length && !/^\*?[A-D]\)/.test(lines[index]) && !lines[index].startsWith("Title:")) {
+          if (lines[index].trim()) feedback.push(lines[index].trim());
+          index += 1;
+        }
+        if (feedback.length) question.feedbackCorrect = feedback[0];
+        if (feedback.length > 1) question.feedbackIncorrect = feedback[1];
+
+        while (index < lines.length && lines[index] && !lines[index].startsWith("Title:")) {
+          const match = lines[index].match(/^(\*?)([A-D])\)\s*(.+)$/);
+          if (match) {
+            const [, star, label, option] = match;
+            if (star) {
+              question.correct = label;
+              question.starredCount += 1;
+            }
+            question.choices.push([label, option.trim()]);
+          }
+          index += 1;
+        }
+
+        while (index < lines.length && !lines[index].startsWith("Title:") && !lines[index].trim()) index += 1;
+
+        if (question.title) questions.push(question);
+        else break;
+      }
+
+      return questions;
+    }
+
+    function parseQuiz(text, defaultDescription = "") {
+      const cleaned = String(text || "").replace(/^\uFEFF/, "");
+      const lines = cleaned.split(/\r?\n/);
+      const header = parseHeader(lines);
+      return {
+        title: header.title || "Unnamed Quiz",
+        titleWasPresent: Boolean(header.title),
+        description: header.description || defaultDescription || "",
+        descriptionWasPresent: Boolean(header.description),
+        questions: parseQuestions(lines),
+        rawText: cleaned
+      };
+    }
+
+    const ALLOWED_IMAGE_EXTENSIONS = new Set(["png", "jpg", "jpeg", "gif"]);
+    const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
+    const MAX_TOTAL_IMAGE_BYTES = 25 * 1024 * 1024;
+
+    function baseFilename(name) {
+      return String(name || "").replace(/\\/g, "/").split("/").pop().trim();
+    }
+
+    function imageKey(name) {
+      return baseFilename(name).normalize("NFC").toLowerCase();
+    }
+
+    function sanitizeAssetFilename(name) {
+      const original = baseFilename(name);
+      const dot = original.lastIndexOf(".");
+      const extension = dot > -1 ? original.slice(dot + 1).toLowerCase() : "";
+      const stem = dot > -1 ? original.slice(0, dot) : original;
+      const safeStem = stem.normalize("NFKD").replace(/[^A-Za-z0-9_-]+/g, "_").replace(/^_+|_+$/g, "") || "image";
+      return extension ? `${safeStem}.${extension}` : safeStem;
+    }
+
+    function prepareImages(images = []) {
+      if (images && images.isPreparedImageSet) return images;
+      const assets = [];
+      const byKey = new Map();
+      const duplicates = [];
+      const safeNames = new Set();
+
+      for (const input of Array.from(images || [])) {
+        const name = baseFilename(input?.name);
+        const key = imageKey(name);
+        const dot = name.lastIndexOf(".");
+        const extension = dot > -1 ? name.slice(dot + 1).toLowerCase() : "";
+        let safeName = sanitizeAssetFilename(name);
+        if (safeNames.has(safeName.toLowerCase())) {
+          const stem = safeName.replace(/\.[^.]+$/, "");
+          const suffix = safeName.includes(".") ? safeName.slice(safeName.lastIndexOf(".")) : "";
+          let counter = 2;
+          while (safeNames.has(`${stem}_${counter}${suffix}`.toLowerCase())) counter += 1;
+          safeName = `${stem}_${counter}${suffix}`;
+        }
+        safeNames.add(safeName.toLowerCase());
+
+        const rawData = input?.data ?? input?.bytes ?? new Uint8Array();
+        const data = rawData instanceof Uint8Array ? rawData : new Uint8Array(rawData);
+        const asset = { name, key, extension, safeName, type: input?.type || "", data, size: Number(input?.size ?? data.length) };
+        if (byKey.has(key)) duplicates.push(name);
+        else byKey.set(key, asset);
+        assets.push(asset);
+      }
+
+      return { isPreparedImageSet: true, assets, byKey, duplicates };
+    }
+
+    function validateQuiz(quiz, images = []) {
+      const imageSet = prepareImages(images);
+      const errors = [];
+      const warnings = [];
+      const successes = [];
+
+      if (!quiz.rawText.trim()) errors.push("No quiz text was provided.");
+      if (!quiz.titleWasPresent) errors.push('No "Quiz Title:" line was found within the first 15 lines.');
+      else successes.push(`Quiz title detected: ${quiz.title}`);
+      if (!quiz.descriptionWasPresent) errors.push('No "Quiz Description:" line was found within the first 15 lines.');
+      else successes.push("Quiz description detected.");
+      if (!quiz.questions.length) errors.push('No questions were detected. Each question must begin with a "Title:" line.');
+      else successes.push(`${quiz.questions.length} question${quiz.questions.length === 1 ? "" : "s"} detected.`);
+
+      if (imageSet.duplicates.length) errors.push(`Duplicate image filename detected: ${imageSet.duplicates.join(", ")}. Image filenames must be unique.`);
+      let totalImageBytes = 0;
+      for (const asset of imageSet.assets) {
+        totalImageBytes += asset.size;
+        if (!ALLOWED_IMAGE_EXTENSIONS.has(asset.extension)) errors.push(`Image ${asset.name || "(unnamed)"} uses an unsupported file type. Use PNG, JPG/JPEG, or GIF.`);
+        if (!asset.data.length) errors.push(`Image ${asset.name || "(unnamed)"} is empty or could not be read.`);
+        if (asset.size > MAX_IMAGE_BYTES) errors.push(`Image ${asset.name} is larger than 10 MB.`);
+      }
+      if (totalImageBytes > MAX_TOTAL_IMAGE_BYTES) errors.push("The combined image files are larger than 25 MB.");
+
+      const referencedImages = new Set();
+      let imageReferenceCount = 0;
+      const seenNumbers = new Set();
+      quiz.questions.forEach((question, index) => {
+        const label = `Question ${question.number || index + 1}`;
+        if (!question.title) errors.push(`${label} is missing its question title.`);
+        if (!Number.isInteger(question.points) || question.points <= 0) errors.push(`${label} has a missing or invalid Points value.`);
+        if (!question.stem) errors.push(`${label} is missing its numbered question stem.`);
+        if (!question.feedbackCorrect) errors.push(`${label} is missing correct-answer feedback.`);
+        if (!question.feedbackIncorrect) errors.push(`${label} is missing incorrect-answer feedback.`);
+
+        if (question.image) {
+          imageReferenceCount += 1;
+          const key = imageKey(question.image);
+          referencedImages.add(key);
+          const asset = imageSet.byKey.get(key);
+          if (!asset) errors.push(`${label} references image "${question.image}", but that image was not uploaded.`);
+          if (!question.altText) errors.push(`${label} uses an image but is missing its Alt Text line.`);
+          else if (question.altText.length < 8) warnings.push(`${label} has very short alt text. Make sure it describes the information needed to answer the question.`);
+        } else if (question.altText) {
+          errors.push(`${label} contains Alt Text but no Image line.`);
+        }
+
+        const labels = question.choices.map(([choiceLabel]) => choiceLabel);
+        const uniqueLabels = new Set(labels);
+        if (question.choices.length !== 4) errors.push(`${label} has ${question.choices.length} answer choices; exactly four are required.`);
+        if (uniqueLabels.size !== labels.length) errors.push(`${label} contains a duplicate answer label.`);
+        for (const expected of ["A", "B", "C", "D"]) {
+          if (!uniqueLabels.has(expected)) errors.push(`${label} is missing answer choice ${expected}).`);
+        }
+        if (question.starredCount === 0) errors.push(`${label} has no starred correct answer.`);
+        if (question.starredCount > 1) errors.push(`${label} has more than one starred correct answer.`);
+        if (question.correct && !uniqueLabels.has(question.correct)) errors.push(`${label} identifies ${question.correct}) as correct, but that answer choice was not parsed.`);
+
+        if (question.number !== null) {
+          if (seenNumbers.has(question.number)) warnings.push(`${label} repeats a question number already used.`);
+          seenNumbers.add(question.number);
+          if (question.number !== index + 1) warnings.push(`${label} appears in position ${index + 1}; sequential numbering is recommended.`);
+        }
+      });
+
+      for (const asset of imageSet.assets) {
+        if (!referencedImages.has(asset.key)) warnings.push(`Uploaded image ${asset.name} is not referenced by any question.`);
+      }
+
+      if (quiz.questions.length && !errors.length) {
+        successes.push("Every question has a positive point value, a stem, two feedback lines, choices A–D, and exactly one starred answer.");
+      }
+      if (imageReferenceCount && !errors.length) successes.push(`${imageReferenceCount} image question${imageReferenceCount === 1 ? "" : "s"} matched uploaded files and included alt text.`);
+
+      const totalPoints = quiz.questions.reduce((sum, q) => sum + (q.points || 1), 0);
+      return { errors, warnings, successes, totalPoints, imageSet, referencedImageCount: imageReferenceCount, uniqueReferencedImageCount: referencedImages.size };
+    }
+
+    function xmlEscape(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;");
+    }
+
+    function sha1Hex(message) {
+      const bytes = encoder.encode(String(message));
+      const words = [];
+      for (let i = 0; i < bytes.length; i += 1) words[i >> 2] = (words[i >> 2] || 0) | (bytes[i] << (24 - (i % 4) * 8));
+      words[bytes.length >> 2] = (words[bytes.length >> 2] || 0) | (0x80 << (24 - (bytes.length % 4) * 8));
+      const bitLength = bytes.length * 8;
+      words[(((bytes.length + 8) >> 6) + 1) * 16 - 1] = bitLength;
+
+      let h0 = 0x67452301;
+      let h1 = 0xefcdab89;
+      let h2 = 0x98badcfe;
+      let h3 = 0x10325476;
+      let h4 = 0xc3d2e1f0;
+
+      const rotateLeft = (value, bits) => (value << bits) | (value >>> (32 - bits));
+      for (let block = 0; block < words.length; block += 16) {
+        const w = new Array(80);
+        for (let i = 0; i < 16; i += 1) w[i] = words[block + i] | 0;
+        for (let i = 16; i < 80; i += 1) w[i] = rotateLeft(w[i - 3] ^ w[i - 8] ^ w[i - 14] ^ w[i - 16], 1);
+
+        let a = h0;
+        let b = h1;
+        let c = h2;
+        let d = h3;
+        let e = h4;
+
+        for (let i = 0; i < 80; i += 1) {
+          let f;
+          let k;
+          if (i < 20) { f = (b & c) | ((~b) & d); k = 0x5a827999; }
+          else if (i < 40) { f = b ^ c ^ d; k = 0x6ed9eba1; }
+          else if (i < 60) { f = (b & c) | (b & d) | (c & d); k = 0x8f1bbcdc; }
+          else { f = b ^ c ^ d; k = 0xca62c1d6; }
+          const temp = (rotateLeft(a, 5) + f + e + k + w[i]) | 0;
+          e = d;
+          d = c;
+          c = rotateLeft(b, 30);
+          b = a;
+          a = temp;
+        }
+
+        h0 = (h0 + a) | 0;
+        h1 = (h1 + b) | 0;
+        h2 = (h2 + c) | 0;
+        h3 = (h3 + d) | 0;
+        h4 = (h4 + e) | 0;
+      }
+
+      return [h0, h1, h2, h3, h4].map(value => (value >>> 0).toString(16).padStart(8, "0")).join("");
+    }
+
+    function sanitizeFilename(name) {
+      const cleaned = String(name || "").replace(/[^\p{L}\p{N}_-]+/gu, "_").replace(/^_+|_+$/g, "");
+      return cleaned || "quiz";
+    }
+
+    function htmlEscape(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function buildItemXml(question, index, imageSet = prepareImages()) {
+      const baseId = `q${index + 1}_${sha1Hex(question.title + (question.stem || "")).slice(0, 16)}`;
+      const itemIdent = `text2qti_question_${baseId}`;
+      const choices = question.choices.map(([label, option]) => `            <response_label ident="${label}">
+              <material>
+                <mattext texttype="text/html">${xmlEscape(option)}</mattext>
+              </material>
+            </response_label>`).join("\n");
+      const points = question.points ?? 1;
+      let stemContent = question.stem || question.title;
+      if (question.image) {
+        const asset = imageSet.byKey.get(imageKey(question.image));
+        if (asset) {
+          const imageHtml = `<p><img src="$IMS-CC-FILEBASE$/images/${asset.safeName}" alt="${htmlEscape(question.altText)}" style="max-width: 100%; height: auto;" /></p>`;
+          stemContent = `${imageHtml}<p>${htmlEscape(question.stem || question.title)}</p>`;
+        }
+      }
+      return `
+      <item ident="${itemIdent}" title="${xmlEscape(question.title)}">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>${points}</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">${xmlEscape(stemContent)}</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+${choices}
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar varname="SCORE" vartype="Decimal" minvalue="0" maxvalue="${points}" defaultval="0"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">${question.correct}</varequal>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">${points}</setvar>
+            <displayfeedback feedbacktype="Response" linkrefid="correct_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="general_incorrect_fb"/>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="correct_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">${xmlEscape(question.feedbackCorrect)}</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="general_incorrect_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">${xmlEscape(question.feedbackIncorrect)}</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>`;
+    }
+
+    function buildAssessmentXml(quiz, attempts, quizType, imageSet = prepareImages()) {
+      const assessmentIdent = `text2qti_assignment_${sha1Hex(quiz.title).slice(0, 32)}`;
+      const itemsXml = quiz.questions.map((question, index) => buildItemXml(question, index, imageSet)).join("\n");
+      const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="${assessmentIdent}" title="${xmlEscape(quiz.title)}">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>${attempts}</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>quiz_type</fieldlabel>
+        <fieldentry>${xmlEscape(quizType)}</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <presentation_material>
+      <material>
+        <mattext texttype="text/html">${xmlEscape(quiz.description)}</mattext>
+      </material>
+    </presentation_material>
+    <section ident="root_section">
+${itemsXml}
+    </section>
+  </assessment>
+</questestinterop>
+`;
+      return { assessmentIdent, xml };
+    }
+
+    function buildAssessmentMetaXml(quiz, totalPoints, quizType, shuffle, attempts) {
+      const metaIdent = `text2qti_assessment_${sha1Hex(quiz.title + String(totalPoints))}`;
+      const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<quiz identifier="${metaIdent}"
+  xmlns="http://canvas.instructure.com/xsd/cccv1p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <title>${xmlEscape(quiz.title)}</title>
+  <description>${xmlEscape(quiz.description)}</description>
+  <shuffle_answers>${shuffle ? "true" : "false"}</shuffle_answers>
+  <scoring_policy>keep_highest</scoring_policy>
+  <hide_results></hide_results>
+  <quiz_type>${xmlEscape(quizType)}</quiz_type>
+  <allowed_attempts>${attempts}</allowed_attempts>
+  <points_possible>${Number(totalPoints).toFixed(1)}</points_possible>
+  <show_correct_answers>true</show_correct_answers>
+</quiz>
+`;
+      return { metaIdent, xml };
+    }
+
+    function buildManifest(assessmentIdent, imageAssets = []) {
+      const imageFiles = imageAssets.map(asset => `      <file href="images/${xmlEscape(asset.safeName)}"/>`).join("\n");
+      return `<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="text2qti_manifest_${assessmentIdent.slice(-8)}"
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+  xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd
+  http://www.imsglobal.org/xsd/imsmd_v1p2 http://www.imsglobal.org/xsd/imsmd_v1p2p2.xsd">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.1.3</schemaversion>
+  </metadata>
+  <organizations/>
+  <resources>
+    <resource identifier="${assessmentIdent}" type="imsqti_xmlv1p2" href="assessment.xml">
+      <file href="assessment.xml"/>
+${imageFiles ? `${imageFiles}\n` : ""}    </resource>
+  </resources>
+</manifest>
+`;
+    }
+
+    const crcTable = (() => {
+      const table = new Uint32Array(256);
+      for (let n = 0; n < 256; n += 1) {
+        let c = n;
+        for (let k = 0; k < 8; k += 1) c = (c & 1) ? (0xedb88320 ^ (c >>> 1)) : (c >>> 1);
+        table[n] = c >>> 0;
+      }
+      return table;
+    })();
+
+    function crc32(bytes) {
+      let crc = 0xffffffff;
+      for (const byte of bytes) crc = crcTable[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+      return (crc ^ 0xffffffff) >>> 0;
+    }
+
+    function pushU16(target, value) {
+      target.push(value & 0xff, (value >>> 8) & 0xff);
+    }
+
+    function pushU32(target, value) {
+      target.push(value & 0xff, (value >>> 8) & 0xff, (value >>> 16) & 0xff, (value >>> 24) & 0xff);
+    }
+
+    function dosDateTime(date = new Date()) {
+      const year = Math.max(1980, date.getFullYear());
+      const time = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+      const day = (year - 1980) << 9 | (date.getMonth() + 1) << 5 | date.getDate();
+      return { time, day };
+    }
+
+    function createZip(files) {
+      const localParts = [];
+      const centralParts = [];
+      let offset = 0;
+      const stamp = dosDateTime();
+
+      for (const file of files) {
+        const nameBytes = encoder.encode(file.name);
+        const dataBytes = typeof file.data === "string" ? encoder.encode(file.data) : file.data;
+        const crc = crc32(dataBytes);
+        const local = [];
+        pushU32(local, 0x04034b50);
+        pushU16(local, 20);
+        pushU16(local, 0x0800);
+        pushU16(local, 0);
+        pushU16(local, stamp.time);
+        pushU16(local, stamp.day);
+        pushU32(local, crc);
+        pushU32(local, dataBytes.length);
+        pushU32(local, dataBytes.length);
+        pushU16(local, nameBytes.length);
+        pushU16(local, 0);
+        const localBytes = new Uint8Array(local.length + nameBytes.length + dataBytes.length);
+        localBytes.set(local, 0);
+        localBytes.set(nameBytes, local.length);
+        localBytes.set(dataBytes, local.length + nameBytes.length);
+        localParts.push(localBytes);
+
+        const central = [];
+        pushU32(central, 0x02014b50);
+        pushU16(central, 20);
+        pushU16(central, 20);
+        pushU16(central, 0x0800);
+        pushU16(central, 0);
+        pushU16(central, stamp.time);
+        pushU16(central, stamp.day);
+        pushU32(central, crc);
+        pushU32(central, dataBytes.length);
+        pushU32(central, dataBytes.length);
+        pushU16(central, nameBytes.length);
+        pushU16(central, 0);
+        pushU16(central, 0);
+        pushU16(central, 0);
+        pushU16(central, 0);
+        pushU32(central, 0);
+        pushU32(central, offset);
+        const centralBytes = new Uint8Array(central.length + nameBytes.length);
+        centralBytes.set(central, 0);
+        centralBytes.set(nameBytes, central.length);
+        centralParts.push(centralBytes);
+        offset += localBytes.length;
+      }
+
+      const centralSize = centralParts.reduce((sum, part) => sum + part.length, 0);
+      const end = [];
+      pushU32(end, 0x06054b50);
+      pushU16(end, 0);
+      pushU16(end, 0);
+      pushU16(end, files.length);
+      pushU16(end, files.length);
+      pushU32(end, centralSize);
+      pushU32(end, offset);
+      pushU16(end, 0);
+
+      const totalSize = offset + centralSize + end.length;
+      const output = new Uint8Array(totalSize);
+      let cursor = 0;
+      for (const part of localParts) { output.set(part, cursor); cursor += part.length; }
+      for (const part of centralParts) { output.set(part, cursor); cursor += part.length; }
+      output.set(end, cursor);
+      return output;
+    }
+
+    function buildPackage(text, options = {}) {
+      const attempts = Math.max(1, Number.parseInt(options.attempts ?? 1, 10) || 1);
+      const shuffle = Boolean(options.shuffle);
+      const quizType = options.quizType || "assignment";
+      const quiz = parseQuiz(text, options.defaultDescription || "");
+      const imageSet = prepareImages(options.images || []);
+      const report = validateQuiz(quiz, imageSet);
+      if (report.errors.length) {
+        const error = new Error("Quiz validation failed.");
+        error.report = report;
+        throw error;
+      }
+
+      const assessment = buildAssessmentXml(quiz, attempts, quizType, imageSet);
+      const meta = buildAssessmentMetaXml(quiz, report.totalPoints, quizType, shuffle, attempts);
+      const manifest = buildManifest(assessment.assessmentIdent, imageSet.assets);
+      const files = [
+        { name: "imsmanifest.xml", data: manifest },
+        { name: "assessment.xml", data: assessment.xml },
+        { name: `${meta.metaIdent}/assessment_meta.xml`, data: meta.xml },
+        ...imageSet.assets.map(asset => ({ name: `images/${asset.safeName}`, data: asset.data }))
+      ];
+      const zipBytes = createZip(files);
+      return {
+        quiz,
+        report,
+        imageSet,
+        files,
+        assessmentXml: assessment.xml,
+        metaXml: meta.xml,
+        manifestXml: manifest,
+        zipBytes,
+        zipName: `${sanitizeFilename(quiz.title)}_QTI.zip`
+      };
+    }
+
+    return {
+      parseQuiz,
+      validateQuiz,
+      prepareImages,
+      imageKey,
+      sanitizeAssetFilename,
+      xmlEscape,
+      sha1Hex,
+      sanitizeFilename,
+      buildAssessmentXml,
+      buildAssessmentMetaXml,
+      buildManifest,
+      createZip,
+      buildPackage
+    };
+  })();
+  </script>
+
+  <script>
+  (() => {
+    "use strict";
+
+    const SAMPLE_QUIZ = `Quiz Title: Quiz 3 – Consumer Choice and Demand
+Quiz Description: This quiz assesses consumer choice, preferences, budget constraints, and utility maximization.
+
+Title: Scarcity and Choice (3.1)
+Points: 10
+1: Why must consumers make choices?
+Correct! Limited income and time require consumers to choose among alternatives.
+Not quite. Focus on the limits consumers face.
+*A) Resources are limited relative to wants
+B) All goods have identical prices
+C) Preferences never change
+D) Utility can always be measured exactly
+
+Title: Opportunity Cost of a Decision (3.1)
+Points: 10
+2: A student spends Saturday studying instead of working a paid shift. The opportunity cost of studying is:
+Correct! Opportunity cost is the value of the best alternative given up.
+Not quite. Identify the best forgone alternative.
+A) The tuition already paid
+*B) The wages the student could have earned
+C) The grade earned on the exam
+D) The student's total monthly income
+
+Title: Complete Preferences (3.2)
+Points: 10
+3: A consumer's preferences are complete when the consumer can:
+Correct! Completeness means the consumer can compare any two bundles.
+Not quite. Think about whether every pair of bundles can be ranked.
+A) Purchase every available bundle
+B) Assign a dollar value to utility
+*C) Rank any two consumption bundles
+D) Ignore changes in income
+
+Title: Transitive Preferences (3.2)
+Points: 10
+4: If a consumer prefers bundle A to B and bundle B to C, transitivity implies that the consumer:
+Correct! Transitivity requires consistent rankings across bundles.
+Not quite. Follow the ranking from A to B and from B to C.
+A) Prefers C to A
+B) Is indifferent between A and C
+C) Cannot compare A and C
+*D) Prefers A to C
+
+Title: Budget Constraint (3.3)
+Points: 10
+5: A consumer's budget constraint shows:
+Correct! The budget constraint identifies affordable combinations at given prices and income.
+Not quite. Focus on affordability rather than preference.
+*A) The combinations of goods the consumer can afford
+B) The combinations that maximize social welfare
+C) Only the consumer's most preferred bundle
+D) The firm's production possibilities
+
+Title: Budget Line Intercept (3.3)
+Points: 10
+6: If all income is spent on good X, the maximum quantity of X the consumer can buy equals:
+Correct! Divide income by the price of good X.
+Not quite. Use the income and price of X.
+A) Price of X divided by income
+*B) Income divided by the price of X
+C) Income multiplied by the price of X
+D) Price of X plus income
+
+Title: Effect of an Income Increase (3.3)
+Points: 10
+7: Holding prices constant, an increase in consumer income causes the budget line to:
+Correct! Greater income expands the affordable set without changing the slope.
+Not quite. Prices are unchanged, so consider what happens to both intercepts.
+A) Rotate inward around the horizontal intercept
+B) Become steeper
+*C) Shift outward in a parallel manner
+D) Shift inward in a parallel manner
+
+Title: Utility Maximization (3.4)
+Points: 10
+8: A utility-maximizing consumer chooses the affordable bundle that:
+Correct! The consumer seeks the highest attainable level of satisfaction.
+Not quite. The choice must be both affordable and most preferred.
+A) Has the lowest total expenditure
+B) Contains equal quantities of all goods
+C) Is located inside the budget line
+*D) Lies on the highest attainable indifference curve
+
+Title: Tangency Condition (3.4)
+Points: 10
+9: At an interior utility-maximizing bundle, the marginal rate of substitution typically equals:
+Correct! At an interior optimum, the indifference curve slope matches the budget line slope.
+Not quite. Compare the trade-off in preferences with the trade-off in the market.
+*A) The ratio of the goods' prices
+B) Total income
+C) The sum of marginal utilities
+D) The difference between the goods' prices
+
+Title: Corner Solution (3.4)
+Points: 10
+10: A corner solution occurs when a consumer maximizes utility by:
+Correct! A corner solution places the optimum at an endpoint of the budget line.
+Not quite. Consider an optimum where the consumer buys none of one good.
+A) Buying equal amounts of both goods
+*B) Buying none of one good
+C) Spending less than the available income
+D) Choosing a bundle outside the budget constraint`;
+
+    const elements = {
+      quizText: document.getElementById("quizText"),
+      fileInput: document.getElementById("fileInput"),
+      chooseFileButton: document.getElementById("chooseFileButton"),
+      loadSampleButton: document.getElementById("loadSampleButton"),
+      dropZone: document.getElementById("dropZone"),
+      fileStatus: document.getElementById("fileStatus"),
+      selectedFiles: document.getElementById("selectedFiles"),
+      attempts: document.getElementById("attempts"),
+      shuffle: document.getElementById("shuffle"),
+      quizType: document.getElementById("quizType"),
+      summaryTitle: document.getElementById("summaryTitle"),
+      summaryQuestions: document.getElementById("summaryQuestions"),
+      summaryImages: document.getElementById("summaryImages"),
+      summaryPoints: document.getElementById("summaryPoints"),
+      validateButton: document.getElementById("validateButton"),
+      convertButton: document.getElementById("convertButton"),
+      downloadTextButton: document.getElementById("downloadTextButton"),
+      clearButton: document.getElementById("clearButton"),
+      statusPill: document.getElementById("statusPill"),
+      report: document.getElementById("report"),
+      toast: document.getElementById("toast")
+    };
+
+    let sourceFilename = "";
+    let imageAssets = [];
+    let toastTimer = null;
+
+    function showToast(message, type = "") {
+      clearTimeout(toastTimer);
+      elements.toast.textContent = message;
+      elements.toast.className = `toast show ${type}`.trim();
+      toastTimer = setTimeout(() => { elements.toast.className = "toast"; }, 3300);
+    }
+
+    function currentOptions() {
+      return {
+        attempts: elements.attempts.value,
+        shuffle: elements.shuffle.value === "true",
+        quizType: elements.quizType.value,
+        images: imageAssets
+      };
+    }
+
+    function renderSelectedFiles() {
+      const rows = [];
+      if (sourceFilename) rows.push(`<div class="file-chip"><strong>Quiz text: ${escapeHtml(sourceFilename)}</strong></div>`);
+      imageAssets.forEach((asset, index) => {
+        rows.push(`<div class="file-chip"><strong>Image: ${escapeHtml(asset.name)}</strong><button type="button" data-remove-image="${index}" aria-label="Remove ${escapeHtml(asset.name)}">Remove</button></div>`);
+      });
+      elements.selectedFiles.innerHTML = rows.join("");
+      elements.fileStatus.textContent = rows.length ? `${rows.length} file${rows.length === 1 ? "" : "s"} loaded.` : "No files selected.";
+    }
+
+    function updateSummary() {
+      const quiz = ConverterCore.parseQuiz(elements.quizText.value);
+      const report = ConverterCore.validateQuiz(quiz, imageAssets);
+      elements.summaryTitle.textContent = quiz.titleWasPresent ? quiz.title : "Not detected";
+      elements.summaryQuestions.textContent = String(quiz.questions.length);
+      elements.summaryImages.textContent = String(imageAssets.length);
+      elements.summaryPoints.textContent = String(report.totalPoints);
+    }
+
+    function setStatus(kind, text) {
+      elements.statusPill.className = `status-pill ${kind || ""}`.trim();
+      elements.statusPill.textContent = text;
+    }
+
+    function section(title, items, className) {
+      if (!items.length) return "";
+      return `<section class="report-group ${className}"><h3>${title}</h3><ul class="report-list">${items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>`;
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;");
+    }
+
+    function renderReport(report, extraSuccesses = []) {
+      const successes = [...report.successes, ...extraSuccesses];
+      elements.report.innerHTML = [
+        section(`${report.errors.length} error${report.errors.length === 1 ? "" : "s"}`, report.errors, "errors"),
+        section(`${report.warnings.length} warning${report.warnings.length === 1 ? "" : "s"}`, report.warnings, "warnings"),
+        section("Passed checks", successes, "successes")
+      ].filter(Boolean).join("") || '<div class="report-empty">No validation results.</div>';
+
+      if (report.errors.length) setStatus("danger", "Fix errors");
+      else if (report.warnings.length) setStatus("warning", "Passed with warnings");
+      else setStatus("success", "Passed");
+    }
+
+    function validateXml(xml, label) {
+      const documentNode = new DOMParser().parseFromString(xml, "application/xml");
+      const parserError = documentNode.querySelector("parsererror");
+      if (parserError) throw new Error(`${label} is not well-formed XML: ${parserError.textContent.trim()}`);
+      return documentNode;
+    }
+
+    function inspectPackage(packageData) {
+      const assessmentDoc = validateXml(packageData.assessmentXml, "assessment.xml");
+      validateXml(packageData.metaXml, "assessment_meta.xml");
+      validateXml(packageData.manifestXml, "imsmanifest.xml");
+
+      const items = [...assessmentDoc.getElementsByTagName("item")];
+      const questionTypeCount = items.filter(item => {
+        const fields = [...item.getElementsByTagName("qtimetadatafield")];
+        return fields.some(field => {
+          const label = field.getElementsByTagName("fieldlabel")[0]?.textContent?.trim();
+          const entry = field.getElementsByTagName("fieldentry")[0]?.textContent?.trim();
+          return label === "question_type" && entry === "multiple_choice_question";
+        });
+      }).length;
+      const correctAnswerCount = items.filter(item => item.getElementsByTagName("varequal").length === 1).length;
+      const manifestDoc = validateXml(packageData.manifestXml, "imsmanifest.xml");
+      const manifestResources = manifestDoc.getElementsByTagName("resource").length;
+      const manifestFiles = [...manifestDoc.getElementsByTagName("file")].map(node => node.getAttribute("href"));
+      const packagedImageNames = packageData.imageSet.assets.map(asset => `images/${asset.safeName}`);
+      const referencedImageTags = (packageData.assessmentXml.match(/\$IMS-CC-FILEBASE\$\/images\//g) || []).length;
+
+      if (items.length !== packageData.quiz.questions.length) throw new Error(`assessment.xml contains ${items.length} items; ${packageData.quiz.questions.length} were expected.`);
+      if (questionTypeCount !== items.length) throw new Error(`${items.length - questionTypeCount} question(s) are missing the question_type definition.`);
+      if (correctAnswerCount !== items.length) throw new Error(`${items.length - correctAnswerCount} question(s) are missing a single varequal correct-answer definition.`);
+      if (manifestResources < 1) throw new Error("imsmanifest.xml does not contain a resource entry.");
+      for (const name of packagedImageNames) {
+        if (!manifestFiles.includes(name)) throw new Error(`imsmanifest.xml is missing the image file entry ${name}.`);
+        if (!packageData.files.some(file => file.name === name)) throw new Error(`The ZIP package is missing ${name}.`);
+      }
+      if (referencedImageTags !== packageData.report.referencedImageCount) throw new Error(`assessment.xml contains ${referencedImageTags} image reference(s); ${packageData.report.referencedImageCount} were expected.`);
+      if (packageData.zipBytes[0] !== 0x50 || packageData.zipBytes[1] !== 0x4b) throw new Error("The generated package does not have a valid ZIP signature.");
+
+      return [
+        "assessment.xml, assessment_meta.xml, and imsmanifest.xml are well-formed XML.",
+        `${items.length} assessment items exist in assessment.xml.`,
+        `${questionTypeCount}/${items.length} items contain the multiple-choice question_type definition.`,
+        `${correctAnswerCount}/${items.length} items contain one varequal correct-answer definition.`,
+        `${packageData.imageSet.assets.length} image file${packageData.imageSet.assets.length === 1 ? "" : "s"} packaged; ${referencedImageTags} image reference${referencedImageTags === 1 ? "" : "s"} verified in assessment.xml.`,
+        "The QTI package contains all required XML files, any referenced images, and a valid ZIP signature."
+      ];
+    }
+
+    function validateCurrentQuiz() {
+      const quiz = ConverterCore.parseQuiz(elements.quizText.value);
+      const report = ConverterCore.validateQuiz(quiz, imageAssets);
+      renderReport(report);
+      updateSummary();
+      if (report.errors.length) showToast("Validation failed. Fix the listed errors.", "error");
+      else showToast(report.warnings.length ? "Validation passed with warnings." : "Validation passed.", "success");
+      return { quiz, report };
+    }
+
+    function downloadBlob(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    async function convertCurrentQuiz({ download = true } = {}) {
+      elements.convertButton.disabled = true;
+      elements.convertButton.textContent = "Building QTI ZIP…";
+      try {
+        const packageData = ConverterCore.buildPackage(elements.quizText.value, currentOptions());
+        const packageChecks = inspectPackage(packageData);
+        renderReport(packageData.report, packageChecks);
+        setStatus("success", "QTI created");
+        if (download) {
+          downloadBlob(new Blob([packageData.zipBytes], { type: "application/zip" }), packageData.zipName);
+          showToast(`${packageData.zipName} created and validated.`, "success");
+        }
+        return packageData;
+      } catch (error) {
+        if (error.report) renderReport(error.report);
+        else {
+          const quiz = ConverterCore.parseQuiz(elements.quizText.value);
+          const report = ConverterCore.validateQuiz(quiz, imageAssets);
+          report.errors.push(error.message || String(error));
+          renderReport(report);
+        }
+        setStatus("danger", "Conversion blocked");
+        showToast(error.message || "Conversion failed.", "error");
+        throw error;
+      } finally {
+        elements.convertButton.disabled = false;
+        elements.convertButton.textContent = "Create Canvas QTI ZIP";
+      }
+    }
+
+    function loadText(text, filename = "") {
+      elements.quizText.value = text;
+      sourceFilename = filename;
+      renderSelectedFiles();
+      updateSummary();
+      setStatus("", "Not checked");
+      elements.report.innerHTML = '<div class="report-empty">Quiz loaded. Select <strong>Validate Quiz</strong> before converting.</div>';
+    }
+
+    async function handleFiles(fileList) {
+      const files = Array.from(fileList || []);
+      if (!files.length) return;
+      const textFiles = files.filter(file => file.name.toLowerCase().endsWith(".txt") || file.type === "text/plain");
+      if (textFiles.length > 1) {
+        showToast("Choose only one quiz .txt file at a time.", "error");
+        return;
+      }
+
+      try {
+        if (textFiles.length === 1) loadText(await textFiles[0].text(), textFiles[0].name);
+
+        for (const file of files) {
+          if (textFiles.includes(file)) continue;
+          const lower = file.name.toLowerCase();
+          const allowed = lower.endsWith(".png") || lower.endsWith(".jpg") || lower.endsWith(".jpeg") || lower.endsWith(".gif");
+          if (!allowed) {
+            showToast(`Skipped unsupported file: ${file.name}. Use TXT, PNG, JPG/JPEG, or GIF.`, "error");
+            continue;
+          }
+          const key = ConverterCore.imageKey(file.name);
+          if (imageAssets.some(asset => ConverterCore.imageKey(asset.name) === key)) {
+            showToast(`An image named ${file.name} is already loaded.`, "error");
+            continue;
+          }
+          imageAssets.push({ name: file.name, type: file.type, size: file.size, data: new Uint8Array(await file.arrayBuffer()) });
+        }
+        elements.fileInput.value = "";
+        renderSelectedFiles();
+        updateSummary();
+        setStatus("", "Not checked");
+        elements.report.innerHTML = '<div class="report-empty">Files loaded. Select <strong>Validate Quiz</strong> before converting.</div>';
+      } catch (error) {
+        showToast(`Could not read the selected files: ${error.message}`, "error");
+      }
+    }
+
+    elements.chooseFileButton.addEventListener("click", () => elements.fileInput.click());
+    elements.fileInput.addEventListener("change", () => handleFiles(elements.fileInput.files));
+    elements.loadSampleButton.addEventListener("click", () => {
+      imageAssets = [];
+      loadText(SAMPLE_QUIZ, "built-in-test-quiz.txt");
+      renderSelectedFiles();
+    });
+    elements.selectedFiles.addEventListener("click", event => {
+      const button = event.target.closest("[data-remove-image]");
+      if (!button) return;
+      const index = Number.parseInt(button.getAttribute("data-remove-image"), 10);
+      if (Number.isInteger(index) && imageAssets[index]) imageAssets.splice(index, 1);
+      renderSelectedFiles();
+      updateSummary();
+      setStatus("", "Not checked");
+    });
+    elements.quizText.addEventListener("input", updateSummary);
+    elements.validateButton.addEventListener("click", validateCurrentQuiz);
+    elements.convertButton.addEventListener("click", () => convertCurrentQuiz().catch(() => {}));
+
+    elements.downloadTextButton.addEventListener("click", () => {
+      const text = elements.quizText.value;
+      if (!text.trim()) {
+        showToast("There is no quiz text to download.", "error");
+        return;
+      }
+      const quiz = ConverterCore.parseQuiz(text);
+      const fallback = sourceFilename || `${ConverterCore.sanitizeFilename(quiz.title)}.txt`;
+      downloadBlob(new Blob([text], { type: "text/plain;charset=utf-8" }), fallback.endsWith(".txt") ? fallback : `${fallback}.txt`);
+      showToast("Quiz text downloaded.", "success");
+    });
+
+    elements.clearButton.addEventListener("click", () => {
+      elements.quizText.value = "";
+      elements.fileInput.value = "";
+      sourceFilename = "";
+      imageAssets = [];
+      renderSelectedFiles();
+      elements.report.innerHTML = '<div class="report-empty">Add a quiz, then select <strong>Validate Quiz</strong>.</div>';
+      setStatus("", "Not checked");
+      updateSummary();
+    });
+
+    for (const eventName of ["dragenter", "dragover"]) {
+      elements.dropZone.addEventListener(eventName, event => {
+        event.preventDefault();
+        elements.dropZone.classList.add("is-dragging");
+      });
+    }
+    for (const eventName of ["dragleave", "drop"]) {
+      elements.dropZone.addEventListener(eventName, event => {
+        event.preventDefault();
+        elements.dropZone.classList.remove("is-dragging");
+      });
+    }
+    elements.dropZone.addEventListener("drop", event => handleFiles(event.dataTransfer.files));
+
+    renderSelectedFiles();
+    updateSummary();
+
+    if (new URLSearchParams(location.search).get("selftest") === "1") {
+      loadText(SAMPLE_QUIZ, "selftest.txt");
+      convertCurrentQuiz({ download: false }).then(packageData => {
+        document.body.setAttribute("data-selftest", "PASS");
+        const marker = document.createElement("div");
+        marker.id = "selftest-result";
+        marker.textContent = `SELFTEST PASS | questions=${packageData.quiz.questions.length} | points=${packageData.report.totalPoints} | files=${packageData.files.length} | zipBytes=${packageData.zipBytes.length}`;
+        document.body.appendChild(marker);
+      }).catch(error => {
+        document.body.setAttribute("data-selftest", "FAIL");
+        const marker = document.createElement("div");
+        marker.id = "selftest-result";
+        marker.textContent = `SELFTEST FAIL | ${error.message}`;
+        document.body.appendChild(marker);
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
