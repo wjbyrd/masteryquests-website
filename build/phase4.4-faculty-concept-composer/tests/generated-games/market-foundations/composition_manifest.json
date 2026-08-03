@@ -1,0 +1,454 @@
+{
+  "recipe": {
+    "schemaVersion": "1.1.0",
+    "title": "Market Foundations",
+    "slug": "market-foundations",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "scarcity-and-tradeoffs",
+      "opportunity-cost",
+      "marginal-analysis",
+      "incentives",
+      "gains-from-trade",
+      "market-failures",
+      "models-and-assumptions",
+      "production-possibilities-frontier",
+      "micro-versus-macro",
+      "positive-versus-normative-analysis",
+      "economist-policy-role",
+      "competitive-markets",
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "price-signals",
+      "binding-price-ceilings",
+      "binding-price-floors",
+      "tax-wedges-and-revenue",
+      "statutory-versus-economic-tax-incidence",
+      "tax-incidence",
+      "gdp-measurement",
+      "real-versus-nominal-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "indexing-and-real-values",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "labor-market-institutions",
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "monetary-policy-tools",
+      "quantity-theory-of-money",
+      "monetary-neutrality",
+      "inflation-costs",
+      "liquidity-preference-and-money-market",
+      "monetary-policy-transmission",
+      "fiscal-multipliers-and-crowding-out",
+      "aggregate-demand",
+      "aggregate-supply",
+      "macroeconomic-equilibrium-and-shocks",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "disinflation-and-policy"
+    ],
+    "stages": {
+      "stageOne": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives",
+        "gains-from-trade",
+        "market-failures",
+        "models-and-assumptions",
+        "production-possibilities-frontier",
+        "micro-versus-macro",
+        "positive-versus-normative-analysis",
+        "economist-policy-role",
+        "competitive-markets",
+        "demand",
+        "supply",
+        "market-equilibrium",
+        "price-signals"
+      ],
+      "stageTwo": [
+        "binding-price-ceilings",
+        "binding-price-floors",
+        "tax-wedges-and-revenue",
+        "statutory-versus-economic-tax-incidence",
+        "tax-incidence",
+        "gdp-measurement",
+        "real-versus-nominal-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "indexing-and-real-values",
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "economic-growth-policy",
+        "unemployment-measurement",
+        "labor-market-institutions"
+      ],
+      "stageThree": [
+        "money-functions-and-measures",
+        "central-bank-and-federal-reserve",
+        "monetary-policy-tools",
+        "quantity-theory-of-money",
+        "monetary-neutrality",
+        "inflation-costs",
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "fiscal-multipliers-and-crowding-out",
+        "aggregate-demand",
+        "aggregate-supply",
+        "macroeconomic-equilibrium-and-shocks",
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "disinflation-and-policy"
+      ]
+    }
+  },
+  "poolCounts": {
+    "easy": 236,
+    "medium": 239,
+    "hard": 220,
+    "elite": 165,
+    "legendary": 212,
+    "easyBoss": 39,
+    "mediumBoss": 95,
+    "finalBoss": 33,
+    "legendaryBoss": 90,
+    "repair": 161,
+    "repairSeed": 15,
+    "bridge": 112,
+    "calculation": 129,
+    "integration": 0,
+    "graph": 265,
+    "assets": 30,
+    "totalCanonical": 1617
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "prerequisite",
+      "conceptId": "economic-growth-policy",
+      "message": "Economic Growth Policy lists sources-of-productivity as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "labor-market-institutions",
+      "message": "Labor-Market Institutions lists unemployment-types as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "monetary-policy-tools",
+      "message": "Monetary-Policy Tools lists bank-money-creation as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "fiscal-multipliers-and-crowding-out",
+      "message": "Fiscal Multipliers and Crowding Out lists fiscal-policy-and-aggregate-demand as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand lists gdp-components as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "long-run-phillips-curve",
+      "message": "Long-Run Phillips Curve lists natural-rate-of-unemployment as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "disinflation-and-policy",
+      "message": "Disinflation and Policy lists phillips-curve-expectations as a prerequisite."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "scarcity-and-tradeoffs",
+      "message": "Scarcity and Tradeoffs contributes no checkpoint boss questions to stageOne."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "gains-from-trade",
+      "message": "Gains from Trade contributes no checkpoint boss questions to stageOne."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "models-and-assumptions",
+      "message": "Models and Assumptions contributes no checkpoint boss questions to stageOne."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "micro-versus-macro",
+      "message": "Microeconomics versus Macroeconomics contributes no checkpoint boss questions to stageOne."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "economist-policy-role",
+      "message": "Economists and Policy contributes no checkpoint boss questions to stageOne."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand contributes no checkpoint boss questions to stageThree."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "aggregate-supply",
+      "message": "Aggregate Supply contributes no checkpoint boss questions to stageThree."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "message": "Macroeconomic Equilibrium and Shocks contributes no checkpoint boss questions to stageThree."
+    },
+    {
+      "type": "repair",
+      "conceptId": "scarcity-and-tradeoffs",
+      "message": "Scarcity and Tradeoffs has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "scarcity-and-tradeoffs",
+      "message": "Scarcity and Tradeoffs has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "marginal-analysis",
+      "message": "Marginal Analysis has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "marginal-analysis",
+      "message": "Marginal Analysis has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "incentives",
+      "message": "Incentives has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "incentives",
+      "message": "Incentives has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "gains-from-trade",
+      "message": "Gains from Trade has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "gains-from-trade",
+      "message": "Gains from Trade has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "market-failures",
+      "message": "Market Failures has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "market-failures",
+      "message": "Market Failures has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "models-and-assumptions",
+      "message": "Models and Assumptions has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "models-and-assumptions",
+      "message": "Models and Assumptions has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "micro-versus-macro",
+      "message": "Microeconomics versus Macroeconomics has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "micro-versus-macro",
+      "message": "Microeconomics versus Macroeconomics has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "economist-policy-role",
+      "message": "Economists and Policy has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "economist-policy-role",
+      "message": "Economists and Policy has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "competitive-markets",
+      "message": "Competitive Markets has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "competitive-markets",
+      "message": "Competitive Markets has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "price-signals",
+      "message": "Price Signals has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "price-signals",
+      "message": "Price Signals has no direct bridge route."
+    },
+    {
+      "type": "repair",
+      "conceptId": "statutory-versus-economic-tax-incidence",
+      "message": "Statutory versus Economic Tax Incidence has no direct repair route."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 1617,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.1.0",
+    "title": "Market Foundations",
+    "slug": "market-foundations",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "scarcity-and-tradeoffs",
+      "opportunity-cost",
+      "marginal-analysis",
+      "incentives",
+      "gains-from-trade",
+      "market-failures",
+      "models-and-assumptions",
+      "production-possibilities-frontier",
+      "micro-versus-macro",
+      "positive-versus-normative-analysis",
+      "economist-policy-role",
+      "competitive-markets",
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "price-signals",
+      "binding-price-ceilings",
+      "binding-price-floors",
+      "tax-wedges-and-revenue",
+      "statutory-versus-economic-tax-incidence",
+      "tax-incidence",
+      "gdp-measurement",
+      "real-versus-nominal-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "indexing-and-real-values",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "labor-market-institutions",
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "monetary-policy-tools",
+      "quantity-theory-of-money",
+      "monetary-neutrality",
+      "inflation-costs",
+      "liquidity-preference-and-money-market",
+      "monetary-policy-transmission",
+      "fiscal-multipliers-and-crowding-out",
+      "aggregate-demand",
+      "aggregate-supply",
+      "macroeconomic-equilibrium-and-shocks",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "disinflation-and-policy"
+    ],
+    "stages": {
+      "stageOne": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives",
+        "gains-from-trade",
+        "market-failures",
+        "models-and-assumptions",
+        "production-possibilities-frontier",
+        "micro-versus-macro",
+        "positive-versus-normative-analysis",
+        "economist-policy-role",
+        "competitive-markets",
+        "demand",
+        "supply",
+        "market-equilibrium",
+        "price-signals"
+      ],
+      "stageTwo": [
+        "binding-price-ceilings",
+        "binding-price-floors",
+        "tax-wedges-and-revenue",
+        "statutory-versus-economic-tax-incidence",
+        "tax-incidence",
+        "gdp-measurement",
+        "real-versus-nominal-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "indexing-and-real-values",
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "economic-growth-policy",
+        "unemployment-measurement",
+        "labor-market-institutions"
+      ],
+      "stageThree": [
+        "money-functions-and-measures",
+        "central-bank-and-federal-reserve",
+        "monetary-policy-tools",
+        "quantity-theory-of-money",
+        "monetary-neutrality",
+        "inflation-costs",
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "fiscal-multipliers-and-crowding-out",
+        "aggregate-demand",
+        "aggregate-supply",
+        "macroeconomic-equilibrium-and-shocks",
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "disinflation-and-policy"
+      ]
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "compositionId": "market-foundations",
+    "saveKeyNamespace": "mq-econ:market-foundations:ca5bb04c2ead",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "ca5bb04c2eadcc2ab6e764e4b988d12db5e6a6f05abfcd324b0a91124546f8ff"
+  }
+}

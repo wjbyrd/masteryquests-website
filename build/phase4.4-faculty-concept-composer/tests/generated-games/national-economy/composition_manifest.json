@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "schemaVersion": "1.1.0",
+    "title": "National Economy",
+    "slug": "national-economy",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ],
+    "stages": {
+      "stageOne": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias"
+      ],
+      "stageTwo": [
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates",
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity"
+      ],
+      "stageThree": [
+        "economic-growth-policy",
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ]
+    }
+  },
+  "poolCounts": {
+    "easy": 80,
+    "medium": 80,
+    "hard": 80,
+    "elite": 80,
+    "legendary": 90,
+    "easyBoss": 40,
+    "mediumBoss": 36,
+    "finalBoss": 51,
+    "legendaryBoss": 32,
+    "repair": 57,
+    "repairSeed": 0,
+    "bridge": 37,
+    "calculation": 57,
+    "integration": 0,
+    "graph": 0,
+    "assets": 0,
+    "totalCanonical": 663
+  },
+  "errors": [],
+  "warnings": [],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 663,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.1.0",
+    "title": "National Economy",
+    "slug": "national-economy",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ],
+    "stages": {
+      "stageOne": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias"
+      ],
+      "stageTwo": [
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates",
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity"
+      ],
+      "stageThree": [
+        "economic-growth-policy",
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ]
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "compositionId": "national-economy",
+    "saveKeyNamespace": "mq-econ:national-economy:5c7b6a46d715",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "5c7b6a46d7152d3cf05d7e5390ab23a2b2f0f95b7d5245a37d8e5565c6148d39"
+  }
+}

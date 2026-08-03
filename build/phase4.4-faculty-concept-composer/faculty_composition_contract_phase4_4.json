@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.1.0",
+  "stageSemantics": {
+    "stageOne": "easyBoss",
+    "stageTwo": "mediumBoss",
+    "stageThree": "finalBoss"
+  },
+  "ordinaryQuestionSemantics": "All selected ordinary questions remain available across the game according to canonical difficulty.",
+  "modeOrder": [
+    "standard",
+    "timed",
+    "exam",
+    "legendary",
+    "score"
+  ],
+  "poolMinimums": {
+    "easy": 6,
+    "medium": 6,
+    "hard": 6,
+    "elite": 4,
+    "legendary": 6,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 1,
+    "bridge": 1
+  },
+  "modeRequirements": {
+    "standard": [
+      "easy",
+      "medium",
+      "hard",
+      "easyBoss",
+      "mediumBoss",
+      "finalBoss",
+      "repair",
+      "bridge"
+    ],
+    "timed": [
+      "easy",
+      "medium",
+      "hard",
+      "repair",
+      "bridge"
+    ],
+    "exam": [
+      "easy",
+      "medium",
+      "hard",
+      "repair",
+      "bridge"
+    ],
+    "legendary": [
+      "legendary",
+      "legendaryBoss"
+    ],
+    "score": [
+      "easy",
+      "medium",
+      "hard",
+      "easyBoss",
+      "mediumBoss",
+      "finalBoss",
+      "repair",
+      "bridge"
+    ]
+  },
+  "mergeRules": {
+    "mainPools": [
+      "easy",
+      "medium",
+      "hard",
+      "elite",
+      "legendary"
+    ],
+    "calculationAndIntegration": "Place into canonicalDifficulty pool while retaining instructionalRole.",
+    "legendaryBoss": "Merge from all selected concepts.",
+    "boss": "Map selected concept boss items to the assigned checkpoint stage.",
+    "deduplication": "canonicalId",
+    "objectiveLabels": "Conflicts block generation.",
+    "repairPrecedence": "directSkillRepairRoutes before microSkillRepairPools.",
+    "answerPolicy": "Preserve numeric a and aHash exactly; never reorder options."
+  }
+}

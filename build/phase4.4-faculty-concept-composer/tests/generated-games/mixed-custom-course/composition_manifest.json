@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "schemaVersion": "1.1.0",
+    "title": "Mixed Custom Course",
+    "slug": "mixed-custom-course",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "opportunity-cost",
+      "market-equilibrium",
+      "gdp-measurement",
+      "unemployment-measurement",
+      "bank-money-creation",
+      "aggregate-demand",
+      "fiscal-policy-and-aggregate-demand",
+      "phillips-curve-expectations"
+    ],
+    "stages": {
+      "stageOne": [
+        "opportunity-cost",
+        "market-equilibrium",
+        "gdp-measurement"
+      ],
+      "stageTwo": [
+        "unemployment-measurement",
+        "bank-money-creation",
+        "aggregate-demand"
+      ],
+      "stageThree": [
+        "fiscal-policy-and-aggregate-demand",
+        "phillips-curve-expectations"
+      ]
+    }
+  },
+  "poolCounts": {
+    "easy": 49,
+    "medium": 62,
+    "hard": 58,
+    "elite": 42,
+    "legendary": 44,
+    "easyBoss": 23,
+    "mediumBoss": 14,
+    "finalBoss": 5,
+    "legendaryBoss": 18,
+    "repair": 37,
+    "repairSeed": 1,
+    "bridge": 26,
+    "calculation": 43,
+    "integration": 0,
+    "graph": 40,
+    "assets": 7,
+    "totalCanonical": 379
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "prerequisite",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost lists scarcity-and-tradeoffs as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "market-equilibrium",
+      "message": "Market Equilibrium lists demand as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "market-equilibrium",
+      "message": "Market Equilibrium lists supply as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "bank-money-creation",
+      "message": "Bank Money Creation lists money-functions-and-measures as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand lists gdp-components as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "phillips-curve-expectations",
+      "message": "Phillips-Curve Expectations lists short-run-phillips-curve as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "phillips-curve-expectations",
+      "message": "Phillips-Curve Expectations lists long-run-phillips-curve as a prerequisite."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand contributes no checkpoint boss questions to stageTwo."
+    },
+    {
+      "type": "repair",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost has no direct bridge route."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 379,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.1.0",
+    "title": "Mixed Custom Course",
+    "slug": "mixed-custom-course",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "opportunity-cost",
+      "market-equilibrium",
+      "gdp-measurement",
+      "unemployment-measurement",
+      "bank-money-creation",
+      "aggregate-demand",
+      "fiscal-policy-and-aggregate-demand",
+      "phillips-curve-expectations"
+    ],
+    "stages": {
+      "stageOne": [
+        "opportunity-cost",
+        "market-equilibrium",
+        "gdp-measurement"
+      ],
+      "stageTwo": [
+        "unemployment-measurement",
+        "bank-money-creation",
+        "aggregate-demand"
+      ],
+      "stageThree": [
+        "fiscal-policy-and-aggregate-demand",
+        "phillips-curve-expectations"
+      ]
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "compositionId": "mixed-custom-course",
+    "saveKeyNamespace": "mq-econ:mixed-custom-course:c4091ae69592",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "c4091ae695921c1466a3cb6b3fb7840b7a8e1add33b7126d13164ffd6e6a1ba7"
+  }
+}

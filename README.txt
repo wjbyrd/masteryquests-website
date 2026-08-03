@@ -1,14 +1,24 @@
-Mastery Quests mastery-path graphic correction
+Mastery Quests website — faculty workflow update
 
-Replace only:
+Primary navigation:
+- Games
+- Build a Quest
+- Resources
+- About
 
-index.html
-assets/css/site.css
+Key public path:
+- /build/ — faculty goal filter and embedded Faculty Concept Composer
+- /build/phase4.4-faculty-concept-composer/ — full composer workspace
 
-What changed:
-- Replaced the CSS conic-gradient ring with a precise inline SVG.
-- Created four equal 90-degree learning stages.
-- Attached each arrowhead directly to the end of its stage arc.
-- Kept the stage numbers at the top, right, bottom, and left.
-- Preserved the clockwise Practice -> Repair -> Bridge -> Master cycle.
-- Removed the floating diagonal arrows that appeared disconnected from the ring.
+Faculty goals:
+- Build a game from existing economics concepts
+- Create questions for another subject
+- Deploy a game in Canvas
+- Review or validate a question bank
+- Convert questions into a Canvas quiz
+- Explore finished examples
+
+The Build a Quest page reveals only the next-step sections associated with the
+selected goals. The first economics goal is selected by default.
+
+The blank faculty template remains available under Advanced Manual Building.

@@ -1,0 +1,61 @@
+{
+  "workspace": "/mnt/data/phase4.4-faculty-concept-composer",
+  "curatedLibrary": {
+    "verified": true,
+    "conceptCount": 64,
+    "canonicalQuestionCount": 2447,
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "baselineVerdict": "READY — PHASE 4.3A CURATION APPLIED AND FOUR-COMPOSITION BROWSER REGRESSION PASSED",
+    "browserValidated": true,
+    "unresolvedReviewItems": 0
+  },
+  "template": {
+    "verified": true,
+    "sourceSha256": "788c7aa7ae77451726b5734d8d7b7618192c0f8dcaae6f505a21e61ecc86c96f",
+    "composerReadySha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "authoritativeTemplateChanged": false
+  },
+  "runtimeFiles": [
+    "index.html",
+    "composer.css",
+    "composer-core.js",
+    "composer.js",
+    "data/composer_library.js",
+    "data/composer_registry.json",
+    "data/composer_library_manifest.json",
+    "template/mastery-quests-faculty-template-composer-ready.html"
+  ],
+  "status": "READY — FACULTY CONCEPT COMPOSER COMPLETE WITH DOCUMENTED NON-BLOCKING DIFFERENCES",
+  "phase": "4.4",
+  "composerVersion": "phase4.4",
+  "compiledLibrary": {
+    "conceptCount": 64,
+    "canonicalQuestionCount": 2447,
+    "assetCount": 43,
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab"
+  },
+  "testCompositions": {
+    "total": 8,
+    "baseline": 4,
+    "modeSpecific": 4,
+    "staticPassed": 8,
+    "browserPassed": 8
+  },
+  "determinism": true,
+  "saveNamespaceIsolation": true,
+  "answerStability": {
+    "passed": true,
+    "canonicalQuestionCount": 2447,
+    "answerVerificationPassed": 2447,
+    "issues": [],
+    "compositionErrors": []
+  },
+  "routing": {
+    "directRepairRouteKeyCount": 104,
+    "repairCandidateTestPassed": true,
+    "bridgeCandidateTestPassed": true
+  },
+  "desktopBrowserPassed": true,
+  "mobile390x844Passed": true,
+  "protectedFilesChanged": 0
+}

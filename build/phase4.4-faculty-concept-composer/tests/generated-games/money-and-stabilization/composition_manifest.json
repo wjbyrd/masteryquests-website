@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "schemaVersion": "1.1.0",
+    "title": "Money and Stabilization",
+    "slug": "money-and-stabilization",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "bank-money-creation",
+      "monetary-policy-tools",
+      "monetary-control-limits",
+      "quantity-theory-of-money",
+      "monetary-neutrality",
+      "fisher-effect",
+      "inflation-costs",
+      "inflation-tax-and-deflation",
+      "liquidity-preference-and-money-market",
+      "monetary-policy-transmission",
+      "fiscal-policy-and-aggregate-demand",
+      "fiscal-multipliers-and-crowding-out",
+      "stabilization-policy",
+      "aggregate-demand",
+      "aggregate-supply",
+      "macroeconomic-equilibrium-and-shocks",
+      "long-run-macroeconomic-adjustment",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "disinflation-and-policy",
+      "sacrifice-ratio",
+      "integrated-macroeconomic-analysis"
+    ],
+    "stages": {
+      "stageOne": [
+        "money-functions-and-measures",
+        "central-bank-and-federal-reserve",
+        "bank-money-creation",
+        "monetary-policy-tools",
+        "monetary-control-limits",
+        "quantity-theory-of-money",
+        "monetary-neutrality",
+        "fisher-effect",
+        "inflation-costs"
+      ],
+      "stageTwo": [
+        "inflation-tax-and-deflation",
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "fiscal-policy-and-aggregate-demand",
+        "fiscal-multipliers-and-crowding-out",
+        "stabilization-policy",
+        "aggregate-demand",
+        "aggregate-supply"
+      ],
+      "stageThree": [
+        "macroeconomic-equilibrium-and-shocks",
+        "long-run-macroeconomic-adjustment",
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "phillips-curve-expectations",
+        "disinflation-and-policy",
+        "sacrifice-ratio",
+        "integrated-macroeconomic-analysis"
+      ]
+    }
+  },
+  "poolCounts": {
+    "easy": 161,
+    "medium": 154,
+    "hard": 155,
+    "elite": 141,
+    "legendary": 131,
+    "easyBoss": 27,
+    "mediumBoss": 18,
+    "finalBoss": 44,
+    "legendaryBoss": 67,
+    "repair": 147,
+    "repairSeed": 0,
+    "bridge": 81,
+    "calculation": 71,
+    "integration": 10,
+    "graph": 236,
+    "assets": 33,
+    "totalCanonical": 1126
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "prerequisite",
+      "conceptId": "fisher-effect",
+      "message": "Fisher Effect lists real-versus-nominal-interest-rates as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "inflation-costs",
+      "message": "Costs of Inflation lists cpi-and-inflation-measurement as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand lists gdp-components as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "aggregate-supply",
+      "message": "Aggregate Supply lists living-standards-and-growth as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "short-run-phillips-curve",
+      "message": "Short-Run Phillips Curve lists unemployment-measurement as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "short-run-phillips-curve",
+      "message": "Short-Run Phillips Curve lists cpi-and-inflation-measurement as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "long-run-phillips-curve",
+      "message": "Long-Run Phillips Curve lists natural-rate-of-unemployment as a prerequisite."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand contributes no checkpoint boss questions to stageTwo."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "aggregate-supply",
+      "message": "Aggregate Supply contributes no checkpoint boss questions to stageTwo."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "message": "Macroeconomic Equilibrium and Shocks contributes no checkpoint boss questions to stageThree."
+    },
+    {
+      "type": "boss-coverage",
+      "conceptId": "long-run-macroeconomic-adjustment",
+      "message": "Long-Run Macroeconomic Adjustment contributes no checkpoint boss questions to stageThree."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 1126,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.1.0",
+    "title": "Money and Stabilization",
+    "slug": "money-and-stabilization",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "bank-money-creation",
+      "monetary-policy-tools",
+      "monetary-control-limits",
+      "quantity-theory-of-money",
+      "monetary-neutrality",
+      "fisher-effect",
+      "inflation-costs",
+      "inflation-tax-and-deflation",
+      "liquidity-preference-and-money-market",
+      "monetary-policy-transmission",
+      "fiscal-policy-and-aggregate-demand",
+      "fiscal-multipliers-and-crowding-out",
+      "stabilization-policy",
+      "aggregate-demand",
+      "aggregate-supply",
+      "macroeconomic-equilibrium-and-shocks",
+      "long-run-macroeconomic-adjustment",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "disinflation-and-policy",
+      "sacrifice-ratio",
+      "integrated-macroeconomic-analysis"
+    ],
+    "stages": {
+      "stageOne": [
+        "money-functions-and-measures",
+        "central-bank-and-federal-reserve",
+        "bank-money-creation",
+        "monetary-policy-tools",
+        "monetary-control-limits",
+        "quantity-theory-of-money",
+        "monetary-neutrality",
+        "fisher-effect",
+        "inflation-costs"
+      ],
+      "stageTwo": [
+        "inflation-tax-and-deflation",
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "fiscal-policy-and-aggregate-demand",
+        "fiscal-multipliers-and-crowding-out",
+        "stabilization-policy",
+        "aggregate-demand",
+        "aggregate-supply"
+      ],
+      "stageThree": [
+        "macroeconomic-equilibrium-and-shocks",
+        "long-run-macroeconomic-adjustment",
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "phillips-curve-expectations",
+        "disinflation-and-policy",
+        "sacrifice-ratio",
+        "integrated-macroeconomic-analysis"
+      ]
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "compositionId": "money-and-stabilization",
+    "saveKeyNamespace": "mq-econ:money-and-stabilization:d265286317dd",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "d265286317dd4190984cdb33a8fc0101acce57a8d6b117cf5e0e40655b07a9bb"
+  }
+}

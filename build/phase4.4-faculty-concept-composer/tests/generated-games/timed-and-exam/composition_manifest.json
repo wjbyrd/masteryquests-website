@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "schemaVersion": "1.1.0",
+    "title": "Timed and Exam Composition",
+    "slug": "timed-and-exam",
+    "supportedModes": [
+      "timed",
+      "exam"
+    ],
+    "selectedConceptIds": [
+      "demand"
+    ],
+    "stages": {
+      "stageOne": [
+        "demand"
+      ],
+      "stageTwo": [],
+      "stageThree": []
+    }
+  },
+  "poolCounts": {
+    "easy": 8,
+    "medium": 6,
+    "hard": 7,
+    "elite": 2,
+    "legendary": 5,
+    "easyBoss": 3,
+    "mediumBoss": 0,
+    "finalBoss": 0,
+    "legendaryBoss": 3,
+    "repair": 4,
+    "repairSeed": 0,
+    "bridge": 6,
+    "calculation": 0,
+    "integration": 0,
+    "graph": 4,
+    "assets": 1,
+    "totalCanonical": 44
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "prerequisite",
+      "conceptId": "demand",
+      "message": "Demand lists competitive-markets as a prerequisite."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 44,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.1.0",
+    "title": "Timed and Exam Composition",
+    "slug": "timed-and-exam",
+    "supportedModes": [
+      "timed",
+      "exam"
+    ],
+    "selectedConceptIds": [
+      "demand"
+    ],
+    "stages": {
+      "stageOne": [
+        "demand"
+      ],
+      "stageTwo": [],
+      "stageThree": []
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "compositionId": "timed-and-exam",
+    "saveKeyNamespace": "mq-econ:timed-and-exam:5502693db165",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "5502693db165d79f5794c3eccb879212f16bc81994d3d2afcc906d74ec35ac40"
+  }
+}
