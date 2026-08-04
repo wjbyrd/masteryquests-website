@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.1.0",
+  "title": "Standard and Score Composition",
+  "slug": "standard-and-score",
+  "supportedModes": [
+    "standard",
+    "score"
+  ],
+  "selectedConceptIds": [
+    "opportunity-cost",
+    "market-equilibrium",
+    "gdp-measurement",
+    "unemployment-measurement",
+    "bank-money-creation",
+    "aggregate-demand",
+    "fiscal-policy-and-aggregate-demand",
+    "phillips-curve-expectations"
+  ],
+  "stages": {
+    "stageOne": [
+      "opportunity-cost",
+      "market-equilibrium",
+      "gdp-measurement"
+    ],
+    "stageTwo": [
+      "unemployment-measurement",
+      "bank-money-creation",
+      "aggregate-demand"
+    ],
+    "stageThree": [
+      "fiscal-policy-and-aggregate-demand",
+      "phillips-curve-expectations"
+    ]
+  }
+}

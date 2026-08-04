@@ -1,0 +1,1150 @@
+[
+  {
+    "conceptId": "monetary-policy-transmission",
+    "pool": "boss_easy",
+    "q": "The central bank buys government bonds from the public. What is the first link in the usual expansionary transmission chain?",
+    "correctAnswer": "Reserves and the money supply rise, pushing interest rates down.",
+    "distractors": [
+      "Bank reserves fall and interest rates rise immediately.",
+      "Government purchases increase before the money market changes.",
+      "Aggregate supply shifts right because banks hold more bonds."
+    ],
+    "primarySkill": "open_market_purchase_transmission",
+    "repairSkill": "open_market_purchase_transmission",
+    "commonError": "Skipping the money-supply and interest-rate links after an open-market purchase.",
+    "feedback": "A bond purchase adds reserves to the banking system, supports money creation, and tends to lower market interest rates.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-MPTX-B1-001",
+    "options": [
+      "Reserves and the money supply rise, pushing interest rates down.",
+      "Bank reserves fall and interest rates rise immediately.",
+      "Government purchases increase before the money market changes.",
+      "Aggregate supply shifts right because banks hold more bonds."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "monetary-policy-transmission",
+    "pool": "boss_easy",
+    "q": "Why can lower interest rates increase aggregate demand in the short run?",
+    "correctAnswer": "They increase investment and other rate-sensitive spending.",
+    "distractors": [
+      "They automatically reduce all product prices.",
+      "They raise required reserve ratios for banks.",
+      "They directly increase government purchases."
+    ],
+    "primarySkill": "interest_sensitive_spending_channel",
+    "repairSkill": "interest_sensitive_spending_channel",
+    "commonError": "Treating monetary policy as a direct change in government spending or product prices.",
+    "feedback": "Lower borrowing costs encourage investment and some durable consumption, shifting aggregate demand to the right.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-MPTX-B1-002",
+    "options": [
+      "They automatically reduce all product prices.",
+      "They increase investment and other rate-sensitive spending.",
+      "They raise required reserve ratios for banks.",
+      "They directly increase government purchases."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "monetary-policy-transmission",
+    "pool": "boss_easy",
+    "q": "Money supply shifts right while money demand is unchanged. What happens at the new money-market equilibrium?",
+    "correctAnswer": "The equilibrium interest rate falls.",
+    "distractors": [
+      "The equilibrium interest rate rises.",
+      "The price level must fall immediately.",
+      "Real output must remain permanently fixed."
+    ],
+    "primarySkill": "money_supply_shift_interest_rate",
+    "repairSkill": "money_supply_shift_interest_rate",
+    "commonError": "Reversing the interest-rate effect of a rightward money-supply shift.",
+    "feedback": "With money demand fixed, a larger money supply lowers the equilibrium interest rate.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-MPTX-B1-003",
+    "options": [
+      "The equilibrium interest rate rises.",
+      "The price level must fall immediately.",
+      "The equilibrium interest rate falls.",
+      "Real output must remain permanently fixed."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "monetary-policy-transmission",
+    "pool": "boss_medium",
+    "q": "The central bank adds reserves, but banks choose to hold most of them as excess reserves. How does this affect the transmission mechanism?",
+    "correctAnswer": "Money and credit expand less, weakening the interest-rate and aggregate-demand response.",
+    "distractors": [
+      "Money and credit expand more, making aggregate demand rise farther.",
+      "The policy becomes contractionary because excess reserves reduce taxes.",
+      "Aggregate demand rises by the same amount because reserve use never matters."
+    ],
+    "primarySkill": "reserve_hoarding_transmission_limit",
+    "repairSkill": "reserve_hoarding_transmission_limit",
+    "commonError": "Assuming reserve injections always create the same money and credit expansion.",
+    "feedback": "When banks hold added reserves rather than lending them, money creation and the downstream spending response are weaker.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-MPTX-B2-001",
+    "options": [
+      "Money and credit expand more, making aggregate demand rise farther.",
+      "The policy becomes contractionary because excess reserves reduce taxes.",
+      "Aggregate demand rises by the same amount because reserve use never matters.",
+      "Money and credit expand less, weakening the interest-rate and aggregate-demand response."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "monetary-policy-transmission",
+    "pool": "boss_medium",
+    "q": "Interest rates fall after an expansionary policy, but firms believe future sales will remain weak. What is the likely result?",
+    "correctAnswer": "Investment responds only modestly, so the rightward shift of aggregate demand is limited.",
+    "distractors": [
+      "Investment surges because interest rates are the only influence on firms.",
+      "Aggregate demand shifts left because lower rates reduce borrowing.",
+      "The money supply contracts automatically when firms are pessimistic."
+    ],
+    "primarySkill": "investment_expectations_transmission",
+    "repairSkill": "investment_expectations_transmission",
+    "commonError": "Assuming lower rates guarantee a large investment response regardless of expectations.",
+    "feedback": "Weak expected sales can make firms reluctant to invest even when borrowing costs fall, weakening policy transmission.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-MPTX-B2-002",
+    "options": [
+      "Investment responds only modestly, so the rightward shift of aggregate demand is limited.",
+      "Investment surges because interest rates are the only influence on firms.",
+      "Aggregate demand shifts left because lower rates reduce borrowing.",
+      "The money supply contracts automatically when firms are pessimistic."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "monetary-policy-transmission",
+    "pool": "boss_medium",
+    "q": "Which sequence correctly traces a contractionary open-market operation through aggregate demand?",
+    "correctAnswer": "Bond sales drain reserves, raise interest rates, reduce investment, and shift aggregate demand left.",
+    "distractors": [
+      "Bond sales raise reserves, lower interest rates, and shift aggregate demand right.",
+      "Bond purchases reduce reserves, raise investment, and shift aggregate demand left.",
+      "Higher taxes reduce reserves, lower interest rates, and shift aggregate demand right."
+    ],
+    "primarySkill": "contractionary_transmission_sequence",
+    "repairSkill": "contractionary_transmission_sequence",
+    "commonError": "Reversing the reserve, interest-rate, or spending links in contractionary policy.",
+    "feedback": "Selling bonds drains reserves, contracts money and credit, raises rates, reduces interest-sensitive spending, and lowers aggregate demand.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-MPTX-B2-003",
+    "options": [
+      "Bond sales raise reserves, lower interest rates, and shift aggregate demand right.",
+      "Bond sales drain reserves, raise interest rates, reduce investment, and shift aggregate demand left.",
+      "Bond purchases reduce reserves, raise investment, and shift aggregate demand left.",
+      "Higher taxes reduce reserves, lower interest rates, and shift aggregate demand right."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss_easy",
+    "q": "Households spend 75 cents of each additional dollar of disposable income. What does that imply?",
+    "correctAnswer": "The MPC is 0.75, so repeated spending creates a multiplier greater than one.",
+    "distractors": [
+      "The marginal propensity to save is 0.75, so the multiplier equals one.",
+      "The government-purchases multiplier must be 0.75.",
+      "Crowding out must eliminate every later spending round."
+    ],
+    "primarySkill": "mpc_and_multiplier_link",
+    "repairSkill": "mpc_and_multiplier_link",
+    "commonError": "Confusing the marginal propensity to consume with the multiplier itself.",
+    "feedback": "An MPC of 0.75 means each spending round passes along 75 percent of added income, generating further rounds of expenditure.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-FMCO-B1-001",
+    "options": [
+      "The marginal propensity to save is 0.75, so the multiplier equals one.",
+      "The government-purchases multiplier must be 0.75.",
+      "The MPC is 0.75, so repeated spending creates a multiplier greater than one.",
+      "Crowding out must eliminate every later spending round."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss_easy",
+    "q": "What is the central mechanism of crowding out?",
+    "correctAnswer": "Fiscal expansion raises interest rates and reduces some private investment spending.",
+    "distractors": [
+      "Fiscal expansion lowers interest rates and increases private investment.",
+      "Higher government spending directly reduces the money supply.",
+      "A larger multiplier forces households to stop consuming."
+    ],
+    "primarySkill": "crowding_out_mechanism",
+    "repairSkill": "crowding_out_mechanism",
+    "commonError": "Reversing the interest-rate and investment effects of fiscal expansion.",
+    "feedback": "Government borrowing and stronger money demand can raise interest rates, discouraging private investment.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-FMCO-B1-002",
+    "options": [
+      "Fiscal expansion lowers interest rates and increases private investment.",
+      "Higher government spending directly reduces the money supply.",
+      "A larger multiplier forces households to stop consuming.",
+      "Fiscal expansion raises interest rates and reduces some private investment spending."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss_easy",
+    "q": "Holding other factors constant, which change makes the simple spending multiplier larger?",
+    "correctAnswer": "A lower marginal propensity to save.",
+    "distractors": [
+      "A higher marginal propensity to save.",
+      "A larger amount of crowding out.",
+      "A smaller initial change in government purchases."
+    ],
+    "primarySkill": "multiplier_leakage",
+    "repairSkill": "multiplier_leakage",
+    "commonError": "Treating more saving as a force that strengthens repeated spending rounds.",
+    "feedback": "A lower marginal propensity to save means a larger MPC, so more income is respent in each round.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-FMCO-B1-003",
+    "options": [
+      "A lower marginal propensity to save.",
+      "A higher marginal propensity to save.",
+      "A larger amount of crowding out.",
+      "A smaller initial change in government purchases."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss_medium",
+    "q": "Government purchases rise by $20 billion and the MPC is 0.50. Ignoring crowding out, what is the predicted total increase in aggregate demand?",
+    "correctAnswer": "$40 billion.",
+    "distractors": [
+      "$10 billion.",
+      "$20 billion.",
+      "$80 billion."
+    ],
+    "primarySkill": "spending_multiplier_application",
+    "repairSkill": "spending_multiplier_application",
+    "commonError": "Using the MPC itself as the multiplier or ignoring the repeated-spending process.",
+    "feedback": "The multiplier is 1/(1 - 0.50) = 2, so a $20 billion increase produces a $40 billion gross shift.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-FMCO-B2-001",
+    "options": [
+      "$10 billion.",
+      "$40 billion.",
+      "$20 billion.",
+      "$80 billion."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss_medium",
+    "q": "A fiscal package creates a gross $120 billion increase in aggregate demand, but higher interest rates reduce investment by $25 billion. What is the net shift?",
+    "correctAnswer": "Aggregate demand rises by $95 billion.",
+    "distractors": [
+      "Aggregate demand rises by $145 billion.",
+      "Aggregate demand rises by $25 billion.",
+      "Aggregate demand falls by $95 billion."
+    ],
+    "primarySkill": "net_multiplier_after_crowding_out",
+    "repairSkill": "net_multiplier_after_crowding_out",
+    "commonError": "Adding the crowded-out investment to the gross effect rather than subtracting it.",
+    "feedback": "Crowding out offsets part of the expansion: $120 billion minus $25 billion equals a $95 billion net increase.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-FMCO-B2-002",
+    "options": [
+      "Aggregate demand rises by $145 billion.",
+      "Aggregate demand rises by $25 billion.",
+      "Aggregate demand rises by $95 billion.",
+      "Aggregate demand falls by $95 billion."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss_medium",
+    "q": "Why can an equal-dollar tax cut create a smaller initial aggregate-demand shift than an equal increase in government purchases?",
+    "correctAnswer": "Tax cuts are partly saved; government purchases enter aggregate demand directly.",
+    "distractors": [
+      "Tax cuts always raise interest rates before households receive them.",
+      "Government purchases do not pass through the multiplier process.",
+      "Tax cuts reduce disposable income before they affect consumption."
+    ],
+    "primarySkill": "tax_cut_vs_purchase_initial_effect",
+    "repairSkill": "tax_cut_vs_purchase_initial_effect",
+    "commonError": "Assuming every dollar of a tax cut is spent immediately.",
+    "feedback": "Only the consumed portion of a tax cut enters the first spending round, whereas government purchases are direct expenditure.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-FMCO-B2-003",
+    "options": [
+      "Tax cuts always raise interest rates before households receive them.",
+      "Government purchases do not pass through the multiplier process.",
+      "Tax cuts reduce disposable income before they affect consumption.",
+      "Tax cuts are partly saved; government purchases enter aggregate demand directly."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "boss_medium",
+    "q": "A country puts unemployed workers and idle factories back to work without gaining new technology. How does this appear on its PPF?",
+    "correctAnswer": "Production moves to the existing frontier, showing greater efficiency but no growth.",
+    "distractors": [
+      "The frontier shifts outward, showing growth in productive capacity.",
+      "Production moves outside the frontier, becoming unattainable.",
+      "The frontier shifts inward because idle resources were used."
+    ],
+    "primarySkill": "efficiency_improvement_without_growth",
+    "repairSkill": "efficiency_improvement_without_growth",
+    "commonError": "Calling movement to the existing frontier economic growth.",
+    "feedback": "Using existing resources more fully moves production to the frontier; growth requires the frontier itself to shift outward.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-B2-001",
+    "options": [
+      "Production moves to the existing frontier, showing greater efficiency but no growth.",
+      "The frontier shifts outward, showing growth in productive capacity.",
+      "Production moves outside the frontier, becoming unattainable.",
+      "The frontier shifts inward because idle resources were used."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "boss_medium",
+    "q": "A technological improvement affects only the production of medical equipment, not food. How does the PPF change?",
+    "correctAnswer": "The medical-equipment intercept moves outward; food stays fixed.",
+    "distractors": [
+      "The entire frontier shifts inward by the same amount.",
+      "The frontier pivots outward toward the food axis only.",
+      "The economy moves along an unchanged frontier toward more food."
+    ],
+    "primarySkill": "one_good_ppf_pivot",
+    "repairSkill": "one_good_ppf_pivot",
+    "commonError": "Treating a one-sector technology gain as an equal shift for both goods.",
+    "feedback": "A productivity gain limited to one good expands the maximum attainable quantity of that good without changing the other intercept.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-B2-002",
+    "options": [
+      "The entire frontier shifts inward by the same amount.",
+      "The medical-equipment intercept moves outward; food stays fixed.",
+      "The frontier pivots outward toward the food axis only.",
+      "The economy moves along an unchanged frontier toward more food."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "boss_medium",
+    "q": "Why is a typical PPF bowed outward from the origin?",
+    "correctAnswer": "Specialized resources cause rising opportunity cost.",
+    "distractors": [
+      "All resources are equally productive in every use.",
+      "Opportunity cost falls as specialization increases.",
+      "The economy is producing inside the frontier."
+    ],
+    "primarySkill": "resource_specialization_and_ppf_shape",
+    "repairSkill": "resource_specialization_and_ppf_shape",
+    "commonError": "Attributing the bowed shape to equal resource adaptability or inefficiency.",
+    "feedback": "As production shifts, resources increasingly unsuited to the expanding good must be reassigned, raising opportunity cost.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-B2-003",
+    "options": [
+      "All resources are equally productive in every use.",
+      "Opportunity cost falls as specialization increases.",
+      "Specialized resources cause rising opportunity cost.",
+      "The economy is producing inside the frontier."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "boss_hard",
+    "q": "Moving from bundle A to B gains 5 machines and sacrifices 10 tons of food. Moving from B to C gains another 5 machines and sacrifices 20 tons of food. What does the pattern show?",
+    "correctAnswer": "The opportunity cost of machines rises from 2 to 4 tons of food per machine.",
+    "distractors": [
+      "The opportunity cost of machines falls from 4 to 2 tons per machine.",
+      "The opportunity cost remains constant at 3 tons per machine.",
+      "Bundle C must lie inside the production possibilities frontier."
+    ],
+    "primarySkill": "marginal_opportunity_cost_schedule",
+    "repairSkill": "marginal_opportunity_cost_schedule",
+    "commonError": "Comparing total sacrifices without converting each move to cost per additional unit.",
+    "feedback": "The first move costs 10/5 = 2 tons per machine; the second costs 20/5 = 4, showing increasing opportunity cost.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-B3-001",
+    "options": [
+      "The opportunity cost of machines falls from 4 to 2 tons per machine.",
+      "The opportunity cost remains constant at 3 tons per machine.",
+      "Bundle C must lie inside the production possibilities frontier.",
+      "The opportunity cost of machines rises from 2 to 4 tons of food per machine."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "boss_hard",
+    "q": "Country A chooses more capital goods and fewer consumer goods today than Country B, with otherwise similar resources. What is the likely long-run implication?",
+    "correctAnswer": "Country A may gain more future capacity because it produces more capital goods now.",
+    "distractors": [
+      "Country A must have a lower future PPF because current consumption is smaller.",
+      "Country B necessarily grows faster because consumption creates capital automatically.",
+      "Neither choice can affect future production possibilities."
+    ],
+    "primarySkill": "capital_goods_and_future_growth",
+    "repairSkill": "capital_goods_and_future_growth",
+    "commonError": "Ignoring the link between current investment and future productive capacity.",
+    "feedback": "Greater current production of capital goods can expand future capacity, though it requires sacrificing current consumption.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-B3-002",
+    "options": [
+      "Country A may gain more future capacity because it produces more capital goods now.",
+      "Country A must have a lower future PPF because current consumption is smaller.",
+      "Country B necessarily grows faster because consumption creates capital automatically.",
+      "Neither choice can affect future production possibilities."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "boss_hard",
+    "q": "A disaster destroys equipment used only to produce electric power, while agricultural capacity is unchanged. What happens to the PPF?",
+    "correctAnswer": "Only the electric-power intercept moves inward.",
+    "distractors": [
+      "It shifts outward equally for both goods.",
+      "It pivots inward toward the agricultural axis only.",
+      "It remains fixed because the economy can move along the frontier."
+    ],
+    "primarySkill": "sector_specific_capacity_loss",
+    "repairSkill": "sector_specific_capacity_loss",
+    "commonError": "Treating a sector-specific loss as an equal inward shift or a movement along the same frontier.",
+    "feedback": "Losing capacity in one sector reduces the maximum output of that good and rotates the frontier inward on that axis.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-B3-003",
+    "options": [
+      "It shifts outward equally for both goods.",
+      "Only the electric-power intercept moves inward.",
+      "It pivots inward toward the agricultural axis only.",
+      "It remains fixed because the economy can move along the frontier."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "production-possibilities-frontier",
+    "pool": "repair",
+    "q": "A production point lies inside the PPF. How should it be classified?",
+    "correctAnswer": "It is attainable but inefficient because resources are underused.",
+    "distractors": [
+      "It is unattainable with current resources and technology.",
+      "It is efficient because it uses fewer resources.",
+      "It proves the economy has experienced long-run growth."
+    ],
+    "primarySkill": "ppf_inside_point_classification",
+    "repairSkill": "ppf_inside_point_classification",
+    "commonError": "Treating an inside point as impossible or fully efficient.",
+    "feedback": "A point inside the frontier is feasible, but the economy could produce more of at least one good with existing resources.",
+    "type": "repair",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-PPF-R-001",
+    "options": [
+      "It is unattainable with current resources and technology.",
+      "It is efficient because it uses fewer resources.",
+      "It is attainable but inefficient because resources are underused.",
+      "It proves the economy has experienced long-run growth."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "stabilization-policy",
+    "pool": "boss_easy",
+    "q": "Which example is an automatic stabilizer during a recession?",
+    "correctAnswer": "Unemployment-benefit payments rise without a new legislative vote.",
+    "distractors": [
+      "The central bank announces a new bond-purchase program.",
+      "Congress passes a one-time infrastructure bill.",
+      "A state raises sales taxes to balance its budget."
+    ],
+    "primarySkill": "automatic_stabilizer_identification",
+    "repairSkill": "automatic_stabilizer_identification",
+    "commonError": "Confusing automatic fiscal responses with newly enacted discretionary policy.",
+    "feedback": "Unemployment benefits expand automatically as more workers qualify, supporting income without new legislation.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-STAB-B1-001",
+    "options": [
+      "The central bank announces a new bond-purchase program.",
+      "Congress passes a one-time infrastructure bill.",
+      "A state raises sales taxes to balance its budget.",
+      "Unemployment-benefit payments rise without a new legislative vote."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "stabilization-policy",
+    "pool": "boss_easy",
+    "q": "Real output is below potential and inflation pressure is weak. Which demand-management direction is appropriate?",
+    "correctAnswer": "Expansionary policy that shifts aggregate demand to the right.",
+    "distractors": [
+      "Contractionary policy that shifts aggregate demand left.",
+      "A policy that shifts short-run aggregate supply left.",
+      "No policy can affect output in the short run."
+    ],
+    "primarySkill": "recessionary_gap_policy_direction",
+    "repairSkill": "recessionary_gap_policy_direction",
+    "commonError": "Applying contractionary policy to a recessionary gap.",
+    "feedback": "Expansionary fiscal or monetary policy can raise aggregate demand and reduce a recessionary gap.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-STAB-B1-002",
+    "options": [
+      "Expansionary policy that shifts aggregate demand to the right.",
+      "Contractionary policy that shifts aggregate demand left.",
+      "A policy that shifts short-run aggregate supply left.",
+      "No policy can affect output in the short run."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "stabilization-policy",
+    "pool": "boss_easy",
+    "q": "Why can a long implementation lag make discretionary stabilization policy harmful?",
+    "correctAnswer": "It may arrive after conditions change and destabilize the economy.",
+    "distractors": [
+      "The policy always reduces aggregate demand before it begins.",
+      "The lag permanently prevents prices from adjusting.",
+      "The lag converts fiscal policy into monetary policy."
+    ],
+    "primarySkill": "implementation_lag_risk",
+    "repairSkill": "implementation_lag_risk",
+    "commonError": "Treating delayed policy as harmless regardless of the business-cycle phase.",
+    "feedback": "A delayed response can arrive after recovery or after inflation has eased, creating a procyclical rather than stabilizing effect.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-STAB-B1-003",
+    "options": [
+      "The policy always reduces aggregate demand before it begins.",
+      "It may arrive after conditions change and destabilize the economy.",
+      "The lag permanently prevents prices from adjusting.",
+      "The lag converts fiscal policy into monetary policy."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "stabilization-policy",
+    "pool": "boss_medium",
+    "q": "A sharp oil-price increase raises inflation and lowers real output. Why is stabilization difficult?",
+    "correctAnswer": "Supporting output may worsen inflation; fighting inflation may deepen the output loss.",
+    "distractors": [
+      "Both inflation and output automatically improve with any expansionary policy.",
+      "The shock shifts aggregate demand, so only tax policy can respond.",
+      "Monetary and fiscal policy have identical effects on short-run aggregate supply."
+    ],
+    "primarySkill": "supply_shock_stabilization_tradeoff",
+    "repairSkill": "supply_shock_stabilization_tradeoff",
+    "commonError": "Treating a negative supply shock like a pure demand recession.",
+    "feedback": "A negative supply shock creates stagflation, forcing policymakers to weigh competing inflation and output objectives.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-STAB-B2-001",
+    "options": [
+      "Both inflation and output automatically improve with any expansionary policy.",
+      "The shock shifts aggregate demand, so only tax policy can respond.",
+      "Supporting output may worsen inflation; fighting inflation may deepen the output loss.",
+      "Monetary and fiscal policy have identical effects on short-run aggregate supply."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "stabilization-policy",
+    "pool": "boss_medium",
+    "q": "The economy is near potential output, yet fiscal and monetary policy both become strongly expansionary. What is the main risk?",
+    "correctAnswer": "Aggregate demand may overshoot capacity and increase inflation.",
+    "distractors": [
+      "Aggregate demand must fall because the policies cancel each other.",
+      "Long-run aggregate supply immediately shifts left.",
+      "Crowding out guarantees that output and prices do not change."
+    ],
+    "primarySkill": "policy_mix_overheating_risk",
+    "repairSkill": "policy_mix_overheating_risk",
+    "commonError": "Assuming two expansionary policies cannot create excessive aggregate demand.",
+    "feedback": "When both policies push spending upward near capacity, the combined demand increase can create an inflationary gap.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-STAB-B2-002",
+    "options": [
+      "Aggregate demand must fall because the policies cancel each other.",
+      "Long-run aggregate supply immediately shifts left.",
+      "Crowding out guarantees that output and prices do not change.",
+      "Aggregate demand may overshoot capacity and increase inflation."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "stabilization-policy",
+    "pool": "boss_medium",
+    "q": "The central bank tightens monetary policy while the government enacts fiscal expansion. What can be concluded about aggregate demand?",
+    "correctAnswer": "The net effect is uncertain because the policies work in opposite directions.",
+    "distractors": [
+      "Aggregate demand must rise because fiscal policy always dominates.",
+      "Aggregate demand must fall because monetary policy always dominates.",
+      "Both policies shift aggregate demand to the right."
+    ],
+    "primarySkill": "opposing_policy_mix",
+    "repairSkill": "opposing_policy_mix",
+    "commonError": "Declaring a definite outcome without comparing the strength of opposing policy impulses.",
+    "feedback": "Fiscal expansion pushes aggregate demand right, while monetary contraction pushes it left; the net change depends on magnitudes.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-STAB-B2-003",
+    "options": [
+      "The net effect is uncertain because the policies work in opposite directions.",
+      "Aggregate demand must rise because fiscal policy always dominates.",
+      "Aggregate demand must fall because monetary policy always dominates.",
+      "Both policies shift aggregate demand to the right."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "hard",
+    "q": "Money supply grows 9 percent, velocity falls 2 percent, and real output grows 3 percent. Using the growth-rate form of MV = PY, what inflation rate is implied?",
+    "correctAnswer": "Approximately 4 percent.",
+    "distractors": [
+      "Approximately 2 percent.",
+      "Approximately 8 percent.",
+      "Approximately 14 percent."
+    ],
+    "primarySkill": "quantity_equation_with_velocity_change",
+    "repairSkill": "quantity_equation_with_velocity_change",
+    "commonError": "Ignoring velocity growth or adding real-output growth instead of subtracting it.",
+    "feedback": "Inflation is approximately money growth plus velocity growth minus real-output growth: 9 + (-2) - 3 = 4 percent.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-H-001",
+    "options": [
+      "Approximately 2 percent.",
+      "Approximately 4 percent.",
+      "Approximately 8 percent.",
+      "Approximately 14 percent."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "hard",
+    "q": "The money supply rises once by 10 percent while velocity and real output remain fixed. What does the quantity theory predict?",
+    "correctAnswer": "The price level rises once; continued inflation needs continued money growth.",
+    "distractors": [
+      "The inflation rate remains 10 percent every year even if money stops growing.",
+      "Real output rises permanently by 10 percent with no price change.",
+      "Velocity must fall by 10 percent to preserve the equation."
+    ],
+    "primarySkill": "price_level_change_vs_inflation",
+    "repairSkill": "price_level_change_vs_inflation",
+    "commonError": "Confusing a one-time increase in the price level with a permanently higher inflation rate.",
+    "feedback": "With velocity and real output fixed, a one-time money increase produces a one-time proportional price-level increase.",
+    "type": "analysis",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-H-002",
+    "options": [
+      "The inflation rate remains 10 percent every year even if money stops growing.",
+      "Real output rises permanently by 10 percent with no price change.",
+      "The price level rises once; continued inflation needs continued money growth.",
+      "Velocity must fall by 10 percent to preserve the equation."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "boss_easy",
+    "q": "In the equation MV = PY, what does velocity measure?",
+    "correctAnswer": "The average turnover of money in purchases of final output.",
+    "distractors": [
+      "The percentage rate at which the overall price level changes.",
+      "The amount of real output produced by each unit of labor.",
+      "The interest rate the central bank pays on reserve balances."
+    ],
+    "primarySkill": "velocity_definition",
+    "repairSkill": "velocity_definition",
+    "commonError": "Confusing velocity with inflation, productivity, or an interest rate.",
+    "feedback": "Velocity links the money stock to nominal spending by measuring the average turnover of money.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-B1-001",
+    "options": [
+      "The percentage rate at which the overall price level changes.",
+      "The amount of real output produced by each unit of labor.",
+      "The interest rate the central bank pays on reserve balances.",
+      "The average turnover of money in purchases of final output."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "boss_easy",
+    "q": "Money grows 10 percent, real output grows 4 percent, and velocity is stable. What inflation rate is predicted?",
+    "correctAnswer": "Approximately 6 percent.",
+    "distractors": [
+      "Approximately 4 percent.",
+      "Approximately 10 percent.",
+      "Approximately 14 percent."
+    ],
+    "primarySkill": "basic_quantity_growth_calculation",
+    "repairSkill": "basic_quantity_growth_calculation",
+    "commonError": "Failing to subtract real-output growth from money growth.",
+    "feedback": "With stable velocity, inflation is approximately money growth minus real-output growth: 10 - 4 = 6 percent.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-B1-002",
+    "options": [
+      "Approximately 6 percent.",
+      "Approximately 4 percent.",
+      "Approximately 10 percent.",
+      "Approximately 14 percent."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "boss_easy",
+    "q": "If money supply and velocity are unchanged while real output rises, what must happen to the price level in MV = PY?",
+    "correctAnswer": "The price level falls.",
+    "distractors": [
+      "The price level rises.",
+      "The price level stays fixed by definition.",
+      "Nominal GDP doubles."
+    ],
+    "primarySkill": "quantity_equation_output_price_tradeoff",
+    "repairSkill": "quantity_equation_output_price_tradeoff",
+    "commonError": "Assuming higher real output always raises the price level when nominal spending is fixed.",
+    "feedback": "If MV is unchanged and Y rises, P must fall so that PY continues to equal nominal spending.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-B1-003",
+    "options": [
+      "The price level rises.",
+      "The price level falls.",
+      "The price level stays fixed by definition.",
+      "Nominal GDP doubles."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "boss_hard",
+    "q": "Money supply grows 12 percent, velocity falls 2 percent, and real output grows 3 percent. What inflation rate follows from the quantity equation?",
+    "correctAnswer": "Approximately 7 percent.",
+    "distractors": [
+      "Approximately 3 percent.",
+      "Approximately 11 percent.",
+      "Approximately 17 percent."
+    ],
+    "primarySkill": "advanced_quantity_growth_calculation",
+    "repairSkill": "advanced_quantity_growth_calculation",
+    "commonError": "Adding all growth rates or ignoring the decline in velocity.",
+    "feedback": "Inflation is 12 + (-2) - 3 = 7 percent.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-B3-001",
+    "options": [
+      "Approximately 3 percent.",
+      "Approximately 11 percent.",
+      "Approximately 7 percent.",
+      "Approximately 17 percent."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "boss_hard",
+    "q": "Money supply grows 5 percent and velocity grows 1 percent. What is the implied growth rate of nominal GDP?",
+    "correctAnswer": "Approximately 6 percent.",
+    "distractors": [
+      "Approximately 4 percent.",
+      "Approximately 5 percent.",
+      "Approximately 10 percent."
+    ],
+    "primarySkill": "nominal_gdp_growth_from_mv",
+    "repairSkill": "nominal_gdp_growth_from_mv",
+    "commonError": "Subtracting velocity growth from money growth when calculating nominal-spending growth.",
+    "feedback": "Because MV equals nominal GDP, its growth is approximately money growth plus velocity growth: 5 + 1 = 6 percent.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-B3-002",
+    "options": [
+      "Approximately 4 percent.",
+      "Approximately 5 percent.",
+      "Approximately 10 percent.",
+      "Approximately 6 percent."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "quantity-theory-of-money",
+    "pool": "boss_hard",
+    "q": "A student claims that faster money growth can permanently raise real output at the same rate. What is the best long-run correction?",
+    "correctAnswer": "In the long run, sustained money growth mainly raises inflation, not real output.",
+    "distractors": [
+      "Sustained money growth permanently raises real output but never prices.",
+      "Money growth has no effect on either nominal or real variables.",
+      "Velocity always adjusts to eliminate every effect of money growth."
+    ],
+    "primarySkill": "quantity_theory_long_run_neutrality",
+    "repairSkill": "quantity_theory_long_run_neutrality",
+    "commonError": "Extending short-run output effects into a permanent long-run relationship.",
+    "feedback": "In the long run, real output is determined mainly by real factors, so sustained excess money growth appears largely as inflation.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-QTM-B3-003",
+    "options": [
+      "In the long run, sustained money growth mainly raises inflation, not real output.",
+      "Sustained money growth permanently raises real output but never prices.",
+      "Money growth has no effect on either nominal or real variables.",
+      "Velocity always adjusts to eliminate every effect of money growth."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "unemployment-measurement",
+    "pool": "boss_easy",
+    "q": "A worker has a part-time job but is actively searching for full-time work. How is the worker classified in official labor statistics?",
+    "correctAnswer": "Employed, because the worker has a paid job.",
+    "distractors": [
+      "Unemployed, because the worker wants more hours.",
+      "Outside the labor force, because the job is part time.",
+      "Discouraged, because the worker is searching for another job."
+    ],
+    "primarySkill": "underemployment_classification",
+    "repairSkill": "underemployment_classification",
+    "commonError": "Classifying an underemployed worker as unemployed.",
+    "feedback": "Official employment status is based on having work, not on whether the worker wants additional hours.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-UNEM-B1-001",
+    "options": [
+      "Unemployed, because the worker wants more hours.",
+      "Employed, because the worker has a paid job.",
+      "Outside the labor force, because the job is part time.",
+      "Discouraged, because the worker is searching for another job."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "unemployment-measurement",
+    "pool": "boss_easy",
+    "q": "A jobless adult is available to work but has not searched during the past four weeks. How is this person usually classified?",
+    "correctAnswer": "Outside the labor force.",
+    "distractors": [
+      "Unemployed.",
+      "Employed.",
+      "Frictionally employed."
+    ],
+    "primarySkill": "active_search_requirement",
+    "repairSkill": "active_search_requirement",
+    "commonError": "Ignoring the active-search requirement for official unemployment.",
+    "feedback": "A jobless person generally must be available and actively searching to be counted as unemployed.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-UNEM-B1-002",
+    "options": [
+      "Unemployed.",
+      "Employed.",
+      "Outside the labor force.",
+      "Frictionally employed."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "unemployment-measurement",
+    "pool": "boss_easy",
+    "q": "Which equation defines the labor force?",
+    "correctAnswer": "Labor force = employed people + unemployed people.",
+    "distractors": [
+      "Labor force = population + unemployed people.",
+      "Labor force = employed people - discouraged workers.",
+      "Labor force = working-age population - employed people."
+    ],
+    "primarySkill": "labor_force_definition",
+    "repairSkill": "labor_force_definition",
+    "commonError": "Including everyone in the population or excluding officially unemployed workers.",
+    "feedback": "The labor force contains people who are employed plus people who are jobless and actively seeking work.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-UNEM-B1-003",
+    "options": [
+      "Labor force = population + unemployed people.",
+      "Labor force = employed people - discouraged workers.",
+      "Labor force = working-age population - employed people.",
+      "Labor force = employed people + unemployed people."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "unemployment-measurement",
+    "pool": "boss_medium",
+    "q": "A discouraged worker stops searching for a job while no one finds employment. What can happen to the official unemployment rate?",
+    "correctAnswer": "It can fall because the worker leaves unemployment and the labor force.",
+    "distractors": [
+      "It must rise because employment did not increase.",
+      "It stays unchanged because discouraged workers remain unemployed.",
+      "It becomes zero because the labor force shrinks."
+    ],
+    "primarySkill": "discouraged_worker_rate_effect",
+    "repairSkill": "discouraged_worker_rate_effect",
+    "commonError": "Assuming the unemployment rate can fall only when employment rises.",
+    "feedback": "When a discouraged worker exits the labor force, both the number unemployed and the denominator fall, which can lower the rate.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-UNEM-B2-001",
+    "options": [
+      "It can fall because the worker leaves unemployment and the labor force.",
+      "It must rise because employment did not increase.",
+      "It stays unchanged because discouraged workers remain unemployed.",
+      "It becomes zero because the labor force shrinks."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "unemployment-measurement",
+    "pool": "boss_medium",
+    "q": "An economy has 900 employed people, 100 unemployed people, and 200 adults outside the labor force. What are the unemployment and labor-force participation rates?",
+    "correctAnswer": "The unemployment rate is 10 percent and participation is about 83.3 percent.",
+    "distractors": [
+      "The unemployment rate is 8.3 percent and participation is 75 percent.",
+      "The unemployment rate is 10 percent and participation is 100 percent.",
+      "The unemployment rate is 12 percent and participation is about 66.7 percent."
+    ],
+    "primarySkill": "combined_unemployment_participation_calculation",
+    "repairSkill": "combined_unemployment_participation_calculation",
+    "commonError": "Using the adult population as the unemployment-rate denominator or omitting unemployed workers from participation.",
+    "feedback": "The labor force is 1,000, so unemployment is 100/1,000 = 10 percent; participation is 1,000/1,200 = 83.3 percent.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-UNEM-B2-002",
+    "options": [
+      "The unemployment rate is 8.3 percent and participation is 75 percent.",
+      "The unemployment rate is 10 percent and participation is about 83.3 percent.",
+      "The unemployment rate is 10 percent and participation is 100 percent.",
+      "The unemployment rate is 12 percent and participation is about 66.7 percent."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "unemployment-measurement",
+    "pool": "boss_medium",
+    "q": "An employed worker loses a job and immediately begins an active search. What happens initially?",
+    "correctAnswer": "Employment falls, unemployment rises, and the labor force is unchanged.",
+    "distractors": [
+      "Employment and labor force both rise as the search begins.",
+      "Unemployment falls because active search counts as employment.",
+      "The worker exits the labor force despite beginning a search."
+    ],
+    "primarySkill": "employment_to_unemployment_flow",
+    "repairSkill": "employment_to_unemployment_flow",
+    "commonError": "Treating job loss with active search as labor-force exit.",
+    "feedback": "The person moves from employed to unemployed but remains in the labor force, raising the unemployment rate.",
+    "type": "checkpoint",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S4-UNEM-B2-003",
+    "options": [
+      "Employment and labor force both rise as the search begins.",
+      "Unemployment falls because active search counts as employment.",
+      "Employment falls, unemployment rises, and the labor force is unchanged.",
+      "The worker exits the labor force despite beginning a search."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "integrated-economic-analysis",
+    "pool": "elite",
+    "q": "A drought shifts the supply of staple food left, while a binding price ceiling remains fixed below the new equilibrium price. Which combined result is most likely?",
+    "correctAnswer": "The shortage grows and nonprice rationing becomes more important.",
+    "distractors": [
+      "The shortage disappears because the ceiling protects buyers.",
+      "Quantity supplied rises because the legal price is unchanged.",
+      "The market reaches the new equilibrium without any rationing."
+    ],
+    "primarySkill": "supply_shock_with_price_ceiling",
+    "repairSkill": "supply_shock_with_price_ceiling",
+    "commonError": "Analyzing the supply shock without recognizing the binding price ceiling and hidden rationing costs.",
+    "feedback": "The leftward supply shift widens the gap between quantity demanded and quantity supplied at the controlled price.",
+    "type": "multi-step",
+    "secondarySkills": [
+      "supply_shift",
+      "binding_price_ceiling",
+      "nonprice_rationing"
+    ],
+    "canonicalId": "P52B-S4-IEA-EL-001",
+    "options": [
+      "The shortage disappears because the ceiling protects buyers.",
+      "Quantity supplied rises because the legal price is unchanged.",
+      "The market reaches the new equilibrium without any rationing.",
+      "The shortage grows and nonprice rationing becomes more important."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "integrated-economic-analysis",
+    "pool": "elite",
+    "q": "The government cuts taxes while the central bank raises interest rates. What is the strongest conclusion about aggregate demand?",
+    "correctAnswer": "The net shift is uncertain because the policies oppose each other.",
+    "distractors": [
+      "Aggregate demand must rise because tax cuts always dominate.",
+      "Aggregate demand must fall because interest rates always dominate.",
+      "Both policies reduce consumption and investment."
+    ],
+    "primarySkill": "opposing_macro_policy_analysis",
+    "repairSkill": "opposing_macro_policy_analysis",
+    "commonError": "Declaring a definite aggregate-demand result without comparing opposing policy effects.",
+    "feedback": "The tax cut supports consumption, while higher interest rates restrain investment and durable spending; relative magnitudes determine the net shift.",
+    "type": "multi-step",
+    "secondarySkills": [
+      "fiscal_policy",
+      "monetary_policy_transmission",
+      "aggregate_demand"
+    ],
+    "canonicalId": "P52B-S4-IEA-EL-002",
+    "options": [
+      "The net shift is uncertain because the policies oppose each other.",
+      "Aggregate demand must rise because tax cuts always dominate.",
+      "Aggregate demand must fall because interest rates always dominate.",
+      "Both policies reduce consumption and investment."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "integrated-economic-analysis",
+    "pool": "legendary",
+    "q": "Nominal GDP rises 8 percent while the GDP deflator rises 5 percent. At the same time, unemployment falls. What is the best interpretation?",
+    "correctAnswer": "Real output rose about 3 percent, prices increased, and the labor market strengthened.",
+    "distractors": [
+      "Real output grew 13 percent because nominal and price growth should be added.",
+      "All nominal GDP growth was inflation, so real output was unchanged.",
+      "The unemployment decline proves the price level fell."
+    ],
+    "primarySkill": "nominal_real_labor_market_synthesis",
+    "repairSkill": "nominal_real_labor_market_synthesis",
+    "commonError": "Treating nominal GDP growth as real growth or ignoring the price index.",
+    "feedback": "A rough real-growth estimate subtracts inflation from nominal growth: 8 - 5 = 3 percent, consistent with improving employment conditions.",
+    "type": "multi-step",
+    "secondarySkills": [
+      "real_vs_nominal_gdp",
+      "gdp_deflator",
+      "unemployment_measurement"
+    ],
+    "canonicalId": "P52B-S4-IEA-L-001",
+    "options": [
+      "Real output grew 13 percent because nominal and price growth should be added.",
+      "Real output rose about 3 percent, prices increased, and the labor market strengthened.",
+      "All nominal GDP growth was inflation, so real output was unchanged.",
+      "The unemployment decline proves the price level fell."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "integrated-economic-analysis",
+    "pool": "legendary",
+    "q": "Productivity improves and shifts long-run aggregate supply right while a separate fiscal expansion shifts aggregate demand right. What can be predicted with confidence?",
+    "correctAnswer": "Real output rises, but the price-level effect is ambiguous.",
+    "distractors": [
+      "The price level and real output both must rise.",
+      "The price level and real output both must fall.",
+      "Real output is unchanged because supply and demand shifts cancel."
+    ],
+    "primarySkill": "productivity_and_demand_policy_synthesis",
+    "repairSkill": "productivity_and_demand_policy_synthesis",
+    "commonError": "Assuming two rightward shifts must move both equilibrium variables in the same direction.",
+    "feedback": "Both shifts raise equilibrium output, but stronger supply lowers the price level while stronger demand raises it.",
+    "type": "multi-step",
+    "secondarySkills": [
+      "productivity_growth",
+      "aggregate_demand",
+      "long_run_aggregate_supply"
+    ],
+    "canonicalId": "P52B-S4-IEA-L-002",
+    "options": [
+      "The price level and real output both must rise.",
+      "The price level and real output both must fall.",
+      "Real output rises, but the price-level effect is ambiguous.",
+      "Real output is unchanged because supply and demand shifts cancel."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "integrated-economic-analysis",
+    "pool": "bridge",
+    "q": "A policy proposal claims it will “improve fairness” and also predicts that employment will rise. What should an analyst do first?",
+    "correctAnswer": "Separate the fairness judgment from the testable employment prediction.",
+    "distractors": [
+      "Treat both statements as positive because they concern policy.",
+      "Reject both statements because models cannot study policy.",
+      "Combine both statements into one numerical forecast."
+    ],
+    "primarySkill": "positive_normative_policy_bridge",
+    "repairSkill": "positive_normative_policy_bridge",
+    "commonError": "Mixing a value judgment with a testable economic prediction.",
+    "feedback": "Fairness is a normative criterion, while the employment effect is a positive claim that can be tested with evidence.",
+    "type": "bridge",
+    "secondarySkills": [
+      "positive_vs_normative",
+      "policy_analysis"
+    ],
+    "canonicalId": "P52B-S4-IEA-BR-001",
+    "options": [
+      "Treat both statements as positive because they concern policy.",
+      "Reject both statements because models cannot study policy.",
+      "Combine both statements into one numerical forecast.",
+      "Separate the fairness judgment from the testable employment prediction."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "integrated-economic-analysis",
+    "pool": "bridge",
+    "q": "A worker receives a 4 percent nominal wage increase while consumer prices rise 6 percent. What bridge calculation is needed before judging living standards?",
+    "correctAnswer": "Adjust the wage for inflation; the real wage fell about 2 percent.",
+    "distractors": [
+      "Add wage and price growth to obtain a 10 percent real gain.",
+      "Use the unemployment rate as the wage deflator.",
+      "Compare the nominal wage only with nominal GDP."
+    ],
+    "primarySkill": "nominal_to_real_wage_bridge",
+    "repairSkill": "nominal_to_real_wage_bridge",
+    "commonError": "Evaluating purchasing power from nominal wages without adjusting for inflation.",
+    "feedback": "Approximate real wage growth equals nominal wage growth minus inflation: 4 - 6 = -2 percent.",
+    "type": "bridge",
+    "secondarySkills": [
+      "real_wages",
+      "inflation_adjustment",
+      "living_standards"
+    ],
+    "canonicalId": "P52B-S4-IEA-BR-002",
+    "options": [
+      "Adjust the wage for inflation; the real wage fell about 2 percent.",
+      "Add wage and price growth to obtain a 10 percent real gain.",
+      "Use the unemployment rate as the wage deflator.",
+      "Compare the nominal wage only with nominal GDP."
+    ],
+    "a": 0
+  }
+]

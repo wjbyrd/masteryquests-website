@@ -1,0 +1,45 @@
+{
+  "phase": "5.2b-stage3",
+  "targetConcepts": [
+    "demand",
+    "macroeconomic-equilibrium-and-shocks",
+    "money-functions-and-measures",
+    "monetary-policy-tools",
+    "liquidity-preference-and-money-market",
+    "gdp-measurement",
+    "market-equilibrium"
+  ],
+  "newQuestions": 70,
+  "baselineCanonicalQuestions": 2915,
+  "finalCanonicalQuestions": 2985,
+  "answerHashVerification": {
+    "passed": 70,
+    "failed": 0
+  },
+  "conflictingCanonicalIdDuplicates": 0,
+  "newCanonicalIdDuplicates": 0,
+  "newExactStemDuplicates": 0,
+  "newNearDuplicatesAtOrAbove0_88": 0,
+  "newVsExistingNearDuplicatesAtOrAbove0_88": 0,
+  "answerLengthBiasWarnings": 0,
+  "answerPositionDistribution": {
+    "0": 18,
+    "1": 18,
+    "2": 17,
+    "3": 17
+  },
+  "compositionValidation": "8/8 PASS",
+  "legacyRecipeRegression": "8/8 PASS",
+  "poolSpecificFloorValidation": "7/7 PASS",
+  "coverageStatusCounts": {
+    "ready-focused": 18,
+    "best-paired": 28,
+    "supplemental-ready": 11,
+    "insufficient": 7
+  },
+  "remainingInsufficientConcepts": 7,
+  "protectedFilesUnchanged": true,
+  "questionAssetsUnchanged": true,
+  "questionAssetCount": 43,
+  "librarySha256": "bfb608616b6ec72840c0d6dd1d3ed21a1f5310e3146fced242feb5b2403de0b3"
+}

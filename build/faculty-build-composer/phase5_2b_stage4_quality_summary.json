@@ -1,0 +1,44 @@
+{
+  "phase": "5.2b-stage4",
+  "targetConcepts": [
+    "monetary-policy-transmission",
+    "fiscal-multipliers-and-crowding-out",
+    "production-possibilities-frontier",
+    "stabilization-policy",
+    "quantity-theory-of-money",
+    "unemployment-measurement",
+    "integrated-economic-analysis"
+  ],
+  "newQuestions": 45,
+  "baselineCanonicalQuestions": 2985,
+  "finalCanonicalQuestions": 3030,
+  "answerHashVerification": {
+    "passed": 45,
+    "failed": 0
+  },
+  "conflictingCanonicalIdDuplicates": 0,
+  "newCanonicalIdDuplicates": 0,
+  "newExactStemDuplicates": 0,
+  "newNearDuplicatesAtOrAbove0_88": 0,
+  "newVsExistingNearDuplicatesAtOrAbove0_88": 0,
+  "answerLengthBiasWarnings": 0,
+  "answerPositionDistribution": {
+    "0": 12,
+    "1": 11,
+    "2": 11,
+    "3": 11
+  },
+  "compositionValidation": "8/8 PASS",
+  "legacyRecipeRegression": "8/8 PASS",
+  "poolSpecificFloorValidation": "7/7 PASS",
+  "coverageStatusCounts": {
+    "ready-focused": 24,
+    "best-paired": 28,
+    "supplemental-ready": 12
+  },
+  "remainingInsufficientConcepts": 0,
+  "protectedFilesUnchanged": true,
+  "questionAssetsUnchanged": true,
+  "questionAssetCount": 43,
+  "librarySha256": "378bd3539034156feca7bfd34e9622cd56732e4f5ca1a76e2c11a45a52712374"
+}

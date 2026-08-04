@@ -1,0 +1,5581 @@
+{
+  "concepts": [
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 11,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 1,
+      "canonicalConceptId": "scarcity-and-tradeoffs",
+      "description": "Analyze scarcity, tradeoffs, efficiency, and equity.",
+      "excludedNeighboringSkills": [
+        "Assigned to opportunity-cost, not this module.",
+        "Assigned to marginal-analysis, not this module.",
+        "Assigned to incentives, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "core_policy_tradeoffs",
+        "core_scarcity",
+        "core_tradeoffs",
+        "efficiency_definition",
+        "efficiency_equity_policy_tradeoff",
+        "efficiency_equity_tradeoff",
+        "efficiency_vs_equality",
+        "equality_definition",
+        "equality_vs_efficiency",
+        "labor_surplus",
+        "minimum_wage",
+        "opportunity_cost",
+        "policy_tradeoff_analysis",
+        "positive_vs_normative",
+        "scarcity",
+        "scarcity_definition",
+        "tradeoff_identification"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 4,
+        "hard": 9,
+        "legendary": 9,
+        "medium": 9,
+        "unknown": 8
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 3,
+        "repairSeed": 3
+      },
+      "relatedConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 16,
+        "mainWithUsableSkill": 40
+      },
+      "sourceChapters": [
+        1
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "LO1.1"
+      ],
+      "status": "active",
+      "title": "Scarcity and Tradeoffs"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 18,
+        "mainWithUsableSkill": 43
+      },
+      "calculationCoverage": 13,
+      "canonicalConceptId": "opportunity-cost",
+      "description": "Identify and calculate the value of the next-best alternative.",
+      "excludedNeighboringSkills": [
+        "Assigned to production-possibilities-frontier, not this module.",
+        "Assigned to marginal-analysis, not this module.",
+        "Assigned to scarcity-and-tradeoffs, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "core_opportunity_cost",
+        "forgone_wages",
+        "full_cost_opportunity_cost_analysis",
+        "marginal_benefit_cost_decision",
+        "next_best_alternative",
+        "nonprice_rationing",
+        "opportunity_cost_calculation",
+        "opportunity_cost_definition",
+        "opportunity_cost_full_cost",
+        "opportunity_cost_identification",
+        "opportunity_cost_net_benefit",
+        "shortage",
+        "tradeoff_identification"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [
+        "scarcity-and-tradeoffs"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "elite": 4,
+        "hard": 10,
+        "legendary": 9,
+        "medium": 10,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 10,
+        "bridge": 2,
+        "calculation": 2,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 3,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [
+        "production-possibilities-frontier",
+        "marginal-analysis",
+        "scarcity-and-tradeoffs"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 15,
+        "mainWithUsableSkill": 43
+      },
+      "sourceChapters": [
+        1,
+        2
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "LO1.2"
+      ],
+      "status": "active",
+      "title": "Opportunity Cost"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 13,
+        "mainWithUsableSkill": 44
+      },
+      "calculationCoverage": 7,
+      "canonicalConceptId": "marginal-analysis",
+      "description": "Use marginal benefits and costs while avoiding sunk-cost reasoning.",
+      "excludedNeighboringSkills": [
+        "Assigned to scarcity-and-tradeoffs, not this module.",
+        "Assigned to opportunity-cost, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "basic_net_benefit",
+        "core_marginal",
+        "marginal_benefit_cost_decision",
+        "marginal_benefit_cost_rule",
+        "marginal_reasoning_identification",
+        "sunk_cost_avoidance",
+        "sunk_cost_trap"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [
+        "opportunity-cost"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 12,
+        "elite": 4,
+        "hard": 10,
+        "legendary": 9,
+        "medium": 9,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 11,
+        "bridge": 2,
+        "calculation": 2,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 3,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 27,
+        "mainWithUsableSkill": 44
+      },
+      "sourceChapters": [
+        1
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "LO1.3"
+      ],
+      "status": "active",
+      "title": "Marginal Analysis"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 18
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "incentives",
+      "description": "Predict behavioral responses and unintended consequences created by incentives.",
+      "excludedNeighboringSkills": [
+        "Assigned to scarcity-and-tradeoffs, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "behavior_response_to_incentives",
+        "behavioral_response",
+        "core_incentives",
+        "heterogeneous_incentive_response",
+        "incentive_definition",
+        "incentive_design_tradeoff",
+        "incentive_effect_analysis",
+        "incentive_identification",
+        "incentives_policy_evaluation",
+        "incentives_secondary_effects",
+        "incentives_unintended_consequences",
+        "labor_demand",
+        "law_of_demand",
+        "marginal_behavior",
+        "marginal_response",
+        "minimum_wage_tradeoff",
+        "opportunity_cost_identification",
+        "policy_design",
+        "unintended_consequences"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 0,
+        "hard": 2,
+        "legendary": 9,
+        "medium": 2,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 6,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [
+        "scarcity-and-tradeoffs"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 18
+      },
+      "sourceChapters": [
+        1,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO1.4"
+      ],
+      "status": "active",
+      "title": "Incentives"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 1
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "gains-from-trade",
+      "description": "Explain mutual gains, specialization, and exchange.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "core_trade",
+        "gains_from_trade",
+        "specialization"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 1,
+        "elite": 0,
+        "hard": 0,
+        "legendary": 0,
+        "medium": 0,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 1,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 1
+      },
+      "sourceChapters": [
+        1
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO1.5"
+      ],
+      "status": "active",
+      "title": "Gains from Trade"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 12
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "market-failures",
+      "description": "Identify externalities, public goods, market power, and corrective policy logic.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "core_market_failure",
+        "core_markets",
+        "corrective_tax_externality_logic",
+        "externality_identification",
+        "externality_social_cost",
+        "government_response_to_market_failure",
+        "market_allocation_definition",
+        "market_failure_definition",
+        "market_failure_identification",
+        "market_failure_types",
+        "market_power_definition",
+        "market_power_effect",
+        "price_signal_allocation",
+        "public_good_definition",
+        "tax_quantity_effect"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "elite": 2,
+        "hard": 0,
+        "legendary": 0,
+        "medium": 2,
+        "unknown": 2
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 7,
+        "repair": 0,
+        "repairSeed": 2
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 12
+      },
+      "sourceChapters": [
+        1,
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO1.6"
+      ],
+      "status": "active",
+      "title": "Market Failures"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 11
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "models-and-assumptions",
+      "description": "Evaluate the purpose, assumptions, simplifications, and limits of economic models.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "assumptions",
+        "assumptions_role",
+        "circular_flow_components",
+        "core_models",
+        "economic_model_reasoning",
+        "model_application_limits",
+        "model_assumption_evaluation",
+        "model_purpose",
+        "model_simplification",
+        "model_simplification_value",
+        "nonprice_rationing",
+        "ppf",
+        "price_ceiling",
+        "scarcity",
+        "simplification"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 2,
+        "elite": 0,
+        "hard": 1,
+        "legendary": 7,
+        "medium": 1,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 3,
+        "main": 4,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 11
+      },
+      "sourceChapters": [
+        1,
+        2
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO2.1"
+      ],
+      "status": "active",
+      "title": "Models and Assumptions"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 53,
+        "mainWithUsableSkill": 62
+      },
+      "calculationCoverage": 15,
+      "canonicalConceptId": "production-possibilities-frontier",
+      "description": "Interpret PPF points, slopes, shifts, efficiency, growth, and opportunity cost.",
+      "excludedNeighboringSkills": [
+        "Assigned to opportunity-cost, not this module."
+      ],
+      "graphCoverage": 23,
+      "includedSkills": [
+        "attainable_unattainable",
+        "attainable_vs_unattainable",
+        "circular_flow_components",
+        "circular_flow_income_factor_market",
+        "circular_flow_roles",
+        "constant_vs_increasing_opportunity_cost",
+        "current_vs_future_consumption_ppf",
+        "efficiency_vs_growth",
+        "factor_market",
+        "firms_role_circular_flow",
+        "households_firms",
+        "households_firms_roles",
+        "human_capital",
+        "idle_resources",
+        "increasing_opportunity_cost",
+        "movement_inside_to_frontier",
+        "movement_to_ppf_vs_ppf_shift",
+        "opportunity_cost",
+        "opportunity_cost_calculation",
+        "opportunity_cost_definition",
+        "ppf_coordinate_comparison",
+        "ppf_coordinate_reading",
+        "ppf_definition",
+        "ppf_efficiency_status",
+        "ppf_efficiency_vs_growth_sequence",
+        "ppf_growth",
+        "ppf_growth_source",
+        "ppf_inward_shift",
+        "ppf_one_good_technology_change",
+        "ppf_opportunity_cost",
+        "ppf_opportunity_cost_per_unit",
+        "ppf_shape",
+        "ppf_shape_interpretation",
+        "ppf_shift",
+        "ppf_shift_growth",
+        "ppf_tradeoff",
+        "productive_capacity",
+        "resource_specialization",
+        "reverse_ppf_opportunity_cost",
+        "technology_growth",
+        "tradeoff_analysis"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "opportunity-cost"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 12,
+        "elite": 5,
+        "hard": 15,
+        "legendary": 17,
+        "medium": 13,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 8,
+        "calculation": 11,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 14,
+        "legendaryBoss": 3,
+        "main": 26,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "opportunity-cost"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 19,
+        "mainWithUsableSkill": 62
+      },
+      "sourceChapters": [
+        2
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO2.2"
+      ],
+      "status": "active",
+      "title": "Production Possibilities Frontier"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 6
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "micro-versus-macro",
+      "description": "Distinguish microeconomic and macroeconomic questions.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "core_micro_macro",
+        "macroeconomics_definition",
+        "micro_vs_macro",
+        "microeconomics_definition",
+        "policy_topic_classification"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 3,
+        "elite": 0,
+        "hard": 1,
+        "legendary": 0,
+        "medium": 2,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 6,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 6
+      },
+      "sourceChapters": [
+        2
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO2.3"
+      ],
+      "status": "active",
+      "title": "Microeconomics versus Macroeconomics"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 14,
+        "mainWithUsableSkill": 20
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "positive-versus-normative-analysis",
+      "description": "Distinguish testable claims from value judgments.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "efficiency_equity_tradeoff",
+        "normative_policy_reasoning",
+        "normative_statement_definition",
+        "normative_value_judgment",
+        "policy_analysis",
+        "policy_statement_classification",
+        "positive_normative_comparison",
+        "positive_normative_distinction",
+        "positive_normative_pairing",
+        "positive_statement_definition",
+        "positive_statement_identification",
+        "positive_vs_normative",
+        "price_ceiling",
+        "shortage",
+        "tax_policy",
+        "testability",
+        "testable_claims"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 1,
+        "hard": 2,
+        "legendary": 9,
+        "medium": 2,
+        "unknown": 4
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 1,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 7,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 14,
+        "mainWithUsableSkill": 20
+      },
+      "sourceChapters": [
+        2,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO2.4"
+      ],
+      "status": "active",
+      "title": "Positive versus Normative Analysis"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 1
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "economist-policy-role",
+      "description": "Analyze the economist’s role in policy advice.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "core_policy",
+        "economist_policy_role",
+        "economist_roles",
+        "positive_vs_normative"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 1,
+        "elite": 0,
+        "hard": 0,
+        "legendary": 0,
+        "medium": 0,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 1,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 1
+      },
+      "sourceChapters": [
+        2
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO2.5"
+      ],
+      "status": "active",
+      "title": "Economists and Policy"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 5
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "competitive-markets",
+      "description": "Identify competitive markets and price-taking behavior.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "competitive_market_definition",
+        "core_competitive_market",
+        "market_power_definition",
+        "price_taker_definition"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 2,
+        "elite": 0,
+        "hard": 0,
+        "legendary": 0,
+        "medium": 3,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 2,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 5
+      },
+      "sourceChapters": [
+        1,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO4.1"
+      ],
+      "status": "active",
+      "title": "Competitive Markets"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 29,
+        "mainWithUsableSkill": 34
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "demand",
+      "description": "Apply the law of demand and distinguish movements from shifts and their causes.",
+      "excludedNeighboringSkills": [
+        "Assigned to supply, not this module.",
+        "Assigned to market-equilibrium, not this module."
+      ],
+      "graphCoverage": 4,
+      "includedSkills": [
+        "causal_reasoning",
+        "complement_demand_shift",
+        "complement_good_definition",
+        "demand_shift_analysis",
+        "demand_shift_direction",
+        "demand_shifters",
+        "demand_shifters_expectations",
+        "demand_shifters_income",
+        "demand_shifters_related_goods",
+        "demand_shifters_tastes",
+        "equilibrium_comparison",
+        "equilibrium_effects",
+        "law_of_demand",
+        "movement_vs_demand_shift",
+        "movement_vs_shift",
+        "normal_good_income",
+        "price_signal_allocation",
+        "related_goods",
+        "related_goods_demand",
+        "related_goods_demand_shift",
+        "substitute_good_definition",
+        "substitutes",
+        "supply_shift_equilibrium_prediction"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "competitive-markets"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "elite": 2,
+        "hard": 7,
+        "legendary": 8,
+        "medium": 9,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 6,
+        "calculation": 0,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 3,
+        "main": 21,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "supply",
+        "market-equilibrium"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 21,
+        "mainWithUsableSkill": 34
+      },
+      "sourceChapters": [
+        2,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO4.2"
+      ],
+      "status": "active",
+      "title": "Demand"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 22
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "supply",
+      "description": "Apply the law of supply and distinguish movements from shifts and their causes.",
+      "excludedNeighboringSkills": [
+        "Assigned to demand, not this module.",
+        "Assigned to market-equilibrium, not this module."
+      ],
+      "graphCoverage": 2,
+      "includedSkills": [
+        "demand_shift_equilibrium_prediction",
+        "equilibrium_comparison",
+        "equilibrium_prediction",
+        "law_of_supply",
+        "movement_vs_supply_shift",
+        "supply_shift_analysis",
+        "supply_shift_direction",
+        "supply_shift_equilibrium_prediction",
+        "supply_shifters",
+        "supply_shifters_expectations",
+        "supply_shifters_input_costs",
+        "supply_shifters_number_of_sellers",
+        "supply_shifters_technology",
+        "tax_as_supply_shifter"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "competitive-markets"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 1,
+        "hard": 5,
+        "legendary": 3,
+        "medium": 8,
+        "unknown": 8
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 4,
+        "calculation": 0,
+        "elite": 1,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 3,
+        "main": 15,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "demand",
+        "market-equilibrium"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 22
+      },
+      "sourceChapters": [
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO4.3"
+      ],
+      "status": "active",
+      "title": "Supply"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 61
+      },
+      "calculationCoverage": 4,
+      "canonicalConceptId": "market-equilibrium",
+      "description": "Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+      "excludedNeighboringSkills": [
+        "Assigned to demand, not this module.",
+        "Assigned to supply, not this module.",
+        "Assigned to price-signals, not this module.",
+        "Assigned to binding-price-ceilings, not this module.",
+        "Assigned to binding-price-floors, not this module."
+      ],
+      "graphCoverage": 17,
+      "includedSkills": [
+        "algebraic_equilibrium_price",
+        "algebraic_equilibrium_quantity",
+        "curve_pairing",
+        "demand_decrease",
+        "demand_decrease_market_effect",
+        "demand_decrease_supply_increase",
+        "demand_increase",
+        "demand_increase_market_effect",
+        "demand_increase_supply_decrease",
+        "demand_shift_equilibrium_prediction",
+        "demand_shift_equilibrium_price",
+        "double_shift_ambiguous_price",
+        "double_shift_ambiguous_quantity",
+        "equilibrium_calculation",
+        "equilibrium_comparison",
+        "equilibrium_definition",
+        "equilibrium_identification",
+        "equilibrium_prediction",
+        "expectations_and_supply_shock",
+        "graph_reading",
+        "input_costs",
+        "market_change_prediction",
+        "market_shift_analysis",
+        "multi_shift_sequence",
+        "normal_good",
+        "quantity_demanded",
+        "quantity_supplied",
+        "shortage_identification",
+        "shortage_market_adjustment",
+        "shortage_price_pressure",
+        "simultaneous_shift_comparison",
+        "simultaneous_shift_sequence",
+        "simultaneous_shifts",
+        "supply_decrease",
+        "supply_decrease_market_effect",
+        "supply_increase",
+        "supply_increase_market_effect",
+        "supply_shift_analysis",
+        "supply_shift_equilibrium_prediction",
+        "supply_shift_equilibrium_price",
+        "surplus_identification",
+        "surplus_market_adjustment",
+        "surplus_price_pressure",
+        "surplus_shortage_adjustment",
+        "surplus_shortage_calculation",
+        "surplus_shortage_identification"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 3,
+        "hard": 15,
+        "legendary": 18,
+        "medium": 20,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 6,
+        "bridge": 4,
+        "calculation": 4,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 15,
+        "legendaryBoss": 3,
+        "main": 30,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "demand",
+        "supply",
+        "price-signals",
+        "binding-price-ceilings",
+        "binding-price-floors"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 29,
+        "mainWithUsableSkill": 61
+      },
+      "sourceChapters": [
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO4.4"
+      ],
+      "status": "active",
+      "title": "Market Equilibrium"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 6
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "price-signals",
+      "description": "Explain how prices coordinate buyers, sellers, and resource allocation.",
+      "excludedNeighboringSkills": [
+        "Assigned to market-equilibrium, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "buyer_response_to_price_signal",
+        "buyer_seller_response_to_price_signal",
+        "core_price_signal",
+        "law_of_demand",
+        "law_of_supply",
+        "market_allocation_definition",
+        "market_failure_identification",
+        "price_signal_allocation",
+        "price_signal_interpretation",
+        "seller_response_to_price_signal"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "market-equilibrium"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 3,
+        "elite": 0,
+        "hard": 0,
+        "legendary": 0,
+        "medium": 3,
+        "unknown": 1
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 3,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [
+        "market-equilibrium"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 6
+      },
+      "sourceChapters": [
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO4.5"
+      ],
+      "status": "active",
+      "title": "Price Signals"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 39,
+        "mainWithUsableSkill": 49
+      },
+      "calculationCoverage": 12,
+      "canonicalConceptId": "binding-price-ceilings",
+      "description": "Distinguish binding and nonbinding ceilings and analyze shortages and rationing.",
+      "excludedNeighboringSkills": [
+        "Assigned to binding-price-floors, not this module.",
+        "Assigned to market-equilibrium, not this module."
+      ],
+      "graphCoverage": 13,
+      "includedSkills": [
+        "binding_ceiling_shortage",
+        "binding_ceiling_shortage_calculation",
+        "binding_policy",
+        "binding_price_ceiling",
+        "binding_price_control_identification",
+        "binding_price_controls",
+        "binding_price_floor",
+        "ceiling_distribution_tradeoff",
+        "ceiling_distributional_tradeoff",
+        "ceiling_nonmoney_costs_and_misallocation",
+        "ceiling_quantity_demanded",
+        "ceiling_quantity_reading",
+        "ceiling_quantity_supplied",
+        "ceiling_shortage_calculation",
+        "ceiling_shortage_effect",
+        "ceiling_shortage_rationing",
+        "ceiling_supply_response",
+        "ceiling_unintended_consequences",
+        "equilibrium",
+        "equilibrium_identification",
+        "equilibrium_price",
+        "graph_reading",
+        "identify_policy_from_outcomes",
+        "incentives",
+        "misallocation",
+        "mixed_policy_supply_ceiling",
+        "nonbinding_price_ceiling",
+        "nonmoney_rationing",
+        "nonmoney_rationing_costs",
+        "nonprice_rationing",
+        "policy_tool_distinction",
+        "price_ceiling_definition",
+        "quality_decline",
+        "quantity_demanded",
+        "quantity_supplied",
+        "rationing",
+        "rationing_mechanisms",
+        "search_costs",
+        "shortage",
+        "shortage_calculation",
+        "shortage_identification",
+        "supply_shifters",
+        "tax_wedge_identification",
+        "unintended_consequences"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "market-equilibrium"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 5,
+        "hard": 14,
+        "legendary": 12,
+        "medium": 11,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 6,
+        "bridge": 6,
+        "calculation": 6,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 9,
+        "legendaryBoss": 3,
+        "main": 20,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "binding-price-floors",
+        "market-equilibrium"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 37,
+        "mainWithUsableSkill": 49
+      },
+      "sourceChapters": [
+        1,
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO6.1"
+      ],
+      "status": "active",
+      "title": "Price Ceilings"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 32,
+        "mainWithUsableSkill": 41
+      },
+      "calculationCoverage": 11,
+      "canonicalConceptId": "binding-price-floors",
+      "description": "Distinguish binding and nonbinding floors and analyze surpluses and unintended effects.",
+      "excludedNeighboringSkills": [
+        "Assigned to binding-price-ceilings, not this module.",
+        "Assigned to market-equilibrium, not this module."
+      ],
+      "graphCoverage": 10,
+      "includedSkills": [
+        "binding_floor_surplus",
+        "binding_floor_surplus_calculation",
+        "binding_policy",
+        "binding_price_ceiling",
+        "binding_price_control_identification",
+        "binding_price_controls",
+        "binding_price_floor",
+        "equilibrium",
+        "equilibrium_identification",
+        "equilibrium_price",
+        "floor_quantity_demanded",
+        "floor_quantity_reading",
+        "floor_quantity_supplied",
+        "floor_surplus_calculation",
+        "floor_surplus_effect",
+        "floor_surplus_rationing",
+        "floor_unintended_consequences",
+        "government_purchase",
+        "graph_reading",
+        "identify_floor_from_outcomes",
+        "incentives_behavior",
+        "labor_demand_elasticity_interpretation",
+        "labor_surplus",
+        "minimum_wage",
+        "minimum_wage_surplus",
+        "minimum_wage_surplus_calculation",
+        "minimum_wage_tradeoff",
+        "nonbinding_price_floor",
+        "policy_tradeoff",
+        "price_floor_definition",
+        "price_floor_government_surplus_purchase",
+        "producer_incentives",
+        "quantity_demanded",
+        "quantity_demanded_labor",
+        "quantity_supplied",
+        "seller_competition",
+        "surplus",
+        "surplus_calculation",
+        "unemployment"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "market-equilibrium"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 3,
+        "hard": 14,
+        "legendary": 10,
+        "medium": 8,
+        "unknown": 8
+      },
+      "questionCountByRole": {
+        "boss": 6,
+        "bridge": 4,
+        "calculation": 6,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "main": 16,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "binding-price-ceilings",
+        "market-equilibrium"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 32,
+        "mainWithUsableSkill": 41
+      },
+      "sourceChapters": [
+        2,
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO6.2"
+      ],
+      "status": "active",
+      "title": "Price Floors"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 30,
+        "mainWithUsableSkill": 39
+      },
+      "calculationCoverage": 14,
+      "canonicalConceptId": "tax-wedges-and-revenue",
+      "description": "Calculate tax wedges, buyer and seller prices, quantity effects, and revenue.",
+      "excludedNeighboringSkills": [
+        "Assigned to statutory-versus-economic-tax-incidence, not this module.",
+        "Assigned to tax-incidence, not this module."
+      ],
+      "graphCoverage": 15,
+      "includedSkills": [
+        "after_tax_quantity",
+        "buyer_price",
+        "deadweight_loss_logic",
+        "elasticity_tax_revenue_quantity",
+        "government_policy_effects",
+        "graph_reading",
+        "market_size",
+        "policy_comparison_quantity_effects",
+        "pre_tax_equilibrium_identification",
+        "price_ceiling",
+        "price_paid_by_buyers",
+        "price_paid_vs_received",
+        "price_received_by_sellers",
+        "quantity_after_tax",
+        "quantity_effect",
+        "quantity_traded",
+        "seller_price",
+        "tax_deadweight_loss_logic",
+        "tax_effects",
+        "tax_incidence_definition",
+        "tax_quantity_effect",
+        "tax_quantity_reduction_calculation",
+        "tax_revenue",
+        "tax_revenue_calculation",
+        "tax_revenue_from_burden_split",
+        "tax_revenue_market_size",
+        "tax_revenue_quantity_base",
+        "tax_shifts_supply",
+        "tax_supply_shift",
+        "tax_wedge",
+        "tax_wedge_and_quantity_effect",
+        "tax_wedge_calculation",
+        "tax_wedge_effects",
+        "tax_wedge_formula",
+        "tax_wedge_identification",
+        "tax_wedge_incidence",
+        "tax_wedge_market_shrinkage_synthesis"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "market-equilibrium"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "elite": 4,
+        "hard": 10,
+        "legendary": 11,
+        "medium": 10,
+        "unknown": 4
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 8,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "main": 13,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "statutory-versus-economic-tax-incidence",
+        "tax-incidence"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 30,
+        "mainWithUsableSkill": 39
+      },
+      "sourceChapters": [
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO6.3"
+      ],
+      "status": "active",
+      "title": "Tax Wedges and Revenue"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 9,
+        "mainWithUsableSkill": 16
+      },
+      "calculationCoverage": 1,
+      "canonicalConceptId": "statutory-versus-economic-tax-incidence",
+      "description": "Distinguish legal tax assignment from economic burden.",
+      "excludedNeighboringSkills": [
+        "Assigned to tax-wedges-and-revenue, not this module."
+      ],
+      "graphCoverage": 2,
+      "includedSkills": [
+        "buyer_price",
+        "buyer_seller_tax_equivalence",
+        "core_tax_equivalence",
+        "economic_incidence",
+        "equilibrium",
+        "legal_assignment",
+        "legal_vs_economic_tax_burden",
+        "legal_vs_economic_tax_incidence",
+        "market_adjustment",
+        "quantity_effect",
+        "seller_revenue",
+        "seller_tax",
+        "statutory_incidence",
+        "statutory_vs_economic_incidence",
+        "tax_equivalence",
+        "tax_equivalence_application",
+        "tax_incidence",
+        "tax_incidence_definition",
+        "tax_incidence_equivalence",
+        "tax_incidence_misconception_detection",
+        "tax_wedge",
+        "tax_wedge_identification",
+        "tax_wedge_incidence"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "tax-wedges-and-revenue"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 1,
+        "elite": 2,
+        "hard": 5,
+        "legendary": 7,
+        "medium": 1,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 3,
+        "main": 4,
+        "repair": 0,
+        "repairSeed": 1
+      },
+      "relatedConceptIds": [
+        "tax-wedges-and-revenue"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 16
+      },
+      "sourceChapters": [
+        4,
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO6.4"
+      ],
+      "status": "active",
+      "title": "Statutory versus Economic Tax Incidence"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 27,
+        "mainWithUsableSkill": 43
+      },
+      "calculationCoverage": 13,
+      "canonicalConceptId": "tax-incidence",
+      "description": "Use elasticity to determine and calculate the distribution of tax burdens.",
+      "excludedNeighboringSkills": [
+        "Assigned to tax-wedges-and-revenue, not this module."
+      ],
+      "graphCoverage": 10,
+      "includedSkills": [
+        "burden_split",
+        "buyer_burden",
+        "buyer_burden_vs_tax_wedge",
+        "buyer_price",
+        "buyer_seller_tax_burden",
+        "buyer_tax_burden_calculation",
+        "elastic_demand_tax_burden",
+        "elasticity",
+        "elasticity_and_tax_burden",
+        "elasticity_extreme_case",
+        "elasticity_tax_burden",
+        "elasticity_tax_incidence",
+        "elasticity_tax_quantity_burden",
+        "equal_tax_incidence_interpretation",
+        "extreme_tax_incidence_case",
+        "inelastic_demand",
+        "inelastic_demand_tax_burden",
+        "inelastic_supply_tax_burden",
+        "infer_elasticity_from_tax_burden",
+        "infer_inelastic_demand_from_tax_outcome",
+        "perfectly_inelastic_demand_tax_burden",
+        "perfectly_inelastic_supply_tax_burden",
+        "pre_tax_equilibrium_identification",
+        "quantity_response",
+        "seller_burden",
+        "seller_price",
+        "seller_tax_burden_calculation",
+        "tax_burden_calculation",
+        "tax_burden_elasticity_inference",
+        "tax_burden_less_elastic_side",
+        "tax_burden_split",
+        "tax_burden_split_calculation",
+        "tax_incidence",
+        "tax_incidence_definition",
+        "tax_incidence_elasticity",
+        "tax_incidence_less_elastic_side",
+        "tax_quantity_effect",
+        "tax_revenue_calculation",
+        "tax_wedge",
+        "tax_wedge_burden_quantity_synthesis",
+        "tax_wedge_calculation",
+        "tax_wedge_incidence",
+        "total_buyer_tax_burden",
+        "total_seller_tax_burden",
+        "total_tax_burden_calculation"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "statutory-versus-economic-tax-incidence"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "elite": 8,
+        "hard": 13,
+        "legendary": 11,
+        "medium": 7,
+        "unknown": 4
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 10,
+        "elite": 8,
+        "integration": 0,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "main": 11,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "tax-wedges-and-revenue"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 27,
+        "mainWithUsableSkill": 43
+      },
+      "sourceChapters": [
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "market-gate"
+      ],
+      "sourceObjectives": [
+        "LO6.5"
+      ],
+      "status": "active",
+      "title": "Tax Incidence"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 51,
+        "mainWithUsableSkill": 58
+      },
+      "calculationCoverage": 12,
+      "canonicalConceptId": "gdp-measurement",
+      "description": "Apply the income–expenditure identity and GDP inclusion and exclusion rules.",
+      "excludedNeighboringSkills": [
+        "Assigned to gdp-components, not this module.",
+        "Assigned to real-versus-nominal-gdp, not this module.",
+        "Assigned to limits-of-gdp, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "circular_flow_components",
+        "double_counting",
+        "final_goods_services",
+        "final_vs_intermediate_goods",
+        "gdp_as_macro_measure",
+        "gdp_counted_not_counted",
+        "gdp_counting_rules",
+        "gdp_definition",
+        "income_equals_expenditure",
+        "income_expenditure_gdp_limits",
+        "income_expenditure_identity",
+        "intermediate_vs_final_goods",
+        "market_production",
+        "micro_vs_macro",
+        "newly_produced_goods"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 22,
+        "elite": 8,
+        "hard": 8,
+        "legendary": 11,
+        "medium": 9,
+        "unknown": 9
+      },
+      "questionCountByRole": {
+        "boss": 13,
+        "bridge": 3,
+        "calculation": 6,
+        "elite": 8,
+        "integration": 0,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "main": 20,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 51,
+        "mainWithUsableSkill": 58
+      },
+      "sourceChapters": [
+        1,
+        2,
+        24
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO24.1",
+        "LO24.2"
+      ],
+      "status": "active",
+      "title": "GDP Measurement"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 36,
+        "mainWithUsableSkill": 39
+      },
+      "calculationCoverage": 10,
+      "canonicalConceptId": "gdp-components",
+      "description": "Calculate consumption, investment, government purchases, and net exports.",
+      "excludedNeighboringSkills": [
+        "Assigned to gdp-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "consumption_component",
+        "consumption_investment_government",
+        "gdp_component_classification",
+        "gdp_components",
+        "gdp_components_identity",
+        "imports_exports_nx",
+        "inventory_investment",
+        "investment_component"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "gdp-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 15,
+        "elite": 5,
+        "hard": 5,
+        "legendary": 8,
+        "medium": 6,
+        "unknown": 9
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 3,
+        "calculation": 7,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 2,
+        "main": 10,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "gdp-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 36,
+        "mainWithUsableSkill": 39
+      },
+      "sourceChapters": [
+        24
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO24.3"
+      ],
+      "status": "active",
+      "title": "GDP Components"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 25,
+        "mainWithUsableSkill": 25
+      },
+      "calculationCoverage": 10,
+      "canonicalConceptId": "real-versus-nominal-gdp",
+      "description": "Distinguish nominal and real GDP and calculate the GDP deflator.",
+      "excludedNeighboringSkills": [
+        "Assigned to gdp-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "gdp_deflator",
+        "nominal_vs_real_gdp"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "gdp-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 4,
+        "hard": 4,
+        "legendary": 8,
+        "medium": 3,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 3,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 2,
+        "main": 7,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "gdp-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 25,
+        "mainWithUsableSkill": 25
+      },
+      "sourceChapters": [
+        24,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO24.4"
+      ],
+      "status": "active",
+      "title": "Real versus Nominal GDP"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 20
+      },
+      "calculationCoverage": 1,
+      "canonicalConceptId": "limits-of-gdp",
+      "description": "Evaluate GDP as a measure of well-being.",
+      "excludedNeighboringSkills": [
+        "Assigned to gdp-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "gdp_counted_not_counted",
+        "gdp_counting_rules",
+        "gdp_definition",
+        "gdp_wellbeing_limits"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "gdp-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "elite": 3,
+        "hard": 3,
+        "legendary": 4,
+        "medium": 2,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 6,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 1,
+        "main": 7,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "gdp-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 20
+      },
+      "sourceChapters": [
+        24
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO24.5"
+      ],
+      "status": "active",
+      "title": "Limits of GDP"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 54,
+        "mainWithUsableSkill": 54
+      },
+      "calculationCoverage": 30,
+      "canonicalConceptId": "cpi-and-inflation-measurement",
+      "description": "Calculate CPI and inflation using a market basket.",
+      "excludedNeighboringSkills": [
+        "Assigned to cpi-bias, not this module.",
+        "Assigned to cpi-versus-gdp-deflator, not this module.",
+        "Assigned to indexing-and-real-values, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "cpi_calculation",
+        "inflation_rate"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 15,
+        "elite": 4,
+        "hard": 13,
+        "legendary": 9,
+        "medium": 13,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 12,
+        "bridge": 2,
+        "calculation": 21,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 54,
+        "mainWithUsableSkill": 54
+      },
+      "sourceChapters": [
+        1,
+        25
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "LO25.1"
+      ],
+      "status": "active",
+      "title": "CPI and Inflation Measurement"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 29,
+        "mainWithUsableSkill": 29
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "cpi-bias",
+      "description": "Analyze substitution, quality, and new-goods bias.",
+      "excludedNeighboringSkills": [
+        "Assigned to cpi-and-inflation-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "quality_new_goods_bias",
+        "substitution_bias"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 5,
+        "hard": 5,
+        "legendary": 7,
+        "medium": 5,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 3,
+        "main": 14,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 29,
+        "mainWithUsableSkill": 29
+      },
+      "sourceChapters": [
+        2,
+        25
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO25.2"
+      ],
+      "status": "active",
+      "title": "CPI Bias"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 24,
+        "mainWithUsableSkill": 24
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "description": "Compare the construction and uses of CPI and the GDP deflator.",
+      "excludedNeighboringSkills": [
+        "Assigned to cpi-and-inflation-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "cpi_calculation",
+        "cpi_vs_gdp_deflator"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "cpi-and-inflation-measurement",
+        "real-versus-nominal-gdp"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 4,
+        "hard": 4,
+        "legendary": 5,
+        "medium": 4,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 1,
+        "main": 12,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 24,
+        "mainWithUsableSkill": 24
+      },
+      "sourceChapters": [
+        25
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO25.3"
+      ],
+      "status": "active",
+      "title": "CPI versus GDP Deflator"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 20
+      },
+      "calculationCoverage": 16,
+      "canonicalConceptId": "indexing-and-real-values",
+      "description": "Convert nominal values across time and apply indexation.",
+      "excludedNeighboringSkills": [
+        "Assigned to cpi-and-inflation-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "cpi_calculation",
+        "inflation_adjustment"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 3,
+        "hard": 3,
+        "legendary": 5,
+        "medium": 3,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 1,
+        "calculation": 7,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 2,
+        "main": 2,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 20
+      },
+      "sourceChapters": [
+        25,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO25.4"
+      ],
+      "status": "active",
+      "title": "Indexing and Real Values"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 24,
+        "mainWithUsableSkill": 24
+      },
+      "calculationCoverage": 8,
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "description": "Calculate and interpret real and nominal interest rates.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "inflation_rate",
+        "real_interest_rate"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 4,
+        "hard": 4,
+        "legendary": 6,
+        "medium": 3,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 1,
+        "calculation": 3,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 1,
+        "main": 8,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 24,
+        "mainWithUsableSkill": 24
+      },
+      "sourceChapters": [
+        25
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO25.5"
+      ],
+      "status": "active",
+      "title": "Real versus Nominal Interest Rates"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 33,
+        "mainWithUsableSkill": 33
+      },
+      "calculationCoverage": 13,
+      "canonicalConceptId": "living-standards-and-growth",
+      "description": "Use real GDP per person and compounding to compare living standards.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "productivity_calculation",
+        "real_gdp_per_person",
+        "rule_of_70"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 5,
+        "hard": 5,
+        "legendary": 7,
+        "medium": 11,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 6,
+        "bridge": 2,
+        "calculation": 6,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 2,
+        "main": 9,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 33,
+        "mainWithUsableSkill": 33
+      },
+      "sourceChapters": [
+        1,
+        26
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO26.1"
+      ],
+      "status": "active",
+      "title": "Living Standards and Growth"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 28,
+        "mainWithUsableSkill": 28
+      },
+      "calculationCoverage": 13,
+      "canonicalConceptId": "productivity-measurement",
+      "description": "Calculate output per worker and interpret productivity changes.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "productivity_calculation",
+        "real_gdp_per_person"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "gdp-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "elite": 4,
+        "hard": 4,
+        "legendary": 6,
+        "medium": 10,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 6,
+        "bridge": 1,
+        "calculation": 6,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 1,
+        "main": 6,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 28,
+        "mainWithUsableSkill": 28
+      },
+      "sourceChapters": [
+        2,
+        26
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO26.2"
+      ],
+      "status": "active",
+      "title": "Productivity Measurement"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 54
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "sources-of-productivity",
+      "description": "Analyze physical capital, human capital, natural resources, and technology.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "human_capital",
+        "natural_resources",
+        "physical_capital",
+        "productivity_calculation",
+        "real_gdp_per_person",
+        "technological_knowledge"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "productivity-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "elite": 7,
+        "hard": 7,
+        "legendary": 10,
+        "medium": 22,
+        "unknown": 12
+      },
+      "questionCountByRole": {
+        "boss": 15,
+        "bridge": 6,
+        "calculation": 0,
+        "elite": 7,
+        "integration": 0,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "main": 22,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 54
+      },
+      "sourceChapters": [
+        26
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO26.3"
+      ],
+      "status": "active",
+      "title": "Sources of Productivity"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 31,
+        "mainWithUsableSkill": 31
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "economic-growth-policy",
+      "description": "Evaluate policies affecting long-run productivity and growth.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "growth_policy",
+        "productivity_calculation"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "sources-of-productivity"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 3,
+        "elite": 4,
+        "hard": 4,
+        "legendary": 7,
+        "medium": 13,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 2,
+        "main": 11,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 31,
+        "mainWithUsableSkill": 31
+      },
+      "sourceChapters": [
+        26,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO26.4"
+      ],
+      "status": "active",
+      "title": "Economic Growth Policy"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 62,
+        "mainWithUsableSkill": 63
+      },
+      "calculationCoverage": 15,
+      "canonicalConceptId": "unemployment-measurement",
+      "description": "Classify labor-force status and calculate unemployment and participation rates.",
+      "excludedNeighboringSkills": [
+        "Assigned to unemployment-types, not this module.",
+        "Assigned to natural-rate-of-unemployment, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "discouraged_workers",
+        "employment_classification",
+        "frictional_unemployment",
+        "labor_force_calculation",
+        "labor_force_participation",
+        "natural_rate",
+        "structural_unemployment",
+        "unemployment_rate"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "elite": 10,
+        "hard": 21,
+        "legendary": 12,
+        "medium": 10,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 11,
+        "bridge": 5,
+        "calculation": 8,
+        "elite": 10,
+        "integration": 0,
+        "legendary": 9,
+        "legendaryBoss": 3,
+        "main": 22,
+        "repair": 5,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "unemployment-types",
+        "natural-rate-of-unemployment"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 62,
+        "mainWithUsableSkill": 63
+      },
+      "sourceChapters": [
+        1,
+        2,
+        29
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO29.1",
+        "LO29.1_LO29.2_LO29.5",
+        "LO29.2"
+      ],
+      "status": "active",
+      "title": "Unemployment Measurement"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 38
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "unemployment-types",
+      "description": "Distinguish frictional, structural, and cyclical unemployment.",
+      "excludedNeighboringSkills": [
+        "Assigned to unemployment-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "cyclical_unemployment",
+        "frictional_unemployment",
+        "natural_rate",
+        "structural_unemployment"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "unemployment-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 5,
+        "hard": 17,
+        "legendary": 5,
+        "medium": 5,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 12,
+        "bridge": 3,
+        "calculation": 0,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 1,
+        "main": 16,
+        "repair": 3,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "unemployment-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 38
+      },
+      "sourceChapters": [
+        29
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO29.3"
+      ],
+      "status": "active",
+      "title": "Types of Unemployment"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 28,
+        "mainWithUsableSkill": 38
+      },
+      "calculationCoverage": 5,
+      "canonicalConceptId": "labor-market-institutions",
+      "description": "Analyze minimum wages, unions, job search, and efficiency wages.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "frictional_unemployment",
+        "minimum_wage_surplus",
+        "natural_rate",
+        "unions_efficiency_wages"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "unemployment-types"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 3,
+        "elite": 4,
+        "hard": 18,
+        "legendary": 9,
+        "medium": 4,
+        "unknown": 4
+      },
+      "questionCountByRole": {
+        "boss": 14,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 7,
+        "legendaryBoss": 2,
+        "main": 11,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 28,
+        "mainWithUsableSkill": 38
+      },
+      "sourceChapters": [
+        29,
+        4
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO29.4"
+      ],
+      "status": "active",
+      "title": "Labor-Market Institutions"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 14,
+        "mainWithUsableSkill": 14
+      },
+      "calculationCoverage": 3,
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "description": "Interpret the natural rate and deviations caused by business cycles.",
+      "excludedNeighboringSkills": [
+        "Assigned to unemployment-measurement, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "frictional_unemployment",
+        "natural_rate",
+        "structural_unemployment"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "unemployment-types"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 1,
+        "elite": 1,
+        "hard": 6,
+        "legendary": 5,
+        "medium": 1,
+        "unknown": 2
+      },
+      "questionCountByRole": {
+        "boss": 5,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 1,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 2,
+        "main": 3,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "unemployment-measurement"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 14,
+        "mainWithUsableSkill": 14
+      },
+      "sourceChapters": [
+        29
+      ],
+      "sourceGames": [
+        "equilibrium-crisis",
+        "national-ledger"
+      ],
+      "sourceObjectives": [
+        "LO29.5"
+      ],
+      "status": "active",
+      "title": "Natural Rate of Unemployment"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 17,
+        "mainWithUsableSkill": 35
+      },
+      "calculationCoverage": 5,
+      "canonicalConceptId": "money-functions-and-measures",
+      "description": "Identify money’s functions, forms, and M1/M2 measurement.",
+      "excludedNeighboringSkills": [
+        "Assigned to central-bank-and-federal-reserve, not this module.",
+        "Assigned to bank-money-creation, not this module.",
+        "Assigned to quantity-theory-of-money, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "application",
+        "bank_deposits",
+        "bank_reserves",
+        "barter",
+        "calculate_m1",
+        "calculate_m1_m2",
+        "calculate_m2",
+        "calculate_m2_with_exclusion",
+        "checkable_deposits",
+        "checking_deposits",
+        "classify_component",
+        "classify_money_type",
+        "commodity_money",
+        "commodity_money_definition",
+        "commodity_vs_fiat_money",
+        "compare_concepts",
+        "connect_money_measure_to_lending",
+        "connect_policy_to_money_measures",
+        "correct_misconception",
+        "currency",
+        "currency_drain",
+        "deposits",
+        "distinguish_fiat_commodity_money",
+        "distinguish_m1_m2",
+        "distinguish_money_functions",
+        "distinguish_saving_from_spending",
+        "explain_measurement_rule",
+        "explain_role_of_money",
+        "fiat_money",
+        "fiat_money_definition",
+        "forms_of_money",
+        "functions_of_money",
+        "identify_definition",
+        "identify_fiat_money",
+        "identify_function_in_context",
+        "identify_m1",
+        "identify_money_functions",
+        "intrinsic_value",
+        "large_time_deposits",
+        "m1",
+        "m1_components",
+        "m1_m2_components",
+        "m2",
+        "m2_components",
+        "m2_near_money",
+        "match_concepts_to_contexts",
+        "match_money_functions_to_context",
+        "medium_of_exchange",
+        "money_functions",
+        "money_supply_counting_rules",
+        "near_money",
+        "public_currency_holdings",
+        "recognize_price_measurement",
+        "savings_deposits",
+        "specialization",
+        "store_of_value",
+        "trace_reclassification_between_m1_m2",
+        "unit_of_account"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [],
+      "questionCountByDifficulty": {
+        "easy": 15,
+        "elite": 1,
+        "hard": 5,
+        "legendary": 4,
+        "medium": 10,
+        "unknown": 15
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 4,
+        "calculation": 3,
+        "elite": 1,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 1,
+        "main": 24,
+        "repair": 11,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "central-bank-and-federal-reserve",
+        "bank-money-creation",
+        "quantity-theory-of-money"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 22,
+        "mainWithUsableSkill": 35
+      },
+      "sourceChapters": [
+        1,
+        30
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "30.1",
+        "LO30.1"
+      ],
+      "status": "active",
+      "title": "Money Functions and Measures"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 15
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "description": "Explain central-bank structure, roles, independence, and the FOMC.",
+      "excludedNeighboringSkills": [
+        "Assigned to money-functions-and-measures, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "central_bank",
+        "central_bank_independence",
+        "central_bank_role",
+        "connect_central_bank_independence_to_inflation_risk",
+        "connect_fed_independence_money_growth_and_inflation",
+        "connect_fomc_monetary_policy",
+        "connect_fomc_to_policy",
+        "discount_rate",
+        "discount_rate_definition",
+        "explain_fed_independence",
+        "explain_institution_design",
+        "explain_institution_role",
+        "fed_functions",
+        "fed_independence",
+        "fed_lender_of_last_resort",
+        "fed_role",
+        "federal_funds_rate",
+        "federal_funds_rate_definition",
+        "fomc",
+        "fomc_role",
+        "identify_definition",
+        "identify_fed_role",
+        "identify_institution_role",
+        "inflation",
+        "inflation_risk",
+        "lender_of_last_resort",
+        "monetary_policy",
+        "money_growth",
+        "open_market_operations",
+        "political_pressure",
+        "recognize_fed_function"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "elite": 0,
+        "hard": 0,
+        "legendary": 2,
+        "medium": 3,
+        "unknown": 11
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 3,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 1,
+        "legendaryBoss": 1,
+        "main": 10,
+        "repair": 8,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 11,
+        "mainWithUsableSkill": 15
+      },
+      "sourceChapters": [
+        2,
+        30
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "30.2",
+        "LO30.2"
+      ],
+      "status": "active",
+      "title": "Central Banking and the Federal Reserve"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 16,
+        "mainWithUsableSkill": 74
+      },
+      "calculationCoverage": 30,
+      "canonicalConceptId": "bank-money-creation",
+      "description": "Analyze reserves, fractional-reserve banking, balance sheets, multipliers, and deposit creation.",
+      "excludedNeighboringSkills": [
+        "Assigned to money-functions-and-measures, not this module."
+      ],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "actual_reserves",
+        "analyze_leverage_loss",
+        "apply_fractional_reserve_logic",
+        "apply_multiplier",
+        "apply_reserve_ratio",
+        "asset_loss",
+        "asset_losses",
+        "assets",
+        "bank_capital",
+        "bank_capital_assets_liabilities",
+        "bank_capital_loss_absorption",
+        "bank_lending",
+        "bank_leverage_risk",
+        "calculate_bank_capital",
+        "calculate_capital_after_asset_loss",
+        "calculate_capital_loss_percentage",
+        "calculate_excess_reserves",
+        "calculate_lending_adjustment",
+        "calculate_lending_capacity",
+        "calculate_money_multiplier_effect",
+        "calculate_multiplier",
+        "calculate_required_reserves",
+        "capital",
+        "capital_ratio",
+        "combine_initial_lending_and_multiplier",
+        "combine_initial_lending_and_total_multiplier",
+        "combine_lending_and_multiplier",
+        "combine_multiplier_and_initial_lending",
+        "compare_multipliers",
+        "deposit_creation",
+        "deposit_expansion",
+        "deposits",
+        "diagnose_reserve_position",
+        "diagnose_reserve_shortfall",
+        "excess_reserves",
+        "excess_reserves_formula",
+        "excess_reserves_lending",
+        "explain_deposit_creation",
+        "explain_leverage_risk",
+        "fractional_reserve_banking",
+        "fractional_reserve_definition",
+        "fractional_reserve_money_creation",
+        "identify_definition",
+        "identify_fractional_reserve_banking",
+        "identify_lending_capacity",
+        "identify_reserve_constraint",
+        "infer_reserve_ratio_from_multiplier",
+        "infer_reserve_ratio_from_multiplier_change",
+        "initial_loan",
+        "lending",
+        "leverage",
+        "liabilities",
+        "loan_redeposit",
+        "loan_reserve_balance_sheet",
+        "loans",
+        "money_multiplier",
+        "money_multiplier_application",
+        "money_multiplier_reserve_ratio",
+        "money_supply_change",
+        "multiply_existing_excess_reserves",
+        "predict_direction",
+        "reason_from_capital_ratio",
+        "redeposit",
+        "required_reserves",
+        "required_reserves_formula",
+        "reserve_ratio",
+        "reserve_ratio_multiplier",
+        "reserve_shortfall_constraint",
+        "reserves",
+        "simple_money_multiplier_formula",
+        "simple_multiplier",
+        "solve_deposits_from_excess_reserves",
+        "solve_deposits_from_required_reserves",
+        "solve_deposits_from_reserve_data",
+        "trace_bank_loan_balance_sheet",
+        "trace_deposit_creation_rounds",
+        "trace_next_round_reserves",
+        "trace_second_round_lending",
+        "trace_two_rounds_with_nonstandard_ratio",
+        "use_simple_multiplier"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 14,
+        "elite": 13,
+        "hard": 18,
+        "legendary": 12,
+        "medium": 17,
+        "unknown": 16
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 6,
+        "calculation": 30,
+        "elite": 13,
+        "integration": 0,
+        "legendary": 7,
+        "legendaryBoss": 5,
+        "main": 18,
+        "repair": 10,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 17,
+        "mainWithUsableSkill": 74
+      },
+      "sourceChapters": [
+        30
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "30.3",
+        "LO30.3"
+      ],
+      "status": "active",
+      "title": "Bank Money Creation"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 21,
+        "mainWithUsableSkill": 43
+      },
+      "calculationCoverage": 10,
+      "canonicalConceptId": "monetary-policy-tools",
+      "description": "Apply open-market operations, administered rates, and reserve tools.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "actual_reserves",
+        "adjust_open_market_operation_for_leakage",
+        "adjust_policy_for_actual_multiplier",
+        "analyze_mixed_fed_policy_package",
+        "analyze_mixed_policy_tools",
+        "apply_bond_sale_multiplier",
+        "apply_open_market_multiplier",
+        "bank_lending",
+        "bank_reserves",
+        "bond_purchase",
+        "bond_sale",
+        "calculate_lending_after_reserve_change",
+        "calculate_new_excess_reserves",
+        "choose_fed_tool_effect",
+        "classify_policy_mix",
+        "combine_policy_effects",
+        "compare_excess_reserves_after_policy_change",
+        "contractionary_monetary_policy_tools",
+        "currency_drain",
+        "diagnose_policy_constraint",
+        "discount_rate",
+        "discount_rate_effect",
+        "evaluate_policy_package",
+        "excess_reserves",
+        "expansionary_monetary_policy_tools",
+        "fed_buys_bonds_money_supply",
+        "fed_sells_bonds_money_supply",
+        "identify_open_market_direction",
+        "identify_policy_tension",
+        "interest_on_reserves",
+        "interest_on_reserves_policy",
+        "interest_on_reserves_role",
+        "lending",
+        "lending_capacity",
+        "monetary_policy_tools_direction",
+        "money_creation",
+        "money_multiplier",
+        "money_supply",
+        "open_market_operations",
+        "predict_bank_behavior",
+        "predict_direction",
+        "predict_policy_effect",
+        "recalculate_excess_reserves_after_policy_change",
+        "required_reserves",
+        "reserve_ratio",
+        "reserve_requirement",
+        "reserve_requirement_effect",
+        "reserve_requirements",
+        "reserves",
+        "select_contractionary_tool",
+        "select_policy_tool",
+        "solve_open_market_needed",
+        "solve_required_bond_purchase",
+        "solve_required_open_market_operation",
+        "synthesize_contractionary_tools",
+        "synthesize_multiple_fed_tools",
+        "trace_bond_purchase_reserve_effect",
+        "trace_bond_sale_reserve_effect"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "central-bank-and-federal-reserve",
+        "bank-money-creation"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "elite": 8,
+        "hard": 7,
+        "legendary": 10,
+        "medium": 8,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 3,
+        "calculation": 2,
+        "elite": 8,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 4,
+        "main": 20,
+        "repair": 7,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 22,
+        "mainWithUsableSkill": 43
+      },
+      "sourceChapters": [
+        30,
+        4
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "30.4",
+        "LO30.4"
+      ],
+      "status": "active",
+      "title": "Monetary-Policy Tools"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 29,
+        "mainWithUsableSkill": 46
+      },
+      "calculationCoverage": 4,
+      "canonicalConceptId": "monetary-control-limits",
+      "description": "Evaluate currency drain, excess reserves, leverage risk, and multiplier slippage.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "actual_reserves",
+        "actual_vs_simple_multiplier",
+        "analyze_currency_withdrawal_reserve_position",
+        "bank_behavior",
+        "bank_incentives",
+        "bank_lending",
+        "bank_leverage_risk",
+        "bank_reserves",
+        "bank_risk",
+        "bond_purchase",
+        "calculate_deposit_expansion_from_currency_shift",
+        "combine_bond_sale_and_currency_drain",
+        "compare_simple_and_actual_multiplier",
+        "compare_simple_multiplier_to_actual_result",
+        "correct_misconception",
+        "correct_multiplier_misconception",
+        "correct_overstated_fed_control_claim",
+        "currency_deposits",
+        "currency_drain",
+        "currency_holdings",
+        "deposit_creation",
+        "deposit_multiplier",
+        "deposits",
+        "diagnose_multiplier_breakdown",
+        "diagnose_multiplier_leakage",
+        "discount_rate",
+        "distinguish_money_creation_from_real_output",
+        "distinguish_nominal_real_effects",
+        "evaluate_currency_leakage_in_multiplier",
+        "evaluate_currency_leakage_in_multiplier_process",
+        "evaluate_currency_to_deposit_shift",
+        "evaluate_multiplier_leakage",
+        "excess_reserves",
+        "explain_currency_drain_contraction",
+        "explain_currency_drain_multiplier_effect",
+        "explain_discount_rate_transmission_limit",
+        "explain_excess_reserve_limit",
+        "explain_interest_on_reserves",
+        "explain_model_limit",
+        "explain_policy_limit",
+        "explain_policy_slippage",
+        "explain_policy_transmission_limit",
+        "fractional_reserve_banking",
+        "identify_binding_constraint",
+        "identify_control_limit",
+        "identify_policy_channel",
+        "identify_policy_limit",
+        "identify_real_world_limitation",
+        "interest_on_reserves",
+        "interest_on_reserves_role",
+        "lending",
+        "limits_of_monetary_control",
+        "money_creation",
+        "money_multiplier",
+        "money_supply",
+        "money_vs_real_resources",
+        "open_market_operations",
+        "predict_bank_effect",
+        "predict_deposit_effect",
+        "predict_direction",
+        "predict_multiplier_effect",
+        "public_currency_holdings",
+        "real_output",
+        "real_resources",
+        "redepositing",
+        "required_reserves",
+        "reserve_ratio",
+        "reserve_requirements",
+        "reserves",
+        "synthesize_banking_and_policy_limits",
+        "synthesize_multiplier_leakages"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "monetary-policy-tools"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 9,
+        "hard": 10,
+        "legendary": 12,
+        "medium": 6,
+        "unknown": 7
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 3,
+        "calculation": 2,
+        "elite": 9,
+        "integration": 0,
+        "legendary": 8,
+        "legendaryBoss": 4,
+        "main": 20,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 29,
+        "mainWithUsableSkill": 46
+      },
+      "sourceChapters": [
+        30
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "30.5",
+        "LO30.5"
+      ],
+      "status": "active",
+      "title": "Limits of Monetary Control"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 21,
+        "mainWithUsableSkill": 60
+      },
+      "calculationCoverage": 23,
+      "canonicalConceptId": "quantity-theory-of-money",
+      "description": "Apply the quantity equation, velocity, money growth, price levels, and inflation.",
+      "excludedNeighboringSkills": [
+        "Assigned to money-functions-and-measures, not this module."
+      ],
+      "graphCoverage": 23,
+      "includedSkills": [
+        "analyze_contractionary_money_graph",
+        "analyze_md_shift_and_convert_to_price_level",
+        "analyze_money_demand_shift",
+        "apply_quantity_equation_growth_form",
+        "apply_quantity_equation_growth_rates",
+        "apply_quantity_equation_with_velocity_change",
+        "apply_quantity_theory",
+        "calculate_inflation_from_quantity_equation",
+        "calculate_price_level",
+        "calculate_value_of_money",
+        "calculate_velocity",
+        "compare_price_levels",
+        "compare_price_levels_across_years",
+        "connect_graph_result_to_quantity_equation",
+        "connect_graph_to_quantity_equation",
+        "connect_graph_to_quantity_theory",
+        "connect_money_graph_to_quantity_equation",
+        "connect_price_level_money_value",
+        "convert_money_value_to_price_level",
+        "convert_multiple_value_of_money_points_to_price_level",
+        "convert_value_of_money_to_price_level",
+        "correct_axis_and_curve_misreading",
+        "correct_graph_misinterpretation",
+        "diagnose_money_market_adjustment",
+        "distinguish_ms_shift_from_md_shift",
+        "excess_money_supply",
+        "explain_adjustment_process",
+        "explain_curve_slope",
+        "explain_graph_disequilibrium_adjustment",
+        "identify_core_prediction",
+        "identify_curve",
+        "identify_formula",
+        "identify_formula_component",
+        "identify_quantity_equation",
+        "identify_shift_result",
+        "infer_inverse_relationship",
+        "inflation",
+        "interpret_graph_shift",
+        "inverse_relationship",
+        "monetary_injection_adjustment",
+        "monetary_injection_graph",
+        "monetary_neutrality",
+        "money_demand",
+        "money_demand_price_level_relationship",
+        "money_growth",
+        "money_growth_inflation_link",
+        "money_growth_to_inflation",
+        "money_supply",
+        "money_supply_decrease",
+        "money_supply_fixed",
+        "money_supply_fixed_by_fed",
+        "money_supply_increase",
+        "money_supply_shift",
+        "money_value_price_level_inverse",
+        "nominal_gdp",
+        "nominal_gdp_py",
+        "output",
+        "output_growth",
+        "predict_direction",
+        "predict_long_run_result",
+        "price_adjustment",
+        "price_level",
+        "purchasing_power",
+        "quantity_equation",
+        "quantity_equation_formula",
+        "quantity_theory_and_neutrality",
+        "quantity_theory_basics",
+        "quantity_theory_growth_rates",
+        "read_axis",
+        "read_graph_and_convert_value_to_price",
+        "read_graph_convert_value_to_price_and_interpret",
+        "reverse_graph_shift",
+        "scarcity",
+        "solve_price_level_across_multiple_changes",
+        "solve_quantity_equation",
+        "solve_quantity_equation_across_changes",
+        "solve_quantity_equation_for_p",
+        "solve_velocity_formula",
+        "spending",
+        "synthesize_long_run_money_logic",
+        "trace_monetary_injection_graph",
+        "use_quantity_equation",
+        "value_of_money",
+        "value_of_money_formula",
+        "velocity",
+        "velocity_formula",
+        "velocity_growth"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "elite": 12,
+        "hard": 10,
+        "legendary": 13,
+        "medium": 15,
+        "unknown": 13
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 5,
+        "calculation": 12,
+        "elite": 12,
+        "integration": 0,
+        "legendary": 9,
+        "legendaryBoss": 4,
+        "main": 20,
+        "repair": 8,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 21,
+        "mainWithUsableSkill": 60
+      },
+      "sourceChapters": [
+        1,
+        31
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "31.1",
+        "LO31.1"
+      ],
+      "status": "active",
+      "title": "Quantity Theory of Money"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 23,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 8,
+      "canonicalConceptId": "monetary-neutrality",
+      "description": "Distinguish nominal and real variables and analyze long-run neutrality.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 2,
+      "includedSkills": [
+        "apply_concept",
+        "apply_monetary_neutrality",
+        "apply_real_wage_logic",
+        "calculate_and_compare_real_wages",
+        "calculate_real_wage",
+        "calculate_relative_price",
+        "calculate_relative_price_change",
+        "classical_dichotomy",
+        "classical_dichotomy_definition",
+        "classify_variable",
+        "classify_variables",
+        "combine_graph_price_level_and_real_wage",
+        "compare_nominal_wage_and_price_growth",
+        "compare_nominal_wage_and_price_level_changes",
+        "compare_real_wages",
+        "connect_neutrality_to_money_value",
+        "estimate_real_wage_growth",
+        "explain_long_run_neutrality",
+        "identify_concept_in_context",
+        "identify_definition",
+        "identify_long_run_money_neutrality",
+        "identify_nominal_real_pattern",
+        "identify_nominal_variable",
+        "infer_inflation_and_real_wage_growth",
+        "infer_price_growth_and_classify_variable",
+        "infer_price_growth_from_nominal_and_real_gdp",
+        "inflation",
+        "monetary_neutrality",
+        "monetary_neutrality_definition",
+        "money_neutrality",
+        "money_value_price_level_inverse",
+        "nominal_gdp",
+        "nominal_prices",
+        "nominal_real",
+        "nominal_real_gdp_price_growth",
+        "nominal_real_variables",
+        "nominal_variable",
+        "nominal_variable_definition",
+        "nominal_variable_examples",
+        "nominal_variables",
+        "nominal_vs_real_examples",
+        "nominal_vs_real_variables",
+        "nominal_wage",
+        "price_level",
+        "purchasing_power",
+        "real_gdp",
+        "real_output",
+        "real_variable",
+        "real_variable_definition",
+        "real_variable_examples",
+        "real_variables",
+        "real_wage",
+        "real_wage_formula",
+        "real_wage_growth_logic",
+        "relative_price",
+        "relative_price_calculation",
+        "relative_prices",
+        "separate_nominal_and_real_effects",
+        "value_of_money"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "quantity-theory-of-money"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 6,
+        "hard": 7,
+        "legendary": 9,
+        "medium": 9,
+        "unknown": 11
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 4,
+        "calculation": 4,
+        "elite": 6,
+        "integration": 0,
+        "legendary": 7,
+        "legendaryBoss": 2,
+        "main": 18,
+        "repair": 7,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 23,
+        "mainWithUsableSkill": 40
+      },
+      "sourceChapters": [
+        2,
+        31
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "31.2",
+        "LO31.2"
+      ],
+      "status": "active",
+      "title": "Monetary Neutrality"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 10,
+        "mainWithUsableSkill": 27
+      },
+      "calculationCoverage": 14,
+      "canonicalConceptId": "fisher-effect",
+      "description": "Connect expected inflation to nominal and real interest rates.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 2,
+      "includedSkills": [
+        "actual_inflation",
+        "apply_fisher_effect",
+        "apply_fisher_effect_change",
+        "apply_fisher_effect_over_time",
+        "apply_fisher_effect_with_changing_real_rate",
+        "apply_fisher_effect_with_offsetting_real_rate_change",
+        "apply_fisher_with_changing_real_rate",
+        "calculate_nominal_interest",
+        "calculate_real_interest",
+        "combine_quantity_theory_and_fisher_effect",
+        "compare_expected_and_realized_real_rates",
+        "compare_real_rates_during_disinflation",
+        "connect_money_graph_to_fisher_effect",
+        "distinguish_expected_actual_inflation",
+        "expected_inflation",
+        "expected_inflation_nominal_interest",
+        "fisher_effect",
+        "fisher_effect_basics",
+        "fisher_equation",
+        "fisher_equation_simple",
+        "identify_fisher_effect",
+        "identify_formula",
+        "inflation",
+        "inflation_nominal_interest",
+        "money_growth",
+        "nominal_interest",
+        "nominal_real_interest_rate",
+        "predict_change",
+        "predict_direction",
+        "real_interest",
+        "real_rate_expected_inflation",
+        "realized_real_interest_rate",
+        "solve_fisher_equation_real_rate",
+        "unexpected_inflation"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "real-versus-nominal-interest-rates",
+        "quantity-theory-of-money"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 3,
+        "hard": 3,
+        "legendary": 7,
+        "medium": 7,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 8,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 3,
+        "main": 6,
+        "repair": 4,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 12,
+        "mainWithUsableSkill": 27
+      },
+      "sourceChapters": [
+        31
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "31.3",
+        "LO31.3"
+      ],
+      "status": "active",
+      "title": "Fisher Effect"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 22,
+        "mainWithUsableSkill": 38
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "inflation-costs",
+      "description": "Analyze redistribution, shoeleather costs, menu costs, and price distortions.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 4,
+      "includedSkills": [
+        "actual_inflation",
+        "analyze_unexpected_disinflation",
+        "analyze_unexpected_inflation",
+        "borrowers",
+        "calculate_inflation_and_link_to_redistribution",
+        "combine_fisher_and_redistribution",
+        "combine_fisher_and_unexpected_inflation",
+        "combine_unexpected_disinflation_and_real_rate",
+        "combine_unexpected_inflation_and_real_rate",
+        "connect_graph_inflation_to_behavioral_cost",
+        "connect_graph_inflation_to_cost_type",
+        "connect_graph_inflation_to_multiple_costs",
+        "connect_price_level_change_to_debt_burden",
+        "correct_expected_inflation_cost_misconception",
+        "correct_inflation_welfare_misconception",
+        "debtors",
+        "expected_inflation",
+        "explain_inflation_cost",
+        "explain_redistribution",
+        "explain_relative_price_distortion",
+        "identify_definition",
+        "identify_example",
+        "identify_inflation_cost_from_behavior",
+        "identify_inflation_cost_from_firm_behavior",
+        "identify_shoeleather_costs",
+        "inflation",
+        "inflation_costs",
+        "inflation_costs_overview",
+        "inflation_redistribution",
+        "inflation_tax",
+        "lenders",
+        "menu_cost_definition",
+        "menu_costs",
+        "monetary_injection",
+        "money_growth",
+        "money_holding",
+        "money_holdings",
+        "nominal_income",
+        "nominal_interest",
+        "output_growth",
+        "predict_winner_loser",
+        "price_adjustment",
+        "price_changes",
+        "price_level",
+        "quantity_theory_growth_rates",
+        "real_interest",
+        "redistribution",
+        "relative_price_distortions",
+        "relative_prices",
+        "shoeleather_cost_definition",
+        "shoeleather_costs",
+        "summarize_inflation_costs",
+        "unexpected_inflation",
+        "unexpected_inflation_debtors_creditors",
+        "value_of_money",
+        "velocity_growth"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 6,
+        "hard": 7,
+        "legendary": 9,
+        "medium": 10,
+        "unknown": 11
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 4,
+        "calculation": 0,
+        "elite": 6,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 4,
+        "main": 20,
+        "repair": 7,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 24,
+        "mainWithUsableSkill": 38
+      },
+      "sourceChapters": [
+        31,
+        4
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "31.4",
+        "LO31.4"
+      ],
+      "status": "active",
+      "title": "Costs of Inflation"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 11,
+        "mainWithUsableSkill": 30
+      },
+      "calculationCoverage": 3,
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "description": "Analyze seigniorage, the inflation tax, disinflation, and deflation burdens.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 1,
+      "includedSkills": [
+        "apply_deflation_logic",
+        "calculate_inflation_from_money_finance",
+        "connect_deflation_to_debt_burden",
+        "connect_deflation_to_real_debt_burden",
+        "connect_money_finance_to_inflation_prediction",
+        "connect_money_finance_to_nominal_rates",
+        "connect_money_growth_to_policy_risk",
+        "connect_policy_expectations_and_interest_rates",
+        "connect_seigniorage_to_inflation",
+        "convert_money_value_to_price_and_classify",
+        "debtors",
+        "deflation",
+        "deflation_debt_burden",
+        "deflation_definition",
+        "deflation_vs_disinflation",
+        "disinflation",
+        "distinguish_disinflation_deflation",
+        "distinguish_inflation_terms",
+        "evaluate_policy_implication",
+        "evaluate_policy_risk",
+        "expected_inflation",
+        "explain_mechanism",
+        "fisher_effect",
+        "fisher_effect_basics",
+        "government_finance",
+        "hyperinflation",
+        "hyperinflation_money_growth",
+        "identify_burden",
+        "identify_cause",
+        "identify_condition",
+        "identify_definition",
+        "identify_inflation_tax",
+        "infer_money_value_change",
+        "inflation",
+        "inflation_expectations",
+        "inflation_rate",
+        "inflation_tax",
+        "inflation_tax_definition",
+        "inflation_tax_policy_risk",
+        "money_creation",
+        "money_demand",
+        "money_growth",
+        "money_holders",
+        "money_value_price_level_inverse",
+        "nominal_debt",
+        "output_growth",
+        "price_level",
+        "quantity_theory",
+        "quantity_theory_growth_rates",
+        "shoeleather_costs",
+        "synthesize_inflation_tax_fisher_and_costs",
+        "synthesize_money_finance_inflation_and_interest_rates",
+        "trace_seigniorage_risk",
+        "value_of_money"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "quantity-theory-of-money"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 6,
+        "hard": 6,
+        "legendary": 5,
+        "medium": 8,
+        "unknown": 5
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 2,
+        "calculation": 1,
+        "elite": 6,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 2,
+        "main": 15,
+        "repair": 3,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 11,
+        "mainWithUsableSkill": 30
+      },
+      "sourceChapters": [
+        31
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "31.5",
+        "LO31.5"
+      ],
+      "status": "active",
+      "title": "Inflation Tax and Deflation"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 21,
+        "mainWithUsableSkill": 45
+      },
+      "calculationCoverage": 1,
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "description": "Determine money-market equilibrium and interest-rate adjustment.",
+      "excludedNeighboringSkills": [
+        "Assigned to monetary-policy-transmission, not this module."
+      ],
+      "graphCoverage": 31,
+      "includedSkills": [
+        "aggregate_demand",
+        "analyze_policy_offset_of_price_level_effect",
+        "connect_money_market_to_ad_slope",
+        "connect_price_level_to_ad_multiplier",
+        "explain_ad_slope_interest_rate_effect",
+        "explain_money_demand_shift",
+        "identify_assumption",
+        "identify_core_model",
+        "identify_curve",
+        "identify_liquidity_preference_model",
+        "identify_model_logic",
+        "identify_shift_result",
+        "income",
+        "income_money_demand",
+        "income_money_demand_positive",
+        "interest_rate",
+        "interest_rate_effect_ad_slope",
+        "interest_rate_money_demand",
+        "investment",
+        "liquidity_preference_definition",
+        "liquidity_preference_theory",
+        "money_demand",
+        "money_demand_interest_rate",
+        "money_demand_interest_rate_inverse",
+        "money_demand_shift",
+        "money_demand_shift_interest_rate",
+        "money_market_equilibrium",
+        "money_market_policy_offset",
+        "money_supply",
+        "money_supply_fixed",
+        "money_supply_fixed_by_central_bank",
+        "mpc",
+        "opportunity_cost_holding_money",
+        "predict_direction",
+        "predict_money_market_equilibrium",
+        "price_level",
+        "price_level_money_demand",
+        "price_level_money_demand_positive",
+        "read_md_shift_and_choose_policy_offset",
+        "read_md_shift_then_apply_multiplier",
+        "read_money_demand_shift_then_apply_multiplier",
+        "read_money_market_equilibrium",
+        "read_money_market_shift",
+        "stabilize_interest_rate_after_md_shift",
+        "trace_income_to_interest_rate",
+        "trace_lower_price_level_effect",
+        "trace_money_demand_left_shift",
+        "trace_money_demand_shift_to_investment",
+        "trace_price_level_to_ad_quantity",
+        "trace_price_level_to_interest_rate",
+        "trace_price_level_to_money_demand",
+        "trace_price_level_to_money_market",
+        "transactions"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 11,
+        "hard": 10,
+        "legendary": 7,
+        "medium": 10,
+        "unknown": 11
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 4,
+        "calculation": 0,
+        "elite": 11,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 2,
+        "main": 24,
+        "repair": 7,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "monetary-policy-transmission"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 26,
+        "mainWithUsableSkill": 45
+      },
+      "sourceChapters": [
+        1,
+        35
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "35.1",
+        "LO35.1"
+      ],
+      "status": "active",
+      "title": "Liquidity Preference and the Money Market"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 33,
+        "mainWithUsableSkill": 57
+      },
+      "calculationCoverage": 7,
+      "canonicalConceptId": "monetary-policy-transmission",
+      "description": "Trace monetary policy through interest rates, investment, aggregate demand, and output.",
+      "excludedNeighboringSkills": [
+        "Assigned to liquidity-preference-and-money-market, not this module.",
+        "Assigned to aggregate-demand, not this module.",
+        "Assigned to stabilization-policy, not this module."
+      ],
+      "graphCoverage": 34,
+      "includedSkills": [
+        "ad_shift",
+        "ad_target",
+        "aggregate_demand",
+        "choose_anti_inflation_policy",
+        "choose_stabilizing_monetary_policy",
+        "combine_monetary_policy_and_multiplier",
+        "contractionary_monetary_policy",
+        "contractionary_monetary_policy_chain",
+        "crowding_out",
+        "crowding_out_net_effect",
+        "demand_shock",
+        "distinguish_ad_shift_from_movement_along_ad",
+        "distinguish_money_market_and_ad_model",
+        "distinguish_standard_liquidity_preference_from_liquidity_trap",
+        "evaluate_transmission_strength",
+        "expansionary_monetary_policy",
+        "expansionary_monetary_policy_chain",
+        "explain_liquidity_trap",
+        "explain_policy_limit",
+        "identify_ad_shift",
+        "identify_contractionary_policy_from_graph",
+        "identify_definition",
+        "identify_direct_effect",
+        "identify_expansionary_monetary_effect",
+        "identify_graph_panel",
+        "identify_liquidity_trap_breakpoint",
+        "inflation_pressure",
+        "interest_rate",
+        "interest_rates",
+        "interest_rates_investment",
+        "interpret_monetary_policy_graph",
+        "investment",
+        "investment_interest_rate_inverse",
+        "investment_sensitivity",
+        "liquidity_trap_definition",
+        "monetary_policy_ad_direction",
+        "monetary_policy_ad_shift",
+        "monetary_policy_transmission",
+        "monetary_policy_transmission_limits",
+        "money_market",
+        "money_market_to_ad_chain",
+        "money_supply",
+        "money_supply_interest_rate",
+        "money_supply_shift",
+        "mpc",
+        "multiplier",
+        "open_market_operations",
+        "order_policy_chain",
+        "output",
+        "overheating",
+        "predict_ad_shift",
+        "predict_direction",
+        "price_level",
+        "read_ad_shift",
+        "read_contractionary_graph_and_calculate_net_ad_effect",
+        "read_contractionary_graph_and_solve_required_rate_change",
+        "read_contractionary_graph_then_calculate_ad_change",
+        "read_contractionary_monetary_policy_graph",
+        "read_graph_and_evaluate_transmission_size",
+        "read_graph_direction_and_apply_multiplier",
+        "read_graph_then_apply_multiplier",
+        "read_money_market_shift",
+        "read_output_change_from_ad_shift",
+        "read_policy_direction_and_solve_required_interest_rate_change",
+        "recession",
+        "select_policy_response",
+        "stabilization_response_overheating",
+        "stabilization_response_recession",
+        "trace_contractionary_monetary_policy_graph",
+        "trace_contractionary_money_graph_with_multiplier",
+        "trace_expansionary_monetary_policy_graph",
+        "trace_monetary_policy_chain",
+        "zero_lower_bound"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "liquidity-preference-and-money-market",
+        "aggregate-demand"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 11,
+        "elite": 6,
+        "hard": 13,
+        "legendary": 17,
+        "medium": 10,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 3,
+        "calculation": 0,
+        "elite": 6,
+        "integration": 0,
+        "legendary": 14,
+        "legendaryBoss": 3,
+        "main": 31,
+        "repair": 7,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "liquidity-preference-and-money-market",
+        "aggregate-demand",
+        "stabilization-policy"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 37,
+        "mainWithUsableSkill": 57
+      },
+      "sourceChapters": [
+        2,
+        35
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "35.2",
+        "LO35.2"
+      ],
+      "status": "active",
+      "title": "Monetary-Policy Transmission"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 43
+      },
+      "calculationCoverage": 4,
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "description": "Trace government purchases and taxes into aggregate demand.",
+      "excludedNeighboringSkills": [
+        "Assigned to fiscal-multipliers-and-crowding-out, not this module.",
+        "Assigned to stabilization-policy, not this module."
+      ],
+      "graphCoverage": 3,
+      "includedSkills": [
+        "aggregate_demand",
+        "calculate_tax_cut_consumption_effect",
+        "calculate_tax_policy_consumption_effect",
+        "combine_tax_cut_mpc_and_multiplier",
+        "consumption",
+        "contractionary_fiscal_policy",
+        "contractionary_fiscal_policy_definition",
+        "disposable_income",
+        "expansionary_fiscal_policy",
+        "expansionary_fiscal_policy_definition",
+        "explain_policy_channel",
+        "fiscal_policy_ad_shift",
+        "government_spending",
+        "government_spending_ad",
+        "government_spending_ad_direction",
+        "identify_expansionary_fiscal_policy",
+        "identify_policy_type",
+        "mpc",
+        "mpc_basic_calculation",
+        "multiplier",
+        "predict_ad_shift",
+        "read_ad_shift",
+        "recession",
+        "tax_cut",
+        "tax_cut_ad",
+        "tax_cut_ad_direction",
+        "tax_increase_ad_direction",
+        "taxes",
+        "taxes_consumption_ad",
+        "trace_tax_cut_to_first_round_consumption_then_multiplier"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [
+        "aggregate-demand"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 4,
+        "hard": 10,
+        "legendary": 9,
+        "medium": 11,
+        "unknown": 9
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 3,
+        "calculation": 4,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 20,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "fiscal-multipliers-and-crowding-out",
+        "stabilization-policy"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 43
+      },
+      "sourceChapters": [
+        35
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "35.3",
+        "LO35.3"
+      ],
+      "status": "active",
+      "title": "Fiscal Policy and Aggregate Demand"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 25,
+        "mainWithUsableSkill": 54
+      },
+      "calculationCoverage": 18,
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "description": "Calculate multiplier effects and evaluate crowding out.",
+      "excludedNeighboringSkills": [
+        "Assigned to fiscal-policy-and-aggregate-demand, not this module."
+      ],
+      "graphCoverage": 23,
+      "includedSkills": [
+        "ad_shift",
+        "ad_shift_order",
+        "aggregate_demand",
+        "aggregate_demand_shift",
+        "apply_high_mpc_multiplier",
+        "apply_mpc",
+        "apply_multiplier",
+        "apply_multiplier_formula",
+        "apply_multiplier_to_graph_shift",
+        "apply_spending_multiplier",
+        "calculate_consumption_change",
+        "calculate_multiplier",
+        "calculate_multiplier_and_ad_change",
+        "calculate_multiplier_minus_crowding_out",
+        "calculate_net_fiscal_effect",
+        "calculate_net_policy_effect",
+        "calculate_spending_multiplier",
+        "combine_money_demand_shift_and_crowding_out",
+        "combine_multiplier_and_crowding_out",
+        "compare_mpc_effect_on_shift_order",
+        "compare_multiplier_graph_outcomes",
+        "compare_multiplier_sizes",
+        "consumption",
+        "crowding_out",
+        "crowding_out_definition",
+        "crowding_out_effect",
+        "crowding_out_net_effect",
+        "distinguish_fiscal_effects",
+        "evaluate_fiscal_policy_shortfall",
+        "evaluate_policy_strength",
+        "explain_crowding_out",
+        "explain_graph_shift",
+        "explain_multiplier_graph",
+        "explain_multiplier_logic",
+        "fiscal_policy_magnitude",
+        "government_spending",
+        "identify_definition",
+        "identify_formula",
+        "identify_graph_concept",
+        "identify_mechanism",
+        "identify_multiplier_logic",
+        "identify_offsetting_effect",
+        "income",
+        "income_consumption_feedback",
+        "income_spending_cycle",
+        "infer_mpc_from_graph_shift_order",
+        "infer_mpc_from_multiplier_graph",
+        "infer_mpc_from_shift_order",
+        "interest_rate",
+        "interest_rates",
+        "interest_rates_investment",
+        "investment",
+        "investment_interest_rate_inverse",
+        "money_demand",
+        "mpc",
+        "mpc_basic_calculation",
+        "mpc_definition",
+        "mpc_multiplier_relationship",
+        "multiplier",
+        "multiplier_effect",
+        "multiplier_effect_definition",
+        "multiplier_vs_crowding_out",
+        "net_ad_effect",
+        "net_effect",
+        "output_gap",
+        "predict_multiplier_graph_change",
+        "predict_multiplier_size",
+        "read_multiplier_graph",
+        "read_multiplier_graph_shift_order",
+        "spending_multiplier",
+        "spending_multiplier_application",
+        "spending_multiplier_formula",
+        "trace_initial_multiplier_and_crowding_out",
+        "trace_multiplier_then_crowding_out"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 11,
+        "hard": 14,
+        "legendary": 9,
+        "medium": 11,
+        "unknown": 14
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 5,
+        "calculation": 12,
+        "elite": 11,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 19,
+        "repair": 9,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 26,
+        "mainWithUsableSkill": 54
+      },
+      "sourceChapters": [
+        35,
+        4
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "35.4",
+        "LO35.4"
+      ],
+      "status": "active",
+      "title": "Fiscal Multipliers and Crowding Out"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 37,
+        "mainWithUsableSkill": 59
+      },
+      "calculationCoverage": 4,
+      "canonicalConceptId": "stabilization-policy",
+      "description": "Evaluate active policy, lags, coordination, automatic stabilizers, and shock response.",
+      "excludedNeighboringSkills": [
+        "Assigned to monetary-policy-transmission, not this module.",
+        "Assigned to fiscal-policy-and-aggregate-demand, not this module."
+      ],
+      "graphCoverage": 17,
+      "includedSkills": [
+        "ad_gap",
+        "ad_shift",
+        "aggregate_demand",
+        "aggregate_demand_policy",
+        "aggregate_demand_shocks",
+        "aggregate_supply",
+        "analyze_policy_lag_risk",
+        "analyze_supply_shock_policy_tradeoff_with_contractionary_graph",
+        "analyze_supply_shock_tradeoff",
+        "apply_multiplier_graph_to_wrong_policy_context",
+        "apply_policy_lag_logic",
+        "automatic_stabilizers",
+        "calculate_contractionary_policy_overshoot_from_graph",
+        "calculate_policy_gap_without_crowding_out",
+        "calculate_remaining_ad_gap",
+        "case_for_stabilization_policy",
+        "choose_policy_for_overheating_from_graph",
+        "choose_policy_for_positive_demand_shock",
+        "choose_policy_from_graph_chain",
+        "choose_stabilization_response",
+        "combine_graph_monetary_contraction_and_fiscal_expansion",
+        "combine_graph_monetary_contraction_and_fiscal_offset",
+        "combine_policy_impulses_multiplier_and_crowding_out",
+        "combine_spending_impulses_and_multiplier",
+        "contractionary_policy",
+        "contractionary_policy_mix",
+        "coordinate_policy_response",
+        "crowding_out",
+        "demand_shock",
+        "demand_shocks",
+        "diagnose_mixed_shock",
+        "evaluate_combined_policy_direction",
+        "evaluate_contractionary_policy_relative_to_output_gap",
+        "evaluate_multiplier_policy_context",
+        "evaluate_policy_mistiming",
+        "evaluate_policy_mix",
+        "expansionary_policy_mix",
+        "explain_policy_lags",
+        "fiscal_contraction",
+        "fiscal_expansion",
+        "fiscal_lag",
+        "fiscal_multiplier",
+        "fiscal_policy",
+        "full_employment",
+        "government_spending",
+        "identify_argument",
+        "identify_policy_limit",
+        "identify_stabilization_direction",
+        "impact_lag",
+        "implementation_lag",
+        "inflation",
+        "inflation_pressure",
+        "interest_rate",
+        "investment",
+        "liquidity_trap",
+        "match_policy_to_demand_shock",
+        "match_policy_to_overheating",
+        "match_policy_to_shock_type",
+        "misdiagnosis",
+        "mixed_shock_policy_response",
+        "monetary_contraction",
+        "monetary_expansion",
+        "monetary_offset",
+        "monetary_policy",
+        "money_supply",
+        "mpc",
+        "multiplier",
+        "output_gap",
+        "overheating",
+        "policy_lag_risk",
+        "policy_lags",
+        "policy_mix_direction",
+        "read_contractionary_ad_shift_and_calculate_gap",
+        "read_contractionary_graph_and_calculate_remaining_gap",
+        "read_graph_then_solve_required_investment_change",
+        "recession",
+        "recessionary_gap",
+        "recognition_lag",
+        "select_policy_direction",
+        "select_policy_response",
+        "stabilization_response_overheating",
+        "stabilization_response_recession",
+        "stagflation",
+        "supply_shock",
+        "trace_multiplier_crowding_and_gap",
+        "trace_multiplier_graph_to_gap_closure",
+        "trace_multiplier_then_crowding_out_gap",
+        "wealth_effect"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "monetary-policy-transmission",
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 12,
+        "hard": 15,
+        "legendary": 14,
+        "medium": 9,
+        "unknown": 13
+      },
+      "questionCountByRole": {
+        "boss": 3,
+        "bridge": 5,
+        "calculation": 0,
+        "elite": 12,
+        "integration": 0,
+        "legendary": 8,
+        "legendaryBoss": 6,
+        "main": 30,
+        "repair": 8,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "monetary-policy-transmission",
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 59
+      },
+      "sourceChapters": [
+        35
+      ],
+      "sourceGames": [
+        "liquidity-grid",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "35.5",
+        "LO35.5"
+      ],
+      "status": "active",
+      "title": "Stabilization Policy"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 28,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "aggregate-demand",
+      "description": "Explain the slope and shifters of aggregate demand.",
+      "excludedNeighboringSkills": [
+        "Assigned to aggregate-supply, not this module.",
+        "Assigned to macroeconomic-equilibrium-and-shocks, not this module.",
+        "Assigned to monetary-policy-transmission, not this module."
+      ],
+      "graphCoverage": 3,
+      "includedSkills": [
+        "explain_ad_slope",
+        "identify_ad_shifters",
+        "read_ad_as_axes",
+        "read_ad_shift"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [
+        "gdp-components"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 4,
+        "hard": 9,
+        "legendary": 9,
+        "medium": 9,
+        "unknown": 7
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 5,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "aggregate-supply",
+        "macroeconomic-equilibrium-and-shocks",
+        "monetary-policy-transmission"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 40,
+        "mainWithUsableSkill": 40
+      },
+      "sourceChapters": [
+        1,
+        34
+      ],
+      "sourceGames": [
+        "stabilization-protocol",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "34.1",
+        "LO34.1"
+      ],
+      "status": "active",
+      "title": "Aggregate Demand"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 41
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "aggregate-supply",
+      "description": "Analyze LRAS, SRAS, sticky adjustment, expectations, and supply shifts.",
+      "excludedNeighboringSkills": [
+        "Assigned to aggregate-demand, not this module.",
+        "Assigned to macroeconomic-equilibrium-and-shocks, not this module."
+      ],
+      "graphCoverage": 1,
+      "includedSkills": [
+        "expected_price_sras_shift",
+        "explain_sras_upward",
+        "identify_lras",
+        "identify_sras_shifters",
+        "read_sras_shift"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "prerequisiteConceptIds": [
+        "living-standards-and-growth"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "elite": 4,
+        "hard": 10,
+        "legendary": 9,
+        "medium": 9,
+        "unknown": 10
+      },
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 4,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 19,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "aggregate-demand",
+        "macroeconomic-equilibrium-and-shocks"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 41,
+        "mainWithUsableSkill": 41
+      },
+      "sourceChapters": [
+        2,
+        34
+      ],
+      "sourceGames": [
+        "stabilization-protocol",
+        "phase5.2a-concept-expansion"
+      ],
+      "sourceObjectives": [
+        "34.2",
+        "34.3",
+        "LO34.2",
+        "LO34.3"
+      ],
+      "status": "active",
+      "title": "Aggregate Supply"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 16,
+        "mainWithUsableSkill": 32
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+      "description": "Analyze AD–AS equilibrium, demand shocks, supply shocks, and stagflation.",
+      "excludedNeighboringSkills": [
+        "Assigned to aggregate-demand, not this module.",
+        "Assigned to aggregate-supply, not this module."
+      ],
+      "graphCoverage": 20,
+      "includedSkills": [
+        "choose_stabilization_response",
+        "classify_demand_shock",
+        "classify_supply_shock",
+        "connect_output_unemployment",
+        "define_stagflation",
+        "evaluate_supply_shock_policy",
+        "read_ad_as_equilibrium",
+        "trace_combined_shocks",
+        "trace_demand_shock",
+        "trace_supply_shock"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "aggregate-demand",
+        "aggregate-supply"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "elite": 7,
+        "hard": 7,
+        "legendary": 3,
+        "medium": 8,
+        "unknown": 12
+      },
+      "questionCountByRole": {
+        "boss": 0,
+        "bridge": 3,
+        "calculation": 0,
+        "elite": 7,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 0,
+        "main": 22,
+        "repair": 9,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "aggregate-demand",
+        "aggregate-supply"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 31,
+        "mainWithUsableSkill": 32
+      },
+      "sourceChapters": [
+        34,
+        4
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "34.4",
+        "LO34.4"
+      ],
+      "status": "active",
+      "title": "Macroeconomic Equilibrium and Shocks"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 19,
+        "mainWithUsableSkill": 23
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "description": "Trace output gaps and self-correction toward natural output.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 13,
+      "includedSkills": [
+        "choose_stabilization_response",
+        "classify_output_gap",
+        "connect_output_unemployment",
+        "explain_long_run_adjustment",
+        "identify_natural_output"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "macroeconomic-equilibrium-and-shocks"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 6,
+        "hard": 5,
+        "legendary": 2,
+        "medium": 5,
+        "unknown": 7
+      },
+      "questionCountByRole": {
+        "boss": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 6,
+        "integration": 0,
+        "legendary": 2,
+        "legendaryBoss": 0,
+        "main": 15,
+        "repair": 5,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 23
+      },
+      "sourceChapters": [
+        34
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "34.5",
+        "LO34.5"
+      ],
+      "status": "active",
+      "title": "Long-Run Macroeconomic Adjustment"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 24
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "short-run-phillips-curve",
+      "description": "Interpret movements along the short-run inflation–unemployment tradeoff.",
+      "excludedNeighboringSkills": [
+        "Assigned to long-run-phillips-curve, not this module.",
+        "Assigned to phillips-curve-expectations, not this module."
+      ],
+      "graphCoverage": 13,
+      "includedSkills": [
+        "define_phillips_curve",
+        "move_along_srpc",
+        "natural_rate_hypothesis",
+        "read_pc_axes",
+        "read_pc_points",
+        "short_run_tradeoff",
+        "trace_expectations_adjustment"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "unemployment-measurement",
+        "cpi-and-inflation-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "elite": 3,
+        "hard": 5,
+        "legendary": 2,
+        "medium": 6,
+        "unknown": 9
+      },
+      "questionCountByRole": {
+        "boss": 2,
+        "bridge": 4,
+        "calculation": 0,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 2,
+        "legendaryBoss": 0,
+        "main": 17,
+        "repair": 5,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "long-run-phillips-curve",
+        "phillips-curve-expectations"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 22,
+        "mainWithUsableSkill": 24
+      },
+      "sourceChapters": [
+        1,
+        36
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "36.1",
+        "LO36.1"
+      ],
+      "status": "active",
+      "title": "Short-Run Phillips Curve"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 12
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "long-run-phillips-curve",
+      "description": "Apply the natural-rate hypothesis and vertical long-run Phillips curve.",
+      "excludedNeighboringSkills": [
+        "Assigned to short-run-phillips-curve, not this module.",
+        "Assigned to phillips-curve-expectations, not this module."
+      ],
+      "graphCoverage": 8,
+      "includedSkills": [
+        "identify_lrpc",
+        "identify_natural_unemployment",
+        "natural_rate_hypothesis",
+        "natural_unemployment",
+        "read_pc_points"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "short-run-phillips-curve",
+        "natural-rate-of-unemployment"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "elite": 1,
+        "hard": 4,
+        "legendary": 0,
+        "medium": 3,
+        "unknown": 3
+      },
+      "questionCountByRole": {
+        "boss": 2,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 1,
+        "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 9,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "short-run-phillips-curve",
+        "phillips-curve-expectations"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 9,
+        "mainWithUsableSkill": 12
+      },
+      "sourceChapters": [
+        2,
+        36
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "36.2",
+        "LO36.2"
+      ],
+      "status": "active",
+      "title": "Long-Run Phillips Curve"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 31,
+        "mainWithUsableSkill": 31
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "phillips-curve-expectations",
+      "description": "Analyze expected inflation and supply shocks as Phillips-curve shifters.",
+      "excludedNeighboringSkills": [
+        "Assigned to short-run-phillips-curve, not this module.",
+        "Assigned to long-run-phillips-curve, not this module.",
+        "Assigned to disinflation-and-policy, not this module."
+      ],
+      "graphCoverage": 17,
+      "includedSkills": [
+        "expected_inflation_shift",
+        "lrpc",
+        "srpc_shift",
+        "supply_shock_pc_shift",
+        "trace_expectations_adjustment"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "short-run-phillips-curve",
+        "long-run-phillips-curve"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "elite": 4,
+        "hard": 11,
+        "legendary": 3,
+        "medium": 8,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 2,
+        "bridge": 3,
+        "calculation": 0,
+        "elite": 4,
+        "integration": 0,
+        "legendary": 3,
+        "legendaryBoss": 0,
+        "main": 22,
+        "repair": 3,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "disinflation-and-policy"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 31,
+        "mainWithUsableSkill": 31
+      },
+      "sourceChapters": [
+        36
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "36.3",
+        "LO36.3"
+      ],
+      "status": "active",
+      "title": "Phillips-Curve Expectations"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 12,
+        "mainWithUsableSkill": 12
+      },
+      "calculationCoverage": 0,
+      "canonicalConceptId": "disinflation-and-policy",
+      "description": "Trace monetary disinflation, unemployment costs, and expectations adjustment.",
+      "excludedNeighboringSkills": [
+        "Assigned to phillips-curve-expectations, not this module."
+      ],
+      "graphCoverage": 7,
+      "includedSkills": [
+        "disinflation",
+        "disinflation_unemployment_cost",
+        "lrpc",
+        "monetary_policy_pc_transition"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "phillips-curve-expectations",
+        "monetary-policy-transmission"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 1,
+        "elite": 2,
+        "hard": 3,
+        "legendary": 2,
+        "medium": 4,
+        "unknown": 4
+      },
+      "questionCountByRole": {
+        "boss": 2,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 2,
+        "legendaryBoss": 0,
+        "main": 6,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [
+        "phillips-curve-expectations"
+      ],
+      "repairCoverage": {
+        "directSkillMatches": 12,
+        "mainWithUsableSkill": 12
+      },
+      "sourceChapters": [
+        36,
+        4
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "36.4",
+        "LO36.4"
+      ],
+      "status": "active",
+      "title": "Disinflation and Policy"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 20
+      },
+      "calculationCoverage": 10,
+      "canonicalConceptId": "sacrifice-ratio",
+      "description": "Calculate and interpret output losses associated with disinflation.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "calculate_sacrifice_ratio",
+        "define_sacrifice_ratio",
+        "disinflation_cost",
+        "interpret_sacrifice_ratio"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "disinflation-and-policy"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 3,
+        "elite": 5,
+        "hard": 4,
+        "legendary": 4,
+        "medium": 4,
+        "unknown": 6
+      },
+      "questionCountByRole": {
+        "boss": 2,
+        "bridge": 3,
+        "calculation": 4,
+        "elite": 5,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 0,
+        "main": 5,
+        "repair": 3,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 20
+      },
+      "sourceChapters": [
+        36
+      ],
+      "sourceGames": [
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "36.5",
+        "LO36.5"
+      ],
+      "status": "active",
+      "title": "Sacrifice Ratio"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 88
+      },
+      "calculationCoverage": 4,
+      "canonicalConceptId": "integrated-economic-analysis",
+      "description": "Solve genuine multi-model questions spanning microeconomic and macroeconomic concepts.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 0,
+      "includedSkills": [
+        "aggregate_demand",
+        "assumptions_role",
+        "binding_price_ceiling",
+        "binding_price_ceiling_shortage",
+        "binding_price_floor_labor_surplus",
+        "black_markets",
+        "borrower_lender_effects",
+        "business_cycle_recovery",
+        "buyer_burden",
+        "buyer_price",
+        "buyer_seller_tax_equivalence",
+        "buyers_sellers_share_tax",
+        "capital_accumulation",
+        "capital_deepening",
+        "capital_per_worker",
+        "capital_scarcity",
+        "catch_up_effect_interpretation",
+        "catch_up_growth",
+        "ceiling_distributional_tradeoff",
+        "ceiling_shortage_calculation",
+        "ceiling_shortage_full_cost_analysis",
+        "ceiling_supply_response",
+        "ceiling_unintended_consequences",
+        "circular_flow_components",
+        "combined_real_value_analysis",
+        "combined_real_value_comparison",
+        "consumer_basket",
+        "consumer_prices",
+        "consumer_response_to_prices",
+        "cost_of_living",
+        "cost_of_living_bias",
+        "cost_of_living_measurement",
+        "cost_pass_through",
+        "cost_shift",
+        "cpi_bias_interpretation",
+        "cpi_bias_types",
+        "cpi_limits",
+        "cpi_quality_bias",
+        "cpi_substitution_bias",
+        "cpi_vs_deflator",
+        "cpi_vs_gdp_deflator_import_effect",
+        "cross_market_policy_chain",
+        "cross_market_tax_incidence_comparison",
+        "cyclical_unemployment_identification",
+        "deflation",
+        "demand_elasticity",
+        "diminishing_returns",
+        "diminishing_returns_growth_analysis",
+        "diminishing_returns_to_capital",
+        "discouraged_worker_classification",
+        "discouraged_worker_effect",
+        "discouraged_workers",
+        "diverging_price_indexes_interpretation",
+        "domestic_output",
+        "domestic_production",
+        "economic_incidence",
+        "economic_models",
+        "elasticity_tax_burden",
+        "elasticity_tax_revenue_quantity",
+        "employment",
+        "employment_change",
+        "employment_status_classification",
+        "equilibrium",
+        "equilibrium_quantity",
+        "fixed_basket_bias_interpretation",
+        "foreign_investment",
+        "frictional_unemployment",
+        "full_price_nonmoney_cost_analysis",
+        "gdp_as_macro_measure",
+        "growth_pattern_diagnosis",
+        "growth_policy_productivity",
+        "growth_policy_tradeoff",
+        "growth_structural_unemployment_link",
+        "households_firms_roles",
+        "human_capital",
+        "import_prices",
+        "incentive_design_tradeoff",
+        "incentives",
+        "incentives_secondary_effects",
+        "incentives_unintended_consequences",
+        "indexation_bias_analysis",
+        "indexed_contract_bias_analysis",
+        "inelastic_demand",
+        "inflation",
+        "inflation_adjustment",
+        "inflation_expectations",
+        "inflation_rate_calculation",
+        "inflation_rate_formula",
+        "job_search",
+        "labor_force_calculation",
+        "labor_force_categories",
+        "labor_force_definition",
+        "labor_force_flow_analysis",
+        "labor_force_participation",
+        "labor_force_reentry_effect",
+        "labor_incentives",
+        "labor_market_adjustment",
+        "labor_market_signal_quality_analysis",
+        "labor_surplus",
+        "labor_surplus_calculation",
+        "law_of_demand",
+        "legal_vs_economic_tax_incidence",
+        "less_elastic_side",
+        "long_run_growth",
+        "macro_indicator_synthesis",
+        "macro_interpretation",
+        "macroeconomics_definition",
+        "marginal_behavior",
+        "market_allocation",
+        "market_allocation_definition",
+        "market_equilibrium",
+        "market_price_adjustment",
+        "market_shrinkage",
+        "micro_macro_pairing",
+        "micro_vs_macro",
+        "minimum_wage_inflation_synthesis",
+        "minimum_wage_policy_tradeoff",
+        "minimum_wage_policy_tradeoffs",
+        "minimum_wage_surplus_real_wage_analysis",
+        "minimum_wage_tradeoff_analysis",
+        "minimum_wage_unemployment",
+        "mixed_policy_supply_ceiling",
+        "model_application_limits",
+        "model_purpose",
+        "multi_indicator_macro_diagnosis",
+        "multi_year_labor_force_analysis",
+        "nominal_interest",
+        "nominal_minus_inflation",
+        "nominal_vs_real",
+        "nonmoney_rationing_costs",
+        "nonprice_rationing",
+        "nonprice_rationing_interpretation",
+        "official_price_vs_full_cost_analysis",
+        "opportunity_cost",
+        "opportunity_cost_definition",
+        "opportunity_cost_identification",
+        "output_per_worker",
+        "participation_rate",
+        "percentage_calculation",
+        "percentage_change",
+        "physical_capital",
+        "policy_shock_full_cost_synthesis",
+        "policy_statement_classification",
+        "policy_tradeoff_analysis",
+        "policy_tradeoff_identification",
+        "positive_vs_normative",
+        "ppf_growth_interpretation",
+        "ppf_shift_growth",
+        "price_ceiling",
+        "price_ceiling_consequence_chain",
+        "price_ceiling_shortage",
+        "price_control_hidden_costs",
+        "price_control_synthesis",
+        "price_floor",
+        "price_floor_surplus",
+        "price_index_scope_comparison",
+        "price_signal_allocation",
+        "price_signals",
+        "productive_capacity",
+        "productivity",
+        "productivity_definition",
+        "productivity_determinants",
+        "productivity_displacement_tradeoff_analysis",
+        "productivity_factor_classification",
+        "productivity_growth",
+        "productivity_living_standard_link",
+        "purchasing_power",
+        "quality_adjustment_policy_analysis",
+        "quality_bias",
+        "quantity_response",
+        "quantity_supplied_quantity_demanded",
+        "real_income",
+        "real_interest_comparison",
+        "real_interest_rate",
+        "real_interest_rate_calculation",
+        "real_interest_rate_formula",
+        "real_interest_rate_interpretation",
+        "real_interest_rate_ranking",
+        "real_living_standard_comparison",
+        "real_living_standard_evidence_analysis",
+        "real_output",
+        "real_vs_nominal_values",
+        "real_wage_adjustment",
+        "real_wage_growth",
+        "real_wage_inflation_adjustment",
+        "real_wage_interpretation",
+        "real_wage_percentage_comparison",
+        "real_wages",
+        "reported_vs_true_inflation_analysis",
+        "scarcity_definition",
+        "seller_price",
+        "short_run_fluctuations",
+        "shortage",
+        "shortage_calculation",
+        "shortages",
+        "skill_mismatch",
+        "standards_of_living",
+        "structural_unemployment",
+        "structural_unemployment_definition",
+        "substitution_bias",
+        "substitution_effect",
+        "supply_decrease_equilibrium_effects",
+        "supply_elasticity",
+        "supply_shift",
+        "supply_shift_equilibrium",
+        "supply_shifters",
+        "tax_burden_elasticity_analysis",
+        "tax_burden_elasticity_inference",
+        "tax_incidence_elasticity",
+        "tax_incidence_equivalence",
+        "tax_quantity_burden_elasticity_analysis",
+        "tax_quantity_effect",
+        "tax_wedge",
+        "tax_wedge_equilibrium_chain",
+        "tax_wedge_incidence",
+        "tax_wedge_market_size",
+        "technological_knowledge",
+        "technology",
+        "technology_adoption",
+        "technology_labor_adjustment_analysis",
+        "tradeoff_identification",
+        "unemployment",
+        "unemployment_and_lfpr_calculation",
+        "unemployment_rate",
+        "unemployment_rate_limit_interpretation",
+        "unemployment_rate_limits",
+        "unemployment_rate_quality_check",
+        "unemployment_type_comparison",
+        "unemployment_types",
+        "unexpected_inflation_borrower_lender_effects",
+        "unexpected_inflation_real_return_analysis",
+        "unintended_consequences"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "market-equilibrium",
+        "gdp-measurement"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "elite": 3,
+        "hard": 24,
+        "legendary": 29,
+        "medium": 24,
+        "unknown": 0
+      },
+      "questionCountByRole": {
+        "boss": 56,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 3,
+        "integration": 0,
+        "legendary": 5,
+        "legendaryBoss": 24,
+        "main": 0,
+        "repair": 0,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 88
+      },
+      "sourceChapters": [
+        1,
+        2,
+        25,
+        26,
+        29,
+        4,
+        6
+      ],
+      "sourceGames": [
+        "equilibrium-crisis"
+      ],
+      "sourceObjectives": [
+        "LO1.1",
+        "LO1.2",
+        "LO1.4",
+        "LO1.6",
+        "LO2.1",
+        "LO2.2",
+        "LO2.3",
+        "LO2.4",
+        "LO25.1",
+        "LO25.2",
+        "LO25.3",
+        "LO25.4",
+        "LO25.5",
+        "LO26.2",
+        "LO26.3",
+        "LO26.4",
+        "LO29.1",
+        "LO29.2",
+        "LO29.3",
+        "LO29.4",
+        "LO4.4",
+        "LO6.1",
+        "LO6.2",
+        "LO6.3",
+        "LO6.4",
+        "LO6.5"
+      ],
+      "status": "active",
+      "title": "Integrated Economic Analysis"
+    },
+    {
+      "bridgeCoverage": {
+        "directSkillMatches": 15,
+        "mainWithUsableSkill": 102
+      },
+      "calculationCoverage": 3,
+      "canonicalConceptId": "integrated-macroeconomic-analysis",
+      "description": "Solve genuine multi-stage questions linking money, AD–AS, policy, inflation, and unemployment.",
+      "excludedNeighboringSkills": [],
+      "graphCoverage": 14,
+      "includedSkills": [
+        "actual_expected_inflation_gap",
+        "actual_vs_simple_multiplier",
+        "apply_bond_sale_multiplier",
+        "bank_leverage_risk",
+        "calculate_m1_m2",
+        "calculate_sacrifice_ratio",
+        "checkable_deposits",
+        "choose_fed_tool_effect",
+        "choose_stabilization_response",
+        "classify_output_gap",
+        "combine_lending_and_multiplier",
+        "credibility",
+        "crowding_out_effect",
+        "currency",
+        "currency_drain",
+        "define_stagflation",
+        "deposit_creation",
+        "disinflation",
+        "disinflation_unemployment_cost",
+        "evaluate_supply_shock_policy",
+        "excess_reserves",
+        "expectations",
+        "expected_inflation",
+        "expected_inflation_shift",
+        "expected_price_sras_shift",
+        "explain_fed_independence",
+        "explain_long_run_adjustment",
+        "fed_independence",
+        "fed_sells_bonds_money_supply",
+        "fiscal_policy_ad_shift",
+        "fiscal_policy_magnitude",
+        "fisher_effect",
+        "inflation_adjustment",
+        "inflation_expectations",
+        "inflation_tax",
+        "integrated_macro_review",
+        "interest_rate_investment_channel",
+        "interpret_sacrifice_ratio",
+        "labor_force_calculation",
+        "limits_of_monetary_control",
+        "liquidity_preference_theory",
+        "liquidity_trap",
+        "m1_m2_components",
+        "map_ad_as_to_pc",
+        "monetary_neutrality",
+        "monetary_policy_ad_shift",
+        "monetary_policy_pc_transition",
+        "monetary_policy_transmission",
+        "money_demand_interest_rate",
+        "money_growth",
+        "money_growth_to_inflation",
+        "money_multiplier",
+        "money_multiplier_application",
+        "move_along_srpc",
+        "multiplier_effect",
+        "natural_rate_hypothesis",
+        "near_money",
+        "nominal_real_interest_rate",
+        "nominal_vs_real_gdp",
+        "open_market_operations",
+        "policy_lags",
+        "political_pressure",
+        "quantity_equation",
+        "read_pc_points",
+        "reserve_ratio",
+        "short_run_vs_long_run",
+        "supply_shock_pc_shift",
+        "synthesize_multiplier_leakages",
+        "trace_demand_shock",
+        "trace_expectations_adjustment",
+        "trace_supply_shock",
+        "value_of_money"
+      ],
+      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
+      "prerequisiteConceptIds": [
+        "macroeconomic-equilibrium-and-shocks",
+        "stabilization-policy",
+        "phillips-curve-expectations"
+      ],
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "elite": 7,
+        "hard": 31,
+        "legendary": 51,
+        "medium": 7,
+        "unknown": 2
+      },
+      "questionCountByRole": {
+        "boss": 34,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 7,
+        "integration": 10,
+        "legendary": 29,
+        "legendaryBoss": 22,
+        "main": 0,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "relatedConceptIds": [],
+      "repairCoverage": {
+        "directSkillMatches": 15,
+        "mainWithUsableSkill": 102
+      },
+      "sourceChapters": [
+        1,
+        2,
+        30,
+        31,
+        34,
+        35,
+        36,
+        4
+      ],
+      "sourceGames": [
+        "national-ledger",
+        "stabilization-protocol"
+      ],
+      "sourceObjectives": [
+        "30.1",
+        "30.2",
+        "30.3",
+        "30.4",
+        "30.5",
+        "36.2",
+        "LO30.4",
+        "LO30.5",
+        "LO31.1",
+        "LO31.2",
+        "LO31.3",
+        "LO31.5",
+        "LO34.4",
+        "LO34.5",
+        "LO35.1",
+        "LO35.2",
+        "LO35.3",
+        "LO35.4",
+        "LO35.5",
+        "LO36.1",
+        "LO36.2",
+        "LO36.3",
+        "LO36.4",
+        "LO36.5",
+        "integrated_macro_review"
+      ],
+      "status": "active",
+      "title": "Integrated Macroeconomic Analysis"
+    }
+  ],
+  "curationPhase": "5.2a",
+  "curationSummary": {
+    "authorityExcludedConflictGroups": 47,
+    "editorialItemsPublished": 141,
+    "exactDuplicateProvenanceMerges": 24,
+    "nearDuplicateConsolidations": 4,
+    "phase5_2aExpandedConcepts": 8,
+    "phase5_2aNewQuestions": 228,
+    "stemReplacements": 33
+  },
+  "generatedAt": "2026-08-04T16:00:00.000Z",
+  "schemaVersion": "1.0.0"
+}

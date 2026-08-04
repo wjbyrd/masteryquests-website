@@ -1,0 +1,902 @@
+[
+  {
+    "conceptId": "long-run-phillips-curve",
+    "pool": "medium",
+    "q": "Expected inflation rises from 2 percent to 5 percent while unemployment remains at its natural rate. Which long-run outcome fits the vertical Phillips curve?",
+    "correctAnswer": "Inflation is higher, but unemployment is unchanged at the natural rate.",
+    "distractors": [
+      "Inflation is higher and unemployment is permanently lower.",
+      "Inflation is unchanged and unemployment falls to zero.",
+      "Both inflation and unemployment are permanently higher."
+    ],
+    "primarySkill": "long_run_inflation_neutrality",
+    "repairSkill": "long_run_inflation_neutrality",
+    "commonError": "Treating a higher expected inflation rate as a permanent way to lower unemployment.",
+    "feedback": "Along the long-run Phillips curve, different inflation rates can coexist with the same natural rate of unemployment.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRPC-M-001",
+    "options": [
+      "Inflation is higher, but unemployment is unchanged at the natural rate.",
+      "Inflation is higher and unemployment is permanently lower.",
+      "Inflation is unchanged and unemployment falls to zero.",
+      "Both inflation and unemployment are permanently higher."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "long-run-phillips-curve",
+    "pool": "elite",
+    "q": "Policymakers repeatedly expand aggregate demand to keep unemployment below its natural rate. Once workers and firms adjust expectations, what is required to keep unemployment below that rate?",
+    "correctAnswer": "Ever-larger inflation surprises.",
+    "distractors": [
+      "A permanently fixed inflation rate.",
+      "A lower natural rate without any labor-market change.",
+      "A one-time reduction in expected inflation."
+    ],
+    "primarySkill": "accelerationist_hypothesis",
+    "repairSkill": "accelerationist_hypothesis",
+    "commonError": "Assuming one expansion can hold unemployment below the natural rate forever.",
+    "feedback": "After expectations catch up, only new inflation surprises can again push unemployment temporarily below its natural rate.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRPC-EL-001",
+    "options": [
+      "A permanently fixed inflation rate.",
+      "Ever-larger inflation surprises.",
+      "A lower natural rate without any labor-market change.",
+      "A one-time reduction in expected inflation."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "long-run-phillips-curve",
+    "pool": "legendary",
+    "q": "Two economies have the same natural unemployment rate but very different average inflation rates over many years. Which observation is most consistent with a vertical long-run Phillips curve?",
+    "correctAnswer": "Both can remain at the same long-run unemployment rate despite different inflation rates.",
+    "distractors": [
+      "The higher-inflation economy must have permanently lower unemployment because inflation buys a lasting tradeoff.",
+      "The lower-inflation economy must have permanently higher unemployment because prices grow more slowly.",
+      "Different inflation rates require different natural unemployment rates even when labor markets are otherwise alike."
+    ],
+    "primarySkill": "vertical_lrpc_comparison",
+    "repairSkill": "vertical_lrpc_comparison",
+    "commonError": "Inferring a permanent inflation-unemployment tradeoff from cross-country inflation differences.",
+    "feedback": "The vertical LRPC allows different steady inflation rates at the same natural unemployment rate.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRPC-L-001",
+    "options": [
+      "The higher-inflation economy must have permanently lower unemployment because inflation buys a lasting tradeoff.",
+      "The lower-inflation economy must have permanently higher unemployment because prices grow more slowly.",
+      "Both can remain at the same long-run unemployment rate despite different inflation rates.",
+      "Different inflation rates require different natural unemployment rates even when labor markets are otherwise alike."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "long-run-phillips-curve",
+    "pool": "legendary",
+    "q": "A national job-matching system reduces the time workers spend searching for suitable positions. What happens to the long-run Phillips curve, other things equal?",
+    "correctAnswer": "It shifts left because the natural rate of unemployment falls.",
+    "distractors": [
+      "It shifts right because expected inflation rises.",
+      "The economy moves upward along an unchanged LRPC.",
+      "It becomes horizontal at the new inflation rate."
+    ],
+    "primarySkill": "lrpc_natural_rate_shift",
+    "repairSkill": "lrpc_natural_rate_shift",
+    "commonError": "Confusing a change in the natural rate with a movement caused by inflation.",
+    "feedback": "A lasting improvement in labor-market matching can lower the natural rate and move the entire LRPC left.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRPC-L-002",
+    "options": [
+      "It shifts right because expected inflation rises.",
+      "The economy moves upward along an unchanged LRPC.",
+      "It becomes horizontal at the new inflation rate.",
+      "It shifts left because the natural rate of unemployment falls."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "long-run-phillips-curve",
+    "pool": "legendary",
+    "q": "An unexpected monetary expansion temporarily lowers unemployment. Inflation expectations then fully adjust while the higher inflation rate persists. What is the long-run result?",
+    "correctAnswer": "Unemployment returns to the natural rate at a higher inflation rate.",
+    "distractors": [
+      "Unemployment remains permanently below the natural rate.",
+      "Unemployment rises permanently above the natural rate.",
+      "Inflation returns automatically to its original rate while unemployment stays low."
+    ],
+    "primarySkill": "expectations_long_run_return",
+    "repairSkill": "expectations_long_run_return",
+    "commonError": "Stopping the analysis before expectations adjust.",
+    "feedback": "The short-run unemployment effect disappears when expectations adjust, leaving higher inflation and natural-rate unemployment.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRPC-L-003",
+    "options": [
+      "Unemployment returns to the natural rate at a higher inflation rate.",
+      "Unemployment remains permanently below the natural rate.",
+      "Unemployment rises permanently above the natural rate.",
+      "Inflation returns automatically to its original rate while unemployment stays low."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "long-run-phillips-curve",
+    "pool": "boss_hard",
+    "q": "A government insists on holding unemployment below the natural rate after inflation expectations have adjusted. What does the long-run Phillips-curve model predict?",
+    "correctAnswer": "The policy requires continuously accelerating inflation.",
+    "distractors": [
+      "A stable inflation rate will permanently sustain lower unemployment.",
+      "Unemployment will fall to zero without further inflation.",
+      "The natural rate automatically falls whenever aggregate demand rises."
+    ],
+    "primarySkill": "accelerationist_hypothesis",
+    "repairSkill": "accelerationist_hypothesis",
+    "commonError": "Believing a stable higher inflation rate buys a permanent unemployment reduction.",
+    "feedback": "Once expected inflation catches up, maintaining below-natural unemployment requires repeated new inflation surprises.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRPC-B3-001",
+    "options": [
+      "A stable inflation rate will permanently sustain lower unemployment.",
+      "The policy requires continuously accelerating inflation.",
+      "Unemployment will fall to zero without further inflation.",
+      "The natural rate automatically falls whenever aggregate demand rises."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "disinflation-and-policy",
+    "pool": "easy",
+    "q": "Disinflation means that:",
+    "correctAnswer": "Inflation is slowing, although the price level may still be rising.",
+    "distractors": [
+      "The overall price level is falling because average prices are declining.",
+      "Unemployment is falling even though output remains below potential.",
+      "Nominal wages are fixed while real wages rise automatically."
+    ],
+    "primarySkill": "define_disinflation",
+    "repairSkill": "define_disinflation",
+    "commonError": "Confusing disinflation with deflation.",
+    "feedback": "Disinflation is slower price growth; deflation is a falling price level.",
+    "type": "definition",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-DIS-E-001",
+    "options": [
+      "The overall price level is falling because average prices are declining.",
+      "Unemployment is falling even though output remains below potential.",
+      "Inflation is slowing, although the price level may still be rising.",
+      "Nominal wages are fixed while real wages rise automatically."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "disinflation-and-policy",
+    "pool": "easy",
+    "q": "Why can a credible anti-inflation announcement reduce the short-run cost of disinflation?",
+    "correctAnswer": "Expected inflation may adjust downward more quickly.",
+    "distractors": [
+      "It permanently eliminates the natural rate of unemployment.",
+      "It guarantees that the price level falls immediately.",
+      "It makes aggregate demand irrelevant."
+    ],
+    "primarySkill": "disinflation_credibility",
+    "repairSkill": "disinflation_credibility",
+    "commonError": "Ignoring the role of expected inflation in the transition.",
+    "feedback": "When expectations fall sooner, wage and price setting can adjust with less output and unemployment loss.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-DIS-E-002",
+    "options": [
+      "It permanently eliminates the natural rate of unemployment.",
+      "It guarantees that the price level falls immediately.",
+      "It makes aggregate demand irrelevant.",
+      "Expected inflation may adjust downward more quickly."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "disinflation-and-policy",
+    "pool": "easy",
+    "q": "The sacrifice ratio measures the:",
+    "correctAnswer": "Cumulative output lost per percentage-point reduction in inflation.",
+    "distractors": [
+      "The permanent unemployment rate created by a recession.",
+      "The price-level increase caused by one point of money growth.",
+      "The share of public spending financed by current taxes."
+    ],
+    "primarySkill": "sacrifice_ratio_definition",
+    "repairSkill": "sacrifice_ratio_definition",
+    "commonError": "Treating the sacrifice ratio as a permanent unemployment rate.",
+    "feedback": "The sacrifice ratio summarizes the output cost of lowering inflation.",
+    "type": "definition",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-DIS-E-003",
+    "options": [
+      "Cumulative output lost per percentage-point reduction in inflation.",
+      "The permanent unemployment rate created by a recession.",
+      "The price-level increase caused by one point of money growth.",
+      "The share of public spending financed by current taxes."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "disinflation-and-policy",
+    "pool": "hard",
+    "q": "A central bank announces a gradual disinflation, but households and firms doubt that the plan will continue. What is the most likely consequence?",
+    "correctAnswer": "High expected inflation can prolong the output and job losses.",
+    "distractors": [
+      "The natural unemployment rate immediately falls to zero.",
+      "The price level must begin falling throughout the adjustment.",
+      "Unemployment cannot rise because the disinflation is gradual."
+    ],
+    "primarySkill": "disinflation_credibility",
+    "repairSkill": "disinflation_credibility",
+    "commonError": "Assuming gradualism automatically produces low transition costs.",
+    "feedback": "If the plan lacks credibility, expected inflation can adjust slowly and make the disinflation more costly.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-DIS-H-001",
+    "options": [
+      "The natural unemployment rate immediately falls to zero.",
+      "High expected inflation can prolong the output and job losses.",
+      "The price level must begin falling throughout the adjustment.",
+      "Unemployment cannot rise because the disinflation is gradual."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "disinflation-and-policy",
+    "pool": "legendary",
+    "q": "Country A has a sacrifice ratio of 2, while Country B has a sacrifice ratio of 5. If both reduce inflation by 3 percentage points, which comparison is correct?",
+    "correctAnswer": "A loses about 6% of annual GDP cumulatively; B loses about 15%.",
+    "distractors": [
+      "A loses about 15% of annual GDP cumulatively; B loses about 6%.",
+      "Both lose about 3% of annual GDP because the inflation reduction is equal.",
+      "A has no output loss because its sacrifice ratio is below the inflation reduction."
+    ],
+    "primarySkill": "sacrifice_ratio_calculation",
+    "repairSkill": "sacrifice_ratio_calculation",
+    "commonError": "Reversing the sacrifice ratios or treating equal inflation reductions as equal output costs.",
+    "feedback": "Cumulative output loss equals the sacrifice ratio times the inflation reduction: 2 × 3 = 6 for A and 5 × 3 = 15 for B.",
+    "type": "calculation",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-DIS-L-001",
+    "options": [
+      "A loses about 15% of annual GDP cumulatively; B loses about 6%.",
+      "Both lose about 3% of annual GDP because the inflation reduction is equal.",
+      "A loses about 6% of annual GDP cumulatively; B loses about 15%.",
+      "A has no output loss because its sacrifice ratio is below the inflation reduction."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "disinflation-and-policy",
+    "pool": "boss_hard",
+    "q": "Two central banks pursue the same reduction in inflation. One has strong credibility and expected inflation falls quickly. Compared with the less credible bank, what is the likely transition?",
+    "correctAnswer": "A smaller temporary output and unemployment cost.",
+    "distractors": [
+      "A permanently lower natural rate of unemployment.",
+      "A larger price-level increase caused by credibility.",
+      "No change in expected inflation."
+    ],
+    "primarySkill": "disinflation_credibility",
+    "repairSkill": "disinflation_credibility",
+    "commonError": "Assuming credibility changes the long-run natural rate rather than the transition cost.",
+    "feedback": "Faster adjustment of expected inflation can reduce the sacrifice required to lower actual inflation.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-DIS-B3-001",
+    "options": [
+      "A permanently lower natural rate of unemployment.",
+      "A larger price-level increase caused by credibility.",
+      "No change in expected inflation.",
+      "A smaller temporary output and unemployment cost."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "easy",
+    "q": "Which unemployment is excluded from the natural rate?",
+    "correctAnswer": "Cyclical unemployment caused by a recessionary gap.",
+    "distractors": [
+      "Frictional unemployment from job search.",
+      "Structural unemployment from skill mismatch.",
+      "Unemployment caused by normal worker turnover."
+    ],
+    "primarySkill": "natural_rate_components",
+    "repairSkill": "natural_rate_components",
+    "commonError": "Including cyclical unemployment in the natural-rate baseline.",
+    "feedback": "The natural rate includes frictional and structural unemployment, not recession-driven cyclical unemployment.",
+    "type": "definition",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-E-001",
+    "options": [
+      "Cyclical unemployment caused by a recessionary gap.",
+      "Frictional unemployment from job search.",
+      "Structural unemployment from skill mismatch.",
+      "Unemployment caused by normal worker turnover."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "easy",
+    "q": "The natural rate of unemployment is best described as:",
+    "correctAnswer": "A normal benchmark that can change as labor-market conditions change.",
+    "distractors": [
+      "A fixed constant that must be identical in every decade.",
+      "A target of zero unemployment.",
+      "The unemployment rate observed only during recessions."
+    ],
+    "primarySkill": "natural_rate_not_fixed",
+    "repairSkill": "natural_rate_not_fixed",
+    "commonError": "Treating the natural rate as zero or permanently fixed.",
+    "feedback": "Demographics, institutions, matching efficiency, and structural change can alter the natural rate.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-E-002",
+    "options": [
+      "A fixed constant that must be identical in every decade.",
+      "A normal benchmark that can change as labor-market conditions change.",
+      "A target of zero unemployment.",
+      "The unemployment rate observed only during recessions."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "easy",
+    "q": "A more effective job-search platform helps workers find suitable jobs faster. What is the most likely effect on the natural rate?",
+    "correctAnswer": "It falls because frictional unemployment is reduced.",
+    "distractors": [
+      "It rises because cyclical unemployment increases.",
+      "It becomes equal to the inflation rate.",
+      "It cannot change because the natural rate is fixed."
+    ],
+    "primarySkill": "natural_rate_policy_shift",
+    "repairSkill": "natural_rate_policy_shift",
+    "commonError": "Assuming better matching affects only cyclical unemployment.",
+    "feedback": "Faster matching shortens normal job search and can lower the natural rate.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-E-003",
+    "options": [
+      "It rises because cyclical unemployment increases.",
+      "It becomes equal to the inflation rate.",
+      "It falls because frictional unemployment is reduced.",
+      "It cannot change because the natural rate is fixed."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "medium",
+    "q": "A rapid shift away from coal production leaves many workers without the skills demanded by expanding industries. What is the most likely effect?",
+    "correctAnswer": "Structural unemployment and the natural rate may rise.",
+    "distractors": [
+      "Cyclical unemployment must fall to zero.",
+      "The natural rate must fall because jobs changed.",
+      "Frictional unemployment disappears immediately."
+    ],
+    "primarySkill": "structural_change_natural_rate",
+    "repairSkill": "structural_change_natural_rate",
+    "commonError": "Classifying a persistent skill mismatch as only cyclical unemployment.",
+    "feedback": "Sectoral change can raise structural unemployment and therefore the natural rate.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-M-001",
+    "options": [
+      "Cyclical unemployment must fall to zero.",
+      "The natural rate must fall because jobs changed.",
+      "Frictional unemployment disappears immediately.",
+      "Structural unemployment and the natural rate may rise."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "medium",
+    "q": "Actual unemployment is below the estimated natural rate. Which interpretation is strongest?",
+    "correctAnswer": "The labor market is unusually tight, with possible inflation pressure.",
+    "distractors": [
+      "The economy has eliminated every form of unemployment.",
+      "Structural unemployment must have fallen permanently to zero.",
+      "The economy must be operating with a recessionary output gap."
+    ],
+    "primarySkill": "below_natural_rate_interpretation",
+    "repairSkill": "below_natural_rate_interpretation",
+    "commonError": "Equating below-natural unemployment with zero unemployment or recession.",
+    "feedback": "Unemployment below the natural rate indicates a tight labor market, not the disappearance of frictional and structural unemployment.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-M-002",
+    "options": [
+      "The labor market is unusually tight, with possible inflation pressure.",
+      "The economy has eliminated every form of unemployment.",
+      "Structural unemployment must have fallen permanently to zero.",
+      "The economy must be operating with a recessionary output gap."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "medium",
+    "q": "A temporary collapse in aggregate demand ends, and spending returns to normal. What should happen to unemployment if the natural rate itself did not change?",
+    "correctAnswer": "Cyclical unemployment fades, moving actual unemployment toward the natural rate.",
+    "distractors": [
+      "The natural rate rises permanently by the recession increase.",
+      "Frictional unemployment falls permanently to zero after spending recovers.",
+      "Actual unemployment remains at its recession peak even after demand returns."
+    ],
+    "primarySkill": "cyclical_return_to_natural",
+    "repairSkill": "cyclical_return_to_natural",
+    "commonError": "Treating a temporary demand-driven unemployment increase as a permanent natural-rate shift.",
+    "feedback": "When the demand shortfall closes, cyclical unemployment recedes and the unemployment rate moves toward its natural benchmark.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-M-003",
+    "options": [
+      "The natural rate rises permanently by the recession increase.",
+      "Cyclical unemployment fades, moving actual unemployment toward the natural rate.",
+      "Frictional unemployment falls permanently to zero after spending recovers.",
+      "Actual unemployment remains at its recession peak even after demand returns."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "elite",
+    "q": "A long recession causes workers to lose skills and attachment to the labor force. Why might unemployment remain elevated after aggregate demand recovers?",
+    "correctAnswer": "Hysteresis may have raised the natural rate through lasting labor-market damage.",
+    "distractors": [
+      "The natural rate must remain unchanged after every recession.",
+      "Cyclical unemployment automatically becomes permanent inflation.",
+      "Frictional unemployment can exist only while the economy is expanding."
+    ],
+    "primarySkill": "natural_rate_hysteresis",
+    "repairSkill": "natural_rate_hysteresis",
+    "commonError": "Assuming all recession unemployment disappears without lasting effects.",
+    "feedback": "A prolonged downturn can create persistent skill loss or detachment that raises structural unemployment and the natural rate.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-EL-001",
+    "options": [
+      "The natural rate must remain unchanged after every recession.",
+      "Cyclical unemployment automatically becomes permanent inflation.",
+      "Hysteresis may have raised the natural rate through lasting labor-market damage.",
+      "Frictional unemployment can exist only while the economy is expanding."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "natural-rate-of-unemployment",
+    "pool": "repair",
+    "q": "Which statement corrects the claim that the natural rate is always zero and never changes?",
+    "correctAnswer": "It is normally positive and can change with labor-market conditions.",
+    "distractors": [
+      "It always equals cyclical unemployment in the current year.",
+      "It is permanently fixed by the central bank’s inflation target.",
+      "It includes only people who have completely stopped seeking work."
+    ],
+    "primarySkill": "natural_rate_not_fixed",
+    "repairSkill": "natural_rate_not_fixed",
+    "commonError": "Treating the natural rate as zero and immutable.",
+    "feedback": "The natural rate reflects normal search and mismatch, and its level can change over time.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-NRU-R-001",
+    "options": [
+      "It always equals cyclical unemployment in the current year.",
+      "It is permanently fixed by the central bank’s inflation target.",
+      "It includes only people who have completely stopped seeking work.",
+      "It is normally positive and can change with labor-market conditions."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "indexing-and-real-values",
+    "pool": "medium",
+    "q": "A pension has a full cost-of-living adjustment tied to the CPI. If measured inflation is 4 percent, what is the intended effect?",
+    "correctAnswer": "Raise the nominal payment about 4% to protect purchasing power.",
+    "distractors": [
+      "Reduce the nominal payment about 4% to offset inflation.",
+      "Hold the nominal payment fixed so its real value automatically rises.",
+      "Convert the pension payment into a market interest rate."
+    ],
+    "primarySkill": "indexation_purchasing_power",
+    "repairSkill": "indexation_purchasing_power",
+    "commonError": "Confusing nominal indexation with a reduction in benefits.",
+    "feedback": "A CPI-linked adjustment raises the nominal amount to offset measured price growth.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-INDEX-M-001",
+    "options": [
+      "Raise the nominal payment about 4% to protect purchasing power.",
+      "Reduce the nominal payment about 4% to offset inflation.",
+      "Hold the nominal payment fixed so its real value automatically rises.",
+      "Convert the pension payment into a market interest rate."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "indexing-and-real-values",
+    "pool": "hard",
+    "q": "Suppose the CPI systematically overstates the rise in the true cost of living. What can happen to a benefit that is fully indexed to the CPI?",
+    "correctAnswer": "The benefit can become too generous in real terms.",
+    "distractors": [
+      "The nominal benefit must decline every year.",
+      "The real value remains exactly constant by definition.",
+      "Indexing removes every possible measurement problem."
+    ],
+    "primarySkill": "indexation_measurement_bias",
+    "repairSkill": "indexation_measurement_bias",
+    "commonError": "Assuming an index-linked adjustment is exact even when the index is biased.",
+    "feedback": "If the CPI overstates cost-of-living growth, full CPI indexation can overcompensate recipients in real terms.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-INDEX-H-001",
+    "options": [
+      "The nominal benefit must decline every year.",
+      "The benefit can become too generous in real terms.",
+      "The real value remains exactly constant by definition.",
+      "Indexing removes every possible measurement problem."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "medium",
+    "q": "Which distinction between the Federal Reserve and the U.S. Treasury is correct?",
+    "correctAnswer": "The Fed conducts monetary policy, while the Treasury manages federal finances and debt operations.",
+    "distractors": [
+      "The Treasury sets the federal funds rate, while the Fed writes tax laws.",
+      "The Fed passes the federal budget, while the Treasury regulates inflation expectations.",
+      "Both institutions perform exactly the same functions."
+    ],
+    "primarySkill": "fed_treasury_distinction",
+    "repairSkill": "fed_treasury_distinction",
+    "commonError": "Treating the central bank and fiscal authority as the same institution.",
+    "feedback": "The Fed is the monetary authority; the Treasury is part of the executive branch and manages federal finances.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-M-001",
+    "options": [
+      "The Treasury sets the federal funds rate, while the Fed writes tax laws.",
+      "The Fed passes the federal budget, while the Treasury regulates inflation expectations.",
+      "The Fed conducts monetary policy, while the Treasury manages federal finances and debt operations.",
+      "Both institutions perform exactly the same functions."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "hard",
+    "q": "During a panic, a solvent bank cannot obtain short-term funding even though its assets exceed its liabilities. What central-bank response best fits the lender-of-last-resort role?",
+    "correctAnswer": "Provide temporary liquidity against sound collateral.",
+    "distractors": [
+      "Guarantee every bank loss without conditions.",
+      "Finance a permanent tax cut.",
+      "Raise reserve requirements solely to remove liquidity."
+    ],
+    "primarySkill": "lender_of_last_resort_design",
+    "repairSkill": "lender_of_last_resort_design",
+    "commonError": "Confusing liquidity support with an unconditional bailout of insolvent institutions.",
+    "feedback": "Lender-of-last-resort support addresses temporary liquidity problems while safeguards limit losses and moral hazard.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-H-001",
+    "options": [
+      "Guarantee every bank loss without conditions.",
+      "Finance a permanent tax cut.",
+      "Raise reserve requirements solely to remove liquidity.",
+      "Provide temporary liquidity against sound collateral."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "hard",
+    "q": "Which institutional arrangement best combines central-bank independence with democratic accountability?",
+    "correctAnswer": "Public officials set the mandate; the central bank chooses instruments and reports transparently.",
+    "distractors": [
+      "The central bank chooses national goals and never explains its decisions to the public.",
+      "Elected officials directly set policy interest rates before every national election.",
+      "The Treasury secretly directs monetary operations without a published mandate."
+    ],
+    "primarySkill": "independence_accountability",
+    "repairSkill": "independence_accountability",
+    "commonError": "Treating independence as freedom from any public mandate or oversight.",
+    "feedback": "Instrument independence can coexist with a legislated mandate, transparency, and public accountability.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-H-002",
+    "options": [
+      "Public officials set the mandate; the central bank chooses instruments and reports transparently.",
+      "The central bank chooses national goals and never explains its decisions to the public.",
+      "Elected officials directly set policy interest rates before every national election.",
+      "The Treasury secretly directs monetary operations without a published mandate."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "hard",
+    "q": "When the central bank buys a large quantity of longer-term securities, what happens directly on its balance sheet?",
+    "correctAnswer": "Its securities assets and reserve liabilities usually both rise.",
+    "distractors": [
+      "Tax revenue rises while currency liabilities disappear from the balance sheet.",
+      "Government purchases of goods rise automatically with the securities purchase.",
+      "Commercial-bank capital is converted directly into federal tax receipts."
+    ],
+    "primarySkill": "central_bank_balance_sheet",
+    "repairSkill": "central_bank_balance_sheet",
+    "commonError": "Treating asset purchases as ordinary fiscal spending.",
+    "feedback": "A central-bank asset purchase expands its asset holdings and typically creates reserve liabilities.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-H-003",
+    "options": [
+      "Tax revenue rises while currency liabilities disappear from the balance sheet.",
+      "Its securities assets and reserve liabilities usually both rise.",
+      "Government purchases of goods rise automatically with the securities purchase.",
+      "Commercial-bank capital is converted directly into federal tax receipts."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "hard",
+    "q": "The short-term policy rate is near its effective lower bound. Which action is still a monetary-policy option?",
+    "correctAnswer": "Use forward guidance or buy longer-term securities.",
+    "distractors": [
+      "Change federal income-tax rates through the banking system.",
+      "Authorize a new congressional spending program immediately.",
+      "Set private-sector wages and prices by administrative order."
+    ],
+    "primarySkill": "unconventional_monetary_policy",
+    "repairSkill": "unconventional_monetary_policy",
+    "commonError": "Assuming monetary policy has no remaining tools when a short-term rate is very low.",
+    "feedback": "Central banks may use communication and balance-sheet tools when conventional rate cuts are constrained.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-H-004",
+    "options": [
+      "Change federal income-tax rates through the banking system.",
+      "Authorize a new congressional spending program immediately.",
+      "Use forward guidance or buy longer-term securities.",
+      "Set private-sector wages and prices by administrative order."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "elite",
+    "q": "A government persistently pressures its central bank to create money to finance large deficits. What institutional risk is most relevant?",
+    "correctAnswer": "Fiscal dominance can weaken price stability and central-bank credibility.",
+    "distractors": [
+      "The natural rate of unemployment automatically becomes zero.",
+      "The money supply becomes unrelated to the central bank.",
+      "Budget deficits cease to have opportunity costs."
+    ],
+    "primarySkill": "fiscal_dominance",
+    "repairSkill": "fiscal_dominance",
+    "commonError": "Ignoring how fiscal pressure can compromise monetary-policy objectives.",
+    "feedback": "Under fiscal dominance, debt-financing pressure can subordinate monetary policy and raise inflation risk.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-EL-001",
+    "options": [
+      "The natural rate of unemployment automatically becomes zero.",
+      "The money supply becomes unrelated to the central bank.",
+      "Budget deficits cease to have opportunity costs.",
+      "Fiscal dominance can weaken price stability and central-bank credibility."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "elite",
+    "q": "Emergency lending stops a bank run, but banks now expect rescue whenever they take large risks. What tradeoff does the central bank face?",
+    "correctAnswer": "Financial stability today versus greater moral hazard tomorrow.",
+    "distractors": [
+      "Lower inflation today versus a permanently lower natural rate.",
+      "Higher taxes today versus lower government spending tomorrow.",
+      "More exports today versus fewer imports tomorrow."
+    ],
+    "primarySkill": "lender_of_last_resort_moral_hazard",
+    "repairSkill": "lender_of_last_resort_moral_hazard",
+    "commonError": "Evaluating emergency lending without considering future risk-taking incentives.",
+    "feedback": "Liquidity support can stabilize the system, but poorly designed guarantees can encourage excessive risk.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-EL-002",
+    "options": [
+      "Financial stability today versus greater moral hazard tomorrow.",
+      "Lower inflation today versus a permanently lower natural rate.",
+      "Higher taxes today versus lower government spending tomorrow.",
+      "More exports today versus fewer imports tomorrow."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "legendary",
+    "q": "Why does central-bank independence not mean the central bank should be free to choose any social objective it wants?",
+    "correctAnswer": "Independence covers instrument choice within a publicly established mandate.",
+    "distractors": [
+      "Independence requires all monetary-policy decisions to remain secret.",
+      "The central bank must directly control federal taxes and spending.",
+      "Independence means elected institutions have no legitimate policy role."
+    ],
+    "primarySkill": "independence_accountability",
+    "repairSkill": "independence_accountability",
+    "commonError": "Equating instrument independence with unlimited policy authority.",
+    "feedback": "A legitimate framework separates public goal setting from day-to-day instrument choices and requires accountability.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-L-001",
+    "options": [
+      "Independence requires all monetary-policy decisions to remain secret.",
+      "Independence covers instrument choice within a publicly established mandate.",
+      "The central bank must directly control federal taxes and spending.",
+      "Independence means elected institutions have no legitimate policy role."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "central-bank-and-federal-reserve",
+    "pool": "legendary",
+    "q": "Inflation is well above target and output is near potential, but elected officials demand easier money before an election. What is the strongest case for central-bank independence?",
+    "correctAnswer": "It resists election-driven easing and protects price-stability credibility.",
+    "distractors": [
+      "It guarantees that monetary tightening has no short-run output cost.",
+      "It allows the central bank to eliminate every federal budget deficit.",
+      "It permanently fixes unemployment below the natural rate."
+    ],
+    "primarySkill": "time_inconsistency_independence",
+    "repairSkill": "time_inconsistency_independence",
+    "commonError": "Assuming independence removes policy tradeoffs rather than improving commitment.",
+    "feedback": "Independence can support credible commitment to price stability even when near-term political incentives favor expansion.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-FED-L-002",
+    "options": [
+      "It guarantees that monetary tightening has no short-run output cost.",
+      "It allows the central bank to eliminate every federal budget deficit.",
+      "It resists election-driven easing and protects price-stability credibility.",
+      "It permanently fixes unemployment below the natural rate."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "real-versus-nominal-interest-rates",
+    "pool": "medium",
+    "q": "Which statement correctly distinguishes ex ante and ex post real interest rates?",
+    "correctAnswer": "Ex ante uses expected inflation; ex post uses actual inflation.",
+    "distractors": [
+      "Both measures subtract actual inflation from the nominal rate.",
+      "Ex ante adds expected inflation to the nominal interest rate.",
+      "Ex post is known with certainty when the loan contract is signed."
+    ],
+    "primarySkill": "ex_ante_ex_post_real_rate",
+    "repairSkill": "ex_ante_ex_post_real_rate",
+    "commonError": "Using actual inflation for both the expected and realized real return.",
+    "feedback": "The expected real return is based on expected inflation, while the realized real return uses actual inflation.",
+    "type": "application",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-RNI-M-001",
+    "options": [
+      "Both measures subtract actual inflation from the nominal rate.",
+      "Ex ante adds expected inflation to the nominal interest rate.",
+      "Ex post is known with certainty when the loan contract is signed.",
+      "Ex ante uses expected inflation; ex post uses actual inflation."
+    ],
+    "a": 3
+  },
+  {
+    "conceptId": "long-run-macroeconomic-adjustment",
+    "pool": "legendary",
+    "q": "A temporary negative aggregate-demand shock lowers output below potential. With no policy response and flexible wages and expected prices over time, what is the long-run outcome?",
+    "correctAnswer": "SRAS shifts right and output returns to potential at a lower price level.",
+    "distractors": [
+      "Output remains permanently below potential with the original price level.",
+      "LRAS shifts left until productive capacity matches the recession output.",
+      "Aggregate demand automatically shifts right because unemployment increased."
+    ],
+    "primarySkill": "long_run_self_correction_demand_shock",
+    "repairSkill": "long_run_self_correction_demand_shock",
+    "commonError": "Treating a temporary demand shock as a permanent change in productive capacity.",
+    "feedback": "Falling wages and expected prices shift SRAS right, restoring natural output while leaving the price level lower.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRADJ-L-001",
+    "options": [
+      "SRAS shifts right and output returns to potential at a lower price level.",
+      "Output remains permanently below potential with the original price level.",
+      "LRAS shifts left until productive capacity matches the recession output.",
+      "Aggregate demand automatically shifts right because unemployment increased."
+    ],
+    "a": 0
+  },
+  {
+    "conceptId": "long-run-macroeconomic-adjustment",
+    "pool": "boss_easy",
+    "q": "In the long-run AD–AS model, natural output is determined mainly by:",
+    "correctAnswer": "Labor, capital, natural resources, technology, and institutions.",
+    "distractors": [
+      "The current price level alone.",
+      "The latest movement in aggregate demand alone.",
+      "The nominal money supply with no real-side conditions."
+    ],
+    "primarySkill": "natural_output_determinants",
+    "repairSkill": "natural_output_determinants",
+    "commonError": "Treating natural output as a price-level or demand choice.",
+    "feedback": "Natural output reflects the economy’s productive capacity and real institutions.",
+    "type": "definition",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRADJ-B1-001",
+    "options": [
+      "The current price level alone.",
+      "Labor, capital, natural resources, technology, and institutions.",
+      "The latest movement in aggregate demand alone.",
+      "The nominal money supply with no real-side conditions."
+    ],
+    "a": 1
+  },
+  {
+    "conceptId": "long-run-macroeconomic-adjustment",
+    "pool": "boss_medium",
+    "q": "An economy has a recessionary gap and policymakers do nothing. Which self-correcting sequence is most consistent with the model?",
+    "correctAnswer": "Lower wage and price expectations shift SRAS right toward potential.",
+    "distractors": [
+      "Higher wages shift SRAS left and deepen the recessionary gap.",
+      "LRAS shifts left until potential output equals the depressed output level.",
+      "Aggregate demand rises automatically because the current price level is fixed."
+    ],
+    "primarySkill": "recessionary_gap_self_correction",
+    "repairSkill": "recessionary_gap_self_correction",
+    "commonError": "Reversing the wage and SRAS adjustment in a recessionary gap.",
+    "feedback": "Below-potential output puts downward pressure on wages and expected prices, allowing SRAS to shift right.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRADJ-B2-001",
+    "options": [
+      "Higher wages shift SRAS left and deepen the recessionary gap.",
+      "LRAS shifts left until potential output equals the depressed output level.",
+      "Lower wage and price expectations shift SRAS right toward potential.",
+      "Aggregate demand rises automatically because the current price level is fixed."
+    ],
+    "a": 2
+  },
+  {
+    "conceptId": "long-run-macroeconomic-adjustment",
+    "pool": "boss_hard",
+    "q": "Demand growth pushes output above potential. If no stabilization policy is used, which long-run adjustment is most likely?",
+    "correctAnswer": "Rising costs shift SRAS left, returning output to potential at a higher price level.",
+    "distractors": [
+      "Falling wages shift SRAS right and push output farther above potential.",
+      "LRAS shifts right solely because the current price level has increased.",
+      "Output stays permanently above potential without creating inflation pressure."
+    ],
+    "primarySkill": "inflationary_gap_self_correction",
+    "repairSkill": "inflationary_gap_self_correction",
+    "commonError": "Using recessionary-gap adjustment for an inflationary gap.",
+    "feedback": "An overheated labor market raises costs and expected prices, shifting SRAS left and closing the inflationary gap.",
+    "type": "multi-step",
+    "secondarySkills": [],
+    "canonicalId": "P52B-S1-LRADJ-B3-001",
+    "options": [
+      "Falling wages shift SRAS right and push output farther above potential.",
+      "LRAS shifts right solely because the current price level has increased.",
+      "Output stays permanently above potential without creating inflation pressure.",
+      "Rising costs shift SRAS left, returning output to potential at a higher price level."
+    ],
+    "a": 3
+  }
+]

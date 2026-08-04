@@ -1,0 +1,47 @@
+{
+  "phase": "5.2b-stage1",
+  "targetConcepts": [
+    "long-run-phillips-curve",
+    "disinflation-and-policy",
+    "natural-rate-of-unemployment",
+    "indexing-and-real-values",
+    "central-bank-and-federal-reserve",
+    "real-versus-nominal-interest-rates",
+    "long-run-macroeconomic-adjustment"
+  ],
+  "newQuestions": 36,
+  "baselineCanonicalQuestions": 2834,
+  "finalCanonicalQuestions": 2870,
+  "answerHashVerification": {
+    "passed": 36,
+    "failed": 0
+  },
+  "canonicalIdDuplicates": 0,
+  "newCanonicalIdDuplicates": 0,
+  "newExactStemDuplicates": 0,
+  "newNearDuplicatesAtOrAbove0_88": 0,
+  "newVsExistingNearDuplicatesAtOrAbove0_88": 0,
+  "answerPositionDistribution": {
+    "0": 9,
+    "1": 9,
+    "2": 9,
+    "3": 9
+  },
+  "coverageStatusCounts": {
+    "ready-focused": 9,
+    "best-paired": 23,
+    "supplemental-ready": 11,
+    "insufficient": 21
+  },
+  "remainingInsufficientConcepts": 21,
+  "librarySha256": "de4c54720cb4ba2c348f575e4d35b1e415208c3b81fcceb3a6aa3ccf6b3ddc6e",
+  "answerLengthBiasWarnings": 0,
+  "statusValidation": "7/7 PASS",
+  "compositionValidation": "6/6 PASS",
+  "legacyRecipeRegression": "8/8 PASS",
+  "protectedFilesUnchanged": true,
+  "protectedFileCount": 48,
+  "questionAssetsUnchanged": true,
+  "questionAssetCount": 43,
+  "generatedSampleValidation": "PASS"
+}
