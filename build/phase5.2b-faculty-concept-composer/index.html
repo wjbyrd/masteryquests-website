@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Faculty Concept Composer</title>
+  <link rel="stylesheet" href="composer.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Faculty Concept Composer</h1>
+    <p>Choose economic concepts, select the game modes you plan to use, review automatic checkpoint coverage, and generate a populated Mastery Quest without editing JavaScript.</p>
+  </header>
+
+  <main class="app-shell">
+    <div id="protocolWarning" class="protocol-warning" role="alert">
+      This tool must be opened from the hosted site or a local HTTP server so it can load its game files.
+    </div>
+
+    <nav class="step-nav" aria-label="Composer steps">
+      <button data-step="1" class="active">1. Game details</button>
+      <button data-step="2">2. Modes</button>
+      <button data-step="3">3. Concepts</button>
+      <button data-step="4">4. Checkpoints</button>
+      <button data-step="5">5. Readiness</button>
+      <button data-step="6">6. Generate</button>
+    </nav>
+
+    <section class="step active" data-step-panel="1">
+      <div class="panel">
+        <h2>Game details</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label for="gameTitle">Game title</label>
+            <input id="gameTitle" value="My Faculty Mastery Quest" maxlength="100">
+          </div>
+          <div class="field">
+            <label for="gameSlug">File name</label>
+            <input id="gameSlug" value="my-faculty-mastery-quest" pattern="[a-z0-9-]+">
+            <small>Use lowercase letters, numbers, and hyphens.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step" data-step-panel="2">
+      <div class="panel">
+        <h2>Game modes</h2>
+        <p>Select only the modes you intend to offer. The composer will tell you whether the chosen concepts provide enough questions for each mode.</p>
+        <div id="modeOptions" class="mode-options"></div>
+      </div>
+    </section>
+
+    <section class="step" data-step-panel="3">
+      <div class="panel">
+        <div class="panel-heading-row">
+          <div>
+            <h2>Choose concepts</h2>
+            <p>Search by concept or description. Course-area filters are independent of any textbook chapter sequence.</p>
+          </div>
+        </div>
+
+        <div class="preset-section" aria-labelledby="presetHeading">
+          <div>
+            <h3 id="presetHeading">Starter combinations</h3>
+            <p>Use a preset as a starting point, then add or remove concepts to match your course.</p>
+          </div>
+          <div id="presetOptions" class="preset-options"></div>
+        </div>
+
+        <div class="filters">
+          <div class="field">
+            <label for="conceptSearch">Search</label>
+            <input id="conceptSearch" placeholder="Search concepts or descriptions">
+          </div>
+          <div class="field">
+            <label for="areaFilter">Course area</label>
+            <select id="areaFilter">
+              <option value="">All areas</option>
+              <option value="general">General economics</option>
+              <option value="micro">Microeconomics</option>
+              <option value="macro">Macroeconomics</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="selectionFilter">Selection</label>
+            <select id="selectionFilter">
+              <option value="all">All concepts</option>
+              <option value="selected">Selected only</option>
+              <option value="unselected">Not selected</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="selectedConceptSummary" class="selected-summary" aria-live="polite"></div>
+        <div id="conceptRecommendations" class="recommendation-box"></div>
+
+        <details class="reading-guide">
+          <summary>How to read the concept cards</summary>
+          <p><strong>Practice questions</strong> are used throughout the game. <strong>Checkpoint questions</strong> test readiness at the three checkpoints. <strong>Repair</strong> and <strong>bridge</strong> questions support adaptive review after a missed concept. Graph, calculation, and integrated-analysis labels appear only when that special format is actually present.</p>
+        </details>
+
+        <div id="conceptGrid" class="concept-grid"></div>
+      </div>
+    </section>
+
+    <section class="step" data-step-panel="4">
+      <div class="panel">
+        <h2>Checkpoint coverage</h2>
+        <p>The composer automatically uses easy checkpoint questions at Checkpoint One, medium checkpoint questions at Checkpoint Two, and hard checkpoint questions at the Final Checkpoint. All ordinary questions remain available throughout the game.</p>
+        <div id="checkpointBoard" class="checkpoint-board"></div>
+      </div>
+    </section>
+
+    <section class="step" data-step-panel="5">
+      <div class="panel">
+        <h2>Game readiness</h2>
+        <div id="readinessMessage" class="readiness-message"></div>
+        <div id="summaryGrid" class="summary-grid"></div>
+        <div id="modeValidation" class="mode-validation"></div>
+        <div id="coverageRecommendations" class="recommendation-box"></div>
+        <div id="warnings"></div>
+        <details class="advanced coverage-details">
+          <summary>View detailed question-pool counts</summary>
+          <div id="detailedCoverage" class="summary-grid detailed-summary"></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="step" data-step-panel="6">
+      <div class="panel">
+        <h2>Generate your game</h2>
+        <p>The downloaded game uses one self-contained HTML file. Graph images are embedded, so there is no separate asset folder to upload or keep beside the game.</p>
+        <div id="finalSummary" class="review-box"></div>
+        <div class="action-row" style="margin-top:16px">
+          <button id="downloadPackage" class="primary">Download Game (.ZIP)</button>
+          <button id="downloadRecipe" class="secondary">Download Composition Recipe (.JSON)</button>
+          <button id="importRecipeBtn" class="secondary">Import Composition Recipe</button>
+          <input id="importRecipe" class="hidden" type="file" accept="application/json,.json">
+          <button id="clearComposition" class="danger">Clear Composition</button>
+        </div>
+        <details class="advanced" style="margin-top:16px">
+          <summary>Advanced technical details</summary>
+          <pre id="technicalDetails"></pre>
+        </details>
+      </div>
+    </section>
+
+    <div class="action-row composer-navigation">
+      <button id="prevStep" class="secondary">Previous</button>
+      <button id="nextStep" class="primary">Next</button>
+    </div>
+    <div id="liveRegion" class="screen-reader" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
+
+  <script src="composer-core.js"></script>
+  <script src="data/composer_library.js"></script>
+  <script src="composer.js"></script>
+</body>
+</html>
