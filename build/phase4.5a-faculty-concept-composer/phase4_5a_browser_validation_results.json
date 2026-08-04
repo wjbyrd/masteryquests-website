@@ -1,0 +1,104 @@
+{
+  "execution": "Playwright set_content with local runtime injection",
+  "checks": [
+    {
+      "name": "course_area_filter_present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "chapter_filter_removed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "search_copy_has_no_objectives",
+      "passed": true,
+      "details": "Search concepts or descriptions"
+    },
+    {
+      "name": "chapter_pills_removed",
+      "passed": true,
+      "details": "No visible Ch # labels"
+    },
+    {
+      "name": "abbreviated_counts_removed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "prerequisite_label_removed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "preset_controls_present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "course_area_filters_work",
+      "passed": true,
+      "details": "macro=54, micro=18, general=12"
+    },
+    {
+      "name": "preset_selects_concepts",
+      "passed": true,
+      "details": "selected=10"
+    },
+    {
+      "name": "selected_concept_summary_present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "automatic_checkpoint_summary_first",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "checkpoint_customization_collapsed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "plain_language_readiness",
+      "passed": true,
+      "details": "Not ready for every selected mode.\nStandard Campaign, Score Attack need more coverage. Other passing modes remain usable."
+    },
+    {
+      "name": "boss_terminology_removed_from_readiness",
+      "passed": true,
+      "details": "NEEDS MORE QUESTIONS\nStandard Campaign\n\nCheckpoint One questions: 0 available; 3 required.\n\nView requirements\nREADY\nTimed Trial\n\nThis mode has the required question coverage.\n\nView requirements\nREADY\nExam Drill\n\nThis mode has the required question coverage.\n\nView requirements\nREADY\nLegendary Mode\n\nT"
+    },
+    {
+      "name": "coverage_recommendations_rendered",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "generation_enabled_for_supported_mix",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "zip_generation_downloads",
+      "passed": true,
+      "details": "my-faculty-mastery-quest.zip"
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "passed": true,
+      "details": "overflow=False"
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "downloads": [
+    {
+      "suggested_filename": "my-faculty-mastery-quest.zip",
+      "size_bytes": 1299011
+    }
+  ],
+  "passed": true
+}

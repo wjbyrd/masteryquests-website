@@ -1,0 +1,16 @@
+{
+  "sourceTemplate": "/mnt/data/mastery-quests-faculty-template(3).html",
+  "sourceTemplateSha256": "788c7aa7ae77451726b5734d8d7b7618192c0f8dcaae6f505a21e61ecc86c96f",
+  "composerReadyTemplateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+  "authorizedChanges": [
+    "added generated configuration region before storage keys",
+    "made storage and mission namespaces configuration-driven",
+    "made page and visible game titles configuration-driven",
+    "added mode-card data attributes and supported-mode hiding",
+    "blocked unsupported mode launches",
+    "hid Standard Continue when Standard is unsupported",
+    "made telemetry, report, and CSV labels configuration-driven"
+  ],
+  "questionBankRegionChanged": false,
+  "authoritativeTemplateChanged": false
+}

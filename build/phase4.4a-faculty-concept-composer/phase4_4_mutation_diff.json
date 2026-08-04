@@ -1,0 +1,2185 @@
+{
+  "phase": "4.4",
+  "authoritativeBlankTemplate": {
+    "path": "/mnt/data/mastery-quests-faculty-template(3).html",
+    "expectedSha256": "788c7aa7ae77451726b5734d8d7b7618192c0f8dcaae6f505a21e61ecc86c96f",
+    "actualSha256": "788c7aa7ae77451726b5734d8d7b7618192c0f8dcaae6f505a21e61ecc86c96f",
+    "changed": false
+  },
+  "curatedConceptLibrary": {
+    "acceptedReferenceZip": "/mnt/data/phase4.3a-curated-concept-library-browser-validated.zip",
+    "acceptedReferenceZipSha256": "be39a2b72c02b73cc6587001fb6cdf456521fda22e8ba67f4ba8d9c78923f4a8",
+    "protectedFileCount": 305,
+    "protectedFilesMatched": 305,
+    "protectedFilesChanged": [],
+    "protectedSourceWorkspaceChanged": false,
+    "protectedFileComparison": [
+      {
+        "file": "concept_registry.json",
+        "archivePresent": true,
+        "currentSha256": "090f6d4c91eb00a3484e13b0b9942f0dd7038bc705bac2a8d32206b6c89fd416",
+        "acceptedZipSha256": "090f6d4c91eb00a3484e13b0b9942f0dd7038bc705bac2a8d32206b6c89fd416",
+        "matched": true
+      },
+      {
+        "file": "concept_registry.js",
+        "archivePresent": true,
+        "currentSha256": "ca647a0e22eae894ed0467f4c032cb680be55b9a1e36af7ed09b3e5e01333490",
+        "acceptedZipSha256": "ca647a0e22eae894ed0467f4c032cb680be55b9a1e36af7ed09b3e5e01333490",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-demand/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "0532719be1cfa0ca0c2bef857b08f8176f76604ede42c65daa2f4b9e34162398",
+        "acceptedZipSha256": "0532719be1cfa0ca0c2bef857b08f8176f76604ede42c65daa2f4b9e34162398",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-demand/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "51a0314b3e6d5a612552da64f3d483cf34bdede2c5b04090768c67a4d9c01b79",
+        "acceptedZipSha256": "51a0314b3e6d5a612552da64f3d483cf34bdede2c5b04090768c67a4d9c01b79",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-demand/question-assets/adas1.webp",
+        "archivePresent": true,
+        "currentSha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
+        "acceptedZipSha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-demand/question-assets/adaslras.webp",
+        "archivePresent": true,
+        "currentSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "acceptedZipSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-demand/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "9cb6e93bc14a0feaa7d7dfd4c9c7db45d31d5f9603a5bc59fc101187daa867c5",
+        "acceptedZipSha256": "9cb6e93bc14a0feaa7d7dfd4c9c7db45d31d5f9603a5bc59fc101187daa867c5",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-demand/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "650f64581a85cf377f5e395b280a45f46c26398060ab3a6bad4ae28adaf63fef",
+        "acceptedZipSha256": "650f64581a85cf377f5e395b280a45f46c26398060ab3a6bad4ae28adaf63fef",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-supply/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "abaac3535dd4da56d8b2cf63f83bba4c0f4ab4fd7ff8598e16412da4324c5bd6",
+        "acceptedZipSha256": "abaac3535dd4da56d8b2cf63f83bba4c0f4ab4fd7ff8598e16412da4324c5bd6",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-supply/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "5ab04b6d6b039bc80467abba61dded36ecd7cd9098c85ae588d7fc5d890fa8b2",
+        "acceptedZipSha256": "5ab04b6d6b039bc80467abba61dded36ecd7cd9098c85ae588d7fc5d890fa8b2",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-supply/question-assets/adas1.webp",
+        "archivePresent": true,
+        "currentSha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
+        "acceptedZipSha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-supply/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "272602f65d679303dee0fea8f887e7b1c276e45da84b4a66d6ae1d8b1092f88e",
+        "acceptedZipSha256": "272602f65d679303dee0fea8f887e7b1c276e45da84b4a66d6ae1d8b1092f88e",
+        "matched": true
+      },
+      {
+        "file": "concepts/aggregate-supply/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "32a67a9870f85fb937fb8550b156c6f6f90df6efec6820c93de1f62129f188c9",
+        "acceptedZipSha256": "32a67a9870f85fb937fb8550b156c6f6f90df6efec6820c93de1f62129f188c9",
+        "matched": true
+      },
+      {
+        "file": "concepts/bank-money-creation/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "106a0eed633fabc9e1b261c1cd9a280da0a12d17b803647fc00f99812666dc29",
+        "acceptedZipSha256": "106a0eed633fabc9e1b261c1cd9a280da0a12d17b803647fc00f99812666dc29",
+        "matched": true
+      },
+      {
+        "file": "concepts/bank-money-creation/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "c87b0798b434d2a5642f47e6c3710745b44bd90b3be18109b281bd1c937bd170",
+        "acceptedZipSha256": "c87b0798b434d2a5642f47e6c3710745b44bd90b3be18109b281bd1c937bd170",
+        "matched": true
+      },
+      {
+        "file": "concepts/bank-money-creation/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "59a6233a707d56addf085a06cf54b8acf9e65396780111e21709cadd7fa06915",
+        "acceptedZipSha256": "59a6233a707d56addf085a06cf54b8acf9e65396780111e21709cadd7fa06915",
+        "matched": true
+      },
+      {
+        "file": "concepts/bank-money-creation/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "d48e975fa406c4855028e181658c2329a252de02935f997ea4f91ca8d370996e",
+        "acceptedZipSha256": "d48e975fa406c4855028e181658c2329a252de02935f997ea4f91ca8d370996e",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-ceilings/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "d7952209bfe1f5d8db0fc0a135cf9f27823b0d9fa3b274652810809e1252ef5e",
+        "acceptedZipSha256": "d7952209bfe1f5d8db0fc0a135cf9f27823b0d9fa3b274652810809e1252ef5e",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-ceilings/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "ff74257af282e2f819e14031b5ca708cd093c4f09a60a7b153343955f5e83ac9",
+        "acceptedZipSha256": "ff74257af282e2f819e14031b5ca708cd093c4f09a60a7b153343955f5e83ac9",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-ceilings/question-assets/ceilingfloor.webp",
+        "archivePresent": true,
+        "currentSha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+        "acceptedZipSha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-ceilings/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "c696c43b107a598a713d21dae9ff8cf75e8353596d493af1e3b7b0d4ea12c8fb",
+        "acceptedZipSha256": "c696c43b107a598a713d21dae9ff8cf75e8353596d493af1e3b7b0d4ea12c8fb",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-ceilings/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "d6f94faa21e718db9fae4e96d24728bb68a7cbdeae15d1b13f451587c66dbf2c",
+        "acceptedZipSha256": "d6f94faa21e718db9fae4e96d24728bb68a7cbdeae15d1b13f451587c66dbf2c",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-floors/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "000095f0751d6641606240ef90e6ef3a1a36538ab19afa0c07eb23a8653df342",
+        "acceptedZipSha256": "000095f0751d6641606240ef90e6ef3a1a36538ab19afa0c07eb23a8653df342",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-floors/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "363a3efaa2fecd84995d8979165a4167bcf2b39ae4c9a27ac23f2b63cffd9ce6",
+        "acceptedZipSha256": "363a3efaa2fecd84995d8979165a4167bcf2b39ae4c9a27ac23f2b63cffd9ce6",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-floors/question-assets/ceilingfloor.webp",
+        "archivePresent": true,
+        "currentSha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+        "acceptedZipSha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-floors/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "a2bd7673fdce2a37b1a5b1f78094901a0418f24dc0a93ed1a054438a1f18013c",
+        "acceptedZipSha256": "a2bd7673fdce2a37b1a5b1f78094901a0418f24dc0a93ed1a054438a1f18013c",
+        "matched": true
+      },
+      {
+        "file": "concepts/binding-price-floors/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "59b22a3817a54268417b55da09d57c7240dc570da290ba2e374cf11c12ac3191",
+        "acceptedZipSha256": "59b22a3817a54268417b55da09d57c7240dc570da290ba2e374cf11c12ac3191",
+        "matched": true
+      },
+      {
+        "file": "concepts/central-bank-and-federal-reserve/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "cc59a0343b467a2d91fa0e49cf5db044a03f9c01655b0ff3c464f3497c93d90e",
+        "acceptedZipSha256": "cc59a0343b467a2d91fa0e49cf5db044a03f9c01655b0ff3c464f3497c93d90e",
+        "matched": true
+      },
+      {
+        "file": "concepts/central-bank-and-federal-reserve/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "0199a974d53a3e2b83133b47699032ec652d05c23f29432441ef2d97ac8703f3",
+        "acceptedZipSha256": "0199a974d53a3e2b83133b47699032ec652d05c23f29432441ef2d97ac8703f3",
+        "matched": true
+      },
+      {
+        "file": "concepts/central-bank-and-federal-reserve/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "52e5827e3618062fb3ac643a3f9aa85750199fed96a77e06bd4437814f41f2e7",
+        "acceptedZipSha256": "52e5827e3618062fb3ac643a3f9aa85750199fed96a77e06bd4437814f41f2e7",
+        "matched": true
+      },
+      {
+        "file": "concepts/central-bank-and-federal-reserve/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "d82f8ac02bda62be994121bba4514e15919c2145714917cda131e86e079033fb",
+        "acceptedZipSha256": "d82f8ac02bda62be994121bba4514e15919c2145714917cda131e86e079033fb",
+        "matched": true
+      },
+      {
+        "file": "concepts/competitive-markets/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "d37829c32e1e151e2b76dcd46a25700c63fa19bfc218bb9059fd4f7f4b1c4370",
+        "acceptedZipSha256": "d37829c32e1e151e2b76dcd46a25700c63fa19bfc218bb9059fd4f7f4b1c4370",
+        "matched": true
+      },
+      {
+        "file": "concepts/competitive-markets/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "b3aab6534d7bd00ce7282db9c81af46498e25a599c970e39e88003d490e68f58",
+        "acceptedZipSha256": "b3aab6534d7bd00ce7282db9c81af46498e25a599c970e39e88003d490e68f58",
+        "matched": true
+      },
+      {
+        "file": "concepts/competitive-markets/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "fadb478069a0b06be0d33f68c2513d7f38a8d47bf5e228ca87c919981c5836c6",
+        "acceptedZipSha256": "fadb478069a0b06be0d33f68c2513d7f38a8d47bf5e228ca87c919981c5836c6",
+        "matched": true
+      },
+      {
+        "file": "concepts/competitive-markets/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "d172608127e27b4978357ee66cf33ed4f23572660a0b3310e7b98516d23c0877",
+        "acceptedZipSha256": "d172608127e27b4978357ee66cf33ed4f23572660a0b3310e7b98516d23c0877",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-and-inflation-measurement/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "3dd775a7d385408b17c13dfc0c2c39fbf387fa7fd1eda44b72543c99f1b5c8d0",
+        "acceptedZipSha256": "3dd775a7d385408b17c13dfc0c2c39fbf387fa7fd1eda44b72543c99f1b5c8d0",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-and-inflation-measurement/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "f76e7e39c433d3746ac8ee023c8174df832393a0d78f19041d3794861bccb6db",
+        "acceptedZipSha256": "f76e7e39c433d3746ac8ee023c8174df832393a0d78f19041d3794861bccb6db",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-and-inflation-measurement/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "0bcdbd4a3283c2160fdb870386805a1ecde7aa999db82407928f2b8c8489f05a",
+        "acceptedZipSha256": "0bcdbd4a3283c2160fdb870386805a1ecde7aa999db82407928f2b8c8489f05a",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-and-inflation-measurement/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "0889cbd8c06a03048ce9c58aba30a6adf763e8017f300abafe07f44118e11c1d",
+        "acceptedZipSha256": "0889cbd8c06a03048ce9c58aba30a6adf763e8017f300abafe07f44118e11c1d",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-bias/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "f552186b5d3013e5c1d4d9124bcacbd7a85be7aee20650312103db5697ff0289",
+        "acceptedZipSha256": "f552186b5d3013e5c1d4d9124bcacbd7a85be7aee20650312103db5697ff0289",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-bias/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "9a6cd0c61d02fc5ab97d08a9656b478e6fb9b0dc1fea0683a94c1b341659546f",
+        "acceptedZipSha256": "9a6cd0c61d02fc5ab97d08a9656b478e6fb9b0dc1fea0683a94c1b341659546f",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-bias/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "97850571774a052b966dd5b8d7f78ab220dc8d79c4de80ff5531383f86dc256e",
+        "acceptedZipSha256": "97850571774a052b966dd5b8d7f78ab220dc8d79c4de80ff5531383f86dc256e",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-bias/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "5d01c609cd1fc29584e112f03f82452c7cdb5c43dfb21137829214591df16024",
+        "acceptedZipSha256": "5d01c609cd1fc29584e112f03f82452c7cdb5c43dfb21137829214591df16024",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-versus-gdp-deflator/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "309f7464db0cba9b5442b98b3caae102c05133a806a7d7ff151cfe94f99a2b19",
+        "acceptedZipSha256": "309f7464db0cba9b5442b98b3caae102c05133a806a7d7ff151cfe94f99a2b19",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-versus-gdp-deflator/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "091a877545b7f6067b00b0956ba55b7e99fbd9db93b16bc5defd1543758a271e",
+        "acceptedZipSha256": "091a877545b7f6067b00b0956ba55b7e99fbd9db93b16bc5defd1543758a271e",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-versus-gdp-deflator/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "3eaa26985b4a3280e6edf5e2d3434ce3120db5a790a9f56a49eb09461033ec30",
+        "acceptedZipSha256": "3eaa26985b4a3280e6edf5e2d3434ce3120db5a790a9f56a49eb09461033ec30",
+        "matched": true
+      },
+      {
+        "file": "concepts/cpi-versus-gdp-deflator/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "3cc4c8d3c62f95b45ed168f1859b640f0c5949db42d368d6168d542d5f4852cd",
+        "acceptedZipSha256": "3cc4c8d3c62f95b45ed168f1859b640f0c5949db42d368d6168d542d5f4852cd",
+        "matched": true
+      },
+      {
+        "file": "concepts/demand/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "a005f3f17b951e19b7d71116505568422457cc85ea746b23b15c0045cf2fe6a4",
+        "acceptedZipSha256": "a005f3f17b951e19b7d71116505568422457cc85ea746b23b15c0045cf2fe6a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/demand/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "2609522fc2ff082c8e273e9d96c2d8b7915c70b3540459d1896954f9f767e027",
+        "acceptedZipSha256": "2609522fc2ff082c8e273e9d96c2d8b7915c70b3540459d1896954f9f767e027",
+        "matched": true
+      },
+      {
+        "file": "concepts/demand/question-assets/supplydemand1.webp",
+        "archivePresent": true,
+        "currentSha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
+        "acceptedZipSha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
+        "matched": true
+      },
+      {
+        "file": "concepts/demand/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "20496892857a34c24fbfd9b8934c864a5ee66bb73c7ee0d60024f156604a31cf",
+        "acceptedZipSha256": "20496892857a34c24fbfd9b8934c864a5ee66bb73c7ee0d60024f156604a31cf",
+        "matched": true
+      },
+      {
+        "file": "concepts/demand/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "9c1fbebbd87ba365a482b0f013aa0c070a858d778771e980734c9e567c52574a",
+        "acceptedZipSha256": "9c1fbebbd87ba365a482b0f013aa0c070a858d778771e980734c9e567c52574a",
+        "matched": true
+      },
+      {
+        "file": "concepts/disinflation-and-policy/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "a2d7c0ff6dec7ab06162b49fa358e6e8fdabce7dd625b8755944f8347df54897",
+        "acceptedZipSha256": "a2d7c0ff6dec7ab06162b49fa358e6e8fdabce7dd625b8755944f8347df54897",
+        "matched": true
+      },
+      {
+        "file": "concepts/disinflation-and-policy/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "6e0abcf9d1fe34c8831ea9f647b86a50ea06cfd73d79597f86c5870b9d7f352e",
+        "acceptedZipSha256": "6e0abcf9d1fe34c8831ea9f647b86a50ea06cfd73d79597f86c5870b9d7f352e",
+        "matched": true
+      },
+      {
+        "file": "concepts/disinflation-and-policy/question-assets/lrpc.webp",
+        "archivePresent": true,
+        "currentSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "acceptedZipSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "matched": true
+      },
+      {
+        "file": "concepts/disinflation-and-policy/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "adf94d06ad700935b2c40f3e5a9a0adfb964186eec0bfefcb30670820f97ffc7",
+        "acceptedZipSha256": "adf94d06ad700935b2c40f3e5a9a0adfb964186eec0bfefcb30670820f97ffc7",
+        "matched": true
+      },
+      {
+        "file": "concepts/disinflation-and-policy/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "375504dadcbbc8fdac662083d63a1afc427f3fc639a7320b9576d81c9e9d6f81",
+        "acceptedZipSha256": "375504dadcbbc8fdac662083d63a1afc427f3fc639a7320b9576d81c9e9d6f81",
+        "matched": true
+      },
+      {
+        "file": "concepts/economic-growth-policy/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "cc60ea339378ea762b69d90be7fb24edea6eb277346ae281137065f79e47f5f1",
+        "acceptedZipSha256": "cc60ea339378ea762b69d90be7fb24edea6eb277346ae281137065f79e47f5f1",
+        "matched": true
+      },
+      {
+        "file": "concepts/economic-growth-policy/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "c7d57cde57f9878dd606ac95cb04d4f6b2d4aaf1755594eea59b363bc857861f",
+        "acceptedZipSha256": "c7d57cde57f9878dd606ac95cb04d4f6b2d4aaf1755594eea59b363bc857861f",
+        "matched": true
+      },
+      {
+        "file": "concepts/economic-growth-policy/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "2636dc7adae25cc5377516f85a36b8c84387e4f526d1dc96238deef52cfe63a8",
+        "acceptedZipSha256": "2636dc7adae25cc5377516f85a36b8c84387e4f526d1dc96238deef52cfe63a8",
+        "matched": true
+      },
+      {
+        "file": "concepts/economic-growth-policy/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "6d1a0b1390ec6a0469cf85515c9d3569a14624146cae7219acac9692dd917a43",
+        "acceptedZipSha256": "6d1a0b1390ec6a0469cf85515c9d3569a14624146cae7219acac9692dd917a43",
+        "matched": true
+      },
+      {
+        "file": "concepts/economist-policy-role/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "1431050c444baeaa08a08b941d466cafc13625368ab2a1dc733f0d91068ba76f",
+        "acceptedZipSha256": "1431050c444baeaa08a08b941d466cafc13625368ab2a1dc733f0d91068ba76f",
+        "matched": true
+      },
+      {
+        "file": "concepts/economist-policy-role/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "4d4a08132adc6a420fda4fc5eb4ceaf1b75a0c5423f0f033dc895d6b376994ab",
+        "acceptedZipSha256": "4d4a08132adc6a420fda4fc5eb4ceaf1b75a0c5423f0f033dc895d6b376994ab",
+        "matched": true
+      },
+      {
+        "file": "concepts/economist-policy-role/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "a44c187b2bc1fafa9bda523aff73783ef73b229efbfb0dc819c586556b10f33a",
+        "acceptedZipSha256": "a44c187b2bc1fafa9bda523aff73783ef73b229efbfb0dc819c586556b10f33a",
+        "matched": true
+      },
+      {
+        "file": "concepts/economist-policy-role/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "ab052aaaa9f753c70a7aee54499e014c9769b96888e3c806c21038a829e29cf8",
+        "acceptedZipSha256": "ab052aaaa9f753c70a7aee54499e014c9769b96888e3c806c21038a829e29cf8",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "6819843865164ea4184f1e29211489d63999c07db9fe34e8e13b3c5fc48645d1",
+        "acceptedZipSha256": "6819843865164ea4184f1e29211489d63999c07db9fe34e8e13b3c5fc48645d1",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "13ce4c891af8633e3419a0d61714039e3a7bdf71605856adb8e36b46ee29286e",
+        "acceptedZipSha256": "13ce4c891af8633e3419a0d61714039e3a7bdf71605856adb8e36b46ee29286e",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/question-assets/adaslras.webp",
+        "archivePresent": true,
+        "currentSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "acceptedZipSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/question-assets/moneyd2_moneys2.webp",
+        "archivePresent": true,
+        "currentSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "acceptedZipSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/question-assets/moneymultiplier.webp",
+        "archivePresent": true,
+        "currentSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "acceptedZipSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "fadc46e7d6f9bd88bbb32709619f039e3331f58c91a28813a46dbd448192ff32",
+        "acceptedZipSha256": "fadc46e7d6f9bd88bbb32709619f039e3331f58c91a28813a46dbd448192ff32",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-multipliers-and-crowding-out/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "7d7a818e583d2fd0df75d963f802ab7b0c6157e4de44f1dd1819d695e75a4c41",
+        "acceptedZipSha256": "7d7a818e583d2fd0df75d963f802ab7b0c6157e4de44f1dd1819d695e75a4c41",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-policy-and-aggregate-demand/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "d4a83c55315505a81287b9cb1735ef9fd7a1d8e0524eb7832c95bc7aa5fc66fe",
+        "acceptedZipSha256": "d4a83c55315505a81287b9cb1735ef9fd7a1d8e0524eb7832c95bc7aa5fc66fe",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-policy-and-aggregate-demand/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "d51c3704dcbda01daeaee5f513e288ffbba8c728b71b00ad13570eefc3ae0c10",
+        "acceptedZipSha256": "d51c3704dcbda01daeaee5f513e288ffbba8c728b71b00ad13570eefc3ae0c10",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-policy-and-aggregate-demand/question-assets/moneymultiplier.webp",
+        "archivePresent": true,
+        "currentSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "acceptedZipSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-policy-and-aggregate-demand/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "11b633842c65dcc836b69e6b7c7a2ad492100e555d38d3d996d646390383dd8b",
+        "acceptedZipSha256": "11b633842c65dcc836b69e6b7c7a2ad492100e555d38d3d996d646390383dd8b",
+        "matched": true
+      },
+      {
+        "file": "concepts/fiscal-policy-and-aggregate-demand/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "c732b78a9256ae61a6cbe9afe357120c008d69f3777c49032c1cc828d065098d",
+        "acceptedZipSha256": "c732b78a9256ae61a6cbe9afe357120c008d69f3777c49032c1cc828d065098d",
+        "matched": true
+      },
+      {
+        "file": "concepts/fisher-effect/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "6bad51108540240a238e79517c5e6be3cfe9b3db9b47fcf2232ce5c3d5bac704",
+        "acceptedZipSha256": "6bad51108540240a238e79517c5e6be3cfe9b3db9b47fcf2232ce5c3d5bac704",
+        "matched": true
+      },
+      {
+        "file": "concepts/fisher-effect/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "7f9d9bf7fe7ee8ef7bcdca838bfe38758e069ed732a2f0c9241a80e312e8168b",
+        "acceptedZipSha256": "7f9d9bf7fe7ee8ef7bcdca838bfe38758e069ed732a2f0c9241a80e312e8168b",
+        "matched": true
+      },
+      {
+        "file": "concepts/fisher-effect/question-assets/moneys_moneyd.webp",
+        "archivePresent": true,
+        "currentSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "acceptedZipSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "matched": true
+      },
+      {
+        "file": "concepts/fisher-effect/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "04a7973ea8effaf10f66e4b38eb957ae76c58215362832d144f38a57664a87a8",
+        "acceptedZipSha256": "04a7973ea8effaf10f66e4b38eb957ae76c58215362832d144f38a57664a87a8",
+        "matched": true
+      },
+      {
+        "file": "concepts/fisher-effect/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "c11004593e2b939eabe5c1b6940807a8e9256b10e8947d241added7a8bbfb236",
+        "acceptedZipSha256": "c11004593e2b939eabe5c1b6940807a8e9256b10e8947d241added7a8bbfb236",
+        "matched": true
+      },
+      {
+        "file": "concepts/gains-from-trade/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "798a396ba618dbde66e6321b9a7d84f483d5c8400e7d0c2a3066475e60627a3c",
+        "acceptedZipSha256": "798a396ba618dbde66e6321b9a7d84f483d5c8400e7d0c2a3066475e60627a3c",
+        "matched": true
+      },
+      {
+        "file": "concepts/gains-from-trade/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "8d5674755827904c1507902148699026478421c8708a1f4c379ad1ac3e93750f",
+        "acceptedZipSha256": "8d5674755827904c1507902148699026478421c8708a1f4c379ad1ac3e93750f",
+        "matched": true
+      },
+      {
+        "file": "concepts/gains-from-trade/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "68ad4adf9dd3fe2ce964f625e9c69bec952581791500d72cb605bc76d48916d4",
+        "acceptedZipSha256": "68ad4adf9dd3fe2ce964f625e9c69bec952581791500d72cb605bc76d48916d4",
+        "matched": true
+      },
+      {
+        "file": "concepts/gains-from-trade/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "0dfe070eea858f1306c1c9657e354e61c1e3b5eb2adca802e6e9e8540c9db1b9",
+        "acceptedZipSha256": "0dfe070eea858f1306c1c9657e354e61c1e3b5eb2adca802e6e9e8540c9db1b9",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-components/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "6c2f46d1c6a9a520cfe614b651abe63d69c2785a016d44d5e6ba1dee4c0854f9",
+        "acceptedZipSha256": "6c2f46d1c6a9a520cfe614b651abe63d69c2785a016d44d5e6ba1dee4c0854f9",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-components/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "23e91345b79f1be3376763abb82225dd61b6df329dd1548498f009f65619ee99",
+        "acceptedZipSha256": "23e91345b79f1be3376763abb82225dd61b6df329dd1548498f009f65619ee99",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-components/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "9fe38d3cbb852941ea3fda784d92b1d84a67fbc94ea8ebab87ebb2ca12c70487",
+        "acceptedZipSha256": "9fe38d3cbb852941ea3fda784d92b1d84a67fbc94ea8ebab87ebb2ca12c70487",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-components/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "aaf828bd48d70b2886462cfd1c53704b8e76f133327d7c797918eec0319322fc",
+        "acceptedZipSha256": "aaf828bd48d70b2886462cfd1c53704b8e76f133327d7c797918eec0319322fc",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-measurement/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "2470cad383908bca46081e14db6e51b5ce3495521771b550edc9e0d131b202c6",
+        "acceptedZipSha256": "2470cad383908bca46081e14db6e51b5ce3495521771b550edc9e0d131b202c6",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-measurement/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "9e73bb4e6c06eec647cb98ef41f582236d7632e08f5b33bb5edc367dd01f8acd",
+        "acceptedZipSha256": "9e73bb4e6c06eec647cb98ef41f582236d7632e08f5b33bb5edc367dd01f8acd",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-measurement/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "cb0b885a632e09783a2079b1f452bdbc325b2ee24ae520a05eea3302c024db16",
+        "acceptedZipSha256": "cb0b885a632e09783a2079b1f452bdbc325b2ee24ae520a05eea3302c024db16",
+        "matched": true
+      },
+      {
+        "file": "concepts/gdp-measurement/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "8473fef18da771a2fd1acd83f98e2b74d4004a7181f2092f44fd6c7173685196",
+        "acceptedZipSha256": "8473fef18da771a2fd1acd83f98e2b74d4004a7181f2092f44fd6c7173685196",
+        "matched": true
+      },
+      {
+        "file": "concepts/incentives/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "7dc08e0818b854bee817609ad261dde877ab53cb92b43874745dcec8099e9b08",
+        "acceptedZipSha256": "7dc08e0818b854bee817609ad261dde877ab53cb92b43874745dcec8099e9b08",
+        "matched": true
+      },
+      {
+        "file": "concepts/incentives/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "de6a78d3f73330628e006dbe5b8ffa4530cd3543e2f0c5221a73fe452ce45b61",
+        "acceptedZipSha256": "de6a78d3f73330628e006dbe5b8ffa4530cd3543e2f0c5221a73fe452ce45b61",
+        "matched": true
+      },
+      {
+        "file": "concepts/incentives/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "e5a24f7f72923e1ea20d0bed9caae8ad26a929b44589806086f79fb6f3c7e695",
+        "acceptedZipSha256": "e5a24f7f72923e1ea20d0bed9caae8ad26a929b44589806086f79fb6f3c7e695",
+        "matched": true
+      },
+      {
+        "file": "concepts/incentives/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "0138165313ae012fea01f0e03b3254a61b5ad2e27ec2b04796f97d0220f22605",
+        "acceptedZipSha256": "0138165313ae012fea01f0e03b3254a61b5ad2e27ec2b04796f97d0220f22605",
+        "matched": true
+      },
+      {
+        "file": "concepts/indexing-and-real-values/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ef3345b257d7d68f97b22057a36c36d2f2ebd103ebfed1eeffeb665304456792",
+        "acceptedZipSha256": "ef3345b257d7d68f97b22057a36c36d2f2ebd103ebfed1eeffeb665304456792",
+        "matched": true
+      },
+      {
+        "file": "concepts/indexing-and-real-values/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "306caef506bc365bd5532303dad6594eb42fb32985d44ee1ac144702da80cc57",
+        "acceptedZipSha256": "306caef506bc365bd5532303dad6594eb42fb32985d44ee1ac144702da80cc57",
+        "matched": true
+      },
+      {
+        "file": "concepts/indexing-and-real-values/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "e141db339006f3a55608923056daffc13d8a3463f7b416807a083586bdc600d3",
+        "acceptedZipSha256": "e141db339006f3a55608923056daffc13d8a3463f7b416807a083586bdc600d3",
+        "matched": true
+      },
+      {
+        "file": "concepts/indexing-and-real-values/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "e99be672ae3c6bf5093a3a196ed58f40228fbefd2b2c45b74c996fec9d03b944",
+        "acceptedZipSha256": "e99be672ae3c6bf5093a3a196ed58f40228fbefd2b2c45b74c996fec9d03b944",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-costs/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ffe0c85bfd75a60777c7b520ad3c7df23e099ebe7d7d998a200d9a00ed2f4fa3",
+        "acceptedZipSha256": "ffe0c85bfd75a60777c7b520ad3c7df23e099ebe7d7d998a200d9a00ed2f4fa3",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-costs/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "a8e5320ed0322b1882fb0e61486eacc25619355e4dbb17cbbda718070654d5d6",
+        "acceptedZipSha256": "a8e5320ed0322b1882fb0e61486eacc25619355e4dbb17cbbda718070654d5d6",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-costs/question-assets/moneys_moneyd.webp",
+        "archivePresent": true,
+        "currentSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "acceptedZipSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-costs/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "ff0c03eef2490762aada6704b3a3e1487799baf9dd5a9fee3161d594447149be",
+        "acceptedZipSha256": "ff0c03eef2490762aada6704b3a3e1487799baf9dd5a9fee3161d594447149be",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-costs/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "841e46eb8e615d3b4a25d0a1b6f49f00900360b00c1f40a7d6f9ec1a1a104ff4",
+        "acceptedZipSha256": "841e46eb8e615d3b4a25d0a1b6f49f00900360b00c1f40a7d6f9ec1a1a104ff4",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-tax-and-deflation/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "e3c7ffe56495d0e22bb08031ddce4dca96ac61192c7bed206c0eb084756a4380",
+        "acceptedZipSha256": "e3c7ffe56495d0e22bb08031ddce4dca96ac61192c7bed206c0eb084756a4380",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-tax-and-deflation/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "12f8ad15f5bb513df78f9364adc6b45fe19f32a1cd04c89e8411e33bb307f9d5",
+        "acceptedZipSha256": "12f8ad15f5bb513df78f9364adc6b45fe19f32a1cd04c89e8411e33bb307f9d5",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-tax-and-deflation/question-assets/moneys_moneyd.webp",
+        "archivePresent": true,
+        "currentSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "acceptedZipSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-tax-and-deflation/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "2d1feb730dce969eb7907c12a5cd1aa4121dfde8d399371e9bd368a5156b89fe",
+        "acceptedZipSha256": "2d1feb730dce969eb7907c12a5cd1aa4121dfde8d399371e9bd368a5156b89fe",
+        "matched": true
+      },
+      {
+        "file": "concepts/inflation-tax-and-deflation/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "a3ee0b3693044e30dcdc3d28576aeccc5188aca02b1bc4112e3df157fa444c17",
+        "acceptedZipSha256": "a3ee0b3693044e30dcdc3d28576aeccc5188aca02b1bc4112e3df157fa444c17",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-economic-analysis/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "14fca7e5a1139a8dbe139b9110ea2c2d096d88616bfda80c1883255a448e3a51",
+        "acceptedZipSha256": "14fca7e5a1139a8dbe139b9110ea2c2d096d88616bfda80c1883255a448e3a51",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-economic-analysis/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "56f4540560b9296c3572f6a244ddc37f27fe1a72242eed884e32bf18e1b23f0d",
+        "acceptedZipSha256": "56f4540560b9296c3572f6a244ddc37f27fe1a72242eed884e32bf18e1b23f0d",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-economic-analysis/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "96fcb8b3fe42fcfac32ac8cd8a004859819b58bbfb8a37dfb3563bff74169536",
+        "acceptedZipSha256": "96fcb8b3fe42fcfac32ac8cd8a004859819b58bbfb8a37dfb3563bff74169536",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-economic-analysis/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "58cb77702f7d2b32a0e43eb9c308d78b155cfb7a1ce99ac1822e5d86ee080292",
+        "acceptedZipSha256": "58cb77702f7d2b32a0e43eb9c308d78b155cfb7a1ce99ac1822e5d86ee080292",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ce11df27f45058e800c99d0ae39a7f56457b16362b89202c349fef8559578a1d",
+        "acceptedZipSha256": "ce11df27f45058e800c99d0ae39a7f56457b16362b89202c349fef8559578a1d",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "46f6990f1ece7d18511b90868c388e2aa031842f96f1374a93c77f86124c24f8",
+        "acceptedZipSha256": "46f6990f1ece7d18511b90868c388e2aa031842f96f1374a93c77f86124c24f8",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/question-assets/ad_ms_md.webp",
+        "archivePresent": true,
+        "currentSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "acceptedZipSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/question-assets/adaslras.webp",
+        "archivePresent": true,
+        "currentSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "acceptedZipSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/question-assets/lrpc.webp",
+        "archivePresent": true,
+        "currentSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "acceptedZipSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/question-assets/moneyd2_moneys2.webp",
+        "archivePresent": true,
+        "currentSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "acceptedZipSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/question-assets/srpc.webp",
+        "archivePresent": true,
+        "currentSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "acceptedZipSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "195644f4227b708a82e7b0ca2f27cd536b93f3680c7cec8dd48a0b7eade3ed0b",
+        "acceptedZipSha256": "195644f4227b708a82e7b0ca2f27cd536b93f3680c7cec8dd48a0b7eade3ed0b",
+        "matched": true
+      },
+      {
+        "file": "concepts/integrated-macroeconomic-analysis/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "ca09957bc11356062b4f347f4ac31d1d122f4ef365ca7a101bef525b6457b54e",
+        "acceptedZipSha256": "ca09957bc11356062b4f347f4ac31d1d122f4ef365ca7a101bef525b6457b54e",
+        "matched": true
+      },
+      {
+        "file": "concepts/labor-market-institutions/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "3fd53201096055b35b2e65f6bba31aadd08cc1b801c0fa75299a7f035ad2c095",
+        "acceptedZipSha256": "3fd53201096055b35b2e65f6bba31aadd08cc1b801c0fa75299a7f035ad2c095",
+        "matched": true
+      },
+      {
+        "file": "concepts/labor-market-institutions/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "fc55e52d9cdf569ac51a9291cbc852464145e02b1607bba796910154d27eee66",
+        "acceptedZipSha256": "fc55e52d9cdf569ac51a9291cbc852464145e02b1607bba796910154d27eee66",
+        "matched": true
+      },
+      {
+        "file": "concepts/labor-market-institutions/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "a3429815c76135bacca9182264e759fdf1f3a6019d3903afc5a3ac71913d5972",
+        "acceptedZipSha256": "a3429815c76135bacca9182264e759fdf1f3a6019d3903afc5a3ac71913d5972",
+        "matched": true
+      },
+      {
+        "file": "concepts/labor-market-institutions/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "a7c03767d62e7ef10da0990c5c1dbeaa1dd7d44dbe69d8ef0809782ce0ac3c27",
+        "acceptedZipSha256": "a7c03767d62e7ef10da0990c5c1dbeaa1dd7d44dbe69d8ef0809782ce0ac3c27",
+        "matched": true
+      },
+      {
+        "file": "concepts/limits-of-gdp/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "d3d1936948583fc63802e6657d9b8cec311ee50a8cceb5cf1f9a7c2bc4e4c366",
+        "acceptedZipSha256": "d3d1936948583fc63802e6657d9b8cec311ee50a8cceb5cf1f9a7c2bc4e4c366",
+        "matched": true
+      },
+      {
+        "file": "concepts/limits-of-gdp/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "2875eb8f4728a6fb668f76c317294de9c46c3fb9668f300b0f616f9ae7f7fa95",
+        "acceptedZipSha256": "2875eb8f4728a6fb668f76c317294de9c46c3fb9668f300b0f616f9ae7f7fa95",
+        "matched": true
+      },
+      {
+        "file": "concepts/limits-of-gdp/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "da0f326cf27c18e7708b079b9fa501214dc60904fc9a79d5264b8cb6ad35dfab",
+        "acceptedZipSha256": "da0f326cf27c18e7708b079b9fa501214dc60904fc9a79d5264b8cb6ad35dfab",
+        "matched": true
+      },
+      {
+        "file": "concepts/limits-of-gdp/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "a104db8a7cfcefa76a8b2d1c457a800ca003f1f5205e8861f21571e30e352f7d",
+        "acceptedZipSha256": "a104db8a7cfcefa76a8b2d1c457a800ca003f1f5205e8861f21571e30e352f7d",
+        "matched": true
+      },
+      {
+        "file": "concepts/liquidity-preference-and-money-market/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "b88a50f2e7abda7c62e5cd24d405ad00b312fb74d35230b9be684eb0d90d0506",
+        "acceptedZipSha256": "b88a50f2e7abda7c62e5cd24d405ad00b312fb74d35230b9be684eb0d90d0506",
+        "matched": true
+      },
+      {
+        "file": "concepts/liquidity-preference-and-money-market/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "fd227084ea6349b7aceabf181173bff4a4544786938bc1da244afeb9538163ac",
+        "acceptedZipSha256": "fd227084ea6349b7aceabf181173bff4a4544786938bc1da244afeb9538163ac",
+        "matched": true
+      },
+      {
+        "file": "concepts/liquidity-preference-and-money-market/question-assets/ad_ms_md.webp",
+        "archivePresent": true,
+        "currentSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "acceptedZipSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/liquidity-preference-and-money-market/question-assets/moneyd2_moneys2.webp",
+        "archivePresent": true,
+        "currentSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "acceptedZipSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "matched": true
+      },
+      {
+        "file": "concepts/liquidity-preference-and-money-market/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "6fdeac3e32f1336fcf881265e27780dbe5d26327a87405f1b55f92b400f06c0e",
+        "acceptedZipSha256": "6fdeac3e32f1336fcf881265e27780dbe5d26327a87405f1b55f92b400f06c0e",
+        "matched": true
+      },
+      {
+        "file": "concepts/liquidity-preference-and-money-market/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "78bbe199b39f6c29dc9687a8d27066b238cbe132e0515137b834b4fef705d93f",
+        "acceptedZipSha256": "78bbe199b39f6c29dc9687a8d27066b238cbe132e0515137b834b4fef705d93f",
+        "matched": true
+      },
+      {
+        "file": "concepts/living-standards-and-growth/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "305c4eafb04b7b011618c8399488c2c232ff530700780254b28a84b9769fc114",
+        "acceptedZipSha256": "305c4eafb04b7b011618c8399488c2c232ff530700780254b28a84b9769fc114",
+        "matched": true
+      },
+      {
+        "file": "concepts/living-standards-and-growth/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "d7f62cb7e790a59a8f0ae9ed7e69f064d88527e6e85bbe023bf6cc868502238f",
+        "acceptedZipSha256": "d7f62cb7e790a59a8f0ae9ed7e69f064d88527e6e85bbe023bf6cc868502238f",
+        "matched": true
+      },
+      {
+        "file": "concepts/living-standards-and-growth/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "e3ab0f42d91be676cb9a2eae447f455638343a0ea5c77026b00b1555a9eb00f2",
+        "acceptedZipSha256": "e3ab0f42d91be676cb9a2eae447f455638343a0ea5c77026b00b1555a9eb00f2",
+        "matched": true
+      },
+      {
+        "file": "concepts/living-standards-and-growth/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "6dd4875923d9fd7bbbec26c73256f59e708f0abc0820c0b3a55174342788a4cf",
+        "acceptedZipSha256": "6dd4875923d9fd7bbbec26c73256f59e708f0abc0820c0b3a55174342788a4cf",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-macroeconomic-adjustment/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "31f9beaa0a2256ac6b4f210f701ed14bc1b57da8b09ba555739edc01fb7a71d2",
+        "acceptedZipSha256": "31f9beaa0a2256ac6b4f210f701ed14bc1b57da8b09ba555739edc01fb7a71d2",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-macroeconomic-adjustment/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "21b4e0b0f24a61a6d113b1e59cda77c46912235eda2682fb3864684e455f7b6f",
+        "acceptedZipSha256": "21b4e0b0f24a61a6d113b1e59cda77c46912235eda2682fb3864684e455f7b6f",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-macroeconomic-adjustment/question-assets/adaslras.webp",
+        "archivePresent": true,
+        "currentSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "acceptedZipSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-macroeconomic-adjustment/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "3800f104678cc7c55e4b4f842d251e4abfe31e9fb69d61ef3e293ba332899a1c",
+        "acceptedZipSha256": "3800f104678cc7c55e4b4f842d251e4abfe31e9fb69d61ef3e293ba332899a1c",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-macroeconomic-adjustment/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "66cb1ac1f39407a5237a28a8157c60d752b9ae21f86f33d61507fe6d18ba1c6e",
+        "acceptedZipSha256": "66cb1ac1f39407a5237a28a8157c60d752b9ae21f86f33d61507fe6d18ba1c6e",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-phillips-curve/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ae2cefe127aef0da3fdfe4c478093715377660acc0181647b253f6189c25ac35",
+        "acceptedZipSha256": "ae2cefe127aef0da3fdfe4c478093715377660acc0181647b253f6189c25ac35",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-phillips-curve/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "b5a3773aff60e607826a1e7823d6bd7beabf34787e3a5d79ecce73862423cf54",
+        "acceptedZipSha256": "b5a3773aff60e607826a1e7823d6bd7beabf34787e3a5d79ecce73862423cf54",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-phillips-curve/question-assets/lrpc.webp",
+        "archivePresent": true,
+        "currentSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "acceptedZipSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-phillips-curve/question-assets/srpc.webp",
+        "archivePresent": true,
+        "currentSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "acceptedZipSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-phillips-curve/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "7e1664aac587d67f0855cc2e99b4aae5d736c784438e457cd648a3aa8d8774a4",
+        "acceptedZipSha256": "7e1664aac587d67f0855cc2e99b4aae5d736c784438e457cd648a3aa8d8774a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/long-run-phillips-curve/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "8853cdeddb6216d0a0560c382788be5ea977b4fdd637b81206f70ac0f6ece97d",
+        "acceptedZipSha256": "8853cdeddb6216d0a0560c382788be5ea977b4fdd637b81206f70ac0f6ece97d",
+        "matched": true
+      },
+      {
+        "file": "concepts/macroeconomic-equilibrium-and-shocks/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "35fefe5ff6e574e02f19f33c096de3136075a478ab3721a01cfde1568ee8077b",
+        "acceptedZipSha256": "35fefe5ff6e574e02f19f33c096de3136075a478ab3721a01cfde1568ee8077b",
+        "matched": true
+      },
+      {
+        "file": "concepts/macroeconomic-equilibrium-and-shocks/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "844890962d8e2e8a2792f8615df747ac3a169a066111f83a61463bd7440b78d5",
+        "acceptedZipSha256": "844890962d8e2e8a2792f8615df747ac3a169a066111f83a61463bd7440b78d5",
+        "matched": true
+      },
+      {
+        "file": "concepts/macroeconomic-equilibrium-and-shocks/question-assets/adas1.webp",
+        "archivePresent": true,
+        "currentSha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
+        "acceptedZipSha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
+        "matched": true
+      },
+      {
+        "file": "concepts/macroeconomic-equilibrium-and-shocks/question-assets/adaslras.webp",
+        "archivePresent": true,
+        "currentSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "acceptedZipSha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
+        "matched": true
+      },
+      {
+        "file": "concepts/macroeconomic-equilibrium-and-shocks/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "ea91beb4126c070f8b924fa1316155e6090d0f974e36bbe23c5471ef867d6858",
+        "acceptedZipSha256": "ea91beb4126c070f8b924fa1316155e6090d0f974e36bbe23c5471ef867d6858",
+        "matched": true
+      },
+      {
+        "file": "concepts/macroeconomic-equilibrium-and-shocks/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "f08222f12f199228d3919251bf785a81f13a76f4f70d6d421bf69b7c24d8bb84",
+        "acceptedZipSha256": "f08222f12f199228d3919251bf785a81f13a76f4f70d6d421bf69b7c24d8bb84",
+        "matched": true
+      },
+      {
+        "file": "concepts/marginal-analysis/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "a6299a946d8c2949c0b50a592473691b98a9ffad1b88ee9f1fab95c0b892655b",
+        "acceptedZipSha256": "a6299a946d8c2949c0b50a592473691b98a9ffad1b88ee9f1fab95c0b892655b",
+        "matched": true
+      },
+      {
+        "file": "concepts/marginal-analysis/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "3028c468a958415473c9defc5f6e775945dbd473382fe57d0bfe15078d2aff11",
+        "acceptedZipSha256": "3028c468a958415473c9defc5f6e775945dbd473382fe57d0bfe15078d2aff11",
+        "matched": true
+      },
+      {
+        "file": "concepts/marginal-analysis/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "3446422d92d5cc40dcc742a917a3e3853db32029ba013d117ff2f0934d5b4fee",
+        "acceptedZipSha256": "3446422d92d5cc40dcc742a917a3e3853db32029ba013d117ff2f0934d5b4fee",
+        "matched": true
+      },
+      {
+        "file": "concepts/marginal-analysis/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "61811818b7dc98a714e6cd1d8d6c3fff442c1e6c1a95ef1045f6f97d267ab1e2",
+        "acceptedZipSha256": "61811818b7dc98a714e6cd1d8d6c3fff442c1e6c1a95ef1045f6f97d267ab1e2",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-equilibrium/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "0a4721b0015ede428686548e891100043396922a6f1ff6efc091e854c54b00a1",
+        "acceptedZipSha256": "0a4721b0015ede428686548e891100043396922a6f1ff6efc091e854c54b00a1",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-equilibrium/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "d8528aacc87e1467970a9f8642fcb8d35c3b95dec4633d49394765c6d815db1b",
+        "acceptedZipSha256": "d8528aacc87e1467970a9f8642fcb8d35c3b95dec4633d49394765c6d815db1b",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-equilibrium/question-assets/ceilingfloor.webp",
+        "archivePresent": true,
+        "currentSha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+        "acceptedZipSha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-equilibrium/question-assets/supplydemand1.webp",
+        "archivePresent": true,
+        "currentSha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
+        "acceptedZipSha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-equilibrium/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "0efdb535d619d4d2c119121eb9a8149771fd3132fea883c9450f7021c719c9f7",
+        "acceptedZipSha256": "0efdb535d619d4d2c119121eb9a8149771fd3132fea883c9450f7021c719c9f7",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-equilibrium/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "160593a6492a1628972436a374a58f4f08a27a97389dc6f2697d1e4216b3b4b4",
+        "acceptedZipSha256": "160593a6492a1628972436a374a58f4f08a27a97389dc6f2697d1e4216b3b4b4",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-failures/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "c88df89c6408a4e6c17780b9e4b10210accc4abe37539623e6a4fe006e684465",
+        "acceptedZipSha256": "c88df89c6408a4e6c17780b9e4b10210accc4abe37539623e6a4fe006e684465",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-failures/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "b92cbee82b3d423bf880601757bef4e4891d2c2228a301d8bddc28e9322d035e",
+        "acceptedZipSha256": "b92cbee82b3d423bf880601757bef4e4891d2c2228a301d8bddc28e9322d035e",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-failures/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "cf54c7f3bd541692236ba8f0a046f41f7c8084200177cfecff0b11c56f8a0d02",
+        "acceptedZipSha256": "cf54c7f3bd541692236ba8f0a046f41f7c8084200177cfecff0b11c56f8a0d02",
+        "matched": true
+      },
+      {
+        "file": "concepts/market-failures/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "e30d28d9f3f13a12d672628536a4898d98fee3e4f5bd450886a39a86a0186477",
+        "acceptedZipSha256": "e30d28d9f3f13a12d672628536a4898d98fee3e4f5bd450886a39a86a0186477",
+        "matched": true
+      },
+      {
+        "file": "concepts/micro-versus-macro/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "facaaa1fc2e75178961734c1fd3b2248bd2142b7ffb7d77bc68d6a2575bbd355",
+        "acceptedZipSha256": "facaaa1fc2e75178961734c1fd3b2248bd2142b7ffb7d77bc68d6a2575bbd355",
+        "matched": true
+      },
+      {
+        "file": "concepts/micro-versus-macro/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "8f96f78a000ba20ca4f88fd1f852dc5d587e793deba6bd9eb0d7f596df6ebd12",
+        "acceptedZipSha256": "8f96f78a000ba20ca4f88fd1f852dc5d587e793deba6bd9eb0d7f596df6ebd12",
+        "matched": true
+      },
+      {
+        "file": "concepts/micro-versus-macro/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "074f209f016b31632ca5ea999034ebb71db17dd1ffe3a7258f644da8a5e4db88",
+        "acceptedZipSha256": "074f209f016b31632ca5ea999034ebb71db17dd1ffe3a7258f644da8a5e4db88",
+        "matched": true
+      },
+      {
+        "file": "concepts/micro-versus-macro/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "011806b9d5091729381c5dd75e106fbbd8f44cb16ea6ba697572be86e90a06d1",
+        "acceptedZipSha256": "011806b9d5091729381c5dd75e106fbbd8f44cb16ea6ba697572be86e90a06d1",
+        "matched": true
+      },
+      {
+        "file": "concepts/models-and-assumptions/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "2fcb55904a60cbf76f73502c832165945d6de2cd441f275f6195e8bdcd50f772",
+        "acceptedZipSha256": "2fcb55904a60cbf76f73502c832165945d6de2cd441f275f6195e8bdcd50f772",
+        "matched": true
+      },
+      {
+        "file": "concepts/models-and-assumptions/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "99fca2338151a95e6517599f40fffdcbce05088653fb044a9a18db9876e81210",
+        "acceptedZipSha256": "99fca2338151a95e6517599f40fffdcbce05088653fb044a9a18db9876e81210",
+        "matched": true
+      },
+      {
+        "file": "concepts/models-and-assumptions/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "81bb805c51ce9fd29b0af4223d60b00f5e422c389e912db6c7166c0e932a610f",
+        "acceptedZipSha256": "81bb805c51ce9fd29b0af4223d60b00f5e422c389e912db6c7166c0e932a610f",
+        "matched": true
+      },
+      {
+        "file": "concepts/models-and-assumptions/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "912586bfc4db6b962b1ce9dbda0d349e3cdb686e8696d03c0c5831ac90f1efd1",
+        "acceptedZipSha256": "912586bfc4db6b962b1ce9dbda0d349e3cdb686e8696d03c0c5831ac90f1efd1",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-control-limits/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "8b0d28dc8d5b1c1ef35eeb5ec4ae66abeec2f631e1b58c7cc98a079d5fb496d0",
+        "acceptedZipSha256": "8b0d28dc8d5b1c1ef35eeb5ec4ae66abeec2f631e1b58c7cc98a079d5fb496d0",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-control-limits/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "ec5af2e6118fce28b39d2a3d1aa627a60cd2940409fdb95ca2530eca5ca19c89",
+        "acceptedZipSha256": "ec5af2e6118fce28b39d2a3d1aa627a60cd2940409fdb95ca2530eca5ca19c89",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-control-limits/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "02bb05f5f65ee0698d7514ab32158e00a7857e5a28bb0c2a43c5b01b33ab014a",
+        "acceptedZipSha256": "02bb05f5f65ee0698d7514ab32158e00a7857e5a28bb0c2a43c5b01b33ab014a",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-control-limits/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "085fd724ce975b922895927fa0e99534997174131b873566729ba51ba0662c1b",
+        "acceptedZipSha256": "085fd724ce975b922895927fa0e99534997174131b873566729ba51ba0662c1b",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-neutrality/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ec781359ee8f54ce27eb3a222f52e27b1669eb4936590b527c66a4840440d5eb",
+        "acceptedZipSha256": "ec781359ee8f54ce27eb3a222f52e27b1669eb4936590b527c66a4840440d5eb",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-neutrality/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "6dea75b466e5cc7ea6d8dc47457b1a3c1bc5c307c3518cc3439d7b99234e8bfa",
+        "acceptedZipSha256": "6dea75b466e5cc7ea6d8dc47457b1a3c1bc5c307c3518cc3439d7b99234e8bfa",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-neutrality/question-assets/moneys_moneyd.webp",
+        "archivePresent": true,
+        "currentSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "acceptedZipSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-neutrality/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "7ee1cddc9ea2d65966dffc06fc6f51a6b9550747cbc84c90b000535cfca102e7",
+        "acceptedZipSha256": "7ee1cddc9ea2d65966dffc06fc6f51a6b9550747cbc84c90b000535cfca102e7",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-neutrality/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "3374385ce92185cea31d6503a00819a8c24da490df250a870f2d7b148628973b",
+        "acceptedZipSha256": "3374385ce92185cea31d6503a00819a8c24da490df250a870f2d7b148628973b",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-tools/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "1ef285d3ae637995c79d864cc47e9595cebafa103a343a28902281267015967f",
+        "acceptedZipSha256": "1ef285d3ae637995c79d864cc47e9595cebafa103a343a28902281267015967f",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-tools/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "60980974eaee0c769b7ac4c71ce911ecec65ccd0b011b581743949bc2bdeb34d",
+        "acceptedZipSha256": "60980974eaee0c769b7ac4c71ce911ecec65ccd0b011b581743949bc2bdeb34d",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-tools/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "185070c0c43b1f0aa96253e6b98efad4a1739bf881392204c3f0c875ca295b79",
+        "acceptedZipSha256": "185070c0c43b1f0aa96253e6b98efad4a1739bf881392204c3f0c875ca295b79",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-tools/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "58fd1c81bae01910a3466792a58d3ad4ec3c59064d5e6a61035d648c57ea01ff",
+        "acceptedZipSha256": "58fd1c81bae01910a3466792a58d3ad4ec3c59064d5e6a61035d648c57ea01ff",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-transmission/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ee60593aefbeceed891da81d4854d430678a5a55b4142fdba0bfa14d0224f978",
+        "acceptedZipSha256": "ee60593aefbeceed891da81d4854d430678a5a55b4142fdba0bfa14d0224f978",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-transmission/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "9cf85308c919fa8d3e8dfc42533023396d02980de33f9619fd0114fb8accab39",
+        "acceptedZipSha256": "9cf85308c919fa8d3e8dfc42533023396d02980de33f9619fd0114fb8accab39",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-transmission/question-assets/ad_ms_md.webp",
+        "archivePresent": true,
+        "currentSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "acceptedZipSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-transmission/question-assets/moneyd2_moneys2.webp",
+        "archivePresent": true,
+        "currentSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "acceptedZipSha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-transmission/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "e696fe15200c667d665a657236172a4f83ba473019c0c3bec6246d2d5e40fc74",
+        "acceptedZipSha256": "e696fe15200c667d665a657236172a4f83ba473019c0c3bec6246d2d5e40fc74",
+        "matched": true
+      },
+      {
+        "file": "concepts/monetary-policy-transmission/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "c6352ff783d8c6136a8db109f4ac5343462452326231cce82c699bf4cc231252",
+        "acceptedZipSha256": "c6352ff783d8c6136a8db109f4ac5343462452326231cce82c699bf4cc231252",
+        "matched": true
+      },
+      {
+        "file": "concepts/money-functions-and-measures/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "81073656ae9361effa3cd6843b62457248c6fec414ead963f1b334002215a658",
+        "acceptedZipSha256": "81073656ae9361effa3cd6843b62457248c6fec414ead963f1b334002215a658",
+        "matched": true
+      },
+      {
+        "file": "concepts/money-functions-and-measures/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "2e8289dcdfc5d50748fa4f95d999fed34066a98e6839788fd8c3a096017f90aa",
+        "acceptedZipSha256": "2e8289dcdfc5d50748fa4f95d999fed34066a98e6839788fd8c3a096017f90aa",
+        "matched": true
+      },
+      {
+        "file": "concepts/money-functions-and-measures/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "5c9c4f50017657048619f226f6396f417018ef793d1e42a87780d6c442622aa6",
+        "acceptedZipSha256": "5c9c4f50017657048619f226f6396f417018ef793d1e42a87780d6c442622aa6",
+        "matched": true
+      },
+      {
+        "file": "concepts/money-functions-and-measures/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "5239631095cca410ac2b92bb4a92753e7b600e764a50e3a3539acc181cae203a",
+        "acceptedZipSha256": "5239631095cca410ac2b92bb4a92753e7b600e764a50e3a3539acc181cae203a",
+        "matched": true
+      },
+      {
+        "file": "concepts/natural-rate-of-unemployment/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "385db67cb00a8e8e568c77c23509f8da62a9c0a72b27bbe86254d38dbc51f608",
+        "acceptedZipSha256": "385db67cb00a8e8e568c77c23509f8da62a9c0a72b27bbe86254d38dbc51f608",
+        "matched": true
+      },
+      {
+        "file": "concepts/natural-rate-of-unemployment/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "97440d95bdb72e21e4addc02dbef1d6623663045dc97e6ca222da5033f607f76",
+        "acceptedZipSha256": "97440d95bdb72e21e4addc02dbef1d6623663045dc97e6ca222da5033f607f76",
+        "matched": true
+      },
+      {
+        "file": "concepts/natural-rate-of-unemployment/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "08e0741cd74f4b3c6860707c237a95a8a84e4d1b16e1aba0a541108de19b29b0",
+        "acceptedZipSha256": "08e0741cd74f4b3c6860707c237a95a8a84e4d1b16e1aba0a541108de19b29b0",
+        "matched": true
+      },
+      {
+        "file": "concepts/natural-rate-of-unemployment/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "89f5c9597064609855dc883c3ddeb2598d852739b3134872f3a57fa403899f1c",
+        "acceptedZipSha256": "89f5c9597064609855dc883c3ddeb2598d852739b3134872f3a57fa403899f1c",
+        "matched": true
+      },
+      {
+        "file": "concepts/opportunity-cost/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "262563fa85a1a4e57c4ab39beecdc49d7206831d59ac8da76ac2442599752f50",
+        "acceptedZipSha256": "262563fa85a1a4e57c4ab39beecdc49d7206831d59ac8da76ac2442599752f50",
+        "matched": true
+      },
+      {
+        "file": "concepts/opportunity-cost/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "1a25bff7c7390cdef417c2b46962ae416f6090080c3ba715b40c05787e829bff",
+        "acceptedZipSha256": "1a25bff7c7390cdef417c2b46962ae416f6090080c3ba715b40c05787e829bff",
+        "matched": true
+      },
+      {
+        "file": "concepts/opportunity-cost/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "a4bf3ef5c2ff0ffa81216cda67819c968d6cd13ceaa3ef81dedbdf72e1f8b564",
+        "acceptedZipSha256": "a4bf3ef5c2ff0ffa81216cda67819c968d6cd13ceaa3ef81dedbdf72e1f8b564",
+        "matched": true
+      },
+      {
+        "file": "concepts/opportunity-cost/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "900d66c6f78759f718615a259045eeed39429f5bf551738e60b313cd6d6f5025",
+        "acceptedZipSha256": "900d66c6f78759f718615a259045eeed39429f5bf551738e60b313cd6d6f5025",
+        "matched": true
+      },
+      {
+        "file": "concepts/phillips-curve-expectations/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ab95efacffc3d67098586a5d9ebffe061642b3db4b0b905be612bb77f9ec1216",
+        "acceptedZipSha256": "ab95efacffc3d67098586a5d9ebffe061642b3db4b0b905be612bb77f9ec1216",
+        "matched": true
+      },
+      {
+        "file": "concepts/phillips-curve-expectations/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "2410802089aac467cad643a304e00879da3573d67b8cee96bb5bcb23d2c50817",
+        "acceptedZipSha256": "2410802089aac467cad643a304e00879da3573d67b8cee96bb5bcb23d2c50817",
+        "matched": true
+      },
+      {
+        "file": "concepts/phillips-curve-expectations/question-assets/lrpc.webp",
+        "archivePresent": true,
+        "currentSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "acceptedZipSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "matched": true
+      },
+      {
+        "file": "concepts/phillips-curve-expectations/question-assets/srpc.webp",
+        "archivePresent": true,
+        "currentSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "acceptedZipSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "matched": true
+      },
+      {
+        "file": "concepts/phillips-curve-expectations/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "9b5a4aebd768a582816dabf6bc902ed1ed58c77ee1a25fe18551426650789639",
+        "acceptedZipSha256": "9b5a4aebd768a582816dabf6bc902ed1ed58c77ee1a25fe18551426650789639",
+        "matched": true
+      },
+      {
+        "file": "concepts/phillips-curve-expectations/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "53243fafda0ac0535c7b53c5822d8646e61d3e38eefdc36e4e3efbb5551716f0",
+        "acceptedZipSha256": "53243fafda0ac0535c7b53c5822d8646e61d3e38eefdc36e4e3efbb5551716f0",
+        "matched": true
+      },
+      {
+        "file": "concepts/positive-versus-normative-analysis/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "c0c48f872188f79c75967e1639bab0731476db03fcdc645d624ba17c147e2a98",
+        "acceptedZipSha256": "c0c48f872188f79c75967e1639bab0731476db03fcdc645d624ba17c147e2a98",
+        "matched": true
+      },
+      {
+        "file": "concepts/positive-versus-normative-analysis/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "a8f652f4dd15c3a8247acc43f644a2426aa05f05f1aa3007ca81ebdefe2a4033",
+        "acceptedZipSha256": "a8f652f4dd15c3a8247acc43f644a2426aa05f05f1aa3007ca81ebdefe2a4033",
+        "matched": true
+      },
+      {
+        "file": "concepts/positive-versus-normative-analysis/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "1d81476a7d377fbe09a90f31e105ae3aeba0a38e700f6859d7b6360b26524345",
+        "acceptedZipSha256": "1d81476a7d377fbe09a90f31e105ae3aeba0a38e700f6859d7b6360b26524345",
+        "matched": true
+      },
+      {
+        "file": "concepts/positive-versus-normative-analysis/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "f88e93bd185e161428fe813b2562932ecf39fcb552ef9ac7730e6b3f01b0d436",
+        "acceptedZipSha256": "f88e93bd185e161428fe813b2562932ecf39fcb552ef9ac7730e6b3f01b0d436",
+        "matched": true
+      },
+      {
+        "file": "concepts/price-signals/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "a9d93742c0211b8bd64606c3621dc42523135622f9856b854df990fb207da660",
+        "acceptedZipSha256": "a9d93742c0211b8bd64606c3621dc42523135622f9856b854df990fb207da660",
+        "matched": true
+      },
+      {
+        "file": "concepts/price-signals/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "f73544f08f1092c860b3606eb327aa22addc82d10ff24ba2a53872f6067536c8",
+        "acceptedZipSha256": "f73544f08f1092c860b3606eb327aa22addc82d10ff24ba2a53872f6067536c8",
+        "matched": true
+      },
+      {
+        "file": "concepts/price-signals/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "8423bac9e209c589e090c19c9cfa82b513383e8804350a09511d720fe1500803",
+        "acceptedZipSha256": "8423bac9e209c589e090c19c9cfa82b513383e8804350a09511d720fe1500803",
+        "matched": true
+      },
+      {
+        "file": "concepts/price-signals/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "8b11c38378b83be7226c844ea92880e7d2c5d212dd92be51caf5559a7c93f486",
+        "acceptedZipSha256": "8b11c38378b83be7226c844ea92880e7d2c5d212dd92be51caf5559a7c93f486",
+        "matched": true
+      },
+      {
+        "file": "concepts/production-possibilities-frontier/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "407115baf2fcfe0cd3f4b4af709b85921c8c5af2ffe815f094af1897d50ce8a2",
+        "acceptedZipSha256": "407115baf2fcfe0cd3f4b4af709b85921c8c5af2ffe815f094af1897d50ce8a2",
+        "matched": true
+      },
+      {
+        "file": "concepts/production-possibilities-frontier/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "3fd9ec4d0f65eb8667136dedc1e9075467fc50447f9eef6f1c2d5df408d9a96d",
+        "acceptedZipSha256": "3fd9ec4d0f65eb8667136dedc1e9075467fc50447f9eef6f1c2d5df408d9a96d",
+        "matched": true
+      },
+      {
+        "file": "concepts/production-possibilities-frontier/question-assets/ppf.webp",
+        "archivePresent": true,
+        "currentSha256": "961e4a0c034de2ee5662f004cb0a343825290ca663dbe80b9ae6ad7dd0617a5a",
+        "acceptedZipSha256": "961e4a0c034de2ee5662f004cb0a343825290ca663dbe80b9ae6ad7dd0617a5a",
+        "matched": true
+      },
+      {
+        "file": "concepts/production-possibilities-frontier/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "4db83f9b08c1ed2ff0247333866801a63a0bc31afdaccf2e4f5e9d3c8dc220bb",
+        "acceptedZipSha256": "4db83f9b08c1ed2ff0247333866801a63a0bc31afdaccf2e4f5e9d3c8dc220bb",
+        "matched": true
+      },
+      {
+        "file": "concepts/production-possibilities-frontier/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "e94d8c7667df4b648b8e7fd951bfe390022be90913a08b50bf809fafd45cab05",
+        "acceptedZipSha256": "e94d8c7667df4b648b8e7fd951bfe390022be90913a08b50bf809fafd45cab05",
+        "matched": true
+      },
+      {
+        "file": "concepts/productivity-measurement/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "a8c7e4989539763351773ee3450dc526a1319564193be7c675f93c93c0d6a133",
+        "acceptedZipSha256": "a8c7e4989539763351773ee3450dc526a1319564193be7c675f93c93c0d6a133",
+        "matched": true
+      },
+      {
+        "file": "concepts/productivity-measurement/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "4f6a328ee33ee82754ca73f6c82b82dc5055c05ea49b75a7fdee9ef26b75698c",
+        "acceptedZipSha256": "4f6a328ee33ee82754ca73f6c82b82dc5055c05ea49b75a7fdee9ef26b75698c",
+        "matched": true
+      },
+      {
+        "file": "concepts/productivity-measurement/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "c803c354bfbdee1c7975cbb968c6ae34f53badc78519efec3110d444f21d097d",
+        "acceptedZipSha256": "c803c354bfbdee1c7975cbb968c6ae34f53badc78519efec3110d444f21d097d",
+        "matched": true
+      },
+      {
+        "file": "concepts/productivity-measurement/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "5d35c2b7952768fe3459e2e6c4be20b12e68976dd9336cf22ca9d72ff3c7ec59",
+        "acceptedZipSha256": "5d35c2b7952768fe3459e2e6c4be20b12e68976dd9336cf22ca9d72ff3c7ec59",
+        "matched": true
+      },
+      {
+        "file": "concepts/quantity-theory-of-money/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "5201e0ea930fac0942e6299af0ad023738f05953f6a512a53410a0027334f8f0",
+        "acceptedZipSha256": "5201e0ea930fac0942e6299af0ad023738f05953f6a512a53410a0027334f8f0",
+        "matched": true
+      },
+      {
+        "file": "concepts/quantity-theory-of-money/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "291eb8bf11c155f23b28e58ab06da1e85efb40d5963a9e724efbdbc7ce9130c5",
+        "acceptedZipSha256": "291eb8bf11c155f23b28e58ab06da1e85efb40d5963a9e724efbdbc7ce9130c5",
+        "matched": true
+      },
+      {
+        "file": "concepts/quantity-theory-of-money/question-assets/moneys_moneyd.webp",
+        "archivePresent": true,
+        "currentSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "acceptedZipSha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
+        "matched": true
+      },
+      {
+        "file": "concepts/quantity-theory-of-money/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "de0d43ef848b80bda4ea1ac7d28bdfa6eb6f50229b1f8818813004bd2c4649c0",
+        "acceptedZipSha256": "de0d43ef848b80bda4ea1ac7d28bdfa6eb6f50229b1f8818813004bd2c4649c0",
+        "matched": true
+      },
+      {
+        "file": "concepts/quantity-theory-of-money/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "9e4dffd190552ceb60514ef849a9f37ac3fc115984b1828133198a1c7bc510a0",
+        "acceptedZipSha256": "9e4dffd190552ceb60514ef849a9f37ac3fc115984b1828133198a1c7bc510a0",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-gdp/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "6bde3316cbcb5d22d72c68d03fa6d9d457768197cb7f3eeb061420c165a14a6b",
+        "acceptedZipSha256": "6bde3316cbcb5d22d72c68d03fa6d9d457768197cb7f3eeb061420c165a14a6b",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-gdp/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "c76fba51e12a4f3c8cba4e03c3dd56ef61e09dac252946c6d0f435e1e6c0d61c",
+        "acceptedZipSha256": "c76fba51e12a4f3c8cba4e03c3dd56ef61e09dac252946c6d0f435e1e6c0d61c",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-gdp/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "9074f05c63438f9d3d3175fb196f62a6c3d8da86f41ce4e7d795712fe68f7007",
+        "acceptedZipSha256": "9074f05c63438f9d3d3175fb196f62a6c3d8da86f41ce4e7d795712fe68f7007",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-gdp/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "28e219c86b3bad1a95186bc9acd8184479218e0019b8cc123ba7457868857a2c",
+        "acceptedZipSha256": "28e219c86b3bad1a95186bc9acd8184479218e0019b8cc123ba7457868857a2c",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-interest-rates/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "9c8f0a2c6f833752d87d3e1ee2e1c7864cafaa86c1a7f462ed18471b7e4afcaf",
+        "acceptedZipSha256": "9c8f0a2c6f833752d87d3e1ee2e1c7864cafaa86c1a7f462ed18471b7e4afcaf",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-interest-rates/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "687c027083177291fd86027b3411479f77706ed35b6bb319d458307e58510374",
+        "acceptedZipSha256": "687c027083177291fd86027b3411479f77706ed35b6bb319d458307e58510374",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-interest-rates/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "5338c999013b24a4997fedb5442a711356f0bf9d3bb644eeb4781fcfb3e37445",
+        "acceptedZipSha256": "5338c999013b24a4997fedb5442a711356f0bf9d3bb644eeb4781fcfb3e37445",
+        "matched": true
+      },
+      {
+        "file": "concepts/real-versus-nominal-interest-rates/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "ec1dac5a5fbca10bdc1719315f9dcee2a5d1e4424735491e8ac0f92d21071b83",
+        "acceptedZipSha256": "ec1dac5a5fbca10bdc1719315f9dcee2a5d1e4424735491e8ac0f92d21071b83",
+        "matched": true
+      },
+      {
+        "file": "concepts/sacrifice-ratio/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "b69cf739354d8140c443f3ccb6911a2c6922186db68222a1951096a232029fb7",
+        "acceptedZipSha256": "b69cf739354d8140c443f3ccb6911a2c6922186db68222a1951096a232029fb7",
+        "matched": true
+      },
+      {
+        "file": "concepts/sacrifice-ratio/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "a9ceef68f59fa7e49feaf48e2e1c4b7fb17a13b63bc3a574628d32c9d4ee0e02",
+        "acceptedZipSha256": "a9ceef68f59fa7e49feaf48e2e1c4b7fb17a13b63bc3a574628d32c9d4ee0e02",
+        "matched": true
+      },
+      {
+        "file": "concepts/sacrifice-ratio/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "a6922cbd36d656b7d0777aac20b39a735c5821f425c49f299226c0fd6b28a8fb",
+        "acceptedZipSha256": "a6922cbd36d656b7d0777aac20b39a735c5821f425c49f299226c0fd6b28a8fb",
+        "matched": true
+      },
+      {
+        "file": "concepts/sacrifice-ratio/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "444d38c7397708b543a00d19ac7ae8c0fd39f467e2a96ded786ccff00e88516b",
+        "acceptedZipSha256": "444d38c7397708b543a00d19ac7ae8c0fd39f467e2a96ded786ccff00e88516b",
+        "matched": true
+      },
+      {
+        "file": "concepts/scarcity-and-tradeoffs/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "344e55178f341ebf3e1ca8036977f388c2b39d50686ab22457460e2ca3b4d86c",
+        "acceptedZipSha256": "344e55178f341ebf3e1ca8036977f388c2b39d50686ab22457460e2ca3b4d86c",
+        "matched": true
+      },
+      {
+        "file": "concepts/scarcity-and-tradeoffs/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "659cc9eb5ac6aa2543c919fbd7cd6fc695673b22bee4b4093c9d9bf996df96c7",
+        "acceptedZipSha256": "659cc9eb5ac6aa2543c919fbd7cd6fc695673b22bee4b4093c9d9bf996df96c7",
+        "matched": true
+      },
+      {
+        "file": "concepts/scarcity-and-tradeoffs/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "06be0dd7620484408b9cd12dd61b5c55e3082c6135068405ae0f2043dced253c",
+        "acceptedZipSha256": "06be0dd7620484408b9cd12dd61b5c55e3082c6135068405ae0f2043dced253c",
+        "matched": true
+      },
+      {
+        "file": "concepts/scarcity-and-tradeoffs/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "c40dc98f5077c1a3d3122b575d2c5ecabd4410d802f99ea64d6dd18eddc86467",
+        "acceptedZipSha256": "c40dc98f5077c1a3d3122b575d2c5ecabd4410d802f99ea64d6dd18eddc86467",
+        "matched": true
+      },
+      {
+        "file": "concepts/short-run-phillips-curve/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "4a0b9bf89b82f7aa0287e29d17e9d1412ce067114cebc3ba26ea277edb4dad81",
+        "acceptedZipSha256": "4a0b9bf89b82f7aa0287e29d17e9d1412ce067114cebc3ba26ea277edb4dad81",
+        "matched": true
+      },
+      {
+        "file": "concepts/short-run-phillips-curve/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "933c100c92fb824e0225b1a789a3f78f58d7832a73c213994ab11a3ab3bf3780",
+        "acceptedZipSha256": "933c100c92fb824e0225b1a789a3f78f58d7832a73c213994ab11a3ab3bf3780",
+        "matched": true
+      },
+      {
+        "file": "concepts/short-run-phillips-curve/question-assets/lrpc.webp",
+        "archivePresent": true,
+        "currentSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "acceptedZipSha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
+        "matched": true
+      },
+      {
+        "file": "concepts/short-run-phillips-curve/question-assets/srpc.webp",
+        "archivePresent": true,
+        "currentSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "acceptedZipSha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
+        "matched": true
+      },
+      {
+        "file": "concepts/short-run-phillips-curve/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "61dba9eb6654d0a9dc3d917791ad0b65c89b1c2e84e722680d1fe25fdd58d245",
+        "acceptedZipSha256": "61dba9eb6654d0a9dc3d917791ad0b65c89b1c2e84e722680d1fe25fdd58d245",
+        "matched": true
+      },
+      {
+        "file": "concepts/short-run-phillips-curve/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "49e1cd153eb3d3ab839105657f5022ba4617d3bad0077ac180f0435aa0c7f13c",
+        "acceptedZipSha256": "49e1cd153eb3d3ab839105657f5022ba4617d3bad0077ac180f0435aa0c7f13c",
+        "matched": true
+      },
+      {
+        "file": "concepts/sources-of-productivity/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "f2e6751a453ffb0ee4aaae73e640fadbf16470af072ba476abfaa2536cf38a16",
+        "acceptedZipSha256": "f2e6751a453ffb0ee4aaae73e640fadbf16470af072ba476abfaa2536cf38a16",
+        "matched": true
+      },
+      {
+        "file": "concepts/sources-of-productivity/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "1b27b4c54f3e599bdf6cc6c8f3a74cc34931a44d282bf1c3258b80ee107f5177",
+        "acceptedZipSha256": "1b27b4c54f3e599bdf6cc6c8f3a74cc34931a44d282bf1c3258b80ee107f5177",
+        "matched": true
+      },
+      {
+        "file": "concepts/sources-of-productivity/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "3572aa2d4bbfa73c28aab5f5be21d355b59dcbc4afc968080df8b592e2322ffd",
+        "acceptedZipSha256": "3572aa2d4bbfa73c28aab5f5be21d355b59dcbc4afc968080df8b592e2322ffd",
+        "matched": true
+      },
+      {
+        "file": "concepts/sources-of-productivity/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "c4b272625c73f8e8c2d8c93a781f6199949fc81d2cf6e9b29c63a49c4f540998",
+        "acceptedZipSha256": "c4b272625c73f8e8c2d8c93a781f6199949fc81d2cf6e9b29c63a49c4f540998",
+        "matched": true
+      },
+      {
+        "file": "concepts/stabilization-policy/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "68a362e8f5653c6efe02a2b5a014b195d4c5d8b09e2e62e432578ea24d0c53ba",
+        "acceptedZipSha256": "68a362e8f5653c6efe02a2b5a014b195d4c5d8b09e2e62e432578ea24d0c53ba",
+        "matched": true
+      },
+      {
+        "file": "concepts/stabilization-policy/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "dfe1fe9722a037cefb329ab7e4bdfe569f74a5e6ced78d6503ee74c8bed4c7b8",
+        "acceptedZipSha256": "dfe1fe9722a037cefb329ab7e4bdfe569f74a5e6ced78d6503ee74c8bed4c7b8",
+        "matched": true
+      },
+      {
+        "file": "concepts/stabilization-policy/question-assets/ad_ms_md.webp",
+        "archivePresent": true,
+        "currentSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "acceptedZipSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/stabilization-policy/question-assets/moneymultiplier.webp",
+        "archivePresent": true,
+        "currentSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "acceptedZipSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "matched": true
+      },
+      {
+        "file": "concepts/stabilization-policy/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "5e6f89d9f806e9ffac01f9978698a917de6285e816c4caacd9d880f14987df9a",
+        "acceptedZipSha256": "5e6f89d9f806e9ffac01f9978698a917de6285e816c4caacd9d880f14987df9a",
+        "matched": true
+      },
+      {
+        "file": "concepts/stabilization-policy/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "d8539d509fbfaa055cae07886af424709a21d18f8315be05c3ce7849e59fbf3f",
+        "acceptedZipSha256": "d8539d509fbfaa055cae07886af424709a21d18f8315be05c3ce7849e59fbf3f",
+        "matched": true
+      },
+      {
+        "file": "concepts/statutory-versus-economic-tax-incidence/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "50710cd625a10b866b8f5eef6d19ed2013f8746b7165ebc9cb521dcadab487df",
+        "acceptedZipSha256": "50710cd625a10b866b8f5eef6d19ed2013f8746b7165ebc9cb521dcadab487df",
+        "matched": true
+      },
+      {
+        "file": "concepts/statutory-versus-economic-tax-incidence/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "c7c43dae4c09084a72f7a4befbdb0d260f77cbc621e91c09a13f5774e0a1a0c5",
+        "acceptedZipSha256": "c7c43dae4c09084a72f7a4befbdb0d260f77cbc621e91c09a13f5774e0a1a0c5",
+        "matched": true
+      },
+      {
+        "file": "concepts/statutory-versus-economic-tax-incidence/question-assets/taxincidence.webp",
+        "archivePresent": true,
+        "currentSha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+        "acceptedZipSha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+        "matched": true
+      },
+      {
+        "file": "concepts/statutory-versus-economic-tax-incidence/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "45a907b2cdf765d277be568d5f61810e8d858cb1cc23497e247f79fe731d85a2",
+        "acceptedZipSha256": "45a907b2cdf765d277be568d5f61810e8d858cb1cc23497e247f79fe731d85a2",
+        "matched": true
+      },
+      {
+        "file": "concepts/statutory-versus-economic-tax-incidence/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "550d36239a68850d8b81c6afce5f2a1e40b0a738b42bc2b27cc1e7f8a21682ba",
+        "acceptedZipSha256": "550d36239a68850d8b81c6afce5f2a1e40b0a738b42bc2b27cc1e7f8a21682ba",
+        "matched": true
+      },
+      {
+        "file": "concepts/supply/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "fc7de29f55401272538bb2b82011fabff1e8536ad14642f01b80559e8e9a3bac",
+        "acceptedZipSha256": "fc7de29f55401272538bb2b82011fabff1e8536ad14642f01b80559e8e9a3bac",
+        "matched": true
+      },
+      {
+        "file": "concepts/supply/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "fc21712d6c0bea3554447405117431a767324225e04c91739905ffed89a12a18",
+        "acceptedZipSha256": "fc21712d6c0bea3554447405117431a767324225e04c91739905ffed89a12a18",
+        "matched": true
+      },
+      {
+        "file": "concepts/supply/question-assets/supplydemand1.webp",
+        "archivePresent": true,
+        "currentSha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
+        "acceptedZipSha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
+        "matched": true
+      },
+      {
+        "file": "concepts/supply/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "f2d82793648c51fd985b2965e49bfdcf126ac7754216a43c3feb999ba38234ea",
+        "acceptedZipSha256": "f2d82793648c51fd985b2965e49bfdcf126ac7754216a43c3feb999ba38234ea",
+        "matched": true
+      },
+      {
+        "file": "concepts/supply/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "2a9d4f776bbfbfab7fdaa10bf11af86a9eef8a9ee3280891a2cacd9901f4fe9b",
+        "acceptedZipSha256": "2a9d4f776bbfbfab7fdaa10bf11af86a9eef8a9ee3280891a2cacd9901f4fe9b",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-incidence/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "ec42d883046f87b8b5b9cf9bab6f3fdaddd32b819dc7455850b92657e893a621",
+        "acceptedZipSha256": "ec42d883046f87b8b5b9cf9bab6f3fdaddd32b819dc7455850b92657e893a621",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-incidence/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "cf84b6825abb333e1589e6cdbeb417e8bc212b0738207103b270732b36322dcf",
+        "acceptedZipSha256": "cf84b6825abb333e1589e6cdbeb417e8bc212b0738207103b270732b36322dcf",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-incidence/question-assets/taxincidence.webp",
+        "archivePresent": true,
+        "currentSha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+        "acceptedZipSha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-incidence/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "d511d318274edf5af6adb6c5c866b15d6466f40a97cb063622433a39babdfb0e",
+        "acceptedZipSha256": "d511d318274edf5af6adb6c5c866b15d6466f40a97cb063622433a39babdfb0e",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-incidence/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "e6ae8cc3b313a64717a1dd078d4ad595c172edcb23b69a89df496723eb1f755a",
+        "acceptedZipSha256": "e6ae8cc3b313a64717a1dd078d4ad595c172edcb23b69a89df496723eb1f755a",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-wedges-and-revenue/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "4cdfde2dd2a51c3e8af946606cab5d5cbe5d545848601a1dc2607edda341b1a4",
+        "acceptedZipSha256": "4cdfde2dd2a51c3e8af946606cab5d5cbe5d545848601a1dc2607edda341b1a4",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-wedges-and-revenue/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "af1d961b523618a4627d16145fdb507be6569a9ed28c35cff0deb39f2ad57373",
+        "acceptedZipSha256": "af1d961b523618a4627d16145fdb507be6569a9ed28c35cff0deb39f2ad57373",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-wedges-and-revenue/question-assets/taxincidence.webp",
+        "archivePresent": true,
+        "currentSha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+        "acceptedZipSha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-wedges-and-revenue/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "4bf685bc13d972c1a45b0e145633be758dc4c99e935c24d1ce9aef5ee2cc5595",
+        "acceptedZipSha256": "4bf685bc13d972c1a45b0e145633be758dc4c99e935c24d1ce9aef5ee2cc5595",
+        "matched": true
+      },
+      {
+        "file": "concepts/tax-wedges-and-revenue/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "ad696e3bf753b64ca4a3cd5c6b5a03ff55902a695be25c21ff1c46ab4876cadb",
+        "acceptedZipSha256": "ad696e3bf753b64ca4a3cd5c6b5a03ff55902a695be25c21ff1c46ab4876cadb",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-measurement/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "25ca5d8bccb4eaff1eab8e61b4344232aa7e93dad651d61028a049bb89a8b95f",
+        "acceptedZipSha256": "25ca5d8bccb4eaff1eab8e61b4344232aa7e93dad651d61028a049bb89a8b95f",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-measurement/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "416a78becf9f5e329f96462ee5fbca22ca194e7feaa50b807b9e86d6f30c21bf",
+        "acceptedZipSha256": "416a78becf9f5e329f96462ee5fbca22ca194e7feaa50b807b9e86d6f30c21bf",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-measurement/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "961dadbdcb287abf3ab95cdc72a978c0f384f890614cac0a399649d1a93e9a9e",
+        "acceptedZipSha256": "961dadbdcb287abf3ab95cdc72a978c0f384f890614cac0a399649d1a93e9a9e",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-measurement/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "43bf7c92759b9309097cb396e44a5250ad47d47b07dfe602c861d41763fbac56",
+        "acceptedZipSha256": "43bf7c92759b9309097cb396e44a5250ad47d47b07dfe602c861d41763fbac56",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-types/concept_bank.js",
+        "archivePresent": true,
+        "currentSha256": "9a8e45c2419741e19dae1fe799f7d92c0589ee1bce0312cdcb1cb774bbec7b25",
+        "acceptedZipSha256": "9a8e45c2419741e19dae1fe799f7d92c0589ee1bce0312cdcb1cb774bbec7b25",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-types/concept_manifest.json",
+        "archivePresent": true,
+        "currentSha256": "3a5cdb6719a4e4729343512271a5d732d340e9b25a6dd2685e3240c800ca2da1",
+        "acceptedZipSha256": "3a5cdb6719a4e4729343512271a5d732d340e9b25a6dd2685e3240c800ca2da1",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-types/source_parity.json",
+        "archivePresent": true,
+        "currentSha256": "9cf1265b54f636743abf91a111d15f8440e94a5de880ab4c6bc210d84fe974d8",
+        "acceptedZipSha256": "9cf1265b54f636743abf91a111d15f8440e94a5de880ab4c6bc210d84fe974d8",
+        "matched": true
+      },
+      {
+        "file": "concepts/unemployment-types/validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "7ef6ae02bd039da2fb728da83e61870c30b70c18019ac95163d8a78bce273c60",
+        "acceptedZipSha256": "7ef6ae02bd039da2fb728da83e61870c30b70c18019ac95163d8a78bce273c60",
+        "matched": true
+      },
+      {
+        "file": "phase4_3a_static_validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "bf137d3ddee252c34b5ddb556d5b233db9ffc2363f7ea39ed4fde69aaf4e4292",
+        "acceptedZipSha256": "bf137d3ddee252c34b5ddb556d5b233db9ffc2363f7ea39ed4fde69aaf4e4292",
+        "matched": true
+      },
+      {
+        "file": "phase4_3a_answer_stability_results.json",
+        "archivePresent": true,
+        "currentSha256": "3fcbc13e5163cd3f37b19e86bb96f8007b469108be06ee64d431b9119aab48ef",
+        "acceptedZipSha256": "3fcbc13e5163cd3f37b19e86bb96f8007b469108be06ee64d431b9119aab48ef",
+        "matched": true
+      },
+      {
+        "file": "phase4_3a_routing_results.json",
+        "archivePresent": true,
+        "currentSha256": "b050f1f93d94b22020510790f0aedef055b83cefe311f1744956fec468b373fd",
+        "acceptedZipSha256": "b050f1f93d94b22020510790f0aedef055b83cefe311f1744956fec468b373fd",
+        "matched": true
+      },
+      {
+        "file": "phase4_3a_browser_composition_validation_results.json",
+        "archivePresent": true,
+        "currentSha256": "aef3047e6dec8562d63726a14a02aed9dfb05dd40a238b151220ba6aa9e6ef68",
+        "acceptedZipSha256": "aef3047e6dec8562d63726a14a02aed9dfb05dd40a238b151220ba6aa9e6ef68",
+        "matched": true
+      }
+    ],
+    "nonProtectedInheritedDifferences": [
+      {
+        "file": "PHASE4_3A_CURATED_CONCEPT_LIBRARY_REPORT.md",
+        "currentSha256": "72aebd6b224347104fcbd80a059b1ddede08e0916727a8911ee2516a81c2194f",
+        "acceptedZipSha256": "1d5074673f48ba336311192a90416f4b08b9ea219a4eacf11360934d24dbbeb9",
+        "matched": false,
+        "protected": false,
+        "classification": "inherited report/handoff difference"
+      },
+      {
+        "file": "PHASE4_3A_NEXT_PHASE_HANDOFF.md",
+        "currentSha256": "a3452494f250a6b5dc35e0f9d48887452725b2ceed5ecc62e180dc9b2264c4f5",
+        "acceptedZipSha256": "cad5c8b6d14e9a63aeae7956c69dbf6122597282137319c73c4f05c1b15af733",
+        "matched": false,
+        "protected": false,
+        "classification": "inherited report/handoff difference"
+      }
+    ]
+  },
+  "phase4_2DeploymentBundles": {
+    "mountedForHashAudit": false,
+    "changedByPhase4_4": false,
+    "note": "The complete Phase 4.2 bundle workspace was not mounted. Phase 4.4 wrote no files to a Phase 4.2 path."
+  },
+  "websiteRepository": {
+    "mountedForHashAudit": false,
+    "changedByPhase4_4": false,
+    "note": "The website repository was not mounted. Phase 4.4 performed no website deployment or website writes."
+  },
+  "phase4_4WriteBoundary": "/mnt/data/phase4.4-faculty-concept-composer",
+  "protectedFilesChanged": 0,
+  "passed": true
+}

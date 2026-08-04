@@ -8,7 +8,7 @@ Primary navigation:
 
 Key public path:
 - /build/ — faculty goal filter and embedded Faculty Concept Composer
-- /build/phase4.4-faculty-concept-composer/ — full composer workspace
+- /build/phase4.5a-faculty-concept-composer/ — textbook-agnostic faculty composer UX
 
 Faculty goals:
 - Build a game from existing economics concepts

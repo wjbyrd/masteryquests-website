@@ -1,0 +1,742 @@
+{
+  "composerVersion": "4.4a.0",
+  "recipeSchemaVersion": "1.2.0",
+  "conceptCount": 64,
+  "questionCount": 2447,
+  "recipes": [
+    {
+      "slug": "exam-only-minimal",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "easyBoss": 0,
+        "mediumBoss": 3,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 44
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [],
+          "activeConceptIds": [],
+          "questionCount": 0
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "demand"
+          ],
+          "activeConceptIds": [
+            "demand"
+          ],
+          "questionCount": 3
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [],
+          "activeConceptIds": [],
+          "questionCount": 0
+        }
+      },
+      "supportedModes": [
+        "exam"
+      ],
+      "answerQuestions": 44,
+      "namespace": "mq-econ:exam-only-minimal:c5b1f2070275",
+      "htmlSha256": "df112d78f5a2a461b145a9bbef837f7bc69b2c825a47ecc4e4d59c8db2f3f60f"
+    },
+    {
+      "slug": "legendary-only",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 24
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "positive-versus-normative-analysis"
+          ],
+          "activeConceptIds": [
+            "positive-versus-normative-analysis"
+          ],
+          "questionCount": 3
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [],
+          "activeConceptIds": [],
+          "questionCount": 0
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [],
+          "activeConceptIds": [],
+          "questionCount": 0
+        }
+      },
+      "supportedModes": [
+        "legendary"
+      ],
+      "answerQuestions": 24,
+      "namespace": "mq-econ:legendary-only:5dc005e4585c",
+      "htmlSha256": "768b540466b2b300ecd0c059f470fe10e1dce9bdc9338c84a621dc27faf70f7e"
+    },
+    {
+      "slug": "market-foundations",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 236,
+        "medium": 239,
+        "hard": 220,
+        "elite": 165,
+        "legendary": 212,
+        "easyBoss": 58,
+        "mediumBoss": 54,
+        "finalBoss": 55,
+        "legendaryBoss": 90,
+        "repair": 161,
+        "repairSeed": 15,
+        "bridge": 112,
+        "calculation": 129,
+        "integration": 0,
+        "graph": 265,
+        "assets": 30,
+        "totalCanonical": 1617
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "opportunity-cost",
+            "marginal-analysis",
+            "incentives",
+            "market-failures",
+            "production-possibilities-frontier",
+            "positive-versus-normative-analysis",
+            "gdp-measurement",
+            "real-versus-nominal-gdp",
+            "cpi-and-inflation-measurement",
+            "cpi-bias",
+            "indexing-and-real-values",
+            "money-functions-and-measures",
+            "central-bank-and-federal-reserve",
+            "monetary-policy-tools"
+          ],
+          "activeConceptIds": [
+            "opportunity-cost",
+            "marginal-analysis",
+            "incentives",
+            "market-failures",
+            "production-possibilities-frontier",
+            "positive-versus-normative-analysis",
+            "gdp-measurement",
+            "real-versus-nominal-gdp",
+            "cpi-and-inflation-measurement",
+            "cpi-bias",
+            "indexing-and-real-values",
+            "money-functions-and-measures",
+            "central-bank-and-federal-reserve",
+            "monetary-policy-tools"
+          ],
+          "questionCount": 58
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "living-standards-and-growth",
+            "productivity-measurement",
+            "economic-growth-policy",
+            "quantity-theory-of-money",
+            "monetary-neutrality",
+            "inflation-costs",
+            "short-run-phillips-curve",
+            "long-run-phillips-curve",
+            "disinflation-and-policy"
+          ],
+          "activeConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "living-standards-and-growth",
+            "productivity-measurement",
+            "economic-growth-policy",
+            "quantity-theory-of-money",
+            "monetary-neutrality",
+            "inflation-costs",
+            "short-run-phillips-curve",
+            "long-run-phillips-curve",
+            "disinflation-and-policy"
+          ],
+          "questionCount": 54
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "binding-price-ceilings",
+            "binding-price-floors",
+            "tax-wedges-and-revenue",
+            "statutory-versus-economic-tax-incidence",
+            "tax-incidence",
+            "unemployment-measurement",
+            "labor-market-institutions",
+            "liquidity-preference-and-money-market",
+            "monetary-policy-transmission",
+            "fiscal-multipliers-and-crowding-out"
+          ],
+          "activeConceptIds": [
+            "binding-price-ceilings",
+            "binding-price-floors",
+            "tax-wedges-and-revenue",
+            "statutory-versus-economic-tax-incidence",
+            "tax-incidence",
+            "unemployment-measurement",
+            "labor-market-institutions",
+            "liquidity-preference-and-money-market",
+            "monetary-policy-transmission",
+            "fiscal-multipliers-and-crowding-out"
+          ],
+          "questionCount": 55
+        }
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 1617,
+      "namespace": "mq-econ:market-foundations:e6e009ec4919",
+      "htmlSha256": "5f94b00a354fbf8e5c93dec819202b1f7c0fe612da660decf8dbaac2611064d1"
+    },
+    {
+      "slug": "mixed-custom-course",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 49,
+        "medium": 62,
+        "hard": 58,
+        "elite": 42,
+        "legendary": 44,
+        "easyBoss": 20,
+        "mediumBoss": 8,
+        "finalBoss": 14,
+        "legendaryBoss": 18,
+        "repair": 37,
+        "repairSeed": 1,
+        "bridge": 26,
+        "calculation": 43,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 379
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "opportunity-cost",
+            "gdp-measurement",
+            "bank-money-creation"
+          ],
+          "activeConceptIds": [
+            "opportunity-cost",
+            "gdp-measurement",
+            "bank-money-creation"
+          ],
+          "questionCount": 20
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "market-equilibrium",
+            "phillips-curve-expectations"
+          ],
+          "activeConceptIds": [
+            "market-equilibrium",
+            "phillips-curve-expectations"
+          ],
+          "questionCount": 8
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "unemployment-measurement",
+            "fiscal-policy-and-aggregate-demand"
+          ],
+          "activeConceptIds": [
+            "unemployment-measurement",
+            "fiscal-policy-and-aggregate-demand"
+          ],
+          "questionCount": 14
+        }
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 379,
+      "namespace": "mq-econ:mixed-custom-course:8c41cfc37f79",
+      "htmlSha256": "90ba87d76002796918056afb5d2ed53e9979cb74de6d16d652fe08483225e0e5"
+    },
+    {
+      "slug": "money-and-stabilization",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 161,
+        "medium": 154,
+        "hard": 155,
+        "elite": 141,
+        "legendary": 131,
+        "easyBoss": 20,
+        "mediumBoss": 30,
+        "finalBoss": 39,
+        "legendaryBoss": 67,
+        "repair": 147,
+        "repairSeed": 0,
+        "bridge": 81,
+        "calculation": 71,
+        "integration": 10,
+        "graph": 236,
+        "assets": 33,
+        "totalCanonical": 1126
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "money-functions-and-measures",
+            "central-bank-and-federal-reserve",
+            "bank-money-creation",
+            "monetary-policy-tools",
+            "monetary-control-limits",
+            "integrated-macroeconomic-analysis"
+          ],
+          "activeConceptIds": [
+            "money-functions-and-measures",
+            "central-bank-and-federal-reserve",
+            "bank-money-creation",
+            "monetary-policy-tools",
+            "monetary-control-limits",
+            "integrated-macroeconomic-analysis"
+          ],
+          "questionCount": 20
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "quantity-theory-of-money",
+            "monetary-neutrality",
+            "fisher-effect",
+            "inflation-costs",
+            "inflation-tax-and-deflation",
+            "short-run-phillips-curve",
+            "long-run-phillips-curve",
+            "phillips-curve-expectations",
+            "disinflation-and-policy",
+            "sacrifice-ratio",
+            "integrated-macroeconomic-analysis"
+          ],
+          "activeConceptIds": [
+            "quantity-theory-of-money",
+            "monetary-neutrality",
+            "fisher-effect",
+            "inflation-costs",
+            "inflation-tax-and-deflation",
+            "short-run-phillips-curve",
+            "long-run-phillips-curve",
+            "phillips-curve-expectations",
+            "disinflation-and-policy",
+            "sacrifice-ratio",
+            "integrated-macroeconomic-analysis"
+          ],
+          "questionCount": 30
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "liquidity-preference-and-money-market",
+            "monetary-policy-transmission",
+            "fiscal-policy-and-aggregate-demand",
+            "fiscal-multipliers-and-crowding-out",
+            "stabilization-policy",
+            "integrated-macroeconomic-analysis"
+          ],
+          "activeConceptIds": [
+            "liquidity-preference-and-money-market",
+            "monetary-policy-transmission",
+            "fiscal-policy-and-aggregate-demand",
+            "fiscal-multipliers-and-crowding-out",
+            "stabilization-policy",
+            "integrated-macroeconomic-analysis"
+          ],
+          "questionCount": 39
+        }
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 1126,
+      "namespace": "mq-econ:money-and-stabilization:82654b0e474c",
+      "htmlSha256": "3f901e72184eac646c2f0da1ac3f6ac15c889fceb53cdb46cf747e92c28a9d89"
+    },
+    {
+      "slug": "national-economy",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 80,
+        "medium": 80,
+        "hard": 80,
+        "elite": 80,
+        "legendary": 90,
+        "easyBoss": 49,
+        "mediumBoss": 36,
+        "finalBoss": 42,
+        "legendaryBoss": 32,
+        "repair": 57,
+        "repairSeed": 0,
+        "bridge": 37,
+        "calculation": 57,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 663
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "gdp-measurement",
+            "gdp-components",
+            "real-versus-nominal-gdp",
+            "limits-of-gdp",
+            "cpi-and-inflation-measurement",
+            "cpi-bias",
+            "cpi-versus-gdp-deflator",
+            "indexing-and-real-values",
+            "real-versus-nominal-interest-rates"
+          ],
+          "activeConceptIds": [
+            "gdp-measurement",
+            "gdp-components",
+            "real-versus-nominal-gdp",
+            "limits-of-gdp",
+            "cpi-and-inflation-measurement",
+            "cpi-bias",
+            "cpi-versus-gdp-deflator",
+            "indexing-and-real-values",
+            "real-versus-nominal-interest-rates"
+          ],
+          "questionCount": 49
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "living-standards-and-growth",
+            "productivity-measurement",
+            "sources-of-productivity",
+            "economic-growth-policy"
+          ],
+          "activeConceptIds": [
+            "living-standards-and-growth",
+            "productivity-measurement",
+            "sources-of-productivity",
+            "economic-growth-policy"
+          ],
+          "questionCount": 36
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "unemployment-measurement",
+            "unemployment-types",
+            "labor-market-institutions",
+            "natural-rate-of-unemployment"
+          ],
+          "activeConceptIds": [
+            "unemployment-measurement",
+            "unemployment-types",
+            "labor-market-institutions",
+            "natural-rate-of-unemployment"
+          ],
+          "questionCount": 42
+        }
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 663,
+      "namespace": "mq-econ:national-economy:c941db2cbd16",
+      "htmlSha256": "437f1fcb0218f389f9ab67f8f0257a2a353c690695dbadd44e9c38cc15e35178"
+    },
+    {
+      "slug": "standard-and-score",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 49,
+        "medium": 62,
+        "hard": 58,
+        "elite": 42,
+        "legendary": 44,
+        "easyBoss": 20,
+        "mediumBoss": 8,
+        "finalBoss": 14,
+        "legendaryBoss": 18,
+        "repair": 37,
+        "repairSeed": 1,
+        "bridge": 26,
+        "calculation": 43,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 379
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "opportunity-cost",
+            "gdp-measurement",
+            "bank-money-creation"
+          ],
+          "activeConceptIds": [
+            "opportunity-cost",
+            "gdp-measurement",
+            "bank-money-creation"
+          ],
+          "questionCount": 20
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "market-equilibrium",
+            "phillips-curve-expectations"
+          ],
+          "activeConceptIds": [
+            "market-equilibrium",
+            "phillips-curve-expectations"
+          ],
+          "questionCount": 8
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "unemployment-measurement",
+            "fiscal-policy-and-aggregate-demand"
+          ],
+          "activeConceptIds": [
+            "unemployment-measurement",
+            "fiscal-policy-and-aggregate-demand"
+          ],
+          "questionCount": 14
+        }
+      },
+      "supportedModes": [
+        "standard",
+        "score"
+      ],
+      "answerQuestions": 379,
+      "namespace": "mq-econ:standard-and-score:c72254cf4b62",
+      "htmlSha256": "7137500ea6d5febf4bd83fe4f830132d15d3c4617dc458fe455ca1afcf6540cf"
+    },
+    {
+      "slug": "timed-and-exam",
+      "passed": true,
+      "sourceSchemaVersion": "1.1.0",
+      "canonicalSchemaVersion": "1.2.0",
+      "errors": [],
+      "poolCounts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "easyBoss": 0,
+        "mediumBoss": 3,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 44
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [],
+          "activeConceptIds": [],
+          "questionCount": 0
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "demand"
+          ],
+          "activeConceptIds": [
+            "demand"
+          ],
+          "questionCount": 3
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [],
+          "activeConceptIds": [],
+          "questionCount": 0
+        }
+      },
+      "supportedModes": [
+        "timed",
+        "exam"
+      ],
+      "answerQuestions": 44,
+      "namespace": "mq-econ:timed-and-exam:170bed1ae5ea",
+      "htmlSha256": "10059ad3053af20452af2346c1d90d8640543805b78cfc27fd84f5038a3bd78f"
+    }
+  ],
+  "allPassed": true,
+  "namespaceIsolation": true
+}

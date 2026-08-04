@@ -1,0 +1,440 @@
+{
+  "recipeSlug": "my-faculty-mastery-quest",
+  "oldBossCounts": {
+    "easyBoss": 12,
+    "mediumBoss": 9,
+    "finalBoss": 12
+  },
+  "globalBanks": {
+    "easy": [
+      "ECON-MG-EASY-1",
+      "ECON-MG-EASY-10",
+      "ECON-MG-EASY-11",
+      "ECON-MG-EASY-12",
+      "ECON-MG-EASY-13",
+      "ECON-MG-EASY-14",
+      "ECON-MG-EASY-15",
+      "ECON-MG-EASY-16",
+      "ECON-MG-EASY-17",
+      "ECON-MG-EASY-18",
+      "ECON-MG-EASY-19",
+      "ECON-MG-EASY-2",
+      "ECON-MG-EASY-20",
+      "ECON-MG-EASY-21",
+      "ECON-MG-EASY-22",
+      "ECON-MG-EASY-23",
+      "ECON-MG-EASY-24",
+      "ECON-MG-EASY-25",
+      "ECON-MG-EASY-26",
+      "ECON-MG-EASY-27",
+      "ECON-MG-EASY-28",
+      "ECON-MG-EASY-3",
+      "ECON-MG-EASY-32",
+      "ECON-MG-EASY-33",
+      "ECON-MG-EASY-34",
+      "ECON-MG-EASY-38",
+      "ECON-MG-EASY-39",
+      "ECON-MG-EASY-4",
+      "ECON-MG-EASY-40",
+      "ECON-MG-EASY-41",
+      "ECON-MG-EASY-42",
+      "ECON-MG-EASY-43",
+      "ECON-MG-EASY-44",
+      "ECON-MG-EASY-45",
+      "ECON-MG-EASY-46",
+      "ECON-MG-EASY-47",
+      "ECON-MG-EASY-48",
+      "ECON-MG-EASY-49",
+      "ECON-MG-EASY-5",
+      "ECON-MG-EASY-50",
+      "ECON-MG-EASY-51",
+      "ECON-MG-EASY-52",
+      "ECON-MG-EASY-53",
+      "ECON-MG-EASY-54",
+      "ECON-MG-EASY-55",
+      "ECON-MG-EASY-6",
+      "ECON-MG-EASY-7",
+      "ECON-MG-EASY-8",
+      "ECON-MG-EASY-9"
+    ],
+    "medium": [
+      "ECON-MG-MEDIUM-100",
+      "ECON-MG-MEDIUM-101",
+      "ECON-MG-MEDIUM-102",
+      "ECON-MG-MEDIUM-103",
+      "ECON-MG-MEDIUM-104",
+      "ECON-MG-MEDIUM-105",
+      "ECON-MG-MEDIUM-106",
+      "ECON-MG-MEDIUM-107",
+      "ECON-MG-MEDIUM-108",
+      "ECON-MG-MEDIUM-109",
+      "ECON-MG-MEDIUM-110",
+      "ECON-MG-MEDIUM-111",
+      "ECON-MG-MEDIUM-112",
+      "ECON-MG-MEDIUM-113",
+      "ECON-MG-MEDIUM-114",
+      "ECON-MG-MEDIUM-117",
+      "ECON-MG-MEDIUM-118",
+      "ECON-MG-MEDIUM-119",
+      "ECON-MG-MEDIUM-120",
+      "ECON-MG-MEDIUM-121",
+      "ECON-MG-MEDIUM-122",
+      "ECON-MG-MEDIUM-123",
+      "ECON-MG-MEDIUM-124",
+      "ECON-MG-MEDIUM-125",
+      "ECON-MG-MEDIUM-126",
+      "ECON-MG-MEDIUM-127",
+      "ECON-MG-MEDIUM-128",
+      "ECON-MG-MEDIUM-129",
+      "ECON-MG-MEDIUM-130",
+      "ECON-MG-MEDIUM-131",
+      "ECON-MG-MEDIUM-150",
+      "ECON-MG-MEDIUM-151",
+      "ECON-MG-MEDIUM-152",
+      "ECON-MG-MEDIUM-153",
+      "ECON-MG-MEDIUM-154",
+      "ECON-MG-MEDIUM-155",
+      "ECON-MG-MEDIUM-156",
+      "ECON-MG-MEDIUM-157",
+      "ECON-MG-MEDIUM-158",
+      "ECON-MG-MEDIUM-160",
+      "ECON-MG-MEDIUM-161",
+      "ECON-MG-MEDIUM-162",
+      "ECON-MG-MEDIUM-163",
+      "ECON-MG-MEDIUM-164",
+      "ECON-MG-MEDIUM-165",
+      "ECON-MG-MEDIUM-166",
+      "ECON-MG-MEDIUM-167",
+      "ECON-MG-MEDIUM-168",
+      "ECON-MG-MEDIUM-170"
+    ],
+    "hard": [
+      "ECON-MG-HARD-200",
+      "ECON-MG-HARD-201",
+      "ECON-MG-HARD-202",
+      "ECON-MG-HARD-203",
+      "ECON-MG-HARD-204",
+      "ECON-MG-HARD-205",
+      "ECON-MG-HARD-206",
+      "ECON-MG-HARD-207",
+      "ECON-MG-HARD-208",
+      "ECON-MG-HARD-209",
+      "ECON-MG-HARD-210",
+      "ECON-MG-HARD-211",
+      "ECON-MG-HARD-212",
+      "ECON-MG-HARD-213",
+      "ECON-MG-HARD-215",
+      "ECON-MG-HARD-216",
+      "ECON-MG-HARD-217",
+      "ECON-MG-HARD-218",
+      "ECON-MG-HARD-219",
+      "ECON-MG-HARD-220",
+      "ECON-MG-HARD-221",
+      "ECON-MG-HARD-222",
+      "ECON-MG-HARD-223",
+      "ECON-MG-HARD-224",
+      "ECON-MG-HARD-225",
+      "ECON-MG-HARD-226",
+      "ECON-MG-HARD-227",
+      "ECON-MG-HARD-228",
+      "ECON-MG-HARD-229",
+      "ECON-MG-HARD-230",
+      "ECON-MG-HARD-231",
+      "ECON-MG-HARD-232",
+      "ECON-MG-HARD-233",
+      "ECON-MG-HARD-250",
+      "ECON-MG-HARD-251",
+      "ECON-MG-HARD-252",
+      "ECON-MG-HARD-253",
+      "ECON-MG-HARD-254",
+      "ECON-MG-HARD-255",
+      "ECON-MG-HARD-256",
+      "ECON-MG-HARD-257",
+      "ECON-MG-HARD-258",
+      "ECON-MG-HARD-259",
+      "ECON-MG-HARD-260",
+      "ECON-MG-HARD-261",
+      "ECON-MG-HARD-262",
+      "ECON-MG-HARD-263",
+      "ECON-MG-HARD-264",
+      "ECON-MG-HARD-265"
+    ],
+    "elite": [
+      "ECON-MG-ELITE-305",
+      "ECON-MG-ELITE-306",
+      "ECON-MG-ELITE-307",
+      "ECON-MG-ELITE-322",
+      "ECON-MG-ELITE-323",
+      "ECON-MG-ELITE-327",
+      "ECON-MG-ELITE-328",
+      "ECON-MG-ELITE-329",
+      "ECON-MG-ELITE-330",
+      "ECON-MG-ELITE-331",
+      "ECON-MG-ELITE-332",
+      "ECON-MG-ELITE-333",
+      "ECON-MG-ELITE-334",
+      "ECON-MG-ELITE-335",
+      "ECON-MG-ELITE-336",
+      "ECON-MG-ELITE-337",
+      "ECON-MG-ELITE-338",
+      "ECON-MG-ELITE-339"
+    ],
+    "legendary": [
+      "ECON-EC-LEGENDARY-14007",
+      "ECON-MG-LEGENDARY-9000",
+      "ECON-MG-LEGENDARY-9001",
+      "ECON-MG-LEGENDARY-9002",
+      "ECON-MG-LEGENDARY-9003",
+      "ECON-MG-LEGENDARY-9004",
+      "ECON-MG-LEGENDARY-9005",
+      "ECON-MG-LEGENDARY-9006",
+      "ECON-MG-LEGENDARY-9007",
+      "ECON-MG-LEGENDARY-9008",
+      "ECON-MG-LEGENDARY-9009",
+      "ECON-MG-LEGENDARY-9010",
+      "ECON-MG-LEGENDARY-9011",
+      "ECON-MG-LEGENDARY-9012",
+      "ECON-MG-LEGENDARY-9013",
+      "ECON-MG-LEGENDARY-9014",
+      "ECON-MG-LEGENDARY-9015",
+      "ECON-MG-LEGENDARY-9016",
+      "ECON-MG-LEGENDARY-9017",
+      "ECON-MG-LEGENDARY-9018",
+      "ECON-MG-LEGENDARY-9019",
+      "ECON-MG-LEGENDARY-9020",
+      "ECON-MG-LEGENDARY-9021",
+      "ECON-MG-LEGENDARY-9022",
+      "ECON-MG-LEGENDARY-9023",
+      "ECON-MG-LEGENDARY-9024",
+      "ECON-MG-LEGENDARY-9025",
+      "ECON-MG-LEGENDARY-9026",
+      "ECON-MG-LEGENDARY-9027",
+      "ECON-MG-LEGENDARY-9028",
+      "ECON-MG-LEGENDARY-9029",
+      "ECON-MG-LEGENDARY-9030",
+      "ECON-MG-LEGENDARY-9031",
+      "ECON-MG-LEGENDARY-9032",
+      "ECON-MG-LEGENDARY-9033",
+      "ECON-MG-LEGENDARY-9034",
+      "ECON-MG-LEGENDARY-9043",
+      "ECON-MG-LEGENDARY-9051",
+      "ECON-MG-LEGENDARY-9052",
+      "ECON-MG-LEGENDARY-9054",
+      "ECON-MG-LEGENDARY-9075",
+      "ECON-MG-LEGENDARY-9076",
+      "ECON-MG-LEGENDARY-9077",
+      "ECON-MG-LEGENDARY-9078",
+      "ECON-MG-LEGENDARY-9079",
+      "ECON-MG-LEGENDARY-9080",
+      "ECON-MG-LEGENDARY-9081",
+      "ECON-MG-LEGENDARY-9082",
+      "ECON-MG-LEGENDARY-9083",
+      "ECON-MG-LEGENDARY-9084",
+      "ECON-MG-LEGENDARY-9085",
+      "ECON-MG-LEGENDARY-9086",
+      "ECON-MG-LEGENDARY-9087",
+      "ECON-MG-LEGENDARY-9088",
+      "ECON-MG-LEGENDARY-9089"
+    ],
+    "legendaryBoss": [
+      "ECON-MG-LEGENDARYBOSS-9100",
+      "ECON-MG-LEGENDARYBOSS-9101",
+      "ECON-MG-LEGENDARYBOSS-9102",
+      "ECON-MG-LEGENDARYBOSS-9103",
+      "ECON-MG-LEGENDARYBOSS-9104",
+      "ECON-MG-LEGENDARYBOSS-9105",
+      "ECON-MG-LEGENDARYBOSS-9106",
+      "ECON-MG-LEGENDARYBOSS-9107",
+      "ECON-MG-LEGENDARYBOSS-9108",
+      "ECON-MG-LEGENDARYBOSS-9109",
+      "ECON-MG-LEGENDARYBOSS-9110",
+      "ECON-MG-LEGENDARYBOSS-9111",
+      "ECON-MG-LEGENDARYBOSS-9112",
+      "ECON-MG-LEGENDARYBOSS-9113",
+      "ECON-MG-LEGENDARYBOSS-9114",
+      "ECON-MG-LEGENDARYBOSS-9115",
+      "ECON-MG-LEGENDARYBOSS-9116",
+      "ECON-MG-LEGENDARYBOSS-9117",
+      "ECON-MG-LEGENDARYBOSS-9118",
+      "ECON-MG-LEGENDARYBOSS-9119",
+      "ECON-MG-LEGENDARYBOSS-9120",
+      "ECON-MG-LEGENDARYBOSS-9121",
+      "ECON-MG-LEGENDARYBOSS-9122",
+      "ECON-MG-LEGENDARYBOSS-9123",
+      "ECON-MG-LEGENDARYBOSS-9124",
+      "ECON-MG-LEGENDARYBOSS-9125",
+      "ECON-MG-LEGENDARYBOSS-9126",
+      "ECON-MG-LEGENDARYBOSS-9127",
+      "ECON-MG-LEGENDARYBOSS-9128",
+      "ECON-MG-LEGENDARYBOSS-9129"
+    ]
+  },
+  "repairQuestions": [
+    "ECON-MG-DEMAND-SHIFTERS-5004",
+    "ECON-MG-DEMAND-SHIFTERS-5005",
+    "ECON-MG-EQUILIBRIUM-PREDICTION-5008",
+    "ECON-MG-EQUILIBRIUM-PREDICTION-5009",
+    "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-5000",
+    "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-5001",
+    "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-5002",
+    "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-5003",
+    "ECON-MG-POSITIVE-VS-NORMATIVE-5012",
+    "ECON-MG-POSITIVE-VS-NORMATIVE-5013",
+    "ECON-MG-PPF-OPPORTUNITY-COST-5010",
+    "ECON-MG-PPF-OPPORTUNITY-COST-5011",
+    "ECON-MG-SUPPLY-SHIFTERS-5006",
+    "ECON-MG-SUPPLY-SHIFTERS-5007"
+  ],
+  "bridgeQuestions": [
+    "ECON-MG-DEMAND-SHIFTERS-6004",
+    "ECON-MG-DEMAND-SHIFTERS-6005",
+    "ECON-MG-EQUILIBRIUM-PREDICTION-6010",
+    "ECON-MG-EQUILIBRIUM-PREDICTION-6011",
+    "ECON-MG-INCREASING-OPPORTUNITY-COST-6020",
+    "ECON-MG-INCREASING-OPPORTUNITY-COST-6021",
+    "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-6000",
+    "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-6001",
+    "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-6002",
+    "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-6003",
+    "ECON-MG-POSITIVE-VS-NORMATIVE-6022",
+    "ECON-MG-POSITIVE-VS-NORMATIVE-6023",
+    "ECON-MG-PPF-EFFICIENCY-STATUS-6016",
+    "ECON-MG-PPF-EFFICIENCY-STATUS-6017",
+    "ECON-MG-PPF-GROWTH-6018",
+    "ECON-MG-PPF-GROWTH-6019",
+    "ECON-MG-PPF-OPPORTUNITY-COST-6014",
+    "ECON-MG-PPF-OPPORTUNITY-COST-6015",
+    "ECON-MG-RELATED-GOODS-DEMAND-6006",
+    "ECON-MG-RELATED-GOODS-DEMAND-6007",
+    "ECON-MG-SUPPLY-SHIFTERS-6008",
+    "ECON-MG-SUPPLY-SHIFTERS-6009",
+    "ECON-MG-SURPLUS-SHORTAGE-IDENTIFICATION-6012",
+    "ECON-MG-SURPLUS-SHORTAGE-IDENTIFICATION-6013"
+  ],
+  "repairRoutes": {
+    "demand_shifters": [
+      "ECON-MG-DEMAND-SHIFTERS-5004",
+      "ECON-MG-DEMAND-SHIFTERS-5005"
+    ],
+    "equilibrium_prediction": [
+      "ECON-MG-EQUILIBRIUM-PREDICTION-5008",
+      "ECON-MG-EQUILIBRIUM-PREDICTION-5009"
+    ],
+    "movement_vs_demand_shift": [
+      "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-5000",
+      "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-5001"
+    ],
+    "movement_vs_supply_shift": [
+      "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-5002",
+      "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-5003"
+    ],
+    "positive_vs_normative": [
+      "ECON-MG-POSITIVE-VS-NORMATIVE-5012",
+      "ECON-MG-POSITIVE-VS-NORMATIVE-5013"
+    ],
+    "ppf_opportunity_cost": [
+      "ECON-MG-PPF-OPPORTUNITY-COST-5010",
+      "ECON-MG-PPF-OPPORTUNITY-COST-5011"
+    ],
+    "supply_shifters": [
+      "ECON-MG-SUPPLY-SHIFTERS-5006",
+      "ECON-MG-SUPPLY-SHIFTERS-5007"
+    ]
+  },
+  "repairSeedRoutes": {
+    "core_incentives": [
+      "ECON-MG-CORE-INCENTIVES-30005"
+    ],
+    "core_marginal": [
+      "ECON-MG-CORE-MARGINAL-30001"
+    ],
+    "core_market_failure": [
+      "ECON-MG-CORE-MARKET-FAILURE-30006"
+    ],
+    "core_markets": [
+      "ECON-MG-CORE-MARKETS-30011"
+    ],
+    "core_models": [
+      "ECON-MG-CORE-MODELS-30004"
+    ],
+    "core_opportunity_cost": [
+      "ECON-MG-CORE-OPPORTUNITY-COST-30000"
+    ],
+    "core_policy_tradeoffs": [
+      "ECON-MG-CORE-POLICY-TRADEOFFS-30014"
+    ],
+    "core_scarcity": [
+      "ECON-MG-CORE-SCARCITY-30003"
+    ],
+    "core_trade": [
+      "ECON-MG-CORE-TRADE-30010"
+    ],
+    "core_tradeoffs": [
+      "ECON-MG-CORE-TRADEOFFS-30002"
+    ]
+  },
+  "bridgeRoutes": {
+    "demand_shifters": [
+      "ECON-MG-DEMAND-SHIFTERS-6004",
+      "ECON-MG-DEMAND-SHIFTERS-6005"
+    ],
+    "equilibrium_prediction": [
+      "ECON-MG-EQUILIBRIUM-PREDICTION-6010",
+      "ECON-MG-EQUILIBRIUM-PREDICTION-6011"
+    ],
+    "increasing_opportunity_cost": [
+      "ECON-MG-INCREASING-OPPORTUNITY-COST-6020",
+      "ECON-MG-INCREASING-OPPORTUNITY-COST-6021"
+    ],
+    "movement_vs_demand_shift": [
+      "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-6000",
+      "ECON-MG-MOVEMENT-VS-DEMAND-SHIFT-6001"
+    ],
+    "movement_vs_supply_shift": [
+      "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-6002",
+      "ECON-MG-MOVEMENT-VS-SUPPLY-SHIFT-6003"
+    ],
+    "positive_vs_normative": [
+      "ECON-MG-POSITIVE-VS-NORMATIVE-6022",
+      "ECON-MG-POSITIVE-VS-NORMATIVE-6023"
+    ],
+    "ppf_efficiency_status": [
+      "ECON-MG-PPF-EFFICIENCY-STATUS-6016",
+      "ECON-MG-PPF-EFFICIENCY-STATUS-6017"
+    ],
+    "ppf_growth": [
+      "ECON-MG-PPF-GROWTH-6018",
+      "ECON-MG-PPF-GROWTH-6019"
+    ],
+    "ppf_opportunity_cost": [
+      "ECON-MG-PPF-OPPORTUNITY-COST-6014",
+      "ECON-MG-PPF-OPPORTUNITY-COST-6015"
+    ],
+    "related_goods_demand": [
+      "ECON-MG-RELATED-GOODS-DEMAND-6006",
+      "ECON-MG-RELATED-GOODS-DEMAND-6007"
+    ],
+    "supply_shifters": [
+      "ECON-MG-SUPPLY-SHIFTERS-6008",
+      "ECON-MG-SUPPLY-SHIFTERS-6009"
+    ],
+    "surplus_shortage_identification": [
+      "ECON-MG-SURPLUS-SHORTAGE-IDENTIFICATION-6012",
+      "ECON-MG-SURPLUS-SHORTAGE-IDENTIFICATION-6013"
+    ]
+  },
+  "assetPaths": [
+    "question-assets/demand/supplydemand1.webp",
+    "question-assets/market-equilibrium/ceilingfloor.webp",
+    "question-assets/market-equilibrium/supplydemand1.webp",
+    "question-assets/production-possibilities-frontier/ppf.webp",
+    "question-assets/supply/supplydemand1.webp"
+  ],
+  "counts": {
+    "calculation": 19,
+    "integration": 0,
+    "repair": 14,
+    "repairSeed": 10,
+    "bridge": 24
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "console_errors": [],
+  "page_errors": [],
+  "checks": {
+    "title": "Faculty Concept Composer",
+    "protocol_warning_hidden": true,
+    "checkpoint_step_label": "4. Checkpoint focus",
+    "imported_metrics": {
+      "Concepts": 12,
+      "Canonical questions": 331,
+      "Easy": 49,
+      "Medium": 49,
+      "Hard": 49,
+      "Elite": 18,
+      "Legendary": 55,
+      "Checkpoint One boss": 21,
+      "Checkpoint Two boss": 12,
+      "Final checkpoint boss": 0,
+      "Legendary boss": 30,
+      "Repair": 14,
+      "Repair seed": 10,
+      "Bridge": 24,
+      "Calculation": 19,
+      "Integration": 0,
+      "Graph questions": 46,
+      "Assets": 5
+    },
+    "boss_counts_correct": true,
+    "download_blocked_with_invalid_modes": true,
+    "checkpoint_columns": 3,
+    "automatic_focus_defaults": [
+      true,
+      true,
+      true
+    ],
+    "focus_narrows_boss_only": {
+      "before_easyBoss": 21,
+      "after_easyBoss": 17,
+      "ordinary_unchanged": true
+    },
+    "download_enabled_for_compatible_modes": true,
+    "mobile_overflow": {
+      "body": 390,
+      "html": 390,
+      "viewport": 390
+    },
+    "mobile_no_horizontal_overflow": true,
+    "mobile_screenshot": "tests/browser/phase4_4a_mobile_checkpoint_focus.png"
+  },
+  "all_passed": true
+}

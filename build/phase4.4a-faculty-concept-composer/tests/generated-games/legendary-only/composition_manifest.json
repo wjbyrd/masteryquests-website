@@ -1,0 +1,126 @@
+{
+  "sourceRecipe": {
+    "schemaVersion": "1.1.0",
+    "title": "Legendary-Only Composition",
+    "slug": "legendary-only",
+    "supportedModes": [
+      "legendary"
+    ],
+    "selectedConceptIds": [
+      "positive-versus-normative-analysis"
+    ],
+    "stages": {
+      "stageOne": [
+        "positive-versus-normative-analysis"
+      ],
+      "stageTwo": [],
+      "stageThree": []
+    }
+  },
+  "canonicalRecipe": {
+    "schemaVersion": "1.2.0",
+    "title": "Legendary-Only Composition",
+    "slug": "legendary-only",
+    "supportedModes": [
+      "legendary"
+    ],
+    "selectedConceptIds": [
+      "positive-versus-normative-analysis"
+    ],
+    "checkpointFocus": {
+      "checkpointOne": null,
+      "checkpointTwo": null,
+      "finalCheckpoint": null
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready"
+  },
+  "poolCounts": {
+    "easy": 3,
+    "medium": 2,
+    "hard": 2,
+    "elite": 1,
+    "legendary": 6,
+    "easyBoss": 3,
+    "mediumBoss": 0,
+    "finalBoss": 0,
+    "legendaryBoss": 3,
+    "repair": 2,
+    "repairSeed": 0,
+    "bridge": 2,
+    "calculation": 0,
+    "integration": 0,
+    "graph": 0,
+    "assets": 0,
+    "totalCanonical": 24
+  },
+  "bossCoverage": {
+    "checkpointOne": {
+      "label": "Checkpoint One",
+      "pool": "easyBoss",
+      "difficulty": "easy",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "positive-versus-normative-analysis"
+      ],
+      "activeConceptIds": [
+        "positive-versus-normative-analysis"
+      ],
+      "questionCount": 3
+    },
+    "checkpointTwo": {
+      "label": "Checkpoint Two",
+      "pool": "mediumBoss",
+      "difficulty": "medium",
+      "automatic": true,
+      "eligibleConceptIds": [],
+      "activeConceptIds": [],
+      "questionCount": 0
+    },
+    "finalCheckpoint": {
+      "label": "Final Checkpoint",
+      "pool": "finalBoss",
+      "difficulty": "hard",
+      "automatic": true,
+      "eligibleConceptIds": [],
+      "activeConceptIds": [],
+      "questionCount": 0
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "recipe-migration",
+      "message": "Legacy stage assignments were retired and replaced with automatic checkpoint boss mapping. Boss questions now remain in their published easy, medium, or hard checkpoint pools."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 24,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.2.0",
+    "title": "Legendary-Only Composition",
+    "slug": "legendary-only",
+    "supportedModes": [
+      "legendary"
+    ],
+    "selectedConceptIds": [
+      "positive-versus-normative-analysis"
+    ],
+    "checkpointFocus": {
+      "checkpointOne": null,
+      "checkpointTwo": null,
+      "finalCheckpoint": null
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "composerVersion": "4.4a.0",
+    "compositionId": "legendary-only",
+    "saveKeyNamespace": "mq-econ:legendary-only:5dc005e4585c",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "5dc005e4585c7948e8df953cdea6d869a640317a395350f601a801c43f241434"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.2.0",
+  "composerVersion": "4.4a.0",
+  "globalQuestionSemantics": "All selected ordinary, elite, legendary, calculation, integration, repair, repair-seed, bridge, and legendary-boss content remains globally available according to published metadata.",
+  "checkpointSemantics": {
+    "checkpointOne": {
+      "pool": "easyBoss",
+      "publishedDifficulty": "easy"
+    },
+    "checkpointTwo": {
+      "pool": "mediumBoss",
+      "publishedDifficulty": "medium"
+    },
+    "finalCheckpoint": {
+      "pool": "finalBoss",
+      "publishedDifficulty": "hard"
+    }
+  },
+  "checkpointFocus": {
+    "automaticValue": null,
+    "customValue": "Array of selected canonicalConceptIds",
+    "multipleCheckpointMembership": true,
+    "difficultyRelabelingAllowed": false,
+    "effectOnGlobalPools": "None"
+  },
+  "legacyRecipeMigration": {
+    "acceptedSourceSchema": "1.1.0",
+    "legacyField": "stages",
+    "result": "Automatic checkpoint focus with migration notes",
+    "reason": "Legacy stage assignment was mandatory and is not treated as intentional custom focus."
+  },
+  "modeOrder": [
+    "standard",
+    "timed",
+    "exam",
+    "legendary",
+    "score"
+  ],
+  "poolMinimums": {
+    "easy": 6,
+    "medium": 6,
+    "hard": 6,
+    "elite": 4,
+    "legendary": 6,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 1,
+    "bridge": 1
+  },
+  "modeRequirements": {
+    "standard": [
+      "easy",
+      "medium",
+      "hard",
+      "easyBoss",
+      "mediumBoss",
+      "finalBoss",
+      "repair",
+      "bridge"
+    ],
+    "timed": [
+      "easy",
+      "medium",
+      "hard",
+      "repair",
+      "bridge"
+    ],
+    "exam": [
+      "easy",
+      "medium",
+      "hard",
+      "repair",
+      "bridge"
+    ],
+    "legendary": [
+      "legendary",
+      "legendaryBoss"
+    ],
+    "score": [
+      "easy",
+      "medium",
+      "hard",
+      "easyBoss",
+      "mediumBoss",
+      "finalBoss",
+      "repair",
+      "bridge"
+    ]
+  },
+  "mergeRules": {
+    "mainPools": [
+      "easy",
+      "medium",
+      "hard",
+      "elite",
+      "legendary"
+    ],
+    "calculationAndIntegration": "Place into published canonicalDifficulty pool while retaining instructionalRole.",
+    "legendaryBoss": "Merge from all selected concepts.",
+    "checkpointBoss": "Filter each selected concept's boss questions by published difficulty, then apply optional checkpoint focus.",
+    "deduplication": "canonicalId",
+    "objectiveLabels": "Conflicts block generation.",
+    "repairPrecedence": "directSkillRepairRoutes before microSkillRepairPools.",
+    "answerPolicy": "Preserve numeric a and aHash exactly; never reorder options."
+  }
+}

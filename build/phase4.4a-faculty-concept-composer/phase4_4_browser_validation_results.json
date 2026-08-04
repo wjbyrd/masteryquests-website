@@ -1,0 +1,454 @@
+{
+  "composer": {
+    "desktop": {
+      "conceptCards": 64,
+      "overflow": 0,
+      "title": "Faculty Concept Composer"
+    },
+    "searchCards": 19,
+    "chapterCards": 19,
+    "selection": {
+      "selected": true,
+      "stage": 1
+    },
+    "mode": {
+      "enabled": true,
+      "summary": "Title: My Faculty Mastery Quest\nSlug: my-faculty-mastery-quest\nModes: Exam Drill\nSelected concepts: 1\nUnassigned concepts: 0\nQuestion count: 44\nStatus: READY TO GENERATE"
+    },
+    "recipe": {
+      "libraryVersion": "phase4.3a-browser-validated",
+      "schemaVersion": "1.1.0",
+      "selectedConceptIds": [
+        "demand"
+      ],
+      "slug": "my-faculty-mastery-quest",
+      "stages": {
+        "stageOne": [
+          "demand"
+        ],
+        "stageThree": [],
+        "stageTwo": []
+      },
+      "supportedModes": [
+        "exam"
+      ],
+      "templateVersion": "phase4.4-composer-ready",
+      "title": "My Faculty Mastery Quest"
+    },
+    "package": {
+      "deterministic": true,
+      "hash1": "1645f133578066caf89c1f187d4103c87cfbf6d2309181f5406edaa6614bfc88",
+      "hash2": "1645f133578066caf89c1f187d4103c87cfbf6d2309181f5406edaa6614bfc88",
+      "entries": [
+        "README.txt",
+        "composition_manifest.json",
+        "composition_recipe.json",
+        "my-faculty-mastery-quest.html",
+        "question-assets/demand/supplydemand1.webp"
+      ],
+      "manifestModes": [
+        "exam"
+      ]
+    },
+    "import": {
+      "title": "My Faculty Mastery Quest",
+      "selected": 1
+    },
+    "mobileOverflow": 0,
+    "consoleErrors": [],
+    "runtimeExceptions": [],
+    "failedRequests": []
+  },
+  "generatedGames": [
+    {
+      "slug": "exam-only-minimal",
+      "expectedModes": [
+        "exam"
+      ],
+      "visibleModes": [
+        "exam"
+      ],
+      "namespace": "mq-econ:exam-only-minimal:c738452a4a53",
+      "title": "Exam-Only Minimal Composition",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "exam",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": {
+        "before": "exam",
+        "after": "exam",
+        "alerts": [
+          "This mode is not enabled for this faculty composition."
+        ]
+      },
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "legendary-only",
+      "expectedModes": [
+        "legendary"
+      ],
+      "visibleModes": [
+        "legendary"
+      ],
+      "namespace": "mq-econ:legendary-only:12f6240ed306",
+      "title": "Legendary-Only Composition",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "legendary",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": {
+        "before": "legendary",
+        "after": "legendary",
+        "alerts": [
+          "This mode is not enabled for this faculty composition."
+        ]
+      },
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "market-foundations",
+      "expectedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "visibleModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "namespace": "mq-econ:market-foundations:ca5bb04c2ead",
+      "title": "Market Foundations",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "standard",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "timed",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "exam",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "legendary",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "score",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": null,
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "mixed-custom-course",
+      "expectedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "visibleModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "namespace": "mq-econ:mixed-custom-course:c4091ae69592",
+      "title": "Mixed Custom Course",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "standard",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "timed",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "exam",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "legendary",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "score",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": null,
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "money-and-stabilization",
+      "expectedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "visibleModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "namespace": "mq-econ:money-and-stabilization:d265286317dd",
+      "title": "Money and Stabilization",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "standard",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "timed",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "exam",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "legendary",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "score",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": null,
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "national-economy",
+      "expectedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "visibleModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "namespace": "mq-econ:national-economy:5c7b6a46d715",
+      "title": "National Economy",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "standard",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "timed",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "exam",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "legendary",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "score",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": null,
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "standard-and-score",
+      "expectedModes": [
+        "standard",
+        "score"
+      ],
+      "visibleModes": [
+        "standard",
+        "score"
+      ],
+      "namespace": "mq-econ:standard-and-score:1cbe3aef0788",
+      "title": "Standard and Score Composition",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "standard",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "score",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": {
+        "before": "score",
+        "after": "score",
+        "alerts": [
+          "This mode is not enabled for this faculty composition."
+        ]
+      },
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    },
+    {
+      "slug": "timed-and-exam",
+      "expectedModes": [
+        "timed",
+        "exam"
+      ],
+      "visibleModes": [
+        "timed",
+        "exam"
+      ],
+      "namespace": "mq-econ:timed-and-exam:5502693db165",
+      "title": "Timed and Exam Composition",
+      "overflow": 0,
+      "selectedChecks": [
+        {
+          "mode": "timed",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        },
+        {
+          "mode": "exam",
+          "question": true,
+          "answerMatches": 1,
+          "alerts": []
+        }
+      ],
+      "unsupported": {
+        "before": "exam",
+        "after": "exam",
+        "alerts": [
+          "This mode is not enabled for this faculty composition."
+        ]
+      },
+      "consoleErrors": [],
+      "runtimeExceptions": [],
+      "failedRequests": []
+    }
+  ],
+  "summary": {
+    "composerPassed": true,
+    "generatedGamesPassed": true,
+    "allPassed": true,
+    "compositionCount": 8
+  },
+  "targetedGeneratedGameChecks": {
+    "composition": "mixed-custom-course",
+    "directRepairRouteKeyCount": 104,
+    "repairQuestionCount": 38,
+    "bridgeQuestionCount": 26,
+    "sharedSkillTested": "income_expenditure_identity",
+    "directRepairCandidates": 2,
+    "bridgeCandidates": 1,
+    "graphLightbox": {
+      "available": true,
+      "active": true,
+      "src": true
+    },
+    "standardSaveState": true,
+    "standardRestart": true,
+    "masteryReport": true,
+    "csvDownload": true,
+    "gameplayShellRestore": true,
+    "passed": true
+  },
+  "executionBoundary": "Managed Chromium blocked localhost and file URL navigation in this runtime. Validation used Chrome DevTools Protocol Page.setDocumentContent, in-memory localStorage, and embedded data-URI question assets. The actual HTML, DOM, JavaScript event loop, mode launches, answer verification, routing, storage, reports, downloads, and responsive layout were executed.",
+  "composerPassed": true,
+  "generatedGamesPassed": true,
+  "allPassed": true
+}

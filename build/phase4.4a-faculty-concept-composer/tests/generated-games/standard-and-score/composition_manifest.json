@@ -1,0 +1,235 @@
+{
+  "sourceRecipe": {
+    "schemaVersion": "1.1.0",
+    "title": "Standard and Score Composition",
+    "slug": "standard-and-score",
+    "supportedModes": [
+      "standard",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "opportunity-cost",
+      "market-equilibrium",
+      "gdp-measurement",
+      "unemployment-measurement",
+      "bank-money-creation",
+      "aggregate-demand",
+      "fiscal-policy-and-aggregate-demand",
+      "phillips-curve-expectations"
+    ],
+    "stages": {
+      "stageOne": [
+        "opportunity-cost",
+        "market-equilibrium",
+        "gdp-measurement"
+      ],
+      "stageTwo": [
+        "unemployment-measurement",
+        "bank-money-creation",
+        "aggregate-demand"
+      ],
+      "stageThree": [
+        "fiscal-policy-and-aggregate-demand",
+        "phillips-curve-expectations"
+      ]
+    }
+  },
+  "canonicalRecipe": {
+    "schemaVersion": "1.2.0",
+    "title": "Standard and Score Composition",
+    "slug": "standard-and-score",
+    "supportedModes": [
+      "standard",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "opportunity-cost",
+      "market-equilibrium",
+      "gdp-measurement",
+      "unemployment-measurement",
+      "bank-money-creation",
+      "aggregate-demand",
+      "fiscal-policy-and-aggregate-demand",
+      "phillips-curve-expectations"
+    ],
+    "checkpointFocus": {
+      "checkpointOne": null,
+      "checkpointTwo": null,
+      "finalCheckpoint": null
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready"
+  },
+  "poolCounts": {
+    "easy": 49,
+    "medium": 62,
+    "hard": 58,
+    "elite": 42,
+    "legendary": 44,
+    "easyBoss": 20,
+    "mediumBoss": 8,
+    "finalBoss": 14,
+    "legendaryBoss": 18,
+    "repair": 37,
+    "repairSeed": 1,
+    "bridge": 26,
+    "calculation": 43,
+    "integration": 0,
+    "graph": 40,
+    "assets": 7,
+    "totalCanonical": 379
+  },
+  "bossCoverage": {
+    "checkpointOne": {
+      "label": "Checkpoint One",
+      "pool": "easyBoss",
+      "difficulty": "easy",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "opportunity-cost",
+        "gdp-measurement",
+        "bank-money-creation"
+      ],
+      "activeConceptIds": [
+        "opportunity-cost",
+        "gdp-measurement",
+        "bank-money-creation"
+      ],
+      "questionCount": 20
+    },
+    "checkpointTwo": {
+      "label": "Checkpoint Two",
+      "pool": "mediumBoss",
+      "difficulty": "medium",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "market-equilibrium",
+        "phillips-curve-expectations"
+      ],
+      "activeConceptIds": [
+        "market-equilibrium",
+        "phillips-curve-expectations"
+      ],
+      "questionCount": 8
+    },
+    "finalCheckpoint": {
+      "label": "Final Checkpoint",
+      "pool": "finalBoss",
+      "difficulty": "hard",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "unemployment-measurement",
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "activeConceptIds": [
+        "unemployment-measurement",
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "questionCount": 14
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "recipe-migration",
+      "message": "Legacy stage assignments were retired and replaced with automatic checkpoint boss mapping. Boss questions now remain in their published easy, medium, or hard checkpoint pools."
+    },
+    {
+      "type": "legacy-boss-mismatch",
+      "checkpoint": "checkpointOne",
+      "message": "Checkpoint One: 1 legacy assignment had no easy boss questions and was retired (Market Equilibrium)."
+    },
+    {
+      "type": "legacy-boss-mismatch",
+      "checkpoint": "checkpointTwo",
+      "message": "Checkpoint Two: 3 legacy assignments had no medium boss questions and were retired (Unemployment Measurement, Bank Money Creation, Aggregate Demand)."
+    },
+    {
+      "type": "legacy-boss-mismatch",
+      "checkpoint": "finalCheckpoint",
+      "message": "Final Checkpoint: 1 legacy assignment had no hard boss questions and was retired (Phillips-Curve Expectations)."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost lists scarcity-and-tradeoffs as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "market-equilibrium",
+      "message": "Market Equilibrium lists demand as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "market-equilibrium",
+      "message": "Market Equilibrium lists supply as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "bank-money-creation",
+      "message": "Bank Money Creation lists money-functions-and-measures as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "aggregate-demand",
+      "message": "Aggregate Demand lists gdp-components as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "phillips-curve-expectations",
+      "message": "Phillips-Curve Expectations lists short-run-phillips-curve as a prerequisite."
+    },
+    {
+      "type": "prerequisite",
+      "conceptId": "phillips-curve-expectations",
+      "message": "Phillips-Curve Expectations lists long-run-phillips-curve as a prerequisite."
+    },
+    {
+      "type": "repair",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost has no direct repair route."
+    },
+    {
+      "type": "bridge",
+      "conceptId": "opportunity-cost",
+      "message": "Opportunity Cost has no direct bridge route."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 379,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.2.0",
+    "title": "Standard and Score Composition",
+    "slug": "standard-and-score",
+    "supportedModes": [
+      "standard",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "opportunity-cost",
+      "market-equilibrium",
+      "gdp-measurement",
+      "unemployment-measurement",
+      "bank-money-creation",
+      "aggregate-demand",
+      "fiscal-policy-and-aggregate-demand",
+      "phillips-curve-expectations"
+    ],
+    "checkpointFocus": {
+      "checkpointOne": null,
+      "checkpointTwo": null,
+      "finalCheckpoint": null
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "composerVersion": "4.4a.0",
+    "compositionId": "standard-and-score",
+    "saveKeyNamespace": "mq-econ:standard-and-score:c72254cf4b62",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "c72254cf4b62830bfefda96744a20c4a0abc8bad1a02de6e944b9621bb8527e6"
+  }
+}

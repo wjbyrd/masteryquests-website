@@ -1,0 +1,282 @@
+{
+  "conceptCount": 64,
+  "questionCount": 2447,
+  "recipes": [
+    {
+      "slug": "exam-only-minimal",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 44
+      },
+      "supportedModes": [
+        "exam"
+      ],
+      "answerQuestions": 44,
+      "namespace": "mq-econ:exam-only-minimal:c738452a4a53",
+      "htmlSha256": "6264785dc932b38ba14f1b91e87831383e45a453ff166db71cf3b00d239fa974"
+    },
+    {
+      "slug": "legendary-only",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 24
+      },
+      "supportedModes": [
+        "legendary"
+      ],
+      "answerQuestions": 24,
+      "namespace": "mq-econ:legendary-only:12f6240ed306",
+      "htmlSha256": "990414943dd0b532b799821798291352979d7084ca4ffb7b3c14c669c8987df7"
+    },
+    {
+      "slug": "market-foundations",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 236,
+        "medium": 239,
+        "hard": 220,
+        "elite": 165,
+        "legendary": 212,
+        "easyBoss": 39,
+        "mediumBoss": 95,
+        "finalBoss": 33,
+        "legendaryBoss": 90,
+        "repair": 161,
+        "repairSeed": 15,
+        "bridge": 112,
+        "calculation": 129,
+        "integration": 0,
+        "graph": 265,
+        "assets": 30,
+        "totalCanonical": 1617
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 1617,
+      "namespace": "mq-econ:market-foundations:ca5bb04c2ead",
+      "htmlSha256": "5121da7571505da332565b785bdd554992bd8154879ac0dc6e318c8039687989"
+    },
+    {
+      "slug": "mixed-custom-course",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 49,
+        "medium": 62,
+        "hard": 58,
+        "elite": 42,
+        "legendary": 44,
+        "easyBoss": 23,
+        "mediumBoss": 14,
+        "finalBoss": 5,
+        "legendaryBoss": 18,
+        "repair": 37,
+        "repairSeed": 1,
+        "bridge": 26,
+        "calculation": 43,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 379
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 379,
+      "namespace": "mq-econ:mixed-custom-course:c4091ae69592",
+      "htmlSha256": "3105e9f1a5ecc42acf334eca872f00097b4dd579b7af0f133ffe82d6a2125abb"
+    },
+    {
+      "slug": "money-and-stabilization",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 161,
+        "medium": 154,
+        "hard": 155,
+        "elite": 141,
+        "legendary": 131,
+        "easyBoss": 27,
+        "mediumBoss": 18,
+        "finalBoss": 44,
+        "legendaryBoss": 67,
+        "repair": 147,
+        "repairSeed": 0,
+        "bridge": 81,
+        "calculation": 71,
+        "integration": 10,
+        "graph": 236,
+        "assets": 33,
+        "totalCanonical": 1126
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 1126,
+      "namespace": "mq-econ:money-and-stabilization:d265286317dd",
+      "htmlSha256": "e26014e10813317dee2f204d335d50c1a95debfbc8fbc736f8a4b294f904417e"
+    },
+    {
+      "slug": "national-economy",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 80,
+        "medium": 80,
+        "hard": 80,
+        "elite": 80,
+        "legendary": 90,
+        "easyBoss": 40,
+        "mediumBoss": 36,
+        "finalBoss": 51,
+        "legendaryBoss": 32,
+        "repair": 57,
+        "repairSeed": 0,
+        "bridge": 37,
+        "calculation": 57,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 663
+      },
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "answerQuestions": 663,
+      "namespace": "mq-econ:national-economy:5c7b6a46d715",
+      "htmlSha256": "2dd61eef9dfd760e7ec6434534b0d45b0fcef7a370acb3d822e647c1004b6bd7"
+    },
+    {
+      "slug": "standard-and-score",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 49,
+        "medium": 62,
+        "hard": 58,
+        "elite": 42,
+        "legendary": 44,
+        "easyBoss": 23,
+        "mediumBoss": 14,
+        "finalBoss": 5,
+        "legendaryBoss": 18,
+        "repair": 37,
+        "repairSeed": 1,
+        "bridge": 26,
+        "calculation": 43,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 379
+      },
+      "supportedModes": [
+        "standard",
+        "score"
+      ],
+      "answerQuestions": 379,
+      "namespace": "mq-econ:standard-and-score:1cbe3aef0788",
+      "htmlSha256": "14444bcd3b2796a935aa97ca454a8fd55317c1941577f027ec2cff7dd47b747f"
+    },
+    {
+      "slug": "timed-and-exam",
+      "passed": true,
+      "errors": [],
+      "poolCounts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 44
+      },
+      "supportedModes": [
+        "timed",
+        "exam"
+      ],
+      "answerQuestions": 44,
+      "namespace": "mq-econ:timed-and-exam:5502693db165",
+      "htmlSha256": "fa7a60f26e3cb6e5b83085a92c7f8751c850c1a178e711e225ee76c842f781c1"
+    }
+  ],
+  "allPassed": true,
+  "namespaceIsolation": true,
+  "curatedLibraryBaselineVerified": true,
+  "curatedLibraryVersion": "phase4.3a-browser-validated",
+  "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+  "assetCount": 43,
+  "fullLibraryAnswerAudit": {
+    "passed": true,
+    "canonicalQuestionCount": 2447,
+    "answerVerificationPassed": 2447,
+    "issues": [],
+    "compositionErrors": []
+  },
+  "baselineSemanticComparisonPassed": true,
+  "templatePreservationPassed": true,
+  "javascriptSyntaxPassed": true,
+  "runtimeClosurePassed": true,
+  "protectedMutationCheckPassed": true
+}

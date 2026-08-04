@@ -1,0 +1,413 @@
+{
+  "composerVersion": "4.4a.0",
+  "recipeSchemaVersion": "1.2.0",
+  "generatedAt": "2026-08-04T02:07:26.116Z",
+  "tests": [
+    {
+      "name": "Protected library and template files unchanged",
+      "passed": true,
+      "details": {
+        "data/composer_library.js": {
+          "expected": "3cd84a004f9d96404210baa60bdddcb8a1b29febb4881231ce83382b40581b64",
+          "actual": "3cd84a004f9d96404210baa60bdddcb8a1b29febb4881231ce83382b40581b64",
+          "passed": true
+        },
+        "data/composer_library_manifest.json": {
+          "expected": "5dd2a359d7f6ddebba6af82f4c5a67e0a192e3bd0ce89aca82f873a96520290b",
+          "actual": "5dd2a359d7f6ddebba6af82f4c5a67e0a192e3bd0ce89aca82f873a96520290b",
+          "passed": true
+        },
+        "data/composer_registry.json": {
+          "expected": "090f6d4c91eb00a3484e13b0b9942f0dd7038bc705bac2a8d32206b6c89fd416",
+          "actual": "090f6d4c91eb00a3484e13b0b9942f0dd7038bc705bac2a8d32206b6c89fd416",
+          "passed": true
+        },
+        "template/mastery-quests-faculty-template-composer-ready.html": {
+          "expected": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+          "actual": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "name": "Eight legacy Phase 4.4 recipes migrate and pass",
+      "passed": true,
+      "details": {
+        "recipes": [
+          {
+            "file": "exam-only-minimal.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 8,
+              "medium": 6,
+              "hard": 7,
+              "elite": 2,
+              "legendary": 5,
+              "easyBoss": 0,
+              "mediumBoss": 3,
+              "finalBoss": 0,
+              "legendaryBoss": 3,
+              "repair": 4,
+              "repairSeed": 0,
+              "bridge": 6,
+              "calculation": 0,
+              "integration": 0,
+              "graph": 4,
+              "assets": 1,
+              "totalCanonical": 44
+            }
+          },
+          {
+            "file": "legendary-only.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 3,
+              "medium": 2,
+              "hard": 2,
+              "elite": 1,
+              "legendary": 6,
+              "easyBoss": 3,
+              "mediumBoss": 0,
+              "finalBoss": 0,
+              "legendaryBoss": 3,
+              "repair": 2,
+              "repairSeed": 0,
+              "bridge": 2,
+              "calculation": 0,
+              "integration": 0,
+              "graph": 0,
+              "assets": 0,
+              "totalCanonical": 24
+            }
+          },
+          {
+            "file": "market-foundations.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 236,
+              "medium": 239,
+              "hard": 220,
+              "elite": 165,
+              "legendary": 212,
+              "easyBoss": 58,
+              "mediumBoss": 54,
+              "finalBoss": 55,
+              "legendaryBoss": 90,
+              "repair": 161,
+              "repairSeed": 15,
+              "bridge": 112,
+              "calculation": 129,
+              "integration": 0,
+              "graph": 265,
+              "assets": 30,
+              "totalCanonical": 1617
+            }
+          },
+          {
+            "file": "mixed-custom-course.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 49,
+              "medium": 62,
+              "hard": 58,
+              "elite": 42,
+              "legendary": 44,
+              "easyBoss": 20,
+              "mediumBoss": 8,
+              "finalBoss": 14,
+              "legendaryBoss": 18,
+              "repair": 37,
+              "repairSeed": 1,
+              "bridge": 26,
+              "calculation": 43,
+              "integration": 0,
+              "graph": 40,
+              "assets": 7,
+              "totalCanonical": 379
+            }
+          },
+          {
+            "file": "money-and-stabilization.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 161,
+              "medium": 154,
+              "hard": 155,
+              "elite": 141,
+              "legendary": 131,
+              "easyBoss": 20,
+              "mediumBoss": 30,
+              "finalBoss": 39,
+              "legendaryBoss": 67,
+              "repair": 147,
+              "repairSeed": 0,
+              "bridge": 81,
+              "calculation": 71,
+              "integration": 10,
+              "graph": 236,
+              "assets": 33,
+              "totalCanonical": 1126
+            }
+          },
+          {
+            "file": "national-economy.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 80,
+              "medium": 80,
+              "hard": 80,
+              "elite": 80,
+              "legendary": 90,
+              "easyBoss": 49,
+              "mediumBoss": 36,
+              "finalBoss": 42,
+              "legendaryBoss": 32,
+              "repair": 57,
+              "repairSeed": 0,
+              "bridge": 37,
+              "calculation": 57,
+              "integration": 0,
+              "graph": 0,
+              "assets": 0,
+              "totalCanonical": 663
+            }
+          },
+          {
+            "file": "standard-and-score.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 49,
+              "medium": 62,
+              "hard": 58,
+              "elite": 42,
+              "legendary": 44,
+              "easyBoss": 20,
+              "mediumBoss": 8,
+              "finalBoss": 14,
+              "legendaryBoss": 18,
+              "repair": 37,
+              "repairSeed": 1,
+              "bridge": 26,
+              "calculation": 43,
+              "integration": 0,
+              "graph": 40,
+              "assets": 7,
+              "totalCanonical": 379
+            }
+          },
+          {
+            "file": "timed-and-exam.json",
+            "passed": true,
+            "errors": [],
+            "bossDifficultyChecks": {
+              "easyBoss": true,
+              "mediumBoss": true,
+              "finalBoss": true
+            },
+            "counts": {
+              "easy": 8,
+              "medium": 6,
+              "hard": 7,
+              "elite": 2,
+              "legendary": 5,
+              "easyBoss": 0,
+              "mediumBoss": 3,
+              "finalBoss": 0,
+              "legendaryBoss": 3,
+              "repair": 4,
+              "repairSeed": 0,
+              "bridge": 6,
+              "calculation": 0,
+              "integration": 0,
+              "graph": 4,
+              "assets": 1,
+              "totalCanonical": 44
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Global ordinary and auxiliary canonical-ID sets preserved",
+      "passed": true,
+      "details": {
+        "beforeCounts": {
+          "easy": 49,
+          "medium": 49,
+          "hard": 49,
+          "elite": 18,
+          "legendary": 55,
+          "legendaryBoss": 30
+        },
+        "afterCounts": {
+          "easy": 49,
+          "medium": 49,
+          "hard": 49,
+          "elite": 18,
+          "legendary": 55,
+          "legendaryBoss": 30
+        },
+        "auxiliaryCounts": {
+          "calculation": 19,
+          "integration": 0,
+          "repair": 14,
+          "repairSeed": 10,
+          "bridge": 24
+        }
+      }
+    },
+    {
+      "name": "Checkpoint focus changes only checkpoint boss pools",
+      "passed": true,
+      "details": {
+        "automaticBossCounts": {
+          "easyBoss": 21,
+          "mediumBoss": 12,
+          "finalBoss": 0
+        },
+        "narrowedBossCounts": {
+          "easyBoss": 0,
+          "mediumBoss": 3,
+          "finalBoss": 0
+        }
+      }
+    },
+    {
+      "name": "Uploaded game is blocked only for missing real final-boss coverage",
+      "passed": true,
+      "details": {
+        "bossCounts": {
+          "easyBoss": 21,
+          "mediumBoss": 12,
+          "finalBoss": 0
+        },
+        "modeStatus": {
+          "standard": false,
+          "timed": true,
+          "exam": true,
+          "legendary": true,
+          "score": false
+        },
+        "errors": [
+          "Standard Campaign: finalBoss needs 3, found 0",
+          "Score Attack: finalBoss needs 3, found 0"
+        ],
+        "migrationNotes": [
+          {
+            "type": "recipe-migration",
+            "message": "Legacy stage assignments were retired and replaced with automatic checkpoint boss mapping. Boss questions now remain in their published easy, medium, or hard checkpoint pools."
+          },
+          {
+            "type": "legacy-boss-mismatch",
+            "checkpoint": "checkpointOne",
+            "message": "Checkpoint One: 1 legacy assignment had no easy boss questions and was retired (Scarcity and Tradeoffs)."
+          },
+          {
+            "type": "legacy-boss-mismatch",
+            "checkpoint": "checkpointTwo",
+            "message": "Checkpoint Two: 4 legacy assignments had no medium boss questions and were retired (Gains from Trade, Market Failures, Positive versus Normative Analysis, Production Possibilities Frontier)."
+          },
+          {
+            "type": "legacy-boss-mismatch",
+            "checkpoint": "finalCheckpoint",
+            "message": "Final Checkpoint: 4 legacy assignments had no hard boss questions and were retired (Models and Assumptions, Demand, Supply, Market Equilibrium)."
+          }
+        ]
+      }
+    },
+    {
+      "name": "One concept can support multiple checkpoint pools without relabeling questions",
+      "passed": true,
+      "details": {
+        "conceptId": "integrated-economic-analysis",
+        "counts": {
+          "easyBoss": 8,
+          "mediumBoss": 24,
+          "finalBoss": 24
+        }
+      }
+    },
+    {
+      "name": "Legacy recipe exports as schema 1.2 with automatic checkpoint focus",
+      "passed": true,
+      "details": {
+        "canonicalRecipe": {
+          "schemaVersion": "1.2.0",
+          "title": "My Faculty Mastery Quest",
+          "slug": "my-faculty-mastery-quest",
+          "supportedModes": [
+            "standard",
+            "timed",
+            "exam",
+            "legendary",
+            "score"
+          ],
+          "selectedConceptIds": [
+            "scarcity-and-tradeoffs",
+            "opportunity-cost",
+            "marginal-analysis",
+            "incentives",
+            "gains-from-trade",
+            "market-failures",
+            "models-and-assumptions",
+            "production-possibilities-frontier",
+            "positive-versus-normative-analysis",
+            "demand",
+            "supply",
+            "market-equilibrium"
+          ],
+          "checkpointFocus": {
+            "checkpointOne": null,
+            "checkpointTwo": null,
+            "finalCheckpoint": null
+          },
+          "libraryVersion": "phase4.3a-browser-validated",
+          "templateVersion": "phase4.4-composer-ready"
+        }
+      }
+    }
+  ],
+  "allPassed": true
+}

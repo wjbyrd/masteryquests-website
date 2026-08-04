@@ -1,0 +1,250 @@
+{
+  "sourceRecipe": {
+    "schemaVersion": "1.1.0",
+    "title": "National Economy",
+    "slug": "national-economy",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ],
+    "stages": {
+      "stageOne": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias"
+      ],
+      "stageTwo": [
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates",
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity"
+      ],
+      "stageThree": [
+        "economic-growth-policy",
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ]
+    }
+  },
+  "canonicalRecipe": {
+    "schemaVersion": "1.2.0",
+    "title": "National Economy",
+    "slug": "national-economy",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ],
+    "checkpointFocus": {
+      "checkpointOne": null,
+      "checkpointTwo": null,
+      "finalCheckpoint": null
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready"
+  },
+  "poolCounts": {
+    "easy": 80,
+    "medium": 80,
+    "hard": 80,
+    "elite": 80,
+    "legendary": 90,
+    "easyBoss": 49,
+    "mediumBoss": 36,
+    "finalBoss": 42,
+    "legendaryBoss": 32,
+    "repair": 57,
+    "repairSeed": 0,
+    "bridge": 37,
+    "calculation": 57,
+    "integration": 0,
+    "graph": 0,
+    "assets": 0,
+    "totalCanonical": 663
+  },
+  "bossCoverage": {
+    "checkpointOne": {
+      "label": "Checkpoint One",
+      "pool": "easyBoss",
+      "difficulty": "easy",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates"
+      ],
+      "activeConceptIds": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates"
+      ],
+      "questionCount": 49
+    },
+    "checkpointTwo": {
+      "label": "Checkpoint Two",
+      "pool": "mediumBoss",
+      "difficulty": "medium",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity",
+        "economic-growth-policy"
+      ],
+      "activeConceptIds": [
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity",
+        "economic-growth-policy"
+      ],
+      "questionCount": 36
+    },
+    "finalCheckpoint": {
+      "label": "Final Checkpoint",
+      "pool": "finalBoss",
+      "difficulty": "hard",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ],
+      "activeConceptIds": [
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ],
+      "questionCount": 42
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "type": "recipe-migration",
+      "message": "Legacy stage assignments were retired and replaced with automatic checkpoint boss mapping. Boss questions now remain in their published easy, medium, or hard checkpoint pools."
+    },
+    {
+      "type": "legacy-boss-mismatch",
+      "checkpoint": "checkpointTwo",
+      "message": "Checkpoint Two: 3 legacy assignments had no medium boss questions and were retired (CPI versus GDP Deflator, Indexing and Real Values, Real versus Nominal Interest Rates)."
+    },
+    {
+      "type": "legacy-boss-mismatch",
+      "checkpoint": "finalCheckpoint",
+      "message": "Final Checkpoint: 1 legacy assignment had no hard boss questions and was retired (Economic Growth Policy)."
+    }
+  ],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 663,
+    "issues": []
+  },
+  "config": {
+    "schemaVersion": "1.2.0",
+    "title": "National Economy",
+    "slug": "national-economy",
+    "supportedModes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "selectedConceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ],
+    "checkpointFocus": {
+      "checkpointOne": null,
+      "checkpointTwo": null,
+      "finalCheckpoint": null
+    },
+    "libraryVersion": "phase4.3a-browser-validated",
+    "templateVersion": "phase4.4-composer-ready",
+    "composerVersion": "4.4a.0",
+    "compositionId": "national-economy",
+    "saveKeyNamespace": "mq-econ:national-economy:c941db2cbd16",
+    "librarySha256": "2c988d1962a1a9ae1fb9b3da0872158a5e782407b6976c129dababd9383fc6ab",
+    "templateSha256": "614b33cd7d7d05fc5516270d6883aff292bf315fbf181f751aa4184baadf2bb3",
+    "compositionFingerprint": "c941db2cbd16c9aa37ecee1a1e921b039e35d5fe800eda9bfc3c2eb0252c7f3b"
+  }
+}
