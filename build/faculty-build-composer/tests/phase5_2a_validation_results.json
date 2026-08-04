@@ -1,0 +1,587 @@
+{
+  "composerVersion": "4.5b.0",
+  "libraryVersion": "phase5.2a-standalone-expansion",
+  "targetConcepts": [
+    {
+      "name": "scarcity-and-tradeoffs",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 3,
+        "repairSeed": 3,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 48
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 48,
+        "issues": []
+      }
+    },
+    {
+      "name": "opportunity-cost",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 6,
+        "medium": 7,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 4,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 3,
+        "repairSeed": 1,
+        "bridge": 2,
+        "calculation": 2,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 49
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 49,
+        "issues": []
+      }
+    },
+    {
+      "name": "marginal-analysis",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 7,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 5,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 3,
+        "repairSeed": 1,
+        "bridge": 2,
+        "calculation": 2,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 50
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 50,
+        "issues": []
+      }
+    },
+    {
+      "name": "cpi-and-inflation-measurement",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 6,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 21,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 60
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 60,
+        "issues": []
+      }
+    },
+    {
+      "name": "bank-money-creation",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 11,
+        "medium": 14,
+        "hard": 15,
+        "elite": 13,
+        "legendary": 7,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 5,
+        "repair": 10,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 30,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 90
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 90,
+        "issues": []
+      }
+    },
+    {
+      "name": "fiscal-policy-and-aggregate-demand",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 6,
+        "medium": 8,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 6,
+        "repairSeed": 0,
+        "bridge": 3,
+        "calculation": 4,
+        "integration": 0,
+        "graph": 3,
+        "assets": 1,
+        "totalCanonical": 52
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 52,
+        "issues": []
+      }
+    },
+    {
+      "name": "aggregate-demand",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 5,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 3,
+        "assets": 2,
+        "totalCanonical": 47
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 47,
+        "issues": []
+      }
+    },
+    {
+      "name": "aggregate-supply",
+      "selected": 1,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 6,
+        "repairSeed": 0,
+        "bridge": 4,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 1,
+        "assets": 1,
+        "totalCanonical": 51
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 51,
+        "issues": []
+      }
+    }
+  ],
+  "legacyRecipes": [
+    {
+      "name": "exam-only-minimal.json",
+      "selected": 1,
+      "modes": [
+        "exam"
+      ],
+      "errors": [],
+      "warnings": 2,
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "easyBoss": 0,
+        "mediumBoss": 3,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 44
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 44,
+        "issues": []
+      }
+    },
+    {
+      "name": "legendary-only.json",
+      "selected": 1,
+      "modes": [
+        "legendary"
+      ],
+      "errors": [],
+      "warnings": 1,
+      "counts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 24
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 24,
+        "issues": []
+      }
+    },
+    {
+      "name": "market-foundations.json",
+      "selected": 46,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 21,
+      "counts": {
+        "easy": 253,
+        "medium": 264,
+        "hard": 256,
+        "elite": 181,
+        "legendary": 237,
+        "easyBoss": 67,
+        "mediumBoss": 72,
+        "finalBoss": 73,
+        "legendaryBoss": 98,
+        "repair": 170,
+        "repairSeed": 15,
+        "bridge": 118,
+        "calculation": 139,
+        "integration": 0,
+        "graph": 265,
+        "assets": 30,
+        "totalCanonical": 1804
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 1804,
+        "issues": []
+      }
+    },
+    {
+      "name": "mixed-custom-course.json",
+      "selected": 8,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 4,
+      "counts": {
+        "easy": 58,
+        "medium": 74,
+        "hard": 79,
+        "elite": 50,
+        "legendary": 60,
+        "easyBoss": 26,
+        "mediumBoss": 20,
+        "finalBoss": 23,
+        "legendaryBoss": 23,
+        "repair": 40,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 482
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 482,
+        "issues": []
+      }
+    },
+    {
+      "name": "money-and-stabilization.json",
+      "selected": 25,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 4,
+      "counts": {
+        "easy": 168,
+        "medium": 165,
+        "hard": 176,
+        "elite": 151,
+        "legendary": 149,
+        "easyBoss": 29,
+        "mediumBoss": 42,
+        "finalBoss": 48,
+        "legendaryBoss": 75,
+        "repair": 147,
+        "repairSeed": 0,
+        "bridge": 81,
+        "calculation": 82,
+        "integration": 10,
+        "graph": 236,
+        "assets": 33,
+        "totalCanonical": 1231
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 1231,
+        "issues": []
+      }
+    },
+    {
+      "name": "national-economy.json",
+      "selected": 17,
+      "modes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 3,
+      "counts": {
+        "easy": 84,
+        "medium": 85,
+        "hard": 86,
+        "elite": 80,
+        "legendary": 90,
+        "easyBoss": 49,
+        "mediumBoss": 39,
+        "finalBoss": 45,
+        "legendaryBoss": 34,
+        "repair": 57,
+        "repairSeed": 0,
+        "bridge": 37,
+        "calculation": 67,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 686
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 686,
+        "issues": []
+      }
+    },
+    {
+      "name": "standard-and-score.json",
+      "selected": 8,
+      "modes": [
+        "standard",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 4,
+      "counts": {
+        "easy": 58,
+        "medium": 74,
+        "hard": 79,
+        "elite": 50,
+        "legendary": 60,
+        "easyBoss": 26,
+        "mediumBoss": 20,
+        "finalBoss": 23,
+        "legendaryBoss": 23,
+        "repair": 40,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 482
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 482,
+        "issues": []
+      }
+    },
+    {
+      "name": "timed-and-exam.json",
+      "selected": 1,
+      "modes": [
+        "timed",
+        "exam"
+      ],
+      "errors": [],
+      "warnings": 2,
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "easyBoss": 0,
+        "mediumBoss": 3,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 44
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 44,
+        "issues": []
+      }
+    }
+  ],
+  "pass": true
+}
