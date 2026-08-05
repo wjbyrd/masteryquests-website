@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "conceptId": "consumer-and-producer-surplus",
+  "conceptId": "international-trade-and-trade-policy",
   "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
   "errors": [],
   "warnings": [],
@@ -19,8 +19,8 @@
     "bridge": 20,
     "calculation": 30,
     "integration": 0,
-    "graph": 64,
-    "assets": 12,
+    "graph": 102,
+    "assets": 49,
     "totalCanonical": 370
   },
   "countIssues": [],
@@ -212,12 +212,12 @@
     "issues": []
   },
   "assetAudit": {
-    "assetCount": 12,
+    "assetCount": 49,
     "issues": []
   },
   "sampleHtml": {
-    "path": "tests/consumer-and-producer-surplus-sample.html",
-    "bytes": 1495786
+    "path": "tests/international-trade-and-trade-policy-sample.html",
+    "bytes": 2788718
   },
   "bossCoverage": {
     "checkpointOne": {
@@ -226,10 +226,10 @@
       "difficulty": "easy",
       "automatic": true,
       "eligibleConceptIds": [
-        "consumer-and-producer-surplus"
+        "international-trade-and-trade-policy"
       ],
       "activeConceptIds": [
-        "consumer-and-producer-surplus"
+        "international-trade-and-trade-policy"
       ],
       "questionCount": 18
     },
@@ -239,10 +239,10 @@
       "difficulty": "medium",
       "automatic": true,
       "eligibleConceptIds": [
-        "consumer-and-producer-surplus"
+        "international-trade-and-trade-policy"
       ],
       "activeConceptIds": [
-        "consumer-and-producer-surplus"
+        "international-trade-and-trade-policy"
       ],
       "questionCount": 18
     },
@@ -252,10 +252,10 @@
       "difficulty": "hard",
       "automatic": true,
       "eligibleConceptIds": [
-        "consumer-and-producer-surplus"
+        "international-trade-and-trade-policy"
       ],
       "activeConceptIds": [
-        "consumer-and-producer-surplus"
+        "international-trade-and-trade-policy"
       ],
       "questionCount": 18
     }

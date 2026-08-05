@@ -1,5 +1,5 @@
 {
-  "libraryVersion": "phase5.2b-stage2-mixed-rescue",
+  "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
   "tests": [
     {
       "name": "Supply Focused Mastery Quest",
@@ -102,8 +102,8 @@
         "elite": 16,
         "legendary": 20,
         "easyBoss": 22,
-        "mediumBoss": 3,
-        "finalBoss": 3,
+        "mediumBoss": 6,
+        "finalBoss": 6,
         "legendaryBoss": 8,
         "repair": 14,
         "repairSeed": 0,
@@ -112,11 +112,11 @@
         "integration": 0,
         "graph": 0,
         "assets": 0,
-        "totalCanonical": 163
+        "totalCanonical": 169
       },
       "answerAudit": {
         "ok": true,
-        "questionCount": 163,
+        "questionCount": 169,
         "issues": []
       }
     },
@@ -231,27 +231,27 @@
       "errors": [],
       "warnings": 0,
       "counts": {
-        "easy": 56,
+        "easy": 57,
         "medium": 63,
         "hard": 72,
-        "elite": 39,
+        "elite": 40,
         "legendary": 63,
-        "easyBoss": 15,
+        "easyBoss": 18,
         "mediumBoss": 36,
-        "finalBoss": 26,
+        "finalBoss": 29,
         "legendaryBoss": 21,
-        "repair": 37,
+        "repair": 38,
         "repairSeed": 0,
         "bridge": 28,
         "calculation": 13,
         "integration": 0,
         "graph": 53,
         "assets": 10,
-        "totalCanonical": 456
+        "totalCanonical": 465
       },
       "answerAudit": {
         "ok": true,
-        "questionCount": 456,
+        "questionCount": 465,
         "issues": []
       }
     }
@@ -260,21 +260,21 @@
     {
       "name": "exam-only-minimal.json",
       "errors": [],
-      "warnings": 2,
+      "warnings": 1,
       "answerAudit": {
         "ok": true,
-        "questionCount": 44,
+        "questionCount": 53,
         "issues": []
       },
       "counts": {
         "easy": 8,
         "medium": 6,
         "hard": 7,
-        "elite": 2,
-        "legendary": 5,
-        "easyBoss": 0,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
         "mediumBoss": 3,
-        "finalBoss": 0,
+        "finalBoss": 3,
         "legendaryBoss": 3,
         "repair": 4,
         "repairSeed": 0,
@@ -283,7 +283,7 @@
         "integration": 0,
         "graph": 4,
         "assets": 1,
-        "totalCanonical": 44
+        "totalCanonical": 53
       }
     },
     {
@@ -321,77 +321,77 @@
       "warnings": 5,
       "answerAudit": {
         "ok": true,
-        "questionCount": 2030,
+        "questionCount": 2133,
         "issues": []
       },
       "counts": {
-        "easy": 279,
+        "easy": 280,
         "medium": 300,
-        "hard": 297,
-        "elite": 203,
-        "legendary": 272,
-        "easyBoss": 79,
-        "mediumBoss": 82,
-        "finalBoss": 87,
-        "legendaryBoss": 102,
-        "repair": 187,
+        "hard": 302,
+        "elite": 209,
+        "legendary": 280,
+        "easyBoss": 103,
+        "mediumBoss": 109,
+        "finalBoss": 111,
+        "legendaryBoss": 108,
+        "repair": 189,
         "repairSeed": 15,
         "bridge": 127,
         "calculation": 139,
         "integration": 0,
         "graph": 265,
         "assets": 30,
-        "totalCanonical": 2030
+        "totalCanonical": 2133
       }
     },
     {
       "name": "mixed-custom-course.json",
       "errors": [],
-      "warnings": 4,
+      "warnings": 2,
       "answerAudit": {
         "ok": true,
-        "questionCount": 483,
+        "questionCount": 504,
         "issues": []
       },
       "counts": {
-        "easy": 58,
+        "easy": 59,
         "medium": 74,
         "hard": 79,
-        "elite": 50,
+        "elite": 51,
         "legendary": 60,
-        "easyBoss": 26,
-        "mediumBoss": 21,
-        "finalBoss": 23,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
         "legendaryBoss": 23,
-        "repair": 40,
+        "repair": 41,
         "repairSeed": 1,
         "bridge": 28,
         "calculation": 54,
         "integration": 0,
         "graph": 40,
         "assets": 7,
-        "totalCanonical": 483
+        "totalCanonical": 504
       }
     },
     {
       "name": "money-and-stabilization.json",
       "errors": [],
-      "warnings": 4,
+      "warnings": 3,
       "answerAudit": {
         "ok": true,
-        "questionCount": 1259,
+        "questionCount": 1331,
         "issues": []
       },
       "counts": {
         "easy": 171,
         "medium": 167,
-        "hard": 181,
-        "elite": 154,
-        "legendary": 157,
-        "easyBoss": 30,
-        "mediumBoss": 45,
-        "finalBoss": 51,
-        "legendaryBoss": 75,
+        "hard": 186,
+        "elite": 157,
+        "legendary": 164,
+        "easyBoss": 48,
+        "mediumBoss": 66,
+        "finalBoss": 63,
+        "legendaryBoss": 81,
         "repair": 147,
         "repairSeed": 0,
         "bridge": 81,
@@ -399,7 +399,7 @@
         "integration": 10,
         "graph": 236,
         "assets": 33,
-        "totalCanonical": 1259
+        "totalCanonical": 1331
       }
     },
     {
@@ -408,7 +408,7 @@
       "warnings": 3,
       "answerAudit": {
         "ok": true,
-        "questionCount": 721,
+        "questionCount": 733,
         "issues": []
       },
       "counts": {
@@ -417,9 +417,9 @@
         "hard": 92,
         "elite": 81,
         "legendary": 91,
-        "easyBoss": 52,
-        "mediumBoss": 39,
-        "finalBoss": 48,
+        "easyBoss": 55,
+        "mediumBoss": 45,
+        "finalBoss": 51,
         "legendaryBoss": 35,
         "repair": 58,
         "repairSeed": 0,
@@ -428,56 +428,56 @@
         "integration": 0,
         "graph": 0,
         "assets": 0,
-        "totalCanonical": 721
+        "totalCanonical": 733
       }
     },
     {
       "name": "standard-and-score.json",
       "errors": [],
-      "warnings": 4,
+      "warnings": 2,
       "answerAudit": {
         "ok": true,
-        "questionCount": 483,
+        "questionCount": 504,
         "issues": []
       },
       "counts": {
-        "easy": 58,
+        "easy": 59,
         "medium": 74,
         "hard": 79,
-        "elite": 50,
+        "elite": 51,
         "legendary": 60,
-        "easyBoss": 26,
-        "mediumBoss": 21,
-        "finalBoss": 23,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
         "legendaryBoss": 23,
-        "repair": 40,
+        "repair": 41,
         "repairSeed": 1,
         "bridge": 28,
         "calculation": 54,
         "integration": 0,
         "graph": 40,
         "assets": 7,
-        "totalCanonical": 483
+        "totalCanonical": 504
       }
     },
     {
       "name": "timed-and-exam.json",
       "errors": [],
-      "warnings": 2,
+      "warnings": 1,
       "answerAudit": {
         "ok": true,
-        "questionCount": 44,
+        "questionCount": 53,
         "issues": []
       },
       "counts": {
         "easy": 8,
         "medium": 6,
         "hard": 7,
-        "elite": 2,
-        "legendary": 5,
-        "easyBoss": 0,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
         "mediumBoss": 3,
-        "finalBoss": 0,
+        "finalBoss": 3,
         "legendaryBoss": 3,
         "repair": 4,
         "repairSeed": 0,
@@ -486,7 +486,7 @@
         "integration": 0,
         "graph": 4,
         "assets": 1,
-        "totalCanonical": 44
+        "totalCanonical": 53
       }
     }
   ],

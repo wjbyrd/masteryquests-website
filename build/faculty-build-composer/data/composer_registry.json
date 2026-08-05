@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-05T00:28:36Z",
+  "generatedAt": "2026-08-05T02:22:05Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -2819,6 +2819,111 @@
       "coverageStatusLabel": "Supplemental — useful in a combined game",
       "coverageStatusNote": "Targeted enrichment only: add discriminating application, challenge/mastery, or integration items where useful; do not force every difficulty or checkpoint pool.",
       "coverageFloorVersion": "phase5.2b-v1"
+    },
+    {
+      "canonicalConceptId": "international-trade-and-trade-policy",
+      "title": "International Trade and Trade Policy",
+      "description": "Analyze world prices, imports, exports, trade gains, tariffs, quotas, quota rents, protection arguments, and the distribution of trade-policy effects.",
+      "includedSkills": [
+        "consumer_surplus_trade",
+        "consumption_distortion",
+        "domestic_consumption_under_trade",
+        "domestic_production_under_trade",
+        "efficiency_equity_trade",
+        "export_market_graph",
+        "export_quantity",
+        "exporter_identification",
+        "gains_from_trade",
+        "import_market_graph",
+        "import_quantity",
+        "importer_identification",
+        "integrated_trade_analysis",
+        "producer_surplus_trade",
+        "production_distortion",
+        "protectionism_arguments",
+        "quota_quantity_effect",
+        "quota_rent",
+        "small_country_model",
+        "tariff_price_effect",
+        "tariff_quantity_effect",
+        "tariff_quota_comparison",
+        "tariff_revenue",
+        "tariff_welfare_effect",
+        "total_surplus_trade",
+        "trade_claim_evaluation",
+        "trade_foundations",
+        "trade_policy_evaluation",
+        "trade_winners_losers",
+        "world_price"
+      ],
+      "excludedNeighboringSkills": [
+        "Generic sales-tax and tax-incidence mechanics belong to taxes-and-deadweight-loss; this module includes tariff-specific welfare only.",
+        "Monopoly and market-structure mechanics belong to monopoly and related market-structure modules.",
+        "Exchange rates, balance of payments, and macro trade deficits belong to macroeconomic international-finance modules.",
+        "External costs and benefits belong to externalities."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "comparative-advantage",
+        "gains-from-trade",
+        "elasticity",
+        "tax-wedges-and-revenue",
+        "production-possibilities-frontier"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.1",
+        "ITP.2",
+        "ITP.3",
+        "ITP.4",
+        "ITP.5",
+        "ITP.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 90,
+        "elite": 30,
+        "legendary": 90,
+        "calculation": 30,
+        "boss": 54,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "bridge": 20,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 48,
+        "elite": 30,
+        "hard": 78,
+        "legendary": 126,
+        "medium": 48,
+        "unknown": 40
+      },
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "calculationCoverage": 35,
+      "graphCoverage": 102,
+      "status": "active",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2d. Consumer and Producer Surplus is the primary prerequisite. Tariff and quota losses are taught as trade-specific lost gains without assuming a generic tax unit. Graph labels are offset from curves.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageFloorVersion": "phase6.2d-rich-v1"
     },
     {
       "canonicalConceptId": "labor-market-institutions",
@@ -6264,6 +6369,6 @@
       "coverageFloorVersion": "phase5.2b-v1"
     }
   ],
-  "curationPhase": "6.2c",
-  "curationSummary": "Phase 6.2c adds the publisher-scale Consumer and Producer Surplus bank with course-sequence guardrails and graph-label cleanup."
+  "curationPhase": "6.2d",
+  "curationSummary": "Phase 6.2d adds the publisher-scale International Trade and Trade Policy bank following Consumer and Producer Surplus."
 }
