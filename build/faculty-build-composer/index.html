@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260804-p62b-elasticity">
+  <link rel="stylesheet" href="composer.css?v=20260805-area-gated-concepts-v1">
 </head>
 <body>
   <header class="site-header">
@@ -56,7 +56,7 @@
         <div class="panel-heading-row">
           <div>
             <h2>Choose concepts</h2>
-            <p>Search by concept or description. Course-area filters are independent of any textbook chapter sequence.</p>
+            <p>Select a course area first. The composer will display only the concepts assigned to that area, independent of any textbook chapter sequence.</p>
           </div>
         </div>
 
@@ -70,22 +70,23 @@
 
         <div class="filters">
           <div class="field">
-            <label for="conceptSearch">Search</label>
-            <input id="conceptSearch" placeholder="Search concepts or descriptions">
-          </div>
-          <div class="field">
             <label for="areaFilter">Course area</label>
-            <select id="areaFilter">
-              <option value="">All areas</option>
+            <select id="areaFilter" aria-describedby="areaFilterHint">
+              <option value="" selected>Choose a course area</option>
               <option value="general">General economics</option>
               <option value="micro">Microeconomics</option>
               <option value="macro">Macroeconomics</option>
             </select>
+            <small id="areaFilterHint">Concept cards stay hidden until you choose an area.</small>
+          </div>
+          <div class="field">
+            <label for="conceptSearch">Search within area</label>
+            <input id="conceptSearch" placeholder="Search concepts or descriptions" disabled>
           </div>
           <div class="field">
             <label for="selectionFilter">Selection</label>
-            <select id="selectionFilter">
-              <option value="all">All concepts</option>
+            <select id="selectionFilter" disabled>
+              <option value="all">All concepts in this area</option>
               <option value="selected">Selected only</option>
               <option value="unselected">Not selected</option>
             </select>
@@ -155,8 +156,8 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260804-p62b-elasticity"></script>
-  <script src="data/composer_library.js?v=20260804-p62b-elasticity"></script>
-  <script src="composer.js?v=20260804-p62b-elasticity"></script>
+  <script src="composer-core.js?v=20260805-area-gated-concepts-v1"></script>
+  <script src="data/composer_library.js?v=20260805-area-gated-concepts-v1"></script>
+  <script src="composer.js?v=20260805-area-gated-concepts-v1"></script>
 </body>
 </html>

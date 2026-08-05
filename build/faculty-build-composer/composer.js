@@ -49,7 +49,9 @@ const MICRO_IDS = new Set([
   'market-equilibrium', 'price-signals', 'binding-price-ceilings',
   'binding-price-floors', 'tax-wedges-and-revenue',
   'statutory-versus-economic-tax-incidence', 'tax-incidence',
-  'integrated-economic-analysis', 'elasticity', 'consumer-and-producer-surplus'
+  'integrated-economic-analysis', 'elasticity', 'consumer-and-producer-surplus',
+  'international-trade-and-trade-policy', 'costs-of-production',
+  'perfect-competition', 'monopoly', 'monopolistic-competition', 'oligopoly'
 ]);
 
 const MACRO_IDS = new Set();
@@ -57,6 +59,7 @@ const MACRO_IDS = new Set();
 const PRESETS = [
   {
     id: 'general-foundations',
+    area: 'general',
     title: 'General economics foundations',
     description: 'Choice, tradeoffs, models, incentives, policy language, and production possibilities.',
     conceptIds: [
@@ -67,6 +70,7 @@ const PRESETS = [
   },
   {
     id: 'market-fundamentals',
+    area: 'micro',
     title: 'Market fundamentals',
     description: 'Demand, supply, equilibrium, price signals, controls, and taxes.',
     conceptIds: [
@@ -77,6 +81,7 @@ const PRESETS = [
   },
   {
     id: 'macro-measurement-growth',
+    area: 'macro',
     title: 'Macro measurement and growth',
     description: 'GDP, inflation measures, real values, productivity, growth, and unemployment.',
     conceptIds: [
@@ -90,6 +95,7 @@ const PRESETS = [
   },
   {
     id: 'money-banking-inflation',
+    area: 'macro',
     title: 'Money, banking, and inflation',
     description: 'Money creation, central banking, monetary tools, inflation, and the value of money.',
     conceptIds: [
@@ -101,6 +107,7 @@ const PRESETS = [
   },
   {
     id: 'stabilization-policy',
+    area: 'macro',
     title: 'Stabilization and policy',
     description: 'AD-AS, monetary and fiscal transmission, Phillips curves, and policy tradeoffs.',
     conceptIds: [
@@ -155,6 +162,24 @@ function primaryAreaLabel(id){
   if(GENERAL_IDS.has(id)) return 'Shared economic foundation';
   if(MICRO_IDS.has(id)) return AREA_LABELS.micro;
   return AREA_LABELS.macro;
+}
+
+function setActiveArea(area){
+  const normalized = AREA_LABELS[area] ? area : '';
+  $('areaFilter').value = normalized;
+  $('conceptSearch').disabled = !normalized;
+  $('selectionFilter').disabled = !normalized;
+}
+
+function inferAreaForConceptIds(ids){
+  const counts = {general: 0, micro: 0, macro: 0};
+  for(const id of ids){
+    if(GENERAL_IDS.has(id)) counts.general += 1;
+    if(MICRO_IDS.has(id) && !GENERAL_IDS.has(id)) counts.micro += 1;
+    if(MACRO_IDS.has(id) && !GENERAL_IDS.has(id)) counts.macro += 1;
+  }
+  if(counts.micro || counts.macro) return counts.micro >= counts.macro ? 'micro' : 'macro';
+  return counts.general ? 'general' : '';
 }
 
 function conceptFormatBadges(concept){
@@ -307,6 +332,7 @@ function applyPreset(presetId){
   state.selectedConceptIds = preset.conceptIds.filter(id => Library.concepts[id]);
   state.checkpointFocus = emptyCheckpointFocus();
   state.importWarnings = [];
+  setActiveArea(preset.area || inferAreaForConceptIds(state.selectedConceptIds));
   renderConcepts();
   renderCheckpointBoard();
   recalculate();
@@ -335,7 +361,8 @@ function renderSelectedSummary(){
 
 function renderConceptRecommendations(){
   const container = $('conceptRecommendations');
-  if(!state.selectedConceptIds.length){
+  const area = $('areaFilter').value;
+  if(!area || !state.selectedConceptIds.length){
     container.innerHTML = '';
     return;
   }
@@ -344,6 +371,7 @@ function renderConceptRecommendations(){
     const concept = metaById.get(selectedId);
     for(const relatedId of relatedConceptIds(concept || {})){
       if(state.selectedConceptIds.includes(relatedId)) continue;
+      if(!conceptAreas(relatedId).includes(area)) continue;
       scores.set(relatedId, (scores.get(relatedId) || 0) + 1);
     }
   }
@@ -371,8 +399,22 @@ function renderConceptRecommendations(){
 }
 
 function renderConcepts(){
-  const search = $('conceptSearch').value.trim().toLowerCase();
   const area = $('areaFilter').value;
+  setActiveArea(area);
+  renderSelectedSummary();
+
+  if(!area){
+    $('conceptGrid').innerHTML = `
+      <div class="empty" role="status">
+        <strong>Choose a course area to view concepts.</strong>
+        <span>Select General economics, Microeconomics, or Macroeconomics above. Your selections remain saved when you switch areas.</span>
+      </div>
+    `;
+    $('conceptRecommendations').innerHTML = '';
+    return;
+  }
+
+  const search = $('conceptSearch').value.trim().toLowerCase();
   const filter = $('selectionFilter').value;
   const visible = registry.filter(concept => {
     const selected = state.selectedConceptIds.includes(concept.canonicalConceptId);
@@ -464,7 +506,6 @@ function renderConcepts(){
   $('conceptGrid').querySelectorAll('[data-concept]').forEach(input => {
     input.addEventListener('change', () => setSelected(input.dataset.concept, input.checked));
   });
-  renderSelectedSummary();
   renderConceptRecommendations();
 }
 
@@ -968,6 +1009,7 @@ async function importRecipe(file){
 
   $('gameTitle').value = state.title;
   $('gameSlug').value = state.slug;
+  setActiveArea(inferAreaForConceptIds(state.selectedConceptIds));
   renderModeOptions();
   renderConcepts();
   renderCheckpointBoard();
@@ -1024,6 +1066,9 @@ async function init(){
     state.selectedConceptIds = [];
     state.checkpointFocus = emptyCheckpointFocus();
     state.importWarnings = [];
+    $('conceptSearch').value = '';
+    $('selectionFilter').value = 'all';
+    setActiveArea('');
     renderConcepts();
     renderCheckpointBoard();
     recalculate();

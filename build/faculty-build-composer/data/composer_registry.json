@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-05T13:29:31Z",
+  "generatedAt": "2026-08-05T16:32:50Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -4647,6 +4647,231 @@
       "coverageFloorVersion": "phase5.2b-v1"
     },
     {
+      "canonicalConceptId": "monopolistic-competition",
+      "title": "Monopolistic Competition",
+      "description": "Analyze differentiated products, short-run firm choice, entry and exit, long-run tangency, markup, excess capacity, advertising, branding, product variety, and welfare tradeoffs.",
+      "includedSkills": [
+        "advertising_demand_shift",
+        "advertising_elasticity",
+        "advertising_informational",
+        "advertising_persuasive",
+        "advertising_signal",
+        "allocative_inefficiency",
+        "brand_differentiation",
+        "close_substitutes",
+        "elasticity_firm_demand",
+        "entry_after_profit",
+        "entry_demand_shift",
+        "excess_capacity",
+        "exit_after_loss",
+        "exit_demand_shift",
+        "firm_demand_mc",
+        "innovation_product_development",
+        "integrated_mc_analysis",
+        "location_differentiation",
+        "long_run_adjustment",
+        "long_run_tangency",
+        "long_run_zero_profit",
+        "marginal_revenue_mc",
+        "market_classification",
+        "market_structure_characteristics",
+        "markup",
+        "model_limitations",
+        "monopolistic_competition_definition",
+        "nonprice_competition",
+        "physical_differentiation",
+        "product_differentiation",
+        "product_variety",
+        "productive_inefficiency",
+        "quality_competition",
+        "selling_cost",
+        "service_differentiation",
+        "short_run_loss",
+        "short_run_output_choice",
+        "short_run_price",
+        "short_run_profit",
+        "short_run_shutdown",
+        "welfare_tradeoff"
+      ],
+      "excludedNeighboringSkills": [
+        "Oligopoly, strategic interdependence, collusion, and game theory remain outside this bank.",
+        "Monopoly regulation and advanced price discrimination remain in monopoly.",
+        "Perfect-competition price taking remains a benchmark rather than core content."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "consumer-choice",
+        "incentives",
+        "market-failures"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MCMP.1",
+        "MCMP.2",
+        "MCMP.3",
+        "MCMP.4",
+        "MCMP.5",
+        "MCMP.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 90,
+        "elite": 30,
+        "legendary": 90,
+        "calculation": 30,
+        "boss": 54,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "bridge": 20,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 48,
+        "elite": 30,
+        "hard": 78,
+        "legendary": 126,
+        "medium": 48,
+        "unknown": 40
+      },
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "calculationCoverage": 30,
+      "graphCoverage": 111,
+      "status": "active",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2h. Perfect competition, monopoly, and costs are prerequisites; oligopoly and game theory are excluded.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageFloorVersion": "phase6.2h-rich-v1"
+    },
+    {
+      "canonicalConceptId": "monopoly",
+      "title": "Monopoly",
+      "description": "Analyze monopoly power, barriers to entry, demand and marginal revenue, output and price choice, profit and loss, welfare effects, natural-monopoly regulation, and price discrimination.",
+      "includedSkills": [
+        "allocative_inefficiency",
+        "average_cost_regulation",
+        "average_revenue_monopoly",
+        "barriers_to_entry",
+        "competitive_monopoly_comparison",
+        "consumer_surplus_monopoly",
+        "continuous_monopoly_choice",
+        "discrete_monopoly_choice",
+        "elasticity_and_mr",
+        "first_degree_price_discrimination",
+        "integrated_monopoly_analysis",
+        "legal_barrier",
+        "marginal_cost_regulation",
+        "marginal_revenue_monopoly",
+        "market_power",
+        "monopoly_deadweight_loss",
+        "monopoly_definition",
+        "monopoly_demand",
+        "monopoly_loss",
+        "monopoly_policy_evaluation",
+        "monopoly_price",
+        "monopoly_profit",
+        "monopoly_shutdown",
+        "natural_monopoly",
+        "natural_monopoly_cost",
+        "network_effects",
+        "persistent_economic_profit",
+        "price_cap_regulation",
+        "price_discrimination_conditions",
+        "price_discrimination_welfare",
+        "price_effect_output_effect",
+        "profit_maximizing_output",
+        "regulatory_tradeoff",
+        "rent_seeking",
+        "resale_prevention",
+        "resource_control",
+        "third_degree_price_discrimination",
+        "total_revenue_monopoly"
+      ],
+      "excludedNeighboringSkills": [
+        "Perfect-competition price-taking and entry/exit mechanics remain in perfect-competition.",
+        "Monopolistic competition and product differentiation remain outside this bank.",
+        "Oligopoly, collusion, and game theory remain outside this bank.",
+        "Factor-market monopsony remains outside this bank."
+      ],
+      "prerequisiteConceptIds": [
+        "perfect-competition",
+        "costs-of-production",
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "market-failures",
+        "incentives",
+        "international-trade-and-trade-policy"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.1",
+        "MON.2",
+        "MON.3",
+        "MON.4",
+        "MON.5",
+        "MON.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 90,
+        "elite": 30,
+        "legendary": 90,
+        "calculation": 30,
+        "boss": 54,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "bridge": 20,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 48,
+        "elite": 30,
+        "hard": 78,
+        "legendary": 126,
+        "medium": 48,
+        "unknown": 40
+      },
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "calculationCoverage": 30,
+      "graphCoverage": 201,
+      "status": "active",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2g. Perfect competition and costs are prerequisites. Natural-monopoly regulation and controlled price discrimination are included; oligopoly and game theory are excluded.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageFloorVersion": "phase6.2g-rich-v1"
+    },
+    {
       "canonicalConceptId": "natural-rate-of-unemployment",
       "title": "Natural Rate of Unemployment",
       "description": "Interpret the natural rate and deviations caused by business cycles.",
@@ -4718,6 +4943,123 @@
       "coverageStatusLabel": "Best used with related concepts",
       "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
       "coverageFloorVersion": "phase5.2b-v1"
+    },
+    {
+      "canonicalConceptId": "oligopoly",
+      "title": "Oligopoly",
+      "description": "Analyze few-firm strategic interdependence, concentration, payoff matrices, Nash equilibrium, collusion, cartels, repeated interaction, entry deterrence, welfare, mergers, and policy tradeoffs.",
+      "includedSkills": [
+        "antitrust_rationale",
+        "barriers_to_entry_oligopoly",
+        "best_response",
+        "cartel",
+        "cartel_instability",
+        "cartel_output_allocation",
+        "cartel_output_price",
+        "cartel_welfare",
+        "collusion",
+        "concentration_limitations",
+        "concentration_ratio",
+        "cooperative_outcome",
+        "credible_commitment",
+        "credible_threat",
+        "dominant_strategy",
+        "entry_deterrence",
+        "explicit_collusion",
+        "game_players_strategies_payoffs",
+        "hhi",
+        "incentive_to_cheat",
+        "innovation_tradeoff",
+        "integrated_oligopoly_analysis",
+        "joint_profit_maximization",
+        "kinked_demand",
+        "limit_pricing",
+        "market_classification",
+        "market_concentration",
+        "market_definition",
+        "merger_concentration",
+        "model_limitations",
+        "monitoring_enforcement",
+        "nash_equilibrium",
+        "noncooperative_outcome",
+        "nonprice_competition",
+        "oligopoly_definition",
+        "payoff_matrix_reading",
+        "price_leadership",
+        "price_war",
+        "prisoners_dilemma",
+        "repeated_games",
+        "standardized_oligopoly",
+        "strategic_interdependence",
+        "tacit_coordination"
+      ],
+      "excludedNeighboringSkills": [
+        "Formal Cournot, Bertrand, Stackelberg, mixed-strategy, Bayesian, and advanced repeated-game derivations remain outside this Principles bank.",
+        "Monopoly and Monopolistic Competition remain benchmark prerequisites rather than rebuilt concepts.",
+        "Current antitrust legal thresholds and detailed case law are excluded."
+      ],
+      "prerequisiteConceptIds": [
+        "perfect-competition",
+        "monopoly",
+        "monopolistic-competition",
+        "costs-of-production",
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "incentives",
+        "market-failures",
+        "international-trade-and-trade-policy"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "OLI.1",
+        "OLI.2",
+        "OLI.3",
+        "OLI.4",
+        "OLI.5",
+        "OLI.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 90,
+        "elite": 30,
+        "legendary": 90,
+        "calculation": 30,
+        "boss": 54,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "bridge": 20,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 48,
+        "elite": 30,
+        "hard": 78,
+        "legendary": 126,
+        "medium": 48,
+        "unknown": 40
+      },
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "calculationCoverage": 30,
+      "graphCoverage": 137,
+      "status": "active",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2i. Formal advanced industrial-organization models and time-sensitive legal thresholds are excluded.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageFloorVersion": "phase6.2i-rich-v1"
     },
     {
       "canonicalConceptId": "opportunity-cost",
@@ -4800,6 +5142,122 @@
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
       "coverageFloorVersion": "phase5.2b-v1"
+    },
+    {
+      "canonicalConceptId": "perfect-competition",
+      "title": "Perfect Competition",
+      "description": "Analyze price-taking firm behavior, revenue, marginal output choice, profit and loss, shutdown, short-run supply, entry and exit, long-run equilibrium, industry cost conditions, and competitive efficiency.",
+      "includedSkills": [
+        "allocative_efficiency",
+        "average_revenue",
+        "break_even",
+        "competitive_welfare",
+        "constant_cost_industry",
+        "continuous_output_choice",
+        "decreasing_cost_industry",
+        "demand_change_short_long_run",
+        "discrete_output_choice",
+        "entry",
+        "exit",
+        "firm_demand_curve",
+        "firm_short_run_supply",
+        "increasing_cost_industry",
+        "integrated_competitive_firm_analysis",
+        "long_run_adjustment",
+        "long_run_equilibrium",
+        "loss_per_unit",
+        "marginal_revenue",
+        "marginal_rule",
+        "market_supply_aggregation",
+        "market_vs_firm",
+        "model_limitations",
+        "normal_profit",
+        "perfect_competition_characteristics",
+        "price_ar_mr_relationship",
+        "price_taker",
+        "produce_at_loss",
+        "productive_efficiency",
+        "profit_definition",
+        "profit_maximizing_output",
+        "profit_per_unit",
+        "rising_mc_condition",
+        "short_run_fixed_cost",
+        "shutdown_price",
+        "shutdown_rule",
+        "shutdown_vs_exit",
+        "total_loss",
+        "total_profit",
+        "total_revenue",
+        "zero_economic_profit"
+      ],
+      "excludedNeighboringSkills": [
+        "Costs-of-production definitions and curve construction remain in costs-of-production.",
+        "Monopoly output and pricing belong to monopoly.",
+        "Product differentiation belongs to monopolistic-competition.",
+        "Oligopoly and game theory belong to oligopoly-and-game-theory."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "taxes-and-deadweight-loss",
+        "factor-markets",
+        "monopoly",
+        "externalities",
+        "international-trade-and-trade-policy"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.1",
+        "PC.2",
+        "PC.3",
+        "PC.4",
+        "PC.5",
+        "PC.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 90,
+        "elite": 30,
+        "legendary": 90,
+        "calculation": 30,
+        "boss": 54,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "bridge": 20,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 48,
+        "elite": 30,
+        "hard": 78,
+        "legendary": 126,
+        "medium": 48,
+        "unknown": 40
+      },
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "calculationCoverage": 30,
+      "graphCoverage": 124,
+      "status": "active",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2f. Costs are prerequisites; firm output, shutdown, supply, entry, exit, and efficiency are the core. Market and firm graph quantities are separated.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageFloorVersion": "phase6.2f-rich-v1"
     },
     {
       "canonicalConceptId": "phillips-curve-expectations",
@@ -6476,6 +6934,6 @@
       "coverageFloorVersion": "phase5.2b-v1"
     }
   ],
-  "curationPhase": "6.2e",
-  "curationSummary": "Phase 6.2e adds the publisher-scale Costs of Production bank before the market-structure sequence."
+  "curationPhase": "6.2i",
+  "curationSummary": "Phase 6.2i adds the publisher-scale Oligopoly bank after Monopolistic Competition."
 }
