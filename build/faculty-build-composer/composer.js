@@ -80,6 +80,18 @@ const PRESETS = [
     ]
   },
   {
+    id: 'micro-firms-markets',
+    area: 'micro',
+    title: 'Microeconomics: firms and markets',
+    description: 'Elasticity, surplus, trade, production costs, and firm behavior across market structures.',
+    conceptIds: [
+      'elasticity', 'consumer-and-producer-surplus',
+      'international-trade-and-trade-policy', 'costs-of-production',
+      'perfect-competition', 'monopoly',
+      'monopolistic-competition', 'oligopoly'
+    ]
+  },
+  {
     id: 'macro-measurement-growth',
     area: 'macro',
     title: 'Macro measurement and growth',
