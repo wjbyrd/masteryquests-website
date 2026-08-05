@@ -1,465 +1,577 @@
 {
-  "assetCount": 43,
+  "assetCount": 63,
   "assets": [
     {
       "conceptId": "aggregate-demand",
       "filename": "adas1.webp",
+      "sourceAssetPath": "question-assets/adas1.webp",
+      "sourceUrl": "data/question-assets/aggregate-demand/adas1.webp",
       "runtimePath": "question-assets/aggregate-demand/adas1.webp",
       "sha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
-      "sizeBytes": 36032,
-      "sourceAssetPath": "question-assets/adas1.webp",
-      "sourceUrl": "data/question-assets/aggregate-demand/adas1.webp"
+      "sizeBytes": 36032
     },
     {
       "conceptId": "aggregate-demand",
       "filename": "adaslras.webp",
+      "sourceAssetPath": "question-assets/adaslras.webp",
+      "sourceUrl": "data/question-assets/aggregate-demand/adaslras.webp",
       "runtimePath": "question-assets/aggregate-demand/adaslras.webp",
       "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-      "sizeBytes": 36412,
-      "sourceAssetPath": "question-assets/adaslras.webp",
-      "sourceUrl": "data/question-assets/aggregate-demand/adaslras.webp"
+      "sizeBytes": 36412
     },
     {
       "conceptId": "aggregate-supply",
       "filename": "adas1.webp",
+      "sourceAssetPath": "question-assets/adas1.webp",
+      "sourceUrl": "data/question-assets/aggregate-supply/adas1.webp",
       "runtimePath": "question-assets/aggregate-supply/adas1.webp",
       "sha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
-      "sizeBytes": 36032,
-      "sourceAssetPath": "question-assets/adas1.webp",
-      "sourceUrl": "data/question-assets/aggregate-supply/adas1.webp"
+      "sizeBytes": 36032
     },
     {
       "conceptId": "binding-price-ceilings",
       "filename": "ceilingfloor.webp",
+      "sourceAssetPath": "question-assets/ceilingfloor.webp",
+      "sourceUrl": "data/question-assets/binding-price-ceilings/ceilingfloor.webp",
       "runtimePath": "question-assets/binding-price-ceilings/ceilingfloor.webp",
       "sha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
-      "sizeBytes": 93958,
-      "sourceAssetPath": "question-assets/ceilingfloor.webp",
-      "sourceUrl": "data/question-assets/binding-price-ceilings/ceilingfloor.webp"
+      "sizeBytes": 93958
     },
     {
       "conceptId": "binding-price-floors",
       "filename": "ceilingfloor.webp",
+      "sourceAssetPath": "question-assets/ceilingfloor.webp",
+      "sourceUrl": "data/question-assets/binding-price-floors/ceilingfloor.webp",
       "runtimePath": "question-assets/binding-price-floors/ceilingfloor.webp",
       "sha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
-      "sizeBytes": 93958,
-      "sourceAssetPath": "question-assets/ceilingfloor.webp",
-      "sourceUrl": "data/question-assets/binding-price-floors/ceilingfloor.webp"
+      "sizeBytes": 93958
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_consumer_prices.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+      "sha256": "8524e29fadce0d985c8800948e5e5b7844b82b3d2fb1135b2301279037a8d013",
+      "sizeBytes": 24328
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_demand_shift.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
+      "sha256": "c559b174060f2f8ce28945350be2e05853a001f6e16f770e7fabf734651dd29f",
+      "sizeBytes": 39944
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_eq_asymmetric.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "sha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
+      "sizeBytes": 28244
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_eq_balanced.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+      "sha256": "e7ad3b5e0934eb62695fc69308d0991371a4989e16fc30bda3e5653823cbf9bc",
+      "sizeBytes": 29516
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_eq_compact.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+      "sha256": "2f7f6d7fe4aad82da0984b27f4806a9a5cafbc325a4c4982d23ec599a5dd318b",
+      "sizeBytes": 29448
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_horizontal_supply.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+      "sha256": "d09df7bd9924ec6f74bd6cade75d7818700e48f132e129a71669bac8a1d5087a",
+      "sizeBytes": 17882
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_overproduction.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+      "sha256": "5c6e31aaac1b7c4996719f0b30e8ee53bda29ac9b08c614a1d0af073d36d6db1",
+      "sizeBytes": 29056
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_producer_prices.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
+      "sha256": "3962f750dd32a57434aed7ca52fc46aa2dad55d000fe862dd587633e51b47c24",
+      "sizeBytes": 24574
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_step_buyers.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_step_buyers.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_step_buyers.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_step_buyers.webp",
+      "sha256": "f6b9f44f1d49deb73da3dba230ebceab0e8809dfe56100e45a05a1e3cd74fe7f",
+      "sizeBytes": 8262
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_step_sellers.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_step_sellers.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_step_sellers.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_step_sellers.webp",
+      "sha256": "185b3b93f34b5588c2500f5122b7df41aac5c80c28aa9ec3a01a6f2d1893684b",
+      "sizeBytes": 8056
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_supply_shift.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
+      "sha256": "5dfd8a7af713d343b5991379f435e8f927752e7aa202b3ee9233922f290548df",
+      "sizeBytes": 40560
+    },
+    {
+      "conceptId": "consumer-and-producer-surplus",
+      "filename": "cps_underproduction.webp",
+      "sourceAssetPath": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+      "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+      "sha256": "f11c62fa8fb3272bd37b3c38a6ff1c55d59dcf22e8ee001699e14ca8fd5488d7",
+      "sizeBytes": 29222
     },
     {
       "conceptId": "demand",
       "filename": "supplydemand1.webp",
+      "sourceAssetPath": "question-assets/supplydemand1.webp",
+      "sourceUrl": "data/question-assets/demand/supplydemand1.webp",
       "runtimePath": "question-assets/demand/supplydemand1.webp",
       "sha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
-      "sizeBytes": 95910,
-      "sourceAssetPath": "question-assets/supplydemand1.webp",
-      "sourceUrl": "data/question-assets/demand/supplydemand1.webp"
+      "sizeBytes": 95910
     },
     {
       "conceptId": "disinflation-and-policy",
       "filename": "lrpc.webp",
+      "sourceAssetPath": "question-assets/lrpc.webp",
+      "sourceUrl": "data/question-assets/disinflation-and-policy/lrpc.webp",
       "runtimePath": "question-assets/disinflation-and-policy/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
-      "sizeBytes": 77908,
-      "sourceAssetPath": "question-assets/lrpc.webp",
-      "sourceUrl": "data/question-assets/disinflation-and-policy/lrpc.webp"
+      "sizeBytes": 77908
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_cross_income.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_cross_income.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_cross_income.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_cross_income.webp",
+      "sha256": "928a517f73802bda313684d9f991c83677e766f35cc297c165ea0b1547f960b4",
+      "sizeBytes": 9506
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_demand_steep_flat.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_demand_steep_flat.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_demand_steep_flat.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_demand_steep_flat.webp",
+      "sha256": "cb9652c151d83eec2bbb69d6be2da5eeb4715478a4e1fdca72ae7261671220a9",
+      "sizeBytes": 13722
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_linear_segments.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_linear_segments.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_linear_segments.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_linear_segments.webp",
+      "sha256": "461792d440187d08f14a3d7aae858bf15a26c43cbda02b0d1a644f6e102b951b",
+      "sizeBytes": 17464
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_midpoint_arc.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_midpoint_arc.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_midpoint_arc.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_midpoint_arc.webp",
+      "sha256": "38a420463bddeff2175e72afc3a400934d4566ae386eb6e5c6c853467a77e2f6",
+      "sizeBytes": 15608
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_perfect_extremes.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_perfect_extremes.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_perfect_extremes.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_perfect_extremes.webp",
+      "sha256": "1bd2bda02bec2253c345115c380a22056c65053444abb487deb2722eb0d23791",
+      "sizeBytes": 7936
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_supply_time_horizon.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_supply_time_horizon.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_supply_time_horizon.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_supply_time_horizon.webp",
+      "sha256": "17c71165416261d8518f4282bae2cf7bce0016d3c6aa38640139d456f552e410",
+      "sizeBytes": 16326
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_tax_incidence.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_tax_incidence.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_tax_incidence.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_tax_incidence.webp",
+      "sha256": "c94511d5aa2a7fb52bd5614e263184c236c82d6e4697fc437570250643465643",
+      "sizeBytes": 24826
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "elasticity_total_revenue.webp",
+      "sourceAssetPath": "question-assets/elasticity/elasticity_total_revenue.webp",
+      "sourceUrl": "data/question-assets/elasticity/elasticity_total_revenue.webp",
+      "runtimePath": "question-assets/elasticity/elasticity_total_revenue.webp",
+      "sha256": "f3dfb33e3323ef4bdd8d1f199c15e74ceafb84b8ff4c66913dc9995721c18c38",
+      "sizeBytes": 18636
     },
     {
       "conceptId": "fiscal-multipliers-and-crowding-out",
       "filename": "adaslras.webp",
+      "sourceAssetPath": "question-assets/adaslras.webp",
+      "sourceUrl": "data/question-assets/fiscal-multipliers-and-crowding-out/adaslras.webp",
       "runtimePath": "question-assets/fiscal-multipliers-and-crowding-out/adaslras.webp",
       "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-      "sizeBytes": 36412,
-      "sourceAssetPath": "question-assets/adaslras.webp",
-      "sourceUrl": "data/question-assets/fiscal-multipliers-and-crowding-out/adaslras.webp"
+      "sizeBytes": 36412
     },
     {
       "conceptId": "fiscal-multipliers-and-crowding-out",
       "filename": "moneyd2_moneys2.webp",
+      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
+      "sourceUrl": "data/question-assets/fiscal-multipliers-and-crowding-out/moneyd2_moneys2.webp",
       "runtimePath": "question-assets/fiscal-multipliers-and-crowding-out/moneyd2_moneys2.webp",
       "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
-      "sizeBytes": 21712,
-      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
-      "sourceUrl": "data/question-assets/fiscal-multipliers-and-crowding-out/moneyd2_moneys2.webp"
+      "sizeBytes": 21712
     },
     {
       "conceptId": "fiscal-multipliers-and-crowding-out",
       "filename": "moneymultiplier.webp",
+      "sourceAssetPath": "question-assets/moneymultiplier.webp",
+      "sourceUrl": "data/question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
       "runtimePath": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
       "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
-      "sizeBytes": 52684,
-      "sourceAssetPath": "question-assets/moneymultiplier.webp",
-      "sourceUrl": "data/question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp"
+      "sizeBytes": 52684
     },
     {
       "conceptId": "fiscal-policy-and-aggregate-demand",
       "filename": "moneymultiplier.webp",
+      "sourceAssetPath": "question-assets/moneymultiplier.webp",
+      "sourceUrl": "data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
       "runtimePath": "question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
       "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
-      "sizeBytes": 52684,
-      "sourceAssetPath": "question-assets/moneymultiplier.webp",
-      "sourceUrl": "data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp"
+      "sizeBytes": 52684
     },
     {
       "conceptId": "fisher-effect",
       "filename": "moneys_moneyd.webp",
+      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
+      "sourceUrl": "data/question-assets/fisher-effect/moneys_moneyd.webp",
       "runtimePath": "question-assets/fisher-effect/moneys_moneyd.webp",
       "sha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
-      "sizeBytes": 18924,
-      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
-      "sourceUrl": "data/question-assets/fisher-effect/moneys_moneyd.webp"
+      "sizeBytes": 18924
     },
     {
       "conceptId": "inflation-costs",
       "filename": "moneys_moneyd.webp",
+      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
+      "sourceUrl": "data/question-assets/inflation-costs/moneys_moneyd.webp",
       "runtimePath": "question-assets/inflation-costs/moneys_moneyd.webp",
       "sha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
-      "sizeBytes": 18924,
-      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
-      "sourceUrl": "data/question-assets/inflation-costs/moneys_moneyd.webp"
+      "sizeBytes": 18924
     },
     {
       "conceptId": "inflation-tax-and-deflation",
       "filename": "moneys_moneyd.webp",
+      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
+      "sourceUrl": "data/question-assets/inflation-tax-and-deflation/moneys_moneyd.webp",
       "runtimePath": "question-assets/inflation-tax-and-deflation/moneys_moneyd.webp",
       "sha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
-      "sizeBytes": 18924,
-      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
-      "sourceUrl": "data/question-assets/inflation-tax-and-deflation/moneys_moneyd.webp"
+      "sizeBytes": 18924
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
       "filename": "ad_ms_md.webp",
+      "sourceAssetPath": "question-assets/ad_ms_md.webp",
+      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/ad_ms_md.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/ad_ms_md.webp",
       "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
-      "sizeBytes": 74646,
-      "sourceAssetPath": "question-assets/ad_ms_md.webp",
-      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/ad_ms_md.webp"
+      "sizeBytes": 74646
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
       "filename": "adaslras.webp",
+      "sourceAssetPath": "question-assets/adaslras.webp",
+      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/adaslras.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/adaslras.webp",
       "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-      "sizeBytes": 36412,
-      "sourceAssetPath": "question-assets/adaslras.webp",
-      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/adaslras.webp"
+      "sizeBytes": 36412
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
       "filename": "lrpc.webp",
+      "sourceAssetPath": "question-assets/lrpc.webp",
+      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/lrpc.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
-      "sizeBytes": 77908,
-      "sourceAssetPath": "question-assets/lrpc.webp",
-      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/lrpc.webp"
+      "sizeBytes": 77908
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
       "filename": "moneyd2_moneys2.webp",
+      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
+      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/moneyd2_moneys2.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/moneyd2_moneys2.webp",
       "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
-      "sizeBytes": 21712,
-      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
-      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/moneyd2_moneys2.webp"
+      "sizeBytes": 21712
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
       "filename": "srpc.webp",
+      "sourceAssetPath": "question-assets/srpc.webp",
+      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/srpc.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/srpc.webp",
       "sha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
-      "sizeBytes": 34252,
-      "sourceAssetPath": "question-assets/srpc.webp",
-      "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/srpc.webp"
+      "sizeBytes": 34252
     },
     {
       "conceptId": "liquidity-preference-and-money-market",
       "filename": "ad_ms_md.webp",
+      "sourceAssetPath": "question-assets/ad_ms_md.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/ad_ms_md.webp",
       "runtimePath": "question-assets/liquidity-preference-and-money-market/ad_ms_md.webp",
       "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
-      "sizeBytes": 74646,
-      "sourceAssetPath": "question-assets/ad_ms_md.webp",
-      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/ad_ms_md.webp"
+      "sizeBytes": 74646
     },
     {
       "conceptId": "liquidity-preference-and-money-market",
       "filename": "moneyd2_moneys2.webp",
+      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/moneyd2_moneys2.webp",
       "runtimePath": "question-assets/liquidity-preference-and-money-market/moneyd2_moneys2.webp",
       "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
-      "sizeBytes": 21712,
-      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
-      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/moneyd2_moneys2.webp"
+      "sizeBytes": 21712
     },
     {
       "conceptId": "long-run-macroeconomic-adjustment",
       "filename": "adaslras.webp",
+      "sourceAssetPath": "question-assets/adaslras.webp",
+      "sourceUrl": "data/question-assets/long-run-macroeconomic-adjustment/adaslras.webp",
       "runtimePath": "question-assets/long-run-macroeconomic-adjustment/adaslras.webp",
       "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-      "sizeBytes": 36412,
-      "sourceAssetPath": "question-assets/adaslras.webp",
-      "sourceUrl": "data/question-assets/long-run-macroeconomic-adjustment/adaslras.webp"
+      "sizeBytes": 36412
     },
     {
       "conceptId": "long-run-phillips-curve",
       "filename": "lrpc.webp",
+      "sourceAssetPath": "question-assets/lrpc.webp",
+      "sourceUrl": "data/question-assets/long-run-phillips-curve/lrpc.webp",
       "runtimePath": "question-assets/long-run-phillips-curve/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
-      "sizeBytes": 77908,
-      "sourceAssetPath": "question-assets/lrpc.webp",
-      "sourceUrl": "data/question-assets/long-run-phillips-curve/lrpc.webp"
+      "sizeBytes": 77908
     },
     {
       "conceptId": "long-run-phillips-curve",
       "filename": "srpc.webp",
+      "sourceAssetPath": "question-assets/srpc.webp",
+      "sourceUrl": "data/question-assets/long-run-phillips-curve/srpc.webp",
       "runtimePath": "question-assets/long-run-phillips-curve/srpc.webp",
       "sha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
-      "sizeBytes": 34252,
-      "sourceAssetPath": "question-assets/srpc.webp",
-      "sourceUrl": "data/question-assets/long-run-phillips-curve/srpc.webp"
+      "sizeBytes": 34252
     },
     {
       "conceptId": "macroeconomic-equilibrium-and-shocks",
       "filename": "adas1.webp",
+      "sourceAssetPath": "question-assets/adas1.webp",
+      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/adas1.webp",
       "runtimePath": "question-assets/macroeconomic-equilibrium-and-shocks/adas1.webp",
       "sha256": "3c290b2dbf82d7b042ee913f39efaa935f0740f5b3208ff497b7a7451335475f",
-      "sizeBytes": 36032,
-      "sourceAssetPath": "question-assets/adas1.webp",
-      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/adas1.webp"
+      "sizeBytes": 36032
     },
     {
       "conceptId": "macroeconomic-equilibrium-and-shocks",
       "filename": "adaslras.webp",
+      "sourceAssetPath": "question-assets/adaslras.webp",
+      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/adaslras.webp",
       "runtimePath": "question-assets/macroeconomic-equilibrium-and-shocks/adaslras.webp",
       "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-      "sizeBytes": 36412,
-      "sourceAssetPath": "question-assets/adaslras.webp",
-      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/adaslras.webp"
+      "sizeBytes": 36412
     },
     {
       "conceptId": "market-equilibrium",
       "filename": "ceilingfloor.webp",
+      "sourceAssetPath": "question-assets/ceilingfloor.webp",
+      "sourceUrl": "data/question-assets/market-equilibrium/ceilingfloor.webp",
       "runtimePath": "question-assets/market-equilibrium/ceilingfloor.webp",
       "sha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
-      "sizeBytes": 93958,
-      "sourceAssetPath": "question-assets/ceilingfloor.webp",
-      "sourceUrl": "data/question-assets/market-equilibrium/ceilingfloor.webp"
+      "sizeBytes": 93958
     },
     {
       "conceptId": "market-equilibrium",
       "filename": "supplydemand1.webp",
+      "sourceAssetPath": "question-assets/supplydemand1.webp",
+      "sourceUrl": "data/question-assets/market-equilibrium/supplydemand1.webp",
       "runtimePath": "question-assets/market-equilibrium/supplydemand1.webp",
       "sha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
-      "sizeBytes": 95910,
-      "sourceAssetPath": "question-assets/supplydemand1.webp",
-      "sourceUrl": "data/question-assets/market-equilibrium/supplydemand1.webp"
+      "sizeBytes": 95910
     },
     {
       "conceptId": "monetary-neutrality",
       "filename": "moneys_moneyd.webp",
+      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
+      "sourceUrl": "data/question-assets/monetary-neutrality/moneys_moneyd.webp",
       "runtimePath": "question-assets/monetary-neutrality/moneys_moneyd.webp",
       "sha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
-      "sizeBytes": 18924,
-      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
-      "sourceUrl": "data/question-assets/monetary-neutrality/moneys_moneyd.webp"
+      "sizeBytes": 18924
     },
     {
       "conceptId": "monetary-policy-transmission",
       "filename": "ad_ms_md.webp",
+      "sourceAssetPath": "question-assets/ad_ms_md.webp",
+      "sourceUrl": "data/question-assets/monetary-policy-transmission/ad_ms_md.webp",
       "runtimePath": "question-assets/monetary-policy-transmission/ad_ms_md.webp",
       "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
-      "sizeBytes": 74646,
-      "sourceAssetPath": "question-assets/ad_ms_md.webp",
-      "sourceUrl": "data/question-assets/monetary-policy-transmission/ad_ms_md.webp"
+      "sizeBytes": 74646
     },
     {
       "conceptId": "monetary-policy-transmission",
       "filename": "moneyd2_moneys2.webp",
+      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
+      "sourceUrl": "data/question-assets/monetary-policy-transmission/moneyd2_moneys2.webp",
       "runtimePath": "question-assets/monetary-policy-transmission/moneyd2_moneys2.webp",
       "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
-      "sizeBytes": 21712,
-      "sourceAssetPath": "question-assets/moneyd2_moneys2.webp",
-      "sourceUrl": "data/question-assets/monetary-policy-transmission/moneyd2_moneys2.webp"
+      "sizeBytes": 21712
     },
     {
       "conceptId": "phillips-curve-expectations",
       "filename": "lrpc.webp",
+      "sourceAssetPath": "question-assets/lrpc.webp",
+      "sourceUrl": "data/question-assets/phillips-curve-expectations/lrpc.webp",
       "runtimePath": "question-assets/phillips-curve-expectations/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
-      "sizeBytes": 77908,
-      "sourceAssetPath": "question-assets/lrpc.webp",
-      "sourceUrl": "data/question-assets/phillips-curve-expectations/lrpc.webp"
+      "sizeBytes": 77908
     },
     {
       "conceptId": "phillips-curve-expectations",
       "filename": "srpc.webp",
+      "sourceAssetPath": "question-assets/srpc.webp",
+      "sourceUrl": "data/question-assets/phillips-curve-expectations/srpc.webp",
       "runtimePath": "question-assets/phillips-curve-expectations/srpc.webp",
       "sha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
-      "sizeBytes": 34252,
-      "sourceAssetPath": "question-assets/srpc.webp",
-      "sourceUrl": "data/question-assets/phillips-curve-expectations/srpc.webp"
+      "sizeBytes": 34252
     },
     {
       "conceptId": "production-possibilities-frontier",
       "filename": "ppf.webp",
+      "sourceAssetPath": "question-assets/ppf.webp",
+      "sourceUrl": "data/question-assets/production-possibilities-frontier/ppf.webp",
       "runtimePath": "question-assets/production-possibilities-frontier/ppf.webp",
       "sha256": "961e4a0c034de2ee5662f004cb0a343825290ca663dbe80b9ae6ad7dd0617a5a",
-      "sizeBytes": 41172,
-      "sourceAssetPath": "question-assets/ppf.webp",
-      "sourceUrl": "data/question-assets/production-possibilities-frontier/ppf.webp"
+      "sizeBytes": 41172
     },
     {
       "conceptId": "quantity-theory-of-money",
       "filename": "moneys_moneyd.webp",
+      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
+      "sourceUrl": "data/question-assets/quantity-theory-of-money/moneys_moneyd.webp",
       "runtimePath": "question-assets/quantity-theory-of-money/moneys_moneyd.webp",
       "sha256": "ea41329741bea54c32cea0b8bac73dafe3faa8b34ef26e3be6bc5891376a00cc",
-      "sizeBytes": 18924,
-      "sourceAssetPath": "question-assets/moneys_moneyd.webp",
-      "sourceUrl": "data/question-assets/quantity-theory-of-money/moneys_moneyd.webp"
+      "sizeBytes": 18924
     },
     {
       "conceptId": "short-run-phillips-curve",
       "filename": "lrpc.webp",
+      "sourceAssetPath": "question-assets/lrpc.webp",
+      "sourceUrl": "data/question-assets/short-run-phillips-curve/lrpc.webp",
       "runtimePath": "question-assets/short-run-phillips-curve/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
-      "sizeBytes": 77908,
-      "sourceAssetPath": "question-assets/lrpc.webp",
-      "sourceUrl": "data/question-assets/short-run-phillips-curve/lrpc.webp"
+      "sizeBytes": 77908
     },
     {
       "conceptId": "short-run-phillips-curve",
       "filename": "srpc.webp",
+      "sourceAssetPath": "question-assets/srpc.webp",
+      "sourceUrl": "data/question-assets/short-run-phillips-curve/srpc.webp",
       "runtimePath": "question-assets/short-run-phillips-curve/srpc.webp",
       "sha256": "e92de597a9250e9c0a83c011002a4738ceabdfa900575a2cda2734591b981e62",
-      "sizeBytes": 34252,
-      "sourceAssetPath": "question-assets/srpc.webp",
-      "sourceUrl": "data/question-assets/short-run-phillips-curve/srpc.webp"
+      "sizeBytes": 34252
     },
     {
       "conceptId": "stabilization-policy",
       "filename": "ad_ms_md.webp",
+      "sourceAssetPath": "question-assets/ad_ms_md.webp",
+      "sourceUrl": "data/question-assets/stabilization-policy/ad_ms_md.webp",
       "runtimePath": "question-assets/stabilization-policy/ad_ms_md.webp",
       "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
-      "sizeBytes": 74646,
-      "sourceAssetPath": "question-assets/ad_ms_md.webp",
-      "sourceUrl": "data/question-assets/stabilization-policy/ad_ms_md.webp"
+      "sizeBytes": 74646
     },
     {
       "conceptId": "stabilization-policy",
       "filename": "moneymultiplier.webp",
+      "sourceAssetPath": "question-assets/moneymultiplier.webp",
+      "sourceUrl": "data/question-assets/stabilization-policy/moneymultiplier.webp",
       "runtimePath": "question-assets/stabilization-policy/moneymultiplier.webp",
       "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
-      "sizeBytes": 52684,
-      "sourceAssetPath": "question-assets/moneymultiplier.webp",
-      "sourceUrl": "data/question-assets/stabilization-policy/moneymultiplier.webp"
+      "sizeBytes": 52684
     },
     {
       "conceptId": "statutory-versus-economic-tax-incidence",
       "filename": "taxincidence.webp",
+      "sourceAssetPath": "question-assets/taxincidence.webp",
+      "sourceUrl": "data/question-assets/statutory-versus-economic-tax-incidence/taxincidence.webp",
       "runtimePath": "question-assets/statutory-versus-economic-tax-incidence/taxincidence.webp",
       "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
-      "sizeBytes": 110816,
-      "sourceAssetPath": "question-assets/taxincidence.webp",
-      "sourceUrl": "data/question-assets/statutory-versus-economic-tax-incidence/taxincidence.webp"
+      "sizeBytes": 110816
     },
     {
       "conceptId": "supply",
       "filename": "supplydemand1.webp",
+      "sourceAssetPath": "question-assets/supplydemand1.webp",
+      "sourceUrl": "data/question-assets/supply/supplydemand1.webp",
       "runtimePath": "question-assets/supply/supplydemand1.webp",
       "sha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
-      "sizeBytes": 95910,
-      "sourceAssetPath": "question-assets/supplydemand1.webp",
-      "sourceUrl": "data/question-assets/supply/supplydemand1.webp"
+      "sizeBytes": 95910
     },
     {
       "conceptId": "tax-incidence",
       "filename": "taxincidence.webp",
+      "sourceAssetPath": "question-assets/taxincidence.webp",
+      "sourceUrl": "data/question-assets/tax-incidence/taxincidence.webp",
       "runtimePath": "question-assets/tax-incidence/taxincidence.webp",
       "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
-      "sizeBytes": 110816,
-      "sourceAssetPath": "question-assets/taxincidence.webp",
-      "sourceUrl": "data/question-assets/tax-incidence/taxincidence.webp"
+      "sizeBytes": 110816
     },
     {
       "conceptId": "tax-wedges-and-revenue",
       "filename": "taxincidence.webp",
+      "sourceAssetPath": "question-assets/taxincidence.webp",
+      "sourceUrl": "data/question-assets/tax-wedges-and-revenue/taxincidence.webp",
       "runtimePath": "question-assets/tax-wedges-and-revenue/taxincidence.webp",
       "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
-      "sizeBytes": 110816,
-      "sourceAssetPath": "question-assets/taxincidence.webp",
-      "sourceUrl": "data/question-assets/tax-wedges-and-revenue/taxincidence.webp"
+      "sizeBytes": 110816
     }
   ],
-  "canonicalQuestionCount": 3030,
-  "conceptCount": 64,
-  "librarySha256": "378bd3539034156feca7bfd34e9622cd56732e4f5ca1a76e2c11a45a52712374",
-  "libraryVersion": "phase5.2b-stage4-final-rescue",
-  "phase5_2aExpandedConcepts": [
-    "scarcity-and-tradeoffs",
-    "opportunity-cost",
-    "marginal-analysis",
-    "cpi-and-inflation-measurement",
-    "bank-money-creation",
-    "fiscal-policy-and-aggregate-demand",
-    "aggregate-demand",
-    "aggregate-supply"
-  ],
-  "phase5_2aNewQuestions": 228,
-  "schemaVersion": "1.2.0",
-  "sourceRegistrySha256": "8bd39e2381c5365e6968262ba7e142c076edf7e4baf0269a8b930bee4ccff759",
-  "phase5_2bRescuedConcepts": [
-    "gains-from-trade",
-    "economist-policy-role",
-    "competitive-markets",
-    "price-signals",
-    "models-and-assumptions",
-    "market-failures",
-    "micro-versus-macro",
-    "incentives"
-  ],
-  "phase5_2bNewQuestions": 159,
-  "coverageStatusCounts": {
-    "ready-focused": 24,
-    "best-paired": 28,
-    "supplemental-ready": 12
-  },
-  "phase5_2bStage1RescuedConcepts": [
-    "long-run-phillips-curve",
-    "disinflation-and-policy",
-    "natural-rate-of-unemployment",
-    "indexing-and-real-values",
-    "central-bank-and-federal-reserve",
-    "real-versus-nominal-interest-rates",
-    "long-run-macroeconomic-adjustment"
-  ],
-  "phase5_2bStage1NewQuestions": 36,
-  "phase5_2bStage2RescuedConcepts": [
-    "supply",
-    "real-versus-nominal-gdp",
-    "short-run-phillips-curve",
-    "economic-growth-policy",
-    "phillips-curve-expectations",
-    "living-standards-and-growth",
-    "labor-market-institutions"
-  ],
-  "phase5_2bStage2NewQuestions": 45,
-  "phase5_2bStage3RescuedConcepts": [
-    "demand",
-    "macroeconomic-equilibrium-and-shocks",
-    "money-functions-and-measures",
-    "monetary-policy-tools",
-    "liquidity-preference-and-money-market",
-    "gdp-measurement",
-    "market-equilibrium"
-  ],
-  "phase5_2bStage3NewQuestions": 70,
-  "phase5_2bStage4RescuedConcepts": [
-    "monetary-policy-transmission",
-    "fiscal-multipliers-and-crowding-out",
-    "production-possibilities-frontier",
-    "stabilization-policy",
-    "quantity-theory-of-money",
-    "unemployment-measurement",
-    "integrated-economic-analysis"
-  ],
-  "phase5_2bStage4NewQuestions": 45
+  "conceptCount": 66,
+  "canonicalQuestionCount": 3770,
+  "libraryVersion": "phase6.2c-consumer-and-producer-surplus-rich-bank-v1.1-graph-cleanup",
+  "librarySha256": "7525ce60707c0cc7f4c1641d7ab2377fad4f3e1476f7a8e441a9153b6365b8cc",
+  "generatedAt": "2026-08-05T00:28:36Z"
 }

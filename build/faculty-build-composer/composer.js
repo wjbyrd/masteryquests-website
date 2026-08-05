@@ -39,7 +39,7 @@ const GENERAL_IDS = new Set([
   'gains-from-trade', 'market-failures', 'models-and-assumptions',
   'production-possibilities-frontier', 'micro-versus-macro',
   'positive-versus-normative-analysis', 'economist-policy-role',
-  'integrated-economic-analysis'
+  'integrated-economic-analysis', 'elasticity'
 ]);
 
 const MICRO_IDS = new Set([
@@ -49,7 +49,7 @@ const MICRO_IDS = new Set([
   'market-equilibrium', 'price-signals', 'binding-price-ceilings',
   'binding-price-floors', 'tax-wedges-and-revenue',
   'statutory-versus-economic-tax-incidence', 'tax-incidence',
-  'integrated-economic-analysis'
+  'integrated-economic-analysis', 'elasticity', 'consumer-and-producer-surplus'
 ]);
 
 const MACRO_IDS = new Set();
@@ -70,7 +70,7 @@ const PRESETS = [
     title: 'Market fundamentals',
     description: 'Demand, supply, equilibrium, price signals, controls, and taxes.',
     conceptIds: [
-      'competitive-markets', 'demand', 'supply', 'market-equilibrium', 'price-signals',
+      'competitive-markets', 'demand', 'supply', 'market-equilibrium', 'consumer-and-producer-surplus', 'price-signals',
       'binding-price-ceilings', 'binding-price-floors', 'tax-wedges-and-revenue',
       'statutory-versus-economic-tax-incidence', 'tax-incidence'
     ]
