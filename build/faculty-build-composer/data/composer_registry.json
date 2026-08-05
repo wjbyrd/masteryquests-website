@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-05T02:22:05Z",
+  "generatedAt": "2026-08-05T13:29:31Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -785,6 +785,113 @@
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
       "coverageFloorVersion": "phase6.2c-rich-v1"
+    },
+    {
+      "canonicalConceptId": "costs-of-production",
+      "title": "Costs of Production",
+      "description": "Analyze economic and accounting costs, short-run production, fixed and variable costs, marginal and average cost curves, productivity, sunk costs, long-run scale, and minimum efficient scale.",
+      "includedSkills": [
+        "accounting_profit",
+        "average_fixed_cost",
+        "average_product",
+        "average_total_cost",
+        "average_variable_cost",
+        "avoidable_cost",
+        "constant_returns_to_scale",
+        "cost_curve_relationships",
+        "cost_schedule_completion",
+        "diminishing_marginal_product",
+        "diseconomies_of_scale",
+        "economic_profit",
+        "economies_of_scale",
+        "explicit_cost",
+        "fixed_cost",
+        "fixed_variable_inputs",
+        "implicit_cost",
+        "integrated_cost_analysis",
+        "long_run_average_cost",
+        "marginal_average_relationship",
+        "marginal_cost",
+        "marginal_product",
+        "marginal_product_marginal_cost",
+        "minimum_efficient_scale",
+        "normal_profit",
+        "opportunity_cost_firm",
+        "production_function",
+        "short_run_cost_analysis",
+        "short_run_long_run",
+        "sunk_cost",
+        "total_cost",
+        "total_product",
+        "variable_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Perfect-competition output choice, shutdown, entry, and exit belong to perfect-competition.",
+        "Monopoly pricing and MR=MC applications belong to monopoly.",
+        "Monopolistic competition, oligopoly, and game theory belong to their market-structure modules.",
+        "Isoquant, isocost, and calculus-based cost minimization are excluded from the Principles bank."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "productivity",
+        "perfect-competition",
+        "factor-markets",
+        "consumer-and-producer-surplus",
+        "supply",
+        "monopoly"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.1",
+        "COP.2",
+        "COP.3",
+        "COP.4",
+        "COP.5",
+        "COP.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 90,
+        "elite": 30,
+        "legendary": 90,
+        "calculation": 30,
+        "boss": 54,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "bridge": 20,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 48,
+        "elite": 30,
+        "hard": 78,
+        "legendary": 126,
+        "medium": 48,
+        "unknown": 40
+      },
+      "repairCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 20,
+        "mainWithUsableSkill": 330
+      },
+      "calculationCoverage": 30,
+      "graphCoverage": 141,
+      "status": "active",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2e. Cost machinery is taught before market-structure decision rules. Graph labels are offset from curves.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageFloorVersion": "phase6.2e-rich-v1"
     },
     {
       "canonicalConceptId": "cpi-and-inflation-measurement",
@@ -6369,6 +6476,6 @@
       "coverageFloorVersion": "phase5.2b-v1"
     }
   ],
-  "curationPhase": "6.2d",
-  "curationSummary": "Phase 6.2d adds the publisher-scale International Trade and Trade Policy bank following Consumer and Producer Surplus."
+  "curationPhase": "6.2e",
+  "curationSummary": "Phase 6.2e adds the publisher-scale Costs of Production bank before the market-structure sequence."
 }

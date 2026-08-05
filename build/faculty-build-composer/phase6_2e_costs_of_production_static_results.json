@@ -1,0 +1,378 @@
+{
+  "ok": true,
+  "generatedAt": "2026-08-05T13:29:31Z",
+  "poolCounts": {
+    "easy": 30,
+    "medium": 30,
+    "hard": 30,
+    "elite": 30,
+    "legendary": 90,
+    "calculation": 30,
+    "repair": 20,
+    "bridge": 20,
+    "easyBoss": 18,
+    "mediumBoss": 18,
+    "finalBoss": 18,
+    "legendaryBoss": 36
+  },
+  "total": 370,
+  "uniqueIds": 370,
+  "uniqueNormalizedStems": 370,
+  "answerPositionCounts": {
+    "0": 93,
+    "1": 93,
+    "2": 92,
+    "3": 92
+  },
+  "answerHashFailures": [],
+  "duplicateOptionQuestions": [],
+  "syntheticOptionSuffixHits": [],
+  "answerLengthBias": {
+    "correctIsLongest": 160,
+    "correctIsUniquelyLongest": 111,
+    "shareUniquelyLongest": 0.3,
+    "controlledAdjustments": 40
+  },
+  "nearDuplicatePairsAt092": 47,
+  "nearDuplicateReview": [
+    {
+      "id1": 680000,
+      "id2": 680001,
+      "ratio": 0.935,
+      "stem1": "Which item is an explicit cost?",
+      "stem2": "Which item is an implicit cost?"
+    },
+    {
+      "id1": 680022,
+      "id2": 680125,
+      "ratio": 0.944,
+      "stem1": "MC crosses ATC at:",
+      "stem2": "MC crosses AVC at:"
+    },
+    {
+      "id1": 680027,
+      "id2": 680028,
+      "ratio": 0.952,
+      "stem1": "Economies of scale mean LRATC:",
+      "stem2": "Diseconomies of scale mean LRATC:"
+    },
+    {
+      "id1": 681026,
+      "id2": 681038,
+      "ratio": 0.964,
+      "stem1": "Cost schedule 1: Northstar Bakery has Q=20, TFC=$240, and 2 workers at $120. The previous output was 8. Which row is internally consistent?",
+      "stem2": "Cost schedule 13: Northstar Bakery has Q=34, TFC=$240, and 3 workers at $120. The previous output was 20. Which row is internally consistent?"
+    },
+    {
+      "id1": 681027,
+      "id2": 681039,
+      "ratio": 0.933,
+      "stem1": "Cost schedule 2: At Q=29, Ironwood Furniture has AVC=$13.97 and ATC=$24.31. What fixed-cost conclusion follows?",
+      "stem2": "Cost schedule 14: At Q=41, Ironwood Furniture has AVC=$13.17 and ATC=$20.49. What fixed-cost conclusion follows?"
+    },
+    {
+      "id1": 681028,
+      "id2": 681040,
+      "ratio": 0.972,
+      "stem1": "Cost schedule 3: Harbor Roasters TFC rises by $120 while Q=47 and variable spending are unchanged. Which result is correct?",
+      "stem2": "Cost schedule 15: Harbor Roasters TFC rises by $120 while Q=56 and variable spending are unchanged. Which result is correct?"
+    },
+    {
+      "id1": 681029,
+      "id2": 681041,
+      "ratio": 0.961,
+      "stem1": "Cost schedule 4: Cedar Trail Bikes has Q=54, TFC=$420, and 5 workers at $150. The previous output was 45. Which row is internally consistent?",
+      "stem2": "Cost schedule 16: Cedar Trail Bikes has Q=60, TFC=$420, and 6 workers at $150. The previous output was 54. Which row is internally consistent?"
+    },
+    {
+      "id1": 681030,
+      "id2": 681042,
+      "ratio": 0.942,
+      "stem1": "Cost schedule 5: At Q=61, Blue Peak Printing has AVC=$10.82 and ATC=$14.26. What fixed-cost conclusion follows?",
+      "stem2": "Cost schedule 17: At Q=67, Blue Peak Printing has AVC=$11.49 and ATC=$14.63. What fixed-cost conclusion follows?"
+    },
+    {
+      "id1": 681031,
+      "id2": 681043,
+      "ratio": 0.98,
+      "stem1": "Cost schedule 6: Riverbend Textiles TFC rises by $120 while Q=80 and variable spending are unchanged. Which result is correct?",
+      "stem2": "Cost schedule 18: Riverbend Textiles TFC rises by $120 while Q=85 and variable spending are unchanged. Which result is correct?"
+    },
+    {
+      "id1": 681044,
+      "id2": 681046,
+      "ratio": 0.935,
+      "stem1": "Curve case 1: MC is below both AVC and ATC. Which direction pair is correct?",
+      "stem2": "Curve case 3: MC lies above both AVC and ATC. Which direction pair is correct?"
+    },
+    {
+      "id1": 681064,
+      "id2": 681065,
+      "ratio": 0.944,
+      "stem1": "Shift case 5: Automation raises TFC $20,000 and lowers AVC $4. At Q=2,000, what happens to ATC?",
+      "stem2": "Shift case 6: Automation raises TFC by $20,000 and lowers AVC by $4. At Q=10,000, what happens to ATC?"
+    },
+    {
+      "id1": 681070,
+      "id2": 681071,
+      "ratio": 0.965,
+      "stem1": "Long-run case 1: All inputs rise 25% and output rises 40%. Which classification fits?",
+      "stem2": "Long-run case 2: All inputs rise 50% and output rises 50%. Which classification fits?"
+    },
+    {
+      "id1": 681083,
+      "id2": 681084,
+      "ratio": 0.947,
+      "stem1": "Long-run case 14: Output doubles while long-run total cost rises only 70%. What happens to LRATC?",
+      "stem2": "Long-run case 15: Output doubles while long-run total cost rises 140%. What happens to LRATC?"
+    },
+    {
+      "id1": 684214,
+      "id2": 684215,
+      "ratio": 0.971,
+      "stem1": "Which long-run force can create diseconomies of scale?",
+      "stem2": "Which long-run force can create economies of scale?"
+    },
+    {
+      "id1": 685002,
+      "id2": 685005,
+      "ratio": 0.929,
+      "stem1": "Boss audit 1C — Northstar Bakery: At unchanged output Q=34, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 2C — Ironwood Furniture: At unchanged output Q=41, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685002,
+      "id2": 685008,
+      "ratio": 0.931,
+      "stem1": "Boss audit 1C — Northstar Bakery: At unchanged output Q=34, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685002,
+      "id2": 685011,
+      "ratio": 0.926,
+      "stem1": "Boss audit 1C — Northstar Bakery: At unchanged output Q=34, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685002,
+      "id2": 685020,
+      "ratio": 0.925,
+      "stem1": "Boss audit 1C — Northstar Bakery: At unchanged output Q=34, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685002,
+      "id2": 685035,
+      "ratio": 0.923,
+      "stem1": "Boss audit 1C — Northstar Bakery: At unchanged output Q=34, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685005,
+      "id2": 685017,
+      "ratio": 0.924,
+      "stem1": "Boss audit 2C — Ironwood Furniture: At unchanged output Q=41, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 6C — Riverbend Textiles: At unchanged output Q=53, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685005,
+      "id2": 685020,
+      "ratio": 0.931,
+      "stem1": "Boss audit 2C — Ironwood Furniture: At unchanged output Q=41, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685005,
+      "id2": 685035,
+      "ratio": 0.923,
+      "stem1": "Boss audit 2C — Ironwood Furniture: At unchanged output Q=41, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685008,
+      "id2": 685011,
+      "ratio": 0.929,
+      "stem1": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685008,
+      "id2": 685017,
+      "ratio": 0.932,
+      "stem1": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 6C — Riverbend Textiles: At unchanged output Q=53, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685008,
+      "id2": 685020,
+      "ratio": 0.933,
+      "stem1": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685008,
+      "id2": 685026,
+      "ratio": 0.926,
+      "stem1": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 9C — Maple Street Media: At unchanged output Q=26, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685008,
+      "id2": 685029,
+      "ratio": 0.921,
+      "stem1": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 10C — Granite Toolworks: At unchanged output Q=52, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685008,
+      "id2": 685032,
+      "ratio": 0.926,
+      "stem1": "Boss audit 3C — Harbor Roasters: At unchanged output Q=56, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 11C — Lakeside Ceramics: At unchanged output Q=58, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685011,
+      "id2": 685017,
+      "ratio": 0.932,
+      "stem1": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 6C — Riverbend Textiles: At unchanged output Q=53, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685011,
+      "id2": 685020,
+      "ratio": 0.923,
+      "stem1": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685011,
+      "id2": 685029,
+      "ratio": 0.921,
+      "stem1": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 10C — Granite Toolworks: At unchanged output Q=52, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685011,
+      "id2": 685032,
+      "ratio": 0.921,
+      "stem1": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 11C — Lakeside Ceramics: At unchanged output Q=58, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685011,
+      "id2": 685035,
+      "ratio": 0.92,
+      "stem1": "Boss audit 4C — Cedar Trail Bikes: At unchanged output Q=60, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685014,
+      "id2": 685020,
+      "ratio": 0.92,
+      "stem1": "Boss audit 5C — Blue Peak Printing: At unchanged output Q=31, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685017,
+      "id2": 685020,
+      "ratio": 0.931,
+      "stem1": "Boss audit 6C — Riverbend Textiles: At unchanged output Q=53, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685017,
+      "id2": 685029,
+      "ratio": 0.929,
+      "stem1": "Boss audit 6C — Riverbend Textiles: At unchanged output Q=53, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 10C — Granite Toolworks: At unchanged output Q=52, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685017,
+      "id2": 685035,
+      "ratio": 0.923,
+      "stem1": "Boss audit 6C — Riverbend Textiles: At unchanged output Q=53, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685020,
+      "id2": 685023,
+      "ratio": 0.923,
+      "stem1": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 8C — Summit Glassworks: At unchanged output Q=79, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685020,
+      "id2": 685029,
+      "ratio": 0.942,
+      "stem1": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 10C — Granite Toolworks: At unchanged output Q=52, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685020,
+      "id2": 685032,
+      "ratio": 0.926,
+      "stem1": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 11C — Lakeside Ceramics: At unchanged output Q=58, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685020,
+      "id2": 685035,
+      "ratio": 0.93,
+      "stem1": "Boss audit 7C — Juniper Foods: At unchanged output Q=54, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685023,
+      "id2": 685029,
+      "ratio": 0.937,
+      "stem1": "Boss audit 8C — Summit Glassworks: At unchanged output Q=79, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 10C — Granite Toolworks: At unchanged output Q=52, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685023,
+      "id2": 685035,
+      "ratio": 0.92,
+      "stem1": "Boss audit 8C — Summit Glassworks: At unchanged output Q=79, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685026,
+      "id2": 685035,
+      "ratio": 0.923,
+      "stem1": "Boss audit 9C — Maple Street Media: At unchanged output Q=26, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685027,
+      "id2": 685033,
+      "ratio": 0.921,
+      "stem1": "Boss audit 10A — Granite Toolworks: Revenue=$298,000; explicit cost=$188,000; forgone salary=$60,000; forgone capital income=$21,000. Which complete audit is correct?",
+      "stem2": "Boss audit 12A — Prairie Solar: Revenue=$329,000; explicit cost=$211,000; forgone salary=$64,000; forgone capital income=$24,000. Which complete audit is correct?"
+    },
+    {
+      "id1": 685029,
+      "id2": 685035,
+      "ratio": 0.951,
+      "stem1": "Boss audit 10C — Granite Toolworks: At unchanged output Q=52, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    },
+    {
+      "id1": 685032,
+      "id2": 685035,
+      "ratio": 0.923,
+      "stem1": "Boss audit 11C — Lakeside Ceramics: At unchanged output Q=58, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?",
+      "stem2": "Boss audit 12C — Prairie Solar: At unchanged output Q=85, an annual fixed fee adds $240 and the wage per worker rises $15. Productivity is unchanged. Which new cost row is correct?"
+    }
+  ],
+  "graphLinkedQuestions": 141,
+  "graphAssets": 59,
+  "missingGraphAssets": [],
+  "prohibitedLaterModelHits": [],
+  "sourceIdCollisions": [],
+  "formulaChecks": {
+    "TC_equals_TFC_plus_TVC": "generator-enforced",
+    "ATC_equals_AFC_plus_AVC": "generator-enforced",
+    "MC_uses_delta_quantity": "generator-enforced"
+  }
+}
