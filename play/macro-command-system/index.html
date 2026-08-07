@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Macro Command System</title>
+<!-- REALM UPGRADE TRANSFER v3: non-theme hub upgrades ported from The Economic Realm, including achievement tracking. -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
+  *{
+    box-sizing:border-box;
+  }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    background:#000;
+    color:#fff;
+    font-family:'Caudex', Georgia, 'Times New Roman', serif;
+    overflow:hidden;
+  }
+
+  button,
+  input{
+    font:inherit;
+  }
+
+  #splashScreen{
+    position:fixed;
+    inset:0;
+    z-index:30;
+    background:
+      linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.05)),
+      url('titlescreen.webp');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:1;
+    transition:opacity 1s ease, visibility 1s ease;
+  }
+
+  @media (max-width: 768px){
+  #splashScreen{
+    background-image: url('titlescreen_mobile.webp');
+    background-size: cover;
+    background-position: center;
+    }
+  }
+
+  #splashScreen.hidden{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+
+.splash-status{
+  position:fixed;
+  right:34px;
+  bottom:26px;
+  padding:10px 14px;
+  border-radius:999px;
+  font-size:13px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:rgba(18,35,64,.92);
+  background:rgba(255,248,235,.72);
+  border:1px solid rgba(32,65,110,.18);
+  text-shadow:none;
+  box-shadow:0 4px 18px rgba(0,0,0,.10);
+  animation:statusPulse 1.8s ease-in-out infinite;
+}
+
+  .splash-enter{
+    position:fixed;
+    left:50%;
+    bottom:72px;
+    z-index:31;
+    transform:translateX(-50%);
+    display:none;
+    padding:14px 26px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.28);
+    background:rgba(0,0,0,.42);
+    color:rgba(255,255,255,.84);
+    cursor:pointer;
+    font-size:13px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    text-shadow:0 0 8px rgba(0,0,0,.8);
+    box-shadow:0 0 22px rgba(0,0,0,.55), inset 0 0 18px rgba(255,255,255,.04);
+    opacity:0;
+    transition:opacity .65s ease, transform .18s ease, border-color .18s ease, background .18s ease;
+  }
+
+  #splashScreen.ready .splash-enter{
+    display:block;
+    opacity:1;
+  }
+
+  .splash-enter:hover{
+    transform:translateX(-50%) translateY(-2px);
+    border-color:rgba(255,255,255,.55);
+    background:rgba(255,255,255,.08);
+    color:#fff;
+  }
+
+  .sound-toggle{
+    position:fixed;
+    right:28px;
+    bottom:68px;
+    z-index:12;
+    display:none;
+    padding:10px 13px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.22);
+    background:rgba(0,0,0,.46);
+    color:rgba(255,255,255,.72);
+    cursor:pointer;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    box-shadow:0 0 18px rgba(0,0,0,.45);
+  }
+
+  .sound-toggle.visible{
+    display:block;
+  }
+
+  /* Sound is controlled from the Macro Menu; keep the old standalone button hidden. */
+  #soundToggle.sound-toggle{
+    display:none !important;
+  }
+
+  .sound-toggle:hover{
+    color:#fff;
+    border-color:rgba(255,255,255,.42);
+    background:rgba(255,255,255,.08);
+  }
+
+  .help-button{
+  position:fixed;
+  left:28px;
+  bottom:24px;
+  z-index:12;
+  display:none;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(0,0,0,.46);
+  color:rgba(255,255,255,.72);
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  box-shadow:0 0 18px rgba(0,0,0,.45);
+}
+
+.help-button.visible{
+  display:block;
+}
+
+.help-button:hover{
+  color:#fff;
+  border-color:rgba(255,255,255,.42);
+  background:rgba(255,255,255,.08);
+}
+
+#helpModal{
+  position:fixed;
+  inset:0;
+  z-index:25;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(6px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .22s ease, visibility .22s ease;
+}
+
+#helpModal.active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.help-modal-card{
+  width:min(700px, 100%);
+  background:rgba(0,0,0,.96);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:16px;
+  box-shadow:0 24px 70px rgba(0,0,0,.8);
+  padding:24px 24px 22px;
+}
+
+.help-modal-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:16px;
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.help-modal-title{
+  margin:0;
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.help-close-btn{
+  border:1px solid rgba(255,255,255,.20);
+  background:transparent;
+  color:rgba(255,255,255,.72);
+  border-radius:999px;
+  padding:8px 14px;
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.help-close-btn:hover{
+  color:#fff;
+  border-color:rgba(255,255,255,.42);
+  background:rgba(255,255,255,.06);
+}
+
+.help-modal-body{
+  color:rgba(255,255,255,.82);
+  line-height:1.7;
+  font-size:16px;
+}
+
+.help-modal-body p{
+  margin:0 0 14px;
+}
+
+.help-modal-body ul{
+  margin:0 0 14px 20px;
+  padding:0;
+}
+
+.help-modal-body li{
+  margin-bottom:8px;
+}
+
+  #mainMenu{
+    min-height:100vh;
+    padding:28px 44px 34px;
+    opacity:0;
+    transform:translateY(12px);
+    transition:opacity .9s ease, transform .9s ease;
+    background:
+      radial-gradient(circle at center, rgba(80,110,160,.18), transparent 38%),
+      linear-gradient(180deg, #05070d, #000);
+    overflow-y:auto;
+  }
+
+  #mainMenu.active{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  .menu-shell{
+    width:min(1500px, 100%);
+    margin:0 auto;
+  }
+
+  .menu-header{
+    text-align:center;
+    margin-bottom:24px;
+  }
+
+.menu-kicker{
+  margin:0 0 12px;
+  font-size:16px;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.78);
+}
+
+  .menu-title{
+    margin:0;
+    font-size:clamp(38px, 4vw, 62px);
+    font-weight:700;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:#f4f4f4;
+    text-shadow:0 0 14px rgba(255,255,255,.20), 0 0 34px rgba(120,170,255,.13);
+  }
+
+  .menu-subtitle{
+    max-width:820px;
+    margin:10px auto 0;
+    font-size:15px;
+    line-height:1.45;
+    color:rgba(255,255,255,.68);
+    letter-spacing:.04em;
+  }
+
+.custodian-briefing{
+  max-width:780px;
+  margin:8px auto 0;
+  font-size:13px;
+  line-height:1.3;
+  color:rgba(255,255,255,.70);
+  letter-spacing:.045em;
+}
+
+.realm-status-panel{
+  width:min(680px, 100%);
+  margin:22px auto 0;
+  padding:15px 18px 16px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.16);
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,.08), transparent 55%),
+    rgba(0,0,0,.36);
+  box-shadow:
+    0 0 24px rgba(255,255,255,.06),
+    inset 0 0 20px rgba(255,255,255,.035);
+  text-align:center;
+}
+
+.realm-status-label{
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.52);
+  margin-bottom:6px;
+}
+
+.realm-status-text{
+  font-size:22px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+  font-weight:700;
+}
+
+.realm-status-subtext{
+  max-width:560px;
+  margin:7px auto 0;
+  font-size:13px;
+  line-height:1.45;
+  color:rgba(255,255,255,.58);
+  letter-spacing:.04em;
+}
+
+#mainMenu{
+  position:relative;
+  overflow:hidden;
+}
+
+.menu-video-bg{
+  position:fixed;
+  inset:0;
+  width:100vw;
+  height:100vh;
+  object-fit:cover;
+  pointer-events:none;
+  z-index:1;
+  opacity:.3;
+  mix-blend-mode:screen;
+}
+
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at center, rgba(0,0,0,0) 30%, rgba(0,0,0,.55) 85%);
+  pointer-events:none;
+  z-index:1;
+}
+
+.menu-shell{
+  position:relative;
+  backdrop-filter: blur(1px);
+  z-index:2;
+}
+
+.game-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:18px;
+}
+
+  .game-card{
+    position:relative;
+    min-height:520px;
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:18px;
+    overflow:hidden;
+    background:rgba(4,6,12,.84);
+    box-shadow:0 18px 48px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+
+  .game-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,255,255,.32);
+    box-shadow:0 24px 64px rgba(0,0,0,.7), 0 0 30px rgba(255,255,255,.08), inset 0 0 0 1px rgba(255,255,255,.05);
+  }
+
+  .game-thumb{
+    height:205px;
+    background-size:cover;
+    background-position:center;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .game-thumb::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background:linear-gradient(180deg, transparent 35%, rgba(0,0,0,.62));
+  }
+
+  .game-content{
+    padding:20px 20px 18px;
+    display:flex;
+    min-height:300px;
+    flex-direction:column;
+  }
+
+  .game-title{
+    margin:0 0 10px;
+    font-size:22px;
+    line-height:1.05;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:#fff;
+  }
+
+  .game-tagline{
+    margin:0 0 16px;
+    color:rgba(255,255,255,.64);
+    font-size:14px;
+    line-height:1.45;
+  }
+
+  .topic-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:18px;
+  }
+
+  .topic-chip{
+    padding:7px 9px;
+    border-radius:999px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.10);
+    color:rgba(255,255,255,.76);
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+
+  .game-meta{
+    margin-top:auto;
+    padding-top:14px;
+    border-top:1px solid rgba(255,255,255,.10);
+  }
+
+  .status-line{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:14px;
+    font-size:12px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.56);
+  }
+
+  .status-value{
+    color:rgba(255,255,255,.86);
+  }
+
+  .status-value[data-realm-state="restored"]{ color:#b7f7c5; }
+  .status-value[data-realm-state="contested"]{ color:#f7d982; }
+  .status-value[data-realm-state="unstable"]{ color:rgba(255,255,255,.68); }
+
+
+  .enter-btn{
+    width:100%;
+    padding:13px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.24);
+    background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.05));
+    color:#fff;
+    cursor:pointer;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-size:13px;
+    transition:transform .14s ease, background .14s ease, box-shadow .14s ease;
+  }
+
+  .enter-btn:hover{
+    transform:translateY(-2px);
+    background:linear-gradient(180deg, rgba(255,255,255,.24), rgba(255,255,255,.08));
+    box-shadow:0 0 22px rgba(255,255,255,.10);
+  }
+
+.engine{--accent:#f7ca18;}
+.mint{--accent:#00a86b;}
+.nexus{--accent:#0a70d6;}
+.citadel{--accent:#5f0fc6;}
+  
+  .game-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 22%, transparent), transparent 36%);
+    opacity:.26;
+  }
+
+  .game-card:hover .enter-btn{
+    border-color:color-mix(in srgb, var(--accent) 70%, white 20%);
+    box-shadow:0 0 24px color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+  
+.engine .game-thumb{background-image:url('tne_thumbnail.webp');}
+.mint .game-thumb{background-image:url('mag_thumbnail.webp');}
+.nexus .game-thumb{background-image:url('cn_thumbnail.webp');}
+.citadel .game-thumb{background-image:url('tec_thumbnail.webp');}
+  
+  #emailModal{
+    position:fixed;
+    inset:0;
+    z-index:20;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:22px;
+    background:rgba(0,0,0,.72);
+    backdrop-filter:blur(8px);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .22s ease, visibility .22s ease;
+  }
+
+  #emailModal.active{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+
+  .modal-card{
+    width:min(520px, 100%);
+    border-radius:18px;
+    padding:28px;
+    background:radial-gradient(circle at top, rgba(255,255,255,.09), transparent 42%), rgba(5,7,12,.96);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 28px 80px rgba(0,0,0,.8);
+  }
+
+  .modal-label{
+    margin:0 0 8px;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.52);
+  }
+
+  .modal-title{
+    margin:0 0 10px;
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+
+  .modal-text{
+    margin:0 0 22px;
+    color:rgba(255,255,255,.66);
+    line-height:1.45;
+  }
+
+  .email-input{
+    width:100%;
+    padding:15px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.22);
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    outline:none;
+    margin-bottom:14px;
+  }
+
+  .email-input:focus{
+    border-color:rgba(255,255,255,.55);
+    box-shadow:0 0 20px rgba(255,255,255,.08);
+  }
+
+  .modal-actions{
+    display:flex;
+    gap:12px;
+  }
+
+  .modal-btn{
+    flex:1;
+    padding:13px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.22);
+    color:#fff;
+    cursor:pointer;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    font-size:12px;
+  }
+
+  .launch-btn{
+    background:linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.07));
+  }
+
+  .cancel-btn{
+    background:transparent;
+    color:rgba(255,255,255,.70);
+  }
+
+  @keyframes statusPulse{
+    0%,100%{opacity:.35;}
+    50%{opacity:.75;}
+  }
+
+@media(max-width:1450px){
+  .game-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:900px){
+  .game-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+}
+  
+@media(max-width:680px){
+  #splashScreen{
+    background-size:100% auto;
+    background-position:center 42%;
+    background-color:#000;
+  }
+}
+
+  @media(max-width:680px){
+    body{
+      overflow:auto;
+    }
+
+    #mainMenu{
+      padding:32px 18px;
+    }
+
+    .game-grid{
+      grid-template-columns:1fr;
+    }
+
+    .game-card{
+      min-height:auto;
+    }
+
+    .game-content{
+      min-height:auto;
+    }
+
+    .splash-status{
+      right:20px;
+      bottom:18px;
+      font-size:10px;
+    }
+
+    .modal-actions{
+      flex-direction:column;
+    }
+  }
+
+
+/* =========================================================
+   UPGRADE: Macro Briefing + Menu + Artifact Vault System
+   ========================================================= */
+.macro-menu-button{
+  position:fixed;
+  right:28px;
+  bottom:24px;
+  z-index:12;
+  display:none;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(125,211,252,.32);
+  background:rgba(0,0,0,.52);
+  color:rgba(219,234,254,.82);
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  box-shadow:0 0 18px rgba(0,0,0,.50), 0 0 18px rgba(56,189,248,.10);
+}
+.macro-menu-button.visible{display:block;}
+.macro-menu-button:hover{color:#fff; border-color:rgba(247,217,130,.54); background:rgba(56,189,248,.10);}
+
+.briefing-folder{
+  width:min(760px, 100%);
+  margin:22px auto 0;
+  border-radius:18px;
+  border:1px solid rgba(125,211,252,.24);
+  background:
+    linear-gradient(135deg, rgba(56,189,248,.10), transparent 38%),
+    radial-gradient(circle at top, rgba(247,217,130,.08), transparent 55%),
+    rgba(0,0,0,.40);
+  box-shadow:0 0 26px rgba(56,189,248,.10), 0 0 48px rgba(0,0,0,.50), inset 0 0 24px rgba(255,255,255,.03);
+  overflow:hidden;
+}
+.briefing-folder-header{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:16px 18px;
+  border:none;
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
+  text-align:left;
+}
+.briefing-folder-label{font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:rgba(191,219,254,.52); margin-bottom:5px;}
+.briefing-folder-title{font-size:20px; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,250,235,.95); font-weight:700; text-shadow:0 0 16px rgba(56,189,248,.22);}
+.briefing-folder-subtext{margin-top:5px; font-size:13px; letter-spacing:.06em; color:rgba(219,234,254,.64);}
+.briefing-folder-toggle{flex:0 0 auto; padding:8px 12px; border-radius:999px; border:1px solid rgba(125,211,252,.24); color:rgba(219,234,254,.74); font-size:10px; letter-spacing:.16em; text-transform:uppercase;}
+.briefing-folder-body{display:none; padding:0 18px 18px;}
+.briefing-folder.open .briefing-folder-body{display:block;}
+.briefing-section{margin-top:12px; padding:14px; border-radius:14px; border:1px solid rgba(125,211,252,.15); background:linear-gradient(180deg, rgba(56,189,248,.07), rgba(255,255,255,.025)), rgba(0,0,0,.28); text-align:center;}
+/* Simplified top briefing to match the cleaner Economic Realm layout. */
+.macro-narrative-box,
+.macro-progression-box{display:none;}
+.briefing-section-label{font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:rgba(191,219,254,.48); margin-bottom:6px;}
+.next-mission-title{font-size:18px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:rgba(255,255,255,.94);}
+.next-mission-reason{max-width:580px; margin:6px auto 11px; font-size:13px; line-height:1.4; color:rgba(219,234,254,.66); letter-spacing:.04em;}
+.next-mission-button{padding:10px 15px; border-radius:999px; border:1px solid rgba(125,211,252,.28); background:linear-gradient(180deg, rgba(56,189,248,.16), rgba(255,255,255,.05)); color:rgba(255,255,255,.88); cursor:pointer; font-size:11px; letter-spacing:.14em; text-transform:uppercase;}
+.next-mission-button:hover{color:#fff; border-color:rgba(247,217,130,.56); box-shadow:0 0 20px rgba(56,189,248,.14);}
+.next-mission-button:disabled{opacity:.48; cursor:default;}
+.macro-narrative-text{max-width:640px; margin:0 auto; font-size:13px; line-height:1.45; color:rgba(219,234,254,.68); letter-spacing:.045em;}
+.macro-narrative-box{border-color:rgba(247,217,130,.18); background:linear-gradient(180deg, rgba(247,217,130,.055), rgba(56,189,248,.035)), rgba(0,0,0,.26);}
+.macro-progression-box{border-color:rgba(125,211,252,.18);}
+.macro-progression-grid{display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:10px; margin-top:10px; text-align:left;}
+.macro-progression-step{position:relative; min-height:118px; padding:12px; border-radius:13px; border:1px solid rgba(125,211,252,.14); background:rgba(255,255,255,.035); box-shadow:inset 0 0 14px rgba(255,255,255,.018);}
+.macro-progression-step::before{content:attr(data-step); position:absolute; top:10px; right:10px; width:24px; height:24px; display:flex; align-items:center; justify-content:center; border-radius:999px; border:1px solid rgba(125,211,252,.20); color:rgba(219,234,254,.70); font-size:11px; font-weight:700;}
+.macro-progression-step.restored{border-color:rgba(183,247,197,.36); background:linear-gradient(180deg, rgba(34,197,94,.10), rgba(255,255,255,.035));}
+.macro-progression-step.active{border-color:rgba(247,217,130,.42); background:linear-gradient(180deg, rgba(247,217,130,.12), rgba(255,255,255,.035)); box-shadow:0 0 22px rgba(247,217,130,.08), inset 0 0 14px rgba(255,255,255,.02);}
+.macro-progression-step.ready{border-color:rgba(125,211,252,.28); background:linear-gradient(180deg, rgba(56,189,248,.08), rgba(255,255,255,.03));}
+.macro-progression-step.locked{opacity:.62; filter:saturate(.78);}
+.macro-progression-status{font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:rgba(247,217,130,.68); margin-bottom:8px; padding-right:28px;}
+.macro-progression-title{font-size:14px; line-height:1.18; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.92); padding-right:24px;}
+.macro-progression-reason{margin-top:8px; font-size:12px; line-height:1.35; color:rgba(219,234,254,.62); letter-spacing:.035em;}
+.macro-progression-action{margin-top:10px; padding:8px 10px; border-radius:999px; border:1px solid rgba(125,211,252,.22); background:rgba(56,189,248,.07); color:rgba(255,255,255,.82); cursor:pointer; font-size:10px; letter-spacing:.12em; text-transform:uppercase;}
+.macro-progression-action:hover{border-color:rgba(247,217,130,.48); color:#fff; box-shadow:0 0 16px rgba(56,189,248,.12);}
+.macro-progression-action:disabled{opacity:.44; cursor:not-allowed; box-shadow:none;}
+@media(max-width:900px){.macro-progression-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}}
+@media(max-width:680px){.macro-progression-grid{grid-template-columns:1fr;}}
+
+.mission-briefing{margin:-6px 0 14px; font-size:13px; line-height:1.35; color:rgba(219,234,254,.55); letter-spacing:.045em;}
+.restored-badge{display:none; margin:0 0 14px; padding:9px 11px; border-radius:12px; border:1px solid rgba(247,217,130,.34); background:radial-gradient(circle at left, rgba(247,217,130,.18), transparent 58%), rgba(255,255,255,.055); color:rgba(255,255,255,.84); font-size:12px; letter-spacing:.09em; text-transform:uppercase;}
+.game-card.restored{border-color:rgba(183,247,197,.50); box-shadow:0 24px 70px rgba(0,0,0,.72), 0 0 34px rgba(183,247,197,.18), inset 0 0 0 1px rgba(255,255,255,.08);}
+.game-card.contested{border-color:rgba(247,217,130,.48); box-shadow:0 20px 54px rgba(0,0,0,.66), 0 0 26px rgba(247,217,130,.16), inset 0 0 0 1px rgba(255,255,255,.05);}
+.game-card.unstable{filter:saturate(.94);}
+.game-card.locked{opacity:.54; filter:grayscale(.35) saturate(.65);}
+.game-card.locked .enter-btn{cursor:not-allowed; opacity:.55;}
+.game-card.restored .restored-badge{display:block;}
+.game-thumb{position:relative;}
+.game-card.restored .game-thumb::before,
+.game-card.contested .game-thumb::before,
+.game-card.unstable .game-thumb::before,
+.game-card.locked .game-thumb::before{position:absolute; top:14px; right:14px; z-index:2; padding:7px 10px; border-radius:999px; font-size:10px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; backdrop-filter:blur(6px);}
+.game-card.restored .game-thumb::before{content:"Restored"; color:rgba(255,255,255,.94); border:1px solid rgba(183,247,197,.50); background:linear-gradient(180deg, rgba(34,197,94,.24), rgba(0,0,0,.42));}
+.game-card.contested .game-thumb::before{content:"Active"; color:rgba(255,255,255,.90); border:1px solid rgba(247,217,130,.42); background:linear-gradient(180deg, rgba(247,217,130,.22), rgba(0,0,0,.42));}
+.game-card.unstable .game-thumb::before{content:"Ready"; color:rgba(255,255,255,.70); border:1px solid rgba(125,211,252,.18); background:rgba(0,0,0,.52);}
+.game-card.locked .game-thumb::before{content:"Locked"; color:rgba(255,255,255,.58); border:1px solid rgba(255,255,255,.16); background:rgba(0,0,0,.58);}
+
+.macro-menu-modal,
+.artifact-detail-modal{position:fixed; inset:0; z-index:25; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(0,0,0,.74); backdrop-filter:blur(6px); opacity:0; visibility:hidden; pointer-events:none; transition:opacity .22s ease, visibility .22s ease;}
+.macro-menu-modal.active,
+.artifact-detail-modal.active{opacity:1; visibility:visible; pointer-events:auto;}
+.macro-menu-card{width:min(920px, 100%); max-height:85vh; overflow:auto; background:rgba(0,0,0,.96); border:1px solid rgba(125,211,252,.26); border-radius:16px; box-shadow:0 24px 70px rgba(0,0,0,.8), 0 0 30px rgba(56,189,248,.10); padding:24px;}
+.macro-menu-header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,.10);}
+.macro-menu-title{margin:0; font-size:28px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;}
+.macro-menu-actions{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px;}
+.macro-menu-action{padding:10px 13px; border-radius:999px; border:1px solid rgba(125,211,252,.20); background:rgba(56,189,248,.075); color:rgba(255,255,255,.82); cursor:pointer; font-size:12px; letter-spacing:.10em; text-transform:uppercase;}
+.macro-menu-action:hover{border-color:rgba(247,217,130,.50); color:#fff;}
+.macro-panel{display:none; color:rgba(255,255,255,.82); line-height:1.65; font-size:16px;}
+.macro-panel.active{display:block;}
+.macro-panel p{margin:0 0 14px;}
+.macro-panel ul{margin:0 0 14px 20px; padding:0;}
+.macro-panel li{margin-bottom:8px;}
+.macro-log-entry{padding:12px 0; border-bottom:1px solid rgba(255,255,255,.09);}
+.macro-log-entry:last-child{border-bottom:none;}
+.macro-log-title{font-weight:700; color:rgba(219,234,254,.92);}
+.macro-log-meta{font-size:12px; color:rgba(255,255,255,.52); margin-top:3px;}
+.recovery-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;}
+.recovery-grid select,
+.recovery-grid input{width:100%; padding:12px 13px; border-radius:10px; border:1px solid rgba(125,211,252,.22); background:rgba(0,0,0,.45); color:#fff;}
+.recovery-message{margin-top:10px; color:rgba(219,234,254,.86); font-size:14px;}
+.artifact-groups{display:grid; gap:16px;}
+.artifact-group{padding:14px; border-radius:14px; border:1px solid rgba(125,211,252,.15); background:linear-gradient(180deg, rgba(56,189,248,.06), rgba(255,255,255,.02)), rgba(0,0,0,.24);}
+.artifact-group-title{margin:0 0 12px; font-size:18px; letter-spacing:.08em; text-transform:uppercase; color:rgba(219,234,254,.92);}
+.artifact-grid{display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px;}
+.artifact-card{min-height:100%; padding:12px; border-radius:12px; border:1px solid rgba(125,211,252,.16); background:rgba(255,255,255,.04); display:flex; flex-direction:column; gap:8px; cursor:pointer; text-align:left;}
+.artifact-card.locked{opacity:.56; filter:saturate(.62) grayscale(.25); cursor:default;}
+.artifact-card.unlocked{box-shadow:0 0 18px rgba(56,189,248,.10), inset 0 0 12px rgba(255,255,255,.02);}
+.artifact-card.unlocked:hover{transform:translateY(-2px); border-color:rgba(247,217,130,.42); box-shadow:0 0 22px rgba(247,217,130,.12), 0 0 18px rgba(56,189,248,.12);}
+.artifact-card img{width:86px; height:86px; object-fit:contain; align-self:center; filter:drop-shadow(0 0 10px rgba(56,189,248,.18));}
+.artifact-card.locked img{filter:brightness(.45) contrast(.85) saturate(.55);}
+.artifact-card-title{font-size:14px; line-height:1.25; font-weight:700; color:rgba(255,255,255,.92); text-align:center;}
+.artifact-card-status{font-size:10px; letter-spacing:.14em; text-transform:uppercase; text-align:center; color:rgba(247,217,130,.66);}
+.artifact-card-text{font-size:13px; line-height:1.45; color:rgba(255,255,255,.72);}
+.artifact-card-unlock{margin-top:auto; font-size:11px; line-height:1.35; color:rgba(255,255,255,.50);}
+.artifact-detail-card{width:min(840px, 100%); max-height:86vh; overflow:auto; padding:24px; border-radius:18px; background:radial-gradient(circle at top, rgba(56,189,248,.12), transparent 45%), rgba(0,0,0,.96); border:1px solid rgba(125,211,252,.28); box-shadow:0 24px 70px rgba(0,0,0,.82), 0 0 32px rgba(56,189,248,.12);}
+.artifact-detail-header{display:flex; justify-content:space-between; align-items:center; gap:16px; padding-bottom:12px; margin-bottom:16px; border-bottom:1px solid rgba(255,255,255,.10);}
+.artifact-detail-title{margin:0; font-size:26px; letter-spacing:.08em; text-transform:uppercase;}
+.artifact-detail-source{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:rgba(191,219,254,.56); margin-top:5px;}
+.artifact-detail-body{display:grid; grid-template-columns:300px 1fr; gap:20px; align-items:start;}
+.artifact-detail-image-wrap{border-radius:14px; border:1px solid rgba(125,211,252,.16); background:rgba(255,255,255,.04); padding:18px; text-align:center;}
+.artifact-detail-image-wrap img{width:280px; max-width:100%; height:280px; object-fit:contain; filter:drop-shadow(0 0 16px rgba(56,189,248,.22));}
+.artifact-detail-text p{margin:0 0 13px; color:rgba(255,255,255,.78); line-height:1.55;}
+.artifact-detail-label{display:block; margin-bottom:3px; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:rgba(247,217,130,.62);}
+
+@media(max-width:680px){
+  .briefing-folder-header{align-items:flex-start;}
+  .briefing-folder-toggle{margin-top:2px;}
+  .recovery-grid{grid-template-columns:1fr;}
+  .artifact-grid{grid-template-columns:1fr;}
+  .artifact-detail-body{grid-template-columns:1fr;}
+  .macro-menu-card{padding:20px;}
+}
+
+
+/* =========================================================
+   UPGRADE: Achievement System Panel
+   - Ported from The Economic Realm and adapted for Macro Test Prep.
+   - Reads mission completion plus mode/stat keys from localStorage.
+   ========================================================= */
+.achievement-summary{
+  margin:0 0 16px;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(125,211,252,.15);
+  background:
+    radial-gradient(circle at top left, rgba(247,217,130,.12), transparent 56%),
+    rgba(255,255,255,.045);
+}
+
+.achievement-summary-label{
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(191,219,254,.52);
+  margin-bottom:5px;
+}
+
+.achievement-summary-title{
+  font-size:24px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#f7d982;
+  font-weight:700;
+  text-shadow:0 0 14px rgba(247,217,130,.22);
+}
+
+.achievement-summary-text{
+  margin-top:6px;
+  font-size:13px;
+  line-height:1.4;
+  color:rgba(219,234,254,.66);
+  letter-spacing:.04em;
+}
+
+.achievement-progress-track{
+  margin-top:12px;
+  height:10px;
+  border-radius:999px;
+  overflow:hidden;
+  border:1px solid rgba(125,211,252,.15);
+  background:rgba(255,255,255,.055);
+  box-shadow:inset 0 0 10px rgba(0,0,0,.55);
+}
+
+.achievement-progress-fill{
+  height:100%;
+  width:0%;
+  border-radius:999px;
+  background:linear-gradient(90deg, rgba(56,189,248,.85), rgba(247,217,130,.95));
+  box-shadow:0 0 14px rgba(247,217,130,.28);
+  transition:width .25s ease;
+}
+
+.achievement-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+}
+
+.achievement-card{
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:12px;
+  align-items:center;
+  padding:13px;
+  border-radius:14px;
+  border:1px solid rgba(125,211,252,.14);
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,.08), transparent 54%),
+    rgba(255,255,255,.04);
+  cursor:pointer;
+}
+
+.achievement-card.unlocked{
+  border-color:rgba(247,217,130,.40);
+  background:
+    radial-gradient(circle at top left, rgba(247,217,130,.15), transparent 56%),
+    rgba(255,255,255,.055);
+  box-shadow:0 0 20px rgba(247,217,130,.08), inset 0 0 18px rgba(255,255,255,.025);
+}
+
+.achievement-card.locked{
+  opacity:.54;
+  filter:grayscale(.55);
+}
+
+.achievement-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(247,217,130,.46);
+  box-shadow:0 0 22px rgba(247,217,130,.10), 0 0 18px rgba(56,189,248,.10);
+}
+
+.achievement-icon{
+  width:56px;
+  height:56px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(125,211,252,.16);
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,.12), transparent 66%),
+    rgba(0,0,0,.28);
+  font-size:24px;
+  line-height:1;
+}
+
+.achievement-icon img{
+  width:46px;
+  height:46px;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 0 10px rgba(56,189,248,.12));
+}
+
+.achievement-card.unlocked .achievement-icon{
+  border-color:rgba(247,217,130,.42);
+  box-shadow:0 0 16px rgba(247,217,130,.16);
+}
+
+.achievement-card.unlocked .achievement-icon img{
+  filter:drop-shadow(0 0 12px rgba(247,217,130,.22));
+}
+
+.achievement-icon.missing-icon::after{
+  content:"★";
+  color:rgba(247,217,130,.88);
+}
+
+.achievement-name{
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+}
+
+.achievement-desc{
+  margin-top:4px;
+  font-size:12.5px;
+  line-height:1.32;
+  color:rgba(219,234,254,.64);
+}
+
+.achievement-status{
+  margin-top:7px;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.42);
+}
+
+.achievement-card.unlocked .achievement-status{
+  color:#f7d982;
+}
+
+.achievement-detail-modal{
+  position:fixed;
+  inset:0;
+  z-index:26;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(0,0,0,.78);
+  backdrop-filter:blur(6px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .22s ease, visibility .22s ease;
+}
+
+.achievement-detail-modal.active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.achievement-detail-card{
+  width:min(520px, 100%);
+  max-height:86vh;
+  overflow:auto;
+  padding:24px;
+  border-radius:18px;
+  background:radial-gradient(circle at top, rgba(247,217,130,.13), transparent 45%), rgba(0,0,0,.96);
+  border:1px solid rgba(247,217,130,.28);
+  box-shadow:0 24px 70px rgba(0,0,0,.82), 0 0 32px rgba(247,217,130,.12);
+}
+
+.achievement-detail-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding-bottom:12px;
+  margin-bottom:16px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.achievement-detail-title{
+  margin:0;
+  font-size:26px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.achievement-detail-body{
+  text-align:center;
+}
+
+.achievement-detail-image{
+  width:220px;
+  height:220px;
+  max-width:100%;
+  object-fit:contain;
+  border-radius:16px;
+  border:1px solid rgba(125,211,252,.14);
+  background:rgba(255,255,255,.04);
+  padding:10px;
+  filter:drop-shadow(0 0 18px rgba(247,217,130,.18));
+}
+
+.achievement-detail-status{
+  margin-top:13px;
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(247,217,130,.72);
+}
+
+.achievement-detail-description{
+  max-width:390px;
+  margin:10px auto 0;
+  font-size:15px;
+  line-height:1.45;
+  color:rgba(219,234,254,.74);
+}
+
+@media(max-width:680px){
+  .achievement-grid{grid-template-columns:1fr;}
+  .achievement-card{grid-template-columns:46px 1fr;}
+  .achievement-icon{width:46px; height:46px;}
+  .achievement-icon img{width:38px; height:38px;}
+}
+
+
+
+/* =========================================================
+   MOBILE SCROLL FIX — MACRO TEST PREP
+   Keeps the hub menu scrollable on phones and prevents the
+   fixed splash/menu layout from trapping content off-screen.
+   ========================================================= */
+html,
+body{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+#mainMenu{
+  min-height:100dvh;
+  height:100dvh;
+  overflow-y:auto !important;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-y:contain;
+}
+
+#mainMenu .menu-shell{
+  padding-bottom:120px;
+}
+
+@media (max-width: 768px){
+  #mainMenu{
+    padding:18px 16px 24px;
+  }
+
+  .menu-header{
+    margin-bottom:18px;
+  }
+
+  .briefing-folder{
+    margin-top:18px;
+  }
+
+  .briefing-folder-header{
+    padding:14px 15px;
+  }
+
+  .briefing-folder-title{
+    font-size:17px;
+  }
+
+  .briefing-folder-subtext{
+    font-size:12px;
+  }
+
+  .briefing-folder-toggle{
+    padding:7px 10px;
+  }
+
+  .game-card.restored .game-thumb::before,
+  .game-card.contested .game-thumb::before,
+  .game-card.unstable .game-thumb::before,
+  .game-card.locked .game-thumb::before{
+    top:10px;
+    right:10px;
+    font-size:9px;
+    padding:6px 8px;
+  }
+}
+
+.status-value[data-realm-state="locked"]{
+  color:rgba(255,255,255,.48);
+}
+
+
+.recovery-message.success{ color:#fbbf24; }
+.recovery-message.error{ color:#f87171; }
+
+</style>
+</head>
+
+<body>
+  <section id="splashScreen" aria-label="Macro Command System splash screen">
+    <button id="enterHubButton" class="splash-enter" onclick="enterHub()">Click to Enter</button>
+    <div class="splash-status" id="splashStatus">Initializing adaptive game...</div>
+  </section>
+
+  <button id="soundToggle" class="sound-toggle" onclick="toggleMenuMusic()" aria-label="Toggle menu music">Sound Off</button>
+
+  <button id="macroMenuButton" class="macro-menu-button" onclick="openMacroMenu()" aria-label="Open macro menu">
+    Macro Menu
+  </button>
+
+  <main id="mainMenu" aria-label="Game selection menu">
+    <div class="menu-overlay"></div>
+    <video class="menu-video-bg" autoplay muted loop playsinline aria-hidden="true">
+      <source src="menu_mist.mp4" type="video/mp4">
+    </video>
+
+   <div class="menu-shell">
+  <header class="menu-header">
+    <p class="menu-kicker">Macro Command System</p>
+    <h1 class="menu-title">Choose Your Mission</h1>
+    <p class="custodian-briefing">
+      The Custodian has opened the macro archive. Each restored system strengthens your command of the economy. Choose the next mission, recover the artifacts, and prove you can stabilize the realm.
+    </p>
+    <div class="briefing-folder collapsed" id="briefingFolder">
+      <button class="briefing-folder-header" onclick="toggleBriefingFolder()" aria-expanded="false" aria-controls="briefingFolderBody">
+        <div>
+          <div class="briefing-folder-label">CUSTODIAN'S BRIEFING</div>
+          <div id="briefingFolderTitle" class="briefing-folder-title">0 of 4 systems restored</div>
+        </div>
+        <span id="briefingFolderToggle" class="briefing-folder-toggle">Open</span>
+      </button>
+<div class="briefing-folder-body" id="briefingFolderBody">
+  <!-- UPGRADE: Sequential macro guidance. Students should move through these systems in order. -->
+  <div id="nextMissionBox" class="briefing-section next-mission-box">
+    <div class="briefing-section-label">Next Mission</div>
+    <div id="nextMissionTitle" class="next-mission-title">The National Engine</div>
+    <div id="nextMissionReason" class="next-mission-reason">
+      Start with GDP, inflation, unemployment, income, and equilibrium measurement.
+    </div>
+    <button id="nextMissionButton" class="next-mission-button" onclick="launchNextMission()">Begin Next Mission</button>
+  </div>
+
+  <div class="briefing-section macro-narrative-box">
+    <div class="briefing-section-label">Macro Campaign Briefing</div>
+    <div id="macroNarrativeText" class="macro-narrative-text">
+      Begin with the National Engine, then move through money, policy coordination, and open-economy adjustment.
+    </div>
+  </div>
+
+  <div class="briefing-section macro-progression-box">
+    <div class="briefing-section-label">Progression Route</div>
+    <div id="macroProgressionGrid" class="macro-progression-grid" aria-label="Macro mission progression route"></div>
+  </div>
+</div>
+    </div>
+      </header>
+
+      <section class="game-grid" aria-label="Available review missions">
+        <article class="game-card engine">
+          <div class="game-thumb" aria-hidden="true"></div>
+          <div class="game-content">
+            <h2 class="game-title">The National Engine</h2>
+            <p class="game-tagline">Calculate national data. Determine national income.</p>
+            <p class="mission-briefing" id="briefing-engine">Start here with GDP, inflation, unemployment, income, and equilibrium measurement.</p>
+            <div class="restored-badge" id="badge-engine">National Engine restored · System secured</div>
+            <div class="topic-list">
+              <span class="topic-chip">GDP</span>
+              <span class="topic-chip">Inflation</span>
+              <span class="topic-chip">Unemployment</span>
+              <span class="topic-chip">Income</span>
+              <span class="topic-chip">Equilibrium</span>
+            </div>
+            <div class="game-meta">
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-engine">Ready</span></div>
+              <button class="enter-btn" onclick="selectGame('engine')">Enter Engine</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card mint">
+          <div class="game-thumb" aria-hidden="true"></div>
+          <div class="game-content">
+            <h2 class="game-title">The Mint of Ash and Gold</h2>
+            <p class="game-tagline">Master money, growth, inflation, and stabilization when shocks strike.</p>
+            <p class="mission-briefing" id="briefing-mint">Move into money creation, growth, inflation pressure, and stabilization logic.</p>
+            <div class="restored-badge" id="badge-mint">Mint restored · System secured</div>
+            <div class="topic-list">
+              <span class="topic-chip">Money Supply</span>
+              <span class="topic-chip">Economic Growth</span>
+              <span class="topic-chip">Inflation</span>
+              <span class="topic-chip">AD-AS Stabilization</span>
+            </div>
+            <div class="game-meta">
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-mint">Ready</span></div>
+              <button class="enter-btn" onclick="selectGame('mint')">Enter the Mint</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card nexus">
+          <div class="game-thumb" aria-hidden="true"></div>
+          <div class="game-content">
+            <h2 class="game-title">The Command Nexus</h2>
+            <p class="game-tagline">Stabilize the economy: trace IS-LM, direct policy responses, and follow aggregate demand through shocks.</p>
+            <p class="mission-briefing" id="briefing-nexus">Coordinate IS-LM, fiscal policy, monetary policy, and aggregate demand under pressure.</p>
+            <div class="restored-badge" id="badge-nexus">Command Nexus restored · System secured</div>
+            <div class="topic-list">
+              <span class="topic-chip">IS-LM</span>
+              <span class="topic-chip">Fiscal Policy</span>
+              <span class="topic-chip">Monetary Policy</span>
+              <span class="topic-chip">Aggregate Demand</span>
+            </div>
+            <div class="game-meta">
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-nexus">Ready</span></div>
+              <button class="enter-btn" onclick="selectGame('nexus')">Enter Nexus</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card citadel">
+          <div class="game-thumb" aria-hidden="true"></div>
+          <div class="game-content">
+            <h2 class="game-title">The Exchange Citadel</h2>
+            <p class="game-tagline">Trace trade balances, exchange rates, capital flows, and global policy pressure.</p>
+            <p class="mission-briefing" id="briefing-citadel">Finish with trade balances, exchange rates, capital flows, and open-economy policy pressure.</p>
+            <div class="restored-badge" id="badge-citadel">Exchange Citadel restored · System secured</div>
+            <div class="topic-list">
+              <span class="topic-chip">Open Economy</span>
+              <span class="topic-chip">Exchange Rates</span>
+              <span class="topic-chip">Trade Balance</span>
+              <span class="topic-chip">Mundell-Fleming</span>
+            </div>
+            <div class="game-meta">
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-citadel">Ready</span></div>
+              <button class="enter-btn" onclick="selectGame('citadel')">Enter Citadel</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <section id="macroMenuModal" class="macro-menu-modal" aria-label="Macro menu dialog">
+    <div class="macro-menu-card">
+      <div class="macro-menu-header">
+        <h2 class="macro-menu-title">Macro Menu</h2>
+        <button class="help-close-btn" onclick="closeMacroMenu()" aria-label="Close macro menu">Close ×</button>
+      </div>
+
+      <div class="macro-menu-actions">
+        <button class="macro-menu-action" onclick="showMacroPanel('instructionsPanel')">How This Works</button>
+        <button class="macro-menu-action" onclick="showMacroPanel('macroLogPanel')">Mission Log</button>
+        <button class="macro-menu-action" onclick="showMacroPanel('artifactVaultPanel')">Artifact Vault</button>
+        <button class="macro-menu-action" onclick="showMacroPanel('achievementsPanel')">Achievements</button>
+        <button class="macro-menu-action" onclick="showMacroPanel('recoveryPanel')">Recover Progress</button>
+        <button class="macro-menu-action" onclick="toggleMenuMusic()">Toggle Sound</button>
+      </div>
+
+      <div id="instructionsPanel" class="macro-panel active">
+        <p>Choose a macro mission to begin reviewing. Each mission targets a different part of the course and adapts to your performance as you play.</p>
+        <ul>
+          <li>Correct answers move you forward.</li>
+          <li>Missed questions may send you back or trigger review.</li>
+          <li>Boss rooms check whether you are ready to advance.</li>
+          <li>Completion is reported when you finish a mission.</li>
+          <li>Progress is saved locally, so you can close the browser and resume later.</li>
+        </ul>
+        <p>Use your school email on the game start screen so the run can be recorded.</p>
+      </div>
+
+      <div id="macroLogPanel" class="macro-panel">
+        <div id="macroLogContent">No mission activity recorded yet.</div>
+      </div>
+
+      <div id="artifactVaultPanel" class="macro-panel">
+        <p>Each restored system unlocks its full artifact set here. Duplicate item keys are namespaced by mission, so repeated names do not collide in the vault logic.</p>
+        <div id="artifactVaultContent">No artifacts cataloged yet.</div>
+      </div>
+
+      <div id="achievementsPanel" class="macro-panel">
+        <div id="achievementsContent">No achievements calculated yet.</div>
+      </div>
+
+      <div id="recoveryPanel" class="macro-panel">
+        <p>If a browser wipe removes local progress, use the completion recovery code from the finished mission to restore the system on this device.</p>
+        <div class="recovery-grid">
+          <select id="recoveryMission">
+            <option value="engine">The National Engine</option>
+            <option value="mint">The Mint of Ash and Gold</option>
+            <option value="nexus">The Command Nexus</option>
+            <option value="citadel">The Exchange Citadel</option>
+          </select>
+          <input id="recoveryCode" type="text" placeholder="Enter recovery code">
+        </div>
+        <button class="next-mission-button" style="margin-top:12px;" onclick="restoreMissionFromCode()">Restore Mission</button>
+        <div id="recoveryMessage" class="recovery-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artifactDetailModal" class="artifact-detail-modal" aria-label="Artifact detail dialog">
+    <div class="artifact-detail-card">
+      <div class="artifact-detail-header">
+        <div>
+          <h2 id="artifactDetailTitle" class="artifact-detail-title">Artifact</h2>
+          <div id="artifactDetailSource" class="artifact-detail-source">Source</div>
+        </div>
+        <button class="help-close-btn" onclick="closeArtifactModal()" aria-label="Close artifact detail">Close ×</button>
+      </div>
+      <div class="artifact-detail-body">
+        <div class="artifact-detail-image-wrap">
+          <img id="artifactDetailImage" src="" alt="">
+        </div>
+        <div class="artifact-detail-text">
+          <p><span class="artifact-detail-label">Meaning</span><span id="artifactDetailMeaning"></span></p>
+          <p><span class="artifact-detail-label">Concept Power</span><span id="artifactDetailConceptPower"></span></p>
+          <p><span class="artifact-detail-label">Why It Matters</span><span id="artifactDetailWhyItMatters"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievementDetailModal" class="achievement-detail-modal" aria-label="Achievement detail dialog">
+    <div class="achievement-detail-card">
+      <div class="achievement-detail-header">
+        <h2 id="achievementDetailTitle" class="achievement-detail-title">Achievement</h2>
+        <button class="help-close-btn" onclick="closeAchievementModal()" aria-label="Close achievement detail">Close ×</button>
+      </div>
+      <div class="achievement-detail-body">
+        <img id="achievementDetailImage" class="achievement-detail-image" src="" alt="">
+        <div id="achievementDetailStatus" class="achievement-detail-status">Locked</div>
+        <div id="achievementDetailDescription" class="achievement-detail-description"></div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  const menuMusic = new Audio("menu_music.mp3");
+  menuMusic.loop = true;
+  menuMusic.volume = 0.12;
+  let menuMusicStarted = false;
+
+  function showSoundToggle(){
+    const button = document.getElementById("soundToggle");
+    if(button){ button.classList.add("visible"); }
+  }
+
+  function updateSoundToggle(){
+    const button = document.getElementById("soundToggle");
+    if(!button) return;
+    button.innerText = menuMusicStarted ? "Sound On" : "Sound Off";
+  }
+
+  function startMenuMusic(){
+    menuMusic.play()
+      .then(() => { menuMusicStarted = true; updateSoundToggle(); })
+      .catch(error => { menuMusicStarted = false; updateSoundToggle(); console.log("Menu music could not start yet:", error.message); });
+  }
+
+  function stopMenuMusic(){
+    menuMusic.pause();
+    menuMusic.currentTime = 0;
+    menuMusicStarted = false;
+    updateSoundToggle();
+  }
+
+  function toggleMenuMusic(){
+    if(menuMusicStarted){ stopMenuMusic(); }
+    else { startMenuMusic(); }
+  }
+
+  const games = {
+    engine: {
+      title: "The National Engine",
+      file: "https://wjbyrd.github.io/The-National-Engine/",
+      statusKey: "macroHub_engine_complete",
+      startedKey: "macroHub_engine_started",
+      roomKey: "macroHub_engine_room",
+      sequence: 1,
+      buttonText: "Enter Engine",
+      nextReason: "Start with GDP, inflation, unemployment, income, and equilibrium measurement.",
+      storyIntro: "The National Engine is dormant. The gauges are dark, the measurements are suspect, and the economy is not going to interpret itself.",
+      storyActive: "The National Engine is running. Measurement errors, labor flows, and national accounts are moving through the system. Finish the run.",
+      storyRestored: "The National Engine is restored. The core measures are back online.",
+      recoveryCode: "NATIONAL-ENGINE-RESTORED",
+      lockedText: "Engine Locked",
+      unstableText: "Engine Ready",
+      contestedText: "Engine Running",
+      restoredText: "Engine Restored",
+      artifacts: [
+        {
+          key:"index",
+          img:"index.webp",
+          title:"The Index of True Measures",
+          text:"False signals no longer pass unchecked. You can read the economy’s gauges without being fooled by bad counts, missing categories, or nominal illusions.",
+          conceptPower:"GDP, CPI, inflation, unemployment, and real versus nominal measures only work when students know what is counted, what is excluded, and what the number actually means.",
+          whyItMatters:"Students often treat macro statistics like simple scoreboards. The index reminds them that bad measurement leads to bad interpretation. Garbage in, garbage policy out."
+        },
+        {
+          key:"valve",
+          img:"valve.webp",
+          title:"The Valve of Labor Flows",
+          text:"The idle queue is not random. Separation and finding rates govern the flow, and the natural rate emerges from the machinery beneath the surface.",
+          conceptPower:"Unemployment is a flow problem as much as a stock problem. Workers move into and out of jobs, and the natural rate depends on those transition pressures.",
+          whyItMatters:"Students can see unemployment as one frozen number. The valve pushes them to ask who is entering, who is leaving, and why the labor market never sits perfectly still."
+        },
+        {
+          key:"seal",
+          img:"seal.webp",
+          title:"The Equilibrium Seal",
+          text:"The accounts close. Output, income, factor payments, saving, investment, and demand now stand before the same final balance.",
+          conceptPower:"National income accounting connects production, income, spending, saving, investment, and equilibrium conditions into one macro system.",
+          whyItMatters:"When students memorize pieces separately, macro looks like scattered formulas. The seal reminds them that the accounts have to balance. No escape hatch."
+        }
+      ]
+    },
+    mint: {
+      title: "The Mint of Ash and Gold",
+      file: "https://wjbyrd.github.io/The-Mint-of-Ash-and-Gold/",
+      statusKey: "macroHub_mint_complete",
+      startedKey: "macroHub_mint_started",
+      roomKey: "macroHub_mint_room",
+      sequence: 2,
+      buttonText: "Enter the Mint",
+      nextReason: "Move into money, growth, inflation, and stabilization.",
+      storyIntro: "The Mint of Ash and Gold is sealed. Money, growth, and stabilization are locked behind the vault doors.",
+      storyActive: "The Mint is active. Reserves, capital, inflation, and stabilization pressure are all in motion.",
+      storyRestored: "The Mint is restored. Money and growth logic are back under control.",
+      recoveryCode: "MINT-RESTORED",
+      lockedText: "Mint Locked",
+      unstableText: "Mint Ready",
+      contestedText: "Mint Active",
+      restoredText: "Mint Restored",
+      artifacts: [
+        {
+          key:"reserve",
+          img:"reserve.webp",
+          title:"The Reserve Key",
+          text:"The mint yields its first secret. Deposits become loans, loans become money, and the supply of currency answers to reserves, banks, and the hand that turns the central lever.",
+          conceptPower:"Bank reserves, lending, reserve requirements, and central bank tools shape the money supply through the banking system.",
+          whyItMatters:"Students often think money is just printed. The key reminds them that banking behavior and reserves can multiply or restrict money creation."
+        },
+        {
+          key:"compass",
+          img:"compass.webp",
+          title:"The Golden Rule Compass",
+          text:"The path to wealth is not printed into existence. Savings feed capital, capital deepens production, and the highest sustainable living standard lies where accumulation is guided, not worshiped.",
+          conceptPower:"Long-run growth depends on saving, investment, capital accumulation, productivity, diminishing returns, and the Golden Rule level of capital.",
+          whyItMatters:"More capital is not automatically better forever. The compass points students toward sustainable growth instead of just shouting ‘more investment’ like that solves everything."
+        },
+        {
+          key:"crown",
+          img:"crown.webp",
+          title:"The Stabilization Crown",
+          text:"The storm bends, but the long run does not kneel. Demand may surge, supply may fracture, and output may wander, but the economy is drawn back toward its deeper balance.",
+          conceptPower:"Aggregate demand and aggregate supply explain short-run fluctuations, shocks, inflation pressure, and the pull back toward long-run output.",
+          whyItMatters:"Students need to separate short-run movement from long-run anchors. The crown reminds them that stabilization policy fights shocks, not reality."
+        }
+      ]
+    },
+    nexus: {
+      title: "The Command Nexus",
+      file: "https://wjbyrd.github.io/The-Command-Nexus/",
+      statusKey: "macroHub_nexus_complete",
+      startedKey: "macroHub_nexus_started",
+      roomKey: "macroHub_nexus_room",
+      sequence: 3,
+      buttonText: "Enter Nexus",
+      nextReason: "Coordinate IS-LM, fiscal policy, monetary policy, and aggregate demand.",
+      storyIntro: "The Command Nexus is offline. Demand maps, rate dials, and stabilization signals need to be recalibrated.",
+      storyActive: "The Command Nexus is active. Fiscal force, money pressure, and aggregate demand are being routed through the command table.",
+      storyRestored: "The Command Nexus is restored. Short-run policy response is back online.",
+      recoveryCode: "NEXUS-RESTORED",
+      lockedText: "Nexus Locked",
+      unstableText: "Nexus Ready",
+      contestedText: "Command Active",
+      restoredText: "Nexus Restored",
+      artifacts: [
+        {
+          key:"atlas",
+          img:"atlas.webp",
+          title:"The Atlas of Demand",
+          text:"The first map locks into place. Spending, investment, and interest-rate pressure no longer scatter across the table. You can trace the path of demand and see where output begins to move.",
+          conceptPower:"The IS side links spending, interest rates, investment, and output so students can trace how demand moves through the economy.",
+          whyItMatters:"Policy analysis collapses when students cannot trace the path from spending to output. The atlas makes them follow the map instead of guessing."
+        },
+        {
+          key:"dial",
+          img:"dial.webp",
+          title:"The Calibrated Dial",
+          text:"The rate holds steady under pressure. Money demand, money supply, income, and interest now answer to the same mechanism. The short-run system can be adjusted without guessing.",
+          conceptPower:"The LM side connects money demand, money supply, income, and interest rates into a short-run equilibrium mechanism.",
+          whyItMatters:"Interest rates are not magic knobs. The dial reminds students that monetary policy works through money-market pressure and short-run adjustment."
+        },
+        {
+          key:"lens",
+          img:"lens.webp",
+          title:"The Stabilizer’s Lens",
+          text:"The shock is no longer hidden. Fiscal force, monetary response, aggregate demand, and crisis signals come into focus. The Nexus does not promise certainty. It reveals the pressure points.",
+          conceptPower:"Stabilization policy requires connecting fiscal policy, monetary policy, aggregate demand, interest rates, output, and shock response.",
+          whyItMatters:"Students can talk policy in slogans. The lens forces them to identify the actual pressure point and the likely channel of adjustment."
+        }
+      ]
+    },
+    citadel: {
+      title: "The Exchange Citadel",
+      file: "https://wjbyrd.github.io/The-Exchange-Citadel/",
+      statusKey: "macroHub_citadel_complete",
+      startedKey: "macroHub_citadel_started",
+      roomKey: "macroHub_citadel_room",
+      sequence: 4,
+      buttonText: "Enter Citadel",
+      nextReason: "Finish with trade balances, capital flows, exchange rates, and open-economy policy pressure.",
+      storyIntro: "The Exchange Citadel is locked. Trade balances, exchange rates, and capital flows are waiting behind the gate.",
+      storyActive: "The Citadel is contested. Savings, investment, trade, capital flows, and exchange pressure are all pulling on the ledger.",
+      storyRestored: "The Exchange Citadel is restored. The world ledger is back in balance.",
+      recoveryCode: "CITADEL-RESTORED",
+      lockedText: "Citadel Locked",
+      unstableText: "Citadel Ready",
+      contestedText: "Citadel Contested",
+      restoredText: "Citadel Restored",
+      artifacts: [
+        {
+          key:"ledger",
+          img:"ledger.webp",
+          title:"The National Ledger",
+          text:"The accounts now balance. Savings, investment, trade, and capital flows are no longer scattered entries—they are one system.",
+          conceptPower:"Open-economy accounting links saving, investment, net exports, and net capital outflow into one national identity.",
+          whyItMatters:"Trade deficits are not random villains. The ledger reminds students that every deficit or surplus has an accounting counterpart."
+        },
+        {
+          key:"charter",
+          img:"charter.webp",
+          title:"The Chancellor’s Policy Charter",
+          text:"Policy now has form and force. Taxes, spending, and capital rules ripple through trade balances, exchange rates, and national income.",
+          conceptPower:"Fiscal policy, capital flows, and international adjustment affect trade balances, exchange rates, and macro outcomes.",
+          whyItMatters:"Domestic policy does not stay domestic. The charter pushes students to track the spillovers instead of acting surprised when the exchange rate moves."
+        },
+        {
+          key:"pen",
+          img:"pen.webp",
+          title:"The Pen of Exchange",
+          text:"With a single stroke, trade can be reconciled, deficits explained, and exchange restored. The world ledger bends toward balance.",
+          conceptPower:"Exchange rates coordinate international prices, net exports, capital flows, and the adjustment process between economies.",
+          whyItMatters:"Students often treat exchange rates as isolated prices. The pen reminds them that exchange rates write through trade, finance, and policy all at once."
+        }
+      ]
+    }
+  };
+
+  let selectedGame = null;
+  let nextMissionKey = null;
+  const HUB_SAVE_KEY = "macroHub_save_v1";
+
+  window.addEventListener("load", () => {
+    restoreSavedEmail();
+    syncHubSaveFromExistingKeys();
+    updateGameStatuses();
+    restoreBriefingFolderState();
+    updateSoundToggle();
+    setTimeout(() => {
+      document.getElementById("splashScreen").classList.add("ready");
+      document.getElementById("splashStatus").innerText = "Game ready.";
+    }, 3000);
+  });
+
+  function enterHub(){
+    document.getElementById("splashScreen").classList.add("hidden");
+    document.getElementById("mainMenu").classList.add("active");
+    showSoundToggle();
+    showMacroMenuButton();
+    startMenuMusic();
+  }
+
+  function restoreSavedEmail(){
+    const savedEmail = localStorage.getItem("gauntletEmail") || "";
+    const input = document.getElementById("hubEmailInput");
+    if(input && savedEmail){ input.value = savedEmail; }
+  }
+
+  function showMacroMenuButton(){
+    const button = document.getElementById("macroMenuButton");
+    if(button){ button.classList.add("visible"); }
+  }
+
+  function openMacroMenu(){
+    updateGameStatuses();
+    renderMacroLog();
+    renderArtifactVault();
+    renderAchievements();
+    document.getElementById("macroMenuModal").classList.add("active");
+  }
+
+  function closeMacroMenu(){ document.getElementById("macroMenuModal").classList.remove("active"); }
+
+  function showMacroPanel(panelId){
+    document.querySelectorAll(".macro-panel").forEach(panel => panel.classList.remove("active"));
+    const panel = document.getElementById(panelId);
+    if(panel){ panel.classList.add("active"); }
+    if(panelId === "macroLogPanel"){ renderMacroLog(); }
+    if(panelId === "artifactVaultPanel"){ renderArtifactVault(); }
+    if(panelId === "achievementsPanel"){ renderAchievements(); }
+    if(panelId === "recoveryPanel"){
+      const message = document.getElementById("recoveryMessage");
+      const codeInput = document.getElementById("recoveryCode");
+      if(message){
+        message.className = "recovery-message";
+        message.innerText = "";
+      }
+      if(codeInput){ codeInput.value = ""; }
+    }
+  }
+function getHubSave(){
+  const defaultSave = {
+    version: 1,
+    player: {
+      email: localStorage.getItem("gauntletEmail") || "",
+      pseudonym: localStorage.getItem("gauntletUser") || ""
+    },
+    missions: {},
+    log: [],
+    settings: {
+      soundOn: localStorage.getItem("macroHub_soundOn") === "true"
+    },
+    lastUpdated: null
+  };
+
+  try{
+    const saved = JSON.parse(localStorage.getItem(HUB_SAVE_KEY));
+    return saved ? {...defaultSave, ...saved, missions: saved.missions || {}, log: saved.log || []} : defaultSave;
+  } catch(error){
+    console.warn("Macro hub save could not be read:", error);
+    return defaultSave;
+  }
+}
+function setHubSave(save){
+  save.lastUpdated = new Date().toISOString();
+  localStorage.setItem(HUB_SAVE_KEY, JSON.stringify(save));
+}
+function recordMissionProgress(gameKey, details = {}){
+  const game = games[gameKey];
+  if(!game) return;
+
+  const save = getHubSave();
+  save.missions = save.missions || {};
+  save.log = save.log || [];
+
+  if(!save.missions[gameKey]){
+    save.missions[gameKey] = {};
+  }
+
+  save.missions[gameKey] = {
+    ...save.missions[gameKey],
+    title: game.title,
+    started: details.started ?? save.missions[gameKey].started ?? getStorageFlag(game.startedKey),
+    completed: details.completed ?? save.missions[gameKey].completed ?? getStorageFlag(game.statusKey),
+    room: details.room ?? save.missions[gameKey].room ?? localStorage.getItem(game.roomKey) ?? null,
+    accuracy: details.accuracy ?? save.missions[gameKey].accuracy ?? null,
+    bestStreak: details.bestStreak ?? save.missions[gameKey].bestStreak ?? null,
+    totalAttempts: details.totalAttempts ?? save.missions[gameKey].totalAttempts ?? null,
+    weakestTag: details.weakestTag ?? save.missions[gameKey].weakestTag ?? null,
+    strongestTag: details.strongestTag ?? save.missions[gameKey].strongestTag ?? null,
+    artifact: details.artifact ?? save.missions[gameKey].artifact ?? null,
+    completedAt: details.completed ? new Date().toISOString() : save.missions[gameKey].completedAt ?? null,
+    updatedAt: new Date().toISOString()
+  };
+
+  if(details.logMessage){
+    save.log.unshift({
+      mission: game.title,
+      message: details.logMessage,
+      timestamp: new Date().toISOString()
+    });
+    save.log = save.log.slice(0, 30);
+  }
+
+  setHubSave(save);
+}
+
+function syncHubSaveFromExistingKeys(){
+  Object.keys(games).forEach(key => {
+    const game = games[key];
+    const completed = getStorageFlag(game.statusKey);
+    const started = getStorageFlag(game.startedKey);
+    const room = localStorage.getItem(game.roomKey);
+
+    if(completed || started || room){
+      recordMissionProgress(key, {
+        started,
+        completed,
+        room: room || null
+      });
+    }
+  });
+}
+
+  function toggleBriefingFolder(){
+    const folder = document.getElementById("briefingFolder");
+    const button = document.querySelector(".briefing-folder-header");
+    const toggle = document.getElementById("briefingFolderToggle");
+    if(!folder) return;
+    const isOpen = folder.classList.toggle("open");
+    folder.classList.toggle("collapsed", !isOpen);
+    if(button){ button.setAttribute("aria-expanded", isOpen ? "true" : "false"); }
+    if(toggle){ toggle.innerText = isOpen ? "Close" : "Open"; }
+    localStorage.setItem("macroHub_briefingOpen", isOpen ? "true" : "false");
+  }
+
+  function restoreBriefingFolderState(){
+    const shouldOpen = localStorage.getItem("macroHub_briefingOpen") === "true";
+    const folder = document.getElementById("briefingFolder");
+    const button = document.querySelector(".briefing-folder-header");
+    const toggle = document.getElementById("briefingFolderToggle");
+    if(!folder) return;
+    folder.classList.toggle("open", shouldOpen);
+    folder.classList.toggle("collapsed", !shouldOpen);
+    if(button){ button.setAttribute("aria-expanded", shouldOpen ? "true" : "false"); }
+    if(toggle){ toggle.innerText = shouldOpen ? "Close" : "Open"; }
+  }
+
+  /* =========================================================
+     UPGRADE: Ordered macro progression.
+     The hub uses sequence values to recommend/launch the next mission
+     and to lock later systems until earlier systems are restored.
+     ========================================================= */
+
+  function getSortedMissionKeys(){
+    return Object.keys(games).sort((a, b) => (games[a].sequence || 999) - (games[b].sequence || 999));
+  }
+
+  function getPreviousMissionKey(gameKey){
+    const sortedKeys = getSortedMissionKeys();
+    const index = sortedKeys.indexOf(gameKey);
+    return index > 0 ? sortedKeys[index - 1] : null;
+  }
+
+  function isMissionUnlocked(gameKey){
+    const sortedKeys = getSortedMissionKeys();
+    const index = sortedKeys.indexOf(gameKey);
+    if(index <= 0) return true;
+    return sortedKeys.slice(0, index).every(key => getStorageFlag(games[key].statusKey));
+  }
+
+  function pluralize(count, singular, plural){ return count === 1 ? singular : plural; }
+  function getStorageFlag(key){
+    const value = localStorage.getItem(key);
+    return value === "true" || value === "1";
+  }
+function updateGameStatuses(){
+  let restoredCount = 0;
+  let contestedCount = 0;
+  const sortedKeys = getSortedMissionKeys();
+  const totalMissions = sortedKeys.length;
+
+  sortedKeys.forEach(key => {
+    const statusElement = document.getElementById("status-" + key);
+    const card = statusElement ? statusElement.closest(".game-card") : document.querySelector(".game-card." + key);
+    const game = games[key];
+    if(!game) return;
+
+    const completed = getStorageFlag(game.statusKey);
+    const started = getStorageFlag(game.startedKey);
+    const room = localStorage.getItem(game.roomKey);
+    const unlocked = isMissionUnlocked(key);
+    const badge = document.getElementById("badge-" + key);
+    const briefing = document.getElementById("briefing-" + key);
+    const enterButton = card ? card.querySelector(".enter-btn") : null;
+
+    if(card){
+      card.classList.remove("restored", "contested", "unstable", "locked");
+      card.classList.toggle("locked", !unlocked && !completed);
+    }
+
+    if(enterButton){
+      enterButton.disabled = !unlocked && !completed;
+      enterButton.innerText = (unlocked || completed) ? (game.buttonText || "Enter Mission") : (game.lockedText || "Locked");
+    }
+
+    if(!statusElement) return;
+
+    if(completed){
+      statusElement.innerText = game.restoredText || "Restored";
+      statusElement.dataset.realmState = "restored";
+      if(card){ card.classList.add("restored"); }
+      if(badge){ badge.innerText = game.artifactText || "Artifacts secured · System restored"; }
+      if(briefing){ briefing.innerText = game.storyRestored || "System restored."; }
+      restoredCount++;
+    } else if(!unlocked){
+      const previousKey = getPreviousMissionKey(key);
+      const previousTitle = previousKey && games[previousKey] ? games[previousKey].title : "the previous system";
+      statusElement.innerText = game.lockedText || "Locked";
+      statusElement.dataset.realmState = "locked";
+      if(card){ card.classList.add("locked"); }
+      if(badge){ badge.innerText = ""; }
+      if(briefing){ briefing.innerText = `Restore ${previousTitle} before entering this mission.`; }
+    } else if(started){
+      statusElement.innerText = room ? `${game.contestedText || "Contested"} · Room ${room}` : (game.contestedText || "Contested");
+      statusElement.dataset.realmState = "contested";
+      if(card){ card.classList.add("contested"); }
+      if(badge){ badge.innerText = ""; }
+      if(briefing){ briefing.innerText = game.storyActive || "Mission active."; }
+      contestedCount++;
+    } else {
+      statusElement.innerText = game.unstableText || "Ready";
+      statusElement.dataset.realmState = "unstable";
+      if(card){ card.classList.add("unstable"); }
+      if(badge){ badge.innerText = ""; }
+      if(briefing){ briefing.innerText = game.storyIntro || "Mission awaiting restoration."; }
+    }
+  });
+
+  updateNextMission();
+  updateMacroNarrative();
+  renderMacroProgression();
+  updateBriefingFolderSummary(restoredCount, totalMissions);
+  renderArtifactVault();
+  renderAchievements();
+}
+function updateBriefingFolderSummary(restoredCount, totalMissions){
+  const title = document.getElementById("briefingFolderTitle");
+  const subtext = document.getElementById("briefingFolderSubtext");
+
+  if(title){
+    title.innerText = `${restoredCount} of ${totalMissions} ${pluralize(totalMissions, "system", "systems")} restored`;
+  }
+
+  if(subtext){
+    if(nextMissionKey && games[nextMissionKey]){
+      const game = games[nextMissionKey];
+      const started = getStorageFlag(game.startedKey);
+      const room = localStorage.getItem(game.roomKey);
+      subtext.innerText = started && room
+        ? `Continue: ${game.title} · Room ${room}`
+        : `Next Mission: ${game.title}`;
+    } else {
+      subtext.innerText = "All systems restored";
+    }
+  }
+}
+
+function updateNextMission(){
+  const nextMissionBox = document.getElementById("nextMissionBox");
+  const nextMissionTitle = document.getElementById("nextMissionTitle");
+  const nextMissionReason = document.getElementById("nextMissionReason");
+  const nextMissionButton = document.getElementById("nextMissionButton");
+
+  const orderedKeys = getSortedMissionKeys();
+  nextMissionKey = orderedKeys.find(key => !getStorageFlag(games[key].statusKey)) || null;
+
+  if(!nextMissionBox || !nextMissionTitle || !nextMissionReason || !nextMissionButton){
+    return;
+  }
+
+  if(nextMissionKey){
+    const game = games[nextMissionKey];
+    const started = getStorageFlag(game.startedKey);
+    const room = localStorage.getItem(game.roomKey);
+
+    nextMissionTitle.innerText = game.title;
+
+    if(started && room){
+      nextMissionReason.innerText = `${game.contestedText || "Mission active"} · Continue from Room ${room}.`;
+      nextMissionButton.innerText = "Continue Mission";
+    } else {
+      nextMissionReason.innerText = game.nextReason || "Begin the next available mission.";
+      nextMissionButton.innerText = "Begin Next Mission";
+    }
+
+    nextMissionButton.disabled = false;
+    nextMissionBox.dataset.realmState = "active";
+  } else {
+    nextMissionTitle.innerText = "Macro Realm Stabilized";
+    nextMissionReason.innerText = "Every major macro system has been restored. The Realm is stable.";
+    nextMissionButton.innerText = "All Missions Complete";
+    nextMissionButton.disabled = true;
+    nextMissionBox.dataset.realmState = "complete";
+  }
+}
+function updateMacroNarrative(){
+  const narrative = document.getElementById("macroNarrativeText");
+  if(!narrative) return;
+
+  const orderedKeys = getSortedMissionKeys();
+  const restoredKeys = orderedKeys.filter(key => getStorageFlag(games[key].statusKey));
+  const activeKey = orderedKeys.find(key => getStorageFlag(games[key].startedKey) && !getStorageFlag(games[key].statusKey));
+  const nextKey = orderedKeys.find(key => !getStorageFlag(games[key].statusKey));
+
+  if(restoredKeys.length === orderedKeys.length){
+    narrative.innerText = "The Macro Realm is stabilized. Every system has been restored. The machine finally stopped screaming.";
+    return;
+  }
+
+  if(activeKey){
+    narrative.innerText = games[activeKey].storyActive || "A mission is active. Finish the run.";
+    return;
+  }
+
+  if(nextKey){
+    const nextGame = games[nextKey];
+    if(restoredKeys.length === 0){
+      narrative.innerText = nextGame.storyIntro || "Begin the first mission to stabilize the Macro Realm.";
+    } else {
+      const lastRestoredKey = restoredKeys[restoredKeys.length - 1];
+      const lastRestored = games[lastRestoredKey];
+      narrative.innerText = `${lastRestored.storyRestored || "A system has been restored."} ${nextGame.storyIntro || "Continue to the next mission."}`;
+    }
+    return;
+  }
+
+  narrative.innerText = "The Macro Realm remains unstable. Restore each system in sequence to bring the economy back under control.";
+}
+
+function renderMacroProgression(){
+  const target = document.getElementById("macroProgressionGrid");
+  if(!target) return;
+
+  const sortedKeys = getSortedMissionKeys();
+  target.innerHTML = sortedKeys.map((key, index) => {
+    const game = games[key];
+    const completed = getStorageFlag(game.statusKey);
+    const started = getStorageFlag(game.startedKey);
+    const room = localStorage.getItem(game.roomKey);
+    const unlocked = isMissionUnlocked(key);
+    const previousKey = getPreviousMissionKey(key);
+    const previousTitle = previousKey && games[previousKey] ? games[previousKey].title : "the previous system";
+
+    let state = "ready";
+    let status = "Ready";
+    let reason = game.nextReason || game.storyIntro || "Mission ready.";
+    let actionText = game.buttonText || "Enter Mission";
+    let disabled = false;
+
+    if(completed){
+      state = "restored";
+      status = "Restored";
+      reason = game.storyRestored || "System restored.";
+      actionText = "Review Mission";
+    } else if(!unlocked){
+      state = "locked";
+      status = "Locked";
+      reason = `Restore ${previousTitle} to unlock this system.`;
+      actionText = "Locked";
+      disabled = true;
+    } else if(started){
+      state = "active";
+      status = room ? `Active · Room ${room}` : "Active";
+      reason = game.storyActive || game.nextReason || "Mission active.";
+      actionText = "Continue Mission";
+    }
+
+    return `
+      <article class="macro-progression-step ${state}" data-step="${index + 1}">
+        <div class="macro-progression-status">${status}</div>
+        <div class="macro-progression-title">${game.title}</div>
+        <div class="macro-progression-reason">${reason}</div>
+        <button class="macro-progression-action" ${disabled ? "disabled" : `onclick="selectGame('${key}')"`}>
+          ${actionText}
+        </button>
+      </article>
+    `;
+  }).join("");
+}
+
+  function launchNextMission(){ if(nextMissionKey){ selectGame(nextMissionKey); } }
+function renderMacroLog(){
+  const target = document.getElementById("macroLogContent");
+  if(!target) return;
+  const save = getHubSave();
+  const log = save.log || [];
+  if(log.length === 0){
+    target.innerHTML = "No mission activity recorded yet.";
+    return;
+  }
+  target.innerHTML = log.map(entry => {
+    const date = new Date(entry.timestamp || Date.now());
+    const readableDate = isNaN(date) ? "" : date.toLocaleString();
+    return `<div class="macro-log-entry"><div class="macro-log-title">${entry.message}</div><div class="macro-log-meta">${entry.mission || "Macro Hub"} · ${readableDate}</div></div>`;
+  }).join("");
+}
+
+  function renderArtifactVault(){
+    const target = document.getElementById("artifactVaultContent");
+    if(!target) return;
+    const groups = getSortedMissionKeys().map(gameKey => {
+      const game = games[gameKey];
+      const unlocked = getStorageFlag(game.statusKey);
+      const cards = (game.artifacts || []).map((artifact, index) => {
+        const artifactId = `${gameKey}-${artifact.key || index}`;
+        const title = artifact.title || `Artifact ${index + 1}`;
+        const description = artifact.text || "Artifact details unavailable.";
+        const statusText = unlocked ? "Unlocked" : "Sealed";
+        const unlockText = unlocked ? `Unlocked by restoring ${game.title}.` : `Restore ${game.title} to unlock this artifact set.`;
+        const interactionAttrs = unlocked
+          ? `role="button" tabindex="0" data-game-key="${gameKey}" data-artifact-index="${index}" onclick="openArtifactModalFromElement(this)" onkeydown="handleArtifactKeydown(event, this)"`
+          : "";
+        return `
+          <article class="artifact-card ${unlocked ? 'unlocked' : 'locked'}" data-artifact-id="${artifactId}" ${interactionAttrs}>
+            <img src="${artifact.img}" alt="${title}">
+            <div class="artifact-card-status">${statusText}</div>
+            <div class="artifact-card-title">${title}</div>
+            <div class="artifact-card-text">${description}</div>
+            <div class="artifact-card-unlock">${unlockText}</div>
+          </article>`;
+      }).join("");
+      return `<section class="artifact-group"><h3 class="artifact-group-title">${game.title}</h3><div class="artifact-grid">${cards}</div></section>`;
+    }).join("");
+    target.innerHTML = `<div class="artifact-groups">${groups}</div>`;
+  }
+
+  function openArtifactModalFromElement(element){
+    const gameKey = element.dataset.gameKey;
+    const index = Number(element.dataset.artifactIndex || 0);
+    const game = games[gameKey];
+    if(!game || !getStorageFlag(game.statusKey)) return;
+    const artifact = (game.artifacts || [])[index];
+    if(!artifact) return;
+    openArtifactModal(game, artifact);
+  }
+
+  function handleArtifactKeydown(event, element){
+    if(event.key === "Enter" || event.key === " "){
+      event.preventDefault();
+      openArtifactModalFromElement(element);
+    }
+  }
+
+  function openArtifactModal(game, artifact){
+    const modal = document.getElementById("artifactDetailModal");
+    if(!modal) return;
+    document.getElementById("artifactDetailTitle").innerText = artifact.title || "Artifact";
+    document.getElementById("artifactDetailSource").innerText = game.title || "Macro System";
+    const image = document.getElementById("artifactDetailImage");
+    image.src = artifact.img || "";
+    image.alt = artifact.title || "Artifact";
+    document.getElementById("artifactDetailMeaning").innerText = artifact.text || "Artifact details unavailable.";
+    const conceptPower = document.getElementById("artifactDetailConceptPower");
+    const whyItMatters = document.getElementById("artifactDetailWhyItMatters");
+    if(conceptPower){ conceptPower.innerText = artifact.conceptPower || "This artifact is tied to a major macro concept in the mission."; }
+    if(whyItMatters){ whyItMatters.innerText = artifact.whyItMatters || "It marks a common place where surface-level memorization breaks down."; }
+    modal.classList.add("active");
+  }
+
+  function closeArtifactModal(){ document.getElementById("artifactDetailModal").classList.remove("active"); }
+
+
+function escapeForAttribute(value){
+  return String(value)
+    .replace(/\\/g, "\\\\")
+    .replace(/'/g, "\\'")
+    .replace(/"/g, "&quot;")
+    .replace(/\n/g, " ");
+}
+
+function openAchievementModal(image, title, description, status){
+  const modal = document.getElementById("achievementDetailModal");
+  const modalImage = document.getElementById("achievementDetailImage");
+  const modalTitle = document.getElementById("achievementDetailTitle");
+  const modalStatus = document.getElementById("achievementDetailStatus");
+  const modalDescription = document.getElementById("achievementDetailDescription");
+
+  if(!modal || !modalImage || !modalTitle || !modalStatus || !modalDescription) return;
+
+  modalImage.src = image || "";
+  modalImage.alt = title || "Achievement";
+  modalImage.style.display = image ? "inline-block" : "none";
+  modalTitle.innerText = title || "Achievement";
+  modalStatus.innerText = status || "Locked";
+  modalDescription.innerText = description || "Achievement details unavailable.";
+
+  modal.classList.add("active");
+}
+
+function closeAchievementModal(){
+  const modal = document.getElementById("achievementDetailModal");
+  if(modal){ modal.classList.remove("active"); }
+}
+
+/* =========================================================
+   UPGRADE: Macro Achievement System
+   ========================================================= */
+const ACHIEVEMENT_DEFINITIONS = [
+  {
+    id: "firstSteps",
+    title: "First Steps",
+    description: "Complete one standard mission.",
+    icon: "first_steps.webp",
+    unlocked: stats => stats.standardCompletions >= 1
+  },
+  {
+    id: "gearsAssembled",
+    title: "Gears Assembled",
+    description: "Complete two standard missions.",
+    icon: "gears_assembled.webp",
+    unlocked: stats => stats.standardCompletions >= 2
+  },
+  {
+    id: "engineRestored",
+    title: "Engine Restored",
+    description: "Restore all standard Macro Test Prep missions.",
+    icon: "engine_restored.webp",
+    unlocked: stats => stats.standardCompletions >= stats.totalMissions
+  },
+  {
+    id: "unbrokenCurrent",
+    title: "Unbroken Current",
+    description: "Reach a streak of 20.",
+    icon: "unbroken_current.webp",
+    unlocked: stats => stats.bestStreak >= 20
+  },
+  {
+    id: "trialByClock",
+    title: "Trial by Clock",
+    description: "Reach Room 30 in Timed Trial with at least 80% accuracy.",
+    icon: "trial_by_clock.webp",
+    unlocked: stats => stats.timedRoom >= 30 && stats.timedAccuracy >= 80
+  },
+  {
+    id: "boilerRoomSurvivor",
+    title: "Boiler Room Survivor",
+    description: "Complete an Exam Drill session.",
+    icon: "boiler_room_survivor.webp",
+    unlocked: stats => stats.examSessions >= 1
+  },
+  {
+    id: "brassboundChallenger",
+    title: "Brassbound Challenger",
+    description: "Complete one mission in Legendary Mode.",
+    icon: "brassbound_challenger.webp",
+    unlocked: stats => stats.legendaryCompletions >= 1
+  },
+  {
+    id: "masterOfTheMachine",
+    title: "Master of the Machine",
+    description: "Complete every mission in Legendary Mode.",
+    icon: "master_machine.webp",
+    unlocked: stats => stats.legendaryCompletions >= stats.totalMissions
+  },
+  {
+    id: "perfectCalibration",
+    title: "Perfect Calibration",
+    description: "Defeat all three bosses in a single mission without a wrong answer.",
+    icon: "perfect_calibration.webp",
+    unlocked: stats => stats.perfectBossRuns >= 1
+  },
+  {
+    id: "returnGearwright",
+    title: "Return of the Gearwright",
+    description: "Resume a saved run and finish it.",
+    icon: "return_gearwright.webp",
+    unlocked: stats => stats.resumeFinishes >= 1
+  },
+  {
+    id: "custodiansCollection",
+    title: "The Custodian’s Collection",
+    description: "Collect six artifacts.",
+    icon: "custodians_collection.webp",
+    unlocked: stats => stats.artifactsCollected >= 6
+  },
+  {
+    id: "custodiansTrial",
+    title: "The Custodian’s Trial",
+    description: "Answer 400 questions correctly.",
+    icon: "custodians_trial.webp",
+    unlocked: stats => stats.totalCorrect >= 400
+  }
+];
+
+function getMissionPrefixes(){
+  return {
+    engine: ["engine", "nationalEngine", "theNationalEngine"],
+    mint: ["mint", "mintOfAshAndGold", "theMintOfAshAndGold"],
+    nexus: ["nexus", "commandNexus", "theCommandNexus"],
+    citadel: ["citadel", "exchangeCitadel", "theExchangeCitadel"]
+  };
+}
+
+function localStorageNumber(key){
+  const value = Number(localStorage.getItem(key));
+  return Number.isFinite(value) ? value : 0;
+}
+
+function localStorageFlag(key){
+  const value = localStorage.getItem(key);
+  return value === "true" || value === "1";
+}
+
+function getAllLocalStorageEntries(){
+  const entries = [];
+  for(let i = 0; i < localStorage.length; i++){
+    const key = localStorage.key(i);
+    entries.push({
+      key,
+      lowerKey: String(key || "").toLowerCase(),
+      value: localStorage.getItem(key)
+    });
+  }
+  return entries;
+}
+
+function getMaxNumberFromKeys(keyMatchers){
+  return getAllLocalStorageEntries().reduce((max, entry) => {
+    const matches = keyMatchers.some(matcher => matcher(entry.lowerKey));
+    if(!matches) return max;
+    const value = Number(entry.value);
+    return Number.isFinite(value) ? Math.max(max, value) : max;
+  }, 0);
+}
+
+function countTrueKeys(keyMatchers){
+  return getAllLocalStorageEntries().reduce((count, entry) => {
+    const matches = keyMatchers.some(matcher => matcher(entry.lowerKey));
+    const isTrue = entry.value === "true" || entry.value === "1";
+    return matches && isTrue ? count + 1 : count;
+  }, 0);
+}
+
+function sumNumberFromKeys(keyMatchers){
+  return getAllLocalStorageEntries().reduce((sum, entry) => {
+    const matches = keyMatchers.some(matcher => matcher(entry.lowerKey));
+    if(!matches) return sum;
+    const value = Number(entry.value);
+    return Number.isFinite(value) ? sum + value : sum;
+  }, 0);
+}
+
+function getBestTimedTrialRecord(){
+  const prefixes = Object.values(getMissionPrefixes()).flat().map(prefix => prefix.toLowerCase());
+  let best = { room: 0, accuracy: 0 };
+
+  prefixes.forEach(prefix => {
+    const room = Math.max(
+      localStorageNumber(`${prefix}timedlasthighestroom`),
+      localStorageNumber(`${prefix}timedbestroom`),
+      localStorageNumber(`${prefix}timedlastroom`),
+      localStorageNumber(`macrohub_${prefix}_timed_room`),
+      localStorageNumber(`macrohub_${prefix}_timed_best_room`)
+    );
+    const accuracy = Math.max(
+      localStorageNumber(`${prefix}timedlastaccuracy`),
+      localStorageNumber(`${prefix}timedbestaccuracy`),
+      localStorageNumber(`macrohub_${prefix}_timed_accuracy`),
+      localStorageNumber(`macrohub_${prefix}_timed_best_accuracy`)
+    );
+
+    if(room > best.room || (room === best.room && accuracy > best.accuracy)){
+      best = { room, accuracy };
+    }
+  });
+
+  getAllLocalStorageEntries().forEach(entry => {
+    if(entry.lowerKey.includes("timed") && entry.lowerKey.includes("room")){
+      const room = Number(entry.value);
+      if(Number.isFinite(room)){ best.room = Math.max(best.room, room); }
+    }
+    if(entry.lowerKey.includes("timed") && entry.lowerKey.includes("accuracy")){
+      const accuracy = Number(entry.value);
+      if(Number.isFinite(accuracy)){ best.accuracy = Math.max(best.accuracy, accuracy); }
+    }
+  });
+
+  return best;
+}
+
+function getAchievementStats(){
+  const orderedKeys = getSortedMissionKeys();
+  const totalMissions = orderedKeys.length;
+  const save = getHubSave();
+  const missionSave = save.missions || {};
+
+  const standardCompletions = orderedKeys.filter(key => localStorageFlag(games[key].statusKey)).length;
+
+  const legendaryCompletions = orderedKeys.filter(key => {
+    const candidates = [
+      `macroHub_${key}_legendary_complete`,
+      `macrohub_${key}_legendary_complete`,
+      `${key}LegendaryComplete`,
+      `${key}_legendary_complete`,
+      `macroTestPrep_${key}_legendary_complete`
+    ];
+    return candidates.some(localStorageFlag);
+  }).length;
+
+  const artifactsCollected = orderedKeys.reduce((count, key) => {
+    return localStorageFlag(games[key].statusKey) ? count + ((games[key].artifacts || []).length) : count;
+  }, 0);
+
+  const timedRecord = getBestTimedTrialRecord();
+
+  const bestStreak = Math.max(
+    getMaxNumberFromKeys([
+      key => key.includes("macrohub") && (key.includes("maxstreak") || key.includes("beststreak")),
+      key => key.includes("maxstreak"),
+      key => key.includes("beststreak"),
+      key => key.includes("timedlaststreak")
+    ]),
+    ...Object.values(missionSave).map(mission => Number(mission.bestStreak || 0))
+  );
+
+  const examSessions = countTrueKeys([
+    key => key.includes("macrohub") && key.includes("exam") && (key.includes("complete") || key.includes("survivor")),
+    key => key.includes("exam") && (key.includes("complete") || key.includes("survivor"))
+  ]);
+
+  const perfectBossRuns = countTrueKeys([
+    key => key.includes("perfect") && (key.includes("boss") || key.includes("calibration")) && (key.includes("complete") || key.includes("run"))
+  ]);
+
+  const resumeFinishes = countTrueKeys([
+    key => (key.includes("resume") || key.includes("rebuild") || key.includes("gearwright")) && (key.includes("finish") || key.includes("complete"))
+  ]);
+
+  const totalCorrect = Math.max(
+    localStorageNumber("macroHub_totalCorrect"),
+    localStorageNumber("macroHub_totalCorrectAnswers"),
+    localStorageNumber("macroTestPrep_totalCorrect"),
+    localStorageNumber("macroTestPrep_totalCorrectAnswers"),
+    sumNumberFromKeys([
+      key => key.includes("correcttotal"),
+      key => key.includes("totalcorrect"),
+      key => key.includes("correctanswerslifetime")
+    ])
+  );
+
+  return {
+    totalMissions,
+    standardCompletions,
+    legendaryCompletions,
+    artifactsCollected,
+    bestStreak,
+    timedRoom: timedRecord.room,
+    timedAccuracy: timedRecord.accuracy,
+    examSessions,
+    perfectBossRuns,
+    resumeFinishes,
+    totalCorrect
+  };
+}
+
+function getUnlockedAchievements(){
+  const stats = getAchievementStats();
+  return ACHIEVEMENT_DEFINITIONS.map(achievement => {
+    let unlocked = false;
+    try{
+      unlocked = !!achievement.unlocked(stats);
+    } catch(error){
+      console.warn("Achievement check failed:", achievement.id, error);
+    }
+    return { ...achievement, unlocked };
+  });
+}
+
+function renderAchievementIcon(item){
+  if(item.icon && /\.(png|jpg|jpeg|gif|webp|svg)$/i.test(item.icon)){
+    return `<img src="${item.icon}" alt="" aria-hidden="true" onerror="this.style.display='none'; this.parentElement.classList.add('missing-icon');">`;
+  }
+  return item.icon || "★";
+}
+
+function renderAchievements(){
+  const container = document.getElementById("achievementsContent");
+  if(!container) return;
+
+  const stats = getAchievementStats();
+  const achievements = getUnlockedAchievements();
+  const unlockedCount = achievements.filter(item => item.unlocked).length;
+  const totalCount = achievements.length;
+  const progressPct = totalCount ? Math.round((unlockedCount / totalCount) * 100) : 0;
+
+  const cards = achievements.map(item => {
+    const safeTitle = escapeForAttribute(item.title || "");
+    const safeDescription = escapeForAttribute(item.description || "");
+    const safeIcon = escapeForAttribute(item.icon || "");
+    const safeStatus = escapeForAttribute(item.unlocked ? "Unlocked" : "Locked");
+
+    return `
+      <div class="achievement-card ${item.unlocked ? "unlocked" : "locked"}"
+        onclick="openAchievementModal('${safeIcon}', '${safeTitle}', '${safeDescription}', '${safeStatus}')"
+        role="button"
+        tabindex="0"
+        aria-label="Open achievement ${safeTitle}"
+        onkeydown="if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); openAchievementModal('${safeIcon}', '${safeTitle}', '${safeDescription}', '${safeStatus}'); }">
+        <div class="achievement-icon" aria-hidden="true">${renderAchievementIcon(item)}</div>
+        <div>
+          <div class="achievement-name">${item.title}</div>
+          <div class="achievement-desc">${item.description}</div>
+          <div class="achievement-status">${item.unlocked ? "Unlocked" : "Locked"}</div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  container.innerHTML = `
+    <div class="achievement-summary">
+      <div class="achievement-summary-label">Achievement Progress</div>
+      <div class="achievement-summary-title">${unlockedCount}/${totalCount}</div>
+      <div class="achievement-summary-text">
+        ${stats.standardCompletions}/${stats.totalMissions} standard missions restored ·
+        ${stats.legendaryCompletions}/${stats.totalMissions} legendary missions cleared ·
+        ${stats.artifactsCollected} artifacts secured
+      </div>
+      <div class="achievement-progress-track" aria-hidden="true">
+        <div class="achievement-progress-fill" style="width:${progressPct}%"></div>
+      </div>
+    </div>
+    <div class="achievement-grid">${cards}</div>
+  `;
+}
+
+
+  function normalizeRecoveryCode(value){
+    return String(value || "")
+      .trim()
+      .toUpperCase()
+      .replace(/\s+/g, "");
+  }
+function restoreMissionFromCode(){
+  const selector = document.getElementById("recoveryMission");
+  const codeInput = document.getElementById("recoveryCode");
+  const message = document.getElementById("recoveryMessage");
+  if(!selector || !codeInput || !message) return;
+
+  const gameKey = selector.value;
+  const game = games[gameKey];
+  const enteredCode = normalizeRecoveryCode(codeInput.value);
+  const expectedCode = normalizeRecoveryCode(game ? game.recoveryCode : "");
+
+  if(!game){
+    message.className = "recovery-message error";
+    message.innerText = "No mission selected.";
+    return;
+  }
+
+  if(!enteredCode){
+    message.className = "recovery-message error";
+    message.innerText = "Enter a recovery code first.";
+    return;
+  }
+
+  if(!expectedCode || enteredCode !== expectedCode){
+    message.className = "recovery-message error";
+    message.innerText = "That recovery code does not match this mission.";
+    return;
+  }
+
+  localStorage.setItem(game.statusKey, "true");
+  localStorage.setItem(game.startedKey, "true");
+  localStorage.setItem(game.roomKey, "30");
+
+  recordMissionProgress(gameKey, {
+    started:true,
+    completed:true,
+    room:"30",
+    logMessage:`${game.title} restored from recovery code.`
+  });
+
+  updateGameStatuses();
+  renderMacroLog();
+  renderArtifactVault();
+  renderAchievements();
+
+  message.className = "recovery-message success";
+  message.innerText = `${game.title} restored as complete on this device.`;
+  codeInput.value = "";
+}
+function selectGame(gameKey){
+    if(!games[gameKey]){
+      alert("Select a mission first.");
+      return;
+    }
+
+    if(!isMissionUnlocked(gameKey) && !getStorageFlag(games[gameKey].statusKey)){
+      alert("This mission is locked. Restore the previous system first.");
+      return;
+    }
+
+    localStorage.setItem("selectedGauntlet", gameKey);
+    localStorage.setItem("selectedMission", gameKey);
+    localStorage.setItem(games[gameKey].startedKey, "true");
+
+    recordMissionProgress(gameKey, {
+      started:true,
+      completed:getStorageFlag(games[gameKey].statusKey),
+      room:localStorage.getItem(games[gameKey].roomKey),
+      logMessage:`${games[gameKey].title} selected from the Macro Test Prep hub.`
+    });
+
+    updateGameStatuses();
+    stopMenuMusic();
+    window.location.href = games[gameKey].file;
+  }
+
+  document.addEventListener("keydown", event => {
+    if(event.key === "Escape"){
+      const artifactModal = document.getElementById("artifactDetailModal");
+      const achievementModal = document.getElementById("achievementDetailModal");
+      const macroModal = document.getElementById("macroMenuModal");
+      const helpModal = document.getElementById("helpModal");
+      if(achievementModal && achievementModal.classList.contains("active")){ closeAchievementModal(); return; }
+      if(artifactModal && artifactModal.classList.contains("active")){ closeArtifactModal(); return; }
+      if(helpModal && helpModal.classList.contains("active") && typeof closeHelpModal === "function"){ closeHelpModal(); return; }
+      if(macroModal && macroModal.classList.contains("active")){ closeMacroMenu(); return; }
+      stopMenuMusic();
+    }
+  });
+</script>
+</body>
+</html>
+
