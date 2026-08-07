@@ -430,16 +430,18 @@ select {
 }
 
 .model-legend li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 22px auto;
+  justify-items: center;
+  align-items: start;
   gap: 6px;
+  min-width: 0;
 }
 
 .model-legend span {
   width: 22px;
   height: 22px;
-  display: inline-grid;
+  display: grid;
   place-items: center;
   color: var(--navy-950);
   background: var(--teal-300);
@@ -2004,7 +2006,7 @@ button:focus-visible {
 }
 
 .home-model-section {
-  padding: 64px 0;
+  padding: 58px 0;
   background: var(--white);
 }
 
@@ -2096,6 +2098,14 @@ button:focus-visible {
 
 .segment-master {
   stroke: #3e819c;
+}
+
+.mastery-arrow path {
+  fill: #061d46;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 1.5;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.08));
 }
 
 .mastery-center-disc {

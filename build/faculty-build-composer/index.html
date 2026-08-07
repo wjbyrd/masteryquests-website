@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260805-micro-preset-v3">
+  <link rel="stylesheet" href="composer.css?v=20260807-composer-ux-micro-presets-v4">
 </head>
 <body>
   <header class="site-header">
@@ -60,17 +60,13 @@
           </div>
         </div>
 
-        <div class="preset-section" aria-labelledby="presetHeading">
-          <div>
-            <h3 id="presetHeading">Starter combinations</h3>
-            <p>Use a preset as a starting point, then add or remove concepts to match your course.</p>
-          </div>
-          <div id="presetOptions" class="preset-options"></div>
+        <div class="concept-flow-note">
+          <strong>Start with a course area.</strong> The composer will narrow both the starter combinations and the concept library before you make selections.
         </div>
 
         <div class="filters">
           <div class="field">
-            <label for="areaFilter">Course area</label>
+            <label for="areaFilter">1. Course area</label>
             <select id="areaFilter" aria-describedby="areaFilterHint">
               <option value="" selected>Choose a course area</option>
               <option value="general">General economics</option>
@@ -80,17 +76,25 @@
             <small id="areaFilterHint">Concept cards stay hidden until you choose an area.</small>
           </div>
           <div class="field">
-            <label for="conceptSearch">Search within area</label>
+            <label for="conceptSearch">2. Search within area</label>
             <input id="conceptSearch" placeholder="Search concepts or descriptions" disabled>
           </div>
           <div class="field">
-            <label for="selectionFilter">Selection</label>
+            <label for="selectionFilter">3. Show</label>
             <select id="selectionFilter" disabled>
               <option value="all">All concepts in this area</option>
               <option value="selected">Selected only</option>
               <option value="unselected">Not selected</option>
             </select>
           </div>
+        </div>
+
+        <div class="preset-section" aria-labelledby="presetHeading">
+          <div>
+            <h3 id="presetHeading">Starter combinations</h3>
+            <p id="presetHelp">Choose a course area to see relevant quick starts.</p>
+          </div>
+          <div id="presetOptions" class="preset-options"></div>
         </div>
 
         <div id="selectedConceptSummary" class="selected-summary" aria-live="polite"></div>
@@ -156,8 +160,8 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260805-micro-preset-v3"></script>
-  <script src="data/composer_library.js?v=20260805-micro-preset-v3"></script>
-  <script src="composer.js?v=20260805-micro-preset-v3"></script>
+  <script src="composer-core.js?v=20260807-composer-ux-micro-presets-v4"></script>
+  <script src="data/composer_library.js?v=20260807-composer-ux-micro-presets-v4"></script>
+  <script src="composer.js?v=20260807-composer-ux-micro-presets-v4"></script>
 </body>
 </html>

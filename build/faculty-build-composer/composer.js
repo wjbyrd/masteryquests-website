@@ -69,25 +69,54 @@ const PRESETS = [
     ]
   },
   {
-    id: 'market-fundamentals',
+    id: 'micro-market-foundations',
     area: 'micro',
-    title: 'Market fundamentals',
-    description: 'Demand, supply, equilibrium, price signals, controls, and taxes.',
+    title: 'Micro: market foundations',
+    description: 'Competitive markets, demand, supply, equilibrium, price signals, elasticity, and surplus.',
     conceptIds: [
-      'competitive-markets', 'demand', 'supply', 'market-equilibrium', 'consumer-and-producer-surplus', 'price-signals',
-      'binding-price-ceilings', 'binding-price-floors', 'tax-wedges-and-revenue',
-      'statutory-versus-economic-tax-incidence', 'tax-incidence'
+      'competitive-markets', 'demand', 'supply', 'market-equilibrium',
+      'price-signals', 'elasticity', 'consumer-and-producer-surplus'
+    ]
+  },
+  {
+    id: 'micro-market-policy',
+    area: 'micro',
+    title: 'Micro: market policy',
+    description: 'Elasticity and surplus applied to price controls, tax wedges, and tax incidence.',
+    conceptIds: [
+      'elasticity', 'consumer-and-producer-surplus',
+      'binding-price-ceilings', 'binding-price-floors', 'tax-wedges-and-revenue', 'tax-incidence'
+    ]
+  },
+  {
+    id: 'micro-trade-welfare',
+    area: 'micro',
+    title: 'Micro: trade and welfare',
+    description: 'Gains from trade, elasticity, consumer and producer surplus, and international trade policy.',
+    conceptIds: [
+      'gains-from-trade', 'elasticity', 'consumer-and-producer-surplus',
+      'international-trade-and-trade-policy'
     ]
   },
   {
     id: 'micro-firms-markets',
     area: 'micro',
-    title: 'Microeconomics: firms and markets',
-    description: 'Elasticity, surplus, trade, production costs, and firm behavior across market structures.',
+    title: 'Micro: firms and market structure',
+    description: 'Production costs and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.',
     conceptIds: [
-      'elasticity', 'consumer-and-producer-surplus',
-      'international-trade-and-trade-policy', 'costs-of-production',
-      'perfect-competition', 'monopoly',
+      'costs-of-production', 'perfect-competition', 'monopoly',
+      'monopolistic-competition', 'oligopoly'
+    ]
+  },
+  {
+    id: 'micro-principles-core',
+    area: 'micro',
+    title: 'Principles micro core',
+    description: 'A broad sequence from markets and elasticity through surplus, trade, costs, and the major market structures.',
+    conceptIds: [
+      'competitive-markets', 'demand', 'supply', 'market-equilibrium', 'price-signals',
+      'elasticity', 'consumer-and-producer-surplus', 'international-trade-and-trade-policy',
+      'costs-of-production', 'perfect-competition', 'monopoly',
       'monopolistic-competition', 'oligopoly'
     ]
   },
@@ -325,15 +354,28 @@ function renderModeOptions(){
 }
 
 function renderPresets(){
-  $('presetOptions').innerHTML = PRESETS.map(preset => `
+  const area = $('areaFilter').value;
+  const help = $('presetHelp');
+  const container = $('presetOptions');
+
+  if(!area){
+    if(help) help.textContent = 'Choose a course area to see relevant quick starts.';
+    container.innerHTML = '<div class="preset-empty">Choose a course area above to show only the starter combinations that fit it.</div>';
+    return;
+  }
+
+  const presets = PRESETS.filter(preset => preset.area === area);
+  if(help) help.textContent = `Optional quick starts for ${AREA_LABELS[area]}. Apply one, then add or remove concepts as needed.`;
+
+  container.innerHTML = presets.map(preset => `
     <button type="button" class="preset-card" data-preset="${preset.id}">
       <strong>${esc(preset.title)}</strong>
       <span>${esc(preset.description)}</span>
       <small>${preset.conceptIds.length} concepts</small>
     </button>
-  `).join('');
+  `).join('') || '<div class="preset-empty">No starter combination is defined for this area yet. Choose concepts individually below.</div>';
 
-  $('presetOptions').querySelectorAll('[data-preset]').forEach(button => {
+  container.querySelectorAll('[data-preset]').forEach(button => {
     button.addEventListener('click', () => applyPreset(button.dataset.preset));
   });
 }
@@ -413,6 +455,7 @@ function renderConceptRecommendations(){
 function renderConcepts(){
   const area = $('areaFilter').value;
   setActiveArea(area);
+  renderPresets();
   renderSelectedSummary();
 
   if(!area){
@@ -1033,7 +1076,6 @@ async function importRecipe(file){
 
 async function init(){
   renderModeOptions();
-  renderPresets();
   renderConcepts();
   renderCheckpointBoard();
 

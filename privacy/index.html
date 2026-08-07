@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Learn what data Mastery Quests collects, how gameplay telemetry is transmitted and used, and the choices available to players." name="description"/>
+<meta content="Learn how Mastery Quests keeps game progress in the browser, how optional results files are handled, and what ordinary hosting data may be processed." name="description"/>
 <title>Privacy | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/site.js"></script>
@@ -22,6 +22,7 @@
 <nav aria-label="Primary navigation" class="primary-navigation" id="primary-navigation"><a href="/games/">Games</a>
 <a href="/build/">Build a Quest</a>
 <a href="/resources/">Resources</a>
+<a href="/how-to/">How To</a>
 <a href="/about/">About</a></nav>
 </div>
 </header>
@@ -29,20 +30,21 @@
 <section class="page-hero page-hero-dark privacy-hero">
 <div class="site-container">
 <p class="eyebrow">Privacy notice</p>
-<h1>Your gameplay produces a learning record.</h1>
+<h1>Gameplay stays in the browser unless you choose to submit it.</h1>
 <p class="page-hero-lead">
-      Some published Mastery Quests course games collect identifiable gameplay telemetry.
-      When a game asks for a school email address, gameplay information is transmitted
-      through an instructor-configured workflow to a spreadsheet controlled by the
-      site operator or the instructor responsible for the game.
+      Mastery Quests does not automatically transmit question-level gameplay data to a
+      Mastery Quests server or an instructor. Current games and composer-generated builds
+      use browser storage for progress, mastery reporting, achievements, and local run data.
+      If a course requires a results or CSV submission, the player downloads that file and
+      submits it through the instructor's normal course workflow.
     </p>
-<p class="privacy-effective">Effective July 20, 2026</p>
+<p class="privacy-effective">Effective August 7, 2026</p>
 </div>
 </section>
 <section class="privacy-summary-section">
 <div class="site-container privacy-summary">
-<strong>What players should know before starting</strong>
-<p>The Faculty Concept Composer and the games it generates are local-only by default: they do not transmit faculty selections or gameplay records to a Mastery Quests server. The Faculty Template demonstration is also local-only and asks only for a display name. Published course games that request a school email may use separately configured telemetry.</p>
+<strong>The short version</strong>
+<p>There is no automatic Mastery Quests gameplay-reporting pipeline. Game progress stays on the device. Results leave the browser only when a player intentionally downloads or submits them through a separate course process.</p>
 </div>
 </section>
 <section class="section">
@@ -50,10 +52,9 @@
 <nav aria-label="Privacy notice sections" class="privacy-toc">
 <strong>On this page</strong>
 <a href="#scope">Scope</a>
-<a href="#data-collected">Data collected</a>
 <a href="#local-storage">Local browser storage</a>
-<a href="#use">How data is used</a>
-<a href="#storage-sharing">Storage and sharing</a>
+<a href="#exports">Results and CSV exports</a>
+<a href="#hosting">Website hosting data</a>
 <a href="#course-use">Course and FERPA considerations</a>
 <a href="#research">Research use</a>
 <a href="#choices">Your choices</a>
@@ -63,207 +64,80 @@
 </nav>
 <div class="privacy-content">
 <section id="scope">
-<p class="eyebrow">The Faculty Concept Composer processes selections in the browser. Its generated faculty packages do not collect email addresses or transmit gameplay telemetry by default, and they store progress locally in the learner's browser. The Faculty Template demonstration is also local-only.</p>
-<h2>Which games transmit data</h2>
-<p>A separately published course game may enable telemetry when it asks for a school email address. Those games should display a notice before play begins and link to this page.</p>
-<p>
-          A published course game may enable telemetry when it asks for a school email
-          address. Those games should display a notice before play begins and link to
-          this page.
-        </p>
-</section>
-<section id="data-collected">
-<p class="eyebrow">Data collected</p>
-<h2>Information sent during gameplay</h2>
-<p>
-          When a published course game requests a school email and enables telemetry,
-          the record may include:
-        </p>
-<ul class="privacy-list">
-<li>School email address entered by the player</li>
-<li>A pseudonymous player name or display name associated with the run</li>
-<li>Date and time, game title, run identifier, engine version, and game mode</li>
-<li>Start, resume, question, rapid-guessing, boss, and completion events</li>
-<li>Current room or stage and the question identifier</li>
-<li>Whether the response was correct</li>
-<li>Question tag, type, learning objective, and adaptive state</li>
-<li>Response time, elapsed time, attempt count, and streak information</li>
-<li>Total time, accuracy, maximum streak, and total attempts at completion</li>
-<li>Completion or verification code</li>
-<li>Score, best score, and score-event information in Score Attack mode</li>
-<li>Browser and device information supplied through the browser user-agent string</li>
-</ul>
-<p>
-          The standard telemetry record identifies the question and whether it was
-          answered correctly. It does not ordinarily send the full question text or
-          the exact answer option selected.
-        </p>
+<p class="eyebrow">Scope</p>
+<h2>What Mastery Quests itself collects</h2>
+<p>The public Mastery Quests website, the Faculty Concept Composer, and current Mastery Quests games do not automatically send gameplay records to a Mastery Quests database. The composer processes faculty selections in the browser, and generated games are static files that run in the browser.</p>
+<p>Mastery Quests does not require a school email address for its current local game workflow and does not sell personal information or use gameplay information for behavioral advertising.</p>
 </section>
 <section id="local-storage">
 <p class="eyebrow">Local browser storage</p>
-<h2>Information kept on the device</h2>
-<p>
-          All games, including the Faculty Template demonstration, may use browser local
-          storage to preserve progress and preferences.
-          This may include the email address, generated player identity, current room,
-          saved run, sound preference, achievements, artifacts, completion status,
-          recent scores, best scores, and hub progress.
-        </p>
-<p>
-          Local storage remains on the device and browser profile until the game
-          removes it or the user clears site data through browser settings.
-        </p>
+<h2>What may stay on the device</h2>
+<p>Games may use browser local storage to preserve the state needed for the student experience. Depending on the game or mode, that can include a display name or pseudonym, current room, saved run, game mode, question-performance records used by the mastery report, streaks, scores, achievements, artifacts, completion status, sound preferences, and local run data used to create a downloadable results file.</p>
+<p>This information remains in that browser profile until the game removes it or the user clears site data. Clearing browser storage, using private browsing, changing browsers, or moving to another device can remove or hide saved progress.</p>
 </section>
-<section id="use">
-<p class="eyebrow">Use of information</p>
-<h2>Why the data is collected</h2>
-<ul class="privacy-list">
-<li>To operate course-related completion and verification workflows</li>
-<li>To review student participation and performance when assigned by an instructor</li>
-<li>To diagnose question, scoring, timing, or progression problems</li>
-<li>To evaluate and improve adaptive selection, remediation, and mastery reporting</li>
-<li>To investigate technical failures, rapid guessing, duplicate events, or unusual records</li>
-<li>To create aggregated or de-identified summaries of platform use</li>
-</ul>
-<p>
-          Mastery Quests does not sell personal information and does not use gameplay
-          records for behavioral advertising.
-        </p>
+<section id="exports">
+<p class="eyebrow">Results and CSV exports</p>
+<h2>Submission is an intentional step</h2>
+<p>Some games can generate a completion or gameplay CSV file in the browser. Creating or downloading that file does not automatically send it to Mastery Quests or an instructor.</p>
+<p>If an instructor requires the file for an assignment, the student chooses to submit it through Canvas, email, another institutional system, or another course process specified by the instructor. Once submitted, that copy is governed by the policies, access controls, and retention practices of the receiving institution or service.</p>
 </section>
-<section id="storage-sharing">
-<p class="eyebrow">Storage and sharing</p>
-<h2>Where the record goes</h2>
-<p>
-          In published course games with telemetry enabled, gameplay records are transmitted
-          through an instructor-configured Microsoft Power Automate workflow and written
-          to a spreadsheet. Access is intended to be limited to the site
-          operator, the responsible instructor, and other authorized institutional
-          personnel with a legitimate instructional, administrative, technical, or
-          compliance need.
-        </p>
-<p>
-          Data may also be processed by the technology providers used to host the
-          site, deliver the games, transmit the telemetry, and store the receiving
-          spreadsheet. Personal information is not shared with advertisers.
-        </p>
+<section id="hosting">
+<p class="eyebrow">Website hosting data</p>
+<h2>Ordinary web requests are different from gameplay records</h2>
+<p>Like other hosted websites, the services that deliver Mastery Quests pages and game files may process ordinary request information such as IP address, browser type, timestamps, and security or diagnostic logs. That infrastructure data is handled by the hosting provider under its own terms. It is not a Mastery Quests question-by-question gameplay record.</p>
 </section>
 <section id="course-use">
 <p class="eyebrow">Course use</p>
 <h2>Educational records and FERPA considerations</h2>
-<p>
-          When a game is assigned as part of a course and the record is tied to an
-          identifiable student, the information may become part of the student's
-          education record. The instructor and institution are responsible for using
-          the game consistently with FERPA, institutional policy, approved technology
-          practices, records requirements, and any required student notice.
-        </p>
-<p>
-          Students using a Mastery Quest for a course should direct requests to inspect,
-          correct, or discuss course records to the instructor or the institution that
-          assigned the activity.
-        </p>
+<p>If a student submits a results file, screenshot, completion code, or other game record as part of a course, that submitted material may become part of the student's education record. The instructor and institution are responsible for handling it consistently with FERPA, institutional policy, approved technology practices, and applicable records requirements.</p>
+<p>Students should direct questions about an assigned submission, access, correction, retention, or alternatives to the instructor or institution that assigned the activity.</p>
 </section>
 <section id="research">
 <p class="eyebrow">Research</p>
 <h2>Formal research requires a separate basis</h2>
-<p>
-          Operational telemetry may be reviewed to improve instruction and the platform.
-          Identifiable records will not be used as human-subjects research merely because
-          they exist. Formal research use should occur only after the appropriate
-          institutional review, authorization, notice, consent, data-minimization, and
-          confidentiality requirements have been satisfied.
-        </p>
-<p>
-          Aggregated or properly de-identified information may be used to describe
-          platform performance when individuals cannot reasonably be identified.
-        </p>
+<p>Mastery Quests does not automatically accumulate identifiable gameplay records for later research. If course-submitted records are proposed for formal research, that use should occur only after the appropriate institutional review, authorization, notice, consent, data-minimization, and confidentiality requirements have been satisfied.</p>
+<p>Aggregated or properly de-identified information may be used to describe teaching or platform performance when individuals cannot reasonably be identified and the use is otherwise permitted.</p>
 </section>
 <section id="choices">
 <p class="eyebrow">Your choices</p>
-<h2>Questions, alternatives, and local data</h2>
+<h2>Local data and course submissions</h2>
 <ul class="privacy-list">
-<li>
-            Review this notice before entering an email address or beginning a game.
-          </li>
-<li>
-            When a game is required for a course, contact the instructor before playing
-            to ask about the purpose of collection, retention, access, or an available
-            alternative.
-          </li>
-<li>
-            Clear locally stored progress through the browser's site-data controls.
-            Doing so may erase saved progress, achievements, and scores.
-          </li>
-<li>
-            Contact the responsible instructor or site operator to ask about access,
-            correction, or deletion. Some records may need to be retained under course,
-            institutional, legal, or records-management requirements.
-          </li>
+<li>Clear locally stored game progress through the browser's site-data controls. Doing so may erase saved runs, achievements, artifacts, and scores.</li>
+<li>Use a personal or non-shared browser profile when saved game progress should remain private from other users of the same device.</li>
+<li>Before submitting a results or CSV file for a course, follow the instructor's directions and use the designated institutional submission method.</li>
+<li>If an assigned activity requires a submission and you have a privacy concern, ask the instructor about the purpose, retention, access, and any available alternative.</li>
 </ul>
 </section>
 <section id="security">
 <p class="eyebrow">Security and retention</p>
-<h2>Safeguarding the record</h2>
-<p>
-          Reasonable administrative and technical measures should be used to restrict
-          access to the receiving workflow and spreadsheet. No internet transmission
-          or storage system can be guaranteed to be completely secure.
-        </p>
-<p>
-          Identifiable telemetry should be retained only as long as needed for the
-          stated instructional, administrative, technical, research, or records purpose.
-          When it is no longer needed, it should be deleted or de-identified when feasible.
-        </p>
-<p>
-          Gameplay records and verification codes should not be treated as infallible
-          proof of identity or academic integrity. They may support course administration,
-          but they should be considered alongside other evidence.
-        </p>
+<h2>Protect the copy that actually leaves the browser</h2>
+<p>Local browser storage is a convenience feature, not a secure gradebook. Anyone with access to the same browser profile may be able to see locally stored progress. A student using a shared device should take that into account.</p>
+<p>When a results file is submitted to a course, the receiving instructor or institution should use appropriate access controls and retain the file only as long as needed for the instructional, administrative, research, or records purpose that justified the submission.</p>
+<p>Game records and completion codes should not be treated as infallible proof of identity or academic integrity. They can support course administration, but they should be considered alongside other evidence.</p>
 </section>
 <section id="providers">
 <p class="eyebrow">Service providers</p>
 <h2>Third-party infrastructure</h2>
-<p>
-          The public site and games may use Cloudflare, GitHub Pages, Microsoft Power
-          Automate, Microsoft 365, and related hosting or storage services. These
-          providers may process standard technical information such as IP address,
-          browser information, request data, and service logs under their own privacy
-          terms and the configuration selected by the site operator or institution.
-        </p>
+<p>The public site and linked game pages may use Cloudflare and GitHub Pages for hosting and delivery. Those providers may process standard technical information associated with web requests under their own privacy terms and the site's configuration.</p>
 <div class="provider-links">
 <a href="https://www.cloudflare.com/policies/privacy/" rel="noopener" target="_blank">Cloudflare Privacy Policy</a>
 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener" target="_blank">GitHub Privacy Statement</a>
-<a href="https://privacy.microsoft.com/en-us/privacystatement" rel="noopener" target="_blank">Microsoft Privacy Statement</a>
 </div>
 </section>
 <section id="children">
 <p class="eyebrow">Children</p>
 <h2>Intended audience</h2>
-<p>
-          Mastery Quests is designed primarily for higher-education use and is not
-          directed to children under 13. A school or instructor considering another
-          audience is responsible for determining whether additional notice,
-          authorization, or parental consent is required.
-        </p>
+<p>Mastery Quests is designed primarily for higher-education use and is not directed to children under 13. A school or instructor considering another audience is responsible for determining whether additional notice, authorization, or parental consent is required.</p>
 </section>
 <section id="changes">
 <p class="eyebrow">Changes</p>
 <h2>Updates to this notice</h2>
-<p>
-          This notice may be revised when the platform, telemetry fields, storage
-          workflow, instructional use, or legal requirements change. The effective
-          date at the top of the page will be updated when material revisions are made.
-        </p>
+<p>This notice may be revised when the platform, local-storage behavior, export workflow, hosting infrastructure, instructional use, or legal requirements change. The effective date at the top of the page will be updated when material revisions are made.</p>
 </section>
 <section id="contact">
 <p class="eyebrow">Contact</p>
 <h2>Privacy questions</h2>
-<p>
-          For a course assignment, contact the instructor or institution that directed
-          you to the game. For questions about the Mastery Quests platform, contact
-          William Jennings Byrd at
-          <a href="mailto:wjbyrd@troy.edu">wjbyrd@troy.edu</a>.
-        </p>
+<p>For a course assignment, contact the instructor or institution that directed you to the game. For questions about the Mastery Quests platform, contact William Jennings Byrd at <a href="mailto:wjbyrd@troy.edu">wjbyrd@troy.edu</a>.</p>
 </section>
 </div>
 </div>
