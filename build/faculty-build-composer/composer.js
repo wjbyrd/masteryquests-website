@@ -71,7 +71,7 @@ const PRESETS = [
   {
     id: 'micro-market-foundations',
     area: 'micro',
-    title: 'Micro: market foundations',
+    title: 'Market Foundations',
     description: 'Competitive markets, demand, supply, equilibrium, price signals, elasticity, and surplus.',
     conceptIds: [
       'competitive-markets', 'demand', 'supply', 'market-equilibrium',
@@ -81,7 +81,7 @@ const PRESETS = [
   {
     id: 'micro-market-policy',
     area: 'micro',
-    title: 'Micro: market policy',
+    title: 'Market Policy',
     description: 'Elasticity and surplus applied to price controls, tax wedges, and tax incidence.',
     conceptIds: [
       'elasticity', 'consumer-and-producer-surplus',
@@ -91,7 +91,7 @@ const PRESETS = [
   {
     id: 'micro-trade-welfare',
     area: 'micro',
-    title: 'Micro: trade and welfare',
+    title: 'Trade & Welfare',
     description: 'Gains from trade, elasticity, consumer and producer surplus, and international trade policy.',
     conceptIds: [
       'gains-from-trade', 'elasticity', 'consumer-and-producer-surplus',
@@ -101,7 +101,7 @@ const PRESETS = [
   {
     id: 'micro-firms-markets',
     area: 'micro',
-    title: 'Micro: firms and market structure',
+    title: 'Firms & Market Structure',
     description: 'Production costs and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.',
     conceptIds: [
       'costs-of-production', 'perfect-competition', 'monopoly',
@@ -111,7 +111,7 @@ const PRESETS = [
   {
     id: 'micro-principles-core',
     area: 'micro',
-    title: 'Principles micro core',
+    title: 'Principles Micro Core',
     description: 'A broad sequence from markets and elasticity through surplus, trade, costs, and the major market structures.',
     conceptIds: [
       'competitive-markets', 'demand', 'supply', 'market-equilibrium', 'price-signals',
