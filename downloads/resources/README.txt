@@ -1,5 +1,6 @@
 Place the revised faculty files in this folder using these exact web filenames:
 
+faculty-composer-quick-start-guide.docx
 faculty-game-overview-guide.docx
 faculty-implementation-guide.docx
 student-instructions-and-faculty-customization-checklist.docx

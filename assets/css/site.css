@@ -2625,3 +2625,40 @@ button:focus-visible {
     padding: 24px;
   }
 }
+
+
+/* =========================================
+   HOW-TO QUICK GUIDES
+========================================= */
+.guide-code-block {
+  margin: 28px 0;
+  padding: 22px 24px;
+  overflow-x: auto;
+  border: 1px solid rgba(6,36,84,.16);
+  border-radius: var(--radius-medium);
+  background: var(--navy-950);
+  color: #e9fbff;
+  box-shadow: var(--shadow-card);
+  font-size: .94rem;
+  line-height: 1.65;
+  white-space: pre;
+}
+
+.guide-code-block code {
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+.guide-callout {
+  margin-top: 26px;
+  padding: 18px 20px;
+  border-left: 4px solid var(--teal-500);
+  border-radius: 0 var(--radius-small) var(--radius-small) 0;
+  background: rgba(16,188,180,.08);
+  color: var(--navy-900);
+}
+
+.build-step-card .text-link {
+  display: inline-flex;
+  margin-top: 14px;
+}
