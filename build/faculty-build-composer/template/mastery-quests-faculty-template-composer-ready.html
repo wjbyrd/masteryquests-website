@@ -3290,6 +3290,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3358,14 +3373,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4763,6 +4812,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4834,6 +4887,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5049,6 +5141,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5149,7 +5243,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5173,30 +5267,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -6366,10 +6450,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -6657,7 +6741,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -6743,7 +6835,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -6753,9 +6853,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -7076,7 +7181,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }
