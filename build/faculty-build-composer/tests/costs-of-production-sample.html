@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3054,14 +3057,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2e-costs-of-production-rich-bank-v1",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
     "templateVersion": "phase4.5b-self-contained",
     "composerVersion": "4.5b.0",
     "compositionId": "costs-of-production-mastery-quest",
-    "saveKeyNamespace": "mq-econ:costs-of-production-mastery-quest:404bebe98bc9",
-    "librarySha256": "5c958af16a500a59ff6b500ef600a6a0d11e5f29ea72392f16fe51974d50e872",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
-    "compositionFingerprint": "404bebe98bc9df3c9f048bd294eb1dd7c93746725da1e01124c23e83048e2746"
+    "saveKeyNamespace": "mq-econ:costs-of-production-mastery-quest:ceadbb456469",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
+    "compositionFingerprint": "ceadbb45646988aef727c4859d927fc50bff00eec914e056766b0f927ed97088"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -7339,7 +7426,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "Subtract the previous total product.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_tp.webp",
       "aHash": "f2e39ba27de2f269f80260ae0ee58da760e423162bc3777acd74e66271f25ef5",
       "canonicalId": "P62E-COP-M-011",
       "sourceId": 680110,
@@ -7387,7 +7473,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "Add TFC and the wage bill.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "7e00d75e2f4cb3e4024d97bf290d812d3a80b5ba003e45a590e2605aff561d74",
       "canonicalId": "P62E-COP-M-012",
       "sourceId": 680111,
@@ -7435,7 +7520,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "Subtract the previous total product.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
       "aHash": "5cfe97760c8a69d8c47fd713454bdacea1f1e4d6fc3f5c03353d6ac5b0fa9f7b",
       "canonicalId": "P62E-COP-M-013",
       "sourceId": 680112,
@@ -7483,7 +7567,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "Add TFC and the wage bill.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "0de1223f4f62b6a02cce5c8ae1a6069e7bb62c679b3dbfac9cdf58514183426b",
       "canonicalId": "P62E-COP-M-014",
       "sourceId": 680113,
@@ -7531,7 +7614,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "Subtract the previous total product.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_tp.webp",
       "aHash": "505defb71cf4e0964cbe1a4c94bcb1c997fcabe9e827b31da7b9f3da211f2194",
       "canonicalId": "P62E-COP-M-015",
       "sourceId": 680114,
@@ -7579,7 +7661,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "Add TFC and the wage bill.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
       "aHash": "ae4705688444188c02a7a88cba9d7fe6067bbb36e59db62441089030b8307280",
       "canonicalId": "P62E-COP-M-016",
       "sourceId": 680115,
@@ -7627,7 +7708,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "Subtract the previous total product.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_tp.webp",
       "aHash": "f3557cd53b42efae2fdf0059ff98397f446480009c5636ec0f8741b3a6f3b7e8",
       "canonicalId": "P62E-COP-M-017",
       "sourceId": 680116,
@@ -7675,7 +7755,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "Add TFC and the wage bill.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "703b9197773679161ef3ddf8c24ef4e16971d901acf62897c8741dc6db43c23b",
       "canonicalId": "P62E-COP-M-018",
       "sourceId": 680117,
@@ -7723,7 +7802,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "Subtract the previous total product.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_tp.webp",
       "aHash": "9173591f0a6e0f38bdc50b688bbb8d74812f72c01453f0c93797f6a916b0f5a8",
       "canonicalId": "P62E-COP-M-019",
       "sourceId": 680118,
@@ -7771,7 +7849,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "Add TFC and the wage bill.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "e8af02868f74dc1cc1183890e3ae8d13c42514d42a1aae9d53ad079462eacbaa",
       "canonicalId": "P62E-COP-M-020",
       "sourceId": 680119,
@@ -7867,7 +7944,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Diminishing MP starts when MP first falls.",
-      "image": "question-assets/costs-of-production/cop_mp_standard.webp",
       "aHash": "0916cda3f9b56ce4be8a7bd42977bfffc13b7c2724141270ab2291a39bf5ce9d",
       "canonicalId": "P62E-COP-M-022",
       "sourceId": 680121,
@@ -7915,7 +7991,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "A marginal above the average raises it.",
-      "image": "question-assets/costs-of-production/cop_mp_ap.webp",
       "aHash": "824d422d755b9c7b36ac85b680c13d278d36bbe4444f46eaf98bfd2fe2dec267",
       "canonicalId": "P62E-COP-M-023",
       "sourceId": 680122,
@@ -8011,7 +8086,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The gap equals AFC.",
-      "image": "question-assets/costs-of-production/cop_average_costs.webp",
       "aHash": "059417cdeddf6686905151773136401e8db35264974b72a21dd9419b6c6513f6",
       "canonicalId": "P62E-COP-M-025",
       "sourceId": 680124,
@@ -8107,7 +8181,6 @@ const questionBanks = {
       "repairSkill": "short_run_cost_analysis",
       "commonError": "mixes_fixed_and_variable_shifts",
       "feedback": "A pure fixed-cost change does not affect AVC.",
-      "image": "question-assets/costs-of-production/cop_fixed_cost_shift.webp",
       "aHash": "0a522ec880a77a851919a504cc453ca073fc762ecbf049bc19968d245ca75567",
       "canonicalId": "P62E-COP-M-027",
       "sourceId": 680126,
@@ -8155,7 +8228,6 @@ const questionBanks = {
       "repairSkill": "short_run_cost_analysis",
       "commonError": "mixes_fixed_and_variable_shifts",
       "feedback": "The wage is a variable-input cost.",
-      "image": "question-assets/costs-of-production/cop_variable_input_shift.webp",
       "aHash": "a7af4003f21869f299aca50979f262bf4cea22ff74a1992baf6635f7f4a03b6b",
       "canonicalId": "P62E-COP-M-028",
       "sourceId": 680127,
@@ -8203,7 +8275,6 @@ const questionBanks = {
       "repairSkill": "marginal_product_marginal_cost",
       "commonError": "moves_mp_and_mc_together",
       "feedback": "Productivity lowers cost per unit.",
-      "image": "question-assets/costs-of-production/cop_productivity_shift.webp",
       "aHash": "623f81d88ceb9333d7fc79fe83e6aecfb4a837cd73d1eac2ce5969683cbd21b7",
       "canonicalId": "P62E-COP-M-029",
       "sourceId": 680128,
@@ -8251,7 +8322,6 @@ const questionBanks = {
       "repairSkill": "economies_of_scale",
       "commonError": "confuses_scale_and_diminishing_returns",
       "feedback": "Falling LRATC is economies of scale.",
-      "image": "question-assets/costs-of-production/cop_lratc_u.webp",
       "aHash": "e6c2ec9f398e1e60837b8ff3562d6692ead3a1c0fac2fc93430c1ea1c62e527b",
       "canonicalId": "P62E-COP-M-030",
       "sourceId": 680129,
@@ -8304,7 +8374,6 @@ const questionBanks = {
       "repairSkill": "marginal_product_marginal_cost",
       "commonError": "moves_mp_and_mc_together",
       "feedback": "MP is the output change; with a constant wage, MC is wage divided by MP.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
       "aHash": "5f2b254a46b060424d1c826a39e5a0b4dfe7005bc6e6e03fbb2440f85dd9a232",
       "canonicalId": "P62E-COP-H-001",
       "sourceId": 680200,
@@ -8356,7 +8425,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Divide each total by output and verify ATC=AFC+AVC.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "bb2fca45f1c96722c9cadbb08a351952b8ca37c11e73e40caf614986410c018e",
       "canonicalId": "P62E-COP-H-002",
       "sourceId": 680201,
@@ -8406,7 +8474,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Find the first worker whose marginal product is below the previous worker’s marginal product.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
       "aHash": "9b4e7c29d4c4b23ae65143ec6cb69c59805546ba3255f21edcbe73ef23162d60",
       "canonicalId": "P62E-COP-H-003",
       "sourceId": 680202,
@@ -8457,7 +8524,6 @@ const questionBanks = {
       "repairSkill": "marginal_product_marginal_cost",
       "commonError": "moves_mp_and_mc_together",
       "feedback": "MP is the output change; with a constant wage, MC is wage divided by MP.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "34cf776bfe9d7a2cd5997a6a717d4e397d290019418a982590b7b33deb683761",
       "canonicalId": "P62E-COP-H-004",
       "sourceId": 680203,
@@ -8509,7 +8575,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Divide each total by output and verify ATC=AFC+AVC.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "3c5e0e6d5912bf3c7e1a6352083211d16d74cc5b55c1e93b55c56f649efe9f97",
       "canonicalId": "P62E-COP-H-005",
       "sourceId": 680204,
@@ -8559,7 +8624,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Find the first worker whose marginal product is below the previous worker’s marginal product.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_tp.webp",
       "aHash": "9b4e7c29d4c4b23ae65143ec6cb69c59805546ba3255f21edcbe73ef23162d60",
       "canonicalId": "P62E-COP-H-006",
       "sourceId": 680205,
@@ -8610,7 +8674,6 @@ const questionBanks = {
       "repairSkill": "marginal_product_marginal_cost",
       "commonError": "moves_mp_and_mc_together",
       "feedback": "MP is the output change; with a constant wage, MC is wage divided by MP.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "ceca1f3e04c0efcddd9d235733fa0de7867aa1495d14588407b1399e78bbd8f4",
       "canonicalId": "P62E-COP-H-007",
       "sourceId": 680206,
@@ -8662,7 +8725,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Divide each total by output and verify ATC=AFC+AVC.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "691650184e8e5e9a8aafa7be510a4415a08b8da8f3d960452f455d8da876ee14",
       "canonicalId": "P62E-COP-H-008",
       "sourceId": 680207,
@@ -8712,7 +8774,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Find the first worker whose marginal product is below the previous worker’s marginal product.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_tp.webp",
       "aHash": "42cebb53862506011c2bd99b2671978912de6c8a5da7e31131c9eaa4f9a266f6",
       "canonicalId": "P62E-COP-H-009",
       "sourceId": 680208,
@@ -8763,7 +8824,6 @@ const questionBanks = {
       "repairSkill": "marginal_product_marginal_cost",
       "commonError": "moves_mp_and_mc_together",
       "feedback": "MP is the output change; with a constant wage, MC is wage divided by MP.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "9004fcfa1cf398fe26fb92d4d60b997b77122a5da59cbdb177160d96dee2a96d",
       "canonicalId": "P62E-COP-H-010",
       "sourceId": 680209,
@@ -8815,7 +8875,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Divide each total by output and verify ATC=AFC+AVC.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
       "aHash": "069a434bd86f0718acb4c5f8a340f9dc85af533aec2d70f7e80ee5c50c61a907",
       "canonicalId": "P62E-COP-H-011",
       "sourceId": 680210,
@@ -8865,7 +8924,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Find the first worker whose marginal product is below the previous worker’s marginal product.",
-      "image": "question-assets/costs-of-production/cop_prairie_solar_tp.webp",
       "aHash": "9b4e7c29d4c4b23ae65143ec6cb69c59805546ba3255f21edcbe73ef23162d60",
       "canonicalId": "P62E-COP-H-012",
       "sourceId": 680211,
@@ -8944,7 +9002,7 @@ const questionBanks = {
     {
       "id": "P62E-COP-H-014",
       "sourceGame": "costsOfProduction",
-      "q": "A firm receives a property-tax increase that does not depend on output. Which graph best describes the immediate short-run effect?",
+      "q": "A firm receives a property-tax increase that does not depend on output. Which immediate short-run curve change is correct?",
       "options": [
         "AVC and MC shift upward together",
         "Only MC shifts upward",
@@ -8961,7 +9019,6 @@ const questionBanks = {
       "repairSkill": "short_run_cost_analysis",
       "commonError": "mixes_fixed_and_variable_shifts",
       "feedback": "A property tax is fixed with respect to output.",
-      "image": "question-assets/costs-of-production/cop_fixed_cost_shift.webp",
       "aHash": "082be9aa3d28c4e63ca7d196298a80dec84aaff9bac18504b0a2ac720c780ee6",
       "canonicalId": "P62E-COP-H-014",
       "sourceId": 680213,
@@ -9009,7 +9066,6 @@ const questionBanks = {
       "repairSkill": "short_run_cost_analysis",
       "commonError": "mixes_fixed_and_variable_shifts",
       "feedback": "The wage changes variable and marginal costs.",
-      "image": "question-assets/costs-of-production/cop_variable_input_shift.webp",
       "aHash": "ea2102d31de83f92eb9e6c5499cad630cbb0617422f84d16ff80c5facec368df",
       "canonicalId": "P62E-COP-H-015",
       "sourceId": 680214,
@@ -9057,7 +9113,6 @@ const questionBanks = {
       "repairSkill": "marginal_product_marginal_cost",
       "commonError": "moves_mp_and_mc_together",
       "feedback": "More output from the same inputs reduces marginal and average cost.",
-      "image": "question-assets/costs-of-production/cop_productivity_shift.webp",
       "aHash": "179b3b275fdbe317c900eade8733b279c30c69df1afa34c59d5f1cbe1797105c",
       "canonicalId": "P62E-COP-H-016",
       "sourceId": 680215,
@@ -9249,7 +9304,6 @@ const questionBanks = {
       "repairSkill": "constant_returns_to_scale",
       "commonError": "assumes_lratc_changes",
       "feedback": "A flat LRATC indicates unchanged cost per unit as all inputs and output expand proportionally.",
-      "image": "question-assets/costs-of-production/cop_lratc_regions.webp",
       "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad",
       "canonicalId": "P62E-COP-H-020",
       "sourceId": 680219,
@@ -9297,7 +9351,6 @@ const questionBanks = {
       "repairSkill": "minimum_efficient_scale",
       "commonError": "chooses_largest_output",
       "feedback": "MES is the smallest output attaining minimum LRATC.",
-      "image": "question-assets/costs-of-production/cop_mes.webp",
       "aHash": "a4a7e44bd564d65daef05a4dab0e54f4927d9587c35ccf95d1ef144e2bac1c47",
       "canonicalId": "P62E-COP-H-021",
       "sourceId": 680220,
@@ -9345,7 +9398,6 @@ const questionBanks = {
       "repairSkill": "long_run_average_cost",
       "commonError": "treats_lratc_as_one_plant",
       "feedback": "In the long run the firm can choose the least-cost plant for each output.",
-      "image": "question-assets/costs-of-production/cop_plant_envelope.webp",
       "aHash": "5ef456b7992d10b4307b9eeb0f7dfd7dd946e3bf7f7f125794e9f7adac355b4a",
       "canonicalId": "P62E-COP-H-022",
       "sourceId": 680221,
@@ -10145,7 +10197,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "MP is the output change.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_tp.webp",
       "aHash": "bfa7d19801510af487f5533a936408e23535a555a131c6a510d1487bf8b70170",
       "canonicalId": "P62E-COP-C-009",
       "sourceId": 682008,
@@ -10193,7 +10244,6 @@ const questionBanks = {
       "repairSkill": "marginal_product",
       "commonError": "uses_average_instead_of_change",
       "feedback": "MP is the output change.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_tp.webp",
       "aHash": "f2e39ba27de2f269f80260ae0ee58da760e423162bc3777acd74e66271f25ef5",
       "canonicalId": "P62E-COP-C-010",
       "sourceId": 682009,
@@ -10241,7 +10291,6 @@ const questionBanks = {
       "repairSkill": "average_product",
       "commonError": "uses_change_instead_of_average",
       "feedback": "Divide output by labor.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
       "aHash": "9104d931e493419d6d6a9d90abb5f4c92c5a0f3bb1bb0e36d819e95d2b7038fd",
       "canonicalId": "P62E-COP-C-011",
       "sourceId": 682010,
@@ -10289,7 +10338,6 @@ const questionBanks = {
       "repairSkill": "average_product",
       "commonError": "uses_change_instead_of_average",
       "feedback": "Divide output by labor.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_tp.webp",
       "aHash": "19d9d8f892871a228e23e1b2b0e9c9fe7b10affa86ed6b94cdedcb27c8f194e8",
       "canonicalId": "P62E-COP-C-012",
       "sourceId": 682011,
@@ -10337,7 +10385,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "TC=TFC+TVC.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "3038295953d7f1a6dcbe6d341610258bedc07deec1dc3ad78cc445527f1d72a3",
       "canonicalId": "P62E-COP-C-013",
       "sourceId": 682012,
@@ -10385,7 +10432,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "TC=TFC+TVC.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
       "aHash": "975c23b8016d98b197c94f16266d871fa4592f9248ed65a1b522cd2e4503013b",
       "canonicalId": "P62E-COP-C-014",
       "sourceId": 682013,
@@ -10433,7 +10479,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "TC=TFC+TVC.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "f22cd7a5028388016e3b9f5ddc339f45b56a107b002e25a1e1aacb9a5f50e3b8",
       "canonicalId": "P62E-COP-C-015",
       "sourceId": 682014,
@@ -10481,7 +10526,6 @@ const questionBanks = {
       "repairSkill": "total_cost",
       "commonError": "multiplies_fixed_and_variable",
       "feedback": "TC=TFC+TVC.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "b421e256630688929431cf2d2de08acff43aacdc3c4461dbe8f24ad8b9659e10",
       "canonicalId": "P62E-COP-C-016",
       "sourceId": 682015,
@@ -10764,7 +10808,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost",
       "commonError": "uses_tc_over_q",
       "feedback": "Divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
       "aHash": "4615fb2e0580ca4b351b3f2f78d4055883584ac9e3a3a13533b119e8c6473b88",
       "canonicalId": "P62E-COP-C-022",
       "sourceId": 682021,
@@ -10812,7 +10855,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost",
       "commonError": "uses_tc_over_q",
       "feedback": "Divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "6f0d5bd8361226bd95f08b47db9458a8dfe77ca65e7537b805746495b44b574a",
       "canonicalId": "P62E-COP-C-023",
       "sourceId": 682022,
@@ -10860,7 +10902,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost",
       "commonError": "uses_tc_over_q",
       "feedback": "Divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "61e627d7dac2d3316a6171e36585597e4e64c5de46826d125f6b320874fddfd6",
       "canonicalId": "P62E-COP-C-024",
       "sourceId": 682023,
@@ -10908,7 +10949,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost",
       "commonError": "uses_tc_over_q",
       "feedback": "Divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
       "aHash": "89367f6e44a6f3c7825213445b99ed87eca404321481b5d6e00a5ef2d730038c",
       "canonicalId": "P62E-COP-C-025",
       "sourceId": 682024,
@@ -10956,7 +10996,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Add TFC and TVC.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "aa2a623c70e7c74e17f190262d9a1c9ae52b4492bf66ef845d72360e3ab0b6cd",
       "canonicalId": "P62E-COP-C-026",
       "sourceId": 682025,
@@ -11004,7 +11043,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Divide TC by Q.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
       "aHash": "3cfa2a6e1d6cbcc0a707afb1921a3b7ea1e739bb7e2c93bda854ccf614e6b08a",
       "canonicalId": "P62E-COP-C-027",
       "sourceId": 682026,
@@ -11052,7 +11090,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "AFC=ATC−AVC.",
-      "image": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
       "aHash": "d8d97cc6871f576f0cb1fb501225b1c7a254a4454762694f22bd08de87919b88",
       "canonicalId": "P62E-COP-C-028",
       "sourceId": 682027,
@@ -13195,7 +13232,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "Compare the new worker’s MP with the prior AP, then compute the new AP.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_tp.webp",
       "aHash": "fbdba19f400431c5f27af93dc570bdf37d14b298a6aa7015ebdece3f42f0526c",
       "canonicalId": "P62E-COP-L-013",
       "sourceId": 681012,
@@ -13245,7 +13281,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Identify the first decline in MP and separate it from negative MP and long-run scale.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_tp.webp",
       "aHash": "15e6b226f7fb96d0b3c38e35dbd423e12c821513eaa0ea2e4eab46c5c8ba9a7a",
       "canonicalId": "P62E-COP-L-014",
       "sourceId": 681013,
@@ -13296,7 +13331,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "Compare the new worker’s MP with the prior AP, then compute the new AP.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
       "aHash": "80be82525795d8f71935b73cf28e127d3120bee80a320910ffc91211de1bf62f",
       "canonicalId": "P62E-COP-L-015",
       "sourceId": 681014,
@@ -13346,7 +13380,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Identify the first decline in MP and separate it from negative MP and long-run scale.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_tp.webp",
       "aHash": "15e6b226f7fb96d0b3c38e35dbd423e12c821513eaa0ea2e4eab46c5c8ba9a7a",
       "canonicalId": "P62E-COP-L-016",
       "sourceId": 681015,
@@ -13397,7 +13430,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "Compare the new worker’s MP with the prior AP, then compute the new AP.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_tp.webp",
       "aHash": "8f3bae362e890e4bb358245dab89004c3e8cd3e1c4a64e8153b75d50a8158140",
       "canonicalId": "P62E-COP-L-017",
       "sourceId": 681016,
@@ -13447,7 +13479,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Identify the first decline in MP and separate it from negative MP and long-run scale.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_tp.webp",
       "aHash": "15e6b226f7fb96d0b3c38e35dbd423e12c821513eaa0ea2e4eab46c5c8ba9a7a",
       "canonicalId": "P62E-COP-L-018",
       "sourceId": 681017,
@@ -13498,7 +13529,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "Compare the new worker’s MP with the prior AP, then compute the new AP.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_tp.webp",
       "aHash": "f981f12306d6613f03666cac0d6d2bb38dca43976e9b276732aa0e5a7e9907cd",
       "canonicalId": "P62E-COP-L-019",
       "sourceId": 681018,
@@ -13548,7 +13578,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Identify the first decline in MP and separate it from negative MP and long-run scale.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_tp.webp",
       "aHash": "15e6b226f7fb96d0b3c38e35dbd423e12c821513eaa0ea2e4eab46c5c8ba9a7a",
       "canonicalId": "P62E-COP-L-020",
       "sourceId": 681019,
@@ -13599,7 +13628,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "Compare the new worker’s MP with the prior AP, then compute the new AP.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_tp.webp",
       "aHash": "a8bf675d2647118dd73e7eba16da865203c849169c99d60eaa84357cf2ffa985",
       "canonicalId": "P62E-COP-L-021",
       "sourceId": 681020,
@@ -13649,7 +13677,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Identify the first decline in MP and separate it from negative MP and long-run scale.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_tp.webp",
       "aHash": "15e6b226f7fb96d0b3c38e35dbd423e12c821513eaa0ea2e4eab46c5c8ba9a7a",
       "canonicalId": "P62E-COP-L-022",
       "sourceId": 681021,
@@ -13700,7 +13727,6 @@ const questionBanks = {
       "repairSkill": "marginal_average_relationship",
       "commonError": "reverses_marginal_average_rule",
       "feedback": "Compare the new worker’s MP with the prior AP, then compute the new AP.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_tp.webp",
       "aHash": "8deee4fe199605a4ee63f77e51afc485a5764d9880a828689d64c61c02293c5a",
       "canonicalId": "P62E-COP-L-023",
       "sourceId": 681022,
@@ -13750,7 +13776,6 @@ const questionBanks = {
       "repairSkill": "diminishing_marginal_product",
       "commonError": "waits_until_mp_negative",
       "feedback": "Identify the first decline in MP and separate it from negative MP and long-run scale.",
-      "image": "question-assets/costs-of-production/cop_prairie_solar_tp.webp",
       "aHash": "15e6b226f7fb96d0b3c38e35dbd423e12c821513eaa0ea2e4eab46c5c8ba9a7a",
       "canonicalId": "P62E-COP-L-024",
       "sourceId": 681023,
@@ -13901,7 +13926,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Build TVC from the wage bill, add TFC, divide TC by Q, and divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
       "aHash": "e1751f81f856b01e0de3c52d29d151c83a438221364881458327b0858ab75808",
       "canonicalId": "P62E-COP-L-027",
       "sourceId": 681026,
@@ -13951,7 +13975,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The ATC–AVC gap is AFC; multiply by quantity to recover TFC.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "2d3fa06d65d15e6434983aeb3b2ca01518279df6644cc9db727ee17a380b4ef7",
       "canonicalId": "P62E-COP-L-028",
       "sourceId": 681027,
@@ -14053,7 +14076,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Build TVC from the wage bill, add TFC, divide TC by Q, and divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "8734b69e1d556d0088aa1c2d10726ee3be4b16279bccc6065dc5b06a0f0f3948",
       "canonicalId": "P62E-COP-L-030",
       "sourceId": 681029,
@@ -14103,7 +14125,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The ATC–AVC gap is AFC; multiply by quantity to recover TFC.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "6b4da18bba026dba7f93581d0c4d6c95c1b01284d5c133b582a8d6bf22f60d82",
       "canonicalId": "P62E-COP-L-031",
       "sourceId": 681030,
@@ -14205,7 +14226,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Build TVC from the wage bill, add TFC, divide TC by Q, and divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "a5f3c5f112cb672bd0fed40cf762a62fb70bc2bb70915efc4ff7bdf87a850c6f",
       "canonicalId": "P62E-COP-L-033",
       "sourceId": 681032,
@@ -14255,7 +14275,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The ATC–AVC gap is AFC; multiply by quantity to recover TFC.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "84c190fdf872d910d08d129d9a9d9af8a790611681c89be0a1d8c4a22a36ac0e",
       "canonicalId": "P62E-COP-L-034",
       "sourceId": 681033,
@@ -14357,7 +14376,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Build TVC from the wage bill, add TFC, divide TC by Q, and divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "bbff89944845ef6b420db5dd2158e67e907484407d1b4e7839e8b4b118624e61",
       "canonicalId": "P62E-COP-L-036",
       "sourceId": 681035,
@@ -14407,7 +14425,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The ATC–AVC gap is AFC; multiply by quantity to recover TFC.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
       "aHash": "980896696886c2b8671baf64199645b966fc6a105a826cdabe056a6b62ae0f7c",
       "canonicalId": "P62E-COP-L-037",
       "sourceId": 681036,
@@ -14509,7 +14526,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Build TVC from the wage bill, add TFC, divide TC by Q, and divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
       "aHash": "897df95eed3015d5efad38274d0d988a5d56b4763eb6e4795e6486ceaa107523",
       "canonicalId": "P62E-COP-L-039",
       "sourceId": 681038,
@@ -14559,7 +14575,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The ATC–AVC gap is AFC; multiply by quantity to recover TFC.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "b696dc0eb9e7605740c706be70f077f292edb6255532784296d322a9dfb1e4e9",
       "canonicalId": "P62E-COP-L-040",
       "sourceId": 681039,
@@ -14661,7 +14676,6 @@ const questionBanks = {
       "repairSkill": "cost_schedule_completion",
       "commonError": "mixes_cost_measures",
       "feedback": "Build TVC from the wage bill, add TFC, divide TC by Q, and divide ΔTC by ΔQ.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "f441f801d91ff3d350adf30bf0d5bf5eb7169cfed2b01d531a55a9899553ffd8",
       "canonicalId": "P62E-COP-L-042",
       "sourceId": 681041,
@@ -14711,7 +14725,6 @@ const questionBanks = {
       "repairSkill": "average_fixed_cost",
       "commonError": "allows_afc_to_rise",
       "feedback": "The ATC–AVC gap is AFC; multiply by quantity to recover TFC.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "6a48e31093abf0421565196201a4431c762d18ee06a191a68acb5daf225439e2",
       "canonicalId": "P62E-COP-L-043",
       "sourceId": 681042,
@@ -19441,7 +19454,6 @@ const questionBanks = {
       "repairSkill": "long_run_average_cost",
       "commonError": "treats_lratc_as_one_plant",
       "feedback": "Long-run flexibility permits plant choice.",
-      "image": "question-assets/costs-of-production/cop_plant_envelope.webp",
       "aHash": "7e1b90ed4391df5dafca54b411cda16ae717c4317bdf8e3054193f3b6b9e1a63",
       "canonicalId": "P62E-COP-B3-053",
       "sourceId": 684216,
@@ -19543,7 +19555,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
       "aHash": "ba127e7f1c3b5fa93e1ae51f43a23ccf1c0e3db2bd0579c93faf7d4101ba833b",
       "canonicalId": "P62E-COP-LB-001",
       "sourceId": 685000,
@@ -19596,7 +19607,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
       "aHash": "f818c89465fb24fc71ef025907c5b1d526bfb94f946dc1668605d61d95621b75",
       "canonicalId": "P62E-COP-LB-002",
       "sourceId": 685001,
@@ -19649,7 +19659,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
       "aHash": "b40dccf723b27888605a288403e9184ed686df01fc5757e48bc8706f5ab494bb",
       "canonicalId": "P62E-COP-LB-003",
       "sourceId": 685002,
@@ -19701,7 +19710,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "69de0d1a2a07dd9787e0a655d96de3899d73ed126a903db4006f9363042041e6",
       "canonicalId": "P62E-COP-LB-004",
       "sourceId": 685003,
@@ -19754,7 +19762,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "f17d96d79126dfbddf8a4b8e8d0a1195152c1227dc26fe7f14b1011e9fcbecb7",
       "canonicalId": "P62E-COP-LB-005",
       "sourceId": 685004,
@@ -19807,7 +19814,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
       "aHash": "52ff71bd2099cd959c5367b3a357e606d98ce78ce596451b61fb808dc59fdf90",
       "canonicalId": "P62E-COP-LB-006",
       "sourceId": 685005,
@@ -19859,7 +19865,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_cost.webp",
       "aHash": "34f750ca3124d8ab4910895fc047d6208d2bc238fd97691ac2ef58c2ffd91a37",
       "canonicalId": "P62E-COP-LB-007",
       "sourceId": 685006,
@@ -19912,7 +19917,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_cost.webp",
       "aHash": "8fb45d1702d417fb11f3ba3cec50e689dddd5d0ff43372b64d8407e561f195a7",
       "canonicalId": "P62E-COP-LB-008",
       "sourceId": 685007,
@@ -19965,7 +19969,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_harbor_roasters_cost.webp",
       "aHash": "2342bec9c8df5dd135e80547c6fa9a9663468229f9d38bab15009882a2aa88f0",
       "canonicalId": "P62E-COP-LB-009",
       "sourceId": 685008,
@@ -20017,7 +20020,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "919899b9f1207ce227799cbb081030a20f28e3ced49f1ffd975daf9c9ec00f6c",
       "canonicalId": "P62E-COP-LB-010",
       "sourceId": 685009,
@@ -20070,7 +20072,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "1ff96bdb20977b51743c152ae0772b95eaa3403d787c2cdfd6fa76cc623f4de5",
       "canonicalId": "P62E-COP-LB-011",
       "sourceId": 685010,
@@ -20123,7 +20124,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
       "aHash": "6b95128020b5ba4e2c1ef4d5bbf70ce48e27231e8e45c73e6d1d78a0254fcc65",
       "canonicalId": "P62E-COP-LB-012",
       "sourceId": 685011,
@@ -20175,7 +20175,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "72f642476b7de584cd08f9caec04c321480b671c3dfb9d3135fb8c6b5d6bcd26",
       "canonicalId": "P62E-COP-LB-013",
       "sourceId": 685012,
@@ -20228,7 +20227,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "0859a147209bc3960e7a6a0c571fe583acf47a6ea2ebe8a8cc49f61a5026c6b0",
       "canonicalId": "P62E-COP-LB-014",
       "sourceId": 685013,
@@ -20281,7 +20279,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
       "aHash": "c68c0bcd5ddd531d557c5f3dd5a160ed261e7f40cf9a359e497525d839cb64ee",
       "canonicalId": "P62E-COP-LB-015",
       "sourceId": 685014,
@@ -20333,7 +20330,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
       "aHash": "aebd75d5dc5623e0d1a33dc197aa1d96684b7c6c5e4d5494ba13255460692f8c",
       "canonicalId": "P62E-COP-LB-016",
       "sourceId": 685015,
@@ -20386,7 +20382,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
       "aHash": "5a3b5b98e047595671919da5dd24f59ebdc6687b3fe25a5e50a4f8813cfa5cb6",
       "canonicalId": "P62E-COP-LB-017",
       "sourceId": 685016,
@@ -20439,7 +20434,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
       "aHash": "ea6bf13f0a5e6c10104678721715e25c2df4866cc6dd5ff93d91123acec8ef45",
       "canonicalId": "P62E-COP-LB-018",
       "sourceId": 685017,
@@ -20491,7 +20485,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "9734c695ac1404050c066f6987f3f39a58a2d844be5375929d72b38d86b9b902",
       "canonicalId": "P62E-COP-LB-019",
       "sourceId": 685018,
@@ -20544,7 +20537,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "5f236a3ad291c9e1d51e5648d97cf04b97b01632c8e6689af29c716f4520118b",
       "canonicalId": "P62E-COP-LB-020",
       "sourceId": 685019,
@@ -20597,7 +20589,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
       "aHash": "fb5040f0c533ece7607a8dfc76ac191a3175d09aff6920dda9dafde813b5da68",
       "canonicalId": "P62E-COP-LB-021",
       "sourceId": 685020,
@@ -20649,7 +20640,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "7bcf85acc8bdd56205b2efa066cc234b3a4029ad1f5a9b1c0c80a379c39a5cd7",
       "canonicalId": "P62E-COP-LB-022",
       "sourceId": 685021,
@@ -20702,7 +20692,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "3fc6b4ab81dc6fa4f0976e12bd1b87991e7971f15b2180cb69d8cf5ec884461e",
       "canonicalId": "P62E-COP-LB-023",
       "sourceId": 685022,
@@ -20755,7 +20744,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
       "aHash": "1ca3a4e852ae12de046ae47c470581c8006647fd6b64293a50a2bf0f042eedab",
       "canonicalId": "P62E-COP-LB-024",
       "sourceId": 685023,
@@ -20807,7 +20795,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
       "aHash": "88823d7c83cc20780b5983190df1fb1398735202a05017b4f5059dd4f2776792",
       "canonicalId": "P62E-COP-LB-025",
       "sourceId": 685024,
@@ -20860,7 +20847,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
       "aHash": "e872cf8bfb25584a3f25c3a7ca05f26c2c485a8d8c19b6791924b5bdb16678fc",
       "canonicalId": "P62E-COP-LB-026",
       "sourceId": 685025,
@@ -20913,7 +20899,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
       "aHash": "742e76d6a41e492aba2aae9cdb3d636412496c6819b1b658a5474e446b6fd95a",
       "canonicalId": "P62E-COP-LB-027",
       "sourceId": 685026,
@@ -20965,7 +20950,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "ce26105646976dbdeef174920bba6ca349a73649c23346d804c8e961ce6b68ec",
       "canonicalId": "P62E-COP-LB-028",
       "sourceId": 685027,
@@ -21018,7 +21002,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "f7ff80a391a446c6c932400e86afbe94810cfb80475ee13d25c66029eb9ee70f",
       "canonicalId": "P62E-COP-LB-029",
       "sourceId": 685028,
@@ -21071,7 +21054,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
       "aHash": "2679836db53d296e13720bcda0865594cff68aa9e29ad15032b4bac6f11a235c",
       "canonicalId": "P62E-COP-LB-030",
       "sourceId": 685029,
@@ -21123,7 +21105,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
       "aHash": "9d2bc53f02294552416a63a8bb85172a0797bc9547e9ca2f9159d79475a22bf7",
       "canonicalId": "P62E-COP-LB-031",
       "sourceId": 685030,
@@ -21176,7 +21157,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
       "aHash": "2377ad1fdc3c753413aeddb10e2aec6ce522adf346f82f1504bc41dbad0123ed",
       "canonicalId": "P62E-COP-LB-032",
       "sourceId": 685031,
@@ -21229,7 +21209,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
       "aHash": "061c14479d17a0e782e84e1e8e14700ec28d3c659ff7ef761573d4a497ca00d4",
       "canonicalId": "P62E-COP-LB-033",
       "sourceId": 685032,
@@ -21281,7 +21260,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Compute recorded profit, total owner opportunity cost, and economic profit in sequence.",
-      "image": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
       "aHash": "b8e3787d3abe4656d8533236614f566f58e15104350ec212ed2884b648c2d595",
       "canonicalId": "P62E-COP-LB-034",
       "sourceId": 685033,
@@ -21334,7 +21312,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Calculate MP, wage/MP, the wage bill, total cost, and cost per unit.",
-      "image": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
       "aHash": "f724b298e5dd7377ca7af496bc72c738207ec273e427b408e394f79f260a913a",
       "canonicalId": "P62E-COP-LB-035",
       "sourceId": 685034,
@@ -21387,7 +21364,6 @@ const questionBanks = {
       "repairSkill": "integrated_cost_analysis",
       "commonError": "omits_cost_relationships",
       "feedback": "Rebuild fixed and variable totals separately, divide by Q, and use the new wage over unchanged MP for MC.",
-      "image": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
       "aHash": "8592dd6447ba95a63030aa2e092d9ce3fa7c8b2b99d20e866f244d076046691c",
       "canonicalId": "P62E-COP-LB-036",
       "sourceId": 685035,
@@ -21547,11 +21523,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:costs-of-production-mastery-quest:404bebe98bc9",
-  "compositionFingerprint": "404bebe98bc9df3c9f048bd294eb1dd7c93746725da1e01124c23e83048e2746",
-  "libraryVersion": "phase6.2e-costs-of-production-rich-bank-v1",
-  "librarySha256": "5c958af16a500a59ff6b500ef600a6a0d11e5f29ea72392f16fe51974d50e872",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "saveKeyNamespace": "mq-econ:costs-of-production-mastery-quest:ceadbb456469",
+  "compositionFingerprint": "ceadbb45646988aef727c4859d927fc50bff00eec914e056766b0f927ed97088",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -26315,10 +26291,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26606,7 +26582,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26692,7 +26676,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26702,9 +26694,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -27025,7 +27022,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }

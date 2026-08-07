@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3054,14 +3057,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
     "templateVersion": "phase4.5b-self-contained",
     "composerVersion": "4.5b.0",
     "compositionId": "consumer-and-producer-surplus-mastery-quest",
-    "saveKeyNamespace": "mq-econ:consumer-and-producer-surplus-mastery-quest:94f409056504",
-    "librarySha256": "e44ae157cf94667bad23625b51ffb001164d7d35f62f91607ae6def65eab79cd",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
-    "compositionFingerprint": "94f4090565043a67bc7db229a1a474498e9b2d375c7538cf4dc35fe358cb2c1b"
+    "saveKeyNamespace": "mq-econ:consumer-and-producer-surplus-mastery-quest:acb0a00e901d",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
+    "compositionFingerprint": "acb0a00e901d499ccc41972c79add8e44f00688c92a8a7233d7e4523b03f8150"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -21540,11 +21627,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:consumer-and-producer-surplus-mastery-quest:94f409056504",
-  "compositionFingerprint": "94f4090565043a67bc7db229a1a474498e9b2d375c7538cf4dc35fe358cb2c1b",
-  "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
-  "librarySha256": "e44ae157cf94667bad23625b51ffb001164d7d35f62f91607ae6def65eab79cd",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "saveKeyNamespace": "mq-econ:consumer-and-producer-surplus-mastery-quest:acb0a00e901d",
+  "compositionFingerprint": "acb0a00e901d499ccc41972c79add8e44f00688c92a8a7233d7e4523b03f8150",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -26352,10 +26439,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26643,7 +26730,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26729,7 +26824,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26739,9 +26842,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -27062,7 +27170,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }

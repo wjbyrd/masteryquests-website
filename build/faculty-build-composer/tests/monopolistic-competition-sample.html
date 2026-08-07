@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3054,14 +3057,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2h-monopolistic-competition-rich-bank-v1",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
     "templateVersion": "phase4.5b-self-contained",
     "composerVersion": "4.5b.0",
     "compositionId": "monopolistic-competition-mastery-quest",
-    "saveKeyNamespace": "mq-econ:monopolistic-competition-mastery-quest:291634cdddf6",
-    "librarySha256": "0fc1a0ef088e7e08b9fef8f760266f2a4ea5d0fc11e995537127824ec52a2f3b",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
-    "compositionFingerprint": "291634cdddf60e2132144a6f27296eaee303d424809289d526f9d2ee81f45c63"
+    "saveKeyNamespace": "mq-econ:monopolistic-competition-mastery-quest:9124da0aaf27",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
+    "compositionFingerprint": "9124da0aaf27261d7d2b2030ed7fda73f0e81626c05f5287284390729a02ed74"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -5833,7 +5920,6 @@ const questionBanks = {
       "repairSkill": "firm_demand_mc",
       "commonError": "uses_horizontal_or_market_demand",
       "feedback": "Differentiation allows price to affect quantity demanded for the firm’s variety.",
-      "image": "question-assets/monopolistic-competition/mcmp_basic_1.webp",
       "aHash": "8e3351bc4837fd9112086c0992d301e0cff93a663c1cf5604010fc8c4847283b",
       "canonicalId": "P62H-MCMP-E-009",
       "sourceId": 710008,
@@ -6539,7 +6625,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Tangency makes price equal ATC at the chosen output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "7f653a8375598950744ecf0fc090d6108cb38edf7544ab2a92d81acde56b1791",
       "canonicalId": "P62H-MCMP-E-024",
       "sourceId": 710023,
@@ -6587,7 +6672,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Differentiation leaves a markup even when economic profit is zero.",
-      "image": "question-assets/monopolistic-competition/mcmp_basic_1.webp",
       "aHash": "2fc47e5f16c9233f2b85e4e238343bd8aae6102662074b9222959a3fc1f725f8",
       "canonicalId": "P62H-MCMP-E-025",
       "sourceId": 710024,
@@ -6635,7 +6719,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "The firm produces below the output that minimizes average total cost.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "995076db821f47286f5ce215acc9d8d5466001acd353d3f0707222dd8d0f1501",
       "canonicalId": "P62H-MCMP-E-026",
       "sourceId": 710025,
@@ -7796,7 +7879,7 @@ const questionBanks = {
     {
       "id": "P62H-MCMP-M-021",
       "sourceGame": "monopolisticCompetition",
-      "q": "Graph 1 shows a long-run monopolistically competitive firm at Q1=20 while ATC is minimized at Q2=36.67. What is excess capacity?",
+      "q": "A long-run monopolistically competitive firm produces Q1=20 while ATC is minimized at Q2=36.67. What is excess capacity?",
       "options": [
         "20 units",
         "36.67 units",
@@ -7813,7 +7896,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Subtract equilibrium output from the minimum-ATC output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "da877d832cd012870c8edf004e89d8f4e70925b5c89781b5100e5272b836c6d7",
       "canonicalId": "P62H-MCMP-M-021",
       "sourceId": 710120,
@@ -7861,7 +7943,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup equals price minus marginal cost.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416",
       "canonicalId": "P62H-MCMP-M-022",
       "sourceId": 710121,
@@ -7892,7 +7973,7 @@ const questionBanks = {
     {
       "id": "P62H-MCMP-M-023",
       "sourceGame": "monopolisticCompetition",
-      "q": "Graph 2 shows a long-run monopolistically competitive firm at Q1=24 while ATC is minimized at Q2=39.71. What is excess capacity?",
+      "q": "A long-run monopolistically competitive firm produces Q1=24 while ATC is minimized at Q2=39.71. What is excess capacity?",
       "options": [
         "15.71 units",
         "24 units",
@@ -7909,7 +7990,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Subtract equilibrium output from the minimum-ATC output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "cfe14c24128a50b9ed9ace45a3b6bb0d2c997f8131361eee919d8945ae1a6722",
       "canonicalId": "P62H-MCMP-M-023",
       "sourceId": 710122,
@@ -7957,7 +8037,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup equals price minus marginal cost.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "6f5fb70a404520ada055d653dbfd73b06b4c5f1fc4435508137714209188cc22",
       "canonicalId": "P62H-MCMP-M-024",
       "sourceId": 710123,
@@ -7988,7 +8067,7 @@ const questionBanks = {
     {
       "id": "P62H-MCMP-M-025",
       "sourceGame": "monopolisticCompetition",
-      "q": "Graph 3 shows a long-run monopolistically competitive firm at Q1=18 while ATC is minimized at Q2=34.07. What is excess capacity?",
+      "q": "A long-run monopolistically competitive firm produces Q1=18 while ATC is minimized at Q2=34.07. What is excess capacity?",
       "options": [
         "18 units",
         "34.07 units",
@@ -8005,7 +8084,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Subtract equilibrium output from the minimum-ATC output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "cbb4579cabc29305bb3d39e4c1800c2a2ee5c081d8979385988a7f818b7596e8",
       "canonicalId": "P62H-MCMP-M-025",
       "sourceId": 710124,
@@ -8053,7 +8131,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup equals price minus marginal cost.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "c79bc6296b8df5b1def5d6d0ceedb7437abf8199868eacb279c46216841149d6",
       "canonicalId": "P62H-MCMP-M-026",
       "sourceId": 710125,
@@ -8084,7 +8161,7 @@ const questionBanks = {
     {
       "id": "P62H-MCMP-M-027",
       "sourceGame": "monopolisticCompetition",
-      "q": "Graph 4 shows a long-run monopolistically competitive firm at Q1=28 while ATC is minimized at Q2=43. What is excess capacity?",
+      "q": "A long-run monopolistically competitive firm produces Q1=28 while ATC is minimized at Q2=43. What is excess capacity?",
       "options": [
         "15 units",
         "28 units",
@@ -8101,7 +8178,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Subtract equilibrium output from the minimum-ATC output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "74621c847c2d91614266c7bbbacf769a8805f0e16e04d7c519f33342d1fccb84",
       "canonicalId": "P62H-MCMP-M-027",
       "sourceId": 710126,
@@ -8149,7 +8225,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup equals price minus marginal cost.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "274fe90eb55dcd73ed37316ed942432e88f7db2716b3faf6da0b6a277798a64b",
       "canonicalId": "P62H-MCMP-M-028",
       "sourceId": 710127,
@@ -8180,7 +8255,7 @@ const questionBanks = {
     {
       "id": "P62H-MCMP-M-029",
       "sourceGame": "monopolisticCompetition",
-      "q": "Graph 5 shows a long-run monopolistically competitive firm at Q1=22 while ATC is minimized at Q2=38. What is excess capacity?",
+      "q": "A long-run monopolistically competitive firm produces Q1=22 while ATC is minimized at Q2=38. What is excess capacity?",
       "options": [
         "22 units",
         "38 units",
@@ -8197,7 +8272,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Subtract equilibrium output from the minimum-ATC output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "505f072588d83116ee8321e8f026f9297acbc8acdd86fd1daafbb34d3b9dc04e",
       "canonicalId": "P62H-MCMP-M-029",
       "sourceId": 710128,
@@ -8245,7 +8319,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup equals price minus marginal cost.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "00be24e859027bdab88261bd069f7de1fbc2ba5fd8a4ec03b149cf46c56b68a3",
       "canonicalId": "P62H-MCMP-M-030",
       "sourceId": 710129,
@@ -9243,7 +9316,6 @@ const questionBanks = {
       "repairSkill": "advertising_demand_shift",
       "commonError": "uses_movement_along_demand",
       "feedback": "Demand and cost effects must be evaluated together.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
       "aHash": "b7b9a672be97cd3f4cc539fc2df5c57dfdd13a2fc6841ed980044f1a73cedcac",
       "canonicalId": "P62H-MCMP-H-021",
       "sourceId": 710220,
@@ -9573,7 +9645,6 @@ const questionBanks = {
       "repairSkill": "selling_cost",
       "commonError": "misclassifies_fixed_and_per_unit_cost",
       "feedback": "A pure fixed-cost increase does not alter MR=MC output.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_per_unit_4.webp",
       "aHash": "79a42fca2b7a5badf36e018cfd042fb210b99e9b37e9566193a8707fc7f5b918",
       "canonicalId": "P62H-MCMP-H-028",
       "sourceId": 710227,
@@ -9621,7 +9692,6 @@ const questionBanks = {
       "repairSkill": "quality_competition",
       "commonError": "confuses_quality_with_image",
       "feedback": "Demand and marginal-cost changes push decisions in potentially opposing directions.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
       "aHash": "e54a55f54d6f44421eb780aaccae8883e2de88c8e155493ed407b2f043cf6c78",
       "canonicalId": "P62H-MCMP-H-029",
       "sourceId": 710228,
@@ -10609,7 +10679,6 @@ const questionBanks = {
       "repairSkill": "short_run_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "Price is below AVC, so operating adds to the loss.",
-      "image": "question-assets/monopolistic-competition/mcmp_shutdown_1.webp",
       "aHash": "1ed5d8398feae415249db9a773b47e6bbc46fcb0c5b8275e1ad4de89d38c9d75",
       "canonicalId": "P62H-MCMP-C-020",
       "sourceId": 712019,
@@ -10657,7 +10726,6 @@ const questionBanks = {
       "repairSkill": "short_run_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "Price is below AVC, so operating adds to the loss.",
-      "image": "question-assets/monopolistic-competition/mcmp_shutdown_1.webp",
       "aHash": "1ed5d8398feae415249db9a773b47e6bbc46fcb0c5b8275e1ad4de89d38c9d75",
       "canonicalId": "P62H-MCMP-C-021",
       "sourceId": 712020,
@@ -10799,7 +10867,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "When P=ATC, economic profit is zero.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee",
       "canonicalId": "P62H-MCMP-C-024",
       "sourceId": 712023,
@@ -10847,7 +10914,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "When P=ATC, economic profit is zero.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee",
       "canonicalId": "P62H-MCMP-C-025",
       "sourceId": 712024,
@@ -10895,7 +10961,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "c79bc6296b8df5b1def5d6d0ceedb7437abf8199868eacb279c46216841149d6",
       "canonicalId": "P62H-MCMP-C-026",
       "sourceId": 712025,
@@ -10943,7 +11008,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "74621c847c2d91614266c7bbbacf769a8805f0e16e04d7c519f33342d1fccb84",
       "canonicalId": "P62H-MCMP-C-027",
       "sourceId": 712026,
@@ -10991,7 +11055,6 @@ const questionBanks = {
       "repairSkill": "markup",
       "commonError": "equates_markup_with_profit",
       "feedback": "Markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "00be24e859027bdab88261bd069f7de1fbc2ba5fd8a4ec03b149cf46c56b68a3",
       "canonicalId": "P62H-MCMP-C-028",
       "sourceId": 712027,
@@ -11182,7 +11245,6 @@ const questionBanks = {
       "repairSkill": "entry_after_profit",
       "commonError": "assumes_profit_persists",
       "feedback": "Lower firm demand reduces the chosen output, price, and profit.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "bbdbdba7fd68f4d06ae68e9badfcb05b9c2fdc741a08188118d65f76459f301f",
       "canonicalId": "P62H-MCMP-EL-002",
       "sourceId": 710301,
@@ -11230,7 +11292,6 @@ const questionBanks = {
       "repairSkill": "quality_competition",
       "commonError": "confuses_quality_with_image",
       "feedback": "Both demand and marginal cost must be updated in the marginal decision.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_quality_5.webp",
       "aHash": "5eb55be17c044ba66f905dad3d0e4053c82d32f9f7e5f36821a210facbf1d217",
       "canonicalId": "P62H-MCMP-EL-003",
       "sourceId": 710302,
@@ -11842,7 +11903,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Excess capacity is QminATC−Q; markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "b04196154ff7fc59ecfbb862b557de183313f482cd057595f764ec758853e333",
       "canonicalId": "P62H-MCMP-EL-016",
       "sourceId": 710315,
@@ -11938,7 +11998,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Excess capacity is QminATC−Q; markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "64c6c44d1d756e31b5be272172d6447a2812a04f4244c390841569b2a7422d8c",
       "canonicalId": "P62H-MCMP-EL-018",
       "sourceId": 710317,
@@ -12034,7 +12093,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Excess capacity is QminATC−Q; markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "d42237bb4b7ff15135e20eafa1f90226eaa3b05d455c73288b97122381de54df",
       "canonicalId": "P62H-MCMP-EL-020",
       "sourceId": 710319,
@@ -12130,7 +12188,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Excess capacity is QminATC−Q; markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "e5cdba9e45421f95cca6ae4a53712d7e4885c0e85d87d0cf810eb06214498a2f",
       "canonicalId": "P62H-MCMP-EL-022",
       "sourceId": 710321,
@@ -12226,7 +12283,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Excess capacity is QminATC−Q; markup is P−MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "cbdfb6774435f808e693c6d9ed7e62375d9cb00ca9ec955649f514ec32494c82",
       "canonicalId": "P62H-MCMP-EL-024",
       "sourceId": 710323,
@@ -12653,7 +12709,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-003",
       "sourceId": 711002,
@@ -12795,7 +12850,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-006",
       "sourceId": 711005,
@@ -12937,7 +12991,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-009",
       "sourceId": 711008,
@@ -13079,7 +13132,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-012",
       "sourceId": 711011,
@@ -13221,7 +13273,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-015",
       "sourceId": 711014,
@@ -13363,7 +13414,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-018",
       "sourceId": 711017,
@@ -13505,7 +13555,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-021",
       "sourceId": 711020,
@@ -13647,7 +13696,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-024",
       "sourceId": 711023,
@@ -13789,7 +13837,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-027",
       "sourceId": 711026,
@@ -13931,7 +13978,6 @@ const questionBanks = {
       "repairSkill": "entry_demand_shift",
       "commonError": "shifts_existing_firm_demand_right",
       "feedback": "Entry creates substitutes and weakens the existing firm’s demand.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "4b6630e2b335c6b1ccab3209e622c275ced1bf5fc8562c5901d50c03fab2d31e",
       "canonicalId": "P62H-MCMP-L-030",
       "sourceId": 711029,
@@ -13979,7 +14025,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "Tangency gives P=ATC while P remains above MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "4601d738aae8cc7ea10c8ad8513501eecf4a814cbf37fc508e3f024046a7da3a",
       "canonicalId": "P62H-MCMP-L-031",
       "sourceId": 711030,
@@ -14027,7 +14072,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Use P−MC and QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "08abaf3385b267788f9247b988438b97c4c1e5085302b3904e55d5870cf6308e",
       "canonicalId": "P62H-MCMP-L-032",
       "sourceId": 711031,
@@ -14075,7 +14119,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "A fixed-cost increase can create losses; exit then reduces substitute pressure.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
       "aHash": "c293534a3184a98526ae5332cd566d99438f3944a9fac2001b2e885aaa959fa0",
       "canonicalId": "P62H-MCMP-L-033",
       "sourceId": 711032,
@@ -14123,7 +14166,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "Tangency gives P=ATC while P remains above MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "4601d738aae8cc7ea10c8ad8513501eecf4a814cbf37fc508e3f024046a7da3a",
       "canonicalId": "P62H-MCMP-L-034",
       "sourceId": 711033,
@@ -14171,7 +14213,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Use P−MC and QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "173be2b38ac896db5374789723912807f9ca5022e87c60646d540dbd893af7b4",
       "canonicalId": "P62H-MCMP-L-035",
       "sourceId": 711034,
@@ -14219,7 +14260,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "A fixed-cost increase can create losses; exit then reduces substitute pressure.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
       "aHash": "c293534a3184a98526ae5332cd566d99438f3944a9fac2001b2e885aaa959fa0",
       "canonicalId": "P62H-MCMP-L-036",
       "sourceId": 711035,
@@ -14267,7 +14307,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "Tangency gives P=ATC while P remains above MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "4601d738aae8cc7ea10c8ad8513501eecf4a814cbf37fc508e3f024046a7da3a",
       "canonicalId": "P62H-MCMP-L-037",
       "sourceId": 711036,
@@ -14315,7 +14354,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Use P−MC and QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "4f8ada378d904956fba9575efb39f1a182df04cbe8ac996b7553f16c2b42d09a",
       "canonicalId": "P62H-MCMP-L-038",
       "sourceId": 711037,
@@ -14363,7 +14401,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "A fixed-cost increase can create losses; exit then reduces substitute pressure.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
       "aHash": "c293534a3184a98526ae5332cd566d99438f3944a9fac2001b2e885aaa959fa0",
       "canonicalId": "P62H-MCMP-L-039",
       "sourceId": 711038,
@@ -14411,7 +14448,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "Tangency gives P=ATC while P remains above MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "4601d738aae8cc7ea10c8ad8513501eecf4a814cbf37fc508e3f024046a7da3a",
       "canonicalId": "P62H-MCMP-L-040",
       "sourceId": 711039,
@@ -14459,7 +14495,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Use P−MC and QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "650694b4932b8ce568019c4a12e3c5a0bdbbded461c8ecfb082caf8b2ddbbf4a",
       "canonicalId": "P62H-MCMP-L-041",
       "sourceId": 711040,
@@ -14507,7 +14542,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "A fixed-cost increase can create losses; exit then reduces substitute pressure.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
       "aHash": "c293534a3184a98526ae5332cd566d99438f3944a9fac2001b2e885aaa959fa0",
       "canonicalId": "P62H-MCMP-L-042",
       "sourceId": 711041,
@@ -14555,7 +14589,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "Tangency gives P=ATC while P remains above MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "4601d738aae8cc7ea10c8ad8513501eecf4a814cbf37fc508e3f024046a7da3a",
       "canonicalId": "P62H-MCMP-L-043",
       "sourceId": 711042,
@@ -14603,7 +14636,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Use P−MC and QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "4a954d95fce6dc8dd31a2762dd8f963736eaef2dff67202f15c1b250aef0544f",
       "canonicalId": "P62H-MCMP-L-044",
       "sourceId": 711043,
@@ -14651,7 +14683,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "A fixed-cost increase can create losses; exit then reduces substitute pressure.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
       "aHash": "c293534a3184a98526ae5332cd566d99438f3944a9fac2001b2e885aaa959fa0",
       "canonicalId": "P62H-MCMP-L-045",
       "sourceId": 711044,
@@ -14699,7 +14730,6 @@ const questionBanks = {
       "repairSkill": "long_run_zero_profit",
       "commonError": "equates_zero_economic_and_accounting_profit",
       "feedback": "Tangency gives P=ATC while P remains above MC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
       "aHash": "4601d738aae8cc7ea10c8ad8513501eecf4a814cbf37fc508e3f024046a7da3a",
       "canonicalId": "P62H-MCMP-L-046",
       "sourceId": 711045,
@@ -14747,7 +14777,6 @@ const questionBanks = {
       "repairSkill": "integrated_mc_analysis",
       "commonError": "fails_to_sequence_output_price_profit_adjustment",
       "feedback": "Use P−MC and QminATC−Q.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
       "aHash": "1e5c72f57d9982a0471cc46cf52a43953a303ab57a172f408fc8fe8a905dd79e",
       "canonicalId": "P62H-MCMP-L-047",
       "sourceId": 711046,
@@ -14795,7 +14824,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "A fixed-cost increase can create losses; exit then reduces substitute pressure.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
       "aHash": "c293534a3184a98526ae5332cd566d99438f3944a9fac2001b2e885aaa959fa0",
       "canonicalId": "P62H-MCMP-L-048",
       "sourceId": 711047,
@@ -14890,7 +14918,6 @@ const questionBanks = {
       "repairSkill": "elasticity_firm_demand",
       "commonError": "ignores_close_substitutes",
       "feedback": "Substitute availability affects responsiveness.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "cb985e9be614c67792062e7f5db2ce63c97e70661f1b13c950cc0b3b6f134086",
       "canonicalId": "P62H-MCMP-L-050",
       "sourceId": 711049,
@@ -14938,7 +14965,6 @@ const questionBanks = {
       "repairSkill": "long_run_adjustment",
       "commonError": "misapplies_monopolistic_competition_reasoning",
       "feedback": "Entry or exit removes the incentive for further movement.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "e70a72ff63f7d68a05205550f745cf4c974d541aa086feccf961b88f0a7b5b5b",
       "canonicalId": "P62H-MCMP-L-051",
       "sourceId": 711050,
@@ -16821,7 +16847,6 @@ const questionBanks = {
       "repairSkill": "product_differentiation",
       "commonError": "assumes_products_identical",
       "feedback": "Differentiation creates limited market power.",
-      "image": "question-assets/monopolistic-competition/mcmp_profit_1.webp",
       "aHash": "3824d68175c362875442de509729041893e8319513a25394ed7b7d2e4b8d880a",
       "canonicalId": "P62H-MCMP-B1-001",
       "sourceId": 714000,
@@ -16963,7 +16988,6 @@ const questionBanks = {
       "repairSkill": "product_differentiation",
       "commonError": "assumes_products_identical",
       "feedback": "Differentiation creates limited market power.",
-      "image": "question-assets/monopolistic-competition/mcmp_basic_1.webp",
       "aHash": "3824d68175c362875442de509729041893e8319513a25394ed7b7d2e4b8d880a",
       "canonicalId": "P62H-MCMP-B1-004",
       "sourceId": 714003,
@@ -17105,7 +17129,6 @@ const questionBanks = {
       "repairSkill": "product_differentiation",
       "commonError": "assumes_products_identical",
       "feedback": "Differentiation creates limited market power.",
-      "image": "question-assets/monopolistic-competition/mcmp_profit_2.webp",
       "aHash": "3824d68175c362875442de509729041893e8319513a25394ed7b7d2e4b8d880a",
       "canonicalId": "P62H-MCMP-B1-007",
       "sourceId": 714006,
@@ -17247,7 +17270,6 @@ const questionBanks = {
       "repairSkill": "product_differentiation",
       "commonError": "assumes_products_identical",
       "feedback": "Differentiation creates limited market power.",
-      "image": "question-assets/monopolistic-competition/mcmp_loss_1.webp",
       "aHash": "3824d68175c362875442de509729041893e8319513a25394ed7b7d2e4b8d880a",
       "canonicalId": "P62H-MCMP-B1-010",
       "sourceId": 714009,
@@ -17389,7 +17411,6 @@ const questionBanks = {
       "repairSkill": "product_differentiation",
       "commonError": "assumes_products_identical",
       "feedback": "Differentiation creates limited market power.",
-      "image": "question-assets/monopolistic-competition/mcmp_basic_2.webp",
       "aHash": "3824d68175c362875442de509729041893e8319513a25394ed7b7d2e4b8d880a",
       "canonicalId": "P62H-MCMP-B1-013",
       "sourceId": 714012,
@@ -17531,7 +17552,6 @@ const questionBanks = {
       "repairSkill": "product_differentiation",
       "commonError": "assumes_products_identical",
       "feedback": "Differentiation creates limited market power.",
-      "image": "question-assets/monopolistic-competition/mcmp_loss_2.webp",
       "aHash": "3824d68175c362875442de509729041893e8319513a25394ed7b7d2e4b8d880a",
       "canonicalId": "P62H-MCMP-B1-016",
       "sourceId": 714015,
@@ -17675,7 +17695,6 @@ const questionBanks = {
       "repairSkill": "entry_after_profit",
       "commonError": "assumes_profit_persists",
       "feedback": "Short-run profit attracts entry.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
       "aHash": "923fe53966c6cd9343e11af776cd4b05be315ea4b200b02e4d5dfb0f929b73bf",
       "canonicalId": "P62H-MCMP-B2-019",
       "sourceId": 714100,
@@ -17723,7 +17742,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Entry or exit continues until P=ATC at the chosen output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "ee660275435438ba5aa4b9d617dc531b5e9ff5049d8dbe995861d5878197e926",
       "canonicalId": "P62H-MCMP-B2-020",
       "sourceId": 714101,
@@ -17771,7 +17789,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is the output gap to minimum ATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "82af65e7064deb50ec7761b30b5750085cea3ad28ef3d5d89d5da5667f215f46",
       "canonicalId": "P62H-MCMP-B2-021",
       "sourceId": 714102,
@@ -17819,7 +17836,6 @@ const questionBanks = {
       "repairSkill": "entry_after_profit",
       "commonError": "assumes_profit_persists",
       "feedback": "Short-run profit attracts entry.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_2.webp",
       "aHash": "923fe53966c6cd9343e11af776cd4b05be315ea4b200b02e4d5dfb0f929b73bf",
       "canonicalId": "P62H-MCMP-B2-022",
       "sourceId": 714103,
@@ -17867,7 +17883,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Entry or exit continues until P=ATC at the chosen output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "ee660275435438ba5aa4b9d617dc531b5e9ff5049d8dbe995861d5878197e926",
       "canonicalId": "P62H-MCMP-B2-023",
       "sourceId": 714104,
@@ -17915,7 +17930,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is the output gap to minimum ATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "84d247c5d7e9f7a1705fa1f23f9ad6920b841ca9a4707df935db2ef7c8a0a141",
       "canonicalId": "P62H-MCMP-B2-024",
       "sourceId": 714105,
@@ -17963,7 +17977,6 @@ const questionBanks = {
       "repairSkill": "entry_after_profit",
       "commonError": "assumes_profit_persists",
       "feedback": "Short-run profit attracts entry.",
-      "image": "question-assets/monopolistic-competition/mcmp_entry_3.webp",
       "aHash": "923fe53966c6cd9343e11af776cd4b05be315ea4b200b02e4d5dfb0f929b73bf",
       "canonicalId": "P62H-MCMP-B2-025",
       "sourceId": 714106,
@@ -18011,7 +18024,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Entry or exit continues until P=ATC at the chosen output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "ee660275435438ba5aa4b9d617dc531b5e9ff5049d8dbe995861d5878197e926",
       "canonicalId": "P62H-MCMP-B2-026",
       "sourceId": 714107,
@@ -18059,7 +18071,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is the output gap to minimum ATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "36e07480e768116bf8ba6845a3e2ec30f49a27ba85891c848648b0c42a7ca11f",
       "canonicalId": "P62H-MCMP-B2-027",
       "sourceId": 714108,
@@ -18107,7 +18118,6 @@ const questionBanks = {
       "repairSkill": "exit_after_loss",
       "commonError": "assumes_loss_persists",
       "feedback": "Short-run loss encourages exit.",
-      "image": "question-assets/monopolistic-competition/mcmp_exit_4.webp",
       "aHash": "e596899f114b5162402325dfb31fdaa792fabed718628336cc7a35a24f38eaa9",
       "canonicalId": "P62H-MCMP-B2-028",
       "sourceId": 714109,
@@ -18155,7 +18165,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Entry or exit continues until P=ATC at the chosen output.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "ee660275435438ba5aa4b9d617dc531b5e9ff5049d8dbe995861d5878197e926",
       "canonicalId": "P62H-MCMP-B2-029",
       "sourceId": 714110,
@@ -18203,7 +18212,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is the output gap to minimum ATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "db06317e1a04f2587bb1dd92e8d1cef5c6169eff5fba26a3c99fa406986d2302",
       "canonicalId": "P62H-MCMP-B2-030",
       "sourceId": 714111,
@@ -18345,7 +18353,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is the output gap to minimum ATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "1ee75fedd41148251c84bd46f007d0d080216cd06d2b70058bb6d2d7b05b0857",
       "canonicalId": "P62H-MCMP-B2-033",
       "sourceId": 714114,
@@ -18487,7 +18494,6 @@ const questionBanks = {
       "repairSkill": "excess_capacity",
       "commonError": "defines_as_idle_physical_capital",
       "feedback": "Excess capacity is the output gap to minimum ATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
       "aHash": "d97e930c7d6d9266507070a827b49fc72277578f221b8c4ed46f295c92ff2776",
       "canonicalId": "P62H-MCMP-B2-036",
       "sourceId": 714117,
@@ -18537,7 +18543,6 @@ const questionBanks = {
       "repairSkill": "advertising_informational",
       "commonError": "treats_all_ads_as_persuasion",
       "feedback": "Classify the economic mechanism rather than relying on the word advertising.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
       "aHash": "4a0cd5f9db3d8d32fc3bc1b657ed8398f67d7ef618ec89bb611ff29f175487a9",
       "canonicalId": "P62H-MCMP-B3-037",
       "sourceId": 714200,
@@ -18585,7 +18590,6 @@ const questionBanks = {
       "repairSkill": "advertising_demand_shift",
       "commonError": "uses_movement_along_demand",
       "feedback": "The effect depends on whether the case changes information, perception, cost, or delivered value.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
       "aHash": "3bc62c05b1917206f741e70121317e8a687367e2961f9ede3978fecaaa43c140",
       "canonicalId": "P62H-MCMP-B3-038",
       "sourceId": 714201,
@@ -18633,7 +18637,6 @@ const questionBanks = {
       "repairSkill": "welfare_tradeoff",
       "commonError": "uses_one_sided_efficiency_claim",
       "feedback": "Welfare requires a balanced comparison of benefits and costs.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
       "aHash": "f1e831e1ef20cceb25898aa1751b2dfbfccd4019ab2aa45febfb5fdded379a27",
       "canonicalId": "P62H-MCMP-B3-039",
       "sourceId": 714202,
@@ -18681,7 +18684,6 @@ const questionBanks = {
       "repairSkill": "advertising_persuasive",
       "commonError": "treats_all_ads_as_information",
       "feedback": "Classify the economic mechanism rather than relying on the word advertising.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_elasticity_2.webp",
       "aHash": "5ac8c7bfdff37a60426a4c17e3ad5fd042f40ef4163e45d0a098412f40158ad9",
       "canonicalId": "P62H-MCMP-B3-040",
       "sourceId": 714203,
@@ -18729,7 +18731,6 @@ const questionBanks = {
       "repairSkill": "advertising_demand_shift",
       "commonError": "uses_movement_along_demand",
       "feedback": "The effect depends on whether the case changes information, perception, cost, or delivered value.",
-      "image": "question-assets/monopolistic-competition/mcmp_ad_elasticity_2.webp",
       "aHash": "3f84432b4f1f78b658dbbd086677e4e6a92106de80dcde54b74059544c32e273",
       "canonicalId": "P62H-MCMP-B3-041",
       "sourceId": 714204,
@@ -19484,7 +19485,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "6037431ad519eb820e2ea44600f61b80ddf8f0d131537965b165a3f2d4e04091",
       "canonicalId": "P62H-MCMP-LB-003",
       "sourceId": 715002,
@@ -19626,7 +19626,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "2e20525da4de1abc18a76020f0e9d2285aa82a927b2a95cc2ce1d5ba99cd1a86",
       "canonicalId": "P62H-MCMP-LB-006",
       "sourceId": 715005,
@@ -19768,7 +19767,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "db3b794ccab6d71feb60013b100781d5186007af06e89a9fb7d597794979c2c4",
       "canonicalId": "P62H-MCMP-LB-009",
       "sourceId": 715008,
@@ -19910,7 +19908,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "1adb7356f9e508b261bd9e96dcbdffd00a6ea063d9d157769e4cd33926968e4e",
       "canonicalId": "P62H-MCMP-LB-012",
       "sourceId": 715011,
@@ -20052,7 +20049,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "b4bf0e67865541d1e71030233b7a4e4b131843810c02ba1c29b13675995c3869",
       "canonicalId": "P62H-MCMP-LB-015",
       "sourceId": 715014,
@@ -20194,7 +20190,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
       "aHash": "30a23b2559f32b11b0107c68176a191d3538b4bad188b3b288bd3ef65eb1efb5",
       "canonicalId": "P62H-MCMP-LB-018",
       "sourceId": 715017,
@@ -20336,7 +20331,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
       "aHash": "6037431ad519eb820e2ea44600f61b80ddf8f0d131537965b165a3f2d4e04091",
       "canonicalId": "P62H-MCMP-LB-021",
       "sourceId": 715020,
@@ -20478,7 +20472,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
       "aHash": "2e20525da4de1abc18a76020f0e9d2285aa82a927b2a95cc2ce1d5ba99cd1a86",
       "canonicalId": "P62H-MCMP-LB-024",
       "sourceId": 715023,
@@ -20620,7 +20613,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
       "aHash": "db3b794ccab6d71feb60013b100781d5186007af06e89a9fb7d597794979c2c4",
       "canonicalId": "P62H-MCMP-LB-027",
       "sourceId": 715026,
@@ -20762,7 +20754,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
       "aHash": "1adb7356f9e508b261bd9e96dcbdffd00a6ea063d9d157769e4cd33926968e4e",
       "canonicalId": "P62H-MCMP-LB-030",
       "sourceId": 715029,
@@ -20904,7 +20895,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
       "aHash": "b4bf0e67865541d1e71030233b7a4e4b131843810c02ba1c29b13675995c3869",
       "canonicalId": "P62H-MCMP-LB-033",
       "sourceId": 715032,
@@ -21046,7 +21036,6 @@ const questionBanks = {
       "repairSkill": "long_run_tangency",
       "commonError": "places_tangency_at_minimum_atc",
       "feedback": "Long-run tangency gives P=ATC, while P>MC and Q<QminATC.",
-      "image": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
       "aHash": "30a23b2559f32b11b0107c68176a191d3538b4bad188b3b288bd3ef65eb1efb5",
       "canonicalId": "P62H-MCMP-LB-036",
       "sourceId": 715035,
@@ -21182,11 +21171,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:monopolistic-competition-mastery-quest:291634cdddf6",
-  "compositionFingerprint": "291634cdddf60e2132144a6f27296eaee303d424809289d526f9d2ee81f45c63",
-  "libraryVersion": "phase6.2h-monopolistic-competition-rich-bank-v1",
-  "librarySha256": "0fc1a0ef088e7e08b9fef8f760266f2a4ea5d0fc11e995537127824ec52a2f3b",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "saveKeyNamespace": "mq-econ:monopolistic-competition-mastery-quest:9124da0aaf27",
+  "compositionFingerprint": "9124da0aaf27261d7d2b2030ed7fda73f0e81626c05f5287284390729a02ed74",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -25952,10 +25941,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26243,7 +26232,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26329,7 +26326,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26339,9 +26344,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -26662,7 +26672,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }

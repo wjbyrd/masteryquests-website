@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3054,14 +3057,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
     "templateVersion": "phase4.5b-self-contained",
     "composerVersion": "4.5b.0",
     "compositionId": "international-trade-and-trade-policy-mastery-quest",
-    "saveKeyNamespace": "mq-econ:international-trade-and-trade-policy-mastery-quest:69bc2402ba0b",
-    "librarySha256": "e44ae157cf94667bad23625b51ffb001164d7d35f62f91607ae6def65eab79cd",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
-    "compositionFingerprint": "69bc2402ba0ba5a430958d23d8a9cbdaeffc4772e1e501265050dcb2dbb3cd0d"
+    "saveKeyNamespace": "mq-econ:international-trade-and-trade-policy-mastery-quest:fd5b5fc79b4e",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
+    "compositionFingerprint": "fd5b5fc79b4eff772dfcae93113cefc7a080cb551e0ebcd7188a1cd92c92dd6b"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -8281,7 +8368,6 @@ const questionBanks = {
       "repairSkill": "import_market_graph",
       "commonError": "misreads_world_price_or_trade_gap",
       "feedback": "The supply curve gives Qs=10, demand gives Qd=50, and imports are 40.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_market.webp",
       "aHash": "67b7858fc8cad8eba058ca6165e94ccd613c63764a51ec58957f0a980161998a",
       "canonicalId": "P62D-ITP-H-001",
       "sourceId": 670200,
@@ -8307,7 +8393,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_import_market.webp"
     },
     {
       "id": "P62D-ITP-H-002",
@@ -8329,7 +8416,6 @@ const questionBanks = {
       "repairSkill": "export_market_graph",
       "commonError": "misreads_world_price_or_trade_gap",
       "feedback": "Demand gives Qd=10, supply gives Qs=50, and exports are 40.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_market.webp",
       "aHash": "89dc8a4a68399bc034242d85617e3044b6108ba8254f2ab81319aea933de16de",
       "canonicalId": "P62D-ITP-H-002",
       "sourceId": 670201,
@@ -8355,7 +8441,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_export_market.webp"
     },
     {
       "id": "P62D-ITP-H-003",
@@ -8377,7 +8464,6 @@ const questionBanks = {
       "repairSkill": "total_surplus_trade",
       "commonError": "equates_group_loss_with_total_loss",
       "feedback": "Consumer surplus and producer surplus are each $450, for total surplus of $900.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_closed_market.webp",
       "aHash": "956b060488349227afaaff8545deb2dd38abd82b579e52fe145684bae4bb6856",
       "canonicalId": "P62D-ITP-H-003",
       "sourceId": 670202,
@@ -8403,7 +8489,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_closed_market.webp"
     },
     {
       "id": "P62D-ITP-H-004",
@@ -8425,7 +8512,6 @@ const questionBanks = {
       "repairSkill": "consumer_surplus_trade",
       "commonError": "ignores_consumer_price_and_quantity_changes",
       "feedback": "The triangle has base 50 and height 50: ½×50×50=$1,250.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
       "aHash": "e0ac375f70948bdafbec9a8f1e532c174ac58b61712cda05de477e19040d3e11",
       "canonicalId": "P62D-ITP-H-004",
       "sourceId": 670203,
@@ -8451,7 +8537,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp"
     },
     {
       "id": "P62D-ITP-H-005",
@@ -8473,7 +8560,6 @@ const questionBanks = {
       "repairSkill": "producer_surplus_trade",
       "commonError": "ignores_producer_price_and_quantity_changes",
       "feedback": "The triangle has base 10 and height 10: ½×10×10=$50.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
       "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd",
       "canonicalId": "P62D-ITP-H-005",
       "sourceId": 670204,
@@ -8499,7 +8585,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp"
     },
     {
       "id": "P62D-ITP-H-006",
@@ -8521,7 +8608,6 @@ const questionBanks = {
       "repairSkill": "producer_surplus_trade",
       "commonError": "ignores_producer_price_and_quantity_changes",
       "feedback": "The triangle has base 50 and height 50: ½×50×50=$1,250.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp",
       "aHash": "e0ac375f70948bdafbec9a8f1e532c174ac58b61712cda05de477e19040d3e11",
       "canonicalId": "P62D-ITP-H-006",
       "sourceId": 670205,
@@ -8547,7 +8633,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp"
     },
     {
       "id": "P62D-ITP-H-007",
@@ -8569,7 +8656,6 @@ const questionBanks = {
       "repairSkill": "consumer_surplus_trade",
       "commonError": "ignores_consumer_price_and_quantity_changes",
       "feedback": "The triangle has base 10 and height 10: ½×10×10=$50.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp",
       "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd",
       "canonicalId": "P62D-ITP-H-007",
       "sourceId": 670206,
@@ -8595,7 +8681,8 @@ const questionBanks = {
       "instructionalRole": "main",
       "canonicalDifficulty": "hard",
       "originalSourcePool": "hard",
-      "originalBossTier": null
+      "originalBossTier": null,
+      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp"
     },
     {
       "id": "P62D-ITP-H-008",
@@ -12533,7 +12620,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $30, demand is 50, supply is 10, and the gap is 40 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_arden_import.webp",
       "aHash": "48b935eacbec463167b4c491db01bd88bf28ae5bf6556002696f7a18a9661ef6",
       "canonicalId": "P62D-ITP-L-001",
       "sourceId": 671000,
@@ -12683,7 +12769,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $42, demand is 52, supply is 16, and the gap is 36 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_bellora_import.webp",
       "aHash": "3d5737417b8527eac4858122a783eb238f5b4965219ad3f4dd3a9ad90c3ef7a5",
       "canonicalId": "P62D-ITP-L-004",
       "sourceId": 671003,
@@ -12833,7 +12918,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $20, demand is 52, supply is 8, and the gap is 44 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_caspia_import.webp",
       "aHash": "b7ff59e5f0aee8241c7b871340c49f98f1907c7c3ab284b47bd7dbdb53a69db7",
       "canonicalId": "P62D-ITP-L-007",
       "sourceId": 671006,
@@ -12983,7 +13067,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $40, demand is 64, supply is 16, and the gap is 48 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_demer_import.webp",
       "aHash": "60c374f7d7d81f5694ae285bcd404f6cf9b90e7ee4d6d53ac03886d34a842161",
       "canonicalId": "P62D-ITP-L-010",
       "sourceId": 671009,
@@ -13133,7 +13216,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $30, demand is 62, supply is 16, and the gap is 46 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_estara_import.webp",
       "aHash": "13ee23e80ab41a81bbef84e87b098262ad810feb19eb83582636fa1d669c9846",
       "canonicalId": "P62D-ITP-L-013",
       "sourceId": 671012,
@@ -13283,7 +13365,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $32, demand is 54, supply is 10, and the gap is 44 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_faron_import.webp",
       "aHash": "2a9cbcc8ac1bf050fc24edefc0795336888fd273196ac4f0d2e0baa4ca28b1c7",
       "canonicalId": "P62D-ITP-L-016",
       "sourceId": 671015,
@@ -13433,7 +13514,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $34, demand is 64, supply is 16, and the gap is 48 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_galena_import.webp",
       "aHash": "60c374f7d7d81f5694ae285bcd404f6cf9b90e7ee4d6d53ac03886d34a842161",
       "canonicalId": "P62D-ITP-L-019",
       "sourceId": 671018,
@@ -13583,7 +13663,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $44, demand is 46, supply is 14, and the gap is 32 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_haven_import.webp",
       "aHash": "3b2fcbacc8297d93497494ec3f4aec3299c4bd170c2dca697b16263fa4d1a717",
       "canonicalId": "P62D-ITP-L-022",
       "sourceId": 671021,
@@ -13733,7 +13812,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $26, demand is 52, supply is 10, and the gap is 42 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_ilyria_import.webp",
       "aHash": "6ec0feef1637656a5804b814c6fa2423187ccf4e9e7a09423080d7bac9bf6cfa",
       "canonicalId": "P62D-ITP-L-025",
       "sourceId": 671024,
@@ -13883,7 +13961,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $38, demand is 58, supply is 10, and the gap is 48 imports.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_juno_import.webp",
       "aHash": "80104a47c78faf7d688497055cac1b722370749127ba3ab0922f3f4344f6f948",
       "canonicalId": "P62D-ITP-L-028",
       "sourceId": 671027,
@@ -14033,7 +14110,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $70, supply exceeds demand by 40 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_arden_export.webp",
       "aHash": "cb8e300d98c297944ac07f9a54499c4188730baca5cb15cf19c6dff062ea83a3",
       "canonicalId": "P62D-ITP-L-031",
       "sourceId": 671030,
@@ -14183,7 +14259,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $76, supply exceeds demand by 32 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_bellora_export.webp",
       "aHash": "e41004d769c92447416c260ab1ac9ae8f9dd437e6077272881717953d04cd963",
       "canonicalId": "P62D-ITP-L-034",
       "sourceId": 671033,
@@ -14333,7 +14408,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $60, supply exceeds demand by 36 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_caspia_export.webp",
       "aHash": "0b69c67c708e47aae5abb7f923d5b93d3a5896e7e8d5304ef676ccbaee4e9cd8",
       "canonicalId": "P62D-ITP-L-037",
       "sourceId": 671036,
@@ -14483,7 +14557,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $90, supply exceeds demand by 52 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_demer_export.webp",
       "aHash": "2136f9fc326ecc43b302f253e0875c88578db9fd863a1b0a65cb573ed1c6f580",
       "canonicalId": "P62D-ITP-L-040",
       "sourceId": 671039,
@@ -14613,7 +14686,7 @@ const questionBanks = {
     {
       "id": "P62D-ITP-L-043",
       "sourceGame": "internationalTradeTradePolicy",
-      "q": "The world price for Estara's wool blankets is $72. Use the stated demand and supply equations to identify consumption, production, and exports.",
+      "q": "The world price for Estara's wool blankets is $72. Use the displayed graph to identify domestic consumption, domestic production, and exports.",
       "options": [
         "Qd=58, Qs=20, exports=38",
         "Qd=20, Qs=58, exports=58",
@@ -14783,7 +14856,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $70, supply exceeds demand by 32 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_faron_export.webp",
       "aHash": "3efa75e77ae7a3338b8bc9333b2bf84fd6ffb7932e1af00308454e951ad23480",
       "canonicalId": "P62D-ITP-L-046",
       "sourceId": 671045,
@@ -14933,7 +15005,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $82, supply exceeds demand by 48 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_galena_export.webp",
       "aHash": "1bef792c0b97df267375fa8427871fd9b80f766d819cd6b4dbb8fe98124fc862",
       "canonicalId": "P62D-ITP-L-049",
       "sourceId": 671048,
@@ -15083,7 +15154,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $76, supply exceeds demand by 32 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_haven_export.webp",
       "aHash": "f5da0f9217395525d69e080a57b94ab4e168419eaf24c0c05e1adb1a100a5aa3",
       "canonicalId": "P62D-ITP-L-052",
       "sourceId": 671051,
@@ -15233,7 +15303,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "At $66, supply exceeds demand by 38 units.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_ilyria_export.webp",
       "aHash": "a8f59bade654d3e7efe0ca1dbc340860d46680bc9f0bbb44c6599617ee7bac36",
       "canonicalId": "P62D-ITP-L-055",
       "sourceId": 671054,
@@ -15363,7 +15432,7 @@ const questionBanks = {
     {
       "id": "P62D-ITP-L-058",
       "sourceGame": "internationalTradeTradePolicy",
-      "q": "The world price for Juno's olive oil is $82. Use the stated demand and supply equations to identify consumption, production, and exports.",
+      "q": "The world price for Juno's olive oil is $82. Use the displayed graph to identify domestic consumption, domestic production, and exports.",
       "options": [
         "Qd=54, Qs=14, exports=40",
         "Qd=14, Qs=54, exports=40",
@@ -15534,7 +15603,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $64.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_arden_tariff.webp",
       "aHash": "ede01b78231f2c88d01f3490271e18cf2969763f53f1d8979b32d8535cfa5393",
       "canonicalId": "P62D-ITP-L-061",
       "sourceId": 671060,
@@ -15635,7 +15703,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $100.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_bellora_tariff.webp",
       "aHash": "37cd826d0d0994c6b89882aa20727753ebb3fe24b0cad22967e30e5d935a4471",
       "canonicalId": "P62D-ITP-L-063",
       "sourceId": 671062,
@@ -15736,7 +15803,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $64.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_caspia_tariff.webp",
       "aHash": "8c6083beb2c000dbbdfbd0da51f404560a7394a82d2de9502799ba26e0cabb51",
       "canonicalId": "P62D-ITP-L-065",
       "sourceId": 671064,
@@ -15837,7 +15903,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $144.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_demer_tariff.webp",
       "aHash": "e093b7a299e707e0b573c3d4f1efc7eaa3c40e9ff64b741974a3f13f611b9f44",
       "canonicalId": "P62D-ITP-L-067",
       "sourceId": 671066,
@@ -15938,7 +16003,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $64.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_estara_tariff.webp",
       "aHash": "62a49efd5b991ea51e6bd0f4bc5edeb244e034c5f8687ae8c962aed44ad04439",
       "canonicalId": "P62D-ITP-L-069",
       "sourceId": 671068,
@@ -16039,7 +16103,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $100.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_faron_tariff.webp",
       "aHash": "0a05dfc560e610b0d049b75b96ec8744c3497c5a9910be991cad22872e57002a",
       "canonicalId": "P62D-ITP-L-071",
       "sourceId": 671070,
@@ -16140,7 +16203,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $64.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_galena_tariff.webp",
       "aHash": "183ae0c27702c55564bf0a349320c7a03ef27802c917a843d2d216849a7634f0",
       "canonicalId": "P62D-ITP-L-073",
       "sourceId": 671072,
@@ -16241,7 +16303,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $36.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_haven_tariff.webp",
       "aHash": "a1c3422a5204260c14db75fab0c0911b626e720a8654b028617681327514534e",
       "canonicalId": "P62D-ITP-L-075",
       "sourceId": 671074,
@@ -16342,7 +16403,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $49.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_ilyria_tariff.webp",
       "aHash": "e9c3f833a8d809e9c5e0543555e637c01c857c95c33e0819c918ce4bb2210483",
       "canonicalId": "P62D-ITP-L-077",
       "sourceId": 671076,
@@ -16443,7 +16503,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $144.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_juno_tariff.webp",
       "aHash": "e093b7a299e707e0b573c3d4f1efc7eaa3c40e9ff64b741974a3f13f611b9f44",
       "canonicalId": "P62D-ITP-L-079",
       "sourceId": 671078,
@@ -17747,7 +17806,7 @@ const questionBanks = {
     {
       "id": "P62D-ITP-B1-017",
       "sourceGame": "internationalTradeTradePolicy",
-      "q": "On the import graph, Qd=50 and Qs=10. Imports are:",
+      "q": "If domestic quantity demanded is 50 and domestic quantity supplied is 10, imports are:",
       "options": [
         "10",
         "50",
@@ -17764,7 +17823,6 @@ const questionBanks = {
       "repairSkill": "import_market_graph",
       "commonError": "misreads_world_price_or_trade_gap",
       "feedback": "Checkpoint One verifies the opening-to-trade foundations.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_market.webp",
       "aHash": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103",
       "canonicalId": "P62D-ITP-B1-017",
       "sourceId": 674016,
@@ -17795,7 +17853,7 @@ const questionBanks = {
     {
       "id": "P62D-ITP-B1-018",
       "sourceGame": "internationalTradeTradePolicy",
-      "q": "On the export graph, Qs=50 and Qd=10. Exports are:",
+      "q": "If domestic quantity supplied is 50 and domestic quantity demanded is 10, exports are:",
       "options": [
         "10",
         "50",
@@ -17812,7 +17870,6 @@ const questionBanks = {
       "repairSkill": "export_market_graph",
       "commonError": "misreads_world_price_or_trade_gap",
       "feedback": "Checkpoint One verifies the opening-to-trade foundations.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_market.webp",
       "aHash": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103",
       "canonicalId": "P62D-ITP-B1-018",
       "sourceId": 674017,
@@ -17956,7 +18013,6 @@ const questionBanks = {
       "repairSkill": "consumer_surplus_trade",
       "commonError": "ignores_consumer_price_and_quantity_changes",
       "feedback": "Checkpoint Two verifies surplus and gains-from-trade analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
       "aHash": "e0ac375f70948bdafbec9a8f1e532c174ac58b61712cda05de477e19040d3e11",
       "canonicalId": "P62D-ITP-B2-021",
       "sourceId": 674102,
@@ -17982,7 +18038,8 @@ const questionBanks = {
       "instructionalRole": "boss",
       "canonicalDifficulty": "medium",
       "originalSourcePool": "mediumBoss",
-      "originalBossTier": "mediumBoss"
+      "originalBossTier": "mediumBoss",
+      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp"
     },
     {
       "id": "P62D-ITP-B2-022",
@@ -18004,7 +18061,6 @@ const questionBanks = {
       "repairSkill": "producer_surplus_trade",
       "commonError": "ignores_producer_price_and_quantity_changes",
       "feedback": "Checkpoint Two verifies surplus and gains-from-trade analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
       "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd",
       "canonicalId": "P62D-ITP-B2-022",
       "sourceId": 674103,
@@ -18030,7 +18086,8 @@ const questionBanks = {
       "instructionalRole": "boss",
       "canonicalDifficulty": "medium",
       "originalSourcePool": "mediumBoss",
-      "originalBossTier": "mediumBoss"
+      "originalBossTier": "mediumBoss",
+      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp"
     },
     {
       "id": "P62D-ITP-B2-023",
@@ -18052,7 +18109,6 @@ const questionBanks = {
       "repairSkill": "consumer_surplus_trade",
       "commonError": "ignores_consumer_price_and_quantity_changes",
       "feedback": "Checkpoint Two verifies surplus and gains-from-trade analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp",
       "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd",
       "canonicalId": "P62D-ITP-B2-023",
       "sourceId": 674104,
@@ -18078,7 +18134,8 @@ const questionBanks = {
       "instructionalRole": "boss",
       "canonicalDifficulty": "medium",
       "originalSourcePool": "mediumBoss",
-      "originalBossTier": "mediumBoss"
+      "originalBossTier": "mediumBoss",
+      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp"
     },
     {
       "id": "P62D-ITP-B2-024",
@@ -18100,7 +18157,6 @@ const questionBanks = {
       "repairSkill": "producer_surplus_trade",
       "commonError": "ignores_producer_price_and_quantity_changes",
       "feedback": "Checkpoint Two verifies surplus and gains-from-trade analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp",
       "aHash": "e0ac375f70948bdafbec9a8f1e532c174ac58b61712cda05de477e19040d3e11",
       "canonicalId": "P62D-ITP-B2-024",
       "sourceId": 674105,
@@ -18126,7 +18182,8 @@ const questionBanks = {
       "instructionalRole": "boss",
       "canonicalDifficulty": "medium",
       "originalSourcePool": "mediumBoss",
-      "originalBossTier": "mediumBoss"
+      "originalBossTier": "mediumBoss",
+      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp"
     },
     {
       "id": "P62D-ITP-B2-025",
@@ -18601,7 +18658,7 @@ const questionBanks = {
     {
       "id": "P62D-ITP-B2-035",
       "sourceGame": "internationalTradeTradePolicy",
-      "q": "The import graph shows Qd=50 and Qs=10. The trade gap represents:",
+      "q": "If domestic quantity demanded is 50 and domestic quantity supplied is 10 at the world price, the 40-unit trade gap represents:",
       "options": [
         "Imports",
         "Exports",
@@ -18618,7 +18675,6 @@ const questionBanks = {
       "repairSkill": "import_market_graph",
       "commonError": "misreads_world_price_or_trade_gap",
       "feedback": "Checkpoint Two verifies surplus and gains-from-trade analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
       "aHash": "2fcef4b99cb2a5a83c4f2b5ec8fabde6e179be954c383702b7ef6496e0486310",
       "canonicalId": "P62D-ITP-B2-035",
       "sourceId": 674116,
@@ -18649,7 +18705,7 @@ const questionBanks = {
     {
       "id": "P62D-ITP-B2-036",
       "sourceGame": "internationalTradeTradePolicy",
-      "q": "The export graph shows Qs=50 and Qd=10. The trade gap represents:",
+      "q": "If domestic quantity supplied is 50 and domestic quantity demanded is 10 at the world price, the 40-unit trade gap represents:",
       "options": [
         "Imports",
         "Exports",
@@ -18666,7 +18722,6 @@ const questionBanks = {
       "repairSkill": "export_market_graph",
       "commonError": "misreads_world_price_or_trade_gap",
       "feedback": "Checkpoint Two verifies surplus and gains-from-trade analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp",
       "aHash": "4b4e49dd2de5eae9881688638d7453803ea88b3721146b8f97a5508b5b5c6aa5",
       "canonicalId": "P62D-ITP-B2-036",
       "sourceId": 674117,
@@ -18716,7 +18771,6 @@ const questionBanks = {
       "repairSkill": "tariff_revenue",
       "commonError": "confuses_revenue_with_deadweight_loss",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_tariff_market.webp",
       "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685",
       "canonicalId": "P62D-ITP-B3-037",
       "sourceId": 674200,
@@ -18764,7 +18818,6 @@ const questionBanks = {
       "repairSkill": "tariff_quantity_effect",
       "commonError": "ignores_consumption_and_production_response",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_tariff_market.webp",
       "aHash": "5867211de68d7b98476fc41f8808dde7afc1dc4a40d1010192c3a035c95f13ec",
       "canonicalId": "P62D-ITP-B3-038",
       "sourceId": 674201,
@@ -18956,7 +19009,6 @@ const questionBanks = {
       "repairSkill": "quota_rent",
       "commonError": "assigns_quota_rents_to_government_automatically",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
       "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685",
       "canonicalId": "P62D-ITP-B3-042",
       "sourceId": 674205,
@@ -19004,7 +19056,6 @@ const questionBanks = {
       "repairSkill": "quota_rent",
       "commonError": "assigns_quota_rents_to_government_automatically",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
       "aHash": "5702673eda3a1eb6d3bf20cebfeca880a7208a36fdef430de2f214ce83088b34",
       "canonicalId": "P62D-ITP-B3-043",
       "sourceId": 674206,
@@ -19052,7 +19103,6 @@ const questionBanks = {
       "repairSkill": "quota_rent",
       "commonError": "assigns_quota_rents_to_government_automatically",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
       "aHash": "a567585b782ab354b257960cb903f1c9a3eab1509116b21a6114d85b905ee924",
       "canonicalId": "P62D-ITP-B3-044",
       "sourceId": 674207,
@@ -19100,7 +19150,6 @@ const questionBanks = {
       "repairSkill": "tariff_quota_comparison",
       "commonError": "assumes_tariff_and_quota_are_always_identical",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
       "aHash": "4c35a5e4a9ac00bb77c451f6ded894f4b344f5c4fbe190317b2c51e2705e3e42",
       "canonicalId": "P62D-ITP-B3-045",
       "sourceId": 674208,
@@ -19148,7 +19197,6 @@ const questionBanks = {
       "repairSkill": "tariff_quota_comparison",
       "commonError": "assumes_tariff_and_quota_are_always_identical",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
       "aHash": "94c60b6516b83ce7b553eb8b142f1bef1e791112708aaccb63dd1f0eb9c15bcc",
       "canonicalId": "P62D-ITP-B3-046",
       "sourceId": 674209,
@@ -19196,7 +19244,6 @@ const questionBanks = {
       "repairSkill": "tariff_quota_comparison",
       "commonError": "assumes_tariff_and_quota_are_always_identical",
       "feedback": "Final Checkpoint verifies trade-policy welfare analysis.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
       "aHash": "ae631bc7251525104460f66f08b02e3a0f5b57387db6cd3de9ddb1fc7c76b055",
       "canonicalId": "P62D-ITP-B3-047",
       "sourceId": 674210,
@@ -19582,7 +19629,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_arden_import.webp",
       "aHash": "0a9a47ce7eda999c7e3f7761bc26dc44236551ad59fb6a5af2641f54f2f2c94e",
       "canonicalId": "P62D-ITP-LB-001",
       "sourceId": 675000,
@@ -19635,7 +19681,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_arden_export.webp",
       "aHash": "4a7410e952cc2e67f9beea0fc4327d5dc264e627d98bd02c929f1dd084ea6c80",
       "canonicalId": "P62D-ITP-LB-002",
       "sourceId": 675001,
@@ -19688,7 +19733,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_arden_tariff.webp",
       "aHash": "0f746feb730d0f06a74009f21aab015991c848e20b7c4bcc8706a1026083eff8",
       "canonicalId": "P62D-ITP-LB-003",
       "sourceId": 675002,
@@ -19741,7 +19785,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_bellora_import.webp",
       "aHash": "c49439dcd57f858a45e74bdb6c959f479e60f779318d9db30712c1f24a85250f",
       "canonicalId": "P62D-ITP-LB-004",
       "sourceId": 675003,
@@ -19794,7 +19837,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_bellora_export.webp",
       "aHash": "397f0e03c6d93f94313db7540d8b14a673b551bcbad1610454960a888a35c4bb",
       "canonicalId": "P62D-ITP-LB-005",
       "sourceId": 675004,
@@ -19847,7 +19889,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_bellora_tariff.webp",
       "aHash": "897b47773c71823dafd1e6e25ebeda1c81df2039ef74e3add4d6c373dab2d488",
       "canonicalId": "P62D-ITP-LB-006",
       "sourceId": 675005,
@@ -19900,7 +19941,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_caspia_import.webp",
       "aHash": "ca895f4f1817286dbcfb0850d1038353862fdd47b958a36e45e4661744942819",
       "canonicalId": "P62D-ITP-LB-007",
       "sourceId": 675006,
@@ -19953,7 +19993,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_caspia_export.webp",
       "aHash": "455ca03cdaf06a7dd9e4d4665d469950c538f6e4356c7160deadc491ae6e05d8",
       "canonicalId": "P62D-ITP-LB-008",
       "sourceId": 675007,
@@ -20059,7 +20098,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_demer_import.webp",
       "aHash": "b32190cdbc24def01a3d003da4d5ac14047f7e8cae27ff0e0c00140d059779fb",
       "canonicalId": "P62D-ITP-LB-010",
       "sourceId": 675009,
@@ -20112,7 +20150,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_demer_export.webp",
       "aHash": "ed6b1a324ee41e4675b6cab1d2f01487736940ab79cdc553534e206488d01c41",
       "canonicalId": "P62D-ITP-LB-011",
       "sourceId": 675010,
@@ -20218,7 +20255,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_estara_import.webp",
       "aHash": "18809cdb0e688c2644e646aa756bd46a7604be83248c3141b696674d2cf86da9",
       "canonicalId": "P62D-ITP-LB-013",
       "sourceId": 675012,
@@ -20271,7 +20307,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_estara_export.webp",
       "aHash": "63283284fda7fd9146ed5f81d30804d8ab930516f441288b9aa322f81266d140",
       "canonicalId": "P62D-ITP-LB-014",
       "sourceId": 675013,
@@ -20483,7 +20518,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_faron_tariff.webp",
       "aHash": "6fd4a7132bb77fff2bb10ba46e1b9312a0f02aab66fca2fb06f8e868b32262df",
       "canonicalId": "P62D-ITP-LB-018",
       "sourceId": 675017,
@@ -20536,7 +20570,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_galena_import.webp",
       "aHash": "b32190cdbc24def01a3d003da4d5ac14047f7e8cae27ff0e0c00140d059779fb",
       "canonicalId": "P62D-ITP-LB-019",
       "sourceId": 675018,
@@ -20589,7 +20622,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_galena_export.webp",
       "aHash": "9d9cd4c2664ec4696ae58c9d19c15f158d511fa00e9d074868beae3cee2fecc0",
       "canonicalId": "P62D-ITP-LB-020",
       "sourceId": 675019,
@@ -20642,7 +20674,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_galena_tariff.webp",
       "aHash": "bf32cc56a40ab56dfe5324695189475c8a5c7c12d610e93c0f43e2e0963cd1ea",
       "canonicalId": "P62D-ITP-LB-021",
       "sourceId": 675020,
@@ -20695,7 +20726,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_haven_import.webp",
       "aHash": "2ba150e5afa580496d1a65103b818cba059cc44d8c414c82d9d29e8936018e7f",
       "canonicalId": "P62D-ITP-LB-022",
       "sourceId": 675021,
@@ -20748,7 +20778,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_haven_export.webp",
       "aHash": "d8cb568f6abe267b89bc4d1d014bed89b1224c9503a86b5b8e577ab51f00dd96",
       "canonicalId": "P62D-ITP-LB-023",
       "sourceId": 675022,
@@ -20801,7 +20830,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_haven_tariff.webp",
       "aHash": "3ad24d9f2c7ea7c0e3b32e9782104fbc0916d24b168815a2097ce9f0cfcf87d0",
       "canonicalId": "P62D-ITP-LB-024",
       "sourceId": 675023,
@@ -20854,7 +20882,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_ilyria_import.webp",
       "aHash": "bb1b4b258a83dab6b71c2ad330c3110aaf16844aab9ebbb12b21411bb6eeb054",
       "canonicalId": "P62D-ITP-LB-025",
       "sourceId": 675024,
@@ -20907,7 +20934,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_ilyria_export.webp",
       "aHash": "1036a4262ae4f0654fe2010465b03d995c7b331e8b8137e424ec9574f6b0f372",
       "canonicalId": "P62D-ITP-LB-026",
       "sourceId": 675025,
@@ -21013,7 +21039,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_juno_import.webp",
       "aHash": "d65d7c1b52adc9dc829c128a1f32452eb17ee9337ce18c3fd1d04b984fb85c6b",
       "canonicalId": "P62D-ITP-LB-028",
       "sourceId": 675027,
@@ -21066,7 +21091,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_juno_export.webp",
       "aHash": "aa706b8dff37b9994e3e0494f6be69c9d050675d0edb858acdd8ce0821dde9b0",
       "canonicalId": "P62D-ITP-LB-029",
       "sourceId": 675028,
@@ -21172,7 +21196,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is below autarky, so the country imports; the larger consumer gain exceeds the producer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_kestrel_import.webp",
       "aHash": "af3fbbf3f7bae8d12a7a638d0860d140c919915465ba3ed0eb6355d1ee257fba",
       "canonicalId": "P62D-ITP-LB-031",
       "sourceId": 675030,
@@ -21225,7 +21248,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_kestrel_export.webp",
       "aHash": "5ee9e901f68eecae6ee85443801a9ee3fbb58ef68b61bdc10c737cec94ab9240",
       "canonicalId": "P62D-ITP-LB-032",
       "sourceId": 675031,
@@ -21437,7 +21459,6 @@ const questionBanks = {
       "repairSkill": "integrated_trade_analysis",
       "commonError": "omits_one_or_more_welfare_components",
       "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
-      "image": "question-assets/international-trade-and-trade-policy/itp_lydon_tariff.webp",
       "aHash": "3ad52b598f34bfe747995710f95faa06832af545c62e90378f26b6125e6e2b4f",
       "canonicalId": "P62D-ITP-LB-036",
       "sourceId": 675035,
@@ -21587,11 +21608,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:international-trade-and-trade-policy-mastery-quest:69bc2402ba0b",
-  "compositionFingerprint": "69bc2402ba0ba5a430958d23d8a9cbdaeffc4772e1e501265050dcb2dbb3cd0d",
-  "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
-  "librarySha256": "e44ae157cf94667bad23625b51ffb001164d7d35f62f91607ae6def65eab79cd",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "saveKeyNamespace": "mq-econ:international-trade-and-trade-policy-mastery-quest:fd5b5fc79b4e",
+  "compositionFingerprint": "fd5b5fc79b4eff772dfcae93113cefc7a080cb551e0ebcd7188a1cd92c92dd6b",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -26375,10 +26396,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26666,7 +26687,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26752,7 +26781,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26762,9 +26799,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -27085,7 +27127,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }

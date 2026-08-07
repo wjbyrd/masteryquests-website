@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3059,8 +3062,8 @@ const FACULTY_COMPOSITION_CONFIG = {
     "composerVersion": "4.5b.0",
     "compositionId": "oligopoly-mastery-quest",
     "saveKeyNamespace": "mq-econ:oligopoly-mastery-quest:5328058f9b2a",
-    "librarySha256": "468719ab75b8c5771a31fce5d338de642fd7ec24ed0a48c41783a2fa2fd866ad",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
     "compositionFingerprint": "5328058f9b2ae52ccc14b350629b6b4e16f24f051f24bf61db2717f6f0dc1b2f"
 };
 // =====================================================
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -7087,7 +7174,7 @@ const questionBanks = {
     {
       "id": "P62I-OLI-M-006",
       "sourceGame": "oligopoly",
-      "q": "In a payoff matrix, Row’s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?",
+      "q": "Row’s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?",
       "options": [
         "A Nash equilibrium X",
         "A jointly maximizing payoff",
@@ -7104,7 +7191,6 @@ const questionBanks = {
       "repairSkill": "dominant_strategy",
       "commonError": "confuses_dominance_with_highest_single_payoff",
       "feedback": "B beats Row’s alternative under both Column actions.",
-      "image": "question-assets/oligopoly/matrix_no_dom_1.webp",
       "aHash": "37ee57b5d8db619cdc219b67902248b0b14c31f767f346fb9acbf1b3a65f1091",
       "canonicalId": "P62I-OLI-M-006",
       "sourceId": 720105,
@@ -7182,7 +7268,7 @@ const questionBanks = {
     {
       "id": "P62I-OLI-M-008",
       "sourceGame": "oligopoly",
-      "q": "A matrix has two cells in which both players are best responding. What does the game have?",
+      "q": "A game has two outcomes in which both players are best responding. What does the game have?",
       "options": [
         "No equilibrium",
         "Two pure-strategy Nash equilibria",
@@ -7199,7 +7285,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Games can have multiple equilibria.",
-      "image": "question-assets/oligopoly/matrix_coord_1.webp",
       "aHash": "ffd07291e5ea94fcb1598ade422d592e2e5e2e51502077cc101172337692ed0c",
       "canonicalId": "P62I-OLI-M-008",
       "sourceId": 720107,
@@ -10282,7 +10367,6 @@ const questionBanks = {
       "repairSkill": "best_response",
       "commonError": "chooses_jointly_best_cell_instead_of_best_response",
       "feedback": "Compare Row’s payoffs within the specified column.",
-      "image": "question-assets/oligopoly/matrix_pd_1.webp",
       "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
       "canonicalId": "P62I-OLI-C-013",
       "sourceId": 722012,
@@ -10330,7 +10414,6 @@ const questionBanks = {
       "repairSkill": "best_response",
       "commonError": "chooses_jointly_best_cell_instead_of_best_response",
       "feedback": "Compare Row’s payoffs within the specified column.",
-      "image": "question-assets/oligopoly/matrix_coord_1.webp",
       "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
       "canonicalId": "P62I-OLI-C-014",
       "sourceId": 722013,
@@ -10378,7 +10461,6 @@ const questionBanks = {
       "repairSkill": "best_response",
       "commonError": "chooses_jointly_best_cell_instead_of_best_response",
       "feedback": "Compare Row’s payoffs within the specified column.",
-      "image": "question-assets/oligopoly/matrix_no_dom_1.webp",
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
       "canonicalId": "P62I-OLI-C-015",
       "sourceId": 722014,
@@ -10426,7 +10508,6 @@ const questionBanks = {
       "repairSkill": "best_response",
       "commonError": "chooses_jointly_best_cell_instead_of_best_response",
       "feedback": "Compare Row’s payoffs within the specified column.",
-      "image": "question-assets/oligopoly/matrix_asym_1.webp",
       "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
       "canonicalId": "P62I-OLI-C-016",
       "sourceId": 722015,
@@ -10474,7 +10555,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Find mutual best responses.",
-      "image": "question-assets/oligopoly/matrix_pd_2.webp",
       "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41",
       "canonicalId": "P62I-OLI-C-017",
       "sourceId": 722016,
@@ -10522,7 +10602,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Find mutual best responses.",
-      "image": "question-assets/oligopoly/matrix_ad_1.webp",
       "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41",
       "canonicalId": "P62I-OLI-C-018",
       "sourceId": 722017,
@@ -10570,7 +10649,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Find mutual best responses.",
-      "image": "question-assets/oligopoly/matrix_multi_ne_1.webp",
       "aHash": "0070e9d0c613cb1750ee62898dc59f310a2a0e4e4d66773bf189cb7a15c6266b",
       "canonicalId": "P62I-OLI-C-019",
       "sourceId": 722018,
@@ -10618,7 +10696,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Find mutual best responses.",
-      "image": "question-assets/oligopoly/matrix_no_pure_1.webp",
       "aHash": "9563fa46c3906ea88bfd34e4f6700a82ef020b4c0e7e76ec43f913618992b935",
       "canonicalId": "P62I-OLI-C-020",
       "sourceId": 722019,
@@ -10666,7 +10743,6 @@ const questionBanks = {
       "repairSkill": "cooperative_outcome",
       "commonError": "assumes_cooperation_is_stable",
       "feedback": "Add the two payoffs in each cell and choose the largest sum.",
-      "image": "question-assets/oligopoly/matrix_price_1.webp",
       "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
       "canonicalId": "P62I-OLI-C-021",
       "sourceId": 722020,
@@ -10714,7 +10790,6 @@ const questionBanks = {
       "repairSkill": "cooperative_outcome",
       "commonError": "assumes_cooperation_is_stable",
       "feedback": "Add the two payoffs in each cell and choose the largest sum.",
-      "image": "question-assets/oligopoly/matrix_coord_2.webp",
       "aHash": "535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
       "canonicalId": "P62I-OLI-C-022",
       "sourceId": 722021,
@@ -17169,7 +17244,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Coordination games often have multiple equilibria.",
-      "image": "question-assets/oligopoly/matrix_pd_1.webp",
       "aHash": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
       "canonicalId": "P62I-OLI-B1-008",
       "sourceId": 724007,
@@ -17217,7 +17291,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Some games require mixed strategies for a full equilibrium analysis, though mixed strategies are outside this bank.",
-      "image": "question-assets/oligopoly/matrix_coord_1.webp",
       "aHash": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
       "canonicalId": "P62I-OLI-B1-009",
       "sourceId": 724008,
@@ -19406,7 +19479,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_pd_3.webp",
       "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41",
       "canonicalId": "P62I-OLI-LB-001",
       "sourceId": 725000,
@@ -19432,7 +19504,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_pd_3.webp"
     },
     {
       "id": "P62I-OLI-LB-002",
@@ -19454,7 +19527,6 @@ const questionBanks = {
       "repairSkill": "cooperative_outcome",
       "commonError": "assumes_cooperation_is_stable",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_coord_3.webp",
       "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41",
       "canonicalId": "P62I-OLI-LB-002",
       "sourceId": 725001,
@@ -19480,7 +19552,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_coord_3.webp"
     },
     {
       "id": "P62I-OLI-LB-003",
@@ -19502,7 +19575,6 @@ const questionBanks = {
       "repairSkill": "noncooperative_outcome",
       "commonError": "assumes_equilibrium_is_efficient",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_asym_2.webp",
       "aHash": "f95bed7cd9dca178b8199ef74f6c8c5b0e0648a74d74451ced53aa4bd85f2de7",
       "canonicalId": "P62I-OLI-LB-003",
       "sourceId": 725002,
@@ -19528,7 +19600,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_asym_2.webp"
     },
     {
       "id": "P62I-OLI-LB-004",
@@ -19550,7 +19623,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_monitor_1.webp",
       "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41",
       "canonicalId": "P62I-OLI-LB-004",
       "sourceId": 725003,
@@ -19576,7 +19648,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_monitor_1.webp"
     },
     {
       "id": "P62I-OLI-LB-005",
@@ -19598,7 +19671,6 @@ const questionBanks = {
       "repairSkill": "cooperative_outcome",
       "commonError": "assumes_cooperation_is_stable",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_policy_1.webp",
       "aHash": "3eb10a3047b1cde4ed1ee24727a08eaf8742f8f1841a57bb2442fe938325fe87",
       "canonicalId": "P62I-OLI-LB-005",
       "sourceId": 725004,
@@ -19624,7 +19696,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_policy_1.webp"
     },
     {
       "id": "P62I-OLI-LB-006",
@@ -19646,7 +19719,6 @@ const questionBanks = {
       "repairSkill": "noncooperative_outcome",
       "commonError": "assumes_equilibrium_is_efficient",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_capacity_2.webp",
       "aHash": "f95bed7cd9dca178b8199ef74f6c8c5b0e0648a74d74451ced53aa4bd85f2de7",
       "canonicalId": "P62I-OLI-LB-006",
       "sourceId": 725005,
@@ -19672,7 +19744,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_capacity_2.webp"
     },
     {
       "id": "P62I-OLI-LB-007",
@@ -19694,7 +19767,6 @@ const questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "equates_nash_with_joint_maximum",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_quality_1.webp",
       "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41",
       "canonicalId": "P62I-OLI-LB-007",
       "sourceId": 725006,
@@ -19720,7 +19792,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_quality_1.webp"
     },
     {
       "id": "P62I-OLI-LB-008",
@@ -19742,7 +19815,6 @@ const questionBanks = {
       "repairSkill": "cooperative_outcome",
       "commonError": "assumes_cooperation_is_stable",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_no_pure_1.webp",
       "aHash": "04769d0aa6df19ba482b34e99656b332c7a66495cdd613cc8346081d71c4b8c3",
       "canonicalId": "P62I-OLI-LB-008",
       "sourceId": 725007,
@@ -19768,7 +19840,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_no_pure_1.webp"
     },
     {
       "id": "P62I-OLI-LB-009",
@@ -19790,7 +19863,6 @@ const questionBanks = {
       "repairSkill": "noncooperative_outcome",
       "commonError": "assumes_equilibrium_is_efficient",
       "feedback": "Solve best responses and compare them with combined payoffs.",
-      "image": "question-assets/oligopoly/matrix_multi_ne_1.webp",
       "aHash": "f95bed7cd9dca178b8199ef74f6c8c5b0e0648a74d74451ced53aa4bd85f2de7",
       "canonicalId": "P62I-OLI-LB-009",
       "sourceId": 725008,
@@ -19816,7 +19888,8 @@ const questionBanks = {
       "instructionalRole": "legendaryBoss",
       "canonicalDifficulty": "legendary",
       "originalSourcePool": "legendaryBoss",
-      "originalBossTier": "legendaryBoss"
+      "originalBossTier": "legendaryBoss",
+      "image": "question-assets/oligopoly/matrix_multi_ne_1.webp"
     },
     {
       "id": "P62I-OLI-LB-010",
@@ -21218,8 +21291,8 @@ const facultyCompositionMetadata = {
   "saveKeyNamespace": "mq-econ:oligopoly-mastery-quest:5328058f9b2a",
   "compositionFingerprint": "5328058f9b2ae52ccc14b350629b6b4e16f24f051f24bf61db2717f6f0dc1b2f",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
-  "librarySha256": "468719ab75b8c5771a31fce5d338de642fd7ec24ed0a48c41783a2fa2fd866ad",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -25985,10 +26058,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26276,7 +26349,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26362,7 +26443,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26372,9 +26461,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -26695,7 +26789,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }

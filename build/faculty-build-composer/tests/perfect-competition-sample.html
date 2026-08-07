@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3054,14 +3057,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2f-perfect-competition-rich-bank-v1",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
     "templateVersion": "phase4.5b-self-contained",
     "composerVersion": "4.5b.0",
     "compositionId": "perfect-competition-mastery-quest",
-    "saveKeyNamespace": "mq-econ:perfect-competition-mastery-quest:2b37b501ea2d",
-    "librarySha256": "5d394cdd6bb6be1c8edc4be485808fbc3ccc66960baae35e770f0b2b6d601943",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
-    "compositionFingerprint": "2b37b501ea2d62cb3b8e911921e82c51ab5a0a81ef4c9eb924ae6baf791fa607"
+    "saveKeyNamespace": "mq-econ:perfect-competition-mastery-quest:3d3fa354528d",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
+    "compositionFingerprint": "3d3fa354528d1d97ddc04500488994f583d6273e00b1de3e5ffce1c1134fbefe"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -9183,7 +9270,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Industry expansion raises input prices and long-run cost.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "9d0759f85b6ef3004c14c8a8c52f4bbaf5266f630a0b2891342bf04a092b0a54",
       "canonicalId": "P62F-PC-H-020",
       "sourceId": 690219,
@@ -9325,7 +9411,6 @@ const questionBanks = {
       "repairSkill": "demand_change_short_long_run",
       "commonError": "assumes_same_short_long_result",
       "feedback": "Short-run profit induces entry; constant input costs let price return.",
-      "image": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
       "aHash": "70b967971cc2e52ac8ba36f4b35941127161e1c3f79fe977adbde6036901a961",
       "canonicalId": "P62F-PC-H-023",
       "sourceId": 690222,
@@ -9373,7 +9458,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Industry contraction can lower input costs in an increasing-cost industry.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "65e95abfdeb4478872457e71a9ad3644e3ed42ab1601f92bee15850a2726b588",
       "canonicalId": "P62F-PC-H-024",
       "sourceId": 690223,
@@ -9468,7 +9552,6 @@ const questionBanks = {
       "repairSkill": "competitive_welfare",
       "commonError": "equates_efficiency_with_equity",
       "feedback": "P=MC gives allocative efficiency; min ATC gives productive efficiency.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "cdd053fa60c204c99385a109ca87fb11e99f2b7a3dd0278ce97bccf210d1e1ff",
       "canonicalId": "P62F-PC-H-026",
       "sourceId": 690225,
@@ -9516,7 +9599,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "The competitive benchmark needs private and social marginal costs to coincide.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "d81b656f2b08b1c5ac0111b25f062f53cfa732f20111e06475ddfbc084944d4c",
       "canonicalId": "P62F-PC-H-027",
       "sourceId": 690226,
@@ -9564,7 +9646,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Information problems can break the standard efficiency result.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "33a8e1d32a12136460503b234b3c5b9dacfbd234a9d3580d5e85ccd1f5310710",
       "canonicalId": "P62F-PC-H-028",
       "sourceId": 690227,
@@ -9612,7 +9693,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Differentiation gives firms some price discretion.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "592a7ccf0e9c314577a2b91d56519fe3ed8f867e1964b8bda8b1bd210a042caf",
       "canonicalId": "P62F-PC-H-029",
       "sourceId": 690228,
@@ -9660,7 +9740,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Input prices and cost curves remain unchanged as the industry expands.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "1b8482507aea61ef7df60ce84ddec93a52c92ec502c4df834788134701f8e77d",
       "canonicalId": "P62F-PC-H-030",
       "sourceId": 690229,
@@ -11732,7 +11811,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Expansion raises firms’ cost curves.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "cc9f6935abdaf4e509c12ac42734e1dfc683e886c863183cc40b15f618963bb6",
       "canonicalId": "P62F-PC-EL-014",
       "sourceId": 690313,
@@ -11780,7 +11858,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "External economies lower costs as industry output expands.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "0c7f059e0b94db12721c091d415c502e94fbd14c6941e54171958345e0694a1e",
       "canonicalId": "P62F-PC-EL-015",
       "sourceId": 690314,
@@ -11875,7 +11952,6 @@ const questionBanks = {
       "repairSkill": "rising_mc_condition",
       "commonError": "uses_falling_mc_intersection",
       "feedback": "The relevant crossing is where MC rises through MR.",
-      "image": "question-assets/perfect-competition/pc_profit_b.webp",
       "aHash": "5e655adb21a9d6f4d571d82bcfdd04c97071f4f8c50257da15a1ea772d06c864",
       "canonicalId": "P62F-PC-EL-017",
       "sourceId": 690316,
@@ -11971,7 +12047,6 @@ const questionBanks = {
       "repairSkill": "produce_at_loss",
       "commonError": "shuts_down_for_any_loss",
       "feedback": "Operating loss is $500 versus $900 fixed-cost loss after shutdown, so production saves $400.",
-      "image": "question-assets/perfect-competition/pc_loss_produce_c.webp",
       "aHash": "78177f1b0aa4b2723c7b50b191004ac9e5bbbd6ae4fc6f30fd0f80d1513698e6",
       "canonicalId": "P62F-PC-EL-019",
       "sourceId": 690318,
@@ -12019,7 +12094,6 @@ const questionBanks = {
       "repairSkill": "shutdown_price",
       "commonError": "uses_min_atc",
       "feedback": "At P=min AVC, revenue exactly covers variable cost, leaving fixed cost.",
-      "image": "question-assets/perfect-competition/pc_shutdown_b.webp",
       "aHash": "ee9ac60f55faeecd12426d8ae6d30bf9b4632f2a37645b452039dcf5933f8bf1",
       "canonicalId": "P62F-PC-EL-020",
       "sourceId": 690319,
@@ -12067,7 +12141,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Entry returns price to unchanged minimum long-run cost.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "a368a8dff9c85e28655f8bd2cd9e248e4230eac6ec73834f759f24baa36cd6e3",
       "canonicalId": "P62F-PC-EL-021",
       "sourceId": 690320,
@@ -12115,7 +12188,6 @@ const questionBanks = {
       "repairSkill": "demand_change_short_long_run",
       "commonError": "assumes_same_short_long_result",
       "feedback": "Entry reduces the short-run price, but higher input costs keep the new long-run price above the original.",
-      "image": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
       "aHash": "6d325b5fe25c96203ee0325c17757b3de1f0880eaa43d67c96b55e914370c815",
       "canonicalId": "P62F-PC-EL-022",
       "sourceId": 690321,
@@ -12163,7 +12235,6 @@ const questionBanks = {
       "repairSkill": "demand_change_short_long_run",
       "commonError": "assumes_same_short_long_result",
       "feedback": "External economies can push the final price below the original.",
-      "image": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
       "aHash": "bee998a3a62871d50e3370b3d5a819835ccdadfc567f3fc0a8d9870f09a4ec8b",
       "canonicalId": "P62F-PC-EL-023",
       "sourceId": 690322,
@@ -12211,7 +12282,6 @@ const questionBanks = {
       "repairSkill": "entry",
       "commonError": "claims_entry_raises_price",
       "feedback": "Entry lowers market price until economic profit disappears.",
-      "image": "question-assets/perfect-competition/pc_entry_1.webp",
       "aHash": "c7e529b880f6e5d33c46e16cf36ee93598dbe35d57f677426001087ac2ec6b6b",
       "canonicalId": "P62F-PC-EL-024",
       "sourceId": 690323,
@@ -12259,7 +12329,6 @@ const questionBanks = {
       "repairSkill": "exit",
       "commonError": "claims_exit_lowers_price",
       "feedback": "Exit raises the price received by remaining firms.",
-      "image": "question-assets/perfect-competition/pc_exit_3.webp",
       "aHash": "ee30be80bb19f8109a3c4bd8931603114a20f982fb8f8d63d9462b997cf191d3",
       "canonicalId": "P62F-PC-EL-025",
       "sourceId": 690324,
@@ -12307,7 +12376,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "The benchmark uses private MC unless external costs are included.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "4980a37daa52fbca4ec60e2dc7759a6d178c0e05754afb1e03892c3ee7fafc7c",
       "canonicalId": "P62F-PC-EL-026",
       "sourceId": 690325,
@@ -12355,7 +12423,6 @@ const questionBanks = {
       "repairSkill": "productive_efficiency",
       "commonError": "uses_p_equals_mc",
       "feedback": "Zero profit alone does not guarantee production at minimum ATC.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "650d028a8b4a742159299d3637c17d81f2d7dd82447d93a53f08a8b6f17d42ba",
       "canonicalId": "P62F-PC-EL-027",
       "sourceId": 690326,
@@ -12403,7 +12470,6 @@ const questionBanks = {
       "repairSkill": "competitive_welfare",
       "commonError": "equates_efficiency_with_equity",
       "feedback": "The two efficiency criteria are distinct.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "83867681ec7780024a883794b9d8f4a115c0c178e75677faaf3772e2c4e0ce31",
       "canonicalId": "P62F-PC-EL-028",
       "sourceId": 690327,
@@ -12451,7 +12517,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Input-market pressure raises long-run cost.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "bda312d78f012bc9e8d136a58b9545ecd6ec7dbf02299b96e577cf57c0de99f9",
       "canonicalId": "P62F-PC-EL-029",
       "sourceId": 690328,
@@ -12499,7 +12564,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Some assumptions can fit while others fail.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "e0f464b7c24abb111aac24d119cbf47541adba010bd621a4f3a714b2fac5a584",
       "canonicalId": "P62F-PC-EL-030",
       "sourceId": 690329,
@@ -13348,7 +13412,6 @@ const questionBanks = {
       "repairSkill": "break_even",
       "commonError": "confuses_break_even_shutdown",
       "feedback": "Output is already selected; compare price with ATC and AVC, then calculate the rectangle if operating.",
-      "image": "question-assets/perfect-competition/pc_zero_a.webp",
       "aHash": "bfda00a5e67e9f0dce1785a921c67c603a5581293bd0f14f684c3d1f6440341c",
       "canonicalId": "P62F-PC-L-018",
       "sourceId": 691017,
@@ -14148,7 +14211,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "Classify the change as fixed, variable, or productivity-related before applying the output and shutdown rules.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "63d29d1204e63b61afd84d80a9871f62a632806ac81d76e66b5ee3898c764275",
       "canonicalId": "P62F-PC-L-035",
       "sourceId": 691034,
@@ -14290,7 +14352,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "Classify the change as fixed, variable, or productivity-related before applying the output and shutdown rules.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "1bf05a31ae29dc7705d89837c6cdb9801f788494c587de092e384bcaf12a7533",
       "canonicalId": "P62F-PC-L-038",
       "sourceId": 691037,
@@ -14338,7 +14399,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "Classify the change as fixed, variable, or productivity-related before applying the output and shutdown rules.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "919a0c64e6d26759cc5d26ae55378d57cfe61a543e8daee6c2ddcdd9a7041d67",
       "canonicalId": "P62F-PC-L-039",
       "sourceId": 691038,
@@ -14386,7 +14446,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "Classify the change as fixed, variable, or productivity-related before applying the output and shutdown rules.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "172619918539485bed7a9c4cdbe272cb7b93db2588864ef1291e30d509ad1368",
       "canonicalId": "P62F-PC-L-040",
       "sourceId": 691039,
@@ -14481,7 +14540,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "Classify the change as fixed, variable, or productivity-related before applying the output and shutdown rules.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "acf4d8bfabfcb1714ca9a223e23edb3cc9e006e25d4620cf1538eafb2d0db894",
       "canonicalId": "P62F-PC-L-042",
       "sourceId": 691041,
@@ -14670,7 +14728,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "254d7b762e716bb4399e6b2a96a0110e0b7b0d8e411649ffd5a32d47067776e7",
       "canonicalId": "P62F-PC-L-046",
       "sourceId": 691045,
@@ -14718,7 +14775,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "2b4aaf713e71607d0ea3a1deb4ed82dc0a40a38528f99cdb09a5fa92b9f70068",
       "canonicalId": "P62F-PC-L-047",
       "sourceId": 691046,
@@ -14766,7 +14822,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "600bcaa437ea93e31ce2c07951d78593696c421b66c8068f5b354cbae5ed232c",
       "canonicalId": "P62F-PC-L-048",
       "sourceId": 691047,
@@ -14814,7 +14869,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "904a0a01773c64f33c9cae3019db5b254857dcebb5ebc73e7b694b9536519d46",
       "canonicalId": "P62F-PC-L-049",
       "sourceId": 691048,
@@ -14862,7 +14916,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "1744ab07f9cf97200f82db5d8fac14dbd637f732ea0ad983926c7525580bc3de",
       "canonicalId": "P62F-PC-L-050",
       "sourceId": 691049,
@@ -14910,7 +14963,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "f348361c515d552ae07bff30039a09c31c020fa4bf490eb605ce71c8dfc3fa28",
       "canonicalId": "P62F-PC-L-051",
       "sourceId": 691050,
@@ -14958,7 +15010,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "a1e735cd4607d11c32df0942a9b6622b1224391761717447bf09cfc61ca6b7c3",
       "canonicalId": "P62F-PC-L-052",
       "sourceId": 691051,
@@ -15006,7 +15057,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "d848f3b9c304f247378aa716e0cd858f01dcd540e24c75ec85ab8c48250925fe",
       "canonicalId": "P62F-PC-L-053",
       "sourceId": 691052,
@@ -15054,7 +15104,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "bccde4dceb1a831bbe8595255b6ba4de23244499f47c9f5f1043276867c1f95f",
       "canonicalId": "P62F-PC-L-054",
       "sourceId": 691053,
@@ -15196,7 +15245,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "525cbe75aef576fe1b59f67544a04b645088a37b5a9b92f8e68d4c101e0e6636",
       "canonicalId": "P62F-PC-L-057",
       "sourceId": 691056,
@@ -15244,7 +15292,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "99eb04e7d87db5f14fdc8efd425d9e314c65c78838dec43b56d357ddec1df767",
       "canonicalId": "P62F-PC-L-058",
       "sourceId": 691057,
@@ -15292,7 +15339,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "8489a5036f1331146693abc1b83c82595e419a38576b2ab187aa0b20cb664d30",
       "canonicalId": "P62F-PC-L-059",
       "sourceId": 691058,
@@ -15340,7 +15386,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "72867987b0392fa06bf5f6591254993d3ebbfc59c4ba1e20c230c84c8a798205",
       "canonicalId": "P62F-PC-L-060",
       "sourceId": 691059,
@@ -16108,7 +16153,6 @@ const questionBanks = {
       "repairSkill": "competitive_welfare",
       "commonError": "equates_efficiency_with_equity",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "5ad1638c9b36de4b8f923d8b29b2c72956c84a7e207d4cac2463c0021bc117c0",
       "canonicalId": "P62F-PC-L-076",
       "sourceId": 691075,
@@ -16156,7 +16200,6 @@ const questionBanks = {
       "repairSkill": "competitive_welfare",
       "commonError": "equates_efficiency_with_equity",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "f2acc3cb886b75eab8638e722023f6a49dee4dd8267dc2d5cabb65e94dc3df1d",
       "canonicalId": "P62F-PC-L-077",
       "sourceId": 691076,
@@ -16204,7 +16247,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "5d7e171c4a53b2a8260d4125ef500b2995fb315799e54bddd506bdaa0513c363",
       "canonicalId": "P62F-PC-L-078",
       "sourceId": 691077,
@@ -16252,7 +16294,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "8c8fd8993e6ce3055dfd9b30ea7e824484771c430c3d55cb4256209f757ea5e6",
       "canonicalId": "P62F-PC-L-079",
       "sourceId": 691078,
@@ -16300,7 +16341,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "328038cef1a4a1c94712c045cb7e8d1eb99cc578312702ccb181aaf1150addde",
       "canonicalId": "P62F-PC-L-080",
       "sourceId": 691079,
@@ -16348,7 +16388,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "459a560cc618d249df7215fad2f28ec31f9bdcf2e2110cdb46de075dcbb70d0a",
       "canonicalId": "P62F-PC-L-081",
       "sourceId": 691080,
@@ -16396,7 +16435,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "413811deb7e9734d102afcdfe55f8c19746d9a86ebc5f704b7b717bec49bc7ac",
       "canonicalId": "P62F-PC-L-082",
       "sourceId": 691081,
@@ -16444,7 +16482,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "b6d2f58527894a71d3475b9052057db8061e60b9aaf36f39dcf2ee32967eb678",
       "canonicalId": "P62F-PC-L-083",
       "sourceId": 691082,
@@ -16492,7 +16529,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "21f0498cf999f02f008598b50a30fc691d7182a9dcba10995feaf865fb842a1e",
       "canonicalId": "P62F-PC-L-084",
       "sourceId": 691083,
@@ -16540,7 +16576,6 @@ const questionBanks = {
       "repairSkill": "competitive_welfare",
       "commonError": "equates_efficiency_with_equity",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "c317364b66b4473e3fd1a7cef5d49979011c0f93b7029662ad85504ce4bb8cbb",
       "canonicalId": "P62F-PC-L-085",
       "sourceId": 691084,
@@ -16588,7 +16623,6 @@ const questionBanks = {
       "repairSkill": "productive_efficiency",
       "commonError": "uses_p_equals_mc",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "ae0aa8afc237518c9d7e985a09049c7e17235adae36913202adce72d120ecfe6",
       "canonicalId": "P62F-PC-L-086",
       "sourceId": 691085,
@@ -16636,7 +16670,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "4a4fae75e5b277bd2c97dc0e8b53f11bc93b37b54e4a5e94b6160ae07ac063b5",
       "canonicalId": "P62F-PC-L-087",
       "sourceId": 691086,
@@ -16684,7 +16717,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "3a521dcd1dfbe35198a73c4d2a8cea1cbfb78471e73ca87893bf909a411562a2",
       "canonicalId": "P62F-PC-L-088",
       "sourceId": 691087,
@@ -16732,7 +16764,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "42e3850243d4839fbd7c40635b9da1c2be6db1e6a565ffcd2c4d3f2db24e0abe",
       "canonicalId": "P62F-PC-L-089",
       "sourceId": 691088,
@@ -16780,7 +16811,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Separate price-taking mechanics from the assumptions needed for long-run and welfare results.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "c8b986dfd249ec80009168bf0a31a89296402eb5fd4d1a9c8507ff22b1406045",
       "canonicalId": "P62F-PC-L-090",
       "sourceId": 691089,
@@ -16877,7 +16907,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue",
       "commonError": "assumes_mr_falls",
       "feedback": "Each additional unit sells at the market price.",
-      "image": "question-assets/perfect-competition/pc_profit_b.webp",
       "aHash": "adb8bcfeceb5bc0bd84001208ec23d1cd02127841819c803472c6ad15c52582e",
       "canonicalId": "P62F-PC-B1-002",
       "sourceId": 694001,
@@ -17067,7 +17096,6 @@ const questionBanks = {
       "repairSkill": "market_vs_firm",
       "commonError": "uses_market_curve_for_firm",
       "feedback": "The market sets a new price taken by the firm.",
-      "image": "question-assets/perfect-competition/pc_market_firm_2.webp",
       "aHash": "396d80710d28623eb28bd31b9132f5bc1b439cd013f93f8d1aa1812b9b0036dc",
       "canonicalId": "P62F-PC-B1-006",
       "sourceId": 694005,
@@ -17162,7 +17190,6 @@ const questionBanks = {
       "repairSkill": "price_taker",
       "commonError": "assumes_firm_sets_price",
       "feedback": "A price taker need not undercut the market.",
-      "image": "question-assets/perfect-competition/pc_market_firm_1.webp",
       "aHash": "ef78ff5df5c93937b3b11293875f59bd9046ddefd42cee24279040a9689b4b4e",
       "canonicalId": "P62F-PC-B1-008",
       "sourceId": 694007,
@@ -17257,7 +17284,6 @@ const questionBanks = {
       "repairSkill": "marginal_rule",
       "commonError": "reverses_mr_mc_rule",
       "feedback": "Another unit adds more revenue than cost.",
-      "image": "question-assets/perfect-competition/pc_profit_d.webp",
       "aHash": "812f868be96044d861012752aac5446260e648c2014a337e54f776579bcdded9",
       "canonicalId": "P62F-PC-B1-010",
       "sourceId": 694009,
@@ -17305,7 +17331,6 @@ const questionBanks = {
       "repairSkill": "marginal_rule",
       "commonError": "reverses_mr_mc_rule",
       "feedback": "The extra cost exceeds extra revenue.",
-      "image": "question-assets/perfect-competition/pc_profit_d.webp",
       "aHash": "4e149945ce224ee0a751d2570f30884e40bc581376215999afc916abf2338ab1",
       "canonicalId": "P62F-PC-B1-011",
       "sourceId": 694010,
@@ -17353,7 +17378,6 @@ const questionBanks = {
       "repairSkill": "firm_demand_curve",
       "commonError": "misreads_horizontal_firm_demand",
       "feedback": "The individual firm can sell at the given price.",
-      "image": "question-assets/perfect-competition/pc_market_firm_3.webp",
       "aHash": "e557a68f1a2151d3e6aeb31f8fbb23b662eacd708844c8418a001b46819206e0",
       "canonicalId": "P62F-PC-B1-012",
       "sourceId": 694011,
@@ -17448,7 +17472,6 @@ const questionBanks = {
       "repairSkill": "rising_mc_condition",
       "commonError": "uses_falling_mc_intersection",
       "feedback": "Not every intersection is a profit maximum.",
-      "image": "question-assets/perfect-competition/pc_profit_b.webp",
       "aHash": "8ca42e2a91379ec378a99280e8d39913ecec261aa72b8cf08f6ef172e443b102",
       "canonicalId": "P62F-PC-B1-014",
       "sourceId": 694013,
@@ -17496,7 +17519,6 @@ const questionBanks = {
       "repairSkill": "price_taker",
       "commonError": "assumes_firm_sets_price",
       "feedback": "The firm chooses quantity at a given price.",
-      "image": "question-assets/perfect-competition/pc_market_firm_1.webp",
       "aHash": "2515faca6bb51bdb3f790bc4a0029326de3a461796fcf9057284d08e6d5e3323",
       "canonicalId": "P62F-PC-B1-015",
       "sourceId": 694014,
@@ -17544,7 +17566,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue",
       "commonError": "assumes_mr_falls",
       "feedback": "The price line is horizontal.",
-      "image": "question-assets/perfect-competition/pc_profit_b.webp",
       "aHash": "226c73bbcf7ec40be39e92f36c9e3234d202a71268978ec5550f80e88e893838",
       "canonicalId": "P62F-PC-B1-016",
       "sourceId": 694015,
@@ -17829,7 +17850,6 @@ const questionBanks = {
       "repairSkill": "shutdown_price",
       "commonError": "uses_min_atc",
       "feedback": "Revenue covers variable cost exactly.",
-      "image": "question-assets/perfect-competition/pc_shutdown_b.webp",
       "aHash": "cb30e00901f3eabce3f9ab2727e5b6f4cc33e81c894ee745962706fb4af9b4f0",
       "canonicalId": "P62F-PC-B2-022",
       "sourceId": 694103,
@@ -17877,7 +17897,6 @@ const questionBanks = {
       "repairSkill": "produce_at_loss",
       "commonError": "shuts_down_for_any_loss",
       "feedback": "Operating can reduce the unavoidable fixed-cost loss.",
-      "image": "question-assets/perfect-competition/pc_loss_produce_c.webp",
       "aHash": "257888f6bf01d9a99c482ebebbafff060ef05cd43e68b677b88f844f5e9a123b",
       "canonicalId": "P62F-PC-B2-023",
       "sourceId": 694104,
@@ -18068,7 +18087,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "The firm chooses Q where P=MC while operating.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "6bc0f9c4ecb0acbebf1b9f6c816bdd66f4885f67c917d9e141cf893014fba936",
       "canonicalId": "P62F-PC-B2-027",
       "sourceId": 694108,
@@ -18116,7 +18134,6 @@ const questionBanks = {
       "repairSkill": "firm_short_run_supply",
       "commonError": "uses_entire_mc_curve",
       "feedback": "The shutdown rule overrides the positive MC intersection.",
-      "image": "question-assets/perfect-competition/pc_supply_2.webp",
       "aHash": "f9194e73f9e9459e3450ea10a179cdf77aafa695beecd3b9344a98d111622243",
       "canonicalId": "P62F-PC-B2-028",
       "sourceId": 694109,
@@ -18352,7 +18369,6 @@ const questionBanks = {
       "repairSkill": "shutdown_price",
       "commonError": "uses_min_atc",
       "feedback": "Minimum AVC is unchanged.",
-      "image": "question-assets/perfect-competition/pc_shutdown_b.webp",
       "aHash": "d963d14c3989b7ce62fa8683069c378bca2a01963b181b5983d0d3aa071b13ab",
       "canonicalId": "P62F-PC-B2-033",
       "sourceId": 694114,
@@ -18447,7 +18463,6 @@ const questionBanks = {
       "repairSkill": "break_even",
       "commonError": "confuses_break_even_shutdown",
       "feedback": "The thresholds use different average costs.",
-      "image": "question-assets/perfect-competition/pc_zero_a.webp",
       "aHash": "f041580af0eae7ef3a5b64be820e0841198fd1b3ab017f222721c1af8e857b74",
       "canonicalId": "P62F-PC-B2-035",
       "sourceId": 694116,
@@ -18545,7 +18560,6 @@ const questionBanks = {
       "repairSkill": "entry",
       "commonError": "claims_entry_raises_price",
       "feedback": "Entry erodes profit through a larger market supply.",
-      "image": "question-assets/perfect-competition/pc_entry_1.webp",
       "aHash": "e7ccf4985ddc36e6d162cf732c1f9a74cc9ee2b25cdc7cf55f4d098c677c0a7d",
       "canonicalId": "P62F-PC-B3-037",
       "sourceId": 694200,
@@ -18593,7 +18607,6 @@ const questionBanks = {
       "repairSkill": "exit",
       "commonError": "claims_exit_lowers_price",
       "feedback": "Exit improves conditions for remaining firms.",
-      "image": "question-assets/perfect-competition/pc_exit_3.webp",
       "aHash": "acbb8cb8d65b21f4913de9d43a24dca2f1a2d2cd8043a85bd3bd340f10179f82",
       "canonicalId": "P62F-PC-B3-038",
       "sourceId": 694201,
@@ -18688,7 +18701,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Industry expansion does not change input prices.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "e342872b707cb0a98df6f19dbb6e728270fd14e4cbfca7e318e92dff6fb0ccec",
       "canonicalId": "P62F-PC-B3-040",
       "sourceId": 694203,
@@ -18736,7 +18748,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Expansion raises input costs.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "079da5b90b41bb9ab5ff5868322ebfb4fd860a2b6ba760394c14ea7a516f54de",
       "canonicalId": "P62F-PC-B3-041",
       "sourceId": 694204,
@@ -18784,7 +18795,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "External economies lower cost as industry output expands.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "d6c7080890ed135212e744a488c76bdab82fe0be4f6572faf5bcdb7a61c6196c",
       "canonicalId": "P62F-PC-B3-042",
       "sourceId": 694205,
@@ -18832,7 +18842,6 @@ const questionBanks = {
       "repairSkill": "productive_efficiency",
       "commonError": "uses_p_equals_mc",
       "feedback": "The firm uses the least-cost plant and output.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "1060b318a5e25add9e4530f73ea7f7268e0361921418a9876c990cbdf432cb25",
       "canonicalId": "P62F-PC-B3-043",
       "sourceId": 694206,
@@ -18880,7 +18889,6 @@ const questionBanks = {
       "repairSkill": "allocative_efficiency",
       "commonError": "uses_min_atc",
       "feedback": "Marginal value equals marginal cost.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "e54a81f4972707c472d1d07efa4e3fcdf804f0e8f6ba59f9b1f7ed50e883437c",
       "canonicalId": "P62F-PC-B3-044",
       "sourceId": 694207,
@@ -18928,7 +18936,6 @@ const questionBanks = {
       "repairSkill": "long_run_equilibrium",
       "commonError": "requires_positive_profit",
       "feedback": "The benchmark is both allocatively and productively efficient.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "8792891774bd8ac5bd75bc6fa5577ad8e411138aa5a000c167cc30ab612f6c87",
       "canonicalId": "P62F-PC-B3-045",
       "sourceId": 694208,
@@ -19070,7 +19077,6 @@ const questionBanks = {
       "repairSkill": "demand_change_short_long_run",
       "commonError": "assumes_same_short_long_result",
       "feedback": "The number of firms changes only in the long run.",
-      "image": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
       "aHash": "1b985decb7659eb0c191d3426923856e174acb9b30820556ea8671541b7aefc1",
       "canonicalId": "P62F-PC-B3-048",
       "sourceId": 694211,
@@ -19118,7 +19124,6 @@ const questionBanks = {
       "repairSkill": "competitive_welfare",
       "commonError": "equates_efficiency_with_equity",
       "feedback": "Efficiency and fairness are separate criteria.",
-      "image": "question-assets/perfect-competition/pc_efficiency.webp",
       "aHash": "c297146a5320c8b5e44680ab7bd6c4b3ad5d65df3c4122938b4b8b12e5bef75d",
       "canonicalId": "P62F-PC-B3-049",
       "sourceId": 694212,
@@ -19166,7 +19171,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "Private and social marginal cost can differ.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "ddc5f3a6ad976d063fea4cb712da0d4b963a9880d77af00e8c72c742aff24773",
       "canonicalId": "P62F-PC-B3-050",
       "sourceId": 694213,
@@ -19214,7 +19218,6 @@ const questionBanks = {
       "repairSkill": "model_limitations",
       "commonError": "treats_benchmark_as_literal",
       "feedback": "The efficiency result relies on adequate information.",
-      "image": "question-assets/perfect-competition/pc_market_firm_4.webp",
       "aHash": "b319d845e1425ab5768d39493a891d2062c07ccce984f7d70282c4ec78c86001",
       "canonicalId": "P62F-PC-B3-051",
       "sourceId": 694214,
@@ -19262,7 +19265,6 @@ const questionBanks = {
       "repairSkill": "constant_cost_industry",
       "commonError": "misdefines_constant_cost",
       "feedback": "Input prices and cost curves remain stable.",
-      "image": "question-assets/perfect-competition/pc_lrs_constant.webp",
       "aHash": "106300e0642d6593cd4cc500c2fe5bae5019e51009e01995bf23639aeeb4e6ff",
       "canonicalId": "P62F-PC-B3-052",
       "sourceId": 694215,
@@ -19310,7 +19312,6 @@ const questionBanks = {
       "repairSkill": "increasing_cost_industry",
       "commonError": "confuses_with_technical_inefficiency",
       "feedback": "Expansion shifts firm cost curves upward.",
-      "image": "question-assets/perfect-competition/pc_lrs_increasing.webp",
       "aHash": "1b0b0fbe87b51bf7a306a58ae4687c957d807ae353cfbcebe1d2f2ef88e7662a",
       "canonicalId": "P62F-PC-B3-053",
       "sourceId": 694216,
@@ -19358,7 +19359,6 @@ const questionBanks = {
       "repairSkill": "decreasing_cost_industry",
       "commonError": "confuses_with_demand_slope",
       "feedback": "Industry growth can develop cheaper inputs or shared infrastructure.",
-      "image": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
       "aHash": "acc294feee805ccd83762e8bdaca60ec920cdb3b294027860d2d006b65b28fad",
       "canonicalId": "P62F-PC-B3-054",
       "sourceId": 694217,
@@ -21193,11 +21193,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:perfect-competition-mastery-quest:2b37b501ea2d",
-  "compositionFingerprint": "2b37b501ea2d62cb3b8e911921e82c51ab5a0a81ef4c9eb924ae6baf791fa607",
-  "libraryVersion": "phase6.2f-perfect-competition-rich-bank-v1",
-  "librarySha256": "5d394cdd6bb6be1c8edc4be485808fbc3ccc66960baae35e770f0b2b6d601943",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "saveKeyNamespace": "mq-econ:perfect-competition-mastery-quest:3d3fa354528d",
+  "compositionFingerprint": "3d3fa354528d1d97ddc04500488994f583d6273e00b1de3e5ffce1c1134fbefe",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -22162,7 +22162,6 @@ const bridgeQuestions = [
     "repairSkill": "marginal_rule",
     "commonError": "reverses_mr_mc_rule",
     "feedback": "The incremental output decision compares MR with MC.",
-    "image": "question-assets/perfect-competition/pc_profit_d.webp",
     "aHash": "cccf0e186dc21e8bdfd227883ab8cf98f5d08a8c3c93cc6d698594151f9a1562",
     "canonicalId": "P62F-PC-BR-001",
     "sourceId": 693100,
@@ -24109,7 +24108,6 @@ const microSkillBridgePools = {
       "repairSkill": "marginal_rule",
       "commonError": "reverses_mr_mc_rule",
       "feedback": "The incremental output decision compares MR with MC.",
-      "image": "question-assets/perfect-competition/pc_profit_d.webp",
       "aHash": "cccf0e186dc21e8bdfd227883ab8cf98f5d08a8c3c93cc6d698594151f9a1562",
       "canonicalId": "P62F-PC-BR-001",
       "sourceId": 693100,
@@ -25965,10 +25963,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26256,7 +26254,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26342,7 +26348,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26352,9 +26366,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -26675,7 +26694,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }

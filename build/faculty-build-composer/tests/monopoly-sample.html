@@ -2119,32 +2119,35 @@ button {
 
 @media (hover: none), (pointer: coarse) {
 
+    /* Touch browsers can leave :hover latched after a tap. Keep that
+       latched state identical to the normal answer-button palette. */
     .answers button:hover {
         background: linear-gradient(180deg,
-            rgba(50,76,58,0.98),
-            rgba(12,24,20,0.98));
+            rgba(11,34,56,0.96),
+            rgba(2,8,18,0.98));
 
-        border-color: rgba(214,177,92,0.34);
+        border-color: rgba(56,189,248,0.30);
 
         box-shadow:
-            0 0 10px rgba(214,177,92,0.16),
-            0 0 18px rgba(65,95,78,0.16),
-            inset 0 0 14px rgba(0,0,0,0.7);
+            0 0 10px rgba(56,189,248,0.18),
+            0 0 18px rgba(247,217,130,0.10),
+            inset 0 0 14px rgba(0,0,0,0.78);
 
         transform: none;
     }
 
+    /* Active tap feedback stays in the established blue/gold theme. */
     .answers button:active {
         background: linear-gradient(180deg,
-            rgba(68,105,76,0.98),
-            rgba(24,46,34,0.98));
+            rgba(19,57,86,0.98),
+            rgba(8,24,42,0.98));
 
-        border-color: rgba(240,199,94,0.68);
+        border-color: rgba(247,217,130,0.66);
 
         box-shadow:
-            0 0 18px rgba(214,177,92,0.38),
-            0 0 34px rgba(65,120,82,0.35),
-            inset 0 0 14px rgba(0,0,0,0.68);
+            0 0 18px rgba(56,189,248,0.34),
+            0 0 34px rgba(247,217,130,0.22),
+            inset 0 0 14px rgba(0,0,0,0.74);
 
         transform: scale(0.98);
     }
@@ -3054,14 +3057,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2g-monopoly-rich-bank-v1",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
     "templateVersion": "phase4.5b-self-contained",
     "composerVersion": "4.5b.0",
     "compositionId": "monopoly-mastery-quest",
-    "saveKeyNamespace": "mq-econ:monopoly-mastery-quest:ae1d60cb9ac4",
-    "librarySha256": "9d5ba2170d71ddf3a12f17c2aa5977bdb60fc9e9f5e2653e0115b9a54212da3c",
-    "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3",
-    "compositionFingerprint": "ae1d60cb9ac4a84b5cfb148f42e0fa878830cc3ff149ec4c5b967fe94c880ced"
+    "saveKeyNamespace": "mq-econ:monopoly-mastery-quest:feb3b6e7cc39",
+    "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+    "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d",
+    "compositionFingerprint": "feb3b6e7cc39a95966765874b8f68983e7488ef4b76be984951a155583d0afdb"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3293,6 +3296,21 @@ function recordTimedTrialAchievementStats(accuracy, reachedRoom){
     }
 }
 
+function storeTimedTrialResult(accuracy, reachedRoom, finalRoom = room){
+    const safeAccuracy = Number.isFinite(Number(accuracy)) ? Number(accuracy) : 0;
+    const safeReachedRoom = Math.max(1, Math.min(30, Number(reachedRoom) || 1));
+    const safeFinalRoom = Math.max(1, Math.min(30, Number(finalRoom) || 1));
+
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(safeFinalRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(safeReachedRoom));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(safeAccuracy));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
+    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
+
+    recordTimedTrialAchievementStats(safeAccuracy, safeReachedRoom);
+}
+
 function recordRealmCorrectAnswer(){
     if(!modeAllowsRealmProgress()) return;
     addRealmStat(REALM_TOTAL_CORRECT_KEY, 1);
@@ -3361,14 +3379,48 @@ function isRunSessionCurrent(sessionId){
 function scheduleForCurrentRun(callback, delay){
     const scheduledSessionId = runSessionId;
     return setTimeout(() => {
-        if(!isRunSessionCurrent(scheduledSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(scheduledSessionId) || isTimedModeTerminal()) return;
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
         callback();
     }, delay);
 }
+function isTimedModeExpired(){
+    return gameMode === "timed"
+        && Number.isFinite(timedModeEndTime)
+        && Date.now() >= timedModeEndTime;
+}
+function isTimedModeTerminal(){
+    return runEnding
+        || gameMode === "timed-complete"
+        || gameMode === "timed-ended-early";
+}
+function reconcileTimedModeClock(){
+    if(gameMode !== "timed" || isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    updateTimedModeClock();
+}
+
+document.addEventListener("visibilitychange", function(){
+    if(!document.hidden){
+        reconcileTimedModeClock();
+    }
+});
+window.addEventListener("pageshow", reconcileTimedModeClock);
+window.addEventListener("focus", reconcileTimedModeClock);
+
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
-    if(gameMode === "timed") return "Timed Trial";
+    if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
+    if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -4766,6 +4818,10 @@ function confirmReturnToModeMenu(){
             if(gameMode === "standard"){
                 saveGameState();
             }
+            if(gameMode === "timed"){
+                endTimedAttemptEarly();
+                return;
+            }
             returnToModeSelectFromRun();
         }
     });
@@ -4837,6 +4893,45 @@ function closeGameModal(){
 }
 
 function endTimedAttemptEarly(){
+    if(gameMode !== "timed" || runEnding) return;
+
+    const actualElapsedTimeMs = freezeCompletionTime();
+    const accuracy = totalAttempts > 0
+        ? Math.round((correctAnswers / totalAttempts) * 100)
+        : 0;
+    const reachedRoom = Math.max(timedHighestRoom || 1, room || 1);
+
+    runEnding = true;
+    answerSubmissionPending = true;
+    rapidGuessLocked = true;
+    setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    gameMode = "timed-ended-early";
+
+    storeTimedTrialResult(accuracy, reachedRoom, room);
+
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "timed_ended_early",
+        user: username,
+        room: room,
+        questionId: 0,
+        correct: 0,
+        tag: "",
+        type: "",
+        objective: "",
+        responseTime: 0,
+        attempt: totalAttempts,
+        streak: streak,
+        elapsedTime: actualElapsedTimeMs,
+        adaptiveMode: "timed_ended_early",
+        totalTime: actualElapsedTimeMs,
+        accuracy: accuracy / 100,
+        maxStreak: maxStreak,
+        totalAttempts: totalAttempts
+    });
+
     returnToModeSelectFromRun();
 }
 
@@ -5052,6 +5147,8 @@ function resetRunStateForNewMode(){
     finalElapsedTimeMs = null;
     runEnding = false;
     answerSubmissionPending = false;
+    stopTimedModeClock();
+    timedModeEndTime = null;
     room = 1;
     bossHealth = 3;
     bossCheckpoint = 1;
@@ -5152,7 +5249,7 @@ function stopTimedModeClock(){
 }
 
 function updateTimedModeClock(){
-    if(gameMode !== "timed" || !timedModeEndTime) return;
+    if(gameMode !== "timed" || !timedModeEndTime || isTimedModeTerminal()) return;
 
     const remainingMs = Math.max(0, timedModeEndTime - Date.now());
     const totalSeconds = Math.ceil(remainingMs / 1000);
@@ -5176,30 +5273,20 @@ function endTimedModeRun(){
     beginRunSession();
     runEnding = true;
     answerSubmissionPending = true;
-    stopTimedModeClock();
+    rapidGuessLocked = true;
     setAnswerButtonsDisabled(true);
+    stopTimedModeClock();
+    finalElapsedTimeMs = timedModeDurationMs;
     gameMode = "timed-complete";
 
     const accuracy = totalAttempts > 0
         ? Math.round((correctAnswers / totalAttempts) * 100)
         : 0;
-    const totalTimeMs = freezeCompletionTime(timedModeDurationMs);
+    const totalTimeMs = timedModeDurationMs;
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|TIMED", accuracy, maxStreak, totalTimeMs);
 
-    const bestRoom = Number(localStorage.getItem(`${STORAGE_PREFIX}:timed:bestRoom`) || 0);
-    if(timedHighestRoom > bestRoom){
-        localStorage.setItem(`${STORAGE_PREFIX}:timed:bestRoom`, String(timedHighestRoom));
-    }
-
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastRoom`, String(room));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastHighestRoom`, String(timedHighestRoom));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAccuracy`, String(accuracy));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastAttempts`, String(totalAttempts));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastStreak`, String(maxStreak));
-    localStorage.setItem(`${STORAGE_PREFIX}:timed:lastSetbacks`, String(timedSetbacks));
-
-    recordTimedTrialAchievementStats(accuracy, timedHighestRoom);
+    storeTimedTrialResult(accuracy, timedHighestRoom, room);
 
     sendGameData({
         runID: runID,
@@ -9233,7 +9320,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "At P=MC, revenue covers variable cost but not the fixed cost.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "834c8eb5d5ba7b63806017757e37f5729e1946186a1d36f4ebf744f5dce196ce",
       "canonicalId": "P62G-MON-H-021",
       "sourceId": 700220,
@@ -9281,7 +9367,6 @@ const questionBanks = {
       "repairSkill": "average_cost_regulation",
       "commonError": "claims_allocative_efficiency",
       "feedback": "P=ATC covers cost but exceeds marginal cost.",
-      "image": "question-assets/monopoly/mon_regulation_2.webp",
       "aHash": "7fde66d61627137b4e6c06dbdb78dad1a84e4ebcfeefb2944a8bd0ee9f18b5e0",
       "canonicalId": "P62G-MON-H-022",
       "sourceId": 700221,
@@ -9329,7 +9414,6 @@ const questionBanks = {
       "repairSkill": "price_cap_regulation",
       "commonError": "ignores_quality_incentives",
       "feedback": "A fixed cap rewards cost reduction but can encourage quality cuts.",
-      "image": "question-assets/monopoly/mon_regulation_3.webp",
       "aHash": "22ecfaf495b7ca4992b43f2e7bd933a08816d6d63b28a8c6ff660ab6f9b54b53",
       "canonicalId": "P62G-MON-H-023",
       "sourceId": 700222,
@@ -11118,7 +11202,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_108_2_20_0p25_300_standard.webp",
       "aHash": "468681944c707583cb183c3cb70e77ed7ea51203660fc17aa330f55d7039cec7",
       "canonicalId": "P62G-MON-EL-001",
       "sourceId": 700300,
@@ -11166,7 +11249,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_108_2_20_0p25_300_standard.webp",
       "aHash": "1314489d736fa3575e18f18177eb2c9861232cb828abe777e9c3225e55c128e0",
       "canonicalId": "P62G-MON-EL-002",
       "sourceId": 700301,
@@ -11214,7 +11296,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
       "aHash": "0387a6dcc3eecc7d5ca7d07c97c31e2d7c5937010ed64e567a449baec6a34ff3",
       "canonicalId": "P62G-MON-EL-003",
       "sourceId": 700302,
@@ -11262,7 +11343,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
       "aHash": "d2030a720370822f525514f9b8f3f3435ff190c3cc78cea66f030217f8f72631",
       "canonicalId": "P62G-MON-EL-004",
       "sourceId": 700303,
@@ -11310,7 +11390,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_18_0p35_350_standard.webp",
       "aHash": "facd67241cbc8a20f716ceffb510514bf506d6ccabdfdc3dd436ac86f1bd7f51",
       "canonicalId": "P62G-MON-EL-005",
       "sourceId": 700304,
@@ -11358,7 +11437,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_18_0p35_350_standard.webp",
       "aHash": "1751c01537bb4354e3eb410ba9c3a3cdcdd4ee8be0c38bb7ce17f5251fcb37cc",
       "canonicalId": "P62G-MON-EL-006",
       "sourceId": 700305,
@@ -11406,7 +11484,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_112_2p2_22_0p3_500_standard.webp",
       "aHash": "51efd2997c5ca2e15ab53eec2ca404faca76920744fa2d07729e9321a1ce9cfd",
       "canonicalId": "P62G-MON-EL-007",
       "sourceId": 700306,
@@ -11454,7 +11531,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_112_2p2_22_0p3_500_standard.webp",
       "aHash": "01ca3733dae7c1c3f85c1027c9682fceed1467dbd06ea3000495726e86d22d7f",
       "canonicalId": "P62G-MON-EL-008",
       "sourceId": 700307,
@@ -11502,7 +11578,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_850_standard.webp",
       "aHash": "2d669451ac1e9abc9b953d4ed55acb83e11a31306babb2535674efe45d61994b",
       "canonicalId": "P62G-MON-EL-009",
       "sourceId": 700308,
@@ -11550,7 +11625,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_850_standard.webp",
       "aHash": "dadaeb1ccf5630b33c6d518a98ee3181b42a92ec2e4972d134373b18efc539ec",
       "canonicalId": "P62G-MON-EL-010",
       "sourceId": 700309,
@@ -11598,7 +11672,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
       "aHash": "cf7074893a05713bd004e03c0ce3eeb6bbf70314470a5974eae77cadbc1fcb21",
       "canonicalId": "P62G-MON-EL-011",
       "sourceId": 700310,
@@ -11646,7 +11719,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
       "aHash": "22ab45a4e285826630ed1bbd108020cd91915dfb5ccc26a6f3cbce7100109bf5",
       "canonicalId": "P62G-MON-EL-012",
       "sourceId": 700311,
@@ -11694,7 +11766,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_900_standard.webp",
       "aHash": "453fd9baee13585741b2e630ae40ee3a1dae9042caa9835821eb0b4e54656df8",
       "canonicalId": "P62G-MON-EL-013",
       "sourceId": 700312,
@@ -11742,7 +11813,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_900_standard.webp",
       "aHash": "8fd8a5798e8b746a43e966a0318cddacb7a073f308d565db16574d36f0135ca0",
       "canonicalId": "P62G-MON-EL-014",
       "sourceId": 700313,
@@ -11790,7 +11860,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Set MR=MC for Q and substitute Q into demand for P.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
       "aHash": "1c79bce3ce032730bd6492040da7034606c428470dbcecc1474d29180f3ee6f5",
       "canonicalId": "P62G-MON-EL-015",
       "sourceId": 700314,
@@ -11838,7 +11907,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit or loss equals (P−ATC)Q at the chosen output.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
       "aHash": "d94da4808994911ef711110597bc4f9c884c939691667ec169fb538a87506148",
       "canonicalId": "P62G-MON-EL-016",
       "sourceId": 700315,
@@ -12168,7 +12236,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Demand intersects MC at the efficient output, but fixed cost remains uncovered.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "bcafff270b95555fea08dcf475ba243d23536e7410b23a80a9b45885c14e6e45",
       "canonicalId": "P62G-MON-EL-023",
       "sourceId": 700322,
@@ -12216,7 +12283,6 @@ const questionBanks = {
       "repairSkill": "average_cost_regulation",
       "commonError": "claims_allocative_efficiency",
       "feedback": "Solve demand=ATC for the cost-covering regulated point.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "c9af5f6a63c8479e3a52376f0333ad08479011f20d66058187cc6dfe546f0fa1",
       "canonicalId": "P62G-MON-EL-024",
       "sourceId": 700323,
@@ -12264,7 +12330,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Demand intersects MC at the efficient output, but fixed cost remains uncovered.",
-      "image": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
       "aHash": "d4b1be7ba6636a79d23371317e0d05a374a3a8b7a5a1ec7c6b3db38d6fa576ce",
       "canonicalId": "P62G-MON-EL-025",
       "sourceId": 700324,
@@ -12312,7 +12377,6 @@ const questionBanks = {
       "repairSkill": "average_cost_regulation",
       "commonError": "claims_allocative_efficiency",
       "feedback": "Solve demand=ATC for the cost-covering regulated point.",
-      "image": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
       "aHash": "21bd340bbea302a5f491b42080da27f9c5c81b949dc03473fec36e77606292f1",
       "canonicalId": "P62G-MON-EL-026",
       "sourceId": 700325,
@@ -12360,7 +12424,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market’s MR equal to common MC, then read each price from its demand.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "7ee7bddfe71b31f26be28fd1656844bd88588bb0ff61d845280e8cca72b870e5",
       "canonicalId": "P62G-MON-EL-027",
       "sourceId": 700326,
@@ -12408,7 +12471,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market’s MR equal to common MC, then read each price from its demand.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "dc7de3d216e31d5a0dd179b4e709075bfff969aab3f5fa1e46931834f0b18553",
       "canonicalId": "P62G-MON-EL-028",
       "sourceId": 700327,
@@ -12456,7 +12518,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market’s MR equal to common MC, then read each price from its demand.",
-      "image": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
       "aHash": "a136495058e61d06f0c3d8d23c9a7344485167d329c21eda8f836675ee826eae",
       "canonicalId": "P62G-MON-EL-029",
       "sourceId": 700328,
@@ -12504,7 +12565,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market’s MR equal to common MC, then read each price from its demand.",
-      "image": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
       "aHash": "71a6c3a4d942796c63cd5922559e6604af2953a4250289f1053fb278aa2ab496",
       "canonicalId": "P62G-MON-EL-030",
       "sourceId": 700329,
@@ -13400,7 +13460,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_108_2_20_0p25_280_standard.webp",
       "aHash": "c5a697130c0a4a7eedded19951ff678fd0f9c8e8b5e7db2f36d8b1fa9be5dbf4",
       "canonicalId": "P62G-MON-L-019",
       "sourceId": 701018,
@@ -13448,7 +13507,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit=(P−ATC)Q.",
-      "image": "question-assets/monopoly/mon_single_108_2_20_0p25_280_standard.webp",
       "aHash": "27b5f0ca2acf9ca7dc816e1e20778bd436099e75350d279934a1867e23808d30",
       "canonicalId": "P62G-MON-L-020",
       "sourceId": 701019,
@@ -13496,7 +13554,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_108_2_20_0p25_280_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-021",
       "sourceId": 701020,
@@ -13544,7 +13601,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_430_standard.webp",
       "aHash": "e64cb669930de0bdd8f91e57e0ccc997aba3786f294d6e289f1f5575004e6f7f",
       "canonicalId": "P62G-MON-L-022",
       "sourceId": 701021,
@@ -13592,7 +13648,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit=(P−ATC)Q.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_430_standard.webp",
       "aHash": "9a0bf06f9567b736bf26c7ecbf88086dd5ff7671486dd83658fc55d21aaa3154",
       "canonicalId": "P62G-MON-L-023",
       "sourceId": 701022,
@@ -13640,7 +13695,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_430_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-024",
       "sourceId": 701023,
@@ -13688,7 +13742,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_18_0p35_360_standard.webp",
       "aHash": "0167098ac2c9d2abe3b5622025da3f62c7c2a8313b230363d95deb070c9e7660",
       "canonicalId": "P62G-MON-L-025",
       "sourceId": 701024,
@@ -13736,7 +13789,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit=(P−ATC)Q.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_18_0p35_360_standard.webp",
       "aHash": "f0e30a678fcea2382b628ee1b24ce511cdada534e3525198f59895bb07267b6f",
       "canonicalId": "P62G-MON-L-026",
       "sourceId": 701025,
@@ -13784,7 +13836,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_18_0p35_360_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-027",
       "sourceId": 701026,
@@ -13832,7 +13883,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_112_2p2_22_0p3_520_standard.webp",
       "aHash": "2f76fd2cb3a15103be60ea55d968e06cdd883b2f6304b5c5a1f7d5abd3f13309",
       "canonicalId": "P62G-MON-L-028",
       "sourceId": 701027,
@@ -13880,7 +13930,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Profit=(P−ATC)Q.",
-      "image": "question-assets/monopoly/mon_single_112_2p2_22_0p3_520_standard.webp",
       "aHash": "8c25d317271858b04f3b7ede7a2c4c19464746fd2277fcd683a7860c293a1ba8",
       "canonicalId": "P62G-MON-L-029",
       "sourceId": 701028,
@@ -13928,7 +13977,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_112_2p2_22_0p3_520_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-030",
       "sourceId": 701029,
@@ -13976,7 +14024,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_900_standard.webp",
       "aHash": "76017b2a6948ac5dd67ca17cb4c9945f02bc40af6d039dfecd9f1d425e2d4380",
       "canonicalId": "P62G-MON-L-031",
       "sourceId": 701030,
@@ -14024,7 +14071,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, producing at MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_900_standard.webp",
       "aHash": "2035fda28a4eba3b962b41541d898a81b3befc148702b5652c28be28da53825d",
       "canonicalId": "P62G-MON-L-032",
       "sourceId": 701031,
@@ -14072,7 +14118,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_900_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-033",
       "sourceId": 701032,
@@ -14120,7 +14165,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_820_standard.webp",
       "aHash": "8b334c99db2884c1f92588b1f873e75e2408b18590e33c553eba44cc50f91265",
       "canonicalId": "P62G-MON-L-034",
       "sourceId": 701033,
@@ -14168,7 +14212,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, producing at MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_820_standard.webp",
       "aHash": "0cb42ff24415ad15f8a65f2963246c7e96fb865c16ed4e4dc8723e161ab4d748",
       "canonicalId": "P62G-MON-L-035",
       "sourceId": 701034,
@@ -14216,7 +14259,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_820_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-036",
       "sourceId": 701035,
@@ -14264,7 +14306,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
       "aHash": "ab9df272aa4b06fbe9a8600084a261b3d9ea41cbf8dd23399e4aae5a9c3d7b24",
       "canonicalId": "P62G-MON-L-037",
       "sourceId": 701036,
@@ -14312,7 +14353,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, producing at MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
       "aHash": "84c7f66ab84d3be40614c684c6d5b1a5a12aa9601409a21d0e42cf9f9be83c44",
       "canonicalId": "P62G-MON-L-038",
       "sourceId": 701037,
@@ -14360,7 +14400,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-039",
       "sourceId": 701038,
@@ -14408,7 +14447,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "Use MR=MC for quantity and demand for price.",
-      "image": "question-assets/monopoly/mon_single_65_1p8_50_0p15_340_standard.webp",
       "aHash": "179a2dfea9ff32e7c30bcdfa549ec51d12a5f8381470de77056e6f8b3106c9f9",
       "canonicalId": "P62G-MON-L-040",
       "sourceId": 701039,
@@ -14456,7 +14494,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, producing at MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_65_1p8_50_0p15_340_standard.webp",
       "aHash": "21c421e38dee6f771457d477039f3731ed79574d002bbeb6f35c1b4f29b22d59",
       "canonicalId": "P62G-MON-L-041",
       "sourceId": 701040,
@@ -14504,7 +14541,6 @@ const questionBanks = {
       "repairSkill": "continuous_monopoly_choice",
       "commonError": "chooses_highest_price",
       "feedback": "An upward MC shift moves MR=MC to lower output, which raises demand-based price.",
-      "image": "question-assets/monopoly/mon_single_65_1p8_50_0p15_340_standard.webp",
       "aHash": "e1cfd01b99f6bdfc837e113f855049ebefe8e4ffd35ae224dd68ef1cfc693548",
       "canonicalId": "P62G-MON-L-042",
       "sourceId": 701041,
@@ -14552,7 +14588,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The omitted interval contains positive-surplus trades.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
       "aHash": "71c68f1dbcbb8245399b8d69c88ff7e92acd53bbe77466eeff62b5ee5785b563",
       "canonicalId": "P62G-MON-L-043",
       "sourceId": 701042,
@@ -14600,7 +14635,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "For linear curves, use one-half base times height.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
       "aHash": "f3a56256578a22dc0afd512d6834de624429cc7488a44d3bc90e1985150440e3",
       "canonicalId": "P62G-MON-L-044",
       "sourceId": 701043,
@@ -14648,7 +14682,6 @@ const questionBanks = {
       "repairSkill": "rent_seeking",
       "commonError": "treats_rent_seeking_as_output",
       "feedback": "Rent-seeking expenditure uses resources beyond the standard lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
       "aHash": "81ce22d498ae5a2a76f16a69ad40d439f900369b59a349924f23cb74dc733464",
       "canonicalId": "P62G-MON-L-045",
       "sourceId": 701044,
@@ -14696,7 +14729,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The omitted interval contains positive-surplus trades.",
-      "image": "question-assets/monopoly/mon_single_110_2_18_0p35_300_welfare.webp",
       "aHash": "71c68f1dbcbb8245399b8d69c88ff7e92acd53bbe77466eeff62b5ee5785b563",
       "canonicalId": "P62G-MON-L-046",
       "sourceId": 701045,
@@ -14744,7 +14776,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "For linear curves, use one-half base times height.",
-      "image": "question-assets/monopoly/mon_single_110_2_18_0p35_300_welfare.webp",
       "aHash": "f5afc4cda1c04882b55ba070eceaf8c0a4c14372ab2fd02ec81dc51805d3123f",
       "canonicalId": "P62G-MON-L-047",
       "sourceId": 701046,
@@ -14792,7 +14823,6 @@ const questionBanks = {
       "repairSkill": "rent_seeking",
       "commonError": "treats_rent_seeking_as_output",
       "feedback": "Rent-seeking expenditure uses resources beyond the standard lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_110_2_18_0p35_300_welfare.webp",
       "aHash": "81ce22d498ae5a2a76f16a69ad40d439f900369b59a349924f23cb74dc733464",
       "canonicalId": "P62G-MON-L-048",
       "sourceId": 701047,
@@ -14840,7 +14870,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The omitted interval contains positive-surplus trades.",
-      "image": "question-assets/monopoly/mon_single_90_1p5_15_0p3_220_welfare.webp",
       "aHash": "71c68f1dbcbb8245399b8d69c88ff7e92acd53bbe77466eeff62b5ee5785b563",
       "canonicalId": "P62G-MON-L-049",
       "sourceId": 701048,
@@ -14888,7 +14917,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "For linear curves, use one-half base times height.",
-      "image": "question-assets/monopoly/mon_single_90_1p5_15_0p3_220_welfare.webp",
       "aHash": "f72c9220e01175893e442bad68a5698d4bf1a396f35daf574e55ec2c966f63cb",
       "canonicalId": "P62G-MON-L-050",
       "sourceId": 701049,
@@ -14936,7 +14964,6 @@ const questionBanks = {
       "repairSkill": "rent_seeking",
       "commonError": "treats_rent_seeking_as_output",
       "feedback": "Rent-seeking expenditure uses resources beyond the standard lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_90_1p5_15_0p3_220_welfare.webp",
       "aHash": "81ce22d498ae5a2a76f16a69ad40d439f900369b59a349924f23cb74dc733464",
       "canonicalId": "P62G-MON-L-051",
       "sourceId": 701050,
@@ -14984,7 +15011,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The omitted interval contains positive-surplus trades.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_25_0p2_400_welfare.webp",
       "aHash": "71c68f1dbcbb8245399b8d69c88ff7e92acd53bbe77466eeff62b5ee5785b563",
       "canonicalId": "P62G-MON-L-052",
       "sourceId": 701051,
@@ -15032,7 +15058,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "For linear curves, use one-half base times height.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_25_0p2_400_welfare.webp",
       "aHash": "908e1c4dcf1154272a762afb90bce09283ca459a3f4eab4da438a0ac37c84e41",
       "canonicalId": "P62G-MON-L-053",
       "sourceId": 701052,
@@ -15080,7 +15105,6 @@ const questionBanks = {
       "repairSkill": "rent_seeking",
       "commonError": "treats_rent_seeking_as_output",
       "feedback": "Rent-seeking expenditure uses resources beyond the standard lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_25_0p2_400_welfare.webp",
       "aHash": "81ce22d498ae5a2a76f16a69ad40d439f900369b59a349924f23cb74dc733464",
       "canonicalId": "P62G-MON-L-054",
       "sourceId": 701053,
@@ -15128,7 +15152,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The omitted interval contains positive-surplus trades.",
-      "image": "question-assets/monopoly/mon_single_105_1p75_22_0p25_320_welfare.webp",
       "aHash": "71c68f1dbcbb8245399b8d69c88ff7e92acd53bbe77466eeff62b5ee5785b563",
       "canonicalId": "P62G-MON-L-055",
       "sourceId": 701054,
@@ -15176,7 +15199,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "For linear curves, use one-half base times height.",
-      "image": "question-assets/monopoly/mon_single_105_1p75_22_0p25_320_welfare.webp",
       "aHash": "018e48a56265eb7877156d8565c58e32baae49b188d0cb5eaf6e61aab1f3d77b",
       "canonicalId": "P62G-MON-L-056",
       "sourceId": 701055,
@@ -15224,7 +15246,6 @@ const questionBanks = {
       "repairSkill": "rent_seeking",
       "commonError": "treats_rent_seeking_as_output",
       "feedback": "Rent-seeking expenditure uses resources beyond the standard lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_105_1p75_22_0p25_320_welfare.webp",
       "aHash": "81ce22d498ae5a2a76f16a69ad40d439f900369b59a349924f23cb74dc733464",
       "canonicalId": "P62G-MON-L-057",
       "sourceId": 701056,
@@ -15272,7 +15293,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The omitted interval contains positive-surplus trades.",
-      "image": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
       "aHash": "71c68f1dbcbb8245399b8d69c88ff7e92acd53bbe77466eeff62b5ee5785b563",
       "canonicalId": "P62G-MON-L-058",
       "sourceId": 701057,
@@ -15320,7 +15340,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "For linear curves, use one-half base times height.",
-      "image": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
       "aHash": "5e5e64191a8c8bebba18eeccaef4e0b335b60c472b8a89eb4444ae0c44a65fc0",
       "canonicalId": "P62G-MON-L-059",
       "sourceId": 701058,
@@ -15368,7 +15387,6 @@ const questionBanks = {
       "repairSkill": "rent_seeking",
       "commonError": "treats_rent_seeking_as_output",
       "feedback": "Rent-seeking expenditure uses resources beyond the standard lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
       "aHash": "81ce22d498ae5a2a76f16a69ad40d439f900369b59a349924f23cb74dc733464",
       "canonicalId": "P62G-MON-L-060",
       "sourceId": 701059,
@@ -15416,7 +15434,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "64888f3e7730e99b3898b08d6dd3ff8895f369880955c649c4093c0574ec07a9",
       "canonicalId": "P62G-MON-L-061",
       "sourceId": 701060,
@@ -15464,7 +15481,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "With constant MC and P=MC, contribution above variable cost is zero.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "be452b009ce5b90d2c8fa3f060010f98aa94fd0974c4dd057ee265e7d9341eb8",
       "canonicalId": "P62G-MON-L-062",
       "sourceId": 701061,
@@ -15512,7 +15528,6 @@ const questionBanks = {
       "repairSkill": "regulatory_tradeoff",
       "commonError": "assumes_costless_regulation",
       "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969",
       "canonicalId": "P62G-MON-L-063",
       "sourceId": 701062,
@@ -15560,7 +15575,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "cc08d5c57e8b915e3af7f3acd398def523214a68c93fdf84f96b8aac517285e2",
       "canonicalId": "P62G-MON-L-064",
       "sourceId": 701063,
@@ -15608,7 +15622,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "With constant MC and P=MC, contribution above variable cost is zero.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "be452b009ce5b90d2c8fa3f060010f98aa94fd0974c4dd057ee265e7d9341eb8",
       "canonicalId": "P62G-MON-L-065",
       "sourceId": 701064,
@@ -15656,7 +15669,6 @@ const questionBanks = {
       "repairSkill": "regulatory_tradeoff",
       "commonError": "assumes_costless_regulation",
       "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969",
       "canonicalId": "P62G-MON-L-066",
       "sourceId": 701065,
@@ -15704,7 +15716,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
       "aHash": "ddd31c69fb8a28390db96f2aeaced9c4cb4737d06ae6f66cd27e93310b4ea11f",
       "canonicalId": "P62G-MON-L-067",
       "sourceId": 701066,
@@ -15752,7 +15763,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "With constant MC and P=MC, contribution above variable cost is zero.",
-      "image": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
       "aHash": "be452b009ce5b90d2c8fa3f060010f98aa94fd0974c4dd057ee265e7d9341eb8",
       "canonicalId": "P62G-MON-L-068",
       "sourceId": 701067,
@@ -15800,7 +15810,6 @@ const questionBanks = {
       "repairSkill": "regulatory_tradeoff",
       "commonError": "assumes_costless_regulation",
       "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
-      "image": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
       "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969",
       "canonicalId": "P62G-MON-L-069",
       "sourceId": 701068,
@@ -15848,7 +15857,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
       "aHash": "978a418871813b5651a9f6a38b979ac88ac08ad768c2b1e5afe2639ba787dd3a",
       "canonicalId": "P62G-MON-L-070",
       "sourceId": 701069,
@@ -15896,7 +15904,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "With constant MC and P=MC, contribution above variable cost is zero.",
-      "image": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
       "aHash": "be452b009ce5b90d2c8fa3f060010f98aa94fd0974c4dd057ee265e7d9341eb8",
       "canonicalId": "P62G-MON-L-071",
       "sourceId": 701070,
@@ -15944,7 +15951,6 @@ const questionBanks = {
       "repairSkill": "regulatory_tradeoff",
       "commonError": "assumes_costless_regulation",
       "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
-      "image": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
       "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969",
       "canonicalId": "P62G-MON-L-072",
       "sourceId": 701071,
@@ -15992,7 +15998,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_130_1p5_18_1400.webp",
       "aHash": "f367adfb61bcf4c7eb26d8edf3d07074ed38f3a343585585f95ab8dff28dd1ac",
       "canonicalId": "P62G-MON-L-073",
       "sourceId": 701072,
@@ -16040,7 +16045,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "With constant MC and P=MC, contribution above variable cost is zero.",
-      "image": "question-assets/monopoly/mon_natural_130_1p5_18_1400.webp",
       "aHash": "be452b009ce5b90d2c8fa3f060010f98aa94fd0974c4dd057ee265e7d9341eb8",
       "canonicalId": "P62G-MON-L-074",
       "sourceId": 701073,
@@ -16088,7 +16092,6 @@ const questionBanks = {
       "repairSkill": "regulatory_tradeoff",
       "commonError": "assumes_costless_regulation",
       "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
-      "image": "question-assets/monopoly/mon_natural_130_1p5_18_1400.webp",
       "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969",
       "canonicalId": "P62G-MON-L-075",
       "sourceId": 701074,
@@ -16136,7 +16139,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market MR equal to the common MC.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "d1b9f043782b8ead16151ec07806805a59be1c3a954d4014b8a910fce4d5bee2",
       "canonicalId": "P62G-MON-L-076",
       "sourceId": 701075,
@@ -16184,7 +16186,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Read each price from its market demand after choosing quantities.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "fd72a4342fd83b84956f419d9d65a85f601a7cafde3b2c7af009972314e4b73e",
       "canonicalId": "P62G-MON-L-077",
       "sourceId": 701076,
@@ -16232,7 +16233,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Low-price buyers can resell into the high-price market.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "dca1681057e9ebd59a0dd3a4e1b2721cc9c15bb6aa600c042d74f2be50df8ffb",
       "canonicalId": "P62G-MON-L-078",
       "sourceId": 701077,
@@ -16280,7 +16280,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market MR equal to the common MC.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "b855dd386c34764ad520579346852d17c2fae88ca8832b542b4217e88cc223cd",
       "canonicalId": "P62G-MON-L-079",
       "sourceId": 701078,
@@ -16328,7 +16327,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Read each price from its market demand after choosing quantities.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "0624cf8bf1224ad3fbc203d9a34c3fe731ee1f3ca7fd835965be2deab3d829b1",
       "canonicalId": "P62G-MON-L-080",
       "sourceId": 701079,
@@ -16376,7 +16374,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Low-price buyers can resell into the high-price market.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "dca1681057e9ebd59a0dd3a4e1b2721cc9c15bb6aa600c042d74f2be50df8ffb",
       "canonicalId": "P62G-MON-L-081",
       "sourceId": 701080,
@@ -16424,7 +16421,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market MR equal to the common MC.",
-      "image": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
       "aHash": "9e3e19d95297cd6d4cfe26cc24e6c32ac700fbe1d5972302ab2adc277a4e2db8",
       "canonicalId": "P62G-MON-L-082",
       "sourceId": 701081,
@@ -16472,7 +16468,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Read each price from its market demand after choosing quantities.",
-      "image": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
       "aHash": "7b8c89535769f73832a43ba1d57a725e50a7c354d8e4d313ce8a2b566ead5e3d",
       "canonicalId": "P62G-MON-L-083",
       "sourceId": 701082,
@@ -16520,7 +16515,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Low-price buyers can resell into the high-price market.",
-      "image": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
       "aHash": "dca1681057e9ebd59a0dd3a4e1b2721cc9c15bb6aa600c042d74f2be50df8ffb",
       "canonicalId": "P62G-MON-L-084",
       "sourceId": 701083,
@@ -16568,7 +16562,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market MR equal to the common MC.",
-      "image": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
       "aHash": "b28f2313bcb69ee4984319ecf4b246d2fda21cbc30597b3416562b56c712b890",
       "canonicalId": "P62G-MON-L-085",
       "sourceId": 701084,
@@ -16616,7 +16609,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Read each price from its market demand after choosing quantities.",
-      "image": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
       "aHash": "d4ac9baaa00cca215b78258356de41f06289ae78ebb2f3429df61b02c49bd3dc",
       "canonicalId": "P62G-MON-L-086",
       "sourceId": 701085,
@@ -16664,7 +16656,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Low-price buyers can resell into the high-price market.",
-      "image": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
       "aHash": "dca1681057e9ebd59a0dd3a4e1b2721cc9c15bb6aa600c042d74f2be50df8ffb",
       "canonicalId": "P62G-MON-L-087",
       "sourceId": 701086,
@@ -16712,7 +16703,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Set each market MR equal to the common MC.",
-      "image": "question-assets/monopoly/mon_pd_125_2p5_95_1p25_25.webp",
       "aHash": "cdbe606a436b6742acd42be9e203b7533f75c5f59111fea55441e8a78a034616",
       "canonicalId": "P62G-MON-L-088",
       "sourceId": 701087,
@@ -16760,7 +16750,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Read each price from its market demand after choosing quantities.",
-      "image": "question-assets/monopoly/mon_pd_125_2p5_95_1p25_25.webp",
       "aHash": "e45b4cf3ac6697b2413bc46e9cd11a211acef1279975f41fdcef6e7dc3696485",
       "canonicalId": "P62G-MON-L-089",
       "sourceId": 701088,
@@ -16808,7 +16797,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Low-price buyers can resell into the high-price market.",
-      "image": "question-assets/monopoly/mon_pd_125_2p5_95_1p25_25.webp",
       "aHash": "dca1681057e9ebd59a0dd3a4e1b2721cc9c15bb6aa600c042d74f2be50df8ffb",
       "canonicalId": "P62G-MON-L-090",
       "sourceId": 701089,
@@ -16858,7 +16846,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue_monopoly",
       "commonError": "equates_mr_and_price",
       "feedback": "Linear MR shares the demand intercept and has twice the slope.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0_280_standard.webp",
       "aHash": "240105fea58a83fe7e4e4898dbb8f570f9a3f3b9dcb5efdb5e157fd85f13bed1",
       "canonicalId": "P62G-MON-B1-001",
       "sourceId": 704000,
@@ -16906,7 +16893,6 @@ const questionBanks = {
       "repairSkill": "profit_maximizing_output",
       "commonError": "uses_demand_equals_mc",
       "feedback": "Set MR equal to MC.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0_280_standard.webp",
       "aHash": "ff6d647b64d4b8c74e939144b409cde7dbeb4f275ba47d37c03a3ece82a3d694",
       "canonicalId": "P62G-MON-B1-002",
       "sourceId": 704001,
@@ -16954,7 +16940,6 @@ const questionBanks = {
       "repairSkill": "monopoly_price",
       "commonError": "reads_price_from_mr",
       "feedback": "Substitute the selected quantity into demand.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0_280_standard.webp",
       "aHash": "4d6d3db3419983aad8d83f39e2bb8ad6a3e7ae94b08ddcf66c788db1d4434ee0",
       "canonicalId": "P62G-MON-B1-003",
       "sourceId": 704002,
@@ -17002,7 +16987,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue_monopoly",
       "commonError": "equates_mr_and_price",
       "feedback": "Linear MR shares the demand intercept and has twice the slope.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_25_0p2_360_standard.webp",
       "aHash": "0138e7ab9b0d188e7db81f0777fd3c64a2be81febbb9232b887ea105a4120de1",
       "canonicalId": "P62G-MON-B1-004",
       "sourceId": 704003,
@@ -17050,7 +17034,6 @@ const questionBanks = {
       "repairSkill": "profit_maximizing_output",
       "commonError": "uses_demand_equals_mc",
       "feedback": "Set MR equal to MC.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_25_0p2_360_standard.webp",
       "aHash": "781a07975603876ef16106e79244e4b527448a610b413397e6110150b565ea40",
       "canonicalId": "P62G-MON-B1-005",
       "sourceId": 704004,
@@ -17098,7 +17081,6 @@ const questionBanks = {
       "repairSkill": "monopoly_price",
       "commonError": "reads_price_from_mr",
       "feedback": "Substitute the selected quantity into demand.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_25_0p2_360_standard.webp",
       "aHash": "3751b20218cb579986bc181e68a58007d9c65b34c1c0622cc78f259042fdc41f",
       "canonicalId": "P62G-MON-B1-006",
       "sourceId": 704005,
@@ -17146,7 +17128,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue_monopoly",
       "commonError": "equates_mr_and_price",
       "feedback": "Linear MR shares the demand intercept and has twice the slope.",
-      "image": "question-assets/monopoly/mon_single_90_1p5_18_0p3_260_standard.webp",
       "aHash": "33161064da40c088930be467e2c390e0ea4c031110ac07e2bced04fc18c5414c",
       "canonicalId": "P62G-MON-B1-007",
       "sourceId": 704006,
@@ -17194,7 +17175,6 @@ const questionBanks = {
       "repairSkill": "profit_maximizing_output",
       "commonError": "uses_demand_equals_mc",
       "feedback": "Set MR equal to MC.",
-      "image": "question-assets/monopoly/mon_single_90_1p5_18_0p3_260_standard.webp",
       "aHash": "f2f4436a5d060086a572dd387646050c1947ef98690b1243ad5f491078752e3d",
       "canonicalId": "P62G-MON-B1-008",
       "sourceId": 704007,
@@ -17242,7 +17222,6 @@ const questionBanks = {
       "repairSkill": "monopoly_price",
       "commonError": "reads_price_from_mr",
       "feedback": "Substitute the selected quantity into demand.",
-      "image": "question-assets/monopoly/mon_single_90_1p5_18_0p3_260_standard.webp",
       "aHash": "971ccc97ee8170a6e0347360ab9e6436cdb6f7f64b713babd9634deba195d723",
       "canonicalId": "P62G-MON-B1-009",
       "sourceId": 704008,
@@ -17290,7 +17269,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue_monopoly",
       "commonError": "equates_mr_and_price",
       "feedback": "Linear MR shares the demand intercept and has twice the slope.",
-      "image": "question-assets/monopoly/mon_single_110_2p2_22_0p25_340_standard.webp",
       "aHash": "d930a6fc466333ac72ae07fdba683aa38c8416c07c80456061166c09a192d347",
       "canonicalId": "P62G-MON-B1-010",
       "sourceId": 704009,
@@ -17338,7 +17316,6 @@ const questionBanks = {
       "repairSkill": "profit_maximizing_output",
       "commonError": "uses_demand_equals_mc",
       "feedback": "Set MR equal to MC.",
-      "image": "question-assets/monopoly/mon_single_110_2p2_22_0p25_340_standard.webp",
       "aHash": "7d3f27cd72481bc88c10cff9b34ac763ea8cccfecbcdb129b34d90a8082e1250",
       "canonicalId": "P62G-MON-B1-011",
       "sourceId": 704010,
@@ -17386,7 +17363,6 @@ const questionBanks = {
       "repairSkill": "monopoly_price",
       "commonError": "reads_price_from_mr",
       "feedback": "Substitute the selected quantity into demand.",
-      "image": "question-assets/monopoly/mon_single_110_2p2_22_0p25_340_standard.webp",
       "aHash": "c704ca7198eb5260967c86bc4262fddf226ce2c2635016cbd8f65619f4681a7c",
       "canonicalId": "P62G-MON-B1-012",
       "sourceId": 704011,
@@ -17434,7 +17410,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue_monopoly",
       "commonError": "equates_mr_and_price",
       "feedback": "Linear MR shares the demand intercept and has twice the slope.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_16_0p2_300_standard.webp",
       "aHash": "ff031389cba302e73b724b7863b8ea0c09aa5e1642569126b43aa291a0a7e3c8",
       "canonicalId": "P62G-MON-B1-013",
       "sourceId": 704012,
@@ -17482,7 +17457,6 @@ const questionBanks = {
       "repairSkill": "profit_maximizing_output",
       "commonError": "uses_demand_equals_mc",
       "feedback": "Set MR equal to MC.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_16_0p2_300_standard.webp",
       "aHash": "e062cfedc3dc2b7c7173e8119db03b0281d1849138011152bd0c5cda7608e0df",
       "canonicalId": "P62G-MON-B1-014",
       "sourceId": 704013,
@@ -17530,7 +17504,6 @@ const questionBanks = {
       "repairSkill": "monopoly_price",
       "commonError": "reads_price_from_mr",
       "feedback": "Substitute the selected quantity into demand.",
-      "image": "question-assets/monopoly/mon_single_96_1p6_16_0p2_300_standard.webp",
       "aHash": "ae5d51a3aebc454ea81afd2ccd6a734f9490ca3cdebbb5a2b0b99df85724d5b0",
       "canonicalId": "P62G-MON-B1-015",
       "sourceId": 704014,
@@ -17578,7 +17551,6 @@ const questionBanks = {
       "repairSkill": "marginal_revenue_monopoly",
       "commonError": "equates_mr_and_price",
       "feedback": "Linear MR shares the demand intercept and has twice the slope.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_21_0p3_320_standard.webp",
       "aHash": "7f7aa36e325e1aea2c324fd65699e6d4c2851117358a4b6f6bb768b731916631",
       "canonicalId": "P62G-MON-B1-016",
       "sourceId": 704015,
@@ -17626,7 +17598,6 @@ const questionBanks = {
       "repairSkill": "profit_maximizing_output",
       "commonError": "uses_demand_equals_mc",
       "feedback": "Set MR equal to MC.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_21_0p3_320_standard.webp",
       "aHash": "c924a2e159f61f174a738308500e2e929b13509b6e33939ed12b45a34449582e",
       "canonicalId": "P62G-MON-B1-017",
       "sourceId": 704016,
@@ -17674,7 +17645,6 @@ const questionBanks = {
       "repairSkill": "monopoly_price",
       "commonError": "reads_price_from_mr",
       "feedback": "Substitute the selected quantity into demand.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_21_0p3_320_standard.webp",
       "aHash": "29f58fdf9ed17d9691a122cc0472d674c07382eb93867f3a2e5bf2923204b5a6",
       "canonicalId": "P62G-MON-B1-018",
       "sourceId": 704017,
@@ -17724,7 +17694,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Choose MR=MC, read price from demand, and use ATC for profit.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_standard.webp",
       "aHash": "d011553140d3d9d6b0bfad0a4f20fd0e92bebcb1458a10f8fe59e76516e1cd15",
       "canonicalId": "P62G-MON-B2-019",
       "sourceId": 704100,
@@ -17772,7 +17741,6 @@ const questionBanks = {
       "repairSkill": "monopoly_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "The shutdown threshold is average variable cost.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_standard.webp",
       "aHash": "09294f5a6a474872312fdeed2b2314205e5a2e144bd7613157ed6b7f839257ea",
       "canonicalId": "P62G-MON-B2-020",
       "sourceId": 704101,
@@ -17820,7 +17788,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "A pure fixed-cost change does not alter MR, MC, or demand.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_standard.webp",
       "aHash": "366b045b49137544f65c04eacd2d9294e3797570b7d424ab7e2138e248b456de",
       "canonicalId": "P62G-MON-B2-021",
       "sourceId": 704102,
@@ -17868,7 +17835,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Choose MR=MC, read price from demand, and use ATC for profit.",
-      "image": "question-assets/monopoly/mon_single_110_2_22_0p25_900_standard.webp",
       "aHash": "e17971f676c7e98c29746d587cda442eb1d058e48966bb24ca4a3f5ed619fa3d",
       "canonicalId": "P62G-MON-B2-022",
       "sourceId": 704103,
@@ -17916,7 +17882,6 @@ const questionBanks = {
       "repairSkill": "monopoly_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "The shutdown threshold is average variable cost.",
-      "image": "question-assets/monopoly/mon_single_110_2_22_0p25_900_standard.webp",
       "aHash": "09294f5a6a474872312fdeed2b2314205e5a2e144bd7613157ed6b7f839257ea",
       "canonicalId": "P62G-MON-B2-023",
       "sourceId": 704104,
@@ -17964,7 +17929,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "A pure fixed-cost change does not alter MR, MC, or demand.",
-      "image": "question-assets/monopoly/mon_single_110_2_22_0p25_900_standard.webp",
       "aHash": "366b045b49137544f65c04eacd2d9294e3797570b7d424ab7e2138e248b456de",
       "canonicalId": "P62G-MON-B2-024",
       "sourceId": 704105,
@@ -18012,7 +17976,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Choose MR=MC, read price from demand, and use ATC for profit.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
       "aHash": "0cdd8976a047f2c0cf1b7697b8dcba80dafec7c13a8e62fea21eecdfdd7f8687",
       "canonicalId": "P62G-MON-B2-025",
       "sourceId": 704106,
@@ -18060,7 +18023,6 @@ const questionBanks = {
       "repairSkill": "monopoly_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "The shutdown threshold is average variable cost.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
       "aHash": "09294f5a6a474872312fdeed2b2314205e5a2e144bd7613157ed6b7f839257ea",
       "canonicalId": "P62G-MON-B2-026",
       "sourceId": 704107,
@@ -18108,7 +18070,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "A pure fixed-cost change does not alter MR, MC, or demand.",
-      "image": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
       "aHash": "366b045b49137544f65c04eacd2d9294e3797570b7d424ab7e2138e248b456de",
       "canonicalId": "P62G-MON-B2-027",
       "sourceId": 704108,
@@ -18156,7 +18117,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Choose MR=MC, read price from demand, and use ATC for profit.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
       "aHash": "efafcd80ac781315a84e141496ca7d2ea20c3afa274ed0ec67afe083fd9ad14c",
       "canonicalId": "P62G-MON-B2-028",
       "sourceId": 704109,
@@ -18204,7 +18164,6 @@ const questionBanks = {
       "repairSkill": "monopoly_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "The shutdown threshold is average variable cost.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
       "aHash": "09294f5a6a474872312fdeed2b2314205e5a2e144bd7613157ed6b7f839257ea",
       "canonicalId": "P62G-MON-B2-029",
       "sourceId": 704110,
@@ -18252,7 +18211,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "A pure fixed-cost change does not alter MR, MC, or demand.",
-      "image": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
       "aHash": "366b045b49137544f65c04eacd2d9294e3797570b7d424ab7e2138e248b456de",
       "canonicalId": "P62G-MON-B2-030",
       "sourceId": 704111,
@@ -18300,7 +18258,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If price covers AVC, the MR=MC output minimizes loss.",
-      "image": "question-assets/monopoly/mon_single_64_1p8_48_0p15_300_standard.webp",
       "aHash": "c4b717a24a58f53bc83cdeda492902559785236538f0ed5f87f1e2d407c5521b",
       "canonicalId": "P62G-MON-B2-031",
       "sourceId": 704112,
@@ -18348,7 +18305,6 @@ const questionBanks = {
       "repairSkill": "monopoly_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "The shutdown threshold is average variable cost.",
-      "image": "question-assets/monopoly/mon_single_64_1p8_48_0p15_300_standard.webp",
       "aHash": "09294f5a6a474872312fdeed2b2314205e5a2e144bd7613157ed6b7f839257ea",
       "canonicalId": "P62G-MON-B2-032",
       "sourceId": 704113,
@@ -18396,7 +18352,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "A pure fixed-cost change does not alter MR, MC, or demand.",
-      "image": "question-assets/monopoly/mon_single_64_1p8_48_0p15_300_standard.webp",
       "aHash": "366b045b49137544f65c04eacd2d9294e3797570b7d424ab7e2138e248b456de",
       "canonicalId": "P62G-MON-B2-033",
       "sourceId": 704114,
@@ -18444,7 +18399,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Choose MR=MC, read price from demand, and use ATC for profit.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
       "aHash": "41cd59929b4694a65ee6ef20f37c4686d65823978dee5eecf90c9d1888a1c696",
       "canonicalId": "P62G-MON-B2-034",
       "sourceId": 704115,
@@ -18492,7 +18446,6 @@ const questionBanks = {
       "repairSkill": "monopoly_shutdown",
       "commonError": "uses_atc_shutdown_rule",
       "feedback": "The shutdown threshold is average variable cost.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
       "aHash": "09294f5a6a474872312fdeed2b2314205e5a2e144bd7613157ed6b7f839257ea",
       "canonicalId": "P62G-MON-B2-035",
       "sourceId": 704116,
@@ -18540,7 +18493,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "A pure fixed-cost change does not alter MR, MC, or demand.",
-      "image": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
       "aHash": "366b045b49137544f65c04eacd2d9294e3797570b7d424ab7e2138e248b456de",
       "canonicalId": "P62G-MON-B2-036",
       "sourceId": 704117,
@@ -18590,7 +18542,6 @@ const questionBanks = {
       "repairSkill": "competitive_monopoly_comparison",
       "commonError": "reverses_price_quantity_comparison",
       "feedback": "The competitive benchmark produces until marginal benefit equals marginal cost.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
       "aHash": "76a2fb92620230e0bc642520b19cd9103d2341bdaa9d2e2ef16405b3b4b63a55",
       "canonicalId": "P62G-MON-B3-037",
       "sourceId": 704200,
@@ -18638,7 +18589,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "Use the area of the lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
       "aHash": "f3a56256578a22dc0afd512d6834de624429cc7488a44d3bc90e1985150440e3",
       "canonicalId": "P62G-MON-B3-038",
       "sourceId": 704201,
@@ -18686,7 +18636,6 @@ const questionBanks = {
       "repairSkill": "consumer_surplus_monopoly",
       "commonError": "misidentifies_consumer_surplus",
       "feedback": "The price increase transfers surplus on units sold; output restriction destroys surplus.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
       "aHash": "5003d10c5c2aee2aa15fff30e3517af4e48583304a369cd7a22438d1b78d3eef",
       "canonicalId": "P62G-MON-B3-039",
       "sourceId": 704202,
@@ -18734,7 +18683,6 @@ const questionBanks = {
       "repairSkill": "competitive_monopoly_comparison",
       "commonError": "reverses_price_quantity_comparison",
       "feedback": "The competitive benchmark produces until marginal benefit equals marginal cost.",
-      "image": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
       "aHash": "76a2fb92620230e0bc642520b19cd9103d2341bdaa9d2e2ef16405b3b4b63a55",
       "canonicalId": "P62G-MON-B3-040",
       "sourceId": 704203,
@@ -18782,7 +18730,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "Use the area of the lost-trade triangle.",
-      "image": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
       "aHash": "5e5e64191a8c8bebba18eeccaef4e0b335b60c472b8a89eb4444ae0c44a65fc0",
       "canonicalId": "P62G-MON-B3-041",
       "sourceId": 704204,
@@ -18830,7 +18777,6 @@ const questionBanks = {
       "repairSkill": "consumer_surplus_monopoly",
       "commonError": "misidentifies_consumer_surplus",
       "feedback": "The price increase transfers surplus on units sold; output restriction destroys surplus.",
-      "image": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
       "aHash": "5003d10c5c2aee2aa15fff30e3517af4e48583304a369cd7a22438d1b78d3eef",
       "canonicalId": "P62G-MON-B3-042",
       "sourceId": 704205,
@@ -18878,7 +18824,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "64888f3e7730e99b3898b08d6dd3ff8895f369880955c649c4093c0574ec07a9",
       "canonicalId": "P62G-MON-B3-043",
       "sourceId": 704206,
@@ -18926,7 +18871,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "P=MC does not cover the natural monopoly’s fixed cost.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "17bd23a86f9c64fe8f3187452da533953fdb0ec0c814da0211c9411d69c119e7",
       "canonicalId": "P62G-MON-B3-044",
       "sourceId": 704207,
@@ -18974,7 +18918,6 @@ const questionBanks = {
       "repairSkill": "average_cost_regulation",
       "commonError": "claims_allocative_efficiency",
       "feedback": "P=ATC balances solvency against allocative efficiency.",
-      "image": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
       "aHash": "afe06d12e89081d30e7d1d4291f142e4028a26117405993c6393c0d10323c1d8",
       "canonicalId": "P62G-MON-B3-045",
       "sourceId": 704208,
@@ -19022,7 +18965,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "Set demand equal to MC.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "cc08d5c57e8b915e3af7f3acd398def523214a68c93fdf84f96b8aac517285e2",
       "canonicalId": "P62G-MON-B3-046",
       "sourceId": 704209,
@@ -19070,7 +19012,6 @@ const questionBanks = {
       "repairSkill": "marginal_cost_regulation",
       "commonError": "assumes_break_even",
       "feedback": "P=MC does not cover the natural monopoly’s fixed cost.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "17bd23a86f9c64fe8f3187452da533953fdb0ec0c814da0211c9411d69c119e7",
       "canonicalId": "P62G-MON-B3-047",
       "sourceId": 704210,
@@ -19118,7 +19059,6 @@ const questionBanks = {
       "repairSkill": "average_cost_regulation",
       "commonError": "claims_allocative_efficiency",
       "feedback": "P=ATC balances solvency against allocative efficiency.",
-      "image": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
       "aHash": "afe06d12e89081d30e7d1d4291f142e4028a26117405993c6393c0d10323c1d8",
       "canonicalId": "P62G-MON-B3-048",
       "sourceId": 704211,
@@ -19166,7 +19106,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "The last unit in each market must contribute the same marginal revenue equal to MC.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "411baa54edff5807a2f8b6ca867722fdefc801c4b6b6ae057562bce7aa7ec771",
       "canonicalId": "P62G-MON-B3-049",
       "sourceId": 704212,
@@ -19214,7 +19153,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Different elasticities support different markups over the same MC.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "a08bc9d28f83b91c2aab1a27d85f7b821b397cbf11d66dfbffd4dac912e89670",
       "canonicalId": "P62G-MON-B3-050",
       "sourceId": 704213,
@@ -19262,7 +19200,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Arbitrage would collapse the segmented prices.",
-      "image": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
       "aHash": "f820a76362536de6c1fe99ff0db10afbab278ea12af2a9f561186c2a371ce680",
       "canonicalId": "P62G-MON-B3-051",
       "sourceId": 704214,
@@ -19310,7 +19247,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "The last unit in each market must contribute the same marginal revenue equal to MC.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "411baa54edff5807a2f8b6ca867722fdefc801c4b6b6ae057562bce7aa7ec771",
       "canonicalId": "P62G-MON-B3-052",
       "sourceId": 704215,
@@ -19358,7 +19294,6 @@ const questionBanks = {
       "repairSkill": "third_degree_price_discrimination",
       "commonError": "charges_more_to_more_elastic_group",
       "feedback": "Different elasticities support different markups over the same MC.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "a08bc9d28f83b91c2aab1a27d85f7b821b397cbf11d66dfbffd4dac912e89670",
       "canonicalId": "P62G-MON-B3-053",
       "sourceId": 704216,
@@ -19406,7 +19341,6 @@ const questionBanks = {
       "repairSkill": "resale_prevention",
       "commonError": "ignores_arbitrage",
       "feedback": "Arbitrage would collapse the segmented prices.",
-      "image": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
       "aHash": "f820a76362536de6c1fe99ff0db10afbab278ea12af2a9f561186c2a371ce680",
       "canonicalId": "P62G-MON-B3-054",
       "sourceId": 704217,
@@ -19456,7 +19390,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_104_2_20_0p2_320_standard.webp",
       "aHash": "2954725bb34aaf22954aaebe4d17dd24518ea28ce01eb0bca7cd8c120f31bccd",
       "canonicalId": "P62G-MON-LB-001",
       "sourceId": 705000,
@@ -19504,7 +19437,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_104_2_20_0p2_320_standard.webp",
       "aHash": "af340acb4e94565523673aa42b900cbdf58eb9857e0d5f7ec4fa44b375dc0016",
       "canonicalId": "P62G-MON-LB-002",
       "sourceId": 705001,
@@ -19552,7 +19484,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_104_2_20_0p2_320_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-003",
       "sourceId": 705002,
@@ -19600,7 +19531,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_118_2p5_22_0p25_420_standard.webp",
       "aHash": "e763aa4bcd51a5ee1aef3b3064b1ee32c69456ae14c96ae77d22cf48f422e6a0",
       "canonicalId": "P62G-MON-LB-004",
       "sourceId": 705003,
@@ -19648,7 +19578,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_118_2p5_22_0p25_420_standard.webp",
       "aHash": "9da56bcd3b9eb422670dfff87b706416606dc5aed3fb8ad9eb098dff0e069248",
       "canonicalId": "P62G-MON-LB-005",
       "sourceId": 705004,
@@ -19696,7 +19625,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_118_2p5_22_0p25_420_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-006",
       "sourceId": 705005,
@@ -19744,7 +19672,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_98_1p75_18_0p3_360_standard.webp",
       "aHash": "2ef2f08047d25e10ece51fb66071b325a4bf2f574f028bd7d2056f3ea4bf6e0e",
       "canonicalId": "P62G-MON-LB-007",
       "sourceId": 705006,
@@ -19792,7 +19719,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_98_1p75_18_0p3_360_standard.webp",
       "aHash": "711cee21a084058bd92226581c2f5d2c4872a714bf0d489efd623620cd2cfe81",
       "canonicalId": "P62G-MON-LB-008",
       "sourceId": 705007,
@@ -19840,7 +19766,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_98_1p75_18_0p3_360_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-009",
       "sourceId": 705008,
@@ -19888,7 +19813,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_112_2p25_24_0p2_500_standard.webp",
       "aHash": "65672878599b8f1ef67ca45ee051153526359f6a7ae4e5b22215a2ee05d50f67",
       "canonicalId": "P62G-MON-LB-010",
       "sourceId": 705009,
@@ -19936,7 +19860,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_112_2p25_24_0p2_500_standard.webp",
       "aHash": "4a8cd70cf327f5aa9d68a73a1ebe57a57d9d17c2844c4076523b86b53cc8ecff",
       "canonicalId": "P62G-MON-LB-011",
       "sourceId": 705010,
@@ -19984,7 +19907,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_112_2p25_24_0p2_500_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-012",
       "sourceId": 705011,
@@ -20032,7 +19954,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p25_900_standard.webp",
       "aHash": "069e5f53f5d1d536a95eea7d5f03622f3c20328a357b93ba4220d792a3fa64a9",
       "canonicalId": "P62G-MON-LB-013",
       "sourceId": 705012,
@@ -20080,7 +20001,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p25_900_standard.webp",
       "aHash": "1aef947962c9c07c85edc6e94af64fac25c1d626579e5f459b4b7484232c6df0",
       "canonicalId": "P62G-MON-LB-014",
       "sourceId": 705013,
@@ -20128,7 +20048,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_100_2_20_0p25_900_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-015",
       "sourceId": 705014,
@@ -20176,7 +20095,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_94_1p6_18_0p35_820_standard.webp",
       "aHash": "4fac3bb886aeba2d963f7edfeb7483ddd471672962b2833db39e1a5d5de7d9cf",
       "canonicalId": "P62G-MON-LB-016",
       "sourceId": 705015,
@@ -20224,7 +20142,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_94_1p6_18_0p35_820_standard.webp",
       "aHash": "91fcc5334779ff0bb6eb9b87a85ead95f6c36aef65d6156ea16202f5631efe52",
       "canonicalId": "P62G-MON-LB-017",
       "sourceId": 705016,
@@ -20272,7 +20189,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_94_1p6_18_0p35_820_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-018",
       "sourceId": 705017,
@@ -20320,7 +20236,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
       "aHash": "ab9df272aa4b06fbe9a8600084a261b3d9ea41cbf8dd23399e4aae5a9c3d7b24",
       "canonicalId": "P62G-MON-LB-019",
       "sourceId": 705018,
@@ -20368,7 +20283,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
       "aHash": "84c7f66ab84d3be40614c684c6d5b1a5a12aa9601409a21d0e42cf9f9be83c44",
       "canonicalId": "P62G-MON-LB-020",
       "sourceId": 705019,
@@ -20416,7 +20330,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-021",
       "sourceId": 705020,
@@ -20464,7 +20377,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_68_1p8_50_0p18_360_standard.webp",
       "aHash": "46f73ab588503a011cbeb250d6dded5c75f842892e0ed2e136b84cd11ab86a30",
       "canonicalId": "P62G-MON-LB-022",
       "sourceId": 705021,
@@ -20512,7 +20424,6 @@ const questionBanks = {
       "repairSkill": "monopoly_loss",
       "commonError": "assumes_monopoly_cannot_lose",
       "feedback": "If P covers AVC, MR=MC minimizes the loss.",
-      "image": "question-assets/monopoly/mon_single_68_1p8_50_0p18_360_standard.webp",
       "aHash": "cccdd52c65398ffc9c97ede6af492b63edebd848690e7f76c6c58ab7ad2fe57b",
       "canonicalId": "P62G-MON-LB-023",
       "sourceId": 705022,
@@ -20560,7 +20471,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_68_1p8_50_0p18_360_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-024",
       "sourceId": 705023,
@@ -20608,7 +20518,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_108_2_18_0p3_300_welfare.webp",
       "aHash": "79fa90cf0a575d5f9752934cce3ee3f68719a696076afc95a235f9f19ec84151",
       "canonicalId": "P62G-MON-LB-025",
       "sourceId": 705024,
@@ -20656,7 +20565,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_108_2_18_0p3_300_welfare.webp",
       "aHash": "0137b323b2964db295c2d5ada093ce7f7479cbd8fe9e26c2cf8eaac5529ff2d4",
       "canonicalId": "P62G-MON-LB-026",
       "sourceId": 705025,
@@ -20704,7 +20612,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_108_2_18_0p3_300_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-027",
       "sourceId": 705026,
@@ -20752,7 +20659,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_122_2p5_24_0p2_450_welfare.webp",
       "aHash": "8a618e341731550870c448bab635e288a4413d0f75c446cebc05bacb7d19a595",
       "canonicalId": "P62G-MON-LB-028",
       "sourceId": 705027,
@@ -20800,7 +20706,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_122_2p5_24_0p2_450_welfare.webp",
       "aHash": "9d8941209aceb6610c66c3d5fdd637412f0293440ad2e012c209daa97fe20c88",
       "canonicalId": "P62G-MON-LB-029",
       "sourceId": 705028,
@@ -20848,7 +20753,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_122_2p5_24_0p2_450_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-030",
       "sourceId": 705029,
@@ -20896,7 +20800,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_102_1p8_20_0p25_380_welfare.webp",
       "aHash": "d0ddcd87d1beac22c926cee5bbb5a474987bd7f23ca53449562030383d693742",
       "canonicalId": "P62G-MON-LB-031",
       "sourceId": 705030,
@@ -20944,7 +20847,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_102_1p8_20_0p25_380_welfare.webp",
       "aHash": "bd5c7a7dabb343409544dd1b6ffc328cd5be20842bf3f54f8a3e8f3bfd3b3622",
       "canonicalId": "P62G-MON-LB-032",
       "sourceId": 705031,
@@ -20992,7 +20894,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_102_1p8_20_0p25_380_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-033",
       "sourceId": 705032,
@@ -21040,7 +20941,6 @@ const questionBanks = {
       "repairSkill": "integrated_monopoly_analysis",
       "commonError": "fails_to_sequence_quantity_price_profit_welfare",
       "feedback": "First set MR=MC, then use demand to determine price.",
-      "image": "question-assets/monopoly/mon_single_114_2p2_22_0p3_420_welfare.webp",
       "aHash": "b4590959a14010f171762c99aa64a0366d39537f3e724d1de899a3987ba4f798",
       "canonicalId": "P62G-MON-LB-034",
       "sourceId": 705033,
@@ -21088,7 +20988,6 @@ const questionBanks = {
       "repairSkill": "monopoly_profit",
       "commonError": "uses_price_minus_mc",
       "feedback": "Use ATC rather than MC for the profit rectangle.",
-      "image": "question-assets/monopoly/mon_single_114_2p2_22_0p3_420_welfare.webp",
       "aHash": "e312926e0ef02b5bca5ed235e7ea68ab3a991571731a998d826bccbcf25ea091",
       "canonicalId": "P62G-MON-LB-035",
       "sourceId": 705034,
@@ -21136,7 +21035,6 @@ const questionBanks = {
       "repairSkill": "monopoly_deadweight_loss",
       "commonError": "equates_dwl_and_profit",
       "feedback": "The monopoly restriction leaves positive-surplus units unproduced.",
-      "image": "question-assets/monopoly/mon_single_114_2p2_22_0p3_420_welfare.webp",
       "aHash": "b2a5e8f0785efe1b2bd6651e0a769b314b34e9b640d7011a85f6613f2f1f8b3a",
       "canonicalId": "P62G-MON-LB-036",
       "sourceId": 705035,
@@ -21331,11 +21229,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:monopoly-mastery-quest:ae1d60cb9ac4",
-  "compositionFingerprint": "ae1d60cb9ac4a84b5cfb148f42e0fa878830cc3ff149ec4c5b967fe94c880ced",
-  "libraryVersion": "phase6.2g-monopoly-rich-bank-v1",
-  "librarySha256": "9d5ba2170d71ddf3a12f17c2aa5977bdb60fc9e9f5e2653e0115b9a54212da3c",
-  "templateSha256": "636d176c789945ed2d760318424b76082c4fcacf7ca87da699992cb2e79323f3"
+  "saveKeyNamespace": "mq-econ:monopoly-mastery-quest:feb3b6e7cc39",
+  "compositionFingerprint": "feb3b6e7cc39a95966765874b8f68983e7488ef4b76be984951a155583d0afdb",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "templateSha256": "14c8188d9e4393da0a4f180abb1ed9dd36850b7e2e0327515a56459530c1085d"
 };
 const repairQuestions = [
   {
@@ -26099,10 +25997,10 @@ function resolveQuestionImage(path){
 }
 
 function loadQuestion() {
-    if(runEnding) return;
+    if(isTimedModeTerminal()) return;
     answerSubmissionPending = false;
 
-    if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+    if(isTimedModeExpired()){
         endTimedModeRun();
         return;
     }
@@ -26390,7 +26288,15 @@ if(currentQuestion.image){
 // This is the bridge between UI and engine.
 // =============================================     
 function displayQuestion() {
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
     answerSubmissionPending = false;
+    questionStartTime = Date.now();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -26476,7 +26382,15 @@ function checkRapidGuessing(isCorrect, responseTime){
      
 async function answer(choice) {
     const answerSessionId = runSessionId;
-    if(answerSubmissionPending || rapidGuessLocked || runEnding) return;
+
+    if(isTimedModeTerminal()) return;
+
+    if(isTimedModeExpired()){
+        endTimedModeRun();
+        return;
+    }
+
+    if(answerSubmissionPending || rapidGuessLocked) return;
 
     answerSubmissionPending = true;
     setAnswerButtonsDisabled(true);
@@ -26486,9 +26400,14 @@ async function answer(choice) {
 
     try {
         isCorrect = await isQuestionAnswerCorrect(currentQuestion, choice);
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
+
+        if(isTimedModeExpired()){
+            endTimedModeRun();
+            return;
+        }
     } catch(error) {
-        if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+        if(!isRunSessionCurrent(answerSessionId) || isTimedModeTerminal()) return;
         console.error("Answer verification failed:", error);
         answerSubmissionPending = false;
         setAnswerButtonsDisabled(false);
@@ -26809,7 +26728,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
    saveGameState();
         if(modeAllowsRealmProgress()) localStorage.setItem(ROOM_KEY, String(room));
 
-   if(gameMode === "timed" && timedModeEndTime && Date.now() >= timedModeEndTime){
+   if(isTimedModeExpired()){
        endTimedModeRun();
        return;
    }
