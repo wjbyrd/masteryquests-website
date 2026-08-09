@@ -1,0 +1,443 @@
+{
+  "phase": "6.2g-MONOPOLY-GRAPH-V2",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2",
+  "librarySha256": "143ee3138702f79550349b5012cd8c0f45b4d64e68366026ba8d40af0e8cd324",
+  "newQuestionCount": 60,
+  "graphCounts": {
+    "01": 16,
+    "02": 16,
+    "03": 14,
+    "04": 14
+  },
+  "graphIssues": [],
+  "duplicateIds": [],
+  "ok": true,
+  "results": [
+    {
+      "name": "monopoly-only",
+      "ok": true,
+      "selectedConceptIds": [
+        "monopoly"
+      ],
+      "errors": [],
+      "warnings": [],
+      "counts": {
+        "easy": 42,
+        "medium": 44,
+        "hard": 74,
+        "elite": 40,
+        "legendary": 96,
+        "easyBoss": 19,
+        "mediumBoss": 19,
+        "finalBoss": 20,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "repairSeed": 0,
+        "bridge": 20,
+        "calculation": 30,
+        "integration": 0,
+        "graph": 72,
+        "assets": 98,
+        "totalCanonical": 430
+      },
+      "countIssues": [],
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "timed",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "legendary",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "score",
+          "ok": true,
+          "deficiencies": []
+        }
+      ],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 430,
+        "issues": []
+      },
+      "assetAudit": {
+        "assetCount": 98,
+        "issues": []
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "monopoly"
+          ],
+          "activeConceptIds": [
+            "monopoly"
+          ],
+          "questionCount": 19
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "monopoly"
+          ],
+          "activeConceptIds": [
+            "monopoly"
+          ],
+          "questionCount": 19
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "monopoly"
+          ],
+          "activeConceptIds": [
+            "monopoly"
+          ],
+          "questionCount": 20
+        }
+      }
+    },
+    {
+      "name": "firms-and-market-structure",
+      "ok": true,
+      "selectedConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "monopolistic-competition",
+        "oligopoly"
+      ],
+      "errors": [],
+      "warnings": [],
+      "counts": {
+        "easy": 192,
+        "medium": 198,
+        "hard": 348,
+        "elite": 186,
+        "legendary": 474,
+        "easyBoss": 95,
+        "mediumBoss": 95,
+        "finalBoss": 98,
+        "legendaryBoss": 180,
+        "repair": 100,
+        "repairSeed": 0,
+        "bridge": 100,
+        "calculation": 150,
+        "integration": 0,
+        "graph": 428,
+        "assets": 281,
+        "totalCanonical": 2066
+      },
+      "countIssues": [],
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "timed",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "legendary",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "score",
+          "ok": true,
+          "deficiencies": []
+        }
+      ],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 2066,
+        "issues": []
+      },
+      "assetAudit": {
+        "assetCount": 281,
+        "issues": []
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 95
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 95
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 98
+        }
+      }
+    },
+    {
+      "name": "principles-micro-core",
+      "ok": true,
+      "selectedConceptIds": [
+        "competitive-markets",
+        "demand",
+        "supply",
+        "market-equilibrium",
+        "price-signals",
+        "elasticity",
+        "consumer-and-producer-surplus",
+        "international-trade-and-trade-policy",
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "monopolistic-competition",
+        "oligopoly"
+      ],
+      "errors": [],
+      "warnings": [],
+      "counts": {
+        "easy": 310,
+        "medium": 322,
+        "hard": 564,
+        "elite": 292,
+        "legendary": 777,
+        "easyBoss": 161,
+        "mediumBoss": 167,
+        "finalBoss": 164,
+        "legendaryBoss": 297,
+        "repair": 175,
+        "repairSeed": 2,
+        "bridge": 176,
+        "calculation": 244,
+        "integration": 0,
+        "graph": 559,
+        "assets": 354,
+        "totalCanonical": 3407
+      },
+      "countIssues": [],
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "timed",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "legendary",
+          "ok": true,
+          "deficiencies": []
+        },
+        {
+          "mode": "score",
+          "ok": true,
+          "deficiencies": []
+        }
+      ],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 3407,
+        "issues": []
+      },
+      "assetAudit": {
+        "assetCount": 354,
+        "issues": []
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 161
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 167
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 164
+        }
+      }
+    }
+  ]
+}

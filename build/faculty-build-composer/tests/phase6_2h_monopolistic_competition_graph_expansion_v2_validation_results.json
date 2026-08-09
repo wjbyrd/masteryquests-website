@@ -1,0 +1,882 @@
+{
+  "phase": "6.2h-MONOPOLISTIC-COMPETITION-GRAPH-V2",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2",
+  "librarySha256": "ebefeae907fbd5a972db9c3ef064812cacd3cd755ccbe7bb430a20689535ca7e",
+  "newQuestionCount": 42,
+  "graphCounts": {
+    "01": 14,
+    "02": 12,
+    "03": 16
+  },
+  "graphIssues": [],
+  "duplicateIds": [],
+  "ok": true,
+  "results": [
+    {
+      "name": "monopolistic-competition-only",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "counts": {
+        "easy": 39,
+        "medium": 39,
+        "hard": 69,
+        "elite": 37,
+        "legendary": 95,
+        "easyBoss": 19,
+        "mediumBoss": 19,
+        "finalBoss": 19,
+        "legendaryBoss": 36,
+        "repair": 20,
+        "repairSeed": 0,
+        "bridge": 20,
+        "calculation": 30,
+        "integration": 0,
+        "graph": 55,
+        "assets": 38,
+        "totalCanonical": 412
+      },
+      "countIssues": [],
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 69
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 19
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 19
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 19
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 20
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 20
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 69
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 20
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 20
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 69
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 20
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 20
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 95
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 36
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 39
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 69
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 19
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 19
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 19
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 20
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 20
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 412,
+        "issues": []
+      },
+      "assetAudit": {
+        "assetCount": 38,
+        "issues": []
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "monopolistic-competition"
+          ],
+          "activeConceptIds": [
+            "monopolistic-competition"
+          ],
+          "questionCount": 19
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "monopolistic-competition"
+          ],
+          "activeConceptIds": [
+            "monopolistic-competition"
+          ],
+          "questionCount": 19
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "monopolistic-competition"
+          ],
+          "activeConceptIds": [
+            "monopolistic-competition"
+          ],
+          "questionCount": 19
+        }
+      }
+    },
+    {
+      "name": "firms-and-market-structure",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "counts": {
+        "easy": 201,
+        "medium": 207,
+        "hard": 357,
+        "elite": 193,
+        "legendary": 479,
+        "easyBoss": 96,
+        "mediumBoss": 96,
+        "finalBoss": 99,
+        "legendaryBoss": 180,
+        "repair": 100,
+        "repairSeed": 0,
+        "bridge": 100,
+        "calculation": 150,
+        "integration": 0,
+        "graph": 470,
+        "assets": 284,
+        "totalCanonical": 2108
+      },
+      "countIssues": [],
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 201
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 207
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 357
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 96
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 96
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 99
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 100
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 100
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 201
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 207
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 357
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 100
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 100
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 201
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 207
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 357
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 100
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 100
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 479
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 180
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 201
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 207
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 357
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 96
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 96
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 99
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 100
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 100
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 2108,
+        "issues": []
+      },
+      "assetAudit": {
+        "assetCount": 284,
+        "issues": []
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 96
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 96
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 99
+        }
+      }
+    },
+    {
+      "name": "principles-micro-core",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "counts": {
+        "easy": 319,
+        "medium": 331,
+        "hard": 573,
+        "elite": 299,
+        "legendary": 782,
+        "easyBoss": 162,
+        "mediumBoss": 168,
+        "finalBoss": 165,
+        "legendaryBoss": 297,
+        "repair": 175,
+        "repairSeed": 2,
+        "bridge": 176,
+        "calculation": 244,
+        "integration": 0,
+        "graph": 601,
+        "assets": 357,
+        "totalCanonical": 3449
+      },
+      "countIssues": [],
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 319
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 331
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 573
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 162
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 168
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 165
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 175
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 176
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 319
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 331
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 573
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 175
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 176
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 319
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 331
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 573
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 175
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 176
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 782
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 297
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 319
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 331
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 573
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 162
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 168
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 165
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 175
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 176
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 3449,
+        "issues": []
+      },
+      "assetAudit": {
+        "assetCount": 357,
+        "issues": []
+      },
+      "bossCoverage": {
+        "checkpointOne": {
+          "label": "Checkpoint One",
+          "pool": "easyBoss",
+          "difficulty": "easy",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 162
+        },
+        "checkpointTwo": {
+          "label": "Checkpoint Two",
+          "pool": "mediumBoss",
+          "difficulty": "medium",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "competitive-markets",
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 168
+        },
+        "finalCheckpoint": {
+          "label": "Final Checkpoint",
+          "pool": "finalBoss",
+          "difficulty": "hard",
+          "automatic": true,
+          "eligibleConceptIds": [
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "activeConceptIds": [
+            "demand",
+            "supply",
+            "market-equilibrium",
+            "price-signals",
+            "elasticity",
+            "consumer-and-producer-surplus",
+            "international-trade-and-trade-policy",
+            "costs-of-production",
+            "perfect-competition",
+            "monopoly",
+            "monopolistic-competition",
+            "oligopoly"
+          ],
+          "questionCount": 165
+        }
+      }
+    }
+  ]
+}

@@ -4275,8 +4275,8 @@
       "concept": "oligopoly",
       "id": "P62I-OLI-M-006",
       "change": "stem_rewrite",
-      "from": "In a payoff matrix, Row’s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?",
-      "to": "Row’s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?"
+      "from": "In a payoff matrix, Row\u2019s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?",
+      "to": "Row\u2019s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?"
     },
     {
       "concept": "oligopoly",
@@ -4376,5 +4376,16 @@
       "from": "question-assets/oligopoly/matrix_coord_1.webp",
       "to": null
     }
-  ]
+  ],
+  "postAuditExpansion": {
+    "phase": "6.2e-COP-GRAPH-V2",
+    "costsOfProductionGraphCoverage": 100,
+    "costsTextOnlyConversions": [
+      "P62E-COP-L-050",
+      "P62E-COP-L-051"
+    ],
+    "newCostsGraphQuestions": 72,
+    "currentPhase6GraphAttachments": 392,
+    "note": "The original audit result remains historical. Costs was subsequently rebuilt with six canonical graphs and 72 graph-dependent questions."
+  }
 }

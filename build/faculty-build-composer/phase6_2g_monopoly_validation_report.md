@@ -1,3 +1,5 @@
+> **Historical baseline:** This Phase 6.2g report predates the 2026-08-08 graph audit and Monopoly Graph Expansion V2. For current graph counts and validation, use `PHASE6_2G_MONOPOLY_GRAPH_EXPANSION_V2_REPORT.md`.
+
 # Phase 6.2g Monopoly — Final Validation Report
 
 ## Final verdict

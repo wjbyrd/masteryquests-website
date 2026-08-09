@@ -1,27 +1,27 @@
 {
   "ok": true,
   "conceptId": "monopoly",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2",
   "errors": [],
   "warnings": [],
   "counts": {
-    "easy": 30,
-    "medium": 30,
-    "hard": 60,
-    "elite": 30,
-    "legendary": 90,
-    "easyBoss": 18,
-    "mediumBoss": 18,
-    "finalBoss": 18,
+    "easy": 42,
+    "medium": 44,
+    "hard": 74,
+    "elite": 40,
+    "legendary": 96,
+    "easyBoss": 19,
+    "mediumBoss": 19,
+    "finalBoss": 20,
     "legendaryBoss": 36,
     "repair": 20,
     "repairSeed": 0,
     "bridge": 20,
     "calculation": 30,
     "integration": 0,
-    "graph": 12,
-    "assets": 94,
-    "totalCanonical": 370
+    "graph": 72,
+    "assets": 98,
+    "totalCanonical": 430
   },
   "countIssues": [],
   "modes": [
@@ -32,32 +32,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 74
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "repair",
@@ -80,17 +80,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 74
         },
         {
           "pool": "repair",
@@ -113,17 +113,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 74
         },
         {
           "pool": "repair",
@@ -146,7 +146,7 @@
         {
           "pool": "legendary",
           "minimum": 6,
-          "count": 90
+          "count": 96
         },
         {
           "pool": "legendaryBoss",
@@ -164,32 +164,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 74
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "repair",
@@ -208,16 +208,16 @@
   ],
   "answerAudit": {
     "ok": true,
-    "questionCount": 370,
+    "questionCount": 430,
     "issues": []
   },
   "assetAudit": {
-    "assetCount": 94,
+    "assetCount": 98,
     "issues": []
   },
   "sampleHtml": {
     "path": "tests/monopoly-sample.html",
-    "bytes": 5848443
+    "bytes": 6298017
   },
   "bossCoverage": {
     "checkpointOne": {
@@ -231,7 +231,7 @@
       "activeConceptIds": [
         "monopoly"
       ],
-      "questionCount": 18
+      "questionCount": 19
     },
     "checkpointTwo": {
       "label": "Checkpoint Two",
@@ -244,7 +244,7 @@
       "activeConceptIds": [
         "monopoly"
       ],
-      "questionCount": 18
+      "questionCount": 19
     },
     "finalCheckpoint": {
       "label": "Final Checkpoint",
@@ -257,7 +257,7 @@
       "activeConceptIds": [
         "monopoly"
       ],
-      "questionCount": 18
+      "questionCount": 20
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "assetCount": 376,
+  "assetCount": 392,
   "assets": [
     {
       "conceptId": "aggregate-demand",
@@ -153,6 +153,60 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
       "sha256": "f11c62fa8fb3272bd37b3c38a6ff1c55d59dcf22e8ee001699e14ca8fd5488d7",
       "sizeBytes": 29222
+    },
+    {
+      "conceptId": "costs-of-production",
+      "filename": "COST-01.webp",
+      "sourceAssetPath": "question-assets/costs-of-production/COST-01.webp",
+      "sourceUrl": "data/question-assets/costs-of-production/COST-01.webp",
+      "runtimePath": "question-assets/costs-of-production/COST-01.webp",
+      "sha256": "3499b5884f74694a68a0727a3ec986587ee6851c76aa40c66ef4279d9468ac2f",
+      "sizeBytes": 64256
+    },
+    {
+      "conceptId": "costs-of-production",
+      "filename": "COST-02.webp",
+      "sourceAssetPath": "question-assets/costs-of-production/COST-02.webp",
+      "sourceUrl": "data/question-assets/costs-of-production/COST-02.webp",
+      "runtimePath": "question-assets/costs-of-production/COST-02.webp",
+      "sha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
+      "sizeBytes": 58356
+    },
+    {
+      "conceptId": "costs-of-production",
+      "filename": "COST-03.webp",
+      "sourceAssetPath": "question-assets/costs-of-production/COST-03.webp",
+      "sourceUrl": "data/question-assets/costs-of-production/COST-03.webp",
+      "runtimePath": "question-assets/costs-of-production/COST-03.webp",
+      "sha256": "2e60f97d02447bd27b6e64eb90f52e269ea37b9220efea4fd2a3e1581eebf7ed",
+      "sizeBytes": 82666
+    },
+    {
+      "conceptId": "costs-of-production",
+      "filename": "COST-04.webp",
+      "sourceAssetPath": "question-assets/costs-of-production/COST-04.webp",
+      "sourceUrl": "data/question-assets/costs-of-production/COST-04.webp",
+      "runtimePath": "question-assets/costs-of-production/COST-04.webp",
+      "sha256": "5c1c7cdcedff4de3fbd0ad94437b5c14f40a8f8e060119a5fdc9e0a3cf0b68db",
+      "sizeBytes": 40316
+    },
+    {
+      "conceptId": "costs-of-production",
+      "filename": "COST-05.webp",
+      "sourceAssetPath": "question-assets/costs-of-production/COST-05.webp",
+      "sourceUrl": "data/question-assets/costs-of-production/COST-05.webp",
+      "runtimePath": "question-assets/costs-of-production/COST-05.webp",
+      "sha256": "c2a0328cf683df2a9442d435d46456d5248552c5addd111564e81ca98e614faa",
+      "sizeBytes": 56640
+    },
+    {
+      "conceptId": "costs-of-production",
+      "filename": "COST-06.webp",
+      "sourceAssetPath": "question-assets/costs-of-production/COST-06.webp",
+      "sourceUrl": "data/question-assets/costs-of-production/COST-06.webp",
+      "runtimePath": "question-assets/costs-of-production/COST-06.webp",
+      "sha256": "8014184ebafb1b2068d8561be02d3d2d59fa133f80a079bdd9f3570830b67ae4",
+      "sizeBytes": 53416
     },
     {
       "conceptId": "costs-of-production",
@@ -702,78 +756,6 @@
       "runtimePath": "question-assets/disinflation-and-policy/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
       "sizeBytes": 77908
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_cross_income.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_cross_income.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_cross_income.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_cross_income.webp",
-      "sha256": "928a517f73802bda313684d9f991c83677e766f35cc297c165ea0b1547f960b4",
-      "sizeBytes": 9506
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_demand_steep_flat.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_demand_steep_flat.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_demand_steep_flat.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_demand_steep_flat.webp",
-      "sha256": "cb9652c151d83eec2bbb69d6be2da5eeb4715478a4e1fdca72ae7261671220a9",
-      "sizeBytes": 13722
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_linear_segments.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_linear_segments.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_linear_segments.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_linear_segments.webp",
-      "sha256": "461792d440187d08f14a3d7aae858bf15a26c43cbda02b0d1a644f6e102b951b",
-      "sizeBytes": 17464
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_midpoint_arc.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_midpoint_arc.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_midpoint_arc.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_midpoint_arc.webp",
-      "sha256": "38a420463bddeff2175e72afc3a400934d4566ae386eb6e5c6c853467a77e2f6",
-      "sizeBytes": 15608
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_perfect_extremes.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_perfect_extremes.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_perfect_extremes.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_perfect_extremes.webp",
-      "sha256": "1bd2bda02bec2253c345115c380a22056c65053444abb487deb2722eb0d23791",
-      "sizeBytes": 7936
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_supply_time_horizon.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_supply_time_horizon.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_supply_time_horizon.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_supply_time_horizon.webp",
-      "sha256": "17c71165416261d8518f4282bae2cf7bce0016d3c6aa38640139d456f552e410",
-      "sizeBytes": 16326
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_tax_incidence.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_tax_incidence.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_tax_incidence.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_tax_incidence.webp",
-      "sha256": "c94511d5aa2a7fb52bd5614e263184c236c82d6e4697fc437570250643465643",
-      "sizeBytes": 24826
-    },
-    {
-      "conceptId": "elasticity",
-      "filename": "elasticity_total_revenue.webp",
-      "sourceAssetPath": "question-assets/elasticity/elasticity_total_revenue.webp",
-      "sourceUrl": "data/question-assets/elasticity/elasticity_total_revenue.webp",
-      "runtimePath": "question-assets/elasticity/elasticity_total_revenue.webp",
-      "sha256": "f3dfb33e3323ef4bdd8d1f199c15e74ceafb84b8ff4c66913dc9995721c18c38",
-      "sizeBytes": 18636
     },
     {
       "conceptId": "fiscal-multipliers-and-crowding-out",
@@ -1746,6 +1728,42 @@
       "runtimePath": "question-assets/monopolistic-competition/mcmp_zero_2.webp",
       "sha256": "7e8af909aaa711a8258161083a06ed008ea8895d86f21173f54254f01761513e",
       "sizeBytes": 40948
+    },
+    {
+      "conceptId": "monopoly",
+      "filename": "MON-01.webp",
+      "sourceAssetPath": "question-assets/monopoly/MON-01.webp",
+      "sourceUrl": "data/question-assets/monopoly/MON-01.webp",
+      "runtimePath": "question-assets/monopoly/MON-01.webp",
+      "sha256": "5b54f32e9e8f3ec213d37216f8e4c0d703fe50a35f002bfff5eee33f262ae0c5",
+      "sizeBytes": 66478
+    },
+    {
+      "conceptId": "monopoly",
+      "filename": "MON-02.webp",
+      "sourceAssetPath": "question-assets/monopoly/MON-02.webp",
+      "sourceUrl": "data/question-assets/monopoly/MON-02.webp",
+      "runtimePath": "question-assets/monopoly/MON-02.webp",
+      "sha256": "9e85a3693b3c746349d0790ad337f3f6bc4355fec38b92595ef0ea13d4d3625a",
+      "sizeBytes": 71896
+    },
+    {
+      "conceptId": "monopoly",
+      "filename": "MON-03.webp",
+      "sourceAssetPath": "question-assets/monopoly/MON-03.webp",
+      "sourceUrl": "data/question-assets/monopoly/MON-03.webp",
+      "runtimePath": "question-assets/monopoly/MON-03.webp",
+      "sha256": "37f4d2e1885412d166823749a7fa2757c0ad8b030e6484171c326f3812b088f5",
+      "sizeBytes": 58340
+    },
+    {
+      "conceptId": "monopoly",
+      "filename": "MON-04.webp",
+      "sourceAssetPath": "question-assets/monopoly/MON-04.webp",
+      "sourceUrl": "data/question-assets/monopoly/MON-04.webp",
+      "runtimePath": "question-assets/monopoly/MON-04.webp",
+      "sha256": "26cd703f5eb6eada6c883b01f722147a7f2fef4fac2026c25e147ed9021b87ce",
+      "sizeBytes": 59012
     },
     {
       "conceptId": "monopoly",
@@ -2973,6 +2991,69 @@
     },
     {
       "conceptId": "perfect-competition",
+      "filename": "PC-01.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-01.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-01.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-01.webp",
+      "sha256": "ebb51b5031c4bbbde9b1c99b3df8fd09418f275b1c01d561dad55db95000eceb",
+      "sizeBytes": 58930
+    },
+    {
+      "conceptId": "perfect-competition",
+      "filename": "PC-02.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-02.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-02.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-02.webp",
+      "sha256": "2823d69bbd80dc030db71afd524fc32c6ea607b58b13819edee26053b7d08cdd",
+      "sizeBytes": 58278
+    },
+    {
+      "conceptId": "perfect-competition",
+      "filename": "PC-03.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-03.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-03.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-03.webp",
+      "sha256": "9849d148b33ca8fc269a1f014ac49491b46ee0855771245f28d1fe5de8c49bda",
+      "sizeBytes": 54614
+    },
+    {
+      "conceptId": "perfect-competition",
+      "filename": "PC-04.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-04.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-04.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-04.webp",
+      "sha256": "68de3c8aa8070cc2a29ce1ddf8b8ddfdef0657f703793bed63d74eaf911b0286",
+      "sizeBytes": 53034
+    },
+    {
+      "conceptId": "perfect-competition",
+      "filename": "PC-06.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-06.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-06.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-06.webp",
+      "sha256": "eea97f597af95b6b0e7077dc2911bc1641b3ad1d5872df26d8c70c561d4767ab",
+      "sizeBytes": 81360
+    },
+    {
+      "conceptId": "perfect-competition",
+      "filename": "PC-07.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-07.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-07.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-07.webp",
+      "sha256": "6ea3083220a12adb601f4b95a2ed1864b25bd07da581c24990187541ce5aa2d0",
+      "sizeBytes": 81384
+    },
+    {
+      "conceptId": "perfect-competition",
+      "filename": "PC-08.webp",
+      "sourceAssetPath": "question-assets/perfect-competition/PC-08.webp",
+      "sourceUrl": "data/question-assets/perfect-competition/PC-08.webp",
+      "runtimePath": "question-assets/perfect-competition/PC-08.webp",
+      "sha256": "8d4dfbc2b97a78d55f9dde857d6abec01391dfc63df30c0a97802549101a2827",
+      "sizeBytes": 81198
+    },
+    {
+      "conceptId": "perfect-competition",
       "filename": "pc_demand_shift_constant.webp",
       "sourceAssetPath": "question-assets/perfect-competition/pc_demand_shift_constant.webp",
       "sourceUrl": "data/question-assets/perfect-competition/pc_demand_shift_constant.webp",
@@ -3384,11 +3465,74 @@
       "runtimePath": "question-assets/tax-wedges-and-revenue/taxincidence.webp",
       "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
       "sizeBytes": 110816
+    },
+    {
+      "conceptId": "monopolistic-competition",
+      "filename": "MCOMP-01.webp",
+      "sourceAssetPath": "question-assets/monopolistic-competition/MCOMP-01.webp",
+      "sourceUrl": "data/question-assets/monopolistic-competition/MCOMP-01.webp",
+      "runtimePath": "question-assets/monopolistic-competition/MCOMP-01.webp",
+      "sha256": "60dbbc25fe30fe952e4c51acb64b1e9cc5ddc6ca3770ac085b9fbcb9e59e0202",
+      "sizeBytes": 66062
+    },
+    {
+      "conceptId": "monopolistic-competition",
+      "filename": "MCOMP-02.webp",
+      "sourceAssetPath": "question-assets/monopolistic-competition/MCOMP-02.webp",
+      "sourceUrl": "data/question-assets/monopolistic-competition/MCOMP-02.webp",
+      "runtimePath": "question-assets/monopolistic-competition/MCOMP-02.webp",
+      "sha256": "83f2a5f682121e65140c1e4653b672e0136b0b0cf29315fcadd437ca5823ce73",
+      "sizeBytes": 71248
+    },
+    {
+      "conceptId": "monopolistic-competition",
+      "filename": "MCOMP-03.webp",
+      "sourceAssetPath": "question-assets/monopolistic-competition/MCOMP-03.webp",
+      "sourceUrl": "data/question-assets/monopolistic-competition/MCOMP-03.webp",
+      "runtimePath": "question-assets/monopolistic-competition/MCOMP-03.webp",
+      "sha256": "69b154ee3f294118473c5c6d9f5222bef91a246b1ea55a71ec62f6b31830b2fa",
+      "sizeBytes": 75620
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "ELAS-01.webp",
+      "sourceAssetPath": "question-assets/elasticity/ELAS-01.webp",
+      "sourceUrl": "data/question-assets/elasticity/ELAS-01.webp",
+      "runtimePath": "question-assets/elasticity/ELAS-01.webp",
+      "sha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
+      "sizeBytes": 40024
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "ELAS-02.webp",
+      "sourceAssetPath": "question-assets/elasticity/ELAS-02.webp",
+      "sourceUrl": "data/question-assets/elasticity/ELAS-02.webp",
+      "runtimePath": "question-assets/elasticity/ELAS-02.webp",
+      "sha256": "744874b053c2349b42cd407e4a789d33ffbf62a3416a8dcf64ef68d2c2513ac5",
+      "sizeBytes": 56656
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "ELAS-03.webp",
+      "sourceAssetPath": "question-assets/elasticity/ELAS-03.webp",
+      "sourceUrl": "data/question-assets/elasticity/ELAS-03.webp",
+      "runtimePath": "question-assets/elasticity/ELAS-03.webp",
+      "sha256": "a8ec0dd32cd1c6038a48571dc83678eef213c07082b23f6a61ac6b8a56052cba",
+      "sizeBytes": 29280
+    },
+    {
+      "conceptId": "elasticity",
+      "filename": "ELAS-05.webp",
+      "sourceAssetPath": "question-assets/elasticity/ELAS-05.webp",
+      "sourceUrl": "data/question-assets/elasticity/ELAS-05.webp",
+      "runtimePath": "question-assets/elasticity/ELAS-05.webp",
+      "sha256": "41715d4d6ccad3df7a7c8e5b247c87b204faffe4183635f94dd620f5f59c1be1",
+      "sizeBytes": 60244
     }
   ],
   "conceptCount": 72,
-  "canonicalQuestionCount": 5990,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
-  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
-  "generatedAt": "2026-08-05T16:32:50Z"
+  "canonicalQuestionCount": 6296,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2",
+  "librarySha256": "c45be4d730f0cdfcae6d317555ad26741ce933335977c2adac8e89320a39e095",
+  "generatedAt": "2026-08-09T14:05:00.000Z"
 }

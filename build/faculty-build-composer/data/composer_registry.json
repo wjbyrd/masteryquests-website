@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-05T16:32:50Z",
+  "generatedAt": "2026-08-09T14:05:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -856,42 +856,42 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
-        "elite": 30,
-        "legendary": 90,
-        "calculation": 30,
-        "boss": 54,
-        "legendaryBoss": 36,
-        "repair": 20,
+        "boss": 60,
         "bridge": 20,
+        "calculation": 30,
+        "elite": 42,
         "integration": 0,
+        "legendary": 98,
+        "legendaryBoss": 36,
+        "main": 136,
+        "repair": 20,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "elite": 30,
-        "hard": 78,
-        "legendary": 126,
-        "medium": 48,
+        "easy": 64,
+        "elite": 42,
+        "hard": 96,
+        "legendary": 134,
+        "medium": 66,
         "unknown": 40
       },
       "repairCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 402
       },
       "bridgeCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 402
       },
       "calculationCoverage": 30,
-      "graphCoverage": 30,
+      "graphCoverage": 100,
       "status": "active",
-      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2e. Cost machinery is taught before market-structure decision rules. Graph labels are offset from curves.",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2e. Cost machinery is taught before market-structure decision rules. Phase 6.2e graph expansion v2 adds six title-free canonical cost/production figures and 72 graph-dependent questions built to the cover-the-graph and answer-from-the-graph standards.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
-      "coverageFloorVersion": "phase6.2e-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank with an expanded 102-item graph layer. New graphical questions cover cost-curve relationships, total cost identities, total/marginal/average product, and LRAC without importing competitive-firm profit decisions.",
+      "coverageFloorVersion": "phase6.2e-rich-v2-graph-expansion"
     },
     {
       "canonicalConceptId": "cpi-and-inflation-measurement",
@@ -1465,11 +1465,11 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
-        "elite": 30,
-        "legendary": 90,
+        "main": 117,
+        "elite": 38,
+        "legendary": 97,
         "calculation": 30,
-        "boss": 54,
+        "boss": 60,
         "legendaryBoss": 36,
         "repair": 20,
         "bridge": 20,
@@ -1477,29 +1477,29 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "medium": 48,
-        "hard": 78,
-        "elite": 30,
-        "legendary": 126,
+        "easy": 59,
+        "medium": 59,
+        "hard": 89,
+        "elite": 38,
+        "legendary": 133,
         "unknown": 40
       },
       "repairCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 378
       },
       "bridgeCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 378
       },
-      "calculationCoverage": 77,
-      "graphCoverage": 8,
+      "calculationCoverage": 89,
+      "graphCoverage": 56,
       "status": "active",
-      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2b. Publisher-scale standalone coverage with dedicated calculations, adaptive support, checkpoint banks, and Legendary Mode.",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2b, with the approved four-graph elasticity expansion added in August 2026. Graph items require direct use of the displayed figure and avoid tax-incidence graph material.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageStatusNote": "Publisher-scale standalone bank with balanced foundational through mastery coverage, dedicated calculations and remediation, plus 56 graph-dependent items using the approved ELAS-01, ELAS-02, ELAS-03, and ELAS-05 assets.",
       "coverageFloorVersion": "phase6.2b-rich-v1"
     },
     {
@@ -4723,11 +4723,11 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
-        "elite": 30,
-        "legendary": 90,
+        "main": 117,
+        "elite": 37,
+        "legendary": 95,
         "calculation": 30,
-        "boss": 54,
+        "boss": 57,
         "legendaryBoss": 36,
         "repair": 20,
         "bridge": 20,
@@ -4735,25 +4735,25 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "elite": 30,
-        "hard": 78,
-        "legendary": 126,
-        "medium": 48,
+        "easy": 58,
+        "elite": 37,
+        "hard": 88,
+        "legendary": 131,
+        "medium": 58,
         "unknown": 40
       },
       "repairCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 372
       },
       "bridgeCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 372
       },
       "calculationCoverage": 30,
-      "graphCoverage": 13,
+      "graphCoverage": 55,
       "status": "active",
-      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2h. Perfect competition, monopoly, and costs are prerequisites; oligopoly and game theory are excluded.",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2h and upgraded with three validated graph families for short-run profit, zero-profit equilibrium, and long-run excess capacity. Perfect competition, monopoly, and costs remain prerequisites.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
@@ -4834,11 +4834,11 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
-        "elite": 30,
-        "legendary": 90,
+        "main": 130,
+        "elite": 40,
+        "legendary": 96,
         "calculation": 30,
-        "boss": 54,
+        "boss": 58,
         "legendaryBoss": 36,
         "repair": 20,
         "bridge": 20,
@@ -4846,30 +4846,30 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "elite": 30,
-        "hard": 78,
-        "legendary": 126,
-        "medium": 48,
+        "easy": 61,
+        "elite": 40,
+        "hard": 94,
+        "legendary": 132,
+        "medium": 63,
         "unknown": 40
       },
       "repairCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 390
       },
       "bridgeCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 390
       },
       "calculationCoverage": 30,
-      "graphCoverage": 12,
+      "graphCoverage": 72,
       "status": "active",
       "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2g. Perfect competition and costs are prerequisites. Natural-monopoly regulation and controlled price discrimination are included; oligopoly and game theory are excluded.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
-      "coverageFloorVersion": "phase6.2g-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank with a 60-question graph expansion across monopoly profit, monopoly loss, welfare/efficient-output comparisons, and natural-monopoly regulation.",
+      "coverageFloorVersion": "phase6.2g-rich-v1-monopoly-graph-v2"
     },
     {
       "canonicalConceptId": "natural-rate-of-unemployment",
@@ -5222,11 +5222,11 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
-        "elite": 30,
-        "legendary": 90,
+        "main": 142,
+        "elite": 44,
+        "legendary": 100,
         "calculation": 30,
-        "boss": 54,
+        "boss": 62,
         "legendaryBoss": 36,
         "repair": 20,
         "bridge": 20,
@@ -5234,11 +5234,11 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "elite": 30,
-        "hard": 78,
-        "legendary": 126,
-        "medium": 48,
+        "easy": 66,
+        "elite": 44,
+        "hard": 100,
+        "legendary": 136,
+        "medium": 68,
         "unknown": 40
       },
       "repairCoverage": {
@@ -5250,14 +5250,14 @@
         "mainWithUsableSkill": 330
       },
       "calculationCoverage": 30,
-      "graphCoverage": 36,
+      "graphCoverage": 120,
       "status": "active",
-      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2f. Costs are prerequisites; firm output, shutdown, supply, entry, exit, and efficiency are the core. Market and firm graph quantities are separated.",
+      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2f. Costs are prerequisites; firm output, shutdown, supply, entry, exit, and efficiency are the core. Market and firm graph quantities are separated. Phase 6.2f graph expansion v2 adds 84 graph-dependent questions across seven canonical PC graphs, including market-to-firm and long-run adjustment panels.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
-      "coverageFloorVersion": "phase6.2f-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank with an expanded 120-question graph layer spanning firm profit/loss/shutdown, short-run supply, market-to-firm linkage, entry/exit, and long-run equilibrium.",
+      "coverageFloorVersion": "phase6.2f-rich-v1-pc-graph-v2"
     },
     {
       "canonicalConceptId": "phillips-curve-expectations",
@@ -6934,6 +6934,6 @@
       "coverageFloorVersion": "phase5.2b-v1"
     }
   ],
-  "curationPhase": "6.2i",
-  "curationSummary": "Phase 6.2i adds the publisher-scale Oligopoly bank after Monopolistic Competition."
+  "curationPhase": "phase6.2b-elasticity-graph-expansion-v2",
+  "curationSummary": "Elasticity graph expansion v2: four approved canonical graph assets, 48 new graph-dependent questions, legacy graph items remapped, and tax-incidence/obsolete elasticity graph assets removed."
 }

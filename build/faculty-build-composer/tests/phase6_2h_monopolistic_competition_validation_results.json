@@ -1,27 +1,27 @@
 {
   "ok": true,
   "conceptId": "monopolistic-competition",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2",
   "errors": [],
   "warnings": [],
   "counts": {
-    "easy": 30,
-    "medium": 30,
-    "hard": 60,
-    "elite": 30,
-    "legendary": 90,
-    "easyBoss": 18,
-    "mediumBoss": 18,
-    "finalBoss": 18,
+    "easy": 39,
+    "medium": 39,
+    "hard": 69,
+    "elite": 37,
+    "legendary": 95,
+    "easyBoss": 19,
+    "mediumBoss": 19,
+    "finalBoss": 19,
     "legendaryBoss": 36,
     "repair": 20,
     "repairSeed": 0,
     "bridge": 20,
     "calculation": 30,
     "integration": 0,
-    "graph": 13,
-    "assets": 35,
-    "totalCanonical": 370
+    "graph": 55,
+    "assets": 38,
+    "totalCanonical": 412
   },
   "countIssues": [],
   "modes": [
@@ -32,32 +32,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 69
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "repair",
@@ -80,17 +80,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 69
         },
         {
           "pool": "repair",
@@ -113,17 +113,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 69
         },
         {
           "pool": "repair",
@@ -146,7 +146,7 @@
         {
           "pool": "legendary",
           "minimum": 6,
-          "count": 90
+          "count": 95
         },
         {
           "pool": "legendaryBoss",
@@ -164,32 +164,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 39
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 69
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "repair",
@@ -208,16 +208,16 @@
   ],
   "answerAudit": {
     "ok": true,
-    "questionCount": 370,
+    "questionCount": 412,
     "issues": []
   },
   "assetAudit": {
-    "assetCount": 35,
+    "assetCount": 38,
     "issues": []
   },
   "sampleHtml": {
     "path": "tests/monopolistic-competition-sample.html",
-    "bytes": 2981432
+    "bytes": 3347804
   },
   "bossCoverage": {
     "checkpointOne": {
@@ -231,7 +231,7 @@
       "activeConceptIds": [
         "monopolistic-competition"
       ],
-      "questionCount": 18
+      "questionCount": 19
     },
     "checkpointTwo": {
       "label": "Checkpoint Two",
@@ -244,7 +244,7 @@
       "activeConceptIds": [
         "monopolistic-competition"
       ],
-      "questionCount": 18
+      "questionCount": 19
     },
     "finalCheckpoint": {
       "label": "Final Checkpoint",
@@ -257,7 +257,7 @@
       "activeConceptIds": [
         "monopolistic-competition"
       ],
-      "questionCount": 18
+      "questionCount": 19
     }
   }
 }

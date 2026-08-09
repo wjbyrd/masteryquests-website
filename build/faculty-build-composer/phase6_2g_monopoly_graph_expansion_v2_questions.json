@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "P62G-MON-E-031",
+    "sourceGame": "monopoly",
+    "q": "Using MON-01, at what quantity does the monopolist maximize profit?",
+    "options": [
+      "36 units",
+      "24 units",
+      "42 units",
+      "60 units"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "profit_maximizing_output",
+    "secondarySkills": [],
+    "repairSkill": "profit_maximizing_output",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Profit is maximized where MR intersects MC, which occurs at Q = 36.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "233e18d3b6b924a8a4ac6706305e030126c37569d9c9bf099c7cc380a9a6efa6",
+    "canonicalId": "P62G-MON-E-031",
+    "sourceId": 706000,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "afacaba2e9e62ebb050d5750582408e9a61f66997801a4fd515b5de7edf86ec3",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "profit_maximizing_output",
+        "sourceRecordOrder": 0,
+        "sourceId": 706000,
+        "sourceHash": "afacaba2e9e62ebb050d5750582408e9a61f66997801a4fd515b5de7edf86ec3"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-032",
+    "sourceGame": "monopoly",
+    "q": "At the profit-maximizing quantity in MON-01, what price does the monopolist charge?",
+    "options": [
+      "$24",
+      "$42",
+      "$27",
+      "$30"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_price",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_price",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "After choosing Q = 36 from MR = MC, move up to demand; the demand curve shows P = $42.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "5cf517b8376649e8c92c434671ee1e6a1878d3e107262be949d776d1f921248c",
+    "canonicalId": "P62G-MON-E-032",
+    "sourceId": 706001,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "f0a48f5aad236d16149e070a21483a9f8457deae74c6340290a984ebf24f99e5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "monopoly_price",
+        "sourceRecordOrder": 1,
+        "sourceId": 706001,
+        "sourceHash": "f0a48f5aad236d16149e070a21483a9f8457deae74c6340290a984ebf24f99e5"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-033",
+    "sourceGame": "monopoly",
+    "q": "What marginal-revenue value is shown at Q = 36 in MON-01?",
+    "options": [
+      "$15",
+      "$30",
+      "$24",
+      "$42"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.2",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_revenue_monopoly",
+    "secondarySkills": [],
+    "repairSkill": "marginal_revenue_monopoly",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At Q = 36, the MR curve meets MC at $24.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "9c57e5a9707acc19f9c2bff6db3f74e7a898e9e95064f852b6501abda75b6205",
+    "canonicalId": "P62G-MON-E-033",
+    "sourceId": 706002,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "41cb6bf0b3f6115058ce64abd0476dcbe19708019f02c221943ecae6af1ed02c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "marginal_revenue_monopoly",
+        "sourceRecordOrder": 2,
+        "sourceId": 706002,
+        "sourceHash": "41cb6bf0b3f6115058ce64abd0476dcbe19708019f02c221943ecae6af1ed02c"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-034",
+    "sourceGame": "monopoly",
+    "q": "What is average total cost at Q = 36 in MON-01?",
+    "options": [
+      "$15",
+      "$24",
+      "$42",
+      "$27"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.4",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The ATC guide at the monopoly quantity is $27.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "7adeaf9a3b6d8f72152ec6e98b0b3dbd3bd24a49ebfddbf0483c51dd5b32797b",
+    "canonicalId": "P62G-MON-E-034",
+    "sourceId": 706003,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "d0ce297687d3f153869f2d13968d3529e4f8e2946c2b7fdb8434c73d3635ae9c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 3,
+        "sourceId": 706003,
+        "sourceHash": "d0ce297687d3f153869f2d13968d3529e4f8e2946c2b7fdb8434c73d3635ae9c"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-035",
+    "sourceGame": "monopoly",
+    "q": "Using MON-02, what quantity is selected where MR = MC?",
+    "options": [
+      "40 units",
+      "20 units",
+      "60 units",
+      "67 units"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "profit_maximizing_output",
+    "secondarySkills": [],
+    "repairSkill": "profit_maximizing_output",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "MR and MC intersect at Q = 40.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+    "canonicalId": "P62G-MON-E-035",
+    "sourceId": 706016,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "c55739fb38ceaa2540fda80e7ca513a8fe76bbedc9d48f107daeaa876a4b83d4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "profit_maximizing_output",
+        "sourceRecordOrder": 16,
+        "sourceId": 706016,
+        "sourceHash": "c55739fb38ceaa2540fda80e7ca513a8fe76bbedc9d48f107daeaa876a4b83d4"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-036",
+    "sourceGame": "monopoly",
+    "q": "At Q = 40 in MON-02, what price is read from the demand curve?",
+    "options": [
+      "$20",
+      "$40",
+      "$27",
+      "$45"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_price",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_price",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The demand curve shows P = $40 at Q = 40.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "6d1f50e6a259ccaee2fe099e9af5dda7c8da1b49014c8060991b516c22754f46",
+    "canonicalId": "P62G-MON-E-036",
+    "sourceId": 706017,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "cc022f21e6e8e51e5b60defbb2819b02d9f62074eeb207fe2fe627e61dd7eb76",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "monopoly_price",
+        "sourceRecordOrder": 17,
+        "sourceId": 706017,
+        "sourceHash": "cc022f21e6e8e51e5b60defbb2819b02d9f62074eeb207fe2fe627e61dd7eb76"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-037",
+    "sourceGame": "monopoly",
+    "q": "What is ATC at the monopoly quantity in MON-02?",
+    "options": [
+      "$20",
+      "$27",
+      "$45",
+      "$40"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.4",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The ATC guide at Q = 40 is $45.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "d503dcfdd44cb6216b22dba5a43ecacce36079e0f6445b5906ba9b0a4daaf2dc",
+    "canonicalId": "P62G-MON-E-037",
+    "sourceId": 706018,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "25adb19cc0061610f4a893d342d32e1b87bb6656ee988e716928f02a329756c3",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 18,
+        "sourceId": 706018,
+        "sourceHash": "25adb19cc0061610f4a893d342d32e1b87bb6656ee988e716928f02a329756c3"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-038",
+    "sourceGame": "monopoly",
+    "q": "Using MON-03, what output does the unregulated natural monopolist choose?",
+    "options": [
+      "45 units",
+      "20 units",
+      "60 units",
+      "90 units"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "profit_maximizing_output",
+    "secondarySkills": [],
+    "repairSkill": "profit_maximizing_output",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The unregulated monopoly chooses Q where MR = MC, marked at Q = 45.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "25dc5fbeb70a5e875c6089920208fae15e1a2b4a8feec855246efce9afacc44e",
+    "canonicalId": "P62G-MON-E-038",
+    "sourceId": 706032,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "4355eb8280d1007130e3cf44b788a7f3ddd2d21209089f0e9f80ba1da8401c94",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "profit_maximizing_output",
+        "sourceRecordOrder": 32,
+        "sourceId": 706032,
+        "sourceHash": "4355eb8280d1007130e3cf44b788a7f3ddd2d21209089f0e9f80ba1da8401c94"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-039",
+    "sourceGame": "monopoly",
+    "q": "What price does demand indicate at the monopoly output in MON-03?",
+    "options": [
+      "$20",
+      "$47",
+      "$24",
+      "$45"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_price",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_price",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At Q = 45, the demand curve shows a price of $47.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "1be7bdc1730d2eb046ed59963452ac905011d1919092ff61e2ffc10281381f19",
+    "canonicalId": "P62G-MON-E-039",
+    "sourceId": 706033,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "4d830f95f5c4833a8c09ebb9333f03a9c3e07ee0bb7ddc621b587a229262c357",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "monopoly_price",
+        "sourceRecordOrder": 33,
+        "sourceId": 706033,
+        "sourceHash": "4d830f95f5c4833a8c09ebb9333f03a9c3e07ee0bb7ddc621b587a229262c357"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-040",
+    "sourceGame": "monopoly",
+    "q": "At what output does demand intersect marginal cost in MON-03?",
+    "options": [
+      "45 units",
+      "60 units",
+      "90 units",
+      "125 units"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.5",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "With MC at $20, demand reaches MC at Q = 90.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "e9b0c6b9b34dbf67d5b4f5ff67d33780e3941447ee52edca2e7d7d696c3cf14a",
+    "canonicalId": "P62G-MON-E-040",
+    "sourceId": 706034,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "fb6c952031f2b5f54cd40579835f924fcfe0b6f4674c520c83d78a7d529e0e1c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 34,
+        "sourceId": 706034,
+        "sourceHash": "fb6c952031f2b5f54cd40579835f924fcfe0b6f4674c520c83d78a7d529e0e1c"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-041",
+    "sourceGame": "monopoly",
+    "q": "Using MON-04, approximately what output does the unregulated monopolist choose where MR = MC?",
+    "options": [
+      "45 units",
+      "116 units",
+      "70 units",
+      "140 units"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "profit_maximizing_output",
+    "secondarySkills": [],
+    "repairSkill": "profit_maximizing_output",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The MR curve reaches the $10 MC line at about Q = 70.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "cc08d5c57e8b915e3af7f3acd398def523214a68c93fdf84f96b8aac517285e2",
+    "canonicalId": "P62G-MON-E-041",
+    "sourceId": 706046,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "0dfa7e9bd050131f8f1460236b8e7288a51e3a25424445f758f6cdf643722bf1",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "profit_maximizing_output",
+        "sourceRecordOrder": 46,
+        "sourceId": 706046,
+        "sourceHash": "0dfa7e9bd050131f8f1460236b8e7288a51e3a25424445f758f6cdf643722bf1"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-E-042",
+    "sourceGame": "monopoly",
+    "q": "What price does the demand curve show at the unregulated monopoly output in MON-04?",
+    "options": [
+      "$10",
+      "$16",
+      "$20",
+      "$27"
+    ],
+    "tag": "monopoly",
+    "type": "concept",
+    "objective": "MON.3",
+    "difficulty": "easy",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_price",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_price",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At about Q = 70, demand indicates a price of about $27.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "7adeaf9a3b6d8f72152ec6e98b0b3dbd3bd24a49ebfddbf0483c51dd5b32797b",
+    "canonicalId": "P62G-MON-E-042",
+    "sourceId": 706047,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "4c4a946096610b5ef1786accbda9abaee09109a8ded14c6b8cf4feaa464097ac",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "monopoly_price",
+        "sourceRecordOrder": 47,
+        "sourceId": 706047,
+        "sourceHash": "4c4a946096610b5ef1786accbda9abaee09109a8ded14c6b8cf4feaa464097ac"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-031",
+    "sourceGame": "monopoly",
+    "q": "Using MON-01, what is the monopolist’s economic profit per unit at Q = 36?",
+    "options": [
+      "$15 per unit",
+      "$3 per unit",
+      "$18 per unit",
+      "$27 per unit"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.4",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Profit per unit is price minus ATC: $42 − $27 = $15.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "863bc2e18c56550068788165fc2d8be0ec0f550cf8048e3fb7d061dd06a1a15f",
+    "canonicalId": "P62G-MON-M-031",
+    "sourceId": 706004,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "8c6b1b0d030c3a95d5c751d563accf9f502b5ac201b90059cd1545e7e80c620b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 4,
+        "sourceId": 706004,
+        "sourceHash": "8c6b1b0d030c3a95d5c751d563accf9f502b5ac201b90059cd1545e7e80c620b"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-032",
+    "sourceGame": "monopoly",
+    "q": "Using MON-01, what is total economic profit?",
+    "options": [
+      "$360",
+      "$540",
+      "$648",
+      "$972"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.4",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Total profit is ($42 − $27) × 36 = $540.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "2833cc3c7e6829795c3bdb33a9236a61d73490db0d5b8f35cc757b2bc6b59727",
+    "canonicalId": "P62G-MON-M-032",
+    "sourceId": 706005,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "ace677a9a471019a43baeb83ba04b82c53384720f25851b1bb8032ae8d23869b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 5,
+        "sourceId": 706005,
+        "sourceHash": "ace677a9a471019a43baeb83ba04b82c53384720f25851b1bb8032ae8d23869b"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-033",
+    "sourceGame": "monopoly",
+    "q": "Compared with the D = MC benchmark in MON-01, how many fewer units does the monopoly produce?",
+    "options": [
+      "6 fewer units",
+      "18 fewer units",
+      "24 fewer units",
+      "36 fewer units"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.5",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The monopoly produces 36 units, while D = MC occurs at 60, a difference of 24 units.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "7756b6ea1b78eb6c2ca6990fc320428d8b705d0e581062df830b4ab98be61d7f",
+    "canonicalId": "P62G-MON-M-033",
+    "sourceId": 706006,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "9702c49b5c23c89b520714499f1ecb9f7a9ee6be56503f90d6a24c82a48894e0",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 6,
+        "sourceId": 706006,
+        "sourceHash": "9702c49b5c23c89b520714499f1ecb9f7a9ee6be56503f90d6a24c82a48894e0"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-034",
+    "sourceGame": "monopoly",
+    "q": "What price is associated with the D = MC benchmark in MON-01?",
+    "options": [
+      "$24",
+      "$27",
+      "$42",
+      "$30"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.5",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Demand and MC intersect at Q = 60 and P = $30.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd",
+    "canonicalId": "P62G-MON-M-034",
+    "sourceId": 706007,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "da82f6cfa99d8dbb196525061570948d0e5972a6eaeffd9d92f4c363b536174a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 7,
+        "sourceId": 706007,
+        "sourceHash": "da82f6cfa99d8dbb196525061570948d0e5972a6eaeffd9d92f4c363b536174a"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-035",
+    "sourceGame": "monopoly",
+    "q": "What economic loss per unit is shown in MON-02 at Q = 40?",
+    "options": [
+      "$13 per unit",
+      "$20 per unit",
+      "$25 per unit",
+      "$5 per unit"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.4",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Price is $40 and ATC is $45, so the loss is $5 per unit.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "cecfca24f0d86e444d4d1541eb730c6de5a1178936d00ebd0b423344e3bc59fa",
+    "canonicalId": "P62G-MON-M-035",
+    "sourceId": 706019,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "308db8ae5ae3e19e75573b31fe487889bd8bf2779fbcea4a1d57e7b6390094f5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 19,
+        "sourceId": 706019,
+        "sourceHash": "308db8ae5ae3e19e75573b31fe487889bd8bf2779fbcea4a1d57e7b6390094f5"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-036",
+    "sourceGame": "monopoly",
+    "q": "What is the total economic loss at the monopoly output in MON-02?",
+    "options": [
+      "$200",
+      "$135",
+      "$400",
+      "$1,000"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.4",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The firm loses $5 on each of 40 units, for a total loss of $200.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "981d56ae89e6190172955cbf003de4d1732e9612b5c2759cbff5a7dc0e932685",
+    "canonicalId": "P62G-MON-M-036",
+    "sourceId": 706020,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "2c14dff5e121b50b4e75b8cd969b3956520585cfec60520adf7b6c353003842b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 20,
+        "sourceId": 706020,
+        "sourceHash": "2c14dff5e121b50b4e75b8cd969b3956520585cfec60520adf7b6c353003842b"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-037",
+    "sourceGame": "monopoly",
+    "q": "At the monopoly quantity in MON-02, what common value do MR and MC have?",
+    "options": [
+      "$27",
+      "$20",
+      "$40",
+      "$45"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_revenue_monopoly",
+    "secondarySkills": [],
+    "repairSkill": "marginal_revenue_monopoly",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The MR and MC curves meet at $20 when Q = 40.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416",
+    "canonicalId": "P62G-MON-M-037",
+    "sourceId": 706021,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "77366899477f078fca2fc104a4a1caa777f652426332a707bf3dc9b10e636a2e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "marginal_revenue_monopoly",
+        "sourceRecordOrder": 21,
+        "sourceId": 706021,
+        "sourceHash": "77366899477f078fca2fc104a4a1caa777f652426332a707bf3dc9b10e636a2e"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-038",
+    "sourceGame": "monopoly",
+    "q": "Approximately what quantity and price mark the D = MC benchmark in MON-02?",
+    "options": [
+      "Q = 40 and P = $40",
+      "Q = 60 and P = $30",
+      "Q = 67 and P = $27",
+      "Q = 45 and P = $20"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.5",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The graph marks the demand-MC intersection at about Q = 67 and P = $27.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "698720899a74ad2ac1518fec6c25045fdc2c0186a23bd87353d1b0a073e7032e",
+    "canonicalId": "P62G-MON-M-038",
+    "sourceId": 706022,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "56407a7b47c236468ed1d4ce47174a7118a21842ceeb05fc2e928b64420d4cbc",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 22,
+        "sourceId": 706022,
+        "sourceHash": "56407a7b47c236468ed1d4ce47174a7118a21842ceeb05fc2e928b64420d4cbc"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-039",
+    "sourceGame": "monopoly",
+    "q": "At Q = 45 in MON-03, price is $47 and ATC is $24. What is profit per unit?",
+    "options": [
+      "$3 per unit",
+      "$20 per unit",
+      "$27 per unit",
+      "$23 per unit"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.4",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Profit per unit is $47 − $24 = $23.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "1a5852918d61211d30ddafc5d34c90f6dfedd5db7b0d538d5d5c02b4dfdadf16",
+    "canonicalId": "P62G-MON-M-039",
+    "sourceId": 706035,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "6f853c82efa50c5eac7429f90a6192d78eba8515b7791eaf35fa15a3ab03dece",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 35,
+        "sourceId": 706035,
+        "sourceHash": "6f853c82efa50c5eac7429f90a6192d78eba8515b7791eaf35fa15a3ab03dece"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-040",
+    "sourceGame": "monopoly",
+    "q": "Using the displayed MON-03 values, what is total economic profit at Q = 45?",
+    "options": [
+      "$1,035",
+      "$540",
+      "$900",
+      "$2,115"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.4",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Economic profit is ($47 − $24) × 45 = $1,035.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "04c8d54977cacda3850366fcf71e0aabf9dfbcdc3640a282e85b16a109632452",
+    "canonicalId": "P62G-MON-M-040",
+    "sourceId": 706036,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "e87294f6de2d7f532da0d3c2e28e2f3686216f2f98523d8e7819ace67198bff5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 36,
+        "sourceId": 706036,
+        "sourceHash": "e87294f6de2d7f532da0d3c2e28e2f3686216f2f98523d8e7819ace67198bff5"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-041",
+    "sourceGame": "monopoly",
+    "q": "What price corresponds to the D = MC quantity in MON-03?",
+    "options": [
+      "$24",
+      "$20",
+      "$27",
+      "$47"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.5",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Demand intersects the horizontal MC curve at P = $20 and Q = 90.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416",
+    "canonicalId": "P62G-MON-M-041",
+    "sourceId": 706037,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "7a4bdc1f3849eebd891c0854e102f2c4a6e4043ef279c0ef7acd16e685480381",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 37,
+        "sourceId": 706037,
+        "sourceHash": "7a4bdc1f3849eebd891c0854e102f2c4a6e4043ef279c0ef7acd16e685480381"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-042",
+    "sourceGame": "monopoly",
+    "q": "Which marked MON-04 outcome corresponds to average-cost, or fair-return, pricing?",
+    "options": [
+      "Q ≈ 116 and P = $16",
+      "Q = 70 and P = $27",
+      "Q = 140 and P = $10",
+      "Q = 140 and P = $15"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.6",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "average_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "average_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Fair-return pricing sets price equal to ATC; the graph marks D = ATC near Q = 116 and P = $16.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "24a58c35a40fc1b62d174093822aa24362772c38cf89ec4856a2aa5562ea1cf7",
+    "canonicalId": "P62G-MON-M-042",
+    "sourceId": 706048,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "6552c1ddb83d8a1ca4e56ce21feaee5294ad5ad09988e1dfddb8fa1b66c08215",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "average_cost_regulation",
+        "sourceRecordOrder": 48,
+        "sourceId": 706048,
+        "sourceHash": "6552c1ddb83d8a1ca4e56ce21feaee5294ad5ad09988e1dfddb8fa1b66c08215"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-043",
+    "sourceGame": "monopoly",
+    "q": "Which marked MON-04 outcome corresponds to marginal-cost pricing?",
+    "options": [
+      "Q = 70 and P = $27",
+      "Q = 140 and P = $10",
+      "Q = 116 and P = $16",
+      "Q = 140 and P = $15"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.6",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Marginal-cost pricing sets demand price equal to MC, shown at Q = 140 and P = $10.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "fa3b1cf4700914617e0cfb8e1384ef3664368910bd9e35ef2e9506f090d52de9",
+    "canonicalId": "P62G-MON-M-043",
+    "sourceId": 706049,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "99df521d9ef5c5602cd0eaabb6fbd6a48cc7f97ff2a30dbecf2ed965cfbaab1e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 49,
+        "sourceId": 706049,
+        "sourceHash": "99df521d9ef5c5602cd0eaabb6fbd6a48cc7f97ff2a30dbecf2ed965cfbaab1e"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-M-044",
+    "sourceGame": "monopoly",
+    "q": "At Q = 140 in MON-04, ATC is $15 while the marginal-cost price is $10. What loss occurs per unit?",
+    "options": [
+      "$4 per unit",
+      "$10 per unit",
+      "$5 per unit",
+      "$15 per unit"
+    ],
+    "tag": "monopoly",
+    "type": "application",
+    "objective": "MON.6",
+    "difficulty": "medium",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The per-unit loss is ATC minus price: $15 − $10 = $5.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "cecfca24f0d86e444d4d1541eb730c6de5a1178936d00ebd0b423344e3bc59fa",
+    "canonicalId": "P62G-MON-M-044",
+    "sourceId": 706050,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "761657a246c288f292a78cd3ecb4e02783f6df409d76e64a8f83a43ac2695360",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 50,
+        "sourceId": 706050,
+        "sourceHash": "761657a246c288f292a78cd3ecb4e02783f6df409d76e64a8f83a43ac2695360"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-031",
+    "sourceGame": "monopoly",
+    "q": "Why is price $42 while marginal revenue is only $24 at Q = 36 in MON-01?",
+    "options": [
+      "An extra sale requires lowering price on earlier units",
+      "Marginal cost is already embedded in the downward demand curve",
+      "Average total cost must exceed marginal revenue at every output",
+      "The monopolist takes a fixed market price on all units sold"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.2",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "price_effect_output_effect",
+    "secondarySkills": [],
+    "repairSkill": "price_effect_output_effect",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "For a downward-sloping demand curve, expanding sales lowers the price received on previous units, so MR lies below price.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "bb1688d370bd65b37167eacdb7f7d8ea78a08347d7fec8db7ca0ff102407f68f",
+    "canonicalId": "P62G-MON-H-031",
+    "sourceId": 706008,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "32d1dddbd9393d44acef2b6c4c36a82c95c050aa68f7b5f571ea7ec4b100601f",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "price_effect_output_effect",
+        "sourceRecordOrder": 8,
+        "sourceId": 706008,
+        "sourceHash": "32d1dddbd9393d44acef2b6c4c36a82c95c050aa68f7b5f571ea7ec4b100601f"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-032",
+    "sourceGame": "monopoly",
+    "q": "Why would moving output from 36 toward 60 units reduce profit in MON-01?",
+    "options": [
+      "Demand exceeds ATC over the entire interval",
+      "Beyond Q = 36, MC exceeds MR",
+      "Price becomes greater than marginal revenue",
+      "ATC immediately becomes fixed cost"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.3",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "profit_maximizing_output",
+    "secondarySkills": [],
+    "repairSkill": "profit_maximizing_output",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Once output passes MR = MC, the additional units cost more at the margin than they add to revenue.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "175ac32a6caa93e6302464db0ffe1a81a15c7ddc90ca5d7a27057eb18183eed0",
+    "canonicalId": "P62G-MON-H-032",
+    "sourceId": 706009,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "f58749e37eb20b15aed4c3254fbc0ecd39b31f5b38114f939e3860746e1befb7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "profit_maximizing_output",
+        "sourceRecordOrder": 9,
+        "sourceId": 706009,
+        "sourceHash": "f58749e37eb20b15aed4c3254fbc0ecd39b31f5b38114f939e3860746e1befb7"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-033",
+    "sourceGame": "monopoly",
+    "q": "At the monopoly output in MON-01, what is the markup of price over marginal cost?",
+    "options": [
+      "$12",
+      "$15",
+      "$18",
+      "$24"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "allocative_inefficiency",
+    "secondarySkills": [],
+    "repairSkill": "allocative_inefficiency",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At Q = 36, P = $42 and MC = $24, so the markup is $18.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "adb8bcfeceb5bc0bd84001208ec23d1cd02127841819c803472c6ad15c52582e",
+    "canonicalId": "P62G-MON-H-033",
+    "sourceId": 706010,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "652381f6638bac59e0f63043f20cb71b36f54baf8f3b34b8d53e4cce3973008d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "allocative_inefficiency",
+        "sourceRecordOrder": 10,
+        "sourceId": 706010,
+        "sourceHash": "652381f6638bac59e0f63043f20cb71b36f54baf8f3b34b8d53e4cce3973008d"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-034",
+    "sourceGame": "monopoly",
+    "q": "Which comparison correctly describes MON-01?",
+    "options": [
+      "Monopoly: P = $30, Q = 60; benchmark: P = $42, Q = 36",
+      "Monopoly: P = $24, Q = 36; benchmark: P = $27, Q = 60",
+      "Monopoly and the benchmark both have P = $30 and Q = 60",
+      "Monopoly: P = $42, Q = 36; D = MC benchmark: P = $30, Q = 60"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The monopoly restricts output to 36 and charges $42; the D = MC benchmark is 60 units at $30.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "cd01b150403e9cb5d3b960b843e71a19fce69fe90ffa207df75b321495af83fc",
+    "canonicalId": "P62G-MON-H-034",
+    "sourceId": 706011,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "895578375002cb3d63e453333b73f8f0f723ebec17e22f218af79e1a077d3ed7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 11,
+        "sourceId": 706011,
+        "sourceHash": "895578375002cb3d63e453333b73f8f0f723ebec17e22f218af79e1a077d3ed7"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-035",
+    "sourceGame": "monopoly",
+    "q": "Which graph comparison establishes that the monopolist in MON-02 is taking an economic loss?",
+    "options": [
+      "Price $40 is above MR $20 at Q = 40",
+      "MC $20 is below demand at Q = 40",
+      "Demand intersects MC near Q = 67",
+      "Price $40 is below ATC $45 at Q = 40"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.4",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Economic profit depends on price relative to ATC. Here P < ATC at the chosen quantity.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "496de51829d4126e379f3502576e9330f24f8b77294734da068721e5c3716987",
+    "canonicalId": "P62G-MON-H-035",
+    "sourceId": 706023,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "51015a767f8e238a1f1b688c8252e630b1158ba7f295e31b1386c9e775da3727",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 23,
+        "sourceId": 706023,
+        "sourceHash": "51015a767f8e238a1f1b688c8252e630b1158ba7f295e31b1386c9e775da3727"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-036",
+    "sourceGame": "monopoly",
+    "q": "Why is Q = 67 not the profit-maximizing monopoly output in MON-02?",
+    "options": [
+      "At Q = 67, marginal cost exceeds marginal revenue",
+      "At Q = 67, price is greater than marginal cost",
+      "At Q = 67, ATC is necessarily zero",
+      "The monopolist must always choose the demand intercept"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.3",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "profit_maximizing_output",
+    "secondarySkills": [],
+    "repairSkill": "profit_maximizing_output",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "A monopolist maximizes profit where MR = MC, not where demand equals MC.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "a85e50c96285007b9bb2c8df0cf12db98b962545fa956e7d8aa2fe6956a84b3b",
+    "canonicalId": "P62G-MON-H-036",
+    "sourceId": 706024,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "aa2f830628eb43b7b1c504b6e824422e77d83c279ad8da9fe33aac4aa2b2a095",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "profit_maximizing_output",
+        "sourceRecordOrder": 24,
+        "sourceId": 706024,
+        "sourceHash": "aa2f830628eb43b7b1c504b6e824422e77d83c279ad8da9fe33aac4aa2b2a095"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-037",
+    "sourceGame": "monopoly",
+    "q": "What is the monopoly markup over marginal cost at Q = 40 in MON-02?",
+    "options": [
+      "$5",
+      "$20",
+      "$13",
+      "$25"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "allocative_inefficiency",
+    "secondarySkills": [],
+    "repairSkill": "allocative_inefficiency",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At Q = 40, price is $40 and MC is $20, a $20 markup.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416",
+    "canonicalId": "P62G-MON-H-037",
+    "sourceId": 706025,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "5d796a3c1b59af50735bb75ec1286e26d3f22320869e12ee35472515dba7855d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "allocative_inefficiency",
+        "sourceRecordOrder": 25,
+        "sourceId": 706025,
+        "sourceHash": "5d796a3c1b59af50735bb75ec1286e26d3f22320869e12ee35472515dba7855d"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-038",
+    "sourceGame": "monopoly",
+    "q": "Relative to the D = MC benchmark in MON-02, the monopoly approximately:",
+    "options": [
+      "Produces 27 more units and charges $13 less",
+      "Produces 20 fewer units and charges $5 more",
+      "Produces 27 fewer units and charges $13 more",
+      "Produces the same quantity but charges $20 more"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The monopoly is at Q = 40, P = $40; the benchmark is about Q = 67, P = $27.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "88f3ea15953522b76572f8b44112e7cf131f73ac86aee7bcbdd4db26970fe06e",
+    "canonicalId": "P62G-MON-H-038",
+    "sourceId": 706026,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "295362e8aa47cf2a869bdad58e7cbedfd226f276d8886ed7258201954a2f0b3d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 26,
+        "sourceId": 706026,
+        "sourceHash": "295362e8aa47cf2a869bdad58e7cbedfd226f276d8886ed7258201954a2f0b3d"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-039",
+    "sourceGame": "monopoly",
+    "q": "How much output is withheld by the unregulated monopoly relative to D = MC in MON-03?",
+    "options": [
+      "20 units",
+      "23 units",
+      "45 units",
+      "70 units"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The monopoly produces 45 rather than 90 units, a 45-unit restriction.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "25dc5fbeb70a5e875c6089920208fae15e1a2b4a8feec855246efce9afacc44e",
+    "canonicalId": "P62G-MON-H-039",
+    "sourceId": 706038,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "52fd07cceec9adf8b952553a10275cd73cbfda19a8cb5843ffdbb76535fbfdee",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 38,
+        "sourceId": 706038,
+        "sourceHash": "52fd07cceec9adf8b952553a10275cd73cbfda19a8cb5843ffdbb76535fbfdee"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-040",
+    "sourceGame": "monopoly",
+    "q": "What is the monopoly price markup over marginal cost in MON-03?",
+    "options": [
+      "$20",
+      "$23",
+      "$47",
+      "$27"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "allocative_inefficiency",
+    "secondarySkills": [],
+    "repairSkill": "allocative_inefficiency",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At the monopoly output, P = $47 and MC = $20, so the markup is $27.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "7adeaf9a3b6d8f72152ec6e98b0b3dbd3bd24a49ebfddbf0483c51dd5b32797b",
+    "canonicalId": "P62G-MON-H-040",
+    "sourceId": 706039,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "52f30a6c19fe33c4f5e00578b3c1a9adbbac171926937989c59b87e3a454e7a8",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "allocative_inefficiency",
+        "sourceRecordOrder": 39,
+        "sourceId": 706039,
+        "sourceHash": "52f30a6c19fe33c4f5e00578b3c1a9adbbac171926937989c59b87e3a454e7a8"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-041",
+    "sourceGame": "monopoly",
+    "q": "Which feature of MON-03 is consistent with a natural monopoly over the relevant range?",
+    "options": [
+      "ATC declines as output expands toward the efficient quantity",
+      "MR is horizontal across the relevant output range",
+      "Demand becomes perfectly elastic near the efficient output",
+      "MC rises faster than demand throughout the relevant range"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.1",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "natural_monopoly_cost",
+    "secondarySkills": [],
+    "repairSkill": "natural_monopoly_cost",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Declining ATC over the relevant output range signals economies of scale that can support natural monopoly.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "0fc1d12309564cceb390fb2e7066047778f57024be4e70094d5e3d4db4a42d01",
+    "canonicalId": "P62G-MON-H-041",
+    "sourceId": 706040,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "63ea0352a01e933f05c4d5624c2aa886bd847fcafd8dbb2874e36c1a8bf2c9c6",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "natural_monopoly_cost",
+        "sourceRecordOrder": 40,
+        "sourceId": 706040,
+        "sourceHash": "63ea0352a01e933f05c4d5624c2aa886bd847fcafd8dbb2874e36c1a8bf2c9c6"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-042",
+    "sourceGame": "monopoly",
+    "q": "What total loss would the regulated firm incur at Q = 140 under marginal-cost pricing in MON-04?",
+    "options": [
+      "$500",
+      "$1,400",
+      "$2,100",
+      "$700"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.6",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "A $5 loss per unit on 140 units equals $700.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "5296b7db78583cfae3974e0bcae147e36aec073399860b8ffd7716f1ea5d663d",
+    "canonicalId": "P62G-MON-H-042",
+    "sourceId": 706051,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "64fcad76a4847286a0e9001348a00b3d98857681798cf51dd8cfe8e95b9dd2cb",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 51,
+        "sourceId": 706051,
+        "sourceHash": "64fcad76a4847286a0e9001348a00b3d98857681798cf51dd8cfe8e95b9dd2cb"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-043",
+    "sourceGame": "monopoly",
+    "q": "Why does the fair-return outcome near Q = 116 and P = $16 imply approximately zero economic profit in MON-04?",
+    "options": [
+      "P = ATC at the fair-return output",
+      "P = MR at the fair-return output",
+      "MC = ATC at the $10 regulated price",
+      "Total revenue equals zero near Q = 116"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.6",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "average_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "average_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Average-cost pricing sets P = ATC, covering economic costs without positive economic profit.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "1f552e9ecf0242482f4b2e45809736f08e577aa14d78f6690187aea5fbf19e48",
+    "canonicalId": "P62G-MON-H-043",
+    "sourceId": 706052,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "9cb0918db38cb6ec4ce6e13ae3f6a9c11b86f8961c7e0074a48714d276cb145e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "average_cost_regulation",
+        "sourceRecordOrder": 52,
+        "sourceId": 706052,
+        "sourceHash": "9cb0918db38cb6ec4ce6e13ae3f6a9c11b86f8961c7e0074a48714d276cb145e"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-H-044",
+    "sourceGame": "monopoly",
+    "q": "Which ordering of quantities is shown in MON-04?",
+    "options": [
+      "Marginal-cost output < fair-return output < unregulated monopoly",
+      "Unregulated monopoly < fair-return output < marginal-cost output",
+      "Fair-return output < unregulated monopoly < marginal-cost output",
+      "All three policies produce the same quantity"
+    ],
+    "tag": "monopoly",
+    "type": "analysis",
+    "objective": "MON.6",
+    "difficulty": "hard",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "regulatory_tradeoff",
+    "secondarySkills": [],
+    "repairSkill": "regulatory_tradeoff",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The graph marks about 70 units unregulated, 116 under fair-return pricing, and 140 under marginal-cost pricing.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "98aafd30ef8fbbba5039a227895761a4df9f9ecff42f9ff2e0450007ee88123a",
+    "canonicalId": "P62G-MON-H-044",
+    "sourceId": 706053,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "65a0ad37f0dd2ed9e5ccf25f46bef582db9cb95611076ec86376367ae4ff0197",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "regulatory_tradeoff",
+        "sourceRecordOrder": 53,
+        "sourceId": 706053,
+        "sourceHash": "65a0ad37f0dd2ed9e5ccf25f46bef582db9cb95611076ec86376367ae4ff0197"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-031",
+    "sourceGame": "monopoly",
+    "q": "Suppose fixed cost rises by $360 while demand, MR, and MC remain as in MON-01. What happens to the monopoly choice and economic profit?",
+    "options": [
+      "Q and P stay at 36 and $42; profit falls from $540 to $180",
+      "Q falls to 24 and P rises to $48; profit stays $540",
+      "Q rises to 60 and P falls to $30; profit becomes zero",
+      "Q and P stay at 36 and $42; profit rises to $900"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.4",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "A fixed-cost change does not alter MR or MC, so Q and P stay put. Profit falls dollar-for-dollar by $360.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "8ce8aea4fd49f7265e37523010e7cb13ec23224009d98a587944a93620d6504a",
+    "canonicalId": "P62G-MON-EL-031",
+    "sourceId": 706012,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "5544e7c5df7f110d56f9592b7caba3f68b8d67b4b9a4c3779ef7aa417a7e70ef",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 12,
+        "sourceId": 706012,
+        "sourceHash": "5544e7c5df7f110d56f9592b7caba3f68b8d67b4b9a4c3779ef7aa417a7e70ef"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-032",
+    "sourceGame": "monopoly",
+    "q": "Why would moving output from 36 toward the D = MC quantity of 60 reduce allocative inefficiency in MON-01?",
+    "options": [
+      "MR exceeds price on every unit through Q = 60",
+      "Demand exceeds MC on the additional units",
+      "ATC is constant between Q = 36 and Q = 60",
+      "The monopoly price stays fixed at $42 as output expands"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.5",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_deadweight_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_deadweight_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Between the monopoly quantity and D = MC, demand lies above MC, so mutually beneficial units are not produced under monopoly.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "017428cc003916d25236abdf65e5226a37d5b83bc7d506de26a47d368ce1184b",
+    "canonicalId": "P62G-MON-EL-032",
+    "sourceId": 706013,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "225d68e59f2ed62eb8a60cc4e859866838e1697cb83048515b6fb1b522917bd4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "monopoly_deadweight_loss",
+        "sourceRecordOrder": 13,
+        "sourceId": 706013,
+        "sourceHash": "225d68e59f2ed62eb8a60cc4e859866838e1697cb83048515b6fb1b522917bd4"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-033",
+    "sourceGame": "monopoly",
+    "q": "If ATC at Q = 40 fell from $45 to $35 while demand, MR, and MC stayed as in MON-02, what would result?",
+    "options": [
+      "The firm switches to Q = 67 and earns zero economic profit",
+      "Price falls automatically from $40 to the new ATC of $35",
+      "Q = 40 and P = $40 stay; the firm still loses $200",
+      "Q = 40 and P = $40 stay; profit becomes $200"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.4",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The marginal decision is unchanged. Profit becomes ($40 − $35) × 40 = $200.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "2179aae1ca637b14c63b2f50499c6be4d7ce8befa4865b03f23f62666b5da14b",
+    "canonicalId": "P62G-MON-EL-033",
+    "sourceId": 706027,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "a0cc970552ba9165f04700d9c20992b901a65d875a783f04864626e873bf1b7d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 27,
+        "sourceId": 706027,
+        "sourceHash": "a0cc970552ba9165f04700d9c20992b901a65d875a783f04864626e873bf1b7d"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-034",
+    "sourceGame": "monopoly",
+    "q": "What feature of MON-02 shows the allocative gap created by monopoly?",
+    "options": [
+      "Demand stays above MC between Q = 40 and Q ≈ 67",
+      "MR stays above demand between Q = 40 and Q ≈ 67",
+      "ATC stays below price at the monopoly quantity of 40",
+      "MC is horizontal between the monopoly and benchmark outputs"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.5",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_deadweight_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_deadweight_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Units between the monopoly quantity and D = MC have marginal benefit above marginal cost but are not produced.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "2a768e2eb89302a66b60152b46644de8ce6dbff54a8cb58232432ee9a05c2148",
+    "canonicalId": "P62G-MON-EL-034",
+    "sourceId": 706028,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "5af4bf6d041368cc29cfbd7bd603af55df685f6c81692757ed7db6274dd99139",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "monopoly_deadweight_loss",
+        "sourceRecordOrder": 28,
+        "sourceId": 706028,
+        "sourceHash": "5af4bf6d041368cc29cfbd7bd603af55df685f6c81692757ed7db6274dd99139"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-035",
+    "sourceGame": "monopoly",
+    "q": "If a regulator requires marginal-cost pricing in MON-03, which output-price pair is implied?",
+    "options": [
+      "Q = 45 and P = $47",
+      "Q = 90 and P = $20",
+      "Q = 45 and P = $20",
+      "Q = 90 and P = $47"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.6",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Marginal-cost pricing uses the demand-MC intersection, marked at 90 units and $20.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "4f44d9aa03eed8cb067cd27ecb55b462fd4b10e41d240f41a49ee9055d0593fd",
+    "canonicalId": "P62G-MON-EL-035",
+    "sourceId": 706041,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "03fd8f08cc2d9acd314162925432ec574e5009ac33a035141a6e8fcd12d3aa1f",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 41,
+        "sourceId": 706041,
+        "sourceHash": "03fd8f08cc2d9acd314162925432ec574e5009ac33a035141a6e8fcd12d3aa1f"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-036",
+    "sourceGame": "monopoly",
+    "q": "Why can marginal-cost pricing create a financing problem for the MON-03 natural monopoly?",
+    "options": [
+      "At Q = 90, MR is above the demand price",
+      "At Q = 45, price is below marginal cost",
+      "At Q = 90, ATC is above the $20 regulated price",
+      "ATC rises sharply as output expands from 45 to 90"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.6",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "regulatory_tradeoff",
+    "secondarySkills": [],
+    "repairSkill": "regulatory_tradeoff",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "With economies of scale, ATC can exceed MC at the efficient output, so P = MC may not cover total cost.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "5d47a7daefb03b4743caccf54fd1fff4c8e15eed2711d488c9459100ea5524a1",
+    "canonicalId": "P62G-MON-EL-036",
+    "sourceId": 706042,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "6888be7b956aa3db48072992a29d4c776cccf7e9787c50d02d58bd52e0db7c8a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "regulatory_tradeoff",
+        "sourceRecordOrder": 42,
+        "sourceId": 706042,
+        "sourceHash": "6888be7b956aa3db48072992a29d4c776cccf7e9787c50d02d58bd52e0db7c8a"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-037",
+    "sourceGame": "monopoly",
+    "q": "Compared with the unregulated monopoly outcome in MON-03, moving to D = MC would:",
+    "options": [
+      "Halve output from 90 to 45 and raise price from $20 to $47",
+      "Keep output at 45 while cutting price to $20",
+      "Raise output to 125 while leaving price at $47",
+      "Double output from 45 to 90 and cut price from $47 to $20"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.5",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "competitive_monopoly_comparison",
+    "secondarySkills": [],
+    "repairSkill": "competitive_monopoly_comparison",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The marked outcomes are Q = 45, P = $47 for monopoly and Q = 90, P = $20 at D = MC.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "9dab4104b77c03efd054a37b6d6c4bfbd7981002c01493116e0242137d5ce0e1",
+    "canonicalId": "P62G-MON-EL-037",
+    "sourceId": 706043,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "6325ca96d495f62daacc2dc57cf09b3e878db43d22cd777c6dd788e6bd9cf32a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "competitive_monopoly_comparison",
+        "sourceRecordOrder": 43,
+        "sourceId": 706043,
+        "sourceHash": "6325ca96d495f62daacc2dc57cf09b3e878db43d22cd777c6dd788e6bd9cf32a"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-038",
+    "sourceGame": "monopoly",
+    "q": "Which price-output ordering is consistent with MON-04?",
+    "options": [
+      "Prices rise $10 → $16 → $27 as output rises 70 → 116 → 140",
+      "Price stays $27 while output rises 70 → 140",
+      "Prices fall $27 → $16 → $10 as output rises 70 → 116 → 140",
+      "Output falls 140 → 70 as prices fall $27 → $10"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.6",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "regulatory_tradeoff",
+    "secondarySkills": [],
+    "repairSkill": "regulatory_tradeoff",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Stronger regulation toward marginal-cost pricing lowers price and expands output in the displayed natural monopoly.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "2a1c4611ac8eb39ae900e2ab05519ec65f125b9ae0657d503396d4b26f8a4668",
+    "canonicalId": "P62G-MON-EL-038",
+    "sourceId": 706054,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "3ebeb7ad61a4d8d5473989ad100899ffa5c1f7ae4aae1e275689740e5ab39784",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "regulatory_tradeoff",
+        "sourceRecordOrder": 54,
+        "sourceId": 706054,
+        "sourceHash": "3ebeb7ad61a4d8d5473989ad100899ffa5c1f7ae4aae1e275689740e5ab39784"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-039",
+    "sourceGame": "monopoly",
+    "q": "Why is average-cost pricing in MON-04 less allocatively efficient than marginal-cost pricing?",
+    "options": [
+      "Fair-return leaves P < MC and Q above 140 units",
+      "Average-cost pricing reaches D = MC and produces positive profit",
+      "Average-cost pricing makes demand horizontal at the regulated price",
+      "Fair-return leaves P > MC and Q below 140 units"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.6",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "average_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "average_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Fair-return pricing covers costs but stops short of the D = MC quantity because P remains above MC.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "4c8e57483a9d682321104c56c363a62712a218f319568661e223ca862322b065",
+    "canonicalId": "P62G-MON-EL-039",
+    "sourceId": 706055,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "8a4ce258078667f35635452a2df2bbc506984d80853b7bf3e12983d8cd789d5c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "average_cost_regulation",
+        "sourceRecordOrder": 55,
+        "sourceId": 706055,
+        "sourceHash": "8a4ce258078667f35635452a2df2bbc506984d80853b7bf3e12983d8cd789d5c"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-EL-040",
+    "sourceGame": "monopoly",
+    "q": "Why might the MON-04 regulator need a subsidy under marginal-cost pricing?",
+    "options": [
+      "P = $10 is below ATC = $15 at Q = 140",
+      "P = $27 exceeds ATC at Q = 70",
+      "P = $16 equals ATC at Q = 116",
+      "MR is greater than demand at Q = 140"
+    ],
+    "tag": "monopoly",
+    "type": "elite",
+    "objective": "MON.6",
+    "difficulty": "elite",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At the efficient quantity, total revenue at P = MC does not cover average total cost.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "85f1a9245a155e8a3db90f015bfc6d549b2ca1a9ced3d8fa8483ee9c4d471fdd",
+    "canonicalId": "P62G-MON-EL-040",
+    "sourceId": 706056,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "9067ece23b075253e66be1f178bc69f311e7ad5151ff0927f7216554bd4d5739",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 56,
+        "sourceId": 706056,
+        "sourceHash": "9067ece23b075253e66be1f178bc69f311e7ad5151ff0927f7216554bd4d5739"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-L-091",
+    "sourceGame": "monopoly",
+    "q": "If a regulator forced the MON-01 firm to operate at the D = MC outcome, which result follows from the displayed values?",
+    "options": [
+      "Q falls to 24, P rises to $48, and economic profit increases",
+      "Q stays at 36, P falls to $24, and the firm earns zero profit",
+      "Q rises to 60, P falls to $30, and P = ATC",
+      "Q rises to 60, P stays at $42, and economic profit increases"
+    ],
+    "tag": "monopoly",
+    "type": "legendary",
+    "objective": "MON.5",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "integrated_monopoly_analysis",
+    "secondarySkills": [],
+    "repairSkill": "integrated_monopoly_analysis",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "At Q = 60, D = MC = $30 and the displayed ATC is also $30, so the benchmark yields zero economic profit.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "0b99f6cb8ea374efa7971eb6f750824a0af447291bf051d02dca98293c7e47f4",
+    "canonicalId": "P62G-MON-L-091",
+    "sourceId": 706014,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "5787a9a5971519c3f5b235a958237483c883fdba8be00609fa2f2f9f2208be1f",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "integrated_monopoly_analysis",
+        "sourceRecordOrder": 14,
+        "sourceId": 706014,
+        "sourceHash": "5787a9a5971519c3f5b235a958237483c883fdba8be00609fa2f2f9f2208be1f"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-L-092",
+    "sourceGame": "monopoly",
+    "q": "How much would ATC at Q = 40 have to fall, with MR and MC unchanged, for the MON-02 monopolist to break even at its existing output and price?",
+    "options": [
+      "$13 per unit",
+      "$5 per unit",
+      "$20 per unit",
+      "$25 per unit"
+    ],
+    "tag": "monopoly",
+    "type": "legendary",
+    "objective": "MON.4",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "Break-even requires ATC to fall from $45 to the $40 price, a $5 reduction per unit at Q = 40.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "cecfca24f0d86e444d4d1541eb730c6de5a1178936d00ebd0b423344e3bc59fa",
+    "canonicalId": "P62G-MON-L-092",
+    "sourceId": 706029,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "1dd2dd1bbd04f88aa2e35afd4810d44189e195619a1057328173a776e15091cc",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 29,
+        "sourceId": 706029,
+        "sourceHash": "1dd2dd1bbd04f88aa2e35afd4810d44189e195619a1057328173a776e15091cc"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-L-093",
+    "sourceGame": "monopoly",
+    "q": "Which chain best describes MON-02?",
+    "options": [
+      "D = MC gives Q = 40; MR gives P = $20; P > ATC therefore creates economic profit",
+      "MR = ATC gives Q = 67; demand gives P = $27; the monopolist therefore breaks even",
+      "MR = MC gives Q = 40; demand gives P = $40; P < ATC causes a loss; D = MC is near Q = 67",
+      "MC = ATC gives Q = 40; demand gives P = $45; economic profit is therefore zero"
+    ],
+    "tag": "monopoly",
+    "type": "legendary",
+    "objective": "MON.5",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "integrated_monopoly_analysis",
+    "secondarySkills": [],
+    "repairSkill": "integrated_monopoly_analysis",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The graph separates the monopoly marginal decision, price read from demand, loss test against ATC, and efficient D = MC benchmark.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "50f4e29bdf5fe6366b74496a3abcbc0127a22fcdd7314d02ee242923206c7d96",
+    "canonicalId": "P62G-MON-L-093",
+    "sourceId": 706030,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "5874a302714326cb7e1032290d1c2a352075180faec3ac45cee8cf70954ab4bd",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "integrated_monopoly_analysis",
+        "sourceRecordOrder": 30,
+        "sourceId": 706030,
+        "sourceHash": "5874a302714326cb7e1032290d1c2a352075180faec3ac45cee8cf70954ab4bd"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-L-094",
+    "sourceGame": "monopoly",
+    "q": "What is the strongest reason a subsidy may be paired with marginal-cost pricing in MON-03?",
+    "options": [
+      "At efficient output, P = MC remains below ATC",
+      "At efficient output, P exceeds both MC and ATC",
+      "At monopoly output, price is already below marginal cost",
+      "A subsidy is needed to keep MR above demand at Q = 90"
+    ],
+    "tag": "monopoly",
+    "type": "legendary",
+    "objective": "MON.6",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "A natural monopoly can be allocatively efficient at P = MC yet unable to cover total cost because ATC remains higher.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "68328be054a1ceb8de68a8cafd8bef85d99de0c877c87421b80b52d67667a16e",
+    "canonicalId": "P62G-MON-L-094",
+    "sourceId": 706044,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "097155f56fbea314090459429dc1f949494c923887c4b9dcf25d6741bac8158c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 44,
+        "sourceId": 706044,
+        "sourceHash": "097155f56fbea314090459429dc1f949494c923887c4b9dcf25d6741bac8158c"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-L-095",
+    "sourceGame": "monopoly",
+    "q": "If the regulator wants the MON-04 firm to break even while maintaining Q = 140 and P = $10, what subsidy would exactly cover the displayed loss?",
+    "options": [
+      "$140",
+      "$700",
+      "$1,500",
+      "$2,380"
+    ],
+    "tag": "monopoly",
+    "type": "legendary",
+    "objective": "MON.6",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "marginal_cost_regulation",
+    "secondarySkills": [],
+    "repairSkill": "marginal_cost_regulation",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The firm loses ($15 − $10) × 140 = $700 at marginal-cost pricing.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "5296b7db78583cfae3974e0bcae147e36aec073399860b8ffd7716f1ea5d663d",
+    "canonicalId": "P62G-MON-L-095",
+    "sourceId": 706057,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "03a36ae02bdc5cb01484cff57755fbed692058371b9e6aa9dea74594db65abce",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "marginal_cost_regulation",
+        "sourceRecordOrder": 57,
+        "sourceId": 706057,
+        "sourceHash": "03a36ae02bdc5cb01484cff57755fbed692058371b9e6aa9dea74594db65abce"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-L-096",
+    "sourceGame": "monopoly",
+    "q": "Moving from the unregulated outcome to fair-return pricing in MON-04 changes the marked outcome approximately how?",
+    "options": [
+      "Price rises by $11 and output falls by 46 units",
+      "Price falls by $17 and output rises by 70 units",
+      "Price falls by $11 and output rises by 46 units",
+      "Price falls by $6 and output rises by 24 units"
+    ],
+    "tag": "monopoly",
+    "type": "legendary",
+    "objective": "MON.6",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "regulatory_tradeoff",
+    "secondarySkills": [],
+    "repairSkill": "regulatory_tradeoff",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The graph moves from about P = $27, Q = 70 to P = $16, Q = 116.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "65b048c40523a30332c2ded430305f1cc76994b9d91e4552c18b69f03ff1a2f1",
+    "canonicalId": "P62G-MON-L-096",
+    "sourceId": 706058,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "f04fdd2c93072e85b28740d6f8390fdf16de0fad2348144df4ca610073f49ab8",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "regulatory_tradeoff",
+        "sourceRecordOrder": 58,
+        "sourceId": 706058,
+        "sourceHash": "f04fdd2c93072e85b28740d6f8390fdf16de0fad2348144df4ca610073f49ab8"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "P62G-MON-B1-055",
+    "sourceGame": "monopoly",
+    "q": "Checkpoint analysis: using MON-01, what total economic profit follows from the monopolist’s optimal quantity and price?",
+    "options": [
+      "$180",
+      "$432",
+      "$648",
+      "$540"
+    ],
+    "tag": "monopoly",
+    "type": "checkpoint",
+    "objective": "MON.4",
+    "difficulty": "checkpointOne",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_profit",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_profit",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "MR = MC gives Q = 36; demand gives P = $42; ATC is $27. Profit is ($42 − $27) × 36 = $540.",
+    "image": "question-assets/monopoly/MON-01.webp",
+    "aHash": "2833cc3c7e6829795c3bdb33a9236a61d73490db0d5b8f35cc757b2bc6b59727",
+    "canonicalId": "P62G-MON-B1-055",
+    "sourceId": 706015,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "easyBoss",
+    "sourceHash": "03a361aa9c63a50c41ffbc5c161b3b7f5e08d839cd26f60741d85121ec2278aa",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "easyBoss",
+        "routeKey": "monopoly_profit",
+        "sourceRecordOrder": 15,
+        "sourceId": 706015,
+        "sourceHash": "03a361aa9c63a50c41ffbc5c161b3b7f5e08d839cd26f60741d85121ec2278aa"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easyBoss",
+    "originalBossTier": "easyBoss"
+  },
+  {
+    "id": "P62G-MON-B2-056",
+    "sourceGame": "monopoly",
+    "q": "Checkpoint analysis: using MON-02, what total economic result follows at the profit-maximizing monopoly output?",
+    "options": [
+      "$200 economic profit",
+      "$800 economic loss",
+      "$1,000 economic profit",
+      "$200 economic loss"
+    ],
+    "tag": "monopoly",
+    "type": "checkpoint",
+    "objective": "MON.4",
+    "difficulty": "checkpointTwo",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "monopoly_loss",
+    "secondarySkills": [],
+    "repairSkill": "monopoly_loss",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "MR = MC gives Q = 40, demand gives P = $40, and ATC is $45. The loss is ($45 − $40) × 40 = $200.",
+    "image": "question-assets/monopoly/MON-02.webp",
+    "aHash": "a091e79d76c75b556c22ace772dc6dedcfd12c78d1193a3a61c5b5317cfcf1f3",
+    "canonicalId": "P62G-MON-B2-056",
+    "sourceId": 706031,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "mediumBoss",
+    "sourceHash": "af27f4dced6453234dcfb3704c58e856b3b2f3340810240e11af1411342a9204",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "mediumBoss",
+        "routeKey": "monopoly_loss",
+        "sourceRecordOrder": 31,
+        "sourceId": 706031,
+        "sourceHash": "af27f4dced6453234dcfb3704c58e856b3b2f3340810240e11af1411342a9204"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "mediumBoss",
+    "originalBossTier": "mediumBoss"
+  },
+  {
+    "id": "P62G-MON-B3-057",
+    "sourceGame": "monopoly",
+    "q": "Checkpoint analysis: which comparison best captures the unregulated and efficient outcomes in MON-03?",
+    "options": [
+      "Unregulated: Q = 90, P = $20; efficient: Q = 45, P = $47",
+      "Unregulated: Q = 45, P = $47; efficient D = MC: Q = 90, P = $20",
+      "Unregulated: Q = 45, P = $20; efficient: Q = 90, P = $47",
+      "Both outcomes occur at Q = 45 because MC is horizontal"
+    ],
+    "tag": "monopoly",
+    "type": "checkpoint",
+    "objective": "MON.5",
+    "difficulty": "finalCheckpoint",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "integrated_monopoly_analysis",
+    "secondarySkills": [],
+    "repairSkill": "integrated_monopoly_analysis",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "MR = MC determines the unregulated monopoly output, while D = MC identifies the allocatively efficient benchmark.",
+    "image": "question-assets/monopoly/MON-03.webp",
+    "aHash": "71161ca8c3c3e8e30a71511cf23fed3cd2eb1534c624f2282a9f69dab4da8519",
+    "canonicalId": "P62G-MON-B3-057",
+    "sourceId": 706045,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "0d99a92c68f9010c49de62ae2a5fcd4109868ead615ddbfa7f5516dae3b506f4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "integrated_monopoly_analysis",
+        "sourceRecordOrder": 45,
+        "sourceId": 706045,
+        "sourceHash": "0d99a92c68f9010c49de62ae2a5fcd4109868ead615ddbfa7f5516dae3b506f4"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss"
+  },
+  {
+    "id": "P62G-MON-B3-058",
+    "sourceGame": "monopoly",
+    "q": "Checkpoint analysis: which statement correctly contrasts fair-return and marginal-cost regulation in MON-04?",
+    "options": [
+      "Fair-return sets P = MC at Q = 140; MC pricing sets P = ATC near Q = 116",
+      "Both rules preserve the unregulated price near $27 and leave output close to Q = 70",
+      "MC pricing produces less output than fair-return pricing because the MC curve is horizontal",
+      "Fair-return covers ATC near Q = 116; MC pricing reaches Q = 140 but P < ATC"
+    ],
+    "tag": "monopoly",
+    "type": "checkpoint",
+    "objective": "MON.6",
+    "difficulty": "finalCheckpoint",
+    "conceptCluster": "micro_monopoly",
+    "primarySkill": "regulatory_tradeoff",
+    "secondarySkills": [],
+    "repairSkill": "regulatory_tradeoff",
+    "commonError": "misreads_monopoly_graph",
+    "feedback": "The graph shows the classic tradeoff: average-cost pricing supports break-even, while marginal-cost pricing reaches the efficient quantity but may require a subsidy.",
+    "image": "question-assets/monopoly/MON-04.webp",
+    "aHash": "cb52c0e2fbdc88a7671ff9fcc42771328c42d76b0621e8dc1c46e627a89e7c07",
+    "canonicalId": "P62G-MON-B3-058",
+    "sourceId": 706059,
+    "sourceChapter": [
+      "monopoly"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "f7c70a6467433f32bebf771e564b5c01215275f6eeb1abcc3e421c21130078e7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "regulatory_tradeoff",
+        "sourceRecordOrder": 59,
+        "sourceId": 706059,
+        "sourceHash": "f7c70a6467433f32bebf771e564b5c01215275f6eeb1abcc3e421c21130078e7"
+      }
+    ],
+    "primaryConceptId": "monopoly",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss"
+  }
+]

@@ -62,3 +62,8 @@ Every Phase 6 concept passes its composer validation after the audit. The follow
 Answer verification passes with **0 failures**. Asset verification passes with **0 missing files or hash mismatches**.
 
 Current library SHA-256: `abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56`
+
+
+## Post-audit Costs rebuild
+
+Phase 6.2e Costs of Production was subsequently rebuilt with six title-free canonical figures and 72 new graph-dependent items. Two previously retained cost-shift scenario attachments were converted to text-only. Current Costs graph coverage is **100** items, and current graph coverage across the eight Phase 6 graph-rich micro concepts is **392** items. See `PHASE6_2E_COST_GRAPH_EXPANSION_V2_REPORT.md` for the current Costs-specific validation.

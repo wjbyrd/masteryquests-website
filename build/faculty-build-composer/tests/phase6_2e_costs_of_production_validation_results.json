@@ -1,27 +1,27 @@
 {
   "ok": true,
   "conceptId": "costs-of-production",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2",
   "errors": [],
   "warnings": [],
   "counts": {
-    "easy": 30,
-    "medium": 30,
-    "hard": 60,
-    "elite": 30,
-    "legendary": 90,
-    "easyBoss": 18,
-    "mediumBoss": 18,
-    "finalBoss": 18,
+    "easy": 44,
+    "medium": 46,
+    "hard": 76,
+    "elite": 42,
+    "legendary": 98,
+    "easyBoss": 20,
+    "mediumBoss": 20,
+    "finalBoss": 20,
     "legendaryBoss": 36,
     "repair": 20,
     "repairSeed": 0,
     "bridge": 20,
     "calculation": 30,
     "integration": 0,
-    "graph": 30,
-    "assets": 59,
-    "totalCanonical": 370
+    "graph": 100,
+    "assets": 65,
+    "totalCanonical": 442
   },
   "countIssues": [],
   "modes": [
@@ -32,32 +32,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 46
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 76
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "repair",
@@ -80,17 +80,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 46
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 76
         },
         {
           "pool": "repair",
@@ -113,17 +113,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 46
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 76
         },
         {
           "pool": "repair",
@@ -146,7 +146,7 @@
         {
           "pool": "legendary",
           "minimum": 6,
-          "count": 90
+          "count": 98
         },
         {
           "pool": "legendaryBoss",
@@ -164,32 +164,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 44
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 46
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 76
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "repair",
@@ -208,16 +208,16 @@
   ],
   "answerAudit": {
     "ok": true,
-    "questionCount": 370,
+    "questionCount": 442,
     "issues": []
   },
   "assetAudit": {
-    "assetCount": 59,
+    "assetCount": 65,
     "issues": []
   },
   "sampleHtml": {
     "path": "tests/costs-of-production-sample.html",
-    "bytes": 2793586
+    "bytes": 3401385
   },
   "bossCoverage": {
     "checkpointOne": {
@@ -231,7 +231,7 @@
       "activeConceptIds": [
         "costs-of-production"
       ],
-      "questionCount": 18
+      "questionCount": 20
     },
     "checkpointTwo": {
       "label": "Checkpoint Two",
@@ -244,7 +244,7 @@
       "activeConceptIds": [
         "costs-of-production"
       ],
-      "questionCount": 18
+      "questionCount": 20
     },
     "finalCheckpoint": {
       "label": "Final Checkpoint",
@@ -257,7 +257,7 @@
       "activeConceptIds": [
         "costs-of-production"
       ],
-      "questionCount": 18
+      "questionCount": 20
     }
   }
 }
