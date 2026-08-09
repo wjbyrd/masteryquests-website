@@ -1,0 +1,20 @@
+{
+  "phase": "phase7.3-marginal-analysis-standalone-expansion-v1",
+  "concept": "marginal-analysis",
+  "testedUrl": "http://127.0.0.1:8773/index.html",
+  "testedAt": "2026-08-09T22:17:15.000Z",
+  "passed": true,
+  "summary": "The standalone title and player entry rendered; all five modes started with four-option Marginal Analysis questions; the 10/20/30 checkpoint track rendered; Standard resumed as Codex QA at room 2 after reload; Legendary opened on an explicit total-to-marginal calculation; and the browser log contained no warnings or errors.",
+  "title": "MARGINAL ANALYSIS STANDALONE",
+  "playerName": "Codex QA",
+  "modes": {
+    "standard": { "start": true, "questionSelection": true, "fourOptions": true },
+    "timed": { "start": true, "questionSelection": true, "fourOptions": true, "timerVisible": true },
+    "exam": { "start": true, "questionSelection": true, "fourOptions": true },
+    "legendary": { "start": true, "questionSelection": true, "fourOptions": true, "calculationPromptVisible": true },
+    "score": { "start": true, "questionSelection": true, "fourOptions": true, "scoreVisible": true }
+  },
+  "checkpointTrack": { "room10": true, "room20": true, "room30": true },
+  "saveResume": { "passed": true, "playerPreserved": true, "resumedRoom": 2 },
+  "console": { "errors": 0, "warnings": 0 }
+}

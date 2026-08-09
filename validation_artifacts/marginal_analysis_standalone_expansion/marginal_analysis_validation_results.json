@@ -1,0 +1,943 @@
+{
+  "phase": "phase7.3-marginal-analysis-standalone-expansion-v1",
+  "concept": "marginal-analysis",
+  "generatedAt": "2026-08-10T06:00:00.000Z",
+  "baselineLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1",
+  "productionLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1",
+  "scope": {
+    "unrelatedConceptBanksChanged": [],
+    "scarcityBankUnchanged": true,
+    "opportunityCostBankUnchanged": true,
+    "onlyMarginalAnalysisQuestionRecordsChanged": true
+  },
+  "beforeCounts": {
+    "easy": 6,
+    "medium": 6,
+    "hard": 6,
+    "elite": 4,
+    "legendary": 6,
+    "calculation": 2,
+    "easyBoss": 5,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 3,
+    "repairSeed": 1,
+    "bridge": 2,
+    "totalCanonical": 50
+  },
+  "afterCounts": {
+    "easy": 10,
+    "medium": 12,
+    "hard": 12,
+    "elite": 6,
+    "legendary": 27,
+    "calculation": 2,
+    "easyBoss": 5,
+    "mediumBoss": 5,
+    "finalBoss": 5,
+    "legendaryBoss": 9,
+    "repair": 8,
+    "repairSeed": 1,
+    "bridge": 6,
+    "totalCanonical": 108
+  },
+  "changeCounts": {
+    "ADD": 58,
+    "REWRITE": 17,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "REMOVE": 0
+  },
+  "instructional": {
+    "definitionHeavyOrdinaryBefore": 3,
+    "definitionHeavyOrdinaryAfter": 0,
+    "scenarioApplicationBefore": 9,
+    "scenarioApplicationAfter": 24
+  },
+  "misconceptions": {
+    "before": {
+      "marginal is not average": 9,
+      "marginal is not total": 13,
+      "continue while MB covers MC": 13,
+      "exclude sunk costs": 20,
+      "compare the next increment": 24,
+      "subtract rather than add MB and MC": 2,
+      "future avoidable cost is not sunk": 5,
+      "gross revenue is not net benefit": 7
+    },
+    "after": {
+      "marginal is not average": 17,
+      "marginal is not total": 19,
+      "continue while MB covers MC": 21,
+      "exclude sunk costs": 26,
+      "compare the next increment": 60,
+      "subtract rather than add MB and MC": 21,
+      "future avoidable cost is not sunk": 9,
+      "gross revenue is not net benefit": 16
+    }
+  },
+  "calculationAudit": {
+    "dedicatedCount": 2,
+    "totalLinkedCount": 45,
+    "distinctTaskFamilies": [
+      "avoided-cost-as-marginal-benefit",
+      "changing-external-mc-schedule",
+      "checkpoint-social-margin",
+      "checkpoint-total-change-comparison",
+      "constant-mc-stopping-schedule",
+      "decision-from-total-changes",
+      "expected-avoided-cost-net-margin",
+      "expected-benefit-social-cost",
+      "expected-benefit-with-opportunity-cost",
+      "expected-marginal-benefit",
+      "incremental-benefit-with-displaced-use",
+      "incremental-benefit-with-opportunity-cost",
+      "incremental-net-with-delayed-alternative",
+      "incremental-output-multiple-costs",
+      "incremental-profit-fixed-cost-trap",
+      "incremental-profit-with-congestion-cost",
+      "legendary-boss-expected-margin",
+      "legendary-boss-external-cost",
+      "legendary-boss-paired-schedule",
+      "legendary-boss-workforce-margin",
+      "legendary-checkpoint-stopping-schedule",
+      "marginal-benefit-from-total-change",
+      "marginal-cost-from-total-change",
+      "mb-minus-mc",
+      "mr-mc-from-total-changes",
+      "multiple-incremental-costs",
+      "net-margin-from-total-changes",
+      "net-margin-from-two-total-schedules",
+      "paired-margins-from-total-changes",
+      "paired-stopping-schedule",
+      "private-to-social-margin",
+      "probability-weighted-incremental-profit",
+      "probability-weighted-marginal-benefit",
+      "public-workforce-net-margin",
+      "repair-marginal-from-total",
+      "repair-net-marginal-benefit",
+      "social-cost-with-displaced-benefit",
+      "social-marginal-cost-addition",
+      "sunk-cost-final-increment"
+    ]
+  },
+  "duplicateAudit": {
+    "exactDuplicateStems": [],
+    "nearDuplicateCandidates": [],
+    "materialNearDuplicates": [],
+    "repeatedAnswerSets": [],
+    "numberNameSwaps": [],
+    "scenarioDistribution": {
+      "a delivery service considers": 1,
+      "a student asks whether": 1,
+      "a food truck can": 1,
+      "a student has already": 1,
+      "a clinic adds one": 1,
+      "a caf should remain": 1,
+      "a student considers studying": 1,
+      "a restaurant can serve": 1,
+      "a store has already": 1,
+      "a clinic can treat": 1,
+      "a business owner already": 1,
+      "the marginal benefit of": 1,
+      "a firm has already": 1,
+      "a museum stays open": 1,
+      "a factory s average": 1,
+      "a student studies an": 1,
+      "total benefit rises from": 2,
+      "a warehouse s average": 1,
+      "a firm can run": 1,
+      "a project has an": 1,
+      "a sixth quality inspection": 1,
+      "one more worker adds": 1,
+      "a firm can produce": 1,
+      "a city has spent": 1,
+      "a clinic can extend": 1,
+      "a company s average": 1,
+      "a farmer has already": 1,
+      "a software team has": 1,
+      "an airline can sell": 1,
+      "a city considers a": 1,
+      "total revenue at 200": 1,
+      "a hospital can add": 1,
+      "a research grant has": 1,
+      "a retailer s first": 1,
+      "a vaccine trial can": 1,
+      "a factory s next": 2,
+      "a project already cost": 1,
+      "a university can admit": 1,
+      "a flood barrier segment": 1,
+      "a platform can add": 1,
+      "a cyber security team": 1,
+      "a transit agency can": 1,
+      "a firm spent 12": 1,
+      "a hospital considers one": 1,
+      "a producer has positive": 1,
+      "a policy has already": 1,
+      "a hospital considers a": 1,
+      "an airline s next": 1,
+      "a software team s": 1,
+      "a city can add": 2,
+      "a pollution rule s": 1,
+      "a factory s total": 1,
+      "a police department considers": 1,
+      "a research fund can": 1,
+      "a tutoring program s": 1,
+      "a manufacturer has 3": 1,
+      "a utility considers one": 1,
+      "a marketing campaign has": 1,
+      "an emergency agency can": 1,
+      "a bus route s": 1,
+      "a farm s next": 1,
+      "a university pilot has": 1,
+      "a city adds park": 1,
+      "a nonprofit can deliver": 1,
+      "a maintenance team can": 1,
+      "a data center s": 1,
+      "a school intervention s": 1,
+      "if the marginal benefit": 1,
+      "a firm already spent": 1,
+      "a bookstore considers staying": 1,
+      "a business can earn": 1,
+      "a grocer can stock": 1,
+      "a vendor already spent": 1,
+      "a nurse can make": 1,
+      "the next unit has": 1,
+      "a nonrefundable fee has": 1,
+      "a school considers one": 1,
+      "mb values for units": 1,
+      "a project s past": 1,
+      "the next customer generates": 1,
+      "a firm s average": 1,
+      "a project has 10": 1,
+      "one more factory inspection": 1,
+      "a warehouse has packed": 1,
+      "a software firm has": 1,
+      "a transit system can": 1,
+      "a project has spent": 1,
+      "a hospital s next": 1,
+      "a manufacturer s next": 1,
+      "a cleanup step yields": 1,
+      "a test has a": 1,
+      "marginal benefit is": 1,
+      "a cost is sunk": 1,
+      "the marginal rule says": 1,
+      "total benefit is 50": 1,
+      "marginal cost is 12": 1,
+      "which value is average": 1,
+      "a 100 fee is": 1,
+      "one more sale brings": 1,
+      "a decision should continue": 1,
+      "scarcity limits a community": 1,
+      "a worker could earn": 1,
+      "a firm expands output": 1,
+      "a public program considers": 1,
+      "a consumer buys another": 1
+    },
+    "cognitiveTaskDistribution": {
+      "application|marginal_benefit_cost_decision": 6,
+      "application|marginal_reasoning_identification": 4,
+      "application|marginal_benefit_cost_rule": 6,
+      "application|sunk_cost_avoidance": 8,
+      "calculation|marginal_value_from_totals": 7,
+      "calculation|basic_net_benefit": 2,
+      "interpretation|marginal_benefit_cost_decision": 2,
+      "calculation|marginal_benefit_cost_decision": 4,
+      "calculation|marginal_vs_average": 1,
+      "application|marginal_vs_average": 3,
+      "calculation|stopping_point_analysis": 4,
+      "calculation|incremental_profit": 3,
+      "calculation|marginal_benefit_cost_rule": 1,
+      "policy-analysis|sunk_cost_avoidance": 1,
+      "multi-step|marginal_benefit_cost_rule": 3,
+      "multi-step|marginal_benefit_cost_decision": 4,
+      "calculation|opportunity_cost_in_marginal_cost": 2,
+      "policy-analysis|external_marginal_cost": 3,
+      "application|opportunity_cost_in_marginal_cost": 2,
+      "uncertainty-analysis|expected_marginal_value": 4,
+      "threshold-analysis|discrete_threshold": 2,
+      "uncertainty-transfer|expected_marginal_value": 1,
+      "multi-step|sunk_cost_avoidance": 3,
+      "uncertainty-transfer|external_marginal_cost": 1,
+      "transfer|opportunity_cost_in_marginal_cost": 1,
+      "multi-step|opportunity_cost_in_marginal_cost": 1,
+      "resource-allocation|opportunity_cost_in_marginal_cost": 3,
+      "calculation|external_marginal_cost": 1,
+      "social-analysis|external_marginal_cost": 1,
+      "environmental-analysis|external_marginal_cost": 1,
+      "sunk-cost-analysis|sunk_cost_avoidance": 1,
+      "multi-step|external_marginal_cost": 1,
+      "nonprofit-analysis|opportunity_cost_in_marginal_cost": 1,
+      "calculation|expected_marginal_value": 1,
+      "technology-analysis|opportunity_cost_in_marginal_cost": 1,
+      "sequential-analysis|discrete_threshold": 1,
+      "calculation|sunk_cost_avoidance": 1,
+      "trap|sunk_cost_avoidance": 2,
+      "sunk-cost-trap|sunk_cost_avoidance": 1,
+      "external-cost-analysis|external_marginal_cost": 1,
+      "diagnostic|marginal_vs_total": 1,
+      "diagnostic|marginal_benefit_cost_decision": 1,
+      "diagnostic|marginal_vs_average": 1,
+      "diagnostic|sunk_cost_avoidance": 1,
+      "diagnostic|basic_net_benefit": 1,
+      "repair|core_marginal": 1,
+      "bridge|scarcity_to_marginal_choice": 1,
+      "bridge|opportunity_cost_to_marginal_cost": 1,
+      "bridge|marginal_to_profit_maximization": 1,
+      "bridge|marginal_to_external_cost": 1,
+      "bridge|marginal_to_cost_benefit": 1,
+      "bridge|marginal_to_consumer_choice": 1
+    }
+  },
+  "answerLengthAudit": {
+    "before": {
+      "easy": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.15
+      },
+      "medium": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.03
+      },
+      "hard": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.156
+      },
+      "elite": {
+        "count": 4,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.75,
+        "meanCorrectToDistractorRatio": 1.228
+      },
+      "legendary": {
+        "count": 6,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.099
+      },
+      "calculation": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.925
+      },
+      "easyBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 1.137
+      },
+      "mediumBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.541
+      },
+      "finalBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.626
+      },
+      "legendaryBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.273
+      },
+      "repair": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.22
+      },
+      "bridge": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      }
+    },
+    "after": {
+      "easy": {
+        "count": 10,
+        "uniquelyLongestCorrect": 4,
+        "uniquelyLongestRate": 0.4,
+        "meanCorrectToDistractorRatio": 1.123
+      },
+      "medium": {
+        "count": 12,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.043
+      },
+      "hard": {
+        "count": 12,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.144
+      },
+      "elite": {
+        "count": 6,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.245
+      },
+      "legendary": {
+        "count": 27,
+        "uniquelyLongestCorrect": 13,
+        "uniquelyLongestRate": 0.481,
+        "meanCorrectToDistractorRatio": 1.182
+      },
+      "calculation": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.925
+      },
+      "easyBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.4,
+        "meanCorrectToDistractorRatio": 1.241
+      },
+      "mediumBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.4,
+        "meanCorrectToDistractorRatio": 1.291
+      },
+      "finalBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 0.922
+      },
+      "legendaryBoss": {
+        "count": 9,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.107
+      },
+      "repair": {
+        "count": 8,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.089
+      },
+      "bridge": {
+        "count": 6,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.193
+      }
+    }
+  },
+  "metadata": {
+    "recordIssues": [],
+    "answerValidation": {
+      "ok": true,
+      "questionCount": 108,
+      "issues": []
+    },
+    "repairRouteMissing": [],
+    "bridgeRouteMissing": []
+  },
+  "modeResults": {
+    "standard": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 7104,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "timed": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 6639,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "exam": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 6546,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "legendary": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 10000,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "score": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 7133,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    }
+  },
+  "simulations": {
+    "totalSessions": 2500,
+    "byMode": {
+      "standard": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 7104,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "timed": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 6639,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "exam": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 6546,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "legendary": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 10000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "score": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 7133,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      }
+    }
+  },
+  "sharedAreaRegression": [
+    {
+      "name": "General Economics Marginal Analysis",
+      "ids": [
+        "marginal-analysis",
+        "opportunity-cost"
+      ],
+      "marginalAnalysisInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1764,
+            "marginal-analysis": 1836
+          },
+          "minimumConceptShare": 0.49
+        },
+        "timed": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1507,
+            "opportunity-cost": 1493
+          },
+          "minimumConceptShare": 0.498
+        },
+        "exam": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1514,
+            "opportunity-cost": 1486
+          },
+          "minimumConceptShare": 0.495
+        },
+        "legendary": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1797,
+            "marginal-analysis": 1803
+          },
+          "minimumConceptShare": 0.499
+        },
+        "score": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1810,
+            "opportunity-cost": 1790
+          },
+          "minimumConceptShare": 0.497
+        }
+      },
+      "repairCount": 16,
+      "bridgeCount": 12,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Macroeconomics Marginal Analysis",
+      "ids": [
+        "marginal-analysis",
+        "gdp-measurement"
+      ],
+      "marginalAnalysisInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gdp-measurement": 1540,
+            "marginal-analysis": 2060
+          },
+          "minimumConceptShare": 0.428
+        },
+        "timed": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1741,
+            "gdp-measurement": 1259
+          },
+          "minimumConceptShare": 0.42
+        },
+        "exam": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1735,
+            "gdp-measurement": 1265
+          },
+          "minimumConceptShare": 0.422
+        },
+        "legendary": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gdp-measurement": 824,
+            "marginal-analysis": 2776
+          },
+          "minimumConceptShare": 0.229
+        },
+        "score": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 2021,
+            "gdp-measurement": 1579
+          },
+          "minimumConceptShare": 0.439
+        }
+      },
+      "repairCount": 14,
+      "bridgeCount": 9,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "adjacentRegressions": [
+    {
+      "name": "Opportunity Cost and Marginal Analysis",
+      "ids": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "marginalAnalysisInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1771,
+            "opportunity-cost": 1829
+          },
+          "minimumConceptShare": 0.492
+        },
+        "timed": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1501,
+            "marginal-analysis": 1499
+          },
+          "minimumConceptShare": 0.5
+        },
+        "exam": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1502,
+            "marginal-analysis": 1498
+          },
+          "minimumConceptShare": 0.499
+        },
+        "legendary": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1797,
+            "opportunity-cost": 1803
+          },
+          "minimumConceptShare": 0.499
+        },
+        "score": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1802,
+            "marginal-analysis": 1798
+          },
+          "minimumConceptShare": 0.499
+        }
+      },
+      "repairCount": 16,
+      "bridgeCount": 12,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Scarcity Opportunity Cost and Marginal Analysis",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "marginalAnalysisInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1276,
+            "opportunity-cost": 1284,
+            "scarcity-and-tradeoffs": 1040
+          },
+          "minimumConceptShare": 0.289
+        },
+        "timed": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1032,
+            "scarcity-and-tradeoffs": 903,
+            "marginal-analysis": 1065
+          },
+          "minimumConceptShare": 0.301
+        },
+        "exam": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "scarcity-and-tradeoffs": 883,
+            "opportunity-cost": 1055,
+            "marginal-analysis": 1062
+          },
+          "minimumConceptShare": 0.294
+        },
+        "legendary": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1209,
+            "scarcity-and-tradeoffs": 1198,
+            "opportunity-cost": 1193
+          },
+          "minimumConceptShare": 0.331
+        },
+        "score": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "scarcity-and-tradeoffs": 1054,
+            "marginal-analysis": 1256,
+            "opportunity-cost": 1290
+          },
+          "minimumConceptShare": 0.293
+        }
+      },
+      "repairCount": 23,
+      "bridgeCount": 16,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "browserValidation": {
+    "phase": "phase7.3-marginal-analysis-standalone-expansion-v1",
+    "concept": "marginal-analysis",
+    "testedUrl": "http://127.0.0.1:8773/index.html",
+    "testedAt": "2026-08-09T22:17:15.000Z",
+    "passed": true,
+    "summary": "The standalone title and player entry rendered; all five modes started with four-option Marginal Analysis questions; the 10/20/30 checkpoint track rendered; Standard resumed as Codex QA at room 2 after reload; Legendary opened on an explicit total-to-marginal calculation; and the browser log contained no warnings or errors.",
+    "title": "MARGINAL ANALYSIS STANDALONE",
+    "playerName": "Codex QA",
+    "modes": {
+      "standard": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true
+      },
+      "timed": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "timerVisible": true
+      },
+      "exam": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true
+      },
+      "legendary": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "calculationPromptVisible": true
+      },
+      "score": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "scoreVisible": true
+      }
+    },
+    "checkpointTrack": {
+      "room10": true,
+      "room20": true,
+      "room30": true
+    },
+    "saveResume": {
+      "passed": true,
+      "playerPreserved": true,
+      "resumedRoom": 2
+    },
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "graphPolicy": {
+    "marginalAnalysisAssetsBefore": 0,
+    "marginalAnalysisAssetsAfter": 0,
+    "newGraphs": 0,
+    "phase64AccessibilityPreserved": true
+  },
+  "finalVerdict": "MARGINAL ANALYSIS READY — COMPACT STANDALONE BANK VALIDATED"
+}
