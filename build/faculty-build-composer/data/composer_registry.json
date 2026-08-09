@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-09T22:30:00.000Z",
+  "generatedAt": "2026-08-10T01:15:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -5069,16 +5069,23 @@
         "core_opportunity_cost",
         "forgone_wages",
         "full_cost_opportunity_cost_analysis",
-        "marginal_benefit_cost_decision",
         "next_best_alternative",
-        "nonprice_rationing",
+        "nonmonetary_opportunity_cost",
         "opportunity_cost_calculation",
+        "opportunity_cost_comparative_advantage",
         "opportunity_cost_definition",
         "opportunity_cost_full_cost",
         "opportunity_cost_identification",
+        "opportunity_cost_implicit_cost",
+        "opportunity_cost_marginal_decision",
         "opportunity_cost_net_benefit",
-        "shortage",
-        "tradeoff_identification"
+        "opportunity_cost_over_time",
+        "opportunity_cost_ppf",
+        "opportunity_cost_production_tradeoff",
+        "owned_resource_opportunity_cost",
+        "production_tradeoff_ratio",
+        "scarcity_to_opportunity_cost",
+        "sunk_cost_distinction"
       ],
       "excludedNeighboringSkills": [
         "Assigned to production-possibilities-frontier, not this module.",
@@ -5103,45 +5110,46 @@
       "sourceGames": [
         "equilibrium-crisis",
         "market-gate",
-        "phase5.2a-concept-expansion"
+        "phase5.2a-concept-expansion",
+        "phase7.2-opportunity-cost-standalone-expansion"
       ],
       "questionCountByRole": {
-        "boss": 10,
-        "bridge": 2,
+        "boss": 15,
+        "bridge": 6,
         "calculation": 2,
-        "elite": 4,
+        "elite": 6,
         "integration": 0,
-        "legendary": 6,
-        "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "main": 34,
+        "repair": 8,
         "repairSeed": 1
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "elite": 4,
-        "hard": 10,
-        "legendary": 9,
-        "medium": 10,
-        "unknown": 6
+        "easy": 15,
+        "elite": 6,
+        "hard": 18,
+        "legendary": 36,
+        "medium": 18,
+        "unknown": 15
       },
       "repairCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 41
+        "directSkillMatches": 8,
+        "mainWithUsableSkill": 93
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 41
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 93
       },
-      "calculationCoverage": 13,
+      "calculationCoverage": 34,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "notes": "Phase 7.2 matured the shared General/Macro Opportunity Cost bank around next-best alternatives, implicit and time costs, sunk-cost distinctions, production tradeoffs, and varied calculation families.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Compact calculation-rich standalone profile met with full Legendary depth, checkpoint rotation, diagnostic Repair, and genuine conceptual Bridges.",
+      "coverageFloorVersion": "phase7.2-opportunity-cost-standalone-expansion-v1"
     },
     {
       "canonicalConceptId": "perfect-competition",
@@ -6936,5 +6944,8 @@
     }
   ],
   "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
-  "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss."
+  "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1",
+  "canonicalQuestionCount": 6459,
+  "librarySha256": "63e8223a178b5bea72b9a55b174a64e5909cd8b6c395e9f565c16a8abab5a69d"
 }

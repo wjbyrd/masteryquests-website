@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "testedAt": "2026-08-10T01:45:00.000Z",
+  "target": "http://127.0.0.1:8772/index.html",
+  "surface": "Codex in-app browser",
+  "summary": "All five modes started and selected a four-option Opportunity Cost question; Standard save/resume restored the player and Stage One room 1 after reload; checkpoint markers rendered at rooms 10, 20, and 30 in Standard and Legendary; no browser console errors were observed.",
+  "modes": {
+    "standard": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Standard Campaign — Stage One (1/30)" },
+    "timed": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Timed Trial — Stage One (1/30)" },
+    "exam": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Exam Drill — Stage One (1/30)" },
+    "legendary": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Legendary Mode — Stage One (1/30)" },
+    "score": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Score Attack — Stage One (1/30)" }
+  },
+  "saveResume": {
+    "passed": true,
+    "restoredPlayer": "Opportunity QA",
+    "restoredStatus": "Standard Campaign — Stage One (1/30)",
+    "questionSelectionRestored": true
+  },
+  "checkpointTrack": {
+    "passed": true,
+    "visibleCheckpointRooms": [10, 20, 30],
+    "verifiedModes": ["standard", "legendary"],
+    "transitionAndCompletionCoverage": "Deterministic engine simulation"
+  },
+  "calculationRendering": {
+    "passed": true,
+    "legendaryPromptContainedMultipleDollarValues": true
+  },
+  "consoleErrors": []
+}

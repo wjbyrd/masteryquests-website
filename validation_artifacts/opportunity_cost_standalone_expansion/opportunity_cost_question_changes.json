@@ -1,0 +1,2670 @@
+{
+  "phase": "phase7.2-opportunity-cost-standalone-expansion-v1",
+  "concept": "opportunity-cost",
+  "reviewedBaselineRecords": [
+    {
+      "id": "ECON-MG-EASY-3",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASY-4",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-E-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-E-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-E-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-E-004",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-MEDIUM-100",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-M-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-M-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-M-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-M-004",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-M-005",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-H-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-H-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-H-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-H-004",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-H-005",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-H-006",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-ELITE-333",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-ELITE-334",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-EL-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-EL-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9011",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9054",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-L-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-L-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-L-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-L-004",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-HARD-200",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-MEDIUM-104",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-EC-EASYBOSS-17003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2000",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-B2-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-B2-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-B2-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-B3-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-B3-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-B3-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9103",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9104",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9105",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-R-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-R-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-R-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-CORE-OPPORTUNITY-COST-30000",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-OPPC-BR-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-OPPC-BR-002",
+      "action": "REWRITE"
+    }
+  ],
+  "actions": {
+    "KEEP": 28,
+    "REWRITE": 21,
+    "ADD": 59,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "REMOVE": 0
+  },
+  "changes": [
+    {
+      "id": "ECON-MG-EASY-3",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-3",
+        "q": "A library can use its only meeting room for a job workshop or a tax-help clinic this evening. It chooses the workshop. What is the opportunity cost?",
+        "options": [
+          "The value of the tax-help clinic that cannot be held",
+          "The original cost of constructing and maintaining the meeting room over time",
+          "The value of both events added together",
+          "Zero because the library already owns the room"
+        ],
+        "aHash": "a429317ee9f0bef37e5106f5dd49836b83b13203fe095e65ab7cc98d82d4c436",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Treating an owned resource as costless or adding both options.",
+        "feedback": "The clinic is the next-best use forgone when the room hosts the workshop.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-EASY-3",
+        "q": "A library can use its only meeting room for a job workshop or a tax-help clinic this evening. It chooses the workshop. What is the opportunity cost?",
+        "options": [
+          "The value of the tax-help clinic that cannot be held",
+          "The original cost of constructing and maintaining the meeting room over time",
+          "The value of both events added together",
+          "Zero because the library already owns the room"
+        ],
+        "aHash": "a429317ee9f0bef37e5106f5dd49836b83b13203fe095e65ab7cc98d82d4c436",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Treating an owned resource as costless or adding both options.",
+        "feedback": "The clinic is the next-best use forgone when the room hosts the workshop.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-EASY-4",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-4",
+        "q": "A student spends two hours volunteering instead of preparing for tomorrow’s exam. Which item belongs in the opportunity cost of volunteering?",
+        "options": [
+          "The value of the study time the student gives up",
+          "Only the bus fare paid to reach the volunteer site",
+          "Every activity the student could have imagined doing",
+          "The volunteer work itself because it was the chosen activity"
+        ],
+        "aHash": "c25dc5c8e8c6b59ae9aba992556f92ff8157180b394c27b53e7548b75691fe02",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Ignoring a nonmonetary forgone alternative.",
+        "feedback": "The next-best use of the student’s time can be an opportunity cost without a money price.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-EASY-4",
+        "q": "A student spends two hours volunteering instead of preparing for tomorrow’s exam. Which item belongs in the opportunity cost of volunteering?",
+        "options": [
+          "The value of the study time the student gives up",
+          "Only the bus fare paid to reach the volunteer site",
+          "Every activity the student could have imagined doing",
+          "The volunteer work itself because it was the chosen activity"
+        ],
+        "aHash": "c25dc5c8e8c6b59ae9aba992556f92ff8157180b394c27b53e7548b75691fe02",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Ignoring a nonmonetary forgone alternative.",
+        "feedback": "The next-best use of the student’s time can be an opportunity cost without a money price.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-E-003",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-E-003",
+        "q": "A parent attends a free evening class and gives up two hours of family time. Why can the class still have an opportunity cost?",
+        "options": [
+          "The family time is a valued alternative use of those hours",
+          "Free classes always charge an unannounced cash fee",
+          "Only the building’s operating expense counts as a cost",
+          "A zero tuition price eliminates every competing use of the parent’s time"
+        ],
+        "aHash": "a9fdf8b751158b825b3aa0e72a2d04e7c0ef1603ab913ee60ca4b9944547a067",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Equating a zero price with zero opportunity cost.",
+        "feedback": "Time has valued alternative uses even when an activity charges no fee.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-E-003",
+        "q": "A parent attends a free evening class and gives up two hours of family time. Why can the class still have an opportunity cost?",
+        "options": [
+          "The family time is a valued alternative use of those hours",
+          "Free classes always charge an unannounced cash fee",
+          "Only the building’s operating expense counts as a cost",
+          "A zero tuition price eliminates every competing use of the parent’s time"
+        ],
+        "aHash": "a9fdf8b751158b825b3aa0e72a2d04e7c0ef1603ab913ee60ca4b9944547a067",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Equating a zero price with zero opportunity cost.",
+        "feedback": "Time has valued alternative uses even when an activity charges no fee.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-E-004",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-E-004",
+        "q": "A resident can spend Saturday repairing a porch, helping at a food pantry, or hiking. Helping at the pantry is chosen, and porch repair was valued most among the rejected options. What is the relevant forgone alternative?",
+        "options": [
+          "Repairing the porch",
+          "Hiking only",
+          "Both rejected activities added together",
+          "The food-pantry shift that was chosen"
+        ],
+        "aHash": "7de4f366b3376308a8197f0b38b5878f5c1c43c85cbd4f6c43658bba1432025e",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding all rejected options or selecting the least-valued one.",
+        "feedback": "Opportunity cost uses the single highest-valued rejected alternative.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-E-004",
+        "q": "A resident can spend Saturday repairing a porch, helping at a food pantry, or hiking. Helping at the pantry is chosen, and porch repair was valued most among the rejected options. What is the relevant forgone alternative?",
+        "options": [
+          "Repairing the porch",
+          "Hiking only",
+          "Both rejected activities added together",
+          "The food-pantry shift that was chosen"
+        ],
+        "aHash": "7de4f366b3376308a8197f0b38b5878f5c1c43c85cbd4f6c43658bba1432025e",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding all rejected options or selecting the least-valued one.",
+        "feedback": "Opportunity cost uses the single highest-valued rejected alternative.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-MEDIUM-100",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-MEDIUM-100",
+        "q": "A laboratory assistant works an extra Saturday shift and gives up a study group that would improve preparation for a licensing exam. Which interpretation is best?",
+        "options": [
+          "The value of improved exam preparation is part of the shift’s opportunity cost",
+          "The earned wage makes the forgone study group economically irrelevant",
+          "Only transportation to the laboratory can count as a cost",
+          "Every unused Saturday activity must be added to the cost"
+        ],
+        "aHash": "c1c98f25299c661224aeeb396200960f4ba43c0031eb41ef8353d71de6d9de89",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Counting only explicit money costs.",
+        "feedback": "A valuable nonmonetary alternative can be the next-best option forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-MEDIUM-100",
+        "q": "A laboratory assistant works an extra Saturday shift and gives up a study group that would improve preparation for a licensing exam. Which interpretation is best?",
+        "options": [
+          "The value of improved exam preparation is part of the shift’s opportunity cost",
+          "The earned wage makes the forgone study group economically irrelevant",
+          "Only transportation to the laboratory can count as a cost",
+          "Every unused Saturday activity must be added to the cost"
+        ],
+        "aHash": "c1c98f25299c661224aeeb396200960f4ba43c0031eb41ef8353d71de6d9de89",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Counting only explicit money costs.",
+        "feedback": "A valuable nonmonetary alternative can be the next-best option forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-H-003",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-H-003",
+        "q": "A theater has already spent $40,000 designing a production. Before staging it, managers can either spend $25,000 more for an expected $20,000 return or use the dates for a concert expected to net $12,000. What is the opportunity cost of staging the production now?",
+        "options": [
+          "$12,000 from the forgone concert",
+          "$40,000 already spent on design",
+          "$52,000 from adding design and concert values",
+          "$5,000 because the remaining production return is below its added cost"
+        ],
+        "aHash": "5563bb53dcd1261eec85040def8e97e8c39ccc0aba901b0e7fa4bf155bd377e2",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Treating a sunk design expense as the current opportunity cost.",
+        "feedback": "The $40,000 is sunk; the current opportunity cost is the best alternative use of the dates.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-H-003",
+        "q": "A theater has already spent $40,000 designing a production. Before staging it, managers can either spend $25,000 more for an expected $20,000 return or use the dates for a concert expected to net $12,000. What is the opportunity cost of staging the production now?",
+        "options": [
+          "$12,000 from the forgone concert",
+          "$40,000 already spent on design",
+          "$52,000 from adding design and concert values",
+          "$5,000 because the remaining production return is below its added cost"
+        ],
+        "aHash": "5563bb53dcd1261eec85040def8e97e8c39ccc0aba901b0e7fa4bf155bd377e2",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Treating a sunk design expense as the current opportunity cost.",
+        "feedback": "The $40,000 is sunk; the current opportunity cost is the best alternative use of the dates.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-333",
+      "concept": "opportunity-cost",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-ELITE-333",
+        "q": "A software founder uses a personally owned server for a new service. The server could instead be leased for $18,000, and the founder could earn $70,000 at another firm. Which costs are missing from a cash-expense-only analysis?",
+        "options": [
+          "Forgone lease income and forgone salary",
+          "Only the server’s historical purchase price",
+          "Every possible technology investment added together",
+          "No costs because neither resource requires a new payment"
+        ],
+        "aHash": "edc3e70d4ed6d27768c1aa164944de8b71b01bec986ea17162eb59fecdacc8a2",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Ignoring opportunity costs of owner-supplied assets and labor.",
+        "feedback": "Owned capital and owner labor have valuable alternative uses that are implicit costs.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-ELITE-333",
+        "q": "A software founder uses a personally owned server for a new service. The server could instead be leased for $18,000, and the founder could earn $70,000 at another firm. Which costs are missing from a cash-expense-only analysis?",
+        "options": [
+          "Forgone lease income and forgone salary",
+          "Only the server’s historical purchase price",
+          "Every possible technology investment added together",
+          "No costs because neither resource requires a new payment"
+        ],
+        "aHash": "edc3e70d4ed6d27768c1aa164944de8b71b01bec986ea17162eb59fecdacc8a2",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Ignoring opportunity costs of owner-supplied assets and labor.",
+        "feedback": "Owned capital and owner labor have valuable alternative uses that are implicit costs.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-334",
+      "concept": "opportunity-cost",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-ELITE-334",
+        "q": "A museum has already paid a nonrefundable $30,000 deposit for an exhibit. It can proceed for another $12,000 and earn $9,000, or use the gallery for a lecture series worth $7,000. Which item is the opportunity cost of proceeding?",
+        "options": [
+          "The $7,000 lecture series forgone",
+          "The $30,000 nonrefundable deposit",
+          "The $42,000 total of past and future spending",
+          "Zero because the deposit cannot be recovered"
+        ],
+        "aHash": "e788ea74913d0420556e72c29b98d96499191098001112f16818539f26aa9768",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Using an irreversible past expenditure instead of the best current alternative.",
+        "feedback": "The deposit is sunk; the lecture series is the best forgone current use.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-ELITE-334",
+        "q": "A museum has already paid a nonrefundable $30,000 deposit for an exhibit. It can proceed for another $12,000 and earn $9,000, or use the gallery for a lecture series worth $7,000. Which item is the opportunity cost of proceeding?",
+        "options": [
+          "The $7,000 lecture series forgone",
+          "The $30,000 nonrefundable deposit",
+          "The $42,000 total of past and future spending",
+          "Zero because the deposit cannot be recovered"
+        ],
+        "aHash": "e788ea74913d0420556e72c29b98d96499191098001112f16818539f26aa9768",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Using an irreversible past expenditure instead of the best current alternative.",
+        "feedback": "The deposit is sunk; the lecture series is the best forgone current use.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-EL-001",
+      "concept": "opportunity-cost",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-EL-001",
+        "q": "A county can assign an emergency team to wildfire prevention valued at $1.4 million, flood preparation valued at $1.1 million, or routine inspections valued at $0.8 million. Political rules require the flood project. What is its opportunity cost?",
+        "options": [
+          "$1.4 million in forgone wildfire prevention",
+          "$2.2 million from both rejected programs",
+          "$1.1 million because that is the chosen project’s value",
+          "$0.8 million because routine inspections cost the least"
+        ],
+        "aHash": "54cc57c4bb9bbe4941cc0ce43228a4086effdfb30c6dc82d4d8a36122bf7f757",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Confusing the chosen project, the least-valued option, or the sum of alternatives with opportunity cost.",
+        "feedback": "The wildfire program is the most valuable feasible alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-EL-001",
+        "q": "A county can assign an emergency team to wildfire prevention valued at $1.4 million, flood preparation valued at $1.1 million, or routine inspections valued at $0.8 million. Political rules require the flood project. What is its opportunity cost?",
+        "options": [
+          "$1.4 million in forgone wildfire prevention",
+          "$2.2 million from both rejected programs",
+          "$1.1 million because that is the chosen project’s value",
+          "$0.8 million because routine inspections cost the least"
+        ],
+        "aHash": "54cc57c4bb9bbe4941cc0ce43228a4086effdfb30c6dc82d4d8a36122bf7f757",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Confusing the chosen project, the least-valued option, or the sum of alternatives with opportunity cost.",
+        "feedback": "The wildfire program is the most valuable feasible alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9011",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9011",
+        "q": "A researcher initially gives up consulting worth $900 to spend a weekend on a paper. A new consulting request worth $1,400 then becomes available before the weekend begins. If the paper remains the choice, how does its opportunity cost change?",
+        "options": [
+          "It rises from $900 to $1,400 because the next-best alternative changed",
+          "It remains $900 because only the original alternatives matter",
+          "It becomes $2,300 because both consulting offers must be added",
+          "It falls to zero because research produces future benefits"
+        ],
+        "aHash": "90e01ee04529916a3fbf9bbe532cbc1b27aea5ec1ccb074129463418c00ef627",
+        "type": "dynamic-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_over_time",
+        "repairSkill": "opportunity_cost_over_time",
+        "commonError": "Freezing opportunity cost when the best available alternative changes.",
+        "feedback": "Opportunity cost is forward-looking and updates when the next-best feasible alternative changes.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9011",
+        "q": "A researcher initially gives up consulting worth $900 to spend a weekend on a paper. A new consulting request worth $1,400 then becomes available before the weekend begins. If the paper remains the choice, how does its opportunity cost change?",
+        "options": [
+          "It rises from $900 to $1,400 because the next-best alternative changed",
+          "It remains $900 because only the original alternatives matter",
+          "It becomes $2,300 because both consulting offers must be added",
+          "It falls to zero because research produces future benefits"
+        ],
+        "aHash": "90e01ee04529916a3fbf9bbe532cbc1b27aea5ec1ccb074129463418c00ef627",
+        "type": "dynamic-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_over_time",
+        "repairSkill": "opportunity_cost_over_time",
+        "commonError": "Freezing opportunity cost when the best available alternative changes.",
+        "feedback": "Opportunity cost is forward-looking and updates when the next-best feasible alternative changes.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9054",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9054",
+        "q": "A popular clinic charges no appointment fee, but patients must wait four hours. A nearby clinic charges $80 with almost no wait. Which claim correctly compares the options?",
+        "options": [
+          "The free clinic can have a higher full cost for a patient whose time is especially valuable",
+          "The free clinic must have zero opportunity cost because its posted price is zero",
+          "The paid clinic always has the higher full cost regardless of time values",
+          "Waiting time is a sunk cost and cannot affect a current clinic choice"
+        ],
+        "aHash": "e132a4da8c4b20f18439d01e57a3c32df6ff4e83873ea724b463155dba8afedb",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Treating posted price as total economic cost.",
+        "feedback": "The opportunity cost of waiting time can outweigh the difference in money price.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9054",
+        "q": "A popular clinic charges no appointment fee, but patients must wait four hours. A nearby clinic charges $80 with almost no wait. Which claim correctly compares the options?",
+        "options": [
+          "The free clinic can have a higher full cost for a patient whose time is especially valuable",
+          "The free clinic must have zero opportunity cost because its posted price is zero",
+          "The paid clinic always has the higher full cost regardless of time values",
+          "Waiting time is a sunk cost and cannot affect a current clinic choice"
+        ],
+        "aHash": "e132a4da8c4b20f18439d01e57a3c32df6ff4e83873ea724b463155dba8afedb",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Treating posted price as total economic cost.",
+        "feedback": "The opportunity cost of waiting time can outweigh the difference in money price.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-EC-EASYBOSS-17003",
+      "concept": "opportunity-cost",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-EC-EASYBOSS-17003",
+        "q": "A recreation center assigns its only instructor to swimming lessons instead of the next-best option, a safety workshop. What is the opportunity cost?",
+        "options": [
+          "The value of the safety workshop that is not offered",
+          "The instructor’s wage plus every rejected program",
+          "Zero because the instructor is already employed",
+          "The value of the swimming lessons that were chosen"
+        ],
+        "aHash": "088d97b0a4d1d8917fb819e34678686a59955f1039a5d53303a7aec87bb07632",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Using the chosen activity or treating assigned staff as costless.",
+        "feedback": "The safety workshop is the next-best use of the instructor’s time.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-EC-EASYBOSS-17003",
+        "q": "A recreation center assigns its only instructor to swimming lessons instead of the next-best option, a safety workshop. What is the opportunity cost?",
+        "options": [
+          "The value of the safety workshop that is not offered",
+          "The instructor’s wage plus every rejected program",
+          "Zero because the instructor is already employed",
+          "The value of the swimming lessons that were chosen"
+        ],
+        "aHash": "088d97b0a4d1d8917fb819e34678686a59955f1039a5d53303a7aec87bb07632",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Using the chosen activity or treating assigned staff as costless.",
+        "feedback": "The safety workshop is the next-best use of the instructor’s time.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2000",
+      "concept": "opportunity-cost",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASYBOSS-2000",
+        "q": "A café manager moves one employee from taking orders to preparing deliveries. The next-best use of that employee was serving counter customers. What is forgone?",
+        "options": [
+          "The value of the counter service the employee would have provided",
+          "Every task performed anywhere in the café that day",
+          "Only the employee’s past training expense",
+          "Nothing because the employee remains on the payroll"
+        ],
+        "aHash": "279766a0eabb1842996dd89a057b1e9dadb22dd56779e1cc9c10b59fdf8ca831",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Ignoring the displaced output of an already-paid worker.",
+        "feedback": "An employee’s time has an opportunity cost equal to its best forgone use.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-EASYBOSS-2000",
+        "q": "A café manager moves one employee from taking orders to preparing deliveries. The next-best use of that employee was serving counter customers. What is forgone?",
+        "options": [
+          "The value of the counter service the employee would have provided",
+          "Every task performed anywhere in the café that day",
+          "Only the employee’s past training expense",
+          "Nothing because the employee remains on the payroll"
+        ],
+        "aHash": "279766a0eabb1842996dd89a057b1e9dadb22dd56779e1cc9c10b59fdf8ca831",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Ignoring the displaced output of an already-paid worker.",
+        "feedback": "An employee’s time has an opportunity cost equal to its best forgone use.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2001",
+      "concept": "opportunity-cost",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASYBOSS-2001",
+        "q": "A student uses a prepaid transit pass to travel to a debate tournament instead of visiting a grandparent. Which item can be part of the tournament’s opportunity cost?",
+        "options": [
+          "The value of the forgone family visit",
+          "Only an additional transit fare paid today",
+          "The original price of the transit pass in every case",
+          "Zero because the pass makes the trip free at the margin"
+        ],
+        "aHash": "b2af696a42e19239350b470609eb2c5bf3ccb05850462bbde7c2bb8c31c3cc5e",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Assuming no new cash payment means no opportunity cost.",
+        "feedback": "The valued family visit is a forgone alternative even without a new fare.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-EASYBOSS-2001",
+        "q": "A student uses a prepaid transit pass to travel to a debate tournament instead of visiting a grandparent. Which item can be part of the tournament’s opportunity cost?",
+        "options": [
+          "The value of the forgone family visit",
+          "Only an additional transit fare paid today",
+          "The original price of the transit pass in every case",
+          "Zero because the pass makes the trip free at the margin"
+        ],
+        "aHash": "b2af696a42e19239350b470609eb2c5bf3ccb05850462bbde7c2bb8c31c3cc5e",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Assuming no new cash payment means no opportunity cost.",
+        "feedback": "The valued family visit is a forgone alternative even without a new fare.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-B2-001",
+      "concept": "opportunity-cost",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-B2-001",
+        "q": "A musician spends an evening rehearsing and gives up both a paid performance worth $220 and family time valued at $160. Which alternative determines the opportunity cost?",
+        "options": [
+          "The $220 performance because it is the more valuable forgone option",
+          "The $160 family time because nonmonetary options always rank first",
+          "Both alternatives added together for a total of $380",
+          "Zero because rehearsal may improve future performance"
+        ],
+        "aHash": "4588e4093d584c3416386c120bc339b0d6f468ca5953a04918d336fd6c4b0c1a",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding every rejected option or selecting the lower-valued one.",
+        "feedback": "Only the highest-valued forgone alternative determines opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-B2-001",
+        "q": "A musician spends an evening rehearsing and gives up both a paid performance worth $220 and family time valued at $160. Which alternative determines the opportunity cost?",
+        "options": [
+          "The $220 performance because it is the more valuable forgone option",
+          "The $160 family time because nonmonetary options always rank first",
+          "Both alternatives added together for a total of $380",
+          "Zero because rehearsal may improve future performance"
+        ],
+        "aHash": "4588e4093d584c3416386c120bc339b0d6f468ca5953a04918d336fd6c4b0c1a",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding every rejected option or selecting the lower-valued one.",
+        "feedback": "Only the highest-valued forgone alternative determines opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-B3-001",
+      "concept": "opportunity-cost",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-B3-001",
+        "q": "A city has spent $6 million planning a rail extension. It now must choose between spending $20 million more to finish it or using the construction crews on water repairs valued at $24 million. What is the current opportunity cost of finishing the rail line?",
+        "options": [
+          "$24 million in forgone water repairs",
+          "$6 million already spent on planning",
+          "$30 million from adding planning and water values",
+          "$20 million because that is the remaining rail expenditure"
+        ],
+        "aHash": "ed022ad80576dbe418b9314837bbc5e56476d768baa14d3d0aa8f7bfc537b246",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Treating sunk planning expense or remaining explicit spending as the forgone alternative.",
+        "feedback": "The prior planning expense is sunk; the water repairs are the best current alternative use of the crews.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-B3-001",
+        "q": "A city has spent $6 million planning a rail extension. It now must choose between spending $20 million more to finish it or using the construction crews on water repairs valued at $24 million. What is the current opportunity cost of finishing the rail line?",
+        "options": [
+          "$24 million in forgone water repairs",
+          "$6 million already spent on planning",
+          "$30 million from adding planning and water values",
+          "$20 million because that is the remaining rail expenditure"
+        ],
+        "aHash": "ed022ad80576dbe418b9314837bbc5e56476d768baa14d3d0aa8f7bfc537b246",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Treating sunk planning expense or remaining explicit spending as the forgone alternative.",
+        "feedback": "The prior planning expense is sunk; the water repairs are the best current alternative use of the crews.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9103",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9103",
+        "q": "A consultant can spend Saturday earning $480 or attend a certification workshop costing $120. She attends the workshop. Ignoring future benefits, what is the opportunity cost of attending?",
+        "options": [
+          "$120",
+          "$360",
+          "$480",
+          "$600"
+        ],
+        "aHash": "2afd4624f5de4d9eb184259dd84cbc3275c7f984e204c0d286a2fdfc7b1ce7f8",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Counting only the workshop fee or only the forgone earnings.",
+        "feedback": "The $120 fee and $480 forgone earnings together create a $600 opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9103",
+        "q": "A consultant can spend Saturday earning $480 or attend a certification workshop costing $120. She attends the workshop. Ignoring future benefits, what is the opportunity cost of attending?",
+        "options": [
+          "$120",
+          "$360",
+          "$480",
+          "$600"
+        ],
+        "aHash": "2afd4624f5de4d9eb184259dd84cbc3275c7f984e204c0d286a2fdfc7b1ce7f8",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Counting only the workshop fee or only the forgone earnings.",
+        "feedback": "The $120 fee and $480 forgone earnings together create a $600 opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9104",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9104",
+        "q": "A factory can use a machine shift to produce 300 valves or 180 pumps. It switches from valves to pumps and produces 45 pumps. Assuming constant tradeoffs, how many valves are forgone?",
+        "options": [
+          "45",
+          "60",
+          "75",
+          "120"
+        ],
+        "aHash": "f369cb89fc627e668987007d121ed1eacdc01db9e28f8bb26f358b7d8c4f08ac",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "production_tradeoff_ratio",
+        "repairSkill": "production_tradeoff_ratio",
+        "commonError": "Reversing the production tradeoff ratio.",
+        "feedback": "Each pump costs 300/180 valves, so 45 pumps cost 75 valves.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9104",
+        "q": "A factory can use a machine shift to produce 300 valves or 180 pumps. It switches from valves to pumps and produces 45 pumps. Assuming constant tradeoffs, how many valves are forgone?",
+        "options": [
+          "45",
+          "60",
+          "75",
+          "120"
+        ],
+        "aHash": "f369cb89fc627e668987007d121ed1eacdc01db9e28f8bb26f358b7d8c4f08ac",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "production_tradeoff_ratio",
+        "repairSkill": "production_tradeoff_ratio",
+        "commonError": "Reversing the production tradeoff ratio.",
+        "feedback": "Each pump costs 300/180 valves, so 45 pumps cost 75 valves.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9105",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9105",
+        "q": "A student values a concert ticket at $90. She already owns the ticket and could resell it for $140. Attending also requires a $20 parking fee. What is the economic cost of attending tonight?",
+        "options": [
+          "$20",
+          "$90",
+          "$140",
+          "$160"
+        ],
+        "aHash": "5fc53dcd512836ed75ea861e04ba3e2514d51b16fd7ab90d830a3b675b9371ff",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Using personal value or the original ticket price instead of forgone resale value.",
+        "feedback": "The forgone $140 resale value plus $20 parking cost totals $160; the purchase price is sunk.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9105",
+        "q": "A student values a concert ticket at $90. She already owns the ticket and could resell it for $140. Attending also requires a $20 parking fee. What is the economic cost of attending tonight?",
+        "options": [
+          "$20",
+          "$90",
+          "$140",
+          "$160"
+        ],
+        "aHash": "5fc53dcd512836ed75ea861e04ba3e2514d51b16fd7ab90d830a3b675b9371ff",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Using personal value or the original ticket price instead of forgone resale value.",
+        "feedback": "The forgone $140 resale value plus $20 parking cost totals $160; the purchase price is sunk.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-BR-001",
+      "concept": "opportunity-cost",
+      "pool": "bridge",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-BR-001",
+        "q": "Scarcity means a community cannot fund every valued program. How does that fact create opportunity cost when it funds a clinic?",
+        "options": [
+          "Funding the clinic requires giving up the best alternative program",
+          "Scarcity makes the clinic’s historical spending a sunk cost",
+          "Opportunity cost disappears once officials approve a budget",
+          "Every unfunded program must be added together as the cost"
+        ],
+        "aHash": "19b385dc664a8d2635631cf9977ad3e7558438e7672ceb5a1b8047066cbd6b33",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "scarcity_to_opportunity_cost",
+        "repairSkill": "scarcity_to_opportunity_cost",
+        "commonError": "Seeing scarcity and opportunity cost as unrelated definitions.",
+        "feedback": "Scarcity forces a choice; the best forgone use created by that choice is its opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-BR-001",
+        "q": "Scarcity means a community cannot fund every valued program. How does that fact create opportunity cost when it funds a clinic?",
+        "options": [
+          "Funding the clinic requires giving up the best alternative program",
+          "Scarcity makes the clinic’s historical spending a sunk cost",
+          "Opportunity cost disappears once officials approve a budget",
+          "Every unfunded program must be added together as the cost"
+        ],
+        "aHash": "19b385dc664a8d2635631cf9977ad3e7558438e7672ceb5a1b8047066cbd6b33",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "scarcity_to_opportunity_cost",
+        "repairSkill": "scarcity_to_opportunity_cost",
+        "commonError": "Seeing scarcity and opportunity cost as unrelated definitions.",
+        "feedback": "Scarcity forces a choice; the best forgone use created by that choice is its opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52A-OPPC-BR-002",
+      "concept": "opportunity-cost",
+      "pool": "bridge",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-OPPC-BR-002",
+        "q": "Moving along a production possibilities frontier from more food toward more machinery requires giving up food. What does the food forgone measure?",
+        "options": [
+          "The opportunity cost of the additional machinery",
+          "The sunk cost of previously produced food",
+          "The money price of machinery in the product market",
+          "The total value of all unattainable production points"
+        ],
+        "aHash": "b67156f25081b5acc85c556e77d17bacfd33c72f1360c8c3818193bc38bac5c2",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_ppf",
+        "repairSkill": "opportunity_cost_ppf",
+        "commonError": "Failing to connect a production tradeoff with opportunity cost.",
+        "feedback": "The output surrendered when production shifts measures the opportunity cost along a PPF.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      },
+      "after": {
+        "id": "P52A-OPPC-BR-002",
+        "q": "Moving along a production possibilities frontier from more food toward more machinery requires giving up food. What does the food forgone measure?",
+        "options": [
+          "The opportunity cost of the additional machinery",
+          "The sunk cost of previously produced food",
+          "The money price of machinery in the product market",
+          "The total value of all unattainable production points"
+        ],
+        "aHash": "b67156f25081b5acc85c556e77d17bacfd33c72f1360c8c3818193bc38bac5c2",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_ppf",
+        "repairSkill": "opportunity_cost_ppf",
+        "commonError": "Failing to connect a production tradeoff with opportunity cost.",
+        "feedback": "The output surrendered when production shifts measures the opportunity cost along a PPF.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-E-005",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-E-005",
+        "q": "A nurse can use a lunch break to take a walk or finish a required report. She finishes the report. What is the opportunity cost?",
+        "options": [
+          "The value of the walk she gives up",
+          "The value of the completed report",
+          "The value of both lunch-break activities added together",
+          "Zero because the break is unpaid"
+        ],
+        "aHash": "d3467c845552cad3643e19c0de38a4760216179719202ae0109f08b610a87e56",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Using the chosen activity instead of the forgone alternative.",
+        "feedback": "The walk is the alternative surrendered when the report is chosen.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-E-006",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-E-006",
+        "q": "A family spends its last $50 of entertainment money on a museum visit instead of the next-best choice, a movie night. What is the opportunity cost?",
+        "options": [
+          "The value the family placed on movie night",
+          "The value of the museum visit itself",
+          "Every activity available in the city",
+          "Only the family’s earlier spending on unrelated entertainment choices"
+        ],
+        "aHash": "38f38eccb70dbf9f0341e08b85c46a9375874b73eff13516fff9c603a2df674c",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Confusing the selected benefit with the best option forgone.",
+        "feedback": "Movie night is the next-best alternative given up.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-E-007",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-E-007",
+        "q": "A bakery assigns its only decorator to a wedding cake, so a birthday-cake order cannot be completed. Which item is forgone?",
+        "options": [
+          "The value of the birthday-cake order",
+          "The decorator’s entire annual salary plus all bakery overhead",
+          "Both cake orders added together",
+          "Nothing because the decorator remains employed"
+        ],
+        "aHash": "93dd5e36ddd66e254b51d614bde0cb289e0b555bf98cedc0862bf32779fe1d92",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "opportunity_cost_identification",
+        "repairSkill": "opportunity_cost_identification",
+        "commonError": "Ignoring the alternative output of an already-employed worker.",
+        "feedback": "The birthday-cake order is the best displaced use of the decorator’s time.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-E-008",
+      "concept": "opportunity-cost",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-E-008",
+        "q": "A nonprofit uses a donated room for tutoring instead of leasing it to a neighborhood group. Which item can be an opportunity cost?",
+        "options": [
+          "The rental value the nonprofit gives up",
+          "The donor’s original cost of the room",
+          "Zero because the room was donated",
+          "Every possible future use combined"
+        ],
+        "aHash": "4ac361a4af78ce30b7cf7b343c1cf839b392cb8e0887c3b6cd71a71f8c913555",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "owned_resource_opportunity_cost",
+        "repairSkill": "owned_resource_opportunity_cost",
+        "commonError": "Treating a donated or owned resource as costless.",
+        "feedback": "Forgone rental value is an implicit opportunity cost of using the room.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-M-006",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-M-006",
+        "q": "A photographer can accept a portrait job worth $500, an event job worth $650, or spend the day editing a personal project valued at $420. If the portrait job is chosen, what is its opportunity cost?",
+        "options": [
+          "$650 from the event job",
+          "$1,070 from both rejected options",
+          "$500 from the chosen portrait job",
+          "$420 from the least valuable alternative"
+        ],
+        "aHash": "4988d4a9c2ae4d2f3d8c41e5eccc4a06aa4e60e8c114de2cc590ade9101db7bc",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding rejected options or selecting the chosen or least-valued alternative.",
+        "feedback": "The $650 event job is the highest-valued option forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-M-007",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-M-007",
+        "q": "A free certification exam takes five hours. A worker would otherwise earn $25 per hour and also pays $15 for transit. Ignoring other effects, what is the opportunity cost?",
+        "options": [
+          "$140 from forgone wages plus transit",
+          "$125 from forgone wages only",
+          "$15 because only cash payments count",
+          "$110 after subtracting transit from wages"
+        ],
+        "aHash": "fd98e2fb97c9a764deb2d55824120c992bea35e9573422e51591e5d87024074c",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Omitting either forgone earnings or an explicit cost.",
+        "feedback": "Five hours of wages equal $125; adding $15 transit gives $140.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-M-008",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-M-008",
+        "q": "A printer owned by a design firm can produce client brochures worth $9,000 or internal marketing materials worth $6,500. If it produces internal materials, what is the opportunity cost?",
+        "options": [
+          "$9,000 in forgone client work",
+          "$2,500 as the difference in values",
+          "$6,500 from the chosen materials",
+          "Zero because the firm owns the printer"
+        ],
+        "aHash": "2a550edb0f6ee338ae5086a48eab26ee3f768dd534f86b269d5aee5fe70f5640",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "owned_resource_opportunity_cost",
+        "repairSkill": "owned_resource_opportunity_cost",
+        "commonError": "Using the value difference or treating owned equipment as free.",
+        "feedback": "The best forgone use of the printer is the $9,000 client work.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-M-009",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-M-009",
+        "q": "A student spends three hours at a free festival instead of tutoring for $22 per hour. Ignoring other costs, what is the opportunity cost?",
+        "options": [
+          "$66 in forgone tutoring wages",
+          "$22 because only one hourly wage counts",
+          "$0 because festival admission is free",
+          "$88 from adding the chosen event’s value"
+        ],
+        "aHash": "805d9362e6a9d3280e1690ec17023ff6852af1cb7fe48f078c9da39eab78266a",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "forgone_wages",
+        "repairSkill": "forgone_wages",
+        "commonError": "Ignoring duration or assuming zero price means zero cost.",
+        "feedback": "Three forgone tutoring hours at $22 each equal $66.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-M-010",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-M-010",
+        "q": "A club paid a nonrefundable $2,000 deposit for a banquet. Today it can hold the banquet or use the date for a fundraiser expected to net $3,500. Which amount is the opportunity cost of holding the banquet now?",
+        "options": [
+          "$3,500 from the forgone fundraiser",
+          "$2,000 from the nonrefundable deposit",
+          "$5,500 from adding both amounts",
+          "$1,500 from subtracting the deposit"
+        ],
+        "aHash": "c7098ae6db431377d370ee3d2c46c48767dee2ec7e526765e1b44cc2ca8e5c24",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Substituting a sunk payment for the best current alternative.",
+        "feedback": "The deposit cannot be changed; the fundraiser is the current alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-M-011",
+      "concept": "opportunity-cost",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-M-011",
+        "q": "A mechanic plans to repair personal equipment, giving up a customer job worth $300. Before work begins, a $450 emergency job becomes available. If the personal repair remains the choice, what is its opportunity cost?",
+        "options": [
+          "$450 because the best available alternative changed",
+          "$300 because the original plan fixes the cost",
+          "$750 because both customer jobs are forgone",
+          "$150 because only the increase matters"
+        ],
+        "aHash": "653a76bea3103ddb65097e1fa98bccc2356dd0ad839913bc47547e59cef1123e",
+        "type": "dynamic-analysis",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "opportunity_cost_over_time",
+        "repairSkill": "opportunity_cost_over_time",
+        "commonError": "Failing to update the next-best alternative.",
+        "feedback": "The new $450 job replaces the $300 job as the best option forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-H-007",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-H-007",
+        "q": "A retailer uses an owned parcel for parking. The parcel could be leased for $70,000 or used for pickup lockers expected to net $85,000. Parking produces a benefit valued at $90,000. What is the opportunity cost of parking?",
+        "options": [
+          "$85,000 from the locker project",
+          "$155,000 from both rejected uses",
+          "$5,000 as parking’s net advantage",
+          "$70,000 because leasing is a cash transaction"
+        ],
+        "aHash": "ab58fee47f370d00029e485d6affe4d92963bac1ade5f8ec65c905c0a535b710",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "owned_resource_opportunity_cost",
+        "repairSkill": "owned_resource_opportunity_cost",
+        "commonError": "Adding alternatives or using the lower cash-based option.",
+        "feedback": "The locker project is the most valuable feasible use forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-H-008",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-H-008",
+        "q": "A one-year program charges $18,000 tuition and $2,000 for required supplies. A student gives up a $44,000 job but gains employer-independent health coverage valued at $4,000 while enrolled. Ignoring future benefits, what is the net opportunity cost?",
+        "options": [
+          "$60,000 after crediting the gained coverage",
+          "$64,000 from tuition, supplies, and wages",
+          "$44,000 because only forgone earnings count",
+          "$20,000 because only explicit payments count"
+        ],
+        "aHash": "d38fcf8f97649052f32bbf10b70adc5b55397d21d77b20857222fb778d6159f4",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "opportunity_cost_net_benefit",
+        "repairSkill": "opportunity_cost_net_benefit",
+        "commonError": "Omitting explicit costs or failing to credit a benefit received.",
+        "feedback": "Costs total $64,000; subtracting the $4,000 gained benefit leaves $60,000.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-H-009",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-H-009",
+        "q": "A government funds a coastal barrier valued at $30 million. The same engineers could instead complete a water system valued at $34 million or road repairs valued at $21 million. Which statement is correct?",
+        "options": [
+          "The barrier’s opportunity cost is the $34 million water system",
+          "$55 million is the cost because both alternatives are rejected",
+          "$4 million is the cost because it is the value difference",
+          "$30 million is the cost because it is the chosen project’s value"
+        ],
+        "aHash": "c4891f9442a9cda859134a7ff5a4e4710ef39dec345590d3335b52363f296d48",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding rejected projects or using chosen value or value difference.",
+        "feedback": "The water system is the highest-valued alternative use of the engineers.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-H-010",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-H-010",
+        "q": "A factory bought a machine for $500,000 five years ago. It can now use one shift for parts worth $28,000 or rent the shift to another firm for $31,000. What is the current opportunity cost of producing parts?",
+        "options": [
+          "$31,000 in forgone rental income",
+          "$500,000 from the historical purchase",
+          "$3,000 as the difference between uses",
+          "$28,000 because that is the chosen output"
+        ],
+        "aHash": "549c86ba5ae61a81891323855616a51145f919740440de2e5301a2a07e02a9e4",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Using historical purchase price or the value difference as opportunity cost.",
+        "feedback": "The purchase price is sunk; current opportunity cost is the best alternative return.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-H-011",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-H-011",
+        "q": "An entrepreneur can keep a salaried job paying $82,000 or launch a venture expected to earn $105,000 after explicit expenses while using an owned office that could rent for $16,000. Ignoring risk differences, what is expected economic profit?",
+        "options": [
+          "$7,000 after both implicit costs",
+          "$23,000 after salary alone",
+          "$89,000 after rent alone",
+          "$105,000 because explicit expenses are paid"
+        ],
+        "aHash": "ca941c98c3116e346db86ca63a59530d75da3416d7c468c0904f6fde0fdaa3bd",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Ignoring forgone salary or rental income.",
+        "feedback": "Subtract $82,000 salary and $16,000 rent from $105,000 to obtain $7,000.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-H-012",
+      "concept": "opportunity-cost",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-H-012",
+        "q": "A researcher devotes ten hours per week for six weeks to an unpaid project instead of consulting at $75 per hour. She also pays a one-time $120 data fee. Ignoring benefits, what is the total opportunity cost?",
+        "options": [
+          "$4,620 from forgone consulting plus the fee",
+          "$4,500 from forgone consulting only",
+          "$870 from one week of time plus the fee",
+          "$120 because the project pays no wage"
+        ],
+        "aHash": "d03c93b5bb90fe7b30ad679649b976e3191d43b44e189f11010022591ba70c35",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "forgone_wages",
+        "repairSkill": "forgone_wages",
+        "commonError": "Ignoring repeated time or the explicit project fee.",
+        "feedback": "Sixty consulting hours cost $4,500; adding the $120 fee gives $4,620.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-EL-003",
+      "concept": "opportunity-cost",
+      "pool": "elite",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-EL-003",
+        "q": "A port authority has already installed specialized foundations for a terminal. It can complete the terminal for $40 million and obtain benefits of $55 million, or redirect crews to storm protection worth $22 million. Which comparison is relevant now?",
+        "options": [
+          "Terminal net benefit of $15 million versus $22 million forgone storm protection",
+          "All foundation spending plus $40 million versus terminal benefits",
+          "Terminal benefits of $55 million versus foundation spending alone",
+          "Only the irreversible foundations because they created the current choice"
+        ],
+        "aHash": "285946cf77532754cbb4c6a51f1cb2d6513dcde56cce1bc5f4ab148927001579",
+        "type": "transfer",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Allowing sunk construction to replace forward-looking incremental costs and alternatives.",
+        "feedback": "Past foundations are sunk; completing nets $15 million and forgoes storm protection worth $22 million.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-EL-004",
+      "concept": "opportunity-cost",
+      "pool": "elite",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-EL-004",
+        "q": "An owner-operated studio earns $150,000 after explicit expenses. The owner could earn $92,000 elsewhere, lease the studio for $28,000, and license the brand separately for $18,000. What is economic profit?",
+        "options": [
+          "$12,000 after all three implicit costs",
+          "$30,000 after salary and studio rent",
+          "$58,000 after forgone salary only",
+          "$138,000 after subtracting the least alternative"
+        ],
+        "aHash": "7cc8602648858e9f20e31883b39b0d9da7b24e3fc00dc5c881b7224cf573c12c",
+        "type": "multi-step",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Omitting one or more separable owner-supplied resources.",
+        "feedback": "Implicit costs total $138,000, leaving $12,000 in economic profit.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-005",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-005",
+        "q": "A student chooses a fellowship that pays $12,000 and provides research experience valued at $8,000. The best rejected option is a job paying $27,000; a second rejected internship is valued at $21,000. What is the opportunity cost of the fellowship?",
+        "options": [
+          "$27,000 from the best rejected job",
+          "$48,000 from both rejected positions",
+          "$7,000 after subtracting fellowship benefits",
+          "$20,000 from the fellowship’s own combined value"
+        ],
+        "aHash": "af4bbb62fb6726a1a59d5229b94814d4dae4559a3cfaa6ed515370769d9cba52",
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding rejected alternatives or netting chosen benefits against opportunity cost.",
+        "feedback": "The job is the single highest-valued feasible alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-006",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-006",
+        "q": "A startup has one engineering sprint. A reliability upgrade would create $140,000 in value, a new feature $125,000, and a custom client project $115,000. The firm chooses the feature because $30,000 was already spent designing it. What is the feature’s opportunity cost now?",
+        "options": [
+          "$140,000 from the reliability upgrade",
+          "$30,000 from the completed design work",
+          "$255,000 from both rejected projects",
+          "$15,000 as the difference between top values"
+        ],
+        "aHash": "3339e255873f86a3c206e9edab38c81a42edd7695726ad7d53e6de2d697ffea8",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Letting sunk design work displace the best current alternative.",
+        "feedback": "Past design spending is sunk; reliability is the most valuable use of the sprint forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-007",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-007",
+        "q": "A hospital reserves an operating room for a procedure expected to generate 18 quality-adjusted life-years. The room could instead support procedures expected to generate 22 or 14 quality-adjusted life-years. What is the opportunity cost?",
+        "options": [
+          "22 quality-adjusted life-years from the best alternative",
+          "36 quality-adjusted life-years from both alternatives",
+          "4 quality-adjusted life-years as the difference",
+          "18 quality-adjusted life-years from the chosen procedure"
+        ],
+        "aHash": "b84819895109f39f4a01b257401f8a21cf59793b52732b3382a89897598451d4",
+        "type": "transfer",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Assuming opportunity cost must be money or only a value difference.",
+        "feedback": "The most valuable forgone procedure determines the nonmonetary opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-008",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-008",
+        "q": "A research council funds an energy project with expected social benefit of $42 million. The same budget and scientists could support a vaccine platform worth $50 million or several smaller projects worth $37 million in total. What is forgone?",
+        "options": [
+          "The $50 million vaccine platform as the next-best package",
+          "$87 million from all rejected research combined",
+          "$8 million as the difference between the top projects",
+          "$42 million because that is the funded project’s benefit"
+        ],
+        "aHash": "df27d20f3f3e111f37ff68c954870635e447deca2429380d1e6a37554201a9b7",
+        "type": "policy-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding mutually exclusive alternatives or using the difference in values.",
+        "feedback": "The vaccine platform is the highest-valued feasible alternative allocation.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-009",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-009",
+        "q": "A city uses waterfront land for a public market valued at $9 million annually. The land could support housing valued at $12 million or be leased for offices at $10 million. What is the market’s annual opportunity cost?",
+        "options": [
+          "$12 million from the housing use",
+          "$22 million from housing plus offices",
+          "$3 million as the housing-market difference",
+          "$10 million because lease income is monetary"
+        ],
+        "aHash": "fb5d6c49e10b61ff66e7d791d2a1177e0dc25b247d1e4cd7bc96c4f3e4c205c8",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "owned_resource_opportunity_cost",
+        "repairSkill": "owned_resource_opportunity_cost",
+        "commonError": "Adding alternatives or privileging a cash return over a higher noncash value.",
+        "feedback": "Housing is the highest-valued alternative use of the waterfront land.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-010",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-010",
+        "q": "During a drought, one unit of water can preserve orchard output worth $600, support household use valued at $750, or maintain habitat valued at $680. If it is assigned to the orchard, what is its opportunity cost?",
+        "options": [
+          "$750 in forgone household-use value",
+          "$1,430 from both rejected uses",
+          "$150 as the difference from household use",
+          "$600 because that is the orchard value"
+        ],
+        "aHash": "f9f9f38a5f1e44705f28259d4918eaadb735f119a2ba7bc8012b01ae8c0c5c7e",
+        "type": "resource-allocation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding alternative uses or reporting the value difference.",
+        "feedback": "Household use is the most valuable feasible alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-011",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-011",
+        "q": "Military engineers can repair a base runway, restore a civilian bridge worth $18 million, or reinforce a dam worth $23 million. The runway is selected for strategic reasons. Which economic statement follows?",
+        "options": [
+          "Its opportunity cost is the $23 million dam reinforcement",
+          "Its opportunity cost is every civilian project added together",
+          "Strategic importance eliminates opportunity cost",
+          "Its opportunity cost is the lower-valued bridge project"
+        ],
+        "aHash": "f3068844ee5d362eb79300b6eab600c7caa5166720ee0cc43839e12c4595c039",
+        "type": "policy-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Assuming a mandated or strategic choice has no opportunity cost.",
+        "feedback": "Even a required choice forgoes the highest-valued feasible alternative use.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-012",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-012",
+        "q": "A factory assigns its only robotics specialist to reduce defects, creating $95,000 in expected value. The specialist could instead increase output by $110,000 or cut energy costs by $80,000. What is the opportunity cost of the defect project?",
+        "options": [
+          "$110,000 in forgone output gains",
+          "$190,000 from both rejected assignments",
+          "$15,000 as the value difference",
+          "$95,000 from the selected assignment"
+        ],
+        "aHash": "263343ff834679ccee60aec4fd8fcd2ad3de7e27d72ef368adf92fd4dd83730f",
+        "type": "labor-allocation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_identification",
+        "repairSkill": "opportunity_cost_identification",
+        "commonError": "Using selected value, summed alternatives, or the difference.",
+        "feedback": "The output assignment is the best alternative use of the specialist.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-013",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-013",
+        "q": "An arena uses a Saturday date for a youth championship valued at $160,000. A concert would net $210,000 and a convention would net $185,000. The championship also requires $15,000 in security spending. What is its full opportunity cost?",
+        "options": [
+          "$225,000 from the concert plus security",
+          "$210,000 from the concert alone",
+          "$410,000 from both rejected events plus security",
+          "$65,000 from the value difference plus security"
+        ],
+        "aHash": "fcf42ab9a250ba7a1f80bd159f7f0fd3d3d0b3539920e89265c8abc2ab0bcbc8",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Omitting explicit cost or adding multiple rejected events.",
+        "feedback": "The best forgone event is $210,000; adding $15,000 security gives $225,000.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-014",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-014",
+        "q": "A tunnel-boring machine can complete 80 meters of transit tunnel or 50 meters of a water tunnel per month. If 20 meters of water tunnel are produced under a constant tradeoff, how many transit-tunnel meters are forgone?",
+        "options": [
+          "32 meters",
+          "20 meters",
+          "50 meters",
+          "80 meters"
+        ],
+        "aHash": "427d0b3853f1a664762abf22e1fd187a3b562a0e107180745840318813bfb589",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "production_tradeoff_ratio",
+        "repairSkill": "production_tradeoff_ratio",
+        "commonError": "Reversing or ignoring the output tradeoff ratio.",
+        "feedback": "Each water meter costs 80/50 transit meters; 20 water meters cost 32 transit meters.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-015",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-015",
+        "q": "A nonprofit has 400 skilled volunteer-hours. A tax clinic would use all hours and create value estimated at $30,000. The best alternative is a housing clinic worth $34,000; a food program worth $20,000 uses different volunteers. What is the tax clinic’s opportunity cost?",
+        "options": [
+          "$34,000 from the housing clinic",
+          "$54,000 from both other programs",
+          "$4,000 as the difference in clinic values",
+          "$30,000 from the tax clinic itself"
+        ],
+        "aHash": "62aa6440d25bcf5fafde90057b38987fef25bc946fa540e49cb964e3753cf257",
+        "type": "constraint-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Including an alternative that does not compete for the constrained resource.",
+        "feedback": "Only feasible competing uses of the same volunteer-hours matter; housing is the best one.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-016",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-016",
+        "q": "A farmer plants berries on land that could yield corn worth $48,000 or solar-lease income of $55,000. Berries are expected to net $62,000 after new expenses. What is the berries’ net benefit relative to their opportunity cost?",
+        "options": [
+          "$7,000",
+          "$14,000",
+          "$55,000",
+          "$117,000"
+        ],
+        "aHash": "24929d1b822720a920162ca6691886650635ae9aa147f274e046b4100b15ad9b",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_net_benefit",
+        "repairSkill": "opportunity_cost_net_benefit",
+        "commonError": "Comparing with the wrong land use or adding alternative returns.",
+        "feedback": "The solar lease is the $55,000 opportunity cost; $62,000 minus $55,000 equals $7,000.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-017",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-017",
+        "q": "A plant can produce 240 sensors or 160 controllers per shift. An order requires 60 controllers. With a constant production tradeoff, what is the opportunity cost of filling the order?",
+        "options": [
+          "90 sensors",
+          "40 sensors",
+          "60 sensors",
+          "160 sensors"
+        ],
+        "aHash": "9bd253af0b0e068e87abe5357d0c5b5e422829d22fbef1d06b890ceab5161cb5",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "production_tradeoff_ratio",
+        "repairSkill": "production_tradeoff_ratio",
+        "commonError": "Using the controller quantity directly or reversing the ratio.",
+        "feedback": "Each controller costs 240/160 sensors, so 60 controllers cost 90 sensors.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-018",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-018",
+        "q": "A cloud platform uses reserved computing capacity for fraud detection worth $1.8 million. The capacity could instead support search improvements worth $2.1 million or recommendation improvements worth $1.9 million. Reservation fees were prepaid and nonrefundable. What is the current opportunity cost?",
+        "options": [
+          "$2.1 million from search improvements",
+          "The nonrefundable reservation fee",
+          "$4.0 million from both rejected systems",
+          "$0.3 million as the difference from search"
+        ],
+        "aHash": "5a1f358f6bc9d72dfb0d9e474d7aa6c8baa82be2baaf46e11d8d41578a36e991",
+        "type": "technology-transfer",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Using a prepaid sunk fee or the difference rather than the forgone project.",
+        "feedback": "The prepaid fee is sunk; search is the highest-valued alternative use of capacity.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-019",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-019",
+        "q": "A consultant chooses a public-interest case, initially giving up a $40,000 commercial project. That commercial project is canceled, and the best remaining alternative is a $28,000 training contract. What happens to the case’s opportunity cost?",
+        "options": [
+          "It falls from $40,000 to $28,000",
+          "It stays $40,000 because the original choice is binding",
+          "It becomes $68,000 because both projects were once possible",
+          "It becomes zero because the first alternative disappeared"
+        ],
+        "aHash": "980ef5b5d8df7b45c51f7abd4c77a70fb000ca42360d06338de14ba4370b8ee7",
+        "type": "dynamic-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_over_time",
+        "repairSkill": "opportunity_cost_over_time",
+        "commonError": "Treating a no-longer-feasible alternative as the current opportunity cost.",
+        "feedback": "Opportunity cost updates to the best alternative that remains feasible.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-020",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-020",
+        "q": "A pharmaceutical lab has spent $12 million on a failed compound. It can spend $3 million to pursue a weak follow-up or use the same scientists on a platform expected to create $7 million in value. Which amount is the follow-up’s opportunity cost now?",
+        "options": [
+          "$7 million from the platform project",
+          "$12 million already spent on the compound",
+          "$15 million from past and future research spending",
+          "$4 million from subtracting follow-up spending"
+        ],
+        "aHash": "15eee5effa854b0485f330ef2a97495b5d5f49a8bf96068aeacd5c54c97fdc79",
+        "type": "sunk-cost-trap",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Counting unrecoverable research spending as the current alternative forgone.",
+        "feedback": "The $12 million is sunk; the platform is the best current use of the scientists.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-021",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-021",
+        "q": "A chef opens a restaurant that earns $130,000 after explicit expenses. The chef gives up a $78,000 salary, uses an owned space that could rent for $32,000, and supplies equipment that could lease for $9,000. What is economic profit?",
+        "options": [
+          "$11,000",
+          "$20,000",
+          "$52,000",
+          "$119,000"
+        ],
+        "aHash": "722e97581435cb85bf718d825fa52a85d729c09a49d06026fb8ca2ab6046adcd",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Omitting one or more owner-supplied inputs.",
+        "feedback": "Implicit costs total $119,000, so economic profit is $130,000 minus $119,000, or $11,000.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-022",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-022",
+        "q": "A transportation agency can start a bus redesign now or delay it one year to complete a safety audit worth $6 million. Delay would also raise redesign costs by $2 million. If it starts now, which item describes the opportunity cost?",
+        "options": [
+          "The $6 million safety audit forgone",
+          "The $2 million future cost increase avoided",
+          "Both amounts added because each relates to timing",
+          "The entire budget of the bus redesign"
+        ],
+        "aHash": "fff68d6645d8bd7b1125aac81d02e4ffa481f46f6e49a79cff69fce4fe35e4a4",
+        "type": "dynamic-policy",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_over_time",
+        "repairSkill": "opportunity_cost_over_time",
+        "commonError": "Confusing a consequence of the chosen timing with the alternative forgone.",
+        "feedback": "Starting now forgoes the audit; avoided future expense is a benefit of starting now, not its opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-023",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-023",
+        "q": "A free municipal charging station requires a two-hour wait. One driver could earn $35 per hour during that time; another values the same two hours at $20 total. Which statement is best?",
+        "options": [
+          "The first driver faces the larger time opportunity cost",
+          "Both drivers face zero cost because charging is free",
+          "Both drivers face the same cost because the wait is identical",
+          "The second driver faces the larger cost because leisure is nonmonetary"
+        ],
+        "aHash": "7ee37ca69eb2cf7efc9a97beda08192c66293decf9e2ed59acfa1b3aecc7f639",
+        "type": "heterogeneous-values",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Assuming identical time requirements imply identical opportunity costs.",
+        "feedback": "Opportunity cost depends on the value of each person’s best alternative use of time.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-024",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-024",
+        "q": "A workshop can use one hour to make the first table by giving up 3 chairs, while making a second table would require giving up 5 additional chairs. What is the opportunity cost of the second table?",
+        "options": [
+          "5 chairs",
+          "3 chairs",
+          "8 chairs",
+          "2 chairs"
+        ],
+        "aHash": "9b2e405f932aeed0a26e97f9d1ae54ed6f295cbf432e7ff3909f12c14d2e07c1",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "production_tradeoff_ratio",
+        "repairSkill": "production_tradeoff_ratio",
+        "commonError": "Using the first unit’s cost or cumulative cost for the next unit.",
+        "feedback": "The relevant cost of the second table is the 5 additional chairs forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-L-025",
+      "concept": "opportunity-cost",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-L-025",
+        "q": "A media company uses a studio day for a documentary expected to net $70,000. A sports broadcast would net $82,000 after a $6,000 licensing fee, while a concert stream would net $75,000. What is the documentary’s opportunity cost?",
+        "options": [
+          "$82,000 from the sports broadcast",
+          "$157,000 from both rejected programs",
+          "$12,000 as the difference from sports",
+          "$76,000 before the sports licensing fee"
+        ],
+        "aHash": "8253532056354d1333d5cfe6416715b10b8f01ad412f601e96f56572411cbf1f",
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Comparing gross rather than net alternatives or summing rejected options.",
+        "feedback": "The stated $82,000 sports return is already net and is the highest-valued alternative.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-B1-005",
+      "concept": "opportunity-cost",
+      "pool": "easyBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-B1-005",
+        "q": "A student spends a free afternoon practicing piano instead of the next-best option, visiting a friend. What is the opportunity cost?",
+        "options": [
+          "The value of the friend visit that is forgone",
+          "Zero because neither activity requires payment",
+          "The value of both activities added together",
+          "The value of piano practice because it was chosen"
+        ],
+        "aHash": "7fb7b22099aeba4db3d45aa85ba3454895e813b596cbfcb39edd111565bcb881",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Assuming only money payments create opportunity cost.",
+        "feedback": "The valued friend visit is the next-best use of the afternoon forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-B2-004",
+      "concept": "opportunity-cost",
+      "pool": "mediumBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-B2-004",
+        "q": "A business uses its owned van for deliveries instead of renting it out for $900 or using it for service calls worth $1,100. What is the delivery decision’s opportunity cost?",
+        "options": [
+          "$1,100 from the service calls",
+          "$2,000 from both rejected uses",
+          "$900 because rental income is explicit cash",
+          "$0 because the business owns the van"
+        ],
+        "aHash": "a98bf4c085f679606f5c3c26f39d0a6a5f6b10f008571b29352bca7bbc1a2cbf",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "owned_resource_opportunity_cost",
+        "repairSkill": "owned_resource_opportunity_cost",
+        "commonError": "Adding uses, privileging cash rent, or treating ownership as costless.",
+        "feedback": "Service calls are the highest-valued alternative use of the van.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-B2-005",
+      "concept": "opportunity-cost",
+      "pool": "mediumBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-B2-005",
+        "q": "A worker attends a free six-hour workshop instead of a shift paying $24 per hour and pays $12 for parking. Ignoring benefits, what is the opportunity cost?",
+        "options": [
+          "$156 from forgone wages plus parking",
+          "$144 from forgone wages only",
+          "$12 because the workshop is free",
+          "$132 after subtracting parking"
+        ],
+        "aHash": "52c4807ef4c57aadc445f1c7cc6155a6b371721b95d3a46b612f64fba0dfcdef",
+        "type": "calculation",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Omitting either forgone wages or an explicit cost.",
+        "feedback": "Six hours at $24 equals $144; adding $12 parking gives $156.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-B3-004",
+      "concept": "opportunity-cost",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-B3-004",
+        "q": "A university has already spent $4 million designing a laboratory. It can finish the lab or assign the same construction team to a residence project valued at $11 million. What is the current opportunity cost of finishing the lab?",
+        "options": [
+          "$11 million in forgone residence value",
+          "$4 million already spent on design",
+          "$15 million from adding both amounts",
+          "Zero because laboratory design is complete"
+        ],
+        "aHash": "1722583b6e1b87b3c6ffaa637fa9ef64069e4671153414e34394d6378bf5bd39",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Treating sunk design spending as the current alternative forgone.",
+        "feedback": "The design expense is sunk; the residence project is the current best alternative use of the team.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-B3-005",
+      "concept": "opportunity-cost",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-B3-005",
+        "q": "A firm earns $190,000 after explicit expenses. The owner gives up a $105,000 salary, $45,000 in rental income, and $20,000 from leasing equipment. What is economic profit?",
+        "options": [
+          "$20,000",
+          "$40,000",
+          "$85,000",
+          "$170,000"
+        ],
+        "aHash": "f61e7cb1ff388ad8caeba94c2f04671f08182d0ed70dcf5b5339611cd9ff379d",
+        "type": "calculation",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Omitting one or more owner-supplied inputs.",
+        "feedback": "Implicit costs total $170,000, leaving $20,000 in economic profit.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-LB-006",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-LB-006",
+        "q": "A foundation can fund a health program worth $8 million, an education program worth $7 million, or two compatible small programs together worth $9 million. It chooses health. What is the opportunity cost?",
+        "options": [
+          "$9 million from the compatible program package",
+          "$16 million from all rejected projects",
+          "$1 million as the difference from the package",
+          "$8 million from the chosen health program"
+        ],
+        "aHash": "beb603547c543f09d1fe205ecc81ab02ba792aca4e70c6b3d97b1722bb857e1e",
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Failing to treat a feasible package as one alternative or adding mutually exclusive options.",
+        "feedback": "The compatible package is the most valuable feasible alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-LB-007",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-LB-007",
+        "q": "An owner uses a shop that could rent for $36,000 and works there instead of earning a $64,000 salary. The shop earns $112,000 after explicit expenses. What is economic profit?",
+        "options": [
+          "$12,000",
+          "$48,000",
+          "$76,000",
+          "$112,000"
+        ],
+        "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "full_cost_opportunity_cost_analysis",
+        "repairSkill": "full_cost_opportunity_cost_analysis",
+        "commonError": "Ignoring either owner labor or owned-property rent.",
+        "feedback": "Subtract $64,000 salary and $36,000 rent from $112,000 to obtain $12,000.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-LB-008",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-LB-008",
+        "q": "A film studio spent $9 million on footage that cannot be resold. It can spend $4 million more to finish the film or use its release slot for a documentary worth $6 million. What is the film’s current opportunity cost?",
+        "options": [
+          "$6 million from the documentary",
+          "$9 million in unrecoverable footage",
+          "$13 million in total film spending",
+          "$2 million as the documentary-finish difference"
+        ],
+        "aHash": "308c1c6ccf8ca4a0668f14e97ed145c984fb4318db5bf9644c4e29d53fb3a276",
+        "type": "sunk-cost-trap",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Counting unrecoverable production spending as the current forgone alternative.",
+        "feedback": "The $9 million is sunk; the documentary is the best alternative use of the release slot.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-LB-009",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-LB-009",
+        "q": "A city assigns a scarce engineering team to a stadium roof. A flood barrier would create $26 million in value and a transit repair $19 million. The stadium roof is legally required. What is its opportunity cost?",
+        "options": [
+          "$26 million from the flood barrier",
+          "$45 million from both public projects",
+          "$7 million as the difference between alternatives",
+          "Zero because the roof is legally required"
+        ],
+        "aHash": "3b43bafe3e92e7cb445666e61d1db3af7c2894b9bcc592063c2797787406c2e8",
+        "type": "policy-analysis",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Assuming a mandate eliminates opportunity cost or adding rejected projects.",
+        "feedback": "A mandate does not erase the best alternative use of the engineering team.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-LB-010",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-LB-010",
+        "q": "A machine produces 420 filters or 280 pumps per day. A contract requires 70 pumps. Under a constant tradeoff, how many filters are forgone?",
+        "options": [
+          "105 filters",
+          "70 filters",
+          "140 filters",
+          "210 filters"
+        ],
+        "aHash": "c7dedf1b18cc74d5aef2c927ee190b225d4407f1c5d9c1b9edde93baa773e5cf",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "production_tradeoff_ratio",
+        "repairSkill": "production_tradeoff_ratio",
+        "commonError": "Reversing the output ratio or using the required pump count directly.",
+        "feedback": "Each pump costs 420/280 filters; 70 pumps therefore cost 105 filters.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-LB-011",
+      "concept": "opportunity-cost",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-LB-011",
+        "q": "A manager plans to use a weekend for maintenance, initially giving up production worth $40,000. Before the weekend, an urgent order worth $58,000 becomes feasible. If maintenance continues, what is its opportunity cost?",
+        "options": [
+          "$58,000 from the urgent order",
+          "$98,000 from both production alternatives",
+          "$40,000 because the plan was made first",
+          "$18,000 because only the increase matters"
+        ],
+        "aHash": "1c81725a618fbeecbd4becdb4c598663f722e51bf462a3a763ba0436b4368c3f",
+        "type": "dynamic-analysis",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_over_time",
+        "repairSkill": "opportunity_cost_over_time",
+        "commonError": "Failing to update opportunity cost when a better feasible alternative appears.",
+        "feedback": "The urgent order becomes the next-best alternative forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-R-004",
+      "concept": "opportunity-cost",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-R-004",
+        "q": "A person rejects options valued at $30, $20, and $5. If another activity is chosen, which rejected value determines its opportunity cost?",
+        "options": [
+          "$30, the highest-valued rejected option",
+          "$55, the sum of all rejected options",
+          "$5, the least-valued rejected option",
+          "$20, the middle rejected option"
+        ],
+        "aHash": "622e24a12193dc6ca955e6fe6c9f6f5401f0ec8fc4c68db20ae019994231ad47",
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "next_best_alternative",
+        "repairSkill": "next_best_alternative",
+        "commonError": "Adding all rejected alternatives or selecting the least valuable.",
+        "feedback": "Opportunity cost uses one alternative: the highest-valued option forgone.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-R-005",
+      "concept": "opportunity-cost",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-R-005",
+        "q": "Why can spending an hour in a free park have an opportunity cost?",
+        "options": [
+          "The hour could have been used for another valued activity",
+          "Parks always collect a hidden entrance payment",
+          "Only travel spending can create opportunity cost",
+          "Free time has no alternative uses"
+        ],
+        "aHash": "03dcd51feaf3f98dd133cbc02d95288e23d02a16618fb2583e8871a7502fa870",
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "nonmonetary_opportunity_cost",
+        "repairSkill": "nonmonetary_opportunity_cost",
+        "commonError": "Assuming opportunity cost must be monetary.",
+        "feedback": "Time is scarce and can have a valuable next-best use even when no money changes hands.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-R-006",
+      "concept": "opportunity-cost",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-R-006",
+        "q": "A nonrefundable ticket was bought last month. When deciding whether to attend tonight, what should be treated as sunk?",
+        "options": [
+          "The amount already paid for the ticket",
+          "The best activity available tonight",
+          "Income that could be earned during the event",
+          "A resale price still available tonight"
+        ],
+        "aHash": "16ad319b13d6ede234c061b2f9cc31cef8b393e22b9c0bc40ee731437de34ab2",
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "sunk_cost_distinction",
+        "repairSkill": "sunk_cost_distinction",
+        "commonError": "Treating an unrecoverable past payment as a current opportunity cost.",
+        "feedback": "A sunk payment cannot be changed; current alternatives and recoverable values remain relevant.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-R-007",
+      "concept": "opportunity-cost",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-R-007",
+        "q": "An owner uses a room that could be rented to someone else. Why is the room not costless?",
+        "options": [
+          "Using it gives up possible rental income",
+          "Ownership requires paying its purchase price again",
+          "Every imaginable room use must be added together",
+          "Only borrowed rooms can have opportunity costs"
+        ],
+        "aHash": "f97a20f95c3259f50147cb5241d356dc86e140e21ddea434199efd5332dc54ff",
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "owned_resource_opportunity_cost",
+        "repairSkill": "owned_resource_opportunity_cost",
+        "commonError": "Assuming owned resources have no opportunity cost.",
+        "feedback": "The best forgone use of an owned resource is an implicit cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-R-008",
+      "concept": "opportunity-cost",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-R-008",
+        "q": "A worker takes two unpaid hours off instead of working for $18 per hour. What wage value is forgone?",
+        "options": [
+          "$36",
+          "$18",
+          "$0",
+          "$54"
+        ],
+        "aHash": "280d20fd8820be733a3d078d94089f96a65a506a0fe7d651686592ea8cf03373",
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "forgone_wages",
+        "repairSkill": "forgone_wages",
+        "commonError": "Ignoring duration or assuming unpaid time has no opportunity cost.",
+        "feedback": "Two forgone work hours at $18 each equal $36.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-BR-003",
+      "concept": "opportunity-cost",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-BR-003",
+        "q": "Two producers can make the same goods, but one gives up fewer shirts for each bicycle. How does opportunity cost identify comparative advantage?",
+        "options": [
+          "The producer giving up fewer shirts has comparative advantage in bicycles",
+          "The producer making more total goods in both industries must have comparative advantage",
+          "The producer with the higher bicycle opportunity cost should specialize",
+          "Comparative advantage depends only on money prices of the goods"
+        ],
+        "aHash": "0d63924d58459bbeda3d03b48283d063e1ade39fe81f8e43b455bee3d1d22b88",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_comparative_advantage",
+        "repairSkill": "opportunity_cost_comparative_advantage",
+        "commonError": "Assigning comparative advantage to absolute output or higher opportunity cost.",
+        "feedback": "Comparative advantage belongs to the producer with the lower opportunity cost.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-BR-004",
+      "concept": "opportunity-cost",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-BR-004",
+        "q": "A firm considers producing one additional unit. How does opportunity cost enter a marginal decision?",
+        "options": [
+          "The forgone value of resources used for that unit is compared with its added benefit",
+          "Every past expense and every earlier unit’s benefit are added to the next unit’s marginal cost",
+          "The total benefit of all earlier units determines the next unit’s cost",
+          "Opportunity cost matters only before the first unit is produced"
+        ],
+        "aHash": "88c81595e459d4fcd2a637020630722b31aa0dfc3d356caa3c23d66b2bf58be0",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_marginal_decision",
+        "repairSkill": "opportunity_cost_marginal_decision",
+        "commonError": "Using sunk or total values instead of additional benefit and cost.",
+        "feedback": "Marginal analysis compares added benefit with the opportunity cost of the next unit.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-BR-005",
+      "concept": "opportunity-cost",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-BR-005",
+        "q": "An entrepreneur uses a personally owned building and unpaid owner labor. How do these opportunity costs connect to economic profit?",
+        "options": [
+          "Forgone rent and salary are implicit costs subtracted from accounting profit",
+          "Owned inputs disappear from both accounting and economic analysis",
+          "Historical purchase prices plus every owner cash withdrawal are charged again each period",
+          "Economic profit subtracts every rejected business idea"
+        ],
+        "aHash": "218d4e50eea0d6cbee24bfedc798afc48bccd16249005d713da437402bade7e1",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_implicit_cost",
+        "repairSkill": "opportunity_cost_implicit_cost",
+        "commonError": "Treating owner-supplied inputs as free when moving from accounting to economic profit.",
+        "feedback": "Implicit opportunity costs explain why economic profit can be below accounting profit.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P72-OPPC-BR-006",
+      "concept": "opportunity-cost",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P72-OPPC-BR-006",
+        "q": "A workshop gives up progressively more chairs for each additional table. What connection does this create between opportunity cost and the production tradeoff?",
+        "options": [
+          "The opportunity cost of later tables rises as more chairs are forgone",
+          "Opportunity cost stays equal to the money price of a table in every production decision",
+          "Past chair production becomes a sunk cost of every table",
+          "The tradeoff disappears because both goods use the same workshop"
+        ],
+        "aHash": "c0d267e9bb1816672d88f4b4498fc208c4df659d5fa17f0f1a2aa49b185bc72c",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_production_tradeoff",
+        "repairSkill": "opportunity_cost_production_tradeoff",
+        "commonError": "Failing to interpret forgone output as the cost of additional production.",
+        "feedback": "The amount of one good forgone measures the opportunity cost of producing more of the other.",
+        "sourceCurationPhase": "phase7.2-opportunity-cost-standalone-expansion-v1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "phase": "phase7.2-opportunity-cost-standalone-expansion-v1",
+  "concept": "opportunity-cost",
+  "generatedAt": "2026-08-10T01:30:00.000Z",
+  "baselineLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1",
+  "productionLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1",
+  "scope": {
+    "unrelatedConceptBanksChanged": [],
+    "scarcityBankUnchanged": true,
+    "onlyOpportunityCostQuestionRecordsChanged": true
+  },
+  "beforeCounts": {
+    "easy": 6,
+    "medium": 6,
+    "hard": 6,
+    "elite": 4,
+    "legendary": 6,
+    "calculation": 2,
+    "easyBoss": 4,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 3,
+    "repairSeed": 1,
+    "bridge": 2,
+    "totalCanonical": 49
+  },
+  "afterCounts": {
+    "easy": 10,
+    "medium": 12,
+    "hard": 12,
+    "elite": 6,
+    "legendary": 27,
+    "calculation": 2,
+    "easyBoss": 5,
+    "mediumBoss": 5,
+    "finalBoss": 5,
+    "legendaryBoss": 9,
+    "repair": 8,
+    "repairSeed": 1,
+    "bridge": 6,
+    "totalCanonical": 108
+  },
+  "changeCounts": {
+    "ADD": 59,
+    "REWRITE": 21,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "REMOVE": 0
+  },
+  "instructional": {
+    "definitionHeavyOrdinaryBefore": 1,
+    "definitionHeavyOrdinaryAfter": 0,
+    "scenarioApplicationBefore": 18,
+    "scenarioApplicationAfter": 31
+  },
+  "misconceptions": {
+    "before": {
+      "next best, not all alternatives": 24,
+      "opportunity cost need not be monetary": 2,
+      "sunk costs are not current opportunity costs": 1,
+      "zero price does not imply zero cost": 9,
+      "owned resources are not costless": 8,
+      "forgone wages can be opportunity cost": 10,
+      "do not ignore the forgone alternative": 38,
+      "do not select least-valued alternative": 5
+    },
+    "after": {
+      "next best, not all alternatives": 37,
+      "opportunity cost need not be monetary": 7,
+      "sunk costs are not current opportunity costs": 14,
+      "zero price does not imply zero cost": 15,
+      "owned resources are not costless": 18,
+      "forgone wages can be opportunity cost": 17,
+      "do not ignore the forgone alternative": 77,
+      "do not select least-valued alternative": 16
+    }
+  },
+  "calculationAudit": {
+    "dedicatedCount": 2,
+    "totalLinkedCount": 34,
+    "distinctTaskFamilies": [
+      "checkpoint-multiple-implicit-costs",
+      "checkpoint-wages-plus-explicit-cost",
+      "compare-net-alternative-returns",
+      "constant-production-tradeoff",
+      "economic-profit-owner-resources",
+      "economic-profit-three-implicit-inputs",
+      "explicit-cost-plus-next-best-event",
+      "explicit-plus-forgone-wages",
+      "forgone-resale-plus-explicit-cost",
+      "forgone-wages-over-time",
+      "legendary-checkpoint-owner-rent-and-labor",
+      "legendary-checkpoint-production-ratio",
+      "marginal-unit-opportunity-cost",
+      "mixed-costs-and-offsetting-benefit",
+      "multiple-owner-supplied-inputs",
+      "net-benefit-relative-to-best-land-use",
+      "next-best-composite-alternatives",
+      "next-best-return",
+      "owned-resource-next-best-return",
+      "per-unit-production-tradeoff",
+      "public-land-alternative-use",
+      "repair-forgone-wages",
+      "required-output-tradeoff",
+      "time-wages-plus-explicit-cost",
+      "total-opportunity-cost-over-time"
+    ]
+  },
+  "duplicateAudit": {
+    "exactDuplicateStems": [],
+    "nearDuplicateCandidates": [],
+    "materialNearDuplicates": [],
+    "repeatedAnswerSets": [],
+    "numberNameSwaps": [],
+    "scenarioDistribution": {
+      "a library can use": 1,
+      "a student spends two": 1,
+      "a student can spend": 1,
+      "a city uses an": 1,
+      "a parent attends a": 1,
+      "a resident can spend": 1,
+      "a nurse can use": 1,
+      "a family spends its": 1,
+      "a bakery assigns its": 1,
+      "a nonprofit uses a": 1,
+      "a laboratory assistant works": 1,
+      "a worker can take": 1,
+      "an entrepreneur leaves a": 1,
+      "a student pays 12": 1,
+      "a farmer can plant": 1,
+      "a firm uses a": 1,
+      "a photographer can accept": 1,
+      "a free certification exam": 1,
+      "a printer owned by": 1,
+      "a student spends three": 1,
+      "a club paid a": 1,
+      "a mechanic plans to": 1,
+      "a consultant can accept": 1,
+      "a restaurant owner uses": 1,
+      "a theater has already": 1,
+      "a government uses 20": 1,
+      "a worker s hourly": 1,
+      "a nonprofit receives a": 1,
+      "a retailer uses an": 1,
+      "a one year program": 1,
+      "a government funds a": 1,
+      "a factory bought a": 1,
+      "an entrepreneur can keep": 1,
+      "a researcher devotes ten": 1,
+      "a software founder uses": 1,
+      "a museum has already": 1,
+      "a county can assign": 1,
+      "a firm owns a": 1,
+      "a port authority has": 1,
+      "an owner operated studio": 1,
+      "a researcher initially gives": 1,
+      "a popular clinic charges": 1,
+      "a graduate program charges": 1,
+      "a firm can use": 1,
+      "a public agency assigns": 1,
+      "a self employed designer": 1,
+      "a student chooses a": 1,
+      "a startup has one": 1,
+      "a hospital reserves an": 1,
+      "a research council funds": 1,
+      "a city uses waterfront": 1,
+      "during a drought one": 1,
+      "military engineers can repair": 1,
+      "a factory assigns its": 1,
+      "an arena uses a": 1,
+      "a tunnel boring machine": 1,
+      "a nonprofit has 400": 1,
+      "a farmer plants berries": 1,
+      "a plant can produce": 1,
+      "a cloud platform uses": 1,
+      "a consultant chooses a": 1,
+      "a pharmaceutical lab has": 1,
+      "a chef opens a": 1,
+      "a transportation agency can": 1,
+      "a free municipal charging": 1,
+      "a workshop can use": 1,
+      "a media company uses": 1,
+      "a student can earn": 1,
+      "a worker can produce": 1,
+      "a recreation center assigns": 1,
+      "a caf manager moves": 1,
+      "a student uses a": 1,
+      "an instructor gives three": 1,
+      "a musician spends an": 1,
+      "a firm uses owned": 1,
+      "tuition is 10 000": 1,
+      "a city has spent": 1,
+      "a business earns 160": 1,
+      "an owned parcel can": 1,
+      "a student spends a": 1,
+      "a business uses its": 1,
+      "a worker attends a": 1,
+      "a university has already": 1,
+      "a firm earns 190": 1,
+      "a consultant can spend": 1,
+      "a factory can use": 1,
+      "a student values a": 1,
+      "a foundation can fund": 1,
+      "an owner uses a": 3,
+      "a film studio spent": 1,
+      "a city assigns a": 1,
+      "a machine produces 420": 1,
+      "a manager plans to": 1,
+      "opportunity cost is the": 1,
+      "a free event can": 1,
+      "a person rejects options": 1,
+      "why can spending an": 1,
+      "a nonrefundable ticket was": 1,
+      "a worker takes two": 1,
+      "if choosing one option": 1,
+      "scarcity means a community": 1,
+      "moving along a production": 1,
+      "two producers can make": 1,
+      "a firm considers producing": 1,
+      "an entrepreneur uses a": 1,
+      "a workshop gives up": 1
+    },
+    "cognitiveTaskDistribution": {
+      "application|next_best_alternative": 8,
+      "application|nonmonetary_opportunity_cost": 6,
+      "application|opportunity_cost_identification": 4,
+      "application|owned_resource_opportunity_cost": 3,
+      "calculation|next_best_alternative": 3,
+      "calculation|opportunity_cost_full_cost": 2,
+      "calculation|opportunity_cost_calculation": 2,
+      "application|opportunity_cost_full_cost": 4,
+      "calculation|full_cost_opportunity_cost_analysis": 9,
+      "calculation|forgone_wages": 2,
+      "application|sunk_cost_distinction": 5,
+      "dynamic-analysis|opportunity_cost_over_time": 4,
+      "calculation|opportunity_cost_identification": 1,
+      "interpretation|forgone_wages": 1,
+      "calculation|owned_resource_opportunity_cost": 2,
+      "calculation|opportunity_cost_net_benefit": 3,
+      "transfer|full_cost_opportunity_cost_analysis": 1,
+      "transfer|sunk_cost_distinction": 2,
+      "transfer|next_best_alternative": 1,
+      "multi-step|opportunity_cost_net_benefit": 2,
+      "multi-step|full_cost_opportunity_cost_analysis": 3,
+      "synthesis|nonmonetary_opportunity_cost": 1,
+      "multi-step|next_best_alternative": 4,
+      "synthesis|sunk_cost_distinction": 1,
+      "transfer|nonmonetary_opportunity_cost": 1,
+      "policy-analysis|next_best_alternative": 3,
+      "resource-allocation|next_best_alternative": 1,
+      "labor-allocation|opportunity_cost_identification": 1,
+      "calculation|production_tradeoff_ratio": 5,
+      "constraint-analysis|next_best_alternative": 1,
+      "technology-transfer|sunk_cost_distinction": 1,
+      "sunk-cost-trap|sunk_cost_distinction": 2,
+      "dynamic-policy|opportunity_cost_over_time": 1,
+      "heterogeneous-values|nonmonetary_opportunity_cost": 1,
+      "trap|next_best_alternative": 1,
+      "application|opportunity_cost_calculation": 1,
+      "application|full_cost_opportunity_cost_analysis": 1,
+      "calculation|sunk_cost_distinction": 1,
+      "application|opportunity_cost_definition": 1,
+      "diagnostic|next_best_alternative": 1,
+      "diagnostic|nonmonetary_opportunity_cost": 1,
+      "diagnostic|sunk_cost_distinction": 1,
+      "diagnostic|owned_resource_opportunity_cost": 1,
+      "diagnostic|forgone_wages": 1,
+      "repair|core_opportunity_cost": 1,
+      "bridge|scarcity_to_opportunity_cost": 1,
+      "bridge|opportunity_cost_ppf": 1,
+      "bridge|opportunity_cost_comparative_advantage": 1,
+      "bridge|opportunity_cost_marginal_decision": 1,
+      "bridge|opportunity_cost_implicit_cost": 1,
+      "bridge|opportunity_cost_production_tradeoff": 1
+    }
+  },
+  "answerLengthAudit": {
+    "before": {
+      "easy": {
+        "count": 6,
+        "uniquelyLongestCorrect": 4,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.335
+      },
+      "medium": {
+        "count": 6,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.041
+      },
+      "hard": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 0.957
+      },
+      "elite": {
+        "count": 4,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.094
+      },
+      "legendary": {
+        "count": 6,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.005
+      },
+      "calculation": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "easyBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.036
+      },
+      "mediumBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.736
+      },
+      "finalBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "legendaryBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "repair": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.851
+      },
+      "bridge": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.062
+      }
+    },
+    "after": {
+      "easy": {
+        "count": 10,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.1,
+        "meanCorrectToDistractorRatio": 1.049
+      },
+      "medium": {
+        "count": 12,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 0.971
+      },
+      "hard": {
+        "count": 12,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.083,
+        "meanCorrectToDistractorRatio": 0.939
+      },
+      "elite": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 0.965
+      },
+      "legendary": {
+        "count": 27,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.074,
+        "meanCorrectToDistractorRatio": 0.989
+      },
+      "calculation": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "easyBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.4,
+        "meanCorrectToDistractorRatio": 0.995
+      },
+      "mediumBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 1.041
+      },
+      "finalBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.957
+      },
+      "legendaryBoss": {
+        "count": 9,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.954
+      },
+      "repair": {
+        "count": 8,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.125,
+        "meanCorrectToDistractorRatio": 1.014
+      },
+      "bridge": {
+        "count": 6,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.035
+      }
+    }
+  },
+  "metadata": {
+    "recordIssues": [],
+    "answerValidation": {
+      "ok": true,
+      "questionCount": 108,
+      "issues": []
+    },
+    "repairRouteMissing": [],
+    "bridgeRouteMissing": []
+  },
+  "modeResults": {
+    "standard": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 6163,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "timed": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 6139,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "exam": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 6202,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "legendary": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 7000,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "score": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "calculationLinkedSelections": 6155,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    }
+  },
+  "simulations": {
+    "totalSessions": 2500,
+    "byMode": {
+      "standard": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 6163,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "timed": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 6139,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "exam": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 6202,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "legendary": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 7000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "score": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "repairSelections": 2400,
+        "bridgeSelections": 1500,
+        "calculationLinkedSelections": 6155,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      }
+    }
+  },
+  "sharedAreaRegression": [
+    {
+      "name": "General Economics Opportunity Cost",
+      "ids": [
+        "opportunity-cost",
+        "scarcity-and-tradeoffs"
+      ],
+      "opportunityCostInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "scarcity-and-tradeoffs": 1678,
+            "opportunity-cost": 1922
+          }
+        },
+        "timed": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1644,
+            "scarcity-and-tradeoffs": 1356
+          }
+        },
+        "exam": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1633,
+            "scarcity-and-tradeoffs": 1367
+          }
+        },
+        "legendary": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "scarcity-and-tradeoffs": 1799,
+            "opportunity-cost": 1801
+          }
+        },
+        "score": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1974,
+            "scarcity-and-tradeoffs": 1626
+          }
+        }
+      },
+      "repairCount": 15,
+      "bridgeCount": 10,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Macroeconomics Opportunity Cost",
+      "ids": [
+        "opportunity-cost",
+        "gdp-measurement"
+      ],
+      "opportunityCostInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gdp-measurement": 1598,
+            "opportunity-cost": 2002
+          }
+        },
+        "timed": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1757,
+            "gdp-measurement": 1243
+          }
+        },
+        "exam": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1747,
+            "gdp-measurement": 1253
+          }
+        },
+        "legendary": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gdp-measurement": 826,
+            "opportunity-cost": 2774
+          }
+        },
+        "score": {
+          "sessions": 100,
+          "preflight": true,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 2010,
+            "gdp-measurement": 1590
+          }
+        }
+      },
+      "repairCount": 14,
+      "bridgeCount": 9,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "adjacentCombination": {
+    "name": "Scarcity and Opportunity Cost",
+    "ids": [
+      "scarcity-and-tradeoffs",
+      "opportunity-cost"
+    ],
+    "opportunityCostInstances": 1,
+    "modeResults": {
+      "standard": {
+        "sessions": 100,
+        "preflight": true,
+        "completionFailures": 0,
+        "prohibitedDuplicates": 0,
+        "conceptRepresentation": {
+          "opportunity-cost": 1983,
+          "scarcity-and-tradeoffs": 1617
+        }
+      },
+      "timed": {
+        "sessions": 100,
+        "preflight": true,
+        "completionFailures": 0,
+        "prohibitedDuplicates": 0,
+        "conceptRepresentation": {
+          "scarcity-and-tradeoffs": 1381,
+          "opportunity-cost": 1619
+        }
+      },
+      "exam": {
+        "sessions": 100,
+        "preflight": true,
+        "completionFailures": 0,
+        "prohibitedDuplicates": 0,
+        "conceptRepresentation": {
+          "scarcity-and-tradeoffs": 1368,
+          "opportunity-cost": 1632
+        }
+      },
+      "legendary": {
+        "sessions": 100,
+        "preflight": true,
+        "completionFailures": 0,
+        "prohibitedDuplicates": 0,
+        "conceptRepresentation": {
+          "opportunity-cost": 1799,
+          "scarcity-and-tradeoffs": 1801
+        }
+      },
+      "score": {
+        "sessions": 100,
+        "preflight": true,
+        "completionFailures": 0,
+        "prohibitedDuplicates": 0,
+        "conceptRepresentation": {
+          "scarcity-and-tradeoffs": 1629,
+          "opportunity-cost": 1971
+        }
+      }
+    },
+    "repairCount": 15,
+    "bridgeCount": 10,
+    "canonicalDuplicates": 0
+  },
+  "browserValidation": {
+    "passed": true,
+    "testedAt": "2026-08-10T01:45:00.000Z",
+    "target": "http://127.0.0.1:8772/index.html",
+    "surface": "Codex in-app browser",
+    "summary": "All five modes started and selected a four-option Opportunity Cost question; Standard save/resume restored the player and Stage One room 1 after reload; checkpoint markers rendered at rooms 10, 20, and 30 in Standard and Legendary; no browser console errors were observed.",
+    "modes": {
+      "standard": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Standard Campaign — Stage One (1/30)"
+      },
+      "timed": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Timed Trial — Stage One (1/30)"
+      },
+      "exam": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Exam Drill — Stage One (1/30)"
+      },
+      "legendary": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Legendary Mode — Stage One (1/30)"
+      },
+      "score": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Score Attack — Stage One (1/30)"
+      }
+    },
+    "saveResume": {
+      "passed": true,
+      "restoredPlayer": "Opportunity QA",
+      "restoredStatus": "Standard Campaign — Stage One (1/30)",
+      "questionSelectionRestored": true
+    },
+    "checkpointTrack": {
+      "passed": true,
+      "visibleCheckpointRooms": [
+        10,
+        20,
+        30
+      ],
+      "verifiedModes": [
+        "standard",
+        "legendary"
+      ],
+      "transitionAndCompletionCoverage": "Deterministic engine simulation"
+    },
+    "calculationRendering": {
+      "passed": true,
+      "legendaryPromptContainedMultipleDollarValues": true
+    },
+    "consoleErrors": []
+  },
+  "graphPolicy": {
+    "opportunityCostAssetsBefore": 0,
+    "opportunityCostAssetsAfter": 0,
+    "phase64AccessibilityPreserved": true
+  },
+  "finalVerdict": "OPPORTUNITY COST READY — COMPACT STANDALONE BANK VALIDATED"
+}
