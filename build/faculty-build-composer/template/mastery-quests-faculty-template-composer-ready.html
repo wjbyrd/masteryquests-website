@@ -2819,7 +2819,8 @@ DO NOT REMOVE:
 
 <div id="graphLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded question graph">
   <button id="graphLightboxClose" type="button" aria-label="Close expanded graph">×</button>
-  <img id="graphLightboxImg" alt="Expanded question graph">
+  <img id="graphLightboxImg" alt="" aria-describedby="graphLightboxDescription">
+  <p id="graphLightboxDescription" class="sr-only"></p>
 </div>
 
 <!-- =========================================
@@ -5548,6 +5549,7 @@ const questionBanks = {
 
 const objectiveLabels = {};
 const embeddedQuestionAssets = {};
+const questionAssetMetadata = {};
 const facultyQuestionValidator = globalThis.MQComposerCore?.validateFacultyQuestionRecord || function(){ return []; };
 
 
@@ -5855,7 +5857,11 @@ function getFacultyPool(poolName){
 }
 
 function validateFacultyQuestion(question, poolName){
-    return facultyQuestionValidator(question, poolName, embeddedQuestionAssets);
+    const runtimeAssets = Object.keys(embeddedQuestionAssets).map(assetPath => ({
+        runtimePath: assetPath,
+        ...(questionAssetMetadata[assetPath] || questionAssetMetadata[assetPath.split("/").pop()] || {})
+    }));
+    return facultyQuestionValidator(question, poolName, runtimeAssets);
 }
 
 function validateFacultyMode(mode){
@@ -6300,13 +6306,44 @@ function playFinalBossMusic(){
 // QUESTION GRAPH LIGHTBOX
 // Click any question graph to enlarge it. Click the X, backdrop, or Escape to close.
 // =============================================
-function openGraphLightbox(src, altText){
+function getQuestionGraphAccessibility(question){
+    const rawPath = String(question?.image || "").replace(/^data\//, "");
+    const filename = rawPath.split("/").pop();
+    const metadata = questionAssetMetadata[rawPath]
+        || questionAssetMetadata[filename]
+        || Object.entries(questionAssetMetadata).find(([key]) => key.split("/").pop() === filename)?.[1]
+        || {};
+    return {
+        imageAlt: String(metadata.imageAlt || "Economics graph with labeled axes, curves, points, and visible values."),
+        graphDescription: String(metadata.graphDescription || "The graph description metadata is unavailable.")
+    };
+}
+
+function renderQuestionGraph(question){
+    const imageBox = document.getElementById("questionImageBox");
+    if(!imageBox) return;
+    if(!question?.image){
+        imageBox.innerHTML = "";
+        imageBox.style.display = "none";
+        return;
+    }
+    const accessibility = getQuestionGraphAccessibility(question);
+    const alt = escapeHTML(accessibility.imageAlt);
+    const description = escapeHTML(accessibility.graphDescription);
+    imageBox.innerHTML = `<img src="${resolveQuestionImage(question.image)}" alt="${alt}" aria-describedby="questionGraphDescription" data-graph-description="${description}" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded graph: ${alt}"><p id="questionGraphDescription" class="sr-only">${description}</p><div class="graph-zoom-note">Click graph to enlarge</div>`;
+    imageBox.style.display = "block";
+}
+
+function openGraphLightbox(src, altText, graphDescription){
     const lightbox = document.getElementById("graphLightbox");
     const lightboxImg = document.getElementById("graphLightboxImg");
-    if(!lightbox || !lightboxImg || !src) return;
+    const lightboxDescription = document.getElementById("graphLightboxDescription");
+    if(!lightbox || !lightboxImg || !lightboxDescription || !src) return;
 
     lightboxImg.src = src;
-    lightboxImg.alt = altText || "Expanded question graph";
+    lightboxImg.alt = altText || "Economics graph with labeled axes, curves, points, and visible values.";
+    lightboxImg.setAttribute("aria-describedby", "graphLightboxDescription");
+    lightboxDescription.textContent = graphDescription || "The graph description metadata is unavailable.";
     lightbox.classList.add("active");
     lightbox.setAttribute("aria-hidden", "false");
 }
@@ -6319,6 +6356,8 @@ function closeGraphLightbox(){
     lightbox.classList.remove("active");
     lightbox.setAttribute("aria-hidden", "true");
     if(lightboxImg) lightboxImg.removeAttribute("src");
+    const lightboxDescription = document.getElementById("graphLightboxDescription");
+    if(lightboxDescription) lightboxDescription.textContent = "";
 }
 
 document.addEventListener("click", function(event){
@@ -6326,7 +6365,7 @@ document.addEventListener("click", function(event){
     const graphImg = target && target.closest ? target.closest("#questionImageBox img") : null;
 
     if(graphImg){
-        openGraphLightbox(graphImg.src, graphImg.alt);
+        openGraphLightbox(graphImg.src, graphImg.alt, graphImg.dataset.graphDescription);
         return;
     }
 
@@ -6341,7 +6380,7 @@ document.addEventListener("keydown", function(event){
 
     if(graphImg && (event.key === "Enter" || event.key === " ")){
         event.preventDefault();
-        openGraphLightbox(target.src, target.alt);
+        openGraphLightbox(target.src, target.alt, target.dataset.graphDescription);
         return;
     }
 
@@ -6462,13 +6501,7 @@ if (isBoss) {
         return;
     }
 
-    if (currentQuestion.image) {
-        imageBox.innerHTML = `<img src="${resolveQuestionImage(currentQuestion.image)}" alt="Question graph" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded question graph"><div class="graph-zoom-note">Click graph to enlarge</div>`;
-        imageBox.style.display = "block";
-    } else {
-        imageBox.innerHTML = "";
-        imageBox.style.display = "none";
-    }
+    renderQuestionGraph(currentQuestion);
 
     // 3. Generic checkpoint identity
     const bTitle = room === 10 ? "CHECKPOINT ONE"
@@ -6521,13 +6554,7 @@ if(gameMode === "legendary"){
         return;
     }
 
-    if(currentQuestion.image){
-        imageBox.innerHTML = `<img src="${resolveQuestionImage(currentQuestion.image)}" alt="Question graph" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded question graph"><div class="graph-zoom-note">Click graph to enlarge</div>`;
-        imageBox.style.display = "block";
-    } else {
-        imageBox.innerHTML = "";
-        imageBox.style.display = "none";
-    }
+    renderQuestionGraph(currentQuestion);
 
     if(!currentQuestion.type){
         currentQuestion.type = "synthesis";
@@ -6598,10 +6625,7 @@ if(!currentQuestion){
     return;
 }
 		
-if(currentQuestion.image){
-    imageBox.innerHTML = `<img src="${resolveQuestionImage(currentQuestion.image)}" alt="Question graph" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded question graph"><div class="graph-zoom-note">Click graph to enlarge</div>`;
-    imageBox.style.display = "block";
-}
+renderQuestionGraph(currentQuestion);
 
 // =============================
 // --- WIZARD LOGIC ---
