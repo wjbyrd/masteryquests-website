@@ -1,0 +1,2726 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phase7.1-scarcity-standalone-expansion-v1",
+  "generatedAt": "2026-08-09T22:30:00.000Z",
+  "concept": {
+    "canonicalConceptId": "scarcity-and-tradeoffs",
+    "title": "Scarcity and Tradeoffs",
+    "courseAreas": [
+      "General Economics",
+      "Macroeconomics"
+    ]
+  },
+  "sourceLibrary": {
+    "beforeVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1",
+    "beforeLogicalSha256": "3559bd3a39255eeed1a3195e2d0b706ae88c519c8271220c80716dc9a8c98ada",
+    "beforeFileSha256": "60292767a4928fc10f2a4154304998f0a28057d4898116de48c2bd67cc3714b2"
+  },
+  "reviewSummary": {
+    "existingReviewed": 48,
+    "keep": 20,
+    "rewrite": 28,
+    "relocateRepair": 0,
+    "relocateBridge": 0,
+    "remove": 0
+  },
+  "existingReview": [
+    {
+      "id": "ECON-MG-EASY-1",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASY-16",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASY-17",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASY-2",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-E-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-E-002",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-MEDIUM-105",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-M-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-M-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-M-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-M-004",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-M-005",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-H-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-H-002",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-H-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-H-004",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-H-005",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-H-006",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-ELITE-335",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-EL-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-EL-002",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-EL-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9013",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9051",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-L-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-L-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-L-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-L-004",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-B1-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-B1-002",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-B1-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-B2-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-B2-002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-B2-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-B3-001",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-B3-002",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-B3-003",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9100",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9101",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9102",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-R-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-R-002",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52A-SCAR-R-003",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-CORE-POLICY-TRADEOFFS-30014",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-CORE-SCARCITY-30003",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-CORE-TRADEOFFS-30002",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-BR-001",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52A-SCAR-BR-002",
+      "action": "KEEP"
+    }
+  ],
+  "changes": [
+    {
+      "id": "ECON-MG-EASY-1",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-1",
+        "q": "A community has one available parcel and can build either an elementary school or a recreation complex this year, but not both. What is illustrated most directly?",
+        "options": [
+          "Scarcity, because one limited parcel has competing valued uses",
+          "A shortage, because the community temporarily ran out of buildings",
+          "Equality, because both projects would serve the same residents",
+          "Abundance, because the parcel can support at least one project"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Confusing scarcity with a temporary shortage or simple absence.",
+        "feedback": "The parcel is limited relative to competing valued uses, so the community must choose.",
+        "aHash": "3003d1b0ea61bda2e218686743493c4eabfe54282bd59644270b8314602b4445",
+        "sourceHash": "675a451c32b39748da9a4e37f0dd952837a1d25e5f6bb69495b3f291c9d4e7d5"
+      },
+      "after": {
+        "id": "ECON-MG-EASY-1",
+        "q": "A community has one available parcel and can build either an elementary school or a recreation complex this year, but not both. What is illustrated most directly?",
+        "options": [
+          "Scarcity, because one limited parcel has competing valued uses",
+          "A shortage, because the community temporarily ran out of buildings",
+          "Equality, because both projects would serve the same residents",
+          "Abundance, because the parcel can support at least one project"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Confusing scarcity with a temporary shortage or simple absence.",
+        "feedback": "The parcel is limited relative to competing valued uses, so the community must choose.",
+        "aHash": "3003d1b0ea61bda2e218686743493c4eabfe54282bd59644270b8314602b4445",
+        "sourceHash": "675a451c32b39748da9a4e37f0dd952837a1d25e5f6bb69495b3f291c9d4e7d5"
+      }
+    },
+    {
+      "id": "ECON-MG-EASY-16",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-16",
+        "q": "A clinic assigns its limited nurse-hours to the cases expected to produce the greatest total health benefit. Which goal is the clinic emphasizing?",
+        "options": [
+          "Efficiency in the use of its limited clinical resources",
+          "Equality through identical treatment time for every patient",
+          "Abundance because the clinic can schedule some patients",
+          "A shortage caused by setting the price of care too low"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "efficiency_definition",
+        "repairSkill": "efficiency_vs_equality",
+        "commonError": "Confusing efficient resource use with equal distribution.",
+        "feedback": "Efficiency asks whether scarce resources generate the greatest total value.",
+        "aHash": "db28793d67dfe943957cd7aff41b3f4846f48ea8ccc5a20208419d2570177527",
+        "sourceHash": "4b5513032d6992693743d5e594707f18b0d15d87a7b757bd36fb3cdffc5d9da0"
+      },
+      "after": {
+        "id": "ECON-MG-EASY-16",
+        "q": "A clinic assigns its limited nurse-hours to the cases expected to produce the greatest total health benefit. Which goal is the clinic emphasizing?",
+        "options": [
+          "Efficiency in the use of its limited clinical resources",
+          "Equality through identical treatment time for every patient",
+          "Abundance because the clinic can schedule some patients",
+          "A shortage caused by setting the price of care too low"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "efficiency_definition",
+        "repairSkill": "efficiency_vs_equality",
+        "commonError": "Confusing efficient resource use with equal distribution.",
+        "feedback": "Efficiency asks whether scarce resources generate the greatest total value.",
+        "aHash": "db28793d67dfe943957cd7aff41b3f4846f48ea8ccc5a20208419d2570177527",
+        "sourceHash": "4b5513032d6992693743d5e594707f18b0d15d87a7b757bd36fb3cdffc5d9da0"
+      }
+    },
+    {
+      "id": "ECON-MG-EASY-17",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-17",
+        "q": "A scholarship office divides a fixed fund so every eligible student receives the same award. Which goal is it emphasizing?",
+        "options": [
+          "Equality in how the available scholarship funds are distributed",
+          "Efficiency measured only by the total number of degrees completed",
+          "Abundance created by dividing the existing fund into equal shares",
+          "A shortage created by charging students a below-market tuition"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "equality_definition",
+        "repairSkill": "efficiency_vs_equality",
+        "commonError": "Confusing equal distribution with maximum total value.",
+        "feedback": "Equality concerns how benefits or prosperity are distributed across people.",
+        "aHash": "743da1568dc779912338f00560bdd58bd5ff1a99d2506909823040d6088359aa",
+        "sourceHash": "71bd67d6fce65308390d55452744e7503d085d2d8d1e1142477fff2ac1b8cc86"
+      },
+      "after": {
+        "id": "ECON-MG-EASY-17",
+        "q": "A scholarship office divides a fixed fund so every eligible student receives the same award. Which goal is it emphasizing?",
+        "options": [
+          "Equality in how the available scholarship funds are distributed",
+          "Efficiency measured only by the total number of degrees completed",
+          "Abundance created by dividing the existing fund into equal shares",
+          "A shortage created by charging students a below-market tuition"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "equality_definition",
+        "repairSkill": "efficiency_vs_equality",
+        "commonError": "Confusing equal distribution with maximum total value.",
+        "feedback": "Equality concerns how benefits or prosperity are distributed across people.",
+        "aHash": "743da1568dc779912338f00560bdd58bd5ff1a99d2506909823040d6088359aa",
+        "sourceHash": "71bd67d6fce65308390d55452744e7503d085d2d8d1e1142477fff2ac1b8cc86"
+      }
+    },
+    {
+      "id": "P52A-SCAR-E-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-E-001",
+        "q": "A wealthy city can afford more services than before, yet this year it must choose between expanding transit and replacing aging water lines. Why does scarcity remain?",
+        "options": [
+          "Its budget, crews, and construction time are still limited relative to valued projects",
+          "Wealth makes every desired project physically impossible to complete",
+          "Higher income automatically creates a temporary market shortage",
+          "The city faces scarcity only if both projects charge a money price"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Treating scarcity as a problem only for poor societies.",
+        "feedback": "Greater wealth relaxes constraints, but limited resources still have competing uses.",
+        "aHash": "719db87b73db0b8dca65ac7b8ef01eebb9ce4512fee86be3f6afd14b9c78215b",
+        "sourceHash": "a3ec7e42a522c3c57ecf88a2c518cf6036eb5dc27af6d2cd36a16b19dc69b312"
+      },
+      "after": {
+        "id": "P52A-SCAR-E-001",
+        "q": "A wealthy city can afford more services than before, yet this year it must choose between expanding transit and replacing aging water lines. Why does scarcity remain?",
+        "options": [
+          "Its budget, crews, and construction time are still limited relative to valued projects",
+          "Wealth makes every desired project physically impossible to complete",
+          "Higher income automatically creates a temporary market shortage",
+          "The city faces scarcity only if both projects charge a money price"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Treating scarcity as a problem only for poor societies.",
+        "feedback": "Greater wealth relaxes constraints, but limited resources still have competing uses.",
+        "aHash": "719db87b73db0b8dca65ac7b8ef01eebb9ce4512fee86be3f6afd14b9c78215b",
+        "sourceHash": "a3ec7e42a522c3c57ecf88a2c518cf6036eb5dc27af6d2cd36a16b19dc69b312"
+      }
+    },
+    {
+      "id": "P52A-SCAR-E-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-E-002",
+        "q": "A free campus workshop still involves scarcity because:",
+        "options": [
+          "It still uses limited seats, instructor time, and student time",
+          "A zero price makes every required resource unlimited in supply",
+          "Only the workshop topic, rather than its inputs, can be scarce",
+          "Free admission creates a legal ceiling on every campus price"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Assuming a zero money price means no scarce resources are used.",
+        "feedback": "A zero admission price does not make space, labor, or time unlimited.",
+        "aHash": "e2884a2d4ecbeec2a296a7b825c14ae6da8c8b05f8ac56e14b87f3156fe35e3e",
+        "sourceHash": "f29a05c74c1602617364e96d4457a4a8cbee73a976ca829b692f17204b9e565b"
+      },
+      "after": {
+        "id": "P52A-SCAR-E-002",
+        "q": "A free campus workshop still involves scarcity because:",
+        "options": [
+          "It still uses limited seats, instructor time, and student time",
+          "A zero price makes every required resource unlimited in supply",
+          "Only the workshop topic, rather than its inputs, can be scarce",
+          "Free admission creates a legal ceiling on every campus price"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Assuming a zero money price means no scarce resources are used.",
+        "feedback": "A zero admission price does not make space, labor, or time unlimited.",
+        "aHash": "e2884a2d4ecbeec2a296a7b825c14ae6da8c8b05f8ac56e14b87f3156fe35e3e",
+        "sourceHash": "f29a05c74c1602617364e96d4457a4a8cbee73a976ca829b692f17204b9e565b"
+      }
+    },
+    {
+      "id": "P52A-SCAR-M-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-M-001",
+        "q": "A city can fund either a new fire station or several neighborhood parks with the same budget. This illustrates:",
+        "options": [
+          "A tradeoff created by competing uses of a limited city budget",
+          "An end to scarcity created by collecting and spending local taxes",
+          "A temporary shortage produced by fixing a public-service price",
+          "A specialization gain created by assigning each project to a district"
+        ],
+        "type": "scenario",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Missing the tradeoff because both projects are socially valuable.",
+        "feedback": "Limited funds force the city to choose among competing uses.",
+        "aHash": "e4a98e80e6cd03b2140387e172506fcf63a6b5bda6c98fa229948fb9007c9d08",
+        "sourceHash": "63cbb132969a985bd15216a88feeb8a67ccf10f5cec88f4cb279e4ed6051f1e8"
+      },
+      "after": {
+        "id": "P52A-SCAR-M-001",
+        "q": "A city can fund either a new fire station or several neighborhood parks with the same budget. This illustrates:",
+        "options": [
+          "A tradeoff created by competing uses of a limited city budget",
+          "An end to scarcity created by collecting and spending local taxes",
+          "A temporary shortage produced by fixing a public-service price",
+          "A specialization gain created by assigning each project to a district"
+        ],
+        "type": "scenario",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Missing the tradeoff because both projects are socially valuable.",
+        "feedback": "Limited funds force the city to choose among competing uses.",
+        "aHash": "e4a98e80e6cd03b2140387e172506fcf63a6b5bda6c98fa229948fb9007c9d08",
+        "sourceHash": "63cbb132969a985bd15216a88feeb8a67ccf10f5cec88f4cb279e4ed6051f1e8"
+      }
+    },
+    {
+      "id": "P52A-SCAR-M-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-M-003",
+        "q": "Which statement best distinguishes efficiency from equality?",
+        "options": [
+          "Efficiency concerns total value; equality concerns its distribution",
+          "Efficiency requires equal shares; equality requires maximum output",
+          "Efficiency and equality describe the same resource-allocation goal",
+          "Efficiency concerns prices; equality concerns physical production"
+        ],
+        "type": "comparison",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "efficiency_equity_tradeoff",
+        "repairSkill": "efficiency_equity_tradeoff",
+        "commonError": "Treating efficiency and equality as synonyms.",
+        "feedback": "Efficiency focuses on the size of the economic pie; equality focuses on its distribution.",
+        "aHash": "f6f57f8f05537acd0b7ff12a2ac4a14dfa2220e67b36093e5fa967681beb8868",
+        "sourceHash": "3cf96a53f949ba2030eaeda27be3cf1f2a7bd673d48aa96e7362dda9d2c6408e"
+      },
+      "after": {
+        "id": "P52A-SCAR-M-003",
+        "q": "Which statement best distinguishes efficiency from equality?",
+        "options": [
+          "Efficiency concerns total value; equality concerns its distribution",
+          "Efficiency requires equal shares; equality requires maximum output",
+          "Efficiency and equality describe the same resource-allocation goal",
+          "Efficiency concerns prices; equality concerns physical production"
+        ],
+        "type": "comparison",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "efficiency_equity_tradeoff",
+        "repairSkill": "efficiency_equity_tradeoff",
+        "commonError": "Treating efficiency and equality as synonyms.",
+        "feedback": "Efficiency focuses on the size of the economic pie; equality focuses on its distribution.",
+        "aHash": "f6f57f8f05537acd0b7ff12a2ac4a14dfa2220e67b36093e5fa967681beb8868",
+        "sourceHash": "3cf96a53f949ba2030eaeda27be3cf1f2a7bd673d48aa96e7362dda9d2c6408e"
+      }
+    },
+    {
+      "id": "P52A-SCAR-M-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-M-004",
+        "q": "A new technology doubles crop yields. What happens to scarcity?",
+        "options": [
+          "Scarcity disappears because higher crop output satisfies every want",
+          "Scarcity becomes a shortage because technology changes only prices",
+          "The crop constraint eases, but land, time, and other wants remain",
+          "The technology removes the need to choose among all production uses"
+        ],
+        "type": "interpretation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming productivity growth eliminates scarcity.",
+        "feedback": "Greater productivity relaxes constraints but does not remove limited resources or competing wants.",
+        "aHash": "19abca1852dbc96d4d72a8764f1c2e07c934dcc1565e2526bbe73bde778da255",
+        "sourceHash": "cbd0d492b53de3c42e78e36ae0355e4db3aa2fe5e2876ea9e5c51e92447dc4e1"
+      },
+      "after": {
+        "id": "P52A-SCAR-M-004",
+        "q": "A new technology doubles crop yields. What happens to scarcity?",
+        "options": [
+          "Scarcity disappears because higher crop output satisfies every want",
+          "Scarcity becomes a shortage because technology changes only prices",
+          "The crop constraint eases, but land, time, and other wants remain",
+          "The technology removes the need to choose among all production uses"
+        ],
+        "type": "interpretation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming productivity growth eliminates scarcity.",
+        "feedback": "Greater productivity relaxes constraints but does not remove limited resources or competing wants.",
+        "aHash": "19abca1852dbc96d4d72a8764f1c2e07c934dcc1565e2526bbe73bde778da255",
+        "sourceHash": "cbd0d492b53de3c42e78e36ae0355e4db3aa2fe5e2876ea9e5c51e92447dc4e1"
+      }
+    },
+    {
+      "id": "P52A-SCAR-M-005",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-M-005",
+        "q": "A store runs out of bottled water after a storm. Which statement is most precise?",
+        "options": [
+          "The stockout is temporary; scarcity is limited resources relative to wants",
+          "The stockout and scarcity are identical because both involve limited water",
+          "The storm proves scarcity exists only when stores cannot restock quickly",
+          "Water elsewhere means neither the store nor society faces any constraint"
+        ],
+        "type": "comparison",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Confusing a market shortage with the universal condition of scarcity.",
+        "feedback": "A shortage is a temporary market imbalance; scarcity is the permanent need to choose among limited resources.",
+        "aHash": "e5b40ed126e2d94832b0ebc39c85093a7e0e1abb5889fcc488deec0256455c8d",
+        "sourceHash": "1e26fa5725b0fa5bf54f4d6ed5c98f6a06dd7e9f212bed6f47c546194dcdb9f2"
+      },
+      "after": {
+        "id": "P52A-SCAR-M-005",
+        "q": "A store runs out of bottled water after a storm. Which statement is most precise?",
+        "options": [
+          "The stockout is temporary; scarcity is limited resources relative to wants",
+          "The stockout and scarcity are identical because both involve limited water",
+          "The storm proves scarcity exists only when stores cannot restock quickly",
+          "Water elsewhere means neither the store nor society faces any constraint"
+        ],
+        "type": "comparison",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Confusing a market shortage with the universal condition of scarcity.",
+        "feedback": "A shortage is a temporary market imbalance; scarcity is the permanent need to choose among limited resources.",
+        "aHash": "e5b40ed126e2d94832b0ebc39c85093a7e0e1abb5889fcc488deec0256455c8d",
+        "sourceHash": "1e26fa5725b0fa5bf54f4d6ed5c98f6a06dd7e9f212bed6f47c546194dcdb9f2"
+      }
+    },
+    {
+      "id": "P52A-SCAR-H-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-H-002",
+        "q": "A hospital has one intensive-care bed and two equally ill patients. Which conclusion follows from scarcity?",
+        "options": [
+          "Any allocation rule leaves at least one valued use of the bed unmet",
+          "An equal lottery creates enough capacity to treat both patients fully",
+          "No money price means the intensive-care bed is not economically scarce",
+          "A medically fair rule removes the physical limit on available treatment"
+        ],
+        "type": "scenario",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Assuming fairness can remove the underlying constraint.",
+        "feedback": "Scarcity means not every valued use can be satisfied, regardless of the allocation rule.",
+        "aHash": "b3eda7690e5bdf5c1896d38edc494f88d81fa5bb3882966845b9b6115ff14b27",
+        "sourceHash": "77d3bcf12a9a4bf0b0b166b0fa4263d2b2d8b425583c3e0c2a6f796d194389f0"
+      },
+      "after": {
+        "id": "P52A-SCAR-H-002",
+        "q": "A hospital has one intensive-care bed and two equally ill patients. Which conclusion follows from scarcity?",
+        "options": [
+          "Any allocation rule leaves at least one valued use of the bed unmet",
+          "An equal lottery creates enough capacity to treat both patients fully",
+          "No money price means the intensive-care bed is not economically scarce",
+          "A medically fair rule removes the physical limit on available treatment"
+        ],
+        "type": "scenario",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Assuming fairness can remove the underlying constraint.",
+        "feedback": "Scarcity means not every valued use can be satisfied, regardless of the allocation rule.",
+        "aHash": "b3eda7690e5bdf5c1896d38edc494f88d81fa5bb3882966845b9b6115ff14b27",
+        "sourceHash": "77d3bcf12a9a4bf0b0b166b0fa4263d2b2d8b425583c3e0c2a6f796d194389f0"
+      }
+    },
+    {
+      "id": "P52A-SCAR-H-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-H-003",
+        "q": "A policy increases total output but leaves the lowest-income group worse off. Which judgment is most accurate?",
+        "options": [
+          "It may improve total output while worsening the distribution of gains",
+          "It must improve both efficiency and equality because output increased",
+          "It eliminates scarcity because the economy can now produce more output",
+          "It cannot improve efficiency because at least one affected group loses"
+        ],
+        "type": "policy-analysis",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Assuming efficiency and equality are the same criterion.",
+        "feedback": "Efficiency and distribution are separate dimensions, so they can move in opposite directions.",
+        "aHash": "0990f68deb923907fd83f0ce742b833c7a9a4fd682b822d0b89f0d21618e4935",
+        "sourceHash": "b0144d164a537e5c0f87f4c6d39078a51d4805a0411ee18f7530c27495063a8e"
+      },
+      "after": {
+        "id": "P52A-SCAR-H-003",
+        "q": "A policy increases total output but leaves the lowest-income group worse off. Which judgment is most accurate?",
+        "options": [
+          "It may improve total output while worsening the distribution of gains",
+          "It must improve both efficiency and equality because output increased",
+          "It eliminates scarcity because the economy can now produce more output",
+          "It cannot improve efficiency because at least one affected group loses"
+        ],
+        "type": "policy-analysis",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Assuming efficiency and equality are the same criterion.",
+        "feedback": "Efficiency and distribution are separate dimensions, so they can move in opposite directions.",
+        "aHash": "0990f68deb923907fd83f0ce742b833c7a9a4fd682b822d0b89f0d21618e4935",
+        "sourceHash": "b0144d164a537e5c0f87f4c6d39078a51d4805a0411ee18f7530c27495063a8e"
+      }
+    },
+    {
+      "id": "P52A-SCAR-H-005",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-H-005",
+        "q": "An economy can produce more clean energy only by using engineers and materials currently employed elsewhere. Which statement is strongest?",
+        "options": [
+          "The project still trades off against other uses of engineers and materials",
+          "Government financing makes the engineers and materials no longer scarce",
+          "Large environmental benefits remove every resource cost from the project",
+          "Only privately financed energy projects compete for productive resources"
+        ],
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Assuming socially valuable projects are costless in resource terms.",
+        "feedback": "Benefits do not eliminate the need to redirect scarce labor and materials from other uses.",
+        "aHash": "960425c6a367a6f177a5bfcbd4ba6280037e632fa9fc0504e3ad1c4aabb96d66",
+        "sourceHash": "109f4812fa3a411cb74c1a36bdc7b10a1299b20460db1a0c285173cfe52eb21f"
+      },
+      "after": {
+        "id": "P52A-SCAR-H-005",
+        "q": "An economy can produce more clean energy only by using engineers and materials currently employed elsewhere. Which statement is strongest?",
+        "options": [
+          "The project still trades off against other uses of engineers and materials",
+          "Government financing makes the engineers and materials no longer scarce",
+          "Large environmental benefits remove every resource cost from the project",
+          "Only privately financed energy projects compete for productive resources"
+        ],
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Assuming socially valuable projects are costless in resource terms.",
+        "feedback": "Benefits do not eliminate the need to redirect scarce labor and materials from other uses.",
+        "aHash": "960425c6a367a6f177a5bfcbd4ba6280037e632fa9fc0504e3ad1c4aabb96d66",
+        "sourceHash": "109f4812fa3a411cb74c1a36bdc7b10a1299b20460db1a0c285173cfe52eb21f"
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-335",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-ELITE-335",
+        "q": "A policy improves equity but reduces total surplus. Which answer best frames the issue?",
+        "options": [
+          "It presents an efficiency-equity tradeoff requiring both criteria",
+          "It proves the policy is desirable because equity necessarily dominates",
+          "It proves the policy is undesirable because total surplus necessarily dominates",
+          "It removes scarcity because one distributional goal improves"
+        ],
+        "type": "integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_vs_equality",
+        "commonError": "treats_tradeoff_as_automatic_policy_answer",
+        "feedback": "Policies often involve tradeoffs. A reduction in efficiency may or may not be justified by equity goals.",
+        "aHash": "9c788c97d6f319f80dcd586252a0e5a0b57e0e46f72446324ba72c2128f0a1c3",
+        "sourceHash": "ed36ff6e7abaa5d9f085ca624dd8ee27ee5ab812443d4239ded41d0cfdefdb81"
+      },
+      "after": {
+        "id": "ECON-MG-ELITE-335",
+        "q": "A policy improves equity but reduces total surplus. Which answer best frames the issue?",
+        "options": [
+          "It presents an efficiency-equity tradeoff requiring both criteria",
+          "It proves the policy is desirable because equity necessarily dominates",
+          "It proves the policy is undesirable because total surplus necessarily dominates",
+          "It removes scarcity because one distributional goal improves"
+        ],
+        "type": "integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_vs_equality",
+        "commonError": "treats_tradeoff_as_automatic_policy_answer",
+        "feedback": "Policies often involve tradeoffs. A reduction in efficiency may or may not be justified by equity goals.",
+        "aHash": "9c788c97d6f319f80dcd586252a0e5a0b57e0e46f72446324ba72c2128f0a1c3",
+        "sourceHash": "ed36ff6e7abaa5d9f085ca624dd8ee27ee5ab812443d4239ded41d0cfdefdb81"
+      }
+    },
+    {
+      "id": "P52A-SCAR-EL-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-EL-001",
+        "q": "A coastal city can use a limited parcel for flood protection, affordable housing, or commercial development. Which analysis best respects scarcity?",
+        "options": [
+          "Compare each feasible use, its benefits, and who bears the forgone alternatives",
+          "Declare every use essential and assume the parcel can fully support all three",
+          "Choose the project with the largest budget without comparing displaced uses",
+          "Treat public ownership as evidence that the parcel has no competing use"
+        ],
+        "type": "multi-step",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Listing benefits without confronting mutually exclusive uses.",
+        "feedback": "Scarcity requires comparing feasible alternatives and their efficiency and distributional consequences.",
+        "aHash": "652b63c0a8e72d1f049a6dd0456d5e76c65f3870333d05ec499cd490706aaa8f",
+        "sourceHash": "643e80d13604e95827d672ad2f939192a299f917ded9147afcfccb36a56e9dc2"
+      },
+      "after": {
+        "id": "P52A-SCAR-EL-001",
+        "q": "A coastal city can use a limited parcel for flood protection, affordable housing, or commercial development. Which analysis best respects scarcity?",
+        "options": [
+          "Compare each feasible use, its benefits, and who bears the forgone alternatives",
+          "Declare every use essential and assume the parcel can fully support all three",
+          "Choose the project with the largest budget without comparing displaced uses",
+          "Treat public ownership as evidence that the parcel has no competing use"
+        ],
+        "type": "multi-step",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Listing benefits without confronting mutually exclusive uses.",
+        "feedback": "Scarcity requires comparing feasible alternatives and their efficiency and distributional consequences.",
+        "aHash": "652b63c0a8e72d1f049a6dd0456d5e76c65f3870333d05ec499cd490706aaa8f",
+        "sourceHash": "643e80d13604e95827d672ad2f939192a299f917ded9147afcfccb36a56e9dc2"
+      }
+    },
+    {
+      "id": "P52A-SCAR-EL-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-EL-002",
+        "q": "A policy expands total production, reduces pollution, and requires a small tax increase. Which statement is most defensible?",
+        "options": [
+          "Several goals may improve, while taxes and inputs still have alternative uses",
+          "Several benefits mean the policy uses no scarce resources or public funds",
+          "Scarcity matters only when total production falls after the policy change",
+          "Any tax increase proves the policy reduces both efficiency and equality"
+        ],
+        "type": "policy-analysis",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Using a single outcome to judge a multi-dimensional policy.",
+        "feedback": "A complete tradeoff analysis includes gains, resource use, financing, and distribution.",
+        "aHash": "6d8d8ac84eb6f7def33965f5ce115e257606532ef8b229ffb2f8eebf4fec7d33",
+        "sourceHash": "76870ca555d683742ac96f19b72c8ca0b0691834c8ea637da9b814870ab0827c"
+      },
+      "after": {
+        "id": "P52A-SCAR-EL-002",
+        "q": "A policy expands total production, reduces pollution, and requires a small tax increase. Which statement is most defensible?",
+        "options": [
+          "Several goals may improve, while taxes and inputs still have alternative uses",
+          "Several benefits mean the policy uses no scarce resources or public funds",
+          "Scarcity matters only when total production falls after the policy change",
+          "Any tax increase proves the policy reduces both efficiency and equality"
+        ],
+        "type": "policy-analysis",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Using a single outcome to judge a multi-dimensional policy.",
+        "feedback": "A complete tradeoff analysis includes gains, resource use, financing, and distribution.",
+        "aHash": "6d8d8ac84eb6f7def33965f5ce115e257606532ef8b229ffb2f8eebf4fec7d33",
+        "sourceHash": "76870ca555d683742ac96f19b72c8ca0b0691834c8ea637da9b814870ab0827c"
+      }
+    },
+    {
+      "id": "P52A-SCAR-EL-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-EL-003",
+        "q": "Which claim commits the clearest scarcity error?",
+        "options": [
+          "Cheap copying means digital production and distribution use no scarce inputs",
+          "Higher productivity can relax a binding resource constraint without ending scarcity",
+          "A zero money price can still require scarce server capacity and user time",
+          "Allocation rules can change who receives access to a capacity-limited service"
+        ],
+        "type": "error-analysis",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Equating low marginal copying cost with zero resource use.",
+        "feedback": "Creation, servers, bandwidth, attention, and time remain scarce even when copying is inexpensive.",
+        "aHash": "6f139f6381b6a8bfbb07b9f8ef6a73ffb4d596d23b78644e56ecebbc64d43b38",
+        "sourceHash": "2c9088123ce825e4049f0f14e45dc2da47639d62c4683fe65789598e0d661a0b"
+      },
+      "after": {
+        "id": "P52A-SCAR-EL-003",
+        "q": "Which claim commits the clearest scarcity error?",
+        "options": [
+          "Cheap copying means digital production and distribution use no scarce inputs",
+          "Higher productivity can relax a binding resource constraint without ending scarcity",
+          "A zero money price can still require scarce server capacity and user time",
+          "Allocation rules can change who receives access to a capacity-limited service"
+        ],
+        "type": "error-analysis",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Equating low marginal copying cost with zero resource use.",
+        "feedback": "Creation, servers, bandwidth, attention, and time remain scarce even when copying is inexpensive.",
+        "aHash": "6f139f6381b6a8bfbb07b9f8ef6a73ffb4d596d23b78644e56ecebbc64d43b38",
+        "sourceHash": "2c9088123ce825e4049f0f14e45dc2da47639d62c4683fe65789598e0d661a0b"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9013",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9013",
+        "q": "A new safety rule reduces accident risk but also forces firms to cut output because compliance uses scarce labor and equipment. What core idea is most directly involved?",
+        "options": [
+          "The rule creates benefits and costs because compliance uses scarce inputs",
+          "The rule eliminates opportunity cost because its safety goal is worthwhile",
+          "The rule creates scarcity only for consumers rather than for producing firms",
+          "The rule makes efficiency and equality move together in every affected market"
+        ],
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "ignores_tradeoffs_when_policy_goal_is_good",
+        "feedback": "Even worthwhile policies use scarce resources and create tradeoffs.",
+        "aHash": "fb194ff28b5e01cae31da65aeb11972d2a4d2e1e8761a160322ec034701fadf7",
+        "sourceHash": "f88f8f2749ca683cbf22c3b103e6647275b61dc1db333500f7528fe620a9e7ed"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9013",
+        "q": "A new safety rule reduces accident risk but also forces firms to cut output because compliance uses scarce labor and equipment. What core idea is most directly involved?",
+        "options": [
+          "The rule creates benefits and costs because compliance uses scarce inputs",
+          "The rule eliminates opportunity cost because its safety goal is worthwhile",
+          "The rule creates scarcity only for consumers rather than for producing firms",
+          "The rule makes efficiency and equality move together in every affected market"
+        ],
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "ignores_tradeoffs_when_policy_goal_is_good",
+        "feedback": "Even worthwhile policies use scarce resources and create tradeoffs.",
+        "aHash": "fb194ff28b5e01cae31da65aeb11972d2a4d2e1e8761a160322ec034701fadf7",
+        "sourceHash": "f88f8f2749ca683cbf22c3b103e6647275b61dc1db333500f7528fe620a9e7ed"
+      }
+    },
+    {
+      "id": "P52A-SCAR-L-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-L-001",
+        "q": "A region faces limited electricity during a heat wave. It can prioritize hospitals, households, or energy-intensive factories. Which response is the most complete economic analysis?",
+        "options": [
+          "Compare unavoidable tradeoffs, total benefits, and losses under each allocation rule",
+          "Serve the highest bidder and treat the resulting allocation as automatically fair",
+          "Raise the posted price and assume the grid can physically supply every requested use",
+          "Divide electricity equally and conclude that the capacity constraint has disappeared"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Reducing a scarcity problem to a single efficiency or fairness rule.",
+        "feedback": "A complete analysis recognizes the physical constraint and evaluates both efficiency and distribution.",
+        "aHash": "32ea24c7967f425ace58afaaffc794ed84e18d97fe9f703a007aafcae36e497b",
+        "sourceHash": "0a14cc59376b96ae0feb2dd58dae7b8308c7c0740b67455417c1d1aea297994c"
+      },
+      "after": {
+        "id": "P52A-SCAR-L-001",
+        "q": "A region faces limited electricity during a heat wave. It can prioritize hospitals, households, or energy-intensive factories. Which response is the most complete economic analysis?",
+        "options": [
+          "Compare unavoidable tradeoffs, total benefits, and losses under each allocation rule",
+          "Serve the highest bidder and treat the resulting allocation as automatically fair",
+          "Raise the posted price and assume the grid can physically supply every requested use",
+          "Divide electricity equally and conclude that the capacity constraint has disappeared"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Reducing a scarcity problem to a single efficiency or fairness rule.",
+        "feedback": "A complete analysis recognizes the physical constraint and evaluates both efficiency and distribution.",
+        "aHash": "32ea24c7967f425ace58afaaffc794ed84e18d97fe9f703a007aafcae36e497b",
+        "sourceHash": "0a14cc59376b96ae0feb2dd58dae7b8308c7c0740b67455417c1d1aea297994c"
+      }
+    },
+    {
+      "id": "P52A-SCAR-B1-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-B1-001",
+        "q": "A school has more requests for tutoring than its staff can serve this week. Which fact makes tutoring time scarce?",
+        "options": [
+          "Limited tutor-hours have several valued uses and cannot meet every request",
+          "The school has permanently run out of every kind of educational service",
+          "Families differ in income even if every tutoring request could be served",
+          "The school charges a price below the market-clearing price for tutoring"
+        ],
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Confusing scarcity with poverty, high prices, or a temporary stockout.",
+        "feedback": "Tutor-hours are limited relative to the competing requests for them.",
+        "aHash": "56499b92e780599b206285cb5f79c7c0888eca2d7660b16ae606fc990e73640b",
+        "sourceHash": "1d252cdef24fa864812028b7d638fba57ec310d8c61ea52925de63fb8bf04f5e"
+      },
+      "after": {
+        "id": "P52A-SCAR-B1-001",
+        "q": "A school has more requests for tutoring than its staff can serve this week. Which fact makes tutoring time scarce?",
+        "options": [
+          "Limited tutor-hours have several valued uses and cannot meet every request",
+          "The school has permanently run out of every kind of educational service",
+          "Families differ in income even if every tutoring request could be served",
+          "The school charges a price below the market-clearing price for tutoring"
+        ],
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Confusing scarcity with poverty, high prices, or a temporary stockout.",
+        "feedback": "Tutor-hours are limited relative to the competing requests for them.",
+        "aHash": "56499b92e780599b206285cb5f79c7c0888eca2d7660b16ae606fc990e73640b",
+        "sourceHash": "1d252cdef24fa864812028b7d638fba57ec310d8c61ea52925de63fb8bf04f5e"
+      }
+    },
+    {
+      "id": "P52A-SCAR-B1-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-B1-002",
+        "q": "Choosing more of one use for a fixed resource generally means:",
+        "options": [
+          "The market necessarily has a surplus under the stated conditions.",
+          "Less of that resource is available for another use.",
+          "The resource is no longer scarce as the relevant economic conclusion.",
+          "All users become equally well off for the decision being evaluated."
+        ],
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Ignoring displaced uses.",
+        "feedback": "A fixed resource devoted to one use cannot simultaneously serve another.",
+        "aHash": "1163b7f9ad2a0d21127da51824e3162fe0d6f5568f5b68b4488e4ae9d1caf76c",
+        "sourceHash": "7b37c6385714bb4be14bf0a0eae8a0b9d7482d132dc843595ed73d1561e08588"
+      },
+      "after": {
+        "id": "P52A-SCAR-B1-002",
+        "q": "A community center has one gym available tonight. Scheduling a youth league means canceling an adult exercise class. What does that choice show?",
+        "options": [
+          "Using the fixed gym for one valued activity leaves less access for another",
+          "The community has permanently exhausted every recreation resource",
+          "The gym stops being scarce once managers publish the schedule",
+          "Both groups receive equal access because the choice is publicly announced"
+        ],
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Ignoring the displaced use of a fixed resource.",
+        "feedback": "Assigning the fixed gym to one activity displaces another valued use.",
+        "aHash": "daf90ea916c0bd72b3f75b57f04c05cc84be1f63189fe6df2893d09a366234fa",
+        "sourceHash": "a7cd1bcf249d50f664610cc1daba9e02cafb11075b3192cd26a6b64664c28eef"
+      }
+    },
+    {
+      "id": "P52A-SCAR-B2-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-B2-003",
+        "q": "Why does a zero-price service still face scarcity?",
+        "options": [
+          "It still uses limited labor, space, equipment, and user time",
+          "A zero price guarantees enough capacity for every possible user",
+          "Only services sold for money can require scarce productive inputs",
+          "Free access removes every competing use of the service resources"
+        ],
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Equating free access with unlimited resources.",
+        "feedback": "Money price and resource scarcity are different issues.",
+        "aHash": "f94f45363395370bd2e1f499b7f2080a93cf84c6dc0cebfe71684e01d73e1717",
+        "sourceHash": "0477e5df17a3a7335d24075d3036bc4d7a63d5696f96183bd56bdac97933d9fd"
+      },
+      "after": {
+        "id": "P52A-SCAR-B2-003",
+        "q": "Why does a zero-price service still face scarcity?",
+        "options": [
+          "It still uses limited labor, space, equipment, and user time",
+          "A zero price guarantees enough capacity for every possible user",
+          "Only services sold for money can require scarce productive inputs",
+          "Free access removes every competing use of the service resources"
+        ],
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Equating free access with unlimited resources.",
+        "feedback": "Money price and resource scarcity are different issues.",
+        "aHash": "f94f45363395370bd2e1f499b7f2080a93cf84c6dc0cebfe71684e01d73e1717",
+        "sourceHash": "0477e5df17a3a7335d24075d3036bc4d7a63d5696f96183bd56bdac97933d9fd"
+      }
+    },
+    {
+      "id": "P52A-SCAR-B3-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-B3-001",
+        "q": "A city allocates scarce shelter beds by medical vulnerability instead of willingness to pay. What changes?",
+        "options": [
+          "The allocation rule changes, while the limited number of beds does not",
+          "The vulnerability rule immediately creates enough beds for every applicant",
+          "The beds stop being scarce because recipients do not bid a money price",
+          "The rule makes efficiency and equality identical measures of the outcome"
+        ],
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Assuming rationing rules remove the constraint.",
+        "feedback": "The rule determines recipients but does not create more beds.",
+        "aHash": "573ee1fd47c109aa7a0b203de1441748ed0f8bc963fabb88ed9be801448c6294",
+        "sourceHash": "8b5a2f0ff1efa8b9b7dcd9f0ab87ef908e65d05fbf46488ef2942c474c7730d1"
+      },
+      "after": {
+        "id": "P52A-SCAR-B3-001",
+        "q": "A city allocates scarce shelter beds by medical vulnerability instead of willingness to pay. What changes?",
+        "options": [
+          "The allocation rule changes, while the limited number of beds does not",
+          "The vulnerability rule immediately creates enough beds for every applicant",
+          "The beds stop being scarce because recipients do not bid a money price",
+          "The rule makes efficiency and equality identical measures of the outcome"
+        ],
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Assuming rationing rules remove the constraint.",
+        "feedback": "The rule determines recipients but does not create more beds.",
+        "aHash": "573ee1fd47c109aa7a0b203de1441748ed0f8bc963fabb88ed9be801448c6294",
+        "sourceHash": "8b5a2f0ff1efa8b9b7dcd9f0ab87ef908e65d05fbf46488ef2942c474c7730d1"
+      }
+    },
+    {
+      "id": "P52A-SCAR-B3-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-B3-002",
+        "q": "A technology raises output and reduces input use, yet firms still choose among projects. Why?",
+        "options": [
+          "Remaining capital, skilled labor, time, and wants still create choices",
+          "Higher productivity guarantees that every available project can be funded",
+          "Only government agencies continue to face tradeoffs after technology improves",
+          "Productivity growth changes scarcity into a temporary market shortage"
+        ],
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming productivity growth eliminates choice.",
+        "feedback": "Productivity relaxes constraints but does not remove all competing uses.",
+        "aHash": "1b3ab1290a45c76bb57f70258ba3ac51bee02f999e609b8b8e16fe337363fbe3",
+        "sourceHash": "f5dc2568991510647f7b5317ff821903c0a3323f4ba3d66bd13c43ba6129e52e"
+      },
+      "after": {
+        "id": "P52A-SCAR-B3-002",
+        "q": "A technology raises output and reduces input use, yet firms still choose among projects. Why?",
+        "options": [
+          "Remaining capital, skilled labor, time, and wants still create choices",
+          "Higher productivity guarantees that every available project can be funded",
+          "Only government agencies continue to face tradeoffs after technology improves",
+          "Productivity growth changes scarcity into a temporary market shortage"
+        ],
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming productivity growth eliminates choice.",
+        "feedback": "Productivity relaxes constraints but does not remove all competing uses.",
+        "aHash": "1b3ab1290a45c76bb57f70258ba3ac51bee02f999e609b8b8e16fe337363fbe3",
+        "sourceHash": "f5dc2568991510647f7b5317ff821903c0a3323f4ba3d66bd13c43ba6129e52e"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9100",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9100",
+        "q": "A city can use one emergency crew either to inspect 18 bridges or repair 6 water mains. It chooses the mains. Which statement identifies the full economic tradeoff?",
+        "options": [
+          "Six repaired mains are gained while eighteen bridge inspections are forgone",
+          "Only the crew wages matter because public work has no resource tradeoff",
+          "Eighteen bridge inspections are gained while six main repairs are forgone",
+          "No tradeoff can be identified until both services receive market prices"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "Choosing the mains uses scarce crew time that could have produced 18 bridge inspections.",
+        "aHash": "89df69cd1fe3e05519c7c201fb348ee8ed691ab7eef3567ca2349133d9d049cc",
+        "sourceHash": "373abd4461323c0892a056febf40d464dc15fa908c3996baf2e2cb1407dae0b9"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9100",
+        "q": "A city can use one emergency crew either to inspect 18 bridges or repair 6 water mains. It chooses the mains. Which statement identifies the full economic tradeoff?",
+        "options": [
+          "Six repaired mains are gained while eighteen bridge inspections are forgone",
+          "Only the crew wages matter because public work has no resource tradeoff",
+          "Eighteen bridge inspections are gained while six main repairs are forgone",
+          "No tradeoff can be identified until both services receive market prices"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "Choosing the mains uses scarce crew time that could have produced 18 bridge inspections.",
+        "aHash": "89df69cd1fe3e05519c7c201fb348ee8ed691ab7eef3567ca2349133d9d049cc",
+        "sourceHash": "373abd4461323c0892a056febf40d464dc15fa908c3996baf2e2cb1407dae0b9"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9101",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9101",
+        "q": "A legislature can make a safety standard stricter, but doing so raises compliance costs and reduces the number of small firms entering the market. Which conclusion follows from economic reasoning?",
+        "options": [
+          "The rule has safety benefits and opportunity costs that should be compared",
+          "Lower entry proves the rule is inefficient without considering accident risk",
+          "A worthwhile safety goal eliminates the scarcity of compliance resources",
+          "Entry effects are irrelevant whenever a policy goal includes a value judgment"
+        ],
+        "type": "integration",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "A worthwhile objective still has costs. Sound analysis compares the added safety benefit with the lost entry and other costs.",
+        "aHash": "0505c1200f1e28d6641c54f318e6f405dcfd26989f975117f92ba402a6c43191",
+        "sourceHash": "2682b0f28df54f6920c8ede622cfe4e612c731d15f3ba10b95e01e32a1808295"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9101",
+        "q": "A legislature can make a safety standard stricter, but doing so raises compliance costs and reduces the number of small firms entering the market. Which conclusion follows from economic reasoning?",
+        "options": [
+          "The rule has safety benefits and opportunity costs that should be compared",
+          "Lower entry proves the rule is inefficient without considering accident risk",
+          "A worthwhile safety goal eliminates the scarcity of compliance resources",
+          "Entry effects are irrelevant whenever a policy goal includes a value judgment"
+        ],
+        "type": "integration",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "A worthwhile objective still has costs. Sound analysis compares the added safety benefit with the lost entry and other costs.",
+        "aHash": "0505c1200f1e28d6641c54f318e6f405dcfd26989f975117f92ba402a6c43191",
+        "sourceHash": "2682b0f28df54f6920c8ede622cfe4e612c731d15f3ba10b95e01e32a1808295"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9102",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9102",
+        "q": "A disaster agency can stockpile either 40,000 meals or 10,000 medical kits. A mixed plan provides 24,000 meals and 4,000 kits. A proposal adds 2,000 kits but reduces meals to 12,000. What must be true?",
+        "options": [
+          "The extra 2,000 kits require giving up 12,000 meals",
+          "The mixed plan becomes infeasible after adding any medical kits",
+          "The proposal creates 12,000 meals while adding 2,000 kits",
+          "Medical kits have no forgone alternative during an emergency"
+        ],
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "The proposal gains 2,000 kits and sacrifices 12,000 meals. Emergency conditions do not erase scarcity.",
+        "aHash": "48585f17d26615ae68a7cf5c796543282050f3a7220d2488da0652edbf7d6412",
+        "sourceHash": "62237154b3ba366926b98fc2dc482825ec4720ab9cd88d83f6dd2eb38a5b4181"
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9102",
+        "q": "A disaster agency can stockpile either 40,000 meals or 10,000 medical kits. A mixed plan provides 24,000 meals and 4,000 kits. A proposal adds 2,000 kits but reduces meals to 12,000. What must be true?",
+        "options": [
+          "The extra 2,000 kits require giving up 12,000 meals",
+          "The mixed plan becomes infeasible after adding any medical kits",
+          "The proposal creates 12,000 meals while adding 2,000 kits",
+          "Medical kits have no forgone alternative during an emergency"
+        ],
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "The proposal gains 2,000 kits and sacrifices 12,000 meals. Emergency conditions do not erase scarcity.",
+        "aHash": "48585f17d26615ae68a7cf5c796543282050f3a7220d2488da0652edbf7d6412",
+        "sourceHash": "62237154b3ba366926b98fc2dc482825ec4720ab9cd88d83f6dd2eb38a5b4181"
+      }
+    },
+    {
+      "id": "P52A-SCAR-R-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "repair",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-R-002",
+        "q": "Which statement describes efficiency rather than equality?",
+        "options": [
+          "Resources are arranged to generate the greatest total value",
+          "Resources are divided into identical shares for every person",
+          "Income differences are removed regardless of total production",
+          "Every affected group receives the same gain from the policy"
+        ],
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "efficiency_definition",
+        "repairSkill": "efficiency_definition",
+        "commonError": "Confusing production efficiency with distributional equality.",
+        "feedback": "Efficiency focuses on total value from resources.",
+        "aHash": "694851f72371c465e24679837a60d8cf49d83042c688382ee7be7d1bae2c71f7",
+        "sourceHash": "ebcbf99904880faf4d041087c6e0b84c39b0dab538483d246842f7108550b0b1"
+      },
+      "after": {
+        "id": "P52A-SCAR-R-002",
+        "q": "Which statement describes efficiency rather than equality?",
+        "options": [
+          "Resources are arranged to generate the greatest total value",
+          "Resources are divided into identical shares for every person",
+          "Income differences are removed regardless of total production",
+          "Every affected group receives the same gain from the policy"
+        ],
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "efficiency_definition",
+        "repairSkill": "efficiency_definition",
+        "commonError": "Confusing production efficiency with distributional equality.",
+        "feedback": "Efficiency focuses on total value from resources.",
+        "aHash": "694851f72371c465e24679837a60d8cf49d83042c688382ee7be7d1bae2c71f7",
+        "sourceHash": "ebcbf99904880faf4d041087c6e0b84c39b0dab538483d246842f7108550b0b1"
+      }
+    },
+    {
+      "id": "P52A-SCAR-R-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "repair",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52A-SCAR-R-003",
+        "q": "A tradeoff occurs because:",
+        "options": [
+          "Using a limited resource one way restricts another valued use",
+          "Every choice requires an explicit payment made with money",
+          "Only public agencies must choose among competing resource uses",
+          "A high-benefit choice stops using scarce inputs and worker time"
+        ],
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Ignoring nonmoney resources and alternative uses.",
+        "feedback": "Tradeoffs arise whenever scarce resources have competing uses.",
+        "aHash": "0fd6f02f8e159572df6e615746f6eb67863574f5d9a554ffec14aea56a0ffba9",
+        "sourceHash": "ada8e42b4e6b9e14f91958f0c05bbb8adc94a7c00b535f7f4873803f96de168d"
+      },
+      "after": {
+        "id": "P52A-SCAR-R-003",
+        "q": "A tradeoff occurs because:",
+        "options": [
+          "Using a limited resource one way restricts another valued use",
+          "Every choice requires an explicit payment made with money",
+          "Only public agencies must choose among competing resource uses",
+          "A high-benefit choice stops using scarce inputs and worker time"
+        ],
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Ignoring nonmoney resources and alternative uses.",
+        "feedback": "Tradeoffs arise whenever scarce resources have competing uses.",
+        "aHash": "0fd6f02f8e159572df6e615746f6eb67863574f5d9a554ffec14aea56a0ffba9",
+        "sourceHash": "ada8e42b4e6b9e14f91958f0c05bbb8adc94a7c00b535f7f4873803f96de168d"
+      }
+    },
+    {
+      "id": "P71-SCAR-E-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-E-001",
+        "q": "A hospital has eight nurse-hours available for either a vaccination clinic or follow-up calls. What is the scarce resource?",
+        "options": [
+          "The eight available nurse-hours",
+          "The number of patients who value care",
+          "The absence of a money price for calls",
+          "The hospital building in every future period"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Naming a want or a price instead of the binding resource constraint.",
+        "feedback": "The limited nurse-hours cannot be used fully for both services.",
+        "aHash": "2637584948125a5d88c4f257085d1be1b9712a6ffe9625b4ffdb1247d152ed44",
+        "sourceHash": "88f41e11b5ecc48a8aa8b55e7c07b18c5c1d733c553952c89317443fc67205ad"
+      }
+    },
+    {
+      "id": "P71-SCAR-E-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-E-002",
+        "q": "A family uses its monthly budget to replace a broken refrigerator, leaving less for a planned vacation. What is the tradeoff?",
+        "options": [
+          "Refrigerator spending leaves less budget for the vacation",
+          "The refrigerator creates unlimited future income",
+          "The vacation becomes a temporary market shortage",
+          "The family no longer faces scarcity after buying an appliance"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Recognizing the purchase but not the displaced use of the budget.",
+        "feedback": "Using the fixed budget for one purpose reduces what remains for another.",
+        "aHash": "6db199098135023a01222ed47b5ccdb7c94f8d538d159f844abbd1ab3b6967b9",
+        "sourceHash": "e3fd2a58362695b3e71e71ce7fb6fba588ce86f219a35984d594190090624452"
+      }
+    },
+    {
+      "id": "P71-SCAR-E-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-E-003",
+        "q": "A bakery can use its oven this hour for bread or pastries, but there is not enough oven time for both batches. What choice is forced by scarcity?",
+        "options": [
+          "How to allocate the limited oven time",
+          "How to eliminate every customer want",
+          "How to create a legal price ceiling",
+          "How to make flour an unlimited resource"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Overlooking production time as the constrained resource.",
+        "feedback": "Limited oven time with competing uses requires an allocation choice.",
+        "aHash": "537c4dcb2ba849aec17653dd1a9b981df86c5d603b87c6b61bae873f46ac1876",
+        "sourceHash": "c5ea86cac57e05c36e4d6fbde867c9b134496877171bcd31cf4e27d54414e6de"
+      }
+    },
+    {
+      "id": "P71-SCAR-E-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-E-004",
+        "q": "A reservoir currently contains enough water for all essential uses, but not for every lawn, pool, factory, and farm request. Which conclusion is correct?",
+        "options": [
+          "Water is scarce because not every valued use can be satisfied",
+          "Water is abundant because essential uses can be satisfied",
+          "A shortage exists only because the reservoir charges too much",
+          "Scarcity ends whenever some users receive the resource"
+        ],
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Treating partial adequacy as proof that a resource is nonscarce.",
+        "feedback": "Scarcity remains when the available amount cannot satisfy every competing use.",
+        "aHash": "10f5f48cf7a6cb9a37d78a0f93ad7da0851a4439de367a0f7ce4dd443182ffc1",
+        "sourceHash": "4f5abc34c8f2fc793846bc3c81db9c1cb2918d833780c1bc3c39f3ce50178694"
+      }
+    },
+    {
+      "id": "P71-SCAR-M-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-M-001",
+        "q": "A university converts two classrooms into laboratories. Science students gain space, while other departments lose course capacity. Which analysis is most complete?",
+        "options": [
+          "The conversion reallocates scarce space and creates gains and losses",
+          "The conversion ends scarcity because laboratories are more specialized",
+          "Only departments charging lab fees face a resource constraint",
+          "Classroom capacity becomes a shortage caused by a legal price rule"
+        ],
+        "type": "scenario",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Counting the new benefit while ignoring displaced classroom users.",
+        "feedback": "The same limited space cannot simultaneously serve both sets of uses.",
+        "aHash": "fe1ebd4a91b5115ddd20a2b288feb9606c850f41d9fafc2c33b05a4796774fa8",
+        "sourceHash": "962a53da0804d9f185465cea27ac5dff0485d78e3cf4cee69b9476a098379b6c"
+      }
+    },
+    {
+      "id": "P71-SCAR-M-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-M-002",
+        "q": "A faster 3D printer doubles output per hour, but every job still requires one technician and the lab has only two technicians. What changed?",
+        "options": [
+          "One constraint eased, while technician time still limits feasible production",
+          "All scarcity ended because machine productivity doubled",
+          "The technician constraint became a price shortage",
+          "The lab can now complete every desired job without choosing"
+        ],
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming improvement in one input removes every remaining constraint.",
+        "feedback": "Technology can shift the binding constraint without eliminating scarcity.",
+        "aHash": "1cc34314e2426237665a2eafab7217bd8a0241ed569230d6747910ca6239539b",
+        "sourceHash": "05238554fb5790826ae533b98aa1f23b40d5715632a1d1ff882f12a913040685"
+      }
+    },
+    {
+      "id": "P71-SCAR-M-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-M-003",
+        "q": "A transit agency moves buses from a lightly used route to an overcrowded route. Which statement best captures the tradeoff?",
+        "options": [
+          "Crowded-route riders gain capacity while other riders lose service frequency",
+          "The transfer creates more buses because average ridership rises",
+          "Public ownership means the routes do not compete for vehicles",
+          "The agency eliminates scarcity by serving the larger group first"
+        ],
+        "type": "scenario",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Analyzing beneficiaries without identifying who loses the reallocated resource.",
+        "feedback": "Reassigning a fixed fleet benefits one route while reducing capacity elsewhere.",
+        "aHash": "73e5c4db4a2892b8897cdc56b91f93b0fea889fc10912fbc6ebcf7c30f638122",
+        "sourceHash": "f6038c7163213920c0c8439569069eb1ebed6b21a31f4858855e3a8e0b9b8699"
+      }
+    },
+    {
+      "id": "P71-SCAR-M-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-M-004",
+        "q": "A larger reservoir expands the region’s water supply. Cities, farms, and ecosystems still request more water than is available in dry years. Which statement follows?",
+        "options": [
+          "The expansion relaxes scarcity but does not remove competing uses",
+          "The expansion eliminates scarcity because total water increased",
+          "The remaining conflict must be a temporary retail shortage",
+          "More capacity means allocation rules no longer affect any group"
+        ],
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming a resource increase eliminates all unmet wants.",
+        "feedback": "More resources can ease a constraint while valued uses still exceed availability.",
+        "aHash": "4eac93f6ef700b67d2e97f09f4336e67bff2466901084d8c2900112e9ac979bd",
+        "sourceHash": "565c90d1ab80585cf09e8b15ab44a5510e17977f2f74a14f77b369e022007cd2"
+      }
+    },
+    {
+      "id": "P71-SCAR-H-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-H-001",
+        "q": "After a flood, a county can use its emergency fund for temporary housing or immediate levee repairs. Housing aids displaced families now; repairs reduce future risk. What must an economic analysis include?",
+        "options": [
+          "Current beneficiaries, future risk reduction, and the use forgone under either choice",
+          "Only the number of residents receiving immediate housing assistance",
+          "Only the engineering estimate for the levee repair project",
+          "A claim that emergency spending makes the county budget unlimited"
+        ],
+        "type": "policy-analysis",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Evaluating one time horizon while ignoring the competing use and affected groups.",
+        "feedback": "Scarcity requires comparing both uses, their timing, and who gains or loses.",
+        "aHash": "88e353eb495abccd3a5ed9d7be7bf7640df5a78fd572eede5d67f75eae383e03",
+        "sourceHash": "5b5f76ffcba8972141aa99bbc122844c6a7ccdb22b4a809732fad61151b97a81"
+      }
+    },
+    {
+      "id": "P71-SCAR-H-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-H-002",
+        "q": "Automation reduces the labor needed in a warehouse, but expansion still requires scarce electricity, loading space, and computing capacity. Which conclusion is strongest?",
+        "options": [
+          "Automation changes the constraint mix rather than abolishing scarcity",
+          "Automation abolishes scarcity because fewer workers are required",
+          "The remaining limits are shortages caused only by incorrect prices",
+          "Every expansion becomes feasible once one input requirement falls"
+        ],
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Treating a productivity gain as the elimination of all production choices.",
+        "feedback": "Reducing one input requirement can leave other resources as binding constraints.",
+        "aHash": "698a92e936e40b7226389943dbd43cf0bdd2b6280e4454393bdab422dca234c6",
+        "sourceHash": "8e53626b0629ad804d278b2a7382b363b0f4b25bcff82ba880a91f0daa24d3aa"
+      }
+    },
+    {
+      "id": "P71-SCAR-H-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-H-003",
+        "q": "A low-income household and a wealthy household both have 24 hours in a day, but very different financial options. Which statement correctly distinguishes poverty from scarcity?",
+        "options": [
+          "Poverty concerns limited material means; both households still face scarce time",
+          "Only the low-income household faces scarcity because wealth removes all constraints",
+          "Both households are poor because neither can create more hours in a day",
+          "Scarcity describes temporary stockouts, while poverty describes every tradeoff"
+        ],
+        "type": "comparison",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Equating scarcity with poverty and overlooking universal nonmoney constraints.",
+        "feedback": "Poverty and scarcity are different: scarcity persists across income levels.",
+        "aHash": "7d7d4057b57f6508561d9f35b043d176f0c38a2f81a7cef123d68ef6fade98bd",
+        "sourceHash": "d50e247b1d6314b65b3bcaf289a42b34040e1d02b04fdbcc27594242967e276e"
+      }
+    },
+    {
+      "id": "P71-SCAR-H-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-H-004",
+        "q": "A delivery disruption leaves a hospital temporarily short of oxygen cylinders, while its long-run budget also limits how many backup systems it can maintain. Which statement is accurate?",
+        "options": [
+          "The disruption is a shortage; the budget tradeoff reflects ongoing scarcity",
+          "Both conditions are temporary shortages because money is involved",
+          "Both conditions are scarcity only if oxygen receives a market price",
+          "The backup budget eliminates scarcity once deliveries resume"
+        ],
+        "type": "comparison",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Collapsing a temporary supply disruption and a persistent resource constraint.",
+        "feedback": "A shortage is a temporary availability problem; scarcity is the broader need to choose among limited resources.",
+        "aHash": "9b14c47022aae953eda873061c05fa93bba0d0bd7db3dd8ab67935b96294bd3b",
+        "sourceHash": "c9be0326e003835bf8e9e717ce6112491b3f52350f73863fe360072d279f4e58"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-001",
+        "q": "Following an earthquake, a hospital has one surgical team for trauma cases, routine emergencies, and patients already scheduled. Which policy best acknowledges scarcity without pretending one criterion settles the decision?",
+        "options": [
+          "Compare expected health gains, urgency, and displaced care under each priority rule",
+          "Treat scheduled patients as costless to postpone because trauma care has high value",
+          "Use equal waiting time and conclude the surgical constraint has disappeared",
+          "Charge the highest price and label the result both efficient and fair"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Using one allocation criterion while ignoring displaced care and distribution.",
+        "feedback": "A complete analysis compares benefits, forgone care, and distribution under feasible rules.",
+        "aHash": "313a7d585a1c78bc4196ca00b5c7d3130d7b3ec3286e6b6c7a937377bb823b15",
+        "sourceHash": "7ca34096767ca570b2855bfe546c8c78cb1a986ecdc9d7599277d4e8953093d7"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-002",
+        "q": "A city can zone a waterfront parcel for housing, a flood barrier, or a public park. A developer claims housing demand makes the other uses economically irrelevant. What is the strongest response?",
+        "options": [
+          "High housing value does not erase the flood and recreation benefits forgone",
+          "Market demand makes the parcel physically available for all three uses",
+          "Public benefits matter only when users pay an admission price",
+          "Choosing housing proves the other uses were not valued by anyone"
+        ],
+        "type": "error-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Treating the chosen use as proof that forgone uses have no value.",
+        "feedback": "Scarcity makes the benefits of mutually exclusive uses economically relevant.",
+        "aHash": "814dcbe9a27b39a74cb336e15233a03905d9c924505e68d87c9acedc2784b42d",
+        "sourceHash": "ef62ac506c5e9788f0403c30c7cbba6bb555e785013ceb27ccc7cf3fc7d9082c"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-003",
+        "q": "A hospital opens two new operating rooms but cannot hire additional anesthesiologists. Administrators announce that the capacity problem is solved. Which diagnosis is best?",
+        "options": [
+          "Physical rooms increased, but specialized labor may now be the binding constraint",
+          "New rooms eliminate scarcity because capital is the only health-care input",
+          "Anesthesiologist availability is a shortage only if wages are regulated",
+          "Capacity is unlimited whenever one input expands faster than patient demand"
+        ],
+        "type": "constraint-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming expansion of one input removes complementary-input constraints.",
+        "feedback": "Capacity depends on multiple scarce inputs; the binding constraint can shift.",
+        "aHash": "fa85ee0beb54d3258420e22040205732c218d2b14be6354f733426ece0e4220c",
+        "sourceHash": "2d62b69b65f007a0d662d41cc39d7ed8e9d5482a25dec87a4dff658003ff0fde"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-004",
+        "q": "A factory that builds both emergency generators and defense equipment receives a fixed allocation of skilled machinist-hours. Why does a larger government budget not automatically remove the production tradeoff this quarter?",
+        "options": [
+          "Money cannot instantly create the specialized labor and machine time required",
+          "Government purchases never use resources that have alternative civilian uses",
+          "A larger budget converts every physical constraint into an accounting entry",
+          "Defense production eliminates scarcity whenever national security is valuable"
+        ],
+        "type": "causal-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Treating additional financing as immediate creation of specialized capacity.",
+        "feedback": "Nominal funding cannot instantly expand every real resource needed for production.",
+        "aHash": "42c9e9d71f5eca1ccad086685b35f40a628792e2b84f6c23f76b59b20fbf0a99",
+        "sourceHash": "a92e6bbc0b569b822843630fe29171d2f9d06e11c6ee43772cc420757ec909d2"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-005",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-005",
+        "q": "During a drought, a river authority must allocate water among cities, farms, and minimum ecosystem flows. Which statement avoids both an efficiency-only and a fairness-only mistake?",
+        "options": [
+          "Compare total benefits and ecological effects while showing how each rule distributes losses",
+          "Maximize measured output and treat every resulting distribution as necessarily fair",
+          "Divide water equally and treat every resulting use as necessarily efficient",
+          "Raise water prices until the physical drought no longer limits river flow"
+        ],
+        "type": "evaluation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Using efficiency or equality as a complete allocation rule without examining the other.",
+        "feedback": "Scarce-water policy requires both value and distributional analysis.",
+        "aHash": "6a1bad03567ba4557a8242830f893bc5f43091517f16703404ad7d04f6faed86",
+        "sourceHash": "0a1fc371a5e9a6d8f8e8e7c1095ffc8a8278891cbdbba07ceefc2fe0d50b1a91"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-006",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-006",
+        "q": "A university can admit more students by enlarging lectures, but laboratory space and advising time remain fixed. What does the enrollment expansion demonstrate?",
+        "options": [
+          "Relaxing one capacity limit can intensify other educational tradeoffs",
+          "Larger lectures eliminate scarcity throughout the university",
+          "Advising time becomes abundant when tuition revenue increases",
+          "Laboratory capacity matters only for programs charging separate fees"
+        ],
+        "type": "transfer",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Ignoring constraints that become more important after another constraint relaxes.",
+        "feedback": "The binding limit can move from lecture seats to labs or advising.",
+        "aHash": "9d9d5f7a067532a397c59e91eac8d4cf95e565f3527391a9ce424b41dcdf5e71",
+        "sourceHash": "7bb05c080bd71236e3f38550a3aef6bc4407ecee5e13c198cc957d94c54c835d"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-007",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-007",
+        "q": "A region adds inexpensive solar generation, but its transmission network cannot carry all available power to users. Which conclusion is most accurate?",
+        "options": [
+          "Generation scarcity eased while transmission capacity remains scarce",
+          "Cheap generation makes grid capacity unlimited by economic definition",
+          "Unused solar power proves the region has no energy-related tradeoff",
+          "The transmission limit is poverty rather than scarcity because wires are costly"
+        ],
+        "type": "constraint-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Treating abundant output at one stage as abundance throughout a system.",
+        "feedback": "A production gain does not remove downstream infrastructure constraints.",
+        "aHash": "b22e11f0ff4044028d396807bf104218c030c09e166c2240ef2523a5714c4613",
+        "sourceHash": "1310396426a2af8f2ddcd75b5b5e5f2b852939786ce5c78398331d7b04f899a5"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-008",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-008",
+        "q": "A public agency reassigns cybersecurity analysts to clear a benefits-processing backlog. Which consequence must be included even if the backlog is urgent?",
+        "options": [
+          "The forgone security monitoring performed by the same scarce analysts",
+          "The analysts become nonscarce because both assignments serve the public",
+          "The backlog creates more analyst-hours by increasing social need",
+          "Only the agency payroll, not analyst time, has an alternative use"
+        ],
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Letting urgency obscure the alternative output of a fixed workforce.",
+        "feedback": "Urgency can affect priorities but does not remove the forgone use of analyst time.",
+        "aHash": "accadf75830189e26ac96d12e53f5201527016e3a1d14c14f232a128df10e168",
+        "sourceHash": "155076c35756da4552cdfef4a8a381844061107cbb8106d3069fc2623a326885"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-009",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-009",
+        "q": "A government funds both climate adaptation and transit by postponing courthouse maintenance. Officials call the package “tradeoff-free” because two programs expand. What is wrong?",
+        "options": [
+          "The postponed maintenance is a displaced use of scarce public resources",
+          "Two expanding programs guarantee that no group bears a cost",
+          "Deferred maintenance is not a cost until a courthouse closes",
+          "Public borrowing makes labor and materials immediately unlimited"
+        ],
+        "type": "error-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Ignoring a less visible displaced use when multiple visible goals improve.",
+        "feedback": "A package can advance several goals while shifting costs to another use or time.",
+        "aHash": "7ae775a3b131b1a086190dbffe413f4f50558c324ab5bfff5383473fe842c038",
+        "sourceHash": "220d7b7a57d01679a5c8d755383f745b2b3f6ca58f36a79bacdec6cfc1d40ec0"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-010",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-010",
+        "q": "Robots free workers from one assembly task, but the firm must choose whether to assign those workers to quality control or product development. Which principle remains?",
+        "options": [
+          "Productivity changes feasible choices but does not eliminate alternative uses",
+          "Automation makes worker time abundant for every desired project",
+          "Released workers have no opportunity cost because machines replaced one task",
+          "Technology turns all remaining firm choices into temporary shortages"
+        ],
+        "type": "transfer",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming labor-saving technology eliminates choice over the released resources.",
+        "feedback": "Freed resources still have competing valuable uses.",
+        "aHash": "9e0483dbbbb940009a89ea2121684b790ffdc5eb108cc2c656b2695e7d44144a",
+        "sourceHash": "5ea4e13927b33914209ac5547b6a078043569bea12eef66dc5eddcb876d2ac7a"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-011",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-011",
+        "q": "A wealthy country can afford either a high-speed rail network or a major hospital modernization program sooner, but construction crews and materials cannot complete both on the same schedule. What does this show?",
+        "options": [
+          "Wealth expands options without eliminating real resource constraints",
+          "Wealth eliminates scarcity whenever both projects have positive benefits",
+          "Only lower-income countries face tradeoffs involving public infrastructure",
+          "The conflict is a temporary shortage caused entirely by incorrect prices"
+        ],
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Treating national wealth as freedom from physical and time constraints.",
+        "feedback": "Wealth increases capacity, but real inputs and time remain limited.",
+        "aHash": "375c34697128aca48087aee99b0e90d6a6efa8dabc46a0f7a83415b9d7578085",
+        "sourceHash": "59fed9069ccc2ad6fb3b32b5feea9515ffe71126d79012ae4506f80410ef7e3b"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-012",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-012",
+        "q": "A transit authority postpones track maintenance to accelerate a network extension. The extension raises capacity next year but increases breakdown risk now. Which analysis best captures the dynamic tradeoff?",
+        "options": [
+          "Compare current reliability losses with future capacity gains and their distribution",
+          "Count only future riders because maintenance creates no new visible service",
+          "Treat postponed work as costless until a breakdown actually occurs",
+          "Assume future capacity removes the present scarcity of repair crews"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Ignoring intertemporal costs because their effects are delayed or uncertain.",
+        "feedback": "Scarcity links present resource use to future benefits and risks.",
+        "aHash": "887f927fb0bb0af5f5bdaf1b08d5099d948cdbc7e9cad8dae8d55ade5917c3aa",
+        "sourceHash": "66a2d82bafe8a0021b24b6965b876a4ab26877e14458f9ff7f6c2f9d1c6805ff"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-013",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-013",
+        "q": "A food program can maximize meals served by delivering only to dense neighborhoods, while rural households would receive less access. Which conclusion is best?",
+        "options": [
+          "The efficient delivery pattern may raise an equality concern that still requires judgment",
+          "Serving more meals proves every household receives an equal opportunity to participate",
+          "An equality concern proves the delivery pattern cannot increase total meals",
+          "Scarcity prevents comparing distribution once the meal total is known"
+        ],
+        "type": "evaluation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "efficiency_equity_tradeoff",
+        "repairSkill": "efficiency_equity_tradeoff",
+        "commonError": "Using the total output result as a complete judgment about distribution.",
+        "feedback": "Efficiency and equality are distinct dimensions of a scarce-resource allocation.",
+        "aHash": "dc0048f18addd07c5f6df750280a9986a8c9b733e1f5c892a9c358209b4fae3f",
+        "sourceHash": "397cd138ee36daf4346fe5a5a0342ee146a991ce5d3e364bcf726f5a143726c5"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-014",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-014",
+        "q": "A country discovers a large rare-earth deposit, but refining plants, skilled workers, and environmental capacity remain limited. What is the most defensible conclusion?",
+        "options": [
+          "The discovery expands possibilities while other constraints preserve tradeoffs",
+          "The discovery abolishes scarcity because the underground stock increased",
+          "Environmental limits are irrelevant once the resource has a high market value",
+          "Refining capacity is a shortage only because firms have not raised prices enough"
+        ],
+        "type": "constraint-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming discovery of one resource makes the complete production system unconstrained.",
+        "feedback": "New resources can expand feasible output without removing complementary constraints.",
+        "aHash": "40a0aaa9d39c638b97c4da3e8dcf6c47018003cc09df39764f7f98596f32ca1f",
+        "sourceHash": "502df7970e46b52a9939572ccf235eeb275f5349ce134b31a73328b7940ee7e2"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-015",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-015",
+        "q": "A state has one construction workforce for unsafe bridges, aging schools, and storm-water upgrades. Which proposal most clearly hides the tradeoff?",
+        "options": [
+          "Complete all projects immediately because each has benefits greater than zero",
+          "Rank projects by expected benefits, urgency, and displaced work",
+          "Phase projects as crews and materials become available",
+          "State which communities wait under each feasible schedule"
+        ],
+        "type": "error-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Treating positive benefits as proof that mutually competing projects are jointly feasible.",
+        "feedback": "Positive benefits do not create the crews and materials required to do everything at once.",
+        "aHash": "7d0a73b22175ee17d9b62668740cd6ad2e75e1e1fff486e352e3f93f3c2276f7",
+        "sourceHash": "02427e07f3c8c231fb6009cf6cfad10823386e61678b44f8c207a18bc6c5f59e"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-016",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-016",
+        "q": "A fishery can allow a larger catch this season or preserve more breeding stock for future seasons. Which feature makes this a scarcity problem rather than only a biological fact?",
+        "options": [
+          "The limited stock has competing current and future valued uses",
+          "The fish have no posted price while still in the ocean",
+          "The catch becomes scarce only after a legal quota is adopted",
+          "Future fish are unlimited because they have not yet been harvested"
+        ],
+        "type": "transfer",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Ignoring competing uses across time when the resource is renewable.",
+        "feedback": "The breeding stock cannot simultaneously support maximum current catch and future reproduction.",
+        "aHash": "88048be3a2cb4783898f1e960768c16f40109eb115295322c761d2cb944f5e45",
+        "sourceHash": "a4c13257a134ad5a01301518a279815f69ad1158ae3222113a9fa260039c861d"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-017",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-017",
+        "q": "A parent can accept additional paid work only by reducing caregiving or rest. A colleague says no tradeoff exists because caregiving has no money price. What is the best correction?",
+        "options": [
+          "Time is scarce even when an alternative use is unpaid",
+          "Only lost wages can count as a scarce-resource sacrifice",
+          "Unpaid activities use no economically relevant resources",
+          "A tradeoff exists only when the household budget falls"
+        ],
+        "type": "error-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Restricting tradeoffs to alternatives with explicit money prices.",
+        "feedback": "Nonmarket time has competing valuable uses and remains scarce.",
+        "aHash": "7a85ca8aa8061e300d3778d3736d7c1e0851d6b54fc9b1da0be868682f53d059",
+        "sourceHash": "bf564ea5632f4750f0f9a9a0a35455807e8ea38a9d1a27735e6994274ee06874"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-018",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-018",
+        "q": "A machine can produce medical sensors or environmental monitors during the same shift. Demand is high for both. Which information is essential before calling one production plan superior?",
+        "options": [
+          "Benefits of each output and what the machine time displaces",
+          "Whether either product has ever experienced a retail stockout",
+          "Whether the machine was purchased with public or private funds",
+          "Whether every buyer values the two products by the same amount"
+        ],
+        "type": "evaluation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Choosing from demand alone without comparing value and displaced output.",
+        "feedback": "Scarcity makes both the chosen benefit and forgone production relevant.",
+        "aHash": "4ce0c75c2ef04d169fe2e740406a8bda72f7a19d68f2686e853144f6d3d97ac4",
+        "sourceHash": "7ab47b97b345bc9d0191074decceebbabc31a9865a5574da5b8ea03c2807a122"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-019",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-019",
+        "q": "An evacuation plan dedicates the only outbound bridge to buses carrying people without cars, delaying private vehicles. Which statement is most complete?",
+        "options": [
+          "The rule reallocates scarce road capacity and changes who bears delay",
+          "Prioritizing vulnerable residents creates additional bridge capacity",
+          "A fairness goal makes the delay imposed on other users economically irrelevant",
+          "The bridge is not scarce because evacuees are not charged a toll"
+        ],
+        "type": "policy-analysis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Treating a fairness rationale as elimination of the underlying capacity cost.",
+        "feedback": "The priority rule affects distribution, but the bridge capacity remains fixed.",
+        "aHash": "35b39a59d126f332375376ec19329dfed026de9ec96e4b8227fd07f7b4bcc87e",
+        "sourceHash": "546bc7714fe4dc3f55ad97377b908059fb35aecbf96347bb672ab1e97b450f1c"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-020",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-020",
+        "q": "A school replaces a large lecture with small laboratory sections. Students receive more hands-on instruction, but fewer can enroll. Which statement best identifies the scarcity-driven tradeoff?",
+        "options": [
+          "Instructional intensity rises while access to the limited teacher-hours falls",
+          "Hands-on instruction makes classroom capacity unlimited for enrolled students",
+          "Lower enrollment proves the laboratory format has no educational benefit",
+          "The tradeoff disappears because both formats use the same school building"
+        ],
+        "type": "comparison",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Looking at quality or access alone instead of their competing use of instructional capacity.",
+        "feedback": "Limited teacher-hours can support greater intensity or broader access, not both without limit.",
+        "aHash": "f6197cccd25725b9c65817f8b9efeeaf2bf3cd11a80b77b77443e641f6d6af03",
+        "sourceHash": "a8fb70d9924d0bdc3e39ba7e95383c2e73cc118e6b3774ff4e03778ebfa86cdc"
+      }
+    },
+    {
+      "id": "P71-SCAR-L-021",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-L-021",
+        "q": "An aid aircraft can carry water filters, antibiotics, or shelter materials after a cyclone. Which decision process best applies scarcity reasoning?",
+        "options": [
+          "Compare needs, expected benefits, cargo limits, and what each load leaves behind",
+          "Carry equal weight of each item and conclude the cargo constraint is resolved",
+          "Choose the most expensive item because price alone measures every urgent benefit",
+          "Ignore forgone cargo because all three supplies support the same relief goal"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Using a single rule while ignoring cargo capacity and the supplies displaced.",
+        "feedback": "A complete allocation compares benefits and forgone uses within the aircraft’s capacity.",
+        "aHash": "2034700879013e7f2cc35d3fa9a5e75912ff4e61532cf6dad98bd5e400e4adf8",
+        "sourceHash": "f117befa1e6dcad4f7b48d7ed45a11b2365885e56fe383c29cb66f046f771a74"
+      }
+    },
+    {
+      "id": "P71-SCAR-B1-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "easyBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-B1-001",
+        "q": "A classroom has 24 seats and 31 students who want to attend. Which statement identifies the scarce resource?",
+        "options": [
+          "The 24 available classroom seats",
+          "The seven students without seats",
+          "The tuition paid by every student",
+          "The number of courses in the catalog"
+        ],
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Naming unmet wants rather than the resource that constrains them.",
+        "feedback": "Seats are the limited resource relative to enrollment demand.",
+        "aHash": "62ea9eeab859e883b43a4657059d927469b5d67a059a8f9ce1a1bdc6fb9922be",
+        "sourceHash": "0f0d39d0d66658fd89eca06997f3ab5f6e3b1527ec03018cadfa93d45b51d74e"
+      }
+    },
+    {
+      "id": "P71-SCAR-B2-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "mediumBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-B2-001",
+        "q": "A county gives more reservoir water to farms during planting season, leaving less for lawn irrigation and some industrial uses. What is the best interpretation?",
+        "options": [
+          "A limited resource is being shifted among competing users",
+          "The county has eliminated scarcity by choosing agriculture",
+          "Only users paying the highest price face a water tradeoff",
+          "The reduced uses prove the reservoir has a temporary leak"
+        ],
+        "type": "scenario",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Treating a priority decision as elimination of the resource constraint.",
+        "feedback": "Prioritizing farms reallocates water and reduces what remains for other users.",
+        "aHash": "74d249b5df7589b8a38a3f5c9ebb8d819ddee3522f7240c4ba96803431b6f8c6",
+        "sourceHash": "793689a808d0e7c3dcd3847e19869b32178f24a9fe4c4670fcd12f453167f4f4"
+      }
+    },
+    {
+      "id": "P71-SCAR-B3-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-B3-001",
+        "q": "A space agency has one launch window for a weather satellite or a communications satellite. Both have large benefits. Which claim is least defensible?",
+        "options": [
+          "Large benefits allow both satellites to use the same launch window",
+          "Choosing either mission forgoes the other mission’s near-term benefits",
+          "The launch window remains scarce even if the agency receives more money",
+          "A complete choice compares benefits, timing, and affected users"
+        ],
+        "type": "error-analysis",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Assuming positive benefits make mutually exclusive projects jointly feasible.",
+        "feedback": "Value does not allow two missions to occupy one fixed launch window.",
+        "aHash": "fd6e8993f1bbb8d8815c6ef5f6a510a744a424d19363b73d4e4356461ac6d09c",
+        "sourceHash": "61e1fdb6d901d00864413764179a128ff05944b72734a5bdceff18f57e217ab8"
+      }
+    },
+    {
+      "id": "P71-SCAR-LB-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-LB-001",
+        "q": "A relief convoy can carry food for 800 people or water for 500 people. A mixed load reduces both amounts. Which planning statement is economically sound?",
+        "options": [
+          "Compare lives protected by each mix and identify the supplies displaced",
+          "Choose the full food load because larger numbers always maximize welfare",
+          "Split cargo evenly and conclude that the transport limit disappears",
+          "Ignore forgone cargo because every load serves the same emergency"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Using one visible quantity without comparing benefits and displaced cargo.",
+        "feedback": "The scarce carrying capacity makes the mix and its forgone alternatives central.",
+        "aHash": "f68204580d86617d88ba8c1727a1a3b49cbc7f9bffb1de9f0dfff786406b0b26",
+        "sourceHash": "8d8e49fe17413d95eff21ee1e965fa6f3e354e7791146ee130307c6e581fd1c2"
+      }
+    },
+    {
+      "id": "P71-SCAR-LB-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-LB-002",
+        "q": "A city chooses a flood barrier for its only waterfront parcel. Officials say the housing and park proposals now have zero economic value. What is the error?",
+        "options": [
+          "A chosen use does not erase the benefits of mutually exclusive alternatives",
+          "Public ownership prevents the parcel from having alternative uses",
+          "Flood protection makes the parcel physically available for every proposal",
+          "Unbuilt alternatives matter only if developers already paid for them"
+        ],
+        "type": "error-analysis",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Treating rejection of an alternative as evidence that it had no value.",
+        "feedback": "Forgone housing and recreation benefits remain part of the tradeoff.",
+        "aHash": "7de25bfed5e7f05e64e479994d1a7f4c25fdaea85ddbbd89f832963f025a1c34",
+        "sourceHash": "32d241c6ae6502d49463999449cb1ec36edbbb96c75148b46ec1fc4fb9054007"
+      }
+    },
+    {
+      "id": "P71-SCAR-LB-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-LB-003",
+        "q": "A breakthrough triples battery output, but mines and transmission lines remain capacity constrained. Which prediction follows most directly?",
+        "options": [
+          "Some tradeoffs ease while bottlenecks shift to other scarce inputs",
+          "Every energy tradeoff disappears because battery productivity rose",
+          "Mining limits become poverty rather than scarcity after the breakthrough",
+          "Transmission capacity expands automatically with battery production"
+        ],
+        "type": "constraint-analysis",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Generalizing one productivity improvement to the entire production system.",
+        "feedback": "Technology can relocate constraints rather than eliminate them.",
+        "aHash": "84a5bc62449db56e7088b022803e9299857c19a9e4546fd0c1bb37762ad364c1",
+        "sourceHash": "bb524476cc17160ef84bedb58e647374ee0b22e3c839b2d34a0f0a89620896be"
+      }
+    },
+    {
+      "id": "P71-SCAR-LB-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-LB-004",
+        "q": "A high-income country postpones either hospital upgrades or rail expansion because both require the same engineers. Which statement best explains why scarcity persists?",
+        "options": [
+          "Real labor and time remain limited despite the country’s financial wealth",
+          "High national income means only poor households face economic scarcity",
+          "Borrowing more money immediately doubles the specialized engineering workforce",
+          "Valuable public projects have no opportunity cost in wealthy societies"
+        ],
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Equating wealth with unlimited real resources.",
+        "feedback": "Financial capacity does not make specialized labor or time unlimited.",
+        "aHash": "d61abdc362caa2b732d59d0f180f075ec08ac0a5f48904477951ae671a655b9a",
+        "sourceHash": "e7511c2cc5d796aeb69a0ead66090ce56bac1d49535b77d3db3c258648fcb030"
+      }
+    },
+    {
+      "id": "P71-SCAR-LB-005",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-LB-005",
+        "q": "A vaccine rule maximizes expected lives saved but gives remote communities fewer doses. Which evaluation is most complete?",
+        "options": [
+          "It may be efficient by one measure while creating an equality concern",
+          "It must be equally fair because expected lives saved are maximized",
+          "It cannot be efficient because some communities receive fewer doses",
+          "It eliminates scarcity by applying a medically informed allocation rule"
+        ],
+        "type": "evaluation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "efficiency_equity_policy_tradeoff",
+        "repairSkill": "efficiency_equity_policy_tradeoff",
+        "commonError": "Treating an efficiency result as a complete distributional judgment.",
+        "feedback": "Total benefit and distribution are distinct criteria under scarcity.",
+        "aHash": "233254312d4ab780a2bf2b524081191c442145eeb1a6134bf59c3acded60a5d3",
+        "sourceHash": "08768ffb4c9a0a365c438bb3e9f74fb03687022edd268e26769a73c9d4415329"
+      }
+    },
+    {
+      "id": "P71-SCAR-LB-006",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-LB-006",
+        "q": "A port can use crews now for routine maintenance or for a resilience upgrade that lowers future storm losses. Which comparison best handles scarcity across time?",
+        "options": [
+          "Current service risk versus future resilience benefits and who bears each",
+          "Future benefits alone because present maintenance can always be recovered",
+          "Current maintenance alone because uncertain future losses have no value",
+          "Crew wages alone because time has no alternative use across periods"
+        ],
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Ignoring either the present or future use of a fixed workforce.",
+        "feedback": "Intertemporal scarcity requires comparing present sacrifices with future gains.",
+        "aHash": "5e6059c71a8bdc50f277497cf4c555f0fc07cf031c90a28e60916bc49ddc5065",
+        "sourceHash": "d403ee281ac517071cf2568214c3370d27bfe85b1a3d31475d69c843cbbe1e2d"
+      }
+    },
+    {
+      "id": "P71-SCAR-R-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-R-001",
+        "q": "A wealthy person must choose how to use one free evening. Why can that person still face scarcity?",
+        "options": [
+          "Time is limited even when the person has substantial income",
+          "Scarcity applies only when a person cannot afford basic goods",
+          "Wealth makes every nonmoney resource unlimited",
+          "A choice among activities is only a temporary shortage"
+        ],
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Equating scarcity with poverty.",
+        "feedback": "Poverty concerns limited material means; scarcity also includes universal limits such as time.",
+        "aHash": "901a454c417d66a8c961b086e4448bcae28303dd18179a3747bea192b6e20e71",
+        "sourceHash": "06205f7f7404e6ba165a2edd8ec62fd06c4e5f1e0c1d1ece123f24451b4c55be"
+      }
+    },
+    {
+      "id": "P71-SCAR-R-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-R-002",
+        "q": "A grocery store temporarily runs out of bottled water after a storm. Why is this different from scarcity?",
+        "options": [
+          "The stockout is temporary; scarcity is the broader need to choose among limited resources",
+          "The stockout proves scarcity exists only during emergencies",
+          "Scarcity applies only if every store runs out at the same time",
+          "The two terms are identical whenever buyers cannot obtain a good"
+        ],
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "scarcity_definition",
+        "repairSkill": "scarcity_definition",
+        "commonError": "Equating scarcity with a temporary shortage.",
+        "feedback": "A shortage is a temporary market condition; scarcity is the general constraint underlying choice.",
+        "aHash": "aeafb5c068c60f47848440cec5bd5a370c1c5aca2f8c9157f21fc2d305181206",
+        "sourceHash": "5ccd36edf91dcb8c8f2f1613310b0a873943cfddda31073049ebb0394d027a87"
+      }
+    },
+    {
+      "id": "P71-SCAR-R-003",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-R-003",
+        "q": "A faster machine reduces production time but the firm still has limited workers and materials. What did the technology do?",
+        "options": [
+          "It relaxed one constraint without eliminating scarcity",
+          "It made every productive input unlimited",
+          "It changed scarcity into a retail shortage",
+          "It removed the need to choose among projects"
+        ],
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Assuming technology eliminates all scarcity.",
+        "feedback": "Technology can expand possibilities while other scarce inputs and wants remain.",
+        "aHash": "c606bfec2f06084f5cc6e7a73ab50f09fe097e74272d24c2207b40002d4e0695",
+        "sourceHash": "d9942916c0eccdc2c52ed1dd8c08a0f97ad1e452d2f0c50506ab94c3befc11d3"
+      }
+    },
+    {
+      "id": "P71-SCAR-R-004",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-R-004",
+        "q": "A fair lottery assigns one available treatment slot among two equally eligible patients. What does the lottery change?",
+        "options": [
+          "Who receives the slot, not the number of available slots",
+          "The number of slots, because a fair rule creates capacity",
+          "Scarcity into abundance, because each patient had an equal chance",
+          "Efficiency into equality, because the two ideas are identical"
+        ],
+        "type": "diagnostic",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "policy_tradeoff_analysis",
+        "repairSkill": "policy_tradeoff_analysis",
+        "commonError": "Assuming fairness removes the underlying resource constraint.",
+        "feedback": "An allocation rule can be fair without creating more of the scarce resource.",
+        "aHash": "a3c518fda46138dc97c24b174cd28402af38bc79d767a039c8394259a61af82c",
+        "sourceHash": "8838563f6cccb5bcfed181f105b1d816fc309dedc211f7c56223d9786b0ea571"
+      }
+    },
+    {
+      "id": "P71-SCAR-BR-001",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-BR-001",
+        "q": "A campus uses its only open parcel for a laboratory instead of student housing. Scarcity creates a tradeoff; which neighboring idea names the next-best use forgone?",
+        "options": [
+          "Opportunity cost",
+          "Market equilibrium",
+          "Price elasticity",
+          "Monetary neutrality"
+        ],
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "tradeoff_identification",
+        "repairSkill": "tradeoff_identification",
+        "commonError": "Recognizing a tradeoff without connecting it to the next-best forgone alternative.",
+        "feedback": "Opportunity cost is the value of the next-best alternative given up when scarcity forces a choice.",
+        "aHash": "1b7bbb8854d4cc1c1fe153947e240b142a27fccc15457a39cdd97c1cf8f7be23",
+        "sourceHash": "f34b1f3a695fba11a5dd0e9fd85d33f83a20dca3211a5eec6e42039108e9e008"
+      }
+    },
+    {
+      "id": "P71-SCAR-BR-002",
+      "concept": "scarcity-and-tradeoffs",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P71-SCAR-BR-002",
+        "q": "A factory divides fixed labor and machine time between medical devices and water filters. Which neighboring model displays the feasible combinations created by this scarcity?",
+        "options": [
+          "A production possibilities frontier",
+          "A consumer price index",
+          "A money-demand curve",
+          "A Phillips curve"
+        ],
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "core_scarcity",
+        "repairSkill": "core_scarcity",
+        "commonError": "Recognizing limited resources without connecting them to feasible production combinations.",
+        "feedback": "A PPF represents the combinations possible when scarce productive resources have competing uses.",
+        "aHash": "be1eac6bd73eabf679c969509cb7823389378031b4879245cf9f7dc8279a77bf",
+        "sourceHash": "84d21baa62d4911c8e6e3101862cf27c18ac4dfe36a325ac341692a21fa12378"
+      }
+    }
+  ],
+  "afterCounts": {
+    "totalCanonical": 96,
+    "easy": 10,
+    "medium": 10,
+    "hard": 10,
+    "elite": 4,
+    "legendary": 27,
+    "easyBoss": 4,
+    "mediumBoss": 4,
+    "finalBoss": 4,
+    "legendaryBoss": 9,
+    "repair": 7,
+    "repairSeed": 3,
+    "bridge": 4,
+    "calculation": 0,
+    "integration": 0
+  },
+  "afterLibrary": {
+    "version": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1",
+    "sourceCurationPhase": "phase7.1-scarcity-standalone-expansion-v1",
+    "logicalSha256": "66adf620f4c0d9cb1e4a8bc80e09949a8684bc6cdd23af28e9b3f51e8c848cf4",
+    "fileSha256": "2ea6d4fdc3493e9ef0f202a39f431856cd59e5665af2a7bc6e6a241d31f802ae",
+    "canonicalQuestionCount": 6400
+  }
+}

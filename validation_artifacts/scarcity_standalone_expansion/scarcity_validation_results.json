@@ -1,0 +1,519 @@
+{
+  "phase": "phase7.1-scarcity-standalone-expansion-v1",
+  "concept": "scarcity-and-tradeoffs",
+  "generatedAt": "2026-08-09T22:45:00.000Z",
+  "baselineLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1",
+  "productionLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1",
+  "scope": {
+    "unrelatedConceptBanksChanged": [],
+    "onlyScarcityQuestionRecordsChanged": true
+  },
+  "beforeCounts": {
+    "easy": 6,
+    "medium": 6,
+    "hard": 6,
+    "elite": 4,
+    "legendary": 6,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 3,
+    "repairSeed": 3,
+    "bridge": 2,
+    "totalCanonical": 48
+  },
+  "afterCounts": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 10,
+    "elite": 4,
+    "legendary": 27,
+    "easyBoss": 4,
+    "mediumBoss": 4,
+    "finalBoss": 4,
+    "legendaryBoss": 9,
+    "repair": 7,
+    "repairSeed": 3,
+    "bridge": 4,
+    "totalCanonical": 96
+  },
+  "changeCounts": {
+    "ADD": 48,
+    "REWRITE": 28,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "REMOVE": 0
+  },
+  "instructional": {
+    "definitionHeavyMainBefore": 5,
+    "definitionHeavyMainAfter": 0,
+    "scenarioApplicationBefore": 25,
+    "scenarioApplicationAfter": 61
+  },
+  "misconceptions": {
+    "before": {
+      "scarcity is not poverty": 0,
+      "scarcity is not temporary shortage": 0,
+      "scarcity persists in wealthy societies": 0,
+      "zero price is not nonscarcity": 2,
+      "more resources do not eliminate scarcity": 1,
+      "technology relaxes but does not eliminate constraints": 3,
+      "efficiency differs from equality": 10,
+      "fairness does not remove the constraint": 2
+    },
+    "after": {
+      "scarcity is not poverty": 3,
+      "scarcity is not temporary shortage": 2,
+      "scarcity persists in wealthy societies": 5,
+      "zero price is not nonscarcity": 3,
+      "more resources do not eliminate scarcity": 3,
+      "technology relaxes but does not eliminate constraints": 8,
+      "efficiency differs from equality": 11,
+      "fairness does not remove the constraint": 5
+    }
+  },
+  "duplicateAudit": {
+    "exactDuplicateStems": [],
+    "nearDuplicateCandidates": [],
+    "materialNearDuplicates": [],
+    "repeatedAnswerSets": []
+  },
+  "answerLengthAudit": {
+    "before": {
+      "easy": {
+        "count": 6,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.272
+      },
+      "medium": {
+        "count": 6,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.145
+      },
+      "hard": {
+        "count": 6,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.149
+      },
+      "elite": {
+        "count": 4,
+        "uniquelyLongestCorrect": 4,
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 1.425
+      },
+      "legendary": {
+        "count": 6,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.113
+      },
+      "easyBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.978
+      },
+      "mediumBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.254
+      },
+      "finalBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.283
+      },
+      "legendaryBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.328
+      },
+      "repair": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.381
+      },
+      "bridge": {
+        "count": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.998
+      }
+    },
+    "after": {
+      "easy": {
+        "count": 10,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 0.989
+      },
+      "medium": {
+        "count": 10,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.1,
+        "meanCorrectToDistractorRatio": 1.067
+      },
+      "hard": {
+        "count": 10,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.3,
+        "meanCorrectToDistractorRatio": 1.106
+      },
+      "elite": {
+        "count": 4,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.977
+      },
+      "legendary": {
+        "count": 27,
+        "uniquelyLongestCorrect": 6,
+        "uniquelyLongestRate": 0.222,
+        "meanCorrectToDistractorRatio": 1.024
+      },
+      "easyBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.017
+      },
+      "mediumBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.057
+      },
+      "finalBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.031
+      },
+      "legendaryBoss": {
+        "count": 9,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.126
+      },
+      "repair": {
+        "count": 7,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.143,
+        "meanCorrectToDistractorRatio": 1.04
+      },
+      "bridge": {
+        "count": 4,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.022
+      }
+    }
+  },
+  "metadata": {
+    "recordIssues": [],
+    "answerValidation": {
+      "ok": true,
+      "questionCount": 96,
+      "issues": []
+    },
+    "repairRouteMissing": [],
+    "bridgeRouteMissing": []
+  },
+  "modeResults": {
+    "standard": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "timed": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "exam": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "legendary": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "score": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    }
+  },
+  "simulations": {
+    "totalSessions": 2500,
+    "byMode": {
+      "standard": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "ordinarySelections": 18000,
+        "repairSelections": 1900,
+        "bridgeSelections": 1000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "timed": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "ordinarySelections": 15000,
+        "repairSelections": 1900,
+        "bridgeSelections": 1000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "exam": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "ordinarySelections": 15000,
+        "repairSelections": 1900,
+        "bridgeSelections": 1000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "legendary": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "ordinarySelections": 18000,
+        "repairSelections": 1900,
+        "bridgeSelections": 1000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "score": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "ordinarySelections": 18000,
+        "repairSelections": 1900,
+        "bridgeSelections": 1000,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      }
+    }
+  },
+  "sharedAreaRegression": [
+    {
+      "area": "General economics",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost"
+      ],
+      "scarcityInstances": 1,
+      "modeResults": {
+        "standard": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "timed": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "exam": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "legendary": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "score": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "area": "Macroeconomics",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "gdp-measurement"
+      ],
+      "scarcityInstances": 1,
+      "modeResults": {
+        "standard": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "timed": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "exam": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "legendary": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        },
+        "score": {
+          "preflight": true,
+          "start": true,
+          "questionSelection": true,
+          "completion": true,
+          "failures": 0
+        }
+      }
+    }
+  ],
+  "browserValidation": {
+    "passed": true,
+    "testedAt": "2026-08-09T22:55:00.000Z",
+    "target": "http://127.0.0.1:8771/index.html",
+    "surface": "Codex in-app browser",
+    "summary": "All five modes started and selected a four-option Scarcity question; Standard save/resume restored Stage One room 1 and the same reservoir prompt after reload; checkpoint markers rendered at rooms 10, 20, and 30; no browser console errors were observed.",
+    "modes": {
+      "standard": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Standard Campaign — Stage One (1/30)"
+      },
+      "timed": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Timed Trial — Stage One (1/30)"
+      },
+      "exam": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Exam Drill — Stage One (1/30)"
+      },
+      "legendary": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Legendary Mode — Stage One (1/30)"
+      },
+      "score": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "status": "Score Attack — Stage One (1/30)"
+      }
+    },
+    "saveResume": {
+      "passed": true,
+      "restoredStatus": "Standard Campaign — Stage One (1/30)",
+      "restoredPromptContains": "A reservoir currently contains enough water for all essential uses"
+    },
+    "checkpointTrack": {
+      "passed": true,
+      "visibleCheckpointRooms": [
+        10,
+        20,
+        30
+      ],
+      "transitionAndCompletionCoverage": "Deterministic engine simulation"
+    },
+    "consoleErrors": []
+  },
+  "graphPolicy": {
+    "scarcityAssetsBefore": 0,
+    "scarcityAssetsAfter": 0,
+    "phase64InfrastructureChanged": false
+  },
+  "finalVerdict": "SCARCITY READY — COMPACT STANDALONE BANK VALIDATED"
+}

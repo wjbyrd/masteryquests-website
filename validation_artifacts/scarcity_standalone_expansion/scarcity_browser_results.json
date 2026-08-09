@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "testedAt": "2026-08-09T22:55:00.000Z",
+  "target": "http://127.0.0.1:8771/index.html",
+  "surface": "Codex in-app browser",
+  "summary": "All five modes started and selected a four-option Scarcity question; Standard save/resume restored Stage One room 1 and the same reservoir prompt after reload; checkpoint markers rendered at rooms 10, 20, and 30; no browser console errors were observed.",
+  "modes": {
+    "standard": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Standard Campaign — Stage One (1/30)" },
+    "timed": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Timed Trial — Stage One (1/30)" },
+    "exam": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Exam Drill — Stage One (1/30)" },
+    "legendary": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Legendary Mode — Stage One (1/30)" },
+    "score": { "start": true, "questionSelection": true, "fourOptions": true, "status": "Score Attack — Stage One (1/30)" }
+  },
+  "saveResume": {
+    "passed": true,
+    "restoredStatus": "Standard Campaign — Stage One (1/30)",
+    "restoredPromptContains": "A reservoir currently contains enough water for all essential uses"
+  },
+  "checkpointTrack": {
+    "passed": true,
+    "visibleCheckpointRooms": [10, 20, 30],
+    "transitionAndCompletionCoverage": "Deterministic engine simulation"
+  },
+  "consoleErrors": []
+}

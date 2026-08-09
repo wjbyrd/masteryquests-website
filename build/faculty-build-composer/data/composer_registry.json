@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-09T17:00:00.000Z",
+  "generatedAt": "2026-08-09T22:30:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -6059,45 +6059,46 @@
       "sourceGames": [
         "equilibrium-crisis",
         "market-gate",
-        "phase5.2a-concept-expansion"
+        "phase5.2a-concept-expansion",
+        "phase7.1-scarcity-standalone-expansion"
       ],
       "questionCountByRole": {
-        "boss": 9,
-        "bridge": 2,
+        "boss": 12,
+        "bridge": 4,
         "calculation": 0,
         "elite": 4,
         "integration": 0,
-        "legendary": 6,
-        "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "main": 30,
+        "repair": 7,
         "repairSeed": 3
       },
       "questionCountByDifficulty": {
-        "easy": 9,
+        "easy": 14,
         "elite": 4,
-        "hard": 9,
-        "legendary": 9,
-        "medium": 9,
-        "unknown": 8
+        "hard": 14,
+        "legendary": 36,
+        "medium": 14,
+        "unknown": 14
       },
       "repairCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 40
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 82
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 40
+        "directSkillMatches": 4,
+        "mainWithUsableSkill": 82
       },
       "calculationCoverage": 1,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied. Phase 5.2a standalone-pool expansion added balanced difficulty, checkpoint, and remediation coverage where required.",
+      "notes": "Concept boundary follows structured source objectives and skills. Phase 7.1 matured the shared General/Macro Scarcity bank with application-led ordinary pools, full Legendary depth, rotating checkpoints, and misconception-specific Repair/Bridge routes.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Compact standalone profile met: full-run ordinary and Legendary depth, checkpoint rotation, direct diagnostic Repair, and genuine conceptual Bridges.",
+      "coverageFloorVersion": "phase7.1-scarcity-standalone-expansion-v1"
     },
     {
       "canonicalConceptId": "short-run-phillips-curve",
