@@ -5548,6 +5548,7 @@ const questionBanks = {
 
 const objectiveLabels = {};
 const embeddedQuestionAssets = {};
+const facultyQuestionValidator = globalThis.MQComposerCore?.validateFacultyQuestionRecord || function(){ return []; };
 
 
 
@@ -5853,88 +5854,8 @@ function getFacultyPool(poolName){
     return questionBanks?.[poolName];
 }
 
-function isValidPublishedAnswerHash(value){
-    if(typeof value !== "string") return false;
-    const normalized = value.trim().replace(/^sha256:/i, "");
-    return /^[a-f0-9]{64}$/i.test(normalized)
-        || /^[A-Za-z0-9+/]{43}=?$/.test(normalized);
-}
-
 function validateFacultyQuestion(question, poolName){
-    const invalidFields = [];
-
-    if(!question || typeof question !== "object"){
-        return ["question"];
-    }
-
-    const questionIdentity = question.id ?? question.questionId;
-    if(
-        questionIdentity === undefined
-        || questionIdentity === null
-        || String(questionIdentity).trim() === ""
-    ){
-        invalidFields.push("id/questionId");
-    }
-
-    if(typeof question.q !== "string" || !question.q.trim()){
-        invalidFields.push("q");
-    }
-
-    if(
-        !Array.isArray(question.options)
-        || question.options.length !== 4
-        || question.options.some(option =>
-            typeof option !== "string" || !option.trim()
-        )
-    ){
-        invalidFields.push("options");
-    }
-
-    const numericAnswerValid = Number.isInteger(question.a)
-        && question.a >= 0
-        && question.a <= 3;
-
-    if(!numericAnswerValid && !isValidPublishedAnswerHash(question.aHash)){
-        invalidFields.push("a/aHash");
-    }
-
-    const requiredTextFields = [
-        ["tag", question.tag],
-        ["type/questionType", question.type || question.questionType],
-        [
-            "objective/outcomeIds/conceptId",
-            question.objective
-                || (Array.isArray(question.outcomeIds) ? question.outcomeIds[0] : "")
-                || question.conceptId
-        ],
-        ["primarySkill/skillId", question.primarySkill || question.skillId],
-        ["repairSkill/repairSkillId", question.repairSkill || question.repairSkillId],
-        ["feedback", question.feedback]
-    ];
-
-    requiredTextFields.forEach(([label, value]) => {
-        if(typeof value !== "string" || !value.trim()){
-            invalidFields.push(label);
-        }
-    });
-
-    if(String(poolName || "").toLowerCase().includes("boss")){
-        const rawStage = question.bossStage;
-
-        if(rawStage !== undefined && rawStage !== null && rawStage !== ""){
-            const normalizedStage = String(rawStage).trim().toLowerCase();
-            const validStage = [
-                "1", "2", "3",
-                "opening", "middle", "final"
-            ].includes(normalizedStage);
-
-            if(!validStage){
-                invalidFields.push("bossStage");
-            }
-        }
-    }
-
-    return invalidFields;
+    return facultyQuestionValidator(question, poolName, embeddedQuestionAssets);
 }
 
 function validateFacultyMode(mode){

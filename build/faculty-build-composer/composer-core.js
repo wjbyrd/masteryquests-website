@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5b.0';
+const COMPOSER_VERSION = '4.5c.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'legendary', 'score'];
 const POOL_MINIMUMS = {
@@ -175,6 +175,85 @@ async function sha256Hex(text){
     return Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
   }
   return sha256Fallback(text);
+}
+
+// Canonical field-level question contract. The composer calls this function
+// directly and embeds this exact function source into each generated game.
+function validateFacultyQuestionRecord(question, poolName, availableAssets){
+  const invalidFields = [];
+  if(!question || typeof question !== 'object') return ['question'];
+
+  const questionIdentity = question.id ?? question.questionId;
+  if(questionIdentity === undefined || questionIdentity === null || String(questionIdentity).trim() === ''){
+    invalidFields.push('id/questionId');
+  }
+  if(typeof question.q !== 'string' || !question.q.trim()) invalidFields.push('q');
+  if(!Array.isArray(question.options) || question.options.length !== 4 || question.options.some(option => typeof option !== 'string' || !option.trim())){
+    invalidFields.push('options');
+  }
+
+  const numericAnswerValid = Number.isInteger(question.a) && question.a >= 0 && question.a <= 3;
+  const publishedHash = typeof question.aHash === 'string'
+    ? question.aHash.trim().replace(/^sha256:/i, '')
+    : '';
+  const publishedHashValid = /^[a-f0-9]{64}$/i.test(publishedHash) || /^[A-Za-z0-9+/]{43}=?$/.test(publishedHash);
+  if(!numericAnswerValid && !publishedHashValid) invalidFields.push('a/aHash');
+
+  const requiredTextFields = [
+    ['tag', question.tag],
+    ['type/questionType', question.type || question.questionType],
+    ['objective/outcomeIds/conceptId', question.objective || (Array.isArray(question.outcomeIds) ? question.outcomeIds[0] : '') || question.conceptId],
+    ['primarySkill/skillId', question.primarySkill || question.skillId],
+    ['repairSkill/repairSkillId', question.repairSkill || question.repairSkillId],
+    ['feedback', question.feedback]
+  ];
+  requiredTextFields.forEach(([label, value]) => {
+    if(typeof value !== 'string' || !value.trim()) invalidFields.push(label);
+  });
+
+  const normalizedPool = String(poolName || '');
+  const effectiveDifficulty = String(question.canonicalDifficulty || question.difficulty || '').trim().toLowerCase();
+  const validDifficulties = ['easy', 'medium', 'hard', 'elite', 'legendary'];
+  const difficultyOptional = normalizedPool === 'repair' || normalizedPool === 'bridge';
+  if(!difficultyOptional && !validDifficulties.includes(effectiveDifficulty)) invalidFields.push('difficulty');
+  const poolDifficulty = {
+    easy: 'easy', medium: 'medium', hard: 'hard', elite: 'elite', legendary: 'legendary',
+    easyBoss: 'easy', mediumBoss: 'medium', finalBoss: 'hard', legendaryBoss: 'legendary'
+  }[normalizedPool];
+  if(poolDifficulty && effectiveDifficulty && effectiveDifficulty !== poolDifficulty){
+    invalidFields.push('pool/difficulty');
+  }
+
+  if(normalizedPool.toLowerCase().includes('boss')){
+    const rawStage = question.bossStage;
+    if(rawStage !== undefined && rawStage !== null && rawStage !== ''){
+      const normalizedStage = String(rawStage).trim().toLowerCase();
+      if(!['1', '2', '3', 'opening', 'middle', 'final'].includes(normalizedStage)) invalidFields.push('bossStage');
+    }
+  }
+
+  if(question.image !== undefined && question.image !== null && question.image !== ''){
+    if(typeof question.image !== 'string' || !question.image.trim()){
+      invalidFields.push('image');
+    } else if(availableAssets){
+      const imagePath = question.image.trim().replace(/^data\//, '');
+      let assetFound = false;
+      if(availableAssets instanceof Set){
+        assetFound = availableAssets.has(imagePath) || availableAssets.has(`data/${imagePath}`);
+      } else if(Array.isArray(availableAssets)){
+        assetFound = availableAssets.some(asset => {
+          const candidate = typeof asset === 'string' ? asset : asset?.runtimePath || asset?.sourceUrl;
+          return String(candidate || '').replace(/^data\//, '') === imagePath;
+        });
+      } else if(typeof availableAssets === 'object'){
+        assetFound = Object.prototype.hasOwnProperty.call(availableAssets, imagePath)
+          || Object.prototype.hasOwnProperty.call(availableAssets, `data/${imagePath}`);
+      }
+      if(!assetFound) invalidFields.push('image asset');
+    }
+  }
+
+  return invalidFields;
 }
 
 function safeSlug(value){
@@ -507,12 +586,22 @@ function compose(library, inputRecipe){
     }
   }
 
-  const validation = validateModes(counts, recipe.supportedModes || []);
+  const validation = validateModes(counts, recipe.supportedModes || [], {
+    banks,
+    repairQuestions,
+    bridgeQuestions,
+    assets
+  });
   for(const mode of validation.modes){
     if(!mode.ok){
-      errors.push(`${mode.label}: ${mode.deficiencies.map(deficiency =>
-        `${deficiency.pool} needs ${deficiency.minimum}, found ${deficiency.count}`
-      ).join('; ')}`);
+      if(mode.deficiencies.length){
+        errors.push(`${mode.label}: ${mode.deficiencies.map(deficiency =>
+          `${deficiency.pool} needs ${deficiency.minimum}, found ${deficiency.count}`
+        ).join('; ')}`);
+      }
+      for(const issue of mode.issues || []){
+        errors.push(`${mode.label}: ${issue.pool} ${issue.id}: ${issue.issue}`);
+      }
     }
   }
 
@@ -536,7 +625,7 @@ function compose(library, inputRecipe){
   };
 }
 
-function validateModes(counts, modes){
+function validateModes(counts, modes, detail = {}){
   const labels = {
     standard: 'Standard Campaign',
     timed: 'Timed Trial',
@@ -552,12 +641,37 @@ function validateModes(counts, modes){
         count: counts[pool] || 0
       }));
       const deficiencies = requirements.filter(requirement => requirement.count < requirement.minimum);
+      const issues = [];
+      const seenIds = new Map();
+      for(const {pool} of requirements){
+        const questions = pool === 'repair'
+          ? detail.repairQuestions
+          : pool === 'bridge'
+            ? detail.bridgeQuestions
+            : detail.banks?.[pool];
+        if(!questions) continue;
+        if(!Array.isArray(questions)){
+          issues.push({pool, id: '—', issue: 'Pool is not an array'});
+          continue;
+        }
+        questions.forEach((question, index) => {
+          const fields = validateFacultyQuestionRecord(question, pool, detail.assets);
+          const id = question?.id ?? question?.questionId ?? `index ${index}`;
+          if(fields.length) issues.push({pool, id, issue: `Invalid: ${fields.join(', ')}`});
+          const key = String(id);
+          if(key && !key.startsWith('index ')){
+            if(seenIds.has(key)) issues.push({pool, id: key, issue: `Duplicate ID also used in ${seenIds.get(key)}`});
+            else seenIds.set(key, pool);
+          }
+        });
+      }
       return {
         mode,
         label: labels[mode],
         requirements,
         deficiencies,
-        ok: deficiencies.length === 0
+        issues,
+        ok: deficiencies.length === 0 && issues.length === 0
       };
     })
   };
@@ -569,7 +683,7 @@ function configMarkerRegion(config){
 
 function questionMarkerRegion(composition, metadata){
   const js = value => JSON.stringify(value, null, 2).replace(/<\/script/gi, '<\\/script');
-  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Phase 4.5b Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
+  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Phase 4.5c Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
 }
 
 function replaceMarkedRegion(template, startLabel, endLabel, replacement){
@@ -613,7 +727,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5b-self-contained'
+    templateVersion: 'phase4.5c-shared-preflight'
   };
 }
 
@@ -676,6 +790,7 @@ return {
   bossQuestionsForCheckpoint,
   migrateRecipe,
   validateRecipeShape,
+  validateFacultyQuestionRecord,
   compose,
   validateModes,
   buildHtml,

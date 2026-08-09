@@ -683,6 +683,11 @@ function candidatePoolCount(concept, pool){
 
 function renderCoverageRecommendations(composition){
   const container = $('coverageRecommendations');
+  const fieldIssues = (composition.validation?.modes || []).flatMap(mode => mode.issues || []);
+  if(fieldIssues.length){
+    container.innerHTML = '<div class="recommendation-heading"><strong>Repair invalid question records.</strong><span>Coverage additions cannot fix field-level validation errors. Correct the listed question IDs, then revalidate.</span></div>';
+    return;
+  }
   const deficiencies = (composition.validation?.modes || []).flatMap(mode => mode.deficiencies || []);
   const missingPools = [...new Set(deficiencies.map(item => item.pool))];
   if(!missingPools.length){
@@ -739,7 +744,7 @@ function renderCoverage(){
 
   $('readinessMessage').className = `readiness-message ${failedModes.length ? 'not-ready' : thinSelected.length ? 'caution' : 'ready'}`;
   $('readinessMessage').innerHTML = failedModes.length
-    ? `<strong>Not ready for every selected mode.</strong><span>${failedModes.map(mode => mode.label).join(', ')} ${failedModes.length === 1 ? 'needs' : 'need'} more coverage. Other passing modes remain usable.</span>`
+    ? `<strong>Not ready for every selected mode.</strong><span>${failedModes.map(mode => mode.label).join(', ')} ${failedModes.length === 1 ? 'has' : 'have'} coverage or field-level validation errors. Review the affected question IDs below.</span>`
     : thinSelected.length
       ? `<strong>Mode coverage passes, but some concepts remain thin.</strong><span>${thinSelected.map(concept => concept.title).join(', ')} ${thinSelected.length === 1 ? 'is' : 'are'} best used only as part of this broader mix until expansion is complete.</span>`
       : `<strong>Ready for all selected modes.</strong><span>The current concept mix meets the required question coverage.</span>`;
@@ -755,14 +760,20 @@ function renderCoverage(){
 
   $('modeValidation').innerHTML = selectedModes.map(mode => {
     const deficient = mode.requirements.filter(requirement => requirement.count < requirement.minimum);
+    const fieldIssues = mode.issues || [];
+    const failureSummary = [
+      ...deficient.map(item => `${POOL_LABELS[item.pool] || item.pool}: ${item.count} available; ${item.minimum} required.`),
+      ...fieldIssues.slice(0, 6).map(item => `${POOL_LABELS[item.pool] || item.pool}${item.id !== '—' ? ` (ID ${esc(item.id)})` : ''}: ${esc(item.issue)}.`)
+    ].join(' ');
+    const moreIssues = fieldIssues.length > 6 ? ` ${fieldIssues.length - 6} more field issue(s) are included in the generated validation details.` : '';
     return `
       <div class="validation-card ${mode.ok ? '' : 'fail'}">
-        <div class="status ${mode.ok ? 'ok' : 'fail'}">${mode.ok ? 'READY' : 'NEEDS MORE QUESTIONS'}</div>
+        <div class="status ${mode.ok ? 'ok' : 'fail'}">${mode.ok ? 'READY' : fieldIssues.length ? 'VALIDATION ERRORS' : 'NEEDS MORE QUESTIONS'}</div>
         <h3>${mode.label}</h3>
         <p>${mode.ok
-          ? 'This mode has the required question coverage.'
-          : deficient.map(item => `${POOL_LABELS[item.pool] || item.pool}: ${item.count} available; ${item.minimum} required.`).join(' ')}</p>
-        <details><summary>View requirements</summary>${mode.requirements.map(requirement => `<div>${POOL_LABELS[requirement.pool] || requirement.pool}: ${requirement.count}/${requirement.minimum}</div>`).join('')}</details>
+          ? 'This mode has the required question coverage and every required record passes runtime validation.'
+          : `${failureSummary}${moreIssues}`}</p>
+        <details><summary>View requirements and validation</summary>${mode.requirements.map(requirement => `<div>${POOL_LABELS[requirement.pool] || requirement.pool}: ${requirement.count}/${requirement.minimum}</div>`).join('')}${fieldIssues.map(item => `<div>${POOL_LABELS[item.pool] || item.pool}${item.id !== '—' ? ` (ID ${esc(item.id)})` : ''}: ${esc(item.issue)}</div>`).join('')}</details>
       </div>
     `;
   }).join('') || '<p>Select at least one mode.</p>';
