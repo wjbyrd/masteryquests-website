@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-09T14:05:00.000Z",
+  "generatedAt": "2026-08-09T15:50:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -2995,11 +2995,11 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
-        "elite": 30,
-        "legendary": 90,
+        "main": 124,
+        "elite": 38,
+        "legendary": 100,
         "calculation": 30,
-        "boss": 54,
+        "boss": 58,
         "legendaryBoss": 36,
         "repair": 20,
         "bridge": 20,
@@ -3007,29 +3007,29 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "elite": 30,
-        "hard": 78,
-        "legendary": 126,
-        "medium": 48,
+        "easy": 60,
+        "medium": 61,
+        "hard": 91,
+        "elite": 38,
+        "legendary": 136,
         "unknown": 40
       },
       "repairCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 386
       },
       "bridgeCoverage": {
         "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "mainWithUsableSkill": 386
       },
-      "calculationCoverage": 35,
-      "graphCoverage": 36,
+      "calculationCoverage": 55,
+      "graphCoverage": 92,
       "status": "active",
-      "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2d. Consumer and Producer Surplus is the primary prerequisite. Tariff and quota losses are taught as trade-specific lost gains without assuming a generic tax unit. Graph labels are offset from curves.",
+      "notes": "Fresh Principles of Microeconomics trade bank with four faculty-approved graph assets added in August 2026. New graph questions require direct use of import, export, tariff, or quota figures and state thousand-unit/thousand-dollar units explicitly where needed.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
+      "coverageStatusNote": "Publisher-scale standalone bank with new graph-dependent import, export, tariff, quota, welfare, tariff-revenue, quota-rent, and deadweight-loss analysis.",
       "coverageFloorVersion": "phase6.2d-rich-v1"
     },
     {
@@ -6934,6 +6934,6 @@
       "coverageFloorVersion": "phase5.2b-v1"
     }
   ],
-  "curationPhase": "phase6.2b-elasticity-graph-expansion-v2",
-  "curationSummary": "Elasticity graph expansion v2: four approved canonical graph assets, 48 new graph-dependent questions, legacy graph items remapped, and tax-incidence/obsolete elasticity graph assets removed."
+  "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
+  "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss."
 }

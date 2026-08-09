@@ -1,7 +1,7 @@
 {
   "phase": "6.2g-MONOPOLY-GRAPH-V2",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2",
-  "librarySha256": "143ee3138702f79550349b5012cd8c0f45b4d64e68366026ba8d40af0e8cd324",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2",
+  "librarySha256": "74bf1ea438770ba5b1d6fc4bc9f2dc75860aa264b0564cdd270ecfca7db70134",
   "newQuestionCount": 60,
   "graphCounts": {
     "01": 16,
@@ -132,23 +132,23 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 192,
-        "medium": 198,
-        "hard": 348,
-        "elite": 186,
-        "legendary": 474,
-        "easyBoss": 95,
-        "mediumBoss": 95,
-        "finalBoss": 98,
+        "easy": 201,
+        "medium": 207,
+        "hard": 357,
+        "elite": 193,
+        "legendary": 479,
+        "easyBoss": 96,
+        "mediumBoss": 96,
+        "finalBoss": 99,
         "legendaryBoss": 180,
         "repair": 100,
         "repairSeed": 0,
         "bridge": 100,
         "calculation": 150,
         "integration": 0,
-        "graph": 428,
-        "assets": 281,
-        "totalCanonical": 2066
+        "graph": 470,
+        "assets": 284,
+        "totalCanonical": 2108
       },
       "countIssues": [],
       "modes": [
@@ -180,11 +180,11 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 2066,
+        "questionCount": 2108,
         "issues": []
       },
       "assetAudit": {
-        "assetCount": 281,
+        "assetCount": 284,
         "issues": []
       },
       "bossCoverage": {
@@ -207,7 +207,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 95
+          "questionCount": 96
         },
         "checkpointTwo": {
           "label": "Checkpoint Two",
@@ -228,7 +228,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 95
+          "questionCount": 96
         },
         "finalCheckpoint": {
           "label": "Final Checkpoint",
@@ -249,7 +249,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 98
+          "questionCount": 99
         }
       }
     },
@@ -274,23 +274,23 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 310,
-        "medium": 322,
-        "hard": 564,
-        "elite": 292,
-        "legendary": 777,
-        "easyBoss": 161,
-        "mediumBoss": 167,
-        "finalBoss": 164,
+        "easy": 338,
+        "medium": 352,
+        "hard": 594,
+        "elite": 315,
+        "legendary": 799,
+        "easyBoss": 166,
+        "mediumBoss": 171,
+        "finalBoss": 168,
         "legendaryBoss": 297,
         "repair": 175,
         "repairSeed": 2,
         "bridge": 176,
         "calculation": 244,
         "integration": 0,
-        "graph": 559,
-        "assets": 354,
-        "totalCanonical": 3407
+        "graph": 705,
+        "assets": 357,
+        "totalCanonical": 3553
       },
       "countIssues": [],
       "modes": [
@@ -322,11 +322,11 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 3407,
+        "questionCount": 3553,
         "issues": []
       },
       "assetAudit": {
-        "assetCount": 354,
+        "assetCount": 357,
         "issues": []
       },
       "bossCoverage": {
@@ -363,7 +363,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 161
+          "questionCount": 166
         },
         "checkpointTwo": {
           "label": "Checkpoint Two",
@@ -400,7 +400,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 167
+          "questionCount": 171
         },
         "finalCheckpoint": {
           "label": "Final Checkpoint",
@@ -435,7 +435,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 164
+          "questionCount": 168
         }
       }
     }

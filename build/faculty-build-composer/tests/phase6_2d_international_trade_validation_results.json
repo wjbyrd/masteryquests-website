@@ -1,27 +1,27 @@
 {
   "ok": true,
   "conceptId": "international-trade-and-trade-policy",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2",
   "errors": [],
   "warnings": [],
   "counts": {
-    "easy": 30,
-    "medium": 30,
-    "hard": 60,
-    "elite": 30,
-    "legendary": 90,
-    "easyBoss": 18,
-    "mediumBoss": 18,
-    "finalBoss": 18,
+    "easy": 40,
+    "medium": 42,
+    "hard": 72,
+    "elite": 38,
+    "legendary": 100,
+    "easyBoss": 20,
+    "mediumBoss": 19,
+    "finalBoss": 19,
     "legendaryBoss": 36,
     "repair": 20,
     "repairSeed": 0,
     "bridge": 20,
     "calculation": 30,
     "integration": 0,
-    "graph": 36,
-    "assets": 49,
-    "totalCanonical": 370
+    "graph": 92,
+    "assets": 53,
+    "totalCanonical": 426
   },
   "countIssues": [],
   "modes": [
@@ -32,32 +32,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 40
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 72
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "repair",
@@ -80,17 +80,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 40
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 72
         },
         {
           "pool": "repair",
@@ -113,17 +113,17 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 40
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 72
         },
         {
           "pool": "repair",
@@ -146,7 +146,7 @@
         {
           "pool": "legendary",
           "minimum": 6,
-          "count": 90
+          "count": 100
         },
         {
           "pool": "legendaryBoss",
@@ -164,32 +164,32 @@
         {
           "pool": "easy",
           "minimum": 6,
-          "count": 30
+          "count": 40
         },
         {
           "pool": "medium",
           "minimum": 6,
-          "count": 30
+          "count": 42
         },
         {
           "pool": "hard",
           "minimum": 6,
-          "count": 60
+          "count": 72
         },
         {
           "pool": "easyBoss",
           "minimum": 3,
-          "count": 18
+          "count": 20
         },
         {
           "pool": "mediumBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "finalBoss",
           "minimum": 3,
-          "count": 18
+          "count": 19
         },
         {
           "pool": "repair",
@@ -208,16 +208,16 @@
   ],
   "answerAudit": {
     "ok": true,
-    "questionCount": 370,
+    "questionCount": 426,
     "issues": []
   },
   "assetAudit": {
-    "assetCount": 49,
+    "assetCount": 53,
     "issues": []
   },
   "sampleHtml": {
     "path": "tests/international-trade-and-trade-policy-sample.html",
-    "bytes": 2785683
+    "bytes": 3284799
   },
   "bossCoverage": {
     "checkpointOne": {
@@ -231,7 +231,7 @@
       "activeConceptIds": [
         "international-trade-and-trade-policy"
       ],
-      "questionCount": 18
+      "questionCount": 20
     },
     "checkpointTwo": {
       "label": "Checkpoint Two",
@@ -244,7 +244,7 @@
       "activeConceptIds": [
         "international-trade-and-trade-policy"
       ],
-      "questionCount": 18
+      "questionCount": 19
     },
     "finalCheckpoint": {
       "label": "Final Checkpoint",
@@ -257,7 +257,7 @@
       "activeConceptIds": [
         "international-trade-and-trade-policy"
       ],
-      "questionCount": 18
+      "questionCount": 19
     }
   }
 }

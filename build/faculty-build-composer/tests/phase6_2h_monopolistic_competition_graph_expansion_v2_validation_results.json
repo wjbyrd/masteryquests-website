@@ -1,7 +1,7 @@
 {
   "phase": "6.2h-MONOPOLISTIC-COMPETITION-GRAPH-V2",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2",
-  "librarySha256": "ebefeae907fbd5a972db9c3ef064812cacd3cd755ccbe7bb430a20689535ca7e",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2",
+  "librarySha256": "74bf1ea438770ba5b1d6fc4bc9f2dc75860aa264b0564cdd270ecfca7db70134",
   "newQuestionCount": 42,
   "graphCounts": {
     "01": 14,
@@ -558,23 +558,23 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 319,
-        "medium": 331,
-        "hard": 573,
-        "elite": 299,
-        "legendary": 782,
-        "easyBoss": 162,
-        "mediumBoss": 168,
-        "finalBoss": 165,
+        "easy": 338,
+        "medium": 352,
+        "hard": 594,
+        "elite": 315,
+        "legendary": 799,
+        "easyBoss": 166,
+        "mediumBoss": 171,
+        "finalBoss": 168,
         "legendaryBoss": 297,
         "repair": 175,
         "repairSeed": 2,
         "bridge": 176,
         "calculation": 244,
         "integration": 0,
-        "graph": 601,
+        "graph": 705,
         "assets": 357,
-        "totalCanonical": 3449
+        "totalCanonical": 3553
       },
       "countIssues": [],
       "modes": [
@@ -585,32 +585,32 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 319
+              "count": 338
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 331
+              "count": 352
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 573
+              "count": 594
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 162
+              "count": 166
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 168
+              "count": 171
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 165
+              "count": 168
             },
             {
               "pool": "repair",
@@ -633,17 +633,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 319
+              "count": 338
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 331
+              "count": 352
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 573
+              "count": 594
             },
             {
               "pool": "repair",
@@ -666,17 +666,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 319
+              "count": 338
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 331
+              "count": 352
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 573
+              "count": 594
             },
             {
               "pool": "repair",
@@ -699,7 +699,7 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 782
+              "count": 799
             },
             {
               "pool": "legendaryBoss",
@@ -717,32 +717,32 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 319
+              "count": 338
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 331
+              "count": 352
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 573
+              "count": 594
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 162
+              "count": 166
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 168
+              "count": 171
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 165
+              "count": 168
             },
             {
               "pool": "repair",
@@ -761,7 +761,7 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 3449,
+        "questionCount": 3553,
         "issues": []
       },
       "assetAudit": {
@@ -802,7 +802,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 162
+          "questionCount": 166
         },
         "checkpointTwo": {
           "label": "Checkpoint Two",
@@ -839,7 +839,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 168
+          "questionCount": 171
         },
         "finalCheckpoint": {
           "label": "Final Checkpoint",
@@ -874,7 +874,7 @@
             "monopolistic-competition",
             "oligopoly"
           ],
-          "questionCount": 165
+          "questionCount": 168
         }
       }
     }
