@@ -917,7 +917,9 @@
       "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/ad_ms_md.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/ad_ms_md.webp",
       "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
-      "sizeBytes": 74646
+      "sizeBytes": 74646,
+      "imageAlt": "Two-panel graph showing a leftward money-supply shift that raises the interest rate and a leftward aggregate-demand shift that reduces output at a fixed price level.",
+      "graphDescription": "Left panel: interest rate r is on the vertical axis and money M on the horizontal axis. A downward-sloping MD curve intersects MS1 at r1; MS2 is left of MS1 and intersects MD at the higher rate r2. Right panel: price level P is on the vertical axis and output Y on the horizontal axis. AD2 lies left of AD1. At price level P1, output is Y1 on AD1 and Y2 on AD2."
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
@@ -926,7 +928,9 @@
       "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/adaslras.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/adaslras.webp",
       "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-      "sizeBytes": 36412
+      "sizeBytes": 36412,
+      "imageAlt": "AD-AS graph with LRAS at Y1, two aggregate-demand curves, two short-run aggregate-supply curves, and labeled gaps.",
+      "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level. LRAS is vertical at Y1. AD1 and AD2 slope downward, with AD2 to the right of AD1. AS1 and AS2 slope upward, with AS1 above/left of AS2. Dashed guides mark Y3 left of LRAS, Y1 on LRAS, Y2 right of LRAS, and price levels P1, P2, P3. AD1-AS2 is Y1/P1; AD1-AS1 is Y3/P2; AD2-AS2 is Y2/P2; AD2-AS1 is Y1/P3."
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
@@ -935,7 +939,9 @@
       "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/lrpc.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/lrpc.webp",
       "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
-      "sizeBytes": 77908
+      "sizeBytes": 77908,
+      "imageAlt": "Phillips-curve graph with two downward-sloping short-run Phillips curves and a vertical long-run Phillips curve at unemployment rate U2, with labeled points a through d.",
+      "graphDescription": "The horizontal axis is unemployment rate and the vertical axis is inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower/left downward-sloping curve and SRPC2 is the higher/right downward-sloping curve. Point a is at U1/I2 on SRPC1, point b is at U2/I2 where SRPC2 meets the LRPC, point c is at U2/I1 where SRPC1 meets the LRPC, and point d is at U3/I1 on SRPC2. Dashed guides mark unemployment rates U1-U3 and inflation rates I1-I2."
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
@@ -944,7 +950,9 @@
       "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/moneyd2_moneys2.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/moneyd2_moneys2.webp",
       "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44",
-      "sizeBytes": 21712
+      "sizeBytes": 21712,
+      "imageAlt": "Money-market graph with two vertical money-supply curves, two downward-sloping money-demand curves, and labeled interest-rate and money-quantity points.",
+      "graphDescription": "The vertical axis is interest rate r and the horizontal axis is quantity of money Qm. MS1 is vertical at Qm1 and MS2 is vertical to its right at Qm2. MD1 slopes downward through e at Qm1, r2 and g at Qm2, r1. MD2 is shifted right and upward and slopes downward through a at Qm1, r4 and d at Qm2, r3. Additional labeled points are b at Qm2, r4; c at Qm1, r3; and f at Qm1, r1."
     },
     {
       "conceptId": "integrated-macroeconomic-analysis",
@@ -953,7 +961,9 @@
       "sourceUrl": "data/question-assets/integrated-macroeconomic-analysis/srpc.webp",
       "runtimePath": "question-assets/integrated-macroeconomic-analysis/srpc.webp",
       "sha256": "66ca8eff669f9d6dfc9d3f92fe68e6e3c3e3cb5147237de9e069226438955df4",
-      "sizeBytes": 82128
+      "sizeBytes": 82128,
+      "imageAlt": "Phillips-curve graph with two downward-sloping short-run Phillips curves, labeled unemployment rates U1 through U4, inflation rates I1 through I4, and points a through f.",
+      "graphDescription": "The horizontal axis is unemployment rate and the vertical axis is inflation rate. SRPC1 is the lower downward-sloping curve and SRPC2 is the higher/rightward downward-sloping curve. On SRPC1, point a is at U1/I4, b at U2/I3, c at U3/I2, and d at U4/I1. On SRPC2, point f is at U3/I4 and point e is at U4/I3. Dashed guides connect the labeled points to unemployment rates U1-U4 and inflation rates I1-I4."
     },
     {
       "conceptId": "international-trade-and-trade-policy",
@@ -3980,8 +3990,8 @@
     }
   ],
   "conceptCount": 72,
-  "canonicalQuestionCount": 7266,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1",
-  "librarySha256": "5cc4e5d84743a7e83b0ee6f2160fefb23062447258bf1879553b702587377c30",
-  "generatedAt": "2026-08-10T20:27:27.558Z"
+  "canonicalQuestionCount": 7274,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1",
+  "librarySha256": "81f9d43fe26b5b7e83d975e34efa2a9bf90c269d642e0014278b85a5f31c98c9",
+  "generatedAt": "2026-08-10T20:55:46.243Z"
 }

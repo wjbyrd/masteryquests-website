@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5d.0';
+const COMPOSER_VERSION = '4.5e.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'legendary', 'score'];
 const POOL_MINIMUMS = {
@@ -438,6 +438,13 @@ function compose(library, inputRecipe){
   const warnings = [...migrated.migrationWarnings];
   const selectedIds = [...recipe.selectedConceptIds];
   const modules = selectedIds.map(id => library.concepts[id]).filter(Boolean);
+  const supplementModules = modules.filter(module => module.supplementType === 'checkpoint-challenge');
+  const instructionModules = modules.filter(module => module.supplementType !== 'checkpoint-challenge');
+  const instructionIds = instructionModules.map(module => module.canonicalConceptId);
+  const selectedInstructionSet = new Set(instructionIds);
+  if(supplementModules.length && instructionModules.length === 0){
+    errors.push('Advanced Macro Checkpoint Supplement requires at least one normal Macro concept. It adds harder checkpoint questions and is not a standalone question bank.');
+  }
 
   const index = new Map();
   for(const module of modules){
@@ -459,7 +466,7 @@ function compose(library, inputRecipe){
   };
   const difficultyPool = {easy: 'easy', medium: 'medium', hard: 'hard', elite: 'elite', legendary: 'legendary'};
 
-  for(const module of modules){
+  for(const module of instructionModules){
     for(const pool of ['easy', 'medium', 'hard', 'elite', 'legendary']){
       for(const question of module.questions?.[pool] || []){
         banks[pool].push(cloneQuestion(question, module.canonicalConceptId));
@@ -480,10 +487,39 @@ function compose(library, inputRecipe){
     }
   }
 
+  const challengeQuestionBanks = {easyBoss: [], mediumBoss: [], finalBoss: [], legendaryBoss: []};
+  const challengeStagePool = {opening:'easyBoss', middle:'mediumBoss', final:'finalBoss', legendary:'legendaryBoss'};
+  for(const module of supplementModules){
+    const candidates = [
+      ...(module.questions?.boss || []),
+      ...(module.questions?.elite || []),
+      ...(module.questions?.legendary || []),
+      ...(module.questions?.integration || []),
+      ...(module.questions?.legendaryBoss || [])
+    ];
+    for(const question of candidates){
+      if(!question?.isCheckpointChallenge) continue;
+      const required = Array.isArray(question.requiredConceptIds) ? question.requiredConceptIds : [];
+      if(required.length && !required.every(id => selectedInstructionSet.has(id))) continue;
+      const pool = challengeStagePool[question.challengeStage];
+      if(!pool) continue;
+      challengeQuestionBanks[pool].push(cloneQuestion(question, module.canonicalConceptId));
+    }
+  }
+  for(const pool of Object.keys(challengeQuestionBanks)) challengeQuestionBanks[pool] = uniqueById(challengeQuestionBanks[pool]);
+  const eligibleChallengeCount = Object.values(challengeQuestionBanks).reduce((n, list) => n + list.length, 0);
+  if(supplementModules.length && instructionModules.length && eligibleChallengeCount === 0){
+    warnings.push({
+      type: 'supplement',
+      conceptId: supplementModules[0].canonicalConceptId,
+      message: 'Advanced Macro Checkpoint Supplement has no eligible challenges for the selected concept combination. Normal checkpoint questions will be used.'
+    });
+  }
+
   const bossCoverage = {};
   for(const checkpointKey of CHECKPOINT_ORDER){
     const checkpoint = CHECKPOINTS[checkpointKey];
-    const eligibleConceptIds = modules
+    const eligibleConceptIds = instructionModules
       .filter(module => bossQuestionsForCheckpoint(module, checkpointKey).length > 0)
       .map(module => module.canonicalConceptId);
     const requestedFocus = recipe.checkpointFocus[checkpointKey];
@@ -491,7 +527,7 @@ function compose(library, inputRecipe){
     const activeConceptIds = automatic ? eligibleConceptIds : requestedFocus.filter(id => selectedIds.includes(id));
     const activeSet = new Set(activeConceptIds);
 
-    for(const module of modules){
+    for(const module of instructionModules){
       if(!activeSet.has(module.canonicalConceptId)) continue;
       for(const question of bossQuestionsForCheckpoint(module, checkpointKey)){
         banks[checkpoint.pool].push(cloneQuestion(question, module.canonicalConceptId));
@@ -547,20 +583,20 @@ function compose(library, inputRecipe){
     }
   }
 
-  const repairQuestions = uniqueById(modules.flatMap(module =>
+  const repairQuestions = uniqueById(instructionModules.flatMap(module =>
     (module.repairQuestions || []).map(question => cloneQuestion(question, module.canonicalConceptId))
   ));
-  const bridgeQuestions = uniqueById(modules.flatMap(module =>
+  const bridgeQuestions = uniqueById(instructionModules.flatMap(module =>
     (module.bridgeQuestions || []).map(question => cloneQuestion(question, module.canonicalConceptId))
   ));
   const microSkillRepairPools = {};
   const skillRepairSeedPools = {};
   const microSkillBridgePools = {};
 
-  for(const module of modules) routeMapInto(microSkillRepairPools, module.directSkillRepairRoutes, index, module.canonicalConceptId);
-  for(const module of modules) routeMapInto(microSkillRepairPools, module.microSkillRepairPools, index, module.canonicalConceptId);
-  for(const module of modules) routeMapInto(skillRepairSeedPools, module.skillRepairSeedPools, index, module.canonicalConceptId);
-  for(const module of modules) routeMapInto(microSkillBridgePools, module.microSkillBridgePools, index, module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(microSkillRepairPools, module.directSkillRepairRoutes, index, module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(microSkillRepairPools, module.microSkillRepairPools, index, module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(skillRepairSeedPools, module.skillRepairSeedPools, index, module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(microSkillBridgePools, module.microSkillBridgePools, index, module.canonicalConceptId);
 
   const assets = [];
   for(const module of modules){
@@ -571,19 +607,25 @@ function compose(library, inputRecipe){
   counts.repair = repairQuestions.length;
   counts.repairSeed = uniqueById(Object.values(skillRepairSeedPools).flat()).length;
   counts.bridge = bridgeQuestions.length;
-  counts.calculation = modules.reduce((total, module) => total + (module.questions?.calculation?.length || 0), 0);
-  counts.integration = modules.reduce((total, module) => total + (module.questions?.integration?.length || 0), 0);
-  counts.graph = Object.values(banks).flat().filter(question => question.image).length;
+  counts.calculation = instructionModules.reduce((total, module) => total + (module.questions?.calculation?.length || 0), 0);
+  counts.integration = instructionModules.reduce((total, module) => total + (module.questions?.integration?.length || 0), 0);
+  counts.challengeOpening = challengeQuestionBanks.easyBoss.length;
+  counts.challengeMiddle = challengeQuestionBanks.mediumBoss.length;
+  counts.challengeFinal = challengeQuestionBanks.finalBoss.length;
+  counts.challengeLegendary = challengeQuestionBanks.legendaryBoss.length;
+  counts.challengeTotal = Object.values(challengeQuestionBanks).reduce((n, list) => n + list.length, 0);
+  counts.graph = [...Object.values(banks).flat(), ...Object.values(challengeQuestionBanks).flat()].filter(question => question.image).length;
   counts.assets = assets.length;
   counts.totalCanonical = uniqueById([
     ...Object.values(banks).flat(),
+    ...Object.values(challengeQuestionBanks).flat(),
     ...repairQuestions,
     ...uniqueById(Object.values(skillRepairSeedPools).flat()),
     ...bridgeQuestions
   ]).length;
 
 
-  for(const module of modules){
+  for(const module of instructionModules){
     if(!Object.keys(module.directSkillRepairRoutes || {}).length && !Object.keys(module.microSkillRepairPools || {}).length){
       warnings.push({
         type: 'repair',
@@ -624,6 +666,13 @@ function compose(library, inputRecipe){
     errors,
     warnings,
     banks,
+    challengeQuestionBanks,
+    challengeSupplement: {
+      enabled: supplementModules.length > 0,
+      selectedSupplementIds: supplementModules.map(module => module.canonicalConceptId),
+      eligibleChallengeCount,
+      behavior: supplementModules[0]?.supplementBehavior || null
+    },
     bossCoverage,
     objectiveLabels,
     objectiveSources,
@@ -711,7 +760,7 @@ function questionMarkerRegion(composition, metadata){
       questionAssetMetadata[normalized.split('/').pop()] = record;
     }
   }
-  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Phase 4.5d Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
+  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Phase 4.5e Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
 }
 
 function replaceMarkedRegion(template, startLabel, endLabel, replacement){
@@ -755,7 +804,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5d-accessible-graphs'
+    templateVersion: 'phase4.5e-checkpoint-supplement'
   };
 }
 
@@ -776,6 +825,7 @@ async function createConfig(recipe, library, templateSha){
 async function verifyAnswers(composition){
   const questions = uniqueById([
     ...Object.values(composition.banks).flat(),
+    ...Object.values(composition.challengeQuestionBanks || {}).flat(),
     ...composition.repairQuestions,
     ...Object.values(composition.skillRepairSeedPools).flat(),
     ...composition.bridgeQuestions

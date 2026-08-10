@@ -158,7 +158,6 @@ const PRESETS = [
       'macroeconomic-equilibrium-and-shocks', 'long-run-macroeconomic-adjustment',
       'short-run-phillips-curve', 'long-run-phillips-curve',
       'phillips-curve-expectations', 'disinflation-and-policy', 'sacrifice-ratio',
-      'integrated-macroeconomic-analysis'
     ]
   }
 ];
@@ -269,7 +268,17 @@ function emptyCheckpointFocus(){
   };
 }
 
+function isCheckpointSupplement(id){
+  return metaById.get(id)?.supplementType === 'checkpoint-challenge';
+}
+function selectedInstructionConceptIds(){
+  return state.selectedConceptIds.filter(id => !isCheckpointSupplement(id));
+}
+function selectedMacroInstructionIds(){
+  return selectedInstructionConceptIds().filter(id => MACRO_IDS.has(id) && !GENERAL_IDS.has(id) && !MICRO_IDS.has(id));
+}
 function bossCountForConcept(id, checkpointKey){
+  if(isCheckpointSupplement(id)) return 0;
   return Core.bossQuestionsForCheckpoint(Library.concepts[id], checkpointKey).length;
 }
 
@@ -286,10 +295,18 @@ function removeConceptFromFocus(id){
 }
 
 function setSelected(id, selected){
+  if(selected && isCheckpointSupplement(id) && selectedMacroInstructionIds().length === 0){
+    announce('Select at least one Macroeconomics concept before enabling the Advanced Macro Checkpoint Supplement.');
+    renderConcepts();
+    return;
+  }
   if(selected && !state.selectedConceptIds.includes(id)) state.selectedConceptIds.push(id);
   if(!selected){
     state.selectedConceptIds = state.selectedConceptIds.filter(value => value !== id);
     removeConceptFromFocus(id);
+    if(!isCheckpointSupplement(id) && selectedMacroInstructionIds().length === 0){
+      state.selectedConceptIds = state.selectedConceptIds.filter(value => !isCheckpointSupplement(value));
+    }
   }
   state.importWarnings = [];
   renderConcepts();
@@ -399,13 +416,15 @@ function renderSelectedSummary(){
     container.innerHTML = '<strong>No concepts selected.</strong><span>Choose individual concepts or start with a combination above.</span>';
     return;
   }
+  const instructionIds = selectedInstructionConceptIds();
+  const supplementIds = state.selectedConceptIds.filter(isCheckpointSupplement);
   const chips = state.selectedConceptIds.map(id => `
     <button type="button" class="selected-chip" data-remove-concept="${id}" aria-label="Remove ${esc(metaById.get(id)?.title || id)}">
       ${esc(metaById.get(id)?.title || id)} <span aria-hidden="true">×</span>
     </button>
   `).join('');
   container.innerHTML = `
-    <div class="selected-summary-heading"><strong>${state.selectedConceptIds.length} concept${state.selectedConceptIds.length === 1 ? '' : 's'} selected</strong><span>Ordinary questions from every selected concept remain available throughout the game.</span></div>
+    <div class="selected-summary-heading"><strong>${instructionIds.length} concept${instructionIds.length === 1 ? '' : 's'} selected${supplementIds.length ? ' + challenge supplement' : ''}</strong><span>Normal concepts provide practice and checkpoints.${supplementIds.length ? ' The challenge supplement can replace only the third question of an eligible checkpoint.' : ''}</span></div>
     <div class="selected-chip-list">${chips}</div>
   `;
   container.querySelectorAll('[data-remove-concept]').forEach(button => {
@@ -472,6 +491,7 @@ function renderConcepts(){
   const search = $('conceptSearch').value.trim().toLowerCase();
   const filter = $('selectionFilter').value;
   const visible = registry.filter(concept => {
+    if(concept.supplementType === 'checkpoint-challenge') return false;
     const selected = state.selectedConceptIds.includes(concept.canonicalConceptId);
     if(filter === 'selected' && !selected) return false;
     if(filter === 'unselected' && selected) return false;
@@ -561,7 +581,42 @@ function renderConcepts(){
   $('conceptGrid').querySelectorAll('[data-concept]').forEach(input => {
     input.addEventListener('change', () => setSelected(input.dataset.concept, input.checked));
   });
+  renderCheckpointSupplement(area);
   renderConceptRecommendations();
+}
+
+
+function renderCheckpointSupplement(area){
+  const section = $('checkpointSupplementSection');
+  const grid = $('checkpointSupplementGrid');
+  if(!section || !grid) return;
+  const concept = registry.find(item => item.supplementType === 'checkpoint-challenge');
+  if(area !== 'macro' || !concept){
+    section.hidden = true;
+    grid.innerHTML = '';
+    return;
+  }
+  section.hidden = false;
+  const id = concept.canonicalConceptId;
+  const selected = state.selectedConceptIds.includes(id);
+  const canEnable = selectedMacroInstructionIds().length > 0;
+  const stages = concept.challengeCountByStage || {};
+  grid.innerHTML = `
+    <article class="concept-card supplement-card ${selected ? 'selected' : ''}">
+      <div class="concept-card-kickers">
+        <div class="concept-area">Optional challenge layer</div>
+        <div class="coverage-status checkpoint-supplement">${esc(concept.coverageStatusLabel || 'Optional — harder checkpoint questions')}</div>
+      </div>
+      <div class="concept-head">
+        <input type="checkbox" aria-label="Enable ${esc(concept.title)}" data-supplement="${id}" ${selected ? 'checked' : ''} ${canEnable ? '' : 'disabled'}>
+        <div><h3>${esc(concept.title)}</h3><div class="format-badges"><span class="format-chip">Checkpoint only</span><span class="format-chip">Advanced synthesis</span></div></div>
+      </div>
+      <p class="concept-description">${esc(concept.description)}</p>
+      <div class="supplement-how"><strong>How it works:</strong> at most one eligible challenge can replace the third question of a checkpoint. The normal concept bank supplies questions one and two and remains the fallback. Timed Trial and Exam Drill are unchanged.</div>
+      <div class="card-summary"><span><strong>${stages.opening || 0}</strong> opening</span><span><strong>${stages.middle || 0}</strong> middle</span><span><strong>${stages.final || 0}</strong> final</span><span><strong>${stages.legendary || 0}</strong> Legendary</span></div>
+      <small>${canEnable ? 'Challenges appear only when their required Macro concepts are selected and the current checkpoint focus matches.' : 'Select at least one Macroeconomics concept above to enable this supplement.'}</small>
+    </article>`;
+  grid.querySelectorAll('[data-supplement]').forEach(input => input.addEventListener('change', () => setSelected(input.dataset.supplement, input.checked)));
 }
 
 function renderCheckpointBoard(){
@@ -787,7 +842,7 @@ function renderCoverage(){
     ['Repair routing', counts.repairSeed || 0], ['Bridge', counts.bridge || 0],
     ['Calculation', counts.calculation || 0], ['Integrated analysis', counts.integration || 0],
     ['Graph questions', counts.graph || 0], ['Embedded visuals', counts.assets || 0],
-    ['Unique canonical questions', counts.totalCanonical || 0]
+    ['Eligible checkpoint challenges', counts.challengeTotal || 0], ['Unique canonical questions', counts.totalCanonical || 0]
   ];
   $('detailedCoverage').innerHTML = detailedMetrics.map(([label,value]) => `<div class="metric"><span>${label}</span><strong>${value}</strong></div>`).join('');
 
@@ -802,8 +857,9 @@ function renderCoverage(){
 function renderFinal(){
   const composition = state.composition;
   const errors = [...(composition?.errors || [])];
-  if(state.selectedConceptIds.length === 1){
-    const onlyConcept = metaById.get(state.selectedConceptIds[0]);
+  const instructionSelected = selectedInstructionConceptIds();
+  if(instructionSelected.length === 1){
+    const onlyConcept = metaById.get(instructionSelected[0]);
     if(onlyConcept && (onlyConcept.coverageStatus || 'insufficient') === 'insufficient'){
       errors.push(`${onlyConcept.title} does not yet have enough depth for an isolated game. Add related concepts or select a concept marked Ready for focused use.`);
     }
@@ -821,7 +877,7 @@ function renderFinal(){
     `Title: ${state.title || '—'}`,
     `Slug: ${state.slug || '—'}`,
     `Modes: ${state.supportedModes.map(mode => MODE_LABELS[mode]).join(', ') || 'None'}`,
-    `Selected concepts: ${state.selectedConceptIds.length}`,
+    `Selected concepts: ${instructionSelected.length}${state.selectedConceptIds.some(isCheckpointSupplement) ? ' + Advanced Macro Checkpoint Supplement' : ''}`, 
     `Checkpoint focus: ${focusSummary}`,
     `Question count: ${composition?.counts?.totalCanonical || 0}`,
     okay ? 'Status: READY TO GENERATE' : 'Status: NOT READY',

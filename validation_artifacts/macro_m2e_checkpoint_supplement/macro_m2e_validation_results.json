@@ -1,0 +1,341 @@
+{
+  "phase": "phaseM2e-advanced-macro-checkpoint-supplement-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1",
+  "librarySha256": "81f9d43fe26b5b7e83d975e34efa2a9bf90c269d642e0014278b85a5f31c98c9",
+  "composerVersion": "4.5e.0",
+  "beforeCounts": {
+    "total": 104,
+    "easy": 0,
+    "medium": 0,
+    "hard": 0,
+    "elite": 7,
+    "legendary": 29,
+    "calculation": 0,
+    "integration": 10,
+    "easyBoss": 5,
+    "mediumBoss": 5,
+    "finalBoss": 24,
+    "legendaryBoss": 22,
+    "repair": 1,
+    "repairSeed": 0,
+    "bridge": 1,
+    "graphLinked": 14
+  },
+  "afterCounts": {
+    "total": 112,
+    "easy": 0,
+    "medium": 0,
+    "hard": 0,
+    "elite": 7,
+    "legendary": 29,
+    "calculation": 0,
+    "integration": 10,
+    "easyBoss": 7,
+    "mediumBoss": 7,
+    "finalBoss": 26,
+    "legendaryBoss": 24,
+    "repair": 1,
+    "repairSeed": 0,
+    "bridge": 1,
+    "graphLinked": 14
+  },
+  "globalBefore": 7266,
+  "globalAfter": 7274,
+  "activeChallengeCounts": {
+    "opening": 8,
+    "middle": 9,
+    "final": 40,
+    "legendary": 53,
+    "total": 110
+  },
+  "pathwayCounts": {
+    "ad-as-to-phillips": 20,
+    "fiscal-stabilization-and-ad-as": 31,
+    "short-run-versus-long-run-money": 5,
+    "growth-versus-stabilization": 6,
+    "focused-checkpoint-challenge": 25,
+    "two-family-integration": 10,
+    "stabilization-to-expectations": 2,
+    "supply-shock-policy-dilemma": 2,
+    "monetary-transmission-to-ad-as": 5,
+    "measurement-to-macro-diagnosis": 2,
+    "three-plus-family-synthesis": 1,
+    "mixed-monetary-fiscal-policy": 1
+  },
+  "requirementCountDistribution": {
+    "1": 6,
+    "2": 32,
+    "3": 40,
+    "4": 32
+  },
+  "protectedIntegrity": {
+    "nonF11ConceptsChecked": 71,
+    "nonF11Mismatches": []
+  },
+  "quality": {
+    "lengthMetrics": [
+      {
+        "id": "PM2E-CH-OPEN-001",
+        "answerIndex": 0,
+        "lengths": [
+          15,
+          17,
+          9,
+          8
+        ],
+        "correctToDistractorRatio": 1.324,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-OPEN-002",
+        "answerIndex": 0,
+        "lengths": [
+          15,
+          12,
+          17,
+          13
+        ],
+        "correctToDistractorRatio": 1.071,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-MID-001",
+        "answerIndex": 0,
+        "lengths": [
+          11,
+          10,
+          11,
+          12
+        ],
+        "correctToDistractorRatio": 1,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-MID-002",
+        "answerIndex": 0,
+        "lengths": [
+          19,
+          19,
+          17,
+          17
+        ],
+        "correctToDistractorRatio": 1.075,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-FINAL-001",
+        "answerIndex": 0,
+        "lengths": [
+          17,
+          16,
+          14,
+          17
+        ],
+        "correctToDistractorRatio": 1.085,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-FINAL-002",
+        "answerIndex": 0,
+        "lengths": [
+          15,
+          14,
+          14,
+          16
+        ],
+        "correctToDistractorRatio": 1.023,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-LEG-001",
+        "answerIndex": 0,
+        "lengths": [
+          22,
+          22,
+          16,
+          17
+        ],
+        "correctToDistractorRatio": 1.2,
+        "uniquelyLongest": false
+      },
+      {
+        "id": "PM2E-CH-LEG-002",
+        "answerIndex": 0,
+        "lengths": [
+          17,
+          17,
+          18,
+          17
+        ],
+        "correctToDistractorRatio": 0.981,
+        "uniquelyLongest": false
+      }
+    ],
+    "introducedExact": [],
+    "introducedNear": []
+  },
+  "graph": {
+    "graphLinked": 14,
+    "assetCopies": 5,
+    "assetIssues": [],
+    "graphNecessityIssues": []
+  },
+  "runtime": {
+    "supplementOnlyRejected": true,
+    "noEligibleCombinationWarned": true,
+    "representativeConfigurations": [
+      "measurement",
+      "growth",
+      "monetary",
+      "neutrality",
+      "fiscal",
+      "supplyShock",
+      "mixed",
+      "laborPolicy",
+      "stabilization",
+      "broad"
+    ],
+    "normalBanksUnchanged": true,
+    "repairBridgeUnchanged": true,
+    "remediationDestinations": [
+      "macroeconomic-equilibrium-and-shocks",
+      "sacrifice-ratio",
+      "stabilization-policy",
+      "quantity-theory-of-money",
+      "inflation-tax-and-deflation",
+      "bank-money-creation",
+      "monetary-control-limits",
+      "phillips-curve-expectations",
+      "long-run-macroeconomic-adjustment",
+      "fiscal-multipliers-and-crowding-out",
+      "long-run-phillips-curve",
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "monetary-policy-tools",
+      "short-run-phillips-curve",
+      "disinflation-and-policy",
+      "fiscal-policy-and-aggregate-demand",
+      "fisher-effect",
+      "monetary-policy-transmission",
+      "real-versus-nominal-gdp",
+      "sources-of-productivity",
+      "monetary-neutrality",
+      "indexing-and-real-values",
+      "liquidity-preference-and-money-market",
+      "unemployment-measurement"
+    ],
+    "remediationDestinationIssues": [],
+    "maxPerCheckpoint": 1,
+    "position": 3,
+    "normalFallback": true,
+    "timedExamExcluded": true
+  },
+  "simulation": {
+    "totalSessions": 700,
+    "challengeInsertions": 195,
+    "fallbacks": 405,
+    "unsupportedLeaks": 0,
+    "positionViolations": 0,
+    "tooMany": 0,
+    "excludedModeChallengeSelections": 0
+  },
+  "packages": {
+    "monetary": {
+      "htmlSha256": "1bd87199cb74b8b66611bf206c7dd6a8630a87ee74a50e35fa5fa7592d13b178",
+      "bytes": 1149997,
+      "eligibleChallenges": 4,
+      "counts": {
+        "easy": 31,
+        "medium": 34,
+        "hard": 31,
+        "elite": 29,
+        "legendary": 39,
+        "easyBoss": 12,
+        "mediumBoss": 12,
+        "finalBoss": 12,
+        "legendaryBoss": 16,
+        "repair": 27,
+        "repairSeed": 0,
+        "bridge": 13,
+        "calculation": 2,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 1,
+        "challengeFinal": 1,
+        "challengeLegendary": 2,
+        "challengeTotal": 4,
+        "graph": 76,
+        "assets": 11,
+        "totalCanonical": 260
+      }
+    },
+    "stabilization": {
+      "htmlSha256": "e9b04253a79c1d2bd5e518cbb45d8848806f515ac45845061c0949a0caa7d2c0",
+      "bytes": 2796840,
+      "eligibleChallenges": 66,
+      "counts": {
+        "easy": 82,
+        "medium": 85,
+        "hard": 93,
+        "elite": 64,
+        "legendary": 82,
+        "easyBoss": 36,
+        "mediumBoss": 36,
+        "finalBoss": 36,
+        "legendaryBoss": 39,
+        "repair": 63,
+        "repairSeed": 0,
+        "bridge": 40,
+        "calculation": 20,
+        "integration": 0,
+        "challengeOpening": 1,
+        "challengeMiddle": 7,
+        "challengeFinal": 25,
+        "challengeLegendary": 33,
+        "challengeTotal": 66,
+        "graph": 142,
+        "assets": 24,
+        "totalCanonical": 722
+      }
+    },
+    "broad": {
+      "htmlSha256": "756c3233e4e8b38375072359b3f3a1fc8e05c274e9f944cb1cc11126128e099a",
+      "bytes": 4960125,
+      "eligibleChallenges": 84,
+      "counts": {
+        "easy": 174,
+        "medium": 179,
+        "hard": 181,
+        "elite": 137,
+        "legendary": 166,
+        "easyBoss": 79,
+        "mediumBoss": 69,
+        "finalBoss": 74,
+        "legendaryBoss": 74,
+        "repair": 131,
+        "repairSeed": 0,
+        "bridge": 76,
+        "calculation": 81,
+        "integration": 0,
+        "challengeOpening": 3,
+        "challengeMiddle": 8,
+        "challengeFinal": 33,
+        "challengeLegendary": 40,
+        "challengeTotal": 84,
+        "graph": 240,
+        "assets": 30,
+        "totalCanonical": 1424
+      }
+    }
+  },
+  "browser": {
+    "attempted": true,
+    "passed": false,
+    "pending": false,
+    "summary": "Chromium headless QA was attempted on the stabilization package but timed out before page load with the same container-level D-Bus startup failure seen in prior phases. Generated packages passed composition, five-mode preflight, answer verification, accessibility embedding, and inline-JavaScript syntax checks.",
+    "nonBlockingIssues": [
+      "Container Chromium timed out before page load because /run/dbus/system_bus_socket is unavailable; perform a quick local Standard + Legendary smoke after overlay."
+    ]
+  },
+  "verdict": "MACRO M2e COMPLETE WITH NON-BLOCKING ISSUES"
+}

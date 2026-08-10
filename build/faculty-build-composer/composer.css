@@ -29,3 +29,10 @@
 .concept-flow-note{margin:0 0 14px;padding:12px 14px;border-left:5px solid var(--gold);border-radius:9px;background:#fff9df;color:#4d4630}.concept-flow-note strong{color:var(--navy)}
 .preset-empty{grid-column:1/-1;padding:14px;border:1px dashed #b9c9d4;border-radius:9px;background:rgba(255,255,255,.68);color:var(--muted);font-size:.9rem}
 @media(max-width:900px){.preset-section{grid-template-columns:1fr}.preset-options{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}}
+
+/* Phase M2e — optional checkpoint challenge supplement */
+.supplement-section{margin-top:24px;padding-top:20px;border-top:1px solid rgba(148,163,184,.25)}
+.supplement-heading{margin-bottom:12px}.supplement-heading h3{margin-bottom:4px}
+.supplement-card{border-style:dashed}.supplement-card.selected{border-style:solid}
+.supplement-how{margin:12px 0;padding:10px 12px;border-radius:10px;background:rgba(148,163,184,.08);line-height:1.45}
+.coverage-status.checkpoint-supplement{white-space:normal}

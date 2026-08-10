@@ -4248,7 +4248,46 @@ function buildBossQuestionSet(bank, poolName, chosenObjective){
         remaining.splice(remaining.findIndex(item => item.id === picked.id), 1);
     }
 
-    return orderBossQuestionSet(selected, available);
+    const ordered = orderBossQuestionSet(selected, available);
+    const challengeBank = (typeof challengeQuestionBanks === 'object' && challengeQuestionBanks)
+        ? (challengeQuestionBanks[poolName] || [])
+        : [];
+    if(ordered.length >= 3 && challengeBank.length){
+        const usedChallengeIds = new Set(usedQuestions[poolName] || []);
+        const recentChallengeFingerprints = getRecentQuestionFingerprints();
+        const objectiveConcepts = new Set(
+            available.filter(question => !chosenObjective || getBossObjectiveKey(question) === chosenObjective)
+                .map(question => question?.primaryConceptId)
+                .filter(Boolean)
+        );
+        if(!objectiveConcepts.size){
+            ordered.slice(0,2).forEach(question => { if(question?.primaryConceptId) objectiveConcepts.add(question.primaryConceptId); });
+        }
+        let candidates = challengeBank.filter(question => {
+            if(!question || usedChallengeIds.has(question.id)) return false;
+            if(recentChallengeFingerprints.has(getBossQuestionFingerprint(question))) return false;
+            const focusIds = Array.isArray(question.challengeFocusConceptIds) ? question.challengeFocusConceptIds : [];
+            return !focusIds.length || focusIds.some(id => objectiveConcepts.has(id));
+        });
+        if(poolName === 'legendaryBoss' && candidates.length){
+            const desiredStage = room <= 10 ? 'opening' : room <= 20 ? 'middle' : 'final';
+            const stageMatches = candidates.filter(question => question.challengeBossStage === desiredStage || question.bossStage === desiredStage);
+            if(stageMatches.length) candidates = stageMatches;
+        }
+        if(candidates.length){
+            const challengeBase = candidates[Math.floor(Math.random() * candidates.length)];
+            const focusIds = Array.isArray(challengeBase.challengeFocusConceptIds) ? challengeBase.challengeFocusConceptIds : [];
+            const matchedFocus = focusIds.find(id => objectiveConcepts.has(id)) || null;
+            const challenge = {
+                ...challengeBase,
+                challengeSourceConceptId: challengeBase.primaryConceptId
+            };
+            if(matchedFocus) challenge.primaryConceptId = matchedFocus;
+            if(chosenObjective) challenge.objective = chosenObjective;
+            ordered[2] = challenge;
+        }
+    }
+    return ordered;
 }
 
 function getSelectionProfile(){
@@ -4324,6 +4363,7 @@ function planRemediation(question, responseTime){
         objective: currentQuestion.objective || inferObjective(currentQuestion),
 		skill: skill,
 		commonError: question.commonError || null,
+        remediationConceptId: question.isCheckpointChallenge ? (question.remediationConceptId || null) : null,
         sourceType: question.type || "default",
         returnRoom: room,
         originQuestionId: question.id || null,
@@ -4397,8 +4437,12 @@ function getRetestPoolName(){
     return "elite";
 }
 
-function pickRemediationFromBank(poolName, objectiveKey, tag, purpose = "confirm", skillKey = null){
-    const pool = questionBanks[poolName] || [];
+function pickRemediationFromBank(poolName, objectiveKey, tag, purpose = "confirm", skillKey = null, remediationConceptId = null){
+    let pool = questionBanks[poolName] || [];
+    if(remediationConceptId){
+        const targeted = pool.filter(question => question?.primaryConceptId === remediationConceptId);
+        if(targeted.length) pool = targeted;
+    }
     const recentIds = (questionHistory[poolName] || []).slice(-10);
 
     let candidates = getQuestionsMatchingNeed(pool, objectiveKey, tag, recentIds, skillKey);
@@ -4466,6 +4510,18 @@ function getRemediationQuestion(state){
             );
         }
 
+        if(state.remediationConceptId){
+            const targeted = repairCandidates.filter(record => record?.primaryConceptId === state.remediationConceptId);
+            if(targeted.length){
+                repairCandidates = targeted;
+            } else {
+                const destinationPool = deduplicateQuestions(repairEntries.flatMap(([, pool]) => pool || []))
+                    .filter(record => record?.primaryConceptId === state.remediationConceptId
+                        && !excludeIds.includes(record?.id ?? record?.questionId));
+                if(destinationPool.length) repairCandidates = destinationPool;
+            }
+        }
+
         if(repairCandidates.length > 0){
             return weightedPick(repairCandidates, {
                 mode: "support",
@@ -4493,6 +4549,18 @@ function getRemediationQuestion(state){
             );
         }
 
+        if(state.remediationConceptId){
+            const targeted = bridgeCandidates.filter(record => record?.primaryConceptId === state.remediationConceptId);
+            if(targeted.length){
+                bridgeCandidates = targeted;
+            } else {
+                const destinationPool = deduplicateQuestions(bridgeEntries.flatMap(([, pool]) => pool || []))
+                    .filter(record => record?.primaryConceptId === state.remediationConceptId
+                        && !excludeIds.includes(record?.id ?? record?.questionId));
+                if(destinationPool.length) bridgeCandidates = destinationPool;
+            }
+        }
+
         if(bridgeCandidates.length > 0){
             return weightedPick(bridgeCandidates, {
                 mode: "support",
@@ -4508,7 +4576,8 @@ function getRemediationQuestion(state){
         state.objective,
         state.tag,
         state.stage === "retest" ? "challenge" : "confirm",
-        state.skill
+        state.skill,
+        state.remediationConceptId
     );
 }
 function weightedPick(pool, options = {}){

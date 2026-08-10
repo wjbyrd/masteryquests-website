@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-10T20:27:27.558Z",
+  "generatedAt": "2026-08-10T20:55:46.243Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -2564,8 +2564,8 @@
     },
     {
       "canonicalConceptId": "integrated-macroeconomic-analysis",
-      "title": "Integrated Macroeconomic Analysis",
-      "description": "Solve genuine multi-stage questions linking money, AD–AS, policy, inflation, and unemployment.",
+      "title": "Advanced Macro Checkpoint Supplement",
+      "description": "Optional advanced and integrated macro questions that can replace the third question in eligible checkpoint encounters. Use alongside normal Macro concepts; not intended for standalone practice.",
       "includedSkills": [
         "actual_expected_inflation_gap",
         "actual_vs_simple_multiplier",
@@ -2689,42 +2689,65 @@
         "stabilization-protocol"
       ],
       "questionCountByRole": {
-        "boss": 34,
+        "boss": 40,
         "bridge": 1,
         "calculation": 0,
         "elite": 7,
         "integration": 10,
         "legendary": 29,
-        "legendaryBoss": 22,
+        "legendaryBoss": 24,
         "main": 0,
         "repair": 1,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
+        "easy": 8,
+        "medium": 9,
+        "hard": 40,
         "elite": 7,
-        "hard": 31,
-        "legendary": 51,
-        "medium": 7,
+        "legendary": 53,
         "unknown": 2
       },
       "repairCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 92
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 110
       },
       "bridgeCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 92
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 110
       },
       "calculationCoverage": 0,
       "graphCoverage": 14,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Supplemental concept",
-      "coverageStatus": "supplemental-ready",
-      "coverageStatusLabel": "Supplemental — useful in a combined game",
-      "coverageStatusNote": "Targeted enrichment only: add discriminating application, challenge/mastery, or integration items where useful; do not force every difficulty or checkpoint pool.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Optional checkpoint challenge supplement. It contributes no ordinary practice, no standalone mode floors, and no active Repair/Bridge pools. When enabled with matching Macro concepts, at most one eligible challenge replaces the third question of a checkpoint; normal checkpoint questions remain the fallback.",
+      "instructionalClassification": "Optional checkpoint challenge supplement",
+      "coverageStatus": "checkpoint-supplement",
+      "coverageStatusLabel": "Optional — harder checkpoint questions",
+      "coverageStatusNote": "Use alongside normal Macro concepts. Challenges are filtered by selected prerequisites and checkpoint focus; Timed Trial and Exam Drill are unchanged.",
+      "coverageFloorVersion": "phaseM2e-advanced-macro-checkpoint-supplement-v1",
+      "supplementType": "checkpoint-challenge",
+      "supplementBehavior": {
+        "maxPerCheckpoint": 1,
+        "position": 3,
+        "appliesToModes": [
+          "standard",
+          "score",
+          "legendary"
+        ],
+        "excludedModes": [
+          "timed",
+          "exam"
+        ],
+        "requiresSelectedConcepts": true,
+        "normalBossFallback": true
+      },
+      "challengeCountByStage": {
+        "opening": 8,
+        "middle": 9,
+        "final": 40,
+        "legendary": 53,
+        "total": 110
+      }
     },
     {
       "canonicalConceptId": "international-trade-and-trade-policy",
@@ -6522,9 +6545,9 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
+  "curationPhase": "phaseM2e-advanced-macro-checkpoint-supplement-v1",
   "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1",
-  "canonicalQuestionCount": 7266,
-  "librarySha256": "5cc4e5d84743a7e83b0ee6f2160fefb23062447258bf1879553b702587377c30"
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1",
+  "canonicalQuestionCount": 7274,
+  "librarySha256": "81f9d43fe26b5b7e83d975e34efa2a9bf90c269d642e0014278b85a5f31c98c9"
 }

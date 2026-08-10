@@ -1,0 +1,9 @@
+{
+  "attempted": true,
+  "passed": false,
+  "pending": false,
+  "summary": "Chromium headless QA was attempted on the stabilization package but timed out before page load with the same container-level D-Bus startup failure seen in prior phases. Generated packages passed composition, five-mode preflight, answer verification, accessibility embedding, and inline-JavaScript syntax checks.",
+  "nonBlockingIssues": [
+    "Container Chromium timed out before page load because /run/dbus/system_bus_socket is unavailable; perform a quick local Standard + Legendary smoke after overlay."
+  ]
+}
