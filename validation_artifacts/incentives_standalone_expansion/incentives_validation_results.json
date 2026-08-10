@@ -1,0 +1,1220 @@
+{
+  "phase": "phase7.4-incentives-standalone-expansion-v1",
+  "concept": "incentives",
+  "generatedAt": "2026-08-10T08:00:00.000Z",
+  "baselineLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1",
+  "productionLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1",
+  "scope": {
+    "unrelatedConceptBanksChanged": [],
+    "onlyIncentivesQuestionRecordsChanged": true,
+    "protectedCanonicalQuestionHashes": {
+      "scarcity-and-tradeoffs": {
+        "before": "a975f07a649704186b9376e72e48b865f46a852d170bf190cb88100d8597fa1d",
+        "after": "a975f07a649704186b9376e72e48b865f46a852d170bf190cb88100d8597fa1d",
+        "unchanged": true
+      },
+      "opportunity-cost": {
+        "before": "635f6d014c03f3052568914c3be69eeb69c7bbb3d495e1abd3ac4d72479c6762",
+        "after": "635f6d014c03f3052568914c3be69eeb69c7bbb3d495e1abd3ac4d72479c6762",
+        "unchanged": true
+      },
+      "marginal-analysis": {
+        "before": "ee9571059291b43a1b7a97093ddf63525d93a5f464afa83cd6e19f0087b1b0b0",
+        "after": "ee9571059291b43a1b7a97093ddf63525d93a5f464afa83cd6e19f0087b1b0b0",
+        "unchanged": true
+      }
+    }
+  },
+  "beforeCounts": {
+    "easy": 4,
+    "medium": 4,
+    "hard": 4,
+    "elite": 2,
+    "legendary": 6,
+    "calculation": 0,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 0,
+    "legendaryBoss": 3,
+    "repair": 2,
+    "repairSeed": 1,
+    "bridge": 1,
+    "totalCanonical": 33
+  },
+  "afterCounts": {
+    "easy": 10,
+    "medium": 10,
+    "hard": 10,
+    "elite": 4,
+    "legendary": 27,
+    "calculation": 0,
+    "easyBoss": 4,
+    "mediumBoss": 4,
+    "finalBoss": 4,
+    "legendaryBoss": 9,
+    "repair": 7,
+    "repairSeed": 1,
+    "bridge": 5,
+    "totalCanonical": 95
+  },
+  "changeCounts": {
+    "ADD": 62,
+    "REWRITE": 10,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "REMOVE": 0
+  },
+  "instructional": {
+    "definitionHeavyOrdinaryBefore": 2,
+    "definitionHeavyOrdinaryAfter": 0,
+    "scenarioApplicationBefore": 4,
+    "scenarioApplicationAfter": 15
+  },
+  "misconceptions": {
+    "before": {
+      "probability not guarantee": 1,
+      "analysis not moral approval": 0,
+      "heterogeneous responses": 2,
+      "penalties are incentives": 6,
+      "unintended responses": 6,
+      "nonmonetary incentives": 1,
+      "metric may omit objective": 10,
+      "incentive differs from outcome": 3,
+      "enforcement affects strength": 1
+    },
+    "after": {
+      "probability not guarantee": 10,
+      "analysis not moral approval": 1,
+      "heterogeneous responses": 7,
+      "penalties are incentives": 21,
+      "unintended responses": 6,
+      "nonmonetary incentives": 8,
+      "metric may omit objective": 26,
+      "incentive differs from outcome": 9,
+      "enforcement affects strength": 8
+    }
+  },
+  "scenarioDomains": {
+    "all": {
+      "consumer": 9,
+      "workplace": 11,
+      "other": 13,
+      "education": 10,
+      "environment": 9,
+      "healthcare": 7,
+      "transportation": 13,
+      "digital": 6,
+      "government": 7,
+      "household": 2,
+      "firm": 5,
+      "finance": 1,
+      "nonprofit": 2
+    },
+    "newPhaseRecords": {
+      "other": 4,
+      "education": 7,
+      "environment": 7,
+      "workplace": 9,
+      "healthcare": 6,
+      "consumer": 5,
+      "transportation": 9,
+      "digital": 4,
+      "firm": 4,
+      "government": 4,
+      "finance": 1,
+      "nonprofit": 2
+    }
+  },
+  "duplicateAudit": {
+    "exactDuplicateStems": [],
+    "nearDuplicateCandidates": [],
+    "materialNearDuplicates": [],
+    "repeatedAnswerSets": [],
+    "numberNameSwaps": [],
+    "scenarioTemplateDistribution": {
+      "a grocery store gives shoppers": 1,
+      "gas prices rise and more": 1,
+      "a workplace gives public recognition": 1,
+      "a late fee is intended": 1,
+      "a library begins charging a": 1,
+      "a school offers preferred event": 1,
+      "a city adds a refundable": 1,
+      "a sales representative earns a": 1,
+      "an insurer raises the copay": 1,
+      "a shop offers free shipping": 1,
+      "a neighborhood app awards a": 1,
+      "a new toll reduces traffic": 1,
+      "a school rewards perfect attendance": 1,
+      "a performance bonus is based": 1,
+      "a warehouse pays a bonus": 1,
+      "a parking fine doubles but": 1,
+      "two employees receive the same": 1,
+      "a delivery app rewards acceptance": 1,
+      "a company offers either a": 1,
+      "a gym charges a missed": 1,
+      "a city gives bus riders": 1,
+      "a policy gives every household": 1,
+      "a tax credit for home": 1,
+      "the same penalty sharply changes": 1,
+      "a hospital is paid for": 1,
+      "a school rewards high test": 1,
+      "an environmental fee applies only": 1,
+      "a procurement office rewards the": 1,
+      "a deductible rises from 100": 1,
+      "a police department rewards citation": 1,
+      "a policy rewards hospitals for": 1,
+      "why can a small probability": 1,
+      "a nonprofit grant rewards clients": 1,
+      "an energy plan combines a": 1,
+      "a minimum wage is above": 1,
+      "a university raises parking fines": 1,
+      "a subscription service makes cancellation": 1,
+      "a subsidy for electric cars": 1,
+      "a software platform ranks creators": 1,
+      "a city reduces bus fares": 1,
+      "a teacher bonus depends on": 1,
+      "a university receives funding for": 1,
+      "a congestion charge is announced": 1,
+      "a health insurer waives copays": 1,
+      "a city pays restaurants for": 1,
+      "a housing program withdraws 1": 1,
+      "a credit card offers triple": 1,
+      "a factory posts team safety": 1,
+      "a charity matches the first": 1,
+      "a platform threatens suspension for": 1,
+      "a government contract pays builders": 1,
+      "a farm subsidy pays per": 1,
+      "an employer replaces a late": 1,
+      "a transit agency offers off": 1,
+      "a streaming service removes a": 1,
+      "a warranty pays repair shops": 1,
+      "a sports contract pays a": 1,
+      "a nonprofit grant rewards the": 1,
+      "a delivery platform guarantees a": 1,
+      "a city raises water prices": 1,
+      "a criminal fine is tripled": 1,
+      "a toll is added to": 1,
+      "a caf doubles loyalty points": 1,
+      "a speed bonus makes workers": 1,
+      "a bonus tied only to": 1,
+      "a fee changes behavior for": 1,
+      "a policy subsidizes an action": 1,
+      "a store offers a one": 1,
+      "a call center rewards short": 1,
+      "a hospital bonus rewards low": 1,
+      "a speeding fine rises from": 1,
+      "a university funds departments for": 1,
+      "a conservation policy combines a": 1,
+      "a city charges households for": 1,
+      "a sales bonus pays only": 1,
+      "an unemployment program replaces 80": 1,
+      "a news site pays writers": 1,
+      "two households face the same": 1,
+      "a safety regulator doubles penalties": 1,
+      "a firm pays sales commissions": 1,
+      "remote work lowers commuting time": 1,
+      "a grant rewards clinics for": 1,
+      "which statement best captures an": 1,
+      "which example is an unintended": 1,
+      "a 500 attendance bonus is": 1,
+      "an economist says a fine": 1,
+      "can two people respond differently": 1,
+      "a school gives public recognition": 1,
+      "a large fine is almost": 1,
+      "which definition best captures an": 1,
+      "a professor adds one point": 1,
+      "scarcity forces a student to": 1,
+      "a fee makes one more": 1,
+      "when a product s price": 1,
+      "a policy aims to reduce": 1
+    },
+    "cognitiveTaskDistribution": {
+      "application|incentive_identification": 2,
+      "interpretation|behavior_response_to_incentives": 3,
+      "application|nonmonetary_incentive_response": 4,
+      "application|incentive_effect_analysis": 1,
+      "application|behavior_response_to_incentives": 3,
+      "application|positive_incentive_response": 1,
+      "application|negative_incentive_response": 1,
+      "application|threshold_incentive_response": 3,
+      "application|heterogeneous_incentive_response": 11,
+      "application|incentives_unintended_consequences": 5,
+      "application|incentive_design_tradeoff": 5,
+      "application|competing_incentives": 4,
+      "application|enforcement_incentives": 8,
+      "application|metric_gaming": 6,
+      "application|incentive_types": 1,
+      "application|behavioral_margin_identification": 2,
+      "application|marginal_incentive_effect": 3,
+      "application|multiple_behavioral_margins": 3,
+      "application|incentive_design_under_imperfect_measurement": 3,
+      "synthesis|incentives_unintended_consequences": 2,
+      "synthesis|nonmonetary_incentive_response": 1,
+      "synthesis|incentives_policy_evaluation": 1,
+      "synthesis|metric_gaming": 1,
+      "synthesis|incentives_secondary_effects": 1,
+      "application|incentive_vs_outcome": 2,
+      "application|monetary_nonmonetary_interaction": 1,
+      "application|selection_incentives": 1,
+      "application|incentive_probability_not_certainty": 2,
+      "application|opportunity_cost_incentives": 2,
+      "trap|incentives_unintended_consequences": 1,
+      "interpretation|incentive_effect_analysis": 1,
+      "integration|incentive_effect_analysis": 1,
+      "multi-step|incentive_effect_analysis": 1,
+      "application|incentive_definition": 1,
+      "application|incentive_analysis_not_approval": 1,
+      "repair|core_incentives": 1,
+      "bridge|marginal_analysis_to_incentives": 2,
+      "bridge|scarcity_opportunity_cost_to_incentives": 1,
+      "bridge|incentives_to_supply_demand": 1,
+      "bridge|incentives_to_policy_design": 1
+    }
+  },
+  "answerLengthAudit": {
+    "before": {
+      "easy": {
+        "count": 4,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.75,
+        "meanCorrectToDistractorRatio": 1.556
+      },
+      "medium": {
+        "count": 4,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.75,
+        "meanCorrectToDistractorRatio": 1.278
+      },
+      "hard": {
+        "count": 4,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.75,
+        "meanCorrectToDistractorRatio": 1.615
+      },
+      "elite": {
+        "count": 2,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.493
+      },
+      "legendary": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.214
+      },
+      "easyBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.002
+      },
+      "mediumBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 1.669
+      },
+      "legendaryBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.288
+      },
+      "repair": {
+        "count": 2,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 2.675
+      },
+      "bridge": {
+        "count": 1,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 2.571
+      }
+    },
+    "after": {
+      "easy": {
+        "count": 10,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.3,
+        "meanCorrectToDistractorRatio": 1.109
+      },
+      "medium": {
+        "count": 10,
+        "uniquelyLongestCorrect": 5,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.242
+      },
+      "hard": {
+        "count": 10,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.3,
+        "meanCorrectToDistractorRatio": 1.349
+      },
+      "elite": {
+        "count": 4,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.283
+      },
+      "legendary": {
+        "count": 27,
+        "uniquelyLongestCorrect": 13,
+        "uniquelyLongestRate": 0.481,
+        "meanCorrectToDistractorRatio": 1.313
+      },
+      "easyBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.029
+      },
+      "mediumBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.293
+      },
+      "finalBoss": {
+        "count": 4,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.233
+      },
+      "legendaryBoss": {
+        "count": 9,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.186
+      },
+      "repair": {
+        "count": 7,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.286,
+        "meanCorrectToDistractorRatio": 1.068
+      },
+      "bridge": {
+        "count": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.4,
+        "meanCorrectToDistractorRatio": 1.329
+      }
+    }
+  },
+  "metadata": {
+    "recordIssues": [],
+    "answerValidation": {
+      "ok": true,
+      "questionCount": 95,
+      "issues": []
+    },
+    "repairRouteMissing": [],
+    "bridgeRouteMissing": []
+  },
+  "modeResults": {
+    "standard": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "timed": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "exam": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "legendary": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "score": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    }
+  },
+  "simulations": {
+    "totalSessions": 2500,
+    "byMode": {
+      "standard": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "ordinarySelections": 13500,
+        "checkpointSelections": 4500,
+        "repairSelections": 2200,
+        "bridgeSelections": 1400,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "timed": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "ordinarySelections": 15000,
+        "checkpointSelections": 0,
+        "repairSelections": 2200,
+        "bridgeSelections": 1400,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "exam": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "ordinarySelections": 15000,
+        "checkpointSelections": 0,
+        "repairSelections": 2200,
+        "bridgeSelections": 1400,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "legendary": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "ordinarySelections": 13500,
+        "checkpointSelections": 4500,
+        "repairSelections": 2200,
+        "bridgeSelections": 1400,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "score": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "ordinarySelections": 13500,
+        "checkpointSelections": 4500,
+        "repairSelections": 2200,
+        "bridgeSelections": 1400,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      }
+    }
+  },
+  "sharedAreaRegression": [
+    {
+      "name": "General Economics Incentives",
+      "ids": [
+        "incentives"
+      ],
+      "incentivesInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 3600
+          },
+          "conceptShares": {
+            "incentives": 1
+          },
+          "ordinaryRepresentation": {
+            "incentives": 2700
+          },
+          "bossRepresentation": {
+            "incentives": 900
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 720
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 3000
+          },
+          "conceptShares": {
+            "incentives": 1
+          },
+          "ordinaryRepresentation": {
+            "incentives": 3000
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "incentives": 720
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 3000
+          },
+          "conceptShares": {
+            "incentives": 1
+          },
+          "ordinaryRepresentation": {
+            "incentives": 3000
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "incentives": 720
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 3600
+          },
+          "conceptShares": {
+            "incentives": 1
+          },
+          "ordinaryRepresentation": {
+            "incentives": 2700
+          },
+          "bossRepresentation": {
+            "incentives": 900
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 720
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 3600
+          },
+          "conceptShares": {
+            "incentives": 1
+          },
+          "ordinaryRepresentation": {
+            "incentives": 2700
+          },
+          "bossRepresentation": {
+            "incentives": 900
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 720
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        }
+      },
+      "repairCount": 7,
+      "bridgeCount": 5,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Macroeconomics Incentives",
+      "ids": [
+        "incentives",
+        "gdp-measurement"
+      ],
+      "incentivesInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 1852,
+            "gdp-measurement": 1748
+          },
+          "conceptShares": {
+            "incentives": 0.514,
+            "gdp-measurement": 0.486
+          },
+          "ordinaryRepresentation": {
+            "incentives": 1461,
+            "gdp-measurement": 1239
+          },
+          "bossRepresentation": {
+            "incentives": 391,
+            "gdp-measurement": 509
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 407,
+            "gdp-measurement": 313
+          },
+          "minimumConceptShare": 0.486,
+          "maximumConceptShare": 0.514
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gdp-measurement": 1391,
+            "incentives": 1609
+          },
+          "conceptShares": {
+            "incentives": 0.536,
+            "gdp-measurement": 0.464
+          },
+          "ordinaryRepresentation": {
+            "gdp-measurement": 1391,
+            "incentives": 1609
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "incentives": 407,
+            "gdp-measurement": 313
+          },
+          "minimumConceptShare": 0.464,
+          "maximumConceptShare": 0.536
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 1621,
+            "gdp-measurement": 1379
+          },
+          "conceptShares": {
+            "incentives": 0.54,
+            "gdp-measurement": 0.46
+          },
+          "ordinaryRepresentation": {
+            "incentives": 1621,
+            "gdp-measurement": 1379
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "incentives": 407,
+            "gdp-measurement": 313
+          },
+          "minimumConceptShare": 0.46,
+          "maximumConceptShare": 0.54
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 2760,
+            "gdp-measurement": 840
+          },
+          "conceptShares": {
+            "incentives": 0.767,
+            "gdp-measurement": 0.233
+          },
+          "ordinaryRepresentation": {
+            "incentives": 2089,
+            "gdp-measurement": 611
+          },
+          "bossRepresentation": {
+            "incentives": 671,
+            "gdp-measurement": 229
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 407,
+            "gdp-measurement": 313
+          },
+          "minimumConceptShare": 0.233,
+          "maximumConceptShare": 0.767
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gdp-measurement": 1762,
+            "incentives": 1838
+          },
+          "conceptShares": {
+            "incentives": 0.511,
+            "gdp-measurement": 0.489
+          },
+          "ordinaryRepresentation": {
+            "gdp-measurement": 1270,
+            "incentives": 1430
+          },
+          "bossRepresentation": {
+            "gdp-measurement": 492,
+            "incentives": 408
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 407,
+            "gdp-measurement": 313
+          },
+          "minimumConceptShare": 0.489,
+          "maximumConceptShare": 0.511
+        }
+      },
+      "repairCount": 13,
+      "bridgeCount": 8,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "adjacentRegressions": [
+    {
+      "name": "Marginal Analysis and Incentives",
+      "ids": [
+        "marginal-analysis",
+        "incentives"
+      ],
+      "incentivesInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1972,
+            "incentives": 1628
+          },
+          "conceptShares": {
+            "marginal-analysis": 0.548,
+            "incentives": 0.452
+          },
+          "ordinaryRepresentation": {
+            "marginal-analysis": 1480,
+            "incentives": 1220
+          },
+          "bossRepresentation": {
+            "marginal-analysis": 492,
+            "incentives": 408
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 325,
+            "marginal-analysis": 395
+          },
+          "minimumConceptShare": 0.452,
+          "maximumConceptShare": 0.548
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 1353,
+            "marginal-analysis": 1647
+          },
+          "conceptShares": {
+            "marginal-analysis": 0.549,
+            "incentives": 0.451
+          },
+          "ordinaryRepresentation": {
+            "incentives": 1353,
+            "marginal-analysis": 1647
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "incentives": 325,
+            "marginal-analysis": 395
+          },
+          "minimumConceptShare": 0.451,
+          "maximumConceptShare": 0.549
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 1643,
+            "incentives": 1357
+          },
+          "conceptShares": {
+            "marginal-analysis": 0.548,
+            "incentives": 0.452
+          },
+          "ordinaryRepresentation": {
+            "marginal-analysis": 1643,
+            "incentives": 1357
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "incentives": 325,
+            "marginal-analysis": 395
+          },
+          "minimumConceptShare": 0.452,
+          "maximumConceptShare": 0.548
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 1802,
+            "marginal-analysis": 1798
+          },
+          "conceptShares": {
+            "marginal-analysis": 0.499,
+            "incentives": 0.501
+          },
+          "ordinaryRepresentation": {
+            "incentives": 1348,
+            "marginal-analysis": 1352
+          },
+          "bossRepresentation": {
+            "marginal-analysis": 446,
+            "incentives": 454
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 325,
+            "marginal-analysis": 395
+          },
+          "minimumConceptShare": 0.499,
+          "maximumConceptShare": 0.501
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 1648,
+            "marginal-analysis": 1952
+          },
+          "conceptShares": {
+            "marginal-analysis": 0.542,
+            "incentives": 0.458
+          },
+          "ordinaryRepresentation": {
+            "incentives": 1245,
+            "marginal-analysis": 1455
+          },
+          "bossRepresentation": {
+            "incentives": 403,
+            "marginal-analysis": 497
+          },
+          "auxiliaryRepresentation": {
+            "incentives": 325,
+            "marginal-analysis": 395
+          },
+          "minimumConceptShare": 0.458,
+          "maximumConceptShare": 0.542
+        }
+      },
+      "repairCount": 15,
+      "bridgeCount": 11,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Four-Concept Matured Foundation",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives"
+      ],
+      "incentivesInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "scarcity-and-tradeoffs": 814,
+            "marginal-analysis": 985,
+            "opportunity-cost": 980,
+            "incentives": 821
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.226,
+            "opportunity-cost": 0.272,
+            "marginal-analysis": 0.274,
+            "incentives": 0.228
+          },
+          "ordinaryRepresentation": {
+            "scarcity-and-tradeoffs": 612,
+            "marginal-analysis": 724,
+            "opportunity-cost": 736,
+            "incentives": 628
+          },
+          "bossRepresentation": {
+            "scarcity-and-tradeoffs": 202,
+            "marginal-analysis": 261,
+            "opportunity-cost": 244,
+            "incentives": 193
+          },
+          "auxiliaryRepresentation": {
+            "opportunity-cost": 194,
+            "marginal-analysis": 220,
+            "incentives": 166,
+            "scarcity-and-tradeoffs": 140
+          },
+          "minimumConceptShare": 0.226,
+          "maximumConceptShare": 0.274
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 691,
+            "scarcity-and-tradeoffs": 649,
+            "marginal-analysis": 822,
+            "opportunity-cost": 838
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.216,
+            "opportunity-cost": 0.279,
+            "marginal-analysis": 0.274,
+            "incentives": 0.23
+          },
+          "ordinaryRepresentation": {
+            "incentives": 691,
+            "scarcity-and-tradeoffs": 649,
+            "marginal-analysis": 822,
+            "opportunity-cost": 838
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "opportunity-cost": 194,
+            "marginal-analysis": 220,
+            "incentives": 166,
+            "scarcity-and-tradeoffs": 140
+          },
+          "minimumConceptShare": 0.216,
+          "maximumConceptShare": 0.279
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 820,
+            "incentives": 679,
+            "scarcity-and-tradeoffs": 689,
+            "marginal-analysis": 812
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.23,
+            "opportunity-cost": 0.273,
+            "marginal-analysis": 0.271,
+            "incentives": 0.226
+          },
+          "ordinaryRepresentation": {
+            "opportunity-cost": 820,
+            "incentives": 679,
+            "scarcity-and-tradeoffs": 689,
+            "marginal-analysis": 812
+          },
+          "bossRepresentation": {},
+          "auxiliaryRepresentation": {
+            "opportunity-cost": 194,
+            "marginal-analysis": 220,
+            "incentives": 166,
+            "scarcity-and-tradeoffs": 140
+          },
+          "minimumConceptShare": 0.226,
+          "maximumConceptShare": 0.273
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 879,
+            "scarcity-and-tradeoffs": 906,
+            "incentives": 919,
+            "opportunity-cost": 896
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.252,
+            "opportunity-cost": 0.249,
+            "marginal-analysis": 0.244,
+            "incentives": 0.255
+          },
+          "ordinaryRepresentation": {
+            "marginal-analysis": 666,
+            "scarcity-and-tradeoffs": 700,
+            "incentives": 676,
+            "opportunity-cost": 658
+          },
+          "bossRepresentation": {
+            "scarcity-and-tradeoffs": 206,
+            "incentives": 243,
+            "marginal-analysis": 213,
+            "opportunity-cost": 238
+          },
+          "auxiliaryRepresentation": {
+            "opportunity-cost": 194,
+            "marginal-analysis": 220,
+            "incentives": 166,
+            "scarcity-and-tradeoffs": 140
+          },
+          "minimumConceptShare": 0.244,
+          "maximumConceptShare": 0.255
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 836,
+            "opportunity-cost": 957,
+            "marginal-analysis": 1002,
+            "scarcity-and-tradeoffs": 805
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.224,
+            "opportunity-cost": 0.266,
+            "marginal-analysis": 0.278,
+            "incentives": 0.232
+          },
+          "ordinaryRepresentation": {
+            "incentives": 633,
+            "opportunity-cost": 728,
+            "marginal-analysis": 740,
+            "scarcity-and-tradeoffs": 599
+          },
+          "bossRepresentation": {
+            "marginal-analysis": 262,
+            "incentives": 203,
+            "scarcity-and-tradeoffs": 206,
+            "opportunity-cost": 229
+          },
+          "auxiliaryRepresentation": {
+            "opportunity-cost": 194,
+            "marginal-analysis": 220,
+            "incentives": 166,
+            "scarcity-and-tradeoffs": 140
+          },
+          "minimumConceptShare": 0.224,
+          "maximumConceptShare": 0.278
+        }
+      },
+      "repairCount": 30,
+      "bridgeCount": 21,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "browserValidation": {
+    "phase": "phase7.4-incentives-standalone-expansion-v1",
+    "concept": "incentives",
+    "testedUrl": "http://127.0.0.1:8774/index.html",
+    "testedAt": "2026-08-10T00:35:00.000Z",
+    "passed": true,
+    "summary": "The standalone title and player entry rendered; Standard, Timed, Exam, Legendary, and Score modes each started with a four-option Incentives question; the 10/20/30 checkpoint track rendered; Standard resumed as Codex QA at room 2 after reload; and browser diagnostics contained no warnings or errors.",
+    "title": "INCENTIVES STANDALONE",
+    "playerName": "Codex QA",
+    "modes": {
+      "standard": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true
+      },
+      "timed": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "timerVisible": true
+      },
+      "exam": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true
+      },
+      "legendary": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "checkpointTrackVisible": true
+      },
+      "score": {
+        "start": true,
+        "questionSelection": true,
+        "fourOptions": true,
+        "scoreVisible": true
+      }
+    },
+    "checkpointTrack": {
+      "room10": true,
+      "room20": true,
+      "room30": true
+    },
+    "saveResume": {
+      "passed": true,
+      "playerPreserved": true,
+      "resumedRoom": 2
+    },
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "graphPolicy": {
+    "assetsBefore": 0,
+    "assetsAfter": 0,
+    "newGraphs": 0,
+    "phase64AccessibilityPreserved": true
+  },
+  "finalVerdict": "INCENTIVES READY — COMPACT STANDALONE BANK VALIDATED"
+}

@@ -1,0 +1,2223 @@
+{
+  "phase": "phase7.4-incentives-standalone-expansion-v1",
+  "concept": "incentives",
+  "reviewedBaselineRecords": [
+    {
+      "id": "ECON-MG-EASY-8",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASY-9",
+      "pool": "easy",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-E-001",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-INC-E-002",
+      "pool": "easy",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-MEDIUM-102",
+      "pool": "medium",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-MEDIUM-103",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-M-001",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-M-002",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-HARD-202",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-HARD-203",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-H-001",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-H-002",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-EL-001",
+      "pool": "elite",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-EL-002",
+      "pool": "elite",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9043",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9076",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9079",
+      "pool": "legendary",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9082",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9085",
+      "pool": "legendary",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9088",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2007",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2006",
+      "pool": "boss",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2008",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-B2-001",
+      "pool": "boss",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-INC-B2-002",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-B2-003",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9109",
+      "pool": "legendaryBoss",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9110",
+      "pool": "legendaryBoss",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9111",
+      "pool": "legendaryBoss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-R-001",
+      "pool": "repair",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-INC-R-002",
+      "pool": "repair",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-CORE-INCENTIVES-30005",
+      "pool": "repairSeed",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-INC-BR-001",
+      "pool": "bridge",
+      "action": "REWRITE"
+    }
+  ],
+  "actions": {
+    "KEEP": 23,
+    "REWRITE": 10,
+    "ADD": 62,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "REMOVE": 0
+  },
+  "changes": [
+    {
+      "id": "ECON-MG-EASY-8",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-8",
+        "q": "An incentive is:",
+        "options": [
+          "Something that induces people to act",
+          "A legal maximum price",
+          "A point outside the PPF",
+          "A market shortage"
+        ],
+        "aHash": "bb55b4d71e176b13c93b34bf0f250ab44ea6f47094de153dc864d467dba70aa7",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "incentive_definition",
+        "repairSkill": "incentive_definition",
+        "commonError": "confuses_incentive_with_policy_result",
+        "feedback": "An incentive is a reward or punishment that changes behavior."
+      },
+      "after": {
+        "id": "ECON-MG-EASY-8",
+        "q": "A grocery store gives shoppers a reusable-bag credit. Which statement identifies the incentive rather than the response?",
+        "options": [
+          "The credit raises the benefit of bringing a reusable bag",
+          "More shoppers bring reusable bags after the credit begins",
+          "The store uses fewer disposable bags by month end",
+          "Customers approve of the store’s environmental goal"
+        ],
+        "aHash": "5155285e0697fb72e4cbc5b1fcae8cc9c80f77411a22b73cd45d9ecb6aeb076f",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "incentive_identification",
+        "repairSkill": "incentive_identification",
+        "commonError": "Confusing the changed payoff with the behavior or outcome it may produce.",
+        "feedback": "The credit is the incentive; bag use and waste reduction are possible responses and outcomes.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-INC-E-001",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-INC-E-001",
+        "q": "Which is a nonmonetary incentive?",
+        "options": [
+          "A $500 bonus.",
+          "Public recognition for meeting a goal.",
+          "A sales tax.",
+          "A cash rebate."
+        ],
+        "aHash": "fe8bb86acb5c237c70831dc2980f2076a8373e8fa640532c06fc79c9ca4ec671",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "incentive_types",
+        "repairSkill": "incentive_types",
+        "commonError": "Assuming every incentive must be money.",
+        "feedback": "Status, convenience, rules, and recognition can alter behavior without direct cash payments."
+      },
+      "after": {
+        "id": "P52B-INC-E-001",
+        "q": "A workplace gives public recognition to teams that finish safety training. What does the recognition directly change?",
+        "options": [
+          "The nonmonetary benefit of completing the training",
+          "The cash wage paid for every hour of training",
+          "The certainty that every employee completes training",
+          "The final safety outcome rather than the choice payoff"
+        ],
+        "aHash": "0809bfba94a7903f0b75dbc77e7b0469e7a550183af2cf6eaedd0cb809453dff",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_incentive_response",
+        "repairSkill": "nonmonetary_incentive_response",
+        "commonError": "Treating incentive identification as vocabulary matching or assuming only cash matters.",
+        "feedback": "Recognition can raise the perceived benefit of completing training without guaranteeing it.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-MEDIUM-102",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-MEDIUM-102",
+        "q": "A city offers a small cash reward for recycling, and recycling rises. What is the best explanation?",
+        "options": [
+          "The reward changed incentives",
+          "The city eliminated scarcity",
+          "The reward shifted the PPF inward",
+          "The policy created a price floor"
+        ],
+        "aHash": "64e8d4aa3b8a1534968707a7161e5122a8beb530dab4df446151e9ee032a3571",
+        "type": "interpretation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "behavior_response_to_incentives",
+        "repairSkill": "incentive_definition",
+        "commonError": "misses_reward_as_incentive",
+        "feedback": "The reward changed the payoff from recycling, so people responded to the incentive."
+      },
+      "after": {
+        "id": "ECON-MG-MEDIUM-102",
+        "q": "A neighborhood app awards a visible badge for weekly recycling. Participation rises among users who value recognition but barely changes for others. What is the best interpretation?",
+        "options": [
+          "A nonmonetary incentive can produce different responses across people",
+          "The badge guarantees recycling because everyone can see it",
+          "Recognition is not an incentive because no cash changes hands",
+          "Different responses prove the badge did not change any payoff"
+        ],
+        "aHash": "22a39754c213dc8b6acee1a95598e72fb2538ed8ccc1adc68f6e95ab164fafcb",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Assuming incentives must be monetary or produce uniform behavior.",
+        "feedback": "Recognition can change expected benefits, while its importance varies across users.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9079",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9079",
+        "q": "A university raises parking fines. Parking violations fall, but students start parking in nearby neighborhoods. What is the best interpretation?",
+        "options": [
+          "The policy changed incentives and created an unintended margin of adjustment",
+          "The policy failed to create incentives because students still park",
+          "Opportunity cost disappeared because fines are legal penalties",
+          "The policy shifted the PPF outward"
+        ],
+        "aHash": "a7307cc6aa9bf1ae4772d4e231cdc513a97147ac3454fb6d13dfad550d9130f3",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentives_unintended_consequences",
+        "repairSkill": "incentives_unintended_consequences",
+        "commonError": "looks_only_at_intended_behavior_change",
+        "feedback": "People respond to incentives in intended and unintended ways."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9079",
+        "q": "A subscription service makes cancellation require a phone call but lets upgrades occur with one click. Cancellations fall and complaints rise. What is the strongest inference?",
+        "options": [
+          "The rule raises the time cost of cancellation and may retain users while worsening experience",
+          "Lower cancellation proves every retained user prefers the service",
+          "The inconvenience is not an incentive because it is nonmonetary",
+          "Complaints show the cancellation rule had no behavioral effect"
+        ],
+        "aHash": "bb6a443e141133fe0cd39a2e42d155e6227cdda567027a543731ff9f76e281b7",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "nonmonetary_incentive_response",
+        "repairSkill": "nonmonetary_incentive_response",
+        "commonError": "Ignoring inconvenience as a cost or treating retention as complete success.",
+        "feedback": "The asymmetric process changes the payoff to cancellation and can create both intended retention and dissatisfaction.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9085",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9085",
+        "q": "A company pays bonuses for speed. Output rises, but quality complaints increase. What does this show?",
+        "options": [
+          "Poorly designed incentives can distort behavior.",
+          "Incentives do not affect workers",
+          "Marginal analysis requires ignoring quality",
+          "The policy created a price ceiling"
+        ],
+        "aHash": "3aa83be3710e33509b3dd762eaf95302810bdf420a53e1b1972890c8c68f90c8",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentive_design_tradeoff",
+        "repairSkill": "incentives_unintended_consequences",
+        "commonError": "counts_only_intended_metric_improvement",
+        "feedback": "People respond to the measured incentive, which can improve one outcome while damaging another."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9085",
+        "q": "A software platform ranks creators by daily posting frequency. Posting rises, but creators split one useful guide into many thin updates. What does the response reveal?",
+        "options": [
+          "Creators optimized the visible metric while substituting away from unmeasured quality",
+          "The ranking failed to create an incentive because guide quality fell",
+          "More posts guarantee more useful information for every reader",
+          "A noncash ranking cannot alter creator behavior"
+        ],
+        "aHash": "6305eb4e393a185b8e3cd9483d7c86418377b3cb7c122857240b0f7c86af9d4f",
+        "type": "synthesis",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Treating improvement in a measured target as improvement in the underlying objective.",
+        "feedback": "The ranking rewards frequency, so creators can game that metric at the expense of quality.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "ECON-MG-EASYBOSS-2006",
+      "concept": "incentives",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASYBOSS-2006",
+        "q": "An instructor states: 'A reward changes the route.' What is an incentive?",
+        "options": [
+          "Something that induces people to act",
+          "A legal minimum price",
+          "A point outside the PPF",
+          "A tax paid only by sellers"
+        ],
+        "aHash": "bb55b4d71e176b13c93b34bf0f250ab44ea6f47094de153dc864d467dba70aa7",
+        "type": "definition",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "incentive_definition",
+        "repairSkill": "incentive_definition",
+        "commonError": "confuses_incentive_with_policy_result",
+        "feedback": "An incentive is a reward or punishment that affects behavior."
+      },
+      "after": {
+        "id": "ECON-MG-EASYBOSS-2006",
+        "q": "A café doubles loyalty points for visits before 9 a.m. Which response would economic reasoning most directly predict?",
+        "options": [
+          "Some customers become more likely to visit earlier",
+          "Every customer must switch to an early visit",
+          "The points matter only if converted directly to cash",
+          "Earlier visits prove customers approve of the café’s policy"
+        ],
+        "aHash": "ee9c473e006012dd94e650cd328eaf611e13de95871c46f1561a7f27fdf578ed",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "behavior_response_to_incentives",
+        "repairSkill": "behavior_response_to_incentives",
+        "commonError": "Treating an incentive as a guarantee or requiring it to be cash.",
+        "feedback": "Extra points raise the benefit of early visits, making that behavior more likely for some customers.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-INC-B2-001",
+      "concept": "incentives",
+      "pool": "boss",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-INC-B2-001",
+        "q": "A bonus tied only to sales volume causes excessive discounting. What happened?",
+        "options": [
+          "Workers ignored the bonus.",
+          "Workers optimized the rewarded metric rather than total profit.",
+          "The bonus eliminated tradeoffs.",
+          "Sales volume became a public good."
+        ],
+        "aHash": "8840b2855e5a40923707684bee7698c56f80f844823037d98dccb144d608d7e6",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "incentive_design_tradeoff",
+        "repairSkill": "incentive_design_tradeoff",
+        "commonError": "Evaluating incentives without examining margins, metrics, or heterogeneity.",
+        "feedback": "Good incentive analysis asks whose behavior changes, at what margin, and with what side effects."
+      },
+      "after": {
+        "id": "P52B-INC-B2-001",
+        "q": "A bonus tied only to sales volume causes excessive discounting. What happened?",
+        "options": [
+          "Workers ignored the bonus and changed discounting for unrelated market reasons",
+          "Workers optimized the rewarded metric rather than total profit",
+          "The bonus eliminated every tradeoff involved in making sales",
+          "Sales volume became a public good shared equally by all firms"
+        ],
+        "aHash": "6f9c2b8cd0d48aee70074f27756ce3a8af205f959e6e1141574669a779c3c7d2",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "incentive_design_tradeoff",
+        "repairSkill": "incentive_design_tradeoff",
+        "commonError": "Evaluating the rewarded metric without examining its effect on total profit.",
+        "feedback": "The bonus raises the payoff to volume even when discounts make some sales unprofitable.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-INC-R-001",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-INC-R-001",
+        "q": "An incentive is:",
+        "options": [
+          "A change in expected benefits or costs that can alter behavior.",
+          "Only a cash reward.",
+          "A guaranteed behavioral response.",
+          "A market equilibrium quantity."
+        ],
+        "aHash": "d01c1a609101fc3b0c8f2c6312deb859ddd99c020d4863c789c1a31a7953138e",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentive_definition",
+        "repairSkill": "incentive_definition",
+        "commonError": "Defining incentives too narrowly or as guaranteed outcomes.",
+        "feedback": "Incentives change payoffs, but actual responses can vary."
+      },
+      "after": {
+        "id": "P52B-INC-R-001",
+        "q": "Which statement best captures an economic incentive?",
+        "options": [
+          "A change in expected benefits or costs that can alter behavior",
+          "Only a direct cash payment that rewards the intended behavior",
+          "A rule that guarantees every person makes the same choice",
+          "The final outcome observed after a policy is introduced"
+        ],
+        "aHash": "22f823362586dd27098174c3e0c09c24555f31d79350f2837977d5f15e875d3b",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentive_definition",
+        "repairSkill": "incentive_definition",
+        "commonError": "Defining incentives as cash only, guaranteed behavior, or final outcomes.",
+        "feedback": "An incentive changes the payoff to a choice; it need not be monetary or guarantee a result.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-INC-R-002",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-INC-R-002",
+        "q": "An unintended consequence occurs when:",
+        "options": [
+          "The intended behavior increases.",
+          "People respond to a rule in a way that produces an unplanned result.",
+          "No one notices the rule.",
+          "A policy has a stated goal."
+        ],
+        "aHash": "be0ff1dd1bc42fd91cdb7926078d8d0982520b933c2f17563e8800dc45e6a337",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentives_unintended_consequences",
+        "repairSkill": "incentives_unintended_consequences",
+        "commonError": "Looking only at the policy’s stated objective.",
+        "feedback": "Behavioral responses can create side effects beyond the intended target."
+      },
+      "after": {
+        "id": "P52B-INC-R-002",
+        "q": "Which example is an unintended response to an incentive?",
+        "options": [
+          "A planned result that occurs exactly as policy designers expected",
+          "People respond to a rule in a way that produces an unplanned result",
+          "Evidence that the original rule created no behavioral pressure at all",
+          "A response that every person makes in exactly the same way"
+        ],
+        "aHash": "207eb86bfb4446c3d370a28f9959325aa3ca622a04b2c3e01e45c9e4fb0b11a5",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentives_unintended_consequences",
+        "repairSkill": "incentives_unintended_consequences",
+        "commonError": "Treating an unplanned response as proof that no incentive existed.",
+        "feedback": "People can respond to the changed payoff while producing a side effect the designer did not intend.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-INC-BR-001",
+      "concept": "incentives",
+      "pool": "bridge",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-INC-BR-001",
+        "q": "A professor awards points for discussion posts, and students submit many shallow posts. This illustrates:",
+        "options": [
+          "The elimination of opportunity cost.",
+          "A pure public good.",
+          "People responding to the measured incentive rather than the broader learning goal.",
+          "A comparative advantage in writing."
+        ],
+        "aHash": "ad2bc0837f9647e1cf7a3749287094351b8a128601987b05c57fb4d97e1ef9e4",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentive_design_tradeoff",
+        "repairSkill": "incentive_design_tradeoff",
+        "commonError": "Failing to transfer incentive-design problems to education.",
+        "feedback": "When the metric is incomplete, people may optimize the metric instead of the true objective."
+      },
+      "after": {
+        "id": "P52B-INC-BR-001",
+        "q": "A professor adds one point for each discussion post. How does marginal analysis connect to the incentive students face?",
+        "options": [
+          "The extra point raises the marginal benefit of one more post",
+          "The total course grade becomes the cost of every post",
+          "Scarcity disappears once points are available",
+          "The added point guarantees that every post improves learning"
+        ],
+        "aHash": "c0e73b8faba8a3caa270ebc3ccbe964aded01e34a7540bf82fa8dedccc2aedd8",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "marginal_analysis_to_incentives",
+        "repairSkill": "marginal_analysis_to_incentives",
+        "commonError": "Missing that an incentive changes the next action’s marginal payoff.",
+        "feedback": "The added point changes the marginal benefit of submitting another post; quality is a separate outcome.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-E-005",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-E-005",
+        "q": "A library begins charging a late fee. What response becomes more likely?",
+        "options": [
+          "More borrowers return books on time",
+          "Every borrower returns every book early",
+          "Borrowers view late returns as more rewarding",
+          "The fee guarantees that no book is ever late"
+        ],
+        "aHash": "ec49d652400549a6627e7e1c04771f8ca0fc7d692839f3a50819831ee1492f7f",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "behavior_response_to_incentives",
+        "repairSkill": "behavior_response_to_incentives",
+        "commonError": "Turning a likely directional response into guaranteed compliance.",
+        "feedback": "The fee raises the cost of delay, so timely return becomes more likely.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-E-006",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-E-006",
+        "q": "A school offers preferred event seating to students with strong attendance. What kind of payoff changed?",
+        "options": [
+          "A nonmonetary benefit of attending school",
+          "The cash wage paid for attending school",
+          "The legal penalty for missing school",
+          "The final attendance outcome itself"
+        ],
+        "aHash": "a9459383a7aa74847f9415fa164c86301ea424fdcf9dff78c59afea4e56a1832",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "nonmonetary_incentive_response",
+        "repairSkill": "nonmonetary_incentive_response",
+        "commonError": "Assuming only direct cash changes can be incentives.",
+        "feedback": "Preferred seating is a noncash benefit that can make attendance more attractive.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-E-007",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-E-007",
+        "q": "A city adds a refundable deposit to beverage bottles. Which choice identifies the incentive?",
+        "options": [
+          "Recovering the deposit by returning the bottle",
+          "The number of bottles ultimately recycled",
+          "Public support for cleaner streets",
+          "A guarantee that every bottle is returned"
+        ],
+        "aHash": "a4cd68c6e3676ce4d840386de7c07dbd01b670d550c15b653ab1d644900f81c5",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "incentive_identification",
+        "repairSkill": "incentive_identification",
+        "commonError": "Confusing the incentive with the eventual recycling outcome.",
+        "feedback": "The refund changes the benefit of returning a bottle; recycling is a possible result.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-E-008",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-E-008",
+        "q": "A sales representative earns a commission on each completed sale. What does the commission directly do?",
+        "options": [
+          "Raises the benefit of completing another sale",
+          "Guarantees that every customer will buy",
+          "Makes product quality irrelevant to buyers",
+          "Removes the representative’s opportunity costs"
+        ],
+        "aHash": "18f32d93c5f3d4cb104e001407eff9c7bfa29de36633e3a39ee452a89b219810",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "positive_incentive_response",
+        "repairSkill": "positive_incentive_response",
+        "commonError": "Treating a stronger payoff as certain success.",
+        "feedback": "A commission increases the expected benefit of another sale without guaranteeing it.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-E-009",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-E-009",
+        "q": "An insurer raises the copay for an optional clinic visit. Holding other factors fixed, patients are most likely to:",
+        "options": [
+          "Become less likely to schedule the visit",
+          "Schedule every optional visit immediately",
+          "Ignore the copay because costs are not incentives",
+          "Treat the copay as a reward for using care"
+        ],
+        "aHash": "611b9292d92e2d36b33fac186d9c2fa133094f6c66747ae258622792a0bc12b3",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "negative_incentive_response",
+        "repairSkill": "negative_incentive_response",
+        "commonError": "Reversing the response to a higher out-of-pocket cost.",
+        "feedback": "The higher copay raises the cost of the visit, tending to reduce its use.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-E-010",
+      "concept": "incentives",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-E-010",
+        "q": "A shop offers free shipping only on orders above $50. Which behavior does the threshold encourage?",
+        "options": [
+          "Adding items to bring some orders above $50",
+          "Reducing every order below $50",
+          "Buying exactly the same basket in every case",
+          "Avoiding online shopping regardless of preferences"
+        ],
+        "aHash": "6703078d4d36a46994e3b3ae28d674ac1a4439d8d6f7eebbeb53fe7c3fc8b218",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "threshold_incentive_response",
+        "repairSkill": "threshold_incentive_response",
+        "commonError": "Ignoring the behavioral pressure created near a threshold.",
+        "feedback": "Customers near $50 gain free shipping by adding items, so basket size may rise.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-M-005",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-M-005",
+        "q": "A warehouse pays a bonus for packages shipped per hour but charges workers for verified damage. What response is most plausible?",
+        "options": [
+          "Workers balance speed against the expected cost of damage",
+          "Workers maximize speed because only rewards affect behavior",
+          "Damage must fall to zero for the incentives to exist",
+          "Every worker chooses the same speed regardless of risk"
+        ],
+        "aHash": "ac04d06a6b4f674297baeea60d8f7ad72f0a047d4830bf3f38cb2d111ed9b005",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "competing_incentives",
+        "repairSkill": "competing_incentives",
+        "commonError": "Considering one incentive while ignoring a simultaneous opposing incentive.",
+        "feedback": "The speed bonus and damage consequence change different parts of the worker’s payoff.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-M-006",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-M-006",
+        "q": "A parking fine doubles, but patrols become rare. Why might violations change little?",
+        "options": [
+          "The expected penalty may remain small because enforcement is unlikely",
+          "A larger statutory fine can never affect behavior when drivers know it exists",
+          "Drivers respond only to rewards, not penalties",
+          "Low enforcement guarantees more violations by every driver"
+        ],
+        "aHash": "96ab250ce7f5546e22710323cbcb8810ffa9cdf080cc040067113c270de57fb6",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Looking only at the posted penalty and ignoring enforcement probability.",
+        "feedback": "Behavior responds to the expected consequence, which depends on both size and enforcement.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-M-007",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-M-007",
+        "q": "Two employees receive the same attendance bonus. One changes her schedule; the other has caregiving duties and cannot. What does this show?",
+        "options": [
+          "The same incentive can produce different responses under different constraints",
+          "The bonus was not an incentive for either employee because their outcomes differed",
+          "A valid incentive must change everyone’s behavior",
+          "Constraints matter only when incentives are nonmonetary"
+        ],
+        "aHash": "0dfd54d34118c96a596f39567b50c0dd3e4770ed35b3b886bd8b7f55fbd24453",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Assuming identical payoffs generate identical responses.",
+        "feedback": "The bonus changes payoffs, but constraints and alternatives shape each response.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-M-008",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-M-008",
+        "q": "A delivery app rewards acceptance rate. Some drivers accept poor-fit jobs and cancel later. Which design issue appears?",
+        "options": [
+          "The measured target encourages substitution into a different undesirable action",
+          "The reward cannot be an incentive because cancellations rose after accepted jobs",
+          "Acceptance rate measures service quality perfectly",
+          "The response proves drivers ignored the metric"
+        ],
+        "aHash": "60aba986fa402ec128f8ad5aae8795d7590b281054c847730b7a858934d02d20",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Evaluating only the rewarded metric and missing substitution.",
+        "feedback": "Drivers improve acceptance statistics while shifting the problem into later cancellations.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-M-009",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-M-009",
+        "q": "A company offers either a $40 bonus or public recognition for completing training. Some workers value one more than the other. What follows?",
+        "options": [
+          "Monetary and nonmonetary incentives can differ in strength across people",
+          "Only the cash option can change expected benefits",
+          "Recognition guarantees completion among all workers",
+          "Different preferences mean neither option is an incentive"
+        ],
+        "aHash": "f2602dc62f2620769ba4a2903004fa7fa46ba19168b664e94ad62e4ac476fc2d",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "incentive_types",
+        "repairSkill": "incentive_types",
+        "commonError": "Assuming all people rank monetary and nonmonetary incentives identically.",
+        "feedback": "Both rewards can alter benefits, but their value depends on the decision-maker.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-M-010",
+      "concept": "incentives",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-M-010",
+        "q": "A gym charges a missed-appointment fee but waives it when members cancel a day ahead. Which margin does the rule most directly target?",
+        "options": [
+          "Whether members cancel early instead of simply not appearing",
+          "Whether every member continues the gym membership",
+          "Whether exercise produces health benefits",
+          "Whether members morally approve of cancellation rules"
+        ],
+        "aHash": "c656824c6874ef9224877f520b6fcdec58c79989e24577e9070a2c4baa7ed526",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "behavioral_margin_identification",
+        "repairSkill": "behavioral_margin_identification",
+        "commonError": "Confusing the targeted choice margin with broader outcomes or approval.",
+        "feedback": "The avoidable fee makes advance cancellation more attractive relative to a no-show.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-H-005",
+      "concept": "incentives",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-H-005",
+        "q": "A hospital is paid for each procedure but penalized for readmissions. Which response best reflects both incentives?",
+        "options": [
+          "It may increase profitable procedures while investing in follow-up that lowers readmissions",
+          "It must reduce every procedure because penalties dominate rewards",
+          "It will ignore follow-up entirely because only direct procedure payments can ever affect hospital behavior",
+          "The payment design guarantees the socially optimal treatment mix"
+        ],
+        "aHash": "d87ebfcca9a062c227693a3fa3d6de9e7c3766d704315b437c37e1d563d25730",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "multiple_behavioral_margins",
+        "repairSkill": "multiple_behavioral_margins",
+        "commonError": "Reasoning from only one component of a multi-part payment system.",
+        "feedback": "Procedure payments and readmission penalties act on different behavioral margins.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-H-006",
+      "concept": "incentives",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-H-006",
+        "q": "A school rewards high test pass rates. Administrators shift tutoring toward students just below the cutoff and away from students far behind. What is the strongest interpretation?",
+        "options": [
+          "A threshold metric changes where effort has the highest measured payoff",
+          "The reward guarantees equal gains for every student",
+          "Tutoring shifts prove the pass-rate reward was not an incentive",
+          "The stated goal determines behavior more than the measured target"
+        ],
+        "aHash": "c70eabdd348fbbb5143ea8433923da3daa829b893c624e9339bd1dac968ea3d9",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "threshold_incentive_response",
+        "repairSkill": "threshold_incentive_response",
+        "commonError": "Ignoring how a cutoff redirects effort across people.",
+        "feedback": "Effort near the pass threshold produces the largest measured return, even if broader learning is the goal.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-H-007",
+      "concept": "incentives",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-H-007",
+        "q": "An environmental fee applies only when emissions exceed a monthly cap. A factory shifts production between months to remain below the cap without lowering annual emissions. What happened?",
+        "options": [
+          "The threshold changed timing rather than the underlying annual outcome",
+          "The fee created no incentive because annual emissions stayed constant",
+          "Any legal response must satisfy the policy’s broader objective",
+          "A fee cannot affect production timing"
+        ],
+        "aHash": "ae0f319190084d3d2023bcd755a1edb00a8554032df3ecdbf6680f3d98d5f14b",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "incentives_unintended_consequences",
+        "repairSkill": "incentives_unintended_consequences",
+        "commonError": "Equating compliance with the measured threshold to achievement of the ultimate goal.",
+        "feedback": "The incentive altered the monitored margin while leaving annual emissions unchanged.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-H-008",
+      "concept": "incentives",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-H-008",
+        "q": "A procurement office rewards the lowest bid and later faces frequent change orders. Which redesign most directly addresses the incentive problem?",
+        "options": [
+          "Evaluate expected total cost and performance, not the opening bid alone",
+          "Raise the reward for submitting any low opening bid regardless of later change orders",
+          "Ignore change orders because the initial metric improved",
+          "Require every bidder to choose the same production method"
+        ],
+        "aHash": "3c1077e56d6818980f584bdfaae3afe406bfd89afef3dc30441b7fe40079b403",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "incentive_design_tradeoff",
+        "repairSkill": "incentive_design_tradeoff",
+        "commonError": "Rewarding a proxy that omits costly dimensions of the true objective.",
+        "feedback": "A broader metric reduces the payoff to lowballing the initial bid and recovering revenue later.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-H-009",
+      "concept": "incentives",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-H-009",
+        "q": "A deductible rises from $100 to $1,000. Which prediction is best without knowing patient income, health risk, or alternatives?",
+        "options": [
+          "Use of covered services tends to fall, but response size can vary widely",
+          "Every patient reduces covered care by exactly the same percentage after the deductible change",
+          "No response is possible because insurance already exists",
+          "The higher deductible guarantees better health decisions"
+        ],
+        "aHash": "8064ab0a830986e240e415114ca602e79d98d8c264865e088e7a06cc0ab8f649",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Inferring an identical or guaranteed response from a common price change.",
+        "feedback": "The higher out-of-pocket cost creates directional pressure, while circumstances shape magnitude.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-H-010",
+      "concept": "incentives",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-H-010",
+        "q": "A police department rewards citation counts. Citations rise, public trust falls, and serious-case work receives less time. Which conclusion is warranted?",
+        "options": [
+          "The metric changed behavior but did not capture the department’s full objective",
+          "Falling trust proves the citation reward cannot influence officer behavior or case priorities in any meaningful way",
+          "More citations establish that public safety necessarily improved",
+          "Economic analysis requires moral approval of the reward"
+        ],
+        "aHash": "f560ff70ba10e2cd0a8ea408a4e84aee86b19dc1a73281b401571dbe4379362e",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Treating a rewarded count as identical to the underlying public objective.",
+        "feedback": "The reward affects behavior, but the observed metric omits trust and case importance.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-EL-003",
+      "concept": "incentives",
+      "pool": "elite",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-EL-003",
+        "q": "A nonprofit grant rewards clients placed in jobs for 30 days. Providers avoid applicants needing intensive support and favor easy placements. Which redesign best preserves effort while limiting selection?",
+        "options": [
+          "Reward sustained outcomes while adjusting targets for client difficulty",
+          "Pay only for the raw number of 30-day placements",
+          "Remove all performance information from funding decisions",
+          "Assume selection disappears when providers share the mission"
+        ],
+        "aHash": "96367598f035bf902c72241ce6a05c378b8503a0389b64a9f836d64c629e2919",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "incentive_design_under_imperfect_measurement",
+        "repairSkill": "incentive_design_under_imperfect_measurement",
+        "commonError": "Using an unadjusted proxy that rewards selection instead of underlying impact.",
+        "feedback": "Longer outcomes and risk adjustment better align the measured target with the mission.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-EL-004",
+      "concept": "incentives",
+      "pool": "elite",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-EL-004",
+        "q": "An energy plan combines a peak-hour surcharge, a monthly conservation badge, and a rebate for smart thermostats. Which analysis is strongest?",
+        "options": [
+          "Households weigh multiple monetary and nonmonetary incentives differently across usage margins",
+          "The three incentives must produce the same response in every household",
+          "Only the surcharge matters because costs always dominate benefits",
+          "Any decline in peak use proves total energy use also fell"
+        ],
+        "aHash": "e58f36907b34a930ece8b847a7f83d90648898213a3cc419c7f8205802ddcc07",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "multiple_behavioral_margins",
+        "repairSkill": "multiple_behavioral_margins",
+        "commonError": "Collapsing several incentives and response margins into one guaranteed outcome.",
+        "feedback": "Each feature changes a different payoff, and household constraints determine the resulting mix.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-007",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-007",
+        "q": "A teacher bonus depends on class-average scores. Teachers provide extra review but also discourage low-performing students from testing. What should an evaluator conclude?",
+        "options": [
+          "The metric induced both instructional effort and selection behavior",
+          "The bonus failed because one unintended response occurred",
+          "Higher average scores prove learning rose for every student",
+          "Selection cannot be an incentive response because it is against policy"
+        ],
+        "aHash": "5b22f0fec33c340a89c7f0d6f93ce9c2c159af67a58d527c055602d95bb2aa41",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Looking only at the intended response or only at the side effect.",
+        "feedback": "The same reward can improve preparation and create pressure to alter who is measured.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-008",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-008",
+        "q": "A university receives funding for degrees completed on time. Advising improves, but difficult required courses are weakened. What is the strongest interpretation?",
+        "options": [
+          "The completion target changes several margins, including quality that the metric omits",
+          "Weaker courses prove funding cannot influence completion decisions under any circumstances",
+          "On-time completion is identical to educational quality",
+          "The policy outcome is guaranteed because funding increased"
+        ],
+        "aHash": "7f8b2605c0a7d8370b0e7b3fcf2e11c19e0f361b5108016678a9f92d6299eec1",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentive_design_tradeoff",
+        "repairSkill": "incentive_design_tradeoff",
+        "commonError": "Equating the observable target with the complete educational objective.",
+        "feedback": "Programs can improve advising and relax standards because both raise the rewarded metric.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-009",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-009",
+        "q": "A congestion charge is announced, but drivers believe cameras identify only 5% of violators. Which factor most limits deterrence?",
+        "options": [
+          "The low perceived probability of paying the charge",
+          "The charge is negative rather than positive",
+          "Driving has benefits as well as costs",
+          "A legal charge cannot change expected costs"
+        ],
+        "aHash": "99d174c3468532d5336daa3d1850916aaf04ff31added70d2358c65997e83cf8",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Ignoring perceived enforcement when evaluating an incentive’s strength.",
+        "feedback": "The expected cost depends on both the charge and the chance it is imposed.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-010",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-010",
+        "q": "A health insurer waives copays for preventive visits but raises emergency-room copays. Which response is most defensible?",
+        "options": [
+          "Some care may shift toward prevention, with response varying by access and health needs",
+          "Every emergency visit disappears because its price rose",
+          "All patients respond identically because they face the same schedule",
+          "Waiving a copay is not an incentive because patients receive no direct cash payment for attending preventive visits"
+        ],
+        "aHash": "37a0f2969bc5a4ef0468687eba916d357030638d707eeacf8fb0ea141014f790",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "competing_incentives",
+        "repairSkill": "competing_incentives",
+        "commonError": "Predicting certain, uniform substitution from a common payment schedule.",
+        "feedback": "Relative costs change, but constraints and medical need shape actual substitution.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-011",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-011",
+        "q": "A city pays restaurants for each kilogram of food donated. Donations rise, but some restaurants overproduce near closing time. What does this show?",
+        "options": [
+          "A reward can increase the target and also encourage wasteful production",
+          "Overproduction proves donations were never incentivized",
+          "The payment guarantees total food waste will decline throughout the entire city",
+          "Only penalties can create unintended responses"
+        ],
+        "aHash": "90ab509c899a61636478299345f0de415a9a5acefa849cc540feac252e83f996",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentives_unintended_consequences",
+        "repairSkill": "incentives_unintended_consequences",
+        "commonError": "Assuming intended and unintended responses cannot occur together.",
+        "feedback": "The donation payment raises one benefit while also changing production incentives.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-012",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-012",
+        "q": "A housing program withdraws $1 of aid for each $1 of additional earnings over a threshold. Which behavioral pressure follows?",
+        "options": [
+          "Earning just above the threshold may provide little immediate net gain",
+          "Every recipient stops working completely",
+          "The rule rewards every additional dollar of earnings with an equal dollar of net income",
+          "Aid withdrawal is an outcome rather than an incentive"
+        ],
+        "aHash": "7ca9f121f54439fca835b1f5d74ce83738737e738b99e9f5d97f31ba4d549249",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "threshold_incentive_response",
+        "repairSkill": "threshold_incentive_response",
+        "commonError": "Ignoring how benefit withdrawal changes the payoff to extra earnings.",
+        "feedback": "The phaseout can sharply reduce the net benefit of crossing the earnings threshold.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-013",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-013",
+        "q": "A credit card offers triple points for travel. One customer travels more; another keeps the same trips and switches cards. What is the lesson?",
+        "options": [
+          "The same reward can change different margins for different consumers",
+          "Only the customer who travels more responded to the incentive",
+          "A reward is ineffective unless total travel rises for everyone",
+          "Card switching cannot be an incentive response"
+        ],
+        "aHash": "bafc31fe808bd279259e004c919c46bbf5591d916de45d2f08daccc1f4272236",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Recognizing only one possible behavioral margin.",
+        "feedback": "The reward can affect travel quantity, payment choice, or neither, depending on alternatives.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-014",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-014",
+        "q": "A factory posts team safety rankings without cash prizes. Reporting rises, but some teams relabel minor incidents as near misses. Which conclusion is best?",
+        "options": [
+          "A nonmonetary status incentive improved reporting while creating classification gaming",
+          "No incentive exists because public rankings do not directly change any worker’s cash wages",
+          "Relabeling proves rankings cannot affect behavior",
+          "Higher reported safety guarantees fewer actual injuries"
+        ],
+        "aHash": "fcf9165d7838105b5128d8c1284deecdb7e5495249a0aa0912fd384acdafa94f",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "nonmonetary_incentive_response",
+        "repairSkill": "nonmonetary_incentive_response",
+        "commonError": "Ignoring status incentives or unmeasured changes in classification.",
+        "feedback": "Recognition changes social payoffs, and teams may also optimize how incidents are recorded.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-015",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-015",
+        "q": "A charity matches the first $100 of each donation. A donor planning to give $300 still gives $300. How should the match be evaluated for that donor?",
+        "options": [
+          "It transfers funds but does not change this donor’s marginal giving decision",
+          "It necessarily causes an additional $100 donation",
+          "The donor did not face an incentive because the entire planned gift amount was chosen before the match",
+          "The match reduces the benefit of donating"
+        ],
+        "aHash": "cc837d1806b5e072945c3d2f5b6d2c0f8512aaadf2c0b448846e523cdfec692f",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "marginal_incentive_effect",
+        "repairSkill": "marginal_incentive_effect",
+        "commonError": "Counting all subsidized activity as behavior caused by the incentive.",
+        "feedback": "The match applies to the gift, but this donor’s amount is unchanged relative to the alternative.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-016",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-016",
+        "q": "A platform threatens suspension for false listings, but enforcement reviews only complaints from paying users. What response is most plausible?",
+        "options": [
+          "Sellers may target deception toward users least likely to trigger review",
+          "Suspension guarantees that all listings become accurate",
+          "Uneven enforcement cannot alter where misconduct occurs",
+          "The rule is not an incentive until a seller is actually suspended after a reviewed complaint"
+        ],
+        "aHash": "45328005010e634fb6b86b12ef48fcb3b88fd3837b5983706a5bdf2a097b70d2",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Ignoring how selective enforcement redirects behavior.",
+        "feedback": "The expected cost varies with the chance a listing is reviewed, creating a substitution margin.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-017",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-017",
+        "q": "A government contract pays builders for finishing early and penalizes visible defects, but not hidden maintenance problems. What risk remains?",
+        "options": [
+          "Effort may shift toward speed and visible quality while hidden durability suffers",
+          "Every dimension of quality improves because defects are penalized",
+          "The early-finish reward and defect penalty cancel exactly",
+          "Hidden durability cannot respond to incentives because inspectors cannot observe it during the initial contract review"
+        ],
+        "aHash": "3690285625e6abbbd8527222f71288f9e002dfb28425fa20daeff591957f52b8",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentive_design_under_imperfect_measurement",
+        "repairSkill": "incentive_design_under_imperfect_measurement",
+        "commonError": "Assuming measured dimensions represent total performance.",
+        "feedback": "Unmeasured durability can be sacrificed while rewarded and monitored dimensions improve.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-018",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-018",
+        "q": "A farm subsidy pays per acre planted with one crop. Farmers expand acreage onto less suitable land. Which part is the incentive and which is the response?",
+        "options": [
+          "Per-acre payment is the incentive; expansion onto marginal land is a response",
+          "Expanded acreage is the incentive; payment is the outcome",
+          "Crop suitability is the incentive; planting is moral approval",
+          "The subsidy is neither because planting was already possible"
+        ],
+        "aHash": "feef3680744ab62f5633a52bc5526c5f7c8d265fa88f50d9650228865ac54155",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentive_vs_outcome",
+        "repairSkill": "incentive_vs_outcome",
+        "commonError": "Interchanging a payoff change with the behavior it induces.",
+        "feedback": "The payment changes the benefit of each planted acre; land expansion is a resulting choice.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-019",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-019",
+        "q": "An employer replaces a late-arrival reprimand with a small fee deducted from pay. Some workers become more punctual; others treat lateness as a purchasable option. What does this show?",
+        "options": [
+          "Changing the form of a consequence can change its social meaning and produce mixed responses",
+          "A fee cannot deter behavior because it is monetary",
+          "Mixed responses prove neither consequence was an incentive",
+          "Every worker must interpret the fee as moral approval"
+        ],
+        "aHash": "9f5c9fcb749ba2d24315ea142b987771ea2eb4f594a1f4b76b673ad30f168d81",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "monetary_nonmonetary_interaction",
+        "repairSkill": "monetary_nonmonetary_interaction",
+        "commonError": "Assuming monetary and social consequences are interchangeable for everyone.",
+        "feedback": "The fee changes monetary cost while possibly weakening a nonmonetary norm.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-020",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-020",
+        "q": "A transit agency offers off-peak discounts. Flexible riders shift trips, while shift workers cannot. Which evaluation is strongest?",
+        "options": [
+          "The price incentive changes trip timing mainly for riders with feasible alternatives",
+          "The discount is not an incentive because some riders cannot respond",
+          "All riders receive identical benefits from changing travel time",
+          "The policy guarantees total ridership will rise"
+        ],
+        "aHash": "3e7e78b9a535dce915789f70fd4fe4b9db8fa93d0275e15e32745ff5e08e5e66",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Treating inability to respond as evidence that no incentive exists.",
+        "feedback": "The discount changes relative prices, but schedule constraints determine who can act on it.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-021",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-021",
+        "q": "A streaming service removes a cancellation fee but adds a loyalty reward after twelve months. Which margin is most directly affected?",
+        "options": [
+          "The relative payoff to staying through the twelfth month",
+          "The quality of every program on the service",
+          "The certainty that all subscribers remain",
+          "Subscribers’ moral judgment of loyalty programs"
+        ],
+        "aHash": "2255a626e6bb144379528002763ebe72513a4cc2e23faaae1a45383febb0ee22",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "behavioral_margin_identification",
+        "repairSkill": "behavioral_margin_identification",
+        "commonError": "Confusing the targeted retention choice with broad outcomes or approval.",
+        "feedback": "The reward changes the benefit of remaining until a specific time threshold.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-022",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-022",
+        "q": "A warranty pays repair shops a flat amount per claim. Shops begin avoiding complex claims and completing simple ones quickly. What caused the pattern?",
+        "options": [
+          "A uniform payment changes the payoff differently for low-cost and high-cost claims",
+          "The flat payment guarantees equal service across claims",
+          "Avoiding difficult cases proves payments cannot affect selection",
+          "Claim complexity is irrelevant whenever prices are fixed"
+        ],
+        "aHash": "5913259db63054be9a91595130d4b0477d7e0cf9ddf1723c9ffbe92c8e5bd8fa",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "selection_incentives",
+        "repairSkill": "selection_incentives",
+        "commonError": "Ignoring how a common payment creates heterogeneous margins across cases.",
+        "feedback": "Simple claims become more profitable relative to complex ones, encouraging selection.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-023",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-023",
+        "q": "A sports contract pays a large bonus for games played. An injured athlete returns early and performs poorly. What is the careful conclusion?",
+        "options": [
+          "The bonus increased pressure to play but did not guarantee a beneficial outcome",
+          "The poor performance proves the bonus was not an incentive",
+          "Bonuses influence effort but never participation decisions",
+          "Playing establishes that the athlete approved of the contract design"
+        ],
+        "aHash": "49e894b7c9267e6a51c817141aa824ccc4bbd29587464b4743ee345a11c3f0fd",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentive_probability_not_certainty",
+        "repairSkill": "incentive_probability_not_certainty",
+        "commonError": "Equating a behavioral response with a desirable or certain result.",
+        "feedback": "The bonus changed the payoff to participation, while health and performance remained uncertain.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-024",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-024",
+        "q": "A nonprofit grant rewards the number of people enrolled, not services completed. Enrollment rises and completion falls. Which measure is being optimized?",
+        "options": [
+          "The funded enrollment count rather than the broader service objective",
+          "Completion because it is the organization’s stated mission",
+          "Both measures equally because they concern the same clients",
+          "Neither measure because nonprofits do not respond to funding"
+        ],
+        "aHash": "7cc783c8493e572aa90101170e3c4788ff79435a1a3ef7943cd56d4623b45d5c",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Assuming mission statements dominate the payoff attached to a measured target.",
+        "feedback": "The grant rewards entry into the program, so effort shifts toward enrollment rather than completion.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-025",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-025",
+        "q": "A delivery platform guarantees a minimum hourly payment only while drivers are actively carrying orders. Which response is plausible?",
+        "options": [
+          "Drivers may favor longer trips or avoid unpaid waiting when choosing orders",
+          "Every driver accepts the shortest available trip",
+          "The guarantee removes all opportunity costs of time",
+          "Payment rules cannot change which orders drivers select"
+        ],
+        "aHash": "9429f5f6a669d7c85b7ebbe5db21ce29aaf35a067c3ee0634773a60ae15261f1",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_incentives",
+        "repairSkill": "opportunity_cost_incentives",
+        "commonError": "Ignoring how compensation changes the opportunity cost of time and order selection.",
+        "feedback": "The rule changes which activities count as paid time, altering the relative payoff to orders.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-026",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-026",
+        "q": "A city raises water prices after a monthly allowance and also publishes neighborhood conservation rankings. What response should be expected?",
+        "options": [
+          "Price and status pressures may reduce use by different amounts across households",
+          "The ranking is irrelevant because only prices are incentives",
+          "Every household cuts water use by the same quantity",
+          "Lower use is guaranteed wherever both incentives exist"
+        ],
+        "aHash": "2ceab91bfd77891a61f87c03f63aad1ef75c394fa5dc495f7fa9ef44bd7a8fd1",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "multiple_behavioral_margins",
+        "repairSkill": "multiple_behavioral_margins",
+        "commonError": "Assuming one incentive type matters or that responses are uniform.",
+        "feedback": "Both monetary cost and social comparison can affect use, with varied strength.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-L-027",
+      "concept": "incentives",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-L-027",
+        "q": "A criminal fine is tripled while the probability of detection falls by two-thirds. Without more information, what can be concluded?",
+        "options": [
+          "The expected penalty may be similar, though perceptions and risk attitudes can still change response",
+          "Deterrence must triple because the posted fine tripled",
+          "Deterrence must disappear because detection fell",
+          "No incentive exists until someone is actually fined"
+        ],
+        "aHash": "8b15670dc41a0f53975cba97b10cd83c873eba93ef01941b4ea3d7dcf8cf0f80",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Using only penalty size or only detection probability.",
+        "feedback": "Expected consequences combine severity and enforcement, while perceived risk also matters.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-EB-004",
+      "concept": "incentives",
+      "pool": "easyBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-EB-004",
+        "q": "A store offers a one-day discount on umbrellas before a storm. What response is most directly predicted?",
+        "options": [
+          "Some customers become more likely to buy that day",
+          "Every shopper buys an umbrella",
+          "The discount guarantees the store earns more profit",
+          "Customers must morally approve of discounts"
+        ],
+        "aHash": "bd3eadbd5fe1c1631fccaa63cd955e3e8fffa92819da976e1f1e866200401a55",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "behavior_response_to_incentives",
+        "repairSkill": "behavior_response_to_incentives",
+        "commonError": "Treating a lower price as a guaranteed purchase or profit outcome.",
+        "feedback": "The discount raises the relative benefit of buying now for some customers.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-MB-004",
+      "concept": "incentives",
+      "pool": "mediumBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-MB-004",
+        "q": "A call center rewards short calls and separately penalizes repeat complaints. How should agents respond?",
+        "options": [
+          "Balance speed against the risk that poor service triggers repeat complaints",
+          "Make every call as short as possible because rewards dominate penalties",
+          "Ignore both rules unless all agents respond identically",
+          "Guarantee perfect service because two incentives are present"
+        ],
+        "aHash": "0a5a68d00cce554f743b2f23149a0fb71c934c1478176bd1b10c34742d39b141",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "competing_incentives",
+        "repairSkill": "competing_incentives",
+        "commonError": "Ignoring one side of a multi-part incentive system.",
+        "feedback": "Agents face a reward for speed and an expected cost for unresolved problems.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-FB-001",
+      "concept": "incentives",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-FB-001",
+        "q": "A hospital bonus rewards low average treatment cost. Managers discharge patients earlier, but readmissions rise. Which redesign best aligns the incentive with patient outcomes?",
+        "options": [
+          "Include readmissions and health outcomes alongside treatment cost",
+          "Increase the reward for low initial cost alone",
+          "Judge success only by the number of discharges",
+          "Remove monitoring because outcomes vary across patients"
+        ],
+        "aHash": "91a5d40c3ba3c5d2e9a121bd85fb42609c37167d7c660e85233681f54275eec5",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "incentive_design_under_imperfect_measurement",
+        "repairSkill": "incentive_design_under_imperfect_measurement",
+        "commonError": "Rewarding a narrow cost metric that omits downstream outcomes.",
+        "feedback": "A broader measure reduces the payoff to cost cutting that shifts expense or harm into readmissions.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-FB-002",
+      "concept": "incentives",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-FB-002",
+        "q": "A speeding fine rises from $100 to $500, but camera uptime falls from 80% to 10%. What is the best evaluation?",
+        "options": [
+          "Deterrence depends on the combined expected and perceived consequence, not the fine alone",
+          "The fivefold fine guarantees five times as much compliance",
+          "Lower camera uptime makes the fine a positive incentive",
+          "The policy has no incentive effect until every driver is caught and required to pay the posted fine"
+        ],
+        "aHash": "ad959322ee3d77eafda4cceef803a20a03a5108f7d4b2fb863245d035da73f3d",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Evaluating severity without enforcement probability.",
+        "feedback": "A larger fine can be offset by a much lower chance of detection.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-FB-003",
+      "concept": "incentives",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-FB-003",
+        "q": "A university funds departments for graduates employed within 30 days. Programs steer students toward quick-placement jobs and away from longer searches for better matches. What is the central design problem?",
+        "options": [
+          "The measured deadline rewards placement speed rather than match quality",
+          "Employment funding cannot influence advising behavior",
+          "Quick placement guarantees the best long-run outcome",
+          "The stated career goal prevents any unintended response"
+        ],
+        "aHash": "bbde3f6e50314b49a54a09530f031265ffadbd010fe593e90380ba1778cf8985",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Confusing the measured proxy with the underlying goal.",
+        "feedback": "Departments gain from hitting the short deadline even if longer searches would improve matches.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-FB-004",
+      "concept": "incentives",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-FB-004",
+        "q": "A conservation policy combines a usage fee, public recognition, and exemptions for medical needs. Which assessment is most defensible?",
+        "options": [
+          "Different households face different effective incentives, so response and burden will vary",
+          "The usage fee guarantees identical reductions for all households",
+          "Recognition is irrelevant because it is not money",
+          "Exemptions prove the policy has no behavioral effect"
+        ],
+        "aHash": "455bd686b1ca02c70b35604a1725a4a831e36ca05e597797cc9422a5a7e75fca",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Ignoring multiple incentive types, constraints, and exemptions.",
+        "feedback": "Prices, status, and exemptions change payoffs differently across households.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-LB-004",
+      "concept": "incentives",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-LB-004",
+        "q": "A news site pays writers for clicks. Headlines become sensational, traffic rises, and subscriber retention falls. What is the strongest diagnosis?",
+        "options": [
+          "The click metric rewards attention while omitting long-run reader trust",
+          "More clicks prove the compensation system improved total value",
+          "Retention loss means writers did not respond to incentives",
+          "A payment cannot affect headline choices unless it also changes the required length of every article"
+        ],
+        "aHash": "f053a855473b3da6f463354f68cb17046d5a6c6cbbbfe72d82ec12313da5c998",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "metric_gaming",
+        "repairSkill": "metric_gaming",
+        "commonError": "Treating a short-run proxy as the complete objective.",
+        "feedback": "Writers optimize the rewarded metric, potentially sacrificing unmeasured retention.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-LB-005",
+      "concept": "incentives",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-LB-005",
+        "q": "Two households face the same $50 peak-energy surcharge. One shifts appliance use; the other has medical equipment that must run continuously. What should the analyst infer?",
+        "options": [
+          "The surcharge changes payoffs for both, but constraints produce different responses",
+          "The second household proves the surcharge is not an incentive because its electricity use cannot change",
+          "A common price must cause a common quantity change",
+          "Only the household that shifts use faces an opportunity cost"
+        ],
+        "aHash": "39ffcb0832ad4b624f1815ec7ffc9e62a81664009da299fb933ab225e81ccbd5",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Assuming identical responses or denying an incentive when response is constrained.",
+        "feedback": "The price changes expected cost, while feasibility determines behavior.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-LB-006",
+      "concept": "incentives",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-LB-006",
+        "q": "A safety regulator doubles penalties but inspects firms once every ten years. Which reform most directly strengthens the behavioral incentive?",
+        "options": [
+          "Increase credible inspection probability while maintaining meaningful penalties",
+          "Announce an even larger maximum penalty without changing inspections",
+          "Replace all penalties with a statement of the policy goal",
+          "Assume firms respond identically to the existing rule"
+        ],
+        "aHash": "84103862eaeed73eae543e608e81a365725a27dbd10db6b9bdc828a37a31ac47",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Focusing on statutory severity rather than expected enforcement.",
+        "feedback": "A credible chance of detection makes the consequence relevant to current choices.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-LB-007",
+      "concept": "incentives",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-LB-007",
+        "q": "A firm pays sales commissions but charges back commissions on returns. Which behavior best reflects the combined design?",
+        "options": [
+          "Representatives weigh an immediate sale against the risk of a later return",
+          "Representatives pursue every sale because commissions are positive",
+          "Chargebacks guarantee no unsuitable product is sold",
+          "The two rules eliminate all differences across representatives"
+        ],
+        "aHash": "1e529f6cf4398ad79995844497fa2f1baba04856f960c6e884066b46688e6d63",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "competing_incentives",
+        "repairSkill": "competing_incentives",
+        "commonError": "Considering the reward while ignoring the contingent penalty.",
+        "feedback": "The chargeback changes the expected value of low-quality sales.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-LB-008",
+      "concept": "incentives",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-LB-008",
+        "q": "Remote work lowers commuting time for an employee, making a job offer more attractive even though salary is unchanged. What created the incentive response?",
+        "options": [
+          "A lower opportunity cost of accepting the job",
+          "A cash bonus hidden in the salary",
+          "A guaranteed increase in job satisfaction",
+          "Moral approval of remote work"
+        ],
+        "aHash": "29cd292444f6c5c93047511e540cf18a5e7c6ff84a876a08ebdb83de76924150",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "opportunity_cost_incentives",
+        "repairSkill": "opportunity_cost_incentives",
+        "commonError": "Looking only for explicit cash rewards and missing a changed alternative cost.",
+        "feedback": "Reduced commuting time changes the relative cost of choosing the job.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-LB-009",
+      "concept": "incentives",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-LB-009",
+        "q": "A grant rewards clinics for vaccinations administered. Clinics run outreach campaigns, but some record duplicate entries. Which conclusion best separates incentive from outcome?",
+        "options": [
+          "The payment changed outreach and reporting payoffs; vaccination coverage must be measured independently",
+          "Recorded doses are the incentive and the grant payment is merely the final health outcome",
+          "Duplicate entries prove outreach did not respond to the grant",
+          "The stated health goal guarantees the reported metric is accurate"
+        ],
+        "aHash": "b071614a464de29c08b0fba61a86e95806ea4a0f40d56a5f68e451f7b55c93f0",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "incentive_vs_outcome",
+        "repairSkill": "incentive_vs_outcome",
+        "commonError": "Equating the rewarded record count with the final health outcome.",
+        "feedback": "The incentive affects multiple behaviors, while true coverage is a separate result.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-R-003",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-R-003",
+        "q": "A $500 attendance bonus is offered, but an employee misses work during a medical emergency. Was the bonus still an incentive?",
+        "options": [
+          "Yes; it changed the payoff but did not guarantee attendance",
+          "No; an incentive exists only when it changes the observed behavior in every single case",
+          "No; bonuses must overcome every constraint",
+          "Yes; it guaranteed attendance for all other workers"
+        ],
+        "aHash": "d40108d146f31cb7801c1e6916447d96844e27b910c4dd97dcfffec63a7b40fe",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentive_probability_not_certainty",
+        "repairSkill": "incentive_probability_not_certainty",
+        "commonError": "Defining an incentive by guaranteed compliance.",
+        "feedback": "An incentive changes behavioral pressure; emergencies and other constraints can still dominate.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-R-004",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-R-004",
+        "q": "An economist says a fine creates an incentive to avoid an action. Does that statement approve of the fine?",
+        "options": [
+          "No; identifying a changed cost is separate from moral approval",
+          "Yes; economic analysis always endorses any incentive whose likely response it successfully predicts",
+          "Yes; only approved penalties affect behavior",
+          "No; fines are outcomes rather than incentives"
+        ],
+        "aHash": "4ac41851fa848d5cb42861784e1d6fd1342b7ec095200669316c78dbbd57f884",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentive_analysis_not_approval",
+        "repairSkill": "incentive_analysis_not_approval",
+        "commonError": "Confusing descriptive incentive analysis with moral endorsement.",
+        "feedback": "Economists can predict a response without judging the policy desirable.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-R-005",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-R-005",
+        "q": "Can two people respond differently to the same parking fee?",
+        "options": [
+          "Yes; constraints, preferences, and alternatives can differ",
+          "No; the same dollar fee produces the same response",
+          "Only if one person misunderstands the fee",
+          "No; different responses mean the fee is not an incentive"
+        ],
+        "aHash": "664cb840b74a6a8052c0f101d920ba645af8fcdc5844698cc522d8ab16e19679",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "heterogeneous_incentive_response",
+        "repairSkill": "heterogeneous_incentive_response",
+        "commonError": "Assuming the same incentive creates identical behavior.",
+        "feedback": "A common payoff change can matter differently across decision-makers.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-R-006",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-R-006",
+        "q": "A school gives public recognition rather than cash for attendance. Can recognition be an incentive?",
+        "options": [
+          "Yes; nonmonetary benefits can change behavior",
+          "No; only money changes benefits or costs",
+          "Only if recognition has a fixed cash value",
+          "No; recognition is the final policy outcome"
+        ],
+        "aHash": "7b0d5ea8cbe66d94cf1d9144b969bcf0575a9963d31bc50b9db81f0e69d9b0e1",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "nonmonetary_incentive_response",
+        "repairSkill": "nonmonetary_incentive_response",
+        "commonError": "Restricting incentives to monetary rewards and penalties.",
+        "feedback": "Status, convenience, rules, and recognition can all change perceived payoffs.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-R-007",
+      "concept": "incentives",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-R-007",
+        "q": "A large fine is almost never enforced. Why may it have little effect?",
+        "options": [
+          "The expected consequence is weak when detection is very unlikely",
+          "Penalties cannot be incentives",
+          "The fine guarantees compliance even when detection and enforcement are extremely unlikely",
+          "Only the stated policy goal influences behavior"
+        ],
+        "aHash": "14cf6e7752176517be0044029f06b45ba6ecb92cfef352ed47283345a937a3e4",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "enforcement_incentives",
+        "repairSkill": "enforcement_incentives",
+        "commonError": "Ignoring enforcement probability.",
+        "feedback": "Expected and perceived consequences depend on both severity and the chance of enforcement.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-BR-002",
+      "concept": "incentives",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-BR-002",
+        "q": "Scarcity forces a student to choose between work and study. How can a higher wage create an incentive?",
+        "options": [
+          "It raises the opportunity cost of study relative to work",
+          "It eliminates the need to choose between uses of time",
+          "It guarantees the student stops studying",
+          "It changes scarcity into abundance"
+        ],
+        "aHash": "0bfb804d6800ed297a766fb4f4c42d86a74efd4aa6a4b14ac22384ac76fb95d8",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "scarcity_opportunity_cost_to_incentives",
+        "repairSkill": "scarcity_opportunity_cost_to_incentives",
+        "commonError": "Missing how a changed alternative payoff alters a scarce-resource choice.",
+        "feedback": "With limited time, the higher wage makes study more costly in forgone earnings.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-BR-003",
+      "concept": "incentives",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-BR-003",
+        "q": "A fee makes one more downtown trip costlier. How does marginal analysis describe the incentive?",
+        "options": [
+          "It raises the marginal cost of the next trip",
+          "It raises the total benefit of every past trip",
+          "It guarantees no one travels downtown",
+          "It removes the opportunity cost of alternatives"
+        ],
+        "aHash": "f9b97ec218f70ff0747d3d815130e48df8ae1dc23325bea6d19949cf86ae7070",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "marginal_analysis_to_incentives",
+        "repairSkill": "marginal_analysis_to_incentives",
+        "commonError": "Using totals instead of the changed payoff on the next action.",
+        "feedback": "The fee alters the next trip’s marginal cost, which can change the decision.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-BR-004",
+      "concept": "incentives",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-BR-004",
+        "q": "When a product’s price rises, buyers purchase less while sellers offer more. What common connection explains both responses?",
+        "options": [
+          "The price change creates different incentives for buyers and sellers",
+          "Buyers and sellers face identical benefits from the higher price",
+          "The higher price guarantees every buyer exits the market",
+          "Supply and demand responses require moral approval of the price"
+        ],
+        "aHash": "02e140b7800c235671aac4e5d322aa6fdb369d187d220022d27c4f3d4b5a142a",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentives_to_supply_demand",
+        "repairSkill": "incentives_to_supply_demand",
+        "commonError": "Assuming one price creates the same directional incentive on both sides.",
+        "feedback": "A higher price raises buyer cost while raising seller benefit.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P74-INC-BR-005",
+      "concept": "incentives",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P74-INC-BR-005",
+        "q": "A policy aims to reduce congestion but rewards agencies only for bus tickets sold. What lesson connects incentives to policy design?",
+        "options": [
+          "The rewarded measure may redirect behavior away from the stated policy objective",
+          "A stated goal automatically determines the behavioral margin",
+          "Ticket sales are identical to reduced congestion",
+          "An incentive exists only after congestion falls"
+        ],
+        "aHash": "cee88701905fef62efdaf9b796142174e20be767da42575d09fe0fea3b47279e",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "incentives_to_policy_design",
+        "repairSkill": "incentives_to_policy_design",
+        "commonError": "Confusing a stated purpose, measured target, and final outcome.",
+        "feedback": "Policy design must align the payoff with the behavior and outcome actually sought.",
+        "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+      }
+    }
+  ]
+}

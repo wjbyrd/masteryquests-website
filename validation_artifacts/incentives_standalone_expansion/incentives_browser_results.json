@@ -1,0 +1,20 @@
+{
+  "phase": "phase7.4-incentives-standalone-expansion-v1",
+  "concept": "incentives",
+  "testedUrl": "http://127.0.0.1:8774/index.html",
+  "testedAt": "2026-08-10T00:35:00.000Z",
+  "passed": true,
+  "summary": "The standalone title and player entry rendered; Standard, Timed, Exam, Legendary, and Score modes each started with a four-option Incentives question; the 10/20/30 checkpoint track rendered; Standard resumed as Codex QA at room 2 after reload; and browser diagnostics contained no warnings or errors.",
+  "title": "INCENTIVES STANDALONE",
+  "playerName": "Codex QA",
+  "modes": {
+    "standard": { "start": true, "questionSelection": true, "fourOptions": true },
+    "timed": { "start": true, "questionSelection": true, "fourOptions": true, "timerVisible": true },
+    "exam": { "start": true, "questionSelection": true, "fourOptions": true },
+    "legendary": { "start": true, "questionSelection": true, "fourOptions": true, "checkpointTrackVisible": true },
+    "score": { "start": true, "questionSelection": true, "fourOptions": true, "scoreVisible": true }
+  },
+  "checkpointTrack": { "room10": true, "room20": true, "room30": true },
+  "saveResume": { "passed": true, "playerPreserved": true, "resumedRoom": 2 },
+  "console": { "errors": 0, "warnings": 0 }
+}
