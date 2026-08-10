@@ -1,0 +1,22 @@
+{
+  "verdict": "NON-BLOCKING ENVIRONMENT LIMITATION \u2014 NORMAL-ORIGIN LOCAL BROWSER SMOKE REQUIRED",
+  "attempts": {
+    "fileNavigation": {
+      "status": "BLOCKED",
+      "reason": "ERR_BLOCKED_BY_ADMINISTRATOR"
+    },
+    "localhostNavigation": {
+      "status": "BLOCKED",
+      "reason": "ERR_BLOCKED_BY_ADMINISTRATOR"
+    },
+    "interceptedHttpsOrigin": {
+      "status": "BLOCKED",
+      "reason": "ERR_BLOCKED_BY_ADMINISTRATOR"
+    },
+    "setContent": {
+      "status": "ENVIRONMENT_LIMITED",
+      "reason": "Opaque about:blank origin denies localStorage"
+    }
+  },
+  "contentDefectDetected": false
+}

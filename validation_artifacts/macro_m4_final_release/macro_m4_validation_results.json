@@ -1,0 +1,5413 @@
+{
+  "phase": "M4-final-macro-validation",
+  "generatedAt": "2026-08-10T21:39:24.183Z",
+  "verdict": "RELEASE PAYLOAD CLOSED — LOCAL BROWSER SMOKE REMAINS",
+  "authoritativeBaseline": {
+    "globalCanonical": 7274,
+    "librarySha256": "572d796e5821b0ba9e80c9e80aad44cdc73fc91e7e1d555da0ec2e291b7e9826",
+    "composerVersion": "4.5e.0",
+    "macroSpecificConcepts": 42,
+    "normalMacroConcepts": 41,
+    "macroSpecificCanonical": 2488,
+    "sharedGeneralOperationalConcepts": 13
+  },
+  "familyTotals": {
+    "F1": 230,
+    "F2": 245,
+    "F3": 231,
+    "F4": 238,
+    "F5": 326,
+    "F6": 301,
+    "F7": 149,
+    "F8": 206,
+    "F9": 212,
+    "F10": 238,
+    "F11": 112
+  },
+  "provenance": [
+    {
+      "path": "composer-core.js",
+      "m2eExpected": "d75443cf7e47b7208a9a2a80f3df0e1d4f169d45c0f359a2f965dc0fde4fa952",
+      "current": "d75443cf7e47b7208a9a2a80f3df0e1d4f169d45c0f359a2f965dc0fde4fa952",
+      "m2eBaselineMatch": true,
+      "m4Modified": false
+    },
+    {
+      "path": "composer.css",
+      "m2eExpected": "640021029432946a68c555f61f6e1c5e44ef6a2f25d44912750721288b96daf5",
+      "current": "640021029432946a68c555f61f6e1c5e44ef6a2f25d44912750721288b96daf5",
+      "m2eBaselineMatch": true,
+      "m4Modified": false
+    },
+    {
+      "path": "composer.js",
+      "m2eExpected": "046cfd9b81db50179b06ea3858fb9e276acd7d59456c20bca134f2f38db6a440",
+      "current": "046cfd9b81db50179b06ea3858fb9e276acd7d59456c20bca134f2f38db6a440",
+      "m2eBaselineMatch": true,
+      "m4Modified": false
+    },
+    {
+      "path": "data/composer_library.js",
+      "m2eExpected": "14ded36615cacd51753384d2efa89b5b2dd5ee8aa17f10fcd3e659acfa25ee41",
+      "current": "54393cdee927ded2f6ea3f147f4c38c477d70be4158102e130b712e0439d679c",
+      "m2eBaselineMatch": false,
+      "m4Modified": true
+    },
+    {
+      "path": "data/composer_library_manifest.json",
+      "m2eExpected": "b552086a42cdba0fbfd525162b8a074d3c0b594fb26a074790cffc24042058d6",
+      "current": "f88bf0a2b84f2e7d619985107bde70588b5a8c91dfc9cdae5afe184ba7e24448",
+      "m2eBaselineMatch": false,
+      "m4Modified": true
+    },
+    {
+      "path": "data/composer_registry.json",
+      "m2eExpected": "30a89d86d698137ed6a9da1e507bf3eb1a4a30061ce49505c9a883da0c32fe0f",
+      "current": "af927c7b9ad2ae3c8b27bbe9f649f6fac80e651871728a95d6b5fca0832c3488",
+      "m2eBaselineMatch": false,
+      "m4Modified": true
+    },
+    {
+      "path": "index.html",
+      "m2eExpected": "dabf2ec0330a743193e8f64819be8b1afda00ecf8ee8091862f1a4de2548d384",
+      "current": "1522862834db291d9210b388b3df7efddc1a810e3055ba2c5a1257c7e598e0c4",
+      "m2eBaselineMatch": false,
+      "m4Modified": true
+    },
+    {
+      "path": "phaseM2e-advanced-macro-checkpoint-supplement-v1.json",
+      "m2eExpected": "7238bcdc9f5150efead330d7e718422e54fa5aa7b342f48696bdda1e488eeb78",
+      "current": "7238bcdc9f5150efead330d7e718422e54fa5aa7b342f48696bdda1e488eeb78",
+      "m2eBaselineMatch": true,
+      "m4Modified": false
+    },
+    {
+      "path": "phaseM2e-advanced-macro-checkpoint-supplement-v1_questions.json",
+      "m2eExpected": "a66c83961e083c18ed2fa2a8e2039f5b59e49096d360a75b3a703014dce9f17f",
+      "current": "a66c83961e083c18ed2fa2a8e2039f5b59e49096d360a75b3a703014dce9f17f",
+      "m2eBaselineMatch": true,
+      "m4Modified": false
+    },
+    {
+      "path": "template/mastery-quests-faculty-template-composer-ready.html",
+      "m2eExpected": "8eafbe3329142a34cf96cbc4a2822ca69d0fe05e0bf85af1a70629831113bb4a",
+      "current": "8eafbe3329142a34cf96cbc4a2822ca69d0fe05e0bf85af1a70629831113bb4a",
+      "m2eBaselineMatch": true,
+      "m4Modified": false
+    }
+  ],
+  "staticAudit": {
+    "issues": [],
+    "assetIssues": [],
+    "knownLegacySupplementExactStemPairs": [
+      [
+        {
+          "id": "LG-Q-2002",
+          "cid": "money-functions-and-measures",
+          "pool": "boss"
+        },
+        {
+          "id": "ECON-SP-EASYBOSS-2002",
+          "cid": "integrated-macroeconomic-analysis",
+          "pool": "boss"
+        }
+      ],
+      [
+        {
+          "id": "LG-Q-2005",
+          "cid": "central-bank-and-federal-reserve",
+          "pool": "boss"
+        },
+        {
+          "id": "ECON-SP-EASYBOSS-2005",
+          "cid": "integrated-macroeconomic-analysis",
+          "pool": "boss"
+        }
+      ],
+      [
+        {
+          "id": "LG-Q-2008",
+          "cid": "bank-money-creation",
+          "pool": "boss"
+        },
+        {
+          "id": "ECON-SP-EASYBOSS-2008",
+          "cid": "integrated-macroeconomic-analysis",
+          "pool": "boss"
+        }
+      ],
+      [
+        {
+          "id": "LG-Q-2011",
+          "cid": "monetary-policy-tools",
+          "pool": "boss"
+        },
+        {
+          "id": "ECON-SP-EASYBOSS-2011",
+          "cid": "integrated-macroeconomic-analysis",
+          "pool": "boss"
+        }
+      ],
+      [
+        {
+          "id": "LG-Q-2014",
+          "cid": "monetary-control-limits",
+          "pool": "boss"
+        },
+        {
+          "id": "ECON-SP-EASYBOSS-2014",
+          "cid": "integrated-macroeconomic-analysis",
+          "pool": "boss"
+        }
+      ]
+    ],
+    "unexpectedExactStemPairs": []
+  },
+  "compositionAudit": {
+    "singleNormalConcepts": 41,
+    "families": 11,
+    "broadConfigurations": [
+      "macroNormal",
+      "macroWithSupplement",
+      "macroWithSharedFoundations",
+      "fullMacroArea"
+    ],
+    "supplementOnlyRejected": true,
+    "allFiveModesPassed": true,
+    "answerVerificationPassed": true
+  },
+  "simulation": {
+    "individualUnits": 42,
+    "familyUnits": 11,
+    "broadUnits": 4,
+    "perMode": 500,
+    "totalSessions": 142500,
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ],
+    "individual": {
+      "gdp-measurement": {
+        "name": "solo:gdp-measurement",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "gdp-components": {
+        "name": "solo:gdp-components",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "real-versus-nominal-gdp": {
+        "name": "solo:real-versus-nominal-gdp",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "limits-of-gdp": {
+        "name": "solo:limits-of-gdp",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "cpi-and-inflation-measurement": {
+        "name": "solo:cpi-and-inflation-measurement",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "cpi-versus-gdp-deflator": {
+        "name": "solo:cpi-versus-gdp-deflator",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "cpi-bias": {
+        "name": "solo:cpi-bias",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "indexing-and-real-values": {
+        "name": "solo:indexing-and-real-values",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "real-versus-nominal-interest-rates": {
+        "name": "solo:real-versus-nominal-interest-rates",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "living-standards-and-growth": {
+        "name": "solo:living-standards-and-growth",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "productivity-measurement": {
+        "name": "solo:productivity-measurement",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "sources-of-productivity": {
+        "name": "solo:sources-of-productivity",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "economic-growth-policy": {
+        "name": "solo:economic-growth-policy",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "unemployment-measurement": {
+        "name": "solo:unemployment-measurement",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "unemployment-types": {
+        "name": "solo:unemployment-types",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "natural-rate-of-unemployment": {
+        "name": "solo:natural-rate-of-unemployment",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "labor-market-institutions": {
+        "name": "solo:labor-market-institutions",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "money-functions-and-measures": {
+        "name": "solo:money-functions-and-measures",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "bank-money-creation": {
+        "name": "solo:bank-money-creation",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "central-bank-and-federal-reserve": {
+        "name": "solo:central-bank-and-federal-reserve",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "monetary-policy-tools": {
+        "name": "solo:monetary-policy-tools",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "monetary-control-limits": {
+        "name": "solo:monetary-control-limits",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "quantity-theory-of-money": {
+        "name": "solo:quantity-theory-of-money",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "monetary-neutrality": {
+        "name": "solo:monetary-neutrality",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "fisher-effect": {
+        "name": "solo:fisher-effect",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "inflation-costs": {
+        "name": "solo:inflation-costs",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "inflation-tax-and-deflation": {
+        "name": "solo:inflation-tax-and-deflation",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "liquidity-preference-and-money-market": {
+        "name": "solo:liquidity-preference-and-money-market",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "monetary-policy-transmission": {
+        "name": "solo:monetary-policy-transmission",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "aggregate-demand": {
+        "name": "solo:aggregate-demand",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "aggregate-supply": {
+        "name": "solo:aggregate-supply",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "macroeconomic-equilibrium-and-shocks": {
+        "name": "solo:macroeconomic-equilibrium-and-shocks",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "long-run-macroeconomic-adjustment": {
+        "name": "solo:long-run-macroeconomic-adjustment",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "fiscal-policy-and-aggregate-demand": {
+        "name": "solo:fiscal-policy-and-aggregate-demand",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "fiscal-multipliers-and-crowding-out": {
+        "name": "solo:fiscal-multipliers-and-crowding-out",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "stabilization-policy": {
+        "name": "solo:stabilization-policy",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "short-run-phillips-curve": {
+        "name": "solo:short-run-phillips-curve",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "phillips-curve-expectations": {
+        "name": "solo:phillips-curve-expectations",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "long-run-phillips-curve": {
+        "name": "solo:long-run-phillips-curve",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "sacrifice-ratio": {
+        "name": "solo:sacrifice-ratio",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "disinflation-and-policy": {
+        "name": "solo:disinflation-and-policy",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "integrated-macroeconomic-analysis": {
+        "name": "supplement-safety",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 662,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 1105,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 643,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      }
+    },
+    "families": {
+      "F1": {
+        "name": "family:F1",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F2": {
+        "name": "family:F2",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F3": {
+        "name": "family:F3",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F4": {
+        "name": "family:F4",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F5": {
+        "name": "family:F5",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F6": {
+        "name": "family:F6",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F7": {
+        "name": "family:F7",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F8": {
+        "name": "family:F8",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F9": {
+        "name": "family:F9",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F10": {
+        "name": "family:F10",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "F11": {
+        "name": "family:F11",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 637,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 1110,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 628,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      }
+    },
+    "broad": {
+      "macroNormal": {
+        "name": "broad:macroNormal",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "macroWithSupplement": {
+        "name": "broad:macroWithSupplement",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 386,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 764,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 368,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "macroWithSharedFoundations": {
+        "name": "broad:macroWithSharedFoundations",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      },
+      "fullMacroArea": {
+        "name": "broad:fullMacroArea",
+        "totalSessions": 2500,
+        "byMode": {
+          "standard": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 253,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "timed": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "exam": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 0,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "legendary": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 350,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          },
+          "score": {
+            "sessions": 500,
+            "completed": 500,
+            "routingFailures": 0,
+            "immediateRepeats": 0,
+            "prohibitedReuse": 0,
+            "challengeSelections": 218,
+            "challengePositionViolations": 0,
+            "multiChallengeCheckpointViolations": 0,
+            "patterns": {
+              "all-correct": 100,
+              "all-incorrect": 100,
+              "alternating": 100,
+              "random-70-percent": 100,
+              "remediation-heavy-boss-failure": 100
+            }
+          }
+        }
+      }
+    }
+  },
+  "generatedPackages": {
+    "macroNormal": {
+      "path": "/mnt/data/phase_M4_work/validation_artifacts/macro_m4_final_release/macroNormal.html",
+      "bytes": 7805139,
+      "sha256": "4b4115d7198d9612a2ab44a1300728378e3e5b9882d5ea30d8a06d947dacd3ac",
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    },
+    "macroWithSupplement": {
+      "path": "/mnt/data/phase_M4_work/validation_artifacts/macro_m4_final_release/macroWithSupplement.html",
+      "bytes": 8111396,
+      "sha256": "25b5a9fbe04a88651d00d9fd50d57a775a45c319a8fac29e6d50eace2474b83f",
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    },
+    "fullMacroArea": {
+      "path": "/mnt/data/phase_M4_work/validation_artifacts/macro_m4_final_release/fullMacroArea.html",
+      "bytes": 21031881,
+      "sha256": "52f0e7b980ce67df154c4d6a2af9e7af501ebea97f80c20c513a5b66b7b0d478",
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    }
+  },
+  "checksumVerification": {
+    "status": "PASS",
+    "issues": []
+  }
+}
