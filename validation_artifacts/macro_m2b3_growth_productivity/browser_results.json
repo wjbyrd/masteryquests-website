@@ -1,0 +1,31 @@
+{
+  "phase": "phaseM2b3-growth-productivity-family-maturation-v1",
+  "passed": false,
+  "pending": false,
+  "environmentUnavailable": true,
+  "staticPackageChecksPassed": true,
+  "summary": "Generated family and productivity packages passed composition, embedded-asset, accessibility-metadata, five-mode markup, and inline-script syntax checks. Chromium could not launch in this container because its GPU process terminated before page load; this is an environment limitation rather than an application-level browser failure.",
+  "packages": {
+    "family": {
+      "growthRef": true,
+      "graphDescription": true,
+      "embeddedAsset": true,
+      "fiveModeMarkup": true,
+      "inlineScriptSyntax": true
+    },
+    "productivity": {
+      "growthRef": true,
+      "graphDescription": true,
+      "embeddedAsset": true,
+      "fiveModeMarkup": true,
+      "inlineScriptSyntax": true
+    }
+  },
+  "chromiumAttempt": {
+    "status": "environment-failure-before-page-load",
+    "fatal": "GPU process is not usable"
+  },
+  "nonBlockingIssues": [
+    "Full interactive Chromium browser QA could not be executed in this container."
+  ]
+}

@@ -1,0 +1,17 @@
+import crypto from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+const repo=path.resolve(process.argv[2]||process.cwd());
+const PHASE='phaseM2b3-growth-productivity-family-maturation-v1';
+const composer=path.join(repo,'build','faculty-build-composer'),dataDir=path.join(composer,'data');
+const lp=path.join(dataDir,'composer_library.js'),rp=path.join(dataDir,'composer_registry.json'),mp=path.join(dataDir,'composer_library_manifest.json'),sp=path.join(composer,`${PHASE}_questions.json`);
+const sha=v=>crypto.createHash('sha256').update(v).digest('hex'); const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
+const s={window:{}};vm.createContext(s);vm.runInContext(fs.readFileSync(lp,'utf8'),s);const lib=s.window.MQ_COMPOSER_LIBRARY,reg=JSON.parse(fs.readFileSync(rp)),man=JSON.parse(fs.readFileSync(mp)),src=JSON.parse(fs.readFileSync(sp));
+const q=lib.concepts['sources-of-productivity'].questions.boss.find(x=>x.id==='PM2B3-SRC-FB-006');if(!q)throw new Error('missing');
+const before=sha(JSON.stringify(stable(q)));q.secondaryConceptIds=['productivity-measurement'];q.sourceHash=sha(JSON.stringify(stable({q:q.q,options:q.options,aHash:q.aHash,primaryConceptId:q.primaryConceptId,primarySkill:q.primarySkill,difficulty:q.difficulty,secondaryConceptIds:q.secondaryConceptIds||[],bossStage:q.bossStage||null,image:q.image||null})));
+src.changes.push({questionId:q.id,canonicalConceptId:'sources-of-productivity',action:'QUALITY_FIX',oldPool:'finalBoss',newPool:'finalBoss',reason:'Corrects a secondary concept reference to the canonical Productivity Measurement concept.',beforeHash:before,afterHash:sha(JSON.stringify(stable(q)))});
+src.summary.qualityFixes=(src.summary.qualityFixes||0)+1;
+delete lib.librarySha256;lib.librarySha256=sha(JSON.stringify(stable(lib)));reg.librarySha256=lib.librarySha256;man.librarySha256=lib.librarySha256;
+fs.writeFileSync(lp,`window.MQ_COMPOSER_LIBRARY=${JSON.stringify(lib)};\n`);fs.writeFileSync(rp,JSON.stringify(reg,null,2)+'\n');fs.writeFileSync(mp,JSON.stringify(man,null,2)+'\n');fs.writeFileSync(sp,JSON.stringify(src,null,2)+'\n');
+console.log(JSON.stringify({questionId:q.id,librarySha256:lib.librarySha256},null,2));

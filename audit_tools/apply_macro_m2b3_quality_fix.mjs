@@ -1,0 +1,27 @@
+import crypto from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+const repo=path.resolve(process.argv[2]||process.cwd());
+const PHASE='phaseM2b3-growth-productivity-family-maturation-v1';
+const composer=path.join(repo,'build','faculty-build-composer'),dataDir=path.join(composer,'data');
+const libraryPath=path.join(dataDir,'composer_library.js'),registryPath=path.join(dataDir,'composer_registry.json'),manifestPath=path.join(dataDir,'composer_library_manifest.json');
+const sha=v=>crypto.createHash('sha256').update(v).digest('hex');
+const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
+const load=raw=>{const s={window:{}};vm.createContext(s);vm.runInContext(raw,s);return s.window.MQ_COMPOSER_LIBRARY;};
+const lib=load(fs.readFileSync(libraryPath,'utf8')),registry=JSON.parse(fs.readFileSync(registryPath)),manifest=JSON.parse(fs.readFileSync(manifestPath));
+const module=lib.concepts['economic-growth-policy'],q=module.questions.easy.find(x=>x.id==='PM2B3-POL-E-001');if(!q)throw new Error('question missing');
+const before=sha(JSON.stringify(stable(q)));
+q.options=q.options.map(o=>{
+ if(o==='Restricting all new production methods')return 'Restricting firms from adopting or developing new production methods';
+ if(o==='Discouraging education and training')return 'Discouraging education and training that would help workers use new technologies';
+ if(o==='Making investment rules unpredictable')return 'Making long-term investment and innovation rules less predictable for firms';
+ return o;
+});
+q.sourceHash=sha(JSON.stringify(stable({q:q.q,options:q.options,aHash:q.aHash,primaryConceptId:q.primaryConceptId,primarySkill:q.primarySkill,difficulty:q.difficulty,secondaryConceptIds:q.secondaryConceptIds||[],bossStage:q.bossStage||null,image:q.image||null})));
+const sourcePath=path.join(composer,`${PHASE}_questions.json`),source=JSON.parse(fs.readFileSync(sourcePath));
+source.changes.push({questionId:q.id,canonicalConceptId:'economic-growth-policy',action:'QUALITY_FIX',oldPool:'easy',newPool:'easy',reason:'Balances answer length without changing the stem or correct answer.',beforeHash:before,afterHash:sha(JSON.stringify(stable(q)))});
+source.summary.qualityFixes=(source.summary.qualityFixes||0)+1;
+delete lib.librarySha256;lib.librarySha256=sha(JSON.stringify(stable(lib)));registry.librarySha256=lib.librarySha256;manifest.librarySha256=lib.librarySha256;
+fs.writeFileSync(libraryPath,`window.MQ_COMPOSER_LIBRARY=${JSON.stringify(lib)};\n`);fs.writeFileSync(registryPath,JSON.stringify(registry,null,2)+'\n');fs.writeFileSync(manifestPath,JSON.stringify(manifest,null,2)+'\n');fs.writeFileSync(sourcePath,JSON.stringify(source,null,2)+'\n');
+console.log(JSON.stringify({questionId:q.id,librarySha256:lib.librarySha256},null,2));

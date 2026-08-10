@@ -1,0 +1,532 @@
+{
+  "phase": "phaseM2b3-growth-productivity-family-maturation-v1",
+  "generatedAt": "2026-08-10T17:34:17.768Z",
+  "summary": {
+    "added": 43,
+    "bossStageFixed": 9,
+    "graphQuestions": 12,
+    "removed": 0,
+    "relocated": 0,
+    "livingStandardsQuestionContentChanged": false
+  },
+  "changes": [
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9116",
+      "canonicalConceptId": "living-standards-and-growth",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9117",
+      "canonicalConceptId": "living-standards-and-growth",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "P52B-S2-LSG-LB-001",
+      "canonicalConceptId": "living-standards-and-growth",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9118",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9120",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9121",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9119",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9122",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9123",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "PM2B3-PROD-E-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-E-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-E-003",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-E-004",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-M-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-M-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-M-003",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-M-004",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-H-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-H-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-H-003",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-H-004",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-L-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-L-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-EB-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-EB-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-EB-003",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-FB-004",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-FB-005",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-FB-006",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-LB-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-PROD-LB-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-SRC-EB-001",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-SRC-EB-002",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-SRC-EB-003",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-SRC-FB-004",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-SRC-FB-005",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-SRC-FB-006",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-E-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-E-002",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-M-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-M-002",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-H-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-H-002",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-L-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-L-002",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-EB-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-EB-002",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-EB-003",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-FB-004",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-FB-005",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-FB-006",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-LB-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F3 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B3-POL-E-001",
+      "canonicalConceptId": "economic-growth-policy",
+      "action": "QUALITY_FIX",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Balances answer length without changing the stem or correct answer."
+    },
+    {
+      "questionId": "PM2B3-SRC-FB-006",
+      "canonicalConceptId": "sources-of-productivity",
+      "action": "QUALITY_FIX",
+      "oldPool": "finalBoss",
+      "newPool": "finalBoss",
+      "reason": "Corrects a secondary concept reference to the canonical Productivity Measurement concept."
+    },
+    {
+      "questionId": "PM2B3-PROD-M-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "medium",
+      "newPool": "medium",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-H-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "hard",
+      "newPool": "hard",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-H-004",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "hard",
+      "newPool": "hard",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-L-002",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "legendary",
+      "newPool": "legendary",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-EB-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "easyBoss",
+      "newPool": "easyBoss",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-FB-005",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "finalBoss",
+      "newPool": "finalBoss",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-FB-006",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "finalBoss",
+      "newPool": "finalBoss",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    },
+    {
+      "questionId": "PM2B3-PROD-LB-001",
+      "canonicalConceptId": "productivity-measurement",
+      "action": "QUALITY_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Classifies an arithmetic productivity task as calculation for accurate coverage metadata."
+    }
+  ],
+  "protectedIntegrity": {
+    "mismatches": 0,
+    "livingStandardsQuestionContentUnchanged": true
+  }
+}

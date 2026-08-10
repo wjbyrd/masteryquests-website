@@ -1,0 +1,2245 @@
+{
+  "phase": "phaseM2b3-growth-productivity-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1",
+  "librarySha256": "5aefadd42d6f5d3811e6fa380605ce91b53fab4e50fd94bc831341f9990329eb",
+  "beforeCounts": {
+    "living-standards-and-growth": {
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 5,
+      "legendary": 6,
+      "calculation": 6,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 6,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 2,
+      "total": 56
+    },
+    "productivity-measurement": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2,
+      "elite": 4,
+      "legendary": 5,
+      "calculation": 6,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 6,
+      "finalBoss": 0,
+      "legendaryBoss": 1,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "total": 31
+    },
+    "sources-of-productivity": {
+      "easy": 8,
+      "medium": 7,
+      "hard": 7,
+      "elite": 7,
+      "legendary": 7,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 15,
+      "finalBoss": 0,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 6,
+      "total": 66
+    },
+    "economic-growth-policy": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 4,
+      "elite": 4,
+      "legendary": 5,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 9,
+      "finalBoss": 0,
+      "legendaryBoss": 2,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "total": 35
+    }
+  },
+  "afterCounts": {
+    "living-standards-and-growth": {
+      "total": 56,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 5,
+      "legendary": 6,
+      "calculation": 6,
+      "easyBoss": 3,
+      "mediumBoss": 6,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 2,
+      "graphLinked": 0,
+      "calculationLinked": 22
+    },
+    "productivity-measurement": {
+      "total": 53,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 7,
+      "calculation": 6,
+      "easyBoss": 3,
+      "mediumBoss": 6,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "graphLinked": 7,
+      "calculationLinked": 21
+    },
+    "sources-of-productivity": {
+      "total": 72,
+      "easy": 8,
+      "medium": 7,
+      "hard": 7,
+      "elite": 7,
+      "legendary": 7,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 15,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 6,
+      "graphLinked": 2,
+      "calculationLinked": 0
+    },
+    "economic-growth-policy": {
+      "total": 50,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 7,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 9,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "graphLinked": 3,
+      "calculationLinked": 0
+    }
+  },
+  "familyBefore": {
+    "easy": 20,
+    "medium": 19,
+    "hard": 19,
+    "elite": 20,
+    "legendary": 23,
+    "calculation": 12,
+    "integration": 0,
+    "easyBoss": 3,
+    "mediumBoss": 36,
+    "finalBoss": 3,
+    "legendaryBoss": 9,
+    "repair": 14,
+    "repairSeed": 0,
+    "bridge": 10,
+    "total": 188
+  },
+  "familyAfter": {
+    "total": 231,
+    "easy": 26,
+    "medium": 25,
+    "hard": 25,
+    "elite": 20,
+    "legendary": 27,
+    "calculation": 12,
+    "easyBoss": 12,
+    "mediumBoss": 36,
+    "finalBoss": 12,
+    "legendaryBoss": 12,
+    "repair": 14,
+    "repairSeed": 0,
+    "bridge": 10,
+    "graphLinked": 12,
+    "calculationLinked": 43
+  },
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 69,
+    "nonF3Mismatches": [],
+    "livingStandardsQuestionContentUnchanged": true,
+    "livingStandardsContentSha256": "b87003ac5d725e62d8ae4c98f559a2cebdea79b3fc7a5ef65052ac856400f6e3"
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "living-standards-and-growth": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "productivity-measurement": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "sources-of-productivity": [
+      "final",
+      "opening",
+      "middle"
+    ],
+    "economic-growth-policy": [
+      "opening",
+      "middle",
+      "final"
+    ]
+  },
+  "quality": {
+    "groups": {
+      "productivity-measurement::easy": {
+        "count": 4,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.635
+      },
+      "productivity-measurement::medium": {
+        "count": 4,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.922
+      },
+      "productivity-measurement::hard": {
+        "count": 4,
+        "longest": 2,
+        "positions": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.288
+      },
+      "productivity-measurement::legendary": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.986
+      },
+      "productivity-measurement::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.662
+      },
+      "productivity-measurement::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.068
+      },
+      "productivity-measurement::legendaryBoss": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.891
+      },
+      "sources-of-productivity::easyBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 0.943
+      },
+      "sources-of-productivity::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.009
+      },
+      "economic-growth-policy::easy": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.816
+      },
+      "economic-growth-policy::medium": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.829
+      },
+      "economic-growth-policy::hard": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.714
+      },
+      "economic-growth-policy::legendary": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.136
+      },
+      "economic-growth-policy::easyBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 0.9
+      },
+      "economic-growth-policy::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.175
+      },
+      "economic-growth-policy::legendaryBoss": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.241
+      }
+    },
+    "exact": [],
+    "near": [
+      {
+        "a": "ECON-NL-MEDIUM-141",
+        "b": "ECON-NL-MEDIUM-142",
+        "score": 1
+      },
+      {
+        "a": "ECON-NL-ELITE-345",
+        "b": "ECON-NL-MEDIUMBOSS-3011",
+        "score": 1
+      },
+      {
+        "a": "ECON-NL-EASY-49",
+        "b": "ECON-NL-PRODUCTIVITY-CALCULATION-5037",
+        "score": 1
+      }
+    ],
+    "numberSwaps": [
+      [
+        "ECON-NL-MEDIUM-141",
+        "ECON-NL-MEDIUM-142"
+      ],
+      [
+        "ECON-NL-ELITE-345",
+        "ECON-NL-MEDIUMBOSS-3011"
+      ],
+      [
+        "ECON-NL-EASY-49",
+        "ECON-NL-PRODUCTIVITY-CALCULATION-5037"
+      ]
+    ],
+    "repeatedAnswerSets": [
+      [
+        "ECON-NL-EASY-44",
+        "ECON-NL-RULE-OF-70-5033"
+      ],
+      [
+        "ECON-NL-EASY-54",
+        "ECON-NL-MEDIUM-150"
+      ],
+      [
+        "ECON-NL-EASY-54",
+        "ECON-NL-HUMAN-CAPITAL-6020"
+      ]
+    ],
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedNumberSwaps": [],
+    "introducedRepeatedAnswerSets": [],
+    "weakDistractors": 0,
+    "visibleAnswerLeakage": 0,
+    "grammaticalCueFlags": 0
+  },
+  "routeAudit": {
+    "living-standards-and-growth": {
+      "repairRecords": 4,
+      "repairReachable": 4,
+      "bridgeRecords": 2,
+      "bridgeReachable": 2,
+      "bridgeDestinations": {
+        "ECON-NL-REAL-GDP-PER-PERSON-6017": [
+          "productivity-measurement"
+        ],
+        "ECON-NL-RULE-OF-70-6016": []
+      }
+    },
+    "productivity-measurement": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 1,
+      "bridgeReachable": 1,
+      "bridgeDestinations": {
+        "ECON-NL-PRODUCTIVITY-CALCULATION-6018": [
+          "living-standards-and-growth"
+        ]
+      }
+    },
+    "sources-of-productivity": {
+      "repairRecords": 6,
+      "repairReachable": 6,
+      "bridgeRecords": 6,
+      "bridgeReachable": 6,
+      "bridgeDestinations": {
+        "ECON-NL-CATCH-UP-EFFECT-6024": [
+          "productivity-measurement"
+        ],
+        "ECON-NL-DIMINISHING-RETURNS-6023": [
+          "productivity-measurement"
+        ],
+        "ECON-NL-HUMAN-CAPITAL-6020": [
+          "productivity-measurement"
+        ],
+        "ECON-NL-NATURAL-RESOURCES-6021": [
+          "productivity-measurement"
+        ],
+        "ECON-NL-PHYSICAL-CAPITAL-6019": [
+          "productivity-measurement"
+        ],
+        "ECON-NL-TECHNOLOGICAL-KNOWLEDGE-6022": [
+          "productivity-measurement"
+        ]
+      }
+    },
+    "economic-growth-policy": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 1,
+      "bridgeReachable": 1,
+      "bridgeDestinations": {
+        "ECON-NL-GROWTH-POLICY-6025": [
+          "productivity-measurement"
+        ]
+      }
+    }
+  },
+  "graphAudit": {
+    "uniqueAssetCount": 1,
+    "conceptCopies": 3,
+    "graphQuestionCount": 12,
+    "taskFamilies": [
+      "read point A output per worker",
+      "compute A-to-B output gain",
+      "infer smaller later capital gain from curve flattening",
+      "compare marginal output gain at A versus B",
+      "identify lower-capital/lower-output point",
+      "compare percentage output response with doubling of capital",
+      "interpret diminishing returns from curve shape",
+      "connect graph to conditional catch-up",
+      "interpret complementary growth policy with diminishing returns"
+    ],
+    "coverTheGraphFailures": [],
+    "answerFromGraphFailures": [],
+    "accessibilityMetadataPresent": true,
+    "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f"
+  },
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "sources-of-productivity": 657,
+          "productivity-measurement": 737,
+          "living-standards-and-growth": 729,
+          "economic-growth-policy": 577
+        },
+        "shares": {
+          "living-standards-and-growth": 0.27,
+          "productivity-measurement": 0.273,
+          "sources-of-productivity": 0.2433,
+          "economic-growth-policy": 0.2137
+        }
+      },
+      "boss": {
+        "counts": {
+          "living-standards-and-growth": 202,
+          "economic-growth-policy": 239,
+          "sources-of-productivity": 260,
+          "productivity-measurement": 199
+        },
+        "shares": {
+          "living-standards-and-growth": 0.2244,
+          "productivity-measurement": 0.2211,
+          "sources-of-productivity": 0.2889,
+          "economic-growth-policy": 0.2656
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "living-standards-and-growth": 810,
+          "sources-of-productivity": 719,
+          "economic-growth-policy": 638,
+          "productivity-measurement": 833
+        },
+        "shares": {
+          "living-standards-and-growth": 0.27,
+          "productivity-measurement": 0.2777,
+          "sources-of-productivity": 0.2397,
+          "economic-growth-policy": 0.2127
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "productivity-measurement": 834,
+          "economic-growth-policy": 593,
+          "living-standards-and-growth": 840,
+          "sources-of-productivity": 733
+        },
+        "shares": {
+          "living-standards-and-growth": 0.28,
+          "productivity-measurement": 0.278,
+          "sources-of-productivity": 0.2443,
+          "economic-growth-policy": 0.1977
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "living-standards-and-growth": 600,
+          "economic-growth-policy": 700,
+          "sources-of-productivity": 700,
+          "productivity-measurement": 700
+        },
+        "shares": {
+          "living-standards-and-growth": 0.2222,
+          "productivity-measurement": 0.2593,
+          "sources-of-productivity": 0.2593,
+          "economic-growth-policy": 0.2593
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "productivity-measurement": 223,
+          "economic-growth-policy": 211,
+          "living-standards-and-growth": 227,
+          "sources-of-productivity": 239
+        },
+        "shares": {
+          "living-standards-and-growth": 0.2522,
+          "productivity-measurement": 0.2478,
+          "sources-of-productivity": 0.2656,
+          "economic-growth-policy": 0.2344
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "productivity-measurement": 682,
+          "living-standards-and-growth": 728,
+          "economic-growth-policy": 571,
+          "sources-of-productivity": 719
+        },
+        "shares": {
+          "living-standards-and-growth": 0.2696,
+          "productivity-measurement": 0.2526,
+          "sources-of-productivity": 0.2663,
+          "economic-growth-policy": 0.2115
+        }
+      },
+      "boss": {
+        "counts": {
+          "productivity-measurement": 193,
+          "sources-of-productivity": 283,
+          "economic-growth-policy": 222,
+          "living-standards-and-growth": 202
+        },
+        "shares": {
+          "living-standards-and-growth": 0.2244,
+          "productivity-measurement": 0.2144,
+          "sources-of-productivity": 0.3144,
+          "economic-growth-policy": 0.2467
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "living-standards-and-growth": 0,
+          "productivity-measurement": 0,
+          "sources-of-productivity": 0,
+          "economic-growth-policy": 0
+        }
+      }
+    }
+  },
+  "simulation": {
+    "totalSessions": 1150,
+    "solo": {
+      "productivity-measurement": {
+        "name": "productivity-measurement solo",
+        "perMode": 30,
+        "totalSessions": 150,
+        "byMode": {
+          "standard": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 990,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 810
+              },
+              "boss": {
+                "productivity-measurement": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "productivity-measurement": 495
+              },
+              "bridge": {
+                "productivity-measurement": 495
+              }
+            },
+            "calculationExposure": 427,
+            "graphExposure": 158,
+            "duplicateCanonicalSelectionsBySession": 90,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 772,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "productivity-measurement": 386
+              },
+              "bridge": {
+                "productivity-measurement": 386
+              }
+            },
+            "calculationExposure": 333,
+            "graphExposure": 115,
+            "duplicateCanonicalSelectionsBySession": 180,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 768,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "productivity-measurement": 384
+              },
+              "bridge": {
+                "productivity-measurement": 384
+              }
+            },
+            "calculationExposure": 347,
+            "graphExposure": 106,
+            "duplicateCanonicalSelectionsBySession": 180,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 998,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "productivity-measurement": 810
+              },
+              "legendaryBoss": {
+                "productivity-measurement": 270
+              },
+              "repair": {
+                "productivity-measurement": 499
+              },
+              "bridge": {
+                "productivity-measurement": 499
+              }
+            },
+            "calculationExposure": 528,
+            "graphExposure": 206,
+            "duplicateCanonicalSelectionsBySession": 780,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 1000,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 810
+              },
+              "boss": {
+                "productivity-measurement": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "productivity-measurement": 500
+              },
+              "bridge": {
+                "productivity-measurement": 500
+              }
+            },
+            "calculationExposure": 427,
+            "graphExposure": 161,
+            "duplicateCanonicalSelectionsBySession": 90,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "sources-of-productivity": {
+        "name": "sources-of-productivity solo",
+        "perMode": 30,
+        "totalSessions": 150,
+        "byMode": {
+          "standard": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 994,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 810
+              },
+              "boss": {
+                "sources-of-productivity": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 497
+              },
+              "bridge": {
+                "sources-of-productivity": 497
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 60,
+            "duplicateCanonicalSelectionsBySession": 150,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 762,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 381
+              },
+              "bridge": {
+                "sources-of-productivity": 381
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 240,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 772,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 386
+              },
+              "bridge": {
+                "sources-of-productivity": 386
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 240,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 984,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "sources-of-productivity": 810
+              },
+              "legendaryBoss": {
+                "sources-of-productivity": 270
+              },
+              "repair": {
+                "sources-of-productivity": 492
+              },
+              "bridge": {
+                "sources-of-productivity": 492
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 780,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 982,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 810
+              },
+              "boss": {
+                "sources-of-productivity": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 491
+              },
+              "bridge": {
+                "sources-of-productivity": 491
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 60,
+            "duplicateCanonicalSelectionsBySession": 150,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "economic-growth-policy": {
+        "name": "economic-growth-policy solo",
+        "perMode": 30,
+        "totalSessions": 150,
+        "byMode": {
+          "standard": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 988,
+            "representation": {
+              "ordinary": {
+                "economic-growth-policy": 810
+              },
+              "boss": {
+                "economic-growth-policy": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "economic-growth-policy": 494
+              },
+              "bridge": {
+                "economic-growth-policy": 494
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 75,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 768,
+            "representation": {
+              "ordinary": {
+                "economic-growth-policy": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "economic-growth-policy": 384
+              },
+              "bridge": {
+                "economic-growth-policy": 384
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 50,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 780,
+            "representation": {
+              "ordinary": {
+                "economic-growth-policy": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "economic-growth-policy": 390
+              },
+              "bridge": {
+                "economic-growth-policy": 390
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 51,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 1004,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "economic-growth-policy": 810
+              },
+              "legendaryBoss": {
+                "economic-growth-policy": 270
+              },
+              "repair": {
+                "economic-growth-policy": 502
+              },
+              "bridge": {
+                "economic-growth-policy": 502
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 90,
+            "duplicateCanonicalSelectionsBySession": 780,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 990,
+            "representation": {
+              "ordinary": {
+                "economic-growth-policy": 810
+              },
+              "boss": {
+                "economic-growth-policy": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "economic-growth-policy": 495
+              },
+              "bridge": {
+                "economic-growth-policy": 495
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 80,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F3 family",
+      "perMode": 100,
+      "totalSessions": 500,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3600,
+          "auxiliarySelections": 3278,
+          "representation": {
+            "ordinary": {
+              "sources-of-productivity": 657,
+              "productivity-measurement": 737,
+              "living-standards-and-growth": 729,
+              "economic-growth-policy": 577
+            },
+            "boss": {
+              "living-standards-and-growth": 202,
+              "economic-growth-policy": 239,
+              "sources-of-productivity": 260,
+              "productivity-measurement": 199
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "living-standards-and-growth": 328,
+              "productivity-measurement": 531,
+              "sources-of-productivity": 380,
+              "economic-growth-policy": 400
+            },
+            "bridge": {
+              "living-standards-and-growth": 300,
+              "productivity-measurement": 523,
+              "sources-of-productivity": 427,
+              "economic-growth-policy": 389
+            }
+          },
+          "calculationExposure": 808,
+          "graphExposure": 247,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3000,
+          "auxiliarySelections": 2532,
+          "representation": {
+            "ordinary": {
+              "living-standards-and-growth": 810,
+              "sources-of-productivity": 719,
+              "economic-growth-policy": 638,
+              "productivity-measurement": 833
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "economic-growth-policy": 303,
+              "living-standards-and-growth": 271,
+              "productivity-measurement": 432,
+              "sources-of-productivity": 260
+            },
+            "bridge": {
+              "economic-growth-policy": 302,
+              "sources-of-productivity": 278,
+              "living-standards-and-growth": 262,
+              "productivity-measurement": 424
+            }
+          },
+          "calculationExposure": 646,
+          "graphExposure": 145,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3000,
+          "auxiliarySelections": 2528,
+          "representation": {
+            "ordinary": {
+              "productivity-measurement": 834,
+              "economic-growth-policy": 593,
+              "living-standards-and-growth": 840,
+              "sources-of-productivity": 733
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "productivity-measurement": 444,
+              "sources-of-productivity": 293,
+              "living-standards-and-growth": 267,
+              "economic-growth-policy": 260
+            },
+            "bridge": {
+              "productivity-measurement": 450,
+              "sources-of-productivity": 301,
+              "living-standards-and-growth": 256,
+              "economic-growth-policy": 257
+            }
+          },
+          "calculationExposure": 663,
+          "graphExposure": 140,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3600,
+          "auxiliarySelections": 3282,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "living-standards-and-growth": 600,
+              "economic-growth-policy": 700,
+              "sources-of-productivity": 700,
+              "productivity-measurement": 700
+            },
+            "legendaryBoss": {
+              "productivity-measurement": 223,
+              "economic-growth-policy": 211,
+              "living-standards-and-growth": 227,
+              "sources-of-productivity": 239
+            },
+            "repair": {
+              "economic-growth-policy": 430,
+              "sources-of-productivity": 294,
+              "living-standards-and-growth": 317,
+              "productivity-measurement": 600
+            },
+            "bridge": {
+              "economic-growth-policy": 426,
+              "living-standards-and-growth": 306,
+              "productivity-measurement": 600,
+              "sources-of-productivity": 309
+            }
+          },
+          "calculationExposure": 723,
+          "graphExposure": 252,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3600,
+          "auxiliarySelections": 3300,
+          "representation": {
+            "ordinary": {
+              "productivity-measurement": 682,
+              "living-standards-and-growth": 728,
+              "economic-growth-policy": 571,
+              "sources-of-productivity": 719
+            },
+            "boss": {
+              "productivity-measurement": 193,
+              "sources-of-productivity": 283,
+              "economic-growth-policy": 222,
+              "living-standards-and-growth": 202
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "sources-of-productivity": 418,
+              "productivity-measurement": 531,
+              "living-standards-and-growth": 304,
+              "economic-growth-policy": 397
+            },
+            "bridge": {
+              "sources-of-productivity": 455,
+              "productivity-measurement": 518,
+              "living-standards-and-growth": 297,
+              "economic-growth-policy": 380
+            }
+          },
+          "calculationExposure": 778,
+          "graphExposure": 235,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 652,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 72,
+                "limits-of-gdp": 63,
+                "gdp-measurement": 78,
+                "living-standards-and-growth": 63,
+                "economic-growth-policy": 61,
+                "gdp-components": 70,
+                "sources-of-productivity": 71,
+                "real-versus-nominal-gdp": 62
+              },
+              "boss": {
+                "gdp-measurement": 41,
+                "limits-of-gdp": 18,
+                "real-versus-nominal-gdp": 14,
+                "productivity-measurement": 21,
+                "sources-of-productivity": 25,
+                "living-standards-and-growth": 20,
+                "economic-growth-policy": 18,
+                "gdp-components": 23
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "productivity-measurement": 65,
+                "living-standards-and-growth": 20,
+                "sources-of-productivity": 45,
+                "gdp-components": 37,
+                "economic-growth-policy": 43,
+                "real-versus-nominal-gdp": 26,
+                "gdp-measurement": 69,
+                "limits-of-gdp": 21
+              },
+              "bridge": {
+                "productivity-measurement": 64,
+                "living-standards-and-growth": 27,
+                "sources-of-productivity": 53,
+                "gdp-components": 37,
+                "economic-growth-policy": 46,
+                "real-versus-nominal-gdp": 24,
+                "gdp-measurement": 60,
+                "limits-of-gdp": 15
+              }
+            },
+            "calculationExposure": 184,
+            "graphExposure": 22,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 520,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 71,
+                "gdp-components": 87,
+                "sources-of-productivity": 92,
+                "real-versus-nominal-gdp": 65,
+                "economic-growth-policy": 65,
+                "living-standards-and-growth": 87,
+                "gdp-measurement": 74,
+                "limits-of-gdp": 59
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 37,
+                "living-standards-and-growth": 34,
+                "gdp-components": 32,
+                "economic-growth-policy": 32,
+                "gdp-measurement": 46,
+                "real-versus-nominal-gdp": 26,
+                "limits-of-gdp": 11,
+                "productivity-measurement": 42
+              },
+              "bridge": {
+                "gdp-components": 27,
+                "sources-of-productivity": 47,
+                "living-standards-and-growth": 31,
+                "gdp-measurement": 50,
+                "economic-growth-policy": 31,
+                "real-versus-nominal-gdp": 19,
+                "limits-of-gdp": 11,
+                "productivity-measurement": 44
+              }
+            },
+            "calculationExposure": 144,
+            "graphExposure": 13,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 518,
+            "representation": {
+              "ordinary": {
+                "gdp-measurement": 92,
+                "economic-growth-policy": 62,
+                "real-versus-nominal-gdp": 69,
+                "living-standards-and-growth": 99,
+                "productivity-measurement": 70,
+                "gdp-components": 73,
+                "sources-of-productivity": 70,
+                "limits-of-gdp": 65
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 29,
+                "limits-of-gdp": 14,
+                "economic-growth-policy": 32,
+                "living-standards-and-growth": 37,
+                "gdp-components": 37,
+                "gdp-measurement": 47,
+                "real-versus-nominal-gdp": 21,
+                "productivity-measurement": 42
+              },
+              "bridge": {
+                "sources-of-productivity": 36,
+                "limits-of-gdp": 17,
+                "economic-growth-policy": 32,
+                "living-standards-and-growth": 32,
+                "gdp-measurement": 50,
+                "real-versus-nominal-gdp": 21,
+                "gdp-components": 26,
+                "productivity-measurement": 45
+              }
+            },
+            "calculationExposure": 156,
+            "graphExposure": 13,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 680,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "economic-growth-policy": 66,
+                "gdp-measurement": 89,
+                "gdp-components": 67,
+                "limits-of-gdp": 61,
+                "sources-of-productivity": 72,
+                "real-versus-nominal-gdp": 57,
+                "living-standards-and-growth": 65,
+                "productivity-measurement": 63
+              },
+              "legendaryBoss": {
+                "economic-growth-policy": 27,
+                "living-standards-and-growth": 26,
+                "real-versus-nominal-gdp": 19,
+                "sources-of-productivity": 22,
+                "gdp-components": 25,
+                "limits-of-gdp": 19,
+                "gdp-measurement": 18,
+                "productivity-measurement": 24
+              },
+              "repair": {
+                "gdp-components": 39,
+                "economic-growth-policy": 41,
+                "limits-of-gdp": 25,
+                "real-versus-nominal-gdp": 38,
+                "gdp-measurement": 65,
+                "productivity-measurement": 61,
+                "living-standards-and-growth": 39,
+                "sources-of-productivity": 32
+              },
+              "bridge": {
+                "gdp-components": 37,
+                "economic-growth-policy": 41,
+                "limits-of-gdp": 26,
+                "real-versus-nominal-gdp": 39,
+                "gdp-measurement": 58,
+                "productivity-measurement": 58,
+                "living-standards-and-growth": 40,
+                "sources-of-productivity": 41
+              }
+            },
+            "calculationExposure": 164,
+            "graphExposure": 27,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 684,
+            "representation": {
+              "ordinary": {
+                "real-versus-nominal-gdp": 74,
+                "living-standards-and-growth": 71,
+                "limits-of-gdp": 47,
+                "gdp-measurement": 83,
+                "productivity-measurement": 68,
+                "sources-of-productivity": 64,
+                "economic-growth-policy": 56,
+                "gdp-components": 77
+              },
+              "boss": {
+                "gdp-measurement": 28,
+                "sources-of-productivity": 40,
+                "productivity-measurement": 19,
+                "living-standards-and-growth": 15,
+                "gdp-components": 19,
+                "economic-growth-policy": 26,
+                "real-versus-nominal-gdp": 12,
+                "limits-of-gdp": 21
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "productivity-measurement": 63,
+                "gdp-components": 45,
+                "economic-growth-policy": 48,
+                "living-standards-and-growth": 34,
+                "real-versus-nominal-gdp": 27,
+                "gdp-measurement": 58,
+                "limits-of-gdp": 24,
+                "sources-of-productivity": 43
+              },
+              "bridge": {
+                "productivity-measurement": 63,
+                "gdp-components": 38,
+                "economic-growth-policy": 41,
+                "living-standards-and-growth": 34,
+                "sources-of-productivity": 64,
+                "limits-of-gdp": 28,
+                "gdp-measurement": 52,
+                "real-versus-nominal-gdp": 22
+              }
+            },
+            "calculationExposure": 179,
+            "graphExposure": 28,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 646,
+            "representation": {
+              "ordinary": {
+                "cpi-versus-gdp-deflator": 48,
+                "indexing-and-real-values": 71,
+                "economic-growth-policy": 51,
+                "living-standards-and-growth": 61,
+                "sources-of-productivity": 54,
+                "real-versus-nominal-interest-rates": 65,
+                "cpi-and-inflation-measurement": 69,
+                "productivity-measurement": 75,
+                "cpi-bias": 46
+              },
+              "boss": {
+                "indexing-and-real-values": 10,
+                "economic-growth-policy": 25,
+                "cpi-and-inflation-measurement": 28,
+                "sources-of-productivity": 26,
+                "living-standards-and-growth": 16,
+                "cpi-bias": 21,
+                "productivity-measurement": 25,
+                "cpi-versus-gdp-deflator": 20,
+                "real-versus-nominal-interest-rates": 9
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "cpi-and-inflation-measurement": 70,
+                "sources-of-productivity": 31,
+                "cpi-versus-gdp-deflator": 23,
+                "cpi-bias": 25,
+                "real-versus-nominal-interest-rates": 27,
+                "economic-growth-policy": 36,
+                "living-standards-and-growth": 32,
+                "productivity-measurement": 60,
+                "indexing-and-real-values": 19
+              },
+              "bridge": {
+                "cpi-and-inflation-measurement": 67,
+                "sources-of-productivity": 36,
+                "cpi-versus-gdp-deflator": 23,
+                "cpi-bias": 27,
+                "real-versus-nominal-interest-rates": 25,
+                "economic-growth-policy": 34,
+                "living-standards-and-growth": 32,
+                "productivity-measurement": 66,
+                "indexing-and-real-values": 13
+              }
+            },
+            "calculationExposure": 144,
+            "graphExposure": 23,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 506,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 80,
+                "economic-growth-policy": 52,
+                "sources-of-productivity": 67,
+                "indexing-and-real-values": 69,
+                "cpi-versus-gdp-deflator": 57,
+                "cpi-bias": 61,
+                "cpi-and-inflation-measurement": 76,
+                "real-versus-nominal-interest-rates": 73,
+                "living-standards-and-growth": 65
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "real-versus-nominal-interest-rates": 26,
+                "productivity-measurement": 44,
+                "cpi-bias": 31,
+                "cpi-versus-gdp-deflator": 19,
+                "economic-growth-policy": 25,
+                "sources-of-productivity": 27,
+                "living-standards-and-growth": 25,
+                "cpi-and-inflation-measurement": 42,
+                "indexing-and-real-values": 14
+              },
+              "bridge": {
+                "real-versus-nominal-interest-rates": 27,
+                "productivity-measurement": 38,
+                "cpi-bias": 29,
+                "cpi-versus-gdp-deflator": 23,
+                "economic-growth-policy": 24,
+                "living-standards-and-growth": 20,
+                "cpi-and-inflation-measurement": 48,
+                "sources-of-productivity": 30,
+                "indexing-and-real-values": 14
+              }
+            },
+            "calculationExposure": 133,
+            "graphExposure": 10,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 508,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 66,
+                "real-versus-nominal-interest-rates": 57,
+                "economic-growth-policy": 57,
+                "cpi-and-inflation-measurement": 82,
+                "productivity-measurement": 79,
+                "living-standards-and-growth": 68,
+                "cpi-bias": 55,
+                "cpi-versus-gdp-deflator": 60,
+                "indexing-and-real-values": 76
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "cpi-and-inflation-measurement": 43,
+                "productivity-measurement": 45,
+                "cpi-bias": 30,
+                "sources-of-productivity": 27,
+                "real-versus-nominal-interest-rates": 22,
+                "cpi-versus-gdp-deflator": 20,
+                "living-standards-and-growth": 16,
+                "economic-growth-policy": 31,
+                "indexing-and-real-values": 20
+              },
+              "bridge": {
+                "cpi-and-inflation-measurement": 38,
+                "productivity-measurement": 43,
+                "sources-of-productivity": 41,
+                "cpi-versus-gdp-deflator": 23,
+                "real-versus-nominal-interest-rates": 23,
+                "living-standards-and-growth": 18,
+                "economic-growth-policy": 26,
+                "indexing-and-real-values": 21,
+                "cpi-bias": 21
+              }
+            },
+            "calculationExposure": 140,
+            "graphExposure": 8,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 660,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "sources-of-productivity": 68,
+                "real-versus-nominal-interest-rates": 60,
+                "productivity-measurement": 61,
+                "cpi-versus-gdp-deflator": 60,
+                "cpi-and-inflation-measurement": 62,
+                "cpi-bias": 53,
+                "economic-growth-policy": 69,
+                "living-standards-and-growth": 50,
+                "indexing-and-real-values": 57
+              },
+              "legendaryBoss": {
+                "indexing-and-real-values": 23,
+                "sources-of-productivity": 14,
+                "cpi-bias": 22,
+                "real-versus-nominal-interest-rates": 20,
+                "cpi-versus-gdp-deflator": 20,
+                "economic-growth-policy": 18,
+                "productivity-measurement": 19,
+                "living-standards-and-growth": 23,
+                "cpi-and-inflation-measurement": 21
+              },
+              "repair": {
+                "indexing-and-real-values": 27,
+                "real-versus-nominal-interest-rates": 34,
+                "sources-of-productivity": 39,
+                "cpi-versus-gdp-deflator": 22,
+                "productivity-measurement": 49,
+                "cpi-bias": 36,
+                "economic-growth-policy": 44,
+                "cpi-and-inflation-measurement": 46,
+                "living-standards-and-growth": 33
+              },
+              "bridge": {
+                "indexing-and-real-values": 25,
+                "real-versus-nominal-interest-rates": 32,
+                "sources-of-productivity": 48,
+                "cpi-versus-gdp-deflator": 23,
+                "productivity-measurement": 47,
+                "cpi-bias": 38,
+                "economic-growth-policy": 43,
+                "cpi-and-inflation-measurement": 44,
+                "living-standards-and-growth": 30
+              }
+            },
+            "calculationExposure": 150,
+            "graphExposure": 27,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 666,
+            "representation": {
+              "ordinary": {
+                "indexing-and-real-values": 71,
+                "cpi-versus-gdp-deflator": 46,
+                "living-standards-and-growth": 51,
+                "cpi-and-inflation-measurement": 87,
+                "productivity-measurement": 65,
+                "sources-of-productivity": 55,
+                "cpi-bias": 47,
+                "economic-growth-policy": 50,
+                "real-versus-nominal-interest-rates": 68
+              },
+              "boss": {
+                "cpi-and-inflation-measurement": 25,
+                "economic-growth-policy": 16,
+                "living-standards-and-growth": 20,
+                "sources-of-productivity": 42,
+                "real-versus-nominal-interest-rates": 14,
+                "cpi-versus-gdp-deflator": 20,
+                "productivity-measurement": 18,
+                "indexing-and-real-values": 13,
+                "cpi-bias": 12
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "economic-growth-policy": 45,
+                "indexing-and-real-values": 22,
+                "sources-of-productivity": 49,
+                "cpi-and-inflation-measurement": 68,
+                "living-standards-and-growth": 26,
+                "productivity-measurement": 47,
+                "real-versus-nominal-interest-rates": 22,
+                "cpi-bias": 31,
+                "cpi-versus-gdp-deflator": 23
+              },
+              "bridge": {
+                "economic-growth-policy": 42,
+                "indexing-and-real-values": 18,
+                "sources-of-productivity": 54,
+                "cpi-versus-gdp-deflator": 27,
+                "cpi-and-inflation-measurement": 64,
+                "productivity-measurement": 49,
+                "real-versus-nominal-interest-rates": 26,
+                "cpi-bias": 27,
+                "living-standards-and-growth": 26
+              }
+            },
+            "calculationExposure": 151,
+            "graphExposure": 33,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 79,
+    "independentlyRecomputed": 22,
+    "dedicatedCalculationRecords": 12,
+    "failures": 0,
+    "roundingRulesVerified": true,
+    "unitsVerified": true,
+    "graphCoordinatesVerified": true
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2b3_growth/generated_packages/family/index.html",
+      "htmlSha256": "a0f06c6521009bf6b57652e87530fb40d5b6a40e541b9e7c8579dabd442f5f85",
+      "bytes": 1032730,
+      "counts": {
+        "easy": 30,
+        "medium": 29,
+        "hard": 29,
+        "elite": 20,
+        "legendary": 27,
+        "easyBoss": 12,
+        "mediumBoss": 36,
+        "finalBoss": 12,
+        "legendaryBoss": 12,
+        "repair": 14,
+        "repairSeed": 0,
+        "bridge": 10,
+        "calculation": 12,
+        "integration": 0,
+        "graph": 12,
+        "assets": 3,
+        "totalCanonical": 231
+      }
+    },
+    "productivity": {
+      "path": "validation_artifacts/macro_m2b3_growth/generated_packages/productivity/index.html",
+      "htmlSha256": "96195be5322f7928bd387cefbe4d709b27c0536e1c305f10a00bf3446ec40afe",
+      "bytes": 457879,
+      "counts": {
+        "easy": 8,
+        "medium": 8,
+        "hard": 8,
+        "elite": 4,
+        "legendary": 7,
+        "easyBoss": 3,
+        "mediumBoss": 6,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "calculation": 6,
+        "integration": 0,
+        "graph": 7,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    }
+  },
+  "browser": {
+    "phase": "phaseM2b3-growth-productivity-family-maturation-v1",
+    "passed": false,
+    "pending": false,
+    "environmentUnavailable": true,
+    "staticPackageChecksPassed": true,
+    "summary": "Generated family and productivity packages passed composition, embedded-asset, accessibility-metadata, five-mode markup, and inline-script syntax checks. Chromium could not launch in this container because its GPU process terminated before page load; this is an environment limitation rather than an application-level browser failure.",
+    "packages": {
+      "family": {
+        "growthRef": true,
+        "graphDescription": true,
+        "embeddedAsset": true,
+        "fiveModeMarkup": true,
+        "inlineScriptSyntax": true
+      },
+      "productivity": {
+        "growthRef": true,
+        "graphDescription": true,
+        "embeddedAsset": true,
+        "fiveModeMarkup": true,
+        "inlineScriptSyntax": true
+      }
+    },
+    "chromiumAttempt": {
+      "status": "environment-failure-before-page-load",
+      "fatal": "GPU process is not usable"
+    },
+    "nonBlockingIssues": [
+      "Full interactive Chromium browser QA could not be executed in this container."
+    ]
+  },
+  "verdict": "MACRO M2b-3 COMPLETE WITH NON-BLOCKING ISSUES"
+}
