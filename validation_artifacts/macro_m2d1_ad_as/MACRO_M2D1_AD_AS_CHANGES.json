@@ -1,0 +1,302 @@
+{
+  "phase": "phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1",
+  "generatedAt": "2026-08-10T19:47:09.862Z",
+  "summary": {
+    "added": 15,
+    "bossStageFixed": 9,
+    "bridgeRewritten": 4,
+    "assetMetadataCopiesUpdated": 6,
+    "removed": 0,
+    "relocated": 0
+  },
+  "changes": [
+    {
+      "questionId": "P52A-AD-LB-003",
+      "canonicalConceptId": "aggregate-demand",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeHash": "76019402f7df8f06fc43ba86f34357bcfa86409227cd3b1c1a098d478bb9c364",
+      "afterHash": "ce3087b15027c05cf481c98681f1caf8956e5b63625b19d26a74ae61fe363eca",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "P52A-AD-LB-002",
+      "canonicalConceptId": "aggregate-demand",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeHash": "207df690fa11ef1260953d309fbde7d9e8652727ab3a3dc64ed3167e576c777a",
+      "afterHash": "3d86ddac4d9c72dea78c8cb8acbf83d19838a5430d7f499dff859f5ef38b8f52",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "P52A-AD-LB-001",
+      "canonicalConceptId": "aggregate-demand",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeHash": "15bc92c229bb44b9ec9d02c517f9f49960c5d9ca5daf0304478588b12ad84b72",
+      "afterHash": "4d57029e2b23f336180981a9a2861237e6d5024c6ca023ae44be8b816f7b0f3b",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "P52A-AS-LB-003",
+      "canonicalConceptId": "aggregate-supply",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeHash": "7c04111840a513f56b9199f1f721a59971916773cad9ba183eb8e40ebf708fb3",
+      "afterHash": "48f94238a6099ed0adba4c0bb5172176dbf4f24cc09cc18a9678ca3c886acf7d",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "P52A-AS-LB-002",
+      "canonicalConceptId": "aggregate-supply",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeHash": "344f387516a1f57a8a9d674199670611aaacf1aa15c989caa5c467aa7200f656",
+      "afterHash": "65506304497c4416de079e236e745584b5cda2a4040e07422958397144835c83",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "P52A-AS-LB-001",
+      "canonicalConceptId": "aggregate-supply",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeHash": "ac3be86f87458328df92682422911c01e956e85084c787700534b5dabb8e88a4",
+      "afterHash": "e88ae6f2aad26d074e8a2d40c7976c14ee90a81017d723573f233ed0858d6a2c",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "P52B-S3-MEQS-LB-002",
+      "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeHash": "ad5c453240479c84c25a35470ebf4be2cb6030e2150b4f4d7a50ea4bc0b98605",
+      "afterHash": "045f37b8375a8e112266d368364bf14d87afb96180896f4d90890f119a2f8508",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "P52B-S3-MEQS-LB-001",
+      "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeHash": "8fd2daf7686b7dac581cda6d027ec4c714b3e68996f4c8794c51df754771bbbb",
+      "afterHash": "a304c812cd0a4cb32a72c4ac6522f9aa78a833de687592461071fba014fabc21",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "P52B-S3-MEQS-LB-003",
+      "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeHash": "44254c02480db5f6fc77398be3dce0071a2fbe5c15f34e54998eeb312c183848",
+      "afterHash": "2e61faf84c54ad71f95d25c364eb4e16a395f871b8a69b30409f2658bca7cf98",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "ECON-SP-IDENTIFY-AD-SHIFTERS-6020",
+      "canonicalConceptId": "aggregate-demand",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Converts a same-concept check into an explicit Aggregate Demand → Macroeconomic Equilibrium bridge.",
+      "beforeHash": "25405eb0630465bb6c3dcd51ff011f8d6d8d46d164d48e2201781b2c0c68e203",
+      "afterHash": "7686538d720053b3efdaff19f6754480401c8982f8f1cf83f409cc321d3bb8e3",
+      "oldSkill": "identify_ad_shifters",
+      "newSkill": "identify_ad_shifters",
+      "oldRepairSkill": "identify_ad_shifters",
+      "newRepairSkill": "identify_ad_shifters"
+    },
+    {
+      "questionId": "ECON-SP-IDENTIFY-SRAS-SHIFTERS-6023",
+      "canonicalConceptId": "aggregate-supply",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Converts a same-concept check into an explicit Aggregate Supply → Macroeconomic Equilibrium bridge.",
+      "beforeHash": "edbdad20f471af7d7c21c57600469dde952f44aa9a7099ee9698093b957ae296",
+      "afterHash": "72f646dc0eb19f9e8fa60c07bf2c257c06e930001af6e22ad547a1f893e605d6",
+      "oldSkill": "identify_sras_shifters",
+      "newSkill": "identify_sras_shifters",
+      "oldRepairSkill": "identify_sras_shifters",
+      "newRepairSkill": "identify_sras_shifters"
+    },
+    {
+      "questionId": "ECON-SP-TRACE-DEMAND-SHOCK-6025",
+      "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates an explicit Macroeconomic Equilibrium/Shocks → Long-Run Adjustment bridge.",
+      "beforeHash": "40d8197661782276aa0f0a6bb5a2bbf9d35dca83557edc439529dca6cd9df005",
+      "afterHash": "5e1ece7849f94965a80c61654c0fd9d9ac4b0c0a659a2d19c4fee2d430da3196",
+      "oldSkill": "trace_demand_shock",
+      "newSkill": "trace_demand_shock",
+      "oldRepairSkill": "trace_demand_shock",
+      "newRepairSkill": "trace_demand_shock"
+    },
+    {
+      "questionId": "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-6028",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates an explicit Long-Run Adjustment → F9 Stabilization Policy bridge.",
+      "beforeHash": "221e819f628115b7bd587aaef1eca7cbb6c66b5648e07a917b562438cb31e542",
+      "afterHash": "5de766031e4c8def71e8c02344f10a76e9c4c3e475315ed1c1e56c1067a9a09c",
+      "oldSkill": "explain_long_run_adjustment",
+      "newSkill": "bridge_to_stabilization",
+      "oldRepairSkill": "explain_long_run_adjustment",
+      "newRepairSkill": "bridge_to_stabilization"
+    },
+    {
+      "questionId": "PM2D1-LRADJ-E-001",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-M-001",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-H-001",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-L-001",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-L-002",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-L-003",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-EB-001",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-EB-002",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-MB-003",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-MB-004",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-FB-005",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-FB-006",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-LB-001",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-LB-002",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    },
+    {
+      "questionId": "PM2D1-LRADJ-LB-003",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes the verified Long-Run Macroeconomic Adjustment structural gap."
+    }
+  ],
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 68,
+    "mismatches": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "phase": "phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1",
+  "generatedAt": "2026-08-10T19:47:09.862Z",
+  "passed": false,
+  "attempted": true,
+  "console": {
+    "errors": null,
+    "warnings": null
+  },
+  "nonBlockingIssues": [
+    "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, five-mode preflight, asset embedding/accessibility checks, inline-JavaScript syntax, and static markup checks."
+  ],
+  "stderr": "[10386:10415:0810/194655.007402:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[10386:10415:0810/194655.015098:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[10386:10415:0810/194655.016069:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[10386:10415:0810/194655.016399:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[10386:10415:0810/194655.033710:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[10386:10415:0810/194655.056039:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[10386:10386:0810/194655.082408:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[10386:10415:0810/194655.082565:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")",
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2d1_ad_as/generated_packages/family/index.html",
+      "htmlSha256": "7a2abc7f0c4e13c494c03a062a153cdebbbf56558f96c1b76e738f3456fd54ff",
+      "inlineScriptsChecked": 1
+    },
+    "longRun": {
+      "path": "validation_artifacts/macro_m2d1_ad_as/generated_packages/longRun/index.html",
+      "htmlSha256": "18bb0f3335c83b09a2fd4e25d93577c60e7796a8d9ac77c24622c17899241924",
+      "inlineScriptsChecked": 1
+    }
+  }
+}
