@@ -1,0 +1,26 @@
+{
+  "phase": "phaseM2c3-money-market-policy-transmission-family-maturation-v1",
+  "generatedAt": "2026-08-10T19:21:43.209Z",
+  "passed": false,
+  "attempted": true,
+  "console": {
+    "errors": null,
+    "warnings": null
+  },
+  "nonBlockingIssues": [
+    "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, five-mode preflight, asset embedding/accessibility checks, inline-JavaScript syntax, and static markup checks."
+  ],
+  "stderr": "[9464:9492:0810/192128.411589:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[9464:9492:0810/192128.421534:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[9464:9492:0810/192128.425123:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[9464:9492:0810/192128.425597:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[9464:9492:0810/192128.455442:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[9464:9492:0810/192128.493893:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[9464:9464:0810/192128.530260:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[9464:9492:0810/192128.530595:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")",
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2c3_money_market_transmission/generated_packages/family/index.html",
+      "htmlSha256": "2f655d51bca1092f7b10b4c0e0cb333e7e4411d950f39d908d36a0abbc18dff7",
+      "inlineScriptsChecked": 1
+    },
+    "moneyMarket": {
+      "path": "validation_artifacts/macro_m2c3_money_market_transmission/generated_packages/moneyMarket/index.html",
+      "htmlSha256": "27fe5c384594015fc7c1feafef1fd5fcc38846aebac95acb83bc64b4b959300e",
+      "inlineScriptsChecked": 1
+    }
+  }
+}

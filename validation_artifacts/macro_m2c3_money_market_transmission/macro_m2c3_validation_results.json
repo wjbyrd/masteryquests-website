@@ -1,0 +1,1538 @@
+{
+  "phase": "phaseM2c3-money-market-policy-transmission-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1",
+  "librarySha256": "2403d29bf6e6d2f34aac3f1d32bc50693bc65b2a22ce47e412382cd0989a69cc",
+  "beforeCounts": {
+    "liquidity-preference-and-money-market": {
+      "easy": 7,
+      "medium": 10,
+      "hard": 7,
+      "elite": 11,
+      "legendary": 6,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 4,
+      "total": 64
+    },
+    "monetary-policy-transmission": {
+      "easy": 11,
+      "medium": 10,
+      "hard": 10,
+      "elite": 6,
+      "legendary": 14,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 73
+    }
+  },
+  "afterCounts": {
+    "liquidity-preference-and-money-market": {
+      "total": 74,
+      "easy": 7,
+      "medium": 10,
+      "hard": 7,
+      "elite": 11,
+      "legendary": 13,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 5,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 5,
+      "graphLinked": 37,
+      "calculationLinked": 3
+    },
+    "monetary-policy-transmission": {
+      "total": 75,
+      "easy": 11,
+      "medium": 10,
+      "hard": 10,
+      "elite": 6,
+      "legendary": 14,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 34,
+      "calculationLinked": 8
+    }
+  },
+  "familyBefore": {
+    "easy": 18,
+    "medium": 20,
+    "hard": 17,
+    "elite": 17,
+    "legendary": 20,
+    "calculation": 0,
+    "integration": 0,
+    "easyBoss": 6,
+    "mediumBoss": 6,
+    "finalBoss": 6,
+    "legendaryBoss": 6,
+    "repair": 14,
+    "repairSeed": 0,
+    "bridge": 7,
+    "total": 137
+  },
+  "familyAfter": {
+    "total": 149,
+    "easy": 18,
+    "medium": 20,
+    "hard": 17,
+    "elite": 17,
+    "legendary": 27,
+    "calculation": 0,
+    "integration": 0,
+    "easyBoss": 6,
+    "mediumBoss": 6,
+    "finalBoss": 6,
+    "legendaryBoss": 9,
+    "repair": 15,
+    "repairSeed": 0,
+    "bridge": 8,
+    "graphLinked": 71,
+    "calculationLinked": 11
+  },
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 70,
+    "nonF7Mismatches": []
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "liquidity-preference-and-money-market": [
+      "middle",
+      "final",
+      "opening",
+      "middle",
+      "final"
+    ],
+    "monetary-policy-transmission": [
+      "final",
+      "middle",
+      "opening",
+      "final"
+    ]
+  },
+  "quality": {
+    "groups": {
+      "liquidity-preference-and-money-market::legendary": {
+        "count": 7,
+        "longest": 4,
+        "positions": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "uniquelyLongestRate": 0.571,
+        "meanCorrectToDistractorRatio": 1.397
+      },
+      "liquidity-preference-and-money-market::legendaryBoss": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.311
+      },
+      "liquidity-preference-and-money-market::repair": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.249
+      },
+      "liquidity-preference-and-money-market::bridge": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.013
+      },
+      "monetary-policy-transmission::legendaryBoss": {
+        "count": 1,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 1.412
+      },
+      "monetary-policy-transmission::repair": {
+        "count": 1,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 1.543
+      }
+    },
+    "exact": [],
+    "near": [],
+    "numberSwaps": [],
+    "repeatedAnswerSets": [
+      [
+        "ECON-SP-MEDIUM-144",
+        "ECON-SP-HARD-226"
+      ],
+      [
+        "ECON-SP-ELITE-316",
+        "ECON-SP-ELITE-317"
+      ]
+    ],
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedNumberSwaps": [],
+    "introducedRepeatedAnswerSets": [],
+    "answerLengthFailures": []
+  },
+  "routeAudit": {
+    "liquidity-preference-and-money-market": {
+      "repairRecords": 7,
+      "repairReachable": 7,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-LIQUIDITY-PREFERENCE-THEORY-6029": [],
+        "ECON-SP-MONEY-DEMAND-INTEREST-RATE-6030": [],
+        "LG-B-6017": [],
+        "LG-B-6018": [
+          "monetary-policy-transmission"
+        ],
+        "PM2C3-LPMM-BR-001": [
+          "monetary-policy-transmission"
+        ]
+      }
+    },
+    "monetary-policy-transmission": {
+      "repairRecords": 8,
+      "repairReachable": 8,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-MONETARY-POLICY-TRANSMISSION-6031": [],
+        "LG-B-6019": [
+          "aggregate-demand"
+        ],
+        "LG-B-6020": [
+          "aggregate-demand"
+        ]
+      }
+    }
+  },
+  "graphAudit": {
+    "graphLinkedRecords": 71,
+    "newGraphQuestionIds": [
+      "PM2C3-LPMM-L-001",
+      "PM2C3-LPMM-L-002",
+      "PM2C3-LPMM-L-003",
+      "PM2C3-LPMM-L-006",
+      "PM2C3-LPMM-LB-001",
+      "PM2C3-LPMM-LB-002"
+    ],
+    "assetMetadata": [
+      {
+        "conceptId": "liquidity-preference-and-money-market",
+        "filename": "ad_ms_md.webp",
+        "imageAlt": "Two-panel graph showing a leftward money-supply shift that raises the interest rate and a leftward aggregate-demand shift that reduces output at a fixed price level.",
+        "graphDescription": "Left panel: interest rate r is on the vertical axis and money M on the horizontal axis. A downward-sloping MD curve intersects MS1 at r1; MS2 is left of MS1 and intersects MD at the higher rate r2. Right panel: price level P is on the vertical axis and output Y on the horizontal axis. AD2 lies left of AD1. At price level P1, output is Y1 on AD1 and Y2 on AD2.",
+        "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4"
+      },
+      {
+        "conceptId": "liquidity-preference-and-money-market",
+        "filename": "moneyd2_moneys2.webp",
+        "imageAlt": "Money-market graph with two vertical money-supply curves and two downward-sloping money-demand curves.",
+        "graphDescription": "The vertical axis is interest rate r and the horizontal axis is quantity of money Qm. MS1 is vertical at Qm1 and MS2 is vertical to its right at Qm2. MD1 slopes downward through e at Qm1, r2 and g at Qm2, r1. MD2 is shifted right/up and slopes downward through a at Qm1, r4 and d at Qm2, r3. Additional labeled points are b at Qm2, r4; c at Qm1, r3; and f at Qm1, r1.",
+        "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44"
+      },
+      {
+        "conceptId": "monetary-policy-transmission",
+        "filename": "ad_ms_md.webp",
+        "imageAlt": "Two-panel graph showing a leftward money-supply shift that raises the interest rate and a leftward aggregate-demand shift that reduces output at a fixed price level.",
+        "graphDescription": "Left panel: interest rate r is on the vertical axis and money M on the horizontal axis. A downward-sloping MD curve intersects MS1 at r1; MS2 is left of MS1 and intersects MD at the higher rate r2. Right panel: price level P is on the vertical axis and output Y on the horizontal axis. AD2 lies left of AD1. At price level P1, output is Y1 on AD1 and Y2 on AD2.",
+        "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4"
+      },
+      {
+        "conceptId": "monetary-policy-transmission",
+        "filename": "moneyd2_moneys2.webp",
+        "imageAlt": "Money-market graph with two vertical money-supply curves and two downward-sloping money-demand curves.",
+        "graphDescription": "The vertical axis is interest rate r and the horizontal axis is quantity of money Qm. MS1 is vertical at Qm1 and MS2 is vertical to its right at Qm2. MD1 slopes downward through e at Qm1, r2 and g at Qm2, r1. MD2 is shifted right/up and slopes downward through a at Qm1, r4 and d at Qm2, r3. Additional labeled points are b at Qm2, r4; c at Qm1, r3; and f at Qm1, r1.",
+        "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44"
+      }
+    ],
+    "newGraphAssets": 0
+  },
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "monetary-policy-transmission": 1177,
+          "liquidity-preference-and-money-market": 848
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.4188,
+          "monetary-policy-transmission": 0.5812
+        }
+      },
+      "boss": {
+        "counts": {
+          "liquidity-preference-and-money-market": 354,
+          "monetary-policy-transmission": 321
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.5244,
+          "monetary-policy-transmission": 0.4756
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "monetary-policy-transmission": 1263,
+          "liquidity-preference-and-money-market": 987
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.4387,
+          "monetary-policy-transmission": 0.5613
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "liquidity-preference-and-money-market": 966,
+          "monetary-policy-transmission": 1284
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.4293,
+          "monetary-policy-transmission": 0.5707
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "liquidity-preference-and-money-market": 975,
+          "monetary-policy-transmission": 1050
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.4815,
+          "monetary-policy-transmission": 0.5185
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "monetary-policy-transmission": 300,
+          "liquidity-preference-and-money-market": 375
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.5556,
+          "monetary-policy-transmission": 0.4444
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "monetary-policy-transmission": 1151,
+          "liquidity-preference-and-money-market": 874
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.4316,
+          "monetary-policy-transmission": 0.5684
+        }
+      },
+      "boss": {
+        "counts": {
+          "liquidity-preference-and-money-market": 326,
+          "monetary-policy-transmission": 349
+        },
+        "shares": {
+          "liquidity-preference-and-money-market": 0.483,
+          "monetary-policy-transmission": 0.517
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "liquidity-preference-and-money-market": 0,
+          "monetary-policy-transmission": 0
+        }
+      }
+    }
+  },
+  "neighboringLegendaryIssues": [
+    {
+      "conceptId": "aggregate-demand",
+      "questionId": "P52A-AD-LB-001",
+      "bossStage": null
+    },
+    {
+      "conceptId": "aggregate-demand",
+      "questionId": "P52A-AD-LB-002",
+      "bossStage": null
+    },
+    {
+      "conceptId": "aggregate-demand",
+      "questionId": "P52A-AD-LB-003",
+      "bossStage": null
+    },
+    {
+      "conceptId": "aggregate-supply",
+      "questionId": "P52A-AS-LB-001",
+      "bossStage": null
+    },
+    {
+      "conceptId": "aggregate-supply",
+      "questionId": "P52A-AS-LB-002",
+      "bossStage": null
+    },
+    {
+      "conceptId": "aggregate-supply",
+      "questionId": "P52A-AS-LB-003",
+      "bossStage": null
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "questionId": "P52B-S3-MEQS-LB-001",
+      "bossStage": "mastery"
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "questionId": "P52B-S3-MEQS-LB-002",
+      "bossStage": "mastery"
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "questionId": "P52B-S3-MEQS-LB-003",
+      "bossStage": "mastery"
+    }
+  ],
+  "simulation": {
+    "totalSessions": 725,
+    "solo": {
+      "liquidity-preference-and-money-market": {
+        "name": "liquidity-preference-and-money-market solo",
+        "perMode": 25,
+        "totalSessions": 125,
+        "byMode": {
+          "standard": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 900,
+            "auxiliarySelections": 838,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 675
+              },
+              "boss": {
+                "liquidity-preference-and-money-market": 225
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "liquidity-preference-and-money-market": 419
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 419
+              }
+            },
+            "calculationExposure": 25,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 750,
+            "auxiliarySelections": 650,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 750
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "liquidity-preference-and-money-market": 325
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 325
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 150,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 750,
+            "auxiliarySelections": 634,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 750
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "liquidity-preference-and-money-market": 317
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 317
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 150,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 900,
+            "auxiliarySelections": 830,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "liquidity-preference-and-money-market": 675
+              },
+              "legendaryBoss": {
+                "liquidity-preference-and-money-market": 225
+              },
+              "repair": {
+                "liquidity-preference-and-money-market": 415
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 415
+              }
+            },
+            "calculationExposure": 90,
+            "duplicateCanonicalSelectionsBySession": 450,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 900,
+            "auxiliarySelections": 838,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 675
+              },
+              "boss": {
+                "liquidity-preference-and-money-market": 225
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "liquidity-preference-and-money-market": 419
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 419
+              }
+            },
+            "calculationExposure": 25,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "monetary-policy-transmission": {
+        "name": "monetary-policy-transmission solo",
+        "perMode": 25,
+        "totalSessions": 125,
+        "byMode": {
+          "standard": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 900,
+            "auxiliarySelections": 826,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 675
+              },
+              "boss": {
+                "monetary-policy-transmission": 225
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-transmission": 413
+              },
+              "bridge": {
+                "monetary-policy-transmission": 413
+              }
+            },
+            "calculationExposure": 25,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 750,
+            "auxiliarySelections": 626,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 750
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-transmission": 313
+              },
+              "bridge": {
+                "monetary-policy-transmission": 313
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 750,
+            "auxiliarySelections": 610,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 750
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-transmission": 305
+              },
+              "bridge": {
+                "monetary-policy-transmission": 305
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 900,
+            "auxiliarySelections": 804,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "monetary-policy-transmission": 675
+              },
+              "legendaryBoss": {
+                "monetary-policy-transmission": 225
+              },
+              "repair": {
+                "monetary-policy-transmission": 402
+              },
+              "bridge": {
+                "monetary-policy-transmission": 402
+              }
+            },
+            "calculationExposure": 354,
+            "duplicateCanonicalSelectionsBySession": 450,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "mainSelections": 900,
+            "auxiliarySelections": 832,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 675
+              },
+              "boss": {
+                "monetary-policy-transmission": 225
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-transmission": 416
+              },
+              "bridge": {
+                "monetary-policy-transmission": 416
+              }
+            },
+            "calculationExposure": 25,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F7 family",
+      "perMode": 75,
+      "totalSessions": 375,
+      "byMode": {
+        "standard": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2700,
+          "auxiliarySelections": 2472,
+          "representation": {
+            "ordinary": {
+              "monetary-policy-transmission": 1177,
+              "liquidity-preference-and-money-market": 848
+            },
+            "boss": {
+              "liquidity-preference-and-money-market": 354,
+              "monetary-policy-transmission": 321
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "monetary-policy-transmission": 659,
+              "liquidity-preference-and-money-market": 577
+            },
+            "bridge": {
+              "monetary-policy-transmission": 526,
+              "liquidity-preference-and-money-market": 710
+            }
+          },
+          "calculationExposure": 77,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2250,
+          "auxiliarySelections": 1888,
+          "representation": {
+            "ordinary": {
+              "monetary-policy-transmission": 1263,
+              "liquidity-preference-and-money-market": 987
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "liquidity-preference-and-money-market": 399,
+              "monetary-policy-transmission": 545
+            },
+            "bridge": {
+              "monetary-policy-transmission": 437,
+              "liquidity-preference-and-money-market": 507
+            }
+          },
+          "calculationExposure": 0,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2250,
+          "auxiliarySelections": 1902,
+          "representation": {
+            "ordinary": {
+              "liquidity-preference-and-money-market": 966,
+              "monetary-policy-transmission": 1284
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "monetary-policy-transmission": 604,
+              "liquidity-preference-and-money-market": 347
+            },
+            "bridge": {
+              "liquidity-preference-and-money-market": 519,
+              "monetary-policy-transmission": 432
+            }
+          },
+          "calculationExposure": 0,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2700,
+          "auxiliarySelections": 2496,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "liquidity-preference-and-money-market": 975,
+              "monetary-policy-transmission": 1050
+            },
+            "legendaryBoss": {
+              "monetary-policy-transmission": 300,
+              "liquidity-preference-and-money-market": 375
+            },
+            "repair": {
+              "monetary-policy-transmission": 773,
+              "liquidity-preference-and-money-market": 475
+            },
+            "bridge": {
+              "monetary-policy-transmission": 716,
+              "liquidity-preference-and-money-market": 532
+            }
+          },
+          "calculationExposure": 675,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2700,
+          "auxiliarySelections": 2484,
+          "representation": {
+            "ordinary": {
+              "monetary-policy-transmission": 1151,
+              "liquidity-preference-and-money-market": 874
+            },
+            "boss": {
+              "liquidity-preference-and-money-market": 326,
+              "monetary-policy-transmission": 349
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "liquidity-preference-and-money-market": 561,
+              "monetary-policy-transmission": 681
+            },
+            "bridge": {
+              "monetary-policy-transmission": 528,
+              "liquidity-preference-and-money-market": 714
+            }
+          },
+          "calculationExposure": 68,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 326,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 44,
+                "inflation-tax-and-deflation": 35,
+                "fisher-effect": 40,
+                "liquidity-preference-and-money-market": 36,
+                "monetary-policy-transmission": 45,
+                "inflation-costs": 34,
+                "monetary-neutrality": 36
+              },
+              "boss": {
+                "monetary-neutrality": 10,
+                "inflation-tax-and-deflation": 14,
+                "monetary-policy-transmission": 12,
+                "fisher-effect": 13,
+                "liquidity-preference-and-money-market": 14,
+                "quantity-theory-of-money": 14,
+                "inflation-costs": 13
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 23,
+                "fisher-effect": 12,
+                "inflation-costs": 35,
+                "quantity-theory-of-money": 36,
+                "monetary-policy-transmission": 21,
+                "liquidity-preference-and-money-market": 24,
+                "inflation-tax-and-deflation": 12
+              },
+              "bridge": {
+                "quantity-theory-of-money": 25,
+                "inflation-costs": 35,
+                "liquidity-preference-and-money-market": 30,
+                "fisher-effect": 19,
+                "monetary-neutrality": 27,
+                "inflation-tax-and-deflation": 12,
+                "monetary-policy-transmission": 15
+              }
+            },
+            "calculationExposure": 46,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 248,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 59,
+                "quantity-theory-of-money": 48,
+                "fisher-effect": 43,
+                "inflation-tax-and-deflation": 32,
+                "monetary-neutrality": 49,
+                "liquidity-preference-and-money-market": 39,
+                "inflation-costs": 30
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 9,
+                "monetary-neutrality": 20,
+                "monetary-policy-transmission": 34,
+                "inflation-tax-and-deflation": 11,
+                "quantity-theory-of-money": 18,
+                "liquidity-preference-and-money-market": 13,
+                "inflation-costs": 19
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 17,
+                "fisher-effect": 9,
+                "inflation-costs": 25,
+                "inflation-tax-and-deflation": 14,
+                "monetary-neutrality": 21,
+                "monetary-policy-transmission": 19,
+                "quantity-theory-of-money": 19
+              }
+            },
+            "calculationExposure": 43,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 248,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 34,
+                "monetary-policy-transmission": 55,
+                "quantity-theory-of-money": 60,
+                "monetary-neutrality": 35,
+                "fisher-effect": 37,
+                "liquidity-preference-and-money-market": 43,
+                "inflation-costs": 36
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 7,
+                "inflation-costs": 20,
+                "monetary-policy-transmission": 29,
+                "quantity-theory-of-money": 26,
+                "liquidity-preference-and-money-market": 21,
+                "monetary-neutrality": 16,
+                "inflation-tax-and-deflation": 5
+              },
+              "bridge": {
+                "inflation-costs": 29,
+                "monetary-policy-transmission": 19,
+                "inflation-tax-and-deflation": 7,
+                "quantity-theory-of-money": 25,
+                "liquidity-preference-and-money-market": 21,
+                "fisher-effect": 11,
+                "monetary-neutrality": 12
+              }
+            },
+            "calculationExposure": 35,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 350,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "inflation-costs": 22,
+                "monetary-policy-transmission": 62,
+                "quantity-theory-of-money": 43,
+                "liquidity-preference-and-money-market": 66,
+                "fisher-effect": 27,
+                "inflation-tax-and-deflation": 16,
+                "monetary-neutrality": 34
+              },
+              "legendaryBoss": {
+                "quantity-theory-of-money": 20,
+                "inflation-costs": 10,
+                "liquidity-preference-and-money-market": 14,
+                "monetary-neutrality": 12,
+                "inflation-tax-and-deflation": 12,
+                "fisher-effect": 8,
+                "monetary-policy-transmission": 14
+              },
+              "repair": {
+                "liquidity-preference-and-money-market": 29,
+                "monetary-policy-transmission": 49,
+                "quantity-theory-of-money": 24,
+                "fisher-effect": 10,
+                "inflation-tax-and-deflation": 10,
+                "inflation-costs": 30,
+                "monetary-neutrality": 23
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 22,
+                "monetary-policy-transmission": 37,
+                "quantity-theory-of-money": 30,
+                "inflation-costs": 26,
+                "monetary-neutrality": 28,
+                "fisher-effect": 16,
+                "inflation-tax-and-deflation": 16
+              }
+            },
+            "calculationExposure": 37,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 308,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 44,
+                "inflation-tax-and-deflation": 31,
+                "inflation-costs": 36,
+                "monetary-neutrality": 44,
+                "liquidity-preference-and-money-market": 40,
+                "fisher-effect": 31,
+                "monetary-policy-transmission": 44
+              },
+              "boss": {
+                "liquidity-preference-and-money-market": 12,
+                "monetary-neutrality": 14,
+                "monetary-policy-transmission": 13,
+                "quantity-theory-of-money": 13,
+                "inflation-costs": 11,
+                "fisher-effect": 16,
+                "inflation-tax-and-deflation": 11
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 22,
+                "fisher-effect": 14,
+                "inflation-costs": 25,
+                "liquidity-preference-and-money-market": 18,
+                "monetary-policy-transmission": 38,
+                "quantity-theory-of-money": 26,
+                "inflation-tax-and-deflation": 11
+              },
+              "bridge": {
+                "monetary-neutrality": 40,
+                "monetary-policy-transmission": 25,
+                "fisher-effect": 19,
+                "inflation-costs": 17,
+                "liquidity-preference-and-money-market": 17,
+                "quantity-theory-of-money": 25,
+                "inflation-tax-and-deflation": 11
+              }
+            },
+            "calculationExposure": 41,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 338,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 42,
+                "aggregate-supply": 49,
+                "macroeconomic-equilibrium-and-shocks": 51,
+                "long-run-macroeconomic-adjustment": 30,
+                "aggregate-demand": 42,
+                "monetary-policy-transmission": 56
+              },
+              "boss": {
+                "aggregate-demand": 19,
+                "liquidity-preference-and-money-market": 25,
+                "monetary-policy-transmission": 15,
+                "aggregate-supply": 10,
+                "macroeconomic-equilibrium-and-shocks": 18,
+                "long-run-macroeconomic-adjustment": 3
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-supply": 31,
+                "aggregate-demand": 36,
+                "monetary-policy-transmission": 30,
+                "long-run-macroeconomic-adjustment": 18,
+                "liquidity-preference-and-money-market": 21,
+                "macroeconomic-equilibrium-and-shocks": 33
+              },
+              "bridge": {
+                "aggregate-supply": 38,
+                "liquidity-preference-and-money-market": 32,
+                "macroeconomic-equilibrium-and-shocks": 25,
+                "long-run-macroeconomic-adjustment": 19,
+                "monetary-policy-transmission": 27,
+                "aggregate-demand": 28
+              }
+            },
+            "calculationExposure": 5,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 258,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 62,
+                "aggregate-demand": 47,
+                "liquidity-preference-and-money-market": 61,
+                "macroeconomic-equilibrium-and-shocks": 50,
+                "long-run-macroeconomic-adjustment": 34,
+                "aggregate-supply": 46
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-demand": 29,
+                "aggregate-supply": 22,
+                "macroeconomic-equilibrium-and-shocks": 26,
+                "long-run-macroeconomic-adjustment": 17,
+                "monetary-policy-transmission": 16,
+                "liquidity-preference-and-money-market": 19
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 27,
+                "aggregate-supply": 28,
+                "macroeconomic-equilibrium-and-shocks": 17,
+                "long-run-macroeconomic-adjustment": 20,
+                "monetary-policy-transmission": 14,
+                "aggregate-demand": 23
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 256,
+            "representation": {
+              "ordinary": {
+                "macroeconomic-equilibrium-and-shocks": 56,
+                "monetary-policy-transmission": 62,
+                "long-run-macroeconomic-adjustment": 31,
+                "aggregate-demand": 42,
+                "liquidity-preference-and-money-market": 57,
+                "aggregate-supply": 52
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-supply": 35,
+                "aggregate-demand": 25,
+                "macroeconomic-equilibrium-and-shocks": 24,
+                "liquidity-preference-and-money-market": 15,
+                "long-run-macroeconomic-adjustment": 14,
+                "monetary-policy-transmission": 15
+              },
+              "bridge": {
+                "aggregate-supply": 41,
+                "monetary-policy-transmission": 19,
+                "macroeconomic-equilibrium-and-shocks": 19,
+                "liquidity-preference-and-money-market": 20,
+                "aggregate-demand": 18,
+                "long-run-macroeconomic-adjustment": 11
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 322,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "macroeconomic-equilibrium-and-shocks": 36,
+                "aggregate-supply": 33,
+                "liquidity-preference-and-money-market": 66,
+                "monetary-policy-transmission": 86,
+                "aggregate-demand": 33,
+                "long-run-macroeconomic-adjustment": 16
+              },
+              "legendaryBoss": {
+                "monetary-policy-transmission": 40,
+                "liquidity-preference-and-money-market": 50
+              },
+              "repair": {
+                "monetary-policy-transmission": 54,
+                "aggregate-supply": 24,
+                "liquidity-preference-and-money-market": 33,
+                "aggregate-demand": 18,
+                "macroeconomic-equilibrium-and-shocks": 20,
+                "long-run-macroeconomic-adjustment": 12
+              },
+              "bridge": {
+                "monetary-policy-transmission": 54,
+                "aggregate-supply": 26,
+                "liquidity-preference-and-money-market": 35,
+                "aggregate-demand": 16,
+                "macroeconomic-equilibrium-and-shocks": 11,
+                "long-run-macroeconomic-adjustment": 19
+              }
+            },
+            "calculationExposure": 67,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 324,
+            "representation": {
+              "ordinary": {
+                "aggregate-supply": 42,
+                "monetary-policy-transmission": 60,
+                "long-run-macroeconomic-adjustment": 29,
+                "aggregate-demand": 41,
+                "liquidity-preference-and-money-market": 52,
+                "macroeconomic-equilibrium-and-shocks": 46
+              },
+              "boss": {
+                "aggregate-supply": 17,
+                "monetary-policy-transmission": 19,
+                "macroeconomic-equilibrium-and-shocks": 14,
+                "liquidity-preference-and-money-market": 24,
+                "aggregate-demand": 13,
+                "long-run-macroeconomic-adjustment": 3
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "liquidity-preference-and-money-market": 25,
+                "monetary-policy-transmission": 25,
+                "aggregate-demand": 31,
+                "macroeconomic-equilibrium-and-shocks": 30,
+                "aggregate-supply": 34,
+                "long-run-macroeconomic-adjustment": 17
+              },
+              "bridge": {
+                "liquidity-preference-and-money-market": 35,
+                "long-run-macroeconomic-adjustment": 17,
+                "aggregate-supply": 44,
+                "aggregate-demand": 21,
+                "macroeconomic-equilibrium-and-shocks": 21,
+                "monetary-policy-transmission": 24
+              }
+            },
+            "calculationExposure": 5,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 35,
+    "independentlyRecomputed": 8,
+    "dedicatedCalculationRecords": 0,
+    "failures": 0,
+    "records": [
+      {
+        "questionId": "LG-Q-4002",
+        "published": "$160 billion",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-4005",
+        "published": "$175 billion",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9052",
+        "published": "MS shifts left, r rises, investment falls, and AD decreases by $200 billion.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9053",
+        "published": "MS shifts left, r rises, investment falls, and AD decreases by $240 billion.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9130",
+        "published": "Money demand shifts right, r rises, investment falls, and AD decreases by $200 billion.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9137",
+        "published": "MD shifts left, r falls, investment rises, and AD increases by $90 billion.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9131",
+        "published": "AD falls by $150 billion.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9132",
+        "published": "3 percentage points",
+        "status": "PASS"
+      }
+    ]
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2c3_money_market_transmission/generated_packages/family/index.html",
+      "htmlSha256": "2f655d51bca1092f7b10b4c0e0cb333e7e4411d950f39d908d36a0abbc18dff7",
+      "bytes": 802463,
+      "counts": {
+        "easy": 18,
+        "medium": 20,
+        "hard": 17,
+        "elite": 17,
+        "legendary": 27,
+        "easyBoss": 6,
+        "mediumBoss": 6,
+        "finalBoss": 6,
+        "legendaryBoss": 9,
+        "repair": 15,
+        "repairSeed": 0,
+        "bridge": 8,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 71,
+        "assets": 4,
+        "totalCanonical": 149
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    },
+    "moneyMarket": {
+      "path": "validation_artifacts/macro_m2c3_money_market_transmission/generated_packages/moneyMarket/index.html",
+      "htmlSha256": "27fe5c384594015fc7c1feafef1fd5fcc38846aebac95acb83bc64b4b959300e",
+      "bytes": 529617,
+      "counts": {
+        "easy": 7,
+        "medium": 10,
+        "hard": 7,
+        "elite": 11,
+        "legendary": 13,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 5,
+        "repair": 7,
+        "repairSeed": 0,
+        "bridge": 5,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 37,
+        "assets": 2,
+        "totalCanonical": 74
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    }
+  },
+  "browser": {
+    "passed": false,
+    "attempted": true,
+    "console": {
+      "errors": null,
+      "warnings": null
+    },
+    "nonBlockingIssues": [
+      "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, five-mode preflight, asset embedding/accessibility checks, inline-JavaScript syntax, and static markup checks."
+    ],
+    "stderr": "[9464:9492:0810/192128.411589:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[9464:9492:0810/192128.421534:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[9464:9492:0810/192128.425123:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[9464:9492:0810/192128.425597:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[9464:9492:0810/192128.455442:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[9464:9492:0810/192128.493893:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[9464:9464:0810/192128.530260:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[9464:9492:0810/192128.530595:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")"
+  },
+  "verdict": "MACRO M2c-3 COMPLETE WITH NON-BLOCKING ISSUES"
+}

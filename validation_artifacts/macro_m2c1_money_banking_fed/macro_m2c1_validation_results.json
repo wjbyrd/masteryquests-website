@@ -1,0 +1,2705 @@
+{
+  "phase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1",
+  "librarySha256": "04858953aa7e200d089f948248e3010b2bfa40ab2748b5a13b9ad36728d60260",
+  "beforeCounts": {
+    "money-functions-and-measures": {
+      "easy": 12,
+      "medium": 8,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 6,
+      "calculation": 3,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 11,
+      "repairSeed": 0,
+      "bridge": 4,
+      "total": 66
+    },
+    "bank-money-creation": {
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 13,
+      "legendary": 7,
+      "calculation": 30,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 5,
+      "repair": 10,
+      "repairSeed": 0,
+      "bridge": 6,
+      "total": 90
+    },
+    "central-bank-and-federal-reserve": {
+      "easy": 7,
+      "medium": 4,
+      "hard": 4,
+      "elite": 2,
+      "legendary": 3,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 0,
+      "finalBoss": 0,
+      "legendaryBoss": 1,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 35
+    },
+    "monetary-policy-tools": {
+      "easy": 7,
+      "medium": 8,
+      "hard": 6,
+      "elite": 8,
+      "legendary": 6,
+      "calculation": 2,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 60
+    },
+    "monetary-control-limits": {
+      "easy": 6,
+      "medium": 5,
+      "hard": 9,
+      "elite": 9,
+      "legendary": 8,
+      "calculation": 2,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 0,
+      "finalBoss": 0,
+      "legendaryBoss": 4,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 53
+    }
+  },
+  "afterCounts": {
+    "money-functions-and-measures": {
+      "total": 66,
+      "easy": 12,
+      "medium": 8,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 6,
+      "calculation": 3,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 11,
+      "repairSeed": 0,
+      "bridge": 4,
+      "graphLinked": 0,
+      "calculationLinked": 7
+    },
+    "bank-money-creation": {
+      "total": 90,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 13,
+      "legendary": 7,
+      "calculation": 30,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 5,
+      "repair": 10,
+      "repairSeed": 0,
+      "bridge": 6,
+      "graphLinked": 0,
+      "calculationLinked": 31
+    },
+    "central-bank-and-federal-reserve": {
+      "total": 50,
+      "easy": 7,
+      "medium": 6,
+      "hard": 6,
+      "elite": 2,
+      "legendary": 6,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 0
+    },
+    "monetary-policy-tools": {
+      "total": 60,
+      "easy": 7,
+      "medium": 8,
+      "hard": 6,
+      "elite": 8,
+      "legendary": 6,
+      "calculation": 2,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 4
+    },
+    "monetary-control-limits": {
+      "total": 60,
+      "easy": 6,
+      "medium": 6,
+      "hard": 9,
+      "elite": 9,
+      "legendary": 8,
+      "calculation": 2,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 5
+    }
+  },
+  "familyBefore": {
+    "easy": 38,
+    "medium": 31,
+    "hard": 31,
+    "elite": 36,
+    "legendary": 30,
+    "calculation": 37,
+    "integration": 0,
+    "easyBoss": 15,
+    "mediumBoss": 9,
+    "finalBoss": 9,
+    "legendaryBoss": 17,
+    "repair": 40,
+    "repairSeed": 0,
+    "bridge": 19,
+    "total": 304
+  },
+  "familyAfter": {
+    "total": 326,
+    "easy": 38,
+    "medium": 34,
+    "hard": 33,
+    "elite": 36,
+    "legendary": 33,
+    "calculation": 37,
+    "easyBoss": 15,
+    "mediumBoss": 15,
+    "finalBoss": 15,
+    "legendaryBoss": 19,
+    "repair": 40,
+    "repairSeed": 0,
+    "bridge": 19,
+    "graphLinked": 0,
+    "calculationLinked": 47
+  },
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 67,
+    "nonF5Mismatches": []
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "money-functions-and-measures": [
+      "final",
+      "middle",
+      "opening"
+    ],
+    "bank-money-creation": [
+      "middle",
+      "final",
+      "opening",
+      "final",
+      "middle"
+    ],
+    "central-bank-and-federal-reserve": [
+      "final",
+      "opening",
+      "middle"
+    ],
+    "monetary-policy-tools": [
+      "middle",
+      "final",
+      "final",
+      "opening"
+    ],
+    "monetary-control-limits": [
+      "middle",
+      "middle",
+      "final",
+      "opening"
+    ]
+  },
+  "quality": {
+    "groups": {
+      "money-functions-and-measures::easy": {
+        "count": 4,
+        "longest": 1,
+        "positions": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.209
+      },
+      "money-functions-and-measures::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "money-functions-and-measures::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.026
+      },
+      "bank-money-creation::repair": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.061
+      },
+      "bank-money-creation::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.154
+      },
+      "central-bank-and-federal-reserve::medium": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.29
+      },
+      "central-bank-and-federal-reserve::hard": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.008
+      },
+      "central-bank-and-federal-reserve::legendary": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.891
+      },
+      "central-bank-and-federal-reserve::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.064
+      },
+      "central-bank-and-federal-reserve::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 0.996
+      },
+      "central-bank-and-federal-reserve::legendaryBoss": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.242
+      },
+      "central-bank-and-federal-reserve::repair": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.82
+      },
+      "central-bank-and-federal-reserve::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "monetary-policy-tools::repair": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.254
+      },
+      "monetary-policy-tools::bridge": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 0.952
+      },
+      "monetary-control-limits::medium": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.125
+      },
+      "monetary-control-limits::mediumBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.14
+      },
+      "monetary-control-limits::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.226
+      }
+    },
+    "exact": [],
+    "near": [],
+    "numberSwaps": [
+      [
+        "ECON-SP-EASY-9",
+        "ECON-SP-HARD-202"
+      ],
+      [
+        "LG-Q-119",
+        "LG-Q-17"
+      ]
+    ],
+    "repeatedAnswerSets": [
+      [
+        "ECON-SP-EASY-2",
+        "LG-Q-102"
+      ],
+      [
+        "LG-Q-15",
+        "ECON-SP-CALCULATE-EXCESS-RESERVES-5007"
+      ],
+      [
+        "LG-Q-120",
+        "LG-Q-2011"
+      ]
+    ],
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedNumberSwaps": [],
+    "introducedRepeatedAnswerSets": [],
+    "answerLengthFailures": []
+  },
+  "routeAudit": {
+    "money-functions-and-measures": {
+      "repairRecords": 11,
+      "repairReachable": 11,
+      "bridgeRecords": 4,
+      "bridgeReachable": 4,
+      "bridgeDestinations": {
+        "ECON-SP-DISTINGUISH-M1-M2-6001": [
+          "bank-money-creation"
+        ],
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-6000": [],
+        "LG-B-6000": [],
+        "LG-B-6001": []
+      },
+      "recurringRepairSkills": 6,
+      "recurringRepairSkillsMatched": 5,
+      "recurringRepairCoverage": 0.833
+    },
+    "bank-money-creation": {
+      "repairRecords": 10,
+      "repairReachable": 10,
+      "bridgeRecords": 6,
+      "bridgeReachable": 6,
+      "bridgeDestinations": {
+        "ECON-SP-CALCULATE-EXCESS-RESERVES-6005": [],
+        "ECON-SP-CALCULATE-MONEY-MULTIPLIER-EFFECT-6006": [
+          "central-bank-and-federal-reserve"
+        ],
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004": [],
+        "LG-B-6003": [],
+        "LG-B-6004": [],
+        "LG-B-6005": []
+      },
+      "recurringRepairSkills": 8,
+      "recurringRepairSkillsMatched": 4,
+      "recurringRepairCoverage": 0.5
+    },
+    "central-bank-and-federal-reserve": {
+      "repairRecords": 8,
+      "repairReachable": 8,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-CENTRAL-BANK-ROLE-6002": [],
+        "ECON-SP-FOMC-ROLE-6003": [
+          "monetary-policy-tools"
+        ],
+        "LG-B-6002": []
+      },
+      "recurringRepairSkills": 7,
+      "recurringRepairSkillsMatched": 4,
+      "recurringRepairCoverage": 0.571
+    },
+    "monetary-policy-tools": {
+      "repairRecords": 7,
+      "repairReachable": 7,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007": [
+          "monetary-control-limits"
+        ],
+        "LG-B-6006": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-B-6007": [
+          "liquidity-preference-and-money-market"
+        ]
+      },
+      "recurringRepairSkills": 9,
+      "recurringRepairSkillsMatched": 6,
+      "recurringRepairCoverage": 0.667
+    },
+    "monetary-control-limits": {
+      "repairRecords": 4,
+      "repairReachable": 4,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-BANK-LEVERAGE-RISK-6009": [],
+        "ECON-SP-LIMITS-OF-MONETARY-CONTROL-6008": [],
+        "LG-B-6008": [
+          "bank-money-creation"
+        ]
+      },
+      "recurringRepairSkills": 5,
+      "recurringRepairSkillsMatched": 3,
+      "recurringRepairCoverage": 0.6
+    }
+  },
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "monetary-policy-tools": 336,
+          "money-functions-and-measures": 440,
+          "bank-money-creation": 597,
+          "central-bank-and-federal-reserve": 309,
+          "monetary-control-limits": 343
+        },
+        "shares": {
+          "money-functions-and-measures": 0.2173,
+          "bank-money-creation": 0.2948,
+          "central-bank-and-federal-reserve": 0.1526,
+          "monetary-policy-tools": 0.1659,
+          "monetary-control-limits": 0.1694
+        }
+      },
+      "boss": {
+        "counts": {
+          "central-bank-and-federal-reserve": 123,
+          "bank-money-creation": 145,
+          "money-functions-and-measures": 146,
+          "monetary-policy-tools": 132,
+          "monetary-control-limits": 129
+        },
+        "shares": {
+          "money-functions-and-measures": 0.2163,
+          "bank-money-creation": 0.2148,
+          "central-bank-and-federal-reserve": 0.1822,
+          "monetary-policy-tools": 0.1956,
+          "monetary-control-limits": 0.1911
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "monetary-control-limits": 362,
+          "money-functions-and-measures": 524,
+          "central-bank-and-federal-reserve": 277,
+          "monetary-policy-tools": 394,
+          "bank-money-creation": 693
+        },
+        "shares": {
+          "money-functions-and-measures": 0.2329,
+          "bank-money-creation": 0.308,
+          "central-bank-and-federal-reserve": 0.1231,
+          "monetary-policy-tools": 0.1751,
+          "monetary-control-limits": 0.1609
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "bank-money-creation": 680,
+          "central-bank-and-federal-reserve": 300,
+          "monetary-control-limits": 374,
+          "monetary-policy-tools": 386,
+          "money-functions-and-measures": 510
+        },
+        "shares": {
+          "money-functions-and-measures": 0.2267,
+          "bank-money-creation": 0.3022,
+          "central-bank-and-federal-reserve": 0.1333,
+          "monetary-policy-tools": 0.1716,
+          "monetary-control-limits": 0.1662
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "monetary-control-limits": 501,
+          "central-bank-and-federal-reserve": 371,
+          "money-functions-and-measures": 363,
+          "monetary-policy-tools": 362,
+          "bank-money-creation": 428
+        },
+        "shares": {
+          "money-functions-and-measures": 0.1793,
+          "bank-money-creation": 0.2114,
+          "central-bank-and-federal-reserve": 0.1832,
+          "monetary-policy-tools": 0.1788,
+          "monetary-control-limits": 0.2474
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "monetary-control-limits": 145,
+          "central-bank-and-federal-reserve": 107,
+          "bank-money-creation": 167,
+          "money-functions-and-measures": 114,
+          "monetary-policy-tools": 142
+        },
+        "shares": {
+          "money-functions-and-measures": 0.1689,
+          "bank-money-creation": 0.2474,
+          "central-bank-and-federal-reserve": 0.1585,
+          "monetary-policy-tools": 0.2104,
+          "monetary-control-limits": 0.2148
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "central-bank-and-federal-reserve": 290,
+          "money-functions-and-measures": 437,
+          "bank-money-creation": 608,
+          "monetary-policy-tools": 341,
+          "monetary-control-limits": 349
+        },
+        "shares": {
+          "money-functions-and-measures": 0.2158,
+          "bank-money-creation": 0.3002,
+          "central-bank-and-federal-reserve": 0.1432,
+          "monetary-policy-tools": 0.1684,
+          "monetary-control-limits": 0.1723
+        }
+      },
+      "boss": {
+        "counts": {
+          "monetary-control-limits": 135,
+          "money-functions-and-measures": 132,
+          "central-bank-and-federal-reserve": 140,
+          "monetary-policy-tools": 128,
+          "bank-money-creation": 140
+        },
+        "shares": {
+          "money-functions-and-measures": 0.1956,
+          "bank-money-creation": 0.2074,
+          "central-bank-and-federal-reserve": 0.2074,
+          "monetary-policy-tools": 0.1896,
+          "monetary-control-limits": 0.2
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "money-functions-and-measures": 0,
+          "bank-money-creation": 0,
+          "central-bank-and-federal-reserve": 0,
+          "monetary-policy-tools": 0,
+          "monetary-control-limits": 0
+        }
+      }
+    }
+  },
+  "neighboringLegendaryIssues": [
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "questionId": "LG-Q-9130",
+      "bossStage": null
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "questionId": "LG-Q-9137",
+      "bossStage": null
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "questionId": "P52B-S3-LPMM-LB-001",
+      "bossStage": "mastery"
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "questionId": "LG-Q-9131",
+      "bossStage": null
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "questionId": "LG-Q-9132",
+      "bossStage": null
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "questionId": "LG-Q-9138",
+      "bossStage": null
+    }
+  ],
+  "simulation": {
+    "totalSessions": 975,
+    "solo": {
+      "money-functions-and-measures": {
+        "name": "money-functions-and-measures solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 662,
+            "representation": {
+              "ordinary": {
+                "money-functions-and-measures": 540
+              },
+              "boss": {
+                "money-functions-and-measures": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "money-functions-and-measures": 331
+              },
+              "bridge": {
+                "money-functions-and-measures": 331
+              }
+            },
+            "calculationExposure": 87,
+            "duplicateCanonicalSelectionsBySession": 40,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 520,
+            "representation": {
+              "ordinary": {
+                "money-functions-and-measures": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "money-functions-and-measures": 260
+              },
+              "bridge": {
+                "money-functions-and-measures": 260
+              }
+            },
+            "calculationExposure": 67,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 510,
+            "representation": {
+              "ordinary": {
+                "money-functions-and-measures": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "money-functions-and-measures": 255
+              },
+              "bridge": {
+                "money-functions-and-measures": 255
+              }
+            },
+            "calculationExposure": 68,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 646,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "money-functions-and-measures": 540
+              },
+              "legendaryBoss": {
+                "money-functions-and-measures": 180
+              },
+              "repair": {
+                "money-functions-and-measures": 323
+              },
+              "bridge": {
+                "money-functions-and-measures": 323
+              }
+            },
+            "calculationExposure": 150,
+            "duplicateCanonicalSelectionsBySession": 540,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 682,
+            "representation": {
+              "ordinary": {
+                "money-functions-and-measures": 540
+              },
+              "boss": {
+                "money-functions-and-measures": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "money-functions-and-measures": 341
+              },
+              "bridge": {
+                "money-functions-and-measures": 341
+              }
+            },
+            "calculationExposure": 82,
+            "duplicateCanonicalSelectionsBySession": 40,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "bank-money-creation": {
+        "name": "bank-money-creation solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 682,
+            "representation": {
+              "ordinary": {
+                "bank-money-creation": 540
+              },
+              "boss": {
+                "bank-money-creation": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "bank-money-creation": 341
+              },
+              "bridge": {
+                "bank-money-creation": 341
+              }
+            },
+            "calculationExposure": 362,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 504,
+            "representation": {
+              "ordinary": {
+                "bank-money-creation": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "bank-money-creation": 252
+              },
+              "bridge": {
+                "bank-money-creation": 252
+              }
+            },
+            "calculationExposure": 362,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 488,
+            "representation": {
+              "ordinary": {
+                "bank-money-creation": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "bank-money-creation": 244
+              },
+              "bridge": {
+                "bank-money-creation": 244
+              }
+            },
+            "calculationExposure": 352,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "bank-money-creation": 540
+              },
+              "legendaryBoss": {
+                "bank-money-creation": 180
+              },
+              "repair": {
+                "bank-money-creation": 329
+              },
+              "bridge": {
+                "bank-money-creation": 329
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 480,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {
+                "bank-money-creation": 540
+              },
+              "boss": {
+                "bank-money-creation": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "bank-money-creation": 335
+              },
+              "bridge": {
+                "bank-money-creation": 335
+              }
+            },
+            "calculationExposure": 361,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "central-bank-and-federal-reserve": {
+        "name": "central-bank-and-federal-reserve solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {
+                "central-bank-and-federal-reserve": 540
+              },
+              "boss": {
+                "central-bank-and-federal-reserve": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 335
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 335
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 160,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 522,
+            "representation": {
+              "ordinary": {
+                "central-bank-and-federal-reserve": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 261
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 261
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 220,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 510,
+            "representation": {
+              "ordinary": {
+                "central-bank-and-federal-reserve": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 255
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 255
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 220,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 664,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "central-bank-and-federal-reserve": 540
+              },
+              "legendaryBoss": {
+                "central-bank-and-federal-reserve": 180
+              },
+              "repair": {
+                "central-bank-and-federal-reserve": 332
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 332
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 540,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 676,
+            "representation": {
+              "ordinary": {
+                "central-bank-and-federal-reserve": 540
+              },
+              "boss": {
+                "central-bank-and-federal-reserve": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 338
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 338
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 160,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "monetary-policy-tools": {
+        "name": "monetary-policy-tools solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 676,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-tools": 540
+              },
+              "boss": {
+                "monetary-policy-tools": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-tools": 338
+              },
+              "bridge": {
+                "monetary-policy-tools": 338
+              }
+            },
+            "calculationExposure": 46,
+            "duplicateCanonicalSelectionsBySession": 80,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 516,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-tools": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-tools": 258
+              },
+              "bridge": {
+                "monetary-policy-tools": 258
+              }
+            },
+            "calculationExposure": 47,
+            "duplicateCanonicalSelectionsBySession": 140,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 504,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-tools": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-tools": 252
+              },
+              "bridge": {
+                "monetary-policy-tools": 252
+              }
+            },
+            "calculationExposure": 43,
+            "duplicateCanonicalSelectionsBySession": 140,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 664,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "monetary-policy-tools": 540
+              },
+              "legendaryBoss": {
+                "monetary-policy-tools": 180
+              },
+              "repair": {
+                "monetary-policy-tools": 332
+              },
+              "bridge": {
+                "monetary-policy-tools": 332
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 520,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 668,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-tools": 540
+              },
+              "boss": {
+                "monetary-policy-tools": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-tools": 334
+              },
+              "bridge": {
+                "monetary-policy-tools": 334
+              }
+            },
+            "calculationExposure": 44,
+            "duplicateCanonicalSelectionsBySession": 80,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "monetary-control-limits": {
+        "name": "monetary-control-limits solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 668,
+            "representation": {
+              "ordinary": {
+                "monetary-control-limits": 540
+              },
+              "boss": {
+                "monetary-control-limits": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-control-limits": 334
+              },
+              "bridge": {
+                "monetary-control-limits": 334
+              }
+            },
+            "calculationExposure": 43,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 532,
+            "representation": {
+              "ordinary": {
+                "monetary-control-limits": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-control-limits": 266
+              },
+              "bridge": {
+                "monetary-control-limits": 266
+              }
+            },
+            "calculationExposure": 50,
+            "duplicateCanonicalSelectionsBySession": 140,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 518,
+            "representation": {
+              "ordinary": {
+                "monetary-control-limits": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-control-limits": 259
+              },
+              "bridge": {
+                "monetary-control-limits": 259
+              }
+            },
+            "calculationExposure": 47,
+            "duplicateCanonicalSelectionsBySession": 140,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "monetary-control-limits": 540
+              },
+              "legendaryBoss": {
+                "monetary-control-limits": 180
+              },
+              "repair": {
+                "monetary-control-limits": 335
+              },
+              "bridge": {
+                "monetary-control-limits": 335
+              }
+            },
+            "calculationExposure": 91,
+            "duplicateCanonicalSelectionsBySession": 480,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 680,
+            "representation": {
+              "ordinary": {
+                "monetary-control-limits": 540
+              },
+              "boss": {
+                "monetary-control-limits": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-control-limits": 340
+              },
+              "bridge": {
+                "monetary-control-limits": 340
+              }
+            },
+            "calculationExposure": 42,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F5 family",
+      "perMode": 75,
+      "totalSessions": 375,
+      "byMode": {
+        "standard": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2700,
+          "auxiliarySelections": 2478,
+          "representation": {
+            "ordinary": {
+              "monetary-policy-tools": 336,
+              "money-functions-and-measures": 440,
+              "bank-money-creation": 597,
+              "central-bank-and-federal-reserve": 309,
+              "monetary-control-limits": 343
+            },
+            "boss": {
+              "central-bank-and-federal-reserve": 123,
+              "bank-money-creation": 145,
+              "money-functions-and-measures": 146,
+              "monetary-policy-tools": 132,
+              "monetary-control-limits": 129
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "bank-money-creation": 275,
+              "monetary-policy-tools": 216,
+              "central-bank-and-federal-reserve": 201,
+              "money-functions-and-measures": 315,
+              "monetary-control-limits": 232
+            },
+            "bridge": {
+              "central-bank-and-federal-reserve": 152,
+              "bank-money-creation": 366,
+              "monetary-policy-tools": 189,
+              "money-functions-and-measures": 264,
+              "monetary-control-limits": 268
+            }
+          },
+          "calculationExposure": 489,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2250,
+          "auxiliarySelections": 1886,
+          "representation": {
+            "ordinary": {
+              "monetary-control-limits": 362,
+              "money-functions-and-measures": 524,
+              "central-bank-and-federal-reserve": 277,
+              "monetary-policy-tools": 394,
+              "bank-money-creation": 693
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "central-bank-and-federal-reserve": 134,
+              "monetary-control-limits": 146,
+              "money-functions-and-measures": 255,
+              "bank-money-creation": 227,
+              "monetary-policy-tools": 181
+            },
+            "bridge": {
+              "bank-money-creation": 263,
+              "monetary-control-limits": 179,
+              "money-functions-and-measures": 213,
+              "central-bank-and-federal-reserve": 107,
+              "monetary-policy-tools": 181
+            }
+          },
+          "calculationExposure": 545,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2250,
+          "auxiliarySelections": 1896,
+          "representation": {
+            "ordinary": {
+              "bank-money-creation": 680,
+              "central-bank-and-federal-reserve": 300,
+              "monetary-control-limits": 374,
+              "monetary-policy-tools": 386,
+              "money-functions-and-measures": 510
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "central-bank-and-federal-reserve": 135,
+              "money-functions-and-measures": 248,
+              "bank-money-creation": 246,
+              "monetary-policy-tools": 166,
+              "monetary-control-limits": 153
+            },
+            "bridge": {
+              "central-bank-and-federal-reserve": 118,
+              "bank-money-creation": 280,
+              "money-functions-and-measures": 193,
+              "monetary-policy-tools": 168,
+              "monetary-control-limits": 189
+            }
+          },
+          "calculationExposure": 515,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2700,
+          "auxiliarySelections": 2490,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "monetary-control-limits": 501,
+              "central-bank-and-federal-reserve": 371,
+              "money-functions-and-measures": 363,
+              "monetary-policy-tools": 362,
+              "bank-money-creation": 428
+            },
+            "legendaryBoss": {
+              "monetary-control-limits": 145,
+              "central-bank-and-federal-reserve": 107,
+              "bank-money-creation": 167,
+              "money-functions-and-measures": 114,
+              "monetary-policy-tools": 142
+            },
+            "repair": {
+              "monetary-policy-tools": 198,
+              "money-functions-and-measures": 287,
+              "bank-money-creation": 319,
+              "central-bank-and-federal-reserve": 198,
+              "monetary-control-limits": 243
+            },
+            "bridge": {
+              "money-functions-and-measures": 273,
+              "monetary-control-limits": 284,
+              "bank-money-creation": 356,
+              "central-bank-and-federal-reserve": 125,
+              "monetary-policy-tools": 207
+            }
+          },
+          "calculationExposure": 165,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2700,
+          "auxiliarySelections": 2464,
+          "representation": {
+            "ordinary": {
+              "central-bank-and-federal-reserve": 290,
+              "money-functions-and-measures": 437,
+              "bank-money-creation": 608,
+              "monetary-policy-tools": 341,
+              "monetary-control-limits": 349
+            },
+            "boss": {
+              "monetary-control-limits": 135,
+              "money-functions-and-measures": 132,
+              "central-bank-and-federal-reserve": 140,
+              "monetary-policy-tools": 128,
+              "bank-money-creation": 140
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "central-bank-and-federal-reserve": 171,
+              "bank-money-creation": 288,
+              "monetary-control-limits": 198,
+              "money-functions-and-measures": 344,
+              "monetary-policy-tools": 231
+            },
+            "bridge": {
+              "money-functions-and-measures": 273,
+              "bank-money-creation": 337,
+              "monetary-control-limits": 265,
+              "central-bank-and-federal-reserve": 139,
+              "monetary-policy-tools": 218
+            }
+          },
+          "calculationExposure": 525,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 342,
+            "representation": {
+              "ordinary": {
+                "bank-money-creation": 54,
+                "unemployment-measurement": 42,
+                "money-functions-and-measures": 37,
+                "central-bank-and-federal-reserve": 27,
+                "monetary-control-limits": 23,
+                "monetary-policy-tools": 29,
+                "unemployment-types": 19,
+                "labor-market-institutions": 22,
+                "natural-rate-of-unemployment": 17
+              },
+              "boss": {
+                "labor-market-institutions": 14,
+                "money-functions-and-measures": 9,
+                "natural-rate-of-unemployment": 14,
+                "central-bank-and-federal-reserve": 8,
+                "bank-money-creation": 8,
+                "unemployment-types": 9,
+                "unemployment-measurement": 9,
+                "monetary-control-limits": 10,
+                "monetary-policy-tools": 9
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-measurement": 25,
+                "central-bank-and-federal-reserve": 13,
+                "money-functions-and-measures": 22,
+                "natural-rate-of-unemployment": 14,
+                "bank-money-creation": 22,
+                "monetary-policy-tools": 22,
+                "labor-market-institutions": 15,
+                "unemployment-types": 21,
+                "monetary-control-limits": 17
+              },
+              "bridge": {
+                "unemployment-measurement": 31,
+                "labor-market-institutions": 22,
+                "central-bank-and-federal-reserve": 16,
+                "monetary-control-limits": 17,
+                "bank-money-creation": 19,
+                "money-functions-and-measures": 13,
+                "monetary-policy-tools": 16,
+                "unemployment-types": 31,
+                "natural-rate-of-unemployment": 6
+              }
+            },
+            "calculationExposure": 50,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 256,
+            "representation": {
+              "ordinary": {
+                "monetary-control-limits": 29,
+                "natural-rate-of-unemployment": 29,
+                "money-functions-and-measures": 40,
+                "monetary-policy-tools": 34,
+                "bank-money-creation": 50,
+                "central-bank-and-federal-reserve": 28,
+                "unemployment-measurement": 42,
+                "labor-market-institutions": 23,
+                "unemployment-types": 25
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "natural-rate-of-unemployment": 10,
+                "monetary-policy-tools": 20,
+                "unemployment-measurement": 28,
+                "money-functions-and-measures": 17,
+                "central-bank-and-federal-reserve": 11,
+                "labor-market-institutions": 7,
+                "unemployment-types": 15,
+                "bank-money-creation": 12,
+                "monetary-control-limits": 8
+              },
+              "bridge": {
+                "labor-market-institutions": 9,
+                "monetary-policy-tools": 13,
+                "unemployment-measurement": 34,
+                "natural-rate-of-unemployment": 7,
+                "unemployment-types": 17,
+                "central-bank-and-federal-reserve": 10,
+                "money-functions-and-measures": 15,
+                "bank-money-creation": 12,
+                "monetary-control-limits": 11
+              }
+            },
+            "calculationExposure": 52,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 252,
+            "representation": {
+              "ordinary": {
+                "unemployment-measurement": 35,
+                "bank-money-creation": 59,
+                "money-functions-and-measures": 34,
+                "unemployment-types": 35,
+                "natural-rate-of-unemployment": 23,
+                "monetary-control-limits": 32,
+                "central-bank-and-federal-reserve": 21,
+                "labor-market-institutions": 24,
+                "monetary-policy-tools": 37
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "labor-market-institutions": 15,
+                "money-functions-and-measures": 21,
+                "bank-money-creation": 16,
+                "unemployment-measurement": 14,
+                "central-bank-and-federal-reserve": 10,
+                "monetary-policy-tools": 16,
+                "monetary-control-limits": 10,
+                "unemployment-types": 18,
+                "natural-rate-of-unemployment": 6
+              },
+              "bridge": {
+                "labor-market-institutions": 22,
+                "money-functions-and-measures": 16,
+                "unemployment-types": 20,
+                "unemployment-measurement": 16,
+                "central-bank-and-federal-reserve": 6,
+                "monetary-policy-tools": 15,
+                "monetary-control-limits": 14,
+                "bank-money-creation": 13,
+                "natural-rate-of-unemployment": 4
+              }
+            },
+            "calculationExposure": 52,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 334,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "unemployment-measurement": 42,
+                "monetary-policy-tools": 32,
+                "bank-money-creation": 28,
+                "natural-rate-of-unemployment": 29,
+                "central-bank-and-federal-reserve": 28,
+                "monetary-control-limits": 29,
+                "labor-market-institutions": 30,
+                "money-functions-and-measures": 26,
+                "unemployment-types": 26
+              },
+              "legendaryBoss": {
+                "money-functions-and-measures": 6,
+                "monetary-policy-tools": 16,
+                "labor-market-institutions": 10,
+                "natural-rate-of-unemployment": 10,
+                "bank-money-creation": 15,
+                "unemployment-measurement": 6,
+                "central-bank-and-federal-reserve": 12,
+                "unemployment-types": 9,
+                "monetary-control-limits": 6
+              },
+              "repair": {
+                "unemployment-measurement": 28,
+                "money-functions-and-measures": 16,
+                "unemployment-types": 24,
+                "monetary-control-limits": 19,
+                "central-bank-and-federal-reserve": 12,
+                "bank-money-creation": 20,
+                "natural-rate-of-unemployment": 21,
+                "labor-market-institutions": 12,
+                "monetary-policy-tools": 15
+              },
+              "bridge": {
+                "unemployment-measurement": 29,
+                "money-functions-and-measures": 10,
+                "unemployment-types": 33,
+                "monetary-policy-tools": 18,
+                "labor-market-institutions": 14,
+                "bank-money-creation": 20,
+                "monetary-control-limits": 21,
+                "natural-rate-of-unemployment": 12,
+                "central-bank-and-federal-reserve": 10
+              }
+            },
+            "calculationExposure": 38,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 328,
+            "representation": {
+              "ordinary": {
+                "bank-money-creation": 45,
+                "money-functions-and-measures": 35,
+                "unemployment-types": 27,
+                "monetary-policy-tools": 29,
+                "labor-market-institutions": 27,
+                "central-bank-and-federal-reserve": 25,
+                "natural-rate-of-unemployment": 28,
+                "monetary-control-limits": 22,
+                "unemployment-measurement": 32
+              },
+              "boss": {
+                "bank-money-creation": 7,
+                "unemployment-types": 13,
+                "central-bank-and-federal-reserve": 7,
+                "unemployment-measurement": 14,
+                "labor-market-institutions": 18,
+                "monetary-policy-tools": 11,
+                "monetary-control-limits": 12,
+                "natural-rate-of-unemployment": 6,
+                "money-functions-and-measures": 2
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-policy-tools": 16,
+                "monetary-control-limits": 19,
+                "unemployment-measurement": 25,
+                "unemployment-types": 29,
+                "central-bank-and-federal-reserve": 15,
+                "labor-market-institutions": 19,
+                "natural-rate-of-unemployment": 12,
+                "bank-money-creation": 17,
+                "money-functions-and-measures": 12
+              },
+              "bridge": {
+                "bank-money-creation": 22,
+                "money-functions-and-measures": 13,
+                "monetary-control-limits": 17,
+                "unemployment-measurement": 27,
+                "unemployment-types": 36,
+                "monetary-policy-tools": 13,
+                "central-bank-and-federal-reserve": 7,
+                "labor-market-institutions": 21,
+                "natural-rate-of-unemployment": 8
+              }
+            },
+            "calculationExposure": 55,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {
+                "monetary-control-limits": 33,
+                "liquidity-preference-and-money-market": 40,
+                "money-functions-and-measures": 42,
+                "monetary-policy-transmission": 45,
+                "monetary-policy-tools": 39,
+                "bank-money-creation": 46,
+                "central-bank-and-federal-reserve": 25
+              },
+              "boss": {
+                "liquidity-preference-and-money-market": 9,
+                "monetary-policy-transmission": 14,
+                "central-bank-and-federal-reserve": 11,
+                "monetary-policy-tools": 12,
+                "money-functions-and-measures": 22,
+                "bank-money-creation": 15,
+                "monetary-control-limits": 7
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 17,
+                "liquidity-preference-and-money-market": 10,
+                "monetary-policy-tools": 18,
+                "money-functions-and-measures": 44,
+                "monetary-policy-transmission": 28,
+                "bank-money-creation": 31,
+                "monetary-control-limits": 18
+              },
+              "bridge": {
+                "monetary-policy-transmission": 17,
+                "bank-money-creation": 36,
+                "monetary-policy-tools": 24,
+                "liquidity-preference-and-money-market": 28,
+                "monetary-control-limits": 25,
+                "central-bank-and-federal-reserve": 11,
+                "money-functions-and-measures": 25
+              }
+            },
+            "calculationExposure": 34,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 254,
+            "representation": {
+              "ordinary": {
+                "money-functions-and-measures": 42,
+                "monetary-policy-tools": 39,
+                "bank-money-creation": 62,
+                "monetary-policy-transmission": 50,
+                "monetary-control-limits": 50,
+                "central-bank-and-federal-reserve": 22,
+                "liquidity-preference-and-money-market": 35
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 11,
+                "monetary-control-limits": 24,
+                "money-functions-and-measures": 27,
+                "monetary-policy-transmission": 19,
+                "monetary-policy-tools": 14,
+                "bank-money-creation": 20,
+                "liquidity-preference-and-money-market": 12
+              },
+              "bridge": {
+                "bank-money-creation": 27,
+                "central-bank-and-federal-reserve": 11,
+                "monetary-policy-transmission": 17,
+                "money-functions-and-measures": 17,
+                "monetary-policy-tools": 12,
+                "liquidity-preference-and-money-market": 20,
+                "monetary-control-limits": 23
+              }
+            },
+            "calculationExposure": 52,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 246,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 45,
+                "monetary-policy-transmission": 41,
+                "central-bank-and-federal-reserve": 21,
+                "bank-money-creation": 68,
+                "money-functions-and-measures": 61,
+                "monetary-control-limits": 32,
+                "monetary-policy-tools": 32
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 11,
+                "money-functions-and-measures": 27,
+                "liquidity-preference-and-money-market": 20,
+                "monetary-control-limits": 15,
+                "monetary-policy-tools": 13,
+                "monetary-policy-transmission": 13,
+                "bank-money-creation": 24
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 9,
+                "liquidity-preference-and-money-market": 19,
+                "monetary-control-limits": 21,
+                "money-functions-and-measures": 23,
+                "monetary-policy-transmission": 13,
+                "bank-money-creation": 24,
+                "monetary-policy-tools": 14
+              }
+            },
+            "calculationExposure": 54,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "monetary-policy-tools": 31,
+                "bank-money-creation": 44,
+                "monetary-control-limits": 34,
+                "liquidity-preference-and-money-market": 21,
+                "central-bank-and-federal-reserve": 28,
+                "monetary-policy-transmission": 77,
+                "money-functions-and-measures": 35
+              },
+              "legendaryBoss": {
+                "money-functions-and-measures": 12,
+                "central-bank-and-federal-reserve": 10,
+                "monetary-policy-tools": 24,
+                "bank-money-creation": 24,
+                "monetary-control-limits": 20
+              },
+              "repair": {
+                "monetary-policy-transmission": 45,
+                "bank-money-creation": 32,
+                "money-functions-and-measures": 25,
+                "monetary-control-limits": 15,
+                "central-bank-and-federal-reserve": 15,
+                "liquidity-preference-and-money-market": 12,
+                "monetary-policy-tools": 22
+              },
+              "bridge": {
+                "monetary-policy-transmission": 42,
+                "monetary-policy-tools": 16,
+                "bank-money-creation": 39,
+                "monetary-control-limits": 20,
+                "liquidity-preference-and-money-market": 23,
+                "central-bank-and-federal-reserve": 12,
+                "money-functions-and-measures": 14
+              }
+            },
+            "calculationExposure": 19,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 37,
+                "monetary-control-limits": 39,
+                "liquidity-preference-and-money-market": 33,
+                "monetary-policy-tools": 36,
+                "money-functions-and-measures": 39,
+                "bank-money-creation": 64,
+                "central-bank-and-federal-reserve": 22
+              },
+              "boss": {
+                "central-bank-and-federal-reserve": 14,
+                "monetary-policy-transmission": 18,
+                "monetary-policy-tools": 15,
+                "liquidity-preference-and-money-market": 12,
+                "bank-money-creation": 11,
+                "money-functions-and-measures": 9,
+                "monetary-control-limits": 11
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "bank-money-creation": 34,
+                "central-bank-and-federal-reserve": 21,
+                "money-functions-and-measures": 31,
+                "liquidity-preference-and-money-market": 24,
+                "monetary-control-limits": 22,
+                "monetary-policy-transmission": 19,
+                "monetary-policy-tools": 15
+              },
+              "bridge": {
+                "bank-money-creation": 39,
+                "central-bank-and-federal-reserve": 9,
+                "liquidity-preference-and-money-market": 20,
+                "money-functions-and-measures": 30,
+                "monetary-control-limits": 21,
+                "monetary-policy-transmission": 28,
+                "monetary-policy-tools": 19
+              }
+            },
+            "calculationExposure": 49,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 134,
+    "independentlyRecomputed": 10,
+    "dedicatedCalculationRecords": 37,
+    "failures": 0,
+    "records": [
+      {
+        "questionId": "P52B-S3-MFM-LB-001",
+        "conceptId": "money-functions-and-measures",
+        "published": "M1 is $820 billion and M2 remains $3.4 trillion.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9102",
+        "conceptId": "bank-money-creation",
+        "published": "$180,000",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9104",
+        "conceptId": "bank-money-creation",
+        "published": "Negative $1.2 million",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9105",
+        "conceptId": "bank-money-creation",
+        "published": "$1,500,000",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9109",
+        "conceptId": "bank-money-creation",
+        "published": "$3 million",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9112",
+        "conceptId": "bank-money-creation",
+        "published": "$21,160",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9100",
+        "conceptId": "monetary-policy-tools",
+        "published": "$60,000",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9103",
+        "conceptId": "monetary-policy-tools",
+        "published": "Sell $120 million in bonds.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9113",
+        "conceptId": "monetary-policy-tools",
+        "published": "$112.5 million",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9106",
+        "conceptId": "monetary-control-limits",
+        "published": "It is short $30,000 in reserves.",
+        "status": "PASS"
+      }
+    ]
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2c1_money_banking_fed/generated_packages/family/index.html",
+      "htmlSha256": "d164da1c39ba15876180fb7aa876afd388348f1a2456df2ffe79ced366ae3a16",
+      "bytes": 1405918,
+      "counts": {
+        "easy": 43,
+        "medium": 45,
+        "hard": 46,
+        "elite": 36,
+        "legendary": 33,
+        "easyBoss": 15,
+        "mediumBoss": 15,
+        "finalBoss": 15,
+        "legendaryBoss": 19,
+        "repair": 40,
+        "repairSeed": 0,
+        "bridge": 19,
+        "calculation": 37,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 326
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    },
+    "central": {
+      "path": "validation_artifacts/macro_m2c1_money_banking_fed/generated_packages/central/index.html",
+      "htmlSha256": "8504fa5f7b811c81ca0bf3cfd78660f5711dde26a715c06be3f98270540549d0",
+      "bytes": 441450,
+      "counts": {
+        "easy": 7,
+        "medium": 6,
+        "hard": 6,
+        "elite": 2,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 8,
+        "repairSeed": 0,
+        "bridge": 3,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 50
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    }
+  },
+  "browser": {
+    "passed": false,
+    "attempted": true,
+    "console": {
+      "errors": null,
+      "warnings": null
+    },
+    "nonBlockingIssues": [
+      "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, mode preflight, inline-JavaScript syntax, and static markup checks."
+    ],
+    "stderr": "[6593:6621:0810/183656.283923:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[6593:6621:0810/183656.292184:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[6593:6621:0810/183656.292340:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[6593:6621:0810/183656.292521:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[6593:6621:0810/183656.312357:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[6593:6621:0810/183656.332199:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[6593:6593:0810/183656.359311:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[6593:6621:0810/183656.359389:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")"
+  },
+  "verdict": "MACRO M2c-1 COMPLETE WITH NON-BLOCKING ISSUES"
+}

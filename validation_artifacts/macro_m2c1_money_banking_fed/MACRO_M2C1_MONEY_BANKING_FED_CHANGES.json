@@ -1,0 +1,577 @@
+{
+  "phase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+  "generatedAt": "2026-08-10T18:37:11.209Z",
+  "summary": {
+    "added": 22,
+    "bossStageFixed": 17,
+    "ordinaryRewritten": 4,
+    "repairRewritten": 7,
+    "repairMetadataFixed": 1,
+    "bridgeRewritten": 6,
+    "removed": 0,
+    "relocated": 0
+  },
+  "changes": [
+    {
+      "questionId": "LG-Q-1",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "QUALITY_REWRITE",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Modernizes a definition-like Easy item into a concrete medium-of-exchange application.",
+      "oldSkill": "identify_definition",
+      "newSkill": "identify_money_functions",
+      "oldRepairSkill": "functions_of_money",
+      "newRepairSkill": "identify_money_functions"
+    },
+    {
+      "questionId": "LG-Q-2",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "QUALITY_REWRITE",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Modernizes a definition-like Easy item into a price-comparison application.",
+      "oldSkill": "identify_definition",
+      "newSkill": "identify_money_functions",
+      "oldRepairSkill": "unit_of_account",
+      "newRepairSkill": "identify_money_functions"
+    },
+    {
+      "questionId": "LG-Q-3",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "QUALITY_REWRITE",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Modernizes a definition-like Easy item and adds the limitation of money as a store of value.",
+      "oldSkill": "identify_definition",
+      "newSkill": "identify_money_functions",
+      "oldRepairSkill": "store_of_value",
+      "newRepairSkill": "functions_of_money"
+    },
+    {
+      "questionId": "LG-Q-4",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "QUALITY_REWRITE",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Modernizes a definition-like Easy fiat-money item into an applied acceptance scenario.",
+      "oldSkill": "identify_definition",
+      "newSkill": "commodity_vs_fiat_money",
+      "oldRepairSkill": "fiat_money_definition",
+      "newRepairSkill": "fiat_money_definition"
+    },
+    {
+      "questionId": "LG-R-5000",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Adds the missing money-versus-wealth/income misconception path by repurposing a duplicate function-of-money Repair.",
+      "oldSkill": "functions_of_money",
+      "newSkill": "money_vs_wealth_income",
+      "oldRepairSkill": "functions_of_money",
+      "newRepairSkill": "money_vs_wealth_income"
+    },
+    {
+      "questionId": "LG-R-5012",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Replaces a redundant required-reserves formula Repair with the capital-versus-reserves misconception identified in M1.",
+      "oldSkill": "required_reserves_formula",
+      "newSkill": "bank_capital_assets_liabilities",
+      "oldRepairSkill": "required_reserves_formula",
+      "newRepairSkill": "bank_leverage_risk"
+    },
+    {
+      "questionId": "LG-R-5013",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Adds a direct Repair route for the recurring fractional-reserve money-creation skill.",
+      "oldSkill": "required_reserves_formula",
+      "newSkill": "fractional_reserve_money_creation",
+      "oldRepairSkill": "required_reserves_formula",
+      "newRepairSkill": "fractional_reserve_money_creation"
+    },
+    {
+      "questionId": "LG-R-5006",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Replaces a generic Fed-definition Repair with a direct lender-of-last-resort misconception path.",
+      "oldSkill": "fed_role",
+      "newSkill": "fed_lender_of_last_resort",
+      "oldRepairSkill": "fed_role",
+      "newRepairSkill": "fed_lender_of_last_resort"
+    },
+    {
+      "questionId": "LG-R-5010",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Aligns a generic independence Repair with the recurring independence/accountability skill.",
+      "oldSkill": "fed_independence",
+      "newSkill": "independence_accountability",
+      "oldRepairSkill": "fed_independence",
+      "newRepairSkill": "independence_accountability"
+    },
+    {
+      "questionId": "LG-R-5018",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Repurposes a duplicate bond-purchase Repair to cover the heavily recurring reserve-requirement effect.",
+      "oldSkill": "fed_buys_bonds_money_supply",
+      "newSkill": "reserve_requirement_effect",
+      "oldRepairSkill": "fed_buys_bonds_money_supply",
+      "newRepairSkill": "reserve_requirement_effect"
+    },
+    {
+      "questionId": "LG-R-5020",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Repurposes a duplicate bond-sale Repair to cover the discount-rate mechanism.",
+      "oldSkill": "fed_sells_bonds_money_supply",
+      "newSkill": "discount_rate_effect",
+      "oldRepairSkill": "fed_sells_bonds_money_supply",
+      "newRepairSkill": "discount_rate_effect"
+    },
+    {
+      "questionId": "LG-R-5023",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "REPAIR_METADATA_FIX",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Aligns an existing currency-drain Repair with the recurring public-currency-holdings route."
+    },
+    {
+      "questionId": "ECON-SP-DISTINGUISH-M1-M2-6001",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Replaces a same-skill M1/M2 Bridge with a genuine Money Measures → Bank Money Creation connection.",
+      "oldSkill": "distinguish_m1_m2",
+      "newSkill": "connect_money_measure_to_lending",
+      "oldRepairSkill": "distinguish_m1_m2",
+      "newRepairSkill": "m1_m2_components"
+    },
+    {
+      "questionId": "ECON-SP-CALCULATE-MONEY-MULTIPLIER-EFFECT-6006",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Replaces a same-skill multiplier Bridge with a genuine Bank Money Creation → Central Bank connection.",
+      "oldSkill": "calculate_money_multiplier_effect",
+      "newSkill": "fractional_reserve_money_creation",
+      "oldRepairSkill": "calculate_money_multiplier_effect",
+      "newRepairSkill": "fractional_reserve_money_creation"
+    },
+    {
+      "questionId": "ECON-SP-FOMC-ROLE-6003",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Rewrites a same-skill FOMC check into a Central Bank → Monetary Policy Tools Bridge.",
+      "oldSkill": "fomc_role",
+      "newSkill": "connect_fomc_to_policy",
+      "oldRepairSkill": "fomc_role",
+      "newRepairSkill": "fomc_role"
+    },
+    {
+      "questionId": "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Rewrites a same-skill tool check into a Monetary Policy Tools → Control Limits Bridge.",
+      "oldSkill": "choose_fed_tool_effect",
+      "newSkill": "diagnose_policy_constraint",
+      "oldRepairSkill": "choose_fed_tool_effect",
+      "newRepairSkill": "choose_fed_tool_effect"
+    },
+    {
+      "questionId": "LG-B-6006",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Replaces an unrelated fiscal secondary tag with a genuine outbound F5 Tools → F7 Money Market Bridge.",
+      "oldSkill": "fed_buys_bonds_money_supply",
+      "newSkill": "fed_buys_bonds_money_supply",
+      "oldRepairSkill": "fed_buys_bonds_money_supply",
+      "newRepairSkill": "fed_buys_bonds_money_supply"
+    },
+    {
+      "questionId": "LG-B-6007",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Replaces the second unrelated fiscal secondary tag with a genuine contractionary F5 Tools → F7 Money Market Bridge.",
+      "oldSkill": "fed_sells_bonds_money_supply",
+      "newSkill": "fed_sells_bonds_money_supply",
+      "oldRepairSkill": "fed_sells_bonds_money_supply",
+      "newRepairSkill": "fed_sells_bonds_money_supply"
+    },
+    {
+      "questionId": "PM2C1-FED-M-001",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-M-002",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-H-001",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-H-002",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-L-001",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-L-002",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-L-003",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-MB-001",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-MB-002",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-MB-003",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-FB-004",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-FB-005",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-FB-006",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-LB-001",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-FED-LB-002",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-M-001",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-MB-001",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-MB-002",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-MB-003",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-FB-004",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-FB-005",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "PM2C1-MCL-FB-006",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F5 structural floor with a distinct money/banking/Fed task."
+    },
+    {
+      "questionId": "P52B-S3-MFM-LB-002",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "P52B-S3-MFM-LB-001",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9110",
+      "canonicalConceptId": "money-functions-and-measures",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9105",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9102",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9112",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9109",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9104",
+      "canonicalConceptId": "bank-money-creation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9111",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9113",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9100",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9107",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9103",
+      "canonicalConceptId": "monetary-policy-tools",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9114",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9101",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9106",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9108",
+      "canonicalConceptId": "monetary-control-limits",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    }
+  ],
+  "protectedIntegrity": {
+    "nonF5Mismatches": []
+  }
+}

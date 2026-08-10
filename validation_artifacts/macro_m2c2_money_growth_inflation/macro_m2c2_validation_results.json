@@ -1,0 +1,2892 @@
+{
+  "phase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+  "librarySha256": "1f72b1315f0de1f70e569d33b466ba16fcce788ed449c2401c2c627cebb41bd5",
+  "beforeCounts": {
+    "quantity-theory-of-money": {
+      "easy": 9,
+      "medium": 7,
+      "hard": 6,
+      "elite": 12,
+      "legendary": 9,
+      "calculation": 12,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 5,
+      "total": 81
+    },
+    "monetary-neutrality": {
+      "easy": 9,
+      "medium": 4,
+      "hard": 5,
+      "elite": 6,
+      "legendary": 7,
+      "calculation": 4,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 3,
+      "finalBoss": 0,
+      "legendaryBoss": 2,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 4,
+      "total": 51
+    },
+    "fisher-effect": {
+      "easy": 5,
+      "medium": 1,
+      "hard": 0,
+      "elite": 3,
+      "legendary": 4,
+      "calculation": 8,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 3,
+      "finalBoss": 0,
+      "legendaryBoss": 3,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 2,
+      "total": 33
+    },
+    "inflation-costs": {
+      "easy": 6,
+      "medium": 7,
+      "hard": 7,
+      "elite": 6,
+      "legendary": 5,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 3,
+      "finalBoss": 0,
+      "legendaryBoss": 4,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 4,
+      "total": 49
+    },
+    "inflation-tax-and-deflation": {
+      "easy": 5,
+      "medium": 5,
+      "hard": 5,
+      "elite": 6,
+      "legendary": 3,
+      "calculation": 1,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 3,
+      "finalBoss": 0,
+      "legendaryBoss": 2,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 2,
+      "total": 35
+    }
+  },
+  "afterCounts": {
+    "quantity-theory-of-money": {
+      "total": 81,
+      "easy": 9,
+      "medium": 7,
+      "hard": 6,
+      "elite": 12,
+      "legendary": 9,
+      "calculation": 12,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 5,
+      "graphLinked": 23,
+      "calculationLinked": 24
+    },
+    "monetary-neutrality": {
+      "total": 62,
+      "easy": 10,
+      "medium": 5,
+      "hard": 6,
+      "elite": 6,
+      "legendary": 7,
+      "calculation": 4,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 5,
+      "graphLinked": 2,
+      "calculationLinked": 13
+    },
+    "fisher-effect": {
+      "total": 52,
+      "easy": 7,
+      "medium": 4,
+      "hard": 5,
+      "elite": 3,
+      "legendary": 6,
+      "calculation": 8,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 2,
+      "calculationLinked": 32
+    },
+    "inflation-costs": {
+      "total": 58,
+      "easy": 6,
+      "medium": 8,
+      "hard": 8,
+      "elite": 6,
+      "legendary": 6,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 4,
+      "graphLinked": 4,
+      "calculationLinked": 4
+    },
+    "inflation-tax-and-deflation": {
+      "total": 48,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 6,
+      "legendary": 6,
+      "calculation": 1,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 2,
+      "graphLinked": 1,
+      "calculationLinked": 2
+    }
+  },
+  "familyBefore": {
+    "easy": 34,
+    "medium": 24,
+    "hard": 23,
+    "elite": 33,
+    "legendary": 28,
+    "calculation": 25,
+    "integration": 0,
+    "easyBoss": 3,
+    "mediumBoss": 15,
+    "finalBoss": 3,
+    "legendaryBoss": 15,
+    "repair": 29,
+    "repairSeed": 0,
+    "bridge": 17,
+    "total": 249
+  },
+  "familyAfter": {
+    "total": 301,
+    "easy": 38,
+    "medium": 30,
+    "hard": 31,
+    "elite": 33,
+    "legendary": 34,
+    "calculation": 25,
+    "easyBoss": 15,
+    "mediumBoss": 15,
+    "finalBoss": 15,
+    "legendaryBoss": 17,
+    "repair": 29,
+    "repairSeed": 0,
+    "bridge": 19,
+    "graphLinked": 32,
+    "calculationLinked": 75
+  },
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 67,
+    "nonF6Mismatches": [],
+    "quantityTheoryQuestionContentChanged": false
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "quantity-theory-of-money": [
+      "middle",
+      "middle",
+      "final",
+      "opening"
+    ],
+    "monetary-neutrality": [
+      "middle",
+      "final",
+      "opening"
+    ],
+    "fisher-effect": [
+      "opening",
+      "final",
+      "middle"
+    ],
+    "inflation-costs": [
+      "middle",
+      "opening",
+      "middle",
+      "final"
+    ],
+    "inflation-tax-and-deflation": [
+      "middle",
+      "final",
+      "opening"
+    ]
+  },
+  "quality": {
+    "groups": {
+      "monetary-neutrality::easy": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.071
+      },
+      "monetary-neutrality::medium": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.275
+      },
+      "monetary-neutrality::hard": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.304
+      },
+      "monetary-neutrality::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.005
+      },
+      "monetary-neutrality::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.091
+      },
+      "monetary-neutrality::legendaryBoss": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.975
+      },
+      "monetary-neutrality::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.258
+      },
+      "monetary-neutrality::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.973
+      },
+      "fisher-effect::easy": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.982
+      },
+      "fisher-effect::medium": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.169
+      },
+      "fisher-effect::hard": {
+        "count": 5,
+        "longest": 0,
+        "positions": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.149
+      },
+      "fisher-effect::legendary": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.208
+      },
+      "fisher-effect::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.549
+      },
+      "fisher-effect::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.901
+      },
+      "fisher-effect::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.041
+      },
+      "fisher-effect::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.08
+      },
+      "inflation-costs::medium": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.968
+      },
+      "inflation-costs::hard": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.286
+      },
+      "inflation-costs::legendary": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.067
+      },
+      "inflation-costs::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.881
+      },
+      "inflation-costs::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.099
+      },
+      "inflation-costs::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.184
+      },
+      "inflation-tax-and-deflation::easy": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.135
+      },
+      "inflation-tax-and-deflation::medium": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.75
+      },
+      "inflation-tax-and-deflation::hard": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.938
+      },
+      "inflation-tax-and-deflation::legendary": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.218
+      },
+      "inflation-tax-and-deflation::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.768
+      },
+      "inflation-tax-and-deflation::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.951
+      },
+      "inflation-tax-and-deflation::legendaryBoss": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.941
+      },
+      "inflation-tax-and-deflation::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.239
+      },
+      "inflation-tax-and-deflation::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.957
+      }
+    },
+    "exact": [],
+    "near": [],
+    "numberSwaps": [
+      [
+        "LG-R-5027",
+        "LG-B-6010"
+      ],
+      [
+        "LG-Q-9033",
+        "LG-Q-237"
+      ],
+      [
+        "LG-Q-140",
+        "LG-Q-32"
+      ],
+      [
+        "LG-Q-139",
+        "LG-Q-73"
+      ],
+      [
+        "LG-Q-9037",
+        "LG-Q-9038"
+      ],
+      [
+        "LG-Q-3011",
+        "LG-Q-9119"
+      ]
+    ],
+    "repeatedAnswerSets": [
+      [
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-6011",
+        "ECON-SP-FISHER-EFFECT-6015"
+      ]
+    ],
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedNumberSwaps": [],
+    "introducedRepeatedAnswerSets": [],
+    "answerLengthFailures": []
+  },
+  "routeAudit": {
+    "quantity-theory-of-money": {
+      "repairRecords": 8,
+      "repairReachable": 8,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-6011": [],
+        "ECON-SP-QUANTITY-EQUATION-6010": [],
+        "ECON-SP-VALUE-OF-MONEY-6012": [],
+        "LG-B-6009": [],
+        "LG-B-6010": []
+      },
+      "recurringRepairSkills": 11,
+      "recurringRepairSkillsMatched": 4,
+      "recurringRepairCoverage": 0.364
+    },
+    "monetary-neutrality": {
+      "repairRecords": 7,
+      "repairReachable": 7,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-MONETARY-NEUTRALITY-6014": [],
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-6013": [],
+        "LG-B-6011": [],
+        "LG-B-6012": [],
+        "PM2C2-NEUT-BR-001": [
+          "quantity-theory-of-money"
+        ]
+      },
+      "recurringRepairSkills": 9,
+      "recurringRepairSkillsMatched": 3,
+      "recurringRepairCoverage": 0.333
+    },
+    "fisher-effect": {
+      "repairRecords": 4,
+      "repairReachable": 4,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-FISHER-EFFECT-6015": [],
+        "LG-B-6013": [],
+        "PM2C2-FISH-BR-001": [
+          "monetary-neutrality"
+        ]
+      },
+      "recurringRepairSkills": 7,
+      "recurringRepairSkillsMatched": 3,
+      "recurringRepairCoverage": 0.429
+    },
+    "inflation-costs": {
+      "repairRecords": 7,
+      "repairReachable": 7,
+      "bridgeRecords": 4,
+      "bridgeReachable": 4,
+      "bridgeDestinations": {
+        "ECON-SP-MENU-COSTS-6017": [],
+        "ECON-SP-SHOELEATHER-COSTS-6016": [],
+        "LG-B-6014": [
+          "fisher-effect"
+        ],
+        "LG-B-6015": []
+      },
+      "recurringRepairSkills": 9,
+      "recurringRepairSkillsMatched": 6,
+      "recurringRepairCoverage": 0.667
+    },
+    "inflation-tax-and-deflation": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 2,
+      "bridgeReachable": 2,
+      "bridgeDestinations": {
+        "ECON-SP-INFLATION-TAX-6018": [],
+        "LG-B-6016": [
+          "inflation-costs"
+        ]
+      },
+      "recurringRepairSkills": 8,
+      "recurringRepairSkillsMatched": 1,
+      "recurringRepairCoverage": 0.125
+    }
+  },
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "inflation-costs": 347,
+          "quantity-theory-of-money": 555,
+          "fisher-effect": 407,
+          "monetary-neutrality": 412,
+          "inflation-tax-and-deflation": 304
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2741,
+          "monetary-neutrality": 0.2035,
+          "fisher-effect": 0.201,
+          "inflation-costs": 0.1714,
+          "inflation-tax-and-deflation": 0.1501
+        }
+      },
+      "boss": {
+        "counts": {
+          "fisher-effect": 123,
+          "monetary-neutrality": 145,
+          "quantity-theory-of-money": 146,
+          "inflation-costs": 132,
+          "inflation-tax-and-deflation": 129
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2163,
+          "monetary-neutrality": 0.2148,
+          "fisher-effect": 0.1822,
+          "inflation-costs": 0.1956,
+          "inflation-tax-and-deflation": 0.1911
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "inflation-tax-and-deflation": 336,
+          "monetary-neutrality": 475,
+          "fisher-effect": 397,
+          "inflation-costs": 395,
+          "quantity-theory-of-money": 647
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2876,
+          "monetary-neutrality": 0.2111,
+          "fisher-effect": 0.1764,
+          "inflation-costs": 0.1756,
+          "inflation-tax-and-deflation": 0.1493
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "monetary-neutrality": 466,
+          "fisher-effect": 418,
+          "inflation-tax-and-deflation": 332,
+          "inflation-costs": 402,
+          "quantity-theory-of-money": 632
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2809,
+          "monetary-neutrality": 0.2071,
+          "fisher-effect": 0.1858,
+          "inflation-costs": 0.1787,
+          "inflation-tax-and-deflation": 0.1476
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "inflation-tax-and-deflation": 366,
+          "monetary-neutrality": 419,
+          "quantity-theory-of-money": 520,
+          "fisher-effect": 365,
+          "inflation-costs": 355
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2568,
+          "monetary-neutrality": 0.2069,
+          "fisher-effect": 0.1802,
+          "inflation-costs": 0.1753,
+          "inflation-tax-and-deflation": 0.1807
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "inflation-tax-and-deflation": 121,
+          "fisher-effect": 119,
+          "monetary-neutrality": 113,
+          "quantity-theory-of-money": 161,
+          "inflation-costs": 161
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2385,
+          "monetary-neutrality": 0.1674,
+          "fisher-effect": 0.1763,
+          "inflation-costs": 0.2385,
+          "inflation-tax-and-deflation": 0.1793
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "fisher-effect": 402,
+          "quantity-theory-of-money": 543,
+          "monetary-neutrality": 408,
+          "inflation-costs": 357,
+          "inflation-tax-and-deflation": 315
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.2681,
+          "monetary-neutrality": 0.2015,
+          "fisher-effect": 0.1985,
+          "inflation-costs": 0.1763,
+          "inflation-tax-and-deflation": 0.1556
+        }
+      },
+      "boss": {
+        "counts": {
+          "inflation-tax-and-deflation": 135,
+          "quantity-theory-of-money": 132,
+          "fisher-effect": 140,
+          "inflation-costs": 128,
+          "monetary-neutrality": 140
+        },
+        "shares": {
+          "quantity-theory-of-money": 0.1956,
+          "monetary-neutrality": 0.2074,
+          "fisher-effect": 0.2074,
+          "inflation-costs": 0.1896,
+          "inflation-tax-and-deflation": 0.2
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "quantity-theory-of-money": 0,
+          "monetary-neutrality": 0,
+          "fisher-effect": 0,
+          "inflation-costs": 0,
+          "inflation-tax-and-deflation": 0
+        }
+      }
+    }
+  },
+  "neighboringLegendaryIssues": [
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "questionId": "LG-Q-9130",
+      "bossStage": null
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "questionId": "LG-Q-9137",
+      "bossStage": null
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "questionId": "P52B-S3-LPMM-LB-001",
+      "bossStage": "mastery"
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "questionId": "LG-Q-9131",
+      "bossStage": null
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "questionId": "LG-Q-9132",
+      "bossStage": null
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "questionId": "LG-Q-9138",
+      "bossStage": null
+    }
+  ],
+  "simulation": {
+    "totalSessions": 975,
+    "solo": {
+      "quantity-theory-of-money": {
+        "name": "quantity-theory-of-money solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 662,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 540
+              },
+              "boss": {
+                "quantity-theory-of-money": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "quantity-theory-of-money": 331
+              },
+              "bridge": {
+                "quantity-theory-of-money": 331
+              }
+            },
+            "calculationExposure": 272,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 520,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "quantity-theory-of-money": 260
+              },
+              "bridge": {
+                "quantity-theory-of-money": 260
+              }
+            },
+            "calculationExposure": 203,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 510,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "quantity-theory-of-money": 255
+              },
+              "bridge": {
+                "quantity-theory-of-money": 255
+              }
+            },
+            "calculationExposure": 206,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 646,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "quantity-theory-of-money": 540
+              },
+              "legendaryBoss": {
+                "quantity-theory-of-money": 180
+              },
+              "repair": {
+                "quantity-theory-of-money": 323
+              },
+              "bridge": {
+                "quantity-theory-of-money": 323
+              }
+            },
+            "calculationExposure": 255,
+            "duplicateCanonicalSelectionsBySession": 460,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 682,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 540
+              },
+              "boss": {
+                "quantity-theory-of-money": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "quantity-theory-of-money": 341
+              },
+              "bridge": {
+                "quantity-theory-of-money": 341
+              }
+            },
+            "calculationExposure": 257,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "monetary-neutrality": {
+        "name": "monetary-neutrality solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 682,
+            "representation": {
+              "ordinary": {
+                "monetary-neutrality": 540
+              },
+              "boss": {
+                "monetary-neutrality": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 341
+              },
+              "bridge": {
+                "monetary-neutrality": 341
+              }
+            },
+            "calculationExposure": 140,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 504,
+            "representation": {
+              "ordinary": {
+                "monetary-neutrality": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 252
+              },
+              "bridge": {
+                "monetary-neutrality": 252
+              }
+            },
+            "calculationExposure": 140,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 488,
+            "representation": {
+              "ordinary": {
+                "monetary-neutrality": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 244
+              },
+              "bridge": {
+                "monetary-neutrality": 244
+              }
+            },
+            "calculationExposure": 136,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "monetary-neutrality": 540
+              },
+              "legendaryBoss": {
+                "monetary-neutrality": 180
+              },
+              "repair": {
+                "monetary-neutrality": 329
+              },
+              "bridge": {
+                "monetary-neutrality": 329
+              }
+            },
+            "calculationExposure": 197,
+            "duplicateCanonicalSelectionsBySession": 520,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {
+                "monetary-neutrality": 540
+              },
+              "boss": {
+                "monetary-neutrality": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 335
+              },
+              "bridge": {
+                "monetary-neutrality": 335
+              }
+            },
+            "calculationExposure": 138,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "fisher-effect": {
+        "name": "fisher-effect solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {
+                "fisher-effect": 540
+              },
+              "boss": {
+                "fisher-effect": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 335
+              },
+              "bridge": {
+                "fisher-effect": 335
+              }
+            },
+            "calculationExposure": 488,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 522,
+            "representation": {
+              "ordinary": {
+                "fisher-effect": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 261
+              },
+              "bridge": {
+                "fisher-effect": 261
+              }
+            },
+            "calculationExposure": 409,
+            "duplicateCanonicalSelectionsBySession": 120,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 510,
+            "representation": {
+              "ordinary": {
+                "fisher-effect": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 255
+              },
+              "bridge": {
+                "fisher-effect": 255
+              }
+            },
+            "calculationExposure": 419,
+            "duplicateCanonicalSelectionsBySession": 120,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 664,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "fisher-effect": 540
+              },
+              "legendaryBoss": {
+                "fisher-effect": 180
+              },
+              "repair": {
+                "fisher-effect": 332
+              },
+              "bridge": {
+                "fisher-effect": 332
+              }
+            },
+            "calculationExposure": 391,
+            "duplicateCanonicalSelectionsBySession": 540,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 676,
+            "representation": {
+              "ordinary": {
+                "fisher-effect": 540
+              },
+              "boss": {
+                "fisher-effect": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 338
+              },
+              "bridge": {
+                "fisher-effect": 338
+              }
+            },
+            "calculationExposure": 495,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "inflation-costs": {
+        "name": "inflation-costs solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 676,
+            "representation": {
+              "ordinary": {
+                "inflation-costs": 540
+              },
+              "boss": {
+                "inflation-costs": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-costs": 338
+              },
+              "bridge": {
+                "inflation-costs": 338
+              }
+            },
+            "calculationExposure": 20,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 516,
+            "representation": {
+              "ordinary": {
+                "inflation-costs": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-costs": 258
+              },
+              "bridge": {
+                "inflation-costs": 258
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 160,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 504,
+            "representation": {
+              "ordinary": {
+                "inflation-costs": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-costs": 252
+              },
+              "bridge": {
+                "inflation-costs": 252
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 160,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 664,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "inflation-costs": 540
+              },
+              "legendaryBoss": {
+                "inflation-costs": 180
+              },
+              "repair": {
+                "inflation-costs": 332
+              },
+              "bridge": {
+                "inflation-costs": 332
+              }
+            },
+            "calculationExposure": 88,
+            "duplicateCanonicalSelectionsBySession": 520,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 668,
+            "representation": {
+              "ordinary": {
+                "inflation-costs": 540
+              },
+              "boss": {
+                "inflation-costs": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-costs": 334
+              },
+              "bridge": {
+                "inflation-costs": 334
+              }
+            },
+            "calculationExposure": 20,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "inflation-tax-and-deflation": {
+        "name": "inflation-tax-and-deflation solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 668,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 540
+              },
+              "boss": {
+                "inflation-tax-and-deflation": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-tax-and-deflation": 334
+              },
+              "bridge": {
+                "inflation-tax-and-deflation": 334
+              }
+            },
+            "calculationExposure": 44,
+            "duplicateCanonicalSelectionsBySession": 160,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 532,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-tax-and-deflation": 266
+              },
+              "bridge": {
+                "inflation-tax-and-deflation": 266
+              }
+            },
+            "calculationExposure": 25,
+            "duplicateCanonicalSelectionsBySession": 220,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 518,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-tax-and-deflation": 259
+              },
+              "bridge": {
+                "inflation-tax-and-deflation": 259
+              }
+            },
+            "calculationExposure": 30,
+            "duplicateCanonicalSelectionsBySession": 220,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "inflation-tax-and-deflation": 540
+              },
+              "legendaryBoss": {
+                "inflation-tax-and-deflation": 180
+              },
+              "repair": {
+                "inflation-tax-and-deflation": 335
+              },
+              "bridge": {
+                "inflation-tax-and-deflation": 335
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 540,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 680,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 540
+              },
+              "boss": {
+                "inflation-tax-and-deflation": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-tax-and-deflation": 340
+              },
+              "bridge": {
+                "inflation-tax-and-deflation": 340
+              }
+            },
+            "calculationExposure": 46,
+            "duplicateCanonicalSelectionsBySession": 160,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F6 family",
+      "perMode": 75,
+      "totalSessions": 375,
+      "byMode": {
+        "standard": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2700,
+          "auxiliarySelections": 2478,
+          "representation": {
+            "ordinary": {
+              "inflation-costs": 347,
+              "quantity-theory-of-money": 555,
+              "fisher-effect": 407,
+              "monetary-neutrality": 412,
+              "inflation-tax-and-deflation": 304
+            },
+            "boss": {
+              "fisher-effect": 123,
+              "monetary-neutrality": 145,
+              "quantity-theory-of-money": 146,
+              "inflation-costs": 132,
+              "inflation-tax-and-deflation": 129
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "monetary-neutrality": 341,
+              "inflation-costs": 304,
+              "quantity-theory-of-money": 318,
+              "fisher-effect": 144,
+              "inflation-tax-and-deflation": 132
+            },
+            "bridge": {
+              "fisher-effect": 165,
+              "monetary-neutrality": 337,
+              "inflation-costs": 269,
+              "inflation-tax-and-deflation": 133,
+              "quantity-theory-of-money": 335
+            }
+          },
+          "calculationExposure": 763,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2250,
+          "auxiliarySelections": 1886,
+          "representation": {
+            "ordinary": {
+              "inflation-tax-and-deflation": 336,
+              "monetary-neutrality": 475,
+              "fisher-effect": 397,
+              "inflation-costs": 395,
+              "quantity-theory-of-money": 647
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "fisher-effect": 129,
+              "inflation-costs": 215,
+              "quantity-theory-of-money": 271,
+              "monetary-neutrality": 223,
+              "inflation-tax-and-deflation": 105
+            },
+            "bridge": {
+              "quantity-theory-of-money": 261,
+              "monetary-neutrality": 237,
+              "inflation-costs": 224,
+              "inflation-tax-and-deflation": 93,
+              "fisher-effect": 128
+            }
+          },
+          "calculationExposure": 606,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2250,
+          "auxiliarySelections": 1896,
+          "representation": {
+            "ordinary": {
+              "monetary-neutrality": 466,
+              "fisher-effect": 418,
+              "inflation-tax-and-deflation": 332,
+              "inflation-costs": 402,
+              "quantity-theory-of-money": 632
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "fisher-effect": 128,
+              "monetary-neutrality": 228,
+              "quantity-theory-of-money": 261,
+              "inflation-tax-and-deflation": 102,
+              "inflation-costs": 229
+            },
+            "bridge": {
+              "fisher-effect": 143,
+              "monetary-neutrality": 259,
+              "inflation-costs": 219,
+              "quantity-theory-of-money": 225,
+              "inflation-tax-and-deflation": 102
+            }
+          },
+          "calculationExposure": 622,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2700,
+          "auxiliarySelections": 2490,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "inflation-tax-and-deflation": 366,
+              "monetary-neutrality": 419,
+              "quantity-theory-of-money": 520,
+              "fisher-effect": 365,
+              "inflation-costs": 355
+            },
+            "legendaryBoss": {
+              "inflation-tax-and-deflation": 121,
+              "fisher-effect": 119,
+              "monetary-neutrality": 113,
+              "quantity-theory-of-money": 161,
+              "inflation-costs": 161
+            },
+            "repair": {
+              "inflation-tax-and-deflation": 126,
+              "quantity-theory-of-money": 344,
+              "monetary-neutrality": 306,
+              "inflation-costs": 304,
+              "fisher-effect": 165
+            },
+            "bridge": {
+              "quantity-theory-of-money": 325,
+              "inflation-costs": 292,
+              "monetary-neutrality": 310,
+              "fisher-effect": 189,
+              "inflation-tax-and-deflation": 129
+            }
+          },
+          "calculationExposure": 683,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 15,
+            "all-incorrect": 15,
+            "alternating": 15,
+            "random-70-percent": 15,
+            "remediation-heavy-boss-failure": 15
+          },
+          "mainSelections": 2700,
+          "auxiliarySelections": 2464,
+          "representation": {
+            "ordinary": {
+              "fisher-effect": 402,
+              "quantity-theory-of-money": 543,
+              "monetary-neutrality": 408,
+              "inflation-costs": 357,
+              "inflation-tax-and-deflation": 315
+            },
+            "boss": {
+              "inflation-tax-and-deflation": 135,
+              "quantity-theory-of-money": 132,
+              "fisher-effect": 140,
+              "inflation-costs": 128,
+              "monetary-neutrality": 140
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "monetary-neutrality": 323,
+              "inflation-tax-and-deflation": 121,
+              "fisher-effect": 176,
+              "quantity-theory-of-money": 332,
+              "inflation-costs": 280
+            },
+            "bridge": {
+              "monetary-neutrality": 335,
+              "inflation-costs": 258,
+              "fisher-effect": 167,
+              "inflation-tax-and-deflation": 151,
+              "quantity-theory-of-money": 321
+            }
+          },
+          "calculationExposure": 753,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 342,
+            "representation": {
+              "ordinary": {
+                "monetary-neutrality": 28,
+                "money-functions-and-measures": 34,
+                "monetary-control-limits": 18,
+                "inflation-tax-and-deflation": 18,
+                "fisher-effect": 25,
+                "monetary-policy-tools": 30,
+                "inflation-costs": 20,
+                "bank-money-creation": 38,
+                "central-bank-and-federal-reserve": 16,
+                "quantity-theory-of-money": 43
+              },
+              "boss": {
+                "monetary-policy-tools": 14,
+                "monetary-control-limits": 11,
+                "central-bank-and-federal-reserve": 9,
+                "fisher-effect": 9,
+                "quantity-theory-of-money": 6,
+                "money-functions-and-measures": 5,
+                "monetary-neutrality": 11,
+                "inflation-tax-and-deflation": 12,
+                "bank-money-creation": 5,
+                "inflation-costs": 8
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "money-functions-and-measures": 23,
+                "quantity-theory-of-money": 26,
+                "monetary-neutrality": 22,
+                "fisher-effect": 13,
+                "monetary-policy-tools": 19,
+                "inflation-tax-and-deflation": 8,
+                "bank-money-creation": 19,
+                "inflation-costs": 14,
+                "monetary-control-limits": 16,
+                "central-bank-and-federal-reserve": 11
+              },
+              "bridge": {
+                "money-functions-and-measures": 20,
+                "quantity-theory-of-money": 17,
+                "monetary-neutrality": 20,
+                "inflation-costs": 20,
+                "bank-money-creation": 25,
+                "monetary-policy-tools": 19,
+                "inflation-tax-and-deflation": 6,
+                "fisher-effect": 18,
+                "central-bank-and-federal-reserve": 9,
+                "monetary-control-limits": 17
+              }
+            },
+            "calculationExposure": 78,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 256,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 21,
+                "central-bank-and-federal-reserve": 19,
+                "monetary-control-limits": 26,
+                "inflation-costs": 28,
+                "monetary-neutrality": 28,
+                "fisher-effect": 27,
+                "quantity-theory-of-money": 37,
+                "money-functions-and-measures": 38,
+                "monetary-policy-tools": 30,
+                "bank-money-creation": 46
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 11,
+                "inflation-costs": 14,
+                "money-functions-and-measures": 20,
+                "quantity-theory-of-money": 11,
+                "central-bank-and-federal-reserve": 6,
+                "monetary-control-limits": 10,
+                "bank-money-creation": 19,
+                "monetary-neutrality": 18,
+                "monetary-policy-tools": 17,
+                "inflation-tax-and-deflation": 2
+              },
+              "bridge": {
+                "monetary-policy-tools": 19,
+                "fisher-effect": 9,
+                "money-functions-and-measures": 26,
+                "quantity-theory-of-money": 13,
+                "central-bank-and-federal-reserve": 6,
+                "monetary-neutrality": 18,
+                "monetary-control-limits": 9,
+                "bank-money-creation": 15,
+                "inflation-costs": 10,
+                "inflation-tax-and-deflation": 3
+              }
+            },
+            "calculationExposure": 81,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 252,
+            "representation": {
+              "ordinary": {
+                "money-functions-and-measures": 32,
+                "quantity-theory-of-money": 39,
+                "monetary-control-limits": 29,
+                "bank-money-creation": 53,
+                "inflation-tax-and-deflation": 19,
+                "fisher-effect": 28,
+                "central-bank-and-federal-reserve": 19,
+                "inflation-costs": 32,
+                "monetary-neutrality": 26,
+                "monetary-policy-tools": 23
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "central-bank-and-federal-reserve": 13,
+                "monetary-control-limits": 10,
+                "quantity-theory-of-money": 17,
+                "inflation-costs": 17,
+                "money-functions-and-measures": 9,
+                "monetary-neutrality": 17,
+                "monetary-policy-tools": 14,
+                "inflation-tax-and-deflation": 5,
+                "bank-money-creation": 18,
+                "fisher-effect": 6
+              },
+              "bridge": {
+                "central-bank-and-federal-reserve": 6,
+                "monetary-control-limits": 15,
+                "quantity-theory-of-money": 17,
+                "inflation-costs": 15,
+                "money-functions-and-measures": 10,
+                "monetary-neutrality": 18,
+                "monetary-policy-tools": 12,
+                "fisher-effect": 9,
+                "bank-money-creation": 19,
+                "inflation-tax-and-deflation": 5
+              }
+            },
+            "calculationExposure": 82,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 334,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "bank-money-creation": 32,
+                "fisher-effect": 28,
+                "monetary-neutrality": 30,
+                "central-bank-and-federal-reserve": 28,
+                "inflation-tax-and-deflation": 20,
+                "monetary-control-limits": 34,
+                "money-functions-and-measures": 23,
+                "monetary-policy-tools": 21,
+                "inflation-costs": 23,
+                "quantity-theory-of-money": 31
+              },
+              "legendaryBoss": {
+                "monetary-control-limits": 9,
+                "inflation-costs": 11,
+                "central-bank-and-federal-reserve": 9,
+                "fisher-effect": 13,
+                "monetary-policy-tools": 9,
+                "bank-money-creation": 13,
+                "quantity-theory-of-money": 10,
+                "money-functions-and-measures": 6,
+                "monetary-neutrality": 8,
+                "inflation-tax-and-deflation": 2
+              },
+              "repair": {
+                "monetary-neutrality": 24,
+                "central-bank-and-federal-reserve": 17,
+                "bank-money-creation": 20,
+                "inflation-tax-and-deflation": 8,
+                "quantity-theory-of-money": 17,
+                "inflation-costs": 16,
+                "monetary-policy-tools": 9,
+                "money-functions-and-measures": 25,
+                "monetary-control-limits": 20,
+                "fisher-effect": 11
+              },
+              "bridge": {
+                "quantity-theory-of-money": 26,
+                "monetary-control-limits": 18,
+                "bank-money-creation": 18,
+                "fisher-effect": 16,
+                "monetary-neutrality": 24,
+                "money-functions-and-measures": 19,
+                "inflation-costs": 23,
+                "central-bank-and-federal-reserve": 8,
+                "monetary-policy-tools": 7,
+                "inflation-tax-and-deflation": 8
+              }
+            },
+            "calculationExposure": 78,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 328,
+            "representation": {
+              "ordinary": {
+                "quantity-theory-of-money": 33,
+                "monetary-neutrality": 25,
+                "monetary-control-limits": 25,
+                "bank-money-creation": 42,
+                "inflation-costs": 18,
+                "central-bank-and-federal-reserve": 30,
+                "monetary-policy-tools": 24,
+                "fisher-effect": 28,
+                "money-functions-and-measures": 29,
+                "inflation-tax-and-deflation": 16
+              },
+              "boss": {
+                "quantity-theory-of-money": 11,
+                "central-bank-and-federal-reserve": 8,
+                "fisher-effect": 9,
+                "money-functions-and-measures": 11,
+                "monetary-policy-tools": 10,
+                "inflation-costs": 9,
+                "inflation-tax-and-deflation": 13,
+                "bank-money-creation": 7,
+                "monetary-neutrality": 7,
+                "monetary-control-limits": 5
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-costs": 11,
+                "quantity-theory-of-money": 22,
+                "money-functions-and-measures": 31,
+                "monetary-policy-tools": 20,
+                "bank-money-creation": 14,
+                "fisher-effect": 7,
+                "central-bank-and-federal-reserve": 19,
+                "monetary-control-limits": 15,
+                "inflation-tax-and-deflation": 6,
+                "monetary-neutrality": 19
+              },
+              "bridge": {
+                "inflation-costs": 16,
+                "quantity-theory-of-money": 24,
+                "monetary-control-limits": 17,
+                "money-functions-and-measures": 20,
+                "bank-money-creation": 21,
+                "fisher-effect": 11,
+                "central-bank-and-federal-reserve": 15,
+                "monetary-policy-tools": 17,
+                "inflation-tax-and-deflation": 6,
+                "monetary-neutrality": 17
+              }
+            },
+            "calculationExposure": 86,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {
+                "inflation-tax-and-deflation": 35,
+                "monetary-policy-transmission": 48,
+                "quantity-theory-of-money": 48,
+                "monetary-neutrality": 36,
+                "liquidity-preference-and-money-market": 39,
+                "fisher-effect": 30,
+                "inflation-costs": 34
+              },
+              "boss": {
+                "liquidity-preference-and-money-market": 9,
+                "monetary-policy-transmission": 14,
+                "fisher-effect": 11,
+                "inflation-costs": 12,
+                "quantity-theory-of-money": 22,
+                "monetary-neutrality": 15,
+                "inflation-tax-and-deflation": 7
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "inflation-costs": 26,
+                "liquidity-preference-and-money-market": 21,
+                "quantity-theory-of-money": 25,
+                "monetary-neutrality": 30,
+                "monetary-policy-transmission": 34,
+                "fisher-effect": 22,
+                "inflation-tax-and-deflation": 8
+              },
+              "bridge": {
+                "monetary-policy-transmission": 15,
+                "quantity-theory-of-money": 29,
+                "inflation-costs": 30,
+                "liquidity-preference-and-money-market": 31,
+                "inflation-tax-and-deflation": 12,
+                "monetary-neutrality": 30,
+                "fisher-effect": 19
+              }
+            },
+            "calculationExposure": 64,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 254,
+            "representation": {
+              "ordinary": {
+                "monetary-neutrality": 41,
+                "inflation-tax-and-deflation": 39,
+                "fisher-effect": 34,
+                "quantity-theory-of-money": 53,
+                "monetary-policy-transmission": 53,
+                "liquidity-preference-and-money-market": 41,
+                "inflation-costs": 39
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "monetary-neutrality": 20,
+                "liquidity-preference-and-money-market": 17,
+                "quantity-theory-of-money": 29,
+                "monetary-policy-transmission": 23,
+                "inflation-costs": 14,
+                "fisher-effect": 9,
+                "inflation-tax-and-deflation": 15
+              },
+              "bridge": {
+                "monetary-neutrality": 23,
+                "fisher-effect": 13,
+                "monetary-policy-transmission": 17,
+                "quantity-theory-of-money": 20,
+                "inflation-costs": 16,
+                "liquidity-preference-and-money-market": 23,
+                "inflation-tax-and-deflation": 15
+              }
+            },
+            "calculationExposure": 54,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 300,
+            "auxiliarySelections": 246,
+            "representation": {
+              "ordinary": {
+                "liquidity-preference-and-money-market": 44,
+                "monetary-policy-transmission": 44,
+                "fisher-effect": 30,
+                "monetary-neutrality": 44,
+                "inflation-tax-and-deflation": 29,
+                "inflation-costs": 34,
+                "quantity-theory-of-money": 75
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fisher-effect": 12,
+                "quantity-theory-of-money": 29,
+                "liquidity-preference-and-money-market": 18,
+                "inflation-costs": 20,
+                "monetary-policy-transmission": 14,
+                "monetary-neutrality": 23,
+                "inflation-tax-and-deflation": 7
+              },
+              "bridge": {
+                "fisher-effect": 8,
+                "liquidity-preference-and-money-market": 16,
+                "monetary-neutrality": 23,
+                "quantity-theory-of-money": 35,
+                "monetary-policy-transmission": 14,
+                "inflation-costs": 14,
+                "inflation-tax-and-deflation": 13
+              }
+            },
+            "calculationExposure": 56,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "inflation-costs": 25,
+                "monetary-neutrality": 37,
+                "inflation-tax-and-deflation": 26,
+                "liquidity-preference-and-money-market": 23,
+                "fisher-effect": 32,
+                "monetary-policy-transmission": 73,
+                "quantity-theory-of-money": 54
+              },
+              "legendaryBoss": {
+                "quantity-theory-of-money": 20,
+                "fisher-effect": 12,
+                "inflation-costs": 24,
+                "monetary-neutrality": 16,
+                "inflation-tax-and-deflation": 18
+              },
+              "repair": {
+                "monetary-policy-transmission": 42,
+                "fisher-effect": 14,
+                "inflation-tax-and-deflation": 10,
+                "quantity-theory-of-money": 34,
+                "liquidity-preference-and-money-market": 14,
+                "inflation-costs": 27,
+                "monetary-neutrality": 25
+              },
+              "bridge": {
+                "monetary-policy-transmission": 40,
+                "inflation-costs": 27,
+                "fisher-effect": 16,
+                "inflation-tax-and-deflation": 9,
+                "quantity-theory-of-money": 27,
+                "liquidity-preference-and-money-market": 19,
+                "monetary-neutrality": 28
+              }
+            },
+            "calculationExposure": 78,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 2,
+              "all-incorrect": 2,
+              "alternating": 2,
+              "random-70-percent": 2,
+              "remediation-heavy-boss-failure": 2
+            },
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 38,
+                "inflation-tax-and-deflation": 34,
+                "liquidity-preference-and-money-market": 36,
+                "inflation-costs": 36,
+                "quantity-theory-of-money": 55,
+                "monetary-neutrality": 37,
+                "fisher-effect": 34
+              },
+              "boss": {
+                "fisher-effect": 14,
+                "monetary-policy-transmission": 18,
+                "inflation-costs": 15,
+                "liquidity-preference-and-money-market": 12,
+                "monetary-neutrality": 11,
+                "quantity-theory-of-money": 9,
+                "inflation-tax-and-deflation": 11
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "liquidity-preference-and-money-market": 31,
+                "fisher-effect": 17,
+                "monetary-neutrality": 24,
+                "quantity-theory-of-money": 31,
+                "monetary-policy-transmission": 28,
+                "inflation-costs": 24,
+                "inflation-tax-and-deflation": 11
+              },
+              "bridge": {
+                "fisher-effect": 15,
+                "liquidity-preference-and-money-market": 24,
+                "quantity-theory-of-money": 37,
+                "inflation-tax-and-deflation": 10,
+                "monetary-neutrality": 34,
+                "monetary-policy-transmission": 28,
+                "inflation-costs": 18
+              }
+            },
+            "calculationExposure": 81,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 129,
+    "independentlyRecomputed": 12,
+    "dedicatedCalculationRecords": 25,
+    "failures": 0,
+    "records": [
+      {
+        "questionId": "P52B-S4-QTM-H-001",
+        "conceptId": "quantity-theory-of-money",
+        "published": "Approximately 4 percent.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9118",
+        "conceptId": "quantity-theory-of-money",
+        "published": "It rises from about 3 percent to about 21 percent.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9122",
+        "conceptId": "quantity-theory-of-money",
+        "published": "It stays at 3.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-Q-9128",
+        "conceptId": "fisher-effect",
+        "published": "It rises from 4 percent to 5 percent.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-M-001",
+        "conceptId": "fisher-effect",
+        "published": "The second economy should tend to have a nominal interest rate about 5 percentage points higher.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-M-002",
+        "conceptId": "fisher-effect",
+        "published": "The nominal rate falls from about 9 percent to about 5 percent.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-H-001",
+        "conceptId": "fisher-effect",
+        "published": "It rises about 4 percentage points because both expected inflation and the real rate matter.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-H-004",
+        "conceptId": "fisher-effect",
+        "published": "The ex ante pricing reflected roughly a 6 percent real return, but the realized real return is much lower.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-H-005",
+        "conceptId": "fisher-effect",
+        "published": "No. The nominal rate rose 4 points while expected inflation rose 5, so the implied real rate actually fell about 1 point.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-L-001",
+        "conceptId": "fisher-effect",
+        "published": "The nominal interest rate tends to fall from about 11 percent to about 5 percent.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-FB-004",
+        "conceptId": "fisher-effect",
+        "published": "It rises from about 7 to about 11 percent.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2C2-FISH-FB-006",
+        "conceptId": "fisher-effect",
+        "published": "It fell by about 2 percentage points.",
+        "status": "PASS"
+      }
+    ]
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2c2_money_growth_inflation/generated_packages/family/index.html",
+      "htmlSha256": "7ce464a3f455840538f898b1ccdcbba59b0d62b0bfdfec212a3b7a6459bb0f3b",
+      "bytes": 1321017,
+      "counts": {
+        "easy": 41,
+        "medium": 40,
+        "hard": 43,
+        "elite": 33,
+        "legendary": 34,
+        "easyBoss": 15,
+        "mediumBoss": 15,
+        "finalBoss": 15,
+        "legendaryBoss": 17,
+        "repair": 29,
+        "repairSeed": 0,
+        "bridge": 19,
+        "calculation": 25,
+        "integration": 0,
+        "graph": 32,
+        "assets": 5,
+        "totalCanonical": 301
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    },
+    "fisher": {
+      "path": "validation_artifacts/macro_m2c2_money_growth_inflation/generated_packages/fisher/index.html",
+      "htmlSha256": "c33b424f3e0f9189e4b4ddb4f19d50489f458fd84a15844264768b798461237f",
+      "bytes": 447436,
+      "counts": {
+        "easy": 9,
+        "medium": 7,
+        "hard": 8,
+        "elite": 3,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 3,
+        "calculation": 8,
+        "integration": 0,
+        "graph": 2,
+        "assets": 1,
+        "totalCanonical": 52
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    }
+  },
+  "browser": {
+    "passed": false,
+    "attempted": true,
+    "console": {
+      "errors": null,
+      "warnings": null
+    },
+    "nonBlockingIssues": [
+      "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, mode preflight, inline-JavaScript syntax, and static markup checks."
+    ],
+    "stderr": "[7890:7919:0810/185641.937545:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[7890:7919:0810/185641.947945:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[7890:7919:0810/185641.948046:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[7890:7919:0810/185641.948071:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[7890:7919:0810/185641.965447:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[7890:7919:0810/185641.987242:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[7890:7890:0810/185642.017696:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[7890:7919:0810/185642.017791:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")"
+  },
+  "verdict": "MACRO M2c-2 COMPLETE WITH NON-BLOCKING ISSUES"
+}

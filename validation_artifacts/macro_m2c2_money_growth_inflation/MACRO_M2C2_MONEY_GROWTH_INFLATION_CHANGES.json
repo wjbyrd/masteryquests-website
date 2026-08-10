@@ -1,0 +1,644 @@
+{
+  "phase": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1",
+  "generatedAt": "2026-08-10T18:56:56.859Z",
+  "summary": {
+    "added": 52,
+    "bossStageFixed": 15,
+    "repairRewritten": 4,
+    "bridgeRewritten": 1,
+    "removed": 0,
+    "relocated": 0
+  },
+  "changes": [
+    {
+      "questionId": "ECON-SP-MONETARY-NEUTRALITY-5019",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Clarifies the long-run neutrality boundary instead of rewarding a memorized definition.",
+      "oldSkill": "monetary_neutrality",
+      "newSkill": "long_run_neutrality_boundary",
+      "oldRepairSkill": "monetary_neutrality",
+      "newRepairSkill": "long_run_neutrality_boundary"
+    },
+    {
+      "questionId": "ECON-SP-FISHER-EFFECT-5020",
+      "canonicalConceptId": "fisher-effect",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Repairs the expected-versus-actual inflation misconception at the core of the Fisher effect.",
+      "oldSkill": "fisher_effect",
+      "newSkill": "fisher_expected_inflation",
+      "oldRepairSkill": "fisher_effect",
+      "newRepairSkill": "fisher_expected_inflation"
+    },
+    {
+      "questionId": "LG-R-5036",
+      "canonicalConceptId": "inflation-costs",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Repairs the misconception that anticipated inflation is automatically costless.",
+      "oldSkill": "inflation_costs_overview",
+      "newSkill": "expected_inflation_costs",
+      "oldRepairSkill": "inflation_costs_overview",
+      "newRepairSkill": "expected_inflation_costs"
+    },
+    {
+      "questionId": "ECON-SP-INFLATION-TAX-5023",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Clarifies that the inflation tax is an erosion of real money balances rather than a statutory tax bill.",
+      "oldSkill": "inflation_tax",
+      "newSkill": "inflation_tax_mechanism",
+      "oldRepairSkill": "inflation_tax",
+      "newRepairSkill": "inflation_tax_mechanism"
+    },
+    {
+      "questionId": "LG-B-6016",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates a genuine Inflation Costs ↔ Inflation Tax conceptual bridge.",
+      "oldSkill": "inflation_tax_policy_risk",
+      "newSkill": "inflation_tax_mechanism",
+      "oldRepairSkill": "inflation_tax_policy_risk",
+      "newRepairSkill": "inflation_tax_mechanism"
+    },
+    {
+      "questionId": "PM2C2-NEUT-E-001",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-M-001",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-H-001",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-EB-001",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-EB-002",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-EB-003",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-FB-004",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-FB-005",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-FB-006",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-LB-001",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-E-001",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-E-002",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-M-001",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-M-002",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-M-003",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-H-001",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-H-002",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-H-003",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-H-004",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-H-005",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-L-001",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-L-002",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-EB-001",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-EB-002",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-EB-003",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-FB-004",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-FB-005",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-FISH-FB-006",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-M-001",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-H-001",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-L-001",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-EB-001",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-EB-002",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-EB-003",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-FB-004",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-FB-005",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ICOST-FB-006",
+      "canonicalConceptId": "inflation-costs",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-E-001",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-M-001",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-H-001",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-L-001",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-L-002",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-L-003",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-EB-001",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-EB-002",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-EB-003",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-FB-004",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-FB-005",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-FB-006",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-ITAX-LB-001",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F6 structural gap with a distinct long-run money/inflation task."
+    },
+    {
+      "questionId": "PM2C2-NEUT-BR-001",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "bridge",
+      "reason": "Adds a genuine cross-concept F6 recovery connection."
+    },
+    {
+      "questionId": "PM2C2-FISH-BR-001",
+      "canonicalConceptId": "fisher-effect",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "bridge",
+      "reason": "Adds a genuine cross-concept F6 recovery connection."
+    },
+    {
+      "questionId": "LG-Q-9126",
+      "canonicalConceptId": "quantity-theory-of-money",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9116",
+      "canonicalConceptId": "quantity-theory-of-money",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9118",
+      "canonicalConceptId": "quantity-theory-of-money",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9122",
+      "canonicalConceptId": "quantity-theory-of-money",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9115",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9123",
+      "canonicalConceptId": "monetary-neutrality",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9117",
+      "canonicalConceptId": "fisher-effect",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9128",
+      "canonicalConceptId": "fisher-effect",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9127",
+      "canonicalConceptId": "fisher-effect",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9120",
+      "canonicalConceptId": "inflation-costs",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9125",
+      "canonicalConceptId": "inflation-costs",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9119",
+      "canonicalConceptId": "inflation-costs",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9129",
+      "canonicalConceptId": "inflation-costs",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9121",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9124",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    }
+  ],
+  "protectedIntegrity": {
+    "nonF6Mismatches": [],
+    "quantityTheoryQuestionContentChanged": false
+  }
+}

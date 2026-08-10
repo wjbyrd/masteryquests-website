@@ -1,0 +1,204 @@
+{
+  "phase": "phaseM2c3-money-market-policy-transmission-family-maturation-v1",
+  "generatedAt": "2026-08-10T19:21:43.208Z",
+  "summary": {
+    "added": 12,
+    "bossStageFixed": 6,
+    "repairRewritten": 2,
+    "bridgeRewritten": 1,
+    "assetMetadataCopiesUpdated": 4,
+    "removed": 0,
+    "relocated": 0
+  },
+  "changes": [
+    {
+      "questionId": "P52B-S3-LPMM-LB-001",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": "mastery",
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9130",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9137",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9138",
+      "canonicalConceptId": "monetary-policy-transmission",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9132",
+      "canonicalConceptId": "monetary-policy-transmission",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9131",
+      "canonicalConceptId": "monetary-policy-transmission",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-R-5040",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Replaces a duplicate definition check with the core movement-versus-shift misconception.",
+      "oldSkill": "liquidity_preference_definition",
+      "newSkill": "money_demand_shift_vs_movement"
+    },
+    {
+      "questionId": "LG-R-5041",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Replaces a second definition check with disequilibrium adjustment logic.",
+      "oldSkill": "liquidity_preference_definition",
+      "newSkill": "money_market_disequilibrium"
+    },
+    {
+      "questionId": "LG-B-6018",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Turns a same-skill bridge into an explicit Money Market → Policy Transmission connection.",
+      "oldSkill": "interest_rate_effect_ad_slope",
+      "newSkill": "bridge_money_market_transmission"
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-001",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-002",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-003",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-004",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-005",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-006",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-L-007",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-LB-001",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-LPMM-LB-002",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-MPTX-LB-001",
+      "canonicalConceptId": "monetary-policy-transmission",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Adds distinct F7 Legendary depth without expanding healthy ordinary pools."
+    },
+    {
+      "questionId": "PM2C3-MPTX-R-001",
+      "canonicalConceptId": "monetary-policy-transmission",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "repair",
+      "reason": "Adds a targeted F7 repair route."
+    },
+    {
+      "questionId": "PM2C3-LPMM-BR-001",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "bridge",
+      "reason": "Adds a targeted F7 bridge route."
+    }
+  ],
+  "protectedIntegrity": {
+    "nonF7Mismatches": []
+  }
+}

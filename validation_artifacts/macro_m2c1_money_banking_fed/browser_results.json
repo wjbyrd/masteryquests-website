@@ -1,0 +1,26 @@
+{
+  "phase": "phaseM2c1-money-banking-fed-family-maturation-v1",
+  "generatedAt": "2026-08-10T18:37:11.214Z",
+  "passed": false,
+  "attempted": true,
+  "console": {
+    "errors": null,
+    "warnings": null
+  },
+  "nonBlockingIssues": [
+    "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, mode preflight, inline-JavaScript syntax, and static markup checks."
+  ],
+  "stderr": "[6593:6621:0810/183656.283923:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[6593:6621:0810/183656.292184:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[6593:6621:0810/183656.292340:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[6593:6621:0810/183656.292521:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[6593:6621:0810/183656.312357:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[6593:6621:0810/183656.332199:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[6593:6593:0810/183656.359311:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[6593:6621:0810/183656.359389:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")",
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2c1_money_banking_fed/generated_packages/family/index.html",
+      "htmlSha256": "d164da1c39ba15876180fb7aa876afd388348f1a2456df2ffe79ced366ae3a16",
+      "inlineScriptsChecked": 1
+    },
+    "central": {
+      "path": "validation_artifacts/macro_m2c1_money_banking_fed/generated_packages/central/index.html",
+      "htmlSha256": "8504fa5f7b811c81ca0bf3cfd78660f5711dde26a715c06be3f98270540549d0",
+      "inlineScriptsChecked": 1
+    }
+  }
+}
