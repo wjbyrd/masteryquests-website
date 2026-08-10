@@ -1,0 +1,1586 @@
+{
+  "phase": "phaseM2d2-fiscal-stabilization-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1",
+  "librarySha256": "7a2815f1715ef4d5c38b0d240b748f4114c264625fb59fc1ecbc8ce5c153537a",
+  "beforeCounts": {
+    "fiscal-policy-and-aggregate-demand": {
+      "easy": 6,
+      "medium": 8,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 6,
+      "calculation": 4,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 52
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "easy": 6,
+      "medium": 7,
+      "hard": 6,
+      "elite": 11,
+      "legendary": 6,
+      "calculation": 12,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 9,
+      "repairSeed": 0,
+      "bridge": 5,
+      "total": 74
+    },
+    "stabilization-policy": {
+      "easy": 9,
+      "medium": 9,
+      "hard": 12,
+      "elite": 12,
+      "legendary": 8,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 6,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 5,
+      "total": 78
+    }
+  },
+  "afterCounts": {
+    "fiscal-policy-and-aggregate-demand": {
+      "total": 54,
+      "easy": 6,
+      "medium": 8,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 8,
+      "calculation": 4,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 3,
+      "calculationLinked": 14
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "total": 76,
+      "easy": 6,
+      "medium": 7,
+      "hard": 6,
+      "elite": 11,
+      "legendary": 8,
+      "calculation": 12,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 9,
+      "repairSeed": 0,
+      "bridge": 5,
+      "graphLinked": 23,
+      "calculationLinked": 42
+    },
+    "stabilization-policy": {
+      "total": 82,
+      "easy": 9,
+      "medium": 9,
+      "hard": 12,
+      "elite": 12,
+      "legendary": 12,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 6,
+      "repair": 8,
+      "repairSeed": 0,
+      "bridge": 5,
+      "graphLinked": 17,
+      "calculationLinked": 14
+    }
+  },
+  "familyBefore": {
+    "easy": 21,
+    "medium": 24,
+    "hard": 24,
+    "elite": 27,
+    "legendary": 20,
+    "calculation": 16,
+    "integration": 0,
+    "easyBoss": 9,
+    "mediumBoss": 9,
+    "finalBoss": 9,
+    "legendaryBoss": 12,
+    "repair": 23,
+    "repairSeed": 0,
+    "bridge": 13,
+    "total": 204
+  },
+  "familyAfter": {
+    "total": 212,
+    "easy": 21,
+    "medium": 24,
+    "hard": 24,
+    "elite": 27,
+    "legendary": 28,
+    "calculation": 16,
+    "integration": 0,
+    "easyBoss": 9,
+    "mediumBoss": 9,
+    "finalBoss": 9,
+    "legendaryBoss": 12,
+    "repair": 23,
+    "repairSeed": 0,
+    "bridge": 13,
+    "graphLinked": 43,
+    "calculationLinked": 70
+  },
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 69,
+    "nonF9Mismatches": []
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "fiscal-policy-and-aggregate-demand": [
+      "final",
+      "opening",
+      "middle"
+    ],
+    "fiscal-multipliers-and-crowding-out": [
+      "final",
+      "middle",
+      "opening"
+    ],
+    "stabilization-policy": [
+      "middle",
+      "middle",
+      "final",
+      "opening",
+      "final",
+      "opening"
+    ]
+  },
+  "quality": {
+    "groups": {
+      "fiscal-policy-and-aggregate-demand::legendary": {
+        "count": 2,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.875
+      },
+      "fiscal-policy-and-aggregate-demand::repair": {
+        "count": 4,
+        "positions": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.0089285714285714
+      },
+      "fiscal-policy-and-aggregate-demand::bridge": {
+        "count": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.9
+      },
+      "fiscal-multipliers-and-crowding-out::legendary": {
+        "count": 2,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.9473684210526316
+      },
+      "fiscal-multipliers-and-crowding-out::bridge": {
+        "count": 2,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.9692028985507246
+      },
+      "stabilization-policy::legendary": {
+        "count": 4,
+        "positions": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.376859753098564
+      },
+      "stabilization-policy::repair": {
+        "count": 2,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.3368700265251992
+      },
+      "stabilization-policy::bridge": {
+        "count": 2,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.1642736486486487
+      }
+    },
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedNumberSwaps": [],
+    "introducedRepeatedAnswerSets": [],
+    "answerLengthFailures": []
+  },
+  "routeAudit": {
+    "fiscal-policy-and-aggregate-demand": {
+      "repairRecords": 6,
+      "repairReachable": 6,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-FISCAL-POLICY-AD-SHIFT-6032": [],
+        "ECON-SP-TAX-CUT-AD-6033": [],
+        "LG-B-6021": [
+          "fiscal-multipliers-and-crowding-out"
+        ]
+      }
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "repairRecords": 9,
+      "repairReachable": 9,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-6035": [],
+        "ECON-SP-CROWDING-OUT-EFFECT-6036": [],
+        "ECON-SP-MULTIPLIER-EFFECT-6034": [],
+        "LG-B-6022": [
+          "fiscal-policy-and-aggregate-demand",
+          "aggregate-demand"
+        ],
+        "LG-B-6023": [
+          "stabilization-policy",
+          "aggregate-demand"
+        ]
+      }
+    },
+    "stabilization-policy": {
+      "repairRecords": 8,
+      "repairReachable": 8,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-6054": [
+          "long-run-macroeconomic-adjustment",
+          "aggregate-demand"
+        ],
+        "ECON-SP-LIQUIDITY-TRAP-6038": [],
+        "ECON-SP-POLICY-LAGS-6037": [],
+        "LG-B-6024": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-B-6025": [
+          "short-run-phillips-curve",
+          "aggregate-demand"
+        ]
+      }
+    }
+  },
+  "graphAudit": {
+    "graphLinkedRecords": 43,
+    "assetMetadata": [
+      {
+        "conceptId": "fiscal-policy-and-aggregate-demand",
+        "filename": "moneymultiplier.webp",
+        "imageAlt": "Aggregate-demand multiplier graph with AD1, AD2, and AD3 shifting progressively right at a fixed price level P, corresponding to output levels Y1, Y2, and Y3.",
+        "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+        "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911"
+      },
+      {
+        "conceptId": "fiscal-multipliers-and-crowding-out",
+        "filename": "adaslras.webp",
+        "imageAlt": "AD-AS graph with LRAS at Y1, two aggregate-demand curves, two short-run aggregate-supply curves, and labeled output gaps.",
+        "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level. LRAS is vertical at Y1. AD1 and AD2 slope downward, with AD2 to the right of AD1. AS1 and AS2 slope upward, with AS1 above and left of AS2. Dashed guides mark Y3 left of LRAS, Y1 on LRAS, Y2 right of LRAS, and price levels P1, P2, and P3. AD1-AS2 is at Y1/P1; AD1-AS1 is at Y3/P2; AD2-AS2 is at Y2/P2; AD2-AS1 is at Y1/P3.",
+        "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e"
+      },
+      {
+        "conceptId": "fiscal-multipliers-and-crowding-out",
+        "filename": "moneyd2_moneys2.webp",
+        "imageAlt": "Money-market graph with two vertical money-supply curves, two downward-sloping money-demand curves, and labeled interest-rate and money-quantity points.",
+        "graphDescription": "The vertical axis is interest rate r and the horizontal axis is quantity of money Qm. MS1 is vertical at Qm1 and MS2 is vertical to its right at Qm2. MD1 slopes downward through e at Qm1, r2 and g at Qm2, r1. MD2 is shifted right and upward and slopes downward through a at Qm1, r4 and d at Qm2, r3. Additional labeled points are b at Qm2, r4; c at Qm1, r3; and f at Qm1, r1.",
+        "sha256": "e7899cab98fd949f5e506275ade8dd6d9b847f0afdc99353126de6a98f79db44"
+      },
+      {
+        "conceptId": "fiscal-multipliers-and-crowding-out",
+        "filename": "moneymultiplier.webp",
+        "imageAlt": "Aggregate-demand multiplier graph with AD1, AD2, and AD3 shifting progressively right at a fixed price level P, corresponding to output levels Y1, Y2, and Y3.",
+        "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+        "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911"
+      },
+      {
+        "conceptId": "stabilization-policy",
+        "filename": "ad_ms_md.webp",
+        "imageAlt": "Two-panel monetary-transmission graph showing a leftward money-supply shift with a higher interest rate and a leftward aggregate-demand shift with lower output.",
+        "graphDescription": "The left panel has interest rate r on the vertical axis and money M on the horizontal axis. A downward-sloping MD curve intersects MS1 at r1; MS2 is left of MS1 and intersects MD at the higher rate r2. The right panel has price level P on the vertical axis and output Y on the horizontal axis. AD2 lies left of AD1. At price level P1, output is Y1 on AD1 and Y2 on AD2.",
+        "sha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4"
+      },
+      {
+        "conceptId": "stabilization-policy",
+        "filename": "moneymultiplier.webp",
+        "imageAlt": "Aggregate-demand multiplier graph with AD1, AD2, and AD3 shifting progressively right at a fixed price level P, corresponding to output levels Y1, Y2, and Y3.",
+        "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+        "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911"
+      }
+    ],
+    "newGraphAssets": 0,
+    "allF9AssetCopiesAccessible": true
+  },
+  "simulation": {
+    "totalSessions": 775,
+    "solo": {
+      "fiscal-policy-and-aggregate-demand": {
+        "name": "Fiscal Policy & Aggregate Demand solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 642,
+            "representation": {
+              "ordinary": {
+                "fiscal-policy-and-aggregate-demand": 540
+              },
+              "boss": {
+                "fiscal-policy-and-aggregate-demand": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 321
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 321
+              }
+            },
+            "calculationExposure": 165,
+            "duplicateCanonicalSelectionsBySession": 120,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 496,
+            "representation": {
+              "ordinary": {
+                "fiscal-policy-and-aggregate-demand": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 248
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 248
+              }
+            },
+            "calculationExposure": 117,
+            "duplicateCanonicalSelectionsBySession": 180,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 526,
+            "representation": {
+              "ordinary": {
+                "fiscal-policy-and-aggregate-demand": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 263
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 263
+              }
+            },
+            "calculationExposure": 112,
+            "duplicateCanonicalSelectionsBySession": 180,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 662,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "fiscal-policy-and-aggregate-demand": 540
+              },
+              "legendaryBoss": {
+                "fiscal-policy-and-aggregate-demand": 180
+              },
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 331
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 331
+              }
+            },
+            "calculationExposure": 255,
+            "duplicateCanonicalSelectionsBySession": 500,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 660,
+            "representation": {
+              "ordinary": {
+                "fiscal-policy-and-aggregate-demand": 540
+              },
+              "boss": {
+                "fiscal-policy-and-aggregate-demand": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 330
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 330
+              }
+            },
+            "calculationExposure": 165,
+            "duplicateCanonicalSelectionsBySession": 120,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "fiscal-multipliers-and-crowding-out": {
+        "name": "Fiscal Multipliers & Crowding Out solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 540
+              },
+              "boss": {
+                "fiscal-multipliers-and-crowding-out": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 329
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 329
+              }
+            },
+            "calculationExposure": 355,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 506,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 253
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 253
+              }
+            },
+            "calculationExposure": 279,
+            "duplicateCanonicalSelectionsBySession": 20,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 504,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 252
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 252
+              }
+            },
+            "calculationExposure": 285,
+            "duplicateCanonicalSelectionsBySession": 20,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "fiscal-multipliers-and-crowding-out": 540
+              },
+              "legendaryBoss": {
+                "fiscal-multipliers-and-crowding-out": 180
+              },
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 335
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 335
+              }
+            },
+            "calculationExposure": 595,
+            "duplicateCanonicalSelectionsBySession": 500,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 656,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 540
+              },
+              "boss": {
+                "fiscal-multipliers-and-crowding-out": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 328
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 328
+              }
+            },
+            "calculationExposure": 358,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "stabilization-policy": {
+        "name": "Stabilization Policy solo",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 540
+              },
+              "boss": {
+                "stabilization-policy": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 329
+              },
+              "bridge": {
+                "stabilization-policy": 329
+              }
+            },
+            "calculationExposure": 40,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 514,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 257
+              },
+              "bridge": {
+                "stabilization-policy": 257
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 40,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 498,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 600
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 249
+              },
+              "bridge": {
+                "stabilization-policy": 249
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 40,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 682,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "stabilization-policy": 540
+              },
+              "legendaryBoss": {
+                "stabilization-policy": 180
+              },
+              "repair": {
+                "stabilization-policy": 341
+              },
+              "bridge": {
+                "stabilization-policy": 341
+              }
+            },
+            "calculationExposure": 448,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 674,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 540
+              },
+              "boss": {
+                "stabilization-policy": 180
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 337
+              },
+              "bridge": {
+                "stabilization-policy": 337
+              }
+            },
+            "calculationExposure": 40,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F9 family",
+      "perMode": 75,
+      "totalSessions": 375,
+      "byMode": {
+        "standard": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2700,
+          "auxiliarySelections": 2460,
+          "representation": {
+            "ordinary": {
+              "fiscal-policy-and-aggregate-demand": 509,
+              "fiscal-multipliers-and-crowding-out": 770,
+              "stabilization-policy": 746
+            },
+            "boss": {
+              "stabilization-policy": 227,
+              "fiscal-policy-and-aggregate-demand": 209,
+              "fiscal-multipliers-and-crowding-out": 239
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "stabilization-policy": 499,
+              "fiscal-policy-and-aggregate-demand": 305,
+              "fiscal-multipliers-and-crowding-out": 426
+            },
+            "bridge": {
+              "stabilization-policy": 508,
+              "fiscal-policy-and-aggregate-demand": 273,
+              "fiscal-multipliers-and-crowding-out": 449
+            }
+          },
+          "calculationExposure": 716,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2250,
+          "auxiliarySelections": 1916,
+          "representation": {
+            "ordinary": {
+              "fiscal-multipliers-and-crowding-out": 850,
+              "stabilization-policy": 822,
+              "fiscal-policy-and-aggregate-demand": 578
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "fiscal-multipliers-and-crowding-out": 371,
+              "stabilization-policy": 366,
+              "fiscal-policy-and-aggregate-demand": 221
+            },
+            "bridge": {
+              "fiscal-multipliers-and-crowding-out": 354,
+              "stabilization-policy": 395,
+              "fiscal-policy-and-aggregate-demand": 209
+            }
+          },
+          "calculationExposure": 480,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2250,
+          "auxiliarySelections": 1940,
+          "representation": {
+            "ordinary": {
+              "stabilization-policy": 811,
+              "fiscal-multipliers-and-crowding-out": 861,
+              "fiscal-policy-and-aggregate-demand": 578
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "fiscal-multipliers-and-crowding-out": 379,
+              "fiscal-policy-and-aggregate-demand": 209,
+              "stabilization-policy": 382
+            },
+            "bridge": {
+              "fiscal-multipliers-and-crowding-out": 375,
+              "stabilization-policy": 402,
+              "fiscal-policy-and-aggregate-demand": 193
+            }
+          },
+          "calculationExposure": 518,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2700,
+          "auxiliarySelections": 2480,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "stabilization-policy": 871,
+              "fiscal-multipliers-and-crowding-out": 579,
+              "fiscal-policy-and-aggregate-demand": 575
+            },
+            "legendaryBoss": {
+              "fiscal-multipliers-and-crowding-out": 158,
+              "stabilization-policy": 344,
+              "fiscal-policy-and-aggregate-demand": 173
+            },
+            "repair": {
+              "stabilization-policy": 553,
+              "fiscal-multipliers-and-crowding-out": 449,
+              "fiscal-policy-and-aggregate-demand": 238
+            },
+            "bridge": {
+              "fiscal-multipliers-and-crowding-out": 467,
+              "stabilization-policy": 548,
+              "fiscal-policy-and-aggregate-demand": 225
+            }
+          },
+          "calculationExposure": 1620,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 75,
+          "completed": 75,
+          "routingFailures": 0,
+          "mainSelections": 2700,
+          "auxiliarySelections": 2498,
+          "representation": {
+            "ordinary": {
+              "stabilization-policy": 752,
+              "fiscal-multipliers-and-crowding-out": 784,
+              "fiscal-policy-and-aggregate-demand": 489
+            },
+            "boss": {
+              "fiscal-policy-and-aggregate-demand": 226,
+              "stabilization-policy": 221,
+              "fiscal-multipliers-and-crowding-out": 228
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "stabilization-policy": 476,
+              "fiscal-multipliers-and-crowding-out": 434,
+              "fiscal-policy-and-aggregate-demand": 339
+            },
+            "bridge": {
+              "stabilization-policy": 533,
+              "fiscal-multipliers-and-crowding-out": 445,
+              "fiscal-policy-and-aggregate-demand": 271
+            }
+          },
+          "calculationExposure": 734,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 324,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 56,
+                "macroeconomic-equilibrium-and-shocks": 38,
+                "fiscal-multipliers-and-crowding-out": 58,
+                "fiscal-policy-and-aggregate-demand": 40,
+                "long-run-macroeconomic-adjustment": 26,
+                "aggregate-demand": 22,
+                "aggregate-supply": 30
+              },
+              "boss": {
+                "macroeconomic-equilibrium-and-shocks": 14,
+                "long-run-macroeconomic-adjustment": 12,
+                "aggregate-supply": 17,
+                "stabilization-policy": 13,
+                "fiscal-policy-and-aggregate-demand": 15,
+                "fiscal-multipliers-and-crowding-out": 9,
+                "aggregate-demand": 10
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "macroeconomic-equilibrium-and-shocks": 35,
+                "fiscal-policy-and-aggregate-demand": 17,
+                "stabilization-policy": 25,
+                "aggregate-supply": 29,
+                "aggregate-demand": 17,
+                "long-run-macroeconomic-adjustment": 16,
+                "fiscal-multipliers-and-crowding-out": 23
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 25,
+                "fiscal-policy-and-aggregate-demand": 14,
+                "stabilization-policy": 40,
+                "macroeconomic-equilibrium-and-shocks": 20,
+                "long-run-macroeconomic-adjustment": 17,
+                "aggregate-supply": 31,
+                "aggregate-demand": 15
+              }
+            },
+            "calculationExposure": 58,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 256,
+            "representation": {
+              "ordinary": {
+                "aggregate-demand": 23,
+                "macroeconomic-equilibrium-and-shocks": 33,
+                "aggregate-supply": 35,
+                "fiscal-multipliers-and-crowding-out": 62,
+                "long-run-macroeconomic-adjustment": 39,
+                "stabilization-policy": 66,
+                "fiscal-policy-and-aggregate-demand": 42
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 18,
+                "fiscal-policy-and-aggregate-demand": 11,
+                "macroeconomic-equilibrium-and-shocks": 26,
+                "aggregate-supply": 21,
+                "fiscal-multipliers-and-crowding-out": 17,
+                "long-run-macroeconomic-adjustment": 17,
+                "aggregate-demand": 18
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 21,
+                "macroeconomic-equilibrium-and-shocks": 15,
+                "stabilization-policy": 25,
+                "fiscal-policy-and-aggregate-demand": 12,
+                "long-run-macroeconomic-adjustment": 18,
+                "aggregate-supply": 22,
+                "aggregate-demand": 15
+              }
+            },
+            "calculationExposure": 50,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 262,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 57,
+                "fiscal-multipliers-and-crowding-out": 59,
+                "fiscal-policy-and-aggregate-demand": 28,
+                "aggregate-demand": 45,
+                "long-run-macroeconomic-adjustment": 32,
+                "macroeconomic-equilibrium-and-shocks": 42,
+                "aggregate-supply": 37
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 14,
+                "aggregate-demand": 25,
+                "aggregate-supply": 20,
+                "long-run-macroeconomic-adjustment": 14,
+                "macroeconomic-equilibrium-and-shocks": 21,
+                "stabilization-policy": 21,
+                "fiscal-multipliers-and-crowding-out": 16
+              },
+              "bridge": {
+                "long-run-macroeconomic-adjustment": 12,
+                "stabilization-policy": 29,
+                "aggregate-supply": 27,
+                "fiscal-policy-and-aggregate-demand": 12,
+                "aggregate-demand": 21,
+                "fiscal-multipliers-and-crowding-out": 15,
+                "macroeconomic-equilibrium-and-shocks": 15
+              }
+            },
+            "calculationExposure": 40,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 328,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "stabilization-policy": 64,
+                "fiscal-policy-and-aggregate-demand": 41,
+                "long-run-macroeconomic-adjustment": 32,
+                "macroeconomic-equilibrium-and-shocks": 27,
+                "aggregate-demand": 35,
+                "aggregate-supply": 26,
+                "fiscal-multipliers-and-crowding-out": 45
+              },
+              "legendaryBoss": {
+                "aggregate-supply": 9,
+                "stabilization-policy": 27,
+                "fiscal-multipliers-and-crowding-out": 12,
+                "long-run-macroeconomic-adjustment": 10,
+                "aggregate-demand": 14,
+                "macroeconomic-equilibrium-and-shocks": 11,
+                "fiscal-policy-and-aggregate-demand": 7
+              },
+              "repair": {
+                "stabilization-policy": 32,
+                "long-run-macroeconomic-adjustment": 18,
+                "aggregate-demand": 32,
+                "macroeconomic-equilibrium-and-shocks": 24,
+                "fiscal-multipliers-and-crowding-out": 30,
+                "aggregate-supply": 19,
+                "fiscal-policy-and-aggregate-demand": 9
+              },
+              "bridge": {
+                "stabilization-policy": 34,
+                "long-run-macroeconomic-adjustment": 18,
+                "fiscal-policy-and-aggregate-demand": 15,
+                "aggregate-supply": 32,
+                "fiscal-multipliers-and-crowding-out": 31,
+                "aggregate-demand": 20,
+                "macroeconomic-equilibrium-and-shocks": 14
+              }
+            },
+            "calculationExposure": 125,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 326,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 51,
+                "fiscal-policy-and-aggregate-demand": 38,
+                "aggregate-demand": 33,
+                "fiscal-multipliers-and-crowding-out": 53,
+                "macroeconomic-equilibrium-and-shocks": 34,
+                "aggregate-supply": 33,
+                "long-run-macroeconomic-adjustment": 28
+              },
+              "boss": {
+                "macroeconomic-equilibrium-and-shocks": 14,
+                "aggregate-demand": 7,
+                "fiscal-multipliers-and-crowding-out": 17,
+                "stabilization-policy": 12,
+                "aggregate-supply": 13,
+                "long-run-macroeconomic-adjustment": 15,
+                "fiscal-policy-and-aggregate-demand": 12
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-demand": 31,
+                "aggregate-supply": 30,
+                "macroeconomic-equilibrium-and-shocks": 25,
+                "fiscal-policy-and-aggregate-demand": 12,
+                "stabilization-policy": 25,
+                "fiscal-multipliers-and-crowding-out": 18,
+                "long-run-macroeconomic-adjustment": 22
+              },
+              "bridge": {
+                "aggregate-demand": 22,
+                "aggregate-supply": 31,
+                "fiscal-multipliers-and-crowding-out": 27,
+                "macroeconomic-equilibrium-and-shocks": 16,
+                "stabilization-policy": 33,
+                "long-run-macroeconomic-adjustment": 21,
+                "fiscal-policy-and-aggregate-demand": 13
+              }
+            },
+            "calculationExposure": 55,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 10,
+        "totalSessions": 50,
+        "byMode": {
+          "standard": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 324,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 26,
+                "stabilization-policy": 50,
+                "fiscal-multipliers-and-crowding-out": 42,
+                "short-run-phillips-curve": 22,
+                "fiscal-policy-and-aggregate-demand": 39,
+                "phillips-curve-expectations": 33,
+                "sacrifice-ratio": 31,
+                "long-run-phillips-curve": 27
+              },
+              "boss": {
+                "stabilization-policy": 10,
+                "fiscal-multipliers-and-crowding-out": 17,
+                "short-run-phillips-curve": 13,
+                "phillips-curve-expectations": 14,
+                "fiscal-policy-and-aggregate-demand": 10,
+                "long-run-phillips-curve": 11,
+                "sacrifice-ratio": 7,
+                "disinflation-and-policy": 8
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 33,
+                "disinflation-and-policy": 20,
+                "long-run-phillips-curve": 20,
+                "fiscal-policy-and-aggregate-demand": 12,
+                "fiscal-multipliers-and-crowding-out": 19,
+                "phillips-curve-expectations": 19,
+                "stabilization-policy": 20,
+                "sacrifice-ratio": 19
+              },
+              "bridge": {
+                "phillips-curve-expectations": 21,
+                "short-run-phillips-curve": 32,
+                "disinflation-and-policy": 26,
+                "fiscal-multipliers-and-crowding-out": 15,
+                "long-run-phillips-curve": 24,
+                "stabilization-policy": 22,
+                "sacrifice-ratio": 18,
+                "fiscal-policy-and-aggregate-demand": 4
+              }
+            },
+            "calculationExposure": 71,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 244,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 40,
+                "fiscal-multipliers-and-crowding-out": 54,
+                "stabilization-policy": 53,
+                "short-run-phillips-curve": 28,
+                "fiscal-policy-and-aggregate-demand": 32,
+                "disinflation-and-policy": 30,
+                "long-run-phillips-curve": 25,
+                "phillips-curve-expectations": 38
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 18,
+                "long-run-phillips-curve": 11,
+                "stabilization-policy": 15,
+                "sacrifice-ratio": 17,
+                "disinflation-and-policy": 20,
+                "fiscal-multipliers-and-crowding-out": 15,
+                "short-run-phillips-curve": 16,
+                "fiscal-policy-and-aggregate-demand": 10
+              },
+              "bridge": {
+                "phillips-curve-expectations": 21,
+                "long-run-phillips-curve": 12,
+                "disinflation-and-policy": 19,
+                "sacrifice-ratio": 20,
+                "short-run-phillips-curve": 16,
+                "stabilization-policy": 16,
+                "fiscal-multipliers-and-crowding-out": 13,
+                "fiscal-policy-and-aggregate-demand": 5
+              }
+            },
+            "calculationExposure": 57,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 300,
+            "auxiliarySelections": 268,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 47,
+                "short-run-phillips-curve": 35,
+                "sacrifice-ratio": 31,
+                "disinflation-and-policy": 41,
+                "phillips-curve-expectations": 32,
+                "fiscal-multipliers-and-crowding-out": 55,
+                "long-run-phillips-curve": 26,
+                "fiscal-policy-and-aggregate-demand": 33
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 24,
+                "disinflation-and-policy": 17,
+                "phillips-curve-expectations": 17,
+                "fiscal-multipliers-and-crowding-out": 16,
+                "short-run-phillips-curve": 27,
+                "fiscal-policy-and-aggregate-demand": 13,
+                "sacrifice-ratio": 10,
+                "long-run-phillips-curve": 10
+              },
+              "bridge": {
+                "stabilization-policy": 23,
+                "disinflation-and-policy": 22,
+                "phillips-curve-expectations": 23,
+                "fiscal-policy-and-aggregate-demand": 7,
+                "short-run-phillips-curve": 19,
+                "long-run-phillips-curve": 17,
+                "sacrifice-ratio": 12,
+                "fiscal-multipliers-and-crowding-out": 11
+              }
+            },
+            "calculationExposure": 45,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 342,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "fiscal-policy-and-aggregate-demand": 33,
+                "sacrifice-ratio": 27,
+                "fiscal-multipliers-and-crowding-out": 40,
+                "disinflation-and-policy": 29,
+                "phillips-curve-expectations": 24,
+                "stabilization-policy": 57,
+                "long-run-phillips-curve": 28,
+                "short-run-phillips-curve": 32
+              },
+              "legendaryBoss": {
+                "short-run-phillips-curve": 9,
+                "disinflation-and-policy": 11,
+                "long-run-phillips-curve": 9,
+                "stabilization-policy": 18,
+                "fiscal-policy-and-aggregate-demand": 12,
+                "fiscal-multipliers-and-crowding-out": 9,
+                "phillips-curve-expectations": 15,
+                "sacrifice-ratio": 7
+              },
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 12,
+                "sacrifice-ratio": 24,
+                "long-run-phillips-curve": 23,
+                "fiscal-multipliers-and-crowding-out": 23,
+                "stabilization-policy": 20,
+                "short-run-phillips-curve": 28,
+                "disinflation-and-policy": 23,
+                "phillips-curve-expectations": 18
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 5,
+                "disinflation-and-policy": 33,
+                "short-run-phillips-curve": 31,
+                "fiscal-multipliers-and-crowding-out": 19,
+                "stabilization-policy": 24,
+                "long-run-phillips-curve": 25,
+                "phillips-curve-expectations": 16,
+                "sacrifice-ratio": 18
+              }
+            },
+            "calculationExposure": 145,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 10,
+            "completed": 10,
+            "routingFailures": 0,
+            "mainSelections": 360,
+            "auxiliarySelections": 332,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 48,
+                "phillips-curve-expectations": 34,
+                "long-run-phillips-curve": 25,
+                "sacrifice-ratio": 33,
+                "disinflation-and-policy": 29,
+                "short-run-phillips-curve": 33,
+                "fiscal-multipliers-and-crowding-out": 35,
+                "fiscal-policy-and-aggregate-demand": 33
+              },
+              "boss": {
+                "short-run-phillips-curve": 16,
+                "phillips-curve-expectations": 12,
+                "long-run-phillips-curve": 8,
+                "disinflation-and-policy": 15,
+                "sacrifice-ratio": 10,
+                "fiscal-policy-and-aggregate-demand": 8,
+                "fiscal-multipliers-and-crowding-out": 11,
+                "stabilization-policy": 10
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 14,
+                "short-run-phillips-curve": 37,
+                "disinflation-and-policy": 24,
+                "sacrifice-ratio": 19,
+                "fiscal-multipliers-and-crowding-out": 21,
+                "long-run-phillips-curve": 9,
+                "stabilization-policy": 23,
+                "phillips-curve-expectations": 19
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 16,
+                "disinflation-and-policy": 30,
+                "short-run-phillips-curve": 35,
+                "fiscal-policy-and-aggregate-demand": 9,
+                "sacrifice-ratio": 18,
+                "long-run-phillips-curve": 18,
+                "stabilization-policy": 19,
+                "phillips-curve-expectations": 21
+              }
+            },
+            "calculationExposure": 54,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 79,
+    "dedicatedCalculationPoolEntries": 16,
+    "independentlyRecomputed": 8,
+    "failures": 0,
+    "checks": [
+      {
+        "questionId": "PM2D2-FISCAD-L-001",
+        "expected": 78,
+        "calculation": "60*.90 + 60*.40 = 78",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-FISCAD-L-002",
+        "expected": -20,
+        "calculation": "-100 government purchases + 80 consumption = -20",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-MULT-L-001",
+        "expected": 70,
+        "calculation": "A: 60*5-100=200; B: 60*2.5-20=130; difference=70",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-MULT-L-002",
+        "expected": 90,
+        "calculation": "80*4=320 gross; 320-230=90 crowded out",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-STAB-L-002",
+        "expected": 200,
+        "calculation": "75*4=300 AD shift; 300-100 revised gap=200 overshoot",
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-TAX-CUT-AD-5042",
+        "expected": 30,
+        "calculation": "40*.75=30 first-round consumption",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-B-6022",
+        "expected": 200,
+        "calculation": "50*4=200 gross AD",
+        "status": "PASS"
+      },
+      {
+        "questionId": "LG-B-6023",
+        "expected": 220,
+        "calculation": "300-80=220 net AD",
+        "status": "PASS"
+      }
+    ]
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2d2_fiscal_stabilization/generated_packages/family/index.html",
+      "htmlSha256": "a07bb795da294726033024bbb27989a7e6a769dc2d226a1a43fad55037b833cf",
+      "bytes": 994688,
+      "counts": {
+        "easy": 24,
+        "medium": 28,
+        "hard": 30,
+        "elite": 27,
+        "legendary": 28,
+        "easyBoss": 9,
+        "mediumBoss": 9,
+        "finalBoss": 9,
+        "legendaryBoss": 12,
+        "repair": 23,
+        "repairSeed": 0,
+        "bridge": 13,
+        "calculation": 16,
+        "integration": 0,
+        "graph": 43,
+        "assets": 6,
+        "totalCanonical": 212
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    },
+    "stabilization": {
+      "path": "validation_artifacts/macro_m2d2_fiscal_stabilization/generated_packages/stabilization/index.html",
+      "htmlSha256": "1b566cb2b9d782198be7e59b0993b548eceac3ca480d07c2956a251ead5d75ac",
+      "bytes": 568565,
+      "counts": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 12,
+        "elite": 12,
+        "legendary": 12,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 6,
+        "repair": 8,
+        "repairSeed": 0,
+        "bridge": 5,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 17,
+        "assets": 2,
+        "totalCanonical": 82
+      },
+      "inlineScriptsChecked": 1,
+      "syntaxIssues": []
+    }
+  },
+  "browser": {
+    "passed": false,
+    "attempted": true,
+    "console": {
+      "errors": null,
+      "warnings": null
+    },
+    "nonBlockingIssues": [
+      "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, five-mode preflight, accessible-alt embedding, asset existence, inline-JavaScript syntax, and static markup checks."
+    ],
+    "stderr": "[12371:12400:0810/201445.190190:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12371:12400:0810/201445.197952:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12371:12400:0810/201445.198654:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12371:12400:0810/201445.199042:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12371:12400:0810/201445.215296:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12371:12400:0810/201445.241886:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12371:12371:0810/201445.268102:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[12371:12400:0810/201445.268243:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")"
+  },
+  "verdict": "MACRO M2d-2 COMPLETE WITH NON-BLOCKING ISSUES"
+}

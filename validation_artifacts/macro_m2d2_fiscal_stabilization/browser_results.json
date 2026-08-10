@@ -1,0 +1,26 @@
+{
+  "phase": "phaseM2d2-fiscal-stabilization-family-maturation-v1",
+  "generatedAt": "2026-08-10T20:15:00.053Z",
+  "passed": false,
+  "attempted": true,
+  "console": {
+    "errors": null,
+    "warnings": null
+  },
+  "nonBlockingIssues": [
+    "Chromium smoke could not complete in this container (ETIMEDOUT); generated packages passed composition, answer verification, five-mode preflight, accessible-alt embedding, asset existence, inline-JavaScript syntax, and static markup checks."
+  ],
+  "stderr": "[12371:12400:0810/201445.190190:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12371:12400:0810/201445.197952:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12371:12400:0810/201445.198654:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12371:12400:0810/201445.199042:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[12371:12400:0810/201445.215296:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12371:12400:0810/201445.241886:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[12371:12371:0810/201445.268102:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[12371:12400:0810/201445.268243:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")",
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2d2_fiscal_stabilization/generated_packages/family/index.html",
+      "htmlSha256": "a07bb795da294726033024bbb27989a7e6a769dc2d226a1a43fad55037b833cf",
+      "inlineScriptsChecked": 1
+    },
+    "stabilization": {
+      "path": "validation_artifacts/macro_m2d2_fiscal_stabilization/generated_packages/stabilization/index.html",
+      "htmlSha256": "1b566cb2b9d782198be7e59b0993b548eceac3ca480d07c2956a251ead5d75ac",
+      "inlineScriptsChecked": 1
+    }
+  }
+}

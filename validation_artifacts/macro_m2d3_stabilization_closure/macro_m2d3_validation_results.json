@@ -1,0 +1,1617 @@
+{
+  "phase": "phaseM2d3-stabilization-block-closure-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1",
+  "librarySha256": "5cc4e5d84743a7e83b0ee6f2160fefb23062447258bf1879553b702587377c30",
+  "libraryCanonicalQuestionCount": 7266,
+  "blockCounts": {
+    "F8": 206,
+    "F9": 212,
+    "F10": 238,
+    "total": 656
+  },
+  "questionContentIntegrity": {
+    "canonicalBanksChecked": 72,
+    "mismatches": []
+  },
+  "schemaAnswerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "aggregate-demand": [
+      "final",
+      "middle",
+      "opening"
+    ],
+    "aggregate-supply": [
+      "final",
+      "middle",
+      "opening"
+    ],
+    "macroeconomic-equilibrium-and-shocks": [
+      "middle",
+      "opening",
+      "final"
+    ],
+    "long-run-macroeconomic-adjustment": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "fiscal-policy-and-aggregate-demand": [
+      "final",
+      "opening",
+      "middle"
+    ],
+    "fiscal-multipliers-and-crowding-out": [
+      "final",
+      "middle",
+      "opening"
+    ],
+    "stabilization-policy": [
+      "middle",
+      "middle",
+      "final",
+      "opening",
+      "final",
+      "opening"
+    ],
+    "short-run-phillips-curve": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "phillips-curve-expectations": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "long-run-phillips-curve": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "sacrifice-ratio": [
+      "opening",
+      "middle",
+      "final"
+    ],
+    "disinflation-and-policy": [
+      "opening",
+      "middle",
+      "final"
+    ]
+  },
+  "routeAudit": {
+    "aggregate-demand": {
+      "repairRecords": 5,
+      "repairReachable": 5,
+      "bridgeRecords": 2,
+      "bridgeReachable": 2,
+      "bridgeDestinations": {
+        "ECON-SP-EXPLAIN-AD-SLOPE-6019": [],
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-6020": [
+          "macroeconomic-equilibrium-and-shocks"
+        ]
+      }
+    },
+    "aggregate-supply": {
+      "repairRecords": 6,
+      "repairReachable": 6,
+      "bridgeRecords": 4,
+      "bridgeReachable": 4,
+      "bridgeDestinations": {
+        "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-6024": [],
+        "ECON-SP-EXPLAIN-SRAS-UPWARD-6022": [],
+        "ECON-SP-IDENTIFY-LRAS-6021": [],
+        "ECON-SP-IDENTIFY-SRAS-SHIFTERS-6023": [
+          "macroeconomic-equilibrium-and-shocks"
+        ]
+      }
+    },
+    "macroeconomic-equilibrium-and-shocks": {
+      "repairRecords": 9,
+      "repairReachable": 9,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-EVALUATE-SUPPLY-SHOCK-POLICY-6053": [],
+        "ECON-SP-TRACE-DEMAND-SHOCK-6025": [
+          "long-run-macroeconomic-adjustment"
+        ],
+        "ECON-SP-TRACE-SUPPLY-SHOCK-6026": []
+      }
+    },
+    "long-run-macroeconomic-adjustment": {
+      "repairRecords": 5,
+      "repairReachable": 5,
+      "bridgeRecords": 2,
+      "bridgeReachable": 2,
+      "bridgeDestinations": {
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-6027": [],
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-6028": [
+          "stabilization-policy"
+        ]
+      }
+    },
+    "fiscal-policy-and-aggregate-demand": {
+      "repairRecords": 6,
+      "repairReachable": 6,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-FISCAL-POLICY-AD-SHIFT-6032": [],
+        "ECON-SP-TAX-CUT-AD-6033": [],
+        "LG-B-6021": [
+          "fiscal-multipliers-and-crowding-out"
+        ]
+      }
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "repairRecords": 9,
+      "repairReachable": 9,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-6035": [],
+        "ECON-SP-CROWDING-OUT-EFFECT-6036": [],
+        "ECON-SP-MULTIPLIER-EFFECT-6034": [],
+        "LG-B-6022": [
+          "fiscal-policy-and-aggregate-demand",
+          "aggregate-demand"
+        ],
+        "LG-B-6023": [
+          "stabilization-policy",
+          "aggregate-demand"
+        ]
+      }
+    },
+    "stabilization-policy": {
+      "repairRecords": 8,
+      "repairReachable": 8,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-6054": [
+          "long-run-macroeconomic-adjustment",
+          "aggregate-demand"
+        ],
+        "ECON-SP-LIQUIDITY-TRAP-6038": [],
+        "ECON-SP-POLICY-LAGS-6037": [],
+        "LG-B-6024": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-B-6025": [
+          "short-run-phillips-curve",
+          "aggregate-demand"
+        ]
+      }
+    },
+    "short-run-phillips-curve": {
+      "repairRecords": 5,
+      "repairReachable": 5,
+      "bridgeRecords": 4,
+      "bridgeReachable": 4,
+      "bridgeDestinations": {
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-6039": [
+          "aggregate-demand",
+          "macroeconomic-equilibrium-and-shocks"
+        ],
+        "ECON-SP-MOVE-ALONG-SRPC-6041": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-6043": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-AXES-6040": [
+          "disinflation-and-policy"
+        ]
+      }
+    },
+    "phillips-curve-expectations": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-EXPECTED-INFLATION-SHIFT-6044": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-6046": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045": [
+          "long-run-phillips-curve"
+        ]
+      }
+    },
+    "long-run-phillips-curve": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-IDENTIFY-LRPC-6042": [
+          "phillips-curve-expectations",
+          "short-run-phillips-curve"
+        ],
+        "PM2A-LRPC-BR-021": [
+          "natural-rate-of-unemployment"
+        ],
+        "PM2A-LRPC-BR-022": [
+          "sacrifice-ratio"
+        ]
+      }
+    },
+    "sacrifice-ratio": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050": [
+          "long-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-DEFINE-SACRIFICE-RATIO-6049": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051": [
+          "disinflation-and-policy"
+        ]
+      }
+    },
+    "disinflation-and-policy": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-6048": [
+          "monetary-policy-transmission",
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-6047": [
+          "phillips-curve-expectations",
+          "long-run-phillips-curve"
+        ],
+        "PM2A-DIS-BR-021": [
+          "sacrifice-ratio"
+        ]
+      }
+    }
+  },
+  "quality": {
+    "questionContentChanged": false,
+    "exactCandidatePairs": 0,
+    "numberSwapCandidatePairs": 10,
+    "repeatedAnswerSetPairs": 18,
+    "newExact": 0,
+    "newNumberSwaps": 0,
+    "newRepeatedAnswerSets": 0,
+    "reason": "All 656 stabilization-block question-bank hashes are unchanged from the M2d-2 baseline, so closure introduced no new question-level quality pattern."
+  },
+  "graphAudit": {
+    "graphLinkedQuestions": 130,
+    "assetCopies": 19,
+    "uniqueImageHashes": 7,
+    "metadataUpdates": 7,
+    "newGraphAssets": 0,
+    "m2d1GraphDependencyRechecks": [
+      "PM2D1-LRADJ-L-001",
+      "PM2D1-LRADJ-EB-002",
+      "PM2D1-LRADJ-MB-004",
+      "PM2D1-LRADJ-FB-006",
+      "PM2D1-LRADJ-LB-002"
+    ],
+    "allAccessible": true
+  },
+  "mathAudit": {
+    "numericBearingRecordsReviewed": 188,
+    "independentlyRecomputedOrGeometryChecked": 12,
+    "failures": 0,
+    "checks": [
+      {
+        "questionId": "PM2D1-LRADJ-L-001",
+        "expected": "graph",
+        "calculation": "AD-AS-LRAS geometry: LRAS at Y1; labeled intersections remain readable",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D1-LRADJ-EB-002",
+        "expected": "graph",
+        "calculation": "Output gap classified from equilibrium relative to LRAS at Y1",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-FISCAD-L-001",
+        "expected": 78,
+        "calculation": "60×0.90 + 60×0.40 = 78",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-FISCAD-L-002",
+        "expected": -20,
+        "calculation": "−100 government purchases + 80 consumption = −20",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-MULT-L-001",
+        "expected": 70,
+        "calculation": "Policy A net 200; Policy B net 130; difference 70",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-MULT-L-002",
+        "expected": 90,
+        "calculation": "80×4=320 gross; 320−230=90 crowding out",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2D2-STAB-L-002",
+        "expected": 200,
+        "calculation": "75×4=300 AD shift; 300−100 revised gap = 200 overshoot",
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-TAX-CUT-AD-5042",
+        "expected": 30,
+        "calculation": "40×0.75=30 first-round consumption",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-LB-023",
+        "expected": 2.33,
+        "calculation": "(2.4+1.8)/(7.0−5.2)=2.33 rounded",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-LB-024",
+        "expected": "1.5 vs 2.5",
+        "calculation": "3/2=1.5; 7.5/3=2.5",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-LB-025",
+        "expected": 10,
+        "calculation": "[(.015×800×2)+(.005×800)]/2.8 = 10",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-DIS-LB-019",
+        "expected": "2 vs 1.6",
+        "calculation": "8/4=2; 4/2.5=1.6",
+        "status": "PASS"
+      }
+    ]
+  },
+  "simulation": {
+    "totalSessions": 650,
+    "regress": {
+      "F8": {
+        "name": "F8 family regression",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 666,
+            "representation": {
+              "ordinary": {
+                "aggregate-demand": 133,
+                "macroeconomic-equilibrium-and-shocks": 153,
+                "long-run-macroeconomic-adjustment": 121,
+                "aggregate-supply": 133
+              },
+              "boss": {
+                "aggregate-supply": 48,
+                "macroeconomic-equilibrium-and-shocks": 38,
+                "long-run-macroeconomic-adjustment": 46,
+                "aggregate-demand": 48
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-supply": 94,
+                "macroeconomic-equilibrium-and-shocks": 79,
+                "long-run-macroeconomic-adjustment": 67,
+                "aggregate-demand": 93
+              },
+              "bridge": {
+                "aggregate-demand": 83,
+                "macroeconomic-equilibrium-and-shocks": 65,
+                "aggregate-supply": 106,
+                "long-run-macroeconomic-adjustment": 79
+              }
+            },
+            "calculationExposure": 45,
+            "graphExposure": 196,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 494,
+            "representation": {
+              "ordinary": {
+                "aggregate-supply": 145,
+                "macroeconomic-equilibrium-and-shocks": 164,
+                "aggregate-demand": 140,
+                "long-run-macroeconomic-adjustment": 151
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-macroeconomic-adjustment": 51,
+                "aggregate-demand": 61,
+                "aggregate-supply": 61,
+                "macroeconomic-equilibrium-and-shocks": 74
+              },
+              "bridge": {
+                "long-run-macroeconomic-adjustment": 59,
+                "aggregate-demand": 61,
+                "macroeconomic-equilibrium-and-shocks": 50,
+                "aggregate-supply": 77
+              }
+            },
+            "calculationExposure": 43,
+            "graphExposure": 176,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 502,
+            "representation": {
+              "ordinary": {
+                "aggregate-supply": 160,
+                "aggregate-demand": 142,
+                "long-run-macroeconomic-adjustment": 134,
+                "macroeconomic-equilibrium-and-shocks": 164
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-supply": 66,
+                "aggregate-demand": 56,
+                "macroeconomic-equilibrium-and-shocks": 73,
+                "long-run-macroeconomic-adjustment": 56
+              },
+              "bridge": {
+                "aggregate-supply": 94,
+                "long-run-macroeconomic-adjustment": 57,
+                "aggregate-demand": 52,
+                "macroeconomic-equilibrium-and-shocks": 48
+              }
+            },
+            "calculationExposure": 37,
+            "graphExposure": 177,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 672,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "aggregate-supply": 136,
+                "macroeconomic-equilibrium-and-shocks": 133,
+                "aggregate-demand": 136,
+                "long-run-macroeconomic-adjustment": 135
+              },
+              "legendaryBoss": {
+                "long-run-macroeconomic-adjustment": 44,
+                "macroeconomic-equilibrium-and-shocks": 47,
+                "aggregate-demand": 46,
+                "aggregate-supply": 43
+              },
+              "repair": {
+                "aggregate-supply": 95,
+                "macroeconomic-equilibrium-and-shocks": 89,
+                "long-run-macroeconomic-adjustment": 59,
+                "aggregate-demand": 93
+              },
+              "bridge": {
+                "aggregate-supply": 136,
+                "aggregate-demand": 80,
+                "macroeconomic-equilibrium-and-shocks": 56,
+                "long-run-macroeconomic-adjustment": 64
+              }
+            },
+            "calculationExposure": 0,
+            "graphExposure": 146,
+            "duplicateCanonicalSelectionsBySession": 60,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 664,
+            "representation": {
+              "ordinary": {
+                "long-run-macroeconomic-adjustment": 114,
+                "aggregate-supply": 153,
+                "macroeconomic-equilibrium-and-shocks": 149,
+                "aggregate-demand": 124
+              },
+              "boss": {
+                "aggregate-demand": 35,
+                "long-run-macroeconomic-adjustment": 50,
+                "aggregate-supply": 45,
+                "macroeconomic-equilibrium-and-shocks": 50
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-macroeconomic-adjustment": 56,
+                "aggregate-supply": 109,
+                "aggregate-demand": 80,
+                "macroeconomic-equilibrium-and-shocks": 87
+              },
+              "bridge": {
+                "macroeconomic-equilibrium-and-shocks": 68,
+                "aggregate-supply": 127,
+                "aggregate-demand": 71,
+                "long-run-macroeconomic-adjustment": 66
+              }
+            },
+            "calculationExposure": 33,
+            "graphExposure": 185,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "F9": {
+        "name": "F9 family regression",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 204,
+                "stabilization-policy": 199,
+                "fiscal-policy-and-aggregate-demand": 137
+              },
+              "boss": {
+                "fiscal-multipliers-and-crowding-out": 65,
+                "stabilization-policy": 56,
+                "fiscal-policy-and-aggregate-demand": 59
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 120,
+                "stabilization-policy": 129,
+                "fiscal-policy-and-aggregate-demand": 80
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 69,
+                "fiscal-multipliers-and-crowding-out": 123,
+                "stabilization-policy": 137
+              }
+            },
+            "calculationExposure": 185,
+            "graphExposure": 64,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 514,
+            "representation": {
+              "ordinary": {
+                "fiscal-policy-and-aggregate-demand": 163,
+                "fiscal-multipliers-and-crowding-out": 223,
+                "stabilization-policy": 214
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 59,
+                "fiscal-multipliers-and-crowding-out": 90,
+                "stabilization-policy": 108
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 47,
+                "fiscal-multipliers-and-crowding-out": 101,
+                "stabilization-policy": 109
+              }
+            },
+            "calculationExposure": 134,
+            "graphExposure": 51,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 498,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 227,
+                "stabilization-policy": 228,
+                "fiscal-policy-and-aggregate-demand": 145
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "stabilization-policy": 96,
+                "fiscal-multipliers-and-crowding-out": 94,
+                "fiscal-policy-and-aggregate-demand": 59
+              },
+              "bridge": {
+                "stabilization-policy": 108,
+                "fiscal-multipliers-and-crowding-out": 84,
+                "fiscal-policy-and-aggregate-demand": 57
+              }
+            },
+            "calculationExposure": 141,
+            "graphExposure": 57,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 682,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "stabilization-policy": 235,
+                "fiscal-multipliers-and-crowding-out": 153,
+                "fiscal-policy-and-aggregate-demand": 152
+              },
+              "legendaryBoss": {
+                "fiscal-policy-and-aggregate-demand": 42,
+                "stabilization-policy": 96,
+                "fiscal-multipliers-and-crowding-out": 42
+              },
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 126,
+                "stabilization-policy": 154,
+                "fiscal-policy-and-aggregate-demand": 61
+              },
+              "bridge": {
+                "fiscal-multipliers-and-crowding-out": 136,
+                "stabilization-policy": 160,
+                "fiscal-policy-and-aggregate-demand": 45
+              }
+            },
+            "calculationExposure": 434,
+            "graphExposure": 404,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 674,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 223,
+                "stabilization-policy": 203,
+                "fiscal-policy-and-aggregate-demand": 114
+              },
+              "boss": {
+                "fiscal-policy-and-aggregate-demand": 69,
+                "fiscal-multipliers-and-crowding-out": 55,
+                "stabilization-policy": 56
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-multipliers-and-crowding-out": 128,
+                "fiscal-policy-and-aggregate-demand": 85,
+                "stabilization-policy": 124
+              },
+              "bridge": {
+                "fiscal-policy-and-aggregate-demand": 69,
+                "stabilization-policy": 142,
+                "fiscal-multipliers-and-crowding-out": 126
+              }
+            },
+            "calculationExposure": 197,
+            "graphExposure": 60,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "F10": {
+        "name": "F10 family regression",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 650,
+            "representation": {
+              "ordinary": {
+                "short-run-phillips-curve": 106,
+                "sacrifice-ratio": 116,
+                "long-run-phillips-curve": 105,
+                "phillips-curve-expectations": 120,
+                "disinflation-and-policy": 93
+              },
+              "boss": {
+                "sacrifice-ratio": 31,
+                "short-run-phillips-curve": 39,
+                "disinflation-and-policy": 28,
+                "long-run-phillips-curve": 39,
+                "phillips-curve-expectations": 43
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "disinflation-and-policy": 62,
+                "phillips-curve-expectations": 61,
+                "short-run-phillips-curve": 99,
+                "long-run-phillips-curve": 51,
+                "sacrifice-ratio": 52
+              },
+              "bridge": {
+                "disinflation-and-policy": 63,
+                "phillips-curve-expectations": 65,
+                "long-run-phillips-curve": 64,
+                "short-run-phillips-curve": 80,
+                "sacrifice-ratio": 53
+              }
+            },
+            "calculationExposure": 111,
+            "graphExposure": 147,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 510,
+            "representation": {
+              "ordinary": {
+                "phillips-curve-expectations": 139,
+                "short-run-phillips-curve": 117,
+                "sacrifice-ratio": 128,
+                "long-run-phillips-curve": 106,
+                "disinflation-and-policy": 110
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 44,
+                "disinflation-and-policy": 50,
+                "long-run-phillips-curve": 39,
+                "phillips-curve-expectations": 51,
+                "short-run-phillips-curve": 71
+              },
+              "bridge": {
+                "sacrifice-ratio": 43,
+                "disinflation-and-policy": 56,
+                "long-run-phillips-curve": 48,
+                "short-run-phillips-curve": 63,
+                "phillips-curve-expectations": 45
+              }
+            },
+            "calculationExposure": 84,
+            "graphExposure": 165,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 600,
+            "auxiliarySelections": 506,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 110,
+                "short-run-phillips-curve": 125,
+                "phillips-curve-expectations": 158,
+                "long-run-phillips-curve": 105,
+                "disinflation-and-policy": 102
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 63,
+                "short-run-phillips-curve": 69,
+                "disinflation-and-policy": 58,
+                "long-run-phillips-curve": 34,
+                "sacrifice-ratio": 29
+              },
+              "bridge": {
+                "phillips-curve-expectations": 64,
+                "short-run-phillips-curve": 60,
+                "disinflation-and-policy": 61,
+                "long-run-phillips-curve": 41,
+                "sacrifice-ratio": 27
+              }
+            },
+            "calculationExposure": 84,
+            "graphExposure": 168,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 678,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "short-run-phillips-curve": 100,
+                "phillips-curve-expectations": 114,
+                "sacrifice-ratio": 111,
+                "disinflation-and-policy": 107,
+                "long-run-phillips-curve": 108
+              },
+              "legendaryBoss": {
+                "long-run-phillips-curve": 35,
+                "phillips-curve-expectations": 38,
+                "disinflation-and-policy": 38,
+                "short-run-phillips-curve": 31,
+                "sacrifice-ratio": 38
+              },
+              "repair": {
+                "disinflation-and-policy": 82,
+                "short-run-phillips-curve": 89,
+                "phillips-curve-expectations": 46,
+                "sacrifice-ratio": 71,
+                "long-run-phillips-curve": 51
+              },
+              "bridge": {
+                "disinflation-and-policy": 98,
+                "long-run-phillips-curve": 51,
+                "short-run-phillips-curve": 75,
+                "phillips-curve-expectations": 59,
+                "sacrifice-ratio": 56
+              }
+            },
+            "calculationExposure": 202,
+            "graphExposure": 108,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "mainSelections": 720,
+            "auxiliarySelections": 672,
+            "representation": {
+              "ordinary": {
+                "short-run-phillips-curve": 100,
+                "long-run-phillips-curve": 89,
+                "sacrifice-ratio": 120,
+                "phillips-curve-expectations": 136,
+                "disinflation-and-policy": 95
+              },
+              "boss": {
+                "long-run-phillips-curve": 42,
+                "phillips-curve-expectations": 33,
+                "short-run-phillips-curve": 35,
+                "disinflation-and-policy": 33,
+                "sacrifice-ratio": 37
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 63,
+                "disinflation-and-policy": 58,
+                "phillips-curve-expectations": 66,
+                "short-run-phillips-curve": 105,
+                "long-run-phillips-curve": 44
+              },
+              "bridge": {
+                "sacrifice-ratio": 69,
+                "disinflation-and-policy": 64,
+                "phillips-curve-expectations": 70,
+                "short-run-phillips-curve": 88,
+                "long-run-phillips-curve": 45
+              }
+            },
+            "calculationExposure": 112,
+            "graphExposure": 156,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "combined": {
+      "name": "F8-F10 stabilization block",
+      "perMode": 50,
+      "totalSessions": 250,
+      "byMode": {
+        "standard": {
+          "sessions": 50,
+          "completed": 50,
+          "routingFailures": 0,
+          "mainSelections": 1800,
+          "auxiliarySelections": 1628,
+          "representation": {
+            "ordinary": {
+              "sacrifice-ratio": 105,
+              "fiscal-policy-and-aggregate-demand": 134,
+              "long-run-macroeconomic-adjustment": 86,
+              "aggregate-supply": 94,
+              "stabilization-policy": 167,
+              "short-run-phillips-curve": 118,
+              "aggregate-demand": 75,
+              "fiscal-multipliers-and-crowding-out": 151,
+              "macroeconomic-equilibrium-and-shocks": 126,
+              "phillips-curve-expectations": 114,
+              "long-run-phillips-curve": 94,
+              "disinflation-and-policy": 86
+            },
+            "boss": {
+              "disinflation-and-policy": 42,
+              "macroeconomic-equilibrium-and-shocks": 38,
+              "stabilization-policy": 37,
+              "aggregate-supply": 37,
+              "phillips-curve-expectations": 41,
+              "long-run-macroeconomic-adjustment": 28,
+              "short-run-phillips-curve": 34,
+              "aggregate-demand": 39,
+              "long-run-phillips-curve": 30,
+              "fiscal-multipliers-and-crowding-out": 40,
+              "sacrifice-ratio": 43,
+              "fiscal-policy-and-aggregate-demand": 41
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "macroeconomic-equilibrium-and-shocks": 92,
+              "long-run-macroeconomic-adjustment": 47,
+              "fiscal-multipliers-and-crowding-out": 68,
+              "aggregate-supply": 75,
+              "short-run-phillips-curve": 107,
+              "phillips-curve-expectations": 74,
+              "stabilization-policy": 72,
+              "aggregate-demand": 69,
+              "fiscal-policy-and-aggregate-demand": 42,
+              "long-run-phillips-curve": 40,
+              "sacrifice-ratio": 57,
+              "disinflation-and-policy": 71
+            },
+            "bridge": {
+              "short-run-phillips-curve": 117,
+              "long-run-macroeconomic-adjustment": 43,
+              "fiscal-multipliers-and-crowding-out": 63,
+              "aggregate-supply": 71,
+              "phillips-curve-expectations": 83,
+              "disinflation-and-policy": 79,
+              "stabilization-policy": 77,
+              "aggregate-demand": 44,
+              "long-run-phillips-curve": 62,
+              "macroeconomic-equilibrium-and-shocks": 71,
+              "sacrifice-ratio": 68,
+              "fiscal-policy-and-aggregate-demand": 36
+            }
+          },
+          "calculationExposure": 258,
+          "graphExposure": 336,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 50,
+          "completed": 50,
+          "routingFailures": 0,
+          "mainSelections": 1500,
+          "auxiliarySelections": 1272,
+          "representation": {
+            "ordinary": {
+              "fiscal-multipliers-and-crowding-out": 167,
+              "sacrifice-ratio": 121,
+              "phillips-curve-expectations": 136,
+              "disinflation-and-policy": 109,
+              "short-run-phillips-curve": 104,
+              "macroeconomic-equilibrium-and-shocks": 138,
+              "aggregate-supply": 114,
+              "stabilization-policy": 179,
+              "fiscal-policy-and-aggregate-demand": 111,
+              "aggregate-demand": 108,
+              "long-run-phillips-curve": 108,
+              "long-run-macroeconomic-adjustment": 105
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "aggregate-supply": 57,
+              "sacrifice-ratio": 47,
+              "short-run-phillips-curve": 86,
+              "aggregate-demand": 68,
+              "long-run-phillips-curve": 39,
+              "macroeconomic-equilibrium-and-shocks": 76,
+              "phillips-curve-expectations": 58,
+              "long-run-macroeconomic-adjustment": 43,
+              "fiscal-policy-and-aggregate-demand": 28,
+              "stabilization-policy": 51,
+              "fiscal-multipliers-and-crowding-out": 42,
+              "disinflation-and-policy": 41
+            },
+            "bridge": {
+              "aggregate-supply": 66,
+              "sacrifice-ratio": 63,
+              "short-run-phillips-curve": 77,
+              "long-run-phillips-curve": 59,
+              "phillips-curve-expectations": 58,
+              "fiscal-multipliers-and-crowding-out": 36,
+              "long-run-macroeconomic-adjustment": 37,
+              "macroeconomic-equilibrium-and-shocks": 37,
+              "disinflation-and-policy": 62,
+              "aggregate-demand": 57,
+              "stabilization-policy": 57,
+              "fiscal-policy-and-aggregate-demand": 27
+            }
+          },
+          "calculationExposure": 204,
+          "graphExposure": 356,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 50,
+          "completed": 50,
+          "routingFailures": 0,
+          "mainSelections": 1500,
+          "auxiliarySelections": 1302,
+          "representation": {
+            "ordinary": {
+              "long-run-macroeconomic-adjustment": 104,
+              "macroeconomic-equilibrium-and-shocks": 108,
+              "fiscal-policy-and-aggregate-demand": 125,
+              "short-run-phillips-curve": 111,
+              "disinflation-and-policy": 105,
+              "long-run-phillips-curve": 105,
+              "aggregate-supply": 113,
+              "sacrifice-ratio": 130,
+              "fiscal-multipliers-and-crowding-out": 180,
+              "aggregate-demand": 137,
+              "stabilization-policy": 165,
+              "phillips-curve-expectations": 117
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "aggregate-supply": 67,
+              "aggregate-demand": 74,
+              "sacrifice-ratio": 53,
+              "macroeconomic-equilibrium-and-shocks": 66,
+              "disinflation-and-policy": 54,
+              "phillips-curve-expectations": 49,
+              "short-run-phillips-curve": 81,
+              "stabilization-policy": 43,
+              "long-run-macroeconomic-adjustment": 50,
+              "fiscal-multipliers-and-crowding-out": 35,
+              "long-run-phillips-curve": 43,
+              "fiscal-policy-and-aggregate-demand": 36
+            },
+            "bridge": {
+              "aggregate-supply": 66,
+              "aggregate-demand": 64,
+              "sacrifice-ratio": 62,
+              "macroeconomic-equilibrium-and-shocks": 36,
+              "disinflation-and-policy": 62,
+              "phillips-curve-expectations": 43,
+              "short-run-phillips-curve": 85,
+              "long-run-phillips-curve": 51,
+              "stabilization-policy": 54,
+              "fiscal-multipliers-and-crowding-out": 50,
+              "fiscal-policy-and-aggregate-demand": 30,
+              "long-run-macroeconomic-adjustment": 48
+            }
+          },
+          "calculationExposure": 229,
+          "graphExposure": 317,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 50,
+          "completed": 50,
+          "routingFailures": 0,
+          "mainSelections": 1800,
+          "auxiliarySelections": 1656,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "fiscal-policy-and-aggregate-demand": 129,
+              "macroeconomic-equilibrium-and-shocks": 108,
+              "long-run-phillips-curve": 105,
+              "stabilization-policy": 201,
+              "fiscal-multipliers-and-crowding-out": 128,
+              "phillips-curve-expectations": 95,
+              "short-run-phillips-curve": 105,
+              "sacrifice-ratio": 103,
+              "aggregate-supply": 84,
+              "aggregate-demand": 89,
+              "disinflation-and-policy": 98,
+              "long-run-macroeconomic-adjustment": 105
+            },
+            "legendaryBoss": {
+              "aggregate-demand": 25,
+              "disinflation-and-policy": 35,
+              "fiscal-policy-and-aggregate-demand": 43,
+              "phillips-curve-expectations": 33,
+              "short-run-phillips-curve": 28,
+              "long-run-macroeconomic-adjustment": 32,
+              "fiscal-multipliers-and-crowding-out": 37,
+              "long-run-phillips-curve": 30,
+              "macroeconomic-equilibrium-and-shocks": 45,
+              "stabilization-policy": 75,
+              "aggregate-supply": 40,
+              "sacrifice-ratio": 27
+            },
+            "repair": {
+              "long-run-macroeconomic-adjustment": 53,
+              "stabilization-policy": 84,
+              "aggregate-supply": 77,
+              "long-run-phillips-curve": 48,
+              "macroeconomic-equilibrium-and-shocks": 69,
+              "sacrifice-ratio": 63,
+              "short-run-phillips-curve": 108,
+              "disinflation-and-policy": 79,
+              "aggregate-demand": 79,
+              "phillips-curve-expectations": 52,
+              "fiscal-policy-and-aggregate-demand": 37,
+              "fiscal-multipliers-and-crowding-out": 79
+            },
+            "bridge": {
+              "long-run-macroeconomic-adjustment": 46,
+              "stabilization-policy": 97,
+              "aggregate-supply": 87,
+              "long-run-phillips-curve": 68,
+              "disinflation-and-policy": 100,
+              "short-run-phillips-curve": 104,
+              "phillips-curve-expectations": 65,
+              "sacrifice-ratio": 62,
+              "fiscal-policy-and-aggregate-demand": 41,
+              "fiscal-multipliers-and-crowding-out": 71,
+              "macroeconomic-equilibrium-and-shocks": 42,
+              "aggregate-demand": 45
+            }
+          },
+          "calculationExposure": 534,
+          "graphExposure": 561,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 50,
+          "completed": 50,
+          "routingFailures": 0,
+          "mainSelections": 1800,
+          "auxiliarySelections": 1626,
+          "representation": {
+            "ordinary": {
+              "long-run-macroeconomic-adjustment": 95,
+              "sacrifice-ratio": 112,
+              "long-run-phillips-curve": 94,
+              "disinflation-and-policy": 100,
+              "macroeconomic-equilibrium-and-shocks": 128,
+              "aggregate-supply": 101,
+              "fiscal-policy-and-aggregate-demand": 112,
+              "aggregate-demand": 85,
+              "stabilization-policy": 158,
+              "phillips-curve-expectations": 106,
+              "short-run-phillips-curve": 98,
+              "fiscal-multipliers-and-crowding-out": 161
+            },
+            "boss": {
+              "macroeconomic-equilibrium-and-shocks": 42,
+              "long-run-macroeconomic-adjustment": 46,
+              "short-run-phillips-curve": 39,
+              "disinflation-and-policy": 47,
+              "long-run-phillips-curve": 36,
+              "sacrifice-ratio": 30,
+              "fiscal-policy-and-aggregate-demand": 42,
+              "fiscal-multipliers-and-crowding-out": 31,
+              "aggregate-demand": 38,
+              "aggregate-supply": 30,
+              "stabilization-policy": 35,
+              "phillips-curve-expectations": 34
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "macroeconomic-equilibrium-and-shocks": 86,
+              "short-run-phillips-curve": 96,
+              "phillips-curve-expectations": 77,
+              "aggregate-supply": 63,
+              "disinflation-and-policy": 77,
+              "fiscal-multipliers-and-crowding-out": 59,
+              "sacrifice-ratio": 57,
+              "long-run-macroeconomic-adjustment": 63,
+              "long-run-phillips-curve": 47,
+              "fiscal-policy-and-aggregate-demand": 44,
+              "aggregate-demand": 76,
+              "stabilization-policy": 68
+            },
+            "bridge": {
+              "long-run-macroeconomic-adjustment": 67,
+              "short-run-phillips-curve": 108,
+              "phillips-curve-expectations": 77,
+              "fiscal-multipliers-and-crowding-out": 59,
+              "disinflation-and-policy": 93,
+              "macroeconomic-equilibrium-and-shocks": 55,
+              "sacrifice-ratio": 61,
+              "long-run-phillips-curve": 65,
+              "stabilization-policy": 82,
+              "aggregate-supply": 60,
+              "fiscal-policy-and-aggregate-demand": 37,
+              "aggregate-demand": 49
+            }
+          },
+          "calculationExposure": 298,
+          "graphExposure": 339,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "f7f8": {
+      "name": "F7-F8 interface",
+      "perMode": 20,
+      "totalSessions": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 20,
+          "completed": 20,
+          "routingFailures": 0,
+          "mainSelections": 720,
+          "auxiliarySelections": 650,
+          "representation": {
+            "ordinary": {
+              "aggregate-supply": 77,
+              "macroeconomic-equilibrium-and-shocks": 74,
+              "aggregate-demand": 85,
+              "monetary-policy-transmission": 147,
+              "long-run-macroeconomic-adjustment": 78,
+              "liquidity-preference-and-money-market": 79
+            },
+            "boss": {
+              "liquidity-preference-and-money-market": 24,
+              "aggregate-demand": 36,
+              "monetary-policy-transmission": 30,
+              "aggregate-supply": 40,
+              "macroeconomic-equilibrium-and-shocks": 27,
+              "long-run-macroeconomic-adjustment": 23
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "liquidity-preference-and-money-market": 32,
+              "aggregate-demand": 59,
+              "aggregate-supply": 68,
+              "monetary-policy-transmission": 51,
+              "macroeconomic-equilibrium-and-shocks": 55,
+              "long-run-macroeconomic-adjustment": 60
+            },
+            "bridge": {
+              "macroeconomic-equilibrium-and-shocks": 41,
+              "aggregate-demand": 52,
+              "aggregate-supply": 80,
+              "monetary-policy-transmission": 55,
+              "liquidity-preference-and-money-market": 43,
+              "long-run-macroeconomic-adjustment": 54
+            }
+          },
+          "calculationExposure": 37,
+          "graphExposure": 205,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 20,
+          "completed": 20,
+          "routingFailures": 0,
+          "mainSelections": 600,
+          "auxiliarySelections": 518,
+          "representation": {
+            "ordinary": {
+              "liquidity-preference-and-money-market": 112,
+              "aggregate-supply": 87,
+              "aggregate-demand": 80,
+              "long-run-macroeconomic-adjustment": 76,
+              "monetary-policy-transmission": 141,
+              "macroeconomic-equilibrium-and-shocks": 104
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "macroeconomic-equilibrium-and-shocks": 61,
+              "liquidity-preference-and-money-market": 30,
+              "aggregate-demand": 44,
+              "aggregate-supply": 38,
+              "monetary-policy-transmission": 48,
+              "long-run-macroeconomic-adjustment": 38
+            },
+            "bridge": {
+              "macroeconomic-equilibrium-and-shocks": 34,
+              "liquidity-preference-and-money-market": 44,
+              "monetary-policy-transmission": 43,
+              "aggregate-supply": 61,
+              "aggregate-demand": 38,
+              "long-run-macroeconomic-adjustment": 39
+            }
+          },
+          "calculationExposure": 20,
+          "graphExposure": 211,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 20,
+          "completed": 20,
+          "routingFailures": 0,
+          "mainSelections": 600,
+          "auxiliarySelections": 518,
+          "representation": {
+            "ordinary": {
+              "aggregate-supply": 100,
+              "long-run-macroeconomic-adjustment": 71,
+              "liquidity-preference-and-money-market": 101,
+              "monetary-policy-transmission": 143,
+              "aggregate-demand": 90,
+              "macroeconomic-equilibrium-and-shocks": 95
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "monetary-policy-transmission": 54,
+              "liquidity-preference-and-money-market": 25,
+              "macroeconomic-equilibrium-and-shocks": 48,
+              "aggregate-supply": 45,
+              "aggregate-demand": 58,
+              "long-run-macroeconomic-adjustment": 29
+            },
+            "bridge": {
+              "aggregate-supply": 60,
+              "aggregate-demand": 52,
+              "monetary-policy-transmission": 53,
+              "long-run-macroeconomic-adjustment": 39,
+              "macroeconomic-equilibrium-and-shocks": 21,
+              "liquidity-preference-and-money-market": 34
+            }
+          },
+          "calculationExposure": 27,
+          "graphExposure": 207,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 20,
+          "completed": 20,
+          "routingFailures": 0,
+          "mainSelections": 720,
+          "auxiliarySelections": 656,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "aggregate-supply": 70,
+              "aggregate-demand": 70,
+              "monetary-policy-transmission": 143,
+              "liquidity-preference-and-money-market": 129,
+              "long-run-macroeconomic-adjustment": 67,
+              "macroeconomic-equilibrium-and-shocks": 61
+            },
+            "legendaryBoss": {
+              "long-run-macroeconomic-adjustment": 29,
+              "aggregate-supply": 25,
+              "liquidity-preference-and-money-market": 46,
+              "aggregate-demand": 31,
+              "monetary-policy-transmission": 25,
+              "macroeconomic-equilibrium-and-shocks": 24
+            },
+            "repair": {
+              "aggregate-supply": 54,
+              "aggregate-demand": 57,
+              "macroeconomic-equilibrium-and-shocks": 58,
+              "monetary-policy-transmission": 86,
+              "long-run-macroeconomic-adjustment": 38,
+              "liquidity-preference-and-money-market": 35
+            },
+            "bridge": {
+              "aggregate-supply": 71,
+              "aggregate-demand": 44,
+              "monetary-policy-transmission": 82,
+              "macroeconomic-equilibrium-and-shocks": 36,
+              "long-run-macroeconomic-adjustment": 39,
+              "liquidity-preference-and-money-market": 56
+            }
+          },
+          "calculationExposure": 90,
+          "graphExposure": 335,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 20,
+          "completed": 20,
+          "routingFailures": 0,
+          "mainSelections": 720,
+          "auxiliarySelections": 652,
+          "representation": {
+            "ordinary": {
+              "monetary-policy-transmission": 122,
+              "aggregate-demand": 79,
+              "macroeconomic-equilibrium-and-shocks": 97,
+              "long-run-macroeconomic-adjustment": 72,
+              "liquidity-preference-and-money-market": 101,
+              "aggregate-supply": 69
+            },
+            "boss": {
+              "aggregate-demand": 35,
+              "monetary-policy-transmission": 35,
+              "long-run-macroeconomic-adjustment": 35,
+              "liquidity-preference-and-money-market": 20,
+              "aggregate-supply": 28,
+              "macroeconomic-equilibrium-and-shocks": 27
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "aggregate-demand": 61,
+              "long-run-macroeconomic-adjustment": 45,
+              "macroeconomic-equilibrium-and-shocks": 79,
+              "aggregate-supply": 52,
+              "liquidity-preference-and-money-market": 35,
+              "monetary-policy-transmission": 54
+            },
+            "bridge": {
+              "aggregate-demand": 56,
+              "macroeconomic-equilibrium-and-shocks": 55,
+              "aggregate-supply": 68,
+              "monetary-policy-transmission": 46,
+              "long-run-macroeconomic-adjustment": 46,
+              "liquidity-preference-and-money-market": 55
+            }
+          },
+          "calculationExposure": 27,
+          "graphExposure": 200,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "packages": {
+    "block": {
+      "path": "validation_artifacts/macro_m2d3_stabilization_closure/generated_packages/block/index.html",
+      "htmlSha256": "68011f850fbf79e940baf143d5658b4e963d2dff48fd2686ea726ed372db3adb",
+      "bytes": 2607837,
+      "counts": {
+        "easy": 82,
+        "medium": 85,
+        "hard": 93,
+        "elite": 64,
+        "legendary": 82,
+        "easyBoss": 36,
+        "mediumBoss": 36,
+        "finalBoss": 36,
+        "legendaryBoss": 39,
+        "repair": 63,
+        "repairSeed": 0,
+        "bridge": 40,
+        "calculation": 20,
+        "integration": 0,
+        "graph": 130,
+        "assets": 19,
+        "totalCanonical": 656
+      },
+      "inlineScriptsChecked": 1
+    },
+    "graphHeavy": {
+      "path": "validation_artifacts/macro_m2d3_stabilization_closure/generated_packages/graphHeavy/index.html",
+      "htmlSha256": "d8c6bf40cceea1eccfa431ace7fc7b80535591199f47f3d571c20a18c9984436",
+      "bytes": 1350998,
+      "counts": {
+        "easy": 36,
+        "medium": 35,
+        "hard": 42,
+        "elite": 32,
+        "legendary": 36,
+        "easyBoss": 15,
+        "mediumBoss": 15,
+        "finalBoss": 15,
+        "legendaryBoss": 18,
+        "repair": 30,
+        "repairSeed": 0,
+        "bridge": 17,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 85,
+        "assets": 9,
+        "totalCanonical": 291
+      },
+      "inlineScriptsChecked": 1
+    }
+  },
+  "browser": {
+    "passed": false,
+    "attempted": true,
+    "attempts": [
+      {
+        "name": "block",
+        "passed": false,
+        "domLoaded": false,
+        "error": "ETIMEDOUT",
+        "stderr": "[13025:13053:0810/203005.932894:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13025:13053:0810/203005.940331:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13025:13053:0810/203005.940769:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13025:13053:0810/203005.940808:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13025:13053:0810/203005.957645:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13025:13053:0810/203005.981967:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13025:13025:0810/203006.007560:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[13025:13053:0810/203006.007638:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")"
+      },
+      {
+        "name": "graphHeavy",
+        "passed": false,
+        "domLoaded": false,
+        "error": "ETIMEDOUT",
+        "stderr": "[13135:13163:0810/203017.966932:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13135:13163:0810/203017.973449:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13135:13163:0810/203017.973602:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13135:13163:0810/203017.973978:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[13135:13163:0810/203017.990403:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13135:13163:0810/203018.008674:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[13135:13135:0810/203018.028483:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[13135:13163:0810/203018.028581:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")"
+      }
+    ],
+    "nonBlockingIssues": [
+      "Chromium could not complete one or both bounded package loads in this container. Both packages passed composition, answer verification, five-mode preflight, asset existence, imageAlt/graphDescription embedding, static markup, and inline-JavaScript syntax checks."
+    ]
+  },
+  "verdict": "MACRO M2d-3 COMPLETE WITH NON-BLOCKING ISSUES"
+}
