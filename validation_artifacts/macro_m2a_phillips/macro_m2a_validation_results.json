@@ -1,0 +1,5462 @@
+{
+  "phase": "phaseM2a-phillips-disinflation-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1",
+  "librarySha256": "17e7af52d60e0e9aacb0f6256b2b5eb2f2ad7a3bb6c14338d4f2669d891dcaba",
+  "structuralPass": true,
+  "beforeCounts": {
+    "short-run-phillips-curve": {
+      "easy": 8,
+      "medium": 4,
+      "hard": 5,
+      "elite": 3,
+      "legendary": 3,
+      "easyBoss": 0,
+      "mediumBoss": 3,
+      "finalBoss": 0,
+      "legendaryBoss": 0,
+      "repair": 5,
+      "repairSeed": 0,
+      "bridge": 4,
+      "total": 35
+    },
+    "phillips-curve-expectations": {
+      "easy": 5,
+      "medium": 6,
+      "hard": 11,
+      "elite": 4,
+      "legendary": 3,
+      "easyBoss": 0,
+      "mediumBoss": 3,
+      "finalBoss": 0,
+      "legendaryBoss": 0,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 38
+    },
+    "long-run-phillips-curve": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 4,
+      "elite": 2,
+      "legendary": 3,
+      "easyBoss": 0,
+      "mediumBoss": 2,
+      "finalBoss": 1,
+      "legendaryBoss": 0,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "total": 21
+    },
+    "sacrifice-ratio": {
+      "easy": 2,
+      "medium": 1,
+      "hard": 2,
+      "elite": 5,
+      "legendary": 4,
+      "easyBoss": 0,
+      "mediumBoss": 2,
+      "finalBoss": 0,
+      "legendaryBoss": 0,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 26
+    },
+    "disinflation-and-policy": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 4,
+      "elite": 2,
+      "legendary": 3,
+      "easyBoss": 0,
+      "mediumBoss": 2,
+      "finalBoss": 1,
+      "legendaryBoss": 0,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 2,
+      "total": 22
+    }
+  },
+  "afterCounts": {
+    "short-run-phillips-curve": {
+      "total": 50,
+      "easy": 8,
+      "medium": 6,
+      "hard": 6,
+      "elite": 3,
+      "legendary": 6,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 5,
+      "repairSeed": 0,
+      "bridge": 4,
+      "graphLinked": 32,
+      "calculationLinked": 0
+    },
+    "phillips-curve-expectations": {
+      "total": 51,
+      "easy": 6,
+      "medium": 6,
+      "hard": 11,
+      "elite": 4,
+      "legendary": 6,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 31,
+      "calculationLinked": 0
+    },
+    "long-run-phillips-curve": {
+      "total": 43,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 2,
+      "legendary": 6,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 29,
+      "calculationLinked": 0
+    },
+    "sacrifice-ratio": {
+      "total": 51,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 5,
+      "legendary": 6,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 35
+    },
+    "disinflation-and-policy": {
+      "total": 43,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 2,
+      "legendary": 6,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 9,
+      "calculationLinked": 6
+    }
+  },
+  "familyBefore": {
+    "easy": 23,
+    "medium": 15,
+    "hard": 26,
+    "elite": 16,
+    "legendary": 16,
+    "easyBoss": 0,
+    "mediumBoss": 12,
+    "finalBoss": 2,
+    "legendaryBoss": 0,
+    "repair": 15,
+    "repairSeed": 0,
+    "bridge": 13,
+    "total": 142
+  },
+  "familyAfter": {
+    "total": 238,
+    "easy": 32,
+    "medium": 30,
+    "hard": 35,
+    "elite": 16,
+    "legendary": 30,
+    "easyBoss": 15,
+    "mediumBoss": 15,
+    "finalBoss": 15,
+    "legendaryBoss": 15,
+    "repair": 15,
+    "repairSeed": 0,
+    "bridge": 16,
+    "graphLinked": 101,
+    "calculationLinked": 41
+  },
+  "protectedIntegrity": {
+    "aggregate-demand": {
+      "before": "f5f3833ce35f8d82337fab4fb24c4e739d97adc4adb9acbbe1d8678c97ea6af3",
+      "after": "f5f3833ce35f8d82337fab4fb24c4e739d97adc4adb9acbbe1d8678c97ea6af3",
+      "unchanged": true
+    },
+    "aggregate-supply": {
+      "before": "08165f895b4674960a20c2b4213e781cfb29ee9dee06c11862e450b174cfe38e",
+      "after": "08165f895b4674960a20c2b4213e781cfb29ee9dee06c11862e450b174cfe38e",
+      "unchanged": true
+    },
+    "bank-money-creation": {
+      "before": "6499dc6c1f2d9809403cbc15055e60edb5a891f663cd090be2c6f1fd1273e824",
+      "after": "6499dc6c1f2d9809403cbc15055e60edb5a891f663cd090be2c6f1fd1273e824",
+      "unchanged": true
+    },
+    "binding-price-ceilings": {
+      "before": "e4e031cb9f27eab092717fd3506da2aa7734a61cb69cfb88c027247ef72a0d47",
+      "after": "e4e031cb9f27eab092717fd3506da2aa7734a61cb69cfb88c027247ef72a0d47",
+      "unchanged": true
+    },
+    "binding-price-floors": {
+      "before": "73c30cd521e48ceb1b607a3b29a2157647c38e90f528c69cf5d7aa8c62f78bab",
+      "after": "73c30cd521e48ceb1b607a3b29a2157647c38e90f528c69cf5d7aa8c62f78bab",
+      "unchanged": true
+    },
+    "central-bank-and-federal-reserve": {
+      "before": "f1c387369ab725df6dbdef337c792b6efd5b3a2e7d25f4343206582b95544ad8",
+      "after": "f1c387369ab725df6dbdef337c792b6efd5b3a2e7d25f4343206582b95544ad8",
+      "unchanged": true
+    },
+    "competitive-markets": {
+      "before": "0b08708c3f7f407e3579a188ea6be51ee7fa9b38adf1871fb32a51532899f416",
+      "after": "0b08708c3f7f407e3579a188ea6be51ee7fa9b38adf1871fb32a51532899f416",
+      "unchanged": true
+    },
+    "consumer-and-producer-surplus": {
+      "before": "a5e3b84333beac97055df48efae3d1d380c1c308463c5a5a2302fe2cf95a64eb",
+      "after": "a5e3b84333beac97055df48efae3d1d380c1c308463c5a5a2302fe2cf95a64eb",
+      "unchanged": true
+    },
+    "costs-of-production": {
+      "before": "36209035400daead546b47182d052d88dbfffc4fd681c3c7732723502e5bb88e",
+      "after": "36209035400daead546b47182d052d88dbfffc4fd681c3c7732723502e5bb88e",
+      "unchanged": true
+    },
+    "cpi-and-inflation-measurement": {
+      "before": "4710aba5648d1efd682469fe9d6de56c0ae7a374e03f3aed7818d0eb23408d94",
+      "after": "4710aba5648d1efd682469fe9d6de56c0ae7a374e03f3aed7818d0eb23408d94",
+      "unchanged": true
+    },
+    "cpi-bias": {
+      "before": "e0e599201e80a790f11b0925b8b2e7b723128212e731f90638be890deee83a50",
+      "after": "e0e599201e80a790f11b0925b8b2e7b723128212e731f90638be890deee83a50",
+      "unchanged": true
+    },
+    "cpi-versus-gdp-deflator": {
+      "before": "cfffdb74fd3fca2eee40b4a77452bc7e07e6f90a33181d31f21f3bf4d4a48978",
+      "after": "cfffdb74fd3fca2eee40b4a77452bc7e07e6f90a33181d31f21f3bf4d4a48978",
+      "unchanged": true
+    },
+    "demand": {
+      "before": "678f5d287352ec109769813e0a4f14735a18d0ccd5eae2f64fcdaf2329594bc4",
+      "after": "678f5d287352ec109769813e0a4f14735a18d0ccd5eae2f64fcdaf2329594bc4",
+      "unchanged": true
+    },
+    "economic-growth-policy": {
+      "before": "8e0557685bca1b033db2567dba95c7cb91cbf90112da1f81f6abec492e065be4",
+      "after": "8e0557685bca1b033db2567dba95c7cb91cbf90112da1f81f6abec492e065be4",
+      "unchanged": true
+    },
+    "economist-policy-role": {
+      "before": "056917a37d3ff767422303bca187f999a7eaecfd472fdcc69dc7a52dbad09b3b",
+      "after": "056917a37d3ff767422303bca187f999a7eaecfd472fdcc69dc7a52dbad09b3b",
+      "unchanged": true
+    },
+    "elasticity": {
+      "before": "c6b3bc9c3e86cc14a53a088c4d8631cef59c06c0c637823741a87fbb29966f5e",
+      "after": "c6b3bc9c3e86cc14a53a088c4d8631cef59c06c0c637823741a87fbb29966f5e",
+      "unchanged": true
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "before": "396932ab97fa8814331f341791a8fb9863f0e09a33cb5421cad94f79bd85672d",
+      "after": "396932ab97fa8814331f341791a8fb9863f0e09a33cb5421cad94f79bd85672d",
+      "unchanged": true
+    },
+    "fiscal-policy-and-aggregate-demand": {
+      "before": "a11f16cae0f5ee2af674e8b0a62135e4dcf774507a190d660ee8c09376dc8445",
+      "after": "a11f16cae0f5ee2af674e8b0a62135e4dcf774507a190d660ee8c09376dc8445",
+      "unchanged": true
+    },
+    "fisher-effect": {
+      "before": "d0add98fb302d009d7884dcd9f7d9b28e63e29dc98f8bdc1d5c69088b76910c0",
+      "after": "d0add98fb302d009d7884dcd9f7d9b28e63e29dc98f8bdc1d5c69088b76910c0",
+      "unchanged": true
+    },
+    "gains-from-trade": {
+      "before": "a22cfedcf0d0895fae50eedd4a4637bddf25ab27a95c53ae575f8cf2d4f8a8a6",
+      "after": "a22cfedcf0d0895fae50eedd4a4637bddf25ab27a95c53ae575f8cf2d4f8a8a6",
+      "unchanged": true
+    },
+    "gdp-components": {
+      "before": "23d2abfd8d086e1f8b2e922b55a4dbe3d2fcad09e28363d39f1aed7e8c868c42",
+      "after": "23d2abfd8d086e1f8b2e922b55a4dbe3d2fcad09e28363d39f1aed7e8c868c42",
+      "unchanged": true
+    },
+    "gdp-measurement": {
+      "before": "bf1d4460079584f2859f67ac449ea81eff4d3a3842807afdae3827c46f808698",
+      "after": "bf1d4460079584f2859f67ac449ea81eff4d3a3842807afdae3827c46f808698",
+      "unchanged": true
+    },
+    "incentives": {
+      "before": "f0bd62ce9b800c35538f370206d6ee2a78da62f4db6b05c83711e97d7b61877f",
+      "after": "f0bd62ce9b800c35538f370206d6ee2a78da62f4db6b05c83711e97d7b61877f",
+      "unchanged": true
+    },
+    "indexing-and-real-values": {
+      "before": "30c80225621317568988733ef7b7eae3d035b51a24641300a561ecd71bba8698",
+      "after": "30c80225621317568988733ef7b7eae3d035b51a24641300a561ecd71bba8698",
+      "unchanged": true
+    },
+    "inflation-costs": {
+      "before": "ac7702118999a22ef7fb6a09424565707751b0fcdea2f86f3d7e95095f7e0f28",
+      "after": "ac7702118999a22ef7fb6a09424565707751b0fcdea2f86f3d7e95095f7e0f28",
+      "unchanged": true
+    },
+    "inflation-tax-and-deflation": {
+      "before": "6ad4db90d2fb6258cd47f2ee3d09b6c0d944bbf3549c9c4faa7fc887e4e3e5d8",
+      "after": "6ad4db90d2fb6258cd47f2ee3d09b6c0d944bbf3549c9c4faa7fc887e4e3e5d8",
+      "unchanged": true
+    },
+    "integrated-economic-analysis": {
+      "before": "fb242dadc158e21daf032b4e3e097294ff8e05763a81d5236ff8e3b20c478175",
+      "after": "fb242dadc158e21daf032b4e3e097294ff8e05763a81d5236ff8e3b20c478175",
+      "unchanged": true
+    },
+    "integrated-macroeconomic-analysis": {
+      "before": "013d27bbeb2eca2bcc02baa75019bf9a46856f7601a861c058bead7d016a7d6f",
+      "after": "013d27bbeb2eca2bcc02baa75019bf9a46856f7601a861c058bead7d016a7d6f",
+      "unchanged": true
+    },
+    "international-trade-and-trade-policy": {
+      "before": "015c3c983c6f6fa75d6a04472e9fabcbbc1fd835cb9408340289402942dbb1df",
+      "after": "015c3c983c6f6fa75d6a04472e9fabcbbc1fd835cb9408340289402942dbb1df",
+      "unchanged": true
+    },
+    "labor-market-institutions": {
+      "before": "ac8e19ca723aefa9fbf6f87291e177c1dae8565d62953938d2b0edf9c5274e64",
+      "after": "ac8e19ca723aefa9fbf6f87291e177c1dae8565d62953938d2b0edf9c5274e64",
+      "unchanged": true
+    },
+    "limits-of-gdp": {
+      "before": "3cbd1da5e79e33ecdc0da0300d9fd4b23464a1d9f5a4478c22513bd824c71b42",
+      "after": "3cbd1da5e79e33ecdc0da0300d9fd4b23464a1d9f5a4478c22513bd824c71b42",
+      "unchanged": true
+    },
+    "liquidity-preference-and-money-market": {
+      "before": "b75e58155cecaefb6c80025aba6930b87aa06fa4f85c9368810846eed0740eec",
+      "after": "b75e58155cecaefb6c80025aba6930b87aa06fa4f85c9368810846eed0740eec",
+      "unchanged": true
+    },
+    "living-standards-and-growth": {
+      "before": "2b1c6cdb752a96cb1aaeb9750ba47476314d64bfe2b650caa6fef5806d733bf3",
+      "after": "2b1c6cdb752a96cb1aaeb9750ba47476314d64bfe2b650caa6fef5806d733bf3",
+      "unchanged": true
+    },
+    "long-run-macroeconomic-adjustment": {
+      "before": "e3a20d0a3fca6482b03a333569182d78ffb6446d26812f81ed524cb7a1c797b7",
+      "after": "e3a20d0a3fca6482b03a333569182d78ffb6446d26812f81ed524cb7a1c797b7",
+      "unchanged": true
+    },
+    "macroeconomic-equilibrium-and-shocks": {
+      "before": "bdf7ed1199d1d3627d61efd0621cca7ecffe62277370e3c8ee1c646eafd12735",
+      "after": "bdf7ed1199d1d3627d61efd0621cca7ecffe62277370e3c8ee1c646eafd12735",
+      "unchanged": true
+    },
+    "marginal-analysis": {
+      "before": "e51cb2d713164a5c8dfec9756ba59af93e707185b2452c878c00126ac0dc4cad",
+      "after": "e51cb2d713164a5c8dfec9756ba59af93e707185b2452c878c00126ac0dc4cad",
+      "unchanged": true
+    },
+    "market-equilibrium": {
+      "before": "35d5c0dc971a7e46a84aa7601a37a50442f4d123bafb875acde9956ff9f58cc7",
+      "after": "35d5c0dc971a7e46a84aa7601a37a50442f4d123bafb875acde9956ff9f58cc7",
+      "unchanged": true
+    },
+    "market-failures": {
+      "before": "77c6f322b255c7537593e0c88089bbd465206f53f35d429f77fc0e1861f83517",
+      "after": "77c6f322b255c7537593e0c88089bbd465206f53f35d429f77fc0e1861f83517",
+      "unchanged": true
+    },
+    "micro-versus-macro": {
+      "before": "09ddb275075a1a047abe268cd140ec32a7b790cfd97a91140c815f088439d28f",
+      "after": "09ddb275075a1a047abe268cd140ec32a7b790cfd97a91140c815f088439d28f",
+      "unchanged": true
+    },
+    "models-and-assumptions": {
+      "before": "cb1b4187e19821e042570eeffd412b6d8955fd7aa4c0999c71647a5522978474",
+      "after": "cb1b4187e19821e042570eeffd412b6d8955fd7aa4c0999c71647a5522978474",
+      "unchanged": true
+    },
+    "monetary-control-limits": {
+      "before": "88816cfe122041dec9fdc439002e4540d4e340e486de185e5b43c57a64292abc",
+      "after": "88816cfe122041dec9fdc439002e4540d4e340e486de185e5b43c57a64292abc",
+      "unchanged": true
+    },
+    "monetary-neutrality": {
+      "before": "e2933194dd0061889e091dda5d61cd619f6647d52c0992eea62e2feb5a4e9aa7",
+      "after": "e2933194dd0061889e091dda5d61cd619f6647d52c0992eea62e2feb5a4e9aa7",
+      "unchanged": true
+    },
+    "monetary-policy-tools": {
+      "before": "7658f343a3083c27338a5ddb556ee3564d3d49a3462967ed4b66b572fbbf1003",
+      "after": "7658f343a3083c27338a5ddb556ee3564d3d49a3462967ed4b66b572fbbf1003",
+      "unchanged": true
+    },
+    "monetary-policy-transmission": {
+      "before": "f51568b903ec43a366e73ed38990a68a4ac56dca8a9236122c946926cba65b39",
+      "after": "f51568b903ec43a366e73ed38990a68a4ac56dca8a9236122c946926cba65b39",
+      "unchanged": true
+    },
+    "money-functions-and-measures": {
+      "before": "89c6780dee12fb7ad460203d1bb849b6c8eca60f003ce0db227bd5963faa0c04",
+      "after": "89c6780dee12fb7ad460203d1bb849b6c8eca60f003ce0db227bd5963faa0c04",
+      "unchanged": true
+    },
+    "monopolistic-competition": {
+      "before": "096281f4435b883a24ecbf2176345696b999f60a044418b67b46dc10112ed405",
+      "after": "096281f4435b883a24ecbf2176345696b999f60a044418b67b46dc10112ed405",
+      "unchanged": true
+    },
+    "monopoly": {
+      "before": "86956193571e7bd1644e46fd894e8bea059cac8b7a510d77e922aac2af496bb6",
+      "after": "86956193571e7bd1644e46fd894e8bea059cac8b7a510d77e922aac2af496bb6",
+      "unchanged": true
+    },
+    "natural-rate-of-unemployment": {
+      "before": "bb85561c8f8a99b01f99346508f656b1a725b3b14994bbbbdd69d203a314841a",
+      "after": "bb85561c8f8a99b01f99346508f656b1a725b3b14994bbbbdd69d203a314841a",
+      "unchanged": true
+    },
+    "oligopoly": {
+      "before": "d069451f729de3c477cab43fb28110050b6d21a7700c5b4a0cc5c76d209bcbca",
+      "after": "d069451f729de3c477cab43fb28110050b6d21a7700c5b4a0cc5c76d209bcbca",
+      "unchanged": true
+    },
+    "opportunity-cost": {
+      "before": "32e202117d5f6fcea7ae479260e4ef9dbe628d5270616b4946720b0030f87790",
+      "after": "32e202117d5f6fcea7ae479260e4ef9dbe628d5270616b4946720b0030f87790",
+      "unchanged": true
+    },
+    "perfect-competition": {
+      "before": "c43e9f6fe88d853fb89b44a05d9a895b55b0746238031400f3c67c6df7f49b0c",
+      "after": "c43e9f6fe88d853fb89b44a05d9a895b55b0746238031400f3c67c6df7f49b0c",
+      "unchanged": true
+    },
+    "positive-versus-normative-analysis": {
+      "before": "68b6d78497a6600b9021fda1d5defec21edb1f03775dd5fb9148e807fe3de3a7",
+      "after": "68b6d78497a6600b9021fda1d5defec21edb1f03775dd5fb9148e807fe3de3a7",
+      "unchanged": true
+    },
+    "price-signals": {
+      "before": "25f34c4f59d5e39ee46e38532bb8142d64f08c2c302606d6a8db8e7f9fcc0820",
+      "after": "25f34c4f59d5e39ee46e38532bb8142d64f08c2c302606d6a8db8e7f9fcc0820",
+      "unchanged": true
+    },
+    "production-possibilities-frontier": {
+      "before": "8b65de30e7caf80e514795061073806f49e94883163b1ac2d3f5d6d49a465f54",
+      "after": "8b65de30e7caf80e514795061073806f49e94883163b1ac2d3f5d6d49a465f54",
+      "unchanged": true
+    },
+    "productivity-measurement": {
+      "before": "4b30e4f886cf12780df375ac357ea7d2dd3c1dd2dd7e660ec7dc8edbfdda58ed",
+      "after": "4b30e4f886cf12780df375ac357ea7d2dd3c1dd2dd7e660ec7dc8edbfdda58ed",
+      "unchanged": true
+    },
+    "quantity-theory-of-money": {
+      "before": "47df144e62c3438d9c155e5344128ad5941da0697589971cd8f888ce0d8dcac3",
+      "after": "47df144e62c3438d9c155e5344128ad5941da0697589971cd8f888ce0d8dcac3",
+      "unchanged": true
+    },
+    "real-versus-nominal-gdp": {
+      "before": "40267e4938baf1b827a5bfe702b37473d8015d0b1b6e403d1a491a6ceb541ba5",
+      "after": "40267e4938baf1b827a5bfe702b37473d8015d0b1b6e403d1a491a6ceb541ba5",
+      "unchanged": true
+    },
+    "real-versus-nominal-interest-rates": {
+      "before": "86da17680b01c7875645c83ad15ceff62e1f0e825f793b250dc0a934879532f3",
+      "after": "86da17680b01c7875645c83ad15ceff62e1f0e825f793b250dc0a934879532f3",
+      "unchanged": true
+    },
+    "scarcity-and-tradeoffs": {
+      "before": "cc0aa8fd02074c3ae3b76b4c8a59f8377f5db931001074ad81385d999cbf8bcc",
+      "after": "cc0aa8fd02074c3ae3b76b4c8a59f8377f5db931001074ad81385d999cbf8bcc",
+      "unchanged": true
+    },
+    "sources-of-productivity": {
+      "before": "e5e83721d618d855bdf7f7fae1833d1e306243fc88896cc2e38dc673cd02e60b",
+      "after": "e5e83721d618d855bdf7f7fae1833d1e306243fc88896cc2e38dc673cd02e60b",
+      "unchanged": true
+    },
+    "stabilization-policy": {
+      "before": "3f85ee794b85699bd768084e93c5c88fc0521af0909a1d31f000cc1742e276ba",
+      "after": "3f85ee794b85699bd768084e93c5c88fc0521af0909a1d31f000cc1742e276ba",
+      "unchanged": true
+    },
+    "statutory-versus-economic-tax-incidence": {
+      "before": "a028a8f69bd8ccb18726569dd24ea93e0b59b1c86e6b95bc732f2a7bf81b8575",
+      "after": "a028a8f69bd8ccb18726569dd24ea93e0b59b1c86e6b95bc732f2a7bf81b8575",
+      "unchanged": true
+    },
+    "supply": {
+      "before": "82b9b097593de96e8e928b51ac01b6b944b9ddca6ea907f8f403e6be0db5547b",
+      "after": "82b9b097593de96e8e928b51ac01b6b944b9ddca6ea907f8f403e6be0db5547b",
+      "unchanged": true
+    },
+    "tax-incidence": {
+      "before": "7de1e08349067602dc742a1fc210638fa57a18d53268677c7f5b3c1c7e4a7721",
+      "after": "7de1e08349067602dc742a1fc210638fa57a18d53268677c7f5b3c1c7e4a7721",
+      "unchanged": true
+    },
+    "tax-wedges-and-revenue": {
+      "before": "22cc926818c4babc65a8e93e7856d74add88283d202e9f8bb74e5c0e3b8d7e6a",
+      "after": "22cc926818c4babc65a8e93e7856d74add88283d202e9f8bb74e5c0e3b8d7e6a",
+      "unchanged": true
+    },
+    "unemployment-measurement": {
+      "before": "1b49232c947f7bdd4e2913b11cc43a7f0c17c6e294868abf6bdedc2e4e576d4f",
+      "after": "1b49232c947f7bdd4e2913b11cc43a7f0c17c6e294868abf6bdedc2e4e576d4f",
+      "unchanged": true
+    },
+    "unemployment-types": {
+      "before": "a8c359f9106650070f84b78f3d7ee86dadef966cb6c4964e5e0846cc6681f7f3",
+      "after": "a8c359f9106650070f84b78f3d7ee86dadef966cb6c4964e5e0846cc6681f7f3",
+      "unchanged": true
+    }
+  },
+  "answerAudit": {
+    "records": 238,
+    "issues": []
+  },
+  "quality": {
+    "groups": {
+      "short-run-phillips-curve::easy": {
+        "count": 8,
+        "longest": 0,
+        "positions": [
+          4,
+          3,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.046
+      },
+      "short-run-phillips-curve::medium": {
+        "count": 6,
+        "longest": 0,
+        "positions": [
+          5,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.093
+      },
+      "short-run-phillips-curve::hard": {
+        "count": 6,
+        "longest": 0,
+        "positions": [
+          5,
+          0,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.092
+      },
+      "short-run-phillips-curve::elite": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "short-run-phillips-curve::legendary": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.085
+      },
+      "short-run-phillips-curve::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.947
+      },
+      "short-run-phillips-curve::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.943
+      },
+      "short-run-phillips-curve::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.065
+      },
+      "short-run-phillips-curve::legendaryBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.168
+      },
+      "short-run-phillips-curve::repair": {
+        "count": 5,
+        "longest": 0,
+        "positions": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.856
+      },
+      "short-run-phillips-curve::bridge": {
+        "count": 4,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.058
+      },
+      "phillips-curve-expectations::easy": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          5,
+          1,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 0.976
+      },
+      "phillips-curve-expectations::medium": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          6,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.243
+      },
+      "phillips-curve-expectations::hard": {
+        "count": 11,
+        "longest": 1,
+        "positions": [
+          11,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.091,
+        "meanCorrectToDistractorRatio": 1.076
+      },
+      "phillips-curve-expectations::elite": {
+        "count": 4,
+        "longest": 0,
+        "positions": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.026
+      },
+      "phillips-curve-expectations::legendary": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.221
+      },
+      "phillips-curve-expectations::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.917
+      },
+      "phillips-curve-expectations::easyBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.05
+      },
+      "phillips-curve-expectations::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.988
+      },
+      "phillips-curve-expectations::legendaryBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.947
+      },
+      "phillips-curve-expectations::repair": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 0.994
+      },
+      "phillips-curve-expectations::bridge": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.201
+      },
+      "long-run-phillips-curve::easy": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.178
+      },
+      "long-run-phillips-curve::medium": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.062
+      },
+      "long-run-phillips-curve::hard": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.098
+      },
+      "long-run-phillips-curve::elite": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.786
+      },
+      "long-run-phillips-curve::legendary": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.144
+      },
+      "long-run-phillips-curve::mediumBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.152
+      },
+      "long-run-phillips-curve::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.044
+      },
+      "long-run-phillips-curve::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.822
+      },
+      "long-run-phillips-curve::legendaryBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.097
+      },
+      "long-run-phillips-curve::repair": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.129
+      },
+      "long-run-phillips-curve::bridge": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.214
+      },
+      "sacrifice-ratio::easy": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.141
+      },
+      "sacrifice-ratio::medium": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.106
+      },
+      "sacrifice-ratio::hard": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.217
+      },
+      "sacrifice-ratio::elite": {
+        "count": 5,
+        "longest": 0,
+        "positions": [
+          5,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.135
+      },
+      "sacrifice-ratio::legendary": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          4,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.061
+      },
+      "sacrifice-ratio::calculation": {
+        "count": 4,
+        "longest": 1,
+        "positions": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.125
+      },
+      "sacrifice-ratio::mediumBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.167
+      },
+      "sacrifice-ratio::easyBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.1
+      },
+      "sacrifice-ratio::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.241
+      },
+      "sacrifice-ratio::legendaryBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.19
+      },
+      "sacrifice-ratio::repair": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.171
+      },
+      "sacrifice-ratio::bridge": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.929
+      },
+      "disinflation-and-policy::easy": {
+        "count": 6,
+        "longest": 0,
+        "positions": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.82
+      },
+      "disinflation-and-policy::medium": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.227
+      },
+      "disinflation-and-policy::hard": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.159
+      },
+      "disinflation-and-policy::elite": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "disinflation-and-policy::legendary": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.201
+      },
+      "disinflation-and-policy::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.073
+      },
+      "disinflation-and-policy::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.146
+      },
+      "disinflation-and-policy::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.668
+      },
+      "disinflation-and-policy::legendaryBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.033
+      },
+      "disinflation-and-policy::repair": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.07
+      },
+      "disinflation-and-policy::bridge": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.106
+      }
+    },
+    "exact": [],
+    "near": [],
+    "repeatedAnswerSets": [
+      [
+        "ECON-SP-MEDIUM-155",
+        "ECON-SP-HARD-238"
+      ],
+      [
+        "ECON-SP-MEDIUM-160",
+        "ECON-SP-HARD-241"
+      ],
+      [
+        "ECON-SP-EASY-67",
+        "ECON-SP-MEDIUMBOSS-3001"
+      ],
+      [
+        "ECON-SP-EASY-67",
+        "PM2A-SRPC-EB-007"
+      ],
+      [
+        "ECON-SP-EASY-71",
+        "ECON-SP-EASY-72"
+      ],
+      [
+        "ECON-SP-MEDIUM-155",
+        "ECON-SP-HARD-239"
+      ]
+    ]
+  },
+  "routeAudit": {
+    "short-run-phillips-curve": {
+      "repairRecords": 5,
+      "repairReachable": 5,
+      "bridgeRecords": 4,
+      "bridgeReachable": 4,
+      "bridgeDestinations": {
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-6039": [
+          "aggregate-demand",
+          "macroeconomic-equilibrium-and-shocks"
+        ],
+        "ECON-SP-MOVE-ALONG-SRPC-6041": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-6043": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-AXES-6040": [
+          "disinflation-and-policy"
+        ]
+      }
+    },
+    "phillips-curve-expectations": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-EXPECTED-INFLATION-SHIFT-6044": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-6046": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045": [
+          "long-run-phillips-curve"
+        ]
+      }
+    },
+    "long-run-phillips-curve": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-IDENTIFY-LRPC-6042": [
+          "phillips-curve-expectations",
+          "short-run-phillips-curve"
+        ],
+        "PM2A-LRPC-BR-021": [
+          "natural-rate-of-unemployment"
+        ],
+        "PM2A-LRPC-BR-022": [
+          "sacrifice-ratio"
+        ]
+      }
+    },
+    "sacrifice-ratio": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050": [
+          "long-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-DEFINE-SACRIFICE-RATIO-6049": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051": [
+          "disinflation-and-policy"
+        ]
+      }
+    },
+    "disinflation-and-policy": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-6048": [
+          "monetary-policy-transmission",
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-6047": [
+          "phillips-curve-expectations",
+          "long-run-phillips-curve"
+        ],
+        "PM2A-DIS-BR-021": [
+          "sacrifice-ratio"
+        ]
+      }
+    }
+  },
+  "chainEdges": [
+    [
+      "short-run-phillips-curve",
+      "phillips-curve-expectations"
+    ],
+    [
+      "phillips-curve-expectations",
+      "long-run-phillips-curve"
+    ],
+    [
+      "long-run-phillips-curve",
+      "sacrifice-ratio"
+    ],
+    [
+      "sacrifice-ratio",
+      "disinflation-and-policy"
+    ]
+  ],
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "short-run-phillips-curve": 2688,
+          "disinflation-and-policy": 2426,
+          "sacrifice-ratio": 3017,
+          "long-run-phillips-curve": 2383,
+          "phillips-curve-expectations": 2986
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.1991,
+          "phillips-curve-expectations": 0.2212,
+          "long-run-phillips-curve": 0.1765,
+          "sacrifice-ratio": 0.2235,
+          "disinflation-and-policy": 0.1797
+        }
+      },
+      "boss": {
+        "counts": {
+          "short-run-phillips-curve": 923,
+          "long-run-phillips-curve": 908,
+          "sacrifice-ratio": 892,
+          "phillips-curve-expectations": 892,
+          "disinflation-and-policy": 885
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2051,
+          "phillips-curve-expectations": 0.1982,
+          "long-run-phillips-curve": 0.2018,
+          "sacrifice-ratio": 0.1982,
+          "disinflation-and-policy": 0.1967
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "repair": {
+        "counts": {
+          "short-run-phillips-curve": 2431,
+          "phillips-curve-expectations": 1663,
+          "sacrifice-ratio": 1351,
+          "long-run-phillips-curve": 1233,
+          "disinflation-and-policy": 1604
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2935,
+          "phillips-curve-expectations": 0.2008,
+          "long-run-phillips-curve": 0.1489,
+          "sacrifice-ratio": 0.1631,
+          "disinflation-and-policy": 0.1937
+        }
+      },
+      "bridge": {
+        "counts": {
+          "short-run-phillips-curve": 2158,
+          "phillips-curve-expectations": 1632,
+          "disinflation-and-policy": 1803,
+          "sacrifice-ratio": 1337,
+          "long-run-phillips-curve": 1352
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2606,
+          "phillips-curve-expectations": 0.1971,
+          "long-run-phillips-curve": 0.1632,
+          "sacrifice-ratio": 0.1614,
+          "disinflation-and-policy": 0.2177
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "sacrifice-ratio": 3217,
+          "long-run-phillips-curve": 2638,
+          "phillips-curve-expectations": 3367,
+          "short-run-phillips-curve": 3054,
+          "disinflation-and-policy": 2724
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2036,
+          "phillips-curve-expectations": 0.2245,
+          "long-run-phillips-curve": 0.1759,
+          "sacrifice-ratio": 0.2145,
+          "disinflation-and-policy": 0.1816
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "repair": {
+        "counts": {
+          "sacrifice-ratio": 953,
+          "short-run-phillips-curve": 1798,
+          "long-run-phillips-curve": 1016,
+          "phillips-curve-expectations": 1362,
+          "disinflation-and-policy": 1258
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2815,
+          "phillips-curve-expectations": 0.2132,
+          "long-run-phillips-curve": 0.1591,
+          "sacrifice-ratio": 0.1492,
+          "disinflation-and-policy": 0.197
+        }
+      },
+      "bridge": {
+        "counts": {
+          "sacrifice-ratio": 956,
+          "short-run-phillips-curve": 1588,
+          "phillips-curve-expectations": 1341,
+          "long-run-phillips-curve": 1132,
+          "disinflation-and-policy": 1370
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2486,
+          "phillips-curve-expectations": 0.21,
+          "long-run-phillips-curve": 0.1772,
+          "sacrifice-ratio": 0.1497,
+          "disinflation-and-policy": 0.2145
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "phillips-curve-expectations": 3364,
+          "long-run-phillips-curve": 2699,
+          "sacrifice-ratio": 3362,
+          "short-run-phillips-curve": 2974,
+          "disinflation-and-policy": 2601
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.1983,
+          "phillips-curve-expectations": 0.2243,
+          "long-run-phillips-curve": 0.1799,
+          "sacrifice-ratio": 0.2241,
+          "disinflation-and-policy": 0.1734
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "repair": {
+        "counts": {
+          "short-run-phillips-curve": 1811,
+          "long-run-phillips-curve": 998,
+          "sacrifice-ratio": 964,
+          "phillips-curve-expectations": 1338,
+          "disinflation-and-policy": 1283
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2832,
+          "phillips-curve-expectations": 0.2093,
+          "long-run-phillips-curve": 0.1561,
+          "sacrifice-ratio": 0.1508,
+          "disinflation-and-policy": 0.2007
+        }
+      },
+      "bridge": {
+        "counts": {
+          "phillips-curve-expectations": 1310,
+          "long-run-phillips-curve": 1099,
+          "short-run-phillips-curve": 1601,
+          "sacrifice-ratio": 991,
+          "disinflation-and-policy": 1393
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2504,
+          "phillips-curve-expectations": 0.2049,
+          "long-run-phillips-curve": 0.1719,
+          "sacrifice-ratio": 0.155,
+          "disinflation-and-policy": 0.2179
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "disinflation-and-policy": 2688,
+          "phillips-curve-expectations": 2690,
+          "long-run-phillips-curve": 2724,
+          "sacrifice-ratio": 2707,
+          "short-run-phillips-curve": 2691
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.1993,
+          "phillips-curve-expectations": 0.1993,
+          "long-run-phillips-curve": 0.2018,
+          "sacrifice-ratio": 0.2005,
+          "disinflation-and-policy": 0.1991
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "phillips-curve-expectations": 914,
+          "sacrifice-ratio": 889,
+          "long-run-phillips-curve": 903,
+          "short-run-phillips-curve": 897,
+          "disinflation-and-policy": 897
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.1993,
+          "phillips-curve-expectations": 0.2031,
+          "long-run-phillips-curve": 0.2007,
+          "sacrifice-ratio": 0.1976,
+          "disinflation-and-policy": 0.1993
+        }
+      },
+      "repair": {
+        "counts": {
+          "sacrifice-ratio": 1538,
+          "long-run-phillips-curve": 1384,
+          "short-run-phillips-curve": 2356,
+          "phillips-curve-expectations": 1085,
+          "disinflation-and-policy": 1922
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2844,
+          "phillips-curve-expectations": 0.131,
+          "long-run-phillips-curve": 0.167,
+          "sacrifice-ratio": 0.1856,
+          "disinflation-and-policy": 0.232
+        }
+      },
+      "bridge": {
+        "counts": {
+          "disinflation-and-policy": 2291,
+          "long-run-phillips-curve": 1448,
+          "short-run-phillips-curve": 2036,
+          "phillips-curve-expectations": 1276,
+          "sacrifice-ratio": 1234
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2457,
+          "phillips-curve-expectations": 0.154,
+          "long-run-phillips-curve": 0.1748,
+          "sacrifice-ratio": 0.1489,
+          "disinflation-and-policy": 0.2765
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "short-run-phillips-curve": 2688,
+          "long-run-phillips-curve": 2415,
+          "sacrifice-ratio": 2901,
+          "phillips-curve-expectations": 3078,
+          "disinflation-and-policy": 2418
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.1991,
+          "phillips-curve-expectations": 0.228,
+          "long-run-phillips-curve": 0.1789,
+          "sacrifice-ratio": 0.2149,
+          "disinflation-and-policy": 0.1791
+        }
+      },
+      "boss": {
+        "counts": {
+          "phillips-curve-expectations": 889,
+          "long-run-phillips-curve": 935,
+          "sacrifice-ratio": 894,
+          "disinflation-and-policy": 897,
+          "short-run-phillips-curve": 885
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.1967,
+          "phillips-curve-expectations": 0.1976,
+          "long-run-phillips-curve": 0.2078,
+          "sacrifice-ratio": 0.1987,
+          "disinflation-and-policy": 0.1993
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "short-run-phillips-curve": 0,
+          "phillips-curve-expectations": 0,
+          "long-run-phillips-curve": 0,
+          "sacrifice-ratio": 0,
+          "disinflation-and-policy": 0
+        }
+      },
+      "repair": {
+        "counts": {
+          "disinflation-and-policy": 1610,
+          "long-run-phillips-curve": 1330,
+          "short-run-phillips-curve": 2406,
+          "phillips-curve-expectations": 1665,
+          "sacrifice-ratio": 1278
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2903,
+          "phillips-curve-expectations": 0.2009,
+          "long-run-phillips-curve": 0.1605,
+          "sacrifice-ratio": 0.1542,
+          "disinflation-and-policy": 0.1942
+        }
+      },
+      "bridge": {
+        "counts": {
+          "disinflation-and-policy": 1841,
+          "sacrifice-ratio": 1281,
+          "short-run-phillips-curve": 2124,
+          "long-run-phillips-curve": 1417,
+          "phillips-curve-expectations": 1626
+        },
+        "shares": {
+          "short-run-phillips-curve": 0.2562,
+          "phillips-curve-expectations": 0.1962,
+          "long-run-phillips-curve": 0.1709,
+          "sacrifice-ratio": 0.1545,
+          "disinflation-and-policy": 0.2221
+        }
+      }
+    }
+  },
+  "bankRepresentation": {
+    "ordinary": {
+      "short-run-phillips-curve": 23,
+      "phillips-curve-expectations": 27,
+      "long-run-phillips-curve": 20,
+      "sacrifice-ratio": 23,
+      "disinflation-and-policy": 20
+    },
+    "boss": {
+      "short-run-phillips-curve": 9,
+      "phillips-curve-expectations": 9,
+      "long-run-phillips-curve": 9,
+      "sacrifice-ratio": 9,
+      "disinflation-and-policy": 9
+    },
+    "legendary": {
+      "short-run-phillips-curve": 6,
+      "phillips-curve-expectations": 6,
+      "long-run-phillips-curve": 6,
+      "sacrifice-ratio": 6,
+      "disinflation-and-policy": 6
+    },
+    "legendaryBoss": {
+      "short-run-phillips-curve": 3,
+      "phillips-curve-expectations": 3,
+      "long-run-phillips-curve": 3,
+      "sacrifice-ratio": 3,
+      "disinflation-and-policy": 3
+    },
+    "repair": {
+      "short-run-phillips-curve": 5,
+      "phillips-curve-expectations": 3,
+      "long-run-phillips-curve": 2,
+      "sacrifice-ratio": 3,
+      "disinflation-and-policy": 2
+    },
+    "bridge": {
+      "short-run-phillips-curve": 4,
+      "phillips-curve-expectations": 3,
+      "long-run-phillips-curve": 3,
+      "sacrifice-ratio": 3,
+      "disinflation-and-policy": 3
+    }
+  },
+  "bankShares": {
+    "ordinary": {
+      "short-run-phillips-curve": 0.2035,
+      "phillips-curve-expectations": 0.2389,
+      "long-run-phillips-curve": 0.177,
+      "sacrifice-ratio": 0.2035,
+      "disinflation-and-policy": 0.177
+    },
+    "boss": {
+      "short-run-phillips-curve": 0.2,
+      "phillips-curve-expectations": 0.2,
+      "long-run-phillips-curve": 0.2,
+      "sacrifice-ratio": 0.2,
+      "disinflation-and-policy": 0.2
+    },
+    "legendary": {
+      "short-run-phillips-curve": 0.2,
+      "phillips-curve-expectations": 0.2,
+      "long-run-phillips-curve": 0.2,
+      "sacrifice-ratio": 0.2,
+      "disinflation-and-policy": 0.2
+    },
+    "legendaryBoss": {
+      "short-run-phillips-curve": 0.2,
+      "phillips-curve-expectations": 0.2,
+      "long-run-phillips-curve": 0.2,
+      "sacrifice-ratio": 0.2,
+      "disinflation-and-policy": 0.2
+    },
+    "repair": {
+      "short-run-phillips-curve": 0.3333,
+      "phillips-curve-expectations": 0.2,
+      "long-run-phillips-curve": 0.1333,
+      "sacrifice-ratio": 0.2,
+      "disinflation-and-policy": 0.1333
+    },
+    "bridge": {
+      "short-run-phillips-curve": 0.25,
+      "phillips-curve-expectations": 0.1875,
+      "long-run-phillips-curve": 0.1875,
+      "sacrifice-ratio": 0.1875,
+      "disinflation-and-policy": 0.1875
+    }
+  },
+  "soloReuse": {
+    "short-run-phillips-curve": {
+      "standard": {
+        "firstReuse": {
+          "easy": 9,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 8,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 9,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 8,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 9,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 8,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 9,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 8,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      }
+    },
+    "phillips-curve-expectations": {
+      "standard": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 11,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 11
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 11
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 11,
+          "finalBoss": 3
+        }
+      }
+    },
+    "long-run-phillips-curve": {
+      "standard": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      }
+    },
+    "sacrifice-ratio": {
+      "standard": {
+        "firstReuse": {
+          "easy": 8,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 7,
+          "easyBoss": 3,
+          "medium": 7,
+          "mediumBoss": 3,
+          "hard": 8,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 8,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 8
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 8,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 8
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 8,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 7,
+          "easyBoss": 3,
+          "medium": 7,
+          "mediumBoss": 3,
+          "hard": 8,
+          "finalBoss": 3
+        }
+      }
+    },
+    "disinflation-and-policy": {
+      "standard": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      }
+    }
+  },
+  "simulation": {
+    "totalSessions": 8250,
+    "solo": {
+      "short-run-phillips-curve": {
+        "name": "short-run-phillips-curve solo",
+        "selectedConceptIds": [
+          "short-run-phillips-curve"
+        ],
+        "perMode": 150,
+        "totalSessions": 750,
+        "byMode": {
+          "standard": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4908,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4908,
+            "representation": {
+              "ordinary": {
+                "short-run-phillips-curve": 4050
+              },
+              "boss": {
+                "short-run-phillips-curve": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 2454
+              },
+              "bridge": {
+                "short-run-phillips-curve": 2454
+              }
+            },
+            "graphExposure": 1568,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 9,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1050
+          },
+          "timed": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3822,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3822,
+            "representation": {
+              "ordinary": {
+                "short-run-phillips-curve": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 1911
+              },
+              "bridge": {
+                "short-run-phillips-curve": 1911
+              }
+            },
+            "graphExposure": 1750,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 9,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1500
+          },
+          "exam": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3892,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3892,
+            "representation": {
+              "ordinary": {
+                "short-run-phillips-curve": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 1946
+              },
+              "bridge": {
+                "short-run-phillips-curve": 1946
+              }
+            },
+            "graphExposure": 1757,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 9,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1500
+          },
+          "legendary": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4946,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4946,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "short-run-phillips-curve": 4050
+              },
+              "legendaryBoss": {
+                "short-run-phillips-curve": 1350
+              },
+              "repair": {
+                "short-run-phillips-curve": 2473
+              },
+              "bridge": {
+                "short-run-phillips-curve": 2473
+              }
+            },
+            "graphExposure": 1341,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "legendary": 7,
+                "legendaryBoss": 4
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 4050
+          },
+          "score": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4920,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4920,
+            "representation": {
+              "ordinary": {
+                "short-run-phillips-curve": 4050
+              },
+              "boss": {
+                "short-run-phillips-curve": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 2460
+              },
+              "bridge": {
+                "short-run-phillips-curve": 2460
+              }
+            },
+            "graphExposure": 1559,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 9,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1050
+          }
+        }
+      },
+      "phillips-curve-expectations": {
+        "name": "phillips-curve-expectations solo",
+        "selectedConceptIds": [
+          "phillips-curve-expectations"
+        ],
+        "perMode": 150,
+        "totalSessions": 750,
+        "byMode": {
+          "standard": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4986,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4986,
+            "representation": {
+              "ordinary": {
+                "phillips-curve-expectations": 4050
+              },
+              "boss": {
+                "phillips-curve-expectations": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 2493
+              },
+              "bridge": {
+                "phillips-curve-expectations": 2493
+              }
+            },
+            "graphExposure": 2140,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 900
+          },
+          "timed": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3870,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3870,
+            "representation": {
+              "ordinary": {
+                "phillips-curve-expectations": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 1935
+              },
+              "bridge": {
+                "phillips-curve-expectations": 1935
+              }
+            },
+            "graphExposure": 2177,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1200
+          },
+          "exam": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3876,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3876,
+            "representation": {
+              "ordinary": {
+                "phillips-curve-expectations": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 1938
+              },
+              "bridge": {
+                "phillips-curve-expectations": 1938
+              }
+            },
+            "graphExposure": 2176,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1200
+          },
+          "legendary": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4974,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4974,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "phillips-curve-expectations": 4050
+              },
+              "legendaryBoss": {
+                "phillips-curve-expectations": 1350
+              },
+              "repair": {
+                "phillips-curve-expectations": 2487
+              },
+              "bridge": {
+                "phillips-curve-expectations": 2487
+              }
+            },
+            "graphExposure": 1344,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "legendary": 7,
+                "legendaryBoss": 4
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 4050
+          },
+          "score": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4934,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4934,
+            "representation": {
+              "ordinary": {
+                "phillips-curve-expectations": 4050
+              },
+              "boss": {
+                "phillips-curve-expectations": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 2467
+              },
+              "bridge": {
+                "phillips-curve-expectations": 2467
+              }
+            },
+            "graphExposure": 2108,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 900
+          }
+        }
+      },
+      "long-run-phillips-curve": {
+        "name": "long-run-phillips-curve solo",
+        "selectedConceptIds": [
+          "long-run-phillips-curve"
+        ],
+        "perMode": 150,
+        "totalSessions": 750,
+        "byMode": {
+          "standard": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4970,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4970,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 4050
+              },
+              "boss": {
+                "long-run-phillips-curve": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-phillips-curve": 2485
+              },
+              "bridge": {
+                "long-run-phillips-curve": 2485
+              }
+            },
+            "graphExposure": 1415,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1350
+          },
+          "timed": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3834,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3834,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-phillips-curve": 1917
+              },
+              "bridge": {
+                "long-run-phillips-curve": 1917
+              }
+            },
+            "graphExposure": 1251,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1800
+          },
+          "exam": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3796,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3796,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-phillips-curve": 1898
+              },
+              "bridge": {
+                "long-run-phillips-curve": 1898
+              }
+            },
+            "graphExposure": 1234,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1800
+          },
+          "legendary": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4964,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4964,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "long-run-phillips-curve": 4050
+              },
+              "legendaryBoss": {
+                "long-run-phillips-curve": 1350
+              },
+              "repair": {
+                "long-run-phillips-curve": 2482
+              },
+              "bridge": {
+                "long-run-phillips-curve": 2482
+              }
+            },
+            "graphExposure": 0,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "legendary": 7,
+                "legendaryBoss": 4
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 4050
+          },
+          "score": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4990,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4990,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 4050
+              },
+              "boss": {
+                "long-run-phillips-curve": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-phillips-curve": 2495
+              },
+              "bridge": {
+                "long-run-phillips-curve": 2495
+              }
+            },
+            "graphExposure": 1442,
+            "calculationExposure": 0,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1350
+          }
+        }
+      },
+      "sacrifice-ratio": {
+        "name": "sacrifice-ratio solo",
+        "selectedConceptIds": [
+          "sacrifice-ratio"
+        ],
+        "perMode": 150,
+        "totalSessions": 750,
+        "byMode": {
+          "standard": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4920,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4920,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 4050
+              },
+              "boss": {
+                "sacrifice-ratio": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 2460
+              },
+              "bridge": {
+                "sacrifice-ratio": 2460
+              }
+            },
+            "graphExposure": 0,
+            "calculationExposure": 3659,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 8,
+                "medium": 8,
+                "hard": 9
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 750
+          },
+          "timed": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3846,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3846,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 1923
+              },
+              "bridge": {
+                "sacrifice-ratio": 1923
+              }
+            },
+            "graphExposure": 0,
+            "calculationExposure": 3043,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 8,
+                "medium": 8,
+                "hard": 9
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1200
+          },
+          "exam": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3838,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3838,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 1919
+              },
+              "bridge": {
+                "sacrifice-ratio": 1919
+              }
+            },
+            "graphExposure": 0,
+            "calculationExposure": 3031,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 8,
+                "medium": 8,
+                "hard": 9
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1200
+          },
+          "legendary": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4960,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4960,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "sacrifice-ratio": 4050
+              },
+              "legendaryBoss": {
+                "sacrifice-ratio": 1350
+              },
+              "repair": {
+                "sacrifice-ratio": 2480
+              },
+              "bridge": {
+                "sacrifice-ratio": 2480
+              }
+            },
+            "graphExposure": 0,
+            "calculationExposure": 5400,
+            "firstReuseOrdinals": {
+              "min": {
+                "legendary": 7,
+                "legendaryBoss": 4
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 4050
+          },
+          "score": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4968,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4968,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 4050
+              },
+              "boss": {
+                "sacrifice-ratio": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 2484
+              },
+              "bridge": {
+                "sacrifice-ratio": 2484
+              }
+            },
+            "graphExposure": 0,
+            "calculationExposure": 3669,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 8,
+                "medium": 8,
+                "hard": 9
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 750
+          }
+        }
+      },
+      "disinflation-and-policy": {
+        "name": "disinflation-and-policy solo",
+        "selectedConceptIds": [
+          "disinflation-and-policy"
+        ],
+        "perMode": 150,
+        "totalSessions": 750,
+        "byMode": {
+          "standard": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4962,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4962,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 4050
+              },
+              "boss": {
+                "disinflation-and-policy": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "disinflation-and-policy": 2481
+              },
+              "bridge": {
+                "disinflation-and-policy": 2481
+              }
+            },
+            "graphExposure": 595,
+            "calculationExposure": 375,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1350
+          },
+          "timed": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3790,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3790,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "disinflation-and-policy": 1895
+              },
+              "bridge": {
+                "disinflation-and-policy": 1895
+              }
+            },
+            "graphExposure": 496,
+            "calculationExposure": 258,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1800
+          },
+          "exam": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 4500,
+            "auxiliarySelections": 3846,
+            "f10MainSelections": 4500,
+            "f10AuxiliarySelections": 3846,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 4500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "disinflation-and-policy": 1923
+              },
+              "bridge": {
+                "disinflation-and-policy": 1923
+              }
+            },
+            "graphExposure": 507,
+            "calculationExposure": 248,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1800
+          },
+          "legendary": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4984,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4984,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "disinflation-and-policy": 4050
+              },
+              "legendaryBoss": {
+                "disinflation-and-policy": 1350
+              },
+              "repair": {
+                "disinflation-and-policy": 2492
+              },
+              "bridge": {
+                "disinflation-and-policy": 2492
+              }
+            },
+            "graphExposure": 1354,
+            "calculationExposure": 1798,
+            "firstReuseOrdinals": {
+              "min": {
+                "legendary": 7,
+                "legendaryBoss": 4
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 4050
+          },
+          "score": {
+            "sessions": 150,
+            "completed": 150,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 30,
+              "all-incorrect": 30,
+              "alternating": 30,
+              "random-70-percent": 30,
+              "remediation-heavy-boss-failure": 30
+            },
+            "mainSelections": 5400,
+            "auxiliarySelections": 4990,
+            "f10MainSelections": 5400,
+            "f10AuxiliarySelections": 4990,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 4050
+              },
+              "boss": {
+                "disinflation-and-policy": 1350
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "disinflation-and-policy": 2495
+              },
+              "bridge": {
+                "disinflation-and-policy": 2495
+              }
+            },
+            "graphExposure": 577,
+            "calculationExposure": 378,
+            "firstReuseOrdinals": {
+              "min": {
+                "easy": 7,
+                "medium": 7,
+                "hard": 7
+              }
+            },
+            "duplicateCanonicalSelectionsBySession": 1350
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F10 family",
+      "selectedConceptIds": [
+        "short-run-phillips-curve",
+        "phillips-curve-expectations",
+        "long-run-phillips-curve",
+        "sacrifice-ratio",
+        "disinflation-and-policy"
+      ],
+      "perMode": 500,
+      "totalSessions": 2500,
+      "byMode": {
+        "standard": {
+          "sessions": 500,
+          "completed": 500,
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 100,
+            "all-incorrect": 100,
+            "alternating": 100,
+            "random-70-percent": 100,
+            "remediation-heavy-boss-failure": 100
+          },
+          "mainSelections": 18000,
+          "auxiliarySelections": 16564,
+          "f10MainSelections": 18000,
+          "f10AuxiliarySelections": 16564,
+          "representation": {
+            "ordinary": {
+              "short-run-phillips-curve": 2688,
+              "disinflation-and-policy": 2426,
+              "sacrifice-ratio": 3017,
+              "long-run-phillips-curve": 2383,
+              "phillips-curve-expectations": 2986
+            },
+            "boss": {
+              "short-run-phillips-curve": 923,
+              "long-run-phillips-curve": 908,
+              "sacrifice-ratio": 892,
+              "phillips-curve-expectations": 892,
+              "disinflation-and-policy": 885
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "short-run-phillips-curve": 2431,
+              "phillips-curve-expectations": 1663,
+              "sacrifice-ratio": 1351,
+              "long-run-phillips-curve": 1233,
+              "disinflation-and-policy": 1604
+            },
+            "bridge": {
+              "short-run-phillips-curve": 2158,
+              "phillips-curve-expectations": 1632,
+              "disinflation-and-policy": 1803,
+              "sacrifice-ratio": 1337,
+              "long-run-phillips-curve": 1352
+            }
+          },
+          "graphExposure": 3951,
+          "calculationExposure": 2955,
+          "firstReuseOrdinals": {
+            "min": {}
+          },
+          "duplicateCanonicalSelectionsBySession": 0
+        },
+        "timed": {
+          "sessions": 500,
+          "completed": 500,
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 100,
+            "all-incorrect": 100,
+            "alternating": 100,
+            "random-70-percent": 100,
+            "remediation-heavy-boss-failure": 100
+          },
+          "mainSelections": 15000,
+          "auxiliarySelections": 12774,
+          "f10MainSelections": 15000,
+          "f10AuxiliarySelections": 12774,
+          "representation": {
+            "ordinary": {
+              "sacrifice-ratio": 3217,
+              "long-run-phillips-curve": 2638,
+              "phillips-curve-expectations": 3367,
+              "short-run-phillips-curve": 3054,
+              "disinflation-and-policy": 2724
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "sacrifice-ratio": 953,
+              "short-run-phillips-curve": 1798,
+              "long-run-phillips-curve": 1016,
+              "phillips-curve-expectations": 1362,
+              "disinflation-and-policy": 1258
+            },
+            "bridge": {
+              "sacrifice-ratio": 956,
+              "short-run-phillips-curve": 1588,
+              "phillips-curve-expectations": 1341,
+              "long-run-phillips-curve": 1132,
+              "disinflation-and-policy": 1370
+            }
+          },
+          "graphExposure": 3859,
+          "calculationExposure": 2385,
+          "firstReuseOrdinals": {
+            "min": {}
+          },
+          "duplicateCanonicalSelectionsBySession": 0
+        },
+        "exam": {
+          "sessions": 500,
+          "completed": 500,
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 100,
+            "all-incorrect": 100,
+            "alternating": 100,
+            "random-70-percent": 100,
+            "remediation-heavy-boss-failure": 100
+          },
+          "mainSelections": 15000,
+          "auxiliarySelections": 12788,
+          "f10MainSelections": 15000,
+          "f10AuxiliarySelections": 12788,
+          "representation": {
+            "ordinary": {
+              "phillips-curve-expectations": 3364,
+              "long-run-phillips-curve": 2699,
+              "sacrifice-ratio": 3362,
+              "short-run-phillips-curve": 2974,
+              "disinflation-and-policy": 2601
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "short-run-phillips-curve": 1811,
+              "long-run-phillips-curve": 998,
+              "sacrifice-ratio": 964,
+              "phillips-curve-expectations": 1338,
+              "disinflation-and-policy": 1283
+            },
+            "bridge": {
+              "phillips-curve-expectations": 1310,
+              "long-run-phillips-curve": 1099,
+              "short-run-phillips-curve": 1601,
+              "sacrifice-ratio": 991,
+              "disinflation-and-policy": 1393
+            }
+          },
+          "graphExposure": 3937,
+          "calculationExposure": 2527,
+          "firstReuseOrdinals": {
+            "min": {}
+          },
+          "duplicateCanonicalSelectionsBySession": 0
+        },
+        "legendary": {
+          "sessions": 500,
+          "completed": 500,
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 100,
+            "all-incorrect": 100,
+            "alternating": 100,
+            "random-70-percent": 100,
+            "remediation-heavy-boss-failure": 100
+          },
+          "mainSelections": 18000,
+          "auxiliarySelections": 16570,
+          "f10MainSelections": 18000,
+          "f10AuxiliarySelections": 16570,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "disinflation-and-policy": 2688,
+              "phillips-curve-expectations": 2690,
+              "long-run-phillips-curve": 2724,
+              "sacrifice-ratio": 2707,
+              "short-run-phillips-curve": 2691
+            },
+            "legendaryBoss": {
+              "phillips-curve-expectations": 914,
+              "sacrifice-ratio": 889,
+              "long-run-phillips-curve": 903,
+              "short-run-phillips-curve": 897,
+              "disinflation-and-policy": 897
+            },
+            "repair": {
+              "sacrifice-ratio": 1538,
+              "long-run-phillips-curve": 1384,
+              "short-run-phillips-curve": 2356,
+              "phillips-curve-expectations": 1085,
+              "disinflation-and-policy": 1922
+            },
+            "bridge": {
+              "disinflation-and-policy": 2291,
+              "long-run-phillips-curve": 1448,
+              "short-run-phillips-curve": 2036,
+              "phillips-curve-expectations": 1276,
+              "sacrifice-ratio": 1234
+            }
+          },
+          "graphExposure": 2664,
+          "calculationExposure": 4816,
+          "firstReuseOrdinals": {
+            "min": {}
+          },
+          "duplicateCanonicalSelectionsBySession": 0
+        },
+        "score": {
+          "sessions": 500,
+          "completed": 500,
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 100,
+            "all-incorrect": 100,
+            "alternating": 100,
+            "random-70-percent": 100,
+            "remediation-heavy-boss-failure": 100
+          },
+          "mainSelections": 18000,
+          "auxiliarySelections": 16578,
+          "f10MainSelections": 18000,
+          "f10AuxiliarySelections": 16578,
+          "representation": {
+            "ordinary": {
+              "short-run-phillips-curve": 2688,
+              "long-run-phillips-curve": 2415,
+              "sacrifice-ratio": 2901,
+              "phillips-curve-expectations": 3078,
+              "disinflation-and-policy": 2418
+            },
+            "boss": {
+              "phillips-curve-expectations": 889,
+              "long-run-phillips-curve": 935,
+              "sacrifice-ratio": 894,
+              "disinflation-and-policy": 897,
+              "short-run-phillips-curve": 885
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "disinflation-and-policy": 1610,
+              "long-run-phillips-curve": 1330,
+              "short-run-phillips-curve": 2406,
+              "phillips-curve-expectations": 1665,
+              "sacrifice-ratio": 1278
+            },
+            "bridge": {
+              "disinflation-and-policy": 1841,
+              "sacrifice-ratio": 1281,
+              "short-run-phillips-curve": 2124,
+              "long-run-phillips-curve": 1417,
+              "phillips-curve-expectations": 1626
+            }
+          },
+          "graphExposure": 3938,
+          "calculationExposure": 2836,
+          "firstReuseOrdinals": {
+            "min": {}
+          },
+          "duplicateCanonicalSelectionsBySession": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "selectedConceptIds": [
+          "unemployment-measurement",
+          "unemployment-types",
+          "natural-rate-of-unemployment",
+          "labor-market-institutions",
+          "short-run-phillips-curve",
+          "phillips-curve-expectations",
+          "long-run-phillips-curve",
+          "sacrifice-ratio",
+          "disinflation-and-policy"
+        ],
+        "perMode": 100,
+        "totalSessions": 500,
+        "byMode": {
+          "standard": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3314,
+            "f10MainSelections": 2229,
+            "f10AuxiliarySelections": 2154,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 343,
+                "natural-rate-of-unemployment": 129,
+                "short-run-phillips-curve": 353,
+                "disinflation-and-policy": 311,
+                "labor-market-institutions": 190,
+                "unemployment-measurement": 489,
+                "unemployment-types": 240,
+                "long-run-phillips-curve": 273,
+                "phillips-curve-expectations": 372
+              },
+              "boss": {
+                "phillips-curve-expectations": 98,
+                "long-run-phillips-curve": 127,
+                "disinflation-and-policy": 120,
+                "unemployment-measurement": 167,
+                "sacrifice-ratio": 109,
+                "labor-market-institutions": 64,
+                "short-run-phillips-curve": 123,
+                "unemployment-types": 63,
+                "natural-rate-of-unemployment": 29
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 331,
+                "long-run-phillips-curve": 186,
+                "sacrifice-ratio": 153,
+                "disinflation-and-policy": 204,
+                "phillips-curve-expectations": 204,
+                "unemployment-measurement": 256,
+                "unemployment-types": 178,
+                "labor-market-institutions": 90,
+                "natural-rate-of-unemployment": 55
+              },
+              "bridge": {
+                "long-run-phillips-curve": 197,
+                "disinflation-and-policy": 231,
+                "unemployment-measurement": 258,
+                "short-run-phillips-curve": 295,
+                "phillips-curve-expectations": 188,
+                "sacrifice-ratio": 165,
+                "unemployment-types": 185,
+                "labor-market-institutions": 97,
+                "natural-rate-of-unemployment": 41
+              }
+            },
+            "graphExposure": 493,
+            "calculationExposure": 542,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "timed": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2584,
+            "f10MainSelections": 1816,
+            "f10AuxiliarySelections": 1624,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 332,
+                "short-run-phillips-curve": 378,
+                "disinflation-and-policy": 315,
+                "natural-rate-of-unemployment": 163,
+                "sacrifice-ratio": 392,
+                "unemployment-types": 292,
+                "labor-market-institutions": 206,
+                "phillips-curve-expectations": 399,
+                "unemployment-measurement": 523
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 153,
+                "sacrifice-ratio": 128,
+                "phillips-curve-expectations": 182,
+                "unemployment-measurement": 233,
+                "labor-market-institutions": 60,
+                "disinflation-and-policy": 157,
+                "short-run-phillips-curve": 220,
+                "long-run-phillips-curve": 119,
+                "natural-rate-of-unemployment": 40
+              },
+              "bridge": {
+                "unemployment-types": 153,
+                "sacrifice-ratio": 123,
+                "phillips-curve-expectations": 170,
+                "unemployment-measurement": 230,
+                "labor-market-institutions": 59,
+                "short-run-phillips-curve": 210,
+                "disinflation-and-policy": 179,
+                "long-run-phillips-curve": 136,
+                "natural-rate-of-unemployment": 32
+              }
+            },
+            "graphExposure": 492,
+            "calculationExposure": 466,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "exam": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2554,
+            "f10MainSelections": 1797,
+            "f10AuxiliarySelections": 1531,
+            "representation": {
+              "ordinary": {
+                "unemployment-types": 273,
+                "unemployment-measurement": 545,
+                "labor-market-institutions": 215,
+                "long-run-phillips-curve": 316,
+                "short-run-phillips-curve": 338,
+                "sacrifice-ratio": 400,
+                "phillips-curve-expectations": 428,
+                "natural-rate-of-unemployment": 170,
+                "disinflation-and-policy": 315
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 149,
+                "short-run-phillips-curve": 222,
+                "unemployment-measurement": 252,
+                "disinflation-and-policy": 158,
+                "labor-market-institutions": 74,
+                "long-run-phillips-curve": 122,
+                "phillips-curve-expectations": 153,
+                "natural-rate-of-unemployment": 36,
+                "sacrifice-ratio": 111
+              },
+              "bridge": {
+                "unemployment-types": 153,
+                "short-run-phillips-curve": 189,
+                "disinflation-and-policy": 169,
+                "unemployment-measurement": 259,
+                "labor-market-institutions": 74,
+                "phillips-curve-expectations": 158,
+                "long-run-phillips-curve": 135,
+                "natural-rate-of-unemployment": 26,
+                "sacrifice-ratio": 114
+              }
+            },
+            "graphExposure": 483,
+            "calculationExposure": 452,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "legendary": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3340,
+            "f10MainSelections": 2109,
+            "f10AuxiliarySelections": 1946,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "phillips-curve-expectations": 302,
+                "unemployment-types": 218,
+                "labor-market-institutions": 368,
+                "disinflation-and-policy": 291,
+                "short-run-phillips-curve": 303,
+                "sacrifice-ratio": 307,
+                "unemployment-measurement": 458,
+                "natural-rate-of-unemployment": 144,
+                "long-run-phillips-curve": 309
+              },
+              "legendaryBoss": {
+                "disinflation-and-policy": 117,
+                "natural-rate-of-unemployment": 74,
+                "unemployment-measurement": 116,
+                "sacrifice-ratio": 126,
+                "phillips-curve-expectations": 119,
+                "short-run-phillips-curve": 118,
+                "long-run-phillips-curve": 117,
+                "unemployment-types": 40,
+                "labor-market-institutions": 73
+              },
+              "repair": {
+                "unemployment-measurement": 263,
+                "sacrifice-ratio": 182,
+                "disinflation-and-policy": 236,
+                "short-run-phillips-curve": 271,
+                "unemployment-types": 179,
+                "long-run-phillips-curve": 151,
+                "phillips-curve-expectations": 133,
+                "natural-rate-of-unemployment": 111,
+                "labor-market-institutions": 144
+              },
+              "bridge": {
+                "unemployment-measurement": 263,
+                "disinflation-and-policy": 288,
+                "short-run-phillips-curve": 246,
+                "sacrifice-ratio": 136,
+                "unemployment-types": 179,
+                "long-run-phillips-curve": 163,
+                "phillips-curve-expectations": 140,
+                "natural-rate-of-unemployment": 111,
+                "labor-market-institutions": 144
+              }
+            },
+            "graphExposure": 296,
+            "calculationExposure": 856,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "score": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3278,
+            "f10MainSelections": 2224,
+            "f10AuxiliarySelections": 2164,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 352,
+                "unemployment-measurement": 472,
+                "disinflation-and-policy": 321,
+                "phillips-curve-expectations": 342,
+                "long-run-phillips-curve": 297,
+                "labor-market-institutions": 192,
+                "short-run-phillips-curve": 346,
+                "unemployment-types": 244,
+                "natural-rate-of-unemployment": 134
+              },
+              "boss": {
+                "phillips-curve-expectations": 104,
+                "short-run-phillips-curve": 118,
+                "unemployment-measurement": 165,
+                "long-run-phillips-curve": 132,
+                "natural-rate-of-unemployment": 39,
+                "sacrifice-ratio": 107,
+                "labor-market-institutions": 69,
+                "disinflation-and-policy": 105,
+                "unemployment-types": 61
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 211,
+                "unemployment-measurement": 234,
+                "long-run-phillips-curve": 185,
+                "disinflation-and-policy": 192,
+                "short-run-phillips-curve": 342,
+                "unemployment-types": 182,
+                "labor-market-institutions": 90,
+                "sacrifice-ratio": 154,
+                "natural-rate-of-unemployment": 49
+              },
+              "bridge": {
+                "phillips-curve-expectations": 214,
+                "unemployment-measurement": 241,
+                "long-run-phillips-curve": 216,
+                "disinflation-and-policy": 214,
+                "short-run-phillips-curve": 292,
+                "unemployment-types": 183,
+                "labor-market-institutions": 94,
+                "sacrifice-ratio": 144,
+                "natural-rate-of-unemployment": 41
+              }
+            },
+            "graphExposure": 486,
+            "calculationExposure": 518,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "selectedConceptIds": [
+          "aggregate-demand",
+          "aggregate-supply",
+          "long-run-macroeconomic-adjustment",
+          "short-run-phillips-curve",
+          "phillips-curve-expectations",
+          "long-run-phillips-curve",
+          "sacrifice-ratio",
+          "disinflation-and-policy"
+        ],
+        "perMode": 100,
+        "totalSessions": 500,
+        "byMode": {
+          "standard": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3244,
+            "f10MainSelections": 2379,
+            "f10AuxiliarySelections": 2232,
+            "representation": {
+              "ordinary": {
+                "aggregate-demand": 344,
+                "long-run-macroeconomic-adjustment": 255,
+                "short-run-phillips-curve": 354,
+                "long-run-phillips-curve": 293,
+                "disinflation-and-policy": 326,
+                "sacrifice-ratio": 378,
+                "aggregate-supply": 329,
+                "phillips-curve-expectations": 421
+              },
+              "boss": {
+                "sacrifice-ratio": 125,
+                "aggregate-supply": 128,
+                "aggregate-demand": 122,
+                "disinflation-and-policy": 129,
+                "long-run-macroeconomic-adjustment": 43,
+                "long-run-phillips-curve": 112,
+                "short-run-phillips-curve": 130,
+                "phillips-curve-expectations": 111
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-demand": 212,
+                "long-run-phillips-curve": 180,
+                "phillips-curve-expectations": 203,
+                "short-run-phillips-curve": 331,
+                "aggregate-supply": 222,
+                "disinflation-and-policy": 210,
+                "long-run-macroeconomic-adjustment": 96,
+                "sacrifice-ratio": 168
+              },
+              "bridge": {
+                "aggregate-demand": 175,
+                "long-run-phillips-curve": 200,
+                "phillips-curve-expectations": 215,
+                "aggregate-supply": 218,
+                "short-run-phillips-curve": 300,
+                "sacrifice-ratio": 184,
+                "disinflation-and-policy": 241,
+                "long-run-macroeconomic-adjustment": 89
+              }
+            },
+            "graphExposure": 709,
+            "calculationExposure": 393,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "timed": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2558,
+            "f10MainSelections": 1957,
+            "f10AuxiliarySelections": 1690,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 359,
+                "aggregate-demand": 352,
+                "long-run-macroeconomic-adjustment": 310,
+                "sacrifice-ratio": 430,
+                "short-run-phillips-curve": 409,
+                "disinflation-and-policy": 354,
+                "phillips-curve-expectations": 405,
+                "aggregate-supply": 381
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-macroeconomic-adjustment": 130,
+                "phillips-curve-expectations": 160,
+                "short-run-phillips-curve": 223,
+                "aggregate-supply": 157,
+                "sacrifice-ratio": 131,
+                "disinflation-and-policy": 169,
+                "aggregate-demand": 168,
+                "long-run-phillips-curve": 141
+              },
+              "bridge": {
+                "long-run-macroeconomic-adjustment": 123,
+                "phillips-curve-expectations": 171,
+                "short-run-phillips-curve": 202,
+                "long-run-phillips-curve": 166,
+                "sacrifice-ratio": 130,
+                "aggregate-supply": 157,
+                "disinflation-and-policy": 197,
+                "aggregate-demand": 133
+              }
+            },
+            "graphExposure": 769,
+            "calculationExposure": 327,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "exam": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2566,
+            "f10MainSelections": 1974,
+            "f10AuxiliarySelections": 1736,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 447,
+                "disinflation-and-policy": 358,
+                "short-run-phillips-curve": 416,
+                "long-run-macroeconomic-adjustment": 294,
+                "long-run-phillips-curve": 341,
+                "phillips-curve-expectations": 412,
+                "aggregate-demand": 350,
+                "aggregate-supply": 382
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "long-run-phillips-curve": 135,
+                "disinflation-and-policy": 179,
+                "sacrifice-ratio": 119,
+                "short-run-phillips-curve": 247,
+                "aggregate-supply": 152,
+                "phillips-curve-expectations": 171,
+                "aggregate-demand": 154,
+                "long-run-macroeconomic-adjustment": 126
+              },
+              "bridge": {
+                "long-run-phillips-curve": 168,
+                "disinflation-and-policy": 186,
+                "sacrifice-ratio": 129,
+                "short-run-phillips-curve": 225,
+                "aggregate-supply": 150,
+                "phillips-curve-expectations": 177,
+                "aggregate-demand": 129,
+                "long-run-macroeconomic-adjustment": 119
+              }
+            },
+            "graphExposure": 729,
+            "calculationExposure": 350,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "legendary": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3328,
+            "f10MainSelections": 2399,
+            "f10AuxiliarySelections": 2290,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "phillips-curve-expectations": 374,
+                "disinflation-and-policy": 332,
+                "aggregate-supply": 374,
+                "short-run-phillips-curve": 363,
+                "long-run-phillips-curve": 351,
+                "aggregate-demand": 370,
+                "long-run-macroeconomic-adjustment": 188,
+                "sacrifice-ratio": 348
+              },
+              "legendaryBoss": {
+                "phillips-curve-expectations": 127,
+                "disinflation-and-policy": 129,
+                "long-run-phillips-curve": 114,
+                "aggregate-supply": 143,
+                "short-run-phillips-curve": 132,
+                "aggregate-demand": 126,
+                "sacrifice-ratio": 129
+              },
+              "repair": {
+                "aggregate-demand": 246,
+                "long-run-macroeconomic-adjustment": 53,
+                "aggregate-supply": 246,
+                "phillips-curve-expectations": 164,
+                "long-run-phillips-curve": 188,
+                "short-run-phillips-curve": 323,
+                "sacrifice-ratio": 197,
+                "disinflation-and-policy": 247
+              },
+              "bridge": {
+                "aggregate-demand": 170,
+                "long-run-macroeconomic-adjustment": 58,
+                "aggregate-supply": 265,
+                "disinflation-and-policy": 298,
+                "short-run-phillips-curve": 287,
+                "phillips-curve-expectations": 202,
+                "sacrifice-ratio": 178,
+                "long-run-phillips-curve": 206
+              }
+            },
+            "graphExposure": 479,
+            "calculationExposure": 623,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "score": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3324,
+            "f10MainSelections": 2417,
+            "f10AuxiliarySelections": 2311,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 380,
+                "disinflation-and-policy": 327,
+                "long-run-phillips-curve": 333,
+                "aggregate-demand": 336,
+                "short-run-phillips-curve": 361,
+                "phillips-curve-expectations": 383,
+                "aggregate-supply": 333,
+                "long-run-macroeconomic-adjustment": 247
+              },
+              "boss": {
+                "sacrifice-ratio": 134,
+                "aggregate-supply": 117,
+                "phillips-curve-expectations": 126,
+                "long-run-phillips-curve": 123,
+                "long-run-macroeconomic-adjustment": 41,
+                "short-run-phillips-curve": 125,
+                "aggregate-demand": 109,
+                "disinflation-and-policy": 125
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "aggregate-demand": 216,
+                "long-run-phillips-curve": 197,
+                "long-run-macroeconomic-adjustment": 97,
+                "disinflation-and-policy": 227,
+                "short-run-phillips-curve": 311,
+                "sacrifice-ratio": 179,
+                "phillips-curve-expectations": 214,
+                "aggregate-supply": 221
+              },
+              "bridge": {
+                "aggregate-demand": 170,
+                "sacrifice-ratio": 201,
+                "long-run-macroeconomic-adjustment": 91,
+                "short-run-phillips-curve": 294,
+                "disinflation-and-policy": 262,
+                "long-run-phillips-curve": 213,
+                "phillips-curve-expectations": 213,
+                "aggregate-supply": 218
+              }
+            },
+            "graphExposure": 744,
+            "calculationExposure": 394,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          }
+        }
+      },
+      "C": {
+        "name": "Cross-family C",
+        "selectedConceptIds": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy",
+          "short-run-phillips-curve",
+          "phillips-curve-expectations",
+          "long-run-phillips-curve",
+          "sacrifice-ratio",
+          "disinflation-and-policy"
+        ],
+        "perMode": 100,
+        "totalSessions": 500,
+        "byMode": {
+          "standard": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3316,
+            "f10MainSelections": 2040,
+            "f10AuxiliarySelections": 2452,
+            "representation": {
+              "ordinary": {
+                "stabilization-policy": 462,
+                "disinflation-and-policy": 275,
+                "fiscal-multipliers-and-crowding-out": 475,
+                "fiscal-policy-and-aggregate-demand": 297,
+                "long-run-phillips-curve": 260,
+                "short-run-phillips-curve": 274,
+                "sacrifice-ratio": 303,
+                "phillips-curve-expectations": 354
+              },
+              "boss": {
+                "sacrifice-ratio": 117,
+                "fiscal-multipliers-and-crowding-out": 118,
+                "stabilization-policy": 105,
+                "phillips-curve-expectations": 116,
+                "short-run-phillips-curve": 112,
+                "long-run-phillips-curve": 101,
+                "disinflation-and-policy": 128,
+                "fiscal-policy-and-aggregate-demand": 103
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 247,
+                "long-run-phillips-curve": 158,
+                "disinflation-and-policy": 221,
+                "short-run-phillips-curve": 370,
+                "fiscal-policy-and-aggregate-demand": 106,
+                "stabilization-policy": 163,
+                "sacrifice-ratio": 192,
+                "fiscal-multipliers-and-crowding-out": 201
+              },
+              "bridge": {
+                "phillips-curve-expectations": 249,
+                "sacrifice-ratio": 215,
+                "disinflation-and-policy": 265,
+                "short-run-phillips-curve": 316,
+                "fiscal-policy-and-aggregate-demand": 81,
+                "stabilization-policy": 160,
+                "long-run-phillips-curve": 219,
+                "fiscal-multipliers-and-crowding-out": 153
+              }
+            },
+            "graphExposure": 587,
+            "calculationExposure": 648,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "timed": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2558,
+            "f10MainSelections": 1601,
+            "f10AuxiliarySelections": 1781,
+            "representation": {
+              "ordinary": {
+                "sacrifice-ratio": 354,
+                "fiscal-multipliers-and-crowding-out": 511,
+                "long-run-phillips-curve": 289,
+                "fiscal-policy-and-aggregate-demand": 375,
+                "short-run-phillips-curve": 304,
+                "stabilization-policy": 513,
+                "phillips-curve-expectations": 363,
+                "disinflation-and-policy": 291
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 195,
+                "short-run-phillips-curve": 232,
+                "sacrifice-ratio": 136,
+                "stabilization-policy": 158,
+                "fiscal-multipliers-and-crowding-out": 170,
+                "disinflation-and-policy": 156,
+                "long-run-phillips-curve": 135,
+                "fiscal-policy-and-aggregate-demand": 97
+              },
+              "bridge": {
+                "long-run-phillips-curve": 160,
+                "short-run-phillips-curve": 209,
+                "sacrifice-ratio": 156,
+                "phillips-curve-expectations": 202,
+                "fiscal-multipliers-and-crowding-out": 139,
+                "stabilization-policy": 141,
+                "disinflation-and-policy": 200,
+                "fiscal-policy-and-aggregate-demand": 72
+              }
+            },
+            "graphExposure": 497,
+            "calculationExposure": 531,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "exam": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2584,
+            "f10MainSelections": 1649,
+            "f10AuxiliarySelections": 1847,
+            "representation": {
+              "ordinary": {
+                "fiscal-multipliers-and-crowding-out": 495,
+                "stabilization-policy": 501,
+                "short-run-phillips-curve": 338,
+                "phillips-curve-expectations": 369,
+                "disinflation-and-policy": 281,
+                "sacrifice-ratio": 380,
+                "fiscal-policy-and-aggregate-demand": 355,
+                "long-run-phillips-curve": 281
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 273,
+                "fiscal-policy-and-aggregate-demand": 95,
+                "fiscal-multipliers-and-crowding-out": 164,
+                "disinflation-and-policy": 153,
+                "sacrifice-ratio": 146,
+                "phillips-curve-expectations": 196,
+                "long-run-phillips-curve": 120,
+                "stabilization-policy": 145
+              },
+              "bridge": {
+                "short-run-phillips-curve": 247,
+                "phillips-curve-expectations": 192,
+                "fiscal-multipliers-and-crowding-out": 139,
+                "long-run-phillips-curve": 169,
+                "sacrifice-ratio": 161,
+                "fiscal-policy-and-aggregate-demand": 73,
+                "disinflation-and-policy": 190,
+                "stabilization-policy": 121
+              }
+            },
+            "graphExposure": 548,
+            "calculationExposure": 520,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "legendary": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3326,
+            "f10MainSelections": 2116,
+            "f10AuxiliarySelections": 2491,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "fiscal-policy-and-aggregate-demand": 331,
+                "phillips-curve-expectations": 340,
+                "fiscal-multipliers-and-crowding-out": 325,
+                "long-run-phillips-curve": 306,
+                "disinflation-and-policy": 339,
+                "stabilization-policy": 428,
+                "sacrifice-ratio": 314,
+                "short-run-phillips-curve": 317
+              },
+              "legendaryBoss": {
+                "phillips-curve-expectations": 103,
+                "short-run-phillips-curve": 91,
+                "fiscal-multipliers-and-crowding-out": 97,
+                "fiscal-policy-and-aggregate-demand": 97,
+                "stabilization-policy": 206,
+                "sacrifice-ratio": 93,
+                "disinflation-and-policy": 94,
+                "long-run-phillips-curve": 119
+              },
+              "repair": {
+                "disinflation-and-policy": 248,
+                "short-run-phillips-curve": 366,
+                "long-run-phillips-curve": 201,
+                "fiscal-multipliers-and-crowding-out": 180,
+                "fiscal-policy-and-aggregate-demand": 128,
+                "stabilization-policy": 150,
+                "phillips-curve-expectations": 185,
+                "sacrifice-ratio": 205
+              },
+              "bridge": {
+                "sacrifice-ratio": 180,
+                "short-run-phillips-curve": 333,
+                "long-run-phillips-curve": 248,
+                "fiscal-policy-and-aggregate-demand": 100,
+                "stabilization-policy": 117,
+                "disinflation-and-policy": 313,
+                "fiscal-multipliers-and-crowding-out": 160,
+                "phillips-curve-expectations": 212
+              }
+            },
+            "graphExposure": 1374,
+            "calculationExposure": 833,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "score": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3300,
+            "f10MainSelections": 2032,
+            "f10AuxiliarySelections": 2450,
+            "representation": {
+              "ordinary": {
+                "phillips-curve-expectations": 350,
+                "fiscal-multipliers-and-crowding-out": 507,
+                "sacrifice-ratio": 313,
+                "stabilization-policy": 456,
+                "disinflation-and-policy": 248,
+                "long-run-phillips-curve": 245,
+                "short-run-phillips-curve": 279,
+                "fiscal-policy-and-aggregate-demand": 302
+              },
+              "boss": {
+                "fiscal-policy-and-aggregate-demand": 92,
+                "phillips-curve-expectations": 124,
+                "short-run-phillips-curve": 107,
+                "stabilization-policy": 114,
+                "fiscal-multipliers-and-crowding-out": 97,
+                "sacrifice-ratio": 117,
+                "disinflation-and-policy": 129,
+                "long-run-phillips-curve": 120
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "fiscal-policy-and-aggregate-demand": 125,
+                "short-run-phillips-curve": 364,
+                "stabilization-policy": 154,
+                "phillips-curve-expectations": 225,
+                "fiscal-multipliers-and-crowding-out": 201,
+                "disinflation-and-policy": 213,
+                "long-run-phillips-curve": 191,
+                "sacrifice-ratio": 177
+              },
+              "bridge": {
+                "short-run-phillips-curve": 331,
+                "fiscal-multipliers-and-crowding-out": 122,
+                "stabilization-policy": 160,
+                "phillips-curve-expectations": 248,
+                "fiscal-policy-and-aggregate-demand": 88,
+                "disinflation-and-policy": 277,
+                "long-run-phillips-curve": 221,
+                "sacrifice-ratio": 203
+              }
+            },
+            "graphExposure": 563,
+            "calculationExposure": 606,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          }
+        }
+      },
+      "D": {
+        "name": "Cross-family D",
+        "selectedConceptIds": [
+          "monetary-policy-transmission",
+          "short-run-phillips-curve",
+          "phillips-curve-expectations",
+          "long-run-phillips-curve",
+          "sacrifice-ratio",
+          "disinflation-and-policy"
+        ],
+        "perMode": 100,
+        "totalSessions": 500,
+        "byMode": {
+          "standard": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3256,
+            "f10MainSelections": 2776,
+            "f10AuxiliarySelections": 3050,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 352,
+                "monetary-policy-transmission": 668,
+                "sacrifice-ratio": 430,
+                "phillips-curve-expectations": 474,
+                "disinflation-and-policy": 350,
+                "short-run-phillips-curve": 426
+              },
+              "boss": {
+                "phillips-curve-expectations": 148,
+                "long-run-phillips-curve": 131,
+                "sacrifice-ratio": 160,
+                "disinflation-and-policy": 133,
+                "monetary-policy-transmission": 156,
+                "short-run-phillips-curve": 172
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 291,
+                "monetary-policy-transmission": 133,
+                "disinflation-and-policy": 257,
+                "sacrifice-ratio": 254,
+                "long-run-phillips-curve": 236,
+                "short-run-phillips-curve": 457
+              },
+              "bridge": {
+                "phillips-curve-expectations": 282,
+                "disinflation-and-policy": 315,
+                "sacrifice-ratio": 257,
+                "long-run-phillips-curve": 272,
+                "short-run-phillips-curve": 429,
+                "monetary-policy-transmission": 73
+              }
+            },
+            "graphExposure": 864,
+            "calculationExposure": 439,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "timed": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2562,
+            "f10MainSelections": 2282,
+            "f10AuxiliarySelections": 2320,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 718,
+                "short-run-phillips-curve": 439,
+                "long-run-phillips-curve": 426,
+                "disinflation-and-policy": 390,
+                "sacrifice-ratio": 521,
+                "phillips-curve-expectations": 506
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 333,
+                "long-run-phillips-curve": 183,
+                "sacrifice-ratio": 173,
+                "disinflation-and-policy": 215,
+                "phillips-curve-expectations": 223,
+                "monetary-policy-transmission": 154
+              },
+              "bridge": {
+                "short-run-phillips-curve": 315,
+                "long-run-phillips-curve": 213,
+                "sacrifice-ratio": 176,
+                "disinflation-and-policy": 263,
+                "phillips-curve-expectations": 226,
+                "monetary-policy-transmission": 88
+              }
+            },
+            "graphExposure": 874,
+            "calculationExposure": 376,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "exam": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3000,
+            "auxiliarySelections": 2510,
+            "f10MainSelections": 2273,
+            "f10AuxiliarySelections": 2282,
+            "representation": {
+              "ordinary": {
+                "monetary-policy-transmission": 727,
+                "short-run-phillips-curve": 441,
+                "disinflation-and-policy": 420,
+                "sacrifice-ratio": 505,
+                "long-run-phillips-curve": 386,
+                "phillips-curve-expectations": 521
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "short-run-phillips-curve": 315,
+                "long-run-phillips-curve": 176,
+                "disinflation-and-policy": 199,
+                "phillips-curve-expectations": 231,
+                "monetary-policy-transmission": 141,
+                "sacrifice-ratio": 193
+              },
+              "bridge": {
+                "long-run-phillips-curve": 220,
+                "short-run-phillips-curve": 268,
+                "disinflation-and-policy": 235,
+                "phillips-curve-expectations": 245,
+                "monetary-policy-transmission": 87,
+                "sacrifice-ratio": 200
+              }
+            },
+            "graphExposure": 816,
+            "calculationExposure": 369,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "legendary": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3316,
+            "f10MainSelections": 2573,
+            "f10AuxiliarySelections": 2978,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "sacrifice-ratio": 361,
+                "disinflation-and-policy": 371,
+                "monetary-policy-transmission": 876,
+                "short-run-phillips-curve": 375,
+                "long-run-phillips-curve": 358,
+                "phillips-curve-expectations": 359
+              },
+              "legendaryBoss": {
+                "sacrifice-ratio": 164,
+                "long-run-phillips-curve": 155,
+                "monetary-policy-transmission": 151,
+                "phillips-curve-expectations": 150,
+                "short-run-phillips-curve": 141,
+                "disinflation-and-policy": 139
+              },
+              "repair": {
+                "short-run-phillips-curve": 430,
+                "long-run-phillips-curve": 231,
+                "disinflation-and-policy": 332,
+                "phillips-curve-expectations": 199,
+                "monetary-policy-transmission": 197,
+                "sacrifice-ratio": 269
+              },
+              "bridge": {
+                "short-run-phillips-curve": 378,
+                "long-run-phillips-curve": 266,
+                "disinflation-and-policy": 398,
+                "phillips-curve-expectations": 240,
+                "monetary-policy-transmission": 141,
+                "sacrifice-ratio": 235
+              }
+            },
+            "graphExposure": 1279,
+            "calculationExposure": 1099,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          },
+          "score": {
+            "sessions": 100,
+            "completed": 100,
+            "completionFailures": 0,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 20,
+              "all-incorrect": 20,
+              "alternating": 20,
+              "random-70-percent": 20,
+              "remediation-heavy-boss-failure": 20
+            },
+            "mainSelections": 3600,
+            "auxiliarySelections": 3256,
+            "f10MainSelections": 2826,
+            "f10AuxiliarySelections": 3023,
+            "representation": {
+              "ordinary": {
+                "long-run-phillips-curve": 373,
+                "sacrifice-ratio": 449,
+                "short-run-phillips-curve": 402,
+                "monetary-policy-transmission": 616,
+                "disinflation-and-policy": 381,
+                "phillips-curve-expectations": 479
+              },
+              "boss": {
+                "disinflation-and-policy": 148,
+                "short-run-phillips-curve": 131,
+                "monetary-policy-transmission": 158,
+                "phillips-curve-expectations": 167,
+                "sacrifice-ratio": 153,
+                "long-run-phillips-curve": 143
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sacrifice-ratio": 236,
+                "disinflation-and-policy": 282,
+                "phillips-curve-expectations": 303,
+                "short-run-phillips-curve": 431,
+                "monetary-policy-transmission": 146,
+                "long-run-phillips-curve": 230
+              },
+              "bridge": {
+                "sacrifice-ratio": 253,
+                "disinflation-and-policy": 325,
+                "phillips-curve-expectations": 312,
+                "short-run-phillips-curve": 400,
+                "long-run-phillips-curve": 251,
+                "monetary-policy-transmission": 87
+              }
+            },
+            "graphExposure": 868,
+            "calculationExposure": 449,
+            "firstReuseOrdinals": {
+              "min": {}
+            },
+            "duplicateCanonicalSelectionsBySession": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "graphAudit": {
+    "graphLinkedRecords": 101,
+    "imageLinkedRecords": 45,
+    "cognitiveTaskCounts": {
+      "equilibrium-or-policy-transfer": 5,
+      "point-or-axis-reading": 14,
+      "inflation-unemployment-comparison": 4,
+      "movement-along-curve": 13,
+      "expectations-or-shift": 43,
+      "srpc-lrpc-or-natural-rate": 22
+    },
+    "repeatedTaskTemplates": [],
+    "productionSrpcCopies": [
+      {
+        "path": "build/faculty-build-composer/data/question-assets/short-run-phillips-curve/srpc.webp",
+        "bytes": 82128,
+        "sha256": "66ca8eff669f9d6dfc9d3f92fe68e6e3c3e3cb5147237de9e069226438955df4",
+        "corrected": true
+      },
+      {
+        "path": "build/faculty-build-composer/data/question-assets/phillips-curve-expectations/srpc.webp",
+        "bytes": 82128,
+        "sha256": "66ca8eff669f9d6dfc9d3f92fe68e6e3c3e3cb5147237de9e069226438955df4",
+        "corrected": true
+      },
+      {
+        "path": "build/faculty-build-composer/data/question-assets/long-run-phillips-curve/srpc.webp",
+        "bytes": 82128,
+        "sha256": "66ca8eff669f9d6dfc9d3f92fe68e6e3c3e3cb5147237de9e069226438955df4",
+        "corrected": true
+      },
+      {
+        "path": "build/faculty-build-composer/data/question-assets/integrated-macroeconomic-analysis/srpc.webp",
+        "bytes": 82128,
+        "sha256": "66ca8eff669f9d6dfc9d3f92fe68e6e3c3e3cb5147237de9e069226438955df4",
+        "corrected": true
+      },
+      {
+        "path": "play/economic-realm/stabilization-protocol/srpc.webp",
+        "bytes": 82128,
+        "sha256": "66ca8eff669f9d6dfc9d3f92fe68e6e3c3e3cb5147237de9e069226438955df4",
+        "corrected": true
+      }
+    ],
+    "oldDuplicateDHashAbsent": true,
+    "correctedLabelsVisuallyVerified": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "newGraphAssetsAdded": 0,
+    "assetIssues": [],
+    "accessibilityState": {
+      "records": [
+        {
+          "conceptId": "disinflation-and-policy",
+          "filename": "lrpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        },
+        {
+          "conceptId": "long-run-phillips-curve",
+          "filename": "lrpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        },
+        {
+          "conceptId": "long-run-phillips-curve",
+          "filename": "srpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        },
+        {
+          "conceptId": "phillips-curve-expectations",
+          "filename": "lrpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        },
+        {
+          "conceptId": "phillips-curve-expectations",
+          "filename": "srpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        },
+        {
+          "conceptId": "short-run-phillips-curve",
+          "filename": "lrpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        },
+        {
+          "conceptId": "short-run-phillips-curve",
+          "filename": "srpc.webp",
+          "imageAlt": false,
+          "graphDescription": false
+        }
+      ],
+      "missingMetadata": 7,
+      "deferredTo": "M3 macro-wide graph accessibility remediation"
+    }
+  },
+  "mathAudit": {
+    "numericRecordsValidated": 30,
+    "failures": 0,
+    "percentagePointDenominatorVerified": true,
+    "cumulativeVersusAnnualVerified": true,
+    "roundingRulesVerified": true,
+    "records": [
+      {
+        "questionId": "ECON-SP-ELITE-330",
+        "conceptId": "sacrifice-ratio",
+        "formula": "(12 − 7) × 3.5",
+        "independentResult": 17.5,
+        "publishedCorrectAnswer": "17.5 percent of one year's output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-ELITE-331",
+        "conceptId": "sacrifice-ratio",
+        "formula": "14 ÷ 4",
+        "independentResult": 3.5,
+        "publishedCorrectAnswer": "3.5% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-LEGENDARY-9020",
+        "conceptId": "sacrifice-ratio",
+        "formula": "18 ÷ (10 − 6)",
+        "independentResult": 4.5,
+        "publishedCorrectAnswer": "The sacrifice ratio is 4.5, showing a costly disinflation.",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-LEGENDARY-9049",
+        "conceptId": "sacrifice-ratio",
+        "formula": "10 ÷ (9 − 5)",
+        "independentResult": 2.5,
+        "publishedCorrectAnswer": "The sacrifice ratio is 2.5, so disinflation was costly but not extreme.",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-LEGENDARY-9021",
+        "conceptId": "sacrifice-ratio",
+        "formula": "5 × 2.8",
+        "independentResult": 14,
+        "publishedCorrectAnswer": "14 percent of one year's output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-LEGENDARY-9050",
+        "conceptId": "sacrifice-ratio",
+        "formula": "6 × 1.75",
+        "independentResult": 10.5,
+        "publishedCorrectAnswer": "10.5 percent of one year's output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-EASY-78",
+        "conceptId": "sacrifice-ratio",
+        "formula": "4 × 2",
+        "independentResult": 8,
+        "publishedCorrectAnswer": "8 percent of one year's output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-HARD-249",
+        "conceptId": "sacrifice-ratio",
+        "formula": "($24 billion ÷ $400 billion × 100) ÷ (8 − 5)",
+        "independentResult": 2,
+        "publishedCorrectAnswer": "2% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-HARD-250",
+        "conceptId": "sacrifice-ratio",
+        "formula": "12 ÷ 3",
+        "independentResult": 4,
+        "publishedCorrectAnswer": "4% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-MEDIUM-167",
+        "conceptId": "sacrifice-ratio",
+        "formula": "3 × (8 − 5)",
+        "independentResult": 9,
+        "publishedCorrectAnswer": "9 percent of one year's output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-SP-MEDIUMBOSS-3013",
+        "conceptId": "sacrifice-ratio",
+        "formula": "3 × 4",
+        "independentResult": 12,
+        "publishedCorrectAnswer": "12 percent of one year's output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-M-005",
+        "conceptId": "sacrifice-ratio",
+        "formula": "12 ÷ 3",
+        "independentResult": 4,
+        "publishedCorrectAnswer": "4% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-M-006",
+        "conceptId": "sacrifice-ratio",
+        "formula": "2.5 × 3",
+        "independentResult": 7.5,
+        "publishedCorrectAnswer": "7.5% of one year’s output",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-M-007",
+        "conceptId": "sacrifice-ratio",
+        "formula": "(1.5 + 2.5) ÷ 2",
+        "independentResult": 2,
+        "publishedCorrectAnswer": "2% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-M-008",
+        "conceptId": "sacrifice-ratio",
+        "formula": "8 − 5",
+        "independentResult": 3,
+        "publishedCorrectAnswer": "Cumulative output loss divided by 3 percentage points",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-M-009",
+        "conceptId": "sacrifice-ratio",
+        "formula": "A: 6 ÷ 3; B: 5 ÷ 2",
+        "independentResult": "2 versus 2.5",
+        "publishedCorrectAnswer": "Path A has a ratio of 2; Path B has a ratio of 2.5",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-H-010",
+        "conceptId": "sacrifice-ratio",
+        "formula": "[(.02 × 500) + 2(.01 × 500)] ÷ 4",
+        "independentResult": 5,
+        "publishedCorrectAnswer": "$5 billion per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-H-011",
+        "conceptId": "sacrifice-ratio",
+        "formula": "9 ÷ 3",
+        "independentResult": 3,
+        "publishedCorrectAnswer": "3 percentage points",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-H-013",
+        "conceptId": "sacrifice-ratio",
+        "formula": "6.5 ÷ 3, round half up to two decimals",
+        "independentResult": 2.17,
+        "publishedCorrectAnswer": "2.17% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": "Round to two decimal places.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-L-014",
+        "conceptId": "sacrifice-ratio",
+        "formula": "gradual: (2 + 1 + 0) ÷ 2; rapid: 4 ÷ 2",
+        "independentResult": "1.5 versus 2",
+        "publishedCorrectAnswer": "The gradual path ratio is 1.5; the fast path ratio is 2",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-L-015",
+        "conceptId": "sacrifice-ratio",
+        "formula": "A: 8 ÷ (9 − 5); B: 6 ÷ (5 − 2)",
+        "independentResult": "2 and 2",
+        "publishedCorrectAnswer": "A has a ratio of 2 and B also has a ratio of 2",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-MB-019",
+        "conceptId": "sacrifice-ratio",
+        "formula": "10 ÷ 4",
+        "independentResult": 2.5,
+        "publishedCorrectAnswer": "2.5% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-FB-020",
+        "conceptId": "sacrifice-ratio",
+        "formula": "(1 + 2 + 1) ÷ (7 − 5)",
+        "independentResult": 2,
+        "publishedCorrectAnswer": "2% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-FB-022",
+        "conceptId": "sacrifice-ratio",
+        "formula": "X: 7.2 ÷ 3; Y: 5 ÷ 2",
+        "independentResult": "2.4 versus 2.5",
+        "publishedCorrectAnswer": "Path X, with a ratio of 2.4 versus 2.5",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-LB-023",
+        "conceptId": "sacrifice-ratio",
+        "formula": "(2.4 + 1.8) ÷ (7.0 − 5.2), round to two decimals",
+        "independentResult": 2.33,
+        "publishedCorrectAnswer": "2.33% of one year’s output per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": "Round to two decimal places.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-LB-024",
+        "conceptId": "sacrifice-ratio",
+        "formula": "credible: 3 ÷ 2; other: 7.5 ÷ 3",
+        "independentResult": "1.5 versus 2.5",
+        "publishedCorrectAnswer": "The credible plan ratio is 1.5; the other is 2.5",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-SAC-LB-025",
+        "conceptId": "sacrifice-ratio",
+        "formula": "[(.015 × 800 × 2) + (.005 × 800)] ÷ 2.8",
+        "independentResult": 10,
+        "publishedCorrectAnswer": "$10 billion per inflation point",
+        "unitsExplicit": true,
+        "roundingRule": "Report the exact dollar amount per inflation point.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-DIS-L-010",
+        "conceptId": "disinflation-and-policy",
+        "formula": "6 ÷ 3",
+        "independentResult": 2,
+        "publishedCorrectAnswer": "The sacrifice ratio is 2, and the unemployment cost was temporary in the model",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-DIS-FB-016",
+        "conceptId": "disinflation-and-policy",
+        "formula": "rapid: 5 ÷ 2; gradual: 6 ÷ 3",
+        "independentResult": "2.5 versus 2",
+        "publishedCorrectAnswer": "The gradual plan has ratio 2 versus the rapid plan’s 2.5",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2A-DIS-LB-019",
+        "conceptId": "disinflation-and-policy",
+        "formula": "A: 8 ÷ 4; B: 4 ÷ 2.5",
+        "independentResult": "2 versus 1.6",
+        "publishedCorrectAnswer": "A has ratio 2; B has ratio 1.6, so B loses less output per point",
+        "unitsExplicit": true,
+        "roundingRule": null,
+        "status": "PASS"
+      }
+    ]
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2a_phillips/generated_packages/family/index.html",
+      "htmlSha256": "64edd43768831611f05f08f65f0ce9d1fd7aef06d38aff3bd3cf705542dba2e8",
+      "bytes": 2141425,
+      "counts": {
+        "easy": 33,
+        "medium": 31,
+        "hard": 37,
+        "elite": 16,
+        "legendary": 30,
+        "easyBoss": 15,
+        "mediumBoss": 15,
+        "finalBoss": 15,
+        "legendaryBoss": 15,
+        "repair": 15,
+        "repairSeed": 0,
+        "bridge": 16,
+        "calculation": 4,
+        "integration": 0,
+        "graph": 45,
+        "assets": 7,
+        "totalCanonical": 238
+      }
+    },
+    "srpc": {
+      "path": "validation_artifacts/macro_m2a_phillips/generated_packages/srpc/index.html",
+      "htmlSha256": "69351488adc8e4be8d4642992064bf020d77fcb33d763b5ac395246c8763cb9f",
+      "bytes": 821511,
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 5,
+        "repairSeed": 0,
+        "bridge": 4,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 13,
+        "assets": 2,
+        "totalCanonical": 50
+      }
+    },
+    "disinflation": {
+      "path": "validation_artifacts/macro_m2a_phillips/generated_packages/disinflation/index.html",
+      "htmlSha256": "9d759e39be0f0b09bf5415aef6b8cc9a89502f33602b4223066f5559066848aa",
+      "bytes": 581967,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 2,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 3,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 7,
+        "assets": 1,
+        "totalCanonical": 43
+      }
+    }
+  },
+  "browser": {
+    "passed": true,
+    "testedAt": "2026-08-10",
+    "browser": "Codex in-app browser",
+    "summary": "Family, SRPC-only, and disinflation-only generated packages started successfully in all five modes; Repair and Bridge routing, local save/resume, graph rendering, 30-room progression, and checkpoint structure were verified with zero console warnings or errors.",
+    "configurations": {
+      "family": {
+        "passed": true,
+        "modesStarted": [
+          "Standard Campaign",
+          "Timed Trial",
+          "Exam Drill",
+          "Legendary Mode",
+          "Score Attack"
+        ],
+        "roomsRendered": 30,
+        "checkpointRooms": [
+          10,
+          20,
+          30
+        ],
+        "repairRendered": true,
+        "bridgeRendered": true,
+        "saveResume": {
+          "passed": true,
+          "resumedMode": "Standard Campaign",
+          "resumedRoom": 2
+        },
+        "consoleErrors": 0,
+        "consoleWarnings": 0
+      },
+      "srpcOnly": {
+        "passed": true,
+        "modesStarted": [
+          "Standard Campaign",
+          "Timed Trial",
+          "Exam Drill",
+          "Legendary Mode",
+          "Score Attack"
+        ],
+        "roomsRendered": 30,
+        "graphRendered": true,
+        "correctedLabelsVerified": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "consoleErrors": 0,
+        "consoleWarnings": 0
+      },
+      "disinflationOnly": {
+        "passed": true,
+        "modesStarted": [
+          "Standard Campaign",
+          "Timed Trial",
+          "Exam Drill",
+          "Legendary Mode",
+          "Score Attack"
+        ],
+        "roomsRendered": 30,
+        "legendaryPromptVerified": true,
+        "consoleErrors": 0,
+        "consoleWarnings": 0
+      }
+    },
+    "knownNonBlockingIssues": [
+      "Seven inherited F10 graph-asset inventory entries do not yet include complete accessibility metadata; remediation remains assigned to M3 per the phase brief.",
+      "Two neighboring cross-family configurations contain pre-existing invalid Legendary bossStage metadata outside F10; M2a validation used production-valid interface subsets and did not alter protected non-F10 question banks."
+    ]
+  },
+  "verdict": "MACRO M2a COMPLETE WITH NON-BLOCKING ISSUES"
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-10T21:00:00.000Z",
+  "generatedAt": "2026-08-10T22:15:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -1189,12 +1189,15 @@
       "title": "Disinflation and Policy",
       "description": "Trace monetary disinflation, unemployment costs, and expectations adjustment.",
       "includedSkills": [
+        "credibility_expectations",
         "define_disinflation",
-        "disinflation",
         "disinflation_credibility",
+        "disinflation_definition",
+        "disinflation_policy",
         "disinflation_unemployment_cost",
-        "lrpc",
+        "long_run_adjustment",
         "monetary_policy_pc_transition",
+        "policy_path",
         "sacrifice_ratio_calculation",
         "sacrifice_ratio_definition"
       ],
@@ -1220,42 +1223,42 @@
         "stabilization-protocol"
       ],
       "questionCountByRole": {
-        "boss": 3,
-        "bridge": 2,
+        "boss": 9,
+        "bridge": 3,
         "calculation": 0,
         "elite": 2,
         "integration": 0,
-        "legendary": 3,
-        "legendaryBoss": 0,
-        "main": 10,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
         "elite": 2,
-        "hard": 5,
-        "legendary": 3,
-        "medium": 4,
-        "unknown": 4
+        "legendary": 9,
+        "unknown": 5
       },
       "repairCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 18
+        "mainWithUsableSkill": 43
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 18
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 43
       },
-      "calculationCoverage": 1,
-      "graphCoverage": 7,
+      "calculationCoverage": 4,
+      "graphCoverage": 9,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
+      "instructionalClassification": "Engine-safe family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in Phillips family",
+      "coverageStatusNote": "Phase M2a provides solo engine floors with controlled reuse and family-first instructional depth.",
+      "coverageFloorVersion": "phaseM2a-phillips-disinflation-family-maturation-v1"
     },
     {
       "canonicalConceptId": "economic-growth-policy",
@@ -3324,11 +3327,14 @@
         "expectations_long_run_return",
         "identify_lrpc",
         "identify_natural_unemployment",
+        "long_run_adjustment",
         "long_run_inflation_neutrality",
         "lrpc_natural_rate_shift",
+        "lrpc_vertical",
         "natural_rate_hypothesis",
-        "natural_unemployment",
+        "natural_rate_shift",
         "read_pc_points",
+        "sacrifice_ratio_meaning",
         "vertical_lrpc_comparison"
       ],
       "excludedNeighboringSkills": [
@@ -3355,42 +3361,42 @@
         "stabilization-protocol"
       ],
       "questionCountByRole": {
-        "boss": 3,
-        "bridge": 1,
+        "boss": 9,
+        "bridge": 3,
         "calculation": 0,
         "elite": 2,
         "integration": 0,
-        "legendary": 3,
-        "legendaryBoss": 0,
-        "main": 10,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
         "elite": 2,
-        "hard": 5,
-        "legendary": 3,
-        "medium": 4,
-        "unknown": 3
+        "legendary": 9,
+        "unknown": 5
       },
       "repairCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 18
+        "mainWithUsableSkill": 43
       },
       "bridgeCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 18
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 43
       },
       "calculationCoverage": 0,
-      "graphCoverage": 8,
+      "graphCoverage": 29,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
+      "instructionalClassification": "Engine-safe family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in Phillips family",
+      "coverageStatusNote": "Phase M2a provides solo engine floors with controlled reuse and family-first instructional depth.",
+      "coverageFloorVersion": "phaseM2a-phillips-disinflation-family-maturation-v1"
     },
     {
       "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
@@ -5189,8 +5195,10 @@
       "title": "Phillips-Curve Expectations",
       "description": "Analyze expected inflation and supply shocks as Phillips-curve shifters.",
       "includedSkills": [
+        "credibility_expectations",
+        "expectations_adjustment",
         "expected_inflation_shift",
-        "lrpc",
+        "lrpc_vertical",
         "srpc_shift",
         "supply_shock_pc_shift",
         "trace_expectations_adjustment"
@@ -5220,42 +5228,42 @@
         "stabilization-protocol"
       ],
       "questionCountByRole": {
-        "boss": 3,
+        "boss": 9,
         "bridge": 3,
         "calculation": 0,
         "elite": 4,
         "integration": 0,
-        "legendary": 3,
-        "legendaryBoss": 0,
-        "main": 22,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 23,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 5,
-        "elite": 4,
-        "hard": 11,
-        "legendary": 3,
+        "easy": 9,
         "medium": 9,
+        "hard": 14,
+        "elite": 4,
+        "legendary": 9,
         "unknown": 6
       },
       "repairCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 32
+        "mainWithUsableSkill": 51
       },
       "bridgeCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 32
+        "mainWithUsableSkill": 51
       },
       "calculationCoverage": 0,
-      "graphCoverage": 17,
+      "graphCoverage": 31,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
+      "instructionalClassification": "Engine-safe family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in Phillips family",
+      "coverageStatusNote": "Phase M2a provides solo engine floors with controlled reuse and family-first instructional depth.",
+      "coverageFloorVersion": "phaseM2a-phillips-disinflation-family-maturation-v1"
     },
     {
       "canonicalConceptId": "positive-versus-normative-analysis",
@@ -5864,9 +5872,13 @@
       "description": "Calculate and interpret output losses associated with disinflation.",
       "includedSkills": [
         "calculate_sacrifice_ratio",
+        "credibility_expectations",
         "define_sacrifice_ratio",
-        "disinflation_cost",
-        "interpret_sacrifice_ratio"
+        "interpret_sacrifice_ratio",
+        "policy_path",
+        "sacrifice_ratio_calculation",
+        "sacrifice_ratio_denominator",
+        "sacrifice_ratio_meaning"
       ],
       "excludedNeighboringSkills": [],
       "prerequisiteConceptIds": [
@@ -5884,42 +5896,42 @@
         "stabilization-protocol"
       ],
       "questionCountByRole": {
-        "boss": 2,
+        "boss": 9,
         "bridge": 3,
         "calculation": 4,
         "elite": 5,
         "integration": 0,
-        "legendary": 4,
-        "legendaryBoss": 0,
-        "main": 5,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 3,
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
         "elite": 5,
-        "hard": 4,
-        "legendary": 4,
-        "medium": 4,
+        "legendary": 9,
         "unknown": 6
       },
       "repairCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 16
+        "mainWithUsableSkill": 51
       },
       "bridgeCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 16
+        "mainWithUsableSkill": 51
       },
-      "calculationCoverage": 10,
+      "calculationCoverage": 28,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Supplemental concept",
-      "coverageStatus": "supplemental-ready",
-      "coverageStatusLabel": "Supplemental — useful in a combined game",
-      "coverageStatusNote": "Targeted enrichment only: add discriminating application, challenge/mastery, or integration items where useful; do not force every difficulty or checkpoint pool.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
+      "instructionalClassification": "Engine-safe family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in Phillips family",
+      "coverageStatusNote": "Phase M2a provides solo engine floors with controlled reuse and family-first instructional depth.",
+      "coverageFloorVersion": "phaseM2a-phillips-disinflation-family-maturation-v1"
     },
     {
       "canonicalConceptId": "scarcity-and-tradeoffs",
@@ -6011,12 +6023,18 @@
       "description": "Interpret movements along the short-run inflation–unemployment tradeoff.",
       "includedSkills": [
         "define_phillips_curve",
+        "disinflation_policy",
+        "expectations_adjustment",
+        "long_run_adjustment",
+        "lrpc_vertical",
         "move_along_srpc",
         "movement_vs_shift_srpc",
         "natural_rate_hypothesis",
         "read_pc_axes",
         "read_pc_points",
-        "short_run_tradeoff",
+        "srpc_movement",
+        "srpc_relation",
+        "srpc_shift",
         "trace_expectations_adjustment"
       ],
       "excludedNeighboringSkills": [
@@ -6043,42 +6061,42 @@
         "stabilization-protocol"
       ],
       "questionCountByRole": {
-        "boss": 3,
+        "boss": 9,
         "bridge": 4,
         "calculation": 0,
         "elite": 3,
         "integration": 0,
-        "legendary": 3,
-        "legendaryBoss": 0,
-        "main": 17,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 20,
         "repair": 5,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 8,
+        "easy": 11,
+        "medium": 9,
+        "hard": 9,
         "elite": 3,
-        "hard": 5,
-        "legendary": 3,
-        "medium": 7,
+        "legendary": 9,
         "unknown": 9
       },
       "repairCoverage": {
         "directSkillMatches": 5,
-        "mainWithUsableSkill": 26
+        "mainWithUsableSkill": 50
       },
       "bridgeCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 26
+        "mainWithUsableSkill": 50
       },
       "calculationCoverage": 0,
-      "graphCoverage": 13,
+      "graphCoverage": 32,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
+      "instructionalClassification": "Engine-safe family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in Phillips family",
+      "coverageStatusNote": "Phase M2a provides solo engine floors with controlled reuse and family-first instructional depth.",
+      "coverageFloorVersion": "phaseM2a-phillips-disinflation-family-maturation-v1"
     },
     {
       "canonicalConceptId": "sources-of-productivity",
@@ -6842,7 +6860,7 @@
   ],
   "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
   "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1",
-  "canonicalQuestionCount": 6850,
-  "librarySha256": "b7faf8d1cac32457ef636c40ed784832536966b9417f64b3cce0f8e0ebc282bb"
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1",
+  "canonicalQuestionCount": 6946,
+  "librarySha256": "17e7af52d60e0e9aacb0f6256b2b5eb2f2ad7a3bb6c14338d4f2669d891dcaba"
 }
