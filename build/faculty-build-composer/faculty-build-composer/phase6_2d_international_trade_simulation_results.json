@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "sessions": 20000,
+  "modeSessions": {
+    "standard": 4000,
+    "timed": 4000,
+    "exam": 4000,
+    "legendary": 4000,
+    "score": 4000
+  },
+  "attempts": 600000,
+  "modeAttempts": {
+    "standard": 120000,
+    "timed": 120000,
+    "exam": 120000,
+    "legendary": 120000,
+    "score": 120000
+  },
+  "questionReachability": {
+    "reached": 370,
+    "total": 370,
+    "unreached": [],
+    "minimumHits": 309,
+    "maximumHits": 3687
+  },
+  "immediateRepeats": 0,
+  "cloneShuffle": {
+    "checks": 37000,
+    "failures": []
+  },
+  "saveResumeSerialization": {
+    "roundTrips": 2000,
+    "failures": []
+  },
+  "limitations": [
+    "Selection simulation validates pool reachability and no-immediate-repeat behavior; it is not a substitute for manual browser play.",
+    "Save/resume testing validates JSON state fidelity; it does not automate browser localStorage UI interactions."
+  ]
+}

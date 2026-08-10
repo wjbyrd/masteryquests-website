@@ -1,0 +1,562 @@
+{
+  "ok": true,
+  "generatedAt": "2026-08-05T14:19:04Z",
+  "poolCounts": {
+    "easy": 30,
+    "medium": 30,
+    "hard": 30,
+    "elite": 30,
+    "legendary": 90,
+    "calculation": 30,
+    "repair": 20,
+    "bridge": 20,
+    "easyBoss": 18,
+    "mediumBoss": 18,
+    "finalBoss": 18,
+    "legendaryBoss": 36
+  },
+  "total": 370,
+  "uniqueIds": 370,
+  "uniqueNormalizedStems": 370,
+  "answerPositionCounts": {
+    "0": 93,
+    "1": 93,
+    "2": 92,
+    "3": 92
+  },
+  "answerHashFailures": [],
+  "duplicateOptionQuestions": [],
+  "answerLengthBias": {
+    "correctIsLongest": 166,
+    "correctIsUniquelyLongest": 106,
+    "shareUniquelyLongest": 0.286,
+    "controlledAdjustments": 100
+  },
+  "nearDuplicatePairsAt094": 73,
+  "nearDuplicateReview": [
+    {
+      "id1": 690101,
+      "id2": 690103,
+      "ratio": 0.969,
+      "stem1": "At price $18, a firm is producing 3 units and the next unit has MC $16. What should the firm do?",
+      "stem2": "At price $24, a firm is producing 3 units and the next unit has MC $21. What should the firm do?"
+    },
+    {
+      "id1": 690101,
+      "id2": 690105,
+      "ratio": 0.958,
+      "stem1": "At price $18, a firm is producing 3 units and the next unit has MC $16. What should the firm do?",
+      "stem2": "At price $30, a firm is producing 3 units and the next unit has MC $28. What should the firm do?"
+    },
+    {
+      "id1": 690101,
+      "id2": 690107,
+      "ratio": 0.979,
+      "stem1": "At price $18, a firm is producing 3 units and the next unit has MC $16. What should the firm do?",
+      "stem2": "At price $15, a firm is producing 3 units and the next unit has MC $14. What should the firm do?"
+    },
+    {
+      "id1": 690101,
+      "id2": 690109,
+      "ratio": 0.958,
+      "stem1": "At price $18, a firm is producing 3 units and the next unit has MC $16. What should the firm do?",
+      "stem2": "At price $27, a firm is producing 3 units and the next unit has MC $25. What should the firm do?"
+    },
+    {
+      "id1": 690103,
+      "id2": 690105,
+      "ratio": 0.969,
+      "stem1": "At price $24, a firm is producing 3 units and the next unit has MC $21. What should the firm do?",
+      "stem2": "At price $30, a firm is producing 3 units and the next unit has MC $28. What should the firm do?"
+    },
+    {
+      "id1": 690103,
+      "id2": 690107,
+      "ratio": 0.969,
+      "stem1": "At price $24, a firm is producing 3 units and the next unit has MC $21. What should the firm do?",
+      "stem2": "At price $15, a firm is producing 3 units and the next unit has MC $14. What should the firm do?"
+    },
+    {
+      "id1": 690103,
+      "id2": 690109,
+      "ratio": 0.979,
+      "stem1": "At price $24, a firm is producing 3 units and the next unit has MC $21. What should the firm do?",
+      "stem2": "At price $27, a firm is producing 3 units and the next unit has MC $25. What should the firm do?"
+    },
+    {
+      "id1": 690105,
+      "id2": 690107,
+      "ratio": 0.958,
+      "stem1": "At price $30, a firm is producing 3 units and the next unit has MC $28. What should the firm do?",
+      "stem2": "At price $15, a firm is producing 3 units and the next unit has MC $14. What should the firm do?"
+    },
+    {
+      "id1": 690105,
+      "id2": 690109,
+      "ratio": 0.969,
+      "stem1": "At price $30, a firm is producing 3 units and the next unit has MC $28. What should the firm do?",
+      "stem2": "At price $27, a firm is producing 3 units and the next unit has MC $25. What should the firm do?"
+    },
+    {
+      "id1": 690107,
+      "id2": 690109,
+      "ratio": 0.958,
+      "stem1": "At price $15, a firm is producing 3 units and the next unit has MC $14. What should the firm do?",
+      "stem2": "At price $27, a firm is producing 3 units and the next unit has MC $25. What should the firm do?"
+    },
+    {
+      "id1": 690110,
+      "id2": 690112,
+      "ratio": 0.96,
+      "stem1": "At its MR=MC output of 50 units, a competitive firm has P=$40, ATC=$32, and AVC=$22. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 60 units, a competitive firm has P=$28, ATC=$34, and AVC=$20. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690110,
+      "id2": 690114,
+      "ratio": 0.96,
+      "stem1": "At its MR=MC output of 50 units, a competitive firm has P=$40, ATC=$32, and AVC=$22. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 45 units, a competitive firm has P=$24, ATC=$24, and AVC=$17. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690110,
+      "id2": 690116,
+      "ratio": 0.952,
+      "stem1": "At its MR=MC output of 50 units, a competitive firm has P=$40, ATC=$32, and AVC=$22. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 55 units, a competitive firm has P=$19, ATC=$28, and AVC=$16. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690110,
+      "id2": 690118,
+      "ratio": 0.96,
+      "stem1": "At its MR=MC output of 50 units, a competitive firm has P=$40, ATC=$32, and AVC=$22. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 40 units, a competitive firm has P=$14, ATC=$26, and AVC=$18. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690111,
+      "id2": 690113,
+      "ratio": 0.961,
+      "stem1": "A competitive firm produces 50 units at price $40. ATC at that output is $32. What is profit per unit?",
+      "stem2": "A competitive firm produces 60 units at price $28. ATC at that output is $34. What is profit per unit?"
+    },
+    {
+      "id1": 690111,
+      "id2": 690115,
+      "ratio": 0.971,
+      "stem1": "A competitive firm produces 50 units at price $40. ATC at that output is $32. What is profit per unit?",
+      "stem2": "A competitive firm produces 45 units at price $24. ATC at that output is $24. What is profit per unit?"
+    },
+    {
+      "id1": 690111,
+      "id2": 690117,
+      "ratio": 0.961,
+      "stem1": "A competitive firm produces 50 units at price $40. ATC at that output is $32. What is profit per unit?",
+      "stem2": "A competitive firm produces 55 units at price $19. ATC at that output is $28. What is profit per unit?"
+    },
+    {
+      "id1": 690111,
+      "id2": 690119,
+      "ratio": 0.971,
+      "stem1": "A competitive firm produces 50 units at price $40. ATC at that output is $32. What is profit per unit?",
+      "stem2": "A competitive firm produces 40 units at price $14. ATC at that output is $26. What is profit per unit?"
+    },
+    {
+      "id1": 690112,
+      "id2": 690114,
+      "ratio": 0.952,
+      "stem1": "At its MR=MC output of 60 units, a competitive firm has P=$28, ATC=$34, and AVC=$20. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 45 units, a competitive firm has P=$24, ATC=$24, and AVC=$17. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690112,
+      "id2": 690118,
+      "ratio": 0.944,
+      "stem1": "At its MR=MC output of 60 units, a competitive firm has P=$28, ATC=$34, and AVC=$20. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 40 units, a competitive firm has P=$14, ATC=$26, and AVC=$18. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690113,
+      "id2": 690115,
+      "ratio": 0.961,
+      "stem1": "A competitive firm produces 60 units at price $28. ATC at that output is $34. What is profit per unit?",
+      "stem2": "A competitive firm produces 45 units at price $24. ATC at that output is $24. What is profit per unit?"
+    },
+    {
+      "id1": 690113,
+      "id2": 690117,
+      "ratio": 0.941,
+      "stem1": "A competitive firm produces 60 units at price $28. ATC at that output is $34. What is profit per unit?",
+      "stem2": "A competitive firm produces 55 units at price $19. ATC at that output is $28. What is profit per unit?"
+    },
+    {
+      "id1": 690113,
+      "id2": 690119,
+      "ratio": 0.951,
+      "stem1": "A competitive firm produces 60 units at price $28. ATC at that output is $34. What is profit per unit?",
+      "stem2": "A competitive firm produces 40 units at price $14. ATC at that output is $26. What is profit per unit?"
+    },
+    {
+      "id1": 690114,
+      "id2": 690116,
+      "ratio": 0.96,
+      "stem1": "At its MR=MC output of 45 units, a competitive firm has P=$24, ATC=$24, and AVC=$17. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 55 units, a competitive firm has P=$19, ATC=$28, and AVC=$16. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690114,
+      "id2": 690118,
+      "ratio": 0.968,
+      "stem1": "At its MR=MC output of 45 units, a competitive firm has P=$24, ATC=$24, and AVC=$17. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 40 units, a competitive firm has P=$14, ATC=$26, and AVC=$18. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690115,
+      "id2": 690117,
+      "ratio": 0.961,
+      "stem1": "A competitive firm produces 45 units at price $24. ATC at that output is $24. What is profit per unit?",
+      "stem2": "A competitive firm produces 55 units at price $19. ATC at that output is $28. What is profit per unit?"
+    },
+    {
+      "id1": 690115,
+      "id2": 690119,
+      "ratio": 0.971,
+      "stem1": "A competitive firm produces 45 units at price $24. ATC at that output is $24. What is profit per unit?",
+      "stem2": "A competitive firm produces 40 units at price $14. ATC at that output is $26. What is profit per unit?"
+    },
+    {
+      "id1": 690116,
+      "id2": 690118,
+      "ratio": 0.96,
+      "stem1": "At its MR=MC output of 55 units, a competitive firm has P=$19, ATC=$28, and AVC=$16. What is the correct short-run conclusion?",
+      "stem2": "At its MR=MC output of 40 units, a competitive firm has P=$14, ATC=$26, and AVC=$18. What is the correct short-run conclusion?"
+    },
+    {
+      "id1": 690117,
+      "id2": 690119,
+      "ratio": 0.961,
+      "stem1": "A competitive firm produces 55 units at price $19. ATC at that output is $28. What is profit per unit?",
+      "stem2": "A competitive firm produces 40 units at price $14. ATC at that output is $26. What is profit per unit?"
+    },
+    {
+      "id1": 690202,
+      "id2": 690207,
+      "ratio": 0.947,
+      "stem1": "Delta Berries is a price-taking firm. Price is $28, fixed cost is $220, and marginal costs for units 1–6 are $7, $11, $16, $22, $29, $37. Which statement correctly combines output and economic profit?",
+      "stem2": "Mesa Beans is a price-taking firm. Price is $28, fixed cost is $320, and marginal costs for units 1–6 are $6, $12, $16, $23, $29, $36. Which statement correctly combines output and economic profit?"
+    },
+    {
+      "id1": 691045,
+      "id2": 691046,
+      "ratio": 0.957,
+      "stem1": "Long-run industry assessment 1: Demand rises permanently in a constant-cost industry. Which conclusion is strongest?",
+      "stem2": "Long-run industry assessment 2: Demand falls permanently in a constant-cost industry. Which conclusion is strongest?"
+    },
+    {
+      "id1": 691047,
+      "id2": 691048,
+      "ratio": 0.953,
+      "stem1": "Long-run industry assessment 3: Demand rises in an increasing-cost industry. Which conclusion is strongest?",
+      "stem2": "Long-run industry assessment 4: Demand falls in an increasing-cost industry. Which conclusion is strongest?"
+    },
+    {
+      "id1": 691047,
+      "id2": 691049,
+      "ratio": 0.967,
+      "stem1": "Long-run industry assessment 3: Demand rises in an increasing-cost industry. Which conclusion is strongest?",
+      "stem2": "Long-run industry assessment 5: Demand rises in a decreasing-cost industry. Which conclusion is strongest?"
+    },
+    {
+      "id1": 691048,
+      "id2": 691050,
+      "ratio": 0.967,
+      "stem1": "Long-run industry assessment 4: Demand falls in an increasing-cost industry. Which conclusion is strongest?",
+      "stem2": "Long-run industry assessment 6: Demand falls in a decreasing-cost industry. Which conclusion is strongest?"
+    },
+    {
+      "id1": 691049,
+      "id2": 691050,
+      "ratio": 0.953,
+      "stem1": "Long-run industry assessment 5: Demand rises in a decreasing-cost industry. Which conclusion is strongest?",
+      "stem2": "Long-run industry assessment 6: Demand falls in a decreasing-cost industry. Which conclusion is strongest?"
+    },
+    {
+      "id1": 692000,
+      "id2": 692001,
+      "ratio": 0.944,
+      "stem1": "A competitive firm sells 35 units at price $14. Calculate total revenue.",
+      "stem2": "A competitive firm sells 48 units at price $22. Calculate total revenue."
+    },
+    {
+      "id1": 692000,
+      "id2": 692002,
+      "ratio": 0.951,
+      "stem1": "A competitive firm sells 35 units at price $14. Calculate total revenue.",
+      "stem2": "A competitive firm sells 80 units at price $9. Calculate total revenue."
+    },
+    {
+      "id1": 692000,
+      "id2": 692003,
+      "ratio": 0.958,
+      "stem1": "A competitive firm sells 35 units at price $14. Calculate total revenue.",
+      "stem2": "A competitive firm sells 26 units at price $31. Calculate total revenue."
+    },
+    {
+      "id1": 692001,
+      "id2": 692002,
+      "ratio": 0.965,
+      "stem1": "A competitive firm sells 48 units at price $22. Calculate total revenue.",
+      "stem2": "A competitive firm sells 80 units at price $9. Calculate total revenue."
+    },
+    {
+      "id1": 692001,
+      "id2": 692003,
+      "ratio": 0.944,
+      "stem1": "A competitive firm sells 48 units at price $22. Calculate total revenue.",
+      "stem2": "A competitive firm sells 26 units at price $31. Calculate total revenue."
+    },
+    {
+      "id1": 692002,
+      "id2": 692003,
+      "ratio": 0.951,
+      "stem1": "A competitive firm sells 80 units at price $9. Calculate total revenue.",
+      "stem2": "A competitive firm sells 26 units at price $31. Calculate total revenue."
+    },
+    {
+      "id1": 692009,
+      "id2": 692011,
+      "ratio": 0.948,
+      "stem1": "A competitive firm sells 40 units at $18 each and total cost is $620. Calculate economic profit.",
+      "stem2": "A competitive firm sells 28 units at $30 each and total cost is $760. Calculate economic profit."
+    },
+    {
+      "id1": 692009,
+      "id2": 692012,
+      "ratio": 0.958,
+      "stem1": "A competitive firm sells 40 units at $18 each and total cost is $620. Calculate economic profit.",
+      "stem2": "A competitive firm sells 50 units at $16 each and total cost is $900. Calculate economic profit."
+    },
+    {
+      "id1": 692010,
+      "id2": 692011,
+      "ratio": 0.958,
+      "stem1": "A competitive firm sells 32 units at $25 each and total cost is $700. Calculate economic profit.",
+      "stem2": "A competitive firm sells 28 units at $30 each and total cost is $760. Calculate economic profit."
+    },
+    {
+      "id1": 692010,
+      "id2": 692012,
+      "ratio": 0.948,
+      "stem1": "A competitive firm sells 32 units at $25 each and total cost is $700. Calculate economic profit.",
+      "stem2": "A competitive firm sells 50 units at $16 each and total cost is $900. Calculate economic profit."
+    },
+    {
+      "id1": 692017,
+      "id2": 692018,
+      "ratio": 0.954,
+      "stem1": "At its chosen output, a firm has P=$26, ATC=$32, and Q=50. Calculate the economic loss.",
+      "stem2": "At its chosen output, a firm has P=$19, ATC=$27, and Q=65. Calculate the economic loss."
+    },
+    {
+      "id1": 692017,
+      "id2": 692019,
+      "ratio": 0.954,
+      "stem1": "At its chosen output, a firm has P=$26, ATC=$32, and Q=50. Calculate the economic loss.",
+      "stem2": "At its chosen output, a firm has P=$31, ATC=$35, and Q=80. Calculate the economic loss."
+    },
+    {
+      "id1": 692018,
+      "id2": 692019,
+      "ratio": 0.943,
+      "stem1": "At its chosen output, a firm has P=$19, ATC=$27, and Q=65. Calculate the economic loss.",
+      "stem2": "At its chosen output, a firm has P=$31, ATC=$35, and Q=80. Calculate the economic loss."
+    },
+    {
+      "id1": 692020,
+      "id2": 692021,
+      "ratio": 0.951,
+      "stem1": "A firm faces P=$17, minimum AVC=$19, and fixed cost $400. Apply the shutdown rule.",
+      "stem2": "A firm faces P=$23, minimum AVC=$18, and fixed cost $600. Apply the shutdown rule."
+    },
+    {
+      "id1": 692020,
+      "id2": 692022,
+      "ratio": 0.951,
+      "stem1": "A firm faces P=$17, minimum AVC=$19, and fixed cost $400. Apply the shutdown rule.",
+      "stem2": "A firm faces P=$15, minimum AVC=$15, and fixed cost $350. Apply the shutdown rule."
+    },
+    {
+      "id1": 693006,
+      "id2": 693007,
+      "ratio": 0.985,
+      "stem1": "MR is $25 and the next unit’s MC is $19. What should the firm do?",
+      "stem2": "MR is $25 and the next unit’s MC is $31. What should the firm do?"
+    },
+    {
+      "id1": 694204,
+      "id2": 694205,
+      "ratio": 0.941,
+      "stem1": "A permanent demand increase in an increasing-cost industry causes long-run price to:",
+      "stem2": "A permanent demand increase in a decreasing-cost industry can cause long-run price to:"
+    },
+    {
+      "id1": 695006,
+      "id2": 695007,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 1: P=$42, ATC=$34, AVC=$22, Q at rising P=MC is 70, and TFC=$840. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 2: P=$31, ATC=$37, AVC=$21, Q at rising P=MC is 65, and TFC=$1,040. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695006,
+      "id2": 695008,
+      "ratio": 0.95,
+      "stem1": "Boss operating case 1: P=$42, ATC=$34, AVC=$22, Q at rising P=MC is 70, and TFC=$840. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 3: P=$26, ATC=$26, AVC=$18, Q at rising P=MC is 80, and TFC=$640. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695006,
+      "id2": 695011,
+      "ratio": 0.95,
+      "stem1": "Boss operating case 1: P=$42, ATC=$34, AVC=$22, Q at rising P=MC is 70, and TFC=$840. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 6: P=$24, ATC=$32, AVC=$24, Q at rising P=MC is 55, and TFC=$770. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695007,
+      "id2": 695010,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 2: P=$31, ATC=$37, AVC=$21, Q at rising P=MC is 65, and TFC=$1,040. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 5: P=$15, ATC=$28, AVC=$19, Q at rising P=MC is 60, and TFC=$720. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695007,
+      "id2": 695011,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 2: P=$31, ATC=$37, AVC=$21, Q at rising P=MC is 65, and TFC=$1,040. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 6: P=$24, ATC=$32, AVC=$24, Q at rising P=MC is 55, and TFC=$770. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695008,
+      "id2": 695009,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 3: P=$26, ATC=$26, AVC=$18, Q at rising P=MC is 80, and TFC=$640. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 4: P=$20, ATC=$29, AVC=$16, Q at rising P=MC is 75, and TFC=$975. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695008,
+      "id2": 695010,
+      "ratio": 0.95,
+      "stem1": "Boss operating case 3: P=$26, ATC=$26, AVC=$18, Q at rising P=MC is 80, and TFC=$640. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 5: P=$15, ATC=$28, AVC=$19, Q at rising P=MC is 60, and TFC=$720. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695008,
+      "id2": 695011,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 3: P=$26, ATC=$26, AVC=$18, Q at rising P=MC is 80, and TFC=$640. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 6: P=$24, ATC=$32, AVC=$24, Q at rising P=MC is 55, and TFC=$770. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695009,
+      "id2": 695010,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 4: P=$20, ATC=$29, AVC=$16, Q at rising P=MC is 75, and TFC=$975. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 5: P=$15, ATC=$28, AVC=$19, Q at rising P=MC is 60, and TFC=$720. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695009,
+      "id2": 695011,
+      "ratio": 0.95,
+      "stem1": "Boss operating case 4: P=$20, ATC=$29, AVC=$16, Q at rising P=MC is 75, and TFC=$975. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 6: P=$24, ATC=$32, AVC=$24, Q at rising P=MC is 55, and TFC=$770. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695010,
+      "id2": 695011,
+      "ratio": 0.944,
+      "stem1": "Boss operating case 5: P=$15, ATC=$28, AVC=$19, Q at rising P=MC is 60, and TFC=$720. Which answer correctly covers the short-run outcome and long-run pressure?",
+      "stem2": "Boss operating case 6: P=$24, ATC=$32, AVC=$24, Q at rising P=MC is 55, and TFC=$770. Which answer correctly covers the short-run outcome and long-run pressure?"
+    },
+    {
+      "id1": 695018,
+      "id2": 695021,
+      "ratio": 0.962,
+      "stem1": "Boss industry case 1: demand rises permanently in a constant-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 4: demand falls permanently in a constant-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695019,
+      "id2": 695020,
+      "ratio": 0.977,
+      "stem1": "Boss industry case 2: demand rises permanently in a increasing-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 3: demand rises permanently in a decreasing-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695019,
+      "id2": 695022,
+      "ratio": 0.962,
+      "stem1": "Boss industry case 2: demand rises permanently in a increasing-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 5: demand falls permanently in a increasing-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695019,
+      "id2": 695023,
+      "ratio": 0.947,
+      "stem1": "Boss industry case 2: demand rises permanently in a increasing-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 6: demand falls permanently in a decreasing-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695020,
+      "id2": 695022,
+      "ratio": 0.947,
+      "stem1": "Boss industry case 3: demand rises permanently in a decreasing-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 5: demand falls permanently in a increasing-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695020,
+      "id2": 695023,
+      "ratio": 0.962,
+      "stem1": "Boss industry case 3: demand rises permanently in a decreasing-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 6: demand falls permanently in a decreasing-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695022,
+      "id2": 695023,
+      "ratio": 0.977,
+      "stem1": "Boss industry case 5: demand falls permanently in a increasing-cost competitive industry. Which full adjustment statement is correct?",
+      "stem2": "Boss industry case 6: demand falls permanently in a decreasing-cost competitive industry. Which full adjustment statement is correct?"
+    },
+    {
+      "id1": 695030,
+      "id2": 695031,
+      "ratio": 0.974,
+      "stem1": "Boss benchmark case 1: P=MC and P=min ATC. Which interpretation is strongest?",
+      "stem2": "Boss benchmark case 2: P=MC and P>min ATC. Which interpretation is strongest?"
+    },
+    {
+      "id1": 695030,
+      "id2": 695032,
+      "ratio": 0.974,
+      "stem1": "Boss benchmark case 1: P=MC and P=min ATC. Which interpretation is strongest?",
+      "stem2": "Boss benchmark case 3: P>MC and P=min ATC. Which interpretation is strongest?"
+    },
+    {
+      "id1": 695031,
+      "id2": 695032,
+      "ratio": 0.961,
+      "stem1": "Boss benchmark case 2: P=MC and P>min ATC. Which interpretation is strongest?",
+      "stem2": "Boss benchmark case 3: P>MC and P=min ATC. Which interpretation is strongest?"
+    }
+  ],
+  "graphLinkedQuestions": 124,
+  "graphAssets": 34,
+  "missingGraphAssets": [],
+  "sourceIdCollisions": [],
+  "prohibitedNeighboringModelHits": [],
+  "mathIssues": [],
+  "formulaChecks": {
+    "TR_equals_P_times_Q": "generator-enforced",
+    "profit_equals_TR_minus_TC": "generator-enforced",
+    "profit_rectangle_equals_P_minus_ATC_times_Q": "generator-enforced",
+    "shutdown_uses_AVC": "content-audited",
+    "short_run_supply_is_MC_above_AVC": "content-audited"
+  }
+}

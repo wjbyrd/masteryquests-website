@@ -1,0 +1,470 @@
+{
+  "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
+  "tests": [
+    {
+      "name": "Comparative Advantage Standalone",
+      "selectedConceptIds": [
+        "gains-from-trade"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 3,
+        "repairSeed": 1,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 46
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 46,
+        "issues": []
+      }
+    },
+    {
+      "name": "Core Rescue Mix",
+      "selectedConceptIds": [
+        "competitive-markets",
+        "price-signals",
+        "market-failures",
+        "incentives"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 17,
+        "medium": 16,
+        "hard": 16,
+        "elite": 8,
+        "legendary": 15,
+        "easyBoss": 9,
+        "mediumBoss": 12,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 8,
+        "repairSeed": 5,
+        "bridge": 4,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 116
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 116,
+        "issues": []
+      }
+    },
+    {
+      "name": "Supplemental Rescue Mix",
+      "selectedConceptIds": [
+        "economist-policy-role",
+        "models-and-assumptions",
+        "micro-versus-macro",
+        "gains-from-trade"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 18,
+        "medium": 18,
+        "hard": 17,
+        "elite": 10,
+        "legendary": 16,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 6,
+        "repair": 9,
+        "repairSeed": 4,
+        "bridge": 5,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 112
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 112,
+        "issues": []
+      }
+    },
+    {
+      "name": "All Rescue Concepts",
+      "selectedConceptIds": [
+        "gains-from-trade",
+        "economist-policy-role",
+        "competitive-markets",
+        "price-signals",
+        "models-and-assumptions",
+        "market-failures",
+        "micro-versus-macro",
+        "incentives"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 35,
+        "medium": 34,
+        "hard": 33,
+        "elite": 18,
+        "legendary": 31,
+        "easyBoss": 12,
+        "mediumBoss": 15,
+        "finalBoss": 6,
+        "legendaryBoss": 9,
+        "repair": 17,
+        "repairSeed": 9,
+        "bridge": 9,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 228
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 228,
+        "issues": []
+      }
+    }
+  ],
+  "legacyRecipes": [
+    {
+      "name": "exam-only-minimal.json",
+      "errors": [],
+      "warnings": 1,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 53,
+        "issues": []
+      },
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    },
+    {
+      "name": "legendary-only.json",
+      "errors": [],
+      "warnings": 1,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 24,
+        "issues": []
+      },
+      "counts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 24
+      }
+    },
+    {
+      "name": "market-foundations.json",
+      "errors": [],
+      "warnings": 5,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 2133,
+        "issues": []
+      },
+      "counts": {
+        "easy": 280,
+        "medium": 300,
+        "hard": 302,
+        "elite": 209,
+        "legendary": 280,
+        "easyBoss": 103,
+        "mediumBoss": 109,
+        "finalBoss": 111,
+        "legendaryBoss": 108,
+        "repair": 189,
+        "repairSeed": 15,
+        "bridge": 127,
+        "calculation": 139,
+        "integration": 0,
+        "graph": 265,
+        "assets": 30,
+        "totalCanonical": 2133
+      }
+    },
+    {
+      "name": "mixed-custom-course.json",
+      "errors": [],
+      "warnings": 2,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 504,
+        "issues": []
+      },
+      "counts": {
+        "easy": 59,
+        "medium": 74,
+        "hard": 79,
+        "elite": 51,
+        "legendary": 60,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
+        "legendaryBoss": 23,
+        "repair": 41,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 504
+      }
+    },
+    {
+      "name": "money-and-stabilization.json",
+      "errors": [],
+      "warnings": 3,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 1331,
+        "issues": []
+      },
+      "counts": {
+        "easy": 171,
+        "medium": 167,
+        "hard": 186,
+        "elite": 157,
+        "legendary": 164,
+        "easyBoss": 48,
+        "mediumBoss": 66,
+        "finalBoss": 63,
+        "legendaryBoss": 81,
+        "repair": 147,
+        "repairSeed": 0,
+        "bridge": 81,
+        "calculation": 82,
+        "integration": 10,
+        "graph": 236,
+        "assets": 33,
+        "totalCanonical": 1331
+      }
+    },
+    {
+      "name": "national-economy.json",
+      "errors": [],
+      "warnings": 3,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 733,
+        "issues": []
+      },
+      "counts": {
+        "easy": 93,
+        "medium": 95,
+        "hard": 92,
+        "elite": 81,
+        "legendary": 91,
+        "easyBoss": 55,
+        "mediumBoss": 45,
+        "finalBoss": 51,
+        "legendaryBoss": 35,
+        "repair": 58,
+        "repairSeed": 0,
+        "bridge": 37,
+        "calculation": 67,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 733
+      }
+    },
+    {
+      "name": "standard-and-score.json",
+      "errors": [],
+      "warnings": 2,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 504,
+        "issues": []
+      },
+      "counts": {
+        "easy": 59,
+        "medium": 74,
+        "hard": 79,
+        "elite": 51,
+        "legendary": 60,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
+        "legendaryBoss": 23,
+        "repair": 41,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 504
+      }
+    },
+    {
+      "name": "timed-and-exam.json",
+      "errors": [],
+      "warnings": 1,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 53,
+        "issues": []
+      },
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    }
+  ],
+  "statuses": [
+    {
+      "id": "gains-from-trade",
+      "title": "Comparative Advantage and Gains from Trade",
+      "classification": "Standalone-ready",
+      "status": "ready-focused",
+      "label": "Ready for focused use"
+    },
+    {
+      "id": "economist-policy-role",
+      "title": "Economists and Policy",
+      "classification": "Supplemental concept",
+      "status": "supplemental-ready",
+      "label": "Supplemental — useful in a combined game"
+    },
+    {
+      "id": "competitive-markets",
+      "title": "Competitive Markets",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "price-signals",
+      "title": "Price Signals",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "models-and-assumptions",
+      "title": "Models and Assumptions",
+      "classification": "Supplemental concept",
+      "status": "supplemental-ready",
+      "label": "Supplemental — useful in a combined game"
+    },
+    {
+      "id": "market-failures",
+      "title": "Market Failures",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "micro-versus-macro",
+      "title": "Microeconomics versus Macroeconomics",
+      "classification": "Supplemental concept",
+      "status": "supplemental-ready",
+      "label": "Supplemental — useful in a combined game"
+    },
+    {
+      "id": "incentives",
+      "title": "Incentives",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    }
+  ],
+  "statusPass": true,
+  "compositionPass": true,
+  "legacyPass": true,
+  "pass": true
+}

@@ -1,0 +1,558 @@
+{
+  "libraryVersion": "phase6.2d-international-trade-and-trade-policy-rich-bank-v1",
+  "tests": [
+    {
+      "name": "Phillips Curve Policy Sequence",
+      "selectedConceptIds": [
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "phillips-curve-expectations",
+        "disinflation-and-policy",
+        "aggregate-demand",
+        "aggregate-supply",
+        "stabilization-policy"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 42,
+        "medium": 35,
+        "hard": 49,
+        "elite": 31,
+        "legendary": 32,
+        "easyBoss": 9,
+        "mediumBoss": 19,
+        "finalBoss": 11,
+        "legendaryBoss": 12,
+        "repair": 31,
+        "repairSeed": 0,
+        "bridge": 21,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 66,
+        "assets": 12,
+        "totalCanonical": 292
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 292,
+        "issues": []
+      }
+    },
+    {
+      "name": "Unemployment Baseline",
+      "selectedConceptIds": [
+        "unemployment-measurement",
+        "natural-rate-of-unemployment",
+        "labor-market-institutions",
+        "gdp-measurement",
+        "cpi-and-inflation-measurement",
+        "living-standards-and-growth"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 44,
+        "medium": 45,
+        "hard": 41,
+        "elite": 33,
+        "legendary": 39,
+        "easyBoss": 25,
+        "mediumBoss": 15,
+        "finalBoss": 39,
+        "legendaryBoss": 16,
+        "repair": 23,
+        "repairSeed": 0,
+        "bridge": 15,
+        "calculation": 41,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 335
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 335,
+        "issues": []
+      }
+    },
+    {
+      "name": "Inflation and Real Values",
+      "selectedConceptIds": [
+        "cpi-and-inflation-measurement",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates",
+        "fisher-effect"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 23,
+        "medium": 22,
+        "hard": 21,
+        "elite": 14,
+        "legendary": 18,
+        "easyBoss": 12,
+        "mediumBoss": 6,
+        "finalBoss": 3,
+        "legendaryBoss": 9,
+        "repair": 12,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 39,
+        "integration": 0,
+        "graph": 2,
+        "assets": 1,
+        "totalCanonical": 146
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 146,
+        "issues": []
+      }
+    },
+    {
+      "name": "Central Banking System",
+      "selectedConceptIds": [
+        "central-bank-and-federal-reserve",
+        "money-functions-and-measures",
+        "bank-money-creation",
+        "monetary-policy-tools"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 37,
+        "medium": 36,
+        "hard": 34,
+        "elite": 27,
+        "legendary": 22,
+        "easyBoss": 12,
+        "mediumBoss": 9,
+        "finalBoss": 9,
+        "legendaryBoss": 13,
+        "repair": 36,
+        "repairSeed": 0,
+        "bridge": 16,
+        "calculation": 35,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 251
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 251,
+        "issues": []
+      }
+    },
+    {
+      "name": "Long-Run Adjustment",
+      "selectedConceptIds": [
+        "aggregate-demand",
+        "aggregate-supply",
+        "macroeconomic-equilibrium-and-shocks",
+        "long-run-macroeconomic-adjustment"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 24,
+        "medium": 25,
+        "hard": 25,
+        "elite": 21,
+        "legendary": 21,
+        "easyBoss": 10,
+        "mediumBoss": 10,
+        "finalBoss": 10,
+        "legendaryBoss": 9,
+        "repair": 25,
+        "repairSeed": 0,
+        "bridge": 11,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 37,
+        "assets": 6,
+        "totalCanonical": 191
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 191,
+        "issues": []
+      }
+    },
+    {
+      "name": "Stage One Combined",
+      "selectedConceptIds": [
+        "long-run-phillips-curve",
+        "disinflation-and-policy",
+        "natural-rate-of-unemployment",
+        "indexing-and-real-values",
+        "central-bank-and-federal-reserve",
+        "real-versus-nominal-interest-rates",
+        "long-run-macroeconomic-adjustment",
+        "aggregate-demand",
+        "aggregate-supply",
+        "cpi-and-inflation-measurement",
+        "unemployment-measurement"
+      ],
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "errors": [],
+      "warnings": 0,
+      "counts": {
+        "easy": 62,
+        "medium": 57,
+        "hard": 59,
+        "elite": 43,
+        "legendary": 50,
+        "easyBoss": 25,
+        "mediumBoss": 17,
+        "finalBoss": 28,
+        "legendaryBoss": 18,
+        "repair": 43,
+        "repairSeed": 0,
+        "bridge": 24,
+        "calculation": 39,
+        "integration": 0,
+        "graph": 32,
+        "assets": 7,
+        "totalCanonical": 426
+      },
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 426,
+        "issues": []
+      }
+    }
+  ],
+  "legacyRecipes": [
+    {
+      "name": "exam-only-minimal.json",
+      "errors": [],
+      "warnings": 1,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 53,
+        "issues": []
+      },
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    },
+    {
+      "name": "legendary-only.json",
+      "errors": [],
+      "warnings": 1,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 24,
+        "issues": []
+      },
+      "counts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 24
+      }
+    },
+    {
+      "name": "market-foundations.json",
+      "errors": [],
+      "warnings": 5,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 2133,
+        "issues": []
+      },
+      "counts": {
+        "easy": 280,
+        "medium": 300,
+        "hard": 302,
+        "elite": 209,
+        "legendary": 280,
+        "easyBoss": 103,
+        "mediumBoss": 109,
+        "finalBoss": 111,
+        "legendaryBoss": 108,
+        "repair": 189,
+        "repairSeed": 15,
+        "bridge": 127,
+        "calculation": 139,
+        "integration": 0,
+        "graph": 265,
+        "assets": 30,
+        "totalCanonical": 2133
+      }
+    },
+    {
+      "name": "mixed-custom-course.json",
+      "errors": [],
+      "warnings": 2,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 504,
+        "issues": []
+      },
+      "counts": {
+        "easy": 59,
+        "medium": 74,
+        "hard": 79,
+        "elite": 51,
+        "legendary": 60,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
+        "legendaryBoss": 23,
+        "repair": 41,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 504
+      }
+    },
+    {
+      "name": "money-and-stabilization.json",
+      "errors": [],
+      "warnings": 3,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 1331,
+        "issues": []
+      },
+      "counts": {
+        "easy": 171,
+        "medium": 167,
+        "hard": 186,
+        "elite": 157,
+        "legendary": 164,
+        "easyBoss": 48,
+        "mediumBoss": 66,
+        "finalBoss": 63,
+        "legendaryBoss": 81,
+        "repair": 147,
+        "repairSeed": 0,
+        "bridge": 81,
+        "calculation": 82,
+        "integration": 10,
+        "graph": 236,
+        "assets": 33,
+        "totalCanonical": 1331
+      }
+    },
+    {
+      "name": "national-economy.json",
+      "errors": [],
+      "warnings": 3,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 733,
+        "issues": []
+      },
+      "counts": {
+        "easy": 93,
+        "medium": 95,
+        "hard": 92,
+        "elite": 81,
+        "legendary": 91,
+        "easyBoss": 55,
+        "mediumBoss": 45,
+        "finalBoss": 51,
+        "legendaryBoss": 35,
+        "repair": 58,
+        "repairSeed": 0,
+        "bridge": 37,
+        "calculation": 67,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 733
+      }
+    },
+    {
+      "name": "standard-and-score.json",
+      "errors": [],
+      "warnings": 2,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 504,
+        "issues": []
+      },
+      "counts": {
+        "easy": 59,
+        "medium": 74,
+        "hard": 79,
+        "elite": 51,
+        "legendary": 60,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
+        "legendaryBoss": 23,
+        "repair": 41,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 504
+      }
+    },
+    {
+      "name": "timed-and-exam.json",
+      "errors": [],
+      "warnings": 1,
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 53,
+        "issues": []
+      },
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    }
+  ],
+  "statuses": [
+    {
+      "id": "long-run-phillips-curve",
+      "title": "Long-Run Phillips Curve",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "disinflation-and-policy",
+      "title": "Disinflation and Policy",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "natural-rate-of-unemployment",
+      "title": "Natural Rate of Unemployment",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "indexing-and-real-values",
+      "title": "Indexing and Real Values",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "central-bank-and-federal-reserve",
+      "title": "Central Banking and the Federal Reserve",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "real-versus-nominal-interest-rates",
+      "title": "Real versus Nominal Interest Rates",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    },
+    {
+      "id": "long-run-macroeconomic-adjustment",
+      "title": "Long-Run Macroeconomic Adjustment",
+      "classification": "Core supporting concept",
+      "status": "best-paired",
+      "label": "Best used with related concepts"
+    }
+  ],
+  "statusPass": true,
+  "compositionPass": true,
+  "legacyPass": true,
+  "pass": true
+}

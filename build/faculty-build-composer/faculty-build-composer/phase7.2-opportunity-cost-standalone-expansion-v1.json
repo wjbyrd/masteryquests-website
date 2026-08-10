@@ -1,0 +1,87 @@
+{
+  "phase": "phase7.2-opportunity-cost-standalone-expansion-v1",
+  "generatedAt": "2026-08-10T01:15:00.000Z",
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "concept": "opportunity-cost",
+  "before": {
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1",
+    "librarySha256": "0fb10054597ede79d833de491868169334301785b9488b339251d2eb442a13eb",
+    "libraryFileSha256": "4b1671dcbfe14f331a55f2def03a3994ec7366e193d112a01f0a7391977ac03e",
+    "conceptCanonicalQuestions": 49
+  },
+  "after": {
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1",
+    "librarySha256": "63e8223a178b5bea72b9a55b174a64e5909cd8b6c395e9f565c16a8abab5a69d",
+    "libraryFileSha256": "2b75cfbe3f5ae36653887e10d905a3eed7e27f8ba1909ef25c024542d6ef6d71",
+    "conceptCanonicalQuestions": 108
+  },
+  "counts": {
+    "totalCanonical": 108,
+    "easy": 10,
+    "medium": 12,
+    "hard": 12,
+    "elite": 6,
+    "legendary": 27,
+    "calculation": 2,
+    "easyBoss": 5,
+    "mediumBoss": 5,
+    "finalBoss": 5,
+    "legendaryBoss": 9,
+    "repair": 8,
+    "repairSeed": 1,
+    "bridge": 6,
+    "calculationLinked": 34,
+    "calculationFamilies": [
+      "checkpoint-multiple-implicit-costs",
+      "checkpoint-wages-plus-explicit-cost",
+      "compare-net-alternative-returns",
+      "constant-production-tradeoff",
+      "economic-profit-owner-resources",
+      "economic-profit-three-implicit-inputs",
+      "explicit-cost-plus-next-best-event",
+      "explicit-plus-forgone-wages",
+      "forgone-resale-plus-explicit-cost",
+      "forgone-wages-over-time",
+      "legendary-checkpoint-owner-rent-and-labor",
+      "legendary-checkpoint-production-ratio",
+      "marginal-unit-opportunity-cost",
+      "mixed-costs-and-offsetting-benefit",
+      "multiple-owner-supplied-inputs",
+      "net-benefit-relative-to-best-land-use",
+      "next-best-composite-alternatives",
+      "next-best-return",
+      "owned-resource-next-best-return",
+      "per-unit-production-tradeoff",
+      "public-land-alternative-use",
+      "repair-forgone-wages",
+      "required-output-tradeoff",
+      "time-wages-plus-explicit-cost",
+      "total-opportunity-cost-over-time"
+    ]
+  },
+  "actions": {
+    "reviewed": 49,
+    "kept": 28,
+    "rewritten": 21,
+    "added": 59,
+    "relocatedRepair": 0,
+    "relocatedBridge": 0,
+    "removed": 0
+  },
+  "otherConceptQuestionContentChanged": false,
+  "graphQuestionsChanged": false,
+  "graphAssetsChanged": false,
+  "validation": {
+    "machineResults": "validation_artifacts/opportunity_cost_standalone_expansion/opportunity_cost_validation_results.json",
+    "totalSessions": 2500,
+    "modes": [
+      "standard",
+      "timed",
+      "exam",
+      "legendary",
+      "score"
+    ],
+    "browserPassed": true,
+    "finalVerdict": "OPPORTUNITY COST READY — COMPACT STANDALONE BANK VALIDATED"
+  }
+}

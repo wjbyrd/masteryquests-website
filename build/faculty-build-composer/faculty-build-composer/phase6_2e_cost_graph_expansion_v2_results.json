@@ -1,0 +1,46 @@
+{
+  "phase": "6.2e-COP-GRAPH-V2",
+  "generatedAt": "2026-08-08T14:32:27Z",
+  "ok": true,
+  "newQuestionCount": 72,
+  "newAssetCount": 6,
+  "libraryQuestionCount": 6062,
+  "libraryAssetCount": 382,
+  "librarySha256": "3f538463c899d8d6e936dde5604ecd5745ec51c071d62b1f10bdfa1f1c0339e5",
+  "graphCounts": {
+    "COST-01": 12,
+    "COST-02": 12,
+    "COST-03": 14,
+    "COST-04": 10,
+    "COST-05": 14,
+    "COST-06": 10
+  },
+  "difficultyCounts": {
+    "easy": 14,
+    "medium": 16,
+    "hard": 16,
+    "elite": 12,
+    "legendary": 8,
+    "boss": 6
+  },
+  "bossStageCounts": {
+    "mediumBoss": 2,
+    "easyBoss": 2,
+    "finalBoss": 2
+  },
+  "correctOptionPositions": {
+    "0": 18,
+    "1": 18,
+    "2": 18,
+    "3": 18
+  },
+  "correctToDistractorMeanLengthRatio": 0.993,
+  "nearDuplicateFlags": [],
+  "issues": [],
+  "graphCoverageBefore": 30,
+  "textOnlyConversions": [
+    "P62E-COP-L-050",
+    "P62E-COP-L-051"
+  ],
+  "graphCoverageAfter": 100
+}

@@ -1,0 +1,4391 @@
+{
+  "scope": "Phase 6 micro graph-rich banks",
+  "beforeGraphAttachments": {
+    "elasticity": 19,
+    "consumer-and-producer-surplus": 64,
+    "international-trade-and-trade-policy": 102,
+    "costs-of-production": 141,
+    "perfect-competition": 124,
+    "monopoly": 201,
+    "monopolistic-competition": 111,
+    "oligopoly": 137
+  },
+  "afterGraphAttachments": {
+    "elasticity": 8,
+    "consumer-and-producer-surplus": 64,
+    "international-trade-and-trade-policy": 36,
+    "costs-of-production": 30,
+    "perfect-competition": 36,
+    "monopoly": 12,
+    "monopolistic-competition": 13,
+    "oligopoly": 123
+  },
+  "beforeTotal": 899,
+  "afterTotal": 322,
+  "removedGraphAttachments": 577,
+  "stemRewrites": 22,
+  "answerBearingFieldChanges": 0,
+  "librarySha256": "abac304dfcfa9fa83ac8b082449b8d51921c8cf40f17c569e54f5b86621b9a56",
+  "validation": {
+    "elasticity": {
+      "ok": true,
+      "graph": 8,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 8,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "cps": {
+      "ok": true,
+      "graph": 64,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 12,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "trade": {
+      "ok": true,
+      "graph": 36,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 49,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "costs": {
+      "ok": true,
+      "graph": 30,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 59,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "pc": {
+      "ok": true,
+      "graph": 36,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 34,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "monopoly": {
+      "ok": true,
+      "graph": 12,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 94,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "mcmp": {
+      "ok": true,
+      "graph": 13,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 35,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "oligopoly": {
+      "ok": true,
+      "graph": 123,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 42,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "firms_market": {
+      "ok": true,
+      "graph": 214,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 264,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "welfare": {
+      "ok": true,
+      "graph": 108,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 69,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    },
+    "all_micro_graph": {
+      "ok": true,
+      "graph": 322,
+      "errors": 0,
+      "answerAudit": true,
+      "assets": 333,
+      "modes": {
+        "standard": true,
+        "timed": true,
+        "exam": true,
+        "legendary": true,
+        "score": true
+      }
+    }
+  },
+  "changes": [
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-006",
+      "change": "stem_rewrite",
+      "from": "A vertical demand curve represents demand that is:",
+      "to": "In the displayed graph, D2 is vertical. D2 represents demand that is:"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-007",
+      "change": "stem_rewrite",
+      "from": "A horizontal demand curve represents demand that is:",
+      "to": "In the displayed graph, D1 is horizontal. D1 represents demand that is:"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-016",
+      "change": "image_removed",
+      "from": "elasticity_total_revenue.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-017",
+      "change": "image_removed",
+      "from": "elasticity_total_revenue.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-018",
+      "change": "image_removed",
+      "from": "elasticity_total_revenue.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-020",
+      "change": "stem_rewrite",
+      "from": "Supply is generally more elastic when producers have:",
+      "to": "In the displayed supply graph, S2 is flatter than S1. If S2 represents the longer-run response, supply is generally more elastic because producers have:"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-028",
+      "change": "stem_rewrite",
+      "from": "Why can two demand curves with different slopes not be ranked by elasticity from slope alone?",
+      "to": "Refer to the displayed steep and flat demand curves. Why can the steeper-looking curve not automatically be ranked as less elastic from slope alone?"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-029",
+      "change": "stem_rewrite",
+      "from": "Along a straight-line downward-sloping demand curve, elasticity is generally:",
+      "to": "Refer to the displayed linear demand curve. As you move from point A toward point C, elasticity is generally:"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-E-030",
+      "change": "image_removed",
+      "from": "elasticity_midpoint_arc.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-M-008",
+      "change": "stem_rewrite",
+      "from": "On a linear demand curve, moving downward from the price intercept generally causes price elasticity to:",
+      "to": "On the displayed linear demand curve, moving downward from point A toward point C generally causes price elasticity to:"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-M-009",
+      "change": "image_removed",
+      "from": "elasticity_linear_segments.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-M-013",
+      "change": "image_removed",
+      "from": "elasticity_total_revenue.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-M-028",
+      "change": "stem_rewrite",
+      "from": "Which statement correctly compares slope and elasticity?",
+      "to": "The displayed linear demand curve has constant slope, yet elasticity changes along it. Which statement correctly compares slope and elasticity?"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-M-029",
+      "change": "image_removed",
+      "from": "elasticity_midpoint_arc.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-H-001",
+      "change": "image_removed",
+      "from": "elasticity_midpoint_arc.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-H-002",
+      "change": "image_removed",
+      "from": "elasticity_midpoint_arc.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-H-016",
+      "change": "stem_rewrite",
+      "from": "A linear demand curve has constant slope. Why can its upper portion be elastic while its lower portion is inelastic?",
+      "to": "The displayed linear demand curve has constant slope. Why can the upper portion near A be elastic while the lower portion near C is inelastic?"
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-EL-013",
+      "change": "image_removed",
+      "from": "elasticity_linear_segments.webp",
+      "to": null
+    },
+    {
+      "concept": "elasticity",
+      "id": "P62B-ELAS-EL-014",
+      "change": "image_removed",
+      "from": "elasticity_linear_segments.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-001",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_arden_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-004",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_bellora_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-007",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_caspia_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-010",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_demer_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-013",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_estara_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-016",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_faron_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-019",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_galena_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-022",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_haven_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-025",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_ilyria_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-028",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_juno_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-031",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_arden_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-034",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_bellora_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-037",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_caspia_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-040",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_demer_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-043",
+      "change": "stem_rewrite",
+      "from": "The world price for Estara's wool blankets is $72. Use the stated demand and supply equations to identify consumption, production, and exports.",
+      "to": "The world price for Estara's wool blankets is $72. Use the displayed graph to identify domestic consumption, domestic production, and exports."
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-046",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_faron_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-049",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_galena_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-052",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_haven_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-055",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_ilyria_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-058",
+      "change": "stem_rewrite",
+      "from": "The world price for Juno's olive oil is $82. Use the stated demand and supply equations to identify consumption, production, and exports.",
+      "to": "The world price for Juno's olive oil is $82. Use the displayed graph to identify domestic consumption, domestic production, and exports."
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-061",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_arden_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-063",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_bellora_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-065",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_caspia_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-067",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_demer_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-069",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_estara_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-071",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_faron_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-073",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_galena_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-075",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_haven_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-077",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_ilyria_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-L-079",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_juno_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B1-017",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_import_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B1-017",
+      "change": "stem_rewrite",
+      "from": "On the import graph, Qd=50 and Qs=10. Imports are:",
+      "to": "If domestic quantity demanded is 50 and domestic quantity supplied is 10, imports are:"
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B1-018",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_export_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B1-018",
+      "change": "stem_rewrite",
+      "from": "On the export graph, Qs=50 and Qd=10. Exports are:",
+      "to": "If domestic quantity supplied is 50 and domestic quantity demanded is 10, exports are:"
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B2-035",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B2-035",
+      "change": "stem_rewrite",
+      "from": "The import graph shows Qd=50 and Qs=10. The trade gap represents:",
+      "to": "If domestic quantity demanded is 50 and domestic quantity supplied is 10 at the world price, the 40-unit trade gap represents:"
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B2-036",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_export_surplus.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B2-036",
+      "change": "stem_rewrite",
+      "from": "The export graph shows Qs=50 and Qd=10. The trade gap represents:",
+      "to": "If domestic quantity supplied is 50 and domestic quantity demanded is 10 at the world price, the 40-unit trade gap represents:"
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-037",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_tariff_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-038",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_tariff_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-042",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-043",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-044",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-045",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-046",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-B3-047",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_quota_market.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-001",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_arden_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-002",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_arden_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-003",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_arden_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-004",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_bellora_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-005",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_bellora_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-006",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_bellora_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-007",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_caspia_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-008",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_caspia_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-010",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_demer_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-011",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_demer_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-013",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_estara_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-014",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_estara_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-018",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_faron_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-019",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_galena_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-020",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_galena_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-021",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_galena_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-022",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_haven_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-023",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_haven_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-024",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_haven_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-025",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_ilyria_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-026",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_ilyria_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-028",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_juno_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-029",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_juno_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-031",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_kestrel_import.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-032",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_kestrel_export.webp",
+      "to": null
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "id": "P62D-ITP-LB-036",
+      "change": "image_removed",
+      "from": "question-assets/international-trade-and-trade-policy/itp_lydon_tariff.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-011",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-012",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-013",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-014",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-015",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-016",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-017",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-018",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-019",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-020",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-022",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_mp_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-023",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_mp_ap.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-025",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_average_costs.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-027",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_fixed_cost_shift.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-028",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_variable_input_shift.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-029",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_productivity_shift.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-M-030",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lratc_u.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-001",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-002",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-003",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-004",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-005",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-006",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-007",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-008",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-009",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-010",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-011",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-012",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_prairie_solar_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-014",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_fixed_cost_shift.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-014",
+      "change": "stem_rewrite",
+      "from": "A firm receives a property-tax increase that does not depend on output. Which graph best describes the immediate short-run effect?",
+      "to": "A firm receives a property-tax increase that does not depend on output. Which immediate short-run curve change is correct?"
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-015",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_variable_input_shift.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-016",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_productivity_shift.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-020",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lratc_regions.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-021",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_mes.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-H-022",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_plant_envelope.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-013",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-014",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-015",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-016",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-017",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-018",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-019",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-020",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-021",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-022",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-023",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-024",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_prairie_solar_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-027",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-028",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-030",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-031",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-033",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-034",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-036",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-037",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-039",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-040",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-042",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-L-043",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-009",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-010",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-011",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-012",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_tp.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-013",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-014",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-015",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-016",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-022",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-023",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-024",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-025",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-026",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-027",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-C-028",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-B3-053",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_plant_envelope.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-001",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-002",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-003",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_northstar_bakery_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-004",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-005",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-006",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_ironwood_furniture_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-007",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-008",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-009",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_harbor_roasters_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-010",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-011",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-012",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_cedar_trail_bikes_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-013",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-014",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-015",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_blue_peak_printing_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-016",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-017",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-018",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_riverbend_textiles_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-019",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-020",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-021",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_juniper_foods_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-022",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-023",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-024",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_summit_glassworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-025",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-026",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-027",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_maple_street_media_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-028",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-029",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-030",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_granite_toolworks_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-031",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-032",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-033",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_lakeside_ceramics_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-034",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-035",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "costs-of-production",
+      "id": "P62E-COP-LB-036",
+      "change": "image_removed",
+      "from": "question-assets/costs-of-production/cop_prairie_solar_cost.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-020",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-023",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-024",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-026",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-027",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-028",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-029",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-H-030",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-014",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-015",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-017",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-019",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_loss_produce_c.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-020",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_shutdown_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-021",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-022",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-023",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-024",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-025",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_exit_3.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-026",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-027",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-028",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-029",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-EL-030",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-018",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_zero_a.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-035",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-038",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-039",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-040",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-042",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-046",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-047",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-048",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-049",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-050",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-051",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-052",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-053",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-054",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-057",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-058",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-059",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-060",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-076",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-077",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-078",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-079",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-080",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-081",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-082",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-083",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-084",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-085",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-086",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-087",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-088",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-089",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-L-090",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-002",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-006",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-008",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_1.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-010",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_d.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-011",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_d.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-012",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_3.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-014",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-015",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_1.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B1-016",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B2-022",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_shutdown_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B2-023",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_loss_produce_c.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B2-027",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B2-028",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_supply_2.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B2-033",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_shutdown_b.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B2-035",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_zero_a.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-037",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-038",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_exit_3.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-040",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-041",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-042",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-043",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-044",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-045",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-048",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_demand_shift_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-049",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_efficiency.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-050",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-051",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_market_firm_4.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-052",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_constant.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-053",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-B3-054",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_lrs_decreasing.webp",
+      "to": null
+    },
+    {
+      "concept": "perfect-competition",
+      "id": "P62F-PC-BR-001",
+      "change": "image_removed",
+      "from": "question-assets/perfect-competition/pc_profit_d.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-H-021",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-H-022",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_regulation_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-H-023",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_regulation_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-001",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_20_0p25_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-002",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_20_0p25_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-003",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-004",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-005",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_18_0p35_350_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-006",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_18_0p35_350_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-007",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p2_22_0p3_500_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-008",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p2_22_0p3_500_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-009",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_850_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-010",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_850_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-011",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-012",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-013",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-014",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-015",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-016",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-023",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-024",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-025",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-026",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-027",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-028",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-029",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-EL-030",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-019",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_20_0p25_280_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-020",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_20_0p25_280_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-021",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_20_0p25_280_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-022",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_430_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-023",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_430_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-024",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_430_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-025",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_18_0p35_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-026",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_18_0p35_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-027",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_18_0p35_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-028",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p2_22_0p3_520_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-029",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p2_22_0p3_520_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-030",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p2_22_0p3_520_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-031",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-032",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-033",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-034",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_820_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-035",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_820_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-036",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_820_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-037",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-038",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-039",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-040",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_65_1p8_50_0p15_340_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-041",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_65_1p8_50_0p15_340_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-042",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_65_1p8_50_0p15_340_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-043",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-044",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-045",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-046",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2_18_0p35_300_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-047",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2_18_0p35_300_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-048",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2_18_0p35_300_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-049",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_90_1p5_15_0p3_220_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-050",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_90_1p5_15_0p3_220_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-051",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_90_1p5_15_0p3_220_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-052",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_25_0p2_400_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-053",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_25_0p2_400_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-054",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_25_0p2_400_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-055",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_1p75_22_0p25_320_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-056",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_1p75_22_0p25_320_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-057",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_1p75_22_0p25_320_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-058",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-059",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-060",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-061",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-062",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-063",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-064",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-065",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-066",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-067",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-068",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-069",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_90_1_10_800.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-070",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-071",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-072",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_110_1p25_14_1000.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-073",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_130_1p5_18_1400.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-074",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_130_1p5_18_1400.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-075",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_130_1p5_18_1400.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-076",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-077",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-078",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-079",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-080",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-081",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-082",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-083",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-084",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_95_1p5_110_3_18.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-085",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-086",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-087",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_110_2_86_1p2_22.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-088",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_125_2p5_95_1p25_25.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-089",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_125_2p5_95_1p25_25.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-L-090",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_125_2p5_95_1p25_25.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-001",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0_280_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-002",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0_280_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-003",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0_280_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-004",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_25_0p2_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-005",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_25_0p2_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-006",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_25_0p2_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-007",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_90_1p5_18_0p3_260_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-008",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_90_1p5_18_0p3_260_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-009",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_90_1p5_18_0p3_260_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-010",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2p2_22_0p25_340_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-011",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2p2_22_0p25_340_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-012",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2p2_22_0p25_340_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-013",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_16_0p2_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-014",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_16_0p2_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-015",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_96_1p6_16_0p2_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-016",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_21_0p3_320_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-017",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_21_0p3_320_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B1-018",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_21_0p3_320_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-019",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-020",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-021",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-022",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2_22_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-023",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2_22_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-024",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_110_2_22_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-025",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-026",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-027",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_92_1p5_18_0p35_780_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-028",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-029",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-030",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_120_2p5_24_0p2_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-031",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_64_1p8_48_0p15_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-032",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_64_1p8_48_0p15_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-033",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_64_1p8_48_0p15_300_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-034",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-035",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B2-036",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_105_2p1_18_0p3_650_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-037",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-038",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-039",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p2_250_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-040",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-041",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-042",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_115_2p25_20_0p3_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-043",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-044",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-045",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_100_1p2_12_900.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-046",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-047",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-048",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_natural_120_1p5_15_1200.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-049",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-050",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-051",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_100_2_80_1_20.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-052",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-053",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-B3-054",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_pd_120_3_90_1p5_24.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-001",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_104_2_20_0p2_320_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-002",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_104_2_20_0p2_320_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-003",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_104_2_20_0p2_320_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-004",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_118_2p5_22_0p25_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-005",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_118_2p5_22_0p25_420_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-006",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_118_2p5_22_0p25_420_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-007",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_98_1p75_18_0p3_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-008",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_98_1p75_18_0p3_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-009",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_98_1p75_18_0p3_360_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-010",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p25_24_0p2_500_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-011",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p25_24_0p2_500_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-012",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_112_2p25_24_0p2_500_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-013",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-014",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p25_900_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-015",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_100_2_20_0p25_900_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-016",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_94_1p6_18_0p35_820_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-017",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_94_1p6_18_0p35_820_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-018",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_94_1p6_18_0p35_820_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-019",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-020",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-021",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_116_2p4_26_0p25_980_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-022",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_68_1p8_50_0p18_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-023",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_68_1p8_50_0p18_360_standard.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-024",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_68_1p8_50_0p18_360_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-025",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_18_0p3_300_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-026",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_18_0p3_300_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-027",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_108_2_18_0p3_300_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-028",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_122_2p5_24_0p2_450_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-029",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_122_2p5_24_0p2_450_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-030",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_122_2p5_24_0p2_450_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-031",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_102_1p8_20_0p25_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-032",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_102_1p8_20_0p25_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-033",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_102_1p8_20_0p25_380_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-034",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_114_2p2_22_0p3_420_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-035",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_114_2p2_22_0p3_420_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopoly",
+      "id": "P62G-MON-LB-036",
+      "change": "image_removed",
+      "from": "question-assets/monopoly/mon_single_114_2p2_22_0p3_420_welfare.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-E-009",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_basic_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-E-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-E-025",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_basic_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-E-026",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-021",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-021",
+      "change": "stem_rewrite",
+      "from": "Graph 1 shows a long-run monopolistically competitive firm at Q1=20 while ATC is minimized at Q2=36.67. What is excess capacity?",
+      "to": "A long-run monopolistically competitive firm produces Q1=20 while ATC is minimized at Q2=36.67. What is excess capacity?"
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-022",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-023",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-023",
+      "change": "stem_rewrite",
+      "from": "Graph 2 shows a long-run monopolistically competitive firm at Q1=24 while ATC is minimized at Q2=39.71. What is excess capacity?",
+      "to": "A long-run monopolistically competitive firm produces Q1=24 while ATC is minimized at Q2=39.71. What is excess capacity?"
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-025",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-025",
+      "change": "stem_rewrite",
+      "from": "Graph 3 shows a long-run monopolistically competitive firm at Q1=18 while ATC is minimized at Q2=34.07. What is excess capacity?",
+      "to": "A long-run monopolistically competitive firm produces Q1=18 while ATC is minimized at Q2=34.07. What is excess capacity?"
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-026",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-027",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-027",
+      "change": "stem_rewrite",
+      "from": "Graph 4 shows a long-run monopolistically competitive firm at Q1=28 while ATC is minimized at Q2=43. What is excess capacity?",
+      "to": "A long-run monopolistically competitive firm produces Q1=28 while ATC is minimized at Q2=43. What is excess capacity?"
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-028",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-029",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-029",
+      "change": "stem_rewrite",
+      "from": "Graph 5 shows a long-run monopolistically competitive firm at Q1=22 while ATC is minimized at Q2=38. What is excess capacity?",
+      "to": "A long-run monopolistically competitive firm produces Q1=22 while ATC is minimized at Q2=38. What is excess capacity?"
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-M-030",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-H-021",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-H-028",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_per_unit_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-H-029",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-002",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-003",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_quality_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-016",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-018",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-020",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-022",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-EL-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-003",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-006",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-009",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-012",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-015",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-018",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-021",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-027",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-030",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-031",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-032",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-033",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-034",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-035",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-036",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-037",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-038",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-039",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-040",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-041",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-042",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-043",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-044",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-045",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-046",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-047",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-048",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_fixed_cost_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-050",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-L-051",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-020",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_shutdown_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-021",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_shutdown_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-025",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-026",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-027",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-C-028",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B1-001",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_profit_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B1-004",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_basic_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B1-007",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_profit_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B1-010",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_loss_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B1-013",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_basic_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B1-016",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_loss_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-019",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-020",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-021",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-022",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-023",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-025",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_entry_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-026",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-027",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-028",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_exit_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-029",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-030",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-033",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B2-036",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B3-037",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B3-038",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B3-039",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_demand_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B3-040",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_elasticity_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-B3-041",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_ad_elasticity_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-003",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-006",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-009",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-012",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-015",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-018",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-021",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_1.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-024",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_2.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-027",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_3.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-030",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_4.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-033",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_5.webp",
+      "to": null
+    },
+    {
+      "concept": "monopolistic-competition",
+      "id": "P62H-MCMP-LB-036",
+      "change": "image_removed",
+      "from": "question-assets/monopolistic-competition/mcmp_long_run_6.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-M-006",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_no_dom_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-M-006",
+      "change": "stem_rewrite",
+      "from": "In a payoff matrix, Row\u2019s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?",
+      "to": "Row\u2019s payoff is higher with strategy B whether Column chooses X or Y. What does Row have?"
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-M-008",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_coord_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-M-008",
+      "change": "stem_rewrite",
+      "from": "A matrix has two cells in which both players are best responding. What does the game have?",
+      "to": "A game has two outcomes in which both players are best responding. What does the game have?"
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-013",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_pd_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-014",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_coord_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-015",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_no_dom_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-016",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_asym_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-017",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_pd_2.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-018",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_ad_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-019",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_multi_ne_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-020",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_no_pure_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-021",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_price_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-C-022",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_coord_2.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-B1-008",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_pd_1.webp",
+      "to": null
+    },
+    {
+      "concept": "oligopoly",
+      "id": "P62I-OLI-B1-009",
+      "change": "image_removed",
+      "from": "question-assets/oligopoly/matrix_coord_1.webp",
+      "to": null
+    }
+  ],
+  "postAuditExpansion": {
+    "phase": "6.2e-COP-GRAPH-V2",
+    "costsOfProductionGraphCoverage": 100,
+    "costsTextOnlyConversions": [
+      "P62E-COP-L-050",
+      "P62E-COP-L-051"
+    ],
+    "newCostsGraphQuestions": 72,
+    "currentPhase6GraphAttachments": 392,
+    "note": "The original audit result remains historical. Costs was subsequently rebuilt with six canonical graphs and 72 graph-dependent questions."
+  }
+}

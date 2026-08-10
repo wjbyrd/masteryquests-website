@@ -1,0 +1,425 @@
+{
+  "phase": "phaseM2d2-fiscal-stabilization-family-maturation-v1",
+  "generatedAt": "2026-08-10T20:12:37.156Z",
+  "scope": [
+    "fiscal-policy-and-aggregate-demand",
+    "fiscal-multipliers-and-crowding-out",
+    "stabilization-policy"
+  ],
+  "changes": [
+    {
+      "questionId": "PM2D2-FISCAD-L-001",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-FISCAD-L-002",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-MULT-L-001",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-MULT-L-002",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-STAB-L-001",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-STAB-L-002",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-STAB-L-003",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "PM2D2-STAB-L-004",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Adds unique Legendary transfer depth to the otherwise protected F9 family."
+    },
+    {
+      "questionId": "ECON-SP-FISCAL-POLICY-AD-SHIFT-5041",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Replaces a definition-like repair with direct practice on a recurring ordinary F9 skill.",
+      "beforeHash": "e868a829ef00a2909ee20635bd8d23de6f8329943383548f9109ac92d2980df9",
+      "afterHash": "ab11bcc3d60f0a70c7c46261951499c0d2659f08f031479c5e36c282afe0aae4",
+      "oldPrimarySkill": "fiscal_policy_ad_shift",
+      "newPrimarySkill": "predict_ad_shift",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": []
+    },
+    {
+      "questionId": "ECON-SP-TAX-CUT-AD-5042",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Targets the recurring tax-to-consumption calculation rather than only AD direction.",
+      "beforeHash": "35ef20cb4430cbfa5b3080c43dd65ee7c26434decccb641cf8375e2a55ec718e",
+      "afterHash": "600d25f8fefaf9ad236fbb5b922dab1068eb99b545699317e22a37355c894c69",
+      "oldPrimarySkill": "tax_cut_ad",
+      "newPrimarySkill": "calculate_tax_cut_consumption_effect",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": []
+    },
+    {
+      "questionId": "LG-R-5048",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Adds diagnostic practice on classifying a mixed fiscal package from its actual instruments.",
+      "beforeHash": "225282ebf65c9e81cb5af4befe75a1f3419a9039ca6b1e032cf288242ce29e4e",
+      "afterHash": "e4f36b8d91ef5721a8b1770bf6d7ba1c49e3df408ba339c9700ff1d08afec613",
+      "oldPrimarySkill": "expansionary_fiscal_policy_definition",
+      "newPrimarySkill": "identify_policy_type",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": []
+    },
+    {
+      "questionId": "LG-R-5051",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Targets the missing causal channel from tax policy to aggregate demand.",
+      "beforeHash": "5b3b7000715b289c3e6b63440f9563e713b2bbb1c0e2418ef3e149b8fe2e1129",
+      "afterHash": "6a2507fb6511e05da253a64ceb5bc4e26e4ae29072e5e19fbf354026cbfa3419",
+      "oldPrimarySkill": "tax_cut_ad_direction",
+      "newPrimarySkill": "explain_policy_channel",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": []
+    },
+    {
+      "questionId": "LG-R-5056",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Replaces a basic direction check with diagnostic recovery practice on policy-lag risk.",
+      "beforeHash": "e04f6fb7c06c51c1671e9bacf9853c79c625ee17d215b3c23cdc9b1d8bed9419",
+      "afterHash": "7d694ecc60a978d241245923fa6f57876028516d4971c83185f202c00ecc9fc3",
+      "oldPrimarySkill": "stabilization_response_recession",
+      "newPrimarySkill": "apply_policy_lag_logic",
+      "oldSecondaryConceptIds": [
+        "aggregate-demand"
+      ],
+      "newSecondaryConceptIds": []
+    },
+    {
+      "questionId": "LG-R-5058",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "REPAIR_REWRITE",
+      "oldPool": "repair",
+      "newPool": "repair",
+      "reason": "Adds recovery practice for the central stabilization dilemma created by adverse supply shocks.",
+      "beforeHash": "96cda7b6934fe876072c356b14649b3c6d1a8de3348410e08410ecc9f1d9ec06",
+      "afterHash": "cbb3ff25abc995f45cecc74aa81f9f23c4f3e773264f5efba97105dc45ab0d20",
+      "oldPrimarySkill": "stabilization_response_overheating",
+      "newPrimarySkill": "analyze_supply_shock_tradeoff",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": []
+    },
+    {
+      "questionId": "LG-B-6021",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates a genuine Fiscal Policy → Multiplier bridge instead of another standalone tax calculation.",
+      "beforeHash": "b0b1b7a2e4a51cc925ea9a7b044b85b9a26cc3d40a81436b18cb92f4f0b8317b",
+      "afterHash": "110df88687f8ca1a3505ef96f1bb6936faa44e5c027f3c68c4062278af1e49e3",
+      "oldPrimarySkill": "tax_cut_ad_direction",
+      "newPrimarySkill": "bridge_fiscal_to_multiplier",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": [
+        "fiscal-multipliers-and-crowding-out"
+      ]
+    },
+    {
+      "questionId": "LG-B-6022",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Makes the connection between the originating fiscal action and the multiplier explicit.",
+      "beforeHash": "15b03cdaf99e73301fb1947b20fa784fdf298e6bef246581c276e407b00a40f7",
+      "afterHash": "ba26a3c31d90dd71fb34a89cd8223a59e6a579e72faa6c86b49f4e2e9429231a",
+      "oldPrimarySkill": "spending_multiplier_formula",
+      "newPrimarySkill": "bridge_fiscal_to_multiplier",
+      "oldSecondaryConceptIds": [
+        "aggregate-demand"
+      ],
+      "newSecondaryConceptIds": [
+        "fiscal-policy-and-aggregate-demand",
+        "aggregate-demand"
+      ]
+    },
+    {
+      "questionId": "LG-B-6023",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates a genuine Multiplier/Crowding Out → Stabilization bridge using the net policy impulse.",
+      "beforeHash": "71d10a78b7941848652bbcbc7b895b39e8d4e2579c2c580f66781cd6a2e4c7d9",
+      "afterHash": "75f7afbf7435e56fc81bfdcbf63e60a6b7e5a97458d9602ddc576ace70ec1474",
+      "oldPrimarySkill": "crowding_out_net_effect",
+      "newPrimarySkill": "bridge_multiplier_to_stabilization",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": [
+        "stabilization-policy",
+        "aggregate-demand"
+      ]
+    },
+    {
+      "questionId": "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-6054",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates the explicit Long-Run Adjustment → Stabilization choice described in the M2d blueprint.",
+      "beforeHash": "b6580f3acef2aab8657bf9950bf82d4197185cbeb78feaeeb2aa5bba960e678a",
+      "afterHash": "942ebd515caf06e804d388c82db2b421bb83d2b13bc26adbcd55bbeced6d938f",
+      "oldPrimarySkill": "choose_stabilization_response",
+      "newPrimarySkill": "bridge_lradj_to_stabilization",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": [
+        "long-run-macroeconomic-adjustment",
+        "aggregate-demand"
+      ]
+    },
+    {
+      "questionId": "LG-B-6025",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Creates a genuine Stabilization → Short-Run Phillips Curve bridge for M2d block closure.",
+      "beforeHash": "e6c1355db4f6da093e01845beae9b87d0544a1d10543a9c96d424dbf710aaf2a",
+      "afterHash": "ee7fff3e8b823cf6f2f7c86076770df8c75be335e182905f916d27e9327381b9",
+      "oldPrimarySkill": "stabilization_response_overheating",
+      "newPrimarySkill": "bridge_stabilization_to_phillips",
+      "oldSecondaryConceptIds": [],
+      "newSecondaryConceptIds": [
+        "short-run-phillips-curve",
+        "aggregate-demand"
+      ]
+    },
+    {
+      "questionId": "P52A-FISCAD-LB-001",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Uses the core net first-round G/tax effect as the opening scaffold.",
+      "beforeHash": "f3278253440241b0536ab445ea8ff175dc7c2a2ae92717a32428dee6c97628dd",
+      "afterHash": "b35f05e6023cfcb92a0845ade23b03df593fdd5000c8989d3bed81f0301db886",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "P52A-FISCAD-LB-002",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Uses heterogeneous spending responses as the middle scaffold.",
+      "beforeHash": "073bca87608a108c09d93ee17b8e1081eda85a6f32dfa9598ebb480248d276f5",
+      "afterHash": "2df09304e9c90468d68e38eddb1cc6c0c297d2c9d283baa0e5027449c8da2d1e",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9142",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Uses tax transmission plus multiplier sequencing as the final scaffold.",
+      "beforeHash": "6936fdd4ad3ae6c99b353d0fcdc3b67b1ba4b771ba8234fe358e5095966171a9",
+      "afterHash": "7f9ab56818a02bcffc6df5fb6379c95bf051a40cf263c9394fc31fe5df5e8074",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9141",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Uses the qualitative interest-rate/crowding-out mechanism as the opening scaffold.",
+      "beforeHash": "2e122f76e6505656c7f6e269fc8a779058e4c53b9d6d67080ed1feb382a0a46b",
+      "afterHash": "851f35977392250447f22e64f968ea536b8a41be9360037c95f5782bb5d9cd45",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9134",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Infers MPC and shift order as the middle scaffold.",
+      "beforeHash": "63a731de21047337dc7472d4c588892f06b398fe67dc7ef78894604d1f34e53e",
+      "afterHash": "f2decf9035030eee496f47d9e008262105d7088582659898f60be9b26ca2bf91",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9133",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Combines multiplier and crowding-out sequencing as the final scaffold.",
+      "beforeHash": "60587bbfde35a232cccc1d5cf53423b88c9417df13ff9a087e8875584507c0c0",
+      "afterHash": "27252a34c31987fd9ecf672cc041ea864e3364869e074ec865f536f69d635f5f",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9140",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Uses policy direction relative to an overheating gap as an opening scaffold.",
+      "beforeHash": "d13aa90fed5d779171ac8cd7548417bc23528d77438e0b80964339618892d589",
+      "afterHash": "5527714be80e19207421dba7a217a951d04e08f0f4d47d9c87408d5e683e5d02",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9144",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Uses the supply-shock stabilization tradeoff as a second opening-stage variant.",
+      "beforeHash": "c3ac8d871ed8d63ef59f12abcbae771c5d5d8c4fe4a879a470a83d4fbd1c2c31",
+      "afterHash": "05e75dd13180c2ae930893906ec769f7603b3bf6b73f44e06377b1f7574b46eb",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "LG-Q-9136",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Combines a contractionary graph with a remaining-gap calculation as a middle scaffold.",
+      "beforeHash": "8f15baa9cd4b18998d5e995a5af4fa1333272887cf0b2628dcba4afe9a457ae4",
+      "afterHash": "4d7d0ed74166025f26979d0fc0e383542224b1762bbde50013acf35719dc5a8c",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9135",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Combines spending impulses and a multiplier as a second middle-stage variant.",
+      "beforeHash": "99bf654d0d88e533e49a30d7a15b3ad0aedc6fb5aa7ae53e8337293889a98e73",
+      "afterHash": "fa004e6954eafab5835fd0335bbd391e92ef0fd3e592344d2cb977a4b967ca77",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "LG-Q-9143",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Combines monetary contraction with fiscal expansion as a final-stage synthesis.",
+      "beforeHash": "97f3149516a72cc121cd812c1c3750420283260e5eb7feabb7d1bdfc27aac07c",
+      "afterHash": "4e05f1efdfe8c607f2b8c9afbae91b92bb1253152287892e10b50c8f6ecf57ab",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "LG-Q-9139",
+      "canonicalConceptId": "stabilization-policy",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Combines multiplier, crowding out, and remaining-gap reasoning as a final-stage synthesis.",
+      "beforeHash": "b55cb52a9cacd0990f0b1618c0ffdf72ae911d1c3c75c74ac6735425bd9b9406",
+      "afterHash": "494089f57c765a9a8500cc989c92a720b792d837d138a2b76578833075004335",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    }
+  ],
+  "summary": {
+    "added": 8,
+    "bossStageFixed": 12,
+    "repairRewritten": 6,
+    "bridgeRewritten": 5,
+    "assetMetadataCopiesUpdated": 6,
+    "removed": 0,
+    "relocated": 0
+  },
+  "authoringPolicy": {
+    "m1OriginalBaseline": 204,
+    "liveBaseline": 204,
+    "targetRange": [
+      212,
+      216
+    ],
+    "actualFamilyTotal": 212,
+    "protectedOrdinaryAndCheckpointBanks": true,
+    "newGraphAssets": 0,
+    "legendaryOrdinaryTarget": 27,
+    "bridgeChain": [
+      "long-run-macroeconomic-adjustment",
+      "stabilization-policy",
+      "fiscal-policy-and-aggregate-demand",
+      "fiscal-multipliers-and-crowding-out",
+      "stabilization-policy",
+      "short-run-phillips-curve"
+    ]
+  },
+  "quality": {
+    "introducedExact": [],
+    "introducedNumberSwaps": [],
+    "answerLengthIssues": []
+  }
+}

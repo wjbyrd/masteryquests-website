@@ -1,0 +1,1155 @@
+{
+  "recipeCount": 8,
+  "passCount": 8,
+  "results": [
+    {
+      "recipe": "exam-only-minimal.json",
+      "selected": 1,
+      "errors": [],
+      "warnings": 1,
+      "modes": [
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 8
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 6
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 7
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 4
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 6
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    },
+    {
+      "recipe": "legendary-only.json",
+      "selected": 1,
+      "errors": [],
+      "warnings": 1,
+      "modes": [
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 6
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 3
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 2,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 24
+      }
+    },
+    {
+      "recipe": "market-foundations.json",
+      "selected": 46,
+      "errors": [],
+      "warnings": 5,
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 280
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 300
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 302
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 103
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 109
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 111
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 189
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 127
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 280
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 300
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 302
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 189
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 127
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 280
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 300
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 302
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 189
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 127
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 280
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 108
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 280
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 300
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 302
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 103
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 109
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 111
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 189
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 127
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 280,
+        "medium": 300,
+        "hard": 302,
+        "elite": 209,
+        "legendary": 280,
+        "easyBoss": 103,
+        "mediumBoss": 109,
+        "finalBoss": 111,
+        "legendaryBoss": 108,
+        "repair": 189,
+        "repairSeed": 15,
+        "bridge": 127,
+        "calculation": 139,
+        "integration": 0,
+        "graph": 265,
+        "assets": 30,
+        "totalCanonical": 2133
+      }
+    },
+    {
+      "recipe": "mixed-custom-course.json",
+      "selected": 8,
+      "errors": [],
+      "warnings": 2,
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 59
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 74
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 79
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 32
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 27
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 29
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 41
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 28
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 59
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 74
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 79
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 41
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 28
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 59
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 74
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 79
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 41
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 28
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 60
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 23
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 59
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 74
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 79
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 32
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 27
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 29
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 41
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 28
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 59,
+        "medium": 74,
+        "hard": 79,
+        "elite": 51,
+        "legendary": 60,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
+        "legendaryBoss": 23,
+        "repair": 41,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 504
+      }
+    },
+    {
+      "recipe": "money-and-stabilization.json",
+      "selected": 25,
+      "errors": [],
+      "warnings": 3,
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 171
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 167
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 186
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 48
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 66
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 63
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 147
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 81
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 171
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 167
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 186
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 147
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 81
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 171
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 167
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 186
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 147
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 81
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 164
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 81
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 171
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 167
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 186
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 48
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 66
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 63
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 147
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 81
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 171,
+        "medium": 167,
+        "hard": 186,
+        "elite": 157,
+        "legendary": 164,
+        "easyBoss": 48,
+        "mediumBoss": 66,
+        "finalBoss": 63,
+        "legendaryBoss": 81,
+        "repair": 147,
+        "repairSeed": 0,
+        "bridge": 81,
+        "calculation": 82,
+        "integration": 10,
+        "graph": 236,
+        "assets": 33,
+        "totalCanonical": 1331
+      }
+    },
+    {
+      "recipe": "national-economy.json",
+      "selected": 17,
+      "errors": [],
+      "warnings": 3,
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 93
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 95
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 92
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 55
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 45
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 51
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 58
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 37
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 93
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 95
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 92
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 58
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 37
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 93
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 95
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 92
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 58
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 37
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 91
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 35
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 93
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 95
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 92
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 55
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 45
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 51
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 58
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 37
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 93,
+        "medium": 95,
+        "hard": 92,
+        "elite": 81,
+        "legendary": 91,
+        "easyBoss": 55,
+        "mediumBoss": 45,
+        "finalBoss": 51,
+        "legendaryBoss": 35,
+        "repair": 58,
+        "repairSeed": 0,
+        "bridge": 37,
+        "calculation": 67,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 733
+      }
+    },
+    {
+      "recipe": "standard-and-score.json",
+      "selected": 8,
+      "errors": [],
+      "warnings": 2,
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 59
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 74
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 79
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 32
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 27
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 29
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 41
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 28
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 59
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 74
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 79
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 32
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 27
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 29
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 41
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 28
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 59,
+        "medium": 74,
+        "hard": 79,
+        "elite": 51,
+        "legendary": 60,
+        "easyBoss": 32,
+        "mediumBoss": 27,
+        "finalBoss": 29,
+        "legendaryBoss": 23,
+        "repair": 41,
+        "repairSeed": 1,
+        "bridge": 28,
+        "calculation": 54,
+        "integration": 0,
+        "graph": 40,
+        "assets": 7,
+        "totalCanonical": 504
+      }
+    },
+    {
+      "recipe": "timed-and-exam.json",
+      "selected": 1,
+      "errors": [],
+      "warnings": 1,
+      "modes": [
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 8
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 6
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 7
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 4
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 6
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 8
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 6
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 7
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 4
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 6
+            }
+          ],
+          "deficiencies": [],
+          "ok": true
+        }
+      ],
+      "counts": {
+        "easy": 8,
+        "medium": 6,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 4,
+        "assets": 1,
+        "totalCanonical": 53
+      }
+    }
+  ]
+}
