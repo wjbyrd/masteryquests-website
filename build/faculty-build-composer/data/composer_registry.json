@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-10T22:15:00.000Z",
+  "generatedAt": "2026-08-10T22:30:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -1934,14 +1934,18 @@
       "title": "GDP Components",
       "description": "Calculate consumption, investment, government purchases, and net exports.",
       "includedSkills": [
+        "component_classification",
         "consumption_component",
-        "consumption_investment_government",
+        "expenditure_identity",
         "gdp_component_classification",
-        "gdp_components",
         "gdp_components_identity",
+        "imports_accounting",
         "imports_exports_nx",
         "inventory_investment",
-        "investment_component"
+        "inventory_residential_investment",
+        "investment_component",
+        "price_output_decomposition",
+        "transfer_vs_purchase"
       ],
       "excludedNeighboringSkills": [
         "Assigned to gdp-measurement, not this module."
@@ -1963,42 +1967,42 @@
         "national-ledger"
       ],
       "questionCountByRole": {
-        "boss": 9,
+        "boss": 15,
         "bridge": 3,
         "calculation": 7,
         "elite": 5,
         "integration": 0,
         "legendary": 6,
-        "legendaryBoss": 2,
-        "main": 10,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 6,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 15,
+        "medium": 9,
+        "hard": 9,
         "elite": 5,
-        "hard": 5,
-        "legendary": 8,
-        "medium": 6,
+        "legendary": 9,
         "unknown": 9
       },
       "repairCoverage": {
         "directSkillMatches": 6,
-        "mainWithUsableSkill": 32
+        "mainWithUsableSkill": 63
       },
       "bridgeCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 32
+        "mainWithUsableSkill": 63
       },
-      "calculationCoverage": 10,
+      "calculationCoverage": 18,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Supporting slice of GDP and National Output. Use the four-concept family for the richest progression.",
+      "instructionalClassification": "Engine-safe GDP family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in GDP family",
+      "coverageStatusNote": "Phase M2b-1 supplies solo floors with controlled reuse and family-first GDP depth.",
+      "coverageFloorVersion": "phaseM2b1-gdp-national-output-family-maturation-v1"
     },
     {
       "canonicalConceptId": "gdp-measurement",
@@ -3002,10 +3006,12 @@
       "title": "Limits of GDP",
       "description": "Evaluate GDP as a measure of well-being.",
       "includedSkills": [
-        "gdp_counted_not_counted",
-        "gdp_counting_rules",
-        "gdp_definition",
-        "gdp_wellbeing_limits"
+        "distribution_quality",
+        "gdp_welfare_scope",
+        "gdp_wellbeing_limits",
+        "leisure_environment_safety",
+        "marketization_free_services",
+        "nonmarket_underground"
       ],
       "excludedNeighboringSkills": [
         "Assigned to gdp-measurement, not this module."
@@ -3027,42 +3033,42 @@
         "national-ledger"
       ],
       "questionCountByRole": {
-        "boss": 6,
+        "boss": 12,
         "bridge": 1,
         "calculation": 0,
         "elite": 3,
         "integration": 0,
-        "legendary": 3,
-        "legendaryBoss": 1,
-        "main": 7,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 8,
+        "easy": 12,
+        "medium": 9,
+        "hard": 9,
         "elite": 3,
-        "hard": 3,
-        "legendary": 4,
-        "medium": 2,
+        "legendary": 9,
         "unknown": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 20
+        "mainWithUsableSkill": 45
       },
       "bridgeCoverage": {
         "directSkillMatches": 1,
-        "mainWithUsableSkill": 20
+        "mainWithUsableSkill": 45
       },
       "calculationCoverage": 1,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Supplemental concept",
-      "coverageStatus": "supplemental-ready",
-      "coverageStatusLabel": "Supplemental — useful in a combined game",
-      "coverageStatusNote": "Targeted enrichment only: add discriminating application, challenge/mastery, or integration items where useful; do not force every difficulty or checkpoint pool.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Supporting slice of GDP and National Output. Use the four-concept family for the richest progression.",
+      "instructionalClassification": "Engine-safe GDP family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in GDP family",
+      "coverageStatusNote": "Phase M2b-1 supplies solo floors with controlled reuse and family-first GDP depth.",
+      "coverageFloorVersion": "phaseM2b1-gdp-national-output-family-maturation-v1"
     },
     {
       "canonicalConceptId": "liquidity-preference-and-money-market",
@@ -5746,7 +5752,11 @@
       "includedSkills": [
         "gdp_deflator",
         "gdp_deflator_growth",
-        "nominal_vs_real_gdp"
+        "gdp_welfare_scope",
+        "nominal_vs_real_gdp",
+        "price_output_decomposition",
+        "real_gdp_calculation",
+        "real_growth_rate"
       ],
       "excludedNeighboringSkills": [
         "Assigned to gdp-measurement, not this module."
@@ -5769,42 +5779,42 @@
         "national-ledger"
       ],
       "questionCountByRole": {
-        "boss": 3,
+        "boss": 9,
         "bridge": 2,
         "calculation": 3,
         "elite": 4,
         "integration": 0,
         "legendary": 6,
-        "legendaryBoss": 2,
-        "main": 12,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
         "elite": 4,
-        "hard": 6,
-        "legendary": 8,
-        "medium": 5,
+        "legendary": 9,
         "unknown": 6
       },
       "repairCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 27
+        "mainWithUsableSkill": 49
       },
       "bridgeCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 27
+        "mainWithUsableSkill": 49
       },
-      "calculationCoverage": 12,
+      "calculationCoverage": 35,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Supporting slice of GDP and National Output. Use the four-concept family for the richest progression.",
+      "instructionalClassification": "Engine-safe GDP family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in GDP family",
+      "coverageStatusNote": "Phase M2b-1 supplies solo floors with controlled reuse and family-first GDP depth.",
+      "coverageFloorVersion": "phaseM2b1-gdp-national-output-family-maturation-v1"
     },
     {
       "canonicalConceptId": "real-versus-nominal-interest-rates",
@@ -6860,7 +6870,7 @@
   ],
   "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
   "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1",
-  "canonicalQuestionCount": 6946,
-  "librarySha256": "17e7af52d60e0e9aacb0f6256b2b5eb2f2ad7a3bb6c14338d4f2669d891dcaba"
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1",
+  "canonicalQuestionCount": 6996,
+  "librarySha256": "dadb90f1d09a99dbc46bccd1036b2f4da62fa9e8c7ceda4854dd494d6e3db312"
 }

@@ -1,0 +1,38 @@
+{
+  "phase": "phaseM2b1-gdp-national-output-family-maturation-v1",
+  "generatedAt": "2026-08-10T22:30:00.000Z",
+  "passed": true,
+  "pending": false,
+  "summary": "Full-family and Limits-only packages passed bounded browser QA across start, five-mode menus, Standard and Legendary play, checkpoint completion, Repair/Bridge transition rendering, and Standard save/resume with zero console warnings or errors.",
+  "packages": {
+    "family": {
+      "start": true,
+      "fiveModeMenu": true,
+      "standardOrdinary": true,
+      "checkpointRooms": [10, 20, 30],
+      "checkpointOneThreeStageCompletion": true,
+      "repairRendered": true,
+      "bridgeTransitionRendered": true,
+      "legendaryStart": true,
+      "saveResume": {
+        "savedRoom": 3,
+        "continueButtonVisible": true,
+        "resumedRoom": 3
+      }
+    },
+    "limitsOnly": {
+      "start": true,
+      "fiveModeMenu": true,
+      "standardOrdinary": true,
+      "legendaryStart": true,
+      "checkpointRooms": [10, 20, 30]
+    }
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "nonBlockingIssues": [
+    "Nineteen pre-existing neighboring F2/F3 Legendary Boss records lack valid bossStage metadata; cross-family regression normalized those records in memory only and did not modify their source banks."
+  ]
+}

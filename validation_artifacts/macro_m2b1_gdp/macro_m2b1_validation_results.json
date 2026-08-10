@@ -1,0 +1,3535 @@
+{
+  "phase": "phaseM2b1-gdp-national-output-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1",
+  "librarySha256": "dadb90f1d09a99dbc46bccd1036b2f4da62fa9e8c7ceda4854dd494d6e3db312",
+  "beforeCounts": {
+    "gdp-measurement": {
+      "easy": 7,
+      "medium": 6,
+      "hard": 7,
+      "elite": 8,
+      "legendary": 8,
+      "calculation": 6,
+      "integration": 0,
+      "easyBoss": 13,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 73
+    },
+    "gdp-components": {
+      "easy": 5,
+      "medium": 3,
+      "hard": 2,
+      "elite": 5,
+      "legendary": 6,
+      "calculation": 7,
+      "integration": 0,
+      "easyBoss": 9,
+      "mediumBoss": 0,
+      "finalBoss": 0,
+      "legendaryBoss": 2,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 48
+    },
+    "real-versus-nominal-gdp": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 4,
+      "elite": 4,
+      "legendary": 6,
+      "calculation": 3,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 0,
+      "finalBoss": 0,
+      "legendaryBoss": 2,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 2,
+      "total": 36
+    },
+    "limits-of-gdp": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 3,
+      "elite": 3,
+      "legendary": 3,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 6,
+      "mediumBoss": 0,
+      "finalBoss": 0,
+      "legendaryBoss": 1,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "total": 23
+    }
+  },
+  "afterCounts": {
+    "gdp-measurement": {
+      "total": 73,
+      "easy": 7,
+      "medium": 6,
+      "hard": 7,
+      "elite": 8,
+      "legendary": 8,
+      "calculation": 6,
+      "easyBoss": 13,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 12
+    },
+    "gdp-components": {
+      "total": 63,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 5,
+      "legendary": 6,
+      "calculation": 7,
+      "easyBoss": 9,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 18
+    },
+    "real-versus-nominal-gdp": {
+      "total": 49,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 6,
+      "calculation": 3,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 4,
+      "repairSeed": 0,
+      "bridge": 2,
+      "graphLinked": 0,
+      "calculationLinked": 35
+    },
+    "limits-of-gdp": {
+      "total": 45,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 3,
+      "legendary": 6,
+      "calculation": 0,
+      "easyBoss": 6,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "graphLinked": 0,
+      "calculationLinked": 1
+    }
+  },
+  "familyBefore": {
+    "easy": 18,
+    "medium": 15,
+    "hard": 16,
+    "elite": 20,
+    "legendary": 23,
+    "calculation": 16,
+    "integration": 0,
+    "easyBoss": 31,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 8,
+    "repair": 18,
+    "repairSeed": 0,
+    "bridge": 9,
+    "total": 180
+  },
+  "familyAfter": {
+    "total": 230,
+    "easy": 25,
+    "medium": 24,
+    "hard": 25,
+    "elite": 20,
+    "legendary": 26,
+    "calculation": 16,
+    "easyBoss": 31,
+    "mediumBoss": 12,
+    "finalBoss": 12,
+    "legendaryBoss": 12,
+    "repair": 18,
+    "repairSeed": 0,
+    "bridge": 9,
+    "graphLinked": 0,
+    "calculationLinked": 66
+  },
+  "protectedIntegrity": {
+    "aggregate-demand": {
+      "before": "f5f3833ce35f8d82337fab4fb24c4e739d97adc4adb9acbbe1d8678c97ea6af3",
+      "after": "f5f3833ce35f8d82337fab4fb24c4e739d97adc4adb9acbbe1d8678c97ea6af3",
+      "unchanged": true
+    },
+    "aggregate-supply": {
+      "before": "08165f895b4674960a20c2b4213e781cfb29ee9dee06c11862e450b174cfe38e",
+      "after": "08165f895b4674960a20c2b4213e781cfb29ee9dee06c11862e450b174cfe38e",
+      "unchanged": true
+    },
+    "bank-money-creation": {
+      "before": "6499dc6c1f2d9809403cbc15055e60edb5a891f663cd090be2c6f1fd1273e824",
+      "after": "6499dc6c1f2d9809403cbc15055e60edb5a891f663cd090be2c6f1fd1273e824",
+      "unchanged": true
+    },
+    "binding-price-ceilings": {
+      "before": "e4e031cb9f27eab092717fd3506da2aa7734a61cb69cfb88c027247ef72a0d47",
+      "after": "e4e031cb9f27eab092717fd3506da2aa7734a61cb69cfb88c027247ef72a0d47",
+      "unchanged": true
+    },
+    "binding-price-floors": {
+      "before": "73c30cd521e48ceb1b607a3b29a2157647c38e90f528c69cf5d7aa8c62f78bab",
+      "after": "73c30cd521e48ceb1b607a3b29a2157647c38e90f528c69cf5d7aa8c62f78bab",
+      "unchanged": true
+    },
+    "central-bank-and-federal-reserve": {
+      "before": "f1c387369ab725df6dbdef337c792b6efd5b3a2e7d25f4343206582b95544ad8",
+      "after": "f1c387369ab725df6dbdef337c792b6efd5b3a2e7d25f4343206582b95544ad8",
+      "unchanged": true
+    },
+    "competitive-markets": {
+      "before": "0b08708c3f7f407e3579a188ea6be51ee7fa9b38adf1871fb32a51532899f416",
+      "after": "0b08708c3f7f407e3579a188ea6be51ee7fa9b38adf1871fb32a51532899f416",
+      "unchanged": true
+    },
+    "consumer-and-producer-surplus": {
+      "before": "a5e3b84333beac97055df48efae3d1d380c1c308463c5a5a2302fe2cf95a64eb",
+      "after": "a5e3b84333beac97055df48efae3d1d380c1c308463c5a5a2302fe2cf95a64eb",
+      "unchanged": true
+    },
+    "costs-of-production": {
+      "before": "36209035400daead546b47182d052d88dbfffc4fd681c3c7732723502e5bb88e",
+      "after": "36209035400daead546b47182d052d88dbfffc4fd681c3c7732723502e5bb88e",
+      "unchanged": true
+    },
+    "cpi-and-inflation-measurement": {
+      "before": "4710aba5648d1efd682469fe9d6de56c0ae7a374e03f3aed7818d0eb23408d94",
+      "after": "4710aba5648d1efd682469fe9d6de56c0ae7a374e03f3aed7818d0eb23408d94",
+      "unchanged": true
+    },
+    "cpi-bias": {
+      "before": "e0e599201e80a790f11b0925b8b2e7b723128212e731f90638be890deee83a50",
+      "after": "e0e599201e80a790f11b0925b8b2e7b723128212e731f90638be890deee83a50",
+      "unchanged": true
+    },
+    "cpi-versus-gdp-deflator": {
+      "before": "cfffdb74fd3fca2eee40b4a77452bc7e07e6f90a33181d31f21f3bf4d4a48978",
+      "after": "cfffdb74fd3fca2eee40b4a77452bc7e07e6f90a33181d31f21f3bf4d4a48978",
+      "unchanged": true
+    },
+    "demand": {
+      "before": "678f5d287352ec109769813e0a4f14735a18d0ccd5eae2f64fcdaf2329594bc4",
+      "after": "678f5d287352ec109769813e0a4f14735a18d0ccd5eae2f64fcdaf2329594bc4",
+      "unchanged": true
+    },
+    "disinflation-and-policy": {
+      "before": "61a4b56ede41cfb42f9a849e620ef3622e182aa2abf2ad7d20aa4018b32e36c1",
+      "after": "61a4b56ede41cfb42f9a849e620ef3622e182aa2abf2ad7d20aa4018b32e36c1",
+      "unchanged": true
+    },
+    "economic-growth-policy": {
+      "before": "8e0557685bca1b033db2567dba95c7cb91cbf90112da1f81f6abec492e065be4",
+      "after": "8e0557685bca1b033db2567dba95c7cb91cbf90112da1f81f6abec492e065be4",
+      "unchanged": true
+    },
+    "economist-policy-role": {
+      "before": "056917a37d3ff767422303bca187f999a7eaecfd472fdcc69dc7a52dbad09b3b",
+      "after": "056917a37d3ff767422303bca187f999a7eaecfd472fdcc69dc7a52dbad09b3b",
+      "unchanged": true
+    },
+    "elasticity": {
+      "before": "c6b3bc9c3e86cc14a53a088c4d8631cef59c06c0c637823741a87fbb29966f5e",
+      "after": "c6b3bc9c3e86cc14a53a088c4d8631cef59c06c0c637823741a87fbb29966f5e",
+      "unchanged": true
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "before": "396932ab97fa8814331f341791a8fb9863f0e09a33cb5421cad94f79bd85672d",
+      "after": "396932ab97fa8814331f341791a8fb9863f0e09a33cb5421cad94f79bd85672d",
+      "unchanged": true
+    },
+    "fiscal-policy-and-aggregate-demand": {
+      "before": "a11f16cae0f5ee2af674e8b0a62135e4dcf774507a190d660ee8c09376dc8445",
+      "after": "a11f16cae0f5ee2af674e8b0a62135e4dcf774507a190d660ee8c09376dc8445",
+      "unchanged": true
+    },
+    "fisher-effect": {
+      "before": "d0add98fb302d009d7884dcd9f7d9b28e63e29dc98f8bdc1d5c69088b76910c0",
+      "after": "d0add98fb302d009d7884dcd9f7d9b28e63e29dc98f8bdc1d5c69088b76910c0",
+      "unchanged": true
+    },
+    "gains-from-trade": {
+      "before": "a22cfedcf0d0895fae50eedd4a4637bddf25ab27a95c53ae575f8cf2d4f8a8a6",
+      "after": "a22cfedcf0d0895fae50eedd4a4637bddf25ab27a95c53ae575f8cf2d4f8a8a6",
+      "unchanged": true
+    },
+    "gdp-measurement": {
+      "before": "bf1d4460079584f2859f67ac449ea81eff4d3a3842807afdae3827c46f808698",
+      "after": "bf1d4460079584f2859f67ac449ea81eff4d3a3842807afdae3827c46f808698",
+      "unchanged": true
+    },
+    "incentives": {
+      "before": "f0bd62ce9b800c35538f370206d6ee2a78da62f4db6b05c83711e97d7b61877f",
+      "after": "f0bd62ce9b800c35538f370206d6ee2a78da62f4db6b05c83711e97d7b61877f",
+      "unchanged": true
+    },
+    "indexing-and-real-values": {
+      "before": "30c80225621317568988733ef7b7eae3d035b51a24641300a561ecd71bba8698",
+      "after": "30c80225621317568988733ef7b7eae3d035b51a24641300a561ecd71bba8698",
+      "unchanged": true
+    },
+    "inflation-costs": {
+      "before": "ac7702118999a22ef7fb6a09424565707751b0fcdea2f86f3d7e95095f7e0f28",
+      "after": "ac7702118999a22ef7fb6a09424565707751b0fcdea2f86f3d7e95095f7e0f28",
+      "unchanged": true
+    },
+    "inflation-tax-and-deflation": {
+      "before": "6ad4db90d2fb6258cd47f2ee3d09b6c0d944bbf3549c9c4faa7fc887e4e3e5d8",
+      "after": "6ad4db90d2fb6258cd47f2ee3d09b6c0d944bbf3549c9c4faa7fc887e4e3e5d8",
+      "unchanged": true
+    },
+    "integrated-economic-analysis": {
+      "before": "fb242dadc158e21daf032b4e3e097294ff8e05763a81d5236ff8e3b20c478175",
+      "after": "fb242dadc158e21daf032b4e3e097294ff8e05763a81d5236ff8e3b20c478175",
+      "unchanged": true
+    },
+    "integrated-macroeconomic-analysis": {
+      "before": "013d27bbeb2eca2bcc02baa75019bf9a46856f7601a861c058bead7d016a7d6f",
+      "after": "013d27bbeb2eca2bcc02baa75019bf9a46856f7601a861c058bead7d016a7d6f",
+      "unchanged": true
+    },
+    "international-trade-and-trade-policy": {
+      "before": "015c3c983c6f6fa75d6a04472e9fabcbbc1fd835cb9408340289402942dbb1df",
+      "after": "015c3c983c6f6fa75d6a04472e9fabcbbc1fd835cb9408340289402942dbb1df",
+      "unchanged": true
+    },
+    "labor-market-institutions": {
+      "before": "ac8e19ca723aefa9fbf6f87291e177c1dae8565d62953938d2b0edf9c5274e64",
+      "after": "ac8e19ca723aefa9fbf6f87291e177c1dae8565d62953938d2b0edf9c5274e64",
+      "unchanged": true
+    },
+    "liquidity-preference-and-money-market": {
+      "before": "b75e58155cecaefb6c80025aba6930b87aa06fa4f85c9368810846eed0740eec",
+      "after": "b75e58155cecaefb6c80025aba6930b87aa06fa4f85c9368810846eed0740eec",
+      "unchanged": true
+    },
+    "living-standards-and-growth": {
+      "before": "2b1c6cdb752a96cb1aaeb9750ba47476314d64bfe2b650caa6fef5806d733bf3",
+      "after": "2b1c6cdb752a96cb1aaeb9750ba47476314d64bfe2b650caa6fef5806d733bf3",
+      "unchanged": true
+    },
+    "long-run-macroeconomic-adjustment": {
+      "before": "e3a20d0a3fca6482b03a333569182d78ffb6446d26812f81ed524cb7a1c797b7",
+      "after": "e3a20d0a3fca6482b03a333569182d78ffb6446d26812f81ed524cb7a1c797b7",
+      "unchanged": true
+    },
+    "long-run-phillips-curve": {
+      "before": "1d0bc14906bee004140f8b3da4e51b044c0d37dd39a8e5e5f7bdbab093e26478",
+      "after": "1d0bc14906bee004140f8b3da4e51b044c0d37dd39a8e5e5f7bdbab093e26478",
+      "unchanged": true
+    },
+    "macroeconomic-equilibrium-and-shocks": {
+      "before": "bdf7ed1199d1d3627d61efd0621cca7ecffe62277370e3c8ee1c646eafd12735",
+      "after": "bdf7ed1199d1d3627d61efd0621cca7ecffe62277370e3c8ee1c646eafd12735",
+      "unchanged": true
+    },
+    "marginal-analysis": {
+      "before": "e51cb2d713164a5c8dfec9756ba59af93e707185b2452c878c00126ac0dc4cad",
+      "after": "e51cb2d713164a5c8dfec9756ba59af93e707185b2452c878c00126ac0dc4cad",
+      "unchanged": true
+    },
+    "market-equilibrium": {
+      "before": "35d5c0dc971a7e46a84aa7601a37a50442f4d123bafb875acde9956ff9f58cc7",
+      "after": "35d5c0dc971a7e46a84aa7601a37a50442f4d123bafb875acde9956ff9f58cc7",
+      "unchanged": true
+    },
+    "market-failures": {
+      "before": "77c6f322b255c7537593e0c88089bbd465206f53f35d429f77fc0e1861f83517",
+      "after": "77c6f322b255c7537593e0c88089bbd465206f53f35d429f77fc0e1861f83517",
+      "unchanged": true
+    },
+    "micro-versus-macro": {
+      "before": "09ddb275075a1a047abe268cd140ec32a7b790cfd97a91140c815f088439d28f",
+      "after": "09ddb275075a1a047abe268cd140ec32a7b790cfd97a91140c815f088439d28f",
+      "unchanged": true
+    },
+    "models-and-assumptions": {
+      "before": "cb1b4187e19821e042570eeffd412b6d8955fd7aa4c0999c71647a5522978474",
+      "after": "cb1b4187e19821e042570eeffd412b6d8955fd7aa4c0999c71647a5522978474",
+      "unchanged": true
+    },
+    "monetary-control-limits": {
+      "before": "88816cfe122041dec9fdc439002e4540d4e340e486de185e5b43c57a64292abc",
+      "after": "88816cfe122041dec9fdc439002e4540d4e340e486de185e5b43c57a64292abc",
+      "unchanged": true
+    },
+    "monetary-neutrality": {
+      "before": "e2933194dd0061889e091dda5d61cd619f6647d52c0992eea62e2feb5a4e9aa7",
+      "after": "e2933194dd0061889e091dda5d61cd619f6647d52c0992eea62e2feb5a4e9aa7",
+      "unchanged": true
+    },
+    "monetary-policy-tools": {
+      "before": "7658f343a3083c27338a5ddb556ee3564d3d49a3462967ed4b66b572fbbf1003",
+      "after": "7658f343a3083c27338a5ddb556ee3564d3d49a3462967ed4b66b572fbbf1003",
+      "unchanged": true
+    },
+    "monetary-policy-transmission": {
+      "before": "f51568b903ec43a366e73ed38990a68a4ac56dca8a9236122c946926cba65b39",
+      "after": "f51568b903ec43a366e73ed38990a68a4ac56dca8a9236122c946926cba65b39",
+      "unchanged": true
+    },
+    "money-functions-and-measures": {
+      "before": "89c6780dee12fb7ad460203d1bb849b6c8eca60f003ce0db227bd5963faa0c04",
+      "after": "89c6780dee12fb7ad460203d1bb849b6c8eca60f003ce0db227bd5963faa0c04",
+      "unchanged": true
+    },
+    "monopolistic-competition": {
+      "before": "096281f4435b883a24ecbf2176345696b999f60a044418b67b46dc10112ed405",
+      "after": "096281f4435b883a24ecbf2176345696b999f60a044418b67b46dc10112ed405",
+      "unchanged": true
+    },
+    "monopoly": {
+      "before": "86956193571e7bd1644e46fd894e8bea059cac8b7a510d77e922aac2af496bb6",
+      "after": "86956193571e7bd1644e46fd894e8bea059cac8b7a510d77e922aac2af496bb6",
+      "unchanged": true
+    },
+    "natural-rate-of-unemployment": {
+      "before": "bb85561c8f8a99b01f99346508f656b1a725b3b14994bbbbdd69d203a314841a",
+      "after": "bb85561c8f8a99b01f99346508f656b1a725b3b14994bbbbdd69d203a314841a",
+      "unchanged": true
+    },
+    "oligopoly": {
+      "before": "d069451f729de3c477cab43fb28110050b6d21a7700c5b4a0cc5c76d209bcbca",
+      "after": "d069451f729de3c477cab43fb28110050b6d21a7700c5b4a0cc5c76d209bcbca",
+      "unchanged": true
+    },
+    "opportunity-cost": {
+      "before": "32e202117d5f6fcea7ae479260e4ef9dbe628d5270616b4946720b0030f87790",
+      "after": "32e202117d5f6fcea7ae479260e4ef9dbe628d5270616b4946720b0030f87790",
+      "unchanged": true
+    },
+    "perfect-competition": {
+      "before": "c43e9f6fe88d853fb89b44a05d9a895b55b0746238031400f3c67c6df7f49b0c",
+      "after": "c43e9f6fe88d853fb89b44a05d9a895b55b0746238031400f3c67c6df7f49b0c",
+      "unchanged": true
+    },
+    "phillips-curve-expectations": {
+      "before": "fbf1180d846c994061ab141a2cc8f2f8539c211291c715fb309c2ef3f8bda87e",
+      "after": "fbf1180d846c994061ab141a2cc8f2f8539c211291c715fb309c2ef3f8bda87e",
+      "unchanged": true
+    },
+    "positive-versus-normative-analysis": {
+      "before": "68b6d78497a6600b9021fda1d5defec21edb1f03775dd5fb9148e807fe3de3a7",
+      "after": "68b6d78497a6600b9021fda1d5defec21edb1f03775dd5fb9148e807fe3de3a7",
+      "unchanged": true
+    },
+    "price-signals": {
+      "before": "25f34c4f59d5e39ee46e38532bb8142d64f08c2c302606d6a8db8e7f9fcc0820",
+      "after": "25f34c4f59d5e39ee46e38532bb8142d64f08c2c302606d6a8db8e7f9fcc0820",
+      "unchanged": true
+    },
+    "production-possibilities-frontier": {
+      "before": "8b65de30e7caf80e514795061073806f49e94883163b1ac2d3f5d6d49a465f54",
+      "after": "8b65de30e7caf80e514795061073806f49e94883163b1ac2d3f5d6d49a465f54",
+      "unchanged": true
+    },
+    "productivity-measurement": {
+      "before": "4b30e4f886cf12780df375ac357ea7d2dd3c1dd2dd7e660ec7dc8edbfdda58ed",
+      "after": "4b30e4f886cf12780df375ac357ea7d2dd3c1dd2dd7e660ec7dc8edbfdda58ed",
+      "unchanged": true
+    },
+    "quantity-theory-of-money": {
+      "before": "47df144e62c3438d9c155e5344128ad5941da0697589971cd8f888ce0d8dcac3",
+      "after": "47df144e62c3438d9c155e5344128ad5941da0697589971cd8f888ce0d8dcac3",
+      "unchanged": true
+    },
+    "real-versus-nominal-interest-rates": {
+      "before": "86da17680b01c7875645c83ad15ceff62e1f0e825f793b250dc0a934879532f3",
+      "after": "86da17680b01c7875645c83ad15ceff62e1f0e825f793b250dc0a934879532f3",
+      "unchanged": true
+    },
+    "sacrifice-ratio": {
+      "before": "0fe59748e24a6c109f096baf65511101647306f0d556a84fd6657e1ec367d157",
+      "after": "0fe59748e24a6c109f096baf65511101647306f0d556a84fd6657e1ec367d157",
+      "unchanged": true
+    },
+    "scarcity-and-tradeoffs": {
+      "before": "cc0aa8fd02074c3ae3b76b4c8a59f8377f5db931001074ad81385d999cbf8bcc",
+      "after": "cc0aa8fd02074c3ae3b76b4c8a59f8377f5db931001074ad81385d999cbf8bcc",
+      "unchanged": true
+    },
+    "short-run-phillips-curve": {
+      "before": "8fd144eee332b46612c3f1c819ea690a6e471672a22a486acbdc62ea67effeea",
+      "after": "8fd144eee332b46612c3f1c819ea690a6e471672a22a486acbdc62ea67effeea",
+      "unchanged": true
+    },
+    "sources-of-productivity": {
+      "before": "e5e83721d618d855bdf7f7fae1833d1e306243fc88896cc2e38dc673cd02e60b",
+      "after": "e5e83721d618d855bdf7f7fae1833d1e306243fc88896cc2e38dc673cd02e60b",
+      "unchanged": true
+    },
+    "stabilization-policy": {
+      "before": "3f85ee794b85699bd768084e93c5c88fc0521af0909a1d31f000cc1742e276ba",
+      "after": "3f85ee794b85699bd768084e93c5c88fc0521af0909a1d31f000cc1742e276ba",
+      "unchanged": true
+    },
+    "statutory-versus-economic-tax-incidence": {
+      "before": "a028a8f69bd8ccb18726569dd24ea93e0b59b1c86e6b95bc732f2a7bf81b8575",
+      "after": "a028a8f69bd8ccb18726569dd24ea93e0b59b1c86e6b95bc732f2a7bf81b8575",
+      "unchanged": true
+    },
+    "supply": {
+      "before": "82b9b097593de96e8e928b51ac01b6b944b9ddca6ea907f8f403e6be0db5547b",
+      "after": "82b9b097593de96e8e928b51ac01b6b944b9ddca6ea907f8f403e6be0db5547b",
+      "unchanged": true
+    },
+    "tax-incidence": {
+      "before": "7de1e08349067602dc742a1fc210638fa57a18d53268677c7f5b3c1c7e4a7721",
+      "after": "7de1e08349067602dc742a1fc210638fa57a18d53268677c7f5b3c1c7e4a7721",
+      "unchanged": true
+    },
+    "tax-wedges-and-revenue": {
+      "before": "22cc926818c4babc65a8e93e7856d74add88283d202e9f8bb74e5c0e3b8d7e6a",
+      "after": "22cc926818c4babc65a8e93e7856d74add88283d202e9f8bb74e5c0e3b8d7e6a",
+      "unchanged": true
+    },
+    "unemployment-measurement": {
+      "before": "1b49232c947f7bdd4e2913b11cc43a7f0c17c6e294868abf6bdedc2e4e576d4f",
+      "after": "1b49232c947f7bdd4e2913b11cc43a7f0c17c6e294868abf6bdedc2e4e576d4f",
+      "unchanged": true
+    },
+    "unemployment-types": {
+      "before": "a8c359f9106650070f84b78f3d7ee86dadef966cb6c4964e5e0846cc6681f7f3",
+      "after": "a8c359f9106650070f84b78f3d7ee86dadef966cb6c4964e5e0846cc6681f7f3",
+      "unchanged": true
+    }
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "quality": {
+    "groups": {
+      "gdp-components::easy": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          6,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.003
+      },
+      "gdp-components::medium": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.04
+      },
+      "gdp-components::hard": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.12
+      },
+      "gdp-components::elite": {
+        "count": 5,
+        "longest": 1,
+        "positions": [
+          5,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 1.047
+      },
+      "gdp-components::legendary": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          6,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.029
+      },
+      "gdp-components::calculation": {
+        "count": 7,
+        "longest": 1,
+        "positions": [
+          5,
+          1,
+          1,
+          0
+        ],
+        "uniquelyLongestRate": 0.143,
+        "meanCorrectToDistractorRatio": 1.095
+      },
+      "gdp-components::easyBoss": {
+        "count": 9,
+        "longest": 1,
+        "positions": [
+          9,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.111,
+        "meanCorrectToDistractorRatio": 1.014
+      },
+      "gdp-components::mediumBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.119
+      },
+      "gdp-components::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.088
+      },
+      "gdp-components::legendaryBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "gdp-components::repair": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          5,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.158
+      },
+      "gdp-components::bridge": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.918
+      },
+      "real-versus-nominal-gdp::easy": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          4,
+          0,
+          0,
+          2
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.185
+      },
+      "real-versus-nominal-gdp::medium": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.119
+      },
+      "real-versus-nominal-gdp::hard": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.201
+      },
+      "real-versus-nominal-gdp::elite": {
+        "count": 4,
+        "longest": 1,
+        "positions": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.25,
+        "meanCorrectToDistractorRatio": 1.295
+      },
+      "real-versus-nominal-gdp::legendary": {
+        "count": 6,
+        "longest": 2,
+        "positions": [
+          6,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.175
+      },
+      "real-versus-nominal-gdp::calculation": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "real-versus-nominal-gdp::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.936
+      },
+      "real-versus-nominal-gdp::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.153
+      },
+      "real-versus-nominal-gdp::finalBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.027
+      },
+      "real-versus-nominal-gdp::legendaryBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.944
+      },
+      "real-versus-nominal-gdp::repair": {
+        "count": 4,
+        "longest": 0,
+        "positions": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.804
+      },
+      "real-versus-nominal-gdp::bridge": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.06
+      },
+      "limits-of-gdp::easy": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.308
+      },
+      "limits-of-gdp::medium": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.15
+      },
+      "limits-of-gdp::hard": {
+        "count": 6,
+        "longest": 3,
+        "positions": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.071
+      },
+      "limits-of-gdp::elite": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.125
+      },
+      "limits-of-gdp::legendary": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.058
+      },
+      "limits-of-gdp::easyBoss": {
+        "count": 6,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 0.836
+      },
+      "limits-of-gdp::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.974
+      },
+      "limits-of-gdp::finalBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.023
+      },
+      "limits-of-gdp::legendaryBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.16
+      },
+      "limits-of-gdp::repair": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.879
+      },
+      "limits-of-gdp::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.931
+      }
+    },
+    "exact": [],
+    "near": [
+      {
+        "a": "ECON-NL-EASY-12",
+        "b": "ECON-NL-EASYBOSS-2008",
+        "score": 1
+      },
+      {
+        "a": "ECON-NL-ELITE-313",
+        "b": "ECON-NL-LEGENDARY-9005",
+        "score": 0.923
+      }
+    ],
+    "repeatedAnswerSets": [
+      [
+        "ECON-NL-EASY-14",
+        "ECON-NL-EASY-15"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-NL-MEDIUM-110"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-NL-MEDIUM-111"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-NL-ELITE-310"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-EC-EASYBOSS-17019"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-EC-EASYBOSS-17020"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-NL-EASYBOSS-2007"
+      ],
+      [
+        "ECON-NL-EASY-14",
+        "ECON-NL-GDP-COMPONENTS-IDENTITY-5007"
+      ],
+      [
+        "ECON-NL-LEGENDARY-9006",
+        "ECON-NL-LEGENDARY-9007"
+      ]
+    ],
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedRepeatedAnswerSets": [],
+    "weakDistractors": 0,
+    "visibleAnswerLeakage": 0,
+    "grammaticalCueFlags": 0
+  },
+  "routeAudit": {
+    "gdp-measurement": {
+      "repairRecords": 6,
+      "repairReachable": 6,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-NL-GDP-COUNTING-RULES-6001": [],
+        "ECON-NL-INCOME-EXPENDITURE-IDENTITY-6000": [],
+        "ECON-NL-INTERMEDIATE-VS-FINAL-GOODS-6002": []
+      }
+    },
+    "gdp-components": {
+      "repairRecords": 6,
+      "repairReachable": 6,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-NL-GDP-COMPONENTS-IDENTITY-6003": [
+          "gdp-measurement"
+        ],
+        "ECON-NL-IMPORTS-EXPORTS-NX-6004": [
+          "real-versus-nominal-gdp"
+        ],
+        "ECON-NL-INVENTORY-INVESTMENT-6005": [
+          "gdp-measurement"
+        ]
+      }
+    },
+    "real-versus-nominal-gdp": {
+      "repairRecords": 4,
+      "repairReachable": 4,
+      "bridgeRecords": 2,
+      "bridgeReachable": 2,
+      "bridgeDestinations": {
+        "ECON-NL-GDP-DEFLATOR-6007": [
+          "gdp-measurement"
+        ],
+        "ECON-NL-NOMINAL-VS-REAL-GDP-6006": [
+          "limits-of-gdp"
+        ]
+      }
+    },
+    "limits-of-gdp": {
+      "repairRecords": 2,
+      "repairReachable": 2,
+      "bridgeRecords": 1,
+      "bridgeReachable": 1,
+      "bridgeDestinations": {
+        "ECON-NL-GDP-WELLBEING-LIMITS-6008": [
+          "gdp-measurement"
+        ]
+      }
+    }
+  },
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "gdp-measurement": 1573,
+          "limits-of-gdp": 1061,
+          "real-versus-nominal-gdp": 1284,
+          "gdp-components": 1482
+        },
+        "shares": {
+          "gdp-measurement": 0.2913,
+          "gdp-components": 0.2744,
+          "real-versus-nominal-gdp": 0.2378,
+          "limits-of-gdp": 0.1965
+        }
+      },
+      "boss": {
+        "counts": {
+          "gdp-measurement": 545,
+          "gdp-components": 467,
+          "limits-of-gdp": 424,
+          "real-versus-nominal-gdp": 364
+        },
+        "shares": {
+          "gdp-measurement": 0.3028,
+          "gdp-components": 0.2594,
+          "real-versus-nominal-gdp": 0.2022,
+          "limits-of-gdp": 0.2356
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "real-versus-nominal-gdp": 1376,
+          "gdp-components": 1639,
+          "gdp-measurement": 1774,
+          "limits-of-gdp": 1211
+        },
+        "shares": {
+          "gdp-measurement": 0.2957,
+          "gdp-components": 0.2732,
+          "real-versus-nominal-gdp": 0.2293,
+          "limits-of-gdp": 0.2018
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "gdp-components": 1648,
+          "real-versus-nominal-gdp": 1434,
+          "gdp-measurement": 1746,
+          "limits-of-gdp": 1172
+        },
+        "shares": {
+          "gdp-measurement": 0.291,
+          "gdp-components": 0.2747,
+          "real-versus-nominal-gdp": 0.239,
+          "limits-of-gdp": 0.1953
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "limits-of-gdp": 1251,
+          "gdp-components": 1237,
+          "real-versus-nominal-gdp": 1264,
+          "gdp-measurement": 1648
+        },
+        "shares": {
+          "gdp-measurement": 0.3052,
+          "gdp-components": 0.2291,
+          "real-versus-nominal-gdp": 0.2341,
+          "limits-of-gdp": 0.2317
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "gdp-components": 454,
+          "real-versus-nominal-gdp": 434,
+          "gdp-measurement": 454,
+          "limits-of-gdp": 458
+        },
+        "shares": {
+          "gdp-measurement": 0.2522,
+          "gdp-components": 0.2522,
+          "real-versus-nominal-gdp": 0.2411,
+          "limits-of-gdp": 0.2544
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "gdp-measurement": 1620,
+          "gdp-components": 1475,
+          "real-versus-nominal-gdp": 1222,
+          "limits-of-gdp": 1083
+        },
+        "shares": {
+          "gdp-measurement": 0.3,
+          "gdp-components": 0.2731,
+          "real-versus-nominal-gdp": 0.2263,
+          "limits-of-gdp": 0.2006
+        }
+      },
+      "boss": {
+        "counts": {
+          "gdp-measurement": 554,
+          "gdp-components": 469,
+          "real-versus-nominal-gdp": 359,
+          "limits-of-gdp": 418
+        },
+        "shares": {
+          "gdp-measurement": 0.3078,
+          "gdp-components": 0.2606,
+          "real-versus-nominal-gdp": 0.1994,
+          "limits-of-gdp": 0.2322
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "gdp-measurement": 0,
+          "gdp-components": 0,
+          "real-versus-nominal-gdp": 0,
+          "limits-of-gdp": 0
+        }
+      }
+    }
+  },
+  "soloReuse": {
+    "gdp-components": {
+      "standard": {
+        "firstReuse": {
+          "easy": 8
+        },
+        "available": {
+          "easy": 7,
+          "easyBoss": 9,
+          "medium": 9,
+          "mediumBoss": 3,
+          "hard": 9,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 8,
+          "medium": 10,
+          "hard": 10
+        },
+        "available": {
+          "easy": 7,
+          "medium": 9,
+          "hard": 9
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 8,
+          "medium": 10,
+          "hard": 10
+        },
+        "available": {
+          "easy": 7,
+          "medium": 9,
+          "hard": 9
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 8
+        },
+        "available": {
+          "easy": 7,
+          "easyBoss": 9,
+          "medium": 9,
+          "mediumBoss": 3,
+          "hard": 9,
+          "finalBoss": 3
+        }
+      }
+    },
+    "real-versus-nominal-gdp": {
+      "standard": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 7,
+          "mediumBoss": 3,
+          "hard": 8,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 6,
+          "medium": 7,
+          "hard": 8
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 6,
+          "medium": 7,
+          "hard": 8
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 8,
+          "hard": 9
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 3,
+          "medium": 7,
+          "mediumBoss": 3,
+          "hard": 8,
+          "finalBoss": 3
+        }
+      }
+    },
+    "limits-of-gdp": {
+      "standard": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 6,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      },
+      "timed": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "exam": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "medium": 6,
+          "hard": 6
+        }
+      },
+      "legendary": {
+        "firstReuse": {
+          "legendary": 7,
+          "legendaryBoss": 4
+        },
+        "available": {
+          "legendary": 6,
+          "legendaryBoss": 3
+        }
+      },
+      "score": {
+        "firstReuse": {
+          "easy": 7,
+          "medium": 7,
+          "hard": 7
+        },
+        "available": {
+          "easy": 6,
+          "easyBoss": 6,
+          "medium": 6,
+          "mediumBoss": 3,
+          "hard": 6,
+          "finalBoss": 3
+        }
+      }
+    }
+  },
+  "neighboringLegendaryIssues": [
+    {
+      "configuration": "A",
+      "conceptId": "cpi-and-inflation-measurement",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9108",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "cpi-and-inflation-measurement",
+      "questionId": "P52A-CPI-LB-001",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "cpi-and-inflation-measurement",
+      "questionId": "P52A-CPI-LB-002",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "cpi-versus-gdp-deflator",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9111",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "cpi-bias",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9109",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "cpi-bias",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9110",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "cpi-bias",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9115",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "indexing-and-real-values",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9112",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "indexing-and-real-values",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9113",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "A",
+      "conceptId": "real-versus-nominal-interest-rates",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9114",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "productivity-measurement",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9118",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "sources-of-productivity",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9119",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "sources-of-productivity",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9120",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "sources-of-productivity",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9121",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "living-standards-and-growth",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9116",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "living-standards-and-growth",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9117",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "living-standards-and-growth",
+      "questionId": "P52B-S2-LSG-LB-001",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "economic-growth-policy",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9122",
+      "issue": "pre-existing missing/invalid bossStage"
+    },
+    {
+      "configuration": "B",
+      "conceptId": "economic-growth-policy",
+      "questionId": "ECON-NL-LEGENDARYBOSS-9123",
+      "issue": "pre-existing missing/invalid bossStage"
+    }
+  ],
+  "simulation": {
+    "totalSessions": 2000,
+    "solo": {
+      "gdp-components": {
+        "name": "gdp-components solo",
+        "perMode": 50,
+        "totalSessions": 250,
+        "byMode": {
+          "standard": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1644,
+            "representation": {
+              "ordinary": {
+                "gdp-components": 1350
+              },
+              "boss": {
+                "gdp-components": 450
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-components": 822
+              },
+              "bridge": {
+                "gdp-components": 822
+              }
+            },
+            "calculationExposure": 748,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1500,
+            "auxiliarySelections": 1268,
+            "representation": {
+              "ordinary": {
+                "gdp-components": 1500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-components": 634
+              },
+              "bridge": {
+                "gdp-components": 634
+              }
+            },
+            "calculationExposure": 620,
+            "duplicateCanonicalSelectionsBySession": 250,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1500,
+            "auxiliarySelections": 1254,
+            "representation": {
+              "ordinary": {
+                "gdp-components": 1500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-components": 627
+              },
+              "bridge": {
+                "gdp-components": 627
+              }
+            },
+            "calculationExposure": 616,
+            "duplicateCanonicalSelectionsBySession": 250,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1666,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "gdp-components": 1350
+              },
+              "legendaryBoss": {
+                "gdp-components": 450
+              },
+              "repair": {
+                "gdp-components": 833
+              },
+              "bridge": {
+                "gdp-components": 833
+              }
+            },
+            "calculationExposure": 150,
+            "duplicateCanonicalSelectionsBySession": 1350,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1682,
+            "representation": {
+              "ordinary": {
+                "gdp-components": 1350
+              },
+              "boss": {
+                "gdp-components": 450
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-components": 841
+              },
+              "bridge": {
+                "gdp-components": 841
+              }
+            },
+            "calculationExposure": 746,
+            "duplicateCanonicalSelectionsBySession": 100,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "real-versus-nominal-gdp": {
+        "name": "real-versus-nominal-gdp solo",
+        "perMode": 50,
+        "totalSessions": 250,
+        "byMode": {
+          "standard": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1642,
+            "representation": {
+              "ordinary": {
+                "real-versus-nominal-gdp": 1350
+              },
+              "boss": {
+                "real-versus-nominal-gdp": 450
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "real-versus-nominal-gdp": 821
+              },
+              "bridge": {
+                "real-versus-nominal-gdp": 821
+              }
+            },
+            "calculationExposure": 1040,
+            "duplicateCanonicalSelectionsBySession": 300,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1500,
+            "auxiliarySelections": 1314,
+            "representation": {
+              "ordinary": {
+                "real-versus-nominal-gdp": 1500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "real-versus-nominal-gdp": 657
+              },
+              "bridge": {
+                "real-versus-nominal-gdp": 657
+              }
+            },
+            "calculationExposure": 890,
+            "duplicateCanonicalSelectionsBySession": 450,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1500,
+            "auxiliarySelections": 1288,
+            "representation": {
+              "ordinary": {
+                "real-versus-nominal-gdp": 1500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "real-versus-nominal-gdp": 644
+              },
+              "bridge": {
+                "real-versus-nominal-gdp": 644
+              }
+            },
+            "calculationExposure": 908,
+            "duplicateCanonicalSelectionsBySession": 450,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1666,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "real-versus-nominal-gdp": 1350
+              },
+              "legendaryBoss": {
+                "real-versus-nominal-gdp": 450
+              },
+              "repair": {
+                "real-versus-nominal-gdp": 833
+              },
+              "bridge": {
+                "real-versus-nominal-gdp": 833
+              }
+            },
+            "calculationExposure": 1800,
+            "duplicateCanonicalSelectionsBySession": 1350,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1644,
+            "representation": {
+              "ordinary": {
+                "real-versus-nominal-gdp": 1350
+              },
+              "boss": {
+                "real-versus-nominal-gdp": 450
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "real-versus-nominal-gdp": 822
+              },
+              "bridge": {
+                "real-versus-nominal-gdp": 822
+              }
+            },
+            "calculationExposure": 1059,
+            "duplicateCanonicalSelectionsBySession": 300,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "limits-of-gdp": {
+        "name": "limits-of-gdp solo",
+        "perMode": 50,
+        "totalSessions": 250,
+        "byMode": {
+          "standard": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1656,
+            "representation": {
+              "ordinary": {
+                "limits-of-gdp": 1350
+              },
+              "boss": {
+                "limits-of-gdp": 450
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "limits-of-gdp": 828
+              },
+              "bridge": {
+                "limits-of-gdp": 828
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 450,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1500,
+            "auxiliarySelections": 1260,
+            "representation": {
+              "ordinary": {
+                "limits-of-gdp": 1500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "limits-of-gdp": 630
+              },
+              "bridge": {
+                "limits-of-gdp": 630
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 600,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1500,
+            "auxiliarySelections": 1274,
+            "representation": {
+              "ordinary": {
+                "limits-of-gdp": 1500
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "limits-of-gdp": 637
+              },
+              "bridge": {
+                "limits-of-gdp": 637
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 600,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1676,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "limits-of-gdp": 1350
+              },
+              "legendaryBoss": {
+                "limits-of-gdp": 450
+              },
+              "repair": {
+                "limits-of-gdp": 838
+              },
+              "bridge": {
+                "limits-of-gdp": 838
+              }
+            },
+            "calculationExposure": 230,
+            "duplicateCanonicalSelectionsBySession": 1350,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 50,
+            "completed": 50,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 10,
+              "all-incorrect": 10,
+              "alternating": 10,
+              "random-70-percent": 10,
+              "remediation-heavy-boss-failure": 10
+            },
+            "mainSelections": 1800,
+            "auxiliarySelections": 1658,
+            "representation": {
+              "ordinary": {
+                "limits-of-gdp": 1350
+              },
+              "boss": {
+                "limits-of-gdp": 450
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "limits-of-gdp": 829
+              },
+              "bridge": {
+                "limits-of-gdp": 829
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 450,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F1 family",
+      "perMode": 200,
+      "totalSessions": 1000,
+      "byMode": {
+        "standard": {
+          "sessions": 200,
+          "completed": 200,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 40,
+            "all-incorrect": 40,
+            "alternating": 40,
+            "random-70-percent": 40,
+            "remediation-heavy-boss-failure": 40
+          },
+          "mainSelections": 7200,
+          "auxiliarySelections": 6620,
+          "representation": {
+            "ordinary": {
+              "gdp-measurement": 1573,
+              "limits-of-gdp": 1061,
+              "real-versus-nominal-gdp": 1284,
+              "gdp-components": 1482
+            },
+            "boss": {
+              "gdp-measurement": 545,
+              "gdp-components": 467,
+              "limits-of-gdp": 424,
+              "real-versus-nominal-gdp": 364
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "gdp-components": 885,
+              "gdp-measurement": 1320,
+              "real-versus-nominal-gdp": 696,
+              "limits-of-gdp": 409
+            },
+            "bridge": {
+              "gdp-components": 914,
+              "real-versus-nominal-gdp": 692,
+              "gdp-measurement": 1331,
+              "limits-of-gdp": 373
+            }
+          },
+          "calculationExposure": 2224,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 200,
+          "completed": 200,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 40,
+            "all-incorrect": 40,
+            "alternating": 40,
+            "random-70-percent": 40,
+            "remediation-heavy-boss-failure": 40
+          },
+          "mainSelections": 6000,
+          "auxiliarySelections": 5160,
+          "representation": {
+            "ordinary": {
+              "real-versus-nominal-gdp": 1376,
+              "gdp-components": 1639,
+              "gdp-measurement": 1774,
+              "limits-of-gdp": 1211
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "real-versus-nominal-gdp": 530,
+              "gdp-measurement": 1001,
+              "gdp-components": 740,
+              "limits-of-gdp": 309
+            },
+            "bridge": {
+              "real-versus-nominal-gdp": 524,
+              "gdp-measurement": 998,
+              "gdp-components": 740,
+              "limits-of-gdp": 318
+            }
+          },
+          "calculationExposure": 1967,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 200,
+          "completed": 200,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 40,
+            "all-incorrect": 40,
+            "alternating": 40,
+            "random-70-percent": 40,
+            "remediation-heavy-boss-failure": 40
+          },
+          "mainSelections": 6000,
+          "auxiliarySelections": 5150,
+          "representation": {
+            "ordinary": {
+              "gdp-components": 1648,
+              "real-versus-nominal-gdp": 1434,
+              "gdp-measurement": 1746,
+              "limits-of-gdp": 1172
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "gdp-components": 755,
+              "gdp-measurement": 967,
+              "real-versus-nominal-gdp": 573,
+              "limits-of-gdp": 280
+            },
+            "bridge": {
+              "gdp-components": 759,
+              "gdp-measurement": 995,
+              "real-versus-nominal-gdp": 550,
+              "limits-of-gdp": 271
+            }
+          },
+          "calculationExposure": 2004,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 200,
+          "completed": 200,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 40,
+            "all-incorrect": 40,
+            "alternating": 40,
+            "random-70-percent": 40,
+            "remediation-heavy-boss-failure": 40
+          },
+          "mainSelections": 7200,
+          "auxiliarySelections": 6686,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "limits-of-gdp": 1251,
+              "gdp-components": 1237,
+              "real-versus-nominal-gdp": 1264,
+              "gdp-measurement": 1648
+            },
+            "legendaryBoss": {
+              "gdp-components": 454,
+              "real-versus-nominal-gdp": 434,
+              "gdp-measurement": 454,
+              "limits-of-gdp": 458
+            },
+            "repair": {
+              "gdp-components": 936,
+              "real-versus-nominal-gdp": 845,
+              "gdp-measurement": 1139,
+              "limits-of-gdp": 423
+            },
+            "bridge": {
+              "gdp-components": 919,
+              "real-versus-nominal-gdp": 864,
+              "gdp-measurement": 1148,
+              "limits-of-gdp": 412
+            }
+          },
+          "calculationExposure": 2473,
+          "duplicateCanonicalSelectionsBySession": 200,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 200,
+          "completed": 200,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 40,
+            "all-incorrect": 40,
+            "alternating": 40,
+            "random-70-percent": 40,
+            "remediation-heavy-boss-failure": 40
+          },
+          "mainSelections": 7200,
+          "auxiliarySelections": 6632,
+          "representation": {
+            "ordinary": {
+              "gdp-measurement": 1620,
+              "gdp-components": 1475,
+              "real-versus-nominal-gdp": 1222,
+              "limits-of-gdp": 1083
+            },
+            "boss": {
+              "gdp-measurement": 554,
+              "gdp-components": 469,
+              "real-versus-nominal-gdp": 359,
+              "limits-of-gdp": 418
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "limits-of-gdp": 381,
+              "gdp-measurement": 1312,
+              "gdp-components": 940,
+              "real-versus-nominal-gdp": 683
+            },
+            "bridge": {
+              "limits-of-gdp": 397,
+              "gdp-components": 937,
+              "gdp-measurement": 1324,
+              "real-versus-nominal-gdp": 658
+            }
+          },
+          "calculationExposure": 2231,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 25,
+        "totalSessions": 125,
+        "byMode": {
+          "standard": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 828,
+            "representation": {
+              "ordinary": {
+                "cpi-bias": 55,
+                "real-versus-nominal-gdp": 88,
+                "limits-of-gdp": 71,
+                "cpi-versus-gdp-deflator": 51,
+                "real-versus-nominal-interest-rates": 64,
+                "gdp-measurement": 111,
+                "gdp-components": 89,
+                "cpi-and-inflation-measurement": 105,
+                "indexing-and-real-values": 41
+              },
+              "boss": {
+                "gdp-components": 49,
+                "real-versus-nominal-gdp": 24,
+                "real-versus-nominal-interest-rates": 7,
+                "gdp-measurement": 50,
+                "limits-of-gdp": 44,
+                "cpi-and-inflation-measurement": 35,
+                "indexing-and-real-values": 7,
+                "cpi-bias": 6,
+                "cpi-versus-gdp-deflator": 3
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "cpi-and-inflation-measurement": 78,
+                "cpi-versus-gdp-deflator": 30,
+                "real-versus-nominal-gdp": 46,
+                "real-versus-nominal-interest-rates": 37,
+                "gdp-components": 54,
+                "gdp-measurement": 83,
+                "indexing-and-real-values": 19,
+                "limits-of-gdp": 30,
+                "cpi-bias": 37
+              },
+              "bridge": {
+                "cpi-and-inflation-measurement": 81,
+                "cpi-versus-gdp-deflator": 28,
+                "real-versus-nominal-gdp": 43,
+                "real-versus-nominal-interest-rates": 39,
+                "gdp-components": 58,
+                "limits-of-gdp": 28,
+                "gdp-measurement": 81,
+                "cpi-bias": 34,
+                "indexing-and-real-values": 22
+              }
+            },
+            "calculationExposure": 360,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 750,
+            "auxiliarySelections": 640,
+            "representation": {
+              "ordinary": {
+                "cpi-versus-gdp-deflator": 51,
+                "limits-of-gdp": 91,
+                "real-versus-nominal-interest-rates": 51,
+                "gdp-components": 114,
+                "cpi-bias": 67,
+                "real-versus-nominal-gdp": 105,
+                "cpi-and-inflation-measurement": 127,
+                "indexing-and-real-values": 49,
+                "gdp-measurement": 95
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-components": 42,
+                "cpi-bias": 39,
+                "cpi-and-inflation-measurement": 76,
+                "gdp-measurement": 50,
+                "cpi-versus-gdp-deflator": 24,
+                "real-versus-nominal-gdp": 28,
+                "real-versus-nominal-interest-rates": 26,
+                "indexing-and-real-values": 18,
+                "limits-of-gdp": 17
+              },
+              "bridge": {
+                "gdp-components": 51,
+                "cpi-bias": 44,
+                "cpi-and-inflation-measurement": 68,
+                "gdp-measurement": 47,
+                "real-versus-nominal-gdp": 26,
+                "real-versus-nominal-interest-rates": 29,
+                "indexing-and-real-values": 16,
+                "cpi-versus-gdp-deflator": 24,
+                "limits-of-gdp": 15
+              }
+            },
+            "calculationExposure": 343,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 750,
+            "auxiliarySelections": 656,
+            "representation": {
+              "ordinary": {
+                "gdp-components": 121,
+                "gdp-measurement": 116,
+                "real-versus-nominal-gdp": 97,
+                "cpi-versus-gdp-deflator": 50,
+                "limits-of-gdp": 70,
+                "cpi-bias": 69,
+                "cpi-and-inflation-measurement": 131,
+                "real-versus-nominal-interest-rates": 52,
+                "indexing-and-real-values": 44
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-components": 48,
+                "cpi-and-inflation-measurement": 58,
+                "real-versus-nominal-gdp": 32,
+                "real-versus-nominal-interest-rates": 29,
+                "gdp-measurement": 69,
+                "cpi-versus-gdp-deflator": 27,
+                "indexing-and-real-values": 14,
+                "limits-of-gdp": 16,
+                "cpi-bias": 35
+              },
+              "bridge": {
+                "gdp-components": 56,
+                "cpi-and-inflation-measurement": 59,
+                "real-versus-nominal-interest-rates": 26,
+                "gdp-measurement": 65,
+                "cpi-versus-gdp-deflator": 25,
+                "real-versus-nominal-gdp": 36,
+                "indexing-and-real-values": 14,
+                "cpi-bias": 34,
+                "limits-of-gdp": 13
+              }
+            },
+            "calculationExposure": 343,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 830,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "cpi-and-inflation-measurement": 83,
+                "gdp-components": 95,
+                "real-versus-nominal-gdp": 83,
+                "real-versus-nominal-interest-rates": 54,
+                "limits-of-gdp": 74,
+                "cpi-bias": 60,
+                "gdp-measurement": 125,
+                "cpi-versus-gdp-deflator": 56,
+                "indexing-and-real-values": 45
+              },
+              "legendaryBoss": {
+                "indexing-and-real-values": 21,
+                "gdp-components": 33,
+                "gdp-measurement": 25,
+                "cpi-bias": 28,
+                "limits-of-gdp": 37,
+                "real-versus-nominal-gdp": 27,
+                "cpi-versus-gdp-deflator": 11,
+                "cpi-and-inflation-measurement": 33,
+                "real-versus-nominal-interest-rates": 10
+              },
+              "repair": {
+                "gdp-measurement": 72,
+                "cpi-and-inflation-measurement": 57,
+                "cpi-versus-gdp-deflator": 29,
+                "real-versus-nominal-interest-rates": 30,
+                "cpi-bias": 48,
+                "gdp-components": 64,
+                "indexing-and-real-values": 35,
+                "real-versus-nominal-gdp": 57,
+                "limits-of-gdp": 23
+              },
+              "bridge": {
+                "gdp-measurement": 74,
+                "cpi-and-inflation-measurement": 59,
+                "cpi-versus-gdp-deflator": 29,
+                "real-versus-nominal-interest-rates": 30,
+                "cpi-bias": 53,
+                "gdp-components": 63,
+                "limits-of-gdp": 22,
+                "indexing-and-real-values": 32,
+                "real-versus-nominal-gdp": 53
+              }
+            },
+            "calculationExposure": 375,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 828,
+            "representation": {
+              "ordinary": {
+                "indexing-and-real-values": 51,
+                "gdp-measurement": 104,
+                "cpi-and-inflation-measurement": 122,
+                "cpi-bias": 50,
+                "real-versus-nominal-interest-rates": 52,
+                "cpi-versus-gdp-deflator": 45,
+                "real-versus-nominal-gdp": 80,
+                "gdp-components": 90,
+                "limits-of-gdp": 81
+              },
+              "boss": {
+                "gdp-components": 43,
+                "real-versus-nominal-gdp": 40,
+                "gdp-measurement": 53,
+                "cpi-and-inflation-measurement": 38,
+                "limits-of-gdp": 32,
+                "real-versus-nominal-interest-rates": 4,
+                "cpi-versus-gdp-deflator": 7,
+                "indexing-and-real-values": 4,
+                "cpi-bias": 4
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "cpi-and-inflation-measurement": 96,
+                "gdp-measurement": 90,
+                "cpi-versus-gdp-deflator": 28,
+                "indexing-and-real-values": 23,
+                "gdp-components": 58,
+                "real-versus-nominal-interest-rates": 29,
+                "real-versus-nominal-gdp": 25,
+                "cpi-bias": 36,
+                "limits-of-gdp": 29
+              },
+              "bridge": {
+                "cpi-and-inflation-measurement": 93,
+                "gdp-measurement": 91,
+                "cpi-versus-gdp-deflator": 29,
+                "indexing-and-real-values": 23,
+                "real-versus-nominal-gdp": 33,
+                "gdp-components": 55,
+                "real-versus-nominal-interest-rates": 30,
+                "cpi-bias": 37,
+                "limits-of-gdp": 23
+              }
+            },
+            "calculationExposure": 396,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 25,
+        "totalSessions": 125,
+        "byMode": {
+          "standard": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 812,
+            "representation": {
+              "ordinary": {
+                "gdp-measurement": 121,
+                "real-versus-nominal-gdp": 83,
+                "limits-of-gdp": 76,
+                "sources-of-productivity": 74,
+                "economic-growth-policy": 58,
+                "living-standards-and-growth": 100,
+                "gdp-components": 100,
+                "productivity-measurement": 63
+              },
+              "boss": {
+                "limits-of-gdp": 36,
+                "gdp-measurement": 45,
+                "productivity-measurement": 11,
+                "gdp-components": 35,
+                "economic-growth-policy": 20,
+                "living-standards-and-growth": 30,
+                "real-versus-nominal-gdp": 29,
+                "sources-of-productivity": 19
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-measurement": 76,
+                "sources-of-productivity": 61,
+                "productivity-measurement": 46,
+                "gdp-components": 57,
+                "real-versus-nominal-gdp": 38,
+                "living-standards-and-growth": 48,
+                "economic-growth-policy": 52,
+                "limits-of-gdp": 28
+              },
+              "bridge": {
+                "gdp-measurement": 75,
+                "sources-of-productivity": 75,
+                "productivity-measurement": 44,
+                "limits-of-gdp": 27,
+                "real-versus-nominal-gdp": 40,
+                "living-standards-and-growth": 45,
+                "gdp-components": 54,
+                "economic-growth-policy": 46
+              }
+            },
+            "calculationExposure": 328,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 750,
+            "auxiliarySelections": 642,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 92,
+                "gdp-measurement": 119,
+                "gdp-components": 126,
+                "living-standards-and-growth": 117,
+                "limits-of-gdp": 88,
+                "real-versus-nominal-gdp": 82,
+                "economic-growth-policy": 56,
+                "productivity-measurement": 70
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "real-versus-nominal-gdp": 36,
+                "productivity-measurement": 43,
+                "gdp-components": 46,
+                "gdp-measurement": 70,
+                "living-standards-and-growth": 41,
+                "sources-of-productivity": 41,
+                "limits-of-gdp": 13,
+                "economic-growth-policy": 31
+              },
+              "bridge": {
+                "real-versus-nominal-gdp": 35,
+                "productivity-measurement": 43,
+                "gdp-components": 43,
+                "economic-growth-policy": 28,
+                "gdp-measurement": 68,
+                "living-standards-and-growth": 37,
+                "sources-of-productivity": 59,
+                "limits-of-gdp": 8
+              }
+            },
+            "calculationExposure": 284,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 750,
+            "auxiliarySelections": 634,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 102,
+                "economic-growth-policy": 61,
+                "living-standards-and-growth": 120,
+                "real-versus-nominal-gdp": 110,
+                "limits-of-gdp": 73,
+                "gdp-measurement": 119,
+                "gdp-components": 115,
+                "productivity-measurement": 50
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "sources-of-productivity": 45,
+                "economic-growth-policy": 24,
+                "real-versus-nominal-gdp": 43,
+                "gdp-measurement": 59,
+                "productivity-measurement": 42,
+                "gdp-components": 52,
+                "limits-of-gdp": 17,
+                "living-standards-and-growth": 35
+              },
+              "bridge": {
+                "sources-of-productivity": 50,
+                "economic-growth-policy": 26,
+                "productivity-measurement": 43,
+                "gdp-measurement": 60,
+                "gdp-components": 44,
+                "living-standards-and-growth": 42,
+                "limits-of-gdp": 11,
+                "real-versus-nominal-gdp": 41
+              }
+            },
+            "calculationExposure": 273,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 826,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "limits-of-gdp": 85,
+                "economic-growth-policy": 66,
+                "gdp-measurement": 121,
+                "gdp-components": 78,
+                "real-versus-nominal-gdp": 95,
+                "productivity-measurement": 54,
+                "sources-of-productivity": 95,
+                "living-standards-and-growth": 81
+              },
+              "legendaryBoss": {
+                "limits-of-gdp": 32,
+                "economic-growth-policy": 25,
+                "productivity-measurement": 10,
+                "living-standards-and-growth": 34,
+                "gdp-components": 33,
+                "sources-of-productivity": 30,
+                "real-versus-nominal-gdp": 40,
+                "gdp-measurement": 21
+              },
+              "repair": {
+                "gdp-measurement": 69,
+                "real-versus-nominal-gdp": 76,
+                "gdp-components": 52,
+                "economic-growth-policy": 36,
+                "limits-of-gdp": 30,
+                "living-standards-and-growth": 45,
+                "productivity-measurement": 61,
+                "sources-of-productivity": 44
+              },
+              "bridge": {
+                "gdp-measurement": 75,
+                "real-versus-nominal-gdp": 72,
+                "gdp-components": 48,
+                "economic-growth-policy": 36,
+                "limits-of-gdp": 31,
+                "living-standards-and-growth": 44,
+                "productivity-measurement": 58,
+                "sources-of-productivity": 49
+              }
+            },
+            "calculationExposure": 359,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 25,
+            "completed": 25,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 5,
+              "all-incorrect": 5,
+              "alternating": 5,
+              "random-70-percent": 5,
+              "remediation-heavy-boss-failure": 5
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 818,
+            "representation": {
+              "ordinary": {
+                "living-standards-and-growth": 98,
+                "sources-of-productivity": 93,
+                "gdp-measurement": 109,
+                "real-versus-nominal-gdp": 72,
+                "productivity-measurement": 51,
+                "limits-of-gdp": 85,
+                "gdp-components": 105,
+                "economic-growth-policy": 62
+              },
+              "boss": {
+                "limits-of-gdp": 39,
+                "gdp-measurement": 41,
+                "gdp-components": 36,
+                "sources-of-productivity": 18,
+                "living-standards-and-growth": 33,
+                "productivity-measurement": 8,
+                "real-versus-nominal-gdp": 32,
+                "economic-growth-policy": 18
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "gdp-measurement": 94,
+                "real-versus-nominal-gdp": 34,
+                "limits-of-gdp": 31,
+                "economic-growth-policy": 40,
+                "sources-of-productivity": 57,
+                "gdp-components": 64,
+                "living-standards-and-growth": 39,
+                "productivity-measurement": 50
+              },
+              "bridge": {
+                "gdp-measurement": 81,
+                "sources-of-productivity": 66,
+                "real-versus-nominal-gdp": 37,
+                "limits-of-gdp": 34,
+                "economic-growth-policy": 42,
+                "gdp-components": 64,
+                "living-standards-and-growth": 45,
+                "productivity-measurement": 40
+              }
+            },
+            "calculationExposure": 305,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 103,
+    "calculationRecordsRecomputed": 52,
+    "qualitativeNumericRecordsReviewed": 51,
+    "failures": 0,
+    "roundingRulesVerified": true,
+    "unitsVerified": true,
+    "records": [
+      {
+        "questionId": "ECON-NL-ELITE-303",
+        "conceptId": "gdp-measurement",
+        "formula": "180 − 110",
+        "independentResult": "$70",
+        "publishedCorrectAnswer": "$70",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-ELITE-307",
+        "conceptId": "gdp-measurement",
+        "formula": "100×20 + 50×1000",
+        "independentResult": "$52,000",
+        "publishedCorrectAnswer": "$52,000",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARY-9002",
+        "conceptId": "gdp-measurement",
+        "formula": "350000 − 200000",
+        "independentResult": "$150,000",
+        "publishedCorrectAnswer": "$150,000",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARY-9003",
+        "conceptId": "gdp-measurement",
+        "formula": "300 − 90",
+        "independentResult": "$210",
+        "publishedCorrectAnswer": "$210",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASY-4",
+        "conceptId": "gdp-measurement",
+        "formula": "expenditure = income",
+        "independentResult": "$20 trillion",
+        "publishedCorrectAnswer": "$20 trillion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASY-8",
+        "conceptId": "gdp-measurement",
+        "formula": "final sale value",
+        "independentResult": "$50",
+        "publishedCorrectAnswer": "$50",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-HARD-205",
+        "conceptId": "gdp-measurement",
+        "formula": "new final capital good",
+        "independentResult": "$230",
+        "publishedCorrectAnswer": "$230",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-101",
+        "conceptId": "gdp-measurement",
+        "formula": "production income = final expenditure",
+        "independentResult": "$900 billion",
+        "publishedCorrectAnswer": "$900 billion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-103",
+        "conceptId": "gdp-measurement",
+        "formula": "income = expenditure",
+        "independentResult": "$18 trillion",
+        "publishedCorrectAnswer": "$18 trillion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-105",
+        "conceptId": "gdp-measurement",
+        "formula": "final bread value",
+        "independentResult": "$250",
+        "publishedCorrectAnswer": "$250",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASYBOSS-2002",
+        "conceptId": "gdp-measurement",
+        "formula": "expenditure = income",
+        "independentResult": "$18 trillion",
+        "publishedCorrectAnswer": "$18 trillion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASYBOSS-2005",
+        "conceptId": "gdp-measurement",
+        "formula": "final bread value",
+        "independentResult": "$100",
+        "publishedCorrectAnswer": "$100",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-H-001",
+        "conceptId": "gdp-components",
+        "formula": "import cancels C; domestic I = 5000",
+        "independentResult": "$5,000 from the domestic machine",
+        "publishedCorrectAnswer": "$5,000 from the domestic machine",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-H-002",
+        "conceptId": "gdp-components",
+        "formula": "current production only = 6",
+        "independentResult": "$6 million of current production",
+        "publishedCorrectAnswer": "$6 million of current production",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-H-003",
+        "conceptId": "gdp-components",
+        "formula": "domestic buses = 3; transfer excluded; import cancels",
+        "independentResult": "$3 million",
+        "publishedCorrectAnswer": "$3 million",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-H-004",
+        "conceptId": "gdp-components",
+        "formula": "exports 4 + domestic inventory .5",
+        "independentResult": "$4.5 million",
+        "publishedCorrectAnswer": "$4.5 million",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-ELITE-311",
+        "conceptId": "gdp-components",
+        "formula": "23 − 15 − 4 − 6 + 5",
+        "independentResult": "$3T",
+        "publishedCorrectAnswer": "$3T",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASY-12",
+        "conceptId": "gdp-components",
+        "formula": "10 + 3 + 4 − 1",
+        "independentResult": "16",
+        "publishedCorrectAnswer": "16",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-HARD-208",
+        "conceptId": "gdp-components",
+        "formula": "300000 + 5000",
+        "independentResult": "$305,000",
+        "publishedCorrectAnswer": "$305,000",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-HARD-209",
+        "conceptId": "gdp-components",
+        "formula": "14 + 4 + 5 + 3 − 4.5",
+        "independentResult": "$21.5T",
+        "publishedCorrectAnswer": "$21.5T",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-HARD-212",
+        "conceptId": "gdp-components",
+        "formula": "70 sold + 30 inventory",
+        "independentResult": "$100 million because unsold output is inventory investment",
+        "publishedCorrectAnswer": "$100 million because unsold output is inventory investment",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-109",
+        "conceptId": "gdp-components",
+        "formula": "12 + 4 + 5 + 3 − 4",
+        "independentResult": "$20 trillion",
+        "publishedCorrectAnswer": "$20 trillion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-112",
+        "conceptId": "gdp-components",
+        "formula": "800 − 1100",
+        "independentResult": "-$300 billion",
+        "publishedCorrectAnswer": "-$300 billion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-113",
+        "conceptId": "gdp-components",
+        "formula": "7 sold + 3 inventory",
+        "independentResult": "$10 million",
+        "publishedCorrectAnswer": "$10 million",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASYBOSS-2008",
+        "conceptId": "gdp-components",
+        "formula": "8 + 2 + 3 − 1",
+        "independentResult": "12",
+        "publishedCorrectAnswer": "12",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASYBOSS-2011",
+        "conceptId": "gdp-components",
+        "formula": "600 − 750",
+        "independentResult": "-$150 billion",
+        "publishedCorrectAnswer": "-$150 billion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-FB-004",
+        "conceptId": "gdp-components",
+        "formula": "8 + 3 + 4 + 1 − 2",
+        "independentResult": "$14 million",
+        "publishedCorrectAnswer": "$14 million",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-FB-005",
+        "conceptId": "gdp-components",
+        "formula": "7 domestic + 1 export + 2 inventory",
+        "independentResult": "$10 million",
+        "publishedCorrectAnswer": "$10 million",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-FB-006",
+        "conceptId": "gdp-components",
+        "formula": "foreign equipment net 0 + road 4 + services 2",
+        "independentResult": "$6 million: road repair plus recipients’ domestic services",
+        "publishedCorrectAnswer": "$6 million: road repair plus recipients’ domestic services",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-GDPC-LB-001",
+        "conceptId": "gdp-components",
+        "formula": "domestic C 3 + I 4 + G 5 + X 2",
+        "independentResult": "$14 million",
+        "publishedCorrectAnswer": "$14 million",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-E-002",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "8×10",
+        "independentResult": "$80",
+        "publishedCorrectAnswer": "$80",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-M-001",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "20×9; 20×6",
+        "independentResult": "$180 nominal and $120 real",
+        "publishedCorrectAnswer": "$180 nominal and $120 real",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-M-002",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "(110−100)/100",
+        "independentResult": "10%",
+        "publishedCorrectAnswer": "10%",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "P52B-S2-RVNGDP-H-001",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": ".98/.95−1 ≈ .0316",
+        "independentResult": "Real GDP rises about 3 percent.",
+        "publishedCorrectAnswer": "Real GDP rises about 3 percent.",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "P52B-S2-RVNGDP-H-002",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "120×4 + 30×10",
+        "independentResult": "$780.",
+        "publishedCorrectAnswer": "$780.",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-H-001",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "1.18/1.10−1 = .0727",
+        "independentResult": "7.3%",
+        "publishedCorrectAnswer": "7.3%",
+        "roundingRule": "Round real-GDP growth to one decimal place.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-H-002",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "(660/1.05 − 600)/600 = .0476",
+        "independentResult": "4.8%",
+        "publishedCorrectAnswer": "4.8%",
+        "roundingRule": "Round real-GDP growth to one decimal place.",
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-ELITE-313",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "25/1 = 30/1.2 = 25",
+        "independentResult": "It is unchanged",
+        "publishedCorrectAnswer": "It is unchanged",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-ELITE-314",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "25×8; 25×5",
+        "independentResult": "Nominal GDP = $200; real GDP = $125",
+        "publishedCorrectAnswer": "Nominal GDP = $200; real GDP = $125",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARY-9005",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "24/1.2 = 30/1.5 = 20",
+        "independentResult": "It is unchanged",
+        "publishedCorrectAnswer": "It is unchanged",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARY-9006",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "120×1000 + 550×20",
+        "independentResult": "$131,000",
+        "publishedCorrectAnswer": "$131,000",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARY-9007",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "120×900 + 550×24",
+        "independentResult": "$121,200",
+        "publishedCorrectAnswer": "$121,200",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-HARD-214",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "30/25×100",
+        "independentResult": "120",
+        "publishedCorrectAnswer": "120",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-HARD-215",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "110×5",
+        "independentResult": "$550",
+        "publishedCorrectAnswer": "$550",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-MEDIUM-116",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "24/1.2",
+        "independentResult": "$20 trillion",
+        "publishedCorrectAnswer": "$20 trillion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-EASYBOSS-2014",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "10×5",
+        "independentResult": "$50",
+        "publishedCorrectAnswer": "$50",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-MB-001",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "30×8; 30×5",
+        "independentResult": "$240 nominal GDP and $150 real GDP",
+        "publishedCorrectAnswer": "$240 nominal GDP and $150 real GDP",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-MB-003",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "25/500",
+        "independentResult": "$25 billion ÷ $500 billion = 5%",
+        "publishedCorrectAnswer": "$25 billion ÷ $500 billion = 5%",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-FB-005",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "840/1.2 = 700; 990/1.32 = 750",
+        "independentResult": "It rises from $700 billion to $750 billion",
+        "publishedCorrectAnswer": "It rises from $700 billion to $750 billion",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARYBOSS-9103",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "40/1.25 = 48/1.5 = 32",
+        "independentResult": "It is unchanged at $32T",
+        "publishedCorrectAnswer": "It is unchanged at $32T",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B1-RNGDP-LB-001",
+        "conceptId": "real-versus-nominal-gdp",
+        "formula": "nominal 120×5+24×12=888; real 120×4+24×10=720; growth (720−600)/600",
+        "independentResult": "$888, $720, and 20%",
+        "publishedCorrectAnswer": "$888, $720, and 20%",
+        "roundingRule": null,
+        "status": "PASS"
+      },
+      {
+        "questionId": "ECON-NL-LEGENDARY-9019",
+        "conceptId": "limits-of-gdp",
+        "formula": "2T/20M = 100000; 4T/80M = 50000",
+        "independentResult": "The first country, with $100,000 per person versus $50,000",
+        "publishedCorrectAnswer": "The first country, with $100,000 per person versus $50,000",
+        "roundingRule": null,
+        "status": "PASS"
+      }
+    ]
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2b1_gdp/generated_packages/family/index.html",
+      "htmlSha256": "2952062c6d30c16b49168f7cbaf0cf248c31b30d66c9314d1cf0f43cadd609c9",
+      "bytes": 885454,
+      "counts": {
+        "easy": 28,
+        "medium": 31,
+        "hard": 31,
+        "elite": 20,
+        "legendary": 26,
+        "easyBoss": 31,
+        "mediumBoss": 12,
+        "finalBoss": 12,
+        "legendaryBoss": 12,
+        "repair": 18,
+        "repairSeed": 0,
+        "bridge": 9,
+        "calculation": 16,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 230
+      }
+    },
+    "limits": {
+      "path": "validation_artifacts/macro_m2b1_gdp/generated_packages/limits/index.html",
+      "htmlSha256": "a74e63b9e1f48cc35b4f8b26e8dfac922a5ee53fbe7f9de03f0aa162c55ade2a",
+      "bytes": 389291,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 6,
+        "easyBoss": 6,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 45
+      }
+    }
+  },
+  "browser": {
+    "phase": "phaseM2b1-gdp-national-output-family-maturation-v1",
+    "generatedAt": "2026-08-10T22:30:00.000Z",
+    "passed": true,
+    "pending": false,
+    "summary": "Full-family and Limits-only packages passed bounded browser QA across start, five-mode menus, Standard and Legendary play, checkpoint completion, Repair/Bridge transition rendering, and Standard save/resume with zero console warnings or errors.",
+    "packages": {
+      "family": {
+        "start": true,
+        "fiveModeMenu": true,
+        "standardOrdinary": true,
+        "checkpointRooms": [
+          10,
+          20,
+          30
+        ],
+        "checkpointOneThreeStageCompletion": true,
+        "repairRendered": true,
+        "bridgeTransitionRendered": true,
+        "legendaryStart": true,
+        "saveResume": {
+          "savedRoom": 3,
+          "continueButtonVisible": true,
+          "resumedRoom": 3
+        }
+      },
+      "limitsOnly": {
+        "start": true,
+        "fiveModeMenu": true,
+        "standardOrdinary": true,
+        "legendaryStart": true,
+        "checkpointRooms": [
+          10,
+          20,
+          30
+        ]
+      }
+    },
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "nonBlockingIssues": [
+      "Nineteen pre-existing neighboring F2/F3 Legendary Boss records lack valid bossStage metadata; cross-family regression normalized those records in memory only and did not modify their source banks."
+    ]
+  },
+  "verdict": "MACRO M2b-1 COMPLETE WITH NON-BLOCKING ISSUES"
+}
