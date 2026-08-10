@@ -1,0 +1,3083 @@
+{
+  "phase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1",
+  "concept": "gains-from-trade",
+  "reviewedBaselineRecords": [
+    {
+      "id": "ECON-MG-EASY-10",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-E-001",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-E-002",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-E-003",
+      "pool": "easy",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-E-004",
+      "pool": "easy",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-E-005",
+      "pool": "easy",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-M-001",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-M-002",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-M-003",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-M-004",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-M-005",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-M-006",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-H-001",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-H-002",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-H-003",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-H-004",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-H-005",
+      "pool": "hard",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-H-006",
+      "pool": "hard",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-EL-001",
+      "pool": "elite",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-EL-002",
+      "pool": "elite",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-EL-003",
+      "pool": "elite",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-EL-004",
+      "pool": "elite",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-L-001",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-L-002",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-L-003",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-L-004",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-L-005",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-L-006",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B1-001",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B1-002",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B1-003",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B2-001",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B2-002",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B2-003",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B3-001",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B3-002",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-B3-003",
+      "pool": "boss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-LB-001",
+      "pool": "legendaryBoss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-LB-002",
+      "pool": "legendaryBoss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-LB-003",
+      "pool": "legendaryBoss",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-R-001",
+      "pool": "repair",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-R-002",
+      "pool": "repair",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-R-003",
+      "pool": "repair",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-CORE-TRADE-30010",
+      "pool": "repairSeed",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-TRADE-BR-001",
+      "pool": "bridge",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-TRADE-BR-002",
+      "pool": "bridge",
+      "action": "REWRITE"
+    }
+  ],
+  "actions": {
+    "KEEP": 38,
+    "REWRITE": 8,
+    "ADD": 60,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "MOVE_ELITE": 0,
+    "MOVE_LEGENDARY": 0,
+    "REMOVE": 0
+  },
+  "changes": [
+    {
+      "id": "ECON-MG-EASY-10",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "ECON-MG-EASY-10",
+        "q": "Trade can make people better off because:",
+        "options": [
+          "People can specialize and exchange",
+          "Everyone becomes self-sufficient",
+          "Scarcity disappears",
+          "Prices no longer matter"
+        ],
+        "aHash": "1661fadf2bf311d50f5bd971ef14d175da63dffacd677874177be7b5f5d45798",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "gains_from_trade",
+        "repairSkill": "gains_from_trade",
+        "commonError": "thinks_trade_requires_one_side_to_lose",
+        "feedback": "Trade allows specialization and exchange, which can benefit both sides."
+      },
+      "after": {
+        "id": "ECON-MG-EASY-10",
+        "q": "Two neighbors specialize in the chores for which each gives up less valuable alternative work, then exchange help. Why can both benefit?",
+        "options": [
+          "Specialization can raise combined output available to share",
+          "Exchange makes both neighbors completely self-sufficient under an incorrect opportunity-cost interpretation",
+          "Scarcity disappears once the chores are divided",
+          "The faster neighbor must perform every chore"
+        ],
+        "aHash": "760dcfb18e284b129358a2492b2861058034b89b68af0a3a08c5b37c2565826e",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "conceptual_gains_from_trade",
+        "repairSkill": "conceptual_gains_from_trade",
+        "commonError": "Treating trade as zero-sum or assigning every task to the fastest producer.",
+        "feedback": "Different opportunity costs can make specialization and voluntary exchange beneficial.",
+        "tradeDepthCategory": "CONCEPTUAL_GAINS",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-E-001",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-E-001",
+        "q": "Comparative advantage is determined by comparing:",
+        "options": [
+          "Opportunity costs between producers.",
+          "Total output without considering tradeoffs.",
+          "Hourly wages in unrelated jobs.",
+          "The money price charged after trade."
+        ],
+        "aHash": "74904cd88419be48b1fadea99cb96974a7e09352a567ce23b376e2b8a6616f27",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "comparative_advantage_definition",
+        "repairSkill": "comparative_advantage_definition",
+        "commonError": "Using absolute output instead of opportunity cost.",
+        "feedback": "Comparative advantage belongs to the producer with the lower opportunity cost."
+      },
+      "after": {
+        "id": "P52B-TRADE-E-001",
+        "q": "Mira gives up 1 report to prepare a presentation; Sol gives up 3 reports. Which fact determines comparative advantage in presentations?",
+        "options": [
+          "Mira gives up fewer reports per presentation",
+          "Sol may complete more total tasks in a day",
+          "Mira charges a lower money price after exchange",
+          "Sol has a higher wage in an unrelated job"
+        ],
+        "aHash": "7b7160154e18c2ce940c0bf444840629562cc783bafd66dfd12e3e2eb718d0c9",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "comparative_advantage_definition",
+        "repairSkill": "comparative_advantage_definition",
+        "commonError": "Using total output, wages, or prices instead of opportunity cost.",
+        "feedback": "Comparative advantage belongs to the lower-opportunity-cost producer.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "tradeMath": {
+          "kind": "givenComparative",
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            3,
+            1
+          ],
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-E-002",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-E-002",
+        "q": "A producer has an absolute advantage in a good when the producer can:",
+        "options": [
+          "Give up less of every other good.",
+          "Make more of the good with the same resources.",
+          "Set the market price without competition.",
+          "Eliminate scarcity by specializing."
+        ],
+        "aHash": "de860eaf31ef26bc527a6dba7fc07d704862735e1a83e5c798ee2d7665d65ae2",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "absolute_advantage_definition",
+        "repairSkill": "absolute_advantage_definition",
+        "commonError": "Treating absolute and comparative advantage as the same idea.",
+        "feedback": "Absolute advantage concerns productivity; comparative advantage concerns opportunity cost."
+      },
+      "after": {
+        "id": "P52B-TRADE-E-002",
+        "q": "With the same resources, East Farm can harvest 12 crates while West Farm can harvest 8. What does this establish?",
+        "options": [
+          "East Farm has an absolute advantage in harvesting crates",
+          "East Farm must have comparative advantage in every crop under an incorrect opportunity-cost interpretation",
+          "West Farm has the lower opportunity cost of harvesting",
+          "Both farms gain equally from every possible exchange"
+        ],
+        "aHash": "75a4308cf68057face6689ec6d21998e93387882dba9305d9d30956bd29aa0e1",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "absolute_advantage_definition",
+        "repairSkill": "absolute_advantage_definition",
+        "commonError": "Inferring comparative advantage from productivity alone.",
+        "feedback": "Greater output from the same resources establishes absolute, not necessarily comparative, advantage.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "tradeMath": {
+          "kind": "absolute",
+          "a": [
+            12,
+            1
+          ],
+          "b": [
+            8,
+            1
+          ],
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-H-005",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-H-005",
+        "q": "A tariff raises the domestic cost of an imported good. Which effect most directly reduces gains from trade?",
+        "options": [
+          "It eliminates all domestic production.",
+          "It makes opportunity cost irrelevant.",
+          "It guarantees that consumers gain more than producers lose.",
+          "It discourages exchanges that reflected differences in opportunity cost."
+        ],
+        "aHash": "cf134ccf401c5e1c1a1d9bdc67b38cb4d55333561a72560804f28faffc19deb4",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "trade_barrier_effect",
+        "repairSkill": "trade_barrier_effect",
+        "commonError": "Treating a trade barrier as costless redistribution.",
+        "feedback": "A tariff can block mutually beneficial trades and reduce the gains available from specialization."
+      },
+      "after": {
+        "id": "P52B-TRADE-H-005",
+        "q": "A region can obtain one turbine by giving up 3 tons of grain through exchange or 5 tons by producing it internally. Which reasoning supports exchange?",
+        "options": [
+          "Importing the turbine has the lower opportunity cost in grain",
+          "Producing internally must be better because it avoids trade under an incorrect opportunity-cost interpretation",
+          "The money price eliminates the need to compare resources",
+          "Exchange guarantees equal gains for every resident"
+        ],
+        "aHash": "055ffb9a72b7996f3facb860ada11ac622ef6e9785e8c8a3084450f8ff13b5e4",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "opportunity_cost_trade",
+        "repairSkill": "opportunity_cost_trade",
+        "commonError": "Preferring self-sufficiency without comparing opportunity costs.",
+        "feedback": "Exchange uses resources worth 3 tons rather than 5, freeing 2 tons for other uses.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "savings",
+          "domestic": [
+            5,
+            1
+          ],
+          "imported": [
+            3,
+            1
+          ],
+          "expected": [
+            2,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-H-006",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-H-006",
+        "q": "A country exports a good in which it has comparative advantage. Domestic consumers of that good face a higher price after trade opens. Which statement is most complete?",
+        "options": [
+          "The country can gain overall even though some domestic groups lose.",
+          "Every resident must gain because national output rises.",
+          "Trade cannot create gains when any group loses.",
+          "The higher price proves the country lacks comparative advantage."
+        ],
+        "aHash": "bedbd3481d50c14b756abf4ebeddde40d32a966dcb301b7a930d192789bd388d",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "distribution_of_trade_gains",
+        "repairSkill": "distribution_of_trade_gains",
+        "commonError": "Confusing aggregate gains with universal gains.",
+        "feedback": "Trade can raise total surplus while distributing gains and losses unevenly."
+      },
+      "after": {
+        "id": "P52B-TRADE-H-006",
+        "q": "Two firms specialize and create 40 extra units of combined output. A proposed exchange gives all 40 extra units to one firm. What is the strongest conclusion?",
+        "options": [
+          "Specialization created aggregate gains, but the proposed distribution may not benefit both firms",
+          "Comparative advantage is false whenever gains are unequal under an incorrect opportunity-cost interpretation",
+          "Any increase in combined output makes every exchange mutually beneficial",
+          "Equal gains are required before specialization can raise output"
+        ],
+        "aHash": "64ef9fae496d84779b71b33178742eabbc54e4c3783337e8fb9ffd0acfb58a1e",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "distribution_of_trade_gains",
+        "repairSkill": "distribution_of_trade_gains",
+        "commonError": "Confusing total gains with mutual benefit under a particular exchange.",
+        "feedback": "Higher combined output creates potential gains; terms of trade determine how those gains are divided.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "tradeMath": {
+          "kind": "sumGains",
+          "a": [
+            40,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ],
+          "total": [
+            40,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-EL-003",
+      "concept": "gains-from-trade",
+      "pool": "elite",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-EL-003",
+        "q": "A trade price equals the exporter’s opportunity cost exactly but is below the importer’s opportunity cost. Which side captures the modeled gain?",
+        "options": [
+          "The exporter captures all gain.",
+          "Both capture equal gains.",
+          "Neither can gain because the price is below both costs.",
+          "The importer captures the gain; the exporter is indifferent at that price."
+        ],
+        "aHash": "2582533b0556045921e5106fb4a3b701c79f1336b5525057bd140e562049791d",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "terms_of_trade_distribution",
+        "repairSkill": "terms_of_trade_distribution",
+        "commonError": "Assuming every price inside or on the bounds divides gains equally.",
+        "feedback": "At its own opportunity cost, the exporter is indifferent; the importer still saves resources."
+      },
+      "after": {
+        "id": "P52B-TRADE-EL-003",
+        "q": "A trade rate equals the exporter’s opportunity cost exactly but remains below the importer’s opportunity cost. Which evaluation is precise?",
+        "options": [
+          "The exporter is indifferent while the importer captures the modeled gain",
+          "The exporter captures every gain because it supplies the good under an incorrect opportunity-cost interpretation",
+          "Both parties receive strict and exactly equal gains",
+          "Neither party can gain because the rate is on one boundary"
+        ],
+        "aHash": "436e318c9d026b6a3151bcccfde5bca0bc3b0a013377b3624f4016dde35a4a66",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "terms_of_trade_distribution",
+        "repairSkill": "terms_of_trade_distribution",
+        "commonError": "Calling a boundary rate a strict mutual gain or assuming gains divide equally.",
+        "feedback": "At its own opportunity cost the exporter is indifferent; the importer still saves resources.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-E-007",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-E-007",
+        "q": "Ana gives up 2 baskets to make one table; Bo gives up 5 baskets. Who has comparative advantage in tables?",
+        "options": [
+          "Ana, because she gives up fewer baskets",
+          "Bo, because he gives up more baskets",
+          "Ana only if she makes more of both goods",
+          "Neither, because money prices are missing"
+        ],
+        "aHash": "f9fc1012daa3e4e372a5df602176e398a6e711159e2161e2381819a6a0a571fd",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "comparative_advantage_given_costs",
+        "repairSkill": "comparative_advantage_given_costs",
+        "commonError": "Confusing productivity or price with the relevant opportunity-cost rule.",
+        "feedback": "Comparative advantage is determined by relative opportunity cost.",
+        "tradeDepthCategory": "FOUNDATIONAL_CONCEPT",
+        "tradeMath": {
+          "kind": "givenComparative",
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            5,
+            1
+          ],
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-E-008",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-E-008",
+        "q": "One worker can finish more of both tasks than a coworker. Why might the coworker still specialize in one task?",
+        "options": [
+          "The coworker may have the lower opportunity cost in that task",
+          "The faster worker loses absolute advantage after delegation under an incorrect opportunity-cost interpretation",
+          "Comparative advantage requires equal productivity",
+          "Specialization removes every tradeoff"
+        ],
+        "aHash": "2da5915e21c09d25d2c6aa57b89dbae3beb859cec47a5e64ab4985bd04017158",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "absolute_vs_comparative",
+        "repairSkill": "absolute_vs_comparative",
+        "commonError": "Using greater output alone to assign comparative advantage.",
+        "feedback": "Absolute advantage concerns productivity; comparative advantage concerns lower opportunity cost.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-E-009",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-E-009",
+        "q": "Priya gives up 1 design to write a report; Luis gives up 4 designs. If they specialize by comparative advantage, who writes reports?",
+        "options": [
+          "Priya, because her opportunity cost is lower",
+          "Luis, because his opportunity cost is higher",
+          "Both must split report writing equally",
+          "Whoever has the higher total output in both tasks"
+        ],
+        "aHash": "7fa39e5f6e87e792b35132dc71f59616afbb651c32fc38d41c0b8e45a868804d",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "specialization_pattern",
+        "repairSkill": "specialization_pattern",
+        "commonError": "Assigning every activity to the absolutely more productive producer.",
+        "feedback": "In the textbook model, specialization follows comparative advantage.",
+        "tradeDepthCategory": "SPECIALIZATION",
+        "tradeMath": {
+          "kind": "givenComparative",
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            4,
+            1
+          ],
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-E-010",
+      "concept": "gains-from-trade",
+      "pool": "easy",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-E-010",
+        "q": "Why can specialization according to comparative advantage expand what two producers can consume?",
+        "options": [
+          "It can increase combined production available for exchange",
+          "It guarantees each producer makes every good under an incorrect opportunity-cost interpretation",
+          "It makes opportunity costs identical",
+          "It removes scarcity from both producers"
+        ],
+        "aHash": "598a106060cbf34bb6b246594be30baaa4bb634a72cc7019b7ca442192c1c8b1",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "conceptual_gains_from_trade",
+        "repairSkill": "conceptual_gains_from_trade",
+        "commonError": "Assuming higher combined output makes every possible exchange mutually beneficial.",
+        "feedback": "Specialization creates potential output gains; the trading terms determine whether both sides gain.",
+        "tradeDepthCategory": "CONCEPTUAL_GAINS",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-M-007",
+      "concept": "gains-from-trade",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-M-007",
+        "q": "Team A can prepare 12 briefs or 6 charts daily. Team B can prepare 8 briefs or 8 charts. Who has comparative advantage in briefs?",
+        "options": [
+          "Team A; one brief costs 0.5 chart rather than 1 chart",
+          "Team B; it can make more charts under an incorrect opportunity-cost interpretation",
+          "Team A; it has comparative advantage in both outputs",
+          "Neither; their maximum outputs differ"
+        ],
+        "aHash": "bc685ea251bc4430d28574e907052122c8a6d2fe631a83e02a19eeb0e60404e1",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "comparative_advantage_calculation",
+        "repairSkill": "comparative_advantage_calculation",
+        "commonError": "Computing or comparing the opportunity costs in the wrong direction.",
+        "feedback": "Compute the forgone alternative per unit, then select the lower opportunity cost.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "comparative",
+          "a": [
+            12,
+            6
+          ],
+          "b": [
+            8,
+            8
+          ],
+          "good": "x",
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-M-008",
+      "concept": "gains-from-trade",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-M-008",
+        "q": "Kai needs 2 hours per cabinet and 1 hour per shelf. Ren needs 3 hours per cabinet and 3 hours per shelf. Who has comparative advantage in cabinets?",
+        "options": [
+          "Kai; a cabinet costs 2 shelves rather than Ren’s 1 shelf",
+          "Ren; a cabinet costs 1 shelf rather than Kai’s 2 shelves",
+          "Kai; fewer hours always means comparative advantage in both goods",
+          "Neither; hours per unit cannot reveal opportunity cost"
+        ],
+        "aHash": "2fbebb1a073ea0c726b894eeb4620bcc272d4d9b3f55df15b6567001721f6842",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "hours_per_unit_opportunity_cost",
+        "repairSkill": "hours_per_unit_opportunity_cost",
+        "commonError": "Computing or comparing the opportunity costs in the wrong direction.",
+        "feedback": "Compute the forgone alternative per unit, then select the lower opportunity cost.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "hoursComparative",
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            3,
+            3
+          ],
+          "good": "x",
+          "winner": "B"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-M-009",
+      "concept": "gains-from-trade",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-M-009",
+        "q": "If one mug costs a studio 2 bowls, what is the reciprocal opportunity cost of one bowl?",
+        "options": [
+          "One-half mug",
+          "Two mugs under an incorrect opportunity-cost interpretation",
+          "Four mugs",
+          "One mug"
+        ],
+        "aHash": "1f8e4626bb2c621f5791bbdb9f1071574c350678fb2da81f27e81a39d6968e0a",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "reciprocal_opportunity_cost",
+        "repairSkill": "reciprocal_opportunity_cost",
+        "commonError": "Repeating a ratio instead of taking its reciprocal.",
+        "feedback": "Reverse both the goods and the ratio when changing opportunity-cost orientation.",
+        "tradeDepthCategory": "RECIPROCAL_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "reciprocal",
+          "value": [
+            2,
+            1
+          ],
+          "expected": [
+            1,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-M-010",
+      "concept": "gains-from-trade",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-M-010",
+        "q": "Farm C can grow 24 corn or 12 beans; Farm D can grow 10 corn or 10 beans. Which specialization follows comparative advantage?",
+        "options": [
+          "Farm C grows corn and Farm D grows beans",
+          "Farm C grows beans and Farm D grows corn",
+          "Both farms grow only corn",
+          "Neither farm can specialize without a money price"
+        ],
+        "aHash": "0157fc57f098d0810d71c1f1f071b8a36b3ebd08d2a806f7e154a73e5f7398dc",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "specialization_pattern",
+        "repairSkill": "specialization_pattern",
+        "commonError": "Assigning every activity to the absolutely more productive producer.",
+        "feedback": "In the textbook model, specialization follows comparative advantage.",
+        "tradeDepthCategory": "SPECIALIZATION",
+        "tradeMath": {
+          "kind": "specialization",
+          "a": [
+            24,
+            12
+          ],
+          "b": [
+            10,
+            10
+          ],
+          "xWinner": "A",
+          "yWinner": "B"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-M-011",
+      "concept": "gains-from-trade",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-M-011",
+        "q": "One lamp costs Ari 2 rugs and costs Bea 6 rugs. Which rate for 1 lamp could provide strict gains to both?",
+        "options": [
+          "4 rugs per lamp",
+          "2 rugs per lamp",
+          "6 rugs per lamp",
+          "8 rugs per lamp"
+        ],
+        "aHash": "7be1198dcb6a93932d97cd4daa7c60a686ed50994f52f2bcc6869e458c544f64",
+        "type": "calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "terms_of_trade",
+        "repairSkill": "terms_of_trade",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "strictRate",
+          "low": [
+            2,
+            1
+          ],
+          "high": [
+            6,
+            1
+          ],
+          "rate": [
+            4,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-M-012",
+      "concept": "gains-from-trade",
+      "pool": "medium",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-M-012",
+        "q": "Two workshops each give up exactly 3 frames to produce one desk. What does the basic model imply?",
+        "options": [
+          "Neither has comparative advantage in desks based on these costs",
+          "The workshop with greater desk output must specialize in desks under an incorrect opportunity-cost interpretation",
+          "Both receive strict gains from any desk price",
+          "One workshop must have comparative advantage in both goods"
+        ],
+        "aHash": "edcf4d88a1f6f1b948f8252b3218b06efb3c9a4178ce840e17cef414ae348a9e",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "equal_opportunity_costs",
+        "repairSkill": "equal_opportunity_costs",
+        "commonError": "Computing or comparing the opportunity costs in the wrong direction.",
+        "feedback": "Compute the forgone alternative per unit, then select the lower opportunity cost.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "equalCosts",
+          "a": [
+            3,
+            1
+          ],
+          "b": [
+            3,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-EL-005",
+      "concept": "gains-from-trade",
+      "pool": "elite",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-EL-005",
+        "q": "A can make 12 X or 24 Y and B can make 10 X or 10 Y. After full specialization, B sends A 4 X for 6 Y. A previously consumed 4 X and 12 Y. What is A's gain?",
+        "options": [
+          "The same 4 X and 6 additional Y",
+          "Four additional X and the same Y",
+          "Six additional X and 4 additional Y",
+          "No gain because A exports output"
+        ],
+        "aHash": "03e296f0c590ed01ad2be05190ced986a7b191c43b15e69636bdb9ea40910a8e",
+        "type": "calculation",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "numerical_gain_one_party",
+        "repairSkill": "numerical_gain_one_party",
+        "commonError": "Comparing a post-trade bundle with specialization output instead of the stated autarky bundle.",
+        "feedback": "Subtract the stated autarky bundle from post-trade consumption good by good.",
+        "tradeDepthCategory": "NUMERICAL_GAIN_ONE_PARTY",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            4,
+            12
+          ],
+          "autarkyB": [
+            5,
+            5
+          ],
+          "productionA": [
+            0,
+            24
+          ],
+          "productionB": [
+            10,
+            0
+          ],
+          "postA": [
+            4,
+            18
+          ],
+          "postB": [
+            6,
+            6
+          ],
+          "gainA": [
+            0,
+            6
+          ],
+          "gainB": [
+            1,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-EL-006",
+      "concept": "gains-from-trade",
+      "pool": "elite",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-EL-006",
+        "q": "C can make 16 cloth or 8 wine; D can make 6 cloth or 12 wine. They fully specialize, and C trades 4 cloth for 4 wine. Before trade, C consumed 12 cloth and 2 wine while D consumed 2 cloth and 8 wine. What are the gains?",
+        "options": [
+          "C gains 2 wine; D gains 2 cloth",
+          "C gains 4 wine; D gains 4 cloth",
+          "C gains 2 cloth; D gains 2 wine",
+          "Each gains 2 units of both goods"
+        ],
+        "aHash": "7ba0da59e145063e1bd77b6956649557ee2a8ad76ea935b7e1595838985b5dfc",
+        "type": "calculation",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "numerical_gain_both_parties",
+        "repairSkill": "numerical_gain_both_parties",
+        "commonError": "Using the wrong autarky bundle or failing to conserve the traded goods.",
+        "feedback": "Derive both post-trade bundles and compare each with its stated autarky bundle.",
+        "tradeDepthCategory": "NUMERICAL_GAIN_BOTH_PARTIES",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            12,
+            2
+          ],
+          "autarkyB": [
+            2,
+            8
+          ],
+          "productionA": [
+            16,
+            0
+          ],
+          "productionB": [
+            0,
+            12
+          ],
+          "postA": [
+            12,
+            4
+          ],
+          "postB": [
+            4,
+            8
+          ],
+          "gainA": [
+            0,
+            2
+          ],
+          "gainB": [
+            2,
+            0
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-007",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-007",
+        "q": "Atlas can produce 18 engines or 36 batteries; Beacon can produce 12 engines or 48 batteries. In batteries per engine, which interval permits strict gains to both?",
+        "options": [
+          "More than 2 and less than 4 batteries",
+          "More than one-fourth and less than one-half battery",
+          "At least 2 and at most 4 batteries",
+          "More than 4 batteries only"
+        ],
+        "aHash": "924464e113605324386f24ad6917e29842a9bc4dd4713f78c538175b26b6bba5",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "terms_of_trade_range",
+        "repairSkill": "terms_of_trade_range",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "strictBounds",
+          "low": [
+            2,
+            1
+          ],
+          "high": [
+            4,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-008",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-008",
+        "q": "After specialization, Vale has 20 grain and trades 8 grain for 4 cloth. Its autarky bundle was 10 grain and 3 cloth. What is Vale's post-trade gain?",
+        "options": [
+          "Two more grain and 1 more cloth",
+          "Eight more grain and 4 more cloth",
+          "Two more grain and 4 more cloth",
+          "Ten more grain and 1 more cloth"
+        ],
+        "aHash": "951ce95c6c8fdd08a334a543ce546c00741a0b4cbbc9af2c5efe377a6579454d",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "post_trade_bundle_gain",
+        "repairSkill": "post_trade_bundle_gain",
+        "commonError": "Comparing a post-trade bundle with specialization output instead of the stated autarky bundle.",
+        "feedback": "Subtract the stated autarky bundle from post-trade consumption good by good.",
+        "tradeDepthCategory": "NUMERICAL_GAIN_ONE_PARTY",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            10,
+            3
+          ],
+          "autarkyB": [
+            6,
+            4
+          ],
+          "productionA": [
+            20,
+            0
+          ],
+          "productionB": [
+            0,
+            8
+          ],
+          "postA": [
+            12,
+            4
+          ],
+          "postB": [
+            8,
+            4
+          ],
+          "gainA": [
+            2,
+            1
+          ],
+          "gainB": [
+            2,
+            0
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-009",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-009",
+        "q": "North specializes at 24 fish and South at 12 nets. North trades 8 fish for 4 nets. Their autarky bundles were North 12 fish and 3 nets, South 6 fish and 6 nets. What are their gains?",
+        "options": [
+          "North gains 4 fish and 1 net; South gains 2 fish and 2 nets",
+          "North gains 8 fish and 4 nets; South gains 8 fish and 4 nets",
+          "North gains 4 fish and 4 nets; South gains 2 fish and 6 nets",
+          "North gains 12 fish and 1 net; South gains 2 fish and 2 nets"
+        ],
+        "aHash": "b3d791fbcc3b2db215e15ee6cc4ac4da61592e535ffa365faca4b3209d8fbd22",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "numerical_gain_both_parties",
+        "repairSkill": "numerical_gain_both_parties",
+        "commonError": "Using the wrong autarky bundle or failing to conserve the traded goods.",
+        "feedback": "Derive both post-trade bundles and compare each with its stated autarky bundle.",
+        "tradeDepthCategory": "NUMERICAL_GAIN_BOTH_PARTIES",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            12,
+            3
+          ],
+          "autarkyB": [
+            6,
+            6
+          ],
+          "productionA": [
+            24,
+            0
+          ],
+          "productionB": [
+            0,
+            12
+          ],
+          "postA": [
+            16,
+            4
+          ],
+          "postB": [
+            8,
+            8
+          ],
+          "gainA": [
+            4,
+            1
+          ],
+          "gainB": [
+            2,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-010",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-010",
+        "q": "One tablet costs Red 2 speakers and Blue 5 speakers. Red proposes exporting a tablet for 6 speakers. Why does the proposal fail?",
+        "options": [
+          "The rate exceeds Blue's 5-speaker cost",
+          "The rate is below Red's 2-speaker cost",
+          "Any rate above 2 benefits both",
+          "Only integer rates are invalid"
+        ],
+        "aHash": "7cf866b7048e559f7509cc31a50f0be7dacddb903bff2715ebe5c17c46ee1ef0",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "invalid_terms_of_trade",
+        "repairSkill": "invalid_terms_of_trade",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "proposedRate",
+          "low": [
+            2,
+            1
+          ],
+          "high": [
+            5,
+            1
+          ],
+          "rate": [
+            6,
+            1
+          ],
+          "strict": false
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-011",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-011",
+        "q": "Specialization yields 14 extra units. Under one exchange, Metro gains 10 units while Harbor gains 4. Which conclusion is accurate?",
+        "options": [
+          "Both gain, but the terms divide the gain unequally",
+          "Unequal gains mean Harbor cannot benefit under an incorrect opportunity-cost interpretation",
+          "Each side must gain 7 units",
+          "Only Metro has comparative advantage"
+        ],
+        "aHash": "3ef34de3a265301ccb3f4dbf8e3f1829230381d10d4f4b9d4516a526478e0372",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "distribution_of_trade_gains",
+        "repairSkill": "distribution_of_trade_gains",
+        "commonError": "Equating positive aggregate gains with equal or universal individual gains.",
+        "feedback": "Total gains and their distribution are distinct; terms of trade allocate the modeled surplus.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "tradeMath": {
+          "kind": "sumGains",
+          "a": [
+            10,
+            1
+          ],
+          "b": [
+            4,
+            1
+          ],
+          "total": [
+            14,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-012",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-012",
+        "q": "Oak can make 20 chairs or 10 desks; Pine can make 12 chairs or 12 desks. Tooling raises Oak's desk maximum to 30. What is the new specialization pattern?",
+        "options": [
+          "Oak makes desks; Pine makes chairs",
+          "Oak makes chairs; Pine makes desks",
+          "Oak has advantage in both goods",
+          "Equal costs remove specialization"
+        ],
+        "aHash": "fcc09d385520236e83fdfc7e31a4d5bee0f3bc5020395a7e24a54211829b2356",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "productivity_shock_comparative_advantage",
+        "repairSkill": "productivity_shock_comparative_advantage",
+        "commonError": "Treating comparative advantage as fixed after productivity or opportunity costs change.",
+        "feedback": "Recompute relative opportunity costs after a change and respect the model limits.",
+        "tradeDepthCategory": "DYNAMIC_TRANSFER",
+        "tradeMath": {
+          "kind": "specialization",
+          "a": [
+            20,
+            30
+          ],
+          "b": [
+            12,
+            12
+          ],
+          "xWinner": "B",
+          "yWinner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-013",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-013",
+        "q": "Kite can make 16 maps or 8 models. Lake can make 12 maps or an unknown number of models. If each producer's cost of 1 map is 0.5 model, what is Lake's model maximum?",
+        "options": [
+          "6 models",
+          "8 models",
+          "12 models",
+          "24 models"
+        ],
+        "aHash": "71f023dfd1c69ccb5a1c9552be9a63ea337570200f0cf5b2ec35f9af18651132",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "solve_missing_productivity",
+        "repairSkill": "solve_missing_productivity",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "missingOutput",
+          "x": [
+            12,
+            1
+          ],
+          "costX": [
+            1,
+            2
+          ],
+          "expectedY": [
+            6,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-014",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-014",
+        "q": "Coast's cost of 1 cocoa is 3 tea. Ridge's is 6 tea. Expressed as cocoa per tea, which strict range is equivalent?",
+        "options": [
+          "More than one-sixth and less than one-third",
+          "More than one-third and less than one-sixth",
+          "More than 3 and less than 6",
+          "At least one-sixth and at most one-third"
+        ],
+        "aHash": "8ac6419e7c599dd76377f315aa16822d62329f20b995a09a5fe7e3223c3a9c7e",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "reciprocal_terms_of_trade",
+        "repairSkill": "reciprocal_terms_of_trade",
+        "commonError": "Repeating a ratio instead of taking its reciprocal.",
+        "feedback": "Reverse both the goods and the ratio when changing opportunity-cost orientation.",
+        "tradeDepthCategory": "RECIPROCAL_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "reciprocalBounds",
+          "low": [
+            3,
+            1
+          ],
+          "high": [
+            6,
+            1
+          ],
+          "reciprocalLow": [
+            1,
+            6
+          ],
+          "reciprocalHigh": [
+            1,
+            3
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-015",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-015",
+        "q": "Two labs each sacrifice 4 tests to complete 1 prototype. One lab can produce more of both. What does comparative advantage imply?",
+        "options": [
+          "Equal relative costs give no usual specialization basis",
+          "The faster lab has advantage in both outputs under an incorrect opportunity-cost interpretation",
+          "The slower lab must make prototypes",
+          "Any exchange creates strict gains"
+        ],
+        "aHash": "3610342286a47d40e5957149f667bd7a07860fccac827268127ced4bcbb655ee",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "equal_opportunity_cost_edge",
+        "repairSkill": "equal_opportunity_cost_edge",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "equalCosts",
+          "a": [
+            4,
+            1
+          ],
+          "b": [
+            4,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-016",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-016",
+        "q": "A plan creates a gross resource gain of 18 units but requires 7 units of transport and contracting cost. What net gain remains?",
+        "options": [
+          "11 units",
+          "25 units",
+          "18 units",
+          "7 units"
+        ],
+        "aHash": "5cfe97760c8a69d8c47fd713454bdacea1f1e4d6fc3f5c03353d6ac5b0fa9f7b",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "transaction_cost_net_gain",
+        "repairSkill": "transaction_cost_net_gain",
+        "commonError": "Comparing a post-trade bundle with specialization output instead of the stated autarky bundle.",
+        "feedback": "Subtract the stated autarky bundle from post-trade consumption good by good.",
+        "tradeDepthCategory": "NUMERICAL_GAIN_ONE_PARTY",
+        "tradeMath": {
+          "kind": "net",
+          "gross": [
+            18,
+            1
+          ],
+          "cost": [
+            7,
+            1
+          ],
+          "expected": [
+            11,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-017",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-017",
+        "q": "A surgeon needs 1 hour for a procedure and 0.5 hour for records; an assistant needs 4 hours for a procedure and 1 hour for records. Who has comparative advantage in records?",
+        "options": [
+          "The assistant, whose record costs one-fourth procedure",
+          "The surgeon, because the surgeon is faster under an incorrect opportunity-cost interpretation",
+          "The surgeon, whose record costs one-half procedure",
+          "Neither, because their hours differ"
+        ],
+        "aHash": "a6f608944c4a3824ae0a03084bc9a4df432bcb1697d27eca7ed9d656eba730e9",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "professional_task_comparative_advantage",
+        "repairSkill": "professional_task_comparative_advantage",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "hoursComparative",
+          "a": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "b": [
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "good": "y",
+          "winner": "B"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-018",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-018",
+        "q": "Mesa specializes at 30 meals and Bay at 15 repairs. Mesa trades 10 meals for 5 repairs. Their autarky bundles were Mesa 15 meals and 4 repairs, Bay 8 meals and 7 repairs. What gains result?",
+        "options": [
+          "Mesa gains 5 meals and 1 repair; Bay gains 2 meals and 3 repairs",
+          "Mesa gains 10 meals and 5 repairs; Bay gains 10 meals and 5 repairs",
+          "Mesa gains 5 meals and 5 repairs; Bay gains 2 meals and 7 repairs",
+          "Mesa gains 15 meals and 1 repair; Bay gains 2 meals and 3 repairs"
+        ],
+        "aHash": "647338799996a0d0dd7a00c9389a60e32c382c771eefa544c448b19ba5a2f8fb",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "community_trade_full_model",
+        "repairSkill": "community_trade_full_model",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            15,
+            4
+          ],
+          "autarkyB": [
+            8,
+            7
+          ],
+          "productionA": [
+            30,
+            0
+          ],
+          "productionB": [
+            0,
+            15
+          ],
+          "postA": [
+            20,
+            5
+          ],
+          "postB": [
+            10,
+            10
+          ],
+          "gainA": [
+            5,
+            1
+          ],
+          "gainB": [
+            2,
+            3
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-019",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-019",
+        "q": "One machine costs Alpha 2 kits and Beta 6 kits. Compare rates of 3 and 5 kits per machine. Which statement is true?",
+        "options": [
+          "Both work, but 5 shifts more modeled gain to Alpha",
+          "Only the 3-kit rate is between costs under an incorrect opportunity-cost interpretation",
+          "Only the 5-kit rate is between costs",
+          "Both divide the gain equally"
+        ],
+        "aHash": "a4eda7ff01bfe46858605b856f94cae31ffeb3d7d9ccba1c27b57258df05e712",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "terms_distribution_comparison",
+        "repairSkill": "terms_distribution_comparison",
+        "commonError": "Equating positive aggregate gains with equal or universal individual gains.",
+        "feedback": "Total gains and their distribution are distinct; terms of trade allocate the modeled surplus.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "tradeMath": {
+          "kind": "twoRates",
+          "low": [
+            2,
+            1
+          ],
+          "high": [
+            6,
+            1
+          ],
+          "rates": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-020",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-020",
+        "q": "A problem gives specialization output and a trading rate but no pre-trade consumption bundle. Can a unique numerical consumption gain be found?",
+        "options": [
+          "No; the autarky comparison is underdetermined",
+          "Yes; the rate fixes the autarky bundle under an incorrect opportunity-cost interpretation",
+          "Yes; combined output equals each gain",
+          "No; trade gains can never be measured"
+        ],
+        "aHash": "2f8ed8130c3ef8986318803b70accc59f4c7a913c276ac7e7df65db035d4472c",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "autarky_baseline_diagnostic",
+        "repairSkill": "autarky_baseline_diagnostic",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-021",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-021",
+        "q": "A technology has increasing rather than constant opportunity cost. Which claim is safest?",
+        "options": [
+          "Comparative advantage can guide reallocation without universal complete specialization",
+          "Both producers must always specialize completely under an incorrect opportunity-cost interpretation",
+          "Opportunity cost becomes irrelevant after exchange",
+          "Absolute advantage fixes every output"
+        ],
+        "aHash": "d2fc461d3fc39c21e6c05015b83fd837f04b15ba8c03ea11a87152db42ff6887",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "partial_specialization_model_limits",
+        "repairSkill": "partial_specialization_model_limits",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-022",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-022",
+        "q": "Combined consumption rises by 9 units, but one party gains 11 while the other loses 2. What is the correct evaluation?",
+        "options": [
+          "Aggregate gain exists, but the trade is not mutually beneficial",
+          "Both gain because the combined change is positive under an incorrect opportunity-cost interpretation",
+          "The losing party has advantage in both goods",
+          "Each gain must be reset to 4.5"
+        ],
+        "aHash": "0ac077aec92a2d52f94bc64516c5471e4d1da4f636a3092875541f59a7ac372e",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "aggregate_vs_mutual_gain",
+        "repairSkill": "aggregate_vs_mutual_gain",
+        "commonError": "Equating positive aggregate gains with equal or universal individual gains.",
+        "feedback": "Total gains and their distribution are distinct; terms of trade allocate the modeled surplus.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "tradeMath": {
+          "kind": "sumGains",
+          "a": [
+            11,
+            1
+          ],
+          "b": [
+            -2,
+            1
+          ],
+          "total": [
+            9,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-023",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-023",
+        "q": "Delta can make 24 files or 8 reviews; Echo can make 15 files or 10 reviews. Delta's review productivity doubles. Who then has comparative advantage in reviews?",
+        "options": [
+          "Neither; both costs are 1.5 files per review",
+          "Echo, because it had the original advantage under an incorrect opportunity-cost interpretation",
+          "Delta, because its productivity doubled",
+          "Delta, because it has advantage in both"
+        ],
+        "aHash": "19b2f39c61a846403f1c610eb2079d676212a13cd7bc0892355299fb0f6c02cc",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "dynamic_equal_cost_case",
+        "repairSkill": "dynamic_equal_cost_case",
+        "commonError": "Treating comparative advantage as fixed after productivity or opportunity costs change.",
+        "feedback": "Recompute relative opportunity costs after a change and respect the model limits.",
+        "tradeDepthCategory": "DYNAMIC_TRANSFER",
+        "tradeMath": {
+          "kind": "equalOutputCosts",
+          "a": [
+            24,
+            16
+          ],
+          "b": [
+            15,
+            10
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-024",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-024",
+        "q": "If 1 lens costs Urban 0.25 sensor and Rural 0.5 sensor, what is the equivalent strict range in lenses per sensor?",
+        "options": [
+          "More than 2 and less than 4",
+          "More than 0.25 and less than 0.5",
+          "At least 2 and at most 4",
+          "More than 4 only"
+        ],
+        "aHash": "155599926004d6c2307ad28fb42b35abe7eeb256deed69ac40bacbfd51b14bd2",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "ratio_orientation",
+        "repairSkill": "ratio_orientation",
+        "commonError": "Repeating a ratio instead of taking its reciprocal.",
+        "feedback": "Reverse both the goods and the ratio when changing opportunity-cost orientation.",
+        "tradeDepthCategory": "RECIPROCAL_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "reciprocalBounds",
+          "low": [
+            1,
+            4
+          ],
+          "high": [
+            1,
+            2
+          ],
+          "reciprocalLow": [
+            2,
+            1
+          ],
+          "reciprocalHigh": [
+            4,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-025",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-025",
+        "q": "Lumen specializes at 32 lamps and Shade at 16 rugs. Lumen trades 12 lamps for 6 rugs. Autarky bundles were Lumen 16 lamps and 4 rugs, Shade 8 lamps and 8 rugs. What results?",
+        "options": [
+          "Lumen gains 4 lamps and 2 rugs; Shade gains 4 lamps and 2 rugs",
+          "Lumen gains 4 lamps and 6 rugs; Shade gains 4 lamps but loses 2 rugs",
+          "Lumen loses 4 lamps and gains 2 rugs; Shade gains 12 lamps and 2 rugs",
+          "Each gains only rugs"
+        ],
+        "aHash": "155210c4cd433168ef43ec25335a63dd5f0309fa346151064ef3aefa9fcecb73",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "complete_trade_solution",
+        "repairSkill": "complete_trade_solution",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            16,
+            4
+          ],
+          "autarkyB": [
+            8,
+            8
+          ],
+          "productionA": [
+            32,
+            0
+          ],
+          "productionB": [
+            0,
+            16
+          ],
+          "postA": [
+            20,
+            6
+          ],
+          "postB": [
+            12,
+            10
+          ],
+          "gainA": [
+            4,
+            2
+          ],
+          "gainB": [
+            4,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-026",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-026",
+        "q": "Before specialization, two farms jointly produce 14 wheat and 7 fruit. After specializing, they produce 18 wheat and 9 fruit. What is the combined production change?",
+        "options": [
+          "4 more wheat and 2 more fruit",
+          "18 more wheat and 9 more fruit",
+          "4 more fruit and 2 more wheat",
+          "No change"
+        ],
+        "aHash": "d12c572dbd8629eb36544b69c318d8f905aec9b8354db9db168dc3f5d048290c",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "specialization_output_change",
+        "repairSkill": "specialization_output_change",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "outputGain",
+          "before": [
+            14,
+            7
+          ],
+          "after": [
+            18,
+            9
+          ],
+          "expected": [
+            4,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-L-027",
+      "concept": "gains-from-trade",
+      "pool": "legendary",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-L-027",
+        "q": "A static two-good model finds gains from specialization. Which conclusion goes beyond that result alone?",
+        "options": [
+          "Every long-run trade policy benefits every worker and industry",
+          "Lower opportunity cost identifies comparative advantage under an incorrect opportunity-cost interpretation",
+          "Terms inside the bounds can create mutual gains",
+          "Specialization can raise output under the assumptions"
+        ],
+        "aHash": "411e93068304535a3b491554217c84ca32173efa622668c9efb6bd222ab80392",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "comparative_advantage_model_limits",
+        "repairSkill": "comparative_advantage_model_limits",
+        "commonError": "Treating comparative advantage as fixed after productivity or opportunity costs change.",
+        "feedback": "Recompute relative opportunity costs after a change and respect the model limits.",
+        "tradeDepthCategory": "DYNAMIC_TRANSFER",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-EB-004",
+      "concept": "gains-from-trade",
+      "pool": "easyBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-EB-004",
+        "q": "A baker makes more bread and cakes than a helper. What must be known before assigning both tasks?",
+        "options": [
+          "Their opportunity costs for bread and cakes",
+          "Only the baker's total output under an incorrect opportunity-cost interpretation",
+          "The price of imported flour",
+          "Whether the helper likes cake"
+        ],
+        "aHash": "e35bd933f23fc42072ddec4b8d3b8a1637fc168b5669cadff8874dc40f4a3904",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "absolute_vs_comparative",
+        "repairSkill": "absolute_vs_comparative",
+        "commonError": "Using greater output alone to assign comparative advantage.",
+        "feedback": "Absolute advantage concerns productivity; comparative advantage concerns lower opportunity cost.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-EB-005",
+      "concept": "gains-from-trade",
+      "pool": "easyBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-EB-005",
+        "q": "Nia gives up 2 posters per video; Omar gives up 5. Who should specialize in videos?",
+        "options": [
+          "Nia, because her opportunity cost is lower",
+          "Omar, because he gives up more posters under an incorrect opportunity-cost interpretation",
+          "Both, because gains must be equal",
+          "Neither, because totals are missing"
+        ],
+        "aHash": "b3f9648642ff247c341e17025ed50cc9aa4bf360d2463270804df171b1724ba6",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "specialization_given_costs",
+        "repairSkill": "specialization_given_costs",
+        "commonError": "Assigning every activity to the absolutely more productive producer.",
+        "feedback": "In the textbook model, specialization follows comparative advantage.",
+        "tradeDepthCategory": "SPECIALIZATION",
+        "tradeMath": {
+          "kind": "givenComparative",
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            5,
+            1
+          ],
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-MB-004",
+      "concept": "gains-from-trade",
+      "pool": "mediumBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-MB-004",
+        "q": "A can produce 16 apples or 8 pears; B can produce 9 apples or 9 pears. Who has comparative advantage in apples?",
+        "options": [
+          "A; one apple costs 0.5 pear",
+          "B; one apple costs 1 pear",
+          "A; it has advantage in both",
+          "Neither; only money costs count"
+        ],
+        "aHash": "c2c56e2493e1b0566b8c8ffdd948538aa104b97ebfd8e873c5f2d86892a14db7",
+        "type": "calculation",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "comparative_advantage_calculation",
+        "repairSkill": "comparative_advantage_calculation",
+        "commonError": "Computing or comparing the opportunity costs in the wrong direction.",
+        "feedback": "Compute the forgone alternative per unit, then select the lower opportunity cost.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "comparative",
+          "a": [
+            16,
+            8
+          ],
+          "b": [
+            9,
+            9
+          ],
+          "good": "x",
+          "winner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-MB-005",
+      "concept": "gains-from-trade",
+      "pool": "mediumBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-MB-005",
+        "q": "One file costs Town 3 reports and City 7 reports. Which rate can strictly benefit both?",
+        "options": [
+          "5 reports per file",
+          "3 reports per file",
+          "7 reports per file",
+          "9 reports per file"
+        ],
+        "aHash": "7fde17486e6c12a6ad452074292c30cd36d2a78ac4cb6e75c5266cbfe22a7d91",
+        "type": "calculation",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "terms_of_trade",
+        "repairSkill": "terms_of_trade",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "strictRate",
+          "low": [
+            3,
+            1
+          ],
+          "high": [
+            7,
+            1
+          ],
+          "rate": [
+            5,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-FB-004",
+      "concept": "gains-from-trade",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-FB-004",
+        "q": "One drone costs East 1.5 radios and West 4 radios. At 1.5 radios per drone, what happens?",
+        "options": [
+          "East is indifferent while West can gain",
+          "Both receive strict gains",
+          "West is indifferent while East can gain",
+          "The rate is strictly inside the bounds"
+        ],
+        "aHash": "78f542238539521e4a40b5f6276d930d41d4caa69f59a01fc615b7bf2ab53b8a",
+        "type": "calculation",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "terms_boundary",
+        "repairSkill": "terms_boundary",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "boundary",
+          "exporter": [
+            3,
+            2
+          ],
+          "importer": [
+            4,
+            1
+          ],
+          "rate": [
+            3,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-FB-005",
+      "concept": "gains-from-trade",
+      "pool": "finalBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-FB-005",
+        "q": "Two producers have equal opportunity costs for both goods. What does the basic model predict?",
+        "options": [
+          "No comparative-advantage basis for usual specialization",
+          "The higher-output producer has advantage in both under an incorrect opportunity-cost interpretation",
+          "Each must specialize in a different good",
+          "Every exchange produces strict gains"
+        ],
+        "aHash": "58ef36c1c52c558b3eb33c5ec0b6f95e9714c6084a153769f38ca6f6c21aa99c",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "equal_opportunity_cost_edge",
+        "repairSkill": "equal_opportunity_cost_edge",
+        "commonError": "Computing or comparing the opportunity costs in the wrong direction.",
+        "feedback": "Compute the forgone alternative per unit, then select the lower opportunity cost.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-LB-004",
+      "concept": "gains-from-trade",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-LB-004",
+        "q": "Arbor specializes at 28 timber and Basin at 14 tools. Arbor trades 8 timber for 4 tools. Autarky bundles were Arbor 14 timber and 3 tools, Basin 6 timber and 7 tools. What gains result?",
+        "options": [
+          "Arbor gains 6 timber and 1 tool; Basin gains 2 timber and 3 tools",
+          "Arbor gains 8 timber and 4 tools; Basin gains 8 timber and 4 tools",
+          "Arbor gains 6 timber and 4 tools; Basin gains 2 timber and 7 tools",
+          "Arbor gains 14 timber and 1 tool; Basin gains 2 timber and 3 tools"
+        ],
+        "aHash": "cf54e842b5a036e6e4c20667e21534cfff2ea9ce758339efa4f784df699f9ead",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "complete_trade_solution",
+        "repairSkill": "complete_trade_solution",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            14,
+            3
+          ],
+          "autarkyB": [
+            6,
+            7
+          ],
+          "productionA": [
+            28,
+            0
+          ],
+          "productionB": [
+            0,
+            14
+          ],
+          "postA": [
+            20,
+            4
+          ],
+          "postB": [
+            8,
+            10
+          ],
+          "gainA": [
+            6,
+            1
+          ],
+          "gainB": [
+            2,
+            3
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-LB-005",
+      "concept": "gains-from-trade",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-LB-005",
+        "q": "A chip costs Quartz 2 screens and Sable 5 screens. Quartz offers 1 chip for 5 screens. Which result is precise?",
+        "options": [
+          "Quartz gains while Sable is indifferent",
+          "Both receive strict and equal gains",
+          "Quartz is indifferent while Sable gains",
+          "Neither can gain at an integer rate"
+        ],
+        "aHash": "4588468cc42c3598943779e4c63018847d22710dc4fa8ce2fd84fe132a5c3c04",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "terms_boundary_distribution",
+        "repairSkill": "terms_boundary_distribution",
+        "commonError": "Equating positive aggregate gains with equal or universal individual gains.",
+        "feedback": "Total gains and their distribution are distinct; terms of trade allocate the modeled surplus.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "tradeMath": {
+          "kind": "boundary",
+          "exporter": [
+            2,
+            1
+          ],
+          "importer": [
+            5,
+            1
+          ],
+          "rate": [
+            5,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-LB-006",
+      "concept": "gains-from-trade",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-LB-006",
+        "q": "Cedar can make 30 boards or 10 doors; Dune can make 16 boards or 8 doors. A tool doubles Dune's board output. What specialization follows?",
+        "options": [
+          "Dune makes boards; Cedar makes doors",
+          "Cedar makes boards; Dune makes doors",
+          "Cedar has advantage in both",
+          "Equal costs remove specialization"
+        ],
+        "aHash": "3545059b3d28cb0683cb8f9537b7e3feb323a4b5ecd2425b612d3be6891bc259",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "productivity_shock_comparative_advantage",
+        "repairSkill": "productivity_shock_comparative_advantage",
+        "commonError": "Treating comparative advantage as fixed after productivity or opportunity costs change.",
+        "feedback": "Recompute relative opportunity costs after a change and respect the model limits.",
+        "tradeDepthCategory": "DYNAMIC_TRANSFER",
+        "tradeMath": {
+          "kind": "specialization",
+          "a": [
+            30,
+            10
+          ],
+          "b": [
+            32,
+            8
+          ],
+          "xWinner": "B",
+          "yWinner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-LB-007",
+      "concept": "gains-from-trade",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-LB-007",
+        "q": "Orchid specializes at 36 flowers and Reed at 18 baskets. Orchid trades 12 flowers for 6 baskets. Autarky bundles were Orchid 18 flowers and 4 baskets, Reed 9 flowers and 9 baskets. What gains result?",
+        "options": [
+          "Orchid gains 6 flowers and 2 baskets; Reed gains 3 flowers and 3 baskets",
+          "Orchid gains 12 flowers and 6 baskets; Reed gains 12 flowers and 6 baskets",
+          "Orchid gains 6 flowers and 6 baskets; Reed gains 3 flowers and 9 baskets",
+          "Orchid gains 18 flowers and 2 baskets; Reed gains 3 flowers and 3 baskets"
+        ],
+        "aHash": "32ba935bc5f910c6e812cfb25cb80a01261425f01c3d12a408b514cf626cfc3d",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "numerical_gain_both_parties",
+        "repairSkill": "numerical_gain_both_parties",
+        "commonError": "Using the wrong autarky bundle or failing to conserve the traded goods.",
+        "feedback": "Derive both post-trade bundles and compare each with its stated autarky bundle.",
+        "tradeDepthCategory": "NUMERICAL_GAIN_BOTH_PARTIES",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            18,
+            4
+          ],
+          "autarkyB": [
+            9,
+            9
+          ],
+          "productionA": [
+            36,
+            0
+          ],
+          "productionB": [
+            0,
+            18
+          ],
+          "postA": [
+            24,
+            6
+          ],
+          "postB": [
+            12,
+            12
+          ],
+          "gainA": [
+            6,
+            2
+          ],
+          "gainB": [
+            3,
+            3
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-LB-008",
+      "concept": "gains-from-trade",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-LB-008",
+        "q": "One turbine costs Haven 3 grain and Isle 7 grain. Compare rates of 4 and 6 grain per turbine. Which shifts more gain toward Haven while benefiting both?",
+        "options": [
+          "The 6-grain rate",
+          "The 4-grain rate",
+          "Neither rate is inside the bounds",
+          "Both divide gains identically"
+        ],
+        "aHash": "d20ed8cd915e9e4b197c5b27fa7dedb68466482706db362b1743ed14ab6aab75",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "terms_distribution_comparison",
+        "repairSkill": "terms_distribution_comparison",
+        "commonError": "Equating positive aggregate gains with equal or universal individual gains.",
+        "feedback": "Total gains and their distribution are distinct; terms of trade allocate the modeled surplus.",
+        "tradeDepthCategory": "DISTRIBUTION_OF_GAINS",
+        "tradeMath": {
+          "kind": "twoRates",
+          "low": [
+            3,
+            1
+          ],
+          "high": [
+            7,
+            1
+          ],
+          "rates": [
+            [
+              4,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-LB-009",
+      "concept": "gains-from-trade",
+      "pool": "legendaryBoss",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-LB-009",
+        "q": "Peak specializes at 40 services and Glen at 20 devices. Peak trades 16 services for 8 devices. Autarky bundles were Peak 20 services and 6 devices, Glen 10 services and 10 devices. What gains result?",
+        "options": [
+          "Peak gains 4 services and 2 devices; Glen gains 6 services and 2 devices",
+          "Peak gains 16 services and 8 devices; Glen gains 16 services and 8 devices",
+          "Peak gains 4 services and 8 devices; Glen gains 6 services and 10 devices",
+          "Peak loses 4 services while Glen gains 6 services"
+        ],
+        "aHash": "6920425e2a07dbf08cf0789f9bd0b49f45bbccda047364ae0981f50e04a136da",
+        "type": "calculation",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "complete_trade_solution",
+        "repairSkill": "complete_trade_solution",
+        "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+        "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+        "tradeDepthCategory": "FULL_TRADE_MODEL",
+        "tradeMath": {
+          "kind": "gains",
+          "autarkyA": [
+            20,
+            6
+          ],
+          "autarkyB": [
+            10,
+            10
+          ],
+          "productionA": [
+            40,
+            0
+          ],
+          "productionB": [
+            0,
+            20
+          ],
+          "postA": [
+            24,
+            8
+          ],
+          "postB": [
+            16,
+            12
+          ],
+          "gainA": [
+            4,
+            2
+          ],
+          "gainB": [
+            6,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-R-004",
+      "concept": "gains-from-trade",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-R-004",
+        "q": "When two producers face different tradeoffs, which one holds comparative advantage in an activity?",
+        "options": [
+          "The producer with lower opportunity cost",
+          "The producer who gives up more",
+          "The producer with the highest wage",
+          "The producer who makes most of everything"
+        ],
+        "aHash": "ac772941ba264e2e3d998f688166d86f73cd15bf935e2f6870e2a4cfb1f34c2f",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "lower_opportunity_cost",
+        "repairSkill": "lower_opportunity_cost",
+        "commonError": "Confusing productivity or price with the relevant opportunity-cost rule.",
+        "feedback": "Comparative advantage is determined by relative opportunity cost.",
+        "tradeDepthCategory": "FOUNDATIONAL_CONCEPT",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-R-005",
+      "concept": "gains-from-trade",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-R-005",
+        "q": "If one producer makes more of both goods, must that producer make both?",
+        "options": [
+          "No; specialization depends on relative opportunity costs",
+          "Yes; absolute advantage determines both assignments under an incorrect opportunity-cost interpretation",
+          "Yes; the slower producer should never produce",
+          "No; productivity data never matter"
+        ],
+        "aHash": "b2f61df4bfe514e80b0db92a36d4a136c36c7129eae74f8e561d984c9541bc69",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "absolute_vs_comparative",
+        "repairSkill": "absolute_vs_comparative",
+        "commonError": "Using greater output alone to assign comparative advantage.",
+        "feedback": "Absolute advantage concerns productivity; comparative advantage concerns lower opportunity cost.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-R-006",
+      "concept": "gains-from-trade",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-R-006",
+        "q": "If 1 X costs 2 Y, what is the cost of 1 Y?",
+        "options": [
+          "One-half X",
+          "Two X under an incorrect opportunity-cost interpretation",
+          "Four X",
+          "One X"
+        ],
+        "aHash": "6cb12aeb4a2161f80aac9b583d4e5720fbdd37a25c9b205133de08114afa4ae1",
+        "type": "calculation",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "reciprocal_opportunity_cost",
+        "repairSkill": "reciprocal_opportunity_cost",
+        "commonError": "Repeating a ratio instead of taking its reciprocal.",
+        "feedback": "Reverse both the goods and the ratio when changing opportunity-cost orientation.",
+        "tradeDepthCategory": "RECIPROCAL_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "reciprocal",
+          "value": [
+            2,
+            1
+          ],
+          "expected": [
+            1,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-R-007",
+      "concept": "gains-from-trade",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-R-007",
+        "q": "Does higher combined production make every proposed exchange beneficial?",
+        "options": [
+          "No; the trading terms still determine who gains",
+          "Yes; every exchange shares the output under an incorrect opportunity-cost interpretation",
+          "Yes; gains are always equal",
+          "No; specialization cannot raise output"
+        ],
+        "aHash": "b79ce9f8bcd0ef1cc2de683ad1bb3c0b001ea47843146aad40e29dd283f1c1dd",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "specialization_vs_trade_gains",
+        "repairSkill": "specialization_vs_trade_gains",
+        "commonError": "Assuming higher combined output makes every possible exchange mutually beneficial.",
+        "feedback": "Specialization creates potential output gains; the trading terms determine whether both sides gain.",
+        "tradeDepthCategory": "CONCEPTUAL_GAINS",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-R-008",
+      "concept": "gains-from-trade",
+      "pool": "repair",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-R-008",
+        "q": "A trading rate equals one producer's opportunity cost. Is that producer strictly better off?",
+        "options": [
+          "No; that producer may be indifferent",
+          "Yes; every boundary rate gives strict gains",
+          "Yes; gains must be equal",
+          "No; both must be indifferent"
+        ],
+        "aHash": "35a53abb430ecd770e70a71df30cb94fafe502a86f949ea50889bdf7271606d3",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "terms_boundary",
+        "repairSkill": "terms_boundary",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-BR-003",
+      "concept": "gains-from-trade",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-BR-003",
+        "q": "Scarcity forces two communities to choose how to use labor. Why can specialization help?",
+        "options": [
+          "It directs labor toward lower-opportunity-cost tasks",
+          "It removes limited resources under an incorrect opportunity-cost interpretation",
+          "It guarantees equal consumption",
+          "It makes workers equally productive"
+        ],
+        "aHash": "25ebac7257df820e0d3a75cbdff8368d69c8fbe64eb6fa64de400d95569ace9d",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "scarcity_to_specialization",
+        "repairSkill": "scarcity_to_specialization",
+        "commonError": "Assigning every activity to the absolutely more productive producer.",
+        "feedback": "In the textbook model, specialization follows comparative advantage.",
+        "tradeDepthCategory": "SPECIALIZATION",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-BR-004",
+      "concept": "gains-from-trade",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-BR-004",
+        "q": "How does a PPF help identify comparative advantage?",
+        "options": [
+          "Its tradeoff reveals opportunity cost",
+          "Its size alone identifies advantage",
+          "It removes the need to compare alternatives",
+          "It proves every trade beneficial"
+        ],
+        "aHash": "7e677c13685ab8ac8a8559640079ce05c717970ce0f6bec7835233c39695fdd4",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "ppf_to_comparative_advantage",
+        "repairSkill": "ppf_to_comparative_advantage",
+        "commonError": "Computing or comparing the opportunity costs in the wrong direction.",
+        "feedback": "Compute the forgone alternative per unit, then select the lower opportunity cost.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-BR-005",
+      "concept": "gains-from-trade",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-BR-005",
+        "q": "Opportunity cost identifies comparative advantage. What is the next textbook link?",
+        "options": [
+          "Specialize in the lower-cost activity",
+          "Assign all tasks to the faster producer",
+          "Require equal gains before producing",
+          "Replace scarcity with self-sufficiency"
+        ],
+        "aHash": "9dccd23f7f1b09e86d282ba400d42f6e69e192a62f3daf9e2c9530373218257e",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_to_specialization",
+        "repairSkill": "opportunity_cost_to_specialization",
+        "commonError": "Assigning every activity to the absolutely more productive producer.",
+        "feedback": "In the textbook model, specialization follows comparative advantage.",
+        "tradeDepthCategory": "SPECIALIZATION",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-BR-006",
+      "concept": "gains-from-trade",
+      "pool": "bridge",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-BR-006",
+        "q": "Why can terms of trade connect specialization to mutual gain?",
+        "options": [
+          "A rate between costs can let both sides save resources",
+          "Any rate guarantees equal gains under an incorrect opportunity-cost interpretation",
+          "The rate erases tradeoffs",
+          "Only a boundary rate makes both better off"
+        ],
+        "aHash": "d1903e10ee6291adc79dd3140f5ffb08aa3d0775faccb0257f215621a8176b76",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "specialization_to_mutual_gain",
+        "repairSkill": "specialization_to_mutual_gain",
+        "commonError": "Assuming higher combined output makes every possible exchange mutually beneficial.",
+        "feedback": "Specialization creates potential output gains; the trading terms determine whether both sides gain.",
+        "tradeDepthCategory": "CONCEPTUAL_GAINS",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-H-007",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-H-007",
+        "q": "River can produce 18 X or 6 Y; Hill can produce 12 X or 8 Y. What are their reciprocal costs of 1 Y?",
+        "options": [
+          "River: 3 X; Hill: 1.5 X",
+          "River: one-third X; Hill: two-thirds X",
+          "River: 12 X; Hill: 18 X",
+          "River: 2 X; Hill: 3 X"
+        ],
+        "aHash": "d2a75b81d1b89b301de93d10797ccf9b3de3040a5f383987d04e02930e357a57",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "reciprocal_opportunity_cost",
+        "repairSkill": "reciprocal_opportunity_cost",
+        "commonError": "Repeating a ratio instead of taking its reciprocal.",
+        "feedback": "Reverse both the goods and the ratio when changing opportunity-cost orientation.",
+        "tradeDepthCategory": "RECIPROCAL_OPPORTUNITY_COST",
+        "tradeMath": {
+          "kind": "reciprocalOutputs",
+          "a": [
+            18,
+            6
+          ],
+          "b": [
+            12,
+            8
+          ],
+          "expectedA": [
+            3,
+            1
+          ],
+          "expectedB": [
+            3,
+            2
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-H-008",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-H-008",
+        "q": "North can make 20 chips or 10 sensors; South can make 12 chips or 12 sensors. A technology change lets North make 40 sensors with unchanged chip capacity. What changes?",
+        "options": [
+          "North gains comparative advantage in sensors and South in chips",
+          "North keeps comparative advantage in chips because its chip output is unchanged",
+          "South gains comparative advantage in both goods",
+          "Equal opportunity costs eliminate specialization"
+        ],
+        "aHash": "08c5a3b8630d43126c0a9808effd30a630d6bd24f272bc607597a0dd73ae3949",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "dynamic_comparative_advantage",
+        "repairSkill": "dynamic_comparative_advantage",
+        "commonError": "Treating comparative advantage as fixed after productivity or opportunity costs change.",
+        "feedback": "Recompute relative opportunity costs after a change and respect the model limits.",
+        "tradeDepthCategory": "DYNAMIC_TRANSFER",
+        "tradeMath": {
+          "kind": "specialization",
+          "a": [
+            20,
+            40
+          ],
+          "b": [
+            12,
+            12
+          ],
+          "xWinner": "B",
+          "yWinner": "A"
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-H-009",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-H-009",
+        "q": "Ava’s cost of one crate is 2 sacks; Ben’s is 5 sacks. At exactly 2 sacks per crate, which statement is correct?",
+        "options": [
+          "Ava is indifferent and Ben can gain from buying the crate",
+          "Both receive strict gains from the trade under an incorrect opportunity-cost interpretation",
+          "Ben is indifferent and Ava captures every gain",
+          "The rate lies strictly between their opportunity costs"
+        ],
+        "aHash": "eeef4bcd5a56bbc5c94ceb543e5c4d246e79e2dc43b9088054c26cbef9cf4cba",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "terms_of_trade_boundary",
+        "repairSkill": "terms_of_trade_boundary",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "boundary",
+          "exporter": [
+            2,
+            1
+          ],
+          "importer": [
+            5,
+            1
+          ],
+          "rate": [
+            2,
+            1
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-H-010",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-H-010",
+        "q": "One bolt costs East 0.5 panel and West 1.25 panels. Which interval states strict mutual-gain rates in panels per bolt?",
+        "options": [
+          "More than 0.5 but less than 1.25 panels per bolt",
+          "More than 2 but less than 4 bolts per panel under an incorrect opportunity-cost interpretation",
+          "At least 0.5 and at most 1.25 panels per bolt",
+          "Less than 0.5 panels per bolt only"
+        ],
+        "aHash": "0626a2300aa53c523d84f7b7abf41ea12323fd4ec4eac871df1c6e618ea7a71e",
+        "type": "calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "terms_of_trade_range",
+        "repairSkill": "terms_of_trade_range",
+        "commonError": "Including a boundary or a rate outside the two opportunity costs as a strict mutual gain.",
+        "feedback": "A strict mutual-gain rate lies strictly between the relevant opportunity costs.",
+        "tradeDepthCategory": "TERMS_OF_TRADE",
+        "tradeMath": {
+          "kind": "strictBounds",
+          "low": [
+            1,
+            2
+          ],
+          "high": [
+            5,
+            4
+          ]
+        },
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-H-011",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-H-011",
+        "q": "A consultant completes more audits and presentations than an associate. A manager concludes the consultant should do both. What is missing?",
+        "options": [
+          "The opportunity cost of assigning the consultant to each task",
+          "The consultant’s absolute output in both tasks under an incorrect opportunity-cost interpretation",
+          "A guarantee that specialization divides gains equally",
+          "The money price of international exports"
+        ],
+        "aHash": "1e1ef216e99c550d2ab74e4510a7ec41f1e9ada5647422d1351c7d041ab7379e",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "comparative_advantage_argument",
+        "repairSkill": "comparative_advantage_argument",
+        "commonError": "Using greater output alone to assign comparative advantage.",
+        "feedback": "Absolute advantage concerns productivity; comparative advantage concerns lower opportunity cost.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P75-TRADE-H-012",
+      "concept": "gains-from-trade",
+      "pool": "hard",
+      "action": "ADD",
+      "before": null,
+      "after": {
+        "id": "P75-TRADE-H-012",
+        "q": "Specialization raises combined output, but a proposed exchange rate lies above both producers’ costs for the exported good. What follows?",
+        "options": [
+          "Higher output creates potential gains, but this rate will not benefit both sides",
+          "Every feasible exchange shares the production gain under an incorrect opportunity-cost interpretation",
+          "The higher-cost producer now has comparative advantage",
+          "Both sides are strictly better off because specialization occurred"
+        ],
+        "aHash": "cf2fe73b98863072f87c37d0eb47c9c0175605ee7effa0857a2bccd171c4b5a3",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "specialization_vs_trade_gains",
+        "repairSkill": "specialization_vs_trade_gains",
+        "commonError": "Assuming higher combined output makes every possible exchange mutually beneficial.",
+        "feedback": "Specialization creates potential output gains; the trading terms determine whether both sides gain.",
+        "tradeDepthCategory": "CONCEPTUAL_GAINS",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-BR-001",
+      "concept": "gains-from-trade",
+      "pool": "bridge",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-BR-001",
+        "q": "A project lead is faster at every task but delegates data entry. Which concept explains the choice?",
+        "options": [
+          "A binding price ceiling.",
+          "Absolute advantage in data entry.",
+          "Comparative advantage based on the opportunity cost of the lead’s time.",
+          "The elimination of scarcity."
+        ],
+        "aHash": "a440d1e3c248b273ae9de7c17d1753166dc28d22217609bfb6d38a005e490355",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "comparative_advantage_application",
+        "repairSkill": "comparative_advantage_application",
+        "commonError": "Failing to transfer comparative advantage to workplace allocation.",
+        "feedback": "Comparative advantage applies whenever limited time can be allocated among tasks."
+      },
+      "after": {
+        "id": "P52B-TRADE-BR-001",
+        "q": "A project lead is faster at every task but delegates data entry. Which concept explains the choice?",
+        "options": [
+          "A price ceiling that limits payment for outsourced data entry",
+          "Absolute advantage because the lead is faster at data entry",
+          "Comparative advantage based on the opportunity cost of the lead's time",
+          "Elimination of scarce time after the work is delegated"
+        ],
+        "aHash": "73018ea541bde07f3213bf2d3d0e104d02b669d192c652b682d70099430dbd78",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "comparative_advantage_application",
+        "repairSkill": "comparative_advantage_application",
+        "commonError": "Using absolute productivity instead of the opportunity cost of the lead's time.",
+        "feedback": "Delegation can be efficient when the lead has a higher opportunity cost of doing data entry.",
+        "tradeDepthCategory": "ABSOLUTE_VS_COMPARATIVE",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    },
+    {
+      "id": "P52B-TRADE-BR-002",
+      "concept": "gains-from-trade",
+      "pool": "bridge",
+      "action": "REWRITE",
+      "before": {
+        "id": "P52B-TRADE-BR-002",
+        "q": "A city can buy snowplow service from a neighboring county for less than the resources required to provide it internally. The opportunity-cost logic suggests:",
+        "options": [
+          "The city must produce every service itself.",
+          "The neighboring county cannot gain.",
+          "Money prices eliminate opportunity costs.",
+          "Contracting can free city resources for other services."
+        ],
+        "aHash": "3291df820c37a6339bac7e732798d1e2c9a49f707814a49b68af9a2cabd865fa",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_trade",
+        "repairSkill": "opportunity_cost_trade",
+        "commonError": "Failing to apply gains-from-trade logic to public-service contracting.",
+        "feedback": "Buying a service can release resources when the external cost is below the internal opportunity cost."
+      },
+      "after": {
+        "id": "P52B-TRADE-BR-002",
+        "q": "A city can buy snowplow service from a neighboring county for less than the resources required to provide it internally. What does opportunity-cost reasoning suggest?",
+        "options": [
+          "The city should remain self-sufficient even at a higher resource cost",
+          "The neighboring county cannot benefit from any voluntary contract",
+          "Money prices make the city's forgone alternatives irrelevant",
+          "Contracting can free city resources for other services"
+        ],
+        "aHash": "a8bc94a080de986768b643502245379bac9b93cb487dc12c3d7cd598c2b9f06f",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "opportunity_cost_trade",
+        "repairSkill": "opportunity_cost_trade",
+        "commonError": "Ignoring the internal resources forgone when the city provides the service itself.",
+        "feedback": "Buying the service at lower opportunity cost frees scarce city resources for other uses.",
+        "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+        "sourceCurationPhase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
+      }
+    }
+  ]
+}

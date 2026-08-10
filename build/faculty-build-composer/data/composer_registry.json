@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-10T08:00:00.000Z",
+  "generatedAt": "2026-08-10T15:00:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -1813,24 +1813,59 @@
       "description": "Analyze comparative advantage, specialization, mutually beneficial terms of trade, and the distribution of gains from exchange.",
       "includedSkills": [
         "absolute_advantage_definition",
+        "absolute_vs_comparative",
+        "aggregate_vs_mutual_gain",
+        "autarky_baseline_diagnostic",
+        "community_trade_full_model",
         "comparative_advantage_application",
+        "comparative_advantage_argument",
         "comparative_advantage_calculation",
         "comparative_advantage_definition",
+        "comparative_advantage_given_costs",
+        "comparative_advantage_model_limits",
         "comparative_advantage_multi_step",
         "comparative_advantage_reciprocal",
+        "complete_trade_solution",
+        "conceptual_gains_from_trade",
         "core_trade",
         "distribution_of_trade_gains",
         "dynamic_comparative_advantage",
+        "dynamic_equal_cost_case",
+        "equal_opportunity_cost_edge",
         "equal_opportunity_costs",
         "gains_from_trade",
+        "hours_per_unit_opportunity_cost",
+        "invalid_terms_of_trade",
+        "lower_opportunity_cost",
         "net_gains_from_trade",
+        "numerical_gain_both_parties",
+        "numerical_gain_one_party",
+        "opportunity_cost_to_specialization",
         "opportunity_cost_trade",
+        "partial_specialization_model_limits",
+        "post_trade_bundle_gain",
+        "ppf_to_comparative_advantage",
+        "productivity_shock_comparative_advantage",
+        "professional_task_comparative_advantage",
+        "ratio_orientation",
+        "reciprocal_opportunity_cost",
+        "reciprocal_terms_of_trade",
+        "scarcity_to_specialization",
+        "solve_missing_productivity",
         "specialization",
+        "specialization_given_costs",
+        "specialization_output_change",
         "specialization_pattern",
+        "specialization_to_mutual_gain",
+        "specialization_vs_trade_gains",
+        "terms_boundary",
+        "terms_boundary_distribution",
+        "terms_distribution_comparison",
         "terms_of_trade",
+        "terms_of_trade_boundary",
         "terms_of_trade_distribution",
         "terms_of_trade_range",
-        "trade_barrier_effect",
+        "transaction_cost_net_gain",
         "voluntary_exchange"
       ],
       "excludedNeighboringSkills": [],
@@ -1847,45 +1882,46 @@
       ],
       "sourceGames": [
         "equilibrium-crisis",
-        "market-gate"
+        "market-gate",
+        "phase7.5-comparative-advantage-gains-trade-standalone-expansion"
       ],
       "questionCountByRole": {
-        "boss": 9,
-        "bridge": 2,
+        "boss": 15,
+        "bridge": 6,
         "calculation": 0,
-        "elite": 4,
+        "elite": 6,
         "integration": 0,
-        "legendary": 6,
-        "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "main": 34,
+        "repair": 8,
         "repairSeed": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "elite": 4,
-        "hard": 9,
-        "legendary": 9,
-        "medium": 9,
-        "unknown": 6
+        "easy": 15,
+        "elite": 6,
+        "hard": 17,
+        "legendary": 36,
+        "medium": 17,
+        "unknown": 15
       },
       "repairCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 40
+        "directSkillMatches": 8,
+        "mainWithUsableSkill": 91
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 40
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 91
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 43,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Standalone-ready",
+      "notes": "Phase 7.5 matured the shared General/Micro/Macro Comparative Advantage and Gains from Trade bank without merging the later international-trade-and-trade-policy bank.",
+      "instructionalClassification": "Standalone-ready dual-depth",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Macro-safe ordinary progression with numerical gains confined to Elite, Legendary, and Legendary Boss; deep Micro-level full-model coverage; diagnostic Repair and genuine conceptual Bridges.",
+      "coverageFloorVersion": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1"
     },
     {
       "canonicalConceptId": "gdp-components",
@@ -3946,8 +3982,8 @@
       "includedSkills": [
         "assumptions",
         "assumptions_role",
+        "assumptions_to_policy_predictions",
         "ceteris_paribus",
-        "circular_flow_components",
         "core_models",
         "economic_model_reasoning",
         "model_application_limits",
@@ -3955,16 +3991,14 @@
         "model_assumption_usefulness",
         "model_complexity_tradeoff",
         "model_discrimination",
+        "model_limits_to_evidence",
         "model_purpose",
         "model_selection",
         "model_simplification",
         "model_simplification_value",
-        "nonprice_rationing",
-        "ppf",
-        "price_ceiling",
-        "scarcity",
+        "models_to_ceteris_paribus",
+        "models_to_ppf",
         "sensitivity_analysis_model",
-        "simplification",
         "structural_change_model"
       ],
       "excludedNeighboringSkills": [],
@@ -3982,45 +4016,46 @@
       ],
       "sourceGames": [
         "equilibrium-crisis",
-        "market-gate"
+        "market-gate",
+        "phase7.6-models-assumptions-light-touch-pilot"
       ],
       "questionCountByRole": {
-        "boss": 0,
-        "bridge": 1,
+        "boss": 9,
+        "bridge": 4,
         "calculation": 0,
-        "elite": 2,
+        "elite": 4,
         "integration": 0,
-        "legendary": 4,
-        "legendaryBoss": 3,
-        "main": 12,
-        "repair": 2,
+        "legendary": 12,
+        "legendaryBoss": 6,
+        "main": 24,
+        "repair": 6,
         "repairSeed": 1
       },
       "questionCountByDifficulty": {
-        "easy": 4,
-        "elite": 2,
-        "hard": 4,
-        "legendary": 7,
-        "medium": 4,
-        "unknown": 4
+        "easy": 11,
+        "elite": 4,
+        "hard": 11,
+        "legendary": 18,
+        "medium": 11,
+        "unknown": 11
       },
       "repairCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 21
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 55
       },
       "bridgeCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 21
+        "directSkillMatches": 4,
+        "mainWithUsableSkill": 55
       },
       "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Supplemental concept",
+      "notes": "Models and Assumptions remains a focused introductory modeling bank. Circular Flow Components was not authored because it is a registry/concept-boundary issue rather than required Models content.",
+      "instructionalClassification": "Supplemental-ready light-touch pilot",
       "coverageStatus": "supplemental-ready",
-      "coverageStatusLabel": "Supplemental — useful in a combined game",
-      "coverageStatusNote": "Targeted enrichment only: add discriminating application, challenge/mastery, or integration items where useful; do not force every difficulty or checkpoint pool.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusLabel": "Supplemental — validated for combined play",
+      "coverageStatusNote": "Phase 7.6 pilot: application-led 8/8/8 ordinary depth, 12 Legendary records with controlled solo reuse, complete checkpoint floors, six diagnostic Repair records, and four genuine Bridges.",
+      "coverageFloorVersion": "phase7.6-models-assumptions-light-touch-pilot-v1"
     },
     {
       "canonicalConceptId": "monetary-control-limits",
@@ -6971,7 +7006,7 @@
   ],
   "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
   "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1",
-  "canonicalQuestionCount": 6579,
-  "librarySha256": "3d624967e3835a37f951db19a540724b3843d7a6fcf3a04086036347ca84d26c"
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1",
+  "canonicalQuestionCount": 6680,
+  "librarySha256": "0de5b434d78db6832f78b6127d46e9c5afa5a5d2c29c6e5a81b3281d3678a23e"
 }

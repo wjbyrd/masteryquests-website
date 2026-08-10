@@ -4595,6 +4595,18 @@ function getAdaptiveQuestion(poolName, targetTag = null, options = {}){
         }
     }
 
+    // Legendary light-touch support: exhaust every eligible record once before reuse.
+    // Recent-window suppression still governs selection after each full cycle.
+    if(gameMode === "legendary" && poolName === "legendary"){
+        const cycleUsed = new Set(usedQuestions[poolName] || []);
+        const cycleUnused = pool.filter(q => !cycleUsed.has(q.id));
+        if(cycleUnused.length > 0){
+            pool = cycleUnused;
+        } else {
+            usedQuestions[poolName] = [];
+        }
+    }
+
     let recent = questionHistory[poolName].slice(-10);
 
     let available = pool.filter(q => !recent.includes(q.id));
@@ -4627,6 +4639,10 @@ function getAdaptiveQuestion(poolName, targetTag = null, options = {}){
 
     console.log("PICKED:", picked.id);
     console.log("RECENT:", questionHistory[poolName]);
+
+    if(gameMode === "legendary" && poolName === "legendary" && !usedQuestions[poolName].includes(picked.id)){
+        usedQuestions[poolName].push(picked.id);
+    }
 
     questionHistory[poolName].push(picked.id);
     if(questionHistory[poolName].length > 15){

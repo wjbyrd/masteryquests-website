@@ -1,0 +1,580 @@
+{
+  "phase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1",
+  "records": 61,
+  "passed": 61,
+  "failed": 0,
+  "results": [
+    {
+      "id": "P52B-TRADE-E-001",
+      "pool": "easy",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-E-002",
+      "pool": "easy",
+      "kind": "absolute",
+      "status": "PASS",
+      "detail": [
+        "PASS: greater output belongs to A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-E-007",
+      "pool": "easy",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-E-009",
+      "pool": "easy",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-M-001",
+      "pool": "medium",
+      "kind": "comparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: comparative winner A"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-M-002",
+      "pool": "medium",
+      "kind": "comparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: comparative winner B"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-M-003",
+      "pool": "medium",
+      "kind": "specialization",
+      "status": "PASS",
+      "detail": [
+        "PASS: specialization A/B"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-M-004",
+      "pool": "medium",
+      "kind": "strictRate",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate is strictly inside bounds"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-M-005",
+      "pool": "medium",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-M-007",
+      "pool": "medium",
+      "kind": "comparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: comparative winner A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-M-008",
+      "pool": "medium",
+      "kind": "hoursComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: hours-based winner B"
+      ]
+    },
+    {
+      "id": "P75-TRADE-M-009",
+      "pool": "medium",
+      "kind": "reciprocal",
+      "status": "PASS",
+      "detail": [
+        "PASS: reciprocal product is 1"
+      ]
+    },
+    {
+      "id": "P75-TRADE-M-010",
+      "pool": "medium",
+      "kind": "specialization",
+      "status": "PASS",
+      "detail": [
+        "PASS: specialization A/B"
+      ]
+    },
+    {
+      "id": "P75-TRADE-M-011",
+      "pool": "medium",
+      "kind": "strictRate",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate is strictly inside bounds"
+      ]
+    },
+    {
+      "id": "P75-TRADE-M-012",
+      "pool": "medium",
+      "kind": "equalCosts",
+      "status": "PASS",
+      "detail": [
+        "PASS: opportunity costs are equal"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-H-001",
+      "pool": "hard",
+      "kind": "specialization",
+      "status": "PASS",
+      "detail": [
+        "PASS: specialization A/B"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-H-002",
+      "pool": "hard",
+      "kind": "strictBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: strict lower bound is below upper bound"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-H-005",
+      "pool": "hard",
+      "kind": "savings",
+      "status": "PASS",
+      "detail": [
+        "PASS: savings 2"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-H-006",
+      "pool": "hard",
+      "kind": "sumGains",
+      "status": "PASS",
+      "detail": [
+        "PASS: component gains sum to 40"
+      ]
+    },
+    {
+      "id": "P75-TRADE-H-007",
+      "pool": "hard",
+      "kind": "reciprocalOutputs",
+      "status": "PASS",
+      "detail": [
+        "PASS: A reciprocal output cost",
+        "PASS: B reciprocal output cost"
+      ]
+    },
+    {
+      "id": "P75-TRADE-H-008",
+      "pool": "hard",
+      "kind": "specialization",
+      "status": "PASS",
+      "detail": [
+        "PASS: specialization B/A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-H-009",
+      "pool": "hard",
+      "kind": "boundary",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate equals a stated boundary"
+      ]
+    },
+    {
+      "id": "P75-TRADE-H-010",
+      "pool": "hard",
+      "kind": "strictBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: strict lower bound is below upper bound"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-EL-001",
+      "pool": "elite",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-EL-005",
+      "pool": "elite",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-EL-006",
+      "pool": "elite",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-L-001",
+      "pool": "legendary",
+      "kind": "strictBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: strict lower bound is below upper bound"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-L-005",
+      "pool": "legendary",
+      "kind": "net",
+      "status": "PASS",
+      "detail": [
+        "PASS: net -5"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-L-006",
+      "pool": "legendary",
+      "kind": "savings",
+      "status": "PASS",
+      "detail": [
+        "PASS: savings 2"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-007",
+      "pool": "legendary",
+      "kind": "strictBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: strict lower bound is below upper bound"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-008",
+      "pool": "legendary",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-009",
+      "pool": "legendary",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-010",
+      "pool": "legendary",
+      "kind": "proposedRate",
+      "status": "PASS",
+      "detail": [
+        "PASS: strict-benefit result is false"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-011",
+      "pool": "legendary",
+      "kind": "sumGains",
+      "status": "PASS",
+      "detail": [
+        "PASS: component gains sum to 14"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-012",
+      "pool": "legendary",
+      "kind": "specialization",
+      "status": "PASS",
+      "detail": [
+        "PASS: specialization B/A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-013",
+      "pool": "legendary",
+      "kind": "missingOutput",
+      "status": "PASS",
+      "detail": [
+        "PASS: missing output 6"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-014",
+      "pool": "legendary",
+      "kind": "reciprocalBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower original reciprocates to upper",
+        "PASS: upper original reciprocates to lower"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-015",
+      "pool": "legendary",
+      "kind": "equalCosts",
+      "status": "PASS",
+      "detail": [
+        "PASS: opportunity costs are equal"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-016",
+      "pool": "legendary",
+      "kind": "net",
+      "status": "PASS",
+      "detail": [
+        "PASS: net 11"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-017",
+      "pool": "legendary",
+      "kind": "hoursComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: hours-based winner B"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-018",
+      "pool": "legendary",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-019",
+      "pool": "legendary",
+      "kind": "twoRates",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate 3 strictly inside bounds",
+        "PASS: rate 5 strictly inside bounds"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-022",
+      "pool": "legendary",
+      "kind": "sumGains",
+      "status": "PASS",
+      "detail": [
+        "PASS: component gains sum to 9"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-023",
+      "pool": "legendary",
+      "kind": "equalOutputCosts",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-change opportunity costs equal"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-024",
+      "pool": "legendary",
+      "kind": "reciprocalBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower original reciprocates to upper",
+        "PASS: upper original reciprocates to lower"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-025",
+      "pool": "legendary",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-L-026",
+      "pool": "legendary",
+      "kind": "outputGain",
+      "status": "PASS",
+      "detail": [
+        "PASS: output change 4/2"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-B2-001",
+      "pool": "mediumBoss",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-EB-005",
+      "pool": "easyBoss",
+      "kind": "givenComparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: lower given cost belongs to A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-MB-004",
+      "pool": "mediumBoss",
+      "kind": "comparative",
+      "status": "PASS",
+      "detail": [
+        "PASS: comparative winner A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-MB-005",
+      "pool": "mediumBoss",
+      "kind": "strictRate",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate is strictly inside bounds"
+      ]
+    },
+    {
+      "id": "P75-TRADE-FB-004",
+      "pool": "finalBoss",
+      "kind": "boundary",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate equals a stated boundary"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-LB-001",
+      "pool": "legendaryBoss",
+      "kind": "strictBounds",
+      "status": "PASS",
+      "detail": [
+        "PASS: strict lower bound is below upper bound"
+      ]
+    },
+    {
+      "id": "P52B-TRADE-LB-003",
+      "pool": "legendaryBoss",
+      "kind": "net",
+      "status": "PASS",
+      "detail": [
+        "PASS: net 70"
+      ]
+    },
+    {
+      "id": "P75-TRADE-LB-004",
+      "pool": "legendaryBoss",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-LB-005",
+      "pool": "legendaryBoss",
+      "kind": "boundary",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate equals a stated boundary"
+      ]
+    },
+    {
+      "id": "P75-TRADE-LB-006",
+      "pool": "legendaryBoss",
+      "kind": "specialization",
+      "status": "PASS",
+      "detail": [
+        "PASS: specialization B/A"
+      ]
+    },
+    {
+      "id": "P75-TRADE-LB-007",
+      "pool": "legendaryBoss",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-LB-008",
+      "pool": "legendaryBoss",
+      "kind": "twoRates",
+      "status": "PASS",
+      "detail": [
+        "PASS: rate 4 strictly inside bounds",
+        "PASS: rate 6 strictly inside bounds"
+      ]
+    },
+    {
+      "id": "P75-TRADE-LB-009",
+      "pool": "legendaryBoss",
+      "kind": "gains",
+      "status": "PASS",
+      "detail": [
+        "PASS: post-trade goods conserved",
+        "PASS: A gain equals post minus autarky",
+        "PASS: B gain equals post minus autarky"
+      ]
+    },
+    {
+      "id": "P75-TRADE-R-006",
+      "pool": "microRepair",
+      "kind": "reciprocal",
+      "status": "PASS",
+      "detail": [
+        "PASS: reciprocal product is 1"
+      ]
+    }
+  ]
+}

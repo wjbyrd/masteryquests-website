@@ -1,0 +1,1654 @@
+{
+  "phase": "phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1",
+  "concept": "gains-from-trade",
+  "generatedAt": "2026-08-10T11:00:00.000Z",
+  "baselineLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1",
+  "productionLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1",
+  "scope": {
+    "unrelatedConceptBanksChanged": [],
+    "protectedCanonicalQuestionHashes": {
+      "scarcity-and-tradeoffs": {
+        "before": "a975f07a649704186b9376e72e48b865f46a852d170bf190cb88100d8597fa1d",
+        "after": "a975f07a649704186b9376e72e48b865f46a852d170bf190cb88100d8597fa1d",
+        "unchanged": true
+      },
+      "opportunity-cost": {
+        "before": "635f6d014c03f3052568914c3be69eeb69c7bbb3d495e1abd3ac4d72479c6762",
+        "after": "635f6d014c03f3052568914c3be69eeb69c7bbb3d495e1abd3ac4d72479c6762",
+        "unchanged": true
+      },
+      "marginal-analysis": {
+        "before": "ee9571059291b43a1b7a97093ddf63525d93a5f464afa83cd6e19f0087b1b0b0",
+        "after": "ee9571059291b43a1b7a97093ddf63525d93a5f464afa83cd6e19f0087b1b0b0",
+        "unchanged": true
+      },
+      "incentives": {
+        "before": "d4b80ce7c630e61846c85bb30486980fd6c831c176d04c43e94d9ebc5ca4ae17",
+        "after": "d4b80ce7c630e61846c85bb30486980fd6c831c176d04c43e94d9ebc5ca4ae17",
+        "unchanged": true
+      },
+      "international-trade-and-trade-policy": {
+        "before": "dd66f9fbcc423585564b8033d72bed472d4f820a08aa1ab1a755636511ded741",
+        "after": "dd66f9fbcc423585564b8033d72bed472d4f820a08aa1ab1a755636511ded741",
+        "unchanged": true
+      }
+    }
+  },
+  "beforeCounts": {
+    "easy": 6,
+    "medium": 6,
+    "hard": 6,
+    "elite": 4,
+    "legendary": 6,
+    "calculation": 0,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 3,
+    "legendaryBoss": 3,
+    "repair": 3,
+    "repairSeed": 1,
+    "bridge": 2,
+    "totalCanonical": 46
+  },
+  "afterCounts": {
+    "easy": 10,
+    "medium": 12,
+    "hard": 12,
+    "elite": 6,
+    "legendary": 27,
+    "calculation": 0,
+    "easyBoss": 5,
+    "mediumBoss": 5,
+    "finalBoss": 5,
+    "legendaryBoss": 9,
+    "repair": 8,
+    "repairSeed": 1,
+    "bridge": 6,
+    "totalCanonical": 106
+  },
+  "changeCounts": {
+    "ADD": 60,
+    "REWRITE": 8,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 0,
+    "MOVE_ELITE": 0,
+    "MOVE_LEGENDARY": 0,
+    "REMOVE": 0
+  },
+  "courseAreas": {
+    "general": true,
+    "micro": true,
+    "macro": true
+  },
+  "placement": {
+    "records": 106,
+    "failures": []
+  },
+  "macroLightTouch": {
+    "records": 63,
+    "failures": []
+  },
+  "tradeMath": {
+    "numericalRecords": 61,
+    "passed": 61,
+    "failed": 0,
+    "results": [
+      {
+        "id": "P52B-TRADE-E-001",
+        "pool": "easy",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-E-002",
+        "pool": "easy",
+        "kind": "absolute",
+        "status": "PASS",
+        "detail": [
+          "PASS: greater output belongs to A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-E-007",
+        "pool": "easy",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-E-009",
+        "pool": "easy",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-M-001",
+        "pool": "medium",
+        "kind": "comparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: comparative winner A"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-M-002",
+        "pool": "medium",
+        "kind": "comparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: comparative winner B"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-M-003",
+        "pool": "medium",
+        "kind": "specialization",
+        "status": "PASS",
+        "detail": [
+          "PASS: specialization A/B"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-M-004",
+        "pool": "medium",
+        "kind": "strictRate",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate is strictly inside bounds"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-M-005",
+        "pool": "medium",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-M-007",
+        "pool": "medium",
+        "kind": "comparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: comparative winner A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-M-008",
+        "pool": "medium",
+        "kind": "hoursComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: hours-based winner B"
+        ]
+      },
+      {
+        "id": "P75-TRADE-M-009",
+        "pool": "medium",
+        "kind": "reciprocal",
+        "status": "PASS",
+        "detail": [
+          "PASS: reciprocal product is 1"
+        ]
+      },
+      {
+        "id": "P75-TRADE-M-010",
+        "pool": "medium",
+        "kind": "specialization",
+        "status": "PASS",
+        "detail": [
+          "PASS: specialization A/B"
+        ]
+      },
+      {
+        "id": "P75-TRADE-M-011",
+        "pool": "medium",
+        "kind": "strictRate",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate is strictly inside bounds"
+        ]
+      },
+      {
+        "id": "P75-TRADE-M-012",
+        "pool": "medium",
+        "kind": "equalCosts",
+        "status": "PASS",
+        "detail": [
+          "PASS: opportunity costs are equal"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-H-001",
+        "pool": "hard",
+        "kind": "specialization",
+        "status": "PASS",
+        "detail": [
+          "PASS: specialization A/B"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-H-002",
+        "pool": "hard",
+        "kind": "strictBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: strict lower bound is below upper bound"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-H-005",
+        "pool": "hard",
+        "kind": "savings",
+        "status": "PASS",
+        "detail": [
+          "PASS: savings 2"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-H-006",
+        "pool": "hard",
+        "kind": "sumGains",
+        "status": "PASS",
+        "detail": [
+          "PASS: component gains sum to 40"
+        ]
+      },
+      {
+        "id": "P75-TRADE-H-007",
+        "pool": "hard",
+        "kind": "reciprocalOutputs",
+        "status": "PASS",
+        "detail": [
+          "PASS: A reciprocal output cost",
+          "PASS: B reciprocal output cost"
+        ]
+      },
+      {
+        "id": "P75-TRADE-H-008",
+        "pool": "hard",
+        "kind": "specialization",
+        "status": "PASS",
+        "detail": [
+          "PASS: specialization B/A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-H-009",
+        "pool": "hard",
+        "kind": "boundary",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate equals a stated boundary"
+        ]
+      },
+      {
+        "id": "P75-TRADE-H-010",
+        "pool": "hard",
+        "kind": "strictBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: strict lower bound is below upper bound"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-EL-001",
+        "pool": "elite",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-EL-005",
+        "pool": "elite",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-EL-006",
+        "pool": "elite",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-L-001",
+        "pool": "legendary",
+        "kind": "strictBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: strict lower bound is below upper bound"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-L-005",
+        "pool": "legendary",
+        "kind": "net",
+        "status": "PASS",
+        "detail": [
+          "PASS: net -5"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-L-006",
+        "pool": "legendary",
+        "kind": "savings",
+        "status": "PASS",
+        "detail": [
+          "PASS: savings 2"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-007",
+        "pool": "legendary",
+        "kind": "strictBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: strict lower bound is below upper bound"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-008",
+        "pool": "legendary",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-009",
+        "pool": "legendary",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-010",
+        "pool": "legendary",
+        "kind": "proposedRate",
+        "status": "PASS",
+        "detail": [
+          "PASS: strict-benefit result is false"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-011",
+        "pool": "legendary",
+        "kind": "sumGains",
+        "status": "PASS",
+        "detail": [
+          "PASS: component gains sum to 14"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-012",
+        "pool": "legendary",
+        "kind": "specialization",
+        "status": "PASS",
+        "detail": [
+          "PASS: specialization B/A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-013",
+        "pool": "legendary",
+        "kind": "missingOutput",
+        "status": "PASS",
+        "detail": [
+          "PASS: missing output 6"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-014",
+        "pool": "legendary",
+        "kind": "reciprocalBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower original reciprocates to upper",
+          "PASS: upper original reciprocates to lower"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-015",
+        "pool": "legendary",
+        "kind": "equalCosts",
+        "status": "PASS",
+        "detail": [
+          "PASS: opportunity costs are equal"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-016",
+        "pool": "legendary",
+        "kind": "net",
+        "status": "PASS",
+        "detail": [
+          "PASS: net 11"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-017",
+        "pool": "legendary",
+        "kind": "hoursComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: hours-based winner B"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-018",
+        "pool": "legendary",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-019",
+        "pool": "legendary",
+        "kind": "twoRates",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate 3 strictly inside bounds",
+          "PASS: rate 5 strictly inside bounds"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-022",
+        "pool": "legendary",
+        "kind": "sumGains",
+        "status": "PASS",
+        "detail": [
+          "PASS: component gains sum to 9"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-023",
+        "pool": "legendary",
+        "kind": "equalOutputCosts",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-change opportunity costs equal"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-024",
+        "pool": "legendary",
+        "kind": "reciprocalBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower original reciprocates to upper",
+          "PASS: upper original reciprocates to lower"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-025",
+        "pool": "legendary",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-L-026",
+        "pool": "legendary",
+        "kind": "outputGain",
+        "status": "PASS",
+        "detail": [
+          "PASS: output change 4/2"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-B2-001",
+        "pool": "mediumBoss",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-EB-005",
+        "pool": "easyBoss",
+        "kind": "givenComparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: lower given cost belongs to A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-MB-004",
+        "pool": "mediumBoss",
+        "kind": "comparative",
+        "status": "PASS",
+        "detail": [
+          "PASS: comparative winner A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-MB-005",
+        "pool": "mediumBoss",
+        "kind": "strictRate",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate is strictly inside bounds"
+        ]
+      },
+      {
+        "id": "P75-TRADE-FB-004",
+        "pool": "finalBoss",
+        "kind": "boundary",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate equals a stated boundary"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-LB-001",
+        "pool": "legendaryBoss",
+        "kind": "strictBounds",
+        "status": "PASS",
+        "detail": [
+          "PASS: strict lower bound is below upper bound"
+        ]
+      },
+      {
+        "id": "P52B-TRADE-LB-003",
+        "pool": "legendaryBoss",
+        "kind": "net",
+        "status": "PASS",
+        "detail": [
+          "PASS: net 70"
+        ]
+      },
+      {
+        "id": "P75-TRADE-LB-004",
+        "pool": "legendaryBoss",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-LB-005",
+        "pool": "legendaryBoss",
+        "kind": "boundary",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate equals a stated boundary"
+        ]
+      },
+      {
+        "id": "P75-TRADE-LB-006",
+        "pool": "legendaryBoss",
+        "kind": "specialization",
+        "status": "PASS",
+        "detail": [
+          "PASS: specialization B/A"
+        ]
+      },
+      {
+        "id": "P75-TRADE-LB-007",
+        "pool": "legendaryBoss",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-LB-008",
+        "pool": "legendaryBoss",
+        "kind": "twoRates",
+        "status": "PASS",
+        "detail": [
+          "PASS: rate 4 strictly inside bounds",
+          "PASS: rate 6 strictly inside bounds"
+        ]
+      },
+      {
+        "id": "P75-TRADE-LB-009",
+        "pool": "legendaryBoss",
+        "kind": "gains",
+        "status": "PASS",
+        "detail": [
+          "PASS: post-trade goods conserved",
+          "PASS: A gain equals post minus autarky",
+          "PASS: B gain equals post minus autarky"
+        ]
+      },
+      {
+        "id": "P75-TRADE-R-006",
+        "pool": "microRepair",
+        "kind": "reciprocal",
+        "status": "PASS",
+        "detail": [
+          "PASS: reciprocal product is 1"
+        ]
+      }
+    ]
+  },
+  "duplicateAudit": {
+    "exactDuplicateStems": [],
+    "nearDuplicateCandidates": [
+      {
+        "a": "P52B-TRADE-EL-002",
+        "b": "P75-TRADE-FB-005",
+        "score": 0.824
+      }
+    ],
+    "materialNearDuplicates": [],
+    "repeatedAnswerSets": [],
+    "numberNameSwaps": [],
+    "scenarioTemplateDistribution": {
+      "two neighbors specialize in the": 1,
+      "mira gives up 1 report": 1,
+      "with the same resources east": 1,
+      "why can two people gain": 1,
+      "specialization based on comparative advantage": 1,
+      "voluntary trade occurs most directly": 1,
+      "ana gives up 2 baskets": 1,
+      "one worker can finish more": 1,
+      "priya gives up 1 design": 1,
+      "why can specialization according to": 1,
+      "rina can make 8 posters": 1,
+      "nora can edit 12 pages": 1,
+      "farm a can produce 20": 1,
+      "ava gives up 2 cups": 1,
+      "country x gives up 3": 1,
+      "after specialization total production rises": 1,
+      "team a can prepare 12": 1,
+      "kai needs 2 hours per": 1,
+      "if one mug costs a": 1,
+      "farm c can grow 24": 1,
+      "one lamp costs ari 2": 1,
+      "two workshops each give up": 1,
+      "jordan can prepare 6 tax": 1,
+      "island a can produce 30": 1,
+      "maya is faster than leo": 1,
+      "two regions specialize according to": 1,
+      "a region can obtain one": 1,
+      "two firms specialize and create": 1,
+      "river can produce 18 x": 1,
+      "north can make 20 chips": 1,
+      "ava s cost of one": 1,
+      "one bolt costs east 0": 1,
+      "a consultant completes more audits": 1,
+      "specialization raises combined output but": 1,
+      "producer a sacrifices 0 25": 1,
+      "two producers have identical opportunity": 1,
+      "a trade rate equals the": 1,
+      "when productivity changes comparative advantage": 1,
+      "a can make 12 x": 1,
+      "c can make 16 cloth": 1,
+      "region north can produce 48": 1,
+      "a high productivity surgeon is": 1,
+      "country a has comparative advantage": 1,
+      "suppose learning by doing lowers": 1,
+      "two firms specialize and increase": 1,
+      "a country can import steel": 1,
+      "atlas can produce 18 engines": 1,
+      "after specialization vale has 20": 1,
+      "north specializes at 24 fish": 1,
+      "one tablet costs red 2": 1,
+      "specialization yields 14 extra units": 1,
+      "oak can make 20 chairs": 1,
+      "kite can make 16 maps": 1,
+      "coast s cost of 1": 1,
+      "two labs each sacrifice 4": 1,
+      "a plan creates a gross": 1,
+      "a surgeon needs 1 hour": 1,
+      "mesa specializes at 30 meals": 1,
+      "one machine costs alpha 2": 1,
+      "a problem gives specialization output": 1,
+      "a technology has increasing rather": 1,
+      "combined consumption rises by 9": 1,
+      "delta can make 24 files": 1,
+      "if 1 lens costs urban": 1,
+      "lumen specializes at 32 lamps": 1,
+      "before specialization two farms jointly": 1,
+      "a static two good model": 1,
+      "which condition creates the basic": 1,
+      "if each trader voluntarily accepts": 1,
+      "who has comparative advantage in": 1,
+      "lena gives up 1 report": 1,
+      "a trade price lies between": 1,
+      "one producer is more productive": 1,
+      "a specialization plan raises total": 1,
+      "trade raises national surplus but": 1,
+      "technology lowers one country s": 1,
+      "a baker makes more bread": 1,
+      "nia gives up 2 posters": 1,
+      "a can produce 16 apples": 1,
+      "one file costs town 3": 1,
+      "one drone costs east 1": 1,
+      "two producers have equal opportunity": 1,
+      "a can make 40 grain": 1,
+      "a manager is best at": 1,
+      "a trade agreement creates 100": 1,
+      "arbor specializes at 28 timber": 1,
+      "a chip costs quartz 2": 1,
+      "cedar can make 30 boards": 1,
+      "orchid specializes at 36 flowers": 1,
+      "one turbine costs haven 3": 1,
+      "peak specializes at 40 services": 1,
+      "comparative advantage belongs to the": 1,
+      "a mutually beneficial terms of": 1,
+      "trade can benefit both sides": 1,
+      "when two producers face different": 1,
+      "if one producer makes more": 1,
+      "if 1 x costs 2": 1,
+      "does higher combined production make": 1,
+      "a trading rate equals one": 1,
+      "voluntary trade can benefit both": 1,
+      "a project lead is faster": 1,
+      "a city can buy snowplow": 1,
+      "scarcity forces two communities to": 1,
+      "how does a ppf help": 1,
+      "opportunity cost identifies comparative advantage": 1,
+      "why can terms of trade": 1
+    },
+    "cognitiveTaskDistribution": {
+      "application|conceptual_gains_from_trade": 2,
+      "application|comparative_advantage_definition": 4,
+      "application|absolute_advantage_definition": 1,
+      "application|gains_from_trade": 3,
+      "application|specialization": 1,
+      "application|voluntary_exchange": 2,
+      "application|comparative_advantage_given_costs": 1,
+      "application|absolute_vs_comparative": 3,
+      "application|specialization_pattern": 3,
+      "calculation|comparative_advantage_calculation": 4,
+      "calculation|terms_of_trade": 3,
+      "application|comparative_advantage_calculation": 1,
+      "application|terms_of_trade": 3,
+      "calculation|hours_per_unit_opportunity_cost": 1,
+      "calculation|reciprocal_opportunity_cost": 3,
+      "calculation|specialization_pattern": 1,
+      "application|equal_opportunity_costs": 2,
+      "application|comparative_advantage_multi_step": 1,
+      "calculation|terms_of_trade_range": 3,
+      "application|comparative_advantage_application": 2,
+      "application|net_gains_from_trade": 1,
+      "application|opportunity_cost_trade": 2,
+      "application|distribution_of_trade_gains": 1,
+      "calculation|dynamic_comparative_advantage": 1,
+      "calculation|terms_of_trade_boundary": 1,
+      "application|comparative_advantage_argument": 1,
+      "application|specialization_vs_trade_gains": 2,
+      "multi-step|comparative_advantage_reciprocal": 1,
+      "application|terms_of_trade_distribution": 1,
+      "application|dynamic_comparative_advantage": 1,
+      "calculation|numerical_gain_one_party": 1,
+      "calculation|numerical_gain_both_parties": 3,
+      "multi-step|terms_of_trade_range": 2,
+      "multi-step|comparative_advantage_application": 2,
+      "multi-step|distribution_of_trade_gains": 2,
+      "multi-step|dynamic_comparative_advantage": 2,
+      "multi-step|net_gains_from_trade": 3,
+      "multi-step|opportunity_cost_trade": 1,
+      "calculation|post_trade_bundle_gain": 1,
+      "calculation|invalid_terms_of_trade": 1,
+      "calculation|distribution_of_trade_gains": 1,
+      "calculation|productivity_shock_comparative_advantage": 2,
+      "calculation|solve_missing_productivity": 1,
+      "calculation|reciprocal_terms_of_trade": 1,
+      "calculation|equal_opportunity_cost_edge": 1,
+      "calculation|transaction_cost_net_gain": 1,
+      "calculation|professional_task_comparative_advantage": 1,
+      "calculation|community_trade_full_model": 1,
+      "calculation|terms_distribution_comparison": 2,
+      "application|autarky_baseline_diagnostic": 1,
+      "application|partial_specialization_model_limits": 1,
+      "calculation|aggregate_vs_mutual_gain": 1,
+      "calculation|dynamic_equal_cost_case": 1,
+      "calculation|ratio_orientation": 1,
+      "calculation|complete_trade_solution": 3,
+      "calculation|specialization_output_change": 1,
+      "application|comparative_advantage_model_limits": 1,
+      "application|specialization_given_costs": 1,
+      "calculation|terms_boundary": 1,
+      "application|equal_opportunity_cost_edge": 1,
+      "calculation|terms_boundary_distribution": 1,
+      "application|lower_opportunity_cost": 1,
+      "application|terms_boundary": 1,
+      "repair|core_trade": 1,
+      "bridge|scarcity_to_specialization": 1,
+      "bridge|ppf_to_comparative_advantage": 1,
+      "bridge|opportunity_cost_to_specialization": 1,
+      "bridge|specialization_to_mutual_gain": 1
+    }
+  },
+  "answerLengthAudit": {
+    "before": {
+      "easy": {
+        "count": 6,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.199
+      },
+      "medium": {
+        "count": 6,
+        "uniquelyLongestCorrect": 5,
+        "uniquelyLongestRate": 0.833,
+        "meanCorrectToDistractorRatio": 1.575
+      },
+      "hard": {
+        "count": 6,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.366
+      },
+      "elite": {
+        "count": 4,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.42
+      },
+      "legendary": {
+        "count": 6,
+        "uniquelyLongestCorrect": 4,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.576
+      },
+      "easyBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.204
+      },
+      "mediumBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.937
+      },
+      "finalBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.667,
+        "meanCorrectToDistractorRatio": 1.384
+      },
+      "legendaryBoss": {
+        "count": 3,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 1.891
+      },
+      "repair": {
+        "count": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.4
+      },
+      "bridge": {
+        "count": 2,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 1,
+        "meanCorrectToDistractorRatio": 2.09
+      }
+    },
+    "after": {
+      "easy": {
+        "count": 10,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.024
+      },
+      "medium": {
+        "count": 12,
+        "uniquelyLongestCorrect": 5,
+        "uniquelyLongestRate": 0.417,
+        "meanCorrectToDistractorRatio": 1.323
+      },
+      "hard": {
+        "count": 12,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.205
+      },
+      "elite": {
+        "count": 6,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.162
+      },
+      "legendary": {
+        "count": 27,
+        "uniquelyLongestCorrect": 4,
+        "uniquelyLongestRate": 0.148,
+        "meanCorrectToDistractorRatio": 1.175
+      },
+      "easyBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 1.089
+      },
+      "mediumBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 1.009
+      },
+      "finalBoss": {
+        "count": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestRate": 0.4,
+        "meanCorrectToDistractorRatio": 1.225
+      },
+      "legendaryBoss": {
+        "count": 9,
+        "uniquelyLongestCorrect": 3,
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.313
+      },
+      "repair": {
+        "count": 8,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.125,
+        "meanCorrectToDistractorRatio": 1.115
+      },
+      "bridge": {
+        "count": 6,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestRate": 0.167,
+        "meanCorrectToDistractorRatio": 1.092
+      }
+    }
+  },
+  "metadata": {
+    "recordIssues": [],
+    "answerValidation": {
+      "ok": true,
+      "questionCount": 106,
+      "issues": []
+    },
+    "repairRouteMissing": [],
+    "bridgeRouteMissing": []
+  },
+  "modeResults": {
+    "standard": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "timed": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "exam": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "legendary": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    },
+    "score": {
+      "corePreflight": true,
+      "simulatedSessions": 500,
+      "simulationPassed": true,
+      "browserStartPassed": true,
+      "browserSelectionPassed": true,
+      "completionPassed": true
+    }
+  },
+  "simulations": {
+    "totalSessions": 2500,
+    "byMode": {
+      "standard": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "ordinarySelections": 13500,
+        "checkpointSelections": 4500,
+        "numericalSelections": 10415,
+        "repairSelections": 200,
+        "bridgeSelections": 200,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "timed": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "ordinarySelections": 15000,
+        "checkpointSelections": 0,
+        "numericalSelections": 9920,
+        "repairSelections": 200,
+        "bridgeSelections": 200,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "exam": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 15000,
+        "ordinarySelections": 15000,
+        "checkpointSelections": 0,
+        "numericalSelections": 9940,
+        "repairSelections": 200,
+        "bridgeSelections": 200,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "legendary": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "ordinarySelections": 13500,
+        "checkpointSelections": 4500,
+        "numericalSelections": 14500,
+        "repairSelections": 200,
+        "bridgeSelections": 200,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      },
+      "score": {
+        "sessions": 500,
+        "patterns": {
+          "all-correct": 100,
+          "all-incorrect": 100,
+          "alternating": 100,
+          "randomized-70-percent-correct": 100,
+          "boss-failure-remediation-heavy": 100
+        },
+        "mainAndCheckpointSelections": 18000,
+        "ordinarySelections": 13500,
+        "checkpointSelections": 4500,
+        "numericalSelections": 10452,
+        "repairSelections": 200,
+        "bridgeSelections": 200,
+        "preflightFailures": 0,
+        "routingFailures": 0,
+        "emptyPoolFailures": 0,
+        "completionFailures": 0,
+        "prohibitedDuplicateSelections": 0
+      }
+    }
+  },
+  "courseAreaRegressions": [
+    {
+      "name": "General Economics Comparative Advantage",
+      "ids": [
+        "gains-from-trade"
+      ],
+      "targetInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3000
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3000
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        }
+      },
+      "repairCount": 8,
+      "bridgeCount": 6,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Microeconomics Comparative Advantage",
+      "ids": [
+        "gains-from-trade"
+      ],
+      "targetInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3000
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3000
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        }
+      },
+      "repairCount": 8,
+      "bridgeCount": 6,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Macroeconomics Comparative Advantage",
+      "ids": [
+        "gains-from-trade"
+      ],
+      "targetInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3000
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3000
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 3600
+          },
+          "conceptShares": {
+            "gains-from-trade": 1
+          },
+          "minimumConceptShare": 1,
+          "maximumConceptShare": 1
+        }
+      },
+      "repairCount": 8,
+      "bridgeCount": 6,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "adjacentRegressions": [
+    {
+      "name": "Opportunity Cost and Comparative Advantage",
+      "ids": [
+        "opportunity-cost",
+        "gains-from-trade"
+      ],
+      "targetInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1863,
+            "gains-from-trade": 1737
+          },
+          "conceptShares": {
+            "opportunity-cost": 0.517,
+            "gains-from-trade": 0.482
+          },
+          "minimumConceptShare": 0.482,
+          "maximumConceptShare": 0.517
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 1461,
+            "opportunity-cost": 1539
+          },
+          "conceptShares": {
+            "opportunity-cost": 0.513,
+            "gains-from-trade": 0.487
+          },
+          "minimumConceptShare": 0.487,
+          "maximumConceptShare": 0.513
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 1473,
+            "opportunity-cost": 1527
+          },
+          "conceptShares": {
+            "opportunity-cost": 0.509,
+            "gains-from-trade": 0.491
+          },
+          "minimumConceptShare": 0.491,
+          "maximumConceptShare": 0.509
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 1801,
+            "opportunity-cost": 1799
+          },
+          "conceptShares": {
+            "opportunity-cost": 0.5,
+            "gains-from-trade": 0.5
+          },
+          "minimumConceptShare": 0.5,
+          "maximumConceptShare": 0.5
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 1858,
+            "gains-from-trade": 1742
+          },
+          "conceptShares": {
+            "opportunity-cost": 0.516,
+            "gains-from-trade": 0.484
+          },
+          "minimumConceptShare": 0.484,
+          "maximumConceptShare": 0.516
+        }
+      },
+      "repairCount": 16,
+      "bridgeCount": 12,
+      "canonicalDuplicates": 0
+    },
+    {
+      "name": "Five-Concept Matured Foundation",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives",
+        "gains-from-trade"
+      ],
+      "targetInstances": 1,
+      "modeResults": {
+        "standard": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "opportunity-cost": 820,
+            "gains-from-trade": 735,
+            "scarcity-and-tradeoffs": 625,
+            "incentives": 634,
+            "marginal-analysis": 786
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.174,
+            "opportunity-cost": 0.228,
+            "marginal-analysis": 0.218,
+            "incentives": 0.176,
+            "gains-from-trade": 0.204
+          },
+          "minimumConceptShare": 0.174,
+          "maximumConceptShare": 0.228
+        },
+        "timed": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 615,
+            "opportunity-cost": 661,
+            "gains-from-trade": 615,
+            "incentives": 545,
+            "scarcity-and-tradeoffs": 564
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.188,
+            "opportunity-cost": 0.22,
+            "marginal-analysis": 0.205,
+            "incentives": 0.182,
+            "gains-from-trade": 0.205
+          },
+          "minimumConceptShare": 0.182,
+          "maximumConceptShare": 0.22
+        },
+        "exam": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "incentives": 545,
+            "opportunity-cost": 638,
+            "marginal-analysis": 660,
+            "scarcity-and-tradeoffs": 528,
+            "gains-from-trade": 629
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.176,
+            "opportunity-cost": 0.213,
+            "marginal-analysis": 0.22,
+            "incentives": 0.182,
+            "gains-from-trade": 0.21
+          },
+          "minimumConceptShare": 0.176,
+          "maximumConceptShare": 0.22
+        },
+        "legendary": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "gains-from-trade": 717,
+            "scarcity-and-tradeoffs": 697,
+            "opportunity-cost": 706,
+            "incentives": 727,
+            "marginal-analysis": 753
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.194,
+            "opportunity-cost": 0.196,
+            "marginal-analysis": 0.209,
+            "incentives": 0.202,
+            "gains-from-trade": 0.199
+          },
+          "minimumConceptShare": 0.194,
+          "maximumConceptShare": 0.209
+        },
+        "score": {
+          "sessions": 100,
+          "completionFailures": 0,
+          "prohibitedDuplicates": 0,
+          "conceptRepresentation": {
+            "marginal-analysis": 784,
+            "scarcity-and-tradeoffs": 656,
+            "opportunity-cost": 790,
+            "incentives": 640,
+            "gains-from-trade": 730
+          },
+          "conceptShares": {
+            "scarcity-and-tradeoffs": 0.182,
+            "opportunity-cost": 0.219,
+            "marginal-analysis": 0.218,
+            "incentives": 0.178,
+            "gains-from-trade": 0.203
+          },
+          "minimumConceptShare": 0.178,
+          "maximumConceptShare": 0.219
+        }
+      },
+      "repairCount": 38,
+      "bridgeCount": 27,
+      "canonicalDuplicates": 0
+    }
+  ],
+  "browserValidation": {
+    "passed": true,
+    "testedAt": "2026-08-10T11:00:00.000Z",
+    "url": "http://127.0.0.1:8775/index.html",
+    "summary": "All five modes passed interactive start and question selection; Standard save/resume restored Room 2 through Continue Standard Run; Timed countdown, Legendary deep-tier selection, Score Attack scoring, and zero-warning/error console checks passed.",
+    "modes": {
+      "standard": {
+        "start": true,
+        "questionSelection": true,
+        "saveResume": true
+      },
+      "timed": {
+        "start": true,
+        "questionSelection": true,
+        "countdown": true
+      },
+      "exam": {
+        "start": true,
+        "questionSelection": true
+      },
+      "legendary": {
+        "start": true,
+        "questionSelection": true,
+        "deepTierQuestion": true
+      },
+      "score": {
+        "start": true,
+        "questionSelection": true,
+        "scoreUpdated": true
+      }
+    },
+    "console": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "accessibility": {
+      "playerNameLabel": true,
+      "modeButtonsNamed": true,
+      "answerButtonsNamed": true,
+      "roomProgressImagesNamed": true
+    },
+    "completionEvidence": "Deterministic engine simulations completed 500 sessions per mode; browser interaction verified mode entry, answer submission, transitions, and Standard persistence."
+  },
+  "graphPolicy": {
+    "assetsBefore": 0,
+    "assetsAfter": 0,
+    "newGraphs": 0
+  },
+  "finalVerdict": "COMPARATIVE ADVANTAGE READY — DUAL-DEPTH STANDALONE BANK VALIDATED"
+}

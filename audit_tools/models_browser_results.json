@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "summary": "All five enabled modes loaded and served Models and Assumptions content. Standard Campaign saved and resumed at Room 2; Timed Trial displayed a live countdown and accepted a correct answer; Exam Drill accepted a correct answer without campaign progression; Legendary Mode served a multi-step assumptions-and-context item and accepted the correct answer; Score Attack awarded 140 points. Browser warnings and errors were both zero.",
+  "modes": {
+    "standard": {
+      "start": true,
+      "questionSelection": true,
+      "saveResume": true,
+      "evidence": "Correct answer advanced the run, local progress was saved, and CONTINUE STANDARD RUN restored Room 2 of 30."
+    },
+    "timed": {
+      "start": true,
+      "questionSelection": true,
+      "countdown": true,
+      "evidence": "Timed Trial opened at 10:00, counted down, accepted a correct ceteris-paribus item, and advanced to Room 2."
+    },
+    "exam": {
+      "start": true,
+      "questionSelection": true,
+      "evidence": "Exam Drill served an ordinary application item, accepted the correct answer, and advanced independently."
+    },
+    "legendary": {
+      "start": true,
+      "questionSelection": true,
+      "upperTierContent": true,
+      "evidence": "Legendary Mode served a permit-delay/slow-supply assumptions item and accepted the correct contextual conclusion."
+    },
+    "score": {
+      "start": true,
+      "questionSelection": true,
+      "scoreChanged": true,
+      "evidence": "A correct answer awarded Correct +100 and Speed +40, changing Score and Best from 0 to 140."
+    }
+  },
+  "console": {
+    "warnings": 0,
+    "errors": 0
+  },
+  "accessibility": {
+    "modeButtonsNamed": true,
+    "answerButtonsNamed": true,
+    "statusExposed": true
+  }
+}

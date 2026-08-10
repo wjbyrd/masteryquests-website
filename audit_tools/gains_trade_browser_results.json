@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "testedAt": "2026-08-10T11:00:00.000Z",
+  "url": "http://127.0.0.1:8775/index.html",
+  "summary": "All five modes passed interactive start and question selection; Standard save/resume restored Room 2 through Continue Standard Run; Timed countdown, Legendary deep-tier selection, Score Attack scoring, and zero-warning/error console checks passed.",
+  "modes": {
+    "standard": {"start": true, "questionSelection": true, "saveResume": true},
+    "timed": {"start": true, "questionSelection": true, "countdown": true},
+    "exam": {"start": true, "questionSelection": true},
+    "legendary": {"start": true, "questionSelection": true, "deepTierQuestion": true},
+    "score": {"start": true, "questionSelection": true, "scoreUpdated": true}
+  },
+  "console": {"warnings": 0, "errors": 0},
+  "accessibility": {"playerNameLabel": true, "modeButtonsNamed": true, "answerButtonsNamed": true, "roomProgressImagesNamed": true},
+  "completionEvidence": "Deterministic engine simulations completed 500 sessions per mode; browser interaction verified mode entry, answer submission, transitions, and Standard persistence."
+}

@@ -1,0 +1,1713 @@
+{
+  "phase": "phase7.6-models-assumptions-light-touch-pilot-v1",
+  "concept": "models-and-assumptions",
+  "reviewedBaselineRecords": [
+    {
+      "id": "ECON-MG-EASY-18",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-EASY-19",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-MODL-E-001",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-MODL-E-002",
+      "pool": "easy",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-MEDIUM-108",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-M-001",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-M-002",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-M-003",
+      "pool": "medium",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-HARD-212",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-H-001",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-H-002",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-H-003",
+      "pool": "hard",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-EL-001",
+      "pool": "elite",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-MODL-EL-002",
+      "pool": "elite",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9077",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9080",
+      "pool": "legendary",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9086",
+      "pool": "legendary",
+      "action": "RELOCATE_BRIDGE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9089",
+      "pool": "legendary",
+      "action": "KEEP"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9112",
+      "pool": "legendaryBoss",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9113",
+      "pool": "legendaryBoss",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9114",
+      "pool": "legendaryBoss",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-MODL-R-001",
+      "pool": "repair",
+      "action": "REWRITE"
+    },
+    {
+      "id": "P52B-MODL-R-002",
+      "pool": "repair",
+      "action": "REWRITE"
+    },
+    {
+      "id": "ECON-MG-CORE-MODELS-30004",
+      "pool": "repairSeed",
+      "action": "KEEP"
+    },
+    {
+      "id": "P52B-MODL-BR-001",
+      "pool": "bridge",
+      "action": "REWRITE"
+    }
+  ],
+  "actions": {
+    "KEEP": 12,
+    "REWRITE": 12,
+    "RELOCATE_REPAIR": 0,
+    "RELOCATE_BRIDGE": 1,
+    "REMOVE": 0,
+    "OUT_OF_SCOPE_REVIEW": 0,
+    "ADD": 41
+  },
+  "changes": [
+    {
+      "action": "REWRITE",
+      "id": "ECON-MG-EASY-18",
+      "pool": "easy",
+      "before": {
+        "id": "ECON-MG-EASY-18",
+        "q": "Economists use models because models:",
+        "options": [
+          "Simplify reality to help explain the world",
+          "Include every detail of reality",
+          "Eliminate the need for assumptions",
+          "Replace all data"
+        ],
+        "aHash": "cf4814c9ace5f4d81df4fda21571c6bd1206a5d114555cd16cf80f633e14bb35",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "thinks_models_must_include_every_detail",
+        "feedback": "Models simplify reality so economists can focus on the key relationships."
+      },
+      "after": {
+        "id": "ECON-MG-EASY-18",
+        "q": "A household-choice model omits brand colors and store music. Why can it still help explain how price affects purchases?",
+        "options": [
+          "Those details may not matter for the price relationship",
+          "Every omitted detail is assumed not to exist",
+          "The model guarantees an exact purchase forecast",
+          "Evidence is unnecessary once a model is simple"
+        ],
+        "aHash": "783a7a838a11435b5b46c44a3997a50f29ab55d4feeb47be7eda83b0cda96044",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "Treating a focused representation as a literal copy of reality.",
+        "feedback": "Models simplify deliberately to answer a particular question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "ECON-MG-EASY-19",
+      "pool": "easy",
+      "before": {
+        "id": "ECON-MG-EASY-19",
+        "q": "In economics, assumptions are mainly used to:",
+        "options": [
+          "Simplify analysis",
+          "Hide facts from students",
+          "Guarantee perfect predictions",
+          "Replace all evidence"
+        ],
+        "aHash": "c0a7b30360bcf3e5a33f64cbc7536035035c8354b0c6b237f6495d6532362893",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "assumptions_role",
+        "repairSkill": "model_purpose",
+        "commonError": "thinks_assumptions_are_errors",
+        "feedback": "Assumptions simplify analysis by helping isolate important relationships."
+      },
+      "after": {
+        "id": "ECON-MG-EASY-19",
+        "q": "An economist studying commute time assumes gasoline prices stay unchanged. What is that assumption doing?",
+        "options": [
+          "Claiming gasoline prices never change anywhere in practice",
+          "Guaranteeing every commuter makes one choice",
+          "Replacing observed travel data with opinion",
+          "Holding one influence fixed to isolate another"
+        ],
+        "aHash": "8632ac79775a3b99e1378c324b54c49d655da0fc33f7e06990a55ec8c5d6d615",
+        "type": "definition",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "assumptions_role",
+        "repairSkill": "assumptions_role",
+        "commonError": "Treating a conditional assumption as a universal fact.",
+        "feedback": "Assumptions identify the conditions under which reasoning applies.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "P52B-MODL-E-001",
+      "pool": "easy",
+      "before": {
+        "id": "P52B-MODL-E-001",
+        "q": "Why do economic models simplify reality?",
+        "options": [
+          "To guarantee every prediction is exact.",
+          "To remove the need for evidence.",
+          "To prove assumptions are literally true.",
+          "To isolate important relationships and make reasoning manageable."
+        ],
+        "aHash": "fa9d264c3d7c7ca20806f8a7e548df78e4b833cc4286fa5b123957f6f5b8cdb5",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "Treating simplification as dishonesty or exact description.",
+        "feedback": "A model is useful because it focuses attention on selected mechanisms."
+      },
+      "after": {
+        "id": "P52B-MODL-E-001",
+        "q": "A manager uses a two-factor model of sales rather than listing every detail of the store. Why?",
+        "options": [
+          "To prove omitted details never affect sales",
+          "To avoid comparing predictions with evidence",
+          "To focus on relationships relevant to the decision",
+          "To guarantee that every forecast is exact"
+        ],
+        "aHash": "dbeca79261e0f0986a8a53fd2e2eab50a56c170eb82426e9b3b015c08927632f",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "Treating a focused representation as a literal copy of reality.",
+        "feedback": "Models simplify deliberately to answer a particular question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "P52B-MODL-E-002",
+      "pool": "easy",
+      "before": {
+        "id": "P52B-MODL-E-002",
+        "q": "The phrase “other things equal” is used to:",
+        "options": [
+          "Hold other influences constant while examining one relationship.",
+          "Claim that all real-world conditions are identical.",
+          "Eliminate uncertainty permanently.",
+          "Make normative judgments objective."
+        ],
+        "aHash": "ebad7d18a04ff1be26494fb68884969e293268d82e9862e123e81ce2e88bb8ad",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "ceteris_paribus",
+        "repairSkill": "ceteris_paribus",
+        "commonError": "Reading ceteris paribus as a claim that nothing else ever changes.",
+        "feedback": "The assumption isolates one effect for analysis."
+      },
+      "after": {
+        "id": "P52B-MODL-E-002",
+        "q": "An economist studies how price affects purchases while holding income constant. Why hold income constant?",
+        "options": [
+          "To turn a positive claim into a value judgment",
+          "To isolate the price-purchase relationship",
+          "To claim household income never changes",
+          "To eliminate uncertainty from all forecasts"
+        ],
+        "aHash": "cbd8839e596cee0d74c3c1b62e82166fcf8ce28cfb4eae5c9edecc460bf557e9",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "ceteris_paribus",
+        "repairSkill": "ceteris_paribus",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "P52B-MODL-EL-001",
+      "pool": "elite",
+      "before": {
+        "id": "P52B-MODL-EL-001",
+        "q": "A model’s assumption is unrealistic but its prediction is accurate in a narrow domain. The strongest evaluation is:",
+        "options": [
+          "Reject it solely because the assumption is unrealistic.",
+          "Accept it for every possible use.",
+          "Treat prediction as proof of the assumption.",
+          "Judge whether the abstraction is useful for the intended purpose, not whether every assumption is literally true."
+        ],
+        "aHash": "02faed8874da6ae809132ec64ac6d7b0d34e85e8b2538f4fa35e0464f4730051",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "model_assumption_usefulness",
+        "repairSkill": "model_assumption_usefulness",
+        "commonError": "Using literal realism as the only model criterion.",
+        "feedback": "A simplifying assumption can be useful if it supports reliable reasoning for the target question."
+      },
+      "after": {
+        "id": "P52B-MODL-EL-001",
+        "q": "A model uses an unrealistic assumption but predicts well in a narrow setting. What is the strongest evaluation?",
+        "options": [
+          "Judge whether the abstraction serves that narrow purpose",
+          "Reject the model because every assumption must be literal",
+          "Accept the model for all settings without further checks",
+          "Treat predictive fit as proof of the assumed mechanism"
+        ],
+        "aHash": "6106bffd6cd61f1302e79c02ef7b4749f52537822a60568d5c853f251f8d12a3",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "model_assumption_usefulness",
+        "repairSkill": "model_assumption_usefulness",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "ECON-MG-LEGENDARY-9080",
+      "pool": "legendary",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9080",
+        "q": "An economist leaves out foreign trade when modeling a local haircut market. Why is that not automatically a flaw?",
+        "options": [
+          "A model can omit details to isolate the relationship being studied",
+          "A model is valid only if it includes every institution",
+          "Foreign trade never matters in economics",
+          "Models are used to avoid assumptions"
+        ],
+        "aHash": "9cc98217e728ddedd39067692e865d3226344953278b76a17a770c14f443dfb5",
+        "type": "interpretation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "thinks_simplification_means_uselessness",
+        "feedback": "Models simplify reality on purpose so economists can focus on key relationships."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9080",
+        "q": "A local haircut model omits exchange rates and global shipping. What is the best evaluation of that omission?",
+        "options": [
+          "It proves international markets never affect local services",
+          "It makes the model invalid for every possible purpose",
+          "It removes the need to test the model with local evidence",
+          "It is reasonable if those forces do not affect the question"
+        ],
+        "aHash": "c9617a6b4525fec2434095a2abefc07ec87831c405490b5fd9607f19c135e3e5",
+        "type": "interpretation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "P52B-MODL-R-001",
+      "pool": "repair",
+      "before": {
+        "id": "P52B-MODL-R-001",
+        "q": "An assumption in a model is:",
+        "options": [
+          "A fact that can never be questioned.",
+          "A condition accepted to focus the analysis.",
+          "A policy recommendation.",
+          "An answer choice with no effect on results."
+        ],
+        "aHash": "a05e5fc6014610d8e4e2c926d8d6ff48bcb137a2824d3af3fc8782463851cb4c",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "assumptions_role",
+        "repairSkill": "assumptions_role",
+        "commonError": "Treating assumptions as hidden facts.",
+        "feedback": "Assumptions define the conditions under which model reasoning applies."
+      },
+      "after": {
+        "id": "P52B-MODL-R-001",
+        "q": "What role does an assumption play in a model?",
+        "options": [
+          "It replaces the evidence used to test predictions",
+          "It makes the model a policy recommendation",
+          "It states a condition used to focus the analysis",
+          "It guarantees that every result is factually certain"
+        ],
+        "aHash": "16eb0dcd50c341af77c05e9849aeeb605c75e9d7e6042a4e0af3683c7c7b8a1d",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "assumptions_role",
+        "repairSkill": "assumptions_role",
+        "commonError": "Treating a conditional assumption as a universal fact.",
+        "feedback": "Assumptions identify the conditions under which reasoning applies.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "P52B-MODL-R-002",
+      "pool": "repair",
+      "before": {
+        "id": "P52B-MODL-R-002",
+        "q": "A model should be rejected automatically when it simplifies reality:",
+        "options": [
+          "True; every useful model includes every detail.",
+          "True; evidence cannot support a simple model.",
+          "False; simplification is expected, but relevance and performance must be evaluated.",
+          "False only when the model has a graph."
+        ],
+        "aHash": "a60ace456fd4b2c557ff3884e89e430338923c7c2f22977659c8083ec20e25fd",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_simplification",
+        "repairSkill": "model_simplification",
+        "commonError": "Equating simplification with uselessness.",
+        "feedback": "All models simplify; the question is whether they capture the mechanisms needed for the task."
+      },
+      "after": {
+        "id": "P52B-MODL-R-002",
+        "q": "Must a model be rejected because it simplifies reality?",
+        "options": [
+          "No; but only when the model includes a graph",
+          "No; judge whether the simplification fits its purpose",
+          "Yes; useful models reproduce every real-world detail",
+          "Yes; evidence cannot support a simplified explanation"
+        ],
+        "aHash": "5bd70cc609778aac38dec45eda2bc920efa477a6461acd24363686b294cf54e2",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_simplification",
+        "repairSkill": "model_simplification",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "P52B-MODL-BR-001",
+      "pool": "bridge",
+      "before": {
+        "id": "P52B-MODL-BR-001",
+        "q": "A weather forecast model works well locally but poorly in mountainous terrain. The economic-model lesson is:",
+        "options": [
+          "A model that fails once has no value anywhere.",
+          "More variables always solve the problem.",
+          "Predictions do not depend on context.",
+          "Check whether assumptions and omitted factors fit the new setting."
+        ],
+        "aHash": "99712d03a35d6c2f190d04b124e93cf799f2ab7a47fba2d6cac62da7701098de",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Failing to transfer model-validity reasoning across fields.",
+        "feedback": "Models have domains of application shaped by assumptions and context."
+      },
+      "after": {
+        "id": "P52B-MODL-BR-001",
+        "q": "A demand model predicts fewer purchases after a price increase. What connects model limits to positive analysis?",
+        "options": [
+          "Compare the conditional prediction with observed evidence",
+          "Treat the prediction as a statement of what ought to happen",
+          "Accept the mechanism because the prediction sounds plausible",
+          "Reject all models whenever one observation differs"
+        ],
+        "aHash": "942200b6c8fac00b709bbe95008ca8e6ccaf848a9a1016b1bcb2414a3ea92dbc",
+        "type": "application",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_limits_to_evidence",
+        "repairSkill": "model_limits_to_evidence",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "RELOCATE_BRIDGE",
+      "id": "ECON-MG-LEGENDARY-9086",
+      "pool": "bridge",
+      "before": {
+        "id": "ECON-MG-LEGENDARY-9086",
+        "q": "An economist uses a PPF model with only two goods even though real economies produce millions. Why is that acceptable?",
+        "options": [
+          "The model simplifies reality to clarify scarcity and tradeoffs",
+          "The model proves real economies produce only two goods",
+          "The model removes opportunity cost",
+          "The model is normative because it uses a graph"
+        ],
+        "aHash": "dc27688b7b5caf475cc3f5645b3337a7b81303d104f85bce18f42eb1ea62dbac",
+        "type": "interpretation",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_simplification",
+        "repairSkill": "model_purpose",
+        "commonError": "rejects_models_for_omitting_real_world_detail",
+        "feedback": "A PPF strips the economy down to two goods so the tradeoff logic is visible."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARY-9086",
+        "q": "A PPF uses only two goods. How does model simplification connect to scarcity and opportunity cost?",
+        "options": [
+          "The two-good assumption removes scarcity from production",
+          "The PPF proves real economies produce only two goods",
+          "The graph replaces the need to compare alternatives",
+          "The simplification makes the tradeoff easier to see"
+        ],
+        "aHash": "e8fa89bb229f35420498e48fc05471b39e63d40fba6fe0f3a9cf764a2db7b329",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "models_to_ppf",
+        "repairSkill": "models_to_ppf",
+        "commonError": "Rejecting a PPF because its two-good simplification is not literal.",
+        "feedback": "The two-good abstraction exposes scarcity and opportunity cost without describing every output.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-E-005",
+      "pool": "easy",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-E-005",
+        "q": "A restaurant model tracks price and customer traffic but omits wall color. When is that simplification useful?",
+        "options": [
+          "When the model must predict every customer exactly",
+          "When evidence about traffic is unavailable",
+          "When wall color is not important to the question",
+          "When wall color is impossible to observe"
+        ],
+        "aHash": "bba665c6318c38b0ec1c7d7e0e699d4e594aeea0c8dbe1d7fbb11924f73106a6",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_simplification_value",
+        "repairSkill": "model_simplification_value",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-E-006",
+      "pool": "easy",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-E-006",
+        "q": "A model is best understood as:",
+        "options": [
+          "A value judgment disguised as a diagram",
+          "A focused representation built for a question",
+          "A complete copy of every real-world detail",
+          "A prediction that cannot be tested with evidence"
+        ],
+        "aHash": "617cb1884d21ffc9e456bed7e6b6e3485c993aa3fe4eaed1719199f5a138ef4e",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "economic_model_reasoning",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-E-007",
+      "pool": "easy",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-E-007",
+        "q": "A bus-demand study asks what happens when fares rise, with service unchanged. Which condition is an assumption?",
+        "options": [
+          "Bus service remains unchanged during the comparison",
+          "Every rider chooses the bus after fares rise",
+          "The fare increase has no effect on any rider",
+          "The study includes every transportation detail"
+        ],
+        "aHash": "1de34e94ec447cef1d8233d10bdcfa56e5a7c705d4854ea28b711e7e66d8b682",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "assumptions",
+        "repairSkill": "assumptions",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-E-008",
+      "pool": "easy",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-E-008",
+        "q": "Which question is a simple supply-and-demand model designed to address?",
+        "options": [
+          "What every buyer personally values about the product",
+          "Which market outcome is morally fairest to society",
+          "How every institution in the economy operates",
+          "How price and quantity respond when market conditions change"
+        ],
+        "aHash": "0e5676186cdc5609dbd25609e9235705c032ed8462a4d7a71959e85aef9b00c3",
+        "type": "application",
+        "difficulty": "easy",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "Treating a focused representation as a literal copy of reality.",
+        "feedback": "Models simplify deliberately to answer a particular question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-M-005",
+      "pool": "medium",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-M-005",
+        "q": "A wage model assumes workers can change jobs easily, but licenses block movement. What should the analyst do?",
+        "options": [
+          "Reject every wage model regardless of its purpose",
+          "Treat licensing as a value judgment rather than evidence",
+          "Revise the application because the mobility assumption fails",
+          "Keep the prediction because assumptions never affect results"
+        ],
+        "aHash": "0df7b717f3efb87137997f6d11346c8684897c7a4f94ed2c047ba20d045cc5fb",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "model_assumption_evaluation",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-M-006",
+      "pool": "medium",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-M-006",
+        "q": "A household model predicts spending from income, but families also face new credit limits. Why might the prediction change?",
+        "options": [
+          "Adding any factor guarantees a perfect prediction",
+          "An omitted constraint became important in this setting",
+          "Income no longer matters in any household decision",
+          "The original relationship became a definition"
+        ],
+        "aHash": "ab8dbcf476cdfbd5ff8257083bf714e39f9ba86e74359b5bc6455701cdb52b37",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-M-007",
+      "pool": "medium",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-M-007",
+        "q": "One inflation model studies demand pressure; another studies supply disruptions. Which should be used after an energy shock?",
+        "options": [
+          "The model containing the relevant supply mechanism",
+          "The model with the most equations on the page",
+          "Whichever model predicts the preferred policy",
+          "Both models averaged without checking assumptions"
+        ],
+        "aHash": "f38a5bcc1394bd8124ea3a93fb5d39a0d2c73d47e6adbf2224156141d6e472b3",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "model_selection",
+        "repairSkill": "model_selection",
+        "commonError": "Choosing by complexity or preference instead of purpose.",
+        "feedback": "Select the model whose mechanisms and assumptions fit the question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-M-008",
+      "pool": "medium",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-M-008",
+        "q": "A policy model misses one month of data but explains the broader pattern. What is the best response?",
+        "options": [
+          "Discard the model after any prediction error",
+          "Ignore the miss because models cannot be tested",
+          "Add variables until the model matches every observation",
+          "Investigate the miss without declaring the model useless"
+        ],
+        "aHash": "606625a9b81c03c2b98e22070b67229b5a50dfd10c6d84c873d9d943c1adf3a8",
+        "type": "application",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "economic_model_reasoning",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-H-005",
+      "pool": "hard",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-H-005",
+        "q": "A housing model estimated where construction is flexible is applied where zoning is strict. What is the central concern?",
+        "options": [
+          "Zoning makes housing demand irrelevant",
+          "A more detailed model must automatically be correct",
+          "The supply assumption may not transfer across cities",
+          "Historical estimates are always invalid elsewhere"
+        ],
+        "aHash": "8559aed91128132f14e1ca1fd12eb8e34eb735399f43bf5cb05404311ffe0b92",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-H-006",
+      "pool": "hard",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-H-006",
+        "q": "Two labor models fit past employment equally well. One predicts a wage rule raises jobs; the other predicts a decline. What evidence is most useful?",
+        "options": [
+          "The policy outcome preferred by the researcher",
+          "Evidence from a setting where their predictions differ",
+          "More old observations both models already explain",
+          "The number of variables included in each model"
+        ],
+        "aHash": "62f7cb56679f89940c9223b5843f816918dced961a972ab3653ca02a5d2c6a9b",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-H-007",
+      "pool": "hard",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-H-007",
+        "q": "Adding dozens of variables improves historical fit but makes the mechanism impossible to interpret. What tradeoff appears?",
+        "options": [
+          "Fit improved while explanatory clarity declined",
+          "Complexity proved the mechanism was causal",
+          "Interpretation no longer matters for policy",
+          "Every omitted variable has been eliminated"
+        ],
+        "aHash": "1917fb72a243754aa07fceae9420c0d6df0b093ab5a93582df3cbbef4a7b4ec1",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "model_complexity_tradeoff",
+        "repairSkill": "model_complexity_tradeoff",
+        "commonError": "Assuming additional detail automatically improves a model.",
+        "feedback": "Extra complexity is useful only when its benefits exceed lost clarity or robustness.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-H-008",
+      "pool": "hard",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-H-008",
+        "q": "A transit model worked before remote work became common but now overpredicts commuting. What should be reconsidered?",
+        "options": [
+          "Whether any historical data can ever be useful",
+          "Whether commuting belongs in economics",
+          "Whether assumptions matter only in graphs",
+          "Whether the old behavioral relationship remains stable"
+        ],
+        "aHash": "0054bd1abe7d4c529b59fc10ac7672754c05625d5a5c04aaefdeafa12be42b61",
+        "type": "application",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "structural_change_model",
+        "repairSkill": "structural_change_model",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-EL-003",
+      "pool": "elite",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-EL-003",
+        "q": "A complex model predicts purchases accurately, while a simpler model identifies a price mechanism. Which choice is best?",
+        "options": [
+          "Always choose the simple model regardless of performance",
+          "Average the models because mechanisms cannot be tested",
+          "Choose according to whether prediction or explanation is the goal",
+          "Always choose the complex model because it has better fit"
+        ],
+        "aHash": "c58c6ae4a958249d968e6978135dc2fce8345aa801f28568a0a885afe81c4ea5",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "model_selection",
+        "repairSkill": "model_selection",
+        "commonError": "Choosing by complexity or preference instead of purpose.",
+        "feedback": "Select the model whose mechanisms and assumptions fit the question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-EL-004",
+      "pool": "elite",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-EL-004",
+        "q": "A model predicts policy outcomes accurately in several cities, but its proposed mechanism was never measured. What follows?",
+        "options": [
+          "Mechanism evidence is unnecessary when fit is strong",
+          "Predictive success alone does not establish the mechanism",
+          "Accurate predictions prove every assumption is literally true",
+          "The model can be transferred to every city without review"
+        ],
+        "aHash": "4d110d4230f7a7f18f5b54f11424568034289eebfbed98a1395695bed03997af",
+        "type": "application",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-005",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-005",
+        "q": "During a pandemic, a model based on stable workplace commuting badly misses travel demand. What is the best diagnosis?",
+        "options": [
+          "A structural change weakened the historical relationship",
+          "The old data were necessarily fabricated",
+          "Travel demand cannot be studied with models",
+          "Adding every possible variable would prevent all errors"
+        ],
+        "aHash": "e82df738fca8cda491071075b458eaf5243834be95b75dd616b44070b213367a",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "structural_change_model",
+        "repairSkill": "structural_change_model",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-006",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-006",
+        "q": "An online-shopping model estimated before smartphones underpredicts impulse purchases after app alerts spread. What should change?",
+        "options": [
+          "Treat the original coefficients as permanent economic laws",
+          "Reject evidence collected after the technology change",
+          "Assume predictive failure proves price no longer matters",
+          "Reevaluate assumptions about information and shopping behavior"
+        ],
+        "aHash": "a01f7a15f2e6def78be1d6ebc7fbcf2c7969f9ad7e6a9650ce1a962a11de1378",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "model_assumption_evaluation",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-007",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-007",
+        "q": "A rent model assumes landlords can adjust units quickly. In a city with long permit delays, which conclusion is strongest?",
+        "options": [
+          "Rent cannot respond to demand in any time horizon",
+          "The most complex available housing model must be used",
+          "Short-run predictions may fail because supply adjusts slowly",
+          "The model proves permits have no economic effect"
+        ],
+        "aHash": "0afbd6794a148b0270359a3b91a059460bbaee01386dcb2d093f126231e8ea4b",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-008",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-008",
+        "q": "Two energy models fit normal years. One includes storage constraints and predicts a price spike after a pipeline break. What is the best test?",
+        "options": [
+          "Select the prediction that implies the lowest price",
+          "Observe conditions where storage constraints become binding",
+          "Compare more normal years both models already fit",
+          "Choose the model with the smoother historical graph"
+        ],
+        "aHash": "310b4d3c035623a416f32bf0413c0f2af8298c4f18c4d663d93082fd4853f389",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-009",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-009",
+        "q": "A classroom market experiment predicts rapid price convergence, but a real market has search costs and long contracts. What follows?",
+        "options": [
+          "Transfer requires checking whether those omitted frictions matter",
+          "The experiment is useless because classrooms are artificial",
+          "The real market must converge at exactly the same speed",
+          "Search costs prove supply and demand never apply"
+        ],
+        "aHash": "e028ef6631a59a67c3caa66a4c717d14f2aa02fa7caa45ac895524226afa9043",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-010",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-010",
+        "q": "A credit model fits defaults well but uses a proxy unrelated to the claimed borrower mechanism. What is justified?",
+        "options": [
+          "Good fit proves the proxy is the true causal mechanism",
+          "The model needs no testing outside the original sample",
+          "Any accurate classifier is automatically a policy model",
+          "Good fit supports prediction more than the claimed explanation"
+        ],
+        "aHash": "828ad87e4d840c01289feb6cce9eee9b16820c6217ff09690a884cace2f32b18",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-011",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-011",
+        "q": "A policy result reverses when a plausible behavioral assumption changes slightly. How should it be reported?",
+        "options": [
+          "As unaffected because both assumptions are plausible",
+          "As evidence that sensitivity analysis is unnecessary",
+          "As assumption-sensitive rather than robust",
+          "As proven by the model with the preferred result"
+        ],
+        "aHash": "813a2abcce4d1582f4bec0f4e0b6ec9ff6ee3b7bdf39a513fc4c273fd3d14b94",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "sensitivity_analysis_model",
+        "repairSkill": "sensitivity_analysis_model",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-012",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-012",
+        "q": "A detailed firm model improves forecasts slightly but requires costly data unavailable to decision-makers. Which model may be preferable?",
+        "options": [
+          "The model producing the most favorable recommendation",
+          "The simpler model if its performance is adequate for the task",
+          "The detailed model because complexity is always superior",
+          "Neither model because forecasts can never guide choices"
+        ],
+        "aHash": "155fb3927be338143d010c6135b8fe3bff84bf787a980e7000a53255cf802642",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_complexity_tradeoff",
+        "repairSkill": "model_complexity_tradeoff",
+        "commonError": "Assuming additional detail automatically improves a model.",
+        "feedback": "Extra complexity is useful only when its benefits exceed lost clarity or robustness.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-L-013",
+      "pool": "legendary",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-L-013",
+        "q": "A central bank changes its policy rule, and a forecasting relationship estimated under the old rule breaks down. What lesson applies?",
+        "options": [
+          "Model relationships can depend on the policy regime",
+          "Policy changes cannot affect private expectations",
+          "Old estimates become definitions after a rule change",
+          "Forecasting models should ignore institutional context"
+        ],
+        "aHash": "3623caa5eae0f7609a16cb705d550b8c398f2fddd2c7f21b418272942eb516ed",
+        "type": "application",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "structural_change_model",
+        "repairSkill": "structural_change_model",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-EB-001",
+      "pool": "easyBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-EB-001",
+        "q": "Why can a map-like economic model omit many details?",
+        "options": [
+          "Every omitted detail is assumed not to exist",
+          "Simplification guarantees perfect predictions",
+          "Models replace the need for evidence",
+          "Its value depends on serving a focused purpose"
+        ],
+        "aHash": "7c76acbde255ce582138f61f601c76a2738f3b4f5da9c957194b9c26e72a501f",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "model_purpose",
+        "repairSkill": "model_purpose",
+        "commonError": "Treating a focused representation as a literal copy of reality.",
+        "feedback": "Models simplify deliberately to answer a particular question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-EB-002",
+      "pool": "easyBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-EB-002",
+        "q": "A study holds population constant while examining income and sales. What is population here?",
+        "options": [
+          "A detail declared irrelevant forever",
+          "A normative judgment about growth",
+          "A condition held fixed for the comparison",
+          "A result guaranteed by the model"
+        ],
+        "aHash": "230ad2bf6937554a5fc8ae827317fe08366d34b9b55672580d397d423bad47d7",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "ceteris_paribus",
+        "repairSkill": "ceteris_paribus",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-EB-003",
+      "pool": "easyBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-EB-003",
+        "q": "Which statement best distinguishes a model from reality?",
+        "options": [
+          "A model cannot be compared with evidence",
+          "A model represents selected relationships for a purpose",
+          "A model reproduces every observed detail exactly",
+          "A model becomes true when it contains a graph"
+        ],
+        "aHash": "b05fb4bf1f480a88a94306c4954a9f521fa6fadfe3ffcbd3b5c2a0643ff566db",
+        "type": "application",
+        "difficulty": "easyBoss",
+        "canonicalDifficulty": "easy",
+        "primarySkill": "economic_model_reasoning",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-MB-001",
+      "pool": "mediumBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-MB-001",
+        "q": "A restaurant-demand model assumes nearby competitors stay open, but two close. What should happen to the forecast?",
+        "options": [
+          "Reconsider it because a held-constant condition changed",
+          "Keep it because assumptions do not affect forecasts",
+          "Reject all demand models as permanently useless",
+          "Treat competitor closures as a moral judgment"
+        ],
+        "aHash": "aa7ee99475f2c30319b3d27c7eacd62f024b1f66b2cde014a6fca64e54faa304",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "model_assumption_evaluation",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-MB-002",
+      "pool": "mediumBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-MB-002",
+        "q": "One model explains short-run layoffs; another explains long-run hiring. How should a firm choose?",
+        "options": [
+          "Always select the model with more variables and equations",
+          "Average both answers without checking assumptions",
+          "Use whichever model supports its preferred plan",
+          "Match the model to the time horizon and question"
+        ],
+        "aHash": "326b38c2f4688c86727b080863d4d7077aef206290f0f0778aaa8aa84dac3ec2",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "model_selection",
+        "repairSkill": "model_selection",
+        "commonError": "Choosing by complexity or preference instead of purpose.",
+        "feedback": "Select the model whose mechanisms and assumptions fit the question.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-MB-003",
+      "pool": "mediumBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-MB-003",
+        "q": "A model predicts well in rural areas but not dense cities. What is the first question to ask?",
+        "options": [
+          "Would adding any variable guarantee success",
+          "Are city outcomes outside economic analysis",
+          "Do its assumptions fit both settings equally well",
+          "Must every rural observation be discarded"
+        ],
+        "aHash": "f5116357077ed81118828d20cfde609716b9dec344b1b3dbf1ba25af0bf2ca50",
+        "type": "application",
+        "difficulty": "mediumBoss",
+        "canonicalDifficulty": "medium",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-FB-001",
+      "pool": "finalBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-FB-001",
+        "q": "Two models fit past data, but only one predicts behavior after a new fee. What evidence best separates them?",
+        "options": [
+          "The recommendation preferred by the policymaker",
+          "Evidence from the new fee setting where predictions differ",
+          "More past outcomes both models already reproduce",
+          "The relative length of the two model descriptions"
+        ],
+        "aHash": "57754c30ec147d20d859815fb0ac973b428a91567e6fad7a7608cff4fa88e686",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-FB-002",
+      "pool": "finalBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-FB-002",
+        "q": "A policy conclusion disappears when one plausible assumption changes. What is the strongest evaluation?",
+        "options": [
+          "The conclusion is sensitive and should be qualified",
+          "The original conclusion remains fully robust",
+          "The alternate assumption should be hidden from users",
+          "The model is useless for every other question"
+        ],
+        "aHash": "64f66382240adc6b56f59d1e22692720543833e9e3bf71bc7325aac6deda39b4",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "sensitivity_analysis_model",
+        "repairSkill": "sensitivity_analysis_model",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-FB-003",
+      "pool": "finalBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-FB-003",
+        "q": "A larger model fits old data better but predicts new data worse. What does this show?",
+        "options": [
+          "Historical fit proves the larger model is superior",
+          "Prediction quality depends only on equation length",
+          "The smaller model must omit every relevant mechanism",
+          "Added complexity can overfit rather than improve transfer"
+        ],
+        "aHash": "11eee85783521799ef4039aabd66a3c2bd6acf430530c6dfa4895670ab8af4f8",
+        "type": "application",
+        "difficulty": "finalBoss",
+        "canonicalDifficulty": "hard",
+        "primarySkill": "model_complexity_tradeoff",
+        "repairSkill": "model_complexity_tradeoff",
+        "commonError": "Assuming additional detail automatically improves a model.",
+        "feedback": "Extra complexity is useful only when its benefits exceed lost clarity or robustness.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-LB-004",
+      "pool": "legendaryBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-LB-004",
+        "q": "A labor model built where unions are rare is transferred to a heavily unionized market. What is the decisive review?",
+        "options": [
+          "Whether the original market had a larger workforce",
+          "Whether policymakers prefer its predicted outcome",
+          "Whether bargaining institutions alter its key mechanism",
+          "Whether the transferred model contains more equations"
+        ],
+        "aHash": "b251c226ccc21522dc740f385df4a0fd6085a0e5d9f4e0182f23e78131ebc04f",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-LB-005",
+      "pool": "legendaryBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-LB-005",
+        "q": "A forecasting model fits every historical recession but offers no evidence for its claimed credit mechanism. What can be concluded?",
+        "options": [
+          "Its assumptions become facts once fit is high",
+          "Its historical fit does not by itself prove the mechanism",
+          "Its fit proves the mechanism beyond further testing",
+          "It will forecast every future recession correctly"
+        ],
+        "aHash": "b621fe96bced426af1b887ac1a8e4151b5f7c3d970cf9e55f187b1b5f32fa280",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-LB-006",
+      "pool": "legendaryBoss",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-LB-006",
+        "q": "Adding detailed behavior improves a model slightly but makes results highly sensitive to uncertain parameters. What is the best choice?",
+        "options": [
+          "Use complexity only if its gain outweighs lost robustness",
+          "Keep every detail because realism is the only criterion",
+          "Remove all assumptions so no parameter is uncertain",
+          "Choose whichever specification yields the largest effect"
+        ],
+        "aHash": "1e40aad1e63a10a977753ebcfbd7149e74d38c003e4887ce6d7a2b5eee11e977",
+        "type": "application",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_complexity_tradeoff",
+        "repairSkill": "model_complexity_tradeoff",
+        "commonError": "Assuming additional detail automatically improves a model.",
+        "feedback": "Extra complexity is useful only when its benefits exceed lost clarity or robustness.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-R-003",
+      "pool": "repair",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-R-003",
+        "q": "Does adding more detail automatically improve a model?",
+        "options": [
+          "Yes; every extra variable improves every model",
+          "Yes; realism is the only useful model criterion",
+          "No; because simple models never make errors",
+          "No; complexity can reduce clarity or prediction quality"
+        ],
+        "aHash": "72b78837b64d6e80470f39c700c52fb394cba49c191198aae67fe2cab21d7699",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_complexity_tradeoff",
+        "repairSkill": "model_complexity_tradeoff",
+        "commonError": "Assuming additional detail automatically improves a model.",
+        "feedback": "Extra complexity is useful only when its benefits exceed lost clarity or robustness.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-R-004",
+      "pool": "repair",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-R-004",
+        "q": "A prediction assumes income stays fixed. What if income changes?",
+        "options": [
+          "Income must be ignored to protect the model",
+          "The assumption proves income never changes",
+          "The prediction may need revision because its condition changed",
+          "The prediction becomes true by definition"
+        ],
+        "aHash": "ffdfba3a7f6e5ff9a31930d5575a1f637d7494242327df0ad1592120525c617f",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "assumptions_role",
+        "repairSkill": "assumptions_role",
+        "commonError": "Treating a conditional assumption as a universal fact.",
+        "feedback": "Assumptions identify the conditions under which reasoning applies.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-R-005",
+      "pool": "repair",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-R-005",
+        "q": "A model fit past data well. Does that prove its proposed mechanism?",
+        "options": [
+          "No; models cannot provide any useful evidence",
+          "No; different mechanisms can fit the same observations",
+          "Yes; fit proves every assumed causal step",
+          "Yes; past fit guarantees future accuracy"
+        ],
+        "aHash": "186cae1d136b8fc648cc720a3a78ec2e06340c20966654297d1225d4545978e9",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_discrimination",
+        "repairSkill": "model_discrimination",
+        "commonError": "Treating shared historical fit as proof of one mechanism.",
+        "feedback": "Useful evidence targets predictions on which competing models differ.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-R-006",
+      "pool": "repair",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-R-006",
+        "q": "When should a model be applied to a new setting?",
+        "options": [
+          "When its important assumptions remain reasonable there",
+          "Whenever it worked once in any setting",
+          "Only when it contains every possible detail",
+          "Whenever it supports the preferred conclusion"
+        ],
+        "aHash": "6aad89a254fd1c884b2e055c44623032d3ae5e59a4dda32155bf317c86f8c67b",
+        "type": "application",
+        "difficulty": "microRepair",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "model_application_limits",
+        "repairSkill": "model_application_limits",
+        "commonError": "Transferring a result without checking context or omitted factors.",
+        "feedback": "Apply a model where its important assumptions remain reasonable.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-BR-002",
+      "pool": "bridge",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-BR-002",
+        "q": "A supply-and-demand model holds buyer income fixed. Which bridge connects the model to ceteris paribus?",
+        "options": [
+          "Income is assumed never to change in real markets",
+          "The model makes income irrelevant to demand",
+          "Ceteris paribus guarantees the prediction is exact",
+          "Holding income fixed isolates the price relationship"
+        ],
+        "aHash": "b3c7cd039d9592083c93d23632b9fba35b83a967af3cc1b88578a227c5550838",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "models_to_ceteris_paribus",
+        "repairSkill": "models_to_ceteris_paribus",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "ADD",
+      "id": "P76-MODL-BR-003",
+      "pool": "bridge",
+      "before": null,
+      "after": {
+        "id": "P76-MODL-BR-003",
+        "q": "A policy model predicts lower emissions after a fee. How does model reasoning connect to policy analysis?",
+        "options": [
+          "Ignore uncertainty because the model is quantitative",
+          "Choose assumptions that produce the preferred result",
+          "Test whether behavioral assumptions fit the policy setting",
+          "Treat the prediction as proof the policy is desirable"
+        ],
+        "aHash": "40f35afdf7d22e381e1d31c3c3f6bed6bbc4007d5c8a32f2bd9a00b434a36bdb",
+        "type": "bridge",
+        "difficulty": "microBridge",
+        "canonicalDifficulty": "unknown",
+        "primarySkill": "assumptions_to_policy_predictions",
+        "repairSkill": "assumptions_to_policy_predictions",
+        "commonError": "Using the model without checking its purpose, assumptions, or evidence.",
+        "feedback": "Evaluate a model by its purpose, assumptions, performance, and relevant context.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "ECON-MG-LEGENDARYBOSS-9112",
+      "pool": "legendaryBoss",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9112",
+        "q": "An economist models a housing market while holding neighborhood quality constant. A critic says the model is useless because quality actually varies. What is the best reply?",
+        "options": [
+          "All omitted variables make a model false",
+          "Holding quality constant can isolate one relationship, provided the limitation is recognized",
+          "A model is valid only if it includes every household",
+          "The critic is right because assumptions cannot be tested"
+        ],
+        "aHash": "127f022a0db9b8541159170c8804a3acbabb35396541d878fa4571098d4ca97e",
+        "type": "trap",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "Simplifying assumptions can isolate causal mechanisms; the issue is whether the simplification fits the question."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9112",
+        "q": "An economist models a housing market while holding neighborhood quality constant. A critic says the model is useless because quality actually varies. What is the best reply?",
+        "options": [
+          "Every omitted variable makes the housing model false",
+          "It can isolate price effects if its limitation is stated",
+          "Neighborhood quality is irrelevant in every housing decision",
+          "No model assumption can ever be evaluated with evidence"
+        ],
+        "aHash": "7cdad0f155a0f01be44fd36ceac3d0c203d6be501bb4e9a876d2fd538dc747cd",
+        "type": "trap",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "Rejecting a focused assumption merely because the held-constant factor varies in reality.",
+        "feedback": "Holding quality constant can isolate a relationship when the limitation is relevant and explicit.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "ECON-MG-LEGENDARYBOSS-9113",
+      "pool": "legendaryBoss",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9113",
+        "q": "Two models predict different effects of a tax because one assumes fixed supply and the other allows firms to enter. What should economists do first?",
+        "options": [
+          "Average the two predictions",
+          "Choose the model with more equations",
+          "Match each model's assumptions to the time horizon and evidence",
+          "Reject both models because they disagree"
+        ],
+        "aHash": "39f7a88496460141c524335e15f0bb0a83556ed473e6ea68fe8da614df711b71",
+        "type": "integration",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "The relevant model depends on whether entry can occur over the period being studied."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9113",
+        "q": "Two models predict different effects of a tax because one assumes fixed supply and the other allows firms to enter. What should economists do first?",
+        "options": [
+          "Average both tax predictions without examining their assumptions",
+          "Choose the model containing the greater number of equations",
+          "Match assumptions to the relevant time horizon and evidence",
+          "Reject both models simply because their predictions disagree"
+        ],
+        "aHash": "78b1974f25f8dc2650b235fbd48edd087be1f4dfc2b41aa0139c5860d91fdecf",
+        "type": "integration",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "Choosing between models without matching entry assumptions to the time horizon.",
+        "feedback": "Whether firms can enter depends on the horizon and evidence, so the assumptions determine applicability.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    },
+    {
+      "action": "REWRITE",
+      "id": "ECON-MG-LEGENDARYBOSS-9114",
+      "pool": "legendaryBoss",
+      "before": {
+        "id": "ECON-MG-LEGENDARYBOSS-9114",
+        "q": "A model predicts that a price ceiling causes a shortage, but observed quantity sold does not fall. Which finding would most strongly preserve the model rather than refute it?",
+        "options": [
+          "The legal ceiling was above the market-clearing price",
+          "Consumers disliked the product",
+          "The market had many buyers",
+          "The policy was described as fair"
+        ],
+        "aHash": "341bb4979ddedb4d9ad36a9c2a140cf9c52374523339af1782a13e40feaedb8d",
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "legendary_boss_close_distractor",
+        "feedback": "A ceiling above equilibrium is nonbinding, so the shortage prediction does not apply."
+      },
+      "after": {
+        "id": "ECON-MG-LEGENDARYBOSS-9114",
+        "q": "A model predicts that a price ceiling causes a shortage, but observed quantity sold does not fall. Which finding would most strongly preserve the model rather than refute it?",
+        "options": [
+          "The ceiling was above the market-clearing price",
+          "Consumers preferred other products during the policy",
+          "The market included many buyers and sellers",
+          "Officials described the ceiling as a fair policy"
+        ],
+        "aHash": "93d1d487f2ae70fd2dd58a165f6eaa0f3af6e52ada2b66a35d77062836ca6c90",
+        "type": "multi-step",
+        "difficulty": "legendaryBoss",
+        "canonicalDifficulty": "legendary",
+        "primarySkill": "model_assumption_evaluation",
+        "repairSkill": "economic_model_reasoning",
+        "commonError": "Applying a binding-ceiling prediction when the legal ceiling may be nonbinding.",
+        "feedback": "A ceiling above equilibrium is nonbinding, so the shortage prediction does not apply.",
+        "sourceCurationPhase": "phase7.6-models-assumptions-light-touch-pilot-v1"
+      }
+    }
+  ]
+}
