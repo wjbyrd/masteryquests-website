@@ -1,0 +1,960 @@
+{
+  "phase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+  "generatedAt": "2026-08-10T23:30:00.000Z",
+  "scope": [
+    "cpi-versus-gdp-deflator",
+    "cpi-bias",
+    "indexing-and-real-values",
+    "real-versus-nominal-interest-rates"
+  ],
+  "changes": [
+    {
+      "questionId": "PM2B2-DEF-E-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-E-002",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-M-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-M-002",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-H-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-H-002",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-L-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-L-002",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-MB-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-MB-002",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-MB-003",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-FB-004",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-FB-005",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-FB-006",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-LB-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-DEF-LB-002",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-E-001",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-E-002",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-M-001",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-H-001",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-L-001",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-L-002",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-MB-001",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-MB-002",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-MB-003",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-FB-004",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-FB-005",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-BIAS-FB-006",
+      "canonicalConceptId": "cpi-bias",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-001",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-002",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-003",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-004",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-005",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-M-001",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-M-002",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-M-003",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-M-004",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-H-001",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-H-002",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-H-003",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-H-004",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-H-005",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-L-001",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-L-002",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-L-003",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-MB-001",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-MB-002",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-MB-003",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-FB-004",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-FB-005",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-FB-006",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-INDEX-LB-001",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-E-001",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-E-002",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-E-003",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-M-001",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-M-002",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-M-003",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-H-001",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-H-002",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-H-003",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-L-001",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-MB-001",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-MB-002",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-MB-003",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-FB-004",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-FB-005",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-FB-006",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "finalBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-LB-001",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "PM2B2-RNI-LB-002",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified engine floor with a distinct inflation-family task."
+    },
+    {
+      "questionId": "ECON-NL-QUALITY-NEW-GOODS-BIAS-6012",
+      "canonicalConceptId": "cpi-bias",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Replaces a same-skill check with a genuine source-to-destination connection.",
+      "beforeHash": "66b0ff418b66d282c223ec8fd2877d3d93b13ffa272cc1e3d32d6b0bb23de756",
+      "afterHash": "fae00d60fc8487a1cfa01933ae284c4734896898bec2551a76ded821553587d9"
+    },
+    {
+      "questionId": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "canonicalConceptId": "cpi-bias",
+      "action": "BRIDGE_REWRITE",
+      "oldPool": "bridge",
+      "newPool": "bridge",
+      "reason": "Replaces a same-skill check with a genuine source-to-destination connection.",
+      "beforeHash": "28e316cf7f4aa60d3be574df04c0baeeac6f86a72f3706ed1f7e2607f7a31036",
+      "afterHash": "e40ba536ef6b7fdd839df69ef0e488fbe7935663fd7ceb98f774a1e62d6107f7"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9108",
+      "canonicalConceptId": "cpi-and-inflation-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening",
+      "beforeHash": "e1954149107ddd32e2dbf44e6b3ec76f4a4e25801ec0bb4268742b8979b6b361",
+      "afterHash": "616c186fd13f64c6f5d1c4f557b217cdd81ff074c32dd27d05a548db14367086"
+    },
+    {
+      "questionId": "P52A-CPI-LB-001",
+      "canonicalConceptId": "cpi-and-inflation-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle",
+      "beforeHash": "6a55056568c56769f597085cf9c121d7976443aa432ce9d501fb186889ffe053",
+      "afterHash": "4cb9852484bd074ba7489edb5fe9479d5f125ff68d2cf3976ce6f3d656420d38"
+    },
+    {
+      "questionId": "P52A-CPI-LB-002",
+      "canonicalConceptId": "cpi-and-inflation-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final",
+      "beforeHash": "de32d74e2250727615b2d20f86e9388a86d5631e1ff7b4fb00c9d1fd0a771cf9",
+      "afterHash": "e19a35d5037e012f5f08de013698d408f3615fc0b52558a5ce4bf735f66cfa5a"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9111",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle",
+      "beforeHash": "6aef94cec3cea724ebda5eed10b49551e41b86acc449e0c9328673956969dcb5",
+      "afterHash": "e1a4814fe30fa299f08ee0ab586c65b874946712aa231ab0b8d5eaf975f913e5"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9109",
+      "canonicalConceptId": "cpi-bias",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening",
+      "beforeHash": "ca8dafe414af77340b0e02c641464df436383bb4fabdd01e00b5bca21cb944de",
+      "afterHash": "faca70415d4e80566128359ba745e61eaa3577bb552d699b23e691bb4ff722e1"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9110",
+      "canonicalConceptId": "cpi-bias",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle",
+      "beforeHash": "76d56842ef53716558f2a8d3c273d2f9098bcd9996fdebd61b0618ebebb69c8c",
+      "afterHash": "e7605f116fa17a6114846dcbcd2929c95fa98702d8a2be7b79d2ecfcf1375817"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9115",
+      "canonicalConceptId": "cpi-bias",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final",
+      "beforeHash": "cb59ceea3a08f745b2d737bcb3cb1d903c82e48ecfd526fc009d737753545fc3",
+      "afterHash": "1f221800cce658c4e0101c76158fdf73c2f1f6f23aa12380ee0a7ffe11027fd7"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9112",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening",
+      "beforeHash": "4dab5434584a463dae13677af78dafcf78407e647798a1e0ddd17a06a8ed3bdb",
+      "afterHash": "498d7827825f3fa5e90ffc6746c623e77c17cb953b35b5d574316e4fc609191c"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9113",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle",
+      "beforeHash": "f2fdb4d529ac86a112da2e701a5448df3923dbe4703a0ddeedd8b7fd9d747347",
+      "afterHash": "616891bd67b88fe5c24e8d7c7f4ab160d6dd52ab16357ee038d920638e74df17"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9114",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle",
+      "beforeHash": "a31d4b335305f1257e445b45d60926ee13ae03823cf57f5a4fb2705d1be6093c",
+      "afterHash": "06a7e7f79a38589830288f42b1ab90af6f89e868947ef71908653f3f3725c5a6"
+    },
+    {
+      "questionId": "PM2B2-DEF-LB-001",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "action": "QUALITY_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Balances answer length without changing the stem or correct answer.",
+      "beforeHash": "0dee4331cd38561dc480f97f8c9bf08abeea8b36208b17e3c31a3c0c9ef9fa00",
+      "afterHash": "024ad4fd5ab0f00d87d73c529394f0928ca342db53705c88a9b7e074240438d2"
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-002",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "QUALITY_FIX",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Balances answer length without changing the stem or correct answer.",
+      "beforeHash": "5e5fad39863790c6c1aa72db6177b36c0376477f8482abe9432ddb72a8c5c77c",
+      "afterHash": "42bc4586628b7b2c2118b6ac1d60702457efcae6bec8d7a71d92b3cd8284911e"
+    },
+    {
+      "questionId": "PM2B2-INDEX-E-003",
+      "canonicalConceptId": "indexing-and-real-values",
+      "action": "QUALITY_FIX",
+      "oldPool": "easy",
+      "newPool": "easy",
+      "reason": "Balances answer length without changing the stem or correct answer.",
+      "beforeHash": "7081957baee24b08bf739b3648f1b0ecff824ed5518f590ad51b8b89f51b720f",
+      "afterHash": "57864ec5bbef216521b316e3f650bac82edfde4aa5604f2ab4eb59f467ebeb6d"
+    },
+    {
+      "questionId": "PM2B2-RNI-FB-004",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "action": "QUALITY_FIX",
+      "oldPool": "finalBoss",
+      "newPool": "finalBoss",
+      "reason": "Balances answer length without changing the stem or correct answer.",
+      "beforeHash": "63303af0867071e1be172f68a5e51a120897c30ae20ccdb3dbec4ab14b699345",
+      "afterHash": "ffbd67932027af085e95093dc87c00091ee8f721be7d060315702d95390ccaf9"
+    }
+  ],
+  "summary": {
+    "added": 70,
+    "bridgeRewritten": 2,
+    "bossStageFixed": 10,
+    "removed": 0,
+    "relocated": 0,
+    "qualityFixed": 4
+  },
+  "authoringPolicy": {
+    "soloFloors": {
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendary": 6,
+      "legendaryBoss": 3,
+      "repair": 1,
+      "bridge": 1
+    },
+    "bridgeChain": [
+      "cpi-and-inflation-measurement",
+      "cpi-versus-gdp-deflator",
+      "cpi-bias",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates"
+    ],
+    "maximumAdditions": 78,
+    "actualAdditions": 70,
+    "noGraphs": true,
+    "cpiQuestionContentProtected": true
+  },
+  "quality": {
+    "answerLengthAudit": {
+      "cpi-versus-gdp-deflator::easy": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.75
+      },
+      "cpi-versus-gdp-deflator::medium": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.522
+      },
+      "cpi-versus-gdp-deflator::hard": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.041
+      },
+      "cpi-versus-gdp-deflator::legendary": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.212
+      },
+      "cpi-versus-gdp-deflator::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.095
+      },
+      "cpi-versus-gdp-deflator::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.22
+      },
+      "cpi-versus-gdp-deflator::legendaryBoss": {
+        "records": 2,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.5,
+        "meanCorrectDistractorRatio": 1.171
+      },
+      "cpi-bias::easy": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.844
+      },
+      "cpi-bias::medium": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.857
+      },
+      "cpi-bias::hard": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1
+      },
+      "cpi-bias::legendary": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.024
+      },
+      "cpi-bias::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.031
+      },
+      "cpi-bias::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.169
+      },
+      "cpi-bias::bridge": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.125
+      },
+      "indexing-and-real-values::easy": {
+        "records": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestShare": 0.4,
+        "meanCorrectDistractorRatio": 1.261
+      },
+      "indexing-and-real-values::medium": {
+        "records": 4,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.689
+      },
+      "indexing-and-real-values::hard": {
+        "records": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.2,
+        "meanCorrectDistractorRatio": 0.835
+      },
+      "indexing-and-real-values::legendary": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.209
+      },
+      "indexing-and-real-values::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 0.933
+      },
+      "indexing-and-real-values::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.062
+      },
+      "indexing-and-real-values::legendaryBoss": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.031
+      },
+      "real-versus-nominal-interest-rates::easy": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.667
+      },
+      "real-versus-nominal-interest-rates::medium": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.818
+      },
+      "real-versus-nominal-interest-rates::hard": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.125
+      },
+      "real-versus-nominal-interest-rates::legendary": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.147
+      },
+      "real-versus-nominal-interest-rates::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.045
+      },
+      "real-versus-nominal-interest-rates::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.277
+      },
+      "real-versus-nominal-interest-rates::legendaryBoss": {
+        "records": 2,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.5,
+        "meanCorrectDistractorRatio": 1.125
+      }
+    },
+    "nearDuplicates": [],
+    "repeatedAnswerSets": [],
+    "weakDistractors": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "phase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+  "generatedAt": "2026-08-10T23:55:00.000Z",
+  "passed": true,
+  "pending": false,
+  "summary": "Full-family and Indexing-only packages passed bounded browser QA across start, five-mode menus, Standard and Legendary play, checkpoint rendering, remediation/Bridge transition, and Standard save/resume with zero console warnings or errors.",
+  "packages": {
+    "family": {
+      "start": true,
+      "fiveModeMenu": true,
+      "standardGameplay": true,
+      "legendaryStart": true,
+      "checkpointRooms": [10, 20, 30],
+      "checkpointOneRendered": true,
+      "remediationTransitionRendered": true,
+      "bridgeTransitionStaticallyReachable": true,
+      "saveResume": {
+        "savedRoom": 2,
+        "continueButtonVisible": true,
+        "resumedRoom": 2
+      }
+    },
+    "indexingOnly": {
+      "start": true,
+      "fiveModeMenu": true,
+      "standardGameplay": true,
+      "legendaryStart": true,
+      "checkpointRooms": [10, 20, 30]
+    }
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "nonBlockingIssues": [
+    "Nine pre-existing F3 Legendary Boss records lack valid bossStage metadata; cross-family configuration B excluded those records in memory only and did not modify F3 source banks."
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "phase": "phaseM2b2-inflation-real-values-family-maturation-v1",
+  "generatedAt": "2026-08-10T23:30:00.000Z",
+  "scope": {
+    "family": "F2 — Inflation Measurement and Real Values",
+    "protectedConceptId": "cpi-and-inflation-measurement",
+    "modifiedCanonicalConceptIds": [
+      "cpi-versus-gdp-deflator",
+      "cpi-bias",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates"
+    ]
+  },
+  "before": {
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1",
+    "canonicalQuestionCount": 6996,
+    "counts": {
+      "cpi-and-inflation-measurement": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 21,
+        "integration": 0,
+        "easyBoss": 6,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 2,
+        "total": 60
+      },
+      "cpi-versus-gdp-deflator": {
+        "easy": 4,
+        "medium": 4,
+        "hard": 4,
+        "elite": 4,
+        "legendary": 4,
+        "calculation": 0,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 1,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "total": 27
+      },
+      "cpi-bias": {
+        "easy": 4,
+        "medium": 5,
+        "hard": 5,
+        "elite": 5,
+        "legendary": 4,
+        "calculation": 0,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 2,
+        "total": 35
+      },
+      "indexing-and-real-values": {
+        "easy": 1,
+        "medium": 2,
+        "hard": 1,
+        "elite": 3,
+        "legendary": 3,
+        "calculation": 7,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 2,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "total": 25
+      },
+      "real-versus-nominal-interest-rates": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 3,
+        "elite": 4,
+        "legendary": 5,
+        "calculation": 3,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 1,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "total": 28
+      }
+    },
+    "familyCounts": {
+      "easy": 18,
+      "medium": 20,
+      "hard": 19,
+      "elite": 20,
+      "legendary": 22,
+      "calculation": 31,
+      "integration": 0,
+      "easyBoss": 18,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 10,
+      "repair": 14,
+      "repairSeed": 0,
+      "bridge": 7,
+      "total": 175
+    },
+    "protectedAggregateSha256": "5aa66750d7abd691591f82b96c86a448989e16e03a106b449e27d017f260af77",
+    "cpiContentSha256": "616b997043dc87b98d4ac304a87d94f4d5c4d60ed55e139256265457d9f9510d"
+  },
+  "after": {
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1",
+    "canonicalQuestionCount": 7066,
+    "librarySha256": "ea45c7f1b9b8f1be281c56c26e3cc996d6cb94847d8639f19607746a967fdaf7",
+    "counts": {
+      "cpi-and-inflation-measurement": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 21,
+        "integration": 0,
+        "easyBoss": 6,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 2,
+        "total": 60
+      },
+      "cpi-versus-gdp-deflator": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 0,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "total": 43
+      },
+      "cpi-bias": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 5,
+        "legendary": 6,
+        "calculation": 0,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 2,
+        "total": 47
+      },
+      "indexing-and-real-values": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 6,
+        "calculation": 7,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "total": 49
+      },
+      "real-versus-nominal-interest-rates": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 3,
+        "integration": 0,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 2,
+        "repairSeed": 0,
+        "bridge": 1,
+        "total": 46
+      }
+    },
+    "familyCounts": {
+      "easy": 30,
+      "medium": 30,
+      "hard": 30,
+      "elite": 20,
+      "legendary": 30,
+      "calculation": 31,
+      "integration": 0,
+      "easyBoss": 18,
+      "mediumBoss": 15,
+      "finalBoss": 15,
+      "legendaryBoss": 15,
+      "repair": 14,
+      "repairSeed": 0,
+      "bridge": 7,
+      "total": 245
+    },
+    "protectedMismatchCount": 0,
+    "cpiContentSha256": "616b997043dc87b98d4ac304a87d94f4d5c4d60ed55e139256265457d9f9510d"
+  },
+  "protectedSummary": {
+    "canonicalBanksChecked": 68,
+    "nonF2Mismatches": [],
+    "cpiQuestionContentUnchanged": true
+  },
+  "quality": {
+    "answerLengthAudit": {
+      "cpi-versus-gdp-deflator::easy": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.75
+      },
+      "cpi-versus-gdp-deflator::medium": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.522
+      },
+      "cpi-versus-gdp-deflator::hard": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.041
+      },
+      "cpi-versus-gdp-deflator::legendary": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.212
+      },
+      "cpi-versus-gdp-deflator::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.095
+      },
+      "cpi-versus-gdp-deflator::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.22
+      },
+      "cpi-versus-gdp-deflator::legendaryBoss": {
+        "records": 2,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.5,
+        "meanCorrectDistractorRatio": 1.171
+      },
+      "cpi-bias::easy": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.844
+      },
+      "cpi-bias::medium": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.857
+      },
+      "cpi-bias::hard": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1
+      },
+      "cpi-bias::legendary": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.024
+      },
+      "cpi-bias::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.031
+      },
+      "cpi-bias::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.169
+      },
+      "cpi-bias::bridge": {
+        "records": 2,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.125
+      },
+      "indexing-and-real-values::easy": {
+        "records": 5,
+        "uniquelyLongestCorrect": 2,
+        "uniquelyLongestShare": 0.4,
+        "meanCorrectDistractorRatio": 1.261
+      },
+      "indexing-and-real-values::medium": {
+        "records": 4,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.689
+      },
+      "indexing-and-real-values::hard": {
+        "records": 5,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.2,
+        "meanCorrectDistractorRatio": 0.835
+      },
+      "indexing-and-real-values::legendary": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.209
+      },
+      "indexing-and-real-values::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 0.933
+      },
+      "indexing-and-real-values::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.062
+      },
+      "indexing-and-real-values::legendaryBoss": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.031
+      },
+      "real-versus-nominal-interest-rates::easy": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.667
+      },
+      "real-versus-nominal-interest-rates::medium": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 0.818
+      },
+      "real-versus-nominal-interest-rates::hard": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.125
+      },
+      "real-versus-nominal-interest-rates::legendary": {
+        "records": 1,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.147
+      },
+      "real-versus-nominal-interest-rates::mediumBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 0,
+        "uniquelyLongestShare": 0,
+        "meanCorrectDistractorRatio": 1.045
+      },
+      "real-versus-nominal-interest-rates::finalBoss": {
+        "records": 3,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.333,
+        "meanCorrectDistractorRatio": 1.277
+      },
+      "real-versus-nominal-interest-rates::legendaryBoss": {
+        "records": 2,
+        "uniquelyLongestCorrect": 1,
+        "uniquelyLongestShare": 0.5,
+        "meanCorrectDistractorRatio": 1.125
+      }
+    },
+    "nearDuplicates": [],
+    "repeatedAnswerSets": [],
+    "weakDistractors": []
+  },
+  "qualityFixes": 4
+}
