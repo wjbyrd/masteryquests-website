@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "summary": "Seven generated packages exercised all five supported modes; every mode rendered a question, handled an answer, and produced zero console warnings or errors. PPF graph assets resolved in the browser after production-equivalent asset embedding.",
+  "packages": {
+    "micro-versus-macro": { "fiveModes": true, "answerHandling": true, "consoleWarnings": 0, "consoleErrors": 0 },
+    "positive-versus-normative-analysis": { "fiveModes": true, "answerHandling": true, "consoleWarnings": 0, "consoleErrors": 0 },
+    "economist-policy-role": { "fiveModes": true, "answerHandling": true, "consoleWarnings": 0, "consoleErrors": 0 },
+    "market-failures": { "fiveModes": true, "answerHandling": true, "consoleWarnings": 0, "consoleErrors": 0 },
+    "production-possibilities-frontier": { "fiveModes": true, "answerHandling": true, "graphAssetsResolved": true, "consoleWarnings": 0, "consoleErrors": 0 },
+    "elasticity": { "fiveModes": true, "answerHandling": true, "consoleWarnings": 0, "consoleErrors": 0 },
+    "integrated-economic-analysis": { "fiveModes": true, "answerHandling": true, "role": "mixed", "consoleWarnings": 0, "consoleErrors": 0 }
+  },
+  "integratedRole": "mixed",
+  "console": { "warnings": 0, "errors": 0 }
+}

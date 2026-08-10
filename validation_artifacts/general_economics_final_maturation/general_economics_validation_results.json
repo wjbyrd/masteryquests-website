@@ -1,0 +1,2960 @@
+{
+  "phase": "phase7.7-general-economics-final-maturation-v1",
+  "profiles": {
+    "scarcity-and-tradeoffs": "Full Standalone",
+    "opportunity-cost": "Full Standalone",
+    "marginal-analysis": "Full Standalone",
+    "incentives": "Full Standalone",
+    "gains-from-trade": "Full Standalone",
+    "models-and-assumptions": "Supporting / Light-Touch",
+    "micro-versus-macro": "Supporting / Light-Touch",
+    "positive-versus-normative-analysis": "Supporting / Light-Touch",
+    "economist-policy-role": "Supporting / Light-Touch",
+    "market-failures": "Supporting / Light-Touch",
+    "production-possibilities-frontier": "Targeted Mature Standalone",
+    "elasticity": "Already Mature — Verified",
+    "integrated-economic-analysis": "Integrated Special Case"
+  },
+  "finalCounts": {
+    "scarcity-and-tradeoffs": {
+      "total": 96,
+      "easy": 10,
+      "medium": 10,
+      "hard": 10,
+      "elite": 4,
+      "legendary": 27,
+      "easyBoss": 4,
+      "mediumBoss": 4,
+      "finalBoss": 4,
+      "legendaryBoss": 9,
+      "repair": 7,
+      "repairSeed": 3,
+      "bridge": 4,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "opportunity-cost": {
+      "total": 108,
+      "easy": 10,
+      "medium": 12,
+      "hard": 12,
+      "elite": 6,
+      "legendary": 27,
+      "easyBoss": 5,
+      "mediumBoss": 5,
+      "finalBoss": 5,
+      "legendaryBoss": 9,
+      "repair": 8,
+      "repairSeed": 1,
+      "bridge": 6,
+      "graph": 0,
+      "calculation": 2,
+      "integration": 0
+    },
+    "marginal-analysis": {
+      "total": 108,
+      "easy": 10,
+      "medium": 12,
+      "hard": 12,
+      "elite": 6,
+      "legendary": 27,
+      "easyBoss": 5,
+      "mediumBoss": 5,
+      "finalBoss": 5,
+      "legendaryBoss": 9,
+      "repair": 8,
+      "repairSeed": 1,
+      "bridge": 6,
+      "graph": 0,
+      "calculation": 2,
+      "integration": 0
+    },
+    "incentives": {
+      "total": 95,
+      "easy": 10,
+      "medium": 10,
+      "hard": 10,
+      "elite": 4,
+      "legendary": 27,
+      "easyBoss": 4,
+      "mediumBoss": 4,
+      "finalBoss": 4,
+      "legendaryBoss": 9,
+      "repair": 7,
+      "repairSeed": 1,
+      "bridge": 5,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "gains-from-trade": {
+      "total": 106,
+      "easy": 10,
+      "medium": 12,
+      "hard": 12,
+      "elite": 6,
+      "legendary": 27,
+      "easyBoss": 5,
+      "mediumBoss": 5,
+      "finalBoss": 5,
+      "legendaryBoss": 9,
+      "repair": 8,
+      "repairSeed": 1,
+      "bridge": 6,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "models-and-assumptions": {
+      "total": 66,
+      "easy": 8,
+      "medium": 8,
+      "hard": 8,
+      "elite": 4,
+      "legendary": 12,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 6,
+      "repair": 6,
+      "repairSeed": 1,
+      "bridge": 4,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "micro-versus-macro": {
+      "total": 61,
+      "easy": 8,
+      "medium": 8,
+      "hard": 8,
+      "elite": 3,
+      "legendary": 10,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 6,
+      "repairSeed": 1,
+      "bridge": 4,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "positive-versus-normative-analysis": {
+      "total": 60,
+      "easy": 8,
+      "medium": 8,
+      "hard": 8,
+      "elite": 3,
+      "legendary": 10,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 4,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "economist-policy-role": {
+      "total": 61,
+      "easy": 8,
+      "medium": 8,
+      "hard": 8,
+      "elite": 3,
+      "legendary": 10,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 4,
+      "repair": 6,
+      "repairSeed": 1,
+      "bridge": 4,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "market-failures": {
+      "total": 67,
+      "easy": 8,
+      "medium": 8,
+      "hard": 8,
+      "elite": 4,
+      "legendary": 12,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 5,
+      "repair": 7,
+      "repairSeed": 2,
+      "bridge": 4,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    },
+    "production-possibilities-frontier": {
+      "total": 84,
+      "easy": 8,
+      "medium": 9,
+      "hard": 9,
+      "elite": 5,
+      "legendary": 13,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 5,
+      "repair": 7,
+      "repairSeed": 0,
+      "bridge": 8,
+      "graph": 23,
+      "calculation": 11,
+      "integration": 0
+    },
+    "elasticity": {
+      "total": 418,
+      "easy": 39,
+      "medium": 39,
+      "hard": 39,
+      "elite": 38,
+      "legendary": 97,
+      "easyBoss": 20,
+      "mediumBoss": 20,
+      "finalBoss": 20,
+      "legendaryBoss": 36,
+      "repair": 20,
+      "repairSeed": 0,
+      "bridge": 20,
+      "graph": 48,
+      "calculation": 30,
+      "integration": 0
+    },
+    "integrated-economic-analysis": {
+      "total": 104,
+      "easy": 0,
+      "medium": 0,
+      "hard": 0,
+      "elite": 5,
+      "legendary": 7,
+      "easyBoss": 8,
+      "mediumBoss": 24,
+      "finalBoss": 24,
+      "legendaryBoss": 24,
+      "repair": 6,
+      "repairSeed": 0,
+      "bridge": 6,
+      "graph": 0,
+      "calculation": 0,
+      "integration": 0
+    }
+  },
+  "qualityResults": {
+    "micro-versus-macro": {
+      "length": {
+        "easy": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 0.953
+        },
+        "medium": {
+          "count": 8,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 0.96
+        },
+        "hard": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 1.316
+        },
+        "elite": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.3
+        },
+        "legendary": {
+          "count": 10,
+          "longest": 5,
+          "positions": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.339
+        },
+        "easyBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.7
+        },
+        "mediumBoss": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.054
+        },
+        "finalBoss": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.073
+        },
+        "legendaryBoss": {
+          "count": 4,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 1.11
+        },
+        "repair": {
+          "count": 6,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.321
+        },
+        "bridge": {
+          "count": 4,
+          "longest": 2,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.285
+        }
+      },
+      "exact": [],
+      "near": [],
+      "repeatedAnswerSets": []
+    },
+    "positive-versus-normative-analysis": {
+      "length": {
+        "easy": {
+          "count": 8,
+          "longest": 1,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.125,
+          "meanCorrectToDistractorRatio": 1.019
+        },
+        "medium": {
+          "count": 8,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 0.881
+        },
+        "hard": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 0.967
+        },
+        "elite": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 1.088
+        },
+        "legendary": {
+          "count": 10,
+          "longest": 5,
+          "positions": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.308
+        },
+        "easyBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 1.087
+        },
+        "mediumBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.731
+        },
+        "finalBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.867
+        },
+        "legendaryBoss": {
+          "count": 4,
+          "longest": 2,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.303
+        },
+        "repair": {
+          "count": 6,
+          "longest": 0,
+          "positions": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.899
+        },
+        "bridge": {
+          "count": 4,
+          "longest": 2,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.173
+        }
+      },
+      "exact": [],
+      "near": [],
+      "repeatedAnswerSets": []
+    },
+    "economist-policy-role": {
+      "length": {
+        "easy": {
+          "count": 8,
+          "longest": 1,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.125,
+          "meanCorrectToDistractorRatio": 1.025
+        },
+        "medium": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 1.09
+        },
+        "hard": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 1.167
+        },
+        "elite": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.996
+        },
+        "legendary": {
+          "count": 10,
+          "longest": 3,
+          "positions": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.3,
+          "meanCorrectToDistractorRatio": 1.175
+        },
+        "easyBoss": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 0.871
+        },
+        "mediumBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.721
+        },
+        "finalBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.816
+        },
+        "legendaryBoss": {
+          "count": 4,
+          "longest": 2,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.051
+        },
+        "repair": {
+          "count": 6,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.221
+        },
+        "bridge": {
+          "count": 4,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 1.135
+        }
+      },
+      "exact": [],
+      "near": [],
+      "repeatedAnswerSets": []
+    },
+    "market-failures": {
+      "length": {
+        "easy": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 1.028
+        },
+        "medium": {
+          "count": 8,
+          "longest": 4,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.094
+        },
+        "hard": {
+          "count": 8,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.375,
+          "meanCorrectToDistractorRatio": 1.315
+        },
+        "elite": {
+          "count": 4,
+          "longest": 2,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.207
+        },
+        "legendary": {
+          "count": 12,
+          "longest": 4,
+          "positions": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.282
+        },
+        "easyBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 1.147
+        },
+        "mediumBoss": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.193
+        },
+        "finalBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 0.803
+        },
+        "legendaryBoss": {
+          "count": 5,
+          "longest": 1,
+          "positions": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.2,
+          "meanCorrectToDistractorRatio": 1.157
+        },
+        "repair": {
+          "count": 7,
+          "longest": 3,
+          "positions": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "uniquelyLongestRate": 0.429,
+          "meanCorrectToDistractorRatio": 1.248
+        },
+        "bridge": {
+          "count": 4,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 1.033
+        }
+      },
+      "exact": [],
+      "near": [],
+      "repeatedAnswerSets": []
+    },
+    "production-possibilities-frontier": {
+      "length": {
+        "easy": {
+          "count": 8,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 1.189
+        },
+        "medium": {
+          "count": 9,
+          "longest": 2,
+          "positions": [
+            3,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.222,
+          "meanCorrectToDistractorRatio": 1.215
+        },
+        "hard": {
+          "count": 9,
+          "longest": 4,
+          "positions": [
+            3,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.444,
+          "meanCorrectToDistractorRatio": 1.243
+        },
+        "elite": {
+          "count": 5,
+          "longest": 2,
+          "positions": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.4,
+          "meanCorrectToDistractorRatio": 1.2
+        },
+        "legendary": {
+          "count": 13,
+          "longest": 2,
+          "positions": [
+            4,
+            3,
+            3,
+            3
+          ],
+          "uniquelyLongestRate": 0.154,
+          "meanCorrectToDistractorRatio": 1.112
+        },
+        "calculation": {
+          "count": 11,
+          "longest": 2,
+          "positions": [
+            3,
+            3,
+            3,
+            2
+          ],
+          "uniquelyLongestRate": 0.182,
+          "meanCorrectToDistractorRatio": 1.05
+        },
+        "easyBoss": {
+          "count": 3,
+          "longest": 0,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0,
+          "meanCorrectToDistractorRatio": 1.133
+        },
+        "mediumBoss": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.087
+        },
+        "finalBoss": {
+          "count": 3,
+          "longest": 1,
+          "positions": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.121
+        },
+        "legendaryBoss": {
+          "count": 5,
+          "longest": 2,
+          "positions": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.4,
+          "meanCorrectToDistractorRatio": 1.145
+        },
+        "repair": {
+          "count": 7,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "uniquelyLongestRate": 0.286,
+          "meanCorrectToDistractorRatio": 1.255
+        },
+        "bridge": {
+          "count": 8,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 1.109
+        }
+      },
+      "exact": [],
+      "near": [],
+      "repeatedAnswerSets": []
+    },
+    "integrated-economic-analysis": {
+      "length": {
+        "elite": {
+          "count": 5,
+          "longest": 1,
+          "positions": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.2,
+          "meanCorrectToDistractorRatio": 0.966
+        },
+        "legendary": {
+          "count": 7,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "uniquelyLongestRate": 0.286,
+          "meanCorrectToDistractorRatio": 1.318
+        },
+        "easyBoss": {
+          "count": 8,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "uniquelyLongestRate": 0.25,
+          "meanCorrectToDistractorRatio": 1.255
+        },
+        "finalBoss": {
+          "count": 24,
+          "longest": 12,
+          "positions": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.343
+        },
+        "mediumBoss": {
+          "count": 24,
+          "longest": 10,
+          "positions": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "uniquelyLongestRate": 0.417,
+          "meanCorrectToDistractorRatio": 1.28
+        },
+        "legendaryBoss": {
+          "count": 24,
+          "longest": 12,
+          "positions": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "uniquelyLongestRate": 0.5,
+          "meanCorrectToDistractorRatio": 1.195
+        },
+        "repair": {
+          "count": 6,
+          "longest": 2,
+          "positions": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.333,
+          "meanCorrectToDistractorRatio": 1.2
+        },
+        "bridge": {
+          "count": 6,
+          "longest": 1,
+          "positions": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "uniquelyLongestRate": 0.167,
+          "meanCorrectToDistractorRatio": 1.082
+        }
+      },
+      "exact": [],
+      "near": [],
+      "repeatedAnswerSets": []
+    }
+  },
+  "protectedIntegrity": {
+    "aggregate-demand": {
+      "before": "f5f3833ce35f8d82337fab4fb24c4e739d97adc4adb9acbbe1d8678c97ea6af3",
+      "after": "f5f3833ce35f8d82337fab4fb24c4e739d97adc4adb9acbbe1d8678c97ea6af3",
+      "unchanged": true
+    },
+    "aggregate-supply": {
+      "before": "08165f895b4674960a20c2b4213e781cfb29ee9dee06c11862e450b174cfe38e",
+      "after": "08165f895b4674960a20c2b4213e781cfb29ee9dee06c11862e450b174cfe38e",
+      "unchanged": true
+    },
+    "bank-money-creation": {
+      "before": "6499dc6c1f2d9809403cbc15055e60edb5a891f663cd090be2c6f1fd1273e824",
+      "after": "6499dc6c1f2d9809403cbc15055e60edb5a891f663cd090be2c6f1fd1273e824",
+      "unchanged": true
+    },
+    "binding-price-ceilings": {
+      "before": "e4e031cb9f27eab092717fd3506da2aa7734a61cb69cfb88c027247ef72a0d47",
+      "after": "e4e031cb9f27eab092717fd3506da2aa7734a61cb69cfb88c027247ef72a0d47",
+      "unchanged": true
+    },
+    "binding-price-floors": {
+      "before": "73c30cd521e48ceb1b607a3b29a2157647c38e90f528c69cf5d7aa8c62f78bab",
+      "after": "73c30cd521e48ceb1b607a3b29a2157647c38e90f528c69cf5d7aa8c62f78bab",
+      "unchanged": true
+    },
+    "central-bank-and-federal-reserve": {
+      "before": "f1c387369ab725df6dbdef337c792b6efd5b3a2e7d25f4343206582b95544ad8",
+      "after": "f1c387369ab725df6dbdef337c792b6efd5b3a2e7d25f4343206582b95544ad8",
+      "unchanged": true
+    },
+    "competitive-markets": {
+      "before": "0b08708c3f7f407e3579a188ea6be51ee7fa9b38adf1871fb32a51532899f416",
+      "after": "0b08708c3f7f407e3579a188ea6be51ee7fa9b38adf1871fb32a51532899f416",
+      "unchanged": true
+    },
+    "consumer-and-producer-surplus": {
+      "before": "a5e3b84333beac97055df48efae3d1d380c1c308463c5a5a2302fe2cf95a64eb",
+      "after": "a5e3b84333beac97055df48efae3d1d380c1c308463c5a5a2302fe2cf95a64eb",
+      "unchanged": true
+    },
+    "costs-of-production": {
+      "before": "36209035400daead546b47182d052d88dbfffc4fd681c3c7732723502e5bb88e",
+      "after": "36209035400daead546b47182d052d88dbfffc4fd681c3c7732723502e5bb88e",
+      "unchanged": true
+    },
+    "cpi-and-inflation-measurement": {
+      "before": "4710aba5648d1efd682469fe9d6de56c0ae7a374e03f3aed7818d0eb23408d94",
+      "after": "4710aba5648d1efd682469fe9d6de56c0ae7a374e03f3aed7818d0eb23408d94",
+      "unchanged": true
+    },
+    "cpi-bias": {
+      "before": "e0e599201e80a790f11b0925b8b2e7b723128212e731f90638be890deee83a50",
+      "after": "e0e599201e80a790f11b0925b8b2e7b723128212e731f90638be890deee83a50",
+      "unchanged": true
+    },
+    "cpi-versus-gdp-deflator": {
+      "before": "cfffdb74fd3fca2eee40b4a77452bc7e07e6f90a33181d31f21f3bf4d4a48978",
+      "after": "cfffdb74fd3fca2eee40b4a77452bc7e07e6f90a33181d31f21f3bf4d4a48978",
+      "unchanged": true
+    },
+    "demand": {
+      "before": "678f5d287352ec109769813e0a4f14735a18d0ccd5eae2f64fcdaf2329594bc4",
+      "after": "678f5d287352ec109769813e0a4f14735a18d0ccd5eae2f64fcdaf2329594bc4",
+      "unchanged": true
+    },
+    "disinflation-and-policy": {
+      "before": "362b713bd5f102e269161c25acb3e88dbe23ef7330d72be0f5007c26fe55f908",
+      "after": "362b713bd5f102e269161c25acb3e88dbe23ef7330d72be0f5007c26fe55f908",
+      "unchanged": true
+    },
+    "economic-growth-policy": {
+      "before": "8e0557685bca1b033db2567dba95c7cb91cbf90112da1f81f6abec492e065be4",
+      "after": "8e0557685bca1b033db2567dba95c7cb91cbf90112da1f81f6abec492e065be4",
+      "unchanged": true
+    },
+    "elasticity": {
+      "before": "c6b3bc9c3e86cc14a53a088c4d8631cef59c06c0c637823741a87fbb29966f5e",
+      "after": "c6b3bc9c3e86cc14a53a088c4d8631cef59c06c0c637823741a87fbb29966f5e",
+      "unchanged": true
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "before": "396932ab97fa8814331f341791a8fb9863f0e09a33cb5421cad94f79bd85672d",
+      "after": "396932ab97fa8814331f341791a8fb9863f0e09a33cb5421cad94f79bd85672d",
+      "unchanged": true
+    },
+    "fiscal-policy-and-aggregate-demand": {
+      "before": "a11f16cae0f5ee2af674e8b0a62135e4dcf774507a190d660ee8c09376dc8445",
+      "after": "a11f16cae0f5ee2af674e8b0a62135e4dcf774507a190d660ee8c09376dc8445",
+      "unchanged": true
+    },
+    "fisher-effect": {
+      "before": "d0add98fb302d009d7884dcd9f7d9b28e63e29dc98f8bdc1d5c69088b76910c0",
+      "after": "d0add98fb302d009d7884dcd9f7d9b28e63e29dc98f8bdc1d5c69088b76910c0",
+      "unchanged": true
+    },
+    "gains-from-trade": {
+      "before": "a22cfedcf0d0895fae50eedd4a4637bddf25ab27a95c53ae575f8cf2d4f8a8a6",
+      "after": "a22cfedcf0d0895fae50eedd4a4637bddf25ab27a95c53ae575f8cf2d4f8a8a6",
+      "unchanged": true
+    },
+    "gdp-components": {
+      "before": "23d2abfd8d086e1f8b2e922b55a4dbe3d2fcad09e28363d39f1aed7e8c868c42",
+      "after": "23d2abfd8d086e1f8b2e922b55a4dbe3d2fcad09e28363d39f1aed7e8c868c42",
+      "unchanged": true
+    },
+    "gdp-measurement": {
+      "before": "bf1d4460079584f2859f67ac449ea81eff4d3a3842807afdae3827c46f808698",
+      "after": "bf1d4460079584f2859f67ac449ea81eff4d3a3842807afdae3827c46f808698",
+      "unchanged": true
+    },
+    "incentives": {
+      "before": "f0bd62ce9b800c35538f370206d6ee2a78da62f4db6b05c83711e97d7b61877f",
+      "after": "f0bd62ce9b800c35538f370206d6ee2a78da62f4db6b05c83711e97d7b61877f",
+      "unchanged": true
+    },
+    "indexing-and-real-values": {
+      "before": "30c80225621317568988733ef7b7eae3d035b51a24641300a561ecd71bba8698",
+      "after": "30c80225621317568988733ef7b7eae3d035b51a24641300a561ecd71bba8698",
+      "unchanged": true
+    },
+    "inflation-costs": {
+      "before": "ac7702118999a22ef7fb6a09424565707751b0fcdea2f86f3d7e95095f7e0f28",
+      "after": "ac7702118999a22ef7fb6a09424565707751b0fcdea2f86f3d7e95095f7e0f28",
+      "unchanged": true
+    },
+    "inflation-tax-and-deflation": {
+      "before": "6ad4db90d2fb6258cd47f2ee3d09b6c0d944bbf3549c9c4faa7fc887e4e3e5d8",
+      "after": "6ad4db90d2fb6258cd47f2ee3d09b6c0d944bbf3549c9c4faa7fc887e4e3e5d8",
+      "unchanged": true
+    },
+    "integrated-macroeconomic-analysis": {
+      "before": "013d27bbeb2eca2bcc02baa75019bf9a46856f7601a861c058bead7d016a7d6f",
+      "after": "013d27bbeb2eca2bcc02baa75019bf9a46856f7601a861c058bead7d016a7d6f",
+      "unchanged": true
+    },
+    "international-trade-and-trade-policy": {
+      "before": "015c3c983c6f6fa75d6a04472e9fabcbbc1fd835cb9408340289402942dbb1df",
+      "after": "015c3c983c6f6fa75d6a04472e9fabcbbc1fd835cb9408340289402942dbb1df",
+      "unchanged": true
+    },
+    "labor-market-institutions": {
+      "before": "ac8e19ca723aefa9fbf6f87291e177c1dae8565d62953938d2b0edf9c5274e64",
+      "after": "ac8e19ca723aefa9fbf6f87291e177c1dae8565d62953938d2b0edf9c5274e64",
+      "unchanged": true
+    },
+    "limits-of-gdp": {
+      "before": "3cbd1da5e79e33ecdc0da0300d9fd4b23464a1d9f5a4478c22513bd824c71b42",
+      "after": "3cbd1da5e79e33ecdc0da0300d9fd4b23464a1d9f5a4478c22513bd824c71b42",
+      "unchanged": true
+    },
+    "liquidity-preference-and-money-market": {
+      "before": "b75e58155cecaefb6c80025aba6930b87aa06fa4f85c9368810846eed0740eec",
+      "after": "b75e58155cecaefb6c80025aba6930b87aa06fa4f85c9368810846eed0740eec",
+      "unchanged": true
+    },
+    "living-standards-and-growth": {
+      "before": "2b1c6cdb752a96cb1aaeb9750ba47476314d64bfe2b650caa6fef5806d733bf3",
+      "after": "2b1c6cdb752a96cb1aaeb9750ba47476314d64bfe2b650caa6fef5806d733bf3",
+      "unchanged": true
+    },
+    "long-run-macroeconomic-adjustment": {
+      "before": "e3a20d0a3fca6482b03a333569182d78ffb6446d26812f81ed524cb7a1c797b7",
+      "after": "e3a20d0a3fca6482b03a333569182d78ffb6446d26812f81ed524cb7a1c797b7",
+      "unchanged": true
+    },
+    "long-run-phillips-curve": {
+      "before": "a96fbf917103564376934a308a201ba5ea9dd9c64a7a209e8fcd0c923955a677",
+      "after": "a96fbf917103564376934a308a201ba5ea9dd9c64a7a209e8fcd0c923955a677",
+      "unchanged": true
+    },
+    "macroeconomic-equilibrium-and-shocks": {
+      "before": "bdf7ed1199d1d3627d61efd0621cca7ecffe62277370e3c8ee1c646eafd12735",
+      "after": "bdf7ed1199d1d3627d61efd0621cca7ecffe62277370e3c8ee1c646eafd12735",
+      "unchanged": true
+    },
+    "marginal-analysis": {
+      "before": "e51cb2d713164a5c8dfec9756ba59af93e707185b2452c878c00126ac0dc4cad",
+      "after": "e51cb2d713164a5c8dfec9756ba59af93e707185b2452c878c00126ac0dc4cad",
+      "unchanged": true
+    },
+    "market-equilibrium": {
+      "before": "35d5c0dc971a7e46a84aa7601a37a50442f4d123bafb875acde9956ff9f58cc7",
+      "after": "35d5c0dc971a7e46a84aa7601a37a50442f4d123bafb875acde9956ff9f58cc7",
+      "unchanged": true
+    },
+    "models-and-assumptions": {
+      "before": "cb1b4187e19821e042570eeffd412b6d8955fd7aa4c0999c71647a5522978474",
+      "after": "cb1b4187e19821e042570eeffd412b6d8955fd7aa4c0999c71647a5522978474",
+      "unchanged": true
+    },
+    "monetary-control-limits": {
+      "before": "88816cfe122041dec9fdc439002e4540d4e340e486de185e5b43c57a64292abc",
+      "after": "88816cfe122041dec9fdc439002e4540d4e340e486de185e5b43c57a64292abc",
+      "unchanged": true
+    },
+    "monetary-neutrality": {
+      "before": "e2933194dd0061889e091dda5d61cd619f6647d52c0992eea62e2feb5a4e9aa7",
+      "after": "e2933194dd0061889e091dda5d61cd619f6647d52c0992eea62e2feb5a4e9aa7",
+      "unchanged": true
+    },
+    "monetary-policy-tools": {
+      "before": "7658f343a3083c27338a5ddb556ee3564d3d49a3462967ed4b66b572fbbf1003",
+      "after": "7658f343a3083c27338a5ddb556ee3564d3d49a3462967ed4b66b572fbbf1003",
+      "unchanged": true
+    },
+    "monetary-policy-transmission": {
+      "before": "f51568b903ec43a366e73ed38990a68a4ac56dca8a9236122c946926cba65b39",
+      "after": "f51568b903ec43a366e73ed38990a68a4ac56dca8a9236122c946926cba65b39",
+      "unchanged": true
+    },
+    "money-functions-and-measures": {
+      "before": "89c6780dee12fb7ad460203d1bb849b6c8eca60f003ce0db227bd5963faa0c04",
+      "after": "89c6780dee12fb7ad460203d1bb849b6c8eca60f003ce0db227bd5963faa0c04",
+      "unchanged": true
+    },
+    "monopolistic-competition": {
+      "before": "096281f4435b883a24ecbf2176345696b999f60a044418b67b46dc10112ed405",
+      "after": "096281f4435b883a24ecbf2176345696b999f60a044418b67b46dc10112ed405",
+      "unchanged": true
+    },
+    "monopoly": {
+      "before": "86956193571e7bd1644e46fd894e8bea059cac8b7a510d77e922aac2af496bb6",
+      "after": "86956193571e7bd1644e46fd894e8bea059cac8b7a510d77e922aac2af496bb6",
+      "unchanged": true
+    },
+    "natural-rate-of-unemployment": {
+      "before": "bb85561c8f8a99b01f99346508f656b1a725b3b14994bbbbdd69d203a314841a",
+      "after": "bb85561c8f8a99b01f99346508f656b1a725b3b14994bbbbdd69d203a314841a",
+      "unchanged": true
+    },
+    "oligopoly": {
+      "before": "d069451f729de3c477cab43fb28110050b6d21a7700c5b4a0cc5c76d209bcbca",
+      "after": "d069451f729de3c477cab43fb28110050b6d21a7700c5b4a0cc5c76d209bcbca",
+      "unchanged": true
+    },
+    "opportunity-cost": {
+      "before": "32e202117d5f6fcea7ae479260e4ef9dbe628d5270616b4946720b0030f87790",
+      "after": "32e202117d5f6fcea7ae479260e4ef9dbe628d5270616b4946720b0030f87790",
+      "unchanged": true
+    },
+    "perfect-competition": {
+      "before": "c43e9f6fe88d853fb89b44a05d9a895b55b0746238031400f3c67c6df7f49b0c",
+      "after": "c43e9f6fe88d853fb89b44a05d9a895b55b0746238031400f3c67c6df7f49b0c",
+      "unchanged": true
+    },
+    "phillips-curve-expectations": {
+      "before": "fe98a5a2c9822a6a57103fa409c49f1546605179783d5152560f998c559f8a9e",
+      "after": "fe98a5a2c9822a6a57103fa409c49f1546605179783d5152560f998c559f8a9e",
+      "unchanged": true
+    },
+    "price-signals": {
+      "before": "25f34c4f59d5e39ee46e38532bb8142d64f08c2c302606d6a8db8e7f9fcc0820",
+      "after": "25f34c4f59d5e39ee46e38532bb8142d64f08c2c302606d6a8db8e7f9fcc0820",
+      "unchanged": true
+    },
+    "productivity-measurement": {
+      "before": "4b30e4f886cf12780df375ac357ea7d2dd3c1dd2dd7e660ec7dc8edbfdda58ed",
+      "after": "4b30e4f886cf12780df375ac357ea7d2dd3c1dd2dd7e660ec7dc8edbfdda58ed",
+      "unchanged": true
+    },
+    "quantity-theory-of-money": {
+      "before": "47df144e62c3438d9c155e5344128ad5941da0697589971cd8f888ce0d8dcac3",
+      "after": "47df144e62c3438d9c155e5344128ad5941da0697589971cd8f888ce0d8dcac3",
+      "unchanged": true
+    },
+    "real-versus-nominal-gdp": {
+      "before": "40267e4938baf1b827a5bfe702b37473d8015d0b1b6e403d1a491a6ceb541ba5",
+      "after": "40267e4938baf1b827a5bfe702b37473d8015d0b1b6e403d1a491a6ceb541ba5",
+      "unchanged": true
+    },
+    "real-versus-nominal-interest-rates": {
+      "before": "86da17680b01c7875645c83ad15ceff62e1f0e825f793b250dc0a934879532f3",
+      "after": "86da17680b01c7875645c83ad15ceff62e1f0e825f793b250dc0a934879532f3",
+      "unchanged": true
+    },
+    "sacrifice-ratio": {
+      "before": "7f1f475c62847c41abda660beab08554e5242aee26cc058650b0860dfa1d611a",
+      "after": "7f1f475c62847c41abda660beab08554e5242aee26cc058650b0860dfa1d611a",
+      "unchanged": true
+    },
+    "scarcity-and-tradeoffs": {
+      "before": "cc0aa8fd02074c3ae3b76b4c8a59f8377f5db931001074ad81385d999cbf8bcc",
+      "after": "cc0aa8fd02074c3ae3b76b4c8a59f8377f5db931001074ad81385d999cbf8bcc",
+      "unchanged": true
+    },
+    "short-run-phillips-curve": {
+      "before": "2cd9b56604a3157ed64a97ddee48861158a66a78b8c5037f833961f6f411321a",
+      "after": "2cd9b56604a3157ed64a97ddee48861158a66a78b8c5037f833961f6f411321a",
+      "unchanged": true
+    },
+    "sources-of-productivity": {
+      "before": "e5e83721d618d855bdf7f7fae1833d1e306243fc88896cc2e38dc673cd02e60b",
+      "after": "e5e83721d618d855bdf7f7fae1833d1e306243fc88896cc2e38dc673cd02e60b",
+      "unchanged": true
+    },
+    "stabilization-policy": {
+      "before": "3f85ee794b85699bd768084e93c5c88fc0521af0909a1d31f000cc1742e276ba",
+      "after": "3f85ee794b85699bd768084e93c5c88fc0521af0909a1d31f000cc1742e276ba",
+      "unchanged": true
+    },
+    "statutory-versus-economic-tax-incidence": {
+      "before": "a028a8f69bd8ccb18726569dd24ea93e0b59b1c86e6b95bc732f2a7bf81b8575",
+      "after": "a028a8f69bd8ccb18726569dd24ea93e0b59b1c86e6b95bc732f2a7bf81b8575",
+      "unchanged": true
+    },
+    "supply": {
+      "before": "82b9b097593de96e8e928b51ac01b6b944b9ddca6ea907f8f403e6be0db5547b",
+      "after": "82b9b097593de96e8e928b51ac01b6b944b9ddca6ea907f8f403e6be0db5547b",
+      "unchanged": true
+    },
+    "tax-incidence": {
+      "before": "7de1e08349067602dc742a1fc210638fa57a18d53268677c7f5b3c1c7e4a7721",
+      "after": "7de1e08349067602dc742a1fc210638fa57a18d53268677c7f5b3c1c7e4a7721",
+      "unchanged": true
+    },
+    "tax-wedges-and-revenue": {
+      "before": "22cc926818c4babc65a8e93e7856d74add88283d202e9f8bb74e5c0e3b8d7e6a",
+      "after": "22cc926818c4babc65a8e93e7856d74add88283d202e9f8bb74e5c0e3b8d7e6a",
+      "unchanged": true
+    },
+    "unemployment-measurement": {
+      "before": "1b49232c947f7bdd4e2913b11cc43a7f0c17c6e294868abf6bdedc2e4e576d4f",
+      "after": "1b49232c947f7bdd4e2913b11cc43a7f0c17c6e294868abf6bdedc2e4e576d4f",
+      "unchanged": true
+    },
+    "unemployment-types": {
+      "before": "a8c359f9106650070f84b78f3d7ee86dadef966cb6c4964e5e0846cc6681f7f3",
+      "after": "a8c359f9106650070f84b78f3d7ee86dadef966cb6c4964e5e0846cc6681f7f3",
+      "unchanged": true
+    }
+  },
+  "graphAudit": {
+    "count": 23,
+    "missingAssets": [],
+    "missingGraphCue": [],
+    "assetsHashUnchanged": true
+  },
+  "solo": {
+    "micro-versus-macro": {
+      "name": "micro-versus-macro solo",
+      "ids": [
+        "micro-versus-macro"
+      ],
+      "perMode": 150,
+      "byMode": {
+        "standard": {
+          "sessions": 150,
+          "shares": {
+            "micro-versus-macro": 1
+          },
+          "representation": {
+            "micro-versus-macro": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "timed": {
+          "sessions": 150,
+          "shares": {
+            "micro-versus-macro": 1
+          },
+          "representation": {
+            "micro-versus-macro": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "exam": {
+          "sessions": 150,
+          "shares": {
+            "micro-versus-macro": 1
+          },
+          "representation": {
+            "micro-versus-macro": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "legendary": {
+          "sessions": 150,
+          "shares": {
+            "micro-versus-macro": 1
+          },
+          "representation": {
+            "micro-versus-macro": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 3300,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "score": {
+          "sessions": 150,
+          "shares": {
+            "micro-versus-macro": 1
+          },
+          "representation": {
+            "micro-versus-macro": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        }
+      }
+    },
+    "positive-versus-normative-analysis": {
+      "name": "positive-versus-normative-analysis solo",
+      "ids": [
+        "positive-versus-normative-analysis"
+      ],
+      "perMode": 150,
+      "byMode": {
+        "standard": {
+          "sessions": 150,
+          "shares": {
+            "positive-versus-normative-analysis": 1
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "timed": {
+          "sessions": 150,
+          "shares": {
+            "positive-versus-normative-analysis": 1
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "exam": {
+          "sessions": 150,
+          "shares": {
+            "positive-versus-normative-analysis": 1
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "legendary": {
+          "sessions": 150,
+          "shares": {
+            "positive-versus-normative-analysis": 1
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 3300,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "score": {
+          "sessions": 150,
+          "shares": {
+            "positive-versus-normative-analysis": 1
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        }
+      }
+    },
+    "economist-policy-role": {
+      "name": "economist-policy-role solo",
+      "ids": [
+        "economist-policy-role"
+      ],
+      "perMode": 150,
+      "byMode": {
+        "standard": {
+          "sessions": 150,
+          "shares": {
+            "economist-policy-role": 1
+          },
+          "representation": {
+            "economist-policy-role": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "timed": {
+          "sessions": 150,
+          "shares": {
+            "economist-policy-role": 1
+          },
+          "representation": {
+            "economist-policy-role": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "exam": {
+          "sessions": 150,
+          "shares": {
+            "economist-policy-role": 1
+          },
+          "representation": {
+            "economist-policy-role": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "legendary": {
+          "sessions": 150,
+          "shares": {
+            "economist-policy-role": 1
+          },
+          "representation": {
+            "economist-policy-role": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 3300,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "score": {
+          "sessions": 150,
+          "shares": {
+            "economist-policy-role": 1
+          },
+          "representation": {
+            "economist-policy-role": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        }
+      }
+    },
+    "market-failures": {
+      "name": "market-failures solo",
+      "ids": [
+        "market-failures"
+      ],
+      "perMode": 150,
+      "byMode": {
+        "standard": {
+          "sessions": 150,
+          "shares": {
+            "market-failures": 1
+          },
+          "representation": {
+            "market-failures": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "timed": {
+          "sessions": 150,
+          "shares": {
+            "market-failures": 1
+          },
+          "representation": {
+            "market-failures": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "exam": {
+          "sessions": 150,
+          "shares": {
+            "market-failures": 1
+          },
+          "representation": {
+            "market-failures": 4500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 900,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "legendary": {
+          "sessions": 150,
+          "shares": {
+            "market-failures": 1
+          },
+          "representation": {
+            "market-failures": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 2850,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        },
+        "score": {
+          "sessions": 150,
+          "shares": {
+            "market-failures": 1
+          },
+          "representation": {
+            "market-failures": 5400
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 450,
+          "graphExposure": 0,
+          "auxiliarySelections": 120
+        }
+      }
+    },
+    "production-possibilities-frontier": {
+      "name": "PPF solo",
+      "ids": [
+        "production-possibilities-frontier"
+      ],
+      "perMode": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 1
+          },
+          "representation": {
+            "production-possibilities-frontier": 3600
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 1118,
+          "auxiliarySelections": 80
+        },
+        "timed": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 1
+          },
+          "representation": {
+            "production-possibilities-frontier": 3000
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 100,
+          "graphExposure": 1228,
+          "auxiliarySelections": 80
+        },
+        "exam": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 1
+          },
+          "representation": {
+            "production-possibilities-frontier": 3000
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 100,
+          "graphExposure": 1226,
+          "auxiliarySelections": 80
+        },
+        "legendary": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 1
+          },
+          "representation": {
+            "production-possibilities-frontier": 3600
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 1800,
+          "graphExposure": 1252,
+          "auxiliarySelections": 80
+        },
+        "score": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 1
+          },
+          "representation": {
+            "production-possibilities-frontier": 3600
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 1095,
+          "auxiliarySelections": 80
+        }
+      }
+    },
+    "elasticity": {
+      "name": "Elasticity smoke",
+      "ids": [
+        "elasticity"
+      ],
+      "perMode": 50,
+      "byMode": {
+        "standard": {
+          "sessions": 50,
+          "shares": {
+            "elasticity": 1
+          },
+          "representation": {
+            "elasticity": 1800
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 324,
+          "auxiliarySelections": 40
+        },
+        "timed": {
+          "sessions": 50,
+          "shares": {
+            "elasticity": 1
+          },
+          "representation": {
+            "elasticity": 1500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 323,
+          "auxiliarySelections": 40
+        },
+        "exam": {
+          "sessions": 50,
+          "shares": {
+            "elasticity": 1
+          },
+          "representation": {
+            "elasticity": 1500
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 346,
+          "auxiliarySelections": 40
+        },
+        "legendary": {
+          "sessions": 50,
+          "shares": {
+            "elasticity": 1
+          },
+          "representation": {
+            "elasticity": 1800
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 91,
+          "auxiliarySelections": 40
+        },
+        "score": {
+          "sessions": 50,
+          "shares": {
+            "elasticity": 1
+          },
+          "representation": {
+            "elasticity": 1800
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 337,
+          "auxiliarySelections": 40
+        }
+      }
+    }
+  },
+  "integrated": {
+    "name": "Integrated intended mixed",
+    "ids": [
+      "scarcity-and-tradeoffs",
+      "opportunity-cost",
+      "marginal-analysis",
+      "incentives",
+      "gains-from-trade",
+      "integrated-economic-analysis"
+    ],
+    "perMode": 100,
+    "byMode": {
+      "standard": {
+        "sessions": 100,
+        "shares": {
+          "scarcity-and-tradeoffs": 0.1592,
+          "opportunity-cost": 0.1908,
+          "marginal-analysis": 0.1897,
+          "incentives": 0.1681,
+          "gains-from-trade": 0.1892,
+          "integrated-economic-analysis": 0.1031
+        },
+        "representation": {
+          "scarcity-and-tradeoffs": 573,
+          "incentives": 605,
+          "opportunity-cost": 687,
+          "marginal-analysis": 683,
+          "gains-from-trade": 681,
+          "integrated-economic-analysis": 371
+        },
+        "completionFailures": 0,
+        "routingFailures": 0,
+        "duplicateCanonicalSelections": 0,
+        "graphExposure": 0,
+        "auxiliarySelections": 80
+      },
+      "timed": {
+        "sessions": 100,
+        "shares": {
+          "scarcity-and-tradeoffs": 0.1967,
+          "opportunity-cost": 0.21,
+          "marginal-analysis": 0.2093,
+          "incentives": 0.1837,
+          "gains-from-trade": 0.2003,
+          "integrated-economic-analysis": 0
+        },
+        "representation": {
+          "scarcity-and-tradeoffs": 590,
+          "incentives": 551,
+          "marginal-analysis": 628,
+          "gains-from-trade": 601,
+          "opportunity-cost": 630
+        },
+        "completionFailures": 0,
+        "routingFailures": 0,
+        "duplicateCanonicalSelections": 0,
+        "graphExposure": 0,
+        "auxiliarySelections": 80
+      },
+      "exam": {
+        "sessions": 100,
+        "shares": {
+          "scarcity-and-tradeoffs": 0.186,
+          "opportunity-cost": 0.218,
+          "marginal-analysis": 0.2087,
+          "incentives": 0.1757,
+          "gains-from-trade": 0.2117,
+          "integrated-economic-analysis": 0
+        },
+        "representation": {
+          "scarcity-and-tradeoffs": 558,
+          "marginal-analysis": 626,
+          "incentives": 527,
+          "opportunity-cost": 654,
+          "gains-from-trade": 635
+        },
+        "completionFailures": 0,
+        "routingFailures": 0,
+        "duplicateCanonicalSelections": 0,
+        "graphExposure": 0,
+        "auxiliarySelections": 80
+      },
+      "legendary": {
+        "sessions": 100,
+        "shares": {
+          "scarcity-and-tradeoffs": 0.1756,
+          "opportunity-cost": 0.1636,
+          "marginal-analysis": 0.1781,
+          "incentives": 0.1703,
+          "gains-from-trade": 0.1886,
+          "integrated-economic-analysis": 0.1239
+        },
+        "representation": {
+          "integrated-economic-analysis": 446,
+          "gains-from-trade": 679,
+          "opportunity-cost": 589,
+          "scarcity-and-tradeoffs": 632,
+          "incentives": 613,
+          "marginal-analysis": 641
+        },
+        "completionFailures": 0,
+        "routingFailures": 0,
+        "duplicateCanonicalSelections": 0,
+        "graphExposure": 0,
+        "auxiliarySelections": 80
+      },
+      "score": {
+        "sessions": 100,
+        "shares": {
+          "scarcity-and-tradeoffs": 0.1672,
+          "opportunity-cost": 0.1803,
+          "marginal-analysis": 0.1956,
+          "incentives": 0.1633,
+          "gains-from-trade": 0.1894,
+          "integrated-economic-analysis": 0.1042
+        },
+        "representation": {
+          "marginal-analysis": 704,
+          "scarcity-and-tradeoffs": 602,
+          "gains-from-trade": 682,
+          "integrated-economic-analysis": 375,
+          "incentives": 588,
+          "opportunity-cost": 649
+        },
+        "completionFailures": 0,
+        "routingFailures": 0,
+        "duplicateCanonicalSelections": 0,
+        "graphExposure": 0,
+        "auxiliarySelections": 80
+      }
+    }
+  },
+  "configs": {
+    "A": {
+      "name": "Four supporting together",
+      "ids": [
+        "micro-versus-macro",
+        "positive-versus-normative-analysis",
+        "economist-policy-role",
+        "market-failures"
+      ],
+      "perMode": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "shares": {
+            "micro-versus-macro": 0.2531,
+            "positive-versus-normative-analysis": 0.2522,
+            "economist-policy-role": 0.2481,
+            "market-failures": 0.2467
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 908,
+            "micro-versus-macro": 911,
+            "economist-policy-role": 893,
+            "market-failures": 888
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "timed": {
+          "sessions": 100,
+          "shares": {
+            "micro-versus-macro": 0.2573,
+            "positive-versus-normative-analysis": 0.2367,
+            "economist-policy-role": 0.2527,
+            "market-failures": 0.2533
+          },
+          "representation": {
+            "economist-policy-role": 758,
+            "positive-versus-normative-analysis": 710,
+            "market-failures": 760,
+            "micro-versus-macro": 772
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "exam": {
+          "sessions": 100,
+          "shares": {
+            "micro-versus-macro": 0.2507,
+            "positive-versus-normative-analysis": 0.2593,
+            "economist-policy-role": 0.2383,
+            "market-failures": 0.2517
+          },
+          "representation": {
+            "market-failures": 755,
+            "positive-versus-normative-analysis": 778,
+            "economist-policy-role": 715,
+            "micro-versus-macro": 752
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "legendary": {
+          "sessions": 100,
+          "shares": {
+            "micro-versus-macro": 0.2392,
+            "positive-versus-normative-analysis": 0.2408,
+            "economist-policy-role": 0.2414,
+            "market-failures": 0.2786
+          },
+          "representation": {
+            "economist-policy-role": 869,
+            "market-failures": 1003,
+            "positive-versus-normative-analysis": 867,
+            "micro-versus-macro": 861
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "score": {
+          "sessions": 100,
+          "shares": {
+            "micro-versus-macro": 0.2436,
+            "positive-versus-normative-analysis": 0.2403,
+            "economist-policy-role": 0.2592,
+            "market-failures": 0.2569
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 865,
+            "market-failures": 925,
+            "economist-policy-role": 933,
+            "micro-versus-macro": 877
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        }
+      }
+    },
+    "B": {
+      "name": "Supporting plus Models",
+      "ids": [
+        "models-and-assumptions",
+        "micro-versus-macro",
+        "positive-versus-normative-analysis",
+        "economist-policy-role",
+        "market-failures"
+      ],
+      "perMode": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "shares": {
+            "models-and-assumptions": 0.1953,
+            "micro-versus-macro": 0.1986,
+            "positive-versus-normative-analysis": 0.1933,
+            "economist-policy-role": 0.2181,
+            "market-failures": 0.1947
+          },
+          "representation": {
+            "market-failures": 701,
+            "positive-versus-normative-analysis": 696,
+            "economist-policy-role": 785,
+            "micro-versus-macro": 715,
+            "models-and-assumptions": 703
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "timed": {
+          "sessions": 100,
+          "shares": {
+            "models-and-assumptions": 0.2043,
+            "micro-versus-macro": 0.2087,
+            "positive-versus-normative-analysis": 0.1987,
+            "economist-policy-role": 0.1967,
+            "market-failures": 0.1917
+          },
+          "representation": {
+            "market-failures": 575,
+            "positive-versus-normative-analysis": 596,
+            "micro-versus-macro": 626,
+            "economist-policy-role": 590,
+            "models-and-assumptions": 613
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "exam": {
+          "sessions": 100,
+          "shares": {
+            "models-and-assumptions": 0.2043,
+            "micro-versus-macro": 0.19,
+            "positive-versus-normative-analysis": 0.1883,
+            "economist-policy-role": 0.2047,
+            "market-failures": 0.2127
+          },
+          "representation": {
+            "market-failures": 638,
+            "micro-versus-macro": 570,
+            "positive-versus-normative-analysis": 565,
+            "models-and-assumptions": 613,
+            "economist-policy-role": 614
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "legendary": {
+          "sessions": 100,
+          "shares": {
+            "models-and-assumptions": 0.2258,
+            "micro-versus-macro": 0.1831,
+            "positive-versus-normative-analysis": 0.1856,
+            "economist-policy-role": 0.1772,
+            "market-failures": 0.2283
+          },
+          "representation": {
+            "models-and-assumptions": 813,
+            "micro-versus-macro": 659,
+            "market-failures": 822,
+            "economist-policy-role": 638,
+            "positive-versus-normative-analysis": 668
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "score": {
+          "sessions": 100,
+          "shares": {
+            "models-and-assumptions": 0.2022,
+            "micro-versus-macro": 0.2089,
+            "positive-versus-normative-analysis": 0.1914,
+            "economist-policy-role": 0.1972,
+            "market-failures": 0.2003
+          },
+          "representation": {
+            "models-and-assumptions": 728,
+            "economist-policy-role": 710,
+            "positive-versus-normative-analysis": 689,
+            "market-failures": 721,
+            "micro-versus-macro": 752
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        }
+      }
+    },
+    "C": {
+      "name": "Mature foundations",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives",
+        "gains-from-trade"
+      ],
+      "perMode": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1747,
+            "opportunity-cost": 0.2125,
+            "marginal-analysis": 0.2167,
+            "incentives": 0.1919,
+            "gains-from-trade": 0.2042
+          },
+          "representation": {
+            "gains-from-trade": 735,
+            "marginal-analysis": 780,
+            "incentives": 691,
+            "opportunity-cost": 765,
+            "scarcity-and-tradeoffs": 629
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "timed": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1847,
+            "opportunity-cost": 0.225,
+            "marginal-analysis": 0.2143,
+            "incentives": 0.1803,
+            "gains-from-trade": 0.1957
+          },
+          "representation": {
+            "gains-from-trade": 587,
+            "marginal-analysis": 643,
+            "opportunity-cost": 675,
+            "incentives": 541,
+            "scarcity-and-tradeoffs": 554
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "exam": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1857,
+            "opportunity-cost": 0.207,
+            "marginal-analysis": 0.2053,
+            "incentives": 0.1843,
+            "gains-from-trade": 0.2177
+          },
+          "representation": {
+            "gains-from-trade": 653,
+            "opportunity-cost": 621,
+            "marginal-analysis": 616,
+            "scarcity-and-tradeoffs": 557,
+            "incentives": 553
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "legendary": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1953,
+            "opportunity-cost": 0.2008,
+            "marginal-analysis": 0.2039,
+            "incentives": 0.1925,
+            "gains-from-trade": 0.2075
+          },
+          "representation": {
+            "scarcity-and-tradeoffs": 703,
+            "opportunity-cost": 723,
+            "gains-from-trade": 747,
+            "incentives": 693,
+            "marginal-analysis": 734
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "score": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1831,
+            "opportunity-cost": 0.2258,
+            "marginal-analysis": 0.2086,
+            "incentives": 0.1769,
+            "gains-from-trade": 0.2056
+          },
+          "representation": {
+            "scarcity-and-tradeoffs": 659,
+            "incentives": 637,
+            "marginal-analysis": 751,
+            "gains-from-trade": 740,
+            "opportunity-cost": 813
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        }
+      }
+    },
+    "D": {
+      "name": "Foundations plus supporting",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives",
+        "gains-from-trade",
+        "models-and-assumptions",
+        "micro-versus-macro",
+        "positive-versus-normative-analysis",
+        "economist-policy-role",
+        "market-failures"
+      ],
+      "perMode": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1039,
+            "opportunity-cost": 0.1289,
+            "marginal-analysis": 0.1244,
+            "incentives": 0.1072,
+            "gains-from-trade": 0.1267,
+            "models-and-assumptions": 0.0817,
+            "micro-versus-macro": 0.0867,
+            "positive-versus-normative-analysis": 0.0761,
+            "economist-policy-role": 0.0831,
+            "market-failures": 0.0814
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 274,
+            "scarcity-and-tradeoffs": 374,
+            "marginal-analysis": 448,
+            "incentives": 386,
+            "micro-versus-macro": 312,
+            "models-and-assumptions": 294,
+            "market-failures": 293,
+            "opportunity-cost": 464,
+            "gains-from-trade": 456,
+            "economist-policy-role": 299
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "timed": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1007,
+            "opportunity-cost": 0.1207,
+            "marginal-analysis": 0.128,
+            "incentives": 0.099,
+            "gains-from-trade": 0.1237,
+            "models-and-assumptions": 0.0987,
+            "micro-versus-macro": 0.0853,
+            "positive-versus-normative-analysis": 0.0777,
+            "economist-policy-role": 0.087,
+            "market-failures": 0.0793
+          },
+          "representation": {
+            "economist-policy-role": 261,
+            "incentives": 297,
+            "positive-versus-normative-analysis": 233,
+            "opportunity-cost": 362,
+            "scarcity-and-tradeoffs": 302,
+            "gains-from-trade": 371,
+            "models-and-assumptions": 296,
+            "market-failures": 238,
+            "micro-versus-macro": 256,
+            "marginal-analysis": 384
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "exam": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.0973,
+            "opportunity-cost": 0.1433,
+            "marginal-analysis": 0.129,
+            "incentives": 0.1017,
+            "gains-from-trade": 0.1207,
+            "models-and-assumptions": 0.0813,
+            "micro-versus-macro": 0.0843,
+            "positive-versus-normative-analysis": 0.0837,
+            "economist-policy-role": 0.086,
+            "market-failures": 0.0727
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 251,
+            "scarcity-and-tradeoffs": 292,
+            "gains-from-trade": 362,
+            "economist-policy-role": 258,
+            "incentives": 305,
+            "micro-versus-macro": 253,
+            "opportunity-cost": 430,
+            "marginal-analysis": 387,
+            "models-and-assumptions": 244,
+            "market-failures": 218
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "legendary": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.1469,
+            "opportunity-cost": 0.1331,
+            "marginal-analysis": 0.1428,
+            "incentives": 0.1464,
+            "gains-from-trade": 0.1356,
+            "models-and-assumptions": 0.0669,
+            "micro-versus-macro": 0.0556,
+            "positive-versus-normative-analysis": 0.0636,
+            "economist-policy-role": 0.0492,
+            "market-failures": 0.06
+          },
+          "representation": {
+            "opportunity-cost": 479,
+            "scarcity-and-tradeoffs": 529,
+            "marginal-analysis": 514,
+            "incentives": 527,
+            "market-failures": 216,
+            "micro-versus-macro": 200,
+            "economist-policy-role": 177,
+            "models-and-assumptions": 241,
+            "gains-from-trade": 488,
+            "positive-versus-normative-analysis": 229
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        },
+        "score": {
+          "sessions": 100,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.095,
+            "opportunity-cost": 0.1386,
+            "marginal-analysis": 0.1272,
+            "incentives": 0.0978,
+            "gains-from-trade": 0.125,
+            "models-and-assumptions": 0.0906,
+            "micro-versus-macro": 0.08,
+            "positive-versus-normative-analysis": 0.0883,
+            "economist-policy-role": 0.0825,
+            "market-failures": 0.075
+          },
+          "representation": {
+            "positive-versus-normative-analysis": 318,
+            "market-failures": 270,
+            "models-and-assumptions": 326,
+            "incentives": 352,
+            "marginal-analysis": 458,
+            "micro-versus-macro": 288,
+            "scarcity-and-tradeoffs": 342,
+            "opportunity-cost": 499,
+            "gains-from-trade": 450,
+            "economist-policy-role": 297
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 0,
+          "auxiliarySelections": 80
+        }
+      }
+    },
+    "E": {
+      "name": "PPF scarcity opportunity",
+      "ids": [
+        "production-possibilities-frontier",
+        "scarcity-and-tradeoffs",
+        "opportunity-cost"
+      ],
+      "perMode": 100,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 0.3178,
+            "scarcity-and-tradeoffs": 0.3158,
+            "opportunity-cost": 0.3664
+          },
+          "representation": {
+            "opportunity-cost": 1319,
+            "production-possibilities-frontier": 1144,
+            "scarcity-and-tradeoffs": 1137
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 406,
+          "auxiliarySelections": 80
+        },
+        "timed": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 0.3497,
+            "scarcity-and-tradeoffs": 0.2947,
+            "opportunity-cost": 0.3557
+          },
+          "representation": {
+            "production-possibilities-frontier": 1049,
+            "opportunity-cost": 1067,
+            "scarcity-and-tradeoffs": 884
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 449,
+          "auxiliarySelections": 80
+        },
+        "exam": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 0.3653,
+            "scarcity-and-tradeoffs": 0.2853,
+            "opportunity-cost": 0.3493
+          },
+          "representation": {
+            "production-possibilities-frontier": 1096,
+            "opportunity-cost": 1048,
+            "scarcity-and-tradeoffs": 856
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 474,
+          "auxiliarySelections": 80
+        },
+        "legendary": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 0.1978,
+            "scarcity-and-tradeoffs": 0.4047,
+            "opportunity-cost": 0.3975
+          },
+          "representation": {
+            "opportunity-cost": 1431,
+            "production-possibilities-frontier": 712,
+            "scarcity-and-tradeoffs": 1457
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 243,
+          "auxiliarySelections": 80
+        },
+        "score": {
+          "sessions": 100,
+          "shares": {
+            "production-possibilities-frontier": 0.3394,
+            "scarcity-and-tradeoffs": 0.2886,
+            "opportunity-cost": 0.3719
+          },
+          "representation": {
+            "scarcity-and-tradeoffs": 1039,
+            "production-possibilities-frontier": 1222,
+            "opportunity-cost": 1339
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 437,
+          "auxiliarySelections": 80
+        }
+      }
+    },
+    "F": {
+      "name": "Entire General Economics",
+      "ids": [
+        "scarcity-and-tradeoffs",
+        "opportunity-cost",
+        "marginal-analysis",
+        "incentives",
+        "gains-from-trade",
+        "models-and-assumptions",
+        "micro-versus-macro",
+        "positive-versus-normative-analysis",
+        "economist-policy-role",
+        "market-failures",
+        "production-possibilities-frontier",
+        "elasticity",
+        "integrated-economic-analysis"
+      ],
+      "perMode": 250,
+      "byMode": {
+        "standard": {
+          "sessions": 250,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.063,
+            "opportunity-cost": 0.0724,
+            "marginal-analysis": 0.0723,
+            "incentives": 0.0589,
+            "gains-from-trade": 0.0707,
+            "models-and-assumptions": 0.0522,
+            "micro-versus-macro": 0.0462,
+            "positive-versus-normative-analysis": 0.0482,
+            "economist-policy-role": 0.049,
+            "market-failures": 0.0478,
+            "production-possibilities-frontier": 0.0654,
+            "elasticity": 0.2947,
+            "integrated-economic-analysis": 0.0591
+          },
+          "representation": {
+            "scarcity-and-tradeoffs": 567,
+            "market-failures": 430,
+            "elasticity": 2652,
+            "incentives": 530,
+            "economist-policy-role": 441,
+            "marginal-analysis": 651,
+            "models-and-assumptions": 470,
+            "micro-versus-macro": 416,
+            "production-possibilities-frontier": 589,
+            "opportunity-cost": 652,
+            "gains-from-trade": 636,
+            "positive-versus-normative-analysis": 434,
+            "integrated-economic-analysis": 532
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 700,
+          "auxiliarySelections": 200
+        },
+        "timed": {
+          "sessions": 250,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.068,
+            "opportunity-cost": 0.0797,
+            "marginal-analysis": 0.0792,
+            "incentives": 0.0659,
+            "gains-from-trade": 0.074,
+            "models-and-assumptions": 0.0509,
+            "micro-versus-macro": 0.0499,
+            "positive-versus-normative-analysis": 0.0483,
+            "economist-policy-role": 0.0505,
+            "market-failures": 0.0477,
+            "production-possibilities-frontier": 0.0756,
+            "elasticity": 0.3103,
+            "integrated-economic-analysis": 0
+          },
+          "representation": {
+            "incentives": 494,
+            "elasticity": 2327,
+            "marginal-analysis": 594,
+            "production-possibilities-frontier": 567,
+            "positive-versus-normative-analysis": 362,
+            "market-failures": 358,
+            "economist-policy-role": 379,
+            "micro-versus-macro": 374,
+            "gains-from-trade": 555,
+            "models-and-assumptions": 382,
+            "opportunity-cost": 598,
+            "scarcity-and-tradeoffs": 510
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 698,
+          "auxiliarySelections": 200
+        },
+        "exam": {
+          "sessions": 250,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.0639,
+            "opportunity-cost": 0.0779,
+            "marginal-analysis": 0.078,
+            "incentives": 0.0636,
+            "gains-from-trade": 0.0715,
+            "models-and-assumptions": 0.0557,
+            "micro-versus-macro": 0.0523,
+            "positive-versus-normative-analysis": 0.0504,
+            "economist-policy-role": 0.0496,
+            "market-failures": 0.0512,
+            "production-possibilities-frontier": 0.0761,
+            "elasticity": 0.3099,
+            "integrated-economic-analysis": 0
+          },
+          "representation": {
+            "production-possibilities-frontier": 571,
+            "marginal-analysis": 585,
+            "elasticity": 2324,
+            "incentives": 477,
+            "micro-versus-macro": 392,
+            "models-and-assumptions": 418,
+            "positive-versus-normative-analysis": 378,
+            "opportunity-cost": 584,
+            "market-failures": 384,
+            "scarcity-and-tradeoffs": 479,
+            "economist-policy-role": 372,
+            "gains-from-trade": 536
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 753,
+          "auxiliarySelections": 200
+        },
+        "legendary": {
+          "sessions": 250,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.0814,
+            "opportunity-cost": 0.0851,
+            "marginal-analysis": 0.0844,
+            "incentives": 0.0817,
+            "gains-from-trade": 0.0868,
+            "models-and-assumptions": 0.0377,
+            "micro-versus-macro": 0.0302,
+            "positive-versus-normative-analysis": 0.0309,
+            "economist-policy-role": 0.0294,
+            "market-failures": 0.0383,
+            "production-possibilities-frontier": 0.0432,
+            "elasticity": 0.3103,
+            "integrated-economic-analysis": 0.0604
+          },
+          "representation": {
+            "market-failures": 345,
+            "opportunity-cost": 766,
+            "integrated-economic-analysis": 544,
+            "gains-from-trade": 781,
+            "elasticity": 2793,
+            "incentives": 735,
+            "scarcity-and-tradeoffs": 733,
+            "economist-policy-role": 265,
+            "production-possibilities-frontier": 389,
+            "marginal-analysis": 760,
+            "models-and-assumptions": 339,
+            "micro-versus-macro": 272,
+            "positive-versus-normative-analysis": 278
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 295,
+          "auxiliarySelections": 200
+        },
+        "score": {
+          "sessions": 250,
+          "shares": {
+            "scarcity-and-tradeoffs": 0.0627,
+            "opportunity-cost": 0.0721,
+            "marginal-analysis": 0.0713,
+            "incentives": 0.0588,
+            "gains-from-trade": 0.0668,
+            "models-and-assumptions": 0.0494,
+            "micro-versus-macro": 0.0491,
+            "positive-versus-normative-analysis": 0.0486,
+            "economist-policy-role": 0.0474,
+            "market-failures": 0.0506,
+            "production-possibilities-frontier": 0.0663,
+            "elasticity": 0.2967,
+            "integrated-economic-analysis": 0.0602
+          },
+          "representation": {
+            "incentives": 529,
+            "market-failures": 455,
+            "micro-versus-macro": 442,
+            "models-and-assumptions": 445,
+            "scarcity-and-tradeoffs": 564,
+            "elasticity": 2670,
+            "production-possibilities-frontier": 597,
+            "opportunity-cost": 649,
+            "economist-policy-role": 427,
+            "integrated-economic-analysis": 542,
+            "positive-versus-normative-analysis": 437,
+            "marginal-analysis": 642,
+            "gains-from-trade": 601
+          },
+          "completionFailures": 0,
+          "routingFailures": 0,
+          "duplicateCanonicalSelections": 0,
+          "graphExposure": 691,
+          "auxiliarySelections": 200
+        }
+      }
+    }
+  },
+  "reuse": {
+    "micro-versus-macro": {
+      "available": 10,
+      "uniqueBeforeFirstRepeatMin": 10,
+      "firstRepeatOrdinalMin": 11,
+      "immediateRepeats": 0,
+      "shortWindowRepeats": 0,
+      "maximumUses": 3,
+      "mixedLegendaryReuse": 0
+    },
+    "positive-versus-normative-analysis": {
+      "available": 10,
+      "uniqueBeforeFirstRepeatMin": 10,
+      "firstRepeatOrdinalMin": 11,
+      "immediateRepeats": 0,
+      "shortWindowRepeats": 0,
+      "maximumUses": 3,
+      "mixedLegendaryReuse": 0
+    },
+    "economist-policy-role": {
+      "available": 10,
+      "uniqueBeforeFirstRepeatMin": 10,
+      "firstRepeatOrdinalMin": 11,
+      "immediateRepeats": 0,
+      "shortWindowRepeats": 0,
+      "maximumUses": 3,
+      "mixedLegendaryReuse": 0
+    },
+    "market-failures": {
+      "available": 12,
+      "uniqueBeforeFirstRepeatMin": 12,
+      "firstRepeatOrdinalMin": 13,
+      "immediateRepeats": 0,
+      "shortWindowRepeats": 0,
+      "maximumUses": 3,
+      "mixedLegendaryReuse": 0
+    }
+  },
+  "totalSessions": 8000,
+  "browser": {
+    "passed": true,
+    "summary": "Seven generated packages exercised all five supported modes; every mode rendered a question, handled an answer, and produced zero console warnings or errors. PPF graph assets resolved in the browser after production-equivalent asset embedding.",
+    "packages": {
+      "micro-versus-macro": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      },
+      "positive-versus-normative-analysis": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      },
+      "economist-policy-role": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      },
+      "market-failures": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      },
+      "production-possibilities-frontier": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "graphAssetsResolved": true,
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      },
+      "elasticity": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      },
+      "integrated-economic-analysis": {
+        "fiveModes": true,
+        "answerHandling": true,
+        "role": "mixed",
+        "consoleWarnings": 0,
+        "consoleErrors": 0
+      }
+    },
+    "integratedRole": "mixed",
+    "console": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "courseSharing": {
+    "generalCount": 13,
+    "macroSharesGeneral": true,
+    "microClassificationsPreserved": true
+  },
+  "verdict": "GENERAL ECONOMICS COMPLETE — PRODUCTION BANKS VALIDATED"
+}
