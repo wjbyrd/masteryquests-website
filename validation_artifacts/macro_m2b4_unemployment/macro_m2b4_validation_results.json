@@ -1,0 +1,2285 @@
+{
+  "phase": "phaseM2b4-unemployment-labor-family-maturation-v1",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1",
+  "librarySha256": "5b25f2f333227fb6c54edde16ab0a741e4e2dbd89fe3333cde2c092a486c4e75",
+  "beforeCounts": {
+    "unemployment-measurement": {
+      "easy": 7,
+      "medium": 6,
+      "hard": 9,
+      "elite": 10,
+      "legendary": 9,
+      "calculation": 8,
+      "integration": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 11,
+      "legendaryBoss": 3,
+      "repair": 5,
+      "repairSeed": 0,
+      "bridge": 5,
+      "total": 79
+    },
+    "unemployment-types": {
+      "easy": 6,
+      "medium": 5,
+      "hard": 5,
+      "elite": 5,
+      "legendary": 4,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 0,
+      "finalBoss": 12,
+      "legendaryBoss": 1,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 3,
+      "total": 44
+    },
+    "natural-rate-of-unemployment": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 1,
+      "elite": 2,
+      "legendary": 3,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 0,
+      "finalBoss": 5,
+      "legendaryBoss": 2,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 1,
+      "total": 24
+    },
+    "labor-market-institutions": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 4,
+      "elite": 4,
+      "legendary": 7,
+      "calculation": 0,
+      "integration": 0,
+      "easyBoss": 0,
+      "mediumBoss": 0,
+      "finalBoss": 14,
+      "legendaryBoss": 2,
+      "repair": 2,
+      "repairSeed": 0,
+      "bridge": 2,
+      "total": 43
+    }
+  },
+  "afterCounts": {
+    "unemployment-measurement": {
+      "total": 79,
+      "easy": 7,
+      "medium": 6,
+      "hard": 9,
+      "elite": 10,
+      "legendary": 9,
+      "calculation": 8,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 11,
+      "legendaryBoss": 3,
+      "repair": 5,
+      "repairSeed": 0,
+      "bridge": 5,
+      "graphLinked": 0,
+      "calculationLinked": 31
+    },
+    "unemployment-types": {
+      "total": 57,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 5,
+      "legendary": 6,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 12,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 4,
+      "graphLinked": 0,
+      "calculationLinked": 0
+    },
+    "natural-rate-of-unemployment": {
+      "total": 44,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 2,
+      "legendary": 6,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 5,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 1,
+      "graphLinked": 0,
+      "calculationLinked": 10
+    },
+    "labor-market-institutions": {
+      "total": 58,
+      "easy": 6,
+      "medium": 6,
+      "hard": 6,
+      "elite": 4,
+      "legendary": 7,
+      "calculation": 0,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 14,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "repairSeed": 0,
+      "bridge": 3,
+      "graphLinked": 0,
+      "calculationLinked": 6
+    }
+  },
+  "familyBefore": {
+    "easy": 21,
+    "medium": 19,
+    "hard": 19,
+    "elite": 21,
+    "legendary": 23,
+    "calculation": 8,
+    "integration": 0,
+    "easyBoss": 3,
+    "mediumBoss": 3,
+    "finalBoss": 42,
+    "legendaryBoss": 8,
+    "repair": 12,
+    "repairSeed": 0,
+    "bridge": 11,
+    "total": 190
+  },
+  "familyAfter": {
+    "total": 238,
+    "easy": 25,
+    "medium": 24,
+    "hard": 27,
+    "elite": 21,
+    "legendary": 28,
+    "calculation": 8,
+    "easyBoss": 12,
+    "mediumBoss": 12,
+    "finalBoss": 42,
+    "legendaryBoss": 12,
+    "repair": 14,
+    "repairSeed": 0,
+    "bridge": 13,
+    "graphLinked": 0,
+    "calculationLinked": 47
+  },
+  "protectedIntegrity": {
+    "canonicalBanksChecked": 69,
+    "nonF4Mismatches": [],
+    "measurementQuestionContentUnchanged": true
+  },
+  "answerAudit": {
+    "issues": []
+  },
+  "legendaryStages": {
+    "unemployment-measurement": [
+      "final",
+      "middle",
+      "opening"
+    ],
+    "unemployment-types": [
+      "final",
+      "opening",
+      "middle"
+    ],
+    "natural-rate-of-unemployment": [
+      "middle",
+      "opening",
+      "final"
+    ],
+    "labor-market-institutions": [
+      "opening",
+      "final",
+      "middle"
+    ]
+  },
+  "quality": {
+    "groups": {
+      "unemployment-types::medium": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.545
+      },
+      "unemployment-types::hard": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.871
+      },
+      "unemployment-types::legendary": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.011
+      },
+      "unemployment-types::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.473
+      },
+      "unemployment-types::mediumBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 0.97
+      },
+      "unemployment-types::legendaryBoss": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.582
+      },
+      "unemployment-types::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.857
+      },
+      "natural-rate-of-unemployment::easy": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1
+      },
+      "natural-rate-of-unemployment::medium": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.979
+      },
+      "natural-rate-of-unemployment::hard": {
+        "count": 5,
+        "longest": 1,
+        "positions": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.2,
+        "meanCorrectToDistractorRatio": 1.077
+      },
+      "natural-rate-of-unemployment::legendary": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.183
+      },
+      "natural-rate-of-unemployment::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.949
+      },
+      "natural-rate-of-unemployment::mediumBoss": {
+        "count": 3,
+        "longest": 1,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.333,
+        "meanCorrectToDistractorRatio": 1.216
+      },
+      "natural-rate-of-unemployment::legendaryBoss": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.8
+      },
+      "natural-rate-of-unemployment::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.75
+      },
+      "labor-market-institutions::easy": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.95
+      },
+      "labor-market-institutions::medium": {
+        "count": 2,
+        "longest": 1,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0.5,
+        "meanCorrectToDistractorRatio": 1.069
+      },
+      "labor-market-institutions::hard": {
+        "count": 2,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.888
+      },
+      "labor-market-institutions::easyBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.732
+      },
+      "labor-market-institutions::mediumBoss": {
+        "count": 3,
+        "longest": 0,
+        "positions": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.917
+      },
+      "labor-market-institutions::legendaryBoss": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.286
+      },
+      "labor-market-institutions::repair": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 1.125
+      },
+      "labor-market-institutions::bridge": {
+        "count": 1,
+        "longest": 0,
+        "positions": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "uniquelyLongestRate": 0,
+        "meanCorrectToDistractorRatio": 0.923
+      }
+    },
+    "exact": [],
+    "near": [],
+    "numberSwaps": [
+      [
+        "ECON-NL-HARD-260",
+        "ECON-NL-ELITE-360"
+      ],
+      [
+        "ECON-NL-EASY-66",
+        "ECON-NL-MEDIUM-162"
+      ],
+      [
+        "ECON-NL-EASY-65",
+        "ECON-NL-UNEMPLOYMENT-RATE-6027"
+      ],
+      [
+        "ECON-NL-FINALBOSS-4017",
+        "ECON-NL-NATURAL-RATE-6036"
+      ]
+    ],
+    "repeatedAnswerSets": [
+      [
+        "ECON-NL-EASY-69",
+        "ECON-NL-MEDIUM-165"
+      ],
+      [
+        "ECON-NL-EASY-70",
+        "ECON-NL-DISCOURAGED-WORKERS-5050"
+      ],
+      [
+        "ECON-NL-FINALBOSS-4006",
+        "ECON-NL-EMPLOYMENT-CLASSIFICATION-5049"
+      ],
+      [
+        "ECON-NL-FINALBOSS-4006",
+        "ECON-NL-EMPLOYMENT-CLASSIFICATION-6029"
+      ],
+      [
+        "ECON-NL-EASY-64",
+        "ECON-NL-LABOR-FORCE-CALCULATION-6026"
+      ],
+      [
+        "ECON-NL-EASY-74",
+        "ECON-NL-MEDIUM-170"
+      ],
+      [
+        "ECON-NL-EASY-76",
+        "ECON-NL-FINALBOSS-4020"
+      ],
+      [
+        "ECON-NL-LEGENDARY-9074",
+        "ECON-NL-FINALBOSS-4018"
+      ],
+      [
+        "ECON-NL-FINALBOSS-4010",
+        "ECON-NL-FRICTIONAL-UNEMPLOYMENT-6031"
+      ],
+      [
+        "ECON-NL-FINALBOSS-4013",
+        "ECON-NL-STRUCTURAL-UNEMPLOYMENT-6032"
+      ],
+      [
+        "ECON-NL-FINALBOSS-4031",
+        "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035"
+      ]
+    ],
+    "introducedExact": [],
+    "introducedNear": [],
+    "introducedNumberSwaps": [],
+    "introducedRepeatedAnswerSets": [],
+    "answerLengthFailures": []
+  },
+  "routeAudit": {
+    "unemployment-measurement": {
+      "repairRecords": 5,
+      "repairReachable": 5,
+      "bridgeRecords": 5,
+      "bridgeReachable": 5,
+      "bridgeDestinations": {
+        "ECON-NL-DISCOURAGED-WORKERS-6030": [],
+        "ECON-NL-EMPLOYMENT-CLASSIFICATION-6029": [],
+        "ECON-NL-LABOR-FORCE-CALCULATION-6026": [],
+        "ECON-NL-LABOR-FORCE-PARTICIPATION-6028": [],
+        "ECON-NL-UNEMPLOYMENT-RATE-6027": []
+      }
+    },
+    "unemployment-types": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 4,
+      "bridgeReachable": 4,
+      "bridgeDestinations": {
+        "ECON-NL-CYCLICAL-UNEMPLOYMENT-6033": [
+          "natural-rate-of-unemployment"
+        ],
+        "ECON-NL-FRICTIONAL-UNEMPLOYMENT-6031": [
+          "natural-rate-of-unemployment"
+        ],
+        "ECON-NL-STRUCTURAL-UNEMPLOYMENT-6032": [
+          "natural-rate-of-unemployment"
+        ],
+        "PM2B4-UTYPE-BR-001": [
+          "unemployment-measurement"
+        ]
+      }
+    },
+    "natural-rate-of-unemployment": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 1,
+      "bridgeReachable": 1,
+      "bridgeDestinations": {
+        "ECON-NL-NATURAL-RATE-6036": [
+          "unemployment-types"
+        ]
+      }
+    },
+    "labor-market-institutions": {
+      "repairRecords": 3,
+      "repairReachable": 3,
+      "bridgeRecords": 3,
+      "bridgeReachable": 3,
+      "bridgeDestinations": {
+        "ECON-NL-MINIMUM-WAGE-SURPLUS-6034": [],
+        "ECON-NL-UNIONS-EFFICIENCY-WAGES-6035": [],
+        "PM2B4-LMI-BR-001": [
+          "natural-rate-of-unemployment"
+        ]
+      }
+    }
+  },
+  "familyRepresentation": {
+    "standard": {
+      "ordinary": {
+        "counts": {
+          "labor-market-institutions": 564,
+          "natural-rate-of-unemployment": 614,
+          "unemployment-measurement": 959,
+          "unemployment-types": 563
+        },
+        "shares": {
+          "unemployment-measurement": 0.3552,
+          "unemployment-types": 0.2085,
+          "natural-rate-of-unemployment": 0.2274,
+          "labor-market-institutions": 0.2089
+        }
+      },
+      "boss": {
+        "counts": {
+          "unemployment-measurement": 222,
+          "natural-rate-of-unemployment": 180,
+          "labor-market-institutions": 255,
+          "unemployment-types": 243
+        },
+        "shares": {
+          "unemployment-measurement": 0.2467,
+          "unemployment-types": 0.27,
+          "natural-rate-of-unemployment": 0.2,
+          "labor-market-institutions": 0.2833
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      }
+    },
+    "timed": {
+      "ordinary": {
+        "counts": {
+          "labor-market-institutions": 635,
+          "natural-rate-of-unemployment": 661,
+          "unemployment-measurement": 1090,
+          "unemployment-types": 614
+        },
+        "shares": {
+          "unemployment-measurement": 0.3633,
+          "unemployment-types": 0.2047,
+          "natural-rate-of-unemployment": 0.2203,
+          "labor-market-institutions": 0.2117
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      }
+    },
+    "exam": {
+      "ordinary": {
+        "counts": {
+          "labor-market-institutions": 662,
+          "unemployment-measurement": 1058,
+          "unemployment-types": 661,
+          "natural-rate-of-unemployment": 619
+        },
+        "shares": {
+          "unemployment-measurement": 0.3527,
+          "unemployment-types": 0.2203,
+          "natural-rate-of-unemployment": 0.2063,
+          "labor-market-institutions": 0.2207
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      }
+    },
+    "legendary": {
+      "ordinary": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "boss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendary": {
+        "counts": {
+          "unemployment-measurement": 863,
+          "unemployment-types": 587,
+          "labor-market-institutions": 675,
+          "natural-rate-of-unemployment": 575
+        },
+        "shares": {
+          "unemployment-measurement": 0.3196,
+          "unemployment-types": 0.2174,
+          "natural-rate-of-unemployment": 0.213,
+          "labor-market-institutions": 0.25
+        }
+      },
+      "legendaryBoss": {
+        "counts": {
+          "unemployment-types": 219,
+          "labor-market-institutions": 227,
+          "natural-rate-of-unemployment": 225,
+          "unemployment-measurement": 229
+        },
+        "shares": {
+          "unemployment-measurement": 0.2544,
+          "unemployment-types": 0.2433,
+          "natural-rate-of-unemployment": 0.25,
+          "labor-market-institutions": 0.2522
+        }
+      }
+    },
+    "score": {
+      "ordinary": {
+        "counts": {
+          "unemployment-types": 563,
+          "labor-market-institutions": 542,
+          "natural-rate-of-unemployment": 596,
+          "unemployment-measurement": 999
+        },
+        "shares": {
+          "unemployment-measurement": 0.37,
+          "unemployment-types": 0.2085,
+          "natural-rate-of-unemployment": 0.2207,
+          "labor-market-institutions": 0.2007
+        }
+      },
+      "boss": {
+        "counts": {
+          "unemployment-types": 243,
+          "unemployment-measurement": 219,
+          "natural-rate-of-unemployment": 171,
+          "labor-market-institutions": 267
+        },
+        "shares": {
+          "unemployment-measurement": 0.2433,
+          "unemployment-types": 0.27,
+          "natural-rate-of-unemployment": 0.19,
+          "labor-market-institutions": 0.2967
+        }
+      },
+      "legendary": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      },
+      "legendaryBoss": {
+        "counts": {},
+        "shares": {
+          "unemployment-measurement": 0,
+          "unemployment-types": 0,
+          "natural-rate-of-unemployment": 0,
+          "labor-market-institutions": 0
+        }
+      }
+    }
+  },
+  "simulation": {
+    "totalSessions": 1150,
+    "solo": {
+      "unemployment-types": {
+        "name": "unemployment-types solo",
+        "perMode": 30,
+        "totalSessions": 150,
+        "byMode": {
+          "standard": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 1000,
+            "representation": {
+              "ordinary": {
+                "unemployment-types": 810
+              },
+              "boss": {
+                "unemployment-types": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 500
+              },
+              "bridge": {
+                "unemployment-types": 500
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 756,
+            "representation": {
+              "ordinary": {
+                "unemployment-types": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 378
+              },
+              "bridge": {
+                "unemployment-types": 378
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 782,
+            "representation": {
+              "ordinary": {
+                "unemployment-types": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 391
+              },
+              "bridge": {
+                "unemployment-types": 391
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 994,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "unemployment-types": 810
+              },
+              "legendaryBoss": {
+                "unemployment-types": 270
+              },
+              "repair": {
+                "unemployment-types": 497
+              },
+              "bridge": {
+                "unemployment-types": 497
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 810,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 972,
+            "representation": {
+              "ordinary": {
+                "unemployment-types": 810
+              },
+              "boss": {
+                "unemployment-types": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 486
+              },
+              "bridge": {
+                "unemployment-types": 486
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "natural-rate-of-unemployment": {
+        "name": "natural-rate-of-unemployment solo",
+        "perMode": 30,
+        "totalSessions": 150,
+        "byMode": {
+          "standard": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 976,
+            "representation": {
+              "ordinary": {
+                "natural-rate-of-unemployment": 810
+              },
+              "boss": {
+                "natural-rate-of-unemployment": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "natural-rate-of-unemployment": 488
+              },
+              "bridge": {
+                "natural-rate-of-unemployment": 488
+              }
+            },
+            "calculationExposure": 184,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 768,
+            "representation": {
+              "ordinary": {
+                "natural-rate-of-unemployment": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "natural-rate-of-unemployment": 384
+              },
+              "bridge": {
+                "natural-rate-of-unemployment": 384
+              }
+            },
+            "calculationExposure": 143,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 768,
+            "representation": {
+              "ordinary": {
+                "natural-rate-of-unemployment": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "natural-rate-of-unemployment": 384
+              },
+              "bridge": {
+                "natural-rate-of-unemployment": 384
+              }
+            },
+            "calculationExposure": 149,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 994,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "natural-rate-of-unemployment": 810
+              },
+              "legendaryBoss": {
+                "natural-rate-of-unemployment": 270
+              },
+              "repair": {
+                "natural-rate-of-unemployment": 497
+              },
+              "bridge": {
+                "natural-rate-of-unemployment": 497
+              }
+            },
+            "calculationExposure": 359,
+            "duplicateCanonicalSelectionsBySession": 810,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 980,
+            "representation": {
+              "ordinary": {
+                "natural-rate-of-unemployment": 810
+              },
+              "boss": {
+                "natural-rate-of-unemployment": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "natural-rate-of-unemployment": 490
+              },
+              "bridge": {
+                "natural-rate-of-unemployment": 490
+              }
+            },
+            "calculationExposure": 181,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "labor-market-institutions": {
+        "name": "labor-market-institutions solo",
+        "perMode": 30,
+        "totalSessions": 150,
+        "byMode": {
+          "standard": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 990,
+            "representation": {
+              "ordinary": {
+                "labor-market-institutions": 810
+              },
+              "boss": {
+                "labor-market-institutions": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "labor-market-institutions": 495
+              },
+              "bridge": {
+                "labor-market-institutions": 495
+              }
+            },
+            "calculationExposure": 11,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 778,
+            "representation": {
+              "ordinary": {
+                "labor-market-institutions": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "labor-market-institutions": 389
+              },
+              "bridge": {
+                "labor-market-institutions": 389
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 900,
+            "auxiliarySelections": 760,
+            "representation": {
+              "ordinary": {
+                "labor-market-institutions": 900
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "labor-market-institutions": 380
+              },
+              "bridge": {
+                "labor-market-institutions": 380
+              }
+            },
+            "calculationExposure": 0,
+            "duplicateCanonicalSelectionsBySession": 360,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 984,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "labor-market-institutions": 810
+              },
+              "legendaryBoss": {
+                "labor-market-institutions": 270
+              },
+              "repair": {
+                "labor-market-institutions": 492
+              },
+              "bridge": {
+                "labor-market-institutions": 492
+              }
+            },
+            "calculationExposure": 205,
+            "duplicateCanonicalSelectionsBySession": 780,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 30,
+            "completed": 30,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 6,
+              "all-incorrect": 6,
+              "alternating": 6,
+              "random-70-percent": 6,
+              "remediation-heavy-boss-failure": 6
+            },
+            "mainSelections": 1080,
+            "auxiliarySelections": 998,
+            "representation": {
+              "ordinary": {
+                "labor-market-institutions": 810
+              },
+              "boss": {
+                "labor-market-institutions": 270
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "labor-market-institutions": 499
+              },
+              "bridge": {
+                "labor-market-institutions": 499
+              }
+            },
+            "calculationExposure": 11,
+            "duplicateCanonicalSelectionsBySession": 270,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "family": {
+      "name": "F4 family",
+      "perMode": 100,
+      "totalSessions": 500,
+      "byMode": {
+        "standard": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3600,
+          "auxiliarySelections": 3322,
+          "representation": {
+            "ordinary": {
+              "labor-market-institutions": 564,
+              "natural-rate-of-unemployment": 614,
+              "unemployment-measurement": 959,
+              "unemployment-types": 563
+            },
+            "boss": {
+              "unemployment-measurement": 222,
+              "natural-rate-of-unemployment": 180,
+              "labor-market-institutions": 255,
+              "unemployment-types": 243
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "unemployment-types": 417,
+              "labor-market-institutions": 406,
+              "natural-rate-of-unemployment": 333,
+              "unemployment-measurement": 505
+            },
+            "bridge": {
+              "labor-market-institutions": 399,
+              "unemployment-types": 530,
+              "natural-rate-of-unemployment": 178,
+              "unemployment-measurement": 554
+            }
+          },
+          "calculationExposure": 561,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "timed": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3000,
+          "auxiliarySelections": 2550,
+          "representation": {
+            "ordinary": {
+              "labor-market-institutions": 635,
+              "natural-rate-of-unemployment": 661,
+              "unemployment-measurement": 1090,
+              "unemployment-types": 614
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "natural-rate-of-unemployment": 222,
+              "unemployment-measurement": 489,
+              "unemployment-types": 294,
+              "labor-market-institutions": 270
+            },
+            "bridge": {
+              "natural-rate-of-unemployment": 119,
+              "unemployment-measurement": 525,
+              "labor-market-institutions": 274,
+              "unemployment-types": 357
+            }
+          },
+          "calculationExposure": 515,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "exam": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3000,
+          "auxiliarySelections": 2570,
+          "representation": {
+            "ordinary": {
+              "labor-market-institutions": 662,
+              "unemployment-measurement": 1058,
+              "unemployment-types": 661,
+              "natural-rate-of-unemployment": 619
+            },
+            "boss": {},
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "unemployment-measurement": 498,
+              "unemployment-types": 322,
+              "labor-market-institutions": 271,
+              "natural-rate-of-unemployment": 194
+            },
+            "bridge": {
+              "unemployment-measurement": 523,
+              "unemployment-types": 377,
+              "labor-market-institutions": 264,
+              "natural-rate-of-unemployment": 121
+            }
+          },
+          "calculationExposure": 526,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "legendary": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3600,
+          "auxiliarySelections": 3342,
+          "representation": {
+            "ordinary": {},
+            "boss": {},
+            "legendary": {
+              "unemployment-measurement": 863,
+              "unemployment-types": 587,
+              "labor-market-institutions": 675,
+              "natural-rate-of-unemployment": 575
+            },
+            "legendaryBoss": {
+              "unemployment-types": 219,
+              "labor-market-institutions": 227,
+              "natural-rate-of-unemployment": 225,
+              "unemployment-measurement": 229
+            },
+            "repair": {
+              "natural-rate-of-unemployment": 377,
+              "unemployment-measurement": 510,
+              "unemployment-types": 398,
+              "labor-market-institutions": 386
+            },
+            "bridge": {
+              "labor-market-institutions": 385,
+              "unemployment-measurement": 553,
+              "unemployment-types": 462,
+              "natural-rate-of-unemployment": 271
+            }
+          },
+          "calculationExposure": 971,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        },
+        "score": {
+          "sessions": 100,
+          "completed": 100,
+          "routingFailures": 0,
+          "patterns": {
+            "all-correct": 20,
+            "all-incorrect": 20,
+            "alternating": 20,
+            "random-70-percent": 20,
+            "remediation-heavy-boss-failure": 20
+          },
+          "mainSelections": 3600,
+          "auxiliarySelections": 3318,
+          "representation": {
+            "ordinary": {
+              "unemployment-types": 563,
+              "labor-market-institutions": 542,
+              "natural-rate-of-unemployment": 596,
+              "unemployment-measurement": 999
+            },
+            "boss": {
+              "unemployment-types": 243,
+              "unemployment-measurement": 219,
+              "natural-rate-of-unemployment": 171,
+              "labor-market-institutions": 267
+            },
+            "legendary": {},
+            "legendaryBoss": {},
+            "repair": {
+              "unemployment-measurement": 499,
+              "labor-market-institutions": 398,
+              "natural-rate-of-unemployment": 332,
+              "unemployment-types": 430
+            },
+            "bridge": {
+              "unemployment-measurement": 551,
+              "unemployment-types": 508,
+              "natural-rate-of-unemployment": 194,
+              "labor-market-institutions": 406
+            }
+          },
+          "calculationExposure": 600,
+          "duplicateCanonicalSelectionsBySession": 0,
+          "immediateRepeats": 0
+        }
+      }
+    },
+    "cross": {
+      "A": {
+        "name": "Cross-family A",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 73,
+                "natural-rate-of-unemployment": 57,
+                "unemployment-types": 55,
+                "unemployment-measurement": 91,
+                "living-standards-and-growth": 73,
+                "economic-growth-policy": 62,
+                "labor-market-institutions": 57,
+                "sources-of-productivity": 72
+              },
+              "boss": {
+                "productivity-measurement": 18,
+                "labor-market-institutions": 35,
+                "living-standards-and-growth": 17,
+                "unemployment-types": 18,
+                "sources-of-productivity": 32,
+                "natural-rate-of-unemployment": 17,
+                "economic-growth-policy": 19,
+                "unemployment-measurement": 24
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-measurement": 53,
+                "natural-rate-of-unemployment": 30,
+                "economic-growth-policy": 33,
+                "sources-of-productivity": 51,
+                "unemployment-types": 44,
+                "productivity-measurement": 49,
+                "living-standards-and-growth": 26,
+                "labor-market-institutions": 43
+              },
+              "bridge": {
+                "unemployment-measurement": 57,
+                "natural-rate-of-unemployment": 22,
+                "economic-growth-policy": 31,
+                "sources-of-productivity": 55,
+                "labor-market-institutions": 43,
+                "productivity-measurement": 48,
+                "living-standards-and-growth": 23,
+                "unemployment-types": 50
+              }
+            },
+            "calculationExposure": 146,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 504,
+            "representation": {
+              "ordinary": {
+                "sources-of-productivity": 85,
+                "economic-growth-policy": 55,
+                "productivity-measurement": 97,
+                "unemployment-measurement": 92,
+                "natural-rate-of-unemployment": 61,
+                "unemployment-types": 60,
+                "living-standards-and-growth": 75,
+                "labor-market-institutions": 75
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "natural-rate-of-unemployment": 23,
+                "unemployment-measurement": 41,
+                "economic-growth-policy": 31,
+                "unemployment-types": 25,
+                "labor-market-institutions": 24,
+                "productivity-measurement": 52,
+                "living-standards-and-growth": 29,
+                "sources-of-productivity": 27
+              },
+              "bridge": {
+                "unemployment-measurement": 42,
+                "economic-growth-policy": 36,
+                "unemployment-types": 30,
+                "productivity-measurement": 51,
+                "living-standards-and-growth": 27,
+                "sources-of-productivity": 30,
+                "labor-market-institutions": 25,
+                "natural-rate-of-unemployment": 11
+              }
+            },
+            "calculationExposure": 113,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 512,
+            "representation": {
+              "ordinary": {
+                "productivity-measurement": 85,
+                "living-standards-and-growth": 88,
+                "sources-of-productivity": 82,
+                "unemployment-measurement": 118,
+                "natural-rate-of-unemployment": 53,
+                "economic-growth-policy": 66,
+                "labor-market-institutions": 54,
+                "unemployment-types": 54
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-types": 20,
+                "living-standards-and-growth": 32,
+                "productivity-measurement": 40,
+                "sources-of-productivity": 31,
+                "natural-rate-of-unemployment": 20,
+                "labor-market-institutions": 20,
+                "unemployment-measurement": 61,
+                "economic-growth-policy": 32
+              },
+              "bridge": {
+                "unemployment-types": 24,
+                "living-standards-and-growth": 28,
+                "productivity-measurement": 44,
+                "sources-of-productivity": 37,
+                "natural-rate-of-unemployment": 12,
+                "labor-market-institutions": 20,
+                "unemployment-measurement": 61,
+                "economic-growth-policy": 30
+              }
+            },
+            "calculationExposure": 128,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "labor-market-institutions": 68,
+                "sources-of-productivity": 65,
+                "unemployment-types": 56,
+                "living-standards-and-growth": 50,
+                "natural-rate-of-unemployment": 67,
+                "unemployment-measurement": 99,
+                "economic-growth-policy": 70,
+                "productivity-measurement": 65
+              },
+              "legendaryBoss": {
+                "sources-of-productivity": 20,
+                "unemployment-types": 26,
+                "unemployment-measurement": 21,
+                "productivity-measurement": 26,
+                "living-standards-and-growth": 25,
+                "labor-market-institutions": 23,
+                "economic-growth-policy": 22,
+                "natural-rate-of-unemployment": 17
+              },
+              "repair": {
+                "economic-growth-policy": 47,
+                "unemployment-measurement": 49,
+                "living-standards-and-growth": 24,
+                "natural-rate-of-unemployment": 36,
+                "productivity-measurement": 58,
+                "labor-market-institutions": 47,
+                "unemployment-types": 43,
+                "sources-of-productivity": 31
+              },
+              "bridge": {
+                "economic-growth-policy": 47,
+                "unemployment-measurement": 57,
+                "living-standards-and-growth": 24,
+                "natural-rate-of-unemployment": 20,
+                "productivity-measurement": 59,
+                "labor-market-institutions": 44,
+                "unemployment-types": 52,
+                "sources-of-productivity": 32
+              }
+            },
+            "calculationExposure": 172,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 670,
+            "representation": {
+              "ordinary": {
+                "unemployment-types": 54,
+                "sources-of-productivity": 68,
+                "natural-rate-of-unemployment": 63,
+                "productivity-measurement": 78,
+                "economic-growth-policy": 46,
+                "unemployment-measurement": 95,
+                "labor-market-institutions": 59,
+                "living-standards-and-growth": 77
+              },
+              "boss": {
+                "unemployment-types": 18,
+                "sources-of-productivity": 24,
+                "natural-rate-of-unemployment": 14,
+                "living-standards-and-growth": 25,
+                "labor-market-institutions": 29,
+                "economic-growth-policy": 23,
+                "unemployment-measurement": 26,
+                "productivity-measurement": 21
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "labor-market-institutions": 48,
+                "sources-of-productivity": 48,
+                "unemployment-types": 35,
+                "living-standards-and-growth": 35,
+                "unemployment-measurement": 52,
+                "natural-rate-of-unemployment": 36,
+                "economic-growth-policy": 33,
+                "productivity-measurement": 48
+              },
+              "bridge": {
+                "labor-market-institutions": 51,
+                "unemployment-measurement": 60,
+                "living-standards-and-growth": 38,
+                "sources-of-productivity": 49,
+                "economic-growth-policy": 31,
+                "unemployment-types": 44,
+                "productivity-measurement": 47,
+                "natural-rate-of-unemployment": 15
+              }
+            },
+            "calculationExposure": 155,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      },
+      "B": {
+        "name": "Cross-family B",
+        "perMode": 20,
+        "totalSessions": 100,
+        "byMode": {
+          "standard": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 52,
+                "phillips-curve-expectations": 64,
+                "sacrifice-ratio": 58,
+                "natural-rate-of-unemployment": 57,
+                "labor-market-institutions": 62,
+                "long-run-phillips-curve": 55,
+                "unemployment-measurement": 87,
+                "unemployment-types": 50,
+                "short-run-phillips-curve": 55
+              },
+              "boss": {
+                "labor-market-institutions": 34,
+                "phillips-curve-expectations": 13,
+                "short-run-phillips-curve": 16,
+                "natural-rate-of-unemployment": 24,
+                "unemployment-types": 28,
+                "long-run-phillips-curve": 22,
+                "disinflation-and-policy": 14,
+                "sacrifice-ratio": 15,
+                "unemployment-measurement": 14
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "phillips-curve-expectations": 30,
+                "unemployment-measurement": 39,
+                "disinflation-and-policy": 29,
+                "short-run-phillips-curve": 57,
+                "long-run-phillips-curve": 32,
+                "natural-rate-of-unemployment": 32,
+                "unemployment-types": 36,
+                "labor-market-institutions": 50,
+                "sacrifice-ratio": 24
+              },
+              "bridge": {
+                "phillips-curve-expectations": 29,
+                "unemployment-measurement": 40,
+                "disinflation-and-policy": 32,
+                "short-run-phillips-curve": 54,
+                "natural-rate-of-unemployment": 20,
+                "unemployment-types": 39,
+                "labor-market-institutions": 48,
+                "sacrifice-ratio": 28,
+                "long-run-phillips-curve": 39
+              }
+            },
+            "calculationExposure": 97,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "timed": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 524,
+            "representation": {
+              "ordinary": {
+                "labor-market-institutions": 53,
+                "unemployment-measurement": 103,
+                "disinflation-and-policy": 58,
+                "natural-rate-of-unemployment": 67,
+                "long-run-phillips-curve": 57,
+                "short-run-phillips-curve": 60,
+                "sacrifice-ratio": 71,
+                "phillips-curve-expectations": 68,
+                "unemployment-types": 63
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-measurement": 53,
+                "long-run-phillips-curve": 31,
+                "phillips-curve-expectations": 29,
+                "short-run-phillips-curve": 38,
+                "natural-rate-of-unemployment": 15,
+                "sacrifice-ratio": 19,
+                "unemployment-types": 33,
+                "disinflation-and-policy": 28,
+                "labor-market-institutions": 16
+              },
+              "bridge": {
+                "unemployment-measurement": 53,
+                "long-run-phillips-curve": 33,
+                "phillips-curve-expectations": 32,
+                "short-run-phillips-curve": 32,
+                "disinflation-and-policy": 31,
+                "sacrifice-ratio": 20,
+                "unemployment-types": 36,
+                "natural-rate-of-unemployment": 9,
+                "labor-market-institutions": 16
+              }
+            },
+            "calculationExposure": 89,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "exam": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 600,
+            "auxiliarySelections": 498,
+            "representation": {
+              "ordinary": {
+                "unemployment-measurement": 110,
+                "disinflation-and-policy": 60,
+                "sacrifice-ratio": 68,
+                "long-run-phillips-curve": 63,
+                "unemployment-types": 42,
+                "natural-rate-of-unemployment": 63,
+                "phillips-curve-expectations": 68,
+                "labor-market-institutions": 61,
+                "short-run-phillips-curve": 65
+              },
+              "boss": {},
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-measurement": 46,
+                "short-run-phillips-curve": 39,
+                "unemployment-types": 18,
+                "long-run-phillips-curve": 30,
+                "labor-market-institutions": 26,
+                "disinflation-and-policy": 30,
+                "natural-rate-of-unemployment": 19,
+                "sacrifice-ratio": 17,
+                "phillips-curve-expectations": 24
+              },
+              "bridge": {
+                "unemployment-measurement": 46,
+                "short-run-phillips-curve": 36,
+                "unemployment-types": 21,
+                "labor-market-institutions": 28,
+                "disinflation-and-policy": 32,
+                "natural-rate-of-unemployment": 9,
+                "sacrifice-ratio": 18,
+                "phillips-curve-expectations": 32,
+                "long-run-phillips-curve": 27
+              }
+            },
+            "calculationExposure": 95,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "legendary": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 658,
+            "representation": {
+              "ordinary": {},
+              "boss": {},
+              "legendary": {
+                "natural-rate-of-unemployment": 53,
+                "phillips-curve-expectations": 58,
+                "disinflation-and-policy": 53,
+                "unemployment-types": 59,
+                "unemployment-measurement": 86,
+                "labor-market-institutions": 61,
+                "short-run-phillips-curve": 55,
+                "sacrifice-ratio": 53,
+                "long-run-phillips-curve": 62
+              },
+              "legendaryBoss": {
+                "labor-market-institutions": 19,
+                "long-run-phillips-curve": 29,
+                "disinflation-and-policy": 16,
+                "natural-rate-of-unemployment": 26,
+                "unemployment-measurement": 23,
+                "phillips-curve-expectations": 16,
+                "short-run-phillips-curve": 20,
+                "sacrifice-ratio": 19,
+                "unemployment-types": 12
+              },
+              "repair": {
+                "short-run-phillips-curve": 42,
+                "sacrifice-ratio": 30,
+                "phillips-curve-expectations": 28,
+                "unemployment-types": 33,
+                "labor-market-institutions": 41,
+                "natural-rate-of-unemployment": 32,
+                "unemployment-measurement": 53,
+                "long-run-phillips-curve": 29,
+                "disinflation-and-policy": 41
+              },
+              "bridge": {
+                "phillips-curve-expectations": 27,
+                "sacrifice-ratio": 29,
+                "unemployment-types": 37,
+                "labor-market-institutions": 39,
+                "natural-rate-of-unemployment": 22,
+                "disinflation-and-policy": 45,
+                "unemployment-measurement": 57,
+                "short-run-phillips-curve": 46,
+                "long-run-phillips-curve": 27
+              }
+            },
+            "calculationExposure": 201,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          },
+          "score": {
+            "sessions": 20,
+            "completed": 20,
+            "routingFailures": 0,
+            "patterns": {
+              "all-correct": 4,
+              "all-incorrect": 4,
+              "alternating": 4,
+              "random-70-percent": 4,
+              "remediation-heavy-boss-failure": 4
+            },
+            "mainSelections": 720,
+            "auxiliarySelections": 664,
+            "representation": {
+              "ordinary": {
+                "disinflation-and-policy": 56,
+                "unemployment-types": 43,
+                "sacrifice-ratio": 70,
+                "short-run-phillips-curve": 61,
+                "long-run-phillips-curve": 64,
+                "labor-market-institutions": 53,
+                "unemployment-measurement": 75,
+                "phillips-curve-expectations": 66,
+                "natural-rate-of-unemployment": 52
+              },
+              "boss": {
+                "phillips-curve-expectations": 20,
+                "short-run-phillips-curve": 18,
+                "long-run-phillips-curve": 20,
+                "labor-market-institutions": 31,
+                "unemployment-types": 20,
+                "unemployment-measurement": 23,
+                "natural-rate-of-unemployment": 18,
+                "sacrifice-ratio": 12,
+                "disinflation-and-policy": 18
+              },
+              "legendary": {},
+              "legendaryBoss": {},
+              "repair": {
+                "unemployment-measurement": 36,
+                "short-run-phillips-curve": 60,
+                "phillips-curve-expectations": 38,
+                "unemployment-types": 27,
+                "natural-rate-of-unemployment": 32,
+                "long-run-phillips-curve": 33,
+                "sacrifice-ratio": 27,
+                "disinflation-and-policy": 40,
+                "labor-market-institutions": 39
+              },
+              "bridge": {
+                "unemployment-measurement": 34,
+                "short-run-phillips-curve": 51,
+                "phillips-curve-expectations": 40,
+                "unemployment-types": 35,
+                "natural-rate-of-unemployment": 17,
+                "sacrifice-ratio": 25,
+                "long-run-phillips-curve": 44,
+                "disinflation-and-policy": 48,
+                "labor-market-institutions": 38
+              }
+            },
+            "calculationExposure": 90,
+            "duplicateCanonicalSelectionsBySession": 0,
+            "immediateRepeats": 0
+          }
+        }
+      }
+    },
+    "responsePatterns": [
+      "all-correct",
+      "all-incorrect",
+      "alternating",
+      "random-70-percent",
+      "remediation-heavy-boss-failure"
+    ]
+  },
+  "mathAudit": {
+    "numericRecordsReviewed": 51,
+    "independentlyRecomputed": 16,
+    "dedicatedCalculationRecords": 8,
+    "failures": 0
+  },
+  "packages": {
+    "family": {
+      "path": "validation_artifacts/macro_m2b4_unemployment/generated_packages/family/index.html",
+      "htmlSha256": "360c9ddc6d19ba8a5c980475583f4a316b042fb3cceb7570dec411583abbb59d",
+      "bytes": 913092,
+      "counts": {
+        "easy": 28,
+        "medium": 28,
+        "hard": 28,
+        "elite": 21,
+        "legendary": 28,
+        "easyBoss": 12,
+        "mediumBoss": 12,
+        "finalBoss": 42,
+        "legendaryBoss": 12,
+        "repair": 14,
+        "repairSeed": 0,
+        "bridge": 13,
+        "calculation": 8,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 238
+      }
+    },
+    "natural": {
+      "path": "validation_artifacts/macro_m2b4_unemployment/generated_packages/natural/index.html",
+      "htmlSha256": "d4ebde26390818c95e299a91886475d5d45754ce1233961e4d9d4fb3d345e6e7",
+      "bytes": 384061,
+      "counts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 2,
+        "legendary": 6,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 5,
+        "legendaryBoss": 3,
+        "repair": 3,
+        "repairSeed": 0,
+        "bridge": 1,
+        "calculation": 0,
+        "integration": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 44
+      }
+    }
+  },
+  "browser": {
+    "phase": "phaseM2b4-unemployment-labor-family-maturation-v1",
+    "passed": false,
+    "pending": false,
+    "environmentUnavailable": true,
+    "staticPackageChecksPassed": true,
+    "summary": "Generated family and Natural Rate packages passed composition, five-mode markup, and inline-script syntax checks. Chromium did not complete page load in this container and timed out with host D-Bus/runtime errors; this is treated as an environment limitation rather than an application-level browser failure.",
+    "packages": {
+      "family": {
+        "fiveModeMarkup": true,
+        "inlineScriptSyntax": true
+      },
+      "natural": {
+        "fiveModeMarkup": true,
+        "inlineScriptSyntax": true
+      }
+    },
+    "chromiumAttempt": {
+      "status": "environment-timeout-before-page-load",
+      "exitCode": 124,
+      "domBytes": 0
+    },
+    "nonBlockingIssues": [
+      "Full interactive Chromium browser QA could not be executed in this container. A short local Standard + Legendary smoke test is recommended after overlaying the phase files."
+    ]
+  },
+  "verdict": "MACRO M2b-4 COMPLETE WITH NON-BLOCKING ISSUES"
+}

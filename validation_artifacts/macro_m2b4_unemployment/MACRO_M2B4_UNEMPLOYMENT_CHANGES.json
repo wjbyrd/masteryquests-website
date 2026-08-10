@@ -1,0 +1,483 @@
+{
+  "phase": "phaseM2b4-unemployment-labor-family-maturation-v1",
+  "generatedAt": "2026-08-10T18:06:24.836Z",
+  "summary": {
+    "added": 48,
+    "bossStageFixed": 8,
+    "repairAdded": 2,
+    "bridgeAdded": 2,
+    "removed": 0,
+    "relocated": 0,
+    "measurementQuestionContentChanged": false
+  },
+  "changes": [
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9126",
+      "canonicalConceptId": "unemployment-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9125",
+      "canonicalConceptId": "unemployment-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9124",
+      "canonicalConceptId": "unemployment-measurement",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9127",
+      "canonicalConceptId": "unemployment-types",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9131",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9130",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate middle stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "middle"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9128",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate opening stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "opening"
+    },
+    {
+      "questionId": "ECON-NL-LEGENDARYBOSS-9129",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "BOSS_STAGE_FIX",
+      "oldPool": "legendaryBoss",
+      "newPool": "legendaryBoss",
+      "reason": "Assigns semantically appropriate final stage without changing question content.",
+      "beforeBossStage": null,
+      "afterBossStage": "final"
+    },
+    {
+      "questionId": "PM2B4-UTYPE-M-001",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-H-001",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-L-001",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-L-002",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-EB-001",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-EB-002",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-EB-003",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-MB-004",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-MB-005",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-MB-006",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-LB-001",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-LB-002",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-E-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-E-002",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-M-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-M-002",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-H-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-H-002",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-H-003",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-H-004",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-H-005",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-L-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-L-002",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-L-003",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendary",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-EB-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-EB-002",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-EB-003",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-MB-004",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-MB-005",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-MB-006",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-LB-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-NRU-R-001",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "repair",
+      "reason": "Adds a targeted repair connection required by the F4 blueprint."
+    },
+    {
+      "questionId": "PM2B4-LMI-E-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-E-002",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easy",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-M-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-M-002",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "medium",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-H-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-H-002",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "hard",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-EB-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-EB-002",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-EB-003",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "easyBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-MB-004",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-MB-005",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-MB-006",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "mediumBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-LB-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "legendaryBoss",
+      "reason": "Closes a verified F4 engine or instructional gap."
+    },
+    {
+      "questionId": "PM2B4-LMI-R-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "repair",
+      "reason": "Adds a targeted repair connection required by the F4 blueprint."
+    },
+    {
+      "questionId": "PM2B4-LMI-BR-001",
+      "canonicalConceptId": "labor-market-institutions",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "bridge",
+      "reason": "Adds a targeted bridge connection required by the F4 blueprint."
+    },
+    {
+      "questionId": "PM2B4-UTYPE-BR-001",
+      "canonicalConceptId": "unemployment-types",
+      "action": "ADD",
+      "oldPool": null,
+      "newPool": "bridge",
+      "reason": "Adds a targeted bridge connection required by the F4 blueprint."
+    }
+  ],
+  "protectedIntegrity": {
+    "mismatches": 0,
+    "measurementQuestionContentUnchanged": true
+  }
+}

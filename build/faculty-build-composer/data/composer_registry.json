@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-10T17:24:49.928Z",
+  "generatedAt": "2026-08-10T18:06:13.354Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -2949,7 +2949,6 @@
       "includedSkills": [
         "frictional_unemployment",
         "minimum_wage_surplus",
-        "natural_rate",
         "unions_efficiency_wages"
       ],
       "excludedNeighboringSkills": [],
@@ -2969,42 +2968,42 @@
         "national-ledger"
       ],
       "questionCountByRole": {
-        "boss": 14,
-        "bridge": 2,
+        "boss": 20,
+        "bridge": 3,
         "calculation": 0,
         "elite": 4,
         "integration": 0,
         "legendary": 7,
-        "legendaryBoss": 2,
-        "main": 12,
-        "repair": 2,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
+        "easy": 9,
+        "medium": 9,
+        "hard": 20,
         "elite": 4,
-        "hard": 18,
-        "legendary": 9,
-        "medium": 4,
-        "unknown": 4
+        "legendary": 10,
+        "unknown": 6
       },
       "repairCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 39
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 58
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 39
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 58
       },
-      "calculationCoverage": 5,
+      "calculationCoverage": 6,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
+      "instructionalClassification": "Engine-safe Unemployment and Labor family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in F4 family",
+      "coverageStatusNote": "Phase M2b-4 supplies solo floors with controlled reuse, rebalances early checkpoints, strengthens Natural Rate, and connects Measurement → Types → Natural Rate → Institutions.",
+      "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     },
     {
       "canonicalConceptId": "limits-of-gdp",
@@ -4811,14 +4810,12 @@
       "includedSkills": [
         "below_natural_rate_interpretation",
         "cyclical_return_to_natural",
-        "frictional_unemployment",
         "natural_rate",
         "natural_rate_components",
         "natural_rate_hysteresis",
         "natural_rate_not_fixed",
         "natural_rate_policy_shift",
-        "structural_change_natural_rate",
-        "structural_unemployment"
+        "structural_change_natural_rate"
       ],
       "excludedNeighboringSkills": [
         "Assigned to unemployment-measurement, not this module."
@@ -4840,42 +4837,42 @@
         "national-ledger"
       ],
       "questionCountByRole": {
-        "boss": 5,
+        "boss": 11,
         "bridge": 1,
         "calculation": 0,
         "elite": 2,
         "integration": 0,
-        "legendary": 3,
-        "legendaryBoss": 2,
-        "main": 9,
-        "repair": 2,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
+        "easy": 9,
+        "medium": 9,
+        "hard": 11,
         "elite": 2,
-        "hard": 6,
-        "legendary": 5,
-        "medium": 4,
-        "unknown": 3
+        "legendary": 9,
+        "unknown": 4
       },
       "repairCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 21
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 44
       },
       "bridgeCoverage": {
         "directSkillMatches": 1,
-        "mainWithUsableSkill": 21
+        "mainWithUsableSkill": 44
       },
-      "calculationCoverage": 3,
+      "calculationCoverage": 10,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
+      "instructionalClassification": "Engine-safe Unemployment and Labor family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in F4 family",
+      "coverageStatusNote": "Phase M2b-4 supplies solo floors with controlled reuse, rebalances early checkpoints, strengthens Natural Rate, and connects Measurement → Types → Natural Rate → Institutions.",
+      "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     },
     {
       "canonicalConceptId": "oligopoly",
@@ -6733,12 +6730,10 @@
         "discouraged_workers",
         "employment_classification",
         "employment_to_unemployment_flow",
-        "frictional_unemployment",
         "labor_force_calculation",
         "labor_force_definition",
         "labor_force_participation",
         "natural_rate",
-        "structural_unemployment",
         "underemployment_classification",
         "unemployment_rate"
       ],
@@ -6778,30 +6773,30 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 13,
+        "easy": 10,
+        "medium": 9,
+        "hard": 20,
         "elite": 10,
-        "hard": 21,
         "legendary": 12,
-        "medium": 13,
         "unknown": 10
       },
       "repairCoverage": {
         "directSkillMatches": 5,
-        "mainWithUsableSkill": 61
+        "mainWithUsableSkill": 79
       },
       "bridgeCoverage": {
         "directSkillMatches": 5,
-        "mainWithUsableSkill": 61
+        "mainWithUsableSkill": 79
       },
-      "calculationCoverage": 16,
+      "calculationCoverage": 31,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Standalone-ready",
-      "coverageStatus": "ready-focused",
-      "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
+      "instructionalClassification": "Deep family component; protected in M2b-4",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in F4 family",
+      "coverageStatusNote": "Phase M2b-4 supplies solo floors with controlled reuse, rebalances early checkpoints, strengthens Natural Rate, and connects Measurement → Types → Natural Rate → Institutions.",
+      "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     },
     {
       "canonicalConceptId": "unemployment-types",
@@ -6810,7 +6805,6 @@
       "includedSkills": [
         "cyclical_unemployment",
         "frictional_unemployment",
-        "natural_rate",
         "structural_unemployment"
       ],
       "excludedNeighboringSkills": [
@@ -6833,47 +6827,47 @@
         "national-ledger"
       ],
       "questionCountByRole": {
-        "boss": 12,
-        "bridge": 3,
+        "boss": 18,
+        "bridge": 4,
         "calculation": 0,
         "elite": 5,
         "integration": 0,
-        "legendary": 4,
-        "legendaryBoss": 1,
-        "main": 16,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
+        "easy": 9,
+        "medium": 9,
+        "hard": 18,
         "elite": 5,
-        "hard": 17,
-        "legendary": 5,
-        "medium": 5,
-        "unknown": 6
+        "legendary": 9,
+        "unknown": 7
       },
       "repairCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 38
+        "mainWithUsableSkill": 57
       },
       "bridgeCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 38
+        "directSkillMatches": 4,
+        "mainWithUsableSkill": 57
       },
       "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
-      "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
-      "instructionalClassification": "Core supporting concept",
-      "coverageStatus": "best-paired",
-      "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
+      "instructionalClassification": "Engine-safe Unemployment and Labor family slice",
+      "coverageStatus": "ready-family-slice",
+      "coverageStatusLabel": "Engine-safe alone; deepest in F4 family",
+      "coverageStatusNote": "Phase M2b-4 supplies solo floors with controlled reuse, rebalances early checkpoints, strengthens Natural Rate, and connects Measurement → Types → Natural Rate → Institutions.",
+      "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
   "curationPhase": "phase6.2d-international-trade-graph-expansion-v2",
   "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1",
-  "canonicalQuestionCount": 7109,
-  "librarySha256": "5aefadd42d6f5d3811e6fa380605ce91b53fab4e50fd94bc831341f9990329eb"
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1",
+  "canonicalQuestionCount": 7157,
+  "librarySha256": "5b25f2f333227fb6c54edde16ab0a741e4e2dbd89fe3333cde2c092a486c4e75"
 }

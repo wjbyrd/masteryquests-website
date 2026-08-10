@@ -1,0 +1,26 @@
+{
+  "phase": "phaseM2b4-unemployment-labor-family-maturation-v1",
+  "passed": false,
+  "pending": false,
+  "environmentUnavailable": true,
+  "staticPackageChecksPassed": true,
+  "summary": "Generated family and Natural Rate packages passed composition, five-mode markup, and inline-script syntax checks. Chromium did not complete page load in this container and timed out with host D-Bus/runtime errors; this is treated as an environment limitation rather than an application-level browser failure.",
+  "packages": {
+    "family": {
+      "fiveModeMarkup": true,
+      "inlineScriptSyntax": true
+    },
+    "natural": {
+      "fiveModeMarkup": true,
+      "inlineScriptSyntax": true
+    }
+  },
+  "chromiumAttempt": {
+    "status": "environment-timeout-before-page-load",
+    "exitCode": 124,
+    "domBytes": 0
+  },
+  "nonBlockingIssues": [
+    "Full interactive Chromium browser QA could not be executed in this container. A short local Standard + Legendary smoke test is recommended after overlaying the phase files."
+  ]
+}
