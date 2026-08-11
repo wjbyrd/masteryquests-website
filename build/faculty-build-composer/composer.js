@@ -224,6 +224,69 @@ function setActiveArea(area){
   $('areaFilter').value = normalized;
   $('conceptSearch').disabled = !normalized;
   $('selectionFilter').disabled = !normalized;
+  document.querySelectorAll('[data-selection-filter]').forEach(button => {
+    button.disabled = !normalized;
+  });
+}
+
+function conceptMatchesSearch(concept, search){
+  const haystack = [
+    concept.title,
+    concept.description,
+    ...(concept.includedSkills || [])
+  ].join(' ').toLowerCase();
+  return !search || haystack.includes(search);
+}
+
+function updateBrowseFilterControls(area, search){
+  const filter = $('selectionFilter').value || 'all';
+  const candidates = area ? registry.filter(concept => {
+    if(concept.supplementType === 'checkpoint-challenge') return false;
+    if(!conceptAreas(concept.canonicalConceptId).includes(area)) return false;
+    return conceptMatchesSearch(concept, search);
+  }) : [];
+  const selectedCount = candidates.filter(concept => state.selectedConceptIds.includes(concept.canonicalConceptId)).length;
+  const counts = {
+    all: candidates.length,
+    selected: selectedCount,
+    unselected: candidates.length - selectedCount
+  };
+
+  document.querySelectorAll('[data-selection-filter]').forEach(button => {
+    const key = button.dataset.selectionFilter;
+    const active = key === filter;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    const count = button.querySelector(`[data-filter-count="${key}"]`);
+    if(count) count.textContent = counts[key] ?? 0;
+  });
+}
+
+function facultyCoverageDisplay(concept){
+  const rawLabel = String(concept.coverageStatusLabel || '');
+  if(rawLabel.startsWith('Engine-safe')){
+    let planningText = rawLabel.includes(';') ? rawLabel.split(';').slice(1).join(';').trim() : '';
+    const facultyTerms = [
+      [/F2 family/gi, 'Inflation and Real Values family'],
+      [/F3 family/gi, 'Growth and Productivity family'],
+      [/F4 family/gi, 'Unemployment and Labor Markets family'],
+      [/F5 family sequence/gi, 'Money, Banking, and Federal Reserve sequence'],
+      [/F6 long-run monetary sequence/gi, 'Money Growth, Inflation, and Monetary Neutrality sequence'],
+      [/Phillips family/gi, 'Phillips Curve and Disinflation family'],
+      [/GDP family/gi, 'GDP and National Output family']
+    ];
+    for(const [pattern, replacement] of facultyTerms) planningText = planningText.replace(pattern, replacement);
+    return {
+      status: 'ready-focused',
+      label: 'Ready for focused use',
+      planningNote: planningText ? planningText.charAt(0).toUpperCase() + planningText.slice(1) : ''
+    };
+  }
+  return {
+    status: concept.coverageStatus || 'insufficient',
+    label: concept.coverageStatusLabel || 'Insufficient depth — expansion underway',
+    planningNote: ''
+  };
 }
 
 function inferAreaForConceptIds(ids){
@@ -516,6 +579,7 @@ function renderConcepts(){
   renderSelectedSummary();
 
   if(!area){
+    updateBrowseFilterControls('', '');
     $('conceptGrid').innerHTML = `
       <div class="empty" role="status">
         <strong>Choose a course area to view concepts.</strong>
@@ -528,18 +592,14 @@ function renderConcepts(){
 
   const search = $('conceptSearch').value.trim().toLowerCase();
   const filter = $('selectionFilter').value;
+  updateBrowseFilterControls(area, search);
   const visible = registry.filter(concept => {
     if(concept.supplementType === 'checkpoint-challenge') return false;
     const selected = state.selectedConceptIds.includes(concept.canonicalConceptId);
     if(filter === 'selected' && !selected) return false;
     if(filter === 'unselected' && selected) return false;
     if(area && !conceptAreas(concept.canonicalConceptId).includes(area)) return false;
-    const haystack = [
-      concept.title,
-      concept.description,
-      ...(concept.includedSkills || [])
-    ].join(' ').toLowerCase();
-    return !search || haystack.includes(search);
+    return conceptMatchesSearch(concept, search);
   });
 
   $('conceptGrid').innerHTML = visible.map(concept => {
@@ -554,8 +614,10 @@ function renderConcepts(){
       + Number(roles.legendaryBoss || 0);
     const related = relatedConceptIds(concept);
     const formatBadges = conceptFormatBadges(concept);
-    const coverageStatus = concept.coverageStatus || 'insufficient';
-    const coverageStatusLabel = concept.coverageStatusLabel || 'Insufficient depth — expansion underway';
+    const coverageDisplay = facultyCoverageDisplay(concept);
+    const coverageStatus = coverageDisplay.status;
+    const coverageStatusLabel = coverageDisplay.label;
+    const coveragePlanningNote = coverageDisplay.planningNote;
 
     return `
       <article class="concept-card ${selected ? 'selected' : ''} ${concept.parentConceptId ? 'family-child' : ''} depth-${coverageStatus}">
@@ -579,6 +641,7 @@ function renderConcepts(){
         </div>
         <details class="concept-details">
           <summary>Question coverage details</summary>
+          ${coveragePlanningNote ? `<p class="coverage-planning-note"><strong>Planning note:</strong> ${esc(coveragePlanningNote)}</p>` : ''}
           <div class="coverage-groups">
             <div>
               <h4>Practice difficulty</h4>
@@ -1204,9 +1267,15 @@ async function init(){
     recalculate();
   });
 
-  for(const id of ['conceptSearch', 'areaFilter', 'selectionFilter']){
+  for(const id of ['conceptSearch', 'areaFilter']){
     $(id).addEventListener(id === 'conceptSearch' ? 'input' : 'change', renderConcepts);
   }
+  document.querySelectorAll('[data-selection-filter]').forEach(button => {
+    button.addEventListener('click', () => {
+      $('selectionFilter').value = button.dataset.selectionFilter || 'all';
+      renderConcepts();
+    });
+  });
 
   $('downloadRecipe').addEventListener('click', () => {
     downloadBlob(new Blob([recipeText()], {type: 'application/json'}), `${state.slug || 'composition'}-recipe.json`);

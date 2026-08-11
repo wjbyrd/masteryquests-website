@@ -3,7 +3,7 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5s.1
+Current composer version: 4.5s.2
 Canonical questions: 7,977
 Selectable concepts/family slices: 126
 Question assets: 399

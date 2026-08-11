@@ -42,3 +42,30 @@
 .concept-card.family-child.selected{border-left-width:4px}
 .coverage-status.ready-focused-subtopic{background:#e6f6ed;border-color:#8bc9a6;color:#145a38}
 .coverage-status.supporting-subtopic{background:#fff5d9;border-color:#d8b85e;color:#72520b}
+
+/* =========================================================
+   4.5s.2 — FACULTY CONCEPT-BROWSING FLOW
+   Course area is the true first decision. Search and card visibility
+   are optional browsing tools placed where faculty need them: directly
+   above the concept library.
+   ========================================================= */
+.area-selector{max-width:620px;margin:0 0 14px}
+.area-selector .field small{display:block;margin-top:5px;color:var(--muted)}
+.concept-browse-toolbar{margin:14px 0;padding:14px;border:1px solid #c9d7df;border-radius:12px;background:#f7fafb}
+.browse-toolbar-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.browse-toolbar-heading h3{margin:0;color:var(--navy)}
+.browse-toolbar-heading p{margin:0;color:var(--muted);font-size:.9rem}
+.browse-toolbar-controls{display:grid;grid-template-columns:minmax(240px,1fr) minmax(430px,1.4fr);gap:14px;align-items:end}
+.optional-label{font-weight:500;color:var(--muted)}
+.view-filter-field{min-width:0;margin:0;padding:0;border:0}
+.view-filter-field legend{font-weight:700;margin-bottom:6px}
+.segmented-filter{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:4px;border:1px solid #b9c9d4;border-radius:10px;background:#edf3f6}
+.segment-button{min-width:0;padding:9px 10px;border:1px solid transparent;border-radius:7px;background:transparent;color:var(--navy);font-weight:750;line-height:1.2}
+.segment-button span{display:inline-block;min-width:1.4em;margin-left:3px;color:var(--muted);font-weight:650}
+.segment-button:hover:not(:disabled){background:#fff;border-color:#a7bcc9}
+.segment-button.active,.segment-button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 2px 7px rgba(7,21,38,.16)}
+.segment-button.active span,.segment-button[aria-pressed="true"] span{color:#dce7ef}
+.segment-button:disabled{opacity:.5}
+.coverage-planning-note{margin:10px 0 0;padding:9px 10px;border-left:3px solid var(--gold);border-radius:6px;background:#fff9e7;color:#5d512d;font-size:.8rem;line-height:1.4}
+@media(max-width:900px){.browse-toolbar-controls{grid-template-columns:1fr}.segmented-filter{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:580px){.segmented-filter{grid-template-columns:1fr}.browse-toolbar-heading{display:block}.browse-toolbar-heading p{margin-top:4px}}

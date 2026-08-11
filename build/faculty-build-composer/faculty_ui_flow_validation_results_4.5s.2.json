@@ -1,0 +1,68 @@
+{
+  "phase": "faculty-composer-ui-flow-4.5s.2",
+  "ok": true,
+  "composerVersion": "4.5s.2",
+  "canonicalQuestionCount": 7977,
+  "requestedFixes": {
+    "macroTechnicalPills": {
+      "sourceEngineSafeConcepts": 39,
+      "uiMappingPresent": true,
+      "facultyPlanningNotePresent": true,
+      "technicalFamilyCodeTranslationsPresent": true
+    },
+    "workflowNumberingRemoved": true,
+    "browseToolbarMovedAboveCards": true,
+    "segmentedFilter": true,
+    "liveCounts": true,
+    "filterDoesNotChangeSelectionsCopy": true,
+    "searchMarkedOptional": true,
+    "responsiveToolbarCss": true
+  },
+  "browserValidation": {
+    "method": "Chromium via Playwright using the actual composer HTML/CSS/JS inlined into an in-memory page because sandbox policy blocks file/localhost navigation.",
+    "macroPresetCounts": {
+      "all": 90,
+      "selected": 17,
+      "notSelected": 73
+    },
+    "engineSafePillsVisible": 0,
+    "selectedFilterCards": 17,
+    "selectedFilterCheckedCards": 17,
+    "searchAggregateCounts": {
+      "all": 6,
+      "selected": 0,
+      "notSelected": 6
+    },
+    "planningNoteExample": "Strongest as AD/AS \u2192 Equilibrium \u2192 Long-Run Adjustment sequence",
+    "unexpectedConsoleOrPageErrors": 0
+  },
+  "regression": {
+    "quizMode": "PASS",
+    "unlimitedPracticeLogic": "PASS (legacy test flags only version-string mismatch)",
+    "masteryReport2Logic": "PASS (legacy test flags only version-string mismatch)",
+    "stateLeakHotfix": "PASS (legacy test flags only version-string mismatch)",
+    "sevenModeAvailability": "PASS (legacy test flags only version-string mismatch)"
+  },
+  "sourceIntegrity": {
+    "coreLibraryFiles": {
+      "data/composer_library.js": {
+        "baseSha256": "5ae72fcb294b77b48ffe22ddbbe9a336d5e9967c495618bf9e1c8febdbe7c8f2",
+        "newSha256": "5ae72fcb294b77b48ffe22ddbbe9a336d5e9967c495618bf9e1c8febdbe7c8f2",
+        "identical": true
+      },
+      "data/composer_registry.json": {
+        "baseSha256": "b8bc4bf7e2caa165835ea45007635f4c47d4a20a0ed5393f084ac832f3005e4a",
+        "newSha256": "b8bc4bf7e2caa165835ea45007635f4c47d4a20a0ed5393f084ac832f3005e4a",
+        "identical": true
+      },
+      "data/composer_library_manifest.json": {
+        "baseSha256": "09096dcb9f2c735e8b6fd1ffcf82b33374f0e73388f03de6b3cd06de34097502",
+        "newSha256": "09096dcb9f2c735e8b6fd1ffcf82b33374f0e73388f03de6b3cd06de34097502",
+        "identical": true
+      }
+    },
+    "questionAssetCount": 399,
+    "questionAssetsIdentical": true
+  },
+  "issues": []
+}

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260811-mastery-report-2.0-4.5s.1">
+  <link rel="stylesheet" href="composer.css?v=20260811-faculty-ui-flow-4.5s.2">
 </head>
 <body>
   <header class="site-header">
@@ -61,12 +61,12 @@
         </div>
 
         <div class="concept-flow-note">
-          <strong>Start with a course area.</strong> The composer will narrow both the starter combinations and the concept library before you make selections.
+          <strong>Choose a course area.</strong> Then start with a suggested combination or select individual concepts. Your selections stay in place while you browse.
         </div>
 
-        <div class="filters">
+        <div class="area-selector">
           <div class="field">
-            <label for="areaFilter">1. Course area</label>
+            <label for="areaFilter">Course area</label>
             <select id="areaFilter" aria-describedby="areaFilterHint">
               <option value="" selected>Choose a course area</option>
               <option value="general">General economics</option>
@@ -74,18 +74,6 @@
               <option value="macro">Macroeconomics</option>
             </select>
             <small id="areaFilterHint">Concept cards stay hidden until you choose an area.</small>
-          </div>
-          <div class="field">
-            <label for="conceptSearch">2. Search within area</label>
-            <input id="conceptSearch" placeholder="Search concepts or descriptions" disabled>
-          </div>
-          <div class="field">
-            <label for="selectionFilter">3. Show</label>
-            <select id="selectionFilter" disabled>
-              <option value="all">All concepts in this area</option>
-              <option value="selected">Selected only</option>
-              <option value="unselected">Not selected</option>
-            </select>
           </div>
         </div>
 
@@ -104,6 +92,32 @@
           <summary>How to read the concept cards</summary>
           <p><strong>Practice questions</strong> are used throughout the game. <strong>Checkpoint questions</strong> test readiness at the three checkpoints. <strong>Repair</strong> and <strong>bridge</strong> questions support adaptive review after a missed concept. Graph, calculation, and integrated-analysis labels appear only when that special format is actually present.</p>
         </details>
+
+        <section id="conceptBrowseToolbar" class="concept-browse-toolbar" aria-labelledby="browseConceptsHeading">
+          <div class="browse-toolbar-heading">
+            <h3 id="browseConceptsHeading">Browse concepts</h3>
+            <p>Search or change which concept cards are visible. These controls do not change your selections.</p>
+          </div>
+          <div class="browse-toolbar-controls">
+            <div class="field browse-search">
+              <label for="conceptSearch">Search concepts <span class="optional-label">(optional)</span></label>
+              <input id="conceptSearch" placeholder="Search concepts or descriptions" disabled>
+            </div>
+            <fieldset class="view-filter-field">
+              <legend>View cards</legend>
+              <div class="segmented-filter" role="group" aria-label="Choose which concept cards are visible">
+                <button type="button" class="segment-button active" data-selection-filter="all" aria-pressed="true" disabled>All <span data-filter-count="all">0</span></button>
+                <button type="button" class="segment-button" data-selection-filter="selected" aria-pressed="false" disabled>Selected <span data-filter-count="selected">0</span></button>
+                <button type="button" class="segment-button" data-selection-filter="unselected" aria-pressed="false" disabled>Not selected <span data-filter-count="unselected">0</span></button>
+              </div>
+            </fieldset>
+            <select id="selectionFilter" class="screen-reader" aria-hidden="true" tabindex="-1" disabled>
+              <option value="all">All concepts in this area</option>
+              <option value="selected">Selected only</option>
+              <option value="unselected">Not selected</option>
+            </select>
+          </div>
+        </section>
 
         <div id="conceptGrid" class="concept-grid"></div>
 
@@ -168,8 +182,8 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260811-mastery-report-2.0-4.5s.1"></script>
-  <script src="data/composer_library.js?v=20260811-mastery-report-2.0-4.5s.1"></script>
-  <script src="composer.js?v=20260811-mastery-report-2.0-4.5s.1"></script>
+  <script src="composer-core.js?v=20260811-faculty-ui-flow-4.5s.2"></script>
+  <script src="data/composer_library.js?v=20260811-faculty-ui-flow-4.5s.2"></script>
+  <script src="composer.js?v=20260811-faculty-ui-flow-4.5s.2"></script>
 </body>
 </html>
