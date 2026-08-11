@@ -1,0 +1,92 @@
+{
+  "phase": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+  "composerVersion": "4.5n.0",
+  "beforeCanonicalQuestionCount": 7855,
+  "afterCanonicalQuestionCount": 7902,
+  "addedQuestions": 47,
+  "parentRecords": 459,
+  "conceptCount": 120,
+  "librarySha256": "096bfcce69322fa3ecc28a2d75f045792db66eb147a7d287b82757b7bdf288c3",
+  "subtopics": {
+    "mcomp-structure-differentiation": {
+      "title": "Market Structure & Product Differentiation",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 33,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 4,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 20,
+      "pass": true
+    },
+    "mcomp-short-run-choice": {
+      "title": "Short-Run Firm Choice, Profit/Loss & Shutdown",
+      "role": "standalone-ready",
+      "canonicalRecords": 125,
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 34
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 57,
+      "pass": true
+    },
+    "mcomp-entry-exit-long-run": {
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "role": "standalone-ready",
+      "canonicalRecords": 178,
+      "runtimeAdaptive": {
+        "easy": 15,
+        "medium": 22,
+        "hard": 23
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 8,
+      "bridge": 7,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 87,
+      "pass": true
+    },
+    "mcomp-advertising-nonprice": {
+      "title": "Advertising, Branding & Nonprice Competition",
+      "role": "standalone-ready",
+      "canonicalRecords": 76,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 35,
+      "pass": true
+    },
+    "mcomp-efficiency-variety-limits": {
+      "title": "Product Variety, Efficiency & Model Limits",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 47,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 20,
+      "pass": true
+    }
+  }
+}

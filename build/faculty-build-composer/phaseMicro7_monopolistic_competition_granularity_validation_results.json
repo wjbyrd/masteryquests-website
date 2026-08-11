@@ -1,0 +1,125 @@
+{
+  "phase": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+  "ok": true,
+  "composerVersion": "4.5n.0",
+  "canonicalQuestionCount": 7902,
+  "conceptCount": 120,
+  "parentCanonical": 459,
+  "childrenUnion": 459,
+  "newAdaptiveSupportRouted": "12/12",
+  "qualityAuditOk": true,
+  "graphExpansion": {
+    "sourceQuestions": 42,
+    "graphCounts": {
+      "01": 14,
+      "02": 12,
+      "03": 16
+    },
+    "totalGraphCoverage": 55,
+    "assets": 38
+  },
+  "children": {
+    "mcomp-structure-differentiation": {
+      "canonical": 33,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 5,
+        "hard": 5
+      },
+      "repair": 3,
+      "bridge": 4,
+      "quizEligible": 20,
+      "supporting": true
+    },
+    "mcomp-short-run-choice": {
+      "canonical": 125,
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 34
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 57,
+      "supporting": false
+    },
+    "mcomp-entry-exit-long-run": {
+      "canonical": 178,
+      "runtimeAdaptive": {
+        "easy": 15,
+        "medium": 22,
+        "hard": 23
+      },
+      "repair": 8,
+      "bridge": 7,
+      "quizEligible": 87,
+      "supporting": false
+    },
+    "mcomp-advertising-nonprice": {
+      "canonical": 76,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 35,
+      "supporting": false
+    },
+    "mcomp-efficiency-variety-limits": {
+      "canonical": 47,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "repair": 3,
+      "bridge": 3,
+      "quizEligible": 20,
+      "supporting": true
+    }
+  },
+  "regression": {
+    "elasticity": {
+      "parent": 495,
+      "children": 495,
+      "ok": true
+    },
+    "consumer-and-producer-surplus": {
+      "parent": 442,
+      "children": 442,
+      "ok": true
+    },
+    "international-trade-and-trade-policy": {
+      "parent": 487,
+      "children": 487,
+      "ok": true
+    },
+    "costs-of-production": {
+      "parent": 608,
+      "children": 608,
+      "ok": true
+    },
+    "perfect-competition": {
+      "parent": 565,
+      "children": 565,
+      "ok": true
+    },
+    "monopoly": {
+      "parent": 524,
+      "children": 524,
+      "ok": true
+    },
+    "monopolistic-competition": {
+      "parent": 459,
+      "children": 459,
+      "ok": true
+    }
+  },
+  "legacyRecipes": {
+    "passed": 8,
+    "total": 8
+  },
+  "issues": []
+}

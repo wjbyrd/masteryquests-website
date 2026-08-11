@@ -1,18 +1,20 @@
-Phase 6.2h graph v2: Monopolistic Competition adds 42 graph-dependent questions using MCOMP-01 through MCOMP-03; MCOMP-04 intentionally excluded.
-Mastery Quests Faculty Concept Composer — Monopoly Graph Expansion V2
+Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current library version: phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2
-Canonical questions: 6206
-Assets: 393
+Current composer version: 4.5n.0
+Canonical questions: 7,902
+Selectable concepts/family slices: 120
+Question assets: 399
 
-Latest upgrade:
-- Monopoly: 60 new graph-dependent questions across MON-01 through MON-04.
-- Monopoly graph coverage: 72 questions total.
-- Prior Costs of Production and Perfect Competition graph expansions are retained.
-- Five-mode, answer-hash, asset-hash, starter-combination, and legacy-recipe validation scripts are included.
+Latest upgrade — Phase Micro7: Monopolistic Competition granularity + adaptive maturation
+- Monopolistic Competition now exposes five instructor-facing child selectors while preserving the full parent family.
+- Added exactly 47 measured adaptive questions: 13 Easy, 14 Medium, 8 Hard, 6 Repair, and 6 Bridge.
+- Parent family: 459 canonical questions after backfill.
+- All five child selectors meet their assigned adaptive-depth/support floors and clear the planned 15-question Quiz threshold.
+- Existing 55 graph-linked questions across 38 Monopolistic Competition assets are unchanged.
+- Elasticity, Surplus, Trade, Costs, Perfect Competition, and Monopoly granular families remain intact.
 
 PHASE MICRO1 — ELASTICITY GRANULARITY PILOT
 -------------------------------------------
@@ -31,3 +33,21 @@ PHASE MICRO3 — INTERNATIONAL TRADE GRANULARITY
 The full International Trade and Trade Policy family remains selectable. Microeconomics now also exposes six child selectors: World Prices & Importer/Exporter Status; Domestic Production, Consumption & Trade Quantities; Gains from Trade, Surplus & Winners/Losers; Tariffs, Revenue & Deadweight Loss; Import Quotas, Quota Rents & Tariff–Quota Comparison; and Trade-Policy Arguments, Efficiency & Distribution.
 
 The child selectors filter the same canonical 426-record Trade bank using the published ITP.1–ITP.6 objective metadata; they do not duplicate question records. Parent and child Trade selectors are mutually exclusive. World-price/status and trade-policy arguments are intentionally treated as supporting/targeted subtopics rather than padded to artificial full-campaign depth. All six already exceed the planned 15-question Quiz ceiling using non-Legendary practice/calculation material.
+
+PHASE MICRO4 — COSTS OF PRODUCTION GRANULARITY + ADAPTIVE MATURATION
+------------------------------------------------------------------
+Ten Costs subtopics are exposed. The family contains 608 canonical records after the measured adaptive retrofit.
+
+PHASE MICRO5 — PERFECT COMPETITION GRANULARITY + ADAPTIVE MATURATION
+--------------------------------------------------------------------
+Eight Perfect Competition subtopics are exposed. The family contains 565 canonical records after the measured adaptive retrofit.
+
+PHASE MICRO6 — MONOPOLY GRANULARITY + ADAPTIVE MATURATION
+---------------------------------------------------------
+Seven Monopoly subtopics are exposed. The family contains 524 canonical records after the measured adaptive retrofit.
+
+PHASE MICRO7 — MONOPOLISTIC COMPETITION GRANULARITY + ADAPTIVE MATURATION
+--------------------------------------------------------------------------
+Five Monopolistic Competition subtopics are exposed: Market Structure & Product Differentiation; Short-Run Firm Choice, Profit/Loss & Shutdown; Entry, Exit & Long-Run Equilibrium; Advertising, Branding & Nonprice Competition; and Product Variety, Efficiency & Model Limits.
+
+The family contains 459 canonical records after exactly 47 targeted adaptive additions. Parent/child selection remains hierarchical, all children clear the planned 15-question Quiz threshold, and the existing graph inventory is preserved.
