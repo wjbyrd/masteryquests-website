@@ -1,7 +1,7 @@
 {
   "phase": "6.2h-MONOPOLISTIC-COMPETITION-GRAPH-V2",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2",
-  "librarySha256": "74bf1ea438770ba5b1d6fc4bc9f2dc75860aa264b0564cdd270ecfca7db70134",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+  "librarySha256": "096bfcce69322fa3ecc28a2d75f045792db66eb147a7d287b82757b7bdf288c3",
   "newQuestionCount": 42,
   "graphCounts": {
     "01": 14,
@@ -18,23 +18,28 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 39,
-        "medium": 39,
-        "hard": 69,
+        "easy": 52,
+        "medium": 53,
+        "hard": 77,
         "elite": 37,
         "legendary": 95,
         "easyBoss": 19,
         "mediumBoss": 19,
         "finalBoss": 19,
         "legendaryBoss": 36,
-        "repair": 20,
+        "repair": 26,
         "repairSeed": 0,
-        "bridge": 20,
+        "bridge": 26,
         "calculation": 30,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 55,
         "assets": 38,
-        "totalCanonical": 412
+        "totalCanonical": 459
       },
       "countIssues": [],
       "modes": [
@@ -45,17 +50,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 39
+              "count": 52
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 39
+              "count": 53
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 69
+              "count": 77
             },
             {
               "pool": "easyBoss",
@@ -75,15 +80,16 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 20
+              "count": 26
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 20
+              "count": 26
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -93,30 +99,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 39
+              "count": 52
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 39
+              "count": 53
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 69
+              "count": 77
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 20
+              "count": 26
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 20
+              "count": 26
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -126,30 +133,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 39
+              "count": 52
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 39
+              "count": 53
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 69
+              "count": 77
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 20
+              "count": 26
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 20
+              "count": 26
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -168,6 +176,7 @@
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -177,17 +186,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 39
+              "count": 52
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 39
+              "count": 53
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 69
+              "count": 77
             },
             {
               "pool": "easyBoss",
@@ -207,21 +216,22 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 20
+              "count": 26
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 20
+              "count": 26
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 412,
+        "questionCount": 459,
         "issues": []
       },
       "assetAudit": {
@@ -276,23 +286,28 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 201,
-        "medium": 207,
-        "hard": 357,
+        "easy": 312,
+        "medium": 315,
+        "hard": 398,
         "elite": 193,
         "legendary": 479,
         "easyBoss": 96,
         "mediumBoss": 96,
         "finalBoss": 99,
         "legendaryBoss": 180,
-        "repair": 100,
+        "repair": 178,
         "repairSeed": 0,
-        "bridge": 100,
+        "bridge": 180,
         "calculation": 150,
         "integration": 0,
-        "graph": 470,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 465,
         "assets": 284,
-        "totalCanonical": 2108
+        "totalCanonical": 2526
       },
       "countIssues": [],
       "modes": [
@@ -303,17 +318,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 201
+              "count": 312
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 207
+              "count": 315
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 357
+              "count": 398
             },
             {
               "pool": "easyBoss",
@@ -333,15 +348,16 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 100
+              "count": 178
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 100
+              "count": 180
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -351,30 +367,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 201
+              "count": 312
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 207
+              "count": 315
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 357
+              "count": 398
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 100
+              "count": 178
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 100
+              "count": 180
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -384,30 +401,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 201
+              "count": 312
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 207
+              "count": 315
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 357
+              "count": 398
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 100
+              "count": 178
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 100
+              "count": 180
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -426,6 +444,7 @@
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -435,17 +454,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 201
+              "count": 312
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 207
+              "count": 315
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 357
+              "count": 398
             },
             {
               "pool": "easyBoss",
@@ -465,21 +484,22 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 100
+              "count": 178
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 100
+              "count": 180
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 2108,
+        "questionCount": 2526,
         "issues": []
       },
       "assetAudit": {
@@ -558,23 +578,28 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 338,
-        "medium": 352,
-        "hard": 594,
+        "easy": 506,
+        "medium": 512,
+        "hard": 656,
         "elite": 315,
         "legendary": 799,
         "easyBoss": 166,
         "mediumBoss": 171,
         "finalBoss": 168,
         "legendaryBoss": 297,
-        "repair": 175,
+        "repair": 287,
         "repairSeed": 2,
-        "bridge": 176,
+        "bridge": 302,
         "calculation": 244,
         "integration": 0,
-        "graph": 705,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 692,
         "assets": 357,
-        "totalCanonical": 3553
+        "totalCanonical": 4181
       },
       "countIssues": [],
       "modes": [
@@ -585,17 +610,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 338
+              "count": 506
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 352
+              "count": 512
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 594
+              "count": 656
             },
             {
               "pool": "easyBoss",
@@ -615,15 +640,16 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 175
+              "count": 287
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 176
+              "count": 302
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -633,30 +659,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 338
+              "count": 506
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 352
+              "count": 512
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 594
+              "count": 656
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 175
+              "count": 287
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 176
+              "count": 302
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -666,30 +693,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 338
+              "count": 506
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 352
+              "count": 512
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 594
+              "count": 656
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 175
+              "count": 287
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 176
+              "count": 302
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -708,6 +736,7 @@
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -717,17 +746,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 338
+              "count": 506
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 352
+              "count": 512
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 594
+              "count": 656
             },
             {
               "pool": "easyBoss",
@@ -747,21 +776,22 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 175
+              "count": 287
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 176
+              "count": 302
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 3553,
+        "questionCount": 4181,
         "issues": []
       },
       "assetAudit": {

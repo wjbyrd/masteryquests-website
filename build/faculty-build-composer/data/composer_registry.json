@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-11T02:35:00.000Z",
+  "generatedAt": "2026-08-11T03:05:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -7077,32 +7077,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 117,
+        "main": 152,
         "elite": 37,
         "legendary": 95,
         "calculation": 30,
         "boss": 57,
         "legendaryBoss": 36,
-        "repair": 20,
-        "bridge": 20,
+        "repair": 26,
+        "bridge": 26,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 58,
+        "easy": 77,
         "elite": 37,
-        "hard": 88,
+        "hard": 96,
         "legendary": 131,
-        "medium": 58,
+        "medium": 78,
         "unknown": 40
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 372
+        "directSkillMatches": 26,
+        "mainWithUsableSkill": 407
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 372
+        "directSkillMatches": 26,
+        "mainWithUsableSkill": 407
       },
       "calculationCoverage": 30,
       "graphCoverage": 55,
@@ -7111,8 +7111,530 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
-      "coverageFloorVersion": "phase6.2h-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions. Monopolistic Competition now exposes five granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill required for healthy adaptive use.",
+      "coverageFloorVersion": "phase6.2h-rich-v1",
+      "childConceptIds": [
+        "mcomp-structure-differentiation",
+        "mcomp-short-run-choice",
+        "mcomp-entry-exit-long-run",
+        "mcomp-advertising-nonprice",
+        "mcomp-efficiency-variety-limits"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "mcomp-structure-differentiation",
+      "title": "Market Structure & Product Differentiation",
+      "description": "Identify monopolistic competition and analyze how differentiation, close substitutes, and easy entry create limited firm-level market power.",
+      "includedSkills": [
+        "brand_differentiation",
+        "close_substitutes",
+        "elasticity_firm_demand",
+        "firm_demand_mc",
+        "location_differentiation",
+        "market_structure_characteristics",
+        "monopolistic_competition_definition",
+        "physical_differentiation",
+        "product_differentiation",
+        "service_differentiation"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopolistic Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "price-elasticity-of-demand"
+      ],
+      "relatedConceptIds": [
+        "perfect-competition",
+        "mcomp-short-run-choice",
+        "price-elasticity-of-demand"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MCMP.1"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopolisticCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 20,
+        "elite": 0,
+        "legendary": 0,
+        "calculation": 0,
+        "boss": 6,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 4,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 17,
+        "medium": 5,
+        "hard": 5,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 26
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 4,
+        "mainWithUsableSkill": 26
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopolistic Competition subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Monopolistic Competition topic",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 4 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 20.",
+      "coverageFloorVersion": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopolistic-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopolistic Competition",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 4
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 20,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "mcomp-short-run-choice",
+      "title": "Short-Run Firm Choice, Profit/Loss & Shutdown",
+      "description": "Use MR = MC, firm demand, ATC, and AVC to determine output, price, profit or loss, and short-run shutdown.",
+      "includedSkills": [
+        "firm_demand_mc",
+        "integrated_mc_analysis",
+        "marginal_revenue_mc",
+        "short_run_loss",
+        "short_run_output_choice",
+        "short_run_price",
+        "short_run_profit",
+        "short_run_shutdown"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopolistic Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "price-elasticity-of-demand"
+      ],
+      "relatedConceptIds": [
+        "profit-concepts",
+        "sunk-avoidable-costs",
+        "mcomp-entry-exit-long-run"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MCMP.2"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopolisticCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 36,
+        "elite": 0,
+        "legendary": 20,
+        "calculation": 21,
+        "boss": 12,
+        "legendaryBoss": 24,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 25,
+        "medium": 14,
+        "hard": 34,
+        "elite": 0,
+        "legendary": 44,
+        "unknown": 8
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 113
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 113
+      },
+      "calculationCoverage": 21,
+      "graphCoverage": 7,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopolistic Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 12 Easy / 11 Medium / 34 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 57.",
+      "coverageFloorVersion": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopolistic-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopolistic Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 34
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 57,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "mcomp-entry-exit-long-run",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "description": "Trace how short-run profit or loss induces entry or exit, shifts firm demand, and leads toward long-run zero economic profit, tangency, markup, and excess capacity.",
+      "includedSkills": [
+        "allocative_inefficiency",
+        "elasticity_firm_demand",
+        "entry_adjustment",
+        "entry_after_profit",
+        "entry_demand_shift",
+        "entry_stopping_condition",
+        "excess_capacity",
+        "exit_after_loss",
+        "exit_demand_shift",
+        "integrated_mc_analysis",
+        "long_run_adjustment",
+        "long_run_markup",
+        "long_run_tangency",
+        "long_run_zero_profit",
+        "markup",
+        "markup_and_allocative_inefficiency",
+        "markup_and_market_power",
+        "measure_excess_capacity",
+        "productive_inefficiency",
+        "short_run_profit",
+        "zero_profit_vs_efficiency"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopolistic Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "price-elasticity-of-demand"
+      ],
+      "relatedConceptIds": [
+        "mcomp-short-run-choice",
+        "perfect-competition",
+        "mcomp-efficiency-variety-limits"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MCMP.3",
+        "MCMP.4"
+      ],
+      "sourceGames": [
+        "monopolisticCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 53,
+        "elite": 27,
+        "legendary": 43,
+        "calculation": 7,
+        "boss": 21,
+        "legendaryBoss": 12,
+        "repair": 8,
+        "bridge": 7,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 16,
+        "medium": 41,
+        "hard": 24,
+        "elite": 27,
+        "legendary": 55,
+        "unknown": 15
+      },
+      "repairCoverage": {
+        "directSkillMatches": 8,
+        "mainWithUsableSkill": 163
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 163
+      },
+      "calculationCoverage": 7,
+      "graphCoverage": 44,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopolistic Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 15 Easy / 22 Medium / 23 Hard; floor 10/10/10. Adaptive support: 8 Repair / 7 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 87.",
+      "coverageFloorVersion": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopolistic-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopolistic Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 15,
+        "medium": 22,
+        "hard": 23
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 8,
+        "bridge": 7
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 87,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "mcomp-advertising-nonprice",
+      "title": "Advertising, Branding & Nonprice Competition",
+      "description": "Analyze informational and persuasive advertising, selling costs, branding, quality competition, innovation, demand shifts, and elasticity effects.",
+      "includedSkills": [
+        "advertising_demand_shift",
+        "advertising_elasticity",
+        "advertising_informational",
+        "advertising_persuasive",
+        "advertising_signal",
+        "innovation_product_development",
+        "nonprice_competition",
+        "quality_competition",
+        "selling_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopolistic Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "price-elasticity-of-demand"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "costs-of-production",
+        "mcomp-structure-differentiation"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MCMP.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopolisticCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 28,
+        "elite": 5,
+        "legendary": 19,
+        "calculation": 2,
+        "boss": 10,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 13,
+        "medium": 13,
+        "hard": 20,
+        "elite": 5,
+        "legendary": 19,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 64
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 64
+      },
+      "calculationCoverage": 2,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopolistic Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 35.",
+      "coverageFloorVersion": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopolistic-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopolistic Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 35,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "mcomp-efficiency-variety-limits",
+      "title": "Product Variety, Efficiency & Model Limits",
+      "description": "Evaluate variety benefits, markups, allocative and productive inefficiency, welfare tradeoffs, market classification, and limits of the model.",
+      "includedSkills": [
+        "allocative_inefficiency",
+        "market_classification",
+        "market_structure_characteristics",
+        "model_limitations",
+        "product_variety",
+        "welfare_tradeoff"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopolistic Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "price-elasticity-of-demand"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "mcomp-entry-exit-long-run",
+        "oligopoly"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MCMP.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopolisticCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 15,
+        "elite": 5,
+        "legendary": 13,
+        "calculation": 0,
+        "boss": 8,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "medium": 5,
+        "hard": 13,
+        "elite": 5,
+        "legendary": 13,
+        "unknown": 5
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 41
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 41
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 4,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopolistic Competition subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Monopolistic Competition topic",
+      "coverageStatusNote": "Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 20.",
+      "coverageFloorVersion": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopolistic-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopolistic Competition",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 20,
+      "quiz15Status": "ready"
     },
     {
       "canonicalConceptId": "monopoly",
@@ -10690,10 +11212,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
-  "curationSummary": "Monopoly granularity and adaptive maturation: expose seven child selectors and add exactly 94 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
-  "canonicalQuestionCount": 7855,
-  "librarySha256": "c116e9bfc9e6464255c4dde37bbb2fd9241a257707b7956dbc64f335bf228ed7",
-  "composerVersion": "4.5m.0"
+  "curationPhase": "phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+  "curationSummary": "Monopolistic Competition granularity and adaptive maturation: expose five child selectors and add exactly 47 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
+  "canonicalQuestionCount": 7902,
+  "librarySha256": "096bfcce69322fa3ecc28a2d75f045792db66eb147a7d287b82757b7bdf288c3",
+  "composerVersion": "4.5n.0"
 }

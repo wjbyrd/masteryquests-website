@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
 const cases=[
- {name:'monopolistic-competition-only',ids:['monopolistic-competition'],expected:{graph:55,assets:38,totalCanonical:412}},
+ {name:'monopolistic-competition-only',ids:['monopolistic-competition'],expected:{graph:55,assets:38,totalCanonical:459}},
  {name:'firms-and-market-structure',ids:['costs-of-production','perfect-competition','monopoly','monopolistic-competition','oligopoly']},
  {name:'principles-micro-core',ids:['competitive-markets','demand','supply','market-equilibrium','price-signals','elasticity','consumer-and-producer-surplus','international-trade-and-trade-policy','costs-of-production','perfect-competition','monopoly','monopolistic-competition','oligopoly']}
 ];
