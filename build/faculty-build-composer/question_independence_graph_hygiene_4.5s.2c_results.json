@@ -1,0 +1,1088 @@
+{
+  "phase": "phaseQH1-question-independence-graph-hygiene-v1",
+  "generatedAt": "2026-08-11T18:10:00.000Z",
+  "canonicalQuestionCount": 7977,
+  "contextRewrites": 41,
+  "graphAttachmentsBefore": 1024,
+  "graphAttachmentsAfter": 917,
+  "graphAttachmentsRemoved": 107,
+  "graphRemovalsByConcept": {
+    "aggregate-demand": 2,
+    "costs-of-production": 1,
+    "fiscal-multipliers-and-crowding-out": 19,
+    "fisher-effect": 2,
+    "inflation-costs": 4,
+    "inflation-tax-and-deflation": 1,
+    "liquidity-preference-and-money-market": 24,
+    "long-run-phillips-curve": 1,
+    "monetary-policy-transmission": 12,
+    "quantity-theory-of-money": 22,
+    "short-run-phillips-curve": 2,
+    "stabilization-policy": 17
+  },
+  "answerBearingFieldChanges": [],
+  "preExistingAnswerHashFailures": [
+    {
+      "id": "PM2E-CH-OPEN-001",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-OPEN-002",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-MID-002",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-FINAL-001",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-FINAL-002",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-LEG-001",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-LEG-002",
+      "matches": 0
+    }
+  ],
+  "answerHashFailuresAfter": [
+    {
+      "id": "PM2E-CH-OPEN-001",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-OPEN-002",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-MID-002",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-FINAL-001",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-FINAL-002",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-LEG-001",
+      "matches": 0
+    },
+    {
+      "id": "PM2E-CH-LEG-002",
+      "matches": 0
+    }
+  ],
+  "newAnswerHashFailures": [],
+  "resolvedAnswerHashFailures": [],
+  "orphanGraphReferences": [],
+  "unsafeContextStarts": [],
+  "axisGiveawayGuardFailures": [],
+  "librarySha256": "696e755ebcaea5c25d6d06f76db4a781eaf59c87bf4f0eee6dcdfea3c0faea80",
+  "issues": [],
+  "changes": [
+    {
+      "id": "P62C-CPS-H-023",
+      "change": "self_containment_rewrite",
+      "from": "The same exchange occurs at price $26 instead of $20. What changes?",
+      "to": "A buyer values a good at $35 and the seller's cost is $11. If the market price rises from $20 to $26, what changes?"
+    },
+    {
+      "id": "P62C-CPS-EL-012",
+      "change": "self_containment_rewrite",
+      "from": "The same exchange occurs at price $23. Which statement is correct?",
+      "to": "A buyer values a good at $50 and the seller's cost is $20. At a market price of $23, which statement is correct?"
+    },
+    {
+      "id": "P62C-CPS-B3-012",
+      "change": "self_containment_rewrite",
+      "from": "If the price in the same exchange falls to $25, what changes?",
+      "to": "A buyer values a good at $52 and the seller's cost is $18. If the market price falls from $45 to $25, what changes?"
+    },
+    {
+      "id": "P62C-CPS-LB-018",
+      "change": "self_containment_rewrite",
+      "from": "For the same marginal schedules [45, 37, 30, 21, 13, 7] and [6, 14, 23, 28, 36, 42], output is pushed from the efficient quantity of 3 units to 4. Which accounting is correct?",
+      "to": "Given marginal buyer values [45, 37, 30, 21, 13, 7] and marginal seller costs [6, 14, 23, 28, 36, 42], output is pushed from the efficient quantity of 3 units to 4. Which accounting is correct?"
+    },
+    {
+      "id": "P62C-CPS-LB-020",
+      "change": "self_containment_rewrite",
+      "from": "For the same marginal schedules [43, 35, 27, 20, 12, 5] and [4, 11, 18, 25, 33, 40], output is pushed from the efficient quantity of 3 units to 4. Which accounting is correct?",
+      "to": "Given marginal buyer values [43, 35, 27, 20, 12, 5] and marginal seller costs [4, 11, 18, 25, 33, 40], output is pushed from the efficient quantity of 3 units to 4. Which accounting is correct?"
+    },
+    {
+      "id": "P62C-CPS-LB-022",
+      "change": "self_containment_rewrite",
+      "from": "For the same marginal schedules [49, 40, 32, 24, 15, 8] and [7, 16, 22, 30, 38, 46], output is pushed from the efficient quantity of 3 units to 4. Which accounting is correct?",
+      "to": "Given marginal buyer values [49, 40, 32, 24, 15, 8] and marginal seller costs [7, 16, 22, 30, 38, 46], output is pushed from the efficient quantity of 3 units to 4. Which accounting is correct?"
+    },
+    {
+      "id": "P62B-ELAS-M-036",
+      "change": "self_containment_rewrite",
+      "from": "For the same price decrease from $10 to $6, which curve is more price elastic over the labeled interval?",
+      "to": "For a price decrease from $10 to $6 on the displayed demand curves, which curve is more price elastic over the labeled interval?"
+    },
+    {
+      "id": "P52B-INC-H-002",
+      "change": "self_containment_rewrite",
+      "from": "The same penalty sharply changes behavior for low-income households but barely affects high-income households. What does this show?",
+      "to": "A given penalty sharply changes behavior for low-income households but barely affects high-income households. What does this show?"
+    },
+    {
+      "id": "P62H-MCMP-M-022",
+      "change": "self_containment_rewrite",
+      "from": "At the same long-run equilibrium, price is $70 and MC is $50. What is the markup?",
+      "to": "At a long-run equilibrium, price is $70 and MC is $50. What is the markup?"
+    },
+    {
+      "id": "P62H-MCMP-M-024",
+      "change": "self_containment_rewrite",
+      "from": "At the same long-run equilibrium, price is $76 and MC is $49.60. What is the markup?",
+      "to": "At a long-run equilibrium, price is $76 and MC is $49.60. What is the markup?"
+    },
+    {
+      "id": "P62H-MCMP-M-026",
+      "change": "self_containment_rewrite",
+      "from": "At the same long-run equilibrium, price is $64 and MC is $47.80. What is the markup?",
+      "to": "At a long-run equilibrium, price is $64 and MC is $47.80. What is the markup?"
+    },
+    {
+      "id": "P62H-MCMP-M-028",
+      "change": "self_containment_rewrite",
+      "from": "At the same long-run equilibrium, price is $82 and MC is $48.40. What is the markup?",
+      "to": "At a long-run equilibrium, price is $82 and MC is $48.40. What is the markup?"
+    },
+    {
+      "id": "P62H-MCMP-M-030",
+      "change": "self_containment_rewrite",
+      "from": "At the same long-run equilibrium, price is $68 and MC is $50.40. What is the markup?",
+      "to": "At a long-run equilibrium, price is $68 and MC is $50.40. What is the markup?"
+    },
+    {
+      "id": "P62H-MCMP-B1-003",
+      "change": "self_containment_rewrite",
+      "from": "At that output, what price does Amber Café charge?",
+      "to": "Amber Café faces P=108−2Q. At its MR=MC output of about 20.93 units, what price does it charge?"
+    },
+    {
+      "id": "P62H-MCMP-B1-006",
+      "change": "self_containment_rewrite",
+      "from": "At that output, what price does Birch Salon charge?",
+      "to": "Birch Salon faces P=100−1.8Q. At its MR=MC output of about 21.27 units, what price does it charge?"
+    },
+    {
+      "id": "P62H-MCMP-B1-009",
+      "change": "self_containment_rewrite",
+      "from": "At that output, what price does Cedar Fitness charge?",
+      "to": "Cedar Fitness faces P=116−2.4Q. At its MR=MC output of about 18.50 units, what price does it charge?"
+    },
+    {
+      "id": "P62H-MCMP-B1-012",
+      "change": "self_containment_rewrite",
+      "from": "At that output, what price does Drift Apparel charge?",
+      "to": "Drift Apparel faces P=98−1.7Q. At its MR=MC output of about 21.05 units, what price does it charge?"
+    },
+    {
+      "id": "P62H-MCMP-B1-015",
+      "change": "self_containment_rewrite",
+      "from": "At that output, what price does Elm Bistro charge?",
+      "to": "Elm Bistro faces P=112−2.2Q. At its MR=MC output of about 19.57 units, what price does it charge?"
+    },
+    {
+      "id": "P62H-MCMP-B1-018",
+      "change": "self_containment_rewrite",
+      "from": "At that output, what price does Fjord Studio charge?",
+      "to": "Fjord Studio faces P=92−1.5Q. At its MR=MC output of about 22.49 units, what price does it charge?"
+    },
+    {
+      "id": "P62G-MON-L-077",
+      "change": "self_containment_rewrite",
+      "from": "Using the same Silver Screen market conditions, which price pair follows?",
+      "to": "Silver Screen separates Markets A and B with demands PA=100−2QA and PB=80−QB. At the profit-maximizing quantities QA=20 and QB=30, which price pair follows?"
+    },
+    {
+      "id": "P62G-MON-L-080",
+      "change": "self_containment_rewrite",
+      "from": "Using the same Terra Software market conditions, which price pair follows?",
+      "to": "Terra Software separates Markets A and B with demands PA=120−3QA and PB=90−1.5QB. At the profit-maximizing quantities QA=16 and QB=22, which price pair follows?"
+    },
+    {
+      "id": "P62G-MON-L-083",
+      "change": "self_containment_rewrite",
+      "from": "Using the same Union Rail Pass market conditions, which price pair follows?",
+      "to": "Union Rail Pass separates Markets A and B with demands PA=95−1.5QA and PB=110−3QB. At the profit-maximizing quantities QA=25.67 and QB=15.33, which price pair follows?"
+    },
+    {
+      "id": "P62G-MON-L-086",
+      "change": "self_containment_rewrite",
+      "from": "Using the same Vista Medical Device market conditions, which price pair follows?",
+      "to": "Vista Medical Device separates Markets A and B with demands PA=110−2QA and PB=86−1.2QB. At the profit-maximizing quantities QA=22 and QB=26.67, which price pair follows?"
+    },
+    {
+      "id": "P62G-MON-L-089",
+      "change": "self_containment_rewrite",
+      "from": "Using the same Willow Learning Platform market conditions, which price pair follows?",
+      "to": "Willow Learning Platform separates Markets A and B with demands PA=125−2.5QA and PB=95−1.25QB. At the profit-maximizing quantities QA=20 and QB=28, which price pair follows?"
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9007",
+      "change": "self_containment_rewrite",
+      "from": "The same economy produces 120 computers at $900 and 550 meals at $24 this year. What is this year's nominal GDP?",
+      "to": "An economy produces 120 computers at $900 and 550 meals at $24 this year. What is this year's nominal GDP?"
+    },
+    {
+      "id": "P62C-CPS-L-002",
+      "change": "self_containment_rewrite",
+      "from": "For the same festival permits market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one festival permit, with willingness-to-pay values [28, 24, 19, 14, 9]. Five sellers can each supply one, with costs [5, 11, 16, 21, 26]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-004",
+      "change": "self_containment_rewrite",
+      "from": "For the same lab kits market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one lab kit, with willingness-to-pay values [31, 26, 22, 17, 11]. Five sellers can each supply one, with costs [7, 12, 18, 24, 29]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-006",
+      "change": "self_containment_rewrite",
+      "from": "For the same repair appointments market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one repair appointment, with willingness-to-pay values [35, 29, 23, 16, 10]. Five sellers can each supply one, with costs [6, 13, 20, 27, 33]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-008",
+      "change": "self_containment_rewrite",
+      "from": "For the same studio passes market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one studio pass, with willingness-to-pay values [27, 23, 18, 13, 8]. Five sellers can each supply one, with costs [4, 10, 15, 21, 25]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-010",
+      "change": "self_containment_rewrite",
+      "from": "For the same garden plots market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one garden plot, with willingness-to-pay values [33, 27, 21, 15, 9]. Five sellers can each supply one, with costs [8, 14, 19, 25, 30]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-012",
+      "change": "self_containment_rewrite",
+      "from": "For the same workshop seats market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one workshop seat, with willingness-to-pay values [30, 25, 20, 14, 7]. Five sellers can each supply one, with costs [5, 11, 17, 23, 28]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-014",
+      "change": "self_containment_rewrite",
+      "from": "For the same meal vouchers market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one meal voucher, with willingness-to-pay values [26, 22, 17, 12, 6]. Five sellers can each supply one, with costs [3, 9, 14, 20, 24]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62C-CPS-L-016",
+      "change": "self_containment_rewrite",
+      "from": "For the same archive tours market, ignore any announced price and rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+      "to": "Five buyers each want one archive tour, with willingness-to-pay values [29, 24, 18, 11, 5]. Five sellers can each supply one, with costs [4, 10, 16, 22, 27]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?"
+    },
+    {
+      "id": "P62G-MON-EL-002",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=108−2Q, MC=20+0.25Q, fixed cost $300—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=108−2Q, MC=20+0.25Q, fixed cost $300—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-004",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=120−2.5Q, MC=24+0.2Q, fixed cost $420—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=120−2.5Q, MC=24+0.2Q, fixed cost $420—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-006",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=96−1.6Q, MC=18+0.35Q, fixed cost $350—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=96−1.6Q, MC=18+0.35Q, fixed cost $350—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-008",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=112−2.2Q, MC=22+0.3Q, fixed cost $500—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=112−2.2Q, MC=22+0.3Q, fixed cost $500—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-010",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=100−2Q, MC=20+0.2Q, fixed cost $850—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=100−2Q, MC=20+0.2Q, fixed cost $850—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-012",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=92−1.5Q, MC=18+0.35Q, fixed cost $780—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=92−1.5Q, MC=18+0.35Q, fixed cost $780—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-014",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=116−2.4Q, MC=26+0.25Q, fixed cost $900—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=116−2.4Q, MC=26+0.25Q, fixed cost $900—what is the economic result at the optimum?"
+    },
+    {
+      "id": "P62G-MON-EL-016",
+      "change": "self_containment_rewrite",
+      "from": "Using the same stated demand and cost conditions—P=105−2.1Q, MC=18+0.3Q, fixed cost $650—what is the economic result at the optimum?",
+      "to": "Given the demand and cost conditions—P=105−2.1Q, MC=18+0.3Q, fixed cost $650—what is the economic result at the optimum?"
+    },
+    {
+      "id": "ECON-SP-EASY-25",
+      "change": "graph_removed",
+      "image": "question-assets/adaslras.webp",
+      "from": "In an AD-AS graph, the vertical axis measures:",
+      "to": "In the standard AD–AS convention, the vertical axis measures:"
+    },
+    {
+      "id": "ECON-SP-EASY-26",
+      "change": "graph_removed",
+      "image": "question-assets/adaslras.webp",
+      "from": "In an AD-AS graph, the horizontal axis measures:",
+      "to": "In the standard AD–AS convention, the horizontal axis measures:"
+    },
+    {
+      "id": "ECON-SP-EASY-60",
+      "change": "graph_removed",
+      "image": "question-assets/srpc.webp",
+      "from": "On a standard Phillips curve graph, the vertical axis measures:",
+      "to": "In the standard Phillips-curve convention, the vertical axis measures:"
+    },
+    {
+      "id": "ECON-SP-EASY-61",
+      "change": "graph_removed",
+      "image": "question-assets/srpc.webp",
+      "from": "On a standard Phillips curve graph, the horizontal axis measures:",
+      "to": "In the standard Phillips-curve convention, the horizontal axis measures:"
+    },
+    {
+      "id": "ECON-SP-ELITE-319",
+      "change": "graph_removed",
+      "image": "question-assets/adaslras.webp",
+      "from": "Fiscal expansion raises AD through the multiplier, but interest rates rise and investment falls. Which graph idea fits the final result?",
+      "to": "Fiscal expansion raises AD through the multiplier, but interest rates rise and investment falls. Which description best fits the final result?"
+    },
+    {
+      "id": "ECON-SP-ELITE-342",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-market graph. If income rises and the Fed prevents interest rates from rising, what policy shift is needed?",
+      "to": "If income rises and the Fed prevents interest rates from rising, what policy shift is needed?"
+    },
+    {
+      "id": "ECON-SP-ELITE-343",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-market graph. If the Fed cuts money supply while money demand rises, what happens to the interest rate pressure?",
+      "to": "If the Fed cuts money supply while money demand rises, what happens to the interest rate pressure?"
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9014",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the money-market and AD graph. The Fed shifts MS left while the economy is already below potential. What is the likely policy risk?",
+      "to": "The Fed shifts MS left while the economy is already below potential. What is the likely policy risk?"
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9015",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-market graph. Income rises, money demand shifts right, and the Fed holds money supply fixed. What memo is strongest?",
+      "to": "Income rises, money demand shifts right, and the Fed holds money supply fixed. What memo is strongest?"
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9016",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-market graph. Money demand rises while the Fed increases money supply. Which conclusion is safest?",
+      "to": "Money demand rises while the Fed increases money supply. Which conclusion is safest?"
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9042",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-market graph. Money demand rises because income rises, while the Fed cuts the money supply. Which memo is strongest?",
+      "to": "Money demand rises because income rises, while the Fed cuts the money supply. Which memo is strongest?"
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9043",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-market graph. Money demand falls while the Fed expands money supply. Which memo is strongest?",
+      "to": "Money demand falls while the Fed expands money supply. Which memo is strongest?"
+    },
+    {
+      "id": "ECON-SP-MEDIUMBOSS-3003",
+      "change": "graph_removed",
+      "image": "question-assets/lrpc.webp",
+      "from": "What does the vertical long-run Phillips curve represent?",
+      "to": "What does the vertical long-run Phillips curve represent?"
+    },
+    {
+      "id": "LG-Q-127",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. Which curve is fixed by the Fed in the money supply-money demand model?",
+      "to": "Which curve is fixed by the Fed in the money supply-money demand model?"
+    },
+    {
+      "id": "LG-Q-128",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. The vertical axis labeled value of money is best understood as",
+      "to": "The vertical axis labeled value of money is best understood as"
+    },
+    {
+      "id": "LG-Q-129",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If money supply increases, the new equilibrium moves toward",
+      "to": "If money supply increases, the new equilibrium moves toward"
+    },
+    {
+      "id": "LG-Q-151",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. Which curve shows the amount of money fixed by the central bank?",
+      "to": "Which curve shows the amount of money fixed by the central bank?"
+    },
+    {
+      "id": "LG-Q-152",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. Which curve slopes downward because higher interest rates reduce the quantity of money demanded?",
+      "to": "Which curve slopes downward because higher interest rates reduce the quantity of money demanded?"
+    },
+    {
+      "id": "LG-Q-153",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. If money demand shifts right while money supply is fixed, the equilibrium interest rate should",
+      "to": "If money demand shifts right while money supply is fixed, the equilibrium interest rate should"
+    },
+    {
+      "id": "LG-Q-159",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. In the monetary policy transmission mechanism, a lower interest rate leads most directly to",
+      "to": "In the monetary policy transmission mechanism, a lower interest rate leads most directly to"
+    },
+    {
+      "id": "LG-Q-160",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed increases the money supply, the aggregate demand curve should",
+      "to": "If the Fed increases the money supply, the aggregate demand curve should"
+    },
+    {
+      "id": "LG-Q-174",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. The movement from the first AD shift to the larger final AD shift represents",
+      "to": "The movement from the first AD shift to the larger final AD shift represents"
+    },
+    {
+      "id": "LG-Q-175",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. The initial shift in aggregate demand from higher government spending is followed by a larger shift because",
+      "to": "The initial shift in aggregate demand from higher government spending is followed by a larger shift because"
+    },
+    {
+      "id": "LG-Q-228",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If the Fed increases the money supply from MS1 to MS2, what happens to the equilibrium value of money and the price level?",
+      "to": "If the Fed increases the money supply from MS1 to MS2, what happens to the equilibrium value of money and the price level?"
+    },
+    {
+      "id": "LG-Q-229",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. Why does the money demand curve slope downward when the vertical axis is the value of money?",
+      "to": "Why does money demand slope downward when the value-of-money model places the value of money on the vertical axis?"
+    },
+    {
+      "id": "LG-Q-256",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the price level rises, what happens in the money market under the interest-rate effect?",
+      "to": "If the price level rises, what happens in the money market under the interest-rate effect?"
+    },
+    {
+      "id": "LG-Q-257",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. Why does a lower price level increase the quantity of goods and services demanded?",
+      "to": "Why does a lower price level increase the quantity of goods and services demanded?"
+    },
+    {
+      "id": "LG-Q-258",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. If money demand shifts right while money supply stays fixed, what must happen to restore money-market equilibrium?",
+      "to": "If money demand shifts right while money supply stays fixed, what must happen to restore money-market equilibrium?"
+    },
+    {
+      "id": "LG-Q-263",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed reduces the money supply, which sequence is most likely?",
+      "to": "If the Fed reduces the money supply, which sequence is most likely?"
+    },
+    {
+      "id": "LG-Q-264",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed increases money supply, which sequence is most likely?",
+      "to": "If the Fed increases money supply, which sequence is most likely?"
+    },
+    {
+      "id": "LG-Q-272",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If the initial government spending increase shifts AD by $20 billion, why might the final shift be larger?",
+      "to": "If the initial government spending increase shifts AD by $20 billion, why might the final shift be larger?"
+    },
+    {
+      "id": "LG-Q-273",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If MPC is higher, the distance between the initial AD shift and the final AD shift should",
+      "to": "If MPC is higher, the distance between the initial AD shift and the final AD shift should"
+    },
+    {
+      "id": "LG-Q-3002",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If money supply shifts right and the value of money falls from 1/2 to 1/4, what happens to the price level?",
+      "to": "If money supply shifts right and the value of money falls from 1/2 to 1/4, what happens to the price level?"
+    },
+    {
+      "id": "LG-Q-328",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. Starting at the original equilibrium, the Fed increases money supply. Which complete chain is correct?",
+      "to": "Starting at the original equilibrium, the Fed increases money supply. Which complete chain is correct?"
+    },
+    {
+      "id": "LG-Q-329",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If the economy moves from the original equilibrium to the new equilibrium after a monetary injection, why does the price level rise rather than output permanently rise in the long-run model?",
+      "to": "If the economy moves from the original equilibrium to the new equilibrium after a monetary injection, why does the price level rise rather than output permanently rise in the long-run model?"
+    },
+    {
+      "id": "LG-Q-330",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If the value of money falls from 1/2 to 1/4 after the money supply shift, what happens to the price level?",
+      "to": "If the value of money falls from 1/2 to 1/4 after the money supply shift, what happens to the price level?"
+    },
+    {
+      "id": "LG-Q-331",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. At the old equilibrium value of money after MS shifts right, what disequilibrium exists and what removes it?",
+      "to": "At the old equilibrium value of money after MS shifts right, what disequilibrium exists and what removes it?"
+    },
+    {
+      "id": "LG-Q-332",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If money demand shifts right while money supply is unchanged in the value-of-money model, what is the likely new equilibrium?",
+      "to": "If money demand shifts right while money supply is unchanged in the value-of-money model, what is the likely new equilibrium?"
+    },
+    {
+      "id": "LG-Q-333",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If money supply shifts left from the higher money supply back to the original level, what happens to the value of money and the price level?",
+      "to": "If money supply shifts left from the higher money supply back to the original level, what happens to the value of money and the price level?"
+    },
+    {
+      "id": "LG-Q-334",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. A student says the new equilibrium after MS rises means money is more valuable because there is more of it. What is wrong?",
+      "to": "A student says the new equilibrium after MS rises means money is more valuable because there is more of it. What is wrong?"
+    },
+    {
+      "id": "LG-Q-335",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If the Fed doubles money supply while velocity and real output are stable, which quantity-theory result matches the graph?",
+      "to": "If the Fed doubles money supply while velocity and real output are stable, which quantity-theory result follows?"
+    },
+    {
+      "id": "LG-Q-356",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. Starting in money-market equilibrium, the price level rises. Which full chain explains the interest-rate effect on aggregate demand?",
+      "to": "Starting in money-market equilibrium, the price level rises. Which full chain explains the interest-rate effect on aggregate demand?"
+    },
+    {
+      "id": "LG-Q-357",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. Starting at P1 and r1, the price level falls to P2. What happens in the money market and AD model?",
+      "to": "Starting at P1 and r1, the price level falls to P2. What happens in the money market and AD model?"
+    },
+    {
+      "id": "LG-Q-358",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. Money demand shifts from MD1 to MD2 while money supply remains fixed. What is the likely effect on r and investment?",
+      "to": "Money demand shifts from MD1 to MD2 while money supply remains fixed. What is the likely effect on r and investment?"
+    },
+    {
+      "id": "LG-Q-359",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. Money demand shifts left while money supply remains fixed. What chain follows?",
+      "to": "Money demand shifts left while money supply remains fixed. What chain follows?"
+    },
+    {
+      "id": "LG-Q-360",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed shifts money supply right, which chain correctly reaches aggregate demand?",
+      "to": "If the Fed shifts money supply right, which chain correctly reaches aggregate demand?"
+    },
+    {
+      "id": "LG-Q-361",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed shifts money supply left, which chain correctly reaches aggregate demand?",
+      "to": "If the Fed shifts money supply left, which chain correctly reaches aggregate demand?"
+    },
+    {
+      "id": "LG-Q-362",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. Suppose output is below its natural level because AD is weak. Which Fed action shown through the money market would move AD in the stabilizing direction?",
+      "to": "Suppose output is below its natural level because AD is weak. Which Fed action through the money market would move AD in the stabilizing direction?"
+    },
+    {
+      "id": "LG-Q-363",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. Suppose output is above its natural level because AD is too strong. Which Fed action shown through the money market would move AD in the stabilizing direction?",
+      "to": "Suppose output is above its natural level because AD is too strong. Which Fed action through the money market would move AD in the stabilizing direction?"
+    },
+    {
+      "id": "LG-Q-364",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If a rise in the price level shifts money demand right and the Fed does not change money supply, why does this help explain the downward slope of AD?",
+      "to": "If a rise in the price level shifts money demand right and the Fed does not change money supply, why does this help explain the downward slope of AD?"
+    },
+    {
+      "id": "LG-Q-365",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed increases money supply but investment barely responds to the lower interest rate, what happens to the AD shift?",
+      "to": "If the Fed increases money supply but investment barely responds to the lower interest rate, what happens to the AD shift?"
+    },
+    {
+      "id": "LG-Q-366",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the economy is in a liquidity trap, which part of the normal expansionary monetary-policy chain weakens?",
+      "to": "If the economy is in a liquidity trap, which part of the normal expansionary monetary-policy chain weakens?"
+    },
+    {
+      "id": "LG-Q-367",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. If an increase in Y raises money demand and the Fed wants to prevent r from rising, what should the Fed do?",
+      "to": "If an increase in Y raises money demand and the Fed wants to prevent r from rising, what should the Fed do?"
+    },
+    {
+      "id": "LG-Q-368",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If P rises, money demand shifts right. If the Fed also increases money supply enough to hold r constant, what happens to the interest-rate effect on AD?",
+      "to": "If P rises, money demand shifts right. If the Fed also increases money supply enough to hold r constant, what happens to the interest-rate effect on AD?"
+    },
+    {
+      "id": "LG-Q-369",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If money supply rises and AD shifts right, what is the correct distinction between the money-market movement and the AD-AS outcome?",
+      "to": "If money supply rises and AD shifts right, what is the correct distinction between the money-market movement and the AD-AS outcome?"
+    },
+    {
+      "id": "LG-Q-370",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If government spending initially shifts AD right by $40 billion and MPC is 0.75, what is the total shift before crowding out?",
+      "to": "If government spending initially shifts AD right by $40 billion and MPC is 0.75, what is the total shift before crowding out?"
+    },
+    {
+      "id": "LG-Q-371",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If the initial AD shift is $30 billion and the final shift shown is $150 billion, what MPC is implied by the simple multiplier?",
+      "to": "If the initial AD shift is $30 billion and the final shift is $150 billion, what MPC is implied by the simple multiplier?"
+    },
+    {
+      "id": "LG-Q-372",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If the initial shift is $50 billion and MPC falls from 0.8 to 0.5, what happens to the final AD shift before crowding out?",
+      "to": "If the initial shift is $50 billion and MPC falls from 0.8 to 0.5, what happens to the final AD shift before crowding out?"
+    },
+    {
+      "id": "LG-Q-373",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. Suppose the multiplier would shift AD right by $200 billion, but crowding out reduces investment by $60 billion. What is the net shift?",
+      "to": "Suppose the multiplier would shift AD right by $200 billion, but crowding out reduces investment by $60 billion. What is the net shift?"
+    },
+    {
+      "id": "LG-Q-374",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If policymakers expect the multiplier shift to close a recessionary gap exactly, but crowding out is stronger than expected, what is the likely result?",
+      "to": "If policymakers expect the multiplier shift to close a recessionary gap exactly, but crowding out is stronger than expected, what is the likely result?"
+    },
+    {
+      "id": "LG-Q-375",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If the economy is already near full employment and fiscal policy shifts AD right through the multiplier, what risk becomes more important?",
+      "to": "If the economy is already near full employment and fiscal policy shifts AD right through the multiplier, what risk becomes more important?"
+    },
+    {
+      "id": "LG-Q-376",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the graph. If government spending rises by $60 billion, MPC is 0.75, and crowding out reduces investment by $50 billion, what is the net AD shift?",
+      "to": "If government spending rises by $60 billion, MPC is 0.75, and crowding out reduces investment by $50 billion, what is the net AD shift?"
+    },
+    {
+      "id": "LG-Q-4001",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the price level rises, what happens in the money market?",
+      "to": "If the price level rises, what happens in the money market?"
+    },
+    {
+      "id": "LG-Q-4002",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. A higher price level raises money demand, interest rates rise, and investment falls by $40 billion. If MPC = 0.75, what is the total AD decrease from this channel?",
+      "to": "A higher price level raises money demand, interest rates rise, and investment falls by $40 billion. If MPC = 0.75, what is the total AD decrease from this channel?"
+    },
+    {
+      "id": "LG-Q-4004",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the Fed increases money supply, what chain follows?",
+      "to": "If the Fed increases money supply, what chain follows?"
+    },
+    {
+      "id": "LG-Q-4005",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The Fed increases money supply and investment rises by $70 billion. If MPC = 0.6, what is the total AD increase?",
+      "to": "The Fed increases money supply and investment rises by $70 billion. If MPC = 0.6, what is the total AD increase?"
+    },
+    {
+      "id": "LG-Q-4011",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. Government spending rises by $80 billion, MPC = 0.75, and crowding out reduces investment by $70 billion. What is the net AD shift?",
+      "to": "Government spending rises by $80 billion, MPC = 0.75, and crowding out reduces investment by $70 billion. What is the net AD shift?"
+    },
+    {
+      "id": "LG-Q-9025",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. Money supply shifts from MS1 to MS2. If the value of money falls from 1/2 to 1/4, which price-level change and interpretation are correct?",
+      "to": "Money supply shifts from MS1 to MS2. If the value of money falls from 1/2 to 1/4, which price-level change and interpretation are correct?"
+    },
+    {
+      "id": "LG-Q-9026",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. Starting at the original equilibrium, the Fed doubles money supply. If output and velocity are unchanged, which answer matches both the graph and quantity theory?",
+      "to": "Starting at the original equilibrium, the Fed doubles money supply. If output and velocity are unchanged, which answer matches quantity theory?"
+    },
+    {
+      "id": "LG-Q-9027",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. After MS shifts right, there is excess money at the old price level. Which adjustment process restores equilibrium?",
+      "to": "After MS shifts right, there is excess money at the old price level. Which adjustment process restores equilibrium?"
+    },
+    {
+      "id": "LG-Q-9028",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If money demand shifts right while money supply is fixed, and the value of money rises from 1/4 to 1/2, what happens to the price level?",
+      "to": "If money demand shifts right while money supply is fixed, and the value of money rises from 1/4 to 1/2, what happens to the price level?"
+    },
+    {
+      "id": "LG-Q-9042",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If MS shifts right and the price level rises from 2 to 4, what inflation cost would become more likely if firms must repeatedly update prices?",
+      "to": "If MS shifts right and the price level rises from 2 to 4, what inflation cost would become more likely if firms must repeatedly update prices?"
+    },
+    {
+      "id": "LG-Q-9043",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If MS shifts right, the price level rises, and people reduce cash balances by making more frequent transfers, what inflation cost is shown?",
+      "to": "If MS shifts right, the price level rises, and people reduce cash balances by making more frequent transfers, what inflation cost is described?"
+    },
+    {
+      "id": "LG-Q-9047",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. MS shifts right, the value of money falls, and expected inflation rises. What happens to nominal interest rates if the real rate is unchanged?",
+      "to": "MS shifts right, the value of money falls, and expected inflation rises. What happens to nominal interest rates if the real rate is unchanged?"
+    },
+    {
+      "id": "LG-Q-9049",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If the Fed contracts money supply and the value of money rises from 1/4 to 1/2, which statement correctly describes the result?",
+      "to": "If the Fed contracts money supply and the value of money rises from 1/4 to 1/2, which statement correctly describes the result?"
+    },
+    {
+      "id": "LG-Q-9050",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "A student sees the money graph and says, 'Inflation means the money demand curve slopes up.' What is the best correction?",
+      "to": "A student says, 'Inflation means the money demand curve slopes up.' What is the best correction?"
+    },
+    {
+      "id": "LG-Q-9054",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. Money demand shifts right while money supply is fixed. If the Fed wants to prevent the interest-rate change shown, what should it do?",
+      "to": "Money demand shifts right while money supply is fixed. If the Fed wants to prevent the resulting interest-rate increase, what should it do?"
+    },
+    {
+      "id": "LG-Q-9057",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If the economy initially needed AD to fall by $300 billion and the MS1 to MS2 movement reduces AD by $200 billion, what remains?",
+      "to": "If the economy initially needed AD to fall by $300 billion and the MS1 to MS2 movement reduces AD by $200 billion, what remains?"
+    },
+    {
+      "id": "LG-Q-9058",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The policy movement shown must reduce AD by $240 billion. If MPC = 0.75, what investment decrease is needed to produce that AD movement?",
+      "to": "A contractionary monetary-policy move must reduce AD by $240 billion. If MPC = 0.75, what investment decrease is needed to produce that AD movement?"
+    },
+    {
+      "id": "LG-Q-9063",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The MS1 to MS2 movement causes AD to shift left by $180 billion. A separate fiscal expansion shifts AD right by $60 billion. What is the net AD change?",
+      "to": "The MS1 to MS2 movement causes AD to shift left by $180 billion. A separate fiscal expansion shifts AD right by $60 billion. What is the net AD change?"
+    },
+    {
+      "id": "LG-Q-9065",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The Fed pushes r high enough to reduce investment by $90 billion, but AD only needed to move left by $240 billion. If MPC = 0.75, what happens?",
+      "to": "The Fed pushes r high enough to reduce investment by $90 billion, but AD only needed to move left by $240 billion. If MPC = 0.75, what happens?"
+    },
+    {
+      "id": "LG-Q-9066",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. Government spending rises by $70 billion and MPC = 0.8. What is the correct order of AD shifts before crowding out?",
+      "to": "Government spending rises by $70 billion and MPC = 0.8. What is the correct order of AD shifts before crowding out?"
+    },
+    {
+      "id": "LG-Q-9067",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. Government spending rises by $60 billion and the final AD shift is $300 billion. What order of AD shifts and implied MPC fit the graph?",
+      "to": "Government spending rises by $60 billion and the final AD shift is $300 billion. What order of AD shifts and implied MPC fit these data?"
+    },
+    {
+      "id": "LG-Q-9068",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. Government spending rises by $40 billion. If MPC rises from 0.5 to 0.8, how does the order of AD shifts change?",
+      "to": "Government spending rises by $40 billion. If MPC rises from 0.5 to 0.8, how does the order of AD shifts change?"
+    },
+    {
+      "id": "LG-Q-9069",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. A $50 billion government spending increase is intended to close a $250 billion AD gap. MPC = 0.75, but crowding out reduces investment by $40 billion. What is the correct sequence?",
+      "to": "A $50 billion government spending increase is intended to close a $250 billion AD gap. MPC = 0.75, but crowding out reduces investment by $40 billion. What is the correct sequence?"
+    },
+    {
+      "id": "LG-Q-9070",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. The economy is already above potential output by $180 billion. Congress raises spending by $30 billion and MPC = 0.8. What is the correct AD-shift interpretation?",
+      "to": "The economy is already above potential output by $180 billion. Congress raises spending by $30 billion and MPC = 0.8. What is the correct AD-shift interpretation?"
+    },
+    {
+      "id": "LG-Q-9071",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The monetary-policy movement shifts AD left by $160 billion. Fiscal expansion shifts AD right by $160 billion. What is the net AD effect?",
+      "to": "The monetary-policy movement shifts AD left by $160 billion. Fiscal expansion shifts AD right by $160 billion. What is the net AD effect?"
+    },
+    {
+      "id": "LG-Q-9073",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. Government spending rises by $100 billion and MPC = 0.6. Crowding out reduces investment by $75 billion. What is the correct order of AD effects?",
+      "to": "Government spending rises by $100 billion and MPC = 0.6. Crowding out reduces investment by $75 billion. What is the correct order of AD effects?"
+    },
+    {
+      "id": "LG-Q-9074",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. A recessionary gap is $400 billion. Government spending rises by $100 billion and MPC = 0.75. What is the order of AD shifts and the final gap, ignoring crowding out?",
+      "to": "A recessionary gap is $400 billion. Government spending rises by $100 billion and MPC = 0.75. What is the order of AD shifts and the final gap, ignoring crowding out?"
+    },
+    {
+      "id": "LG-Q-9116",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. After MS shifts right, P rises from 2 to 4. If M doubled and Y was constant, what must have happened to velocity for the graph to match the quantity equation?",
+      "to": "After MS shifts right, P rises from 2 to 4. If M doubled and Y was constant, what must have happened to velocity for these changes to satisfy the quantity equation?"
+    },
+    {
+      "id": "LG-Q-9117",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If MS shifts right and the value of money falls, expected inflation rises from 3 percent to 9 percent. If the real interest rate stays at 2 percent, what happens to the nominal interest rate?",
+      "to": "If MS shifts right and the value of money falls, expected inflation rises from 3 percent to 9 percent. If the real interest rate stays at 2 percent, what happens to the nominal interest rate?"
+    },
+    {
+      "id": "LG-Q-9120",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. MS shifts right, P rises, and firms must update thousands of posted prices while households also reduce money balances. Which pair of inflation costs is shown?",
+      "to": "MS shifts right, P rises, and firms must update thousands of posted prices while households also reduce money balances. Which pair of inflation costs is described?"
+    },
+    {
+      "id": "LG-Q-9121",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If money demand shifts right while MS is fixed and the value of money rises from 1/5 to 1/4, what happens to P, and what inflation term does this imply?",
+      "to": "If money demand shifts right while MS is fixed and the value of money rises from 1/5 to 1/4, what happens to P, and what inflation term does this imply?"
+    },
+    {
+      "id": "LG-Q-9125",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. MS shifts right, P rises from 2 to 5, and a fixed nominal debt of $10,000 is repaid. What happens to the real burden of that debt?",
+      "to": "MS shifts right, P rises from 2 to 5, and a fixed nominal debt of $10,000 is repaid. What happens to the real burden of that debt?"
+    },
+    {
+      "id": "LG-Q-9126",
+      "change": "graph_removed",
+      "image": "question-assets/moneys_moneyd.webp",
+      "from": "Refer to the graph. If the value of money falls from 1 to 1/2, then later to 1/4, what happens to the price level over those two moves?",
+      "to": "If the value of money falls from 1 to 1/2, then later to 1/4, what happens to the price level over those two moves?"
+    },
+    {
+      "id": "LG-Q-9130",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the graph. Money demand shifts right while money supply is fixed. If the investment response to the interest-rate change is $50 billion and MPC = 0.75, what is the correct AD effect?",
+      "to": "Money demand shifts right while money supply is fixed. If the investment response to the interest-rate change is $50 billion and MPC = 0.75, what is the correct AD effect?"
+    },
+    {
+      "id": "LG-Q-9133",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. Government spending rises by $90 billion and MPC = 0.8. Crowding out reduces investment by $180 billion. What is the correct order of AD effects?",
+      "to": "Government spending rises by $90 billion and MPC = 0.8. Crowding out reduces investment by $180 billion. What is the correct order of AD effects?"
+    },
+    {
+      "id": "LG-Q-9134",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. The initial government-spending shift is $100 billion and the final AD shift is $400 billion. What MPC is implied, and what is the correct shift order?",
+      "to": "The initial government-spending shift is $100 billion and the final AD shift is $400 billion. What MPC is implied, and what is the correct shift order?"
+    },
+    {
+      "id": "LG-Q-9135",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. AD is weak by $500 billion. Government spending rises by $80 billion, investment rises by $40 billion, and MPC = 0.75. Ignoring crowding out, what happens to the gap?",
+      "to": "AD is weak by $500 billion. Government spending rises by $80 billion, investment rises by $40 billion, and MPC = 0.75. Ignoring crowding out, what happens to the gap?"
+    },
+    {
+      "id": "LG-Q-9136",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. Output is above potential by $360 billion. The Fed uses the policy direction shown, and the investment response is $50 billion. If MPC = 0.8, what overheating gap remains?",
+      "to": "Output is above potential by $360 billion. The Fed uses contractionary monetary policy, and the investment response is $50 billion. If MPC = 0.8, what overheating gap remains?"
+    },
+    {
+      "id": "LG-Q-9137",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-demand graph. Money demand shifts left while money supply is fixed. If the investment response is $45 billion and MPC = 0.5, what is the correct AD effect?",
+      "to": "Money demand shifts left while money supply is fixed. If the investment response is $45 billion and MPC = 0.5, what is the correct AD effect?"
+    },
+    {
+      "id": "LG-Q-9139",
+      "change": "graph_removed",
+      "image": "question-assets/moneymultiplier.webp",
+      "from": "Refer to the multiplier graph. A recessionary AD gap is $600 billion. Government spending rises $100 billion, MPC = 0.8, and crowding out is $150 billion. What is the correct order and remaining gap?",
+      "to": "A recessionary AD gap is $600 billion. Government spending rises $100 billion, MPC = 0.8, and crowding out is $150 billion. What is the correct order and remaining gap?"
+    },
+    {
+      "id": "LG-Q-9140",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The policy direction shown is used when the economy is already above potential output. What is the boss-level diagnosis?",
+      "to": "Contractionary monetary policy is used when the economy is already above potential output. What is the boss-level diagnosis?"
+    },
+    {
+      "id": "LG-Q-9141",
+      "change": "graph_removed",
+      "image": "question-assets/moneyd2_moneys2.webp",
+      "from": "Refer to the money-demand graph. Money demand shifts right while money supply is fixed. Expansionary fiscal policy also raises interest rates through crowding out. What happens to investment if both effects occur?",
+      "to": "Money demand shifts right while money supply is fixed. Expansionary fiscal policy also raises interest rates through crowding out. What happens to investment if both effects occur?"
+    },
+    {
+      "id": "LG-Q-9143",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. The monetary-policy movement shown reduces investment by $60 billion. A separate fiscal expansion raises AD by $400 billion after the multiplier. If MPC = 0.75, what is the final net AD effect?",
+      "to": "A contractionary monetary-policy move reduces investment by $60 billion. A separate fiscal expansion raises AD by $400 billion after the multiplier. If MPC = 0.75, what is the final net AD effect?"
+    },
+    {
+      "id": "LG-Q-9144",
+      "change": "graph_removed",
+      "image": "question-assets/ad_ms_md.webp",
+      "from": "Refer to the graph. If policymakers use the contractionary monetary-policy movement shown during a negative supply shock, what is the strongest critique?",
+      "to": "If policymakers use contractionary monetary policy during a negative supply shock, what is the strongest critique?"
+    },
+    {
+      "id": "P62E-COP-L-055",
+      "change": "graph_removed",
+      "image": "question-assets/costs-of-production/cop_average_costs.webp",
+      "from": "Curve case 11: A cost curve approaches the horizontal axis but never turns upward. Which curve is it?",
+      "to": "A cost curve approaches zero as output rises and never turns upward. Which cost curve is it?"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "phase": "phaseQH1-question-independence-graph-hygiene-v1",
+  "ok": true,
+  "composerVersion": "4.5s.2",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1",
+  "librarySha256": "696e755ebcaea5c25d6d06f76db4a781eaf59c87bf4f0eee6dcdfea3c0faea80",
+  "canonicalQuestionCount": 7977,
+  "checks": {
+    "unsafeContextStarts": 0,
+    "orphanGraphReferences": 0,
+    "axisGiveawayImages": 0,
+    "screenshotContextFailures": 0
+  },
+  "compositionResults": {
+    "cps": {
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 442,
+        "issues": []
+      },
+      "poolCounts": {
+        "easy": 52,
+        "medium": 50,
+        "hard": 62,
+        "elite": 30,
+        "legendary": 90,
+        "easyBoss": 18,
+        "mediumBoss": 18,
+        "finalBoss": 18,
+        "legendaryBoss": 36
+      }
+    },
+    "monopolisticCompetition": {
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 459,
+        "issues": []
+      },
+      "poolCounts": {
+        "easy": 52,
+        "medium": 53,
+        "hard": 77,
+        "elite": 37,
+        "legendary": 95,
+        "easyBoss": 19,
+        "mediumBoss": 19,
+        "finalBoss": 19,
+        "legendaryBoss": 36
+      }
+    },
+    "monopoly": {
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 524,
+        "issues": []
+      },
+      "poolCounts": {
+        "easy": 68,
+        "medium": 67,
+        "hard": 81,
+        "elite": 40,
+        "legendary": 96,
+        "easyBoss": 19,
+        "mediumBoss": 19,
+        "finalBoss": 20,
+        "legendaryBoss": 36
+      }
+    },
+    "macroGraphHygiene": {
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true,
+        "questionCount": 686,
+        "issues": []
+      },
+      "poolCounts": {
+        "easy": 87,
+        "medium": 91,
+        "hard": 93,
+        "elite": 76,
+        "legendary": 92,
+        "easyBoss": 33,
+        "mediumBoss": 33,
+        "finalBoss": 33,
+        "legendaryBoss": 41
+      }
+    }
+  },
+  "issues": []
+}
