@@ -87,7 +87,7 @@ async function buildCase(name,supportedModes){
     await buildCase('all-seven',['standard','timed','exam','quiz','unlimited','legendary','score'])
   ];
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5r.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!cssGuard) issues.push('missing hard hidden CSS guard');
   if(!showReapply) issues.push('showModeSelect does not reapply config');
   if(!returnReapply) issues.push('returnToModeSelectFromRun does not reapply config');

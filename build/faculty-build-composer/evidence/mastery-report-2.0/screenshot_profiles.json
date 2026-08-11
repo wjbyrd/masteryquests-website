@@ -1,0 +1,33 @@
+{
+  "purpose": "Controlled visual review of Mastery Report 2.0 evidence labels",
+  "profiles": [
+    {
+      "profile": "expert",
+      "mode": "Unlimited Practice",
+      "accuracy": "92%",
+      "correct": "22/24",
+      "evidenceLabel": "Mastery Demonstrated",
+      "hardestEvidence": "High Challenge",
+      "expectedRead": "Broad, repeated, advanced-or-harder success with no major diagnostic weakness."
+    },
+    {
+      "profile": "average",
+      "mode": "Unlimited Practice",
+      "accuracy": "75%",
+      "correct": "18/24",
+      "evidenceLabel": "Strong Evidence",
+      "hardestEvidence": "Advanced",
+      "expectedRead": "Enough evidence to trust targeted weaknesses, but mastery is not demonstrated."
+    },
+    {
+      "profile": "weak",
+      "mode": "Unlimited Practice",
+      "accuracy": "42%",
+      "correct": "10/24",
+      "evidenceLabel": "Strong Evidence",
+      "hardestEvidence": "Advanced",
+      "repairBridgeExposure": 6,
+      "expectedRead": "Strong evidence of unstable command; low performance is not dismissed as a small-sample fluke."
+    }
+  ]
+}

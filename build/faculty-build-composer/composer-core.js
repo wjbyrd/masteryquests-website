@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5r.0';
+const COMPOSER_VERSION = '4.5s.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score'];
 const POOL_MINIMUMS = {

@@ -1,0 +1,148 @@
+{
+  "phase": "mastery-report-2.0",
+  "ok": true,
+  "composerVersion": "4.5s.0",
+  "canonicalQuestionCount": 7977,
+  "evidenceCases": {
+    "tiny": {
+      "key": "limited",
+      "label": "Limited Evidence",
+      "explanation": "The result may be accurate, but there are too few scored attempts to make a strong mastery claim.",
+      "exposure": {
+        "counts": {
+          "foundational": 2,
+          "intermediate": 0,
+          "advanced": 0,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 1,
+        "challengeBands": 1
+      }
+    },
+    "developing": {
+      "key": "developing",
+      "label": "Developing Evidence",
+      "explanation": "The evidence is growing, but more repeated attempts or broader difficulty exposure would make the diagnosis stronger.",
+      "exposure": {
+        "counts": {
+          "foundational": 4,
+          "intermediate": 3,
+          "advanced": 0,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 2,
+        "challengeBands": 2
+      }
+    },
+    "mastered": {
+      "key": "mastery",
+      "label": "Mastery Demonstrated",
+      "explanation": "Enough repeated evidence, strong accuracy, and advanced-or-harder exposure support a mastery claim.",
+      "exposure": {
+        "counts": {
+          "foundational": 6,
+          "intermediate": 6,
+          "advanced": 8,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 3,
+        "challengeBands": 3
+      }
+    },
+    "weakStrong": {
+      "key": "strong",
+      "label": "Strong Evidence",
+      "explanation": "There is enough evidence to trust the diagnosis. This label describes evidence strength, not whether performance was high or low.",
+      "exposure": {
+        "counts": {
+          "foundational": 8,
+          "intermediate": 7,
+          "advanced": 5,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 3,
+        "challengeBands": 3
+      }
+    }
+  },
+  "battleMenu": {
+    "exam": {
+      "confirmEndPractice": 1,
+      "showGameModal": 0,
+      "saved": 0,
+      "timedEarly": 0,
+      "returned": 0
+    },
+    "unlimited": {
+      "confirmEndPractice": 1,
+      "showGameModal": 0,
+      "saved": 0,
+      "timedEarly": 0,
+      "returned": 0
+    },
+    "standard": {
+      "confirmEndPractice": 0,
+      "showGameModal": 1,
+      "saved": 1,
+      "timedEarly": 0,
+      "returned": 1
+    }
+  },
+  "manualEnd": {
+    "exam": {
+      "marked": 0,
+      "report": 1,
+      "event": "exam_ended_by_student",
+      "preserveResultsHTML": true
+    },
+    "unlimited": {
+      "marked": 0,
+      "report": 1,
+      "event": "unlimited_ended_by_student",
+      "preserveResultsHTML": true
+    }
+  },
+  "sourceChecks": {
+    "evidenceLabels": true,
+    "difficultyCapture": true,
+    "battleMenuFunnelsPractice": true,
+    "reportDestination": true,
+    "evidenceSection": true,
+    "copyIncludesEvidence": true
+  },
+  "sevenModeValidation": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    }
+  ],
+  "issues": []
+}

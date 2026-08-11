@@ -56,7 +56,7 @@ function simulateManualPracticeEnd(mode){
   const getEl=(id)=>elements[id]||(elements[id]={style:{},classList:{add(){},remove(){},toggle(){}},innerText:'',innerHTML:''});
   let examMarked=0, reportShown=0, telemetry=null, sessionBegun=0;
   const ctx={
-    gameMode:mode,runEnding:false,answerSubmissionPending:false,totalAttempts:7,correctAnswers:5,maxStreak:3,streak:1,room:8,username:'Test',runID:'RUN',quizQuestionTarget:10,
+    gameMode:mode,runEnding:false,answerSubmissionPending:false,totalAttempts:7,correctAnswers:5,maxStreak:3,streak:1,room:8,username:'Test',runID:'RUN',quizQuestionTarget:10,latestResultsScreenHTML:'',
     FACULTY_COMPOSITION_CONFIG:{title:'Test Quest'},
     document:{getElementById:getEl},
     beginRunSession(){sessionBegun++;}, stopTimedModeClock(){}, freezeCompletionTime(){return 42000;}, formatTime(){return '00:42';}, generateCode(){return 'MQB-TEST';},
@@ -70,7 +70,7 @@ function simulateManualPracticeEnd(mode){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5r.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
   if(core.MODE_ORDER.length!==7) issues.push(`mode count ${core.MODE_ORDER.length}`);
   if(library.canonicalQuestionCount!==7977) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
@@ -101,7 +101,7 @@ function simulateManualPracticeEnd(mode){
     endPracticeButton: html.includes('id="endPracticeBtn"'),
     endControlIncludesExam: html.includes('gameMode === "exam" || gameMode === "unlimited"'),
     confirmFlow: html.includes('confirmText: "Generate Mastery Report"'),
-    directReport: html.includes('handlePracticeModeComplete({endedByStudent:true, showReport:true})'),
+    directReport: html.includes('handlePracticeModeComplete({endedByStudent:true, reportDestination:"mastery"})'),
     cycleRollover: html.includes('if(gameMode === "unlimited" && room > 30)') && html.includes('unlimitedPracticeCycle++'),
     noUnlimitedBosses: html.includes('gameMode === "quiz" || gameMode === "unlimited"') && html.includes('gameMode !== "unlimited"'),
     examEarlyCompletionGuard: html.includes('if(gameMode === "exam" && !endedByStudent)'),

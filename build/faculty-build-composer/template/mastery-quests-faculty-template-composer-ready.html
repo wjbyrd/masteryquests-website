@@ -2405,6 +2405,20 @@ body.game-active #soundToggle {
     text-shadow:0 0 10px rgba(247,217,130,0.40);
 }
 
+.mastery-evidence-value{font-size:18px;line-height:1.15;}
+.mastery-evidence-badge{display:inline-flex;align-items:center;justify-content:center;padding:5px 9px;border-radius:999px;border:1px solid rgba(199,236,255,.30);background:rgba(2,6,23,.62);color:#c7ecff;font-size:10px;font-weight:900;letter-spacing:.7px;text-transform:uppercase;white-space:nowrap;}
+.mastery-evidence-badge[data-evidence="limited"]{border-color:rgba(248,113,113,.52);color:#fecaca;}
+.mastery-evidence-badge[data-evidence="developing"]{border-color:rgba(251,191,36,.52);color:#fde68a;}
+.mastery-evidence-badge[data-evidence="strong"]{border-color:rgba(56,189,248,.58);color:#bae6fd;}
+.mastery-evidence-badge[data-evidence="mastery"]{border-color:rgba(247,217,130,.78);color:#fff1b8;box-shadow:0 0 12px rgba(247,217,130,.16);}
+.mastery-row-evidence{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:wrap;margin-top:5px;}
+.mastery-evidence-note{color:rgba(224,242,254,.82);line-height:1.5;margin:8px 0 0;}
+.mastery-evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:12px;}
+.mastery-evidence-cell{padding:10px;border-radius:10px;border:1px solid rgba(56,189,248,.18);background:rgba(2,6,23,.48);text-align:center;}
+.mastery-evidence-cell span{display:block;}
+.mastery-evidence-cell .evidence-count{color:#f7d982;font-weight:900;font-size:20px;margin-top:3px;}
+.mastery-evidence-cell .evidence-label{color:#c7ecff;font-size:10px;letter-spacing:1px;text-transform:uppercase;}
+
 .mastery-section{
     padding:16px;
     margin:14px 0;
@@ -3294,7 +3308,7 @@ let remediationState = {
     careless: false
 };
 let conceptMemory = {};
-let masteryState = { byTag: {}, byObjective: {}, bySkill: {}, recent: [] };
+let masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [] };
 let adaptiveMode = "support";
 // =============================================
 // RAPID GUESSING / BUTTON-MASHING DETECTOR
@@ -3841,8 +3855,9 @@ function loadSavedGame(){
         gameMode = saveData.gameMode || gameMode || "standard";
 
         conceptMemory = saveData.conceptMemory || {};
-        masteryState = saveData.masteryState || { byTag: {}, byObjective: {}, bySkill: {}, recent: [] };
+        masteryState = saveData.masteryState || { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [] };
         if(!masteryState.bySkill) masteryState.bySkill = {};
+        if(!masteryState.byDifficulty) masteryState.byDifficulty = {};
         adaptiveMode = saveData.adaptiveMode || "support";
         tagHistory = saveData.tagHistory || [];
         lastTypes = saveData.lastTypes || [];
@@ -4052,13 +4067,36 @@ function getObjectiveFluency(question){
     return getFluency(getObjectiveBucket(question), question?.type || "default");
 }
 
-function updateBucket(bucket, isCorrect, responseTime){
+function normalizeMasteryDifficulty(difficulty){
+    const value = String(difficulty || "").trim();
+    if(value === "easy") return "easy";
+    if(value === "medium") return "medium";
+    if(value === "hard") return "hard";
+    if(value === "elite") return "elite";
+    if(value === "legendary") return "legendary";
+    if(value === "repair") return "repair";
+    if(value === "bridge") return "bridge";
+    if(value.toLowerCase().includes("boss")) return "checkpoint";
+    return "other";
+}
+
+function updateDifficultyExposure(bucket, difficulty, isCorrect){
+    if(!bucket) return;
+    const key = normalizeMasteryDifficulty(difficulty);
+    if(!bucket.byDifficulty) bucket.byDifficulty = {};
+    if(!bucket.byDifficulty[key]) bucket.byDifficulty[key] = { attempts: 0, correct: 0 };
+    bucket.byDifficulty[key].attempts++;
+    if(isCorrect) bucket.byDifficulty[key].correct++;
+}
+
+function updateBucket(bucket, isCorrect, responseTime, difficulty = ""){
     if(!bucket) return;
     bucket.attempts++;
     if(isCorrect) bucket.correct++;
     bucket.avgTime = bucket.avgTime === 0
         ? responseTime
         : Math.round((bucket.avgTime * 0.7) + (responseTime * 0.3));
+    updateDifficultyExposure(bucket, difficulty, isCorrect);
 }
 
 function getAccuracy(bucket){
@@ -4101,11 +4139,18 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
     const typeBucket = getTypeBucket(question.tag, question.type);
     const objectiveBucket = getObjectiveBucket(question);
 	const skillBucket = getSkillBucket(question);
+    const difficulty = question.__mqDifficulty || currentQuestion?.__mqDifficulty || getDifficultyForMode();
 
-    updateBucket(tagBucket, isCorrect, responseTime);
-    updateBucket(typeBucket, isCorrect, responseTime);
-    updateBucket(objectiveBucket, isCorrect, responseTime);
-	updateBucket(skillBucket, isCorrect, responseTime);
+    updateBucket(tagBucket, isCorrect, responseTime, difficulty);
+    updateBucket(typeBucket, isCorrect, responseTime, difficulty);
+    updateBucket(objectiveBucket, isCorrect, responseTime, difficulty);
+	updateBucket(skillBucket, isCorrect, responseTime, difficulty);
+
+    if(!masteryState.byDifficulty) masteryState.byDifficulty = {};
+    const overallDifficulty = normalizeMasteryDifficulty(difficulty);
+    if(!masteryState.byDifficulty[overallDifficulty]) masteryState.byDifficulty[overallDifficulty] = { attempts: 0, correct: 0 };
+    masteryState.byDifficulty[overallDifficulty].attempts++;
+    if(isCorrect) masteryState.byDifficulty[overallDifficulty].correct++;
 
     masteryState.recent.push({
         correct: !!isCorrect,
@@ -4113,7 +4158,8 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
         tag: question.tag,
         type: question.type || "default",
         objective: currentQuestion.objective || inferObjective(currentQuestion),
-		skill: getSkillKey(question)
+		skill: getSkillKey(question),
+        difficulty: overallDifficulty
     });
 
     if(masteryState.recent.length > 20){
@@ -5133,6 +5179,16 @@ function startSelectedMode(mode, options = {}){
 }
 
 function confirmReturnToModeMenu(){
+    if(runEnding){
+        returnToModeSelectFromRun();
+        return;
+    }
+
+    if(gameMode === "exam" || gameMode === "unlimited"){
+        confirmEndPractice();
+        return;
+    }
+
     showGameModal({
         title: "Return to Battle Menu?",
         text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, and Score Attack attempts will end.",
@@ -5165,7 +5221,7 @@ function confirmEndPractice(){
         text: `This will end ${getModeDisplayName()} after ${attemptText} and generate your Mastery Report.`,
         confirmText: "Generate Mastery Report",
         cancelText: "Keep Practicing",
-        onConfirm: function(){ handlePracticeModeComplete({endedByStudent:true, showReport:true}); }
+        onConfirm: function(){ handlePracticeModeComplete({endedByStudent:true, reportDestination:"mastery"}); }
     });
 }
 
@@ -5410,7 +5466,7 @@ if(!hasSavedRun){
     bossPool = [];
     calcBag = [];
     conceptMemory = {};
-    masteryState = { byTag: {},  byObjective: {},  bySkill: {}, recent: [] };
+    masteryState = { byTag: {},  byObjective: {},  bySkill: {}, byDifficulty: {}, recent: [] };
     tagHistory = [];
     lastTypes = [];
     adaptiveMode = "support";
@@ -5505,7 +5561,7 @@ function resetRunStateForNewMode(){
     bossPool = [];
     if(typeof calcBag !== "undefined") calcBag = [];
     conceptMemory = {};
-    masteryState = { byTag: {}, byObjective: {}, bySkill: {}, recent: [] };
+    masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [] };
     tagHistory = [];
     lastTypes = [];
     adaptiveMode = "support";
@@ -6899,6 +6955,7 @@ if (isBoss) {
 
     // 2. Select the specific question based on boss health
     currentQuestion = shuffleOptions(bossPool[3 - bossHealth]);
+    if(currentQuestion) currentQuestion.__mqDifficulty = diff;
     if(!currentQuestion){
         showGameModal({title:"Question Selection Stopped",text:"A valid checkpoint question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
         return;
@@ -6952,6 +7009,7 @@ if(gameMode === "legendary"){
             purpose: "stretch"
         })
     );
+    if(currentQuestion) currentQuestion.__mqDifficulty = "legendary";
     if(!currentQuestion){
         showGameModal({title:"Question Selection Stopped",text:"A valid Legendary question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
         return;
@@ -7023,6 +7081,7 @@ else{
     );
 }
 
+if(currentQuestion) currentQuestion.__mqDifficulty = adjustedDiff;
 if(!currentQuestion){
     showGameModal({title:"Question Selection Stopped",text:"A valid question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
     return;
@@ -7393,6 +7452,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 
         if(bridgeQuestion){
             currentQuestion = shuffleOptions(bridgeQuestion);
+            if(currentQuestion) currentQuestion.__mqDifficulty = "bridge";
 
             document.getElementById("question").innerText =
                 `${getRemediationStageLabel("bridge")}: ` + currentQuestion.q;
@@ -7418,6 +7478,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 
         if(retestQuestion){
             currentQuestion = shuffleOptions(retestQuestion);
+            if(currentQuestion) currentQuestion.__mqDifficulty = "repair";
 
             document.getElementById("question").innerText =
                 `${getRemediationStageLabel("retest")}: ` + currentQuestion.q;
@@ -7592,6 +7653,7 @@ if(remediationState.active){
 
     if(remediationPrompt){
         currentQuestion = shuffleOptions(remediationPrompt);
+        if(currentQuestion) currentQuestion.__mqDifficulty = "repair";
         adaptiveMode = remediationState.stage;
 
         document.getElementById("question").innerText =
@@ -7620,6 +7682,7 @@ if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active 
 
     if (remediationPrompt) {
         currentQuestion = shuffleOptions(remediationPrompt);
+        if(currentQuestion) currentQuestion.__mqDifficulty = "repair";
         adaptiveMode = remediationState.stage;
 
         document.getElementById("question").innerText =
@@ -8118,7 +8181,7 @@ function restartScoreAttackMode(){
 
 function handlePracticeModeComplete(options = {}){
     const endedByStudent = options.endedByStudent === true;
-    const showReport = options.showReport === true;
+    const reportDestination = options.reportDestination || (options.showReport === true ? "mastery" : "results");
     if(runEnding) return;
     beginRunSession();
     if(gameMode === "quiz"){
@@ -8214,8 +8277,9 @@ function handlePracticeModeComplete(options = {}){
             ? "Practice ended by the student. The campaign record was not changed."
             : "Practice complete. The campaign record was not changed.";
 
-    if(showReport){
-        showMasteryReportScreen();
+    if(reportDestination === "mastery"){
+        latestResultsScreenHTML = document.getElementById("gameBox")?.innerHTML || latestResultsScreenHTML;
+        showMasteryReportScreen({preserveResultsHTML:true});
     }
 }
 
@@ -8520,6 +8584,62 @@ function formatSeconds(ms){
     return `${Math.round(numeric / 1000)}s`;
 }
 
+function getDifficultyExposure(byDifficulty = {}){
+    const getAttempts = key => Number(byDifficulty?.[key]?.attempts || 0);
+    const counts = {
+        foundational: getAttempts("easy"),
+        intermediate: getAttempts("medium"),
+        advanced: getAttempts("hard"),
+        highChallenge: getAttempts("elite") + getAttempts("legendary") + getAttempts("checkpoint"),
+        support: getAttempts("repair") + getAttempts("bridge")
+    };
+    const hardestRank = counts.highChallenge > 0 ? 4
+        : counts.advanced > 0 ? 3
+        : counts.intermediate > 0 ? 2
+        : counts.foundational > 0 ? 1
+        : 0;
+    const challengeBands = [counts.foundational, counts.intermediate, counts.advanced, counts.highChallenge].filter(value => value > 0).length;
+    return { counts, hardestRank, challengeBands };
+}
+
+function getDifficultyExposureLabel(exposure){
+    const rank = Number(exposure?.hardestRank || 0);
+    if(rank >= 4) return "High Challenge";
+    if(rank === 3) return "Advanced";
+    if(rank === 2) return "Intermediate";
+    if(rank === 1) return "Foundational";
+    return "Not Yet Established";
+}
+
+function getEvidenceAssessment({attempts=0, accuracy=0, byDifficulty={}, recentAccuracy=null, overall=false} = {}){
+    const exposure = getDifficultyExposure(byDifficulty);
+    const limitedMax = overall ? 4 : 2;
+    const developingMax = overall ? 9 : 4;
+    const masteryMin = overall ? 12 : 6;
+    const strongMin = overall ? 10 : 5;
+    const recentStable = recentAccuracy === null || recentAccuracy === undefined || recentAccuracy >= 0.80;
+    const masteryReady = attempts >= masteryMin
+        && accuracy >= 0.85
+        && exposure.hardestRank >= 3
+        && recentStable;
+
+    if(masteryReady){
+        return {key:"mastery",label:"Mastery Demonstrated",explanation:"Enough repeated evidence, strong accuracy, and advanced-or-harder exposure support a mastery claim.",exposure};
+    }
+    if(attempts <= limitedMax){
+        return {key:"limited",label:"Limited Evidence",explanation:"The result may be accurate, but there are too few scored attempts to make a strong mastery claim.",exposure};
+    }
+    if(attempts <= developingMax || attempts < strongMin){
+        return {key:"developing",label:"Developing Evidence",explanation:"The evidence is growing, but more repeated attempts or broader difficulty exposure would make the diagnosis stronger.",exposure};
+    }
+    return {key:"strong",label:"Strong Evidence",explanation:"There is enough evidence to trust the diagnosis. This label describes evidence strength, not whether performance was high or low.",exposure};
+}
+
+function renderEvidenceBadge(evidence){
+    if(!evidence) return "";
+    return `<span class="mastery-evidence-badge" data-evidence="${escapeHTML(evidence.key)}">${escapeHTML(evidence.label)}</span>`;
+}
+
 function getBucketEntry(key, bucket, category = "concept"){
     if(!bucket || !bucket.attempts){
         return null;
@@ -8536,6 +8656,8 @@ function getBucketEntry(key, bucket, category = "concept"){
         ? 0
         : accuracy - clamp((timeRatio - 1) * 0.25, 0, 0.35);
 
+    const evidence = getEvidenceAssessment({attempts, accuracy: accuracy || 0, byDifficulty: bucket.byDifficulty || {}, overall:false});
+
     return {
         key,
         label: formatMasteryLabel(key),
@@ -8545,7 +8667,9 @@ function getBucketEntry(key, bucket, category = "concept"){
         accuracy,
         avgTime,
         timeRatio,
-        fluency
+        fluency,
+        evidence,
+        byDifficulty: bucket.byDifficulty || {}
     };
 }
 
@@ -8561,7 +8685,7 @@ function getTypeMasteryEntries(){
     Object.values(masteryState.byTag || {}).forEach(tagBucket => {
         Object.entries(tagBucket.byType || {}).forEach(([type, bucket]) => {
             if(!typeBuckets[type]){
-                typeBuckets[type] = { attempts: 0, correct: 0, avgTime: 0 };
+                typeBuckets[type] = { attempts: 0, correct: 0, avgTime: 0, byDifficulty: {} };
             }
 
             const oldAttempts = typeBuckets[type].attempts;
@@ -8572,6 +8696,11 @@ function getTypeMasteryEntries(){
                 ? ((typeBuckets[type].avgTime * oldAttempts) + (Number(bucket.avgTime || 0) * Number(bucket.attempts || 0))) / newAttempts
                 : 0;
             typeBuckets[type].attempts = newAttempts;
+            Object.entries(bucket.byDifficulty || {}).forEach(([difficultyKey, difficultyBucket]) => {
+                if(!typeBuckets[type].byDifficulty[difficultyKey]) typeBuckets[type].byDifficulty[difficultyKey] = {attempts:0, correct:0};
+                typeBuckets[type].byDifficulty[difficultyKey].attempts += Number(difficultyBucket.attempts || 0);
+                typeBuckets[type].byDifficulty[difficultyKey].correct += Number(difficultyBucket.correct || 0);
+            });
         });
     });
 
@@ -8635,7 +8764,8 @@ function renderMasteryRows(entries, emptyText){
                     <span class="mastery-row-name">${escapeHTML(entry.label)}</span>
                     <span class="mastery-row-score">${formatPercent(entry.accuracy)} · ${entry.correct}/${entry.attempts}</span>
                 </div>
-                <span class="mastery-row-meta">Average response: ${formatSeconds(entry.avgTime)} · ${pace}</span>
+                <div class="mastery-row-evidence">${renderEvidenceBadge(entry.evidence)}</div>
+                <span class="mastery-row-meta">Average response: ${formatSeconds(entry.avgTime)} · ${pace} · Hardest evidence: ${escapeHTML(getDifficultyExposureLabel(entry.evidence?.exposure))}</span>
                 <div class="mastery-bar"><div class="mastery-bar-fill" style="width:${pct}%"></div></div>
             </div>
         `;
@@ -8714,6 +8844,13 @@ function getMasteryReportData(){
     const skillEntries = getEntriesFromBuckets(masteryState.bySkill || {}, "skill");
     const typeEntries = getTypeMasteryEntries();
     const behavior = getRecentBehaviorSignals();
+    let evidence = getEvidenceAssessment({
+        attempts: totalAttempts,
+        accuracy,
+        byDifficulty: masteryState.byDifficulty || {},
+        recentAccuracy: behavior.accuracy,
+        overall: true
+    });
 
     const strongest = sortStrongest(tagEntries).slice(0, 4);
     const weakestConcepts = getMeaningfulWeakEntries(tagEntries, 0.85).slice(0, 4);
@@ -8724,8 +8861,19 @@ function getMasteryReportData(){
     const hasTypeWeakness = hasMeaningfulWeakness(typeEntries, 0.85);
     const hasSkillWeakness = hasMeaningfulWeakness(skillEntries, 0.85);
     const hasBehaviorWeakness = behavior.fastMisses >= 2 || behavior.slowCorrects >= 3;
+
+    if(evidence.key === "mastery" && (hasConceptWeakness || hasTypeWeakness || hasSkillWeakness || hasBehaviorWeakness)){
+        evidence = {
+            key: "strong",
+            label: "Strong Evidence",
+            explanation: "There is enough evidence to trust the diagnosis, but a repeated weakness is still present. Mastery is not demonstrated until that weakness clears.",
+            exposure: evidence.exposure
+        };
+    }
+
     const noMajorWeakness = totalAttempts >= 8
         && accuracy >= 0.85
+        && evidence.exposure.hardestRank >= 3
         && !hasConceptWeakness
         && !hasTypeWeakness
         && !hasSkillWeakness
@@ -8733,16 +8881,22 @@ function getMasteryReportData(){
 
     let verdict = "The engine collected enough evidence to build a mastery report. Use the weak signals to plan the next round of practice.";
 
-    if(totalAttempts < 5){
-        verdict = "The report is limited because this run has very few attempts. The engine needs more evidence before it can judge mastery with confidence.";
+    if(evidence.key === "limited"){
+        verdict = "Limited evidence. The accuracy number is real, but the sample is too small to carry much weight yet. Keep practicing before treating it as a mastery judgment.";
+    } else if(evidence.key === "developing"){
+        verdict = accuracy >= 0.85
+            ? "Promising performance, developing evidence. The score looks good, but the engine still wants more repetition or broader difficulty exposure before calling mastery."
+            : "Developing evidence. The current weak signals are useful, but more attempts will make the diagnosis more reliable.";
+    } else if(evidence.key === "mastery" && noMajorWeakness){
+        verdict = "Mastery demonstrated. Strong repeated performance survived advanced-or-harder questions without exposing a major weakness. The next useful test is harder pressure, not more safe repetitions.";
     } else if(noMajorWeakness){
-        verdict = "No major weakness detected. That does not mean the learning is finished. It means the next useful signal comes from harder pressure: Legendary Mode first, Score Attack after that.";
+        verdict = "No major weakness detected and the evidence is strong enough to trust. Push into harder pressure to see whether that signal survives.";
     } else if(accuracy >= 0.90){
-        verdict = "Strong command. You completed the run with high accuracy. The weak signals below show where the next pressure test should focus.";
+        verdict = "Strong performance with strong evidence. The weak signals below are narrow leaks worth cleaning up before the next pressure test.";
     } else if(accuracy >= 0.75){
-        verdict = "Battle-ready, but not bulletproof. The weak areas below are where points will leak on an exam.";
+        verdict = "Battle-ready, but not bulletproof. The evidence is strong enough to trust the weak areas below; those are where points will leak on an exam.";
     } else {
-        verdict = "Unstable command. You finished, but the engine exposed weak signals. Hit the listed areas before chasing speed or Legendary Mode.";
+        verdict = "Unstable command, backed by strong evidence. This is not a small-sample fluke. Hit the listed areas before chasing speed or Legendary Mode.";
     }
 
     const nextSteps = [];
@@ -8792,16 +8946,17 @@ function getMasteryReportData(){
         hasSkillWeakness,
         noMajorWeakness,
         behavior,
+        evidence,
         verdict,
         nextSteps
     };
 }
 
-function showMasteryReportScreen(){
+function showMasteryReportScreen(options = {}){
     const gameBox = document.getElementById("gameBox");
     if(!gameBox) return;
 
-    if(!document.getElementById("masteryReportScreen")){
+    if(!options.preserveResultsHTML && !document.getElementById("masteryReportScreen")){
         latestResultsScreenHTML = gameBox.innerHTML;
     }
 
@@ -8813,11 +8968,13 @@ function showMasteryReportScreen(){
     gameBox.innerHTML = `
         <div id="masteryReportScreen" class="mastery-report-screen">
             <h1 class="mastery-report-title">MASTERY REPORT</h1>
-            <p class="mastery-report-subtitle">Post-run mastery readout based on accuracy, response time, concepts, skills, and question types.</p>
+            <p class="mastery-report-subtitle">Accuracy tells how you performed. Evidence strength tells how much weight that result deserves.</p>
 
             <div class="mastery-summary-grid">
                 <div class="mastery-stat-card"><span class="mastery-stat-label">Mode</span><span class="mastery-stat-value">${escapeHTML(report.mode)}</span></div>
                 <div class="mastery-stat-card"><span class="mastery-stat-label">Accuracy</span><span class="mastery-stat-value">${formatPercent(report.accuracy)}</span></div>
+                <div class="mastery-stat-card"><span class="mastery-stat-label">Evidence</span><span class="mastery-stat-value mastery-evidence-value">${escapeHTML(report.evidence.label)}</span></div>
+                <div class="mastery-stat-card"><span class="mastery-stat-label">Hardest Evidence</span><span class="mastery-stat-value mastery-evidence-value">${escapeHTML(getDifficultyExposureLabel(report.evidence.exposure))}</span></div>
                 <div class="mastery-stat-card"><span class="mastery-stat-label">Correct</span><span class="mastery-stat-value">${report.correctAnswers}/${report.totalAttempts}</span></div>
                 <div class="mastery-stat-card"><span class="mastery-stat-label">Best Streak</span><span class="mastery-stat-value">${report.maxStreak}</span></div>
                 <div class="mastery-stat-card"><span class="mastery-stat-label">Time</span><span class="mastery-stat-value">${escapeHTML(report.timeString)}</span></div>
@@ -8825,6 +8982,22 @@ function showMasteryReportScreen(){
             </div>
 
             <div class="mastery-verdict">${escapeHTML(report.verdict)}</div>
+
+            <div class="mastery-section">
+                <h3>Evidence Strength</h3>
+                <div class="mastery-row-main">
+                    <span class="mastery-row-name">${escapeHTML(report.evidence.label)}</span>
+                    ${renderEvidenceBadge(report.evidence)}
+                </div>
+                <p class="mastery-evidence-note">${escapeHTML(report.evidence.explanation)}</p>
+                <div class="mastery-evidence-grid">
+                    <div class="mastery-evidence-cell"><span class="evidence-label">Foundational</span><span class="evidence-count">${report.evidence.exposure.counts.foundational}</span></div>
+                    <div class="mastery-evidence-cell"><span class="evidence-label">Intermediate</span><span class="evidence-count">${report.evidence.exposure.counts.intermediate}</span></div>
+                    <div class="mastery-evidence-cell"><span class="evidence-label">Advanced</span><span class="evidence-count">${report.evidence.exposure.counts.advanced}</span></div>
+                    <div class="mastery-evidence-cell"><span class="evidence-label">High Challenge</span><span class="evidence-count">${report.evidence.exposure.counts.highChallenge}</span></div>
+                    <div class="mastery-evidence-cell"><span class="evidence-label">Repair / Bridge</span><span class="evidence-count">${report.evidence.exposure.counts.support}</span></div>
+                </div>
+            </div>
 
             <div class="mastery-section">
                 <h3>Strongest Signals</h3>
@@ -8919,21 +9092,23 @@ function copyMasteryReport(){
         `Student: ${username}`,
         `Mode: ${report.mode}`,
         `Accuracy: ${formatPercent(report.accuracy)} (${report.correctAnswers}/${report.totalAttempts})`,
+        `Evidence: ${report.evidence.label}`,
+        `Hardest Evidence: ${getDifficultyExposureLabel(report.evidence.exposure)}`,
         `Best Streak: ${report.maxStreak}`,
         `Time: ${report.timeString}`,
         report.score !== null ? `Score: ${report.score}` : null,
         "",
         "Strongest Signals:",
-        ...(report.strongest.length ? report.strongest.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts})`) : ["- No clear strength signal yet."]),
+        ...(report.strongest.length ? report.strongest.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No clear strength signal yet."]),
         "",
         report.hasConceptWeakness ? "Concepts to Review:" : "Concept Signals:",
-        ...(report.hasConceptWeakness && report.weakestConcepts.length ? report.weakestConcepts.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts})`) : ["- No major concept weakness detected. Try Legendary Mode next."]),
+        ...(report.hasConceptWeakness && report.weakestConcepts.length ? report.weakestConcepts.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No major concept weakness detected. Try Legendary Mode next."]),
         "",
         report.hasTypeWeakness ? "Weakest Question Forms:" : "Question Form Signals:",
-        ...(report.hasTypeWeakness && report.weakestTypes.length ? report.weakestTypes.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts})`) : ["- No major question-form weakness detected."]),
+        ...(report.hasTypeWeakness && report.weakestTypes.length ? report.weakestTypes.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No major question-form weakness detected."]),
         "",
         report.hasSkillWeakness ? "Weakest Skills:" : "Skill Signals:",
-        ...(report.hasSkillWeakness && report.weakestSkills.length ? report.weakestSkills.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts})`) : ["- No major skill weakness detected."]),
+        ...(report.hasSkillWeakness && report.weakestSkills.length ? report.weakestSkills.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No major skill weakness detected."]),
         "",
         "Next Moves:",
         ...report.nextSteps.map(step => `- ${step}`)

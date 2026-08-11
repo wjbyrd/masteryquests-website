@@ -3,10 +3,18 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5q.0
+Current composer version: 4.5s.0
 Canonical questions: 7,977
 Selectable concepts/family slices: 126
 Question assets: 399
+
+Latest upgrade — Mastery Report 2.0 + practice early-end report fix
+- Adds evidence-strength labels: Limited Evidence, Developing Evidence, Strong Evidence, and Mastery Demonstrated.
+- Evidence strength now considers scored-attempt volume and recorded difficulty exposure; accuracy alone cannot produce a mastery claim.
+- Mastery rows show their own evidence label and hardest recorded evidence level.
+- Exam Drill and Unlimited Practice now route both End Practice and the Battle Menu exit through Confirm → Mastery Report.
+- Early Exam Drill exits still do not award the Exam Drill completion flag.
+- Canonical questions and question assets are unchanged.
 
 Latest upgrade — Phase Micro8: Oligopoly granularity + adaptive maturation
 - Oligopoly now exposes six instructor-facing child selectors while preserving the full parent family.
