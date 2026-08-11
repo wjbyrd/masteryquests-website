@@ -1,0 +1,111 @@
+{
+  "phase": "unlimited-practice-and-exam-manual-exit-v1",
+  "ok": true,
+  "composerVersion": "4.5r.0",
+  "canonicalQuestionCount": 7977,
+  "supportedModes": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "unlimited",
+    "legendary",
+    "score"
+  ],
+  "unlimitedValidation": {
+    "ok": true,
+    "requirements": [
+      {
+        "pool": "easy",
+        "minimum": 6,
+        "count": 50
+      },
+      {
+        "pool": "medium",
+        "minimum": 6,
+        "count": 51
+      },
+      {
+        "pool": "hard",
+        "minimum": 6,
+        "count": 73
+      },
+      {
+        "pool": "repair",
+        "minimum": 1,
+        "count": 30
+      },
+      {
+        "pool": "bridge",
+        "minimum": 1,
+        "count": 31
+      }
+    ]
+  },
+  "difficultySequence": [
+    {
+      "room": 1,
+      "difficulty": "easy"
+    },
+    {
+      "room": 10,
+      "difficulty": "easy"
+    },
+    {
+      "room": 11,
+      "difficulty": "medium"
+    },
+    {
+      "room": 20,
+      "difficulty": "medium"
+    },
+    {
+      "room": 21,
+      "difficulty": "hard"
+    },
+    {
+      "room": 30,
+      "difficulty": "hard"
+    }
+  ],
+  "practiceControlVisibility": {
+    "exam": "flex",
+    "unlimited": "flex",
+    "quiz": "none",
+    "standard": "none",
+    "endedUnlimited": "none"
+  },
+  "manualEndSimulation": {
+    "exam": {
+      "examMarked": 0,
+      "reportShown": 1,
+      "telemetryEvent": "exam_ended_by_student",
+      "runEnding": true,
+      "sessionBegun": 1
+    },
+    "unlimited": {
+      "examMarked": 0,
+      "reportShown": 1,
+      "telemetryEvent": "unlimited_ended_by_student",
+      "runEnding": true,
+      "sessionBegun": 1
+    }
+  },
+  "checks": {
+    "unlimitedCard": true,
+    "endPracticeButton": true,
+    "endControlIncludesExam": true,
+    "confirmFlow": true,
+    "directReport": true,
+    "cycleRollover": true,
+    "noUnlimitedBosses": true,
+    "examEarlyCompletionGuard": true,
+    "manualTelemetry": true,
+    "masteryLabel": true,
+    "composerLabel": true,
+    "composerDescription": true,
+    "configOnlyUnlimited": true
+  },
+  "generatedHtmlBytes": 1310506,
+  "issues": []
+}

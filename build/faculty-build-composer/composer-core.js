@@ -5,9 +5,9 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5q.0';
+const COMPOSER_VERSION = '4.5r.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
-const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'legendary', 'score'];
+const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score'];
 const POOL_MINIMUMS = {
   easy: 6,
   medium: 6,
@@ -26,6 +26,7 @@ const MODE_REQUIREMENTS = {
   timed: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   exam: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   quiz: ['easy', 'medium', 'hard'],
+  unlimited: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   legendary: ['legendary', 'legendaryBoss'],
   score: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge']
 };
@@ -799,6 +800,7 @@ function validateModes(counts, modes, detail = {}){
     timed: 'Timed Trial',
     exam: 'Exam Drill',
     quiz: 'Quiz',
+    unlimited: 'Unlimited Practice',
     legendary: 'Legendary Mode',
     score: 'Score Attack'
   };
@@ -910,7 +912,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5q-quiz-mode'
+    templateVersion: 'phase4.5r-unlimited-practice'
   };
 }
 

@@ -8,6 +8,7 @@ const MODE_LABELS = {
   timed: 'Timed Trial',
   exam: 'Exam Drill',
   quiz: 'Quiz',
+  unlimited: 'Unlimited Practice',
   legendary: 'Legendary Mode',
   score: 'Score Attack'
 };
@@ -385,10 +386,12 @@ function renderModeOptions(){
           : mode === 'timed'
             ? 'Ten-minute adaptive run without checkpoint minimums.'
             : mode === 'exam'
-              ? 'Adaptive practice without checkpoints.'
+              ? 'Adaptive 30-room practice without checkpoints. Students may end early and generate a Mastery Report.'
               : mode === 'quiz'
                 ? 'Fixed-length classroom quiz. Students choose 1–15 questions; faculty-selected concepts stay locked.'
-                : mode === 'legendary'
+                : mode === 'unlimited'
+                  ? 'Exam Drill-style adaptive practice in repeating 30-room cycles. Students decide when to end and generate a Mastery Report.'
+                  : mode === 'legendary'
                   ? 'Mastery-level questions and mastery checkpoints only.'
                   : 'Arcade scoring with three checkpoints.'
       }</p>

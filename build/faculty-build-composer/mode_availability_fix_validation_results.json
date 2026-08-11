@@ -1,12 +1,41 @@
 {
-  "phase": "mode-availability-fix-v2-quiz-aware",
+  "phase": "mode-availability-fix-v3-seven-mode-aware",
   "ok": true,
-  "composerVersion": "4.5q.0",
+  "composerVersion": "4.5r.0",
   "canonicalQuestionCount": 7977,
   "cssGuard": true,
   "showReapply": true,
   "returnReapply": true,
   "cases": [
+    {
+      "name": "unlimited-only",
+      "requested": [
+        "unlimited"
+      ],
+      "injected": [
+        "unlimited"
+      ],
+      "visible": [
+        "unlimited"
+      ],
+      "hidden": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "legendary",
+        "score"
+      ],
+      "enabledCount": "1",
+      "subtitle": "Your instructor enabled one mode for this game.",
+      "validation": [
+        {
+          "mode": "unlimited",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1310471
+    },
     {
       "name": "timed-only",
       "requested": [
@@ -22,6 +51,7 @@
         "standard",
         "exam",
         "quiz",
+        "unlimited",
         "legendary",
         "score"
       ],
@@ -33,7 +63,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1305679
+      "htmlBytes": 1310435
     },
     {
       "name": "timed-exam",
@@ -52,6 +82,7 @@
       "hidden": [
         "standard",
         "quiz",
+        "unlimited",
         "legendary",
         "score"
       ],
@@ -67,15 +98,16 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1305707
+      "htmlBytes": 1310463
     },
     {
-      "name": "all-six",
+      "name": "all-seven",
       "requested": [
         "standard",
         "timed",
         "exam",
         "quiz",
+        "unlimited",
         "legendary",
         "score"
       ],
@@ -84,6 +116,7 @@
         "timed",
         "exam",
         "quiz",
+        "unlimited",
         "legendary",
         "score"
       ],
@@ -92,11 +125,12 @@
         "timed",
         "exam",
         "quiz",
+        "unlimited",
         "legendary",
         "score"
       ],
       "hidden": [],
-      "enabledCount": "6",
+      "enabledCount": "7",
       "subtitle": "Choose one of the modes enabled by your instructor.",
       "validation": [
         {
@@ -116,6 +150,10 @@
           "ok": true
         },
         {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
           "mode": "legendary",
           "ok": true
         },
@@ -124,7 +162,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1305818
+      "htmlBytes": 1310626
     }
   ],
   "issues": []
