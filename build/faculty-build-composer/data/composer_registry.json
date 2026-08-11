@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-11T03:30:00.000Z",
+  "generatedAt": "2026-08-11T01:50:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -7582,32 +7582,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 142,
+        "main": 209,
         "elite": 44,
         "legendary": 100,
         "calculation": 30,
         "boss": 62,
         "legendaryBoss": 36,
-        "repair": 20,
-        "bridge": 20,
+        "repair": 42,
+        "bridge": 42,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 66,
+        "easy": 118,
         "elite": 44,
-        "hard": 100,
+        "hard": 107,
         "legendary": 136,
-        "medium": 68,
+        "medium": 120,
         "unknown": 40
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "directSkillMatches": 42,
+        "mainWithUsableSkill": 481
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "directSkillMatches": 42,
+        "mainWithUsableSkill": 481
       },
       "calculationCoverage": 30,
       "graphCoverage": 120,
@@ -7616,8 +7616,797 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank with an expanded 120-question graph layer spanning firm profit/loss/shutdown, short-run supply, market-to-firm linkage, entry/exit, and long-run equilibrium.",
-      "coverageFloorVersion": "phase6.2f-rich-v1-pc-graph-v2"
+      "coverageStatusNote": "Publisher-scale standalone bank with an expanded 120-question graph layer spanning firm profit/loss/shutdown, short-run supply, market-to-firm linkage, entry/exit, and long-run equilibrium. Perfect Competition now exposes eight granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill required for healthy adaptive use.",
+      "coverageFloorVersion": "phase6.2f-rich-v1-pc-graph-v2",
+      "childConceptIds": [
+        "competitive-market-price-taking-revenue",
+        "competitive-output-choice",
+        "competitive-profit-loss",
+        "competitive-shutdown",
+        "competitive-short-run-supply",
+        "competitive-entry-exit-long-run",
+        "competitive-industry-cost-conditions",
+        "competitive-efficiency-limits"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "competitive-market-price-taking-revenue",
+      "title": "Market Structure, Price Taking & Firm Revenue",
+      "description": "Connect competitive-market assumptions to price taking, the horizontal firm demand curve, and P = AR = MR.",
+      "includedSkills": [
+        "average_revenue",
+        "firm_demand_curve",
+        "marginal_revenue",
+        "market_vs_firm",
+        "model_limitations",
+        "perfect_competition_characteristics",
+        "price_ar_mr_relationship",
+        "price_taker",
+        "total_revenue"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.1",
+        "PC.2"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 28,
+        "elite": 0,
+        "legendary": 0,
+        "calculation": 4,
+        "boss": 10,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 22,
+        "medium": 14,
+        "hard": 10,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 8
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 42
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 42
+      },
+      "calculationCoverage": 4,
+      "graphCoverage": 8,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 12 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 32.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 12,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 32,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-output-choice",
+      "title": "Profit-Maximizing Output & the MR = MC Rule",
+      "description": "Choose the firm’s profit-maximizing or loss-minimizing output using marginal revenue, marginal cost, and the rising-MC condition.",
+      "includedSkills": [
+        "continuous_output_choice",
+        "discrete_output_choice",
+        "integrated_competitive_firm_analysis",
+        "marginal_rule",
+        "market_vs_firm",
+        "model_limitations",
+        "profit_definition",
+        "profit_maximizing_output",
+        "rising_mc_condition"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "marginal-analysis",
+        "competitive-market-price-taking-revenue"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.3"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 38,
+        "elite": 15,
+        "legendary": 18,
+        "calculation": 5,
+        "boss": 9,
+        "legendaryBoss": 7,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 26,
+        "medium": 14,
+        "hard": 18,
+        "elite": 15,
+        "legendary": 25,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 92
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 92
+      },
+      "calculationCoverage": 5,
+      "graphCoverage": 22,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 14 Easy / 12 Medium / 17 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 58.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 14,
+        "medium": 12,
+        "hard": 17
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 58,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-profit-loss",
+      "title": "Profit, Loss & Break-Even",
+      "description": "Measure per-unit and total economic profit or loss and interpret break-even and zero economic profit.",
+      "includedSkills": [
+        "break_even",
+        "integrated_competitive_firm_analysis",
+        "loss_per_unit",
+        "profit_per_unit",
+        "total_loss",
+        "total_profit",
+        "zero_economic_profit"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "profit-concepts",
+        "average-costs",
+        "competitive-shutdown"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.4"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 30,
+        "elite": 2,
+        "legendary": 7,
+        "calculation": 12,
+        "boss": 7,
+        "legendaryBoss": 2,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 16,
+        "medium": 26,
+        "hard": 16,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 3
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 60
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 60
+      },
+      "calculationCoverage": 12,
+      "graphCoverage": 22,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 16 Medium / 16 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 44.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 16,
+        "hard": 16
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 44,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-shutdown",
+      "title": "Shutdown & Short-Run Loss Minimization",
+      "description": "Apply the AVC shutdown rule, explain producing at a loss, and distinguish temporary shutdown from long-run exit.",
+      "includedSkills": [
+        "produce_at_loss",
+        "short_run_fixed_cost",
+        "shutdown_price",
+        "shutdown_rule",
+        "shutdown_vs_exit"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "sunk-avoidable-costs",
+        "competitive-profit-loss",
+        "competitive-entry-exit-long-run"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.4"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 26,
+        "elite": 10,
+        "legendary": 16,
+        "calculation": 4,
+        "boss": 10,
+        "legendaryBoss": 6,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 14,
+        "medium": 23,
+        "hard": 10,
+        "elite": 10,
+        "legendary": 22,
+        "unknown": 5
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 72
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 72
+      },
+      "calculationCoverage": 4,
+      "graphCoverage": 28,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 40.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 40,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-short-run-supply",
+      "title": "Short-Run Supply & Cost Shifts",
+      "description": "Derive the firm’s short-run supply from rising MC above AVC, aggregate firm supply, and distinguish fixed- from variable-cost shifts.",
+      "includedSkills": [
+        "continuous_output_choice",
+        "firm_short_run_supply",
+        "integrated_competitive_firm_analysis",
+        "market_supply_aggregation",
+        "market_vs_firm",
+        "short_run_fixed_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "marginal-cost-production-linkages",
+        "market-equilibrium",
+        "competitive-output-choice"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 27,
+        "elite": 1,
+        "legendary": 16,
+        "calculation": 3,
+        "boss": 5,
+        "legendaryBoss": 1,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 14,
+        "medium": 17,
+        "hard": 10,
+        "elite": 1,
+        "legendary": 17,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 53
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 53
+      },
+      "calculationCoverage": 3,
+      "graphCoverage": 9,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 31.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 31,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-entry-exit-long-run",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "description": "Trace entry, exit, zero economic profit, normal profit, and long-run competitive adjustment.",
+      "includedSkills": [
+        "entry",
+        "exit",
+        "integrated_competitive_firm_analysis",
+        "long_run_adjustment",
+        "long_run_equilibrium",
+        "normal_profit",
+        "short_run_fixed_cost",
+        "shutdown_vs_exit",
+        "zero_economic_profit"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "profit-concepts",
+        "market-equilibrium",
+        "competitive-industry-cost-conditions"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 29,
+        "elite": 6,
+        "legendary": 10,
+        "calculation": 1,
+        "boss": 9,
+        "legendaryBoss": 5,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 12,
+        "medium": 13,
+        "hard": 19,
+        "elite": 6,
+        "legendary": 15,
+        "unknown": 7
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 60
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 60
+      },
+      "calculationCoverage": 1,
+      "graphCoverage": 23,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 36.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 36,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-industry-cost-conditions",
+      "title": "Long-Run Industry Supply & Cost Conditions",
+      "description": "Distinguish constant-, increasing-, and decreasing-cost industries and compare short-run and long-run responses to demand changes.",
+      "includedSkills": [
+        "constant_cost_industry",
+        "decreasing_cost_industry",
+        "demand_change_short_long_run",
+        "increasing_cost_industry"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "competitive-entry-exit-long-run",
+        "long-run-average-cost-scale"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 15,
+        "elite": 6,
+        "legendary": 17,
+        "calculation": 0,
+        "boss": 7,
+        "legendaryBoss": 8,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "medium": 8,
+        "hard": 12,
+        "elite": 6,
+        "legendary": 25,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 53
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 53
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 5,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Perfect Competition topic",
+      "coverageStatusNote": "Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 21.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 21,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "competitive-efficiency-limits",
+      "title": "Competitive Efficiency & Model Limits",
+      "description": "Interpret allocative and productive efficiency and evaluate the perfect-competition benchmark and its limitations.",
+      "includedSkills": [
+        "allocative_efficiency",
+        "competitive_welfare",
+        "model_limitations",
+        "productive_efficiency"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Perfect Competition material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "market-equilibrium",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "competitive-entry-exit-long-run"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "PC.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "perfectCompetition"
+      ],
+      "questionCountByRole": {
+        "main": 16,
+        "elite": 4,
+        "legendary": 16,
+        "calculation": 1,
+        "boss": 5,
+        "legendaryBoss": 7,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 6,
+        "medium": 5,
+        "hard": 12,
+        "elite": 4,
+        "legendary": 23,
+        "unknown": 5
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 49
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 49
+      },
+      "calculationCoverage": 1,
+      "graphCoverage": 3,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
+      "instructionalClassification": "Perfect Competition subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Perfect Competition topic",
+      "coverageStatusNote": "Runtime adaptive depth: 5 Easy / 5 Medium / 7 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 21.",
+      "coverageFloorVersion": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+      "parentConceptId": "perfect-competition",
+      "selectionRole": "family-child",
+      "familyTitle": "Perfect Competition",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 21,
+      "quiz15Status": "ready"
     },
     {
       "canonicalConceptId": "phillips-curve-expectations",
@@ -9214,10 +10003,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
-  "curationSummary": "Costs of Production granularity and adaptive maturation: expose ten child selectors and add exactly 166 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1",
-  "canonicalQuestionCount": 7650,
-  "librarySha256": "cd616ffcadb0c07faa0b30b64676175ce752ae4f9a99afa08521fbbf5d1437f5",
-  "composerVersion": "4.5k.0"
+  "curationPhase": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+  "curationSummary": "Perfect Competition granularity and adaptive maturation: expose eight child selectors and add exactly 111 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+  "canonicalQuestionCount": 7761,
+  "librarySha256": "998cb07b7b4194e26651b7bdb0759f7284a609c372a1ca2df7db5572dcc50c61",
+  "composerVersion": "4.5l.0"
 }

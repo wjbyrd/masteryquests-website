@@ -1,0 +1,140 @@
+{
+  "phase": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+  "composerVersion": "4.5l.0",
+  "beforeCanonicalQuestionCount": 7650,
+  "afterCanonicalQuestionCount": 7761,
+  "addedQuestions": 111,
+  "parentRecords": 565,
+  "conceptCount": 108,
+  "librarySha256": "998cb07b7b4194e26651b7bdb0759f7284a609c372a1ca2df7db5572dcc50c61",
+  "subtopics": {
+    "competitive-market-price-taking-revenue": {
+      "title": "Market Structure, Price Taking & Firm Revenue",
+      "role": "standalone-ready",
+      "canonicalRecords": 54,
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 32,
+      "pass": true
+    },
+    "competitive-output-choice": {
+      "title": "Profit-Maximizing Output & the MR = MC Rule",
+      "role": "standalone-ready",
+      "canonicalRecords": 104,
+      "runtimeAdaptive": {
+        "easy": 14,
+        "medium": 12,
+        "hard": 17
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 58,
+      "pass": true
+    },
+    "competitive-profit-loss": {
+      "title": "Profit, Loss & Break-Even",
+      "role": "standalone-ready",
+      "canonicalRecords": 72,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 16,
+        "hard": 16
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 44,
+      "pass": true
+    },
+    "competitive-shutdown": {
+      "title": "Shutdown & Short-Run Loss Minimization",
+      "role": "standalone-ready",
+      "canonicalRecords": 84,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 40,
+      "pass": true
+    },
+    "competitive-short-run-supply": {
+      "title": "Short-Run Supply & Cost Shifts",
+      "role": "standalone-ready",
+      "canonicalRecords": 65,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 31,
+      "pass": true
+    },
+    "competitive-entry-exit-long-run": {
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "role": "standalone-ready",
+      "canonicalRecords": 72,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 36,
+      "pass": true
+    },
+    "competitive-industry-cost-conditions": {
+      "title": "Long-Run Industry Supply & Cost Conditions",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 59,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 21,
+      "pass": true
+    },
+    "competitive-efficiency-limits": {
+      "title": "Competitive Efficiency & Model Limits",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 55,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 21,
+      "pass": true
+    }
+  }
+}

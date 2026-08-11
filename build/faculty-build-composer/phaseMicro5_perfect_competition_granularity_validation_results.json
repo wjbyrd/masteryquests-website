@@ -1,0 +1,154 @@
+{
+  "phase": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+  "ok": true,
+  "composerVersion": "4.5l.0",
+  "canonicalQuestionCount": 7761,
+  "conceptCount": 108,
+  "perfectCompetitionParentCanonical": 565,
+  "perfectCompetitionChildrenUnion": 565,
+  "newAdaptiveSupportRouted": "44/44",
+  "qualityAuditOk": true,
+  "graphExpansion": {
+    "sourceQuestions": 84,
+    "graphCounts": {
+      "01": 12,
+      "02": 10,
+      "03": 12,
+      "04": 12,
+      "06": 14,
+      "07": 14,
+      "08": 10
+    },
+    "assets": 41
+  },
+  "children": {
+    "competitive-market-price-taking-revenue": {
+      "canonical": 54,
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 32,
+      "supporting": false
+    },
+    "competitive-output-choice": {
+      "canonical": 104,
+      "runtimeAdaptive": {
+        "easy": 14,
+        "medium": 12,
+        "hard": 17
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 58,
+      "supporting": false
+    },
+    "competitive-profit-loss": {
+      "canonical": 72,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 16,
+        "hard": 16
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 44,
+      "supporting": false
+    },
+    "competitive-shutdown": {
+      "canonical": 84,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 40,
+      "supporting": false
+    },
+    "competitive-short-run-supply": {
+      "canonical": 65,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 31,
+      "supporting": false
+    },
+    "competitive-entry-exit-long-run": {
+      "canonical": 72,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 36,
+      "supporting": false
+    },
+    "competitive-industry-cost-conditions": {
+      "canonical": 59,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "repair": 3,
+      "bridge": 3,
+      "quizEligible": 21,
+      "supporting": true
+    },
+    "competitive-efficiency-limits": {
+      "canonical": 55,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7
+      },
+      "repair": 3,
+      "bridge": 3,
+      "quizEligible": 21,
+      "supporting": true
+    }
+  },
+  "regression": {
+    "elasticity": {
+      "parent": 495,
+      "children": 495,
+      "ok": true
+    },
+    "consumer-and-producer-surplus": {
+      "parent": 442,
+      "children": 442,
+      "ok": true
+    },
+    "international-trade-and-trade-policy": {
+      "parent": 487,
+      "children": 487,
+      "ok": true
+    },
+    "costs-of-production": {
+      "parent": 608,
+      "children": 608,
+      "ok": true
+    },
+    "perfect-competition": {
+      "parent": 565,
+      "children": 565,
+      "ok": true
+    }
+  },
+  "legacyRecipes": {
+    "passed": 8,
+    "total": 8
+  },
+  "issues": []
+}
