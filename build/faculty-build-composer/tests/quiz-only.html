@@ -2324,6 +2324,14 @@ body.game-active #soundToggle {
 		
 
 /* =========================================
+   UNLIMITED / EXAM PRACTICE EXIT CONTROL
+========================================= */
+.practice-mode-controls{display:none;justify-content:center;margin:8px auto 12px;}
+.end-practice-btn{padding:9px 16px;margin:0;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#f7d982;background:linear-gradient(180deg,rgba(29,77,115,.94),rgba(4,16,31,.98));border:1px solid rgba(247,217,130,.54);box-shadow:0 0 14px rgba(56,189,248,.18),inset 0 0 10px rgba(0,0,0,.72);}
+.end-practice-btn:hover{border-color:rgba(247,217,130,.82);box-shadow:0 0 18px rgba(56,189,248,.30),0 0 24px rgba(247,217,130,.16),inset 0 0 10px rgba(0,0,0,.70);}
+@media(max-width:768px){.practice-mode-controls{margin:6px auto 8px}.end-practice-btn{padding:8px 13px;font-size:10px}}
+
+/* =========================================
    15. POST-BATTLE MASTERY REPORT
    Student-facing diagnostic after a completed run.
 ========================================= */
@@ -2780,6 +2788,12 @@ Respect structure strictly.
   <span class="mode-card-text">Choose 1–15 questions. The concepts are already set by your instructor.</span>
 </button>
 
+<button class="mode-card" data-mode="unlimited" onclick="startSelectedMode('unlimited')" aria-label="Unlimited Practice. Adaptive Exam Drill-style practice continues until you decide to end the session and generate a Mastery Report.">
+  <div class="mode-symbol" aria-hidden="true">∞</div>
+  <span class="mode-card-title">Unlimited Practice</span>
+  <span class="mode-card-text">Practice as long as you want. End the session when you are ready for your Mastery Report.</span>
+</button>
+
 <button class="mode-card" data-mode="legendary" onclick="startSelectedMode('legendary')" aria-label="Legendary Mode. Full 30-room campaign using only mastery-level multi-step questions with close answer choices.">
   <div class="mode-symbol" aria-hidden="true">◆</div>
   <span class="mode-card-title">Legendary Mode</span>
@@ -2923,6 +2937,10 @@ DO NOT REMOVE:
             <div id="timedModeHud" class="timed-mode-hud" style="display:none;">
                 <span class="timer-label">Timed Trial</span>
                 <span id="timerDisplay" class="timer-display">10:00</span>
+            </div>
+
+            <div id="practiceModeControls" class="practice-mode-controls">
+                <button id="endPracticeBtn" class="end-practice-btn" type="button" onclick="confirmEndPractice()">End Practice</button>
             </div>
 
             <p id="bossMessage"></p>
@@ -3197,13 +3215,13 @@ const FACULTY_COMPOSITION_CONFIG = {
         "finalCheckpoint": null
     },
     "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
-    "templateVersion": "phase4.5q-quiz-mode",
-    "composerVersion": "4.5q.0",
+    "templateVersion": "phase4.5r-unlimited-practice",
+    "composerVersion": "4.5r.0",
     "compositionId": "quiz-mode-validation",
-    "saveKeyNamespace": "mq-econ:quiz-mode-validation:e4c4b83d9a15",
+    "saveKeyNamespace": "mq-econ:quiz-mode-validation:004d6f957901",
     "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
-    "templateSha256": "0e4bd3aa0b96b4c7795442d369039107e112958448b0ee3283f1ecbdc1e0ff1c",
-    "compositionFingerprint": "e4c4b83d9a15471b03eed5347e8f395c9f99952a91a3e80c9034e1c02c8c84bb"
+    "templateSha256": "46e6df57098872c3e1697fe61e530d781dc45610685a72126bbf2efb6d9072c6",
+    "compositionFingerprint": "004d6f957901d8dff728423a616566c458ef00a36a0d699be990435872e1d436"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3349,6 +3367,7 @@ let timedSetbacks = 0;
 const QUIZ_MAX_QUESTIONS = 15;
 let quizQuestionTarget = 10;
 let quizQuestionsCompleted = 0;
+let unlimitedPracticeCycle = 1;
 
 // =============================================
 // SCORE ATTACK MODE ADDITION — CONFIG + STATE
@@ -3575,12 +3594,13 @@ window.addEventListener("pageshow", reconcileTimedModeClock);
 window.addEventListener("focus", reconcileTimedModeClock);
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
-function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz") return false; return r === 10 || r === 20 || r === 30; }
+function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
     if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
     if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "quiz") return "Quiz";
+    if(gameMode === "unlimited") return "Unlimited Practice";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
     return "Standard Campaign";
@@ -5115,7 +5135,7 @@ function startSelectedMode(mode, options = {}){
 function confirmReturnToModeMenu(){
     showGameModal({
         title: "Return to Battle Menu?",
-        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, and Score Attack attempts will end.",
+        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, and Score Attack attempts will end.",
         confirmText: "Return",
         cancelText: "Stay",
         onConfirm: function(){
@@ -5128,6 +5148,24 @@ function confirmReturnToModeMenu(){
             }
             returnToModeSelectFromRun();
         }
+    });
+}
+
+function updatePracticeEndControl(){
+    const controls = document.getElementById("practiceModeControls");
+    if(!controls) return;
+    controls.style.display = (!runEnding && (gameMode === "exam" || gameMode === "unlimited")) ? "flex" : "none";
+}
+
+function confirmEndPractice(){
+    if(runEnding || (gameMode !== "exam" && gameMode !== "unlimited")) return;
+    const attemptText = `${totalAttempts} scored attempt${totalAttempts === 1 ? "" : "s"}`;
+    showGameModal({
+        title: "End Practice?",
+        text: `This will end ${getModeDisplayName()} after ${attemptText} and generate your Mastery Report.`,
+        confirmText: "Generate Mastery Report",
+        cancelText: "Keep Practicing",
+        onConfirm: function(){ handlePracticeModeComplete({endedByStudent:true, showReport:true}); }
     });
 }
 
@@ -5463,6 +5501,7 @@ function resetRunStateForNewMode(){
     maxStreak = 0;
     totalAttempts = 0;
     correctAnswers = 0;
+    unlimitedPracticeCycle = 1;
     bossPool = [];
     if(typeof calcBag !== "undefined") calcBag = [];
     conceptMemory = {};
@@ -5507,6 +5546,8 @@ function initializeRunForMode(mode){
                 ? "✎ Exam Drill Active"
                 : gameMode === "quiz"
                     ? `? Quiz Active · ${quizQuestionTarget} Questions`
+                    : gameMode === "unlimited"
+                        ? "∞ Unlimited Practice Active"
                     : gameMode === "score"
                     ? "🏆 Score Attack Active"
                     : gameMode === "legendary"
@@ -5515,6 +5556,8 @@ function initializeRunForMode(mode){
                             ? "⚔ Boss Rush Active"
             : "💾 Local progress saved";
     }
+
+    updatePracticeEndControl();
 
     // SCORE ATTACK MODE ADDITION:
     // Keeps the HUD hidden in every other mode and visible in Score Attack.
@@ -5678,6 +5721,8 @@ function returnToModeSelectFromRun(){
     }
 
     setGameControlsVisible(false);
+    const practiceControls = document.getElementById("practiceModeControls");
+    if(practiceControls) practiceControls.style.display = "none";
 
     document.getElementById("gameBox").style.display = "none";
     document.getElementById("artifactVault").style.display = "none";
@@ -5700,7 +5745,7 @@ function getDifficultyForMode(){
         return position < easyEnd ? "easy" : position < mediumEnd ? "medium" : "hard";
     }
 
-    if(gameMode === "exam" || gameMode === "timed"){
+    if(gameMode === "exam" || gameMode === "timed" || gameMode === "unlimited"){
         return (room <= 10) ? "easy"
             : (room <= 20) ? "medium"
             : "hard";
@@ -8067,7 +8112,7 @@ const questionAssetMetadata = {
 };
 const facultyCompositionMetadata = {
   "schemaVersion": "1.2.0",
-  "composerVersion": "4.5q.0",
+  "composerVersion": "4.5r.0",
   "title": "Quiz Mode Validation",
   "slug": "quiz-mode-validation",
   "selectedConceptIds": [
@@ -8114,11 +8159,11 @@ const facultyCompositionMetadata = {
   "supportedModes": [
     "quiz"
   ],
-  "saveKeyNamespace": "mq-econ:quiz-mode-validation:e4c4b83d9a15",
-  "compositionFingerprint": "e4c4b83d9a15471b03eed5347e8f395c9f99952a91a3e80c9034e1c02c8c84bb",
+  "saveKeyNamespace": "mq-econ:quiz-mode-validation:004d6f957901",
+  "compositionFingerprint": "004d6f957901d8dff728423a616566c458ef00a36a0d699be990435872e1d436",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
   "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
-  "templateSha256": "0e4bd3aa0b96b4c7795442d369039107e112958448b0ee3283f1ecbdc1e0ff1c"
+  "templateSha256": "46e6df57098872c3e1697fe61e530d781dc45610685a72126bbf2efb6d9072c6"
 };
 const facultyQuestionValidator = function validateFacultyQuestionRecord(question, poolName, availableAssets){
   const invalidFields = [];
@@ -9150,6 +9195,7 @@ const FACULTY_MODE_REQUIREMENTS = {
     timed: ["easy", "medium", "hard", "repair", "bridge"],
     exam: ["easy", "medium", "hard", "repair", "bridge"],
     quiz: ["easy", "medium", "hard"],
+    unlimited: ["easy", "medium", "hard", "repair", "bridge"],
     legendary: ["legendary", "legendaryBoss"],
     score: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"]
 };
@@ -9275,6 +9321,7 @@ function getModeLabelForPreflight(mode){
     if(mode === "timed") return "Timed Trial";
     if(mode === "exam") return "Exam Drill";
     if(mode === "quiz") return "Quiz";
+    if(mode === "unlimited") return "Unlimited Practice";
     if(mode === "legendary") return "Legendary Mode";
     if(mode === "score") return "Score Attack";
     return "Standard Campaign";
@@ -9737,6 +9784,10 @@ function loadQuestion() {
         handlePracticeModeComplete();
         return;
     }
+    if(gameMode === "unlimited" && room > 30){
+        room = 1;
+        unlimitedPracticeCycle++;
+    }
     if(gameMode === "quiz" && quizQuestionsCompleted >= quizQuestionTarget){
         handlePracticeModeComplete();
         return;
@@ -9760,7 +9811,7 @@ function loadQuestion() {
     // 1. Determine Difficulty and Boss Status
 	let diff = getDifficultyForMode();
 
-   const isBoss = diff.includes("Boss") && gameMode !== "exam" && gameMode !== "timed";
+   const isBoss = diff.includes("Boss") && gameMode !== "exam" && gameMode !== "timed" && gameMode !== "unlimited";
 
    // Only reset health if the bossPool is currently empty (meaning a new encounter)
      if (isBoss && (!bossPool || bossPool.length === 0)) {
@@ -9790,6 +9841,10 @@ function loadQuestion() {
         document.getElementById("progressFill").style.width = `${(quizQuestionsCompleted / quizQuestionTarget) * 100}%`;
         document.getElementById("areaDisplay").innerText = `Quiz — Question ${currentQuizQuestion} of ${quizQuestionTarget}`;
         document.getElementById("srAnnouncements").innerText = `Quiz. Question ${currentQuizQuestion} of ${quizQuestionTarget}.`;
+    } else if(gameMode === "unlimited"){
+        document.getElementById("progressFill").style.width = (Math.min(room, 30) / 30 * 100) + "%";
+        document.getElementById("areaDisplay").innerText = `Unlimited Practice — Cycle ${unlimitedPracticeCycle} · ${getAreaName(room)} (${room}/30)`;
+        document.getElementById("srAnnouncements").innerText = `Unlimited Practice. Cycle ${unlimitedPracticeCycle}. ${getAreaName(room)}. Practice continues until you end the session.`;
     } else {
         document.getElementById("progressFill").style.width = (Math.min(room, 30) / 30 * 100) + "%";
         const roomCap = (gameMode === "timed" || gameMode === "exam") ? Math.min(room, 30) : room;
@@ -11039,7 +11094,9 @@ function restartScoreAttackMode(){
     startSelectedMode("score");
 }
 
-function handlePracticeModeComplete(){
+function handlePracticeModeComplete(options = {}){
+    const endedByStudent = options.endedByStudent === true;
+    const showReport = options.showReport === true;
     if(runEnding) return;
     beginRunSession();
     if(gameMode === "quiz"){
@@ -11059,18 +11116,18 @@ function handlePracticeModeComplete(){
     const timeString = formatTime(totalTimeMs);
     const verificationCode = generateCode(username + "|" + gameMode.toUpperCase(), accuracy, maxStreak, totalTimeMs);
 
-	if(gameMode === "exam"){
+	if(gameMode === "exam" && !endedByStudent){
  	   markExamDrillCompleted();
 	}
 
     sendGameData({
         runID: runID,
         game: FACULTY_COMPOSITION_CONFIG.title,
-        event: `${gameMode}_complete`,
+        event: endedByStudent ? `${gameMode}_ended_by_student` : `${gameMode}_complete`,
         user: username,
         room: room,
         questionId: 0,
-        correct: 1,
+        correct: endedByStudent ? 0 : 1,
         tag: "",
         type: "",
         objective: "",
@@ -11078,7 +11135,7 @@ function handlePracticeModeComplete(){
         attempt: totalAttempts,
         streak: streak,
         elapsedTime: totalTimeMs,
-        adaptiveMode: `${gameMode}_complete`,
+        adaptiveMode: endedByStudent ? `${gameMode}_ended_by_student` : `${gameMode}_complete`,
         totalTime: totalTimeMs,
         accuracy: accuracy / 100,
         maxStreak: maxStreak,
@@ -11089,15 +11146,21 @@ function handlePracticeModeComplete(){
     document.getElementById("bossMessage").innerText = "";
     document.getElementById("formulaHint").innerText = "";
     document.getElementById("artifactDrop").style.display = "none";
+    const practiceControls = document.getElementById("practiceModeControls");
+    if(practiceControls) practiceControls.style.display = "none";
     closeGraphLightbox();
     document.getElementById("questionImageBox").style.display = "none";
 
     const completionLead = gameMode === "quiz"
         ? `You completed ${quizQuestionTarget} quiz question${quizQuestionTarget === 1 ? "" : "s"}.`
-        : "You reached the end of this practice path.";
+        : gameMode === "unlimited"
+            ? `You ended Unlimited Practice after ${totalAttempts} scored attempt${totalAttempts === 1 ? "" : "s"}.`
+            : endedByStudent
+                ? `You ended Exam Drill early after ${totalAttempts} scored attempt${totalAttempts === 1 ? "" : "s"}.`
+                : "You reached the end of the 30-room Exam Drill path.";
 
     document.getElementById("question").innerHTML = `
-        <span class="boss-title">${getModeDisplayName().toUpperCase()} COMPLETE</span>
+        <span class="boss-title">${getModeDisplayName().toUpperCase()} ${endedByStudent ? "ENDED" : "COMPLETE"}</span>
         <div class="boss-q">
             ${completionLead}<br><br>
             Accuracy: ${accuracy}%<br>
@@ -11112,7 +11175,9 @@ function handlePracticeModeComplete(){
 
     const replayButton = gameMode === "quiz"
         ? '<button class="continue-btn" onclick="openQuizSetup()">Start Another Quiz</button>'
-        : `<button class="continue-btn" onclick="startSelectedMode('exam')">Replay Exam Drill</button>`;
+        : gameMode === "unlimited"
+            ? `<button class="continue-btn" onclick="startSelectedMode('unlimited')">Restart Unlimited Practice</button>`
+            : `<button class="continue-btn" onclick="startSelectedMode('exam')">Replay Exam Drill</button>`;
 
     document.getElementById("answers").innerHTML = `
         <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
@@ -11123,7 +11188,13 @@ function handlePracticeModeComplete(){
 
     document.getElementById("message").innerText = gameMode === "quiz"
         ? "Quiz complete. The campaign record was not changed."
-        : "Practice complete. The campaign record was not changed.";
+        : endedByStudent
+            ? "Practice ended by the student. The campaign record was not changed."
+            : "Practice complete. The campaign record was not changed.";
+
+    if(showReport){
+        showMasteryReportScreen();
+    }
 }
 
 // =============================================
@@ -11609,6 +11680,7 @@ function getMasteryReportModeName(){
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "quiz") return "Quiz";
+    if(gameMode === "unlimited") return "Unlimited Practice";
     return getModeDisplayName();
 }
 

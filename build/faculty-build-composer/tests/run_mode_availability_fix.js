@@ -26,7 +26,7 @@ const isSupportedFn=extractFunction(template,'isFacultyModeSupported');
 const applyFn=extractFunction(template,'applyFacultyCompositionConfig');
 
 function simulate(config){
-  const modes=['standard','timed','exam','quiz','legendary','score'];
+  const modes=['standard','timed','exam','quiz','unlimited','legendary','score'];
   const cards=modes.map(mode=>({
     dataset:{mode},hidden:false,disabled:false,tabIndex:0,attrs:{},
     classList:{values:new Set(),toggle(cls,on){if(on)this.values.add(cls);else this.values.delete(cls);}},
@@ -81,12 +81,13 @@ async function buildCase(name,supportedModes){
   const showReapply=/function showModeSelect\(\)\{[\s\S]{0,260}applyFacultyCompositionConfig\(\);/.test(template);
   const returnReapply=/function returnToModeSelectFromRun\(\)\{[\s\S]{0,1200}applyFacultyCompositionConfig\(\);/.test(template);
   const cases=[
+    await buildCase('unlimited-only',['unlimited']),
     await buildCase('timed-only',['timed']),
     await buildCase('timed-exam',['timed','exam']),
-    await buildCase('all-six',['standard','timed','exam','quiz','legendary','score'])
+    await buildCase('all-seven',['standard','timed','exam','quiz','unlimited','legendary','score'])
   ];
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5q.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5r.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!cssGuard) issues.push('missing hard hidden CSS guard');
   if(!showReapply) issues.push('showModeSelect does not reapply config');
   if(!returnReapply) issues.push('returnToModeSelectFromRun does not reapply config');
@@ -94,10 +95,10 @@ async function buildCase(name,supportedModes){
     if(JSON.stringify(c.requested)!==JSON.stringify(c.injected)) issues.push(`${c.name}: injected modes mismatch`);
     if(JSON.stringify(c.requested)!==JSON.stringify(c.visible)) issues.push(`${c.name}: visible modes ${c.visible.join(',')}`);
     if(Number(c.enabledCount)!==c.requested.length) issues.push(`${c.name}: enabled count ${c.enabledCount}`);
-    if(c.hidden.length!==6-c.requested.length) issues.push(`${c.name}: hidden count ${c.hidden.length}`);
+    if(c.hidden.length!==7-c.requested.length) issues.push(`${c.name}: hidden count ${c.hidden.length}`);
     if(c.validation.some(v=>!v.ok)) issues.push(`${c.name}: selected mode preflight failed`);
   }
-  const result={phase:'mode-availability-fix-v2-quiz-aware',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,cssGuard,showReapply,returnReapply,cases,issues};
+  const result={phase:'mode-availability-fix-v3-seven-mode-aware',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,cssGuard,showReapply,returnReapply,cases,issues};
   fs.writeFileSync(path.join(root,'mode_availability_fix_validation_results.json'),JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
