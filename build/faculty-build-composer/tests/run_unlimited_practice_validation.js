@@ -70,7 +70,7 @@ function simulateManualPracticeEnd(mode){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.0') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.1') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
   if(core.MODE_ORDER.length!==7) issues.push(`mode count ${core.MODE_ORDER.length}`);
   if(library.canonicalQuestionCount!==7977) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);

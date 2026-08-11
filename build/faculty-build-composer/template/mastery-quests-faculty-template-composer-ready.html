@@ -2961,7 +2961,7 @@ DO NOT REMOVE:
 
             <div id="questionContainer">
                 <div id="questionImageBox"></div>
-                <p id="question"></p>
+                <div id="question"></div>
                 <p id="message"></p>
                 <div id="formulaHint" class="hint-box"></div>
             </div>
@@ -3132,7 +3132,7 @@ const REQUIRED_GAMEPLAY_IDS = [
     "artifactText"
 ];
 
-function restoreGameplayShell(){
+function restoreGameplayShell(forceReset = false){
     const gameBox = document.getElementById("gameBox");
     if(!gameBox) return false;
 
@@ -3140,7 +3140,7 @@ function restoreGameplayShell(){
         document.getElementById(id)
     );
 
-    if(!shellIsComplete){
+    if(forceReset || !shellIsComplete){
         gameBox.innerHTML = GAME_BOX_TEMPLATE_HTML;
     }
 
@@ -5403,7 +5403,7 @@ function startGame(shouldResume = false) {
         return;
     }
 
-    if(!restoreGameplayShell()){
+    if(!restoreGameplayShell(true)){
         console.error("The faculty-template gameplay shell could not be restored.");
         showGameModal({
             title: "Game Interface Unavailable",
@@ -5779,6 +5779,9 @@ function returnToModeSelectFromRun(){
     setGameControlsVisible(false);
     const practiceControls = document.getElementById("practiceModeControls");
     if(practiceControls) practiceControls.style.display = "none";
+
+    // Hotfix 4.5s.1: results/mastery DOM must never bleed into the next battle.
+    latestResultsScreenHTML = "";
 
     document.getElementById("gameBox").style.display = "none";
     document.getElementById("artifactVault").style.display = "none";
