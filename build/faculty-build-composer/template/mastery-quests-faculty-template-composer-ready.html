@@ -2498,6 +2498,24 @@ body{
     grid-template-rows:160px auto 1fr;
 }
 
+/* FACULTY MODE AVAILABILITY FIX
+   The composer can enable only a subset of modes.
+   This rule must outrank every display rule above/below it. */
+.mode-card[hidden],
+.mode-card.faculty-mode-disabled{
+    display:none !important;
+}
+
+.mode-grid[data-enabled-count="1"]{
+    grid-template-columns:minmax(0, 360px);
+    justify-content:center;
+}
+
+.mode-grid[data-enabled-count="2"]{
+    grid-template-columns:repeat(2, minmax(0, 360px));
+    justify-content:center;
+}
+
 @media(max-width:560px){
     .mode-card{
         grid-template-rows:135px auto 1fr;
@@ -3076,15 +3094,30 @@ function applyFacultyCompositionConfig(){
     const startTitle = document.getElementById("facultyGameTitle");
     const topTitle = document.getElementById("facultyTopTitle");
     const subtitle = document.getElementById("facultyModeSubtitle");
+    const modeGrid = document.querySelector(".mode-grid");
     if(startTitle) startTitle.textContent = title.toUpperCase();
     if(topTitle) topTitle.textContent = title;
-    if(subtitle) subtitle.textContent = "Choose one of the modes enabled by your instructor.";
+
+    let enabledCount = 0;
     document.querySelectorAll(".mode-card[data-mode]").forEach(card => {
         const supported = isFacultyModeSupported(card.dataset.mode);
+        if(supported) enabledCount++;
         card.hidden = !supported;
+        card.classList.toggle("faculty-mode-disabled", !supported);
         card.setAttribute("aria-hidden", supported ? "false" : "true");
         card.disabled = !supported;
+        card.tabIndex = supported ? 0 : -1;
     });
+
+    if(modeGrid){
+        modeGrid.dataset.enabledCount = String(enabledCount);
+    }
+
+    if(subtitle){
+        subtitle.textContent = enabledCount === 1
+            ? "Your instructor enabled one mode for this game."
+            : "Choose one of the modes enabled by your instructor.";
+    }
 }
 
 applyFacultyCompositionConfig();
@@ -4834,6 +4867,7 @@ function validateAndStorePlayerName(){
 function showModeSelect(){
     if(!validateAndStorePlayerName()) return;
 
+    applyFacultyCompositionConfig();
     beginRunSession();
     runEnding = false;
     closeGraphLightbox();
@@ -5453,6 +5487,7 @@ function returnToModeSelectFromRun(){
     document.querySelector(".top-panel").style.display = "none";
     document.getElementById("gameShell").style.display = "none";
 
+    applyFacultyCompositionConfig();
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
     localStorage.removeItem(RUN_ID_KEY);

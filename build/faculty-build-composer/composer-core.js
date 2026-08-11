@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5o.0';
+const COMPOSER_VERSION = '4.5p.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'legendary', 'score'];
 const POOL_MINIMUMS = {
@@ -901,7 +901,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5h-micro-granularity'
+    templateVersion: 'phase4.5p-mode-availability'
   };
 }
 

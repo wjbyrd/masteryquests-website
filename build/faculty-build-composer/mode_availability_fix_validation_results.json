@@ -1,0 +1,122 @@
+{
+  "phase": "mode-availability-fix-v1",
+  "ok": true,
+  "composerVersion": "4.5p.0",
+  "canonicalQuestionCount": 7977,
+  "cssGuard": true,
+  "showReapply": true,
+  "returnReapply": true,
+  "cases": [
+    {
+      "name": "timed-only",
+      "requested": [
+        "timed"
+      ],
+      "injected": [
+        "timed"
+      ],
+      "visible": [
+        "timed"
+      ],
+      "hidden": [
+        "standard",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "enabledCount": "1",
+      "subtitle": "Your instructor enabled one mode for this game.",
+      "validation": [
+        {
+          "mode": "timed",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1295876
+    },
+    {
+      "name": "timed-exam",
+      "requested": [
+        "timed",
+        "exam"
+      ],
+      "injected": [
+        "timed",
+        "exam"
+      ],
+      "visible": [
+        "timed",
+        "exam"
+      ],
+      "hidden": [
+        "standard",
+        "legendary",
+        "score"
+      ],
+      "enabledCount": "2",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1295904
+    },
+    {
+      "name": "all-five",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "legendary",
+        "score"
+      ],
+      "hidden": [],
+      "enabledCount": "5",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1295994
+    }
+  ],
+  "issues": []
+}
