@@ -5,9 +5,9 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5p.0';
+const COMPOSER_VERSION = '4.5q.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
-const MODE_ORDER = ['standard', 'timed', 'exam', 'legendary', 'score'];
+const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'legendary', 'score'];
 const POOL_MINIMUMS = {
   easy: 6,
   medium: 6,
@@ -25,9 +25,17 @@ const MODE_REQUIREMENTS = {
   standard: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge'],
   timed: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   exam: ['easy', 'medium', 'hard', 'repair', 'bridge'],
+  quiz: ['easy', 'medium', 'hard'],
   legendary: ['legendary', 'legendaryBoss'],
   score: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge']
 };
+const MODE_POOL_MINIMUMS = {
+  quiz: { easy: 5, medium: 5, hard: 5 }
+};
+
+function getModePoolMinimum(mode, pool){
+  return MODE_POOL_MINIMUMS[mode]?.[pool] ?? POOL_MINIMUMS[pool] ?? 0;
+}
 const CHECKPOINT_ORDER = ['checkpointOne', 'checkpointTwo', 'finalCheckpoint'];
 const CHECKPOINTS = {
   checkpointOne: {
@@ -790,6 +798,7 @@ function validateModes(counts, modes, detail = {}){
     standard: 'Standard Campaign',
     timed: 'Timed Trial',
     exam: 'Exam Drill',
+    quiz: 'Quiz',
     legendary: 'Legendary Mode',
     score: 'Score Attack'
   };
@@ -797,7 +806,7 @@ function validateModes(counts, modes, detail = {}){
     modes: MODE_ORDER.filter(mode => modes.includes(mode)).map(mode => {
       const requirements = MODE_REQUIREMENTS[mode].map(pool => ({
         pool,
-        minimum: POOL_MINIMUMS[pool],
+        minimum: getModePoolMinimum(mode, pool),
         count: counts[pool] || 0
       }));
       const deficiencies = requirements.filter(requirement => requirement.count < requirement.minimum);
@@ -901,7 +910,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5p-mode-availability'
+    templateVersion: 'phase4.5q-quiz-mode'
   };
 }
 

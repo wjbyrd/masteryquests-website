@@ -3,7 +3,7 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5p.0
+Current composer version: 4.5q.0
 Canonical questions: 7,977
 Selectable concepts/family slices: 126
 Question assets: 399
@@ -58,3 +58,5 @@ Six Oligopoly subtopics are exposed: Oligopoly Structure, Strategic Interdepende
 
 The family contains 445 canonical records after exactly 75 targeted adaptive additions. Dynamic Strategy is intentionally marked optional supporting/advanced so instructors can select ordinary Principles game theory without importing infinite-horizon repeated-game or backward-induction material. All six children clear the planned 15-question Quiz threshold, the five-child Oligopoly core passes all five current modes without Dynamic Strategy, and the existing graph inventory is preserved.
 
+
+Quiz Mode: fixed-length 1–15 question classroom mode. Faculty selects concepts in the composer; learners select only quiz length. Quiz uses Easy/Medium/Hard adaptive selection without checkpoints, campaign progress, setbacks, or remediation detours.

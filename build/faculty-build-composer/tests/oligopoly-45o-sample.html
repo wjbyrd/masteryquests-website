@@ -2057,6 +2057,90 @@ Every pixel matters.
 }
 
 
+
+/* =========================================
+   QUIZ MODE — FIXED-LENGTH CLASSROOM SETUP
+========================================= */
+.quiz-setup-modal{
+  position:fixed;
+  inset:0;
+  z-index:5200;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  background:rgba(2,6,23,.82);
+  backdrop-filter:blur(7px);
+}
+.quiz-setup-card{
+  width:min(520px,100%);
+  padding:26px;
+  border-radius:18px;
+  background:radial-gradient(circle at top,rgba(56,189,248,.15),rgba(11,34,56,.92) 48%,rgba(2,6,23,.99));
+  border:1px solid rgba(247,217,130,.42);
+  box-shadow:0 0 36px rgba(0,0,0,.84),0 0 34px rgba(56,189,248,.20),inset 0 0 28px rgba(0,0,0,.64);
+  text-align:center;
+}
+.quiz-setup-title{
+  margin:0 0 8px;
+  color:#f7d982;
+  font-size:30px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+.quiz-setup-text{
+  margin:0 auto 18px;
+  max-width:430px;
+  color:#c7ecff;
+  line-height:1.45;
+}
+.quiz-count-label{
+  display:block;
+  margin-bottom:8px;
+  color:#eef6ff;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.quiz-count-select{
+  width:min(240px,100%);
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(56,189,248,.42);
+  background:#061426;
+  color:#eef6ff;
+  font-size:18px;
+  text-align:center;
+}
+.quiz-quick-counts{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:14px 0 18px;
+}
+.quiz-quick-counts button{
+  min-width:74px;
+  padding:9px 14px;
+}
+.quiz-quick-counts button.selected{
+  color:#111827;
+  background:linear-gradient(180deg,#f7d982,#b98224);
+  border-color:#f7d982;
+  box-shadow:0 0 18px rgba(247,217,130,.35);
+}
+.quiz-setup-actions{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+@media(max-width:560px){
+  .quiz-setup-card{padding:20px 16px;}
+  .quiz-setup-actions button{width:100%;}
+}
+
 /* =========================================
    14. SOUND ON/OFF — BLANK MASTERY QUEST
 ========================================= */
@@ -2690,6 +2774,12 @@ Respect structure strictly.
   <span class="mode-card-text">No checkpoints. No milestones. No campaign progress. Just adaptive practice.</span>
 </button>
 
+<button class="mode-card" data-mode="quiz" onclick="startSelectedMode('quiz')" aria-label="Quiz. Fixed-length classroom quiz using the concepts selected by your instructor. Choose from one to fifteen questions before launching.">
+  <div class="mode-symbol" aria-hidden="true">?</div>
+  <span class="mode-card-title">Quiz</span>
+  <span class="mode-card-text">Choose 1–15 questions. The concepts are already set by your instructor.</span>
+</button>
+
 <button class="mode-card" data-mode="legendary" onclick="startSelectedMode('legendary')" aria-label="Legendary Mode. Full 30-room campaign using only mastery-level multi-step questions with close answer choices.">
   <div class="mode-symbol" aria-hidden="true">◆</div>
   <span class="mode-card-title">Legendary Mode</span>
@@ -2708,6 +2798,40 @@ Respect structure strictly.
     </div>
 
     <button class="mode-back-btn" onclick="returnToTitleScreen()">BACK</button>
+  </div>
+</div>
+
+<div id="quizSetupModal" class="quiz-setup-modal" role="dialog" aria-modal="true" aria-labelledby="quizSetupTitle">
+  <div class="quiz-setup-card">
+    <h2 id="quizSetupTitle" class="quiz-setup-title">Set Quiz Length</h2>
+    <p class="quiz-setup-text">Your instructor already selected the content. Choose how many questions to answer, then launch the quiz.</p>
+    <label class="quiz-count-label" for="quizQuestionCountSelect">Number of questions</label>
+    <select id="quizQuestionCountSelect" class="quiz-count-select" onchange="setQuizQuestionCount(this.value)">
+      <option value="1">1 question</option>
+      <option value="2">2 questions</option>
+      <option value="3">3 questions</option>
+      <option value="4">4 questions</option>
+      <option value="5">5 questions</option>
+      <option value="6">6 questions</option>
+      <option value="7">7 questions</option>
+      <option value="8">8 questions</option>
+      <option value="9">9 questions</option>
+      <option value="10" selected>10 questions</option>
+      <option value="11">11 questions</option>
+      <option value="12">12 questions</option>
+      <option value="13">13 questions</option>
+      <option value="14">14 questions</option>
+      <option value="15">15 questions</option>
+    </select>
+    <div class="quiz-quick-counts" aria-label="Common quiz lengths">
+      <button type="button" data-quiz-count="5" onclick="setQuizQuestionCount(5)">5</button>
+      <button type="button" data-quiz-count="10" onclick="setQuizQuestionCount(10)">10</button>
+      <button type="button" data-quiz-count="15" onclick="setQuizQuestionCount(15)">15</button>
+    </div>
+    <div class="quiz-setup-actions">
+      <button class="continue-btn" onclick="launchQuizFromSetup()">Launch Quiz</button>
+      <button class="continue-btn secondary-modal-btn" onclick="closeQuizSetup()">Cancel</button>
+    </div>
   </div>
 </div>
 
@@ -3077,13 +3201,13 @@ const FACULTY_COMPOSITION_CONFIG = {
         "finalCheckpoint": null
     },
     "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
-    "templateVersion": "phase4.5p-mode-availability",
-    "composerVersion": "4.5p.0",
+    "templateVersion": "phase4.5q-quiz-mode",
+    "composerVersion": "4.5q.0",
     "compositionId": "oligopoly-mastery-quest-45o",
-    "saveKeyNamespace": "mq-econ:oligopoly-mastery-quest-45o:5210d245988e",
+    "saveKeyNamespace": "mq-econ:oligopoly-mastery-quest-45o:8da776f37736",
     "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
-    "templateSha256": "d75e7791500232cb9da5589de9837843c311a56af9f0fa26dc51201945c24c3d",
-    "compositionFingerprint": "5210d245988efb3947851e3886d646ba216a3e265154bdd807d324c08bb350d9"
+    "templateSha256": "ad828703eaf0ee533ac8f31a2d5d2cd4865b85928eaa35bcc5f12cc45a18641b",
+    "compositionFingerprint": "8da776f37736bf70e1e25c5501f6845344b939620c3383ff67cbecb796494f32"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3225,6 +3349,10 @@ let timedModeEndTime = null;
 let timedModeTimerInterval = null;
 let timedHighestRoom = 1;
 let timedSetbacks = 0;
+
+const QUIZ_MAX_QUESTIONS = 15;
+let quizQuestionTarget = 10;
+let quizQuestionsCompleted = 0;
 
 // =============================================
 // SCORE ATTACK MODE ADDITION — CONFIG + STATE
@@ -3451,11 +3579,12 @@ window.addEventListener("pageshow", reconcileTimedModeClock);
 window.addEventListener("focus", reconcileTimedModeClock);
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
-function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed") return false; return r === 10 || r === 20 || r === 30; }
+function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
     if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
     if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
+    if(gameMode === "quiz") return "Quiz";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
     return "Standard Campaign";
@@ -4870,9 +4999,63 @@ function validateAndStorePlayerName(){
     return true;
 }
 
+function normalizeQuizQuestionTarget(value){
+    const numeric = Math.round(Number(value));
+    if(!Number.isFinite(numeric)) return 10;
+    return Math.max(1, Math.min(QUIZ_MAX_QUESTIONS, numeric));
+}
+
+function updateQuizCountControls(){
+    const select = document.getElementById("quizQuestionCountSelect");
+    if(select) select.value = String(quizQuestionTarget);
+    document.querySelectorAll("[data-quiz-count]").forEach(button => {
+        const selected = Number(button.dataset.quizCount) === quizQuestionTarget;
+        button.classList.toggle("selected", selected);
+        button.setAttribute("aria-pressed", selected ? "true" : "false");
+    });
+}
+
+function setQuizQuestionCount(value){
+    quizQuestionTarget = normalizeQuizQuestionTarget(value);
+    updateQuizCountControls();
+}
+
+function openQuizSetup(){
+    if(!isFacultyModeSupported("quiz")){
+        alert("Quiz is not enabled for this game.");
+        return;
+    }
+    const preflight = validateFacultyMode("quiz");
+    if(!preflight.ok){
+        showFacultyPreflightFailure("quiz", preflight.issues);
+        return;
+    }
+    const savedTarget = Number(localStorage.getItem(`${STORAGE_PREFIX}:quiz:questionCount`));
+    if(Number.isFinite(savedTarget) && savedTarget >= 1 && savedTarget <= QUIZ_MAX_QUESTIONS){
+        quizQuestionTarget = savedTarget;
+    }
+    updateQuizCountControls();
+    const modal = document.getElementById("quizSetupModal");
+    if(modal) modal.style.display = "flex";
+}
+
+function closeQuizSetup(){
+    const modal = document.getElementById("quizSetupModal");
+    if(modal) modal.style.display = "none";
+}
+
+function launchQuizFromSetup(){
+    quizQuestionTarget = normalizeQuizQuestionTarget(quizQuestionTarget);
+    quizQuestionsCompleted = 0;
+    localStorage.setItem(`${STORAGE_PREFIX}:quiz:questionCount`, String(quizQuestionTarget));
+    closeQuizSetup();
+    startSelectedMode("quiz", {quizConfirmed:true});
+}
+
 function showModeSelect(){
     if(!validateAndStorePlayerName()) return;
 
+    closeQuizSetup();
     applyFacultyCompositionConfig();
     beginRunSession();
     runEnding = false;
@@ -4887,6 +5070,7 @@ function showModeSelect(){
 
 function returnToTitleScreen(){
     beginRunSession();
+    closeQuizSetup();
     stopTimedModeClock();
     closeGraphLightbox();
     setGameControlsVisible(false);
@@ -4898,10 +5082,14 @@ function returnToTitleScreen(){
     showContinueButtonIfSaved();
 }
 
-function startSelectedMode(mode){
+function startSelectedMode(mode, options = {}){
     const requestedMode = mode || "standard";
     if(!isFacultyModeSupported(requestedMode)){
         alert("This mode is not enabled for this game.");
+        return;
+    }
+    if(requestedMode === "quiz" && !options.quizConfirmed){
+        openQuizSetup();
         return;
     }
     const preflight = validateFacultyMode(requestedMode);
@@ -4931,7 +5119,7 @@ function startSelectedMode(mode){
 function confirmReturnToModeMenu(){
     showGameModal({
         title: "Return to Battle Menu?",
-        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, and Score Attack attempts will end.",
+        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, and Score Attack attempts will end.",
         confirmText: "Return",
         cancelText: "Stay",
         onConfirm: function(){
@@ -5184,6 +5372,7 @@ if(!hasSavedRun){
     maxStreak = 0;
     totalAttempts = 0;
     correctAnswers = 0;
+    quizQuestionsCompleted = 0;
     bossPool = [];
     calcBag = [];
     conceptMemory = {};
@@ -5289,6 +5478,7 @@ function resetRunStateForNewMode(){
     rapidGuessLocked = false;
     timedHighestRoom = 1;
     timedSetbacks = 0;
+    quizQuestionsCompleted = 0;
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
     resumedSavedRunThisSession = false;
@@ -5317,7 +5507,9 @@ function initializeRunForMode(mode){
             ? "⏱ Timed Trial Active"
             : gameMode === "exam"
                 ? "✎ Exam Drill Active"
-                : gameMode === "score"
+                : gameMode === "quiz"
+                    ? `? Quiz Active · ${quizQuestionTarget} Questions`
+                    : gameMode === "score"
                     ? "🏆 Score Attack Active"
                     : gameMode === "legendary"
                         ? "🔥 Legendary Mode Active"
@@ -5471,6 +5663,7 @@ function restartTimedMode(){
 
 function returnToModeSelectFromRun(){
     beginRunSession();
+    closeQuizSetup();
     runEnding = true;
     answerSubmissionPending = false;
     stopTimedModeClock();
@@ -5493,6 +5686,7 @@ function returnToModeSelectFromRun(){
     document.querySelector(".top-panel").style.display = "none";
     document.getElementById("gameShell").style.display = "none";
 
+    applyFacultyCompositionConfig();
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
     localStorage.removeItem(RUN_ID_KEY);
@@ -5500,6 +5694,14 @@ function returnToModeSelectFromRun(){
 }
 
 function getDifficultyForMode(){
+    if(gameMode === "quiz"){
+        const target = normalizeQuizQuestionTarget(quizQuestionTarget);
+        const position = Math.min(quizQuestionsCompleted, Math.max(0, target - 1));
+        const easyEnd = Math.ceil(target / 3);
+        const mediumEnd = Math.ceil((target * 2) / 3);
+        return position < easyEnd ? "easy" : position < mediumEnd ? "medium" : "hard";
+    }
+
     if(gameMode === "exam" || gameMode === "timed"){
         return (room <= 10) ? "easy"
             : (room <= 20) ? "medium"
@@ -25866,7 +26068,7 @@ const questionAssetMetadata = {
 };
 const facultyCompositionMetadata = {
   "schemaVersion": "1.2.0",
-  "composerVersion": "4.5p.0",
+  "composerVersion": "4.5q.0",
   "title": "Oligopoly Mastery Quest 4.5o",
   "slug": "oligopoly-mastery-quest-45o",
   "selectedConceptIds": [
@@ -25925,11 +26127,11 @@ const facultyCompositionMetadata = {
     "legendary",
     "score"
   ],
-  "saveKeyNamespace": "mq-econ:oligopoly-mastery-quest-45o:5210d245988e",
-  "compositionFingerprint": "5210d245988efb3947851e3886d646ba216a3e265154bdd807d324c08bb350d9",
+  "saveKeyNamespace": "mq-econ:oligopoly-mastery-quest-45o:8da776f37736",
+  "compositionFingerprint": "8da776f37736bf70e1e25c5501f6845344b939620c3383ff67cbecb796494f32",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
   "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
-  "templateSha256": "d75e7791500232cb9da5589de9837843c311a56af9f0fa26dc51201945c24c3d"
+  "templateSha256": "ad828703eaf0ee533ac8f31a2d5d2cd4865b85928eaa35bcc5f12cc45a18641b"
 };
 const facultyQuestionValidator = function validateFacultyQuestionRecord(question, poolName, availableAssets){
   const invalidFields = [];
@@ -32682,9 +32884,20 @@ const FACULTY_MODE_REQUIREMENTS = {
     standard: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"],
     timed: ["easy", "medium", "hard", "repair", "bridge"],
     exam: ["easy", "medium", "hard", "repair", "bridge"],
+    quiz: ["easy", "medium", "hard"],
     legendary: ["legendary", "legendaryBoss"],
     score: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"]
 };
+
+const FACULTY_MODE_POOL_MINIMUMS = {
+    quiz: { easy: 5, medium: 5, hard: 5 }
+};
+
+function getFacultyModePoolMinimum(mode, poolName){
+    return FACULTY_MODE_POOL_MINIMUMS[mode]?.[poolName]
+        ?? FACULTY_POOL_REQUIREMENTS[poolName]
+        ?? 0;
+}
 
 function getFacultyPool(poolName){
     if(poolName === "repair") return getAllFacultyRepairQuestions();
@@ -32709,7 +32922,7 @@ function validateFacultyMode(mode){
 
     requiredPoolNames.forEach(poolName => {
         const pool = getFacultyPool(poolName);
-        const minimum = FACULTY_POOL_REQUIREMENTS[poolName] || 0;
+        const minimum = getFacultyModePoolMinimum(normalizedMode, poolName);
 
         if(!Array.isArray(pool)){
             issues.push({
@@ -32796,6 +33009,7 @@ function showFacultyPreflightFailure(mode, issues){
 function getModeLabelForPreflight(mode){
     if(mode === "timed") return "Timed Trial";
     if(mode === "exam") return "Exam Drill";
+    if(mode === "quiz") return "Quiz";
     if(mode === "legendary") return "Legendary Mode";
     if(mode === "score") return "Score Attack";
     return "Standard Campaign";
@@ -33258,6 +33472,10 @@ function loadQuestion() {
         handlePracticeModeComplete();
         return;
     }
+    if(gameMode === "quiz" && quizQuestionsCompleted >= quizQuestionTarget){
+        handlePracticeModeComplete();
+        return;
+    }
     if(gameMode === "timed" && room > 30) room = 30;
 
     questionStartTime = Date.now(); 
@@ -33302,10 +33520,17 @@ function loadQuestion() {
     gameBox.classList.toggle("boss-mode", isBoss);
    
     // 2. UI & Progress Updates
-    document.getElementById("progressFill").style.width = (Math.min(room, 30) / 30 * 100) + "%";
-    const roomCap = (gameMode === "timed" || gameMode === "exam") ? Math.min(room, 30) : room;
-    document.getElementById("areaDisplay").innerText = `${getModeDisplayName()} — ${getAreaName(roomCap)} (${roomCap}/30)`;
-    document.getElementById("srAnnouncements").innerText = `Entering ${getModeDisplayName()}. ${getAreaName(roomCap)}. Room ${roomCap} of 30.`;
+    if(gameMode === "quiz"){
+        const currentQuizQuestion = Math.min(quizQuestionsCompleted + 1, quizQuestionTarget);
+        document.getElementById("progressFill").style.width = `${(quizQuestionsCompleted / quizQuestionTarget) * 100}%`;
+        document.getElementById("areaDisplay").innerText = `Quiz — Question ${currentQuizQuestion} of ${quizQuestionTarget}`;
+        document.getElementById("srAnnouncements").innerText = `Quiz. Question ${currentQuizQuestion} of ${quizQuestionTarget}.`;
+    } else {
+        document.getElementById("progressFill").style.width = (Math.min(room, 30) / 30 * 100) + "%";
+        const roomCap = (gameMode === "timed" || gameMode === "exam") ? Math.min(room, 30) : room;
+        document.getElementById("areaDisplay").innerText = `${getModeDisplayName()} — ${getAreaName(roomCap)} (${roomCap}/30)`;
+        document.getElementById("srAnnouncements").innerText = `Entering ${getModeDisplayName()}. ${getAreaName(roomCap)}. Room ${roomCap} of 30.`;
+    }
 
     // 3. Select the Question (CHANGE BOSS NAMES AND PNG)
 if (isBoss) {
@@ -33728,6 +33953,10 @@ if(rapidGuess.triggered && !rapidGuessLocked){
     return;
 }
 
+if(gameMode === "quiz"){
+    quizQuestionsCompleted++;
+}
+
 recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 
     // =============================================
@@ -34040,7 +34269,7 @@ if(remediationState.active){
 }
 
 // --- STAGED REMEDIATION TRIGGER ---
-if (gameMode !== "legendary" && !remediationState.active && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
+if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, responseTime) || remediationState;
     detourActive = true;
     detourReturnRoom = room;
@@ -34071,6 +34300,22 @@ if (gameMode !== "legendary" && !remediationState.active && currentQuestion.tag 
     }
 }
 	
+    // --- QUIZ MODE: FIXED LENGTH, NO SETBACKS OR REMEDIATION DETOURS ---
+    if(gameMode === "quiz"){
+        document.getElementById("streakDisplay").innerText = "";
+        bossHealth = 3;
+        bossPool = [];
+        room++;
+        const feedback = currentQuestion.feedback ? ` ${currentQuestion.feedback}` : "";
+        showGameModal({
+            title: "Answer Recorded",
+            text: `Incorrect.${feedback}`,
+            confirmText: quizQuestionsCompleted >= quizQuestionTarget ? "View Results" : "Next Question",
+            onConfirm: function(){ loadQuestion(); }
+        });
+        return;
+    }
+
     // --- FALLBACK LOGIC ---
     document.getElementById("streakDisplay").innerText = "";
 
@@ -34576,11 +34821,16 @@ function handlePracticeModeComplete(){
     closeGraphLightbox();
     document.getElementById("questionImageBox").style.display = "none";
 
+    const completionLead = gameMode === "quiz"
+        ? `You completed ${quizQuestionTarget} quiz question${quizQuestionTarget === 1 ? "" : "s"}.`
+        : "You reached the end of this practice path.";
+
     document.getElementById("question").innerHTML = `
         <span class="boss-title">${getModeDisplayName().toUpperCase()} COMPLETE</span>
         <div class="boss-q">
-            You reached the end of this practice path.<br><br>
+            ${completionLead}<br><br>
             Accuracy: ${accuracy}%<br>
+            ${gameMode === "quiz" ? `Quiz Questions: ${quizQuestionTarget}<br>` : ""}
             Total Attempts: ${totalAttempts}<br>
             Best Streak: ${maxStreak}<br>
             Total Time: ${timeString}<br>
@@ -34589,14 +34839,20 @@ function handlePracticeModeComplete(){
         </div>
     `;
 
+    const replayButton = gameMode === "quiz"
+        ? '<button class="continue-btn" onclick="openQuizSetup()">Start Another Quiz</button>'
+        : `<button class="continue-btn" onclick="startSelectedMode('exam')">Replay Exam Drill</button>`;
+
     document.getElementById("answers").innerHTML = `
         <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
-        <button class="continue-btn" onclick="startSelectedMode('exam')">Replay Exam Drill</button>
+        ${replayButton}
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
     `;
 
-    document.getElementById("message").innerText = "Practice complete. The campaign record was not changed.";
+    document.getElementById("message").innerText = gameMode === "quiz"
+        ? "Quiz complete. The campaign record was not changed."
+        : "Practice complete. The campaign record was not changed.";
 }
 
 // =============================================
@@ -35081,6 +35337,7 @@ function getMasteryReportModeName(){
     if(gameMode === "score") return "Score Attack";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "exam") return "Exam Drill";
+    if(gameMode === "quiz") return "Quiz";
     return getModeDisplayName();
 }
 

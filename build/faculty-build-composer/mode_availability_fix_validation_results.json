@@ -1,7 +1,7 @@
 {
-  "phase": "mode-availability-fix-v1",
+  "phase": "mode-availability-fix-v2-quiz-aware",
   "ok": true,
-  "composerVersion": "4.5p.0",
+  "composerVersion": "4.5q.0",
   "canonicalQuestionCount": 7977,
   "cssGuard": true,
   "showReapply": true,
@@ -21,6 +21,7 @@
       "hidden": [
         "standard",
         "exam",
+        "quiz",
         "legendary",
         "score"
       ],
@@ -32,7 +33,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1295876
+      "htmlBytes": 1305679
     },
     {
       "name": "timed-exam",
@@ -50,6 +51,7 @@
       ],
       "hidden": [
         "standard",
+        "quiz",
         "legendary",
         "score"
       ],
@@ -65,14 +67,15 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1295904
+      "htmlBytes": 1305707
     },
     {
-      "name": "all-five",
+      "name": "all-six",
       "requested": [
         "standard",
         "timed",
         "exam",
+        "quiz",
         "legendary",
         "score"
       ],
@@ -80,6 +83,7 @@
         "standard",
         "timed",
         "exam",
+        "quiz",
         "legendary",
         "score"
       ],
@@ -87,11 +91,12 @@
         "standard",
         "timed",
         "exam",
+        "quiz",
         "legendary",
         "score"
       ],
       "hidden": [],
-      "enabledCount": "5",
+      "enabledCount": "6",
       "subtitle": "Choose one of the modes enabled by your instructor.",
       "validation": [
         {
@@ -107,6 +112,10 @@
           "ok": true
         },
         {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
           "mode": "legendary",
           "ok": true
         },
@@ -115,7 +124,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1295994
+      "htmlBytes": 1305818
     }
   ],
   "issues": []

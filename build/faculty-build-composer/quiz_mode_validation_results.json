@@ -1,0 +1,93 @@
+{
+  "phase": "quiz-mode-v1",
+  "ok": true,
+  "composerVersion": "4.5q.0",
+  "canonicalQuestionCount": 7977,
+  "supportedModes": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "legendary",
+    "score"
+  ],
+  "quizValidation": {
+    "ok": true,
+    "requirements": [
+      {
+        "pool": "easy",
+        "minimum": 5,
+        "count": 5
+      },
+      {
+        "pool": "medium",
+        "minimum": 5,
+        "count": 5
+      },
+      {
+        "pool": "hard",
+        "minimum": 5,
+        "count": 5
+      }
+    ]
+  },
+  "distributions": {
+    "ten": {
+      "sequence": [
+        "easy",
+        "easy",
+        "easy",
+        "easy",
+        "medium",
+        "medium",
+        "medium",
+        "hard",
+        "hard",
+        "hard"
+      ],
+      "counts": {
+        "easy": 4,
+        "medium": 3,
+        "hard": 3
+      }
+    },
+    "fifteen": {
+      "sequence": [
+        "easy",
+        "easy",
+        "easy",
+        "easy",
+        "easy",
+        "medium",
+        "medium",
+        "medium",
+        "medium",
+        "medium",
+        "hard",
+        "hard",
+        "hard",
+        "hard",
+        "hard"
+      ],
+      "counts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      }
+    }
+  },
+  "checks": {
+    "quizCard": true,
+    "quizSetup": true,
+    "countSelector": true,
+    "max15": true,
+    "fixedCompletion": true,
+    "noQuizRemediation": true,
+    "noQuizSetbackBranch": true,
+    "quizNoBosses": true,
+    "quizReport": true,
+    "quizConfigOnly": true
+  },
+  "generatedHtmlBytes": 411497,
+  "issues": []
+}

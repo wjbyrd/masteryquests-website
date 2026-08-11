@@ -3183,10 +3183,15 @@ function freezeCompletionTime(fallbackMs = 0){
 // =====================================================
 const FACULTY_COMPOSITION_CONFIG = {
     "schemaVersion": "1.2.0",
-    "title": "Mode Test timed-only",
-    "slug": "mode-test-timed-only",
+    "title": "Mode Test all-six",
+    "slug": "mode-test-all-six",
     "supportedModes": [
-        "timed"
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "legendary",
+        "score"
     ],
     "selectedConceptIds": [
         "oligopoly"
@@ -3199,11 +3204,11 @@ const FACULTY_COMPOSITION_CONFIG = {
     "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
     "templateVersion": "phase4.5q-quiz-mode",
     "composerVersion": "4.5q.0",
-    "compositionId": "mode-test-timed-only",
-    "saveKeyNamespace": "mq-econ:mode-test-timed-only:fb66198e0fbc",
+    "compositionId": "mode-test-all-six",
+    "saveKeyNamespace": "mq-econ:mode-test-all-six:c6c86e5ce6a2",
     "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
     "templateSha256": "0e4bd3aa0b96b4c7795442d369039107e112958448b0ee3283f1ecbdc1e0ff1c",
-    "compositionFingerprint": "fb66198e0fbc75583f6b720ba2bfc02b5d30a903ccd4b63085486da3615a0199"
+    "compositionFingerprint": "c6c86e5ce6a2b8cfeb29db1788a34d544cd49ed196c85b2a47e220a69ff51340"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -26024,8 +26029,8 @@ const questionAssetMetadata = {
 const facultyCompositionMetadata = {
   "schemaVersion": "1.2.0",
   "composerVersion": "4.5q.0",
-  "title": "Mode Test timed-only",
-  "slug": "mode-test-timed-only",
+  "title": "Mode Test all-six",
+  "slug": "mode-test-all-six",
   "selectedConceptIds": [
     "oligopoly"
   ],
@@ -26076,10 +26081,15 @@ const facultyCompositionMetadata = {
     }
   },
   "supportedModes": [
-    "timed"
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "legendary",
+    "score"
   ],
-  "saveKeyNamespace": "mq-econ:mode-test-timed-only:fb66198e0fbc",
-  "compositionFingerprint": "fb66198e0fbc75583f6b720ba2bfc02b5d30a903ccd4b63085486da3615a0199",
+  "saveKeyNamespace": "mq-econ:mode-test-all-six:c6c86e5ce6a2",
+  "compositionFingerprint": "c6c86e5ce6a2b8cfeb29db1788a34d544cd49ed196c85b2a47e220a69ff51340",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
   "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
   "templateSha256": "0e4bd3aa0b96b4c7795442d369039107e112958448b0ee3283f1ecbdc1e0ff1c"

@@ -7,6 +7,7 @@ const MODE_LABELS = {
   standard: 'Standard Campaign',
   timed: 'Timed Trial',
   exam: 'Exam Drill',
+  quiz: 'Quiz',
   legendary: 'Legendary Mode',
   score: 'Score Attack'
 };
@@ -385,9 +386,11 @@ function renderModeOptions(){
             ? 'Ten-minute adaptive run without checkpoint minimums.'
             : mode === 'exam'
               ? 'Adaptive practice without checkpoints.'
-              : mode === 'legendary'
-                ? 'Mastery-level questions and mastery checkpoints only.'
-                : 'Arcade scoring with three checkpoints.'
+              : mode === 'quiz'
+                ? 'Fixed-length classroom quiz. Students choose 1–15 questions; faculty-selected concepts stay locked.'
+                : mode === 'legendary'
+                  ? 'Mastery-level questions and mastery checkpoints only.'
+                  : 'Arcade scoring with three checkpoints.'
       }</p>
     </div>
   `).join('');
