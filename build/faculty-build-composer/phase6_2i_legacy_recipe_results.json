@@ -39,6 +39,7 @@
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
@@ -57,6 +58,11 @@
         "bridge": 6,
         "calculation": 0,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 4,
         "assets": 1,
         "totalCanonical": 53
@@ -75,43 +81,49 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 6
+              "count": 10
             },
             {
               "pool": "legendaryBoss",
               "minimum": 3,
-              "count": 3
+              "count": 4
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "counts": {
-        "easy": 3,
-        "medium": 2,
-        "hard": 2,
-        "elite": 1,
-        "legendary": 6,
+        "easy": 8,
+        "medium": 8,
+        "hard": 8,
+        "elite": 3,
+        "legendary": 10,
         "easyBoss": 3,
-        "mediumBoss": 0,
-        "finalBoss": 0,
-        "legendaryBoss": 3,
-        "repair": 2,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 4,
+        "repair": 6,
         "repairSeed": 0,
-        "bridge": 2,
+        "bridge": 4,
         "calculation": 0,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 0,
         "assets": 0,
-        "totalCanonical": 24
+        "totalCanonical": 60
       }
     },
     {
       "recipe": "market-foundations.json",
       "selected": 46,
       "errors": [],
-      "warnings": 5,
+      "warnings": 4,
       "modes": [
         {
           "mode": "standard",
@@ -120,45 +132,46 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 280
+              "count": 344
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 300
+              "count": 379
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 302
+              "count": 378
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 103
+              "count": 141
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 109
+              "count": 146
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 111
+              "count": 168
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 189
+              "count": 240
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 127
+              "count": 165
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -168,30 +181,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 280
+              "count": 344
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 300
+              "count": 379
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 302
+              "count": 378
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 189
+              "count": 240
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 127
+              "count": 165
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -201,30 +215,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 280
+              "count": 344
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 300
+              "count": 379
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 302
+              "count": 378
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 189
+              "count": 240
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 127
+              "count": 165
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -234,15 +249,16 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 280
+              "count": 450
             },
             {
               "pool": "legendaryBoss",
               "minimum": 3,
-              "count": 108
+              "count": 178
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -252,73 +268,79 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 280
+              "count": 344
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 300
+              "count": 379
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 302
+              "count": 378
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 103
+              "count": 141
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 109
+              "count": 146
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 111
+              "count": 168
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 189
+              "count": 240
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 127
+              "count": 165
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "counts": {
-        "easy": 280,
-        "medium": 300,
-        "hard": 302,
-        "elite": 209,
-        "legendary": 280,
-        "easyBoss": 103,
-        "mediumBoss": 109,
-        "finalBoss": 111,
-        "legendaryBoss": 108,
-        "repair": 189,
+        "easy": 344,
+        "medium": 379,
+        "hard": 378,
+        "elite": 225,
+        "legendary": 450,
+        "easyBoss": 141,
+        "mediumBoss": 146,
+        "finalBoss": 168,
+        "legendaryBoss": 178,
+        "repair": 240,
         "repairSeed": 15,
-        "bridge": 127,
+        "bridge": 165,
         "calculation": 139,
         "integration": 0,
-        "graph": 265,
-        "assets": 30,
-        "totalCanonical": 2133
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 281,
+        "assets": 32,
+        "totalCanonical": 2829
       }
     },
     {
       "recipe": "mixed-custom-course.json",
       "selected": 8,
       "errors": [],
-      "warnings": 2,
+      "warnings": 1,
       "modes": [
         {
           "mode": "standard",
@@ -327,45 +349,46 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 59
+              "count": 64
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 74
+              "count": 80
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 79
+              "count": 85
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 32
+              "count": 36
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 27
+              "count": 29
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 29
+              "count": 34
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 41
+              "count": 46
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 28
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -375,30 +398,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 59
+              "count": 64
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 74
+              "count": 80
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 79
+              "count": 85
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 41
+              "count": 46
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 28
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -408,30 +432,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 59
+              "count": 64
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 74
+              "count": 80
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 79
+              "count": 85
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 41
+              "count": 46
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 28
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -441,15 +466,16 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 60
+              "count": 86
             },
             {
               "pool": "legendaryBoss",
               "minimum": 3,
-              "count": 23
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -459,73 +485,79 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 59
+              "count": 64
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 74
+              "count": 80
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 79
+              "count": 85
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 32
+              "count": 36
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 27
+              "count": 29
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 29
+              "count": 34
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 41
+              "count": 46
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 28
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "counts": {
-        "easy": 59,
-        "medium": 74,
-        "hard": 79,
-        "elite": 51,
-        "legendary": 60,
-        "easyBoss": 32,
-        "mediumBoss": 27,
-        "finalBoss": 29,
-        "legendaryBoss": 23,
-        "repair": 41,
+        "easy": 64,
+        "medium": 80,
+        "hard": 85,
+        "elite": 53,
+        "legendary": 86,
+        "easyBoss": 36,
+        "mediumBoss": 29,
+        "finalBoss": 34,
+        "legendaryBoss": 32,
+        "repair": 46,
         "repairSeed": 1,
-        "bridge": 28,
+        "bridge": 32,
         "calculation": 54,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 40,
         "assets": 7,
-        "totalCanonical": 504
+        "totalCanonical": 578
       }
     },
     {
       "recipe": "money-and-stabilization.json",
       "selected": 25,
       "errors": [],
-      "warnings": 3,
+      "warnings": 1,
       "modes": [
         {
           "mode": "standard",
@@ -534,32 +566,32 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 171
+              "count": 184
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 167
+              "count": 190
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 186
+              "count": 199
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 48
+              "count": 72
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 66
+              "count": 72
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 63
+              "count": 72
             },
             {
               "pool": "repair",
@@ -569,10 +601,11 @@
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 81
+              "count": 86
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -582,17 +615,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 171
+              "count": 184
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 167
+              "count": 190
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 186
+              "count": 199
             },
             {
               "pool": "repair",
@@ -602,10 +635,11 @@
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 81
+              "count": 86
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -615,17 +649,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 171
+              "count": 184
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 167
+              "count": 190
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 186
+              "count": 199
             },
             {
               "pool": "repair",
@@ -635,10 +669,11 @@
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 81
+              "count": 86
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -648,15 +683,16 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 164
+              "count": 176
             },
             {
               "pool": "legendaryBoss",
               "minimum": 3,
-              "count": 81
+              "count": 84
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -666,32 +702,32 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 171
+              "count": 184
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 167
+              "count": 190
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 186
+              "count": 199
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 48
+              "count": 72
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 66
+              "count": 72
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 63
+              "count": 72
             },
             {
               "pool": "repair",
@@ -701,38 +737,44 @@
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 81
+              "count": 86
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "counts": {
-        "easy": 171,
-        "medium": 167,
-        "hard": 186,
-        "elite": 157,
-        "legendary": 164,
-        "easyBoss": 48,
-        "mediumBoss": 66,
-        "finalBoss": 63,
-        "legendaryBoss": 81,
+        "easy": 184,
+        "medium": 190,
+        "hard": 199,
+        "elite": 150,
+        "legendary": 176,
+        "easyBoss": 72,
+        "mediumBoss": 72,
+        "finalBoss": 72,
+        "legendaryBoss": 84,
         "repair": 147,
         "repairSeed": 0,
-        "bridge": 81,
+        "bridge": 86,
         "calculation": 82,
-        "integration": 10,
-        "graph": 236,
+        "integration": 0,
+        "challengeOpening": 6,
+        "challengeMiddle": 9,
+        "challengeFinal": 38,
+        "challengeLegendary": 48,
+        "challengeTotal": 101,
+        "graph": 247,
         "assets": 33,
-        "totalCanonical": 1331
+        "totalCanonical": 1533
       }
     },
     {
       "recipe": "national-economy.json",
       "selected": 17,
       "errors": [],
-      "warnings": 3,
+      "warnings": 1,
       "modes": [
         {
           "mode": "standard",
@@ -741,45 +783,46 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 93
+              "count": 122
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 95
+              "count": 125
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 92
+              "count": 126
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 55
+              "count": 73
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 45
+              "count": 75
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 51
+              "count": 81
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 58
+              "count": 60
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 37
+              "count": 39
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -789,30 +832,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 93
+              "count": 122
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 95
+              "count": 125
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 92
+              "count": 126
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 58
+              "count": 60
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 37
+              "count": 39
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -822,30 +866,31 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 93
+              "count": 122
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 95
+              "count": 125
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 92
+              "count": 126
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 58
+              "count": 60
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 37
+              "count": 39
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -855,15 +900,16 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 91
+              "count": 111
             },
             {
               "pool": "legendaryBoss",
               "minimum": 3,
-              "count": 35
+              "count": 51
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -873,73 +919,79 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 93
+              "count": 122
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 95
+              "count": 125
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 92
+              "count": 126
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 55
+              "count": 73
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 45
+              "count": 75
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 51
+              "count": 81
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 58
+              "count": 60
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 37
+              "count": 39
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "counts": {
-        "easy": 93,
-        "medium": 95,
-        "hard": 92,
+        "easy": 122,
+        "medium": 125,
+        "hard": 126,
         "elite": 81,
-        "legendary": 91,
-        "easyBoss": 55,
-        "mediumBoss": 45,
-        "finalBoss": 51,
-        "legendaryBoss": 35,
-        "repair": 58,
+        "legendary": 111,
+        "easyBoss": 73,
+        "mediumBoss": 75,
+        "finalBoss": 81,
+        "legendaryBoss": 51,
+        "repair": 60,
         "repairSeed": 0,
-        "bridge": 37,
+        "bridge": 39,
         "calculation": 67,
         "integration": 0,
-        "graph": 0,
-        "assets": 0,
-        "totalCanonical": 733
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 12,
+        "assets": 3,
+        "totalCanonical": 944
       }
     },
     {
       "recipe": "standard-and-score.json",
       "selected": 8,
       "errors": [],
-      "warnings": 2,
+      "warnings": 1,
       "modes": [
         {
           "mode": "standard",
@@ -948,45 +1000,46 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 59
+              "count": 64
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 74
+              "count": 80
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 79
+              "count": 85
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 32
+              "count": 36
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 27
+              "count": 29
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 29
+              "count": 34
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 41
+              "count": 46
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 28
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -996,66 +1049,72 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 59
+              "count": 64
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 74
+              "count": 80
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 79
+              "count": 85
             },
             {
               "pool": "easyBoss",
               "minimum": 3,
-              "count": 32
+              "count": 36
             },
             {
               "pool": "mediumBoss",
               "minimum": 3,
-              "count": 27
+              "count": 29
             },
             {
               "pool": "finalBoss",
               "minimum": 3,
-              "count": 29
+              "count": 34
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 41
+              "count": 46
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 28
+              "count": 32
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
       "counts": {
-        "easy": 59,
-        "medium": 74,
-        "hard": 79,
-        "elite": 51,
-        "legendary": 60,
-        "easyBoss": 32,
-        "mediumBoss": 27,
-        "finalBoss": 29,
-        "legendaryBoss": 23,
-        "repair": 41,
+        "easy": 64,
+        "medium": 80,
+        "hard": 85,
+        "elite": 53,
+        "legendary": 86,
+        "easyBoss": 36,
+        "mediumBoss": 29,
+        "finalBoss": 34,
+        "legendaryBoss": 32,
+        "repair": 46,
         "repairSeed": 1,
-        "bridge": 28,
+        "bridge": 32,
         "calculation": 54,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 40,
         "assets": 7,
-        "totalCanonical": 504
+        "totalCanonical": 578
       }
     },
     {
@@ -1095,6 +1154,7 @@
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         },
         {
@@ -1128,6 +1188,7 @@
             }
           ],
           "deficiencies": [],
+          "issues": [],
           "ok": true
         }
       ],
@@ -1146,6 +1207,11 @@
         "bridge": 6,
         "calculation": 0,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 4,
         "assets": 1,
         "totalCanonical": 53

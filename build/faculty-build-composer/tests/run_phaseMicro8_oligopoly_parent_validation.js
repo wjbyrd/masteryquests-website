@@ -1,0 +1,16 @@
+const fs=require('fs');
+const path=require('path');
+const crypto=require('crypto');
+const core=require('../composer-core.js');
+const root=path.resolve(__dirname,'..');
+const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
+const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
+const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
+(async()=>{
+ const recipe={schemaVersion:'1.2.0',title:'Oligopoly Mastery Quest 4.5o',slug:'oligopoly-mastery-quest-45o',supportedModes:['standard','timed','exam','legendary','score'],selectedConceptIds:['oligopoly'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
+ const composition=core.compose(library,recipe);const answerAudit=await core.verifyAnswers(composition);const assetIssues=[];const embedded={};
+ for(const asset of composition.assets){const diskPath=path.join(root,'data',asset.runtimePath);if(!fs.existsSync(diskPath)){assetIssues.push({path:asset.runtimePath,issue:'missing'});continue;}const bytes=fs.readFileSync(diskPath);const actual=crypto.createHash('sha256').update(bytes).digest('hex');if(actual!==asset.sha256)assetIssues.push({path:asset.runtimePath,issue:'hash mismatch',expected:asset.sha256,actual});embedded[asset.runtimePath]=`data:image/webp;base64,${bytes.toString('base64')}`;}
+ composition.embeddedQuestionAssets=embedded;const templateSha=await core.sha256Hex(template);const config=await core.createConfig(recipe,library,templateSha);const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:composition.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:templateSha};const html=core.buildHtml(template,composition,config,metadata);fs.writeFileSync(path.join(root,'tests','oligopoly-45o-sample.html'),html);
+ const expected={easy:50,medium:51,hard:73,elite:30,legendary:90,easyBoss:18,mediumBoss:18,finalBoss:18,legendaryBoss:36,repair:30,bridge:31,calculation:30,graph:123,assets:42,totalCanonical:445};const countIssues=[];for(const [key,value] of Object.entries(expected))if(composition.counts[key]!==value)countIssues.push({key,expected:value,actual:composition.counts[key]});
+ const result={ok:composition.errors.length===0&&answerAudit.ok&&assetIssues.length===0&&countIssues.length===0&&composition.validation.modes.every(m=>m.ok),conceptId:'oligopoly',libraryVersion:library.libraryVersion,composerVersion:core.COMPOSER_VERSION,errors:composition.errors,warnings:composition.warnings,counts:composition.counts,countIssues,modes:composition.validation.modes,answerAudit,assetAudit:{assetCount:composition.assets.length,issues:assetIssues},sampleHtml:{path:'tests/oligopoly-45o-sample.html',bytes:Buffer.byteLength(html)},bossCoverage:composition.bossCoverage};fs.writeFileSync(path.join(root,'tests','phaseMicro8_oligopoly_parent_validation_results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));if(!result.ok)process.exit(1);
+})();

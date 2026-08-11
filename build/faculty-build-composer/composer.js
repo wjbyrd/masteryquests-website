@@ -565,7 +565,7 @@ function renderConcepts(){
           </div>
         </div>
         <p class="concept-description">${esc(concept.description)}</p>
-        ${concept.parentConceptId ? `<p class="concept-description"><strong>${esc(concept.familyTitle || 'Family')} subtopic.</strong> Selecting this removes the full ${esc(concept.familyTitle || 'parent')} family so only this slice (plus any sibling subtopics you select) enters the build.${concept.standaloneRecommendation === 'supporting-subtopic' ? ` Best used with related ${esc(concept.familyTitle || 'family')} topics rather than as a standalone assessment.` : ''}</p>` : ''}
+        ${concept.parentConceptId ? `<p class="concept-description"><strong>${esc(concept.familyTitle || 'Family')} subtopic.</strong> Selecting this removes the full ${esc(concept.familyTitle || 'parent')} family so only this slice (plus any sibling subtopics you select) enters the build.${String(concept.standaloneRecommendation || '').startsWith('supporting') ? ` Best used with related ${esc(concept.familyTitle || 'family')} topics rather than as a standalone assessment.` : ''}</p>` : ''}
         <div class="card-summary">
           <span><strong>${practiceTotal}</strong> practice</span>
           <span><strong>${checkpointTotal}</strong> checkpoint</span>

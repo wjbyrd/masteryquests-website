@@ -1,0 +1,598 @@
+{
+  "phase": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
+  "ok": true,
+  "composerVersion": "4.5o.0",
+  "canonicalQuestionCount": 7977,
+  "conceptCount": 126,
+  "parentCanonical": 445,
+  "childrenUnion": 445,
+  "newAdaptiveSupportRouted": "21/21",
+  "graphCoverage": {
+    "graphQuestions": 123,
+    "assets": 42
+  },
+  "children": {
+    "oligopoly-structure-concentration": {
+      "canonical": 69,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 17
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 37,
+      "supporting": false,
+      "role": "standalone-ready",
+      "advancedOptional": false
+    },
+    "oligopoly-game-theory-foundations": {
+      "canonical": 106,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 22
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 52,
+      "supporting": false,
+      "role": "standalone-ready",
+      "advancedOptional": false
+    },
+    "oligopoly-collusion-cartels": {
+      "canonical": 70,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 7,
+      "quizEligible": 30,
+      "supporting": false,
+      "role": "standalone-ready",
+      "advancedOptional": false
+    },
+    "oligopoly-dynamic-strategy": {
+      "canonical": 85,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 9
+      },
+      "repair": 3,
+      "bridge": 3,
+      "quizEligible": 31,
+      "supporting": true,
+      "role": "supporting-advanced",
+      "advancedOptional": true
+    },
+    "oligopoly-rivalry-coordination": {
+      "canonical": 37,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 6,
+        "hard": 5
+      },
+      "repair": 3,
+      "bridge": 3,
+      "quizEligible": 16,
+      "supporting": true,
+      "role": "supporting-subtopic",
+      "advancedOptional": false
+    },
+    "oligopoly-welfare-policy": {
+      "canonical": 78,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 38,
+      "supporting": false,
+      "role": "standalone-ready",
+      "advancedOptional": false
+    }
+  },
+  "parentCompose": {
+    "ok": true,
+    "counts": {
+      "easy": 50,
+      "medium": 51,
+      "hard": 73,
+      "elite": 30,
+      "legendary": 90,
+      "easyBoss": 18,
+      "mediumBoss": 18,
+      "finalBoss": 18,
+      "legendaryBoss": 36,
+      "repair": 30,
+      "repairSeed": 0,
+      "bridge": 31,
+      "calculation": 30,
+      "integration": 0,
+      "challengeOpening": 0,
+      "challengeMiddle": 0,
+      "challengeFinal": 0,
+      "challengeLegendary": 0,
+      "challengeTotal": 0,
+      "graph": 123,
+      "assets": 42,
+      "totalCanonical": 445
+    },
+    "modes": [
+      {
+        "mode": "standard",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "timed",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "exam",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "legendary",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "score",
+        "ok": true,
+        "issues": []
+      }
+    ]
+  },
+  "allChildrenCompose": {
+    "ok": true,
+    "counts": {
+      "easy": 50,
+      "medium": 51,
+      "hard": 73,
+      "elite": 30,
+      "legendary": 90,
+      "easyBoss": 18,
+      "mediumBoss": 18,
+      "finalBoss": 18,
+      "legendaryBoss": 36,
+      "repair": 30,
+      "repairSeed": 0,
+      "bridge": 31,
+      "calculation": 30,
+      "integration": 0,
+      "challengeOpening": 0,
+      "challengeMiddle": 0,
+      "challengeFinal": 0,
+      "challengeLegendary": 0,
+      "challengeTotal": 0,
+      "graph": 123,
+      "assets": 42,
+      "totalCanonical": 445
+    },
+    "modes": [
+      {
+        "mode": "standard",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "timed",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "exam",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "legendary",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "score",
+        "ok": true,
+        "issues": []
+      }
+    ]
+  },
+  "coreChildrenCompose": {
+    "ok": true,
+    "counts": {
+      "easy": 45,
+      "medium": 46,
+      "hard": 64,
+      "elite": 18,
+      "legendary": 68,
+      "easyBoss": 18,
+      "mediumBoss": 11,
+      "finalBoss": 10,
+      "legendaryBoss": 25,
+      "repair": 27,
+      "repairSeed": 0,
+      "bridge": 28,
+      "calculation": 26,
+      "integration": 0,
+      "challengeOpening": 0,
+      "challengeMiddle": 0,
+      "challengeFinal": 0,
+      "challengeLegendary": 0,
+      "challengeTotal": 0,
+      "graph": 101,
+      "assets": 36,
+      "totalCanonical": 360
+    },
+    "modes": [
+      {
+        "mode": "standard",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "timed",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "exam",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "legendary",
+        "ok": true,
+        "issues": []
+      },
+      {
+        "mode": "score",
+        "ok": true,
+        "issues": []
+      }
+    ]
+  },
+  "focused": {
+    "oligopoly-structure-concentration": {
+      "ok": true,
+      "counts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 17,
+        "elite": 0,
+        "legendary": 12,
+        "easyBoss": 3,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 5,
+        "repair": 6,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 9,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 8,
+        "assets": 8,
+        "totalCanonical": 69
+      },
+      "modes": [
+        {
+          "mode": "timed",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "issues": []
+        }
+      ]
+    },
+    "oligopoly-game-theory-foundations": {
+      "ok": true,
+      "counts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 22,
+        "elite": 10,
+        "legendary": 18,
+        "easyBoss": 15,
+        "mediumBoss": 0,
+        "finalBoss": 0,
+        "legendaryBoss": 9,
+        "repair": 6,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 10,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 58,
+        "assets": 20,
+        "totalCanonical": 106
+      },
+      "modes": [
+        {
+          "mode": "timed",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "issues": []
+        }
+      ]
+    },
+    "oligopoly-collusion-cartels": {
+      "ok": true,
+      "counts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10,
+        "elite": 0,
+        "legendary": 12,
+        "easyBoss": 0,
+        "mediumBoss": 8,
+        "finalBoss": 0,
+        "legendaryBoss": 7,
+        "repair": 6,
+        "repairSeed": 0,
+        "bridge": 7,
+        "calculation": 3,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 32,
+        "assets": 6,
+        "totalCanonical": 70
+      },
+      "modes": [
+        {
+          "mode": "timed",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "issues": []
+        }
+      ]
+    },
+    "oligopoly-welfare-policy": {
+      "ok": true,
+      "counts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10,
+        "elite": 8,
+        "legendary": 16,
+        "easyBoss": 0,
+        "mediumBoss": 0,
+        "finalBoss": 8,
+        "legendaryBoss": 4,
+        "repair": 6,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 4,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 0,
+        "assets": 0,
+        "totalCanonical": 78
+      },
+      "modes": [
+        {
+          "mode": "timed",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "issues": []
+        }
+      ]
+    }
+  },
+  "paired": {
+    "oligopoly-dynamic-strategy+oligopoly-game-theory-foundations": {
+      "ok": true,
+      "counts": {
+        "easy": 15,
+        "medium": 15,
+        "hard": 31,
+        "elite": 22,
+        "legendary": 40,
+        "easyBoss": 15,
+        "mediumBoss": 7,
+        "finalBoss": 8,
+        "legendaryBoss": 20,
+        "repair": 9,
+        "repairSeed": 0,
+        "bridge": 9,
+        "calculation": 14,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 80,
+        "assets": 26,
+        "totalCanonical": 191
+      },
+      "modes": [
+        {
+          "mode": "timed",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "issues": []
+        }
+      ]
+    },
+    "oligopoly-rivalry-coordination+oligopoly-structure-concentration": {
+      "ok": true,
+      "counts": {
+        "easy": 15,
+        "medium": 16,
+        "hard": 22,
+        "elite": 0,
+        "legendary": 22,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 2,
+        "legendaryBoss": 5,
+        "repair": 9,
+        "repairSeed": 0,
+        "bridge": 9,
+        "calculation": 9,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 11,
+        "assets": 10,
+        "totalCanonical": 106
+      },
+      "modes": [
+        {
+          "mode": "timed",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "mode": "exam",
+          "ok": true,
+          "issues": []
+        }
+      ]
+    }
+  },
+  "parentChildConflictRejected": true,
+  "regression": {
+    "consumer-and-producer-surplus": {
+      "parent": 442,
+      "children": 442,
+      "overlap": 0,
+      "ok": true
+    },
+    "costs-of-production": {
+      "parent": 608,
+      "children": 608,
+      "overlap": 0,
+      "ok": true
+    },
+    "elasticity": {
+      "parent": 495,
+      "children": 495,
+      "overlap": 0,
+      "ok": true
+    },
+    "international-trade-and-trade-policy": {
+      "parent": 487,
+      "children": 487,
+      "overlap": 0,
+      "ok": true
+    },
+    "monopolistic-competition": {
+      "parent": 459,
+      "children": 459,
+      "overlap": 0,
+      "ok": true
+    },
+    "monopoly": {
+      "parent": 524,
+      "children": 524,
+      "overlap": 0,
+      "ok": true
+    },
+    "oligopoly": {
+      "parent": 445,
+      "children": 445,
+      "overlap": 0,
+      "ok": true
+    },
+    "perfect-competition": {
+      "parent": 565,
+      "children": 565,
+      "overlap": 0,
+      "ok": true
+    }
+  },
+  "legacyRecipes": {
+    "passed": 8,
+    "total": 8,
+    "details": [
+      {
+        "file": "exam-only-minimal.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "legendary-only.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "market-foundations.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "mixed-custom-course.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "money-and-stabilization.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "national-economy.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "standard-and-score.json",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "file": "timed-and-exam.json",
+        "ok": true,
+        "errors": []
+      }
+    ]
+  },
+  "issues": []
+}

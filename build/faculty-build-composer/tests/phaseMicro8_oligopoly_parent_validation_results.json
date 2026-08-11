@@ -1,0 +1,274 @@
+{
+  "ok": true,
+  "conceptId": "oligopoly",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
+  "composerVersion": "4.5o.0",
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "easy": 50,
+    "medium": 51,
+    "hard": 73,
+    "elite": 30,
+    "legendary": 90,
+    "easyBoss": 18,
+    "mediumBoss": 18,
+    "finalBoss": 18,
+    "legendaryBoss": 36,
+    "repair": 30,
+    "repairSeed": 0,
+    "bridge": 31,
+    "calculation": 30,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 123,
+    "assets": 42,
+    "totalCanonical": 445
+  },
+  "countIssues": [],
+  "modes": [
+    {
+      "mode": "standard",
+      "label": "Standard Campaign",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 50
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 51
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 73
+        },
+        {
+          "pool": "easyBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "mediumBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "finalBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 30
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 31
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "label": "Timed Trial",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 50
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 51
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 73
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 30
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 31
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "label": "Exam Drill",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 50
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 51
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 73
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 30
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 31
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "label": "Legendary Mode",
+      "requirements": [
+        {
+          "pool": "legendary",
+          "minimum": 6,
+          "count": 90
+        },
+        {
+          "pool": "legendaryBoss",
+          "minimum": 3,
+          "count": 36
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "label": "Score Attack",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 50
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 51
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 73
+        },
+        {
+          "pool": "easyBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "mediumBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "finalBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 30
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 31
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    }
+  ],
+  "answerAudit": {
+    "ok": true,
+    "questionCount": 445,
+    "issues": []
+  },
+  "assetAudit": {
+    "assetCount": 42,
+    "issues": []
+  },
+  "sampleHtml": {
+    "path": "tests/oligopoly-45o-sample.html",
+    "bytes": 2057522
+  },
+  "bossCoverage": {
+    "checkpointOne": {
+      "label": "Checkpoint One",
+      "pool": "easyBoss",
+      "difficulty": "easy",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "oligopoly"
+      ],
+      "activeConceptIds": [
+        "oligopoly"
+      ],
+      "questionCount": 18
+    },
+    "checkpointTwo": {
+      "label": "Checkpoint Two",
+      "pool": "mediumBoss",
+      "difficulty": "medium",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "oligopoly"
+      ],
+      "activeConceptIds": [
+        "oligopoly"
+      ],
+      "questionCount": 18
+    },
+    "finalCheckpoint": {
+      "label": "Final Checkpoint",
+      "pool": "finalBoss",
+      "difficulty": "hard",
+      "automatic": true,
+      "eligibleConceptIds": [
+        "oligopoly"
+      ],
+      "activeConceptIds": [
+        "oligopoly"
+      ],
+      "questionCount": 18
+    }
+  }
+}

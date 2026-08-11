@@ -1,0 +1,3840 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
+  "description": "Targeted Oligopoly adaptive-depth and adaptive-support backfill after six-way granularity audit. No new advanced repeated-game PV calculations, backward-induction trees, Elite, Legendary, checkpoint, calculation, or graph items.",
+  "questionCount": 75,
+  "poolCounts": {
+    "easy": 20,
+    "medium": 21,
+    "repair": 10,
+    "bridge": 11,
+    "hard": 13
+  },
+  "questions": [
+    {
+      "id": "PM8-OLI-E-001",
+      "q": "Why does an oligopoly firm pay unusually close attention to a rival’s likely response before changing price?",
+      "options": [
+        "Because a few large rivals can materially change the payoff from the firm’s decision",
+        "Because oligopoly firms are required to match every rival price change in order to remain in the market",
+        "Because oligopoly firms sell only identical products",
+        "Because market demand is perfectly elastic for each firm"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "strategic_interdependence",
+      "secondarySkills": [],
+      "repairSkill": "strategic_interdependence",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "With only a few important firms, one firm’s action can provoke responses that change its own payoff.",
+      "aHash": "cd7c4c1f1a635fff6e86e71423b6243f746cb5e513c4e3f85952a4d4070e506c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-E-001",
+      "sourceId": 9980001,
+      "sourceHash": "f4005121d7ad3872749ed5af818df6494569b65c58c9afafdb8a0cad43b17883",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "strategic_interdependence",
+          "sourceRecordOrder": 0,
+          "sourceId": 9980001,
+          "sourceHash": "f4005121d7ad3872749ed5af818df6494569b65c58c9afafdb8a0cad43b17883"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-002",
+      "q": "Which condition most helps a few established firms remain dominant in an oligopoly?",
+      "options": [
+        "Perfectly free entry by many small firms",
+        "A requirement that every product be identical",
+        "A horizontal demand curve for each individual firm",
+        "Significant barriers that make entry difficult"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "barriers_to_entry_oligopoly",
+      "secondarySkills": [],
+      "repairSkill": "barriers_to_entry_oligopoly",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Entry barriers help preserve a market in which a small number of firms account for much of total sales.",
+      "aHash": "dac6f049dd145c740922257c53c73baf8a0630ea4cf14255037df79c104e9617",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-E-002",
+      "sourceId": 9980002,
+      "sourceHash": "b5f24925a71a080d5c72f0e33b1710b5ded431639f90e0ab04fa162d868bcf83",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "barriers_to_entry_oligopoly",
+          "sourceRecordOrder": 1,
+          "sourceId": 9980002,
+          "sourceHash": "b5f24925a71a080d5c72f0e33b1710b5ded431639f90e0ab04fa162d868bcf83"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-003",
+      "q": "A four-firm concentration ratio of 82% means that:",
+      "options": [
+        "The HHI must equal 8200",
+        "Eighty-two firms control the market",
+        "The four largest firms together account for 82% of market sales",
+        "Each of the four largest firms individually controls 82% of total market sales"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "concentration_ratio",
+      "secondarySkills": [],
+      "repairSkill": "concentration_ratio",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A concentration ratio adds the market shares of the specified number of largest firms.",
+      "aHash": "c1ebe04a5e01ba1af39a09498c5a0b169e37ab3206f18a1ccc546f1bb8b39288",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-E-003",
+      "sourceId": 9980003,
+      "sourceHash": "55ce502f943904208cc22d9ee3d32ee7c5fe4884093bbd8470fa4570a9e7359c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "concentration_ratio",
+          "sourceRecordOrder": 2,
+          "sourceId": 9980003,
+          "sourceHash": "55ce502f943904208cc22d9ee3d32ee7c5fe4884093bbd8470fa4570a9e7359c"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-004",
+      "q": "A grocery chain has only 8% of national grocery sales but 55% of sales in one isolated county. What does this example show about concentration measures?",
+      "options": [
+        "They measure profit rather than market share",
+        "They depend on how the relevant market is defined",
+        "They are valid only for national markets",
+        "They ignore geographic differences and therefore always produce the same concentration result nationwide"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "market_definition",
+      "secondarySkills": [],
+      "repairSkill": "market_definition",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The same firm can appear small or dominant depending on the economically relevant geographic and product market.",
+      "aHash": "5f94def1f0437a8d4021f9f18eb853d54984270bd6925eec822a07a0347b3c59",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-M-004",
+      "sourceId": 9980004,
+      "sourceHash": "d8437f47ac0b91f143d3a50bb586d0f80cc5fe37b338886ce0b2cf23e084202c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "market_definition",
+          "sourceRecordOrder": 3,
+          "sourceId": 9980004,
+          "sourceHash": "d8437f47ac0b91f143d3a50bb586d0f80cc5fe37b338886ce0b2cf23e084202c"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-005",
+      "q": "Two markets each have a four-firm concentration ratio of 80%. In Market A the four firms have nearly equal shares; in Market B one firm is much larger than the other three. Which statement is most accurate?",
+      "options": [
+        "Market B can have a higher HHI because HHI gives more weight to large shares",
+        "Both markets must have the same HHI because an equal CR4 guarantees identical concentration among the leading firms",
+        "Market A must have the higher HHI because equal shares are squared",
+        "HHI cannot distinguish markets with the same CR4"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "hhi",
+      "secondarySkills": [],
+      "repairSkill": "hhi",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Squaring market shares makes HHI more sensitive to a very large firm even when CR4 is unchanged.",
+      "aHash": "e5283a7d656d9243869ce64f594992ad26301d74f2ba76a88de75a6527eac44e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-M-005",
+      "sourceId": 9980005,
+      "sourceHash": "1632a06e573937a0abede518fa6ecf5bdd494245dd6d8b141381d510c86ada89",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "hhi",
+          "sourceRecordOrder": 4,
+          "sourceId": 9980005,
+          "sourceHash": "1632a06e573937a0abede518fa6ecf5bdd494245dd6d8b141381d510c86ada89"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-006",
+      "q": "Three national wireless carriers dominate a market. Before one carrier cuts price, its managers estimate how the other two are likely to respond. Which feature of oligopoly is being illustrated?",
+      "options": [
+        "Perfect information with no rivalry",
+        "Automatic collusion",
+        "Zero barriers to entry",
+        "Strategic interdependence"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "strategic_interdependence",
+      "secondarySkills": [],
+      "repairSkill": "strategic_interdependence",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The payoff from one firm’s choice depends partly on how a small number of major rivals react.",
+      "aHash": "7aa88fcd7f81e24cc05d007b00e281060a071383a66fab7fad9f92cd27d5b127",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-M-006",
+      "sourceId": 9980006,
+      "sourceHash": "8b73280ee077ed4ab136a6a703b097cf590e47696b1520ae5b47ebe6f438dbdc",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "strategic_interdependence",
+          "sourceRecordOrder": 5,
+          "sourceId": 9980006,
+          "sourceHash": "8b73280ee077ed4ab136a6a703b097cf590e47696b1520ae5b47ebe6f438dbdc"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-007",
+      "q": "An industry’s HHI rises after two sizable firms merge. What can the HHI increase tell an analyst directly?",
+      "options": [
+        "The merger is automatically unlawful",
+        "The merged firm must now be a monopolist because any increase in HHI implies complete control of the market",
+        "Market concentration increased under the chosen market definition",
+        "Consumer welfare necessarily fell"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "market_concentration",
+      "secondarySkills": [],
+      "repairSkill": "market_concentration",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "HHI measures concentration; welfare and policy conclusions require additional evidence about competition and efficiencies.",
+      "aHash": "2a24c72a33ab9ba758a64ae06bcfaea8ec3663fa0301923d391ae97f6a9e0f37",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-M-007",
+      "sourceId": 9980007,
+      "sourceHash": "e8d1542bcca207fb441b291a4e15a086d6ac791fb99e6ba86be876c8e536b2b9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "market_concentration",
+          "sourceRecordOrder": 6,
+          "sourceId": 9980007,
+          "sourceHash": "e8d1542bcca207fb441b291a4e15a086d6ac791fb99e6ba86be876c8e536b2b9"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-008",
+      "q": "A student says a four-firm concentration ratio squares each firm’s market share. What is the correction?",
+      "options": [
+        "The four-firm ratio averages all firms’ squared shares",
+        "The four-firm ratio simply adds the shares of the four largest firms",
+        "The four-firm ratio multiplies the market shares of the four largest firms and then converts the product to a percentage",
+        "The four-firm ratio subtracts fringe shares from 100"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.1",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "concentration_ratio",
+      "secondarySkills": [],
+      "repairSkill": "concentration_ratio",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Squaring shares is part of HHI, not the four-firm concentration ratio.",
+      "aHash": "9b3aa9cf15d2fb5526653364399bd6a0b38cfde7571de20bbc0fd25831cb7c0b",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-R-008",
+      "sourceId": 9980008,
+      "sourceHash": "51a6bf651a1396e57df62bbc48f76f99ac2dca855201290ec8230ca49b9e5511",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "concentration_ratio",
+          "sourceRecordOrder": 7,
+          "sourceId": 9980008,
+          "sourceHash": "51a6bf651a1396e57df62bbc48f76f99ac2dca855201290ec8230ca49b9e5511"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-009",
+      "q": "A student describes oligopoly as “a market where each firm can safely ignore rivals.” What is the key error?",
+      "options": [
+        "Oligopoly decisions are strategically interdependent because major rivals can respond",
+        "Oligopoly always has exactly two firms, so any market with three or more important firms belongs to another structure",
+        "Oligopoly requires identical products",
+        "Oligopoly firms are all price takers"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.1",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "strategic_interdependence",
+      "secondarySkills": [],
+      "repairSkill": "strategic_interdependence",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The defining strategic feature is that a few important firms must account for likely rival reactions.",
+      "aHash": "6d313b41f5064ade32fbdf107a4536b37cfdf4a64761bcd4f85f91471771b8ec",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-R-009",
+      "sourceId": 9980009,
+      "sourceHash": "57694388c01b5da4a047ac75e7c2453daac2a9816062c97659982e9f2d75b758",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "strategic_interdependence",
+          "sourceRecordOrder": 8,
+          "sourceId": 9980009,
+          "sourceHash": "57694388c01b5da4a047ac75e7c2453daac2a9816062c97659982e9f2d75b758"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-010",
+      "q": "A student can distinguish monopoly from perfect competition but is unsure where a market with four dominant firms belongs. What is the best bridge idea?",
+      "options": [
+        "Assume four dominant firms automatically mean monopolistic competition because any market with multiple sellers and differentiated products fits that model",
+        "Classify the market only by whether products are identical",
+        "Treat every concentrated market as a legal monopoly",
+        "Focus on few-firm strategic interdependence rather than requiring one firm or many tiny price takers"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.1",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "market_classification",
+      "secondarySkills": [],
+      "repairSkill": "market_classification",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Oligopoly sits between monopoly and atomistic competition because a few large firms interact strategically.",
+      "aHash": "8729ca65d17a5492f6df762ba50fae06be48f7ebfcaa968a3423386b4f6771f1",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-BR-010",
+      "sourceId": 9980010,
+      "sourceHash": "37207b71264775b2c8926dd3e38dcd4110721058d1a04498974202f947804a24",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "market_classification",
+          "sourceRecordOrder": 9,
+          "sourceId": 9980010,
+          "sourceHash": "37207b71264775b2c8926dd3e38dcd4110721058d1a04498974202f947804a24"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-011",
+      "q": "A student already understands market shares. What extra step turns those shares into an HHI?",
+      "options": [
+        "Average the two largest shares",
+        "Multiply each firm's market share by the market price and add the resulting dollar values across firms",
+        "Square each firm’s percentage share and add the squared shares",
+        "Add only the four largest shares"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.1",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "hhi",
+      "secondarySkills": [],
+      "repairSkill": "hhi",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "HHI builds on market shares by squaring each percentage share and summing across firms.",
+      "aHash": "e268c77c256884330f4b15a573a1251863b8b703f377dc131f18dfad2375b4c6",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "canonicalId": "PM8-OLI-BR-011",
+      "sourceId": 9980011,
+      "sourceHash": "d335116faf7d94c2b8a9ee978ac410d7472795ccc889ce6eb18dc357b682fa9f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "hhi",
+          "sourceRecordOrder": 10,
+          "sourceId": 9980011,
+          "sourceHash": "d335116faf7d94c2b8a9ee978ac410d7472795ccc889ce6eb18dc357b682fa9f"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-012",
+      "q": "In a two-firm game, what does a payoff represent?",
+      "options": [
+        "The slope of the industry demand curve",
+        "The outcome value a player receives from a particular combination of strategies",
+        "The maximum number of firms that regulators permit to enter the market under the industry’s legal rules",
+        "The market concentration ratio"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "game_players_strategies_payoffs",
+      "secondarySkills": [],
+      "repairSkill": "game_players_strategies_payoffs",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A payoff records how well a player does under a particular combination of actions.",
+      "aHash": "0c5cfb250a0a772242613a3004b459339a99cc1a1abe62e05fea0b235161e18e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-E-012",
+      "sourceId": 9980012,
+      "sourceHash": "c5df905f14f9c001c96d1a6e6300016e10e7e02e82eee2ad7e4f57b01b38cf5c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "game_players_strategies_payoffs",
+          "sourceRecordOrder": 11,
+          "sourceId": 9980012,
+          "sourceHash": "c5df905f14f9c001c96d1a6e6300016e10e7e02e82eee2ad7e4f57b01b38cf5c"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-013",
+      "q": "A payoff cell is written (14, 9), with Row’s payoff listed first. What is Column’s payoff?",
+      "options": [
+        "9",
+        "14",
+        "23",
+        "5"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "payoff_matrix_reading",
+      "secondarySkills": [],
+      "repairSkill": "payoff_matrix_reading",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "With payoff order (Row, Column), the second number belongs to Column.",
+      "aHash": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-E-013",
+      "sourceId": 9980013,
+      "sourceHash": "2a6f32691c3e9f6f0f70151758526a11882fcdbda050ced22aed5222e7172036",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "payoff_matrix_reading",
+          "sourceRecordOrder": 12,
+          "sourceId": 9980013,
+          "sourceHash": "2a6f32691c3e9f6f0f70151758526a11882fcdbda050ced22aed5222e7172036"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-014",
+      "q": "A best response is the action that:",
+      "options": [
+        "Maximizes the two firms’ combined payoff regardless of incentives",
+        "Is chosen by every rival in the market",
+        "Always remains best no matter what the rival does",
+        "Gives a player the highest payoff given the rival’s chosen action"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "best_response",
+      "secondarySkills": [],
+      "repairSkill": "best_response",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A best response is conditional on what the other player does; it need not be a dominant strategy.",
+      "aHash": "55bbad337826cdf8ded252cabc40b12eb16be0b02241fc6970291cc299c357c9",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-E-014",
+      "sourceId": 9980014,
+      "sourceHash": "1b44e307a2d5dfc39254f1d9cff1298cdaeee893c1f48b231bc69471a56ca4be",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "best_response",
+          "sourceRecordOrder": 13,
+          "sourceId": 9980014,
+          "sourceHash": "1b44e307a2d5dfc39254f1d9cff1298cdaeee893c1f48b231bc69471a56ca4be"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-015",
+      "q": "Which statement describes a Nash equilibrium?",
+      "options": [
+        "Both players must have dominant strategies",
+        "No player earns positive profit",
+        "Each player is choosing a best response to the other player’s action",
+        "The two players necessarily choose the outcome that maximizes their combined payoff even if one could gain by deviating alone"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "At a Nash equilibrium, neither player can improve by changing action alone while the other action stays fixed.",
+      "aHash": "6873361359aa450f6468bc19b038bb3e54c3380ae0afee6c089302dc05a3ff6f",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-E-015",
+      "sourceId": 9980015,
+      "sourceHash": "09243d9c84c6e1367befd26e8549c758266a2e68c75380847e9b0386bb6869b9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "nash_equilibrium",
+          "sourceRecordOrder": 14,
+          "sourceId": 9980015,
+          "sourceHash": "09243d9c84c6e1367befd26e8549c758266a2e68c75380847e9b0386bb6869b9"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-016",
+      "q": "Suppose Firm B chooses a high price. Firm A earns $8 million with a high price and $11 million with a low price. What is Firm A’s best response to B’s high price?",
+      "options": [
+        "Choose whichever action maximizes joint industry profit",
+        "Choose the low price",
+        "Choose the high price",
+        "Randomize because the payoffs differ"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "best_response",
+      "secondarySkills": [],
+      "repairSkill": "best_response",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Conditional on B choosing high, A compares its own payoffs and chooses the action paying 11 rather than 8.",
+      "aHash": "1fb98a66ceadedd259618a520968cc1c18c6d85094ccb4c893e8fe6af4e74974",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-016",
+      "sourceId": 9980016,
+      "sourceHash": "dcb961e84bc1815abcb8b249cf7331b8b6780ec5747b925fd65b6c3769ef0b8a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "best_response",
+          "sourceRecordOrder": 15,
+          "sourceId": 9980016,
+          "sourceHash": "dcb961e84bc1815abcb8b249cf7331b8b6780ec5747b925fd65b6c3769ef0b8a"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-017",
+      "q": "Firm A earns more from advertising whether Firm B advertises or not. What follows?",
+      "options": [
+        "Advertising is a dominant strategy for Firm A",
+        "Advertising must maximize the two firms’ combined profit whenever it is more profitable for Firm A than not advertising",
+        "The game has no Nash equilibrium",
+        "Firm B must also advertise"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "dominant_strategy",
+      "secondarySkills": [],
+      "repairSkill": "dominant_strategy",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A dominant strategy gives the player a higher payoff for every action the rival might take.",
+      "aHash": "4cf8d4b9a5f8c9b7cbe86c74d65ba83c8471319c909278370b5083d42eec339b",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-017",
+      "sourceId": 9980017,
+      "sourceHash": "72fa116c61a07be8863c9624fd33767d0acd07dc62deb3d90c5d27a8847d0d30",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "dominant_strategy",
+          "sourceRecordOrder": 16,
+          "sourceId": 9980017,
+          "sourceHash": "72fa116c61a07be8863c9624fd33767d0acd07dc62deb3d90c5d27a8847d0d30"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-018",
+      "q": "A strategy is Firm A’s best response when B chooses X, but A prefers a different strategy when B chooses Y. What can be concluded?",
+      "options": [
+        "The first strategy is dominant because it is best once",
+        "A has no best responses",
+        "The joint-payoff maximum must be a Nash equilibrium",
+        "The first strategy is not dominant for A"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "dominant_strategy",
+      "secondarySkills": [],
+      "repairSkill": "dominant_strategy",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Dominance requires the same strategy to be best against every rival action.",
+      "aHash": "36aedbcf5278f6c12f598ee9e8c64164fa7fa4e610c7d7fa78b20558cb424704",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-018",
+      "sourceId": 9980018,
+      "sourceHash": "00eb3422e86b7de383e5cc27dd822248bbbab7bc993ece2412d7d4009b4339a9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "dominant_strategy",
+          "sourceRecordOrder": 17,
+          "sourceId": 9980018,
+          "sourceHash": "00eb3422e86b7de383e5cc27dd822248bbbab7bc993ece2412d7d4009b4339a9"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-019",
+      "q": "At a proposed outcome, Firm A could gain by changing its action while Firm B kept its action fixed. What does that imply?",
+      "options": [
+        "Firm A has a dominant strategy",
+        "The game has no strategic interdependence",
+        "The proposed outcome is not a Nash equilibrium",
+        "The proposed outcome must maximize joint profit"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A unilateral profitable deviation means at least one player is not best responding, so the cell is not Nash.",
+      "aHash": "e16c9cf838bda59fc98a6e2e472fc2c791ec6d2606aaea4752fd05e18ee87b56",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-019",
+      "sourceId": 9980019,
+      "sourceHash": "57e553ccd843c1fbbfef1f16fe28c75a0174d2d2ce118e5b824a508978c5f8b4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "nash_equilibrium",
+          "sourceRecordOrder": 18,
+          "sourceId": 9980019,
+          "sourceHash": "57e553ccd843c1fbbfef1f16fe28c75a0174d2d2ce118e5b824a508978c5f8b4"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-020",
+      "q": "Two firms could earn $20 million each by coordinating, but the Nash equilibrium gives each $14 million. What does this illustrate?",
+      "options": [
+        "Dominant strategies always produce the joint-payoff maximum",
+        "A Nash equilibrium need not maximize combined payoff",
+        "Every Nash equilibrium is efficient",
+        "Coordination eliminates strategic incentives"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cooperative_outcome",
+      "secondarySkills": [],
+      "repairSkill": "cooperative_outcome",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Mutual best responses can lead to a stable outcome with lower total payoff than a cooperative alternative.",
+      "aHash": "4b610ddad87257bbd06fb4cc11d9c7d6973d0ebbae629eea2c682a2c32fc5603",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-020",
+      "sourceId": 9980020,
+      "sourceHash": "ea184fd9819096ace609eb4b5b9d8d19b4c9f51fdb1c2a0695442249af1b8096",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "cooperative_outcome",
+          "sourceRecordOrder": 19,
+          "sourceId": 9980020,
+          "sourceHash": "ea184fd9819096ace609eb4b5b9d8d19b4c9f51fdb1c2a0695442249af1b8096"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-021",
+      "q": "In payoff order (Row, Column), the cell for Row choosing A and Column choosing Y is (6, 15). Which comparison is relevant when finding Row’s best response to Y?",
+      "options": [
+        "Compare Row’s first-number payoffs across Row’s available actions in column Y",
+        "Compare Column’s second-number payoffs across every column, regardless of which action Column has already chosen",
+        "Add both payoffs in every cell and choose the largest sum",
+        "Compare only the diagonal cells"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "payoff_matrix_reading",
+      "secondarySkills": [],
+      "repairSkill": "payoff_matrix_reading",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A best-response calculation holds the rival action fixed and compares the player’s own payoff across its alternatives.",
+      "aHash": "8e81fdedeb3124f28e37eb209266dc74300e335a7da622fdd15c643965e5f957",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-021",
+      "sourceId": 9980021,
+      "sourceHash": "14b6c476b1200c30b1eea817ee69354a1ffec3e644a160097ac1d03360d5dbe9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "payoff_matrix_reading",
+          "sourceRecordOrder": 20,
+          "sourceId": 9980021,
+          "sourceHash": "14b6c476b1200c30b1eea817ee69354a1ffec3e644a160097ac1d03360d5dbe9"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-022",
+      "q": "Why can firms end up at an outcome they both consider worse than another available outcome?",
+      "options": [
+        "Firms are required to choose the outcome with the lowest combined payoff whenever their interests conflict",
+        "A Nash equilibrium always minimizes profit",
+        "Payoff matrices ignore strategic behavior",
+        "Individual incentives to deviate can make the better joint outcome unstable"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "noncooperative_outcome",
+      "secondarySkills": [],
+      "repairSkill": "noncooperative_outcome",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A jointly attractive cell need not survive if one player can gain by deviating while the rival cooperates.",
+      "aHash": "14cffb614297c3611aaafe88605c4bac9cc6225956db4c9bee3dcb47a54a3e00",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-M-022",
+      "sourceId": 9980022,
+      "sourceHash": "b1fccc405befa5cc4293e4dd5e62587b2e8b634bfb602d5c78471f00a83b262d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "noncooperative_outcome",
+          "sourceRecordOrder": 21,
+          "sourceId": 9980022,
+          "sourceHash": "b1fccc405befa5cc4293e4dd5e62587b2e8b634bfb602d5c78471f00a83b262d"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-023",
+      "q": "Before trying to find a Nash equilibrium in a payoff matrix, what should a student verify first?",
+      "options": [
+        "Whether the market’s concentration measure is high enough to imply that strategic behavior must be present",
+        "Whether both players earn equal payoffs",
+        "Which payoff belongs to each player and which actions define the rows and columns",
+        "Which cell has the highest combined payoff"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "payoff_matrix_reading",
+      "secondarySkills": [],
+      "repairSkill": "payoff_matrix_reading",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium.",
+      "aHash": "9d211c52dfb6c91f13a8c0fa24650b22ec736f10e3dc0be9cfa2d5edc70d4e1b",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-BR-023",
+      "sourceId": 9980023,
+      "sourceHash": "9a94f72f9b7ed5d48b45a1d36c64e5d45093e2e6a372cfc323bea9cc04cd0ffe",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "payoff_matrix_reading",
+          "sourceRecordOrder": 22,
+          "sourceId": 9980023,
+          "sourceHash": "9a94f72f9b7ed5d48b45a1d36c64e5d45093e2e6a372cfc323bea9cc04cd0ffe"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-024",
+      "q": "A student keeps searching for one action that is always best, but the player’s preferred action changes with the rival’s move. What concept should the student use?",
+      "options": [
+        "A guaranteed dominant strategy",
+        "Conditional best responses",
+        "Market concentration",
+        "Joint-profit maximization only"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "best_response",
+      "secondarySkills": [],
+      "repairSkill": "best_response",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Best responses can vary with the rival’s action even when no dominant strategy exists.",
+      "aHash": "4c07787c0bf57746e64d251da56ee10ae0a78e9d59a00c1a4505974658cdf184",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-BR-024",
+      "sourceId": 9980024,
+      "sourceHash": "88382797cf771bac0f90924d1b944949596dfe85a77f970032ee38cc218989bf",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "best_response",
+          "sourceRecordOrder": 23,
+          "sourceId": 9980024,
+          "sourceHash": "88382797cf771bac0f90924d1b944949596dfe85a77f970032ee38cc218989bf"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-025",
+      "q": "A student has correctly found a player’s best response in each column. How should the student check for a dominant strategy?",
+      "options": [
+        "See whether the same action is the best response in every column",
+        "Add the two players’ payoffs in each cell",
+        "Choose the action with the highest single payoff anywhere in the matrix",
+        "Look only at the rival’s payoffs"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "dominant_strategy",
+      "secondarySkills": [],
+      "repairSkill": "dominant_strategy",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A dominant strategy must remain the player’s best response to every rival action.",
+      "aHash": "239b6932ea1d8db7596cec269f961569d21d7ac91a73f46599fdc80c02658d03",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-BR-025",
+      "sourceId": 9980025,
+      "sourceHash": "d5f3edc5b372093b65f99b927b6d7dd55e802731ef05fe66fa44f29dc7e61928",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "dominant_strategy",
+          "sourceRecordOrder": 24,
+          "sourceId": 9980025,
+          "sourceHash": "d5f3edc5b372093b65f99b927b6d7dd55e802731ef05fe66fa44f29dc7e61928"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-026",
+      "q": "After marking each player’s best responses in a matrix, what identifies a pure-strategy Nash equilibrium?",
+      "options": [
+        "The cell with the largest total payoff even if someone wants to deviate",
+        "Any cell where the payoffs are equal",
+        "The first cell in which one player has a dominant strategy",
+        "A cell where both players’ best-response markings coincide"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Nash equilibrium requires mutual best responses in the same outcome cell.",
+      "aHash": "732a8fd7f43ab3e7e5216adf984b5637047cb42884f1544653a7872512a1a2c8",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-BR-026",
+      "sourceId": 9980026,
+      "sourceHash": "89683edb29df69fe9dee0b053db23886278184807267e633785af68599e94120",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "nash_equilibrium",
+          "sourceRecordOrder": 25,
+          "sourceId": 9980026,
+          "sourceHash": "89683edb29df69fe9dee0b053db23886278184807267e633785af68599e94120"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-027",
+      "q": "A student found the cell with the largest combined payoff and calls it the Nash equilibrium. What must still be checked?",
+      "options": [
+        "Whether the firms have equal market shares",
+        "Whether the cell lies on the main diagonal",
+        "Whether each player would choose to stay there given the other player’s action",
+        "Whether the two payoffs are both positive and add to more than the payoffs in every neighboring cell"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cooperative_outcome",
+      "secondarySkills": [],
+      "repairSkill": "cooperative_outcome",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Joint-payoff maximization and Nash stability are separate questions.",
+      "aHash": "c1e11cc7788fd6d3225871c3e86004c4024489db44929f981460217842437b54",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-BR-027",
+      "sourceId": 9980027,
+      "sourceHash": "1da44873b86ac2637ac2b4d979144068eb288e0a241e34ead2e069f5f45f646a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "cooperative_outcome",
+          "sourceRecordOrder": 26,
+          "sourceId": 9980027,
+          "sourceHash": "1da44873b86ac2637ac2b4d979144068eb288e0a241e34ead2e069f5f45f646a"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-028",
+      "q": "How does a noncooperative game differ from an assumed cartel solution?",
+      "options": [
+        "The government chooses each firm’s strategy",
+        "Each firm follows its own incentives rather than committing to maximize joint profit",
+        "The firms necessarily choose identical actions because noncooperative behavior rules out different strategies",
+        "The firms ignore rivals completely"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "noncooperative_outcome",
+      "secondarySkills": [],
+      "repairSkill": "noncooperative_outcome",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Noncooperative analysis asks what individually rational strategies imply without assuming binding joint-profit coordination.",
+      "aHash": "74bf531ac7105dc420111c6be900faf9fe7eb70ac5e7eafc0490b9c3dc311633",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "canonicalId": "PM8-OLI-BR-028",
+      "sourceId": 9980028,
+      "sourceHash": "998f2d4df3aa9cc6bde762a2a755b0a82abbde79f466366a234a89f9a9343786",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "noncooperative_outcome",
+          "sourceRecordOrder": 27,
+          "sourceId": 9980028,
+          "sourceHash": "998f2d4df3aa9cc6bde762a2a755b0a82abbde79f466366a234a89f9a9343786"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-029",
+      "q": "A cartel that successfully coordinates output tries to behave most like:",
+      "options": [
+        "A single profit-maximizing monopolist for the industry",
+        "A group of independent price-taking firms",
+        "A perfectly contestable market with free entry",
+        "A regulator that sets the market price equal to marginal cost and assigns output to each participating firm"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "joint_profit_maximization",
+      "secondarySkills": [],
+      "repairSkill": "joint_profit_maximization",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A successful cartel restricts joint output and chooses the industry outcome that maximizes combined profit.",
+      "aHash": "0b30afc6452edb60def63c70e1d4aa25d39616785164f8fbe2e7fdb05b139b37",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-E-029",
+      "sourceId": 9980029,
+      "sourceHash": "abd28e9237743b5076e7ade0bfe20fd453907d78a7490d333a6d2af730a0e940",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "joint_profit_maximization",
+          "sourceRecordOrder": 28,
+          "sourceId": 9980029,
+          "sourceHash": "abd28e9237743b5076e7ade0bfe20fd453907d78a7490d333a6d2af730a0e940"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-030",
+      "q": "Why can a cartel agreement be unstable even when all members gain from the agreement?",
+      "options": [
+        "Every member must legally charge a different price",
+        "Cartels require marginal cost to equal zero",
+        "Joint profit is always lower under collusion than under competition because restricting output reduces total sales",
+        "An individual member may gain by secretly expanding sales while others keep output restricted"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "incentive_to_cheat",
+      "secondarySkills": [],
+      "repairSkill": "incentive_to_cheat",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The group can prefer restriction while each member has a private incentive to capture extra sales.",
+      "aHash": "cb175d420b0ce2e4411f119cce7f6fcd8d82aea197f3d77a58f3fca63d264bca",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-E-030",
+      "sourceId": 9980030,
+      "sourceHash": "81f3d5515cfbe84f7f75f8aa8c4c5802ad8983db2cbfa663c0c809fe64a97f9a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "incentive_to_cheat",
+          "sourceRecordOrder": 29,
+          "sourceId": 9980030,
+          "sourceHash": "81f3d5515cfbe84f7f75f8aa8c4c5802ad8983db2cbfa663c0c809fe64a97f9a"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-031",
+      "q": "What does monitoring do for a cartel?",
+      "options": [
+        "It makes each firm a price taker",
+        "It eliminates the need to restrict output",
+        "It helps members detect whether other members are cheating on the agreement",
+        "It guarantees that barriers to entry disappear once all cartel members can observe one another’s sales"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "monitoring_enforcement",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_enforcement",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Monitoring makes hidden deviations easier to discover and therefore easier to punish.",
+      "aHash": "6daf6b837b16685b72a2eae412c3781dea3706e37ff6ded8892103caa9254522",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-E-031",
+      "sourceId": 9980031,
+      "sourceHash": "568aab5453f1e5118c42593b1755f03636fd8a6e8a6143ef563b0b4aed5a7b4a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monitoring_enforcement",
+          "sourceRecordOrder": 30,
+          "sourceId": 9980031,
+          "sourceHash": "568aab5453f1e5118c42593b1755f03636fd8a6e8a6143ef563b0b4aed5a7b4a"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-032",
+      "q": "In a one-shot prisoner’s-dilemma-style pricing game, why might both firms cut price even though both would prefer that neither cut?",
+      "options": [
+        "Both firms face perfectly inelastic demand",
+        "Each firm has an individual incentive to cut given the rival’s possible action",
+        "The firms are maximizing total industry profit because the individually attractive price cut also maximizes their joint payoff",
+        "Price cuts are legally required"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "prisoners_dilemma",
+      "secondarySkills": [],
+      "repairSkill": "prisoners_dilemma",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Individual incentives can push both firms toward a lower-payoff noncooperative outcome.",
+      "aHash": "c3c1c3ca6c2694f2edef1369717e371730f0fc26911475d77a67209bb0a65933",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-E-032",
+      "sourceId": 9980032,
+      "sourceHash": "06835ebfd5fa215ca7bfdc11e21bc91f1a122257a52c6da372063b4298766801",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "prisoners_dilemma",
+          "sourceRecordOrder": 31,
+          "sourceId": 9980032,
+          "sourceHash": "06835ebfd5fa215ca7bfdc11e21bc91f1a122257a52c6da372063b4298766801"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-033",
+      "q": "A cartel has already chosen its joint-profit-maximizing total output. Why might it assign more production to a member with lower marginal cost?",
+      "options": [
+        "Shifting output toward the lower-cost producer can reduce the cartel’s total production cost",
+        "Equal quotas always maximize joint profit",
+        "Higher-cost firms must produce more to preserve competition",
+        "Output allocation cannot affect cartel profit once total output is fixed, even when members have different marginal costs"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_output_allocation",
+      "secondarySkills": [],
+      "repairSkill": "cartel_output_allocation",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "For a fixed cartel total, allocating more production to lower-marginal-cost members can raise combined profit.",
+      "aHash": "234af15482b790ff1252c0fc120d9bb84409bc0e2253437f13b509136b0dec2d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-M-033",
+      "sourceId": 9980033,
+      "sourceHash": "6b8442d044751bf79ec547369a9d7b2bbe0e0f585f9c531f490f7eab9b92287b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "cartel_output_allocation",
+          "sourceRecordOrder": 32,
+          "sourceId": 9980033,
+          "sourceHash": "6b8442d044751bf79ec547369a9d7b2bbe0e0f585f9c531f490f7eab9b92287b"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-034",
+      "q": "Three firms agree to keep prices high. One firm quietly gives large rebates while publicly posting the agreed price. Economically, the rebates are best interpreted as:",
+      "options": [
+        "Proof that the cartel has eliminated all competition because no member can gain market share without openly cutting the posted price",
+        "A required form of price leadership",
+        "A concentration measure",
+        "Cheating that captures extra sales while rivals maintain the collusive price"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "incentive_to_cheat",
+      "secondarySkills": [],
+      "repairSkill": "incentive_to_cheat",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Secret rebates undermine the agreement by letting one member expand sales at the others’ expense.",
+      "aHash": "5c8c564eeaa508fcc4fbdaa01ed50ea56f3116fdbb475e5862b58ff97d1b7580",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-M-034",
+      "sourceId": 9980034,
+      "sourceHash": "98f8a34506c50cebfd97975dade15c05d4512277e32277da4dd48ae3466e9f9d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "incentive_to_cheat",
+          "sourceRecordOrder": 33,
+          "sourceId": 9980034,
+          "sourceHash": "98f8a34506c50cebfd97975dade15c05d4512277e32277da4dd48ae3466e9f9d"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-035",
+      "q": "Which market condition makes a cartel harder to sustain?",
+      "options": [
+        "A small number of firms with similar objectives",
+        "A credible punishment system that quickly detects and penalizes members who secretly exceed their agreed output",
+        "Many opportunities for members to make secret sales that rivals cannot observe",
+        "Frequent transparent reporting of member sales"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_instability",
+      "secondarySkills": [],
+      "repairSkill": "cartel_instability",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "When cheating is hard to observe, deviations are easier and enforcement becomes weaker.",
+      "aHash": "422c358b658f990bb3508d95eda1cdff15cc4926674bb86cbe67b15c9517ba00",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-M-035",
+      "sourceId": 9980035,
+      "sourceHash": "d69572a2be3faf03286ff2f292507c5398756f3438d502950e80a8deab92077e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "cartel_instability",
+          "sourceRecordOrder": 34,
+          "sourceId": 9980035,
+          "sourceHash": "d69572a2be3faf03286ff2f292507c5398756f3438d502950e80a8deab92077e"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-036",
+      "q": "A cartel restricts total output below the competitive level. What is the intended effect on the market price?",
+      "options": [
+        "Create a perfectly elastic industry demand curve so the cartel can sell any quantity at the higher price",
+        "Raise price by moving up the market demand curve",
+        "Force price down to marginal cost",
+        "Make price independent of demand"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "joint_profit_maximization",
+      "secondarySkills": [],
+      "repairSkill": "joint_profit_maximization",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Restricting industry output raises the price buyers are willing to pay along downward-sloping market demand.",
+      "aHash": "cf6453b0267b44ba41e315c2b30327a0fcc0386b6ff941c77dd18621b711b96c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-M-036",
+      "sourceId": 9980036,
+      "sourceHash": "389e3e17c9cc5d22c19113dcb4f5fc117fb08f3420e26b927f5867dc59656be6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "joint_profit_maximization",
+          "sourceRecordOrder": 35,
+          "sourceId": 9980036,
+          "sourceHash": "389e3e17c9cc5d22c19113dcb4f5fc117fb08f3420e26b927f5867dc59656be6"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-037",
+      "q": "Suppose cartel members can observe one another’s sales almost immediately. Why can this improve cartel stability?",
+      "options": [
+        "It makes cheating easier to detect and respond to",
+        "It removes each member’s incentive to earn profit",
+        "It guarantees the cartel price equals marginal cost",
+        "It causes market concentration to fall"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "monitoring_enforcement",
+      "secondarySkills": [],
+      "repairSkill": "monitoring_enforcement",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Fast observability reduces the chance that a member can profit from hidden deviations for long.",
+      "aHash": "91c01bb5e4722b583b70c3bd5bd0e44b0976c8ba9e596c761a76d00485fe09bf",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-M-037",
+      "sourceId": 9980037,
+      "sourceHash": "aaf9cddf1886f6b9d88ffc52888919ee3be2aea83314dd907304dc98f6647168",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "monitoring_enforcement",
+          "sourceRecordOrder": 36,
+          "sourceId": 9980037,
+          "sourceHash": "aaf9cddf1886f6b9d88ffc52888919ee3be2aea83314dd907304dc98f6647168"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-038",
+      "q": "A cartel’s members all prefer the collusive outcome to the competitive outcome, yet the agreement repeatedly breaks down. Which explanation is most consistent with oligopoly incentives?",
+      "options": [
+        "The cartel outcome cannot produce positive profit",
+        "Members have no information about market demand",
+        "A jointly preferred outcome is automatically a Nash equilibrium",
+        "Each firm can gain privately from expanding output if it expects rivals to keep restricting theirs"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_instability",
+      "secondarySkills": [],
+      "repairSkill": "cartel_instability",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Joint gains do not erase the unilateral incentive to cheat when other members are expected to cooperate.",
+      "aHash": "2345dea847ee6aac9ba8492931d47a96a37657ffe0ea7c9c332e4f20617ea7ce",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-H-038",
+      "sourceId": 9980038,
+      "sourceHash": "611a40d6d1c7b7b9a8882172c4a36b622e8a3cfb978a3f63d4a3245040890492",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "cartel_instability",
+          "sourceRecordOrder": 37,
+          "sourceId": 9980038,
+          "sourceHash": "611a40d6d1c7b7b9a8882172c4a36b622e8a3cfb978a3f63d4a3245040890492"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-039",
+      "q": "An effective cartel raises price from $30 to $42 and reduces quantity sold. Which statement best separates redistribution from efficiency loss?",
+      "options": [
+        "Higher cartel profit proves total surplus rose",
+        "Deadweight loss is the cartel’s entire increase in revenue",
+        "Some consumer surplus becomes producer gain, while trades no longer made create deadweight loss",
+        "Every dollar of lost consumer surplus is deadweight loss"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.3",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_welfare",
+      "secondarySkills": [],
+      "repairSkill": "cartel_welfare",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A higher price transfers some surplus, but the output restriction also destroys gains from mutually beneficial trades.",
+      "aHash": "45288c7c5d9c9ab2f4fd5d423e49b0d0d6a2a268bede548b404b2145c43aad2e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-H-039",
+      "sourceId": 9980039,
+      "sourceHash": "9eab5fe9684968bad1fa3c96ec9f13e8b15dc652850fbd4cff2aceadb0211d9d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "cartel_welfare",
+          "sourceRecordOrder": 38,
+          "sourceId": 9980039,
+          "sourceHash": "9eab5fe9684968bad1fa3c96ec9f13e8b15dc652850fbd4cff2aceadb0211d9d"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-040",
+      "q": "A student says “if both firms would be better off cooperating, they will automatically cooperate.” What is missing?",
+      "options": [
+        "Prisoner’s-dilemma incentives exist only in monopoly",
+        "Each firm’s unilateral incentive must also be checked; the cooperative outcome can be unstable",
+        "Joint payoff is irrelevant in oligopoly",
+        "Cooperation requires the firms to have identical costs"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "prisoners_dilemma",
+      "secondarySkills": [],
+      "repairSkill": "prisoners_dilemma",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A prisoner’s dilemma exists precisely because individual incentives can undermine a jointly better outcome.",
+      "aHash": "dbb8a52c053b6065b465d9e8f1c17012727573514b5a5e3064d37885bf6cc76d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-R-040",
+      "sourceId": 9980040,
+      "sourceHash": "cdd385f1cb007096893a5aa111f8e6645bd357dbc3d6a8efad0b9783ade7d7ab",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "prisoners_dilemma",
+          "sourceRecordOrder": 39,
+          "sourceId": 9980040,
+          "sourceHash": "cdd385f1cb007096893a5aa111f8e6645bd357dbc3d6a8efad0b9783ade7d7ab"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-041",
+      "q": "A student calls any concentrated industry a cartel. What is the correction?",
+      "options": [
+        "A cartel requires coordination among firms to restrict competition; concentration alone does not establish that",
+        "A cartel is simply any market with fewer than ten firms",
+        "A cartel exists whenever HHI is high",
+        "A cartel means one firm owns the entire market"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel",
+      "secondarySkills": [],
+      "repairSkill": "cartel",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Market structure and collusive conduct are different concepts; a concentrated market need not be a cartel.",
+      "aHash": "c4f339708b7e3c6a8d5428fb0fa2de1fc8dfd2d19ba21f95a50095aa30579196",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "canonicalId": "PM8-OLI-R-041",
+      "sourceId": 9980041,
+      "sourceHash": "12212b707dacb217674308dedd24fabbdd219e743fad8790aaa607c04c5c0de4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "cartel",
+          "sourceRecordOrder": 40,
+          "sourceId": 9980041,
+          "sourceHash": "12212b707dacb217674308dedd24fabbdd219e743fad8790aaa607c04c5c0de4"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-042",
+      "q": "Why can the expectation of future competition sometimes make cooperation easier to sustain?",
+      "options": [
+        "Future interaction makes current payoffs irrelevant",
+        "Repeated games eliminate every incentive to cheat",
+        "Firms become price takers when they meet repeatedly",
+        "A firm that cheats today may lose future cooperative gains"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.4",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "repeated_games",
+      "secondarySkills": [],
+      "repairSkill": "repeated_games",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "When future interaction matters, the short-run gain from cheating can be weighed against future losses after retaliation.",
+      "aHash": "ccec152b4c3b567fdd1129b206cb180ba0dea9da28f78365c95b8335b890282a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-dynamic-strategy"
+      ],
+      "canonicalId": "PM8-OLI-E-042",
+      "sourceId": 9980042,
+      "sourceHash": "6b53a28a0555f42d52e419341f1325fb77fe2a3564953d31a296ad873833a33f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "repeated_games",
+          "sourceRecordOrder": 41,
+          "sourceId": 9980042,
+          "sourceHash": "6b53a28a0555f42d52e419341f1325fb77fe2a3564953d31a296ad873833a33f"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-043",
+      "q": "What makes a strategic threat credible?",
+      "options": [
+        "The threat was announced publicly",
+        "The threat would be costly to both firms",
+        "Carrying it out would be in the threatening firm’s interest if the situation actually occurred",
+        "The threat sounds severe to the rival"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.5",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "credible_threat",
+      "secondarySkills": [],
+      "repairSkill": "credible_threat",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Credibility depends on whether the threatened response would actually be rational when the time comes to act.",
+      "aHash": "0237d011057248257b40968eb9ab059f0c46dc2284c07f6af10d9fcc40f9bdcf",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-dynamic-strategy"
+      ],
+      "canonicalId": "PM8-OLI-E-043",
+      "sourceId": 9980043,
+      "sourceHash": "f502b47f89182e9db0005dc7a2a8a8f4ebdb14e4948804f848307ae5e5905350",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "credible_threat",
+          "sourceRecordOrder": 42,
+          "sourceId": 9980043,
+          "sourceHash": "f502b47f89182e9db0005dc7a2a8a8f4ebdb14e4948804f848307ae5e5905350"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-044",
+      "q": "A student understands a one-shot prisoner’s dilemma. What new consideration enters when the firms expect to interact again?",
+      "options": [
+        "Market concentration falls with each round",
+        "Today’s action can change future responses and future payoffs",
+        "The payoff matrix no longer matters at all",
+        "Every cooperative promise becomes binding"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "repeated_games",
+      "secondarySkills": [],
+      "repairSkill": "repeated_games",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Repeated interaction links current choices to future rewards or punishments, which can alter incentives.",
+      "aHash": "ed32b11c2eca90c523c3cc660d0f2bc3bfa3f0c7b4182ba6481d660e1fe7d47f",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-dynamic-strategy"
+      ],
+      "canonicalId": "PM8-OLI-BR-044",
+      "sourceId": 9980044,
+      "sourceHash": "d9c6419cdc2ca69df0da564d2d0f08c1d56c28e7c0bafe53f369b55933d2c581",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "repeated_games",
+          "sourceRecordOrder": 43,
+          "sourceId": 9980044,
+          "sourceHash": "d9c6419cdc2ca69df0da564d2d0f08c1d56c28e7c0bafe53f369b55933d2c581"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-045",
+      "q": "A student knows that talk alone may not deter entry. What can make an incumbent’s announced response more believable?",
+      "options": [
+        "A costly action taken in advance that changes the incumbent’s future incentives",
+        "A vague promise that entry will be punished somehow",
+        "A larger concentration ratio by itself",
+        "A public statement with no change in capacity or costs"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "credible_commitment",
+      "secondarySkills": [],
+      "repairSkill": "credible_commitment",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A commitment can make future behavior credible by changing what the incumbent will find profitable after entry.",
+      "aHash": "75e9a8a7709b2d68708dc357955b9bfb70ae51972814f7e43bc2b9197276bca7",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-dynamic-strategy"
+      ],
+      "canonicalId": "PM8-OLI-BR-045",
+      "sourceId": 9980045,
+      "sourceHash": "7eff520df3f34c7517d3e89382818bbcafe0450823f59ccda0d30a352252a29c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "credible_commitment",
+          "sourceRecordOrder": 44,
+          "sourceId": 9980045,
+          "sourceHash": "7eff520df3f34c7517d3e89382818bbcafe0450823f59ccda0d30a352252a29c"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-046",
+      "q": "Several airlines raise fares within hours of the same publicly observed jet-fuel cost increase. Which conclusion is strongest?",
+      "options": [
+        "The matching fare increases prove an illegal agreement",
+        "The airlines must be following a dominant strategy in a payoff matrix",
+        "The market cannot be oligopolistic because prices moved together",
+        "Parallel pricing alone does not establish collusion because a common cost shock can produce similar independent responses"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.4",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "tacit_coordination",
+      "secondarySkills": [],
+      "repairSkill": "tacit_coordination",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Similar prices can arise from common incentives or observation of rivals; parallel behavior by itself is not proof of an agreement.",
+      "aHash": "c84481cccf429a2079c44cf15d7a1fbe790666649009b6932f7274be8a551ec6",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-H-046",
+      "sourceId": 9980046,
+      "sourceHash": "bc1b79d3a17c104974631f73d4936eef3e52d65795e731e4183479e2071f9d55",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "tacit_coordination",
+          "sourceRecordOrder": 45,
+          "sourceId": 9980046,
+          "sourceHash": "bc1b79d3a17c104974631f73d4936eef3e52d65795e731e4183479e2071f9d55"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-047",
+      "q": "A dominant firm posts a new price, and several rivals independently match it without an explicit agreement. What best describes the pattern?",
+      "options": [
+        "Perfect competition because all firms charge the same price",
+        "A cartel by definition",
+        "Price leadership that may coordinate expectations without proving explicit collusion",
+        "A prisoner’s dilemma requiring both firms to cut price"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.4",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "price_leadership",
+      "secondarySkills": [],
+      "repairSkill": "price_leadership",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Following a recognized price leader can coordinate market behavior, but observation alone does not prove an explicit agreement.",
+      "aHash": "a119663ce90fd8ba7b70ab803a674cc7ff548d87067f79a755f3ff0d192a4984",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-H-047",
+      "sourceId": 9980047,
+      "sourceHash": "1688c1ce53a20ff5a838917c15ef285cef65c2214c2af9e7a76f113db7731da6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "price_leadership",
+          "sourceRecordOrder": 46,
+          "sourceId": 9980047,
+          "sourceHash": "1688c1ce53a20ff5a838917c15ef285cef65c2214c2af9e7a76f113db7731da6"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-048",
+      "q": "Two oligopoly firms avoid matching price cuts and instead compete through warranties, loyalty programs, and product quality. Why might this strategy be attractive?",
+      "options": [
+        "It converts the market into perfect competition",
+        "It can attract customers without immediately triggering a market-wide price war",
+        "It guarantees marginal cost will fall",
+        "It makes rival reactions irrelevant"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.5",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "nonprice_competition",
+      "secondarySkills": [],
+      "repairSkill": "nonprice_competition",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Nonprice competition can shift demand or strengthen loyalty while avoiding direct price retaliation.",
+      "aHash": "ac37c85209b3fc8f09450995168634506becc670d903f01ea39d0a5358bcaec1",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-H-048",
+      "sourceId": 9980048,
+      "sourceHash": "24ce440c75eb64287e52fb64ec5559219f28917e0aa78f7795a82433211822c9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "nonprice_competition",
+          "sourceRecordOrder": 47,
+          "sourceId": 9980048,
+          "sourceHash": "24ce440c75eb64287e52fb64ec5559219f28917e0aa78f7795a82433211822c9"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-049",
+      "q": "In the kinked-demand model, a modest marginal-cost change occurs entirely within the discontinuity in marginal revenue. What does the model predict?",
+      "options": [
+        "The profit-maximizing price can remain unchanged",
+        "Price must immediately fall by the same amount as marginal cost",
+        "The firm becomes a price taker",
+        "The demand curve becomes perfectly elastic"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.5",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "kinked_demand",
+      "secondarySkills": [],
+      "repairSkill": "kinked_demand",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The MR discontinuity is used to explain why a range of marginal-cost changes may leave the chosen price unchanged.",
+      "aHash": "e408db35998197fac3f808f13340145bb48ef33ead613a192f0ac1271e4e7cdd",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-H-049",
+      "sourceId": 9980049,
+      "sourceHash": "ebac4f225694a11f5d05d941dc2bc15d8f860fdb3991cba00c2d694a6cdab25b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "kinked_demand",
+          "sourceRecordOrder": 48,
+          "sourceId": 9980049,
+          "sourceHash": "ebac4f225694a11f5d05d941dc2bc15d8f860fdb3991cba00c2d694a6cdab25b"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-050",
+      "q": "One firm mistakes a temporary rival discount for a permanent price cut and responds aggressively. Rivals retaliate, producing several rounds of lower prices. What does this illustrate?",
+      "options": [
+        "Price wars require a formal cartel agreement",
+        "The firms have stopped being strategically interdependent",
+        "A price war necessarily raises joint industry profit",
+        "Strategic reactions can amplify an initial move into a price war"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.4",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "price_war",
+      "secondarySkills": [],
+      "repairSkill": "price_war",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "In oligopoly, reactions and counterreactions can turn even a misread signal into sustained price rivalry.",
+      "aHash": "1ecbf5df99ed423f56c3d873bfa744e60c7436f7921336b2122bab9b1553c1af",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-H-050",
+      "sourceId": 9980050,
+      "sourceHash": "2e37dc0b649c12525499aea2a79f75696cfdd61436acab737995a23a71021455",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "price_war",
+          "sourceRecordOrder": 49,
+          "sourceId": 9980050,
+          "sourceHash": "2e37dc0b649c12525499aea2a79f75696cfdd61436acab737995a23a71021455"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-051",
+      "q": "A student says tacit coordination and explicit collusion are identical. What is the key distinction?",
+      "options": [
+        "Explicit collusion means firms ignore rivals",
+        "Only tacit coordination can affect price",
+        "Tacit coordination can emerge without an explicit agreement among firms",
+        "Tacit coordination always requires a written contract"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "tacit_coordination",
+      "secondarySkills": [],
+      "repairSkill": "tacit_coordination",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Tacit coordination refers to aligned behavior without the explicit agreement that defines collusion.",
+      "aHash": "8b584abf91ab7abb579b9bc1816bd573c2c5b94fbf4ec91d46c8398943d8e1c3",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-R-051",
+      "sourceId": 9980051,
+      "sourceHash": "a2d258daec107fe75e3442c57346c4d5a0ea496680f4f745aea7b0e3cc950c63",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "tacit_coordination",
+          "sourceRecordOrder": 50,
+          "sourceId": 9980051,
+          "sourceHash": "a2d258daec107fe75e3442c57346c4d5a0ea496680f4f745aea7b0e3cc950c63"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-BR-052",
+      "q": "A student has learned that oligopoly firms react strategically to price changes. What is the next step when firms compete through quality or advertising instead?",
+      "options": [
+        "Ignore rivals because only prices create interdependence",
+        "Apply the same strategic logic to nonprice actions because rivals may respond there too",
+        "Assume nonprice choices have no effect on demand",
+        "Treat advertising as proof of collusion"
+      ],
+      "tag": "oligopoly",
+      "type": "bridge",
+      "objective": "OLI.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "nonprice_competition",
+      "secondarySkills": [],
+      "repairSkill": "nonprice_competition",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Strategic interdependence applies to quality, advertising, service, and other competitive dimensions as well as price.",
+      "aHash": "21144affd3c1f391192dd77b96d667ecc304bc95dc0775649e3aa014fe5e9dc5",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "canonicalId": "PM8-OLI-BR-052",
+      "sourceId": 9980052,
+      "sourceHash": "2d8485474ca3c73ed2c6e1fb5644aab5e43817a5f5543eb68b84c7e600b49b55",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "nonprice_competition",
+          "sourceRecordOrder": 51,
+          "sourceId": 9980052,
+          "sourceHash": "2d8485474ca3c73ed2c6e1fb5644aab5e43817a5f5543eb68b84c7e600b49b55"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-053",
+      "q": "Compared with a competitive outcome, an effective cartel usually chooses:",
+      "options": [
+        "Lower output and a higher price",
+        "Higher output and a lower price",
+        "The same output with zero profit",
+        "Price equal to minimum average total cost"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_welfare",
+      "secondarySkills": [],
+      "repairSkill": "cartel_welfare",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A cartel acts like a joint monopolist, restricting output to raise price and combined profit.",
+      "aHash": "9e35105ca98895af56a393f6492a1632139407dca9075e38746831ca17f5be8c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-053",
+      "sourceId": 9980053,
+      "sourceHash": "31d90f69965a450f06ec393c79d01c7a27f555034a19a5305395bcb048267b9d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "cartel_welfare",
+          "sourceRecordOrder": 52,
+          "sourceId": 9980053,
+          "sourceHash": "31d90f69965a450f06ec393c79d01c7a27f555034a19a5305395bcb048267b9d"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-054",
+      "q": "Why is a high HHI not enough by itself to prove consumers are being harmed?",
+      "options": [
+        "HHI directly measures consumer surplus",
+        "A high HHI guarantees prices equal marginal cost",
+        "HHI is unrelated to market shares",
+        "Concentration measures structure, while welfare also depends on conduct, entry conditions, efficiencies, and rivalry"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "concentration_limitations",
+      "secondarySkills": [],
+      "repairSkill": "concentration_limitations",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Concentration is evidence about market structure, not a complete welfare verdict.",
+      "aHash": "9fa46b02f07782dcce6d504b7d0199b624f71e06f14dcc07f3734fcc40a00a8c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-054",
+      "sourceId": 9980054,
+      "sourceHash": "fb25c837cbad79707240fff120aa978db7af3566c43c900da3afa8a8fe25cce4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "concentration_limitations",
+          "sourceRecordOrder": 53,
+          "sourceId": 9980054,
+          "sourceHash": "fb25c837cbad79707240fff120aa978db7af3566c43c900da3afa8a8fe25cce4"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-055",
+      "q": "If two firms merge and all other market shares remain unchanged, what happens to market concentration?",
+      "options": [
+        "It cannot change unless market demand shifts",
+        "It becomes zero if the merged firm cuts price",
+        "It generally increases because two separate shares become one larger share",
+        "It must fall because there is one fewer firm"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "merger_concentration",
+      "secondarySkills": [],
+      "repairSkill": "merger_concentration",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Combining shares raises concentration measures such as HHI, all else equal.",
+      "aHash": "d9e24bbe6061b2f1ab98edeb1aa5d3fd222a9f577bde775ee6d2c9b713fa8dab",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-055",
+      "sourceId": 9980055,
+      "sourceHash": "6e64d1455f8f77e56b146133d3d16390d5a75af8b5524c9e640499c7b7de5e80",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "merger_concentration",
+          "sourceRecordOrder": 54,
+          "sourceId": 9980055,
+          "sourceHash": "6e64d1455f8f77e56b146133d3d16390d5a75af8b5524c9e640499c7b7de5e80"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-056",
+      "q": "A concentrated industry charges high markups but also spends heavily on research. What is the soundest conclusion?",
+      "options": [
+        "Concentration always increases total surplus",
+        "There may be a tradeoff between market-power costs and innovation benefits that requires evidence",
+        "High research spending proves the market is efficient",
+        "High markups prove innovation has no value"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "innovation_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "innovation_tradeoff",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Oligopoly welfare can involve competing effects rather than a one-variable verdict.",
+      "aHash": "47f9962aa0c314949d6ab7ef4ab57b1f0bcc2c4f1313c4e09ad1dbf5ce7ef499",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-056",
+      "sourceId": 9980056,
+      "sourceHash": "041f150bef2b72bc6c6a94653a9875df25dc105a2bf5fde97ab61d12d02d4fe9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "innovation_tradeoff",
+          "sourceRecordOrder": 55,
+          "sourceId": 9980056,
+          "sourceHash": "041f150bef2b72bc6c6a94653a9875df25dc105a2bf5fde97ab61d12d02d4fe9"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-057",
+      "q": "What is the basic economic concern behind antitrust scrutiny of collusion?",
+      "options": [
+        "Coordinated restriction of competition can raise price and reduce output below competitive levels",
+        "Collusion makes every firm a price taker",
+        "Collusion necessarily creates free entry",
+        "Collusion guarantees maximum consumer surplus"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "antitrust_rationale",
+      "secondarySkills": [],
+      "repairSkill": "antitrust_rationale",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The core welfare concern is reduced rivalry that raises prices, restricts output, and can create deadweight loss.",
+      "aHash": "c9fa62ff2171f605a2bc0dc9ad643e28cad14f62bb28b1c1e37941c40e619b3a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-057",
+      "sourceId": 9980057,
+      "sourceHash": "ba251337b9692fde007d11ebee17ff21b9c4628a6ff8a6998037335ffc24e12a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "antitrust_rationale",
+          "sourceRecordOrder": 56,
+          "sourceId": 9980057,
+          "sourceHash": "ba251337b9692fde007d11ebee17ff21b9c4628a6ff8a6998037335ffc24e12a"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-058",
+      "q": "Why should an economist be cautious about predicting one outcome for every oligopoly market?",
+      "options": [
+        "Every oligopoly has the same payoff matrix",
+        "Oligopoly theory assumes firms never respond to rivals",
+        "Market concentration fully determines every price",
+        "Different numbers of firms, products, information, costs, and strategic settings can produce different behavior"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "model_limitations",
+      "secondarySkills": [],
+      "repairSkill": "model_limitations",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Oligopoly is a strategic family of models, not a guarantee that every few-firm market behaves identically.",
+      "aHash": "2022fb400eba4a6794003d66c982f991aa49d9eebbfe1067b423c459c8dec7fb",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-058",
+      "sourceId": 9980058,
+      "sourceHash": "1e9879ed519553c5221132b0bfaef5dc029bb7ea2783406fb84483519ee6e023",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "model_limitations",
+          "sourceRecordOrder": 57,
+          "sourceId": 9980058,
+          "sourceHash": "1e9879ed519553c5221132b0bfaef5dc029bb7ea2783406fb84483519ee6e023"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-E-059",
+      "q": "Which statement best summarizes why oligopoly welfare analysis can be complicated?",
+      "options": [
+        "Only the number of firms matters for welfare",
+        "Oligopoly always produces the monopoly outcome",
+        "Few firms may create market power, but rivalry, innovation, efficiencies, and entry conditions also matter",
+        "Any market with four firms is automatically inefficient"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "integrated_oligopoly_analysis",
+      "secondarySkills": [],
+      "repairSkill": "integrated_oligopoly_analysis",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A sound evaluation combines structure, strategic conduct, efficiency claims, and market responses.",
+      "aHash": "bb85ed2df5a7f46046dc4cf0cdaeb028744e2c5a339e876fef02d26bc59fc47a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-E-059",
+      "sourceId": 9980059,
+      "sourceHash": "63fc94799fe7ecaf028f8abd94a32c519c60dba1275e7156f91d4eecf90375c4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "integrated_oligopoly_analysis",
+          "sourceRecordOrder": 58,
+          "sourceId": 9980059,
+          "sourceHash": "63fc94799fe7ecaf028f8abd94a32c519c60dba1275e7156f91d4eecf90375c4"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-060",
+      "q": "Two firms with market shares of 18% and 12% merge. Holding all other shares fixed, why does HHI rise?",
+      "options": [
+        "The merger automatically removes all smaller rivals",
+        "The squared share of the combined 30% firm exceeds the sum of the two firms’ separate squared shares",
+        "HHI counts the merged firm twice",
+        "Every merger doubles total market sales"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "merger_concentration",
+      "secondarySkills": [],
+      "repairSkill": "merger_concentration",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Because shares are squared, combining two positive shares increases HHI by the cross term 2ab.",
+      "aHash": "14f0f279a2bead0ed4425880515abd8694635faa835147e0619f35da3d9f4d78",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-M-060",
+      "sourceId": 9980060,
+      "sourceHash": "83291792df7b6416d5e07c643fc0e21b3fe281bbe451626d7cc2981fbf9df6f0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "merger_concentration",
+          "sourceRecordOrder": 59,
+          "sourceId": 9980060,
+          "sourceHash": "83291792df7b6416d5e07c643fc0e21b3fe281bbe451626d7cc2981fbf9df6f0"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-061",
+      "q": "A proposed merger would eliminate the closest competitor but also reduce marginal cost substantially. What is the best economic approach?",
+      "options": [
+        "Compare the likely loss of rivalry with the magnitude and pass-through of verifiable efficiencies",
+        "Approve the merger automatically because costs fall",
+        "Block the merger automatically because concentration rises",
+        "Ignore cost effects because only the number of firms matters"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "antitrust_rationale",
+      "secondarySkills": [],
+      "repairSkill": "antitrust_rationale",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Merger analysis requires weighing competitive harm against genuine efficiencies rather than using one fact mechanically.",
+      "aHash": "c94cced31d43166430fe89f3a691d410f8b9b56e551652bc22b112fbb07f92ac",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-M-061",
+      "sourceId": 9980061,
+      "sourceHash": "342e54fe4a369cde5f131620e1cac602e70d587576e2e2aa0117fd10c608bbe1",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "antitrust_rationale",
+          "sourceRecordOrder": 60,
+          "sourceId": 9980061,
+          "sourceHash": "342e54fe4a369cde5f131620e1cac602e70d587576e2e2aa0117fd10c608bbe1"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-062",
+      "q": "When a cartel raises price, some lost consumer surplus becomes additional producer surplus. What happens to the remaining loss associated with trades that no longer occur?",
+      "options": [
+        "It becomes tax revenue",
+        "It becomes an HHI increase",
+        "It is automatically recovered through innovation",
+        "It becomes deadweight loss"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_welfare",
+      "secondarySkills": [],
+      "repairSkill": "cartel_welfare",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Foregone mutually beneficial trades destroy total surplus rather than transfer it to another market participant.",
+      "aHash": "e2cd597fefc43cfe71891eb2f8710374a739b1cb9c386e808bf7facfe899affa",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-M-062",
+      "sourceId": 9980062,
+      "sourceHash": "34faa71932148e1d9f6b95c110c6dd3326ac530d47577141ba4135007b435955",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "cartel_welfare",
+          "sourceRecordOrder": 61,
+          "sourceId": 9980062,
+          "sourceHash": "34faa71932148e1d9f6b95c110c6dd3326ac530d47577141ba4135007b435955"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-063",
+      "q": "A domestic industry has a high concentration ratio, but buyers can readily switch to imported substitutes when domestic prices rise. What does this imply?",
+      "options": [
+        "The market must be a monopoly",
+        "High concentration guarantees collusion",
+        "Domestic concentration alone may overstate the firms’ effective market power",
+        "Imports are irrelevant to market definition"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "concentration_limitations",
+      "secondarySkills": [],
+      "repairSkill": "concentration_limitations",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Competitive constraints from close substitutes, including imports when relevant, matter to the economic market definition.",
+      "aHash": "04b5d232261658ec983a34a25a88f0b13c227038e54b113f3bb6f684de4d6101",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-M-063",
+      "sourceId": 9980063,
+      "sourceHash": "4b6ca0467c307a507ec2fe434b94d7be85848fc4e9e15f3be71456ff9570d6f5",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "concentration_limitations",
+          "sourceRecordOrder": 62,
+          "sourceId": 9980063,
+          "sourceHash": "4b6ca0467c307a507ec2fe434b94d7be85848fc4e9e15f3be71456ff9570d6f5"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-M-064",
+      "q": "A merger creates a larger research budget but also reduces head-to-head price competition. Which statement is most defensible?",
+      "options": [
+        "The merger must lower HHI because research increases",
+        "Both innovation benefits and reduced-rivalry costs should be evaluated rather than assuming one dominates",
+        "A larger research budget proves consumer welfare will rise",
+        "Reduced rivalry is irrelevant whenever innovation is possible"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "innovation_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "innovation_tradeoff",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The welfare question is empirical: innovation gains can matter, but so can weaker price and quality competition.",
+      "aHash": "5b133baff11a3f7d01d65ea65f44f5410d3ddcf7f9d79c096eec32f9cbfc7f06",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-M-064",
+      "sourceId": 9980064,
+      "sourceHash": "1d0138e570869399d3c9531077e378e39eba9221bee2a12e37e0ad4e7d557131",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "innovation_tradeoff",
+          "sourceRecordOrder": 63,
+          "sourceId": 9980064,
+          "sourceHash": "1d0138e570869399d3c9531077e378e39eba9221bee2a12e37e0ad4e7d557131"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-065",
+      "q": "A merger sharply raises HHI, but entry is easy and several well-funded firms can expand quickly if price rises. What is the strongest economic inference?",
+      "options": [
+        "The concentration increase is relevant, but ease of entry and expansion can limit post-merger market power",
+        "The HHI increase proves prices will rise",
+        "Easy entry is irrelevant once concentration increases",
+        "The merger must increase deadweight loss by exactly the HHI change"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "merger_concentration",
+      "secondarySkills": [],
+      "repairSkill": "merger_concentration",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Concentration is one piece of evidence; credible entry and expansion can constrain the merged firm.",
+      "aHash": "befd89db3004953d52bdc8940b7add53fa082033badee12a4761f51907f36411",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-H-065",
+      "sourceId": 9980065,
+      "sourceHash": "c2a9cc76eaf14ea9f2d06fece42dd47918358ad799fe9e004ad77bb3c93b52dc",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "merger_concentration",
+          "sourceRecordOrder": 64,
+          "sourceId": 9980065,
+          "sourceHash": "c2a9cc76eaf14ea9f2d06fece42dd47918358ad799fe9e004ad77bb3c93b52dc"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-066",
+      "q": "Four firms independently raise price after the same large increase in a key input cost. What additional evidence would be needed before inferring collusion?",
+      "options": [
+        "A high market price by itself",
+        "Proof that the firms earn positive accounting profit",
+        "A calculation showing consumer demand slopes downward",
+        "Evidence that the firms coordinated rather than merely responding to the common cost shock"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "antitrust_rationale",
+      "secondarySkills": [],
+      "repairSkill": "antitrust_rationale",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Parallel pricing can have competitive explanations; an inference of collusion needs evidence that distinguishes coordination from common incentives.",
+      "aHash": "a49cfe66e849f04c2cf907cc054a2004ce629c346f29fa215a7816adfbf01f2c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-H-066",
+      "sourceId": 9980066,
+      "sourceHash": "1387000ad15ee6ea4b33d4ce1b9edd28c580c5598f07d23b061f5799aa5872f8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "antitrust_rationale",
+          "sourceRecordOrder": 65,
+          "sourceId": 9980066,
+          "sourceHash": "1387000ad15ee6ea4b33d4ce1b9edd28c580c5598f07d23b061f5799aa5872f8"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-067",
+      "q": "A cartel restriction transfers $9 million of surplus from consumers to producers and destroys another $3 million of mutually beneficial trade. What is the deadweight loss?",
+      "options": [
+        "$12 million",
+        "$6 million",
+        "$3 million",
+        "$9 million"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_welfare",
+      "secondarySkills": [],
+      "repairSkill": "cartel_welfare",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Transfers change who receives surplus; only the destroyed gains from trade are deadweight loss.",
+      "aHash": "7d9b19b2c49f0555748a3b727ae81783657d4362858d760a78b1e71ee4e2135e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-H-067",
+      "sourceId": 9980067,
+      "sourceHash": "f6ba0de227c0359415624d9650fada0a411f6ab4b32479868a91bffdb483f75b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "cartel_welfare",
+          "sourceRecordOrder": 66,
+          "sourceId": 9980067,
+          "sourceHash": "f6ba0de227c0359415624d9650fada0a411f6ab4b32479868a91bffdb483f75b"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-068",
+      "q": "A platform market is highly concentrated because network effects make a large user base valuable, but users can easily use multiple platforms at once. What is the most careful conclusion?",
+      "options": [
+        "The market must be perfectly competitive because users can switch",
+        "Network effects can support concentration, while easy multi-homing may still preserve meaningful competitive pressure",
+        "High concentration proves the platform has unconstrained monopoly power",
+        "Multi-homing makes network effects disappear"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "innovation_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "innovation_tradeoff",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "The same structural fact can have different welfare implications depending on switching, multi-homing, and rival expansion.",
+      "aHash": "8a0169ea04ca2ab9757a537f8bcd8afe9bdbb7ff0e5d1bc931763d1906b94868",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-H-068",
+      "sourceId": 9980068,
+      "sourceHash": "d61aff1560db98ae24187f9dd2d9798d188a9de8904b1e93d64309eec6e47fcd",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "innovation_tradeoff",
+          "sourceRecordOrder": 67,
+          "sourceId": 9980068,
+          "sourceHash": "d61aff1560db98ae24187f9dd2d9798d188a9de8904b1e93d64309eec6e47fcd"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-069",
+      "q": "Two industries have identical CR4 and HHI values. One has standardized products and transparent prices; the other has differentiated products and rapid innovation. Why might their competitive outcomes differ?",
+      "options": [
+        "Concentration measures do not capture every strategic and product-market feature that shapes rivalry",
+        "Equal concentration measures guarantee equal prices and profits",
+        "Differentiation is irrelevant in oligopoly",
+        "Only the number of firms can affect oligopoly behavior"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "model_limitations",
+      "secondarySkills": [],
+      "repairSkill": "model_limitations",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Concentration is informative but does not summarize product differentiation, innovation, information, costs, or strategic conduct.",
+      "aHash": "003bb7ea40658e193899eb485d261d9c3c621680fc45c0f57e089653eb7af84c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-H-069",
+      "sourceId": 9980069,
+      "sourceHash": "e44126e2669c5d3fe598ed9884bcbd4f56cc21f57e8aa35fd5a12f6637ac7ead",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "model_limitations",
+          "sourceRecordOrder": 68,
+          "sourceId": 9980069,
+          "sourceHash": "e44126e2669c5d3fe598ed9884bcbd4f56cc21f57e8aa35fd5a12f6637ac7ead"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-H-070",
+      "q": "A concentrated industry has high prices, strong product innovation, and frequent entry by niche rivals. Which analysis is strongest?",
+      "options": [
+        "Conclude the industry is harmful solely because prices are high",
+        "Conclude the industry is efficient solely because innovation is high",
+        "Ignore entry because the incumbent firms are large",
+        "Evaluate market power, innovation benefits, entry conditions, and consumer substitution together"
+      ],
+      "tag": "oligopoly",
+      "type": "application",
+      "objective": "OLI.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "integrated_oligopoly_analysis",
+      "secondarySkills": [],
+      "repairSkill": "integrated_oligopoly_analysis",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Oligopoly welfare requires integrating several margins rather than treating one statistic as decisive.",
+      "aHash": "816f057b9be9d6a9ed8162265628c18028fc902ca19ecedadfb6d2f3d3c46306",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-H-070",
+      "sourceId": 9980070,
+      "sourceHash": "aa2578e907d9f78d134f33585e4acfb553412f889401b25db173d1bd1bfab0c8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "integrated_oligopoly_analysis",
+          "sourceRecordOrder": 69,
+          "sourceId": 9980070,
+          "sourceHash": "aa2578e907d9f78d134f33585e4acfb553412f889401b25db173d1bd1bfab0c8"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-071",
+      "q": "A student says “high concentration proves firms are colluding.” What is the correction?",
+      "options": [
+        "Collusion is impossible in concentrated markets",
+        "Concentration measures directly record secret agreements",
+        "High concentration can make strategic interaction important, but it does not by itself prove an agreement or harmful conduct",
+        "High concentration means every firm charges marginal cost"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "concentration_limitations",
+      "secondarySkills": [],
+      "repairSkill": "concentration_limitations",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Structure can affect incentives, but conduct and welfare conclusions require additional evidence.",
+      "aHash": "8aed77a53bc2a44f4475ed3ec5a1ee300a0d97fb3a5d8c80b7a4664b06f5e921",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-R-071",
+      "sourceId": 9980071,
+      "sourceHash": "1544ed277e9f5a2f46cb5f71a7b1cf2e16373ac13ad78fc4d64bc8d571b36f95",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "concentration_limitations",
+          "sourceRecordOrder": 70,
+          "sourceId": 9980071,
+          "sourceHash": "1544ed277e9f5a2f46cb5f71a7b1cf2e16373ac13ad78fc4d64bc8d571b36f95"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-072",
+      "q": "A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?",
+      "options": [
+        "Accounting profit from total revenue",
+        "Surplus transferred to producers from surplus destroyed by trades that no longer occur",
+        "Price changes from quantity changes",
+        "HHI from the concentration ratio"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "cartel_welfare",
+      "secondarySkills": [],
+      "repairSkill": "cartel_welfare",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "A cartel can redistribute surplus and destroy surplus; only the destroyed gains from trade are deadweight loss.",
+      "aHash": "2fe3d645a3c87c61f0fcde14e62dbcfa21d38b45291836343e62177388d8ee25",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-R-072",
+      "sourceId": 9980072,
+      "sourceHash": "cdb7d4c5ed88b8954b81c3e4851c8baf5adf421119a5a89a20a5f8cf6ea2567f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "cartel_welfare",
+          "sourceRecordOrder": 71,
+          "sourceId": 9980072,
+          "sourceHash": "cdb7d4c5ed88b8954b81c3e4851c8baf5adf421119a5a89a20a5f8cf6ea2567f"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-073",
+      "q": "A student says a higher post-merger HHI proves the merger harms consumers. What is the better statement?",
+      "options": [
+        "A higher HHI shows greater concentration, but consumer effects also depend on rivalry, entry, efficiencies, and pass-through",
+        "HHI directly measures the change in consumer surplus",
+        "Any HHI increase means the merged firm becomes a monopolist",
+        "HHI is unrelated to merger analysis"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "merger_concentration",
+      "secondarySkills": [],
+      "repairSkill": "merger_concentration",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Concentration is an input to analysis, not a complete welfare conclusion.",
+      "aHash": "536467ed0a2902f1362b994e84c67123732db9ecadcd43fdf4a8cd131e6d4924",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-R-073",
+      "sourceId": 9980073,
+      "sourceHash": "741b8d335820a33ca10c6d36c78828c05e1c48747723c33c24e3fb183c77b850",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "merger_concentration",
+          "sourceRecordOrder": 72,
+          "sourceId": 9980073,
+          "sourceHash": "741b8d335820a33ca10c6d36c78828c05e1c48747723c33c24e3fb183c77b850"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-074",
+      "q": "A student argues that high research spending proves a concentrated market is socially optimal. What is missing?",
+      "options": [
+        "Research spending always lowers HHI",
+        "Innovation matters only in perfect competition",
+        "High research spending eliminates market power",
+        "Innovation benefits must be weighed against possible higher prices, weaker rivalry, and other welfare effects"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "innovation_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "innovation_tradeoff",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Innovation can be beneficial without settling the overall welfare comparison.",
+      "aHash": "24b211e9ded0fe7236189affd4505e22b58685b6c685e0823ea10eced2a41645",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-R-074",
+      "sourceId": 9980074,
+      "sourceHash": "1b993275417f3f8f66d44c88bff72659d98a03162f4546bfbb4c3eec206719a5",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "innovation_tradeoff",
+          "sourceRecordOrder": 73,
+          "sourceId": 9980074,
+          "sourceHash": "1b993275417f3f8f66d44c88bff72659d98a03162f4546bfbb4c3eec206719a5"
+        }
+      ]
+    },
+    {
+      "id": "PM8-OLI-R-075",
+      "q": "A student sees several firms charge the same price and immediately labels the behavior collusion. What is the key correction?",
+      "options": [
+        "Price equality proves the firms have equal market shares",
+        "Collusion can occur only when prices differ",
+        "Similar prices can arise independently from common costs or market conditions, so evidence of coordination is still needed",
+        "Identical prices are impossible without a cartel"
+      ],
+      "tag": "oligopoly",
+      "type": "repair",
+      "objective": "OLI.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_oligopoly",
+      "primarySkill": "antitrust_rationale",
+      "secondarySkills": [],
+      "repairSkill": "antitrust_rationale",
+      "commonError": "misapplies_oligopoly_rule",
+      "feedback": "Parallel conduct is not automatically evidence of an agreement because firms can respond similarly to the same public conditions.",
+      "aHash": "77dc00e181f903a8d1159939bb9b83d3b46ef4f19f4f38e21da51cb64f387b53",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "oligopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "oligopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "oligopoly",
+      "subtopicIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "canonicalId": "PM8-OLI-R-075",
+      "sourceId": 9980075,
+      "sourceHash": "18431f363ec7841e55415f146ad05d6a162d8985e92af4d3a529ff05023f521a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "antitrust_rationale",
+          "sourceRecordOrder": 74,
+          "sourceId": 9980075,
+          "sourceHash": "18431f363ec7841e55415f146ad05d6a162d8985e92af4d3a529ff05023f521a"
+        }
+      ]
+    }
+  ]
+}

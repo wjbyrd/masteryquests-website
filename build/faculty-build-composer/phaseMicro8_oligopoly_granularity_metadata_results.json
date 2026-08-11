@@ -1,0 +1,114 @@
+{
+  "phase": "phaseMicro8-oligopoly-granularity-adaptive-backfill-v1",
+  "composerVersion": "4.5o.0",
+  "beforeCanonicalQuestionCount": 7902,
+  "afterCanonicalQuestionCount": 7977,
+  "addedQuestions": 75,
+  "parentRecords": 445,
+  "conceptCount": 126,
+  "librarySha256": "42d9c339a0de454f2d153930418028ba3fe81d1226cbfc29a7eaef8d6576dd69",
+  "subtopics": {
+    "oligopoly-structure-concentration": {
+      "title": "Oligopoly Structure, Strategic Interdependence & Concentration",
+      "role": "standalone-ready",
+      "canonicalRecords": 69,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 17
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 37,
+      "advancedOptional": false,
+      "pass": true
+    },
+    "oligopoly-game-theory-foundations": {
+      "title": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+      "role": "standalone-ready",
+      "canonicalRecords": 106,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 22
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 52,
+      "advancedOptional": false,
+      "pass": true
+    },
+    "oligopoly-collusion-cartels": {
+      "title": "Collusion, Cartels & Prisoner’s-Dilemma Incentives",
+      "role": "standalone-ready",
+      "canonicalRecords": 70,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 7,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 30,
+      "advancedOptional": false,
+      "pass": true
+    },
+    "oligopoly-dynamic-strategy": {
+      "title": "Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence",
+      "role": "supporting-advanced",
+      "canonicalRecords": 85,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 9
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 31,
+      "advancedOptional": true,
+      "pass": true
+    },
+    "oligopoly-rivalry-coordination": {
+      "title": "Tacit Coordination, Price Leadership & Nonprice Competition",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 37,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 6,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 16,
+      "advancedOptional": false,
+      "pass": true
+    },
+    "oligopoly-welfare-policy": {
+      "title": "Oligopoly Welfare, Mergers & Antitrust Tradeoffs",
+      "role": "standalone-ready",
+      "canonicalRecords": 78,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 38,
+      "advancedOptional": false,
+      "pass": true
+    }
+  }
+}

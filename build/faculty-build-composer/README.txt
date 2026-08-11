@@ -3,18 +3,19 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5n.0
-Canonical questions: 7,902
-Selectable concepts/family slices: 120
+Current composer version: 4.5o.0
+Canonical questions: 7,977
+Selectable concepts/family slices: 126
 Question assets: 399
 
-Latest upgrade — Phase Micro7: Monopolistic Competition granularity + adaptive maturation
-- Monopolistic Competition now exposes five instructor-facing child selectors while preserving the full parent family.
-- Added exactly 47 measured adaptive questions: 13 Easy, 14 Medium, 8 Hard, 6 Repair, and 6 Bridge.
-- Parent family: 459 canonical questions after backfill.
-- All five child selectors meet their assigned adaptive-depth/support floors and clear the planned 15-question Quiz threshold.
-- Existing 55 graph-linked questions across 38 Monopolistic Competition assets are unchanged.
-- Elasticity, Surplus, Trade, Costs, Perfect Competition, and Monopoly granular families remain intact.
+Latest upgrade — Phase Micro8: Oligopoly granularity + adaptive maturation
+- Oligopoly now exposes six instructor-facing child selectors while preserving the full parent family.
+- Added exactly 75 measured adaptive questions: 20 Easy, 21 Medium, 13 Hard, 10 Repair, and 11 Bridge.
+- Parent family: 445 canonical questions after backfill.
+- The higher-end repeated-game / credibility / entry-deterrence material is isolated in an optional supporting/advanced child; it is not required for a conventional Principles Oligopoly build.
+- All six child selectors meet their assigned adaptive-depth/support floors and clear the planned 15-question Quiz threshold.
+- Existing 123 graph-linked questions across 42 Oligopoly assets are unchanged.
+- Elasticity, Surplus, Trade, Costs, Perfect Competition, Monopoly, and Monopolistic Competition granular families remain intact.
 
 PHASE MICRO1 — ELASTICITY GRANULARITY PILOT
 -------------------------------------------
@@ -51,3 +52,9 @@ PHASE MICRO7 — MONOPOLISTIC COMPETITION GRANULARITY + ADAPTIVE MATURATION
 Five Monopolistic Competition subtopics are exposed: Market Structure & Product Differentiation; Short-Run Firm Choice, Profit/Loss & Shutdown; Entry, Exit & Long-Run Equilibrium; Advertising, Branding & Nonprice Competition; and Product Variety, Efficiency & Model Limits.
 
 The family contains 459 canonical records after exactly 47 targeted adaptive additions. Parent/child selection remains hierarchical, all children clear the planned 15-question Quiz threshold, and the existing graph inventory is preserved.
+PHASE MICRO8 — OLIGOPOLY GRANULARITY + ADAPTIVE MATURATION
+-----------------------------------------------------------
+Six Oligopoly subtopics are exposed: Oligopoly Structure, Strategic Interdependence & Concentration; Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium; Collusion, Cartels & Prisoner’s-Dilemma Incentives; Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence; Tacit Coordination, Price Leadership & Nonprice Competition; and Oligopoly Welfare, Mergers & Antitrust Tradeoffs.
+
+The family contains 445 canonical records after exactly 75 targeted adaptive additions. Dynamic Strategy is intentionally marked optional supporting/advanced so instructors can select ordinary Principles game theory without importing infinite-horizon repeated-game or backward-induction material. All six children clear the planned 15-question Quiz threshold, the five-child Oligopoly core passes all five current modes without Dynamic Strategy, and the existing graph inventory is preserved.
+
