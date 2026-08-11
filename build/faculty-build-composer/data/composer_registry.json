@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-11T02:05:00.000Z",
+  "generatedAt": "2026-08-11T03:30:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -1375,31 +1375,31 @@
       ],
       "questionCountByRole": {
         "boss": 60,
-        "bridge": 20,
+        "bridge": 53,
         "calculation": 30,
         "elite": 42,
         "integration": 0,
         "legendary": 98,
         "legendaryBoss": 36,
-        "main": 136,
-        "repair": 20,
+        "main": 238,
+        "repair": 51,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 64,
+        "easy": 106,
         "elite": 42,
-        "hard": 96,
+        "hard": 115,
         "legendary": 134,
-        "medium": 66,
-        "unknown": 40
+        "medium": 107,
+        "unknown": 104
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 402
+        "directSkillMatches": 51,
+        "mainWithUsableSkill": 504
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 402
+        "directSkillMatches": 53,
+        "mainWithUsableSkill": 504
       },
       "calculationCoverage": 30,
       "graphCoverage": 95,
@@ -1408,8 +1408,957 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank with an expanded 102-item graph layer. New graphical questions cover cost-curve relationships, total cost identities, total/marginal/average product, and LRAC without importing competitive-firm profit decisions.",
-      "coverageFloorVersion": "phase6.2e-rich-v2-graph-expansion"
+      "coverageStatusNote": "Publisher-scale standalone bank with an expanded 102-item graph layer. New graphical questions cover cost-curve relationships, total cost identities, total/marginal/average product, and LRAC without importing competitive-firm profit decisions. Costs now exposes ten granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill needed for healthy adaptive use.",
+      "coverageFloorVersion": "phase6.2e-rich-v2-graph-expansion",
+      "childConceptIds": [
+        "economic-costs",
+        "profit-concepts",
+        "short-run-production",
+        "cost-components-schedules",
+        "average-costs",
+        "marginal-cost-production-linkages",
+        "short-run-cost-curves",
+        "sunk-avoidable-costs",
+        "long-run-average-cost-scale",
+        "minimum-efficient-scale"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "economic-costs",
+      "title": "Economic Costs: Explicit, Implicit & Opportunity Cost",
+      "description": "Distinguish explicit and implicit costs and apply opportunity cost to owner-supplied labor, capital, and property.",
+      "includedSkills": [
+        "explicit_cost",
+        "implicit_cost",
+        "opportunity_cost_firm"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "profit-concepts",
+        "opportunity-cost"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.1"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 11,
+        "elite": 0,
+        "legendary": 1,
+        "calculation": 4,
+        "boss": 2,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "medium": 5,
+        "hard": 5,
+        "elite": 0,
+        "legendary": 1,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 18
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 18
+      },
+      "calculationCoverage": 4,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Costs topic",
+      "coverageStatusNote": "Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 15.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 15,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "profit-concepts",
+      "title": "Accounting, Economic & Normal Profit",
+      "description": "Calculate and interpret accounting profit, economic profit, implicit costs, and normal profit.",
+      "includedSkills": [
+        "accounting_profit",
+        "economic_profit",
+        "integrated_cost_analysis",
+        "normal_profit"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "economic-costs",
+        "opportunity-cost"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.1"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 26,
+        "elite": 2,
+        "legendary": 13,
+        "calculation": 4,
+        "boss": 3,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 13,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 25,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 60
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 60
+      },
+      "calculationCoverage": 4,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 32.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 32,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "short-run-production",
+      "title": "Short-Run Production & Diminishing Marginal Product",
+      "description": "Analyze fixed and variable inputs, total product, marginal product, average product, and diminishing marginal product in the short run.",
+      "includedSkills": [
+        "average_product",
+        "diminishing_marginal_product",
+        "fixed_variable_inputs",
+        "integrated_cost_analysis",
+        "marginal_average_relationship",
+        "marginal_product",
+        "production_function",
+        "short_run_long_run",
+        "total_product"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "marginal-cost-production-linkages",
+        "short-run-cost-curves"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.2"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 32,
+        "elite": 7,
+        "legendary": 10,
+        "calculation": 4,
+        "boss": 15,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 24,
+        "medium": 13,
+        "hard": 14,
+        "elite": 7,
+        "legendary": 10,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 68
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 68
+      },
+      "calculationCoverage": 4,
+      "graphCoverage": 22,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 11 Easy / 12 Medium / 13 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 43.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 11,
+        "medium": 12,
+        "hard": 13
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 43,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "cost-components-schedules",
+      "title": "Cost Components & Cost Schedules",
+      "description": "Work with total fixed cost, total variable cost, total cost, and short-run cost schedules.",
+      "includedSkills": [
+        "cost_schedule_completion",
+        "fixed_cost",
+        "integrated_cost_analysis",
+        "total_cost",
+        "variable_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "average-costs",
+        "marginal-cost-production-linkages"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.3"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 27,
+        "elite": 1,
+        "legendary": 6,
+        "calculation": 7,
+        "boss": 2,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 14,
+        "elite": 1,
+        "legendary": 18,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 55
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 55
+      },
+      "calculationCoverage": 7,
+      "graphCoverage": 8,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 14 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 35.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 14
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 35,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "average-costs",
+      "title": "Average Costs: AFC, AVC & ATC",
+      "description": "Calculate and interpret average fixed cost, average variable cost, average total cost, and their arithmetic relationships.",
+      "includedSkills": [
+        "average_fixed_cost",
+        "average_total_cost",
+        "average_variable_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "cost-components-schedules",
+        "short-run-cost-curves"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.3"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 25,
+        "elite": 8,
+        "legendary": 6,
+        "calculation": 5,
+        "boss": 5,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "medium": 15,
+        "hard": 10,
+        "elite": 8,
+        "legendary": 6,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 49
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 49
+      },
+      "calculationCoverage": 5,
+      "graphCoverage": 15,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 38.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 38,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "marginal-cost-production-linkages",
+      "title": "Marginal Cost & Production–Cost Linkages",
+      "description": "Calculate marginal cost and connect marginal product changes to the short-run marginal-cost curve.",
+      "includedSkills": [
+        "marginal_cost",
+        "marginal_product_marginal_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "short-run-production",
+        "average-costs",
+        "short-run-cost-curves",
+        "marginal-analysis"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.3",
+        "COP.4",
+        "COP.5"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 26,
+        "elite": 3,
+        "legendary": 5,
+        "calculation": 4,
+        "boss": 5,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 7,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 13,
+        "elite": 3,
+        "legendary": 5,
+        "unknown": 13
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 43
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 43
+      },
+      "calculationCoverage": 4,
+      "graphCoverage": 7,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 7 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 33.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 7
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 33,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "short-run-cost-curves",
+      "title": "Short-Run Cost Curves: Relationships & Shifts",
+      "description": "Analyze relationships among AFC, AVC, ATC, and MC and distinguish fixed-cost from variable-cost curve shifts.",
+      "includedSkills": [
+        "average_fixed_cost",
+        "cost_curve_relationships",
+        "integrated_cost_analysis",
+        "marginal_average_relationship",
+        "short_run_cost_analysis",
+        "variable_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "average-costs",
+        "marginal-cost-production-linkages",
+        "sunk-avoidable-costs"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.4",
+        "COP.5"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 33,
+        "elite": 10,
+        "legendary": 31,
+        "calculation": 0,
+        "boss": 15,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 7,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 12,
+        "medium": 20,
+        "hard": 16,
+        "elite": 10,
+        "legendary": 43,
+        "unknown": 13
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 101
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 7,
+        "mainWithUsableSkill": 101
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 29,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 13 Hard; floor 10/10/10. Adaptive support: 6 Repair / 7 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 43.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 13
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 7
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 43,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "sunk-avoidable-costs",
+      "title": "Sunk & Avoidable Costs",
+      "description": "Distinguish sunk from avoidable costs and use forward-looking incremental reasoning in current production decisions.",
+      "includedSkills": [
+        "avoidable_cost",
+        "sunk_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "short-run-cost-curves",
+        "marginal-analysis"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.5"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 15,
+        "elite": 3,
+        "legendary": 3,
+        "calculation": 0,
+        "boss": 2,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7,
+        "elite": 3,
+        "legendary": 3,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 23
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 23
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Costs topic",
+      "coverageStatusNote": "Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 18.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 18,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "long-run-average-cost-scale",
+      "title": "LRAC, Economies & Diseconomies of Scale",
+      "description": "Interpret long-run average cost, plant choice, economies of scale, diseconomies of scale, and their sources.",
+      "includedSkills": [
+        "diseconomies_of_scale",
+        "economies_of_scale",
+        "integrated_cost_analysis",
+        "long_run_average_cost"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "minimum-efficient-scale",
+        "short-run-production"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.6"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 28,
+        "elite": 5,
+        "legendary": 18,
+        "calculation": 2,
+        "boss": 6,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 16,
+        "elite": 5,
+        "legendary": 18,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 59
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 59
+      },
+      "calculationCoverage": 2,
+      "graphCoverage": 9,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 35.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 35,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "minimum-efficient-scale",
+      "title": "Minimum Efficient Scale & Constant Returns to Scale",
+      "description": "Identify minimum efficient scale and interpret flat minimum-LRAC ranges as constant returns to scale.",
+      "includedSkills": [
+        "constant_returns_to_scale",
+        "minimum_efficient_scale"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Costs of Production material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "opportunity-cost",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "long-run-average-cost-scale",
+        "perfect-competition"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "COP.6"
+      ],
+      "sourceGames": [
+        "costsOfProduction",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 15,
+        "elite": 3,
+        "legendary": 5,
+        "calculation": 0,
+        "boss": 5,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 10,
+        "elite": 3,
+        "legendary": 5,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 28
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 28
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 5,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
+      "instructionalClassification": "Costs of Production subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Costs topic",
+      "coverageStatusNote": "Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 18.",
+      "coverageFloorVersion": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+      "parentConceptId": "costs-of-production",
+      "selectionRole": "family-child",
+      "familyTitle": "Costs of Production",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 18,
+      "quiz15Status": "ready"
     },
     {
       "canonicalConceptId": "cpi-and-inflation-measurement",
@@ -8265,10 +9214,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseMicro3b-adaptive-support-backfill-v1",
-  "curationSummary": "Micro adaptive retrofit: complete targeted Repair/Bridge coverage for Elasticity, Surplus, and Trade granular child selectors after the ordinary Easy/Medium/Hard depth backfill. Adds only measured support gaps; no Legendary, checkpoint, graph, or calculation expansion.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1",
-  "canonicalQuestionCount": 7484,
-  "librarySha256": "8435a20b6d86026e4c0e588b64c0ad493cb2b539fcd3c65f9ab1eb41da99aa54",
-  "composerVersion": "4.5j.0"
+  "curationPhase": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+  "curationSummary": "Costs of Production granularity and adaptive maturation: expose ten child selectors and add exactly 166 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1",
+  "canonicalQuestionCount": 7650,
+  "librarySha256": "cd616ffcadb0c07faa0b30b64676175ce752ae4f9a99afa08521fbbf5d1437f5",
+  "composerVersion": "4.5k.0"
 }

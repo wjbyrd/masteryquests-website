@@ -1,0 +1,172 @@
+{
+  "phase": "phaseMicro4-costs-granularity-adaptive-backfill-v1",
+  "composerVersion": "4.5k.0",
+  "beforeCanonicalQuestionCount": 7484,
+  "afterCanonicalQuestionCount": 7650,
+  "addedQuestions": 166,
+  "parentRecords": 608,
+  "conceptCount": 100,
+  "librarySha256": "cd616ffcadb0c07faa0b30b64676175ce752ae4f9a99afa08521fbbf5d1437f5",
+  "subtopics": {
+    "economic-costs": {
+      "title": "Economic Costs: Explicit, Implicit & Opportunity Cost",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 24,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 15,
+      "pass": true
+    },
+    "profit-concepts": {
+      "title": "Accounting, Economic & Normal Profit",
+      "role": "standalone-ready",
+      "canonicalRecords": 72,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 32,
+      "pass": true
+    },
+    "short-run-production": {
+      "title": "Short-Run Production & Diminishing Marginal Product",
+      "role": "standalone-ready",
+      "canonicalRecords": 80,
+      "runtimeAdaptive": {
+        "easy": 11,
+        "medium": 12,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 43,
+      "pass": true
+    },
+    "cost-components-schedules": {
+      "title": "Cost Components & Cost Schedules",
+      "role": "standalone-ready",
+      "canonicalRecords": 67,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 14
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 35,
+      "pass": true
+    },
+    "average-costs": {
+      "title": "Average Costs: AFC, AVC & ATC",
+      "role": "standalone-ready",
+      "canonicalRecords": 61,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 38,
+      "pass": true
+    },
+    "marginal-cost-production-linkages": {
+      "title": "Marginal Cost & Production–Cost Linkages",
+      "role": "standalone-ready",
+      "canonicalRecords": 56,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 7,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 33,
+      "pass": true
+    },
+    "short-run-cost-curves": {
+      "title": "Short-Run Cost Curves: Relationships & Shifts",
+      "role": "standalone-ready",
+      "canonicalRecords": 114,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 7,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 43,
+      "pass": true
+    },
+    "sunk-avoidable-costs": {
+      "title": "Sunk & Avoidable Costs",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 29,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 18,
+      "pass": true
+    },
+    "long-run-average-cost-scale": {
+      "title": "LRAC, Economies & Diseconomies of Scale",
+      "role": "standalone-ready",
+      "canonicalRecords": 71,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 35,
+      "pass": true
+    },
+    "minimum-efficient-scale": {
+      "title": "Minimum Efficient Scale & Constant Returns to Scale",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 34,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 18,
+      "pass": true
+    }
+  }
+}
