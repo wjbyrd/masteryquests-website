@@ -1,0 +1,488 @@
+{
+  "phase": "costs-of-production-granularity-adaptive-audit-v1",
+  "parentConceptId": "costs-of-production",
+  "parentCanonicalRecords": 442,
+  "proposedSubtopicCount": 10,
+  "subtopics": {
+    "economic-costs": {
+      "title": "Economic Costs: Explicit, Implicit & Opportunity Cost",
+      "role": "supporting",
+      "pair": "profit-concepts",
+      "canonicalRecords": 13,
+      "poolCounts": {
+        "easy": 2,
+        "legendary": 1,
+        "calculation": 4,
+        "boss": 2,
+        "repair": 2,
+        "bridge": 2
+      },
+      "runtimeAdaptive": {
+        "easy": 2,
+        "medium": 0,
+        "hard": 4
+      },
+      "adaptiveDepthFloor": 5,
+      "adaptiveDepthDeficit": {
+        "easy": 3,
+        "medium": 5,
+        "hard": 1
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 2
+      },
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupportDeficit": {
+        "repair": 1,
+        "bridge": 1
+      },
+      "quizEligibleNonLegendary": 6,
+      "quiz15ReadyNow": false,
+      "graphQuestions": 0,
+      "skills": {
+        "explicit_cost": 1,
+        "implicit_cost": 6,
+        "opportunity_cost_firm": 6
+      },
+      "objectives": [
+        "COP.1"
+      ]
+    },
+    "profit-concepts": {
+      "title": "Accounting, Economic & Normal Profit",
+      "role": "standalone/focused",
+      "canonicalRecords": 54,
+      "poolCounts": {
+        "easy": 3,
+        "medium": 10,
+        "hard": 2,
+        "elite": 2,
+        "legendary": 13,
+        "calculation": 4,
+        "boss": 3,
+        "legendaryBoss": 12,
+        "repair": 2,
+        "bridge": 3
+      },
+      "runtimeAdaptive": {
+        "easy": 3,
+        "medium": 10,
+        "hard": 6
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 7,
+        "medium": 0,
+        "hard": 4
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 3
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 4,
+        "bridge": 3
+      },
+      "quizEligibleNonLegendary": 21,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 0,
+      "skills": {
+        "accounting_profit": 6,
+        "economic_profit": 24,
+        "normal_profit": 11,
+        "integrated_cost_analysis": 13
+      },
+      "objectives": [
+        "COP.1"
+      ]
+    },
+    "short-run-production": {
+      "title": "Short-Run Production & Diminishing Marginal Product",
+      "role": "standalone/focused",
+      "canonicalRecords": 74,
+      "poolCounts": {
+        "easy": 11,
+        "medium": 12,
+        "hard": 9,
+        "elite": 7,
+        "legendary": 10,
+        "calculation": 4,
+        "boss": 15,
+        "repair": 6
+      },
+      "runtimeAdaptive": {
+        "easy": 11,
+        "medium": 12,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 0,
+        "medium": 0,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 0
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 0,
+        "bridge": 6
+      },
+      "quizEligibleNonLegendary": 43,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 22,
+      "skills": {
+        "short_run_long_run": 5,
+        "fixed_variable_inputs": 3,
+        "total_product": 3,
+        "marginal_product": 19,
+        "average_product": 9,
+        "diminishing_marginal_product": 25,
+        "marginal_average_relationship": 7,
+        "integrated_cost_analysis": 1,
+        "production_function": 2
+      },
+      "objectives": [
+        "COP.2"
+      ]
+    },
+    "cost-components-schedules": {
+      "title": "Cost Components & Cost Schedules",
+      "role": "standalone/focused",
+      "canonicalRecords": 50,
+      "poolCounts": {
+        "easy": 6,
+        "medium": 7,
+        "hard": 7,
+        "elite": 1,
+        "legendary": 6,
+        "calculation": 7,
+        "boss": 2,
+        "legendaryBoss": 12,
+        "repair": 2
+      },
+      "runtimeAdaptive": {
+        "easy": 6,
+        "medium": 7,
+        "hard": 14
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 4,
+        "medium": 3,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 0
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 4,
+        "bridge": 6
+      },
+      "quizEligibleNonLegendary": 28,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 8,
+      "skills": {
+        "fixed_cost": 6,
+        "variable_cost": 3,
+        "total_cost": 15,
+        "cost_schedule_completion": 13,
+        "integrated_cost_analysis": 13
+      },
+      "objectives": [
+        "COP.3"
+      ]
+    },
+    "average-costs": {
+      "title": "Average Costs: AFC, AVC & ATC",
+      "role": "standalone/focused",
+      "canonicalRecords": 38,
+      "poolCounts": {
+        "easy": 9,
+        "medium": 3,
+        "hard": 1,
+        "elite": 8,
+        "legendary": 6,
+        "calculation": 5,
+        "boss": 5,
+        "repair": 1
+      },
+      "runtimeAdaptive": {
+        "easy": 9,
+        "medium": 3,
+        "hard": 6
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 1,
+        "medium": 7,
+        "hard": 4
+      },
+      "adaptiveSupport": {
+        "repair": 1,
+        "bridge": 0
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 5,
+        "bridge": 6
+      },
+      "quizEligibleNonLegendary": 26,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 15,
+      "skills": {
+        "average_fixed_cost": 18,
+        "average_variable_cost": 8,
+        "average_total_cost": 12
+      },
+      "objectives": [
+        "COP.3"
+      ]
+    },
+    "marginal-cost-production-linkages": {
+      "title": "Marginal Cost & Production–Cost Linkages",
+      "role": "standalone/focused",
+      "canonicalRecords": 38,
+      "poolCounts": {
+        "easy": 2,
+        "medium": 5,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 5,
+        "calculation": 4,
+        "boss": 5,
+        "repair": 1,
+        "bridge": 7
+      },
+      "runtimeAdaptive": {
+        "easy": 2,
+        "medium": 5,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 8,
+        "medium": 5,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 1,
+        "bridge": 7
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 5,
+        "bridge": 0
+      },
+      "quizEligibleNonLegendary": 20,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 7,
+      "skills": {
+        "marginal_cost": 18,
+        "marginal_product_marginal_cost": 20
+      },
+      "objectives": [
+        "COP.3",
+        "COP.4",
+        "COP.5"
+      ]
+    },
+    "short-run-cost-curves": {
+      "title": "Short-Run Cost Curves: Relationships & Shifts",
+      "role": "standalone/focused",
+      "canonicalRecords": 104,
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 13,
+        "elite": 10,
+        "legendary": 31,
+        "boss": 15,
+        "legendaryBoss": 12,
+        "repair": 4,
+        "bridge": 7
+      },
+      "runtimeAdaptive": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 4,
+        "medium": 4,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 4,
+        "bridge": 7
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 2,
+        "bridge": 0
+      },
+      "quizEligibleNonLegendary": 35,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 29,
+      "skills": {
+        "average_fixed_cost": 5,
+        "cost_curve_relationships": 13,
+        "marginal_average_relationship": 36,
+        "short_run_cost_analysis": 33,
+        "integrated_cost_analysis": 15,
+        "variable_cost": 2
+      },
+      "objectives": [
+        "COP.4",
+        "COP.5"
+      ]
+    },
+    "sunk-avoidable-costs": {
+      "title": "Sunk & Avoidable Costs",
+      "role": "supporting",
+      "pair": "short-run-cost-curves",
+      "canonicalRecords": 10,
+      "poolCounts": {
+        "easy": 1,
+        "hard": 1,
+        "elite": 3,
+        "legendary": 3,
+        "boss": 2
+      },
+      "runtimeAdaptive": {
+        "easy": 1,
+        "medium": 0,
+        "hard": 1
+      },
+      "adaptiveDepthFloor": 5,
+      "adaptiveDepthDeficit": {
+        "easy": 4,
+        "medium": 5,
+        "hard": 4
+      },
+      "adaptiveSupport": {
+        "repair": 0,
+        "bridge": 0
+      },
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupportDeficit": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "quizEligibleNonLegendary": 5,
+      "quiz15ReadyNow": false,
+      "graphQuestions": 0,
+      "skills": {
+        "sunk_cost": 5,
+        "avoidable_cost": 5
+      },
+      "objectives": [
+        "COP.5"
+      ]
+    },
+    "long-run-average-cost-scale": {
+      "title": "LRAC, Economies & Diseconomies of Scale",
+      "role": "standalone/focused",
+      "canonicalRecords": 44,
+      "poolCounts": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 5,
+        "elite": 5,
+        "legendary": 18,
+        "calculation": 2,
+        "boss": 6,
+        "repair": 1,
+        "bridge": 1
+      },
+      "runtimeAdaptive": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 7
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 3
+      },
+      "adaptiveSupport": {
+        "repair": 1,
+        "bridge": 1
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 5,
+        "bridge": 5
+      },
+      "quizEligibleNonLegendary": 18,
+      "quiz15ReadyNow": true,
+      "graphQuestions": 9,
+      "skills": {
+        "economies_of_scale": 15,
+        "diseconomies_of_scale": 11,
+        "long_run_average_cost": 17,
+        "integrated_cost_analysis": 1
+      },
+      "objectives": [
+        "COP.6"
+      ]
+    },
+    "minimum-efficient-scale": {
+      "title": "Minimum Efficient Scale & Constant Returns to Scale",
+      "role": "supporting",
+      "pair": "long-run-average-cost-scale",
+      "canonicalRecords": 17,
+      "poolCounts": {
+        "easy": 1,
+        "hard": 2,
+        "elite": 3,
+        "legendary": 5,
+        "boss": 5,
+        "repair": 1
+      },
+      "runtimeAdaptive": {
+        "easy": 1,
+        "medium": 0,
+        "hard": 2
+      },
+      "adaptiveDepthFloor": 5,
+      "adaptiveDepthDeficit": {
+        "easy": 4,
+        "medium": 5,
+        "hard": 3
+      },
+      "adaptiveSupport": {
+        "repair": 1,
+        "bridge": 0
+      },
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupportDeficit": {
+        "repair": 2,
+        "bridge": 3
+      },
+      "quizEligibleNonLegendary": 6,
+      "quiz15ReadyNow": false,
+      "graphQuestions": 5,
+      "skills": {
+        "minimum_efficient_scale": 11,
+        "constant_returns_to_scale": 6
+      },
+      "objectives": [
+        "COP.6"
+      ]
+    }
+  },
+  "estimatedBackfill": {
+    "ordinaryAdaptiveDepth": 102,
+    "adaptiveSupport": 64,
+    "total": 166
+  }
+}

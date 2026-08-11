@@ -1,0 +1,468 @@
+{
+  "phase": "micro-child-adaptive-depth-audit-v1",
+  "composerVersion": "4.5h.0",
+  "canonicalQuestionCountBefore": 7274,
+  "rule": {
+    "standaloneOrFocusedFloor": "10 runtime Easy + 10 Medium + 10 Hard",
+    "supportingFloor": "5 runtime Easy + 5 Medium + 5 Hard",
+    "rationale": "Exam/Timed allocate approximately ten base rooms per difficulty tier and getAdaptiveQuestion suppresses the last ten IDs. Supporting selectors are intended to be combined, so a 5-per-tier floor lets two paired supporting topics contribute at least ten per tier."
+  },
+  "rows": [
+    {
+      "parentConceptId": "elasticity",
+      "parentTitle": "Elasticity",
+      "subtopicId": "price-elasticity-of-demand",
+      "title": "Price Elasticity of Demand",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 24,
+        "medium": 14,
+        "hard": 32
+      },
+      "elite": 15,
+      "legendary": 34,
+      "rawCalculation": 10,
+      "repair": 10,
+      "bridge": 8,
+      "totalRecords": 171,
+      "gaps": {
+        "easy": 0,
+        "medium": 0,
+        "hard": 0
+      },
+      "questionsToAdd": 0
+    },
+    {
+      "parentConceptId": "elasticity",
+      "parentTitle": "Elasticity",
+      "subtopicId": "price-elasticity-of-supply",
+      "title": "Price Elasticity of Supply",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 6,
+        "medium": 5,
+        "hard": 11
+      },
+      "elite": 3,
+      "legendary": 15,
+      "rawCalculation": 5,
+      "repair": 2,
+      "bridge": 2,
+      "totalRecords": 54,
+      "gaps": {
+        "easy": 4,
+        "medium": 5,
+        "hard": 0
+      },
+      "questionsToAdd": 9
+    },
+    {
+      "parentConceptId": "elasticity",
+      "parentTitle": "Elasticity",
+      "subtopicId": "income-elasticity-of-demand",
+      "title": "Income Elasticity of Demand",
+      "classification": "supporting",
+      "floorPerAdaptiveTier": 5,
+      "runtimeAdaptiveCounts": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 6
+      },
+      "elite": 2,
+      "legendary": 8,
+      "rawCalculation": 5,
+      "repair": 1,
+      "bridge": 0,
+      "totalRecords": 27,
+      "gaps": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 6
+    },
+    {
+      "parentConceptId": "elasticity",
+      "parentTitle": "Elasticity",
+      "subtopicId": "cross-price-elasticity-of-demand",
+      "title": "Cross-Price Elasticity of Demand",
+      "classification": "supporting",
+      "floorPerAdaptiveTier": 5,
+      "runtimeAdaptiveCounts": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 7
+      },
+      "elite": 4,
+      "legendary": 10,
+      "rawCalculation": 5,
+      "repair": 1,
+      "bridge": 0,
+      "totalRecords": 33,
+      "gaps": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 6
+    },
+    {
+      "parentConceptId": "elasticity",
+      "parentTitle": "Elasticity",
+      "subtopicId": "elasticity-and-total-revenue",
+      "title": "Elasticity and Total Revenue",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 4,
+        "medium": 10,
+        "hard": 7
+      },
+      "elite": 8,
+      "legendary": 8,
+      "rawCalculation": 5,
+      "repair": 3,
+      "bridge": 0,
+      "totalRecords": 53,
+      "gaps": {
+        "easy": 6,
+        "medium": 0,
+        "hard": 3
+      },
+      "questionsToAdd": 9
+    },
+    {
+      "parentConceptId": "elasticity",
+      "parentTitle": "Elasticity",
+      "subtopicId": "applications-of-elasticity",
+      "title": "Applications of Elasticity",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 1,
+        "medium": 6,
+        "hard": 6
+      },
+      "elite": 6,
+      "legendary": 22,
+      "rawCalculation": 0,
+      "repair": 3,
+      "bridge": 10,
+      "totalRecords": 80,
+      "gaps": {
+        "easy": 9,
+        "medium": 4,
+        "hard": 4
+      },
+      "questionsToAdd": 17
+    },
+    {
+      "parentConceptId": "consumer-and-producer-surplus",
+      "parentTitle": "Consumer and Producer Surplus",
+      "subtopicId": "consumer-surplus",
+      "title": "Consumer Surplus & Willingness to Pay",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 11,
+        "medium": 7,
+        "hard": 12
+      },
+      "elite": 2,
+      "legendary": 3,
+      "rawCalculation": 10,
+      "repair": 6,
+      "bridge": 2,
+      "totalRecords": 54,
+      "gaps": {
+        "easy": 0,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 3
+    },
+    {
+      "parentConceptId": "consumer-and-producer-surplus",
+      "parentTitle": "Consumer and Producer Surplus",
+      "subtopicId": "producer-surplus",
+      "title": "Producer Surplus & Willingness to Accept",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 11,
+        "medium": 7,
+        "hard": 13
+      },
+      "elite": 3,
+      "legendary": 3,
+      "rawCalculation": 10,
+      "repair": 6,
+      "bridge": 3,
+      "totalRecords": 56,
+      "gaps": {
+        "easy": 0,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 3
+    },
+    {
+      "parentConceptId": "consumer-and-producer-surplus",
+      "parentTitle": "Consumer and Producer Surplus",
+      "subtopicId": "total-surplus-gains-from-exchange",
+      "title": "Total Surplus & Gains from Exchange",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 2,
+        "medium": 6,
+        "hard": 11
+      },
+      "elite": 7,
+      "legendary": 20,
+      "rawCalculation": 3,
+      "repair": 4,
+      "bridge": 2,
+      "totalRecords": 72,
+      "gaps": {
+        "easy": 8,
+        "medium": 4,
+        "hard": 0
+      },
+      "questionsToAdd": 12
+    },
+    {
+      "parentConceptId": "consumer-and-producer-surplus",
+      "parentTitle": "Consumer and Producer Surplus",
+      "subtopicId": "efficient-quantity-allocation",
+      "title": "Efficient Quantity & Allocation",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 4,
+        "medium": 7,
+        "hard": 15
+      },
+      "elite": 6,
+      "legendary": 38,
+      "rawCalculation": 5,
+      "repair": 0,
+      "bridge": 1,
+      "totalRecords": 99,
+      "gaps": {
+        "easy": 6,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 9
+    },
+    {
+      "parentConceptId": "consumer-and-producer-surplus",
+      "parentTitle": "Consumer and Producer Surplus",
+      "subtopicId": "surplus-changes-policy-effects",
+      "title": "Changes in Surplus & Policy Effects",
+      "classification": "supporting",
+      "floorPerAdaptiveTier": 5,
+      "runtimeAdaptiveCounts": {
+        "easy": 0,
+        "medium": 2,
+        "hard": 6
+      },
+      "elite": 9,
+      "legendary": 18,
+      "rawCalculation": 2,
+      "repair": 2,
+      "bridge": 11,
+      "totalRecords": 61,
+      "gaps": {
+        "easy": 5,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 8
+    },
+    {
+      "parentConceptId": "consumer-and-producer-surplus",
+      "parentTitle": "Consumer and Producer Surplus",
+      "subtopicId": "efficiency-equity-surplus-limits",
+      "title": "Efficiency, Equity & Limits of Surplus Analysis",
+      "classification": "supporting",
+      "floorPerAdaptiveTier": 5,
+      "runtimeAdaptiveCounts": {
+        "easy": 2,
+        "medium": 1,
+        "hard": 3
+      },
+      "elite": 3,
+      "legendary": 8,
+      "rawCalculation": 0,
+      "repair": 2,
+      "bridge": 1,
+      "totalRecords": 28,
+      "gaps": {
+        "easy": 3,
+        "medium": 4,
+        "hard": 2
+      },
+      "questionsToAdd": 9
+    },
+    {
+      "parentConceptId": "international-trade-and-trade-policy",
+      "parentTitle": "International Trade and Trade Policy",
+      "subtopicId": "trade-world-price-status",
+      "title": "World Prices & Importer/Exporter Status",
+      "classification": "supporting",
+      "floorPerAdaptiveTier": 5,
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 12,
+        "hard": 0
+      },
+      "elite": 3,
+      "legendary": 0,
+      "rawCalculation": 0,
+      "repair": 2,
+      "bridge": 5,
+      "totalRecords": 31,
+      "gaps": {
+        "easy": 0,
+        "medium": 0,
+        "hard": 5
+      },
+      "questionsToAdd": 5
+    },
+    {
+      "parentConceptId": "international-trade-and-trade-policy",
+      "parentTitle": "International Trade and Trade Policy",
+      "subtopicId": "trade-domestic-production-consumption-quantities",
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 12
+      },
+      "elite": 0,
+      "legendary": 20,
+      "rawCalculation": 8,
+      "repair": 2,
+      "bridge": 4,
+      "totalRecords": 74,
+      "gaps": {
+        "easy": 0,
+        "medium": 0,
+        "hard": 0
+      },
+      "questionsToAdd": 0
+    },
+    {
+      "parentConceptId": "international-trade-and-trade-policy",
+      "parentTitle": "International Trade and Trade Policy",
+      "subtopicId": "trade-gains-surplus-winners-losers",
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 6,
+        "medium": 2,
+        "hard": 32
+      },
+      "elite": 8,
+      "legendary": 24,
+      "rawCalculation": 15,
+      "repair": 5,
+      "bridge": 5,
+      "totalRecords": 124,
+      "gaps": {
+        "easy": 4,
+        "medium": 8,
+        "hard": 0
+      },
+      "questionsToAdd": 12
+    },
+    {
+      "parentConceptId": "international-trade-and-trade-policy",
+      "parentTitle": "International Trade and Trade Policy",
+      "subtopicId": "tariffs-revenue-deadweight-loss",
+      "title": "Tariffs, Revenue & Deadweight Loss",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 20
+      },
+      "elite": 8,
+      "legendary": 24,
+      "rawCalculation": 6,
+      "repair": 4,
+      "bridge": 4,
+      "totalRecords": 94,
+      "gaps": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 0
+      },
+      "questionsToAdd": 6
+    },
+    {
+      "parentConceptId": "international-trade-and-trade-policy",
+      "parentTitle": "International Trade and Trade Policy",
+      "subtopicId": "import-quotas-quota-rents",
+      "title": "Import Quotas, Quota Rents & Tariff–Quota Comparison",
+      "classification": "standalone/focused",
+      "floorPerAdaptiveTier": 10,
+      "runtimeAdaptiveCounts": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 8
+      },
+      "elite": 7,
+      "legendary": 6,
+      "rawCalculation": 1,
+      "repair": 4,
+      "bridge": 0,
+      "totalRecords": 47,
+      "gaps": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 2
+      },
+      "questionsToAdd": 8
+    },
+    {
+      "parentConceptId": "international-trade-and-trade-policy",
+      "parentTitle": "International Trade and Trade Policy",
+      "subtopicId": "trade-policy-efficiency-distribution",
+      "title": "Trade-Policy Arguments, Efficiency & Distribution",
+      "classification": "supporting",
+      "floorPerAdaptiveTier": 5,
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 2,
+        "hard": 0
+      },
+      "elite": 12,
+      "legendary": 26,
+      "rawCalculation": 0,
+      "repair": 3,
+      "bridge": 2,
+      "totalRecords": 56,
+      "gaps": {
+        "easy": 0,
+        "medium": 3,
+        "hard": 5
+      },
+      "questionsToAdd": 8
+    }
+  ],
+  "familyGapTotals": {
+    "elasticity": 47,
+    "consumer-and-producer-surplus": 44,
+    "international-trade-and-trade-policy": 39
+  },
+  "totalQuestionsToAdd": 130
+}

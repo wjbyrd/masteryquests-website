@@ -1,0 +1,195 @@
+{
+  "phase": "phaseMicro3a-adaptive-depth-backfill-v1",
+  "composerVersion": "4.5i.0",
+  "beforeCanonicalQuestionCount": 7274,
+  "afterCanonicalQuestionCount": 7404,
+  "added": 130,
+  "byFamily": {
+    "elasticity": 47,
+    "consumer-and-producer-surplus": 44,
+    "international-trade-and-trade-policy": 39
+  },
+  "librarySha256": "e7313d929ff7a26ef322a44f84cfaceec8f166617823e3503ab505de93284e1a",
+  "children": {
+    "price-elasticity-of-demand": {
+      "title": "Price Elasticity of Demand",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 24,
+        "medium": 14,
+        "hard": 32
+      },
+      "pass": true
+    },
+    "price-elasticity-of-supply": {
+      "title": "Price Elasticity of Supply",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "pass": true
+    },
+    "income-elasticity-of-demand": {
+      "title": "Income Elasticity of Demand",
+      "floor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6
+      },
+      "pass": true
+    },
+    "cross-price-elasticity-of-demand": {
+      "title": "Cross-Price Elasticity of Demand",
+      "floor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7
+      },
+      "pass": true
+    },
+    "elasticity-and-total-revenue": {
+      "title": "Elasticity and Total Revenue",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "pass": true
+    },
+    "applications-of-elasticity": {
+      "title": "Applications of Elasticity",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "pass": true
+    },
+    "consumer-surplus": {
+      "title": "Consumer Surplus & Willingness to Pay",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 11,
+        "medium": 10,
+        "hard": 12
+      },
+      "pass": true
+    },
+    "producer-surplus": {
+      "title": "Producer Surplus & Willingness to Accept",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 11,
+        "medium": 10,
+        "hard": 13
+      },
+      "pass": true
+    },
+    "total-surplus-gains-from-exchange": {
+      "title": "Total Surplus & Gains from Exchange",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "pass": true
+    },
+    "efficient-quantity-allocation": {
+      "title": "Efficient Quantity & Allocation",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 15
+      },
+      "pass": true
+    },
+    "surplus-changes-policy-effects": {
+      "title": "Changes in Surplus & Policy Effects",
+      "floor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6
+      },
+      "pass": true
+    },
+    "efficiency-equity-surplus-limits": {
+      "title": "Efficiency, Equity & Limits of Surplus Analysis",
+      "floor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "pass": true
+    },
+    "trade-world-price-status": {
+      "title": "World Prices & Importer/Exporter Status",
+      "floor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 12,
+        "hard": 5
+      },
+      "pass": true
+    },
+    "trade-domestic-production-consumption-quantities": {
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 12
+      },
+      "pass": true
+    },
+    "trade-gains-surplus-winners-losers": {
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 32
+      },
+      "pass": true
+    },
+    "tariffs-revenue-deadweight-loss": {
+      "title": "Tariffs, Revenue & Deadweight Loss",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 20
+      },
+      "pass": true
+    },
+    "import-quotas-quota-rents": {
+      "title": "Import Quotas, Quota Rents & Tariff–Quota Comparison",
+      "floor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "pass": true
+    },
+    "trade-policy-efficiency-distribution": {
+      "title": "Trade-Policy Arguments, Efficiency & Distribution",
+      "floor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "pass": true
+    }
+  }
+}

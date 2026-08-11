@@ -1,0 +1,23 @@
+{
+  "phase": "phaseMicro3b-adaptive-support-backfill-v1",
+  "ok": true,
+  "baselineCanonicalRecords": 7274,
+  "currentCanonicalRecords": 7484,
+  "expectedAdded": 210,
+  "actualAdded": 210,
+  "missingBaselineIds": [],
+  "changedBaselineIds": [],
+  "baselineDuplicateIds": [],
+  "currentDuplicateIds": [],
+  "newIdPrefixes": {
+    "PMA-ELAS-": 47,
+    "PMA-CPS-": 44,
+    "PMA-ITP-": 39,
+    "PMS-ELAS-": 30,
+    "PMS-CPS-": 28,
+    "PMS-ITP-": 22
+  },
+  "assetInventoryEqualToPhaseMicro3": true,
+  "assetCount": 396,
+  "assetDiskIssues": []
+}

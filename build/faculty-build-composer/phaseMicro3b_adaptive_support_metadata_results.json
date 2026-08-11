@@ -1,0 +1,325 @@
+{
+  "phase": "phaseMicro3b-adaptive-support-backfill-v1",
+  "composerVersion": "4.5j.0",
+  "beforeCanonicalQuestionCount": 7404,
+  "afterCanonicalQuestionCount": 7484,
+  "added": 80,
+  "byFamily": {
+    "elasticity": 30,
+    "consumer-and-producer-surplus": 28,
+    "international-trade-and-trade-policy": 22
+  },
+  "byRole": {
+    "repair": 34,
+    "bridge": 46
+  },
+  "librarySha256": "8435a20b6d86026e4c0e588b64c0ad493cb2b539fcd3c65f9ab1eb41da99aa54",
+  "children": {
+    "price-elasticity-of-demand": {
+      "title": "Price Elasticity of Demand",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 24,
+        "medium": 14,
+        "hard": 32
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 10,
+        "bridge": 8
+      },
+      "adaptiveSupportPass": true
+    },
+    "price-elasticity-of-supply": {
+      "title": "Price Elasticity of Supply",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "income-elasticity-of-demand": {
+      "title": "Income Elasticity of Demand",
+      "role": "supporting",
+      "adaptiveDepthFloor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupport": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportPass": true
+    },
+    "cross-price-elasticity-of-demand": {
+      "title": "Cross-Price Elasticity of Demand",
+      "role": "supporting",
+      "adaptiveDepthFloor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupport": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportPass": true
+    },
+    "elasticity-and-total-revenue": {
+      "title": "Elasticity and Total Revenue",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "applications-of-elasticity": {
+      "title": "Applications of Elasticity",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 10
+      },
+      "adaptiveSupportPass": true
+    },
+    "consumer-surplus": {
+      "title": "Consumer Surplus & Willingness to Pay",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 11,
+        "medium": 10,
+        "hard": 12
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "producer-surplus": {
+      "title": "Producer Surplus & Willingness to Accept",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 11,
+        "medium": 10,
+        "hard": 13
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "total-surplus-gains-from-exchange": {
+      "title": "Total Surplus & Gains from Exchange",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "efficient-quantity-allocation": {
+      "title": "Efficient Quantity & Allocation",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 15
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "surplus-changes-policy-effects": {
+      "title": "Changes in Surplus & Policy Effects",
+      "role": "supporting",
+      "adaptiveDepthFloor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupport": {
+        "repair": 3,
+        "bridge": 11
+      },
+      "adaptiveSupportPass": true
+    },
+    "efficiency-equity-surplus-limits": {
+      "title": "Efficiency, Equity & Limits of Surplus Analysis",
+      "role": "supporting",
+      "adaptiveDepthFloor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupport": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportPass": true
+    },
+    "trade-world-price-status": {
+      "title": "World Prices & Importer/Exporter Status",
+      "role": "supporting",
+      "adaptiveDepthFloor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 12,
+        "hard": 5
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupport": {
+        "repair": 3,
+        "bridge": 5
+      },
+      "adaptiveSupportPass": true
+    },
+    "trade-domestic-production-consumption-quantities": {
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 12
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "trade-gains-surplus-winners-losers": {
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 32
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "tariffs-revenue-deadweight-loss": {
+      "title": "Tariffs, Revenue & Deadweight Loss",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 20
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "import-quotas-quota-rents": {
+      "title": "Import Quotas, Quota Rents & Tariff–Quota Comparison",
+      "role": "standalone/focused",
+      "adaptiveDepthFloor": 10,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupport": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportPass": true
+    },
+    "trade-policy-efficiency-distribution": {
+      "title": "Trade-Policy Arguments, Efficiency & Distribution",
+      "role": "supporting",
+      "adaptiveDepthFloor": 5,
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthPass": true,
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupport": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportPass": true
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "phase": "phaseMicro3-trade-granularity-v1",
+  "composerVersion": "4.5h.0",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1",
+  "librarySha256": "f1c3567dc10debde04e14b3cf8cf1a956a7b6902ec125313b74ca30db4f4f8aa",
+  "canonicalQuestionCount": 7274,
+  "conceptCount": 90,
+  "parentRecordCount": 426,
+  "subtopics": {
+    "trade-world-price-status": {
+      "title": "World Prices & Importer/Exporter Status",
+      "objective": "ITP.1",
+      "total": 31,
+      "poolCounts": {
+        "easy": 5,
+        "medium": 12,
+        "elite": 3,
+        "boss": 4,
+        "repairQuestions": 2,
+        "bridgeQuestions": 5
+      },
+      "standaloneRecommendation": "supporting-subtopic"
+    },
+    "trade-domestic-production-consumption-quantities": {
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "objective": "ITP.2",
+      "total": 74,
+      "poolCounts": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 4,
+        "legendary": 20,
+        "calculation": 8,
+        "boss": 14,
+        "repairQuestions": 2,
+        "bridgeQuestions": 4
+      },
+      "standaloneRecommendation": "standalone-ready"
+    },
+    "trade-gains-surplus-winners-losers": {
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "objective": "ITP.3",
+      "total": 124,
+      "poolCounts": {
+        "easy": 6,
+        "medium": 2,
+        "hard": 17,
+        "elite": 8,
+        "legendary": 24,
+        "calculation": 15,
+        "boss": 18,
+        "legendaryBoss": 24,
+        "repairQuestions": 5,
+        "bridgeQuestions": 5
+      },
+      "standaloneRecommendation": "standalone-ready"
+    },
+    "tariffs-revenue-deadweight-loss": {
+      "title": "Tariffs, Revenue & Deadweight Loss",
+      "objective": "ITP.4",
+      "total": 94,
+      "poolCounts": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 14,
+        "elite": 8,
+        "legendary": 24,
+        "calculation": 6,
+        "boss": 8,
+        "legendaryBoss": 12,
+        "repairQuestions": 4,
+        "bridgeQuestions": 4
+      },
+      "standaloneRecommendation": "standalone-ready"
+    },
+    "import-quotas-quota-rents": {
+      "title": "Import Quotas, Quota Rents & Tariff\u2013Quota Comparison",
+      "objective": "ITP.5",
+      "total": 47,
+      "poolCounts": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 7,
+        "elite": 7,
+        "legendary": 6,
+        "calculation": 1,
+        "boss": 8,
+        "repairQuestions": 4
+      },
+      "standaloneRecommendation": "standalone-ready"
+    },
+    "trade-policy-efficiency-distribution": {
+      "title": "Trade-Policy Arguments, Efficiency & Distribution",
+      "objective": "ITP.6",
+      "total": 56,
+      "poolCounts": {
+        "easy": 5,
+        "medium": 2,
+        "elite": 12,
+        "legendary": 26,
+        "boss": 6,
+        "repairQuestions": 3,
+        "bridgeQuestions": 2
+      },
+      "standaloneRecommendation": "supporting-subtopic"
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "phase": "phaseMicro3b-adaptive-support-backfill-v1",
+  "ok": true,
+  "composerVersion": "4.5j.0",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1",
+  "librarySha256": "8435a20b6d86026e4c0e588b64c0ad493cb2b539fcd3c65f9ab1eb41da99aa54",
+  "canonicalQuestionCount": 7484,
+  "conceptCount": 90,
+  "nearDuplicateFlags": 0,
+  "newAdaptiveSupportRouted": "80/80",
+  "families": {
+    "elasticity": {
+      "parentCanonical": 495,
+      "childUnionCanonical": 495,
+      "answerAuditOk": true,
+      "supportPair": [
+        "income-elasticity-of-demand",
+        "cross-price-elasticity-of-demand"
+      ],
+      "children": {
+        "price-elasticity-of-demand": {
+          "role": "standalone/focused",
+          "canonical": 171,
+          "runtimeAdaptive": {
+            "easy": 24,
+            "medium": 14,
+            "hard": 32
+          },
+          "adaptiveSupport": {
+            "repair": 10,
+            "bridge": 8
+          },
+          "quizEligible": 85
+        },
+        "price-elasticity-of-supply": {
+          "role": "standalone/focused",
+          "canonical": 71,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 11
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 34
+        },
+        "income-elasticity-of-demand": {
+          "role": "supporting",
+          "canonical": 38,
+          "runtimeAdaptive": {
+            "easy": 5,
+            "medium": 5,
+            "hard": 6
+          },
+          "adaptiveSupport": {
+            "repair": 3,
+            "bridge": 3
+          },
+          "quizEligible": 18
+        },
+        "cross-price-elasticity-of-demand": {
+          "role": "supporting",
+          "canonical": 44,
+          "runtimeAdaptive": {
+            "easy": 5,
+            "medium": 5,
+            "hard": 7
+          },
+          "adaptiveSupport": {
+            "repair": 3,
+            "bridge": 3
+          },
+          "quizEligible": 21
+        },
+        "elasticity-and-total-revenue": {
+          "role": "standalone/focused",
+          "canonical": 71,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 10
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 38
+        },
+        "applications-of-elasticity": {
+          "role": "standalone/focused",
+          "canonical": 100,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 10
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 10
+          },
+          "quizEligible": 36
+        }
+      }
+    },
+    "consumer-and-producer-surplus": {
+      "parentCanonical": 442,
+      "childUnionCanonical": 442,
+      "answerAuditOk": true,
+      "supportPair": [
+        "surplus-changes-policy-effects",
+        "efficiency-equity-surplus-limits"
+      ],
+      "children": {
+        "consumer-surplus": {
+          "role": "standalone/focused",
+          "canonical": 61,
+          "runtimeAdaptive": {
+            "easy": 11,
+            "medium": 10,
+            "hard": 12
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 35
+        },
+        "producer-surplus": {
+          "role": "standalone/focused",
+          "canonical": 62,
+          "runtimeAdaptive": {
+            "easy": 11,
+            "medium": 10,
+            "hard": 13
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 37
+        },
+        "total-surplus-gains-from-exchange": {
+          "role": "standalone/focused",
+          "canonical": 90,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 11
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 38
+        },
+        "efficient-quantity-allocation": {
+          "role": "standalone/focused",
+          "canonical": 119,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 15
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 41
+        },
+        "surplus-changes-policy-effects": {
+          "role": "supporting",
+          "canonical": 70,
+          "runtimeAdaptive": {
+            "easy": 5,
+            "medium": 5,
+            "hard": 6
+          },
+          "adaptiveSupport": {
+            "repair": 3,
+            "bridge": 11
+          },
+          "quizEligible": 25
+        },
+        "efficiency-equity-surplus-limits": {
+          "role": "supporting",
+          "canonical": 40,
+          "runtimeAdaptive": {
+            "easy": 5,
+            "medium": 5,
+            "hard": 5
+          },
+          "adaptiveSupport": {
+            "repair": 3,
+            "bridge": 3
+          },
+          "quizEligible": 18
+        }
+      }
+    },
+    "international-trade-and-trade-policy": {
+      "parentCanonical": 487,
+      "childUnionCanonical": 487,
+      "answerAuditOk": true,
+      "supportPair": [
+        "trade-world-price-status",
+        "trade-policy-efficiency-distribution"
+      ],
+      "children": {
+        "trade-world-price-status": {
+          "role": "supporting",
+          "canonical": 37,
+          "runtimeAdaptive": {
+            "easy": 5,
+            "medium": 12,
+            "hard": 5
+          },
+          "adaptiveSupport": {
+            "repair": 3,
+            "bridge": 5
+          },
+          "quizEligible": 25
+        },
+        "trade-domestic-production-consumption-quantities": {
+          "role": "standalone/focused",
+          "canonical": 80,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 12,
+            "hard": 12
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 34
+        },
+        "trade-gains-surplus-winners-losers": {
+          "role": "standalone/focused",
+          "canonical": 138,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 32
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 60
+        },
+        "tariffs-revenue-deadweight-loss": {
+          "role": "standalone/focused",
+          "canonical": 104,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 20
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 48
+        },
+        "import-quotas-quota-rents": {
+          "role": "standalone/focused",
+          "canonical": 63,
+          "runtimeAdaptive": {
+            "easy": 10,
+            "medium": 10,
+            "hard": 10
+          },
+          "adaptiveSupport": {
+            "repair": 6,
+            "bridge": 6
+          },
+          "quizEligible": 37
+        },
+        "trade-policy-efficiency-distribution": {
+          "role": "supporting",
+          "canonical": 65,
+          "runtimeAdaptive": {
+            "easy": 5,
+            "medium": 5,
+            "hard": 5
+          },
+          "adaptiveSupport": {
+            "repair": 3,
+            "bridge": 3
+          },
+          "quizEligible": 27
+        }
+      }
+    }
+  },
+  "legacyRecipes": {
+    "passed": 8,
+    "total": 8
+  },
+  "issues": []
+}

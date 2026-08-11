@@ -1,0 +1,4178 @@
+{
+  "phase": "phaseMicro3b-adaptive-support-backfill-v1",
+  "questions": [
+    {
+      "id": "PMS-ELAS-R-001",
+      "q": "After calculating a 12% increase in quantity supplied from an 8% price increase, a student reports PES = 0.67. Which step is wrong?",
+      "options": [
+        "The ratio was inverted; PES = 12%/8% = 1.5",
+        "The supply response should be given a negative sign",
+        "The percentage changes should be added to get 20",
+        "The calculation should use the original price level instead"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.4",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "pes_calculation",
+      "secondarySkills": [],
+      "repairSkill": "pes_calculation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Price elasticity of supply divides the percentage change in quantity supplied by the percentage change in price, so 12%/8% = 1.5.",
+      "aHash": "9bdf3e9909c2a5dd06cd0e012c69f987f2360d3ae2c00344308ed376d05ca17a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-R-001",
+      "sourceId": 6950001,
+      "sourceHash": "264dc99640d7119b7534dad697ebc3e456cf70a1dd8cacc2ed3f4955004a235f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "pes_calculation",
+          "sourceRecordOrder": 0,
+          "sourceId": 6950001,
+          "sourceHash": "264dc99640d7119b7534dad697ebc3e456cf70a1dd8cacc2ed3f4955004a235f"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-002",
+      "q": "A learner says unused production capacity makes supply less elastic. What is the correction?",
+      "options": [
+        "Unused capacity fixes quantity supplied at one level",
+        "Unused capacity affects demand elasticity but not supply",
+        "Unused capacity guarantees perfectly elastic supply",
+        "Unused capacity usually makes it easier to expand output, increasing supply elasticity"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.4",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "capacity_storage_supply",
+      "secondarySkills": [],
+      "repairSkill": "capacity_storage_supply",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Spare capacity lets firms respond to higher prices without first building entirely new capacity.",
+      "aHash": "9927e58038bdbe156477eb8ac092157c7f5e76126a9537a7baa92002a044a9c1",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-R-002",
+      "sourceId": 6950002,
+      "sourceHash": "57971ba0c7055ee89961ec7fee3d34acffbbb2942bf496111f87baa786685b85",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "capacity_storage_supply",
+          "sourceRecordOrder": 1,
+          "sourceId": 6950002,
+          "sourceHash": "57971ba0c7055ee89961ec7fee3d34acffbbb2942bf496111f87baa786685b85"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-003",
+      "q": "A learner says input mobility has no effect on supply elasticity. Best repair?",
+      "options": [
+        "Only demand-side substitutes affect elasticity",
+        "Input mobility changes the sign of supply elasticity",
+        "Inputs that can be reallocated easily generally make supply more elastic",
+        "Input mobility makes supply perfectly inelastic"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.4",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "supply_elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "supply_elasticity_determinants",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Flexible inputs let producers change output more readily when price changes.",
+      "aHash": "6de5fde0d5fdd89b461d51acae7df7fe03ae8518f2999a8f9dd3b81694ad0e03",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-R-003",
+      "sourceId": 6950003,
+      "sourceHash": "3a727ffadeb30a5cfc58d67144bb29476c534e33719ac9ffea07b828d38fbc66",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "supply_elasticity_determinants",
+          "sourceRecordOrder": 2,
+          "sourceId": 6950003,
+          "sourceHash": "3a727ffadeb30a5cfc58d67144bb29476c534e33719ac9ffea07b828d38fbc66"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-004",
+      "q": "A learner gets PES = 0.4 and calls supply elastic. What should be corrected?",
+      "options": [
+        "The sign alone determines elastic versus inelastic",
+        "A coefficient below one is inelastic over the measured range",
+        "Any positive coefficient is elastic",
+        "A coefficient below one is perfectly elastic"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.4",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "pes_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "pes_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "For PES, magnitude below one means quantity supplied responds proportionally less than price.",
+      "aHash": "a69469daaa0858c006b1dc16e883c4aa0e071ec8a09875ac35ccef72ef40d5cd",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-R-004",
+      "sourceId": 6950004,
+      "sourceHash": "61e8a24718093bd4644def76a10e98284625ddd05505346471918a76659bafa6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "pes_interpretation",
+          "sourceRecordOrder": 3,
+          "sourceId": 6950004,
+          "sourceHash": "61e8a24718093bd4644def76a10e98284625ddd05505346471918a76659bafa6"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-005",
+      "q": "A commodity price rises 10% and quantity supplied rises 15%. Which adjacent production conclusion fits the elasticity result?",
+      "options": [
+        "Producers show an elastic supply response",
+        "Producers show an inelastic supply response",
+        "Quantity supplied did not respond",
+        "The result measures demand, not supply"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "pes_calculation",
+      "secondarySkills": [],
+      "repairSkill": "pes_calculation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A 15% quantity response to a 10% price change gives PES above one.",
+      "aHash": "672f83fdeb7a160f1c0b80020ab71bf73db4813894e597306121373cb3072e11",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "costs-of-production"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-BR-005",
+      "sourceId": 6950005,
+      "sourceHash": "286dffefaf58207ea67568dfffed285aeb4d4749ade3750605adf632ffafd5ec",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "pes_calculation",
+          "sourceRecordOrder": 4,
+          "sourceId": 6950005,
+          "sourceHash": "286dffefaf58207ea67568dfffed285aeb4d4749ade3750605adf632ffafd5ec"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-006",
+      "q": "Why does a longer time horizon often connect supply elasticity to investment decisions?",
+      "options": [
+        "Longer horizons make all prices fixed",
+        "Firms lose the ability to change inputs over time",
+        "Supply becomes unrelated to marginal cost",
+        "Firms have more time to add capacity and reorganize production"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "time_horizon_supply",
+      "secondarySkills": [],
+      "repairSkill": "time_horizon_supply",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Investment and capacity adjustment make long-run supply more responsive.",
+      "aHash": "0aad057b0e29d0baa2376b7c6e763ebb141cebac0df7bc3697e1d6c1d5c0d9ae",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "costs-of-production"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-BR-006",
+      "sourceId": 6950006,
+      "sourceHash": "8d97b879836b624da3181f2f1bcac065585636d71701c0dcb8ea0bc939254e97",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "time_horizon_supply",
+          "sourceRecordOrder": 5,
+          "sourceId": 6950006,
+          "sourceHash": "8d97b879836b624da3181f2f1bcac065585636d71701c0dcb8ea0bc939254e97"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-007",
+      "q": "How does inventory management connect to supply elasticity?",
+      "options": [
+        "Inventory affects only consumer demand",
+        "Stored goods make supply vertical by definition",
+        "Stored inventory can be released when price rises, increasing quantity responsiveness",
+        "Inventory prevents firms from reacting to price"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "capacity_storage_supply",
+      "secondarySkills": [],
+      "repairSkill": "capacity_storage_supply",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Storage creates another margin through which sellers can respond to price changes.",
+      "aHash": "eec6162762dd27c30fa2ac054097b58caf751f468ef7f493d2e6ecf86b7cce5f",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "costs-of-production"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-BR-007",
+      "sourceId": 6950007,
+      "sourceHash": "252e8e5bb7ec2d7ba05bdfdcf6654f49acd0462df8bee505eeeee2439cf80e29",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "capacity_storage_supply",
+          "sourceRecordOrder": 6,
+          "sourceId": 6950007,
+          "sourceHash": "252e8e5bb7ec2d7ba05bdfdcf6654f49acd0462df8bee505eeeee2439cf80e29"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-008",
+      "q": "A market has highly mobile labor and equipment. What does that suggest about the supply response to a price increase?",
+      "options": [
+        "The price increase cannot affect production",
+        "Output can adjust more strongly because inputs can move toward the market",
+        "Output must remain fixed because mobile inputs leave the market",
+        "Demand becomes more elastic while supply is unchanged"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "supply_elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "supply_elasticity_determinants",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Input mobility links production flexibility to greater supply elasticity.",
+      "aHash": "1a708daa8e6a4c3b8254a06d172909e0056f625488e7dea4354fc32f2bc5b59d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "supply"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "price-elasticity-of-supply"
+      ],
+      "canonicalId": "PMS-ELAS-BR-008",
+      "sourceId": 6950008,
+      "sourceHash": "b1a27ccd0437bbc8f898b0381eb996d0ccc71e20488bde1d97571f42e08776fe",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "supply_elasticity_determinants",
+          "sourceRecordOrder": 7,
+          "sourceId": 6950008,
+          "sourceHash": "b1a27ccd0437bbc8f898b0381eb996d0ccc71e20488bde1d97571f42e08776fe"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-009",
+      "q": "A learner sees income elasticity of -0.5 and labels the good a necessity. What is the repair?",
+      "options": [
+        "The negative sign identifies an inferior good for the measured consumers",
+        "Any coefficient below one identifies a normal necessity",
+        "Negative income elasticity means the goods are complements",
+        "The coefficient measures price responsiveness, not income responsiveness"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.5",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "income_elasticity_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Negative income elasticity means demand falls when income rises.",
+      "aHash": "73c545f8f37b210ccce04d97ed1900f7698352b9dfd57983c9327954720bd292",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "income-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-R-009",
+      "sourceId": 6950009,
+      "sourceHash": "08311f096e9be416880ecebcfa0bede32a5caeb287dbc6d8514238979da8c16d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "income_elasticity_interpretation",
+          "sourceRecordOrder": 8,
+          "sourceId": 6950009,
+          "sourceHash": "08311f096e9be416880ecebcfa0bede32a5caeb287dbc6d8514238979da8c16d"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-010",
+      "q": "Income rises 10% and quantity demanded rises 5%. A learner reports income elasticity of 2. What went wrong?",
+      "options": [
+        "The sign should be negative because income rose",
+        "The correct value is 15 because percentages are added",
+        "Income elasticity cannot be calculated from percentage changes",
+        "The ratio was reversed; the elasticity is 0.5"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.5",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "income_elasticity_calculation",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity_calculation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Income elasticity is %ΔQd divided by %Δincome, so 5%/10% = 0.5.",
+      "aHash": "257e9a13aef3f73df6edb22097fc8781bc5990f1b6bf0fb6e3c495a79ee86646",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "income-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-R-010",
+      "sourceId": 6950010,
+      "sourceHash": "ba1e46732c1e0145d915f0e9e6d905f1350bca294ea75912fb6c53aadd5d7ae6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "income_elasticity_calculation",
+          "sourceRecordOrder": 9,
+          "sourceId": 6950010,
+          "sourceHash": "ba1e46732c1e0145d915f0e9e6d905f1350bca294ea75912fb6c53aadd5d7ae6"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-011",
+      "q": "A grocery chain expects household incomes to rise. Which use of income elasticity is most direct?",
+      "options": [
+        "Calculate the money multiplier",
+        "Find the slope of the supply curve",
+        "Forecast which product categories may gain or lose demand",
+        "Determine the legal incidence of a sales tax"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "income_elasticity_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Income elasticity helps firms anticipate demand shifts as consumer income changes.",
+      "aHash": "a03070ea817df0f4d02873b5133b11c952c7c9e8466d2b73eb2200a6ec4943ec",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "income-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-BR-011",
+      "sourceId": 6950011,
+      "sourceHash": "6409135534265215d5b540d50a4cb3d6e9f76140430f7643e088ef3d839c4683",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "income_elasticity_interpretation",
+          "sourceRecordOrder": 10,
+          "sourceId": 6950011,
+          "sourceHash": "6409135534265215d5b540d50a4cb3d6e9f76140430f7643e088ef3d839c4683"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-012",
+      "q": "A category has income elasticity 1.4. How does that connect to business forecasting during an expansion?",
+      "options": [
+        "The category must be a complement to every other good",
+        "Demand may grow more than proportionally with income",
+        "Demand must fall as income rises",
+        "Quantity supplied must fall by 1.4%"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "income_elasticity_calculation",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity_calculation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "An elasticity above one indicates a strong positive demand response to income growth.",
+      "aHash": "aa6c0466a1616ceabecd53d722ea59a4f6bed1987dd1c6612bbe13c86b96d57a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "income-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-BR-012",
+      "sourceId": 6950012,
+      "sourceHash": "4c9ef6dc12d893526dab4ca020e5c5dedb1e27b16ecd2012eb3dd4e34817ed81",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "income_elasticity_calculation",
+          "sourceRecordOrder": 11,
+          "sourceId": 6950012,
+          "sourceHash": "4c9ef6dc12d893526dab4ca020e5c5dedb1e27b16ecd2012eb3dd4e34817ed81"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-013",
+      "q": "Why can income elasticity help explain changes in the mix of goods consumers buy as an economy grows?",
+      "options": [
+        "Normal, luxury, and inferior goods respond differently to rising income",
+        "All goods have identical income responses",
+        "Income elasticity measures only producer costs",
+        "It fixes consumer preferences at one bundle"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "income_elasticity_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Different income responses shift the composition of demand as purchasing power changes.",
+      "aHash": "471c1903de81ba8f42bd29ce6330bf21c7929c5cd1b15b23a8205ba8063ed75a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "consumer-choice"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "income-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-BR-013",
+      "sourceId": 6950013,
+      "sourceHash": "eaa727ba74c708ff6d4261e9850d0927c75a6ca23b4cf1df6313f3af45c094dc",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "income_elasticity_interpretation",
+          "sourceRecordOrder": 12,
+          "sourceId": 6950013,
+          "sourceHash": "eaa727ba74c708ff6d4261e9850d0927c75a6ca23b4cf1df6313f3af45c094dc"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-014",
+      "q": "A learner sees cross-price elasticity of +0.9 and says the goods are complements. What is the repair?",
+      "options": [
+        "A positive coefficient indicates complements",
+        "The sign identifies normal versus inferior goods",
+        "Cross-price elasticity cannot classify related goods",
+        "A positive coefficient indicates substitutes"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.5",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "cross_price_elasticity_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Demand for one good moves with the other good’s price when the goods are substitutes.",
+      "aHash": "4fcab7ad63ee937522bc6e0e97cfdd88ae185087d38011c88aa77448288b5884",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "cross-price-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-R-014",
+      "sourceId": 6950014,
+      "sourceHash": "b59e4eba70aa19deb150a086c803ac3a0339bb90d7828043ce3c15de2de60603",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "cross_price_elasticity_interpretation",
+          "sourceRecordOrder": 13,
+          "sourceId": 6950014,
+          "sourceHash": "b59e4eba70aa19deb150a086c803ac3a0339bb90d7828043ce3c15de2de60603"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-015",
+      "q": "The price of good Y rises 8% and demand for good X rises 4%. A learner reports cross-price elasticity of 2. What is the repair?",
+      "options": [
+        "The ratio is 12 because the percentages are added",
+        "Cross-price elasticity uses X’s own price change",
+        "The ratio is 4%/8% = 0.5",
+        "The ratio must be negative because price rose"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.5",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "cross_price_elasticity_calculation",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity_calculation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Cross-price elasticity divides the percentage change in demand for X by the percentage change in the price of Y.",
+      "aHash": "9e37f7839ddc39d0fb7c2888e733df6b51ef9548f493e5fa6c1fe3e19bec7cc9",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "cross-price-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-R-015",
+      "sourceId": 6950015,
+      "sourceHash": "a53c631bec94649e4586d7d03f5d4f0ed2228dc95e3eb8b0adfdd915dcbdf282",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "cross_price_elasticity_calculation",
+          "sourceRecordOrder": 14,
+          "sourceId": 6950015,
+          "sourceHash": "a53c631bec94649e4586d7d03f5d4f0ed2228dc95e3eb8b0adfdd915dcbdf282"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-016",
+      "q": "A coffee shop tracks the price of a nearby competitor’s drinks. Why is cross-price elasticity useful?",
+      "options": [
+        "It determines the legal tax rate",
+        "It indicates how the competitor’s price may shift demand for the shop’s drinks",
+        "It measures the shop’s fixed cost",
+        "It identifies the money supply"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "cross_price_elasticity_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Cross-price elasticity connects substitute pricing to demand shifts.",
+      "aHash": "2f294e2131e877deca5c412d58169276a27397e371f9c82ac2a999846d7bf7ca",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "cross-price-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-BR-016",
+      "sourceId": 6950016,
+      "sourceHash": "b1928820f8fb3486d18787dab2387d613b1131c2aadb083efd7d4fd2fddd43ed",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "cross_price_elasticity_interpretation",
+          "sourceRecordOrder": 15,
+          "sourceId": 6950016,
+          "sourceHash": "b1928820f8fb3486d18787dab2387d613b1131c2aadb083efd7d4fd2fddd43ed"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-017",
+      "q": "A console maker lowers console prices. Why might a game publisher care about cross-price elasticity?",
+      "options": [
+        "Negative cross-price elasticity would imply game demand rises as console price falls",
+        "Positive income elasticity guarantees game demand falls",
+        "Supply elasticity determines whether consoles and games are complements",
+        "Cross-price elasticity is unrelated to complementary products"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "cross_price_elasticity_interpretation",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity_interpretation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Complementary goods connect through opposite movements between one price and the other good’s demand.",
+      "aHash": "22cc8137bceed615fb023af4bae602f2086523bf62dcbf29caf884c029ec1a81",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "cross-price-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-BR-017",
+      "sourceId": 6950017,
+      "sourceHash": "7b65a4853fdfc63754c7daaceacae31301b9d0f7ecc594dc867fb453812ad179",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "cross_price_elasticity_interpretation",
+          "sourceRecordOrder": 16,
+          "sourceId": 6950017,
+          "sourceHash": "7b65a4853fdfc63754c7daaceacae31301b9d0f7ecc594dc867fb453812ad179"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-018",
+      "q": "Two brands have cross-price elasticity near +2. What strategic connection does that suggest?",
+      "options": [
+        "They are strong complements",
+        "They are unrelated goods",
+        "They must have identical marginal costs",
+        "Their demand is strongly linked as substitutes"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "cross_price_elasticity_calculation",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity_calculation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A large positive cross-price coefficient signals a strong substitution relationship.",
+      "aHash": "2f39b5a201be812dceea350e8cf4c1865b7218943d89afc43897a95d7204b4a7",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "market-structures"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "cross-price-elasticity-of-demand"
+      ],
+      "canonicalId": "PMS-ELAS-BR-018",
+      "sourceId": 6950018,
+      "sourceHash": "6743cb54196ebf1c6bedc00e71c900d9b7d63f095c23022c7be2e4413e00bfc9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "cross_price_elasticity_calculation",
+          "sourceRecordOrder": 17,
+          "sourceId": 6950018,
+          "sourceHash": "6743cb54196ebf1c6bedc00e71c900d9b7d63f095c23022c7be2e4413e00bfc9"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-019",
+      "q": "A learner calculates total revenue by adding price and quantity. What is the repair?",
+      "options": [
+        "Divide price by quantity",
+        "Add consumer and producer surplus",
+        "Multiply price by quantity sold",
+        "Subtract quantity from price"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.3",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "total_revenue_formula",
+      "secondarySkills": [],
+      "repairSkill": "total_revenue_formula",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Total revenue is P × Q.",
+      "aHash": "72a90dadb4ad0af662c9ad2b5af7110151e562b205a3512dda8c6f1b39a4005c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-R-019",
+      "sourceId": 6950019,
+      "sourceHash": "b3d73c8568d47c93db20f8f29cbdd329fb65922fb1d43faf8ee415f2e3d280e8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "total_revenue_formula",
+          "sourceRecordOrder": 18,
+          "sourceId": 6950019,
+          "sourceHash": "b3d73c8568d47c93db20f8f29cbdd329fb65922fb1d43faf8ee415f2e3d280e8"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-020",
+      "q": "A learner says a price cut always lowers total revenue because each unit sells for less. What is missing?",
+      "options": [
+        "A price cut always makes demand inelastic",
+        "Quantity may rise enough to increase revenue when demand is elastic",
+        "Quantity demanded never changes with price",
+        "Revenue depends only on fixed cost"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.3",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "total_revenue_test",
+      "secondarySkills": [],
+      "repairSkill": "total_revenue_test",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The total-revenue test compares the price change with the percentage quantity response.",
+      "aHash": "a2f95975acf6c0d2a2ffe929fc7dcafdd54d862feb82d38a5eb9446fc0a7533c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-R-020",
+      "sourceId": 6950020,
+      "sourceHash": "eb638713f66280cf1f32762c17f46c198e05505720c0752e61c8ebb81a15330f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "total_revenue_test",
+          "sourceRecordOrder": 19,
+          "sourceId": 6950020,
+          "sourceHash": "eb638713f66280cf1f32762c17f46c198e05505720c0752e61c8ebb81a15330f"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-021",
+      "q": "A learner says marginal revenue must be positive everywhere on a downward-sloping demand curve. What is the repair?",
+      "options": [
+        "Marginal revenue becomes zero near unit elasticity and negative on the inelastic portion",
+        "Marginal revenue is always equal to price",
+        "Marginal revenue is negative only when demand is perfectly elastic",
+        "Elasticity has no relationship to marginal revenue"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.3",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "marginal_revenue_elasticity_link",
+      "secondarySkills": [],
+      "repairSkill": "marginal_revenue_elasticity_link",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "For a standard downward-sloping demand curve, MR is positive on the elastic portion, zero near unit elasticity, and negative on the inelastic portion.",
+      "aHash": "1a616ff2a0dd5e86531503a280985d3be8817fe56e290603ef4cbbc462c96709",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-R-021",
+      "sourceId": 6950021,
+      "sourceHash": "f8a2c844e2aa0e98abb4f903fec7520fe0be4ba3d64d8b0ed3626ebd3b510d6b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "marginal_revenue_elasticity_link",
+          "sourceRecordOrder": 20,
+          "sourceId": 6950021,
+          "sourceHash": "f8a2c844e2aa0e98abb4f903fec7520fe0be4ba3d64d8b0ed3626ebd3b510d6b"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-022",
+      "q": "How does the total-revenue formula connect a demand curve to firm revenue?",
+      "options": [
+        "The demand slope directly equals total revenue",
+        "Revenue is the area above demand and below price",
+        "Quantity alone determines revenue",
+        "Each price-quantity point implies revenue equal to P × Q"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "total_revenue_formula",
+      "secondarySkills": [],
+      "repairSkill": "total_revenue_formula",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A point on demand supplies the price and quantity needed to calculate revenue.",
+      "aHash": "537228e9b4115e0c36c92464b2e6a4e8a07733470c943576da90fbdf5ef5d6b9",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-BR-022",
+      "sourceId": 6950022,
+      "sourceHash": "1b936e5d14ab9b66eec42845606cf588c91aa64fb29766ff649f5eddae77b593",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_revenue_formula",
+          "sourceRecordOrder": 21,
+          "sourceId": 6950022,
+          "sourceHash": "1b936e5d14ab9b66eec42845606cf588c91aa64fb29766ff649f5eddae77b593"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-023",
+      "q": "A firm cuts price and revenue rises. What demand-side conclusion can management carry into pricing decisions?",
+      "options": [
+        "Quantity demanded must have fallen",
+        "Price and quantity effects always cancel",
+        "Customers were responsive enough for the quantity gain to dominate",
+        "Demand was perfectly inelastic"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "total_revenue_test",
+      "secondarySkills": [],
+      "repairSkill": "total_revenue_test",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The total-revenue test translates elasticity into a practical pricing signal.",
+      "aHash": "c749fd5df0830556a6f1963fc3b8fef14afc447d88b598d2ee5ab1507b603900",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "market-structures"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-BR-023",
+      "sourceId": 6950023,
+      "sourceHash": "ac6dc349dd4d27e46eaa08c2bc95eb14c1dcab6c61575c0c252a4c3f2cfea2a1",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_revenue_test",
+          "sourceRecordOrder": 22,
+          "sourceId": 6950023,
+          "sourceHash": "ac6dc349dd4d27e46eaa08c2bc95eb14c1dcab6c61575c0c252a4c3f2cfea2a1"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-024",
+      "q": "Why is unit elasticity a useful benchmark for revenue management on a linear demand curve?",
+      "options": [
+        "It makes demand perfectly horizontal",
+        "It is near the point where total revenue is maximized",
+        "It guarantees profit is maximized regardless of cost",
+        "It makes marginal cost zero"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "revenue_maximization_unit_elastic",
+      "secondarySkills": [],
+      "repairSkill": "revenue_maximization_unit_elastic",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "At unit elasticity the price and quantity percentage effects offset, marking the revenue peak on a standard linear demand curve.",
+      "aHash": "e58e6e22c823f5a066a81fec508c8f5d678d5a931c4fff6d44f0acba69d16907",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "market-structures"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-BR-024",
+      "sourceId": 6950024,
+      "sourceHash": "e23841359bb84e2b8ed008fa92ecbf914ffa92aa08b76d4dbb7a2313e3d91ddc",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "revenue_maximization_unit_elastic",
+          "sourceRecordOrder": 23,
+          "sourceId": 6950024,
+          "sourceHash": "e23841359bb84e2b8ed008fa92ecbf914ffa92aa08b76d4dbb7a2313e3d91ddc"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-025",
+      "q": "How does elasticity connect to marginal-revenue reasoning for a firm with downward-sloping demand?",
+      "options": [
+        "MR is positive on the elastic portion and negative on the inelastic portion",
+        "MR is always zero when price changes",
+        "Elasticity determines fixed cost rather than MR",
+        "MR is positive only when demand is perfectly inelastic"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "marginal_revenue_elasticity_link",
+      "secondarySkills": [],
+      "repairSkill": "marginal_revenue_elasticity_link",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The elasticity region helps identify the sign of marginal revenue.",
+      "aHash": "a4bc339db17dfc6f46415db5fef1c40695e4fb5e5cd981975fc29c2e1e931590",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "monopoly"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-BR-025",
+      "sourceId": 6950025,
+      "sourceHash": "059978d886de4ee95a7bd6219be36ad44f5b614dafecd8c8bc061cef836112a7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "marginal_revenue_elasticity_link",
+          "sourceRecordOrder": 24,
+          "sourceId": 6950025,
+          "sourceHash": "059978d886de4ee95a7bd6219be36ad44f5b614dafecd8c8bc061cef836112a7"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-026",
+      "q": "A tax raises the price buyers pay. Why can demand elasticity matter for the seller’s revenue response?",
+      "options": [
+        "It fixes the statutory tax rate",
+        "It determines the seller’s fixed cost",
+        "It guarantees producer surplus rises",
+        "It determines how strongly quantity demanded falls as the buyer price rises"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "total_revenue_test",
+      "secondarySkills": [],
+      "repairSkill": "total_revenue_test",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Revenue consequences depend on the quantity response to the effective price change.",
+      "aHash": "4fe6b48701ac92d8c15b3aaf445aaf2bbc6c3dfc17c9c85dc1297a84959393b0",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "tax-incidence"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-BR-026",
+      "sourceId": 6950026,
+      "sourceHash": "63eae1106dda228298848b2dae0fb84adb8de2eef864e4885699dc5da5a087bf",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_revenue_test",
+          "sourceRecordOrder": 25,
+          "sourceId": 6950026,
+          "sourceHash": "63eae1106dda228298848b2dae0fb84adb8de2eef864e4885699dc5da5a087bf"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-BR-027",
+      "q": "A seller receives $18 per unit on 400 units after a market change. What concept links this outcome to elasticity analysis?",
+      "options": [
+        "Producer surplus always equals total revenue",
+        "Cross-price elasticity equals $18 × 400",
+        "Total revenue equals the price received times quantity sold",
+        "Consumer surplus equals price times quantity"
+      ],
+      "tag": "elasticity",
+      "type": "bridge",
+      "objective": "ELAS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "elasticity",
+      "primarySkill": "total_revenue_formula",
+      "secondarySkills": [],
+      "repairSkill": "total_revenue_formula",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Elasticity analysis often evaluates how price and quantity changes combine to change revenue.",
+      "aHash": "0f1bf6b8d94fd9406f21da3e788fe6eb98f25791afa8ce248064f7f2fa62d1f4",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [
+        "market-structures"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "canonicalId": "PMS-ELAS-BR-027",
+      "sourceId": 6950027,
+      "sourceHash": "adf24d606fe53cd952f6078a0207febe42f260c0c28227036e7d7046f158e003",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_revenue_formula",
+          "sourceRecordOrder": 26,
+          "sourceId": 6950027,
+          "sourceHash": "adf24d606fe53cd952f6078a0207febe42f260c0c28227036e7d7046f158e003"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-028",
+      "q": "A learner says a price-based policy will reduce quantity by the same percentage in every market. What is the repair?",
+      "options": [
+        "Elasticity affects revenue but not policy responses",
+        "Quantity response depends on the relevant elasticity",
+        "Every market has unit-elastic demand",
+        "Only supply shifts can change quantity"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.6",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "elasticity_policy_application",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_policy_application",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "More elastic buyers or sellers respond more strongly to price incentives.",
+      "aHash": "4a039580d747a5d0737d40ba40f671563737e1ddecc3a5d6dedb06c7a9620d93",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "applications-of-elasticity"
+      ],
+      "canonicalId": "PMS-ELAS-R-028",
+      "sourceId": 6950028,
+      "sourceHash": "c48012a6cb7882c0e188f0e93ea24a5239482eced00c758a1a1967c818b4ccbd",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "elasticity_policy_application",
+          "sourceRecordOrder": 27,
+          "sourceId": 6950028,
+          "sourceHash": "c48012a6cb7882c0e188f0e93ea24a5239482eced00c758a1a1967c818b4ccbd"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-029",
+      "q": "A learner says labor demand elasticity is unrelated to substitution possibilities. Best correction?",
+      "options": [
+        "More available substitutes for a type of labor generally make labor demand more elastic",
+        "Substitutes make labor demand perfectly inelastic",
+        "Factor demand elasticity depends only on worker preferences",
+        "Substitution changes labor supply but never labor demand"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.6",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "elasticity_factor_market_application",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_factor_market_application",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Employers can respond more strongly to wage changes when alternative inputs are available.",
+      "aHash": "5cb258467be9be163df2a0636b649ad2d52e540c7d6533998c669a2d2857f701",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "applications-of-elasticity"
+      ],
+      "canonicalId": "PMS-ELAS-R-029",
+      "sourceId": 6950029,
+      "sourceHash": "ff19a832c5e0a156c7e4abc2cd72c3292ff9f50942f1776042171f6b07a47355",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "elasticity_factor_market_application",
+          "sourceRecordOrder": 28,
+          "sourceId": 6950029,
+          "sourceHash": "ff19a832c5e0a156c7e4abc2cd72c3292ff9f50942f1776042171f6b07a47355"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ELAS-R-030",
+      "q": "A learner says supply elasticity does not matter when an export price rises. What is the repair?",
+      "options": [
+        "Export prices affect demand only",
+        "Supply elasticity matters only in closed markets",
+        "More elastic supply means output cannot change",
+        "More elastic supply allows a larger output response to the higher price"
+      ],
+      "tag": "elasticity",
+      "type": "repair",
+      "objective": "ELAS.6",
+      "difficulty": "repair",
+      "conceptCluster": "elasticity",
+      "primarySkill": "elasticity_trade_application",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_trade_application",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Trade price changes generate larger production responses when supply is more elastic.",
+      "aHash": "8bf9f2132695492e8255cdd3655fd0bd48b656ba2a18ac2f9900317f8b02b5dd",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "elasticity"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "elasticity",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "elasticity",
+      "subtopicIds": [
+        "applications-of-elasticity"
+      ],
+      "canonicalId": "PMS-ELAS-R-030",
+      "sourceId": 6950030,
+      "sourceHash": "4e6fb0c1bce253b86e222570420c53ea460eedeb00513372c048868bc66a2758",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "elasticity_trade_application",
+          "sourceRecordOrder": 29,
+          "sourceId": 6950030,
+          "sourceHash": "4e6fb0c1bce253b86e222570420c53ea460eedeb00513372c048868bc66a2758"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-001",
+      "q": "How does a demand curve connect to willingness to pay?",
+      "options": [
+        "Its height represents marginal willingness to pay for successive units",
+        "Its slope measures seller fixed cost",
+        "Its area below price is producer surplus",
+        "It shows willingness to accept"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "willingness_to_pay",
+      "secondarySkills": [],
+      "repairSkill": "willingness_to_pay",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Demand can be interpreted as buyers’ marginal willingness to pay.",
+      "aHash": "0e50c9c5368cd51dea4d9b89eee88ecb6725a7121f5797a5ad306f244208f8df",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "consumer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-001",
+      "sourceId": 6950031,
+      "sourceHash": "ec1f0740f1a94030dde80071532a4c6a22c63fab5acabbe694733fc99d7c4bfb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "willingness_to_pay",
+          "sourceRecordOrder": 30,
+          "sourceId": 6950031,
+          "sourceHash": "ec1f0740f1a94030dde80071532a4c6a22c63fab5acabbe694733fc99d7c4bfb"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-002",
+      "q": "Why is consumer surplus drawn below demand and above the market price?",
+      "options": [
+        "The area measures seller cost above price",
+        "The area equals tax revenue by definition",
+        "The demand curve is a supply schedule",
+        "The vertical gap is willingness to pay minus price for units purchased"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "consumer_surplus_graph_area",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_graph_area",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Consumer surplus is the buyer value-price gap across purchased units.",
+      "aHash": "498bbf05babda7d528a521c2045cb8cb0373d90c48f0e71f2a6e4fe38701c908",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "demand"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "consumer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-002",
+      "sourceId": 6950032,
+      "sourceHash": "cc344d5bd77bb57f93a65b107951678d3fd0a36e3a50f46622e43b0fc215293f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "consumer_surplus_graph_area",
+          "sourceRecordOrder": 31,
+          "sourceId": 6950032,
+          "sourceHash": "cc344d5bd77bb57f93a65b107951678d3fd0a36e3a50f46622e43b0fc215293f"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-003",
+      "q": "A price decrease lets an existing buyer pay less for the same unit. What happens to that buyer’s surplus?",
+      "options": [
+        "It becomes producer surplus",
+        "It is unchanged because the buyer already purchased",
+        "It rises by the amount of the price decrease, holding willingness to pay fixed",
+        "It falls because lower prices reduce value"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "consumer_surplus_discrete",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_discrete",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A lower price widens the gap between willingness to pay and price.",
+      "aHash": "47cc74a9630c34e8fc6737888d3dc795df919b29a07ef7f24284a8ad408631f8",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "consumer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-003",
+      "sourceId": 6950033,
+      "sourceHash": "093d5812ac396df0eacc191304b8be7c72d1e3c2bd976e18f0fa9589146e1214",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "consumer_surplus_discrete",
+          "sourceRecordOrder": 32,
+          "sourceId": 6950033,
+          "sourceHash": "093d5812ac396df0eacc191304b8be7c72d1e3c2bd976e18f0fa9589146e1214"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-004",
+      "q": "How does consumer surplus contribute to total surplus?",
+      "options": [
+        "It is excluded from efficiency analysis",
+        "It is the buyer-side component added to producer surplus",
+        "It replaces producer surplus in total-surplus calculations",
+        "It equals total revenue"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "consumer_surplus_definition",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_definition",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Total surplus combines buyer and seller gains.",
+      "aHash": "1742b7087a7e355dc2cc5898beb63a61faa86ba6970071750b46230ea131a976",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "consumer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-004",
+      "sourceId": 6950034,
+      "sourceHash": "be8fb05186fc92551df031006196aa0047d798bea124b8ca7451e0d8a357f09a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "consumer_surplus_definition",
+          "sourceRecordOrder": 33,
+          "sourceId": 6950034,
+          "sourceHash": "be8fb05186fc92551df031006196aa0047d798bea124b8ca7451e0d8a357f09a"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-005",
+      "q": "How does a supply curve connect to willingness to accept?",
+      "options": [
+        "Its height represents the marginal seller’s opportunity cost or minimum acceptable amount",
+        "Its height represents buyer willingness to pay",
+        "Its area above price is consumer surplus",
+        "It fixes market demand"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "willingness_to_accept",
+      "secondarySkills": [],
+      "repairSkill": "willingness_to_accept",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Supply can be interpreted as the marginal cost or willingness to accept of successive units.",
+      "aHash": "354fb61b794d2de476be4ca5319521eee8ebc200aa71f97639fba587add174c2",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "supply"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "producer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-005",
+      "sourceId": 6950035,
+      "sourceHash": "48a785675300178d6f8d29dbe6781e214a335dc3313489c384e7bed28e4a8238",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "willingness_to_accept",
+          "sourceRecordOrder": 34,
+          "sourceId": 6950035,
+          "sourceHash": "48a785675300178d6f8d29dbe6781e214a335dc3313489c384e7bed28e4a8238"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-006",
+      "q": "Why is producer surplus drawn above supply and below the market price?",
+      "options": [
+        "The area is buyer willingness to pay minus price",
+        "The area equals total revenue",
+        "Supply above price measures consumer surplus",
+        "The vertical gap is price received minus seller cost for units sold"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "producer_surplus_graph_area",
+      "secondarySkills": [],
+      "repairSkill": "producer_surplus_graph_area",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Producer surplus is the price-cost gap across units supplied.",
+      "aHash": "b34dc065f987de7531cb9e26fb37f668eeed3ad45daa91c8ce4f291103a5ac27",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "supply"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "producer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-006",
+      "sourceId": 6950036,
+      "sourceHash": "5efcf68127418c5f8e4c0b7a533860d31d287127abfd9a0b9397665c579822a5",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "producer_surplus_graph_area",
+          "sourceRecordOrder": 35,
+          "sourceId": 6950036,
+          "sourceHash": "5efcf68127418c5f8e4c0b7a533860d31d287127abfd9a0b9397665c579822a5"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-007",
+      "q": "A higher market price is paid for the same unit while seller cost is unchanged. What happens to producer surplus on that unit?",
+      "options": [
+        "It becomes consumer surplus",
+        "It is unchanged",
+        "It rises",
+        "It falls"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "producer_surplus_discrete",
+      "secondarySkills": [],
+      "repairSkill": "producer_surplus_discrete",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A higher price widens the price-minus-cost gap received by the seller.",
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "producer-surplus"
+      ],
+      "canonicalId": "PMS-CPS-BR-007",
+      "sourceId": 6950037,
+      "sourceHash": "d65cb90298d9d21c4ba9ef7c78338fde7c1b9b12a3a2f169c322d3e4406d6a4b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "producer_surplus_discrete",
+          "sourceRecordOrder": 36,
+          "sourceId": 6950037,
+          "sourceHash": "d65cb90298d9d21c4ba9ef7c78338fde7c1b9b12a3a2f169c322d3e4406d6a4b"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-008",
+      "q": "A learner treats consumer surplus and producer surplus as competing measures and keeps only the larger one. What is the repair?",
+      "options": [
+        "Only consumer surplus counts toward efficiency",
+        "Total surplus adds both buyer and seller surplus",
+        "Total surplus always equals the larger side",
+        "Producer surplus replaces consumer surplus at equilibrium"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "total_surplus",
+      "secondarySkills": [],
+      "repairSkill": "total_surplus",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The efficiency measure combines gains on both sides of the market.",
+      "aHash": "c4c28162ad0e5cf43c86bfa8fc9e2ab4f83c8ed85fc30e7399fde57c9351460a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "canonicalId": "PMS-CPS-R-008",
+      "sourceId": 6950038,
+      "sourceHash": "787118d3d793ee48235ae68a988a5a71bd8d0a95c91e8660df7b38fb1707e82b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "total_surplus",
+          "sourceRecordOrder": 37,
+          "sourceId": 6950038,
+          "sourceHash": "787118d3d793ee48235ae68a988a5a71bd8d0a95c91e8660df7b38fb1707e82b"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-009",
+      "q": "A learner says any voluntary trade creates gains even when seller cost exceeds buyer value. What is the repair?",
+      "options": [
+        "A trade creates positive total gains only when buyer value is at least seller cost",
+        "Voluntary exchange always creates positive measured surplus regardless of values",
+        "Seller cost is irrelevant to gains from trade",
+        "Buyer value matters only after the trade occurs"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "gains_from_trade",
+      "secondarySkills": [],
+      "repairSkill": "gains_from_trade",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The buyer-seller value gap determines whether the exchange adds surplus.",
+      "aHash": "2b95c6edadb472ad829451f05689524a52069f36902d40c8bc8318190e955640",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "canonicalId": "PMS-CPS-R-009",
+      "sourceId": 6950039,
+      "sourceHash": "c74e82b494100069f0b5c7799af4c0d611e4ff387771e6e0547dac579af34c78",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "gains_from_trade",
+          "sourceRecordOrder": 38,
+          "sourceId": 6950039,
+          "sourceHash": "c74e82b494100069f0b5c7799af4c0d611e4ff387771e6e0547dac579af34c78"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-010",
+      "q": "How does total surplus connect consumer and producer surplus in a market-equilibrium graph?",
+      "options": [
+        "It is only the rectangle of total revenue",
+        "It excludes producer gains",
+        "It counts only trades above equilibrium quantity",
+        "It combines the buyer area above price and seller area below price"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "total_surplus",
+      "secondarySkills": [],
+      "repairSkill": "total_surplus",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Total surplus is the combined area between demand and supply for traded units.",
+      "aHash": "7ce1f244a6c825f3089c70421408dac35ba0816b463c1ace132bae9d9de257b9",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "canonicalId": "PMS-CPS-BR-010",
+      "sourceId": 6950040,
+      "sourceHash": "4525daaab63e8327605f7353db2bf9d4d6601878e9911a7c38a16c08e2287173",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_surplus",
+          "sourceRecordOrder": 39,
+          "sourceId": 6950040,
+          "sourceHash": "4525daaab63e8327605f7353db2bf9d4d6601878e9911a7c38a16c08e2287173"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-011",
+      "q": "How does opportunity cost enter gains-from-exchange analysis?",
+      "options": [
+        "Only buyer income determines whether trade creates gains",
+        "Gains exist whenever price is positive",
+        "Seller willingness to accept reflects the value of resources given up",
+        "Opportunity cost is excluded from producer decisions"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "gains_from_trade",
+      "secondarySkills": [],
+      "repairSkill": "gains_from_trade",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Exchange gains compare buyer value with seller opportunity cost.",
+      "aHash": "f18c670741c6ac844b2ad0db584bfed9988c0b26e61b52a26c20706b5c2a5dd3",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "opportunity-cost"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "canonicalId": "PMS-CPS-BR-011",
+      "sourceId": 6950041,
+      "sourceHash": "c30109cc1295861ec840c14b578e3cdcb2a4d051f41131c1e7f33da59bfaade7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "gains_from_trade",
+          "sourceRecordOrder": 40,
+          "sourceId": 6950041,
+          "sourceHash": "c30109cc1295861ec840c14b578e3cdcb2a4d051f41131c1e7f33da59bfaade7"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-012",
+      "q": "A policy shifts surplus from buyers to sellers without changing trades. What does total-surplus analysis add?",
+      "options": [
+        "It ignores producer gains",
+        "It reveals that the change is distributional rather than an efficiency loss",
+        "It proves buyers are better off",
+        "It treats every transfer as deadweight loss"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "total_surplus",
+      "secondarySkills": [],
+      "repairSkill": "total_surplus",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Adding both sides separates transfers from destroyed gains.",
+      "aHash": "49d965f5de2db9df7551c9410d8748fb68e1261fb8e9e2727fe141633fa96f9c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "surplus-changes-policy-effects"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "canonicalId": "PMS-CPS-BR-012",
+      "sourceId": 6950042,
+      "sourceHash": "b8b7553dcc2f8af2ebde0abbe43c351f51ec13a99476b6412db5fac1fcbff161",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_surplus",
+          "sourceRecordOrder": 41,
+          "sourceId": 6950042,
+          "sourceHash": "b8b7553dcc2f8af2ebde0abbe43c351f51ec13a99476b6412db5fac1fcbff161"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-013",
+      "q": "Why does comparative advantage ultimately matter for gains from exchange?",
+      "options": [
+        "Specialization can create additional mutually beneficial trades and larger total gains",
+        "Comparative advantage guarantees equal surplus for everyone",
+        "It eliminates opportunity cost",
+        "It makes all world prices identical"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "gains_from_trade",
+      "secondarySkills": [],
+      "repairSkill": "gains_from_trade",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Comparative advantage expands the potential gains available from exchange.",
+      "aHash": "482887d8c08a0360d3033db70b59589fd26ee40646622ba8b3831f519f12a430",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "comparative-advantage-and-gains-from-trade"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "canonicalId": "PMS-CPS-BR-013",
+      "sourceId": 6950043,
+      "sourceHash": "3d3533ea28ed31fd4e9fbdd2f14bc278dc64db9ec91c22e802da7397f758ea73",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "gains_from_trade",
+          "sourceRecordOrder": 42,
+          "sourceId": 6950043,
+          "sourceHash": "3d3533ea28ed31fd4e9fbdd2f14bc278dc64db9ec91c22e802da7397f758ea73"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-014",
+      "q": "A learner keeps producing after the next seller’s cost exceeds the next buyer’s value. What is the repair?",
+      "options": [
+        "Keep producing because more output always raises surplus",
+        "Ignore seller cost when buyers still want the good",
+        "Produce until consumer surplus becomes zero",
+        "Stop before units whose marginal cost exceeds marginal willingness to pay"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_quantity",
+      "secondarySkills": [],
+      "repairSkill": "efficient_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Units with cost above value reduce total surplus.",
+      "aHash": "b8b05f6338634cd2dac198e64aa73f1bc8e748be048a5d3e7f1865ef3984d0a0",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-R-014",
+      "sourceId": 6950044,
+      "sourceHash": "678eb9eb035956df43a60f37a0f082c6134bac5cc6aa1592bd13b071a481d1ac",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "efficient_quantity",
+          "sourceRecordOrder": 43,
+          "sourceId": 6950044,
+          "sourceHash": "678eb9eb035956df43a60f37a0f082c6134bac5cc6aa1592bd13b071a481d1ac"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-015",
+      "q": "A learner allocates scarce units to the lowest-value buyers because they “need a bargain.” What does efficiency require?",
+      "options": [
+        "Allocate units to the highest-cost sellers",
+        "Efficiency requires equal surplus for every buyer",
+        "Allocate units to the highest willingness-to-pay buyers, holding other assumptions fixed",
+        "Allocate units randomly regardless of value"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_allocation",
+      "secondarySkills": [],
+      "repairSkill": "efficient_allocation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The standard surplus criterion maximizes gains by placing goods with the highest-value users.",
+      "aHash": "9842a96563c6ac8835b959d8c5e1a7672f77820510da4e0b3322696eb9a3cf5d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-R-015",
+      "sourceId": 6950045,
+      "sourceHash": "9afa699183594d928611813a5bf491bea8a727b3a0ae1cdb2114a508e58ca2b1",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "efficient_allocation",
+          "sourceRecordOrder": 44,
+          "sourceId": 6950045,
+          "sourceHash": "9afa699183594d928611813a5bf491bea8a727b3a0ae1cdb2114a508e58ca2b1"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-016",
+      "q": "A learner assigns production to the highest-cost sellers because they need the highest price. What is the efficiency repair?",
+      "options": [
+        "Efficiency requires identical costs across firms",
+        "Use lower-cost sellers first",
+        "Use higher-cost sellers first",
+        "Seller cost does not affect total surplus"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_allocation",
+      "secondarySkills": [],
+      "repairSkill": "efficient_allocation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Producing with lower opportunity-cost sellers preserves more surplus.",
+      "aHash": "1ad6fb4a81f411da72830fa57bc1100e5eaed54595dcf72e1281293c4cf230ad",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-R-016",
+      "sourceId": 6950046,
+      "sourceHash": "d9072ebb1990a72be25e5060b128c1454f58a5398e4006c7f2e0803c5bf214ec",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "efficient_allocation",
+          "sourceRecordOrder": 45,
+          "sourceId": 6950046,
+          "sourceHash": "d9072ebb1990a72be25e5060b128c1454f58a5398e4006c7f2e0803c5bf214ec"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-017",
+      "q": "A learner calls the buyer with the highest willingness to pay the marginal buyer. What is the correction?",
+      "options": [
+        "The marginal buyer is the last buyer just willing to purchase at the market price",
+        "The marginal buyer is always the richest buyer",
+        "The marginal buyer is the first buyer in the market",
+        "The marginal buyer is a seller at the equilibrium quantity"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "marginal_buyer_seller",
+      "secondarySkills": [],
+      "repairSkill": "marginal_buyer_seller",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Marginal refers to the edge of participation, not the maximum willingness to pay.",
+      "aHash": "aa9f6fb59bd421f1e761b2caf0473762f8bfd5fcc5dbea413d34462dc6724a3d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-R-017",
+      "sourceId": 6950047,
+      "sourceHash": "ce5f389027894e58c9f0ccca1e02c26cee5fb84ec64c7ac0ca86a0d0ddd11b7b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "marginal_buyer_seller",
+          "sourceRecordOrder": 46,
+          "sourceId": 6950047,
+          "sourceHash": "ce5f389027894e58c9f0ccca1e02c26cee5fb84ec64c7ac0ca86a0d0ddd11b7b"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-018",
+      "q": "A learner says an outcome is efficient whenever consumer surplus is maximized. What is missing?",
+      "options": [
+        "Efficiency ignores sellers entirely",
+        "Consumer surplus and total surplus are identical",
+        "Efficiency means price must be zero",
+        "Efficiency uses total surplus, including producer surplus"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "market_efficiency",
+      "secondarySkills": [],
+      "repairSkill": "market_efficiency",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Market efficiency is judged by combined buyer and seller gains.",
+      "aHash": "3d6ce65a63ed1e2402f87ba8d7015a41b1cec0c588dd9418669b87507f3d2348",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-R-018",
+      "sourceId": 6950048,
+      "sourceHash": "cd5a6620b4b13a17cfa087bb9ba43bc6b017ded7d3aa2b27bb8f78d810d3bbe6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "market_efficiency",
+          "sourceRecordOrder": 47,
+          "sourceId": 6950048,
+          "sourceHash": "cd5a6620b4b13a17cfa087bb9ba43bc6b017ded7d3aa2b27bb8f78d810d3bbe6"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-019",
+      "q": "A learner says the efficient quantity is where price is lowest. What is the repair?",
+      "options": [
+        "Efficiency depends only on fixed cost",
+        "The efficient quantity is always zero under scarcity",
+        "The efficient quantity is where marginal buyer value and marginal seller cost cross",
+        "The lowest price always maximizes total surplus"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_quantity",
+      "secondarySkills": [],
+      "repairSkill": "efficient_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Efficiency compares marginal willingness to pay with marginal willingness to accept.",
+      "aHash": "4f3954d57b4fc79fddff59fbece50192e81b5b5b4a89c79f2b0b719ac4df91c9",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-R-019",
+      "sourceId": 6950049,
+      "sourceHash": "f11170cfbf112611c5274d961087913fcf922abb7160c13ec230c8b347adff9f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "efficient_quantity",
+          "sourceRecordOrder": 48,
+          "sourceId": 6950049,
+          "sourceHash": "f11170cfbf112611c5274d961087913fcf922abb7160c13ec230c8b347adff9f"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-020",
+      "q": "How does marginal analysis connect to the efficient quantity?",
+      "options": [
+        "Ignore the next unit and compare only totals",
+        "Produce additional units while marginal benefit is at least marginal cost",
+        "Produce until average cost is minimized regardless of demand",
+        "Stop whenever total revenue rises"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_quantity",
+      "secondarySkills": [],
+      "repairSkill": "efficient_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The efficient stopping rule is a marginal benefit-versus-marginal cost comparison.",
+      "aHash": "2ebde417bfb0d16caf32830573d8170a84d28845c424fd4855f088c30719b716",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "marginal-analysis"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-BR-020",
+      "sourceId": 6950050,
+      "sourceHash": "07280d5bbc8561ef7cc52ca646325b9dc1ed2d9680e0b9c641d98c6f138c5109",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "efficient_quantity",
+          "sourceRecordOrder": 49,
+          "sourceId": 6950050,
+          "sourceHash": "07280d5bbc8561ef7cc52ca646325b9dc1ed2d9680e0b9c641d98c6f138c5109"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-021",
+      "q": "How does efficient allocation connect to opportunity cost?",
+      "options": [
+        "Use resources where buyer value exceeds the opportunity cost by the greatest amount",
+        "Ignore opportunity cost once a market price exists",
+        "Give production to the highest-cost supplier",
+        "Allocate goods to minimize consumer surplus"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_allocation",
+      "secondarySkills": [],
+      "repairSkill": "efficient_allocation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Surplus measures the value created above the opportunity cost of resources used.",
+      "aHash": "e513962c6eb662c769cd29548f900d7008c31bd9a53d328f13f351afda85c1d5",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "opportunity-cost"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-BR-021",
+      "sourceId": 6950051,
+      "sourceHash": "a700af86c7601e9799e0cd479c5b757cdaf92610d5619ff97e695ba182f5ef12",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "efficient_allocation",
+          "sourceRecordOrder": 50,
+          "sourceId": 6950051,
+          "sourceHash": "a700af86c7601e9799e0cd479c5b757cdaf92610d5619ff97e695ba182f5ef12"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-022",
+      "q": "Why do the marginal buyer and seller help identify equilibrium efficiency?",
+      "options": [
+        "They determine the money supply",
+        "They set every firm’s fixed cost",
+        "They identify the highest consumer income",
+        "They mark the edge where willingness to pay and willingness to accept determine whether one more trade adds gains"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "marginal_buyer_seller",
+      "secondarySkills": [],
+      "repairSkill": "marginal_buyer_seller",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The last feasible trade reveals the marginal gain from extending quantity.",
+      "aHash": "8162e1162e6d58f58490dc7e45471d60ab0d1b7cc2b6c2ac20c339736cf6d8e8",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-BR-022",
+      "sourceId": 6950052,
+      "sourceHash": "0f7acd092cc8cc38ab5ce1d8a51339a32f304a3af529750bd9fa79cfcd83c14d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "marginal_buyer_seller",
+          "sourceRecordOrder": 51,
+          "sourceId": 6950052,
+          "sourceHash": "0f7acd092cc8cc38ab5ce1d8a51339a32f304a3af529750bd9fa79cfcd83c14d"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-023",
+      "q": "A price control changes the quantity traded away from the competitive quantity. What efficiency question should surplus analysis ask?",
+      "options": [
+        "Did every buyer pay the same tax?",
+        "Did nominal GDP change?",
+        "Are mutually beneficial trades lost or inefficient trades created?",
+        "Did the legal price change labels on the graph?"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "market_efficiency",
+      "secondarySkills": [],
+      "repairSkill": "market_efficiency",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Efficiency focuses on how the policy changes the set of value-creating trades.",
+      "aHash": "9010931dbd98804ca63453e9ee4c3c476e89899ca7d76e0726104306030344e1",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "binding-price-ceilings",
+        "binding-price-floors"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-BR-023",
+      "sourceId": 6950053,
+      "sourceHash": "c60ba22de3ac2710524b011f4ca312a98d974854dba68347d24a4dc03feb5b5d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "market_efficiency",
+          "sourceRecordOrder": 52,
+          "sourceId": 6950053,
+          "sourceHash": "c60ba22de3ac2710524b011f4ca312a98d974854dba68347d24a4dc03feb5b5d"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-024",
+      "q": "How does the supply-and-demand intersection relate to the surplus criterion in the basic competitive model?",
+      "options": [
+        "It makes all buyers identical",
+        "It identifies the quantity where marginal willingness to pay equals marginal willingness to accept",
+        "It guarantees equal consumer and producer surplus",
+        "It identifies the maximum possible market price"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficient_quantity",
+      "secondarySkills": [],
+      "repairSkill": "efficient_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The intersection matches the marginal value-cost condition for efficient quantity.",
+      "aHash": "14c0daee25ab9776853e2a18d4e77c90b9cba2ca76bda7c44a706f3d0c156f44",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficient-quantity-allocation"
+      ],
+      "canonicalId": "PMS-CPS-BR-024",
+      "sourceId": 6950054,
+      "sourceHash": "15636474dd0cc114913077db21bd62b9fcafcfd0244b462848cf6bdb11a3e229",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "efficient_quantity",
+          "sourceRecordOrder": 53,
+          "sourceId": 6950054,
+          "sourceHash": "15636474dd0cc114913077db21bd62b9fcafcfd0244b462848cf6bdb11a3e229"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-025",
+      "q": "A learner counts a $20 transfer from consumers to producers as a $20 deadweight loss. What is the repair?",
+      "options": [
+        "A transfer changes who receives surplus; deadweight loss requires gains that disappear",
+        "Every transfer is a deadweight loss",
+        "Producer gains are excluded from total surplus",
+        "Consumer losses never affect welfare"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "surplus_policy_application",
+      "secondarySkills": [],
+      "repairSkill": "surplus_policy_application",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Efficiency loss comes from destroyed gains, not from a dollar merely moving between groups.",
+      "aHash": "e782ccf84ef0ec2db0c85042c636beffe9dc657e55dceeba6808362574727360",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "surplus-changes-policy-effects"
+      ],
+      "canonicalId": "PMS-CPS-R-025",
+      "sourceId": 6950055,
+      "sourceHash": "676c49cea9da1ee73e59640415a288832573dc64f94e24b88380ba51790ba7cb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "surplus_policy_application",
+          "sourceRecordOrder": 54,
+          "sourceId": 6950055,
+          "sourceHash": "676c49cea9da1ee73e59640415a288832573dc64f94e24b88380ba51790ba7cb"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-R-026",
+      "q": "A learner says the market outcome with the highest consumer-plus-producer surplus must also be the fairest. What is the repair?",
+      "options": [
+        "Highest total surplus guarantees equal distribution",
+        "Fairness is measured only by producer surplus",
+        "Equity is identical to willingness to pay",
+        "Efficiency and equity are separate criteria"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "repair",
+      "objective": "CPS.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "surplus_allocation_limits",
+      "secondarySkills": [],
+      "repairSkill": "surplus_allocation_limits",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Total surplus measures efficiency, while fairness requires additional value judgments.",
+      "aHash": "8ffec4044d8c9073c6dc846bc06cc7ec0e311cdc0684a67e8b8aaadc19c48c57",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficiency-equity-surplus-limits"
+      ],
+      "canonicalId": "PMS-CPS-R-026",
+      "sourceId": 6950056,
+      "sourceHash": "ae09ae7d927f16c447c951cdaee25045b459da20e3c99403076de399ac1eb23c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "surplus_allocation_limits",
+          "sourceRecordOrder": 55,
+          "sourceId": 6950056,
+          "sourceHash": "ae09ae7d927f16c447c951cdaee25045b459da20e3c99403076de399ac1eb23c"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-027",
+      "q": "How does surplus analysis connect to normative economics?",
+      "options": [
+        "Any efficient market is normatively fair",
+        "Equity is determined mechanically by the equilibrium price",
+        "Efficiency can be measured with surplus, but equity judgments require values about distribution",
+        "Normative economics eliminates the need to measure efficiency"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "efficiency_equity_distinction",
+      "secondarySkills": [],
+      "repairSkill": "efficiency_equity_distinction",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The efficiency result is positive analysis; deciding whether the distribution is fair adds a normative criterion.",
+      "aHash": "2c891c733d14fb83989f0f5405c18fcec8373337ef4564992aa723ddcfb4d445",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "positive-vs-normative-analysis"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficiency-equity-surplus-limits"
+      ],
+      "canonicalId": "PMS-CPS-BR-027",
+      "sourceId": 6950057,
+      "sourceHash": "b8548207ffa5df23f98d9e6519f763e9c41a9c47eb4637700064d36150488fc3",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "efficiency_equity_distinction",
+          "sourceRecordOrder": 56,
+          "sourceId": 6950057,
+          "sourceHash": "b8548207ffa5df23f98d9e6519f763e9c41a9c47eb4637700064d36150488fc3"
+        }
+      ]
+    },
+    {
+      "id": "PMS-CPS-BR-028",
+      "q": "Why might an externality require extending ordinary consumer-plus-producer surplus analysis?",
+      "options": [
+        "Externalities matter only for income distribution",
+        "Third-party costs or benefits are not fully captured by private surplus",
+        "Externalities automatically raise consumer surplus",
+        "Producer surplus already includes every social cost"
+      ],
+      "tag": "consumer_producer_surplus",
+      "type": "bridge",
+      "objective": "CPS.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_consumer_producer_surplus",
+      "primarySkill": "surplus_allocation_limits",
+      "secondarySkills": [],
+      "repairSkill": "surplus_allocation_limits",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Social surplus must include effects on people outside the transaction.",
+      "aHash": "16e4652940a163df6913b06bbc21c304cf634ec916de3b06a95fd54fb8948044",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "consumer-and-producer-surplus"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "consumer-and-producer-surplus",
+      "secondaryConceptIds": [
+        "externalities"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "consumer-and-producer-surplus",
+      "subtopicIds": [
+        "efficiency-equity-surplus-limits"
+      ],
+      "canonicalId": "PMS-CPS-BR-028",
+      "sourceId": 6950058,
+      "sourceHash": "2ed0fd07aa22043ae4da77b0fdef5483524b02e188317c3b50fa8a120e0227e0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "surplus_allocation_limits",
+          "sourceRecordOrder": 57,
+          "sourceId": 6950058,
+          "sourceHash": "2ed0fd07aa22043ae4da77b0fdef5483524b02e188317c3b50fa8a120e0227e0"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-001",
+      "q": "A learner says the world price is the same thing as the country’s no-trade equilibrium price. What is the repair?",
+      "options": [
+        "The world price is the external trading price; comparing it with the no-trade price reveals importer or exporter status",
+        "The two prices must always be equal",
+        "The world price is domestic producer surplus",
+        "The no-trade price is set by foreign supply only"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.1",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "world_price",
+      "secondarySkills": [],
+      "repairSkill": "world_price",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Trade status comes from comparing the world price with the domestic autarky equilibrium price.",
+      "aHash": "38e16ed6ef665d215b12b1fe8114f008613cd7e594755dd70e158a2b7204e9ce",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-world-price-status"
+      ],
+      "canonicalId": "PMS-ITP-R-001",
+      "sourceId": 6950059,
+      "sourceHash": "6e4a644092d8cc799919717613386757281d6cc373a6eb839f2308ac61d4d20e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "world_price",
+          "sourceRecordOrder": 58,
+          "sourceId": 6950059,
+          "sourceHash": "6e4a644092d8cc799919717613386757281d6cc373a6eb839f2308ac61d4d20e"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-002",
+      "q": "A learner calculates imports as domestic supply minus domestic demand. What is the repair?",
+      "options": [
+        "Imports equal supply plus demand",
+        "Imports equal world price minus domestic price",
+        "Imports equal domestic production only",
+        "Imports equal domestic quantity demanded minus domestic quantity supplied"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.2",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "import_quantity",
+      "secondarySkills": [],
+      "repairSkill": "import_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "In an importing market, excess domestic demand is filled by imports.",
+      "aHash": "2fc31afd23e0fab45f3456f25bad8b2f362ed2e2c4478c1cc3961784a7e41b89",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "canonicalId": "PMS-ITP-R-002",
+      "sourceId": 6950060,
+      "sourceHash": "31db0e133b186f945bdd3f86680490c07f5eb0fcc450a1146e3580a0336178cb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "import_quantity",
+          "sourceRecordOrder": 59,
+          "sourceId": 6950060,
+          "sourceHash": "31db0e133b186f945bdd3f86680490c07f5eb0fcc450a1146e3580a0336178cb"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-003",
+      "q": "A learner calculates exports as domestic demand minus domestic supply. What is the repair?",
+      "options": [
+        "Exports equal world price times domestic demand",
+        "Exports equal domestic consumption only",
+        "Exports equal domestic quantity supplied minus domestic quantity demanded",
+        "Exports equal demand plus supply"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.2",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "export_quantity",
+      "secondarySkills": [],
+      "repairSkill": "export_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "In an exporting market, excess domestic supply is sold abroad.",
+      "aHash": "73f377915494f1b63cee9fd8612147eebf63621f8be7a126ea4a29749b3e0f3a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "canonicalId": "PMS-ITP-R-003",
+      "sourceId": 6950061,
+      "sourceHash": "d3ad5b4b6cb491c0c44db7d81d404f8f0ee75bfe92e958493221e5ee442e0057",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "export_quantity",
+          "sourceRecordOrder": 60,
+          "sourceId": 6950061,
+          "sourceHash": "d3ad5b4b6cb491c0c44db7d81d404f8f0ee75bfe92e958493221e5ee442e0057"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-004",
+      "q": "A learner says opening an importing market to a lower world price reduces domestic consumption. What is the correction?",
+      "options": [
+        "Only production can change with trade",
+        "The lower domestic price generally increases quantity demanded",
+        "The lower price decreases quantity demanded",
+        "Consumption is fixed after trade opens"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.2",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "domestic_consumption_under_trade",
+      "secondarySkills": [],
+      "repairSkill": "domestic_consumption_under_trade",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Consumers respond to the lower price by demanding more.",
+      "aHash": "13f4980f0fd201b491ea39aa862d18883e822a2d9a9641d8f107161e50612494",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "canonicalId": "PMS-ITP-R-004",
+      "sourceId": 6950062,
+      "sourceHash": "57ebc8c2446c5166d8da96ddb5ecdc859d6c5ef414abcab96be53a12afeb808a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "domestic_consumption_under_trade",
+          "sourceRecordOrder": 61,
+          "sourceId": 6950062,
+          "sourceHash": "57ebc8c2446c5166d8da96ddb5ecdc859d6c5ef414abcab96be53a12afeb808a"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-005",
+      "q": "A learner says a lower world price in an importing market increases domestic production. What is the repair?",
+      "options": [
+        "The lower domestic price generally reduces quantity supplied by domestic firms",
+        "A lower price always raises domestic production",
+        "Domestic output is fixed by the world price",
+        "Imports cannot affect domestic producers"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.2",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "domestic_production_under_trade",
+      "secondarySkills": [],
+      "repairSkill": "domestic_production_under_trade",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Domestic producers move along supply to a lower quantity at the lower price.",
+      "aHash": "b853569e17a1d9ba4fa69d235590d2953ce843f2ce2f9732fa6c2b77613e8f43",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "canonicalId": "PMS-ITP-R-005",
+      "sourceId": 6950063,
+      "sourceHash": "c0ba011ee35cbdd71032e2c92c67a537f7dc9aa5765ea4287602bd529e79a427",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "domestic_production_under_trade",
+          "sourceRecordOrder": 62,
+          "sourceId": 6950063,
+          "sourceHash": "c0ba011ee35cbdd71032e2c92c67a537f7dc9aa5765ea4287602bd529e79a427"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-006",
+      "q": "How does the import quantity connect to ordinary market disequilibrium at the world price?",
+      "options": [
+        "Imports are the same as a domestic shortage under a binding ceiling",
+        "Imports equal total domestic production",
+        "Imports are unrelated to supply and demand",
+        "Imports fill the gap between domestic quantity demanded and domestic quantity supplied"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "import_quantity",
+      "secondarySkills": [],
+      "repairSkill": "import_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "At the world price, excess domestic demand is met through imports.",
+      "aHash": "9c6435f3544b208c4b7be129a3dc2ce599a3bf29afe3eb45f637b59e293c0f2b",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "canonicalId": "PMS-ITP-BR-006",
+      "sourceId": 6950064,
+      "sourceHash": "d7b56c00b1dd34965ca1eb0758ce69c4d6fe0f9621de7684f8ae72ca12258ec6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "import_quantity",
+          "sourceRecordOrder": 63,
+          "sourceId": 6950064,
+          "sourceHash": "d7b56c00b1dd34965ca1eb0758ce69c4d6fe0f9621de7684f8ae72ca12258ec6"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-007",
+      "q": "How does export quantity connect to ordinary supply-and-demand analysis at the world price?",
+      "options": [
+        "Exports occur only when domestic supply shifts left",
+        "Exports are determined without reference to price",
+        "Exports are the excess of domestic quantity supplied over domestic quantity demanded",
+        "Exports equal domestic quantity demanded"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "export_quantity",
+      "secondarySkills": [],
+      "repairSkill": "export_quantity",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "At the world price, excess domestic supply is sold to foreign buyers.",
+      "aHash": "12eda5c730b4fc3b9bb933e6d2af2d52bc0be100fe70e2a23416af10beed0095",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "canonicalId": "PMS-ITP-BR-007",
+      "sourceId": 6950065,
+      "sourceHash": "3353efbdb67e8b69cd85fcc964fbe1283cb66565e42ad000aa9dc7d7b70ed0cb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "export_quantity",
+          "sourceRecordOrder": 64,
+          "sourceId": 6950065,
+          "sourceHash": "3353efbdb67e8b69cd85fcc964fbe1283cb66565e42ad000aa9dc7d7b70ed0cb"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-008",
+      "q": "A learner says free trade cannot create net gains if one domestic group loses. What is the repair?",
+      "options": [
+        "Distributional losses are never counted",
+        "Net gains can be positive when winners gain more than losers lose",
+        "Any losing group makes total surplus negative",
+        "Trade gains require every person to gain"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "trade_winners_losers",
+      "secondarySkills": [],
+      "repairSkill": "trade_winners_losers",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Aggregate gains and distribution are separate: a market can have positive net gains and identifiable losers.",
+      "aHash": "101abcfbeb543244541de9755f0d174e1c5a5bc6e0ab27cbdadf9fe7f6cf1738",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-gains-surplus-winners-losers"
+      ],
+      "canonicalId": "PMS-ITP-R-008",
+      "sourceId": 6950066,
+      "sourceHash": "b76714999c0e923ea2836883a1a81b6d42d255278b8dfbafaa1fc1731e5d567b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "trade_winners_losers",
+          "sourceRecordOrder": 65,
+          "sourceId": 6950066,
+          "sourceHash": "b76714999c0e923ea2836883a1a81b6d42d255278b8dfbafaa1fc1731e5d567b"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-009",
+      "q": "How does the surplus framework connect free-trade winners and losers to the efficiency conclusion?",
+      "options": [
+        "Add consumer and producer surplus changes to determine the net gain",
+        "Count only the group that gains",
+        "Ignore producer surplus in importing markets",
+        "Treat every redistribution as deadweight loss"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "total_surplus_trade",
+      "secondarySkills": [],
+      "repairSkill": "total_surplus_trade",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The surplus framework converts distributional changes into a net total-surplus comparison.",
+      "aHash": "d19382222ac65e87bea6cd2c2132a5928ac02f77ddb4cee28c1c20737f4f4346",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "consumer-and-producer-surplus"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-gains-surplus-winners-losers"
+      ],
+      "canonicalId": "PMS-ITP-BR-009",
+      "sourceId": 6950067,
+      "sourceHash": "b91a4bf97ca6d2eae645b05907cf04e9160474830e67b50241e05f07b1b31ab8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "total_surplus_trade",
+          "sourceRecordOrder": 66,
+          "sourceId": 6950067,
+          "sourceHash": "b91a4bf97ca6d2eae645b05907cf04e9160474830e67b50241e05f07b1b31ab8"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-010",
+      "q": "A learner calculates tariff revenue using all domestic consumption rather than imported units. What is the repair?",
+      "options": [
+        "Multiply the tariff by domestic production plus imports",
+        "Use the world price times all consumption",
+        "Tariff revenue equals consumer surplus lost",
+        "Multiply the tariff per unit by the quantity imported"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_revenue",
+      "secondarySkills": [],
+      "repairSkill": "tariff_revenue",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The tariff is collected on imported units, not on every unit consumed.",
+      "aHash": "1391ffc1cadf5b518e9904e4e5832d3b7aacdb5d095a2e349ca6413122d65a07",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "canonicalId": "PMS-ITP-R-010",
+      "sourceId": 6950068,
+      "sourceHash": "1d153df08e1d420c5ceed0a288738b9c9a4fb80cf83f0e6f4bcd6e2943f740a7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "tariff_revenue",
+          "sourceRecordOrder": 67,
+          "sourceId": 6950068,
+          "sourceHash": "1d153df08e1d420c5ceed0a288738b9c9a4fb80cf83f0e6f4bcd6e2943f740a7"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-011",
+      "q": "A learner says all consumer surplus lost under a tariff is deadweight loss. What is the repair?",
+      "options": [
+        "Producer gains are not part of total surplus",
+        "Government revenue is always deadweight loss",
+        "Some loss is transferred to producers and government; only the unrecovered portion is deadweight loss",
+        "All consumer loss disappears from national welfare"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_welfare_effect",
+      "secondarySkills": [],
+      "repairSkill": "tariff_welfare_effect",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Tariff welfare analysis separates transfers from production and consumption distortions.",
+      "aHash": "7e4e1b49306f2b3ac9963d5cc3a3dba64699ce08c81edbe91b135cdb26162d2b",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "canonicalId": "PMS-ITP-R-011",
+      "sourceId": 6950069,
+      "sourceHash": "5883b0f270bf4bc1e9306e6e00ccd94125b2bfe8d086d8fe683e8f08e3cb6f3a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "tariff_welfare_effect",
+          "sourceRecordOrder": 68,
+          "sourceId": 6950069,
+          "sourceHash": "5883b0f270bf4bc1e9306e6e00ccd94125b2bfe8d086d8fe683e8f08e3cb6f3a"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-012",
+      "q": "How does a tariff connect to the tax-wedge idea from domestic markets?",
+      "options": [
+        "It guarantees the legal and economic burden are identical",
+        "It creates a wedge between the world price and the domestic buyer/seller price",
+        "It eliminates the role of price",
+        "It shifts world demand only"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_price_effect",
+      "secondarySkills": [],
+      "repairSkill": "tariff_price_effect",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A tariff acts like a tax on imports and raises the domestic price above the world price in the small-country model.",
+      "aHash": "382703ddc9e1acb14f661f6c38f85ca290de56ce75878c45caa6e14628e9ec5d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "tax-incidence"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "canonicalId": "PMS-ITP-BR-012",
+      "sourceId": 6950070,
+      "sourceHash": "60f53867889c0ca08c40207f6ae57cb822baf28c355fa6b7ea7d258b2ba1137d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_price_effect",
+          "sourceRecordOrder": 69,
+          "sourceId": 6950070,
+          "sourceHash": "60f53867889c0ca08c40207f6ae57cb822baf28c355fa6b7ea7d258b2ba1137d"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-013",
+      "q": "How does tariff deadweight loss connect to surplus analysis?",
+      "options": [
+        "It is the total surplus destroyed by production and consumption distortions",
+        "It is the full transfer from consumers to producers",
+        "It equals tariff revenue",
+        "It is producer surplus after the tariff"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_welfare_effect",
+      "secondarySkills": [],
+      "repairSkill": "tariff_welfare_effect",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The surplus framework identifies the trades and resource uses that no longer maximize gains.",
+      "aHash": "9be0b71618d219dc1a716f9b08868c6486d552bee10c6e5425050e65c12b4807",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "consumer-and-producer-surplus"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "canonicalId": "PMS-ITP-BR-013",
+      "sourceId": 6950071,
+      "sourceHash": "33a4a3ab63422006c5c0814f4af5ca673dd6b0e4db551175e1d7c6195ef517ba",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_welfare_effect",
+          "sourceRecordOrder": 70,
+          "sourceId": 6950071,
+          "sourceHash": "33a4a3ab63422006c5c0814f4af5ca673dd6b0e4db551175e1d7c6195ef517ba"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-014",
+      "q": "A learner says quota rent is government revenue automatically. What is the repair?",
+      "options": [
+        "Quota rent is always collected as a tariff",
+        "Quota rent equals domestic producer surplus",
+        "Quota rent exists only when the quota is nonbinding",
+        "Quota rent goes to whoever holds the valuable import rights unless the government auctions them"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "quota_rent",
+      "secondarySkills": [],
+      "repairSkill": "quota_rent",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Unlike tariff revenue, quota rent depends on who receives or buys the import licenses.",
+      "aHash": "29a2d642457b81abb695e695c30f1cafe6034b12e25326286738b70813200d13",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-R-014",
+      "sourceId": 6950072,
+      "sourceHash": "033907b418a27b3338c824a9aa3e845325ba5438bee040f14a03d4882528fd0b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "quota_rent",
+          "sourceRecordOrder": 71,
+          "sourceId": 6950072,
+          "sourceHash": "033907b418a27b3338c824a9aa3e845325ba5438bee040f14a03d4882528fd0b"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-R-015",
+      "q": "A learner says equal-price tariffs and quotas must have identical national effects. What key issue is missing?",
+      "options": [
+        "Whether imports exist",
+        "Whether domestic firms produce anything",
+        "Who receives the quota rents",
+        "Whether consumers face a price"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "repair",
+      "objective": "ITP.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_quota_comparison",
+      "secondarySkills": [],
+      "repairSkill": "tariff_quota_comparison",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "If foreign license holders capture quota rents, national surplus differs from an equivalent tariff with domestic government revenue.",
+      "aHash": "340e8028c1b4059eb8714cb9397ff9903b839d5a0ccfcc453c66c64665f60b9d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-R-015",
+      "sourceId": 6950073,
+      "sourceHash": "7c89c6436e3fd9efe98bd4e8537b717f584064bd0d18e20a98868ba8c49b8740",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "tariff_quota_comparison",
+          "sourceRecordOrder": 72,
+          "sourceId": 6950073,
+          "sourceHash": "7c89c6436e3fd9efe98bd4e8537b717f584064bd0d18e20a98868ba8c49b8740"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-016",
+      "q": "How does a binding quota connect to ordinary supply-and-demand pressure?",
+      "options": [
+        "Import restrictions make domestic supply irrelevant",
+        "Restricting imports reduces available supply to the domestic market and raises the domestic price",
+        "A quota shifts domestic demand left automatically",
+        "A quota fixes the world price and domestic price at zero"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "quota_quantity_effect",
+      "secondarySkills": [],
+      "repairSkill": "quota_quantity_effect",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "The quantity restriction tightens the domestic market and raises price until the permitted import gap is satisfied.",
+      "aHash": "39d5ccda70336ee7e6f543488363ab3c084b6e039bd1ee601de5d176d2e60173",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-016",
+      "sourceId": 6950074,
+      "sourceHash": "a9669de6f123d88d34580e40b8ac83b1194eb1458cb67eff89b77d991597bc14",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "quota_quantity_effect",
+          "sourceRecordOrder": 73,
+          "sourceId": 6950074,
+          "sourceHash": "a9669de6f123d88d34580e40b8ac83b1194eb1458cb67eff89b77d991597bc14"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-017",
+      "q": "How does quota rent connect to economic rent more generally?",
+      "options": [
+        "A scarce legal right can acquire value because it permits profitable access",
+        "Quota rent is a payment for labor only",
+        "Economic rent requires a perfectly competitive labor market",
+        "Quota rent equals consumer surplus by definition"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "quota_rent",
+      "secondarySkills": [],
+      "repairSkill": "quota_rent",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Import licenses become valuable because the restriction creates a price gap.",
+      "aHash": "7407885a7afe6b2843dd4d9733eb4dc2df3e12865082c7196adf1a69012e3943",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "rent-seeking"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-017",
+      "sourceId": 6950075,
+      "sourceHash": "9aa9fbaeec3381e744fbbc9922f4d79f87d70d03d1de24906892ee7dd15fa519",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "quota_rent",
+          "sourceRecordOrder": 74,
+          "sourceId": 6950075,
+          "sourceHash": "9aa9fbaeec3381e744fbbc9922f4d79f87d70d03d1de24906892ee7dd15fa519"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-018",
+      "q": "Why can auctioning quota licenses make a quota look more like a tariff in national-welfare accounting?",
+      "options": [
+        "Auctioning eliminates the domestic price increase",
+        "Auctioning makes imports unlimited",
+        "Auctioning turns the quota into an export subsidy",
+        "The government captures the quota rent much like tariff revenue"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_quota_comparison",
+      "secondarySkills": [],
+      "repairSkill": "tariff_quota_comparison",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Who receives the rent is a major difference between quotas and tariffs.",
+      "aHash": "cad7ec8eeada7f0b9183ccc3b8de1732398445f5c6dcc7fb740e14b9c1dd4f25",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-018",
+      "sourceId": 6950076,
+      "sourceHash": "c66873137d130c644ae87eacd7a5085dc4093685dc7ee62d448369d52856011c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_quota_comparison",
+          "sourceRecordOrder": 75,
+          "sourceId": 6950076,
+          "sourceHash": "c66873137d130c644ae87eacd7a5085dc4093685dc7ee62d448369d52856011c"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-019",
+      "q": "A demand increase occurs under a fixed quota. What does the quota teach about quantity controls versus price-based barriers?",
+      "options": [
+        "Both price and imports must stay unchanged",
+        "The quota automatically becomes a tariff",
+        "The import quantity stays capped while domestic price can rise further",
+        "Domestic price stays fixed while imports expand freely"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "quota_quantity_effect",
+      "secondarySkills": [],
+      "repairSkill": "quota_quantity_effect",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "A hard quantity limit adjusts differently from a fixed per-unit tariff when market conditions change.",
+      "aHash": "043e7247e550f84855e52777686296495bfbedc6086d6bd22324a2e6e78e9ceb",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "market-equilibrium"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-019",
+      "sourceId": 6950077,
+      "sourceHash": "9710d2699232400151873ac2cc3210e498accc9b249339e859c0b6a5cdbca390",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "quota_quantity_effect",
+          "sourceRecordOrder": 76,
+          "sourceId": 6950077,
+          "sourceHash": "9710d2699232400151873ac2cc3210e498accc9b249339e859c0b6a5cdbca390"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-020",
+      "q": "If foreign exporters capture quota rents, what adjacent distributional question should policy analysis ask?",
+      "options": [
+        "Whether the world price becomes the autarky price",
+        "Whether part of the domestic consumer loss becomes income to foreigners rather than domestic revenue",
+        "Whether domestic demand becomes perfectly elastic",
+        "Whether producer surplus is always zero"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "quota_rent",
+      "secondarySkills": [],
+      "repairSkill": "quota_rent",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Rent ownership affects the national distribution and welfare consequences of a quota.",
+      "aHash": "0b10544c8aff6d7c827067ffabfec010cf510b76ccba5e8210f3ff19792a4af5",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-020",
+      "sourceId": 6950078,
+      "sourceHash": "3266db620454d8604d5a24fc895ed661d89e370b58b196063545284ae6749be7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "quota_rent",
+          "sourceRecordOrder": 77,
+          "sourceId": 6950078,
+          "sourceHash": "3266db620454d8604d5a24fc895ed661d89e370b58b196063545284ae6749be7"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-021",
+      "q": "How does a quota-versus-tariff comparison connect to policy design?",
+      "options": [
+        "Two policies can create similar price and quantity effects but differ in who receives the transfer",
+        "All trade restrictions have identical distributional effects",
+        "Only quotas create deadweight loss",
+        "Tariffs never affect domestic producers"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_quota_comparison",
+      "secondarySkills": [],
+      "repairSkill": "tariff_quota_comparison",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Policy evaluation must track both efficiency distortions and the destination of rents or revenue.",
+      "aHash": "6f92d80503c5de889b6bf06d0faa94fb7f38d0d72a1f2a249b6818589f7157a6",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-021",
+      "sourceId": 6950079,
+      "sourceHash": "f746fdc862954f9bc69a693282d2bfa78a6e2df64398e60c65ca6bfea1c1144d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_quota_comparison",
+          "sourceRecordOrder": 78,
+          "sourceId": 6950079,
+          "sourceHash": "f746fdc862954f9bc69a693282d2bfa78a6e2df64398e60c65ca6bfea1c1144d"
+        }
+      ]
+    },
+    {
+      "id": "PMS-ITP-BR-022",
+      "q": "How does evaluating protection connect positive and normative economics?",
+      "options": [
+        "Positive economics decides which distribution is fair",
+        "Normative economics calculates tariff revenue mechanically",
+        "The two approaches are identical in trade policy",
+        "Positive analysis estimates costs and benefits; normative judgment weighs goals and distribution"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "trade_policy_evaluation",
+      "secondarySkills": [],
+      "repairSkill": "trade_policy_evaluation",
+      "commonError": "needs_targeted_recovery",
+      "feedback": "Trade-policy evaluation separates what a policy does from judgments about whether its goals justify those effects.",
+      "aHash": "93ad1c0c577b0ccd6b2a0ae6b38955a57d119e00301ab89571293022966d0f8c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "positive-vs-normative-analysis"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "canonicalId": "PMS-ITP-BR-022",
+      "sourceId": 6950080,
+      "sourceHash": "f8d5ca41b4863f7609d40a32535fae63807b55dc503cf686f7207f1b8d20da4f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "trade_policy_evaluation",
+          "sourceRecordOrder": 79,
+          "sourceId": 6950080,
+          "sourceHash": "f8d5ca41b4863f7609d40a32535fae63807b55dc503cf686f7207f1b8d20da4f"
+        }
+      ]
+    }
+  ]
+}

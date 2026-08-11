@@ -57,7 +57,11 @@ const MICRO_IDS = new Set([
   'consumer-surplus', 'producer-surplus', 'total-surplus-gains-from-exchange',
   'efficient-quantity-allocation', 'surplus-changes-policy-effects',
   'efficiency-equity-surplus-limits',
-  'international-trade-and-trade-policy', 'costs-of-production',
+  'international-trade-and-trade-policy',
+  'trade-world-price-status', 'trade-domestic-production-consumption-quantities',
+  'trade-gains-surplus-winners-losers', 'tariffs-revenue-deadweight-loss',
+  'import-quotas-quota-rents', 'trade-policy-efficiency-distribution',
+  'costs-of-production',
   'perfect-competition', 'monopoly', 'monopolistic-competition', 'oligopoly'
 ]);
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-11T00:08:00.000Z",
+  "generatedAt": "2026-08-11T02:05:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -703,32 +703,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 90,
+        "main": 134,
         "elite": 30,
         "legendary": 90,
         "calculation": 30,
         "boss": 54,
         "legendaryBoss": 36,
-        "repair": 20,
-        "bridge": 20,
+        "repair": 30,
+        "bridge": 38,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 48,
-        "medium": 48,
-        "hard": 78,
+        "easy": 70,
+        "medium": 68,
+        "hard": 80,
         "elite": 30,
         "legendary": 126,
-        "unknown": 40
+        "unknown": 68
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "directSkillMatches": 30,
+        "mainWithUsableSkill": 442
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 330
+        "directSkillMatches": 38,
+        "mainWithUsableSkill": 442
       },
       "calculationCoverage": 51,
       "graphCoverage": 64,
@@ -737,8 +737,8 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Consumer and Producer Surplus family.",
-      "coverageFloorVersion": "phase6.2c-rich-v1",
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Consumer and Producer Surplus family. Adaptive-depth backfill now enforces runtime Easy/Medium/Hard floors for granular Micro selectors without changing Legendary, checkpoint, repair, bridge, graph, or calculation scope. Adaptive-support backfill now provides multiple targeted Repair and Bridge routes for each granular child selector while preserving the family scope.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "childConceptIds": [
         "consumer-surplus",
         "producer-surplus",
@@ -781,32 +781,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 20,
+        "main": 23,
         "elite": 2,
         "legendary": 3,
         "calculation": 10,
         "boss": 10,
         "legendaryBoss": 1,
         "repair": 6,
-        "bridge": 2,
+        "bridge": 6,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 17,
-        "medium": 11,
+        "medium": 14,
         "hard": 12,
         "elite": 2,
         "legendary": 4,
-        "unknown": 8
+        "unknown": 12
       },
       "repairCoverage": {
         "directSkillMatches": 6,
-        "mainWithUsableSkill": 46
+        "mainWithUsableSkill": 61
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 46
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 61
       },
       "calculationCoverage": 7,
       "graphCoverage": 14,
@@ -815,12 +815,32 @@
       "instructionalClassification": "Consumer and Producer Surplus subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 11 Easy / 10 Medium / 12 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "consumer-and-producer-surplus",
       "selectionRole": "family-child",
       "familyTitle": "Consumer and Producer Surplus",
-      "standaloneRecommendation": "standalone-ready"
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 11,
+        "medium": 10,
+        "hard": 12
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "producer-surplus",
@@ -854,32 +874,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 21,
+        "main": 24,
         "elite": 3,
         "legendary": 3,
         "calculation": 10,
         "boss": 10,
         "legendaryBoss": 0,
         "repair": 6,
-        "bridge": 3,
+        "bridge": 6,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 17,
-        "medium": 11,
+        "medium": 14,
         "hard": 13,
         "elite": 3,
         "legendary": 3,
-        "unknown": 9
+        "unknown": 12
       },
       "repairCoverage": {
         "directSkillMatches": 6,
-        "mainWithUsableSkill": 47
+        "mainWithUsableSkill": 62
       },
       "bridgeCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 47
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 62
       },
       "calculationCoverage": 7,
       "graphCoverage": 13,
@@ -888,12 +908,32 @@
       "instructionalClassification": "Consumer and Producer Surplus subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 11 Easy / 10 Medium / 13 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "consumer-and-producer-surplus",
       "selectionRole": "family-child",
       "familyTitle": "Consumer and Producer Surplus",
-      "standaloneRecommendation": "standalone-ready"
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 11,
+        "medium": 10,
+        "hard": 13
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "total-surplus-gains-from-exchange",
@@ -926,32 +966,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 16,
+        "main": 28,
         "elite": 7,
         "legendary": 20,
         "calculation": 3,
         "boss": 10,
         "legendaryBoss": 10,
-        "repair": 4,
-        "bridge": 2,
+        "repair": 6,
+        "bridge": 6,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
-        "medium": 9,
+        "easy": 12,
+        "medium": 13,
         "hard": 16,
         "elite": 7,
         "legendary": 30,
-        "unknown": 6
+        "unknown": 12
       },
       "repairCoverage": {
-        "directSkillMatches": 4,
-        "mainWithUsableSkill": 66
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 90
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 66
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 90
       },
       "calculationCoverage": 0,
       "graphCoverage": 21,
@@ -960,12 +1000,32 @@
       "instructionalClassification": "Consumer and Producer Surplus subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 11 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "consumer-and-producer-surplus",
       "selectionRole": "family-child",
       "familyTitle": "Consumer and Producer Surplus",
-      "standaloneRecommendation": "standalone-ready"
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "efficient-quantity-allocation",
@@ -1000,32 +1060,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 21,
+        "main": 30,
         "elite": 6,
         "legendary": 38,
         "calculation": 5,
         "boss": 15,
         "legendaryBoss": 13,
-        "repair": 0,
-        "bridge": 1,
+        "repair": 6,
+        "bridge": 6,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 12,
+        "easy": 13,
+        "medium": 15,
         "hard": 22,
         "elite": 6,
         "legendary": 51,
-        "unknown": 1
+        "unknown": 12
       },
       "repairCoverage": {
-        "directSkillMatches": 0,
-        "mainWithUsableSkill": 98
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 119
       },
       "bridgeCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 98
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 119
       },
       "calculationCoverage": 0,
       "graphCoverage": 12,
@@ -1034,12 +1094,32 @@
       "instructionalClassification": "Consumer and Producer Surplus subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 15 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "consumer-and-producer-surplus",
       "selectionRole": "family-child",
       "familyTitle": "Consumer and Producer Surplus",
-      "standaloneRecommendation": "standalone-ready"
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 15
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "surplus-changes-policy-effects",
@@ -1073,32 +1153,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 6,
+        "main": 14,
         "elite": 9,
         "legendary": 18,
         "calculation": 2,
         "boss": 5,
         "legendaryBoss": 8,
-        "repair": 2,
+        "repair": 3,
         "bridge": 11,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 0,
-        "medium": 3,
+        "easy": 5,
+        "medium": 6,
         "hard": 10,
         "elite": 9,
         "legendary": 26,
-        "unknown": 13
+        "unknown": 14
       },
       "repairCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 48
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 70
       },
       "bridgeCoverage": {
         "directSkillMatches": 11,
-        "mainWithUsableSkill": 48
+        "mainWithUsableSkill": 70
       },
       "calculationCoverage": 0,
       "graphCoverage": 4,
@@ -1107,12 +1187,32 @@
       "instructionalClassification": "Consumer and Producer Surplus subtopic",
       "coverageStatus": "supporting-subtopic",
       "coverageStatusLabel": "Best paired with another Surplus topic",
-      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. Changes/policy effects and efficiency/equity/limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth.",
-      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. Changes/policy effects and efficiency/equity/limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth. Runtime adaptive depth: 5 Easy / 5 Medium / 6 Hard; floor 5/5/5. Adaptive support: 3 Repair / 11 Bridge; floor 3/3.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "consumer-and-producer-surplus",
       "selectionRole": "family-child",
       "familyTitle": "Consumer and Producer Surplus",
-      "standaloneRecommendation": "supporting-subtopic"
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 11
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "efficiency-equity-surplus-limits",
@@ -1143,32 +1243,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 6,
+        "main": 15,
         "elite": 3,
         "legendary": 8,
         "calculation": 0,
         "boss": 4,
         "legendaryBoss": 4,
-        "repair": 2,
-        "bridge": 1,
+        "repair": 3,
+        "bridge": 3,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 3,
-        "medium": 2,
-        "hard": 5,
+        "easy": 6,
+        "medium": 6,
+        "hard": 7,
         "elite": 3,
         "legendary": 12,
-        "unknown": 3
+        "unknown": 6
       },
       "repairCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 25
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 40
       },
       "bridgeCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 25
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 40
       },
       "calculationCoverage": 0,
       "graphCoverage": 0,
@@ -1177,12 +1277,32 @@
       "instructionalClassification": "Consumer and Producer Surplus subtopic",
       "coverageStatus": "supporting-subtopic",
       "coverageStatusLabel": "Best paired with another Surplus topic",
-      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. Changes/policy effects and efficiency/equity/limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth.",
-      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. Changes/policy effects and efficiency/equity/limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth. Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "consumer-and-producer-surplus",
       "selectionRole": "family-child",
       "familyTitle": "Consumer and Producer Surplus",
-      "standaloneRecommendation": "supporting-subtopic"
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "costs-of-production",
@@ -1873,32 +1993,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 117,
+        "main": 164,
         "elite": 38,
         "legendary": 97,
         "calculation": 30,
         "boss": 60,
         "legendaryBoss": 36,
-        "repair": 20,
-        "bridge": 20,
+        "repair": 34,
+        "bridge": 36,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 59,
-        "medium": 59,
-        "hard": 89,
+        "easy": 84,
+        "medium": 74,
+        "hard": 96,
         "elite": 38,
         "legendary": 133,
-        "unknown": 40
+        "unknown": 70
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 378
+        "directSkillMatches": 34,
+        "mainWithUsableSkill": 495
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 378
+        "directSkillMatches": 36,
+        "mainWithUsableSkill": 495
       },
       "calculationCoverage": 89,
       "graphCoverage": 48,
@@ -1907,8 +2027,8 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank with balanced foundational through mastery coverage, dedicated calculations and remediation, plus 56 graph-dependent items using the approved ELAS-01, ELAS-02, ELAS-03, and ELAS-05 assets. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Elasticity family.",
-      "coverageFloorVersion": "phase6.2b-rich-v1",
+      "coverageStatusNote": "Publisher-scale standalone bank with balanced foundational through mastery coverage, dedicated calculations and remediation, plus 56 graph-dependent items using the approved ELAS-01, ELAS-02, ELAS-03, and ELAS-05 assets. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Elasticity family. Adaptive-depth backfill now enforces runtime Easy/Medium/Hard floors for granular Micro selectors without changing Legendary, checkpoint, repair, bridge, graph, or calculation scope. Adaptive-support backfill now provides multiple targeted Repair and Bridge routes for each granular child selector while preserving the family scope.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "childConceptIds": [
         "price-elasticity-of-demand",
         "price-elasticity-of-supply",
@@ -1982,11 +2102,11 @@
       },
       "repairCoverage": {
         "directSkillMatches": 10,
-        "mainWithUsableSkill": 153
+        "mainWithUsableSkill": 171
       },
       "bridgeCoverage": {
         "directSkillMatches": 8,
-        "mainWithUsableSkill": 153
+        "mainWithUsableSkill": 171
       },
       "calculationCoverage": 51,
       "graphCoverage": 27,
@@ -1995,12 +2115,32 @@
       "instructionalClassification": "Elasticity subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 24 Easy / 14 Medium / 32 Hard; floor 10/10/10. Adaptive support: 10 Repair / 8 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "elasticity",
       "selectionRole": "family-child",
       "familyTitle": "Elasticity",
-      "standaloneRecommendation": "standalone-ready"
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 24,
+        "medium": 14,
+        "hard": 32
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 10,
+        "bridge": 8
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "price-elasticity-of-supply",
@@ -2032,32 +2172,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 17,
+        "main": 26,
         "elite": 3,
         "legendary": 15,
         "calculation": 5,
         "boss": 6,
         "legendaryBoss": 4,
-        "repair": 2,
-        "bridge": 2,
+        "repair": 6,
+        "bridge": 6,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 8,
-        "medium": 7,
+        "easy": 12,
+        "medium": 12,
         "hard": 13,
         "elite": 3,
         "legendary": 19,
-        "unknown": 4
+        "unknown": 12
       },
       "repairCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 50
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 71
       },
       "bridgeCoverage": {
-        "directSkillMatches": 2,
-        "mainWithUsableSkill": 50
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 71
       },
       "calculationCoverage": 15,
       "graphCoverage": 10,
@@ -2066,12 +2206,32 @@
       "instructionalClassification": "Elasticity subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused assessment",
-      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 11 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "elasticity",
       "selectionRole": "family-child",
       "familyTitle": "Elasticity",
-      "standaloneRecommendation": "focused-assessment-ready"
+      "standaloneRecommendation": "focused-assessment-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "income-elasticity-of-demand",
@@ -2099,32 +2259,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 5,
+        "main": 11,
         "elite": 2,
         "legendary": 8,
         "calculation": 5,
         "boss": 4,
         "legendaryBoss": 2,
-        "repair": 1,
-        "bridge": 0,
+        "repair": 3,
+        "bridge": 3,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
-        "medium": 3,
+        "easy": 7,
+        "medium": 6,
         "hard": 7,
         "elite": 2,
         "legendary": 10,
-        "unknown": 1
+        "unknown": 6
       },
       "repairCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 26
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 38
       },
       "bridgeCoverage": {
-        "directSkillMatches": 0,
-        "mainWithUsableSkill": 26
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 38
       },
       "calculationCoverage": 7,
       "graphCoverage": 0,
@@ -2133,12 +2293,32 @@
       "instructionalClassification": "Elasticity subtopic",
       "coverageStatus": "supporting-subtopic",
       "coverageStatusLabel": "Best paired with another Elasticity topic",
-      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. Income and cross-price elasticity are intentionally treated as supporting subtopics rather than forced into artificial standalone depth.",
-      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. Income and cross-price elasticity are intentionally treated as supporting subtopics rather than forced into artificial standalone depth. Runtime adaptive depth: 5 Easy / 5 Medium / 6 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "elasticity",
       "selectionRole": "family-child",
       "familyTitle": "Elasticity",
-      "standaloneRecommendation": "supporting-subtopic"
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "cross-price-elasticity-of-demand",
@@ -2166,32 +2346,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 6,
+        "main": 12,
         "elite": 4,
         "legendary": 10,
         "calculation": 5,
         "boss": 5,
         "legendaryBoss": 2,
-        "repair": 1,
-        "bridge": 0,
+        "repair": 3,
+        "bridge": 3,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
-        "medium": 4,
+        "easy": 7,
+        "medium": 7,
         "hard": 8,
         "elite": 4,
         "legendary": 12,
-        "unknown": 1
+        "unknown": 6
       },
       "repairCoverage": {
-        "directSkillMatches": 1,
-        "mainWithUsableSkill": 32
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 44
       },
       "bridgeCoverage": {
-        "directSkillMatches": 0,
-        "mainWithUsableSkill": 32
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 44
       },
       "calculationCoverage": 7,
       "graphCoverage": 0,
@@ -2200,12 +2380,32 @@
       "instructionalClassification": "Elasticity subtopic",
       "coverageStatus": "supporting-subtopic",
       "coverageStatusLabel": "Best paired with another Elasticity topic",
-      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. Income and cross-price elasticity are intentionally treated as supporting subtopics rather than forced into artificial standalone depth.",
-      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. Income and cross-price elasticity are intentionally treated as supporting subtopics rather than forced into artificial standalone depth. Runtime adaptive depth: 5 Easy / 5 Medium / 7 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "elasticity",
       "selectionRole": "family-child",
       "familyTitle": "Elasticity",
-      "standaloneRecommendation": "supporting-subtopic"
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 7
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "elasticity-and-total-revenue",
@@ -2235,32 +2435,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 16,
+        "main": 25,
         "elite": 8,
         "legendary": 8,
         "calculation": 5,
         "boss": 11,
         "legendaryBoss": 2,
-        "repair": 3,
-        "bridge": 0,
+        "repair": 6,
+        "bridge": 6,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
+        "easy": 13,
         "medium": 15,
-        "hard": 10,
+        "hard": 13,
         "elite": 8,
         "legendary": 10,
-        "unknown": 3
+        "unknown": 12
       },
       "repairCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 50
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 71
       },
       "bridgeCoverage": {
-        "directSkillMatches": 0,
-        "mainWithUsableSkill": 50
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 71
       },
       "calculationCoverage": 9,
       "graphCoverage": 11,
@@ -2269,12 +2469,32 @@
       "instructionalClassification": "Elasticity subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused assessment",
-      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "elasticity",
       "selectionRole": "family-child",
       "familyTitle": "Elasticity",
-      "standaloneRecommendation": "focused-assessment-ready"
+      "standaloneRecommendation": "focused-assessment-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "applications-of-elasticity",
@@ -2309,32 +2529,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 13,
+        "main": 30,
         "elite": 6,
         "legendary": 22,
         "calculation": 0,
         "boss": 13,
         "legendaryBoss": 13,
-        "repair": 3,
+        "repair": 6,
         "bridge": 10,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 2,
-        "medium": 10,
-        "hard": 14,
+        "easy": 11,
+        "medium": 14,
+        "hard": 18,
         "elite": 6,
         "legendary": 35,
-        "unknown": 13
+        "unknown": 16
       },
       "repairCoverage": {
-        "directSkillMatches": 3,
-        "mainWithUsableSkill": 67
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 100
       },
       "bridgeCoverage": {
         "directSkillMatches": 10,
-        "mainWithUsableSkill": 67
+        "mainWithUsableSkill": 100
       },
       "calculationCoverage": 0,
       "graphCoverage": 0,
@@ -2343,12 +2563,32 @@
       "instructionalClassification": "Elasticity subtopic",
       "coverageStatus": "ready-focused-subtopic",
       "coverageStatusLabel": "Ready for focused assessment",
-      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
-      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 10 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
       "parentConceptId": "elasticity",
       "selectionRole": "family-child",
       "familyTitle": "Elasticity",
-      "standaloneRecommendation": "focused-assessment-ready"
+      "standaloneRecommendation": "focused-assessment-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 10
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
@@ -3701,32 +3941,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 124,
+        "main": 163,
         "elite": 38,
         "legendary": 100,
         "calculation": 30,
         "boss": 58,
         "legendaryBoss": 36,
-        "repair": 20,
-        "bridge": 20,
+        "repair": 30,
+        "bridge": 32,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 60,
-        "medium": 61,
-        "hard": 91,
+        "easy": 70,
+        "medium": 78,
+        "hard": 103,
         "elite": 38,
         "legendary": 136,
-        "unknown": 40
+        "unknown": 62
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 386
+        "directSkillMatches": 30,
+        "mainWithUsableSkill": 487
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 386
+        "directSkillMatches": 32,
+        "mainWithUsableSkill": 487
       },
       "calculationCoverage": 55,
       "graphCoverage": 92,
@@ -3735,8 +3975,604 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank with new graph-dependent import, export, tariff, quota, welfare, tariff-revenue, quota-rent, and deadweight-loss analysis.",
-      "coverageFloorVersion": "phase6.2d-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank with new graph-dependent import, export, tariff, quota, welfare, tariff-revenue, quota-rent, and deadweight-loss analysis. Granular Micro selection is available through six child subtopics while the parent continues to expose the full International Trade and Trade Policy family. Adaptive-depth backfill now enforces runtime Easy/Medium/Hard floors for granular Micro selectors without changing Legendary, checkpoint, repair, bridge, graph, or calculation scope. Adaptive-support backfill now provides multiple targeted Repair and Bridge routes for each granular child selector while preserving the family scope.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "childConceptIds": [
+        "trade-world-price-status",
+        "trade-domestic-production-consumption-quantities",
+        "trade-gains-surplus-winners-losers",
+        "tariffs-revenue-deadweight-loss",
+        "import-quotas-quota-rents",
+        "trade-policy-efficiency-distribution"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "trade-world-price-status",
+      "title": "World Prices & Importer/Exporter Status",
+      "description": "Interpret the world price and identify whether a small country imports or exports a good under free trade.",
+      "includedSkills": [
+        "exporter_identification",
+        "importer_identification",
+        "small_country_model",
+        "trade_foundations",
+        "world_price"
+      ],
+      "excludedNeighboringSkills": [
+        "Other International Trade and Trade Policy material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "trade-domestic-production-consumption-quantities",
+        "trade-gains-surplus-winners-losers"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.1"
+      ],
+      "sourceGames": [
+        "internationalTradeTradePolicy",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 22,
+        "elite": 3,
+        "legendary": 0,
+        "calculation": 0,
+        "boss": 4,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 5,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 12,
+        "hard": 5,
+        "elite": 3,
+        "legendary": 0,
+        "unknown": 8
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 37
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 5,
+        "mainWithUsableSkill": 37
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 4,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "International Trade and Trade Policy subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Trade topic",
+      "coverageStatusNote": "This selector filters the existing International Trade and Trade Policy family by published objective metadata. World-price/status and trade-policy arguments are intentionally treated as targeted/supporting subtopics rather than padded to artificial full-campaign depth. Runtime adaptive depth: 5 Easy / 12 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 5 Bridge; floor 3/3.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "parentConceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-child",
+      "familyTitle": "International Trade and Trade Policy",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 12,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 5
+      },
+      "adaptiveSupportStatus": "ready"
+    },
+    {
+      "canonicalConceptId": "trade-domestic-production-consumption-quantities",
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "description": "Determine domestic production, domestic consumption, imports, and exports when a country trades at the world price.",
+      "includedSkills": [
+        "domestic_consumption_under_trade",
+        "domestic_production_under_trade",
+        "export_market_graph",
+        "export_quantity",
+        "import_market_graph",
+        "import_quantity",
+        "integrated_trade_analysis"
+      ],
+      "excludedNeighboringSkills": [
+        "Other International Trade and Trade Policy material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "trade-world-price-status",
+        "trade-gains-surplus-winners-losers",
+        "tariffs-revenue-deadweight-loss",
+        "import-quotas-quota-rents"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.2"
+      ],
+      "sourceGames": [
+        "internationalTradeTradePolicy",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 26,
+        "elite": 0,
+        "legendary": 20,
+        "calculation": 8,
+        "boss": 14,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 22,
+        "medium": 14,
+        "hard": 12,
+        "elite": 0,
+        "legendary": 20,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 80
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 80
+      },
+      "calculationCoverage": 10,
+      "graphCoverage": 14,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "International Trade and Trade Policy subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing International Trade and Trade Policy family by published objective metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 12 Medium / 12 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "parentConceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-child",
+      "familyTitle": "International Trade and Trade Policy",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 12
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
+    },
+    {
+      "canonicalConceptId": "trade-gains-surplus-winners-losers",
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "description": "Calculate and interpret consumer, producer, and total-surplus changes from international trade and identify winners and losers.",
+      "includedSkills": [
+        "consumer_surplus_trade",
+        "gains_from_trade",
+        "integrated_trade_analysis",
+        "producer_surplus_trade",
+        "tariff_welfare_effect",
+        "total_surplus_trade",
+        "trade_winners_losers"
+      ],
+      "excludedNeighboringSkills": [
+        "Other International Trade and Trade Policy material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "trade-world-price-status",
+        "trade-domestic-production-consumption-quantities",
+        "consumer-and-producer-surplus",
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.3"
+      ],
+      "sourceGames": [
+        "internationalTradeTradePolicy",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 37,
+        "elite": 8,
+        "legendary": 24,
+        "calculation": 15,
+        "boss": 18,
+        "legendaryBoss": 24,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 14,
+        "medium": 24,
+        "hard": 32,
+        "elite": 8,
+        "legendary": 48,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 138
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 138
+      },
+      "calculationCoverage": 21,
+      "graphCoverage": 23,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "International Trade and Trade Policy subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing International Trade and Trade Policy family by published objective metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 32 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "parentConceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-child",
+      "familyTitle": "International Trade and Trade Policy",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 32
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
+    },
+    {
+      "canonicalConceptId": "tariffs-revenue-deadweight-loss",
+      "title": "Tariffs, Revenue & Deadweight Loss",
+      "description": "Analyze tariff effects on domestic price, production, consumption, imports, government revenue, total surplus, and deadweight loss.",
+      "includedSkills": [
+        "consumer_surplus_trade",
+        "consumption_distortion",
+        "import_quantity",
+        "integrated_trade_analysis",
+        "producer_surplus_trade",
+        "production_distortion",
+        "tariff_price_effect",
+        "tariff_quantity_effect",
+        "tariff_revenue",
+        "tariff_welfare_effect",
+        "trade_policy_evaluation"
+      ],
+      "excludedNeighboringSkills": [
+        "Other International Trade and Trade Policy material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "trade-domestic-production-consumption-quantities",
+        "trade-gains-surplus-winners-losers",
+        "import-quotas-quota-rents",
+        "trade-policy-efficiency-distribution"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.4"
+      ],
+      "sourceGames": [
+        "internationalTradeTradePolicy",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 34,
+        "elite": 8,
+        "legendary": 24,
+        "calculation": 6,
+        "boss": 8,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "medium": 11,
+        "hard": 27,
+        "elite": 8,
+        "legendary": 36,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 104
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 104
+      },
+      "calculationCoverage": 15,
+      "graphCoverage": 31,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "International Trade and Trade Policy subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing International Trade and Trade Policy family by published objective metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 20 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "parentConceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-child",
+      "familyTitle": "International Trade and Trade Policy",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 20
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
+    },
+    {
+      "canonicalConceptId": "import-quotas-quota-rents",
+      "title": "Import Quotas, Quota Rents & Tariff–Quota Comparison",
+      "description": "Analyze import quotas, quota rents, domestic price and quantity effects, welfare consequences, and tariff-versus-quota differences.",
+      "includedSkills": [
+        "consumer_surplus_trade",
+        "consumption_distortion",
+        "domestic_consumption_under_trade",
+        "domestic_production_under_trade",
+        "integrated_trade_analysis",
+        "production_distortion",
+        "quota_quantity_effect",
+        "quota_rent",
+        "tariff_quota_comparison",
+        "tariff_welfare_effect",
+        "trade_policy_evaluation",
+        "world_price"
+      ],
+      "excludedNeighboringSkills": [
+        "Other International Trade and Trade Policy material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "trade-domestic-production-consumption-quantities",
+        "tariffs-revenue-deadweight-loss",
+        "trade-policy-efficiency-distribution"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.5"
+      ],
+      "sourceGames": [
+        "internationalTradeTradePolicy",
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 29,
+        "elite": 7,
+        "legendary": 6,
+        "calculation": 1,
+        "boss": 8,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 18,
+        "elite": 7,
+        "legendary": 6,
+        "unknown": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 63
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 63
+      },
+      "calculationCoverage": 9,
+      "graphCoverage": 20,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "International Trade and Trade Policy subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing International Trade and Trade Policy family by published objective metadata. It is intended for focused faculty composition without duplicating or rewriting questions. Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "parentConceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-child",
+      "familyTitle": "International Trade and Trade Policy",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready"
+    },
+    {
+      "canonicalConceptId": "trade-policy-efficiency-distribution",
+      "title": "Trade-Policy Arguments, Efficiency & Distribution",
+      "description": "Evaluate trade-policy arguments using efficiency, distribution, evidence, and the tradeoffs created by protection.",
+      "includedSkills": [
+        "efficiency_equity_trade",
+        "protectionism_arguments",
+        "trade_claim_evaluation",
+        "trade_policy_evaluation"
+      ],
+      "excludedNeighboringSkills": [
+        "Other International Trade and Trade Policy material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "consumer-and-producer-surplus",
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "trade-gains-surplus-winners-losers",
+        "tariffs-revenue-deadweight-loss",
+        "import-quotas-quota-rents"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ITP.6"
+      ],
+      "sourceGames": [
+        "internationalTradeTradePolicy"
+      ],
+      "questionCountByRole": {
+        "main": 15,
+        "elite": 12,
+        "legendary": 26,
+        "calculation": 0,
+        "boss": 6,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 5,
+        "medium": 7,
+        "hard": 9,
+        "elite": 12,
+        "legendary": 26,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 65
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 65
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "International Trade and Trade Policy subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Trade topic",
+      "coverageStatusNote": "This selector filters the existing International Trade and Trade Policy family by published objective metadata. World-price/status and trade-policy arguments are intentionally treated as targeted/supporting subtopics rather than padded to artificial full-campaign depth. Runtime adaptive depth: 5 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3.",
+      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "parentConceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-child",
+      "familyTitle": "International Trade and Trade Policy",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready"
     },
     {
       "canonicalConceptId": "labor-market-institutions",
@@ -7429,10 +8265,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseMicro2-surplus-granularity-v1",
-  "curationSummary": "Surplus granularity: preserve the 370-record Consumer and Producer Surplus parent family and expose six Micro subtopic selectors through derived filtering; no question additions, deletions, or rewrites.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1",
-  "canonicalQuestionCount": 7274,
-  "librarySha256": "e19c8f985f15eebd7779b4d6c92e5db6a4591674e8cb2ecc41d53105417ff563",
-  "composerVersion": "4.5g.0"
+  "curationPhase": "phaseMicro3b-adaptive-support-backfill-v1",
+  "curationSummary": "Micro adaptive retrofit: complete targeted Repair/Bridge coverage for Elasticity, Surplus, and Trade granular child selectors after the ordinary Easy/Medium/Hard depth backfill. Adds only measured support gaps; no Legendary, checkpoint, graph, or calculation expansion.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1",
+  "canonicalQuestionCount": 7484,
+  "librarySha256": "8435a20b6d86026e4c0e588b64c0ad493cb2b539fcd3c65f9ab1eb41da99aa54",
+  "composerVersion": "4.5j.0"
 }

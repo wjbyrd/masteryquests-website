@@ -1,7 +1,7 @@
 {
   "ok": true,
   "conceptId": "international-trade-and-trade-policy",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1",
   "errors": [],
   "warnings": [],
   "counts": {
@@ -19,6 +19,11 @@
     "bridge": 20,
     "calculation": 30,
     "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
     "graph": 92,
     "assets": 53,
     "totalCanonical": 426
@@ -71,6 +76,7 @@
         }
       ],
       "deficiencies": [],
+      "issues": [],
       "ok": true
     },
     {
@@ -104,6 +110,7 @@
         }
       ],
       "deficiencies": [],
+      "issues": [],
       "ok": true
     },
     {
@@ -137,6 +144,7 @@
         }
       ],
       "deficiencies": [],
+      "issues": [],
       "ok": true
     },
     {
@@ -155,6 +163,7 @@
         }
       ],
       "deficiencies": [],
+      "issues": [],
       "ok": true
     },
     {
@@ -203,6 +212,7 @@
         }
       ],
       "deficiencies": [],
+      "issues": [],
       "ok": true
     }
   ],
@@ -217,7 +227,7 @@
   },
   "sampleHtml": {
     "path": "tests/international-trade-and-trade-policy-sample.html",
-    "bytes": 3284799
+    "bytes": 3399161
   },
   "bossCoverage": {
     "checkpointOne": {

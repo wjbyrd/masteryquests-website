@@ -26,3 +26,8 @@ The full Consumer and Producer Surplus family remains selectable. Microeconomics
 
 The child selectors filter the same canonical 370-record Surplus bank; they do not duplicate question records. Parent and child Surplus selectors are mutually exclusive. Changes/Policy Effects and Efficiency/Equity/Limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth.
 
+PHASE MICRO3 — INTERNATIONAL TRADE GRANULARITY
+----------------------------------------------
+The full International Trade and Trade Policy family remains selectable. Microeconomics now also exposes six child selectors: World Prices & Importer/Exporter Status; Domestic Production, Consumption & Trade Quantities; Gains from Trade, Surplus & Winners/Losers; Tariffs, Revenue & Deadweight Loss; Import Quotas, Quota Rents & Tariff–Quota Comparison; and Trade-Policy Arguments, Efficiency & Distribution.
+
+The child selectors filter the same canonical 426-record Trade bank using the published ITP.1–ITP.6 objective metadata; they do not duplicate question records. Parent and child Trade selectors are mutually exclusive. World-price/status and trade-policy arguments are intentionally treated as supporting/targeted subtopics rather than padded to artificial full-campaign depth. All six already exceed the planned 15-question Quiz ceiling using non-Legendary practice/calculation material.
