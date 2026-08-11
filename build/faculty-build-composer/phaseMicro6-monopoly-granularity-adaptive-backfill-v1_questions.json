@@ -1,0 +1,4838 @@
+{
+  "phase": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+  "questionCount": 94,
+  "questions": [
+    {
+      "id": "PM6-MON-M-001",
+      "q": "A town currently has one ambulance provider, but licenses are readily available and several firms can enter with ordinary equipment. Which conclusion is strongest?",
+      "options": [
+        "The current one-seller market does not by itself establish durable monopoly power",
+        "The provider is a natural monopoly because only one firm operates today, under the conditions stated in the question",
+        "The provider must have a patent protecting ambulance service",
+        "The provider can charge any price because entry has not happened yet"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [],
+      "repairSkill": "barriers_to_entry",
+      "commonError": "treats_one_current_seller_as_durable_monopoly",
+      "feedback": "A monopoly requires meaningful barriers to entry, not merely one seller at a moment in time.",
+      "aHash": "9bd4f0791e600175c26814314b769442a249609db1488516b35b9184a3b2128d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-M-001",
+      "sourceId": 9700001,
+      "sourceHash": "04ff12b27dc0b2a4acf28c3c224a67c30361a004c566fee26e0bca6293eb92be",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "barriers_to_entry",
+          "sourceRecordOrder": 0,
+          "sourceId": 9700001,
+          "sourceHash": "04ff12b27dc0b2a4acf28c3c224a67c30361a004c566fee26e0bca6293eb92be"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-002",
+      "q": "A patented medical device is profitable while the patent remains in force. What is the patent doing economically?",
+      "options": [
+        "Making the firm’s demand curve horizontal",
+        "Forcing marginal revenue to equal price",
+        "Guaranteeing that average total cost will fall forever",
+        "Restricting entry and helping preserve the incumbent’s market power"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "legal_barrier",
+      "secondarySkills": [],
+      "repairSkill": "legal_barrier",
+      "commonError": "confuses_legal_barrier_with_cost_condition",
+      "feedback": "A patent is a legal barrier that can prevent rivals from copying the protected product.",
+      "aHash": "98822f7b93813fb072531ccdfa6437d054f364a2ff9dbb1230b48ae0da4a843e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-M-002",
+      "sourceId": 9700002,
+      "sourceHash": "8878ab33cf75fdbdd24bcda165ff831117c8ebf7a435aedcbe63dcfbbbd88eaa",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "legal_barrier",
+          "sourceRecordOrder": 1,
+          "sourceId": 9700002,
+          "sourceHash": "8878ab33cf75fdbdd24bcda165ff831117c8ebf7a435aedcbe63dcfbbbd88eaa"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-003",
+      "q": "A messaging platform becomes more useful as more friends and businesses join it. Why can this discourage entry by a rival platform?",
+      "options": [
+        "The rival automatically faces perfectly inelastic demand",
+        "Network effects remove the need for consumer choice",
+        "Users may prefer the established network because its large user base raises its value",
+        "The incumbent’s marginal cost must be zero"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "network_effects",
+      "secondarySkills": [],
+      "repairSkill": "network_effects",
+      "commonError": "ignores_network_effect_barrier",
+      "feedback": "Network effects can create a demand-side barrier because users value access to the existing network.",
+      "aHash": "677d4963b483328c924db0299057aeab8902154846bef364428108905e23b256",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-M-003",
+      "sourceId": 9700003,
+      "sourceHash": "c6c0d2f829252b73c9463b9a805bc04fcf91ff358adf707734fa7289653756ab",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "network_effects",
+          "sourceRecordOrder": 2,
+          "sourceId": 9700003,
+          "sourceHash": "c6c0d2f829252b73c9463b9a805bc04fcf91ff358adf707734fa7289653756ab"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-004",
+      "q": "A firm owns the only economically viable source of a rare input required to make a specialized product. Which mechanism protects its market position most directly?",
+      "options": [
+        "Its customers cannot respond to price changes, for the market and time period described",
+        "Control of an essential resource blocks rivals from obtaining a necessary input",
+        "Its price must equal marginal cost",
+        "Its fixed costs disappear as output rises"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "resource_control",
+      "secondarySkills": [],
+      "repairSkill": "resource_control",
+      "commonError": "confuses_resource_control_with_demand_elasticity",
+      "feedback": "Exclusive control of a critical resource can prevent otherwise capable rivals from entering.",
+      "aHash": "319d6a0a96cb70dee7170efaaec891729ca802c1e38432399007c68036602053",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-M-004",
+      "sourceId": 9700004,
+      "sourceHash": "d149a70034678cd3e6515e8be29beb70e4ed7a0806a97e36f67703050d40c22e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "resource_control",
+          "sourceRecordOrder": 3,
+          "sourceId": 9700004,
+          "sourceHash": "d149a70034678cd3e6515e8be29beb70e4ed7a0806a97e36f67703050d40c22e"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-005",
+      "q": "A regional water network requires an enormous pipe system, and duplicating the network would raise average cost. Which fact best supports natural-monopoly status?",
+      "options": [
+        "One firm can serve market demand at lower average cost than multiple duplicative networks",
+        "The provider has the legal right to discriminate among all buyers",
+        "Marginal revenue is always positive",
+        "The firm earns accounting profit in the current year"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.1",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly",
+      "secondarySkills": [],
+      "repairSkill": "natural_monopoly",
+      "commonError": "confuses_natural_monopoly_with_profitability",
+      "feedback": "Natural monopoly comes from scale economies over the relevant range of market demand.",
+      "aHash": "9475b67ae1b629d5704a85a4581d9afcae237a4a7ea2396a9e026edd907fa6e3",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-M-005",
+      "sourceId": 9700005,
+      "sourceHash": "a30029ec52206dd0dabc3c0afebece5d15492d40d056688d2a4394bd0039ba07",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "natural_monopoly",
+          "sourceRecordOrder": 4,
+          "sourceId": 9700005,
+          "sourceHash": "a30029ec52206dd0dabc3c0afebece5d15492d40d056688d2a4394bd0039ba07"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-006",
+      "q": "A software firm is the only seller this year. Its product can be copied legally, startup costs are modest, and customers can switch easily. What most weakens the claim that it has durable monopoly power?",
+      "options": [
+        "Its demand curve slopes downward",
+        "Its current sales exceed zero",
+        "Its marginal revenue may lie below price",
+        "The absence of a substantial barrier makes future entry plausible"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.1",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [],
+      "repairSkill": "barriers_to_entry",
+      "commonError": "ignores_contestability",
+      "feedback": "Durable monopoly power depends on obstacles that keep potential competitors out.",
+      "aHash": "565cca9e071d7b84b9cea4c793c729a59f783d956b2bd089758aa555020a6415",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-H-006",
+      "sourceId": 9700006,
+      "sourceHash": "7870b366edb416e19e806d8c2471641d8992ac9260326aabb98d13afc629df46",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "barriers_to_entry",
+          "sourceRecordOrder": 5,
+          "sourceId": 9700006,
+          "sourceHash": "7870b366edb416e19e806d8c2471641d8992ac9260326aabb98d13afc629df46"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-007",
+      "q": "Two electricity distributors could duplicate local wires and substations, but one network can serve the whole market at lower ATC. Which entry problem is central?",
+      "options": [
+        "The incumbent can permanently set price without regard to demand, while the other stated conditions remain unchanged",
+        "Entry would eliminate fixed cost for both firms",
+        "A new entrant may be unable to reach a cost-efficient scale without wasteful duplication",
+        "Demand must become perfectly elastic when a second firm enters"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.1",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly_cost",
+      "secondarySkills": [],
+      "repairSkill": "natural_monopoly_cost",
+      "commonError": "misses_scale_based_entry_barrier",
+      "feedback": "Large fixed infrastructure and economies of scale can make duplication inefficient and entry difficult.",
+      "aHash": "fc58cf415c793f1a7468be439146bd2937178035c464920b90348e9e9380b86c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-H-007",
+      "sourceId": 9700007,
+      "sourceHash": "7b12e2f02176099252cceced3d4175467547f0e17f45798934a75bcdab89eb20",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "natural_monopoly_cost",
+          "sourceRecordOrder": 6,
+          "sourceId": 9700007,
+          "sourceHash": "7b12e2f02176099252cceced3d4175467547f0e17f45798934a75bcdab89eb20"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-008",
+      "q": "A new payment app has slightly better technology than the incumbent, but few merchants or consumers accept it. Which force can preserve the incumbent’s advantage despite the technical improvement?",
+      "options": [
+        "The entrant can profit only if demand is perfectly inelastic",
+        "The value of joining the incumbent network rises with the number of existing participants",
+        "The entrant necessarily has higher marginal revenue than price",
+        "The incumbent must have lower fixed cost at every output"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.1",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "network_effects",
+      "secondarySkills": [],
+      "repairSkill": "network_effects",
+      "commonError": "ignores_installed_base",
+      "feedback": "Network effects can lock users into a large installed base even when a rival has attractive features.",
+      "aHash": "8469c99c9fdc3df77b74062fe43cacdbca62a42a6d410a2270371fb336a96f2f",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-H-008",
+      "sourceId": 9700008,
+      "sourceHash": "386d5080ef7109e0de6eabce678542fd06bc6ee17f9aff5b8dc379309c6dcaa0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "network_effects",
+          "sourceRecordOrder": 7,
+          "sourceId": 9700008,
+          "sourceHash": "386d5080ef7109e0de6eabce678542fd06bc6ee17f9aff5b8dc379309c6dcaa0"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-009",
+      "q": "A state grants one company an exclusive twenty-year franchise to operate a bridge. Which statement best separates the source of monopoly from the firm’s later pricing decision?",
+      "options": [
+        "The franchise creates the entry barrier; demand still limits the prices and quantities the firm can profitably choose",
+        "The franchise makes demand horizontal, so the firm becomes a price taker",
+        "The franchise forces the firm to charge average total cost",
+        "The franchise guarantees efficient output because rivals are excluded"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.1",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "legal_barrier",
+      "secondarySkills": [],
+      "repairSkill": "legal_barrier",
+      "commonError": "assumes_legal_monopoly_has_unlimited_pricing_power",
+      "feedback": "A legal barrier can create monopoly status, but the monopolist remains constrained by market demand.",
+      "aHash": "18c851e63e24ba1a6a6371bf6c689f868172b9d30f43ba1277b4a4da03a1cf3e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-H-009",
+      "sourceId": 9700009,
+      "sourceHash": "1da0c5e9622dade65f03cabcb6f3fb7aac5681bc17468c567ec8ae839394cced",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "legal_barrier",
+          "sourceRecordOrder": 8,
+          "sourceId": 9700009,
+          "sourceHash": "1da0c5e9622dade65f03cabcb6f3fb7aac5681bc17468c567ec8ae839394cced"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-010",
+      "q": "What must accompany a single seller for monopoly power to be durable?",
+      "options": [
+        "A perfectly horizontal demand curve",
+        "Zero fixed cost",
+        "A requirement that price equal marginal cost, over the relevant range described in the scenario",
+        "A meaningful barrier that makes entry difficult"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.1",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [],
+      "repairSkill": "barriers_to_entry",
+      "commonError": "forgets_entry_barrier",
+      "feedback": "One seller becomes a durable monopoly only when entry is meaningfully blocked.",
+      "aHash": "822a56222479c37e3b824dca6167874d8709858d83d548f1adab030ecf443d11",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-R-010",
+      "sourceId": 9700010,
+      "sourceHash": "c19062dd9042892dd6f1c0c693bca9028f593525e2e0ee6472e6eed8cd033b22",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "barriers_to_entry",
+          "sourceRecordOrder": 9,
+          "sourceId": 9700010,
+          "sourceHash": "c19062dd9042892dd6f1c0c693bca9028f593525e2e0ee6472e6eed8cd033b22"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-011",
+      "q": "How do barriers to entry connect monopoly structure to persistent economic profit?",
+      "options": [
+        "They make total cost independent of output",
+        "They guarantee that the monopolist chooses the efficient quantity",
+        "They prevent new rivals from entering quickly when profit appears",
+        "They force demand to become perfectly elastic"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.1",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "barriers_to_entry",
+      "secondarySkills": [
+        "persistent_economic_profit"
+      ],
+      "repairSkill": "barriers_to_entry",
+      "commonError": "disconnects_barriers_from_entry",
+      "feedback": "Barriers can keep profit from triggering the entry response that erodes profit in competitive markets.",
+      "aHash": "4f812d1112c237002be0fd680864fcb3bee28f11da28338bf5e0afd074b1deea",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-BR-011",
+      "sourceId": 9700011,
+      "sourceHash": "ca18530d56e34a09d93851c7ed99eb196d02d8096417ddafe81414138b81b824",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "barriers_to_entry",
+          "sourceRecordOrder": 10,
+          "sourceId": 9700011,
+          "sourceHash": "ca18530d56e34a09d93851c7ed99eb196d02d8096417ddafe81414138b81b824"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-012",
+      "q": "Why does natural-monopoly cost structure often lead directly to a regulation question?",
+      "options": [
+        "Regulation is needed only when a patent expires",
+        "Efficient scale may favor one supplier, yet that supplier still has market power over price and output",
+        "Natural monopolies always produce where price equals marginal cost without policy",
+        "Scale economies make demand perfectly elastic"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.1",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly",
+      "secondarySkills": [
+        "marginal_cost_regulation"
+      ],
+      "repairSkill": "natural_monopoly",
+      "commonError": "separates_natural_monopoly_from_regulation",
+      "feedback": "Natural monopoly can make one-firm production cost-efficient while still creating a market-power problem.",
+      "aHash": "7264e02309e4b812b036bc1393884174244a96fa1bea3e2bf8e5606e965a225e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-BR-012",
+      "sourceId": 9700012,
+      "sourceHash": "6aad5ca80c61b6f63f50f34b5bf7b8711a04e5a4f8f63e6f61f1459cd87a36f7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "natural_monopoly",
+          "sourceRecordOrder": 11,
+          "sourceId": 9700012,
+          "sourceHash": "6aad5ca80c61b6f63f50f34b5bf7b8711a04e5a4f8f63e6f61f1459cd87a36f7"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-013",
+      "q": "What happens to a patent-based barrier when the patent expires, holding other barriers constant?",
+      "options": [
+        "Legal protection weakens and potential entry becomes easier",
+        "The firm’s marginal revenue becomes equal to price automatically",
+        "Demand shifts to zero",
+        "Average total cost must rise above price"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.1",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "legal_barrier",
+      "secondarySkills": [
+        "entry"
+      ],
+      "repairSkill": "legal_barrier",
+      "commonError": "treats_patent_as_permanent",
+      "feedback": "Removing a legal barrier increases contestability even if the incumbent remains large.",
+      "aHash": "c6801da31ffd5098b7e7651a5eea8dfa5228c715bd770444fb9f1379db2961e2",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-power-barriers"
+      ],
+      "canonicalId": "PM6-MON-BR-013",
+      "sourceId": 9700013,
+      "sourceHash": "e3d30633f9baf97b0f7a4e7f6a17323f87d392dff1e011b40a40b1eb670e4e17",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "legal_barrier",
+          "sourceRecordOrder": 12,
+          "sourceId": 9700013,
+          "sourceHash": "e3d30633f9baf97b0f7a4e7f6a17323f87d392dff1e011b40a40b1eb670e4e17"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-014",
+      "q": "For a single-price monopolist, which curve also shows average revenue at each quantity?",
+      "options": [
+        "The marginal-cost curve",
+        "The average-total-cost curve",
+        "A horizontal line at marginal revenue",
+        "The demand curve"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.2",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_demand",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_demand",
+      "commonError": "confuses_average_revenue_with_marginal_revenue",
+      "feedback": "Because AR = TR/Q = P, average revenue lies on the monopolist’s demand curve.",
+      "aHash": "3a4e7c85c03da2cc78ad4af425c184624c9e74d3935fb1cb7790b66f48084739",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-E-014",
+      "sourceId": 9700014,
+      "sourceHash": "1c3d6b2a36e8fa315a9e9c4e47a391592ed26a7180f9d3419df8c57d2f744c43",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monopoly_demand",
+          "sourceRecordOrder": 13,
+          "sourceId": 9700014,
+          "sourceHash": "1c3d6b2a36e8fa315a9e9c4e47a391592ed26a7180f9d3419df8c57d2f744c43"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-015",
+      "q": "A monopolist cuts price to sell one additional unit. Why can marginal revenue be far below the new price?",
+      "options": [
+        "Average revenue becomes zero when price falls",
+        "The demand curve becomes horizontal after the price cut",
+        "The extra unit adds revenue, but the lower price also reduces revenue collected on earlier units",
+        "Marginal cost is automatically subtracted from marginal revenue"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.2",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_effect_output_effect",
+      "secondarySkills": [],
+      "repairSkill": "price_effect_output_effect",
+      "commonError": "ignores_price_effect",
+      "feedback": "Marginal revenue reflects both the output effect and the price effect on units already sold.",
+      "aHash": "e65bc8e1d74c368eb8c2190f163acf922eac73b1a972579a8add45633f086fe4",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-M-015",
+      "sourceId": 9700015,
+      "sourceHash": "e78b2cd2e6b37239b78f84674ff961b49a6e564b806d72cd6f82f492fd41dd33",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "price_effect_output_effect",
+          "sourceRecordOrder": 14,
+          "sourceId": 9700015,
+          "sourceHash": "e78b2cd2e6b37239b78f84674ff961b49a6e564b806d72cd6f82f492fd41dd33"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-016",
+      "q": "A monopolist lowers price from $20 to $19 to increase sales. Is the marginal revenue from the added unit necessarily $19?",
+      "options": [
+        "No; marginal revenue must always be negative",
+        "No; the lower price may also reduce revenue on units that were already being sold",
+        "Yes; marginal revenue always equals price for every seller",
+        "Yes; average revenue and marginal revenue are identical for a monopolist, under the conditions stated in the question"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.2",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_revenue_monopoly",
+      "secondarySkills": [],
+      "repairSkill": "marginal_revenue_monopoly",
+      "commonError": "sets_mr_equal_to_price",
+      "feedback": "For a single-price monopolist, MR includes the lost revenue caused by lowering price on previous units.",
+      "aHash": "983d81764a4ccec4d13b5d6656887d9f62ac176ddd017312dc4a2560341c439e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-R-016",
+      "sourceId": 9700016,
+      "sourceHash": "b38c9eb7758f9c4c827d34828a33de3b1a08a75ef0ff38184cb1d82abc794af8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "marginal_revenue_monopoly",
+          "sourceRecordOrder": 15,
+          "sourceId": 9700016,
+          "sourceHash": "b38c9eb7758f9c4c827d34828a33de3b1a08a75ef0ff38184cb1d82abc794af8"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-017",
+      "q": "Where should a monopolist read the price consumers will pay for a chosen quantity?",
+      "options": [
+        "From the demand curve",
+        "From the marginal-revenue curve",
+        "From the marginal-cost curve",
+        "From the minimum of average total cost"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.2",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "average_revenue_monopoly",
+      "secondarySkills": [],
+      "repairSkill": "average_revenue_monopoly",
+      "commonError": "reads_price_from_mr",
+      "feedback": "Demand gives price at each quantity; MR is used for the marginal output decision.",
+      "aHash": "457ddff5246bf0e093d1a7bdc0f6d4f8066be7b65718855fa2e54940dc2ed969",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-R-017",
+      "sourceId": 9700017,
+      "sourceHash": "16b04713187884b380e86174c38c69251f456460a6a18b2415e2594cee80ddad",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "average_revenue_monopoly",
+          "sourceRecordOrder": 16,
+          "sourceId": 9700017,
+          "sourceHash": "16b04713187884b380e86174c38c69251f456460a6a18b2415e2594cee80ddad"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-018",
+      "q": "How does the monopolist’s downward-sloping demand curve create the MR curve used for output choice?",
+      "options": [
+        "Demand forces MR to equal MC at every quantity",
+        "The demand curve makes ATC horizontal",
+        "MR is simply the vertical distance between demand and MC",
+        "Selling more generally requires a lower price, so MR falls below price"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_revenue_monopoly",
+      "secondarySkills": [
+        "profit_maximizing_output"
+      ],
+      "repairSkill": "marginal_revenue_monopoly",
+      "commonError": "disconnects_demand_from_mr",
+      "feedback": "The price effect from expanding sales makes marginal revenue lower than the price on demand.",
+      "aHash": "d8fd860d79ab900e841fafc0b7382a63f0fa9fa76ae5b964f43af0d92b6f3a45",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-BR-018",
+      "sourceId": 9700018,
+      "sourceHash": "0dac4666b8fc1c2ab4073c8e1b0948ff7a4a9731d28cd21e809c11e3e99f58df",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "marginal_revenue_monopoly",
+          "sourceRecordOrder": 17,
+          "sourceId": 9700018,
+          "sourceHash": "0dac4666b8fc1c2ab4073c8e1b0948ff7a4a9731d28cd21e809c11e3e99f58df"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-019",
+      "q": "What does positive marginal revenue tell you about the portion of a monopolist’s demand curve?",
+      "options": [
+        "Demand is perfectly inelastic at that output",
+        "Demand must have unit elasticity at every output",
+        "Demand is elastic at that output",
+        "Demand is inelastic at that output"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "elasticity_and_mr",
+      "secondarySkills": [
+        "price_elasticity_of_demand"
+      ],
+      "repairSkill": "elasticity_and_mr",
+      "commonError": "misreads_mr_elasticity_link",
+      "feedback": "For a downward-sloping demand curve, MR is positive on the elastic portion.",
+      "aHash": "49983abb794b01e327fa20505d9d8cc27b61c7cf2f5a5a510dea9dbe34f8a4ed",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-BR-019",
+      "sourceId": 9700019,
+      "sourceHash": "8c829a842b02c450da73cf116c633bff5e5241f76134a685d133ee19cce65d2c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "elasticity_and_mr",
+          "sourceRecordOrder": 18,
+          "sourceId": 9700019,
+          "sourceHash": "8c829a842b02c450da73cf116c633bff5e5241f76134a685d133ee19cce65d2c"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-020",
+      "q": "Why does P = MR hold for a competitive firm but not for a single-price monopolist?",
+      "options": [
+        "The monopolist’s average revenue is unrelated to price",
+        "The competitive firm can sell another unit at the unchanged market price, while the monopolist generally must lower price to expand sales",
+        "The monopolist has no demand curve",
+        "The competitive firm always has zero marginal cost"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.2",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "competitive_monopoly_comparison",
+      "secondarySkills": [
+        "perfect-competition"
+      ],
+      "repairSkill": "competitive_monopoly_comparison",
+      "commonError": "confuses_competitive_and_monopoly_revenue",
+      "feedback": "Price taking removes the price effect that drives monopoly MR below price.",
+      "aHash": "27e560cfead80e1e918c5ff8b98c0b953deb1c87b6d116a994ecb753d5d7d970",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-demand-revenue"
+      ],
+      "canonicalId": "PM6-MON-BR-020",
+      "sourceId": 9700020,
+      "sourceHash": "5ac2f4c8c7721557f21bb68e33a20bfed54d68f169467a2957a3b8c655600718",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "competitive_monopoly_comparison",
+          "sourceRecordOrder": 19,
+          "sourceId": 9700020,
+          "sourceHash": "5ac2f4c8c7721557f21bb68e33a20bfed54d68f169467a2957a3b8c655600718"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-021",
+      "q": "At 40 units a monopolist has MR=$28 and MC=$22; at 41 units MR=$24 and MC=$25. Which output is the better marginal choice?",
+      "options": [
+        "40 units, because the 41st unit costs more at the margin than it adds to revenue",
+        "41 units, because price must still exceed marginal revenue",
+        "41 units, because a monopolist always produces until price equals MC, for the market and time period described",
+        "40 units only if average total cost is minimized there"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "profit_maximizing_output",
+      "secondarySkills": [],
+      "repairSkill": "profit_maximizing_output",
+      "commonError": "uses_price_instead_of_mr_for_output",
+      "feedback": "Produce units for which MR covers MC and stop before the next unit has MC greater than MR.",
+      "aHash": "b8a2e8a6ec6a4e641b8c8ee6d4fdcf8fb034db4a9f8e771ed2aa1e08b72ec558",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-M-021",
+      "sourceId": 9700021,
+      "sourceHash": "495034ee96d24f94c0277fbb6dbdc1ef61900cfa820ec555be9c1d34e10067e8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "profit_maximizing_output",
+          "sourceRecordOrder": 20,
+          "sourceId": 9700021,
+          "sourceHash": "495034ee96d24f94c0277fbb6dbdc1ef61900cfa820ec555be9c1d34e10067e8"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-022",
+      "q": "A monopolist has already found its profit-maximizing quantity using MR=MC. What is the next step for determining the monopoly price?",
+      "options": [
+        "Use the MR curve value as the price",
+        "Set price equal to average total cost",
+        "Choose the lowest price on the demand curve",
+        "Move up to the demand curve at that quantity"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.3",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_price",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_price",
+      "commonError": "reads_price_from_wrong_curve",
+      "feedback": "MR determines the quantity condition; demand gives the price buyers will pay for that quantity.",
+      "aHash": "350abf94a3aa31b29bc9ce11eb38b6fe47b2fb781c50da640bd6a7f63f7542f5",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-M-022",
+      "sourceId": 9700022,
+      "sourceHash": "62817ddd0312d9f22716f86b400271c7ec1aac1274375453d8c6a7a1880974fb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "monopoly_price",
+          "sourceRecordOrder": 21,
+          "sourceId": 9700022,
+          "sourceHash": "62817ddd0312d9f22716f86b400271c7ec1aac1274375453d8c6a7a1880974fb"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-023",
+      "q": "Which equality identifies the candidate output for a single-price monopolist?",
+      "options": [
+        "P = ATC",
+        "MR = P",
+        "MR = MC",
+        "P = MC"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "profit_maximizing_output",
+      "secondarySkills": [],
+      "repairSkill": "profit_maximizing_output",
+      "commonError": "sets_price_equal_to_mc",
+      "feedback": "The monopoly output decision uses marginal revenue and marginal cost.",
+      "aHash": "59bc8629092ff62dd09161fc6208c5c4a1c8d6e6570cf84bc882ee3ad5619534",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-R-023",
+      "sourceId": 9700023,
+      "sourceHash": "78d1a924ff04f4f25ffba75f433d13855ad85d0f338d678227997e358a8b46fb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "profit_maximizing_output",
+          "sourceRecordOrder": 22,
+          "sourceId": 9700023,
+          "sourceHash": "78d1a924ff04f4f25ffba75f433d13855ad85d0f338d678227997e358a8b46fb"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-024",
+      "q": "After finding Q where MR=MC, where is monopoly price found?",
+      "options": [
+        "At minimum ATC",
+        "On demand at that Q",
+        "On MR at that Q",
+        "On MC at that Q"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_price",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_price",
+      "commonError": "reads_price_from_mr",
+      "feedback": "Demand maps the chosen quantity into the price consumers will pay.",
+      "aHash": "335e9fbed213ea6204026f7c0827d1e498002ca1d0c36b36d42a0d1a18a3bdfb",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-R-024",
+      "sourceId": 9700024,
+      "sourceHash": "8fd4b1d086ca8bf804f4327f9417b5c33ea5507da74e1d2504e014d92d7b1418",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "monopoly_price",
+          "sourceRecordOrder": 23,
+          "sourceId": 9700024,
+          "sourceHash": "8fd4b1d086ca8bf804f4327f9417b5c33ea5507da74e1d2504e014d92d7b1418"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-025",
+      "q": "If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?",
+      "options": [
+        "Increase output",
+        "Decrease output",
+        "Keep output unchanged because price exceeds MR",
+        "Shut down immediately"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "profit_maximizing_output",
+      "secondarySkills": [],
+      "repairSkill": "profit_maximizing_output",
+      "commonError": "reverses_marginal_rule",
+      "feedback": "When MR exceeds MC, another unit adds more revenue than cost.",
+      "aHash": "e11da652e307d04db44184505fe145cb3b37961df9d4087d7739c47e18cbc1ef",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-R-025",
+      "sourceId": 9700025,
+      "sourceHash": "3eb02a1ddb9fe66fb1d85ab27a007ad00b6a412336b4a898af09dc5569f9354c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "profit_maximizing_output",
+          "sourceRecordOrder": 24,
+          "sourceId": 9700025,
+          "sourceHash": "3eb02a1ddb9fe66fb1d85ab27a007ad00b6a412336b4a898af09dc5569f9354c"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-026",
+      "q": "If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?",
+      "options": [
+        "The first intersection on the falling portion of MC",
+        "Both intersections necessarily give identical profit",
+        "Neither intersection because monopoly uses P=MC",
+        "The intersection on the rising portion of MC"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.3",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "profit_maximizing_output",
+      "secondarySkills": [],
+      "repairSkill": "profit_maximizing_output",
+      "commonError": "ignores_rising_mc_condition",
+      "feedback": "The stable maximum uses MR=MC with MC rising through MR.",
+      "aHash": "5b53658ebb7e4ee570b0185db30a52e5f2cd9dd23575ce4927c7ab20c5efb6ea",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-R-026",
+      "sourceId": 9700026,
+      "sourceHash": "06af6bda8fb291938bd5f885f4a5da108d5cafec209620cc9719720a3e2bff5c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "profit_maximizing_output",
+          "sourceRecordOrder": 25,
+          "sourceId": 9700026,
+          "sourceHash": "06af6bda8fb291938bd5f885f4a5da108d5cafec209620cc9719720a3e2bff5c"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-027",
+      "q": "How do monopoly revenue analysis and marginal cost combine into the output decision?",
+      "options": [
+        "ATC determines quantity before revenue is considered, while the other stated conditions remain unchanged",
+        "Price is chosen first and forces MR to equal MC",
+        "Demand generates MR, and the firm compares that MR with MC to choose quantity",
+        "Demand sets MC directly, so MR is unnecessary"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "profit_maximizing_output",
+      "secondarySkills": [
+        "marginal_revenue_monopoly"
+      ],
+      "repairSkill": "profit_maximizing_output",
+      "commonError": "disconnects_revenue_and_cost",
+      "feedback": "The monopolist’s demand conditions determine MR; costs determine MC; their marginal comparison selects output.",
+      "aHash": "864dbafcf48095d3984b239e1b9655dfe71e56fe84a5fdf9182c0fe7ba3a37c3",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-BR-027",
+      "sourceId": 9700027,
+      "sourceHash": "92b59742e15529acedcedec420438d1b2756860fcc571b7bf6edcd81317ad7a9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "profit_maximizing_output",
+          "sourceRecordOrder": 26,
+          "sourceId": 9700027,
+          "sourceHash": "92b59742e15529acedcedec420438d1b2756860fcc571b7bf6edcd81317ad7a9"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-028",
+      "q": "Why is monopoly price determined only after the profit-maximizing quantity is chosen?",
+      "options": [
+        "Average total cost sets price before marginal analysis begins",
+        "The firm first uses MR and MC to choose output, then demand reveals the highest single price consistent with that output",
+        "Price is unrelated to demand until output is produced",
+        "The monopolist has no control over quantity"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.3",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "integrated_monopoly_analysis",
+      "secondarySkills": [
+        "monopoly_price"
+      ],
+      "repairSkill": "integrated_monopoly_analysis",
+      "commonError": "reverses_monopoly_two_step_rule",
+      "feedback": "Monopoly analysis is a two-step decision: marginal output choice first, demand-based price second.",
+      "aHash": "d8519c9f388c8d9f13b162da06732fbb703cc769b8f77ab6559036343b6247d4",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-output-price"
+      ],
+      "canonicalId": "PM6-MON-BR-028",
+      "sourceId": 9700028,
+      "sourceHash": "f2ddfdf05d349b4d652147d67b97cd059a1677834d343c4d3c3335d393a1aeaa",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "integrated_monopoly_analysis",
+          "sourceRecordOrder": 27,
+          "sourceId": 9700028,
+          "sourceHash": "f2ddfdf05d349b4d652147d67b97cd059a1677834d343c4d3c3335d393a1aeaa"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-029",
+      "q": "A monopolist charges $50, has ATC=$38, and sells 100 units. What is total economic profit?",
+      "options": [
+        "$1,200",
+        "$5,000",
+        "$3,800",
+        "$12"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.4",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_profit",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_profit",
+      "commonError": "confuses_per_unit_and_total_profit",
+      "feedback": "Profit per unit is $12 and total profit is $12 × 100.",
+      "aHash": "1dcc7619134cdb1de916b106a96326de3a8ac9eb25d79c57ce00de777b3203e1",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-E-029",
+      "sourceId": 9700029,
+      "sourceHash": "b6bdad9e2f3d931e5a4d1fb640e5f7028e4d2cf825faad528d86795768228d9e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monopoly_profit",
+          "sourceRecordOrder": 28,
+          "sourceId": 9700029,
+          "sourceHash": "b6bdad9e2f3d931e5a4d1fb640e5f7028e4d2cf825faad528d86795768228d9e"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-030",
+      "q": "A monopolist charges $24 while ATC is $30 at its chosen output. Which statement is correct?",
+      "options": [
+        "The firm earns $6 economic profit per unit",
+        "The firm must shut down immediately",
+        "The firm is breaking even",
+        "The firm has an economic loss of $6 per unit"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.4",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_loss",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_loss",
+      "commonError": "reverses_profit_loss_sign",
+      "feedback": "When P<ATC, the firm incurs a loss equal to ATC−P per unit.",
+      "aHash": "a6979971173e9b7148d3f86c5d19b89bfbbcfc8347f291263594a7dbed2d6401",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-E-030",
+      "sourceId": 9700030,
+      "sourceHash": "b0c892037d4dcdb7f475ee78ab0aaa5779c6642210a87fa5ba6b761d8aad7cb2",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monopoly_loss",
+          "sourceRecordOrder": 29,
+          "sourceId": 9700030,
+          "sourceHash": "b0c892037d4dcdb7f475ee78ab0aaa5779c6642210a87fa5ba6b761d8aad7cb2"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-031",
+      "q": "A monopolist has P=$18, AVC=$12, and ATC=$25 at its best operating output. In the short run it should generally:",
+      "options": [
+        "Exit permanently because any accounting loss requires exit, over the relevant range described in the scenario",
+        "Produce only if price equals MC at every unit",
+        "Produce because price covers variable cost and contributes toward fixed cost",
+        "Shut down because price is below ATC"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.4",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_shutdown",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_shutdown",
+      "commonError": "uses_atc_as_shutdown_rule",
+      "feedback": "A short-run loss does not imply shutdown when price remains above AVC.",
+      "aHash": "33487abcff3564b2cef15d19300380116dfbd79648b56b1407d03b019156e134",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-E-031",
+      "sourceId": 9700031,
+      "sourceHash": "839de2dda8203ea7b582a2cf27b8ee3e3b78e347596d7b9e12999e6910290956",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monopoly_shutdown",
+          "sourceRecordOrder": 30,
+          "sourceId": 9700031,
+          "sourceHash": "839de2dda8203ea7b582a2cf27b8ee3e3b78e347596d7b9e12999e6910290956"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-032",
+      "q": "When a monopolist’s price equals ATC at its chosen output, economic profit is:",
+      "options": [
+        "Positive because monopoly has market power",
+        "Zero",
+        "Equal to total revenue",
+        "Negative because MR is below price"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.4",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_profit",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_profit",
+      "commonError": "assumes_monopoly_always_profits",
+      "feedback": "P=ATC means revenue exactly covers explicit and implicit economic costs.",
+      "aHash": "f9194e73f9e9459e3450ea10a179cdf77aafa695beecd3b9344a98d111622243",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-E-032",
+      "sourceId": 9700032,
+      "sourceHash": "be029e22ea1781d2b031f674b3a245398a9f141abbdccf17e237fdd01d16f6ba",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monopoly_profit",
+          "sourceRecordOrder": 31,
+          "sourceId": 9700032,
+          "sourceHash": "be029e22ea1781d2b031f674b3a245398a9f141abbdccf17e237fdd01d16f6ba"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-033",
+      "q": "Which expression gives total economic profit for a monopolist producing Q units?",
+      "options": [
+        "(P − ATC) × Q",
+        "(P − MC) × Q",
+        "P × Q",
+        "(ATC − AVC) × Q"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_profit",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_profit",
+      "commonError": "uses_wrong_profit_formula",
+      "feedback": "Economic profit equals profit per unit times quantity.",
+      "aHash": "226b20b11ead8c6d24555300b2551b7f60d6fb24c50cd449d0b00658e89d8942",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-R-033",
+      "sourceId": 9700033,
+      "sourceHash": "cd831d47ac3c57b396cd6cd1aee4da3a3d9c65cb49aef3af5a4fd74f54b3da94",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "monopoly_profit",
+          "sourceRecordOrder": 32,
+          "sourceId": 9700033,
+          "sourceHash": "cd831d47ac3c57b396cd6cd1aee4da3a3d9c65cb49aef3af5a4fd74f54b3da94"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-034",
+      "q": "A monopolist is losing money because P<ATC, but P>AVC. What does the shutdown rule say?",
+      "options": [
+        "Shut down immediately because any loss requires shutdown",
+        "Raise output until P=ATC",
+        "Exit the industry immediately regardless of fixed costs",
+        "Continue producing in the short run if the chosen output minimizes the loss"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.4",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_shutdown",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_shutdown",
+      "commonError": "confuses_loss_with_shutdown",
+      "feedback": "Covering variable cost makes continued short-run production better than shutting down when fixed cost is unavoidable.",
+      "aHash": "e41377e8773ae1dc8aa1d541969c24ae2b41792b9f2c020c0ec4ad35149c6d5f",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-R-034",
+      "sourceId": 9700034,
+      "sourceHash": "003e707662631cca73ee0299e24fdbb4fee24de2dbd2556bd588be1f72cbc83d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "monopoly_shutdown",
+          "sourceRecordOrder": 33,
+          "sourceId": 9700034,
+          "sourceHash": "003e707662631cca73ee0299e24fdbb4fee24de2dbd2556bd588be1f72cbc83d"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-035",
+      "q": "How does the MR=MC output rule connect to the later profit-or-loss calculation?",
+      "options": [
+        "Profit is known before quantity is chosen",
+        "The shutdown rule replaces MR=MC whenever the firm has market power",
+        "MR=MC identifies the best quantity; price from demand and ATC at that quantity determine profit or loss",
+        "ATC determines output first and MR then determines price"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_profit",
+      "secondarySkills": [
+        "profit_maximizing_output"
+      ],
+      "repairSkill": "monopoly_profit",
+      "commonError": "mixes_output_choice_with_profit_measurement",
+      "feedback": "Output optimization and profit measurement are separate steps in monopoly analysis.",
+      "aHash": "2286d149863a7649de5e52b20b1f94b80737272986bc2ca2ecb2af8ce47d7b0a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "canonicalId": "PM6-MON-BR-035",
+      "sourceId": 9700035,
+      "sourceHash": "7155941536f8177b8a5caea8c8d472167ae2194892df5367b84b727485768a9a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "monopoly_profit",
+          "sourceRecordOrder": 34,
+          "sourceId": 9700035,
+          "sourceHash": "7155941536f8177b8a5caea8c8d472167ae2194892df5367b84b727485768a9a"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-036",
+      "q": "Compared with an otherwise similar competitive market, a single-price monopoly typically produces:",
+      "options": [
+        "Less output at a lower price",
+        "Less output at a higher price",
+        "More output at a lower price",
+        "The same output at the same price"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "competitive_monopoly_comparison",
+      "secondarySkills": [],
+      "repairSkill": "competitive_monopoly_comparison",
+      "commonError": "reverses_monopoly_competitive_comparison",
+      "feedback": "Market power generally leads the monopolist to restrict output and charge a higher price than the competitive benchmark.",
+      "aHash": "c4da2ae8e31874d85295730482ae5704703007c00a3d0bec5a54f71d122ad6fa",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-E-036",
+      "sourceId": 9700036,
+      "sourceHash": "40057cde978f006aa7337651ee69bf751eed32942681c0a3c8e617fec62d50d6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "competitive_monopoly_comparison",
+          "sourceRecordOrder": 35,
+          "sourceId": 9700036,
+          "sourceHash": "40057cde978f006aa7337651ee69bf751eed32942681c0a3c8e617fec62d50d6"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-037",
+      "q": "Why is P>MC at the monopoly quantity evidence of allocative inefficiency?",
+      "options": [
+        "Some buyers value additional units more than the marginal cost of producing them",
+        "The monopolist must be earning zero profit, under the conditions stated in the question",
+        "Marginal revenue must equal price",
+        "Average total cost must be at its minimum"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "allocative_inefficiency",
+      "secondarySkills": [],
+      "repairSkill": "allocative_inefficiency",
+      "commonError": "misreads_p_mc_efficiency",
+      "feedback": "When willingness to pay exceeds MC for foregone units, mutually beneficial trades are left unrealized.",
+      "aHash": "f26df678c3f0328f794d2e287cb04a83ccda6fe21fcf34c2c6c0c94d3a334132",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-E-037",
+      "sourceId": 9700037,
+      "sourceHash": "ac95fc76295d907aea612cdc76c2ebb9775a81ccecd3f2097f4bab67a2d32ab1",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "allocative_inefficiency",
+          "sourceRecordOrder": 36,
+          "sourceId": 9700037,
+          "sourceHash": "ac95fc76295d907aea612cdc76c2ebb9775a81ccecd3f2097f4bab67a2d32ab1"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-038",
+      "q": "What does monopoly deadweight loss represent?",
+      "options": [
+        "All profit earned by the monopolist",
+        "All consumer surplus transferred to the monopolist",
+        "The firm’s fixed cost",
+        "Gains from trade lost because output is restricted below the efficient quantity"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_deadweight_loss",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_deadweight_loss",
+      "commonError": "confuses_transfer_with_deadweight_loss",
+      "feedback": "Deadweight loss is surplus that disappears rather than being transferred between buyers and sellers.",
+      "aHash": "a2e2bbdd605e5399e86f1ccbb07bc64e18f1cacb9861d26c5dff869fadf16934",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-E-038",
+      "sourceId": 9700038,
+      "sourceHash": "8e6b25f24de20b5786e3e8da744c2558713bbfa51970ec5ef8586cc85a01d07c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "monopoly_deadweight_loss",
+          "sourceRecordOrder": 37,
+          "sourceId": 9700038,
+          "sourceHash": "8e6b25f24de20b5786e3e8da744c2558713bbfa51970ec5ef8586cc85a01d07c"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-039",
+      "q": "If firms spend resources lobbying for an exclusive monopoly privilege, those expenditures are an example of:",
+      "options": [
+        "Price discrimination",
+        "Marginal-cost pricing",
+        "Rent seeking",
+        "Productive efficiency"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "rent_seeking",
+      "secondarySkills": [],
+      "repairSkill": "rent_seeking",
+      "commonError": "confuses_rent_seeking_with_production_cost",
+      "feedback": "Resources used to obtain or protect economic rents can create additional social cost.",
+      "aHash": "a3994ab7859be5c417845b88069b29fb126ee8e05a3247818d302b3a0a6547d4",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-E-039",
+      "sourceId": 9700039,
+      "sourceHash": "54329613d85ecc7446e71f9b86d414665cbfeb700963fe826bc712d9c6386c8a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "rent_seeking",
+          "sourceRecordOrder": 38,
+          "sourceId": 9700039,
+          "sourceHash": "54329613d85ecc7446e71f9b86d414665cbfeb700963fe826bc712d9c6386c8a"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-040",
+      "q": "A monopoly price increase transfers some surplus from consumers to the firm. Is that entire transfer deadweight loss?",
+      "options": [
+        "No; because monopoly never changes total surplus",
+        "No; transferred surplus changes who receives the surplus, while deadweight loss is surplus that disappears",
+        "Yes; every dollar of monopoly profit is deadweight loss",
+        "Yes; consumer surplus and total surplus are identical"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "consumer_surplus_monopoly",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_monopoly",
+      "commonError": "treats_transfer_as_dwl",
+      "feedback": "Distributional transfers and efficiency losses are different pieces of monopoly welfare analysis.",
+      "aHash": "d1c12df50c5f749c5c3ea84692624526a062224cd7f50ee8adf3c5c89442a898",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-E-040",
+      "sourceId": 9700040,
+      "sourceHash": "d715b0f719fe7f9fde07001dc0935601cf5214c9ae8f11f0fe55cd7188324b43",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "consumer_surplus_monopoly",
+          "sourceRecordOrder": 39,
+          "sourceId": 9700040,
+          "sourceHash": "d715b0f719fe7f9fde07001dc0935601cf5214c9ae8f11f0fe55cd7188324b43"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-041",
+      "q": "Suppose competition would produce 100 units at $20, while monopoly produces 70 units at $35. Which change is the clearest source of efficiency loss?",
+      "options": [
+        "The 30 units between 70 and 100 that would have generated gains from trade are not produced",
+        "The monopolist receives revenue on the 70 units it sells, for the market and time period described",
+        "The market price is written in dollars rather than units",
+        "Consumers buy positive quantities under monopoly"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "competitive_monopoly_comparison",
+      "secondarySkills": [],
+      "repairSkill": "competitive_monopoly_comparison",
+      "commonError": "focuses_only_on_price_transfer",
+      "feedback": "The efficiency loss comes from mutually beneficial transactions forgone because of restricted output.",
+      "aHash": "4692cbe84652294a2517ff4b0bc44155625d84a9880ddb4e1b6b468743610117",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-M-041",
+      "sourceId": 9700041,
+      "sourceHash": "be54bd4c9ad75baf5488fa6e87cd57f391656948702c4d6702dd633898ca30e1",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "competitive_monopoly_comparison",
+          "sourceRecordOrder": 40,
+          "sourceId": 9700041,
+          "sourceHash": "be54bd4c9ad75baf5488fa6e87cd57f391656948702c4d6702dd633898ca30e1"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-042",
+      "q": "If a monopolist reduces output farther below the competitive quantity while demand and cost curves are unchanged, what generally happens to deadweight loss?",
+      "options": [
+        "It necessarily falls because the firm earns more profit",
+        "It becomes zero when price rises",
+        "It is unchanged because transfers do not matter",
+        "It increases because more mutually beneficial units are forgone"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.5",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_deadweight_loss",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_deadweight_loss",
+      "commonError": "reverses_dwl_output_relation",
+      "feedback": "Greater output restriction usually widens the range of lost gains from trade.",
+      "aHash": "f5d5fe05d6a0f33ccbbd2ae91f9ebccb587c7ef2f7eaa8d9a21188bc8da54164",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-M-042",
+      "sourceId": 9700042,
+      "sourceHash": "a33670030acfb6bea2943de3eafececb6a340202024ad366cd99e421419fd679",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "monopoly_deadweight_loss",
+          "sourceRecordOrder": 41,
+          "sourceId": 9700042,
+          "sourceHash": "a33670030acfb6bea2943de3eafececb6a340202024ad366cd99e421419fd679"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-043",
+      "q": "Which area is conceptually deadweight loss from monopoly?",
+      "options": [
+        "Consumer spending on units still purchased",
+        "Total fixed cost",
+        "The lost surplus on units between monopoly output and the efficient output",
+        "The monopolist’s entire profit rectangle"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_deadweight_loss",
+      "secondarySkills": [],
+      "repairSkill": "monopoly_deadweight_loss",
+      "commonError": "confuses_profit_with_dwl",
+      "feedback": "Deadweight loss comes from trades not made, not from surplus merely transferred.",
+      "aHash": "473f92e08438b6d2826023b36a790f570afc54c81904db03a0fb1640cd14b23d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-R-043",
+      "sourceId": 9700043,
+      "sourceHash": "483210d5be3b4ac91f7827687454f152e328c6a6c6bd9fe0e28a5b81f6d2331a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "monopoly_deadweight_loss",
+          "sourceRecordOrder": 42,
+          "sourceId": 9700043,
+          "sourceHash": "483210d5be3b4ac91f7827687454f152e328c6a6c6bd9fe0e28a5b81f6d2331a"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-044",
+      "q": "At the monopoly output, price is $50 and MC is $30. What does the $20 gap imply at the margin?",
+      "options": [
+        "Output is productively efficient because price exceeds MC, while the other stated conditions remain unchanged",
+        "Buyers value another unit more than its production cost, so output is too low from an allocative-efficiency standpoint",
+        "The monopolist must shut down",
+        "The firm is necessarily earning $20 profit per unit"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "allocative_inefficiency",
+      "secondarySkills": [],
+      "repairSkill": "allocative_inefficiency",
+      "commonError": "confuses_markup_with_profit",
+      "feedback": "P>MC means potential gains from additional output remain.",
+      "aHash": "a59f9f9bb063c337666a6e2fd11ef23452dc79a6b8f969f3689702bd5f7dfd84",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-R-044",
+      "sourceId": 9700044,
+      "sourceHash": "5bf99cd553dc12c74c703e074fa8510603ed4dc58105d71d6b2ff8d67fe71f9c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "allocative_inefficiency",
+          "sourceRecordOrder": 43,
+          "sourceId": 9700044,
+          "sourceHash": "5bf99cd553dc12c74c703e074fa8510603ed4dc58105d71d6b2ff8d67fe71f9c"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-045",
+      "q": "If a monopoly captures $100 of consumer surplus without changing total output, what happens to total surplus from that transfer alone?",
+      "options": [
+        "It is redistributed, not destroyed",
+        "It falls by exactly $100",
+        "It rises by exactly $100",
+        "It becomes zero"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "consumer_surplus_monopoly",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_monopoly",
+      "commonError": "confuses_distribution_with_efficiency",
+      "feedback": "A pure transfer changes distribution; deadweight loss requires lost gains from trade.",
+      "aHash": "011b0b4755c54053dca2622709d78ad1eb3073c8cb9c89c71668a898f6bebf49",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-R-045",
+      "sourceId": 9700045,
+      "sourceHash": "06de6469c92af45ac486ab482744e0c927d5ff66e43aa94104bb8dce3af9c407",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "consumer_surplus_monopoly",
+          "sourceRecordOrder": 44,
+          "sourceId": 9700045,
+          "sourceHash": "06de6469c92af45ac486ab482744e0c927d5ff66e43aa94104bb8dce3af9c407"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-046",
+      "q": "Why can rent-seeking expenditures make monopoly socially more costly than the standard deadweight-loss triangle alone suggests?",
+      "options": [
+        "They always reduce marginal cost",
+        "They automatically expand output to the competitive level",
+        "They convert monopoly demand into perfectly elastic demand",
+        "Real resources may be spent obtaining or defending monopoly privileges rather than producing valued goods and services"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.5",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "rent_seeking",
+      "secondarySkills": [],
+      "repairSkill": "rent_seeking",
+      "commonError": "ignores_resource_cost_of_rent_seeking",
+      "feedback": "Rent seeking can consume resources in addition to the surplus loss from restricted output.",
+      "aHash": "9a38681ade01b8b4747709f1088ebbff7bf08cb21444009dc142902c97a98488",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-R-046",
+      "sourceId": 9700046,
+      "sourceHash": "e7999113f871f39d7d68af5b5632d3aa24872189b870910d73e795f57ad7cda2",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "rent_seeking",
+          "sourceRecordOrder": 45,
+          "sourceId": 9700046,
+          "sourceHash": "e7999113f871f39d7d68af5b5632d3aa24872189b870910d73e795f57ad7cda2"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-047",
+      "q": "How does the monopolist’s MR=MC output choice create the welfare result P>MC?",
+      "options": [
+        "Average total cost replaces demand in setting price",
+        "Market power makes willingness to pay irrelevant",
+        "MR lies below demand, so choosing Q where MR=MC typically leaves price on demand above MC",
+        "The firm sets price equal to MC and then raises output, over the relevant range described in the scenario"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "monopoly_deadweight_loss",
+      "secondarySkills": [
+        "profit_maximizing_output"
+      ],
+      "repairSkill": "monopoly_deadweight_loss",
+      "commonError": "disconnects_firm_choice_from_welfare",
+      "feedback": "The gap between demand price and MC at monopoly output is the link between firm optimization and allocative inefficiency.",
+      "aHash": "c62c1997579948b0ab3bf624344bed93d0e9b0be5ee5d4a7cf1544f918d9e490",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "canonicalId": "PM6-MON-BR-047",
+      "sourceId": 9700047,
+      "sourceHash": "85d2825c9cf1f5b4692c9ea12faca12e0d30d3f1da8a3b1d5cae121794607e00",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "monopoly_deadweight_loss",
+          "sourceRecordOrder": 46,
+          "sourceId": 9700047,
+          "sourceHash": "85d2825c9cf1f5b4692c9ea12faca12e0d30d3f1da8a3b1d5cae121794607e00"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-048",
+      "q": "A natural monopoly is most likely when average total cost:",
+      "options": [
+        "Is unrelated to scale",
+        "Falls over the relevant range of market demand",
+        "Rises at every output",
+        "Equals price at every output"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly_cost",
+      "secondarySkills": [],
+      "repairSkill": "natural_monopoly_cost",
+      "commonError": "forgets_scale_economies",
+      "feedback": "Large scale economies over market demand can make one producer less costly than several.",
+      "aHash": "aaa2d52be6ebfa14b74614082a9ce7c0de9a40b5421026b8d5c648a31f7560c1",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-048",
+      "sourceId": 9700048,
+      "sourceHash": "24b54203bfdf469c85943bc94411b6495c4baef90b9e466f9e5aa46f93c45748",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "natural_monopoly_cost",
+          "sourceRecordOrder": 47,
+          "sourceId": 9700048,
+          "sourceHash": "24b54203bfdf469c85943bc94411b6495c4baef90b9e466f9e5aa46f93c45748"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-049",
+      "q": "Under marginal-cost regulation, the regulator sets price equal to:",
+      "options": [
+        "Marginal cost",
+        "Average total cost",
+        "Marginal revenue",
+        "The unregulated monopoly price"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "marginal_cost_regulation",
+      "commonError": "confuses_mc_and_atc_regulation",
+      "feedback": "P=MC targets allocative efficiency.",
+      "aHash": "cccf0e186dc21e8bdfd227883ab8cf98f5d08a8c3c93cc6d698594151f9a1562",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-049",
+      "sourceId": 9700049,
+      "sourceHash": "90e53e7a23db731d1ba01c30d8a9a7cf2a129aaae373e40a8da11be47d4bd826",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "marginal_cost_regulation",
+          "sourceRecordOrder": 48,
+          "sourceId": 9700049,
+          "sourceHash": "90e53e7a23db731d1ba01c30d8a9a7cf2a129aaae373e40a8da11be47d4bd826"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-050",
+      "q": "Average-cost regulation generally targets a price equal to:",
+      "options": [
+        "Marginal revenue",
+        "The monopoly demand intercept",
+        "Zero",
+        "Average total cost"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "average_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "average_cost_regulation",
+      "commonError": "confuses_average_cost_rule",
+      "feedback": "P=ATC allows the regulated firm to cover economic cost including normal return.",
+      "aHash": "c97b93cafde17a85ad478eab1be890a713b76a121ec434a49ff42b0581700397",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-050",
+      "sourceId": 9700050,
+      "sourceHash": "642d18c03f3e224df7e149488cf5dd016b5a68c907660696cbae77fc4fb03c8c",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "average_cost_regulation",
+          "sourceRecordOrder": 49,
+          "sourceId": 9700050,
+          "sourceHash": "642d18c03f3e224df7e149488cf5dd016b5a68c907660696cbae77fc4fb03c8c"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-051",
+      "q": "Why can P=MC create a financial problem for a natural monopoly?",
+      "options": [
+        "Demand becomes perfectly elastic",
+        "The firm necessarily earns monopoly profit",
+        "When ATC exceeds MC, revenue may be insufficient to cover total cost",
+        "MR must become negative"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "regulatory_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "regulatory_tradeoff",
+      "commonError": "ignores_mc_atc_gap",
+      "feedback": "Declining ATC often implies MC below ATC, so marginal-cost pricing can produce losses.",
+      "aHash": "120a859f8de282f116782da0254cb2448a792991b9be459aa60785760f411af4",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-051",
+      "sourceId": 9700051,
+      "sourceHash": "f4ad7f3ca9e7e9fc0e645707e41ccaced33bfde773a71a84af4fd1eda7927158",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "regulatory_tradeoff",
+          "sourceRecordOrder": 50,
+          "sourceId": 9700051,
+          "sourceHash": "f4ad7f3ca9e7e9fc0e645707e41ccaced33bfde773a71a84af4fd1eda7927158"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-052",
+      "q": "A binding price cap below the unregulated monopoly price is intended primarily to:",
+      "options": [
+        "Make the firm a price taker in an unregulated market",
+        "Limit the price the regulated monopolist may charge",
+        "Guarantee monopoly profit",
+        "Eliminate all fixed cost"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_cap_regulation",
+      "secondarySkills": [],
+      "repairSkill": "price_cap_regulation",
+      "commonError": "misunderstands_price_cap",
+      "feedback": "A price cap constrains the allowable price and can alter incentives and output.",
+      "aHash": "771cf454d8a6d4fe0b723421ea1cecc5ff88ece169b959a0e6bde07eff65f334",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-052",
+      "sourceId": 9700052,
+      "sourceHash": "9317106613bdd8318fca04ab70c8ea54ef9de2cd0ec339791e9a861f01bf0c41",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "price_cap_regulation",
+          "sourceRecordOrder": 51,
+          "sourceId": 9700052,
+          "sourceHash": "9317106613bdd8318fca04ab70c8ea54ef9de2cd0ec339791e9a861f01bf0c41"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-053",
+      "q": "If a regulator sets P=ATC rather than P=MC, the main efficiency compromise is that:",
+      "options": [
+        "Price may remain above marginal cost even though the firm can cover total cost",
+        "The firm must shut down immediately",
+        "Demand becomes horizontal",
+        "The firm earns unlimited economic profit"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "regulatory_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "regulatory_tradeoff",
+      "commonError": "assumes_atc_pricing_is_fully_efficient",
+      "feedback": "Average-cost pricing addresses financial viability but usually does not attain allocative efficiency.",
+      "aHash": "3c8ab8a60bc1ca75981b65121f4d2392080c02c37fefaa6a868b4b0589def2ae",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-053",
+      "sourceId": 9700053,
+      "sourceHash": "c0fbea438e9f7dde8da115254042756bf4b4dc5a2ccf7d524791ab9761521c0d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "regulatory_tradeoff",
+          "sourceRecordOrder": 52,
+          "sourceId": 9700053,
+          "sourceHash": "c0fbea438e9f7dde8da115254042756bf4b4dc5a2ccf7d524791ab9761521c0d"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-054",
+      "q": "If a regulator requires P=MC and the firm would otherwise incur a loss, one possible policy response is:",
+      "options": [
+        "Raise the price back to the unregulated monopoly level, under the conditions stated in the question",
+        "Require output to fall until MR=0",
+        "Eliminate the demand curve",
+        "Provide a subsidy financed outside the firm’s price revenue"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "marginal_cost_regulation",
+      "commonError": "misses_subsidy_tradeoff",
+      "feedback": "A subsidy can cover the gap between total cost and revenue under marginal-cost pricing.",
+      "aHash": "508ebebb7a8d3d853bdcfe8ae11c27efb5a89868339d385fbc075b9563cdc34f",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-054",
+      "sourceId": 9700054,
+      "sourceHash": "eecbfb846f9ed6f3b8096d7d9504e9b775888eff165dc91e09258bbba891766a",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "marginal_cost_regulation",
+          "sourceRecordOrder": 53,
+          "sourceId": 9700054,
+          "sourceHash": "eecbfb846f9ed6f3b8096d7d9504e9b775888eff165dc91e09258bbba891766a"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-055",
+      "q": "Which example best fits natural monopoly rather than a legal monopoly created only by statute?",
+      "options": [
+        "A license limits taxi entry even though many firms could operate efficiently",
+        "A copyright protects a particular book",
+        "A single water network has lower ATC than duplicating pipes across several firms",
+        "A patent gives one pharmaceutical producer exclusive rights for a fixed term"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly_cost",
+      "secondarySkills": [],
+      "repairSkill": "natural_monopoly_cost",
+      "commonError": "confuses_natural_and_legal_monopoly",
+      "feedback": "Natural monopoly is rooted in cost structure and economies of scale rather than legal exclusion alone.",
+      "aHash": "52dab5460771ad8107a9569b2bb9209926b5d5a91fea8cafcd17f2fb9c28bc42",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-E-055",
+      "sourceId": 9700055,
+      "sourceHash": "8e95c9a1c769844c0ab92a6ae8a2c63055fd47bbe6e67838000ea1e0eb02189b",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "natural_monopoly_cost",
+          "sourceRecordOrder": 54,
+          "sourceId": 9700055,
+          "sourceHash": "8e95c9a1c769844c0ab92a6ae8a2c63055fd47bbe6e67838000ea1e0eb02189b"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-056",
+      "q": "A natural monopoly has MC=$12 and ATC=$20 at the allocatively efficient quantity. If regulation sets P=$12, which outcome is most likely without a subsidy?",
+      "options": [
+        "The firm must reduce output to zero by definition",
+        "The firm incurs an economic loss because price is below ATC",
+        "The firm earns $8 profit per unit",
+        "The firm breaks even because P=MC"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "marginal_cost_regulation",
+      "commonError": "confuses_allocative_efficiency_with_break_even",
+      "feedback": "Marginal-cost pricing can require financial support when MC lies below ATC.",
+      "aHash": "22a77063bbc5054a37c86d02b0f4aea36649a204bcb3591aadf7edc024cccf7d",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-M-056",
+      "sourceId": 9700056,
+      "sourceHash": "471380a1b9c04949c662aa8377b8b75773fc0412abda7f7073f67353278eb8ca",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "marginal_cost_regulation",
+          "sourceRecordOrder": 55,
+          "sourceId": 9700056,
+          "sourceHash": "471380a1b9c04949c662aa8377b8b75773fc0412abda7f7073f67353278eb8ca"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-057",
+      "q": "A regulator sets price where demand intersects ATC for a natural monopoly. Which combination best describes the result?",
+      "options": [
+        "The firm can cover total economic cost, but price generally remains above MC",
+        "The firm earns maximum monopoly profit and output falls to zero, for the market and time period described",
+        "Price equals MC and allocative efficiency is guaranteed",
+        "The firm necessarily faces a horizontal demand curve"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "average_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "average_cost_regulation",
+      "commonError": "assumes_atc_pricing_equals_mc_pricing",
+      "feedback": "Average-cost pricing aims for financial viability, not full P=MC efficiency.",
+      "aHash": "666fc634c9b61007c97b7024cba439f5709e23b4977b0952d5e328cf4d0cdb00",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-M-057",
+      "sourceId": 9700057,
+      "sourceHash": "cd94ef87c5690b31e86a2581927c99a0905cf79f411f0f77be8f576ed83fd42f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "average_cost_regulation",
+          "sourceRecordOrder": 56,
+          "sourceId": 9700057,
+          "sourceHash": "cd94ef87c5690b31e86a2581927c99a0905cf79f411f0f77be8f576ed83fd42f"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-058",
+      "q": "A price cap is set above the price the monopolist would charge without regulation. What is the immediate effect?",
+      "options": [
+        "The firm must charge the cap even if it prefers a lower price",
+        "The firm becomes perfectly competitive",
+        "The firm’s fixed cost becomes zero",
+        "The cap is nonbinding and does not constrain the firm’s chosen price"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_cap_regulation",
+      "secondarySkills": [],
+      "repairSkill": "price_cap_regulation",
+      "commonError": "treats_nonbinding_cap_as_binding",
+      "feedback": "A ceiling above the unregulated price does not bind.",
+      "aHash": "70750600bad92acb232dc4d0e8e0519e58a162760f220456d2ff2d4a38014df9",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-M-058",
+      "sourceId": 9700058,
+      "sourceHash": "6cb5639ae21d48d8716a470b9ccbf3f42cfe0a5d2c483d657d3d907e61933fb6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "price_cap_regulation",
+          "sourceRecordOrder": 57,
+          "sourceId": 9700058,
+          "sourceHash": "6cb5639ae21d48d8716a470b9ccbf3f42cfe0a5d2c483d657d3d907e61933fb6"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-059",
+      "q": "A regulator wants lower prices but also wants the utility to maintain infrastructure and innovate. Which concern best captures the tradeoff?",
+      "options": [
+        "Investment incentives are unrelated to expected returns",
+        "Any regulation automatically produces the competitive quantity",
+        "Aggressive price limits can improve consumer terms while weakening incentives or revenue for cost recovery and investment",
+        "Lower prices always increase monopoly profit"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "regulatory_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "regulatory_tradeoff",
+      "commonError": "ignores_dynamic_regulatory_tradeoff",
+      "feedback": "Regulation balances static consumer/efficiency goals against financial and dynamic incentives.",
+      "aHash": "0e56a8221f5615166e10199daf0c775bb64ab1ce27d4a450fa915d9197989e73",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-M-059",
+      "sourceId": 9700059,
+      "sourceHash": "7964254e8bef4f3468c95035896628f702e7adc779c311c1801958b1352c6cb4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "regulatory_tradeoff",
+          "sourceRecordOrder": 58,
+          "sourceId": 9700059,
+          "sourceHash": "7964254e8bef4f3468c95035896628f702e7adc779c311c1801958b1352c6cb4"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-060",
+      "q": "Demand for a utility expands enough that the relevant output range moves beyond the region where ATC is falling. What does that suggest about the natural-monopoly argument?",
+      "options": [
+        "It guarantees marginal cost is zero",
+        "It may weaken because one firm may no longer have a cost advantage over multiple firms across the new relevant range",
+        "It becomes stronger automatically because demand increased, while the other stated conditions remain unchanged",
+        "It proves that price discrimination is efficient"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly_cost",
+      "secondarySkills": [],
+      "repairSkill": "natural_monopoly_cost",
+      "commonError": "treats_natural_monopoly_as_permanent_label",
+      "feedback": "Natural-monopoly status depends on cost conditions over the relevant market-demand range.",
+      "aHash": "df7347416786a49f9e86577d771d702f76924144d1f4f3b840090e95ddd69f9c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-M-060",
+      "sourceId": 9700060,
+      "sourceHash": "2ecfda2242334fc10b70fb00bed34c81ebafe8f3bda72813df61cc2215eaa2aa",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "natural_monopoly_cost",
+          "sourceRecordOrder": 59,
+          "sourceId": 9700060,
+          "sourceHash": "2ecfda2242334fc10b70fb00bed34c81ebafe8f3bda72813df61cc2215eaa2aa"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-061",
+      "q": "What cost pattern is the key starting point for natural-monopoly analysis?",
+      "options": [
+        "ATC falls over the relevant range of market demand",
+        "MC is always above price",
+        "Demand is perfectly elastic",
+        "Fixed cost is zero"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly_cost",
+      "secondarySkills": [],
+      "repairSkill": "natural_monopoly_cost",
+      "commonError": "forgets_natural_monopoly_cost_condition",
+      "feedback": "Economies of scale over market demand can make a single supplier lowest-cost.",
+      "aHash": "03c7d512739279743e5c40791bb1c0e42d28a04dc33785878f708bd29b452e97",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-R-061",
+      "sourceId": 9700061,
+      "sourceHash": "50ea1c0124be803255d938ea71de3d84f292a1578887ae8cdaf3c201167dd412",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "natural_monopoly_cost",
+          "sourceRecordOrder": 60,
+          "sourceId": 9700061,
+          "sourceHash": "50ea1c0124be803255d938ea71de3d84f292a1578887ae8cdaf3c201167dd412"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-062",
+      "q": "What is the efficiency goal of setting a regulated natural-monopoly price equal to MC?",
+      "options": [
+        "Guarantee zero economic profit",
+        "Maximize the monopolist’s markup",
+        "Prevent all demand changes",
+        "Produce units up to the point where willingness to pay equals the marginal production cost"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "marginal_cost_regulation",
+      "commonError": "confuses_mc_pricing_goal",
+      "feedback": "P=MC is the allocative-efficiency benchmark.",
+      "aHash": "1217dbe1fdbf8b141c7a28d25ae6f5cc2463e1259d144465e019623d693b2841",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-R-062",
+      "sourceId": 9700062,
+      "sourceHash": "cd9a4d5d8d654d1d219770e2e26183e8a935d19a83736cf81a7a3d48620864fb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "marginal_cost_regulation",
+          "sourceRecordOrder": 61,
+          "sourceId": 9700062,
+          "sourceHash": "cd9a4d5d8d654d1d219770e2e26183e8a935d19a83736cf81a7a3d48620864fb"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-063",
+      "q": "Why does P=ATC usually allow a regulated natural monopoly to remain financially viable?",
+      "options": [
+        "It removes all fixed cost",
+        "It makes demand perfectly inelastic",
+        "Revenue per unit covers average economic cost at the chosen output",
+        "It guarantees marginal revenue is zero, over the relevant range described in the scenario"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "average_cost_regulation",
+      "secondarySkills": [],
+      "repairSkill": "average_cost_regulation",
+      "commonError": "forgets_atc_break_even_logic",
+      "feedback": "Average-cost pricing permits recovery of total economic cost including normal profit.",
+      "aHash": "55b56a9471acc951215ea601c51df97460677d729feeaf7b8a323645825a2f00",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-R-063",
+      "sourceId": 9700063,
+      "sourceHash": "3a30b91ef93f2c158f40ec9c5fb9a1a47f943edcba9cf1af14c27b4eb4e4a0c3",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "average_cost_regulation",
+          "sourceRecordOrder": 62,
+          "sourceId": 9700063,
+          "sourceHash": "3a30b91ef93f2c158f40ec9c5fb9a1a47f943edcba9cf1af14c27b4eb4e4a0c3"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-064",
+      "q": "When is a price cap actually binding on an unregulated monopolist?",
+      "options": [
+        "Only when demand is perfectly inelastic",
+        "When the cap is below the price the firm would otherwise charge",
+        "Whenever a regulator announces any maximum price",
+        "Only when the cap equals ATC"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_cap_regulation",
+      "secondarySkills": [],
+      "repairSkill": "price_cap_regulation",
+      "commonError": "misidentifies_binding_cap",
+      "feedback": "A ceiling constrains behavior only when it lies below the unconstrained price.",
+      "aHash": "50f2b4bc8abbd0544f4822d5fe9af149ebade50f6cbc9a007c4373a90e349226",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-R-064",
+      "sourceId": 9700064,
+      "sourceHash": "1644356f8cdd06a2438dff3aea2ca69a8e6346b8e3f73d812ee9d4e00e0127ae",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "price_cap_regulation",
+          "sourceRecordOrder": 63,
+          "sourceId": 9700064,
+          "sourceHash": "1644356f8cdd06a2438dff3aea2ca69a8e6346b8e3f73d812ee9d4e00e0127ae"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-065",
+      "q": "How does declining ATC connect the natural-monopoly cost story to the case for one network rather than duplicated networks?",
+      "options": [
+        "Serving the market through one larger network can avoid duplicative fixed infrastructure and lower average cost",
+        "Declining ATC makes price equal MR",
+        "It guarantees one firm will choose the efficient quantity without oversight",
+        "It eliminates fixed cost"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "natural_monopoly_cost",
+      "secondarySkills": [
+        "economies_of_scale"
+      ],
+      "repairSkill": "natural_monopoly_cost",
+      "commonError": "disconnects_scale_from_market_structure",
+      "feedback": "Scale economies explain why breaking the firm into many duplicative networks may raise production cost.",
+      "aHash": "fce708cb88a3e475f9b9f3a78bf9b9197f8f06f64297477b7c4de6785512e964",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-BR-065",
+      "sourceId": 9700065,
+      "sourceHash": "8ac4bb97292685434fe91c9196359f8d4ec22f7abf1027a3c732b3f7e16383b5",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "natural_monopoly_cost",
+          "sourceRecordOrder": 64,
+          "sourceId": 9700065,
+          "sourceHash": "8ac4bb97292685434fe91c9196359f8d4ec22f7abf1027a3c732b3f7e16383b5"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-066",
+      "q": "How does marginal-cost regulation connect monopoly policy to the competitive efficiency benchmark?",
+      "options": [
+        "Both require P=ATC at every output, under the conditions stated in the question",
+        "Both maximize monopoly profit",
+        "Both eliminate the need for demand",
+        "Both target P=MC so the last unit’s willingness to pay matches its marginal production cost"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "marginal_cost_regulation",
+      "secondarySkills": [
+        "allocative_inefficiency"
+      ],
+      "repairSkill": "marginal_cost_regulation",
+      "commonError": "disconnects_regulation_from_efficiency",
+      "feedback": "Marginal-cost pricing tries to reproduce the allocative condition associated with competitive equilibrium.",
+      "aHash": "47cdecea4fb2f580d5442cd55d278b0569c874d9e5581f4c13f3c0207857cb0c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-BR-066",
+      "sourceId": 9700066,
+      "sourceHash": "4a13c373d854e61fe805e42e94d34c02ab3e8749e27845a8bd7032044690272e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "marginal_cost_regulation",
+          "sourceRecordOrder": 65,
+          "sourceId": 9700066,
+          "sourceHash": "4a13c373d854e61fe805e42e94d34c02ab3e8749e27845a8bd7032044690272e"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-067",
+      "q": "Why might a subsidy accompany marginal-cost pricing for a natural monopoly?",
+      "options": [
+        "The subsidy makes demand horizontal",
+        "A subsidy prevents all entry barriers",
+        "P=MC can leave revenue below total cost when ATC exceeds MC",
+        "A subsidy is required because MR always exceeds price"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "regulatory_tradeoff",
+      "secondarySkills": [
+        "marginal_cost_regulation"
+      ],
+      "repairSkill": "regulatory_tradeoff",
+      "commonError": "disconnects_subsidy_from_cost_gap",
+      "feedback": "The subsidy addresses the financing gap created by efficient pricing when scale economies keep ATC above MC.",
+      "aHash": "f3bf39e89d688100ad19285548d040b2e30fc5c4bb59bafd561057e182d98a9e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-BR-067",
+      "sourceId": 9700067,
+      "sourceHash": "5e2302287375a0002a3edc43ca158146001168f0b34213254246ed7563202f13",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "regulatory_tradeoff",
+          "sourceRecordOrder": 66,
+          "sourceId": 9700067,
+          "sourceHash": "5e2302287375a0002a3edc43ca158146001168f0b34213254246ed7563202f13"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-068",
+      "q": "How does average-cost regulation trade some allocative efficiency for financial sustainability?",
+      "options": [
+        "P=ATC makes marginal revenue equal price",
+        "P=ATC covers total cost, but price can remain above MC and output below the P=MC level",
+        "P=ATC forces the firm to price below MC",
+        "P=ATC eliminates all monopoly power"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "average_cost_regulation",
+      "secondarySkills": [
+        "allocative_inefficiency"
+      ],
+      "repairSkill": "average_cost_regulation",
+      "commonError": "misses_regulatory_compromise",
+      "feedback": "Average-cost pricing is a compromise between cost recovery and the P=MC efficiency benchmark.",
+      "aHash": "1cf341b0d2fdcc8abe2f95a4cc540a1ad63cac18b46ab1754f9a1ff1f00fb8e7",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-BR-068",
+      "sourceId": 9700068,
+      "sourceHash": "c185395bcd6f78c35d60a45c314653ca976d7920598445f098f2f951ec70a222",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "average_cost_regulation",
+          "sourceRecordOrder": 67,
+          "sourceId": 9700068,
+          "sourceHash": "c185395bcd6f78c35d60a45c314653ca976d7920598445f098f2f951ec70a222"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-069",
+      "q": "How can a well-designed price cap change a regulated monopolist’s cost incentives compared with simply reimbursing whatever costs it reports?",
+      "options": [
+        "If the firm can keep some gains from lowering cost below the cap, it may have stronger cost-reduction incentives",
+        "A cap guarantees the firm will never invest",
+        "A cap automatically sets P=MC regardless of its level, for the market and time period described",
+        "A cap makes fixed costs irrelevant"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_cap_regulation",
+      "secondarySkills": [
+        "regulatory_tradeoff"
+      ],
+      "repairSkill": "price_cap_regulation",
+      "commonError": "ignores_incentive_effect_of_cap",
+      "feedback": "Price-cap design can affect incentives to control cost, not just the allowed price.",
+      "aHash": "477407370ba38167386d4b2dd7ecbffb0e2d30ed3df47fa8db4461c09b69bbf7",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "natural-monopoly-regulation"
+      ],
+      "canonicalId": "PM6-MON-BR-069",
+      "sourceId": 9700069,
+      "sourceHash": "70954e1c67c78654a46f5fa53cafd41f71aba3e5744c39476c973a9e31b4f2a4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "price_cap_regulation",
+          "sourceRecordOrder": 68,
+          "sourceId": 9700069,
+          "sourceHash": "70954e1c67c78654a46f5fa53cafd41f71aba3e5744c39476c973a9e31b4f2a4"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-070",
+      "q": "For price discrimination to be profitable, the seller generally needs:",
+      "options": [
+        "Perfectly competitive pricing and free entry",
+        "Identical demand elasticity in every group",
+        "A requirement that price equal marginal cost",
+        "Market power and some ability to separate buyers by willingness to pay or demand responsiveness"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_conditions",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_conditions",
+      "commonError": "forgets_market_power_condition",
+      "feedback": "Price discrimination requires control over price and a way to distinguish relevant buyers or markets.",
+      "aHash": "0e11599a42fa89fa31824a63b0affe292f2ace2e9a56eab6cea86d3427769e76",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-070",
+      "sourceId": 9700070,
+      "sourceHash": "f34a00e5ab21c61b0e9162287fdf7829416283bd6483fcc60531233779c971ca",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "price_discrimination_conditions",
+          "sourceRecordOrder": 69,
+          "sourceId": 9700070,
+          "sourceHash": "f34a00e5ab21c61b0e9162287fdf7829416283bd6483fcc60531233779c971ca"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-071",
+      "q": "Why must a price-discriminating seller often prevent resale between customer groups?",
+      "options": [
+        "Resale guarantees the high-price group becomes less elastic",
+        "Resale forces average cost to zero",
+        "Low-price buyers could otherwise resell to high-price buyers and undermine the price difference",
+        "Resale would make marginal cost negative"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "resale_prevention",
+      "secondarySkills": [],
+      "repairSkill": "resale_prevention",
+      "commonError": "forgets_no_arbitrage_condition",
+      "feedback": "Arbitrage erodes segmented prices.",
+      "aHash": "d4bee1b7e62635a2f027662cb52e06e1eeae90c3686eff8684b33a61c7489d8c",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-071",
+      "sourceId": 9700071,
+      "sourceHash": "08d6386f433eec10fcee513b189895e500cba6ce835f3591e7baddd76712af8f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "resale_prevention",
+          "sourceRecordOrder": 70,
+          "sourceId": 9700071,
+          "sourceHash": "08d6386f433eec10fcee513b189895e500cba6ce835f3591e7baddd76712af8f"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-072",
+      "q": "A museum charges local students one price and tourists another based on verifiable group status. This is closest to:",
+      "options": [
+        "A natural monopoly",
+        "Third-degree price discrimination",
+        "Perfect competition",
+        "Marginal-cost regulation, while the other stated conditions remain unchanged"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "misclassifies_group_pricing",
+      "feedback": "Third-degree discrimination separates identifiable groups and charges them different prices.",
+      "aHash": "ca3c98f73fe43368f5694c55a961cab8fb2cd2eb6275275cb583f79e59ee889a",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-072",
+      "sourceId": 9700072,
+      "sourceHash": "13e1a1fa3ae64b621a832b2fe5253e507e46020075c49b555ff25ad93e88faf9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 71,
+          "sourceId": 9700072,
+          "sourceHash": "13e1a1fa3ae64b621a832b2fe5253e507e46020075c49b555ff25ad93e88faf9"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-073",
+      "q": "All else equal, which customer group usually receives the higher markup under third-degree price discrimination?",
+      "options": [
+        "The group with less elastic demand",
+        "The group with more elastic demand",
+        "The group with the lowest fixed cost",
+        "The group with the easiest resale opportunities"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "reverses_elasticity_markup_rule",
+      "feedback": "Less responsive buyers support a larger markup over marginal cost.",
+      "aHash": "ba066490b5181a2a49715d6fdb949362362ba7e60278c7f2e214fd3457e50d84",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-073",
+      "sourceId": 9700073,
+      "sourceHash": "3c6dd98d191522c26a740fc1c50812a63841b2d0e151333b40c45ebcdd1b5a94",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 72,
+          "sourceId": 9700073,
+          "sourceHash": "3c6dd98d191522c26a740fc1c50812a63841b2d0e151333b40c45ebcdd1b5a94"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-074",
+      "q": "Under perfect first-degree price discrimination, the seller attempts to charge each buyer:",
+      "options": [
+        "The same single monopoly price",
+        "Marginal cost for every unit and nothing more",
+        "Average total cost regardless of willingness to pay",
+        "That buyer’s maximum willingness to pay for each unit"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "first_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "first_degree_price_discrimination",
+      "commonError": "confuses_first_degree_with_uniform_pricing",
+      "feedback": "Perfect first-degree discrimination extracts each unit’s willingness to pay.",
+      "aHash": "5b28f0945cf2eca080e0e3da4c3b6b233386b0eebacd4ea42899be42727ef22e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-074",
+      "sourceId": 9700074,
+      "sourceHash": "b6cc7cd93ff9a5c0ce603822a3590f693019bd5da860c29595635cd9819f6233",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "first_degree_price_discrimination",
+          "sourceRecordOrder": 73,
+          "sourceId": 9700074,
+          "sourceHash": "b6cc7cd93ff9a5c0ce603822a3590f693019bd5da860c29595635cd9819f6233"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-075",
+      "q": "A theater can identify student status but students can freely transfer discounted tickets to anyone. Which requirement is missing?",
+      "options": [
+        "A downward-sloping market demand curve",
+        "Positive marginal cost",
+        "Effective prevention of arbitrage or resale",
+        "Market power"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_conditions",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_conditions",
+      "commonError": "ignores_arbitrage",
+      "feedback": "Identification alone is not enough if buyers can defeat segmentation through resale.",
+      "aHash": "9e3f984ac18591b07bbde1d39d298652b95f6ec8cb485b15015bb736c3521569",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-075",
+      "sourceId": 9700075,
+      "sourceHash": "fd786f931299c21ea9f1103810be0472e226fa9040fbff34e8b6a2798a2f2600",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "price_discrimination_conditions",
+          "sourceRecordOrder": 74,
+          "sourceId": 9700075,
+          "sourceHash": "fd786f931299c21ea9f1103810be0472e226fa9040fbff34e8b6a2798a2f2600"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-076",
+      "q": "A seller faces two separated groups with the same MC. Group A has more elastic demand than Group B. Which pricing pattern is generally expected?",
+      "options": [
+        "Zero price in the more elastic group",
+        "A lower price in Group A and a higher price in Group B",
+        "A higher price in Group A and a lower price in Group B",
+        "The same price because MC is the same"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "reverses_group_price_rule",
+      "feedback": "The more elastic group receives the smaller markup.",
+      "aHash": "349e7d0a7d40d0efff7d72d900f040a2ecc9928681149644f783ca8c48f0e1ff",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-076",
+      "sourceId": 9700076,
+      "sourceHash": "d33d1821bf7c90ff1b99f6d8db48bc625e97b345afe16281e00fc7f620e1a777",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 75,
+          "sourceId": 9700076,
+          "sourceHash": "d33d1821bf7c90ff1b99f6d8db48bc625e97b345afe16281e00fc7f620e1a777"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-E-077",
+      "q": "Can price discrimination ever increase output relative to single-price monopoly?",
+      "options": [
+        "Yes; serving additional low-value or elastic-market buyers can expand output in some cases",
+        "No; discrimination always leaves output unchanged",
+        "No; discrimination always eliminates all consumer purchases, over the relevant range described in the scenario",
+        "Yes, but only if marginal cost is zero"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_welfare",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_welfare",
+      "commonError": "assumes_discrimination_always_reduces_output",
+      "feedback": "The welfare effect depends partly on whether discrimination expands or contracts total output.",
+      "aHash": "ad66aec00e458815a064143d655d2d25ad9c637bc14599d67d353bf5e704f8e4",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "easy",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-E-077",
+      "sourceId": 9700077,
+      "sourceHash": "defde8aa6bb735b0ec1714052697db8eda086a8f1203b9f4f0fea8c19acaa2e4",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "price_discrimination_welfare",
+          "sourceRecordOrder": 76,
+          "sourceId": 9700077,
+          "sourceHash": "defde8aa6bb735b0ec1714052697db8eda086a8f1203b9f4f0fea8c19acaa2e4"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-078",
+      "q": "A firm has market power and observes two groups with different demand elasticities, but buyers can costlessly resell the product. What happens to the proposed two-price strategy?",
+      "options": [
+        "The firm can preserve both prices indefinitely",
+        "The high-price group automatically becomes less elastic",
+        "Marginal cost becomes different across groups",
+        "Arbitrage tends to collapse the price difference"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_conditions",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_conditions",
+      "commonError": "ignores_resale_constraint",
+      "feedback": "Segmentation must be enforceable; costless resale undermines differentiated prices.",
+      "aHash": "1b46b758d5562af25bb06a0c5835c9a8f4568bf944a5aeceb0eddce235195378",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-078",
+      "sourceId": 9700078,
+      "sourceHash": "d5dca5cbf003498f19bf611128144c59a6f4f9211d7d494249bbaf7fd7306f15",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "price_discrimination_conditions",
+          "sourceRecordOrder": 77,
+          "sourceId": 9700078,
+          "sourceHash": "d5dca5cbf003498f19bf611128144c59a6f4f9211d7d494249bbaf7fd7306f15"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-079",
+      "q": "Why does a third-degree discriminator compare MR from each market with the common MC?",
+      "options": [
+        "Average revenue must equal average cost in every market",
+        "MC determines demand elasticity directly",
+        "Profit is increased by allocating another unit to a market whenever that market’s MR exceeds MC",
+        "The firm must make prices identical across markets"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "ignores_market_specific_mr",
+      "feedback": "The firm allocates output across separated markets using marginal revenue relative to marginal cost.",
+      "aHash": "4f29b62459199fa6939a61e56d33bbee35c5b1ec7152c8d1354b4454f6bbc5dc",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-079",
+      "sourceId": 9700079,
+      "sourceHash": "e0b8c445babddff629ea2a63e15f89e425c13ed50df28e69f7e097e2a48b9091",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 78,
+          "sourceId": 9700079,
+          "sourceHash": "e0b8c445babddff629ea2a63e15f89e425c13ed50df28e69f7e097e2a48b9091"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-080",
+      "q": "Two groups have identical MC. Seniors have less elastic demand than students. What happens to the optimal markup?",
+      "options": [
+        "Both prices must equal ATC",
+        "The senior markup is larger",
+        "The student markup is larger",
+        "Both markups must be zero"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "reverses_markup_elasticity",
+      "feedback": "A less elastic market supports a larger markup over common marginal cost.",
+      "aHash": "e251f9a7de967fca5987e4164970b5318f0efa3b19bdc00e2ae734d54a08c1c6",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-080",
+      "sourceId": 9700080,
+      "sourceHash": "7af83d4f790f3bddbc80d7c7f3ca8d9c66759b04bbc2c9000f04a0bcf2323824",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 79,
+          "sourceId": 9700080,
+          "sourceHash": "7af83d4f790f3bddbc80d7c7f3ca8d9c66759b04bbc2c9000f04a0bcf2323824"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-081",
+      "q": "Compared with a single-price monopoly, perfect first-degree price discrimination can eliminate the standard output deadweight loss when:",
+      "options": [
+        "The firm sells every unit for which willingness to pay is at least MC",
+        "The firm charges one common price above MC",
+        "Buyers can freely resell units",
+        "The firm ignores willingness to pay"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "first_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "first_degree_price_discrimination",
+      "commonError": "assumes_first_degree_preserves_dwl",
+      "feedback": "Perfect discrimination can expand output to the efficient quantity while transferring surplus to the seller.",
+      "aHash": "96ca6cf32f6936a539bf32a55178c7dbdef865fe898695773c0e874879477347",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-081",
+      "sourceId": 9700081,
+      "sourceHash": "1b9cd839e6a3516267d9d3542204d55ddaaa68dce9617270e0f2327402d1dded",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "first_degree_price_discrimination",
+          "sourceRecordOrder": 80,
+          "sourceId": 9700081,
+          "sourceHash": "1b9cd839e6a3516267d9d3542204d55ddaaa68dce9617270e0f2327402d1dded"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-082",
+      "q": "A discriminatory pricing plan raises total output by serving a new low-price market. What is the most defensible welfare conclusion?",
+      "options": [
+        "Total surplus must fall because prices differ, under the conditions stated in the question",
+        "Consumer surplus must rise in every group",
+        "Deadweight loss is necessarily unchanged",
+        "Total surplus may rise because additional mutually beneficial trades occur, though distribution also changes"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_welfare",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_welfare",
+      "commonError": "judges_welfare_only_from_price_difference",
+      "feedback": "Welfare effects depend on output as well as how surplus is redistributed.",
+      "aHash": "be865503d52f3e3c8a69fb5d44d75211cf8c4b409c19588ffd9882785cb48b03",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-082",
+      "sourceId": 9700082,
+      "sourceHash": "f4fe8e49febef5c13773f324ec587d3ee35081e92fcc0793fc3fd34a0bd398bb",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "price_discrimination_welfare",
+          "sourceRecordOrder": 81,
+          "sourceId": 9700082,
+          "sourceHash": "f4fe8e49febef5c13773f324ec587d3ee35081e92fcc0793fc3fd34a0bd398bb"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-083",
+      "q": "An airline sells a discounted ticket that cannot be transferred and imposes restrictions that separate leisure from business travelers. What economic purpose do the restrictions serve?",
+      "options": [
+        "They force the same elasticity in both groups",
+        "They eliminate the airline’s fixed costs",
+        "They help prevent arbitrage and maintain market segmentation",
+        "They make the airline a price taker"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "resale_prevention",
+      "secondarySkills": [],
+      "repairSkill": "resale_prevention",
+      "commonError": "ignores_segmentation_device",
+      "feedback": "Restrictions can help keep low-price buyers from reselling or masquerading as high-value segments.",
+      "aHash": "b5f87fe80b2a0741a319524872ba2cb409a7ca234528d4f5a6377111e28bf097",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-083",
+      "sourceId": 9700083,
+      "sourceHash": "ca2423f405a54661adabf8b8bcb55b99a261d3274fc5b1cbd9184294f2956e62",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "resale_prevention",
+          "sourceRecordOrder": 82,
+          "sourceId": 9700083,
+          "sourceHash": "ca2423f405a54661adabf8b8bcb55b99a261d3274fc5b1cbd9184294f2956e62"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-084",
+      "q": "A firm can separate buyers perfectly but faces a perfectly competitive market with many identical sellers. Why is discrimination difficult to sustain?",
+      "options": [
+        "Buyer groups necessarily have identical elasticities",
+        "The firm lacks enough market power to set different markups without losing customers",
+        "Resale prevention becomes irrelevant only because MC is zero",
+        "Competitive firms have no costs"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_conditions",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_conditions",
+      "commonError": "forgets_market_power_for_discrimination",
+      "feedback": "Segmentation is not enough; the seller also needs pricing power.",
+      "aHash": "24745c2eb7805598f59ae05208ccc51d65b4dbec5f52b7fc723fc0a67f3f2ca0",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-084",
+      "sourceId": 9700084,
+      "sourceHash": "6aa3959ed77f71160ea55d585d28e8e802cb664af8cde710a680dfd65c6427f2",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "price_discrimination_conditions",
+          "sourceRecordOrder": 83,
+          "sourceId": 9700084,
+          "sourceHash": "6aa3959ed77f71160ea55d585d28e8e802cb664af8cde710a680dfd65c6427f2"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-M-085",
+      "q": "A monopolist starts charging different prices to two isolated groups. The high-price group is observed to have less elastic demand. Which fact best explains the pricing pattern?",
+      "options": [
+        "Optimal monopoly markup is inversely related to demand responsiveness",
+        "The high-price group must have higher marginal cost",
+        "The low-price group must have higher fixed cost",
+        "Price discrimination requires equal prices when MC is common, for the market and time period described"
+      ],
+      "tag": "monopoly",
+      "type": "application",
+      "objective": "MON.6",
+      "difficulty": "medium",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "disconnects_elasticity_from_markup",
+      "feedback": "Lower elasticity supports a larger markup over marginal cost.",
+      "aHash": "8a24f36f32739e0864251f9c31ae000309841759da6fc0146df1474798c608ec",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "medium",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-M-085",
+      "sourceId": 9700085,
+      "sourceHash": "e0958cc36c0e2628a6ad2344ec762d9692516a200d9f70e716a90ded6ede6fc0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "medium",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 84,
+          "sourceId": 9700085,
+          "sourceHash": "e0958cc36c0e2628a6ad2344ec762d9692516a200d9f70e716a90ded6ede6fc0"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-086",
+      "q": "A monopolist serves two isolated markets with PA=90−QA and PB=70−0.5QB. MC=$30 in both. Which price pair is profit maximizing?",
+      "options": [
+        "$30 in both",
+        "$50 in A and $60 in B",
+        "$90 in A and $70 in B",
+        "$60 in A and $50 in B"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "uses_demand_instead_of_mr_for_segment_output",
+      "feedback": "Set MRA=90−2QA=30 and MRB=70−QB=30; then use each demand curve to find prices.",
+      "aHash": "458baabb4bbb793c20b596ef2b0bf1af6996694959ee994f925996a5f0ca1c3e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-H-086",
+      "sourceId": 9700086,
+      "sourceHash": "efdd680c770cc25cbeaa379dfd93efca65613b062e9531ad3077f9602f0e8ef6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 85,
+          "sourceId": 9700086,
+          "sourceHash": "efdd680c770cc25cbeaa379dfd93efca65613b062e9531ad3077f9602f0e8ef6"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-087",
+      "q": "Market X has elasticity magnitude 2 while Market Y has elasticity magnitude 5 at their candidate prices, with the same MC and effective separation. Which market should generally carry the larger markup?",
+      "options": [
+        "Both must carry the same markup because MC is equal",
+        "Neither; discrimination requires identical elasticities",
+        "Market X, because its demand is less elastic",
+        "Market Y, because its demand is more elastic"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "reverses_lerner_elasticity_logic",
+      "feedback": "The lower elasticity magnitude indicates less responsive demand and supports a higher markup.",
+      "aHash": "f453d73a2215c994bb2d5b1b45fbba8bc056955a935e93fbaa4ed7791ae5ad9e",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-H-087",
+      "sourceId": 9700087,
+      "sourceHash": "4ad322efe180d7269b8d5264af3b091fbb5089053e6bdcbe606d41160f5093af",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 86,
+          "sourceId": 9700087,
+          "sourceHash": "4ad322efe180d7269b8d5264af3b091fbb5089053e6bdcbe606d41160f5093af"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-H-088",
+      "q": "A perfect first-degree discriminator expands output from the single-price monopoly quantity to the efficient quantity. Which combination is most accurate?",
+      "options": [
+        "The seller earns zero economic profit by definition",
+        "Standard output deadweight loss disappears, but consumer surplus is largely transferred to the seller",
+        "Deadweight loss rises and consumer surplus rises",
+        "Price must be identical on every unit"
+      ],
+      "tag": "monopoly",
+      "type": "analysis",
+      "objective": "MON.6",
+      "difficulty": "hard",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_welfare",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_welfare",
+      "commonError": "confuses_efficiency_with_distribution",
+      "feedback": "Perfect first-degree discrimination can eliminate output inefficiency while redistributing surplus toward the seller.",
+      "aHash": "ff94aa8694e12baa65eacdffdfba8c72eebbfdc9eddd52cea31164e22b49a4fd",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "hard",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-H-088",
+      "sourceId": 9700088,
+      "sourceHash": "80104728acb75bd86f1c4f15feed59f2cbe99fb11d012d37650e417faa0e51a9",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "hard",
+          "routeKey": "price_discrimination_welfare",
+          "sourceRecordOrder": 87,
+          "sourceId": 9700088,
+          "sourceHash": "80104728acb75bd86f1c4f15feed59f2cbe99fb11d012d37650e417faa0e51a9"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-089",
+      "q": "Which two conditions are especially important for sustaining price discrimination?",
+      "options": [
+        "Market power and the ability to segment buyers while limiting resale",
+        "Perfect competition and identical buyer demand",
+        "Zero marginal cost and free resale",
+        "A horizontal demand curve and free entry"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_conditions",
+      "secondarySkills": [],
+      "repairSkill": "price_discrimination_conditions",
+      "commonError": "forgets_conditions_for_discrimination",
+      "feedback": "The seller needs pricing power and enforceable segmentation.",
+      "aHash": "5b172dd097ded32584ae5b0982250b80a674ea87c63abd7b8a1e2a142542dae8",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-R-089",
+      "sourceId": 9700089,
+      "sourceHash": "290e91990647e871b07b3ca5514cf66717c404ea9f2640d451b397d77f168fbe",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "price_discrimination_conditions",
+          "sourceRecordOrder": 88,
+          "sourceId": 9700089,
+          "sourceHash": "290e91990647e871b07b3ca5514cf66717c404ea9f2640d451b397d77f168fbe"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-R-090",
+      "q": "Under third-degree price discrimination, which group normally pays the higher price when marginal cost is the same?",
+      "options": [
+        "The group with more elastic demand",
+        "The group with the easiest resale opportunity",
+        "The group with lower willingness to pay at every quantity",
+        "The group with less elastic demand"
+      ],
+      "tag": "monopoly",
+      "type": "repair",
+      "objective": "MON.6",
+      "difficulty": "repair",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "reverses_elasticity_price_rule",
+      "feedback": "Less elastic demand supports a larger optimal markup.",
+      "aHash": "ba066490b5181a2a49715d6fdb949362362ba7e60278c7f2e214fd3457e50d84",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "repair",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-R-090",
+      "sourceId": 9700090,
+      "sourceHash": "b03bad0da2334b1306bc93b5f7e356ce293e3595627aeaae4baf49ae5af33523",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 89,
+          "sourceId": 9700090,
+          "sourceHash": "b03bad0da2334b1306bc93b5f7e356ce293e3595627aeaae4baf49ae5af33523"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-091",
+      "q": "How does elasticity connect directly to third-degree discriminatory pricing?",
+      "options": [
+        "Elasticity determines fixed cost rather than price, while the other stated conditions remain unchanged",
+        "Elasticity matters only under perfect competition",
+        "Groups with less elastic demand can sustain larger markups over marginal cost",
+        "More elastic groups always pay more"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "third_degree_price_discrimination",
+      "secondarySkills": [
+        "price_elasticity_of_demand"
+      ],
+      "repairSkill": "third_degree_price_discrimination",
+      "commonError": "disconnects_elasticity_from_discrimination",
+      "feedback": "Different demand responsiveness is the economic reason separated groups can receive different optimal prices.",
+      "aHash": "f3b9921e7693d1d1e6ed6eb4aa710bfe871126010f8a8e399372d9dfe4994acb",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-BR-091",
+      "sourceId": 9700091,
+      "sourceHash": "f4a0521eedd74722050de5c37b2277779ee31b5c60ea2f9553cce64008b3330f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "third_degree_price_discrimination",
+          "sourceRecordOrder": 90,
+          "sourceId": 9700091,
+          "sourceHash": "f4a0521eedd74722050de5c37b2277779ee31b5c60ea2f9553cce64008b3330f"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-092",
+      "q": "How does resale connect segmented pricing back toward a single price?",
+      "options": [
+        "Resale guarantees first-degree discrimination",
+        "Arbitrage lets low-price buyers supply high-price buyers, eroding the price gap",
+        "Resale makes demand perfectly inelastic",
+        "Resale raises marginal cost only in the low-price market"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "resale_prevention",
+      "secondarySkills": [
+        "price_discrimination_conditions"
+      ],
+      "repairSkill": "resale_prevention",
+      "commonError": "disconnects_arbitrage_from_segmentation",
+      "feedback": "Preventing resale is what allows separated prices to persist.",
+      "aHash": "c66b23385f2983ce0334013435c361c862403fd3e25e76ccae0e210d20b6d2bb",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-BR-092",
+      "sourceId": 9700092,
+      "sourceHash": "ddd4a2ee7be3b4dd07e0fbefba8ae4b1fb7858071fae9d9b877492a5262dbfb0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "resale_prevention",
+          "sourceRecordOrder": 91,
+          "sourceId": 9700092,
+          "sourceHash": "ddd4a2ee7be3b4dd07e0fbefba8ae4b1fb7858071fae9d9b877492a5262dbfb0"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-093",
+      "q": "How should welfare analysis of price discrimination differ from simply asking whether some buyers pay more?",
+      "options": [
+        "Track how total output and total surplus change as well as how surplus is redistributed among buyers and the seller",
+        "Any price difference is automatically deadweight loss",
+        "Only monopoly profit matters for welfare",
+        "Consumer surplus alone always equals total surplus"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "price_discrimination_welfare",
+      "secondarySkills": [
+        "monopoly_deadweight_loss"
+      ],
+      "repairSkill": "price_discrimination_welfare",
+      "commonError": "confuses_distribution_with_total_surplus",
+      "feedback": "Distribution and efficiency are separate questions; output changes can alter total surplus.",
+      "aHash": "d931eaeab255df67f18fd53ec700fdb86378589403ce825270daa5f9156e22b3",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-BR-093",
+      "sourceId": 9700093,
+      "sourceHash": "2af1a79944addfd51f1e0cf9ee0f6743b5fddbb1f8881c53c13041f9b66afb91",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "price_discrimination_welfare",
+          "sourceRecordOrder": 92,
+          "sourceId": 9700093,
+          "sourceHash": "2af1a79944addfd51f1e0cf9ee0f6743b5fddbb1f8881c53c13041f9b66afb91"
+        }
+      ]
+    },
+    {
+      "id": "PM6-MON-BR-094",
+      "q": "How does perfect first-degree discrimination connect willingness to pay to the efficient-output condition?",
+      "options": [
+        "The firm must stop where one common price equals MR, over the relevant range described in the scenario",
+        "The firm ignores willingness to pay and charges ATC",
+        "The firm produces only where demand is unit elastic",
+        "The firm can sell units until the next buyer’s willingness to pay falls below MC"
+      ],
+      "tag": "monopoly",
+      "type": "bridge",
+      "objective": "MON.6",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_monopoly",
+      "primarySkill": "first_degree_price_discrimination",
+      "secondarySkills": [
+        "allocative_inefficiency"
+      ],
+      "repairSkill": "first_degree_price_discrimination",
+      "commonError": "disconnects_wtp_from_first_degree_efficiency",
+      "feedback": "Charging each unit up to willingness to pay can make serving all units with value at least MC profitable.",
+      "aHash": "f7bbbf6bb40b028da8664d19a4f92d4a666d58b1d9cc38cb5d041cb673e6e413",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "monopoly"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "monopoly",
+      "secondaryConceptIds": [],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "monopoly",
+      "subtopicIds": [
+        "monopoly-price-discrimination"
+      ],
+      "canonicalId": "PM6-MON-BR-094",
+      "sourceId": 9700094,
+      "sourceHash": "8b3d44a3f2b39faa53f20b171a40d02732fd72919b07d748c79f0905d5b41880",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "first_degree_price_discrimination",
+          "sourceRecordOrder": 93,
+          "sourceId": 9700094,
+          "sourceHash": "8b3d44a3f2b39faa53f20b171a40d02732fd72919b07d748c79f0905d5b41880"
+        }
+      ]
+    }
+  ]
+}

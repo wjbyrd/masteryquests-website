@@ -1,7 +1,7 @@
 {
   "phase": "6.2g-MONOPOLY-GRAPH-V2",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2",
-  "librarySha256": "74bf1ea438770ba5b1d6fc4bc9f2dc75860aa264b0564cdd270ecfca7db70134",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
+  "librarySha256": "998cb07b7b4194e26651b7bdb0759f7284a609c372a1ca2df7db5572dcc50c61",
   "newQuestionCount": 60,
   "graphCounts": {
     "01": 16,
@@ -36,6 +36,11 @@
         "bridge": 20,
         "calculation": 30,
         "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
         "graph": 72,
         "assets": 98,
         "totalCanonical": 430
@@ -132,23 +137,28 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 201,
-        "medium": 207,
-        "hard": 357,
+        "easy": 273,
+        "medium": 278,
+        "hard": 383,
         "elite": 193,
         "legendary": 479,
         "easyBoss": 96,
         "mediumBoss": 96,
         "finalBoss": 99,
         "legendaryBoss": 180,
-        "repair": 100,
+        "repair": 153,
         "repairSeed": 0,
-        "bridge": 100,
+        "bridge": 155,
         "calculation": 150,
         "integration": 0,
-        "graph": 470,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 465,
         "assets": 284,
-        "totalCanonical": 2108
+        "totalCanonical": 2385
       },
       "countIssues": [],
       "modes": [
@@ -180,7 +190,7 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 2108,
+        "questionCount": 2385,
         "issues": []
       },
       "assetAudit": {
@@ -274,23 +284,28 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 338,
-        "medium": 352,
-        "hard": 594,
+        "easy": 467,
+        "medium": 475,
+        "hard": 641,
         "elite": 315,
         "legendary": 799,
         "easyBoss": 166,
         "mediumBoss": 171,
         "finalBoss": 168,
         "legendaryBoss": 297,
-        "repair": 175,
+        "repair": 262,
         "repairSeed": 2,
-        "bridge": 176,
+        "bridge": 277,
         "calculation": 244,
         "integration": 0,
-        "graph": 705,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 692,
         "assets": 357,
-        "totalCanonical": 3553
+        "totalCanonical": 4040
       },
       "countIssues": [],
       "modes": [
@@ -322,7 +337,7 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 3553,
+        "questionCount": 4040,
         "issues": []
       },
       "assetAudit": {

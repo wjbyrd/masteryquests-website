@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-11T01:50:00.000Z",
+  "generatedAt": "2026-08-11T02:35:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -7188,32 +7188,32 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 130,
+        "main": 186,
         "elite": 40,
         "legendary": 96,
         "calculation": 30,
         "boss": 58,
         "legendaryBoss": 36,
-        "repair": 20,
-        "bridge": 20,
+        "repair": 39,
+        "bridge": 39,
         "integration": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 61,
+        "easy": 106,
         "elite": 40,
-        "hard": 94,
+        "hard": 101,
         "legendary": 132,
-        "medium": 63,
+        "medium": 105,
         "unknown": 40
       },
       "repairCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 390
+        "directSkillMatches": 39,
+        "mainWithUsableSkill": 446
       },
       "bridgeCoverage": {
-        "directSkillMatches": 20,
-        "mainWithUsableSkill": 390
+        "directSkillMatches": 39,
+        "mainWithUsableSkill": 446
       },
       "calculationCoverage": 30,
       "graphCoverage": 72,
@@ -7222,8 +7222,695 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank with a 60-question graph expansion across monopoly profit, monopoly loss, welfare/efficient-output comparisons, and natural-monopoly regulation.",
-      "coverageFloorVersion": "phase6.2g-rich-v1-monopoly-graph-v2"
+      "coverageStatusNote": "Publisher-scale standalone bank with a 60-question graph expansion across monopoly profit, monopoly loss, welfare/efficient-output comparisons, and natural-monopoly regulation. Monopoly now exposes seven granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill required for healthy adaptive use.",
+      "coverageFloorVersion": "phase6.2g-rich-v1-monopoly-graph-v2",
+      "childConceptIds": [
+        "monopoly-power-barriers",
+        "monopoly-demand-revenue",
+        "monopoly-output-price",
+        "monopoly-profit-loss-shutdown",
+        "monopoly-welfare-efficiency",
+        "natural-monopoly-regulation",
+        "monopoly-price-discrimination"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "monopoly-power-barriers",
+      "title": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "description": "Identify durable monopoly power and distinguish legal barriers, resource control, network effects, and natural-monopoly cost conditions.",
+      "includedSkills": [
+        "barriers_to_entry",
+        "legal_barrier",
+        "market_power",
+        "monopoly_definition",
+        "natural_monopoly",
+        "natural_monopoly_cost",
+        "network_effects",
+        "resource_control"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "monopoly-demand-revenue",
+        "natural-monopoly-regulation"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.1"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 16,
+        "elite": 0,
+        "legendary": 0,
+        "calculation": 0,
+        "boss": 0,
+        "legendaryBoss": 0,
+        "repair": 3,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "medium": 8,
+        "hard": 5,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 2
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 16
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 16
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 1,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Monopoly topic",
+      "coverageStatusNote": "Runtime adaptive depth: 6 Easy / 5 Medium / 5 Hard; floor 5/5/5. Adaptive support: 3 Repair / 3 Bridge; floor 3/3. Quiz-eligible ordinary/non-Legendary pool: 16.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "supporting-subtopic",
+      "adaptiveDepthFloor": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 6,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportCounts": {
+        "repair": 3,
+        "bridge": 3
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 16,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "monopoly-demand-revenue",
+      "title": "Monopoly Demand, Revenue & Marginal Revenue",
+      "description": "Interpret the monopolist’s downward-sloping demand, average revenue, marginal revenue, price effect, output effect, and elasticity-MR relationship.",
+      "includedSkills": [
+        "average_revenue_monopoly",
+        "competitive_monopoly_comparison",
+        "elasticity_and_mr",
+        "marginal_revenue_monopoly",
+        "monopoly_demand",
+        "price_effect_output_effect",
+        "total_revenue_monopoly"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "monopoly-output-price"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.2"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 22,
+        "elite": 0,
+        "legendary": 18,
+        "calculation": 10,
+        "boss": 6,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 18,
+        "medium": 13,
+        "hard": 12,
+        "elite": 0,
+        "legendary": 18,
+        "unknown": 7
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 56
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 56
+      },
+      "calculationCoverage": 10,
+      "graphCoverage": 4,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 12 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 32.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 12
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 32,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "monopoly-output-price",
+      "title": "Profit-Maximizing Output & Monopoly Price",
+      "description": "Apply MR = MC with the rising-MC condition to choose monopoly output, then use demand to determine the corresponding price.",
+      "includedSkills": [
+        "continuous_monopoly_choice",
+        "discrete_monopoly_choice",
+        "integrated_monopoly_analysis",
+        "monopoly_price",
+        "profit_maximizing_output"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "marginal-analysis",
+        "monopoly-demand-revenue",
+        "monopoly-profit-loss-shutdown"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.3"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 30,
+        "elite": 8,
+        "legendary": 16,
+        "calculation": 5,
+        "boss": 12,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 28,
+        "medium": 12,
+        "hard": 13,
+        "elite": 8,
+        "legendary": 28,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 83
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 83
+      },
+      "calculationCoverage": 5,
+      "graphCoverage": 12,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 12 Easy / 10 Medium / 13 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 43.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 12,
+        "medium": 10,
+        "hard": 13
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 43,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "monopoly-profit-loss-shutdown",
+      "title": "Monopoly Profit, Loss & Shutdown",
+      "description": "Calculate monopoly profit or loss, interpret break-even, and distinguish producing at a loss from short-run shutdown.",
+      "includedSkills": [
+        "monopoly_loss",
+        "monopoly_profit",
+        "monopoly_shutdown",
+        "persistent_economic_profit"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "profit-concepts",
+        "sunk-avoidable-costs",
+        "monopoly-output-price"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.4"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 30,
+        "elite": 10,
+        "legendary": 9,
+        "calculation": 5,
+        "boss": 20,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 13,
+        "medium": 32,
+        "hard": 13,
+        "elite": 10,
+        "legendary": 21,
+        "unknown": 9
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 86
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 86
+      },
+      "calculationCoverage": 5,
+      "graphCoverage": 21,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 12 Medium / 13 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 45.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 13
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 45,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "monopoly-welfare-efficiency",
+      "title": "Monopoly Welfare, Efficiency & Competitive Comparison",
+      "description": "Compare monopoly with competition using output, price, consumer surplus, deadweight loss, allocative inefficiency, and rent seeking.",
+      "includedSkills": [
+        "allocative_inefficiency",
+        "competitive_monopoly_comparison",
+        "consumer_surplus_monopoly",
+        "integrated_monopoly_analysis",
+        "monopoly_deadweight_loss",
+        "monopoly_policy_evaluation",
+        "rent_seeking"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "consumer-and-producer-surplus",
+        "perfect-competition",
+        "monopoly-output-price"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 32,
+        "elite": 9,
+        "legendary": 20,
+        "calculation": 5,
+        "boss": 7,
+        "legendaryBoss": 12,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 14,
+        "medium": 11,
+        "hard": 24,
+        "elite": 9,
+        "legendary": 32,
+        "unknown": 7
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 85
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 85
+      },
+      "calculationCoverage": 5,
+      "graphCoverage": 19,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 17 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 46.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 17
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 46,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "natural-monopoly-regulation",
+      "title": "Natural Monopoly & Regulation",
+      "description": "Analyze natural-monopoly cost structure and evaluate marginal-cost pricing, average-cost pricing, price caps, subsidies, and regulatory tradeoffs.",
+      "includedSkills": [
+        "average_cost_regulation",
+        "marginal_cost_regulation",
+        "monopoly_policy_evaluation",
+        "natural_monopoly_cost",
+        "price_cap_regulation",
+        "regulatory_tradeoff"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "long-run-average-cost-scale",
+        "monopoly-welfare-efficiency",
+        "monopoly-power-barriers"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 28,
+        "elite": 9,
+        "legendary": 18,
+        "calculation": 3,
+        "boss": 7,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 14,
+        "medium": 15,
+        "hard": 18,
+        "elite": 9,
+        "legendary": 18,
+        "unknown": 3
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 65
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 65
+      },
+      "calculationCoverage": 3,
+      "graphCoverage": 15,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 11 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 40.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 40,
+      "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "monopoly-price-discrimination",
+      "title": "Price Discrimination",
+      "description": "Analyze the conditions for discrimination, resale prevention, third-degree pricing, first-degree discrimination, elasticity, and welfare effects.",
+      "includedSkills": [
+        "first_degree_price_discrimination",
+        "price_discrimination_conditions",
+        "price_discrimination_welfare",
+        "resale_prevention",
+        "third_degree_price_discrimination"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Monopoly material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "costs-of-production",
+        "price-elasticity-of-demand",
+        "marginal-analysis"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "monopoly-demand-revenue",
+        "monopoly-welfare-efficiency"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "MON.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library",
+        "monopoly"
+      ],
+      "questionCountByRole": {
+        "main": 28,
+        "elite": 4,
+        "legendary": 15,
+        "calculation": 2,
+        "boss": 6,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 6,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 12,
+        "medium": 14,
+        "hard": 16,
+        "elite": 4,
+        "legendary": 15,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 55
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 55
+      },
+      "calculationCoverage": 2,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
+      "instructionalClassification": "Monopoly subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Runtime adaptive depth: 10 Easy / 10 Medium / 10 Hard; floor 10/10/10. Adaptive support: 6 Repair / 6 Bridge; floor 6/6. Quiz-eligible ordinary/non-Legendary pool: 34.",
+      "coverageFloorVersion": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+      "parentConceptId": "monopoly",
+      "selectionRole": "family-child",
+      "familyTitle": "Monopoly",
+      "standaloneRecommendation": "standalone-ready",
+      "adaptiveDepthFloor": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "runtimeAdaptiveCounts": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthStatus": "ready",
+      "adaptiveSupportFloor": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportCounts": {
+        "repair": 6,
+        "bridge": 6
+      },
+      "adaptiveSupportStatus": "ready",
+      "quizEligibleNonLegendary": 34,
+      "quiz15Status": "ready"
     },
     {
       "canonicalConceptId": "natural-rate-of-unemployment",
@@ -10003,10 +10690,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
-  "curationSummary": "Perfect Competition granularity and adaptive maturation: expose eight child selectors and add exactly 111 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1",
-  "canonicalQuestionCount": 7761,
-  "librarySha256": "998cb07b7b4194e26651b7bdb0759f7284a609c372a1ca2df7db5572dcc50c61",
-  "composerVersion": "4.5l.0"
+  "curationPhase": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+  "curationSummary": "Monopoly granularity and adaptive maturation: expose seven child selectors and add exactly 94 measured Easy/Medium/Hard, Repair, and Bridge questions. No Legendary, checkpoint, calculation, graph, or protected-question rewriting.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+  "canonicalQuestionCount": 7855,
+  "librarySha256": "c116e9bfc9e6464255c4dde37bbb2fd9241a257707b7956dbc64f335bf228ed7",
+  "composerVersion": "4.5m.0"
 }

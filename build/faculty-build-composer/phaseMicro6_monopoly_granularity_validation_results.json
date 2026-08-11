@@ -1,0 +1,145 @@
+{
+  "phase": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+  "ok": true,
+  "composerVersion": "4.5m.0",
+  "canonicalQuestionCount": 7855,
+  "conceptCount": 115,
+  "monopolyParentCanonical": 524,
+  "monopolyChildrenUnion": 524,
+  "newAdaptiveSupportRouted": "38/38",
+  "qualityAuditOk": true,
+  "graphExpansion": {
+    "sourceQuestions": 60,
+    "graphCounts": {
+      "01": 16,
+      "02": 16,
+      "03": 14,
+      "04": 14
+    },
+    "totalGraphCoverage": 72,
+    "assets": 98
+  },
+  "children": {
+    "monopoly-power-barriers": {
+      "canonical": 22,
+      "runtimeAdaptive": {
+        "easy": 6,
+        "medium": 5,
+        "hard": 5
+      },
+      "repair": 3,
+      "bridge": 3,
+      "quizEligible": 16,
+      "supporting": true
+    },
+    "monopoly-demand-revenue": {
+      "canonical": 68,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 12
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 32,
+      "supporting": false
+    },
+    "monopoly-output-price": {
+      "canonical": 95,
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 10,
+        "hard": 13
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 43,
+      "supporting": false
+    },
+    "monopoly-profit-loss-shutdown": {
+      "canonical": 98,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 13
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 45,
+      "supporting": false
+    },
+    "monopoly-welfare-efficiency": {
+      "canonical": 97,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 17
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 46,
+      "supporting": false
+    },
+    "natural-monopoly-regulation": {
+      "canonical": 77,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 40,
+      "supporting": false
+    },
+    "monopoly-price-discrimination": {
+      "canonical": 67,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "repair": 6,
+      "bridge": 6,
+      "quizEligible": 34,
+      "supporting": false
+    }
+  },
+  "regression": {
+    "elasticity": {
+      "parent": 495,
+      "children": 495,
+      "ok": true
+    },
+    "consumer-and-producer-surplus": {
+      "parent": 442,
+      "children": 442,
+      "ok": true
+    },
+    "international-trade-and-trade-policy": {
+      "parent": 487,
+      "children": 487,
+      "ok": true
+    },
+    "costs-of-production": {
+      "parent": 608,
+      "children": 608,
+      "ok": true
+    },
+    "perfect-competition": {
+      "parent": 565,
+      "children": 565,
+      "ok": true
+    },
+    "monopoly": {
+      "parent": 524,
+      "children": 524,
+      "ok": true
+    }
+  },
+  "legacyRecipes": {
+    "passed": 8,
+    "total": 8
+  },
+  "issues": []
+}

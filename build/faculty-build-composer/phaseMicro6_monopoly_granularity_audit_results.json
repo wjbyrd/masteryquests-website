@@ -1,0 +1,372 @@
+{
+  "phase": "monopoly-granularity-adaptive-audit-v1",
+  "parentConceptId": "monopoly",
+  "composerVersion": "4.5l.0",
+  "globalCanonicalQuestions": 7761,
+  "parentCanonicalRecords": 430,
+  "parentGraphQuestions": 72,
+  "proposedSubtopicCount": 7,
+  "subtopics": {
+    "monopoly-power-barriers": {
+      "title": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "role": "supporting",
+      "pair": "monopoly-demand-revenue",
+      "canonicalRecords": 9,
+      "poolCounts": {
+        "easy": 6,
+        "hard": 1,
+        "repair": 2
+      },
+      "runtimeAdaptive": {
+        "easy": 6,
+        "medium": 0,
+        "hard": 1
+      },
+      "adaptiveDepthFloor": 5,
+      "adaptiveDepthDeficit": {
+        "easy": 0,
+        "medium": 5,
+        "hard": 4
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 0
+      },
+      "adaptiveSupportFloor": 3,
+      "adaptiveSupportDeficit": {
+        "repair": 1,
+        "bridge": 3
+      },
+      "quizEligibleNonLegendary": 7,
+      "quiz15ReadyNow": false,
+      "projectedQuizEligibleAfterFill": 16,
+      "graphQuestions": 1,
+      "skills": {
+        "monopoly_definition": 2,
+        "market_power": 1,
+        "legal_barrier": 1,
+        "resource_control": 1,
+        "network_effects": 1,
+        "natural_monopoly": 1,
+        "natural_monopoly_cost": 1,
+        "barriers_to_entry": 1
+      },
+      "objectives": [
+        "MON.1"
+      ]
+    },
+    "monopoly-demand-revenue": {
+      "title": "Monopoly Demand, Revenue & Marginal Revenue",
+      "role": "standalone/focused",
+      "canonicalRecords": 61,
+      "poolCounts": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 2,
+        "legendary": 18,
+        "calculation": 10,
+        "boss": 6,
+        "repair": 4,
+        "bridge": 3
+      },
+      "runtimeAdaptive": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 12
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 1,
+        "medium": 1,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 4,
+        "bridge": 3
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 2,
+        "bridge": 3
+      },
+      "quizEligibleNonLegendary": 30,
+      "quiz15ReadyNow": true,
+      "projectedQuizEligibleAfterFill": 32,
+      "graphQuestions": 4,
+      "skills": {
+        "monopoly_demand": 1,
+        "average_revenue_monopoly": 2,
+        "marginal_revenue_monopoly": 36,
+        "price_effect_output_effect": 9,
+        "total_revenue_monopoly": 1,
+        "elasticity_and_mr": 11,
+        "competitive_monopoly_comparison": 1
+      },
+      "objectives": [
+        "MON.2"
+      ]
+    },
+    "monopoly-output-price": {
+      "title": "Profit-Maximizing Output & Monopoly Price",
+      "role": "standalone/focused",
+      "canonicalRecords": 87,
+      "poolCounts": {
+        "easy": 12,
+        "medium": 8,
+        "hard": 8,
+        "elite": 8,
+        "legendary": 16,
+        "calculation": 5,
+        "boss": 12,
+        "legendaryBoss": 12,
+        "repair": 2,
+        "bridge": 4
+      },
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 8,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 0,
+        "medium": 2,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 4
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 4,
+        "bridge": 2
+      },
+      "quizEligibleNonLegendary": 41,
+      "quiz15ReadyNow": true,
+      "projectedQuizEligibleAfterFill": 43,
+      "graphQuestions": 12,
+      "skills": {
+        "profit_maximizing_output": 18,
+        "monopoly_price": 17,
+        "continuous_monopoly_choice": 18,
+        "integrated_monopoly_analysis": 33,
+        "discrete_monopoly_choice": 1
+      },
+      "objectives": [
+        "MON.3"
+      ]
+    },
+    "monopoly-profit-loss-shutdown": {
+      "title": "Monopoly Profit, Loss & Shutdown",
+      "role": "standalone/focused",
+      "canonicalRecords": 91,
+      "poolCounts": {
+        "easy": 6,
+        "medium": 12,
+        "hard": 8,
+        "elite": 10,
+        "legendary": 9,
+        "calculation": 5,
+        "boss": 20,
+        "legendaryBoss": 12,
+        "repair": 4,
+        "bridge": 5
+      },
+      "runtimeAdaptive": {
+        "easy": 6,
+        "medium": 12,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 4,
+        "medium": 0,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 4,
+        "bridge": 5
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 2,
+        "bridge": 1
+      },
+      "quizEligibleNonLegendary": 41,
+      "quiz15ReadyNow": true,
+      "projectedQuizEligibleAfterFill": 45,
+      "graphQuestions": 21,
+      "skills": {
+        "monopoly_profit": 51,
+        "monopoly_loss": 26,
+        "monopoly_shutdown": 12,
+        "persistent_economic_profit": 2
+      },
+      "objectives": [
+        "MON.4"
+      ]
+    },
+    "monopoly-welfare-efficiency": {
+      "title": "Monopoly Welfare, Efficiency & Competitive Comparison",
+      "role": "standalone/focused",
+      "canonicalRecords": 85,
+      "poolCounts": {
+        "easy": 5,
+        "medium": 8,
+        "hard": 12,
+        "elite": 9,
+        "legendary": 20,
+        "calculation": 5,
+        "boss": 7,
+        "legendaryBoss": 12,
+        "repair": 2,
+        "bridge": 5
+      },
+      "runtimeAdaptive": {
+        "easy": 5,
+        "medium": 8,
+        "hard": 17
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 5,
+        "medium": 2,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 5
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 4,
+        "bridge": 1
+      },
+      "quizEligibleNonLegendary": 39,
+      "quiz15ReadyNow": true,
+      "projectedQuizEligibleAfterFill": 46,
+      "graphQuestions": 19,
+      "skills": {
+        "competitive_monopoly_comparison": 19,
+        "monopoly_deadweight_loss": 43,
+        "allocative_inefficiency": 7,
+        "rent_seeking": 9,
+        "monopoly_policy_evaluation": 2,
+        "integrated_monopoly_analysis": 3,
+        "consumer_surplus_monopoly": 2
+      },
+      "objectives": [
+        "MON.5"
+      ]
+    },
+    "natural-monopoly-regulation": {
+      "title": "Natural Monopoly & Regulation",
+      "role": "standalone/focused",
+      "canonicalRecords": 55,
+      "poolCounts": {
+        "easy": 2,
+        "medium": 5,
+        "hard": 8,
+        "elite": 9,
+        "legendary": 18,
+        "calculation": 3,
+        "boss": 7,
+        "repair": 2,
+        "bridge": 1
+      },
+      "runtimeAdaptive": {
+        "easy": 2,
+        "medium": 5,
+        "hard": 11
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 8,
+        "medium": 5,
+        "hard": 0
+      },
+      "adaptiveSupport": {
+        "repair": 2,
+        "bridge": 1
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 4,
+        "bridge": 5
+      },
+      "quizEligibleNonLegendary": 27,
+      "quiz15ReadyNow": true,
+      "projectedQuizEligibleAfterFill": 40,
+      "graphQuestions": 15,
+      "skills": {
+        "marginal_cost_regulation": 30,
+        "average_cost_regulation": 11,
+        "price_cap_regulation": 1,
+        "regulatory_tradeoff": 11,
+        "natural_monopoly_cost": 1,
+        "monopoly_policy_evaluation": 1
+      },
+      "objectives": [
+        "MON.6"
+      ]
+    },
+    "monopoly-price-discrimination": {
+      "title": "Price Discrimination",
+      "role": "standalone/focused",
+      "canonicalRecords": 42,
+      "poolCounts": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 5,
+        "elite": 4,
+        "legendary": 15,
+        "calculation": 2,
+        "boss": 6,
+        "repair": 4,
+        "bridge": 2
+      },
+      "runtimeAdaptive": {
+        "easy": 2,
+        "medium": 2,
+        "hard": 7
+      },
+      "adaptiveDepthFloor": 10,
+      "adaptiveDepthDeficit": {
+        "easy": 8,
+        "medium": 8,
+        "hard": 3
+      },
+      "adaptiveSupport": {
+        "repair": 4,
+        "bridge": 2
+      },
+      "adaptiveSupportFloor": 6,
+      "adaptiveSupportDeficit": {
+        "repair": 2,
+        "bridge": 4
+      },
+      "quizEligibleNonLegendary": 15,
+      "quiz15ReadyNow": true,
+      "projectedQuizEligibleAfterFill": 34,
+      "graphQuestions": 0,
+      "skills": {
+        "price_discrimination_conditions": 1,
+        "third_degree_price_discrimination": 25,
+        "resale_prevention": 10,
+        "first_degree_price_discrimination": 4,
+        "price_discrimination_welfare": 2
+      },
+      "objectives": [
+        "MON.6"
+      ]
+    }
+  },
+  "estimatedBackfill": {
+    "ordinaryAdaptiveDepth": 56,
+    "adaptiveSupport": 38,
+    "total": 94
+  },
+  "projectedParentRecordsAfterFill": 524,
+  "projectedGlobalCanonicalQuestionsAfterFill": 7855
+}

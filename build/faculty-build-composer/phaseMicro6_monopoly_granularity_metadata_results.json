@@ -1,0 +1,124 @@
+{
+  "phase": "phaseMicro6-monopoly-granularity-adaptive-backfill-v1",
+  "composerVersion": "4.5m.0",
+  "beforeCanonicalQuestionCount": 7761,
+  "afterCanonicalQuestionCount": 7855,
+  "addedQuestions": 94,
+  "parentRecords": 524,
+  "conceptCount": 115,
+  "librarySha256": "c116e9bfc9e6464255c4dde37bbb2fd9241a257707b7956dbc64f335bf228ed7",
+  "subtopics": {
+    "monopoly-power-barriers": {
+      "title": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "role": "supporting-subtopic",
+      "canonicalRecords": 22,
+      "runtimeAdaptive": {
+        "easy": 6,
+        "medium": 5,
+        "hard": 5
+      },
+      "adaptiveDepthFloor": 5,
+      "repair": 3,
+      "bridge": 3,
+      "adaptiveSupportFloor": 3,
+      "quizEligible": 16,
+      "pass": true
+    },
+    "monopoly-demand-revenue": {
+      "title": "Monopoly Demand, Revenue & Marginal Revenue",
+      "role": "standalone-ready",
+      "canonicalRecords": 68,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 12
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 32,
+      "pass": true
+    },
+    "monopoly-output-price": {
+      "title": "Profit-Maximizing Output & Monopoly Price",
+      "role": "standalone-ready",
+      "canonicalRecords": 95,
+      "runtimeAdaptive": {
+        "easy": 12,
+        "medium": 10,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 43,
+      "pass": true
+    },
+    "monopoly-profit-loss-shutdown": {
+      "title": "Monopoly Profit, Loss & Shutdown",
+      "role": "standalone-ready",
+      "canonicalRecords": 98,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 12,
+        "hard": 13
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 45,
+      "pass": true
+    },
+    "monopoly-welfare-efficiency": {
+      "title": "Monopoly Welfare, Efficiency & Competitive Comparison",
+      "role": "standalone-ready",
+      "canonicalRecords": 97,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 17
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 46,
+      "pass": true
+    },
+    "natural-monopoly-regulation": {
+      "title": "Natural Monopoly & Regulation",
+      "role": "standalone-ready",
+      "canonicalRecords": 77,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 40,
+      "pass": true
+    },
+    "monopoly-price-discrimination": {
+      "title": "Price Discrimination",
+      "role": "standalone-ready",
+      "canonicalRecords": 67,
+      "runtimeAdaptive": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "adaptiveDepthFloor": 10,
+      "repair": 6,
+      "bridge": 6,
+      "adaptiveSupportFloor": 6,
+      "quizEligible": 34,
+      "pass": true
+    }
+  }
+}
