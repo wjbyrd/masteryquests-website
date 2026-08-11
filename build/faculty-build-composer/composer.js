@@ -49,7 +49,14 @@ const MICRO_IDS = new Set([
   'market-equilibrium', 'price-signals', 'binding-price-ceilings',
   'binding-price-floors', 'tax-wedges-and-revenue',
   'statutory-versus-economic-tax-incidence', 'tax-incidence',
-  'integrated-economic-analysis', 'elasticity', 'consumer-and-producer-surplus',
+  'integrated-economic-analysis', 'elasticity',
+  'price-elasticity-of-demand', 'price-elasticity-of-supply',
+  'income-elasticity-of-demand', 'cross-price-elasticity-of-demand',
+  'elasticity-and-total-revenue', 'applications-of-elasticity',
+  'consumer-and-producer-surplus',
+  'consumer-surplus', 'producer-surplus', 'total-surplus-gains-from-exchange',
+  'efficient-quantity-allocation', 'surplus-changes-policy-effects',
+  'efficiency-equity-surplus-limits',
   'international-trade-and-trade-policy', 'costs-of-production',
   'perfect-competition', 'monopoly', 'monopolistic-competition', 'oligopoly'
 ]);
@@ -199,6 +206,8 @@ function conceptAreas(id){
 }
 
 function primaryAreaLabel(id){
+  const meta = metaById.get(id);
+  if(meta?.parentConceptId) return `${AREA_LABELS.micro} · ${meta.familyTitle || 'Family'} subtopic`;
   if(GENERAL_IDS.has(id)) return 'Shared economic foundation';
   if(MICRO_IDS.has(id)) return AREA_LABELS.micro;
   return AREA_LABELS.macro;
@@ -279,7 +288,24 @@ function selectedMacroInstructionIds(){
 }
 function bossCountForConcept(id, checkpointKey){
   if(isCheckpointSupplement(id)) return 0;
-  return Core.bossQuestionsForCheckpoint(Library.concepts[id], checkpointKey).length;
+  return Core.bossQuestionsForCheckpoint(Core.resolveConceptModule(Library, id), checkpointKey).length;
+}
+
+function removeSelectedConcept(id){
+  state.selectedConceptIds = state.selectedConceptIds.filter(value => value !== id);
+  removeConceptFromFocus(id);
+}
+
+function enforceFamilySelectionExclusivity(id){
+  const meta = metaById.get(id);
+  const parentId = meta?.parentConceptId;
+  if(parentId){
+    if(state.selectedConceptIds.includes(parentId)) removeSelectedConcept(parentId);
+    return;
+  }
+  for(const childId of meta?.childConceptIds || []){
+    if(state.selectedConceptIds.includes(childId)) removeSelectedConcept(childId);
+  }
 }
 
 function selectedEligibleConceptIds(checkpointKey){
@@ -300,10 +326,12 @@ function setSelected(id, selected){
     renderConcepts();
     return;
   }
-  if(selected && !state.selectedConceptIds.includes(id)) state.selectedConceptIds.push(id);
+  if(selected && !state.selectedConceptIds.includes(id)){
+    enforceFamilySelectionExclusivity(id);
+    state.selectedConceptIds.push(id);
+  }
   if(!selected){
-    state.selectedConceptIds = state.selectedConceptIds.filter(value => value !== id);
-    removeConceptFromFocus(id);
+    removeSelectedConcept(id);
     if(!isCheckpointSupplement(id) && selectedMacroInstructionIds().length === 0){
       state.selectedConceptIds = state.selectedConceptIds.filter(value => !isCheckpointSupplement(value));
     }
@@ -520,7 +548,7 @@ function renderConcepts(){
     const coverageStatusLabel = concept.coverageStatusLabel || 'Insufficient depth — expansion underway';
 
     return `
-      <article class="concept-card ${selected ? 'selected' : ''} depth-${coverageStatus}">
+      <article class="concept-card ${selected ? 'selected' : ''} ${concept.parentConceptId ? 'family-child' : ''} depth-${coverageStatus}">
         <div class="concept-card-kickers">
           <div class="concept-area">${esc(primaryAreaLabel(id))}</div>
           <div class="coverage-status ${coverageStatus}">${esc(coverageStatusLabel)}</div>
@@ -533,6 +561,7 @@ function renderConcepts(){
           </div>
         </div>
         <p class="concept-description">${esc(concept.description)}</p>
+        ${concept.parentConceptId ? `<p class="concept-description"><strong>${esc(concept.familyTitle || 'Family')} subtopic.</strong> Selecting this removes the full ${esc(concept.familyTitle || 'parent')} family so only this slice (plus any sibling subtopics you select) enters the build.${concept.standaloneRecommendation === 'supporting-subtopic' ? ` Best used with related ${esc(concept.familyTitle || 'family')} topics rather than as a standalone assessment.` : ''}</p>` : ''}
         <div class="card-summary">
           <span><strong>${practiceTotal}</strong> practice</span>
           <span><strong>${checkpointTotal}</strong> checkpoint</span>

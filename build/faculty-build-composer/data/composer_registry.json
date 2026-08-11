@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-10T21:34:58.519Z",
+  "generatedAt": "2026-08-11T00:08:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -737,8 +737,452 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions.",
-      "coverageFloorVersion": "phase6.2c-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Consumer and Producer Surplus family.",
+      "coverageFloorVersion": "phase6.2c-rich-v1",
+      "childConceptIds": [
+        "consumer-surplus",
+        "producer-surplus",
+        "total-surplus-gains-from-exchange",
+        "efficient-quantity-allocation",
+        "surplus-changes-policy-effects",
+        "efficiency-equity-surplus-limits"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "consumer-surplus",
+      "title": "Consumer Surplus & Willingness to Pay",
+      "description": "Explain willingness to pay and consumer surplus, including discrete-buyer and graph-area calculations.",
+      "includedSkills": [
+        "consumer_surplus_definition",
+        "consumer_surplus_discrete",
+        "consumer_surplus_graph_area",
+        "willingness_to_pay"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Consumer and Producer Surplus material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "producer-surplus",
+        "total-surplus-gains-from-exchange",
+        "efficient-quantity-allocation"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CPS.1",
+        "CPS.2"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 20,
+        "elite": 2,
+        "legendary": 3,
+        "calculation": 10,
+        "boss": 10,
+        "legendaryBoss": 1,
+        "repair": 6,
+        "bridge": 2,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 17,
+        "medium": 11,
+        "hard": 12,
+        "elite": 2,
+        "legendary": 4,
+        "unknown": 8
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 46
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 46
+      },
+      "calculationCoverage": 7,
+      "graphCoverage": 14,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Consumer and Producer Surplus subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "parentConceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-child",
+      "familyTitle": "Consumer and Producer Surplus",
+      "standaloneRecommendation": "standalone-ready"
+    },
+    {
+      "canonicalConceptId": "producer-surplus",
+      "title": "Producer Surplus & Willingness to Accept",
+      "description": "Explain willingness to accept and producer surplus, including discrete-seller and graph-area calculations.",
+      "includedSkills": [
+        "producer_surplus_definition",
+        "producer_surplus_discrete",
+        "producer_surplus_graph_area",
+        "willingness_to_accept"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Consumer and Producer Surplus material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "consumer-surplus",
+        "total-surplus-gains-from-exchange",
+        "efficient-quantity-allocation"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CPS.1",
+        "CPS.2"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 21,
+        "elite": 3,
+        "legendary": 3,
+        "calculation": 10,
+        "boss": 10,
+        "legendaryBoss": 0,
+        "repair": 6,
+        "bridge": 3,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 17,
+        "medium": 11,
+        "hard": 13,
+        "elite": 3,
+        "legendary": 3,
+        "unknown": 9
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 47
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 47
+      },
+      "calculationCoverage": 7,
+      "graphCoverage": 13,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Consumer and Producer Surplus subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "parentConceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-child",
+      "familyTitle": "Consumer and Producer Surplus",
+      "standaloneRecommendation": "standalone-ready"
+    },
+    {
+      "canonicalConceptId": "total-surplus-gains-from-exchange",
+      "title": "Total Surplus & Gains from Exchange",
+      "description": "Calculate and interpret total surplus and mutually beneficial gains from exchange without invoking later international-trade machinery.",
+      "includedSkills": [
+        "gains_from_trade",
+        "total_surplus"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Consumer and Producer Surplus material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "consumer-surplus",
+        "producer-surplus",
+        "efficient-quantity-allocation",
+        "gains-from-trade"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CPS.2",
+        "CPS.3"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 16,
+        "elite": 7,
+        "legendary": 20,
+        "calculation": 3,
+        "boss": 10,
+        "legendaryBoss": 10,
+        "repair": 4,
+        "bridge": 2,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "medium": 9,
+        "hard": 16,
+        "elite": 7,
+        "legendary": 30,
+        "unknown": 6
+      },
+      "repairCoverage": {
+        "directSkillMatches": 4,
+        "mainWithUsableSkill": 66
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 66
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 21,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Consumer and Producer Surplus subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "parentConceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-child",
+      "familyTitle": "Consumer and Producer Surplus",
+      "standaloneRecommendation": "standalone-ready"
+    },
+    {
+      "canonicalConceptId": "efficient-quantity-allocation",
+      "title": "Efficient Quantity & Allocation",
+      "description": "Identify marginal buyers and sellers, efficient quantity, efficient allocation, and competitive-market efficiency.",
+      "includedSkills": [
+        "efficient_allocation",
+        "efficient_quantity",
+        "marginal_buyer_seller",
+        "market_efficiency"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Consumer and Producer Surplus material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "total-surplus-gains-from-exchange",
+        "consumer-surplus",
+        "producer-surplus",
+        "efficiency-equity-surplus-limits"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CPS.3",
+        "CPS.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 21,
+        "elite": 6,
+        "legendary": 38,
+        "calculation": 5,
+        "boss": 15,
+        "legendaryBoss": 13,
+        "repair": 0,
+        "bridge": 1,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "medium": 12,
+        "hard": 22,
+        "elite": 6,
+        "legendary": 51,
+        "unknown": 1
+      },
+      "repairCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 98
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 98
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 12,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Consumer and Producer Surplus subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "parentConceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-child",
+      "familyTitle": "Consumer and Producer Surplus",
+      "standaloneRecommendation": "standalone-ready"
+    },
+    {
+      "canonicalConceptId": "surplus-changes-policy-effects",
+      "title": "Changes in Surplus & Policy Effects",
+      "description": "Trace how price, quantity, and bounded policy changes redistribute or reduce consumer, producer, and total surplus.",
+      "includedSkills": [
+        "consumer_surplus_price_change",
+        "producer_surplus_price_change",
+        "surplus_policy_application"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Consumer and Producer Surplus material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "consumer-surplus",
+        "producer-surplus",
+        "total-surplus-gains-from-exchange",
+        "efficient-quantity-allocation"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CPS.4",
+        "CPS.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 6,
+        "elite": 9,
+        "legendary": 18,
+        "calculation": 2,
+        "boss": 5,
+        "legendaryBoss": 8,
+        "repair": 2,
+        "bridge": 11,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 0,
+        "medium": 3,
+        "hard": 10,
+        "elite": 9,
+        "legendary": 26,
+        "unknown": 13
+      },
+      "repairCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 48
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 11,
+        "mainWithUsableSkill": 48
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 4,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Consumer and Producer Surplus subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Surplus topic",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. Changes/policy effects and efficiency/equity/limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth.",
+      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "parentConceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-child",
+      "familyTitle": "Consumer and Producer Surplus",
+      "standaloneRecommendation": "supporting-subtopic"
+    },
+    {
+      "canonicalConceptId": "efficiency-equity-surplus-limits",
+      "title": "Efficiency, Equity & Limits of Surplus Analysis",
+      "description": "Distinguish efficiency from equity and evaluate limits of willingness-to-pay and surplus measures as welfare tools.",
+      "includedSkills": [
+        "efficiency_equity_distinction",
+        "surplus_allocation_limits"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Consumer and Producer Surplus material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "efficient-quantity-allocation",
+        "total-surplus-gains-from-exchange",
+        "surplus-changes-policy-effects"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CPS.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 6,
+        "elite": 3,
+        "legendary": 8,
+        "calculation": 0,
+        "boss": 4,
+        "legendaryBoss": 4,
+        "repair": 2,
+        "bridge": 1,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 5,
+        "elite": 3,
+        "legendary": 12,
+        "unknown": 3
+      },
+      "repairCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 25
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 25
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Consumer and Producer Surplus subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Surplus topic",
+      "coverageStatusNote": "This selector filters the existing Consumer and Producer Surplus family by published skill metadata. Changes/policy effects and efficiency/equity/limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth.",
+      "coverageFloorVersion": "phaseMicro2-surplus-granularity-v1",
+      "parentConceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-child",
+      "familyTitle": "Consumer and Producer Surplus",
+      "standaloneRecommendation": "supporting-subtopic"
     },
     {
       "canonicalConceptId": "costs-of-production",
@@ -1463,8 +1907,448 @@
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Publisher-scale standalone bank with balanced foundational through mastery coverage, dedicated calculations and remediation, plus 56 graph-dependent items using the approved ELAS-01, ELAS-02, ELAS-03, and ELAS-05 assets.",
-      "coverageFloorVersion": "phase6.2b-rich-v1"
+      "coverageStatusNote": "Publisher-scale standalone bank with balanced foundational through mastery coverage, dedicated calculations and remediation, plus 56 graph-dependent items using the approved ELAS-01, ELAS-02, ELAS-03, and ELAS-05 assets. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Elasticity family.",
+      "coverageFloorVersion": "phase6.2b-rich-v1",
+      "childConceptIds": [
+        "price-elasticity-of-demand",
+        "price-elasticity-of-supply",
+        "income-elasticity-of-demand",
+        "cross-price-elasticity-of-demand",
+        "elasticity-and-total-revenue",
+        "applications-of-elasticity"
+      ],
+      "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "price-elasticity-of-demand",
+      "title": "Price Elasticity of Demand",
+      "description": "Measure and interpret how quantity demanded responds to price changes, including determinants, midpoint calculations, classification, slope-versus-elasticity, and perfectly elastic or inelastic demand.",
+      "includedSkills": [
+        "arc_vs_base_percent",
+        "budget_share_determinant",
+        "demand_elasticity_determinants",
+        "elasticity_classification",
+        "elasticity_definition",
+        "elasticity_unit_free",
+        "linear_demand_elasticity",
+        "market_definition_determinant",
+        "midpoint_formula",
+        "necessity_luxury_determinant",
+        "ped_calculation",
+        "ped_interpretation",
+        "perfectly_elastic_inelastic",
+        "slope_vs_elasticity",
+        "substitutes_determinant",
+        "time_horizon_demand"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Elasticity material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-supply",
+        "elasticity-and-total-revenue",
+        "applications-of-elasticity"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ELAS.1",
+        "ELAS.2"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 60,
+        "elite": 15,
+        "legendary": 34,
+        "calculation": 10,
+        "boss": 21,
+        "legendaryBoss": 13,
+        "repair": 10,
+        "bridge": 8,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 34,
+        "medium": 20,
+        "hard": 37,
+        "elite": 15,
+        "legendary": 47,
+        "unknown": 18
+      },
+      "repairCoverage": {
+        "directSkillMatches": 10,
+        "mainWithUsableSkill": 153
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 8,
+        "mainWithUsableSkill": 153
+      },
+      "calculationCoverage": 51,
+      "graphCoverage": 27,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Elasticity subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "parentConceptId": "elasticity",
+      "selectionRole": "family-child",
+      "familyTitle": "Elasticity",
+      "standaloneRecommendation": "standalone-ready"
+    },
+    {
+      "canonicalConceptId": "price-elasticity-of-supply",
+      "title": "Price Elasticity of Supply",
+      "description": "Measure and interpret how quantity supplied responds to price changes, including time horizon, capacity, storage, determinants, and midpoint calculations.",
+      "includedSkills": [
+        "capacity_storage_supply",
+        "pes_calculation",
+        "pes_definition",
+        "pes_interpretation",
+        "supply_elasticity_determinants",
+        "time_horizon_supply"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Elasticity material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "applications-of-elasticity"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ELAS.4"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 17,
+        "elite": 3,
+        "legendary": 15,
+        "calculation": 5,
+        "boss": 6,
+        "legendaryBoss": 4,
+        "repair": 2,
+        "bridge": 2,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 8,
+        "medium": 7,
+        "hard": 13,
+        "elite": 3,
+        "legendary": 19,
+        "unknown": 4
+      },
+      "repairCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 50
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 50
+      },
+      "calculationCoverage": 15,
+      "graphCoverage": 10,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Elasticity subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused assessment",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "parentConceptId": "elasticity",
+      "selectionRole": "family-child",
+      "familyTitle": "Elasticity",
+      "standaloneRecommendation": "focused-assessment-ready"
+    },
+    {
+      "canonicalConceptId": "income-elasticity-of-demand",
+      "title": "Income Elasticity of Demand",
+      "description": "Calculate and interpret how demand responds to income changes, including normal, inferior, necessity, and luxury implications.",
+      "includedSkills": [
+        "income_elasticity_calculation",
+        "income_elasticity_interpretation"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Elasticity material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "cross-price-elasticity-of-demand",
+        "price-elasticity-of-demand"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ELAS.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 5,
+        "elite": 2,
+        "legendary": 8,
+        "calculation": 5,
+        "boss": 4,
+        "legendaryBoss": 2,
+        "repair": 1,
+        "bridge": 0,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "medium": 3,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 10,
+        "unknown": 1
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 26
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 26
+      },
+      "calculationCoverage": 7,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Elasticity subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Elasticity topic",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. Income and cross-price elasticity are intentionally treated as supporting subtopics rather than forced into artificial standalone depth.",
+      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "parentConceptId": "elasticity",
+      "selectionRole": "family-child",
+      "familyTitle": "Elasticity",
+      "standaloneRecommendation": "supporting-subtopic"
+    },
+    {
+      "canonicalConceptId": "cross-price-elasticity-of-demand",
+      "title": "Cross-Price Elasticity of Demand",
+      "description": "Calculate and interpret how demand for one good responds to a price change in another, including substitutes and complements.",
+      "includedSkills": [
+        "cross_price_elasticity_calculation",
+        "cross_price_elasticity_interpretation"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Elasticity material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "income-elasticity-of-demand",
+        "price-elasticity-of-demand"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ELAS.5"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 6,
+        "elite": 4,
+        "legendary": 10,
+        "calculation": 5,
+        "boss": 5,
+        "legendaryBoss": 2,
+        "repair": 1,
+        "bridge": 0,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 4,
+        "medium": 4,
+        "hard": 8,
+        "elite": 4,
+        "legendary": 12,
+        "unknown": 1
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 32
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 32
+      },
+      "calculationCoverage": 7,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Elasticity subtopic",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with another Elasticity topic",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. Income and cross-price elasticity are intentionally treated as supporting subtopics rather than forced into artificial standalone depth.",
+      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "parentConceptId": "elasticity",
+      "selectionRole": "family-child",
+      "familyTitle": "Elasticity",
+      "standaloneRecommendation": "supporting-subtopic"
+    },
+    {
+      "canonicalConceptId": "elasticity-and-total-revenue",
+      "title": "Elasticity and Total Revenue",
+      "description": "Connect demand elasticity to total revenue, unit elasticity, revenue maximization, and the marginal-revenue relationship.",
+      "includedSkills": [
+        "marginal_revenue_elasticity_link",
+        "revenue_maximization_unit_elastic",
+        "total_revenue_formula",
+        "total_revenue_test"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Elasticity material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "applications-of-elasticity"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ELAS.3"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 16,
+        "elite": 8,
+        "legendary": 8,
+        "calculation": 5,
+        "boss": 11,
+        "legendaryBoss": 2,
+        "repair": 3,
+        "bridge": 0,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 7,
+        "medium": 15,
+        "hard": 10,
+        "elite": 8,
+        "legendary": 10,
+        "unknown": 3
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 50
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 50
+      },
+      "calculationCoverage": 9,
+      "graphCoverage": 11,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Elasticity subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused assessment",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "parentConceptId": "elasticity",
+      "selectionRole": "family-child",
+      "familyTitle": "Elasticity",
+      "standaloneRecommendation": "focused-assessment-ready"
+    },
+    {
+      "canonicalConceptId": "applications-of-elasticity",
+      "title": "Applications of Elasticity",
+      "description": "Apply elasticity to tax incidence, deadweight-loss sensitivity, business pricing, policy, trade, and factor-market decisions.",
+      "includedSkills": [
+        "elasticity_business_pricing",
+        "elasticity_deadweight_loss",
+        "elasticity_factor_market_application",
+        "elasticity_policy_application",
+        "elasticity_trade_application",
+        "tax_incidence_elasticity"
+      ],
+      "excludedNeighboringSkills": [
+        "Other Elasticity material remains in the parent family or sibling subtopics."
+      ],
+      "prerequisiteConceptIds": [
+        "elasticity"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "price-elasticity-of-supply",
+        "elasticity-and-total-revenue",
+        "tax-incidence",
+        "international-trade-and-trade-policy"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "ELAS.6"
+      ],
+      "sourceGames": [
+        "micro-concept-library"
+      ],
+      "questionCountByRole": {
+        "main": 13,
+        "elite": 6,
+        "legendary": 22,
+        "calculation": 0,
+        "boss": 13,
+        "legendaryBoss": 13,
+        "repair": 3,
+        "bridge": 10,
+        "integration": 0,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 2,
+        "medium": 10,
+        "hard": 14,
+        "elite": 6,
+        "legendary": 35,
+        "unknown": 13
+      },
+      "repairCoverage": {
+        "directSkillMatches": 3,
+        "mainWithUsableSkill": 67
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 10,
+        "mainWithUsableSkill": 67
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
+      "instructionalClassification": "Elasticity subtopic",
+      "coverageStatus": "ready-focused-subtopic",
+      "coverageStatusLabel": "Ready for focused assessment",
+      "coverageStatusNote": "This selector filters the existing Elasticity family by published skill metadata. It is intended for focused faculty composition without duplicating or rewriting questions.",
+      "coverageFloorVersion": "phaseMicro1-elasticity-granularity-pilot-v1",
+      "parentConceptId": "elasticity",
+      "selectionRole": "family-child",
+      "familyTitle": "Elasticity",
+      "standaloneRecommendation": "focused-assessment-ready"
     },
     {
       "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
@@ -6545,9 +7429,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseM2e-advanced-macro-checkpoint-supplement-v1",
-  "curationSummary": "International Trade graph expansion v2: four approved graph assets and 56 new graph-dependent questions covering imports, exports, tariffs, quotas, welfare, revenue, rents, and deadweight loss.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1",
+  "curationPhase": "phaseMicro2-surplus-granularity-v1",
+  "curationSummary": "Surplus granularity: preserve the 370-record Consumer and Producer Surplus parent family and expose six Micro subtopic selectors through derived filtering; no question additions, deletions, or rewrites.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1",
   "canonicalQuestionCount": 7274,
-  "librarySha256": "572d796e5821b0ba9e80c9e80aad44cdc73fc91e7e1d555da0ec2e291b7e9826"
+  "librarySha256": "e19c8f985f15eebd7779b4d6c92e5db6a4591674e8cb2ecc41d53105417ff563",
+  "composerVersion": "4.5g.0"
 }

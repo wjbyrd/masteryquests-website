@@ -36,3 +36,9 @@
 .supplement-card{border-style:dashed}.supplement-card.selected{border-style:solid}
 .supplement-how{margin:12px 0;padding:10px 12px;border-radius:10px;background:rgba(148,163,184,.08);line-height:1.45}
 .coverage-status.checkpoint-supplement{white-space:normal}
+
+/* Phase Micro1 elasticity granularity pilot */
+.concept-card.family-child{border-left:4px solid #9fc4df;background:linear-gradient(90deg,#f4f9fc 0,#fff 22%)}
+.concept-card.family-child.selected{border-left-width:4px}
+.coverage-status.ready-focused-subtopic{background:#e6f6ed;border-color:#8bc9a6;color:#145a38}
+.coverage-status.supporting-subtopic{background:#fff5d9;border-color:#d8b85e;color:#72520b}

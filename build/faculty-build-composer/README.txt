@@ -13,3 +13,16 @@ Latest upgrade:
 - Monopoly graph coverage: 72 questions total.
 - Prior Costs of Production and Perfect Competition graph expansions are retained.
 - Five-mode, answer-hash, asset-hash, starter-combination, and legacy-recipe validation scripts are included.
+
+PHASE MICRO1 — ELASTICITY GRANULARITY PILOT
+-------------------------------------------
+The full Elasticity family remains selectable. Microeconomics now also exposes six child selectors: Price Elasticity of Demand, Price Elasticity of Supply, Income Elasticity of Demand, Cross-Price Elasticity of Demand, Elasticity and Total Revenue, and Applications of Elasticity.
+
+The child selectors filter the same canonical Elasticity bank; they do not duplicate question records. Parent and child Elasticity selectors are mutually exclusive. Income and Cross-Price Elasticity are intentionally treated as supporting subtopics and are best combined with related Elasticity selections rather than padded to artificial standalone depth.
+
+PHASE MICRO2 — CONSUMER & PRODUCER SURPLUS GRANULARITY
+-----------------------------------------------------
+The full Consumer and Producer Surplus family remains selectable. Microeconomics now also exposes six child selectors: Consumer Surplus & Willingness to Pay, Producer Surplus & Willingness to Accept, Total Surplus & Gains from Exchange, Efficient Quantity & Allocation, Changes in Surplus & Policy Effects, and Efficiency, Equity & Limits of Surplus Analysis.
+
+The child selectors filter the same canonical 370-record Surplus bank; they do not duplicate question records. Parent and child Surplus selectors are mutually exclusive. Changes/Policy Effects and Efficiency/Equity/Limits are intentionally treated as supporting subtopics rather than padded to artificial standalone depth.
+

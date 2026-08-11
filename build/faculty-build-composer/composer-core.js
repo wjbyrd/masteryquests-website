@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5e.0';
+const COMPOSER_VERSION = '4.5g.0';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'legendary', 'score'];
 const POOL_MINIMUMS = {
@@ -280,11 +280,11 @@ function safeSlug(value){
     .slice(0, 80);
 }
 
-function cloneQuestion(question, conceptId){
+function cloneQuestion(question, conceptId, assetConceptId = conceptId){
   const copy = deepClone(question);
   if(copy.image){
     const filename = String(copy.image).split(/[\\/]/).pop();
-    copy.image = `question-assets/${conceptId}/${filename}`;
+    copy.image = `question-assets/${assetConceptId || conceptId}/${filename}`;
   }
   return copy;
 }
@@ -298,14 +298,98 @@ function allModuleQuestions(module){
   ];
 }
 
-function routeMapInto(target, source, index, conceptId){
+function resolveConceptModule(library, conceptId){
+  const raw = library?.concepts?.[conceptId];
+  if(!raw || !raw.derivedFromConceptId) return raw;
+
+  const parent = library?.concepts?.[raw.derivedFromConceptId];
+  if(!parent) return null;
+
+  const filterId = raw.subtopicFilterId || conceptId;
+  const belongs = question => Array.isArray(question?.subtopicIds) && question.subtopicIds.includes(filterId);
+  const remap = question => {
+    const copy = deepClone(question);
+    copy.familyConceptId = raw.familyConceptId || raw.derivedFromConceptId;
+    copy.sourcePrimaryConceptId = copy.sourcePrimaryConceptId || copy.primaryConceptId || raw.derivedFromConceptId;
+    copy.primaryConceptId = conceptId;
+    copy.tag = conceptId;
+    copy.composerSubtopicId = conceptId;
+    return copy;
+  };
+
+  const questions = {};
+  for(const [pool, items] of Object.entries(parent.questions || {})){
+    questions[pool] = (items || []).filter(belongs).map(remap);
+  }
+  const repairQuestions = (parent.repairQuestions || []).filter(belongs).map(remap);
+  const repairSeedQuestions = (parent.repairSeedQuestions || []).filter(belongs).map(remap);
+  const bridgeQuestions = (parent.bridgeQuestions || []).filter(belongs).map(remap);
+  const selectedQuestions = [
+    ...Object.values(questions).flat(),
+    ...repairQuestions,
+    ...repairSeedQuestions,
+    ...bridgeQuestions
+  ];
+  const allowedIds = new Set(selectedQuestions.map(idOf));
+
+  const filterRouteMap = source => {
+    const out = {};
+    for(const [key, refs] of Object.entries(source || {})){
+      const filtered = (refs || []).filter(ref => allowedIds.has(typeof ref === 'string' ? ref : idOf(ref)));
+      if(filtered.length) out[key] = deepClone(filtered);
+    }
+    return out;
+  };
+
+  const usedObjectives = new Set();
+  for(const question of selectedQuestions){
+    if(question?.objective) usedObjectives.add(String(question.objective));
+    for(const outcome of question?.outcomeIds || []) usedObjectives.add(String(outcome));
+  }
+  const objectiveLabels = {};
+  for(const [key, label] of Object.entries(parent.objectiveLabels || {})){
+    if(usedObjectives.has(key)) objectiveLabels[key] = label;
+  }
+  objectiveLabels[conceptId] = raw.title || conceptId;
+
+  const usedAssetNames = new Set(selectedQuestions
+    .filter(question => question?.image)
+    .map(question => String(question.image).split(/[\\/]/).pop()));
+  const assetMetadata = (parent.assetMetadata || []).filter(asset => usedAssetNames.has(asset.filename));
+  const assets = (parent.assets || []).filter(asset => usedAssetNames.has(String(asset).split(/[\\/]/).pop()));
+  const assetPaths = (parent.assetPaths || []).filter(asset => usedAssetNames.has(String(asset).split(/[\\/]/).pop()));
+
+  return {
+    ...deepClone(parent),
+    ...deepClone(raw),
+    canonicalConceptId: conceptId,
+    derivedFromConceptId: raw.derivedFromConceptId,
+    familyConceptId: raw.familyConceptId || raw.derivedFromConceptId,
+    assetConceptId: raw.assetConceptId || raw.derivedFromConceptId,
+    questions,
+    repairQuestions,
+    repairSeedQuestions,
+    bridgeQuestions,
+    directSkillRepairRoutes: filterRouteMap(parent.directSkillRepairRoutes),
+    skillRepairSeedPools: filterRouteMap(parent.skillRepairSeedPools),
+    microSkillRepairPools: filterRouteMap(parent.microSkillRepairPools),
+    microSkillBridgePools: filterRouteMap(parent.microSkillBridgePools),
+    objectiveLabels,
+    legacyObjectives: (parent.legacyObjectives || []).filter(value => usedObjectives.has(String(value))),
+    assets,
+    assetMetadata,
+    assetPaths
+  };
+}
+
+function routeMapInto(target, source, index, conceptId, assetConceptId = conceptId){
   for(const [key, ids] of Object.entries(source || {})){
     target[key] ??= [];
     for(const ref of ids || []){
       const id = typeof ref === 'string' ? ref : idOf(ref);
       const base = index.get(id);
       if(!base) continue;
-      const question = cloneQuestion(base.question, base.conceptId || conceptId);
+      const question = cloneQuestion(base.question, base.conceptId || conceptId, base.assetConceptId || assetConceptId);
       if(!target[key].some(existing => idOf(existing) === idOf(question))) target[key].push(question);
     }
   }
@@ -407,6 +491,15 @@ function validateRecipeShape(library, recipe){
     if(!library?.concepts?.[id]) errors.push(`Unknown concept: ${id}`);
   }
 
+  const selectedSet = new Set(selected);
+  for(const id of selected){
+    const module = library?.concepts?.[id];
+    const parentId = module?.derivedFromConceptId;
+    if(parentId && selectedSet.has(parentId)){
+      errors.push(`${id} cannot be selected together with its parent family ${parentId}. Choose the full family or granular subtopics, not both.`);
+    }
+  }
+
   if(source.checkpointFocus != null && typeof source.checkpointFocus !== 'object'){
     errors.push('checkpointFocus must be an object when provided.');
   }
@@ -437,7 +530,7 @@ function compose(library, inputRecipe){
   const errors = [...sourceErrors];
   const warnings = [...migrated.migrationWarnings];
   const selectedIds = [...recipe.selectedConceptIds];
-  const modules = selectedIds.map(id => library.concepts[id]).filter(Boolean);
+  const modules = selectedIds.map(id => resolveConceptModule(library, id)).filter(Boolean);
   const supplementModules = modules.filter(module => module.supplementType === 'checkpoint-challenge');
   const instructionModules = modules.filter(module => module.supplementType !== 'checkpoint-challenge');
   const instructionIds = instructionModules.map(module => module.canonicalConceptId);
@@ -449,7 +542,7 @@ function compose(library, inputRecipe){
   const index = new Map();
   for(const module of modules){
     for(const question of allModuleQuestions(module)){
-      index.set(idOf(question), {question, conceptId: module.canonicalConceptId});
+      index.set(idOf(question), {question, conceptId: module.canonicalConceptId, assetConceptId: module.assetConceptId || module.canonicalConceptId});
     }
   }
 
@@ -469,7 +562,7 @@ function compose(library, inputRecipe){
   for(const module of instructionModules){
     for(const pool of ['easy', 'medium', 'hard', 'elite', 'legendary']){
       for(const question of module.questions?.[pool] || []){
-        banks[pool].push(cloneQuestion(question, module.canonicalConceptId));
+        banks[pool].push(cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId));
       }
     }
 
@@ -478,12 +571,12 @@ function compose(library, inputRecipe){
         const target = difficultyPool[question.canonicalDifficulty]
           || difficultyPool[question.difficulty]
           || 'hard';
-        banks[target].push(cloneQuestion(question, module.canonicalConceptId));
+        banks[target].push(cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId));
       }
     }
 
     for(const question of module.questions?.legendaryBoss || []){
-      banks.legendaryBoss.push(cloneQuestion(question, module.canonicalConceptId));
+      banks.legendaryBoss.push(cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId));
     }
   }
 
@@ -503,7 +596,7 @@ function compose(library, inputRecipe){
       if(required.length && !required.every(id => selectedInstructionSet.has(id))) continue;
       const pool = challengeStagePool[question.challengeStage];
       if(!pool) continue;
-      challengeQuestionBanks[pool].push(cloneQuestion(question, module.canonicalConceptId));
+      challengeQuestionBanks[pool].push(cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId));
     }
   }
   for(const pool of Object.keys(challengeQuestionBanks)) challengeQuestionBanks[pool] = uniqueById(challengeQuestionBanks[pool]);
@@ -530,13 +623,13 @@ function compose(library, inputRecipe){
     for(const module of instructionModules){
       if(!activeSet.has(module.canonicalConceptId)) continue;
       for(const question of bossQuestionsForCheckpoint(module, checkpointKey)){
-        banks[checkpoint.pool].push(cloneQuestion(question, module.canonicalConceptId));
+        banks[checkpoint.pool].push(cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId));
       }
     }
 
     if(!automatic){
       for(const id of activeConceptIds){
-        const module = library.concepts[id];
+        const module = resolveConceptModule(library, id);
         if(!module || bossQuestionsForCheckpoint(module, checkpointKey).length) continue;
         warnings.push({
           type: 'boss-focus',
@@ -584,24 +677,28 @@ function compose(library, inputRecipe){
   }
 
   const repairQuestions = uniqueById(instructionModules.flatMap(module =>
-    (module.repairQuestions || []).map(question => cloneQuestion(question, module.canonicalConceptId))
+    (module.repairQuestions || []).map(question => cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId))
   ));
   const bridgeQuestions = uniqueById(instructionModules.flatMap(module =>
-    (module.bridgeQuestions || []).map(question => cloneQuestion(question, module.canonicalConceptId))
+    (module.bridgeQuestions || []).map(question => cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId))
   ));
   const microSkillRepairPools = {};
   const skillRepairSeedPools = {};
   const microSkillBridgePools = {};
 
-  for(const module of instructionModules) routeMapInto(microSkillRepairPools, module.directSkillRepairRoutes, index, module.canonicalConceptId);
-  for(const module of instructionModules) routeMapInto(microSkillRepairPools, module.microSkillRepairPools, index, module.canonicalConceptId);
-  for(const module of instructionModules) routeMapInto(skillRepairSeedPools, module.skillRepairSeedPools, index, module.canonicalConceptId);
-  for(const module of instructionModules) routeMapInto(microSkillBridgePools, module.microSkillBridgePools, index, module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(microSkillRepairPools, module.directSkillRepairRoutes, index, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(microSkillRepairPools, module.microSkillRepairPools, index, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(skillRepairSeedPools, module.skillRepairSeedPools, index, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId);
+  for(const module of instructionModules) routeMapInto(microSkillBridgePools, module.microSkillBridgePools, index, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId);
 
-  const assets = [];
+  const assetMap = new Map();
   for(const module of modules){
-    for(const asset of module.assetMetadata || []) assets.push(deepClone(asset));
+    for(const asset of module.assetMetadata || []){
+      const key = asset?.runtimePath || asset?.sourceUrl || asset?.filename;
+      if(key && !assetMap.has(key)) assetMap.set(key, deepClone(asset));
+    }
   }
+  const assets = [...assetMap.values()];
 
   const counts = Object.fromEntries(Object.entries(banks).map(([key, value]) => [key, value.length]));
   counts.repair = repairQuestions.length;
@@ -760,7 +857,7 @@ function questionMarkerRegion(composition, metadata){
       questionAssetMetadata[normalized.split('/').pop()] = record;
     }
   }
-  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Phase 4.5e Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
+  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Phase 4.5g Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
 }
 
 function replaceMarkedRegion(template, startLabel, endLabel, replacement){
@@ -804,7 +901,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5e-checkpoint-supplement'
+    templateVersion: 'phase4.5g-micro-granularity'
   };
 }
 
@@ -866,6 +963,7 @@ return {
   safeSlug,
   bossDifficulty,
   bossQuestionsForCheckpoint,
+  resolveConceptModule,
   migrateRecipe,
   validateRecipeShape,
   validateFacultyQuestionRecord,
