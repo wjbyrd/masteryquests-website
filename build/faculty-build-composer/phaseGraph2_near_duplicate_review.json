@@ -1,0 +1,177 @@
+{
+  "phase": "phaseGraph2-price-controls-taxes-v1",
+  "threshold": 0.8,
+  "reviewedNewQuestions": 24,
+  "flags": [],
+  "closestMatches": [
+    {
+      "newId": "PG2-CEIL-E-001",
+      "bestSimilarity": 0.5094,
+      "existingConceptId": "binding-price-ceilings",
+      "existingId": "ECON-MG-FINALBOSS-4001",
+      "existingStem": "Refer to the ceiling/floor graph. The market equilibrium is $30 and 200 units. If a legal maximum price is set at $20, what shortage results?"
+    },
+    {
+      "newId": "PG2-CEIL-M-001",
+      "bestSimilarity": 0.512,
+      "existingConceptId": "binding-price-ceilings",
+      "existingId": "ECON-MG-LEGENDARY-9050",
+      "existingStem": "A rent ceiling causes landlords to convert apartments into short-term rentals outside the regulated market. What does this show?"
+    },
+    {
+      "newId": "PG2-CEIL-M-002",
+      "bestSimilarity": 0.4676,
+      "existingConceptId": "binding-price-ceilings",
+      "existingId": "ECON-MG-LEGENDARY-9050",
+      "existingStem": "A rent ceiling causes landlords to convert apartments into short-term rentals outside the regulated market. What does this show?"
+    },
+    {
+      "newId": "PG2-CEIL-H-001",
+      "bestSimilarity": 0.4549,
+      "existingConceptId": "binding-price-ceilings",
+      "existingId": "ECON-MG-HARD-235",
+      "existingStem": "A price ceiling is set at $18 when equilibrium price is $25. At $18, Qd = 900 and Qs = 600. Which statement is correct?"
+    },
+    {
+      "newId": "PG2-CEIL-EL-001",
+      "bestSimilarity": 0.5137,
+      "existingConceptId": "binding-price-ceilings",
+      "existingId": "ECON-MG-LEGENDARY-9046",
+      "existingStem": "At a rent ceiling of $900, quantity demanded is 4,000 apartments and quantity supplied is 2,700 apartments. Which answer best states the result?"
+    },
+    {
+      "newId": "PG2-CEIL-L-001",
+      "bestSimilarity": 0.4702,
+      "existingConceptId": "binding-price-ceilings",
+      "existingId": "ECON-MG-FINALBOSS-4019",
+      "existingStem": "A binding rent ceiling creates a 200-unit shortage. The city allocates apartments to whoever waits in line longest. Which conclusion best completes the analysis?"
+    },
+    {
+      "newId": "PG2-FLR-E-001",
+      "bestSimilarity": 0.4793,
+      "existingConceptId": "binding-price-floors",
+      "existingId": "ECON-MG-LEGENDARY-9036",
+      "existingStem": "Refer to the ceiling/floor graph. The market equilibrium is $30 and 200 units. If a legal minimum price is set at $40, what happens?"
+    },
+    {
+      "newId": "PG2-FLR-M-001",
+      "bestSimilarity": 0.4815,
+      "existingConceptId": "binding-price-floors",
+      "existingId": "ECON-MG-LEGENDARYBOSS-9134",
+      "existingStem": "At a binding price floor, sellers offer 1,900 units and buyers demand 1,250. The government purchases 300 units. How much unsold surplus remains?"
+    },
+    {
+      "newId": "PG2-FLR-M-002",
+      "bestSimilarity": 0.464,
+      "existingConceptId": "binding-price-floors",
+      "existingId": "ECON-MG-LEGENDARY-9053",
+      "existingStem": "A minimum wage is set above equilibrium, but employment does not fall much. Which explanation best fits supply and demand logic?"
+    },
+    {
+      "newId": "PG2-FLR-H-001",
+      "bestSimilarity": 0.4514,
+      "existingConceptId": "tax-incidence",
+      "existingId": "ECON-MG-LEGENDARY-9068",
+      "existingStem": "Before tax, price is $20. After tax, buyers pay $24 and sellers receive $18. Which statement correctly splits the burden?"
+    },
+    {
+      "newId": "PG2-FLR-EL-001",
+      "bestSimilarity": 0.486,
+      "existingConceptId": "binding-price-floors",
+      "existingId": "ECON-MG-FINALBOSS-4003",
+      "existingStem": "A minimum wage is set at $16 when the equilibrium wage is $12. At $16, firms demand 70,000 workers and 110,000 workers want jobs. What is the best diagnosis?"
+    },
+    {
+      "newId": "PG2-FLR-L-001",
+      "bestSimilarity": 0.4416,
+      "existingConceptId": "binding-price-floors",
+      "existingId": "ECON-MG-MEDIUM-136",
+      "existingStem": "A minimum wage is set below the equilibrium wage. What is the likely result?"
+    },
+    {
+      "newId": "PG2-TAX-E-001",
+      "bestSimilarity": 0.4201,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-HARD-280",
+      "existingStem": "Refer to the tax incidence graph. What is the tax wedge and what happens to quantity sold?"
+    },
+    {
+      "newId": "PG2-TAX-M-001",
+      "bestSimilarity": 0.495,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-LEGENDARY-9064",
+      "existingStem": "A $7 tax reduces quantity from 500 to 420 units. What does this show beyond tax revenue?"
+    },
+    {
+      "newId": "PG2-TAX-M-002",
+      "bestSimilarity": 0.52,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-HARD-245",
+      "existingStem": "A tax reduces quantity sold from 500 to 420 units. If the tax is $8 per unit, how much tax revenue is collected?"
+    },
+    {
+      "newId": "PG2-TAX-H-001",
+      "bestSimilarity": 0.5702,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-HARD-245",
+      "existingStem": "A tax reduces quantity sold from 500 to 420 units. If the tax is $8 per unit, how much tax revenue is collected?"
+    },
+    {
+      "newId": "PG2-TAX-EL-001",
+      "bestSimilarity": 0.6757,
+      "existingConceptId": "tax-incidence",
+      "existingId": "ECON-MG-FINALBOSS-4007",
+      "existingStem": "A $6 tax is imposed. Before the tax, buyers paid $20. After the tax, buyers pay $24 and sellers receive $18. How much of the tax burden falls on buyers and sellers?"
+    },
+    {
+      "newId": "PG2-TAX-L-001",
+      "bestSimilarity": 0.5678,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-LEGENDARY-9067",
+      "existingStem": "Before tax, price is $20 and quantity is 1,000. After a $6 tax, buyers pay $24, sellers receive $18, and quantity is 850. What is tax revenue?"
+    },
+    {
+      "newId": "PG2-STX-E-001",
+      "bestSimilarity": 0.4835,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-EASY-71",
+      "existingStem": "After a tax, buyers pay $12 and sellers receive $9. What is the tax per unit?"
+    },
+    {
+      "newId": "PG2-STX-M-001",
+      "bestSimilarity": 0.6054,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-EASY-71",
+      "existingStem": "After a tax, buyers pay $12 and sellers receive $9. What is the tax per unit?"
+    },
+    {
+      "newId": "PG2-STX-M-002",
+      "bestSimilarity": 0.6457,
+      "existingConceptId": "tax-incidence",
+      "existingId": "ECON-MG-LEGENDARY-9068",
+      "existingStem": "Before tax, price is $20. After tax, buyers pay $24 and sellers receive $18. Which statement correctly splits the burden?"
+    },
+    {
+      "newId": "PG2-STX-H-001",
+      "bestSimilarity": 0.4735,
+      "existingConceptId": "tax-wedges-and-revenue",
+      "existingId": "ECON-MG-HARD-284",
+      "existingStem": "Refer to the tax incidence graph. If students use the original quantity of 100 to calculate tax revenue, what mistake are they making?"
+    },
+    {
+      "newId": "PG2-STX-EL-001",
+      "bestSimilarity": 0.5732,
+      "existingConceptId": "statutory-versus-economic-tax-incidence",
+      "existingId": "ECON-MG-LEGENDARYBOSS-9139",
+      "existingStem": "A $5 tax is legally collected from sellers. The law is rewritten so buyers remit the same $5 tax. With unchanged supply and demand, what changes?"
+    },
+    {
+      "newId": "PG2-STX-L-001",
+      "bestSimilarity": 0.408,
+      "existingConceptId": "tax-incidence",
+      "existingId": "ECON-MG-LEGENDARY-9061",
+      "existingStem": "A $5 tax is imposed. Buyers pay $3 more and sellers receive $2 less than before. Which side bears more burden and what does that imply?"
+    }
+  ],
+  "ok": true
+}

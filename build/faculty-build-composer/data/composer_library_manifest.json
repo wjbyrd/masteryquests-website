@@ -1,5 +1,5 @@
 {
-  "assetCount": 404,
+  "assetCount": 408,
   "assets": [
     {
       "conceptId": "aggregate-demand",
@@ -4028,11 +4028,55 @@
       "sizeBytes": 70886,
       "imageAlt": "Gas market with original curves D0 and S0 and shifted curves D1 and S1.",
       "graphDescription": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand."
+    },
+    {
+      "conceptId": "binding-price-ceilings",
+      "filename": "CEILING-01.webp",
+      "sourceAssetPath": "question-assets/binding-price-ceilings/CEILING-01.webp",
+      "sourceUrl": "data/question-assets/binding-price-ceilings/CEILING-01.webp",
+      "runtimePath": "question-assets/binding-price-ceilings/CEILING-01.webp",
+      "sha256": "ea398f249a8e1c7b6def1e0553249fbd18c134061d4d11c277937cf93a7e8a00",
+      "sizeBytes": 68980,
+      "imageAlt": "Apartment rental market with demand D0, supply S0, equilibrium point A, and a horizontal price ceiling at $1,000 per month.",
+      "graphDescription": "The horizontal axis is quantity of apartments and the vertical axis is rental rate per month. Demand D0 and supply S0 intersect at point A, quantity 150 and rent $2,000. A horizontal legal price ceiling is shown at $1,000. At the ceiling, quantity supplied is 50 apartments and quantity demanded is 250 apartments, creating a shortage of 200 apartments."
+    },
+    {
+      "conceptId": "binding-price-floors",
+      "filename": "FLOOR-01.webp",
+      "sourceAssetPath": "question-assets/binding-price-floors/FLOOR-01.webp",
+      "sourceUrl": "data/question-assets/binding-price-floors/FLOOR-01.webp",
+      "runtimePath": "question-assets/binding-price-floors/FLOOR-01.webp",
+      "sha256": "2e135767d7b0e8a7220c030561bb0ba5594f6c8e05be455c02fb9ff094bfe3ee",
+      "sizeBytes": 69756,
+      "imageAlt": "Labor market with demand D0, supply S0, equilibrium point A, and a horizontal wage floor at $10 per hour.",
+      "graphDescription": "The horizontal axis is quantity of workers in thousands and the vertical axis is wage rate per hour. Labor demand D0 and labor supply S0 intersect at point A, 175 thousand workers and a $7 wage. A horizontal wage floor is shown at $10. At the floor, labor demanded is 100 thousand workers and labor supplied is 250 thousand workers, creating a labor surplus of 150 thousand workers."
+    },
+    {
+      "conceptId": "tax-wedges-and-revenue",
+      "filename": "TAX-01.webp",
+      "sourceAssetPath": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+      "sourceUrl": "data/question-assets/tax-wedges-and-revenue/TAX-01.webp",
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+      "sha256": "cf4234419410715f06f8f7dc23d8b4cb6257870c227560b215ff5eefd229287e",
+      "sizeBytes": 77760,
+      "imageAlt": "Movie market with demand D0, original supply S0, and a parallel supply-with-tax curve above S0.",
+      "graphDescription": "The horizontal axis is quantity of movies in thousands and the vertical axis is price of movies. Demand D0 and original supply S0 intersect at point e, price $12 and quantity 140 thousand. A parallel curve labeled Supply with tax is $4 above S0. After the tax, demand intersects the shifted supply curve at quantity 100 thousand and buyer price $14. At that quantity the original supply curve is at $10, so sellers receive $10, the per-unit tax wedge is $4, and quantity falls by 40 thousand."
+    },
+    {
+      "conceptId": "statutory-versus-economic-tax-incidence",
+      "filename": "TAX-02.webp",
+      "sourceAssetPath": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+      "sourceUrl": "data/question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+      "runtimePath": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+      "sha256": "f6395f7c6208641d5b65590a2eb2f59ea37dbe40e15a03f5cbd43065848c77da",
+      "sizeBytes": 67900,
+      "imageAlt": "Movie market with original demand D0, supply S0, and a parallel demand-with-tax curve below D0.",
+      "graphDescription": "The horizontal axis is quantity of movies in thousands and the vertical axis is price of movies. Original demand D0 and supply S0 intersect at point e, quantity 100 thousand and price $10.50. A parallel curve labeled Demand with tax lies $6 below D0. After the buyer-side tax, quantity is 60 thousand. Sellers receive $7.50 at the intersection of supply and demand with tax, while buyers pay $13.50 on the original demand curve at that same quantity. The $6 wedge is split equally relative to the original $10.50 equilibrium price, and quantity falls by 40 thousand."
     }
   ],
   "conceptCount": 126,
-  "canonicalQuestionCount": 8025,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1",
-  "librarySha256": "2487136841d524a07bef2a6f497ae6c02abc5093bf12a1f33eb42dcfabaab723",
-  "generatedAt": "2026-08-12T13:38:00.000Z"
+  "canonicalQuestionCount": 8049,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1",
+  "librarySha256": "2b39bb2c9602e5233a905d9bbc0814e0f6cb5738fba05dca1b0ecb536884e2b6",
+  "generatedAt": "2026-08-12T14:30:00.000Z"
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-12T13:38:00.000Z",
+  "generatedAt": "2026-08-12T14:30:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -338,39 +338,39 @@
         "boss": 6,
         "bridge": 6,
         "calculation": 6,
-        "elite": 5,
+        "elite": 6,
         "integration": 0,
-        "legendary": 9,
+        "legendary": 10,
         "legendaryBoss": 3,
-        "main": 20,
+        "main": 24,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
-        "elite": 5,
-        "hard": 14,
-        "legendary": 12,
-        "medium": 11,
+        "easy": 8,
+        "medium": 13,
+        "hard": 15,
+        "elite": 6,
+        "legendary": 13,
         "unknown": 10
       },
       "repairCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 43
+        "mainWithUsableSkill": 55
       },
       "bridgeCoverage": {
         "directSkillMatches": 6,
-        "mainWithUsableSkill": 43
+        "mainWithUsableSkill": 55
       },
-      "calculationCoverage": 8,
-      "graphCoverage": 13,
+      "calculationCoverage": 7,
+      "graphCoverage": 19,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Core supporting concept",
       "coverageStatus": "best-paired",
       "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 2 adds a dedicated apartment-rent ceiling graph with equilibrium, shortage, transaction-limit, decomposition, and rationing questions from easy through Legendary.",
+      "coverageFloorVersion": "phaseGraph2-price-controls-taxes-v1"
     },
     {
       "canonicalConceptId": "binding-price-floors",
@@ -443,39 +443,39 @@
         "boss": 6,
         "bridge": 4,
         "calculation": 6,
-        "elite": 3,
+        "elite": 4,
         "integration": 0,
-        "legendary": 7,
+        "legendary": 8,
         "legendaryBoss": 3,
-        "main": 16,
+        "main": 20,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
-        "elite": 3,
-        "hard": 14,
-        "legendary": 10,
-        "medium": 8,
+        "easy": 7,
+        "medium": 10,
+        "hard": 15,
+        "elite": 4,
+        "legendary": 11,
         "unknown": 8
       },
       "repairCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 35
+        "mainWithUsableSkill": 47
       },
       "bridgeCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 35
+        "mainWithUsableSkill": 47
       },
-      "calculationCoverage": 8,
-      "graphCoverage": 10,
+      "calculationCoverage": 7,
+      "graphCoverage": 16,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Core supporting concept",
       "coverageStatus": "best-paired",
       "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 2 adds a dedicated labor-market minimum-wage graph with equilibrium, labor-surplus, employment-limit, decomposition, and adjustment questions from easy through Legendary.",
+      "coverageFloorVersion": "phaseGraph2-price-controls-taxes-v1"
     },
     {
       "canonicalConceptId": "central-bank-and-federal-reserve",
@@ -11355,39 +11355,39 @@
         "boss": 3,
         "bridge": 2,
         "calculation": 0,
-        "elite": 2,
+        "elite": 3,
         "integration": 0,
-        "legendary": 4,
+        "legendary": 5,
         "legendaryBoss": 3,
-        "main": 4,
+        "main": 8,
         "repair": 0,
         "repairSeed": 1
       },
       "questionCountByDifficulty": {
-        "easy": 1,
-        "elite": 2,
-        "hard": 5,
-        "legendary": 7,
-        "medium": 1,
+        "easy": 2,
+        "medium": 3,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 8,
         "unknown": 3
       },
       "repairCoverage": {
         "directSkillMatches": 0,
-        "mainWithUsableSkill": 16
+        "mainWithUsableSkill": 22
       },
       "bridgeCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 16
+        "mainWithUsableSkill": 22
       },
-      "calculationCoverage": 1,
-      "graphCoverage": 2,
+      "calculationCoverage": 3,
+      "graphCoverage": 8,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Supplemental concept",
       "coverageStatus": "supplemental-ready",
       "coverageStatusLabel": "Supplemental — useful in a combined game",
-      "coverageStatusNote": "Targeted enrichment only: add discriminating application, challenge/mastery, or integration items where useful; do not force every difficulty or checkpoint pool.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 2 adds a buyer-side tax graph that separates statutory remittance from economic incidence and tests buyer/seller tax equivalence through Legendary.",
+      "coverageFloorVersion": "phaseGraph2-price-controls-taxes-v1"
     },
     {
       "canonicalConceptId": "supply",
@@ -11653,39 +11653,39 @@
         "boss": 3,
         "bridge": 2,
         "calculation": 8,
-        "elite": 4,
+        "elite": 5,
         "integration": 0,
-        "legendary": 8,
+        "legendary": 9,
         "legendaryBoss": 3,
-        "main": 13,
+        "main": 17,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 4,
-        "elite": 4,
-        "hard": 10,
-        "legendary": 11,
-        "medium": 10,
+        "easy": 5,
+        "medium": 12,
+        "hard": 11,
+        "elite": 5,
+        "legendary": 12,
         "unknown": 4
       },
       "repairCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 31
+        "mainWithUsableSkill": 45
       },
       "bridgeCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 31
+        "mainWithUsableSkill": 45
       },
       "calculationCoverage": 9,
-      "graphCoverage": 15,
+      "graphCoverage": 21,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Core supporting concept",
       "coverageStatus": "best-paired",
       "coverageStatusLabel": "Best used with related concepts",
-      "coverageStatusNote": "Balanced supporting target: strong ordinary/mastery coverage, at least one appropriate checkpoint tier, direct repair, and bridge coverage; combine with adjacent concepts.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 2 adds a clean seller-side per-unit tax graph for wedge, buyer/seller prices, quantity reduction, revenue, burden split, and market-shrinkage reasoning.",
+      "coverageFloorVersion": "phaseGraph2-price-controls-taxes-v1"
     },
     {
       "canonicalConceptId": "unemployment-measurement",
@@ -11833,10 +11833,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseGraph1-demand-supply-core-v1",
-  "curationSummary": "Phase Graph 1: eight approved demand/supply/equilibrium assets and 48 graph-dependent questions. Emphasis is movement versus shift, direct graph reading, shortage/surplus adjustment, and simultaneous shifts; no elasticity, price-control, or tax content was added.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1",
-  "canonicalQuestionCount": 8025,
-  "librarySha256": "2487136841d524a07bef2a6f497ae6c02abc5093bf12a1f33eb42dcfabaab723",
+  "curationPhase": "phaseGraph2-price-controls-taxes-v1",
+  "curationSummary": "Phase Graph 2: four approved price-control and tax assets plus 24 graph-dependent questions. Coverage emphasizes binding ceilings/floors, shortage/surplus mechanics, transaction limits, tax wedges and revenue, and statutory-versus-economic incidence.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1",
+  "canonicalQuestionCount": 8049,
+  "librarySha256": "2b39bb2c9602e5233a905d9bbc0814e0f6cb5738fba05dca1b0ecb536884e2b6",
   "composerVersion": "4.5p.0"
 }
