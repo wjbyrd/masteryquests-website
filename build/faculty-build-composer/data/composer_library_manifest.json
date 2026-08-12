@@ -1,5 +1,5 @@
 {
-  "assetCount": 416,
+  "assetCount": 423,
   "assets": [
     {
       "conceptId": "aggregate-demand",
@@ -4160,11 +4160,88 @@
       "sizeBytes": 73916,
       "imageAlt": "AD-AS graph with AD0, AD1, AS0, AS1, and labeled points A, B, C, and D.",
       "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 intersects AS0 at point A, where real GDP is 75 and the price level is 100. AD1 intersects AS0 at point B, where real GDP is 100 and the price level is 125. AD0 intersects AS1 at point D, where real GDP is 50 and the price level is 125. AD1 intersects AS1 at point C, where real GDP is 75 and the price level is 150. The graph allows separate analysis of an AD increase, a decrease in aggregate supply, and the simultaneous occurrence of both."
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "filename": "MONEY-01.webp",
+      "sourceAssetPath": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+      "runtimePath": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+      "sha256": "26927c7115e1160545ffc2ad185a55d3bd551dd6614210fee4772ff8561431ba",
+      "sizeBytes": 44584,
+      "imageAlt": "Money market with downward-sloping money demand MD0 and vertical money supply MS0 intersecting at point A.",
+      "graphDescription": "The horizontal axis is quantity of money and the vertical axis is nominal interest rate. Money demand MD0 slopes downward from an interest rate of 12 at quantity 0 to 0 at quantity 200. Money supply MS0 is vertical at quantity 100. The curves intersect at point A, quantity of money 100 and nominal interest rate 6."
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "filename": "MONEY-02.webp",
+      "sourceAssetPath": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+      "runtimePath": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+      "sha256": "35880db7df56124e4f4ef7f685ce38aaa42e23d53354e66daff55e73da0ad938",
+      "sizeBytes": 51412,
+      "imageAlt": "Money market showing an increase in money supply from MS0 at quantity 100 to MS1 at quantity 125, lowering the interest rate.",
+      "graphDescription": "The horizontal axis is quantity of money and the vertical axis is nominal interest rate. Money demand MD0 slopes downward from 12 at quantity 0 to 0 at quantity 150. Original money supply MS0 is vertical at quantity 100, where the equilibrium interest rate is 4. Dashed money supply MS1 is vertical at quantity 125, where the equilibrium interest rate is 2. The graph shows an increase in money supply lowering the equilibrium nominal interest rate by 2 percentage points."
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "filename": "MONEY-03.webp",
+      "sourceAssetPath": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+      "runtimePath": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+      "sha256": "02421c1ea526f4e640fad5b4b2605e123ab9953395eeac427e12c9de06afced6",
+      "sizeBytes": 50598,
+      "imageAlt": "Money market showing a decrease in money supply from MS0 at quantity 100 to MS1 at quantity 75, raising the interest rate.",
+      "graphDescription": "The horizontal axis is quantity of money and the vertical axis is nominal interest rate. Money demand MD0 slopes downward from 12 at quantity 0 to 0 at quantity 150. Original money supply MS0 is vertical at quantity 100, where the equilibrium interest rate is 4. Dashed money supply MS1 is vertical at quantity 75, where the equilibrium interest rate is 6. The graph shows a decrease in money supply raising the equilibrium nominal interest rate by 2 percentage points."
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "filename": "MONEY-04.webp",
+      "sourceAssetPath": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+      "runtimePath": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+      "sha256": "1dedabe4299a0c2ede8981d7b0cb30c5d6f27399f152208fd62dcc8a08d9be92",
+      "sizeBytes": 59734,
+      "imageAlt": "Money market with MD0 and MD1 plus MS0 and MS1, and labeled points A, B, C, and D showing separate and simultaneous money-demand and money-supply shifts.",
+      "graphDescription": "The horizontal axis is quantity of money and the vertical axis is nominal interest rate. Original money supply MS0 is vertical at quantity 75 and new money supply MS1 is vertical at quantity 100. Original money demand MD0 is the lower solid curve; new money demand MD1 is the upper dashed curve. Point B is the original equilibrium at quantity 75 and interest rate 3. With only money demand increasing, equilibrium moves to A at quantity 75 and interest rate 6. With only money supply increasing, equilibrium moves to D at quantity 100 and interest rate 1. With both shifts occurring, equilibrium is C at quantity 100 and interest rate 4."
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "filename": "MONEY-AD-01.webp",
+      "sourceAssetPath": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+      "sourceUrl": "data/question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+      "runtimePath": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+      "sha256": "8771609ad87b89678bfcf5b211d43afd3c3dc4f21a5e04e439f483d8c6d2a4fa",
+      "sizeBytes": 80504,
+      "imageAlt": "Two-panel expansionary monetary-policy graph linking an increase in money supply and lower interest rate to a rightward shift of aggregate demand.",
+      "graphDescription": "Left panel: money supply rises from MS0 at quantity 100 to MS1 at quantity 150 along fixed money demand MD0, moving equilibrium from point A at interest rate 6 to point B at interest rate 4. Right panel: aggregate demand shifts right from AD0 to AD1 along fixed SRAS, moving equilibrium from point A at real GDP 100 and price level 50 to point B at real GDP 125 and price level 56.25. The graph represents the expansionary monetary-policy transmission chain."
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "filename": "MONEY-AD-02.webp",
+      "sourceAssetPath": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+      "sourceUrl": "data/question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+      "runtimePath": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+      "sha256": "74e94b2f6011e8499575e721efced20644ca2ceabc93a3c9520dc629bebf14f7",
+      "sizeBytes": 77562,
+      "imageAlt": "Two-panel contractionary monetary-policy graph linking a decrease in money supply and higher interest rate to a leftward shift of aggregate demand.",
+      "graphDescription": "Left panel: original money supply MS0 is vertical at quantity 125, with equilibrium point A at nominal interest rate 2.75. Money supply decreases to dashed MS1 at quantity 100, moving equilibrium to point B at interest rate 4. Right panel: aggregate demand shifts left from AD0 to AD1 along fixed SRAS, moving equilibrium from point A at real GDP 125 and price level 50 to point B at real GDP 100 and price level 45. The graph represents the contractionary monetary-policy transmission chain."
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "filename": "MONEY-AD-03.webp",
+      "sourceAssetPath": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+      "sourceUrl": "data/question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+      "runtimePath": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+      "sha256": "874498606965ead8fb21a3f35fea2d6ae7489671c4a392ecd68529599a693128",
+      "sizeBytes": 82894,
+      "imageAlt": "Two-panel graph linking an increase in money demand at fixed money supply to a higher interest rate and a leftward shift of aggregate demand.",
+      "graphDescription": "Left panel: money supply MS0 is fixed at quantity 75. Money demand increases from solid MD0 to dashed MD1, raising the equilibrium nominal interest rate from point A at 2 percent to point B at 4 percent. Right panel: aggregate demand shifts left from AD0 to AD1 along fixed SRAS, moving equilibrium from point A at real GDP 150 and price level 55 to point B at real GDP 105 and price level 45. The graph illustrates how higher money demand can raise interest rates, reduce interest-sensitive spending, and reduce aggregate demand when money supply is fixed."
     }
   ],
   "conceptCount": 126,
-  "canonicalQuestionCount": 8097,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1",
-  "librarySha256": "a6efd340f96f70e3452034c7f726b241111c59bdfbb569d1302968037efb3b48",
-  "generatedAt": "2026-08-12T16:00:00.000Z"
+  "canonicalQuestionCount": 8139,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1",
+  "librarySha256": "322f9afdcdd9c9d8d33aeeb4976147b66c8167f27a7f06c30230ac846f55b80a",
+  "generatedAt": "2026-08-12T17:45:00.000Z"
 }
