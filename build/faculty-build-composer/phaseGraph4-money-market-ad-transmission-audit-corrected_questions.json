@@ -1,0 +1,866 @@
+[
+  {
+    "id": "PG4-MM-E-001",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-01.webp",
+    "stem": "At point A in the money market, what is the equilibrium nominal interest rate?",
+    "options": [
+      "6 percent",
+      "4 percent",
+      "8 percent",
+      "12 percent"
+    ],
+    "correctAnswer": "6 percent",
+    "feedback": "Point A is where MD0 intersects MS0, at a nominal interest rate of 6 percent.",
+    "primarySkill": "read_money_market_equilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-E-002",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-02.webp",
+    "stem": "The money-supply curve moves from MS0 at 100 to MS1 at 125. What happens to the equilibrium nominal interest rate?",
+    "options": [
+      "It rises from 2 percent to 4 percent",
+      "It stays at 4 percent",
+      "It falls from 4 percent to 2 percent",
+      "It falls from 6 percent to 4 percent"
+    ],
+    "correctAnswer": "It falls from 4 percent to 2 percent",
+    "feedback": "With money demand fixed, the larger money supply moves equilibrium down MD0 from 4 percent to 2 percent.",
+    "primarySkill": "read_money_market_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-E-003",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-03.webp",
+    "stem": "When the money-supply line moves left from 100 to 75, how does the equilibrium interest rate respond?",
+    "options": [
+      "It rises from 4 percent to 6 percent",
+      "It falls from 6 percent to 4 percent",
+      "It stays at 4 percent",
+      "It rises from 2 percent to 4 percent"
+    ],
+    "correctAnswer": "It rises from 4 percent to 6 percent",
+    "feedback": "With money demand fixed, the smaller money supply moves equilibrium up MD0 from 4 percent to 6 percent.",
+    "primarySkill": "read_money_market_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-E-004",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-04.webp",
+    "stem": "Which labeled point is the original equilibrium where MD0 intersects MS0?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "correctAnswer": "Point B",
+    "feedback": "The original curves MD0 and MS0 intersect at point B, quantity 75 and interest rate 3.",
+    "primarySkill": "simultaneous_money_shifts",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-E-005",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-AD-03.webp",
+    "stem": "In the left panel, money demand rises from MD0 to MD1 while MS0 stays fixed. What happens to the nominal interest rate?",
+    "options": [
+      "It rises from 2 percent to 4 percent",
+      "It falls from 4 percent to 2 percent",
+      "It stays at 2 percent",
+      "It rises from 4 percent to 6 percent"
+    ],
+    "correctAnswer": "It rises from 2 percent to 4 percent",
+    "feedback": "With fixed money supply, the higher money-demand curve raises the equilibrium interest rate from point A to point B.",
+    "primarySkill": "trace_money_demand_shift_to_investment",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-EL-001",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-01.webp",
+    "stem": "A student says a fall in the interest rate from 8 percent to 6 percent would shift MD0 to the right. What is the best correction?",
+    "options": [
+      "Interest-rate changes move along MD0; they do not shift MD0.",
+      "Interest-rate changes shift MD0 because the rate is on the axis.",
+      "Interest-rate changes shift MS0 while MD0 stays fixed.",
+      "Interest-rate changes shift both MD0 and MS0 together."
+    ],
+    "correctAnswer": "Interest-rate changes move along MD0; they do not shift MD0.",
+    "feedback": "The interest rate is the price variable on the money-demand curve. Changing it moves the economy along MD0.",
+    "primarySkill": "money_demand_shift_vs_movement",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-EL-002",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-02.webp",
+    "stem": "A student says the fall in the interest rate from 4 percent to 2 percent proves money demand shifted left. What does the graph actually show?",
+    "options": [
+      "MD0 shifts left while money supply remains fixed at MS0 throughout.",
+      "MD0 and money supply both shift right to separate new curves.",
+      "MD0 is fixed; MS shifts right and equilibrium moves along MD0.",
+      "Neither money demand nor money supply changes in the diagram."
+    ],
+    "correctAnswer": "MD0 is fixed; MS shifts right and equilibrium moves along MD0.",
+    "feedback": "MD0 is unchanged. The new equilibrium is reached by moving along the same money-demand curve after MS shifts right.",
+    "primarySkill": "money_demand_shift_vs_movement",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-EL-003",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-03.webp",
+    "stem": "A student says the rise in the interest rate from 4 percent to 6 percent proves money demand shifted right. What does the graph actually show?",
+    "options": [
+      "MD0 is fixed; MS shifts left and equilibrium moves along MD0.",
+      "MD0 shifts right while money supply remains fixed at MS0 throughout.",
+      "MD0 and money supply both shift left to separate new curves.",
+      "Neither money demand nor money supply changes in the diagram."
+    ],
+    "correctAnswer": "MD0 is fixed; MS shifts left and equilibrium moves along MD0.",
+    "feedback": "MD0 is unchanged. The higher interest rate comes from the smaller money supply, causing a movement along MD0.",
+    "primarySkill": "money_demand_shift_vs_movement",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-EL-004",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-04.webp",
+    "stem": "Compare original point B with simultaneous-shift point C. What happens to quantity of money and the nominal interest rate?",
+    "options": [
+      "Quantity rises from 75 to 100 while the interest rate falls from 3 percent to 1 percent",
+      "Quantity stays at 75 while the interest rate rises from 3 percent to 6 percent",
+      "Quantity rises from 75 to 100 while the interest rate rises from 3 percent to 4 percent",
+      "Quantity falls from 100 to 75 while the interest rate falls from 4 percent to 3 percent"
+    ],
+    "correctAnswer": "Quantity rises from 75 to 100 while the interest rate rises from 3 percent to 4 percent",
+    "feedback": "The increase in money supply raises equilibrium quantity, while the simultaneous increase in money demand is strong enough to leave the interest rate one point higher than at B.",
+    "primarySkill": "money_market_offsetting_shifts",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-EL-005",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-AD-03.webp",
+    "stem": "A student says the money-demand increase should shift aggregate demand right because people want to hold more money. What is the strongest correction using the graph?",
+    "options": [
+      "With MS fixed, higher MD raises rates; spending falls and AD shifts left.",
+      "With MS fixed, higher MD lowers rates; spending rises and AD shifts right.",
+      "Higher MD creates extra money automatically, so interest rates fall.",
+      "Money demand and aggregate demand are the same curve and shift together."
+    ],
+    "correctAnswer": "With MS fixed, higher MD raises rates; spending falls and AD shifts left.",
+    "feedback": "Money demand is demand for liquid balances, not aggregate expenditure. With fixed supply, more money demand raises the interest rate and can reduce spending.",
+    "primarySkill": "connect_money_market_to_ad_slope",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-H-001",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "hard",
+    "type": "analysis",
+    "asset": "MONEY-01.webp",
+    "stem": "Moving downward along MD0 from a higher to a lower interest rate, what happens to the quantity of money demanded?",
+    "options": [
+      "The quantity of money demanded falls.",
+      "The quantity of money supplied rises.",
+      "The money-demand curve shifts left.",
+      "The quantity of money demanded rises."
+    ],
+    "correctAnswer": "The quantity of money demanded rises.",
+    "feedback": "Holding other determinants fixed, lower interest rates reduce the opportunity cost of holding money, so quantity of money demanded rises.",
+    "primarySkill": "money_demand_interest_rate",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-H-002",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "MONEY-02.webp",
+    "stem": "What is the change in the equilibrium nominal interest rate when money supply rises from 100 to 125?",
+    "options": [
+      "An increase of 2 percentage points",
+      "A decrease of 2 percentage points",
+      "A decrease of 25 percentage points",
+      "No change"
+    ],
+    "correctAnswer": "A decrease of 2 percentage points",
+    "feedback": "The equilibrium interest rate falls from 4 percent to 2 percent, a 2-percentage-point decrease.",
+    "primarySkill": "predict_money_market_equilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-H-003",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "MONEY-03.webp",
+    "stem": "What is the change in the equilibrium nominal interest rate when money supply falls from 100 to 75?",
+    "options": [
+      "A decrease of 2 percentage points",
+      "An increase of 25 percentage points",
+      "No change",
+      "An increase of 2 percentage points"
+    ],
+    "correctAnswer": "An increase of 2 percentage points",
+    "feedback": "The equilibrium interest rate rises from 4 percent to 6 percent, a 2-percentage-point increase.",
+    "primarySkill": "predict_money_market_equilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-H-004",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "hard",
+    "type": "graph",
+    "asset": "MONEY-04.webp",
+    "stem": "If money demand increases from MD0 to MD1 at the same time money supply increases from MS0 to MS1, which point is the resulting equilibrium?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "correctAnswer": "Point C",
+    "feedback": "The simultaneous shifts produce the intersection of MD1 and MS1, point C.",
+    "primarySkill": "simultaneous_money_shifts",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-H-005",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "MONEY-AD-03.webp",
+    "stem": "By how much does real GDP change from point A to point B in the right panel?",
+    "options": [
+      "20",
+      "35",
+      "55",
+      "45"
+    ],
+    "correctAnswer": "45",
+    "feedback": "Read real GDP at A and B in the right panel: 150 − 105 = 45.",
+    "primarySkill": "trace_money_demand_shift_to_investment",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-L-001",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "legendary",
+    "type": "analysis",
+    "asset": "MONEY-01.webp",
+    "stem": "If the nominal interest rate were temporarily above point A while MS0 stayed fixed, what adjustment pressure would the graph imply?",
+    "options": [
+      "Excess money demand pushes the rate farther above A.",
+      "Excess money supply pushes the rate down toward A.",
+      "Money supply shifts right until the rate rises above A.",
+      "Money demand shifts left until the rate remains above A."
+    ],
+    "correctAnswer": "Excess money supply pushes the rate down toward A.",
+    "feedback": "Above equilibrium, the quantity of money demanded is less than the fixed money supply. Portfolio adjustment pushes the interest rate back down toward equilibrium.",
+    "primarySkill": "money_market_disequilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-L-002",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "legendary",
+    "type": "analysis",
+    "asset": "MONEY-02.webp",
+    "stem": "Starting from the money-market change shown, which downstream effect would normally follow?",
+    "options": [
+      "Lower rates cut interest-sensitive spending and shift AD left.",
+      "Higher rates raise interest-sensitive spending and shift AD right.",
+      "Higher rates cut interest-sensitive spending and shift AD left.",
+      "Lower rates raise interest-sensitive spending and shift AD right."
+    ],
+    "correctAnswer": "Lower rates raise interest-sensitive spending and shift AD right.",
+    "feedback": "The standard transmission channel runs from more money to lower interest rates to more interest-sensitive spending and higher aggregate demand.",
+    "primarySkill": "bridge_money_market_transmission",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-L-003",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "legendary",
+    "type": "analysis",
+    "asset": "MONEY-03.webp",
+    "stem": "After the money-supply change from MS0 to MS1 shown in the graph, which spending-and-AD response should follow?",
+    "options": [
+      "Higher rates raise interest-sensitive spending and shift AD right.",
+      "Higher rates cut interest-sensitive spending and shift AD left.",
+      "Lower rates cut interest-sensitive spending and shift AD left.",
+      "Lower rates raise interest-sensitive spending and shift AD right."
+    ],
+    "correctAnswer": "Higher rates cut interest-sensitive spending and shift AD left.",
+    "feedback": "The standard contractionary chain runs from less money to higher interest rates to less interest-sensitive spending and lower aggregate demand.",
+    "primarySkill": "bridge_money_market_transmission",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-L-004",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "MONEY-04.webp",
+    "stem": "Money demand rises from MD0 to MD1. Which central-bank response shown partially offsets the interest-rate increase without restoring the original 3-percent rate?",
+    "options": [
+      "Lower MS from MS1 to MS0; C→A lowers the rate.",
+      "Keep MS at MS0; B→D lowers the rate.",
+      "Shift MD back to MD0; A→C raises the rate.",
+      "Raise MS from MS0 to MS1; A→C lowers the rate."
+    ],
+    "correctAnswer": "Raise MS from MS0 to MS1; A→C lowers the rate.",
+    "feedback": "The demand increase alone raises the rate from B to A. Expanding money supply then lowers it from 6 to 4 percent at C, partially but not fully offsetting the increase.",
+    "primarySkill": "infer_money_supply_offset",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-L-005",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "MONEY-AD-03.webp",
+    "stem": "Which complete chain is consistent with the two-panel graph?",
+    "options": [
+      "MD ↑; rate ↓; interest-sensitive spending ↑; AD →; GDP and prices ↑.",
+      "MD ↑; rate ↑; interest-sensitive spending ↓; AD ←; GDP and prices ↓.",
+      "MS ↑; rate ↑; interest-sensitive spending ↓; AD ←; GDP and prices ↑.",
+      "MD ↓; rate ↑; interest-sensitive spending ↑; AD →; GDP and prices ↑."
+    ],
+    "correctAnswer": "MD ↑; rate ↑; interest-sensitive spending ↓; AD ←; GDP and prices ↓.",
+    "feedback": "The panels show the full liquidity-preference transmission from a money-demand increase to a higher rate and lower aggregate demand.",
+    "primarySkill": "connect_money_market_to_ad_slope",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-001",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-01.webp",
+    "stem": "At point A, what quantity of money clears the market?",
+    "options": [
+      "50",
+      "100",
+      "150",
+      "200"
+    ],
+    "correctAnswer": "100",
+    "feedback": "The vertical money-supply curve MS0 is fixed at quantity 100, and MD0 intersects it at point A.",
+    "primarySkill": "read_money_market_equilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-002",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "MONEY-01.webp",
+    "stem": "Which feature of MS0 shows that this model treats the nominal money supply as fixed?",
+    "options": [
+      "MD0 is downward sloping as the interest rate changes.",
+      "Point A lies where the two curves cross in equilibrium.",
+      "MS0 is vertical at a fixed money quantity.",
+      "The interest rate is measured on the vertical axis."
+    ],
+    "correctAnswer": "MS0 is vertical at a fixed money quantity.",
+    "feedback": "In the standard liquidity-preference model, the central bank fixes the nominal quantity of money, so MS is vertical.",
+    "primarySkill": "identify_core_model",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-003",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-02.webp",
+    "stem": "How much farther right is MS1 than MS0 in the graph?",
+    "options": [
+      "2",
+      "50",
+      "125",
+      "25"
+    ],
+    "correctAnswer": "25",
+    "feedback": "Money supply increases from 100 to 125, a rise of 25 units.",
+    "primarySkill": "predict_money_market_equilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-004",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "MONEY-02.webp",
+    "stem": "Which central-bank action is most consistent with the shift from MS0 to MS1?",
+    "options": [
+      "An expansionary action that increases the money supply",
+      "A contractionary action that decreases the money supply",
+      "A rise in real income that shifts money demand right",
+      "A higher price level that shifts money demand right"
+    ],
+    "correctAnswer": "An expansionary action that increases the money supply",
+    "feedback": "The graph shows a rightward shift of the vertical money-supply curve, which is expansionary.",
+    "primarySkill": "identify_shift_result",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-005",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-03.webp",
+    "stem": "Measure the leftward distance from MS0 to MS1. How much smaller is the money supply?",
+    "options": [
+      "2",
+      "25",
+      "50",
+      "75"
+    ],
+    "correctAnswer": "25",
+    "feedback": "Money supply falls from 100 to 75, a decrease of 25 units.",
+    "primarySkill": "predict_money_market_equilibrium",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-006",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "MONEY-03.webp",
+    "stem": "Which contractionary central-bank action could produce the displayed money-supply shift?",
+    "options": [
+      "An expansionary action that increases the money supply",
+      "A rise in real income that increases money demand",
+      "A contractionary action that reduces the money supply",
+      "A lower price level that reduces money demand"
+    ],
+    "correctAnswer": "A contractionary action that reduces the money supply",
+    "feedback": "The graph shows a leftward shift of the vertical money-supply curve, which is contractionary.",
+    "primarySkill": "identify_shift_result",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-007",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-04.webp",
+    "stem": "If only money demand increases from MD0 to MD1 while MS0 stays fixed, which point becomes the new equilibrium?",
+    "options": [
+      "Point B",
+      "Point C",
+      "Point D",
+      "Point A"
+    ],
+    "correctAnswer": "Point A",
+    "feedback": "Holding MS0 at 75, the higher MD1 curve intersects it at point A, interest rate 6.",
+    "primarySkill": "read_money_market_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-008",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-04.webp",
+    "stem": "With MD0 unchanged, locate the equilibrium created solely by the increase in money supply. Which point is it?",
+    "options": [
+      "Point D",
+      "Point A",
+      "Point B",
+      "Point C"
+    ],
+    "correctAnswer": "Point D",
+    "feedback": "Holding MD0 fixed, the larger MS1 intersects it at point D, quantity 100 and interest rate 1.",
+    "primarySkill": "read_money_market_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-009",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-AD-03.webp",
+    "stem": "Which change in the right panel accompanies the higher interest rate shown in the money market?",
+    "options": [
+      "Aggregate demand shifts right from AD1 to AD0",
+      "Aggregate demand shifts left from AD0 to AD1",
+      "SRAS shifts left while aggregate demand stays fixed",
+      "LRAS shifts right"
+    ],
+    "correctAnswer": "Aggregate demand shifts left from AD0 to AD1",
+    "feedback": "The graph links the higher interest rate to lower interest-sensitive spending and a leftward shift of aggregate demand.",
+    "primarySkill": "connect_money_market_to_ad_slope",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MM-M-010",
+    "concept": "liquidity-preference-and-money-market",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "MONEY-AD-03.webp",
+    "stem": "Which mechanism best connects the change from A to B in the left panel with the change from A to B in the right panel?",
+    "options": [
+      "Higher rates directly increase the money supply.",
+      "Higher rates increase potential output and LRAS.",
+      "Higher rates reduce interest-sensitive spending.",
+      "Higher rates lower all production costs and SRAS."
+    ],
+    "correctAnswer": "Higher rates reduce interest-sensitive spending.",
+    "feedback": "The standard link is through interest-sensitive components of spending, especially investment.",
+    "primarySkill": "trace_money_demand_shift_to_investment",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.1"
+  },
+  {
+    "id": "PG4-MPT-E-001",
+    "concept": "monetary-policy-transmission",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-AD-01.webp",
+    "stem": "The left panel shows money supply increasing from MS0 to MS1. What happens to the nominal interest rate?",
+    "options": [
+      "It rises from 4 percent to 6 percent",
+      "It stays at 6 percent",
+      "It falls from 6 percent to 4 percent",
+      "It falls from 6 percent to 2 percent"
+    ],
+    "correctAnswer": "It falls from 6 percent to 4 percent",
+    "feedback": "The increase in money supply moves the money-market equilibrium from A at 6 percent to B at 4 percent.",
+    "primarySkill": "trace_expansionary_monetary_policy_graph",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-E-002",
+    "concept": "monetary-policy-transmission",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "MONEY-AD-02.webp",
+    "stem": "In the contractionary two-panel diagram, what happens to the nominal interest rate after the money-supply change?",
+    "options": [
+      "It rises from 2.75 percent to 4 percent",
+      "It falls from 4 percent to 2.75 percent",
+      "It stays at 2.75 percent",
+      "It rises from 4 percent to 6 percent"
+    ],
+    "correctAnswer": "It rises from 2.75 percent to 4 percent",
+    "feedback": "The smaller money supply moves equilibrium from A at 2.75 percent to B at 4 percent.",
+    "primarySkill": "trace_contractionary_monetary_policy_graph",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-EL-001",
+    "concept": "monetary-policy-transmission",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-AD-01.webp",
+    "stem": "Which statement correctly distinguishes what changes in the two panels?",
+    "options": [
+      "MD shifts right and MS is traversed; SRAS shifts right along fixed AD.",
+      "MS shifts left and MD is traversed; AD shifts left along fixed SRAS.",
+      "MS shifts right and MD is traversed; AD shifts right along fixed SRAS.",
+      "Both panels show movements along fixed demand and supply curves."
+    ],
+    "correctAnswer": "MS shifts right and MD is traversed; AD shifts right along fixed SRAS.",
+    "feedback": "Different markets are being linked. Money supply shifts first; the resulting rate change affects spending and shifts AD.",
+    "primarySkill": "distinguish_money_market_and_ad_model",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-EL-002",
+    "concept": "monetary-policy-transmission",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "MONEY-AD-02.webp",
+    "stem": "A student says AD1 is lower because the central bank directly reduced real GDP. What is the better interpretation?",
+    "options": [
+      "Lower MS raises rates; lower interest-sensitive spending shifts AD left.",
+      "Lower MS lowers rates; higher interest-sensitive spending shifts AD right.",
+      "The central bank directly sets real GDP and moves AD to that quantity.",
+      "A rightward MD shift raises rates and directly shifts SRAS to the left."
+    ],
+    "correctAnswer": "Lower MS raises rates; lower interest-sensitive spending shifts AD left.",
+    "feedback": "Monetary policy works through a transmission mechanism. The central bank acts on money/financial conditions, which influence spending and AD.",
+    "primarySkill": "distinguish_money_market_and_ad_model",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-H-001",
+    "concept": "monetary-policy-transmission",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "MONEY-AD-01.webp",
+    "stem": "Which sequence matches the changes from point A to point B across the two panels?",
+    "options": [
+      "MS ↑ → rate ↑ → spending ↓ → AD ← → output and price level ↓",
+      "MS ↑ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+      "MS ↓ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+      "MD ↑ → rate ↓ → spending ↑ → SRAS → → output and price level ↓"
+    ],
+    "correctAnswer": "MS ↑ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+    "feedback": "That is the standard expansionary monetary-policy transmission chain represented by the two panels.",
+    "primarySkill": "trace_expansionary_monetary_policy_graph",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-H-002",
+    "concept": "monetary-policy-transmission",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "MONEY-AD-02.webp",
+    "stem": "Which causal chain matches the changes from A to B in the second two-panel diagram?",
+    "options": [
+      "MS ↓ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+      "MS ↑ → rate ↑ → spending ↓ → AD ← → output and price level ↓",
+      "MD ↓ → rate ↑ → spending ↓ → SRAS ← → output and price level ↑",
+      "MS ↓ → rate ↑ → spending ↓ → AD ← → output and price level ↓"
+    ],
+    "correctAnswer": "MS ↓ → rate ↑ → spending ↓ → AD ← → output and price level ↓",
+    "feedback": "That is the standard contractionary monetary-policy transmission chain shown across the two panels.",
+    "primarySkill": "trace_contractionary_monetary_policy_graph",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-L-001",
+    "concept": "monetary-policy-transmission",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "MONEY-AD-01.webp",
+    "stem": "What conclusion is supported by the change from A to B across the two panels?",
+    "options": [
+      "The illustrated easing raises rates and lowers both GDP and the price level.",
+      "The illustrated easing raises potential GDP by shifting LRAS to the right.",
+      "The illustrated easing raises GDP while leaving the price level unchanged.",
+      "The illustrated easing lowers rates and raises both GDP and the price level."
+    ],
+    "correctAnswer": "The illustrated easing lowers rates and raises both GDP and the price level.",
+    "feedback": "The graph supports the specific illustrated changes. It does not establish a universal fixed coefficient between interest rates and GDP.",
+    "primarySkill": "read_graph_and_evaluate_transmission_size",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-L-002",
+    "concept": "monetary-policy-transmission",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "MONEY-AD-02.webp",
+    "stem": "What macroeconomic conclusion is supported by the contractionary A-to-B movement across both panels?",
+    "options": [
+      "The illustrated tightening lowers rates and raises both GDP and the price level.",
+      "The illustrated tightening raises rates and lowers both GDP and the price level.",
+      "The illustrated tightening lowers potential GDP by shifting LRAS to the left.",
+      "The illustrated tightening lowers GDP while raising the price level."
+    ],
+    "correctAnswer": "The illustrated tightening raises rates and lowers both GDP and the price level.",
+    "feedback": "The graph supports the specific policy chain and depicted outcomes, not a universal mechanical coefficient.",
+    "primarySkill": "read_graph_and_evaluate_transmission_size",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-M-001",
+    "concept": "monetary-policy-transmission",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-AD-01.webp",
+    "stem": "Which aggregate-demand change accompanies the lower interest rate in the right panel?",
+    "options": [
+      "AD shifts left from AD1 to AD0",
+      "SRAS shifts right while AD stays fixed",
+      "LRAS shifts left",
+      "AD shifts right from AD0 to AD1"
+    ],
+    "correctAnswer": "AD shifts right from AD0 to AD1",
+    "feedback": "The lower interest rate stimulates interest-sensitive spending, shifting aggregate demand right.",
+    "primarySkill": "monetary_policy_ad_shift",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-M-002",
+    "concept": "monetary-policy-transmission",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "MONEY-AD-01.webp",
+    "stem": "In the expansionary two-panel diagram, how many units does real GDP rise from A to B?",
+    "options": [
+      "25",
+      "6.25",
+      "50",
+      "125"
+    ],
+    "correctAnswer": "25",
+    "feedback": "Read real GDP at A and B: 125 − 100 = 25 units.",
+    "primarySkill": "read_output_change_from_ad_shift",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-M-003",
+    "concept": "monetary-policy-transmission",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "MONEY-AD-02.webp",
+    "stem": "In the right panel, which aggregate-demand change accompanies the higher interest rate generated on the left?",
+    "options": [
+      "AD shifts right from AD1 to AD0",
+      "AD shifts left from AD0 to AD1",
+      "SRAS shifts left while AD stays fixed",
+      "LRAS shifts right"
+    ],
+    "correctAnswer": "AD shifts left from AD0 to AD1",
+    "feedback": "The higher interest rate reduces interest-sensitive spending, shifting aggregate demand left.",
+    "primarySkill": "monetary_policy_ad_shift",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  },
+  {
+    "id": "PG4-MPT-M-004",
+    "concept": "monetary-policy-transmission",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "MONEY-AD-02.webp",
+    "stem": "In the contractionary two-panel diagram, how many units does real GDP fall from A to B?",
+    "options": [
+      "5",
+      "45",
+      "25",
+      "125"
+    ],
+    "correctAnswer": "25",
+    "feedback": "Read real GDP at A and B: 125 − 100 = 25 units.",
+    "primarySkill": "read_output_change_from_ad_shift",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "objective": "LO35.2"
+  }
+]

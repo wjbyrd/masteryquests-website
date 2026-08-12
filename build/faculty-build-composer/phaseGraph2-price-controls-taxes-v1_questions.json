@@ -1,12 +1,12 @@
 [
   {
     "id": "PG2-CEIL-E-001",
-    "q": "The apartment market shown has an equilibrium rent of $2,000 per month. How should the legal maximum rent of $1,000 be classified?",
+    "q": "A legal maximum rent of $1,000 is shown on the apartment-market graph. How should this policy be classified?",
     "options": [
-      "A binding price ceiling because it is below the equilibrium rent",
-      "A nonbinding price ceiling because it is below the equilibrium rent",
-      "A binding price floor because it is below equilibrium",
-      "A nonbinding price floor because quantity demanded exceeds quantity supplied"
+      "Binding ceiling: $1,000 is below equilibrium.",
+      "Nonbinding ceiling: $1,000 is below equilibrium.",
+      "Binding floor: $1,000 is below equilibrium.",
+      "Nonbinding floor: $1,000 is above equilibrium."
     ],
     "tag": "price_ceiling",
     "type": "graph",
@@ -19,7 +19,7 @@
     "commonError": "misreads_graph_or_policy_effect",
     "feedback": "A price ceiling is binding when it is set below the market equilibrium price. The graph places the ceiling at $1,000, below the $2,000 equilibrium rent.",
     "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
-    "aHash": "8156070b4c5a4d595138a9befe08c0eb28c1fcf1e0c6a4803f0121bd9d83c706",
+    "aHash": "476ddfb1de68e91799315c6d2130ea2323e9cab712eab44663bfcd909ae4200a",
     "canonicalId": "PG2-CEIL-E-001",
     "sourceId": 861000,
     "sourceGame": "micro-concept-library",
@@ -27,7 +27,7 @@
       "binding-price-ceilings"
     ],
     "sourcePool": "easy",
-    "sourceHash": "c4d14012af37fad68a46dceb4b90f00935ff26d1a02b53cc682e976136f6dd25",
+    "sourceHash": "feaa608bf07944ae1e59c06c02639e1ba87850cbabbdee5369a7c97ec4cbeb8d",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -37,7 +37,7 @@
         "routeKey": "binding_price_ceiling",
         "sourceRecordOrder": 0,
         "sourceId": 861000,
-        "sourceHash": "c4d14012af37fad68a46dceb4b90f00935ff26d1a02b53cc682e976136f6dd25"
+        "sourceHash": "feaa608bf07944ae1e59c06c02639e1ba87850cbabbdee5369a7c97ec4cbeb8d"
       }
     ],
     "primaryConceptId": "binding-price-ceilings",
@@ -48,8 +48,158 @@
     "originalBossTier": null
   },
   {
+    "id": "PG2-CEIL-EL-001",
+    "q": "A student looks at the $1,000 ceiling and says, “Because 250 apartments are demanded, 250 apartments will be rented.” What is the graph-based correction?",
+    "options": [
+      "Only 50 apartments trade; 200 renters go unmatched.",
+      "All 250 renters trade because the ceiling lowers rent.",
+      "Exactly 175 apartments trade, matching the old equilibrium.",
+      "A 200-unit surplus appears because landlords over-supply housing."
+    ],
+    "tag": "price_ceiling",
+    "type": "analysis",
+    "objective": "LO6.1",
+    "difficulty": "elite",
+    "conceptCluster": "market_policy",
+    "primarySkill": "ceiling_shortage_rationing",
+    "secondarySkills": [
+      "nonprice_rationing"
+    ],
+    "repairSkill": "ceiling_shortage_rationing",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "Quantity demanded is not the same thing as quantity traded. At the ceiling, landlords supply only 50 apartments, so the market is short by 200 units.",
+    "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
+    "aHash": "6cf03ad9ebaa2df4e5bcf738138188a7d3e84c79a3d0987d06cc5852cc427da5",
+    "canonicalId": "PG2-CEIL-EL-001",
+    "sourceId": 861004,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "binding-price-ceilings"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "3b4c9c680cee255af818e8f410b650b057e7bb4be2334caa744e75fb5169f42d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "ceiling_shortage_rationing",
+        "sourceRecordOrder": 4,
+        "sourceId": 861004,
+        "sourceHash": "3b4c9c680cee255af818e8f410b650b057e7bb4be2334caa744e75fb5169f42d"
+      }
+    ],
+    "primaryConceptId": "binding-price-ceilings",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-CEIL-H-001",
+    "q": "Relative to the competitive equilibrium, how do quantity demanded and quantity supplied change at the $1,000 ceiling?",
+    "options": [
+      "Quantity demanded -100; quantity supplied +100.",
+      "Quantity demanded +200; quantity supplied unchanged.",
+      "Quantity demanded unchanged; quantity supplied -200.",
+      "Quantity demanded +100; quantity supplied -100."
+    ],
+    "tag": "price_ceiling",
+    "type": "multi-step",
+    "objective": "LO6.1",
+    "difficulty": "hard",
+    "conceptCluster": "market_policy",
+    "primarySkill": "binding_ceiling_shortage_calculation",
+    "secondarySkills": [
+      "ceiling_shortage_calculation"
+    ],
+    "repairSkill": "binding_ceiling_shortage_calculation",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "At equilibrium both quantities are 150. At $1,000, quantity demanded is 250 and quantity supplied is 50. Demand therefore rises by 100 while supply falls by 100, opening a 200-unit shortage.",
+    "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
+    "aHash": "633150cb2624460d8a602bc8dcd7a6d348a891fdf92903265c6b385cbce942a6",
+    "canonicalId": "PG2-CEIL-H-001",
+    "sourceId": 861003,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "binding-price-ceilings"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "4345312cf26fe15a374c726c23b3e50fc490326f977bf9bd1da804e676c99adb",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "binding_ceiling_shortage_calculation",
+        "sourceRecordOrder": 3,
+        "sourceId": 861003,
+        "sourceHash": "4345312cf26fe15a374c726c23b3e50fc490326f977bf9bd1da804e676c99adb"
+      }
+    ],
+    "primaryConceptId": "binding-price-ceilings",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-CEIL-L-001",
+    "q": "At the $1,000 ceiling, what does the graph imply about rationing?",
+    "options": [
+      "All 250 renters trade because the legal rent is lower.",
+      "Only 50 units trade; 200 renters remain unmatched.",
+      "The legal rent rises to $2,000 until the shortage disappears.",
+      "Landlords add 200 units immediately, removing the shortage."
+    ],
+    "tag": "price_ceiling",
+    "type": "multi-step",
+    "objective": "LO6.1",
+    "difficulty": "legendary",
+    "conceptCluster": "market_policy",
+    "primarySkill": "ceiling_nonmoney_costs_and_misallocation",
+    "secondarySkills": [
+      "ceiling_shortage_rationing"
+    ],
+    "repairSkill": "ceiling_nonmoney_costs_and_misallocation",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "The graph establishes a 200-apartment shortage. A binding ceiling blocks price from doing the full rationing job, so other allocation mechanisms can matter; the graph does not identify which renters receive the limited units.",
+    "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
+    "aHash": "42776d2b5e9011ab315bccede98ee4612b6f2a7886190fab25c3088eab5d7a1e",
+    "canonicalId": "PG2-CEIL-L-001",
+    "sourceId": 861005,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "binding-price-ceilings"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "2d0084caa0512fbfcbe557960c0d4b4e07247f9c8091c0ce69380bb1c4d711fb",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "ceiling_nonmoney_costs_and_misallocation",
+        "sourceRecordOrder": 5,
+        "sourceId": 861005,
+        "sourceHash": "2d0084caa0512fbfcbe557960c0d4b4e07247f9c8091c0ce69380bb1c4d711fb"
+      }
+    ],
+    "primaryConceptId": "binding-price-ceilings",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
     "id": "PG2-CEIL-M-001",
-    "q": "At the $1,000 rent ceiling shown, landlords offer 50 apartments while renters demand 250. What shortage does the graph imply?",
+    "q": "At the $1,000 rent ceiling, what shortage is shown?",
     "options": [
       "50 apartments",
       "200 apartments",
@@ -65,7 +215,7 @@
     "secondarySkills": [],
     "repairSkill": "ceiling_shortage_calculation",
     "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "The shortage is quantity demanded minus quantity supplied: 250 - 50 = 200 apartments.",
+    "feedback": "Read quantity demanded and quantity supplied at the $1,000 ceiling and subtract: 250 − 50 = 200 apartments.",
     "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
     "aHash": "aded4ad83058ffa1364ef8eb9e8dc78d05bdebc8226dec09087bb7691cf6fa2d",
     "canonicalId": "PG2-CEIL-M-001",
@@ -75,7 +225,7 @@
       "binding-price-ceilings"
     ],
     "sourcePool": "medium",
-    "sourceHash": "2291eac661afccee64d402bdccfaffe013df3b60c211d83c914f37730cbc6dba",
+    "sourceHash": "1cd8402752a36c673f6fbf0fcfec9bc5b605db0858eb2712748d57707ff9ce94",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -85,7 +235,7 @@
         "routeKey": "ceiling_shortage_calculation",
         "sourceRecordOrder": 1,
         "sourceId": 861001,
-        "sourceHash": "2291eac661afccee64d402bdccfaffe013df3b60c211d83c914f37730cbc6dba"
+        "sourceHash": "1cd8402752a36c673f6fbf0fcfec9bc5b605db0858eb2712748d57707ff9ce94"
       }
     ],
     "primaryConceptId": "binding-price-ceilings",
@@ -144,163 +294,13 @@
     "originalBossTier": null
   },
   {
-    "id": "PG2-CEIL-H-001",
-    "q": "Compare the $2,000 equilibrium with the $1,000 ceiling. Which decomposition correctly explains the 200-apartment shortage?",
-    "options": [
-      "Quantity demanded falls by 100 and quantity supplied rises by 100, creating a 200-apartment gap",
-      "Quantity demanded rises by 200 while quantity supplied stays at 150",
-      "Quantity supplied falls by 200 while quantity demanded stays at 150",
-      "Quantity demanded rises by 100 and quantity supplied falls by 100, creating a 200-apartment gap"
-    ],
-    "tag": "price_ceiling",
-    "type": "multi-step",
-    "objective": "LO6.1",
-    "difficulty": "hard",
-    "conceptCluster": "market_policy",
-    "primarySkill": "binding_ceiling_shortage_calculation",
-    "secondarySkills": [
-      "ceiling_shortage_calculation"
-    ],
-    "repairSkill": "binding_ceiling_shortage_calculation",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "At equilibrium both quantities are 150. At $1,000, quantity demanded is 250 and quantity supplied is 50. Demand therefore rises by 100 while supply falls by 100, opening a 200-unit shortage.",
-    "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
-    "aHash": "970d72583437fb8be2196ec8359ddf6bab307822cbed145c8b27f5093f69185a",
-    "canonicalId": "PG2-CEIL-H-001",
-    "sourceId": 861003,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "binding-price-ceilings"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "221d4f6e31cf68658955732f8e085ade55b07dbbc5618b2e643fefb63e1538cc",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "binding_ceiling_shortage_calculation",
-        "sourceRecordOrder": 3,
-        "sourceId": 861003,
-        "sourceHash": "221d4f6e31cf68658955732f8e085ade55b07dbbc5618b2e643fefb63e1538cc"
-      }
-    ],
-    "primaryConceptId": "binding-price-ceilings",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-CEIL-EL-001",
-    "q": "A student looks at the $1,000 ceiling and says, “Because 250 apartments are demanded, 250 apartments will be rented.” What is the graph-based correction?",
-    "options": [
-      "Only 50 apartments are supplied, so at most 50 can be rented and 200 apartments of demand go unsatisfied",
-      "All 250 apartments will be rented because quantity demanded determines transactions under a ceiling",
-      "Exactly 150 apartments will be rented because the old equilibrium quantity cannot change",
-      "The ceiling creates a 200-apartment surplus, so landlords must rent all 250 units"
-    ],
-    "tag": "price_ceiling",
-    "type": "analysis",
-    "objective": "LO6.1",
-    "difficulty": "elite",
-    "conceptCluster": "market_policy",
-    "primarySkill": "ceiling_shortage_rationing",
-    "secondarySkills": [
-      "nonprice_rationing"
-    ],
-    "repairSkill": "ceiling_shortage_rationing",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "Quantity demanded is not the same thing as quantity traded. At the ceiling, landlords supply only 50 apartments, so the market is short by 200 units.",
-    "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
-    "aHash": "bbac81f0048ae0050487256c6e6df223474677ed6e4ff5f092aa8e869c50e2b9",
-    "canonicalId": "PG2-CEIL-EL-001",
-    "sourceId": 861004,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "binding-price-ceilings"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "4d8b3fe622e30752676b1dfb58cd9020bf4d4ccc94e8cbb0380f19b10d640d8b",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "ceiling_shortage_rationing",
-        "sourceRecordOrder": 4,
-        "sourceId": 861004,
-        "sourceHash": "4d8b3fe622e30752676b1dfb58cd9020bf4d4ccc94e8cbb0380f19b10d640d8b"
-      }
-    ],
-    "primaryConceptId": "binding-price-ceilings",
-    "secondaryConceptIds": [],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-CEIL-L-001",
-    "q": "The $1,000 ceiling leaves 250 renters seeking apartments but only 50 apartments offered. Which conclusion follows most directly from the graph and the logic of a binding ceiling?",
-    "options": [
-      "The 200-unit shortage guarantees that the legal rent will immediately rise to $2,000 despite the ceiling",
-      "Two hundred apartments of excess demand must be rationed somehow, and the graph alone cannot determine which renters obtain the 50 available units",
-      "All 250 renters can obtain apartments because the ceiling makes housing more affordable",
-      "The graph proves landlords will build 200 additional apartments to eliminate the shortage"
-    ],
-    "tag": "price_ceiling",
-    "type": "multi-step",
-    "objective": "LO6.1",
-    "difficulty": "legendary",
-    "conceptCluster": "market_policy",
-    "primarySkill": "ceiling_nonmoney_costs_and_misallocation",
-    "secondarySkills": [
-      "ceiling_shortage_rationing"
-    ],
-    "repairSkill": "ceiling_nonmoney_costs_and_misallocation",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "The graph establishes a 200-apartment shortage. A binding ceiling blocks price from doing the full rationing job, so other allocation mechanisms can matter; the graph does not identify which renters receive the limited units.",
-    "image": "question-assets/binding-price-ceilings/CEILING-01.webp",
-    "aHash": "1cdb6ca4574a6018b4dbadc3d6983bd6aea2e781af8cc3cb401343717b769d2e",
-    "canonicalId": "PG2-CEIL-L-001",
-    "sourceId": 861005,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "binding-price-ceilings"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "34bce83e311bbca19fda6d1c9c7ac19694b877eae0a7c4ae4071066f06b8f341",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "ceiling_nonmoney_costs_and_misallocation",
-        "sourceRecordOrder": 5,
-        "sourceId": 861005,
-        "sourceHash": "34bce83e311bbca19fda6d1c9c7ac19694b877eae0a7c4ae4071066f06b8f341"
-      }
-    ],
-    "primaryConceptId": "binding-price-ceilings",
-    "secondaryConceptIds": [],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
     "id": "PG2-FLR-E-001",
-    "q": "The labor market shown has an equilibrium wage of $7 per hour. How should the $10 legal minimum wage be classified?",
+    "q": "A legal minimum wage of $10 is shown on the labor-market graph. How should this policy be classified?",
     "options": [
-      "A nonbinding price floor because it is above the equilibrium wage",
-      "A binding price ceiling because it is above equilibrium",
-      "A binding price floor because it is above the equilibrium wage",
-      "A nonbinding price ceiling because labor supply exceeds labor demand"
+      "Nonbinding floor: $10 is above equilibrium.",
+      "Binding ceiling: $10 is above equilibrium.",
+      "Binding floor: $10 is above equilibrium.",
+      "Nonbinding ceiling: $10 is below equilibrium."
     ],
     "tag": "price_floor",
     "type": "graph",
@@ -313,7 +313,7 @@
     "commonError": "misreads_graph_or_policy_effect",
     "feedback": "A price floor is binding when it is set above equilibrium. The $10 wage floor sits above the $7 market-clearing wage.",
     "image": "question-assets/binding-price-floors/FLOOR-01.webp",
-    "aHash": "08afa5615fd4ea4d4f4069bb9da9a50bfdc429a6e912a456c39ef8c28b66e775",
+    "aHash": "6544c854808af082ced834fd990b4ea42644952619e11261c2530ce0b50da346",
     "canonicalId": "PG2-FLR-E-001",
     "sourceId": 861006,
     "sourceGame": "micro-concept-library",
@@ -321,7 +321,7 @@
       "binding-price-floors"
     ],
     "sourcePool": "easy",
-    "sourceHash": "a5eb19b29065f307bb5b62991c7788d096518d89ace2d7fabb6b0843315e7e58",
+    "sourceHash": "7c2065ae11386760d0e41e0245b7f24cea36f41f64120eaa6443b04c93ee3238",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -331,7 +331,7 @@
         "routeKey": "binding_price_floor",
         "sourceRecordOrder": 6,
         "sourceId": 861006,
-        "sourceHash": "a5eb19b29065f307bb5b62991c7788d096518d89ace2d7fabb6b0843315e7e58"
+        "sourceHash": "7c2065ae11386760d0e41e0245b7f24cea36f41f64120eaa6443b04c93ee3238"
       }
     ],
     "primaryConceptId": "binding-price-floors",
@@ -342,8 +342,159 @@
     "originalBossTier": null
   },
   {
+    "id": "PG2-FLR-EL-001",
+    "q": "A student says the $10 minimum wage raises employment to 250 thousand because 250 thousand workers are willing to work. What is the strongest correction using the graph?",
+    "options": [
+      "Employment is 250k; every willing worker is hired.",
+      "Employment stays 175k; the wage floor does not affect hiring.",
+      "Employment is 100k; 150k workers remain without jobs.",
+      "Employment is 100k; the 150k gap is a labor shortage."
+    ],
+    "tag": "price_floor",
+    "type": "analysis",
+    "objective": "LO6.2",
+    "difficulty": "elite",
+    "conceptCluster": "market_policy",
+    "primarySkill": "floor_surplus_rationing",
+    "secondarySkills": [
+      "minimum_wage_tradeoff"
+    ],
+    "repairSkill": "floor_surplus_rationing",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "A binding minimum wage creates excess labor supply, not automatic jobs. At $10, firms demand 100 thousand workers while 250 thousand seek work.",
+    "image": "question-assets/binding-price-floors/FLOOR-01.webp",
+    "aHash": "58f857f5ad84bf9d3d80be07e5d887299854ed3ed43a19898554e1b5d808caaa",
+    "canonicalId": "PG2-FLR-EL-001",
+    "sourceId": 861010,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "binding-price-floors"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "8d2007dc9ac13baea60ebcc6dc59c1be1e172b9d89d5d2c3888be872e55ce530",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "floor_surplus_rationing",
+        "sourceRecordOrder": 10,
+        "sourceId": 861010,
+        "sourceHash": "8d2007dc9ac13baea60ebcc6dc59c1be1e172b9d89d5d2c3888be872e55ce530"
+      }
+    ],
+    "primaryConceptId": "binding-price-floors",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-FLR-H-001",
+    "q": "Relative to the competitive equilibrium, how do labor supplied and labor demanded change at the $10 minimum wage?",
+    "options": [
+      "Labor supplied -75k; labor demanded +75k.",
+      "Labor supplied +75k; labor demanded -75k.",
+      "Labor supplied +150k; labor demanded unchanged.",
+      "Labor supplied unchanged; labor demanded -150k."
+    ],
+    "tag": "price_floor",
+    "type": "multi-step",
+    "objective": "LO6.2",
+    "difficulty": "hard",
+    "conceptCluster": "market_policy",
+    "primarySkill": "binding_floor_surplus_calculation",
+    "secondarySkills": [
+      "minimum_wage_surplus_calculation"
+    ],
+    "repairSkill": "binding_floor_surplus_calculation",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "At equilibrium, both labor supplied and demanded equal 175 thousand. At $10, labor supplied is 250 thousand and labor demanded is 100 thousand, so the two 75-thousand movements create the 150-thousand surplus.",
+    "image": "question-assets/binding-price-floors/FLOOR-01.webp",
+    "aHash": "bf0024fdac09d7a3292cd1136e17c9122c75b84fed99b02225761155ca3aa2b1",
+    "canonicalId": "PG2-FLR-H-001",
+    "sourceId": 861009,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "binding-price-floors"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "01d42fe6cca4c1995b6052fe359564365928bfe866d4c084812f22b0870890cd",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "binding_floor_surplus_calculation",
+        "sourceRecordOrder": 9,
+        "sourceId": 861009,
+        "sourceHash": "01d42fe6cca4c1995b6052fe359564365928bfe866d4c084812f22b0870890cd"
+      }
+    ],
+    "primaryConceptId": "binding-price-floors",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-FLR-L-001",
+    "q": "Using the graph, compare the $10 binding minimum wage with the $7 competitive equilibrium. Which transition is correct if the floor is reduced from $10 to $7?",
+    "options": [
+      "Employment falls to 175k; a labor shortage appears.",
+      "Employment stays at 100k; the old floor fixes hiring.",
+      "Employment rises to 250k; labor demand equals supply there.",
+      "Employment rises to 175k; the labor surplus disappears."
+    ],
+    "tag": "price_floor",
+    "type": "multi-step",
+    "objective": "LO6.2",
+    "difficulty": "legendary",
+    "conceptCluster": "market_policy",
+    "primarySkill": "minimum_wage_tradeoff",
+    "secondarySkills": [
+      "binding_price_floor",
+      "floor_surplus_effect"
+    ],
+    "repairSkill": "minimum_wage_tradeoff",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "At $10, labor demand is 100 thousand and labor supply is 250 thousand. At $7, both equal 175 thousand, so employment rises to the equilibrium quantity and the labor surplus vanishes.",
+    "image": "question-assets/binding-price-floors/FLOOR-01.webp",
+    "aHash": "e72214ddb81f04af82b93df7dc13e5c8042b53486fab00f3865455a0206785d3",
+    "canonicalId": "PG2-FLR-L-001",
+    "sourceId": 861011,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "binding-price-floors"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "ac9986540a3c5d46f460b305593d11750f82a64a7c0cc1b9a9eaf3c94f427624",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "minimum_wage_tradeoff",
+        "sourceRecordOrder": 11,
+        "sourceId": 861011,
+        "sourceHash": "ac9986540a3c5d46f460b305593d11750f82a64a7c0cc1b9a9eaf3c94f427624"
+      }
+    ],
+    "primaryConceptId": "binding-price-floors",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
     "id": "PG2-FLR-M-001",
-    "q": "At the $10 wage floor shown, 250 thousand workers want jobs while firms demand 100 thousand workers. What labor surplus results?",
+    "q": "At the $10 minimum wage, what labor surplus is shown?",
     "options": [
       "75 thousand workers",
       "100 thousand workers",
@@ -359,7 +510,7 @@
     "secondarySkills": [],
     "repairSkill": "minimum_wage_surplus_calculation",
     "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "Labor surplus equals labor supplied minus labor demanded: 250 thousand - 100 thousand = 150 thousand workers.",
+    "feedback": "Read labor supplied and labor demanded at $10 and subtract: 250 thousand − 100 thousand = 150 thousand workers.",
     "image": "question-assets/binding-price-floors/FLOOR-01.webp",
     "aHash": "600aac4b873e704a4b858fd53ccbf19968ebab037d91e9c20c9d58064f0c103a",
     "canonicalId": "PG2-FLR-M-001",
@@ -369,7 +520,7 @@
       "binding-price-floors"
     ],
     "sourcePool": "medium",
-    "sourceHash": "61fedc941d973635e22ef9fc0d5f4d633845b202ace9eac82b596e5788eb4870",
+    "sourceHash": "082778abf71d016f49276c787fa4348817e0ee9f44d1a1aa5e4a8824ee8eb4cf",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -379,7 +530,7 @@
         "routeKey": "minimum_wage_surplus_calculation",
         "sourceRecordOrder": 7,
         "sourceId": 861007,
-        "sourceHash": "61fedc941d973635e22ef9fc0d5f4d633845b202ace9eac82b596e5788eb4870"
+        "sourceHash": "082778abf71d016f49276c787fa4348817e0ee9f44d1a1aa5e4a8824ee8eb4cf"
       }
     ],
     "primaryConceptId": "binding-price-floors",
@@ -438,454 +589,6 @@
     "originalBossTier": null
   },
   {
-    "id": "PG2-FLR-H-001",
-    "q": "Compare the $7 labor-market equilibrium with the $10 wage floor. Which decomposition correctly explains the 150-thousand-worker labor surplus?",
-    "options": [
-      "Labor supplied falls by 75 thousand while labor demanded rises by 75 thousand",
-      "Labor supplied rises by 75 thousand while labor demanded falls by 75 thousand, creating a 150-thousand-worker gap",
-      "Labor supplied rises by 150 thousand while labor demand remains at 175 thousand",
-      "Labor demanded falls by 150 thousand while labor supply remains at 175 thousand"
-    ],
-    "tag": "price_floor",
-    "type": "multi-step",
-    "objective": "LO6.2",
-    "difficulty": "hard",
-    "conceptCluster": "market_policy",
-    "primarySkill": "binding_floor_surplus_calculation",
-    "secondarySkills": [
-      "minimum_wage_surplus_calculation"
-    ],
-    "repairSkill": "binding_floor_surplus_calculation",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "At equilibrium, both labor supplied and demanded equal 175 thousand. At $10, labor supplied is 250 thousand and labor demanded is 100 thousand, so the two 75-thousand movements create the 150-thousand surplus.",
-    "image": "question-assets/binding-price-floors/FLOOR-01.webp",
-    "aHash": "92e446f24d57eb7b0740999b66d83f536a7411ce7fa3da47cbe99d143ce96bb4",
-    "canonicalId": "PG2-FLR-H-001",
-    "sourceId": 861009,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "binding-price-floors"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "242635aff43f9303cd7e915e91a1f5d4506f8ca3c06cc417f98e6c1fbbe74308",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "binding_floor_surplus_calculation",
-        "sourceRecordOrder": 9,
-        "sourceId": 861009,
-        "sourceHash": "242635aff43f9303cd7e915e91a1f5d4506f8ca3c06cc417f98e6c1fbbe74308"
-      }
-    ],
-    "primaryConceptId": "binding-price-floors",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-FLR-EL-001",
-    "q": "A student says the $10 minimum wage raises employment to 250 thousand because 250 thousand workers are willing to work. What is the strongest correction using the graph?",
-    "options": [
-      "Employment must equal labor supply, so all 250 thousand workers are hired",
-      "Employment remains fixed at the old equilibrium of 175 thousand regardless of the wage floor",
-      "Firms demand only 100 thousand workers at $10, so employment is limited to 100 thousand and 150 thousand workers are left in surplus",
-      "The 150-thousand gap is a labor shortage, so firms compete for workers"
-    ],
-    "tag": "price_floor",
-    "type": "analysis",
-    "objective": "LO6.2",
-    "difficulty": "elite",
-    "conceptCluster": "market_policy",
-    "primarySkill": "floor_surplus_rationing",
-    "secondarySkills": [
-      "minimum_wage_tradeoff"
-    ],
-    "repairSkill": "floor_surplus_rationing",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "A binding minimum wage creates excess labor supply, not automatic jobs. At $10, firms demand 100 thousand workers while 250 thousand seek work.",
-    "image": "question-assets/binding-price-floors/FLOOR-01.webp",
-    "aHash": "f51be6cdb212e39051faaa96b3266b422b5fd6e1d707cc4f75e4509a2bfd3849",
-    "canonicalId": "PG2-FLR-EL-001",
-    "sourceId": 861010,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "binding-price-floors"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "91289746d86e41edcc8ef0801d94dfbc8d2c99c2427649b9c728fb9eec08109c",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "floor_surplus_rationing",
-        "sourceRecordOrder": 10,
-        "sourceId": 861010,
-        "sourceHash": "91289746d86e41edcc8ef0801d94dfbc8d2c99c2427649b9c728fb9eec08109c"
-      }
-    ],
-    "primaryConceptId": "binding-price-floors",
-    "secondaryConceptIds": [],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-FLR-L-001",
-    "q": "Using the graph, compare the $10 binding minimum wage with the $7 competitive equilibrium. Which transition is correct if the floor is reduced from $10 to $7?",
-    "options": [
-      "Employment falls from 250 thousand to 175 thousand and a labor shortage appears",
-      "Employment stays at 100 thousand because the old wage floor permanently fixes hiring",
-      "Labor supplied and labor demanded both rise to 250 thousand at $7",
-      "Employment rises from 100 thousand to 175 thousand and the 150-thousand-worker labor surplus disappears"
-    ],
-    "tag": "price_floor",
-    "type": "multi-step",
-    "objective": "LO6.2",
-    "difficulty": "legendary",
-    "conceptCluster": "market_policy",
-    "primarySkill": "minimum_wage_tradeoff",
-    "secondarySkills": [
-      "binding_price_floor",
-      "floor_surplus_effect"
-    ],
-    "repairSkill": "minimum_wage_tradeoff",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "At $10, labor demand is 100 thousand and labor supply is 250 thousand. At $7, both equal 175 thousand, so employment rises to the equilibrium quantity and the labor surplus vanishes.",
-    "image": "question-assets/binding-price-floors/FLOOR-01.webp",
-    "aHash": "d8ee0257081b6954aca23652334c3a200da200ec777139eb2cccceab8513d4b3",
-    "canonicalId": "PG2-FLR-L-001",
-    "sourceId": 861011,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "binding-price-floors"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "272676a70724aca5d8bfcd73b1ec1c92bcce349f5fd1fa43472c277e6b8aa74f",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "minimum_wage_tradeoff",
-        "sourceRecordOrder": 11,
-        "sourceId": 861011,
-        "sourceHash": "272676a70724aca5d8bfcd73b1ec1c92bcce349f5fd1fa43472c277e6b8aa74f"
-      }
-    ],
-    "primaryConceptId": "binding-price-floors",
-    "secondaryConceptIds": [],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-TAX-E-001",
-    "q": "In the displayed movie market, how large is the vertical gap between S0 and the parallel “Supply with tax” curve at a given quantity?",
-    "options": [
-      "$4 per movie",
-      "$2 per movie",
-      "$10 per movie",
-      "$14 per movie"
-    ],
-    "tag": "taxes",
-    "type": "graph",
-    "objective": "LO6.3",
-    "difficulty": "easy",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_wedge_calculation",
-    "secondarySkills": [],
-    "repairSkill": "tax_wedge_calculation",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "At quantity 100 thousand, S0 is at $10 while Supply with tax is at $14. The parallel vertical gap is therefore $4 per movie.",
-    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
-    "aHash": "d205c418e63aea0e573b13e3178f022215158a77b47bbbf3e8678dcec24d7ddb",
-    "canonicalId": "PG2-TAX-E-001",
-    "sourceId": 861012,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "tax-wedges-and-revenue"
-    ],
-    "sourcePool": "easy",
-    "sourceHash": "ab24f2037a11c7fe4ef5aab58ecbc0ec25aa65d5f9d2563ee9bd79204f21a3d4",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "easy",
-        "routeKey": "tax_wedge_calculation",
-        "sourceRecordOrder": 12,
-        "sourceId": 861012,
-        "sourceHash": "ab24f2037a11c7fe4ef5aab58ecbc0ec25aa65d5f9d2563ee9bd79204f21a3d4"
-      }
-    ],
-    "primaryConceptId": "tax-wedges-and-revenue",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "easy",
-    "originalSourcePool": "easy",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-TAX-M-001",
-    "q": "After the seller-side tax shown, quantity falls to 100 thousand movies. What prices do buyers pay and sellers receive?",
-    "options": [
-      "Buyers pay $12 and sellers receive $12",
-      "Buyers pay $14 and sellers receive $10",
-      "Buyers pay $10 and sellers receive $14",
-      "Buyers pay $14 and sellers receive $12"
-    ],
-    "tag": "taxes",
-    "type": "graph",
-    "objective": "LO6.3",
-    "difficulty": "medium",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_wedge_identification",
-    "secondarySkills": [],
-    "repairSkill": "tax_wedge_identification",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "At the post-tax quantity of 100 thousand, demand gives the buyer price of $14 while the original supply curve gives the seller receipt of $10.",
-    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
-    "aHash": "1f65908e13716e53568ea4abb5b8467f31604dd34e1c0d91f12c2864e2e310d9",
-    "canonicalId": "PG2-TAX-M-001",
-    "sourceId": 861013,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "tax-wedges-and-revenue"
-    ],
-    "sourcePool": "medium",
-    "sourceHash": "159172de611be0e603d477695c4dd66701c13a4a3bcfd967ddcc62fe263609c5",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "medium",
-        "routeKey": "tax_wedge_identification",
-        "sourceRecordOrder": 13,
-        "sourceId": 861013,
-        "sourceHash": "159172de611be0e603d477695c4dd66701c13a4a3bcfd967ddcc62fe263609c5"
-      }
-    ],
-    "primaryConceptId": "tax-wedges-and-revenue",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "medium",
-    "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-TAX-M-002",
-    "q": "The graph shows quantity falling from 140 thousand movies before the tax to 100 thousand after the tax. By how much does market quantity fall?",
-    "options": [
-      "20 thousand movies",
-      "100 thousand movies",
-      "40 thousand movies",
-      "240 thousand movies"
-    ],
-    "tag": "taxes",
-    "type": "calculation",
-    "objective": "LO6.3",
-    "difficulty": "medium",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_quantity_reduction_calculation",
-    "secondarySkills": [],
-    "repairSkill": "tax_quantity_reduction_calculation",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "The reduction in quantity traded is 140 thousand - 100 thousand = 40 thousand movies.",
-    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
-    "aHash": "497a7c3acb7c95d447781297be678e736787bbedff5006af9a871aa48b0dcb90",
-    "canonicalId": "PG2-TAX-M-002",
-    "sourceId": 861014,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "tax-wedges-and-revenue"
-    ],
-    "sourcePool": "medium",
-    "sourceHash": "440c1472b23956fd5a3102e1ff2faa5cad71af26433afde3ea1a49e2f0ac8c56",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "medium",
-        "routeKey": "tax_quantity_reduction_calculation",
-        "sourceRecordOrder": 14,
-        "sourceId": 861014,
-        "sourceHash": "440c1472b23956fd5a3102e1ff2faa5cad71af26433afde3ea1a49e2f0ac8c56"
-      }
-    ],
-    "primaryConceptId": "tax-wedges-and-revenue",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "medium",
-    "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-TAX-H-001",
-    "q": "The graph implies a $4 tax per movie and a post-tax quantity of 100 thousand movies. How much tax revenue is collected?",
-    "options": [
-      "$40,000",
-      "$100,000",
-      "$4,000,000",
-      "$400,000"
-    ],
-    "tag": "taxes",
-    "type": "multi-step",
-    "objective": "LO6.3",
-    "difficulty": "hard",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_revenue_calculation",
-    "secondarySkills": [],
-    "repairSkill": "tax_revenue_calculation",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "Tax revenue equals the $4 per-unit tax times 100 thousand units sold: $4 × 100,000 = $400,000.",
-    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
-    "aHash": "fe0ec22baf4906b496f88a8b0e7255d0381b366691d0a4d8ed91357ee5f8d233",
-    "canonicalId": "PG2-TAX-H-001",
-    "sourceId": 861015,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "tax-wedges-and-revenue"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "d31780a09e5917d86bd54ddb975e674cffc75d6f6110c740fa59653927620893",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "tax_revenue_calculation",
-        "sourceRecordOrder": 15,
-        "sourceId": 861015,
-        "sourceHash": "d31780a09e5917d86bd54ddb975e674cffc75d6f6110c740fa59653927620893"
-      }
-    ],
-    "primaryConceptId": "tax-wedges-and-revenue",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-TAX-EL-001",
-    "q": "Before the tax, the movie market is at $12. After the tax, buyers pay $14 and sellers receive $10. Which burden calculation matches the graph?",
-    "options": [
-      "Buyers bear $2 per movie and sellers bear $2 per movie",
-      "Buyers bear all $4 because the market price rises",
-      "Sellers bear all $4 because the tax is placed on supply",
-      "Buyers bear $4 and sellers bear $2, for a $6 total burden"
-    ],
-    "tag": "taxes",
-    "type": "analysis",
-    "objective": "LO6.3",
-    "difficulty": "elite",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_revenue_from_burden_split",
-    "secondarySkills": [
-      "tax_incidence"
-    ],
-    "repairSkill": "tax_revenue_from_burden_split",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "Relative to the original $12 price, buyers pay $2 more and sellers receive $2 less. Those two pieces add to the $4 tax wedge.",
-    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
-    "aHash": "43450805b96691167f18e670956c100b9b0ab98f773af2d4728ce07958e57eb2",
-    "canonicalId": "PG2-TAX-EL-001",
-    "sourceId": 861016,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "tax-wedges-and-revenue"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "4a9d936d50a06c758c6033c3d3c1cc1db2d33c4872a5028076804e1e21a8d614",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "tax_revenue_from_burden_split",
-        "sourceRecordOrder": 16,
-        "sourceId": 861016,
-        "sourceHash": "4a9d936d50a06c758c6033c3d3c1cc1db2d33c4872a5028076804e1e21a8d614"
-      }
-    ],
-    "primaryConceptId": "tax-wedges-and-revenue",
-    "secondaryConceptIds": [
-      "tax-incidence"
-    ],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-TAX-L-001",
-    "q": "The tax is drawn as an upward shift of supply, yet the graph shows buyers paying $2 more, sellers receiving $2 less, and quantity falling by 40 thousand. What is the best synthesis?",
-    "options": [
-      "Because supply shifts, sellers necessarily bear the full $4 tax while buyers are unaffected",
-      "Legal placement on sellers does not force sellers to bear the entire economic burden; the tax creates a $4 wedge shared by both sides and reduces trade",
-      "The tax raises both buyer and seller prices by $2, so neither side bears a burden",
-      "The 40-thousand quantity decline means the tax wedge must be $40 rather than $4"
-    ],
-    "tag": "taxes",
-    "type": "multi-step",
-    "objective": "LO6.3",
-    "difficulty": "legendary",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_wedge_market_shrinkage_synthesis",
-    "secondarySkills": [
-      "legal_vs_economic_tax_incidence",
-      "tax_quantity_effect"
-    ],
-    "repairSkill": "tax_wedge_market_shrinkage_synthesis",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "The graph separates statutory placement from market incidence. Buyers pay more, sellers net less, and fewer units are traded; the $4 wedge is split $2/$2 here.",
-    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
-    "aHash": "a13bc684fe1812550a630381008c99ff020fe90d6f733393f8cd200d9a741d9f",
-    "canonicalId": "PG2-TAX-L-001",
-    "sourceId": 861017,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "tax-wedges-and-revenue"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "ede1d2da8cc470d234b39a364ba3c23262a2fec908e356b7473322db84cea9a2",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "tax_wedge_market_shrinkage_synthesis",
-        "sourceRecordOrder": 17,
-        "sourceId": 861017,
-        "sourceHash": "ede1d2da8cc470d234b39a364ba3c23262a2fec908e356b7473322db84cea9a2"
-      }
-    ],
-    "primaryConceptId": "tax-wedges-and-revenue",
-    "secondaryConceptIds": [
-      "tax-incidence"
-    ],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
     "id": "PG2-STX-E-001",
     "q": "At the post-tax quantity of 60 thousand movies, what price do sellers receive according to the supply curve?",
     "options": [
@@ -933,156 +636,6 @@
     "instructionalRole": "main",
     "canonicalDifficulty": "easy",
     "originalSourcePool": "easy",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-STX-M-001",
-    "q": "At 60 thousand movies, buyers pay $13.50 while sellers receive $7.50. What per-unit tax wedge separates those prices?",
-    "options": [
-      "$3 per movie",
-      "$7.50 per movie",
-      "$21 per movie",
-      "$6 per movie"
-    ],
-    "tag": "tax_incidence",
-    "type": "calculation",
-    "objective": "LO6.4",
-    "difficulty": "medium",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "buyer_seller_tax_equivalence",
-    "secondarySkills": [],
-    "repairSkill": "buyer_seller_tax_equivalence",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "The tax wedge is the buyer price minus the seller receipt: $13.50 - $7.50 = $6.",
-    "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
-    "aHash": "36fba10952696cb1ef6f0ed924f863936bc729a422ca116c797ec6d1e1d5a7fe",
-    "canonicalId": "PG2-STX-M-001",
-    "sourceId": 861019,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "statutory-versus-economic-tax-incidence"
-    ],
-    "sourcePool": "medium",
-    "sourceHash": "b764d33c28d48db33104613c79971eba0f489f16fc995051f8ba91e5b2fa8b4c",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "medium",
-        "routeKey": "buyer_seller_tax_equivalence",
-        "sourceRecordOrder": 19,
-        "sourceId": 861019,
-        "sourceHash": "b764d33c28d48db33104613c79971eba0f489f16fc995051f8ba91e5b2fa8b4c"
-      }
-    ],
-    "primaryConceptId": "statutory-versus-economic-tax-incidence",
-    "secondaryConceptIds": [
-      "tax-incidence"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "medium",
-    "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-STX-M-002",
-    "q": "The original equilibrium price is $10.50. After the buyer-side tax, buyers pay $13.50 and sellers receive $7.50. How is the $6 economic burden split?",
-    "options": [
-      "$3 on buyers and $3 on sellers",
-      "$6 on buyers and $0 on sellers",
-      "$0 on buyers and $6 on sellers",
-      "$1.50 on buyers and $4.50 on sellers"
-    ],
-    "tag": "tax_incidence",
-    "type": "analysis",
-    "objective": "LO6.4",
-    "difficulty": "medium",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "statutory_vs_economic_incidence",
-    "secondarySkills": [],
-    "repairSkill": "statutory_vs_economic_incidence",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "Buyers pay $3 more than the original $10.50 price, while sellers receive $3 less. The legal placement on buyers does not make buyers bear the entire tax.",
-    "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
-    "aHash": "ec85f1973dbbd4ac50cba9f93b634c18914cbf3e7e8b99fe76fd252871efbb38",
-    "canonicalId": "PG2-STX-M-002",
-    "sourceId": 861020,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "statutory-versus-economic-tax-incidence"
-    ],
-    "sourcePool": "medium",
-    "sourceHash": "98f34d49c667afc60975ec3e3685dd55c502f35dc2086e435cc79a7bea0942a2",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "medium",
-        "routeKey": "statutory_vs_economic_incidence",
-        "sourceRecordOrder": 20,
-        "sourceId": 861020,
-        "sourceHash": "98f34d49c667afc60975ec3e3685dd55c502f35dc2086e435cc79a7bea0942a2"
-      }
-    ],
-    "primaryConceptId": "statutory-versus-economic-tax-incidence",
-    "secondaryConceptIds": [
-      "tax-incidence"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "medium",
-    "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG2-STX-H-001",
-    "q": "The graph shows the original quantity at 100 thousand movies and the post-tax quantity at 60 thousand. What market effect accompanies the buyer-side tax?",
-    "options": [
-      "Quantity traded rises by 40 thousand movies",
-      "Quantity traded falls by 40 thousand movies",
-      "Quantity traded stays at 100 thousand movies",
-      "Quantity traded falls by 60 thousand movies"
-    ],
-    "tag": "tax_incidence",
-    "type": "calculation",
-    "objective": "LO6.4",
-    "difficulty": "hard",
-    "conceptCluster": "tax_policy",
-    "primarySkill": "tax_equivalence_application",
-    "secondarySkills": [],
-    "repairSkill": "tax_equivalence_application",
-    "commonError": "misreads_graph_or_policy_effect",
-    "feedback": "Quantity falls from 100 thousand to 60 thousand, a decline of 40 thousand movies. Sellers are therefore affected even though buyers legally remit the tax.",
-    "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
-    "aHash": "7ddb40b719f58487e0dd0b3135c2425a869fa33ecd354e98930cd1dd368c8b7f",
-    "canonicalId": "PG2-STX-H-001",
-    "sourceId": 861021,
-    "sourceGame": "micro-concept-library",
-    "sourceChapter": [
-      "statutory-versus-economic-tax-incidence"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "47a8764594c97325a11b28d1fe4188ba2f3666f162a5b475c0b2925eba450942",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "micro-concept-library",
-        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "tax_equivalence_application",
-        "sourceRecordOrder": 21,
-        "sourceId": 861021,
-        "sourceHash": "47a8764594c97325a11b28d1fe4188ba2f3666f162a5b475c0b2925eba450942"
-      }
-    ],
-    "primaryConceptId": "statutory-versus-economic-tax-incidence",
-    "secondaryConceptIds": [
-      "tax-incidence"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
     "originalBossTier": null
   },
   {
@@ -1138,13 +691,63 @@
     "originalBossTier": null
   },
   {
+    "id": "PG2-STX-H-001",
+    "q": "Measure the contraction in movie transactions caused by the buyer-side tax. How large is it?",
+    "options": [
+      "Quantity traded rises by 40 thousand movies",
+      "Quantity traded falls by 40 thousand movies",
+      "Quantity traded stays at 100 thousand movies",
+      "Quantity traded falls by 60 thousand movies"
+    ],
+    "tag": "tax_incidence",
+    "type": "calculation",
+    "objective": "LO6.4",
+    "difficulty": "hard",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_equivalence_application",
+    "secondarySkills": [],
+    "repairSkill": "tax_equivalence_application",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "Read the original and post-tax quantities from the graph: 100 thousand − 60 thousand = 40 thousand movies.",
+    "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+    "aHash": "7ddb40b719f58487e0dd0b3135c2425a869fa33ecd354e98930cd1dd368c8b7f",
+    "canonicalId": "PG2-STX-H-001",
+    "sourceId": 861021,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "statutory-versus-economic-tax-incidence"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "9b83429832325de8ff88dc1f56e4c8813fc3820a4ef0d66498731d9cbcb6b886",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "tax_equivalence_application",
+        "sourceRecordOrder": 21,
+        "sourceId": 861021,
+        "sourceHash": "9b83429832325de8ff88dc1f56e4c8813fc3820a4ef0d66498731d9cbcb6b886"
+      }
+    ],
+    "primaryConceptId": "statutory-versus-economic-tax-incidence",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
     "id": "PG2-STX-L-001",
     "q": "A student sees “Demand with tax” and concludes, “Buyers must bear the full $6 because the tax is legally placed on them.” Which graph-based accounting defeats that claim?",
     "options": [
-      "Buyers pay $6 more while sellers still receive the original $10.50, so the claim is correct",
-      "Sellers receive $6 less while buyers still pay $10.50, so buyers bear none of the tax",
-      "The quantity drop from 100 thousand to 60 thousand proves incidence cannot be measured from prices",
-      "Buyers pay $3 more than the original price, sellers receive $3 less, and the $6 wedge is therefore shared equally in this market"
+      "Legal placement fixes incidence; buyers bear the entire tax.",
+      "Legal placement fixes incidence; sellers bear the entire tax.",
+      "Incidence cannot be inferred from buyer and seller prices.",
+      "Legal placement and incidence differ; both sides share it."
     ],
     "tag": "tax_incidence",
     "type": "multi-step",
@@ -1160,7 +763,7 @@
     "commonError": "misreads_graph_or_policy_effect",
     "feedback": "Economic incidence is measured by changes from the original equilibrium price, not by who sends the tax payment to government. Here the buyer increase and seller decrease are both $3.",
     "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
-    "aHash": "d27f665558444210ab89fb010c6bfd8e0d20544f0f0fe27b0a5c9061e12a55a6",
+    "aHash": "baca1c22b1d337b639c709c3b6e5a1d322e97c96d852c33565799509fd3810a7",
     "canonicalId": "PG2-STX-L-001",
     "sourceId": 861023,
     "sourceGame": "micro-concept-library",
@@ -1168,7 +771,7 @@
       "statutory-versus-economic-tax-incidence"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "90cfd792ba25acf80e869c4fef6870c7f5f18611d7681acc38e10cce4d661e70",
+    "sourceHash": "4c70347aff94251862dcdeb74d5e4fd08e91d02108a35b8a8169ac3d87459bdc",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1178,7 +781,7 @@
         "routeKey": "tax_incidence_misconception_detection",
         "sourceRecordOrder": 23,
         "sourceId": 861023,
-        "sourceHash": "90cfd792ba25acf80e869c4fef6870c7f5f18611d7681acc38e10cce4d661e70"
+        "sourceHash": "4c70347aff94251862dcdeb74d5e4fd08e91d02108a35b8a8169ac3d87459bdc"
       }
     ],
     "primaryConceptId": "statutory-versus-economic-tax-incidence",
@@ -1188,6 +791,403 @@
     "instructionalRole": "legendary",
     "canonicalDifficulty": "legendary",
     "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-STX-M-001",
+    "q": "What per-unit tax wedge is shown after the buyer-side tax?",
+    "options": [
+      "$3 per movie",
+      "$7.50 per movie",
+      "$21 per movie",
+      "$6 per movie"
+    ],
+    "tag": "tax_incidence",
+    "type": "calculation",
+    "objective": "LO6.4",
+    "difficulty": "medium",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "secondarySkills": [],
+    "repairSkill": "buyer_seller_tax_equivalence",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "At the post-tax quantity, read the buyer price and seller receipt from the graph and take the difference: $13.50 − $7.50 = $6.",
+    "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+    "aHash": "36fba10952696cb1ef6f0ed924f863936bc729a422ca116c797ec6d1e1d5a7fe",
+    "canonicalId": "PG2-STX-M-001",
+    "sourceId": 861019,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "statutory-versus-economic-tax-incidence"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "cc2c96a084faaef7c7f810f4761d0a67a9e30abb92171a34259962d911457314",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "buyer_seller_tax_equivalence",
+        "sourceRecordOrder": 19,
+        "sourceId": 861019,
+        "sourceHash": "cc2c96a084faaef7c7f810f4761d0a67a9e30abb92171a34259962d911457314"
+      }
+    ],
+    "primaryConceptId": "statutory-versus-economic-tax-incidence",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-STX-M-002",
+    "q": "Using the graph, which side bears more of the buyer-side tax?",
+    "options": [
+      "Neither; the burden is split equally.",
+      "Buyers bear more of the tax than sellers.",
+      "Sellers bear more of the tax than buyers.",
+      "Neither side bears any economic tax burden."
+    ],
+    "tag": "tax_incidence",
+    "type": "analysis",
+    "objective": "LO6.4",
+    "difficulty": "medium",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "statutory_vs_economic_incidence",
+    "secondarySkills": [],
+    "repairSkill": "statutory_vs_economic_incidence",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "Buyers pay $3 more than the original $10.50 price, while sellers receive $3 less. The legal placement on buyers does not make buyers bear the entire tax.",
+    "image": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+    "aHash": "3570683d4c88c91d80402c14ed109ef6ac6808b5360177d72c097641fc1bd030",
+    "canonicalId": "PG2-STX-M-002",
+    "sourceId": 861020,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "statutory-versus-economic-tax-incidence"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "73e2ad04a72e6cca57098c00179c6e85bab1275384f3a0cc1aab93e8453fc61c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "statutory_vs_economic_incidence",
+        "sourceRecordOrder": 20,
+        "sourceId": 861020,
+        "sourceHash": "73e2ad04a72e6cca57098c00179c6e85bab1275384f3a0cc1aab93e8453fc61c"
+      }
+    ],
+    "primaryConceptId": "statutory-versus-economic-tax-incidence",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-TAX-E-001",
+    "q": "In the displayed movie market, how large is the vertical gap between S0 and the parallel “Supply with tax” curve at a given quantity?",
+    "options": [
+      "$4 per movie",
+      "$2 per movie",
+      "$10 per movie",
+      "$14 per movie"
+    ],
+    "tag": "taxes",
+    "type": "graph",
+    "objective": "LO6.3",
+    "difficulty": "easy",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_wedge_calculation",
+    "secondarySkills": [],
+    "repairSkill": "tax_wedge_calculation",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "At quantity 100 thousand, S0 is at $10 while Supply with tax is at $14. The parallel vertical gap is therefore $4 per movie.",
+    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+    "aHash": "d205c418e63aea0e573b13e3178f022215158a77b47bbbf3e8678dcec24d7ddb",
+    "canonicalId": "PG2-TAX-E-001",
+    "sourceId": 861012,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "tax-wedges-and-revenue"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "ab24f2037a11c7fe4ef5aab58ecbc0ec25aa65d5f9d2563ee9bd79204f21a3d4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "tax_wedge_calculation",
+        "sourceRecordOrder": 12,
+        "sourceId": 861012,
+        "sourceHash": "ab24f2037a11c7fe4ef5aab58ecbc0ec25aa65d5f9d2563ee9bd79204f21a3d4"
+      }
+    ],
+    "primaryConceptId": "tax-wedges-and-revenue",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-TAX-EL-001",
+    "q": "Using the graph, how is the per-unit tax burden divided between buyers and sellers?",
+    "options": [
+      "Buyers: $2; sellers: $2.",
+      "Buyers: $4; sellers: $0.",
+      "Buyers: $0; sellers: $4.",
+      "Buyers: $3; sellers: $1."
+    ],
+    "tag": "taxes",
+    "type": "analysis",
+    "objective": "LO6.3",
+    "difficulty": "elite",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_revenue_from_burden_split",
+    "secondarySkills": [
+      "tax_incidence"
+    ],
+    "repairSkill": "tax_revenue_from_burden_split",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "Relative to the original $12 price, buyers pay $2 more and sellers receive $2 less. Those two pieces add to the $4 tax wedge.",
+    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+    "aHash": "d29bf503b5117086393aa1acbeda7a9ea148a4e2b9968e7baeb97d94df450ece",
+    "canonicalId": "PG2-TAX-EL-001",
+    "sourceId": 861016,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "tax-wedges-and-revenue"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "f03b5d6f7507c5b746b86e192c218365d5ad487dbf7e8e3eebcd01d4e564792b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "tax_revenue_from_burden_split",
+        "sourceRecordOrder": 16,
+        "sourceId": 861016,
+        "sourceHash": "f03b5d6f7507c5b746b86e192c218365d5ad487dbf7e8e3eebcd01d4e564792b"
+      }
+    ],
+    "primaryConceptId": "tax-wedges-and-revenue",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-TAX-H-001",
+    "q": "After the tax is imposed, how much tax revenue is collected?",
+    "options": [
+      "$40,000",
+      "$100,000",
+      "$4,000,000",
+      "$400,000"
+    ],
+    "tag": "taxes",
+    "type": "multi-step",
+    "objective": "LO6.3",
+    "difficulty": "hard",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_revenue_calculation",
+    "secondarySkills": [],
+    "repairSkill": "tax_revenue_calculation",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "Read the $4 per-movie wedge and the 100-thousand post-tax quantity from the graph. Revenue is $4 × 100,000 = $400,000.",
+    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+    "aHash": "fe0ec22baf4906b496f88a8b0e7255d0381b366691d0a4d8ed91357ee5f8d233",
+    "canonicalId": "PG2-TAX-H-001",
+    "sourceId": 861015,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "tax-wedges-and-revenue"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "39dc60f31f1388bf0313d638d002fe953fbb43dcd23529b21e5f7b2c09432130",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "tax_revenue_calculation",
+        "sourceRecordOrder": 15,
+        "sourceId": 861015,
+        "sourceHash": "39dc60f31f1388bf0313d638d002fe953fbb43dcd23529b21e5f7b2c09432130"
+      }
+    ],
+    "primaryConceptId": "tax-wedges-and-revenue",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-TAX-L-001",
+    "q": "What does this graph show about statutory tax placement versus economic incidence?",
+    "options": [
+      "Sellers bear the full $4 because supply is the shifted curve.",
+      "The $4 wedge is shared; sellers do not bear all of it.",
+      "Buyers bear the full $4 because the market price rises.",
+      "Neither side bears the tax because quantity falls after the tax."
+    ],
+    "tag": "taxes",
+    "type": "multi-step",
+    "objective": "LO6.3",
+    "difficulty": "legendary",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_wedge_market_shrinkage_synthesis",
+    "secondarySkills": [
+      "legal_vs_economic_tax_incidence",
+      "tax_quantity_effect"
+    ],
+    "repairSkill": "tax_wedge_market_shrinkage_synthesis",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "The graph separates statutory placement from market incidence. Buyers pay more, sellers net less, and fewer units are traded; the $4 wedge is split $2/$2 here.",
+    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+    "aHash": "8a60d9087d8984db4ee8fa1667bce96627bf50c18d603c0f3d529634bfe915f7",
+    "canonicalId": "PG2-TAX-L-001",
+    "sourceId": 861017,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "tax-wedges-and-revenue"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "cfd800c90392cbe6a6cdff4256626bcbeb1b5a22de76f656198770d02a345561",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "tax_wedge_market_shrinkage_synthesis",
+        "sourceRecordOrder": 17,
+        "sourceId": 861017,
+        "sourceHash": "cfd800c90392cbe6a6cdff4256626bcbeb1b5a22de76f656198770d02a345561"
+      }
+    ],
+    "primaryConceptId": "tax-wedges-and-revenue",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-TAX-M-001",
+    "q": "After the seller-side tax shown, quantity falls to 100 thousand movies. What prices do buyers pay and sellers receive?",
+    "options": [
+      "Buyers pay $12 and sellers receive $12",
+      "Buyers pay $14 and sellers receive $10",
+      "Buyers pay $10 and sellers receive $14",
+      "Buyers pay $14 and sellers receive $12"
+    ],
+    "tag": "taxes",
+    "type": "graph",
+    "objective": "LO6.3",
+    "difficulty": "medium",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_wedge_identification",
+    "secondarySkills": [],
+    "repairSkill": "tax_wedge_identification",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "At the post-tax quantity of 100 thousand, demand gives the buyer price of $14 while the original supply curve gives the seller receipt of $10.",
+    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+    "aHash": "1f65908e13716e53568ea4abb5b8467f31604dd34e1c0d91f12c2864e2e310d9",
+    "canonicalId": "PG2-TAX-M-001",
+    "sourceId": 861013,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "tax-wedges-and-revenue"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "159172de611be0e603d477695c4dd66701c13a4a3bcfd967ddcc62fe263609c5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "tax_wedge_identification",
+        "sourceRecordOrder": 13,
+        "sourceId": 861013,
+        "sourceHash": "159172de611be0e603d477695c4dd66701c13a4a3bcfd967ddcc62fe263609c5"
+      }
+    ],
+    "primaryConceptId": "tax-wedges-and-revenue",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG2-TAX-M-002",
+    "q": "After the tax is imposed, by how much does quantity traded fall?",
+    "options": [
+      "20 thousand movies",
+      "100 thousand movies",
+      "40 thousand movies",
+      "240 thousand movies"
+    ],
+    "tag": "taxes",
+    "type": "calculation",
+    "objective": "LO6.3",
+    "difficulty": "medium",
+    "conceptCluster": "tax_policy",
+    "primarySkill": "tax_quantity_reduction_calculation",
+    "secondarySkills": [],
+    "repairSkill": "tax_quantity_reduction_calculation",
+    "commonError": "misreads_graph_or_policy_effect",
+    "feedback": "Read the pre-tax and post-tax quantities from the graph: 140 thousand − 100 thousand = 40 thousand movies.",
+    "image": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+    "aHash": "497a7c3acb7c95d447781297be678e736787bbedff5006af9a871aa48b0dcb90",
+    "canonicalId": "PG2-TAX-M-002",
+    "sourceId": 861014,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "tax-wedges-and-revenue"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "85b40b97c70669a6d130fe64b013e436e85131f2c7f7a1a8d9a72dd576e156f9",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph2-price-controls-taxes-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "tax_quantity_reduction_calculation",
+        "sourceRecordOrder": 14,
+        "sourceId": 861014,
+        "sourceHash": "85b40b97c70669a6d130fe64b013e436e85131f2c7f7a1a8d9a72dd576e156f9"
+      }
+    ],
+    "primaryConceptId": "tax-wedges-and-revenue",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
     "originalBossTier": null
   }
 ]

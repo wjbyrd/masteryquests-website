@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-12T17:45:00.000Z",
+  "generatedAt": "2026-08-12T19:30:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -227,19 +227,19 @@
       "questionCountByRole": {
         "boss": 9,
         "bridge": 6,
-        "calculation": 30,
+        "calculation": 22,
         "elite": 13,
         "integration": 0,
         "legendary": 7,
         "legendaryBoss": 5,
-        "main": 18,
+        "main": 26,
         "repair": 10,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 15,
+        "medium": 21,
+        "hard": 21,
         "elite": 13,
         "legendary": 12,
         "unknown": 16
@@ -252,7 +252,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 90
       },
-      "calculationCoverage": 31,
+      "calculationCoverage": 29,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money, Banking, and Fed Operations family slice. Large healthy banks are preserved; additions are concentrated only where measured structural gaps existed.",
@@ -537,7 +537,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 19,
+        "main": 15,
         "repair": 8,
         "repairSeed": 0
       },
@@ -623,10 +623,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 7,
-        "elite": 2,
-        "hard": 4,
-        "legendary": 3,
         "medium": 7,
+        "hard": 4,
+        "elite": 2,
+        "legendary": 3,
         "unknown": 4
       },
       "repairCoverage": {
@@ -703,15 +703,15 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 134,
-        "elite": 30,
-        "legendary": 90,
-        "calculation": 30,
         "boss": 54,
-        "legendaryBoss": 36,
-        "repair": 30,
         "bridge": 38,
+        "calculation": 30,
+        "elite": 30,
         "integration": 0,
+        "legendary": 90,
+        "legendaryBoss": 36,
+        "main": 134,
+        "repair": 30,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
@@ -730,7 +730,7 @@
         "directSkillMatches": 38,
         "mainWithUsableSkill": 442
       },
-      "calculationCoverage": 51,
+      "calculationCoverage": 14,
       "graphCoverage": 64,
       "status": "active",
       "notes": "Fresh Principles of Microeconomics bank authored in Phase 6.2c. Course-sequence guardrails exclude international-trade machinery, monopoly, market structure, and externalities. Graph labels were offset from curve endpoints during the cleanup pass.",
@@ -781,24 +781,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 23,
-        "elite": 2,
-        "legendary": 3,
-        "calculation": 10,
-        "boss": 10,
-        "legendaryBoss": 1,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 17,
-        "medium": 14,
-        "hard": 12,
-        "elite": 2,
-        "legendary": 4,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -808,7 +808,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 61
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
@@ -874,24 +874,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 24,
-        "elite": 3,
-        "legendary": 3,
-        "calculation": 10,
-        "boss": 10,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 17,
-        "medium": 14,
-        "hard": 13,
-        "elite": 3,
-        "legendary": 3,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -901,7 +901,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 62
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Consumer and Producer Surplus family. No questions were added, removed, or rewritten.",
@@ -966,24 +966,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 28,
-        "elite": 7,
-        "legendary": 20,
-        "calculation": 3,
-        "boss": 10,
-        "legendaryBoss": 10,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 13,
-        "hard": 16,
-        "elite": 7,
-        "legendary": 30,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1060,24 +1060,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 30,
-        "elite": 6,
-        "legendary": 38,
-        "calculation": 5,
-        "boss": 15,
-        "legendaryBoss": 13,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 15,
-        "hard": 22,
-        "elite": 6,
-        "legendary": 51,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1153,24 +1153,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 14,
-        "elite": 9,
-        "legendary": 18,
-        "calculation": 2,
-        "boss": 5,
-        "legendaryBoss": 8,
-        "repair": 3,
-        "bridge": 11,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 6,
-        "hard": 10,
-        "elite": 9,
-        "legendary": 26,
-        "unknown": 14
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -1243,24 +1243,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 3,
-        "legendary": 8,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 4,
-        "legendaryBoss": 4,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 6,
-        "hard": 7,
-        "elite": 3,
-        "legendary": 12,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -1387,10 +1387,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 106,
-        "elite": 42,
-        "hard": 115,
-        "legendary": 134,
         "medium": 107,
+        "hard": 115,
+        "elite": 42,
+        "legendary": 134,
         "unknown": 104
       },
       "repairCoverage": {
@@ -1453,24 +1453,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 11,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 1,
-        "calculation": 4,
-        "boss": 2,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 5,
-        "hard": 5,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 1,
-        "unknown": 6
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -1480,7 +1480,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 18
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -1546,24 +1546,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 26,
-        "elite": 2,
-        "legendary": 13,
-        "calculation": 4,
-        "boss": 3,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 10,
-        "hard": 10,
-        "elite": 2,
-        "legendary": 25,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1573,7 +1573,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 60
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -1644,24 +1644,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 32,
-        "elite": 7,
-        "legendary": 10,
-        "calculation": 4,
-        "boss": 15,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 24,
-        "medium": 13,
-        "hard": 14,
-        "elite": 7,
-        "legendary": 10,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1671,7 +1671,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 68
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -1738,24 +1738,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 27,
-        "elite": 1,
-        "legendary": 6,
-        "calculation": 7,
-        "boss": 2,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 12,
-        "hard": 14,
-        "elite": 1,
-        "legendary": 18,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1765,7 +1765,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 55
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -1830,24 +1830,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 25,
-        "elite": 8,
-        "legendary": 6,
-        "calculation": 5,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 15,
-        "hard": 10,
-        "elite": 8,
-        "legendary": 6,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1857,7 +1857,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 49
       },
-      "calculationCoverage": 5,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -1925,24 +1925,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 26,
-        "elite": 3,
-        "legendary": 5,
-        "calculation": 4,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 7,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 12,
-        "hard": 13,
-        "elite": 3,
-        "legendary": 5,
-        "unknown": 13
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -1952,7 +1952,7 @@
         "directSkillMatches": 7,
         "mainWithUsableSkill": 43
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -2022,24 +2022,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 33,
-        "elite": 10,
-        "legendary": 31,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 15,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 7,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 20,
-        "hard": 16,
-        "elite": 10,
-        "legendary": 43,
-        "unknown": 13
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -2113,24 +2113,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 3,
-        "legendary": 3,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 2,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 5,
-        "hard": 7,
-        "elite": 3,
-        "legendary": 3,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -2206,24 +2206,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 28,
-        "elite": 5,
-        "legendary": 18,
-        "calculation": 2,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 10,
-        "hard": 16,
-        "elite": 5,
-        "legendary": 18,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -2233,7 +2233,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 59
       },
-      "calculationCoverage": 2,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Costs of Production with targeted adaptive-depth/support backfill; protected pre-Phase-Micro4 question wording and answers remain unchanged.",
@@ -2297,24 +2297,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 3,
-        "legendary": 5,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 5,
-        "hard": 10,
-        "elite": 3,
-        "legendary": 5,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -2405,10 +2405,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 16,
-        "elite": 4,
-        "hard": 18,
-        "legendary": 9,
         "medium": 17,
+        "hard": 18,
+        "elite": 4,
+        "legendary": 9,
         "unknown": 6
       },
       "repairCoverage": {
@@ -2466,7 +2466,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 14,
         "repair": 4,
         "repairSeed": 0
       },
@@ -2534,7 +2534,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 12,
         "repair": 2,
         "repairSeed": 0
       },
@@ -2702,7 +2702,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 10,
         "repair": 2,
         "repairSeed": 0
       },
@@ -2763,7 +2763,7 @@
         "integration": 0,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 12,
         "repair": 2,
         "repairSeed": 0
       },
@@ -2843,7 +2843,7 @@
         "integration": 0,
         "legendary": 10,
         "legendaryBoss": 4,
-        "main": 24,
+        "main": 11,
         "repair": 6,
         "repairSeed": 1
       },
@@ -2942,15 +2942,15 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 164,
-        "elite": 38,
-        "legendary": 97,
-        "calculation": 30,
         "boss": 60,
-        "legendaryBoss": 36,
-        "repair": 34,
         "bridge": 36,
+        "calculation": 30,
+        "elite": 38,
         "integration": 0,
+        "legendary": 97,
+        "legendaryBoss": 36,
+        "main": 164,
+        "repair": 34,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
@@ -3030,24 +3030,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 60,
-        "elite": 15,
-        "legendary": 34,
-        "calculation": 10,
-        "boss": 21,
-        "legendaryBoss": 13,
-        "repair": 10,
-        "bridge": 8,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 34,
-        "medium": 20,
-        "hard": 37,
-        "elite": 15,
-        "legendary": 47,
-        "unknown": 18
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 10,
@@ -3057,7 +3057,7 @@
         "directSkillMatches": 8,
         "mainWithUsableSkill": 171
       },
-      "calculationCoverage": 51,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
@@ -3121,24 +3121,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 26,
-        "elite": 3,
-        "legendary": 15,
-        "calculation": 5,
-        "boss": 6,
-        "legendaryBoss": 4,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 12,
-        "hard": 13,
-        "elite": 3,
-        "legendary": 19,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -3148,7 +3148,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 71
       },
-      "calculationCoverage": 15,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
@@ -3208,24 +3208,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 11,
-        "elite": 2,
-        "legendary": 8,
-        "calculation": 5,
-        "boss": 4,
-        "legendaryBoss": 2,
-        "repair": 3,
-        "bridge": 3,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 6,
-        "hard": 7,
-        "elite": 2,
-        "legendary": 10,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -3235,7 +3235,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 38
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
@@ -3295,24 +3295,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 12,
-        "elite": 4,
-        "legendary": 10,
-        "calculation": 5,
-        "boss": 5,
-        "legendaryBoss": 2,
-        "repair": 3,
-        "bridge": 3,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 7,
-        "hard": 8,
-        "elite": 4,
-        "legendary": 12,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -3322,7 +3322,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 44
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
@@ -3384,24 +3384,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 25,
-        "elite": 8,
-        "legendary": 8,
-        "calculation": 5,
-        "boss": 11,
-        "legendaryBoss": 2,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 15,
-        "hard": 13,
-        "elite": 8,
-        "legendary": 10,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -3411,7 +3411,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 71
       },
-      "calculationCoverage": 9,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing Elasticity family. No questions were added, removed, or rewritten.",
@@ -3478,24 +3478,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 30,
-        "elite": 6,
-        "legendary": 22,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 13,
-        "legendaryBoss": 13,
-        "repair": 6,
-        "bridge": 10,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 14,
-        "hard": 18,
-        "elite": 6,
-        "legendary": 35,
-        "unknown": 16
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -3631,9 +3631,9 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 10,
-        "hard": 9,
+        "easy": 12,
+        "medium": 14,
+        "hard": 14,
         "elite": 11,
         "legendary": 11,
         "unknown": 14
@@ -3646,7 +3646,7 @@
         "directSkillMatches": 5,
         "mainWithUsableSkill": 76
       },
-      "calculationCoverage": 42,
+      "calculationCoverage": 13,
       "graphCoverage": 4,
       "status": "active",
       "notes": "Fiscal and stabilization family slice. No new graph image was added; existing fiscal, money-market, transmission, and AD-AS assets are retained with complete accessibility metadata.",
@@ -3709,19 +3709,19 @@
       "questionCountByRole": {
         "boss": 9,
         "bridge": 3,
-        "calculation": 4,
+        "calculation": 1,
         "elite": 4,
         "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 20,
+        "main": 23,
         "repair": 6,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 9,
         "medium": 11,
-        "hard": 9,
+        "hard": 13,
         "elite": 4,
         "legendary": 11,
         "unknown": 9
@@ -3734,7 +3734,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 54
       },
-      "calculationCoverage": 14,
+      "calculationCoverage": 7,
       "graphCoverage": 3,
       "status": "active",
       "notes": "Fiscal and stabilization family slice. No new graph image was added; existing fiscal, money-market, transmission, and AD-AS assets are retained with complete accessibility metadata.",
@@ -3798,17 +3798,17 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 16,
+        "main": 6,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 7,
-        "hard": 8,
+        "easy": 12,
+        "medium": 10,
+        "hard": 11,
         "elite": 3,
         "legendary": 9,
-        "unknown": 7
+        "unknown": 6
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -3818,7 +3818,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 52
       },
-      "calculationCoverage": 23,
+      "calculationCoverage": 8,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money Growth, Inflation, and Neutrality family slice. Quantity Theory content is protected; additions close structural floors and improve long-run causal reasoning.",
@@ -3920,10 +3920,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 15,
-        "elite": 6,
-        "hard": 17,
-        "legendary": 36,
         "medium": 17,
+        "hard": 17,
+        "elite": 6,
+        "legendary": 36,
         "unknown": 15
       },
       "repairCoverage": {
@@ -3934,7 +3934,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 91
       },
-      "calculationCoverage": 43,
+      "calculationCoverage": 42,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Phase 7.5 matured the shared General/Micro/Macro Comparative Advantage and Gains from Trade bank without merging the later international-trade-and-trade-policy bank.",
@@ -3989,14 +3989,14 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 10,
         "repair": 6,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 9,
-        "hard": 9,
+        "easy": 16,
+        "medium": 12,
+        "hard": 12,
         "elite": 5,
         "legendary": 9,
         "unknown": 9
@@ -4079,10 +4079,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 22,
-        "elite": 8,
-        "hard": 11,
-        "legendary": 11,
         "medium": 12,
+        "hard": 11,
+        "elite": 8,
+        "legendary": 11,
         "unknown": 9
       },
       "repairCoverage": {
@@ -4176,10 +4176,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 14,
-        "elite": 4,
-        "hard": 14,
-        "legendary": 36,
         "medium": 14,
+        "hard": 14,
+        "elite": 4,
+        "legendary": 36,
         "unknown": 13
       },
       "repairCoverage": {
@@ -4239,14 +4239,14 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 4,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 11,
+        "medium": 11,
+        "hard": 12,
         "elite": 3,
         "legendary": 9,
         "unknown": 3
@@ -4259,7 +4259,7 @@
         "directSkillMatches": 1,
         "mainWithUsableSkill": 49
       },
-      "calculationCoverage": 30,
+      "calculationCoverage": 16,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Supporting slice of Inflation Measurement and Real Values. Use the five-concept family for the richest progression.",
@@ -4331,7 +4331,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 4,
-        "main": 22,
+        "main": 20,
         "repair": 7,
         "repairSeed": 0
       },
@@ -4351,7 +4351,7 @@
         "directSkillMatches": 4,
         "mainWithUsableSkill": 58
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money Growth, Inflation, and Neutrality family slice. Quantity Theory content is protected; additions close structural floors and improve long-run causal reasoning.",
@@ -4421,14 +4421,14 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 15,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 9,
         "medium": 9,
-        "hard": 9,
+        "hard": 10,
         "elite": 6,
         "legendary": 9,
         "unknown": 5
@@ -4441,7 +4441,7 @@
         "directSkillMatches": 2,
         "mainWithUsableSkill": 48
       },
-      "calculationCoverage": 2,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money Growth, Inflation, and Neutrality family slice. Quantity Theory content is protected; additions close structural floors and improve long-run causal reasoning.",
@@ -4776,7 +4776,7 @@
       "questionCountByDifficulty": {
         "easy": 8,
         "medium": 9,
-        "hard": 40,
+        "hard": 33,
         "elite": 7,
         "legendary": 53,
         "unknown": 2
@@ -4890,15 +4890,15 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 163,
-        "elite": 38,
-        "legendary": 100,
-        "calculation": 30,
         "boss": 58,
-        "legendaryBoss": 36,
-        "repair": 30,
         "bridge": 32,
+        "calculation": 30,
+        "elite": 38,
         "integration": 0,
+        "legendary": 100,
+        "legendaryBoss": 36,
+        "main": 163,
+        "repair": 30,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
@@ -4969,24 +4969,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 22,
-        "elite": 3,
-        "legendary": 0,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 4,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 5,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 12,
-        "hard": 5,
-        "elite": 3,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
         "legendary": 0,
-        "unknown": 8
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -5067,24 +5067,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 26,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 20,
-        "calculation": 8,
-        "boss": 14,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 22,
-        "medium": 14,
-        "hard": 12,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 20,
-        "unknown": 12
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -5094,7 +5094,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 80
       },
-      "calculationCoverage": 10,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
@@ -5165,24 +5165,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 37,
-        "elite": 8,
-        "legendary": 24,
-        "calculation": 15,
-        "boss": 18,
-        "legendaryBoss": 24,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 24,
-        "hard": 32,
-        "elite": 8,
-        "legendary": 48,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -5192,7 +5192,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 138
       },
-      "calculationCoverage": 21,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
@@ -5267,24 +5267,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 34,
-        "elite": 8,
-        "legendary": 24,
-        "calculation": 6,
-        "boss": 8,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 11,
-        "hard": 27,
-        "elite": 8,
-        "legendary": 36,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -5294,7 +5294,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 104
       },
-      "calculationCoverage": 15,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
@@ -5369,24 +5369,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 29,
-        "elite": 7,
-        "legendary": 6,
-        "calculation": 1,
-        "boss": 8,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 10,
-        "hard": 18,
-        "elite": 7,
-        "legendary": 6,
-        "unknown": 12
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -5396,7 +5396,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 63
       },
-      "calculationCoverage": 9,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of the existing International Trade and Trade Policy family. No questions were added, removed, or rewritten.",
@@ -5462,24 +5462,24 @@
         "internationalTradeTradePolicy"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 12,
-        "legendary": 26,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 7,
-        "hard": 9,
-        "elite": 12,
-        "legendary": 26,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -5556,7 +5556,7 @@
         "integration": 0,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 12,
         "repair": 3,
         "repairSeed": 0
       },
@@ -5576,7 +5576,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 58
       },
-      "calculationCoverage": 6,
+      "calculationCoverage": 5,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
@@ -5625,7 +5625,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 7,
         "repair": 2,
         "repairSeed": 0
       },
@@ -5798,9 +5798,9 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 12,
-        "hard": 9,
+        "easy": 11,
+        "medium": 14,
+        "hard": 11,
         "elite": 5,
         "legendary": 9,
         "unknown": 6
@@ -5865,7 +5865,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 15,
         "repair": 5,
         "repairSeed": 0
       },
@@ -5945,15 +5945,15 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 16,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 9,
-        "medium": 9,
+        "medium": 11,
         "hard": 9,
-        "elite": 2,
+        "elite": 6,
         "legendary": 9,
         "unknown": 5
       },
@@ -5966,7 +5966,7 @@
         "mainWithUsableSkill": 43
       },
       "calculationCoverage": 0,
-      "graphCoverage": 7,
+      "graphCoverage": 13,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
       "instructionalClassification": "Engine-safe family slice",
@@ -6117,10 +6117,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 16,
-        "elite": 6,
-        "hard": 18,
-        "legendary": 36,
         "medium": 17,
+        "hard": 18,
+        "elite": 6,
+        "legendary": 36,
         "unknown": 15
       },
       "repairCoverage": {
@@ -6131,7 +6131,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 93
       },
-      "calculationCoverage": 45,
+      "calculationCoverage": 27,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Phase 7.3 matured the shared General/Macro Marginal Analysis bank around next-increment decisions, stopping rules, sunk and avoidable costs, total-to-marginal calculations, opportunity costs, uncertainty, and social marginal cost.",
@@ -6311,7 +6311,7 @@
         "integration": 0,
         "legendary": 12,
         "legendaryBoss": 5,
-        "main": 24,
+        "main": 13,
         "repair": 7,
         "repairSeed": 2
       },
@@ -6384,7 +6384,7 @@
         "integration": 0,
         "legendary": 10,
         "legendaryBoss": 4,
-        "main": 24,
+        "main": 12,
         "repair": 6,
         "repairSeed": 1
       },
@@ -6466,16 +6466,16 @@
         "integration": 0,
         "legendary": 12,
         "legendaryBoss": 6,
-        "main": 24,
+        "main": 12,
         "repair": 6,
         "repairSeed": 1
       },
       "questionCountByDifficulty": {
         "easy": 11,
-        "elite": 4,
-        "hard": 11,
-        "legendary": 18,
         "medium": 11,
+        "hard": 11,
+        "elite": 4,
+        "legendary": 18,
         "unknown": 11
       },
       "repairCoverage": {
@@ -6567,14 +6567,14 @@
         "integration": 0,
         "legendary": 8,
         "legendaryBoss": 4,
-        "main": 21,
+        "main": 20,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 9,
-        "medium": 9,
-        "hard": 12,
+        "medium": 10,
+        "hard": 13,
         "elite": 9,
         "legendary": 12,
         "unknown": 7
@@ -6587,7 +6587,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 60
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 2,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money, Banking, and Fed Operations family slice. Large healthy banks are preserved; additions are concentrated only where measured structural gaps existed.",
@@ -6660,17 +6660,17 @@
         "integration": 0,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 21,
+        "main": 18,
         "repair": 7,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 13,
-        "medium": 8,
-        "hard": 9,
+        "medium": 10,
+        "hard": 11,
         "elite": 6,
         "legendary": 10,
-        "unknown": 12
+        "unknown": 11
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -6680,7 +6680,7 @@
         "directSkillMatches": 5,
         "mainWithUsableSkill": 62
       },
-      "calculationCoverage": 14,
+      "calculationCoverage": 5,
       "graphCoverage": 2,
       "status": "active",
       "notes": "Money Growth, Inflation, and Neutrality family slice. Quantity Theory content is protected; additions close structural floors and improve long-run causal reasoning.",
@@ -6763,7 +6763,7 @@
       "questionCountByDifficulty": {
         "easy": 10,
         "medium": 11,
-        "hard": 9,
+        "hard": 11,
         "elite": 8,
         "legendary": 10,
         "unknown": 10
@@ -6776,7 +6776,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 60
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 2,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money, Banking, and Fed Operations family slice. Large healthy banks are preserved; additions are concentrated only where measured structural gaps existed.",
@@ -6976,8 +6976,8 @@
       },
       "questionCountByDifficulty": {
         "easy": 15,
-        "medium": 11,
-        "hard": 9,
+        "medium": 13,
+        "hard": 10,
         "elite": 4,
         "legendary": 9,
         "unknown": 15
@@ -6990,7 +6990,7 @@
         "directSkillMatches": 4,
         "mainWithUsableSkill": 66
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 4,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Money, Banking, and Fed Operations family slice. Large healthy banks are preserved; additions are concentrated only where measured structural gaps existed.",
@@ -7077,23 +7077,23 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 152,
-        "elite": 37,
-        "legendary": 95,
-        "calculation": 30,
         "boss": 57,
-        "legendaryBoss": 36,
-        "repair": 26,
         "bridge": 26,
+        "calculation": 30,
+        "elite": 37,
         "integration": 0,
+        "legendary": 95,
+        "legendaryBoss": 36,
+        "main": 152,
+        "repair": 26,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 77,
-        "elite": 37,
-        "hard": 96,
-        "legendary": 131,
         "medium": 78,
+        "hard": 96,
+        "elite": 37,
+        "legendary": 131,
         "unknown": 40
       },
       "repairCoverage": {
@@ -7161,24 +7161,24 @@
         "monopolisticCompetition"
       ],
       "questionCountByRole": {
-        "main": 20,
-        "elite": 0,
-        "legendary": 0,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 4,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 17,
-        "medium": 5,
-        "hard": 5,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
         "legendary": 0,
-        "unknown": 6
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -7261,24 +7261,24 @@
         "monopolisticCompetition"
       ],
       "questionCountByRole": {
-        "main": 36,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 20,
-        "calculation": 21,
-        "boss": 12,
-        "legendaryBoss": 24,
-        "repair": 6,
-        "bridge": 6,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 25,
-        "medium": 14,
-        "hard": 34,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 44,
-        "unknown": 8
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -7288,7 +7288,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 113
       },
-      "calculationCoverage": 21,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
@@ -7374,24 +7374,24 @@
         "monopolisticCompetition"
       ],
       "questionCountByRole": {
-        "main": 53,
-        "elite": 27,
-        "legendary": 43,
-        "calculation": 7,
-        "boss": 21,
-        "legendaryBoss": 12,
-        "repair": 8,
-        "bridge": 7,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 16,
-        "medium": 41,
-        "hard": 24,
-        "elite": 27,
-        "legendary": 55,
-        "unknown": 15
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -7401,7 +7401,7 @@
         "directSkillMatches": 7,
         "mainWithUsableSkill": 163
       },
-      "calculationCoverage": 7,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
@@ -7475,24 +7475,24 @@
         "monopolisticCompetition"
       ],
       "questionCountByRole": {
-        "main": 28,
-        "elite": 5,
-        "legendary": 19,
-        "calculation": 2,
-        "boss": 10,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 13,
-        "hard": 20,
-        "elite": 5,
-        "legendary": 19,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -7502,7 +7502,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 64
       },
-      "calculationCoverage": 2,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopolistic Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro7 question wording and answers remain unchanged.",
@@ -7573,24 +7573,24 @@
         "monopolisticCompetition"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 5,
-        "legendary": 13,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 8,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 5,
-        "hard": 13,
-        "elite": 5,
-        "legendary": 13,
-        "unknown": 5
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -7710,23 +7710,23 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 186,
-        "elite": 40,
-        "legendary": 96,
-        "calculation": 30,
         "boss": 58,
-        "legendaryBoss": 36,
-        "repair": 39,
         "bridge": 39,
+        "calculation": 30,
+        "elite": 40,
         "integration": 0,
+        "legendary": 96,
+        "legendaryBoss": 36,
+        "main": 186,
+        "repair": 39,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 106,
-        "elite": 40,
-        "hard": 101,
-        "legendary": 132,
         "medium": 105,
+        "hard": 101,
+        "elite": 40,
+        "legendary": 132,
         "unknown": 40
       },
       "repairCoverage": {
@@ -7792,24 +7792,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 16,
-        "elite": 0,
-        "legendary": 0,
-        "calculation": 0,
         "boss": 0,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 8,
-        "hard": 5,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
         "legendary": 0,
-        "unknown": 2
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -7889,24 +7889,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 22,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 18,
-        "calculation": 10,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 18,
-        "medium": 13,
-        "hard": 12,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 18,
-        "unknown": 7
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -7916,7 +7916,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 56
       },
-      "calculationCoverage": 10,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
@@ -7985,24 +7985,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 30,
-        "elite": 8,
-        "legendary": 16,
-        "calculation": 5,
-        "boss": 12,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 28,
-        "medium": 12,
-        "hard": 13,
-        "elite": 8,
-        "legendary": 28,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8012,7 +8012,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 83
       },
-      "calculationCoverage": 5,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
@@ -8080,24 +8080,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 30,
-        "elite": 10,
-        "legendary": 9,
-        "calculation": 5,
-        "boss": 20,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 32,
-        "hard": 13,
-        "elite": 10,
-        "legendary": 21,
-        "unknown": 9
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8107,7 +8107,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 86
       },
-      "calculationCoverage": 5,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
@@ -8178,24 +8178,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 32,
-        "elite": 9,
-        "legendary": 20,
-        "calculation": 5,
-        "boss": 7,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 11,
-        "hard": 24,
-        "elite": 9,
-        "legendary": 32,
-        "unknown": 7
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8205,7 +8205,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 85
       },
-      "calculationCoverage": 5,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
@@ -8275,24 +8275,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 28,
-        "elite": 9,
-        "legendary": 18,
-        "calculation": 3,
-        "boss": 7,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 15,
-        "hard": 18,
-        "elite": 9,
-        "legendary": 18,
-        "unknown": 3
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8302,7 +8302,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 65
       },
-      "calculationCoverage": 3,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
@@ -8371,24 +8371,24 @@
         "monopoly"
       ],
       "questionCountByRole": {
-        "main": 28,
-        "elite": 4,
-        "legendary": 15,
-        "calculation": 2,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 14,
-        "hard": 16,
-        "elite": 4,
-        "legendary": 15,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8398,7 +8398,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 55
       },
-      "calculationCoverage": 2,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Monopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro6 question wording and answers remain unchanged.",
@@ -8475,7 +8475,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 9,
         "repair": 3,
         "repairSeed": 0
       },
@@ -8495,7 +8495,7 @@
         "directSkillMatches": 1,
         "mainWithUsableSkill": 44
       },
-      "calculationCoverage": 10,
+      "calculationCoverage": 3,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
@@ -8585,23 +8585,23 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 144,
-        "elite": 30,
-        "legendary": 90,
-        "calculation": 30,
         "boss": 54,
-        "legendaryBoss": 36,
-        "repair": 30,
         "bridge": 31,
+        "calculation": 30,
+        "elite": 30,
         "integration": 0,
+        "legendary": 90,
+        "legendaryBoss": 36,
+        "main": 144,
+        "repair": 30,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 78,
-        "elite": 30,
-        "hard": 91,
-        "legendary": 126,
         "medium": 80,
+        "hard": 91,
+        "elite": 30,
+        "legendary": 126,
         "unknown": 40
       },
       "repairCoverage": {
@@ -8671,24 +8671,24 @@
         "oligopoly"
       ],
       "questionCountByRole": {
-        "main": 28,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 12,
-        "calculation": 9,
-        "boss": 3,
-        "legendaryBoss": 5,
-        "repair": 6,
-        "bridge": 6,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 12,
-        "hard": 17,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 17,
-        "unknown": 8
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8698,7 +8698,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 57
       },
-      "calculationCoverage": 9,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Oligopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro8 question wording and answers remain unchanged.",
@@ -8772,24 +8772,24 @@
         "oligopoly"
       ],
       "questionCountByRole": {
-        "main": 32,
-        "elite": 10,
-        "legendary": 18,
-        "calculation": 10,
-        "boss": 15,
-        "legendaryBoss": 9,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 25,
-        "medium": 16,
-        "hard": 22,
-        "elite": 10,
-        "legendary": 27,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8799,7 +8799,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 94
       },
-      "calculationCoverage": 10,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Oligopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro8 question wording and answers remain unchanged.",
@@ -8876,24 +8876,24 @@
         "oligopoly"
       ],
       "questionCountByRole": {
-        "main": 27,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 12,
-        "calculation": 3,
-        "boss": 8,
-        "legendaryBoss": 7,
-        "repair": 6,
-        "bridge": 7,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 18,
-        "hard": 10,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 19,
-        "unknown": 11
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -8903,7 +8903,7 @@
         "directSkillMatches": 7,
         "mainWithUsableSkill": 57
       },
-      "calculationCoverage": 3,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Oligopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro8 question wording and answers remain unchanged.",
@@ -8977,24 +8977,24 @@
         "oligopoly"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 12,
-        "legendary": 22,
-        "calculation": 4,
-        "boss": 15,
-        "legendaryBoss": 11,
-        "repair": 3,
-        "bridge": 3,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 14,
-        "hard": 17,
-        "elite": 12,
-        "legendary": 33,
-        "unknown": 4
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -9004,7 +9004,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 79
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Oligopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro8 question wording and answers remain unchanged. This child intentionally isolates optional higher-end dynamic game theory from core Principles Oligopoly.",
@@ -9078,24 +9078,24 @@
         "oligopoly"
       ],
       "questionCountByRole": {
-        "main": 16,
-        "elite": 0,
-        "legendary": 10,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 10,
-        "hard": 7,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
-        "legendary": 10,
-        "unknown": 4
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -9179,24 +9179,24 @@
         "oligopoly"
       ],
       "questionCountByRole": {
-        "main": 26,
-        "elite": 8,
-        "legendary": 16,
-        "calculation": 4,
-        "boss": 8,
-        "legendaryBoss": 4,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 10,
-        "hard": 18,
-        "elite": 8,
-        "legendary": 20,
-        "unknown": 7
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -9206,7 +9206,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 66
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Oligopoly with targeted adaptive-depth/support backfill; protected pre-Phase-Micro8 question wording and answers remain unchanged.",
@@ -9309,10 +9309,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 15,
-        "elite": 6,
-        "hard": 18,
-        "legendary": 36,
         "medium": 18,
+        "hard": 18,
+        "elite": 6,
+        "legendary": 36,
         "unknown": 15
       },
       "repairCoverage": {
@@ -9323,7 +9323,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 93
       },
-      "calculationCoverage": 34,
+      "calculationCoverage": 30,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Phase 7.2 matured the shared General/Macro Opportunity Cost bank around next-best alternatives, implicit and time costs, sunk-cost distinctions, production tradeoffs, and varied calculation families.",
@@ -9412,23 +9412,23 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 209,
-        "elite": 44,
-        "legendary": 100,
-        "calculation": 30,
         "boss": 62,
-        "legendaryBoss": 36,
-        "repair": 42,
         "bridge": 42,
+        "calculation": 30,
+        "elite": 44,
         "integration": 0,
+        "legendary": 100,
+        "legendaryBoss": 36,
+        "main": 209,
+        "repair": 42,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 118,
-        "elite": 44,
-        "hard": 107,
-        "legendary": 136,
         "medium": 120,
+        "hard": 107,
+        "elite": 44,
+        "legendary": 136,
         "unknown": 40
       },
       "repairCoverage": {
@@ -9497,24 +9497,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 28,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
         "elite": 0,
-        "legendary": 0,
-        "calculation": 4,
-        "boss": 10,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 22,
-        "medium": 14,
-        "hard": 10,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
         "elite": 0,
         "legendary": 0,
-        "unknown": 8
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -9524,7 +9524,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 42
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -9596,24 +9596,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 38,
-        "elite": 15,
-        "legendary": 18,
-        "calculation": 5,
-        "boss": 9,
-        "legendaryBoss": 7,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 26,
-        "medium": 14,
-        "hard": 18,
-        "elite": 15,
-        "legendary": 25,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -9623,7 +9623,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 92
       },
-      "calculationCoverage": 5,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -9694,24 +9694,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 30,
-        "elite": 2,
-        "legendary": 7,
-        "calculation": 12,
-        "boss": 7,
-        "legendaryBoss": 2,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 16,
-        "medium": 26,
-        "hard": 16,
-        "elite": 2,
-        "legendary": 9,
-        "unknown": 3
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -9721,7 +9721,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 60
       },
-      "calculationCoverage": 12,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -9790,24 +9790,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 26,
-        "elite": 10,
-        "legendary": 16,
-        "calculation": 4,
-        "boss": 10,
-        "legendaryBoss": 6,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 23,
-        "hard": 10,
-        "elite": 10,
-        "legendary": 22,
-        "unknown": 5
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -9817,7 +9817,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 72
       },
-      "calculationCoverage": 4,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -9887,24 +9887,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 27,
-        "elite": 1,
-        "legendary": 16,
-        "calculation": 3,
-        "boss": 5,
-        "legendaryBoss": 1,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 17,
-        "hard": 10,
-        "elite": 1,
-        "legendary": 17,
-        "unknown": 6
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -9914,7 +9914,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 53
       },
-      "calculationCoverage": 3,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -9987,24 +9987,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 29,
-        "elite": 6,
-        "legendary": 10,
-        "calculation": 1,
-        "boss": 9,
-        "legendaryBoss": 5,
-        "repair": 6,
-        "bridge": 6,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 13,
-        "hard": 19,
-        "elite": 6,
-        "legendary": 15,
-        "unknown": 7
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -10014,7 +10014,7 @@
         "directSkillMatches": 6,
         "mainWithUsableSkill": 60
       },
-      "calculationCoverage": 1,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -10081,23 +10081,23 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 15,
-        "elite": 6,
-        "legendary": 17,
+        "boss": 0,
+        "bridge": 0,
         "calculation": 0,
-        "boss": 7,
-        "legendaryBoss": 8,
-        "repair": 3,
-        "bridge": 3,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 8,
-        "medium": 8,
-        "hard": 12,
-        "elite": 6,
-        "legendary": 25,
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
         "unknown": 0
       },
       "repairCoverage": {
@@ -10175,24 +10175,24 @@
         "perfectCompetition"
       ],
       "questionCountByRole": {
-        "main": 16,
-        "elite": 4,
-        "legendary": 16,
-        "calculation": 1,
-        "boss": 5,
-        "legendaryBoss": 7,
-        "repair": 3,
-        "bridge": 3,
+        "boss": 0,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
         "integration": 0,
+        "legendary": 0,
+        "legendaryBoss": 0,
+        "main": 0,
+        "repair": 0,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 5,
-        "hard": 12,
-        "elite": 4,
-        "legendary": 23,
-        "unknown": 5
+        "easy": 0,
+        "medium": 0,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -10202,7 +10202,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 49
       },
-      "calculationCoverage": 1,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Derived Micro granularity slice of Perfect Competition with targeted adaptive-depth/support backfill; protected pre-Phase-Micro5 question wording and answers remain unchanged.",
@@ -10283,16 +10283,16 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 23,
+        "main": 28,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 14,
+        "easy": 10,
+        "medium": 10,
+        "hard": 15,
         "elite": 4,
-        "legendary": 9,
+        "legendary": 12,
         "unknown": 6
       },
       "repairCoverage": {
@@ -10304,7 +10304,7 @@
         "mainWithUsableSkill": 51
       },
       "calculationCoverage": 0,
-      "graphCoverage": 17,
+      "graphCoverage": 23,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
       "instructionalClassification": "Engine-safe family slice",
@@ -10353,7 +10353,7 @@
         "integration": 0,
         "legendary": 10,
         "legendaryBoss": 4,
-        "main": 24,
+        "main": 7,
         "repair": 6,
         "repairSeed": 0
       },
@@ -10445,10 +10445,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 4,
-        "elite": 2,
-        "hard": 7,
-        "legendary": 3,
         "medium": 7,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 3,
         "unknown": 4
       },
       "repairCoverage": {
@@ -10540,9 +10540,9 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 12,
-        "hard": 12,
+        "easy": 12,
+        "medium": 16,
+        "hard": 18,
         "elite": 5,
         "legendary": 18,
         "unknown": 15
@@ -10555,7 +10555,7 @@
         "directSkillMatches": 8,
         "mainWithUsableSkill": 85
       },
-      "calculationCoverage": 6,
+      "calculationCoverage": 5,
       "graphCoverage": 23,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
@@ -10596,14 +10596,14 @@
         "integration": 0,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 6,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 12,
-        "hard": 9,
+        "easy": 11,
+        "medium": 14,
+        "hard": 11,
         "elite": 4,
         "legendary": 10,
         "unknown": 3
@@ -10727,9 +10727,9 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 10,
-        "hard": 9,
+        "easy": 13,
+        "medium": 15,
+        "hard": 15,
         "elite": 12,
         "legendary": 13,
         "unknown": 13
@@ -10742,7 +10742,7 @@
         "directSkillMatches": 5,
         "mainWithUsableSkill": 81
       },
-      "calculationCoverage": 26,
+      "calculationCoverage": 15,
       "graphCoverage": 1,
       "status": "active",
       "notes": "Money Growth, Inflation, and Neutrality family slice. Quantity Theory content is protected; additions close structural floors and improve long-run causal reasoning.",
@@ -10793,14 +10793,14 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 12,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
         "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "medium": 10,
+        "hard": 11,
         "elite": 4,
         "legendary": 9,
         "unknown": 6
@@ -10813,7 +10813,7 @@
         "directSkillMatches": 2,
         "mainWithUsableSkill": 49
       },
-      "calculationCoverage": 35,
+      "calculationCoverage": 21,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Supporting slice of GDP and National Output. Use the four-concept family for the richest progression.",
@@ -10854,14 +10854,14 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 9,
         "repair": 2,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 10,
+        "medium": 10,
+        "hard": 10,
         "elite": 4,
         "legendary": 9,
         "unknown": 3
@@ -10874,7 +10874,7 @@
         "directSkillMatches": 1,
         "mainWithUsableSkill": 46
       },
-      "calculationCoverage": 39,
+      "calculationCoverage": 8,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Supporting slice of Inflation Measurement and Real Values. Use the five-concept family for the richest progression.",
@@ -10921,14 +10921,14 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 5,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 10,
+        "medium": 10,
+        "hard": 11,
         "elite": 5,
         "legendary": 9,
         "unknown": 6
@@ -10941,7 +10941,7 @@
         "directSkillMatches": 3,
         "mainWithUsableSkill": 51
       },
-      "calculationCoverage": 28,
+      "calculationCoverage": 26,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
@@ -11011,10 +11011,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 14,
-        "elite": 4,
-        "hard": 14,
-        "legendary": 36,
         "medium": 14,
+        "hard": 14,
+        "elite": 4,
+        "legendary": 36,
         "unknown": 14
       },
       "repairCoverage": {
@@ -11086,16 +11086,16 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 20,
+        "main": 29,
         "repair": 5,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 9,
-        "hard": 9,
+        "easy": 14,
+        "medium": 14,
+        "hard": 12,
         "elite": 3,
-        "legendary": 9,
+        "legendary": 10,
         "unknown": 9
       },
       "repairCoverage": {
@@ -11106,8 +11106,8 @@
         "directSkillMatches": 4,
         "mainWithUsableSkill": 50
       },
-      "calculationCoverage": 0,
-      "graphCoverage": 11,
+      "calculationCoverage": 2,
+      "graphCoverage": 23,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
       "instructionalClassification": "Engine-safe family slice",
@@ -11292,7 +11292,7 @@
         "directSkillMatches": 5,
         "mainWithUsableSkill": 82
       },
-      "calculationCoverage": 14,
+      "calculationCoverage": 0,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Fiscal and stabilization family slice. No new graph image was added; existing fiscal, money-market, transmission, and AD-AS assets are retained with complete accessibility metadata.",
@@ -11561,10 +11561,10 @@
       },
       "questionCountByDifficulty": {
         "easy": 4,
-        "elite": 8,
-        "hard": 13,
-        "legendary": 11,
         "medium": 7,
+        "hard": 13,
+        "elite": 8,
+        "legendary": 11,
         "unknown": 4
       },
       "repairCoverage": {
@@ -11741,9 +11741,9 @@
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 9,
-        "hard": 20,
+        "easy": 13,
+        "medium": 13,
+        "hard": 21,
         "elite": 10,
         "legendary": 12,
         "unknown": 10
@@ -11756,7 +11756,7 @@
         "directSkillMatches": 5,
         "mainWithUsableSkill": 79
       },
-      "calculationCoverage": 31,
+      "calculationCoverage": 16,
       "graphCoverage": 0,
       "status": "active",
       "notes": "Unemployment and Labor family slice. Measurement remains protected; causal classification, natural-rate reasoning, and labor-institution tradeoffs receive targeted maturation.",
@@ -11802,7 +11802,7 @@
         "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 16,
         "repair": 3,
         "repairSeed": 0
       },
@@ -11833,10 +11833,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseGraph4-money-market-ad-transmission-v1",
-  "curationSummary": "Phase Graph 4: seven approved money-market and money-market-to-AD assets plus 42 graph-dependent questions. Coverage emphasizes money-market equilibrium, money-supply expansion/contraction, simultaneous money shifts, and monetary transmission to aggregate demand.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1",
-  "canonicalQuestionCount": 8139,
-  "librarySha256": "322f9afdcdd9c9d8d33aeeb4976147b66c8167f27a7f06c30230ac846f55b80a",
+  "curationPhase": "phaseGraphAudit-remediation-v1",
+  "curationSummary": "Full remediation of Graph Phases 1–5: graph-dependence fixes, option-cue balancing, original asset identity restoration, Phillips-curve corrections, and canonical-count repair.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1",
+  "canonicalQuestionCount": 8163,
+  "librarySha256": "f46ab5fa560a7cf11aebf1c4b94538b7091c46d8e0d07f4a7a1c278a9f8078a9",
   "composerVersion": "4.5p.0"
 }

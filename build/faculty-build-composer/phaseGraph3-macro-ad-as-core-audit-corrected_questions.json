@@ -1,0 +1,986 @@
+[
+  {
+    "id": "PG3-AD-E-001",
+    "concept": "aggregate-demand",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "AD-01.webp",
+    "stem": "What change from AD0 to AD1 is shown?",
+    "options": [
+      "A decrease in aggregate demand",
+      "An increase in aggregate supply",
+      "An increase in aggregate demand",
+      "A decrease in aggregate supply"
+    ],
+    "correctAnswer": "An increase in aggregate demand",
+    "feedback": "A rightward shift of AD means aggregate demand has increased.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-E-002",
+    "concept": "aggregate-demand",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "AD-02.webp",
+    "stem": "How should AD1 be classified relative to AD0 in the second aggregate-demand diagram?",
+    "options": [
+      "A decrease in aggregate demand",
+      "An increase in aggregate demand",
+      "An increase in aggregate supply",
+      "A decrease in aggregate supply"
+    ],
+    "correctAnswer": "A decrease in aggregate demand",
+    "feedback": "A leftward shift of AD means aggregate demand has decreased.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-EL-001",
+    "concept": "aggregate-demand",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "AD-01.webp",
+    "stem": "A student says AD1 must represent aggregate supply because real GDP is larger. What is the best correction?",
+    "options": [
+      "Any curve farther right must be an aggregate-supply curve.",
+      "The graph is LRAS because real GDP is on the horizontal axis.",
+      "Both curves are AD; AD1 is the rightward demand shift.",
+      "A price-level axis means the curves cannot represent demand."
+    ],
+    "correctAnswer": "Both curves are AD; AD1 is the rightward demand shift.",
+    "feedback": "The label and downward slope identify the curves as AD. A larger quantity demanded at each price level is an increase in aggregate demand.",
+    "primarySkill": "explain_ad_slope",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-EL-002",
+    "concept": "aggregate-demand",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "AD-02.webp",
+    "stem": "If policymakers wanted to offset the AD shift shown, which short-run pattern are they responding to?",
+    "options": [
+      "Lower output with downward pressure on the price level",
+      "Higher output with upward pressure on the price level",
+      "Higher output with downward pressure on the price level",
+      "Lower output with upward pressure on the price level"
+    ],
+    "correctAnswer": "Lower output with downward pressure on the price level",
+    "feedback": "A decrease in AD lowers both real GDP and the price level in the short run.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-H-001",
+    "concept": "aggregate-demand",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "AD-01.webp",
+    "stem": "At a price level of 50, by how much does real GDP demanded differ between AD0 and AD1?",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "100"
+    ],
+    "correctAnswer": "50",
+    "feedback": "At price level 50, the quantity of output demanded rises from 100 to 150, an increase of 50.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-H-002",
+    "concept": "aggregate-demand",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "AD-02.webp",
+    "stem": "Use the second AD graph at price level 45. What horizontal GDP gap separates AD0 and AD1?",
+    "options": [
+      "25",
+      "75",
+      "100",
+      "50"
+    ],
+    "correctAnswer": "50",
+    "feedback": "At price level 45, quantity demanded falls from 150 to 100, a decrease of 50.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-L-001",
+    "concept": "aggregate-demand",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "AD-01.webp",
+    "stem": "Which statement correctly interprets the move from AD0 to AD1?",
+    "options": [
+      "At each price level, AS1 shows more real GDP supplied.",
+      "At each output level, AD1 shows a lower price requirement.",
+      "AD0 and AD1 are two points on one aggregate-demand curve.",
+      "At each price level, AD1 shows more real GDP demanded."
+    ],
+    "correctAnswer": "At each price level, AD1 shows more real GDP demanded.",
+    "feedback": "An AD increase means spending is higher at every price level. That is a shift of the entire demand curve, not a movement along it.",
+    "primarySkill": "identify_ad_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-L-002",
+    "concept": "aggregate-demand",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "AD-02.webp",
+    "stem": "Which statement best captures the meaning of the shift from AD0 to AD1?",
+    "options": [
+      "At each price level, AS1 shows less real GDP supplied.",
+      "At each price level, AD1 shows less real GDP demanded.",
+      "At each output level, AD1 shows a higher price requirement.",
+      "AD0 and AD1 are two points on one aggregate-demand curve."
+    ],
+    "correctAnswer": "At each price level, AD1 shows less real GDP demanded.",
+    "feedback": "The entire AD curve shifts left. That means spending is lower at each price level, not that the economy merely moved along AD0.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-M-001",
+    "concept": "aggregate-demand",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AD-01.webp",
+    "stem": "Assume SRAS is unchanged. Based on the AD shift shown, what happens to equilibrium real GDP and the price level?",
+    "options": [
+      "Real GDP decreases while the price level increases",
+      "Real GDP increases while the price level decreases",
+      "Both real GDP and the price level decrease",
+      "Both real GDP and the price level increase"
+    ],
+    "correctAnswer": "Both real GDP and the price level increase",
+    "feedback": "A rightward shift of AD raises spending pressure, so equilibrium output and the price level both rise in the short run.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-M-002",
+    "concept": "aggregate-demand",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AD-01.webp",
+    "stem": "Which event is most consistent with the shift from AD0 to AD1?",
+    "options": [
+      "Higher planned spending by C, I, G, or NX",
+      "Higher input costs that reduce short-run aggregate supply",
+      "Lower productivity that reduces long-run aggregate supply",
+      "Higher wages that reduce short-run aggregate supply"
+    ],
+    "correctAnswer": "Higher planned spending by C, I, G, or NX",
+    "feedback": "Aggregate demand shifts right when planned spending rises.",
+    "primarySkill": "identify_ad_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-M-003",
+    "concept": "aggregate-demand",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AD-02.webp",
+    "stem": "Holding SRAS fixed, what short-run equilibrium pattern follows from the demand change in the second AD diagram?",
+    "options": [
+      "Real GDP increases while the price level decreases",
+      "Both real GDP and the price level decrease",
+      "Real GDP decreases while the price level increases",
+      "Both real GDP and the price level increase"
+    ],
+    "correctAnswer": "Both real GDP and the price level decrease",
+    "feedback": "A leftward shift of AD lowers spending pressure, reducing equilibrium output and the price level in the short run.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AD-M-004",
+    "concept": "aggregate-demand",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AD-02.webp",
+    "stem": "Which event best matches the shift from AD0 to AD1?",
+    "options": [
+      "A fall in input costs that raises short-run aggregate supply",
+      "A rise in productivity that raises long-run aggregate supply",
+      "A fall in planned consumption or investment spending",
+      "A rise in expected prices that shifts short-run aggregate supply"
+    ],
+    "correctAnswer": "A fall in planned consumption or investment spending",
+    "feedback": "Lower overall spending shifts aggregate demand left.",
+    "primarySkill": "identify_ad_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.1"
+  },
+  {
+    "id": "PG3-AS-E-001",
+    "concept": "aggregate-supply",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "AS-01.webp",
+    "stem": "What change from AS0 to AS1 is shown?",
+    "options": [
+      "A decrease in aggregate supply",
+      "An increase in aggregate supply",
+      "An increase in aggregate demand",
+      "A decrease in aggregate demand"
+    ],
+    "correctAnswer": "A decrease in aggregate supply",
+    "feedback": "When the aggregate supply curve shifts left/up, less output is supplied at each price level, which is a decrease in aggregate supply.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-E-002",
+    "concept": "aggregate-supply",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "AS-02.webp",
+    "stem": "How should AS1 be classified relative to AS0 in the second aggregate-supply diagram?",
+    "options": [
+      "A decrease in aggregate supply",
+      "An increase in aggregate demand",
+      "An increase in aggregate supply",
+      "A decrease in aggregate demand"
+    ],
+    "correctAnswer": "An increase in aggregate supply",
+    "feedback": "A downward/rightward shift of the AS curve means aggregate supply has increased.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-EL-001",
+    "concept": "aggregate-supply",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "AS-01.webp",
+    "stem": "With aggregate demand unchanged, which macro outcome is consistent with the AS shift shown?",
+    "options": [
+      "Lower output with a higher price level",
+      "Higher output with a lower price level",
+      "Higher output with a higher price level",
+      "Lower output with a lower price level"
+    ],
+    "correctAnswer": "Lower output with a higher price level",
+    "feedback": "A leftward shift of AS reduces output and raises prices, the classic stagflation pattern.",
+    "primarySkill": "expected_price_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-EL-002",
+    "concept": "aggregate-supply",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "AS-02.webp",
+    "stem": "For the second AS diagram, what output-price pattern would follow if aggregate demand stayed fixed?",
+    "options": [
+      "Lower output with a higher price level",
+      "Higher output with a higher price level",
+      "Higher output with a lower price level",
+      "Lower output with a lower price level"
+    ],
+    "correctAnswer": "Higher output with a lower price level",
+    "feedback": "Demand-pull expansions raise both price level and output. This graph instead shows more output paired with a lower price level, which is an AS increase.",
+    "primarySkill": "identify_sras_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-H-001",
+    "concept": "aggregate-supply",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "AS-01.webp",
+    "stem": "At real GDP of 150, what is the vertical price-level gap between AS0 and AS1?",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "40"
+    ],
+    "correctAnswer": "40",
+    "feedback": "At the same output level, the price level increases from 150 to 190, a rise of 40.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-H-002",
+    "concept": "aggregate-supply",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "AS-02.webp",
+    "stem": "Use the second AS graph at real GDP 150. What vertical price-level distance separates AS0 and AS1?",
+    "options": [
+      "25",
+      "40",
+      "50",
+      "75"
+    ],
+    "correctAnswer": "40",
+    "feedback": "At the same output level, price level falls from 150 to 110, a decrease of 40.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-L-001",
+    "concept": "aggregate-supply",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "AS-01.webp",
+    "stem": "Which statement best interprets the shift from AS0 to AS1 without confusing it for a movement along a curve?",
+    "options": [
+      "AS1 shows more output demanded at each price level.",
+      "AS1 shows less output supplied at each price level.",
+      "AS0 and AS1 are two points on one supply curve.",
+      "AS1 shows higher potential output on a shifted LRAS."
+    ],
+    "correctAnswer": "AS1 shows less output supplied at each price level.",
+    "feedback": "The entire AS curve shifted up/left. That means production is less forthcoming at each price level, not that the economy merely moved to another point on AS0.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-L-002",
+    "concept": "aggregate-supply",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "AS-02.webp",
+    "stem": "Which statement best interprets the move from AS0 to AS1?",
+    "options": [
+      "AS1 shows less output demanded at each price level.",
+      "AS0 and AS1 are two points on one supply curve.",
+      "AS1 shows lower potential output on a shifted LRAS.",
+      "AS1 shows more output supplied at each price level."
+    ],
+    "correctAnswer": "AS1 shows more output supplied at each price level.",
+    "feedback": "A lower AS curve means firms will supply more at each price level, or the same output at a lower price level. That is an increase in aggregate supply.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-M-001",
+    "concept": "aggregate-supply",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AS-01.webp",
+    "stem": "Assume aggregate demand is unchanged. Based on the AS shift shown, what happens to equilibrium real GDP and the price level?",
+    "options": [
+      "Real GDP increases while the price level decreases",
+      "Real GDP decreases while the price level increases",
+      "Both real GDP and the price level increase",
+      "Both real GDP and the price level decrease"
+    ],
+    "correctAnswer": "Real GDP decreases while the price level increases",
+    "feedback": "An inward/leftward AS shift reduces output and raises the price level.",
+    "primarySkill": "identify_sras_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-M-002",
+    "concept": "aggregate-supply",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AS-01.webp",
+    "stem": "Which event best matches the shift from AS0 to AS1?",
+    "options": [
+      "Higher consumer confidence that boosts spending",
+      "A cut in income taxes that raises aggregate demand",
+      "A rise in input prices that makes production more costly",
+      "A fall in the overall price level causing a movement along AS0"
+    ],
+    "correctAnswer": "A rise in input prices that makes production more costly",
+    "feedback": "Higher production costs shift short-run aggregate supply left.",
+    "primarySkill": "identify_sras_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-M-003",
+    "concept": "aggregate-supply",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AS-02.webp",
+    "stem": "If aggregate demand stays put, what equilibrium effect follows from the supply change in the second AS diagram?",
+    "options": [
+      "Real GDP decreases while the price level increases",
+      "Both real GDP and the price level increase",
+      "Both real GDP and the price level decrease",
+      "Real GDP increases while the price level decreases"
+    ],
+    "correctAnswer": "Real GDP increases while the price level decreases",
+    "feedback": "A rightward shift of AS increases output and lowers the price level.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-AS-M-004",
+    "concept": "aggregate-supply",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "AS-02.webp",
+    "stem": "Which favorable production-side change could account for the shift displayed in the second AS diagram?",
+    "options": [
+      "A fall in input costs or an improvement in productivity",
+      "A surge in household spending",
+      "An increase in government purchases that shifts AD right",
+      "A rise in inflation expectations that shifts SRAS left"
+    ],
+    "correctAnswer": "A fall in input costs or an improvement in productivity",
+    "feedback": "Lower costs or better productivity shift aggregate supply right.",
+    "primarySkill": "identify_sras_shifters",
+    "secondaryConceptIds": [],
+    "objective": "LO34.2"
+  },
+  {
+    "id": "PG3-MEQ-E-001",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "LRAS-01.webp",
+    "stem": "In the AD-AS-LRAS graph, which labeled point represents the original long-run equilibrium before aggregate demand increases?",
+    "options": [
+      "Point C",
+      "Point A",
+      "Point B",
+      "Point D"
+    ],
+    "correctAnswer": "Point C",
+    "feedback": "The original long-run equilibrium is where AD0, SRAS0, and LRAS0 meet. That is point C.",
+    "primarySkill": "identify_lras",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-E-002",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "LRAS-02.webp",
+    "stem": "Which labeled point is the original long-run equilibrium in the graph with LRAS0 and LRAS1?",
+    "options": [
+      "Point B",
+      "LRAS1",
+      "Point A",
+      "SRAS1"
+    ],
+    "correctAnswer": "Point A",
+    "feedback": "Point A is where AD0, SRAS0, and LRAS0 intersect.",
+    "primarySkill": "identify_lras",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-E-003",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "ADAS-01.webp",
+    "stem": "In the AD-AS graph, which point shows the original equilibrium before aggregate demand rises?",
+    "options": [
+      "Point A",
+      "Point B",
+      "AD1",
+      "AS0"
+    ],
+    "correctAnswer": "Point A",
+    "feedback": "Point A is the intersection of AD0 and AS0.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-E-004",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "ADAS-02.webp",
+    "stem": "Which point marks the original equilibrium where AD0 and AS0 intersect?",
+    "options": [
+      "Point B",
+      "Point C",
+      "Point A",
+      "Point D"
+    ],
+    "correctAnswer": "Point A",
+    "feedback": "Point A is the initial intersection of AD0 and AS0.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-EL-001",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "LRAS-01.webp",
+    "stem": "Comparing the original long-run equilibrium C with the new long-run equilibrium B, what is true?",
+    "options": [
+      "GDP returns to 100; prices rise from 125 to 175.",
+      "GDP rises to 125; prices remain fixed at 125 throughout.",
+      "GDP falls to 75; prices remain fixed at 150 throughout.",
+      "GDP stays at 100; prices fall from 125 back to 100."
+    ],
+    "correctAnswer": "GDP returns to 100; prices rise from 125 to 175.",
+    "feedback": "LRAS stays at 100, so long-run real GDP returns to 100. The long-run price level is higher at B than at C.",
+    "primarySkill": "identify_lras",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-EL-002",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "LRAS-02.webp",
+    "stem": "Which statement best describes the macro outcome shown by the move from A to B?",
+    "options": [
+      "Recession with accelerating inflation pressure.",
+      "Demand-pull inflation with no long-run growth.",
+      "Long-run growth with lower price pressure.",
+      "No change in either output or the price level."
+    ],
+    "correctAnswer": "Long-run growth with lower price pressure.",
+    "feedback": "Higher LRAS and SRAS support more output alongside a lower price level.",
+    "primarySkill": "short_run_long_run_adjustment",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-EL-003",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "ADAS-01.webp",
+    "stem": "Which description best matches the move from A to B?",
+    "options": [
+      "AD rises; the economy moves upward along fixed AS0.",
+      "AS rises; the economy moves downward along fixed AD0.",
+      "AD falls; the economy moves downward along fixed AS0.",
+      "Both AD and AS shift; output returns to its starting level."
+    ],
+    "correctAnswer": "AD rises; the economy moves upward along fixed AS0.",
+    "feedback": "With AS0 unchanged, the AD increase causes a movement along the AS curve to a new short-run equilibrium.",
+    "primarySkill": "movement_vs_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-EL-004",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "ADAS-02.webp",
+    "stem": "Compare point A with point C. Which statement is correct?",
+    "options": [
+      "Real GDP rises to 100; the price level stays at 100.",
+      "Real GDP falls to 50; the price level stays at 125.",
+      "Real GDP stays 75; the price level rises from 100 to 150.",
+      "Real GDP stays 75; the price level falls from 150 to 100."
+    ],
+    "correctAnswer": "Real GDP stays 75; the price level rises from 100 to 150.",
+    "feedback": "The AD increase and AS decrease offset each other in output but reinforce each other on the price level.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-H-001",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "LRAS-01.webp",
+    "stem": "Which sequence correctly traces the economy after an increase in aggregate demand starting from the original long-run equilibrium?",
+    "options": [
+      "C to A to D",
+      "A to C to B",
+      "D to C to A",
+      "C to D to B"
+    ],
+    "correctAnswer": "C to D to B",
+    "feedback": "The economy begins at C, moves to D in the short run when AD increases, and returns to long-run output at B after SRAS shifts left.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-H-002",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "hard",
+    "type": "analysis",
+    "asset": "LRAS-02.webp",
+    "stem": "Which event best matches the joint shift from SRAS0/LRAS0 to SRAS1/LRAS1?",
+    "options": [
+      "A confidence drop that lowers consumer and investment spending",
+      "A productivity gain that lowers costs and raises potential output",
+      "An energy-price increase that raises costs and lowers output",
+      "A government-spending increase that shifts aggregate demand right"
+    ],
+    "correctAnswer": "A productivity gain that lowers costs and raises potential output",
+    "feedback": "A positive supply-side change can shift both SRAS right and LRAS right.",
+    "primarySkill": "identify_sras_shifters",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-H-003",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "ADAS-01.webp",
+    "stem": "From point A to point B, by how much does the price level increase?",
+    "options": [
+      "10",
+      "25",
+      "37.5",
+      "12.5"
+    ],
+    "correctAnswer": "12.5",
+    "feedback": "The price level rises from 125 to 137.5, an increase of 12.5.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-H-004",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "ADAS-02.webp",
+    "stem": "If aggregate demand increases from AD0 to AD1 at the same time aggregate supply decreases from AS0 to AS1, which point shows the resulting equilibrium?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "correctAnswer": "Point C",
+    "feedback": "The simultaneous changes place the economy at the intersection of AD1 and AS1, which is point C.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-L-001",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "LRAS-01.webp",
+    "stem": "A student says an aggregate-demand increase permanently raises real GDP above potential in this graph. Which correction is best?",
+    "options": [
+      "D is a permanent equilibrium because SRAS never adjusts afterward.",
+      "D is above potential only short run; adjustment returns output to B.",
+      "A is above potential in the short run and B stays below potential.",
+      "C is below potential permanently because LRAS determines the price level."
+    ],
+    "correctAnswer": "D is above potential only short run; adjustment returns output to B.",
+    "feedback": "The graph shows short-run output above LRAS at D, but long-run adjustment returns output to LRAS at B while price level stays higher.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-L-002",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "LRAS-02.webp",
+    "stem": "A student says point B can only be explained by higher aggregate demand because real GDP is larger there. Which correction best fits the graph?",
+    "options": [
+      "AD shifts right while SRAS and LRAS both stay fixed.",
+      "SRAS shifts left while AD0 and LRAS both stay fixed.",
+      "LRAS shifts left while SRAS and AD0 both stay fixed.",
+      "SRAS and LRAS shift right while AD0 stays fixed."
+    ],
+    "correctAnswer": "SRAS and LRAS shift right while AD0 stays fixed.",
+    "feedback": "The graph holds AD constant and shows the supply side improving. That raises potential output and lowers the price level.",
+    "primarySkill": "identify_lras",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-L-003",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "ADAS-01.webp",
+    "stem": "A student sees higher output and a higher price level at point B and concludes the graph must show an aggregate-supply increase. What is the best correction?",
+    "options": [
+      "An AS increase raises both output and the price level here.",
+      "An AD increase raises both output and the price level here.",
+      "An AD increase lowers output while the price level rises here.",
+      "The graph cannot distinguish a demand change from a supply change."
+    ],
+    "correctAnswer": "An AD increase raises both output and the price level here.",
+    "feedback": "In a standard AD-AS model, a rightward AD shift raises both output and prices in the short run, unlike a rightward AS shift.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-L-004",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "ADAS-02.webp",
+    "stem": "A student says the graph proves output must rise whenever aggregate demand increases. Which graph-based rebuttal is strongest?",
+    "options": [
+      "The AD increase dominates both output and the price-level effects.",
+      "The AS decrease dominates both output and the price-level effects.",
+      "The two shifts offset the price level but reinforce the output effect.",
+      "The AS decrease offsets the AD increase in output, not prices."
+    ],
+    "correctAnswer": "The AS decrease offsets the AD increase in output, not prices.",
+    "feedback": "Point B isolates the AD increase and point D isolates the AS decrease. Point C shows their combination, where the output effect is offset but inflation is amplified.",
+    "primarySkill": "simultaneous_shifts",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-001",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "LRAS-01.webp",
+    "stem": "If aggregate demand increases from AD0 to AD1 while SRAS0 is still fixed in the short run, which point shows the short-run equilibrium?",
+    "options": [
+      "Point A",
+      "Point D",
+      "Point B",
+      "Point C"
+    ],
+    "correctAnswer": "Point D",
+    "feedback": "With AD1 and SRAS0, the short-run equilibrium is point D.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-002",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "LRAS-01.webp",
+    "stem": "After wages and expectations adjust, SRAS shifts from SRAS0 to SRAS1. Which point shows the new long-run equilibrium?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "correctAnswer": "Point B",
+    "feedback": "The new long-run equilibrium occurs where AD1, SRAS1, and LRAS0 intersect: point B.",
+    "primarySkill": "identify_lras",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-003",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "LRAS-02.webp",
+    "stem": "Which labeled point is the new long-run equilibrium after the supply-side improvement?",
+    "options": [
+      "Point A",
+      "LRAS0",
+      "SRAS0",
+      "Point B"
+    ],
+    "correctAnswer": "Point B",
+    "feedback": "Point B is where AD0, SRAS1, and LRAS1 intersect.",
+    "primarySkill": "identify_lras",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-004",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "LRAS-02.webp",
+    "stem": "From point A to point B, what happens to real GDP and the price level?",
+    "options": [
+      "Real GDP rises from 100 to 115 while the price level falls from 125 to 110",
+      "Real GDP falls from 115 to 100 while the price level rises from 110 to 125",
+      "Both real GDP and the price level rise",
+      "Both real GDP and the price level fall"
+    ],
+    "correctAnswer": "Real GDP rises from 100 to 115 while the price level falls from 125 to 110",
+    "feedback": "The graph shows more long-run output and a lower price level at the new equilibrium.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-005",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "ADAS-01.webp",
+    "stem": "After aggregate demand shifts from AD0 to AD1 while AS0 is fixed, which point shows the new short-run equilibrium?",
+    "options": [
+      "Point A",
+      "Point B",
+      "AD0",
+      "AS1"
+    ],
+    "correctAnswer": "Point B",
+    "feedback": "Point B is where AD1 intersects AS0.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-006",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "ADAS-01.webp",
+    "stem": "From point A to point B, by how much does real GDP increase?",
+    "options": [
+      "12.5",
+      "37.5",
+      "25",
+      "50"
+    ],
+    "correctAnswer": "25",
+    "feedback": "Real GDP rises from 150 to 175, an increase of 25.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-007",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "ADAS-02.webp",
+    "stem": "If only aggregate demand increases from AD0 to AD1 while AS0 stays in place, which point shows the new equilibrium?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point D",
+      "Point B"
+    ],
+    "correctAnswer": "Point B",
+    "feedback": "With AD1 and AS0, the equilibrium is point B.",
+    "primarySkill": "read_ad_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  },
+  {
+    "id": "PG3-MEQ-M-008",
+    "concept": "macroeconomic-equilibrium-and-shocks",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "ADAS-02.webp",
+    "stem": "If only aggregate supply decreases from AS0 to AS1 while AD0 stays in place, which point shows the new equilibrium?",
+    "options": [
+      "Point D",
+      "Point A",
+      "Point B",
+      "Point C"
+    ],
+    "correctAnswer": "Point D",
+    "feedback": "With AD0 and AS1, the equilibrium is point D.",
+    "primarySkill": "read_sras_shift",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "aggregate-supply"
+    ],
+    "objective": "LO34.3"
+  }
+]

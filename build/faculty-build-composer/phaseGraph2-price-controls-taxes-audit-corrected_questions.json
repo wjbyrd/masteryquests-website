@@ -1,0 +1,474 @@
+[
+  {
+    "id": "PG2-CEIL-E-001",
+    "concept": "binding-price-ceilings",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "CEILING-01.webp",
+    "stem": "A legal maximum rent of $1,000 is shown on the apartment-market graph. How should this policy be classified?",
+    "options": [
+      "Binding ceiling: $1,000 is below equilibrium.",
+      "Nonbinding ceiling: $1,000 is below equilibrium.",
+      "Binding floor: $1,000 is below equilibrium.",
+      "Nonbinding floor: $1,000 is above equilibrium."
+    ],
+    "correctAnswer": "Binding ceiling: $1,000 is below equilibrium.",
+    "feedback": "A price ceiling is binding when it is set below the market equilibrium price. The graph places the ceiling at $1,000, below the $2,000 equilibrium rent.",
+    "primarySkill": "binding_price_ceiling",
+    "secondaryConceptIds": [],
+    "objective": "LO6.1"
+  },
+  {
+    "id": "PG2-CEIL-EL-001",
+    "concept": "binding-price-ceilings",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "CEILING-01.webp",
+    "stem": "A student looks at the $1,000 ceiling and says, “Because 250 apartments are demanded, 250 apartments will be rented.” What is the graph-based correction?",
+    "options": [
+      "Only 50 apartments trade; 200 renters go unmatched.",
+      "All 250 renters trade because the ceiling lowers rent.",
+      "Exactly 175 apartments trade, matching the old equilibrium.",
+      "A 200-unit surplus appears because landlords over-supply housing."
+    ],
+    "correctAnswer": "Only 50 apartments trade; 200 renters go unmatched.",
+    "feedback": "Quantity demanded is not the same thing as quantity traded. At the ceiling, landlords supply only 50 apartments, so the market is short by 200 units.",
+    "primarySkill": "ceiling_shortage_rationing",
+    "secondaryConceptIds": [],
+    "objective": "LO6.1"
+  },
+  {
+    "id": "PG2-CEIL-H-001",
+    "concept": "binding-price-ceilings",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "CEILING-01.webp",
+    "stem": "Relative to the competitive equilibrium, how do quantity demanded and quantity supplied change at the $1,000 ceiling?",
+    "options": [
+      "Quantity demanded -100; quantity supplied +100.",
+      "Quantity demanded +200; quantity supplied unchanged.",
+      "Quantity demanded unchanged; quantity supplied -200.",
+      "Quantity demanded +100; quantity supplied -100."
+    ],
+    "correctAnswer": "Quantity demanded +100; quantity supplied -100.",
+    "feedback": "At equilibrium both quantities are 150. At $1,000, quantity demanded is 250 and quantity supplied is 50. Demand therefore rises by 100 while supply falls by 100, opening a 200-unit shortage.",
+    "primarySkill": "binding_ceiling_shortage_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.1"
+  },
+  {
+    "id": "PG2-CEIL-L-001",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "CEILING-01.webp",
+    "stem": "At the $1,000 ceiling, what does the graph imply about rationing?",
+    "options": [
+      "All 250 renters trade because the legal rent is lower.",
+      "Only 50 units trade; 200 renters remain unmatched.",
+      "The legal rent rises to $2,000 until the shortage disappears.",
+      "Landlords add 200 units immediately, removing the shortage."
+    ],
+    "correctAnswer": "Only 50 units trade; 200 renters remain unmatched.",
+    "feedback": "The graph establishes a 200-apartment shortage. A binding ceiling blocks price from doing the full rationing job, so other allocation mechanisms can matter; the graph does not identify which renters receive the limited units.",
+    "primarySkill": "ceiling_nonmoney_costs_and_misallocation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.1"
+  },
+  {
+    "id": "PG2-CEIL-M-001",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "CEILING-01.webp",
+    "stem": "At the $1,000 rent ceiling, what shortage is shown?",
+    "options": [
+      "50 apartments",
+      "200 apartments",
+      "150 apartments",
+      "300 apartments"
+    ],
+    "correctAnswer": "200 apartments",
+    "feedback": "Read quantity demanded and quantity supplied at the $1,000 ceiling and subtract: 250 − 50 = 200 apartments.",
+    "primarySkill": "ceiling_shortage_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.1"
+  },
+  {
+    "id": "PG2-CEIL-M-002",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "CEILING-01.webp",
+    "stem": "At the binding $1,000 rent ceiling, what is the maximum number of apartments that can be rented if transactions cannot exceed the number landlords offer?",
+    "options": [
+      "150 apartments",
+      "200 apartments",
+      "50 apartments",
+      "250 apartments"
+    ],
+    "correctAnswer": "50 apartments",
+    "feedback": "At $1,000, quantity supplied is only 50 apartments. Even though 250 are demanded, actual transactions cannot exceed the 50 units offered.",
+    "primarySkill": "ceiling_quantity_reading",
+    "secondaryConceptIds": [],
+    "objective": "LO6.1"
+  },
+  {
+    "id": "PG2-FLR-E-001",
+    "concept": "binding-price-floors",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "FLOOR-01.webp",
+    "stem": "A legal minimum wage of $10 is shown on the labor-market graph. How should this policy be classified?",
+    "options": [
+      "Nonbinding floor: $10 is above equilibrium.",
+      "Binding ceiling: $10 is above equilibrium.",
+      "Binding floor: $10 is above equilibrium.",
+      "Nonbinding ceiling: $10 is below equilibrium."
+    ],
+    "correctAnswer": "Binding floor: $10 is above equilibrium.",
+    "feedback": "A price floor is binding when it is set above equilibrium. The $10 wage floor sits above the $7 market-clearing wage.",
+    "primarySkill": "binding_price_floor",
+    "secondaryConceptIds": [],
+    "objective": "LO6.2"
+  },
+  {
+    "id": "PG2-FLR-EL-001",
+    "concept": "binding-price-floors",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "FLOOR-01.webp",
+    "stem": "A student says the $10 minimum wage raises employment to 250 thousand because 250 thousand workers are willing to work. What is the strongest correction using the graph?",
+    "options": [
+      "Employment is 250k; every willing worker is hired.",
+      "Employment stays 175k; the wage floor does not affect hiring.",
+      "Employment is 100k; 150k workers remain without jobs.",
+      "Employment is 100k; the 150k gap is a labor shortage."
+    ],
+    "correctAnswer": "Employment is 100k; 150k workers remain without jobs.",
+    "feedback": "A binding minimum wage creates excess labor supply, not automatic jobs. At $10, firms demand 100 thousand workers while 250 thousand seek work.",
+    "primarySkill": "floor_surplus_rationing",
+    "secondaryConceptIds": [],
+    "objective": "LO6.2"
+  },
+  {
+    "id": "PG2-FLR-H-001",
+    "concept": "binding-price-floors",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "FLOOR-01.webp",
+    "stem": "Relative to the competitive equilibrium, how do labor supplied and labor demanded change at the $10 minimum wage?",
+    "options": [
+      "Labor supplied -75k; labor demanded +75k.",
+      "Labor supplied +75k; labor demanded -75k.",
+      "Labor supplied +150k; labor demanded unchanged.",
+      "Labor supplied unchanged; labor demanded -150k."
+    ],
+    "correctAnswer": "Labor supplied +75k; labor demanded -75k.",
+    "feedback": "At equilibrium, both labor supplied and demanded equal 175 thousand. At $10, labor supplied is 250 thousand and labor demanded is 100 thousand, so the two 75-thousand movements create the 150-thousand surplus.",
+    "primarySkill": "binding_floor_surplus_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.2"
+  },
+  {
+    "id": "PG2-FLR-L-001",
+    "concept": "binding-price-floors",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "FLOOR-01.webp",
+    "stem": "Using the graph, compare the $10 binding minimum wage with the $7 competitive equilibrium. Which transition is correct if the floor is reduced from $10 to $7?",
+    "options": [
+      "Employment falls to 175k; a labor shortage appears.",
+      "Employment stays at 100k; the old floor fixes hiring.",
+      "Employment rises to 250k; labor demand equals supply there.",
+      "Employment rises to 175k; the labor surplus disappears."
+    ],
+    "correctAnswer": "Employment rises to 175k; the labor surplus disappears.",
+    "feedback": "At $10, labor demand is 100 thousand and labor supply is 250 thousand. At $7, both equal 175 thousand, so employment rises to the equilibrium quantity and the labor surplus vanishes.",
+    "primarySkill": "minimum_wage_tradeoff",
+    "secondaryConceptIds": [],
+    "objective": "LO6.2"
+  },
+  {
+    "id": "PG2-FLR-M-001",
+    "concept": "binding-price-floors",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "FLOOR-01.webp",
+    "stem": "At the $10 minimum wage, what labor surplus is shown?",
+    "options": [
+      "75 thousand workers",
+      "100 thousand workers",
+      "350 thousand workers",
+      "150 thousand workers"
+    ],
+    "correctAnswer": "150 thousand workers",
+    "feedback": "Read labor supplied and labor demanded at $10 and subtract: 250 thousand − 100 thousand = 150 thousand workers.",
+    "primarySkill": "minimum_wage_surplus_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.2"
+  },
+  {
+    "id": "PG2-FLR-M-002",
+    "concept": "binding-price-floors",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "FLOOR-01.webp",
+    "stem": "At the binding $10 minimum wage, how many workers can be employed if employment cannot exceed firms’ quantity of labor demanded?",
+    "options": [
+      "100 thousand workers",
+      "150 thousand workers",
+      "175 thousand workers",
+      "250 thousand workers"
+    ],
+    "correctAnswer": "100 thousand workers",
+    "feedback": "At $10, firms demand 100 thousand workers. The larger 250-thousand labor supply does not force firms to hire beyond their quantity demanded.",
+    "primarySkill": "floor_quantity_demanded",
+    "secondaryConceptIds": [],
+    "objective": "LO6.2"
+  },
+  {
+    "id": "PG2-STX-E-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "TAX-02.webp",
+    "stem": "At the post-tax quantity of 60 thousand movies, what price do sellers receive according to the supply curve?",
+    "options": [
+      "$10.50 per movie",
+      "$13.50 per movie",
+      "$7.50 per movie",
+      "$6.00 per movie"
+    ],
+    "correctAnswer": "$7.50 per movie",
+    "feedback": "At quantity 60 thousand, the shifted demand curve intersects supply at $7.50. That is the amount sellers receive before the buyer remits the tax.",
+    "primarySkill": "legal_vs_economic_tax_burden",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.4"
+  },
+  {
+    "id": "PG2-STX-EL-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "elite",
+    "type": "multi-step",
+    "asset": "TAX-02.webp",
+    "stem": "Suppose the same $6 per-movie tax were legally collected from sellers instead of buyers, with the same supply and demand curves. What standard supply-and-demand result should be expected?",
+    "options": [
+      "Buyers would return to $10.50 while sellers alone would lose $6",
+      "Quantity would return to 100 thousand because seller taxes do not affect demand",
+      "The same 60-thousand quantity, $13.50 buyer price, and $7.50 seller receipt",
+      "The buyer price would fall to $7.50 and the seller receipt would rise to $13.50"
+    ],
+    "correctAnswer": "The same 60-thousand quantity, $13.50 buyer price, and $7.50 seller receipt",
+    "feedback": "With unchanged market elasticities and the same per-unit tax, shifting the legal remittance side changes how the tax is drawn, not the competitive equilibrium wedge or economic incidence.",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.4"
+  },
+  {
+    "id": "PG2-STX-H-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "hard",
+    "type": "calculation",
+    "asset": "TAX-02.webp",
+    "stem": "Measure the contraction in movie transactions caused by the buyer-side tax. How large is it?",
+    "options": [
+      "Quantity traded rises by 40 thousand movies",
+      "Quantity traded falls by 40 thousand movies",
+      "Quantity traded stays at 100 thousand movies",
+      "Quantity traded falls by 60 thousand movies"
+    ],
+    "correctAnswer": "Quantity traded falls by 40 thousand movies",
+    "feedback": "Read the original and post-tax quantities from the graph: 100 thousand − 60 thousand = 40 thousand movies.",
+    "primarySkill": "tax_equivalence_application",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.4"
+  },
+  {
+    "id": "PG2-STX-L-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "TAX-02.webp",
+    "stem": "A student sees “Demand with tax” and concludes, “Buyers must bear the full $6 because the tax is legally placed on them.” Which graph-based accounting defeats that claim?",
+    "options": [
+      "Legal placement fixes incidence; buyers bear the entire tax.",
+      "Legal placement fixes incidence; sellers bear the entire tax.",
+      "Incidence cannot be inferred from buyer and seller prices.",
+      "Legal placement and incidence differ; both sides share it."
+    ],
+    "correctAnswer": "Legal placement and incidence differ; both sides share it.",
+    "feedback": "Economic incidence is measured by changes from the original equilibrium price, not by who sends the tax payment to government. Here the buyer increase and seller decrease are both $3.",
+    "primarySkill": "tax_incidence_misconception_detection",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.4"
+  },
+  {
+    "id": "PG2-STX-M-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "TAX-02.webp",
+    "stem": "What per-unit tax wedge is shown after the buyer-side tax?",
+    "options": [
+      "$3 per movie",
+      "$7.50 per movie",
+      "$21 per movie",
+      "$6 per movie"
+    ],
+    "correctAnswer": "$6 per movie",
+    "feedback": "At the post-tax quantity, read the buyer price and seller receipt from the graph and take the difference: $13.50 − $7.50 = $6.",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.4"
+  },
+  {
+    "id": "PG2-STX-M-002",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "TAX-02.webp",
+    "stem": "Using the graph, which side bears more of the buyer-side tax?",
+    "options": [
+      "Neither; the burden is split equally.",
+      "Buyers bear more of the tax than sellers.",
+      "Sellers bear more of the tax than buyers.",
+      "Neither side bears any economic tax burden."
+    ],
+    "correctAnswer": "Neither; the burden is split equally.",
+    "feedback": "Buyers pay $3 more than the original $10.50 price, while sellers receive $3 less. The legal placement on buyers does not make buyers bear the entire tax.",
+    "primarySkill": "statutory_vs_economic_incidence",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.4"
+  },
+  {
+    "id": "PG2-TAX-E-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "TAX-01.webp",
+    "stem": "In the displayed movie market, how large is the vertical gap between S0 and the parallel “Supply with tax” curve at a given quantity?",
+    "options": [
+      "$4 per movie",
+      "$2 per movie",
+      "$10 per movie",
+      "$14 per movie"
+    ],
+    "correctAnswer": "$4 per movie",
+    "feedback": "At quantity 100 thousand, S0 is at $10 while Supply with tax is at $14. The parallel vertical gap is therefore $4 per movie.",
+    "primarySkill": "tax_wedge_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.3"
+  },
+  {
+    "id": "PG2-TAX-EL-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "TAX-01.webp",
+    "stem": "Using the graph, how is the per-unit tax burden divided between buyers and sellers?",
+    "options": [
+      "Buyers: $2; sellers: $2.",
+      "Buyers: $4; sellers: $0.",
+      "Buyers: $0; sellers: $4.",
+      "Buyers: $3; sellers: $1."
+    ],
+    "correctAnswer": "Buyers: $2; sellers: $2.",
+    "feedback": "Relative to the original $12 price, buyers pay $2 more and sellers receive $2 less. Those two pieces add to the $4 tax wedge.",
+    "primarySkill": "tax_revenue_from_burden_split",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.3"
+  },
+  {
+    "id": "PG2-TAX-H-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "type": "multi-step",
+    "asset": "TAX-01.webp",
+    "stem": "After the tax is imposed, how much tax revenue is collected?",
+    "options": [
+      "$40,000",
+      "$100,000",
+      "$4,000,000",
+      "$400,000"
+    ],
+    "correctAnswer": "$400,000",
+    "feedback": "Read the $4 per-movie wedge and the 100-thousand post-tax quantity from the graph. Revenue is $4 × 100,000 = $400,000.",
+    "primarySkill": "tax_revenue_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.3"
+  },
+  {
+    "id": "PG2-TAX-L-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "TAX-01.webp",
+    "stem": "What does this graph show about statutory tax placement versus economic incidence?",
+    "options": [
+      "Sellers bear the full $4 because supply is the shifted curve.",
+      "The $4 wedge is shared; sellers do not bear all of it.",
+      "Buyers bear the full $4 because the market price rises.",
+      "Neither side bears the tax because quantity falls after the tax."
+    ],
+    "correctAnswer": "The $4 wedge is shared; sellers do not bear all of it.",
+    "feedback": "The graph separates statutory placement from market incidence. Buyers pay more, sellers net less, and fewer units are traded; the $4 wedge is split $2/$2 here.",
+    "primarySkill": "tax_wedge_market_shrinkage_synthesis",
+    "secondaryConceptIds": [
+      "tax-incidence"
+    ],
+    "objective": "LO6.3"
+  },
+  {
+    "id": "PG2-TAX-M-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "TAX-01.webp",
+    "stem": "After the seller-side tax shown, quantity falls to 100 thousand movies. What prices do buyers pay and sellers receive?",
+    "options": [
+      "Buyers pay $12 and sellers receive $12",
+      "Buyers pay $14 and sellers receive $10",
+      "Buyers pay $10 and sellers receive $14",
+      "Buyers pay $14 and sellers receive $12"
+    ],
+    "correctAnswer": "Buyers pay $14 and sellers receive $10",
+    "feedback": "At the post-tax quantity of 100 thousand, demand gives the buyer price of $14 while the original supply curve gives the seller receipt of $10.",
+    "primarySkill": "tax_wedge_identification",
+    "secondaryConceptIds": [],
+    "objective": "LO6.3"
+  },
+  {
+    "id": "PG2-TAX-M-002",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "TAX-01.webp",
+    "stem": "After the tax is imposed, by how much does quantity traded fall?",
+    "options": [
+      "20 thousand movies",
+      "100 thousand movies",
+      "40 thousand movies",
+      "240 thousand movies"
+    ],
+    "correctAnswer": "40 thousand movies",
+    "feedback": "Read the pre-tax and post-tax quantities from the graph: 140 thousand − 100 thousand = 40 thousand movies.",
+    "primarySkill": "tax_quantity_reduction_calculation",
+    "secondaryConceptIds": [],
+    "objective": "LO6.3"
+  }
+]

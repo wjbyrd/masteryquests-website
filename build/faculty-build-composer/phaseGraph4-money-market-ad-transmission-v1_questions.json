@@ -48,6 +48,934 @@
     "originalBossTier": null
   },
   {
+    "id": "PG4-MM-E-002",
+    "q": "The money-supply curve moves from MS0 at 100 to MS1 at 125. What happens to the equilibrium nominal interest rate?",
+    "options": [
+      "It rises from 2 percent to 4 percent",
+      "It stays at 4 percent",
+      "It falls from 4 percent to 2 percent",
+      "It falls from 6 percent to 4 percent"
+    ],
+    "tag": "money_market",
+    "type": "graph",
+    "objective": "LO35.1",
+    "difficulty": "easy",
+    "conceptCluster": "money_market",
+    "primarySkill": "read_money_market_shift",
+    "secondarySkills": [],
+    "repairSkill": "read_money_market_shift",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "With money demand fixed, the larger money supply moves equilibrium down MD0 from 4 percent to 2 percent.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "956746a6dcbd24dda8a2929d4c1754d2c63884644eb1653c274817116c2ea9cf",
+    "canonicalId": "PG4-MM-E-002",
+    "sourceId": 863006,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "c026a118b903a11a33bb674ea612b23ed21c2be7e09b5b1908fca0467b868724",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "read_money_market_shift",
+        "sourceRecordOrder": 6,
+        "sourceId": 863006,
+        "sourceHash": "c026a118b903a11a33bb674ea612b23ed21c2be7e09b5b1908fca0467b868724"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-E-003",
+    "q": "When the money-supply line moves left from 100 to 75, how does the equilibrium interest rate respond?",
+    "options": [
+      "It rises from 4 percent to 6 percent",
+      "It falls from 6 percent to 4 percent",
+      "It stays at 4 percent",
+      "It rises from 2 percent to 4 percent"
+    ],
+    "tag": "money_market",
+    "type": "graph",
+    "objective": "LO35.1",
+    "difficulty": "easy",
+    "conceptCluster": "money_market",
+    "primarySkill": "read_money_market_shift",
+    "secondarySkills": [],
+    "repairSkill": "read_money_market_shift",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "With money demand fixed, the smaller money supply moves equilibrium up MD0 from 4 percent to 6 percent.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "22ff97bba7325f02ca1ec60143e374b475acb899c5aa57b1b2405e9182250dd6",
+    "canonicalId": "PG4-MM-E-003",
+    "sourceId": 863012,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "125df02b1ff23f8a78c0acb89b0d0c17f1b1bbaa42acbbe35688f260c49d3118",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "read_money_market_shift",
+        "sourceRecordOrder": 12,
+        "sourceId": 863012,
+        "sourceHash": "125df02b1ff23f8a78c0acb89b0d0c17f1b1bbaa42acbbe35688f260c49d3118"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-E-004",
+    "q": "Which labeled point is the original equilibrium where MD0 intersects MS0?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "tag": "money_market",
+    "type": "graph",
+    "objective": "LO35.1",
+    "difficulty": "easy",
+    "conceptCluster": "money_market",
+    "primarySkill": "simultaneous_money_shifts",
+    "secondarySkills": [],
+    "repairSkill": "simultaneous_money_shifts",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The original curves MD0 and MS0 intersect at point B, quantity 75 and interest rate 3.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
+    "canonicalId": "PG4-MM-E-004",
+    "sourceId": 863018,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "6a2ffbc90da6474c9af349674088217a662d2a1881508edd6b9ad4a7bcbc4223",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "simultaneous_money_shifts",
+        "sourceRecordOrder": 18,
+        "sourceId": 863018,
+        "sourceHash": "6a2ffbc90da6474c9af349674088217a662d2a1881508edd6b9ad4a7bcbc4223"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-E-005",
+    "q": "In the left panel, money demand rises from MD0 to MD1 while MS0 stays fixed. What happens to the nominal interest rate?",
+    "options": [
+      "It rises from 2 percent to 4 percent",
+      "It falls from 4 percent to 2 percent",
+      "It stays at 2 percent",
+      "It rises from 4 percent to 6 percent"
+    ],
+    "tag": "money_market",
+    "type": "graph",
+    "objective": "LO35.1",
+    "difficulty": "easy",
+    "conceptCluster": "money_market",
+    "primarySkill": "trace_money_demand_shift_to_investment",
+    "secondarySkills": [],
+    "repairSkill": "trace_money_demand_shift_to_investment",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "With fixed money supply, the higher money-demand curve raises the equilibrium interest rate from point A to point B.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "ac32cc8f1c7489da4e5697c936bbab8db6f0b5dea09344f970935473714cb076",
+    "canonicalId": "PG4-MM-E-005",
+    "sourceId": 863024,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "854c20fc08cddb888a81c7dbfe646f87b73b516c2b66a11b6da7df694b0ce854",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "trace_money_demand_shift_to_investment",
+        "sourceRecordOrder": 24,
+        "sourceId": 863024,
+        "sourceHash": "854c20fc08cddb888a81c7dbfe646f87b73b516c2b66a11b6da7df694b0ce854"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-EL-001",
+    "q": "A student says a fall in the interest rate from 8 percent to 6 percent would shift MD0 to the right. What is the best correction?",
+    "options": [
+      "Interest-rate changes move along MD0; they do not shift MD0.",
+      "Interest-rate changes shift MD0 because the rate is on the axis.",
+      "Interest-rate changes shift MS0 while MD0 stays fixed.",
+      "Interest-rate changes shift both MD0 and MS0 together."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "elite",
+    "conceptCluster": "money_market",
+    "primarySkill": "money_demand_shift_vs_movement",
+    "secondarySkills": [],
+    "repairSkill": "money_demand_shift_vs_movement",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The interest rate is the price variable on the money-demand curve. Changing it moves the economy along MD0.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "5dc32d0947ddf57ab5422fa2cdb5f8e027c0fc997efcc34ef916e773ebe55076",
+    "canonicalId": "PG4-MM-EL-001",
+    "sourceId": 863004,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "d636a097e3cd6fc6474155c8ca7b5a2f3dbd58793676b2ebb6757cba4f5251fa",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "money_demand_shift_vs_movement",
+        "sourceRecordOrder": 4,
+        "sourceId": 863004,
+        "sourceHash": "d636a097e3cd6fc6474155c8ca7b5a2f3dbd58793676b2ebb6757cba4f5251fa"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-EL-002",
+    "q": "A student says the fall in the interest rate from 4 percent to 2 percent proves money demand shifted left. What does the graph actually show?",
+    "options": [
+      "MD0 shifts left while money supply remains fixed at MS0 throughout.",
+      "MD0 and money supply both shift right to separate new curves.",
+      "MD0 is fixed; MS shifts right and equilibrium moves along MD0.",
+      "Neither money demand nor money supply changes in the diagram."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "elite",
+    "conceptCluster": "money_market",
+    "primarySkill": "money_demand_shift_vs_movement",
+    "secondarySkills": [],
+    "repairSkill": "money_demand_shift_vs_movement",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "MD0 is unchanged. The new equilibrium is reached by moving along the same money-demand curve after MS shifts right.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "fc51a2fbe6f7081d97dcc1dcdddf459d8a4ed8251be1827a11a83c53c1b469c1",
+    "canonicalId": "PG4-MM-EL-002",
+    "sourceId": 863010,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "acc121185e2df744cf0cf13603f2f2fd332fa3d23e46a0a9092be5654bc9a237",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "money_demand_shift_vs_movement",
+        "sourceRecordOrder": 10,
+        "sourceId": 863010,
+        "sourceHash": "acc121185e2df744cf0cf13603f2f2fd332fa3d23e46a0a9092be5654bc9a237"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-EL-003",
+    "q": "A student says the rise in the interest rate from 4 percent to 6 percent proves money demand shifted right. What does the graph actually show?",
+    "options": [
+      "MD0 is fixed; MS shifts left and equilibrium moves along MD0.",
+      "MD0 shifts right while money supply remains fixed at MS0 throughout.",
+      "MD0 and money supply both shift left to separate new curves.",
+      "Neither money demand nor money supply changes in the diagram."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "elite",
+    "conceptCluster": "money_market",
+    "primarySkill": "money_demand_shift_vs_movement",
+    "secondarySkills": [],
+    "repairSkill": "money_demand_shift_vs_movement",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "MD0 is unchanged. The higher interest rate comes from the smaller money supply, causing a movement along MD0.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "fafa38dd92848126b3292c19454854a42f0ca4eb4959e972bac8117345f741fe",
+    "canonicalId": "PG4-MM-EL-003",
+    "sourceId": 863016,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "8015f0f936e12bfb0328d066f2823b4d3eaa13b537b3097472be3939b9c8754a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "money_demand_shift_vs_movement",
+        "sourceRecordOrder": 16,
+        "sourceId": 863016,
+        "sourceHash": "8015f0f936e12bfb0328d066f2823b4d3eaa13b537b3097472be3939b9c8754a"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-EL-004",
+    "q": "Compare original point B with simultaneous-shift point C. What happens to quantity of money and the nominal interest rate?",
+    "options": [
+      "Quantity rises from 75 to 100 while the interest rate falls from 3 percent to 1 percent",
+      "Quantity stays at 75 while the interest rate rises from 3 percent to 6 percent",
+      "Quantity rises from 75 to 100 while the interest rate rises from 3 percent to 4 percent",
+      "Quantity falls from 100 to 75 while the interest rate falls from 4 percent to 3 percent"
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "elite",
+    "conceptCluster": "money_market",
+    "primarySkill": "money_market_offsetting_shifts",
+    "secondarySkills": [],
+    "repairSkill": "money_market_offsetting_shifts",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The increase in money supply raises equilibrium quantity, while the simultaneous increase in money demand is strong enough to leave the interest rate one point higher than at B.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "f007f98bd9aea5f9526f8bbde98ae04343ff359a1022526d415c047b4d51439d",
+    "canonicalId": "PG4-MM-EL-004",
+    "sourceId": 863022,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "8373f4d7f34997cc85f2c6e43d3236c0924ca6f80d900699a13d572d42984f2f",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "money_market_offsetting_shifts",
+        "sourceRecordOrder": 22,
+        "sourceId": 863022,
+        "sourceHash": "8373f4d7f34997cc85f2c6e43d3236c0924ca6f80d900699a13d572d42984f2f"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-EL-005",
+    "q": "A student says the money-demand increase should shift aggregate demand right because people want to hold more money. What is the strongest correction using the graph?",
+    "options": [
+      "With MS fixed, higher MD raises rates; spending falls and AD shifts left.",
+      "With MS fixed, higher MD lowers rates; spending rises and AD shifts right.",
+      "Higher MD creates extra money automatically, so interest rates fall.",
+      "Money demand and aggregate demand are the same curve and shift together."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "elite",
+    "conceptCluster": "money_market",
+    "primarySkill": "connect_money_market_to_ad_slope",
+    "secondarySkills": [],
+    "repairSkill": "connect_money_market_to_ad_slope",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "Money demand is demand for liquid balances, not aggregate expenditure. With fixed supply, more money demand raises the interest rate and can reduce spending.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "be2fb4a11b68fae2c12db44a8eca31770584bc23226a768f6a677ae87ae88286",
+    "canonicalId": "PG4-MM-EL-005",
+    "sourceId": 863028,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "339acb5546b64fed57b918313a3f52a3408e3f7c694cbf691221abe44af566f0",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "connect_money_market_to_ad_slope",
+        "sourceRecordOrder": 28,
+        "sourceId": 863028,
+        "sourceHash": "339acb5546b64fed57b918313a3f52a3408e3f7c694cbf691221abe44af566f0"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-H-001",
+    "q": "Moving downward along MD0 from a higher to a lower interest rate, what happens to the quantity of money demanded?",
+    "options": [
+      "The quantity of money demanded falls.",
+      "The quantity of money supplied rises.",
+      "The money-demand curve shifts left.",
+      "The quantity of money demanded rises."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "hard",
+    "conceptCluster": "money_market",
+    "primarySkill": "money_demand_interest_rate",
+    "secondarySkills": [],
+    "repairSkill": "money_demand_interest_rate",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "Holding other determinants fixed, lower interest rates reduce the opportunity cost of holding money, so quantity of money demanded rises.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "39e0c46a488b0cb3c60eee30d336672c49fbcbf712c4f882128cb01558275e89",
+    "canonicalId": "PG4-MM-H-001",
+    "sourceId": 863003,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "16910e23f382dce5693c0cf78d903c6fb7c0c099ee1d582bd5e572f0811a6712",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "money_demand_interest_rate",
+        "sourceRecordOrder": 3,
+        "sourceId": 863003,
+        "sourceHash": "16910e23f382dce5693c0cf78d903c6fb7c0c099ee1d582bd5e572f0811a6712"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-H-002",
+    "q": "What is the change in the equilibrium nominal interest rate when money supply rises from 100 to 125?",
+    "options": [
+      "An increase of 2 percentage points",
+      "A decrease of 2 percentage points",
+      "A decrease of 25 percentage points",
+      "No change"
+    ],
+    "tag": "money_market",
+    "type": "calculation",
+    "objective": "LO35.1",
+    "difficulty": "hard",
+    "conceptCluster": "money_market",
+    "primarySkill": "predict_money_market_equilibrium",
+    "secondarySkills": [],
+    "repairSkill": "predict_money_market_equilibrium",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The equilibrium interest rate falls from 4 percent to 2 percent, a 2-percentage-point decrease.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "5fe6490a036b80411a051ee240f2a2842da1d4e2e0b2e57b2ba7ca458f60de6d",
+    "canonicalId": "PG4-MM-H-002",
+    "sourceId": 863009,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "915a01c21cce61cde75d6af6314cc2ffe46b395b8060e531b71902d54493dad4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "predict_money_market_equilibrium",
+        "sourceRecordOrder": 9,
+        "sourceId": 863009,
+        "sourceHash": "915a01c21cce61cde75d6af6314cc2ffe46b395b8060e531b71902d54493dad4"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-H-003",
+    "q": "What is the change in the equilibrium nominal interest rate when money supply falls from 100 to 75?",
+    "options": [
+      "A decrease of 2 percentage points",
+      "An increase of 25 percentage points",
+      "No change",
+      "An increase of 2 percentage points"
+    ],
+    "tag": "money_market",
+    "type": "calculation",
+    "objective": "LO35.1",
+    "difficulty": "hard",
+    "conceptCluster": "money_market",
+    "primarySkill": "predict_money_market_equilibrium",
+    "secondarySkills": [],
+    "repairSkill": "predict_money_market_equilibrium",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The equilibrium interest rate rises from 4 percent to 6 percent, a 2-percentage-point increase.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "29e774a4bbb8bbaf794c243d22a9e57f35702c9754dec83fd24ab7df4ca187bf",
+    "canonicalId": "PG4-MM-H-003",
+    "sourceId": 863015,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "acbc91330f9d1e8881cb98e3f5434cf70dbc9dd993957a54622ace310553e745",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "predict_money_market_equilibrium",
+        "sourceRecordOrder": 15,
+        "sourceId": 863015,
+        "sourceHash": "acbc91330f9d1e8881cb98e3f5434cf70dbc9dd993957a54622ace310553e745"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-H-004",
+    "q": "If money demand increases from MD0 to MD1 at the same time money supply increases from MS0 to MS1, which point is the resulting equilibrium?",
+    "options": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "tag": "money_market",
+    "type": "graph",
+    "objective": "LO35.1",
+    "difficulty": "hard",
+    "conceptCluster": "money_market",
+    "primarySkill": "simultaneous_money_shifts",
+    "secondarySkills": [],
+    "repairSkill": "simultaneous_money_shifts",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The simultaneous shifts produce the intersection of MD1 and MS1, point C.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "1ddf7973e5b61d38fa9b006a2114abd9568562684cd21fbe42afe7e33e63fb6a",
+    "canonicalId": "PG4-MM-H-004",
+    "sourceId": 863021,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "6c97df8c278cadb096283f0f482ef65c325f0925c5cf6905e1268b86c8f869c5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "simultaneous_money_shifts",
+        "sourceRecordOrder": 21,
+        "sourceId": 863021,
+        "sourceHash": "6c97df8c278cadb096283f0f482ef65c325f0925c5cf6905e1268b86c8f869c5"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-H-005",
+    "q": "By how much does real GDP change from point A to point B in the right panel?",
+    "options": [
+      "20",
+      "35",
+      "55",
+      "45"
+    ],
+    "tag": "money_market",
+    "type": "calculation",
+    "objective": "LO35.1",
+    "difficulty": "hard",
+    "conceptCluster": "money_market",
+    "primarySkill": "trace_money_demand_shift_to_investment",
+    "secondarySkills": [],
+    "repairSkill": "trace_money_demand_shift_to_investment",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "Read real GDP at A and B in the right panel: 150 − 105 = 45.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c",
+    "canonicalId": "PG4-MM-H-005",
+    "sourceId": 863027,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "d6ee136beab9a27e04e194028ae8a5309fcbbbb7426081deba12b3a82c5ca3c0",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "trace_money_demand_shift_to_investment",
+        "sourceRecordOrder": 27,
+        "sourceId": 863027,
+        "sourceHash": "d6ee136beab9a27e04e194028ae8a5309fcbbbb7426081deba12b3a82c5ca3c0"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-L-001",
+    "q": "If the nominal interest rate were temporarily above point A while MS0 stayed fixed, what adjustment pressure would the graph imply?",
+    "options": [
+      "Excess money demand pushes the rate farther above A.",
+      "Excess money supply pushes the rate down toward A.",
+      "Money supply shifts right until the rate rises above A.",
+      "Money demand shifts left until the rate remains above A."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "legendary",
+    "conceptCluster": "money_market",
+    "primarySkill": "money_market_disequilibrium",
+    "secondarySkills": [],
+    "repairSkill": "money_market_disequilibrium",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "Above equilibrium, the quantity of money demanded is less than the fixed money supply. Portfolio adjustment pushes the interest rate back down toward equilibrium.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "ea39f1cba9740776a89919b5c5cf6140a8053b1a3a9bdcc88cd463a8edd4266d",
+    "canonicalId": "PG4-MM-L-001",
+    "sourceId": 863005,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "79e3b12b8da1773ad45e6ac81b60a6e26e498213c786ae20c02891aee968cb6c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "money_market_disequilibrium",
+        "sourceRecordOrder": 5,
+        "sourceId": 863005,
+        "sourceHash": "79e3b12b8da1773ad45e6ac81b60a6e26e498213c786ae20c02891aee968cb6c"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-L-002",
+    "q": "Starting from the money-market change shown, which downstream effect would normally follow?",
+    "options": [
+      "Lower rates cut interest-sensitive spending and shift AD left.",
+      "Higher rates raise interest-sensitive spending and shift AD right.",
+      "Higher rates cut interest-sensitive spending and shift AD left.",
+      "Lower rates raise interest-sensitive spending and shift AD right."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "legendary",
+    "conceptCluster": "money_market",
+    "primarySkill": "bridge_money_market_transmission",
+    "secondarySkills": [
+      "monetary_policy_transmission"
+    ],
+    "repairSkill": "bridge_money_market_transmission",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The standard transmission channel runs from more money to lower interest rates to more interest-sensitive spending and higher aggregate demand.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "9ccbb60c313562b694be6332791a09a981026a9cfd04bc0494736b08a02d6086",
+    "canonicalId": "PG4-MM-L-002",
+    "sourceId": 863011,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "fa91acf84ca4a0d5c184326443999223fe4064433c9a8dd985a0583d5211875e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "bridge_money_market_transmission",
+        "sourceRecordOrder": 11,
+        "sourceId": 863011,
+        "sourceHash": "fa91acf84ca4a0d5c184326443999223fe4064433c9a8dd985a0583d5211875e"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-L-003",
+    "q": "After the money-supply change from MS0 to MS1 shown in the graph, which spending-and-AD response should follow?",
+    "options": [
+      "Higher rates raise interest-sensitive spending and shift AD right.",
+      "Higher rates cut interest-sensitive spending and shift AD left.",
+      "Lower rates cut interest-sensitive spending and shift AD left.",
+      "Lower rates raise interest-sensitive spending and shift AD right."
+    ],
+    "tag": "money_market",
+    "type": "analysis",
+    "objective": "LO35.1",
+    "difficulty": "legendary",
+    "conceptCluster": "money_market",
+    "primarySkill": "bridge_money_market_transmission",
+    "secondarySkills": [
+      "monetary_policy_transmission"
+    ],
+    "repairSkill": "bridge_money_market_transmission",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The standard contractionary chain runs from less money to higher interest rates to less interest-sensitive spending and lower aggregate demand.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "8c7eefae43401e033e64359344bd4da85ba9b06ab9a417703770d8a8ebf5b48c",
+    "canonicalId": "PG4-MM-L-003",
+    "sourceId": 863017,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "0af6ba24ea4fd27c603ae8008b379be60de7c36922e9353e9fceed08436f7165",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "bridge_money_market_transmission",
+        "sourceRecordOrder": 17,
+        "sourceId": 863017,
+        "sourceHash": "0af6ba24ea4fd27c603ae8008b379be60de7c36922e9353e9fceed08436f7165"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-L-004",
+    "q": "Money demand rises from MD0 to MD1. Which central-bank response shown partially offsets the interest-rate increase without restoring the original 3-percent rate?",
+    "options": [
+      "Lower MS from MS1 to MS0; C→A lowers the rate.",
+      "Keep MS at MS0; B→D lowers the rate.",
+      "Shift MD back to MD0; A→C raises the rate.",
+      "Raise MS from MS0 to MS1; A→C lowers the rate."
+    ],
+    "tag": "money_market",
+    "type": "multi-step",
+    "objective": "LO35.1",
+    "difficulty": "legendary",
+    "conceptCluster": "money_market",
+    "primarySkill": "infer_money_supply_offset",
+    "secondarySkills": [],
+    "repairSkill": "infer_money_supply_offset",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The demand increase alone raises the rate from B to A. Expanding money supply then lowers it from 6 to 4 percent at C, partially but not fully offsetting the increase.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "90db64216416f2a0a5faf96b40e641907a6de2b2e7d19d322b63fae9de6f84bf",
+    "canonicalId": "PG4-MM-L-004",
+    "sourceId": 863023,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "1507a3953fdae58572a6859d70652e605f5cc7cd5b767b3322e1fb664e8c435b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "infer_money_supply_offset",
+        "sourceRecordOrder": 23,
+        "sourceId": 863023,
+        "sourceHash": "1507a3953fdae58572a6859d70652e605f5cc7cd5b767b3322e1fb664e8c435b"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MM-L-005",
+    "q": "Which complete chain is consistent with the two-panel graph?",
+    "options": [
+      "MD ↑; rate ↓; interest-sensitive spending ↑; AD →; GDP and prices ↑.",
+      "MD ↑; rate ↑; interest-sensitive spending ↓; AD ←; GDP and prices ↓.",
+      "MS ↑; rate ↑; interest-sensitive spending ↓; AD ←; GDP and prices ↑.",
+      "MD ↓; rate ↑; interest-sensitive spending ↑; AD →; GDP and prices ↑."
+    ],
+    "tag": "money_market",
+    "type": "multi-step",
+    "objective": "LO35.1",
+    "difficulty": "legendary",
+    "conceptCluster": "money_market",
+    "primarySkill": "connect_money_market_to_ad_slope",
+    "secondarySkills": [],
+    "repairSkill": "connect_money_market_to_ad_slope",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The panels show the full liquidity-preference transmission from a money-demand increase to a higher rate and lower aggregate demand.",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "4a2a1c14f4dfa37b89d4d12fed585612e9947b5f9becadacca7170ef8ee48cb5",
+    "canonicalId": "PG4-MM-L-005",
+    "sourceId": 863029,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "liquidity-preference-and-money-market"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "c840dcc9821f8d1e539acc0fc743604723a6d73a3b2cffb6028a413f40d26fff",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "connect_money_market_to_ad_slope",
+        "sourceRecordOrder": 29,
+        "sourceId": 863029,
+        "sourceHash": "c840dcc9821f8d1e539acc0fc743604723a6d73a3b2cffb6028a413f40d26fff"
+      }
+    ],
+    "primaryConceptId": "liquidity-preference-and-money-market",
+    "secondaryConceptIds": [
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
     "id": "PG4-MM-M-001",
     "q": "At point A, what quantity of money clears the market?",
     "options": [
@@ -97,12 +1025,12 @@
   },
   {
     "id": "PG4-MM-M-002",
-    "q": "Why is MS0 drawn as a vertical line in this standard money-market graph?",
+    "q": "Which feature of MS0 shows that this model treats the nominal money supply as fixed?",
     "options": [
-      "The interest rate is fixed by households rather than markets",
-      "Money demand does not respond to the interest rate",
-      "The model treats the nominal money supply as fixed by the central bank at that moment",
-      "Real GDP is fixed at the full-employment level"
+      "MD0 is downward sloping as the interest rate changes.",
+      "Point A lies where the two curves cross in equilibrium.",
+      "MS0 is vertical at a fixed money quantity.",
+      "The interest rate is measured on the vertical axis."
     ],
     "tag": "money_market",
     "type": "analysis",
@@ -115,7 +1043,7 @@
     "commonError": "misreads_money_market_or_transmission",
     "feedback": "In the standard liquidity-preference model, the central bank fixes the nominal quantity of money, so MS is vertical.",
     "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
-    "aHash": "c819700888b242040128405d8f7732f70b987f1707e9e3f5c45c3945c2aa0a0d",
+    "aHash": "b26ad732ba9f930c596db97a5dc3c74331f6aade0d8938449cd084aa0817810c",
     "canonicalId": "PG4-MM-M-002",
     "sourceId": 863002,
     "sourceGame": "macro-concept-library",
@@ -123,7 +1051,7 @@
       "liquidity-preference-and-money-market"
     ],
     "sourcePool": "medium",
-    "sourceHash": "318fd6dec39d26a1ba4c4d45ce52f1f0b44706f178c84c759e907aafb8abd304",
+    "sourceHash": "4e41a8962c4b00a378cec0da62b59af088e09028fbb20000c5c97dcd6b5cd378",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -133,7 +1061,7 @@
         "routeKey": "identify_core_model",
         "sourceRecordOrder": 2,
         "sourceId": 863002,
-        "sourceHash": "318fd6dec39d26a1ba4c4d45ce52f1f0b44706f178c84c759e907aafb8abd304"
+        "sourceHash": "4e41a8962c4b00a378cec0da62b59af088e09028fbb20000c5c97dcd6b5cd378"
       }
     ],
     "primaryConceptId": "liquidity-preference-and-money-market",
@@ -144,200 +1072,8 @@
     "originalBossTier": null
   },
   {
-    "id": "PG4-MM-H-001",
-    "q": "The downward slope of MD0 means that, other things equal, a lower nominal interest rate is associated with what?",
-    "options": [
-      "A smaller quantity of money demanded",
-      "A lower fixed money supply",
-      "A rightward shift of the money-supply curve",
-      "A larger quantity of money demanded"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "hard",
-    "conceptCluster": "money_market",
-    "primarySkill": "money_demand_interest_rate",
-    "secondarySkills": [],
-    "repairSkill": "money_demand_interest_rate",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "Holding other determinants fixed, lower interest rates reduce the opportunity cost of holding money, so quantity of money demanded rises.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
-    "aHash": "f90a04c1ccdee9cb52dd54b9097d3fe618d5d11e46f42b4d2e1ce6dc8eb59c58",
-    "canonicalId": "PG4-MM-H-001",
-    "sourceId": 863003,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "b28812e1dbf926cf7eeecae932e1da0f166e415fa776916d7616f61ec276e0b4",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "money_demand_interest_rate",
-        "sourceRecordOrder": 3,
-        "sourceId": 863003,
-        "sourceHash": "b28812e1dbf926cf7eeecae932e1da0f166e415fa776916d7616f61ec276e0b4"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-EL-001",
-    "q": "A student says a fall in the interest rate from 8 percent to 6 percent would shift MD0 to the right. What is the best correction?",
-    "options": [
-      "A change in the interest rate causes a movement along MD0; it does not by itself shift the money-demand curve",
-      "Any interest-rate change shifts money demand because interest is on the vertical axis",
-      "The change shifts money supply, not money demand",
-      "The graph cannot distinguish movements from shifts"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "elite",
-    "conceptCluster": "money_market",
-    "primarySkill": "money_demand_shift_vs_movement",
-    "secondarySkills": [],
-    "repairSkill": "money_demand_shift_vs_movement",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The interest rate is the price variable on the money-demand curve. Changing it moves the economy along MD0.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
-    "aHash": "ce4a65362afee903b676eb735169d3b458f922d557e3a774325baa639b5c63a9",
-    "canonicalId": "PG4-MM-EL-001",
-    "sourceId": 863004,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "a990d567db7149e5383cb513b9359c0055d7cee8ba9b75b67b7f495ed49f05ac",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "money_demand_shift_vs_movement",
-        "sourceRecordOrder": 4,
-        "sourceId": 863004,
-        "sourceHash": "a990d567db7149e5383cb513b9359c0055d7cee8ba9b75b67b7f495ed49f05ac"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-L-001",
-    "q": "Suppose the nominal interest rate were temporarily above the 6-percent equilibrium while MS0 remained fixed. What adjustment pressure would the model predict?",
-    "options": [
-      "An excess demand for money would push the interest rate higher",
-      "An excess supply of money would push the interest rate downward toward 6 percent",
-      "Money supply would automatically shift right until the interest rate rose",
-      "Real GDP would fall until the money-supply curve became horizontal"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "legendary",
-    "conceptCluster": "money_market",
-    "primarySkill": "money_market_disequilibrium",
-    "secondarySkills": [],
-    "repairSkill": "money_market_disequilibrium",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "Above equilibrium, the quantity of money demanded is less than the fixed money supply. Portfolio adjustment pushes the interest rate back down toward equilibrium.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
-    "aHash": "ea91266551eef3d7eaa21e2fb2e6cee197872dc02f6e04611befa0bd62e4b14e",
-    "canonicalId": "PG4-MM-L-001",
-    "sourceId": 863005,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "6d19b4e4055dc7b51a89ce20de8b90148a7e77f5f7b92d851b7da31623588a8d",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "money_market_disequilibrium",
-        "sourceRecordOrder": 5,
-        "sourceId": 863005,
-        "sourceHash": "6d19b4e4055dc7b51a89ce20de8b90148a7e77f5f7b92d851b7da31623588a8d"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-E-002",
-    "q": "The money-supply curve moves from MS0 at 100 to MS1 at 125. What happens to the equilibrium nominal interest rate?",
-    "options": [
-      "It rises from 2 percent to 4 percent",
-      "It stays at 4 percent",
-      "It falls from 4 percent to 2 percent",
-      "It falls from 6 percent to 4 percent"
-    ],
-    "tag": "money_market",
-    "type": "graph",
-    "objective": "LO35.1",
-    "difficulty": "easy",
-    "conceptCluster": "money_market",
-    "primarySkill": "read_money_market_shift",
-    "secondarySkills": [],
-    "repairSkill": "read_money_market_shift",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "With money demand fixed, the larger money supply moves equilibrium down MD0 from 4 percent to 2 percent.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
-    "aHash": "956746a6dcbd24dda8a2929d4c1754d2c63884644eb1653c274817116c2ea9cf",
-    "canonicalId": "PG4-MM-E-002",
-    "sourceId": 863006,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "easy",
-    "sourceHash": "c026a118b903a11a33bb674ea612b23ed21c2be7e09b5b1908fca0467b868724",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "easy",
-        "routeKey": "read_money_market_shift",
-        "sourceRecordOrder": 6,
-        "sourceId": 863006,
-        "sourceHash": "c026a118b903a11a33bb674ea612b23ed21c2be7e09b5b1908fca0467b868724"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "easy",
-    "originalSourcePool": "easy",
-    "originalBossTier": null
-  },
-  {
     "id": "PG4-MM-M-003",
-    "q": "By how much does the quantity of money supplied increase when MS0 shifts to MS1?",
+    "q": "How much farther right is MS1 than MS0 in the graph?",
     "options": [
       "2",
       "50",
@@ -363,7 +1099,7 @@
       "liquidity-preference-and-money-market"
     ],
     "sourcePool": "medium",
-    "sourceHash": "3c75b39e5e310eb20ca33578409ade4f6a110079813cc2317f955a5019f481c3",
+    "sourceHash": "c4f567b2e51080b757c3f43162bdb6d98cd85c626402d62ec93a75896192aecd",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -373,7 +1109,7 @@
         "routeKey": "predict_money_market_equilibrium",
         "sourceRecordOrder": 7,
         "sourceId": 863007,
-        "sourceHash": "3c75b39e5e310eb20ca33578409ade4f6a110079813cc2317f955a5019f481c3"
+        "sourceHash": "c4f567b2e51080b757c3f43162bdb6d98cd85c626402d62ec93a75896192aecd"
       }
     ],
     "primaryConceptId": "liquidity-preference-and-money-market",
@@ -432,202 +1168,8 @@
     "originalBossTier": null
   },
   {
-    "id": "PG4-MM-H-002",
-    "q": "What is the change in the equilibrium nominal interest rate when money supply rises from 100 to 125?",
-    "options": [
-      "An increase of 2 percentage points",
-      "A decrease of 2 percentage points",
-      "A decrease of 25 percentage points",
-      "No change"
-    ],
-    "tag": "money_market",
-    "type": "calculation",
-    "objective": "LO35.1",
-    "difficulty": "hard",
-    "conceptCluster": "money_market",
-    "primarySkill": "predict_money_market_equilibrium",
-    "secondarySkills": [],
-    "repairSkill": "predict_money_market_equilibrium",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The equilibrium interest rate falls from 4 percent to 2 percent, a 2-percentage-point decrease.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
-    "aHash": "5fe6490a036b80411a051ee240f2a2842da1d4e2e0b2e57b2ba7ca458f60de6d",
-    "canonicalId": "PG4-MM-H-002",
-    "sourceId": 863009,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "915a01c21cce61cde75d6af6314cc2ffe46b395b8060e531b71902d54493dad4",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "predict_money_market_equilibrium",
-        "sourceRecordOrder": 9,
-        "sourceId": 863009,
-        "sourceHash": "915a01c21cce61cde75d6af6314cc2ffe46b395b8060e531b71902d54493dad4"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-EL-002",
-    "q": "A student says the fall in the interest rate from 4 percent to 2 percent proves money demand shifted left. What does the graph actually show?",
-    "options": [
-      "Money demand shifts left while money supply stays fixed",
-      "Both money demand and money supply shift right",
-      "Money demand stays at MD0; the economy moves along MD0 because money supply shifts right",
-      "The interest-rate decline occurs with no change in either curve"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "elite",
-    "conceptCluster": "money_market",
-    "primarySkill": "money_demand_shift_vs_movement",
-    "secondarySkills": [],
-    "repairSkill": "money_demand_shift_vs_movement",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "MD0 is unchanged. The new equilibrium is reached by moving along the same money-demand curve after MS shifts right.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
-    "aHash": "81bd2598521f0fb8e1f089b473402a76c078d8868dfe5baef0a5b897f72783c6",
-    "canonicalId": "PG4-MM-EL-002",
-    "sourceId": 863010,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "b0f49e68fd77978d4696c6813d4414206a97cefdbdc0f5a378304b523eba5395",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "money_demand_shift_vs_movement",
-        "sourceRecordOrder": 10,
-        "sourceId": 863010,
-        "sourceHash": "b0f49e68fd77978d4696c6813d4414206a97cefdbdc0f5a378304b523eba5395"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-L-002",
-    "q": "If this money-market shift were the first step of expansionary monetary policy, which downstream effect would normally come next?",
-    "options": [
-      "Lower interest rates would reduce investment and shift aggregate demand left",
-      "Higher interest rates would increase saving and shift aggregate demand right",
-      "The money-market change would have no possible link to aggregate demand",
-      "Lower interest rates would tend to increase interest-sensitive spending and push aggregate demand to the right"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "legendary",
-    "conceptCluster": "money_market",
-    "primarySkill": "bridge_money_market_transmission",
-    "secondarySkills": [
-      "monetary_policy_transmission"
-    ],
-    "repairSkill": "bridge_money_market_transmission",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The standard transmission channel runs from more money to lower interest rates to more interest-sensitive spending and higher aggregate demand.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
-    "aHash": "bcb69034141073481fdaf465ec11ba941ff3e891d81e5d00be184e4ec90af736",
-    "canonicalId": "PG4-MM-L-002",
-    "sourceId": 863011,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "d0326a23c31371f53d2e0e8be7c4b9c78d0c4d5b466e34b508ddd5098d64bc36",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "bridge_money_market_transmission",
-        "sourceRecordOrder": 11,
-        "sourceId": 863011,
-        "sourceHash": "d0326a23c31371f53d2e0e8be7c4b9c78d0c4d5b466e34b508ddd5098d64bc36"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-E-003",
-    "q": "The money-supply curve moves from MS0 at 100 to MS1 at 75. What happens to the equilibrium nominal interest rate?",
-    "options": [
-      "It rises from 4 percent to 6 percent",
-      "It falls from 6 percent to 4 percent",
-      "It stays at 4 percent",
-      "It rises from 2 percent to 4 percent"
-    ],
-    "tag": "money_market",
-    "type": "graph",
-    "objective": "LO35.1",
-    "difficulty": "easy",
-    "conceptCluster": "money_market",
-    "primarySkill": "read_money_market_shift",
-    "secondarySkills": [],
-    "repairSkill": "read_money_market_shift",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "With money demand fixed, the smaller money supply moves equilibrium up MD0 from 4 percent to 6 percent.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
-    "aHash": "22ff97bba7325f02ca1ec60143e374b475acb899c5aa57b1b2405e9182250dd6",
-    "canonicalId": "PG4-MM-E-003",
-    "sourceId": 863012,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "easy",
-    "sourceHash": "983f31e9a5cda54205dc235df2ff783f82f2be936cb6cfb1c85d8412f383bde7",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "easy",
-        "routeKey": "read_money_market_shift",
-        "sourceRecordOrder": 12,
-        "sourceId": 863012,
-        "sourceHash": "983f31e9a5cda54205dc235df2ff783f82f2be936cb6cfb1c85d8412f383bde7"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "easy",
-    "originalSourcePool": "easy",
-    "originalBossTier": null
-  },
-  {
     "id": "PG4-MM-M-005",
-    "q": "By how much does the quantity of money supplied decrease when MS0 shifts to MS1?",
+    "q": "Measure the leftward distance from MS0 to MS1. How much smaller is the money supply?",
     "options": [
       "2",
       "25",
@@ -653,7 +1195,7 @@
       "liquidity-preference-and-money-market"
     ],
     "sourcePool": "medium",
-    "sourceHash": "4050a51cb3fa93471eb8b1fe4b32eede81b8e53d858f0aaa30a9c838f7a9d224",
+    "sourceHash": "f6de3a537e8118ea0bd9c676b45a13c1e3ac070d32f7568ad2a3fa87a9bd2cee",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -663,7 +1205,7 @@
         "routeKey": "predict_money_market_equilibrium",
         "sourceRecordOrder": 13,
         "sourceId": 863013,
-        "sourceHash": "4050a51cb3fa93471eb8b1fe4b32eede81b8e53d858f0aaa30a9c838f7a9d224"
+        "sourceHash": "f6de3a537e8118ea0bd9c676b45a13c1e3ac070d32f7568ad2a3fa87a9bd2cee"
       }
     ],
     "primaryConceptId": "liquidity-preference-and-money-market",
@@ -675,12 +1217,12 @@
   },
   {
     "id": "PG4-MM-M-006",
-    "q": "Which central-bank action is most consistent with the shift from MS0 to MS1?",
+    "q": "Which contractionary central-bank action could produce the displayed money-supply shift?",
     "options": [
       "An expansionary action that increases the money supply",
-      "A fall in real income that shifts money demand left",
-      "A contractionary action that decreases the money supply",
-      "A lower price level that shifts money demand left"
+      "A rise in real income that increases money demand",
+      "A contractionary action that reduces the money supply",
+      "A lower price level that reduces money demand"
     ],
     "tag": "money_market",
     "type": "analysis",
@@ -693,7 +1235,7 @@
     "commonError": "misreads_money_market_or_transmission",
     "feedback": "The graph shows a leftward shift of the vertical money-supply curve, which is contractionary.",
     "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
-    "aHash": "a4e3c6d5eae76724fa6e70859a7642f007caf0b76b562a5a1580ecdbaa743b0d",
+    "aHash": "e3b61d92fac9aa65a95c74e426c4d4b1414faed0b2f31f608f2e4f2f5284ab5e",
     "canonicalId": "PG4-MM-M-006",
     "sourceId": 863014,
     "sourceGame": "macro-concept-library",
@@ -701,7 +1243,7 @@
       "liquidity-preference-and-money-market"
     ],
     "sourcePool": "medium",
-    "sourceHash": "cb0925ca0626f9df928f1bb6fce4f09e5a01fd85ba128b79d451e60c85aa246a",
+    "sourceHash": "98822a204844eb8b243c20779522107b0cb4f859f3cdb1516599035de86c4ce2",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -711,7 +1253,7 @@
         "routeKey": "identify_shift_result",
         "sourceRecordOrder": 14,
         "sourceId": 863014,
-        "sourceHash": "cb0925ca0626f9df928f1bb6fce4f09e5a01fd85ba128b79d451e60c85aa246a"
+        "sourceHash": "98822a204844eb8b243c20779522107b0cb4f859f3cdb1516599035de86c4ce2"
       }
     ],
     "primaryConceptId": "liquidity-preference-and-money-market",
@@ -719,200 +1261,6 @@
     "instructionalRole": "main",
     "canonicalDifficulty": "medium",
     "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-H-003",
-    "q": "What is the change in the equilibrium nominal interest rate when money supply falls from 100 to 75?",
-    "options": [
-      "A decrease of 2 percentage points",
-      "An increase of 25 percentage points",
-      "No change",
-      "An increase of 2 percentage points"
-    ],
-    "tag": "money_market",
-    "type": "calculation",
-    "objective": "LO35.1",
-    "difficulty": "hard",
-    "conceptCluster": "money_market",
-    "primarySkill": "predict_money_market_equilibrium",
-    "secondarySkills": [],
-    "repairSkill": "predict_money_market_equilibrium",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The equilibrium interest rate rises from 4 percent to 6 percent, a 2-percentage-point increase.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
-    "aHash": "29e774a4bbb8bbaf794c243d22a9e57f35702c9754dec83fd24ab7df4ca187bf",
-    "canonicalId": "PG4-MM-H-003",
-    "sourceId": 863015,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "acbc91330f9d1e8881cb98e3f5434cf70dbc9dd993957a54622ace310553e745",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "predict_money_market_equilibrium",
-        "sourceRecordOrder": 15,
-        "sourceId": 863015,
-        "sourceHash": "acbc91330f9d1e8881cb98e3f5434cf70dbc9dd993957a54622ace310553e745"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-EL-003",
-    "q": "A student says the rise in the interest rate from 4 percent to 6 percent proves money demand shifted right. What does the graph actually show?",
-    "options": [
-      "Money demand stays at MD0; the economy moves along MD0 because money supply shifts left",
-      "Money demand shifts right while money supply stays fixed",
-      "Both money demand and money supply shift left",
-      "The interest-rate increase occurs with no curve movement"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "elite",
-    "conceptCluster": "money_market",
-    "primarySkill": "money_demand_shift_vs_movement",
-    "secondarySkills": [],
-    "repairSkill": "money_demand_shift_vs_movement",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "MD0 is unchanged. The higher interest rate comes from the smaller money supply, causing a movement along MD0.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
-    "aHash": "30853af8f98931a7005c1398c44051d3ce378d25e7d8fdeb6016614a03a34643",
-    "canonicalId": "PG4-MM-EL-003",
-    "sourceId": 863016,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "f2bce099cfa078ea8a5719ad69673ceb28e82f6913d4bcb5297da029feec2b4f",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "money_demand_shift_vs_movement",
-        "sourceRecordOrder": 16,
-        "sourceId": 863016,
-        "sourceHash": "f2bce099cfa078ea8a5719ad69673ceb28e82f6913d4bcb5297da029feec2b4f"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-L-003",
-    "q": "If this money-market shift were the first step of contractionary monetary policy, which downstream effect would normally follow?",
-    "options": [
-      "Higher interest rates would increase investment and shift aggregate demand right",
-      "Higher interest rates would tend to reduce interest-sensitive spending and push aggregate demand to the left",
-      "Lower interest rates would reduce saving and shift aggregate demand left",
-      "The money-market change could not affect aggregate demand"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "legendary",
-    "conceptCluster": "money_market",
-    "primarySkill": "bridge_money_market_transmission",
-    "secondarySkills": [
-      "monetary_policy_transmission"
-    ],
-    "repairSkill": "bridge_money_market_transmission",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The standard contractionary chain runs from less money to higher interest rates to less interest-sensitive spending and lower aggregate demand.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
-    "aHash": "1ffc3537802399e881835caafb6e786b89cce923993917e5ad7ffb076ce2f50c",
-    "canonicalId": "PG4-MM-L-003",
-    "sourceId": 863017,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "4a741ed1a1a89bbf06a24cbc8ff0e46ac5547bb8176ce9f433f388f59b8c588d",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "bridge_money_market_transmission",
-        "sourceRecordOrder": 17,
-        "sourceId": 863017,
-        "sourceHash": "4a741ed1a1a89bbf06a24cbc8ff0e46ac5547bb8176ce9f433f388f59b8c588d"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-E-004",
-    "q": "Which labeled point is the original equilibrium where MD0 intersects MS0?",
-    "options": [
-      "Point A",
-      "Point C",
-      "Point B",
-      "Point D"
-    ],
-    "tag": "money_market",
-    "type": "graph",
-    "objective": "LO35.1",
-    "difficulty": "easy",
-    "conceptCluster": "money_market",
-    "primarySkill": "simultaneous_money_shifts",
-    "secondarySkills": [],
-    "repairSkill": "simultaneous_money_shifts",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The original curves MD0 and MS0 intersect at point B, quantity 75 and interest rate 3.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
-    "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
-    "canonicalId": "PG4-MM-E-004",
-    "sourceId": 863018,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "easy",
-    "sourceHash": "6a2ffbc90da6474c9af349674088217a662d2a1881508edd6b9ad4a7bcbc4223",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "easy",
-        "routeKey": "simultaneous_money_shifts",
-        "sourceRecordOrder": 18,
-        "sourceId": 863018,
-        "sourceHash": "6a2ffbc90da6474c9af349674088217a662d2a1881508edd6b9ad4a7bcbc4223"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "easy",
-    "originalSourcePool": "easy",
     "originalBossTier": null
   },
   {
@@ -965,7 +1313,7 @@
   },
   {
     "id": "PG4-MM-M-008",
-    "q": "If only money supply increases from MS0 to MS1 while MD0 stays fixed, which point becomes the new equilibrium?",
+    "q": "With MD0 unchanged, locate the equilibrium created solely by the increase in money supply. Which point is it?",
     "options": [
       "Point D",
       "Point A",
@@ -991,7 +1339,7 @@
       "liquidity-preference-and-money-market"
     ],
     "sourcePool": "medium",
-    "sourceHash": "c394ac3078dae534c302d4b3cf523d091a9593e23ee6034c640485f1ee46ba48",
+    "sourceHash": "24845ea4840ab95546412045f37211a430c2d07e801def52617865b970612ba7",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -1001,7 +1349,7 @@
         "routeKey": "read_money_market_shift",
         "sourceRecordOrder": 20,
         "sourceId": 863020,
-        "sourceHash": "c394ac3078dae534c302d4b3cf523d091a9593e23ee6034c640485f1ee46ba48"
+        "sourceHash": "24845ea4840ab95546412045f37211a430c2d07e801def52617865b970612ba7"
       }
     ],
     "primaryConceptId": "liquidity-preference-and-money-market",
@@ -1009,201 +1357,6 @@
     "instructionalRole": "main",
     "canonicalDifficulty": "medium",
     "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-H-004",
-    "q": "If money demand increases from MD0 to MD1 at the same time money supply increases from MS0 to MS1, which point is the resulting equilibrium?",
-    "options": [
-      "Point A",
-      "Point C",
-      "Point B",
-      "Point D"
-    ],
-    "tag": "money_market",
-    "type": "graph",
-    "objective": "LO35.1",
-    "difficulty": "hard",
-    "conceptCluster": "money_market",
-    "primarySkill": "simultaneous_money_shifts",
-    "secondarySkills": [],
-    "repairSkill": "simultaneous_money_shifts",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The simultaneous shifts produce the intersection of MD1 and MS1, point C.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
-    "aHash": "1ddf7973e5b61d38fa9b006a2114abd9568562684cd21fbe42afe7e33e63fb6a",
-    "canonicalId": "PG4-MM-H-004",
-    "sourceId": 863021,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "6c97df8c278cadb096283f0f482ef65c325f0925c5cf6905e1268b86c8f869c5",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "simultaneous_money_shifts",
-        "sourceRecordOrder": 21,
-        "sourceId": 863021,
-        "sourceHash": "6c97df8c278cadb096283f0f482ef65c325f0925c5cf6905e1268b86c8f869c5"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-EL-004",
-    "q": "Compare original point B with simultaneous-shift point C. What happens to quantity of money and the nominal interest rate?",
-    "options": [
-      "Quantity rises from 75 to 100 while the interest rate falls from 3 percent to 1 percent",
-      "Quantity stays at 75 while the interest rate rises from 3 percent to 6 percent",
-      "Quantity rises from 75 to 100 while the interest rate rises from 3 percent to 4 percent",
-      "Quantity falls from 100 to 75 while the interest rate falls from 4 percent to 3 percent"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "elite",
-    "conceptCluster": "money_market",
-    "primarySkill": "money_market_offsetting_shifts",
-    "secondarySkills": [],
-    "repairSkill": "money_market_offsetting_shifts",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The increase in money supply raises equilibrium quantity, while the simultaneous increase in money demand is strong enough to leave the interest rate one point higher than at B.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
-    "aHash": "f007f98bd9aea5f9526f8bbde98ae04343ff359a1022526d415c047b4d51439d",
-    "canonicalId": "PG4-MM-EL-004",
-    "sourceId": 863022,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "8373f4d7f34997cc85f2c6e43d3236c0924ca6f80d900699a13d572d42984f2f",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "money_market_offsetting_shifts",
-        "sourceRecordOrder": 22,
-        "sourceId": 863022,
-        "sourceHash": "8373f4d7f34997cc85f2c6e43d3236c0924ca6f80d900699a13d572d42984f2f"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-L-004",
-    "q": "Money demand rises from MD0 to MD1. Which central-bank response shown partially offsets the interest-rate increase without restoring the original 3-percent rate?",
-    "options": [
-      "Decrease money supply from MS1 to MS0, moving the outcome from C to A",
-      "Keep money supply at MS0, which moves the outcome from B to D",
-      "Shift money demand back to MD0 while reducing money supply, moving from A to C",
-      "Increase money supply from MS0 to MS1, moving the outcome from A at 6 percent to C at 4 percent"
-    ],
-    "tag": "money_market",
-    "type": "multi-step",
-    "objective": "LO35.1",
-    "difficulty": "legendary",
-    "conceptCluster": "money_market",
-    "primarySkill": "infer_money_supply_offset",
-    "secondarySkills": [],
-    "repairSkill": "infer_money_supply_offset",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The demand increase alone raises the rate from B to A. Expanding money supply then lowers it from 6 to 4 percent at C, partially but not fully offsetting the increase.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
-    "aHash": "186e05443bdff6b3875d2f7c43154b74d9f35db4cbf277fab7ae36a7a305dae7",
-    "canonicalId": "PG4-MM-L-004",
-    "sourceId": 863023,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "fb515cfa37d36fa2e5e8b5f3c039fcf3e5a6fc449fd72b1b99330ba8fb078ed2",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "infer_money_supply_offset",
-        "sourceRecordOrder": 23,
-        "sourceId": 863023,
-        "sourceHash": "fb515cfa37d36fa2e5e8b5f3c039fcf3e5a6fc449fd72b1b99330ba8fb078ed2"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-E-005",
-    "q": "In the left panel, money demand rises from MD0 to MD1 while MS0 stays fixed. What happens to the nominal interest rate?",
-    "options": [
-      "It rises from 2 percent to 4 percent",
-      "It falls from 4 percent to 2 percent",
-      "It stays at 2 percent",
-      "It rises from 4 percent to 6 percent"
-    ],
-    "tag": "money_market",
-    "type": "graph",
-    "objective": "LO35.1",
-    "difficulty": "easy",
-    "conceptCluster": "money_market",
-    "primarySkill": "trace_money_demand_shift_to_investment",
-    "secondarySkills": [],
-    "repairSkill": "trace_money_demand_shift_to_investment",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "With fixed money supply, the higher money-demand curve raises the equilibrium interest rate from point A to point B.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
-    "aHash": "ac32cc8f1c7489da4e5697c936bbab8db6f0b5dea09344f970935473714cb076",
-    "canonicalId": "PG4-MM-E-005",
-    "sourceId": 863024,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "easy",
-    "sourceHash": "854c20fc08cddb888a81c7dbfe646f87b73b516c2b66a11b6da7df694b0ce854",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "easy",
-        "routeKey": "trace_money_demand_shift_to_investment",
-        "sourceRecordOrder": 24,
-        "sourceId": 863024,
-        "sourceHash": "854c20fc08cddb888a81c7dbfe646f87b73b516c2b66a11b6da7df694b0ce854"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "easy",
-    "originalSourcePool": "easy",
     "originalBossTier": null
   },
   {
@@ -1259,12 +1412,12 @@
   },
   {
     "id": "PG4-MM-M-010",
-    "q": "What transmission link connects the left-panel rise in the interest rate to the right-panel fall in aggregate demand?",
+    "q": "Which mechanism best connects the change from A to B in the left panel with the change from A to B in the right panel?",
     "options": [
-      "Higher interest rates directly increase the money supply",
-      "Higher interest rates raise potential output and shift LRAS right",
-      "Higher interest rates reduce interest-sensitive spending such as investment",
-      "Higher interest rates reduce SRAS by raising all input prices one-for-one"
+      "Higher rates directly increase the money supply.",
+      "Higher rates increase potential output and LRAS.",
+      "Higher rates reduce interest-sensitive spending.",
+      "Higher rates lower all production costs and SRAS."
     ],
     "tag": "money_market",
     "type": "analysis",
@@ -1277,7 +1430,7 @@
     "commonError": "misreads_money_market_or_transmission",
     "feedback": "The standard link is through interest-sensitive components of spending, especially investment.",
     "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
-    "aHash": "dea0b955686d46675cec1e6d00391c21b977d46c51b44da94ae4a87efb8e9f76",
+    "aHash": "5b2d34aa014e545355b902dc9f22971b48dc9ed3b77b5bae60c36f73b221d9e8",
     "canonicalId": "PG4-MM-M-010",
     "sourceId": 863026,
     "sourceGame": "macro-concept-library",
@@ -1285,7 +1438,7 @@
       "liquidity-preference-and-money-market"
     ],
     "sourcePool": "medium",
-    "sourceHash": "2b856a81c61fb144107c63324575bb304f4be7ce5ea72fa7ae9e695fb805b7ba",
+    "sourceHash": "d4bf73f2b7e093f0153ab590dc54cf42dc9f43b4066faecb8ce996529af83618",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -1295,7 +1448,7 @@
         "routeKey": "trace_money_demand_shift_to_investment",
         "sourceRecordOrder": 26,
         "sourceId": 863026,
-        "sourceHash": "2b856a81c61fb144107c63324575bb304f4be7ce5ea72fa7ae9e695fb805b7ba"
+        "sourceHash": "d4bf73f2b7e093f0153ab590dc54cf42dc9f43b4066faecb8ce996529af83618"
       }
     ],
     "primaryConceptId": "liquidity-preference-and-money-market",
@@ -1306,159 +1459,6 @@
     "instructionalRole": "main",
     "canonicalDifficulty": "medium",
     "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-H-005",
-    "q": "Across the two panels, real GDP falls from 150 to 105. By how much does real GDP decrease?",
-    "options": [
-      "20",
-      "35",
-      "55",
-      "45"
-    ],
-    "tag": "money_market",
-    "type": "calculation",
-    "objective": "LO35.1",
-    "difficulty": "hard",
-    "conceptCluster": "money_market",
-    "primarySkill": "trace_money_demand_shift_to_investment",
-    "secondarySkills": [],
-    "repairSkill": "trace_money_demand_shift_to_investment",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "Real GDP falls by 150 - 105 = 45.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
-    "aHash": "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c",
-    "canonicalId": "PG4-MM-H-005",
-    "sourceId": 863027,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "853e115a65cc00d975b0ccc1b445209e20425918224826854df09862d243927f",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "trace_money_demand_shift_to_investment",
-        "sourceRecordOrder": 27,
-        "sourceId": 863027,
-        "sourceHash": "853e115a65cc00d975b0ccc1b445209e20425918224826854df09862d243927f"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-EL-005",
-    "q": "A student says the money-demand increase should shift aggregate demand right because people want to hold more money. What is the strongest correction using the graph?",
-    "options": [
-      "With money supply fixed, greater money demand raises the interest rate; the higher rate discourages interest-sensitive spending, so AD shifts left",
-      "Greater money demand automatically creates more money and lowers the interest rate",
-      "Money demand and aggregate demand are the same curve, so both must shift in the same direction",
-      "The money market has no connection to spending or aggregate demand"
-    ],
-    "tag": "money_market",
-    "type": "analysis",
-    "objective": "LO35.1",
-    "difficulty": "elite",
-    "conceptCluster": "money_market",
-    "primarySkill": "connect_money_market_to_ad_slope",
-    "secondarySkills": [],
-    "repairSkill": "connect_money_market_to_ad_slope",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "Money demand is demand for liquid balances, not aggregate expenditure. With fixed supply, more money demand raises the interest rate and can reduce spending.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
-    "aHash": "b6741d75f236f113efa1fb7323e518fd9f701f7e515a54478009bfe094dc88bb",
-    "canonicalId": "PG4-MM-EL-005",
-    "sourceId": 863028,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "59737e8f5f832fee0fdfcc332b5f90a5eb83b35de8cf776174cd2a3388813529",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "connect_money_market_to_ad_slope",
-        "sourceRecordOrder": 28,
-        "sourceId": 863028,
-        "sourceHash": "59737e8f5f832fee0fdfcc332b5f90a5eb83b35de8cf776174cd2a3388813529"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MM-L-005",
-    "q": "Which complete chain is consistent with the two-panel graph?",
-    "options": [
-      "MD rises → interest rate falls → investment rises → AD shifts right → real GDP falls",
-      "MD rises with MS fixed → interest rate rises from 2% to 4% → interest-sensitive spending falls → AD shifts left → real GDP and price level fall",
-      "MS rises → interest rate rises → investment falls → AD shifts left → price level rises",
-      "MD falls → interest rate rises → investment rises → AD shifts right → real GDP rises"
-    ],
-    "tag": "money_market",
-    "type": "multi-step",
-    "objective": "LO35.1",
-    "difficulty": "legendary",
-    "conceptCluster": "money_market",
-    "primarySkill": "connect_money_market_to_ad_slope",
-    "secondarySkills": [],
-    "repairSkill": "connect_money_market_to_ad_slope",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The panels show the full liquidity-preference transmission from a money-demand increase to a higher rate and lower aggregate demand.",
-    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
-    "aHash": "81086935bf422a32ff5f9d52af6078dae3ef6c5ada9b8b3d631f636298de80de",
-    "canonicalId": "PG4-MM-L-005",
-    "sourceId": 863029,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "liquidity-preference-and-money-market"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "a904521e12fb3439328acbdfaa429e5073d2aa26617781c8e8477cb27b29f56d",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "connect_money_market_to_ad_slope",
-        "sourceRecordOrder": 29,
-        "sourceId": 863029,
-        "sourceHash": "a904521e12fb3439328acbdfaa429e5073d2aa26617781c8e8477cb27b29f56d"
-      }
-    ],
-    "primaryConceptId": "liquidity-preference-and-money-market",
-    "secondaryConceptIds": [
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
     "originalBossTier": null
   },
   {
@@ -1511,6 +1511,370 @@
     "instructionalRole": "main",
     "canonicalDifficulty": "easy",
     "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-E-002",
+    "q": "In the contractionary two-panel diagram, what happens to the nominal interest rate after the money-supply change?",
+    "options": [
+      "It rises from 2.75 percent to 4 percent",
+      "It falls from 4 percent to 2.75 percent",
+      "It stays at 2.75 percent",
+      "It rises from 4 percent to 6 percent"
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "graph",
+    "objective": "LO35.2",
+    "difficulty": "easy",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "trace_contractionary_monetary_policy_graph",
+    "secondarySkills": [],
+    "repairSkill": "trace_contractionary_monetary_policy_graph",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The smaller money supply moves equilibrium from A at 2.75 percent to B at 4 percent.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "b1aed195db2942099830d7d07d50376ec55632322be1fe00ad557e8002019319",
+    "canonicalId": "PG4-MPT-E-002",
+    "sourceId": 863036,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "1c34f3fcbd20060256d993597bd040beb365f28e9db0bdc1479a49f1501ded06",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "trace_contractionary_monetary_policy_graph",
+        "sourceRecordOrder": 36,
+        "sourceId": 863036,
+        "sourceHash": "1c34f3fcbd20060256d993597bd040beb365f28e9db0bdc1479a49f1501ded06"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-EL-001",
+    "q": "Which statement correctly distinguishes what changes in the two panels?",
+    "options": [
+      "MD shifts right and MS is traversed; SRAS shifts right along fixed AD.",
+      "MS shifts left and MD is traversed; AD shifts left along fixed SRAS.",
+      "MS shifts right and MD is traversed; AD shifts right along fixed SRAS.",
+      "Both panels show movements along fixed demand and supply curves."
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "analysis",
+    "objective": "LO35.2",
+    "difficulty": "elite",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "distinguish_money_market_and_ad_model",
+    "secondarySkills": [],
+    "repairSkill": "distinguish_money_market_and_ad_model",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "Different markets are being linked. Money supply shifts first; the resulting rate change affects spending and shifts AD.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "835f4935b9af27cbf5f3144e212ebc970ae7fb3d64ca406176525ef97ddc2b1b",
+    "canonicalId": "PG4-MPT-EL-001",
+    "sourceId": 863034,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "a237367919cf64b46d3618d69a12ce3548f6819d127718123642b9cd0528b2ee",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "distinguish_money_market_and_ad_model",
+        "sourceRecordOrder": 34,
+        "sourceId": 863034,
+        "sourceHash": "a237367919cf64b46d3618d69a12ce3548f6819d127718123642b9cd0528b2ee"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-EL-002",
+    "q": "A student says AD1 is lower because the central bank directly reduced real GDP. What is the better interpretation?",
+    "options": [
+      "Lower MS raises rates; lower interest-sensitive spending shifts AD left.",
+      "Lower MS lowers rates; higher interest-sensitive spending shifts AD right.",
+      "The central bank directly sets real GDP and moves AD to that quantity.",
+      "A rightward MD shift raises rates and directly shifts SRAS to the left."
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "analysis",
+    "objective": "LO35.2",
+    "difficulty": "elite",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "distinguish_money_market_and_ad_model",
+    "secondarySkills": [],
+    "repairSkill": "distinguish_money_market_and_ad_model",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "Monetary policy works through a transmission mechanism. The central bank acts on money/financial conditions, which influence spending and AD.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "1f306ec6aa02f102695148f9b51a4cf2e4248ea810074596bd9ad34986e29044",
+    "canonicalId": "PG4-MPT-EL-002",
+    "sourceId": 863040,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "2a6a93f00a38e72e336e6b4c6868b6383f4cab1a6f1f2942dbd4861c7f2ea7a4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "distinguish_money_market_and_ad_model",
+        "sourceRecordOrder": 40,
+        "sourceId": 863040,
+        "sourceHash": "2a6a93f00a38e72e336e6b4c6868b6383f4cab1a6f1f2942dbd4861c7f2ea7a4"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-H-001",
+    "q": "Which sequence matches the changes from point A to point B across the two panels?",
+    "options": [
+      "MS ↑ → rate ↑ → spending ↓ → AD ← → output and price level ↓",
+      "MS ↑ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+      "MS ↓ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+      "MD ↑ → rate ↓ → spending ↑ → SRAS → → output and price level ↓"
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "multi-step",
+    "objective": "LO35.2",
+    "difficulty": "hard",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "trace_expansionary_monetary_policy_graph",
+    "secondarySkills": [],
+    "repairSkill": "trace_expansionary_monetary_policy_graph",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "That is the standard expansionary monetary-policy transmission chain represented by the two panels.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "5b61ea0fa098ee388a7cb8966537edeaaa292b974148614c13b069c00a14d458",
+    "canonicalId": "PG4-MPT-H-001",
+    "sourceId": 863033,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "8b511e3b47006abe19070715c3d99bb3496ccde3b5a3dfb8fa601ba00752af29",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "trace_expansionary_monetary_policy_graph",
+        "sourceRecordOrder": 33,
+        "sourceId": 863033,
+        "sourceHash": "8b511e3b47006abe19070715c3d99bb3496ccde3b5a3dfb8fa601ba00752af29"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-H-002",
+    "q": "Which causal chain matches the changes from A to B in the second two-panel diagram?",
+    "options": [
+      "MS ↓ → rate ↓ → spending ↑ → AD → → output and price level ↑",
+      "MS ↑ → rate ↑ → spending ↓ → AD ← → output and price level ↓",
+      "MD ↓ → rate ↑ → spending ↓ → SRAS ← → output and price level ↑",
+      "MS ↓ → rate ↑ → spending ↓ → AD ← → output and price level ↓"
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "multi-step",
+    "objective": "LO35.2",
+    "difficulty": "hard",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "trace_contractionary_monetary_policy_graph",
+    "secondarySkills": [],
+    "repairSkill": "trace_contractionary_monetary_policy_graph",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "That is the standard contractionary monetary-policy transmission chain shown across the two panels.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "6c1140419da7798fdfefbd1001d9c25e7ed0b590abc7a13a6251b0c67e47d4d4",
+    "canonicalId": "PG4-MPT-H-002",
+    "sourceId": 863039,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "6b89de59e43ad3f730d64d852408617637eca2b4da831928da0a3c769b089b9d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "trace_contractionary_monetary_policy_graph",
+        "sourceRecordOrder": 39,
+        "sourceId": 863039,
+        "sourceHash": "6b89de59e43ad3f730d64d852408617637eca2b4da831928da0a3c769b089b9d"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-L-001",
+    "q": "What conclusion is supported by the change from A to B across the two panels?",
+    "options": [
+      "The illustrated easing raises rates and lowers both GDP and the price level.",
+      "The illustrated easing raises potential GDP by shifting LRAS to the right.",
+      "The illustrated easing raises GDP while leaving the price level unchanged.",
+      "The illustrated easing lowers rates and raises both GDP and the price level."
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "multi-step",
+    "objective": "LO35.2",
+    "difficulty": "legendary",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "read_graph_and_evaluate_transmission_size",
+    "secondarySkills": [],
+    "repairSkill": "read_graph_and_evaluate_transmission_size",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The graph supports the specific illustrated changes. It does not establish a universal fixed coefficient between interest rates and GDP.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "3bd70b7d64962154131a0b2b6d87450138125d2274de129a6104366405b6dfb4",
+    "canonicalId": "PG4-MPT-L-001",
+    "sourceId": 863035,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "2e1d52d7f894ed960ebb6111f72a7bfc72b679a106f073981ccc914fe11abf18",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "read_graph_and_evaluate_transmission_size",
+        "sourceRecordOrder": 35,
+        "sourceId": 863035,
+        "sourceHash": "2e1d52d7f894ed960ebb6111f72a7bfc72b679a106f073981ccc914fe11abf18"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG4-MPT-L-002",
+    "q": "What macroeconomic conclusion is supported by the contractionary A-to-B movement across both panels?",
+    "options": [
+      "The illustrated tightening lowers rates and raises both GDP and the price level.",
+      "The illustrated tightening raises rates and lowers both GDP and the price level.",
+      "The illustrated tightening lowers potential GDP by shifting LRAS to the left.",
+      "The illustrated tightening lowers GDP while raising the price level."
+    ],
+    "tag": "monetary_policy_transmission",
+    "type": "multi-step",
+    "objective": "LO35.2",
+    "difficulty": "legendary",
+    "conceptCluster": "monetary_policy",
+    "primarySkill": "read_graph_and_evaluate_transmission_size",
+    "secondarySkills": [],
+    "repairSkill": "read_graph_and_evaluate_transmission_size",
+    "commonError": "misreads_money_market_or_transmission",
+    "feedback": "The graph supports the specific policy chain and depicted outcomes, not a universal mechanical coefficient.",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "5c0137dc24247b768ab4de36d935115887e2c548c144dc5fd99de5a12e27e82f",
+    "canonicalId": "PG4-MPT-L-002",
+    "sourceId": 863041,
+    "sourceGame": "macro-concept-library",
+    "sourceChapter": [
+      "monetary-policy-transmission"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "eae8cf6aa75528eb0a2f2d0dc760853e7d8f9d604c8025f95d632efb0c634a78",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "macro-concept-library",
+        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "read_graph_and_evaluate_transmission_size",
+        "sourceRecordOrder": 41,
+        "sourceId": 863041,
+        "sourceHash": "eae8cf6aa75528eb0a2f2d0dc760853e7d8f9d604c8025f95d632efb0c634a78"
+      }
+    ],
+    "primaryConceptId": "monetary-policy-transmission",
+    "secondaryConceptIds": [
+      "liquidity-preference-and-money-market",
+      "aggregate-demand",
+      "macroeconomic-equilibrium-and-shocks"
+    ],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
     "originalBossTier": null
   },
   {
@@ -1567,7 +1931,7 @@
   },
   {
     "id": "PG4-MPT-M-002",
-    "q": "Real GDP rises from 100 at point A to 125 at point B. By how much does real GDP increase?",
+    "q": "In the expansionary two-panel diagram, how many units does real GDP rise from A to B?",
     "options": [
       "25",
       "6.25",
@@ -1583,7 +1947,7 @@
     "secondarySkills": [],
     "repairSkill": "read_output_change_from_ad_shift",
     "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The change in real GDP is 125 - 100 = 25.",
+    "feedback": "Read real GDP at A and B: 125 − 100 = 25 units.",
     "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
     "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
     "canonicalId": "PG4-MPT-M-002",
@@ -1593,7 +1957,7 @@
       "monetary-policy-transmission"
     ],
     "sourcePool": "medium",
-    "sourceHash": "68132d4dad43b085c95d369d6322975dcaa476cd24973195a83792581069e289",
+    "sourceHash": "ae8082a8d1052f0ef4e598894d24762a3f27aeca3217a56e796a74ad28f0f58b",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -1603,7 +1967,7 @@
         "routeKey": "read_output_change_from_ad_shift",
         "sourceRecordOrder": 32,
         "sourceId": 863032,
-        "sourceHash": "68132d4dad43b085c95d369d6322975dcaa476cd24973195a83792581069e289"
+        "sourceHash": "ae8082a8d1052f0ef4e598894d24762a3f27aeca3217a56e796a74ad28f0f58b"
       }
     ],
     "primaryConceptId": "monetary-policy-transmission",
@@ -1618,216 +1982,8 @@
     "originalBossTier": null
   },
   {
-    "id": "PG4-MPT-H-001",
-    "q": "Which sequence correctly describes the expansionary policy shown?",
-    "options": [
-      "Money supply rises → interest rate rises → spending falls → AD shifts left",
-      "Money supply rises → interest rate falls → interest-sensitive spending rises → AD shifts right → output and price level rise",
-      "Money supply falls → interest rate falls → spending rises → AD shifts right",
-      "Money demand rises → interest rate falls → SRAS shifts right"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "multi-step",
-    "objective": "LO35.2",
-    "difficulty": "hard",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "trace_expansionary_monetary_policy_graph",
-    "secondarySkills": [],
-    "repairSkill": "trace_expansionary_monetary_policy_graph",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "That is the standard expansionary monetary-policy transmission chain represented by the two panels.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
-    "aHash": "63ae0b4f08dd6be7c2607cea7a43ffb046053a0573744d4f5308e3957c6e6d8b",
-    "canonicalId": "PG4-MPT-H-001",
-    "sourceId": 863033,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "abf7b8cba0ce8f210f09d3718b1b2f07b6c55eaf399e4cf8ae4a96c6f6c3ae5e",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "trace_expansionary_monetary_policy_graph",
-        "sourceRecordOrder": 33,
-        "sourceId": 863033,
-        "sourceHash": "abf7b8cba0ce8f210f09d3718b1b2f07b6c55eaf399e4cf8ae4a96c6f6c3ae5e"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MPT-EL-001",
-    "q": "Which statement correctly distinguishes what changes in the two panels?",
-    "options": [
-      "Both panels show movements along unchanged demand curves",
-      "The left panel shows AD shifting right while the right panel shows money demand shifting left",
-      "The left panel shows a shift of money supply and a movement along money demand; the right panel shows a shift of aggregate demand along a fixed SRAS",
-      "Both panels show SRAS shifting because interest rates changed"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "analysis",
-    "objective": "LO35.2",
-    "difficulty": "elite",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "distinguish_money_market_and_ad_model",
-    "secondarySkills": [],
-    "repairSkill": "distinguish_money_market_and_ad_model",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "Different markets are being linked. Money supply shifts first; the resulting rate change affects spending and shifts AD.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
-    "aHash": "0e1022bd8b5737986b1a60636c6e5a81865e5ee1e21cacede1229ac5a09bb0c7",
-    "canonicalId": "PG4-MPT-EL-001",
-    "sourceId": 863034,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "794a4869cdaf2ff5b4f109bd5495c52b481cf9ebddf9b431684ed1ddfced1201",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "distinguish_money_market_and_ad_model",
-        "sourceRecordOrder": 34,
-        "sourceId": 863034,
-        "sourceHash": "794a4869cdaf2ff5b4f109bd5495c52b481cf9ebddf9b431684ed1ddfced1201"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MPT-L-001",
-    "q": "The policy lowers the interest rate by 2 percentage points and moves real GDP from 100 to 125. What does the graph establish without claiming more than it shows?",
-    "options": [
-      "Every 1-point interest-rate cut always raises real GDP by exactly 12.5 in every economy",
-      "The graph proves LRAS increased by 25 because real GDP rose",
-      "The money-supply increase raises output without affecting the price level",
-      "In this illustrated transmission, expansionary monetary policy is associated with a 25-unit rise in real GDP and a higher price level"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "multi-step",
-    "objective": "LO35.2",
-    "difficulty": "legendary",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "read_graph_and_evaluate_transmission_size",
-    "secondarySkills": [],
-    "repairSkill": "read_graph_and_evaluate_transmission_size",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The graph supports the specific illustrated changes. It does not establish a universal fixed coefficient between interest rates and GDP.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
-    "aHash": "0e31747202a8cdc2a475185153416da73d5f72811b1264949d20e2b1bbd721fa",
-    "canonicalId": "PG4-MPT-L-001",
-    "sourceId": 863035,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "84092fc64b42c97df971bf7e0d35e510439ed8da9ed3db8583f776159931be73",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "read_graph_and_evaluate_transmission_size",
-        "sourceRecordOrder": 35,
-        "sourceId": 863035,
-        "sourceHash": "84092fc64b42c97df971bf7e0d35e510439ed8da9ed3db8583f776159931be73"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MPT-E-002",
-    "q": "The left panel shows money supply decreasing from MS0 to MS1. What happens to the nominal interest rate?",
-    "options": [
-      "It rises from 2.75 percent to 4 percent",
-      "It falls from 4 percent to 2.75 percent",
-      "It stays at 2.75 percent",
-      "It rises from 4 percent to 6 percent"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "graph",
-    "objective": "LO35.2",
-    "difficulty": "easy",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "trace_contractionary_monetary_policy_graph",
-    "secondarySkills": [],
-    "repairSkill": "trace_contractionary_monetary_policy_graph",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The smaller money supply moves equilibrium from A at 2.75 percent to B at 4 percent.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
-    "aHash": "b1aed195db2942099830d7d07d50376ec55632322be1fe00ad557e8002019319",
-    "canonicalId": "PG4-MPT-E-002",
-    "sourceId": 863036,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "easy",
-    "sourceHash": "be3e4176aaf5853b1063d6fd016ff5e3574fc2add2f1626b4bc61c20e15af6b3",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "easy",
-        "routeKey": "trace_contractionary_monetary_policy_graph",
-        "sourceRecordOrder": 36,
-        "sourceId": 863036,
-        "sourceHash": "be3e4176aaf5853b1063d6fd016ff5e3574fc2add2f1626b4bc61c20e15af6b3"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "easy",
-    "originalSourcePool": "easy",
-    "originalBossTier": null
-  },
-  {
     "id": "PG4-MPT-M-003",
-    "q": "Which aggregate-demand change accompanies the higher interest rate in the right panel?",
+    "q": "In the right panel, which aggregate-demand change accompanies the higher interest rate generated on the left?",
     "options": [
       "AD shifts right from AD1 to AD0",
       "AD shifts left from AD0 to AD1",
@@ -1853,7 +2009,7 @@
       "monetary-policy-transmission"
     ],
     "sourcePool": "medium",
-    "sourceHash": "163459ee3e6747b90de4d088d6a84d64b122707680ad0fd28d834c684913c7d4",
+    "sourceHash": "0de2775b2f31690b69533deea26640f05d1e2261953fd4fb711a984e25f6532b",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -1863,7 +2019,7 @@
         "routeKey": "monetary_policy_ad_shift",
         "sourceRecordOrder": 37,
         "sourceId": 863037,
-        "sourceHash": "163459ee3e6747b90de4d088d6a84d64b122707680ad0fd28d834c684913c7d4"
+        "sourceHash": "0de2775b2f31690b69533deea26640f05d1e2261953fd4fb711a984e25f6532b"
       }
     ],
     "primaryConceptId": "monetary-policy-transmission",
@@ -1879,7 +2035,7 @@
   },
   {
     "id": "PG4-MPT-M-004",
-    "q": "Real GDP falls from 125 at point A to 100 at point B. By how much does real GDP decrease?",
+    "q": "In the contractionary two-panel diagram, how many units does real GDP fall from A to B?",
     "options": [
       "5",
       "45",
@@ -1895,7 +2051,7 @@
     "secondarySkills": [],
     "repairSkill": "read_output_change_from_ad_shift",
     "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The change in real GDP is 125 - 100 = 25.",
+    "feedback": "Read real GDP at A and B: 125 − 100 = 25 units.",
     "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
     "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
     "canonicalId": "PG4-MPT-M-004",
@@ -1905,7 +2061,7 @@
       "monetary-policy-transmission"
     ],
     "sourcePool": "medium",
-    "sourceHash": "943cf68bb9b51dbbcfcfab9f4a20162979bef7f6c14784fff1757a2dc3ea4fa9",
+    "sourceHash": "4f020e9d6e57eadf80422aa879b38b02d962dd40b11d3f224af27e4999af217e",
     "sourceOccurrences": [
       {
         "sourceGame": "macro-concept-library",
@@ -1915,7 +2071,7 @@
         "routeKey": "read_output_change_from_ad_shift",
         "sourceRecordOrder": 38,
         "sourceId": 863038,
-        "sourceHash": "943cf68bb9b51dbbcfcfab9f4a20162979bef7f6c14784fff1757a2dc3ea4fa9"
+        "sourceHash": "4f020e9d6e57eadf80422aa879b38b02d962dd40b11d3f224af27e4999af217e"
       }
     ],
     "primaryConceptId": "monetary-policy-transmission",
@@ -1927,162 +2083,6 @@
     "instructionalRole": "main",
     "canonicalDifficulty": "medium",
     "originalSourcePool": "medium",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MPT-H-002",
-    "q": "Which sequence correctly describes the contractionary policy shown?",
-    "options": [
-      "Money supply falls → interest rate falls → spending rises → AD shifts right",
-      "Money supply rises → interest rate rises → spending falls → AD shifts left",
-      "Money demand falls → interest rate rises → SRAS shifts left",
-      "Money supply falls → interest rate rises → interest-sensitive spending falls → AD shifts left → output and price level fall"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "multi-step",
-    "objective": "LO35.2",
-    "difficulty": "hard",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "trace_contractionary_monetary_policy_graph",
-    "secondarySkills": [],
-    "repairSkill": "trace_contractionary_monetary_policy_graph",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "That is the standard contractionary monetary-policy transmission chain shown across the two panels.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
-    "aHash": "5b36abf686f81ba5b7b8db456a2c311361829ea50f41efca163461ca4e885b0b",
-    "canonicalId": "PG4-MPT-H-002",
-    "sourceId": 863039,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "hard",
-    "sourceHash": "6113f207ce7ec73ad96d778cb168a3a914a1aa3444519a9f0506e77844131379",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "hard",
-        "routeKey": "trace_contractionary_monetary_policy_graph",
-        "sourceRecordOrder": 39,
-        "sourceId": 863039,
-        "sourceHash": "6113f207ce7ec73ad96d778cb168a3a914a1aa3444519a9f0506e77844131379"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "main",
-    "canonicalDifficulty": "hard",
-    "originalSourcePool": "hard",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MPT-EL-002",
-    "q": "A student says AD1 is lower because the central bank directly reduced real GDP. What is the better interpretation?",
-    "options": [
-      "The central bank reduces money supply, the interest rate rises, interest-sensitive spending falls, and that spending change shifts AD left",
-      "The central bank directly sets real GDP at 100 by moving the AD curve",
-      "The central bank shifts SRAS left first, which then lowers money demand",
-      "The interest-rate increase is caused by a rightward shift of money demand, not by money supply"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "analysis",
-    "objective": "LO35.2",
-    "difficulty": "elite",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "distinguish_money_market_and_ad_model",
-    "secondarySkills": [],
-    "repairSkill": "distinguish_money_market_and_ad_model",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "Monetary policy works through a transmission mechanism. The central bank acts on money/financial conditions, which influence spending and AD.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
-    "aHash": "94e21ea9b75fc1e81805506e04e083a7da36cdeb17a24acf0cbcb43de952e927",
-    "canonicalId": "PG4-MPT-EL-002",
-    "sourceId": 863040,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "elite",
-    "sourceHash": "e92c38c6f3573ccea1edce0339e38d33a204094aef8cc5a9fdced66afd30a1da",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "elite",
-        "routeKey": "distinguish_money_market_and_ad_model",
-        "sourceRecordOrder": 40,
-        "sourceId": 863040,
-        "sourceHash": "e92c38c6f3573ccea1edce0339e38d33a204094aef8cc5a9fdced66afd30a1da"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "elite",
-    "canonicalDifficulty": "elite",
-    "originalSourcePool": "elite",
-    "originalBossTier": null
-  },
-  {
-    "id": "PG4-MPT-L-002",
-    "q": "The policy raises the interest rate from 2.75 percent to 4 percent and moves real GDP from 125 to 100. What is the strongest conclusion supported by the graph?",
-    "options": [
-      "Every 1.25-point interest-rate increase always lowers GDP by exactly 25 in all economies",
-      "In this illustrated contractionary transmission, higher interest rates are associated with a 25-unit fall in real GDP and a lower price level",
-      "The graph proves LRAS fell from 125 to 100",
-      "The contraction lowers output but necessarily raises the price level"
-    ],
-    "tag": "monetary_policy_transmission",
-    "type": "multi-step",
-    "objective": "LO35.2",
-    "difficulty": "legendary",
-    "conceptCluster": "monetary_policy",
-    "primarySkill": "read_graph_and_evaluate_transmission_size",
-    "secondarySkills": [],
-    "repairSkill": "read_graph_and_evaluate_transmission_size",
-    "commonError": "misreads_money_market_or_transmission",
-    "feedback": "The graph supports the specific policy chain and depicted outcomes, not a universal mechanical coefficient.",
-    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
-    "aHash": "5125f2bd995e26907007d2306c35e1bee16d8c230cb1a9ef9e4826a00bb47f45",
-    "canonicalId": "PG4-MPT-L-002",
-    "sourceId": 863041,
-    "sourceGame": "macro-concept-library",
-    "sourceChapter": [
-      "monetary-policy-transmission"
-    ],
-    "sourcePool": "legendary",
-    "sourceHash": "08e7c1e58352dcce88feb4e0ecc9ea2af497b61d04bcb0dfa422080b3805123f",
-    "sourceOccurrences": [
-      {
-        "sourceGame": "macro-concept-library",
-        "sourceFile": "phaseGraph4-money-market-ad-transmission-v1",
-        "sourceGlobal": "questions",
-        "sourcePool": "legendary",
-        "routeKey": "read_graph_and_evaluate_transmission_size",
-        "sourceRecordOrder": 41,
-        "sourceId": 863041,
-        "sourceHash": "08e7c1e58352dcce88feb4e0ecc9ea2af497b61d04bcb0dfa422080b3805123f"
-      }
-    ],
-    "primaryConceptId": "monetary-policy-transmission",
-    "secondaryConceptIds": [
-      "liquidity-preference-and-money-market",
-      "aggregate-demand",
-      "macroeconomic-equilibrium-and-shocks"
-    ],
-    "instructionalRole": "legendary",
-    "canonicalDifficulty": "legendary",
-    "originalSourcePool": "legendary",
     "originalBossTier": null
   }
 ]

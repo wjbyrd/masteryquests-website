@@ -1,0 +1,508 @@
+[
+  {
+    "id": "PG5-PC-E-001",
+    "concept": "phillips-curve-expectations",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "SRPC-04.webp",
+    "stem": "Compared with point A, what combination is shown at point B?",
+    "options": [
+      "Higher unemployment and more inflation",
+      "Lower unemployment and more inflation",
+      "Higher unemployment and less inflation",
+      "Lower unemployment and less inflation"
+    ],
+    "correctAnswer": "Higher unemployment and more inflation",
+    "feedback": "Point A is at 5 percent unemployment and 3 percent inflation, while point B is at 6 percent unemployment and 6 percent inflation.",
+    "primarySkill": "expected_inflation_shift",
+    "secondaryConceptIds": [
+      "short-run-phillips-curve"
+    ],
+    "objective": "LO36.3"
+  },
+  {
+    "id": "PG5-PC-E-007",
+    "concept": "short-run-phillips-curve",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "SRPC-01.webp",
+    "stem": "At point A, what is the unemployment rate?",
+    "options": [
+      "2.5 percent",
+      "8 percent",
+      "5 percent",
+      "10 percent"
+    ],
+    "correctAnswer": "5 percent",
+    "feedback": "Point A lies directly above 5 on the unemployment axis.",
+    "primarySkill": "read_pc_points",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-E-013",
+    "concept": "short-run-phillips-curve",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "SRPC-02.webp",
+    "stem": "Relative to point A, what does point B show on SRPC0?",
+    "options": [
+      "Lower unemployment and higher inflation",
+      "Higher unemployment and lower inflation",
+      "Lower unemployment and lower inflation",
+      "Higher unemployment and higher inflation"
+    ],
+    "correctAnswer": "Lower unemployment and higher inflation",
+    "feedback": "Point B is left of A on the unemployment axis and above A on the inflation axis.",
+    "primarySkill": "read_pc_points",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-E-019",
+    "concept": "short-run-phillips-curve",
+    "pool": "easy",
+    "type": "graph",
+    "asset": "SRPC-03.webp",
+    "stem": "On SRPC-03, how does point B compare with the natural-rate point A?",
+    "options": [
+      "Lower unemployment and higher inflation",
+      "Higher unemployment and higher inflation",
+      "Higher unemployment and lower inflation",
+      "Lower unemployment and lower inflation"
+    ],
+    "correctAnswer": "Higher unemployment and lower inflation",
+    "feedback": "Point B is to the right of A on the unemployment axis and below A on the inflation axis.",
+    "primarySkill": "read_pc_points",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-H-004",
+    "concept": "phillips-curve-expectations",
+    "pool": "hard",
+    "type": "analysis",
+    "asset": "SRPC-04.webp",
+    "stem": "At a given unemployment rate, how does SRPC1 compare with SRPC0?",
+    "options": [
+      "SRPC1 shows a lower inflation rate",
+      "SRPC1 shows the same inflation rate",
+      "SRPC1 shows a lower natural rate",
+      "SRPC1 shows a higher inflation rate"
+    ],
+    "correctAnswer": "SRPC1 shows a higher inflation rate",
+    "feedback": "Point B lies on a different short-run Phillips curve, SRPC1, so the graph is showing a curve shift rather than a movement along SRPC0.",
+    "primarySkill": "movement_vs_shift_srpc",
+    "secondaryConceptIds": [
+      "short-run-phillips-curve"
+    ],
+    "objective": "LO36.3"
+  },
+  {
+    "id": "PG5-PC-H-010",
+    "concept": "short-run-phillips-curve",
+    "pool": "hard",
+    "type": "analysis",
+    "asset": "SRPC-01.webp",
+    "stem": "Moving leftward along SRPC0 from point A implies which short-run relationship?",
+    "options": [
+      "Lower unemployment with lower inflation",
+      "Lower unemployment with higher inflation",
+      "Higher unemployment with higher inflation",
+      "No change in unemployment as inflation changes"
+    ],
+    "correctAnswer": "Lower unemployment with higher inflation",
+    "feedback": "A downward-sloping SRPC shows an inverse short-run relationship: less unemployment comes with more inflation.",
+    "primarySkill": "srpc_relation",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-H-016",
+    "concept": "short-run-phillips-curve",
+    "pool": "hard",
+    "type": "analysis",
+    "asset": "SRPC-02.webp",
+    "stem": "At point B, how do unemployment and inflation compare with the natural-rate point A?",
+    "options": [
+      "Unemployment is higher; inflation is lower",
+      "Unemployment is lower; inflation is lower",
+      "Unemployment is higher; inflation is higher",
+      "Unemployment is lower; inflation is higher"
+    ],
+    "correctAnswer": "Unemployment is lower; inflation is higher",
+    "feedback": "Point B combines a higher inflation rate with unemployment below the 5-percent natural rate.",
+    "primarySkill": "srpc_movement",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-H-022",
+    "concept": "short-run-phillips-curve",
+    "pool": "hard",
+    "type": "analysis",
+    "asset": "SRPC-03.webp",
+    "stem": "At the right-hand point B on SRPC-03, which inflation-unemployment comparison with A is correct?",
+    "options": [
+      "Unemployment is lower; inflation is higher",
+      "Unemployment is higher; inflation is lower",
+      "Unemployment is higher; inflation is higher",
+      "Unemployment is lower; inflation is lower"
+    ],
+    "correctAnswer": "Unemployment is higher; inflation is lower",
+    "feedback": "Point B has 1.5 percent inflation instead of 2.5 percent, and unemployment is above the 5-percent natural rate.",
+    "primarySkill": "srpc_movement",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-L-006",
+    "concept": "phillips-curve-expectations",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "SRPC-04.webp",
+    "stem": "At the unemployment rate marked by the LRPC, how does inflation on SRPC1 compare with inflation at point A on SRPC0?",
+    "options": [
+      "Inflation is lower on SRPC1 while unemployment stays at 5 percent",
+      "Inflation is higher on SRPC1 while unemployment stays at 5 percent",
+      "Inflation is unchanged because SRPC0 and SRPC1 overlap there",
+      "Unemployment falls below 5 percent while inflation stays unchanged"
+    ],
+    "correctAnswer": "Inflation is higher on SRPC1 while unemployment stays at 5 percent",
+    "feedback": "Because the SRPC shifts up while the LRPC stays fixed, maintaining unemployment at the natural rate would involve a higher inflation rate than at point A.",
+    "primarySkill": "trace_expectations_adjustment",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.3"
+  },
+  {
+    "id": "PG5-PC-L-012",
+    "concept": "short-run-phillips-curve",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "SRPC-01.webp",
+    "stem": "Which pair of descriptions matches the two curves shown?",
+    "options": [
+      "SRPC0: no short-run tradeoff; LRPC: permanent tradeoff",
+      "SRPC0: long-run neutrality; LRPC: short-run tradeoff",
+      "SRPC0: fixed unemployment; LRPC: fixed inflation",
+      "SRPC0: short-run tradeoff; LRPC: no long-run tradeoff"
+    ],
+    "correctAnswer": "SRPC0: short-run tradeoff; LRPC: no long-run tradeoff",
+    "feedback": "That is the whole point of showing both curves together: a short-run tradeoff and a vertical long-run benchmark.",
+    "primarySkill": "define_phillips_curve",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-L-018",
+    "concept": "phillips-curve-expectations",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "SRPC-02.webp",
+    "stem": "If policymakers keep unemployment at point B, what expectations adjustment tends to follow?",
+    "options": [
+      "Expected inflation falls and SRPC shifts downward",
+      "Expected inflation rises and SRPC shifts upward",
+      "Expected inflation stays fixed and LRPC shifts left",
+      "Expected inflation rises and LRPC shifts right"
+    ],
+    "correctAnswer": "Expected inflation rises and SRPC shifts upward",
+    "feedback": "Below-natural-rate unemployment tends to raise inflation expectations, shifting the SRPC upward and moving unemployment back toward the natural rate.",
+    "primarySkill": "trace_expectations_adjustment",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve",
+      "short-run-phillips-curve"
+    ],
+    "objective": "LO36.3"
+  },
+  {
+    "id": "PG5-PC-L-024",
+    "concept": "phillips-curve-expectations",
+    "pool": "legendary",
+    "type": "multi-step",
+    "asset": "SRPC-03.webp",
+    "stem": "If unemployment remains at the right-hand point B, how should inflation expectations and the SRPC adjust over time?",
+    "options": [
+      "Expected inflation rises and SRPC shifts upward",
+      "Expected inflation stays fixed and LRPC shifts right",
+      "Expected inflation falls and LRPC shifts left",
+      "Expected inflation falls and SRPC shifts downward"
+    ],
+    "correctAnswer": "Expected inflation falls and SRPC shifts downward",
+    "feedback": "Above-natural-rate unemployment tends to reduce inflation expectations, shifting the SRPC downward and returning unemployment toward the natural rate.",
+    "primarySkill": "trace_expectations_adjustment",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve",
+      "short-run-phillips-curve"
+    ],
+    "objective": "LO36.3"
+  },
+  {
+    "id": "PG5-PC-M-002",
+    "concept": "phillips-curve-expectations",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "SRPC-04.webp",
+    "stem": "Suppose expected inflation rises while the natural rate is unchanged. Which curve change shown is consistent with that assumption?",
+    "options": [
+      "SRPC0 shifts downward away from SRPC1",
+      "SRPC0 shifts upward to SRPC1",
+      "LRPC shifts left to a lower natural rate",
+      "The economy only moves along unchanged SRPC0"
+    ],
+    "correctAnswer": "SRPC0 shifts upward to SRPC1",
+    "feedback": "An upward shift of the short-run Phillips curve is the standard way to show higher expected inflation or an adverse supply shock with the natural rate unchanged.",
+    "primarySkill": "expected_inflation_shift",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.3"
+  },
+  {
+    "id": "PG5-PC-M-003",
+    "concept": "long-run-phillips-curve",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "SRPC-04.webp",
+    "stem": "What natural rate of unemployment is shown by the LRPC?",
+    "options": [
+      "3 percent",
+      "6 percent",
+      "5 percent",
+      "10 percent"
+    ],
+    "correctAnswer": "5 percent",
+    "feedback": "The vertical LRPC is drawn at 5 percent unemployment, so that is the natural rate.",
+    "primarySkill": "identify_natural_unemployment",
+    "secondaryConceptIds": [
+      "phillips-curve-expectations"
+    ],
+    "objective": "LO36.2"
+  },
+  {
+    "id": "PG5-PC-M-008",
+    "concept": "short-run-phillips-curve",
+    "pool": "medium",
+    "type": "graph",
+    "asset": "SRPC-01.webp",
+    "stem": "At point A, what is the inflation rate?",
+    "options": [
+      "5 percent",
+      "0 percent",
+      "6.5 percent",
+      "2.5 percent"
+    ],
+    "correctAnswer": "2.5 percent",
+    "feedback": "The horizontal guide through point A hits the inflation axis at 2.5 percent.",
+    "primarySkill": "read_pc_points",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-M-009",
+    "concept": "long-run-phillips-curve",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "SRPC-01.webp",
+    "stem": "If inflation rises while the economy remains on the LRPC, what happens to unemployment in this graph?",
+    "options": [
+      "It remains at 5 percent",
+      "It falls below 5 percent",
+      "It rises above 5 percent",
+      "It becomes equal to the inflation rate"
+    ],
+    "correctAnswer": "It remains at 5 percent",
+    "feedback": "A vertical long-run Phillips curve means the long-run unemployment rate is pinned at the natural rate.",
+    "primarySkill": "identify_lrpc",
+    "secondaryConceptIds": [
+      "short-run-phillips-curve"
+    ],
+    "objective": "LO36.2"
+  },
+  {
+    "id": "PG5-PC-M-014",
+    "concept": "short-run-phillips-curve",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "SRPC-02.webp",
+    "stem": "How far below the natural rate is unemployment at point B?",
+    "options": [
+      "0.5 percentage point",
+      "2 percentage points",
+      "1 percentage point",
+      "3.5 percentage points"
+    ],
+    "correctAnswer": "2 percentage points",
+    "feedback": "The natural rate is 5 percent at point A on the LRPC, while point B has 3 percent unemployment.",
+    "primarySkill": "read_pc_points",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-M-015",
+    "concept": "short-run-phillips-curve",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "SRPC-02.webp",
+    "stem": "What type of change is the move from A to B?",
+    "options": [
+      "An upward shift from SRPC0 to another SRPC",
+      "A leftward shift of the LRPC",
+      "A movement along the same SRPC0",
+      "A movement along the vertical LRPC"
+    ],
+    "correctAnswer": "A movement along the same SRPC0",
+    "feedback": "Both A and B lie on the same SRPC0, so the graph shows a movement along the curve, not a curve shift.",
+    "primarySkill": "movement_vs_shift_srpc",
+    "secondaryConceptIds": [
+      "phillips-curve-expectations"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-M-020",
+    "concept": "short-run-phillips-curve",
+    "pool": "medium",
+    "type": "calculation",
+    "asset": "SRPC-03.webp",
+    "stem": "Point B is to the right of the LRPC. By how many percentage points does its unemployment rate exceed the natural rate?",
+    "options": [
+      "0.5 percentage point",
+      "1 percentage point",
+      "4.5 percentage points",
+      "2 percentage points"
+    ],
+    "correctAnswer": "2 percentage points",
+    "feedback": "The natural rate is 5 percent at A, and point B is at 7 percent unemployment.",
+    "primarySkill": "read_pc_points",
+    "secondaryConceptIds": [
+      "long-run-phillips-curve"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-M-021",
+    "concept": "short-run-phillips-curve",
+    "pool": "medium",
+    "type": "analysis",
+    "asset": "SRPC-03.webp",
+    "stem": "Points A and B are on one SRPC in SRPC-03. How should their change be classified?",
+    "options": [
+      "A movement along the same SRPC0",
+      "A downward shift from SRPC0 to another SRPC",
+      "A rightward shift of the LRPC",
+      "A movement along the vertical LRPC"
+    ],
+    "correctAnswer": "A movement along the same SRPC0",
+    "feedback": "A and B lie on the same SRPC0, so the graph shows a movement along the short-run curve.",
+    "primarySkill": "movement_vs_shift_srpc",
+    "secondaryConceptIds": [
+      "phillips-curve-expectations"
+    ],
+    "objective": "LO36.1"
+  },
+  {
+    "id": "PG5-PC-X-005",
+    "concept": "long-run-phillips-curve",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "SRPC-04.webp",
+    "stem": "Which feature of the graph shows that the natural rate is unchanged after the SRPC shift?",
+    "options": [
+      "LRPC stays vertical at 5 percent unemployment",
+      "LRPC shifts left to 3 percent unemployment",
+      "SRPC1 becomes vertical at 6 percent unemployment",
+      "Point B moves to the right of point A"
+    ],
+    "correctAnswer": "LRPC stays vertical at 5 percent unemployment",
+    "feedback": "The LRPC staying fixed at 5 percent says the natural rate is unchanged, so inflation changes do not permanently buy lower unemployment.",
+    "primarySkill": "long_run_inflation_neutrality",
+    "secondaryConceptIds": [
+      "phillips-curve-expectations"
+    ],
+    "objective": "LO36.2"
+  },
+  {
+    "id": "PG5-PC-X-011",
+    "concept": "long-run-phillips-curve",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "SRPC-01.webp",
+    "stem": "Which description of point A is correct?",
+    "options": [
+      "A is only on SRPC0 and remains below the natural unemployment rate.",
+      "A is only on LRPC and remains above the natural unemployment rate.",
+      "A is on both SRPC0 and LRPC at the natural rate",
+      "A is the location where SRPC0 turns into a vertical Phillips curve."
+    ],
+    "correctAnswer": "A is on both SRPC0 and LRPC at the natural rate",
+    "feedback": "Point A is where the short-run curve crosses the long-run curve, so unemployment equals the natural rate there.",
+    "primarySkill": "natural_rate_hypothesis",
+    "secondaryConceptIds": [
+      "short-run-phillips-curve"
+    ],
+    "objective": "LO36.2"
+  },
+  {
+    "id": "PG5-PC-X-017",
+    "concept": "long-run-phillips-curve",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "SRPC-02.webp",
+    "stem": "If point B persists and expectations adjust, what long-run change is predicted?",
+    "options": [
+      "SRPC shifts upward; unemployment returns to 5 percent",
+      "LRPC shifts left; unemployment stays at 3 percent",
+      "SRPC shifts downward; unemployment stays at 3 percent",
+      "LRPC shifts right; unemployment rises above 5 percent"
+    ],
+    "correctAnswer": "SRPC shifts upward; unemployment returns to 5 percent",
+    "feedback": "With unemployment below the natural rate, expectations eventually adjust, shifting the SRPC and bringing unemployment back to the natural rate.",
+    "primarySkill": "long_run_adjustment",
+    "secondaryConceptIds": [
+      "phillips-curve-expectations"
+    ],
+    "objective": "LO36.2"
+  },
+  {
+    "id": "PG5-PC-X-023",
+    "concept": "long-run-phillips-curve",
+    "pool": "elite",
+    "type": "analysis",
+    "asset": "SRPC-03.webp",
+    "stem": "With unemployment above the natural rate at B, what long-run Phillips-curve adjustment should follow?",
+    "options": [
+      "LRPC shifts right; unemployment stays at 7 percent",
+      "SRPC shifts up; unemployment stays at 7 percent",
+      "SRPC shifts down; unemployment returns to 5 percent",
+      "LRPC shifts left; unemployment falls below 5 percent"
+    ],
+    "correctAnswer": "SRPC shifts down; unemployment returns to 5 percent",
+    "feedback": "With unemployment above the natural rate, inflation expectations tend to fall, shifting the SRPC downward and returning unemployment to the natural rate.",
+    "primarySkill": "long_run_adjustment",
+    "secondaryConceptIds": [
+      "phillips-curve-expectations"
+    ],
+    "objective": "LO36.2"
+  }
+]
