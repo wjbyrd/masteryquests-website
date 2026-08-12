@@ -11,7 +11,8 @@ const MODE_LABELS = {
   unlimited: 'Unlimited Practice',
   legendary: 'Legendary Mode',
   score: 'Score Attack',
-  trialGraph: 'Trial by Graph'
+  trialGraph: 'Trial by Graph',
+  fadingFortune: 'Fading Fortune'
 };
 const POOL_LABELS = {
   easy: 'Foundational practice',
@@ -29,7 +30,8 @@ const POOL_LABELS = {
   calculation: 'Calculation questions',
   integration: 'Integrated-analysis questions',
   graph: 'Graph questions',
-  graphSafe: 'Trial by Graph-safe questions'
+  graphSafe: 'Trial by Graph-safe questions',
+  fadingFortuneEligible: 'Fading Fortune-eligible questions'
 };
 
 const AREA_LABELS = {
@@ -460,7 +462,9 @@ function renderModeOptions(){
                   ? 'Mastery-level questions and mastery checkpoints only.'
                   : mode === 'score'
                     ? 'Arcade scoring with three checkpoints.'
-                    : 'Graph-required questions only. Students choose 10, 15, or 20 when enough audited graph-safe inventory is available.'
+                    : mode === 'trialGraph'
+                      ? 'Graph-required questions only. Students choose 10, 15, or 20 when enough audited graph-safe inventory is available.'
+                      : 'Every question begins at 100 points. Incorrect choices fade over time and reduce the available value to 75, 50, then 25. Students choose 10, 15, or 20 questions.'
       }</p>
     </div>
   `).join('');
@@ -916,7 +920,8 @@ function renderCoverage(){
     ['Checkpoint questions', checkpointTotal],
     ['Adaptive-support questions', adaptiveTotal],
     ['Special-format uses', specialTotal],
-    ['Trial by Graph-safe', counts.graphSafe || 0]
+    ['Trial by Graph-safe', counts.graphSafe || 0],
+    ['Fading Fortune-eligible', counts.fadingFortuneEligible || 0]
   ];
   $('summaryGrid').innerHTML = keyMetrics.map(([label,value]) => `<div class="metric"><span>${label}</span><strong>${value}</strong></div>`).join('');
 
@@ -948,7 +953,7 @@ function renderCoverage(){
     ['Mastery checkpoint', counts.legendaryBoss || 0], ['Repair', counts.repair || 0],
     ['Repair routing', counts.repairSeed || 0], ['Bridge', counts.bridge || 0],
     ['Calculation', counts.calculation || 0], ['Integrated analysis', counts.integration || 0],
-    ['Graph questions', counts.graph || 0], ['Trial by Graph-safe', counts.graphSafe || 0], ['Embedded visuals', counts.assets || 0],
+    ['Graph questions', counts.graph || 0], ['Trial by Graph-safe', counts.graphSafe || 0], ['Fading Fortune-eligible', counts.fadingFortuneEligible || 0], ['Embedded visuals', counts.assets || 0],
     ['Eligible checkpoint challenges', counts.challengeTotal || 0], ['Unique canonical questions', counts.totalCanonical || 0]
   ];
   $('detailedCoverage').innerHTML = detailedMetrics.map(([label,value]) => `<div class="metric"><span>${label}</span><strong>${value}</strong></div>`).join('');

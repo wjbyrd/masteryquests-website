@@ -32,7 +32,7 @@ function simulateManualEnd(mode){
   const ctx={
     gameMode:mode,runEnding:false,answerSubmissionPending:false,totalAttempts:12,correctAnswers:9,maxStreak:5,streak:2,room:14,username:'Student',runID:'RUN',quizQuestionTarget:10,latestResultsScreenHTML:'',
     FACULTY_COMPOSITION_CONFIG:{title:'Validation Quest'},document:{getElementById:el},
-    beginRunSession(){},stopTimedModeClock(){},freezeCompletionTime(){return 100000;},formatTime(){return '01:40';},generateCode(){return 'MQB-TEST';},
+    beginRunSession(){},stopTimedModeClock(){},clearFadingFortuneTimer(){},updateFadingFortuneHud(){},freezeCompletionTime(){return 100000;},formatTime(){return '01:40';},generateCode(){return 'MQB-TEST';},
     markExamDrillCompleted(){marked++;},sendGameData(d){telemetry=d;},closeGraphLightbox(){},getModeDisplayName(){return mode==='exam'?'Exam Drill':'Unlimited Practice';},
     showMasteryReportScreen(opts){report++; resultOpts=opts;},console
   };
@@ -42,7 +42,7 @@ function simulateManualEnd(mode){
 }
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2k') issues.push(`version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`version ${core.COMPOSER_VERSION}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical ${library.canonicalQuestionCount}`);
   const tiny=evidence({attempts:2,accuracy:1,byDifficulty:{easy:{attempts:2}},overall:false});
   const developing=evidence({attempts:7,accuracy:.86,byDifficulty:{easy:{attempts:4},medium:{attempts:3}},recentAccuracy:.86,overall:true});

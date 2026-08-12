@@ -1,0 +1,133 @@
+{
+  "phase": "mode9-fading-fortune-browser-v1",
+  "ok": true,
+  "checks": {
+    "candidatePool": true,
+    "targets": true,
+    "launchMode": true,
+    "uniqueDeck": true,
+    "manualPauseStopsDecay": true,
+    "decaysTo25": true,
+    "threeWrongChoicesRemoved": true,
+    "correctNeverFades": true,
+    "scores25": true,
+    "nextQuestionResets100": true,
+    "scores100": true,
+    "answerFadeRaceFrozen": true,
+    "raceScoresFrozenValue": true,
+    "graphPauses": true,
+    "stackedGraphModalPause": true,
+    "onePauseDoesNotResumeOther": true,
+    "finalPauseResumes": true,
+    "visibilityPauses": true,
+    "visibilityResumes": true,
+    "noTimerLeak": true
+  },
+  "observations": {
+    "base": {
+      "title": "Fading Fortune Validation Game",
+      "candidates": 383,
+      "targets": [
+        10,
+        15,
+        20
+      ]
+    },
+    "launch": {
+      "mode": "fadingFortune",
+      "deck": 10,
+      "unique": 10
+    },
+    "pause": {
+      "pre": {
+        "value": 100,
+        "fade": 0,
+        "active": true
+      },
+      "paused": {
+        "value": 100,
+        "remaining": 218,
+        "reasons": [
+          "browser-test"
+        ],
+        "timer": false
+      },
+      "stable": {
+        "value": 100,
+        "fade": 0
+      }
+    },
+    "fade3": {
+      "value": 25,
+      "fade": 3,
+      "faded": [
+        2,
+        3,
+        1
+      ],
+      "gone": [
+        1,
+        2,
+        3
+      ],
+      "correctGone": false
+    },
+    "after25": {
+      "score": 25,
+      "complete": 1,
+      "dist": {
+        "25": 1,
+        "50": 0,
+        "75": 0,
+        "100": 0
+      },
+      "value": 100,
+      "fade": 0
+    },
+    "after100": {
+      "score": 125,
+      "complete": 2,
+      "dist": {
+        "25": 1,
+        "50": 0,
+        "75": 0,
+        "100": 1
+      }
+    },
+    "raceImmediate": {
+      "value": 100,
+      "fade": 0,
+      "reasons": [
+        "answer-check"
+      ],
+      "pending": true
+    },
+    "raceFinal": {
+      "score": 225,
+      "complete": 3,
+      "dist": {
+        "25": 1,
+        "50": 0,
+        "75": 0,
+        "100": 2
+      }
+    },
+    "visibilityHidden": {
+      "reasons": [
+        "visibility"
+      ],
+      "timer": false
+    },
+    "visibilityVisible": {
+      "reasons": [],
+      "timer": true
+    },
+    "cleanup": {
+      "timer": false,
+      "active": false,
+      "reasons": []
+    }
+  },
+  "issues": [],
+  "note": "Browser harness uses a localStorage shim and deterministic answer-verification stub because the container test document has an opaque about:blank origin. Production generated games retain the existing secure hash verifier."
+}

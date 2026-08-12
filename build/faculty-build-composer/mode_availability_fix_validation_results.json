@@ -1,7 +1,7 @@
 {
-  "phase": "mode-availability-fix-v4-eight-mode-aware",
+  "phase": "mode-availability-fix-v5-nine-mode-aware",
   "ok": true,
-  "composerVersion": "4.5s.2k",
+  "composerVersion": "4.5s.2l",
   "canonicalQuestionCount": 8163,
   "cssGuard": true,
   "showReapply": true,
@@ -25,7 +25,8 @@
         "quiz",
         "legendary",
         "score",
-        "trialGraph"
+        "trialGraph",
+        "fadingFortune"
       ],
       "enabledCount": "1",
       "subtitle": "Your instructor enabled one mode for this game.",
@@ -35,7 +36,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1334666
+      "htmlBytes": 1371764
     },
     {
       "name": "timed-only",
@@ -55,7 +56,8 @@
         "unlimited",
         "legendary",
         "score",
-        "trialGraph"
+        "trialGraph",
+        "fadingFortune"
       ],
       "enabledCount": "1",
       "subtitle": "Your instructor enabled one mode for this game.",
@@ -65,7 +67,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1334630
+      "htmlBytes": 1371728
     },
     {
       "name": "timed-exam",
@@ -87,7 +89,8 @@
         "unlimited",
         "legendary",
         "score",
-        "trialGraph"
+        "trialGraph",
+        "fadingFortune"
       ],
       "enabledCount": "2",
       "subtitle": "Choose one of the modes enabled by your instructor.",
@@ -101,7 +104,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1334658
+      "htmlBytes": 1371756
     },
     {
       "name": "all-seven",
@@ -133,7 +136,8 @@
         "score"
       ],
       "hidden": [
-        "trialGraph"
+        "trialGraph",
+        "fadingFortune"
       ],
       "enabledCount": "7",
       "subtitle": "Choose one of the modes enabled by your instructor.",
@@ -167,7 +171,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1334821
+      "htmlBytes": 1371919
     },
     {
       "name": "all-eight",
@@ -201,7 +205,9 @@
         "score",
         "trialGraph"
       ],
-      "hidden": [],
+      "hidden": [
+        "fadingFortune"
+      ],
       "enabledCount": "8",
       "subtitle": "Choose one of the modes enabled by your instructor.",
       "validation": [
@@ -238,7 +244,85 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1664843
+      "htmlBytes": 1703339
+    },
+    {
+      "name": "all-nine",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune"
+      ],
+      "hidden": [],
+      "enabledCount": "9",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1703377
     }
   ],
   "issues": []

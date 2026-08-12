@@ -59,7 +59,7 @@ function simulateManualPracticeEnd(mode){
     gameMode:mode,runEnding:false,answerSubmissionPending:false,totalAttempts:7,correctAnswers:5,maxStreak:3,streak:1,room:8,username:'Test',runID:'RUN',quizQuestionTarget:10,latestResultsScreenHTML:'',
     FACULTY_COMPOSITION_CONFIG:{title:'Test Quest'},
     document:{getElementById:getEl},
-    beginRunSession(){sessionBegun++;}, stopTimedModeClock(){}, freezeCompletionTime(){return 42000;}, formatTime(){return '00:42';}, generateCode(){return 'MQB-TEST';},
+    beginRunSession(){sessionBegun++;}, stopTimedModeClock(){}, clearFadingFortuneTimer(){}, updateFadingFortuneHud(){}, freezeCompletionTime(){return 42000;}, formatTime(){return '00:42';}, generateCode(){return 'MQB-TEST';},
     markExamDrillCompleted(){examMarked++;}, sendGameData(data){telemetry=data;}, closeGraphLightbox(){}, getModeDisplayName(){return mode==='exam'?'Exam Drill':'Unlimited Practice';},
     showMasteryReportScreen(){reportShown++;}, console
   };
@@ -70,9 +70,9 @@ function simulateManualPracticeEnd(mode){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2k') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
-  if(core.MODE_ORDER.length!==8) issues.push(`mode count ${core.MODE_ORDER.length}`);
+  if(core.MODE_ORDER.length!==9) issues.push(`mode count ${core.MODE_ORDER.length}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
 
   const recipe={
@@ -103,7 +103,7 @@ function simulateManualPracticeEnd(mode){
     confirmFlow: html.includes('confirmText: "Generate Mastery Report"'),
     directReport: html.includes('handlePracticeModeComplete({endedByStudent:true, reportDestination:"mastery"})'),
     cycleRollover: html.includes('if(gameMode === "unlimited" && room > 30)') && html.includes('unlimitedPracticeCycle++'),
-    noUnlimitedBosses: html.includes('gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "unlimited"') && html.includes('gameMode !== "unlimited"'),
+    noUnlimitedBosses: html.includes('gameMode === "fadingFortune" || gameMode === "unlimited"') && html.includes('gameMode !== "unlimited"'),
     examEarlyCompletionGuard: html.includes('if(gameMode === "exam" && !endedByStudent)'),
     manualTelemetry: html.includes('`${gameMode}_ended_by_student`'),
     masteryLabel: html.includes('if(gameMode === "unlimited") return "Unlimited Practice";'),

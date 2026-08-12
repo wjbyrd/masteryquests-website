@@ -3,11 +3,23 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5s.2k
+Current composer version: 4.5s.2l
 Canonical questions: 8,163
 Selectable concepts/family slices: 126
 Question assets: 427
 
+
+Latest upgrade — Mode 9: Fading Fortune
+- Adds Fading Fortune as the ninth game mode.
+- Every question begins worth 100 points; incorrect choices fade one at a time and reduce the live value to 75, 50, then 25 points. The correct answer never fades.
+- Difficulty-based fade intervals are centralized at Easy 8s, Medium 10s, Hard 12s, Elite 15s, and Legendary 18s.
+- Learners can choose 10, 15, or 20 questions when the selected concept mix has enough unique four-choice practice inventory.
+- Graph lightbox, browser visibility, game modal, rapid-guess lockout, and answer verification pause the fade clock without resetting the current interval.
+- Correct answers earn the frozen live question value; incorrect answers earn zero. Accuracy and mastery remain separate from the Fading Fortune score.
+- Mastery Report 2.0 adds an Independence Under Pressure section showing the 100/75/50/25 answer distribution and average question value.
+- Telemetry records question value, fade count, interval, paused duration, run score, maximum score, average value, and fade distribution.
+- No bosses, artifacts, checkpoints, Repair/Bridge detours, setbacks, realm progress, or save/resume are used in this mode.
+- Existing eight modes remain available for regression validation.
 
 Latest upgrade — Mode 8: Trial by Graph
 - Adds Trial by Graph as the eighth game mode.

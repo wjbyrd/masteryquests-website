@@ -44,8 +44,8 @@ function runtimeDeckCheck(composition,target){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2k') issues.push(`composer version ${core.COMPOSER_VERSION}`);
-  if(core.MODE_ORDER.length!==8 || core.MODE_ORDER[7]!=='trialGraph') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.MODE_ORDER.length!==9 || core.MODE_ORDER[7]!=='trialGraph' || core.MODE_ORDER[8]!=='fadingFortune') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
   const auditIds=new Set();
@@ -118,8 +118,8 @@ function runtimeDeckCheck(composition,target){
     targets:html.includes('data-trial-graph-count="10"')&&html.includes('data-trial-graph-count="15"')&&html.includes('data-trial-graph-count="20"'),
     injectedIds:html.includes(`const trialGraphQuestionIds = ${JSON.stringify(trialOnly.trialGraphQuestionIds,null,2)}`),
     fixedCompletion:html.includes('trialGraphQuestionsCompleted >= trialGraphQuestionTarget'),
-    noRemediation:html.includes('gameMode !== "trialGraph" && currentQuestion.tag'),
-    noBosses:html.includes('gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "unlimited"'),
+    noRemediation:html.includes('gameMode !== "trialGraph" && gameMode !== "fadingFortune" && currentQuestion.tag'),
+    noBosses:html.includes('gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "unlimited"'),
     resultCount:html.includes('Graph Questions: ${trialGraphQuestionTarget}'),
     mastery:html.includes('if(gameMode === "trialGraph") return "Trial by Graph";'),
     configOnly:config.supportedModes.length===1&&config.supportedModes[0]==='trialGraph'
@@ -133,7 +133,7 @@ function runtimeDeckCheck(composition,target){
     supportedTargets:{perfectCompetition:deck20.supported,demand:demandRuntime.supported,aggregateDemand:adRuntime.supported},
     allEightModes:allEight.validation.modes.map(m=>({mode:m.mode,ok:m.ok})),issues
   };
-  fs.writeFileSync(path.join(root,'trial_by_graph_validation_results_4.5s.2k.json'),JSON.stringify(result,null,2));
+  fs.writeFileSync(path.join(root,'trial_by_graph_validation_results_4.5s.2l.json'),JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();

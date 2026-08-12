@@ -5,9 +5,9 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.2k';
+const COMPOSER_VERSION = '4.5s.2l';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
-const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score', 'trialGraph'];
+const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score', 'trialGraph', 'fadingFortune'];
 const POOL_MINIMUMS = {
   easy: 6,
   medium: 6,
@@ -29,7 +29,8 @@ const MODE_REQUIREMENTS = {
   unlimited: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   legendary: ['legendary', 'legendaryBoss'],
   score: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge'],
-  trialGraph: []
+  trialGraph: [],
+  fadingFortune: []
 };
 const MODE_POOL_MINIMUMS = {
   quiz: { easy: 5, medium: 5, hard: 5 }
@@ -729,6 +730,13 @@ function compose(library, inputRecipe){
     pool,
     (banks[pool] || []).filter(question => question?.graphRequired === true && Boolean(question?.image)).length
   ]));
+  const fadingFortuneQuestions = uniqueById(['easy','medium','hard','elite','legendary']
+    .flatMap(pool => (banks[pool] || []).filter(question => Array.isArray(question?.options) && question.options.length === 4)));
+  counts.fadingFortuneEligible = fadingFortuneQuestions.length;
+  counts.fadingFortuneByDifficulty = Object.fromEntries(['easy','medium','hard','elite','legendary'].map(pool => [
+    pool,
+    (banks[pool] || []).filter(question => Array.isArray(question?.options) && question.options.length === 4).length
+  ]));
   counts.assets = assets.length;
   counts.totalCanonical = uniqueById([
     ...Object.values(banks).flat(),
@@ -761,7 +769,8 @@ function compose(library, inputRecipe){
     repairQuestions,
     bridgeQuestions,
     assets,
-    trialGraphQuestions
+    trialGraphQuestions,
+    fadingFortuneQuestions
   });
   for(const mode of validation.modes){
     if(!mode.ok){
@@ -798,6 +807,7 @@ function compose(library, inputRecipe){
     microSkillBridgePools,
     assets: assets.sort((a, b) => a.runtimePath.localeCompare(b.runtimePath)),
     trialGraphQuestionIds: trialGraphQuestions.map(idOf),
+    fadingFortuneQuestionIds: fadingFortuneQuestions.map(idOf),
     counts,
     validation,
     selectedModules: modules
@@ -813,13 +823,16 @@ function validateModes(counts, modes, detail = {}){
     unlimited: 'Unlimited Practice',
     legendary: 'Legendary Mode',
     score: 'Score Attack',
-    trialGraph: 'Trial by Graph'
+    trialGraph: 'Trial by Graph',
+    fadingFortune: 'Fading Fortune'
   };
   return {
     modes: MODE_ORDER.filter(mode => modes.includes(mode)).map(mode => {
       const requirements = mode === 'trialGraph'
         ? [{pool:'graphSafe', minimum:10, count:counts.graphSafe || 0}]
-        : MODE_REQUIREMENTS[mode].map(pool => ({
+        : mode === 'fadingFortune'
+          ? [{pool:'fadingFortuneEligible', minimum:10, count:counts.fadingFortuneEligible || 0}]
+          : MODE_REQUIREMENTS[mode].map(pool => ({
             pool,
             minimum: getModePoolMinimum(mode, pool),
             count: counts[pool] || 0
@@ -834,19 +847,24 @@ function validateModes(counts, modes, detail = {}){
             ? detail.bridgeQuestions
             : pool === 'graphSafe'
               ? detail.trialGraphQuestions
-              : detail.banks?.[pool];
+              : pool === 'fadingFortuneEligible'
+                ? detail.fadingFortuneQuestions
+                : detail.banks?.[pool];
         if(!questions) continue;
         if(!Array.isArray(questions)){
           issues.push({pool, id: '—', issue: 'Pool is not an array'});
           continue;
         }
         questions.forEach((question, index) => {
-          const validationPool = pool === 'graphSafe'
+          const validationPool = (pool === 'graphSafe' || pool === 'fadingFortuneEligible')
             ? String(question?.canonicalDifficulty || question?.difficulty || 'hard').toLowerCase()
             : pool;
           const fields = validateFacultyQuestionRecord(question, validationPool, detail.assets);
           const id = question?.id ?? question?.questionId ?? `index ${index}`;
           if(fields.length) issues.push({pool, id, issue: `Invalid: ${fields.join(', ')}`});
+          if(pool === 'fadingFortuneEligible'){
+            if(!Array.isArray(question?.options) || question.options.length !== 4) issues.push({pool, id, issue: 'Fading Fortune requires exactly four answer choices'});
+          }
           if(pool === 'graphSafe'){
             if(question?.graphRequired !== true) issues.push({pool, id, issue: 'Missing graphRequired eligibility flag'});
             if(!question?.image) issues.push({pool, id, issue: 'Missing required graph image'});
@@ -894,7 +912,7 @@ function questionMarkerRegion(composition, metadata){
       questionAssetMetadata[normalized.split('/').pop()] = record;
     }
   }
-  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst trialGraphQuestionIds = ${js(composition.trialGraphQuestionIds || [])};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
+  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst trialGraphQuestionIds = ${js(composition.trialGraphQuestionIds || [])};\nconst fadingFortuneQuestionIds = ${js(composition.fadingFortuneQuestionIds || [])};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
 }
 
 function replaceMarkedRegion(template, startLabel, endLabel, replacement){
@@ -938,7 +956,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5s.2k-trial-by-graph'
+    templateVersion: 'phase4.5s.2l-fading-fortune'
   };
 }
 
@@ -949,6 +967,11 @@ async function createConfig(recipe, library, templateSha){
     ...canonical,
     composerVersion: COMPOSER_VERSION,
     compositionId: canonical.slug,
+    fadingFortune: {
+      enabled: canonical.supportedModes.includes('fadingFortune'),
+      allowedTargets: [10, 15, 20],
+      intervals: {easy:8000, medium:10000, hard:12000, elite:15000, legendary:18000}
+    },
     saveKeyNamespace: `mq-econ:${canonical.slug}:${fingerprint.slice(0, 12)}`,
     librarySha256: library.librarySha256,
     templateSha256: templateSha,
