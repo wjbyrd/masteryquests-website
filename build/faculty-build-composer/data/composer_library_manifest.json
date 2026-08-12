@@ -1,5 +1,5 @@
 {
-  "assetCount": 396,
+  "assetCount": 404,
   "assets": [
     {
       "conceptId": "aggregate-demand",
@@ -3940,11 +3940,99 @@
       "sizeBytes": 83194,
       "imageAlt": "Domestic supply-and-demand graph with world-price or trade-policy reference lines.",
       "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand."
+    },
+    {
+      "conceptId": "demand",
+      "filename": "DEMAND-01.webp",
+      "sourceAssetPath": "question-assets/demand/DEMAND-01.webp",
+      "sourceUrl": "data/question-assets/demand/DEMAND-01.webp",
+      "runtimePath": "question-assets/demand/DEMAND-01.webp",
+      "sha256": "0fc2e9f84f7e4c93a831a056a3bdd2e61c4f1a2b9a4c20be52c547c0dab4b4a2",
+      "sizeBytes": 50068,
+      "imageAlt": "Downward-sloping demand curve for gourmet donuts with labeled points A and B.",
+      "graphDescription": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5."
+    },
+    {
+      "conceptId": "demand",
+      "filename": "DEMAND-02.webp",
+      "sourceAssetPath": "question-assets/demand/DEMAND-02.webp",
+      "sourceUrl": "data/question-assets/demand/DEMAND-02.webp",
+      "runtimePath": "question-assets/demand/DEMAND-02.webp",
+      "sha256": "14505844471906a322080ac5cb52327500748dfba46a994a3794d39bcc6aef32",
+      "sizeBytes": 58254,
+      "imageAlt": "Two parallel downward-sloping demand curves for coffee labeled D0 and D1.",
+      "graphDescription": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand. D1 represents 75 thousand more units demanded than D0 at each common price shown."
+    },
+    {
+      "conceptId": "demand",
+      "filename": "DEMAND-03.webp",
+      "sourceAssetPath": "question-assets/demand/DEMAND-03.webp",
+      "sourceUrl": "data/question-assets/demand/DEMAND-03.webp",
+      "runtimePath": "question-assets/demand/DEMAND-03.webp",
+      "sha256": "1ce1751a267b58820a0f72221e2789d63ae1d3be3759ad1652813c432a04247b",
+      "sizeBytes": 49114,
+      "imageAlt": "Two parallel downward-sloping demand curves for tea labeled D0 and D1.",
+      "graphDescription": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand. D1 represents 100 thousand fewer units demanded than D0 at each common price shown."
+    },
+    {
+      "conceptId": "supply",
+      "filename": "SUPPLY-01.webp",
+      "sourceAssetPath": "question-assets/supply/SUPPLY-01.webp",
+      "sourceUrl": "data/question-assets/supply/SUPPLY-01.webp",
+      "runtimePath": "question-assets/supply/SUPPLY-01.webp",
+      "sha256": "6b3e090312758ee51fd4b302ef4ab95787720a683f7b78e7be1f15c498b18b13",
+      "sizeBytes": 45884,
+      "imageAlt": "Upward-sloping supply curve for coffee with labeled points A and B.",
+      "graphDescription": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand."
+    },
+    {
+      "conceptId": "supply",
+      "filename": "SUPPLY-02.webp",
+      "sourceAssetPath": "question-assets/supply/SUPPLY-02.webp",
+      "sourceUrl": "data/question-assets/supply/SUPPLY-02.webp",
+      "runtimePath": "question-assets/supply/SUPPLY-02.webp",
+      "sha256": "30364c9cedfcdf0ba376fe4de39523fa4d73d06eae147e0b5d6c59f82eb872d0",
+      "sizeBytes": 59978,
+      "imageAlt": "Two parallel upward-sloping supply curves for hamburgers labeled S0 and S1.",
+      "graphDescription": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand. S1 represents 100 thousand fewer units supplied than S0 at each common price shown."
+    },
+    {
+      "conceptId": "supply",
+      "filename": "SUPPLY-03.webp",
+      "sourceAssetPath": "question-assets/supply/SUPPLY-03.webp",
+      "sourceUrl": "data/question-assets/supply/SUPPLY-03.webp",
+      "runtimePath": "question-assets/supply/SUPPLY-03.webp",
+      "sha256": "6713ee777ec55f3ee1af8b72058e9906f77d3c8e0139acb0d11397a9e8335433",
+      "sizeBytes": 48790,
+      "imageAlt": "Two parallel upward-sloping supply curves for tacos labeled S0 and S1, with points A and B on S0.",
+      "graphDescription": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand, so the shift from S0 to S1 adds 125 thousand units supplied at that price."
+    },
+    {
+      "conceptId": "market-equilibrium",
+      "filename": "DEMAND-SUPPLY-01.webp",
+      "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "sha256": "5870d2240f2447bf5f113d3019f4b4be6920cc05ac5ee8b9f6e3eab3e4722b3c",
+      "sizeBytes": 60122,
+      "imageAlt": "Gas market with one downward-sloping demand curve D0 and one upward-sloping supply curve S0.",
+      "graphDescription": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand."
+    },
+    {
+      "conceptId": "market-equilibrium",
+      "filename": "DEMAND-SUPPLY-02.webp",
+      "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "sha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
+      "sizeBytes": 70886,
+      "imageAlt": "Gas market with original curves D0 and S0 and shifted curves D1 and S1.",
+      "graphDescription": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand."
     }
   ],
   "conceptCount": 126,
-  "canonicalQuestionCount": 7977,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1",
-  "librarySha256": "696e755ebcaea5c25d6d06f76db4a781eaf59c87bf4f0eee6dcdfea3c0faea80",
-  "generatedAt": "2026-08-11T18:10:00.000Z"
+  "canonicalQuestionCount": 8025,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1",
+  "librarySha256": "2487136841d524a07bef2a6f497ae6c02abc5093bf12a1f33eb42dcfabaab723",
+  "generatedAt": "2026-08-12T13:38:00.000Z"
 }

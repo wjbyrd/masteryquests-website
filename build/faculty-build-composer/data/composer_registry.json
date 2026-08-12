@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-11T18:10:00.000Z",
+  "generatedAt": "2026-08-12T13:38:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -2622,39 +2622,39 @@
         "boss": 9,
         "bridge": 6,
         "calculation": 0,
-        "elite": 4,
+        "elite": 7,
         "integration": 0,
-        "legendary": 6,
+        "legendary": 9,
         "legendaryBoss": 3,
-        "main": 21,
+        "main": 33,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "elite": 4,
-        "hard": 10,
-        "legendary": 9,
-        "medium": 9,
+        "easy": 14,
+        "medium": 15,
+        "hard": 13,
+        "elite": 7,
+        "legendary": 12,
         "unknown": 10
       },
       "repairCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 43
+        "mainWithUsableSkill": 61
       },
       "bridgeCoverage": {
         "directSkillMatches": 6,
-        "mainWithUsableSkill": 43
+        "mainWithUsableSkill": 61
       },
-      "calculationCoverage": 0,
-      "graphCoverage": 4,
+      "calculationCoverage": 6,
+      "graphCoverage": 22,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 1 adds three dedicated demand visuals for movement along demand, rightward demand shifts, and leftward demand shifts, with graph-dependent questions from easy through Legendary.",
+      "coverageFloorVersion": "phaseGraph1-demand-supply-core-v1"
     },
     {
       "canonicalConceptId": "disinflation-and-policy",
@@ -6225,39 +6225,39 @@
         "boss": 12,
         "bridge": 4,
         "calculation": 4,
-        "elite": 4,
+        "elite": 6,
         "integration": 0,
-        "legendary": 15,
+        "legendary": 17,
         "legendaryBoss": 3,
-        "main": 31,
+        "main": 39,
         "repair": 3,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "elite": 4,
-        "hard": 18,
-        "legendary": 18,
-        "medium": 20,
+        "easy": 11,
+        "medium": 24,
+        "hard": 20,
+        "elite": 6,
+        "legendary": 20,
         "unknown": 7
       },
       "repairCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 65
+        "mainWithUsableSkill": 81
       },
       "bridgeCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 65
+        "mainWithUsableSkill": 81
       },
-      "calculationCoverage": 4,
-      "graphCoverage": 17,
+      "calculationCoverage": 6,
+      "graphCoverage": 29,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 1 adds a clean equilibrium/shortage/surplus graph and a simultaneous demand-increase/supply-decrease graph, extending equilibrium graph reasoning through Legendary.",
+      "coverageFloorVersion": "phaseGraph1-demand-supply-core-v1"
     },
     {
       "canonicalConceptId": "market-failures",
@@ -11443,39 +11443,39 @@
         "boss": 9,
         "bridge": 4,
         "calculation": 0,
-        "elite": 4,
+        "elite": 7,
         "integration": 0,
-        "legendary": 6,
+        "legendary": 9,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 30,
         "repair": 4,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "elite": 4,
-        "hard": 9,
-        "legendary": 9,
-        "medium": 9,
+        "easy": 12,
+        "medium": 15,
+        "hard": 12,
+        "elite": 7,
+        "legendary": 12,
         "unknown": 8
       },
       "repairCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 40
+        "mainWithUsableSkill": 58
       },
       "bridgeCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 40
+        "mainWithUsableSkill": 58
       },
-      "calculationCoverage": 4,
-      "graphCoverage": 2,
+      "calculationCoverage": 9,
+      "graphCoverage": 20,
       "status": "active",
       "notes": "Concept boundary follows structured source objectives, concept IDs, clusters, and skills. Phase 4.3a approved curation applied.",
       "instructionalClassification": "Standalone-ready",
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
-      "coverageStatusNote": "Full expansion target: balanced foundational, intermediate, advanced, challenge, mastery, all checkpoint tiers, direct repair, and bridge coverage.",
-      "coverageFloorVersion": "phase5.2b-v1"
+      "coverageStatusNote": "Phase Graph 1 adds three dedicated supply visuals for movement along supply, supply decreases, and supply increases, with explicit movement-versus-shift comparisons from easy through Legendary.",
+      "coverageFloorVersion": "phaseGraph1-demand-supply-core-v1"
     },
     {
       "canonicalConceptId": "tax-incidence",
@@ -11833,10 +11833,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseQH1-question-independence-graph-hygiene-v1",
-  "curationSummary": "Question-independence and graph-hygiene pass: self-contained prior-context stems; removed high-confidence decorative or answer-giveaway graph attachments; preserved answer-bearing fields and routing.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1",
-  "canonicalQuestionCount": 7977,
-  "librarySha256": "696e755ebcaea5c25d6d06f76db4a781eaf59c87bf4f0eee6dcdfea3c0faea80",
+  "curationPhase": "phaseGraph1-demand-supply-core-v1",
+  "curationSummary": "Phase Graph 1: eight approved demand/supply/equilibrium assets and 48 graph-dependent questions. Emphasis is movement versus shift, direct graph reading, shortage/surplus adjustment, and simultaneous shifts; no elasticity, price-control, or tax content was added.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1",
+  "canonicalQuestionCount": 8025,
+  "librarySha256": "2487136841d524a07bef2a6f497ae6c02abc5093bf12a1f33eb42dcfabaab723",
   "composerVersion": "4.5p.0"
 }

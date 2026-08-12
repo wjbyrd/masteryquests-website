@@ -1,0 +1,178 @@
+{
+  "originalUniqueQuestionCount": 7977,
+  "newUniqueQuestionCount": 8025,
+  "missingOriginalIds": [],
+  "changedExistingIds": [],
+  "newIds": [
+    "PG1-DMD-E-001",
+    "PG1-DMD-E-002",
+    "PG1-DMD-E-003",
+    "PG1-DMD-EL-001",
+    "PG1-DMD-EL-002",
+    "PG1-DMD-EL-003",
+    "PG1-DMD-H-001",
+    "PG1-DMD-H-002",
+    "PG1-DMD-H-003",
+    "PG1-DMD-L-001",
+    "PG1-DMD-L-002",
+    "PG1-DMD-L-003",
+    "PG1-DMD-M-001",
+    "PG1-DMD-M-002",
+    "PG1-DMD-M-003",
+    "PG1-DMD-M-004",
+    "PG1-DMD-M-005",
+    "PG1-DMD-M-006",
+    "PG1-EQ-E-001",
+    "PG1-EQ-E-002",
+    "PG1-EQ-EL-001",
+    "PG1-EQ-EL-002",
+    "PG1-EQ-H-001",
+    "PG1-EQ-H-002",
+    "PG1-EQ-L-001",
+    "PG1-EQ-L-002",
+    "PG1-EQ-M-001",
+    "PG1-EQ-M-002",
+    "PG1-EQ-M-003",
+    "PG1-EQ-M-004",
+    "PG1-SUP-E-001",
+    "PG1-SUP-E-002",
+    "PG1-SUP-E-003",
+    "PG1-SUP-EL-001",
+    "PG1-SUP-EL-002",
+    "PG1-SUP-EL-003",
+    "PG1-SUP-H-001",
+    "PG1-SUP-H-002",
+    "PG1-SUP-H-003",
+    "PG1-SUP-L-001",
+    "PG1-SUP-L-002",
+    "PG1-SUP-L-003",
+    "PG1-SUP-M-001",
+    "PG1-SUP-M-002",
+    "PG1-SUP-M-003",
+    "PG1-SUP-M-004",
+    "PG1-SUP-M-005",
+    "PG1-SUP-M-006"
+  ],
+  "nearDuplicateExistingFlags": [],
+  "withinNewFlags": [
+    {
+      "id1": "PG1-DMD-E-002",
+      "id2": "PG1-DMD-E-003",
+      "ratio": 0.948905109489051,
+      "stem1": "In the displayed coffee market, the move from D0 to D1 represents:",
+      "stem2": "In the displayed tea market, the move from D0 to D1 represents:"
+    },
+    {
+      "id1": "PG1-DMD-E-002",
+      "id2": "PG1-SUP-E-002",
+      "ratio": 0.8811188811188811,
+      "stem1": "In the displayed coffee market, the move from D0 to D1 represents:",
+      "stem2": "In the displayed hamburger market, the move from S0 to S1 represents:"
+    },
+    {
+      "id1": "PG1-DMD-E-002",
+      "id2": "PG1-SUP-E-003",
+      "ratio": 0.927536231884058,
+      "stem1": "In the displayed coffee market, the move from D0 to D1 represents:",
+      "stem2": "In the displayed taco market, the move from S0 to S1 represents:"
+    },
+    {
+      "id1": "PG1-DMD-E-003",
+      "id2": "PG1-SUP-E-002",
+      "ratio": 0.9,
+      "stem1": "In the displayed tea market, the move from D0 to D1 represents:",
+      "stem2": "In the displayed hamburger market, the move from S0 to S1 represents:"
+    },
+    {
+      "id1": "PG1-DMD-E-003",
+      "id2": "PG1-SUP-E-003",
+      "ratio": 0.9481481481481482,
+      "stem1": "In the displayed tea market, the move from D0 to D1 represents:",
+      "stem2": "In the displayed taco market, the move from S0 to S1 represents:"
+    },
+    {
+      "id1": "PG1-DMD-M-001",
+      "id2": "PG1-SUP-M-001",
+      "ratio": 0.9439252336448598,
+      "stem1": "The market moves from point A to point B on the displayed demand curve. What is the most precise description?",
+      "stem2": "The market moves from point A to point B on the displayed supply curve. What is the most precise description?"
+    },
+    {
+      "id1": "PG1-DMD-M-002",
+      "id2": "PG1-SUP-M-002",
+      "ratio": 0.8651685393258427,
+      "stem1": "Moving from point A to point B on the displayed demand curve changes quantity demanded by:",
+      "stem2": "Moving from point A to point B on the displayed supply curve changes quantity supplied by:"
+    },
+    {
+      "id1": "PG1-DMD-M-003",
+      "id2": "PG1-DMD-M-005",
+      "ratio": 0.9704641350210971,
+      "stem1": "At a price of $10 on the displayed coffee graph, how does quantity demanded change when demand shifts from D0 to D1?",
+      "stem2": "At a price of $4 on the displayed tea graph, how does quantity demanded change when demand shifts from D0 to D1?"
+    },
+    {
+      "id1": "PG1-DMD-M-004",
+      "id2": "PG1-DMD-M-006",
+      "ratio": 0.9665071770334929,
+      "stem1": "If coffee is a normal good, which event is consistent with the shift from D0 to D1 shown in the graph?",
+      "stem2": "If tea is a normal good, which event is consistent with the shift from D0 to D1 shown in the graph?"
+    },
+    {
+      "id1": "PG1-DMD-H-001",
+      "id2": "PG1-SUP-H-001",
+      "ratio": 0.9047619047619048,
+      "stem1": "Using points A and B on the displayed linear demand curve, a $1 decrease in price is associated with approximately what change in quantity demanded?",
+      "stem2": "Using points A and B on the displayed linear supply curve, a $1 increase in price is associated with approximately what change in quantity supplied?"
+    },
+    {
+      "id1": "PG1-DMD-H-002",
+      "id2": "PG1-DMD-H-003",
+      "ratio": 0.9633507853403142,
+      "stem1": "Across the common price range shown, D1 places quantity demanded how far to the right of D0?",
+      "stem2": "Across the common price range shown, D1 places quantity demanded how far to the left of D0?"
+    },
+    {
+      "id1": "PG1-DMD-H-002",
+      "id2": "PG1-SUP-H-002",
+      "ratio": 0.8795811518324608,
+      "stem1": "Across the common price range shown, D1 places quantity demanded how far to the right of D0?",
+      "stem2": "Across the common price range shown, S1 places quantity supplied how far to the left of S0?"
+    },
+    {
+      "id1": "PG1-DMD-H-003",
+      "id2": "PG1-SUP-H-002",
+      "ratio": 0.9157894736842105,
+      "stem1": "Across the common price range shown, D1 places quantity demanded how far to the left of D0?",
+      "stem2": "Across the common price range shown, S1 places quantity supplied how far to the left of S0?"
+    },
+    {
+      "id1": "PG1-DMD-EL-003",
+      "id2": "PG1-SUP-EL-002",
+      "ratio": 0.8636363636363636,
+      "stem1": "Start on D0 at a price of $6, where quantity demanded is 150 thousand. Demand then shifts to D1 and the price falls to $4. What final quantity demanded does the graph show?",
+      "stem2": "Start on S0 at a price of $9, where quantity supplied is 200 thousand. Supply then shifts to S1 and the price rises to $13. What final quantity supplied does the graph show?"
+    },
+    {
+      "id1": "PG1-DMD-L-003",
+      "id2": "PG1-SUP-L-002",
+      "ratio": 0.9294117647058824,
+      "stem1": "The market begins on D0 at $6 and 150 thousand units. Demand shifts to D1 while price is still $6, and then price falls to $4. Which decomposition matches the graph?",
+      "stem2": "The market begins on S0 at $9 and 200 thousand units. Supply shifts to S1 while price is still $9, and then price rises to $13. Which decomposition matches the graph?"
+    },
+    {
+      "id1": "PG1-EQ-M-001",
+      "id2": "PG1-EQ-M-002",
+      "ratio": 1.0,
+      "stem1": "At a price of $2 per gallon in the displayed gas market, what imbalance exists?",
+      "stem2": "At a price of $4 per gallon in the displayed gas market, what imbalance exists?"
+    },
+    {
+      "id1": "PG1-SUP-E-002",
+      "id2": "PG1-SUP-E-003",
+      "ratio": 0.9219858156028369,
+      "stem1": "In the displayed hamburger market, the move from S0 to S1 represents:",
+      "stem2": "In the displayed taco market, the move from S0 to S1 represents:"
+    }
+  ]
+}

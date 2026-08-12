@@ -1,0 +1,2376 @@
+[
+  {
+    "id": "PG1-DMD-E-001",
+    "q": "On the displayed gourmet-donut demand curve, what price and quantity are shown at point A?",
+    "options": [
+      "$10 and 100 thousand donuts",
+      "$5 and 225 thousand donuts",
+      "$10 and 225 thousand donuts",
+      "$14 and 100 thousand donuts"
+    ],
+    "tag": "demand",
+    "type": "graph",
+    "objective": "LO4.2",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_schedule_interpretation",
+    "secondarySkills": [],
+    "repairSkill": "demand_schedule_interpretation",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "Point A is plotted at a price of $10 and a quantity demanded of 100 thousand donuts.",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "48134d5610a37571c1ff08875040acb0fe68463dda3f98121dab0b697ba1ef88",
+    "canonicalId": "PG1-DMD-E-001",
+    "sourceId": 860000,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "18320ac9194cfddbb12a31334a81b147c8b8a3793ee5a0fbf07731462c89c5fa",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "demand_schedule_interpretation",
+        "sourceRecordOrder": 0,
+        "sourceId": 860000,
+        "sourceHash": "18320ac9194cfddbb12a31334a81b147c8b8a3793ee5a0fbf07731462c89c5fa"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-M-001",
+    "q": "The market moves from point A to point B on the displayed demand curve. What is the most precise description?",
+    "options": [
+      "Demand increases and the curve shifts right",
+      "Price falls and quantity demanded increases along the same demand curve",
+      "Price falls and demand decreases",
+      "Supply increases while demand stays fixed"
+    ],
+    "tag": "demand",
+    "type": "interpretation",
+    "objective": "LO4.2",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_demand_shift",
+    "secondarySkills": [
+      "law_of_demand"
+    ],
+    "repairSkill": "movement_vs_demand_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A and B lie on the same demand curve. The lower price is associated with a larger quantity demanded, so this is a movement along demand, not a shift.",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "457d6e9a84a780241fec73acf1ee96df817e82c050ea0b98821ae61533d7eacf",
+    "canonicalId": "PG1-DMD-M-001",
+    "sourceId": 860001,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "0ce7ff84284af8451f2d7d7d8cc11c081029ed087c1b39b12c3e4ee9484173a6",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "movement_vs_demand_shift",
+        "sourceRecordOrder": 1,
+        "sourceId": 860001,
+        "sourceHash": "0ce7ff84284af8451f2d7d7d8cc11c081029ed087c1b39b12c3e4ee9484173a6"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-M-002",
+    "q": "Moving from point A to point B on the displayed demand curve changes quantity demanded by:",
+    "options": [
+      "A decrease of 125 thousand donuts",
+      "An increase of 5 thousand donuts",
+      "An increase of 125 thousand donuts",
+      "An increase of 225 thousand donuts"
+    ],
+    "tag": "demand",
+    "type": "calculation",
+    "objective": "LO4.2",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_schedule_interpretation",
+    "secondarySkills": [],
+    "repairSkill": "demand_schedule_interpretation",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "Quantity demanded rises from 100 thousand at A to 225 thousand at B, an increase of 125 thousand.",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "8d72d143c0a193baeb9b22ecc7da0068e471267a9b6a5ec535eff3a28f698c89",
+    "canonicalId": "PG1-DMD-M-002",
+    "sourceId": 860002,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "c30d4f216819b08993130761ff246918ffffd7b4940b4e8d75bf2f5aef645ede",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "demand_schedule_interpretation",
+        "sourceRecordOrder": 2,
+        "sourceId": 860002,
+        "sourceHash": "c30d4f216819b08993130761ff246918ffffd7b4940b4e8d75bf2f5aef645ede"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-H-001",
+    "q": "Using points A and B on the displayed linear demand curve, a $1 decrease in price is associated with approximately what change in quantity demanded?",
+    "options": [
+      "A decrease of 25 thousand donuts",
+      "An increase of 5 thousand donuts",
+      "An increase of 125 thousand donuts",
+      "An increase of 25 thousand donuts"
+    ],
+    "tag": "demand",
+    "type": "calculation",
+    "objective": "LO4.2",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "law_of_demand",
+    "secondarySkills": [
+      "demand_schedule_interpretation"
+    ],
+    "repairSkill": "law_of_demand",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "From A to B, price falls by $5 while quantity demanded rises by 125 thousand. That is 25 thousand additional donuts per $1 decrease in price.",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "79eab2dcb17a287e5218dcd6328c762e0945bd0e77ef00152d6a96ab0332a9a1",
+    "canonicalId": "PG1-DMD-H-001",
+    "sourceId": 860003,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "984dd181df7f10feafd0174e61dc949d6582cc27fdd758e86bf5c153825a81c7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "law_of_demand",
+        "sourceRecordOrder": 3,
+        "sourceId": 860003,
+        "sourceHash": "984dd181df7f10feafd0174e61dc949d6582cc27fdd758e86bf5c153825a81c7"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-EL-001",
+    "q": "Suppose the only change in the gourmet-donut market is that the good's own price falls from $10 to $5. The displayed graph shows the market moving from A to B. Which conclusion is correct?",
+    "options": [
+      "Quantity demanded rises by 125 thousand, but demand itself does not shift",
+      "Demand rises by 125 thousand because buyers move to B",
+      "Demand shifts right because the price is lower",
+      "Quantity demanded falls because movement is down the curve"
+    ],
+    "tag": "demand",
+    "type": "analysis",
+    "objective": "LO4.2",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_demand_shift",
+    "secondarySkills": [
+      "law_of_demand"
+    ],
+    "repairSkill": "movement_vs_demand_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A change in the good's own price causes a movement along a fixed demand curve. Quantity demanded rises from 100 thousand to 225 thousand, but demand does not shift.",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "f65124758842b008f95eb84083033e914ddfe26e948958dd70eb3439edd9fa2f",
+    "canonicalId": "PG1-DMD-EL-001",
+    "sourceId": 860004,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "d53ce5d342d864fee2edde2a050909222c9eb84693f3f32bed94d9908b2fbdf6",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "movement_vs_demand_shift",
+        "sourceRecordOrder": 4,
+        "sourceId": 860004,
+        "sourceHash": "d53ce5d342d864fee2edde2a050909222c9eb84693f3f32bed94d9908b2fbdf6"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-L-001",
+    "q": "A student claims that the move from A to B on the displayed graph proves that demand increased by 125 thousand donuts. What is wrong with that claim?",
+    "options": [
+      "The student is correct because any quantity increase is a demand increase",
+      "The 125-thousand change is an increase in quantity demanded caused by the lower price; the demand curve did not shift",
+      "The curve shifted left even though A and B lie on the same line",
+      "The change should be called an increase in supply because quantity rose"
+    ],
+    "tag": "demand",
+    "type": "multi-step",
+    "objective": "LO4.2",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_shift",
+    "secondarySkills": [
+      "law_of_demand"
+    ],
+    "repairSkill": "movement_vs_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The points lie on one demand curve. A lower own price changes quantity demanded, whereas an increase in demand would require the entire demand curve to shift right.",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "8c1816eb2da0ed5853b1226422049ed384a444d673f32ada85f4205f0d9f7ed1",
+    "canonicalId": "PG1-DMD-L-001",
+    "sourceId": 860005,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "a54a067476b2892ea0d3a8e4d34b9518008ce0b5da906a0ab91e3949ae845232",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "movement_vs_shift",
+        "sourceRecordOrder": 5,
+        "sourceId": 860005,
+        "sourceHash": "a54a067476b2892ea0d3a8e4d34b9518008ce0b5da906a0ab91e3949ae845232"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-E-002",
+    "q": "In the displayed coffee market, the move from D0 to D1 represents:",
+    "options": [
+      "A decrease in demand",
+      "An increase in quantity demanded caused only by a lower price",
+      "An increase in demand",
+      "A decrease in supply"
+    ],
+    "tag": "demand",
+    "type": "graph",
+    "objective": "LO4.2",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shift_direction",
+    "secondarySkills": [],
+    "repairSkill": "demand_shift_direction",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "D1 lies to the right of D0, showing that consumers demand more coffee at each common price.",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "6ecd6b31cce995ad976f636e9d4326acb5803fb0354574cfb576a36d93a70f32",
+    "canonicalId": "PG1-DMD-E-002",
+    "sourceId": 860006,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "e783cc7d5a5e0112eaeefd3475297d4ab955a94822fd0ba7e285770ec81cf5d2",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "demand_shift_direction",
+        "sourceRecordOrder": 6,
+        "sourceId": 860006,
+        "sourceHash": "e783cc7d5a5e0112eaeefd3475297d4ab955a94822fd0ba7e285770ec81cf5d2"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-M-003",
+    "q": "At a price of $10 on the displayed coffee graph, how does quantity demanded change when demand shifts from D0 to D1?",
+    "options": [
+      "It decreases from 125 thousand to 50 thousand",
+      "It increases from 100 thousand to 175 thousand",
+      "It stays at 125 thousand",
+      "It increases from 50 thousand to 125 thousand"
+    ],
+    "tag": "demand",
+    "type": "calculation",
+    "objective": "LO4.2",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_schedule_interpretation",
+    "secondarySkills": [
+      "demand_shift_direction"
+    ],
+    "repairSkill": "demand_schedule_interpretation",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $10, D0 shows 50 thousand units and D1 shows 125 thousand, so quantity demanded at that price rises by 75 thousand.",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "b228a5bc6a5e5c26caf01f47b1e033a0658d9f1f9118526781cef19522b91f4b",
+    "canonicalId": "PG1-DMD-M-003",
+    "sourceId": 860007,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "800e2eec342d50796b59bbdd37d740d31feff5ec36ea2840b3c5fae732b0f0f3",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "demand_schedule_interpretation",
+        "sourceRecordOrder": 7,
+        "sourceId": 860007,
+        "sourceHash": "800e2eec342d50796b59bbdd37d740d31feff5ec36ea2840b3c5fae732b0f0f3"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-M-004",
+    "q": "If coffee is a normal good, which event is consistent with the shift from D0 to D1 shown in the graph?",
+    "options": [
+      "Consumer income rises",
+      "The price of coffee falls while all demand shifters stay unchanged",
+      "Coffee producers adopt cheaper technology",
+      "The price of coffee rises and buyers move up D0"
+    ],
+    "tag": "demand",
+    "type": "application",
+    "objective": "LO4.2",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shifters_income",
+    "secondarySkills": [
+      "demand_shifters"
+    ],
+    "repairSkill": "demand_shifters_income",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "For a normal good, higher income increases demand, shifting the entire demand curve to the right.",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "ca449fd1602e705b4d7b4da23d150acdfdef8f98f73eb088aa582d38639c6485",
+    "canonicalId": "PG1-DMD-M-004",
+    "sourceId": 860008,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "e9c6d1fa31a33d246159fc2edc6fe3dc6c9ee47e167896217fc0fdcbf8cd74dc",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "demand_shifters_income",
+        "sourceRecordOrder": 8,
+        "sourceId": 860008,
+        "sourceHash": "e9c6d1fa31a33d246159fc2edc6fe3dc6c9ee47e167896217fc0fdcbf8cd74dc"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-H-002",
+    "q": "Across the common price range shown, D1 places quantity demanded how far to the right of D0?",
+    "options": [
+      "25 thousand units",
+      "75 thousand units",
+      "100 thousand units",
+      "125 thousand units"
+    ],
+    "tag": "demand",
+    "type": "calculation",
+    "objective": "LO4.2",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shift_analysis",
+    "secondarySkills": [],
+    "repairSkill": "demand_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "For example, at $10 quantity rises from 50 thousand to 125 thousand, and at $6 it rises from 150 thousand to 225 thousand. The horizontal shift is 75 thousand units.",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "261dc85353149411e1ac10798aa7b6628d41c42f6183969683d879c64f6673dc",
+    "canonicalId": "PG1-DMD-H-002",
+    "sourceId": 860009,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "304e89196f1533cef0ee9803ca9c3bd95a91823a4a100ccef440ff56f9be2cde",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "demand_shift_analysis",
+        "sourceRecordOrder": 9,
+        "sourceId": 860009,
+        "sourceHash": "304e89196f1533cef0ee9803ca9c3bd95a91823a4a100ccef440ff56f9be2cde"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-EL-002",
+    "q": "Start on D0 at a price of $6, where quantity demanded is 150 thousand. Demand then shifts to D1, but the price rises to $10. What final quantity demanded does the graph show, and how does it compare with the starting quantity?",
+    "options": [
+      "225 thousand; 75 thousand higher than the starting quantity",
+      "50 thousand; 100 thousand lower than the starting quantity",
+      "125 thousand; 25 thousand lower than the starting quantity",
+      "150 thousand; unchanged"
+    ],
+    "tag": "demand",
+    "type": "multi-step",
+    "objective": "LO4.2",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_demand_shift",
+    "secondarySkills": [
+      "demand_shift_direction"
+    ],
+    "repairSkill": "movement_vs_demand_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The final point is on D1 at $10, which is 125 thousand. Demand increased, but the higher price produces a movement up D1 large enough that final quantity demanded is 25 thousand below the original 150 thousand.",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "9ea1a7893c00820c5e01f5e82380a96d3c7adfe5d79414f457877dcd61eacf0c",
+    "canonicalId": "PG1-DMD-EL-002",
+    "sourceId": 860010,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "c2fc76ebdb07516d6c44b6247ee6203d92e292f7fe8615feea73897226588e98",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "movement_vs_demand_shift",
+        "sourceRecordOrder": 10,
+        "sourceId": 860010,
+        "sourceHash": "c2fc76ebdb07516d6c44b6247ee6203d92e292f7fe8615feea73897226588e98"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-L-002",
+    "q": "The market begins on D0 at a price of $10 and quantity 50 thousand. Demand shifts to D1 and the price then falls to $6. Which accounting correctly describes the total quantity change?",
+    "options": [
+      "Quantity rises to 125 thousand because only the shift matters",
+      "Quantity rises to 150 thousand because only the price change matters",
+      "Quantity falls to 25 thousand because the two changes work in opposite directions",
+      "Quantity rises to 225 thousand: 75 thousand from the demand shift at $10, then another 100 thousand from moving down D1"
+    ],
+    "tag": "demand",
+    "type": "multi-step",
+    "objective": "LO4.2",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "multiple_demand_shifters",
+    "secondarySkills": [
+      "movement_vs_demand_shift",
+      "demand_shift_direction"
+    ],
+    "repairSkill": "multiple_demand_shifters",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $10 the shift from D0 to D1 raises quantity demanded from 50 to 125 thousand. Moving down D1 from $10 to $6 raises it again from 125 to 225 thousand, for a total increase of 175 thousand.",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "0cfae0cbbf11e5027ab1838e3700e2311bd6a53f9431c9c2e261d839bc819a6f",
+    "canonicalId": "PG1-DMD-L-002",
+    "sourceId": 860011,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "9a503c17424862439f87670e3d3857845e29f54b19b7abe39694022794382865",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "multiple_demand_shifters",
+        "sourceRecordOrder": 11,
+        "sourceId": 860011,
+        "sourceHash": "9a503c17424862439f87670e3d3857845e29f54b19b7abe39694022794382865"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-E-003",
+    "q": "In the displayed tea market, the move from D0 to D1 represents:",
+    "options": [
+      "A decrease in demand",
+      "An increase in demand",
+      "A decrease in quantity demanded caused only by a higher price",
+      "An increase in supply"
+    ],
+    "tag": "demand",
+    "type": "graph",
+    "objective": "LO4.2",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shift_direction",
+    "secondarySkills": [],
+    "repairSkill": "demand_shift_direction",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "D1 lies to the left of D0, showing that consumers demand less tea at each common price.",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "694a08284bba5da73688d49e505d3933e4eae0008f1d3f731b262bce4b8d2c50",
+    "canonicalId": "PG1-DMD-E-003",
+    "sourceId": 860012,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "c46d871883315fc7098735afdd0b550d3f6e4a19ca74a530c874187e4caa0015",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "demand_shift_direction",
+        "sourceRecordOrder": 12,
+        "sourceId": 860012,
+        "sourceHash": "c46d871883315fc7098735afdd0b550d3f6e4a19ca74a530c874187e4caa0015"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-M-005",
+    "q": "At a price of $4 on the displayed tea graph, how does quantity demanded change when demand shifts from D0 to D1?",
+    "options": [
+      "It increases from 100 thousand to 200 thousand",
+      "It decreases from 200 thousand to 100 thousand",
+      "It decreases from 300 thousand to 200 thousand",
+      "It stays at 100 thousand"
+    ],
+    "tag": "demand",
+    "type": "calculation",
+    "objective": "LO4.2",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_schedule_interpretation",
+    "secondarySkills": [
+      "demand_shift_direction"
+    ],
+    "repairSkill": "demand_schedule_interpretation",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $4, D0 shows 200 thousand units while D1 shows 100 thousand, a decrease of 100 thousand at the same price.",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "d4370894c216d3f776b827278dcbb87a15842e813748fa8ee310866e0b4b408b",
+    "canonicalId": "PG1-DMD-M-005",
+    "sourceId": 860013,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "623f5e5ee318fbbc4b603517d03f41944e06251efa9ac780ba3aaa18a1189c12",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "demand_schedule_interpretation",
+        "sourceRecordOrder": 13,
+        "sourceId": 860013,
+        "sourceHash": "623f5e5ee318fbbc4b603517d03f41944e06251efa9ac780ba3aaa18a1189c12"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-M-006",
+    "q": "If tea is a normal good, which event is consistent with the shift from D0 to D1 shown in the graph?",
+    "options": [
+      "The price of tea rises while all demand shifters stay unchanged",
+      "Tea producers receive a subsidy",
+      "Consumer income falls",
+      "The price of tea falls and buyers move down D0"
+    ],
+    "tag": "demand",
+    "type": "application",
+    "objective": "LO4.2",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shifters_income",
+    "secondarySkills": [
+      "demand_shifters"
+    ],
+    "repairSkill": "demand_shifters_income",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "For a normal good, lower income decreases demand and shifts the entire demand curve left.",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "a996761a6c43e6498bf2ec690afb6d077cbc54690ca2206e6bbe9fac483f9997",
+    "canonicalId": "PG1-DMD-M-006",
+    "sourceId": 860014,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "1ffea2eb0d383ee0b81c37c1d4302e1d2b9eba47dc5c21657f2755bac498185b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "demand_shifters_income",
+        "sourceRecordOrder": 14,
+        "sourceId": 860014,
+        "sourceHash": "1ffea2eb0d383ee0b81c37c1d4302e1d2b9eba47dc5c21657f2755bac498185b"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-H-003",
+    "q": "Across the common price range shown, D1 places quantity demanded how far to the left of D0?",
+    "options": [
+      "25 thousand units",
+      "75 thousand units",
+      "200 thousand units",
+      "100 thousand units"
+    ],
+    "tag": "demand",
+    "type": "calculation",
+    "objective": "LO4.2",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shift_analysis",
+    "secondarySkills": [],
+    "repairSkill": "demand_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $4, quantity falls from 200 thousand on D0 to 100 thousand on D1; at $6 it falls from 150 thousand to 50 thousand. The horizontal decrease is 100 thousand units.",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "323e6a4266844cc92a2c6a716703b9f0df2ad5fb07b9c7ce69d19190526efde0",
+    "canonicalId": "PG1-DMD-H-003",
+    "sourceId": 860015,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "1a10747257c4dc09352489aa851f29caeb20b8a078968e35985d74e381fcd61e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "demand_shift_analysis",
+        "sourceRecordOrder": 15,
+        "sourceId": 860015,
+        "sourceHash": "1a10747257c4dc09352489aa851f29caeb20b8a078968e35985d74e381fcd61e"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-EL-003",
+    "q": "Start on D0 at a price of $6, where quantity demanded is 150 thousand. Demand then shifts to D1 and the price falls to $4. What final quantity demanded does the graph show?",
+    "options": [
+      "100 thousand",
+      "50 thousand",
+      "150 thousand",
+      "200 thousand"
+    ],
+    "tag": "demand",
+    "type": "multi-step",
+    "objective": "LO4.2",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_demand_shift",
+    "secondarySkills": [
+      "demand_shift_direction"
+    ],
+    "repairSkill": "movement_vs_demand_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The final point lies on D1 at $4, where quantity demanded is 100 thousand. The price decrease raises quantity demanded along D1, but it does not fully offset the earlier decrease in demand.",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "bc7a31d0333518777943affb1a7b8c219c302516a7866865bad6c0b97041d42e",
+    "canonicalId": "PG1-DMD-EL-003",
+    "sourceId": 860016,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "3054122ff6e2ff6a1e7893a2f3491505bb6076fe42a8746dc65a71790d6b9d27",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "movement_vs_demand_shift",
+        "sourceRecordOrder": 16,
+        "sourceId": 860016,
+        "sourceHash": "3054122ff6e2ff6a1e7893a2f3491505bb6076fe42a8746dc65a71790d6b9d27"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-DMD-L-003",
+    "q": "The market begins on D0 at $6 and 150 thousand units. Demand shifts to D1 while price is still $6, and then price falls to $4. Which decomposition matches the graph?",
+    "options": [
+      "The shift raises quantity demanded by 100 thousand, then the lower price reverses it",
+      "The shift reduces quantity demanded by 100 thousand to 50 thousand, then the lower price raises quantity demanded by 50 thousand to 100 thousand",
+      "The shift has no quantity effect until the price changes",
+      "The price change raises demand itself by 50 thousand and restores the original quantity"
+    ],
+    "tag": "demand",
+    "type": "multi-step",
+    "objective": "LO4.2",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_shift",
+    "secondarySkills": [
+      "movement_vs_demand_shift",
+      "demand_shift_direction"
+    ],
+    "repairSkill": "movement_vs_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $6, D0 shows 150 thousand and D1 shows 50 thousand. Moving down D1 to $4 raises quantity demanded to 100 thousand. Final quantity remains 50 thousand below the starting level.",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "c88a22146deee79deaac2af9b7da710212456947a89e00c48f84bc4c05b88f82",
+    "canonicalId": "PG1-DMD-L-003",
+    "sourceId": 860017,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "demand"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "61bb589eef40ad3095f4f88f8068f8f8fe5fac91e9b021404354d2b8d0dafa5e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "movement_vs_shift",
+        "sourceRecordOrder": 17,
+        "sourceId": 860017,
+        "sourceHash": "61bb589eef40ad3095f4f88f8068f8f8fe5fac91e9b021404354d2b8d0dafa5e"
+      }
+    ],
+    "primaryConceptId": "demand",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-E-001",
+    "q": "On the displayed coffee supply curve, what price and quantity are shown at point A?",
+    "options": [
+      "$11 and 225 thousand units",
+      "$6 and 225 thousand units",
+      "$6 and 100 thousand units",
+      "$2 and 100 thousand units"
+    ],
+    "tag": "supply",
+    "type": "graph",
+    "objective": "LO4.3",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_analysis",
+    "secondarySkills": [],
+    "repairSkill": "supply_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "Point A is plotted at a price of $6 and a quantity supplied of 100 thousand.",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "21eea1e56f0179075a3b89d85dc3d70da8484ae84d4c2c649275a5299b340226",
+    "canonicalId": "PG1-SUP-E-001",
+    "sourceId": 860018,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "8891dbe009727072594c0809bb81c6c46129886da5bd86b419cb9fef30b7cae5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "supply_shift_analysis",
+        "sourceRecordOrder": 18,
+        "sourceId": 860018,
+        "sourceHash": "8891dbe009727072594c0809bb81c6c46129886da5bd86b419cb9fef30b7cae5"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-M-001",
+    "q": "The market moves from point A to point B on the displayed supply curve. What is the most precise description?",
+    "options": [
+      "Supply increases and the curve shifts right",
+      "Price rises and supply decreases",
+      "Demand increases while supply stays fixed",
+      "Price rises and quantity supplied increases along the same supply curve"
+    ],
+    "tag": "supply",
+    "type": "interpretation",
+    "objective": "LO4.3",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_supply_shift",
+    "secondarySkills": [
+      "law_of_supply"
+    ],
+    "repairSkill": "movement_vs_supply_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A and B lie on the same supply curve. The higher price is associated with a larger quantity supplied, so this is a movement along supply, not a shift.",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "615ad95bacd9a53b6c10a5cce8b71213e9ce66dc09c3467d4f4696e26f0b45f1",
+    "canonicalId": "PG1-SUP-M-001",
+    "sourceId": 860019,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "f44bc43beeaf188e13ea1a50ba119741ba7be61578d7a38862c8d9a16720bbd9",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "movement_vs_supply_shift",
+        "sourceRecordOrder": 19,
+        "sourceId": 860019,
+        "sourceHash": "f44bc43beeaf188e13ea1a50ba119741ba7be61578d7a38862c8d9a16720bbd9"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-M-002",
+    "q": "Moving from point A to point B on the displayed supply curve changes quantity supplied by:",
+    "options": [
+      "An increase of 125 thousand units",
+      "A decrease of 125 thousand units",
+      "An increase of 5 thousand units",
+      "An increase of 225 thousand units"
+    ],
+    "tag": "supply",
+    "type": "calculation",
+    "objective": "LO4.3",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_analysis",
+    "secondarySkills": [],
+    "repairSkill": "supply_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "Quantity supplied rises from 100 thousand at A to 225 thousand at B, an increase of 125 thousand.",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "252b6cf9563d4e272e32a33cd819d32d504967578d94e4204511f5529593c024",
+    "canonicalId": "PG1-SUP-M-002",
+    "sourceId": 860020,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "5487a3cc2f3d0163e95c9a855356b296dd45b8b069efc54f6698f1c8033057d0",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "supply_shift_analysis",
+        "sourceRecordOrder": 20,
+        "sourceId": 860020,
+        "sourceHash": "5487a3cc2f3d0163e95c9a855356b296dd45b8b069efc54f6698f1c8033057d0"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-H-001",
+    "q": "Using points A and B on the displayed linear supply curve, a $1 increase in price is associated with approximately what change in quantity supplied?",
+    "options": [
+      "A decrease of 25 thousand units",
+      "An increase of 25 thousand units",
+      "An increase of 5 thousand units",
+      "An increase of 125 thousand units"
+    ],
+    "tag": "supply",
+    "type": "calculation",
+    "objective": "LO4.3",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "law_of_supply",
+    "secondarySkills": [
+      "movement_vs_supply_shift"
+    ],
+    "repairSkill": "law_of_supply",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "From A to B, price rises by $5 while quantity supplied rises by 125 thousand, or 25 thousand additional units per $1 increase.",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "85e88aee7e96e558871b2fa22000961990bd158fb2edc140d05b584139711e25",
+    "canonicalId": "PG1-SUP-H-001",
+    "sourceId": 860021,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "861d0c5c45012fe8b722805a35f98a44533fd969c315b1ed2e5827c908feb13f",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "law_of_supply",
+        "sourceRecordOrder": 21,
+        "sourceId": 860021,
+        "sourceHash": "861d0c5c45012fe8b722805a35f98a44533fd969c315b1ed2e5827c908feb13f"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-EL-001",
+    "q": "At a market price of $8, approximately how many units does the displayed coffee supply curve show producers are willing to sell?",
+    "options": [
+      "100 thousand units",
+      "175 thousand units",
+      "150 thousand units",
+      "225 thousand units"
+    ],
+    "tag": "supply",
+    "type": "graph",
+    "objective": "LO4.3",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_analysis",
+    "secondarySkills": [],
+    "repairSkill": "supply_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The supply line passes through quantity 150 thousand at a price of $8.",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "1a826759d1e87e33e018528e4034f3f9bf12e6181f4747d6ccd9d9a8f33e6e56",
+    "canonicalId": "PG1-SUP-EL-001",
+    "sourceId": 860022,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "71381b04a33a956235fa0b0a542a657d282b0de34132697dbe8659909540bf90",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "supply_shift_analysis",
+        "sourceRecordOrder": 22,
+        "sourceId": 860022,
+        "sourceHash": "71381b04a33a956235fa0b0a542a657d282b0de34132697dbe8659909540bf90"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-L-001",
+    "q": "A producer says the move from A to B proves that supply increased by 125 thousand units. What is the correct diagnosis?",
+    "options": [
+      "Supply increased because any movement to a larger quantity is a supply shift",
+      "Supply decreased because the market moved upward along the curve",
+      "Demand increased and pulled the supply curve to B",
+      "Quantity supplied increased by 125 thousand because price rose; the supply curve itself did not shift"
+    ],
+    "tag": "supply",
+    "type": "multi-step",
+    "objective": "LO4.3",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_supply_shift",
+    "secondarySkills": [
+      "law_of_supply"
+    ],
+    "repairSkill": "movement_vs_supply_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A change in the good's own price changes quantity supplied along a fixed supply curve. A supply increase would require a rightward shift of the entire curve.",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "14e422f7cb0d86eabd52db8da1cd44a07a3eaf97f567db5eb323497a2f7a76af",
+    "canonicalId": "PG1-SUP-L-001",
+    "sourceId": 860023,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "6b4ceab318ba60fc8228ce92fcdc05ad182d502e1d6e0798dd5d42fb64ff4df3",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "movement_vs_supply_shift",
+        "sourceRecordOrder": 23,
+        "sourceId": 860023,
+        "sourceHash": "6b4ceab318ba60fc8228ce92fcdc05ad182d502e1d6e0798dd5d42fb64ff4df3"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-E-002",
+    "q": "In the displayed hamburger market, the move from S0 to S1 represents:",
+    "options": [
+      "A decrease in supply",
+      "An increase in supply",
+      "An increase in quantity supplied caused only by a higher price",
+      "A decrease in demand"
+    ],
+    "tag": "supply",
+    "type": "graph",
+    "objective": "LO4.3",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_direction",
+    "secondarySkills": [],
+    "repairSkill": "supply_shift_direction",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "S1 lies to the left and above S0, showing less quantity supplied at each common price.",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "c759b9b0be03baa8de525253f8f660dafb53ba8375a15b6f5f20ca347e83853a",
+    "canonicalId": "PG1-SUP-E-002",
+    "sourceId": 860024,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "88223edda67ae5e29e6d9d031b995389e980c0adb07128b62fc01a1b7c513b3e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "supply_shift_direction",
+        "sourceRecordOrder": 24,
+        "sourceId": 860024,
+        "sourceHash": "88223edda67ae5e29e6d9d031b995389e980c0adb07128b62fc01a1b7c513b3e"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-M-003",
+    "q": "At a price of $9 on the displayed hamburger graph, how does quantity supplied change when supply shifts from S0 to S1?",
+    "options": [
+      "It increases from 100 thousand to 200 thousand",
+      "It decreases from 200 thousand to 100 thousand",
+      "It decreases from 300 thousand to 200 thousand",
+      "It stays at 200 thousand"
+    ],
+    "tag": "supply",
+    "type": "calculation",
+    "objective": "LO4.3",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_analysis",
+    "secondarySkills": [
+      "supply_shift_direction"
+    ],
+    "repairSkill": "supply_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $9, S0 shows 200 thousand units while S1 shows 100 thousand, a decrease of 100 thousand at the same price.",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "d4370894c216d3f776b827278dcbb87a15842e813748fa8ee310866e0b4b408b",
+    "canonicalId": "PG1-SUP-M-003",
+    "sourceId": 860025,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "8715244bdd4b972560e44ef02d58f3e94ba5c1dd297fb526bcbca6d32021cd74",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "supply_shift_analysis",
+        "sourceRecordOrder": 25,
+        "sourceId": 860025,
+        "sourceHash": "8715244bdd4b972560e44ef02d58f3e94ba5c1dd297fb526bcbca6d32021cd74"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-M-004",
+    "q": "Which event is consistent with the shift from S0 to S1 shown in the hamburger market?",
+    "options": [
+      "The price of hamburgers rises and firms move up S0",
+      "A new cost-saving grill technology is adopted",
+      "The price of a major meat input rises",
+      "More hamburger restaurants enter the market"
+    ],
+    "tag": "supply",
+    "type": "application",
+    "objective": "LO4.3",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shifters_input_costs",
+    "secondarySkills": [
+      "supply_shifters"
+    ],
+    "repairSkill": "supply_shifters_input_costs",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "Higher input costs reduce supply, shifting the supply curve left.",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "a3b84f1739f8b995188699193a24fa4340398185ba9eadc2321f074355011db2",
+    "canonicalId": "PG1-SUP-M-004",
+    "sourceId": 860026,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "19e7a178c3f05ab00e88dfa98e42e7c7a20277fa1b349fe32f3939ef87ebc998",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "supply_shifters_input_costs",
+        "sourceRecordOrder": 26,
+        "sourceId": 860026,
+        "sourceHash": "19e7a178c3f05ab00e88dfa98e42e7c7a20277fa1b349fe32f3939ef87ebc998"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-H-002",
+    "q": "Across the common price range shown, S1 places quantity supplied how far to the left of S0?",
+    "options": [
+      "25 thousand units",
+      "75 thousand units",
+      "200 thousand units",
+      "100 thousand units"
+    ],
+    "tag": "supply",
+    "type": "calculation",
+    "objective": "LO4.3",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_analysis",
+    "secondarySkills": [],
+    "repairSkill": "supply_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $9, quantity supplied falls from 200 thousand to 100 thousand; at $13, it falls from 300 thousand to 200 thousand. The horizontal decrease is 100 thousand units.",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "323e6a4266844cc92a2c6a716703b9f0df2ad5fb07b9c7ce69d19190526efde0",
+    "canonicalId": "PG1-SUP-H-002",
+    "sourceId": 860027,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "36eebcd68a7265add2efec8c3fb9607928eaf13e2d9916a77dbfecf0f9d27a42",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "supply_shift_analysis",
+        "sourceRecordOrder": 27,
+        "sourceId": 860027,
+        "sourceHash": "36eebcd68a7265add2efec8c3fb9607928eaf13e2d9916a77dbfecf0f9d27a42"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-EL-002",
+    "q": "Start on S0 at a price of $9, where quantity supplied is 200 thousand. Supply then shifts to S1 and the price rises to $13. What final quantity supplied does the graph show?",
+    "options": [
+      "200 thousand",
+      "100 thousand",
+      "300 thousand",
+      "400 thousand"
+    ],
+    "tag": "supply",
+    "type": "multi-step",
+    "objective": "LO4.3",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_supply_shift",
+    "secondarySkills": [
+      "supply_shift_direction"
+    ],
+    "repairSkill": "movement_vs_supply_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $13, S1 shows 200 thousand units. The decrease in supply initially lowers quantity supplied at a given price, but the subsequent higher price moves quantity supplied up along S1 until it returns to 200 thousand.",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "2ad2b3bd7183247868d061f1b8cb3c7b1056ee6fb44fe4a8f48015075eb3a759",
+    "canonicalId": "PG1-SUP-EL-002",
+    "sourceId": 860028,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "00a80421cfd8a5a397ee9db831b8678d4ec631a29395fc8eaf131f04f80445be",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "movement_vs_supply_shift",
+        "sourceRecordOrder": 28,
+        "sourceId": 860028,
+        "sourceHash": "00a80421cfd8a5a397ee9db831b8678d4ec631a29395fc8eaf131f04f80445be"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-L-002",
+    "q": "The market begins on S0 at $9 and 200 thousand units. Supply shifts to S1 while price is still $9, and then price rises to $13. Which decomposition matches the graph?",
+    "options": [
+      "The shift raises quantity supplied by 100 thousand and the price increase reverses it",
+      "The shift cuts quantity supplied by 100 thousand to 100 thousand, then the higher price raises quantity supplied by 100 thousand back to 200 thousand",
+      "The supply shift has no quantity effect until price changes",
+      "The higher price shifts supply right by 100 thousand and restores the original curve"
+    ],
+    "tag": "supply",
+    "type": "multi-step",
+    "objective": "LO4.3",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_and_movement",
+    "secondarySkills": [
+      "movement_vs_supply_shift",
+      "supply_shift_direction"
+    ],
+    "repairSkill": "supply_shift_and_movement",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $9 the shift from S0 to S1 lowers quantity supplied from 200 to 100 thousand. Moving up S1 to $13 raises it back to 200 thousand.",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "f6f854db5e667585f62fc0b954a11b24da3e4812c74c034a3fedcb3e324f932d",
+    "canonicalId": "PG1-SUP-L-002",
+    "sourceId": 860029,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "6af58c1058974d180ec587874d0bb267a876e32d4457c3fe20f667a939a042e4",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "supply_shift_and_movement",
+        "sourceRecordOrder": 29,
+        "sourceId": 860029,
+        "sourceHash": "6af58c1058974d180ec587874d0bb267a876e32d4457c3fe20f667a939a042e4"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-E-003",
+    "q": "In the displayed taco market, the move from S0 to S1 represents:",
+    "options": [
+      "A decrease in supply",
+      "An increase in quantity supplied caused only by a higher price",
+      "An increase in supply",
+      "A decrease in demand"
+    ],
+    "tag": "supply",
+    "type": "graph",
+    "objective": "LO4.3",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_direction",
+    "secondarySkills": [],
+    "repairSkill": "supply_shift_direction",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "S1 lies below and to the right of S0, showing more quantity supplied at each common price.",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "96b2509cc26208adb30c2bf6dbb007a628a1c259e48e72e079bb40d7a68a0adf",
+    "canonicalId": "PG1-SUP-E-003",
+    "sourceId": 860030,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "a7220935c60a5d438ba9b45236530b09c751f42d8953e299a8a90b78b719ceda",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "supply_shift_direction",
+        "sourceRecordOrder": 30,
+        "sourceId": 860030,
+        "sourceHash": "a7220935c60a5d438ba9b45236530b09c751f42d8953e299a8a90b78b719ceda"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-M-005",
+    "q": "What does the movement from point A to point B on S0 represent?",
+    "options": [
+      "An increase in supply caused by the shift to S1",
+      "A decrease in supply because production costs rose",
+      "A decrease in quantity supplied caused by a lower price",
+      "An increase in quantity supplied caused by a higher price"
+    ],
+    "tag": "supply",
+    "type": "interpretation",
+    "objective": "LO4.3",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "movement_vs_supply_shift",
+    "secondarySkills": [
+      "law_of_supply"
+    ],
+    "repairSkill": "movement_vs_supply_shift",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A and B lie on the same S0 curve. Price rises from $3 to $4 and quantity supplied rises from 100 thousand to 225 thousand, so this is a movement along supply.",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "214c7d92efd9fcfa62c902729807e63ce23361b66cbb1166f6828df4ba99e49f",
+    "canonicalId": "PG1-SUP-M-005",
+    "sourceId": 860031,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "76ceae091ce22e07796ca22c5972f07cee93a70a242d206f74cb2c12160c9329",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "movement_vs_supply_shift",
+        "sourceRecordOrder": 31,
+        "sourceId": 860031,
+        "sourceHash": "76ceae091ce22e07796ca22c5972f07cee93a70a242d206f74cb2c12160c9329"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-M-006",
+    "q": "At a price of $3, the shift from S0 to S1 changes quantity supplied from 100 thousand to approximately:",
+    "options": [
+      "225 thousand",
+      "125 thousand",
+      "200 thousand",
+      "325 thousand"
+    ],
+    "tag": "supply",
+    "type": "calculation",
+    "objective": "LO4.3",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_analysis",
+    "secondarySkills": [
+      "supply_shift_direction"
+    ],
+    "repairSkill": "supply_shift_analysis",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $3, point A on S0 is 100 thousand, while S1 crosses the $3 line at about 225 thousand. Supply therefore increases by about 125 thousand units at that price.",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "7937be9ca1f570a0e06ee6c6f460901f44fa177d541e5e460e1c8d57dd8894df",
+    "canonicalId": "PG1-SUP-M-006",
+    "sourceId": 860032,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "3b22645e7bb049d0f19cf98d52b681bcbc0680b508c6e0b57b0211183216bbfe",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "supply_shift_analysis",
+        "sourceRecordOrder": 32,
+        "sourceId": 860032,
+        "sourceHash": "3b22645e7bb049d0f19cf98d52b681bcbc0680b508c6e0b57b0211183216bbfe"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-H-003",
+    "q": "Which comparison correctly distinguishes the two changes visible in the taco graph?",
+    "options": [
+      "A to B is an increase in supply; S0 to S1 is movement along supply",
+      "A to B is movement along S0; S0 to S1 is an increase in supply",
+      "Both A to B and S0 to S1 are movements caused only by price",
+      "Both changes are decreases in supply"
+    ],
+    "tag": "supply",
+    "type": "analysis",
+    "objective": "LO4.3",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_and_movement",
+    "secondarySkills": [
+      "movement_vs_supply_shift"
+    ],
+    "repairSkill": "supply_shift_and_movement",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A and B are points on one curve, so their difference is quantity supplied. Moving from S0 to S1 shifts the entire curve and changes supply.",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "f15f544f1cb4e79cc8b04c850e46b797fcb77a008d38ebc94c3017cd3f9dcd19",
+    "canonicalId": "PG1-SUP-H-003",
+    "sourceId": 860033,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "5c3aed2c026dc8b06e2e433ae68be8fdf139040be78b3ecb5e892bab256f3fe8",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "supply_shift_and_movement",
+        "sourceRecordOrder": 33,
+        "sourceId": 860033,
+        "sourceHash": "5c3aed2c026dc8b06e2e433ae68be8fdf139040be78b3ecb5e892bab256f3fe8"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-EL-003",
+    "q": "The market begins at point A on S0: $3 and 100 thousand tacos. Supply shifts to S1, and the market price then falls to $2. Approximately what final quantity supplied is shown?",
+    "options": [
+      "0",
+      "225 thousand",
+      "100 thousand",
+      "350 thousand"
+    ],
+    "tag": "supply",
+    "type": "multi-step",
+    "objective": "LO4.3",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_and_movement",
+    "secondarySkills": [
+      "supply_shift_direction"
+    ],
+    "repairSkill": "supply_shift_and_movement",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "After the supply increase, moving down S1 to $2 brings quantity supplied to about 100 thousand. The rightward supply shift and the lower-price movement along S1 offset in this particular comparison.",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "bc7a31d0333518777943affb1a7b8c219c302516a7866865bad6c0b97041d42e",
+    "canonicalId": "PG1-SUP-EL-003",
+    "sourceId": 860034,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "64475d6603cf18ee98d4acfc887e6d9b97b173bab83bb79fe10a8b71de6d7cc9",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "supply_shift_and_movement",
+        "sourceRecordOrder": 34,
+        "sourceId": 860034,
+        "sourceHash": "64475d6603cf18ee98d4acfc887e6d9b97b173bab83bb79fe10a8b71de6d7cc9"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-SUP-L-003",
+    "q": "Start at A on S0: $3 and 100 thousand tacos. At the same $3 price, supply shifts to S1, and then price falls to $2. Which accounting best explains why final quantity supplied returns to about 100 thousand?",
+    "options": [
+      "The supply shift has no effect on quantity, so only the price matters",
+      "The price decline shifts supply left by 125 thousand",
+      "The market moves from A to B before the supply curve shifts",
+      "The shift raises quantity supplied by about 125 thousand to 225 thousand, then the price decline moves down S1 and reduces quantity supplied by about 125 thousand"
+    ],
+    "tag": "supply",
+    "type": "multi-step",
+    "objective": "LO4.3",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "supply_shift_and_movement",
+    "secondarySkills": [
+      "movement_vs_supply_shift",
+      "supply_shift_direction"
+    ],
+    "repairSkill": "supply_shift_and_movement",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $3 the rightward shift moves quantity supplied from 100 to about 225 thousand. The subsequent fall to $2 moves down S1 by about 125 thousand, returning quantity supplied to about 100 thousand.",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "4b0ca3aa1b639a742ab1d43ed1cd774f05f88f7330b7ab83178d06764cdfb7a2",
+    "canonicalId": "PG1-SUP-L-003",
+    "sourceId": 860035,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "supply"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "219dae7beeaa1bc6389069dfe09e7cbd6c3f27d356379bab33a9415b17a1adfb",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "supply_shift_and_movement",
+        "sourceRecordOrder": 35,
+        "sourceId": 860035,
+        "sourceHash": "219dae7beeaa1bc6389069dfe09e7cbd6c3f27d356379bab33a9415b17a1adfb"
+      }
+    ],
+    "primaryConceptId": "supply",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-E-001",
+    "q": "What equilibrium price and quantity are shown in the displayed gas market?",
+    "options": [
+      "$3 per gallon and 150 thousand gallons",
+      "$2 per gallon and 200 thousand gallons",
+      "$4 per gallon and 100 thousand gallons",
+      "$3 per gallon and 300 thousand gallons"
+    ],
+    "tag": "equilibrium",
+    "type": "graph",
+    "objective": "LO4.4",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "equilibrium_identification",
+    "secondarySkills": [],
+    "repairSkill": "equilibrium_identification",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "D0 and S0 intersect at a price of $3 per gallon and a quantity of 150 thousand gallons.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "e2847efd47ed62ef8f9c51f71deba0815d5370bebe67dce84eb68896b6ca3327",
+    "canonicalId": "PG1-EQ-E-001",
+    "sourceId": 860036,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "1c02971b6706f286642560f2d3a1e90c91d0666ed25de7f3764db909899d1412",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "equilibrium_identification",
+        "sourceRecordOrder": 36,
+        "sourceId": 860036,
+        "sourceHash": "1c02971b6706f286642560f2d3a1e90c91d0666ed25de7f3764db909899d1412"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-M-001",
+    "q": "At a price of $2 per gallon in the displayed gas market, what imbalance exists?",
+    "options": [
+      "A surplus of 100 thousand gallons",
+      "A shortage of 100 thousand gallons",
+      "A shortage of 200 thousand gallons",
+      "No shortage or surplus"
+    ],
+    "tag": "equilibrium",
+    "type": "calculation",
+    "objective": "LO4.4",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "shortage_identification",
+    "secondarySkills": [
+      "shortage_price_pressure"
+    ],
+    "repairSkill": "shortage_identification",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand, so the shortage is 100 thousand gallons.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "5f33146b1496b79b6709d7a8f64bdcc10572901d6676e137777700a792aabc03",
+    "canonicalId": "PG1-EQ-M-001",
+    "sourceId": 860037,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "db888cfc9f14286396f3a48274866d3f2c64211d1fed6ae0008dfe2c41a1c344",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "shortage_identification",
+        "sourceRecordOrder": 37,
+        "sourceId": 860037,
+        "sourceHash": "db888cfc9f14286396f3a48274866d3f2c64211d1fed6ae0008dfe2c41a1c344"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-M-002",
+    "q": "At a price of $4 per gallon in the displayed gas market, what imbalance exists?",
+    "options": [
+      "A shortage of 100 thousand gallons",
+      "A surplus of 200 thousand gallons",
+      "A surplus of 100 thousand gallons",
+      "No shortage or surplus"
+    ],
+    "tag": "equilibrium",
+    "type": "calculation",
+    "objective": "LO4.4",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "surplus_identification",
+    "secondarySkills": [
+      "surplus_price_pressure"
+    ],
+    "repairSkill": "surplus_identification",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "At $4, quantity supplied is 200 thousand and quantity demanded is 100 thousand, so the surplus is 100 thousand gallons.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "bb38af8dc623c52df14e1da7783fe063119ad10c2fefa38c7f6bf703375a5b35",
+    "canonicalId": "PG1-EQ-M-002",
+    "sourceId": 860038,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "54388b99d9ee1d7a124b0e7fa2047d8936d35eac944066e5e3469d931ff8a681",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "surplus_identification",
+        "sourceRecordOrder": 38,
+        "sourceId": 860038,
+        "sourceHash": "54388b99d9ee1d7a124b0e7fa2047d8936d35eac944066e5e3469d931ff8a681"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-H-001",
+    "q": "If the gas price is $1 per gallon, the graph shows quantity demanded of 250 thousand and quantity supplied of 50 thousand. What follows in a freely adjusting market?",
+    "options": [
+      "A 200-thousand-gallon surplus creates downward pressure on price",
+      "A 50-thousand-gallon shortage leaves price unchanged",
+      "A 250-thousand-gallon surplus creates upward pressure on price",
+      "A 200-thousand-gallon shortage creates upward pressure on price"
+    ],
+    "tag": "equilibrium",
+    "type": "multi-step",
+    "objective": "LO4.4",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "shortage_price_pressure",
+    "secondarySkills": [
+      "surplus_shortage_calculation"
+    ],
+    "repairSkill": "shortage_price_pressure",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "Quantity demanded exceeds quantity supplied by 200 thousand gallons. A shortage gives buyers an incentive to bid price upward toward equilibrium.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "06d8e30f514e5333df78c72b99d8344a8bd69d7f3aed89e40ea006bcdbf5b18b",
+    "canonicalId": "PG1-EQ-H-001",
+    "sourceId": 860039,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "ae49dd5740758be651295244beaa3fc3641efbe2662afbcea200d4be13f28401",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "shortage_price_pressure",
+        "sourceRecordOrder": 39,
+        "sourceId": 860039,
+        "sourceHash": "ae49dd5740758be651295244beaa3fc3641efbe2662afbcea200d4be13f28401"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-EL-001",
+    "q": "The gas market starts at $2, where the graph shows a 100-thousand-gallon shortage. As price rises to the $3 equilibrium, which pair of quantity changes eliminates that shortage?",
+    "options": [
+      "Quantity demanded falls by 50 thousand and quantity supplied rises by 50 thousand",
+      "Quantity demanded rises by 50 thousand and quantity supplied falls by 50 thousand",
+      "Both quantity demanded and quantity supplied rise by 100 thousand",
+      "Both quantities fall by 50 thousand"
+    ],
+    "tag": "equilibrium",
+    "type": "multi-step",
+    "objective": "LO4.4",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "surplus_shortage_adjustment",
+    "secondarySkills": [
+      "market_change_prediction"
+    ],
+    "repairSkill": "surplus_shortage_adjustment",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "From $2 to $3, quantity demanded falls from 200 to 150 thousand while quantity supplied rises from 100 to 150 thousand. Together those changes eliminate the 100-thousand shortage.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "4b859506ff59bbc4c2b1caadcfd0ca8ef0df4c2fdf3febe8de2b815ccf809e3a",
+    "canonicalId": "PG1-EQ-EL-001",
+    "sourceId": 860040,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "97a81dfb988f1c2cf999e6d09a25661b3d1f71cee47c76b2425f07e767b78fc6",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "surplus_shortage_adjustment",
+        "sourceRecordOrder": 40,
+        "sourceId": 860040,
+        "sourceHash": "97a81dfb988f1c2cf999e6d09a25661b3d1f71cee47c76b2425f07e767b78fc6"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-L-001",
+    "q": "The graph shows a 100-thousand-gallon shortage at $2 and a 100-thousand-gallon surplus at $4. Why can neither price persist in an otherwise competitive market?",
+    "options": [
+      "Equal-sized imbalances cancel even when they occur at different prices",
+      "The shortage pushes price up and the surplus pushes price down, directing the market toward $3",
+      "Both prices produce the same quantity traded, so either is an equilibrium",
+      "Shortages push price down while surpluses push price up"
+    ],
+    "tag": "equilibrium",
+    "type": "analysis",
+    "objective": "LO4.4",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "surplus_shortage_adjustment",
+    "secondarySkills": [
+      "shortage_price_pressure",
+      "surplus_price_pressure"
+    ],
+    "repairSkill": "surplus_shortage_adjustment",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "A shortage creates upward price pressure and a surplus creates downward pressure. Both adjustment forces point toward the $3 equilibrium.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "da429cb202451f2845fa6a78ef380c65c761c4767a18369f2889b3564a47ae94",
+    "canonicalId": "PG1-EQ-L-001",
+    "sourceId": 860041,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "3ab0e9bd889c06169a94f39bbb4ab4ab702f3de68e6abca3494d5a73e078fa06",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "surplus_shortage_adjustment",
+        "sourceRecordOrder": 41,
+        "sourceId": 860041,
+        "sourceHash": "3ab0e9bd889c06169a94f39bbb4ab4ab702f3de68e6abca3494d5a73e078fa06"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-E-002",
+    "q": "Before either curve shifts, what equilibrium is formed by D0 and S0 in the displayed gas market?",
+    "options": [
+      "$4 and 100 thousand units",
+      "$4 and 200 thousand units",
+      "$3 and 150 thousand units",
+      "$5 and 150 thousand units"
+    ],
+    "tag": "equilibrium",
+    "type": "graph",
+    "objective": "LO4.4",
+    "difficulty": "easy",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "equilibrium_identification",
+    "secondarySkills": [],
+    "repairSkill": "equilibrium_identification",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The original curves D0 and S0 intersect at price $3 and quantity 150 thousand.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "9e9170866d31c955f172da30f68c7094fd6818d943f2819e190d09b2e790fee4",
+    "canonicalId": "PG1-EQ-E-002",
+    "sourceId": 860042,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "easy",
+    "sourceHash": "3cbb8d7229aad7afdbae7642021a0b8602a077a6f8b65810d2527a6b57ca5757",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "easy",
+        "routeKey": "equilibrium_identification",
+        "sourceRecordOrder": 42,
+        "sourceId": 860042,
+        "sourceHash": "3cbb8d7229aad7afdbae7642021a0b8602a077a6f8b65810d2527a6b57ca5757"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easy",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-M-003",
+    "q": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+    "options": [
+      "Demand decreases while supply increases",
+      "Both demand and supply increase",
+      "Both demand and supply decrease",
+      "Demand increases while supply decreases"
+    ],
+    "tag": "equilibrium",
+    "type": "interpretation",
+    "objective": "LO4.4",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "simultaneous_shifts",
+    "secondarySkills": [],
+    "repairSkill": "simultaneous_shifts",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "D1 is to the right of D0, indicating increased demand. S1 is to the left of S0, indicating decreased supply.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "ac1c11b6d4224e7d93fd5b3b357436ddc0d100d7177ffc80ff6f16c8cc8a6af3",
+    "canonicalId": "PG1-EQ-M-003",
+    "sourceId": 860043,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "904154877542845c9d995d5808c7023997871705d3a3fc075fe8cc4aebb246c5",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "simultaneous_shifts",
+        "sourceRecordOrder": 43,
+        "sourceId": 860043,
+        "sourceHash": "904154877542845c9d995d5808c7023997871705d3a3fc075fe8cc4aebb246c5"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-M-004",
+    "q": "After both shifts shown in the graph, what equilibrium is formed by D1 and S1?",
+    "options": [
+      "$5 and 150 thousand units",
+      "$3 and 150 thousand units",
+      "$4 and 100 thousand units",
+      "$4 and 200 thousand units"
+    ],
+    "tag": "equilibrium",
+    "type": "graph",
+    "objective": "LO4.4",
+    "difficulty": "medium",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "simultaneous_shift_comparison",
+    "secondarySkills": [],
+    "repairSkill": "simultaneous_shift_comparison",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The new curves D1 and S1 intersect at price $5 and quantity 150 thousand.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "487c3b8cd4ad95d35f8d7c221bd4f1408cee518e56aa36f83cdd43045120bf41",
+    "canonicalId": "PG1-EQ-M-004",
+    "sourceId": 860044,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "5f92b61b7a421fcda99b60ee4f4300f2590d51cfd515ebc8d9f68811de350921",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "simultaneous_shift_comparison",
+        "sourceRecordOrder": 44,
+        "sourceId": 860044,
+        "sourceHash": "5f92b61b7a421fcda99b60ee4f4300f2590d51cfd515ebc8d9f68811de350921"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-H-002",
+    "q": "Starting from D0/S0, suppose demand shifts to D1 while supply remains at S0. What intermediate equilibrium does the graph show?",
+    "options": [
+      "$4 and 100 thousand units",
+      "$4 and 200 thousand units",
+      "$5 and 150 thousand units",
+      "$3 and 150 thousand units"
+    ],
+    "tag": "equilibrium",
+    "type": "multi-step",
+    "objective": "LO4.4",
+    "difficulty": "hard",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "demand_shift_equilibrium_prediction",
+    "secondarySkills": [
+      "market_shift_analysis"
+    ],
+    "repairSkill": "demand_shift_equilibrium_prediction",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "D1 intersects the unchanged S0 curve at price $4 and quantity 200 thousand. A demand increase alone raises both equilibrium price and quantity.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "db0d0c863682cd6ba1bfe7fc0dc9713a1cd5db8b812a9d13bc1fc3c2c213a9bb",
+    "canonicalId": "PG1-EQ-H-002",
+    "sourceId": 860045,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "8ffad913d71118420ec76ce36ac3aa7acb68fa6cc53edd2af6decd752d4eaa58",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "demand_shift_equilibrium_prediction",
+        "sourceRecordOrder": 45,
+        "sourceId": 860045,
+        "sourceHash": "8ffad913d71118420ec76ce36ac3aa7acb68fa6cc53edd2af6decd752d4eaa58"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-EL-002",
+    "q": "Comparing the original D0/S0 equilibrium with the final D1/S1 equilibrium, what happened in this particular graph?",
+    "options": [
+      "Price stayed at $3 while quantity rose by 100 thousand",
+      "Price rose by $1 while quantity fell by 50 thousand",
+      "Price rose by $2 while equilibrium quantity stayed at 150 thousand",
+      "Price fell by $2 while quantity stayed at 150 thousand"
+    ],
+    "tag": "equilibrium",
+    "type": "analysis",
+    "objective": "LO4.4",
+    "difficulty": "elite",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "simultaneous_shift_comparison",
+    "secondarySkills": [
+      "double_shift_ambiguous_quantity"
+    ],
+    "repairSkill": "simultaneous_shift_comparison",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "The original equilibrium is $3 and 150 thousand; the final equilibrium is $5 and 150 thousand. Both shifts push price upward, while their opposing quantity effects exactly offset in this graph.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "b3b1566fd07c05f4ba8d612eb9f9078ece2fac0835ec0a98f586271c2d48b60c",
+    "canonicalId": "PG1-EQ-EL-002",
+    "sourceId": 860046,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "a150313675d8c3fe4813a87b8c95adb18e73cd7b99bf5e330dcfe39d87d4617d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "simultaneous_shift_comparison",
+        "sourceRecordOrder": 46,
+        "sourceId": 860046,
+        "sourceHash": "a150313675d8c3fe4813a87b8c95adb18e73cd7b99bf5e330dcfe39d87d4617d"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null
+  },
+  {
+    "id": "PG1-EQ-L-002",
+    "q": "Begin at D0/S0: $3 and 150 thousand. Demand first increases to D1 with S0 fixed, then supply decreases to S1 with D1 fixed. Which sequence matches the graph?",
+    "options": [
+      "First price falls to $2 and quantity rises; then both return to the original equilibrium",
+      "First price rises to $4 and quantity falls to 100 thousand; then price falls to $3",
+      "First quantity stays fixed at 150 thousand; then price and quantity both fall",
+      "First price and quantity rise to $4 and 200 thousand; then price rises to $5 while quantity falls back to 150 thousand"
+    ],
+    "tag": "equilibrium",
+    "type": "multi-step",
+    "objective": "LO4.4",
+    "difficulty": "legendary",
+    "conceptCluster": "supply_demand",
+    "primarySkill": "simultaneous_shift_sequence",
+    "secondarySkills": [
+      "simultaneous_shifts",
+      "market_shift_analysis"
+    ],
+    "repairSkill": "simultaneous_shift_sequence",
+    "commonError": "misreads_graph_or_confuses_shift_with_movement",
+    "feedback": "D1/S0 intersects at $4 and 200 thousand. Moving from S0 to S1 with D1 fixed then raises price to $5 and lowers quantity to 150 thousand. The final quantity matches the original even though the path does not.",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "eebc3ed56fa7644ac4b8efb84a90a73b3abd9c5fc1040ccb949755a9d3db7aaf",
+    "canonicalId": "PG1-EQ-L-002",
+    "sourceId": 860047,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "market-equilibrium"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "381ff64bfb066e1e3ce955fc4d28e9da08e0e303899eb80cb306e2aaf980fc10",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseGraph1-demand-supply-core-v1",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "simultaneous_shift_sequence",
+        "sourceRecordOrder": 47,
+        "sourceId": 860047,
+        "sourceHash": "381ff64bfb066e1e3ce955fc4d28e9da08e0e303899eb80cb306e2aaf980fc10"
+      }
+    ],
+    "primaryConceptId": "market-equilibrium",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null
+  }
+]

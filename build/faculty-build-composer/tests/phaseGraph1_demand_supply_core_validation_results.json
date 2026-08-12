@@ -1,0 +1,295 @@
+{
+  "phase": "phaseGraph1-demand-supply-core-v1",
+  "composerVersion": "4.5s.2",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1",
+  "librarySha256": "2487136841d524a07bef2a6f497ae6c02abc5093bf12a1f33eb42dcfabaab723",
+  "canonicalQuestionCount": 8025,
+  "assetCount": 404,
+  "newQuestionCount": 48,
+  "graphCounts": {
+    "DEMAND-01": 6,
+    "DEMAND-02": 6,
+    "DEMAND-03": 6,
+    "SUPPLY-01": 6,
+    "SUPPLY-02": 6,
+    "SUPPLY-03": 6,
+    "DEMAND-SUPPLY-01": 6,
+    "DEMAND-SUPPLY-02": 6
+  },
+  "posCounts": {
+    "0": 12,
+    "1": 12,
+    "2": 12,
+    "3": 12
+  },
+  "issues": [],
+  "cases": [
+    {
+      "name": "Demand",
+      "ids": [
+        "demand"
+      ],
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true
+      },
+      "assetAudit": {
+        "assetCount": 4,
+        "issues": []
+      },
+      "counts": {
+        "easy": 11,
+        "medium": 12,
+        "hard": 10,
+        "elite": 7,
+        "legendary": 9,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 6,
+        "calculation": 0,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 22,
+        "assets": 4,
+        "totalCanonical": 71
+      }
+    },
+    {
+      "name": "Supply",
+      "ids": [
+        "supply"
+      ],
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true
+      },
+      "assetAudit": {
+        "assetCount": 4,
+        "issues": []
+      },
+      "counts": {
+        "easy": 9,
+        "medium": 12,
+        "hard": 9,
+        "elite": 7,
+        "legendary": 9,
+        "easyBoss": 3,
+        "mediumBoss": 3,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 4,
+        "repairSeed": 0,
+        "bridge": 4,
+        "calculation": 0,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 20,
+        "assets": 4,
+        "totalCanonical": 66
+      }
+    },
+    {
+      "name": "Market Equilibrium",
+      "ids": [
+        "market-equilibrium"
+      ],
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true
+      },
+      "assetAudit": {
+        "assetCount": 4,
+        "issues": []
+      },
+      "counts": {
+        "easy": 8,
+        "medium": 18,
+        "hard": 17,
+        "elite": 6,
+        "legendary": 17,
+        "easyBoss": 3,
+        "mediumBoss": 6,
+        "finalBoss": 3,
+        "legendaryBoss": 3,
+        "repair": 3,
+        "repairSeed": 0,
+        "bridge": 4,
+        "calculation": 4,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 29,
+        "assets": 4,
+        "totalCanonical": 88
+      }
+    },
+    {
+      "name": "Phase Graph 1",
+      "ids": [
+        "demand",
+        "supply",
+        "market-equilibrium"
+      ],
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true
+      },
+      "assetAudit": {
+        "assetCount": 12,
+        "issues": []
+      },
+      "counts": {
+        "easy": 28,
+        "medium": 42,
+        "hard": 36,
+        "elite": 20,
+        "legendary": 35,
+        "easyBoss": 9,
+        "mediumBoss": 12,
+        "finalBoss": 9,
+        "legendaryBoss": 9,
+        "repair": 11,
+        "repairSeed": 0,
+        "bridge": 14,
+        "calculation": 4,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 71,
+        "assets": 12,
+        "totalCanonical": 225
+      }
+    },
+    {
+      "name": "Market Foundations",
+      "ids": [
+        "competitive-markets",
+        "demand",
+        "supply",
+        "market-equilibrium",
+        "price-signals",
+        "elasticity",
+        "consumer-and-producer-surplus"
+      ],
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true
+      },
+      "assetAudit": {
+        "assetCount": 28,
+        "issues": []
+      },
+      "counts": {
+        "easy": 152,
+        "medium": 154,
+        "hard": 182,
+        "elite": 92,
+        "legendary": 228,
+        "easyBoss": 50,
+        "mediumBoss": 56,
+        "finalBoss": 50,
+        "legendaryBoss": 81,
+        "repair": 79,
+        "repairSeed": 2,
+        "bridge": 90,
+        "calculation": 64,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 183,
+        "assets": 28,
+        "totalCanonical": 1216
+      }
+    },
+    {
+      "name": "Principles Micro Core",
+      "ids": [
+        "competitive-markets",
+        "demand",
+        "supply",
+        "market-equilibrium",
+        "price-signals",
+        "elasticity",
+        "consumer-and-producer-surplus",
+        "international-trade-and-trade-policy",
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "monopolistic-competition",
+        "oligopoly"
+      ],
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "failedModes": [],
+      "answerAudit": {
+        "ok": true
+      },
+      "assetAudit": {
+        "assetCount": 365,
+        "issues": []
+      },
+      "counts": {
+        "easy": 534,
+        "medium": 549,
+        "hard": 677,
+        "elite": 323,
+        "legendary": 807,
+        "easyBoss": 166,
+        "mediumBoss": 171,
+        "finalBoss": 168,
+        "legendaryBoss": 297,
+        "repair": 297,
+        "repairSeed": 2,
+        "bridge": 313,
+        "calculation": 244,
+        "integration": 0,
+        "challengeOpening": 0,
+        "challengeMiddle": 0,
+        "challengeFinal": 0,
+        "challengeLegendary": 0,
+        "challengeTotal": 0,
+        "graph": 739,
+        "assets": 365,
+        "totalCanonical": 4304
+      }
+    }
+  ],
+  "ok": true
+}
