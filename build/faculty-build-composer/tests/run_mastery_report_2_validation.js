@@ -42,7 +42,7 @@ function simulateManualEnd(mode){
 }
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`version ${core.COMPOSER_VERSION}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical ${library.canonicalQuestionCount}`);
   const tiny=evidence({attempts:2,accuracy:1,byDifficulty:{easy:{attempts:2}},overall:false});
   const developing=evidence({attempts:7,accuracy:.86,byDifficulty:{easy:{attempts:4},medium:{attempts:3}},recentAccuracy:.86,overall:true});

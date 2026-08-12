@@ -1,15 +1,15 @@
 {
-  "phase": "mode8-trial-by-graph-v1",
-  "ok": false,
+  "phase": "mode9-fading-fortune-v1",
+  "ok": true,
   "composerVersion": "4.5s.2m",
   "canonicalQuestionCount": 8163,
-  "auditedIds": 612,
-  "graphRequiredFlagged": 602,
-  "examples": {
-    "perfectCompetition": 76,
-    "demand": 18,
-    "aggregateDemand": 12,
-    "bankMoneyCreation": 0
+  "perfectCompetitionEligible": 383,
+  "byDifficulty": {
+    "easy": 76,
+    "medium": 78,
+    "hard": 85,
+    "elite": 44,
+    "legendary": 100
   },
   "supportedTargets": {
     "perfectCompetition": [
@@ -17,15 +17,15 @@
       15,
       20
     ],
-    "demand": [
+    "integratedEconomicAnalysis": [
+      10
+    ],
+    "competitiveMarkets": [
       10,
       15
-    ],
-    "aggregateDemand": [
-      10
     ]
   },
-  "allEightModes": [
+  "allNineModes": [
     {
       "mode": "standard",
       "ok": true
@@ -67,10 +67,21 @@
       "ok": true
     }
   ],
-  "issues": [
-    "composer version 4.5s.2m",
-    "mode order [\"standard\",\"timed\",\"exam\",\"quiz\",\"unlimited\",\"legendary\",\"score\",\"trialGraph\",\"fadingFortune\",\"riskReward\"]",
-    "missing noRemediation",
-    "missing noBosses"
-  ]
+  "sourceChecks": {
+    "card": true,
+    "setup": true,
+    "hud": true,
+    "decay": true,
+    "correctProtected": true,
+    "answerFreeze": true,
+    "graphPause": true,
+    "visibilityPause": true,
+    "modalPause": true,
+    "rapidPause": true,
+    "noRemediation": true,
+    "fixedCompletion": true,
+    "report": true,
+    "telemetry": true
+  },
+  "issues": []
 }

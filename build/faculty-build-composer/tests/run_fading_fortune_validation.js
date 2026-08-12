@@ -28,8 +28,8 @@ function runtimeDeckCheck(composition,target){
 }
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`composer version ${core.COMPOSER_VERSION}`);
-  if(core.MODE_ORDER.length!==9 || core.MODE_ORDER[8]!=='fadingFortune') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
   const allNine=core.compose(library,recipe('perfect-competition',[...core.MODE_ORDER]));
@@ -73,7 +73,7 @@ function runtimeDeckCheck(composition,target){
     visibilityPause:template.includes('pauseFadingFortune("visibility")')&&template.includes('resumeFadingFortune("visibility")'),
     modalPause:template.includes('pauseFadingFortune("game-modal")')&&template.includes('resumeFadingFortune("game-modal")'),
     rapidPause:template.includes('pauseFadingFortune("rapid-guess")')&&template.includes("resumeFadingFortune('rapid-guess')"),
-    noRemediation:template.includes('gameMode !== "fadingFortune" && currentQuestion.tag'),
+    noRemediation:template.includes('gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag'),
     fixedCompletion:template.includes('fadingFortuneQuestionsCompleted >= fadingFortuneQuestionTarget'),
     report:template.includes('Independence Under Pressure')&&template.includes('getFadingFortuneAverageValue()'),
     telemetry:template.includes('"fadingFortuneQuestionValue"')&&template.includes('"fadingFortunePausedDurationMs"')&&template.includes('"fadingFortuneDistribution"')
@@ -81,7 +81,7 @@ function runtimeDeckCheck(composition,target){
   Object.entries(sourceChecks).forEach(([k,v])=>{if(!v) issues.push(`missing ${k}`);});
 
   const result={phase:'mode9-fading-fortune-v1',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,perfectCompetitionEligible:allNine.counts.fadingFortuneEligible,byDifficulty:allNine.counts.fadingFortuneByDifficulty,supportedTargets:{perfectCompetition:pcRuntime.supported,integratedEconomicAnalysis:twelveRun.supported,competitiveMarkets:seventeenRun.supported},allNineModes:allNine.validation.modes.map(m=>({mode:m.mode,ok:m.ok})),sourceChecks,issues};
-  fs.writeFileSync(path.join(root,'fading_fortune_validation_results_4.5s.2l.json'),JSON.stringify(result,null,2));
+  fs.writeFileSync(path.join(root,'fading_fortune_validation_results_4.5s.2m.json'),JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();

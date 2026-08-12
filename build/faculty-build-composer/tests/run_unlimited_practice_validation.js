@@ -70,9 +70,9 @@ function simulateManualPracticeEnd(mode){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
-  if(core.MODE_ORDER.length!==9) issues.push(`mode count ${core.MODE_ORDER.length}`);
+  if(core.MODE_ORDER.length!==10) issues.push(`mode count ${core.MODE_ORDER.length}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
 
   const recipe={
@@ -103,7 +103,7 @@ function simulateManualPracticeEnd(mode){
     confirmFlow: html.includes('confirmText: "Generate Mastery Report"'),
     directReport: html.includes('handlePracticeModeComplete({endedByStudent:true, reportDestination:"mastery"})'),
     cycleRollover: html.includes('if(gameMode === "unlimited" && room > 30)') && html.includes('unlimitedPracticeCycle++'),
-    noUnlimitedBosses: html.includes('gameMode === "fadingFortune" || gameMode === "unlimited"') && html.includes('gameMode !== "unlimited"'),
+    noUnlimitedBosses: /function isBossRoomForMode\(r\)\{[^}]*gameMode === "unlimited"[^}]*return false;/.test(html) && html.includes('gameMode !== "unlimited"'),
     examEarlyCompletionGuard: html.includes('if(gameMode === "exam" && !endedByStudent)'),
     manualTelemetry: html.includes('`${gameMode}_ended_by_student`'),
     masteryLabel: html.includes('if(gameMode === "unlimited") return "Unlimited Practice";'),

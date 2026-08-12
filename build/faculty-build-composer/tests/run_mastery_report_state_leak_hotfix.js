@@ -15,11 +15,11 @@ function extractFunction(src,name){
 }
 
 const issues=[];
-if(core.COMPOSER_VERSION!=='4.5s.2l') issues.push(`version ${core.COMPOSER_VERSION}`);
+if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`version ${core.COMPOSER_VERSION}`);
 if(!template.includes('<div id="question"></div>')) issues.push('question container is not block-safe');
 if(template.includes('<p id="question"></p>')) issues.push('legacy paragraph question container remains');
 if(!/function startGame\(shouldResume = false\)[\s\S]{0,420}restoreGameplayShell\(true\)/.test(template)) issues.push('new runs do not force pristine shell restoration');
-if(!/function returnToModeSelectFromRun\(\)[\s\S]{0,900}latestResultsScreenHTML = "";/.test(template)) issues.push('mode return does not clear cached results');
+if(!/latestResultsScreenHTML = "";/.test(extractFunction(template,'returnToModeSelectFromRun'))) issues.push('mode return does not clear cached results');
 
 const restoreFn=extractFunction(template,'restoreGameplayShell');
 const requiredMatch=template.match(/const REQUIRED_GAMEPLAY_IDS = \[([\s\S]*?)\];/);

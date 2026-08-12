@@ -3,11 +3,24 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5s.2l
+Current composer version: 4.5s.2m
 Canonical questions: 8,163
 Selectable concepts/family slices: 126
 Question assets: 427
 
+
+
+Latest upgrade — Mode 10: Risk & Reward
+- Adds Risk & Reward as the tenth game mode.
+- Every run starts with a 1,000-point bankroll. Learners wager 10%, 25%, 50%, or ALL IN before the next question is revealed.
+- Questions, graphs, hints, answer choices, and difficulty information remain hidden until the wager is locked.
+- Payout is deliberately simple: correct answers add the wager 1:1; incorrect answers subtract it 1:1. Wagers use integer points with a one-point minimum.
+- An ALL IN loss to zero ends the run immediately as a legitimate bust outcome; accumulated mastery evidence remains available in Mastery Report 2.0.
+- Learners can choose 10, 15, or 20 questions when the selected concept mix has enough unique ordinary practice inventory.
+- Mastery Report 2.0 adds a Risk & Confidence section showing wager distribution, wager-tier accuracy, peak/final bankroll, largest wager, and All-In attempts while keeping mastery judgments separate from risk behavior.
+- Telemetry records bankroll before/after, wager amount/ratio/tier, All-In status, run outcome, peak bankroll, and wager distribution.
+- No bosses, artifacts, checkpoints, Repair/Bridge detours, setbacks, realm progress, or save/resume are used in this mode.
+- The Composer now exposes and validates all ten game modes.
 
 Latest upgrade — Mode 9: Fading Fortune
 - Adds Fading Fortune as the ninth game mode.

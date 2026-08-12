@@ -1,6 +1,6 @@
 {
   "phase": "mode8-trial-by-graph-v1",
-  "ok": false,
+  "ok": true,
   "composerVersion": "4.5s.2m",
   "canonicalQuestionCount": 8163,
   "auditedIds": 612,
@@ -67,10 +67,5 @@
       "ok": true
     }
   ],
-  "issues": [
-    "composer version 4.5s.2m",
-    "mode order [\"standard\",\"timed\",\"exam\",\"quiz\",\"unlimited\",\"legendary\",\"score\",\"trialGraph\",\"fadingFortune\",\"riskReward\"]",
-    "missing noRemediation",
-    "missing noBosses"
-  ]
+  "issues": []
 }

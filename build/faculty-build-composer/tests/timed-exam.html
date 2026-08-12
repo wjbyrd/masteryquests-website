@@ -2193,6 +2193,36 @@ Every pixel matters.
 }
 
 /* =========================================
+   RISK & REWARD MODE — BANKROLL + WAGER PANEL
+========================================= */
+.risk-reward-hud{
+  margin:8px auto 10px;
+  padding:8px 14px;
+  width:fit-content;
+  max-width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  border-radius:999px;
+  background:linear-gradient(180deg, rgba(11,34,56,0.88), rgba(2,6,23,0.96));
+  border:1px solid rgba(247,217,130,0.50);
+  box-shadow:0 0 16px rgba(56,189,248,0.24), 0 0 26px rgba(247,217,130,0.18), inset 0 0 12px rgba(0,0,0,0.74);
+}
+.risk-reward-label{font-size:11px;letter-spacing:1.7px;text-transform:uppercase;color:#c7ecff;}
+.risk-reward-value{min-width:64px;text-align:right;font-size:23px;font-weight:900;color:#f7d982;text-shadow:0 0 12px rgba(247,217,130,0.70),0 0 18px rgba(56,189,248,0.24);}
+.risk-wager-panel{padding:18px;margin:10px auto;max-width:620px;border-radius:16px;border:1px solid rgba(247,217,130,.38);background:radial-gradient(circle at top,rgba(56,189,248,.12),rgba(2,6,23,.94));box-shadow:0 0 24px rgba(0,0,0,.62),inset 0 0 20px rgba(0,0,0,.48);}
+.risk-wager-kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c7ecff;margin-bottom:6px;}
+.risk-wager-bankroll{font-size:38px;font-weight:900;color:#f7d982;margin:4px 0 8px;text-shadow:0 0 16px rgba(247,217,130,.42);}
+.risk-wager-copy{color:#e0f2fe;line-height:1.45;margin:0;}
+.risk-wager-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px;}
+.risk-wager-buttons button{margin:0;min-height:64px;font-weight:800;}
+.risk-wager-buttons button strong{display:block;color:#f7d982;font-size:19px;margin-top:4px;}
+.risk-wager-buttons .all-in{border-color:rgba(248,113,113,.62);box-shadow:0 0 18px rgba(248,113,113,.16),inset 0 0 12px rgba(0,0,0,.72);}
+@media(max-width:768px){.risk-reward-hud{margin:6px auto;padding:6px 10px;gap:7px}.risk-reward-label{font-size:9px;letter-spacing:1.2px}.risk-reward-value{min-width:48px;font-size:18px}.risk-wager-buttons{grid-template-columns:1fr 1fr}.risk-wager-bankroll{font-size:30px}}
+
+/* =========================================
    14. SOUND ON/OFF — BLANK MASTERY QUEST
 ========================================= */
 
@@ -2886,6 +2916,12 @@ Respect structure strictly.
   <span class="mode-card-text">Answer early for full value or wait as wrong choices disappear. Each fade costs 25 points.</span>
 </button>
 
+<button class="mode-card" data-mode="riskReward" onclick="startSelectedMode('riskReward')" aria-label="Risk and Reward. Choose how much of your bankroll to risk before seeing each question. Correct answers win the wager. Wrong answers lose it.">
+  <div class="mode-symbol" aria-hidden="true">♠</div>
+  <span class="mode-card-title">Risk &amp; Reward</span>
+  <span class="mode-card-text">Risk 10%, 25%, 50%, or go All In before the question is revealed. Correct wins the wager. Wrong loses it.</span>
+</button>
+
     </div>
 
     <button class="mode-back-btn" onclick="returnToTitleScreen()">BACK</button>
@@ -2956,6 +2992,23 @@ Respect structure strictly.
     <div class="quiz-setup-actions">
       <button id="fadingFortuneLaunchButton" class="continue-btn" onclick="launchFadingFortuneFromSetup()">Launch Fading Fortune</button>
       <button class="continue-btn secondary-modal-btn" onclick="closeFadingFortuneSetup()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div id="riskRewardSetupModal" class="quiz-setup-modal" role="dialog" aria-modal="true" aria-labelledby="riskRewardSetupTitle" style="display:none;">
+  <div class="quiz-setup-card">
+    <h2 id="riskRewardSetupTitle" class="quiz-setup-title">Risk &amp; Reward</h2>
+    <p class="quiz-setup-text">Start with 1,000 points. Before each question appears, risk 10%, 25%, 50%, or your entire bankroll.</p>
+    <div class="quiz-quick-counts" aria-label="Risk and Reward run lengths">
+      <button type="button" data-risk-reward-count="10" onclick="setRiskRewardQuestionCount(10)">10</button>
+      <button type="button" data-risk-reward-count="15" onclick="setRiskRewardQuestionCount(15)">15</button>
+      <button type="button" data-risk-reward-count="20" onclick="setRiskRewardQuestionCount(20)">20</button>
+    </div>
+    <p id="riskRewardInventoryNote" class="quiz-setup-text"></p>
+    <div class="quiz-setup-actions">
+      <button id="riskRewardLaunchButton" class="continue-btn" onclick="launchRiskRewardFromSetup()">Launch Risk &amp; Reward</button>
+      <button class="continue-btn secondary-modal-btn" onclick="closeRiskRewardSetup()">Cancel</button>
     </div>
   </div>
 </div>
@@ -3048,6 +3101,13 @@ DO NOT REMOVE:
                 <span id="fadingFortuneValueDisplay" class="fading-fortune-value">100</span>
                 <span class="fading-fortune-label">Score</span>
                 <span id="fadingFortuneScoreDisplay" class="fading-fortune-value">0</span>
+            </div>
+
+            <div id="riskRewardHud" class="risk-reward-hud" style="display:none;" aria-live="polite">
+                <span class="risk-reward-label">Bankroll</span>
+                <span id="riskRewardBankrollDisplay" class="risk-reward-value">1000</span>
+                <span class="risk-reward-label">At Risk</span>
+                <span id="riskRewardWagerDisplay" class="risk-reward-value">0</span>
             </div>
 
             <div id="streakDisplay"></div>
@@ -3334,8 +3394,8 @@ const FACULTY_COMPOSITION_CONFIG = {
         "finalCheckpoint": null
     },
     "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1",
-    "templateVersion": "phase4.5s.2l-fading-fortune",
-    "composerVersion": "4.5s.2l",
+    "templateVersion": "phase4.5s.2m-risk-reward",
+    "composerVersion": "4.5s.2m",
     "compositionId": "mode-test-timed-exam",
     "fadingFortune": {
         "enabled": false,
@@ -3352,10 +3412,37 @@ const FACULTY_COMPOSITION_CONFIG = {
             "legendary": 18000
         }
     },
-    "saveKeyNamespace": "mq-econ:mode-test-timed-exam:973f5e65f5fe",
+    "riskReward": {
+        "enabled": false,
+        "startingBankroll": 1000,
+        "wagerOptions": [
+            {
+                "label": "10%",
+                "ratio": 0.1
+            },
+            {
+                "label": "25%",
+                "ratio": 0.25
+            },
+            {
+                "label": "50%",
+                "ratio": 0.5
+            },
+            {
+                "label": "ALL IN",
+                "ratio": 1
+            }
+        ],
+        "allowedTargets": [
+            10,
+            15,
+            20
+        ]
+    },
+    "saveKeyNamespace": "mq-econ:mode-test-timed-exam:e6532cddf031",
     "librarySha256": "63424e0425bb8d0ab38842d0d7951514d08c64be5f3dd6bb8718f91ada32b66b",
-    "templateSha256": "4cff3a7f92b319c0d3c2bb51ebb57947d9f19afbe41ca4dd556f8027b9a0617b",
-    "compositionFingerprint": "973f5e65f5fe8c3a472e0b3add10c81c3dbf81b2b00c0742e6e0a377a3b524cc"
+    "templateSha256": "0c7c5546f841162a08cae5328f54d4907d0be4b243c45be330a0ee732fa361e4",
+    "compositionFingerprint": "e6532cddf03187a0c3956a8ffad455ff14a6196827e35c43f6d4e7b75deffb8f"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3529,6 +3616,31 @@ let fadingFortuneQuestionFrozen = false;
 let fadingFortuneDistribution = {100:0,75:0,50:0,25:0};
 let fadingFortuneCorrectByValue = {100:0,75:0,50:0,25:0};
 let fadingFortuneEvents = [];
+const RISK_REWARD_ALLOWED_TARGETS = [10, 15, 20];
+const RISK_REWARD_STARTING_BANKROLL = Math.max(1, Math.round(Number(FACULTY_COMPOSITION_CONFIG.riskReward?.startingBankroll) || 1000));
+const RISK_REWARD_WAGER_OPTIONS = Array.isArray(FACULTY_COMPOSITION_CONFIG.riskReward?.wagerOptions) && FACULTY_COMPOSITION_CONFIG.riskReward.wagerOptions.length
+    ? FACULTY_COMPOSITION_CONFIG.riskReward.wagerOptions
+    : [{label:'10%',ratio:0.10},{label:'25%',ratio:0.25},{label:'50%',ratio:0.50},{label:'ALL IN',ratio:1.00}];
+let riskRewardQuestionTarget = 10;
+let riskRewardQuestionsCompleted = 0;
+let riskRewardDeck = [];
+let riskRewardDeckIndex = 0;
+let riskRewardBankroll = RISK_REWARD_STARTING_BANKROLL;
+let riskRewardPeakBankroll = RISK_REWARD_STARTING_BANKROLL;
+let riskRewardLowestBankroll = RISK_REWARD_STARTING_BANKROLL;
+let riskRewardCurrentWager = 0;
+let riskRewardCurrentWagerRatio = 0;
+let riskRewardBankrollBeforeWager = RISK_REWARD_STARTING_BANKROLL;
+let riskRewardWagerLocked = false;
+let riskRewardWagerSettled = false;
+let riskRewardQuestionRevealed = false;
+let riskRewardBusted = false;
+let riskRewardLargestWager = 0;
+let riskRewardAllInAttempts = 0;
+let riskRewardWagerCounts = {'10%':0,'25%':0,'50%':0,'ALL IN':0};
+let riskRewardCorrectByTier = {'10%':0,'25%':0,'50%':0,'ALL IN':0};
+let riskRewardAttemptsByTier = {'10%':0,'25%':0,'50%':0,'ALL IN':0};
+let riskRewardEvents = [];
 let unlimitedPracticeCycle = 1;
 
 // =============================================
@@ -3759,7 +3871,7 @@ window.addEventListener("pageshow", reconcileTimedModeClock);
 window.addEventListener("focus", reconcileTimedModeClock);
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
-function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
+function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
     if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
     if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
@@ -3767,6 +3879,7 @@ function getModeDisplayName(){
     if(gameMode === "quiz") return "Quiz";
     if(gameMode === "trialGraph") return "Trial by Graph";
     if(gameMode === "fadingFortune") return "Fading Fortune";
+    if(gameMode === "riskReward") return "Risk & Reward";
     if(gameMode === "unlimited") return "Unlimited Practice";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -5698,12 +5811,281 @@ function getFadingFortuneReportData(){
     };
 }
 
+function modeUsesRiskReward(){ return gameMode === 'riskReward'; }
+
+function getRiskRewardCandidates(){
+    const allowedIds = new Set(Array.isArray(riskRewardQuestionIds) ? riskRewardQuestionIds.map(String) : []);
+    return ['easy','medium','hard','elite','legendary'].flatMap(pool =>
+        (questionBanks?.[pool] || [])
+            .filter(question => allowedIds.has(String(question?.id ?? question?.questionId ?? '')))
+            .map(question => ({...question, __mqDifficulty: pool}))
+    );
+}
+
+function getRiskRewardSupportedTargets(){
+    const available = getRiskRewardCandidates().length;
+    return RISK_REWARD_ALLOWED_TARGETS.filter(target => available >= target);
+}
+
+function normalizeRiskRewardQuestionTarget(value){
+    const supported = getRiskRewardSupportedTargets();
+    if(!supported.length) return 10;
+    const numeric = Math.round(Number(value));
+    return supported.includes(numeric) ? numeric : supported[0];
+}
+
+function updateRiskRewardCountControls(){
+    const supported = new Set(getRiskRewardSupportedTargets());
+    document.querySelectorAll('[data-risk-reward-count]').forEach(button => {
+        const value = Number(button.dataset.riskRewardCount);
+        const enabled = supported.has(value);
+        const selected = value === riskRewardQuestionTarget;
+        button.disabled = !enabled;
+        button.hidden = !enabled;
+        button.classList.toggle('selected', selected);
+        button.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    });
+    const note = document.getElementById('riskRewardInventoryNote');
+    if(note){
+        const available = getRiskRewardCandidates().length;
+        note.textContent = `${available} eligible practice question${available === 1 ? '' : 's'} available in this build.`;
+    }
+    const launch = document.getElementById('riskRewardLaunchButton');
+    if(launch) launch.disabled = supported.size === 0;
+}
+
+function setRiskRewardQuestionCount(value){
+    riskRewardQuestionTarget = normalizeRiskRewardQuestionTarget(value);
+    updateRiskRewardCountControls();
+}
+
+function buildRiskRewardDeck(target){
+    const byDifficulty = Object.fromEntries(['easy','medium','hard','elite','legendary'].map(pool => [pool, []]));
+    getRiskRewardCandidates().forEach(question => byDifficulty[question.__mqDifficulty]?.push(question));
+    Object.keys(byDifficulty).forEach(pool => byDifficulty[pool] = shuffle(byDifficulty[pool]));
+    const quotaMap = {
+        10: {easy:3, medium:3, hard:2, elite:1, legendary:1},
+        15: {easy:4, medium:4, hard:3, elite:2, legendary:2},
+        20: {easy:5, medium:5, hard:4, elite:3, legendary:3}
+    };
+    const quotas = quotaMap[target] || quotaMap[10];
+    const selected = [];
+    const used = new Set();
+    for(const pool of ['easy','medium','hard','elite','legendary']){
+        for(const question of byDifficulty[pool].slice(0, quotas[pool] || 0)){
+            const id = String(question.id ?? question.questionId ?? '');
+            if(!id || used.has(id)) continue;
+            used.add(id); selected.push(question);
+        }
+    }
+    if(selected.length < target){
+        const remaining = ['easy','medium','hard','elite','legendary'].flatMap(pool => byDifficulty[pool])
+            .filter(question => !used.has(String(question.id ?? question.questionId ?? '')));
+        for(const question of shuffle(remaining)){
+            if(selected.length >= target) break;
+            const id = String(question.id ?? question.questionId ?? '');
+            if(!id || used.has(id)) continue;
+            used.add(id); selected.push(question);
+        }
+    }
+    const order = {easy:0, medium:1, hard:2, elite:3, legendary:4};
+    return selected.slice(0,target).sort((a,b) => order[a.__mqDifficulty] - order[b.__mqDifficulty] || Math.random() - 0.5);
+}
+
+function openRiskRewardSetup(){
+    if(!isFacultyModeSupported('riskReward')){ alert('Risk & Reward is not enabled for this game.'); return; }
+    const preflight = validateFacultyMode('riskReward');
+    if(!preflight.ok){ showFacultyPreflightFailure('riskReward', preflight.issues); return; }
+    const supported = getRiskRewardSupportedTargets();
+    const saved = Number(localStorage.getItem(`${STORAGE_PREFIX}:riskReward:questionCount`));
+    riskRewardQuestionTarget = supported.includes(saved) ? saved : supported[0];
+    updateRiskRewardCountControls();
+    const modal = document.getElementById('riskRewardSetupModal');
+    if(modal) modal.style.display = 'flex';
+}
+
+function closeRiskRewardSetup(){
+    const modal = document.getElementById('riskRewardSetupModal');
+    if(modal) modal.style.display = 'none';
+}
+
+function launchRiskRewardFromSetup(){
+    riskRewardQuestionTarget = normalizeRiskRewardQuestionTarget(riskRewardQuestionTarget);
+    riskRewardQuestionsCompleted = 0;
+    riskRewardDeckIndex = 0;
+    riskRewardDeck = buildRiskRewardDeck(riskRewardQuestionTarget);
+    if(riskRewardDeck.length < riskRewardQuestionTarget){
+        showFacultyPreflightFailure('riskReward', [{pool:'riskRewardEligible',id:'—',issue:`Needs ${riskRewardQuestionTarget}; found ${riskRewardDeck.length}`}]);
+        return;
+    }
+    localStorage.setItem(`${STORAGE_PREFIX}:riskReward:questionCount`, String(riskRewardQuestionTarget));
+    closeRiskRewardSetup();
+    startSelectedMode('riskReward', {riskRewardConfirmed:true});
+}
+
+function resetRiskRewardQuestionState(){
+    riskRewardCurrentWager = 0;
+    riskRewardCurrentWagerRatio = 0;
+    riskRewardBankrollBeforeWager = riskRewardBankroll;
+    riskRewardWagerLocked = false;
+    riskRewardWagerSettled = false;
+    riskRewardQuestionRevealed = false;
+    updateRiskRewardHud();
+}
+
+function resetRiskRewardRunState(){
+    riskRewardQuestionsCompleted = 0;
+    riskRewardDeckIndex = 0;
+    riskRewardBankroll = RISK_REWARD_STARTING_BANKROLL;
+    riskRewardPeakBankroll = RISK_REWARD_STARTING_BANKROLL;
+    riskRewardLowestBankroll = RISK_REWARD_STARTING_BANKROLL;
+    riskRewardLargestWager = 0;
+    riskRewardAllInAttempts = 0;
+    riskRewardBusted = false;
+    riskRewardWagerCounts = {'10%':0,'25%':0,'50%':0,'ALL IN':0};
+    riskRewardCorrectByTier = {'10%':0,'25%':0,'50%':0,'ALL IN':0};
+    riskRewardAttemptsByTier = {'10%':0,'25%':0,'50%':0,'ALL IN':0};
+    riskRewardEvents = [];
+    resetRiskRewardQuestionState();
+}
+
+function updateRiskRewardHud(){
+    const hud = document.getElementById('riskRewardHud');
+    if(!hud) return;
+    hud.style.display = modeUsesRiskReward() && !runEnding ? 'flex' : 'none';
+    const bankroll = document.getElementById('riskRewardBankrollDisplay');
+    const wager = document.getElementById('riskRewardWagerDisplay');
+    if(bankroll) bankroll.textContent = String(riskRewardBankroll);
+    if(wager) wager.textContent = String(riskRewardCurrentWager || 0);
+}
+
+function riskRewardTierLabel(ratio){
+    if(ratio >= 0.999) return 'ALL IN';
+    if(ratio >= 0.49) return '50%';
+    if(ratio >= 0.24) return '25%';
+    return '10%';
+}
+
+function calculateRiskRewardWager(ratio){
+    const cleanRatio = Math.min(1, Math.max(0.01, Number(ratio) || 0.10));
+    if(cleanRatio >= 0.999) return riskRewardBankroll;
+    return Math.min(riskRewardBankroll, Math.max(1, Math.round(riskRewardBankroll * cleanRatio)));
+}
+
+function showRiskRewardWagerPrompt(){
+    if(!modeUsesRiskReward() || runEnding || !currentQuestion) return;
+    resetRiskRewardQuestionState();
+    const imageBox = document.getElementById('questionImageBox');
+    if(imageBox){ imageBox.innerHTML=''; imageBox.style.display='none'; }
+    closeGraphLightbox();
+    document.getElementById('formulaHint').innerText = '';
+    document.getElementById('message').innerText = '';
+    document.getElementById('bossMessage').innerText = '';
+    const q = document.getElementById('question');
+    if(q) q.innerHTML = `<div class="risk-wager-panel"><div class="risk-wager-kicker">Choose your risk before the question is revealed</div><div class="risk-wager-bankroll">${riskRewardBankroll} points</div><p class="risk-wager-copy">Correct wins the wager. Wrong loses it. The next question stays hidden until your wager is locked.</p></div>`;
+    const answers = document.getElementById('answers');
+    if(!answers) return;
+    answers.innerHTML = '<div class="risk-wager-buttons" id="riskRewardWagerButtons"></div>';
+    const wrap = document.getElementById('riskRewardWagerButtons');
+    RISK_REWARD_WAGER_OPTIONS.forEach(option => {
+        const ratio = Math.min(1, Math.max(0.01, Number(option.ratio) || 0.10));
+        const amount = calculateRiskRewardWager(ratio);
+        const button = document.createElement('button');
+        button.type='button';
+        button.className = ratio >= 0.999 ? 'all-in' : '';
+        button.innerHTML = `${escapeHTML(option.label || riskRewardTierLabel(ratio))}<strong>${amount} points</strong>`;
+        button.setAttribute('aria-label', `${option.label || riskRewardTierLabel(ratio)} wager, ${amount} points`);
+        button.onclick = () => lockRiskRewardWager(ratio);
+        wrap.appendChild(button);
+    });
+    document.getElementById('srAnnouncements').innerText = `Risk and Reward. Question ${Math.min(riskRewardQuestionsCompleted+1,riskRewardQuestionTarget)} of ${riskRewardQuestionTarget}. Current bankroll ${riskRewardBankroll}. Choose a wager before the question is revealed.`;
+    updateRiskRewardHud();
+}
+
+function lockRiskRewardWager(ratio){
+    if(!modeUsesRiskReward() || runEnding || riskRewardWagerLocked || riskRewardBankroll <= 0) return;
+    const cleanRatio = Math.min(1, Math.max(0.01, Number(ratio) || 0.10));
+    riskRewardBankrollBeforeWager = riskRewardBankroll;
+    riskRewardCurrentWagerRatio = cleanRatio;
+    riskRewardCurrentWager = calculateRiskRewardWager(cleanRatio);
+    riskRewardWagerLocked = true;
+    riskRewardWagerSettled = false;
+    riskRewardQuestionRevealed = true;
+    const tier = riskRewardTierLabel(cleanRatio);
+    riskRewardWagerCounts[tier] = (riskRewardWagerCounts[tier] || 0) + 1;
+    if(tier === 'ALL IN') riskRewardAllInAttempts++;
+    riskRewardLargestWager = Math.max(riskRewardLargestWager, riskRewardCurrentWager);
+    riskRewardEvents.push({event:'wager',questionId:currentQuestion?.id || currentQuestion?.questionId || '',bankrollBefore:riskRewardBankrollBeforeWager,wagerAmount:riskRewardCurrentWager,wagerRatio:cleanRatio,wagerTier:tier,difficulty:currentQuestion?.__mqDifficulty || currentQuestion?.canonicalDifficulty || currentQuestion?.difficulty || ''});
+    updateRiskRewardHud();
+    renderRiskRewardQuestion();
+}
+
+function renderRiskRewardQuestion(){
+    if(!modeUsesRiskReward() || !riskRewardWagerLocked || !currentQuestion || runEnding) return;
+    renderQuestionGraph(currentQuestion);
+    wizardSpeak(getWizardLine(currentQuestion.type || 'interpretation'));
+    document.getElementById('bossMessage').innerText = '';
+    document.getElementById('question').innerHTML = `<div>${currentQuestion.q}</div>`;
+    document.getElementById('formulaHint').innerText = currentQuestion.hint ? '💡 Hint: ' + currentQuestion.hint : '';
+    document.getElementById('srAnnouncements').innerText = `Wager locked at ${riskRewardCurrentWager} points. Question revealed.`;
+    displayQuestion();
+}
+
+function settleRiskRewardAnswer(isCorrect, responseTime){
+    if(!modeUsesRiskReward() || !riskRewardWagerLocked || riskRewardWagerSettled) return null;
+    riskRewardWagerSettled = true;
+    const wager = riskRewardCurrentWager;
+    const tier = riskRewardTierLabel(riskRewardCurrentWagerRatio);
+    const before = riskRewardBankroll;
+    riskRewardAttemptsByTier[tier] = (riskRewardAttemptsByTier[tier] || 0) + 1;
+    if(isCorrect){
+        riskRewardBankroll += wager;
+        riskRewardCorrectByTier[tier] = (riskRewardCorrectByTier[tier] || 0) + 1;
+    } else {
+        riskRewardBankroll = Math.max(0, riskRewardBankroll - wager);
+    }
+    riskRewardPeakBankroll = Math.max(riskRewardPeakBankroll, riskRewardBankroll);
+    riskRewardLowestBankroll = Math.min(riskRewardLowestBankroll, riskRewardBankroll);
+    riskRewardQuestionsCompleted++;
+    riskRewardDeckIndex++;
+    riskRewardBusted = riskRewardBankroll <= 0;
+    riskRewardEvents.push({event:'settlement',questionId:currentQuestion?.id || currentQuestion?.questionId || '',correct:!!isCorrect,bankrollBefore:before,wagerAmount:wager,wagerRatio:riskRewardCurrentWagerRatio,wagerTier:tier,bankrollAfter:riskRewardBankroll,responseTime,difficulty:currentQuestion?.__mqDifficulty || currentQuestion?.canonicalDifficulty || currentQuestion?.difficulty || '',allIn:tier==='ALL IN',busted:riskRewardBusted});
+    updateRiskRewardHud();
+    return {before,wager,tier,after:riskRewardBankroll,busted:riskRewardBusted};
+}
+
+function getRiskRewardAverageWagerPercent(){
+    const wagers = riskRewardEvents.filter(event => event.event === 'wager');
+    if(!wagers.length) return 0;
+    return Math.round((wagers.reduce((sum,event)=>sum+(Number(event.wagerRatio)||0),0)/wagers.length)*100);
+}
+
+function getRiskRewardReportData(){
+    return {
+        startingBankroll:RISK_REWARD_STARTING_BANKROLL,
+        finalBankroll:riskRewardBankroll,
+        net:riskRewardBankroll-RISK_REWARD_STARTING_BANKROLL,
+        peakBankroll:riskRewardPeakBankroll,
+        lowestBankroll:riskRewardLowestBankroll,
+        largestWager:riskRewardLargestWager,
+        allInAttempts:riskRewardAllInAttempts,
+        busted:riskRewardBusted,
+        questionsCompleted:riskRewardQuestionsCompleted,
+        target:riskRewardQuestionTarget,
+        averageWagerPercent:getRiskRewardAverageWagerPercent(),
+        wagerCounts:{...riskRewardWagerCounts},
+        correctByTier:{...riskRewardCorrectByTier},
+        attemptsByTier:{...riskRewardAttemptsByTier}
+    };
+}
+
 function showModeSelect(){
     if(!validateAndStorePlayerName()) return;
 
     closeQuizSetup();
     closeTrialGraphSetup();
     closeFadingFortuneSetup();
+    closeRiskRewardSetup();
     applyFacultyCompositionConfig();
     beginRunSession();
     runEnding = false;
@@ -5721,6 +6103,7 @@ function returnToTitleScreen(){
     closeQuizSetup();
     closeTrialGraphSetup();
     closeFadingFortuneSetup();
+    closeRiskRewardSetup();
     stopTimedModeClock();
     closeGraphLightbox();
     setGameControlsVisible(false);
@@ -5748,6 +6131,10 @@ function startSelectedMode(mode, options = {}){
     }
     if(requestedMode === "fadingFortune" && !options.fadingFortuneConfirmed){
         openFadingFortuneSetup();
+        return;
+    }
+    if(requestedMode === "riskReward" && !options.riskRewardConfirmed){
+        openRiskRewardSetup();
         return;
     }
     const preflight = validateFacultyMode(requestedMode);
@@ -5787,7 +6174,7 @@ function confirmReturnToModeMenu(){
 
     showGameModal({
         title: "Return to Battle Menu?",
-        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, Score Attack, Trial by Graph, and Fading Fortune attempts will end.",
+        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, Score Attack, Trial by Graph, Fading Fortune, and Risk & Reward attempts will end.",
         confirmText: "Return",
         cancelText: "Stay",
         onConfirm: function(){
@@ -6112,7 +6499,7 @@ if(!hasSavedRun){
     if(modeScreen) modeScreen.style.display = "none";
 	document.querySelector(".top-panel").style.display = "flex";
     const mazeTrackContainer = document.getElementById("mazeTrackContainer");
-    if(mazeTrackContainer) mazeTrackContainer.style.display = (gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune") ? "none" : "block";
+    if(mazeTrackContainer) mazeTrackContainer.style.display = (gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward") ? "none" : "block";
     document.getElementById("gameShell").style.display = "flex";
     document.getElementById("gameBox").style.display = "block";
     document.getElementById("artifactVault").style.display = modeAllowsRealmProgress() ? "block" : "none";
@@ -6178,6 +6565,8 @@ function resetRunStateForNewMode(){
     if(gameMode !== "trialGraph") trialGraphDeck = [];
     resetFadingFortuneRunState();
     if(gameMode !== "fadingFortune") fadingFortuneDeck = [];
+    resetRiskRewardRunState();
+    if(gameMode !== "riskReward") riskRewardDeck = [];
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
     resumedSavedRunThisSession = false;
@@ -6212,6 +6601,8 @@ function initializeRunForMode(mode){
                         ? `▧ Trial by Graph · ${trialGraphQuestionTarget} Questions`
                     : gameMode === "fadingFortune"
                         ? `◫ Fading Fortune · ${fadingFortuneQuestionTarget} Questions`
+                    : gameMode === "riskReward"
+                        ? `♠ Risk & Reward · ${riskRewardQuestionTarget} Questions`
                     : gameMode === "unlimited"
                         ? "∞ Unlimited Practice Active"
                     : gameMode === "score"
@@ -6374,7 +6765,9 @@ function returnToModeSelectFromRun(){
     closeQuizSetup();
     closeTrialGraphSetup();
     closeFadingFortuneSetup();
+    closeRiskRewardSetup();
     resetFadingFortuneQuestionState();
+    resetRiskRewardQuestionState();
     runEnding = true;
     answerSubmissionPending = false;
     stopTimedModeClock();
@@ -6415,6 +6808,9 @@ function getDifficultyForMode(){
     }
     if(gameMode === "fadingFortune"){
         return fadingFortuneDeck[fadingFortuneDeckIndex]?.__mqDifficulty || "easy";
+    }
+    if(gameMode === "riskReward"){
+        return riskRewardDeck[riskRewardDeckIndex]?.__mqDifficulty || "easy";
     }
     if(gameMode === "quiz"){
         const target = normalizeQuizQuestionTarget(quizQuestionTarget);
@@ -27042,9 +27438,305 @@ const fadingFortuneQuestionIds = [
   "P62I-OLI-L-089",
   "P62I-OLI-L-090"
 ];
+const riskRewardQuestionIds = [
+  "P62I-OLI-E-001",
+  "P62I-OLI-E-002",
+  "P62I-OLI-E-003",
+  "P62I-OLI-E-004",
+  "P62I-OLI-E-005",
+  "P62I-OLI-E-006",
+  "P62I-OLI-E-007",
+  "P62I-OLI-E-008",
+  "P62I-OLI-E-009",
+  "P62I-OLI-E-010",
+  "P62I-OLI-E-011",
+  "P62I-OLI-E-012",
+  "P62I-OLI-E-013",
+  "P62I-OLI-E-014",
+  "P62I-OLI-E-015",
+  "P62I-OLI-E-016",
+  "P62I-OLI-E-017",
+  "P62I-OLI-E-018",
+  "P62I-OLI-E-019",
+  "P62I-OLI-E-020",
+  "P62I-OLI-E-021",
+  "P62I-OLI-E-022",
+  "P62I-OLI-E-023",
+  "P62I-OLI-E-024",
+  "P62I-OLI-E-025",
+  "P62I-OLI-E-026",
+  "P62I-OLI-E-027",
+  "P62I-OLI-E-028",
+  "P62I-OLI-E-029",
+  "P62I-OLI-E-030",
+  "PM8-OLI-E-001",
+  "PM8-OLI-E-002",
+  "PM8-OLI-E-003",
+  "PM8-OLI-E-012",
+  "PM8-OLI-E-013",
+  "PM8-OLI-E-014",
+  "PM8-OLI-E-015",
+  "PM8-OLI-E-029",
+  "PM8-OLI-E-030",
+  "PM8-OLI-E-031",
+  "PM8-OLI-E-032",
+  "PM8-OLI-E-042",
+  "PM8-OLI-E-043",
+  "PM8-OLI-E-053",
+  "PM8-OLI-E-054",
+  "PM8-OLI-E-055",
+  "PM8-OLI-E-056",
+  "PM8-OLI-E-057",
+  "PM8-OLI-E-058",
+  "PM8-OLI-E-059",
+  "P62I-OLI-M-001",
+  "P62I-OLI-M-002",
+  "P62I-OLI-M-003",
+  "P62I-OLI-M-004",
+  "P62I-OLI-M-005",
+  "P62I-OLI-M-006",
+  "P62I-OLI-M-007",
+  "P62I-OLI-M-008",
+  "P62I-OLI-M-009",
+  "P62I-OLI-M-010",
+  "P62I-OLI-M-011",
+  "P62I-OLI-M-012",
+  "P62I-OLI-M-013",
+  "P62I-OLI-M-014",
+  "P62I-OLI-M-015",
+  "P62I-OLI-M-016",
+  "P62I-OLI-M-017",
+  "P62I-OLI-M-018",
+  "P62I-OLI-M-019",
+  "P62I-OLI-M-020",
+  "P62I-OLI-M-021",
+  "P62I-OLI-M-022",
+  "P62I-OLI-M-023",
+  "P62I-OLI-M-024",
+  "P62I-OLI-M-025",
+  "P62I-OLI-M-026",
+  "P62I-OLI-M-027",
+  "P62I-OLI-M-028",
+  "P62I-OLI-M-029",
+  "P62I-OLI-M-030",
+  "PM8-OLI-M-004",
+  "PM8-OLI-M-005",
+  "PM8-OLI-M-006",
+  "PM8-OLI-M-007",
+  "PM8-OLI-M-016",
+  "PM8-OLI-M-017",
+  "PM8-OLI-M-018",
+  "PM8-OLI-M-019",
+  "PM8-OLI-M-020",
+  "PM8-OLI-M-021",
+  "PM8-OLI-M-022",
+  "PM8-OLI-M-033",
+  "PM8-OLI-M-034",
+  "PM8-OLI-M-035",
+  "PM8-OLI-M-036",
+  "PM8-OLI-M-037",
+  "PM8-OLI-M-060",
+  "PM8-OLI-M-061",
+  "PM8-OLI-M-062",
+  "PM8-OLI-M-063",
+  "PM8-OLI-M-064",
+  "P62I-OLI-H-001",
+  "P62I-OLI-H-002",
+  "P62I-OLI-H-003",
+  "P62I-OLI-H-004",
+  "P62I-OLI-H-005",
+  "P62I-OLI-H-006",
+  "P62I-OLI-H-007",
+  "P62I-OLI-H-008",
+  "P62I-OLI-H-009",
+  "P62I-OLI-H-010",
+  "P62I-OLI-H-011",
+  "P62I-OLI-H-012",
+  "P62I-OLI-H-013",
+  "P62I-OLI-H-014",
+  "P62I-OLI-H-015",
+  "P62I-OLI-H-016",
+  "P62I-OLI-H-017",
+  "P62I-OLI-H-018",
+  "P62I-OLI-H-019",
+  "P62I-OLI-H-020",
+  "P62I-OLI-H-021",
+  "P62I-OLI-H-022",
+  "P62I-OLI-H-023",
+  "P62I-OLI-H-024",
+  "P62I-OLI-H-025",
+  "P62I-OLI-H-026",
+  "P62I-OLI-H-027",
+  "P62I-OLI-H-028",
+  "P62I-OLI-H-029",
+  "P62I-OLI-H-030",
+  "PM8-OLI-H-038",
+  "PM8-OLI-H-039",
+  "PM8-OLI-H-046",
+  "PM8-OLI-H-047",
+  "PM8-OLI-H-048",
+  "PM8-OLI-H-049",
+  "PM8-OLI-H-050",
+  "PM8-OLI-H-065",
+  "PM8-OLI-H-066",
+  "PM8-OLI-H-067",
+  "PM8-OLI-H-068",
+  "PM8-OLI-H-069",
+  "PM8-OLI-H-070",
+  "P62I-OLI-C-001",
+  "P62I-OLI-C-002",
+  "P62I-OLI-C-003",
+  "P62I-OLI-C-004",
+  "P62I-OLI-C-005",
+  "P62I-OLI-C-006",
+  "P62I-OLI-C-007",
+  "P62I-OLI-C-008",
+  "P62I-OLI-C-009",
+  "P62I-OLI-C-010",
+  "P62I-OLI-C-011",
+  "P62I-OLI-C-012",
+  "P62I-OLI-C-013",
+  "P62I-OLI-C-014",
+  "P62I-OLI-C-015",
+  "P62I-OLI-C-016",
+  "P62I-OLI-C-017",
+  "P62I-OLI-C-018",
+  "P62I-OLI-C-019",
+  "P62I-OLI-C-020",
+  "P62I-OLI-C-021",
+  "P62I-OLI-C-022",
+  "P62I-OLI-C-023",
+  "P62I-OLI-C-024",
+  "P62I-OLI-C-025",
+  "P62I-OLI-C-026",
+  "P62I-OLI-C-027",
+  "P62I-OLI-C-028",
+  "P62I-OLI-C-029",
+  "P62I-OLI-C-030",
+  "P62I-OLI-EL-001",
+  "P62I-OLI-EL-002",
+  "P62I-OLI-EL-003",
+  "P62I-OLI-EL-004",
+  "P62I-OLI-EL-005",
+  "P62I-OLI-EL-006",
+  "P62I-OLI-EL-007",
+  "P62I-OLI-EL-008",
+  "P62I-OLI-EL-009",
+  "P62I-OLI-EL-010",
+  "P62I-OLI-EL-011",
+  "P62I-OLI-EL-012",
+  "P62I-OLI-EL-013",
+  "P62I-OLI-EL-014",
+  "P62I-OLI-EL-015",
+  "P62I-OLI-EL-016",
+  "P62I-OLI-EL-017",
+  "P62I-OLI-EL-018",
+  "P62I-OLI-EL-019",
+  "P62I-OLI-EL-020",
+  "P62I-OLI-EL-021",
+  "P62I-OLI-EL-022",
+  "P62I-OLI-EL-023",
+  "P62I-OLI-EL-024",
+  "P62I-OLI-EL-025",
+  "P62I-OLI-EL-026",
+  "P62I-OLI-EL-027",
+  "P62I-OLI-EL-028",
+  "P62I-OLI-EL-029",
+  "P62I-OLI-EL-030",
+  "P62I-OLI-L-001",
+  "P62I-OLI-L-002",
+  "P62I-OLI-L-003",
+  "P62I-OLI-L-004",
+  "P62I-OLI-L-005",
+  "P62I-OLI-L-006",
+  "P62I-OLI-L-007",
+  "P62I-OLI-L-008",
+  "P62I-OLI-L-009",
+  "P62I-OLI-L-010",
+  "P62I-OLI-L-011",
+  "P62I-OLI-L-012",
+  "P62I-OLI-L-013",
+  "P62I-OLI-L-014",
+  "P62I-OLI-L-015",
+  "P62I-OLI-L-016",
+  "P62I-OLI-L-017",
+  "P62I-OLI-L-018",
+  "P62I-OLI-L-019",
+  "P62I-OLI-L-020",
+  "P62I-OLI-L-021",
+  "P62I-OLI-L-022",
+  "P62I-OLI-L-023",
+  "P62I-OLI-L-024",
+  "P62I-OLI-L-025",
+  "P62I-OLI-L-026",
+  "P62I-OLI-L-027",
+  "P62I-OLI-L-028",
+  "P62I-OLI-L-029",
+  "P62I-OLI-L-030",
+  "P62I-OLI-L-031",
+  "P62I-OLI-L-032",
+  "P62I-OLI-L-033",
+  "P62I-OLI-L-034",
+  "P62I-OLI-L-035",
+  "P62I-OLI-L-036",
+  "P62I-OLI-L-037",
+  "P62I-OLI-L-038",
+  "P62I-OLI-L-039",
+  "P62I-OLI-L-040",
+  "P62I-OLI-L-041",
+  "P62I-OLI-L-042",
+  "P62I-OLI-L-043",
+  "P62I-OLI-L-044",
+  "P62I-OLI-L-045",
+  "P62I-OLI-L-046",
+  "P62I-OLI-L-047",
+  "P62I-OLI-L-048",
+  "P62I-OLI-L-049",
+  "P62I-OLI-L-050",
+  "P62I-OLI-L-051",
+  "P62I-OLI-L-052",
+  "P62I-OLI-L-053",
+  "P62I-OLI-L-054",
+  "P62I-OLI-L-055",
+  "P62I-OLI-L-056",
+  "P62I-OLI-L-057",
+  "P62I-OLI-L-058",
+  "P62I-OLI-L-059",
+  "P62I-OLI-L-060",
+  "P62I-OLI-L-061",
+  "P62I-OLI-L-062",
+  "P62I-OLI-L-063",
+  "P62I-OLI-L-064",
+  "P62I-OLI-L-065",
+  "P62I-OLI-L-066",
+  "P62I-OLI-L-067",
+  "P62I-OLI-L-068",
+  "P62I-OLI-L-069",
+  "P62I-OLI-L-070",
+  "P62I-OLI-L-071",
+  "P62I-OLI-L-072",
+  "P62I-OLI-L-073",
+  "P62I-OLI-L-074",
+  "P62I-OLI-L-075",
+  "P62I-OLI-L-076",
+  "P62I-OLI-L-077",
+  "P62I-OLI-L-078",
+  "P62I-OLI-L-079",
+  "P62I-OLI-L-080",
+  "P62I-OLI-L-081",
+  "P62I-OLI-L-082",
+  "P62I-OLI-L-083",
+  "P62I-OLI-L-084",
+  "P62I-OLI-L-085",
+  "P62I-OLI-L-086",
+  "P62I-OLI-L-087",
+  "P62I-OLI-L-088",
+  "P62I-OLI-L-089",
+  "P62I-OLI-L-090"
+];
 const facultyCompositionMetadata = {
   "schemaVersion": "1.2.0",
-  "composerVersion": "4.5s.2l",
+  "composerVersion": "4.5s.2m",
   "title": "Mode Test timed-exam",
   "slug": "mode-test-timed-exam",
   "selectedConceptIds": [
@@ -27100,11 +27792,11 @@ const facultyCompositionMetadata = {
     "timed",
     "exam"
   ],
-  "saveKeyNamespace": "mq-econ:mode-test-timed-exam:973f5e65f5fe",
-  "compositionFingerprint": "973f5e65f5fe8c3a472e0b3add10c81c3dbf81b2b00c0742e6e0a377a3b524cc",
+  "saveKeyNamespace": "mq-econ:mode-test-timed-exam:e6532cddf031",
+  "compositionFingerprint": "e6532cddf03187a0c3956a8ffad455ff14a6196827e35c43f6d4e7b75deffb8f",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1",
   "librarySha256": "63424e0425bb8d0ab38842d0d7951514d08c64be5f3dd6bb8718f91ada32b66b",
-  "templateSha256": "4cff3a7f92b319c0d3c2bb51ebb57947d9f19afbe41ca4dd556f8027b9a0617b"
+  "templateSha256": "0c7c5546f841162a08cae5328f54d4907d0be4b243c45be330a0ee732fa361e4"
 };
 const facultyQuestionValidator = function validateFacultyQuestionRecord(question, poolName, availableAssets){
   const invalidFields = [];
@@ -33862,7 +34554,8 @@ const FACULTY_MODE_REQUIREMENTS = {
     legendary: ["legendary", "legendaryBoss"],
     score: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"],
     trialGraph: [],
-    fadingFortune: []
+    fadingFortune: [],
+    riskReward: []
 };
 
 const FACULTY_MODE_POOL_MINIMUMS = {
@@ -33924,6 +34617,20 @@ function validateFacultyMode(mode){
             const id = question?.id ?? question?.questionId ?? `index ${index}`;
             if(fields.length) issues.push({pool:'fadingFortuneEligible',id,issue:`Invalid: ${fields.join(', ')}`});
             if(!Array.isArray(question?.options) || question.options.length !== 4) issues.push({pool:'fadingFortuneEligible',id,issue:'Fading Fortune requires exactly four answer choices'});
+        });
+        return {ok:issues.length === 0, issues};
+    }
+
+    if(normalizedMode === 'riskReward'){
+        const candidates = getRiskRewardCandidates();
+        if(candidates.length < 10){
+            issues.push({pool:'riskRewardEligible',id:'—',issue:`Needs 10; found ${candidates.length}`});
+        }
+        candidates.forEach((question,index) => {
+            const diff = String(question.__mqDifficulty || question.canonicalDifficulty || question.difficulty || 'hard');
+            const fields = validateFacultyQuestion(question, diff);
+            const id = question?.id ?? question?.questionId ?? `index ${index}`;
+            if(fields.length) issues.push({pool:'riskRewardEligible',id,issue:`Invalid: ${fields.join(', ')}`});
         });
         return {ok:issues.length === 0, issues};
     }
@@ -34474,6 +35181,7 @@ function resolveQuestionImage(path){
 function loadQuestion() {
     if(isTimedModeTerminal()) return;
     if(modeUsesFadingFortune()) resetFadingFortuneQuestionState();
+    if(modeUsesRiskReward()) resetRiskRewardQuestionState();
     answerSubmissionPending = false;
 
     if(isTimedModeExpired()){
@@ -34498,6 +35206,10 @@ function loadQuestion() {
         return;
     }
     if(gameMode === "fadingFortune" && fadingFortuneQuestionsCompleted >= fadingFortuneQuestionTarget){
+        handlePracticeModeComplete();
+        return;
+    }
+    if(gameMode === "riskReward" && riskRewardQuestionsCompleted >= riskRewardQuestionTarget){
         handlePracticeModeComplete();
         return;
     }
@@ -34545,7 +35257,12 @@ function loadQuestion() {
     gameBox.classList.toggle("boss-mode", isBoss);
    
     // 2. UI & Progress Updates
-    if(gameMode === "fadingFortune"){
+    if(gameMode === "riskReward"){
+        const currentRiskQuestion = Math.min(riskRewardQuestionsCompleted + 1, riskRewardQuestionTarget);
+        document.getElementById("progressFill").style.width = `${(riskRewardQuestionsCompleted / riskRewardQuestionTarget) * 100}%`;
+        document.getElementById("areaDisplay").innerText = `Risk & Reward — Question ${currentRiskQuestion} of ${riskRewardQuestionTarget}`;
+        document.getElementById("srAnnouncements").innerText = `Risk and Reward. Question ${currentRiskQuestion} of ${riskRewardQuestionTarget}. Choose your wager before the question is revealed.`;
+    } else if(gameMode === "fadingFortune"){
         const currentFadingQuestion = Math.min(fadingFortuneQuestionsCompleted + 1, fadingFortuneQuestionTarget);
         document.getElementById("progressFill").style.width = `${(fadingFortuneQuestionsCompleted / fadingFortuneQuestionTarget) * 100}%`;
         document.getElementById("areaDisplay").innerText = `Fading Fortune — Question ${currentFadingQuestion} of ${fadingFortuneQuestionTarget}`;
@@ -34631,6 +35348,19 @@ if (isBoss) {
     return;
 
 } else {
+
+    if(gameMode === "riskReward"){
+        const deckQuestion = riskRewardDeck[riskRewardDeckIndex];
+        currentQuestion = shuffleOptions(deckQuestion);
+        if(currentQuestion) currentQuestion.__mqDifficulty = deckQuestion?.__mqDifficulty || currentQuestion.canonicalDifficulty || currentQuestion.difficulty || "easy";
+        if(!currentQuestion){
+            showGameModal({title:"Question Selection Stopped",text:"Risk & Reward could not select a valid practice question.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
+            return;
+        }
+        adaptiveMode = "risk-reward";
+        showRiskRewardWagerPrompt();
+        return;
+    }
 
     if(gameMode === "fadingFortune"){
         const deckQuestion = fadingFortuneDeck[fadingFortuneDeckIndex];
@@ -34943,6 +35673,7 @@ async function answer(choice) {
     }
 
     if(answerSubmissionPending || rapidGuessLocked) return;
+    if(modeUsesRiskReward() && (!riskRewardWagerLocked || !riskRewardQuestionRevealed || riskRewardWagerSettled)) return;
 
     answerSubmissionPending = true;
     freezeFadingFortuneForAnswerCheck();
@@ -35025,13 +35756,19 @@ if(rapidGuess.triggered && !rapidGuessLocked){
         streak: streak ?? 0,
         elapsedTime: startTime ? (Date.now() - startTime) : 0,
         adaptiveMode: adaptiveMode,
-        score: modeUsesFadingFortune() ? fadingFortuneScore : scoreAttackScore,
+        score: modeUsesRiskReward() ? riskRewardBankroll : (modeUsesFadingFortune() ? fadingFortuneScore : scoreAttackScore),
         bestScore: scoreAttackBestScore,
         fadingFortuneScore: modeUsesFadingFortune() ? fadingFortuneScore : null,
         fadingFortuneQuestionValue: modeUsesFadingFortune() ? fadingFortuneQuestionValue : null,
         fadingFortuneFadeCount: modeUsesFadingFortune() ? fadingFortuneFadeCount : null,
         fadingFortuneIntervalMs: modeUsesFadingFortune() ? fadingFortuneIntervalMs : null,
-        fadingFortunePausedDurationMs: modeUsesFadingFortune() ? fadingFortunePausedDurationMs : null
+        fadingFortunePausedDurationMs: modeUsesFadingFortune() ? fadingFortunePausedDurationMs : null,
+        riskRewardBankrollBefore: modeUsesRiskReward() ? riskRewardBankrollBeforeWager : null,
+        riskRewardWagerAmount: modeUsesRiskReward() ? riskRewardCurrentWager : null,
+        riskRewardWagerPercent: modeUsesRiskReward() ? Math.round(riskRewardCurrentWagerRatio * 100) : null,
+        riskRewardWagerTier: modeUsesRiskReward() ? riskRewardTierLabel(riskRewardCurrentWagerRatio) : null,
+        riskRewardBankrollAfter: modeUsesRiskReward() ? riskRewardBankroll : null,
+        riskRewardAllIn: modeUsesRiskReward() ? riskRewardCurrentWagerRatio >= 0.999 : null
     });
 
     // Give them a clean restart after the warning.
@@ -35065,6 +35802,9 @@ if(gameMode === "trialGraph"){
 }
 if(gameMode === "fadingFortune"){
     recordFadingFortuneAnswer(isCorrect, responseTime);
+}
+if(gameMode === "riskReward"){
+    settleRiskRewardAnswer(isCorrect, responseTime);
 }
 
 recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
@@ -35106,13 +35846,19 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 		streak: streak ?? 0,
 	    elapsedTime: startTime ? (Date.now() - startTime) : 0,
         adaptiveMode: adaptiveMode,
-        score: modeUsesFadingFortune() ? fadingFortuneScore : scoreAttackScore,
+        score: modeUsesRiskReward() ? riskRewardBankroll : (modeUsesFadingFortune() ? fadingFortuneScore : scoreAttackScore),
         bestScore: scoreAttackBestScore,
         fadingFortuneScore: modeUsesFadingFortune() ? fadingFortuneScore : null,
         fadingFortuneQuestionValue: modeUsesFadingFortune() ? fadingFortuneQuestionValue : null,
         fadingFortuneFadeCount: modeUsesFadingFortune() ? fadingFortuneFadeCount : null,
         fadingFortuneIntervalMs: modeUsesFadingFortune() ? fadingFortuneIntervalMs : null,
-        fadingFortunePausedDurationMs: modeUsesFadingFortune() ? fadingFortunePausedDurationMs : null
+        fadingFortunePausedDurationMs: modeUsesFadingFortune() ? fadingFortunePausedDurationMs : null,
+        riskRewardBankrollBefore: modeUsesRiskReward() ? riskRewardBankrollBeforeWager : null,
+        riskRewardWagerAmount: modeUsesRiskReward() ? riskRewardCurrentWager : null,
+        riskRewardWagerPercent: modeUsesRiskReward() ? Math.round(riskRewardCurrentWagerRatio * 100) : null,
+        riskRewardWagerTier: modeUsesRiskReward() ? riskRewardTierLabel(riskRewardCurrentWagerRatio) : null,
+        riskRewardBankrollAfter: modeUsesRiskReward() ? riskRewardBankroll : null,
+        riskRewardAllIn: modeUsesRiskReward() ? riskRewardCurrentWagerRatio >= 0.999 : null
     });
 
     // SCORE ATTACK MODE ADDITION:
@@ -35123,6 +35869,11 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         setAnswerButtonsDisabled(true);
         await waitForScoreAttackResolve(isCorrect);
         if(!isRunSessionCurrent(answerSessionId) || runEnding) return;
+    }
+
+    if(modeUsesRiskReward() && riskRewardBusted){
+        handlePracticeModeComplete({busted:true});
+        return;
     }
 
     // =============================================
@@ -35387,7 +36138,7 @@ if(remediationState.active){
 }
 
 // --- STAGED REMEDIATION TRIGGER ---
-if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && gameMode !== "trialGraph" && gameMode !== "fadingFortune" && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
+if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && gameMode !== "trialGraph" && gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, responseTime) || remediationState;
     detourActive = true;
     detourReturnRoom = room;
@@ -35419,8 +36170,8 @@ if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active 
     }
 }
 	
-    // --- QUIZ MODE: FIXED LENGTH, NO SETBACKS OR REMEDIATION DETOURS ---
-    if(gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune"){
+    // --- FIXED-LENGTH MODES: NO SETBACKS OR REMEDIATION DETOURS ---
+    if(gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward"){
         document.getElementById("streakDisplay").innerText = "";
         bossHealth = 3;
         bossPool = [];
@@ -35429,7 +36180,7 @@ if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active 
         showGameModal({
             title: "Answer Recorded",
             text: `Incorrect.${feedback}`,
-            confirmText: (gameMode === "trialGraph" ? trialGraphQuestionsCompleted >= trialGraphQuestionTarget : gameMode === "fadingFortune" ? fadingFortuneQuestionsCompleted >= fadingFortuneQuestionTarget : quizQuestionsCompleted >= quizQuestionTarget) ? "View Results" : "Next Question",
+            confirmText: (gameMode === "trialGraph" ? trialGraphQuestionsCompleted >= trialGraphQuestionTarget : gameMode === "fadingFortune" ? fadingFortuneQuestionsCompleted >= fadingFortuneQuestionTarget : gameMode === "riskReward" ? riskRewardQuestionsCompleted >= riskRewardQuestionTarget : quizQuestionsCompleted >= quizQuestionTarget) ? "View Results" : "Next Question",
             onConfirm: function(){ loadQuestion(); }
         });
         return;
@@ -35895,14 +36646,17 @@ function restartScoreAttackMode(){
 
 function handlePracticeModeComplete(options = {}){
     const endedByStudent = options.endedByStudent === true;
+    const busted = options.busted === true;
     const reportDestination = options.reportDestination || (options.showReport === true ? "mastery" : "results");
     if(runEnding) return;
     beginRunSession();
-    if(gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune"){
+    if(gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward"){
         const progress = document.getElementById("progressFill");
         const area = document.getElementById("areaDisplay");
-        if(progress) progress.style.width = "100%";
-        if(area) area.innerText = gameMode === "trialGraph"
+        if(progress) progress.style.width = (gameMode === "riskReward" && busted) ? `${(riskRewardQuestionsCompleted / riskRewardQuestionTarget) * 100}%` : "100%";
+        if(area) area.innerText = gameMode === "riskReward"
+            ? (busted ? `Risk & Reward — Busted (${riskRewardQuestionsCompleted}/${riskRewardQuestionTarget})` : `Risk & Reward — Complete (${riskRewardQuestionTarget}/${riskRewardQuestionTarget})`)
+            : gameMode === "trialGraph"
             ? `Trial by Graph — Complete (${trialGraphQuestionTarget}/${trialGraphQuestionTarget})`
             : gameMode === "fadingFortune"
               ? `Fading Fortune — Complete (${fadingFortuneQuestionTarget}/${fadingFortuneQuestionTarget})`
@@ -35929,7 +36683,7 @@ function handlePracticeModeComplete(options = {}){
     sendGameData({
         runID: runID,
         game: FACULTY_COMPOSITION_CONFIG.title,
-        event: endedByStudent ? `${gameMode}_ended_by_student` : `${gameMode}_complete`,
+        event: busted ? `${gameMode}_bust` : endedByStudent ? `${gameMode}_ended_by_student` : `${gameMode}_complete`,
         user: username,
         room: room,
         questionId: 0,
@@ -35950,7 +36704,17 @@ function handlePracticeModeComplete(options = {}){
         fadingFortuneScore: gameMode === "fadingFortune" ? fadingFortuneScore : null,
         fadingFortuneMaxScore: gameMode === "fadingFortune" ? fadingFortuneQuestionTarget * 100 : null,
         fadingFortuneAverageValue: gameMode === "fadingFortune" ? getFadingFortuneAverageValue() : null,
-        fadingFortuneDistribution: gameMode === "fadingFortune" ? JSON.stringify(fadingFortuneDistribution) : null
+        fadingFortuneDistribution: gameMode === "fadingFortune" ? JSON.stringify(fadingFortuneDistribution) : null,
+        riskRewardStartingBankroll: gameMode === "riskReward" ? RISK_REWARD_STARTING_BANKROLL : null,
+        riskRewardFinalBankroll: gameMode === "riskReward" ? riskRewardBankroll : null,
+        riskRewardNet: gameMode === "riskReward" ? riskRewardBankroll - RISK_REWARD_STARTING_BANKROLL : null,
+        riskRewardPeakBankroll: gameMode === "riskReward" ? riskRewardPeakBankroll : null,
+        riskRewardLargestWager: gameMode === "riskReward" ? riskRewardLargestWager : null,
+        riskRewardAllInAttempts: gameMode === "riskReward" ? riskRewardAllInAttempts : null,
+        riskRewardBusted: gameMode === "riskReward" ? busted : null,
+        riskRewardQuestionsCompleted: gameMode === "riskReward" ? riskRewardQuestionsCompleted : null,
+        riskRewardTarget: gameMode === "riskReward" ? riskRewardQuestionTarget : null,
+        riskRewardWagerDistribution: gameMode === "riskReward" ? JSON.stringify(riskRewardWagerCounts) : null
     });
 
     document.getElementById("bossMessage").innerText = "";
@@ -35961,7 +36725,9 @@ function handlePracticeModeComplete(options = {}){
     closeGraphLightbox();
     document.getElementById("questionImageBox").style.display = "none";
 
-    const completionLead = gameMode === "trialGraph"
+    const completionLead = gameMode === "riskReward"
+        ? (busted ? `Your bankroll hit zero after ${riskRewardQuestionsCompleted} question${riskRewardQuestionsCompleted === 1 ? "" : "s"}.` : `You survived all ${riskRewardQuestionTarget} Risk & Reward questions.`)
+        : gameMode === "trialGraph"
         ? `You completed ${trialGraphQuestionTarget} graph-required question${trialGraphQuestionTarget === 1 ? "" : "s"}.`
         : gameMode === "fadingFortune"
         ? `You completed ${fadingFortuneQuestionTarget} Fading Fortune question${fadingFortuneQuestionTarget === 1 ? "" : "s"}.`
@@ -35974,11 +36740,11 @@ function handlePracticeModeComplete(options = {}){
                 : "You reached the end of the 30-room Exam Drill path.";
 
     document.getElementById("question").innerHTML = `
-        <span class="boss-title">${getModeDisplayName().toUpperCase()} ${endedByStudent ? "ENDED" : "COMPLETE"}</span>
+        <span class="boss-title">${gameMode === "riskReward" && busted ? "BANKROLL LOST" : `${getModeDisplayName().toUpperCase()} ${endedByStudent ? "ENDED" : "COMPLETE"}`}</span>
         <div class="boss-q">
             ${completionLead}<br><br>
             Accuracy: ${accuracy}%<br>
-            ${gameMode === "quiz" ? `Quiz Questions: ${quizQuestionTarget}<br>` : gameMode === "trialGraph" ? `Graph Questions: ${trialGraphQuestionTarget}<br>` : gameMode === "fadingFortune" ? `Score: <strong>${fadingFortuneScore}</strong> / ${fadingFortuneQuestionTarget * 100}<br>Average Question Value: ${getFadingFortuneAverageValue()}<br>Fading Fortune Questions: ${fadingFortuneQuestionTarget}<br>` : ""}
+            ${gameMode === "quiz" ? `Quiz Questions: ${quizQuestionTarget}<br>` : gameMode === "trialGraph" ? `Graph Questions: ${trialGraphQuestionTarget}<br>` : gameMode === "fadingFortune" ? `Score: <strong>${fadingFortuneScore}</strong> / ${fadingFortuneQuestionTarget * 100}<br>Average Question Value: ${getFadingFortuneAverageValue()}<br>Fading Fortune Questions: ${fadingFortuneQuestionTarget}<br>` : gameMode === "riskReward" ? `Starting Bankroll: <strong>${RISK_REWARD_STARTING_BANKROLL}</strong><br>Final Bankroll: <strong>${riskRewardBankroll}</strong><br>Net: <strong>${riskRewardBankroll - RISK_REWARD_STARTING_BANKROLL >= 0 ? "+" : ""}${riskRewardBankroll - RISK_REWARD_STARTING_BANKROLL}</strong><br>Largest Bankroll: ${riskRewardPeakBankroll}<br>Largest Wager: ${riskRewardLargestWager}<br>All-In Attempts: ${riskRewardAllInAttempts}<br>Questions Completed: ${riskRewardQuestionsCompleted}/${riskRewardQuestionTarget}<br>` : ""}
             Total Attempts: ${totalAttempts}<br>
             Best Streak: ${maxStreak}<br>
             Total Time: ${timeString}<br>
@@ -35987,7 +36753,9 @@ function handlePracticeModeComplete(options = {}){
         </div>
     `;
 
-    const replayButton = gameMode === "trialGraph"
+    const replayButton = gameMode === "riskReward"
+        ? '<button class="continue-btn" onclick="openRiskRewardSetup()">Play Risk & Reward Again</button>'
+        : gameMode === "trialGraph"
         ? '<button class="continue-btn" onclick="openTrialGraphSetup()">Run Trial by Graph Again</button>'
         : gameMode === "fadingFortune"
         ? '<button class="continue-btn" onclick="openFadingFortuneSetup()">Play Fading Fortune Again</button>'
@@ -36004,7 +36772,9 @@ function handlePracticeModeComplete(options = {}){
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
     `;
 
-    document.getElementById("message").innerText = gameMode === "trialGraph"
+    document.getElementById("message").innerText = gameMode === "riskReward"
+        ? (busted ? "Bankroll lost. Your completed question evidence remains available in the Mastery Report." : "Risk & Reward complete. The campaign record was not changed.")
+        : gameMode === "trialGraph"
         ? "Trial by Graph complete. The campaign record was not changed."
         : gameMode === "fadingFortune"
         ? "Fading Fortune complete. The campaign record was not changed."
@@ -36571,6 +37341,7 @@ function getMasteryReportModeName(){
     if(gameMode === "quiz") return "Quiz";
     if(gameMode === "trialGraph") return "Trial by Graph";
     if(gameMode === "fadingFortune") return "Fading Fortune";
+    if(gameMode === "riskReward") return "Risk & Reward";
     if(gameMode === "unlimited") return "Unlimited Practice";
     return getModeDisplayName();
 }
@@ -36677,6 +37448,7 @@ function getMasteryReportData(){
         maxStreak,
         score: modeUsesScoreAttack() ? scoreAttackScore : (gameMode === "fadingFortune" ? fadingFortuneScore : null),
         fadingFortune: gameMode === "fadingFortune" ? getFadingFortuneReportData() : null,
+        riskReward: gameMode === "riskReward" ? getRiskRewardReportData() : null,
         strongest,
         weakestConcepts,
         weakestTypes,
@@ -36701,7 +37473,9 @@ function showMasteryReportScreen(options = {}){
     }
 
     const report = getMasteryReportData();
-    const scoreCard = report.score !== null
+    const scoreCard = report.riskReward
+        ? `<div class="mastery-stat-card"><span class="mastery-stat-label">Final Bankroll</span><span class="mastery-stat-value">${report.riskReward.finalBankroll}</span></div>`
+        : report.score !== null
         ? `<div class="mastery-stat-card"><span class="mastery-stat-label">Score</span><span class="mastery-stat-value">${report.fadingFortune ? `${report.score}/${report.fadingFortune.maxScore}` : report.score}</span></div>`
         : "";
     const fadingFortuneSection = report.fadingFortune ? `
@@ -36712,6 +37486,14 @@ function showMasteryReportScreen(options = {}){
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Two answers removed</span><span class="mastery-row-score">${report.fadingFortune.distribution[50] || 0}</span></div><span class="mastery-row-meta">Answered at 50 points. Correct: ${report.fadingFortune.correctByValue[50] || 0}.</span></div>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Three answers removed</span><span class="mastery-row-score">${report.fadingFortune.distribution[25] || 0}</span></div><span class="mastery-row-meta">Answered at 25 points. Correct: ${report.fadingFortune.correctByValue[25] || 0}.</span></div>
                 <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Average question value</span><span class="mastery-row-score">${report.fadingFortune.averageValue}</span></div><span class="mastery-row-meta">Higher values mean more answers were committed before distractors disappeared.</span></div>
+            </div>` : "";
+    const riskRewardSection = report.riskReward ? `
+            <div class="mastery-section">
+                <h3>Risk & Confidence</h3>
+                <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Starting → Final bankroll</span><span class="mastery-row-score">${report.riskReward.startingBankroll} → ${report.riskReward.finalBankroll}</span></div><span class="mastery-row-meta">Net ${report.riskReward.net >= 0 ? "+" : ""}${report.riskReward.net}. Wagering behavior is separate from mastery evidence.</span></div>
+                <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Peak bankroll</span><span class="mastery-row-score">${report.riskReward.peakBankroll}</span></div><span class="mastery-row-meta">Largest single wager: ${report.riskReward.largestWager}. Average wager: ${report.riskReward.averageWagerPercent}% of bankroll.</span></div>
+                ${['10%','25%','50%','ALL IN'].map(tier => { const attempts=report.riskReward.attemptsByTier[tier]||0; const correct=report.riskReward.correctByTier[tier]||0; const accuracy=attempts ? Math.round(correct/attempts*100) : 0; return `<div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">${tier} wagers</span><span class="mastery-row-score">${report.riskReward.wagerCounts[tier]||0}</span></div><span class="mastery-row-meta">Answered ${attempts}; correct ${correct}${attempts ? ` (${accuracy}%)` : ''}.</span></div>`; }).join('')}
+                <div class="mastery-row"><div class="mastery-row-main"><span class="mastery-row-name">Outcome</span><span class="mastery-row-score">${report.riskReward.busted ? 'Busted' : 'Survived'}</span></div><span class="mastery-row-meta">All-In attempts: ${report.riskReward.allInAttempts}. Risk behavior is contextual evidence, not a mastery score.</span></div>
             </div>` : "";
 
     gameBox.innerHTML = `
@@ -36781,6 +37563,7 @@ function showMasteryReportScreen(options = {}){
             })}
 
             ${fadingFortuneSection}
+            ${riskRewardSection}
 
             <div class="mastery-section">
                 <h3>Behavior Signals</h3>

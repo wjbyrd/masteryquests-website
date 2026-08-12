@@ -1,6 +1,6 @@
 {
-  "phase": "mode9-fading-fortune-v1",
-  "ok": false,
+  "phase": "mode10-risk-reward-v1",
+  "ok": true,
   "composerVersion": "4.5s.2m",
   "canonicalQuestionCount": 8163,
   "perfectCompetitionEligible": 383,
@@ -25,7 +25,7 @@
       15
     ]
   },
-  "allNineModes": [
+  "allTenModes": [
     {
       "mode": "standard",
       "ok": true
@@ -67,25 +67,46 @@
       "ok": true
     }
   ],
+  "configRiskReward": {
+    "enabled": true,
+    "startingBankroll": 1000,
+    "wagerOptions": [
+      {
+        "label": "10%",
+        "ratio": 0.1
+      },
+      {
+        "label": "25%",
+        "ratio": 0.25
+      },
+      {
+        "label": "50%",
+        "ratio": 0.5
+      },
+      {
+        "label": "ALL IN",
+        "ratio": 1
+      }
+    ],
+    "allowedTargets": [
+      10,
+      15,
+      20
+    ]
+  },
   "sourceChecks": {
     "card": true,
     "setup": true,
     "hud": true,
-    "decay": true,
-    "correctProtected": true,
-    "answerFreeze": true,
-    "graphPause": true,
-    "visibilityPause": true,
-    "modalPause": true,
-    "rapidPause": true,
-    "noRemediation": false,
+    "hiddenUntilWager": true,
+    "settlementGuard": true,
+    "allInBust": true,
+    "noRemediation": true,
     "fixedCompletion": true,
-    "report": true,
-    "telemetry": true
+    "mastery": true,
+    "telemetry": true,
+    "bustedResult": true,
+    "replay": true
   },
-  "issues": [
-    "composer version 4.5s.2m",
-    "mode order [\"standard\",\"timed\",\"exam\",\"quiz\",\"unlimited\",\"legendary\",\"score\",\"trialGraph\",\"fadingFortune\",\"riskReward\"]",
-    "missing noRemediation"
-  ]
+  "issues": []
 }

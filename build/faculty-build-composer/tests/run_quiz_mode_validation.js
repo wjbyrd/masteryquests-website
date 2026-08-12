@@ -79,7 +79,7 @@ function countSeq(seq){
     max15: html.includes('<option value="15">15 questions</option>'),
     fixedCompletion: html.includes('quizQuestionsCompleted >= quizQuestionTarget'),
     noQuizRemediation: html.includes('gameMode !== "quiz" && !remediationState.active'),
-    noQuizSetbackBranch: html.includes('QUIZ MODE: FIXED LENGTH, NO SETBACKS OR REMEDIATION DETOURS'),
+    noQuizSetbackBranch: html.includes('FIXED-LENGTH MODES: NO SETBACKS OR REMEDIATION DETOURS'),
     quizNoBosses: html.includes('gameMode === "exam" || gameMode === "timed" || gameMode === "quiz"'),
     quizReport: html.includes('if(gameMode === "quiz") return "Quiz";'),
     quizConfigOnly: config.supportedModes.length===1 && config.supportedModes[0]==='quiz'

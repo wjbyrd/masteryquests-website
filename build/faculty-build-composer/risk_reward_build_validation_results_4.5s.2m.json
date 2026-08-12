@@ -1,0 +1,119 @@
+{
+  "ok": true,
+  "composerVersion": "4.5s.2m",
+  "modes": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "unlimited",
+    "legendary",
+    "score",
+    "trialGraph",
+    "fadingFortune",
+    "riskReward"
+  ],
+  "riskRewardEligible": 383,
+  "riskRewardByDifficulty": {
+    "easy": 76,
+    "medium": 78,
+    "hard": 85,
+    "elite": 44,
+    "legendary": 100
+  },
+  "riskRewardQuestionIds": 383,
+  "uniqueRiskRewardIds": 383,
+  "graphSafe": 76,
+  "fadingFortuneEligible": 383,
+  "assets": 41,
+  "htmlBytes": 3921895,
+  "configRiskReward": {
+    "enabled": true,
+    "startingBankroll": 1000,
+    "wagerOptions": [
+      {
+        "label": "10%",
+        "ratio": 0.1
+      },
+      {
+        "label": "25%",
+        "ratio": 0.25
+      },
+      {
+        "label": "50%",
+        "ratio": 0.5
+      },
+      {
+        "label": "ALL IN",
+        "ratio": 1
+      }
+    ],
+    "allowedTargets": [
+      10,
+      15,
+      20
+    ]
+  },
+  "validation": [
+    {
+      "mode": "standard",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "timed",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "exam",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "quiz",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "unlimited",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "legendary",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "score",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    },
+    {
+      "mode": "riskReward",
+      "ok": true,
+      "deficiencies": 0,
+      "issues": 0
+    }
+  ]
+}
