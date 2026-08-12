@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-12T17:45:00.000Z",
+  "generatedAt": "2026-08-12T18:20:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -39,23 +39,21 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 2,
-        "calculation": 0,
         "elite": 6,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 26,
-        "repair": 5,
-        "repairSeed": 0
+        "main": 26
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 13,
-        "hard": 11,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 11,
-        "unknown": 7
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "medium": 10,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 5,
@@ -113,23 +111,21 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
         "elite": 6,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 27,
-        "repair": 6,
-        "repairSeed": 0
+        "main": 27
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 13,
-        "hard": 12,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 11,
-        "unknown": 10
+        "finalBoss": 3,
+        "hard": 9,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "medium": 10,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -226,23 +222,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 6,
-        "calculation": 30,
+        "calculation": 22,
         "elite": 13,
-        "integration": 0,
         "legendary": 7,
         "legendaryBoss": 5,
-        "main": 18,
-        "repair": 10,
-        "repairSeed": 0
+        "main": 26
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 12,
+        "easyboss": 3,
         "elite": 13,
-        "legendary": 12,
-        "unknown": 16
+        "finalBoss": 3,
+        "hard": 18,
+        "legendary": 7,
+        "legendaryboss": 5,
+        "medium": 18,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 10,
@@ -336,23 +331,20 @@
       ],
       "questionCountByRole": {
         "boss": 6,
-        "bridge": 6,
         "calculation": 6,
         "elite": 6,
-        "integration": 0,
         "legendary": 10,
         "legendaryBoss": 3,
-        "main": 24,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 24
       },
       "questionCountByDifficulty": {
         "easy": 8,
-        "medium": 13,
-        "hard": 15,
         "elite": 6,
-        "legendary": 13,
-        "unknown": 10
+        "finalBoss": 6,
+        "hard": 9,
+        "legendary": 10,
+        "legendaryBoss": 3,
+        "medium": 13
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -441,23 +433,20 @@
       ],
       "questionCountByRole": {
         "boss": 6,
-        "bridge": 4,
         "calculation": 6,
         "elite": 4,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 20,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 20
       },
       "questionCountByDifficulty": {
         "easy": 7,
-        "medium": 10,
-        "hard": 15,
         "elite": 4,
-        "legendary": 11,
-        "unknown": 8
+        "finalBoss": 6,
+        "hard": 9,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "medium": 10
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -531,23 +520,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 0,
         "elite": 2,
-        "integration": 0,
+        "hard": 2,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 19,
-        "repair": 8,
-        "repairSeed": 0
+        "main": 15,
+        "medium": 2
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 9,
-        "hard": 9,
+        "easy": 7,
+        "easyboss": 3,
         "elite": 2,
-        "legendary": 9,
-        "unknown": 11
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 2,
+        "legendaryboss": 1,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -611,23 +601,18 @@
       ],
       "questionCountByRole": {
         "boss": 6,
-        "bridge": 1,
-        "calculation": 0,
         "elite": 2,
-        "integration": 0,
         "legendary": 3,
-        "legendaryBoss": 0,
-        "main": 12,
-        "repair": 2,
-        "repairSeed": 1
+        "main": 12
       },
       "questionCountByDifficulty": {
-        "easy": 7,
+        "easy": 4,
+        "easyBoss": 3,
         "elite": 2,
         "hard": 4,
         "legendary": 3,
-        "medium": 7,
-        "unknown": 4
+        "medium": 4,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -703,24 +688,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 134,
+        "boss": 54,
+        "calculation": 30,
         "elite": 30,
         "legendary": 90,
-        "calculation": 30,
-        "boss": 54,
         "legendaryBoss": 36,
-        "repair": 30,
-        "bridge": 38,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 134
       },
       "questionCountByDifficulty": {
-        "easy": 70,
-        "medium": 68,
-        "hard": 80,
+        "calculation": 30,
+        "checkpointOne": 18,
+        "checkpointTwo": 18,
+        "easy": 52,
         "elite": 30,
-        "legendary": 126,
-        "unknown": 68
+        "finalCheckpoint": 18,
+        "hard": 32,
+        "legendary": 90,
+        "legendaryBoss": 36,
+        "medium": 50
       },
       "repairCoverage": {
         "directSkillMatches": 30,
@@ -780,26 +765,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 23,
-        "elite": 2,
-        "legendary": 3,
-        "calculation": 10,
-        "boss": 10,
-        "legendaryBoss": 1,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 17,
-        "medium": 14,
-        "hard": 12,
-        "elite": 2,
-        "legendary": 4,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 61
@@ -873,26 +840,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 24,
-        "elite": 3,
-        "legendary": 3,
-        "calculation": 10,
-        "boss": 10,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 17,
-        "medium": 14,
-        "hard": 13,
-        "elite": 3,
-        "legendary": 3,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 62
@@ -965,26 +914,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 7,
-        "legendary": 20,
-        "calculation": 3,
-        "boss": 10,
-        "legendaryBoss": 10,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 13,
-        "hard": 16,
-        "elite": 7,
-        "legendary": 30,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 90
@@ -1059,26 +990,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 30,
-        "elite": 6,
-        "legendary": 38,
-        "calculation": 5,
-        "boss": 15,
-        "legendaryBoss": 13,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 15,
-        "hard": 22,
-        "elite": 6,
-        "legendary": 51,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 119
@@ -1152,26 +1065,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 14,
-        "elite": 9,
-        "legendary": 18,
-        "calculation": 2,
-        "boss": 5,
-        "legendaryBoss": 8,
-        "repair": 3,
-        "bridge": 11,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 6,
-        "hard": 10,
-        "elite": 9,
-        "legendary": 26,
-        "unknown": 14
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 70
@@ -1242,26 +1137,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 3,
-        "legendary": 8,
-        "calculation": 0,
-        "boss": 4,
-        "legendaryBoss": 4,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 6,
-        "hard": 7,
-        "elite": 3,
-        "legendary": 12,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 40
@@ -1375,23 +1252,23 @@
       ],
       "questionCountByRole": {
         "boss": 60,
-        "bridge": 53,
         "calculation": 30,
         "elite": 42,
-        "integration": 0,
         "legendary": 98,
         "legendaryBoss": 36,
-        "main": 238,
-        "repair": 51,
-        "repairSeed": 0
+        "main": 238
       },
       "questionCountByDifficulty": {
-        "easy": 106,
+        "calculation": 30,
+        "checkpointOne": 20,
+        "checkpointTwo": 20,
+        "easy": 86,
         "elite": 42,
-        "hard": 115,
-        "legendary": 134,
-        "medium": 107,
-        "unknown": 104
+        "finalCheckpoint": 20,
+        "hard": 65,
+        "legendary": 98,
+        "legendaryBoss": 36,
+        "medium": 87
       },
       "repairCoverage": {
         "directSkillMatches": 51,
@@ -1452,26 +1329,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 11,
-        "elite": 0,
-        "legendary": 1,
-        "calculation": 4,
-        "boss": 2,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 5,
-        "hard": 5,
-        "elite": 0,
-        "legendary": 1,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 18
@@ -1545,26 +1404,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 26,
-        "elite": 2,
-        "legendary": 13,
-        "calculation": 4,
-        "boss": 3,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 10,
-        "hard": 10,
-        "elite": 2,
-        "legendary": 25,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 60
@@ -1643,26 +1484,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 32,
-        "elite": 7,
-        "legendary": 10,
-        "calculation": 4,
-        "boss": 15,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 24,
-        "medium": 13,
-        "hard": 14,
-        "elite": 7,
-        "legendary": 10,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 68
@@ -1737,26 +1560,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 27,
-        "elite": 1,
-        "legendary": 6,
-        "calculation": 7,
-        "boss": 2,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 12,
-        "hard": 14,
-        "elite": 1,
-        "legendary": 18,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 55
@@ -1829,26 +1634,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 25,
-        "elite": 8,
-        "legendary": 6,
-        "calculation": 5,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 15,
-        "hard": 10,
-        "elite": 8,
-        "legendary": 6,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 49
@@ -1924,26 +1711,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 26,
-        "elite": 3,
-        "legendary": 5,
-        "calculation": 4,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 7,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 12,
-        "hard": 13,
-        "elite": 3,
-        "legendary": 5,
-        "unknown": 13
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 43
@@ -2021,26 +1790,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 33,
-        "elite": 10,
-        "legendary": 31,
-        "calculation": 0,
-        "boss": 15,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 7,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 20,
-        "hard": 16,
-        "elite": 10,
-        "legendary": 43,
-        "unknown": 13
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 101
@@ -2112,26 +1863,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 3,
-        "legendary": 3,
-        "calculation": 0,
-        "boss": 2,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 5,
-        "hard": 7,
-        "elite": 3,
-        "legendary": 3,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 23
@@ -2205,26 +1938,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 5,
-        "legendary": 18,
-        "calculation": 2,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 10,
-        "hard": 16,
-        "elite": 5,
-        "legendary": 18,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 59
@@ -2296,26 +2011,8 @@
         "costsOfProduction",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 3,
-        "legendary": 5,
-        "calculation": 0,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 5,
-        "hard": 10,
-        "elite": 3,
-        "legendary": 5,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 28
@@ -2393,23 +2090,22 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 2,
         "calculation": 11,
         "elite": 4,
-        "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 28,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 28
       },
       "questionCountByDifficulty": {
-        "easy": 16,
+        "easy": 10,
+        "easyBoss": 6,
         "elite": 4,
-        "hard": 18,
-        "legendary": 9,
-        "medium": 17,
-        "unknown": 6
+        "finalBoss": 3,
+        "hard": 15,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 14,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -2460,23 +2156,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 2,
-        "calculation": 0,
+        "easy": 2,
         "elite": 5,
-        "integration": 0,
+        "hard": 1,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 14,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 5,
-        "legendary": 9,
-        "unknown": 6
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -2528,23 +2225,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 1,
-        "calculation": 0,
+        "easy": 2,
         "elite": 4,
-        "integration": 0,
+        "hard": 2,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 12,
+        "medium": 2
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 9,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -2620,23 +2318,21 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 6,
-        "calculation": 0,
         "elite": 7,
-        "integration": 0,
         "legendary": 9,
         "legendaryBoss": 3,
-        "main": 33,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 33
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 15,
-        "hard": 13,
+        "easy": 11,
+        "easyBoss": 3,
         "elite": 7,
-        "legendary": 12,
-        "unknown": 10
+        "finalBoss": 3,
+        "hard": 10,
+        "legendary": 9,
+        "legendaryBoss": 3,
+        "medium": 12,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -2696,23 +2392,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 0,
+        "easy": 2,
         "elite": 2,
-        "integration": 0,
+        "hard": 2,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 10,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 2,
-        "legendary": 9,
-        "unknown": 5
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -2757,23 +2454,24 @@
       ],
       "questionCountByRole": {
         "boss": 15,
-        "bridge": 1,
-        "calculation": 0,
+        "easy": 2,
         "elite": 4,
-        "integration": 0,
+        "hard": 2,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 12,
+        "medium": 2
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 15,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 10,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 9
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -2837,23 +2535,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
+        "easy": 4,
         "elite": 3,
-        "integration": 0,
+        "hard": 5,
         "legendary": 10,
         "legendaryBoss": 4,
-        "main": 24,
-        "repair": 6,
-        "repairSeed": 1
+        "main": 11,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 11,
-        "hard": 11,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 3,
-        "legendary": 14,
-        "unknown": 11
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 10,
+        "legendaryBoss": 4,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -2942,24 +2641,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 164,
+        "boss": 60,
+        "calculation": 30,
         "elite": 38,
         "legendary": 97,
-        "calculation": 30,
-        "boss": 60,
         "legendaryBoss": 36,
-        "repair": 34,
-        "bridge": 36,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 164
       },
       "questionCountByDifficulty": {
-        "easy": 84,
-        "medium": 74,
-        "hard": 96,
+        "calculation": 30,
+        "easy": 64,
+        "easyBoss": 20,
         "elite": 38,
-        "legendary": 133,
-        "unknown": 70
+        "finalBoss": 20,
+        "hard": 46,
+        "legendary": 97,
+        "legendaryBoss": 36,
+        "medium": 54,
+        "mediumBoss": 20
       },
       "repairCoverage": {
         "directSkillMatches": 34,
@@ -3029,26 +2728,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 60,
-        "elite": 15,
-        "legendary": 34,
-        "calculation": 10,
-        "boss": 21,
-        "legendaryBoss": 13,
-        "repair": 10,
-        "bridge": 8,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 34,
-        "medium": 20,
-        "hard": 37,
-        "elite": 15,
-        "legendary": 47,
-        "unknown": 18
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 10,
         "mainWithUsableSkill": 171
@@ -3120,26 +2801,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 26,
-        "elite": 3,
-        "legendary": 15,
-        "calculation": 5,
-        "boss": 6,
-        "legendaryBoss": 4,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 12,
-        "hard": 13,
-        "elite": 3,
-        "legendary": 19,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 71
@@ -3207,26 +2870,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 11,
-        "elite": 2,
-        "legendary": 8,
-        "calculation": 5,
-        "boss": 4,
-        "legendaryBoss": 2,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 6,
-        "hard": 7,
-        "elite": 2,
-        "legendary": 10,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 38
@@ -3294,26 +2939,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 12,
-        "elite": 4,
-        "legendary": 10,
-        "calculation": 5,
-        "boss": 5,
-        "legendaryBoss": 2,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 7,
-        "hard": 8,
-        "elite": 4,
-        "legendary": 12,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 44
@@ -3383,26 +3010,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 25,
-        "elite": 8,
-        "legendary": 8,
-        "calculation": 5,
-        "boss": 11,
-        "legendaryBoss": 2,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 15,
-        "hard": 13,
-        "elite": 8,
-        "legendary": 10,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 71
@@ -3477,26 +3086,8 @@
       "sourceGames": [
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 30,
-        "elite": 6,
-        "legendary": 22,
-        "calculation": 0,
-        "boss": 13,
-        "legendaryBoss": 13,
-        "repair": 6,
-        "bridge": 10,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 14,
-        "hard": 18,
-        "elite": 6,
-        "legendary": 35,
-        "unknown": 16
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 100
@@ -3620,23 +3211,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 5,
         "calculation": 12,
         "elite": 11,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 19,
-        "repair": 9,
-        "repairSeed": 0
+        "main": 19
       },
       "questionCountByDifficulty": {
         "easy": 9,
-        "medium": 10,
-        "hard": 9,
+        "easyBoss": 3,
         "elite": 11,
-        "legendary": 11,
-        "unknown": 14
+        "finalboss": 3,
+        "hard": 11,
+        "legendary": 8,
+        "legendaryboss": 3,
+        "medium": 11,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 9,
@@ -3708,23 +3298,23 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 4,
+        "calculation": 1,
         "elite": 4,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 20,
-        "repair": 6,
-        "repairSeed": 0
+        "main": 23
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 11,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 11,
-        "unknown": 9
+        "finalboss": 3,
+        "hard": 10,
+        "legendary": 8,
+        "legendaryBoss": 2,
+        "legendaryboss": 1,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -3792,23 +3382,25 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
         "calculation": 8,
+        "easy": 2,
         "elite": 3,
-        "integration": 0,
+        "hard": 5,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 16,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 6,
+        "medium": 3
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 7,
-        "hard": 8,
+        "easy": 9,
+        "easyBoss": 3,
         "elite": 3,
-        "legendary": 9,
-        "unknown": 7
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 6,
+        "legendaryboss": 3,
+        "medium": 7,
+        "mediumboss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -3908,23 +3500,21 @@
       ],
       "questionCountByRole": {
         "boss": 15,
-        "bridge": 6,
-        "calculation": 0,
         "elite": 6,
-        "integration": 0,
         "legendary": 27,
         "legendaryBoss": 9,
-        "main": 34,
-        "repair": 8,
-        "repairSeed": 1
+        "main": 34
       },
       "questionCountByDifficulty": {
-        "easy": 15,
+        "easy": 10,
+        "easyBoss": 5,
         "elite": 6,
-        "hard": 17,
-        "legendary": 36,
-        "medium": 17,
-        "unknown": 15
+        "finalBoss": 5,
+        "hard": 12,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "medium": 12,
+        "mediumBoss": 5
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -3983,23 +3573,25 @@
       ],
       "questionCountByRole": {
         "boss": 15,
-        "bridge": 3,
         "calculation": 7,
+        "easy": 1,
         "elite": 5,
-        "integration": 0,
+        "hard": 4,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 6,
-        "repairSeed": 0
+        "main": 10,
+        "medium": 3
       },
       "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 9,
-        "hard": 9,
+        "easy": 7,
+        "easyBoss": 9,
         "elite": 5,
-        "legendary": 9,
-        "unknown": 9
+        "finalBoss": 3,
+        "hard": 9,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 9,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -4067,23 +3659,22 @@
       ],
       "questionCountByRole": {
         "boss": 19,
-        "bridge": 3,
         "calculation": 6,
         "elite": 8,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 20,
-        "repair": 6,
-        "repairSeed": 0
+        "main": 20
       },
       "questionCountByDifficulty": {
-        "easy": 22,
+        "easy": 9,
+        "easyBoss": 13,
         "elite": 8,
-        "hard": 11,
-        "legendary": 11,
-        "medium": 12,
-        "unknown": 9
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "medium": 9,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -4164,23 +3755,21 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 5,
-        "calculation": 0,
         "elite": 4,
-        "integration": 0,
         "legendary": 27,
         "legendaryBoss": 9,
-        "main": 30,
-        "repair": 7,
-        "repairSeed": 1
+        "main": 30
       },
       "questionCountByDifficulty": {
-        "easy": 14,
+        "easy": 10,
+        "easyBoss": 4,
         "elite": 4,
-        "hard": 14,
-        "legendary": 36,
-        "medium": 14,
-        "unknown": 13
+        "finalBoss": 4,
+        "hard": 10,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "medium": 10,
+        "mediumBoss": 4
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -4233,23 +3822,25 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 1,
         "calculation": 7,
+        "easy": 5,
         "elite": 3,
-        "integration": 0,
+        "hard": 5,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 4,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 3,
-        "legendary": 9,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 9,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -4325,23 +3916,23 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
         "elite": 6,
-        "integration": 0,
+        "hard": 1,
         "legendary": 6,
         "legendaryBoss": 4,
-        "main": 22,
-        "repair": 7,
-        "repairSeed": 0
+        "main": 20,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 11,
-        "hard": 11,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 10,
-        "unknown": 11
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 6,
+        "legendaryboss": 4,
+        "medium": 8,
+        "mediumboss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -4415,23 +4006,26 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 2,
         "calculation": 1,
+        "easy": 1,
         "elite": 6,
-        "integration": 0,
+        "hard": 1,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 15,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 9,
-        "unknown": 5
+        "finalBoss": 3,
+        "hard": 7,
+        "legendary": 6,
+        "legendaryBoss": 1,
+        "legendaryboss": 2,
+        "medium": 6,
+        "mediumboss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -4599,23 +4193,17 @@
       ],
       "questionCountByRole": {
         "boss": 56,
-        "bridge": 6,
-        "calculation": 0,
         "elite": 5,
-        "integration": 0,
         "legendary": 7,
-        "legendaryBoss": 24,
-        "main": 0,
-        "repair": 6,
-        "repairSeed": 0
+        "legendaryBoss": 24
       },
       "questionCountByDifficulty": {
-        "easy": 8,
-        "medium": 24,
-        "hard": 24,
+        "easyBoss": 8,
         "elite": 5,
-        "legendary": 31,
-        "unknown": 12
+        "finalBoss": 24,
+        "legendary": 7,
+        "legendaryBoss": 24,
+        "mediumBoss": 24
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -4763,23 +4351,22 @@
       ],
       "questionCountByRole": {
         "boss": 40,
-        "bridge": 1,
-        "calculation": 0,
         "elite": 7,
         "integration": 10,
         "legendary": 29,
-        "legendaryBoss": 24,
-        "main": 0,
-        "repair": 1,
-        "repairSeed": 0
+        "legendaryBoss": 24
       },
       "questionCountByDifficulty": {
-        "easy": 8,
-        "medium": 9,
-        "hard": 40,
+        "easy": 1,
+        "easyBoss": 2,
+        "easyboss": 5,
         "elite": 7,
-        "legendary": 53,
-        "unknown": 2
+        "finalBoss": 26,
+        "hard": 7,
+        "legendary": 29,
+        "legendaryBoss": 24,
+        "medium": 2,
+        "mediumBoss": 7
       },
       "repairCoverage": {
         "directSkillMatches": 0,
@@ -4890,24 +4477,27 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 163,
+        "boss": 58,
+        "calculation": 30,
         "elite": 38,
         "legendary": 100,
-        "calculation": 30,
-        "boss": 58,
         "legendaryBoss": 36,
-        "repair": 30,
-        "bridge": 32,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 163
       },
       "questionCountByDifficulty": {
-        "easy": 70,
-        "medium": 78,
-        "hard": 103,
+        "calculation": 30,
+        "checkpointOne": 18,
+        "checkpointTwo": 18,
+        "easy": 50,
+        "easyBoss": 2,
         "elite": 38,
-        "legendary": 136,
-        "unknown": 62
+        "finalBoss": 1,
+        "finalCheckpoint": 18,
+        "hard": 54,
+        "legendary": 100,
+        "legendaryBoss": 36,
+        "medium": 59,
+        "mediumBoss": 1
       },
       "repairCoverage": {
         "directSkillMatches": 30,
@@ -4968,26 +4558,8 @@
         "internationalTradeTradePolicy",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 22,
-        "elite": 3,
-        "legendary": 0,
-        "calculation": 0,
-        "boss": 4,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 5,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 12,
-        "hard": 5,
-        "elite": 3,
-        "legendary": 0,
-        "unknown": 8
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 37
@@ -5066,26 +4638,8 @@
         "internationalTradeTradePolicy",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 26,
-        "elite": 0,
-        "legendary": 20,
-        "calculation": 8,
-        "boss": 14,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 22,
-        "medium": 14,
-        "hard": 12,
-        "elite": 0,
-        "legendary": 20,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 80
@@ -5164,26 +4718,8 @@
         "internationalTradeTradePolicy",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 37,
-        "elite": 8,
-        "legendary": 24,
-        "calculation": 15,
-        "boss": 18,
-        "legendaryBoss": 24,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 24,
-        "hard": 32,
-        "elite": 8,
-        "legendary": 48,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 138
@@ -5266,26 +4802,8 @@
         "internationalTradeTradePolicy",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 34,
-        "elite": 8,
-        "legendary": 24,
-        "calculation": 6,
-        "boss": 8,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 11,
-        "hard": 27,
-        "elite": 8,
-        "legendary": 36,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 104
@@ -5368,26 +4886,8 @@
         "internationalTradeTradePolicy",
         "micro-concept-library"
       ],
-      "questionCountByRole": {
-        "main": 29,
-        "elite": 7,
-        "legendary": 6,
-        "calculation": 1,
-        "boss": 8,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 10,
-        "hard": 18,
-        "elite": 7,
-        "legendary": 6,
-        "unknown": 12
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 63
@@ -5461,26 +4961,8 @@
       "sourceGames": [
         "internationalTradeTradePolicy"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 12,
-        "legendary": 26,
-        "calculation": 0,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 7,
-        "hard": 9,
-        "elite": 12,
-        "legendary": 26,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 65
@@ -5550,23 +5032,24 @@
       ],
       "questionCountByRole": {
         "boss": 20,
-        "bridge": 3,
-        "calculation": 0,
+        "easy": 2,
         "elite": 4,
-        "integration": 0,
+        "hard": 2,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 12,
+        "medium": 2
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 20,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 10,
-        "unknown": 6
+        "finalBoss": 14,
+        "hard": 6,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -5619,23 +5102,24 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 1,
-        "calculation": 0,
+        "easy": 4,
         "elite": 3,
-        "integration": 0,
+        "hard": 3,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 7,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 6,
         "elite": 3,
-        "legendary": 9,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -5721,23 +5205,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 5,
-        "calculation": 0,
         "elite": 16,
-        "integration": 0,
         "legendary": 18,
         "legendaryBoss": 5,
-        "main": 44,
-        "repair": 7,
-        "repairSeed": 0
+        "main": 44
       },
       "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 23,
-        "hard": 15,
+        "easy": 12,
+        "easyBoss": 3,
         "elite": 16,
-        "legendary": 23,
-        "unknown": 12
+        "finalboss": 3,
+        "hard": 12,
+        "legendary": 18,
+        "legendaryBoss": 3,
+        "legendaryboss": 2,
+        "medium": 20,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -5787,23 +5270,22 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 2,
         "calculation": 6,
         "elite": 5,
-        "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 18
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 12,
-        "hard": 9,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 5,
-        "legendary": 9,
-        "unknown": 6
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 8,
+        "mediumBoss": 6
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -5859,23 +5341,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 2,
-        "calculation": 0,
+        "easy": 1,
         "elite": 6,
-        "integration": 0,
+        "hard": 1,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 5,
-        "repairSeed": 0
+        "main": 15,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 9,
-        "unknown": 7
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 5,
@@ -5939,23 +5422,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 0,
+        "easy": 2,
         "elite": 2,
-        "integration": 0,
+        "hard": 2,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 16,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
-        "elite": 2,
-        "legendary": 9,
-        "unknown": 5
+        "easy": 6,
+        "easyBoss": 3,
+        "elite": 6,
+        "finalBoss": 3,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -5966,7 +5450,7 @@
         "mainWithUsableSkill": 43
       },
       "calculationCoverage": 0,
-      "graphCoverage": 7,
+      "graphCoverage": 13,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
       "instructionalClassification": "Engine-safe family slice",
@@ -6017,23 +5501,21 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 0,
         "elite": 11,
-        "integration": 0,
         "legendary": 10,
         "legendaryBoss": 3,
-        "main": 38,
-        "repair": 9,
-        "repairSeed": 0
+        "main": 38
       },
       "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 19,
-        "hard": 14,
+        "easy": 11,
+        "easyBoss": 3,
         "elite": 11,
-        "legendary": 13,
-        "unknown": 12
+        "finalBoss": 3,
+        "hard": 11,
+        "legendary": 10,
+        "legendaryBoss": 3,
+        "medium": 16,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 9,
@@ -6105,23 +5587,22 @@
       ],
       "questionCountByRole": {
         "boss": 15,
-        "bridge": 6,
         "calculation": 2,
         "elite": 6,
-        "integration": 0,
         "legendary": 27,
         "legendaryBoss": 9,
-        "main": 34,
-        "repair": 8,
-        "repairSeed": 1
+        "main": 34
       },
       "questionCountByDifficulty": {
-        "easy": 16,
+        "easy": 11,
+        "easyBoss": 5,
         "elite": 6,
-        "hard": 18,
-        "legendary": 36,
-        "medium": 17,
-        "unknown": 15
+        "finalBoss": 5,
+        "hard": 13,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "medium": 12,
+        "mediumBoss": 5
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -6223,23 +5704,22 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 4,
         "calculation": 4,
         "elite": 6,
-        "integration": 0,
         "legendary": 17,
         "legendaryBoss": 3,
-        "main": 39,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 39
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 24,
-        "hard": 20,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 20,
-        "unknown": 7
+        "finalBoss": 3,
+        "hard": 17,
+        "legendary": 17,
+        "legendaryBoss": 3,
+        "medium": 18,
+        "mediumBoss": 6
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -6305,23 +5785,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
+        "easy": 3,
         "elite": 4,
-        "integration": 0,
+        "hard": 4,
         "legendary": 12,
         "legendaryBoss": 5,
-        "main": 24,
-        "repair": 7,
-        "repairSeed": 2
+        "main": 13,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 11,
-        "hard": 11,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 17,
-        "unknown": 13
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 12,
+        "legendaryBoss": 5,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -6378,23 +5859,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
+        "easy": 4,
         "elite": 3,
-        "integration": 0,
+        "hard": 4,
         "legendary": 10,
         "legendaryBoss": 4,
-        "main": 24,
-        "repair": 6,
-        "repairSeed": 1
+        "main": 12,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 11,
-        "hard": 11,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 3,
-        "legendary": 14,
-        "unknown": 11
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 10,
+        "legendaryBoss": 4,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -6460,23 +5942,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
+        "easy": 4,
         "elite": 4,
-        "integration": 0,
+        "hard": 4,
         "legendary": 12,
         "legendaryBoss": 6,
-        "main": 24,
-        "repair": 6,
-        "repairSeed": 1
+        "main": 12,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 11,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 4,
-        "hard": 11,
-        "legendary": 18,
-        "medium": 11,
-        "unknown": 11
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 12,
+        "legendaryBoss": 6,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -6561,23 +6044,23 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
         "calculation": 2,
         "elite": 9,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 4,
-        "main": 21,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 20,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 12,
+        "easy": 6,
+        "easyboss": 3,
         "elite": 9,
-        "legendary": 12,
-        "unknown": 7
+        "finalBoss": 3,
+        "hard": 10,
+        "legendary": 8,
+        "legendaryboss": 4,
+        "medium": 7,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -6654,23 +6137,26 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 5,
         "calculation": 4,
+        "easy": 1,
         "elite": 6,
-        "integration": 0,
+        "hard": 1,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 21,
-        "repair": 7,
-        "repairSeed": 0
+        "main": 18,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 8,
-        "hard": 9,
+        "easy": 10,
+        "easyBoss": 3,
         "elite": 6,
-        "legendary": 10,
-        "unknown": 12
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 7,
+        "legendaryBoss": 1,
+        "legendaryboss": 2,
+        "medium": 7,
+        "mediumboss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -6750,23 +6236,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
         "calculation": 2,
         "elite": 8,
-        "integration": 0,
         "legendary": 6,
         "legendaryBoss": 4,
-        "main": 21,
-        "repair": 7,
-        "repairSeed": 0
+        "main": 21
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 11,
-        "hard": 9,
+        "easy": 7,
+        "easyboss": 3,
         "elite": 8,
-        "legendary": 10,
-        "unknown": 10
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 6,
+        "legendaryboss": 4,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -6868,23 +6353,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 0,
         "elite": 8,
-        "integration": 0,
         "legendary": 16,
         "legendaryBoss": 4,
-        "main": 39,
-        "repair": 8,
-        "repairSeed": 0
+        "main": 39
       },
       "questionCountByDifficulty": {
-        "easy": 16,
-        "medium": 17,
-        "hard": 15,
+        "easy": 13,
+        "easyBoss": 3,
         "elite": 8,
-        "legendary": 20,
-        "unknown": 11
+        "finalboss": 3,
+        "hard": 12,
+        "legendary": 16,
+        "legendaryBoss": 1,
+        "legendaryboss": 3,
+        "medium": 14,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -6964,23 +6448,23 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
         "calculation": 3,
         "elite": 4,
-        "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 26,
-        "repair": 11,
-        "repairSeed": 0
+        "main": 26
       },
       "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 11,
-        "hard": 9,
+        "easy": 12,
+        "easyboss": 3,
         "elite": 4,
-        "legendary": 9,
-        "unknown": 15
+        "finalBoss": 3,
+        "hard": 7,
+        "legendary": 6,
+        "legendaryBoss": 2,
+        "legendaryboss": 1,
+        "medium": 10,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 11,
@@ -7077,24 +6561,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 152,
+        "boss": 57,
+        "calculation": 30,
         "elite": 37,
         "legendary": 95,
-        "calculation": 30,
-        "boss": 57,
         "legendaryBoss": 36,
-        "repair": 26,
-        "bridge": 26,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 152
       },
       "questionCountByDifficulty": {
-        "easy": 77,
+        "calculation": 30,
+        "checkpointOne": 19,
+        "checkpointTwo": 19,
+        "easy": 52,
         "elite": 37,
-        "hard": 96,
-        "legendary": 131,
-        "medium": 78,
-        "unknown": 40
+        "finalCheckpoint": 19,
+        "hard": 47,
+        "legendary": 95,
+        "legendaryBoss": 36,
+        "medium": 53
       },
       "repairCoverage": {
         "directSkillMatches": 26,
@@ -7160,26 +6644,8 @@
         "micro-concept-library",
         "monopolisticCompetition"
       ],
-      "questionCountByRole": {
-        "main": 20,
-        "elite": 0,
-        "legendary": 0,
-        "calculation": 0,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 4,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 17,
-        "medium": 5,
-        "hard": 5,
-        "elite": 0,
-        "legendary": 0,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 26
@@ -7260,26 +6726,8 @@
         "micro-concept-library",
         "monopolisticCompetition"
       ],
-      "questionCountByRole": {
-        "main": 36,
-        "elite": 0,
-        "legendary": 20,
-        "calculation": 21,
-        "boss": 12,
-        "legendaryBoss": 24,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 25,
-        "medium": 14,
-        "hard": 34,
-        "elite": 0,
-        "legendary": 44,
-        "unknown": 8
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 113
@@ -7373,26 +6821,8 @@
       "sourceGames": [
         "monopolisticCompetition"
       ],
-      "questionCountByRole": {
-        "main": 53,
-        "elite": 27,
-        "legendary": 43,
-        "calculation": 7,
-        "boss": 21,
-        "legendaryBoss": 12,
-        "repair": 8,
-        "bridge": 7,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 16,
-        "medium": 41,
-        "hard": 24,
-        "elite": 27,
-        "legendary": 55,
-        "unknown": 15
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 8,
         "mainWithUsableSkill": 163
@@ -7474,26 +6904,8 @@
         "micro-concept-library",
         "monopolisticCompetition"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 5,
-        "legendary": 19,
-        "calculation": 2,
-        "boss": 10,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 13,
-        "hard": 20,
-        "elite": 5,
-        "legendary": 19,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 64
@@ -7572,26 +6984,8 @@
         "micro-concept-library",
         "monopolisticCompetition"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 5,
-        "legendary": 13,
-        "calculation": 0,
-        "boss": 8,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 5,
-        "hard": 13,
-        "elite": 5,
-        "legendary": 13,
-        "unknown": 5
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 41
@@ -7710,24 +7104,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 186,
+        "boss": 58,
+        "calculation": 30,
         "elite": 40,
         "legendary": 96,
-        "calculation": 30,
-        "boss": 58,
         "legendaryBoss": 36,
-        "repair": 39,
-        "bridge": 39,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 186
       },
       "questionCountByDifficulty": {
-        "easy": 106,
+        "calculation": 30,
+        "checkpointOne": 19,
+        "checkpointTwo": 19,
+        "easy": 68,
         "elite": 40,
-        "hard": 101,
-        "legendary": 132,
-        "medium": 105,
-        "unknown": 40
+        "finalCheckpoint": 20,
+        "hard": 51,
+        "legendary": 96,
+        "legendaryBoss": 36,
+        "medium": 67
       },
       "repairCoverage": {
         "directSkillMatches": 39,
@@ -7791,26 +7185,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 16,
-        "elite": 0,
-        "legendary": 0,
-        "calculation": 0,
-        "boss": 0,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 7,
-        "medium": 8,
-        "hard": 5,
-        "elite": 0,
-        "legendary": 0,
-        "unknown": 2
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 16
@@ -7888,26 +7264,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 22,
-        "elite": 0,
-        "legendary": 18,
-        "calculation": 10,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 18,
-        "medium": 13,
-        "hard": 12,
-        "elite": 0,
-        "legendary": 18,
-        "unknown": 7
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 56
@@ -7984,26 +7342,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 30,
-        "elite": 8,
-        "legendary": 16,
-        "calculation": 5,
-        "boss": 12,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 28,
-        "medium": 12,
-        "hard": 13,
-        "elite": 8,
-        "legendary": 28,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 83
@@ -8079,26 +7419,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 30,
-        "elite": 10,
-        "legendary": 9,
-        "calculation": 5,
-        "boss": 20,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 13,
-        "medium": 32,
-        "hard": 13,
-        "elite": 10,
-        "legendary": 21,
-        "unknown": 9
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 86
@@ -8177,26 +7499,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 32,
-        "elite": 9,
-        "legendary": 20,
-        "calculation": 5,
-        "boss": 7,
-        "legendaryBoss": 12,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 11,
-        "hard": 24,
-        "elite": 9,
-        "legendary": 32,
-        "unknown": 7
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 85
@@ -8274,26 +7578,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 9,
-        "legendary": 18,
-        "calculation": 3,
-        "boss": 7,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 15,
-        "hard": 18,
-        "elite": 9,
-        "legendary": 18,
-        "unknown": 3
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 65
@@ -8370,26 +7656,8 @@
         "micro-concept-library",
         "monopoly"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 4,
-        "legendary": 15,
-        "calculation": 2,
-        "boss": 6,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 14,
-        "hard": 16,
-        "elite": 4,
-        "legendary": 15,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 55
@@ -8469,23 +7737,24 @@
       ],
       "questionCountByRole": {
         "boss": 11,
-        "bridge": 1,
-        "calculation": 0,
+        "easy": 2,
         "elite": 2,
-        "integration": 0,
+        "hard": 5,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 9,
+        "medium": 2
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 11,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 2,
-        "legendary": 9,
-        "unknown": 4
+        "finalBoss": 5,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -8585,24 +7854,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 144,
+        "boss": 54,
+        "calculation": 30,
         "elite": 30,
         "legendary": 90,
-        "calculation": 30,
-        "boss": 54,
         "legendaryBoss": 36,
-        "repair": 30,
-        "bridge": 31,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 144
       },
       "questionCountByDifficulty": {
-        "easy": 78,
+        "calculation": 30,
+        "checkpointOne": 18,
+        "checkpointTwo": 18,
+        "easy": 50,
         "elite": 30,
-        "hard": 91,
-        "legendary": 126,
-        "medium": 80,
-        "unknown": 40
+        "finalCheckpoint": 18,
+        "hard": 43,
+        "legendary": 90,
+        "legendaryBoss": 36,
+        "medium": 51
       },
       "repairCoverage": {
         "directSkillMatches": 30,
@@ -8670,26 +7939,8 @@
         "micro-concept-library",
         "oligopoly"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 0,
-        "legendary": 12,
-        "calculation": 9,
-        "boss": 3,
-        "legendaryBoss": 5,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 12,
-        "hard": 17,
-        "elite": 0,
-        "legendary": 17,
-        "unknown": 8
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 57
@@ -8771,26 +8022,8 @@
         "micro-concept-library",
         "oligopoly"
       ],
-      "questionCountByRole": {
-        "main": 32,
-        "elite": 10,
-        "legendary": 18,
-        "calculation": 10,
-        "boss": 15,
-        "legendaryBoss": 9,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 25,
-        "medium": 16,
-        "hard": 22,
-        "elite": 10,
-        "legendary": 27,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 94
@@ -8875,26 +8108,8 @@
         "micro-concept-library",
         "oligopoly"
       ],
-      "questionCountByRole": {
-        "main": 27,
-        "elite": 0,
-        "legendary": 12,
-        "calculation": 3,
-        "boss": 8,
-        "legendaryBoss": 7,
-        "repair": 6,
-        "bridge": 7,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 18,
-        "hard": 10,
-        "elite": 0,
-        "legendary": 19,
-        "unknown": 11
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 57
@@ -8976,26 +8191,8 @@
         "micro-concept-library",
         "oligopoly"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 12,
-        "legendary": 22,
-        "calculation": 4,
-        "boss": 15,
-        "legendaryBoss": 11,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 5,
-        "medium": 14,
-        "hard": 17,
-        "elite": 12,
-        "legendary": 33,
-        "unknown": 4
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 79
@@ -9077,26 +8274,8 @@
         "micro-concept-library",
         "oligopoly"
       ],
-      "questionCountByRole": {
-        "main": 16,
-        "elite": 0,
-        "legendary": 10,
-        "calculation": 0,
-        "boss": 5,
-        "legendaryBoss": 0,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 10,
-        "hard": 7,
-        "elite": 0,
-        "legendary": 10,
-        "unknown": 4
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 31
@@ -9178,26 +8357,8 @@
         "micro-concept-library",
         "oligopoly"
       ],
-      "questionCountByRole": {
-        "main": 26,
-        "elite": 8,
-        "legendary": 16,
-        "calculation": 4,
-        "boss": 8,
-        "legendaryBoss": 4,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 15,
-        "medium": 10,
-        "hard": 18,
-        "elite": 8,
-        "legendary": 20,
-        "unknown": 7
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 66
@@ -9297,23 +8458,22 @@
       ],
       "questionCountByRole": {
         "boss": 15,
-        "bridge": 6,
         "calculation": 2,
         "elite": 6,
-        "integration": 0,
         "legendary": 27,
         "legendaryBoss": 9,
-        "main": 34,
-        "repair": 8,
-        "repairSeed": 1
+        "main": 34
       },
       "questionCountByDifficulty": {
-        "easy": 15,
+        "easy": 10,
+        "easyBoss": 5,
         "elite": 6,
-        "hard": 18,
-        "legendary": 36,
-        "medium": 18,
-        "unknown": 15
+        "finalBoss": 5,
+        "hard": 13,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "medium": 13,
+        "mediumBoss": 5
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -9412,24 +8572,24 @@
         "micro-concept-library"
       ],
       "questionCountByRole": {
-        "main": 209,
+        "boss": 62,
+        "calculation": 30,
         "elite": 44,
         "legendary": 100,
-        "calculation": 30,
-        "boss": 62,
         "legendaryBoss": 36,
-        "repair": 42,
-        "bridge": 42,
-        "integration": 0,
-        "repairSeed": 0
+        "main": 209
       },
       "questionCountByDifficulty": {
-        "easy": 118,
+        "calculation": 30,
+        "checkpointOne": 20,
+        "checkpointTwo": 20,
+        "easy": 76,
         "elite": 44,
-        "hard": 107,
-        "legendary": 136,
-        "medium": 120,
-        "unknown": 40
+        "finalCheckpoint": 22,
+        "hard": 55,
+        "legendary": 100,
+        "legendaryBoss": 36,
+        "medium": 78
       },
       "repairCoverage": {
         "directSkillMatches": 42,
@@ -9496,26 +8656,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 28,
-        "elite": 0,
-        "legendary": 0,
-        "calculation": 4,
-        "boss": 10,
-        "legendaryBoss": 0,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 22,
-        "medium": 14,
-        "hard": 10,
-        "elite": 0,
-        "legendary": 0,
-        "unknown": 8
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 42
@@ -9595,26 +8737,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 38,
-        "elite": 15,
-        "legendary": 18,
-        "calculation": 5,
-        "boss": 9,
-        "legendaryBoss": 7,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 26,
-        "medium": 14,
-        "hard": 18,
-        "elite": 15,
-        "legendary": 25,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 92
@@ -9693,26 +8817,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 30,
-        "elite": 2,
-        "legendary": 7,
-        "calculation": 12,
-        "boss": 7,
-        "legendaryBoss": 2,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 16,
-        "medium": 26,
-        "hard": 16,
-        "elite": 2,
-        "legendary": 9,
-        "unknown": 3
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 60
@@ -9789,26 +8895,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 26,
-        "elite": 10,
-        "legendary": 16,
-        "calculation": 4,
-        "boss": 10,
-        "legendaryBoss": 6,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 23,
-        "hard": 10,
-        "elite": 10,
-        "legendary": 22,
-        "unknown": 5
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 72
@@ -9886,26 +8974,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 27,
-        "elite": 1,
-        "legendary": 16,
-        "calculation": 3,
-        "boss": 5,
-        "legendaryBoss": 1,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 14,
-        "medium": 17,
-        "hard": 10,
-        "elite": 1,
-        "legendary": 17,
-        "unknown": 6
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 53
@@ -9986,26 +9056,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 29,
-        "elite": 6,
-        "legendary": 10,
-        "calculation": 1,
-        "boss": 9,
-        "legendaryBoss": 5,
-        "repair": 6,
-        "bridge": 6,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 13,
-        "hard": 19,
-        "elite": 6,
-        "legendary": 15,
-        "unknown": 7
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 6,
         "mainWithUsableSkill": 60
@@ -10080,26 +9132,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 15,
-        "elite": 6,
-        "legendary": 17,
-        "calculation": 0,
-        "boss": 7,
-        "legendaryBoss": 8,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 8,
-        "medium": 8,
-        "hard": 12,
-        "elite": 6,
-        "legendary": 25,
-        "unknown": 0
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 53
@@ -10174,26 +9208,8 @@
         "micro-concept-library",
         "perfectCompetition"
       ],
-      "questionCountByRole": {
-        "main": 16,
-        "elite": 4,
-        "legendary": 16,
-        "calculation": 1,
-        "boss": 5,
-        "legendaryBoss": 7,
-        "repair": 3,
-        "bridge": 3,
-        "integration": 0,
-        "repairSeed": 0
-      },
-      "questionCountByDifficulty": {
-        "easy": 6,
-        "medium": 5,
-        "hard": 12,
-        "elite": 4,
-        "legendary": 23,
-        "unknown": 5
-      },
+      "questionCountByRole": {},
+      "questionCountByDifficulty": {},
       "repairCoverage": {
         "directSkillMatches": 3,
         "mainWithUsableSkill": 49
@@ -10277,23 +9293,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
-        "calculation": 0,
+        "easy": 1,
         "elite": 4,
-        "integration": 0,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 23,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 28
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 14,
+        "easy": 7,
+        "easyBoss": 3,
         "elite": 4,
+        "finalBoss": 3,
+        "hard": 12,
         "legendary": 9,
-        "unknown": 6
+        "legendaryBoss": 3,
+        "medium": 7,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -10304,7 +9319,7 @@
         "mainWithUsableSkill": 51
       },
       "calculationCoverage": 0,
-      "graphCoverage": 17,
+      "graphCoverage": 23,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
       "instructionalClassification": "Engine-safe family slice",
@@ -10347,23 +9362,24 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
+        "easy": 5,
         "elite": 3,
-        "integration": 0,
+        "hard": 6,
         "legendary": 10,
         "legendaryBoss": 4,
-        "main": 24,
-        "repair": 6,
-        "repairSeed": 0
+        "main": 7,
+        "medium": 6
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 11,
-        "hard": 11,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 3,
-        "legendary": 14,
-        "unknown": 10
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 10,
+        "legendaryBoss": 4,
+        "medium": 8,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -10433,23 +9449,18 @@
       ],
       "questionCountByRole": {
         "boss": 6,
-        "bridge": 1,
-        "calculation": 0,
         "elite": 2,
-        "integration": 0,
         "legendary": 3,
-        "legendaryBoss": 0,
-        "main": 12,
-        "repair": 2,
-        "repairSeed": 1
+        "main": 12
       },
       "questionCountByDifficulty": {
         "easy": 4,
         "elite": 2,
-        "hard": 7,
+        "finalBoss": 3,
+        "hard": 4,
         "legendary": 3,
-        "medium": 7,
-        "unknown": 4
+        "medium": 4,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -10529,23 +9540,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 8,
         "calculation": 11,
         "elite": 5,
-        "integration": 0,
         "legendary": 13,
         "legendaryBoss": 5,
-        "main": 26,
-        "repair": 7,
-        "repairSeed": 0
+        "main": 26
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 12,
-        "hard": 12,
+        "easy": 9,
+        "easyBoss": 3,
         "elite": 5,
-        "legendary": 18,
-        "unknown": 15
+        "finalBoss": 3,
+        "hard": 15,
+        "legendary": 13,
+        "legendaryBoss": 5,
+        "medium": 13,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -10590,23 +9600,25 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 1,
         "calculation": 6,
+        "easy": 4,
         "elite": 4,
-        "integration": 0,
+        "hard": 4,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 6,
+        "medium": 4
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 12,
-        "hard": 9,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 10,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "medium": 8,
+        "mediumBoss": 6
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -10716,23 +9728,22 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 5,
         "calculation": 12,
         "elite": 12,
-        "integration": 0,
         "legendary": 9,
         "legendaryBoss": 4,
-        "main": 22,
-        "repair": 8,
-        "repairSeed": 0
+        "main": 22
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 10,
-        "hard": 9,
+        "easy": 10,
+        "easyBoss": 3,
         "elite": 12,
-        "legendary": 13,
-        "unknown": 13
+        "finalBoss": 3,
+        "hard": 12,
+        "legendary": 9,
+        "legendaryboss": 4,
+        "medium": 12,
+        "mediumboss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -10787,23 +9798,25 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 2,
         "calculation": 3,
+        "easy": 2,
         "elite": 4,
-        "integration": 0,
+        "hard": 2,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 12,
+        "medium": 2
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 9,
-        "unknown": 6
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 7,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -10848,23 +9861,25 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 1,
         "calculation": 3,
+        "easy": 3,
         "elite": 4,
-        "integration": 0,
+        "hard": 3,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 9,
+        "medium": 3
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 7,
+        "easyBoss": 3,
         "elite": 4,
-        "legendary": 9,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 7,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 7,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -10915,23 +9930,25 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 3,
         "calculation": 4,
+        "easy": 4,
         "elite": 5,
-        "integration": 0,
+        "hard": 4,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 5,
+        "medium": 5
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
+        "easy": 7,
+        "easyBoss": 3,
         "elite": 5,
-        "legendary": 9,
-        "unknown": 6
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 7,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -10999,23 +10016,21 @@
       ],
       "questionCountByRole": {
         "boss": 12,
-        "bridge": 4,
-        "calculation": 0,
         "elite": 4,
-        "integration": 0,
         "legendary": 27,
         "legendaryBoss": 9,
-        "main": 30,
-        "repair": 7,
-        "repairSeed": 3
+        "main": 30
       },
       "questionCountByDifficulty": {
-        "easy": 14,
+        "easy": 10,
+        "easyBoss": 4,
         "elite": 4,
-        "hard": 14,
-        "legendary": 36,
-        "medium": 14,
-        "unknown": 14
+        "finalBoss": 4,
+        "hard": 10,
+        "legendary": 27,
+        "legendaryBoss": 9,
+        "medium": 10,
+        "mediumBoss": 4
       },
       "repairCoverage": {
         "directSkillMatches": 7,
@@ -11080,23 +10095,23 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
         "elite": 3,
-        "integration": 0,
+        "hard": 1,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 20,
-        "repair": 5,
-        "repairSeed": 0
+        "main": 29,
+        "medium": 2
       },
       "questionCountByDifficulty": {
         "easy": 11,
-        "medium": 9,
-        "hard": 9,
+        "easyBoss": 3,
         "elite": 3,
-        "legendary": 9,
-        "unknown": 9
+        "finalBoss": 3,
+        "hard": 9,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "medium": 11,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 5,
@@ -11107,7 +10122,7 @@
         "mainWithUsableSkill": 50
       },
       "calculationCoverage": 0,
-      "graphCoverage": 11,
+      "graphCoverage": 23,
       "status": "active",
       "notes": "Diagnostic slice of the Phillips Curve and Disinflation family. Use the five-concept sequence for the richest progression.",
       "instructionalClassification": "Engine-safe family slice",
@@ -11144,23 +10159,21 @@
       ],
       "questionCountByRole": {
         "boss": 21,
-        "bridge": 6,
-        "calculation": 0,
         "elite": 7,
-        "integration": 0,
         "legendary": 7,
         "legendaryBoss": 3,
-        "main": 22,
-        "repair": 6,
-        "repairSeed": 0
+        "main": 22
       },
       "questionCountByDifficulty": {
-        "easy": 11,
-        "medium": 22,
-        "hard": 10,
+        "easy": 8,
+        "easyBoss": 3,
         "elite": 7,
-        "legendary": 10,
-        "unknown": 12
+        "finalBoss": 3,
+        "hard": 7,
+        "legendary": 7,
+        "legendaryBoss": 3,
+        "medium": 7,
+        "mediumBoss": 15
       },
       "repairCoverage": {
         "directSkillMatches": 6,
@@ -11266,23 +10279,21 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 5,
-        "calculation": 0,
         "elite": 12,
-        "integration": 0,
         "legendary": 12,
         "legendaryBoss": 6,
-        "main": 30,
-        "repair": 8,
-        "repairSeed": 0
+        "main": 30
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 12,
-        "hard": 15,
+        "easy": 9,
+        "easyBoss": 3,
         "elite": 12,
-        "legendary": 18,
-        "unknown": 13
+        "finalboss": 3,
+        "hard": 12,
+        "legendary": 12,
+        "legendaryboss": 6,
+        "medium": 9,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 8,
@@ -11353,23 +10364,19 @@
       ],
       "questionCountByRole": {
         "boss": 3,
-        "bridge": 2,
-        "calculation": 0,
         "elite": 3,
-        "integration": 0,
         "legendary": 5,
         "legendaryBoss": 3,
-        "main": 8,
-        "repair": 0,
-        "repairSeed": 1
+        "main": 8
       },
       "questionCountByDifficulty": {
         "easy": 2,
-        "medium": 3,
-        "hard": 6,
         "elite": 3,
-        "legendary": 8,
-        "unknown": 3
+        "finalBoss": 3,
+        "hard": 3,
+        "legendary": 5,
+        "legendaryBoss": 3,
+        "medium": 3
       },
       "repairCoverage": {
         "directSkillMatches": 0,
@@ -11441,23 +10448,21 @@
       ],
       "questionCountByRole": {
         "boss": 9,
-        "bridge": 4,
-        "calculation": 0,
         "elite": 7,
-        "integration": 0,
         "legendary": 9,
         "legendaryBoss": 3,
-        "main": 30,
-        "repair": 4,
-        "repairSeed": 0
+        "main": 30
       },
       "questionCountByDifficulty": {
-        "easy": 12,
-        "medium": 15,
-        "hard": 12,
+        "easy": 9,
+        "easyBoss": 3,
         "elite": 7,
-        "legendary": 12,
-        "unknown": 8
+        "finalBoss": 3,
+        "hard": 9,
+        "legendary": 9,
+        "legendaryBoss": 3,
+        "medium": 12,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 4,
@@ -11549,23 +10554,20 @@
       ],
       "questionCountByRole": {
         "boss": 3,
-        "bridge": 2,
         "calculation": 10,
         "elite": 8,
-        "integration": 0,
         "legendary": 8,
         "legendaryBoss": 3,
-        "main": 11,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 11
       },
       "questionCountByDifficulty": {
         "easy": 4,
         "elite": 8,
-        "hard": 13,
-        "legendary": 11,
-        "medium": 7,
-        "unknown": 4
+        "finalBoss": 3,
+        "hard": 10,
+        "legendary": 8,
+        "legendaryBoss": 3,
+        "medium": 7
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -11651,23 +10653,20 @@
       ],
       "questionCountByRole": {
         "boss": 3,
-        "bridge": 2,
         "calculation": 8,
         "elite": 5,
-        "integration": 0,
         "legendary": 9,
         "legendaryBoss": 3,
-        "main": 17,
-        "repair": 2,
-        "repairSeed": 0
+        "main": 17
       },
       "questionCountByDifficulty": {
         "easy": 5,
-        "medium": 12,
-        "hard": 11,
         "elite": 5,
-        "legendary": 12,
-        "unknown": 4
+        "finalBoss": 3,
+        "hard": 8,
+        "legendary": 9,
+        "legendaryBoss": 3,
+        "medium": 12
       },
       "repairCoverage": {
         "directSkillMatches": 2,
@@ -11730,23 +10729,22 @@
       ],
       "questionCountByRole": {
         "boss": 17,
-        "bridge": 5,
         "calculation": 8,
         "elite": 10,
-        "integration": 0,
         "legendary": 9,
         "legendaryBoss": 3,
-        "main": 22,
-        "repair": 5,
-        "repairSeed": 0
+        "main": 22
       },
       "questionCountByDifficulty": {
         "easy": 10,
-        "medium": 9,
-        "hard": 20,
+        "easyBoss": 3,
         "elite": 10,
-        "legendary": 12,
-        "unknown": 10
+        "finalBoss": 11,
+        "hard": 10,
+        "legendary": 9,
+        "legendaryBoss": 3,
+        "medium": 10,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 5,
@@ -11796,23 +10794,23 @@
       ],
       "questionCountByRole": {
         "boss": 18,
-        "bridge": 4,
-        "calculation": 0,
         "elite": 5,
-        "integration": 0,
+        "hard": 1,
         "legendary": 6,
         "legendaryBoss": 3,
-        "main": 18,
-        "repair": 3,
-        "repairSeed": 0
+        "main": 16,
+        "medium": 1
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 18,
+        "easy": 6,
+        "easyBoss": 3,
         "elite": 5,
-        "legendary": 9,
-        "unknown": 7
+        "finalBoss": 12,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "mediumBoss": 3
       },
       "repairCoverage": {
         "directSkillMatches": 3,
@@ -11835,8 +10833,8 @@
   ],
   "curationPhase": "phaseGraph4-money-market-ad-transmission-v1",
   "curationSummary": "Phase Graph 4: seven approved money-market and money-market-to-AD assets plus 42 graph-dependent questions. Coverage emphasizes money-market equilibrium, money-supply expansion/contraction, simultaneous money shifts, and monetary transmission to aggregate demand.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1",
-  "canonicalQuestionCount": 8139,
-  "librarySha256": "322f9afdcdd9c9d8d33aeeb4976147b66c8167f27a7f06c30230ac846f55b80a",
+  "libraryVersion": "4.5s.2h",
+  "canonicalQuestionCount": 7054,
+  "librarySha256": "0fd282b38a2abb9d2312769e1cfa98daa80aa6c33d8ef231c64fcd46d10b1d96",
   "composerVersion": "4.5p.0"
 }
