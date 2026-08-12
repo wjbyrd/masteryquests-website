@@ -1,8 +1,8 @@
 {
-  "phase": "mode-availability-fix-v3-seven-mode-aware",
-  "ok": false,
-  "composerVersion": "4.5s.2",
-  "canonicalQuestionCount": 7977,
+  "phase": "mode-availability-fix-v4-eight-mode-aware",
+  "ok": true,
+  "composerVersion": "4.5s.2k",
+  "canonicalQuestionCount": 8163,
   "cssGuard": true,
   "showReapply": true,
   "returnReapply": true,
@@ -24,7 +24,8 @@
         "exam",
         "quiz",
         "legendary",
-        "score"
+        "score",
+        "trialGraph"
       ],
       "enabledCount": "1",
       "subtitle": "Your instructor enabled one mode for this game.",
@@ -34,7 +35,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1322182
+      "htmlBytes": 1334666
     },
     {
       "name": "timed-only",
@@ -53,7 +54,8 @@
         "quiz",
         "unlimited",
         "legendary",
-        "score"
+        "score",
+        "trialGraph"
       ],
       "enabledCount": "1",
       "subtitle": "Your instructor enabled one mode for this game.",
@@ -63,7 +65,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1322146
+      "htmlBytes": 1334630
     },
     {
       "name": "timed-exam",
@@ -84,7 +86,8 @@
         "quiz",
         "unlimited",
         "legendary",
-        "score"
+        "score",
+        "trialGraph"
       ],
       "enabledCount": "2",
       "subtitle": "Choose one of the modes enabled by your instructor.",
@@ -98,7 +101,7 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1322174
+      "htmlBytes": 1334658
     },
     {
       "name": "all-seven",
@@ -129,7 +132,9 @@
         "legendary",
         "score"
       ],
-      "hidden": [],
+      "hidden": [
+        "trialGraph"
+      ],
       "enabledCount": "7",
       "subtitle": "Choose one of the modes enabled by your instructor.",
       "validation": [
@@ -162,10 +167,79 @@
           "ok": true
         }
       ],
-      "htmlBytes": 1322337
+      "htmlBytes": 1334821
+    },
+    {
+      "name": "all-eight",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph"
+      ],
+      "hidden": [],
+      "enabledCount": "8",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1664843
     }
   ],
-  "issues": [
-    "composer version 4.5s.2"
-  ]
+  "issues": []
 }

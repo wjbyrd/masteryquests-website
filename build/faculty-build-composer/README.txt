@@ -3,10 +3,21 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
-Current composer version: 4.5s.2
-Canonical questions: 7,977
+Current composer version: 4.5s.2k
+Canonical questions: 8,163
 Selectable concepts/family slices: 126
-Question assets: 399
+Question assets: 427
+
+
+Latest upgrade — Mode 8: Trial by Graph
+- Adds Trial by Graph as the eighth game mode.
+- Uses only audited questions explicitly marked graphRequired and backed by a real graph asset.
+- 602 audited records carry the graphRequired flag; 10 audited records without an image reference are deliberately excluded.
+- Composer readiness requires at least 10 graph-safe ordinary questions.
+- Learners can choose 10, 15, or 20 questions only when the selected concept mix has enough unique graph-safe inventory.
+- Trial by Graph uses a prebuilt unique deck, difficulty-aware progression, existing graph rendering/lightbox/accessibility metadata, normal telemetry, results, and Mastery Report 2.0.
+- No checkpoints, artifacts, campaign progress, setbacks, save/resume, Repair detours, or Bridge detours are used in this mode.
+- Existing seven modes remain available and were regression-validated.
 
 Latest upgrade — Mastery Report 2.0 + practice early-end report fix
 - Adds evidence-strength labels: Limited Evidence, Developing Evidence, Strong Evidence, and Mastery Demonstrated.
@@ -64,7 +75,7 @@ PHASE MICRO8 — OLIGOPOLY GRANULARITY + ADAPTIVE MATURATION
 -----------------------------------------------------------
 Six Oligopoly subtopics are exposed: Oligopoly Structure, Strategic Interdependence & Concentration; Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium; Collusion, Cartels & Prisoner’s-Dilemma Incentives; Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence; Tacit Coordination, Price Leadership & Nonprice Competition; and Oligopoly Welfare, Mergers & Antitrust Tradeoffs.
 
-The family contains 445 canonical records after exactly 75 targeted adaptive additions. Dynamic Strategy is intentionally marked optional supporting/advanced so instructors can select ordinary Principles game theory without importing infinite-horizon repeated-game or backward-induction material. All six children clear the planned 15-question Quiz threshold, the five-child Oligopoly core passes all five current modes without Dynamic Strategy, and the existing graph inventory is preserved.
+The family contains 445 canonical records after exactly 75 targeted adaptive additions. Dynamic Strategy is intentionally marked optional supporting/advanced so instructors can select ordinary Principles game theory without importing infinite-horizon repeated-game or backward-induction material. All six children clear the planned 15-question Quiz threshold, the five-child Oligopoly core passes the established mode set without Dynamic Strategy, and the existing graph inventory is preserved.
 
 
 Quiz Mode: fixed-length 1–15 question classroom mode. Faculty selects concepts in the composer; learners select only quiz length. Quiz uses Easy/Medium/Hard adaptive selection without checkpoints, campaign progress, setbacks, or remediation detours.

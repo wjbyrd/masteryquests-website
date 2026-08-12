@@ -5,9 +5,9 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.2';
+const COMPOSER_VERSION = '4.5s.2k';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
-const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score'];
+const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score', 'trialGraph'];
 const POOL_MINIMUMS = {
   easy: 6,
   medium: 6,
@@ -28,7 +28,8 @@ const MODE_REQUIREMENTS = {
   quiz: ['easy', 'medium', 'hard'],
   unlimited: ['easy', 'medium', 'hard', 'repair', 'bridge'],
   legendary: ['legendary', 'legendaryBoss'],
-  score: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge']
+  score: ['easy', 'medium', 'hard', 'easyBoss', 'mediumBoss', 'finalBoss', 'repair', 'bridge'],
+  trialGraph: []
 };
 const MODE_POOL_MINIMUMS = {
   quiz: { easy: 5, medium: 5, hard: 5 }
@@ -721,6 +722,13 @@ function compose(library, inputRecipe){
   counts.challengeLegendary = challengeQuestionBanks.legendaryBoss.length;
   counts.challengeTotal = Object.values(challengeQuestionBanks).reduce((n, list) => n + list.length, 0);
   counts.graph = [...Object.values(banks).flat(), ...Object.values(challengeQuestionBanks).flat()].filter(question => question.image).length;
+  const trialGraphQuestions = uniqueById(['easy','medium','hard','elite','legendary']
+    .flatMap(pool => (banks[pool] || []).filter(question => question?.graphRequired === true && Boolean(question?.image))));
+  counts.graphSafe = trialGraphQuestions.length;
+  counts.graphSafeByDifficulty = Object.fromEntries(['easy','medium','hard','elite','legendary'].map(pool => [
+    pool,
+    (banks[pool] || []).filter(question => question?.graphRequired === true && Boolean(question?.image)).length
+  ]));
   counts.assets = assets.length;
   counts.totalCanonical = uniqueById([
     ...Object.values(banks).flat(),
@@ -752,7 +760,8 @@ function compose(library, inputRecipe){
     banks,
     repairQuestions,
     bridgeQuestions,
-    assets
+    assets,
+    trialGraphQuestions
   });
   for(const mode of validation.modes){
     if(!mode.ok){
@@ -788,6 +797,7 @@ function compose(library, inputRecipe){
     skillRepairSeedPools,
     microSkillBridgePools,
     assets: assets.sort((a, b) => a.runtimePath.localeCompare(b.runtimePath)),
+    trialGraphQuestionIds: trialGraphQuestions.map(idOf),
     counts,
     validation,
     selectedModules: modules
@@ -802,15 +812,18 @@ function validateModes(counts, modes, detail = {}){
     quiz: 'Quiz',
     unlimited: 'Unlimited Practice',
     legendary: 'Legendary Mode',
-    score: 'Score Attack'
+    score: 'Score Attack',
+    trialGraph: 'Trial by Graph'
   };
   return {
     modes: MODE_ORDER.filter(mode => modes.includes(mode)).map(mode => {
-      const requirements = MODE_REQUIREMENTS[mode].map(pool => ({
-        pool,
-        minimum: getModePoolMinimum(mode, pool),
-        count: counts[pool] || 0
-      }));
+      const requirements = mode === 'trialGraph'
+        ? [{pool:'graphSafe', minimum:10, count:counts.graphSafe || 0}]
+        : MODE_REQUIREMENTS[mode].map(pool => ({
+            pool,
+            minimum: getModePoolMinimum(mode, pool),
+            count: counts[pool] || 0
+          }));
       const deficiencies = requirements.filter(requirement => requirement.count < requirement.minimum);
       const issues = [];
       const seenIds = new Map();
@@ -819,16 +832,29 @@ function validateModes(counts, modes, detail = {}){
           ? detail.repairQuestions
           : pool === 'bridge'
             ? detail.bridgeQuestions
-            : detail.banks?.[pool];
+            : pool === 'graphSafe'
+              ? detail.trialGraphQuestions
+              : detail.banks?.[pool];
         if(!questions) continue;
         if(!Array.isArray(questions)){
           issues.push({pool, id: '—', issue: 'Pool is not an array'});
           continue;
         }
         questions.forEach((question, index) => {
-          const fields = validateFacultyQuestionRecord(question, pool, detail.assets);
+          const validationPool = pool === 'graphSafe'
+            ? String(question?.canonicalDifficulty || question?.difficulty || 'hard').toLowerCase()
+            : pool;
+          const fields = validateFacultyQuestionRecord(question, validationPool, detail.assets);
           const id = question?.id ?? question?.questionId ?? `index ${index}`;
           if(fields.length) issues.push({pool, id, issue: `Invalid: ${fields.join(', ')}`});
+          if(pool === 'graphSafe'){
+            if(question?.graphRequired !== true) issues.push({pool, id, issue: 'Missing graphRequired eligibility flag'});
+            if(!question?.image) issues.push({pool, id, issue: 'Missing required graph image'});
+            const imageFilename = String(question?.image || '').split('/').pop();
+            const asset = (detail.assets || []).find(candidate => [candidate?.runtimePath,candidate?.sourceUrl,candidate?.sourceAssetPath,candidate?.filename]
+              .filter(Boolean).some(path => String(path).split('/').pop() === imageFilename));
+            if(!asset?.imageAlt || !asset?.graphDescription) issues.push({pool, id, issue: 'Graph asset is missing accessibility metadata'});
+          }
           const key = String(id);
           if(key && !key.startsWith('index ')){
             if(seenIds.has(key)) issues.push({pool, id: key, issue: `Duplicate ID also used in ${seenIds.get(key)}`});
@@ -868,7 +894,7 @@ function questionMarkerRegion(composition, metadata){
       questionAssetMetadata[normalized.split('/').pop()] = record;
     }
   }
-  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
+  return `// =====================================================\n// FACULTY QUESTION BANKS — SAFE TO EDIT\n// Generated by the Faculty Concept Composer.\n// =====================================================\nconst questionBanks = ${js(composition.banks)};\nconst challengeQuestionBanks = ${js(composition.challengeQuestionBanks || {easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]})};\nconst objectiveLabels = ${js(composition.objectiveLabels)};\nconst embeddedQuestionAssets = ${js(composition.embeddedQuestionAssets || {})};\nconst questionAssetMetadata = ${js(questionAssetMetadata)};\nconst trialGraphQuestionIds = ${js(composition.trialGraphQuestionIds || [])};\nconst facultyCompositionMetadata = ${js(metadata)};\nconst facultyQuestionValidator = ${validateFacultyQuestionRecord.toString()};\nconst repairQuestions = ${js(composition.repairQuestions)};\nconst bridgeQuestions = ${js(composition.bridgeQuestions)};\nconst microSkillRepairPools = ${js(composition.microSkillRepairPools)};\nconst skillRepairSeedPools = ${js(composition.skillRepairSeedPools)};\nconst microSkillBridgePools = ${js(composition.microSkillBridgePools)};\n// =====================================================\n// END FACULTY QUESTION BANKS\n// PROTECTED ENGINE BELOW\n// =====================================================`;
 }
 
 function replaceMarkedRegion(template, startLabel, endLabel, replacement){
@@ -912,7 +938,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5r-unlimited-practice'
+    templateVersion: 'phase4.5s.2k-trial-by-graph'
   };
 }
 

@@ -1,0 +1,63 @@
+{
+  "phase": "mode8-trial-by-graph-v1",
+  "ok": true,
+  "composerVersion": "4.5s.2k",
+  "canonicalQuestionCount": 8163,
+  "auditedIds": 612,
+  "graphRequiredFlagged": 602,
+  "examples": {
+    "perfectCompetition": 76,
+    "demand": 18,
+    "aggregateDemand": 12,
+    "bankMoneyCreation": 0
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "demand": [
+      10,
+      15
+    ],
+    "aggregateDemand": [
+      10
+    ]
+  },
+  "allEightModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    }
+  ],
+  "issues": []
+}

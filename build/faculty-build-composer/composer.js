@@ -10,7 +10,8 @@ const MODE_LABELS = {
   quiz: 'Quiz',
   unlimited: 'Unlimited Practice',
   legendary: 'Legendary Mode',
-  score: 'Score Attack'
+  score: 'Score Attack',
+  trialGraph: 'Trial by Graph'
 };
 const POOL_LABELS = {
   easy: 'Foundational practice',
@@ -27,7 +28,8 @@ const POOL_LABELS = {
   bridge: 'Bridge questions',
   calculation: 'Calculation questions',
   integration: 'Integrated-analysis questions',
-  graph: 'Graph questions'
+  graph: 'Graph questions',
+  graphSafe: 'Trial by Graph-safe questions'
 };
 
 const AREA_LABELS = {
@@ -456,7 +458,9 @@ function renderModeOptions(){
                   ? 'Exam Drill-style adaptive practice in repeating 30-room cycles. Students decide when to end and generate a Mastery Report.'
                   : mode === 'legendary'
                   ? 'Mastery-level questions and mastery checkpoints only.'
-                  : 'Arcade scoring with three checkpoints.'
+                  : mode === 'score'
+                    ? 'Arcade scoring with three checkpoints.'
+                    : 'Graph-required questions only. Students choose 10, 15, or 20 when enough audited graph-safe inventory is available.'
       }</p>
     </div>
   `).join('');
@@ -911,7 +915,8 @@ function renderCoverage(){
     ['Practice questions', practiceTotal],
     ['Checkpoint questions', checkpointTotal],
     ['Adaptive-support questions', adaptiveTotal],
-    ['Special-format uses', specialTotal]
+    ['Special-format uses', specialTotal],
+    ['Trial by Graph-safe', counts.graphSafe || 0]
   ];
   $('summaryGrid').innerHTML = keyMetrics.map(([label,value]) => `<div class="metric"><span>${label}</span><strong>${value}</strong></div>`).join('');
 
@@ -943,7 +948,7 @@ function renderCoverage(){
     ['Mastery checkpoint', counts.legendaryBoss || 0], ['Repair', counts.repair || 0],
     ['Repair routing', counts.repairSeed || 0], ['Bridge', counts.bridge || 0],
     ['Calculation', counts.calculation || 0], ['Integrated analysis', counts.integration || 0],
-    ['Graph questions', counts.graph || 0], ['Embedded visuals', counts.assets || 0],
+    ['Graph questions', counts.graph || 0], ['Trial by Graph-safe', counts.graphSafe || 0], ['Embedded visuals', counts.assets || 0],
     ['Eligible checkpoint challenges', counts.challengeTotal || 0], ['Unique canonical questions', counts.totalCanonical || 0]
   ];
   $('detailedCoverage').innerHTML = detailedMetrics.map(([label,value]) => `<div class="metric"><span>${label}</span><strong>${value}</strong></div>`).join('');

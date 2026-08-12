@@ -42,8 +42,8 @@ function simulateManualEnd(mode){
 }
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.1') issues.push(`version ${core.COMPOSER_VERSION}`);
-  if(library.canonicalQuestionCount!==7977) issues.push(`canonical ${library.canonicalQuestionCount}`);
+  if(core.COMPOSER_VERSION!=='4.5s.2k') issues.push(`version ${core.COMPOSER_VERSION}`);
+  if(library.canonicalQuestionCount!==8163) issues.push(`canonical ${library.canonicalQuestionCount}`);
   const tiny=evidence({attempts:2,accuracy:1,byDifficulty:{easy:{attempts:2}},overall:false});
   const developing=evidence({attempts:7,accuracy:.86,byDifficulty:{easy:{attempts:4},medium:{attempts:3}},recentAccuracy:.86,overall:true});
   const mastered=evidence({attempts:20,accuracy:.90,byDifficulty:{easy:{attempts:6},medium:{attempts:6},hard:{attempts:8}},recentAccuracy:.90,overall:true});
@@ -68,7 +68,7 @@ function simulateManualEnd(mode){
     copyIncludesEvidence:template.includes('`Evidence: ${report.evidence.label}`')
   };
   Object.entries(sourceChecks).forEach(([k,v])=>{if(!v)issues.push(`source ${k}`)});
-  const recipe={schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'MR2 Seven Mode Validation',slug:'mr2-seven-mode',supportedModes:[...core.MODE_ORDER],selectedConceptIds:['oligopoly'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
+  const recipe={schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'MR2 Seven Mode Validation',slug:'mr2-seven-mode',supportedModes:['standard','timed','exam','quiz','unlimited','legendary','score'],selectedConceptIds:['oligopoly'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
   const comp=core.compose(library,recipe); if(comp.errors.length) issues.push(...comp.errors);
   const result={phase:'mastery-report-2.0',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,evidenceCases:{tiny,developing,mastered,weakStrong},battleMenu:{exam:examMenu,unlimited:unlimitedMenu,standard:standardMenu},manualEnd:{exam:examEnd,unlimited:unlimitedEnd},sourceChecks,sevenModeValidation:comp.validation.modes.map(x=>({mode:x.mode,ok:x.ok})),issues};
   fs.writeFileSync(path.join(root,'mastery_report_2_validation_results.json'),JSON.stringify(result,null,2));

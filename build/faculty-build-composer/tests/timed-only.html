@@ -2823,6 +2823,12 @@ Respect structure strictly.
   <span class="mode-card-text">Rack up points with correct answers, streaks, and speed. Misses cost you.</span>
 </button>
 
+<button class="mode-card" data-mode="trialGraph" onclick="startSelectedMode('trialGraph')" aria-label="Trial by Graph. Fixed-length graph-only run using questions where the graph is required. Choose ten, fifteen, or twenty questions when available.">
+  <div class="mode-symbol" aria-hidden="true">▧</div>
+  <span class="mode-card-title">Trial by Graph</span>
+  <span class="mode-card-text">Every question requires the graph. Choose 10, 15, or 20 when the selected content has enough graph-safe questions.</span>
+</button>
+
     </div>
 
     <button class="mode-back-btn" onclick="returnToTitleScreen()">BACK</button>
@@ -2859,6 +2865,23 @@ Respect structure strictly.
     <div class="quiz-setup-actions">
       <button class="continue-btn" onclick="launchQuizFromSetup()">Launch Quiz</button>
       <button class="continue-btn secondary-modal-btn" onclick="closeQuizSetup()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div id="trialGraphSetupModal" class="quiz-setup-modal" role="dialog" aria-modal="true" aria-labelledby="trialGraphSetupTitle" style="display:none;">
+  <div class="quiz-setup-card">
+    <h2 id="trialGraphSetupTitle" class="quiz-setup-title">Trial by Graph</h2>
+    <p class="quiz-setup-text">Every question requires reading or interpreting a graph. Choose the run length supported by this build.</p>
+    <div class="quiz-quick-counts" aria-label="Trial by Graph run lengths">
+      <button type="button" data-trial-graph-count="10" onclick="setTrialGraphQuestionCount(10)">10</button>
+      <button type="button" data-trial-graph-count="15" onclick="setTrialGraphQuestionCount(15)">15</button>
+      <button type="button" data-trial-graph-count="20" onclick="setTrialGraphQuestionCount(20)">20</button>
+    </div>
+    <p id="trialGraphInventoryNote" class="quiz-setup-text"></p>
+    <div class="quiz-setup-actions">
+      <button id="trialGraphLaunchButton" class="continue-btn" onclick="launchTrialGraphFromSetup()">Launch Trial</button>
+      <button class="continue-btn secondary-modal-btn" onclick="closeTrialGraphSetup()">Cancel</button>
     </div>
   </div>
 </div>
@@ -3228,14 +3251,14 @@ const FACULTY_COMPOSITION_CONFIG = {
         "checkpointTwo": null,
         "finalCheckpoint": null
     },
-    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1",
-    "templateVersion": "phase4.5r-unlimited-practice",
-    "composerVersion": "4.5s.2",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1",
+    "templateVersion": "phase4.5s.2k-trial-by-graph",
+    "composerVersion": "4.5s.2k",
     "compositionId": "mode-test-timed-only",
-    "saveKeyNamespace": "mq-econ:mode-test-timed-only:86e09b575eda",
-    "librarySha256": "696e755ebcaea5c25d6d06f76db4a781eaf59c87bf4f0eee6dcdfea3c0faea80",
-    "templateSha256": "5815f107314168b3605dabba199c3628f3de6e06fadbba7394dbe2e2faadb464",
-    "compositionFingerprint": "86e09b575eda850ae0e08112de2d9d2eb8fab404875de90af56cdfc0d076ebd6"
+    "saveKeyNamespace": "mq-econ:mode-test-timed-only:e17352688a5f",
+    "librarySha256": "63424e0425bb8d0ab38842d0d7951514d08c64be5f3dd6bb8718f91ada32b66b",
+    "templateSha256": "85908fec220e6554478d82a0fd8f80d63103cbe64c16026c830decfe9442792a",
+    "compositionFingerprint": "e17352688a5fab3f6f1038d3e20c1206f6be15faaa612736ab8a7af6dd163cd5"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3381,6 +3404,11 @@ let timedSetbacks = 0;
 const QUIZ_MAX_QUESTIONS = 15;
 let quizQuestionTarget = 10;
 let quizQuestionsCompleted = 0;
+const TRIAL_GRAPH_ALLOWED_TARGETS = [10, 15, 20];
+let trialGraphQuestionTarget = 10;
+let trialGraphQuestionsCompleted = 0;
+let trialGraphDeck = [];
+let trialGraphDeckIndex = 0;
 let unlimitedPracticeCycle = 1;
 
 // =============================================
@@ -3608,12 +3636,13 @@ window.addEventListener("pageshow", reconcileTimedModeClock);
 window.addEventListener("focus", reconcileTimedModeClock);
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
-function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
+function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
     if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
     if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "quiz") return "Quiz";
+    if(gameMode === "trialGraph") return "Trial by Graph";
     if(gameMode === "unlimited") return "Unlimited Practice";
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "score") return "Score Attack";
@@ -5114,10 +5143,129 @@ function launchQuizFromSetup(){
     startSelectedMode("quiz", {quizConfirmed:true});
 }
 
+function getTrialGraphCandidates(){
+    const allowedIds = new Set(Array.isArray(trialGraphQuestionIds) ? trialGraphQuestionIds.map(String) : []);
+    return ['easy','medium','hard','elite','legendary'].flatMap(pool =>
+        (questionBanks?.[pool] || [])
+            .filter(question => question?.graphRequired === true && Boolean(question?.image) && allowedIds.has(String(question?.id ?? question?.questionId ?? '')))
+            .map(question => ({...question, __mqDifficulty: pool}))
+    );
+}
+
+function getTrialGraphSupportedTargets(){
+    const available = getTrialGraphCandidates().length;
+    return TRIAL_GRAPH_ALLOWED_TARGETS.filter(target => available >= target);
+}
+
+function normalizeTrialGraphQuestionTarget(value){
+    const supported = getTrialGraphSupportedTargets();
+    if(!supported.length) return 10;
+    const numeric = Math.round(Number(value));
+    return supported.includes(numeric) ? numeric : supported[0];
+}
+
+function updateTrialGraphCountControls(){
+    const supported = new Set(getTrialGraphSupportedTargets());
+    document.querySelectorAll('[data-trial-graph-count]').forEach(button => {
+        const value = Number(button.dataset.trialGraphCount);
+        const enabled = supported.has(value);
+        const selected = value === trialGraphQuestionTarget;
+        button.disabled = !enabled;
+        button.hidden = !enabled;
+        button.classList.toggle('selected', selected);
+        button.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    });
+    const note = document.getElementById('trialGraphInventoryNote');
+    if(note){
+        const available = getTrialGraphCandidates().length;
+        note.textContent = `${available} audited graph-safe question${available === 1 ? '' : 's'} available in this build.`;
+    }
+    const launch = document.getElementById('trialGraphLaunchButton');
+    if(launch) launch.disabled = supported.size === 0;
+}
+
+function setTrialGraphQuestionCount(value){
+    trialGraphQuestionTarget = normalizeTrialGraphQuestionTarget(value);
+    updateTrialGraphCountControls();
+}
+
+function buildTrialGraphDeck(target){
+    const byDifficulty = Object.fromEntries(['easy','medium','hard','elite','legendary'].map(pool => [pool, []]));
+    getTrialGraphCandidates().forEach(question => byDifficulty[question.__mqDifficulty]?.push(question));
+    Object.keys(byDifficulty).forEach(pool => byDifficulty[pool] = shuffle(byDifficulty[pool]));
+    const quotaMap = {
+        10: {easy:3, medium:3, hard:2, elite:1, legendary:1},
+        15: {easy:4, medium:4, hard:3, elite:2, legendary:2},
+        20: {easy:5, medium:5, hard:4, elite:3, legendary:3}
+    };
+    const quotas = quotaMap[target] || quotaMap[10];
+    const selected = [];
+    const used = new Set();
+    for(const pool of ['easy','medium','hard','elite','legendary']){
+        for(const question of byDifficulty[pool].slice(0, quotas[pool] || 0)){
+            const id = String(question.id ?? question.questionId ?? '');
+            if(!id || used.has(id)) continue;
+            used.add(id);
+            selected.push(question);
+        }
+    }
+    if(selected.length < target){
+        const remaining = ['easy','medium','hard','elite','legendary'].flatMap(pool => byDifficulty[pool])
+            .filter(question => !used.has(String(question.id ?? question.questionId ?? '')));
+        for(const question of shuffle(remaining)){
+            if(selected.length >= target) break;
+            const id = String(question.id ?? question.questionId ?? '');
+            if(!id || used.has(id)) continue;
+            used.add(id);
+            selected.push(question);
+        }
+    }
+    const order = {easy:0, medium:1, hard:2, elite:3, legendary:4};
+    return selected.slice(0,target).sort((a,b) => order[a.__mqDifficulty] - order[b.__mqDifficulty] || Math.random() - 0.5);
+}
+
+function openTrialGraphSetup(){
+    if(!isFacultyModeSupported('trialGraph')){
+        alert('Trial by Graph is not enabled for this game.');
+        return;
+    }
+    const preflight = validateFacultyMode('trialGraph');
+    if(!preflight.ok){
+        showFacultyPreflightFailure('trialGraph', preflight.issues);
+        return;
+    }
+    const supported = getTrialGraphSupportedTargets();
+    const saved = Number(localStorage.getItem(`${STORAGE_PREFIX}:trialGraph:questionCount`));
+    trialGraphQuestionTarget = supported.includes(saved) ? saved : supported[0];
+    updateTrialGraphCountControls();
+    const modal = document.getElementById('trialGraphSetupModal');
+    if(modal) modal.style.display = 'flex';
+}
+
+function closeTrialGraphSetup(){
+    const modal = document.getElementById('trialGraphSetupModal');
+    if(modal) modal.style.display = 'none';
+}
+
+function launchTrialGraphFromSetup(){
+    trialGraphQuestionTarget = normalizeTrialGraphQuestionTarget(trialGraphQuestionTarget);
+    trialGraphQuestionsCompleted = 0;
+    trialGraphDeckIndex = 0;
+    trialGraphDeck = buildTrialGraphDeck(trialGraphQuestionTarget);
+    if(trialGraphDeck.length < trialGraphQuestionTarget){
+        showFacultyPreflightFailure('trialGraph', [{pool:'graphSafe',id:'—',issue:`Needs ${trialGraphQuestionTarget}; found ${trialGraphDeck.length}`}]);
+        return;
+    }
+    localStorage.setItem(`${STORAGE_PREFIX}:trialGraph:questionCount`, String(trialGraphQuestionTarget));
+    closeTrialGraphSetup();
+    startSelectedMode('trialGraph', {trialGraphConfirmed:true});
+}
+
 function showModeSelect(){
     if(!validateAndStorePlayerName()) return;
 
     closeQuizSetup();
+    closeTrialGraphSetup();
     applyFacultyCompositionConfig();
     beginRunSession();
     runEnding = false;
@@ -5133,6 +5281,7 @@ function showModeSelect(){
 function returnToTitleScreen(){
     beginRunSession();
     closeQuizSetup();
+    closeTrialGraphSetup();
     stopTimedModeClock();
     closeGraphLightbox();
     setGameControlsVisible(false);
@@ -5152,6 +5301,10 @@ function startSelectedMode(mode, options = {}){
     }
     if(requestedMode === "quiz" && !options.quizConfirmed){
         openQuizSetup();
+        return;
+    }
+    if(requestedMode === "trialGraph" && !options.trialGraphConfirmed){
+        openTrialGraphSetup();
         return;
     }
     const preflight = validateFacultyMode(requestedMode);
@@ -5191,7 +5344,7 @@ function confirmReturnToModeMenu(){
 
     showGameModal({
         title: "Return to Battle Menu?",
-        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, and Score Attack attempts will end.",
+        text: "Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, Score Attack, and Trial by Graph attempts will end.",
         confirmText: "Return",
         cancelText: "Stay",
         onConfirm: function(){
@@ -5463,6 +5616,8 @@ if(!hasSavedRun){
     totalAttempts = 0;
     correctAnswers = 0;
     quizQuestionsCompleted = 0;
+    trialGraphQuestionsCompleted = 0;
+    trialGraphDeckIndex = 0;
     bossPool = [];
     calcBag = [];
     conceptMemory = {};
@@ -5511,7 +5666,7 @@ if(!hasSavedRun){
     if(modeScreen) modeScreen.style.display = "none";
 	document.querySelector(".top-panel").style.display = "flex";
     const mazeTrackContainer = document.getElementById("mazeTrackContainer");
-    if(mazeTrackContainer) mazeTrackContainer.style.display = gameMode === "quiz" ? "none" : "block";
+    if(mazeTrackContainer) mazeTrackContainer.style.display = (gameMode === "quiz" || gameMode === "trialGraph") ? "none" : "block";
     document.getElementById("gameShell").style.display = "flex";
     document.getElementById("gameBox").style.display = "block";
     document.getElementById("artifactVault").style.display = modeAllowsRealmProgress() ? "block" : "none";
@@ -5572,6 +5727,9 @@ function resetRunStateForNewMode(){
     timedHighestRoom = 1;
     timedSetbacks = 0;
     quizQuestionsCompleted = 0;
+    trialGraphQuestionsCompleted = 0;
+    trialGraphDeckIndex = 0;
+    if(gameMode !== "trialGraph") trialGraphDeck = [];
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
     resumedSavedRunThisSession = false;
@@ -5602,6 +5760,8 @@ function initializeRunForMode(mode){
                 ? "✎ Exam Drill Active"
                 : gameMode === "quiz"
                     ? `? Quiz Active · ${quizQuestionTarget} Questions`
+                    : gameMode === "trialGraph"
+                        ? `▧ Trial by Graph · ${trialGraphQuestionTarget} Questions`
                     : gameMode === "unlimited"
                         ? "∞ Unlimited Practice Active"
                     : gameMode === "score"
@@ -5796,6 +5956,9 @@ function returnToModeSelectFromRun(){
 }
 
 function getDifficultyForMode(){
+    if(gameMode === "trialGraph"){
+        return trialGraphDeck[trialGraphDeckIndex]?.__mqDifficulty || "easy";
+    }
     if(gameMode === "quiz"){
         const target = normalizeQuizQuestionTarget(quizQuestionTarget);
         const position = Math.min(quizQuestionsCompleted, Math.max(0, target - 1));
@@ -26125,9 +26288,10 @@ const questionAssetMetadata = {
     "graphDescription": "A sequential game tree. Payoff order (Entrant, Incumbent); (0, 11); Stay out; Accommodate (5, 7); Enter; Entrant Incumbent; Fight; (-4, 2)."
   }
 };
+const trialGraphQuestionIds = [];
 const facultyCompositionMetadata = {
   "schemaVersion": "1.2.0",
-  "composerVersion": "4.5s.2",
+  "composerVersion": "4.5s.2k",
   "title": "Mode Test timed-only",
   "slug": "mode-test-timed-only",
   "selectedConceptIds": [
@@ -26182,11 +26346,11 @@ const facultyCompositionMetadata = {
   "supportedModes": [
     "timed"
   ],
-  "saveKeyNamespace": "mq-econ:mode-test-timed-only:86e09b575eda",
-  "compositionFingerprint": "86e09b575eda850ae0e08112de2d9d2eb8fab404875de90af56cdfc0d076ebd6",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1",
-  "librarySha256": "696e755ebcaea5c25d6d06f76db4a781eaf59c87bf4f0eee6dcdfea3c0faea80",
-  "templateSha256": "5815f107314168b3605dabba199c3628f3de6e06fadbba7394dbe2e2faadb464"
+  "saveKeyNamespace": "mq-econ:mode-test-timed-only:e17352688a5f",
+  "compositionFingerprint": "e17352688a5fab3f6f1038d3e20c1206f6be15faaa612736ab8a7af6dd163cd5",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1",
+  "librarySha256": "63424e0425bb8d0ab38842d0d7951514d08c64be5f3dd6bb8718f91ada32b66b",
+  "templateSha256": "85908fec220e6554478d82a0fd8f80d63103cbe64c16026c830decfe9442792a"
 };
 const facultyQuestionValidator = function validateFacultyQuestionRecord(question, poolName, availableAssets){
   const invalidFields = [];
@@ -32942,7 +33106,8 @@ const FACULTY_MODE_REQUIREMENTS = {
     quiz: ["easy", "medium", "hard"],
     unlimited: ["easy", "medium", "hard", "repair", "bridge"],
     legendary: ["legendary", "legendaryBoss"],
-    score: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"]
+    score: ["easy", "medium", "hard", "easyBoss", "mediumBoss", "finalBoss", "repair", "bridge"],
+    trialGraph: []
 };
 
 const FACULTY_MODE_POOL_MINIMUMS = {
@@ -32975,6 +33140,23 @@ function validateFacultyMode(mode){
         || FACULTY_MODE_REQUIREMENTS.standard;
     const issues = [];
     const seenIds = new Map();
+
+    if(normalizedMode === 'trialGraph'){
+        const candidates = getTrialGraphCandidates();
+        if(candidates.length < 10){
+            issues.push({pool:'graphSafe',id:'—',issue:`Needs 10; found ${candidates.length}`});
+        }
+        candidates.forEach((question,index) => {
+            const diff = String(question.__mqDifficulty || question.canonicalDifficulty || question.difficulty || 'hard');
+            const fields = validateFacultyQuestion(question, diff);
+            const id = question?.id ?? question?.questionId ?? `index ${index}`;
+            if(fields.length) issues.push({pool:'graphSafe',id,issue:`Invalid: ${fields.join(', ')}`});
+            if(question?.graphRequired !== true || !question?.image) issues.push({pool:'graphSafe',id,issue:'Question is not graph-required'});
+            const meta = questionAssetMetadata[question.image] || questionAssetMetadata[String(question.image).split('/').pop()] || {};
+            if(!meta.imageAlt || !meta.graphDescription) issues.push({pool:'graphSafe',id,issue:'Graph accessibility metadata is missing'});
+        });
+        return {ok:issues.length === 0, issues};
+    }
 
     requiredPoolNames.forEach(poolName => {
         const pool = getFacultyPool(poolName);
@@ -33537,6 +33719,10 @@ function loadQuestion() {
         handlePracticeModeComplete();
         return;
     }
+    if(gameMode === "trialGraph" && trialGraphQuestionsCompleted >= trialGraphQuestionTarget){
+        handlePracticeModeComplete();
+        return;
+    }
     if(gameMode === "timed" && room > 30) room = 30;
 
     questionStartTime = Date.now(); 
@@ -33581,7 +33767,12 @@ function loadQuestion() {
     gameBox.classList.toggle("boss-mode", isBoss);
    
     // 2. UI & Progress Updates
-    if(gameMode === "quiz"){
+    if(gameMode === "trialGraph"){
+        const currentTrialQuestion = Math.min(trialGraphQuestionsCompleted + 1, trialGraphQuestionTarget);
+        document.getElementById("progressFill").style.width = `${(trialGraphQuestionsCompleted / trialGraphQuestionTarget) * 100}%`;
+        document.getElementById("areaDisplay").innerText = `Trial by Graph — Question ${currentTrialQuestion} of ${trialGraphQuestionTarget}`;
+        document.getElementById("srAnnouncements").innerText = `Trial by Graph. Question ${currentTrialQuestion} of ${trialGraphQuestionTarget}.`;
+    } else if(gameMode === "quiz"){
         const currentQuizQuestion = Math.min(quizQuestionsCompleted + 1, quizQuestionTarget);
         document.getElementById("progressFill").style.width = `${(quizQuestionsCompleted / quizQuestionTarget) * 100}%`;
         document.getElementById("areaDisplay").innerText = `Quiz — Question ${currentQuizQuestion} of ${quizQuestionTarget}`;
@@ -33657,6 +33848,24 @@ if (isBoss) {
     return;
 
 } else {
+
+    if(gameMode === "trialGraph"){
+        const deckQuestion = trialGraphDeck[trialGraphDeckIndex];
+        currentQuestion = shuffleOptions(deckQuestion);
+        if(currentQuestion) currentQuestion.__mqDifficulty = deckQuestion?.__mqDifficulty || currentQuestion.canonicalDifficulty || currentQuestion.difficulty || "hard";
+        if(!currentQuestion || currentQuestion.graphRequired !== true || !currentQuestion.image){
+            showGameModal({title:"Question Selection Stopped",text:"Trial by Graph could not select a valid graph-required question.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
+            return;
+        }
+        adaptiveMode = "trial-graph";
+        renderQuestionGraph(currentQuestion);
+        wizardSpeak(getWizardLine(currentQuestion.type || "interpretation"));
+        bossMsg.innerText = "";
+        questionElement.innerHTML = `<div>${currentQuestion.q}</div>`;
+        document.getElementById("formulaHint").innerText = currentQuestion.hint ? "💡 Hint: " + currentQuestion.hint : "";
+        displayQuestion();
+        return;
+    }
 
     // --- STREAK + MASTERY ADAPTIVE LOGIC ---
     let adjustedDiff = diff;
@@ -34024,6 +34233,10 @@ if(rapidGuess.triggered && !rapidGuessLocked){
 if(gameMode === "quiz"){
     quizQuestionsCompleted++;
 }
+if(gameMode === "trialGraph"){
+    trialGraphQuestionsCompleted++;
+    trialGraphDeckIndex++;
+}
 
 recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 
@@ -34340,7 +34553,7 @@ if(remediationState.active){
 }
 
 // --- STAGED REMEDIATION TRIGGER ---
-if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
+if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && gameMode !== "trialGraph" && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, responseTime) || remediationState;
     detourActive = true;
     detourReturnRoom = room;
@@ -34373,7 +34586,7 @@ if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active 
 }
 	
     // --- QUIZ MODE: FIXED LENGTH, NO SETBACKS OR REMEDIATION DETOURS ---
-    if(gameMode === "quiz"){
+    if(gameMode === "quiz" || gameMode === "trialGraph"){
         document.getElementById("streakDisplay").innerText = "";
         bossHealth = 3;
         bossPool = [];
@@ -34382,7 +34595,7 @@ if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active 
         showGameModal({
             title: "Answer Recorded",
             text: `Incorrect.${feedback}`,
-            confirmText: quizQuestionsCompleted >= quizQuestionTarget ? "View Results" : "Next Question",
+            confirmText: (gameMode === "trialGraph" ? trialGraphQuestionsCompleted >= trialGraphQuestionTarget : quizQuestionsCompleted >= quizQuestionTarget) ? "View Results" : "Next Question",
             onConfirm: function(){ loadQuestion(); }
         });
         return;
@@ -34851,11 +35064,13 @@ function handlePracticeModeComplete(options = {}){
     const reportDestination = options.reportDestination || (options.showReport === true ? "mastery" : "results");
     if(runEnding) return;
     beginRunSession();
-    if(gameMode === "quiz"){
+    if(gameMode === "quiz" || gameMode === "trialGraph"){
         const progress = document.getElementById("progressFill");
         const area = document.getElementById("areaDisplay");
         if(progress) progress.style.width = "100%";
-        if(area) area.innerText = `Quiz — Complete (${quizQuestionTarget}/${quizQuestionTarget})`;
+        if(area) area.innerText = gameMode === "trialGraph"
+            ? `Trial by Graph — Complete (${trialGraphQuestionTarget}/${trialGraphQuestionTarget})`
+            : `Quiz — Complete (${quizQuestionTarget}/${quizQuestionTarget})`;
     }
     runEnding = true;
     answerSubmissionPending = true;
@@ -34903,7 +35118,9 @@ function handlePracticeModeComplete(options = {}){
     closeGraphLightbox();
     document.getElementById("questionImageBox").style.display = "none";
 
-    const completionLead = gameMode === "quiz"
+    const completionLead = gameMode === "trialGraph"
+        ? `You completed ${trialGraphQuestionTarget} graph-required question${trialGraphQuestionTarget === 1 ? "" : "s"}.`
+        : gameMode === "quiz"
         ? `You completed ${quizQuestionTarget} quiz question${quizQuestionTarget === 1 ? "" : "s"}.`
         : gameMode === "unlimited"
             ? `You ended Unlimited Practice after ${totalAttempts} scored attempt${totalAttempts === 1 ? "" : "s"}.`
@@ -34916,7 +35133,7 @@ function handlePracticeModeComplete(options = {}){
         <div class="boss-q">
             ${completionLead}<br><br>
             Accuracy: ${accuracy}%<br>
-            ${gameMode === "quiz" ? `Quiz Questions: ${quizQuestionTarget}<br>` : ""}
+            ${gameMode === "quiz" ? `Quiz Questions: ${quizQuestionTarget}<br>` : gameMode === "trialGraph" ? `Graph Questions: ${trialGraphQuestionTarget}<br>` : ""}
             Total Attempts: ${totalAttempts}<br>
             Best Streak: ${maxStreak}<br>
             Total Time: ${timeString}<br>
@@ -34925,7 +35142,9 @@ function handlePracticeModeComplete(options = {}){
         </div>
     `;
 
-    const replayButton = gameMode === "quiz"
+    const replayButton = gameMode === "trialGraph"
+        ? '<button class="continue-btn" onclick="openTrialGraphSetup()">Run Trial by Graph Again</button>'
+        : gameMode === "quiz"
         ? '<button class="continue-btn" onclick="openQuizSetup()">Start Another Quiz</button>'
         : gameMode === "unlimited"
             ? `<button class="continue-btn" onclick="startSelectedMode('unlimited')">Restart Unlimited Practice</button>`
@@ -34938,7 +35157,9 @@ function handlePracticeModeComplete(options = {}){
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
     `;
 
-    document.getElementById("message").innerText = gameMode === "quiz"
+    document.getElementById("message").innerText = gameMode === "trialGraph"
+        ? "Trial by Graph complete. The campaign record was not changed."
+        : gameMode === "quiz"
         ? "Quiz complete. The campaign record was not changed."
         : endedByStudent
             ? "Practice ended by the student. The campaign record was not changed."
@@ -35499,6 +35720,7 @@ function getMasteryReportModeName(){
     if(gameMode === "legendary") return "Legendary Mode";
     if(gameMode === "exam") return "Exam Drill";
     if(gameMode === "quiz") return "Quiz";
+    if(gameMode === "trialGraph") return "Trial by Graph";
     if(gameMode === "unlimited") return "Unlimited Practice";
     return getModeDisplayName();
 }
