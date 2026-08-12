@@ -1,5 +1,5 @@
 {
-  "assetCount": 408,
+  "assetCount": 416,
   "assets": [
     {
       "conceptId": "aggregate-demand",
@@ -4072,11 +4072,99 @@
       "sizeBytes": 67900,
       "imageAlt": "Movie market with original demand D0, supply S0, and a parallel demand-with-tax curve below D0.",
       "graphDescription": "The horizontal axis is quantity of movies in thousands and the vertical axis is price of movies. Original demand D0 and supply S0 intersect at point e, quantity 100 thousand and price $10.50. A parallel curve labeled Demand with tax lies $6 below D0. After the buyer-side tax, quantity is 60 thousand. Sellers receive $7.50 at the intersection of supply and demand with tax, while buyers pay $13.50 on the original demand curve at that same quantity. The $6 wedge is split equally relative to the original $10.50 equilibrium price, and quantity falls by 40 thousand."
+    },
+    {
+      "conceptId": "aggregate-supply",
+      "filename": "AS-01.webp",
+      "sourceAssetPath": "question-assets/aggregate-supply/AS-01.webp",
+      "sourceUrl": "data/question-assets/aggregate-supply/AS-01.webp",
+      "runtimePath": "question-assets/aggregate-supply/AS-01.webp",
+      "sha256": "34a54f4e29ed509fd11a38740efc961a4bbe8e908567723ab2fdf594f6f268f6",
+      "sizeBytes": 43790,
+      "imageAlt": "Aggregate supply graph with AS0 and a dashed AS1 curve above it, showing a decrease in aggregate supply.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AS0 is an upward-sloping curve beginning near a price level of 75 when real GDP is 0 and reaching about 190 when real GDP is 230. A dashed curve AS1 lies above AS0 at all output levels, indicating a decrease in aggregate supply. At real GDP 150, the price level on AS0 is 150 and the price level on AS1 is 190."
+    },
+    {
+      "conceptId": "aggregate-demand",
+      "filename": "AD-01.webp",
+      "sourceAssetPath": "question-assets/aggregate-demand/AD-01.webp",
+      "sourceUrl": "data/question-assets/aggregate-demand/AD-01.webp",
+      "runtimePath": "question-assets/aggregate-demand/AD-01.webp",
+      "sha256": "2c2be9aea996339ac888b1d0f0d1b75e62a11067a7d8653a80c222aaa68c45ea",
+      "sizeBytes": 44122,
+      "imageAlt": "Aggregate demand graph with AD0 and a dashed AD1 curve to the right, showing an increase in aggregate demand.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 slopes downward from price level 100 at real GDP 0 to price level 0 at real GDP 200. A dashed curve AD1 lies to the right of AD0, running from about 125 at real GDP 0 to 0 at real GDP 250. This indicates an increase in aggregate demand. At price level 50, AD0 corresponds to real GDP 100 and AD1 corresponds to real GDP 150."
+    },
+    {
+      "conceptId": "aggregate-demand",
+      "filename": "AD-02.webp",
+      "sourceAssetPath": "question-assets/aggregate-demand/AD-02.webp",
+      "sourceUrl": "data/question-assets/aggregate-demand/AD-02.webp",
+      "runtimePath": "question-assets/aggregate-demand/AD-02.webp",
+      "sha256": "1b23e95de217b5521d827d0d59471e9deb6fc5ec782cb2c421d25b540d736f81",
+      "sizeBytes": 43170,
+      "imageAlt": "Aggregate demand graph with AD0 and a dashed AD1 curve to the left, showing a decrease in aggregate demand.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 slopes downward from price level 120 at real GDP 0 to price level 0 at real GDP 240. A dashed curve AD1 lies to the left of AD0, running from about 95 at real GDP 0 to 0 at real GDP 190. This indicates a decrease in aggregate demand. At price level 45, AD0 corresponds to real GDP 150 and AD1 corresponds to real GDP 100."
+    },
+    {
+      "conceptId": "aggregate-supply",
+      "filename": "AS-02.webp",
+      "sourceAssetPath": "question-assets/aggregate-supply/AS-02.webp",
+      "sourceUrl": "data/question-assets/aggregate-supply/AS-02.webp",
+      "runtimePath": "question-assets/aggregate-supply/AS-02.webp",
+      "sha256": "281dc90fdd2ac8e0a3c0c5d9e23f577e9d79f5b1dca0a81f87cf8623d8a28be1",
+      "sizeBytes": 43750,
+      "imageAlt": "Aggregate supply graph with AS0 and a dashed AS1 curve below it, showing an increase in aggregate supply.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AS0 is an upward-sloping curve beginning near a price level of 75 at real GDP 0 and reaching about 190 at real GDP 230. A dashed curve AS1 lies below AS0 at all output levels, indicating an increase in aggregate supply. At real GDP 150, the price level on AS0 is 150 and the price level on AS1 is 110."
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "filename": "ADASLRAS-01.webp",
+      "sourceAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-01.webp",
+      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-01.webp",
+      "runtimePath": "question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-01.webp",
+      "sha256": "b75b5856e9afc1b140c9e0e254f16a471183099f307c13b029eb35c9b518de1c",
+      "sizeBytes": 72324,
+      "imageAlt": "AD-AS-LRAS graph with AD0, AD1, SRAS0, SRAS1, LRAS0, and labeled points A, B, C, and D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. LRAS0 is vertical at real GDP 100. AD0 intersects SRAS0 at point C, where real GDP is 100 and price level is 125. AD1 intersects SRAS0 at point D, where real GDP is 125 and price level is 150. AD0 intersects SRAS1 at point A, where real GDP is 75 and price level is 150. AD1 intersects SRAS1 and LRAS0 at point B, where real GDP is 100 and price level is 175. The graph can be used to trace an AD increase from original long-run equilibrium C to short-run point D and then to long-run point B after SRAS shifts left."
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "filename": "ADASLRAS-02.webp",
+      "sourceAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-02.webp",
+      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-02.webp",
+      "runtimePath": "question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-02.webp",
+      "sha256": "6eabd068fa5d3956106182f64e397a543c5bb327871331fed00f8965654d3789",
+      "sizeBytes": 77084,
+      "imageAlt": "AD-AS-LRAS graph with AD0, SRAS0, SRAS1, LRAS0, LRAS1, and labeled points A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 slopes downward. Point A is the original long-run equilibrium where AD0, SRAS0, and LRAS0 intersect at real GDP 100 and price level 125. A dashed SRAS1 curve lies below SRAS0, and a dashed LRAS1 line lies to the right of LRAS0 at real GDP 115. Point B is the new long-run equilibrium where AD0, SRAS1, and LRAS1 intersect at real GDP 115 and price level 110. The graph shows a positive supply-side change that raises long-run output and lowers the price level."
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "filename": "ADAS-01.webp",
+      "sourceAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/ADAS-01.webp",
+      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/ADAS-01.webp",
+      "runtimePath": "question-assets/macroeconomic-equilibrium-and-shocks/ADAS-01.webp",
+      "sha256": "902c876558934ff04cc8c3e123800ed1e61dd39b0cd7bf6a427003b3d8c50c0d",
+      "sizeBytes": 68440,
+      "imageAlt": "AD-AS graph with AD0, AD1, AS0, and labeled points A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 intersects AS0 at point A, where real GDP is 150 and the price level is 125. A dashed AD1 curve lies to the right of AD0 and intersects AS0 at point B, where real GDP is 175 and the price level is 137.5. This graph shows an increase in aggregate demand moving the economy along a fixed short-run aggregate supply curve."
+    },
+    {
+      "conceptId": "macroeconomic-equilibrium-and-shocks",
+      "filename": "ADAS-02.webp",
+      "sourceAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/ADAS-02.webp",
+      "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/ADAS-02.webp",
+      "runtimePath": "question-assets/macroeconomic-equilibrium-and-shocks/ADAS-02.webp",
+      "sha256": "d59adcddb4bfa2b29b0d6dfff3df0630b6db380c8ebf8098140d4007a2da2e5c",
+      "sizeBytes": 73916,
+      "imageAlt": "AD-AS graph with AD0, AD1, AS0, AS1, and labeled points A, B, C, and D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 intersects AS0 at point A, where real GDP is 75 and the price level is 100. AD1 intersects AS0 at point B, where real GDP is 100 and the price level is 125. AD0 intersects AS1 at point D, where real GDP is 50 and the price level is 125. AD1 intersects AS1 at point C, where real GDP is 75 and the price level is 150. The graph allows separate analysis of an AD increase, a decrease in aggregate supply, and the simultaneous occurrence of both."
     }
   ],
   "conceptCount": 126,
-  "canonicalQuestionCount": 8049,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1",
-  "librarySha256": "2b39bb2c9602e5233a905d9bbc0814e0f6cb5738fba05dca1b0ecb536884e2b6",
-  "generatedAt": "2026-08-12T14:30:00.000Z"
+  "canonicalQuestionCount": 8097,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1",
+  "librarySha256": "a6efd340f96f70e3452034c7f726b241111c59bdfbb569d1302968037efb3b48",
+  "generatedAt": "2026-08-12T16:00:00.000Z"
 }

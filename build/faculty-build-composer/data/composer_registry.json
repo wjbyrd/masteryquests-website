@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-12T14:30:00.000Z",
+  "generatedAt": "2026-08-12T16:00:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -41,39 +41,39 @@
         "boss": 9,
         "bridge": 2,
         "calculation": 0,
-        "elite": 4,
+        "elite": 6,
         "integration": 0,
-        "legendary": 6,
+        "legendary": 8,
         "legendaryBoss": 3,
-        "main": 18,
+        "main": 26,
         "repair": 5,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 9,
-        "elite": 4,
-        "legendary": 9,
+        "easy": 11,
+        "medium": 13,
+        "hard": 11,
+        "elite": 6,
+        "legendary": 11,
         "unknown": 7
       },
       "repairCoverage": {
         "directSkillMatches": 5,
-        "mainWithUsableSkill": 47
+        "mainWithUsableSkill": 52
       },
       "bridgeCoverage": {
         "directSkillMatches": 2,
-        "mainWithUsableSkill": 47
+        "mainWithUsableSkill": 52
       },
-      "calculationCoverage": 0,
-      "graphCoverage": 1,
+      "calculationCoverage": 2,
+      "graphCoverage": 13,
       "status": "active",
       "notes": "AD-AS and macro-equilibrium family slice. No new graph image was added; existing AD-AS and AD-AS-LRAS assets are reused only where graph evidence is necessary.",
       "instructionalClassification": "Engine-safe F8 AD-AS and Macroeconomic Equilibrium family slice",
       "coverageStatus": "ready-family-slice",
       "coverageStatusLabel": "Engine-safe alone; strongest as AD/AS → Equilibrium → Long-Run Adjustment sequence",
-      "coverageStatusNote": "Phase M2d-1 preserves healthy AD, AS, and equilibrium content; closes Long-Run Adjustment ordinary, checkpoint, and Legendary floors; repairs all F8 Legendary boss stages; strengthens genuine cross-concept Bridges; and adds accessibility metadata to existing AD-AS assets.",
-      "coverageFloorVersion": "phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1"
+      "coverageStatusNote": "Phase Graph 3 adds two dedicated AD shift graphs that cover increase and decrease cases, direct quantity readings, shifter identification, and movement-versus-shift reasoning through Legendary.",
+      "coverageFloorVersion": "phaseGraph3-macro-ad-as-core-v1"
     },
     {
       "canonicalConceptId": "aggregate-supply",
@@ -115,39 +115,39 @@
         "boss": 9,
         "bridge": 4,
         "calculation": 0,
-        "elite": 4,
+        "elite": 6,
         "integration": 0,
-        "legendary": 6,
+        "legendary": 8,
         "legendaryBoss": 3,
-        "main": 19,
+        "main": 27,
         "repair": 6,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 9,
-        "medium": 9,
-        "hard": 10,
-        "elite": 4,
-        "legendary": 9,
+        "easy": 11,
+        "medium": 13,
+        "hard": 12,
+        "elite": 6,
+        "legendary": 11,
         "unknown": 10
       },
       "repairCoverage": {
         "directSkillMatches": 6,
-        "mainWithUsableSkill": 51
+        "mainWithUsableSkill": 53
       },
       "bridgeCoverage": {
         "directSkillMatches": 4,
-        "mainWithUsableSkill": 51
+        "mainWithUsableSkill": 53
       },
-      "calculationCoverage": 0,
-      "graphCoverage": 1,
+      "calculationCoverage": 2,
+      "graphCoverage": 13,
       "status": "active",
       "notes": "AD-AS and macro-equilibrium family slice. No new graph image was added; existing AD-AS and AD-AS-LRAS assets are reused only where graph evidence is necessary.",
       "instructionalClassification": "Engine-safe F8 AD-AS and Macroeconomic Equilibrium family slice",
       "coverageStatus": "ready-family-slice",
       "coverageStatusLabel": "Engine-safe alone; strongest as AD/AS → Equilibrium → Long-Run Adjustment sequence",
-      "coverageStatusNote": "Phase M2d-1 preserves healthy AD, AS, and equilibrium content; closes Long-Run Adjustment ordinary, checkpoint, and Legendary floors; repairs all F8 Legendary boss stages; strengthens genuine cross-concept Bridges; and adds accessibility metadata to existing AD-AS assets.",
-      "coverageFloorVersion": "phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1"
+      "coverageStatusNote": "Phase Graph 3 adds two dedicated AS shift graphs that cover increase and decrease cases, output/price effects, shifter identification, stagflation, and movement-versus-shift reasoning through Legendary.",
+      "coverageFloorVersion": "phaseGraph3-macro-ad-as-core-v1"
     },
     {
       "canonicalConceptId": "bank-money-creation",
@@ -6019,39 +6019,39 @@
         "boss": 9,
         "bridge": 3,
         "calculation": 0,
-        "elite": 7,
+        "elite": 11,
         "integration": 0,
-        "legendary": 6,
+        "legendary": 10,
         "legendaryBoss": 3,
-        "main": 22,
+        "main": 38,
         "repair": 9,
         "repairSeed": 0
       },
       "questionCountByDifficulty": {
-        "easy": 10,
-        "medium": 11,
-        "hard": 10,
-        "elite": 7,
-        "legendary": 9,
+        "easy": 14,
+        "medium": 19,
+        "hard": 14,
+        "elite": 11,
+        "legendary": 13,
         "unknown": 12
       },
       "repairCoverage": {
         "directSkillMatches": 9,
-        "mainWithUsableSkill": 59
+        "mainWithUsableSkill": 71
       },
       "bridgeCoverage": {
         "directSkillMatches": 3,
-        "mainWithUsableSkill": 59
+        "mainWithUsableSkill": 71
       },
-      "calculationCoverage": 0,
-      "graphCoverage": 20,
+      "calculationCoverage": 2,
+      "graphCoverage": 44,
       "status": "active",
       "notes": "AD-AS and macro-equilibrium family slice. No new graph image was added; existing AD-AS and AD-AS-LRAS assets are reused only where graph evidence is necessary.",
       "instructionalClassification": "Engine-safe F8 AD-AS and Macroeconomic Equilibrium family slice",
       "coverageStatus": "ready-family-slice",
       "coverageStatusLabel": "Engine-safe alone; strongest as AD/AS → Equilibrium → Long-Run Adjustment sequence",
-      "coverageStatusNote": "Phase M2d-1 preserves healthy AD, AS, and equilibrium content; closes Long-Run Adjustment ordinary, checkpoint, and Legendary floors; repairs all F8 Legendary boss stages; strengthens genuine cross-concept Bridges; and adds accessibility metadata to existing AD-AS assets.",
-      "coverageFloorVersion": "phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1"
+      "coverageStatusNote": "Phase Graph 3 adds four AD-AS / AD-AS-LRAS graphs covering short-run equilibrium, long-run adjustment after AD shocks, positive supply-side growth, and simultaneous demand/supply shifts.",
+      "coverageFloorVersion": "phaseGraph3-macro-ad-as-core-v1"
     },
     {
       "canonicalConceptId": "marginal-analysis",
@@ -11833,10 +11833,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseGraph2-price-controls-taxes-v1",
-  "curationSummary": "Phase Graph 2: four approved price-control and tax assets plus 24 graph-dependent questions. Coverage emphasizes binding ceilings/floors, shortage/surplus mechanics, transaction limits, tax wedges and revenue, and statutory-versus-economic incidence.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1",
-  "canonicalQuestionCount": 8049,
-  "librarySha256": "2b39bb2c9602e5233a905d9bbc0814e0f6cb5738fba05dca1b0ecb536884e2b6",
+  "curationPhase": "phaseGraph3-macro-ad-as-core-v1",
+  "curationSummary": "Phase Graph 3: eight approved macro AD/AS assets plus 48 graph-dependent questions. Coverage emphasizes AD shifts, AS shifts, AD-AS short-run equilibrium, AD-AS-LRAS long-run adjustment, and simultaneous demand/supply shocks.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1",
+  "canonicalQuestionCount": 8097,
+  "librarySha256": "a6efd340f96f70e3452034c7f726b241111c59bdfbb569d1302968037efb3b48",
   "composerVersion": "4.5p.0"
 }
