@@ -1,0 +1,149 @@
+{
+  "phase": "phaseMicroGraphAudit-remediation-v1",
+  "release": "4.5s.2j",
+  "microQuestionsAudited": 426,
+  "recentQuestionsRechecked": 186,
+  "answerHashFailures": [],
+  "microFilenameExposures": 0,
+  "recentFilenameExposures": 0,
+  "microUniqueLongestCorrect": 0,
+  "microSevereLengthCues": 0,
+  "recentUniqueLongestCorrect": 0,
+  "recentSevereLengthCues": 0,
+  "microNearDuplicatePairs80": [],
+  "priorRedundantGroups": [
+    {
+      "ids": [
+        "P62B-ELAS-E-032",
+        "P62B-ELAS-B1-019"
+      ],
+      "maxStemJaccard": 0.167
+    },
+    {
+      "ids": [
+        "P62B-ELAS-E-037",
+        "P62B-ELAS-B3-019"
+      ],
+      "maxStemJaccard": 0.3
+    },
+    {
+      "ids": [
+        "P62B-ELAS-E-039",
+        "P62B-ELAS-B2-020"
+      ],
+      "maxStemJaccard": 0.189
+    },
+    {
+      "ids": [
+        "P62E-COP-H-043",
+        "P62E-COP-B2-038"
+      ],
+      "maxStemJaccard": 0.25
+    },
+    {
+      "ids": [
+        "P62G-MON-M-032",
+        "P62G-MON-B1-055"
+      ],
+      "maxStemJaccard": 0.25
+    },
+    {
+      "ids": [
+        "P62G-MON-M-036",
+        "P62G-MON-B2-056"
+      ],
+      "maxStemJaccard": 0.25
+    },
+    {
+      "ids": [
+        "P62C-CPS-M-009",
+        "P62C-CPS-H-005",
+        "P62C-CPS-L-017",
+        "P62C-CPS-C-019",
+        "P62C-CPS-B1-015"
+      ],
+      "maxStemJaccard": 0.333
+    },
+    {
+      "ids": [
+        "P62C-CPS-M-010",
+        "P62C-CPS-L-018",
+        "P62C-CPS-C-022",
+        "P62C-CPS-B1-016"
+      ],
+      "maxStemJaccard": 0.3
+    },
+    {
+      "ids": [
+        "P62C-CPS-M-011",
+        "P62C-CPS-L-019",
+        "P62C-CPS-C-025"
+      ],
+      "maxStemJaccard": 0.368
+    },
+    {
+      "ids": [
+        "P62C-CPS-M-012",
+        "P62C-CPS-L-021",
+        "P62C-CPS-C-020",
+        "P62C-CPS-B2-007"
+      ],
+      "maxStemJaccard": 0.389
+    },
+    {
+      "ids": [
+        "P62C-CPS-M-013",
+        "P62C-CPS-H-006",
+        "P62C-CPS-L-022",
+        "P62C-CPS-C-023",
+        "P62C-CPS-B2-008"
+      ],
+      "maxStemJaccard": 0.4
+    },
+    {
+      "ids": [
+        "P62C-CPS-M-014",
+        "P62C-CPS-H-007",
+        "P62C-CPS-L-027",
+        "P62C-CPS-C-027",
+        "P62C-CPS-B2-010"
+      ],
+      "maxStemJaccard": 0.643
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-023",
+        "P62C-CPS-C-026",
+        "P62C-CPS-B2-009"
+      ],
+      "maxStemJaccard": 0.529
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-025",
+        "P62C-CPS-C-021"
+      ],
+      "maxStemJaccard": 0.182
+    },
+    {
+      "ids": [
+        "P62C-CPS-L-026",
+        "P62C-CPS-C-024"
+      ],
+      "maxStemJaccard": 0.167
+    }
+  ],
+  "cpsNonCanonicalImagePaths": 0,
+  "pcMetadataFix": {
+    "id": "P62F-PC-H-041",
+    "primarySkill": "integrated_competitive_firm_analysis",
+    "repairSkill": "integrated_competitive_firm_analysis"
+  },
+  "canonicalQuestionCount": 8163,
+  "assetCount": 427,
+  "changedRecentFilenameStems": {
+    "PG5-PC-E-019": "How does point B compare with the natural-rate point A in the displayed Phillips-curve graph?",
+    "PG5-PC-H-022": "At the right-hand point B, which inflation-unemployment comparison with A is correct?",
+    "PG5-PC-M-021": "Points A and B lie on the same short-run Phillips curve. How should the change from A to B be classified?"
+  }
+}

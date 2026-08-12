@@ -16,7 +16,12 @@
     "feedback": "Point A is where MD0 intersects MS0, at a nominal interest rate of 6 percent.",
     "primarySkill": "read_money_market_equilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "At point A in the money market, what is the equilibrium nominal interest rate?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "5bd030d5464d74b1316a839186c8e6e80283edd05cce812fb5ffe4ba9cd05f2a",
+    "repairSkill": "read_money_market_equilibrium",
+    "sourceHash": "aa58d24830f2a9389d7a4cf0b46591339efba809986da483f3849621826b9dc5"
   },
   {
     "id": "PG4-MM-E-002",
@@ -35,7 +40,12 @@
     "feedback": "With money demand fixed, the larger money supply moves equilibrium down MD0 from 4 percent to 2 percent.",
     "primarySkill": "read_money_market_shift",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "The money-supply curve moves from MS0 at 100 to MS1 at 125. What happens to the equilibrium nominal interest rate?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "956746a6dcbd24dda8a2929d4c1754d2c63884644eb1653c274817116c2ea9cf",
+    "repairSkill": "read_money_market_shift",
+    "sourceHash": "c026a118b903a11a33bb674ea612b23ed21c2be7e09b5b1908fca0467b868724"
   },
   {
     "id": "PG4-MM-E-003",
@@ -54,7 +64,12 @@
     "feedback": "With money demand fixed, the smaller money supply moves equilibrium up MD0 from 4 percent to 6 percent.",
     "primarySkill": "read_money_market_shift",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "When the money-supply line moves left from 100 to 75, how does the equilibrium interest rate respond?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "22ff97bba7325f02ca1ec60143e374b475acb899c5aa57b1b2405e9182250dd6",
+    "repairSkill": "read_money_market_shift",
+    "sourceHash": "125df02b1ff23f8a78c0acb89b0d0c17f1b1bbaa42acbbe35688f260c49d3118"
   },
   {
     "id": "PG4-MM-E-004",
@@ -73,7 +88,12 @@
     "feedback": "The original curves MD0 and MS0 intersect at point B, quantity 75 and interest rate 3.",
     "primarySkill": "simultaneous_money_shifts",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which labeled point is the original equilibrium where MD0 intersects MS0?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
+    "repairSkill": "simultaneous_money_shifts",
+    "sourceHash": "6a2ffbc90da6474c9af349674088217a662d2a1881508edd6b9ad4a7bcbc4223"
   },
   {
     "id": "PG4-MM-E-005",
@@ -95,7 +115,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "In the left panel, money demand rises from MD0 to MD1 while MS0 stays fixed. What happens to the nominal interest rate?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "ac32cc8f1c7489da4e5697c936bbab8db6f0b5dea09344f970935473714cb076",
+    "repairSkill": "trace_money_demand_shift_to_investment",
+    "sourceHash": "854c20fc08cddb888a81c7dbfe646f87b73b516c2b66a11b6da7df694b0ce854"
   },
   {
     "id": "PG4-MM-EL-001",
@@ -114,7 +139,12 @@
     "feedback": "The interest rate is the price variable on the money-demand curve. Changing it moves the economy along MD0.",
     "primarySkill": "money_demand_shift_vs_movement",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "A student says a fall in the interest rate from 8 percent to 6 percent would shift MD0 to the right. What is the best correction?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "5dc32d0947ddf57ab5422fa2cdb5f8e027c0fc997efcc34ef916e773ebe55076",
+    "repairSkill": "money_demand_shift_vs_movement",
+    "sourceHash": "d636a097e3cd6fc6474155c8ca7b5a2f3dbd58793676b2ebb6757cba4f5251fa"
   },
   {
     "id": "PG4-MM-EL-002",
@@ -133,7 +163,12 @@
     "feedback": "MD0 is unchanged. The new equilibrium is reached by moving along the same money-demand curve after MS shifts right.",
     "primarySkill": "money_demand_shift_vs_movement",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "A student says the fall in the interest rate from 4 percent to 2 percent proves money demand shifted left. What does the graph actually show?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "fc51a2fbe6f7081d97dcc1dcdddf459d8a4ed8251be1827a11a83c53c1b469c1",
+    "repairSkill": "money_demand_shift_vs_movement",
+    "sourceHash": "acc121185e2df744cf0cf13603f2f2fd332fa3d23e46a0a9092be5654bc9a237"
   },
   {
     "id": "PG4-MM-EL-003",
@@ -152,7 +187,12 @@
     "feedback": "MD0 is unchanged. The higher interest rate comes from the smaller money supply, causing a movement along MD0.",
     "primarySkill": "money_demand_shift_vs_movement",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "A student says the rise in the interest rate from 4 percent to 6 percent proves money demand shifted right. What does the graph actually show?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "fafa38dd92848126b3292c19454854a42f0ca4eb4959e972bac8117345f741fe",
+    "repairSkill": "money_demand_shift_vs_movement",
+    "sourceHash": "8015f0f936e12bfb0328d066f2823b4d3eaa13b537b3097472be3939b9c8754a"
   },
   {
     "id": "PG4-MM-EL-004",
@@ -171,7 +211,12 @@
     "feedback": "The increase in money supply raises equilibrium quantity, while the simultaneous increase in money demand is strong enough to leave the interest rate one point higher than at B.",
     "primarySkill": "money_market_offsetting_shifts",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Compare original point B with simultaneous-shift point C. What happens to quantity of money and the nominal interest rate?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "f007f98bd9aea5f9526f8bbde98ae04343ff359a1022526d415c047b4d51439d",
+    "repairSkill": "money_market_offsetting_shifts",
+    "sourceHash": "8373f4d7f34997cc85f2c6e43d3236c0924ca6f80d900699a13d572d42984f2f"
   },
   {
     "id": "PG4-MM-EL-005",
@@ -193,7 +238,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "A student says the money-demand increase should shift aggregate demand right because people want to hold more money. What is the strongest correction using the graph?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "be2fb4a11b68fae2c12db44a8eca31770584bc23226a768f6a677ae87ae88286",
+    "repairSkill": "connect_money_market_to_ad_slope",
+    "sourceHash": "339acb5546b64fed57b918313a3f52a3408e3f7c694cbf691221abe44af566f0"
   },
   {
     "id": "PG4-MM-H-001",
@@ -212,7 +262,12 @@
     "feedback": "Holding other determinants fixed, lower interest rates reduce the opportunity cost of holding money, so quantity of money demanded rises.",
     "primarySkill": "money_demand_interest_rate",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Moving downward along MD0 from a higher to a lower interest rate, what happens to the quantity of money demanded?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "39e0c46a488b0cb3c60eee30d336672c49fbcbf712c4f882128cb01558275e89",
+    "repairSkill": "money_demand_interest_rate",
+    "sourceHash": "16910e23f382dce5693c0cf78d903c6fb7c0c099ee1d582bd5e572f0811a6712"
   },
   {
     "id": "PG4-MM-H-002",
@@ -231,7 +286,12 @@
     "feedback": "The equilibrium interest rate falls from 4 percent to 2 percent, a 2-percentage-point decrease.",
     "primarySkill": "predict_money_market_equilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "What is the change in the equilibrium nominal interest rate when money supply rises from 100 to 125?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "5fe6490a036b80411a051ee240f2a2842da1d4e2e0b2e57b2ba7ca458f60de6d",
+    "repairSkill": "predict_money_market_equilibrium",
+    "sourceHash": "915a01c21cce61cde75d6af6314cc2ffe46b395b8060e531b71902d54493dad4"
   },
   {
     "id": "PG4-MM-H-003",
@@ -250,7 +310,12 @@
     "feedback": "The equilibrium interest rate rises from 4 percent to 6 percent, a 2-percentage-point increase.",
     "primarySkill": "predict_money_market_equilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "What is the change in the equilibrium nominal interest rate when money supply falls from 100 to 75?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "29e774a4bbb8bbaf794c243d22a9e57f35702c9754dec83fd24ab7df4ca187bf",
+    "repairSkill": "predict_money_market_equilibrium",
+    "sourceHash": "acbc91330f9d1e8881cb98e3f5434cf70dbc9dd993957a54622ace310553e745"
   },
   {
     "id": "PG4-MM-H-004",
@@ -269,7 +334,12 @@
     "feedback": "The simultaneous shifts produce the intersection of MD1 and MS1, point C.",
     "primarySkill": "simultaneous_money_shifts",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "If money demand increases from MD0 to MD1 at the same time money supply increases from MS0 to MS1, which point is the resulting equilibrium?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "1ddf7973e5b61d38fa9b006a2114abd9568562684cd21fbe42afe7e33e63fb6a",
+    "repairSkill": "simultaneous_money_shifts",
+    "sourceHash": "6c97df8c278cadb096283f0f482ef65c325f0925c5cf6905e1268b86c8f869c5"
   },
   {
     "id": "PG4-MM-H-005",
@@ -291,7 +361,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "By how much does real GDP change from point A to point B in the right panel?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c",
+    "repairSkill": "trace_money_demand_shift_to_investment",
+    "sourceHash": "d6ee136beab9a27e04e194028ae8a5309fcbbbb7426081deba12b3a82c5ca3c0"
   },
   {
     "id": "PG4-MM-L-001",
@@ -310,7 +385,12 @@
     "feedback": "Above equilibrium, the quantity of money demanded is less than the fixed money supply. Portfolio adjustment pushes the interest rate back down toward equilibrium.",
     "primarySkill": "money_market_disequilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "If the nominal interest rate were temporarily above point A while MS0 stayed fixed, what adjustment pressure would the graph imply?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "ea39f1cba9740776a89919b5c5cf6140a8053b1a3a9bdcc88cd463a8edd4266d",
+    "repairSkill": "money_market_disequilibrium",
+    "sourceHash": "79e3b12b8da1773ad45e6ac81b60a6e26e498213c786ae20c02891aee968cb6c"
   },
   {
     "id": "PG4-MM-L-002",
@@ -329,7 +409,12 @@
     "feedback": "The standard transmission channel runs from more money to lower interest rates to more interest-sensitive spending and higher aggregate demand.",
     "primarySkill": "bridge_money_market_transmission",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Starting from the money-market change shown, which downstream effect would normally follow?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "9ccbb60c313562b694be6332791a09a981026a9cfd04bc0494736b08a02d6086",
+    "repairSkill": "bridge_money_market_transmission",
+    "sourceHash": "fa91acf84ca4a0d5c184326443999223fe4064433c9a8dd985a0583d5211875e"
   },
   {
     "id": "PG4-MM-L-003",
@@ -348,7 +433,12 @@
     "feedback": "The standard contractionary chain runs from less money to higher interest rates to less interest-sensitive spending and lower aggregate demand.",
     "primarySkill": "bridge_money_market_transmission",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "After the money-supply change from MS0 to MS1 shown in the graph, which spending-and-AD response should follow?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "8c7eefae43401e033e64359344bd4da85ba9b06ab9a417703770d8a8ebf5b48c",
+    "repairSkill": "bridge_money_market_transmission",
+    "sourceHash": "0af6ba24ea4fd27c603ae8008b379be60de7c36922e9353e9fceed08436f7165"
   },
   {
     "id": "PG4-MM-L-004",
@@ -367,7 +457,12 @@
     "feedback": "The demand increase alone raises the rate from B to A. Expanding money supply then lowers it from 6 to 4 percent at C, partially but not fully offsetting the increase.",
     "primarySkill": "infer_money_supply_offset",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Money demand rises from MD0 to MD1. Which central-bank response shown partially offsets the interest-rate increase without restoring the original 3-percent rate?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "90db64216416f2a0a5faf96b40e641907a6de2b2e7d19d322b63fae9de6f84bf",
+    "repairSkill": "infer_money_supply_offset",
+    "sourceHash": "1507a3953fdae58572a6859d70652e605f5cc7cd5b767b3322e1fb664e8c435b"
   },
   {
     "id": "PG4-MM-L-005",
@@ -389,7 +484,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which complete chain is consistent with the two-panel graph?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "4a2a1c14f4dfa37b89d4d12fed585612e9947b5f9becadacca7170ef8ee48cb5",
+    "repairSkill": "connect_money_market_to_ad_slope",
+    "sourceHash": "c840dcc9821f8d1e539acc0fc743604723a6d73a3b2cffb6028a413f40d26fff"
   },
   {
     "id": "PG4-MM-M-001",
@@ -408,7 +508,12 @@
     "feedback": "The vertical money-supply curve MS0 is fixed at quantity 100, and MD0 intersects it at point A.",
     "primarySkill": "read_money_market_equilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "At point A, what quantity of money clears the market?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306",
+    "repairSkill": "read_money_market_equilibrium",
+    "sourceHash": "13d689ed56143049322b81ed28acc3a700703281481806eed480bcc45a4c3b8d"
   },
   {
     "id": "PG4-MM-M-002",
@@ -427,7 +532,12 @@
     "feedback": "In the standard liquidity-preference model, the central bank fixes the nominal quantity of money, so MS is vertical.",
     "primarySkill": "identify_core_model",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which feature of MS0 shows that this model treats the nominal money supply as fixed?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-01.webp",
+    "aHash": "b26ad732ba9f930c596db97a5dc3c74331f6aade0d8938449cd084aa0817810c",
+    "repairSkill": "identify_core_model",
+    "sourceHash": "4e41a8962c4b00a378cec0da62b59af088e09028fbb20000c5c97dcd6b5cd378"
   },
   {
     "id": "PG4-MM-M-003",
@@ -446,7 +556,12 @@
     "feedback": "Money supply increases from 100 to 125, a rise of 25 units.",
     "primarySkill": "predict_money_market_equilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "How much farther right is MS1 than MS0 in the graph?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+    "repairSkill": "predict_money_market_equilibrium",
+    "sourceHash": "c4f567b2e51080b757c3f43162bdb6d98cd85c626402d62ec93a75896192aecd"
   },
   {
     "id": "PG4-MM-M-004",
@@ -465,7 +580,12 @@
     "feedback": "The graph shows a rightward shift of the vertical money-supply curve, which is expansionary.",
     "primarySkill": "identify_shift_result",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which central-bank action is most consistent with the shift from MS0 to MS1?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-02.webp",
+    "aHash": "f80a81f9b2752098cf3e400c179453faf519ea142f87b6ece9879993a875c7ae",
+    "repairSkill": "identify_shift_result",
+    "sourceHash": "3865f2b7fd096f8652a770bc3367e1411c200059713c83b828eab22e8d1a66c8"
   },
   {
     "id": "PG4-MM-M-005",
@@ -484,7 +604,12 @@
     "feedback": "Money supply falls from 100 to 75, a decrease of 25 units.",
     "primarySkill": "predict_money_market_equilibrium",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Measure the leftward distance from MS0 to MS1. How much smaller is the money supply?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+    "repairSkill": "predict_money_market_equilibrium",
+    "sourceHash": "f6de3a537e8118ea0bd9c676b45a13c1e3ac070d32f7568ad2a3fa87a9bd2cee"
   },
   {
     "id": "PG4-MM-M-006",
@@ -503,7 +628,12 @@
     "feedback": "The graph shows a leftward shift of the vertical money-supply curve, which is contractionary.",
     "primarySkill": "identify_shift_result",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which contractionary central-bank action could produce the displayed money-supply shift?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-03.webp",
+    "aHash": "e3b61d92fac9aa65a95c74e426c4d4b1414faed0b2f31f608f2e4f2f5284ab5e",
+    "repairSkill": "identify_shift_result",
+    "sourceHash": "98822a204844eb8b243c20779522107b0cb4f859f3cdb1516599035de86c4ce2"
   },
   {
     "id": "PG4-MM-M-007",
@@ -522,7 +652,12 @@
     "feedback": "Holding MS0 at 75, the higher MD1 curve intersects it at point A, interest rate 6.",
     "primarySkill": "read_money_market_shift",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "If only money demand increases from MD0 to MD1 while MS0 stays fixed, which point becomes the new equilibrium?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "502372a865dba96f36d1ac2a30db3c6a80aa6a963e27bb2acc1ec3bbb0a830a0",
+    "repairSkill": "read_money_market_shift",
+    "sourceHash": "e6a6b69a1a03fc3ca2be32ece90dd6a9581bf67ee681678a0e2e04704c07da3d"
   },
   {
     "id": "PG4-MM-M-008",
@@ -541,7 +676,12 @@
     "feedback": "Holding MD0 fixed, the larger MS1 intersects it at point D, quantity 100 and interest rate 1.",
     "primarySkill": "read_money_market_shift",
     "secondaryConceptIds": [],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "With MD0 unchanged, locate the equilibrium created solely by the increase in money supply. Which point is it?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-04.webp",
+    "aHash": "595338593637c438bd8889d0f62e322caea5bfb21ec7a9bd5adefab406c51ae4",
+    "repairSkill": "read_money_market_shift",
+    "sourceHash": "24845ea4840ab95546412045f37211a430c2d07e801def52617865b970612ba7"
   },
   {
     "id": "PG4-MM-M-009",
@@ -563,7 +703,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which change in the right panel accompanies the higher interest rate shown in the money market?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "87974c7809486419fc9e7dfdbbfa459470f10e23de2b384fe04bd8d4540528b5",
+    "repairSkill": "connect_money_market_to_ad_slope",
+    "sourceHash": "588c7dfbccb58406259a27e9f8f064040e76cb277a3c520b0ee4af2dcd04e44c"
   },
   {
     "id": "PG4-MM-M-010",
@@ -585,7 +730,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.1"
+    "objective": "LO35.1",
+    "q": "Which mechanism best connects the change from A to B in the left panel with the change from A to B in the right panel?",
+    "image": "question-assets/liquidity-preference-and-money-market/MONEY-AD-03.webp",
+    "aHash": "5b2d34aa014e545355b902dc9f22971b48dc9ed3b77b5bae60c36f73b221d9e8",
+    "repairSkill": "trace_money_demand_shift_to_investment",
+    "sourceHash": "d4bf73f2b7e093f0153ab590dc54cf42dc9f43b4066faecb8ce996529af83618"
   },
   {
     "id": "PG4-MPT-E-001",
@@ -608,7 +758,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "The left panel shows money supply increasing from MS0 to MS1. What happens to the nominal interest rate?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "429a685ef99d423ffce884f0c13165734b303d53df06148161f26c7abf554437",
+    "repairSkill": "trace_expansionary_monetary_policy_graph",
+    "sourceHash": "320245369842b0b9326279f776e863d9c9e4f061761233aca5f35f3c187589ea"
   },
   {
     "id": "PG4-MPT-E-002",
@@ -631,7 +786,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "In the contractionary two-panel diagram, what happens to the nominal interest rate after the money-supply change?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "b1aed195db2942099830d7d07d50376ec55632322be1fe00ad557e8002019319",
+    "repairSkill": "trace_contractionary_monetary_policy_graph",
+    "sourceHash": "1c34f3fcbd20060256d993597bd040beb365f28e9db0bdc1479a49f1501ded06"
   },
   {
     "id": "PG4-MPT-EL-001",
@@ -654,7 +814,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "Which statement correctly distinguishes what changes in the two panels?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "835f4935b9af27cbf5f3144e212ebc970ae7fb3d64ca406176525ef97ddc2b1b",
+    "repairSkill": "distinguish_money_market_and_ad_model",
+    "sourceHash": "a237367919cf64b46d3618d69a12ce3548f6819d127718123642b9cd0528b2ee"
   },
   {
     "id": "PG4-MPT-EL-002",
@@ -677,7 +842,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "A student says AD1 is lower because the central bank directly reduced real GDP. What is the better interpretation?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "1f306ec6aa02f102695148f9b51a4cf2e4248ea810074596bd9ad34986e29044",
+    "repairSkill": "distinguish_money_market_and_ad_model",
+    "sourceHash": "2a6a93f00a38e72e336e6b4c6868b6383f4cab1a6f1f2942dbd4861c7f2ea7a4"
   },
   {
     "id": "PG4-MPT-H-001",
@@ -700,7 +870,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "Which sequence matches the changes from point A to point B across the two panels?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "5b61ea0fa098ee388a7cb8966537edeaaa292b974148614c13b069c00a14d458",
+    "repairSkill": "trace_expansionary_monetary_policy_graph",
+    "sourceHash": "8b511e3b47006abe19070715c3d99bb3496ccde3b5a3dfb8fa601ba00752af29"
   },
   {
     "id": "PG4-MPT-H-002",
@@ -723,7 +898,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "Which causal chain matches the changes from A to B in the second two-panel diagram?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "6c1140419da7798fdfefbd1001d9c25e7ed0b590abc7a13a6251b0c67e47d4d4",
+    "repairSkill": "trace_contractionary_monetary_policy_graph",
+    "sourceHash": "6b89de59e43ad3f730d64d852408617637eca2b4da831928da0a3c769b089b9d"
   },
   {
     "id": "PG4-MPT-L-001",
@@ -746,7 +926,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "What conclusion is supported by the change from A to B across the two panels?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "3bd70b7d64962154131a0b2b6d87450138125d2274de129a6104366405b6dfb4",
+    "repairSkill": "read_graph_and_evaluate_transmission_size",
+    "sourceHash": "2e1d52d7f894ed960ebb6111f72a7bfc72b679a106f073981ccc914fe11abf18"
   },
   {
     "id": "PG4-MPT-L-002",
@@ -769,7 +954,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "What macroeconomic conclusion is supported by the contractionary A-to-B movement across both panels?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "5c0137dc24247b768ab4de36d935115887e2c548c144dc5fd99de5a12e27e82f",
+    "repairSkill": "read_graph_and_evaluate_transmission_size",
+    "sourceHash": "eae8cf6aa75528eb0a2f2d0dc760853e7d8f9d604c8025f95d632efb0c634a78"
   },
   {
     "id": "PG4-MPT-M-001",
@@ -792,7 +982,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "Which aggregate-demand change accompanies the lower interest rate in the right panel?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "c4bccfdedf23310c0513f9bfccffd2de0ab18ae7a577abe5d0198bc983450695",
+    "repairSkill": "monetary_policy_ad_shift",
+    "sourceHash": "c3549df69d0ce5fc2c52490ab29539de0e2664ee2e45083101e09e8482d434f5"
   },
   {
     "id": "PG4-MPT-M-002",
@@ -815,7 +1010,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "In the expansionary two-panel diagram, how many units does real GDP rise from A to B?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-01.webp",
+    "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+    "repairSkill": "read_output_change_from_ad_shift",
+    "sourceHash": "ae8082a8d1052f0ef4e598894d24762a3f27aeca3217a56e796a74ad28f0f58b"
   },
   {
     "id": "PG4-MPT-M-003",
@@ -838,7 +1038,12 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "In the right panel, which aggregate-demand change accompanies the higher interest rate generated on the left?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "57347d4c87e0fa1f907dd789846f75c0565cce0b3463576c8d0983cdea0b654c",
+    "repairSkill": "monetary_policy_ad_shift",
+    "sourceHash": "0de2775b2f31690b69533deea26640f05d1e2261953fd4fb711a984e25f6532b"
   },
   {
     "id": "PG4-MPT-M-004",
@@ -861,6 +1066,11 @@
       "aggregate-demand",
       "macroeconomic-equilibrium-and-shocks"
     ],
-    "objective": "LO35.2"
+    "objective": "LO35.2",
+    "q": "In the contractionary two-panel diagram, how many units does real GDP fall from A to B?",
+    "image": "question-assets/monetary-policy-transmission/MONEY-AD-02.webp",
+    "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569",
+    "repairSkill": "read_output_change_from_ad_shift",
+    "sourceHash": "4f020e9d6e57eadf80422aa879b38b02d962dd40b11d3f224af27e4999af217e"
   }
 ]

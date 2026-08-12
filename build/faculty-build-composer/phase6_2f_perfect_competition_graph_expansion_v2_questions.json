@@ -226,7 +226,7 @@
     {
       "id": "P62F-PC-M-032",
       "sourceGame": "perfectCompetition",
-      "q": "At the 50-unit output in PC-01, what vertical price–ATC gap represents profit on each unit?",
+      "q": "At the 50-unit output in the displayed competitive-market graph, what vertical price–ATC gap represents profit on each unit?",
       "options": [
         "$10 per unit",
         "$20 per unit",
@@ -251,7 +251,7 @@
         "perfect-competition"
       ],
       "sourcePool": "medium",
-      "sourceHash": "5c32b8ae9f06d6f1c1afb467349bea7c61941b5b89c29d8f87ce202a003d50d4",
+      "sourceHash": "4d30e08cf128bce378a09527cfb42c2e45b1ddcd339ef399fca1bc542a336818",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -261,7 +261,7 @@
           "routeKey": "profit_per_unit",
           "sourceRecordOrder": 4,
           "sourceId": 696004,
-          "sourceHash": "5c32b8ae9f06d6f1c1afb467349bea7c61941b5b89c29d8f87ce202a003d50d4"
+          "sourceHash": "4d30e08cf128bce378a09527cfb42c2e45b1ddcd339ef399fca1bc542a336818"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -322,7 +322,7 @@
     {
       "id": "P62F-PC-H-031",
       "sourceGame": "perfectCompetition",
-      "q": "A firm sells 50 units at the displayed $30 price. What revenue does that generate in total?",
+      "q": "Using the firm’s profit-maximizing output and the market price shown, calculate total revenue.",
       "options": [
         "$500",
         "$1,000",
@@ -347,7 +347,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "229e037d2c3e8c3d11838beb2863e9c050d1f098a3dab0050ab02ef53703978a",
+      "sourceHash": "499211abf433b82b6a023880aff8b39c9818786ef64c60b398a9806cb714893e",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -357,7 +357,18 @@
           "routeKey": "total_revenue",
           "sourceRecordOrder": 6,
           "sourceId": 696006,
-          "sourceHash": "229e037d2c3e8c3d11838beb2863e9c050d1f098a3dab0050ab02ef53703978a"
+          "sourceHash": "499211abf433b82b6a023880aff8b39c9818786ef64c60b398a9806cb714893e"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "total_revenue",
+          "sourceRecordOrder": 52,
+          "sourceId": 696006,
+          "sourceHash": "499211abf433b82b6a023880aff8b39c9818786ef64c60b398a9806cb714893e",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -370,7 +381,7 @@
     {
       "id": "P62F-PC-H-032",
       "sourceGame": "perfectCompetition",
-      "q": "The graph shows ATC of $20 at 50 units. What total production cost follows?",
+      "q": "Using the displayed ATC at the profit-maximizing output, calculate the firm’s total cost.",
       "options": [
         "$500",
         "$1,500",
@@ -395,7 +406,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "901cb78f4ad84d3885fa1d800b2c36779669f8e162c8bb837364437b007b6d99",
+      "sourceHash": "69041b656d72bb267957f02dcf123a6d843c2a1ab4af96078c1e0f750c32b8b0",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -405,7 +416,18 @@
           "routeKey": "total_profit",
           "sourceRecordOrder": 7,
           "sourceId": 696007,
-          "sourceHash": "901cb78f4ad84d3885fa1d800b2c36779669f8e162c8bb837364437b007b6d99"
+          "sourceHash": "69041b656d72bb267957f02dcf123a6d843c2a1ab4af96078c1e0f750c32b8b0"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "total_profit",
+          "sourceRecordOrder": 53,
+          "sourceId": 696007,
+          "sourceHash": "69041b656d72bb267957f02dcf123a6d843c2a1ab4af96078c1e0f750c32b8b0",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -807,7 +829,7 @@
     {
       "id": "P62F-PC-H-033",
       "sourceGame": "perfectCompetition",
-      "q": "At Q = 50, AVC is $15. What total variable cost is implied?",
+      "q": "Using the displayed AVC at the chosen output, calculate total variable cost.",
       "options": [
         "$750",
         "$250",
@@ -832,7 +854,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "0742c6031783ce19ccff346078211c5c5edbec00311d3f0db8c49641377b5f9d",
+      "sourceHash": "8e931a5b8fa7dd86ab0f1391b9fdb9b8f5947fb4f0409dbe3396789f6ee81829",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -842,7 +864,18 @@
           "routeKey": "short_run_fixed_cost",
           "sourceRecordOrder": 16,
           "sourceId": 696016,
-          "sourceHash": "0742c6031783ce19ccff346078211c5c5edbec00311d3f0db8c49641377b5f9d"
+          "sourceHash": "8e931a5b8fa7dd86ab0f1391b9fdb9b8f5947fb4f0409dbe3396789f6ee81829"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "short_run_fixed_cost",
+          "sourceRecordOrder": 54,
+          "sourceId": 696016,
+          "sourceHash": "8e931a5b8fa7dd86ab0f1391b9fdb9b8f5947fb4f0409dbe3396789f6ee81829",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -908,7 +941,7 @@
         "P lies below minimum AVC, so the firm cannot cover variable cost at the selected output",
         "The firm sets P equal to ATC itself, so the market shutdown rule does not apply here",
         "P equals ATC and remains above AVC, so the firm covers all economic costs rather than shutting down",
-        "Zero economic profit always triggers shutdown, even when price remains above average variable cost"
+        "Zero economic profit always triggers shutdown, even when price remains above average variable cost for the displayed firm"
       ],
       "tag": "perfect_competition",
       "type": "elite",
@@ -928,7 +961,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "c080d73f574fe702854844f147db565f511eb3cb3e544a70a44193df5927d5d9",
+      "sourceHash": "17c274fc8f7046da9a4577fe540b44ebed4f1403e81e5b2720cf81dd60428711",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -938,7 +971,7 @@
           "routeKey": "break_even",
           "sourceRecordOrder": 18,
           "sourceId": 696018,
-          "sourceHash": "c080d73f574fe702854844f147db565f511eb3cb3e544a70a44193df5927d5d9"
+          "sourceHash": "17c274fc8f7046da9a4577fe540b44ebed4f1403e81e5b2720cf81dd60428711"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -951,7 +984,7 @@
     {
       "id": "P62F-PC-L-092",
       "sourceGame": "perfectCompetition",
-      "q": "The graph shows P = ATC at the selected output. Which statement is most accurate?",
+      "q": "At the selected output, compare price with ATC. Which statement about economic profit is most accurate?",
       "options": [
         "The firm necessarily earns zero accounting profit because economic and accounting costs are identical",
         "The firm should shut down because any zero-profit outcome fails to cover average variable cost",
@@ -976,7 +1009,7 @@
         "perfect-competition"
       ],
       "sourcePool": "legendary",
-      "sourceHash": "c726ded81f703ae2d0392a3ae438af8d4bda81b8d38a7e69d635b4a454a55a6e",
+      "sourceHash": "a0fdab86b873e346c3ed972069cbac8ba2ed68bb1dc806be71370bfb037fba8b",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -986,7 +1019,7 @@
           "routeKey": "normal_profit",
           "sourceRecordOrder": 19,
           "sourceId": 696019,
-          "sourceHash": "c726ded81f703ae2d0392a3ae438af8d4bda81b8d38a7e69d635b4a454a55a6e"
+          "sourceHash": "a0fdab86b873e346c3ed972069cbac8ba2ed68bb1dc806be71370bfb037fba8b"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -1002,7 +1035,7 @@
       "q": "If market price fell slightly below $25 but remained above AVC, with the cost curves unchanged, what would the firm do in the short run?",
       "options": [
         "Choose the lower-price rising-MC intersection and operate with a loss as long as price remains above AVC",
-        "Shut down immediately because any price below ATC makes short-run production economically irrational",
+        "Shut down immediately because any price below ATC makes short-run production economically irrational for the displayed firm",
         "Keep Q fixed at 50 because price-taking firms never change output when the market price changes",
         "Raise the firm’s own price back to $25 and continue producing at the original break-even output"
       ],
@@ -1024,7 +1057,7 @@
         "perfect-competition"
       ],
       "sourcePool": "legendary",
-      "sourceHash": "61d076187433f642fd1d33417d9d1599b8a239a09e12430465fbcf6095a0dbaa",
+      "sourceHash": "5314cf0f3ee40c161b95761c7d687775df3df1f3b34935fc9f230b135d698374",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -1034,7 +1067,7 @@
           "routeKey": "produce_at_loss",
           "sourceRecordOrder": 20,
           "sourceId": 696020,
-          "sourceHash": "61d076187433f642fd1d33417d9d1599b8a239a09e12430465fbcf6095a0dbaa"
+          "sourceHash": "5314cf0f3ee40c161b95761c7d687775df3df1f3b34935fc9f230b135d698374"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -1288,7 +1321,7 @@
     {
       "id": "P62F-PC-M-038",
       "sourceGame": "perfectCompetition",
-      "q": "Using P = $30 and ATC = $40 at Q = 30, what is the loss on each unit sold?",
+      "q": "At the firm’s chosen output in the loss graph, what is the loss per unit?",
       "options": [
         "$20 per unit",
         "$30 per unit",
@@ -1313,7 +1346,7 @@
         "perfect-competition"
       ],
       "sourcePool": "medium",
-      "sourceHash": "a4c959dbeb09c1c79a91912fbd5fec6d321f0a30db50ce558f4c146691fa3f54",
+      "sourceHash": "d347d080fb73d98a877aa17f83dd45a3d3fd265f0328f10c6195d1542503040a",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -1323,7 +1356,18 @@
           "routeKey": "loss_per_unit",
           "sourceRecordOrder": 26,
           "sourceId": 696026,
-          "sourceHash": "a4c959dbeb09c1c79a91912fbd5fec6d321f0a30db50ce558f4c146691fa3f54"
+          "sourceHash": "d347d080fb73d98a877aa17f83dd45a3d3fd265f0328f10c6195d1542503040a"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "medium",
+          "routeKey": "loss_per_unit",
+          "sourceRecordOrder": 50,
+          "sourceId": 696026,
+          "sourceHash": "d347d080fb73d98a877aa17f83dd45a3d3fd265f0328f10c6195d1542503040a",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -1432,7 +1476,7 @@
     {
       "id": "P62F-PC-H-037",
       "sourceGame": "perfectCompetition",
-      "q": "At Q = 30, the graph shows a $20 gap between ATC and AVC. What total fixed cost does that gap imply?",
+      "q": "Use the vertical gap between ATC and AVC at the chosen output to calculate total fixed cost.",
       "options": [
         "$300",
         "$600",
@@ -1457,7 +1501,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "96e046a668584bacb1672e201ea9b4b39e6d29f907c77dc60083c24b1660e7e8",
+      "sourceHash": "8706b07bb10a48d116683db55bcc6690fc738b875459ed25a6e472334caac0a5",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -1467,7 +1511,18 @@
           "routeKey": "short_run_fixed_cost",
           "sourceRecordOrder": 29,
           "sourceId": 696029,
-          "sourceHash": "96e046a668584bacb1672e201ea9b4b39e6d29f907c77dc60083c24b1660e7e8"
+          "sourceHash": "8706b07bb10a48d116683db55bcc6690fc738b875459ed25a6e472334caac0a5"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "short_run_fixed_cost",
+          "sourceRecordOrder": 55,
+          "sourceId": 696029,
+          "sourceHash": "8706b07bb10a48d116683db55bcc6690fc738b875459ed25a6e472334caac0a5",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -1579,7 +1634,7 @@
       "q": "Trace the firm’s short-run and long-run logic from the loss graph. Which sequence is valid?",
       "options": [
         "Choose Q = 30 where P = MC; because AVC < P < ATC, operate with a $300 loss and face exit pressure if it persists",
-        "Choose minimum ATC; because P equals ATC there, operate with zero profit and no exit pressure",
+        "Choose minimum ATC; because P equals ATC there, operate with zero profit and no exit pressure for the displayed firm",
         "Shut down at Q = 0; because P < ATC, avoid all variable and fixed costs immediately",
         "Raise price to $40; keep Q = 30 and convert the displayed loss into economic profit"
       ],
@@ -1603,7 +1658,7 @@
         "perfect-competition"
       ],
       "sourcePool": "legendary",
-      "sourceHash": "3d4d88e71858f6239a427abba0ce0283a31a1c80f7a5d29e9a802636ac2c5f74",
+      "sourceHash": "6c83e72d9c4f5d7947da5bdbf55f46034d6dcf765bab962ea4b6c29d44a08bbc",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -1613,7 +1668,7 @@
           "routeKey": "shutdown_vs_exit",
           "sourceRecordOrder": 32,
           "sourceId": 696032,
-          "sourceHash": "3d4d88e71858f6239a427abba0ce0283a31a1c80f7a5d29e9a802636ac2c5f74"
+          "sourceHash": "6c83e72d9c4f5d7947da5bdbf55f46034d6dcf765bab962ea4b6c29d44a08bbc"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -1626,12 +1681,12 @@
     {
       "id": "P62F-PC-B2-037",
       "sourceGame": "perfectCompetition",
-      "q": "The graph implies a $300 operating loss and $600 of fixed cost. What does that comparison tell the firm?",
+      "q": "Checkpoint: Compare the firm’s operating loss with the fixed cost implied by the graph. What does that comparison tell the firm?",
       "options": [
-        "Shutting down reduces the loss to zero",
+        "Shutting down reduces the short-run loss below the firm’s unavoidable fixed cost",
         "Producing reduces the short-run loss relative to shutting down",
-        "The firm should raise its price to ATC",
-        "The firm earns a $300 profit"
+        "Raising price to average total cost eliminates the loss in a competitive market",
+        "Producing creates economic profit because revenue exceeds variable cost"
       ],
       "tag": "perfect_competition",
       "type": "checkpoint",
@@ -1652,7 +1707,7 @@
         "perfect-competition"
       ],
       "sourcePool": "boss",
-      "sourceHash": "37f84af10f59cd732c73b1a36f552143411d6746f269aa9df40cdb639b6ffc22",
+      "sourceHash": "7502d390cf81c86bebb0020e1858e0521cf675f4a20540ee0a8e5b438e915344",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -1662,7 +1717,29 @@
           "routeKey": "produce_at_loss",
           "sourceRecordOrder": 33,
           "sourceId": 696033,
-          "sourceHash": "37f84af10f59cd732c73b1a36f552143411d6746f269aa9df40cdb639b6ffc22"
+          "sourceHash": "7502d390cf81c86bebb0020e1858e0521cf675f4a20540ee0a8e5b438e915344"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "boss",
+          "routeKey": "produce_at_loss",
+          "sourceRecordOrder": 61,
+          "sourceId": 696033,
+          "sourceHash": "7502d390cf81c86bebb0020e1858e0521cf675f4a20540ee0a8e5b438e915344",
+          "changeType": "REWRITE_STEM"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "boss",
+          "routeKey": "produce_at_loss",
+          "sourceRecordOrder": 108,
+          "sourceId": 696033,
+          "sourceHash": "7502d390cf81c86bebb0020e1858e0521cf675f4a20540ee0a8e5b438e915344",
+          "changeType": "ANSWER_LENGTH_PARALLELISM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2015,7 +2092,7 @@
       "options": [
         "MC stops being a valid marginal-cost curve below point A, so the firm cannot use that portion",
         "Prices on that MC segment are below minimum AVC, so production would not cover the firm’s variable cost",
-        "ATC lies below AVC on that segment, so fixed cost becomes negative and supply must begin later",
+        "ATC lies below AVC on that segment, so fixed cost becomes negative and supply must begin later for the displayed firm",
         "The firm becomes a price setter below point A, so its marginal cost no longer guides output"
       ],
       "tag": "perfect_competition",
@@ -2036,7 +2113,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "38ef8a38b7ee2bb1eeb125df351e080bb43b9c38a6b06ba87a160d1f817c14e4",
+      "sourceHash": "9667c65b2ee2f8a4fd8d27f15a9307ee7bc7c999e90487ae5e213aa76a7fd72f",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2046,7 +2123,7 @@
           "routeKey": "firm_short_run_supply",
           "sourceRecordOrder": 41,
           "sourceId": 696041,
-          "sourceHash": "38ef8a38b7ee2bb1eeb125df351e080bb43b9c38a6b06ba87a160d1f817c14e4"
+          "sourceHash": "9667c65b2ee2f8a4fd8d27f15a9307ee7bc7c999e90487ae5e213aa76a7fd72f"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2158,7 +2235,7 @@
       "q": "If price were exactly $20 at point A, which statement would be correct?",
       "options": [
         "The firm is indifferent between producing at the shutdown output and shutting down in the short run",
-        "The firm earns positive economic profit because price equals the minimum of average variable cost",
+        "The firm earns positive economic profit because price equals the minimum of average variable cost for the displayed firm",
         "The firm must exit immediately because reaching minimum AVC makes long-run production impossible",
         "The firm instead produces at point C because ATC determines the short-run shutdown quantity"
       ],
@@ -2180,7 +2257,7 @@
         "perfect-competition"
       ],
       "sourcePool": "legendary",
-      "sourceHash": "a8974c614c327a1e1245997aaf65a0ad70dc6ef7c1f0c26ca3c611debddb3830",
+      "sourceHash": "85133a28dbf1c50da42c64dd7e5f40bcd62aa25e8ed4a8d01f6416c9ce5bae92",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2190,7 +2267,7 @@
           "routeKey": "shutdown_price",
           "sourceRecordOrder": 44,
           "sourceId": 696044,
-          "sourceHash": "a8974c614c327a1e1245997aaf65a0ad70dc6ef7c1f0c26ca3c611debddb3830"
+          "sourceHash": "85133a28dbf1c50da42c64dd7e5f40bcd62aa25e8ed4a8d01f6416c9ce5bae92"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2492,7 +2569,7 @@
     {
       "id": "P62F-PC-H-040",
       "sourceGame": "perfectCompetition",
-      "q": "Using P = $40 and Q = 90 from the paired profit graph, calculate total revenue.",
+      "q": "Using the market price and representative firm output in the paired profit graph, calculate total revenue.",
       "options": [
         "$1,350",
         "$1,800",
@@ -2517,7 +2594,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "68c6bef4c416d01ed2888504cc18accdab01ab12403d4c0d184992b4b6c1e184",
+      "sourceHash": "e404e8b8d0f2ddb1cd4a995a8327a3b24521a3615ccce569bb2edcc2600d2df2",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2527,7 +2604,18 @@
           "routeKey": "total_revenue",
           "sourceRecordOrder": 51,
           "sourceId": 696051,
-          "sourceHash": "68c6bef4c416d01ed2888504cc18accdab01ab12403d4c0d184992b4b6c1e184"
+          "sourceHash": "e404e8b8d0f2ddb1cd4a995a8327a3b24521a3615ccce569bb2edcc2600d2df2"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "total_revenue",
+          "sourceRecordOrder": 56,
+          "sourceId": 696051,
+          "sourceHash": "e404e8b8d0f2ddb1cd4a995a8327a3b24521a3615ccce569bb2edcc2600d2df2",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2552,9 +2640,9 @@
       "objective": "PC.4",
       "difficulty": "hard",
       "conceptCluster": "micro_perfect_competition",
-      "primarySkill": "total_profit",
+      "primarySkill": "integrated_competitive_firm_analysis",
       "secondarySkills": [],
-      "repairSkill": "total_profit",
+      "repairSkill": "integrated_competitive_firm_analysis",
       "commonError": "misreads_competitive_graph",
       "feedback": "TC = ATC × Q = $20 × 90 = $1,800.",
       "image": "question-assets/perfect-competition/PC-06.webp",
@@ -2565,17 +2653,17 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "f24beff75e3c0daded5989876999e5cb5744ee262e50b56c6bf68a6803e1d480",
+      "sourceHash": "dd2d102ab4bbf9721bb6c4478f979e034248e764eb9c3e707e895f0b3299f8ac",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
           "sourceFile": "phase6.2f-perfect-competition-graph-expansion-v2",
           "sourceGlobal": "questions",
           "sourcePool": "hard",
-          "routeKey": "total_profit",
+          "routeKey": "integrated_competitive_firm_analysis",
           "sourceRecordOrder": 52,
           "sourceId": 696052,
-          "sourceHash": "f24beff75e3c0daded5989876999e5cb5744ee262e50b56c6bf68a6803e1d480"
+          "sourceHash": "dd2d102ab4bbf9721bb6c4478f979e034248e764eb9c3e707e895f0b3299f8ac"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2590,7 +2678,7 @@
       "sourceGame": "perfectCompetition",
       "q": "The firm panel shows positive economic profit. If that condition persists, which market adjustment follows?",
       "options": [
-        "Persistent profit induces exit, shifting market supply left and pushing the equilibrium price upward",
+        "Persistent profit induces exit, shifting market supply left and pushing the equilibrium price upward for the displayed firm",
         "Persistent profit induces entry, shifting market supply right and pushing the equilibrium price downward",
         "The representative firm raises its own price, so market supply stays fixed while profit disappears",
         "Market demand becomes horizontal, so entry changes firm output without affecting the market price"
@@ -2613,7 +2701,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "f6022a076a75a6c892bf6ae65912abd70b41d5bf3aaebbffebae3d9f9dc135b1",
+      "sourceHash": "a526788855a8e5676862ed064bff2eeec0f28e1ffda0ea9161366a280ea34144",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2623,7 +2711,7 @@
           "routeKey": "entry",
           "sourceRecordOrder": 53,
           "sourceId": 696053,
-          "sourceHash": "f6022a076a75a6c892bf6ae65912abd70b41d5bf3aaebbffebae3d9f9dc135b1"
+          "sourceHash": "a526788855a8e5676862ed064bff2eeec0f28e1ffda0ea9161366a280ea34144"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2636,7 +2724,7 @@
     {
       "id": "P62F-PC-EL-038",
       "sourceGame": "perfectCompetition",
-      "q": "As entry lowers market price while the firm’s cost curves remain unchanged, what happens to the representative firm’s chosen output?",
+      "q": "Trace the representative firm’s output choice as entry lowers the market price while its cost curves stay fixed. What happens to output?",
       "options": [
         "It remains fixed at 90 because firms are price takers",
         "It rises because lower price increases demand for the firm",
@@ -2661,7 +2749,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "6b9e3f5d0d206403395c5cfbec8f0f97166341e4de013c88cb1cee5425d7354a",
+      "sourceHash": "d7a01f6cfa817c0e11b6607b5eab00d9b2b1002bf001ff403fe088e2b94c5b69",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2671,7 +2759,7 @@
           "routeKey": "long_run_adjustment",
           "sourceRecordOrder": 54,
           "sourceId": 696054,
-          "sourceHash": "6b9e3f5d0d206403395c5cfbec8f0f97166341e4de013c88cb1cee5425d7354a"
+          "sourceHash": "d7a01f6cfa817c0e11b6607b5eab00d9b2b1002bf001ff403fe088e2b94c5b69"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2686,7 +2774,7 @@
       "sourceGame": "perfectCompetition",
       "q": "Why can the market quantity of 75 thousand not simply be used as the representative firm’s output?",
       "options": [
-        "The representative firm must always produce more than the entire market whenever it earns positive profit",
+        "The representative firm must always produce more than the entire market whenever it earns positive profit for the displayed firm",
         "The market quantity is actually an average-cost value, so it cannot be compared with firm output",
         "Price-taking firms do not choose output, so the right-panel quantity has no role in the analysis",
         "The panels describe different aggregation levels and use separate quantity scales for market and firm output"
@@ -2709,7 +2797,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "bca7ad064f7aca6ee70a170c84043957dbfa14a8e771bb364f95c5982db05917",
+      "sourceHash": "1b3610a6a0190702e0e997cde2d91eb6e1aa322eb3e362675fd69e891a609238",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2719,7 +2807,7 @@
           "routeKey": "market_vs_firm",
           "sourceRecordOrder": 55,
           "sourceId": 696055,
-          "sourceHash": "bca7ad064f7aca6ee70a170c84043957dbfa14a8e771bb364f95c5982db05917"
+          "sourceHash": "1b3610a6a0190702e0e997cde2d91eb6e1aa322eb3e362675fd69e891a609238"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2736,7 +2824,7 @@
       "options": [
         "Market sets P = $40; firm chooses Q = 90; profit attracts entry; supply rises; price and firm output fall",
         "Firm chooses P = $40; market adopts Q = 90; losses cause exit; supply rises and price falls",
-        "Market sets Q = 90 for every firm; entry occurs but leaves both market price and firm output unchanged",
+        "Market sets Q = 90 for every firm; entry occurs but leaves both market price and firm output unchanged for the displayed firm",
         "Firm chooses minimum AVC; entry shifts market demand right and raises both price and individual output"
       ],
       "tag": "perfect_competition",
@@ -2759,7 +2847,7 @@
         "perfect-competition"
       ],
       "sourcePool": "legendary",
-      "sourceHash": "9a5765e7928ac6c162fda860d499232588593787dd0bc79da8071ec309f1f4bf",
+      "sourceHash": "300392a11a55f9ed6a31ff6b65018109b7bb06ecf1256367d090d8184f37e538",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2769,7 +2857,7 @@
           "routeKey": "long_run_adjustment",
           "sourceRecordOrder": 56,
           "sourceId": 696056,
-          "sourceHash": "9a5765e7928ac6c162fda860d499232588593787dd0bc79da8071ec309f1f4bf"
+          "sourceHash": "300392a11a55f9ed6a31ff6b65018109b7bb06ecf1256367d090d8184f37e538"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -2879,11 +2967,11 @@
     {
       "id": "P62F-PC-B3-056",
       "sourceGame": "perfectCompetition",
-      "q": "If the profit shown in the firm panel persists, what completes the long-run adjustment story?",
+      "q": "Checkpoint: If the profit shown in the firm panel persists, what completes the long-run adjustment?",
       "options": [
         "Persistent profit causes exit, reducing market supply until the market price falls below AVC",
         "The firm raises its own price, shifting ATC downward until economic profit disappears without entry",
-        "Market demand becomes perfectly elastic, preventing changes in price as new firms enter the industry",
+        "Market demand becomes perfectly elastic, preventing changes in price as new firms enter the industry for the displayed firm",
         "Persistent profit attracts entry, increasing market supply until economic profit is driven toward zero"
       ],
       "tag": "perfect_competition",
@@ -2905,7 +2993,7 @@
         "perfect-competition"
       ],
       "sourcePool": "boss",
-      "sourceHash": "fd6e53fc708b9409c7d61b94c78c2ca0639f793a8758edaf0a925d4992297a62",
+      "sourceHash": "30f7529ed7a479abbc2846f94d30f348facd5f5b543b9eb2b2ecadc9c3869ebc",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -2915,7 +3003,7 @@
           "routeKey": "entry",
           "sourceRecordOrder": 59,
           "sourceId": 696059,
-          "sourceHash": "fd6e53fc708b9409c7d61b94c78c2ca0639f793a8758edaf0a925d4992297a62"
+          "sourceHash": "30f7529ed7a479abbc2846f94d30f348facd5f5b543b9eb2b2ecadc9c3869ebc"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3024,7 +3112,7 @@
     {
       "id": "P62F-PC-M-044",
       "sourceGame": "perfectCompetition",
-      "q": "Using P = $15 and ATC = $18 at Q = 50, what is the representative firm’s loss per unit?",
+      "q": "Use the price and ATC at the representative firm’s chosen output. What is the loss per unit?",
       "options": [
         "$5 per unit",
         "$8 per unit",
@@ -3049,7 +3137,7 @@
         "perfect-competition"
       ],
       "sourcePool": "medium",
-      "sourceHash": "efdaccc2272538b8240c558f266306e8f22f7200472d5c83bec9ddd76730b7e2",
+      "sourceHash": "5e758372c3712c99c58798f8c0669b0a35e879c7cab2eca2629ac2a6a5050ba1",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3059,7 +3147,18 @@
           "routeKey": "loss_per_unit",
           "sourceRecordOrder": 62,
           "sourceId": 696062,
-          "sourceHash": "efdaccc2272538b8240c558f266306e8f22f7200472d5c83bec9ddd76730b7e2"
+          "sourceHash": "5e758372c3712c99c58798f8c0669b0a35e879c7cab2eca2629ac2a6a5050ba1"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "medium",
+          "routeKey": "loss_per_unit",
+          "sourceRecordOrder": 51,
+          "sourceId": 696062,
+          "sourceHash": "5e758372c3712c99c58798f8c0669b0a35e879c7cab2eca2629ac2a6a5050ba1",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3120,7 +3219,7 @@
     {
       "id": "P62F-PC-M-046",
       "sourceGame": "perfectCompetition",
-      "q": "Why does the representative firm continue producing in the short run?",
+      "q": "Use price and AVC at the chosen output. Why does the representative firm continue producing in the short run?",
       "options": [
         "P = $15 exceeds AVC = $10 at Q = 50, so revenue covers variable cost and part of fixed cost",
         "P = $15 exceeds ATC = $18 at Q = 50, so the firm is earning positive economic profit",
@@ -3145,7 +3244,7 @@
         "perfect-competition"
       ],
       "sourcePool": "medium",
-      "sourceHash": "fa8c7b8259506c1907b98b16348677221ed5a55abbf055ffc094e10c9765e5f2",
+      "sourceHash": "e551ec438db184f30603098819b0bc20df8e69b7f59787ecf9b2f465a8c560f1",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3155,7 +3254,7 @@
           "routeKey": "produce_at_loss",
           "sourceRecordOrder": 64,
           "sourceId": 696064,
-          "sourceHash": "fa8c7b8259506c1907b98b16348677221ed5a55abbf055ffc094e10c9765e5f2"
+          "sourceHash": "e551ec438db184f30603098819b0bc20df8e69b7f59787ecf9b2f465a8c560f1"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3216,7 +3315,7 @@
     {
       "id": "P62F-PC-H-044",
       "sourceGame": "perfectCompetition",
-      "q": "At Q = 50, ATC exceeds AVC by $8. What total fixed cost follows from that gap?",
+      "q": "From the ATC–AVC separation in the loss panel, determine the firm’s total fixed cost.",
       "options": [
         "$150",
         "$500",
@@ -3241,7 +3340,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "4ad0792529ca70dcdccd8dce680012ff61e8a9527b643b4e7a9c6ad050288297",
+      "sourceHash": "9473bcd0578276ae9840fb81708e86828c89aadb20d719f472ad1fffdba132c8",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3251,7 +3350,18 @@
           "routeKey": "short_run_fixed_cost",
           "sourceRecordOrder": 66,
           "sourceId": 696066,
-          "sourceHash": "4ad0792529ca70dcdccd8dce680012ff61e8a9527b643b4e7a9c6ad050288297"
+          "sourceHash": "9473bcd0578276ae9840fb81708e86828c89aadb20d719f472ad1fffdba132c8"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "short_run_fixed_cost",
+          "sourceRecordOrder": 57,
+          "sourceId": 696066,
+          "sourceHash": "9473bcd0578276ae9840fb81708e86828c89aadb20d719f472ad1fffdba132c8",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3264,7 +3374,7 @@
     {
       "id": "P62F-PC-H-045",
       "sourceGame": "perfectCompetition",
-      "q": "The firm panel shows an economic loss that persists. Which market adjustment follows?",
+      "q": "The firm panel shows an economic loss. If that loss persists, which market adjustment follows?",
       "options": [
         "Persistent losses induce entry, shifting market supply right and lowering the market price further",
         "The representative firm raises its own price, leaving market supply and the number of firms unchanged",
@@ -3289,7 +3399,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "44c93dc77d866e899f4cdeaeae19b5db26c905662bc436d5c5ade7a3d3a5b3e1",
+      "sourceHash": "3c454bbcd4504e59e4a0acf287f6ee2554d8636a4da5315ed7ed530f9c1df567",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3299,7 +3409,18 @@
           "routeKey": "exit",
           "sourceRecordOrder": 67,
           "sourceId": 696067,
-          "sourceHash": "44c93dc77d866e899f4cdeaeae19b5db26c905662bc436d5c5ade7a3d3a5b3e1"
+          "sourceHash": "3c454bbcd4504e59e4a0acf287f6ee2554d8636a4da5315ed7ed530f9c1df567"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "exit",
+          "sourceRecordOrder": 58,
+          "sourceId": 696067,
+          "sourceHash": "3c454bbcd4504e59e4a0acf287f6ee2554d8636a4da5315ed7ed530f9c1df567",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3312,7 +3433,7 @@
     {
       "id": "P62F-PC-EL-040",
       "sourceGame": "perfectCompetition",
-      "q": "If exit raises the market price while the firm’s cost curves stay unchanged, how does the surviving representative firm’s output change?",
+      "q": "Trace the surviving firm’s output choice as exit raises market price while its cost curves stay fixed. What happens to output?",
       "options": [
         "It rises along the firm’s rising MC curve",
         "It falls because the market has fewer firms",
@@ -3337,7 +3458,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "614363b719812ceac043166b8f0f64c5bdb2ec2f1a7ed463696daf5deb68fc29",
+      "sourceHash": "0dca6dfddec083fa254cb146c978365a231951143054cfce88a2047df6b8bd69",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3347,7 +3468,7 @@
           "routeKey": "long_run_adjustment",
           "sourceRecordOrder": 68,
           "sourceId": 696068,
-          "sourceHash": "614363b719812ceac043166b8f0f64c5bdb2ec2f1a7ed463696daf5deb68fc29"
+          "sourceHash": "0dca6dfddec083fa254cb146c978365a231951143054cfce88a2047df6b8bd69"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3411,7 +3532,7 @@
       "q": "Why should the market quantity of 75 thousand not be divided by the firm quantity of 50 to infer an exact number of firms from this graph alone?",
       "options": [
         "The firm quantity is a price measure, so dividing market quantity by it would mix incompatible variables",
-        "Competitive market quantity cannot be measured, so the left-panel quantity has no usable economic meaning",
+        "Competitive market quantity cannot be measured, so the left-panel quantity has no usable economic meaning for the displayed firm",
         "The panels do not establish enough about firm counts, identical outputs, and compatible quantity units for that calculation",
         "The market panel lacks an equilibrium, so its quantity cannot be compared with any firm-level outcome"
       ],
@@ -3433,7 +3554,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "b17e6ed46a2649df6a66f86c0b3b2f54573997718556037a62dc2f7871bb3628",
+      "sourceHash": "aec2eaf716195406536fcfda73beb35c4d018c11604b96ac87b379205c343464",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3443,7 +3564,7 @@
           "routeKey": "model_limitations",
           "sourceRecordOrder": 70,
           "sourceId": 696070,
-          "sourceHash": "b17e6ed46a2649df6a66f86c0b3b2f54573997718556037a62dc2f7871bb3628"
+          "sourceHash": "aec2eaf716195406536fcfda73beb35c4d018c11604b96ac87b379205c343464"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3458,7 +3579,7 @@
       "sourceGame": "perfectCompetition",
       "q": "Trace the paired market-and-firm loss case through long-run adjustment. Which sequence is valid?",
       "options": [
-        "Market sets P = $15; firm shuts down because P < ATC; persistent shutdown attracts entry and lowers price",
+        "Market sets P = $15; firm shuts down because P < ATC; persistent shutdown attracts entry and lowers price for the displayed firm",
         "Firm sets P = $15; market adopts Q = 50; persistent profit causes entry and higher market supply",
         "Market sets firm ATC at $18; firm shifts market demand left until price equals average cost",
         "Market sets P = $15; firm chooses Q = 50; AVC < P < ATC creates a loss; persistent loss causes exit and higher price"
@@ -3483,7 +3604,7 @@
         "perfect-competition"
       ],
       "sourcePool": "legendary",
-      "sourceHash": "551698c70b255e6f04b2f359ce5922597332f55e99899c2e14965e11e3f53349",
+      "sourceHash": "b43047739f697ee1f70d4192d40dfef2991667f313a635daba8aa1bf3fbfb1e0",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3493,7 +3614,7 @@
           "routeKey": "shutdown_vs_exit",
           "sourceRecordOrder": 71,
           "sourceId": 696071,
-          "sourceHash": "551698c70b255e6f04b2f359ce5922597332f55e99899c2e14965e11e3f53349"
+          "sourceHash": "b43047739f697ee1f70d4192d40dfef2991667f313a635daba8aa1bf3fbfb1e0"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3554,11 +3675,11 @@
     {
       "id": "P62F-PC-B3-057",
       "sourceGame": "perfectCompetition",
-      "q": "The market price is $15 and the firm’s ATC is $18 while AVC is $10 at Q = 50. What is the correct combined decision?",
+      "q": "Checkpoint: Use the market price, ATC, and AVC at the chosen output. What is the correct combined short-run and long-run decision?",
       "options": [
         "Shut down immediately because P < ATC; doing so eliminates both fixed and variable costs",
         "Operate with a short-run loss because P > AVC; persistent losses create long-run exit pressure",
-        "Earn positive profit because P > AVC; persistent profit therefore attracts long-run entry",
+        "Earn positive profit because P > AVC; persistent profit therefore attracts long-run entry for the displayed firm",
         "Raise price from $15 to $18; a competitive firm can restore break-even by changing price"
       ],
       "tag": "perfect_competition",
@@ -3580,7 +3701,7 @@
         "perfect-competition"
       ],
       "sourcePool": "boss",
-      "sourceHash": "6e3fd5334b9d75aa700851e8141fee5e3b67845c36ce14f1f1878bd31ae239f0",
+      "sourceHash": "ce779a8bb3db1960714e48f8f0f0d9a111bb7bc2844ad4d6f050bae2ce83cd88",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3590,7 +3711,18 @@
           "routeKey": "shutdown_vs_exit",
           "sourceRecordOrder": 73,
           "sourceId": 696073,
-          "sourceHash": "6e3fd5334b9d75aa700851e8141fee5e3b67845c36ce14f1f1878bd31ae239f0"
+          "sourceHash": "ce779a8bb3db1960714e48f8f0f0d9a111bb7bc2844ad4d6f050bae2ce83cd88"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "boss",
+          "routeKey": "shutdown_vs_exit",
+          "sourceRecordOrder": 62,
+          "sourceId": 696073,
+          "sourceHash": "ce779a8bb3db1960714e48f8f0f0d9a111bb7bc2844ad4d6f050bae2ce83cd88",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3749,7 +3881,7 @@
       "sourceGame": "perfectCompetition",
       "q": "Which pair of conditions holds at the representative firm’s selected output?",
       "options": [
-        "P < AVC and MC < ATC",
+        "P < AVC and MC < ATC for the displayed firm",
         "P = MC and P = minimum ATC",
         "P > ATC and MC < AVC",
         "P = AVC and ATC = 0"
@@ -3772,7 +3904,7 @@
         "perfect-competition"
       ],
       "sourcePool": "medium",
-      "sourceHash": "b2f1e5d3b3cefaa3992243d61cac28fe05ff510d3b3cc0ca6ca6ce7c8b6ed509",
+      "sourceHash": "c1ce6c6d447c648f9395c971a167e294dc47d4b6875c3548ce37f00ffb648dab",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3782,7 +3914,7 @@
           "routeKey": "long_run_equilibrium",
           "sourceRecordOrder": 77,
           "sourceId": 696077,
-          "sourceHash": "b2f1e5d3b3cefaa3992243d61cac28fe05ff510d3b3cc0ca6ca6ce7c8b6ed509"
+          "sourceHash": "c1ce6c6d447c648f9395c971a167e294dc47d4b6875c3548ce37f00ffb648dab"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3795,7 +3927,7 @@
     {
       "id": "P62F-PC-H-046",
       "sourceGame": "perfectCompetition",
-      "q": "Which efficiency condition is illustrated by P = MC at the selected output?",
+      "q": "At the selected output, which efficiency condition is illustrated by the equality of price and marginal cost?",
       "options": [
         "Product differentiation",
         "Shutdown efficiency",
@@ -3820,7 +3952,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "e52ee08c9084cd276b6c28a78b9108156418326f1eee085af83896bf31a70812",
+      "sourceHash": "21b1d2f856bcb9df43f001a7b5791050394afeb721bba86a4411526d8cc0cfd4",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3830,7 +3962,18 @@
           "routeKey": "allocative_efficiency",
           "sourceRecordOrder": 78,
           "sourceId": 696078,
-          "sourceHash": "e52ee08c9084cd276b6c28a78b9108156418326f1eee085af83896bf31a70812"
+          "sourceHash": "21b1d2f856bcb9df43f001a7b5791050394afeb721bba86a4411526d8cc0cfd4"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "allocative_efficiency",
+          "sourceRecordOrder": 59,
+          "sourceId": 696078,
+          "sourceHash": "21b1d2f856bcb9df43f001a7b5791050394afeb721bba86a4411526d8cc0cfd4",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3843,7 +3986,7 @@
     {
       "id": "P62F-PC-H-047",
       "sourceGame": "perfectCompetition",
-      "q": "Which efficiency condition is illustrated by production at minimum ATC?",
+      "q": "At the selected output, which efficiency condition is illustrated by production at the minimum of ATC?",
       "options": [
         "Allocative inefficiency",
         "Price discrimination",
@@ -3868,7 +4011,7 @@
         "perfect-competition"
       ],
       "sourcePool": "hard",
-      "sourceHash": "22b844707c8b984522406cbdee75a75d0029f387941945f801076e1480a5a39c",
+      "sourceHash": "50e35bfd14e28e2db6d0b616d3e7078d3ade2fd47c8dda539009d97afc635c31",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -3878,7 +4021,18 @@
           "routeKey": "productive_efficiency",
           "sourceRecordOrder": 79,
           "sourceId": 696079,
-          "sourceHash": "22b844707c8b984522406cbdee75a75d0029f387941945f801076e1480a5a39c"
+          "sourceHash": "50e35bfd14e28e2db6d0b616d3e7078d3ade2fd47c8dda539009d97afc635c31"
+        },
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+          "sourceGlobal": "targetedRepairs",
+          "sourcePool": "hard",
+          "routeKey": "productive_efficiency",
+          "sourceRecordOrder": 60,
+          "sourceId": 696079,
+          "sourceHash": "50e35bfd14e28e2db6d0b616d3e7078d3ade2fd47c8dda539009d97afc635c31",
+          "changeType": "REWRITE_STEM"
         }
       ],
       "primaryConceptId": "perfect-competition",
@@ -3989,7 +4143,7 @@
       "sourceGame": "perfectCompetition",
       "q": "Why does the graph represent a long-run competitive benchmark rather than merely a short-run break-even point?",
       "options": [
-        "P is below AVC, so the firm shuts down and exit pressure immediately develops",
+        "P is below AVC, so the firm shuts down and exit pressure immediately develops for the displayed firm",
         "P exceeds ATC, so positive profit attracts new firms into the market",
         "P = MC = minimum ATC, economic profit is zero, and no net entry or exit pressure remains",
         "P equals AVC below ATC, so the firm operates with a continuing economic loss"
@@ -4015,7 +4169,7 @@
         "perfect-competition"
       ],
       "sourcePool": "elite",
-      "sourceHash": "5a30de10723fab19cda266821a7aacc0bab7f67b23d670c0cc86327c1a4139cb",
+      "sourceHash": "c220f50ef60577333866ef6eb90061a23057f11b9e6be5852d66fa039f00da64",
       "sourceOccurrences": [
         {
           "sourceGame": "micro-concept-library",
@@ -4025,7 +4179,7 @@
           "routeKey": "long_run_equilibrium",
           "sourceRecordOrder": 82,
           "sourceId": 696082,
-          "sourceHash": "5a30de10723fab19cda266821a7aacc0bab7f67b23d670c0cc86327c1a4139cb"
+          "sourceHash": "c220f50ef60577333866ef6eb90061a23057f11b9e6be5852d66fa039f00da64"
         }
       ],
       "primaryConceptId": "perfect-competition",

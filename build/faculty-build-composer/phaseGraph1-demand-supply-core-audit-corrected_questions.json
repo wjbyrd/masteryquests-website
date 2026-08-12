@@ -16,7 +16,12 @@
     "feedback": "Point A is plotted at a price of $10 and a quantity demanded of 100 thousand donuts.",
     "primarySkill": "demand_schedule_interpretation",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "On the displayed gourmet-donut demand curve, what price and quantity are shown at point A?",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "48134d5610a37571c1ff08875040acb0fe68463dda3f98121dab0b697ba1ef88",
+    "repairSkill": "demand_schedule_interpretation",
+    "sourceHash": "18320ac9194cfddbb12a31334a81b147c8b8a3793ee5a0fbf07731462c89c5fa"
   },
   {
     "id": "PG1-DMD-E-002",
@@ -35,7 +40,12 @@
     "feedback": "D1 lies to the right of D0, showing that consumers demand more coffee at each common price.",
     "primarySkill": "demand_shift_direction",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "In the displayed coffee market, the move from D0 to D1 represents:",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "6ecd6b31cce995ad976f636e9d4326acb5803fb0354574cfb576a36d93a70f32",
+    "repairSkill": "demand_shift_direction",
+    "sourceHash": "e783cc7d5a5e0112eaeefd3475297d4ab955a94822fd0ba7e285770ec81cf5d2"
   },
   {
     "id": "PG1-DMD-E-003",
@@ -54,7 +64,12 @@
     "feedback": "D1 lies to the left of D0, showing that consumers demand less tea at each common price.",
     "primarySkill": "demand_shift_direction",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "How should the change in the tea demand curve from D0 to D1 be classified?",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "694a08284bba5da73688d49e505d3933e4eae0008f1d3f731b262bce4b8d2c50",
+    "repairSkill": "demand_shift_direction",
+    "sourceHash": "b23cc86a46cd99457c614db5c1411cb12a34e7be323e104dad82316d8918452f"
   },
   {
     "id": "PG1-DMD-EL-001",
@@ -73,7 +88,12 @@
     "feedback": "A change in the good's own price causes a movement along a fixed demand curve. Quantity demanded rises from 100 thousand to 225 thousand, but demand does not shift.",
     "primarySkill": "movement_vs_demand_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Suppose the only change in the gourmet-donut market is that the good's own price falls from $10 to $5. The displayed graph shows the market moving from A to B. Which conclusion is correct?",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "7ffdbc8efa21d8e84b43ef5836f442b5b38b416ea83d82c384b41cd7d5213eba",
+    "repairSkill": "movement_vs_demand_shift",
+    "sourceHash": "c95683337e302e56b9c3b57e9fce032d2d1fed06b7c860019830ce27bbb0567d"
   },
   {
     "id": "PG1-DMD-EL-002",
@@ -92,7 +112,12 @@
     "feedback": "The final point is on D1 at $10, which is 125 thousand. Demand increased, but the higher price produces a movement up D1 large enough that final quantity demanded is 25 thousand below the original 150 thousand.",
     "primarySkill": "movement_vs_demand_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Start on D0 at a price of $6, where quantity demanded is 150 thousand. Demand then shifts to D1, but the price rises to $10. What final quantity demanded does the graph show, and how does it compare with the starting quantity?",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "9ea1a7893c00820c5e01f5e82380a96d3c7adfe5d79414f457877dcd61eacf0c",
+    "repairSkill": "movement_vs_demand_shift",
+    "sourceHash": "c2fc76ebdb07516d6c44b6247ee6203d92e292f7fe8615feea73897226588e98"
   },
   {
     "id": "PG1-DMD-EL-003",
@@ -111,7 +136,12 @@
     "feedback": "The final point lies on D1 at $4, where quantity demanded is 100 thousand. The price decrease raises quantity demanded along D1, but it does not fully offset the earlier decrease in demand.",
     "primarySkill": "movement_vs_demand_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Start on D0 at a price of $6, where quantity demanded is 150 thousand. Demand then shifts to D1 and the price falls to $4. What final quantity demanded does the graph show?",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "bc7a31d0333518777943affb1a7b8c219c302516a7866865bad6c0b97041d42e",
+    "repairSkill": "movement_vs_demand_shift",
+    "sourceHash": "3054122ff6e2ff6a1e7893a2f3491505bb6076fe42a8746dc65a71790d6b9d27"
   },
   {
     "id": "PG1-DMD-H-001",
@@ -130,7 +160,12 @@
     "feedback": "From A to B, price falls by $5 while quantity demanded rises by 125 thousand. That is 25 thousand additional donuts per $1 decrease in price.",
     "primarySkill": "law_of_demand",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Using points A and B on the displayed linear demand curve, a $1 decrease in price is associated with approximately what change in quantity demanded?",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "79eab2dcb17a287e5218dcd6328c762e0945bd0e77ef00152d6a96ab0332a9a1",
+    "repairSkill": "law_of_demand",
+    "sourceHash": "984dd181df7f10feafd0174e61dc949d6582cc27fdd758e86bf5c153825a81c7"
   },
   {
     "id": "PG1-DMD-H-002",
@@ -149,7 +184,12 @@
     "feedback": "For example, at $10 quantity rises from 50 thousand to 125 thousand, and at $6 it rises from 150 thousand to 225 thousand. The horizontal shift is 75 thousand units.",
     "primarySkill": "demand_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Across the common price range shown, D1 places quantity demanded how far to the right of D0?",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "261dc85353149411e1ac10798aa7b6628d41c42f6183969683d879c64f6673dc",
+    "repairSkill": "demand_shift_analysis",
+    "sourceHash": "304e89196f1533cef0ee9803ca9c3bd95a91823a4a100ccef440ff56f9be2cde"
   },
   {
     "id": "PG1-DMD-H-003",
@@ -168,7 +208,12 @@
     "feedback": "At $4, quantity falls from 200 thousand on D0 to 100 thousand on D1; at $6 it falls from 150 thousand to 50 thousand. The horizontal decrease is 100 thousand units.",
     "primarySkill": "demand_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Within the shared price range, what horizontal quantity gap separates D0 from D1 in the tea graph?",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "323e6a4266844cc92a2c6a716703b9f0df2ad5fb07b9c7ce69d19190526efde0",
+    "repairSkill": "demand_shift_analysis",
+    "sourceHash": "1f76ccbbcf6081acf2ee3a9fca566f752f708b755bb734d578650df09c77b7ba"
   },
   {
     "id": "PG1-DMD-L-001",
@@ -187,7 +232,12 @@
     "feedback": "The points lie on one demand curve. A lower own price changes quantity demanded, whereas an increase in demand would require the entire demand curve to shift right.",
     "primarySkill": "movement_vs_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "A student claims that the move from A to B on the displayed graph proves that demand increased by 125 thousand donuts. What is wrong with that claim?",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "eebef7f6e3b7efc264047bb56ff4265d28df666e5f4b861c922290acdca9cce2",
+    "repairSkill": "movement_vs_shift",
+    "sourceHash": "aca06097b569bfc0b26bd49b2f1a2d3b3b798ec02998d296cfa8902f97a6142b"
   },
   {
     "id": "PG1-DMD-L-002",
@@ -206,7 +256,12 @@
     "feedback": "At $10 the shift from D0 to D1 raises quantity demanded from 50 to 125 thousand. Moving down D1 from $10 to $6 raises it again from 125 to 225 thousand, for a total increase of 175 thousand.",
     "primarySkill": "multiple_demand_shifters",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "The market begins on D0 at a price of $10 and quantity 50 thousand. Demand shifts to D1 and the price then falls to $6. Which accounting correctly describes the total quantity change?",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "f796e325631e9ceccaeb14b16250bc81c466677d5752a38540143cbe4047f423",
+    "repairSkill": "multiple_demand_shifters",
+    "sourceHash": "4d81561ea45ed822650b3e5d06951de2255d110fe31e0ce12ad3f12218851db8"
   },
   {
     "id": "PG1-DMD-L-003",
@@ -225,7 +280,12 @@
     "feedback": "At $6, D0 shows 150 thousand and D1 shows 50 thousand. Moving down D1 to $4 raises quantity demanded to 100 thousand. Final quantity remains 50 thousand below the starting level.",
     "primarySkill": "movement_vs_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "The market begins on D0 at $6 and 150 thousand units. Demand shifts to D1 while price is still $6, and then price falls to $4. Which decomposition matches the graph?",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "3b94a593c555ede05950bbd4c5828dc3afc2029fd2a59df67ab0cae5662426df",
+    "repairSkill": "movement_vs_shift",
+    "sourceHash": "be81844df1af48cbddb9f61efbd3866cd4591cc430e0bf2f0bc54ea8eab2fe79"
   },
   {
     "id": "PG1-DMD-M-001",
@@ -244,7 +304,12 @@
     "feedback": "A and B lie on the same demand curve. The lower price is associated with a larger quantity demanded, so this is a movement along demand, not a shift.",
     "primarySkill": "movement_vs_demand_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "The market moves from point A to point B on the displayed demand curve. What is the most precise description?",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "9c94a0b9d66e956fcb137fcd6703c1be08c434b8b5493660036e476848115ef3",
+    "repairSkill": "movement_vs_demand_shift",
+    "sourceHash": "f5cca9b21933912fe39bcd153934b8a75e90ad5eaa7deb89d1d8a43783afefec"
   },
   {
     "id": "PG1-DMD-M-002",
@@ -263,7 +328,12 @@
     "feedback": "Quantity demanded rises from 100 thousand at A to 225 thousand at B, an increase of 125 thousand.",
     "primarySkill": "demand_schedule_interpretation",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Moving from point A to point B on the displayed demand curve changes quantity demanded by:",
+    "image": "question-assets/demand/DEMAND-01.webp",
+    "aHash": "8d72d143c0a193baeb9b22ecc7da0068e471267a9b6a5ec535eff3a28f698c89",
+    "repairSkill": "demand_schedule_interpretation",
+    "sourceHash": "c30d4f216819b08993130761ff246918ffffd7b4940b4e8d75bf2f5aef645ede"
   },
   {
     "id": "PG1-DMD-M-003",
@@ -282,7 +352,12 @@
     "feedback": "At $10, D0 shows 50 thousand units and D1 shows 125 thousand, so quantity demanded at that price rises by 75 thousand.",
     "primarySkill": "demand_schedule_interpretation",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "At a price of $10 on the displayed coffee graph, how does quantity demanded change when demand shifts from D0 to D1?",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "b228a5bc6a5e5c26caf01f47b1e033a0658d9f1f9118526781cef19522b91f4b",
+    "repairSkill": "demand_schedule_interpretation",
+    "sourceHash": "800e2eec342d50796b59bbdd37d740d31feff5ec36ea2840b3c5fae732b0f0f3"
   },
   {
     "id": "PG1-DMD-M-004",
@@ -301,7 +376,12 @@
     "feedback": "For a normal good, higher income increases demand, shifting the entire demand curve to the right.",
     "primarySkill": "demand_shifters_income",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "If coffee is a normal good, which event is consistent with the shift from D0 to D1 shown in the graph?",
+    "image": "question-assets/demand/DEMAND-02.webp",
+    "aHash": "ca449fd1602e705b4d7b4da23d150acdfdef8f98f73eb088aa582d38639c6485",
+    "repairSkill": "demand_shifters_income",
+    "sourceHash": "e9c6d1fa31a33d246159fc2edc6fe3dc6c9ee47e167896217fc0fdcbf8cd74dc"
   },
   {
     "id": "PG1-DMD-M-005",
@@ -320,7 +400,12 @@
     "feedback": "At $4, D0 shows 200 thousand units while D1 shows 100 thousand, a decrease of 100 thousand at the same price.",
     "primarySkill": "demand_schedule_interpretation",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "Read the tea graph at $4. What quantity change results from moving from D0 to D1?",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "d4370894c216d3f776b827278dcbb87a15842e813748fa8ee310866e0b4b408b",
+    "repairSkill": "demand_schedule_interpretation",
+    "sourceHash": "279bea46382ab1f774bef44c9d81fc23040a974e5cebe7e07112eb59dfc08476"
   },
   {
     "id": "PG1-DMD-M-006",
@@ -339,7 +424,12 @@
     "feedback": "For a normal good, lower income decreases demand and shifts the entire demand curve left.",
     "primarySkill": "demand_shifters_income",
     "secondaryConceptIds": [],
-    "objective": "LO4.2"
+    "objective": "LO4.2",
+    "q": "For a normal good such as tea, which change in a demand shifter could generate the illustrated curve movement?",
+    "image": "question-assets/demand/DEMAND-03.webp",
+    "aHash": "a996761a6c43e6498bf2ec690afb6d077cbc54690ca2206e6bbe9fac483f9997",
+    "repairSkill": "demand_shifters_income",
+    "sourceHash": "2b84091755d4592e91d29069eee59f8b54c1cc825cc31c5c3311bfc87998d60b"
   },
   {
     "id": "PG1-EQ-E-001",
@@ -358,7 +448,12 @@
     "feedback": "D0 and S0 intersect at a price of $3 per gallon and a quantity of 150 thousand gallons.",
     "primarySkill": "equilibrium_identification",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "What equilibrium price and quantity are shown in the displayed gas market?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "e2847efd47ed62ef8f9c51f71deba0815d5370bebe67dce84eb68896b6ca3327",
+    "repairSkill": "equilibrium_identification",
+    "sourceHash": "1c02971b6706f286642560f2d3a1e90c91d0666ed25de7f3764db909899d1412"
   },
   {
     "id": "PG1-EQ-E-002",
@@ -377,7 +472,12 @@
     "feedback": "The original curves D0 and S0 intersect at price $3 and quantity 150 thousand.",
     "primarySkill": "equilibrium_identification",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "Before either curve shifts, what equilibrium is formed by D0 and S0 in the displayed gas market?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "9e9170866d31c955f172da30f68c7094fd6818d943f2819e190d09b2e790fee4",
+    "repairSkill": "equilibrium_identification",
+    "sourceHash": "3cbb8d7229aad7afdbae7642021a0b8602a077a6f8b65810d2527a6b57ca5757"
   },
   {
     "id": "PG1-EQ-EL-001",
@@ -396,7 +496,12 @@
     "feedback": "From $2 to $3, quantity demanded falls from 200 to 150 thousand while quantity supplied rises from 100 to 150 thousand. Together those changes eliminate the 100-thousand shortage.",
     "primarySkill": "surplus_shortage_adjustment",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "The gas market starts at $2, where the graph shows a 100-thousand-gallon shortage. As price rises to the $3 equilibrium, which pair of quantity changes eliminates that shortage?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "4b859506ff59bbc4c2b1caadcfd0ca8ef0df4c2fdf3febe8de2b815ccf809e3a",
+    "repairSkill": "surplus_shortage_adjustment",
+    "sourceHash": "97a81dfb988f1c2cf999e6d09a25661b3d1f71cee47c76b2425f07e767b78fc6"
   },
   {
     "id": "PG1-EQ-EL-002",
@@ -415,7 +520,12 @@
     "feedback": "The original equilibrium is $3 and 150 thousand; the final equilibrium is $5 and 150 thousand. Both shifts push price upward, while their opposing quantity effects exactly offset in this graph.",
     "primarySkill": "simultaneous_shift_comparison",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "Comparing the original D0/S0 equilibrium with the final D1/S1 equilibrium, what happened in this particular graph?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "20a365ddc6e86f22d4a7703e1cf2da24857fc460f6991da152233cce83ec4704",
+    "repairSkill": "simultaneous_shift_comparison",
+    "sourceHash": "9e310c58452a7d941bafd5f88dae10ab32cdcb2e2c74c6df6f884504f1783319"
   },
   {
     "id": "PG1-EQ-H-001",
@@ -434,7 +544,12 @@
     "feedback": "Quantity demanded exceeds quantity supplied by 200 thousand gallons. A shortage gives buyers an incentive to bid price upward toward equilibrium.",
     "primarySkill": "shortage_price_pressure",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "At a gas price of $1 per gallon, what disequilibrium and price pressure does the graph show?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "daeeed8e495bcce2bd3f52c2f8b6b0541510efdc7ed14c0258383b4e28e4af86",
+    "repairSkill": "shortage_price_pressure",
+    "sourceHash": "24bffbd3bc8fb588b9d8b70bd7a4f3792429dd4e46dbb06ca139f55a87c9b34d"
   },
   {
     "id": "PG1-EQ-H-002",
@@ -453,7 +568,12 @@
     "feedback": "D1 intersects the unchanged S0 curve at price $4 and quantity 200 thousand. A demand increase alone raises both equilibrium price and quantity.",
     "primarySkill": "demand_shift_equilibrium_prediction",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "Starting from D0/S0, suppose demand shifts to D1 while supply remains at S0. What intermediate equilibrium does the graph show?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "db0d0c863682cd6ba1bfe7fc0dc9713a1cd5db8b812a9d13bc1fc3c2c213a9bb",
+    "repairSkill": "demand_shift_equilibrium_prediction",
+    "sourceHash": "8ffad913d71118420ec76ce36ac3aa7acb68fa6cc53edd2af6decd752d4eaa58"
   },
   {
     "id": "PG1-EQ-L-001",
@@ -472,7 +592,12 @@
     "feedback": "A shortage creates upward price pressure and a surplus creates downward pressure. Both adjustment forces point toward the $3 equilibrium.",
     "primarySkill": "surplus_shortage_adjustment",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "At $2 and $4, which price-adjustment forces shown by the graph move the market toward equilibrium?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "7f758d7c60062900ab7736863fef7610821211fcd8ded96ebc265c2c1bfa1e7b",
+    "repairSkill": "surplus_shortage_adjustment",
+    "sourceHash": "8c109d9c5da53f1cdbefdeb292e2aa6b5045bd1f51bde857add2c02aeb1e2309"
   },
   {
     "id": "PG1-EQ-L-002",
@@ -491,7 +616,12 @@
     "feedback": "D1/S0 intersects at $4 and 200 thousand. Moving from S0 to S1 with D1 fixed then raises price to $5 and lowers quantity to 150 thousand. The final quantity matches the original even though the path does not.",
     "primarySkill": "simultaneous_shift_sequence",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "Begin at D0/S0: $3 and 150 thousand. Demand first increases to D1 with S0 fixed, then supply decreases to S1 with D1 fixed. Which sequence matches the graph?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "3519400e6e4ce9e7287883e5166837171abe140b1544373cae4f5dcddf9f2044",
+    "repairSkill": "simultaneous_shift_sequence",
+    "sourceHash": "a1e8c3a94b51d9f60c903f03458d85454d8bfa1527817af518f763227b5bde16"
   },
   {
     "id": "PG1-EQ-M-001",
@@ -510,7 +640,12 @@
     "feedback": "At $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand, so the shortage is 100 thousand gallons.",
     "primarySkill": "shortage_identification",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "At a price of $2 per gallon in the displayed gas market, what imbalance exists?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "5f33146b1496b79b6709d7a8f64bdcc10572901d6676e137777700a792aabc03",
+    "repairSkill": "shortage_identification",
+    "sourceHash": "db888cfc9f14286396f3a48274866d3f2c64211d1fed6ae0008dfe2c41a1c344"
   },
   {
     "id": "PG1-EQ-M-002",
@@ -529,7 +664,12 @@
     "feedback": "At $4, quantity supplied is 200 thousand and quantity demanded is 100 thousand, so the surplus is 100 thousand gallons.",
     "primarySkill": "surplus_identification",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "Read the gas market at $4 per gallon. Is the market short, long, or exactly balanced, and by how much?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+    "aHash": "bb38af8dc623c52df14e1da7783fe063119ad10c2fefa38c7f6bf703375a5b35",
+    "repairSkill": "surplus_identification",
+    "sourceHash": "c86e038a04cd7df2293126c4d7589bc41202523708340dc7e4ded70f56a34abc"
   },
   {
     "id": "PG1-EQ-M-003",
@@ -548,7 +688,12 @@
     "feedback": "D1 is to the right of D0, indicating increased demand. S1 is to the left of S0, indicating decreased supply.",
     "primarySkill": "simultaneous_shifts",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "ac1c11b6d4224e7d93fd5b3b357436ddc0d100d7177ffc80ff6f16c8cc8a6af3",
+    "repairSkill": "simultaneous_shifts",
+    "sourceHash": "904154877542845c9d995d5808c7023997871705d3a3fc075fe8cc4aebb246c5"
   },
   {
     "id": "PG1-EQ-M-004",
@@ -567,7 +712,12 @@
     "feedback": "The new curves D1 and S1 intersect at price $5 and quantity 150 thousand.",
     "primarySkill": "simultaneous_shift_comparison",
     "secondaryConceptIds": [],
-    "objective": "LO4.4"
+    "objective": "LO4.4",
+    "q": "After both shifts shown in the graph, what equilibrium is formed by D1 and S1?",
+    "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+    "aHash": "487c3b8cd4ad95d35f8d7c221bd4f1408cee518e56aa36f83cdd43045120bf41",
+    "repairSkill": "simultaneous_shift_comparison",
+    "sourceHash": "5f92b61b7a421fcda99b60ee4f4300f2590d51cfd515ebc8d9f68811de350921"
   },
   {
     "id": "PG1-SUP-E-001",
@@ -586,7 +736,12 @@
     "feedback": "Point A is plotted at a price of $6 and a quantity supplied of 100 thousand.",
     "primarySkill": "supply_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "On the displayed coffee supply curve, what price and quantity are shown at point A?",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "21eea1e56f0179075a3b89d85dc3d70da8484ae84d4c2c649275a5299b340226",
+    "repairSkill": "supply_shift_analysis",
+    "sourceHash": "8891dbe009727072594c0809bb81c6c46129886da5bd86b419cb9fef30b7cae5"
   },
   {
     "id": "PG1-SUP-E-002",
@@ -605,7 +760,12 @@
     "feedback": "S1 lies to the left and above S0, showing less quantity supplied at each common price.",
     "primarySkill": "supply_shift_direction",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "In the displayed hamburger market, the move from S0 to S1 represents:",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "c759b9b0be03baa8de525253f8f660dafb53ba8375a15b6f5f20ca347e83853a",
+    "repairSkill": "supply_shift_direction",
+    "sourceHash": "88223edda67ae5e29e6d9d031b995389e980c0adb07128b62fc01a1b7c513b3e"
   },
   {
     "id": "PG1-SUP-E-003",
@@ -624,7 +784,12 @@
     "feedback": "S1 lies below and to the right of S0, showing more quantity supplied at each common price.",
     "primarySkill": "supply_shift_direction",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "How should the taco supply change from S0 to S1 be classified?",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "96b2509cc26208adb30c2bf6dbb007a628a1c259e48e72e079bb40d7a68a0adf",
+    "repairSkill": "supply_shift_direction",
+    "sourceHash": "d05b7e58005d849dbd8fa69fcb645cf52eba1ca926c9adcc0aa5a1a8b28c59d8"
   },
   {
     "id": "PG1-SUP-EL-001",
@@ -643,7 +808,12 @@
     "feedback": "The supply line passes through quantity 150 thousand at a price of $8.",
     "primarySkill": "supply_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "At a market price of $8, approximately how many units does the displayed coffee supply curve show producers are willing to sell?",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "1a826759d1e87e33e018528e4034f3f9bf12e6181f4747d6ccd9d9a8f33e6e56",
+    "repairSkill": "supply_shift_analysis",
+    "sourceHash": "71381b04a33a956235fa0b0a542a657d282b0de34132697dbe8659909540bf90"
   },
   {
     "id": "PG1-SUP-EL-002",
@@ -662,7 +832,12 @@
     "feedback": "At $13, S1 shows 200 thousand units. The decrease in supply initially lowers quantity supplied at a given price, but the subsequent higher price moves quantity supplied up along S1 until it returns to 200 thousand.",
     "primarySkill": "movement_vs_supply_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Start on S0 at a price of $9, where quantity supplied is 200 thousand. Supply then shifts to S1 and the price rises to $13. What final quantity supplied does the graph show?",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "2ad2b3bd7183247868d061f1b8cb3c7b1056ee6fb44fe4a8f48015075eb3a759",
+    "repairSkill": "movement_vs_supply_shift",
+    "sourceHash": "00a80421cfd8a5a397ee9db831b8678d4ec631a29395fc8eaf131f04f80445be"
   },
   {
     "id": "PG1-SUP-EL-003",
@@ -681,7 +856,12 @@
     "feedback": "After the supply increase, moving down S1 to $2 brings quantity supplied to about 100 thousand. The rightward supply shift and the lower-price movement along S1 offset in this particular comparison.",
     "primarySkill": "supply_shift_and_movement",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "The market begins at point A on S0: $3 and 100 thousand tacos. Supply shifts to S1, and the market price then falls to $2. Approximately what final quantity supplied is shown?",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "bc7a31d0333518777943affb1a7b8c219c302516a7866865bad6c0b97041d42e",
+    "repairSkill": "supply_shift_and_movement",
+    "sourceHash": "64475d6603cf18ee98d4acfc887e6d9b97b173bab83bb79fe10a8b71de6d7cc9"
   },
   {
     "id": "PG1-SUP-H-001",
@@ -700,7 +880,12 @@
     "feedback": "From A to B, price rises by $5 while quantity supplied rises by 125 thousand, or 25 thousand additional units per $1 increase.",
     "primarySkill": "law_of_supply",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Using points A and B on the displayed linear supply curve, a $1 increase in price is associated with approximately what change in quantity supplied?",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "85e88aee7e96e558871b2fa22000961990bd158fb2edc140d05b584139711e25",
+    "repairSkill": "law_of_supply",
+    "sourceHash": "861d0c5c45012fe8b722805a35f98a44533fd969c315b1ed2e5827c908feb13f"
   },
   {
     "id": "PG1-SUP-H-002",
@@ -719,7 +904,12 @@
     "feedback": "At $9, quantity supplied falls from 200 thousand to 100 thousand; at $13, it falls from 300 thousand to 200 thousand. The horizontal decrease is 100 thousand units.",
     "primarySkill": "supply_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Across the common price range shown, S1 places quantity supplied how far to the left of S0?",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "323e6a4266844cc92a2c6a716703b9f0df2ad5fb07b9c7ce69d19190526efde0",
+    "repairSkill": "supply_shift_analysis",
+    "sourceHash": "36eebcd68a7265add2efec8c3fb9607928eaf13e2d9916a77dbfecf0f9d27a42"
   },
   {
     "id": "PG1-SUP-H-003",
@@ -738,7 +928,12 @@
     "feedback": "A and B are points on one curve, so their difference is quantity supplied. Moving from S0 to S1 shifts the entire curve and changes supply.",
     "primarySkill": "supply_shift_and_movement",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Which comparison correctly distinguishes the two changes visible in the taco graph?",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "f15f544f1cb4e79cc8b04c850e46b797fcb77a008d38ebc94c3017cd3f9dcd19",
+    "repairSkill": "supply_shift_and_movement",
+    "sourceHash": "5c3aed2c026dc8b06e2e433ae68be8fdf139040be78b3ecb5e892bab256f3fe8"
   },
   {
     "id": "PG1-SUP-L-001",
@@ -757,7 +952,12 @@
     "feedback": "A change in the good's own price changes quantity supplied along a fixed supply curve. A supply increase would require a rightward shift of the entire curve.",
     "primarySkill": "movement_vs_supply_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "A producer says the move from A to B proves that supply increased by 125 thousand units. What is the correct diagnosis?",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "04cfab29b5c80e0707df7da081c53b6b2e11b6fa707a7f53fbcca311da108a69",
+    "repairSkill": "movement_vs_supply_shift",
+    "sourceHash": "a7515f51d86a19ffb41a8a5a58682b797d01ef9f4aaf26127f2950386d5169d0"
   },
   {
     "id": "PG1-SUP-L-002",
@@ -776,7 +976,12 @@
     "feedback": "At $9 the shift from S0 to S1 lowers quantity supplied from 200 to 100 thousand. Moving up S1 to $13 raises it back to 200 thousand.",
     "primarySkill": "supply_shift_and_movement",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "The market begins on S0 at $9 and 200 thousand units. Supply shifts to S1 while price is still $9, and then price rises to $13. Which decomposition matches the graph?",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "39fe3dc787ce13a0c95b1101dbbbc243e7f8d072a59fe3e9732366c2bb8147c1",
+    "repairSkill": "supply_shift_and_movement",
+    "sourceHash": "057da70cd83a7bd4218fcbbf46a88f77921cf7b1c8bd3248050c52c1f3953423"
   },
   {
     "id": "PG1-SUP-L-003",
@@ -795,7 +1000,12 @@
     "feedback": "At $3 the rightward shift moves quantity supplied from 100 to about 225 thousand. The subsequent fall to $2 moves down S1 by about 125 thousand, returning quantity supplied to about 100 thousand.",
     "primarySkill": "supply_shift_and_movement",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Start at A on S0: $3 and 100 thousand tacos. At the same $3 price, supply shifts to S1, and then price falls to $2. Which accounting best explains why final quantity supplied returns to about 100 thousand?",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "ea8fcbd658ffd62e0cf3e6db68b505b9fa95f0694785fa7c4f2a477ec84bbfb4",
+    "repairSkill": "supply_shift_and_movement",
+    "sourceHash": "02d6aa3696f55edbdeddad16e6708e558484fa1cfdd3b70432689f8f995f8297"
   },
   {
     "id": "PG1-SUP-M-001",
@@ -814,7 +1024,12 @@
     "feedback": "A and B lie on the same supply curve. The higher price is associated with a larger quantity supplied, so this is a movement along supply, not a shift.",
     "primarySkill": "movement_vs_supply_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Points A and B lie on one supply curve. What economic change occurs between them?",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "11cb8b2ac5a48d0e068a2764c882abd3da1af9eac76a2c869a825101097931d3",
+    "repairSkill": "movement_vs_supply_shift",
+    "sourceHash": "9c4480bb3498e23cf923646c5624b0de2ad82f5cb725cb5f0fca9ea0825026ca"
   },
   {
     "id": "PG1-SUP-M-002",
@@ -833,7 +1048,12 @@
     "feedback": "Quantity supplied rises from 100 thousand at A to 225 thousand at B, an increase of 125 thousand.",
     "primarySkill": "supply_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Moving from point A to point B on the displayed supply curve changes quantity supplied by:",
+    "image": "question-assets/supply/SUPPLY-01.webp",
+    "aHash": "252b6cf9563d4e272e32a33cd819d32d504967578d94e4204511f5529593c024",
+    "repairSkill": "supply_shift_analysis",
+    "sourceHash": "5487a3cc2f3d0163e95c9a855356b296dd45b8b069efc54f6698f1c8033057d0"
   },
   {
     "id": "PG1-SUP-M-003",
@@ -852,7 +1072,12 @@
     "feedback": "At $9, S0 shows 200 thousand units while S1 shows 100 thousand, a decrease of 100 thousand at the same price.",
     "primarySkill": "supply_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "At a price of $9 on the displayed hamburger graph, how does quantity supplied change when supply shifts from S0 to S1?",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "d4370894c216d3f776b827278dcbb87a15842e813748fa8ee310866e0b4b408b",
+    "repairSkill": "supply_shift_analysis",
+    "sourceHash": "8715244bdd4b972560e44ef02d58f3e94ba5c1dd297fb526bcbca6d32021cd74"
   },
   {
     "id": "PG1-SUP-M-004",
@@ -871,7 +1096,12 @@
     "feedback": "Higher input costs reduce supply, shifting the supply curve left.",
     "primarySkill": "supply_shifters_input_costs",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "Which event is consistent with the shift from S0 to S1 shown in the hamburger market?",
+    "image": "question-assets/supply/SUPPLY-02.webp",
+    "aHash": "a3b84f1739f8b995188699193a24fa4340398185ba9eadc2321f074355011db2",
+    "repairSkill": "supply_shifters_input_costs",
+    "sourceHash": "19e7a178c3f05ab00e88dfa98e42e7c7a20277fa1b349fe32f3939ef87ebc998"
   },
   {
     "id": "PG1-SUP-M-005",
@@ -890,7 +1120,12 @@
     "feedback": "A and B lie on the same S0 curve. Price rises from $3 to $4 and quantity supplied rises from 100 thousand to 225 thousand, so this is a movement along supply.",
     "primarySkill": "movement_vs_supply_shift",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "What does the movement from point A to point B on S0 represent?",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "d20e746be485c9992771fdf8ea3f0628fb59238b5dffaa1813ca70ae31064e6f",
+    "repairSkill": "movement_vs_supply_shift",
+    "sourceHash": "a69ce9a185fe02390a1bdc7a0d08438f2a51496186599d349d943c39769fdf30"
   },
   {
     "id": "PG1-SUP-M-006",
@@ -909,6 +1144,11 @@
     "feedback": "At $3, point A on S0 is 100 thousand, while S1 crosses the $3 line at about 225 thousand. Supply therefore increases by about 125 thousand units at that price.",
     "primarySkill": "supply_shift_analysis",
     "secondaryConceptIds": [],
-    "objective": "LO4.3"
+    "objective": "LO4.3",
+    "q": "At a price of $3, the shift from S0 to S1 changes quantity supplied from 100 thousand to approximately:",
+    "image": "question-assets/supply/SUPPLY-03.webp",
+    "aHash": "7937be9ca1f570a0e06ee6c6f460901f44fa177d541e5e460e1c8d57dd8894df",
+    "repairSkill": "supply_shift_analysis",
+    "sourceHash": "3b22645e7bb049d0f19cf98d52b681bcbc0680b508c6e0b57b0211183216bbfe"
   }
 ]

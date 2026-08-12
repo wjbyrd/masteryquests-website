@@ -40,11 +40,13 @@
       "aHash": "955fa97740f15e5528923bd5758cc3af14dae9f49b1bb27834e1c8a6c0723a28",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_variable_cost",
+      "sourceHash": "c0dc6f7a13b449fe42d21c013161f1b839b832b1e63010e2feb0209f472e9317"
     },
     {
       "id": "P62E-COP-E-032",
-      "q": "Using the displayed cost graph, at what output does AC reach its minimum?",
+      "q": "Where does the average-cost curve reach its lowest point?",
       "options": [
         "25 units",
         "50 units",
@@ -60,7 +62,9 @@
       "aHash": "5d34b5d33991002e240b697dffbebbde02ce217da683a745f21da01347591d47",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_total_cost",
+      "sourceHash": "9d09b118117beb9d28b89dd49074bedbdb0f2fdfcd9b3dd93020d5b83cab1818"
     },
     {
       "id": "P62E-COP-E-033",
@@ -80,7 +84,9 @@
       "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "f8dc528761cde8c52c8b2260e3720a1c47055691a00b1cd1c9c4d4a6bb764342"
     },
     {
       "id": "P62E-COP-M-031",
@@ -100,7 +106,9 @@
       "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_cost",
+      "sourceHash": "535b143431704678818c30750505da7241dcf9789f4b9f427d01eb28b3cedf89"
     },
     {
       "id": "P62E-COP-M-032",
@@ -120,7 +128,9 @@
       "aHash": "6d1f50e6a259ccaee2fe099e9af5dda7c8da1b49014c8060991b516c22754f46",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_cost",
+      "sourceHash": "ef8958b3c1b87d737064cb747dcb4921f2c315b3d1a45ad2d3aec492da96b78b"
     },
     {
       "id": "P62E-COP-M-033",
@@ -142,7 +152,9 @@
       "aHash": "78177f1b0aa4b2723c7b50b191004ac9e5bbbd6ae4fc6f30fd0f80d1513698e6",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "fixed_cost",
+      "sourceHash": "7e05b4178af096c7a8434841a525357c107210d053c0439df0c1f9f241f5f654"
     },
     {
       "id": "P62E-COP-H-031",
@@ -164,7 +176,9 @@
       "aHash": "a02b98a119f41ab2a7863565b15f4fbf6d46bfd3ab5e950334802656c518c59e",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "2a0c6222376c0e1b62a3a5dccb300620f21cebdda8d05508c29cc7f49bdc44e7"
     },
     {
       "id": "P62E-COP-H-032",
@@ -184,7 +198,9 @@
       "aHash": "d77b3fe4e2dcbf0f0a537fc89d1b39340d7556ca027d216456cb51d483ebe39d",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "f3d599f89d9c352be144ecbedda15dbe533067286ff3dc70f9d34d230053d5ee"
     },
     {
       "id": "P62E-COP-H-033",
@@ -204,7 +220,9 @@
       "aHash": "ba8104f726d716285ccfff010cb79434bb1d9bc619d3fe67e6efb786d55cfc6d",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "010154f92264fecb1545bcf51f57af46c95ae0f7038989502985357e595d6029"
     },
     {
       "id": "P62E-COP-EL-031",
@@ -226,7 +244,9 @@
       "aHash": "347171706e97699c7e9fe896480e8e8fb50e4b978c8daae1b218b19eebf4b733",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "040ca1670f406e143b42e51acc0bc271a9a994c2a8990a00c408509c54804468"
     },
     {
       "id": "P62E-COP-EL-032",
@@ -248,11 +268,13 @@
       "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "458c6bb95f5f114f6cf7fd2ad1fae79c7699556019a52f948ef998d71a2a2f1d"
     },
     {
       "id": "P62E-COP-L-091",
-      "q": "The graph places the AVC minimum at Q=25 and the AC minimum at Q=50. Over outputs just above 25 but below 50, which ordering is consistent with those two turning points?",
+      "q": "For an output between the AVC minimum and the AC minimum shown, which ordering of AVC, MC, and AC is consistent with the graph?",
       "options": [
         "MC < AVC < AC",
         "AVC < AC < MC",
@@ -270,7 +292,9 @@
       "aHash": "2b7b9512a646aced5b3ad876debb8115b47344c888df5a2093abd6806f2159a7",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "dc5a26e6e64b51f9120ee271a011852a66f0fe4eba05777f3180024d867e6606"
     },
     {
       "id": "P62E-COP-E-034",
@@ -290,7 +314,9 @@
       "aHash": "fd25fd8da2abb4375b035140c5214f3ca6b11253aaa12c403f0beac9dd8ee8fc",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_variable_cost",
+      "sourceHash": "db1eafd6faa101a8a9168e3ef1819881560f8713cacff8ab06a401ef88f02fbf"
     },
     {
       "id": "P62E-COP-E-035",
@@ -310,7 +336,9 @@
       "aHash": "aab66715ff6211f6a0c928e6e811af6096a029a1e152bedcb2de43b7cea53c06",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_total_cost",
+      "sourceHash": "d61f880d4ddeb33786030831c64cb9a76355995f67d24edbdfc28cc256b610b7"
     },
     {
       "id": "P62E-COP-E-036",
@@ -330,7 +358,9 @@
       "aHash": "da2b74cad5bfd34ccf1ea271bc7aad174f31556ca58fb967aa44a1870edf85bd",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_variable_cost",
+      "sourceHash": "81399585cb61794ce394e9e736c2b75e42fb1693a457ab75a4b08fbd9d5c92f7"
     },
     {
       "id": "P62E-COP-M-034",
@@ -350,7 +380,9 @@
       "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_cost",
+      "sourceHash": "7678931c7f520e34615cf9ebcaaef1c51e6e0478b92a1d027be42995ce60250f"
     },
     {
       "id": "P62E-COP-M-035",
@@ -370,7 +402,9 @@
       "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_cost",
+      "sourceHash": "a8f5689cf35beddc84cb29d3b48b2ae92e956a15452d3f8dedc1483bbf5fd1df"
     },
     {
       "id": "P62E-COP-M-036",
@@ -390,7 +424,9 @@
       "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "c09c7d19a2c49c451d3a7bdb09560ec6babd1a77ee244fb107b4b1da451cd262"
     },
     {
       "id": "P62E-COP-H-034",
@@ -410,7 +446,9 @@
       "aHash": "a02b98a119f41ab2a7863565b15f4fbf6d46bfd3ab5e950334802656c518c59e",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "f32b22b419f5ca0ec2449b0dd0d733790fb4924f68627306d1cfe39f5afea3cb"
     },
     {
       "id": "P62E-COP-H-035",
@@ -430,7 +468,9 @@
       "aHash": "ce75cdb120c9604df33611cc13a5612f280f7c796a83df3049d4155c7a2b95eb",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "c1e499aca286bf950c8efcf45f90d141175a4ce00410bc46eb8d4dae6a65df55"
     },
     {
       "id": "P62E-COP-H-036",
@@ -452,7 +492,9 @@
       "aHash": "156bc4af87073d790d7b129e3908f47d088f03ef0277e64fe7f92b24733a7423",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "fixed_cost",
+      "sourceHash": "123dc7c036d8ade882e36a0a9a082dbdade68fe7516640a30ad5cbd89ff2a666"
     },
     {
       "id": "P62E-COP-EL-033",
@@ -474,7 +516,9 @@
       "aHash": "347171706e97699c7e9fe896480e8e8fb50e4b978c8daae1b218b19eebf4b733",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "09f083b58ad877a67d351913f45cba9473dab64667f10958bc565de9a920e265"
     },
     {
       "id": "P62E-COP-EL-034",
@@ -497,7 +541,9 @@
       "aHash": "cacb3ebb9daea349b98ecba89f0a89f62e4973b77eea3be2521cc61625c88301",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "average_total_cost",
+      "sourceHash": "3ecd74293acdd5353ce047619ffd2871fe04a333b2264f1a1f248360fcc7958e"
     },
     {
       "id": "P62E-COP-L-092",
@@ -520,7 +566,9 @@
       "aHash": "13c47a07a3db80899c6033ff1530fe4f9349fd293049cbd752b9f7124a6a6d52",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "short_run_cost_analysis",
+      "sourceHash": "309921ea7d8cc1b88e0f9dd2719b64aa623e40b6206162d1b25067726fb29c21"
     },
     {
       "id": "P62E-COP-E-037",
@@ -540,7 +588,9 @@
       "aHash": "502372a865dba96f36d1ac2a30db3c6a80aa6a963e27bb2acc1ec3bbb0a830a0",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "total_cost",
+      "sourceHash": "f5adc8a4b326c05a5148be2dcfcd1463e6216fea683958ab7302a1c238443bc9"
     },
     {
       "id": "P62E-COP-E-038",
@@ -560,7 +610,9 @@
       "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "variable_cost",
+      "sourceHash": "c0c878140ed31ab9094248faac5585fa953f2f66389c3bc46bddeea810524c9a"
     },
     {
       "id": "P62E-COP-E-039",
@@ -580,7 +632,9 @@
       "aHash": "1ddf7973e5b61d38fa9b006a2114abd9568562684cd21fbe42afe7e33e63fb6a",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "fixed_cost",
+      "sourceHash": "b9bdc8c69fa3aeb28e629425b543a85f39c31319324677736c52c310955b800c"
     },
     {
       "id": "P62E-COP-M-037",
@@ -600,7 +654,9 @@
       "aHash": "78177f1b0aa4b2723c7b50b191004ac9e5bbbd6ae4fc6f30fd0f80d1513698e6",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "fixed_cost",
+      "sourceHash": "fc45978c3a07beeaa1342cba453d1d619e63840982146f9a99520a401701338e"
     },
     {
       "id": "P62E-COP-M-038",
@@ -620,7 +676,9 @@
       "aHash": "b0aa233b7f02bbbbb482847ce0497d08754051b2d275c9acf8b0a575bcde9f85",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_total_cost",
+      "sourceHash": "91e45bd86387570a0cab69229bd1a3605c194685b517031bfb81ce8739579654"
     },
     {
       "id": "P62E-COP-M-039",
@@ -640,7 +698,9 @@
       "aHash": "5f92a1e2ca08d31e1401c0d2eab330b6132cf5cf73b4dce0ffc7b9f67dae5992",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_variable_cost",
+      "sourceHash": "55d078f22482c1e5f962b06569a0271d73515073f7daafe1ea819fcb58fe8f42"
     },
     {
       "id": "P62E-COP-H-037",
@@ -660,7 +720,9 @@
       "aHash": "527bdeed203669aa2ce7ec30a4910fcb876ee16cc201d05772cd9d97bf88b713",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "c0beee0f3548177a707a326e7927af3864b343bb04b1e5b6ba777fcbc6a32cd8"
     },
     {
       "id": "P62E-COP-H-038",
@@ -680,11 +742,13 @@
       "aHash": "300f7877989acb4907cf786bea57a9200a742b3846c5f72f674594c892e34296",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "cost_curve_relationships",
+      "sourceHash": "beae3be50e3d95d8767b5374edbfa6dc4fdcaaf960e17512ff81c3c2c105dc56"
     },
     {
       "id": "P62E-COP-H-039",
-      "q": "At zero output, the upper curve begins at about $400 while the variable-cost curve begins at zero. What accounts for the $400 intercept?",
+      "q": "At zero output, what explains the vertical gap between the total-cost and variable-cost curves?",
       "options": [
         "Total fixed cost",
         "Marginal cost",
@@ -700,11 +764,13 @@
       "aHash": "63b75b83788c81bbce90288a2f75c5c48dfce831d56a91f11ec82d125140ee9c",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "fixed_cost",
+      "sourceHash": "034071f99613db7a5bf5acb7925e51b2fa787d654ad40a0cbb8aff53781ed508"
     },
     {
       "id": "P62E-COP-EL-035",
-      "q": "The horizontal line shows TFC=$400. If output is 200 units, what AFC follows from the graph?",
+      "q": "Use the horizontal TFC line and the marked output of 200 units. What average fixed cost is implied?",
       "options": [
         "$0 per unit",
         "$2 per unit",
@@ -720,7 +786,9 @@
       "aHash": "9e1e7f5c5bde24c99b094244afde75dd21cd8f959276d974dd19363ee78753bf",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "average_fixed_cost",
+      "sourceHash": "b3c8e8de69af122bacffb19e565243dc3ce993a2ea158465ec949af9919782ee"
     },
     {
       "id": "P62E-COP-EL-036",
@@ -740,7 +808,9 @@
       "aHash": "92dfdfa18ca466c58c6bfde81970f9f051cddbb4bbd1c09dcf886e3b34eaea7e",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "variable_cost",
+      "sourceHash": "65900077668c27570287c03bfa3922eecc2a9701e5c4795a20cf2f3dc0930057"
     },
     {
       "id": "P62E-COP-L-093",
@@ -763,7 +833,9 @@
       "aHash": "aea18e354f6ddfcd920c6365ff22d191ad8ecba4c622bc7b6d4337065f9fd151",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "short_run_cost_analysis",
+      "sourceHash": "a0bb9bf81baec514cb2fddc2a37c487dae51e51be42353569ed31f9bba93ad44"
     },
     {
       "id": "P62E-COP-L-094",
@@ -786,11 +858,13 @@
       "aHash": "829a2b80594ae11e21a1dc0f25c34454f341a7b1257faef07ceffb7dafb8d66f",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "short_run_cost_analysis",
+      "sourceHash": "ced561faf5f58cb910399b62b2a6e05c7cc3387dae31bb5b0bf869ddbfd888dd"
     },
     {
       "id": "P62E-COP-B2-037",
-      "q": "At Q=120, the graph marks A=$1,200, B=$800, and C=$400. Which identity is demonstrated directly by those three points?",
+      "q": "At the marked output Q = 120, which cost identity is demonstrated by points A, B, and C?",
       "options": [
         "A = B − C",
         "A = B + C",
@@ -810,7 +884,9 @@
       "aHash": "70733a07c317776f7d6fecd3a8160d3c18581c1f1d9fcbf516eb4940ad10e3cf",
       "sourcePool": "mediumBoss",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "boss"
+      "instructionalRole": "boss",
+      "repairSkill": "cost_curve_relationships",
+      "sourceHash": "e18633daead95e0165ccf0f0ead2df8bb36dab804ce1c7bc05c18af7d04dc2e4"
     },
     {
       "id": "P62E-COP-E-040",
@@ -830,7 +906,9 @@
       "aHash": "df8dfbf891526a7d7ceb1eedf95867b8532f2b1adb96c08316217e1f5c0f73a5",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "total_product",
+      "sourceHash": "34554befbc63a449f21fbde7a76b7e72dc510c8752b0b40a2cf165be2f6c20ae"
     },
     {
       "id": "P62E-COP-E-041",
@@ -850,11 +928,13 @@
       "aHash": "fefc85e538d6bf1f525641b8847ef15bd8a5a8ef44e192e1472df65ee64139cb",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "total_product",
+      "sourceHash": "dd2549486cc63db328faba588a0edfa213387d6fd56e5a1f4fe4f8213c573cf6"
     },
     {
       "id": "P62E-COP-M-040",
-      "q": "What is marginal product at the labor input where the displayed TP curve reaches its maximum?",
+      "q": "At the labor input where the displayed total-product curve reaches its maximum, what is marginal product?",
       "options": [
         "Approximately zero",
         "At its maximum positive value",
@@ -870,11 +950,13 @@
       "aHash": "998b3ffb362f495f94b392d95d11016422c46030c82028ae0296521564e98c49",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_product",
+      "sourceHash": "9da5fb291fc1603a9294f921210bc10c1507af8c14b8347f3b79cb2fcef1b587"
     },
     {
       "id": "P62E-COP-M-041",
-      "q": "To the right of the TP peak, the curve slopes downward. What does that indicate about marginal product there?",
+      "q": "For labor inputs to the right of the total-product maximum, what sign does marginal product have?",
       "options": [
         "Marginal product is zero everywhere",
         "Marginal product is negative",
@@ -890,11 +972,13 @@
       "aHash": "5f94d4bcbb1f33eb9ecfec94bfba3c6033e7f637eefe2831ba822f169eb2e1bc",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_product",
+      "sourceHash": "d0118d9fb1ccde2f6c03fc6d1de059e41f5e11ecb9e17f9349884b24a47788fd"
     },
     {
       "id": "P62E-COP-H-040",
-      "q": "Between roughly 6 and 9 workers, TP is still rising but the curve is flattening. Which description of MP fits that portion?",
+      "q": "Use the shape of total product between about 6 and 9 workers. Which description of marginal product fits that region?",
       "options": [
         "MP is negative and decreasing",
         "MP is zero",
@@ -910,11 +994,13 @@
       "aHash": "89c8de01ffb2f7c5c428addf2b251f197cdacaf0b9da602625415bff0cf7d45b",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "diminishing_marginal_product",
+      "sourceHash": "32239fb43846dd37a98589fdd7f2ff1a3bddcb8c39738ce819a4e35d3960bb6e"
     },
     {
       "id": "P62E-COP-H-041",
-      "q": "In the region after 10 workers, what combination is consistent with the graph?",
+      "q": "Use the portion of the total-product curve after its maximum. Which combination of total product and marginal product is consistent with the graph?",
       "options": [
         "TP rises and MP is negative",
         "TP falls and MP is positive",
@@ -930,15 +1016,17 @@
       "aHash": "5d62481ec73ccdacd9cb6b2d552d668a003c82057fce63f62d1174ac6813b363",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_product",
+      "sourceHash": "96a768ce22b7309ae9adecd601ce559d28c10ddf1ecb991f4b48154366b290cb"
     },
     {
       "id": "P62E-COP-EL-037",
-      "q": "A student claims diminishing marginal product cannot begin until total product falls. Which feature of this graph rejects that claim?",
+      "q": "Which visual feature shows that diminishing marginal product begins before total product starts falling?",
       "options": [
         "TP begins flattening while it is still rising",
         "TP starts at zero before any labor is used",
-        "TP eventually turns downward after the peak",
+        "TP eventually turns downward after the peak at the shown output",
         "The peak occurs at approximately 150 units"
       ],
       "objective": "COP.2",
@@ -950,11 +1038,13 @@
       "aHash": "2a6d60acaddc2d2fc587ec795add9ecfd19e1461b5384dc6b3ea27643bd8c5ec",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "diminishing_marginal_product",
+      "sourceHash": "4504ac4755cf25477042428e2eb53e21b0cf051a704c9678c239ecc8514edfff"
     },
     {
       "id": "P62E-COP-EL-038",
-      "q": "At the TP maximum, the graph shows about 150 units produced with 10 workers. What is average product at that point?",
+      "q": "At the total-product maximum, use the labeled output and labor input to calculate average product.",
       "options": [
         "0 units per worker",
         "15 units per worker",
@@ -973,11 +1063,13 @@
       "aHash": "dcc382b490d00b4de67ecc1af6c03eff134695e2361475ae7ed5f2bf515fb4b6",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "average_product",
+      "sourceHash": "eb76c3c9aaabeddb8c9a318eefe0f640e45fd1243252900d51a34a0e64dca1d4"
     },
     {
       "id": "P62E-COP-L-095",
-      "q": "The graph peaks at 150 units with 10 workers and then slopes downward. If an 11th worker lowers total product slightly, which pair of statements must be true?",
+      "q": "Move one worker beyond the total-product maximum. Which pair of statements must be true?",
       "options": [
         "The 11th worker has positive MP, while AP has fallen to zero",
         "The 11th worker has zero MP, while AP has become negative",
@@ -996,11 +1088,13 @@
       "aHash": "21598c76981ef3c8768e1eddc226efc984c2495dcd535dd1e3c8235f882c8c58",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "integrated_cost_analysis",
+      "sourceHash": "a10ad03fc0c336c1d2c0b83abdbe23584811ae73e2bb8f1b1f8bd268b462b521"
     },
     {
       "id": "P62E-COP-B1-019",
-      "q": "The displayed TP curve reaches its maximum near 10 workers. Which correction best answers a student who says “TP is maximized where MP is maximized”?",
+      "q": "Checkpoint: Use the total-product curve to correct the claim that “TP is maximized where MP is maximized.”",
       "options": [
         "TP is maximized where MP first becomes positive",
         "TP is maximized where AP equals zero",
@@ -1018,7 +1112,9 @@
       "aHash": "42a06672597e8e1cd1384ce4e3e1cf566d9c9d6fb2002d45a5774d0aca6e4f95",
       "sourcePool": "easyBoss",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "boss"
+      "instructionalRole": "boss",
+      "repairSkill": "marginal_product",
+      "sourceHash": "e5769a5e6ae17b6f8007984d4c68d1000f198bd1fec2edbd6d5ee1e113ff7662"
     },
     {
       "id": "P62E-COP-E-042",
@@ -1038,7 +1134,9 @@
       "aHash": "68dbf73d03d3a5107edad3b05676eee240e68c280296e52b6986873c54cef3cb",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_product",
+      "sourceHash": "a930c94e1815b854ffd2dbafa49db243f061a5149903af61926a3c1e7ba8c7b8"
     },
     {
       "id": "P62E-COP-E-043",
@@ -1058,7 +1156,9 @@
       "aHash": "b5ae72075040f8498eaf7165a5b9e52d79ead6cdf7dcecf4cde1da28acdc0737",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "2821cdfc520c3a332c3aeb10cc85824c2037529ac4dbb3932c76629cc93c816d"
     },
     {
       "id": "P62E-COP-M-042",
@@ -1078,7 +1178,9 @@
       "aHash": "bfb94c2dfe7bb5579ce4d1e503377634d393e68a36628745e69cd20df2fa2d4a",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "37a2471b69168beb99940bab3dbf9e70d521df1d60f8a5a3235353557829a03e"
     },
     {
       "id": "P62E-COP-M-043",
@@ -1098,7 +1200,9 @@
       "aHash": "df42671c2273710f1c6bf2a210630d29875f8022a83319fefc502997390c03d5",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "948250f0aaf774483cd63818fe124e1a0e50cd2b5974a6f7eae2effb660dc591"
     },
     {
       "id": "P62E-COP-M-044",
@@ -1118,11 +1222,13 @@
       "aHash": "51d40bebfe061c64b377e85ddb470e75a3f1b5b6ee862bbefff3455619482186",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_product",
+      "sourceHash": "e2dd0faebc77c51ffdf6969322f4005bc80f7daa084f51a6505105580dcf774e"
     },
     {
       "id": "P62E-COP-H-042",
-      "q": "At about 5 workers, the graph places MP above AP. What should happen to AP as another worker is added around that point?",
+      "q": "At the marked labor input where MP lies above AP, what should happen to AP when another worker is added?",
       "options": [
         "AP should fall",
         "AP should rise",
@@ -1138,11 +1244,13 @@
       "aHash": "1c779b9ec2912ebbb6c9c86f35a882042745534fc969f7a8dd49eb3861d45c6f",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "05b623d52422a56960d74b0e0ff1103fcfc6592d73f22a5d22a92758019f2143"
     },
     {
       "id": "P62E-COP-H-043",
-      "q": "At about 9 workers, the graph shows MP below AP but still above zero. Which pair of movements follows?",
+      "q": "At the marked labor input where MP is below AP but still positive, what happens to TP and AP as another worker is added?",
       "options": [
         "TP falls while AP rises",
         "Both TP and AP fall",
@@ -1161,11 +1269,13 @@
       "aHash": "51f4010e6f5a0ff643dd00661f57642479adb323c3874c2b70d48c36cda4c31a",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "ff1c7a63f87cc16aedb8476125b18cbbf1fcb99a8226e99cd84636e0c43017b6"
     },
     {
       "id": "P62E-COP-H-044",
-      "q": "The AP curve reaches its highest point near the MP–AP intersection. What is true at that point?",
+      "q": "At the point where the MP and AP curves intersect, what is true of average product?",
       "options": [
         "MP equals zero",
         "AP equals total product",
@@ -1183,14 +1293,16 @@
       "aHash": "899c9ac8acbe6e576b597c1078452ecf7a3e6fbafd04ab9b296a69df417bf853",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "average_product",
+      "sourceHash": "62d6d1f6262c470c418daf884952ec9ddb151354a4bf01818ec36c96370aaf46"
     },
     {
       "id": "P62E-COP-EL-039",
-      "q": "Just after MP crosses zero near 10 workers, the graph still shows AP above zero. Which interpretation is correct?",
+      "q": "Just to the right of the point where MP crosses zero, how should the positive AP reading and the shape of TP be interpreted together?",
       "options": [
         "TP is declining even though output per worker remains positive",
-        "TP must keep rising whenever AP remains positive",
+        "TP must keep rising whenever AP remains positive at the shown output",
         "TP must fall all the way to zero when MP is zero",
         "AP must immediately become negative once MP does"
       ],
@@ -1206,7 +1318,9 @@
       "aHash": "2cd13ba59924bde165060c00089e60fbcc368850aeabbc21d1b3477281f92296",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "marginal_product",
+      "sourceHash": "11609acf17cb3857646311e4e1fefce6f846e7ba0d0d456650549b4e304358e9"
     },
     {
       "id": "P62E-COP-EL-040",
@@ -1226,16 +1340,18 @@
       "aHash": "0d54c48641ac4c65e09e3c357e7bc5906f3bdd2da72a34d987c57fe5196fcccf",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "f6b52afee95394df80fbf0d709b4189d9c3b54678e44edf2378c58ce345e8a21"
     },
     {
       "id": "P62E-COP-L-096",
-      "q": "The graph shows MP falling from its own peak several workers before AP reaches its peak. What does that demonstrate?",
+      "q": "Compare the locations of the MP peak and AP peak. What does their ordering demonstrate about marginal and average product?",
       "options": [
         "AP must immediately fall as soon as MP begins to decline",
         "MP can fall only after AP has already become negative",
         "A falling marginal can still raise the average while it remains above the average",
-        "The marginal-average relationship does not apply to product measures"
+        "The marginal-average relationship does not apply to product measures at the shown output"
       ],
       "objective": "COP.2",
       "difficulty": "legendary",
@@ -1248,11 +1364,13 @@
       "aHash": "055cc1cd4dd4313a26e8bfe2b89606dbc3b935118be117a7c238410713518edc",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "diminishing_marginal_product",
+      "sourceHash": "adc12b64882603d876173929bd8020f27f3735376f6272f19abea5c642cb1c1a"
     },
     {
       "id": "P62E-COP-L-097",
-      "q": "Near 10 workers, the graph shows AP of roughly 15 units per worker. Which total-product value would be consistent with that reading?",
+      "q": "At the labor input near the TP maximum, use the displayed AP value to infer total product.",
       "options": [
         "About 15 units",
         "About 100 units",
@@ -1270,11 +1388,13 @@
       "aHash": "200ba329647c06c65880e3b6e3bfcd56fd0a46c9a7dd5e8be7f9a58f1a7f5c2d",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "average_product",
+      "sourceHash": "9f2f7c9fe70961a71499158fbfd176690c4e9b4f69a22b56895f3ab5fc02057a"
     },
     {
       "id": "P62E-COP-B1-020",
-      "q": "At the MP–AP intersection near 7 workers, what is happening to AP?",
+      "q": "Checkpoint: At the MP–AP intersection, what is happening to AP?",
       "options": [
         "AP is at its maximum",
         "AP is at zero",
@@ -1292,16 +1412,18 @@
       "aHash": "f1e34cb8a284455ba75de335be28b7833d80ecf6c79d77a9107d3cca1339b862",
       "sourcePool": "easyBoss",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "boss"
+      "instructionalRole": "boss",
+      "repairSkill": "average_product",
+      "sourceHash": "748b338672c7ba40b98ab170ebf9bdc0f8850b705c87f7c5fc9e43fcbcc3842b"
     },
     {
       "id": "P62E-COP-B2-038",
-      "q": "At about 9 workers, the graph places MP below AP but above zero. What happens as another worker is added around that region?",
+      "q": "Checkpoint: In the region where MP is below AP but still positive, which product measure has already passed its maximum while total product has not?",
       "options": [
-        "TP falls while AP rises",
-        "TP rises while AP falls",
-        "Both TP and AP rise",
-        "Both TP and AP remain unchanged"
+        "Average product",
+        "Total product",
+        "Both average and total product",
+        "Neither average nor total product"
       ],
       "objective": "COP.2",
       "difficulty": "checkpointTwo",
@@ -1310,12 +1432,14 @@
         "marginal_product",
         "average_product"
       ],
-      "feedback": "Positive MP raises TP, while MP below AP lowers AP.",
+      "feedback": "When MP is below AP, AP is falling and has already passed its peak; because MP is still positive, TP is still rising.",
       "image": "question-assets/costs-of-production/COST-05.webp",
-      "aHash": "51f4010e6f5a0ff643dd00661f57642479adb323c3874c2b70d48c36cda4c31a",
+      "aHash": "b41a320283ae606168f9f2f5e89672ab0a56ada51373edb525e75564b2db11f3",
       "sourcePool": "mediumBoss",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "boss"
+      "instructionalRole": "boss",
+      "repairSkill": "marginal_average_relationship",
+      "sourceHash": "f3f90df6b425dcad2617e4fb3be5c72bd88e9fff85ea594d9c5a22ee0dcd8610"
     },
     {
       "id": "P62E-COP-E-044",
@@ -1335,7 +1459,9 @@
       "aHash": "482ed0d61fba98054b39622add4b6f33732fddedb4a4e5166c23dd2c505850ee",
       "sourcePool": "easy",
       "canonicalDifficulty": "easy",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "long_run_average_cost",
+      "sourceHash": "8be837b4e060ce00ce233bad833cf1fa14d63255c4eec22c78f0724b500779df"
     },
     {
       "id": "P62E-COP-M-045",
@@ -1355,11 +1481,13 @@
       "aHash": "b2530743145a08f23b15ecb4ffc704b324426f3c9bd432af98af031a15ac6b90",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "long_run_average_cost",
+      "sourceHash": "2eff0bd7aae03345692923ff422926478676d3f3e7c5df376442b8218ec77fef"
     },
     {
       "id": "P62E-COP-M-046",
-      "q": "Approximately what LRAC does the graph show at Q=90?",
+      "q": "Read LRAC at the higher marked output, Q = 90. What value is shown?",
       "options": [
         "About $20",
         "About $8",
@@ -1375,7 +1503,9 @@
       "aHash": "b2530743145a08f23b15ecb4ffc704b324426f3c9bd432af98af031a15ac6b90",
       "sourcePool": "medium",
       "canonicalDifficulty": "medium",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "long_run_average_cost",
+      "sourceHash": "70e9eddce71fb2c03ea8e4d3e4ace8d0fb1694c33eec2459cd4f8dad24302b84"
     },
     {
       "id": "P62E-COP-H-045",
@@ -1395,13 +1525,15 @@
       "aHash": "4acdea15bf80cae50a952bed9575524925fbc98139316736a1e9bf5f3758335b",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "economies_of_scale",
+      "sourceHash": "6d2de7ecf992d4b653730b9a0554b914319d887989a96e48009411b1286e12cc"
     },
     {
       "id": "P62E-COP-H-046",
       "q": "If a firm expands output from about 60 toward 90 units, what happens to LRAC?",
       "options": [
-        "LRAC falls, indicating economies of scale",
+        "LRAC falls, indicating economies of scale at the shown output",
         "LRAC stays at the minimum of about $12",
         "LRAC rises, indicating diseconomies of scale",
         "LRAC rises, indicating economies of scale"
@@ -1415,13 +1547,15 @@
       "aHash": "0357dfcf4a519f124109112a72bbe8fe9b569bf7e241f00983ce06d9d4e8231a",
       "sourcePool": "hard",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "main"
+      "instructionalRole": "main",
+      "repairSkill": "diseconomies_of_scale",
+      "sourceHash": "0464f28e3f74458b31c11ac5b5948fc23243c9b9db327a10bca3134a259a6ffc"
     },
     {
       "id": "P62E-COP-EL-041",
       "q": "The graph gives roughly the same LRAC at Q=30 and Q=90. Which statement distinguishes those two positions?",
       "options": [
-        "Expanding from either output lowers LRAC at the same rate",
+        "Expanding from either output lowers LRAC at the same rate at the shown output",
         "Expanding from either output raises LRAC at the same rate",
         "LRAC stays flat throughout the interval from Q=30 to Q=90",
         "Expanding from Q=30 lowers LRAC, while expanding from Q=90 raises LRAC"
@@ -1438,7 +1572,9 @@
       "aHash": "a015be4a3921c64bd9a6b16a6321df3f92eebb454f606d3eed35e40feb3df088",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "long_run_average_cost",
+      "sourceHash": "3dd43fa107e30a392c88fd0f7a9c5badd17c18a5266ef24e7c5bcf10d956040f"
     },
     {
       "id": "P62E-COP-EL-042",
@@ -1458,7 +1594,9 @@
       "aHash": "46201fe4c12aad2e90f8d237d2056cc031198964f66ed330de02bf4854450578",
       "sourcePool": "elite",
       "canonicalDifficulty": "elite",
-      "instructionalRole": "elite"
+      "instructionalRole": "elite",
+      "repairSkill": "minimum_efficient_scale",
+      "sourceHash": "b6e1d2f360b50fe34e16ae2c0d6c7bac445494680289cd11fba6c1b433a88221"
     },
     {
       "id": "P62E-COP-L-098",
@@ -1481,7 +1619,9 @@
       "aHash": "d82e27375c0565c2bba108411afe8e058eef1ada13fc508557cac007171b0041",
       "sourcePool": "legendary",
       "canonicalDifficulty": "legendary",
-      "instructionalRole": "legendary"
+      "instructionalRole": "legendary",
+      "repairSkill": "integrated_cost_analysis",
+      "sourceHash": "98808ebc256f6ba17f5048fd3fe9838baae50fab99cdb35489a88eada5f0fa1a"
     },
     {
       "id": "P62E-COP-B3-055",
@@ -1501,13 +1641,15 @@
       "aHash": "482ed0d61fba98054b39622add4b6f33732fddedb4a4e5166c23dd2c505850ee",
       "sourcePool": "finalBoss",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "boss"
+      "instructionalRole": "boss",
+      "repairSkill": "minimum_efficient_scale",
+      "sourceHash": "acb51f978b9644ae2873c9cacdb7bd8f55749fe4f3f7eca84ae5cd86a9451b82"
     },
     {
       "id": "P62E-COP-B3-056",
       "q": "Which claim is NOT supported by the shape of the displayed LRAC curve?",
       "options": [
-        "LRAC falls as output approaches 60 from the left side",
+        "LRAC falls as output approaches 60 from the left side at the shown output",
         "LRAC rises as output moves above 60 on the right side",
         "The minimum LRAC occurs at approximately Q=60",
         "There is a broad flat interval of constant returns to scale"
@@ -1521,7 +1663,9 @@
       "aHash": "4a70f10d880da60ae88bd517407cdff5b722c0436f6e42b071621dfb2ad8c0ae",
       "sourcePool": "finalBoss",
       "canonicalDifficulty": "hard",
-      "instructionalRole": "boss"
+      "instructionalRole": "boss",
+      "repairSkill": "constant_returns_to_scale",
+      "sourceHash": "56c8c9ca5f6c95179df2ce3f1478086e0d4b9dd5b5f110020e3da0d63427f217"
     }
   ]
 }

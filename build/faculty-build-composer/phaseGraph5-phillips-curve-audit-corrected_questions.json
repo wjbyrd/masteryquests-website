@@ -18,7 +18,12 @@
     "secondaryConceptIds": [
       "short-run-phillips-curve"
     ],
-    "objective": "LO36.3"
+    "objective": "LO36.3",
+    "q": "Compared with point A, what combination is shown at point B?",
+    "image": "question-assets/phillips-curve-expectations/SRPC-04.webp",
+    "aHash": "772a458ff9cc0860d28057a39ed843526362a795928b362fe73ff050e08a3bc7",
+    "repairSkill": "expected_inflation_shift",
+    "sourceHash": "c01b2447948b844213397234162ab6d823529f889f9884fd32c3be9b78a71028"
   },
   {
     "id": "PG5-PC-E-007",
@@ -39,7 +44,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "At point A, what is the unemployment rate?",
+    "image": "question-assets/long-run-phillips-curve/SRPC-01.webp",
+    "aHash": "18b3d14ade1b23572c8d9d22267238312dc9fb1f820e001ec4741a6716e8ae82",
+    "repairSkill": "read_pc_points",
+    "sourceHash": "aa33b10a5a642ae6b0c5643016d4d30856fb386ce8ce09c9050985c3f07523bc"
   },
   {
     "id": "PG5-PC-E-013",
@@ -60,7 +70,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "Relative to point A, what does point B show on SRPC0?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-02.webp",
+    "aHash": "560ea7fc80c5d50c44e015b4e341cb459eb62a823e2b1091bcf1ee27ea5b25d1",
+    "repairSkill": "read_pc_points",
+    "sourceHash": "b3c12738b11ea276a5ec4dea3f382306003b827a7b869aa3da206d10b8b94f39"
   },
   {
     "id": "PG5-PC-E-019",
@@ -81,7 +96,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "How does point B compare with the natural-rate point A in the displayed Phillips-curve graph?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+    "aHash": "0bc5596752037e8ac186ce166ef154265efdda45e7c4303226e115329e9a7d54",
+    "repairSkill": "read_pc_points",
+    "sourceHash": "804384384d742a41a16b61aa10b1af8f9ccc365a29c1d1508ef3f2af0fca159c"
   },
   {
     "id": "PG5-PC-H-004",
@@ -102,7 +122,12 @@
     "secondaryConceptIds": [
       "short-run-phillips-curve"
     ],
-    "objective": "LO36.3"
+    "objective": "LO36.3",
+    "q": "At a given unemployment rate, how does SRPC1 compare with SRPC0?",
+    "image": "question-assets/phillips-curve-expectations/SRPC-04.webp",
+    "aHash": "1296c221ce1f8d55b45b5f7ef8f6d9f0f4506ff0ab3aad218a43087b26de78fe",
+    "repairSkill": "movement_vs_shift_srpc",
+    "sourceHash": "661aea661fb65a21245aa4ede7556d55e79cfeb8e8edeb3a33b6e5e67f86aa08"
   },
   {
     "id": "PG5-PC-H-010",
@@ -123,7 +148,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "Moving leftward along SRPC0 from point A implies which short-run relationship?",
+    "image": "question-assets/long-run-phillips-curve/SRPC-01.webp",
+    "aHash": "538d8232d45b2d4bf4506a0e1a8eeaab860599c1c1f175e10ed3c3f25e6617a6",
+    "repairSkill": "srpc_relation",
+    "sourceHash": "86b39065487604d1845517d20be5bd92f66aa6468918e9bb738ebfe71454eb02"
   },
   {
     "id": "PG5-PC-H-016",
@@ -144,7 +174,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "At point B, how do unemployment and inflation compare with the natural-rate point A?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-02.webp",
+    "aHash": "73606bfc409df616cc940d381c5dfef157deee11c67c9bacc781e5734e468f05",
+    "repairSkill": "srpc_movement",
+    "sourceHash": "65480764c05e809cc526a73e3a22b0446b1ce1b69b2c125686684d1bdc467db8"
   },
   {
     "id": "PG5-PC-H-022",
@@ -165,7 +200,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "At the right-hand point B, which inflation-unemployment comparison with A is correct?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+    "aHash": "3a3a9c4e4117bae3253056ecc1a6f83bd210e0d59c49b507b870c24141f3ebbb",
+    "repairSkill": "srpc_movement",
+    "sourceHash": "2560e51d833122289bf4ed52d825b100d4af4909f073fdd5fc0313eda795827c"
   },
   {
     "id": "PG5-PC-L-006",
@@ -186,7 +226,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.3"
+    "objective": "LO36.3",
+    "q": "At the unemployment rate marked by the LRPC, how does inflation on SRPC1 compare with inflation at point A on SRPC0?",
+    "image": "question-assets/phillips-curve-expectations/SRPC-04.webp",
+    "aHash": "9e5780adc71ad09373f39d0499469c60cf108cf3c8f295b227d74175b86ac0a5",
+    "repairSkill": "trace_expectations_adjustment",
+    "sourceHash": "1add365570883e1a2841ef0c7c36bffe10c465d5d70091e9e541f7d034edf677"
   },
   {
     "id": "PG5-PC-L-012",
@@ -207,7 +252,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "Which pair of descriptions matches the two curves shown?",
+    "image": "question-assets/long-run-phillips-curve/SRPC-01.webp",
+    "aHash": "491ba14d4dcddbfbab851e7986c48b96f026839e1ef39f3b50680d9cd0bfb988",
+    "repairSkill": "define_phillips_curve",
+    "sourceHash": "c88e62e31e4dca2de29dabe6c40c4212a03738cc8aa3e140fd32b2d1e76645b3"
   },
   {
     "id": "PG5-PC-L-018",
@@ -229,7 +279,12 @@
       "long-run-phillips-curve",
       "short-run-phillips-curve"
     ],
-    "objective": "LO36.3"
+    "objective": "LO36.3",
+    "q": "If policymakers keep unemployment at point B, what expectations adjustment tends to follow?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-02.webp",
+    "aHash": "09a182cadd5356993c005d225cfd1ae3d0ff46e7e2edf0dc15f20f92d735838c",
+    "repairSkill": "trace_expectations_adjustment",
+    "sourceHash": "7f423a29570a46c1ab585103774d2e8262724c3e080094833e1b494253d744af"
   },
   {
     "id": "PG5-PC-L-024",
@@ -251,7 +306,12 @@
       "long-run-phillips-curve",
       "short-run-phillips-curve"
     ],
-    "objective": "LO36.3"
+    "objective": "LO36.3",
+    "q": "If unemployment remains at the right-hand point B, how should inflation expectations and the SRPC adjust over time?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+    "aHash": "beed31dec8fdee6675eba10c7aee38f205ddd7a5ef42d4ed9428867c9739e1b5",
+    "repairSkill": "trace_expectations_adjustment",
+    "sourceHash": "b51714a17af51e8067309355de49afd56e1a338a6fce654a436b757226d5e869"
   },
   {
     "id": "PG5-PC-M-002",
@@ -272,7 +332,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.3"
+    "objective": "LO36.3",
+    "q": "Suppose expected inflation rises while the natural rate is unchanged. Which curve change shown is consistent with that assumption?",
+    "image": "question-assets/phillips-curve-expectations/SRPC-04.webp",
+    "aHash": "316e205d5cfb48772a9b44da163df7bb9e2dd2170bd9917e6594294820c553da",
+    "repairSkill": "expected_inflation_shift",
+    "sourceHash": "54a0099acca1c6879d42f1f957ff3790ddc26ee9316d5ab363ac0016077f49ce"
   },
   {
     "id": "PG5-PC-M-003",
@@ -293,7 +358,12 @@
     "secondaryConceptIds": [
       "phillips-curve-expectations"
     ],
-    "objective": "LO36.2"
+    "objective": "LO36.2",
+    "q": "What natural rate of unemployment is shown by the LRPC?",
+    "image": "question-assets/phillips-curve-expectations/SRPC-04.webp",
+    "aHash": "18b3d14ade1b23572c8d9d22267238312dc9fb1f820e001ec4741a6716e8ae82",
+    "repairSkill": "identify_natural_unemployment",
+    "sourceHash": "95917ee17873390691f42fe4e1dbbce0998a579eae4fd2ff40293e6a9bda142d"
   },
   {
     "id": "PG5-PC-M-008",
@@ -314,7 +384,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "At point A, what is the inflation rate?",
+    "image": "question-assets/long-run-phillips-curve/SRPC-01.webp",
+    "aHash": "32c3dcb87dde3641b3a96a698b2a34a8876605d8badb948ad100f48dbe76c533",
+    "repairSkill": "read_pc_points",
+    "sourceHash": "d8d09ab0ac11163336dd778ebc5899b2a91d465d358a1df6c4ea08b806ff50c2"
   },
   {
     "id": "PG5-PC-M-009",
@@ -335,7 +410,12 @@
     "secondaryConceptIds": [
       "short-run-phillips-curve"
     ],
-    "objective": "LO36.2"
+    "objective": "LO36.2",
+    "q": "If inflation rises while the economy remains on the LRPC, what happens to unemployment in this graph?",
+    "image": "question-assets/long-run-phillips-curve/SRPC-01.webp",
+    "aHash": "95751075d485b9af3f9b6edc635dc1e64842bce19f520f19fdcaeb2ba04e0797",
+    "repairSkill": "identify_lrpc",
+    "sourceHash": "6d9d102c540f847b693e5c6a3e99e10309a9e8840bda8105ca3ee3cd6e40cd7b"
   },
   {
     "id": "PG5-PC-M-014",
@@ -356,7 +436,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "How far below the natural rate is unemployment at point B?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-02.webp",
+    "aHash": "cf5cf75066cff204467de08909d69764fc33ffd1dfcc0401b1c69abcebcaf7cb",
+    "repairSkill": "read_pc_points",
+    "sourceHash": "ba798fdb097e74be9e357ae45d88b3db4d2a40b3cec2cfcc916d5e66e7e15faf"
   },
   {
     "id": "PG5-PC-M-015",
@@ -377,7 +462,12 @@
     "secondaryConceptIds": [
       "phillips-curve-expectations"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "What type of change is the move from A to B?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-02.webp",
+    "aHash": "4fd663650396392bf578002b2eba2fe25e8bb5b03be408686a5f3365fba17e59",
+    "repairSkill": "movement_vs_shift_srpc",
+    "sourceHash": "032fc96c071b6f270847920b920a76d840ffd4028b455774c5bdb84ab16da8ca"
   },
   {
     "id": "PG5-PC-M-020",
@@ -398,7 +488,12 @@
     "secondaryConceptIds": [
       "long-run-phillips-curve"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "Point B is to the right of the LRPC. By how many percentage points does its unemployment rate exceed the natural rate?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+    "aHash": "cf5cf75066cff204467de08909d69764fc33ffd1dfcc0401b1c69abcebcaf7cb",
+    "repairSkill": "read_pc_points",
+    "sourceHash": "ec6ca156f87d6487e7a9c68297dc2232053ccf9578ca0ea3b3ad214b875cadd4"
   },
   {
     "id": "PG5-PC-M-021",
@@ -419,7 +514,12 @@
     "secondaryConceptIds": [
       "phillips-curve-expectations"
     ],
-    "objective": "LO36.1"
+    "objective": "LO36.1",
+    "q": "Points A and B lie on the same short-run Phillips curve. How should the change from A to B be classified?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+    "aHash": "4fd663650396392bf578002b2eba2fe25e8bb5b03be408686a5f3365fba17e59",
+    "repairSkill": "movement_vs_shift_srpc",
+    "sourceHash": "467b56925fe51683c3fa812ae1c6406068a76f053c8765735b4137a1467912bd"
   },
   {
     "id": "PG5-PC-X-005",
@@ -440,7 +540,12 @@
     "secondaryConceptIds": [
       "phillips-curve-expectations"
     ],
-    "objective": "LO36.2"
+    "objective": "LO36.2",
+    "q": "Which feature of the graph shows that the natural rate is unchanged after the SRPC shift?",
+    "image": "question-assets/phillips-curve-expectations/SRPC-04.webp",
+    "aHash": "dae44fca7961d6ebcb4ecc15d54922a11616c8b71e58501e209bb11bdaec8558",
+    "repairSkill": "long_run_inflation_neutrality",
+    "sourceHash": "aa26edc9d19a659ec7a283d12704956a24920de5c881950265876481a2e8ce05"
   },
   {
     "id": "PG5-PC-X-011",
@@ -461,7 +566,12 @@
     "secondaryConceptIds": [
       "short-run-phillips-curve"
     ],
-    "objective": "LO36.2"
+    "objective": "LO36.2",
+    "q": "Which description of point A is correct?",
+    "image": "question-assets/long-run-phillips-curve/SRPC-01.webp",
+    "aHash": "46b82205ee8f9bf85c4641b0c6438ebc158b25bceb6df59ce0f01ec9044e79d9",
+    "repairSkill": "natural_rate_hypothesis",
+    "sourceHash": "82e2c08a5b519a40181c46e0930120c448841210c0d700fb18318e72d804b5d5"
   },
   {
     "id": "PG5-PC-X-017",
@@ -482,7 +592,12 @@
     "secondaryConceptIds": [
       "phillips-curve-expectations"
     ],
-    "objective": "LO36.2"
+    "objective": "LO36.2",
+    "q": "If point B persists and expectations adjust, what long-run change is predicted?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-02.webp",
+    "aHash": "7c05d42236e76c17570d058d8d8a4b8e114757de18b5b590034a31d42dfed432",
+    "repairSkill": "long_run_adjustment",
+    "sourceHash": "a0e17efef04caa7e320fb7c43862cf1c05ebee743f50556097b193be5aa01949"
   },
   {
     "id": "PG5-PC-X-023",
@@ -503,6 +618,11 @@
     "secondaryConceptIds": [
       "phillips-curve-expectations"
     ],
-    "objective": "LO36.2"
+    "objective": "LO36.2",
+    "q": "With unemployment above the natural rate at B, what long-run Phillips-curve adjustment should follow?",
+    "image": "question-assets/short-run-phillips-curve/SRPC-03.webp",
+    "aHash": "593d7ab117c22fa5b2058b5c297ecc1f3739ccd829866f6184715f8d5d0ac98f",
+    "repairSkill": "long_run_adjustment",
+    "sourceHash": "f8f6bf9fe27f517071396cdfed2e230cc523fe89f9384640786bd4c6cbe2965b"
   }
 ]

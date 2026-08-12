@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-12T19:30:00.000Z",
+  "generatedAt": "2026-08-12T20:40:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -738,7 +738,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Consumer and Producer Surplus family. Adaptive-depth backfill now enforces runtime Easy/Medium/Hard floors for granular Micro selectors without changing Legendary, checkpoint, repair, bridge, graph, or calculation scope. Adaptive-support backfill now provides multiple targeted Repair and Bridge routes for each granular child selector while preserving the family scope.",
-      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "consumer-surplus",
         "producer-surplus",
@@ -1409,7 +1409,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank with an expanded 102-item graph layer. New graphical questions cover cost-curve relationships, total cost identities, total/marginal/average product, and LRAC without importing competitive-firm profit decisions. Costs now exposes ten granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill needed for healthy adaptive use.",
-      "coverageFloorVersion": "phase6.2e-rich-v2-graph-expansion",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "economic-costs",
         "profit-concepts",
@@ -2977,7 +2977,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank with balanced foundational through mastery coverage, dedicated calculations and remediation, plus 56 graph-dependent items using the approved ELAS-01, ELAS-02, ELAS-03, and ELAS-05 assets. Granular Micro selection is available through six child subtopics while the parent continues to expose the full Elasticity family. Adaptive-depth backfill now enforces runtime Easy/Medium/Hard floors for granular Micro selectors without changing Legendary, checkpoint, repair, bridge, graph, or calculation scope. Adaptive-support backfill now provides multiple targeted Repair and Bridge routes for each granular child selector while preserving the family scope.",
-      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "price-elasticity-of-demand",
         "price-elasticity-of-supply",
@@ -4925,7 +4925,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank with new graph-dependent import, export, tariff, quota, welfare, tariff-revenue, quota-rent, and deadweight-loss analysis. Granular Micro selection is available through six child subtopics while the parent continues to expose the full International Trade and Trade Policy family. Adaptive-depth backfill now enforces runtime Easy/Medium/Hard floors for granular Micro selectors without changing Legendary, checkpoint, repair, bridge, graph, or calculation scope. Adaptive-support backfill now provides multiple targeted Repair and Bridge routes for each granular child selector while preserving the family scope.",
-      "coverageFloorVersion": "phaseMicro3b-adaptive-support-backfill-v1",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "trade-world-price-status",
         "trade-domestic-production-consumption-quantities",
@@ -7112,7 +7112,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank: 30 each easy/medium/hard/elite, 90 legendary, 30 calculation, 20 repair, 20 bridge, three 18-question checkpoints, and 36 legendary-boss questions. Monopolistic Competition now exposes five granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill required for healthy adaptive use.",
-      "coverageFloorVersion": "phase6.2h-rich-v1",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "mcomp-structure-differentiation",
         "mcomp-short-run-choice",
@@ -7745,7 +7745,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank with a 60-question graph expansion across monopoly profit, monopoly loss, welfare/efficient-output comparisons, and natural-monopoly regulation. Monopoly now exposes seven granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill required for healthy adaptive use.",
-      "coverageFloorVersion": "phase6.2g-rich-v1-monopoly-graph-v2",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "monopoly-power-barriers",
         "monopoly-demand-revenue",
@@ -9447,7 +9447,7 @@
       "coverageStatus": "ready-focused",
       "coverageStatusLabel": "Ready for focused use",
       "coverageStatusNote": "Publisher-scale standalone bank with an expanded 120-question graph layer spanning firm profit/loss/shutdown, short-run supply, market-to-firm linkage, entry/exit, and long-run equilibrium. Perfect Competition now exposes eight granular Micro child selectors and adds only the measured Easy/Medium/Hard, Repair, and Bridge backfill required for healthy adaptive use.",
-      "coverageFloorVersion": "phase6.2f-rich-v1-pc-graph-v2",
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1",
       "childConceptIds": [
         "competitive-market-price-taking-revenue",
         "competitive-output-choice",
@@ -11114,7 +11114,7 @@
       "coverageStatus": "ready-family-slice",
       "coverageStatusLabel": "Engine-safe alone; deepest in Phillips family",
       "coverageStatusNote": "Phase M2a provides solo engine floors with controlled reuse and family-first instructional depth.",
-      "coverageFloorVersion": "phaseM2a-phillips-disinflation-family-maturation-v1"
+      "coverageFloorVersion": "phaseMicroGraphAudit-remediation-v1"
     },
     {
       "canonicalConceptId": "sources-of-productivity",
@@ -11833,10 +11833,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseGraphAudit-remediation-v1",
-  "curationSummary": "Full remediation of Graph Phases 1–5: graph-dependence fixes, option-cue balancing, original asset identity restoration, Phillips-curve corrections, and canonical-count repair.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1",
+  "curationPhase": "phaseMicroGraphAudit-remediation-v1",
+  "curationSummary": "Micro graph audit remediation: graph-dependency rewrites, duplicate-task diversification, answer-length cue cleanup, internal asset-code removal, CPS path normalization, and one Perfect Competition skill metadata correction. Also removes SRPC-03 filename wording from the latest Phillips questions.",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1",
   "canonicalQuestionCount": 8163,
-  "librarySha256": "f46ab5fa560a7cf11aebf1c4b94538b7091c46d8e0d07f4a7a1c278a9f8078a9",
+  "librarySha256": "a76b278660d1d806a431434a19a087c25942346b4f0c9425c7e8f46d9582971d",
   "composerVersion": "4.5p.0"
 }

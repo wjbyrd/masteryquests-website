@@ -1,7 +1,7 @@
 [
   {
     "id": "P62D-ITP-E-031",
-    "q": "In TRD-01, is the domestic economy an importer or exporter when the world price is $5?",
+    "q": "Using the displayed trade graph, is the domestic economy an importer or exporter when the world price is $5?",
     "options": [
       "Importer",
       "Exporter",
@@ -27,7 +27,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "b2ab466339a1c07a76b9948f9e590239199f61a519af93891d26b817d4365426",
+    "sourceHash": "ecdccf143237596902924e4c18965615f1b8f92b9e376af9f4bfed6c56d97f3d",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -37,7 +37,7 @@
         "routeKey": "importer_identification",
         "sourceRecordOrder": 0,
         "sourceId": 716000,
-        "sourceHash": "b2ab466339a1c07a76b9948f9e590239199f61a519af93891d26b817d4365426"
+        "sourceHash": "ecdccf143237596902924e4c18965615f1b8f92b9e376af9f4bfed6c56d97f3d"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -49,7 +49,7 @@
   },
   {
     "id": "P62D-ITP-E-032",
-    "q": "At the $5 world price in TRD-01, how many thousand avocados do domestic producers supply?",
+    "q": "At the $5 world price in the displayed trade graph, how many thousand avocados do domestic producers supply?",
     "options": [
       "175 thousand",
       "125 thousand",
@@ -75,7 +75,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "27bab3f6cecffa55249e86cfaab17f8d02b875474ea886e95ac2512be70d4192",
+    "sourceHash": "ee8432ddd9e713089282ddd63b983e8c582b8ad1b540ac011552123706792326",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -85,7 +85,7 @@
         "routeKey": "domestic_production_under_trade",
         "sourceRecordOrder": 1,
         "sourceId": 716001,
-        "sourceHash": "27bab3f6cecffa55249e86cfaab17f8d02b875474ea886e95ac2512be70d4192"
+        "sourceHash": "ee8432ddd9e713089282ddd63b983e8c582b8ad1b540ac011552123706792326"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -97,7 +97,7 @@
   },
   {
     "id": "P62D-ITP-E-033",
-    "q": "At the $5 world price in TRD-01, how many thousand avocados do domestic consumers demand?",
+    "q": "At the $5 world price in the displayed trade graph, how many thousand avocados do domestic consumers demand?",
     "options": [
       "125 thousand",
       "175 thousand",
@@ -123,7 +123,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "9ae64291bcc1d128b24369fc7312152e274707349b8af7bac59b5547e2e3c753",
+    "sourceHash": "e878b87f79a8889be8f9a5b80b724a82a8a50e0eaaa847547f6da442c50ae819",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -133,7 +133,7 @@
         "routeKey": "domestic_consumption_under_trade",
         "sourceRecordOrder": 2,
         "sourceId": 716002,
-        "sourceHash": "9ae64291bcc1d128b24369fc7312152e274707349b8af7bac59b5547e2e3c753"
+        "sourceHash": "e878b87f79a8889be8f9a5b80b724a82a8a50e0eaaa847547f6da442c50ae819"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -145,7 +145,7 @@
   },
   {
     "id": "P62D-ITP-M-031",
-    "q": "Using TRD-01, how many thousand avocados are imported at the $5 world price?",
+    "q": "Using the displayed trade graph, how many thousand avocados are imported at the $5 world price?",
     "options": [
       "50 thousand",
       "125 thousand",
@@ -171,7 +171,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "cb5798d269bf0137c1c4159b70357e0f3c9128c8b69096cd1a8b31346bd861a5",
+    "sourceHash": "c4b3be69f1fc8e435b341b97239600866b687e3216b62d87e18875df0d051e4e",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -181,7 +181,7 @@
         "routeKey": "import_quantity",
         "sourceRecordOrder": 3,
         "sourceId": 716003,
-        "sourceHash": "cb5798d269bf0137c1c4159b70357e0f3c9128c8b69096cd1a8b31346bd861a5"
+        "sourceHash": "c4b3be69f1fc8e435b341b97239600866b687e3216b62d87e18875df0d051e4e"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -193,7 +193,7 @@
   },
   {
     "id": "P62D-ITP-M-032",
-    "q": "Why does TRD-01 show imports when trade opens at Pw = $5?",
+    "q": "Why does the displayed trade graph show imports when trade opens at Pw = $5?",
     "options": [
       "The world price is below the domestic autarky price",
       "The world price is above the domestic autarky price",
@@ -219,7 +219,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "30be723a1c284aaaa1057dee26c53919905b2c2b73ad2ad472d087092957d612",
+    "sourceHash": "1dfdadeb5d004486251074e8074b08aec488f82fff0387ca7acfd7047aea449e",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -229,7 +229,7 @@
         "routeKey": "world_price",
         "sourceRecordOrder": 4,
         "sourceId": 716004,
-        "sourceHash": "30be723a1c284aaaa1057dee26c53919905b2c2b73ad2ad472d087092957d612"
+        "sourceHash": "1dfdadeb5d004486251074e8074b08aec488f82fff0387ca7acfd7047aea449e"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -241,7 +241,7 @@
   },
   {
     "id": "P62D-ITP-H-031",
-    "q": "Relative to autarky in TRD-01, how do domestic production and consumption change when trade opens at $5?",
+    "q": "Relative to autarky in the displayed trade graph, how do domestic production and consumption change when trade opens at $5?",
     "options": [
       "Production rises by 50 thousand and consumption falls by 50 thousand",
       "Production falls by 50 thousand and consumption rises by 50 thousand",
@@ -267,7 +267,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "1afb1a4b771c3125f167f5b0cd27b13ca713f39ce2221df56d631feb1285ccca",
+    "sourceHash": "b9b9f3e810aa3613faea61522afd260989d847e3faa1f05659ed6933d776f59c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -277,7 +277,7 @@
         "routeKey": "import_market_graph",
         "sourceRecordOrder": 5,
         "sourceId": 716005,
-        "sourceHash": "1afb1a4b771c3125f167f5b0cd27b13ca713f39ce2221df56d631feb1285ccca"
+        "sourceHash": "b9b9f3e810aa3613faea61522afd260989d847e3faa1f05659ed6933d776f59c"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -289,9 +289,9 @@
   },
   {
     "id": "P62D-ITP-H-032",
-    "q": "Using the demand intercept and Pw = $5 in TRD-01, consumer surplus under free trade is:",
+    "q": "Using the demand intercept and Pw = $5 in the displayed trade graph, consumer surplus under free trade is:",
     "options": [
-      "$612.5 thousand",
+      "$612.5 thousand in the displayed market",
       "$312.5 thousand",
       "$1,012.5 thousand",
       "$1,325 thousand"
@@ -315,7 +315,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "35b5c22a09e736db0351cabb7003dc116a1511ddd140d3436923e0d64bceb12f",
+    "sourceHash": "b1cf4814b9e03ea5b9a6bce7ff1012b5cd9c7d09a295a1b6b7f1b77e3785c51a",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -325,7 +325,7 @@
         "routeKey": "consumer_surplus_trade",
         "sourceRecordOrder": 6,
         "sourceId": 716006,
-        "sourceHash": "35b5c22a09e736db0351cabb7003dc116a1511ddd140d3436923e0d64bceb12f"
+        "sourceHash": "b1cf4814b9e03ea5b9a6bce7ff1012b5cd9c7d09a295a1b6b7f1b77e3785c51a"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -337,7 +337,7 @@
   },
   {
     "id": "P62D-ITP-EL-031",
-    "q": "In TRD-01, domestic producer surplus falls from $612.5 thousand under autarky to $312.5 thousand under free trade. What is the producer loss?",
+    "q": "Using the autarky equilibrium and free-trade outcome, calculate the loss in domestic producer surplus when this importing market opens to trade.",
     "options": [
       "$100 thousand",
       "$400 thousand",
@@ -363,7 +363,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "db1bdfe22c8efbb899f22643cfa483ee6d50c69203316abebc749a1664db816c",
+    "sourceHash": "ea7ee053ea41102c4d8e95ff34b8710322239c55cd75fa7e99e0675bb9efc913",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -373,7 +373,18 @@
         "routeKey": "producer_surplus_trade",
         "sourceRecordOrder": 7,
         "sourceId": 716007,
-        "sourceHash": "db1bdfe22c8efbb899f22643cfa483ee6d50c69203316abebc749a1664db816c"
+        "sourceHash": "ea7ee053ea41102c4d8e95ff34b8710322239c55cd75fa7e99e0675bb9efc913"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "producer_surplus_trade",
+        "sourceRecordOrder": 38,
+        "sourceId": 716007,
+        "sourceHash": "ea7ee053ea41102c4d8e95ff34b8710322239c55cd75fa7e99e0675bb9efc913",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -385,7 +396,7 @@
   },
   {
     "id": "P62D-ITP-EL-032",
-    "q": "Using TRD-01, consumers gain $400 thousand and producers lose $300 thousand when trade opens. What is the net national gain?",
+    "q": "Using the surplus areas before and after trade opens, what is the net national gain?",
     "options": [
       "$100 thousand",
       "$700 thousand",
@@ -411,7 +422,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "2ca6475afca5e0c51460e48c0cd74363aa9bc9f6d7020123de6e38e1aa81cd93",
+    "sourceHash": "6081137271579fff02725810df44b247475c60f8fd5f5689f775d58fd380bec6",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -421,7 +432,18 @@
         "routeKey": "gains_from_trade",
         "sourceRecordOrder": 8,
         "sourceId": 716008,
-        "sourceHash": "2ca6475afca5e0c51460e48c0cd74363aa9bc9f6d7020123de6e38e1aa81cd93"
+        "sourceHash": "6081137271579fff02725810df44b247475c60f8fd5f5689f775d58fd380bec6"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "gains_from_trade",
+        "sourceRecordOrder": 39,
+        "sourceId": 716008,
+        "sourceHash": "6081137271579fff02725810df44b247475c60f8fd5f5689f775d58fd380bec6",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -433,7 +455,7 @@
   },
   {
     "id": "P62D-ITP-L-091",
-    "q": "Which package correctly summarizes TRD-01 after opening to trade at Pw = $5?",
+    "q": "Which package correctly summarizes the displayed trade graph after opening to trade at Pw = $5?",
     "options": [
       "Qd = 125 thousand, Qs = 225 thousand, exports = 100 thousand",
       "Qd = 225 thousand, Qs = 125 thousand, imports = 100 thousand",
@@ -459,7 +481,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "bda40f692334465dba33d23f7b87a3d9d2194ff995f4de30ec5b428e68c08105",
+    "sourceHash": "92f1cf41d8861836ba6758caa23e44da7026fc8197018de6aad15f05036f595f",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -469,7 +491,7 @@
         "routeKey": "integrated_trade_analysis",
         "sourceRecordOrder": 9,
         "sourceId": 716009,
-        "sourceHash": "bda40f692334465dba33d23f7b87a3d9d2194ff995f4de30ec5b428e68c08105"
+        "sourceHash": "92f1cf41d8861836ba6758caa23e44da7026fc8197018de6aad15f05036f595f"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -481,9 +503,9 @@
   },
   {
     "id": "P62D-ITP-L-092",
-    "q": "TRD-01 implies a $400 thousand consumer gain and a $300 thousand producer loss from opening trade. Which welfare statement is correct?",
+    "q": "Use the consumer- and producer-surplus changes shown when trade opens. Which welfare statement is correct?",
     "options": [
-      "Total surplus falls by $100 thousand because producers lose",
+      "Total surplus falls by $100 thousand because producers lose in the displayed market",
       "Total surplus is unchanged because gains equal losses",
       "Total surplus rises by $100 thousand even though producers lose",
       "Only producer surplus matters for national welfare"
@@ -507,7 +529,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "3fee045f39c447aa9f7e664047189be1bd789a9d04ab0493bef55fd38fbfb87c",
+    "sourceHash": "fd1ab28bf4ea2212d6592269d74e47152ae3b7ee3916308fe993266c9c5f2977",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -517,7 +539,18 @@
         "routeKey": "total_surplus_trade",
         "sourceRecordOrder": 10,
         "sourceId": 716010,
-        "sourceHash": "3fee045f39c447aa9f7e664047189be1bd789a9d04ab0493bef55fd38fbfb87c"
+        "sourceHash": "fd1ab28bf4ea2212d6592269d74e47152ae3b7ee3916308fe993266c9c5f2977"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "total_surplus_trade",
+        "sourceRecordOrder": 45,
+        "sourceId": 716010,
+        "sourceHash": "fd1ab28bf4ea2212d6592269d74e47152ae3b7ee3916308fe993266c9c5f2977",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -529,7 +562,7 @@
   },
   {
     "id": "P62D-ITP-B1-019",
-    "q": "Checkpoint: At Pw = $5 in TRD-01, what creates the 100-thousand-unit import quantity?",
+    "q": "Checkpoint: At Pw = $5 in the displayed trade graph, what creates the 100-thousand-unit import quantity?",
     "options": [
       "Qs of 225 thousand minus Qd of 125 thousand",
       "Autarky quantity of 175 thousand minus Qs of 125 thousand",
@@ -555,7 +588,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easyBoss",
-    "sourceHash": "1eaf1cae7e32b946b4057468710a6cbbc2d0c6beb47fbd72e76ebbd4e02292e0",
+    "sourceHash": "f57b16312a5b6e99417366ce918d7e239761d9dd22bec26837823c71d042300d",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -565,7 +598,7 @@
         "routeKey": "import_quantity",
         "sourceRecordOrder": 11,
         "sourceId": 716011,
-        "sourceHash": "1eaf1cae7e32b946b4057468710a6cbbc2d0c6beb47fbd72e76ebbd4e02292e0"
+        "sourceHash": "f57b16312a5b6e99417366ce918d7e239761d9dd22bec26837823c71d042300d"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -577,7 +610,7 @@
   },
   {
     "id": "P62D-ITP-E-034",
-    "q": "In TRD-02, is the domestic economy an importer or exporter when the world price is $10?",
+    "q": "At the $10 world price, does this market export or import?",
     "options": [
       "Exporter",
       "Importer",
@@ -603,7 +636,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "a1cf7a2ee42a321ab9e53387801e1ca65d6b01d60231f278809b808dfe0554e6",
+    "sourceHash": "bd3525f881540479338588288ee2a3a53b0315203f3ff1b2565d5a9fcd7e6298",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -613,7 +646,7 @@
         "routeKey": "exporter_identification",
         "sourceRecordOrder": 12,
         "sourceId": 716012,
-        "sourceHash": "a1cf7a2ee42a321ab9e53387801e1ca65d6b01d60231f278809b808dfe0554e6"
+        "sourceHash": "bd3525f881540479338588288ee2a3a53b0315203f3ff1b2565d5a9fcd7e6298"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -625,7 +658,7 @@
   },
   {
     "id": "P62D-ITP-E-035",
-    "q": "At Pw = $10 in TRD-02, domestic consumers demand:",
+    "q": "At Pw = $10 in the displayed trade graph, domestic consumers demand:",
     "options": [
       "175 thousand avocados",
       "100 thousand avocados",
@@ -651,7 +684,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "c28839209a9da8fcb280e94375cfc084d1a442b80507dbd371608ef579e901d8",
+    "sourceHash": "def4b9520fb977cf1f4c4ceb5d900e0fa9b757dfc4910e93ccf632b206cd543a",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -661,7 +694,7 @@
         "routeKey": "domestic_consumption_under_trade",
         "sourceRecordOrder": 13,
         "sourceId": 716013,
-        "sourceHash": "c28839209a9da8fcb280e94375cfc084d1a442b80507dbd371608ef579e901d8"
+        "sourceHash": "def4b9520fb977cf1f4c4ceb5d900e0fa9b757dfc4910e93ccf632b206cd543a"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -673,7 +706,7 @@
   },
   {
     "id": "P62D-ITP-E-036",
-    "q": "At Pw = $10 in TRD-02, domestic producers supply:",
+    "q": "At Pw = $10 in the displayed trade graph, domestic producers supply:",
     "options": [
       "100 thousand avocados",
       "175 thousand avocados",
@@ -699,7 +732,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "5e604cc838e3f9b8fe36d5bfca7e84717fabc2a1fcc019dc7e08ef35abcfa63c",
+    "sourceHash": "de399b7539690b566da50ce46c69cb534a4805a0c5733a4f3eff815879a764d5",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -709,7 +742,7 @@
         "routeKey": "domestic_production_under_trade",
         "sourceRecordOrder": 14,
         "sourceId": 716014,
-        "sourceHash": "5e604cc838e3f9b8fe36d5bfca7e84717fabc2a1fcc019dc7e08ef35abcfa63c"
+        "sourceHash": "de399b7539690b566da50ce46c69cb534a4805a0c5733a4f3eff815879a764d5"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -721,7 +754,7 @@
   },
   {
     "id": "P62D-ITP-M-033",
-    "q": "Using TRD-02, how many thousand avocados are exported at Pw = $10?",
+    "q": "Using the displayed trade graph, how many thousand avocados are exported at Pw = $10?",
     "options": [
       "75 thousand",
       "100 thousand",
@@ -747,7 +780,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "714c0c4a6efc3f92fea355ed5dce2a4e8b198ee76645ac71cb532f8735041f83",
+    "sourceHash": "7863bab7bcd897e80bad70bd619baccac2f6b4dcf75a0c12a5b9dc814a381c28",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -757,7 +790,7 @@
         "routeKey": "export_quantity",
         "sourceRecordOrder": 15,
         "sourceId": 716015,
-        "sourceHash": "714c0c4a6efc3f92fea355ed5dce2a4e8b198ee76645ac71cb532f8735041f83"
+        "sourceHash": "7863bab7bcd897e80bad70bd619baccac2f6b4dcf75a0c12a5b9dc814a381c28"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -769,7 +802,7 @@
   },
   {
     "id": "P62D-ITP-M-034",
-    "q": "Why does TRD-02 show exports when trade opens at Pw = $10?",
+    "q": "Why does the displayed trade graph show exports when trade opens at Pw = $10?",
     "options": [
       "The world price is above the domestic autarky price",
       "The world price is below the domestic autarky price",
@@ -795,7 +828,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "d8048f62cf5252c794fa78146db32955fc957c0f1cca244d43b48542cc5b2fdc",
+    "sourceHash": "8adb5f3ebdd7a6c74f28bd502bf8a4cdd203c633ecbe4c1a6bff45883caa5b92",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -805,7 +838,7 @@
         "routeKey": "world_price",
         "sourceRecordOrder": 16,
         "sourceId": 716016,
-        "sourceHash": "d8048f62cf5252c794fa78146db32955fc957c0f1cca244d43b48542cc5b2fdc"
+        "sourceHash": "8adb5f3ebdd7a6c74f28bd502bf8a4cdd203c633ecbe4c1a6bff45883caa5b92"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -817,7 +850,7 @@
   },
   {
     "id": "P62D-ITP-H-033",
-    "q": "Relative to autarky in TRD-02, how do domestic production and consumption change after trade opens at $10?",
+    "q": "When the exporting market opens at the shown world price, how do domestic output and domestic purchases change from autarky?",
     "options": [
       "Production falls by 75 thousand and consumption rises by 75 thousand",
       "Production rises by 75 thousand and consumption falls by 75 thousand",
@@ -843,7 +876,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "b32f2c9ad4abdc41b93239d0bd539de4d2bd7c4c3163626d58c44f159c94057e",
+    "sourceHash": "38d9b8147d47d8f1170aa768d26474aed5f7a681fe24bf40a8e3de2d27e67c73",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -853,7 +886,7 @@
         "routeKey": "export_market_graph",
         "sourceRecordOrder": 17,
         "sourceId": 716017,
-        "sourceHash": "b32f2c9ad4abdc41b93239d0bd539de4d2bd7c4c3163626d58c44f159c94057e"
+        "sourceHash": "38d9b8147d47d8f1170aa768d26474aed5f7a681fe24bf40a8e3de2d27e67c73"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -865,7 +898,7 @@
   },
   {
     "id": "P62D-ITP-H-034",
-    "q": "Using TRD-02, producer surplus at Pw = $10 is:",
+    "q": "Using the displayed trade graph, producer surplus at Pw = $10 is:",
     "options": [
       "$612.5 thousand",
       "$200 thousand",
@@ -891,7 +924,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "70c1510cc1cbb5663e93fe9fc6b4365f5f37791c0a275cffb517df82c5d4e9bf",
+    "sourceHash": "8a84f9bf4141a65af2a6146cfea563dcc985c33fe9aec4e87b75f1fdaea07abc",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -901,7 +934,7 @@
         "routeKey": "producer_surplus_trade",
         "sourceRecordOrder": 18,
         "sourceId": 716018,
-        "sourceHash": "70c1510cc1cbb5663e93fe9fc6b4365f5f37791c0a275cffb517df82c5d4e9bf"
+        "sourceHash": "8a84f9bf4141a65af2a6146cfea563dcc985c33fe9aec4e87b75f1fdaea07abc"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -913,7 +946,7 @@
   },
   {
     "id": "P62D-ITP-EL-033",
-    "q": "In TRD-02, consumer surplus falls from $612.5 thousand under autarky to $200 thousand under free trade. What is the consumer loss?",
+    "q": "Measure the reduction in consumer surplus caused by opening this exporting market to trade.",
     "options": [
       "$225 thousand",
       "$637.5 thousand",
@@ -939,7 +972,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "4ef0f4a40af4a6a0db8c553dcbb4bba8d71db9a74afcf666466fdbb0ec3b9ebe",
+    "sourceHash": "f357155dd184356eba2fe314c052fc4b5849dd3b645c07c0c2c65c4aefc64d4c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -949,7 +982,18 @@
         "routeKey": "consumer_surplus_trade",
         "sourceRecordOrder": 19,
         "sourceId": 716019,
-        "sourceHash": "4ef0f4a40af4a6a0db8c553dcbb4bba8d71db9a74afcf666466fdbb0ec3b9ebe"
+        "sourceHash": "f357155dd184356eba2fe314c052fc4b5849dd3b645c07c0c2c65c4aefc64d4c"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "consumer_surplus_trade",
+        "sourceRecordOrder": 40,
+        "sourceId": 716019,
+        "sourceHash": "f357155dd184356eba2fe314c052fc4b5849dd3b645c07c0c2c65c4aefc64d4c",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -961,7 +1005,7 @@
   },
   {
     "id": "P62D-ITP-EL-034",
-    "q": "Using TRD-02, producers gain $637.5 thousand while consumers lose $412.5 thousand. What is the net national gain from trade?",
+    "q": "Using the surplus areas before and after trade opens, what is the net national gain in this exporting market?",
     "options": [
       "$225 thousand",
       "$1,050 thousand",
@@ -987,7 +1031,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "d1449331fbf07907418b3752fe887f90966c4a8bad055617b292db57b4da1f5b",
+    "sourceHash": "6bf620d33690f27b11bdd117744e2078153ea1f92110c66874d3c06783f9f3fb",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -997,7 +1041,18 @@
         "routeKey": "gains_from_trade",
         "sourceRecordOrder": 20,
         "sourceId": 716020,
-        "sourceHash": "d1449331fbf07907418b3752fe887f90966c4a8bad055617b292db57b4da1f5b"
+        "sourceHash": "6bf620d33690f27b11bdd117744e2078153ea1f92110c66874d3c06783f9f3fb"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "gains_from_trade",
+        "sourceRecordOrder": 41,
+        "sourceId": 716020,
+        "sourceHash": "6bf620d33690f27b11bdd117744e2078153ea1f92110c66874d3c06783f9f3fb",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1009,7 +1064,7 @@
   },
   {
     "id": "P62D-ITP-L-093",
-    "q": "Which package correctly summarizes TRD-02 at Pw = $10?",
+    "q": "Which package correctly summarizes the displayed trade graph at Pw = $10?",
     "options": [
       "Qs = 100 thousand, Qd = 250 thousand, imports = 150 thousand",
       "Qs = 250 thousand, Qd = 100 thousand, exports = 150 thousand",
@@ -1035,7 +1090,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "3825e6405b633cea911f8da768b9bc2a6ce02dddf8829d9320725967a4234cec",
+    "sourceHash": "82d4d7c690aeb05c878de3e1dc89d83eee3dcf141f786f3951ffac599f2cef52",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1045,7 +1100,7 @@
         "routeKey": "integrated_trade_analysis",
         "sourceRecordOrder": 21,
         "sourceId": 716021,
-        "sourceHash": "3825e6405b633cea911f8da768b9bc2a6ce02dddf8829d9320725967a4234cec"
+        "sourceHash": "82d4d7c690aeb05c878de3e1dc89d83eee3dcf141f786f3951ffac599f2cef52"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1057,9 +1112,9 @@
   },
   {
     "id": "P62D-ITP-L-094",
-    "q": "What distributional pattern does TRD-02 illustrate when an exporting market opens to trade?",
+    "q": "What distributional pattern does the displayed trade graph illustrate when an exporting market opens to trade?",
     "options": [
-      "Domestic consumers gain while producers lose, with a positive net gain",
+      "Domestic consumers gain while producers lose, with a positive net gain in the displayed market",
       "Both consumers and producers lose because domestic price rises",
       "Domestic producers gain while domestic consumers lose, with a positive net gain",
       "Only foreign buyers gain because exports leave the country"
@@ -1083,7 +1138,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "87781944ddc31df9ab91534803202d3e25c4943bce6c58a1ccf54165701daf8e",
+    "sourceHash": "b3dc69879997f3115906cb1c6c9847110f2ffcc003346bf75dfef261375f0627",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1093,7 +1148,7 @@
         "routeKey": "trade_winners_losers",
         "sourceRecordOrder": 22,
         "sourceId": 716022,
-        "sourceHash": "87781944ddc31df9ab91534803202d3e25c4943bce6c58a1ccf54165701daf8e"
+        "sourceHash": "b3dc69879997f3115906cb1c6c9847110f2ffcc003346bf75dfef261375f0627"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1105,7 +1160,7 @@
   },
   {
     "id": "P62D-ITP-B1-020",
-    "q": "Checkpoint: At Pw = $10 in TRD-02, how is the 150-thousand-unit export quantity calculated?",
+    "q": "Checkpoint: At Pw = $10 in the displayed trade graph, how is the 150-thousand-unit export quantity calculated?",
     "options": [
       "Qd of 250 thousand minus Qs of 100 thousand",
       "Autarky quantity of 175 thousand minus Qd of 100 thousand",
@@ -1131,7 +1186,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easyBoss",
-    "sourceHash": "eb4c5023d57fec1a2eb629a49f4d78a0c3208b81fc9c914f3287812726f033e6",
+    "sourceHash": "6e3182097cd2b013fd05e3ced54bbec57afb6a0ab3203ad1fe9acd2c02027990",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1141,7 +1196,7 @@
         "routeKey": "export_quantity",
         "sourceRecordOrder": 23,
         "sourceId": 716023,
-        "sourceHash": "eb4c5023d57fec1a2eb629a49f4d78a0c3208b81fc9c914f3287812726f033e6"
+        "sourceHash": "6e3182097cd2b013fd05e3ced54bbec57afb6a0ab3203ad1fe9acd2c02027990"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1153,7 +1208,7 @@
   },
   {
     "id": "P62D-ITP-E-037",
-    "q": "In TRD-03, what domestic price results from the $4 world price plus the tariff?",
+    "q": "In the displayed trade graph, what domestic price results from the $4 world price plus the tariff?",
     "options": [
       "$6",
       "$4",
@@ -1179,7 +1234,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "f3b5a81c662a5567339acbdc8ed4933d81e177b8ca2f9e9b33369261445360a8",
+    "sourceHash": "30218ab7b9ddd5f4ad3690a3aa4cb11d1f5a29e2930ef315ec4c5faa1273c937",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1189,7 +1244,7 @@
         "routeKey": "tariff_price_effect",
         "sourceRecordOrder": 24,
         "sourceId": 716024,
-        "sourceHash": "f3b5a81c662a5567339acbdc8ed4933d81e177b8ca2f9e9b33369261445360a8"
+        "sourceHash": "30218ab7b9ddd5f4ad3690a3aa4cb11d1f5a29e2930ef315ec4c5faa1273c937"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1201,7 +1256,7 @@
   },
   {
     "id": "P62D-ITP-E-038",
-    "q": "What is the per-unit tariff shown in TRD-03?",
+    "q": "What is the per-unit tariff shown in the displayed trade graph?",
     "options": [
       "$4",
       "$2",
@@ -1227,7 +1282,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "2cc23c771429af4aafbc8d9a4ac517a24cc99ac176283a2ff922d70232ee9d99",
+    "sourceHash": "75d0e367b57c4782203342e19c86b70a9e164c80f6a50ece7d92b525cc9559fd",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1237,7 +1292,7 @@
         "routeKey": "tariff_price_effect",
         "sourceRecordOrder": 25,
         "sourceId": 716025,
-        "sourceHash": "2cc23c771429af4aafbc8d9a4ac517a24cc99ac176283a2ff922d70232ee9d99"
+        "sourceHash": "75d0e367b57c4782203342e19c86b70a9e164c80f6a50ece7d92b525cc9559fd"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1249,7 +1304,7 @@
   },
   {
     "id": "P62D-ITP-M-035",
-    "q": "At the tariff-inclusive price of $6 in TRD-03, domestic production is:",
+    "q": "At the tariff-inclusive price of $6 in the displayed trade graph, domestic production is:",
     "options": [
       "50 thousand",
       "150 thousand",
@@ -1275,7 +1330,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "8f9cb230c0f99f5ad78b72fdc36a9905b3ad84da08bf2fa26407cbfb2e35152a",
+    "sourceHash": "c19c587dbd1f46de02fdc15172979a366a538a8a095bb4422c947724194b4e2e",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1285,7 +1340,7 @@
         "routeKey": "tariff_quantity_effect",
         "sourceRecordOrder": 26,
         "sourceId": 716026,
-        "sourceHash": "8f9cb230c0f99f5ad78b72fdc36a9905b3ad84da08bf2fa26407cbfb2e35152a"
+        "sourceHash": "c19c587dbd1f46de02fdc15172979a366a538a8a095bb4422c947724194b4e2e"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1297,7 +1352,7 @@
   },
   {
     "id": "P62D-ITP-M-036",
-    "q": "At the tariff-inclusive price of $6 in TRD-03, domestic consumption is:",
+    "q": "Read domestic quantity demanded at the tariff-inclusive price shown. What is it?",
     "options": [
       "100 thousand",
       "150 thousand",
@@ -1323,7 +1378,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "662f0bc9124914e3931682aa2307180c3702de73a6fa5cac0f1e825848128cb3",
+    "sourceHash": "0c0826396992639e6c306bb14e26fd82f622840182c16c124bf2475a3e331b75",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1333,7 +1388,7 @@
         "routeKey": "tariff_quantity_effect",
         "sourceRecordOrder": 27,
         "sourceId": 716027,
-        "sourceHash": "662f0bc9124914e3931682aa2307180c3702de73a6fa5cac0f1e825848128cb3"
+        "sourceHash": "0c0826396992639e6c306bb14e26fd82f622840182c16c124bf2475a3e331b75"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1345,7 +1400,7 @@
   },
   {
     "id": "P62D-ITP-M-037",
-    "q": "After the tariff in TRD-03, imports equal:",
+    "q": "After the tariff in the displayed trade graph, imports equal:",
     "options": [
       "100 thousand",
       "50 thousand",
@@ -1371,7 +1426,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "9b71b477a3f66bca6f95b1408b87fcd1f34c42791384a3de6805b305af35ad9e",
+    "sourceHash": "0891d660f18a4af569d6ae5617c5cf458f4f6eb3142062f617cb747b90a7c565",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1381,7 +1436,7 @@
         "routeKey": "import_quantity",
         "sourceRecordOrder": 28,
         "sourceId": 716028,
-        "sourceHash": "9b71b477a3f66bca6f95b1408b87fcd1f34c42791384a3de6805b305af35ad9e"
+        "sourceHash": "0891d660f18a4af569d6ae5617c5cf458f4f6eb3142062f617cb747b90a7c565"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1393,7 +1448,7 @@
   },
   {
     "id": "P62D-ITP-M-038",
-    "q": "Compared with free trade at Pw = $4, the tariff in TRD-03 reduces imports by:",
+    "q": "Compared with free trade at Pw = $4, the tariff in the displayed trade graph reduces imports by:",
     "options": [
       "50 thousand",
       "100 thousand",
@@ -1419,7 +1474,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "4e4fa5c1e8dcb58b89536633d2674af82196759af525aaa4fab2f2a41391af10",
+    "sourceHash": "ab4e106839f8b41e4fbfb77a20a540c5687d3f0a655dca0bcc6550f6e84b7cfa",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1429,7 +1484,7 @@
         "routeKey": "tariff_quantity_effect",
         "sourceRecordOrder": 29,
         "sourceId": 716029,
-        "sourceHash": "4e4fa5c1e8dcb58b89536633d2674af82196759af525aaa4fab2f2a41391af10"
+        "sourceHash": "ab4e106839f8b41e4fbfb77a20a540c5687d3f0a655dca0bcc6550f6e84b7cfa"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1441,7 +1496,7 @@
   },
   {
     "id": "P62D-ITP-H-035",
-    "q": "Because quantities are measured in thousands, government tariff revenue in TRD-03 is:",
+    "q": "Because quantities are measured in thousands, government tariff revenue in the displayed trade graph is:",
     "options": [
       "$100 thousand",
       "$300 thousand",
@@ -1467,7 +1522,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "6bb4941f1757dc1c3687e6c3f63514b5567cbb177623e8c7c6510fdcdbb39461",
+    "sourceHash": "0e877e6844009a770e0f29a42d2c67aa3843f044fc99d41e4331c2e73bf34a9b",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1477,7 +1532,7 @@
         "routeKey": "tariff_revenue",
         "sourceRecordOrder": 30,
         "sourceId": 716030,
-        "sourceHash": "6bb4941f1757dc1c3687e6c3f63514b5567cbb177623e8c7c6510fdcdbb39461"
+        "sourceHash": "0e877e6844009a770e0f29a42d2c67aa3843f044fc99d41e4331c2e73bf34a9b"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1489,7 +1544,7 @@
   },
   {
     "id": "P62D-ITP-H-036",
-    "q": "The tariff raises domestic production from 50 thousand to 100 thousand. What is the production-distortion loss in TRD-03?",
+    "q": "The tariff raises domestic production from 50 thousand to 100 thousand. What is the production-distortion loss in the displayed trade graph?",
     "options": [
       "$100 thousand",
       "$150 thousand",
@@ -1515,7 +1570,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "e9a9260f7149abf1734ae770ab9c1e5c9ed013e62c06b8c0a54afb10e474d480",
+    "sourceHash": "90c0e26b044ad0ed9e57f2805f2471a85ca74c00daeb3989c952dd9c771ea5fb",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1525,7 +1580,7 @@
         "routeKey": "production_distortion",
         "sourceRecordOrder": 31,
         "sourceId": 716031,
-        "sourceHash": "e9a9260f7149abf1734ae770ab9c1e5c9ed013e62c06b8c0a54afb10e474d480"
+        "sourceHash": "90c0e26b044ad0ed9e57f2805f2471a85ca74c00daeb3989c952dd9c771ea5fb"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1537,7 +1592,7 @@
   },
   {
     "id": "P62D-ITP-H-037",
-    "q": "The tariff reduces domestic consumption from 250 thousand to 200 thousand. What is the consumption-distortion loss in TRD-03?",
+    "q": "The tariff reduces domestic consumption from 250 thousand to 200 thousand. What is the consumption-distortion loss in the displayed trade graph?",
     "options": [
       "$50 thousand",
       "$25 thousand",
@@ -1563,7 +1618,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "b4e029b92c4768c7eaf65d4e34f79ccf850065c9fb41b247460fbd73406b0c70",
+    "sourceHash": "609d9d8df922eda4acfebf1ef66eb9f926981cdb6a4cae2f47aa933d8ca1c318",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1573,7 +1628,7 @@
         "routeKey": "consumption_distortion",
         "sourceRecordOrder": 32,
         "sourceId": 716032,
-        "sourceHash": "b4e029b92c4768c7eaf65d4e34f79ccf850065c9fb41b247460fbd73406b0c70"
+        "sourceHash": "609d9d8df922eda4acfebf1ef66eb9f926981cdb6a4cae2f47aa933d8ca1c318"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1585,7 +1640,7 @@
   },
   {
     "id": "P62D-ITP-H-038",
-    "q": "What is the total deadweight loss created by the tariff in TRD-03?",
+    "q": "What is the total deadweight loss created by the tariff in the displayed trade graph?",
     "options": [
       "$50 thousand",
       "$100 thousand",
@@ -1611,7 +1666,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "bbb1956d53bd46b65100bb9cb16ba76e3742002758ec70f2f970a1062e44d1c8",
+    "sourceHash": "01d9ddb92c61b4d3dbee96926c770575556089f83eeb19d44e6015bdaf6e6f86",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1621,7 +1676,7 @@
         "routeKey": "tariff_welfare_effect",
         "sourceRecordOrder": 33,
         "sourceId": 716033,
-        "sourceHash": "bbb1956d53bd46b65100bb9cb16ba76e3742002758ec70f2f970a1062e44d1c8"
+        "sourceHash": "01d9ddb92c61b4d3dbee96926c770575556089f83eeb19d44e6015bdaf6e6f86"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1633,7 +1688,7 @@
   },
   {
     "id": "P62D-ITP-EL-035",
-    "q": "In TRD-03, consumer surplus falls from $1,250 thousand under free trade to $800 thousand after the tariff. The consumer loss is:",
+    "q": "Using the free-trade and post-tariff markers, calculate the consumer-surplus loss caused by the tariff.",
     "options": [
       "$150 thousand",
       "$200 thousand",
@@ -1659,7 +1714,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "2a7012876dbe1fc2a45de4179a35fa046d09acd7812d8bbae7da67aa1a307eb4",
+    "sourceHash": "09469c4fd6cc4a7a699d4f2b27b49204cbda4906a070a7241de9869bce9fbfb4",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1669,7 +1724,18 @@
         "routeKey": "consumer_surplus_trade",
         "sourceRecordOrder": 34,
         "sourceId": 716034,
-        "sourceHash": "2a7012876dbe1fc2a45de4179a35fa046d09acd7812d8bbae7da67aa1a307eb4"
+        "sourceHash": "09469c4fd6cc4a7a699d4f2b27b49204cbda4906a070a7241de9869bce9fbfb4"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "consumer_surplus_trade",
+        "sourceRecordOrder": 42,
+        "sourceId": 716034,
+        "sourceHash": "09469c4fd6cc4a7a699d4f2b27b49204cbda4906a070a7241de9869bce9fbfb4",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1681,7 +1747,7 @@
   },
   {
     "id": "P62D-ITP-EL-036",
-    "q": "In TRD-03, producer surplus rises from $50 thousand under free trade to $200 thousand after the tariff. The producer gain is:",
+    "q": "Using the free-trade and post-tariff markers, calculate the producer-surplus gain caused by the tariff.",
     "options": [
       "$50 thousand",
       "$200 thousand",
@@ -1707,7 +1773,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "dbe960ac083ee0d6a7a33e8bbf75a3240a241fc681ad4343797f2f9a6c53a1ec",
+    "sourceHash": "85199d7272f24fed5138c25be10c27642dfc7b79cbcd38fd2f346f598a239c72",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1717,7 +1783,18 @@
         "routeKey": "producer_surplus_trade",
         "sourceRecordOrder": 35,
         "sourceId": 716035,
-        "sourceHash": "dbe960ac083ee0d6a7a33e8bbf75a3240a241fc681ad4343797f2f9a6c53a1ec"
+        "sourceHash": "85199d7272f24fed5138c25be10c27642dfc7b79cbcd38fd2f346f598a239c72"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "producer_surplus_trade",
+        "sourceRecordOrder": 43,
+        "sourceId": 716035,
+        "sourceHash": "85199d7272f24fed5138c25be10c27642dfc7b79cbcd38fd2f346f598a239c72",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1729,7 +1806,7 @@
   },
   {
     "id": "P62D-ITP-L-095",
-    "q": "Which welfare package correctly describes the tariff in TRD-03 relative to free trade?",
+    "q": "Which welfare package correctly describes the tariff in the displayed trade graph relative to free trade?",
     "options": [
       "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
       "Consumers lose $200k; producers gain $200k; government gets $100k; net welfare rises $100k",
@@ -1755,7 +1832,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "109454f0ef03b772bc1bf5e6bb805ea2be7d50b6cb6257d22cdbb75d9aca9baf",
+    "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1765,7 +1842,7 @@
         "routeKey": "integrated_trade_analysis",
         "sourceRecordOrder": 36,
         "sourceId": 716036,
-        "sourceHash": "109454f0ef03b772bc1bf5e6bb805ea2be7d50b6cb6257d22cdbb75d9aca9baf"
+        "sourceHash": "4aafa064787ba0e97d6f62894a14627621694b489f426b68eff48b9577fe5d93"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1777,7 +1854,7 @@
   },
   {
     "id": "P62D-ITP-L-096",
-    "q": "TRD-03 shows domestic production rising by 50 thousand and domestic consumption falling by 50 thousand after the tariff. What do those two changes represent?",
+    "q": "Compare domestic production and consumption before and after the tariff. What do the two changes represent?",
     "options": [
       "Two transfers that exactly become government revenue",
       "They are the two deadweight-loss distortions",
@@ -1803,7 +1880,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "87f1d4f33424ae15a9c13bb0f8d9e4761a2d6d125d9381e4cd6382911ac4ad54",
+    "sourceHash": "bb818a90b0a6dbdc6311cc38476bda936021be79aee390c8bc36e8079b860b3c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1813,7 +1890,18 @@
         "routeKey": "tariff_welfare_effect",
         "sourceRecordOrder": 37,
         "sourceId": 716037,
-        "sourceHash": "87f1d4f33424ae15a9c13bb0f8d9e4761a2d6d125d9381e4cd6382911ac4ad54"
+        "sourceHash": "bb818a90b0a6dbdc6311cc38476bda936021be79aee390c8bc36e8079b860b3c"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "tariff_welfare_effect",
+        "sourceRecordOrder": 46,
+        "sourceId": 716037,
+        "sourceHash": "bb818a90b0a6dbdc6311cc38476bda936021be79aee390c8bc36e8079b860b3c",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1825,9 +1913,9 @@
   },
   {
     "id": "P62D-ITP-L-097",
-    "q": "Imports in TRD-03 fall from 200 thousand under free trade to 100 thousand after the tariff. Which statement is economically accurate?",
+    "q": "Compare the free-trade import gap with the post-tariff import gap. Which statement is economically accurate?",
     "options": [
-      "The tariff raises both consumer surplus and total national surplus",
+      "The tariff raises both consumer surplus and total national surplus in the displayed market",
       "The tariff eliminates imports without creating any distortion",
       "The tariff protects domestic producers but reduces total national surplus",
       "The tariff benefits consumers because domestic price rises"
@@ -1851,7 +1939,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "0c6c3ebc4d5f2df60ce3c333cf352e4c3eced65c92b50d75725c1a8341bca095",
+    "sourceHash": "5bc30d591349bd651a1ab6b28b1e7c8d75423e843bfd91f4c2519a9d8b5294f8",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1861,7 +1949,18 @@
         "routeKey": "trade_policy_evaluation",
         "sourceRecordOrder": 38,
         "sourceId": 716038,
-        "sourceHash": "0c6c3ebc4d5f2df60ce3c333cf352e4c3eced65c92b50d75725c1a8341bca095"
+        "sourceHash": "5bc30d591349bd651a1ab6b28b1e7c8d75423e843bfd91f4c2519a9d8b5294f8"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "trade_policy_evaluation",
+        "sourceRecordOrder": 47,
+        "sourceId": 716038,
+        "sourceHash": "5bc30d591349bd651a1ab6b28b1e7c8d75423e843bfd91f4c2519a9d8b5294f8",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1873,7 +1972,7 @@
   },
   {
     "id": "P62D-ITP-B2-037",
-    "q": "Checkpoint: Which complete quantity package is correct after the tariff in TRD-03?",
+    "q": "Checkpoint: Which complete quantity package is correct after the tariff in the displayed trade graph?",
     "options": [
       "Qs = 50 thousand; Qd = 250 thousand; imports = 200 thousand",
       "Qs = 200 thousand; Qd = 100 thousand; exports = 100 thousand",
@@ -1899,7 +1998,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "mediumBoss",
-    "sourceHash": "32899b79c630d38154edec3e776c4236d9857756e539e4fef23ed75cce2a34e4",
+    "sourceHash": "001b0d237520dfbe2eec72d302c6b888ea610cd3005165379e93fbe254af9b11",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1909,7 +2008,7 @@
         "routeKey": "integrated_trade_analysis",
         "sourceRecordOrder": 39,
         "sourceId": 716039,
-        "sourceHash": "32899b79c630d38154edec3e776c4236d9857756e539e4fef23ed75cce2a34e4"
+        "sourceHash": "001b0d237520dfbe2eec72d302c6b888ea610cd3005165379e93fbe254af9b11"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1921,7 +2020,7 @@
   },
   {
     "id": "P62D-ITP-E-039",
-    "q": "In TRD-04, what domestic price results under the import quota?",
+    "q": "In the displayed trade graph, what domestic price results under the import quota?",
     "options": [
       "$6",
       "$3",
@@ -1947,7 +2046,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "a4832637dcb4d9d15933af6400fc6ad1f876b598277cdbb6da46e9b1a1d77082",
+    "sourceHash": "4f2895744e5564dc3131f719c54ab19abe59c1accc267851f13d0ff554ba6c2d",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1957,7 +2056,7 @@
         "routeKey": "quota_quantity_effect",
         "sourceRecordOrder": 40,
         "sourceId": 716040,
-        "sourceHash": "a4832637dcb4d9d15933af6400fc6ad1f876b598277cdbb6da46e9b1a1d77082"
+        "sourceHash": "4f2895744e5564dc3131f719c54ab19abe59c1accc267851f13d0ff554ba6c2d"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -1969,7 +2068,7 @@
   },
   {
     "id": "P62D-ITP-E-040",
-    "q": "What world price is shown in TRD-04?",
+    "q": "What world price is shown in the displayed trade graph?",
     "options": [
       "$6",
       "$3",
@@ -1995,7 +2094,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "easy",
-    "sourceHash": "1238836d94fbebf058ee791a1150f1390db6f7aa453e97920e5b96cd9c51df80",
+    "sourceHash": "e396e6d8a48216b23a6606ff1dc62b002203995d9764a35b4476cecd77990dc0",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2005,7 +2104,7 @@
         "routeKey": "world_price",
         "sourceRecordOrder": 41,
         "sourceId": 716041,
-        "sourceHash": "1238836d94fbebf058ee791a1150f1390db6f7aa453e97920e5b96cd9c51df80"
+        "sourceHash": "e396e6d8a48216b23a6606ff1dc62b002203995d9764a35b4476cecd77990dc0"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2017,7 +2116,7 @@
   },
   {
     "id": "P62D-ITP-M-039",
-    "q": "At the quota-induced domestic price of $6 in TRD-04, domestic producers supply:",
+    "q": "At the quota-induced domestic price of $6 in the displayed trade graph, domestic producers supply:",
     "options": [
       "75 thousand",
       "175 thousand",
@@ -2043,7 +2142,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "c10e9ca044f29cdb0252b86fd9b2d68a05757f7dc79ec84f66c2b7e2af25f3d2",
+    "sourceHash": "af9c1d217a973e858238758fd80c363deeba0762dfb5a6d6cbdf28f7214f747e",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2053,7 +2152,7 @@
         "routeKey": "domestic_production_under_trade",
         "sourceRecordOrder": 42,
         "sourceId": 716042,
-        "sourceHash": "c10e9ca044f29cdb0252b86fd9b2d68a05757f7dc79ec84f66c2b7e2af25f3d2"
+        "sourceHash": "af9c1d217a973e858238758fd80c363deeba0762dfb5a6d6cbdf28f7214f747e"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2065,7 +2164,7 @@
   },
   {
     "id": "P62D-ITP-M-040",
-    "q": "At the quota-induced domestic price of $6 in TRD-04, domestic consumers demand:",
+    "q": "At the quota-induced domestic price of $6 in the displayed trade graph, domestic consumers demand:",
     "options": [
       "150 thousand",
       "175 thousand",
@@ -2091,7 +2190,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "95a189eaf5d0f628fa11630f7ce2be6d1c933a3a45d16daecf07455f7d92ad49",
+    "sourceHash": "f2370f4549c1a1741d5b9081abe2c6aea37f0f5d412994b6fceba61913125ac8",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2101,7 +2200,7 @@
         "routeKey": "domestic_consumption_under_trade",
         "sourceRecordOrder": 43,
         "sourceId": 716043,
-        "sourceHash": "95a189eaf5d0f628fa11630f7ce2be6d1c933a3a45d16daecf07455f7d92ad49"
+        "sourceHash": "f2370f4549c1a1741d5b9081abe2c6aea37f0f5d412994b6fceba61913125ac8"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2113,7 +2212,7 @@
   },
   {
     "id": "P62D-ITP-M-041",
-    "q": "What import quantity is permitted by the quota shown in TRD-04?",
+    "q": "What import quantity is permitted by the quota shown in the displayed trade graph?",
     "options": [
       "50 thousand",
       "75 thousand",
@@ -2139,7 +2238,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "9812ed83973265b178ad4d6990a24ed1c88b5ee9a2da09882a4bf35c6028f5f4",
+    "sourceHash": "6e4a3098fc66833f0c9239a1e2318da32b9d399d71c3ebb694002123c57ad6c5",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2149,7 +2248,7 @@
         "routeKey": "quota_quantity_effect",
         "sourceRecordOrder": 44,
         "sourceId": 716044,
-        "sourceHash": "9812ed83973265b178ad4d6990a24ed1c88b5ee9a2da09882a4bf35c6028f5f4"
+        "sourceHash": "6e4a3098fc66833f0c9239a1e2318da32b9d399d71c3ebb694002123c57ad6c5"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2161,7 +2260,7 @@
   },
   {
     "id": "P62D-ITP-M-042",
-    "q": "What is the per-unit quota rent implied by TRD-04?",
+    "q": "What is the per-unit quota rent implied by the displayed trade graph?",
     "options": [
       "$1 per unit",
       "$3 per unit",
@@ -2187,7 +2286,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "medium",
-    "sourceHash": "74c8436b8d51843af213aaa2f2bd01b0ae9fb1521803981311c127631dfaba57",
+    "sourceHash": "ff1a29f54ddc9db7f8bc2c8b57eb5cb859b5eb06ab7cbd036537d2ba3ff3fc63",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2197,7 +2296,7 @@
         "routeKey": "quota_rent",
         "sourceRecordOrder": 45,
         "sourceId": 716045,
-        "sourceHash": "74c8436b8d51843af213aaa2f2bd01b0ae9fb1521803981311c127631dfaba57"
+        "sourceHash": "ff1a29f54ddc9db7f8bc2c8b57eb5cb859b5eb06ab7cbd036537d2ba3ff3fc63"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2209,7 +2308,7 @@
   },
   {
     "id": "P62D-ITP-H-039",
-    "q": "If domestic license holders receive the quota rents in TRD-04, total quota rents equal:",
+    "q": "If domestic license holders receive the quota rents in the displayed trade graph, total quota rents equal:",
     "options": [
       "$50 thousand",
       "$225 thousand",
@@ -2235,7 +2334,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "c05d39ec4271cc52cbb72a762a10f5f3e0ad49fcb8acaa363b80dddc7f261308",
+    "sourceHash": "007a21eacec19bea06c341fc6c0c9a9a7a6bc4d25db19f1a99af2c4b56ade0b2",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2245,7 +2344,7 @@
         "routeKey": "quota_rent",
         "sourceRecordOrder": 46,
         "sourceId": 716046,
-        "sourceHash": "c05d39ec4271cc52cbb72a762a10f5f3e0ad49fcb8acaa363b80dddc7f261308"
+        "sourceHash": "007a21eacec19bea06c341fc6c0c9a9a7a6bc4d25db19f1a99af2c4b56ade0b2"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2257,7 +2356,7 @@
   },
   {
     "id": "P62D-ITP-H-040",
-    "q": "Free-trade imports at Pw = $3 would be 200 thousand. The quota cuts imports to 50 thousand. By how much do imports fall?",
+    "q": "Compare the free-trade import gap with the quota import gap. By how much do imports fall?",
     "options": [
       "50 thousand",
       "125 thousand",
@@ -2283,7 +2382,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "9f2421ff2931be7dce09f7ac6b31921fcc51931c521d480b5e3aadae538c4f11",
+    "sourceHash": "651b8c3589e918213030c1a6fc5c4f198845837ebcd2d23de98910422bab1997",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2293,7 +2392,18 @@
         "routeKey": "quota_quantity_effect",
         "sourceRecordOrder": 47,
         "sourceId": 716047,
-        "sourceHash": "9f2421ff2931be7dce09f7ac6b31921fcc51931c521d480b5e3aadae538c4f11"
+        "sourceHash": "651b8c3589e918213030c1a6fc5c4f198845837ebcd2d23de98910422bab1997"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "quota_quantity_effect",
+        "sourceRecordOrder": 37,
+        "sourceId": 716047,
+        "sourceHash": "651b8c3589e918213030c1a6fc5c4f198845837ebcd2d23de98910422bab1997",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2305,11 +2415,11 @@
   },
   {
     "id": "P62D-ITP-H-041",
-    "q": "The quota raises domestic production from 75 thousand to 150 thousand. What is the production-distortion loss in TRD-04?",
+    "q": "The quota raises domestic production from 75 thousand to 150 thousand. What is the production-distortion loss in the displayed trade graph?",
     "options": [
       "$112.5 thousand",
       "$75 thousand",
-      "$150 thousand",
+      "$150 thousand in the displayed market",
       "$225 thousand"
     ],
     "tag": "international_trade_and_trade_policy",
@@ -2331,7 +2441,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "0c93e0f1a9141ce8406dc540961090930bd8db0aa6b64702c837a9deeb6431d3",
+    "sourceHash": "58a16b7516065523d23b8342696c19b7f57ceee33df129f8d4894daa100d57a2",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2341,7 +2451,7 @@
         "routeKey": "production_distortion",
         "sourceRecordOrder": 48,
         "sourceId": 716048,
-        "sourceHash": "0c93e0f1a9141ce8406dc540961090930bd8db0aa6b64702c837a9deeb6431d3"
+        "sourceHash": "58a16b7516065523d23b8342696c19b7f57ceee33df129f8d4894daa100d57a2"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2353,11 +2463,11 @@
   },
   {
     "id": "P62D-ITP-H-042",
-    "q": "The quota reduces domestic consumption from 275 thousand to 200 thousand. What is the consumption-distortion loss in TRD-04?",
+    "q": "Use the quota graph to calculate the consumption-distortion triangle.",
     "options": [
       "$50 thousand",
       "$112.5 thousand",
-      "$150 thousand",
+      "$150 thousand in the displayed market",
       "$225 thousand"
     ],
     "tag": "international_trade_and_trade_policy",
@@ -2379,7 +2489,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "hard",
-    "sourceHash": "6488559386b91d791bce955266707e9ba07c3f4f5f1615d2a539de966352efa6",
+    "sourceHash": "5e78326aaae6a90ad4197ebe9eb3cf79fc7ca52afc8671f681e2d3e0d637ddde",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2389,7 +2499,7 @@
         "routeKey": "consumption_distortion",
         "sourceRecordOrder": 49,
         "sourceId": 716049,
-        "sourceHash": "6488559386b91d791bce955266707e9ba07c3f4f5f1615d2a539de966352efa6"
+        "sourceHash": "5e78326aaae6a90ad4197ebe9eb3cf79fc7ca52afc8671f681e2d3e0d637ddde"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2401,7 +2511,7 @@
   },
   {
     "id": "P62D-ITP-EL-037",
-    "q": "Assuming quota rents remain domestic, what total deadweight loss is shown by TRD-04?",
+    "q": "Assuming quota rents remain domestic, what total deadweight loss is shown by the displayed trade graph?",
     "options": [
       "$112.5 thousand",
       "$150 thousand",
@@ -2427,7 +2537,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "6fe2e6b685e93f36739b0764e18f41237b8132937b9de7f42cd1c3073a49d9d5",
+    "sourceHash": "1ac396ffcfd21a724ac5920a8773a0a09301430672a4cf1dbba10f6e396237c5",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2437,7 +2547,7 @@
         "routeKey": "tariff_welfare_effect",
         "sourceRecordOrder": 50,
         "sourceId": 716050,
-        "sourceHash": "6fe2e6b685e93f36739b0764e18f41237b8132937b9de7f42cd1c3073a49d9d5"
+        "sourceHash": "1ac396ffcfd21a724ac5920a8773a0a09301430672a4cf1dbba10f6e396237c5"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2449,7 +2559,7 @@
   },
   {
     "id": "P62D-ITP-EL-038",
-    "q": "In TRD-04, consumer surplus falls from $1,512.5 thousand under free trade to $800 thousand under the quota. The consumer loss is:",
+    "q": "Using the world-price and quota-price outcomes, calculate the consumer-surplus loss caused by the quota.",
     "options": [
       "$337.5 thousand",
       "$562.5 thousand",
@@ -2475,7 +2585,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "elite",
-    "sourceHash": "2a458bd4f302a8e83d76fa9271580b286c2b7dcdc5857fef3faa5f63b7bd143a",
+    "sourceHash": "acbf3d1f1a7854cd8a546fba4954a536a6281855e9c460b2ab5838d51f41b716",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2485,7 +2595,18 @@
         "routeKey": "consumer_surplus_trade",
         "sourceRecordOrder": 51,
         "sourceId": 716051,
-        "sourceHash": "2a458bd4f302a8e83d76fa9271580b286c2b7dcdc5857fef3faa5f63b7bd143a"
+        "sourceHash": "acbf3d1f1a7854cd8a546fba4954a536a6281855e9c460b2ab5838d51f41b716"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "consumer_surplus_trade",
+        "sourceRecordOrder": 44,
+        "sourceId": 716051,
+        "sourceHash": "acbf3d1f1a7854cd8a546fba4954a536a6281855e9c460b2ab5838d51f41b716",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2497,7 +2618,7 @@
   },
   {
     "id": "P62D-ITP-L-098",
-    "q": "Assuming domestic license holders receive the rents, which welfare package correctly describes TRD-04 relative to free trade?",
+    "q": "Assuming domestic license holders receive the rents, which welfare package correctly describes the displayed trade graph relative to free trade?",
     "options": [
       "Consumers lose $712.5k; producers gain $337.5k; quota rents are $150k; net welfare falls $225k",
       "Consumers lose $337.5k; producers gain $712.5k; quota rents are $150k; net welfare rises $525k",
@@ -2523,7 +2644,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "cc98208cb96a4b39ef42fe31a6be01b8e82e409d5ff387d6e1118c1bd5823d6d",
+    "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2533,7 +2654,7 @@
         "routeKey": "integrated_trade_analysis",
         "sourceRecordOrder": 52,
         "sourceId": 716052,
-        "sourceHash": "cc98208cb96a4b39ef42fe31a6be01b8e82e409d5ff387d6e1118c1bd5823d6d"
+        "sourceHash": "4647c9c036060dc4369945630f209241ac4621e0848ec6c9a2aeaba8ccf5d04c"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2545,7 +2666,7 @@
   },
   {
     "id": "P62D-ITP-L-099",
-    "q": "If the $150 thousand of quota rents in TRD-04 went to foreign exporters instead of domestic license holders, what would happen to domestic national welfare?",
+    "q": "Calculate the quota rents from the price wedge and remaining imports. If foreign exporters received those rents, what would happen to domestic national welfare?",
     "options": [
       "The national loss would be $150 thousand smaller",
       "The national loss would be $150 thousand larger",
@@ -2571,7 +2692,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "4dc72e1cf014d06984a9d6ebf083e78ada11a30ef12dd157b6e2db517612356b",
+    "sourceHash": "95c67be21cfb83196798a95e48d11a94eb1c96dff78e2e323cf58d489017ad09",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2581,7 +2702,18 @@
         "routeKey": "quota_rent",
         "sourceRecordOrder": 53,
         "sourceId": 716053,
-        "sourceHash": "4dc72e1cf014d06984a9d6ebf083e78ada11a30ef12dd157b6e2db517612356b"
+        "sourceHash": "95c67be21cfb83196798a95e48d11a94eb1c96dff78e2e323cf58d489017ad09"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "quota_rent",
+        "sourceRecordOrder": 48,
+        "sourceId": 716053,
+        "sourceHash": "95c67be21cfb83196798a95e48d11a94eb1c96dff78e2e323cf58d489017ad09",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2593,12 +2725,12 @@
   },
   {
     "id": "P62D-ITP-L-100",
-    "q": "TRD-04 raises domestic price from $3 to $6, expands domestic production, and reduces domestic consumption. Which interpretation is correct?",
+    "q": "Compare the free-trade and quota outcomes. Which interpretation of production, consumption, and welfare is correct?",
     "options": [
       "The quota raises efficiency because imports fall",
       "The quota benefits consumers because domestic price rises",
       "It protects producers but creates production and consumption distortions",
-      "The quota eliminates all welfare losses if rents are domestic"
+      "The quota eliminates all welfare losses if rents are domestic in the displayed market"
     ],
     "tag": "international_trade_and_trade_policy",
     "type": "synthesis",
@@ -2619,7 +2751,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "d4f0caf6b034c80f67ea0f78dc81902949f03ca62b6b96f3c4ed70defcfa4669",
+    "sourceHash": "39f36d08d17a4b882cbec29726ae2f7b026303e4a3d20bac229286dabcefc213",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2629,7 +2761,18 @@
         "routeKey": "trade_policy_evaluation",
         "sourceRecordOrder": 54,
         "sourceId": 716054,
-        "sourceHash": "d4f0caf6b034c80f67ea0f78dc81902949f03ca62b6b96f3c4ed70defcfa4669"
+        "sourceHash": "39f36d08d17a4b882cbec29726ae2f7b026303e4a3d20bac229286dabcefc213"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "trade_policy_evaluation",
+        "sourceRecordOrder": 49,
+        "sourceId": 716054,
+        "sourceHash": "39f36d08d17a4b882cbec29726ae2f7b026303e4a3d20bac229286dabcefc213",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",
@@ -2641,7 +2784,7 @@
   },
   {
     "id": "P62D-ITP-B3-055",
-    "q": "Checkpoint: Which complete quantity package is correct under the quota in TRD-04?",
+    "q": "Checkpoint: Which complete quantity package is correct under the quota in the displayed trade graph?",
     "options": [
       "Qs = 75 thousand; Qd = 275 thousand; imports = 200 thousand",
       "Qs = 200 thousand; Qd = 150 thousand; exports = 50 thousand",
@@ -2667,7 +2810,7 @@
       "international-trade-and-trade-policy"
     ],
     "sourcePool": "finalBoss",
-    "sourceHash": "477b0a3f9d69b62e4eb19614d5d3e899a6b93f1eb0c4abb8cf1dede9b895a819",
+    "sourceHash": "b87496818ab66a1a0ace29872e050fe6f3523a6cf768bdf95d3697e9ee99b117",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2677,7 +2820,7 @@
         "routeKey": "integrated_trade_analysis",
         "sourceRecordOrder": 55,
         "sourceId": 716055,
-        "sourceHash": "477b0a3f9d69b62e4eb19614d5d3e899a6b93f1eb0c4abb8cf1dede9b895a819"
+        "sourceHash": "b87496818ab66a1a0ace29872e050fe6f3523a6cf768bdf95d3697e9ee99b117"
       }
     ],
     "primaryConceptId": "international-trade-and-trade-policy",

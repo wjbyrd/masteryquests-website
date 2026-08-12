@@ -1,0 +1,3506 @@
+[
+  {
+    "id": "P62C-CPS-M-009",
+    "sourceGame": "micro-concept-library",
+    "q": "Read the displayed balanced market graph. What is consumer surplus at the competitive equilibrium?",
+    "options": [
+      "$16",
+      "$64",
+      "$32",
+      "$80"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The relevant area equals $32.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "f2011dae707ee9b1141a0de1147a115f9c05e41022d8c363087de560734e87c7",
+    "canonicalId": "P62C-CPS-M-009",
+    "sourceId": 660108,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "664606d5edb81a425e7f0205c782537b5b672262bdff232ba950c2ea830784d7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 8,
+        "sourceId": 660108,
+        "sourceHash": "664606d5edb81a425e7f0205c782537b5b672262bdff232ba950c2ea830784d7"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-010",
+    "sourceGame": "micro-concept-library",
+    "q": "For the balanced equilibrium, calculate the area below price and above supply.",
+    "options": [
+      "$16",
+      "$64",
+      "$80",
+      "$32"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "The relevant area equals $32.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "f2011dae707ee9b1141a0de1147a115f9c05e41022d8c363087de560734e87c7",
+    "canonicalId": "P62C-CPS-M-010",
+    "sourceId": 660109,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "2c709b63e397860597e8b915abb3ff87ac9147c8833a927c2addb7bc6aac2207",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 9,
+        "sourceId": 660109,
+        "sourceHash": "2c709b63e397860597e8b915abb3ff87ac9147c8833a927c2addb7bc6aac2207"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-011",
+    "sourceGame": "micro-concept-library",
+    "q": "Combine the two surplus regions in the balanced graph. What total surplus results?",
+    "options": [
+      "$64",
+      "$32",
+      "$128",
+      "$80"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The relevant area equals $64.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "657e55525740d5d53c85d72ee279dca4c0ade061e016fe1432638f9304efcb18",
+    "canonicalId": "P62C-CPS-M-011",
+    "sourceId": 660110,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "47a047dee70f1928a0929a2b222900413824a383afb7a2ef4badaad27ceba0ba",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 10,
+        "sourceId": 660110,
+        "sourceHash": "47a047dee70f1928a0929a2b222900413824a383afb7a2ef4badaad27ceba0ba"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-012",
+    "sourceGame": "micro-concept-library",
+    "q": "For the asymmetric equilibrium, calculate the area above price and below demand.",
+    "options": [
+      "$32",
+      "$64",
+      "$128",
+      "$112"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The relevant area equals $64.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "657e55525740d5d53c85d72ee279dca4c0ade061e016fe1432638f9304efcb18",
+    "canonicalId": "P62C-CPS-M-012",
+    "sourceId": 660111,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "8a6b9009e403d4d930efaeb56f9da0887f5e04de9b61ede4fab9c3cb436c416d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 11,
+        "sourceId": 660111,
+        "sourceHash": "8a6b9009e403d4d930efaeb56f9da0887f5e04de9b61ede4fab9c3cb436c416d"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-013",
+    "sourceGame": "micro-concept-library",
+    "q": "How large is the seller-side surplus triangle at the asymmetric equilibrium?",
+    "options": [
+      "$16",
+      "$64",
+      "$32",
+      "$112"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "The relevant area equals $32.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "f2011dae707ee9b1141a0de1147a115f9c05e41022d8c363087de560734e87c7",
+    "canonicalId": "P62C-CPS-M-013",
+    "sourceId": 660112,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "56ceff3ead0163eebac1b0cc34180a59e16c3c1cd61d14d728a60f71d1a28c9a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 12,
+        "sourceId": 660112,
+        "sourceHash": "56ceff3ead0163eebac1b0cc34180a59e16c3c1cd61d14d728a60f71d1a28c9a"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-014",
+    "sourceGame": "micro-concept-library",
+    "q": "Add consumer and producer surplus in the compact equilibrium graph.",
+    "options": [
+      "$25",
+      "$100",
+      "$70",
+      "$50"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The relevant area equals $50.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd",
+    "canonicalId": "P62C-CPS-M-014",
+    "sourceId": 660113,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "f79d6ec4832288c285f5e3b4379bbeca8e4ef9f0a279707e838ee3d2ddc2d715",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 13,
+        "sourceId": 660113,
+        "sourceHash": "f79d6ec4832288c285f5e3b4379bbeca8e4ef9f0a279707e838ee3d2ddc2d715"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-029",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Why is E efficient under the standard assumptions?",
+    "options": [
+      "Every buyer gets equal surplus",
+      "Every seller gets equal surplus",
+      "The value of the last unit equals its cost",
+      "The price is the highest possible in the displayed market"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_interpretation",
+    "objective": "CPS.3",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "market_efficiency",
+    "secondarySkills": [],
+    "repairSkill": "market_efficiency",
+    "commonError": "equates_efficiency_with_fairness",
+    "feedback": "Demand and supply meet at equal marginal value and cost.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "a23eb26d343893d7316ba01f16777fb50106107f363192603cf8c64130d547af",
+    "canonicalId": "P62C-CPS-M-029",
+    "sourceId": 660128,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "ad80d0adb835d45db00bd5598575ecf4514acb4c0f6ea18b1fc546aeffb4f9da",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "market_efficiency",
+        "sourceRecordOrder": 28,
+        "sourceId": 660128,
+        "sourceHash": "ad80d0adb835d45db00bd5598575ecf4514acb4c0f6ea18b1fc546aeffb4f9da"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-M-030",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Which area is buyer expenditure at equilibrium?",
+    "options": [
+      "The triangle above price",
+      "The triangle below price",
+      "The entire area between demand and supply",
+      "The rectangle with height $10 and width 8"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_interpretation",
+    "objective": "CPS.2",
+    "difficulty": "medium",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "Expenditure is price times quantity.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "debb5782ba56ad0d797310336710e0ed640dc41a5bcf833fb3eb7a87a60ef21b",
+    "canonicalId": "P62C-CPS-M-030",
+    "sourceId": 660129,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "medium",
+    "sourceHash": "d7594d09f53e3aad3e78859c216cb1b334af75970fbfe6f724d85e825ce330dd",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "medium",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 29,
+        "sourceId": 660129,
+        "sourceHash": "d7594d09f53e3aad3e78859c216cb1b334af75970fbfe6f724d85e825ce330dd"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "medium",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-005",
+    "sourceGame": "micro-concept-library",
+    "q": "Which expression correctly calculates consumer surplus in the balanced equilibrium graph?",
+    "options": [
+      "½ × 8 × ($18 − $10)",
+      "8 × $10",
+      "½ × 8 × ($10 − $2) in the displayed market",
+      "½ × 16 × $10"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "Consumer surplus is the triangle above the $10 equilibrium price and below demand through Q = 8.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "fcd2c23aa9547da868ef023580ab370ca40fb64608d32a512cad3dd91cac79d4",
+    "canonicalId": "P62C-CPS-H-005",
+    "sourceId": 660204,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "7598c0a2ad1d64e71d036b99167c28944533cffe77cc810b97eb548c27aae760",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 4,
+        "sourceId": 660204,
+        "sourceHash": "7598c0a2ad1d64e71d036b99167c28944533cffe77cc810b97eb548c27aae760"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-006",
+    "sourceGame": "micro-concept-library",
+    "q": "Which expression correctly calculates producer surplus in the asymmetric equilibrium graph?",
+    "options": [
+      "½ × 8 × ($14 − $6)",
+      "8 × $14",
+      "½ × 8 × ($30 − $14)",
+      "½ × 14 × $8"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Producer surplus is the triangle below the $14 equilibrium price and above supply through Q = 8.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "ec865766b96933b28508714f21bd62644b62176e91a67207982065b58df1fbfc",
+    "canonicalId": "P62C-CPS-H-006",
+    "sourceId": 660205,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "ec3ead62b9bb24c1d5aae00f1753ba9cea3f80f96d6b8fb483c10e275dcedc4e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 5,
+        "sourceId": 660205,
+        "sourceHash": "ec3ead62b9bb24c1d5aae00f1753ba9cea3f80f96d6b8fb483c10e275dcedc4e"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-007",
+    "sourceGame": "micro-concept-library",
+    "q": "Which price-and-quantity pair identifies the competitive equilibrium in the compact market graph?",
+    "options": [
+      "$14 and 5 units",
+      "$18 and 5 units",
+      "$14 and 8 units",
+      "$24 and 5 units"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The demand and supply curves cross at E, where price is $14 and quantity is 5.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "4bf47056d7435b96709aa590a0aef8de8bc700fa0f84ba00b141318e120e8472",
+    "canonicalId": "P62C-CPS-H-007",
+    "sourceId": 660206,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "607f60b7566f6493dea43f325e9b6cf7bb42ef04aa6a1873947af8ae535194f0",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 6,
+        "sourceId": 660206,
+        "sourceHash": "607f60b7566f6493dea43f325e9b6cf7bb42ef04aa6a1873947af8ae535194f0"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-008",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Output is limited to 6 units. What is true about units 7 and 8?",
+    "options": [
+      "Their cost exceeds value, so omitting them raises surplus, using the information provided in the stem",
+      "Their marginal value exceeds marginal cost, so omitting them loses $4 of total surplus",
+      "They transfer $4 from producers to consumers, for the participants described in the market",
+      "No loss can be measured, under the assumptions stated in the question"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_integration",
+    "objective": "CPS.4",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "Between Q=6 and Q=8, demand lies above supply; the missing triangle is $4.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+    "aHash": "a6c81da091501f62e42529a6c360500b112930432bf7752faad35e398521c5a6",
+    "canonicalId": "P62C-CPS-H-008",
+    "sourceId": 660207,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "79510931a67c638e454c668c43e55afdf4ad61736680da54a4aabd95996fba52",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 7,
+        "sourceId": 660207,
+        "sourceHash": "79510931a67c638e454c668c43e55afdf4ad61736680da54a4aabd95996fba52"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-009",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Output is pushed to 10 units. What is true about units 9 and 10?",
+    "options": [
+      "Their value exceeds cost, so they add $4, within the standard surplus framework",
+      "They transfer $4 from consumers to producers, for the participants described in the market",
+      "Their marginal cost exceeds value, so producing them destroys $4 of total surplus",
+      "More output is always efficient, for the market described in the scenario"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_integration",
+    "objective": "CPS.4",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "Between Q=8 and Q=10, supply lies above demand; the excess-cost triangle is $4.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+    "aHash": "a9712ed877372fa3da9d5d877c4eb546b19c5071fb020225eb3b8647fb248a98",
+    "canonicalId": "P62C-CPS-H-009",
+    "sourceId": 660208,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "2021488ec9c5035f9835681dbc2d4c8e881428ad21111a7770d214b4835b4e31",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 8,
+        "sourceId": 660208,
+        "sourceHash": "2021488ec9c5035f9835681dbc2d4c8e881428ad21111a7770d214b4835b4e31"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-018",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Demand shifts from D1 to D2. Which statement is correct?",
+    "options": [
+      "Producer surplus falls to zero, for the market described in the scenario in the displayed market",
+      "Total surplus stays $64, after applying the relevant surplus definition",
+      "Quantity remains 8, using the information provided in the stem",
+      "Consumer surplus, producer surplus, and total surplus all rise; total surplus becomes $100"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_integration",
+    "objective": "CPS.4",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The new equilibrium has two $50 surplus triangles.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
+    "aHash": "3784170e8b9aa4e26e9bc30ef00cc357435356243d37029a76548a482ebbd5c3",
+    "canonicalId": "P62C-CPS-H-018",
+    "sourceId": 660217,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "34be7cf5990a5a1d70ceaafdbdaf0c3e725364adcd99206b80b31ac4ae54d909",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 17,
+        "sourceId": 660217,
+        "sourceHash": "34be7cf5990a5a1d70ceaafdbdaf0c3e725364adcd99206b80b31ac4ae54d909"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-019",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Supply shifts from S1 to S2. Which statement is correct?",
+    "options": [
+      "Consumer surplus, producer surplus, and total surplus all fall; total surplus becomes $36",
+      "Consumer surplus rises because price rises, using the information provided in the stem in the displayed market",
+      "Producer surplus rises because price rises, within the standard surplus framework",
+      "Total surplus stays $64, for the participants described in the market"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_integration",
+    "objective": "CPS.4",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Higher marginal cost reduces quantity and both surplus areas.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
+    "aHash": "8af02ddf033fedbaf4fbfdefade762ad7ac8f52a606e7af0a8a77308d4a4ff2d",
+    "canonicalId": "P62C-CPS-H-019",
+    "sourceId": 660218,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "20c2dd561a651bd40ab1b9c6692e2cc8f90b6e2cdab0e2000fde0a4f6c04ba1a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 18,
+        "sourceId": 660218,
+        "sourceHash": "20c2dd561a651bd40ab1b9c6692e2cc8f90b6e2cdab0e2000fde0a4f6c04ba1a"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-020",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the step-demand graph. At price $10, how many buyers purchase and what is total consumer surplus?",
+    "options": [
+      "2 buyers and $13",
+      "3 buyers and $15",
+      "4 buyers and $20",
+      "5 buyers and $10"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_integration",
+    "objective": "CPS.2",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_discrete",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_discrete",
+    "commonError": "adds_price_instead_of_subtracting_it",
+    "feedback": "The $18, $15, and $12 buyers receive $8, $5, and $2.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_step_buyers.webp",
+    "aHash": "42438a121f420fbc93034d00a136506dfe6f5b73ef994ca60718f206a0c4dddb",
+    "canonicalId": "P62C-CPS-H-020",
+    "sourceId": 660219,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "d9137ea7cfbd06eafd20c99ed42b7bd4673fed9335de20059fbb2081ad6d9c3a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "consumer_surplus_discrete",
+        "sourceRecordOrder": 19,
+        "sourceId": 660219,
+        "sourceHash": "d9137ea7cfbd06eafd20c99ed42b7bd4673fed9335de20059fbb2081ad6d9c3a"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-021",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the step-supply graph. At price $10, how many sellers participate and what is total producer surplus?",
+    "options": [
+      "2 sellers and $11",
+      "4 sellers and $14",
+      "3 sellers and $12",
+      "5 sellers and $10"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_integration",
+    "objective": "CPS.2",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_discrete",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_discrete",
+    "commonError": "subtracts_price_from_cost",
+    "feedback": "The $3, $6, and $9 sellers receive $7, $4, and $1.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_step_sellers.webp",
+    "aHash": "bd67d36d95ed9412850ab4012eb80d34a48bbc4563d05d7e17ddeef938e2daf0",
+    "canonicalId": "P62C-CPS-H-021",
+    "sourceId": 660220,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "5e3543e8c3b8f2fdf8656d8e4f3cd4197e1be639df66a30f31dacf16275868a0",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "producer_surplus_discrete",
+        "sourceRecordOrder": 20,
+        "sourceId": 660220,
+        "sourceHash": "5e3543e8c3b8f2fdf8656d8e4f3cd4197e1be639df66a30f31dacf16275868a0"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-EL-017",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Why is producer surplus zero even though firms receive revenue?",
+    "options": [
+      "Price equals marginal cost on every traded unit",
+      "Demand slopes downward",
+      "Quantity is positive",
+      "Consumer surplus absorbs revenue in the displayed market"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_analysis",
+    "objective": "CPS.2",
+    "difficulty": "elite",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Every unit has cost equal to price.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+    "aHash": "bf5c913ce8b9a3a5b60cd36be3ce03404b2c0acfe4f7c20c5410d73a47d8be77",
+    "canonicalId": "P62C-CPS-EL-017",
+    "sourceId": 660316,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "2d256018fea82662b1025ef9ab84f199080be71c6f3fd66362ebd92deec432cd",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 16,
+        "sourceId": 660316,
+        "sourceHash": "2d256018fea82662b1025ef9ab84f199080be71c6f3fd66362ebd92deec432cd"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-EL-018",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. What is total surplus and who receives it?",
+    "options": [
+      "$72, all as producer surplus",
+      "$72, all as consumer surplus",
+      "$36 split equally",
+      "$0"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_analysis",
+    "objective": "CPS.2",
+    "difficulty": "elite",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The consumer-surplus triangle is $72 and producer surplus is zero.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+    "aHash": "fc1336162e09a9045b6dae395bdadb912c9ec8d855d4622f2d60b60ba1bc3364",
+    "canonicalId": "P62C-CPS-EL-018",
+    "sourceId": 660317,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "elite",
+    "sourceHash": "6cefa2cadb11855fd1ddddc6aaf0eb89461e89b4338154283b3a9d633e27d484",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "elite",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 17,
+        "sourceId": 660317,
+        "sourceHash": "6cefa2cadb11855fd1ddddc6aaf0eb89461e89b4338154283b3a9d633e27d484"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "elite",
+    "canonicalDifficulty": "elite",
+    "originalSourcePool": "elite",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-017",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the balanced equilibrium graph, what is buyers’ total willingness to pay for the 8 units traded?",
+    "options": [
+      "$112",
+      "$80 in the displayed market",
+      "$64",
+      "$48"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [
+      "market_efficiency"
+    ],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "selects_area_below_price",
+    "feedback": "Total willingness to pay is the area under demand through Q = 8: expenditure $80 plus consumer surplus $32 = $112.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "a606ea52767922a9ad5c87ef0bc4cdf86356ad43b9a4e2e3b531978689d1131c",
+    "canonicalId": "P62C-CPS-L-017",
+    "sourceId": 661016,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "32ce45aa4c10f6bd2f88a001c93231c0efa43ecf6f7d977c92b49eadd5224f1a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 16,
+        "sourceId": 661016,
+        "sourceHash": "32ce45aa4c10f6bd2f88a001c93231c0efa43ecf6f7d977c92b49eadd5224f1a"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-018",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the balanced equilibrium graph, what is sellers’ total production cost for the 8 units traded?",
+    "options": [
+      "$48",
+      "$80",
+      "$32",
+      "$112"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [
+      "market_efficiency"
+    ],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Seller revenue is $80 and producer surplus is $32, so total production cost is $48.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "4053c77c1adba0f4d721c42965df34a8925b97e4e70abdc7ca7041385129f8dd",
+    "canonicalId": "P62C-CPS-L-018",
+    "sourceId": 661017,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "7b63c6306e0c8a2708d3b44edb62d918cf8f524aa633d1e2aa7a0409ef5c3b1e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 17,
+        "sourceId": 661017,
+        "sourceHash": "7b63c6306e0c8a2708d3b44edb62d918cf8f524aa633d1e2aa7a0409ef5c3b1e"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-019",
+    "sourceGame": "micro-concept-library",
+    "q": "At the balanced competitive equilibrium, what share of total surplus goes to consumers?",
+    "options": [
+      "50 percent",
+      "25 percent",
+      "75 percent",
+      "100 percent"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [
+      "consumer_surplus_graph_area",
+      "producer_surplus_graph_area"
+    ],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Consumer surplus and producer surplus are each $32, so consumers receive half of the $64 total surplus.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "3802c22072dab9dd9c440e3d0eaf49ef874dbfc7818cc7170a18c456af3759d0",
+    "canonicalId": "P62C-CPS-L-019",
+    "sourceId": 661018,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "e53d17ede32c0f3232ac8caf0642fdb56d8625be9754da0d3086420d32fc3ff9",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 18,
+        "sourceId": 661018,
+        "sourceHash": "e53d17ede32c0f3232ac8caf0642fdb56d8625be9754da0d3086420d32fc3ff9"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-020",
+    "sourceGame": "micro-concept-library",
+    "q": "In the balanced market graph, why is Q = 8 the efficient quantity under the standard competitive assumptions?",
+    "options": [
+      "Consumer and producer surplus must be numerically equal there in the displayed market",
+      "Every buyer and seller earns positive surplus there",
+      "The market price is the fairest possible price there",
+      "The marginal buyer’s value equals the marginal seller’s cost there"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.3",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "market_efficiency",
+    "secondarySkills": [
+      "efficient_quantity"
+    ],
+    "repairSkill": "market_efficiency",
+    "commonError": "equates_efficiency_with_fairness",
+    "feedback": "At the efficient quantity, marginal willingness to pay equals marginal cost. Equality of consumer and producer surplus is not required.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "0b7fe663b4e9d2417124f6f4e08658fe76532768adfbf88c9044ffec7b9e76d6",
+    "canonicalId": "P62C-CPS-L-020",
+    "sourceId": 661019,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "1303d672f2f43039b739fe2b1c4abf92a6d8e7c5f26caf1783e2fd44e78c4710",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "market_efficiency",
+        "sourceRecordOrder": 19,
+        "sourceId": 661019,
+        "sourceHash": "1303d672f2f43039b739fe2b1c4abf92a6d8e7c5f26caf1783e2fd44e78c4710"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-021",
+    "sourceGame": "micro-concept-library",
+    "q": "At the asymmetric competitive equilibrium, what is total buyer expenditure?",
+    "options": [
+      "$112",
+      "$64",
+      "$96",
+      "$176"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [
+      "market_efficiency"
+    ],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "Equilibrium price is $14 and quantity is 8, so buyer expenditure is $112.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "a606ea52767922a9ad5c87ef0bc4cdf86356ad43b9a4e2e3b531978689d1131c",
+    "canonicalId": "P62C-CPS-L-021",
+    "sourceId": 661020,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "e8f9d28cbff37c50d956a5ac8105032ad0877e7cf7574e3eba5a906575b3ef8e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 20,
+        "sourceId": 661020,
+        "sourceHash": "e8f9d28cbff37c50d956a5ac8105032ad0877e7cf7574e3eba5a906575b3ef8e"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-022",
+    "sourceGame": "micro-concept-library",
+    "q": "Subtract producer surplus from seller revenue in the asymmetric equilibrium. What total production cost remains?",
+    "options": [
+      "$80",
+      "$112",
+      "$32",
+      "$176"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [
+      "market_efficiency"
+    ],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Seller revenue is $112 and producer surplus is $32, leaving $80 as total production cost.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "c35e030d43dd5689c26066121105c93bea449aa09fa4bd30026c23f80c227cc5",
+    "canonicalId": "P62C-CPS-L-022",
+    "sourceId": 661021,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "49e9feaba32f7d3812d9df641810e624ff9691914cf59a4dd05d48b18721b93d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 21,
+        "sourceId": 661021,
+        "sourceHash": "49e9feaba32f7d3812d9df641810e624ff9691914cf59a4dd05d48b18721b93d"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-023",
+    "sourceGame": "micro-concept-library",
+    "q": "Using both surplus regions in the asymmetric market graph, what is total surplus at equilibrium?",
+    "options": [
+      "$64",
+      "$32",
+      "$96",
+      "$110"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [
+      "consumer_surplus_graph_area",
+      "producer_surplus_graph_area"
+    ],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Total surplus is consumer surplus plus producer surplus: $64 + $32 = $96.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "c31390f5328cf8be9d2accea0d7e6c0d95d95cfcf96eefbee1324b8567409032",
+    "canonicalId": "P62C-CPS-L-023",
+    "sourceId": 661022,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "3534af2a382fd2e9c7d5f8ea0e6e50c53fe479ac772a2540f9db7c416ef2cfe7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 22,
+        "sourceId": 661022,
+        "sourceHash": "3534af2a382fd2e9c7d5f8ea0e6e50c53fe479ac772a2540f9db7c416ef2cfe7"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-024",
+    "sourceGame": "micro-concept-library",
+    "q": "Why is the quantity at E efficient in the asymmetric graph under the standard competitive assumptions?",
+    "options": [
+      "Consumer and producer surplus must be numerically equal there in the displayed market",
+      "Every buyer and seller earns positive surplus there",
+      "The market price is the fairest possible price there",
+      "The marginal buyer’s value equals the marginal seller’s cost there"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.3",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "market_efficiency",
+    "secondarySkills": [
+      "efficient_quantity"
+    ],
+    "repairSkill": "market_efficiency",
+    "commonError": "equates_efficiency_with_fairness",
+    "feedback": "At the efficient quantity, marginal willingness to pay equals marginal cost. Equality of consumer and producer surplus is not required.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "0b7fe663b4e9d2417124f6f4e08658fe76532768adfbf88c9044ffec7b9e76d6",
+    "canonicalId": "P62C-CPS-L-024",
+    "sourceId": 661023,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "24233236e16f1e572325cb1f0c1ec95e34aa5d3318671d598f1d02d7f1689af3",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "market_efficiency",
+        "sourceRecordOrder": 23,
+        "sourceId": 661023,
+        "sourceHash": "24233236e16f1e572325cb1f0c1ec95e34aa5d3318671d598f1d02d7f1689af3"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-025",
+    "sourceGame": "micro-concept-library",
+    "q": "Use the compact market graph. Calculate consumer surplus at the displayed competitive equilibrium.",
+    "options": [
+      "$25",
+      "$50",
+      "$39",
+      "$14"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [
+      "market_efficiency"
+    ],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The consumer-surplus region is below demand and above the equilibrium price through Q = 5; its area is $25.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95",
+    "canonicalId": "P62C-CPS-L-025",
+    "sourceId": 661024,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "f54ec94a55b7f870942b099c33586c563302c0fc4bcb3dcfede3312e4e1f52be",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 24,
+        "sourceId": 661024,
+        "sourceHash": "f54ec94a55b7f870942b099c33586c563302c0fc4bcb3dcfede3312e4e1f52be"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-026",
+    "sourceGame": "micro-concept-library",
+    "q": "Calculate the triangular producer-surplus area in the compact equilibrium graph.",
+    "options": [
+      "$50",
+      "$25",
+      "$39",
+      "$14"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [
+      "market_efficiency"
+    ],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "The producer-surplus region is above supply and below the equilibrium price through Q = 5; its area is $25.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95",
+    "canonicalId": "P62C-CPS-L-026",
+    "sourceId": 661025,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "f8cb5c44c1a14d06d8ee5ec78ef7c4283de1c5891ac58e7e16293d1286e989db",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 25,
+        "sourceId": 661025,
+        "sourceHash": "f8cb5c44c1a14d06d8ee5ec78ef7c4283de1c5891ac58e7e16293d1286e989db"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-027",
+    "sourceGame": "micro-concept-library",
+    "q": "How is the $50 total surplus divided between consumers and producers in the compact equilibrium graph?",
+    "options": [
+      "$25 each",
+      "$30 to consumers and $20 to producers",
+      "$20 to consumers and $30 to producers",
+      "$50 to consumers and $0 to producers"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.2",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [
+      "consumer_surplus_graph_area",
+      "producer_surplus_graph_area"
+    ],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The two surplus triangles have equal height and base, so each side receives $25.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "fd14dc1991cfc87e889496ead88b1944236dcdbeea237ac1b8641347b3e078e4",
+    "canonicalId": "P62C-CPS-L-027",
+    "sourceId": 661026,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "f8c2f0ac34efe70030e96ee09293d689d92da9b0d03f6fe615441c9772cb39a7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 26,
+        "sourceId": 661026,
+        "sourceHash": "f8c2f0ac34efe70030e96ee09293d689d92da9b0d03f6fe615441c9772cb39a7"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-028",
+    "sourceGame": "micro-concept-library",
+    "q": "In the compact market graph, why is Q = 5 the efficient quantity under the standard competitive assumptions?",
+    "options": [
+      "Consumer and producer surplus must be numerically equal there in the displayed market",
+      "Every buyer and seller earns positive surplus there",
+      "The market price is the fairest possible price there",
+      "The marginal buyer’s value equals the marginal seller’s cost there"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.3",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "market_efficiency",
+    "secondarySkills": [
+      "efficient_quantity"
+    ],
+    "repairSkill": "market_efficiency",
+    "commonError": "equates_efficiency_with_fairness",
+    "feedback": "At the efficient quantity, marginal willingness to pay equals marginal cost. Equality of consumer and producer surplus is not required.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "0b7fe663b4e9d2417124f6f4e08658fe76532768adfbf88c9044ffec7b9e76d6",
+    "canonicalId": "P62C-CPS-L-028",
+    "sourceId": 661027,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "71d9441ce40126169533e9aca18385169df467cdf4b042c1a087db84a979763a",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "market_efficiency",
+        "sourceRecordOrder": 27,
+        "sourceId": 661027,
+        "sourceHash": "71d9441ce40126169533e9aca18385169df467cdf4b042c1a087db84a979763a"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-029",
+    "sourceGame": "micro-concept-library",
+    "q": "The underproduction graph shows output at Q = 6 although the competitive quantity is Q = 8. What is the decisive evidence that output should expand?",
+    "options": [
+      "At Q = 6, marginal willingness to pay exceeds marginal cost",
+      "At Q = 6, consumer surplus equals producer surplus",
+      "At Q = 6, price must be below every seller’s cost",
+      "At Q = 6, all possible gains from exchange have already occurred"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.3",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [
+      "gains_from_trade"
+    ],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "When marginal willingness to pay exceeds marginal cost, the next units create positive gains from exchange.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+    "aHash": "3341a83826dff9d6edaa73b980536511060888bd429f7c761b5593425c0e0a9d",
+    "canonicalId": "P62C-CPS-L-029",
+    "sourceId": 661028,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "6776b3bbf20b8d9f53f4dac21ab5a0ca2102dcee3ffdcfc1221cb4efc92f574e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 28,
+        "sourceId": 661028,
+        "sourceHash": "6776b3bbf20b8d9f53f4dac21ab5a0ca2102dcee3ffdcfc1221cb4efc92f574e"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-030",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the underproduction graph, calculate the surplus that is not realized when output stops at Q = 6 instead of reaching Q = 8.",
+    "options": [
+      "$2",
+      "$4",
+      "$8",
+      "$16"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.4",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [
+      "efficient_quantity"
+    ],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The missing triangular region has base 2 and height 4, so its area is one-half times 2 times 4, or $4.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+    "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
+    "canonicalId": "P62C-CPS-L-030",
+    "sourceId": 661029,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "12725a26716acc3f13c78d2c9b17c37c81ae922f88d2a47e4a15a25fa227b92c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 29,
+        "sourceId": 661029,
+        "sourceHash": "12725a26716acc3f13c78d2c9b17c37c81ae922f88d2a47e4a15a25fa227b92c"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-031",
+    "sourceGame": "micro-concept-library",
+    "q": "The overproduction graph shows output at Q = 10 although the competitive quantity is Q = 8. Why do the last two units reduce total surplus?",
+    "options": [
+      "Their market price is below zero",
+      "They transfer surplus from sellers to buyers without changing total surplus",
+      "Their marginal cost exceeds buyers’ marginal willingness to pay",
+      "They make consumer surplus and producer surplus unequal"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.3",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [
+      "gains_from_trade"
+    ],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "Units beyond the efficient quantity cost more to produce than buyers value them.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+    "aHash": "664215cc2b25b18c7e6fcb996a39451aead080543e10755a31c29b61e6c0e86e",
+    "canonicalId": "P62C-CPS-L-031",
+    "sourceId": 661030,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "f155b0b06a36328138fc3840a4e17b41c925c93b102f37db5433ff8c6efc712f",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 30,
+        "sourceId": 661030,
+        "sourceHash": "f155b0b06a36328138fc3840a4e17b41c925c93b102f37db5433ff8c6efc712f"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-L-032",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the overproduction graph, calculate the reduction in total surplus caused by producing from Q = 8 through Q = 10.",
+    "options": [
+      "$2",
+      "$8",
+      "$20",
+      "$4"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendary",
+    "objective": "CPS.4",
+    "difficulty": "legendary",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [
+      "efficient_quantity"
+    ],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The inefficient triangular region has base 2 and height 4, so the lost total surplus is $4.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+    "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
+    "canonicalId": "P62C-CPS-L-032",
+    "sourceId": 661031,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendary",
+    "sourceHash": "5bf8fe0aba86c15593e58f4107cc774be04a466f88550b773ea9c217f8580811",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendary",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 31,
+        "sourceId": 661031,
+        "sourceHash": "5bf8fe0aba86c15593e58f4107cc774be04a466f88550b773ea9c217f8580811"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendary",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendary",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-019",
+    "sourceGame": "micro-concept-library",
+    "q": "In the balanced graph, multiply the equilibrium coordinates to obtain buyer spending. What amount is exchanged?",
+    "options": [
+      "$80",
+      "$32",
+      "$64",
+      "$112"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "Equilibrium expenditure is P × Q = $10 × 8 = $80.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "c35e030d43dd5689c26066121105c93bea449aa09fa4bd30026c23f80c227cc5",
+    "canonicalId": "P62C-CPS-C-019",
+    "sourceId": 662018,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "3c189d50f3d7ba529739c1d6b663c2882e6df9a0ecf2ba5436bedd78c728ed36",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 18,
+        "sourceId": 662018,
+        "sourceHash": "3c189d50f3d7ba529739c1d6b663c2882e6df9a0ecf2ba5436bedd78c728ed36"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-020",
+    "sourceGame": "micro-concept-library",
+    "q": "What is the vertical height of the consumer-surplus triangle in the asymmetric equilibrium graph?",
+    "options": [
+      "$16",
+      "$8",
+      "$14",
+      "$30"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The demand intercept is $30 and equilibrium price is $14, giving a height of $16.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "347171706e97699c7e9fe896480e8e8fb50e4b978c8daae1b218b19eebf4b733",
+    "canonicalId": "P62C-CPS-C-020",
+    "sourceId": 662019,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "d3b19881dc4cd8b23a060b057fe819e42fd1b8e9af3cbdd83d70875a7edeb069",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 19,
+        "sourceId": 662019,
+        "sourceHash": "d3b19881dc4cd8b23a060b057fe819e42fd1b8e9af3cbdd83d70875a7edeb069"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-021",
+    "sourceGame": "micro-concept-library",
+    "q": "Multiply the compact graph’s equilibrium price by its equilibrium quantity. What buyer expenditure results?",
+    "options": [
+      "$70",
+      "$25",
+      "$50",
+      "$95"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "Equilibrium price is $14 and quantity is 5, so expenditure is $70.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "2dcb75d9e4bad2f1fd25c7e9e2a49c299306988a6a45c13fd7e6d3762a11eb4f",
+    "canonicalId": "P62C-CPS-C-021",
+    "sourceId": 662020,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "f3ed8c8f8aadce836e444062d9a23931a452ebc437dc188c1d51e215df97f1b6",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 20,
+        "sourceId": 662020,
+        "sourceHash": "f3ed8c8f8aadce836e444062d9a23931a452ebc437dc188c1d51e215df97f1b6"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-022",
+    "sourceGame": "micro-concept-library",
+    "q": "What total revenue do sellers receive at the balanced competitive equilibrium?",
+    "options": [
+      "$80",
+      "$32",
+      "$48",
+      "$112"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Equilibrium revenue is P × Q = $10 × 8 = $80.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "c35e030d43dd5689c26066121105c93bea449aa09fa4bd30026c23f80c227cc5",
+    "canonicalId": "P62C-CPS-C-022",
+    "sourceId": 662021,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "8bc24c54c40eb094ea98d1922f9ef3e7a21240767b433674487763194bedb1cd",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 21,
+        "sourceId": 662021,
+        "sourceHash": "8bc24c54c40eb094ea98d1922f9ef3e7a21240767b433674487763194bedb1cd"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-023",
+    "sourceGame": "micro-concept-library",
+    "q": "In the asymmetric graph, how tall is the producer-surplus triangle?",
+    "options": [
+      "$8",
+      "$14",
+      "$16",
+      "$32"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Equilibrium price is $14 and the supply intercept is $6, so the triangle height is $8.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94",
+    "canonicalId": "P62C-CPS-C-023",
+    "sourceId": 662022,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "f047932e3cdc7ec912c3e260769a03b0294fdf69f417c6f4ddbb1c824c813a4d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 22,
+        "sourceId": 662022,
+        "sourceHash": "f047932e3cdc7ec912c3e260769a03b0294fdf69f417c6f4ddbb1c824c813a4d"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-024",
+    "sourceGame": "micro-concept-library",
+    "q": "What is sellers’ total production cost at the compact competitive equilibrium?",
+    "options": [
+      "$45",
+      "$70",
+      "$25",
+      "$95"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Seller revenue is $70 and producer surplus is $25, so total production cost is $45.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "d503dcfdd44cb6216b22dba5a43ecacce36079e0f6445b5906ba9b0a4daaf2dc",
+    "canonicalId": "P62C-CPS-C-024",
+    "sourceId": 662023,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "1ea78c079f9d5da3e4f22a9a8b3fdc3f6b145438acb341a5322adbfe8035ae9d",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 23,
+        "sourceId": 662023,
+        "sourceHash": "1ea78c079f9d5da3e4f22a9a8b3fdc3f6b145438acb341a5322adbfe8035ae9d"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-025",
+    "sourceGame": "micro-concept-library",
+    "q": "At the balanced competitive equilibrium, what is the difference between consumer surplus and producer surplus?",
+    "options": [
+      "$0",
+      "$16",
+      "$32",
+      "$64"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Consumer surplus and producer surplus are both $32, so the difference is zero.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee",
+    "canonicalId": "P62C-CPS-C-025",
+    "sourceId": 662024,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "d3bdf64a85582154929a918d53f2b0e9509f114d8bd943421d4606c9f8ec0e97",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 24,
+        "sourceId": 662024,
+        "sourceHash": "d3bdf64a85582154929a918d53f2b0e9509f114d8bd943421d4606c9f8ec0e97"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-026",
+    "sourceGame": "micro-concept-library",
+    "q": "What fraction of total surplus is consumer surplus in the asymmetric equilibrium graph?",
+    "options": [
+      "Two-thirds",
+      "One-third",
+      "One-half",
+      "Three-fourths"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Consumer surplus is $64 out of $96 total surplus, which is two-thirds.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "f68bf75870b607fd125ea00ed035725a3ca199354f4b27d83ff7c2c001943ca4",
+    "canonicalId": "P62C-CPS-C-026",
+    "sourceId": 662025,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "7dc7eaa1b9848d84d3b8a1f1cbcec911218df6cca7fc649b7b9c494785816b48",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 25,
+        "sourceId": 662025,
+        "sourceHash": "7dc7eaa1b9848d84d3b8a1f1cbcec911218df6cca7fc649b7b9c494785816b48"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-027",
+    "sourceGame": "micro-concept-library",
+    "q": "What is the difference between consumer surplus and producer surplus in the compact equilibrium graph?",
+    "options": [
+      "$0",
+      "$25",
+      "$50",
+      "$10"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.2",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Consumer surplus and producer surplus are each $25.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee",
+    "canonicalId": "P62C-CPS-C-027",
+    "sourceId": 662026,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "7b931641e12ff106be40d0b76f5a0229374eea95615578c7b25cd7c3dda0465b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 26,
+        "sourceId": 662026,
+        "sourceHash": "7b931641e12ff106be40d0b76f5a0229374eea95615578c7b25cd7c3dda0465b"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-028",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. By how much does consumer surplus rise when price falls from P1 to P2?",
+    "options": [
+      "$32",
+      "$72",
+      "$96",
+      "$40"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.4",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_price_change",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_price_change",
+    "commonError": "counts_only_existing_buyers_or_only_new_buyers",
+    "feedback": "Consumer surplus rises from $32 to $72.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+    "aHash": "6d1f50e6a259ccaee2fe099e9af5dda7c8da1b49014c8060991b516c22754f46",
+    "canonicalId": "P62C-CPS-C-028",
+    "sourceId": 662027,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "f8c02a4d749cd25346ffaf73c47935f95abd259fa72ebef15b0112ba17472d25",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "consumer_surplus_price_change",
+        "sourceRecordOrder": 27,
+        "sourceId": 662027,
+        "sourceHash": "f8c02a4d749cd25346ffaf73c47935f95abd259fa72ebef15b0112ba17472d25"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "surplus-changes-policy-effects"
+    ]
+  },
+  {
+    "id": "P62C-CPS-C-029",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. By how much does producer surplus rise when price rises from P1 to P2?",
+    "options": [
+      "$32",
+      "$18",
+      "$50",
+      "$68"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "graph_calculation",
+    "objective": "CPS.4",
+    "difficulty": "calculation",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_price_change",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_price_change",
+    "commonError": "counts_only_existing_sellers_or_only_new_sellers",
+    "feedback": "Producer surplus rises from $18 to $50.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
+    "aHash": "f2011dae707ee9b1141a0de1147a115f9c05e41022d8c363087de560734e87c7",
+    "canonicalId": "P62C-CPS-C-029",
+    "sourceId": 662028,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "calculation",
+    "sourceHash": "502525bdbaff78b63c217110ebcfb02d6385984dea64d361f7a387199acb8dbe",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "calculation",
+        "routeKey": "producer_surplus_price_change",
+        "sourceRecordOrder": 28,
+        "sourceId": 662028,
+        "sourceHash": "502525bdbaff78b63c217110ebcfb02d6385984dea64d361f7a387199acb8dbe"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "calculation",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "calculation",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "surplus-changes-policy-effects"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B1-015",
+    "sourceGame": "micro-concept-library",
+    "q": "Checkpoint: From the demand intercept down to the equilibrium price, what vertical distance defines the consumer-surplus triangle?",
+    "options": [
+      "$8",
+      "$10",
+      "$16",
+      "$32"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.2",
+    "difficulty": "checkpointOne",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The demand intercept is $18 and equilibrium price is $10, so the triangle height is $8.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94",
+    "canonicalId": "P62C-CPS-B1-015",
+    "sourceId": 664014,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "easyBoss",
+    "sourceHash": "1fa19dc516e1997198e95a0ee2c4534398a056b0b11239119da16d374c024c35",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "easyBoss",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 14,
+        "sourceId": 664014,
+        "sourceHash": "1fa19dc516e1997198e95a0ee2c4534398a056b0b11239119da16d374c024c35"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easyBoss",
+    "originalBossTier": "easyBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B1-016",
+    "sourceGame": "micro-concept-library",
+    "q": "Checkpoint: Measure the producer-surplus triangle vertically from the supply intercept to equilibrium price. What is its height?",
+    "options": [
+      "$8",
+      "$10",
+      "$16",
+      "$32"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.2",
+    "difficulty": "checkpointOne",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "Equilibrium price is $10 and the supply intercept is $2, so the triangle height is $8.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94",
+    "canonicalId": "P62C-CPS-B1-016",
+    "sourceId": 664015,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "easyBoss",
+    "sourceHash": "89eb290a24c0f0f9e1dd629937e6c178b0bdec58657c9a8b2f388fdb6c32b753",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "easyBoss",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 15,
+        "sourceId": 664015,
+        "sourceHash": "89eb290a24c0f0f9e1dd629937e6c178b0bdec58657c9a8b2f388fdb6c32b753"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "easy",
+    "originalSourcePool": "easyBoss",
+    "originalBossTier": "easyBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B2-007",
+    "sourceGame": "micro-concept-library",
+    "q": "Checkpoint: What competitive-equilibrium price is shown in the asymmetric market graph?",
+    "options": [
+      "$14",
+      "$8",
+      "$22",
+      "$30"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.2",
+    "difficulty": "checkpointTwo",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The dashed horizontal guide through E marks the equilibrium price at $14.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "ba144262a228fdc46aa648adc3d66acd45309e517780c9180b34aad0ac561bba",
+    "canonicalId": "P62C-CPS-B2-007",
+    "sourceId": 664106,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "mediumBoss",
+    "sourceHash": "389d9a81b6c3e900e96f3e684b1db45d3ac7c6b00adef091a4ea3a34cb38941c",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "mediumBoss",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 6,
+        "sourceId": 664106,
+        "sourceHash": "389d9a81b6c3e900e96f3e684b1db45d3ac7c6b00adef091a4ea3a34cb38941c"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "mediumBoss",
+    "originalBossTier": "mediumBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B2-008",
+    "sourceGame": "micro-concept-library",
+    "q": "Checkpoint: Read the quantity coordinate of point E in the asymmetric graph.",
+    "options": [
+      "8 units",
+      "6 units",
+      "12 units",
+      "14 units"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.2",
+    "difficulty": "checkpointTwo",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_graph_area",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_graph_area",
+    "commonError": "selects_area_above_price",
+    "feedback": "The dashed vertical guide through E marks the equilibrium quantity at 8 units.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "505defb71cf4e0964cbe1a4c94bcb1c997fcabe9e827b31da7b9f3da211f2194",
+    "canonicalId": "P62C-CPS-B2-008",
+    "sourceId": 664107,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "mediumBoss",
+    "sourceHash": "7ee088a9c7eb8d887b7a8cf756e9edfed8281b998324ebb7f5213d2b18af5c17",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "mediumBoss",
+        "routeKey": "producer_surplus_graph_area",
+        "sourceRecordOrder": 7,
+        "sourceId": 664107,
+        "sourceHash": "7ee088a9c7eb8d887b7a8cf756e9edfed8281b998324ebb7f5213d2b18af5c17"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "mediumBoss",
+    "originalBossTier": "mediumBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B2-009",
+    "sourceGame": "micro-concept-library",
+    "q": "Checkpoint: What total revenue is exchanged at the asymmetric competitive equilibrium?",
+    "options": [
+      "$112",
+      "$96 in the displayed market",
+      "$64",
+      "$80"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.2",
+    "difficulty": "checkpointTwo",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus_graph",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus_graph",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Equilibrium price is $14 and quantity is 8, so total expenditure and seller revenue are $112.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "a606ea52767922a9ad5c87ef0bc4cdf86356ad43b9a4e2e3b531978689d1131c",
+    "canonicalId": "P62C-CPS-B2-009",
+    "sourceId": 664108,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "mediumBoss",
+    "sourceHash": "18bdeb066d87bd97766bb9394f4a46446ace59f18edbb2f9f5dabb9955af319b",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "mediumBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 8,
+        "sourceId": 664108,
+        "sourceHash": "18bdeb066d87bd97766bb9394f4a46446ace59f18edbb2f9f5dabb9955af319b"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "mediumBoss",
+    "originalBossTier": "mediumBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B2-010",
+    "sourceGame": "micro-concept-library",
+    "q": "Checkpoint: What efficient quantity is identified by the demand-supply intersection in the compact graph?",
+    "options": [
+      "5 units",
+      "8 units",
+      "10 units",
+      "14 units"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.2",
+    "difficulty": "checkpointTwo",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [],
+    "repairSkill": "efficient_quantity",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The competitive intersection E occurs at Q = 5, where marginal buyer value equals marginal seller cost.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "6e4df4c40e7348fc30cd1bb89352f88635377dce6c2b5e72dd5905430008f208",
+    "canonicalId": "P62C-CPS-B2-010",
+    "sourceId": 664109,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "mediumBoss",
+    "sourceHash": "7f1b32f7b17e6a1391926de26ec918d1e03863d801f1d302107ce296980fd509",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "mediumBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 9,
+        "sourceId": 664109,
+        "sourceHash": "7f1b32f7b17e6a1391926de26ec918d1e03863d801f1d302107ce296980fd509"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "mediumBoss",
+    "originalBossTier": "mediumBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B3-001",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. Output is 6 rather than 8. Total-surplus loss is:",
+    "options": [
+      "$2",
+      "$8",
+      "$4",
+      "$16"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.4",
+    "difficulty": "finalCheckpoint",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "Use the graph’s value-cost areas.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+    "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
+    "canonicalId": "P62C-CPS-B3-001",
+    "sourceId": 664200,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "b663db4cdecfeb9199e8e13f0ee3acfd9d4b7af294132c6f49c5f97c5758d43e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 0,
+        "sourceId": 664200,
+        "sourceHash": "b663db4cdecfeb9199e8e13f0ee3acfd9d4b7af294132c6f49c5f97c5758d43e"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B3-002",
+    "sourceGame": "micro-concept-library",
+    "q": "At the overproduction outcome, how much total surplus is lost relative to the efficient quantity?",
+    "options": [
+      "$2",
+      "$8",
+      "$16",
+      "$4"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.4",
+    "difficulty": "finalCheckpoint",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "Use the graph’s value-cost areas.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+    "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b",
+    "canonicalId": "P62C-CPS-B3-002",
+    "sourceId": 664201,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "0df5012a239f57dc1f2412bb60725b7d6dabbeccf3f4713f9fd193b0a2a69c48",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 1,
+        "sourceId": 664201,
+        "sourceHash": "0df5012a239f57dc1f2412bb60725b7d6dabbeccf3f4713f9fd193b0a2a69c48"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B3-003",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. After demand shifts from D1 to D2, total surplus is:",
+    "options": [
+      "$100",
+      "$64 in the displayed market",
+      "$50",
+      "$36"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.4",
+    "difficulty": "finalCheckpoint",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Use the graph’s value-cost areas.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
+    "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8",
+    "canonicalId": "P62C-CPS-B3-003",
+    "sourceId": 664202,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "81a264d439177ccbdf8deb509cfb094910fa0a14d45df6108e92b92e76051953",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 2,
+        "sourceId": 664202,
+        "sourceHash": "81a264d439177ccbdf8deb509cfb094910fa0a14d45df6108e92b92e76051953"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-B3-004",
+    "sourceGame": "micro-concept-library",
+    "q": "Refer to the graph. After supply shifts from S1 to S2, total surplus is:",
+    "options": [
+      "$64",
+      "$36",
+      "$18",
+      "$28"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "checkpoint_graph",
+    "objective": "CPS.4",
+    "difficulty": "finalCheckpoint",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Use the graph’s value-cost areas.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
+    "aHash": "280d20fd8820be733a3d078d94089f96a65a506a0fe7d651686592ea8cf03373",
+    "canonicalId": "P62C-CPS-B3-004",
+    "sourceId": 664203,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "52122a26cd60b7cd4e9bf987f2323dd2f50dc13e12c0b7e3f1fafb1390b245d8",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 3,
+        "sourceId": 664203,
+        "sourceHash": "52122a26cd60b7cd4e9bf987f2323dd2f50dc13e12c0b7e3f1fafb1390b245d8"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-009",
+    "sourceGame": "micro-concept-library",
+    "q": "In the balanced equilibrium graph, a student calculates consumer surplus as 8 × 10 = $80. What is the exact error and correct result?",
+    "options": [
+      "The student counted producer surplus; consumer surplus is $64",
+      "The student used the wrong quantity; consumer surplus is $40",
+      "The student counted expenditure; consumer surplus is the triangle above price, equal to $32",
+      "The student should add expenditure to the demand intercept, giving $98 in the displayed market"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.2",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_graph_area",
+    "secondarySkills": [
+      "consumer_surplus_definition"
+    ],
+    "repairSkill": "consumer_surplus_graph_area",
+    "commonError": "selects_area_below_price",
+    "feedback": "The price-times-quantity rectangle is expenditure. Consumer surplus is one-half × 8 × (18 − 10) = $32.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+    "aHash": "b1c68390f54140764dd010e7830b2fda52686ce083b4db69bb9c573be77d5374",
+    "canonicalId": "P62C-CPS-LB-009",
+    "sourceId": 665008,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "ac32ac2e89f9c8fe0d6a97e3922defb47a692d4d4c0b79ca3f629454bb6f4d22",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 8,
+        "sourceId": 665008,
+        "sourceHash": "ac32ac2e89f9c8fe0d6a97e3922defb47a692d4d4c0b79ca3f629454bb6f4d22"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "consumer_surplus_graph_area",
+        "sourceRecordOrder": 108,
+        "sourceId": 665008,
+        "sourceHash": "ac32ac2e89f9c8fe0d6a97e3922defb47a692d4d4c0b79ca3f629454bb6f4d22",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "consumer-surplus"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-010",
+    "sourceGame": "micro-concept-library",
+    "q": "In the asymmetric equilibrium graph, compare the two sides of the market at equilibrium. Which statement is numerically correct and economically relevant?",
+    "options": [
+      "Consumer and producer surplus must each be $48 for the allocation to count as efficient, so unequal surplus shares prove inefficiency",
+      "Producer surplus is $64 because the lower supply intercept gives sellers the larger surplus share",
+      "Total surplus is $64 because only the larger side counts",
+      "Consumer surplus is $64, producer surplus is $32, and unequal shares do not by themselves imply inefficiency"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.5",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "market_efficiency",
+    "secondarySkills": [
+      "efficiency_equity_distinction",
+      "total_surplus"
+    ],
+    "repairSkill": "market_efficiency",
+    "commonError": "equates_efficiency_with_fairness",
+    "feedback": "The regions are $64 and $32, totaling $96. Efficiency does not require equal distribution.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+    "aHash": "a700303f482c56210ba2bbf5b99df8e79c7da746fc8a3fa6a7794427b60aca5c",
+    "canonicalId": "P62C-CPS-LB-010",
+    "sourceId": 665009,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "6112d6c41cea514c0e692c7a4461e1259a108af2a726bcb7b5107a5ae0382612",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "market_efficiency",
+        "sourceRecordOrder": 9,
+        "sourceId": 665009,
+        "sourceHash": "6112d6c41cea514c0e692c7a4461e1259a108af2a726bcb7b5107a5ae0382612"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "market_efficiency",
+        "sourceRecordOrder": 108,
+        "sourceId": 665009,
+        "sourceHash": "6112d6c41cea514c0e692c7a4461e1259a108af2a726bcb7b5107a5ae0382612",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-011",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the shaded regions in the displayed compact equilibrium graph, which conclusion is justified about the allocation of surplus?",
+    "options": [
+      "Each side receives $25, but the equality is incidental rather than a condition for efficiency",
+      "The graph proves every efficient market divides surplus equally, for the market described in the scenario",
+      "Total surplus is $25 because equal regions overlap, after applying the relevant surplus definition",
+      "The marginal buyer and seller each receive $25, using the information provided in the stem"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.5",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [
+      "market_efficiency",
+      "efficiency_equity_distinction"
+    ],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "Each triangular region is $25 and total surplus is $50. Equal shares are not required for efficiency.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+    "aHash": "8aac00439838683607a26c5ed731ca392a7738e48f9f383d28fdd2b17de1a60b",
+    "canonicalId": "P62C-CPS-LB-011",
+    "sourceId": 665010,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "4f62685570eb55b4f8160f9f92be1295404e0d19f73fc897bd0b802974639e45",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 10,
+        "sourceId": 665010,
+        "sourceHash": "4f62685570eb55b4f8160f9f92be1295404e0d19f73fc897bd0b802974639e45"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 1,
+        "sourceId": 665010,
+        "sourceHash": "4f62685570eb55b4f8160f9f92be1295404e0d19f73fc897bd0b802974639e45",
+        "changeType": "REWRITE_STEM"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 108,
+        "sourceId": 665010,
+        "sourceHash": "4f62685570eb55b4f8160f9f92be1295404e0d19f73fc897bd0b802974639e45",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-012",
+    "sourceGame": "micro-concept-library",
+    "q": "The underproduction graph stops at Q = 6. Separate the unrealized gains into geometry and economic meaning.",
+    "options": [
+      "The missing area is $8 and represents a transfer from sellers to buyers",
+      "The missing area is $4 and represents beneficial units for which buyer value exceeded seller cost",
+      "The missing area is $4 and represents production whose cost exceeded value in the displayed market",
+      "The missing area is $16 and represents expenditure not collected"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.4",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "gains_from_trade",
+    "secondarySkills": [
+      "efficient_quantity",
+      "total_surplus"
+    ],
+    "repairSkill": "gains_from_trade",
+    "commonError": "assumes_every_trade_creates_surplus",
+    "feedback": "From Q = 6 to Q = 8, marginal value exceeds marginal cost. The triangular gap is $4.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+    "aHash": "46cf359c429fb04e49ba54d0e83839caab874ccec9e494ee6979bb9ecdc0a007",
+    "canonicalId": "P62C-CPS-LB-012",
+    "sourceId": 665011,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "96fad78000cabf282f1b79a2ad9d36d24418ee29178ca1d80bc5d150e0378e51",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "gains_from_trade",
+        "sourceRecordOrder": 11,
+        "sourceId": 665011,
+        "sourceHash": "96fad78000cabf282f1b79a2ad9d36d24418ee29178ca1d80bc5d150e0378e51"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "gains_from_trade",
+        "sourceRecordOrder": 108,
+        "sourceId": 665011,
+        "sourceHash": "96fad78000cabf282f1b79a2ad9d36d24418ee29178ca1d80bc5d150e0378e51",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-013",
+    "sourceGame": "micro-concept-library",
+    "q": "The overproduction graph extends output from Q = 8 to Q = 10. What combined statement correctly describes the last two units?",
+    "options": [
+      "They transfer $4 from buyers to sellers without changing total surplus in the displayed market",
+      "They add $4 to producer surplus and therefore improve efficiency",
+      "They create a $4 total-surplus loss because marginal cost exceeds marginal willingness to pay",
+      "They create a $16 loss because all expenditure on them is wasted"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.4",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "efficient_quantity",
+    "secondarySkills": [
+      "total_surplus"
+    ],
+    "repairSkill": "efficient_quantity",
+    "commonError": "equates_more_output_with_more_efficiency",
+    "feedback": "The triangular region between supply and demand beyond Q = 8 equals $4 and records negative gains.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+    "aHash": "3b051b355a30b957deac1d41ea18dd00905e9fbbe66dd1a49fa692d890e12187",
+    "canonicalId": "P62C-CPS-LB-013",
+    "sourceId": 665012,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "3acb712d5ea7ff738ac4cfbc54017d9e32293f3d4c70f8171423021ef2435441",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 12,
+        "sourceId": 665012,
+        "sourceHash": "3acb712d5ea7ff738ac4cfbc54017d9e32293f3d4c70f8171423021ef2435441"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "efficient_quantity",
+        "sourceRecordOrder": 108,
+        "sourceId": 665012,
+        "sourceHash": "3acb712d5ea7ff738ac4cfbc54017d9e32293f3d4c70f8171423021ef2435441",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "efficient-quantity-allocation"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-014",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the labeled price and quantity markers in the displayed consumer-price graph, which calculation captures the full consumer-surplus change?",
+    "options": [
+      "$32, because only the original consumer-surplus triangle counts in the displayed market",
+      "$16, because only the four new units count",
+      "$48, because the entire new expenditure rectangle is surplus",
+      "$40, including gains on the original units and surplus on newly purchased units"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.4",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "consumer_surplus_price_change",
+    "secondarySkills": [
+      "consumer_surplus_graph_area"
+    ],
+    "repairSkill": "consumer_surplus_price_change",
+    "commonError": "counts_only_existing_buyers_or_only_new_buyers",
+    "feedback": "Consumer surplus rises from $32 to $72, a $40 increase. The change includes both a transfer on existing units and gains on new units.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+    "aHash": "80bf550793264a434769650d5e719a9a64b915ba4c05f930950c53b9fbbc0310",
+    "canonicalId": "P62C-CPS-LB-014",
+    "sourceId": 665013,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "3ab4c82879e163cff92838b88580871a7c26db825b70f549c23472ac160cbd9e",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "consumer_surplus_price_change",
+        "sourceRecordOrder": 13,
+        "sourceId": 665013,
+        "sourceHash": "3ab4c82879e163cff92838b88580871a7c26db825b70f549c23472ac160cbd9e"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "consumer_surplus_price_change",
+        "sourceRecordOrder": 2,
+        "sourceId": 665013,
+        "sourceHash": "3ab4c82879e163cff92838b88580871a7c26db825b70f549c23472ac160cbd9e",
+        "changeType": "REWRITE_STEM"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "consumer_surplus_price_change",
+        "sourceRecordOrder": 108,
+        "sourceId": 665013,
+        "sourceHash": "3ab4c82879e163cff92838b88580871a7c26db825b70f549c23472ac160cbd9e",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "surplus-changes-policy-effects"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-015",
+    "sourceGame": "micro-concept-library",
+    "q": "Using the producer-price comparison graph, which calculation captures the complete change in producer surplus?",
+    "options": [
+      "$32, including gains on original sales and surplus on additional sales",
+      "$18, because only the original producer-surplus triangle counts in the displayed market",
+      "$16, because only the price increase on four units counts",
+      "$50, because the new producer-surplus level is the change"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.4",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_price_change",
+    "secondarySkills": [
+      "producer_surplus_graph_area"
+    ],
+    "repairSkill": "producer_surplus_price_change",
+    "commonError": "counts_only_existing_sellers_or_only_new_sellers",
+    "feedback": "Producer surplus rises from $18 to $50, so the change is $32.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
+    "aHash": "1fdff98a7e4d9c0f7306cec060252ccdd06ec45aaa667959a7963332b3064007",
+    "canonicalId": "P62C-CPS-LB-015",
+    "sourceId": 665014,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "bd27e5dc05f11c66b19fd17206271b5868f28389ec625ec1617f913dd77db743",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "producer_surplus_price_change",
+        "sourceRecordOrder": 14,
+        "sourceId": 665014,
+        "sourceHash": "bd27e5dc05f11c66b19fd17206271b5868f28389ec625ec1617f913dd77db743"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "producer_surplus_price_change",
+        "sourceRecordOrder": 3,
+        "sourceId": 665014,
+        "sourceHash": "bd27e5dc05f11c66b19fd17206271b5868f28389ec625ec1617f913dd77db743",
+        "changeType": "REWRITE_STEM"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "producer_surplus_price_change",
+        "sourceRecordOrder": 108,
+        "sourceId": 665014,
+        "sourceHash": "bd27e5dc05f11c66b19fd17206271b5868f28389ec625ec1617f913dd77db743",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "surplus-changes-policy-effects"
+    ]
+  },
+  {
+    "id": "P62C-CPS-LB-016",
+    "sourceGame": "micro-concept-library",
+    "q": "The horizontal-supply graph shows equilibrium at P = $6 and Q = 12. Which complete surplus statement is correct?",
+    "options": [
+      "Consumer surplus and producer surplus are each $36",
+      "Consumer surplus is $72, producer surplus is $0, and total surplus is $72",
+      "Producer surplus is $72 because sellers receive $6 per unit",
+      "Total surplus is $144 because expenditure must be added to consumer surplus"
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "legendaryBoss",
+    "objective": "CPS.2",
+    "difficulty": "legendaryBoss",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "total_surplus",
+    "secondarySkills": [
+      "consumer_surplus_graph_area",
+      "producer_surplus_graph_area"
+    ],
+    "repairSkill": "total_surplus",
+    "commonError": "omits_one_side_of_market",
+    "feedback": "The horizontal supply curve coincides with the market price, so sellers receive no surplus above marginal cost. The consumer triangle is $72.",
+    "image": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+    "aHash": "2882d6993c2b6bf51cf65b8f0754d08443bdb728e06204c56d220ad731f81264",
+    "canonicalId": "P62C-CPS-LB-016",
+    "sourceId": 665015,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "legendaryBoss",
+    "sourceHash": "deffa1f36b20698e3a215bcbbeb9e8ff26a8aa77838983b39784a49b35f23c05",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 15,
+        "sourceId": 665015,
+        "sourceHash": "deffa1f36b20698e3a215bcbbeb9e8ff26a8aa77838983b39784a49b35f23c05"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendaryBoss",
+        "routeKey": "total_surplus",
+        "sourceRecordOrder": 108,
+        "sourceId": 665015,
+        "sourceHash": "deffa1f36b20698e3a215bcbbeb9e8ff26a8aa77838983b39784a49b35f23c05",
+        "changeType": "REMOVE_INVALID_BOSS_STAGE"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "legendaryBoss",
+    "canonicalDifficulty": "legendary",
+    "originalSourcePool": "legendaryBoss",
+    "originalBossTier": "legendaryBoss",
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "total-surplus-gains-from-exchange"
+    ]
+  }
+]

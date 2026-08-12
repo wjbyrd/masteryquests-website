@@ -145,7 +145,7 @@
   },
   {
     "id": "P62B-ELAS-M-031",
-    "q": "At point C, price is $12 and quantity is 30. What total-revenue amount follows from those graph values?",
+    "q": "Using the labeled price and quantity at point C, what total revenue is implied?",
     "options": [
       "$480",
       "$120",
@@ -171,7 +171,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "d4f2736452fe99ace048338e16130fafb4f5c1d3ee3e4bf9a9895d5e3254bc97",
+    "sourceHash": "7b0297d76ab745b633c83dc425794fff3ed35aab067766db0f41ee7da91292cd",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -181,7 +181,18 @@
         "routeKey": "total_revenue_formula",
         "sourceRecordOrder": 3,
         "sourceId": 715003,
-        "sourceHash": "d4f2736452fe99ace048338e16130fafb4f5c1d3ee3e4bf9a9895d5e3254bc97"
+        "sourceHash": "7b0297d76ab745b633c83dc425794fff3ed35aab067766db0f41ee7da91292cd"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "medium",
+        "routeKey": "total_revenue_formula",
+        "sourceRecordOrder": 13,
+        "sourceId": 715003,
+        "sourceHash": "7b0297d76ab745b633c83dc425794fff3ed35aab067766db0f41ee7da91292cd",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -193,7 +204,7 @@
   },
   {
     "id": "P62B-ELAS-M-032",
-    "q": "A seller is at point B, charging $8 and selling 60 units. What total revenue does that combination generate?",
+    "q": "At point B, multiply the price by the quantity shown. What total revenue results?",
     "options": [
       "$480",
       "$360",
@@ -219,7 +230,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "3a8d564a2910b2cf5d39694579d7d64993b6926019a7d4850c636491ce0d9d9b",
+    "sourceHash": "e860408df8205f3e0d0d210d85aef590b919856c8d818c1f68e7d571da851970",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -229,7 +240,18 @@
         "routeKey": "total_revenue_formula",
         "sourceRecordOrder": 4,
         "sourceId": 715004,
-        "sourceHash": "3a8d564a2910b2cf5d39694579d7d64993b6926019a7d4850c636491ce0d9d9b"
+        "sourceHash": "e860408df8205f3e0d0d210d85aef590b919856c8d818c1f68e7d571da851970"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "medium",
+        "routeKey": "total_revenue_formula",
+        "sourceRecordOrder": 14,
+        "sourceId": 715004,
+        "sourceHash": "e860408df8205f3e0d0d210d85aef590b919856c8d818c1f68e7d571da851970",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -241,7 +263,7 @@
   },
   {
     "id": "P62B-ELAS-M-033",
-    "q": "Moving from C to B lowers price from $12 to $8 while total revenue rises from $360 to $480. What does that imply about demand over this interval?",
+    "q": "Compare points C and B and calculate total revenue at each. What does the change imply about demand over that interval?",
     "options": [
       "Demand is inelastic",
       "Demand is elastic",
@@ -267,7 +289,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "a9b959ee0b84604313baec2f8a3fe25d24f50f234a2dfe2bf3525a73b985647f",
+    "sourceHash": "1d503b55c328a30fed68724b29fe2cc4cda52c2095bcb1666ac76b9b7ef9dd7a",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -277,7 +299,18 @@
         "routeKey": "total_revenue_test",
         "sourceRecordOrder": 5,
         "sourceId": 715005,
-        "sourceHash": "a9b959ee0b84604313baec2f8a3fe25d24f50f234a2dfe2bf3525a73b985647f"
+        "sourceHash": "1d503b55c328a30fed68724b29fe2cc4cda52c2095bcb1666ac76b9b7ef9dd7a"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "medium",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 15,
+        "sourceId": 715005,
+        "sourceHash": "1d503b55c328a30fed68724b29fe2cc4cda52c2095bcb1666ac76b9b7ef9dd7a",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -289,7 +322,7 @@
   },
   {
     "id": "P62B-ELAS-H-031",
-    "q": "Using the midpoint formula between C (P = $12, Q = 30) and B (P = $8, Q = 60), the absolute price elasticity of demand is approximately:",
+    "q": "Using the labeled coordinates at points C and B, what is the midpoint price elasticity of demand?",
     "options": [
       "0.60",
       "1.00",
@@ -315,7 +348,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "62d7c046fe6a5663f54daca1eab81d3d6895c91d723824f4798c061ad707f4d2",
+    "sourceHash": "81924bdd16f51ead226fbb3d2f52007295f2f9bf6f9c4978f4b5b39a16a8f794",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -325,7 +358,18 @@
         "routeKey": "midpoint_formula",
         "sourceRecordOrder": 6,
         "sourceId": 715006,
-        "sourceHash": "62d7c046fe6a5663f54daca1eab81d3d6895c91d723824f4798c061ad707f4d2"
+        "sourceHash": "81924bdd16f51ead226fbb3d2f52007295f2f9bf6f9c4978f4b5b39a16a8f794"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "midpoint_formula",
+        "sourceRecordOrder": 19,
+        "sourceId": 715006,
+        "sourceHash": "81924bdd16f51ead226fbb3d2f52007295f2f9bf6f9c4978f4b5b39a16a8f794",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -337,7 +381,7 @@
   },
   {
     "id": "P62B-ELAS-H-032",
-    "q": "Using the midpoint formula between B (P = $8, Q = 60) and A (P = $4, Q = 90), the absolute price elasticity of demand is approximately:",
+    "q": "For the B-to-A interval, calculate midpoint price elasticity of demand from the graph.",
     "options": [
       "1.67",
       "1.00",
@@ -363,7 +407,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "88d7414ecdc827f94571a79b13d0133055d867a4da62b999bf97acdab6a2ca76",
+    "sourceHash": "ed9dc54345eac931af9b4b81a58bdb16e1a9fa9c47f0bca4a11f56ec26b8bf62",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -373,7 +417,18 @@
         "routeKey": "midpoint_formula",
         "sourceRecordOrder": 7,
         "sourceId": 715007,
-        "sourceHash": "88d7414ecdc827f94571a79b13d0133055d867a4da62b999bf97acdab6a2ca76"
+        "sourceHash": "ed9dc54345eac931af9b4b81a58bdb16e1a9fa9c47f0bca4a11f56ec26b8bf62"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "midpoint_formula",
+        "sourceRecordOrder": 20,
+        "sourceId": 715007,
+        "sourceHash": "ed9dc54345eac931af9b4b81a58bdb16e1a9fa9c47f0bca4a11f56ec26b8bf62",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -385,7 +440,7 @@
   },
   {
     "id": "P62B-ELAS-H-033",
-    "q": "Using the midpoint formula between C (P = $12, Q = 30) and A (P = $4, Q = 90), the absolute price elasticity of demand is:",
+    "q": "Across the full C-to-A interval, what midpoint price elasticity does the graph imply?",
     "options": [
       "1.00",
       "0.50",
@@ -411,7 +466,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "bd5bcef460840d328c2362305b78fbd766949e699dec7a0ebb034238fbe4a7a8",
+    "sourceHash": "be12c255f8a2579822ce56bf25de536fa46d13e05d7a80df27c02b8a7ede7fe3",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -421,7 +476,18 @@
         "routeKey": "midpoint_formula",
         "sourceRecordOrder": 8,
         "sourceId": 715008,
-        "sourceHash": "bd5bcef460840d328c2362305b78fbd766949e699dec7a0ebb034238fbe4a7a8"
+        "sourceHash": "be12c255f8a2579822ce56bf25de536fa46d13e05d7a80df27c02b8a7ede7fe3"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "midpoint_formula",
+        "sourceRecordOrder": 21,
+        "sourceId": 715008,
+        "sourceHash": "be12c255f8a2579822ce56bf25de536fa46d13e05d7a80df27c02b8a7ede7fe3",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -437,7 +503,7 @@
     "options": [
       "The demand curve changes slope at B",
       "The price-to-quantity ratio changes along the curve",
-      "Elasticity ignores percentage changes",
+      "Elasticity ignores percentage changes over the shown interval",
       "Quantity becomes fixed below B"
     ],
     "tag": "elasticity",
@@ -459,7 +525,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "7e46624865b8afec3b00bf7ec792cd24bf8bb2a592709c4ca20fe7e62068317d",
+    "sourceHash": "9e39762ae5438cf2e4a55e080e1eba46380a48084b39862674f025354e8616aa",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -469,7 +535,7 @@
         "routeKey": "slope_vs_elasticity",
         "sourceRecordOrder": 9,
         "sourceId": 715009,
-        "sourceHash": "7e46624865b8afec3b00bf7ec792cd24bf8bb2a592709c4ca20fe7e62068317d"
+        "sourceHash": "9e39762ae5438cf2e4a55e080e1eba46380a48084b39862674f025354e8616aa"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -481,7 +547,7 @@
   },
   {
     "id": "P62B-ELAS-EL-031",
-    "q": "A seller moves from C to B on the displayed demand curve. Total revenue rises by $120 while price falls. Which conclusion follows?",
+    "q": "Use the price, quantity, and total-revenue change from C to B. Which elasticity conclusion follows?",
     "options": [
       "Demand is inelastic over C–B",
       "Demand is perfectly inelastic over C–B",
@@ -507,7 +573,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "3eb4ee7c00ece71aa23325db2a31b768962a719d75fcd6ed2054e4f6100eff7b",
+    "sourceHash": "e78239b3b2cb7616f05668b4d9138f29712a7c70c8ba4d0567e37b27232e34f4",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -517,7 +583,18 @@
         "routeKey": "total_revenue_test",
         "sourceRecordOrder": 10,
         "sourceId": 715010,
-        "sourceHash": "3eb4ee7c00ece71aa23325db2a31b768962a719d75fcd6ed2054e4f6100eff7b"
+        "sourceHash": "e78239b3b2cb7616f05668b4d9138f29712a7c70c8ba4d0567e37b27232e34f4"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 25,
+        "sourceId": 715010,
+        "sourceHash": "e78239b3b2cb7616f05668b4d9138f29712a7c70c8ba4d0567e37b27232e34f4",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -529,7 +606,7 @@
   },
   {
     "id": "P62B-ELAS-EL-032",
-    "q": "A seller moves from B to A on the displayed demand curve. Total revenue falls from $480 to $360 while price falls. Which conclusion follows?",
+    "q": "As the seller moves from B to A, use the revenue change to classify demand over that segment.",
     "options": [
       "Demand is elastic over B–A",
       "Demand is perfectly elastic over B–A",
@@ -555,7 +632,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "d8066f8d7e80e3c2b018cbecf8f95797125e942c3668b01cef544f31a7a18acd",
+    "sourceHash": "c42f1a678d79f12755a598b0e0c116d884d6867a5872526e9e445d700b76d479",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -565,7 +642,18 @@
         "routeKey": "total_revenue_test",
         "sourceRecordOrder": 11,
         "sourceId": 715011,
-        "sourceHash": "d8066f8d7e80e3c2b018cbecf8f95797125e942c3668b01cef544f31a7a18acd"
+        "sourceHash": "c42f1a678d79f12755a598b0e0c116d884d6867a5872526e9e445d700b76d479"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 26,
+        "sourceId": 715011,
+        "sourceHash": "c42f1a678d79f12755a598b0e0c116d884d6867a5872526e9e445d700b76d479",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -577,7 +665,7 @@
   },
   {
     "id": "P62B-ELAS-EL-033",
-    "q": "Point B yields the largest total revenue among A, B, and C. What elasticity condition is associated with that midpoint of a linear demand curve?",
+    "q": "After calculating total revenue at A, B, and C from the displayed graph, what elasticity condition is associated with the revenue-maximizing point?",
     "options": [
       "Demand is unit elastic",
       "Demand is perfectly elastic",
@@ -603,7 +691,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "8182049a0e3b3048ea03535301db4b9b6a464ad469057a51758548c76a856c14",
+    "sourceHash": "cc5da3ad83b29cab9555512e05a762e130360c09b15b45796122b759dfdc9914",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -614,6 +702,17 @@
         "sourceRecordOrder": 12,
         "sourceId": 715012,
         "sourceHash": "8182049a0e3b3048ea03535301db4b9b6a464ad469057a51758548c76a856c14"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "revenue_maximization_unit_elastic",
+        "sourceRecordOrder": 27,
+        "sourceId": 715012,
+        "sourceHash": "cc5da3ad83b29cab9555512e05a762e130360c09b15b45796122b759dfdc9914",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -625,9 +724,9 @@
   },
   {
     "id": "P62B-ELAS-L-091",
-    "q": "C→B and B→A each involve a $4 price change and a 30-unit quantity change. Why can the first interval be elastic while the second is inelastic?",
+    "q": "Compare the C→B and B→A intervals on the graph. Why can their elasticity classifications differ?",
     "options": [
-      "The demand curve has different slopes in the two intervals",
+      "The demand curve has different slopes in the two intervals over the shown interval",
       "The percentage-change bases differ across the two intervals",
       "Elasticity uses only the absolute quantity change",
       "Elasticity is determined only by the direction of price"
@@ -651,7 +750,7 @@
       "elasticity"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "f83c23a64afbe107e3b482ff02bb308b0bac59ec66c1542e08fc108275f1db6d",
+    "sourceHash": "f605168518a94b4a4c6195e5bda607e5e7f3b52fd4908f9add4bb57374ed7332",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -661,7 +760,18 @@
         "routeKey": "linear_demand_elasticity",
         "sourceRecordOrder": 13,
         "sourceId": 715013,
-        "sourceHash": "f83c23a64afbe107e3b482ff02bb308b0bac59ec66c1542e08fc108275f1db6d"
+        "sourceHash": "f605168518a94b4a4c6195e5bda607e5e7f3b52fd4908f9add4bb57374ed7332"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "linear_demand_elasticity",
+        "sourceRecordOrder": 31,
+        "sourceId": 715013,
+        "sourceHash": "f605168518a94b4a4c6195e5bda607e5e7f3b52fd4908f9add4bb57374ed7332",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -769,25 +879,25 @@
   },
   {
     "id": "P62B-ELAS-B1-019",
-    "q": "Checkpoint: Which labeled point on the displayed linear demand curve represents unit elasticity and the maximum total revenue among A, B, and C?",
+    "q": "Checkpoint: At point B, what does the graph imply about total revenue for a small movement in either direction along the same linear demand curve?",
     "options": [
-      "Point B",
-      "Point A",
-      "Point C",
-      "Both A and C"
+      "Total revenue is locally maximized",
+      "Total revenue must rise in either direction",
+      "Total revenue must fall as price falls",
+      "Total revenue is zero at the midpoint"
     ],
     "tag": "elasticity",
     "type": "checkpoint",
     "objective": "ELAS.2",
     "difficulty": "easyBoss",
     "conceptCluster": "elasticity",
-    "primarySkill": "linear_demand_elasticity",
+    "primarySkill": "total_revenue_test",
     "secondarySkills": [],
-    "repairSkill": "linear_demand_elasticity",
+    "repairSkill": "total_revenue_test",
     "commonError": "misreads_elasticity_graph",
-    "feedback": "B is the midpoint of the linear demand curve and yields the highest total revenue, so demand is unit elastic there.",
+    "feedback": "Point B is the unit-elastic midpoint of the linear demand curve, where total revenue is at its maximum among nearby points.",
     "image": "question-assets/elasticity/ELAS-01.webp",
-    "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
+    "aHash": "00007ffbe233bc9546654a982a07f5cb0acd63b1964b36a1c3782c4ec5ecbfd5",
     "canonicalId": "P62B-ELAS-B1-019",
     "sourceId": 715016,
     "sourceGame": "micro-concept-library",
@@ -795,7 +905,7 @@
       "elasticity"
     ],
     "sourcePool": "easyBoss",
-    "sourceHash": "41ced14f37302bade25134f2d695842ee74e23c1346971dfc96376ac316dad04",
+    "sourceHash": "23c0143be4a19feced46e3a01257528bf920c59183a920fa5f9054cee7db2cba",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -805,7 +915,7 @@
         "routeKey": "linear_demand_elasticity",
         "sourceRecordOrder": 16,
         "sourceId": 715016,
-        "sourceHash": "41ced14f37302bade25134f2d695842ee74e23c1346971dfc96376ac316dad04"
+        "sourceHash": "23c0143be4a19feced46e3a01257528bf920c59183a920fa5f9054cee7db2cba"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -817,12 +927,12 @@
   },
   {
     "id": "P62B-ELAS-B2-019",
-    "q": "Checkpoint: The displayed graph gives total revenues of $360 at C, $480 at B, and $360 at A. Which pattern is correct as price falls from C through B to A?",
+    "q": "Checkpoint: Calculate total revenue at C, B, and A. Which pattern is correct as price falls across those points?",
     "options": [
-      "Revenue falls continuously because price falls",
+      "Revenue falls through every interval because price falls at each point",
       "Revenue rises in the elastic region, peaks at unit elasticity, then falls in the inelastic region",
-      "Revenue is constant because slope is constant",
-      "Revenue peaks in the inelastic region and then rises"
+      "Revenue stays constant through every interval because the curve has constant slope over the shown interval",
+      "Revenue peaks in the inelastic region, then rises as demand becomes more elastic"
     ],
     "tag": "elasticity",
     "type": "checkpoint",
@@ -843,7 +953,7 @@
       "elasticity"
     ],
     "sourcePool": "mediumBoss",
-    "sourceHash": "9b8e20928538ecd2bec75b389da5289513e41f619e1dcd8331aa7b8afedf5a22",
+    "sourceHash": "4d189a76e253bf5c0c8205d1886051317e0545b6b97fc605fa45158c49e6543f",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -853,7 +963,29 @@
         "routeKey": "total_revenue_test",
         "sourceRecordOrder": 17,
         "sourceId": 715017,
-        "sourceHash": "9b8e20928538ecd2bec75b389da5289513e41f619e1dcd8331aa7b8afedf5a22"
+        "sourceHash": "4d189a76e253bf5c0c8205d1886051317e0545b6b97fc605fa45158c49e6543f"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "boss",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 34,
+        "sourceId": 715017,
+        "sourceHash": "4d189a76e253bf5c0c8205d1886051317e0545b6b97fc605fa45158c49e6543f",
+        "changeType": "REWRITE_STEM"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "boss",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 96,
+        "sourceId": 715017,
+        "sourceHash": "4d189a76e253bf5c0c8205d1886051317e0545b6b97fc605fa45158c49e6543f",
+        "changeType": "ANSWER_LENGTH_PARALLELISM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -961,7 +1093,7 @@
   },
   {
     "id": "P62B-ELAS-M-034",
-    "q": "When price falls from $10 to $6 on D1, quantity demanded rises from 45 to 95. What is the quantity change?",
+    "q": "On D1, compare the labeled quantities at the two marked prices. What is the change in quantity demanded?",
     "options": [
       "50 units",
       "20 units",
@@ -987,7 +1119,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "1ccae37b72c36ce6662279dcd37e0258a1ada65086c0ca4b3c9e5c4b8650c967",
+    "sourceHash": "4dac62b83fc982434439cc9026ffe89d67c754af486ad616eeb0c35160f46e7c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -997,7 +1129,18 @@
         "routeKey": "ped_interpretation",
         "sourceRecordOrder": 20,
         "sourceId": 715020,
-        "sourceHash": "1ccae37b72c36ce6662279dcd37e0258a1ada65086c0ca4b3c9e5c4b8650c967"
+        "sourceHash": "4dac62b83fc982434439cc9026ffe89d67c754af486ad616eeb0c35160f46e7c"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "medium",
+        "routeKey": "ped_interpretation",
+        "sourceRecordOrder": 16,
+        "sourceId": 715020,
+        "sourceHash": "4dac62b83fc982434439cc9026ffe89d67c754af486ad616eeb0c35160f46e7c",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1009,7 +1152,7 @@
   },
   {
     "id": "P62B-ELAS-M-035",
-    "q": "When price falls from $10 to $6 on D2, quantity demanded rises from 35 to 55. What is the quantity change?",
+    "q": "Read the two quantities marked on D2. How much does quantity demanded change between them?",
     "options": [
       "50 units",
       "20 units",
@@ -1035,7 +1178,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "7fc0c4a8fb818c19968bb921781b4bc5b8b2d8b39e8a9581df08c61a68704ff5",
+    "sourceHash": "e7aee72d6a42c1d8bd040d9e7d52805c1a37e4300b5f67315945e17cfba0555d",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1045,7 +1188,18 @@
         "routeKey": "ped_interpretation",
         "sourceRecordOrder": 21,
         "sourceId": 715021,
-        "sourceHash": "7fc0c4a8fb818c19968bb921781b4bc5b8b2d8b39e8a9581df08c61a68704ff5"
+        "sourceHash": "e7aee72d6a42c1d8bd040d9e7d52805c1a37e4300b5f67315945e17cfba0555d"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "medium",
+        "routeKey": "ped_interpretation",
+        "sourceRecordOrder": 17,
+        "sourceId": 715021,
+        "sourceHash": "e7aee72d6a42c1d8bd040d9e7d52805c1a37e4300b5f67315945e17cfba0555d",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1057,7 +1211,7 @@
   },
   {
     "id": "P62B-ELAS-M-036",
-    "q": "For the same price decrease from $10 to $6, which curve is more price elastic over the labeled interval?",
+    "q": "For a price decrease from $10 to $6 on the displayed demand curves, which curve is more price elastic over the labeled interval?",
     "options": [
       "D2",
       "They have identical elasticity",
@@ -1105,7 +1259,7 @@
   },
   {
     "id": "P62B-ELAS-H-035",
-    "q": "Using B (P = $10, Q = 45) and A (P = $6, Q = 95), the midpoint price elasticity of demand on D1 is approximately:",
+    "q": "Using the two labeled points on D1, what is the midpoint price elasticity of demand?",
     "options": [
       "0.89",
       "0.57",
@@ -1131,7 +1285,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "09bfe31c16c98ed7c040814a54518258f6a3477b43e2017e62182fa14ca6638e",
+    "sourceHash": "a734f997831432a09a869da80b172ec4f176a4dffd91acca8f92a026fa9bae9c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1141,7 +1295,18 @@
         "routeKey": "midpoint_formula",
         "sourceRecordOrder": 23,
         "sourceId": 715023,
-        "sourceHash": "09bfe31c16c98ed7c040814a54518258f6a3477b43e2017e62182fa14ca6638e"
+        "sourceHash": "a734f997831432a09a869da80b172ec4f176a4dffd91acca8f92a026fa9bae9c"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "midpoint_formula",
+        "sourceRecordOrder": 22,
+        "sourceId": 715023,
+        "sourceHash": "a734f997831432a09a869da80b172ec4f176a4dffd91acca8f92a026fa9bae9c",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1153,7 +1318,7 @@
   },
   {
     "id": "P62B-ELAS-H-036",
-    "q": "Using D (P = $10, Q = 35) and C (P = $6, Q = 55), the midpoint price elasticity of demand on D2 is approximately:",
+    "q": "Compute midpoint PED for the marked D2 interval.",
     "options": [
       "0.89",
       "1.43",
@@ -1179,7 +1344,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "5eaa1c4dc47a8541b65b8babe69e5840cc6296f887534b7d7dba376a9ea4265e",
+    "sourceHash": "0edd3f53db2324b3470c1c5c0d9cef48baad5aa95dcc98c218450b28b9fc6b06",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1189,7 +1354,18 @@
         "routeKey": "midpoint_formula",
         "sourceRecordOrder": 24,
         "sourceId": 715024,
-        "sourceHash": "5eaa1c4dc47a8541b65b8babe69e5840cc6296f887534b7d7dba376a9ea4265e"
+        "sourceHash": "0edd3f53db2324b3470c1c5c0d9cef48baad5aa95dcc98c218450b28b9fc6b06"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "midpoint_formula",
+        "sourceRecordOrder": 23,
+        "sourceId": 715024,
+        "sourceHash": "0edd3f53db2324b3470c1c5c0d9cef48baad5aa95dcc98c218450b28b9fc6b06",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1249,7 +1425,7 @@
   },
   {
     "id": "P62B-ELAS-EL-034",
-    "q": "On D1, total revenue changes from $450 at B to $570 at A when price falls from $10 to $6. What does that confirm?",
+    "q": "Calculate total revenue at the two labeled points on D1. What does the change confirm about elasticity?",
     "options": [
       "D1 is inelastic over B–A",
       "D1 is perfectly inelastic over B–A",
@@ -1275,7 +1451,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "ae370d9eb64c42e0ac7f1bed48e4de1a85d4c32b50b1811ac7367644af52009c",
+    "sourceHash": "19485514c163c26e6eec9e0a78662a7c5b7c53abb004bd7ce687ea437de7df2c",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1285,7 +1461,18 @@
         "routeKey": "total_revenue_test",
         "sourceRecordOrder": 26,
         "sourceId": 715026,
-        "sourceHash": "ae370d9eb64c42e0ac7f1bed48e4de1a85d4c32b50b1811ac7367644af52009c"
+        "sourceHash": "19485514c163c26e6eec9e0a78662a7c5b7c53abb004bd7ce687ea437de7df2c"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 28,
+        "sourceId": 715026,
+        "sourceHash": "19485514c163c26e6eec9e0a78662a7c5b7c53abb004bd7ce687ea437de7df2c",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1297,7 +1484,7 @@
   },
   {
     "id": "P62B-ELAS-EL-035",
-    "q": "On D2, total revenue changes from $350 at D to $330 at C when price falls from $10 to $6. What does that confirm?",
+    "q": "Apply the total-revenue test to the two marked points on D2. How should this interval be classified?",
     "options": [
       "D2 is elastic over D–C",
       "D2 is perfectly elastic over D–C",
@@ -1323,7 +1510,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "a97cb0cdc978dcd28bd087c7eb3211142a8d3e75b9383a4c2ed035eb8f785217",
+    "sourceHash": "970e544b7c363cb6782a26a5824cbc86b1dd1b21a5ecc76b73ef6b90c77c4c80",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1333,7 +1520,18 @@
         "routeKey": "total_revenue_test",
         "sourceRecordOrder": 27,
         "sourceId": 715027,
-        "sourceHash": "a97cb0cdc978dcd28bd087c7eb3211142a8d3e75b9383a4c2ed035eb8f785217"
+        "sourceHash": "970e544b7c363cb6782a26a5824cbc86b1dd1b21a5ecc76b73ef6b90c77c4c80"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "total_revenue_test",
+        "sourceRecordOrder": 29,
+        "sourceId": 715027,
+        "sourceHash": "970e544b7c363cb6782a26a5824cbc86b1dd1b21a5ecc76b73ef6b90c77c4c80",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1345,7 +1543,7 @@
   },
   {
     "id": "P62B-ELAS-L-094",
-    "q": "The midpoint elasticities over the labeled intervals are about 1.43 for D1 and 0.89 for D2. Which statement follows?",
+    "q": "Use the labeled intervals to calculate midpoint elasticity on D1 and D2. Which statement follows?",
     "options": [
       "Only D1 is above the unit-elastic threshold",
       "Only D2 is above the unit-elastic threshold",
@@ -1371,7 +1569,7 @@
       "elasticity"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "0b1c3d55748540246c9a5f871c93795bbded13012f390a7182fc728d6c6bebe5",
+    "sourceHash": "c6d7c141771c27ca9b0ba1e0d3c1797ab637bc77ea3623bfa69f6f979af6b3fc",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1381,7 +1579,18 @@
         "routeKey": "elasticity_classification",
         "sourceRecordOrder": 28,
         "sourceId": 715028,
-        "sourceHash": "0b1c3d55748540246c9a5f871c93795bbded13012f390a7182fc728d6c6bebe5"
+        "sourceHash": "c6d7c141771c27ca9b0ba1e0d3c1797ab637bc77ea3623bfa69f6f979af6b3fc"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "elasticity_classification",
+        "sourceRecordOrder": 32,
+        "sourceId": 715028,
+        "sourceHash": "c6d7c141771c27ca9b0ba1e0d3c1797ab637bc77ea3623bfa69f6f979af6b3fc",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1441,7 +1650,7 @@
   },
   {
     "id": "P62B-ELAS-E-036",
-    "q": "In the displayed graph, horizontal D1 represents:",
+    "q": "A horizontal demand curve is the graphical form of:",
     "options": [
       "Perfectly inelastic demand",
       "Unit-elastic demand",
@@ -1467,7 +1676,7 @@
       "elasticity"
     ],
     "sourcePool": "easy",
-    "sourceHash": "8a1577defdf4072f20621238e3ad49cd14799520e84cd1d79be3d943124bbc50",
+    "sourceHash": "1d0bdc4997224a25f16c334f48331042fd2133eb1720d918a2d819f77420d01b",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1478,6 +1687,17 @@
         "sourceRecordOrder": 30,
         "sourceId": 715030,
         "sourceHash": "8a1577defdf4072f20621238e3ad49cd14799520e84cd1d79be3d943124bbc50"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "easy",
+        "routeKey": "perfectly_elastic_inelastic",
+        "sourceRecordOrder": 76,
+        "sourceId": 715030,
+        "sourceHash": "1d0bdc4997224a25f16c334f48331042fd2133eb1720d918a2d819f77420d01b",
+        "changeType": "REMOVE_GRAPH"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1489,7 +1709,7 @@
   },
   {
     "id": "P62B-ELAS-E-037",
-    "q": "In the displayed graph, vertical D2 represents:",
+    "q": "What elasticity case is represented by the vertical demand curve?",
     "options": [
       "Perfectly elastic demand",
       "Unit-elastic demand",
@@ -1515,7 +1735,7 @@
       "elasticity"
     ],
     "sourcePool": "easy",
-    "sourceHash": "57ce74a0b964961dd79987af164c32e4ca946edaeb18c93ff54b035c99a1863d",
+    "sourceHash": "0c56d65821267ae45ce93922c3878b481d336e11b3fcf3858e91adfbf717521a",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1525,7 +1745,18 @@
         "routeKey": "perfectly_elastic_inelastic",
         "sourceRecordOrder": 31,
         "sourceId": 715031,
-        "sourceHash": "57ce74a0b964961dd79987af164c32e4ca946edaeb18c93ff54b035c99a1863d"
+        "sourceHash": "0c56d65821267ae45ce93922c3878b481d336e11b3fcf3858e91adfbf717521a"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "easy",
+        "routeKey": "perfectly_elastic_inelastic",
+        "sourceRecordOrder": 77,
+        "sourceId": 715031,
+        "sourceHash": "0c56d65821267ae45ce93922c3878b481d336e11b3fcf3858e91adfbf717521a",
+        "changeType": "REMOVE_GRAPH"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1537,7 +1768,7 @@
   },
   {
     "id": "P62B-ELAS-M-037",
-    "q": "Following D2 from point A at P = $5 to point B at P = $7, what happens to quantity demanded?",
+    "q": "Follow the two labeled points on vertical D2. What happens to quantity demanded when price changes between them?",
     "options": [
       "It remains 50 units",
       "It rises to 70 units",
@@ -1563,7 +1794,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "7276f02af49cdf94d7d3d29d752e087fd9263c67c0ec971676afc7d8a2713ace",
+    "sourceHash": "1a0c4bfa88c884c438a9d006d9f9e6ee76e0e8ba9c5302094e9a5c00c7adf116",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1573,7 +1804,7 @@
         "routeKey": "perfectly_elastic_inelastic",
         "sourceRecordOrder": 32,
         "sourceId": 715032,
-        "sourceHash": "7276f02af49cdf94d7d3d29d752e087fd9263c67c0ec971676afc7d8a2713ace"
+        "sourceHash": "1a0c4bfa88c884c438a9d006d9f9e6ee76e0e8ba9c5302094e9a5c00c7adf116"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1585,7 +1816,7 @@
   },
   {
     "id": "P62B-ELAS-H-038",
-    "q": "What is the price elasticity coefficient for the vertical D2 curve?",
+    "q": "The price elasticity coefficient of a perfectly inelastic demand curve is:",
     "options": [
       "1",
       "0",
@@ -1611,7 +1842,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "7178e9fac9ef9bdcfc2fed138bd6ac146365cafeed4ffc39239aaa17fce83811",
+    "sourceHash": "064fb441d15878546df6fd9f1ca4b6466541f10933acf8768690cacafe67195f",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1622,6 +1853,17 @@
         "sourceRecordOrder": 33,
         "sourceId": 715033,
         "sourceHash": "7178e9fac9ef9bdcfc2fed138bd6ac146365cafeed4ffc39239aaa17fce83811"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "elasticity_classification",
+        "sourceRecordOrder": 78,
+        "sourceId": 715033,
+        "sourceHash": "064fb441d15878546df6fd9f1ca4b6466541f10933acf8768690cacafe67195f",
+        "changeType": "REMOVE_GRAPH"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1633,7 +1875,7 @@
   },
   {
     "id": "P62B-ELAS-EL-036",
-    "q": "On horizontal D1 at P = $5, what is the idealized implication of a seller attempting to charge a price above $5?",
+    "q": "For perfectly elastic demand at a market price of $5, what is the idealized result if one seller tries to charge more than $5?",
     "options": [
       "Quantity demanded remains fixed at 50",
       "Quantity demanded rises without limit",
@@ -1659,7 +1901,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "28c18baefc68116737e1684a20f996b0fad260af8c30a7ff1753506c964cb704",
+    "sourceHash": "be956339d93cb0825c25ad70274724a81276dfc002044274c6820ceb07713c5d",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1670,6 +1912,17 @@
         "sourceRecordOrder": 34,
         "sourceId": 715034,
         "sourceHash": "28c18baefc68116737e1684a20f996b0fad260af8c30a7ff1753506c964cb704"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "perfectly_elastic_inelastic",
+        "sourceRecordOrder": 79,
+        "sourceId": 715034,
+        "sourceHash": "be956339d93cb0825c25ad70274724a81276dfc002044274c6820ceb07713c5d",
+        "changeType": "REMOVE_GRAPH"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1777,25 +2030,25 @@
   },
   {
     "id": "P62B-ELAS-B3-019",
-    "q": "Checkpoint: Moving from A to B along D2 raises price from $5 to $7 while quantity stays at 50. What does that demonstrate?",
+    "q": "Checkpoint: Using the two labeled points on vertical D2, what is the midpoint price elasticity of demand?",
     "options": [
-      "Perfectly elastic demand",
-      "Perfectly inelastic demand",
-      "Unit-elastic demand",
-      "An elastic demand response"
+      "0",
+      "0.50",
+      "1.00",
+      "Undefined because price changes"
     ],
     "tag": "elasticity",
     "type": "checkpoint",
     "objective": "ELAS.2",
     "difficulty": "finalBoss",
     "conceptCluster": "elasticity",
-    "primarySkill": "perfectly_elastic_inelastic",
+    "primarySkill": "midpoint_formula",
     "secondarySkills": [],
-    "repairSkill": "perfectly_elastic_inelastic",
+    "repairSkill": "midpoint_formula",
     "commonError": "misreads_elasticity_graph",
-    "feedback": "A vertical demand curve allows price to change with no quantity response, the definition of perfect inelasticity.",
+    "feedback": "Quantity is unchanged between the two points, so the percentage change in quantity is zero and PED equals zero.",
     "image": "question-assets/elasticity/ELAS-03.webp",
-    "aHash": "69e915a7b7d9b93bfb15e108c39ae9d4032ce8e30baf885fa22397f7fe67476d",
+    "aHash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
     "canonicalId": "P62B-ELAS-B3-019",
     "sourceId": 715037,
     "sourceGame": "micro-concept-library",
@@ -1803,7 +2056,7 @@
       "elasticity"
     ],
     "sourcePool": "finalBoss",
-    "sourceHash": "f72c4d2212763c48a53fcaac478d53d051657b715502f4cdc6d3802c4c8d1e0a",
+    "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -1813,7 +2066,18 @@
         "routeKey": "perfectly_elastic_inelastic",
         "sourceRecordOrder": 37,
         "sourceId": 715037,
-        "sourceHash": "f72c4d2212763c48a53fcaac478d53d051657b715502f4cdc6d3802c4c8d1e0a"
+        "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "boss",
+        "routeKey": "perfectly_elastic_inelastic",
+        "sourceRecordOrder": 80,
+        "sourceId": 715037,
+        "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+        "changeType": "REMOVE_GRAPH"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -1969,9 +2233,9 @@
   },
   {
     "id": "P62B-ELAS-M-039",
-    "q": "Why does the displayed long-run supply curve show a larger response to the same price increase?",
+    "q": "Compare the short-run and long-run supply responses to the same price change. Why is the long-run response larger?",
     "options": [
-      "Producers have less time to change output",
+      "Producers have less time to change output over the shown interval",
       "Producers have more time to adjust capacity and inputs",
       "Long-run quantity is fixed by definition",
       "Price changes are smaller in the long run"
@@ -1995,7 +2259,7 @@
       "elasticity"
     ],
     "sourcePool": "medium",
-    "sourceHash": "40808a6784bd7e8ee18d77487b393be7312a21292dfaca747009de45876dc093",
+    "sourceHash": "a06b1e5fe20e3b37a52b4285b1a4e1cd6db778a5a2dd0b0d857fcde17950014a",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2005,7 +2269,18 @@
         "routeKey": "time_horizon_supply",
         "sourceRecordOrder": 41,
         "sourceId": 715041,
-        "sourceHash": "40808a6784bd7e8ee18d77487b393be7312a21292dfaca747009de45876dc093"
+        "sourceHash": "a06b1e5fe20e3b37a52b4285b1a4e1cd6db778a5a2dd0b0d857fcde17950014a"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "medium",
+        "routeKey": "time_horizon_supply",
+        "sourceRecordOrder": 18,
+        "sourceId": 715041,
+        "sourceHash": "a06b1e5fe20e3b37a52b4285b1a4e1cd6db778a5a2dd0b0d857fcde17950014a",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -2017,7 +2292,7 @@
   },
   {
     "id": "P62B-ELAS-H-039",
-    "q": "Using the midpoint formula from (P = $4, Q = 60) to point A (P = $8, Q = 70), short-run price elasticity of supply is approximately:",
+    "q": "Using the common starting point and point A on the short-run supply curve, what is midpoint price elasticity of supply?",
     "options": [
       "0.75",
       "1.33",
@@ -2043,7 +2318,7 @@
       "elasticity"
     ],
     "sourcePool": "hard",
-    "sourceHash": "b3422315268dd9625b319afed2d13e9d86d1d2c59f413284ae84ecf431a48082",
+    "sourceHash": "ed2696f478bf6588c08780dc7049a5181f0555e7ba1bf4bd8479106bec030159",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2053,7 +2328,18 @@
         "routeKey": "pes_calculation",
         "sourceRecordOrder": 42,
         "sourceId": 715042,
-        "sourceHash": "b3422315268dd9625b319afed2d13e9d86d1d2c59f413284ae84ecf431a48082"
+        "sourceHash": "ed2696f478bf6588c08780dc7049a5181f0555e7ba1bf4bd8479106bec030159"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "hard",
+        "routeKey": "pes_calculation",
+        "sourceRecordOrder": 24,
+        "sourceId": 715042,
+        "sourceHash": "ed2696f478bf6588c08780dc7049a5181f0555e7ba1bf4bd8479106bec030159",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -2065,7 +2351,7 @@
   },
   {
     "id": "P62B-ELAS-EL-037",
-    "q": "Using the midpoint formula from (P = $4, Q = 60) to point B (P = $8, Q = 100), long-run price elasticity of supply is approximately:",
+    "q": "Calculate midpoint PES for the larger long-run quantity response shown.",
     "options": [
       "0.23",
       "1.25",
@@ -2091,7 +2377,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "dd4585109a7f3782dee9faa0d0dfd3c6c1916ad659daa683d0c62e604cb87f61",
+    "sourceHash": "2da3cbc99e8d3a2877db275f2660a1b05bc0b548b90a7d9e77415eda0ff881e3",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2101,7 +2387,18 @@
         "routeKey": "pes_calculation",
         "sourceRecordOrder": 43,
         "sourceId": 715043,
-        "sourceHash": "dd4585109a7f3782dee9faa0d0dfd3c6c1916ad659daa683d0c62e604cb87f61"
+        "sourceHash": "2da3cbc99e8d3a2877db275f2660a1b05bc0b548b90a7d9e77415eda0ff881e3"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "elite",
+        "routeKey": "pes_calculation",
+        "sourceRecordOrder": 30,
+        "sourceId": 715043,
+        "sourceHash": "2da3cbc99e8d3a2877db275f2660a1b05bc0b548b90a7d9e77415eda0ff881e3",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -2117,7 +2414,7 @@
     "options": [
       "Supply tends to become more elastic over longer time horizons",
       "Supply must become perfectly inelastic over time",
-      "Short-run supply is always more elastic than long-run supply",
+      "Short-run supply is always more elastic than long-run supply over the shown interval",
       "Time horizon affects demand but never supply"
     ],
     "tag": "elasticity",
@@ -2139,7 +2436,7 @@
       "elasticity"
     ],
     "sourcePool": "elite",
-    "sourceHash": "5a048218376cdc4b68f0dc8083734c377f3922a9348fa5dc09ebcedeb60c24e4",
+    "sourceHash": "f00ca4476c3f9c95acae74c5fd5159f16c094fa875a641cef7d487c6abda9658",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2149,7 +2446,7 @@
         "routeKey": "time_horizon_supply",
         "sourceRecordOrder": 44,
         "sourceId": 715044,
-        "sourceHash": "5a048218376cdc4b68f0dc8083734c377f3922a9348fa5dc09ebcedeb60c24e4"
+        "sourceHash": "f00ca4476c3f9c95acae74c5fd5159f16c094fa875a641cef7d487c6abda9658"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -2161,7 +2458,7 @@
   },
   {
     "id": "P62B-ELAS-L-097",
-    "q": "The midpoint PES values are about 0.23 in the short run and 0.75 in the long run. Approximately how many times larger is the long-run elasticity?",
+    "q": "Calculate midpoint PES for the short-run and long-run curves. Approximately how many times larger is the long-run elasticity?",
     "options": [
       "1.30 times",
       "3.25 times",
@@ -2187,7 +2484,7 @@
       "elasticity"
     ],
     "sourcePool": "legendary",
-    "sourceHash": "25c569060b06ef992a6243bbfb7e1a52b1f5b86f790e19bd6a9be24bd9c9b668",
+    "sourceHash": "e11f218d7bc73f4f900b7a9b4094b706cac2bf5ba87342db172e8a8d2ff43e74",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2197,7 +2494,18 @@
         "routeKey": "pes_calculation",
         "sourceRecordOrder": 45,
         "sourceId": 715045,
-        "sourceHash": "25c569060b06ef992a6243bbfb7e1a52b1f5b86f790e19bd6a9be24bd9c9b668"
+        "sourceHash": "e11f218d7bc73f4f900b7a9b4094b706cac2bf5ba87342db172e8a8d2ff43e74"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "legendary",
+        "routeKey": "pes_calculation",
+        "sourceRecordOrder": 33,
+        "sourceId": 715045,
+        "sourceHash": "e11f218d7bc73f4f900b7a9b4094b706cac2bf5ba87342db172e8a8d2ff43e74",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -2209,12 +2517,12 @@
   },
   {
     "id": "P62B-ELAS-B2-020",
-    "q": "Checkpoint: Price rises from $4 to $8. Short-run quantity rises from 60 to 70 while long-run quantity rises from 60 to 100. Which curve is more elastic?",
+    "q": "Checkpoint: The two supply curves share the same starting point and face the same price increase. Which graph-based reason makes the long-run curve more elastic?",
     "options": [
-      "Short-run supply",
-      "Both are equally elastic",
-      "Long-run supply",
-      "Elasticity cannot be compared from these changes"
+      "Its quantity response is larger",
+      "Its price change is larger",
+      "Its starting quantity is smaller",
+      "Its curve is vertical"
     ],
     "tag": "elasticity",
     "type": "checkpoint",
@@ -2225,9 +2533,9 @@
     "secondarySkills": [],
     "repairSkill": "time_horizon_supply",
     "commonError": "misreads_elasticity_graph",
-    "feedback": "The long-run curve shows the larger proportional quantity response to the same proportional price change.",
+    "feedback": "With the same price change and starting point, the long-run curve shows the larger percentage quantity response.",
     "image": "question-assets/elasticity/ELAS-05.webp",
-    "aHash": "cfcb4f4392aae8cc2a733c7ba8a9f386e5ac112aab9fec834366f1fa00b4c2cd",
+    "aHash": "33f0651e38c308139e1a2379ff8603e8740f93c039f972bfbbc065c07ffcc6c0",
     "canonicalId": "P62B-ELAS-B2-020",
     "sourceId": 715046,
     "sourceGame": "micro-concept-library",
@@ -2235,7 +2543,7 @@
       "elasticity"
     ],
     "sourcePool": "mediumBoss",
-    "sourceHash": "f2b16daeb899d56809882693a0cfd891d509ef8f2f4aee1f6154c30cc3eaddfe",
+    "sourceHash": "4231f6d60d3b44f1703c28c63bcab1bcc659f191e39797f0156501d4a9bc3835",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2245,7 +2553,18 @@
         "routeKey": "time_horizon_supply",
         "sourceRecordOrder": 46,
         "sourceId": 715046,
-        "sourceHash": "f2b16daeb899d56809882693a0cfd891d509ef8f2f4aee1f6154c30cc3eaddfe"
+        "sourceHash": "4231f6d60d3b44f1703c28c63bcab1bcc659f191e39797f0156501d4a9bc3835"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "boss",
+        "routeKey": "time_horizon_supply",
+        "sourceRecordOrder": 35,
+        "sourceId": 715046,
+        "sourceHash": "4231f6d60d3b44f1703c28c63bcab1bcc659f191e39797f0156501d4a9bc3835",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",
@@ -2257,7 +2576,7 @@
   },
   {
     "id": "P62B-ELAS-B3-020",
-    "q": "Checkpoint: Using the midpoint formula for the $4-to-$8 price increase, which approximate pair correctly compares supply elasticity?",
+    "q": "Checkpoint: Using the midpoint formula and the displayed short-run and long-run endpoints, which approximate pair correctly compares supply elasticity?",
     "options": [
       "Short run 0.75; long run 0.23",
       "Short run 1.00; long run 1.00",
@@ -2283,7 +2602,7 @@
       "elasticity"
     ],
     "sourcePool": "finalBoss",
-    "sourceHash": "225fc8cab138b5d3415f00b67addc9c9597c60a9079924d84ae60eed32e0223c",
+    "sourceHash": "956d9a2b8ae9ba9d3dbe5d612289fc38b457fd8b60e0b25bded28b317a95bae3",
     "sourceOccurrences": [
       {
         "sourceGame": "micro-concept-library",
@@ -2294,6 +2613,17 @@
         "sourceRecordOrder": 47,
         "sourceId": 715047,
         "sourceHash": "225fc8cab138b5d3415f00b67addc9c9597c60a9079924d84ae60eed32e0223c"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "boss",
+        "routeKey": "pes_calculation",
+        "sourceRecordOrder": 36,
+        "sourceId": 715047,
+        "sourceHash": "956d9a2b8ae9ba9d3dbe5d612289fc38b457fd8b60e0b25bded28b317a95bae3",
+        "changeType": "REWRITE_STEM"
       }
     ],
     "primaryConceptId": "elasticity",

@@ -1,7 +1,7 @@
 {
   "phase": "6.2h-MONOPOLISTIC-COMPETITION-GRAPH-V2",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1",
-  "librarySha256": "096bfcce69322fa3ecc28a2d75f045792db66eb147a7d287b82757b7bdf288c3",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1",
+  "librarySha256": "a76b278660d1d806a431434a19a087c25942346b4f0c9425c7e8f46d9582971d",
   "newQuestionCount": 42,
   "graphCounts": {
     "01": 14,
@@ -286,18 +286,18 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 312,
-        "medium": 315,
-        "hard": 398,
+        "easy": 332,
+        "medium": 336,
+        "hard": 411,
         "elite": 193,
         "legendary": 479,
         "easyBoss": 96,
         "mediumBoss": 96,
         "finalBoss": 99,
         "legendaryBoss": 180,
-        "repair": 178,
+        "repair": 188,
         "repairSeed": 0,
-        "bridge": 180,
+        "bridge": 191,
         "calculation": 150,
         "integration": 0,
         "challengeOpening": 0,
@@ -305,9 +305,9 @@
         "challengeFinal": 0,
         "challengeLegendary": 0,
         "challengeTotal": 0,
-        "graph": 465,
+        "graph": 464,
         "assets": 284,
-        "totalCanonical": 2526
+        "totalCanonical": 2601
       },
       "countIssues": [],
       "modes": [
@@ -318,17 +318,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 312
+              "count": 332
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 315
+              "count": 336
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 398
+              "count": 411
             },
             {
               "pool": "easyBoss",
@@ -348,12 +348,12 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 178
+              "count": 188
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 180
+              "count": 191
             }
           ],
           "deficiencies": [],
@@ -367,27 +367,27 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 312
+              "count": 332
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 315
+              "count": 336
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 398
+              "count": 411
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 178
+              "count": 188
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 180
+              "count": 191
             }
           ],
           "deficiencies": [],
@@ -401,27 +401,27 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 312
+              "count": 332
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 315
+              "count": 336
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 398
+              "count": 411
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 178
+              "count": 188
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 180
+              "count": 191
             }
           ],
           "deficiencies": [],
@@ -454,17 +454,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 312
+              "count": 332
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 315
+              "count": 336
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 398
+              "count": 411
             },
             {
               "pool": "easyBoss",
@@ -484,12 +484,12 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 178
+              "count": 188
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 180
+              "count": 191
             }
           ],
           "deficiencies": [],
@@ -499,7 +499,7 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 2526,
+        "questionCount": 2601,
         "issues": []
       },
       "assetAudit": {
@@ -578,18 +578,18 @@
       "errors": [],
       "warnings": [],
       "counts": {
-        "easy": 506,
-        "medium": 512,
-        "hard": 656,
-        "elite": 315,
-        "legendary": 799,
+        "easy": 534,
+        "medium": 549,
+        "hard": 677,
+        "elite": 323,
+        "legendary": 807,
         "easyBoss": 166,
         "mediumBoss": 171,
         "finalBoss": 168,
         "legendaryBoss": 297,
-        "repair": 287,
+        "repair": 297,
         "repairSeed": 2,
-        "bridge": 302,
+        "bridge": 313,
         "calculation": 244,
         "integration": 0,
         "challengeOpening": 0,
@@ -597,9 +597,9 @@
         "challengeFinal": 0,
         "challengeLegendary": 0,
         "challengeTotal": 0,
-        "graph": 692,
-        "assets": 357,
-        "totalCanonical": 4181
+        "graph": 739,
+        "assets": 365,
+        "totalCanonical": 4304
       },
       "countIssues": [],
       "modes": [
@@ -610,17 +610,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 506
+              "count": 534
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 512
+              "count": 549
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 656
+              "count": 677
             },
             {
               "pool": "easyBoss",
@@ -640,12 +640,12 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 287
+              "count": 297
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 302
+              "count": 313
             }
           ],
           "deficiencies": [],
@@ -659,27 +659,27 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 506
+              "count": 534
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 512
+              "count": 549
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 656
+              "count": 677
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 287
+              "count": 297
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 302
+              "count": 313
             }
           ],
           "deficiencies": [],
@@ -693,27 +693,27 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 506
+              "count": 534
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 512
+              "count": 549
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 656
+              "count": 677
             },
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 287
+              "count": 297
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 302
+              "count": 313
             }
           ],
           "deficiencies": [],
@@ -727,7 +727,7 @@
             {
               "pool": "legendary",
               "minimum": 6,
-              "count": 799
+              "count": 807
             },
             {
               "pool": "legendaryBoss",
@@ -746,17 +746,17 @@
             {
               "pool": "easy",
               "minimum": 6,
-              "count": 506
+              "count": 534
             },
             {
               "pool": "medium",
               "minimum": 6,
-              "count": 512
+              "count": 549
             },
             {
               "pool": "hard",
               "minimum": 6,
-              "count": 656
+              "count": 677
             },
             {
               "pool": "easyBoss",
@@ -776,12 +776,12 @@
             {
               "pool": "repair",
               "minimum": 1,
-              "count": 287
+              "count": 297
             },
             {
               "pool": "bridge",
               "minimum": 1,
-              "count": 302
+              "count": 313
             }
           ],
           "deficiencies": [],
@@ -791,11 +791,11 @@
       ],
       "answerAudit": {
         "ok": true,
-        "questionCount": 4181,
+        "questionCount": 4304,
         "issues": []
       },
       "assetAudit": {
-        "assetCount": 357,
+        "assetCount": 365,
         "issues": []
       },
       "bossCoverage": {
