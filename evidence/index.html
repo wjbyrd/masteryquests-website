@@ -37,6 +37,73 @@
     display:none;
   }
 }
+
+/* Downloaded-results evidence */
+.evidence-csv-summary{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+  margin:22px 0;
+}
+.evidence-csv-stat{
+  padding:16px;
+  border:1px solid rgba(15,52,94,.14);
+  border-radius:14px;
+  background:#fff;
+}
+.evidence-csv-stat strong{
+  display:block;
+  margin-bottom:4px;
+  color:#0d315e;
+  font-size:1.35rem;
+}
+.evidence-csv-stat span{
+  color:#5f6d7c;
+  font-size:.9rem;
+}
+.evidence-csv-table-wrap{
+  overflow-x:auto;
+  margin:20px 0;
+  border:1px solid rgba(15,52,94,.14);
+  border-radius:14px;
+  background:#fff;
+}
+.evidence-csv-table{
+  width:100%;
+  min-width:900px;
+  border-collapse:collapse;
+}
+.evidence-csv-table th,
+.evidence-csv-table td{
+  padding:11px 12px;
+  border-bottom:1px solid rgba(15,52,94,.10);
+  text-align:left;
+  vertical-align:top;
+  font-size:.9rem;
+}
+.evidence-csv-table th{
+  color:#0d315e;
+  background:#f3f7fa;
+}
+.evidence-csv-table tr:last-child td{
+  border-bottom:0;
+}
+.evidence-csv-note{
+  margin-top:16px;
+  padding:14px 16px;
+  border-left:4px solid #1fb7b5;
+  background:#eefafa;
+}
+@media(max-width:900px){
+  .evidence-csv-summary{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:520px){
+  .evidence-csv-summary{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 <body class="evidence-page">
@@ -51,10 +118,10 @@
 <main id="main-content">
 <section class="page-hero page-hero-dark evidence-page-hero"><div class="site-container page-hero-grid"><div><p class="eyebrow">Current system evidence</p><h1>See the complete mastery loop.</h1><p class="page-hero-lead">Faculty choose the content and practice modes. Students work through real graphs, calculations, and applied questions. Mastery Report 2.0 identifies the weak signal, opens a targeted Concept Review, and points students back to practice.</p></div><div class="evidence-hero-note"><strong>Evidence, not a feature list.</strong><p>Every screen below comes from the current Faculty Build Composer, its generated ten-mode game, or the current one-page Concept Review library.</p></div></div></section>
 <section aria-label="Mastery Quests learning loop" class="evidence-loop-section"><div class="site-container"><ol class="evidence-loop"><li><strong>Play</strong><span>Use the selected mode</span></li><li><strong>Diagnose</strong><span>Read the mastery evidence</span></li><li><strong>Review</strong><span>Open the matched concept sheet</span></li><li><strong>Practice</strong><span>Repair the weak signal</span></li><li><strong>Master</strong><span>Return with stronger evidence</span></li></ol></div></section>
-<nav aria-label="Jump to evidence section" class="evidence-jump-nav"><div class="site-container evidence-jump-inner"><span class="evidence-jump-label">Jump to:</span><a href="#build">Build</a><a href="#modes">Ten modes</a><a href="#questions">Questions</a><a href="#mastery">Mastery Report</a><a href="#concept-reviews">Concept Reviews</a><a href="#practice">Return to practice</a></div></nav>
+<nav aria-label="Jump to evidence section" class="evidence-jump-nav"><div class="site-container evidence-jump-inner"><span class="evidence-jump-label">Jump to:</span><a href="#build">Build</a><a href="#modes">Ten modes</a><a href="#questions">Questions</a><a href="#mastery">Mastery Report</a><a href="#results-csv">Results CSV</a><a href="#concept-reviews">Concept Reviews</a><a href="#practice">Return to practice</a></div></nav>
 <section class="section evidence-section" id="build"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Build the experience</p><h2>Faculty control the content before students begin.</h2><p>The Composer now separates General Economics, Microeconomics, and Macroeconomics, then applies the matching discipline accent to the concept inventory. Faculty can start from a course-area combination or select concepts directly.</p></div><div class="evidence-grid evidence-grid-two">
 <article class="evidence-card evidence-card-feature"><a aria-label="Open full-size screenshot: Microeconomics course-area controls" class="evidence-shot evidence-shot-feature" href="/assets/images/evidence/composer-micro-overview.webp" rel="noopener" target="_blank"><img alt="Faculty Build Composer with Microeconomics selected in the course-area menu and Micro starter combinations displayed." src="/assets/images/evidence/composer-micro-overview.webp"/></a><div class="evidence-card-body"><h3>Choose a course area</h3><p>Microeconomics is selected, so only Micro starter combinations and concept cards belong in the working view. The selection sits above the faculty's granular concept controls.</p><a class="evidence-full-link" href="/assets/images/evidence/composer-micro-overview.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
-<article class="evidence-card evidence-card-feature"><a aria-label="Open full-size screenshot: Macroeconomics concept cards" class="evidence-shot evidence-shot-feature" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank"><img alt="Macroeconomics Composer inventory with Aggregate Demand selected and burgundy discipline accents on Macro concept cards." loading="lazy" src="/assets/images/evidence/composer-macro-concepts.webp"/></a><div class="evidence-card-body"><h3>Select the exact concepts</h3><p>Aggregate Demand is selected while related Macro concepts remain available. The consistent burgundy accent and the 54-card Macro count make the active discipline visually explicit.</p><a class="evidence-full-link" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
+<article class="evidence-card evidence-card-feature"><a aria-label="Open full-size screenshot: Macroeconomics concept cards" class="evidence-shot evidence-shot-feature" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank"><img alt="Macroeconomics Composer inventory with Aggregate Demand selected and burgundy discipline accents on Macro concept cards." loading="lazy" src="/assets/images/evidence/composer-macro-concepts.webp"/></a><div class="evidence-card-body"><h3>Select the exact concepts</h3><p>Aggregate Demand is selected while related Macro concepts remain available. The consistent burgundy accent makes the active discipline visually explicit.</p><a class="evidence-full-link" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
 </div></div></section>
 <section class="section evidence-section" id="modes"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Choose how students practice</p><h2>Ten ways to play.</h2><p>Faculty enable the modes that fit the assignment. The mode menu proves the full set; the concise guide explains what changes from one run to the next.</p></div>
 <article class="evidence-card evidence-card-feature evidence-card-full"><a aria-label="Open full-size screenshot: all ten Mastery Quests modes" class="evidence-shot evidence-shot-mode-menu" href="/assets/images/evidence/ten-mode-selection.webp" rel="noopener" target="_blank"><img alt="Mode-selection screen showing Standard Campaign, Timed Trial, Exam Drill, Quiz, Unlimited Practice, Legendary Mode, Score Attack, Trial by Graph, Fading Fortune, and Risk and Reward." loading="lazy" src="/assets/images/evidence/ten-mode-selection.webp"/></a><div class="evidence-card-body"><h3>One menu, ten practice goals</h3><p>The generated game displays only the modes enabled by the instructor. This current build enables all ten, including the three newest mechanics.</p><a class="evidence-full-link" href="/assets/images/evidence/ten-mode-selection.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
@@ -82,6 +149,64 @@
 <article class="evidence-card"><a aria-label="Open full-size screenshot: checkpoint question" class="evidence-shot" href="/assets/images/evidence/checkpoint-question.webp" rel="noopener" target="_blank"><img alt="Checkpoint encounter using a short scaffold of higher-difficulty questions tied to one eligible learning objective." loading="lazy" src="/assets/images/evidence/checkpoint-question.webp"/></a><div class="evidence-card-body"><h3>Checkpoint evidence</h3><p>Standard and Legendary campaigns use short checkpoint scaffolds tied to an eligible learning objective.</p><a class="evidence-full-link" href="/assets/images/evidence/checkpoint-question.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
 </div></div></section>
 <section class="section evidence-section" id="mastery"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Diagnose mastery</p><h2>Mastery Report 2.0 turns a run into a next step.</h2><p>The report separates performance from evidence strength, identifies the weakest concept and question form, and can route that weakness to a current Concept Review. This controlled run resolved a Scarcity weakness and Application-question trouble to GEN-ECON-01.</p></div><article class="evidence-card evidence-card-feature evidence-card-full evidence-card-report-current"><a aria-label="Open full-size screenshot: Mastery Report 2.0 Concept Review recommendation" class="evidence-shot evidence-shot-report-current" href="/assets/images/evidence/mastery-report-concept-review.webp" rel="noopener" target="_blank"><img alt="Mastery Report showing Scarcity as the weakest concept, a button to open its Concept Review, and a next move to practice Application questions." loading="lazy" src="/assets/images/evidence/mastery-report-concept-review.webp"/></a><div class="evidence-card-body"><h3>Diagnosis connected to a resource</h3><p>The recommendation is produced by the current resolver: weak concept <strong>Scarcity</strong>, weak question form <strong>Application</strong>, resolved review <strong>GEN-ECON-01</strong>. The next move sends the student back to targeted practice after review.</p><a class="evidence-full-link" href="/assets/images/evidence/mastery-report-concept-review.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article></div></section>
+<section class="section section-light evidence-section" id="results-csv">
+<div class="site-container">
+<div class="resource-group-heading evidence-heading">
+<p class="eyebrow">Collect the evidence</p>
+<h2>A student can download the run data as a CSV.</h2>
+<p>
+        This is an actual Unlimited Practice export from a deliberately varied demonstration run.
+        The run includes correct answers, misses, Repair, Bridge, Retest, graph and application items,
+        response-time evidence, and rapid-guess events so faculty can inspect what the downloadable record contains.
+      </p>
+</div>
+<div aria-label="Summary of the sample Unlimited Practice CSV" class="evidence-csv-summary">
+<div class="evidence-csv-stat"><strong>29</strong><span>counted attempts</span></div>
+<div class="evidence-csv-stat"><strong>66%</strong><span>final accuracy</span></div>
+<div class="evidence-csv-stat"><strong>6</strong><span>longest streak</span></div>
+<div class="evidence-csv-stat"><strong>3</strong><span>rapid-guess events</span></div>
+<div class="evidence-csv-stat"><strong>4m 17s</strong><span>run time</span></div>
+</div>
+<article class="evidence-card evidence-card-feature evidence-card-full">
+<div class="evidence-card-body">
+<h3>One export, multiple kinds of evidence</h3>
+<p>
+          The full file contains 41 columns of event-level telemetry. The preview below shows a small set of
+          actual rows and the fields faculty are most likely to inspect first. Rapid-guess events are logged,
+          but they do not increase the counted-attempt denominator.
+        </p>
+<div aria-label="Preview of sample Unlimited Practice results CSV" class="evidence-csv-table-wrap" tabindex="0">
+<table class="evidence-csv-table">
+<thead>
+<tr>
+<th>Event</th>
+<th>Attempt</th>
+<th>Concept</th>
+<th>Question form</th>
+<th>Difficulty</th>
+<th>Outcome</th>
+<th>Response</th>
+<th>Adaptive route</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Question</td><td>2</td><td>Marginal</td><td>Application</td><td>Easy</td><td>Correct</td><td>6.9s</td><td>Diversify</td></tr><tr><td>Question</td><td>20</td><td>Models And Assumptions</td><td>Application</td><td>Repair</td><td>Miss</td><td>11.5s</td><td>Repair</td></tr><tr><td>Question</td><td>8</td><td>Scarcity Tradeoffs</td><td>Application</td><td>Bridge</td><td>Miss</td><td>2.1s</td><td>Bridge</td></tr><tr><td>Question</td><td>10</td><td>Scarcity Tradeoffs</td><td>Application</td><td>Easy</td><td>Correct</td><td>9.5s</td><td>Retest</td></tr><tr><td>Rapid Guessing</td><td>15</td><td>Micro Versus Macro</td><td>Application</td><td>Easy</td><td>Rapid guess</td><td>0.8s</td><td>Non Engaged</td></tr><tr><td>Unlimited Ended By Student</td><td>29</td><td>—</td><td>—</td><td>Repair</td><td>Run ended</td><td>—</td><td>Unlimited_Ended_By_Student</td></tr>
+</tbody>
+</table>
+</div>
+<div class="resource-actions">
+<a class="button button-primary" download="" href="/downloads/evidence/mastery-quests-sample-unlimited-results.csv">Download Sample CSV</a>
+</div>
+<div class="evidence-csv-note">
+<strong>Private by default.</strong>
+          The game does not automatically send this file to Mastery Quests or to the instructor.
+          The student chooses to download it and submits it only when the course workflow requires evidence.
+        </div>
+</div>
+</article>
+</div>
+</section>
+
 <section class="section evidence-section" id="concept-reviews"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Review the concept</p><h2>One page, then back to practice.</h2><p>Concept Reviews provide a concise explanation, recognition cues, a common mistake, a worked example, and a check-yourself prompt. These previews come from the current production PDFs; the internal review library is not exposed.</p></div><div class="evidence-grid evidence-grid-two evidence-review-grid">
 <article class="evidence-card evidence-card-review"><a aria-label="Open full-size preview: Scarcity Concept Review" class="evidence-shot evidence-shot-review" href="/assets/images/evidence/concept-review-scarcity.webp" rel="noopener" target="_blank"><img alt="GEN-ECON-01 Scarcity Concept Review with Core Idea, How to Recognize It, Watch Out, Worked Example, and Check Yourself sections; no graph is present." loading="lazy" src="/assets/images/evidence/concept-review-scarcity.webp"/></a><div class="evidence-card-body"><h3>Scarcity</h3><p>The non-graph sample repairs the core relationship among limited resources, choice, and tradeoffs before the student returns to the game.</p><a class="evidence-full-link" href="/assets/images/evidence/concept-review-scarcity.webp" rel="noopener" target="_blank">Open full preview <span aria-hidden="true">→</span></a></div></article>
 <article class="evidence-card evidence-card-review"><a aria-label="Open full-size preview: Price Elasticity of Demand Concept Review" class="evidence-shot evidence-shot-review" href="/assets/images/evidence/concept-review-elasticity.webp" rel="noopener" target="_blank"><img alt="MICRO-04 Price Elasticity of Demand Concept Review with recognition cues, a common mistake, a midpoint-elasticity worked example, a labeled demand graph, and a check-yourself prompt." loading="lazy" src="/assets/images/evidence/concept-review-elasticity.webp"/></a><div class="evidence-card-body"><h3>Price Elasticity of Demand</h3><p>The graph-based sample combines the midpoint calculation with a labeled demand curve and a worked interpretation of elastic demand.</p><a class="evidence-full-link" href="/assets/images/evidence/concept-review-elasticity.webp" rel="noopener" target="_blank">Open full preview <span aria-hidden="true">→</span></a></div></article>
