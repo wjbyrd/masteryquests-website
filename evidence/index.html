@@ -7,6 +7,38 @@
 <title>See It in Action | Mastery Quests</title>
 <link href="/assets/css/site.css?v=20260813" rel="stylesheet"/>
 <script defer src="/assets/js/site.js"></script>
+
+<style>
+/* Evidence learning-loop spacing cleanup */
+.evidence-loop{
+  display:grid;
+  grid-template-columns:repeat(5, minmax(0, 1fr));
+  gap:28px;
+}
+
+.evidence-loop > li{
+  position:relative;
+  min-width:0;
+}
+
+.evidence-loop > li:not(:last-child)::after{
+  right:-22px;
+  width:16px;
+  text-align:center;
+}
+
+@media (max-width:900px){
+  .evidence-loop{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .evidence-loop > li:not(:last-child)::after{
+    display:none;
+  }
+}
+</style>
+
 </head>
 <body class="evidence-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
