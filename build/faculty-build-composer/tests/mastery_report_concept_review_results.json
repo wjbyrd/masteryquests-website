@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "caseCount": 16,
+  "cases": [
+    {
+      "id": "A",
+      "name": "single direct review",
+      "status": "PASS"
+    },
+    {
+      "id": "B",
+      "name": "multi-review routes to one exact skill",
+      "status": "PASS"
+    },
+    {
+      "id": "C",
+      "name": "mixed multi-review evidence is capped at two",
+      "status": "PASS"
+    },
+    {
+      "id": "D",
+      "name": "family direct child evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "E",
+      "name": "family repair-skill evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "F",
+      "name": "family primary-skill evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "G",
+      "name": "family objective evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "H",
+      "name": "family ambiguity uses ordered chooser",
+      "status": "PASS"
+    },
+    {
+      "id": "I",
+      "name": "integration meta concept has no generic review",
+      "status": "PASS"
+    },
+    {
+      "id": "J",
+      "name": "hidden supplemental never renders",
+      "status": "PASS"
+    },
+    {
+      "id": "K",
+      "name": "clean run suppresses Concept Review",
+      "status": "PASS"
+    },
+    {
+      "id": "L",
+      "name": "missing runtime manifest degrades gracefully",
+      "status": "PASS"
+    },
+    {
+      "id": "M",
+      "name": "malformed runtime manifest degrades gracefully",
+      "status": "PASS"
+    },
+    {
+      "id": "N",
+      "name": "unsafe paths are rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "O",
+      "name": "missing mapped PDF is hidden",
+      "status": "PASS"
+    },
+    {
+      "id": "P",
+      "name": "one generated build supports all ten modes without engine mutation",
+      "status": "PASS"
+    }
+  ]
+}

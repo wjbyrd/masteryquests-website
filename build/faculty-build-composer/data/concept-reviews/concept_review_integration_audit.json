@@ -1,0 +1,4373 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-13T21:31:00.510774+00:00",
+  "composerLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1",
+  "libraryAudit": {
+    "canonicalConceptCount": 126,
+    "selectableConceptCount": 126,
+    "selectableCardCount": 125,
+    "diagnosableConceptCount": 125,
+    "concepts": [
+      {
+        "canonicalConceptId": "aggregate-demand",
+        "displayName": "Aggregate Demand",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-33"
+        ],
+        "primaryReviewCode": "MACRO-33"
+      },
+      {
+        "canonicalConceptId": "aggregate-supply",
+        "displayName": "Aggregate Supply",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-34"
+        ],
+        "primaryReviewCode": "MACRO-34"
+      },
+      {
+        "canonicalConceptId": "applications-of-elasticity",
+        "displayName": "Applications of Elasticity",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "elasticity",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-09"
+        ],
+        "primaryReviewCode": "MICRO-09"
+      },
+      {
+        "canonicalConceptId": "average-costs",
+        "displayName": "Average Costs: AFC, AVC & ATC",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-22"
+        ],
+        "primaryReviewCode": "MICRO-22"
+      },
+      {
+        "canonicalConceptId": "bank-money-creation",
+        "displayName": "Bank Money Creation",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-20"
+        ],
+        "primaryReviewCode": "MACRO-20"
+      },
+      {
+        "canonicalConceptId": "binding-price-ceilings",
+        "displayName": "Price Ceilings",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-19"
+        ],
+        "primaryReviewCode": "GEN-ECON-19"
+      },
+      {
+        "canonicalConceptId": "binding-price-floors",
+        "displayName": "Price Floors",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-20"
+        ],
+        "primaryReviewCode": "GEN-ECON-20"
+      },
+      {
+        "canonicalConceptId": "central-bank-and-federal-reserve",
+        "displayName": "Central Banking and the Federal Reserve",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-19"
+        ],
+        "primaryReviewCode": "MACRO-19"
+      },
+      {
+        "canonicalConceptId": "competitive-efficiency-limits",
+        "displayName": "Competitive Efficiency & Model Limits",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-35"
+        ],
+        "primaryReviewCode": "MICRO-35"
+      },
+      {
+        "canonicalConceptId": "competitive-entry-exit-long-run",
+        "displayName": "Entry, Exit & Long-Run Equilibrium",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-33"
+        ],
+        "primaryReviewCode": "MICRO-33"
+      },
+      {
+        "canonicalConceptId": "competitive-industry-cost-conditions",
+        "displayName": "Long-Run Industry Supply & Cost Conditions",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-34"
+        ],
+        "primaryReviewCode": "MICRO-34"
+      },
+      {
+        "canonicalConceptId": "competitive-market-price-taking-revenue",
+        "displayName": "Market Structure, Price Taking & Firm Revenue",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-28"
+        ],
+        "primaryReviewCode": "MICRO-28"
+      },
+      {
+        "canonicalConceptId": "competitive-markets",
+        "displayName": "Competitive Markets",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-11"
+        ],
+        "primaryReviewCode": "GEN-ECON-11"
+      },
+      {
+        "canonicalConceptId": "competitive-output-choice",
+        "displayName": "Profit-Maximizing Output & the MR = MC Rule",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-29"
+        ],
+        "primaryReviewCode": "MICRO-29"
+      },
+      {
+        "canonicalConceptId": "competitive-profit-loss",
+        "displayName": "Profit, Loss & Break-Even",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-30"
+        ],
+        "primaryReviewCode": "MICRO-30"
+      },
+      {
+        "canonicalConceptId": "competitive-short-run-supply",
+        "displayName": "Short-Run Supply & Cost Shifts",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-32"
+        ],
+        "primaryReviewCode": "MICRO-32"
+      },
+      {
+        "canonicalConceptId": "competitive-shutdown",
+        "displayName": "Shutdown & Short-Run Loss Minimization",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "perfect-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-31"
+        ],
+        "primaryReviewCode": "MICRO-31"
+      },
+      {
+        "canonicalConceptId": "consumer-and-producer-surplus",
+        "displayName": "Consumer and Producer Surplus",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "consumer-surplus",
+          "producer-surplus",
+          "total-surplus-gains-from-exchange",
+          "efficient-quantity-allocation",
+          "surplus-changes-policy-effects",
+          "efficiency-equity-surplus-limits"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "consumer-surplus",
+          "producer-surplus",
+          "total-surplus-gains-from-exchange",
+          "efficient-quantity-allocation",
+          "surplus-changes-policy-effects",
+          "efficiency-equity-surplus-limits"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-10",
+          "MICRO-11",
+          "MICRO-12",
+          "MICRO-13",
+          "MICRO-14",
+          "MICRO-15"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "consumer-surplus",
+        "displayName": "Consumer Surplus & Willingness to Pay",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "consumer-and-producer-surplus",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-10"
+        ],
+        "primaryReviewCode": "MICRO-10"
+      },
+      {
+        "canonicalConceptId": "cost-components-schedules",
+        "displayName": "Cost Components & Cost Schedules",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-21"
+        ],
+        "primaryReviewCode": "MICRO-21"
+      },
+      {
+        "canonicalConceptId": "costs-of-production",
+        "displayName": "Costs of Production",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "economic-costs",
+          "profit-concepts",
+          "short-run-production",
+          "cost-components-schedules",
+          "average-costs",
+          "marginal-cost-production-linkages",
+          "short-run-cost-curves",
+          "sunk-avoidable-costs",
+          "long-run-average-cost-scale",
+          "minimum-efficient-scale"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "economic-costs",
+          "profit-concepts",
+          "short-run-production",
+          "cost-components-schedules",
+          "average-costs",
+          "marginal-cost-production-linkages",
+          "short-run-cost-curves",
+          "sunk-avoidable-costs",
+          "long-run-average-cost-scale",
+          "minimum-efficient-scale"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-18",
+          "MICRO-19",
+          "MICRO-20",
+          "MICRO-21",
+          "MICRO-22",
+          "MICRO-23",
+          "MICRO-24",
+          "MICRO-25",
+          "MICRO-26",
+          "MICRO-27"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "cpi-and-inflation-measurement",
+        "displayName": "CPI and Inflation Measurement",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-05"
+        ],
+        "primaryReviewCode": "MACRO-05"
+      },
+      {
+        "canonicalConceptId": "cpi-bias",
+        "displayName": "CPI Bias",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-06"
+        ],
+        "primaryReviewCode": "MACRO-06"
+      },
+      {
+        "canonicalConceptId": "cpi-versus-gdp-deflator",
+        "displayName": "CPI versus GDP Deflator",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-07"
+        ],
+        "primaryReviewCode": "MACRO-07"
+      },
+      {
+        "canonicalConceptId": "cross-price-elasticity-of-demand",
+        "displayName": "Cross-Price Elasticity of Demand",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "elasticity",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-07"
+        ],
+        "primaryReviewCode": "MICRO-07"
+      },
+      {
+        "canonicalConceptId": "demand",
+        "displayName": "Demand",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-12",
+          "GEN-ECON-13"
+        ],
+        "primaryReviewCode": "GEN-ECON-12"
+      },
+      {
+        "canonicalConceptId": "disinflation-and-policy",
+        "displayName": "Disinflation and Policy",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-40"
+        ],
+        "primaryReviewCode": "MACRO-40"
+      },
+      {
+        "canonicalConceptId": "economic-costs",
+        "displayName": "Economic Costs: Explicit, Implicit & Opportunity Cost",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-18"
+        ],
+        "primaryReviewCode": "MICRO-18"
+      },
+      {
+        "canonicalConceptId": "economic-growth-policy",
+        "displayName": "Economic Growth Policy",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-13"
+        ],
+        "primaryReviewCode": "MACRO-13"
+      },
+      {
+        "canonicalConceptId": "economist-policy-role",
+        "displayName": "Economists and Policy",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-10"
+        ],
+        "primaryReviewCode": "GEN-ECON-10"
+      },
+      {
+        "canonicalConceptId": "efficiency-equity-surplus-limits",
+        "displayName": "Efficiency, Equity & Limits of Surplus Analysis",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "consumer-and-producer-surplus",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-15"
+        ],
+        "primaryReviewCode": "MICRO-15"
+      },
+      {
+        "canonicalConceptId": "efficient-quantity-allocation",
+        "displayName": "Efficient Quantity & Allocation",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "consumer-and-producer-surplus",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-13"
+        ],
+        "primaryReviewCode": "MICRO-13"
+      },
+      {
+        "canonicalConceptId": "elasticity",
+        "displayName": "Elasticity",
+        "discipline": "micro",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "price-elasticity-of-demand",
+          "price-elasticity-of-supply",
+          "income-elasticity-of-demand",
+          "cross-price-elasticity-of-demand",
+          "elasticity-and-total-revenue",
+          "applications-of-elasticity"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "price-elasticity-of-demand",
+          "price-elasticity-of-supply",
+          "income-elasticity-of-demand",
+          "cross-price-elasticity-of-demand",
+          "elasticity-and-total-revenue",
+          "applications-of-elasticity"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-04",
+          "MICRO-05",
+          "MICRO-06",
+          "MICRO-07",
+          "MICRO-08",
+          "MICRO-09"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "elasticity-and-total-revenue",
+        "displayName": "Elasticity and Total Revenue",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "elasticity",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-08"
+        ],
+        "primaryReviewCode": "MICRO-08"
+      },
+      {
+        "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+        "displayName": "Fiscal Multipliers and Crowding Out",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-31"
+        ],
+        "primaryReviewCode": "MACRO-31"
+      },
+      {
+        "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+        "displayName": "Fiscal Policy and Aggregate Demand",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-30"
+        ],
+        "primaryReviewCode": "MACRO-30"
+      },
+      {
+        "canonicalConceptId": "fisher-effect",
+        "displayName": "Fisher Effect",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-25"
+        ],
+        "primaryReviewCode": "MACRO-25"
+      },
+      {
+        "canonicalConceptId": "gains-from-trade",
+        "displayName": "Comparative Advantage and Gains from Trade",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-09"
+        ],
+        "primaryReviewCode": "GEN-ECON-09"
+      },
+      {
+        "canonicalConceptId": "gdp-components",
+        "displayName": "GDP Components",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-02"
+        ],
+        "primaryReviewCode": "MACRO-02"
+      },
+      {
+        "canonicalConceptId": "gdp-measurement",
+        "displayName": "GDP Measurement",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-01"
+        ],
+        "primaryReviewCode": "MACRO-01"
+      },
+      {
+        "canonicalConceptId": "import-quotas-quota-rents",
+        "displayName": "Import Quotas, Quota Rents & Tariff–Quota Comparison",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "international-trade-and-trade-policy",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-25"
+        ],
+        "primaryReviewCode": "GEN-ECON-25"
+      },
+      {
+        "canonicalConceptId": "incentives",
+        "displayName": "Incentives",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-02"
+        ],
+        "primaryReviewCode": "GEN-ECON-02"
+      },
+      {
+        "canonicalConceptId": "income-elasticity-of-demand",
+        "displayName": "Income Elasticity of Demand",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "elasticity",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-06"
+        ],
+        "primaryReviewCode": "MICRO-06"
+      },
+      {
+        "canonicalConceptId": "indexing-and-real-values",
+        "displayName": "Indexing and Real Values",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-08"
+        ],
+        "primaryReviewCode": "MACRO-08"
+      },
+      {
+        "canonicalConceptId": "inflation-costs",
+        "displayName": "Costs of Inflation",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-26"
+        ],
+        "primaryReviewCode": "MACRO-26"
+      },
+      {
+        "canonicalConceptId": "inflation-tax-and-deflation",
+        "displayName": "Inflation Tax and Deflation",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-27"
+        ],
+        "primaryReviewCode": "MACRO-27"
+      },
+      {
+        "canonicalConceptId": "integrated-economic-analysis",
+        "displayName": "Integrated Economic Analysis",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "NO_SHEET_INTEGRATION_META",
+        "reason": "Cross-concept integration is a meta-level diagnosis spanning multiple canonical concepts; no single immutable review PDF is authoritative."
+      },
+      {
+        "canonicalConceptId": "integrated-macroeconomic-analysis",
+        "displayName": "Advanced Macro Checkpoint Supplement",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": false,
+        "diagnosable": false,
+        "selectionRole": "supplement-control",
+        "disposition": "HIDDEN_SUPPLEMENTAL",
+        "reason": "Checkpoint challenge questions inherit a selected normal concept at runtime; the supplement is not a standalone mastery diagnosis."
+      },
+      {
+        "canonicalConceptId": "international-trade-and-trade-policy",
+        "displayName": "International Trade and Trade Policy",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "trade-world-price-status",
+          "trade-domestic-production-consumption-quantities",
+          "trade-gains-surplus-winners-losers",
+          "tariffs-revenue-deadweight-loss",
+          "import-quotas-quota-rents",
+          "trade-policy-efficiency-distribution"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "trade-world-price-status",
+          "trade-domestic-production-consumption-quantities",
+          "trade-gains-surplus-winners-losers",
+          "tariffs-revenue-deadweight-loss",
+          "import-quotas-quota-rents",
+          "trade-policy-efficiency-distribution"
+        ],
+        "coveredByReviewCodes": [
+          "GEN-ECON-23",
+          "GEN-ECON-24",
+          "GEN-ECON-25",
+          "GEN-ECON-26",
+          "MICRO-16",
+          "MICRO-17"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "labor-market-institutions",
+        "displayName": "Labor-Market Institutions",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-16"
+        ],
+        "primaryReviewCode": "MACRO-16"
+      },
+      {
+        "canonicalConceptId": "limits-of-gdp",
+        "displayName": "Limits of GDP",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-04"
+        ],
+        "primaryReviewCode": "MACRO-04"
+      },
+      {
+        "canonicalConceptId": "liquidity-preference-and-money-market",
+        "displayName": "Liquidity Preference and the Money Market",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-28"
+        ],
+        "primaryReviewCode": "MACRO-28"
+      },
+      {
+        "canonicalConceptId": "living-standards-and-growth",
+        "displayName": "Living Standards and Growth",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-10"
+        ],
+        "primaryReviewCode": "MACRO-10"
+      },
+      {
+        "canonicalConceptId": "long-run-average-cost-scale",
+        "displayName": "LRAC, Economies & Diseconomies of Scale",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-26"
+        ],
+        "primaryReviewCode": "MICRO-26"
+      },
+      {
+        "canonicalConceptId": "long-run-macroeconomic-adjustment",
+        "displayName": "Long-Run Macroeconomic Adjustment",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-36"
+        ],
+        "primaryReviewCode": "MACRO-36"
+      },
+      {
+        "canonicalConceptId": "long-run-phillips-curve",
+        "displayName": "Long-Run Phillips Curve",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-38"
+        ],
+        "primaryReviewCode": "MACRO-38"
+      },
+      {
+        "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+        "displayName": "Macroeconomic Equilibrium and Shocks",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-35"
+        ],
+        "primaryReviewCode": "MACRO-35"
+      },
+      {
+        "canonicalConceptId": "marginal-analysis",
+        "displayName": "Marginal Analysis",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-04"
+        ],
+        "primaryReviewCode": "GEN-ECON-04"
+      },
+      {
+        "canonicalConceptId": "marginal-cost-production-linkages",
+        "displayName": "Marginal Cost & Production–Cost Linkages",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-23"
+        ],
+        "primaryReviewCode": "MICRO-23"
+      },
+      {
+        "canonicalConceptId": "market-equilibrium",
+        "displayName": "Market Equilibrium",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-16",
+          "GEN-ECON-17",
+          "GEN-ECON-18"
+        ],
+        "primaryReviewCode": "GEN-ECON-16"
+      },
+      {
+        "canonicalConceptId": "market-failures",
+        "displayName": "Market Failures",
+        "discipline": "micro",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-03"
+        ],
+        "primaryReviewCode": "MICRO-03"
+      },
+      {
+        "canonicalConceptId": "mcomp-advertising-nonprice",
+        "displayName": "Advertising, Branding & Nonprice Competition",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopolistic-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-46"
+        ],
+        "primaryReviewCode": "MICRO-46"
+      },
+      {
+        "canonicalConceptId": "mcomp-efficiency-variety-limits",
+        "displayName": "Product Variety, Efficiency & Model Limits",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopolistic-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-47"
+        ],
+        "primaryReviewCode": "MICRO-47"
+      },
+      {
+        "canonicalConceptId": "mcomp-entry-exit-long-run",
+        "displayName": "Entry, Exit & Long-Run Equilibrium",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopolistic-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-45"
+        ],
+        "primaryReviewCode": "MICRO-45"
+      },
+      {
+        "canonicalConceptId": "mcomp-short-run-choice",
+        "displayName": "Short-Run Firm Choice, Profit/Loss & Shutdown",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopolistic-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-44"
+        ],
+        "primaryReviewCode": "MICRO-44"
+      },
+      {
+        "canonicalConceptId": "mcomp-structure-differentiation",
+        "displayName": "Market Structure & Product Differentiation",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopolistic-competition",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-43"
+        ],
+        "primaryReviewCode": "MICRO-43"
+      },
+      {
+        "canonicalConceptId": "micro-versus-macro",
+        "displayName": "Microeconomics versus Macroeconomics",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-05"
+        ],
+        "primaryReviewCode": "GEN-ECON-05"
+      },
+      {
+        "canonicalConceptId": "minimum-efficient-scale",
+        "displayName": "Minimum Efficient Scale & Constant Returns to Scale",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-27"
+        ],
+        "primaryReviewCode": "MICRO-27"
+      },
+      {
+        "canonicalConceptId": "models-and-assumptions",
+        "displayName": "Models and Assumptions",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-07"
+        ],
+        "primaryReviewCode": "GEN-ECON-07"
+      },
+      {
+        "canonicalConceptId": "monetary-control-limits",
+        "displayName": "Limits of Monetary Control",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-22"
+        ],
+        "primaryReviewCode": "MACRO-22"
+      },
+      {
+        "canonicalConceptId": "monetary-neutrality",
+        "displayName": "Monetary Neutrality",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-24"
+        ],
+        "primaryReviewCode": "MACRO-24"
+      },
+      {
+        "canonicalConceptId": "monetary-policy-tools",
+        "displayName": "Monetary-Policy Tools",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-21"
+        ],
+        "primaryReviewCode": "MACRO-21"
+      },
+      {
+        "canonicalConceptId": "monetary-policy-transmission",
+        "displayName": "Monetary-Policy Transmission",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-29"
+        ],
+        "primaryReviewCode": "MACRO-29"
+      },
+      {
+        "canonicalConceptId": "money-functions-and-measures",
+        "displayName": "Money Functions and Measures",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-18"
+        ],
+        "primaryReviewCode": "MACRO-18"
+      },
+      {
+        "canonicalConceptId": "monopolistic-competition",
+        "displayName": "Monopolistic Competition",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "mcomp-structure-differentiation",
+          "mcomp-short-run-choice",
+          "mcomp-entry-exit-long-run",
+          "mcomp-advertising-nonprice",
+          "mcomp-efficiency-variety-limits"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "mcomp-structure-differentiation",
+          "mcomp-short-run-choice",
+          "mcomp-entry-exit-long-run",
+          "mcomp-advertising-nonprice",
+          "mcomp-efficiency-variety-limits"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-43",
+          "MICRO-44",
+          "MICRO-45",
+          "MICRO-46",
+          "MICRO-47"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "monopoly",
+        "displayName": "Monopoly",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "monopoly-power-barriers",
+          "monopoly-demand-revenue",
+          "monopoly-output-price",
+          "monopoly-profit-loss-shutdown",
+          "monopoly-welfare-efficiency",
+          "natural-monopoly-regulation",
+          "monopoly-price-discrimination"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "monopoly-power-barriers",
+          "monopoly-demand-revenue",
+          "monopoly-output-price",
+          "monopoly-profit-loss-shutdown",
+          "monopoly-welfare-efficiency",
+          "natural-monopoly-regulation",
+          "monopoly-price-discrimination"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-36",
+          "MICRO-37",
+          "MICRO-38",
+          "MICRO-39",
+          "MICRO-40",
+          "MICRO-41",
+          "MICRO-42"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "monopoly-demand-revenue",
+        "displayName": "Monopoly Demand, Revenue & Marginal Revenue",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-37"
+        ],
+        "primaryReviewCode": "MICRO-37"
+      },
+      {
+        "canonicalConceptId": "monopoly-output-price",
+        "displayName": "Profit-Maximizing Output & Monopoly Price",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-38"
+        ],
+        "primaryReviewCode": "MICRO-38"
+      },
+      {
+        "canonicalConceptId": "monopoly-power-barriers",
+        "displayName": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-36"
+        ],
+        "primaryReviewCode": "MICRO-36"
+      },
+      {
+        "canonicalConceptId": "monopoly-price-discrimination",
+        "displayName": "Price Discrimination",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-42"
+        ],
+        "primaryReviewCode": "MICRO-42"
+      },
+      {
+        "canonicalConceptId": "monopoly-profit-loss-shutdown",
+        "displayName": "Monopoly Profit, Loss & Shutdown",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-39"
+        ],
+        "primaryReviewCode": "MICRO-39"
+      },
+      {
+        "canonicalConceptId": "monopoly-welfare-efficiency",
+        "displayName": "Monopoly Welfare, Efficiency & Competitive Comparison",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-40"
+        ],
+        "primaryReviewCode": "MICRO-40"
+      },
+      {
+        "canonicalConceptId": "natural-monopoly-regulation",
+        "displayName": "Natural Monopoly & Regulation",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "monopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-41"
+        ],
+        "primaryReviewCode": "MICRO-41"
+      },
+      {
+        "canonicalConceptId": "natural-rate-of-unemployment",
+        "displayName": "Natural Rate of Unemployment",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-17"
+        ],
+        "primaryReviewCode": "MACRO-17"
+      },
+      {
+        "canonicalConceptId": "oligopoly",
+        "displayName": "Oligopoly",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "oligopoly-structure-concentration",
+          "oligopoly-game-theory-foundations",
+          "oligopoly-collusion-cartels",
+          "oligopoly-dynamic-strategy",
+          "oligopoly-rivalry-coordination",
+          "oligopoly-welfare-policy"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "oligopoly-structure-concentration",
+          "oligopoly-game-theory-foundations",
+          "oligopoly-collusion-cartels",
+          "oligopoly-dynamic-strategy",
+          "oligopoly-rivalry-coordination",
+          "oligopoly-welfare-policy"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-48",
+          "MICRO-49",
+          "MICRO-50",
+          "MICRO-51",
+          "MICRO-52",
+          "MICRO-53"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "oligopoly-collusion-cartels",
+        "displayName": "Collusion, Cartels & Prisoner’s-Dilemma Incentives",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "oligopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-50"
+        ],
+        "primaryReviewCode": "MICRO-50"
+      },
+      {
+        "canonicalConceptId": "oligopoly-dynamic-strategy",
+        "displayName": "Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "oligopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-51"
+        ],
+        "primaryReviewCode": "MICRO-51"
+      },
+      {
+        "canonicalConceptId": "oligopoly-game-theory-foundations",
+        "displayName": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "oligopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-49"
+        ],
+        "primaryReviewCode": "MICRO-49"
+      },
+      {
+        "canonicalConceptId": "oligopoly-rivalry-coordination",
+        "displayName": "Tacit Coordination, Price Leadership & Nonprice Competition",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "oligopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-52"
+        ],
+        "primaryReviewCode": "MICRO-52"
+      },
+      {
+        "canonicalConceptId": "oligopoly-structure-concentration",
+        "displayName": "Oligopoly Structure, Strategic Interdependence & Concentration",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "oligopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-48"
+        ],
+        "primaryReviewCode": "MICRO-48"
+      },
+      {
+        "canonicalConceptId": "oligopoly-welfare-policy",
+        "displayName": "Oligopoly Welfare, Mergers & Antitrust Tradeoffs",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "oligopoly",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-53"
+        ],
+        "primaryReviewCode": "MICRO-53"
+      },
+      {
+        "canonicalConceptId": "opportunity-cost",
+        "displayName": "Opportunity Cost",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-03"
+        ],
+        "primaryReviewCode": "GEN-ECON-03"
+      },
+      {
+        "canonicalConceptId": "perfect-competition",
+        "displayName": "Perfect Competition",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [
+          "competitive-market-price-taking-revenue",
+          "competitive-output-choice",
+          "competitive-profit-loss",
+          "competitive-shutdown",
+          "competitive-short-run-supply",
+          "competitive-entry-exit-long-run",
+          "competitive-industry-cost-conditions",
+          "competitive-efficiency-limits"
+        ],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-parent",
+        "disposition": "COVERED_BY_CHILD_CONCEPT",
+        "coveredByConceptIds": [
+          "competitive-market-price-taking-revenue",
+          "competitive-output-choice",
+          "competitive-profit-loss",
+          "competitive-shutdown",
+          "competitive-short-run-supply",
+          "competitive-entry-exit-long-run",
+          "competitive-industry-cost-conditions",
+          "competitive-efficiency-limits"
+        ],
+        "coveredByReviewCodes": [
+          "MICRO-28",
+          "MICRO-29",
+          "MICRO-30",
+          "MICRO-31",
+          "MICRO-32",
+          "MICRO-33",
+          "MICRO-34",
+          "MICRO-35"
+        ],
+        "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+      },
+      {
+        "canonicalConceptId": "phillips-curve-expectations",
+        "displayName": "Phillips-Curve Expectations",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-39"
+        ],
+        "primaryReviewCode": "MACRO-39"
+      },
+      {
+        "canonicalConceptId": "positive-versus-normative-analysis",
+        "displayName": "Positive versus Normative Analysis",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-06"
+        ],
+        "primaryReviewCode": "GEN-ECON-06"
+      },
+      {
+        "canonicalConceptId": "price-elasticity-of-demand",
+        "displayName": "Price Elasticity of Demand",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "elasticity",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-04"
+        ],
+        "primaryReviewCode": "MICRO-04"
+      },
+      {
+        "canonicalConceptId": "price-elasticity-of-supply",
+        "displayName": "Price Elasticity of Supply",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "elasticity",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-05"
+        ],
+        "primaryReviewCode": "MICRO-05"
+      },
+      {
+        "canonicalConceptId": "price-signals",
+        "displayName": "Price Signals",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-01"
+        ],
+        "primaryReviewCode": "MICRO-01"
+      },
+      {
+        "canonicalConceptId": "producer-surplus",
+        "displayName": "Producer Surplus & Willingness to Accept",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "consumer-and-producer-surplus",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-11"
+        ],
+        "primaryReviewCode": "MICRO-11"
+      },
+      {
+        "canonicalConceptId": "production-possibilities-frontier",
+        "displayName": "Production Possibilities Frontier",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "micro",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-08"
+        ],
+        "primaryReviewCode": "GEN-ECON-08"
+      },
+      {
+        "canonicalConceptId": "productivity-measurement",
+        "displayName": "Productivity Measurement",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-11"
+        ],
+        "primaryReviewCode": "MACRO-11"
+      },
+      {
+        "canonicalConceptId": "profit-concepts",
+        "displayName": "Accounting, Economic & Normal Profit",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-19"
+        ],
+        "primaryReviewCode": "MICRO-19"
+      },
+      {
+        "canonicalConceptId": "quantity-theory-of-money",
+        "displayName": "Quantity Theory of Money",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-23"
+        ],
+        "primaryReviewCode": "MACRO-23"
+      },
+      {
+        "canonicalConceptId": "real-versus-nominal-gdp",
+        "displayName": "Real versus Nominal GDP",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-03"
+        ],
+        "primaryReviewCode": "MACRO-03"
+      },
+      {
+        "canonicalConceptId": "real-versus-nominal-interest-rates",
+        "displayName": "Real versus Nominal Interest Rates",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-09"
+        ],
+        "primaryReviewCode": "MACRO-09"
+      },
+      {
+        "canonicalConceptId": "sacrifice-ratio",
+        "displayName": "Sacrifice Ratio",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-41"
+        ],
+        "primaryReviewCode": "MACRO-41"
+      },
+      {
+        "canonicalConceptId": "scarcity-and-tradeoffs",
+        "displayName": "Scarcity and Tradeoffs",
+        "discipline": "general",
+        "areas": [
+          "general",
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-01"
+        ],
+        "primaryReviewCode": "GEN-ECON-01"
+      },
+      {
+        "canonicalConceptId": "short-run-cost-curves",
+        "displayName": "Short-Run Cost Curves: Relationships & Shifts",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-24"
+        ],
+        "primaryReviewCode": "MICRO-24"
+      },
+      {
+        "canonicalConceptId": "short-run-phillips-curve",
+        "displayName": "Short-Run Phillips Curve",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-37"
+        ],
+        "primaryReviewCode": "MACRO-37"
+      },
+      {
+        "canonicalConceptId": "short-run-production",
+        "displayName": "Short-Run Production & Diminishing Marginal Product",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-20"
+        ],
+        "primaryReviewCode": "MICRO-20"
+      },
+      {
+        "canonicalConceptId": "sources-of-productivity",
+        "displayName": "Sources of Productivity",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-12"
+        ],
+        "primaryReviewCode": "MACRO-12"
+      },
+      {
+        "canonicalConceptId": "stabilization-policy",
+        "displayName": "Stabilization Policy",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-32"
+        ],
+        "primaryReviewCode": "MACRO-32"
+      },
+      {
+        "canonicalConceptId": "statutory-versus-economic-tax-incidence",
+        "displayName": "Statutory versus Economic Tax Incidence",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-21"
+        ],
+        "primaryReviewCode": "GEN-ECON-21"
+      },
+      {
+        "canonicalConceptId": "sunk-avoidable-costs",
+        "displayName": "Sunk & Avoidable Costs",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "costs-of-production",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-25"
+        ],
+        "primaryReviewCode": "MICRO-25"
+      },
+      {
+        "canonicalConceptId": "supply",
+        "displayName": "Supply",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-14",
+          "GEN-ECON-15"
+        ],
+        "primaryReviewCode": "GEN-ECON-14"
+      },
+      {
+        "canonicalConceptId": "surplus-changes-policy-effects",
+        "displayName": "Changes in Surplus & Policy Effects",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "consumer-and-producer-surplus",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-14"
+        ],
+        "primaryReviewCode": "MICRO-14"
+      },
+      {
+        "canonicalConceptId": "tariffs-revenue-deadweight-loss",
+        "displayName": "Tariffs, Revenue & Deadweight Loss",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "international-trade-and-trade-policy",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-24"
+        ],
+        "primaryReviewCode": "GEN-ECON-24"
+      },
+      {
+        "canonicalConceptId": "tax-incidence",
+        "displayName": "Tax Incidence",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-22"
+        ],
+        "primaryReviewCode": "GEN-ECON-22"
+      },
+      {
+        "canonicalConceptId": "tax-wedges-and-revenue",
+        "displayName": "Tax Wedges and Revenue",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-02"
+        ],
+        "primaryReviewCode": "MICRO-02"
+      },
+      {
+        "canonicalConceptId": "total-surplus-gains-from-exchange",
+        "displayName": "Total Surplus & Gains from Exchange",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "consumer-and-producer-surplus",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-12"
+        ],
+        "primaryReviewCode": "MICRO-12"
+      },
+      {
+        "canonicalConceptId": "trade-domestic-production-consumption-quantities",
+        "displayName": "Domestic Production, Consumption & Trade Quantities",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "international-trade-and-trade-policy",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-16"
+        ],
+        "primaryReviewCode": "MICRO-16"
+      },
+      {
+        "canonicalConceptId": "trade-gains-surplus-winners-losers",
+        "displayName": "Gains from Trade, Surplus & Winners/Losers",
+        "discipline": "micro",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "international-trade-and-trade-policy",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MICRO-17"
+        ],
+        "primaryReviewCode": "MICRO-17"
+      },
+      {
+        "canonicalConceptId": "trade-policy-efficiency-distribution",
+        "displayName": "Trade-Policy Arguments, Efficiency & Distribution",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "international-trade-and-trade-policy",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-26"
+        ],
+        "primaryReviewCode": "GEN-ECON-26"
+      },
+      {
+        "canonicalConceptId": "trade-world-price-status",
+        "displayName": "World Prices & Importer/Exporter Status",
+        "discipline": "general",
+        "areas": [
+          "micro"
+        ],
+        "parentId": "international-trade-and-trade-policy",
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "family-child",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "GEN-ECON-23"
+        ],
+        "primaryReviewCode": "GEN-ECON-23"
+      },
+      {
+        "canonicalConceptId": "unemployment-measurement",
+        "displayName": "Unemployment Measurement",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-14"
+        ],
+        "primaryReviewCode": "MACRO-14"
+      },
+      {
+        "canonicalConceptId": "unemployment-types",
+        "displayName": "Types of Unemployment",
+        "discipline": "macro",
+        "areas": [
+          "macro"
+        ],
+        "parentId": null,
+        "childIds": [],
+        "selectable": true,
+        "selectableCard": true,
+        "diagnosable": true,
+        "selectionRole": "standalone",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-15"
+        ],
+        "primaryReviewCode": "MACRO-15"
+      }
+    ]
+  },
+  "pdfAudit": {
+    "totalPdfCount": 120,
+    "countByDiscipline": {
+      "general": 26,
+      "macro": 41,
+      "micro": 53
+    },
+    "totalSizeBytes": 59987311,
+    "files": [
+      {
+        "filename": "GEN-ECON-01.pdf",
+        "relativePath": "GEN-ECON-01.pdf",
+        "sizeBytes": 353549,
+        "sha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-01",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-02.pdf",
+        "relativePath": "GEN-ECON-02.pdf",
+        "sizeBytes": 353899,
+        "sha256": "9bcc8d1a08e317fe8f5f0a499c5f2742845830b057e3274f9e1764315f9ef49c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-02",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-03.pdf",
+        "relativePath": "GEN-ECON-03.pdf",
+        "sizeBytes": 353443,
+        "sha256": "b6b15c6e6d33a281c1711dadc75a60d829be215455fd31d5bb8e0b405d1a48cb",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-03",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-04.pdf",
+        "relativePath": "GEN-ECON-04.pdf",
+        "sizeBytes": 353450,
+        "sha256": "e07a41d8fe30a714c37e4be8e9458f0b4e7f0f0ad444d3c0dd097c64f290a533",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-04",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-05.pdf",
+        "relativePath": "GEN-ECON-05.pdf",
+        "sizeBytes": 353628,
+        "sha256": "5b8a35bba7fc2667961a54c07a3a6b09094cbf66da3cf1c5d391db996ca760af",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-05",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-06.pdf",
+        "relativePath": "GEN-ECON-06.pdf",
+        "sizeBytes": 353515,
+        "sha256": "1334ea188bd15cca293feaf32e7e9c928294a954a84b5082d0d2f8017be6b4bb",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-06",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-07.pdf",
+        "relativePath": "GEN-ECON-07.pdf",
+        "sizeBytes": 353808,
+        "sha256": "40dd71c284a0dfa52b82aba73bbe8781b448406429e70caa7ae1d4c214dd1bc8",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-07",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-08.pdf",
+        "relativePath": "GEN-ECON-08.pdf",
+        "sizeBytes": 605896,
+        "sha256": "7b0515683cdc4e1235d6ea81163ea20ed943c0c29df90f07f3dd0199a4e09424",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-08",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-09.pdf",
+        "relativePath": "GEN-ECON-09.pdf",
+        "sizeBytes": 353653,
+        "sha256": "9d5940f42216ea2399aaa3ea4721289e407c358c794784cb7a16840695e0bb83",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-09",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-10.pdf",
+        "relativePath": "GEN-ECON-10.pdf",
+        "sizeBytes": 353723,
+        "sha256": "7de5e5caba8749f23c230db0c80dcb9050d7e34286b2661d6852b39e477d6056",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-10",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-11.pdf",
+        "relativePath": "GEN-ECON-11.pdf",
+        "sizeBytes": 353939,
+        "sha256": "82561ba8f8f1c9ec506337843d3af3f24d1374935ec5beb5315c02bcabcd7b4c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-11",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-12.pdf",
+        "relativePath": "GEN-ECON-12.pdf",
+        "sizeBytes": 578841,
+        "sha256": "4c0bdf4a15e0cda4838e0603e5f4ad1b7a01f4ff32fd2c2b9595d185082c381f",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-12",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-13.pdf",
+        "relativePath": "GEN-ECON-13.pdf",
+        "sizeBytes": 611599,
+        "sha256": "aa8df46c439efd810823b06203dcd5bf330cb0c7c8ac2683a5a9c024d9b154bb",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-13",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-14.pdf",
+        "relativePath": "GEN-ECON-14.pdf",
+        "sizeBytes": 559063,
+        "sha256": "68434f4acfb52f72343bc0753cacb9381cee988d76fa0ffd451a5d5b61ac10a1",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-14",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-15.pdf",
+        "relativePath": "GEN-ECON-15.pdf",
+        "sizeBytes": 624377,
+        "sha256": "9822d54120677d005ff5e648884e0fe4fb890b60ec009627f16dfee1dfa06fea",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-15",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-16.pdf",
+        "relativePath": "GEN-ECON-16.pdf",
+        "sizeBytes": 684586,
+        "sha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-16",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-17.pdf",
+        "relativePath": "GEN-ECON-17.pdf",
+        "sizeBytes": 618891,
+        "sha256": "dacae7a0491d0859cdc5e9239916c975c80706b3b5ccbfdfcf0012ab2e4a95fb",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-17",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-18.pdf",
+        "relativePath": "GEN-ECON-18.pdf",
+        "sizeBytes": 684824,
+        "sha256": "646b5f8e5e1a29250ad075064b9f948ef301c0d9a5cb1147c12ed50718434186",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-18",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-19.pdf",
+        "relativePath": "GEN-ECON-19.pdf",
+        "sizeBytes": 660121,
+        "sha256": "5e0dda5f6099a2f900bccce6f982408cd589d6779ed98ccc752a8c7f9ab60de9",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-19",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-20.pdf",
+        "relativePath": "GEN-ECON-20.pdf",
+        "sizeBytes": 660114,
+        "sha256": "318a5cda4c284af2e3e1f1be16d8173200e47a272c6d754c2510678ce1501602",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-20",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-21.pdf",
+        "relativePath": "GEN-ECON-21.pdf",
+        "sizeBytes": 661037,
+        "sha256": "635e4092c6a5b5c9f37b4f16928b7d5451185b03aef47b630f306ae6673de7e3",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-21",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-22.pdf",
+        "relativePath": "GEN-ECON-22.pdf",
+        "sizeBytes": 713728,
+        "sha256": "5ce0a806a98f7d25885f03571142345abbd4d675227f4ba1ba4cbf89192e4ce1",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-22",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-23.pdf",
+        "relativePath": "GEN-ECON-23.pdf",
+        "sizeBytes": 652360,
+        "sha256": "1596c9e45cba999decfcc5a0acda5614e10c7a36d5b48a6c1e67da1e3d2248e8",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-23",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-24.pdf",
+        "relativePath": "GEN-ECON-24.pdf",
+        "sizeBytes": 629952,
+        "sha256": "bb4105413ae19879c5f80cdba9dd9f28b5ce5a307cb674c05c2ebe55bad41f42",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-24",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-25.pdf",
+        "relativePath": "GEN-ECON-25.pdf",
+        "sizeBytes": 678659,
+        "sha256": "d6ac16c9b8b5deb427373f7be73c4830be6abafe2a63b9520b53d3b14e668377",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-25",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "GEN-ECON-26.pdf",
+        "relativePath": "GEN-ECON-26.pdf",
+        "sizeBytes": 353964,
+        "sha256": "420e9536e9f71bd999cc3c7a4ee1726af7817d7f6d4ac9e666e0dda347f75a82",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "GEN-ECON-26",
+        "discipline": "general",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-01.pdf",
+        "relativePath": "MACRO-01.pdf",
+        "sizeBytes": 354054,
+        "sha256": "5e0479e0e24bc9c340c108eaf2124ddd03e44e64ad93fcaa1dcf06589a7aec8e",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-01",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-02.pdf",
+        "relativePath": "MACRO-02.pdf",
+        "sizeBytes": 353511,
+        "sha256": "f177ce7623c18c1fe03bb22034922619b45e5c60f9e65e912227ba1809719856",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-02",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-03.pdf",
+        "relativePath": "MACRO-03.pdf",
+        "sizeBytes": 353547,
+        "sha256": "3633a38d91344c53c3d35c749276e06048ebd4d1b56f2137d09e143915ca0f4b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-03",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-04.pdf",
+        "relativePath": "MACRO-04.pdf",
+        "sizeBytes": 353663,
+        "sha256": "6f2600f7edc7b57972262987f15ccbbb7d81b8c04783f4f2a556b3041dba4ae2",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-04",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-05.pdf",
+        "relativePath": "MACRO-05.pdf",
+        "sizeBytes": 353407,
+        "sha256": "1421f034c9ad78305f5ba8c5b8255e85dc7ad2f80326d63523f3304bf5337245",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-05",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-06.pdf",
+        "relativePath": "MACRO-06.pdf",
+        "sizeBytes": 353668,
+        "sha256": "50caf2c4afea6a86ba6b7844719319b1a71c1ce58af9e814f68efd4d2e4cbcd4",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-06",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-07.pdf",
+        "relativePath": "MACRO-07.pdf",
+        "sizeBytes": 353621,
+        "sha256": "46be6f9a77d1e1bcce79f5f90708b9761cbd74d08487b8d53b3c000e1941dc2b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-07",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-08.pdf",
+        "relativePath": "MACRO-08.pdf",
+        "sizeBytes": 353495,
+        "sha256": "17efdf5304c1008b923aee8e528f8bd656a7234817b20b701ef783f3f28390f4",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-08",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-09.pdf",
+        "relativePath": "MACRO-09.pdf",
+        "sizeBytes": 353486,
+        "sha256": "5458c87b8334d711a95cc61fe86d6e7e917e74bb77d2b93ff63237afb4bb43f0",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-09",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-10.pdf",
+        "relativePath": "MACRO-10.pdf",
+        "sizeBytes": 353705,
+        "sha256": "f7a02aa89ccfd652da279d8461479435e69f49bfa8b88d8f1030b20a6ed846a9",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-10",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-11.pdf",
+        "relativePath": "MACRO-11.pdf",
+        "sizeBytes": 503143,
+        "sha256": "832d18db2cdbbf439943118a876cbd2e8e381a77aeafc24c5fc65b6d0933fe8e",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-11",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-12.pdf",
+        "relativePath": "MACRO-12.pdf",
+        "sizeBytes": 503188,
+        "sha256": "2d5828179aaa62db831aba30f596f8f2bc62b3bcbd58beebe66a26a2825d24b1",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-12",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-13.pdf",
+        "relativePath": "MACRO-13.pdf",
+        "sizeBytes": 503257,
+        "sha256": "49d256cf53848968f3dce266a3fbeda024a31b803153cda9504a69c0dba67081",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-13",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-14.pdf",
+        "relativePath": "MACRO-14.pdf",
+        "sizeBytes": 353523,
+        "sha256": "493f14d337903b8e8186823c39464b399a512851b8d96a2eae4fa667eecdc69b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-14",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-15.pdf",
+        "relativePath": "MACRO-15.pdf",
+        "sizeBytes": 353613,
+        "sha256": "01325f624cbd4c0380f273201f273ca83d4ec73e4e1d30c84eaa3bc230a168cb",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-15",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-16.pdf",
+        "relativePath": "MACRO-16.pdf",
+        "sizeBytes": 353657,
+        "sha256": "4b8dfa63d28fcf00c2e9a334637f68c109a2c02ca6646f60a9afa7fc4a11d712",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-16",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-17.pdf",
+        "relativePath": "MACRO-17.pdf",
+        "sizeBytes": 353932,
+        "sha256": "6d3f90895f03cdf47ce6911d072f5b7f3bf81f3c3176597a64ab07d59c058d8b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-17",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-18.pdf",
+        "relativePath": "MACRO-18.pdf",
+        "sizeBytes": 353563,
+        "sha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-18",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-19.pdf",
+        "relativePath": "MACRO-19.pdf",
+        "sizeBytes": 353663,
+        "sha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-19",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-20.pdf",
+        "relativePath": "MACRO-20.pdf",
+        "sizeBytes": 353683,
+        "sha256": "20f7b1daeaec37ad8a87c5960506905a9fc2f17808c398dbfc774031b11e782e",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-20",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-21.pdf",
+        "relativePath": "MACRO-21.pdf",
+        "sizeBytes": 353642,
+        "sha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-21",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-22.pdf",
+        "relativePath": "MACRO-22.pdf",
+        "sizeBytes": 353677,
+        "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-22",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-23.pdf",
+        "relativePath": "MACRO-23.pdf",
+        "sizeBytes": 427485,
+        "sha256": "6a4b084998f1afda4c5d18a084c7a2cc5af0675a9694cb38e2bbfd946826113b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-23",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-24.pdf",
+        "relativePath": "MACRO-24.pdf",
+        "sizeBytes": 417527,
+        "sha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-24",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-25.pdf",
+        "relativePath": "MACRO-25.pdf",
+        "sizeBytes": 353581,
+        "sha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-25",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-26.pdf",
+        "relativePath": "MACRO-26.pdf",
+        "sizeBytes": 353727,
+        "sha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-26",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-27.pdf",
+        "relativePath": "MACRO-27.pdf",
+        "sizeBytes": 353751,
+        "sha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-27",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-28.pdf",
+        "relativePath": "MACRO-28.pdf",
+        "sizeBytes": 594146,
+        "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-28",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-29.pdf",
+        "relativePath": "MACRO-29.pdf",
+        "sizeBytes": 687872,
+        "sha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-29",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-30.pdf",
+        "relativePath": "MACRO-30.pdf",
+        "sizeBytes": 582159,
+        "sha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-30",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-31.pdf",
+        "relativePath": "MACRO-31.pdf",
+        "sizeBytes": 581972,
+        "sha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-31",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-32.pdf",
+        "relativePath": "MACRO-32.pdf",
+        "sizeBytes": 353773,
+        "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-32",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-33.pdf",
+        "relativePath": "MACRO-33.pdf",
+        "sizeBytes": 560842,
+        "sha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-33",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-34.pdf",
+        "relativePath": "MACRO-34.pdf",
+        "sizeBytes": 554597,
+        "sha256": "b37fd709deee3612fedefd00a3b5a6383925edcd3031e07de5c4eb9f3c2d23ac",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-34",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-35.pdf",
+        "relativePath": "MACRO-35.pdf",
+        "sizeBytes": 682591,
+        "sha256": "928b0af905a78b37e98be4dfe795514df9f5ea7f5b048e76330c11867a278d06",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-35",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-36.pdf",
+        "relativePath": "MACRO-36.pdf",
+        "sizeBytes": 469111,
+        "sha256": "f30f8fbdc4eae3628df020a9f5f11dfe7250b18cf7cf29aeba2273cacabbcb14",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-36",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-37.pdf",
+        "relativePath": "MACRO-37.pdf",
+        "sizeBytes": 565287,
+        "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-37",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-38.pdf",
+        "relativePath": "MACRO-38.pdf",
+        "sizeBytes": 642014,
+        "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-38",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-39.pdf",
+        "relativePath": "MACRO-39.pdf",
+        "sizeBytes": 638816,
+        "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-39",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-40.pdf",
+        "relativePath": "MACRO-40.pdf",
+        "sizeBytes": 638729,
+        "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-40",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MACRO-41.pdf",
+        "relativePath": "MACRO-41.pdf",
+        "sizeBytes": 353540,
+        "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MACRO-41",
+        "discipline": "macro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-01.pdf",
+        "relativePath": "MICRO-01.pdf",
+        "sizeBytes": 353694,
+        "sha256": "0594ae8947fd115ab1a2c88c8f1300159fbb30f3c6dde2f1e982579f81ee8fb7",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-01",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-02.pdf",
+        "relativePath": "MICRO-02.pdf",
+        "sizeBytes": 713764,
+        "sha256": "24a93b259f112f5721392c8f587224ba98dd098e59f24e07bed7e915f018a917",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-02",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-03.pdf",
+        "relativePath": "MICRO-03.pdf",
+        "sizeBytes": 353603,
+        "sha256": "fa982a28f33bb6cf4dec0b62537e22dcb5ef3eea32fe18c9376dc2dd180020c2",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-03",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-04.pdf",
+        "relativePath": "MICRO-04.pdf",
+        "sizeBytes": 533875,
+        "sha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-04",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-05.pdf",
+        "relativePath": "MICRO-05.pdf",
+        "sizeBytes": 628588,
+        "sha256": "3aa5d2eedf9a3cee4920adebdb026c47be767bd6bd341c25526ef1a5e096c331",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-05",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-06.pdf",
+        "relativePath": "MICRO-06.pdf",
+        "sizeBytes": 353477,
+        "sha256": "b50fe275d821e1078c2698ff6bce827e70dfaea466ddee573007f08704659227",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-06",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-07.pdf",
+        "relativePath": "MICRO-07.pdf",
+        "sizeBytes": 353611,
+        "sha256": "49ef907e57fa79e006ec4ae0a6e7981bae71853305c304d7e5d67fffc7166559",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-07",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-08.pdf",
+        "relativePath": "MICRO-08.pdf",
+        "sizeBytes": 533432,
+        "sha256": "5c7e92102251048f5fdbc8722112757e186345c7f03f26f43795aa3f69e384f9",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-08",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-09.pdf",
+        "relativePath": "MICRO-09.pdf",
+        "sizeBytes": 353569,
+        "sha256": "af90729ee8c23c9630fd153b3eb8f3b1397a018baa238c084f02d7ffe9d9928d",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-09",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-10.pdf",
+        "relativePath": "MICRO-10.pdf",
+        "sizeBytes": 499984,
+        "sha256": "fc1a7e31fe4dd4a15718ef4c32e480e0d368e81907bf63331b60e6cfa172d57c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-10",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-11.pdf",
+        "relativePath": "MICRO-11.pdf",
+        "sizeBytes": 499954,
+        "sha256": "3732cd350bcae9b18ed4ba9496aa5572f789ce4bb4d65ad61774113508f3f3c9",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-11",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-12.pdf",
+        "relativePath": "MICRO-12.pdf",
+        "sizeBytes": 499948,
+        "sha256": "b454d41b5d9607145c03a7252afd184a76e0c5a6bf5729b4204ffc0c1574098d",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-12",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-13.pdf",
+        "relativePath": "MICRO-13.pdf",
+        "sizeBytes": 503840,
+        "sha256": "85f95a7e0f7f3a3c318c635400d3713593f1906defc0a7bd66799b23d436e8d1",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-13",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-14.pdf",
+        "relativePath": "MICRO-14.pdf",
+        "sizeBytes": 469008,
+        "sha256": "67d8fbd4eaadaddc77389fcb4c57b759fb8df3abcd0cd3fad0b44c5d6998f5c3",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-14",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-15.pdf",
+        "relativePath": "MICRO-15.pdf",
+        "sizeBytes": 353707,
+        "sha256": "c5e35d67d396c93f878fce0c85660017c10622da86afc8fd1b95a0883f6a29fa",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-15",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-16.pdf",
+        "relativePath": "MICRO-16.pdf",
+        "sizeBytes": 600485,
+        "sha256": "ffdd7e45c23e62f3fe83dcbb0ea356e8b2a59f72b197c5d7a81fdd533b919e0c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-16",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-17.pdf",
+        "relativePath": "MICRO-17.pdf",
+        "sizeBytes": 477282,
+        "sha256": "6f9db5c59dbf614c088aba8e78111e2b03586b3ce09b5f9e82718bf30c2d3576",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-17",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-18.pdf",
+        "relativePath": "MICRO-18.pdf",
+        "sizeBytes": 353521,
+        "sha256": "1e755f4fedf3c4a1f5ebcbac245a635aa09e9199ebd1fbd6043538d9e21f81a7",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-18",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-19.pdf",
+        "relativePath": "MICRO-19.pdf",
+        "sizeBytes": 353524,
+        "sha256": "93a17d663b88cb0dcf04b4696dba224b56e9f169b44180077d91df388eba48ba",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-19",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-20.pdf",
+        "relativePath": "MICRO-20.pdf",
+        "sizeBytes": 429082,
+        "sha256": "0724b92d6e72ea26219eabcc0fccd389a80e39aace9386bc852459c806443d20",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-20",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-21.pdf",
+        "relativePath": "MICRO-21.pdf",
+        "sizeBytes": 821195,
+        "sha256": "2addf3db5e0c084f27a8e61c26bdcf9552adb7a403831f7dfc2fc0b634ee94e1",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-21",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-22.pdf",
+        "relativePath": "MICRO-22.pdf",
+        "sizeBytes": 568872,
+        "sha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-22",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-23.pdf",
+        "relativePath": "MICRO-23.pdf",
+        "sizeBytes": 568829,
+        "sha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-23",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-24.pdf",
+        "relativePath": "MICRO-24.pdf",
+        "sizeBytes": 503897,
+        "sha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-24",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-25.pdf",
+        "relativePath": "MICRO-25.pdf",
+        "sizeBytes": 353542,
+        "sha256": "41c7f4e94f080c122ad178e92c83df5c0c4aeffa3a31029a52f041ee5aab7503",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-25",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-26.pdf",
+        "relativePath": "MICRO-26.pdf",
+        "sizeBytes": 605434,
+        "sha256": "fff581cc87ef2a611df4a3a5a4b1fabb7ffb6f9bf9fd12fcf68d6da62c3fbe1f",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-26",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-27.pdf",
+        "relativePath": "MICRO-27.pdf",
+        "sizeBytes": 605417,
+        "sha256": "cc83e3bfee5644848c8968aaca1dad0c16ef7165dc6d68e7453b34d93a379d5e",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-27",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-28.pdf",
+        "relativePath": "MICRO-28.pdf",
+        "sizeBytes": 665946,
+        "sha256": "7da8934c4a1717ef467fd06d0b6fff9fb8642e8f374a830542dfd15d646d778d",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-28",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-29.pdf",
+        "relativePath": "MICRO-29.pdf",
+        "sizeBytes": 666049,
+        "sha256": "12a0e8066ade335347598db1f3255252477a83ae665a6128315505863af16370",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-29",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-30.pdf",
+        "relativePath": "MICRO-30.pdf",
+        "sizeBytes": 781714,
+        "sha256": "1752f9ca8ec530d303970590bf671e797cd598e1b9b02c2c22507a642b4fa70c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-30",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-31.pdf",
+        "relativePath": "MICRO-31.pdf",
+        "sizeBytes": 634695,
+        "sha256": "fc05ca1af10a0dd5df2f373f4fa66a00a94598c3351405c278a46a17b2791c17",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-31",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-32.pdf",
+        "relativePath": "MICRO-32.pdf",
+        "sizeBytes": 634679,
+        "sha256": "8294847a3f3496953f8e30b63a34eb8a1d6acfe6b679dd056d87010789d672ec",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-32",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-33.pdf",
+        "relativePath": "MICRO-33.pdf",
+        "sizeBytes": 779627,
+        "sha256": "da4a205e051b47b57ca053fbd9a1d294280b0f0688f3eb0bac1c45fa04704033",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-33",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-34.pdf",
+        "relativePath": "MICRO-34.pdf",
+        "sizeBytes": 420593,
+        "sha256": "12d44e3c982c5d4464872383a4df4728efef1640f36ba35ff59eccc967760d41",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-34",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-35.pdf",
+        "relativePath": "MICRO-35.pdf",
+        "sizeBytes": 779679,
+        "sha256": "df77db0504f3580ff48739410109c353d9e56c523e740c0a7a530c68497cef62",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-35",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-36.pdf",
+        "relativePath": "MICRO-36.pdf",
+        "sizeBytes": 671184,
+        "sha256": "4e8f658fe4fcc32323d8eee853d31cddbada5219d4146aee0f6e1a0ac0c86c50",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-36",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-37.pdf",
+        "relativePath": "MICRO-37.pdf",
+        "sizeBytes": 751263,
+        "sha256": "c519602167d085afee48aae6423d674d0d31174739157ccfbc0d9a1b745dbb80",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-37",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-38.pdf",
+        "relativePath": "MICRO-38.pdf",
+        "sizeBytes": 751255,
+        "sha256": "c05e1e496727fe6b057195a2a39d8a3ec36198824d9785a983fd3eefa09b90e7",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-38",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-39.pdf",
+        "relativePath": "MICRO-39.pdf",
+        "sizeBytes": 712900,
+        "sha256": "665923def0302bc57b619404813c797c00770778755a9acdfd7c0be3ab32822c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-39",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-40.pdf",
+        "relativePath": "MICRO-40.pdf",
+        "sizeBytes": 671095,
+        "sha256": "7adcbcfb4759c165a9438844cf775f8e6fc52ac12a8c42a26ed21ac9a8332048",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-40",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-41.pdf",
+        "relativePath": "MICRO-41.pdf",
+        "sizeBytes": 672024,
+        "sha256": "d9b63219b87949dade8a0b1cb62e14e413e13c2335056555d0749a7fca35c2bb",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-41",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-42.pdf",
+        "relativePath": "MICRO-42.pdf",
+        "sizeBytes": 353569,
+        "sha256": "a03eb1af93eaa0c91e612ce15af269707f90e2fba1ffb75d61b8a5d93bebb47b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-42",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-43.pdf",
+        "relativePath": "MICRO-43.pdf",
+        "sizeBytes": 353813,
+        "sha256": "86924159f46232a5587b7d662467b4130aeb3197ec226ef28f579a0f14fa13c5",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-43",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-44.pdf",
+        "relativePath": "MICRO-44.pdf",
+        "sizeBytes": 690056,
+        "sha256": "2731eb56d4f1dc1060e36a1f9be07a9b2529ff501272db24cca0fce855be7872",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-44",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-45.pdf",
+        "relativePath": "MICRO-45.pdf",
+        "sizeBytes": 689950,
+        "sha256": "47b761401c04b03b11c93b23b66321bc216ea866c377accb26a8cd55452c70fc",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-45",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-46.pdf",
+        "relativePath": "MICRO-46.pdf",
+        "sizeBytes": 353902,
+        "sha256": "d5d28e0d374a05f9b6099a8b8dacd442295d8a14e13de0c3e3584e6abea2c140",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-46",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-47.pdf",
+        "relativePath": "MICRO-47.pdf",
+        "sizeBytes": 690024,
+        "sha256": "4214d54092035e9d404e3797952219df935fe8b991fc847755a7967366c1a61b",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-47",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-48.pdf",
+        "relativePath": "MICRO-48.pdf",
+        "sizeBytes": 398136,
+        "sha256": "176997142487a8a5476223a8d77381d34e746d4d77d1ddb88ee30d8dcf8b1606",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-48",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-49.pdf",
+        "relativePath": "MICRO-49.pdf",
+        "sizeBytes": 379984,
+        "sha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-49",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-50.pdf",
+        "relativePath": "MICRO-50.pdf",
+        "sizeBytes": 460161,
+        "sha256": "188e5d55b00ad1a2cff44f3da36d153fec895c8a4c6875609fe211629179ef58",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-50",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-51.pdf",
+        "relativePath": "MICRO-51.pdf",
+        "sizeBytes": 403409,
+        "sha256": "d396e96d8831fe4b78b40b35f35795b54f4c39ec5ee9ffb4534540802fe63f06",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-51",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-52.pdf",
+        "relativePath": "MICRO-52.pdf",
+        "sizeBytes": 467822,
+        "sha256": "93b8a89028f55f40844ea5221dc22135c762496c7a30a20eaa285bef6cb5046c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-52",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-53.pdf",
+        "relativePath": "MICRO-53.pdf",
+        "sizeBytes": 353811,
+        "sha256": "0f407010039c171401dd1c7776548f8632a968e250860bf951b4e4b95fbb3ebd",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-53",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      }
+    ],
+    "duplicateReviewCodes": [],
+    "duplicateFilenames": [],
+    "missingSequenceCodes": [],
+    "orphanPdfCodes": [],
+    "malformedPdfs": [],
+    "multiPagePdfs": [],
+    "noSelectableTextPdfs": [],
+    "filenameCodeMismatches": [],
+    "manifestFilenameCodeMismatches": []
+  },
+  "mappingAudit": {
+    "directlyMappedCanonicalConceptCount": 116,
+    "allConceptsHaveDisposition": true,
+    "dispositionCounts": {
+      "COVERED_BY_CHILD_CONCEPT": 8,
+      "HIDDEN_SUPPLEMENTAL": 1,
+      "NO_SHEET_INTEGRATION_META": 1,
+      "REVIEW_SHEET": 116
+    },
+    "unmappedDiagnosableConceptIds": [],
+    "conflictingMappings": [],
+    "multiReviewConcepts": [
+      {
+        "canonicalConceptId": "demand",
+        "reviewCodes": [
+          "GEN-ECON-12",
+          "GEN-ECON-13"
+        ],
+        "mappingKind": "EXPLICIT_ORDERED_REVIEW_BUNDLE"
+      },
+      {
+        "canonicalConceptId": "market-equilibrium",
+        "reviewCodes": [
+          "GEN-ECON-16",
+          "GEN-ECON-17",
+          "GEN-ECON-18"
+        ],
+        "mappingKind": "EXPLICIT_ORDERED_REVIEW_BUNDLE"
+      },
+      {
+        "canonicalConceptId": "supply",
+        "reviewCodes": [
+          "GEN-ECON-14",
+          "GEN-ECON-15"
+        ],
+        "mappingKind": "EXPLICIT_ORDERED_REVIEW_BUNDLE"
+      }
+    ],
+    "orphanReviewCodes": [],
+    "unreachableReviewCodes": [],
+    "diagnosisBehaviorClassification": "C_MIXED",
+    "diagnosisBehaviorExplanation": "Granular child selections are diagnosed by child canonical IDs, while broad family-parent selections are currently diagnosed only by the parent ID/tag.",
+    "parentOnlyDiagnosticConcerns": [
+      {
+        "canonicalConceptId": "consumer-and-producer-surplus",
+        "displayName": "Consumer and Producer Surplus",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "consumer-surplus",
+          "producer-surplus",
+          "total-surplus-gains-from-exchange",
+          "efficient-quantity-allocation",
+          "surplus-changes-policy-effects",
+          "efficiency-equity-surplus-limits"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "costs-of-production",
+        "displayName": "Costs of Production",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "economic-costs",
+          "profit-concepts",
+          "short-run-production",
+          "cost-components-schedules",
+          "average-costs",
+          "marginal-cost-production-linkages",
+          "short-run-cost-curves",
+          "sunk-avoidable-costs",
+          "long-run-average-cost-scale",
+          "minimum-efficient-scale"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "elasticity",
+        "displayName": "Elasticity",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "price-elasticity-of-demand",
+          "price-elasticity-of-supply",
+          "income-elasticity-of-demand",
+          "cross-price-elasticity-of-demand",
+          "elasticity-and-total-revenue",
+          "applications-of-elasticity"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "international-trade-and-trade-policy",
+        "displayName": "International Trade and Trade Policy",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "trade-world-price-status",
+          "trade-domestic-production-consumption-quantities",
+          "trade-gains-surplus-winners-losers",
+          "tariffs-revenue-deadweight-loss",
+          "import-quotas-quota-rents",
+          "trade-policy-efficiency-distribution"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "monopolistic-competition",
+        "displayName": "Monopolistic Competition",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "mcomp-structure-differentiation",
+          "mcomp-short-run-choice",
+          "mcomp-entry-exit-long-run",
+          "mcomp-advertising-nonprice",
+          "mcomp-efficiency-variety-limits"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "monopoly",
+        "displayName": "Monopoly",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "monopoly-power-barriers",
+          "monopoly-demand-revenue",
+          "monopoly-output-price",
+          "monopoly-profit-loss-shutdown",
+          "monopoly-welfare-efficiency",
+          "natural-monopoly-regulation",
+          "monopoly-price-discrimination"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "oligopoly",
+        "displayName": "Oligopoly",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "oligopoly-structure-concentration",
+          "oligopoly-game-theory-foundations",
+          "oligopoly-collusion-cartels",
+          "oligopoly-dynamic-strategy",
+          "oligopoly-rivalry-coordination",
+          "oligopoly-welfare-policy"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      },
+      {
+        "canonicalConceptId": "perfect-competition",
+        "displayName": "Perfect Competition",
+        "currentDiagnosisBehavior": "PARENT_ID_ONLY_WHEN_PARENT_CARD_IS_SELECTED",
+        "coveredByConceptIds": [
+          "competitive-market-price-taking-revenue",
+          "competitive-output-choice",
+          "competitive-profit-loss",
+          "competitive-shutdown",
+          "competitive-short-run-supply",
+          "competitive-entry-exit-long-run",
+          "competitive-industry-cost-conditions",
+          "competitive-efficiency-limits"
+        ],
+        "step2Concern": "Mastery Report 2.0 currently groups the parent selection under the parent tag; Step 2 needs an explicit child/fallback presentation strategy."
+      }
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "hardFailures": [],
+    "warnings": [
+      {
+        "type": "diagnosable-no-sheet-meta",
+        "canonicalConceptIds": [
+          "integrated-economic-analysis"
+        ]
+      },
+      {
+        "type": "diagnosable-parent-covered-by-children",
+        "canonicalConceptIds": [
+          "consumer-and-producer-surplus",
+          "costs-of-production",
+          "elasticity",
+          "international-trade-and-trade-policy",
+          "monopolistic-competition",
+          "monopoly",
+          "oligopoly",
+          "perfect-competition"
+        ]
+      }
+    ]
+  }
+}

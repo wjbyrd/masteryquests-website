@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "2.0.0-calibration",
+  "generatedAt": "2026-08-13T16:05:01.792759+00:00",
+  "stage": "pre-PDF content audit",
+  "reviewCount": 6,
+  "officialLogoPath": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\assets\\images\\mastery-quests-logo-standalone.png",
+  "officialLogoHashMatches": true,
+  "allChecksPassed": true,
+  "checks": [
+    {
+      "code": "GEN-ECON-01",
+      "title": "Scarcity",
+      "coreIdeaWordCount": 55,
+      "workedExampleWordCount": 41,
+      "recognitionClueCount": 4,
+      "outcomeCoreSimilarity": 0.027,
+      "asset": null,
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true,
+        "benchmarkContentUnchanged": true
+      },
+      "issues": [],
+      "passed": true
+    },
+    {
+      "code": "GEN-ECON-11",
+      "title": "Competitive Markets",
+      "coreIdeaWordCount": 73,
+      "workedExampleWordCount": 67,
+      "recognitionClueCount": 5,
+      "outcomeCoreSimilarity": 0.049,
+      "asset": null,
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true
+      },
+      "issues": [],
+      "passed": true
+    },
+    {
+      "code": "MACRO-01",
+      "title": "GDP Measurement",
+      "coreIdeaWordCount": 91,
+      "workedExampleWordCount": 67,
+      "recognitionClueCount": 5,
+      "outcomeCoreSimilarity": 0.022,
+      "asset": null,
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true
+      },
+      "issues": [],
+      "passed": true
+    },
+    {
+      "code": "MACRO-17",
+      "title": "Natural Rate of Unemployment",
+      "coreIdeaWordCount": 89,
+      "workedExampleWordCount": 62,
+      "recognitionClueCount": 5,
+      "outcomeCoreSimilarity": 0.008,
+      "asset": null,
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true
+      },
+      "issues": [],
+      "passed": true
+    },
+    {
+      "code": "MICRO-04",
+      "title": "Price Elasticity of Demand",
+      "coreIdeaWordCount": 99,
+      "workedExampleWordCount": 64,
+      "recognitionClueCount": 5,
+      "outcomeCoreSimilarity": 0.078,
+      "asset": {
+        "path": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\question-assets\\elasticity\\ELAS-01.webp",
+        "exists": true,
+        "sha256Matches": true,
+        "altWordCount": 54
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true,
+        "graphVisiblyInterpreted": true,
+        "altTextReviewed": true
+      },
+      "issues": [],
+      "passed": true
+    },
+    {
+      "code": "MICRO-21",
+      "title": "Cost Components & Cost Schedules",
+      "coreIdeaWordCount": 90,
+      "workedExampleWordCount": 57,
+      "recognitionClueCount": 5,
+      "outcomeCoreSimilarity": 0.017,
+      "asset": {
+        "path": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\question-assets\\costs-of-production\\COST-03.webp",
+        "exists": true,
+        "sha256Matches": true,
+        "altWordCount": 63
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true,
+        "graphVisiblyInterpreted": true,
+        "altTextReviewed": true
+      },
+      "issues": [],
+      "passed": true
+    }
+  ],
+  "accessibilityNote": "Source alt text is complete for meaningful images. The current ReportLab and pypdf stack does not reliably create a tagged Figure structure element with /Alt or artifact decorative graphics, so this calibration does not claim PDF/UA compliance."
+}

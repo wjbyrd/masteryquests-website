@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "caseCount": 12,
+  "cases": [
+    {
+      "id": "A",
+      "name": "general + all",
+      "status": "PASS",
+      "visibleCount": 13
+    },
+    {
+      "id": "B",
+      "name": "micro + all",
+      "status": "PASS",
+      "visibleCount": 80
+    },
+    {
+      "id": "C",
+      "name": "macro + all",
+      "status": "PASS",
+      "visibleCount": 54
+    },
+    {
+      "id": "D",
+      "name": "general + ready",
+      "status": "PASS",
+      "visibleCount": 7
+    },
+    {
+      "id": "E",
+      "name": "micro + supporting",
+      "status": "PASS",
+      "visibleCount": 27
+    },
+    {
+      "id": "F",
+      "name": "macro + ready",
+      "status": "PASS",
+      "visibleCount": 48
+    },
+    {
+      "id": "G",
+      "name": "General → Micro → Macro → General",
+      "status": "PASS",
+      "visibleCounts": [
+        13,
+        80,
+        54,
+        13
+      ]
+    },
+    {
+      "id": "H",
+      "name": "expanded Micro family children",
+      "status": "PASS",
+      "parentCount": 8,
+      "childCount": 54
+    },
+    {
+      "id": "I",
+      "name": "Macro excludes Costs of Production children",
+      "status": "PASS",
+      "excludedChildCount": 10
+    },
+    {
+      "id": "J",
+      "name": "search inside Macro",
+      "status": "PASS",
+      "resultCount": 0
+    },
+    {
+      "id": "K",
+      "name": "starter presets remain area-valid",
+      "status": "PASS",
+      "presetCount": 9,
+      "macroPresetCount": 3
+    },
+    {
+      "id": "L",
+      "name": "mobile/accent source contract",
+      "status": "PASS",
+      "accentWidthPx": 4
+    }
+  ],
+  "areaAudit": {
+    "general": {
+      "eligibleConceptCount": 13,
+      "visibleCardCount": 13,
+      "parentCount": 1,
+      "childSubtopicCount": 0,
+      "standaloneCount": 12,
+      "readyCount": 7,
+      "supportingCount": 6
+    },
+    "micro": {
+      "eligibleConceptCount": 80,
+      "visibleCardCount": 80,
+      "parentCount": 8,
+      "childSubtopicCount": 54,
+      "standaloneCount": 18,
+      "readyCount": 53,
+      "supportingCount": 27
+    },
+    "macro": {
+      "eligibleConceptCount": 54,
+      "visibleCardCount": 54,
+      "parentCount": 1,
+      "childSubtopicCount": 0,
+      "standaloneCount": 53,
+      "readyCount": 48,
+      "supportingCount": 6
+    }
+  },
+  "metadataDefectCount": 36,
+  "canonicalConceptCount": 126,
+  "canonicalConceptIdsSha256": "9aff9af3b239d01b1f24d37c8a1404b92d8308a978dcc250929f7f29789e931f",
+  "composerLibrarySha256": "5dfa6cbd327cf5922e9c071280b0a403fa4a2b3840803a5fbaca27a66dfd33d8",
+  "allTenModesExpected": true
+}

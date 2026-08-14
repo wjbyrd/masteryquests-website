@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "2.0.0-calibration",
+  "generatedAt": "2026-08-13T00:00:00-04:00",
+  "composerLibrarySha256": "63424e0425bb8d0ab38842d0d7951514d08c64be5f3dd6bb8718f91ada32b66b",
+  "benchmark": "GEN-ECON-01",
+  "officialLogo": {
+    "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/assets/images/mastery-quests-logo-standalone.png",
+    "sha256": "57cdfcc29a5a3e2ade7731b5b66f519fbc23434d86b2d9aba4cf9f82146bfb2f"
+  },
+  "accessibility": {
+    "documentLanguage": "en-US",
+    "logicalDrawingOrder": "Header, metadata, title, Core Idea, recognition clues, Watch Out, Worked Example, Check Yourself, footer.",
+    "taggingStatus": "Source alt text is complete for meaningful images. The current ReportLab and pypdf stack does not reliably create a tagged Figure structure element with /Alt or artifact decorative graphics, so this calibration does not claim PDF/UA compliance."
+  },
+  "reviews": [
+    {
+      "code": "GEN-ECON-01",
+      "canonicalConceptIds": ["scarcity-and-tradeoffs"],
+      "title": "Scarcity",
+      "discipline": "general",
+      "disciplineLabel": "GENERAL ECONOMICS",
+      "evidence": {
+        "canonicalDefinition": "Analyze scarcity, tradeoffs, efficiency, and equity.",
+        "selectedQuestionIds": ["P52A-SCAR-BR-001", "P52A-SCAR-R-002"],
+        "testedDistinctions": ["scarcity versus temporary shortage", "limited resources and competing uses", "tradeoffs"],
+        "observedMisconceptions": ["Scarcity means a good is nearly absent", "A resource with many units cannot be scarce"]
+      },
+      "content": {
+        "subtitle": "Resources are limited, so every choice has a cost.",
+        "outcome": "Explain scarcity and identify tradeoffs created by limited resources",
+        "core": "Scarcity means people, businesses, and governments have limited resources but unlimited wants. Because resources such as time, money, labor, and raw materials are limited, choices must be made. Every choice involves a tradeoff, and those tradeoffs force individuals and societies to decide how to use scarce resources. Scarcity is the basic problem that economics studies.",
+        "recognition": [
+          "Resources are limited, but wants are greater than what can be produced.",
+          "A choice must be made between competing uses.",
+          "Getting more of one thing means giving up something else.",
+          "The question focuses on limits, tradeoffs, or unmet wants."
+        ],
+        "watch": "Scarcity does not mean there is almost none of a good. It means the good is limited relative to wants. Even time and money are scarce because they have alternative uses.",
+        "worked": "A student has two hours before an exam and must choose between studying economics or finishing a history paper. The student cannot fully do both. This is scarcity because time is limited, so choosing one use means giving up the other.",
+        "check": "A city has enough money to build either a new park or repair several roads, but not both this year. Why is this an example of scarcity?",
+        "asset": null,
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Beginner",
+        "time": "4 minutes"
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true,
+        "benchmarkContentUnchanged": true
+      }
+    },
+    {
+      "code": "GEN-ECON-11",
+      "canonicalConceptIds": ["competitive-markets"],
+      "title": "Competitive Markets",
+      "discipline": "general",
+      "disciplineLabel": "GENERAL ECONOMICS",
+      "evidence": {
+        "canonicalDefinition": "Identify competitive markets and price-taking behavior.",
+        "selectedQuestionIds": ["ECON-MG-EASY-36", "ECON-MG-EASY-37", "P52B-COMP-M-001", "P52B-COMP-M-004", "P52B-COMP-H-002", "P52B-COMP-H-004", "P52B-COMP-R-001", "P52B-COMP-R-002", "P52B-COMP-BR-001"],
+        "testedDistinctions": ["many independent participants", "price taking", "small market share", "entry and exit", "buyer information and switching", "market concentration"],
+        "observedMisconceptions": ["Any seller that posts a price is a price maker", "Many sellers alone guarantee strict price taking", "Temporary profit proves market power", "Entry barriers increase competition"]
+      },
+      "content": {
+        "subtitle": "Competition limits how much control one buyer or seller has over price.",
+        "outcome": "Identify the conditions that create price-taking behavior and limited market power",
+        "core": "A competitive market contains many independent buyers and sellers, usually trading products that buyers view as close substitutes. No single participant controls enough of the market to set the market price. A small firm is therefore a price taker: it chooses how much to sell at the price created by market supply and demand. Competition becomes stronger when firms can enter or exit, buyers can compare offers, and switching among sellers is easy.",
+        "recognition": [
+          "Many independent firms sell the same product or close substitutes.",
+          "One seller supplies only a small share of total market output.",
+          "A firm accepts a price determined by overall market supply and demand.",
+          "Buyers can compare prices and switch sellers without much difficulty.",
+          "Entry by new firms or exit by existing firms changes competitive pressure."
+        ],
+        "watch": "A market is not strictly competitive just because it has several sellers. Product differentiation, search costs, network effects, or barriers to entry can still give firms pricing power. The key question is whether one seller can raise its price persistently without losing many customers to available alternatives.",
+        "worked": "A wheat farmer is one of thousands selling a standardized crop. The posted market price is $6 per bushel. If this farmer asks $7 while other farmers still charge $6, buyers can purchase identical wheat elsewhere. The farmer is too small to move the market price, so raising the price would sharply reduce sales. The evidence - many sellers, a standardized product, and easy switching - identifies price-taking behavior.",
+        "check": "An online marketplace makes prices easy to compare, but a merger leaves one company controlling most available inventory. Which fact strengthens competition, which fact weakens it, and why?",
+        "asset": null,
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Beginner",
+        "time": "4 minutes"
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true
+      }
+    },
+    {
+      "code": "MACRO-01",
+      "canonicalConceptIds": ["gdp-measurement"],
+      "title": "GDP Measurement",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "evidence": {
+        "canonicalDefinition": "Apply the income-expenditure identity and GDP inclusion and exclusion rules.",
+        "selectedQuestionIds": ["ECON-NL-EASY-1", "ECON-NL-EASY-5", "ECON-NL-EASY-7", "ECON-EC-EASYBOSS-17004", "ECON-EC-EASYBOSS-17011", "P52B-S3-GDPM-B3-002", "ECON-NL-GDP-COUNTING-RULES-5003", "ECON-NL-INTERMEDIATE-VS-FINAL-GOODS-6002"],
+        "testedDistinctions": ["current production", "domestic production boundary", "final versus intermediate goods", "used goods", "financial transactions and transfers", "income equals expenditure"],
+        "observedMisconceptions": ["Every sale or payment adds to GDP", "Ownership determines the domestic boundary", "Intermediate and final goods should both be added", "Used goods are current production"]
+      },
+      "content": {
+        "subtitle": "GDP counts current domestic production without double counting.",
+        "outcome": "Apply GDP inclusion rules and explain why measured expenditure equals measured income",
+        "core": "Gross domestic product is the market value of final goods and services produced within a country's borders during a specific period. Current production matters: used goods, stocks, bonds, and transfer payments do not represent newly produced output. Final goods are counted instead of adding intermediate goods separately, because the intermediate value is already included in the final product. The location of production, not the owner's nationality, determines whether output is domestic. Measured expenditure equals measured income because a buyer's spending becomes income to the sellers and workers who produced the output.",
+        "recognition": [
+          "The good or service was produced during the period being measured.",
+          "Production occurred inside the country's borders, regardless of ownership.",
+          "A final product is distinguished from an input used to make another product.",
+          "A resale, financial trade, or transfer changes ownership but adds no current output.",
+          "One transaction is viewed as both buyer expenditure and seller income."
+        ],
+        "watch": "Spending money does not automatically create GDP. A used-car sale, stock purchase, or cash transfer may be a transaction without current production. Also, adding the value of an intermediate input and the final good double counts the input. Imports are excluded because they were produced abroad, even when domestic residents buy them.",
+        "worked": "A mill sells flour to a bakery for $50, and the bakery sells the finished bread to households for $120. Final-goods accounting counts $120, not $170, because the flour's value is already embodied in the bread. The households' $120 of expenditure becomes revenue and income for the producers involved. Counting the same production from the expenditure side or the income side therefore gives the same GDP amount.",
+        "check": "A U.S.-owned factory makes a car in Mexico, while a Japanese-owned factory makes a car in Ohio. Which car belongs in U.S. GDP, and what rule determines the answer?",
+        "asset": null,
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes"
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true
+      }
+    },
+    {
+      "code": "MACRO-17",
+      "canonicalConceptIds": ["natural-rate-of-unemployment"],
+      "title": "Natural Rate of Unemployment",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "evidence": {
+        "canonicalDefinition": "Interpret the natural rate and deviations caused by business cycles.",
+        "selectedQuestionIds": ["ECON-NL-EASY-80", "P52B-S1-NRU-E-001", "P52B-S1-NRU-E-002", "P52B-S1-NRU-E-003", "P52B-S1-NRU-M-001", "P52B-S1-NRU-M-002", "P52B-S1-NRU-M-003", "P52B-S1-NRU-R-001", "ECON-NL-NATURAL-RATE-6036"],
+        "testedDistinctions": ["frictional plus structural unemployment", "cyclical deviation", "above or below the natural rate", "changing natural rate", "matching efficiency and structural change"],
+        "observedMisconceptions": ["A healthy economy has zero unemployment", "The natural rate includes cyclical unemployment", "The natural rate is permanently fixed", "Below-natural unemployment means unemployment disappeared"]
+      },
+      "content": {
+        "subtitle": "The natural rate is a changing benchmark, not zero unemployment.",
+        "outcome": "Separate the natural unemployment benchmark from business-cycle unemployment",
+        "core": "The natural rate of unemployment is the unemployment that remains when the economy is operating near its normal long-run level. It includes frictional unemployment from ordinary job search and structural unemployment from mismatches between workers and available jobs. It excludes cyclical unemployment caused by recessions or unusually strong expansions. Actual unemployment can move above or below the natural rate over the business cycle. Cyclical unemployment equals actual unemployment minus the natural rate. The natural rate can also change as demographics, labor-market institutions, matching technology, or persistent skill mismatches change.",
+        "recognition": [
+          "Frictional and structural unemployment are combined into a long-run benchmark.",
+          "A recession pushes actual unemployment above the benchmark.",
+          "An unusually tight labor market pushes actual unemployment below the benchmark.",
+          "Job matching, worker skills, demographics, or institutions change over time.",
+          "The problem asks for the gap between actual and natural unemployment."
+        ],
+        "watch": "The natural rate is neither zero nor permanently fixed. Workers still search for jobs and industries still change in a healthy economy. A temporary recession raises cyclical unemployment, not automatically the natural rate; however, lasting skill loss or labor-force detachment can eventually raise structural unemployment and the natural rate.",
+        "worked": "Suppose actual unemployment is 7% and the natural rate is 5%. Cyclical unemployment = 7% - 5% = 2 percentage points. The positive gap indicates recession-related unemployment on top of normal frictional and structural unemployment. If demand recovers and the natural rate remains 5%, actual unemployment should move back toward 5%. It need not fall to zero because normal job search and skill mismatch remain.",
+        "check": "A job-matching platform shortens job searches, but a major industry shift leaves many workers without the skills employers need. How could each change affect the natural rate?",
+        "asset": null,
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes"
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true
+      }
+    },
+    {
+      "code": "MICRO-04",
+      "canonicalConceptIds": ["price-elasticity-of-demand"],
+      "title": "Price Elasticity of Demand",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "evidence": {
+        "canonicalDefinition": "Measure and interpret how quantity demanded responds to price changes, including determinants, midpoint calculations, classification, slope-versus-elasticity, and perfectly elastic or inelastic demand.",
+        "selectedQuestionIds": ["P62B-ELAS-H-031", "P62B-ELAS-H-032", "P62B-ELAS-M-028", "P62B-ELAS-R-003", "P62B-ELAS-R-006", "P62B-ELAS-R-007", "P62B-ELAS-R-008", "P62B-ELAS-R-009", "P62B-ELAS-L-091"],
+        "testedDistinctions": ["percentage responsiveness", "midpoint formula", "elastic, unit elastic, and inelastic", "slope versus elasticity", "determinants", "perfectly elastic and perfectly inelastic demand"],
+        "observedMisconceptions": ["Raw unit changes measure elasticity", "Steeper always means less elastic", "Price change belongs in the numerator", "Endpoint percentages can be used in either direction", "A vertical curve is perfectly elastic"]
+      },
+      "content": {
+        "subtitle": "Elasticity measures percentage responsiveness, not visual steepness.",
+        "outcome": "Calculate midpoint price elasticity of demand and interpret the result",
+        "core": "Price elasticity of demand measures how strongly quantity demanded responds to a price change: PED = absolute percentage change in quantity demanded divided by percentage change in price. The midpoint method uses the average of the two quantities and the average of the two prices, so reversing the direction gives the same result. Demand is elastic when PED is greater than 1, unit elastic at 1, and inelastic below 1. Elasticity uses percentages, not raw unit changes or visual slope. Close substitutes, a longer adjustment period, a larger budget share, and a narrower market definition generally make demand more elastic.",
+        "recognition": [
+          "Two price-quantity points are provided for a midpoint calculation.",
+          "The problem asks whether the quantity response is elastic, unit elastic, or inelastic.",
+          "Substitutes, time to adjust, budget share, or market scope are changing.",
+          "A linear demand curve has constant slope but different elasticity along the line.",
+          "A horizontal or vertical demand curve represents a limiting elasticity case."
+        ],
+        "watch": "A steeper-looking curve is not automatically less elastic. Slope uses the original price and quantity units, while elasticity compares percentage changes and depends on the price-quantity location. Put percentage quantity change in the numerator, use midpoint averages in both denominators, and classify demand using the absolute value of PED.",
+        "worked": "<b>Use points C and B on the graph.</b><br/>C: P = $12, Q = 30; B: P = $8, Q = 60.<br/>% change in Q = |60 - 30| / 45 = 66.7%.<br/>% change in P = |8 - 12| / 10 = 40.0%.<br/>PED = 66.7% / 40.0% = 1.67. Because 1.67 is greater than 1, demand is elastic over C-to-B: the percentage quantity response is larger than the percentage price change.",
+        "check": "Using points B (P = $8, Q = 60) and A (P = $4, Q = 90), what is midpoint PED, and how should demand be classified over that interval?",
+        "asset": {
+          "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/elasticity/ELAS-01.webp",
+          "sourceUrl": "data/question-assets/elasticity/ELAS-01.webp",
+          "sha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
+          "alt": "Linear demand curve from price $16 at quantity 0 to price $0 at quantity 120. Point C is price $12 and quantity 30, point B is price $8 and quantity 60, and point A is price $4 and quantity 90. The C-to-B midpoint elasticity is 1.67, while the B-to-A interval is less responsive."
+        },
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "6 minutes"
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true,
+        "graphVisiblyInterpreted": true,
+        "altTextReviewed": true
+      }
+    },
+    {
+      "code": "MICRO-21",
+      "canonicalConceptIds": ["cost-components-schedules"],
+      "title": "Cost Components & Cost Schedules",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "evidence": {
+        "canonicalDefinition": "Work with total fixed cost, total variable cost, total cost, and short-run cost schedules.",
+        "selectedQuestionIds": ["P62E-COP-E-013", "P62E-COP-E-014", "P62E-COP-E-015", "PMC-COP-M-040", "P62E-COP-M-037", "PMC-COP-R-043", "PMC-COP-R-044", "PMC-COP-R-046", "PMC-COP-BR-049", "PMC-COP-BR-051"],
+        "testedDistinctions": ["fixed versus variable cost", "TC = TFC + TVC", "cost schedule completion", "average-cost identities", "vertical gap between TC and TVC"],
+        "observedMisconceptions": ["Fixed cost falls when output falls", "TVC remains positive at zero output", "TC is found by subtraction or multiplication", "Total fixed cost and average fixed cost move the same way"]
+      },
+      "content": {
+        "subtitle": "Cost identities connect every row of a short-run cost schedule.",
+        "outcome": "Complete short-run cost schedules using total and average cost identities",
+        "core": "In the short run, total fixed cost (TFC) does not change with output, while total variable cost (TVC) rises or falls as production changes. Total cost combines both components: TC = TFC + TVC. For positive output Q, divide each total by Q: AFC = TFC / Q, AVC = TVC / Q, and ATC = TC / Q = AFC + AVC. At zero output, TVC is normally zero, TC equals TFC, and average costs are undefined because division by zero is impossible. On a total-cost graph, the vertical distance between TC and TVC equals TFC at every quantity.",
+        "recognition": [
+          "A cost-schedule row is missing TFC, TVC, or TC.",
+          "A fixed payment remains even when current output is zero.",
+          "A cost changes when labor, materials, or production changes.",
+          "The vertical gap between TC and TVC is compared across quantities.",
+          "Total costs must be converted to per-unit AFC, AVC, or ATC."
+        ],
+        "watch": "Do not subtract or multiply fixed and variable cost when finding total cost: add them. Also distinguish total fixed cost from average fixed cost. TFC stays constant as output changes, but AFC = TFC / Q falls as the same fixed amount is spread across more units. Average costs are not defined at Q = 0.",
+        "worked": "<b>Read the graph at Q = 120.</b><br/>Point A shows TC = $1,200; point B shows TVC = $800; point C shows TFC = $400.<br/>Check: $400 + $800 = $1,200.<br/>AFC = $400 / 120 = $3.33, AVC = $800 / 120 = $6.67, and ATC = $1,200 / 120 = $10.00. The constant $400 vertical gap between TC and TVC is total fixed cost.",
+        "check": "At Q = 10, a schedule shows TFC = $90 and TC = $250. What are TVC, AFC, AVC, and ATC, and how can you verify that AFC + AVC = ATC?",
+        "asset": {
+          "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-03.webp",
+          "sourceUrl": "data/question-assets/costs-of-production/COST-03.webp",
+          "sha256": "2e60f97d02447bd27b6e64eb90f52e269ea37b9220efea4fd2a3e1581eebf7ed",
+          "alt": "Short-run total-cost graph with quantity on the horizontal axis and total cost on the vertical axis. At quantity 120, point A on total cost is $1,200, point B on total variable cost is $800, and point C on the horizontal total fixed cost line is $400. The vertical distance between total cost and total variable cost equals the constant $400 fixed cost."
+        },
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "6 minutes"
+      },
+      "manualQuality": {
+        "economicsReviewed": true,
+        "recognitionCluesConcrete": true,
+        "misconceptionRepairExplained": true,
+        "workedExampleDemonstratesConcept": true,
+        "checkQuestionAligned": true,
+        "grammarReviewed": true,
+        "graphVisiblyInterpreted": true,
+        "altTextReviewed": true
+      }
+    }
+  ]
+}

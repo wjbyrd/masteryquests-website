@@ -2593,11 +2593,28 @@ body.game-active #soundToggle {
     min-width:150px;
 }
 
+.concept-review-section{border-color:rgba(45,212,191,.48);}
+.concept-review-intro{margin:0 0 12px;color:rgba(224,242,254,.82);line-height:1.5;}
+.concept-review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;}
+.concept-review-link{display:flex;flex-direction:column;gap:6px;min-height:112px;padding:14px;border:1px solid rgba(45,212,191,.42);border-radius:11px;background:rgba(2,6,23,.64);color:#eef6ff;text-decoration:none;box-shadow:inset 0 0 16px rgba(0,0,0,.36);}
+.concept-review-link:hover{border-color:#5eead4;background:rgba(13,54,66,.72);transform:translateY(-1px);}
+.concept-review-link:focus-visible,.concept-review-more summary:focus-visible{outline:3px solid #f7d982;outline-offset:3px;}
+.concept-review-link-title{font-weight:900;line-height:1.3;color:#f7d982;}
+.concept-review-reason{font-size:12px;line-height:1.45;color:rgba(224,242,254,.78);flex:1;}
+.concept-review-open{font-size:11px;font-weight:900;letter-spacing:.7px;text-transform:uppercase;color:#5eead4;}
+.concept-review-more{margin-top:12px;border-top:1px solid rgba(224,242,254,.12);padding-top:10px;}
+.concept-review-more summary{cursor:pointer;color:#c7ecff;font-weight:800;padding:4px 0;}
+.concept-review-compact-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.concept-review-link.compact{display:inline-flex;min-height:0;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;flex:1 1 220px;padding:10px 12px;}
+.concept-review-link.compact .concept-review-open{white-space:nowrap;}
+
 @media(max-width:768px){
     .mastery-report-screen{ padding:14px; }
     .mastery-report-title{ font-size:24px; }
     .mastery-row-main{ flex-direction:column; gap:4px; }
     .mastery-row-score{ white-space:normal; }
+    .concept-review-grid{grid-template-columns:1fr;}
+    .concept-review-link.compact{flex-basis:100%;}
 }
 
 
@@ -3484,7 +3501,7 @@ let remediationState = {
     careless: false
 };
 let conceptMemory = {};
-let masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [] };
+let masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [], attemptEvidence: [] };
 let adaptiveMode = "support";
 // =============================================
 // RAPID GUESSING / BUTTON-MASHING DETECTOR
@@ -4090,9 +4107,10 @@ function loadSavedGame(){
         gameMode = saveData.gameMode || gameMode || "standard";
 
         conceptMemory = saveData.conceptMemory || {};
-        masteryState = saveData.masteryState || { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [] };
+        masteryState = saveData.masteryState || { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [], attemptEvidence: [] };
         if(!masteryState.bySkill) masteryState.bySkill = {};
         if(!masteryState.byDifficulty) masteryState.byDifficulty = {};
+        if(!masteryState.attemptEvidence) masteryState.attemptEvidence = [];
         adaptiveMode = saveData.adaptiveMode || "support";
         tagHistory = saveData.tagHistory || [];
         lastTypes = saveData.lastTypes || [];
@@ -4400,6 +4418,22 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
     if(masteryState.recent.length > 20){
         masteryState.recent.shift();
     }
+
+    if(!masteryState.attemptEvidence) masteryState.attemptEvidence = [];
+    masteryState.attemptEvidence.push({
+        questionId: String(question.canonicalId || question.questionId || question.id || ""),
+        canonicalConceptId: String(question.primaryConceptId || ""),
+        familyConceptId: String(question.familyConceptId || ""),
+        subtopicIds: Array.isArray(question.subtopicIds) ? [...question.subtopicIds] : [],
+        primarySkill: String(question.primarySkill || question.skillId || ""),
+        repairSkill: String(question.repairSkill || question.repairSkillId || ""),
+        secondarySkills: [...new Set([...(question.secondarySkills || []), ...(question.secondarySkillIds || [])])],
+        objective: String(question.objective || inferObjective(question) || ""),
+        correct: !!isCorrect,
+        responseTime,
+        tag: String(question.tag || ""),
+        difficulty: overallDifficulty
+    });
 }
 
 function getRecentPerformance(windowSize = 8){
@@ -6423,7 +6457,7 @@ if(!hasSavedRun){
     bossPool = [];
     calcBag = [];
     conceptMemory = {};
-    masteryState = { byTag: {},  byObjective: {},  bySkill: {}, byDifficulty: {}, recent: [] };
+    masteryState = { byTag: {},  byObjective: {},  bySkill: {}, byDifficulty: {}, recent: [], attemptEvidence: [] };
     tagHistory = [];
     lastTypes = [];
     adaptiveMode = "support";
@@ -6518,7 +6552,7 @@ function resetRunStateForNewMode(){
     bossPool = [];
     if(typeof calcBag !== "undefined") calcBag = [];
     conceptMemory = {};
-    masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [] };
+    masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [], attemptEvidence: [] };
     tagHistory = [];
     lastTypes = [];
     adaptiveMode = "support";
@@ -9746,6 +9780,7 @@ else if(accuracy < 75){
 // No answer keys. No question IDs. No nonsense.
 // =============================================
 let latestResultsScreenHTML = "";
+let latestConceptReviewTitles = [];
 
 const TEMPLATE_OBJECTIVE_LABELS = {}
 
@@ -10178,7 +10213,56 @@ function getMasteryReportData(){
     };
 }
 
-function showMasteryReportScreen(options = {}){
+function getConceptReviewResolutionInput(report){
+    const weakTags = new Set((report.weakestConcepts || []).map(item => item.key));
+    const matchedEvidence = (masteryState.attemptEvidence || []).filter(attempt => weakTags.has(attempt.tag));
+    const evidence = matchedEvidence.length
+        ? matchedEvidence
+        : (masteryState.attemptEvidence || []).filter(attempt => !attempt.correct);
+    const conceptScores = new Map();
+    evidence.forEach(attempt => {
+        const conceptId = String(attempt.canonicalConceptId || attempt.familyConceptId || "");
+        if(!conceptId) return;
+        conceptScores.set(conceptId, (conceptScores.get(conceptId) || 0) + (attempt.correct ? 0.5 : 2));
+    });
+    const canonicalConceptId = [...conceptScores.entries()]
+        .sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] || "";
+    return {
+        canonicalConceptId,
+        hasMeaningfulWeakness: !!(report.hasConceptWeakness || report.hasSkillWeakness),
+        attemptEvidence:evidence,
+        objectiveEvidence:Object.entries(masteryState.byObjective || {}).map(([id, bucket]) => ({id, ...bucket})),
+        skillEvidence:Object.entries(masteryState.bySkill || {}).map(([id, bucket]) => ({id, ...bucket}))
+    };
+}
+
+function renderConceptReviewLink(item, compact = false){
+    return `<a class="concept-review-link${compact ? " compact" : ""}" href="${escapeHTML(item.path)}" target="_blank" rel="noopener" aria-label="Open Concept Review: ${escapeHTML(item.title)}">
+        <span class="concept-review-link-title">${escapeHTML(item.title)}</span>
+        ${compact ? "" : `<span class="concept-review-reason">${escapeHTML(item.reason || "Review this concept before your next run.")}</span>`}
+        <span class="concept-review-open" aria-hidden="true">Open PDF ↗</span>
+    </a>`;
+}
+
+function renderConceptReviewSection(result){
+    const recommendations = result?.recommendations || [];
+    const choices = result?.choices || [];
+    const more = result?.more || [];
+    if(!recommendations.length && !choices.length) return "";
+    const direct = recommendations.length ? `
+        <div class="concept-review-grid">${recommendations.map(item => renderConceptReviewLink(item)).join("")}</div>
+        ${more.length ? `<details class="concept-review-more"><summary>More review topics</summary><div class="concept-review-compact-list">${more.map(item => renderConceptReviewLink(item, true)).join("")}</div></details>` : ""}` : "";
+    const chooser = choices.length ? `
+        <p class="concept-review-intro">The run identified a broad concept family, but not one reliable subtopic. Choose the part that felt hardest.</p>
+        <details class="concept-review-more" open><summary>Choose a review topic</summary><div class="concept-review-compact-list">${choices.map(item => renderConceptReviewLink(item, true)).join("")}</div></details>` : "";
+    return `<section class="mastery-section concept-review-section" aria-labelledby="conceptReviewHeading">
+        <h3 id="conceptReviewHeading">Concept Review</h3>
+        <p class="concept-review-intro">Use the review below to repair the specific evidence gap from this run.</p>
+        ${direct}${chooser}
+    </section>`;
+}
+
+async function showMasteryReportScreen(options = {}){
     const gameBox = document.getElementById("gameBox");
     if(!gameBox) return;
 
@@ -10187,6 +10271,24 @@ function showMasteryReportScreen(options = {}){
     }
 
     const report = getMasteryReportData();
+    let conceptReviewResult = {kind:"NONE", recommendations:[]};
+    try{
+        const manifest = await MQConceptReviewRuntime?.loadConceptReviewManifest?.();
+        if(manifest){
+            conceptReviewResult = MQConceptReviewRuntime.resolveMasteryConceptReviews({
+                manifest,
+                ...getConceptReviewResolutionInput(report)
+            });
+            conceptReviewResult = await MQConceptReviewRuntime.filterAvailableReviewResult(conceptReviewResult);
+        }
+    }catch(error){
+        console.warn("Concept Reviews unavailable:", error);
+    }
+    latestConceptReviewTitles = [...new Set([
+        ...(conceptReviewResult.recommendations || []),
+        ...(conceptReviewResult.choices || [])
+    ].map(item => item.title).filter(Boolean))];
+    const conceptReviewSection = renderConceptReviewSection(conceptReviewResult);
     const scoreCard = report.riskReward
         ? `<div class="mastery-stat-card"><span class="mastery-stat-label">Final Bankroll</span><span class="mastery-stat-value">${report.riskReward.finalBankroll}</span></div>`
         : report.score !== null
@@ -10304,6 +10406,8 @@ function showMasteryReportScreen(options = {}){
                 </div>
             </div>
 
+            ${conceptReviewSection}
+
             <div class="mastery-section">
                 <h3>Next Moves</h3>
                 ${report.nextSteps.map(step => `<div class="mastery-row"><span class="mastery-row-name">${escapeHTML(step)}</span></div>`).join("")}
@@ -10360,6 +10464,7 @@ function copyMasteryReport(){
         report.hasSkillWeakness ? "Weakest Skills:" : "Skill Signals:",
         ...(report.hasSkillWeakness && report.weakestSkills.length ? report.weakestSkills.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No major skill weakness detected."]),
         "",
+        ...(latestConceptReviewTitles.length ? ["Concept Review:", ...latestConceptReviewTitles.map(title => `- ${title}`), ""] : []),
         "Next Moves:",
         ...report.nextSteps.map(step => `- ${step}`)
     ].filter(line => line !== null);

@@ -3,6 +3,7 @@
 
 const Core = window.MQComposerCore;
 const Library = window.MQ_COMPOSER_LIBRARY;
+const CourseAreaModel = window.MQCourseAreaModel;
 const MODE_LABELS = {
   standard: 'Standard Campaign',
   timed: 'Timed Trial',
@@ -41,39 +42,6 @@ const AREA_LABELS = {
   micro: 'Microeconomics',
   macro: 'Macroeconomics'
 };
-
-const GENERAL_IDS = new Set([
-  'scarcity-and-tradeoffs', 'opportunity-cost', 'marginal-analysis', 'incentives',
-  'gains-from-trade', 'market-failures', 'models-and-assumptions',
-  'production-possibilities-frontier', 'micro-versus-macro',
-  'positive-versus-normative-analysis', 'economist-policy-role',
-  'integrated-economic-analysis', 'elasticity'
-]);
-
-const MICRO_IDS = new Set([
-  'marginal-analysis', 'incentives', 'gains-from-trade', 'market-failures',
-  'production-possibilities-frontier', 'positive-versus-normative-analysis',
-  'economist-policy-role', 'competitive-markets', 'demand', 'supply',
-  'market-equilibrium', 'price-signals', 'binding-price-ceilings',
-  'binding-price-floors', 'tax-wedges-and-revenue',
-  'statutory-versus-economic-tax-incidence', 'tax-incidence',
-  'integrated-economic-analysis', 'elasticity',
-  'price-elasticity-of-demand', 'price-elasticity-of-supply',
-  'income-elasticity-of-demand', 'cross-price-elasticity-of-demand',
-  'elasticity-and-total-revenue', 'applications-of-elasticity',
-  'consumer-and-producer-surplus',
-  'consumer-surplus', 'producer-surplus', 'total-surplus-gains-from-exchange',
-  'efficient-quantity-allocation', 'surplus-changes-policy-effects',
-  'efficiency-equity-surplus-limits',
-  'international-trade-and-trade-policy',
-  'trade-world-price-status', 'trade-domestic-production-consumption-quantities',
-  'trade-gains-surplus-winners-losers', 'tariffs-revenue-deadweight-loss',
-  'import-quotas-quota-rents', 'trade-policy-efficiency-distribution',
-  'costs-of-production',
-  'perfect-competition', 'monopoly', 'monopolistic-competition', 'oligopoly'
-]);
-
-const MACRO_IDS = new Set();
 
 const PRESETS = [
   {
@@ -196,33 +164,39 @@ const state = {
   step: 1,
   templateText: '',
   templateSha256: '',
+  conceptReviewManifest: null,
+  conceptReviewRuntimeSource: '',
   composition: null
 };
 
 const $ = id => document.getElementById(id);
 const registry = Library.registry.concepts;
 const metaById = new Map(registry.map(concept => [concept.canonicalConceptId, concept]));
-
-for(const concept of registry){
-  const id = concept.canonicalConceptId;
-  if(!GENERAL_IDS.has(id) && !MICRO_IDS.has(id)) MACRO_IDS.add(id);
-}
-for(const id of GENERAL_IDS) MACRO_IDS.add(id);
+const courseAreas = CourseAreaModel.create(registry);
+const GENERAL_IDS = new Set(courseAreas.conceptsForArea('general').map(concept => concept.canonicalConceptId));
+const MICRO_IDS = new Set(courseAreas.conceptsForArea('micro').map(concept => concept.canonicalConceptId));
+const MACRO_IDS = new Set(courseAreas.conceptsForArea('macro').map(concept => concept.canonicalConceptId));
 
 function conceptAreas(id){
-  const areas = [];
-  if(GENERAL_IDS.has(id)) areas.push('general');
-  if(MICRO_IDS.has(id)) areas.push('micro');
-  if(MACRO_IDS.has(id)) areas.push('macro');
-  return areas;
+  return courseAreas.areasFor(id);
+}
+
+function conceptDiscipline(id){
+  return courseAreas.disciplineFor(id) || 'general';
+}
+
+function isConceptVisibleForArea(concept, activeArea){
+  const record = courseAreas.get(concept?.canonicalConceptId);
+  return CourseAreaModel.isConceptVisibleForArea({...concept, ...record}, activeArea);
 }
 
 function primaryAreaLabel(id){
   const meta = metaById.get(id);
-  if(meta?.parentConceptId) return `${AREA_LABELS.micro} · ${meta.familyTitle || 'Family'} subtopic`;
-  if(GENERAL_IDS.has(id)) return 'Shared economic foundation';
-  if(MICRO_IDS.has(id)) return AREA_LABELS.micro;
-  return AREA_LABELS.macro;
+  const discipline = conceptDiscipline(id);
+  const base = discipline === 'general' && conceptAreas(id).length > 1
+    ? 'General economics · Shared foundation'
+    : AREA_LABELS[discipline];
+  return meta?.parentConceptId ? `${base} · ${meta.familyTitle || 'Family'} subtopic` : base;
 }
 
 function setActiveArea(area){
@@ -235,6 +209,31 @@ function setActiveArea(area){
   });
 }
 
+function changeActiveCourseArea(area){
+  const normalized = AREA_LABELS[area] ? area : '';
+  if(normalized){
+    const compatibleIds = state.selectedConceptIds.filter(id => {
+      if(isCheckpointSupplement(id)) return normalized === 'macro';
+      return conceptAreas(id).includes(normalized);
+    });
+    const removedCount = state.selectedConceptIds.length - compatibleIds.length;
+    if(removedCount){
+      state.selectedConceptIds = compatibleIds;
+      state.checkpointFocus = Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
+        checkpointKey,
+        state.checkpointFocus[checkpointKey] == null
+          ? null
+          : state.checkpointFocus[checkpointKey].filter(id => compatibleIds.includes(id))
+      ]));
+      announce(`${removedCount} selection${removedCount === 1 ? '' : 's'} outside ${AREA_LABELS[normalized]} were removed.`);
+    }
+  }
+  setActiveArea(normalized);
+  renderConcepts();
+  renderCheckpointBoard();
+  recalculate();
+}
+
 function conceptMatchesSearch(concept, search){
   const haystack = [
     concept.title,
@@ -244,18 +243,24 @@ function conceptMatchesSearch(concept, search){
   return !search || haystack.includes(search);
 }
 
+function conceptBrowseCategory(concept){
+  return CourseAreaModel.browseCategory(concept);
+}
+
+function matchesCurrentSubfilter(concept, filter){
+  return !filter || filter === 'all' || conceptBrowseCategory(concept) === filter;
+}
+
 function updateBrowseFilterControls(area, search){
   const filter = $('selectionFilter').value || 'all';
   const candidates = area ? registry.filter(concept => {
-    if(concept.supplementType === 'checkpoint-challenge') return false;
-    if(!conceptAreas(concept.canonicalConceptId).includes(area)) return false;
+    if(!isConceptVisibleForArea(concept, area)) return false;
     return conceptMatchesSearch(concept, search);
   }) : [];
-  const selectedCount = candidates.filter(concept => state.selectedConceptIds.includes(concept.canonicalConceptId)).length;
   const counts = {
     all: candidates.length,
-    selected: selectedCount,
-    unselected: candidates.length - selectedCount
+    ready: candidates.filter(concept => conceptBrowseCategory(concept) === 'ready').length,
+    supporting: candidates.filter(concept => conceptBrowseCategory(concept) === 'supporting').length
   };
 
   document.querySelectorAll('[data-selection-filter]').forEach(button => {
@@ -516,6 +521,8 @@ function applyPreset(presetId){
   state.selectedConceptIds = preset.conceptIds.filter(id => Library.concepts[id]);
   state.checkpointFocus = emptyCheckpointFocus();
   state.importWarnings = [];
+  $('conceptSearch').value = '';
+  $('selectionFilter').value = 'all';
   setActiveArea(preset.area || inferAreaForConceptIds(state.selectedConceptIds));
   renderConcepts();
   renderCheckpointBoard();
@@ -599,6 +606,7 @@ function renderConcepts(){
       </div>
     `;
     $('conceptRecommendations').innerHTML = '';
+    if($('browseConceptCount')) $('browseConceptCount').textContent = 'Choose an area to view its concept inventory.';
     return;
   }
 
@@ -606,13 +614,12 @@ function renderConcepts(){
   const filter = $('selectionFilter').value;
   updateBrowseFilterControls(area, search);
   const visible = registry.filter(concept => {
-    if(concept.supplementType === 'checkpoint-challenge') return false;
-    const selected = state.selectedConceptIds.includes(concept.canonicalConceptId);
-    if(filter === 'selected' && !selected) return false;
-    if(filter === 'unselected' && selected) return false;
-    if(area && !conceptAreas(concept.canonicalConceptId).includes(area)) return false;
-    return conceptMatchesSearch(concept, search);
+    if(!isConceptVisibleForArea(concept, area)) return false;
+    if(!conceptMatchesSearch(concept, search)) return false;
+    return matchesCurrentSubfilter(concept, filter);
   });
+  const browseCount = $('browseConceptCount');
+  if(browseCount) browseCount.textContent = `Showing ${visible.length} ${AREA_LABELS[area]} concept card${visible.length === 1 ? '' : 's'}.`;
 
   $('conceptGrid').innerHTML = visible.map(concept => {
     const id = concept.canonicalConceptId;
@@ -632,7 +639,7 @@ function renderConcepts(){
     const coveragePlanningNote = coverageDisplay.planningNote;
 
     return `
-      <article class="concept-card ${selected ? 'selected' : ''} ${concept.parentConceptId ? 'family-child' : ''} depth-${coverageStatus}">
+      <article class="concept-card ${selected ? 'selected' : ''} ${concept.parentConceptId ? 'family-child' : ''} depth-${coverageStatus}" data-concept-id="${id}" data-discipline="${conceptDiscipline(id)}" data-areas="${conceptAreas(id).join(' ')}" data-browse-category="${conceptBrowseCategory(concept)}">
         <div class="concept-card-kickers">
           <div class="concept-area">${esc(primaryAreaLabel(id))}</div>
           <div class="coverage-status ${coverageStatus}">${esc(coverageStatusLabel)}</div>
@@ -716,7 +723,7 @@ function renderCheckpointSupplement(area){
   const canEnable = selectedMacroInstructionIds().length > 0;
   const stages = concept.challengeCountByStage || {};
   grid.innerHTML = `
-    <article class="concept-card supplement-card ${selected ? 'selected' : ''}">
+    <article class="concept-card supplement-card ${selected ? 'selected' : ''}" data-concept-id="${id}" data-discipline="macro" data-areas="macro">
       <div class="concept-card-kickers">
         <div class="concept-area">Optional challenge layer</div>
         <div class="coverage-status checkpoint-supplement">${esc(concept.coverageStatusLabel || 'Optional — harder checkpoint questions')}</div>
@@ -1162,16 +1169,48 @@ async function loadEmbeddedQuestionAssets(assets){
   return embedded;
 }
 
+async function loadConceptReviewAssets(assets){
+  const loaded = [];
+  for(const asset of assets || []){
+    const response = await fetch(asset.sourcePath);
+    if(!response.ok) throw new Error(`Could not load Concept Review ${asset.code} from ${asset.sourcePath}`);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    if(bytes.length !== asset.sizeBytes){
+      throw new Error(`Concept Review size check failed for ${asset.code}: expected ${asset.sizeBytes}, found ${bytes.length}`);
+    }
+    const actualSha = await sha256BytesHex(bytes);
+    if(!actualSha) throw new Error(`Concept Review SHA-256 is unavailable for ${asset.code}`);
+    if(actualSha !== asset.sha256){
+      throw new Error(`Concept Review integrity check failed for ${asset.code}`);
+    }
+    loaded.push({...asset, bytes, actualSha256:actualSha});
+  }
+  return loaded;
+}
+
 async function generateGameDownload(){
   const activeRecipe = recipe();
   const composition = Core.compose(Library, activeRecipe);
   if(composition.errors.length) throw new Error(composition.errors.join('\n'));
+  if(!state.conceptReviewManifest) throw new Error('Concept Review manifest is unavailable.');
+  const conceptReviews = Core.resolveConceptReviews(
+    Library,
+    state.conceptReviewManifest,
+    activeRecipe.selectedConceptIds
+  );
+  if(conceptReviews.errors.length) throw new Error(conceptReviews.errors.join('\n'));
 
   announce('Verifying answer hashes.');
   const answerCheck = await Core.verifyAnswers(composition);
   if(!answerCheck.ok){
     throw new Error(`Answer verification failed for ${answerCheck.issues.length} questions.`);
   }
+
+  announce(conceptReviews.assets.length ? 'Verifying required Concept Review PDFs.' : 'No Concept Review PDFs are required for this build.');
+  const conceptReviewFiles = await loadConceptReviewAssets(conceptReviews.assets);
+  const conceptReviewRuntimeManifest = Core.stableStringify(conceptReviews.runtimeIndex, 2) + '\n';
+  const conceptReviewRuntimeManifestBytes = new TextEncoder().encode(conceptReviewRuntimeManifest).length;
+  const conceptReviewPdfBytes = conceptReviewFiles.reduce((total, asset) => total + asset.bytes.length, 0);
 
   const config = await Core.createConfig(activeRecipe, Library, state.templateSha256);
   const metadata = {
@@ -1187,10 +1226,12 @@ async function generateGameDownload(){
     compositionFingerprint: config.compositionFingerprint,
     libraryVersion: Library.libraryVersion,
     librarySha256: Library.librarySha256,
-    templateSha256: state.templateSha256
+    templateSha256: state.templateSha256,
+    conceptReviewManifestPath: 'concept-reviews/manifest.json'
   };
   announce(composition.assets.length ? 'Embedding selected graph images.' : 'Preparing self-contained game file.');
   composition.embeddedQuestionAssets = await loadEmbeddedQuestionAssets(composition.assets);
+  composition.conceptReviewRuntimeSource = state.conceptReviewRuntimeSource;
   const html = Core.buildHtml(state.templateText, composition, config, metadata);
   const manifest = {
     ...metadata,
@@ -1209,18 +1250,34 @@ async function generateGameDownload(){
       sizeBytes: asset.sizeBytes,
       embedded: true
     })),
+    conceptReviewDelivery: 'selective-external-pdf',
+    conceptReviewManifestPath: 'concept-reviews/manifest.json',
+    conceptReviewPdfCount: conceptReviewFiles.length,
+    conceptReviewCodes: conceptReviews.reviewCodes,
+    conceptReviewPdfBytes,
+    conceptReviewRuntimeManifestBytes,
+    conceptReviewAddedBytes: conceptReviewPdfBytes + conceptReviewRuntimeManifestBytes,
+    conceptReviewAssetInventory: conceptReviewFiles.map(asset => ({
+      code: asset.code,
+      path: asset.destinationPath,
+      sha256: asset.actualSha256,
+      sizeBytes: asset.bytes.length
+    })),
+    conceptReviewWarnings: conceptReviews.warnings,
     preflight: composition.validation,
     warnings: [...state.importWarnings, ...composition.warnings],
     answerVerification: {passed: true, questionCount: answerCheck.questionCount},
     generationTimestamp: '1980-01-01T00:00:00.000Z',
     timestampPolicy: 'Fixed for deterministic ZIP output'
   };
-  const readme = `${config.title}\n\nOpen ${config.slug}.html in a modern browser. The game is self-contained; graph images are embedded in the HTML and no question-assets folder is required.\n\nTo deploy, upload the HTML file to GitHub Pages or another static host. Progress and game data stay in the learner's browser. The game does not collect email addresses or transmit gameplay data to a server.\n\nEnabled modes: ${config.supportedModes.map(mode => MODE_LABELS[mode]).join(', ')}\n\nCheckpoint questions are assigned by their published difficulty. Optional checkpoint focus only narrows which eligible concepts supply a checkpoint; it never changes ordinary-question availability or question difficulty.\n`;
+  const readme = `${config.title}\n\nOpen ${config.slug}.html in a modern browser. The game HTML is self-contained; graph images are embedded and no question-assets folder is required. Keep the generated concept-reviews folder beside the HTML so the packaged review PDFs remain available.\n\nTo deploy, upload the complete package to GitHub Pages or another static host. Progress and game data stay in the learner's browser. The game does not collect email addresses or transmit gameplay data to a server.\n\nEnabled modes: ${config.supportedModes.map(mode => MODE_LABELS[mode]).join(', ')}\n\nCheckpoint questions are assigned by their published difficulty. Optional checkpoint focus only narrows which eligible concepts supply a checkpoint; it never changes ordinary-question availability or question difficulty.\n`;
   const entries = [
     {name: `${config.slug}.html`, data: html},
     {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library), 2) + '\n'},
     {name: 'composition_manifest.json', data: Core.stableStringify(manifest, 2) + '\n'},
-    {name: 'README.txt', data: readme}
+    {name: 'README.txt', data: readme},
+    {name: 'concept-reviews/manifest.json', data: conceptReviewRuntimeManifest},
+    ...conceptReviewFiles.map(asset => ({name:asset.destinationPath, data:asset.bytes}))
   ];
 
 
@@ -1282,9 +1339,8 @@ async function init(){
     recalculate();
   });
 
-  for(const id of ['conceptSearch', 'areaFilter']){
-    $(id).addEventListener(id === 'conceptSearch' ? 'input' : 'change', renderConcepts);
-  }
+  $('conceptSearch').addEventListener('input', renderConcepts);
+  $('areaFilter').addEventListener('change', event => changeActiveCourseArea(event.target.value));
   document.querySelectorAll('[data-selection-filter]').forEach(button => {
     button.addEventListener('click', () => {
       $('selectionFilter').value = button.dataset.selectionFilter || 'all';
@@ -1327,10 +1383,23 @@ async function init(){
 
   if(location.protocol === 'file:') $('protocolWarning').classList.add('show');
   try{
-    const response = await fetch('template/mastery-quests-faculty-template-composer-ready.html');
-    if(!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.templateText = await response.text();
+    const [templateResponse, conceptReviewResponse, conceptReviewRuntimeResponse] = await Promise.all([
+      fetch('template/mastery-quests-faculty-template-composer-ready.html'),
+      fetch('data/concept-reviews/manifest.json'),
+      fetch('concept-review-runtime.js')
+    ]);
+    if(!templateResponse.ok) throw new Error(`Template HTTP ${templateResponse.status}`);
+    if(!conceptReviewResponse.ok) throw new Error(`Concept Review manifest HTTP ${conceptReviewResponse.status}`);
+    if(!conceptReviewRuntimeResponse.ok) throw new Error(`Concept Review runtime HTTP ${conceptReviewRuntimeResponse.status}`);
+    state.templateText = await templateResponse.text();
     state.templateSha256 = await Core.sha256Hex(state.templateText);
+    state.conceptReviewManifest = await conceptReviewResponse.json();
+    state.conceptReviewRuntimeSource = await conceptReviewRuntimeResponse.text();
+    if(!state.conceptReviewRuntimeSource.trim() || /<\/script/i.test(state.conceptReviewRuntimeSource)){
+      throw new Error('Concept Review runtime source is missing or unsafe to embed.');
+    }
+    const conceptReviewValidation = Core.validateConceptReviewManifest(Library, state.conceptReviewManifest);
+    if(!conceptReviewValidation.ok) throw new Error(conceptReviewValidation.errors.join('\n'));
   } catch(error){
     console.error(error);
     $('protocolWarning').classList.add('show');

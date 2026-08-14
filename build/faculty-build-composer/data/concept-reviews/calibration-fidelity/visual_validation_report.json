@@ -1,0 +1,744 @@
+{
+  "schemaVersion": "1.0.0-calibration-template-invariants",
+  "generatedAt": "2026-08-13T16:46:24.478321+00:00",
+  "benchmark": {
+    "path": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-01.pdf",
+    "sha256": "2476ceafd06cda374d817b16fe7988a37ecae301c0bcc9aaba2f278e4fc2b842",
+    "modified": false,
+    "renderDpi": 144,
+    "headerBoundsPoints": {
+      "x": 15.84,
+      "top": 14.4,
+      "w": 580.32,
+      "h": 82.08
+    },
+    "topCorners": "rounded",
+    "bottomCorners": "square",
+    "logoBoundsPoints": {
+      "x": 41.7253845,
+      "top": 31.68,
+      "w": 46.149231,
+      "h": 47.52
+    },
+    "disciplineTextAnchor": {
+      "x": 105.12,
+      "visibleTop": 43.5244,
+      "fontSize": 27.0
+    },
+    "badgeBoundsPoints": {
+      "x": 449.961,
+      "top": 36.04,
+      "w": 124.599,
+      "h": 38.801
+    }
+  },
+  "sharedHeaderGeometryConfirmed": true,
+  "officialLogoSha256": "57cdfcc29a5a3e2ade7731b5b66f519fbc23434d86b2d9aba4cf9f82146bfb2f",
+  "reviews": [
+    {
+      "code": "GEN-ECON-11",
+      "pdf": "GEN-ECON-11.pdf",
+      "sha256": "d29decab3a29a66ea24ae67a2a4f2e95244fb18e3fa5b173134b841fa403c46c",
+      "header": {
+        "bounds": {
+          "x": 15.84,
+          "top": 14.4,
+          "w": 580.32,
+          "h": 82.08
+        },
+        "sameBoundsAsBenchmark": true,
+        "topCornersRounded": true,
+        "bottomCornersSquare": true,
+        "navyColor": [
+          0.031,
+          0.157,
+          0.373
+        ],
+        "navyMatchesBenchmark": true,
+        "logoBounds": {
+          "x": 41.7254,
+          "top": 31.68,
+          "w": 46.1492,
+          "h": 47.52
+        },
+        "logoBoundsMatchBenchmark": true,
+        "officialLogoPixelsExact": true,
+        "logoVerticallyCenteredLikeBenchmark": true,
+        "disciplineText": {
+          "x": 105.12,
+          "top": 43.5244,
+          "fontSize": 27.0
+        },
+        "disciplinePositionMatchesBenchmark": true,
+        "badgeBounds": {
+          "x": 449.961,
+          "top": 36.04,
+          "w": 124.599,
+          "h": 38.801
+        },
+        "badgeBoundsMatchBenchmark": true,
+        "codeText": {
+          "top": 49.2613,
+          "fontSize": 13.9995
+        },
+        "codePositionMatchesBenchmark": true
+      },
+      "typography": {
+        "benchmarkBodyFontPoints": 10.45,
+        "reportedSectionBodyFontPoints": {
+          "core": 10.45,
+          "recognition": 10.35,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSectionBodyFontPoints": {
+          "core": 10.45,
+          "recognition": 10.35,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSizesMatchReported": true,
+        "sectionHeadingScaleMatchesBenchmark": true,
+        "adaptiveSizingUsed": true,
+        "manualIntentionalSectionDensity": true,
+        "manualNoTinyTextInLargeBoxes": true
+      },
+      "bullets": {
+        "bulletCount": 5,
+        "bulletXs": [
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249
+        ],
+        "textLineXs": [
+          94.124,
+          94.124,
+          94.124,
+          94.124,
+          94.124
+        ],
+        "bulletIndentMatchesBenchmark": true,
+        "bulletToTextGapPoints": 6.4991,
+        "bulletToTextGapMatchesBenchmark": true,
+        "wrappedLinesUseHangingIndent": true,
+        "expectedLeadingPoints": 14.7375,
+        "observedLineDeltasPoints": [
+          14.74,
+          14.74,
+          14.74,
+          14.73
+        ],
+        "lineSpacingMatchesBenchmarkStyle": true
+      },
+      "graphWorkedExample": null,
+      "structural": {
+        "onePage": true,
+        "selectableTextCharacters": 2107,
+        "selectableText": true,
+        "language": "en-US",
+        "languageIsEnglishUS": true,
+        "correctFooterCount": 1,
+        "oldFooterCount": 0,
+        "correctFooter": true,
+        "codePresent": true,
+        "disciplinePresent": true,
+        "pngDimensionsAt144Dpi": [
+          1224,
+          1584
+        ],
+        "renderedAt144Dpi": true,
+        "contentBottomPoints": 724.0,
+        "contentClearsFooter": true
+      },
+      "manualVisualInspection": {
+        "noClipping": true,
+        "noOverlap": true,
+        "balancedSpacing": true,
+        "templateFidelity": true,
+        "graphLabelsReadableAtNormalView": null
+      },
+      "passed": true
+    },
+    {
+      "code": "MACRO-01",
+      "pdf": "MACRO-01.pdf",
+      "sha256": "daf7e52c1b726f039b46693c5f00b02e864c40a254307a2157473fced5a3da85",
+      "header": {
+        "bounds": {
+          "x": 15.84,
+          "top": 14.4,
+          "w": 580.32,
+          "h": 82.08
+        },
+        "sameBoundsAsBenchmark": true,
+        "topCornersRounded": true,
+        "bottomCornersSquare": true,
+        "navyColor": [
+          0.031,
+          0.157,
+          0.373
+        ],
+        "navyMatchesBenchmark": true,
+        "logoBounds": {
+          "x": 41.7254,
+          "top": 31.68,
+          "w": 46.1492,
+          "h": 47.52
+        },
+        "logoBoundsMatchBenchmark": true,
+        "officialLogoPixelsExact": true,
+        "logoVerticallyCenteredLikeBenchmark": true,
+        "disciplineText": {
+          "x": 105.12,
+          "top": 43.5244,
+          "fontSize": 27.0
+        },
+        "disciplinePositionMatchesBenchmark": true,
+        "badgeBounds": {
+          "x": 449.961,
+          "top": 36.04,
+          "w": 124.599,
+          "h": 38.801
+        },
+        "badgeBoundsMatchBenchmark": true,
+        "codeText": {
+          "top": 49.2613,
+          "fontSize": 13.9995
+        },
+        "codePositionMatchesBenchmark": true
+      },
+      "typography": {
+        "benchmarkBodyFontPoints": 10.45,
+        "reportedSectionBodyFontPoints": {
+          "core": 9.55,
+          "recognition": 9.6,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSectionBodyFontPoints": {
+          "core": 9.55,
+          "recognition": 9.6,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSizesMatchReported": true,
+        "sectionHeadingScaleMatchesBenchmark": true,
+        "adaptiveSizingUsed": true,
+        "manualIntentionalSectionDensity": true,
+        "manualNoTinyTextInLargeBoxes": true
+      },
+      "bullets": {
+        "bulletCount": 5,
+        "bulletXs": [
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249
+        ],
+        "textLineXs": [
+          94.124,
+          94.124,
+          94.124,
+          94.124,
+          94.124
+        ],
+        "bulletIndentMatchesBenchmark": true,
+        "bulletToTextGapPoints": 6.4991,
+        "bulletToTextGapMatchesBenchmark": true,
+        "wrappedLinesUseHangingIndent": true,
+        "expectedLeadingPoints": 13.6696,
+        "observedLineDeltasPoints": [
+          13.67,
+          13.67,
+          13.67,
+          13.67
+        ],
+        "lineSpacingMatchesBenchmarkStyle": true
+      },
+      "graphWorkedExample": null,
+      "structural": {
+        "onePage": true,
+        "selectableTextCharacters": 2291,
+        "selectableText": true,
+        "language": "en-US",
+        "languageIsEnglishUS": true,
+        "correctFooterCount": 1,
+        "oldFooterCount": 0,
+        "correctFooter": true,
+        "codePresent": true,
+        "disciplinePresent": true,
+        "pngDimensionsAt144Dpi": [
+          1224,
+          1584
+        ],
+        "renderedAt144Dpi": true,
+        "contentBottomPoints": 724.0,
+        "contentClearsFooter": true
+      },
+      "manualVisualInspection": {
+        "noClipping": true,
+        "noOverlap": true,
+        "balancedSpacing": true,
+        "templateFidelity": true,
+        "graphLabelsReadableAtNormalView": null
+      },
+      "passed": true
+    },
+    {
+      "code": "MACRO-17",
+      "pdf": "MACRO-17.pdf",
+      "sha256": "16debf80527b20aa1d4145a009679d6e6932eeb14d71573e9f2d55f9e63ca85a",
+      "header": {
+        "bounds": {
+          "x": 15.84,
+          "top": 14.4,
+          "w": 580.32,
+          "h": 82.08
+        },
+        "sameBoundsAsBenchmark": true,
+        "topCornersRounded": true,
+        "bottomCornersSquare": true,
+        "navyColor": [
+          0.031,
+          0.157,
+          0.373
+        ],
+        "navyMatchesBenchmark": true,
+        "logoBounds": {
+          "x": 41.7254,
+          "top": 31.68,
+          "w": 46.1492,
+          "h": 47.52
+        },
+        "logoBoundsMatchBenchmark": true,
+        "officialLogoPixelsExact": true,
+        "logoVerticallyCenteredLikeBenchmark": true,
+        "disciplineText": {
+          "x": 105.12,
+          "top": 43.5244,
+          "fontSize": 27.0
+        },
+        "disciplinePositionMatchesBenchmark": true,
+        "badgeBounds": {
+          "x": 449.961,
+          "top": 36.04,
+          "w": 124.599,
+          "h": 38.801
+        },
+        "badgeBoundsMatchBenchmark": true,
+        "codeText": {
+          "top": 49.2613,
+          "fontSize": 13.9995
+        },
+        "codePositionMatchesBenchmark": true
+      },
+      "typography": {
+        "benchmarkBodyFontPoints": 10.45,
+        "reportedSectionBodyFontPoints": {
+          "core": 9.55,
+          "recognition": 9.6,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSectionBodyFontPoints": {
+          "core": 9.55,
+          "recognition": 9.6,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSizesMatchReported": true,
+        "sectionHeadingScaleMatchesBenchmark": true,
+        "adaptiveSizingUsed": true,
+        "manualIntentionalSectionDensity": true,
+        "manualNoTinyTextInLargeBoxes": true
+      },
+      "bullets": {
+        "bulletCount": 5,
+        "bulletXs": [
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249
+        ],
+        "textLineXs": [
+          94.124,
+          94.124,
+          94.124,
+          94.124,
+          94.124
+        ],
+        "bulletIndentMatchesBenchmark": true,
+        "bulletToTextGapPoints": 6.4991,
+        "bulletToTextGapMatchesBenchmark": true,
+        "wrappedLinesUseHangingIndent": true,
+        "expectedLeadingPoints": 13.6696,
+        "observedLineDeltasPoints": [
+          13.67,
+          13.67,
+          13.67,
+          13.67
+        ],
+        "lineSpacingMatchesBenchmarkStyle": true
+      },
+      "graphWorkedExample": null,
+      "structural": {
+        "onePage": true,
+        "selectableTextCharacters": 2328,
+        "selectableText": true,
+        "language": "en-US",
+        "languageIsEnglishUS": true,
+        "correctFooterCount": 1,
+        "oldFooterCount": 0,
+        "correctFooter": true,
+        "codePresent": true,
+        "disciplinePresent": true,
+        "pngDimensionsAt144Dpi": [
+          1224,
+          1584
+        ],
+        "renderedAt144Dpi": true,
+        "contentBottomPoints": 724.0,
+        "contentClearsFooter": true
+      },
+      "manualVisualInspection": {
+        "noClipping": true,
+        "noOverlap": true,
+        "balancedSpacing": true,
+        "templateFidelity": true,
+        "graphLabelsReadableAtNormalView": null
+      },
+      "passed": true
+    },
+    {
+      "code": "MICRO-04",
+      "pdf": "MICRO-04.pdf",
+      "sha256": "50ad84bf71929476886fc38dc4d53d9953a4c9aa99da70a30b9a89b2c6942276",
+      "header": {
+        "bounds": {
+          "x": 15.84,
+          "top": 14.4,
+          "w": 580.32,
+          "h": 82.08
+        },
+        "sameBoundsAsBenchmark": true,
+        "topCornersRounded": true,
+        "bottomCornersSquare": true,
+        "navyColor": [
+          0.031,
+          0.157,
+          0.373
+        ],
+        "navyMatchesBenchmark": true,
+        "logoBounds": {
+          "x": 41.7254,
+          "top": 31.68,
+          "w": 46.1492,
+          "h": 47.52
+        },
+        "logoBoundsMatchBenchmark": true,
+        "officialLogoPixelsExact": true,
+        "logoVerticallyCenteredLikeBenchmark": true,
+        "disciplineText": {
+          "x": 105.12,
+          "top": 43.5244,
+          "fontSize": 27.0
+        },
+        "disciplinePositionMatchesBenchmark": true,
+        "badgeBounds": {
+          "x": 449.961,
+          "top": 36.04,
+          "w": 124.599,
+          "h": 38.801
+        },
+        "badgeBoundsMatchBenchmark": true,
+        "codeText": {
+          "top": 49.2613,
+          "fontSize": 13.9995
+        },
+        "codePositionMatchesBenchmark": true
+      },
+      "typography": {
+        "benchmarkBodyFontPoints": 10.45,
+        "reportedSectionBodyFontPoints": {
+          "core": 9.2,
+          "recognition": 9.5,
+          "watch": 9.7,
+          "worked": 9.5,
+          "check": 10.45
+        },
+        "actualSectionBodyFontPoints": {
+          "core": 9.2,
+          "recognition": 9.5,
+          "watch": 9.7,
+          "worked": 9.5,
+          "check": 10.45
+        },
+        "actualSizesMatchReported": true,
+        "sectionHeadingScaleMatchesBenchmark": true,
+        "adaptiveSizingUsed": true,
+        "manualIntentionalSectionDensity": true,
+        "manualNoTinyTextInLargeBoxes": true
+      },
+      "bullets": {
+        "bulletCount": 5,
+        "bulletXs": [
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249
+        ],
+        "textLineXs": [
+          94.124,
+          94.124,
+          94.124,
+          94.124,
+          94.124
+        ],
+        "bulletIndentMatchesBenchmark": true,
+        "bulletToTextGapPoints": 6.4991,
+        "bulletToTextGapMatchesBenchmark": true,
+        "wrappedLinesUseHangingIndent": true,
+        "expectedLeadingPoints": 13.5272,
+        "observedLineDeltasPoints": [
+          13.53,
+          13.52,
+          13.53,
+          13.53
+        ],
+        "lineSpacingMatchesBenchmarkStyle": true
+      },
+      "graphWorkedExample": {
+        "actualBounds": {
+          "x": 91.7708,
+          "top": 506.6061,
+          "w": 216.0,
+          "h": 145.1484
+        },
+        "reportedBounds": {
+          "x": 91.771,
+          "top": 506.606,
+          "width": 216.0,
+          "height": 145.148
+        },
+        "widthShare": 0.4507,
+        "widthShareWithin45To55Percent": true,
+        "verticalOccupancy": 0.85,
+        "verticalOccupancyWithin70To85Percent": true,
+        "aspectRatioPreserved": true,
+        "graphProseGapPoints": 14.0,
+        "graphAndProseDoNotOverlap": true,
+        "sourceAltTextPresent": true,
+        "connectedInstructionalProse": true,
+        "manualNormalViewLabelReadability": true,
+        "manualNoExcessEmptyGraphRegion": true
+      },
+      "structural": {
+        "onePage": true,
+        "selectableTextCharacters": 2190,
+        "selectableText": true,
+        "language": "en-US",
+        "languageIsEnglishUS": true,
+        "correctFooterCount": 1,
+        "oldFooterCount": 0,
+        "correctFooter": true,
+        "codePresent": true,
+        "disciplinePresent": true,
+        "pngDimensionsAt144Dpi": [
+          1224,
+          1584
+        ],
+        "renderedAt144Dpi": true,
+        "contentBottomPoints": 724.0,
+        "contentClearsFooter": true
+      },
+      "manualVisualInspection": {
+        "noClipping": true,
+        "noOverlap": true,
+        "balancedSpacing": true,
+        "templateFidelity": true,
+        "graphLabelsReadableAtNormalView": true
+      },
+      "passed": true
+    },
+    {
+      "code": "MICRO-21",
+      "pdf": "MICRO-21.pdf",
+      "sha256": "ef4c2964cec6c08c46198bb645ce0c76be52bef4ee992b697bc150845cd0c21a",
+      "header": {
+        "bounds": {
+          "x": 15.84,
+          "top": 14.4,
+          "w": 580.32,
+          "h": 82.08
+        },
+        "sameBoundsAsBenchmark": true,
+        "topCornersRounded": true,
+        "bottomCornersSquare": true,
+        "navyColor": [
+          0.031,
+          0.157,
+          0.373
+        ],
+        "navyMatchesBenchmark": true,
+        "logoBounds": {
+          "x": 41.7254,
+          "top": 31.68,
+          "w": 46.1492,
+          "h": 47.52
+        },
+        "logoBoundsMatchBenchmark": true,
+        "officialLogoPixelsExact": true,
+        "logoVerticallyCenteredLikeBenchmark": true,
+        "disciplineText": {
+          "x": 105.12,
+          "top": 43.5244,
+          "fontSize": 27.0
+        },
+        "disciplinePositionMatchesBenchmark": true,
+        "badgeBounds": {
+          "x": 449.961,
+          "top": 36.04,
+          "w": 124.599,
+          "h": 38.801
+        },
+        "badgeBoundsMatchBenchmark": true,
+        "codeText": {
+          "top": 49.2613,
+          "fontSize": 13.9995
+        },
+        "codePositionMatchesBenchmark": true
+      },
+      "typography": {
+        "benchmarkBodyFontPoints": 10.45,
+        "reportedSectionBodyFontPoints": {
+          "core": 10.45,
+          "recognition": 10.35,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSectionBodyFontPoints": {
+          "core": 10.45,
+          "recognition": 10.35,
+          "watch": 10.45,
+          "worked": 10.45,
+          "check": 10.45
+        },
+        "actualSizesMatchReported": true,
+        "sectionHeadingScaleMatchesBenchmark": true,
+        "adaptiveSizingUsed": true,
+        "manualIntentionalSectionDensity": true,
+        "manualNoTinyTextInLargeBoxes": true
+      },
+      "bullets": {
+        "bulletCount": 5,
+        "bulletXs": [
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249,
+          87.6249
+        ],
+        "textLineXs": [
+          94.124,
+          94.124,
+          94.124,
+          94.124,
+          94.124
+        ],
+        "bulletIndentMatchesBenchmark": true,
+        "bulletToTextGapPoints": 6.4991,
+        "bulletToTextGapMatchesBenchmark": true,
+        "wrappedLinesUseHangingIndent": true,
+        "expectedLeadingPoints": 14.7375,
+        "observedLineDeltasPoints": [
+          14.74,
+          14.74,
+          14.74,
+          14.73
+        ],
+        "lineSpacingMatchesBenchmarkStyle": true
+      },
+      "graphWorkedExample": {
+        "actualBounds": {
+          "x": 91.7708,
+          "top": 507.0061,
+          "w": 216.0,
+          "h": 142.2904
+        },
+        "reportedBounds": {
+          "x": 91.771,
+          "top": 507.006,
+          "width": 216.0,
+          "height": 142.29
+        },
+        "widthShare": 0.4507,
+        "widthShareWithin45To55Percent": true,
+        "verticalOccupancy": 0.85,
+        "verticalOccupancyWithin70To85Percent": true,
+        "aspectRatioPreserved": true,
+        "graphProseGapPoints": 14.0,
+        "graphAndProseDoNotOverlap": true,
+        "sourceAltTextPresent": true,
+        "connectedInstructionalProse": true,
+        "manualNormalViewLabelReadability": true,
+        "manualNoExcessEmptyGraphRegion": true
+      },
+      "structural": {
+        "onePage": true,
+        "selectableTextCharacters": 1901,
+        "selectableText": true,
+        "language": "en-US",
+        "languageIsEnglishUS": true,
+        "correctFooterCount": 1,
+        "oldFooterCount": 0,
+        "correctFooter": true,
+        "codePresent": true,
+        "disciplinePresent": true,
+        "pngDimensionsAt144Dpi": [
+          1224,
+          1584
+        ],
+        "renderedAt144Dpi": true,
+        "contentBottomPoints": 724.0,
+        "contentClearsFooter": true
+      },
+      "manualVisualInspection": {
+        "noClipping": true,
+        "noOverlap": true,
+        "balancedSpacing": true,
+        "templateFidelity": true,
+        "graphLabelsReadableAtNormalView": true
+      },
+      "passed": true
+    }
+  ],
+  "allChecksPassed": true,
+  "accessibility": {
+    "selectableText": true,
+    "documentLanguage": "en-US",
+    "sourceAltTextPreserved": true,
+    "taggedFigureAltImplemented": false,
+    "pdfUaClaim": false,
+    "note": "The current ReportLab path does not emit tagged Figure structure elements with /Alt; source alt text and visible explanations are preserved without claiming PDF/UA compliance."
+  },
+  "artifacts": {
+    "renderedPngDirectory": "rendered",
+    "beforeContactSheet": "before-contact-sheet.png",
+    "afterContactSheet": "after-contact-sheet.png",
+    "beforeAfterContactSheet": "before-after-contact-sheet.png",
+    "layoutMetrics": "layout_metrics.json",
+    "sourceData": "calibration_content_source.json"
+  }
+}

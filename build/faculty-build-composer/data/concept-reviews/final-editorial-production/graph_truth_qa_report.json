@@ -1,0 +1,665 @@
+{
+  "schemaVersion": "1.0.0-final-editorial-graph-truth",
+  "generatedAt": "2026-08-13T19:03:52.807349+00:00",
+  "graphReviewCount": 72,
+  "uniqueSourceAssetCount": 52,
+  "allPassed": true,
+  "failureCount": 0,
+  "graphExplanationCorrectedCount": 65,
+  "materiallyChangedGraphSheets": [
+    "GEN-ECON-08",
+    "GEN-ECON-16",
+    "GEN-ECON-17",
+    "GEN-ECON-18",
+    "GEN-ECON-19",
+    "GEN-ECON-20",
+    "GEN-ECON-21",
+    "GEN-ECON-22",
+    "GEN-ECON-23",
+    "GEN-ECON-24",
+    "GEN-ECON-25",
+    "MICRO-02",
+    "MICRO-05",
+    "MICRO-08",
+    "MICRO-10",
+    "MICRO-11",
+    "MICRO-12",
+    "MICRO-13",
+    "MICRO-14",
+    "MICRO-16",
+    "MICRO-17",
+    "MICRO-20",
+    "MICRO-22",
+    "MICRO-23",
+    "MICRO-24",
+    "MICRO-26",
+    "MICRO-27",
+    "MICRO-28",
+    "MICRO-29",
+    "MICRO-30",
+    "MICRO-31",
+    "MICRO-32",
+    "MICRO-33",
+    "MICRO-34",
+    "MICRO-35",
+    "MICRO-36",
+    "MICRO-37",
+    "MICRO-38",
+    "MICRO-39",
+    "MICRO-40",
+    "MICRO-41",
+    "MICRO-44",
+    "MICRO-45",
+    "MICRO-47",
+    "MICRO-48",
+    "MICRO-49",
+    "MICRO-50",
+    "MICRO-51",
+    "MICRO-52",
+    "MACRO-11",
+    "MACRO-12",
+    "MACRO-13",
+    "MACRO-23",
+    "MACRO-24",
+    "MACRO-28",
+    "MACRO-29",
+    "MACRO-30",
+    "MACRO-31",
+    "MACRO-33",
+    "MACRO-34",
+    "MACRO-35",
+    "MACRO-36",
+    "MACRO-38",
+    "MACRO-39",
+    "MACRO-40"
+  ],
+  "assetContactSheetsReviewed": [
+    "graph-assets-01.png",
+    "graph-assets-02.png",
+    "graph-assets-03.png",
+    "graph-assets-04.png",
+    "graph-assets-05.png",
+    "graph-assets-06.png",
+    "graph-assets-07.png",
+    "graph-assets-08.png",
+    "graph-assets-09.png"
+  ],
+  "checks": [
+    {
+      "code": "GEN-ECON-08",
+      "title": "Production Possibilities Frontier (PPF)",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/production-possibilities-frontier/ppf.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-12",
+      "title": "Demand & the Law of Demand",
+      "assetPath": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\question-assets\\demand\\DEMAND-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "GEN-ECON-13",
+      "title": "Determinants of Demand",
+      "assetPath": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\question-assets\\demand\\DEMAND-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "GEN-ECON-14",
+      "title": "Supply & the Law of Supply",
+      "assetPath": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\question-assets\\supply\\SUPPLY-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "GEN-ECON-15",
+      "title": "Determinants of Supply",
+      "assetPath": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\data\\question-assets\\supply\\SUPPLY-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "GEN-ECON-16",
+      "title": "Market Equilibrium",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/market-equilibrium/demand-supply-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-17",
+      "title": "Shortages and Surpluses",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/market-equilibrium/demand-supply-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-18",
+      "title": "Simultaneous Shifts",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/market-equilibrium/demand-supply-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-19",
+      "title": "Price Ceilings",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/binding-price-ceilings/ceilingfloor.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-20",
+      "title": "Price Floors",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/binding-price-floors/ceilingfloor.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-21",
+      "title": "Tax Incidence without Elasticity",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/statutory-versus-economic-tax-incidence/tax-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-22",
+      "title": "Tax Incidence with Elasticity",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/tax-incidence/taxincidence.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-23",
+      "title": "International Trade: World Prices",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-24",
+      "title": "International Trade: Tariffs",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-03.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "GEN-ECON-25",
+      "title": "International Trade: Quotas",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-04.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-02",
+      "title": "Tax Wedges and Revenue",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/tax-wedges-and-revenue/taxincidence.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-04",
+      "title": "Price Elasticity of Demand",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/elasticity/ELAS-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "MICRO-05",
+      "title": "Price Elasticity of Supply",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/elasticity/ELAS-05.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-08",
+      "title": "Elasticity and Total Revenue",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/elasticity/ELAS-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-10",
+      "title": "Consumer Surplus & Willingness to Pay",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-11",
+      "title": "Producer Surplus & Willingness to Accept",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-12",
+      "title": "Total Surplus & Gains from Exchange",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-13",
+      "title": "Efficient Quantity & Allocation",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-14",
+      "title": "Changes in Surplus & Policy Effects",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-16",
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-17",
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-20",
+      "title": "Short-Run Production & Diminishing Marginal Product",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/cop_tp_standard.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-21",
+      "title": "Cost Components & Cost Schedules",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-03.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "MICRO-22",
+      "title": "Average Costs: AFC, AVC & ATC",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-23",
+      "title": "Marginal Cost & Production-Cost Linkages",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-24",
+      "title": "Short-Run Cost Curves: Relationships & Shifts",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/cop_cost_family_main.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-26",
+      "title": "LRAC, Economies & Diseconomies of Scale",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-06.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-27",
+      "title": "Minimum Efficient Scale & Constant Returns to Scale",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-06.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-28",
+      "title": "Market Structure, Price Taking & Firm Revenue",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-29",
+      "title": "Profit-Maximizing Output & the MR = MC Rule",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-30",
+      "title": "Profit, Loss & Break-Even",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-07.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-31",
+      "title": "Shutdown & Short-Run Loss Minimization",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-04.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-32",
+      "title": "Short-Run Supply & Cost Shifts",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-04.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-33",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-08.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-34",
+      "title": "Long-Run Industry Supply & Cost Conditions",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/pc_lrs_increasing.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-35",
+      "title": "Competitive Efficiency & Model Limits",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-08.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-36",
+      "title": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-03.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-37",
+      "title": "Monopoly Demand, Revenue & Marginal Revenue",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-38",
+      "title": "Profit-Maximizing Output & Monopoly Price",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-39",
+      "title": "Monopoly Profit, Loss & Shutdown",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-40",
+      "title": "Monopoly Welfare, Efficiency & Competitive Comparison",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-03.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-41",
+      "title": "Natural Monopoly & Regulation",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-04.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-44",
+      "title": "Short-Run Firm Choice, Profit/Loss & Shutdown",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopolistic-competition/MCOMP-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-45",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopolistic-competition/MCOMP-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-47",
+      "title": "Product Variety, Efficiency & Model Limits",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopolistic-competition/MCOMP-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-48",
+      "title": "Oligopoly Structure, Strategic Interdependence & Concentration",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/shares_6.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-49",
+      "title": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/matrix_multi_ne_1.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-50",
+      "title": "Collusion, Cartels & Prisoner's-Dilemma Incentives",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/cartel_1.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-51",
+      "title": "Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/tree_1.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MICRO-52",
+      "title": "Tacit Coordination, Price Leadership & Nonprice Competition",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/kinked_2.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-11",
+      "title": "Productivity Measurement",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/productivity-measurement/growth-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-12",
+      "title": "Sources of Productivity",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/sources-of-productivity/growth-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-13",
+      "title": "Economic Growth Policy",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/economic-growth-policy/growth-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-23",
+      "title": "Quantity Theory of Money",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/quantity-theory-of-money/moneys_moneyd.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-24",
+      "title": "Monetary Neutrality",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monetary-neutrality/moneys_moneyd.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-28",
+      "title": "Liquidity Preference and the Money Market",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/liquidity-preference-and-money-market/money-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-29",
+      "title": "Monetary-Policy Transmission",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monetary-policy-transmission/ad_ms_md.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-30",
+      "title": "Fiscal Policy and Aggregate Demand",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-31",
+      "title": "Fiscal Multipliers and Crowding Out",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-33",
+      "title": "Aggregate Demand",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/aggregate-demand/ad-02.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-34",
+      "title": "Aggregate Supply",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/aggregate-supply/as-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-35",
+      "title": "Macroeconomic Equilibrium and Shocks",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/macroeconomic-equilibrium-and-shocks/adas-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-36",
+      "title": "Long-Run Macroeconomic Adjustment",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/long-run-macroeconomic-adjustment/adaslras.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-37",
+      "title": "Short-Run Phillips Curve",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/long-run-phillips-curve/SRPC-01.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": false
+    },
+    {
+      "code": "MACRO-38",
+      "title": "Long-Run Phillips Curve",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/phillips-curve-expectations/SRPC-04.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-39",
+      "title": "Phillips-Curve Expectations",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/phillips-curve-expectations/lrpc.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    },
+    {
+      "code": "MACRO-40",
+      "title": "Disinflation and Policy",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/disinflation-and-policy/lrpc.webp",
+      "sourceAltPreserved": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "materiallyChanged": true
+    }
+  ]
+}

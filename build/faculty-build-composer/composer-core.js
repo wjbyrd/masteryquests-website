@@ -61,6 +61,47 @@ const CHECKPOINTS = {
     legacyStage: 'stageThree'
   }
 };
+const CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION = '2.0.0';
+const CONCEPT_REVIEW_DISPOSITIONS = new Set([
+  'REVIEW_SHEET',
+  'COVERED_BY_CHILD_CONCEPT',
+  'NO_SHEET_INTEGRATION_META',
+  'HIDDEN_SUPPLEMENTAL'
+]);
+const CONCEPT_REVIEW_BUNDLE_ROUTES = {
+  demand: {
+    skillToReviewCode: Object.fromEntries([
+      ...['law_of_demand','demand_schedule_interpretation','movement_vs_demand_shift','movement_vs_shift','quantity_demanded'].map(skill => [skill, 'GEN-ECON-12']),
+      ...['complement_demand_shift','complement_good_definition','demand_shift_analysis','demand_shift_direction','demand_shifters','demand_shifters_expectations','demand_shifters_income','demand_shifters_related_goods','demand_shifters_tastes','multiple_demand_shifters','normal_good_income','normal_inferior_good_analysis','related_goods','related_goods_demand','related_goods_demand_shift','substitute_good_definition','substitutes'].map(skill => [skill, 'GEN-ECON-13'])
+    ]),
+    reasonByReviewCode: {
+      'GEN-ECON-12':'Review the law of demand and the difference between movement along a curve and a curve shift.',
+      'GEN-ECON-13':'Review demand shifters, including income, expectations, tastes, substitutes, and complements.'
+    }
+  },
+  supply: {
+    skillToReviewCode: Object.fromEntries([
+      ...['law_of_supply','movement_vs_supply_shift'].map(skill => [skill, 'GEN-ECON-14']),
+      ...['market_supply_aggregation','market_supply_multiple_shifters','multiple_supply_shifters','net_marginal_cost_supply_shift','number_of_sellers_calculation','short_run_long_run_supply_response','subsidy_as_supply_shifter','supply_expectations_timing','supply_shift_analysis','supply_shift_and_movement','supply_shift_direction','supply_shifters','supply_shifters_expectations','supply_shifters_input_costs','supply_shifters_number_of_sellers','supply_shifters_technology','tax_as_supply_shifter'].map(skill => [skill, 'GEN-ECON-15'])
+    ]),
+    reasonByReviewCode: {
+      'GEN-ECON-14':'Review the law of supply and the difference between movement along a curve and a curve shift.',
+      'GEN-ECON-15':'Review the causes and directions of supply shifts.'
+    }
+  },
+  'market-equilibrium': {
+    skillToReviewCode: Object.fromEntries([
+      ...['algebraic_equilibrium_price','algebraic_equilibrium_quantity','curve_pairing','demand_decrease','demand_decrease_market_effect','demand_increase','demand_increase_market_effect','demand_shift_equilibrium_prediction','demand_shift_equilibrium_price','equilibrium_calculation','equilibrium_comparison','equilibrium_definition','equilibrium_identification','equilibrium_prediction','graph_reading','input_costs','market_change_prediction','market_shift_analysis','normal_good','quantity_demanded','quantity_supplied','supply_decrease','supply_decrease_market_effect','supply_increase','supply_increase_market_effect','supply_shift_analysis','supply_shift_equilibrium_prediction','supply_shift_equilibrium_price'].map(skill => [skill, 'GEN-ECON-16']),
+      ...['shortage_identification','shortage_market_adjustment','shortage_price_pressure','surplus_identification','surplus_market_adjustment','surplus_price_pressure','surplus_shortage_adjustment','surplus_shortage_calculation','surplus_shortage_identification'].map(skill => [skill, 'GEN-ECON-17']),
+      ...['demand_decrease_supply_increase','demand_increase_supply_decrease','double_shift_ambiguous_price','double_shift_ambiguous_quantity','expectations_and_supply_shock','multi_shift_sequence','simultaneous_shift_comparison','simultaneous_shift_sequence','simultaneous_shifts'].map(skill => [skill, 'GEN-ECON-18'])
+    ]),
+    reasonByReviewCode: {
+      'GEN-ECON-16':'Review equilibrium and how a single demand or supply shift changes price and quantity.',
+      'GEN-ECON-17':'Review shortages, surpluses, and market adjustment toward equilibrium.',
+      'GEN-ECON-18':'Review simultaneous demand-and-supply shifts and which outcome may be ambiguous.'
+    }
+  }
+};
 
 function deepClone(value){
   return JSON.parse(JSON.stringify(value));
@@ -308,6 +349,338 @@ function allModuleQuestions(module){
     ...(module.repairSeedQuestions || []),
     ...(module.bridgeQuestions || [])
   ];
+}
+
+function conceptReviewManifestMaps(manifest){
+  return {
+    reviewByCode: new Map((manifest?.reviews || []).map(review => [String(review?.code || ''), review])),
+    conceptById: new Map((manifest?.concepts || []).map(concept => [String(concept?.canonicalConceptId || ''), concept]))
+  };
+}
+
+function validateConceptReviewManifest(library, manifest){
+  const errors = [];
+  const warnings = [];
+  if(!manifest || typeof manifest !== 'object'){
+    return {ok:false, errors:['Concept Review manifest is missing or invalid.'], warnings};
+  }
+  if(!Array.isArray(manifest.reviews)) errors.push('Concept Review manifest reviews must be an array.');
+  if(!Array.isArray(manifest.concepts)) errors.push('Concept Review manifest concepts must be an array.');
+  if(manifest.composerLibraryVersion !== library?.libraryVersion){
+    errors.push('Concept Review manifest Composer library version does not match the active library.');
+  }
+
+  const {reviewByCode, conceptById} = conceptReviewManifestMaps(manifest);
+  const reviewCodes = (manifest.reviews || []).map(review => String(review?.code || ''));
+  const conceptIds = (manifest.concepts || []).map(concept => String(concept?.canonicalConceptId || ''));
+  if(reviewByCode.size !== reviewCodes.length) errors.push('Concept Review manifest contains duplicate review codes.');
+  if(conceptById.size !== conceptIds.length) errors.push('Concept Review manifest contains duplicate canonical concept mappings.');
+
+  const destinationOwners = new Map();
+  for(const review of manifest.reviews || []){
+    const code = String(review?.code || '');
+    const pdfPath = String(review?.pdfPath || '');
+    const runtimeFilename = String(review?.runtimeFilename || '');
+    if(!code) errors.push('Concept Review entry is missing a code.');
+    if(pdfPath.split(/[\\/]/).pop() !== `${code}.pdf`){
+      errors.push(`Concept Review ${code || '(missing code)'} has a filename/code mismatch.`);
+    }
+    if(runtimeFilename !== `${code}.pdf`){
+      errors.push(`Concept Review ${code || '(missing code)'} has an invalid runtime filename.`);
+    }
+    if(!/^[a-f0-9]{64}$/i.test(String(review?.sha256 || ''))){
+      errors.push(`Concept Review ${code || '(missing code)'} has an invalid SHA-256.`);
+    }
+    if(!Number.isInteger(review?.sizeBytes) || review.sizeBytes <= 0){
+      errors.push(`Concept Review ${code || '(missing code)'} has an invalid file size.`);
+    }
+    if(review?.pageCount !== 1) errors.push(`Concept Review ${code || '(missing code)'} is not exactly one page.`);
+    if(review?.hasSelectableText !== true) errors.push(`Concept Review ${code || '(missing code)'} lacks selectable text.`);
+    const destinationKey = runtimeFilename.toLowerCase();
+    if(destinationOwners.has(destinationKey) && destinationOwners.get(destinationKey) !== code){
+      errors.push(`Concept Reviews ${destinationOwners.get(destinationKey)} and ${code} produce the same destination filename.`);
+    } else if(destinationKey){
+      destinationOwners.set(destinationKey, code);
+    }
+  }
+
+  const libraryIds = new Set(Object.keys(library?.concepts || {}));
+  for(const id of libraryIds){
+    if(!conceptById.has(id)) errors.push(`Concept Review disposition is missing for canonical concept ${id}.`);
+  }
+  for(const id of conceptById.keys()){
+    if(!libraryIds.has(id)) errors.push(`Concept Review manifest references unknown canonical concept ${id}.`);
+  }
+
+  const referencedReviewCodes = new Set();
+  for(const concept of manifest.concepts || []){
+    const id = String(concept?.canonicalConceptId || '');
+    const disposition = String(concept?.disposition || '');
+    if(!CONCEPT_REVIEW_DISPOSITIONS.has(disposition)){
+      errors.push(`Concept Review disposition for ${id || '(missing concept ID)'} is invalid.`);
+      continue;
+    }
+    if(disposition === 'REVIEW_SHEET'){
+      const codes = uniqueStrings(concept.reviewCodes || []);
+      if(!codes.length) errors.push(`REVIEW_SHEET concept ${id} has no review code.`);
+      for(const code of codes){
+        referencedReviewCodes.add(code);
+        const review = reviewByCode.get(code);
+        if(!review){
+          errors.push(`REVIEW_SHEET concept ${id} references missing review ${code}.`);
+          continue;
+        }
+        if(!(review.canonicalConceptIds || []).includes(id)){
+          errors.push(`Conflicting Concept Review mapping: ${id} references ${code}, but the review does not reference ${id}.`);
+        }
+      }
+    } else if(disposition === 'COVERED_BY_CHILD_CONCEPT'){
+      const childIds = uniqueStrings(concept.coveredByConceptIds || []);
+      if(!childIds.length) errors.push(`COVERED_BY_CHILD_CONCEPT ${id} has no explicit child coverage.`);
+      for(const childId of childIds){
+        if(!conceptById.has(childId)) errors.push(`${id} is covered by unknown child concept ${childId}.`);
+      }
+      if((concept.reviewCodes || []).length) errors.push(`${id} cannot have direct review codes when covered by children.`);
+      if(concept.diagnosable) warnings.push({type:'diagnosable-parent-covered-by-children', canonicalConceptId:id});
+    } else {
+      if(!String(concept.reason || '').trim()) errors.push(`${disposition} concept ${id} must record a reason.`);
+      if((concept.reviewCodes || []).length) errors.push(`${disposition} concept ${id} cannot have review codes.`);
+      if(disposition === 'NO_SHEET_INTEGRATION_META' && concept.diagnosable){
+        warnings.push({type:'diagnosable-no-sheet-meta', canonicalConceptId:id});
+      }
+    }
+  }
+
+  for(const review of manifest.reviews || []){
+    const code = String(review?.code || '');
+    for(const id of uniqueStrings(review?.canonicalConceptIds || [])){
+      const concept = conceptById.get(id);
+      if(!concept){
+        errors.push(`Concept Review ${code} maps unknown canonical concept ${id}.`);
+      } else if(concept.disposition !== 'REVIEW_SHEET' || !(concept.reviewCodes || []).includes(code)){
+        errors.push(`Conflicting Concept Review mapping: ${code} maps ${id}, but its concept disposition disagrees.`);
+      }
+    }
+    if(!referencedReviewCodes.has(code)) warnings.push({type:'orphan-review', reviewCode:code});
+  }
+
+  const reachableReviewCodes = new Set();
+  const visit = (id, seen = new Set()) => {
+    if(seen.has(id)) return;
+    seen.add(id);
+    const concept = conceptById.get(id);
+    if(!concept) return;
+    for(const code of concept.reviewCodes || []) reachableReviewCodes.add(code);
+    for(const childId of concept.coveredByConceptIds || []) visit(childId, seen);
+  };
+  for(const concept of manifest.concepts || []){
+    if(concept.selectable) visit(concept.canonicalConceptId);
+  }
+  for(const code of reviewByCode.keys()){
+    if(!reachableReviewCodes.has(code)) warnings.push({type:'unreachable-review', reviewCode:code});
+  }
+
+  return {ok:errors.length === 0, errors, warnings};
+}
+
+function resolveConceptReviews(library, manifest, selectedConceptIds){
+  const validation = validateConceptReviewManifest(library, manifest);
+  const errors = [...validation.errors];
+  const warnings = [...validation.warnings];
+  const {reviewByCode, conceptById} = conceptReviewManifestMaps(manifest);
+  const selectedIds = uniqueStrings(selectedConceptIds || []);
+  const diagnosticSet = new Set();
+
+  const addDiagnostic = id => {
+    const concept = conceptById.get(id);
+    if(!concept){
+      errors.push(`Required diagnostic concept ${id} is missing from the Concept Review manifest.`);
+      return;
+    }
+    if(concept.disposition === 'HIDDEN_SUPPLEMENTAL' || concept.diagnosable === false) return;
+    diagnosticSet.add(id);
+  };
+
+  for(const id of selectedIds){
+    const concept = conceptById.get(id);
+    if(!library?.concepts?.[id]){
+      errors.push(`Unknown selected concept ${id} cannot be resolved to Concept Reviews.`);
+      continue;
+    }
+    if(!concept){
+      errors.push(`Selected concept ${id} has no Concept Review disposition.`);
+      continue;
+    }
+    addDiagnostic(id);
+    const module = resolveConceptModule(library, id);
+    for(const question of allModuleQuestions(module || {})){
+      const primaryConceptId = String(question?.primaryConceptId || '');
+      if(primaryConceptId) addDiagnostic(primaryConceptId);
+    }
+  }
+
+  const expandCoverage = (id, stack = new Set()) => {
+    if(stack.has(id)){
+      errors.push(`Concept Review child coverage contains a cycle at ${id}.`);
+      return;
+    }
+    const concept = conceptById.get(id);
+    if(!concept || concept.disposition !== 'COVERED_BY_CHILD_CONCEPT') return;
+    const nextStack = new Set(stack);
+    nextStack.add(id);
+    for(const childId of uniqueStrings(concept.coveredByConceptIds || [])){
+      addDiagnostic(childId);
+      expandCoverage(childId, nextStack);
+    }
+  };
+  for(const id of [...diagnosticSet]) expandCoverage(id);
+
+  const diagnosticConceptIds = [...diagnosticSet].sort();
+  const requiredCodes = new Set();
+  for(const id of diagnosticConceptIds){
+    const concept = conceptById.get(id);
+    if(concept?.disposition === 'REVIEW_SHEET'){
+      for(const code of uniqueStrings(concept.reviewCodes || [])) requiredCodes.add(code);
+    } else if(concept?.disposition === 'NO_SHEET_INTEGRATION_META'){
+      warnings.push({type:'diagnosable-no-sheet-meta-selected', canonicalConceptId:id, reason:concept.reason});
+    }
+  }
+
+  const reviewCodes = [...requiredCodes].sort();
+  const assets = reviewCodes.map(code => {
+    const review = reviewByCode.get(code);
+    if(!review){
+      errors.push(`Required Concept Review ${code} is missing from the manifest.`);
+      return null;
+    }
+    return {
+      code,
+      title: review.title,
+      discipline: review.discipline,
+      sourcePath: `data/concept-reviews/${review.pdfPath}`,
+      destinationPath: `concept-reviews/${review.runtimeFilename}`,
+      sha256: review.sha256,
+      sizeBytes: review.sizeBytes
+    };
+  }).filter(Boolean);
+
+  const runtimeConcepts = {};
+  const runtimeReviews = {};
+  for(const id of diagnosticConceptIds){
+    const concept = conceptById.get(id);
+    if(!concept) continue;
+    const runtimeConcept = {
+      title: concept.displayName,
+      discipline: concept.discipline,
+      disposition: concept.disposition
+    };
+    if(concept.disposition === 'REVIEW_SHEET'){
+      const conceptAssets = uniqueStrings(concept.reviewCodes || []).map(code => {
+        const review = reviewByCode.get(code);
+        return review ? {
+          code,
+          title: review.title,
+          path: `concept-reviews/${review.runtimeFilename}`,
+          sha256: review.sha256
+        } : null;
+      }).filter(Boolean);
+      runtimeConcept.reviewCodes = conceptAssets.map(asset => asset.code);
+      runtimeConcept.primaryReviewCode = concept.primaryReviewCode || conceptAssets[0]?.code || null;
+      runtimeConcept.assets = conceptAssets;
+      runtimeReviews[id] = {
+        reviewCodes: runtimeConcept.reviewCodes,
+        primaryReviewCode: runtimeConcept.primaryReviewCode,
+        assets: conceptAssets
+      };
+      if(conceptAssets.length === 1){
+        runtimeReviews[id].code = conceptAssets[0].code;
+        runtimeReviews[id].title = conceptAssets[0].title;
+        runtimeReviews[id].path = conceptAssets[0].path;
+      }
+    } else if(concept.disposition === 'COVERED_BY_CHILD_CONCEPT'){
+      runtimeConcept.coveredByConceptIds = uniqueStrings(concept.coveredByConceptIds || []);
+      runtimeConcept.reason = concept.reason;
+    } else {
+      runtimeConcept.reason = concept.reason;
+    }
+    runtimeConcepts[id] = runtimeConcept;
+  }
+
+  const evidenceRoutes = {
+    questionToConceptIds:{},
+    repairSkillToConceptIds:{},
+    primarySkillToConceptIds:{},
+    secondarySkillToConceptIds:{},
+    objectiveToConceptIds:{}
+  };
+  const diagnosticIds = new Set(diagnosticConceptIds);
+  const addEvidenceRoute = (route, key, ids) => {
+    const routeKey = String(key || '');
+    const targets = uniqueStrings(ids || []).filter(id => diagnosticIds.has(id));
+    if(!routeKey || !targets.length) return;
+    route[routeKey] = uniqueStrings([...(route[routeKey] || []), ...targets]);
+  };
+  for(const selectedId of selectedIds){
+    const module = resolveConceptModule(library, selectedId);
+    for(const question of allModuleQuestions(module || {})){
+      const primaryId = String(question?.primaryConceptId || '');
+      const familyId = String(question?.familyConceptId || '');
+      const subtopicIds = uniqueStrings(question?.subtopicIds || []).filter(id => diagnosticIds.has(id));
+      const targets = uniqueStrings([
+        ...(subtopicIds.length ? subtopicIds : []),
+        ...(diagnosticIds.has(primaryId) && primaryId !== familyId ? [primaryId] : [])
+      ]);
+      if(!targets.length) continue;
+      addEvidenceRoute(evidenceRoutes.questionToConceptIds, idOf(question), targets);
+      addEvidenceRoute(evidenceRoutes.repairSkillToConceptIds, question?.repairSkill || question?.repairSkillId, targets);
+      addEvidenceRoute(evidenceRoutes.primarySkillToConceptIds, question?.primarySkill || question?.skillId, targets);
+      for(const skill of uniqueStrings([...(question?.secondarySkills || []), ...(question?.secondarySkillIds || [])])){
+        addEvidenceRoute(evidenceRoutes.secondarySkillToConceptIds, skill, targets);
+      }
+      addEvidenceRoute(evidenceRoutes.objectiveToConceptIds, question?.objective || question?.resourceMatching?.objectiveKey, targets);
+    }
+  }
+
+  const bundleRoutes = {};
+  for(const id of diagnosticConceptIds){
+    if(CONCEPT_REVIEW_BUNDLE_ROUTES[id] && (runtimeReviews[id]?.assets || []).length > 1){
+      const allowedCodes = new Set(runtimeReviews[id].assets.map(asset => asset.code));
+      const source = CONCEPT_REVIEW_BUNDLE_ROUTES[id];
+      bundleRoutes[id] = {
+        skillToReviewCode:Object.fromEntries(Object.entries(source.skillToReviewCode).filter(([, code]) => allowedCodes.has(code))),
+        objectiveToReviewCode:{},
+        reasonByReviewCode:Object.fromEntries(Object.entries(source.reasonByReviewCode).filter(([code]) => allowedCodes.has(code)))
+      };
+    }
+  }
+
+  const runtimeIndex = {
+    schemaVersion: CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION,
+    sourceManifestSchemaVersion: manifest?.schemaVersion || '',
+    selectedConceptIds: [...selectedIds].sort(),
+    diagnosticConceptIds,
+    reviewCodes,
+    assetInventory: assets.map(asset => ({
+      code: asset.code,
+      path: asset.destinationPath,
+      sha256: asset.sha256,
+      sizeBytes: asset.sizeBytes
+    })),
+    concepts: runtimeConcepts,
+    reviews: runtimeReviews,
+    evidenceRoutes,
+    bundleRoutes
+  };
+
+  return {
+    errors: uniqueStrings(errors),
+    warnings,
+    diagnosticConceptIds,
+    reviewCodes,
+    assets,
+    runtimeIndex,
+    validation
+  };
 }
 
 function resolveConceptModule(library, conceptId){
@@ -951,7 +1324,7 @@ function buildHtml(template, composition, config, metadata){
     output,
     '// FACULTY QUESTION BANKS — SAFE TO EDIT',
     '// END FACULTY QUESTION BANKS',
-    questionMarkerRegion(composition, metadata)
+    `${String(composition.conceptReviewRuntimeSource || '').replace(/<\/script/gi, '<\\/script')}\n${questionMarkerRegion(composition, metadata)}`
   );
   return output;
 }
@@ -1043,6 +1416,7 @@ return {
   MODE_REQUIREMENTS,
   CHECKPOINT_ORDER,
   CHECKPOINTS,
+  CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION,
   stableStringify,
   normalizeAnswerText,
   sha256Hex,
@@ -1050,6 +1424,8 @@ return {
   bossDifficulty,
   bossQuestionsForCheckpoint,
   resolveConceptModule,
+  validateConceptReviewManifest,
+  resolveConceptReviews,
   migrateRecipe,
   validateRecipeShape,
   validateFacultyQuestionRecord,

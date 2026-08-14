@@ -43,6 +43,13 @@
 .coverage-status.ready-focused-subtopic{background:#e6f6ed;border-color:#8bc9a6;color:#145a38}
 .coverage-status.supporting-subtopic{background:#fff5d9;border-color:#d8b85e;color:#72520b}
 
+/* Step 3 — discipline identity. Course area controls availability; discipline controls the strip. */
+:root{--general-accent:#2a8f8a;--micro-accent:#9fc4df;--macro-accent:#8f3f4d}
+.concept-card[data-discipline="general"]{border-left:4px solid var(--general-accent)}
+.concept-card[data-discipline="micro"]{border-left:4px solid var(--micro-accent)}
+.concept-card[data-discipline="macro"]{border-left:4px solid var(--macro-accent)}
+.concept-card.selected[data-discipline]{border-left-width:4px;padding-left:13px}
+
 /* =========================================================
    4.5s.2 — FACULTY CONCEPT-BROWSING FLOW
    Course area is the true first decision. Search and card visibility

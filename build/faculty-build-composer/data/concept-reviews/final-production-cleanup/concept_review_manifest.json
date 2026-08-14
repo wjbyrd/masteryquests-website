@@ -1,0 +1,1603 @@
+{
+  "schemaVersion": "7.0.0-no-subtitle-template",
+  "generatedAt": "2026-08-13T21:36:09.030228+00:00",
+  "summary": {
+    "generalPdfCount": 26,
+    "microPdfCount": 53,
+    "macroPdfCount": 41,
+    "totalPdfCount": 120,
+    "graphReviewCount": 72,
+    "failureCount": 0
+  },
+  "standardizedBenchmark": {
+    "code": "GEN-ECON-01",
+    "sha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332",
+    "noSubtitleTemplateApplied": true,
+    "formerCopyExceptionRetired": true
+  },
+  "renumberingMap": {
+    "GEN-ECON-14": "GEN-ECON-16",
+    "GEN-ECON-15": "GEN-ECON-17",
+    "GEN-ECON-16": "GEN-ECON-18",
+    "GEN-ECON-17": "GEN-ECON-19",
+    "GEN-ECON-18": "GEN-ECON-20",
+    "GEN-ECON-19": "GEN-ECON-21",
+    "GEN-ECON-20": "GEN-ECON-22",
+    "GEN-ECON-21": "GEN-ECON-23",
+    "GEN-ECON-22": "GEN-ECON-24",
+    "GEN-ECON-23": "GEN-ECON-25",
+    "GEN-ECON-24": "GEN-ECON-26"
+  },
+  "demandSupplySplit": {
+    "oldDemand": "GEN-ECON-12",
+    "oldSupply": "GEN-ECON-13",
+    "new": [
+      "GEN-ECON-12",
+      "GEN-ECON-13",
+      "GEN-ECON-14",
+      "GEN-ECON-15"
+    ]
+  },
+  "reviews": [
+    {
+      "code": "GEN-ECON-01",
+      "title": "Scarcity",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "scarcity-and-tradeoffs"
+      ],
+      "pdfPath": "GEN-ECON-01.pdf",
+      "pdfSha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-02",
+      "title": "Incentives",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "incentives"
+      ],
+      "pdfPath": "GEN-ECON-02.pdf",
+      "pdfSha256": "9bcc8d1a08e317fe8f5f0a499c5f2742845830b057e3274f9e1764315f9ef49c",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-03",
+      "title": "Opportunity Cost",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "opportunity-cost"
+      ],
+      "pdfPath": "GEN-ECON-03.pdf",
+      "pdfSha256": "b6b15c6e6d33a281c1711dadc75a60d829be215455fd31d5bb8e0b405d1a48cb",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-04",
+      "title": "Marginal Analysis",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "marginal-analysis"
+      ],
+      "pdfPath": "GEN-ECON-04.pdf",
+      "pdfSha256": "e07a41d8fe30a714c37e4be8e9458f0b4e7f0f0ad444d3c0dd097c64f290a533",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-05",
+      "title": "Microeconomics vs. Macroeconomics",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "micro-versus-macro"
+      ],
+      "pdfPath": "GEN-ECON-05.pdf",
+      "pdfSha256": "5b8a35bba7fc2667961a54c07a3a6b09094cbf66da3cf1c5d391db996ca760af",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-06",
+      "title": "Positive vs. Normative Analysis",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "positive-versus-normative-analysis"
+      ],
+      "pdfPath": "GEN-ECON-06.pdf",
+      "pdfSha256": "1334ea188bd15cca293feaf32e7e9c928294a954a84b5082d0d2f8017be6b4bb",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-07",
+      "title": "Models and Assumptions",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "models-and-assumptions"
+      ],
+      "pdfPath": "GEN-ECON-07.pdf",
+      "pdfSha256": "40dd71c284a0dfa52b82aba73bbe8781b448406429e70caa7ae1d4c214dd1bc8",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-08",
+      "title": "Production Possibilities Frontier (PPF)",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "production-possibilities-frontier"
+      ],
+      "pdfPath": "GEN-ECON-08.pdf",
+      "pdfSha256": "7b0515683cdc4e1235d6ea81163ea20ed943c0c29df90f07f3dd0199a4e09424",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-09",
+      "title": "Comparative Advantage and Gains from Trade",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "gains-from-trade"
+      ],
+      "pdfPath": "GEN-ECON-09.pdf",
+      "pdfSha256": "9d5940f42216ea2399aaa3ea4721289e407c358c794784cb7a16840695e0bb83",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-10",
+      "title": "Economists and Policy",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "economist-policy-role"
+      ],
+      "pdfPath": "GEN-ECON-10.pdf",
+      "pdfSha256": "7de5e5caba8749f23c230db0c80dcb9050d7e34286b2661d6852b39e477d6056",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-11",
+      "title": "Competitive Markets",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "competitive-markets"
+      ],
+      "pdfPath": "GEN-ECON-11.pdf",
+      "pdfSha256": "82561ba8f8f1c9ec506337843d3af3f24d1374935ec5beb5315c02bcabcd7b4c",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-12",
+      "title": "Demand & the Law of Demand",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "demand"
+      ],
+      "pdfPath": "GEN-ECON-12.pdf",
+      "pdfSha256": "4c0bdf4a15e0cda4838e0603e5f4ad1b7a01f4ff32fd2c2b9595d185082c381f",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-13",
+      "title": "Determinants of Demand",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "demand"
+      ],
+      "pdfPath": "GEN-ECON-13.pdf",
+      "pdfSha256": "aa8df46c439efd810823b06203dcd5bf330cb0c7c8ac2683a5a9c024d9b154bb",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-14",
+      "title": "Supply & the Law of Supply",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "supply"
+      ],
+      "pdfPath": "GEN-ECON-14.pdf",
+      "pdfSha256": "68434f4acfb52f72343bc0753cacb9381cee988d76fa0ffd451a5d5b61ac10a1",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-15",
+      "title": "Determinants of Supply",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "supply"
+      ],
+      "pdfPath": "GEN-ECON-15.pdf",
+      "pdfSha256": "9822d54120677d005ff5e648884e0fe4fb890b60ec009627f16dfee1dfa06fea",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-16",
+      "title": "Market Equilibrium",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "market-equilibrium"
+      ],
+      "pdfPath": "GEN-ECON-16.pdf",
+      "pdfSha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-17",
+      "title": "Shortages and Surpluses",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "market-equilibrium"
+      ],
+      "pdfPath": "GEN-ECON-17.pdf",
+      "pdfSha256": "dacae7a0491d0859cdc5e9239916c975c80706b3b5ccbfdfcf0012ab2e4a95fb",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-18",
+      "title": "Simultaneous Shifts",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "market-equilibrium"
+      ],
+      "pdfPath": "GEN-ECON-18.pdf",
+      "pdfSha256": "646b5f8e5e1a29250ad075064b9f948ef301c0d9a5cb1147c12ed50718434186",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-19",
+      "title": "Price Ceilings",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "binding-price-ceilings"
+      ],
+      "pdfPath": "GEN-ECON-19.pdf",
+      "pdfSha256": "5e0dda5f6099a2f900bccce6f982408cd589d6779ed98ccc752a8c7f9ab60de9",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-20",
+      "title": "Price Floors",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "binding-price-floors"
+      ],
+      "pdfPath": "GEN-ECON-20.pdf",
+      "pdfSha256": "318a5cda4c284af2e3e1f1be16d8173200e47a272c6d754c2510678ce1501602",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-21",
+      "title": "Tax Incidence without Elasticity",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "statutory-versus-economic-tax-incidence"
+      ],
+      "pdfPath": "GEN-ECON-21.pdf",
+      "pdfSha256": "635e4092c6a5b5c9f37b4f16928b7d5451185b03aef47b630f306ae6673de7e3",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-22",
+      "title": "Tax Incidence with Elasticity",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "tax-incidence"
+      ],
+      "pdfPath": "GEN-ECON-22.pdf",
+      "pdfSha256": "5ce0a806a98f7d25885f03571142345abbd4d675227f4ba1ba4cbf89192e4ce1",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-23",
+      "title": "International Trade: World Prices",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "trade-world-price-status"
+      ],
+      "pdfPath": "GEN-ECON-23.pdf",
+      "pdfSha256": "1596c9e45cba999decfcc5a0acda5614e10c7a36d5b48a6c1e67da1e3d2248e8",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-24",
+      "title": "International Trade: Tariffs",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "pdfPath": "GEN-ECON-24.pdf",
+      "pdfSha256": "bb4105413ae19879c5f80cdba9dd9f28b5ce5a307cb674c05c2ebe55bad41f42",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-25",
+      "title": "International Trade: Quotas",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "import-quotas-quota-rents"
+      ],
+      "pdfPath": "GEN-ECON-25.pdf",
+      "pdfSha256": "d6ac16c9b8b5deb427373f7be73c4830be6abafe2a63b9520b53d3b14e668377",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "GEN-ECON-26",
+      "title": "International Trade: Policy and Distribution",
+      "discipline": "general",
+      "canonicalConceptIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "pdfPath": "GEN-ECON-26.pdf",
+      "pdfSha256": "420e9536e9f71bd999cc3c7a4ee1726af7817d7f6d4ac9e666e0dda347f75a82",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-01",
+      "title": "Price Signals",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "price-signals"
+      ],
+      "pdfPath": "MICRO-01.pdf",
+      "pdfSha256": "0594ae8947fd115ab1a2c88c8f1300159fbb30f3c6dde2f1e982579f81ee8fb7",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-02",
+      "title": "Tax Wedges and Revenue",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "tax-wedges-and-revenue"
+      ],
+      "pdfPath": "MICRO-02.pdf",
+      "pdfSha256": "24a93b259f112f5721392c8f587224ba98dd098e59f24e07bed7e915f018a917",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-03",
+      "title": "Market Failures",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "market-failures"
+      ],
+      "pdfPath": "MICRO-03.pdf",
+      "pdfSha256": "fa982a28f33bb6cf4dec0b62537e22dcb5ef3eea32fe18c9376dc2dd180020c2",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-04",
+      "title": "Price Elasticity of Demand",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "price-elasticity-of-demand"
+      ],
+      "pdfPath": "MICRO-04.pdf",
+      "pdfSha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-05",
+      "title": "Price Elasticity of Supply",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "price-elasticity-of-supply"
+      ],
+      "pdfPath": "MICRO-05.pdf",
+      "pdfSha256": "3aa5d2eedf9a3cee4920adebdb026c47be767bd6bd341c25526ef1a5e096c331",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-06",
+      "title": "Income Elasticity of Demand",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "income-elasticity-of-demand"
+      ],
+      "pdfPath": "MICRO-06.pdf",
+      "pdfSha256": "b50fe275d821e1078c2698ff6bce827e70dfaea466ddee573007f08704659227",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-07",
+      "title": "Cross-Price Elasticity of Demand",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "cross-price-elasticity-of-demand"
+      ],
+      "pdfPath": "MICRO-07.pdf",
+      "pdfSha256": "49ef907e57fa79e006ec4ae0a6e7981bae71853305c304d7e5d67fffc7166559",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-08",
+      "title": "Elasticity and Total Revenue",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "elasticity-and-total-revenue"
+      ],
+      "pdfPath": "MICRO-08.pdf",
+      "pdfSha256": "5c7e92102251048f5fdbc8722112757e186345c7f03f26f43795aa3f69e384f9",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-09",
+      "title": "Applications of Elasticity",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "applications-of-elasticity"
+      ],
+      "pdfPath": "MICRO-09.pdf",
+      "pdfSha256": "af90729ee8c23c9630fd153b3eb8f3b1397a018baa238c084f02d7ffe9d9928d",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-10",
+      "title": "Consumer Surplus & Willingness to Pay",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "consumer-surplus"
+      ],
+      "pdfPath": "MICRO-10.pdf",
+      "pdfSha256": "fc1a7e31fe4dd4a15718ef4c32e480e0d368e81907bf63331b60e6cfa172d57c",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-11",
+      "title": "Producer Surplus & Willingness to Accept",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "producer-surplus"
+      ],
+      "pdfPath": "MICRO-11.pdf",
+      "pdfSha256": "3732cd350bcae9b18ed4ba9496aa5572f789ce4bb4d65ad61774113508f3f3c9",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-12",
+      "title": "Total Surplus & Gains from Exchange",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "total-surplus-gains-from-exchange"
+      ],
+      "pdfPath": "MICRO-12.pdf",
+      "pdfSha256": "b454d41b5d9607145c03a7252afd184a76e0c5a6bf5729b4204ffc0c1574098d",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-13",
+      "title": "Efficient Quantity & Allocation",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "efficient-quantity-allocation"
+      ],
+      "pdfPath": "MICRO-13.pdf",
+      "pdfSha256": "85f95a7e0f7f3a3c318c635400d3713593f1906defc0a7bd66799b23d436e8d1",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-14",
+      "title": "Changes in Surplus & Policy Effects",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "surplus-changes-policy-effects"
+      ],
+      "pdfPath": "MICRO-14.pdf",
+      "pdfSha256": "67d8fbd4eaadaddc77389fcb4c57b759fb8df3abcd0cd3fad0b44c5d6998f5c3",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-15",
+      "title": "Efficiency, Equity & Limits of Surplus Analysis",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "efficiency-equity-surplus-limits"
+      ],
+      "pdfPath": "MICRO-15.pdf",
+      "pdfSha256": "c5e35d67d396c93f878fce0c85660017c10622da86afc8fd1b95a0883f6a29fa",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-16",
+      "title": "Domestic Production, Consumption & Trade Quantities",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "trade-domestic-production-consumption-quantities"
+      ],
+      "pdfPath": "MICRO-16.pdf",
+      "pdfSha256": "ffdd7e45c23e62f3fe83dcbb0ea356e8b2a59f72b197c5d7a81fdd533b919e0c",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-17",
+      "title": "Gains from Trade, Surplus & Winners/Losers",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "trade-gains-surplus-winners-losers"
+      ],
+      "pdfPath": "MICRO-17.pdf",
+      "pdfSha256": "6f9db5c59dbf614c088aba8e78111e2b03586b3ce09b5f9e82718bf30c2d3576",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-18",
+      "title": "Economic Costs: Explicit, Implicit & Opportunity Cost",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "economic-costs"
+      ],
+      "pdfPath": "MICRO-18.pdf",
+      "pdfSha256": "1e755f4fedf3c4a1f5ebcbac245a635aa09e9199ebd1fbd6043538d9e21f81a7",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-19",
+      "title": "Accounting, Economic & Normal Profit",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "profit-concepts"
+      ],
+      "pdfPath": "MICRO-19.pdf",
+      "pdfSha256": "93a17d663b88cb0dcf04b4696dba224b56e9f169b44180077d91df388eba48ba",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-20",
+      "title": "Short-Run Production & Diminishing Marginal Product",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "short-run-production"
+      ],
+      "pdfPath": "MICRO-20.pdf",
+      "pdfSha256": "0724b92d6e72ea26219eabcc0fccd389a80e39aace9386bc852459c806443d20",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-21",
+      "title": "Cost Components & Cost Schedules",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "cost-components-schedules"
+      ],
+      "pdfPath": "MICRO-21.pdf",
+      "pdfSha256": "2addf3db5e0c084f27a8e61c26bdcf9552adb7a403831f7dfc2fc0b634ee94e1",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-22",
+      "title": "Average Costs: AFC, AVC & ATC",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "average-costs"
+      ],
+      "pdfPath": "MICRO-22.pdf",
+      "pdfSha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-23",
+      "title": "Marginal Cost & Production-Cost Linkages",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "marginal-cost-production-linkages"
+      ],
+      "pdfPath": "MICRO-23.pdf",
+      "pdfSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-24",
+      "title": "Short-Run Cost Curves: Relationships & Shifts",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "short-run-cost-curves"
+      ],
+      "pdfPath": "MICRO-24.pdf",
+      "pdfSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-25",
+      "title": "Sunk & Avoidable Costs",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "sunk-avoidable-costs"
+      ],
+      "pdfPath": "MICRO-25.pdf",
+      "pdfSha256": "41c7f4e94f080c122ad178e92c83df5c0c4aeffa3a31029a52f041ee5aab7503",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-26",
+      "title": "LRAC, Economies & Diseconomies of Scale",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "long-run-average-cost-scale"
+      ],
+      "pdfPath": "MICRO-26.pdf",
+      "pdfSha256": "fff581cc87ef2a611df4a3a5a4b1fabb7ffb6f9bf9fd12fcf68d6da62c3fbe1f",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-27",
+      "title": "Minimum Efficient Scale & Constant Returns to Scale",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "minimum-efficient-scale"
+      ],
+      "pdfPath": "MICRO-27.pdf",
+      "pdfSha256": "cc83e3bfee5644848c8968aaca1dad0c16ef7165dc6d68e7453b34d93a379d5e",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-28",
+      "title": "Market Structure, Price Taking & Firm Revenue",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-market-price-taking-revenue"
+      ],
+      "pdfPath": "MICRO-28.pdf",
+      "pdfSha256": "7da8934c4a1717ef467fd06d0b6fff9fb8642e8f374a830542dfd15d646d778d",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-29",
+      "title": "Profit-Maximizing Output & the MR = MC Rule",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-output-choice"
+      ],
+      "pdfPath": "MICRO-29.pdf",
+      "pdfSha256": "12a0e8066ade335347598db1f3255252477a83ae665a6128315505863af16370",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-30",
+      "title": "Profit, Loss & Break-Even",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-profit-loss"
+      ],
+      "pdfPath": "MICRO-30.pdf",
+      "pdfSha256": "1752f9ca8ec530d303970590bf671e797cd598e1b9b02c2c22507a642b4fa70c",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-31",
+      "title": "Shutdown & Short-Run Loss Minimization",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-shutdown"
+      ],
+      "pdfPath": "MICRO-31.pdf",
+      "pdfSha256": "fc05ca1af10a0dd5df2f373f4fa66a00a94598c3351405c278a46a17b2791c17",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-32",
+      "title": "Short-Run Supply & Cost Shifts",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-short-run-supply"
+      ],
+      "pdfPath": "MICRO-32.pdf",
+      "pdfSha256": "8294847a3f3496953f8e30b63a34eb8a1d6acfe6b679dd056d87010789d672ec",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-33",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-entry-exit-long-run"
+      ],
+      "pdfPath": "MICRO-33.pdf",
+      "pdfSha256": "da4a205e051b47b57ca053fbd9a1d294280b0f0688f3eb0bac1c45fa04704033",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-34",
+      "title": "Long-Run Industry Supply & Cost Conditions",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-industry-cost-conditions"
+      ],
+      "pdfPath": "MICRO-34.pdf",
+      "pdfSha256": "12d44e3c982c5d4464872383a4df4728efef1640f36ba35ff59eccc967760d41",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-35",
+      "title": "Competitive Efficiency & Model Limits",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "competitive-efficiency-limits"
+      ],
+      "pdfPath": "MICRO-35.pdf",
+      "pdfSha256": "df77db0504f3580ff48739410109c353d9e56c523e740c0a7a530c68497cef62",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-36",
+      "title": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "monopoly-power-barriers"
+      ],
+      "pdfPath": "MICRO-36.pdf",
+      "pdfSha256": "4e8f658fe4fcc32323d8eee853d31cddbada5219d4146aee0f6e1a0ac0c86c50",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-37",
+      "title": "Monopoly Demand, Revenue & Marginal Revenue",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "monopoly-demand-revenue"
+      ],
+      "pdfPath": "MICRO-37.pdf",
+      "pdfSha256": "c519602167d085afee48aae6423d674d0d31174739157ccfbc0d9a1b745dbb80",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-38",
+      "title": "Profit-Maximizing Output & Monopoly Price",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "monopoly-output-price"
+      ],
+      "pdfPath": "MICRO-38.pdf",
+      "pdfSha256": "c05e1e496727fe6b057195a2a39d8a3ec36198824d9785a983fd3eefa09b90e7",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-39",
+      "title": "Monopoly Profit, Loss & Shutdown",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "monopoly-profit-loss-shutdown"
+      ],
+      "pdfPath": "MICRO-39.pdf",
+      "pdfSha256": "665923def0302bc57b619404813c797c00770778755a9acdfd7c0be3ab32822c",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-40",
+      "title": "Monopoly Welfare, Efficiency & Competitive Comparison",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "monopoly-welfare-efficiency"
+      ],
+      "pdfPath": "MICRO-40.pdf",
+      "pdfSha256": "7adcbcfb4759c165a9438844cf775f8e6fc52ac12a8c42a26ed21ac9a8332048",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-41",
+      "title": "Natural Monopoly & Regulation",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "natural-monopoly-regulation"
+      ],
+      "pdfPath": "MICRO-41.pdf",
+      "pdfSha256": "d9b63219b87949dade8a0b1cb62e14e413e13c2335056555d0749a7fca35c2bb",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-42",
+      "title": "Price Discrimination",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "monopoly-price-discrimination"
+      ],
+      "pdfPath": "MICRO-42.pdf",
+      "pdfSha256": "a03eb1af93eaa0c91e612ce15af269707f90e2fba1ffb75d61b8a5d93bebb47b",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-43",
+      "title": "Market Structure & Product Differentiation",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "mcomp-structure-differentiation"
+      ],
+      "pdfPath": "MICRO-43.pdf",
+      "pdfSha256": "86924159f46232a5587b7d662467b4130aeb3197ec226ef28f579a0f14fa13c5",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-44",
+      "title": "Short-Run Firm Choice, Profit/Loss & Shutdown",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "mcomp-short-run-choice"
+      ],
+      "pdfPath": "MICRO-44.pdf",
+      "pdfSha256": "2731eb56d4f1dc1060e36a1f9be07a9b2529ff501272db24cca0fce855be7872",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-45",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "mcomp-entry-exit-long-run"
+      ],
+      "pdfPath": "MICRO-45.pdf",
+      "pdfSha256": "47b761401c04b03b11c93b23b66321bc216ea866c377accb26a8cd55452c70fc",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-46",
+      "title": "Advertising, Branding & Nonprice Competition",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "mcomp-advertising-nonprice"
+      ],
+      "pdfPath": "MICRO-46.pdf",
+      "pdfSha256": "d5d28e0d374a05f9b6099a8b8dacd442295d8a14e13de0c3e3584e6abea2c140",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-47",
+      "title": "Product Variety, Efficiency & Model Limits",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "mcomp-efficiency-variety-limits"
+      ],
+      "pdfPath": "MICRO-47.pdf",
+      "pdfSha256": "4214d54092035e9d404e3797952219df935fe8b991fc847755a7967366c1a61b",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-48",
+      "title": "Oligopoly Structure, Strategic Interdependence & Concentration",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "oligopoly-structure-concentration"
+      ],
+      "pdfPath": "MICRO-48.pdf",
+      "pdfSha256": "176997142487a8a5476223a8d77381d34e746d4d77d1ddb88ee30d8dcf8b1606",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-49",
+      "title": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "oligopoly-game-theory-foundations"
+      ],
+      "pdfPath": "MICRO-49.pdf",
+      "pdfSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-50",
+      "title": "Collusion, Cartels & Prisoner's-Dilemma Incentives",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "oligopoly-collusion-cartels"
+      ],
+      "pdfPath": "MICRO-50.pdf",
+      "pdfSha256": "188e5d55b00ad1a2cff44f3da36d153fec895c8a4c6875609fe211629179ef58",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-51",
+      "title": "Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "oligopoly-dynamic-strategy"
+      ],
+      "pdfPath": "MICRO-51.pdf",
+      "pdfSha256": "d396e96d8831fe4b78b40b35f35795b54f4c39ec5ee9ffb4534540802fe63f06",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-52",
+      "title": "Tacit Coordination, Price Leadership & Nonprice Competition",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "oligopoly-rivalry-coordination"
+      ],
+      "pdfPath": "MICRO-52.pdf",
+      "pdfSha256": "93b8a89028f55f40844ea5221dc22135c762496c7a30a20eaa285bef6cb5046c",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MICRO-53",
+      "title": "Oligopoly Welfare, Mergers & Antitrust Tradeoffs",
+      "discipline": "micro",
+      "canonicalConceptIds": [
+        "oligopoly-welfare-policy"
+      ],
+      "pdfPath": "MICRO-53.pdf",
+      "pdfSha256": "0f407010039c171401dd1c7776548f8632a968e250860bf951b4e4b95fbb3ebd",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-01",
+      "title": "GDP Measurement",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "gdp-measurement"
+      ],
+      "pdfPath": "MACRO-01.pdf",
+      "pdfSha256": "5e0479e0e24bc9c340c108eaf2124ddd03e44e64ad93fcaa1dcf06589a7aec8e",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-02",
+      "title": "GDP Components",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "gdp-components"
+      ],
+      "pdfPath": "MACRO-02.pdf",
+      "pdfSha256": "f177ce7623c18c1fe03bb22034922619b45e5c60f9e65e912227ba1809719856",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-03",
+      "title": "Real versus Nominal GDP",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "real-versus-nominal-gdp"
+      ],
+      "pdfPath": "MACRO-03.pdf",
+      "pdfSha256": "3633a38d91344c53c3d35c749276e06048ebd4d1b56f2137d09e143915ca0f4b",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-04",
+      "title": "Limits of GDP",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "limits-of-gdp"
+      ],
+      "pdfPath": "MACRO-04.pdf",
+      "pdfSha256": "6f2600f7edc7b57972262987f15ccbbb7d81b8c04783f4f2a556b3041dba4ae2",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-05",
+      "title": "CPI and Inflation Measurement",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "pdfPath": "MACRO-05.pdf",
+      "pdfSha256": "1421f034c9ad78305f5ba8c5b8255e85dc7ad2f80326d63523f3304bf5337245",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-06",
+      "title": "CPI Bias",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "cpi-bias"
+      ],
+      "pdfPath": "MACRO-06.pdf",
+      "pdfSha256": "50caf2c4afea6a86ba6b7844719319b1a71c1ce58af9e814f68efd4d2e4cbcd4",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-07",
+      "title": "CPI versus GDP Deflator",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "cpi-versus-gdp-deflator"
+      ],
+      "pdfPath": "MACRO-07.pdf",
+      "pdfSha256": "46be6f9a77d1e1bcce79f5f90708b9761cbd74d08487b8d53b3c000e1941dc2b",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-08",
+      "title": "Indexing and Real Values",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "indexing-and-real-values"
+      ],
+      "pdfPath": "MACRO-08.pdf",
+      "pdfSha256": "17efdf5304c1008b923aee8e528f8bd656a7234817b20b701ef783f3f28390f4",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-09",
+      "title": "Real versus Nominal Interest Rates",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "real-versus-nominal-interest-rates"
+      ],
+      "pdfPath": "MACRO-09.pdf",
+      "pdfSha256": "5458c87b8334d711a95cc61fe86d6e7e917e74bb77d2b93ff63237afb4bb43f0",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-10",
+      "title": "Living Standards and Growth",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "living-standards-and-growth"
+      ],
+      "pdfPath": "MACRO-10.pdf",
+      "pdfSha256": "f7a02aa89ccfd652da279d8461479435e69f49bfa8b88d8f1030b20a6ed846a9",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-11",
+      "title": "Productivity Measurement",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "productivity-measurement"
+      ],
+      "pdfPath": "MACRO-11.pdf",
+      "pdfSha256": "832d18db2cdbbf439943118a876cbd2e8e381a77aeafc24c5fc65b6d0933fe8e",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-12",
+      "title": "Sources of Productivity",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "sources-of-productivity"
+      ],
+      "pdfPath": "MACRO-12.pdf",
+      "pdfSha256": "2d5828179aaa62db831aba30f596f8f2bc62b3bcbd58beebe66a26a2825d24b1",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-13",
+      "title": "Economic Growth Policy",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "economic-growth-policy"
+      ],
+      "pdfPath": "MACRO-13.pdf",
+      "pdfSha256": "49d256cf53848968f3dce266a3fbeda024a31b803153cda9504a69c0dba67081",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-14",
+      "title": "Unemployment Measurement",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "unemployment-measurement"
+      ],
+      "pdfPath": "MACRO-14.pdf",
+      "pdfSha256": "493f14d337903b8e8186823c39464b399a512851b8d96a2eae4fa667eecdc69b",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-15",
+      "title": "Types of Unemployment",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "unemployment-types"
+      ],
+      "pdfPath": "MACRO-15.pdf",
+      "pdfSha256": "01325f624cbd4c0380f273201f273ca83d4ec73e4e1d30c84eaa3bc230a168cb",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-16",
+      "title": "Labor-Market Institutions",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "labor-market-institutions"
+      ],
+      "pdfPath": "MACRO-16.pdf",
+      "pdfSha256": "4b8dfa63d28fcf00c2e9a334637f68c109a2c02ca6646f60a9afa7fc4a11d712",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-17",
+      "title": "Natural Rate of Unemployment",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "natural-rate-of-unemployment"
+      ],
+      "pdfPath": "MACRO-17.pdf",
+      "pdfSha256": "6d3f90895f03cdf47ce6911d072f5b7f3bf81f3c3176597a64ab07d59c058d8b",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-18",
+      "title": "Money Functions and Measures",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "pdfPath": "MACRO-18.pdf",
+      "pdfSha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-19",
+      "title": "Central Banking and the Federal Reserve",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "central-bank-and-federal-reserve"
+      ],
+      "pdfPath": "MACRO-19.pdf",
+      "pdfSha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-20",
+      "title": "Bank Money Creation",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "bank-money-creation"
+      ],
+      "pdfPath": "MACRO-20.pdf",
+      "pdfSha256": "20f7b1daeaec37ad8a87c5960506905a9fc2f17808c398dbfc774031b11e782e",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-21",
+      "title": "Monetary-Policy Tools",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "monetary-policy-tools"
+      ],
+      "pdfPath": "MACRO-21.pdf",
+      "pdfSha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-22",
+      "title": "Limits of Monetary Control",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "monetary-control-limits"
+      ],
+      "pdfPath": "MACRO-22.pdf",
+      "pdfSha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-23",
+      "title": "Quantity Theory of Money",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "quantity-theory-of-money"
+      ],
+      "pdfPath": "MACRO-23.pdf",
+      "pdfSha256": "e79a7bb060e1ad6f229a3766e5d7dc842ad7ed22ff1e1f3b48ea976ef9f342d9",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-24",
+      "title": "Monetary Neutrality",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "monetary-neutrality"
+      ],
+      "pdfPath": "MACRO-24.pdf",
+      "pdfSha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-25",
+      "title": "Fisher Effect",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "fisher-effect"
+      ],
+      "pdfPath": "MACRO-25.pdf",
+      "pdfSha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-26",
+      "title": "Costs of Inflation",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "inflation-costs"
+      ],
+      "pdfPath": "MACRO-26.pdf",
+      "pdfSha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-27",
+      "title": "Inflation Tax and Deflation",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "inflation-tax-and-deflation"
+      ],
+      "pdfPath": "MACRO-27.pdf",
+      "pdfSha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-28",
+      "title": "Liquidity Preference and the Money Market",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "liquidity-preference-and-money-market"
+      ],
+      "pdfPath": "MACRO-28.pdf",
+      "pdfSha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-29",
+      "title": "Monetary-Policy Transmission",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "monetary-policy-transmission"
+      ],
+      "pdfPath": "MACRO-29.pdf",
+      "pdfSha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-30",
+      "title": "Fiscal Policy and Aggregate Demand",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "pdfPath": "MACRO-30.pdf",
+      "pdfSha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-31",
+      "title": "Fiscal Multipliers and Crowding Out",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "fiscal-multipliers-and-crowding-out"
+      ],
+      "pdfPath": "MACRO-31.pdf",
+      "pdfSha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-32",
+      "title": "Stabilization Policy",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "stabilization-policy"
+      ],
+      "pdfPath": "MACRO-32.pdf",
+      "pdfSha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-33",
+      "title": "Aggregate Demand",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "aggregate-demand"
+      ],
+      "pdfPath": "MACRO-33.pdf",
+      "pdfSha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-34",
+      "title": "Aggregate Supply",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "aggregate-supply"
+      ],
+      "pdfPath": "MACRO-34.pdf",
+      "pdfSha256": "b37fd709deee3612fedefd00a3b5a6383925edcd3031e07de5c4eb9f3c2d23ac",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-35",
+      "title": "Macroeconomic Equilibrium and Shocks",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "macroeconomic-equilibrium-and-shocks"
+      ],
+      "pdfPath": "MACRO-35.pdf",
+      "pdfSha256": "928b0af905a78b37e98be4dfe795514df9f5ea7f5b048e76330c11867a278d06",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-36",
+      "title": "Long-Run Macroeconomic Adjustment",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "long-run-macroeconomic-adjustment"
+      ],
+      "pdfPath": "MACRO-36.pdf",
+      "pdfSha256": "f30f8fbdc4eae3628df020a9f5f11dfe7250b18cf7cf29aeba2273cacabbcb14",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-37",
+      "title": "Short-Run Phillips Curve",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "short-run-phillips-curve"
+      ],
+      "pdfPath": "MACRO-37.pdf",
+      "pdfSha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-38",
+      "title": "Long-Run Phillips Curve",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "long-run-phillips-curve"
+      ],
+      "pdfPath": "MACRO-38.pdf",
+      "pdfSha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-39",
+      "title": "Phillips-Curve Expectations",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "phillips-curve-expectations"
+      ],
+      "pdfPath": "MACRO-39.pdf",
+      "pdfSha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-40",
+      "title": "Disinflation and Policy",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "disinflation-and-policy"
+      ],
+      "pdfPath": "MACRO-40.pdf",
+      "pdfSha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+      "usesGraph": true,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    },
+    {
+      "code": "MACRO-41",
+      "title": "Sacrifice Ratio",
+      "discipline": "macro",
+      "canonicalConceptIds": [
+        "sacrifice-ratio"
+      ],
+      "pdfPath": "MACRO-41.pdf",
+      "pdfSha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+      "usesGraph": false,
+      "pedagogyPassed": true,
+      "layoutPassed": true
+    }
+  ]
+}

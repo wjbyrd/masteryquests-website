@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2.0.0-calibration",
+  "generatedAt": "2026-08-13T16:01:36.302120+00:00",
+  "pdfCount": 6,
+  "allStructuralChecksPassed": true,
+  "issues": [],
+  "checks": [
+    {
+      "file": "GEN-ECON-01.pdf",
+      "pages": 1,
+      "language": "en-US",
+      "selectableTextCharacters": 1486,
+      "footerCount": 1,
+      "sourceAltTextPresent": null,
+      "taggedFigureAltStatus": "not applicable",
+      "issues": [],
+      "passed": true
+    },
+    {
+      "file": "GEN-ECON-11.pdf",
+      "pages": 1,
+      "language": "en-US",
+      "selectableTextCharacters": 2111,
+      "footerCount": 1,
+      "sourceAltTextPresent": null,
+      "taggedFigureAltStatus": "not applicable",
+      "issues": [],
+      "passed": true
+    },
+    {
+      "file": "MACRO-01.pdf",
+      "pages": 1,
+      "language": "en-US",
+      "selectableTextCharacters": 2295,
+      "footerCount": 1,
+      "sourceAltTextPresent": null,
+      "taggedFigureAltStatus": "not applicable",
+      "issues": [],
+      "passed": true
+    },
+    {
+      "file": "MACRO-17.pdf",
+      "pages": 1,
+      "language": "en-US",
+      "selectableTextCharacters": 2332,
+      "footerCount": 1,
+      "sourceAltTextPresent": null,
+      "taggedFigureAltStatus": "not applicable",
+      "issues": [],
+      "passed": true
+    },
+    {
+      "file": "MICRO-04.pdf",
+      "pages": 1,
+      "language": "en-US",
+      "selectableTextCharacters": 2188,
+      "footerCount": 1,
+      "sourceAltTextPresent": true,
+      "taggedFigureAltStatus": "not implemented by current generation stack",
+      "issues": [],
+      "passed": true
+    },
+    {
+      "file": "MICRO-21.pdf",
+      "pages": 1,
+      "language": "en-US",
+      "selectableTextCharacters": 1920,
+      "footerCount": 1,
+      "sourceAltTextPresent": true,
+      "taggedFigureAltStatus": "not implemented by current generation stack",
+      "issues": [],
+      "passed": true
+    }
+  ],
+  "visualInspection": {
+    "status": "passed",
+    "renderDpi": 144,
+    "pagesInspected": 6,
+    "officialLogoPixelMatchCount": 6,
+    "notes": "All six calibration pages were rendered and inspected individually and on a contact sheet. GEN-ECON-01 is pixel-identical to the locked benchmark render. The other five pages have no clipping, overlap, duplicated READY ring, unreadable text, missing section icon, or unexplained whitespace. Both instructional graphs are legible and explicitly interpreted in the Worked Example."
+  },
+  "accessibility": {
+    "selectableText": "validated per file",
+    "documentLanguage": "validated per file",
+    "sourceAltText": "validated for both instructional graphs",
+    "taggedPdf": false,
+    "pdfUaClaimed": false,
+    "limitation": "Source alt text is complete for meaningful images. The current ReportLab and pypdf stack does not reliably create a tagged Figure structure element with /Alt or artifact decorative graphics, so this calibration does not claim PDF/UA compliance."
+  }
+}

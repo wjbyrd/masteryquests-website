@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.0.0-full-production-summary",
+  "generatedAt": "2026-08-13T17:57:46.372410+00:00",
+  "deliverables": {
+    "total": 118,
+    "general": 24,
+    "micro": 53,
+    "macro": 41,
+    "failures": []
+  },
+  "benchmark": {
+    "code": "GEN-ECON-01",
+    "sha256": "2476ceafd06cda374d817b16fe7988a37ecae301c0bcc9aaba2f278e4fc2b842",
+    "modified": false
+  },
+  "content": {
+    "rebuilt": 112,
+    "issueReviewCount": 0
+  },
+  "graphs": {
+    "reviewCount": 70,
+    "uniqueSourceAssetCount": 50,
+    "sourceAltReviewedCount": 70,
+    "visibleInterpretationCount": 70,
+    "assets": [
+      {
+        "filename": "COST-02.webp",
+        "codes": [
+          "MICRO-22",
+          "MICRO-23"
+        ]
+      },
+      {
+        "filename": "COST-03.webp",
+        "codes": [
+          "MICRO-21"
+        ]
+      },
+      {
+        "filename": "COST-06.webp",
+        "codes": [
+          "MICRO-26",
+          "MICRO-27"
+        ]
+      },
+      {
+        "filename": "ELAS-01.webp",
+        "codes": [
+          "MICRO-04",
+          "MICRO-08"
+        ]
+      },
+      {
+        "filename": "ELAS-05.webp",
+        "codes": [
+          "MICRO-05"
+        ]
+      },
+      {
+        "filename": "MCOMP-02.webp",
+        "codes": [
+          "MICRO-44",
+          "MICRO-45",
+          "MICRO-47"
+        ]
+      },
+      {
+        "filename": "MON-01.webp",
+        "codes": [
+          "MICRO-39"
+        ]
+      },
+      {
+        "filename": "MON-02.webp",
+        "codes": [
+          "MICRO-37",
+          "MICRO-38"
+        ]
+      },
+      {
+        "filename": "MON-03.webp",
+        "codes": [
+          "MICRO-36",
+          "MICRO-40"
+        ]
+      },
+      {
+        "filename": "MON-04.webp",
+        "codes": [
+          "MICRO-41"
+        ]
+      },
+      {
+        "filename": "PC-02.webp",
+        "codes": [
+          "MICRO-28",
+          "MICRO-29"
+        ]
+      },
+      {
+        "filename": "PC-04.webp",
+        "codes": [
+          "MICRO-31",
+          "MICRO-32"
+        ]
+      },
+      {
+        "filename": "PC-07.webp",
+        "codes": [
+          "MICRO-30"
+        ]
+      },
+      {
+        "filename": "PC-08.webp",
+        "codes": [
+          "MICRO-33",
+          "MICRO-35"
+        ]
+      },
+      {
+        "filename": "SRPC-01.webp",
+        "codes": [
+          "MACRO-37"
+        ]
+      },
+      {
+        "filename": "SRPC-04.webp",
+        "codes": [
+          "MACRO-38"
+        ]
+      },
+      {
+        "filename": "TRD-01.webp",
+        "codes": [
+          "GEN-ECON-21"
+        ]
+      },
+      {
+        "filename": "TRD-02.webp",
+        "codes": [
+          "MICRO-16"
+        ]
+      },
+      {
+        "filename": "TRD-03.webp",
+        "codes": [
+          "GEN-ECON-22"
+        ]
+      },
+      {
+        "filename": "TRD-04.webp",
+        "codes": [
+          "GEN-ECON-23"
+        ]
+      },
+      {
+        "filename": "ad-02.webp",
+        "codes": [
+          "MACRO-33"
+        ]
+      },
+      {
+        "filename": "ad_ms_md.webp",
+        "codes": [
+          "MACRO-29"
+        ]
+      },
+      {
+        "filename": "adas-01.webp",
+        "codes": [
+          "MACRO-35"
+        ]
+      },
+      {
+        "filename": "adaslras.webp",
+        "codes": [
+          "MACRO-36"
+        ]
+      },
+      {
+        "filename": "as-01.webp",
+        "codes": [
+          "MACRO-34"
+        ]
+      },
+      {
+        "filename": "cartel_1.webp",
+        "codes": [
+          "MICRO-50"
+        ]
+      },
+      {
+        "filename": "ceilingfloor.webp",
+        "codes": [
+          "GEN-ECON-17",
+          "GEN-ECON-18"
+        ]
+      },
+      {
+        "filename": "cop_cost_family_main.webp",
+        "codes": [
+          "MICRO-24"
+        ]
+      },
+      {
+        "filename": "cop_tp_standard.webp",
+        "codes": [
+          "MICRO-20"
+        ]
+      },
+      {
+        "filename": "cps_consumer_prices.webp",
+        "codes": [
+          "MICRO-14"
+        ]
+      },
+      {
+        "filename": "cps_eq_asymmetric.webp",
+        "codes": [
+          "MICRO-10",
+          "MICRO-11",
+          "MICRO-12"
+        ]
+      },
+      {
+        "filename": "cps_eq_balanced.webp",
+        "codes": [
+          "MICRO-13"
+        ]
+      },
+      {
+        "filename": "demand-03.webp",
+        "codes": [
+          "GEN-ECON-12"
+        ]
+      },
+      {
+        "filename": "demand-supply-01.webp",
+        "codes": [
+          "GEN-ECON-15"
+        ]
+      },
+      {
+        "filename": "demand-supply-02.webp",
+        "codes": [
+          "GEN-ECON-14",
+          "GEN-ECON-16"
+        ]
+      },
+      {
+        "filename": "growth-01.webp",
+        "codes": [
+          "MACRO-11",
+          "MACRO-12",
+          "MACRO-13"
+        ]
+      },
+      {
+        "filename": "itp_import_surplus.webp",
+        "codes": [
+          "MICRO-17"
+        ]
+      },
+      {
+        "filename": "kinked_2.webp",
+        "codes": [
+          "MICRO-52"
+        ]
+      },
+      {
+        "filename": "lrpc.webp",
+        "codes": [
+          "MACRO-39",
+          "MACRO-40"
+        ]
+      },
+      {
+        "filename": "matrix_multi_ne_1.webp",
+        "codes": [
+          "MICRO-49"
+        ]
+      },
+      {
+        "filename": "money-02.webp",
+        "codes": [
+          "MACRO-28"
+        ]
+      },
+      {
+        "filename": "moneymultiplier.webp",
+        "codes": [
+          "MACRO-30",
+          "MACRO-31"
+        ]
+      },
+      {
+        "filename": "moneys_moneyd.webp",
+        "codes": [
+          "MACRO-23",
+          "MACRO-24"
+        ]
+      },
+      {
+        "filename": "pc_lrs_increasing.webp",
+        "codes": [
+          "MICRO-34"
+        ]
+      },
+      {
+        "filename": "ppf.webp",
+        "codes": [
+          "GEN-ECON-08"
+        ]
+      },
+      {
+        "filename": "shares_6.webp",
+        "codes": [
+          "MICRO-48"
+        ]
+      },
+      {
+        "filename": "supply-03.webp",
+        "codes": [
+          "GEN-ECON-13"
+        ]
+      },
+      {
+        "filename": "tax-02.webp",
+        "codes": [
+          "GEN-ECON-19"
+        ]
+      },
+      {
+        "filename": "taxincidence.webp",
+        "codes": [
+          "GEN-ECON-20",
+          "MICRO-02"
+        ]
+      },
+      {
+        "filename": "tree_1.webp",
+        "codes": [
+          "MICRO-51"
+        ]
+      }
+    ]
+  },
+  "layoutMetrics": {
+    "minimumBodyFontPoints": 8.8,
+    "maximumBodyFontPoints": 10.45,
+    "maximumContentBottomPoints": 724.01,
+    "footerClearanceLimitPoints": 724.01,
+    "minimumGraphWidthShare": 0.4507,
+    "minimumGraphVerticalOccupancy": 0.85
+  },
+  "qa": {
+    "automatedPassed": true,
+    "manualVisualPassed": true,
+    "contactSheets": [
+      "contact-01.png",
+      "contact-02.png",
+      "contact-03.png",
+      "contact-04.png",
+      "contact-05.png",
+      "contact-06.png",
+      "contact-07.png",
+      "contact-08.png",
+      "contact-09.png",
+      "contact-10.png"
+    ],
+    "failedCodes": []
+  },
+  "accessibility": {
+    "onePage": true,
+    "selectableText": true,
+    "language": "en-US",
+    "sourceAltRequired": true,
+    "taggedFigureAltImplemented": false,
+    "pdfUaClaim": false
+  }
+}

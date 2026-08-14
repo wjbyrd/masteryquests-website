@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260812-risk-reward-4.5s.2m">
+  <link rel="stylesheet" href="composer.css?v=20260813-course-area-step3">
 </head>
 <body>
   <header class="site-header">
@@ -61,7 +61,7 @@
         </div>
 
         <div class="concept-flow-note">
-          <strong>Choose a course area.</strong> Then start with a suggested combination or select individual concepts. Your selections stay in place while you browse.
+          <strong>Choose a course area.</strong> Then start with a suggested combination or select individual concepts. Shared selections that fit another area stay in place; incompatible selections are removed when you switch areas.
         </div>
 
         <div class="area-selector">
@@ -73,7 +73,7 @@
               <option value="micro">Microeconomics</option>
               <option value="macro">Macroeconomics</option>
             </select>
-            <small id="areaFilterHint">Concept cards stay hidden until you choose an area.</small>
+            <small id="areaFilterHint">Concept cards stay hidden until you choose an area. Switching areas removes selections that are not eligible there.</small>
           </div>
         </div>
 
@@ -96,7 +96,7 @@
         <section id="conceptBrowseToolbar" class="concept-browse-toolbar" aria-labelledby="browseConceptsHeading">
           <div class="browse-toolbar-heading">
             <h3 id="browseConceptsHeading">Browse concepts</h3>
-            <p>Search or change which concept cards are visible. These controls do not change your selections.</p>
+            <p id="browseConceptCount">Choose an area to view its concept inventory.</p>
           </div>
           <div class="browse-toolbar-controls">
             <div class="field browse-search">
@@ -107,14 +107,14 @@
               <legend>View cards</legend>
               <div class="segmented-filter" role="group" aria-label="Choose which concept cards are visible">
                 <button type="button" class="segment-button active" data-selection-filter="all" aria-pressed="true" disabled>All <span data-filter-count="all">0</span></button>
-                <button type="button" class="segment-button" data-selection-filter="selected" aria-pressed="false" disabled>Selected <span data-filter-count="selected">0</span></button>
-                <button type="button" class="segment-button" data-selection-filter="unselected" aria-pressed="false" disabled>Not selected <span data-filter-count="unselected">0</span></button>
+                <button type="button" class="segment-button" data-selection-filter="ready" aria-pressed="false" disabled>Ready <span data-filter-count="ready">0</span></button>
+                <button type="button" class="segment-button" data-selection-filter="supporting" aria-pressed="false" disabled>Supporting <span data-filter-count="supporting">0</span></button>
               </div>
             </fieldset>
             <select id="selectionFilter" class="screen-reader" aria-hidden="true" tabindex="-1" disabled>
               <option value="all">All concepts in this area</option>
-              <option value="selected">Selected only</option>
-              <option value="unselected">Not selected</option>
+              <option value="ready">Ready for focused use</option>
+              <option value="supporting">Supporting concepts</option>
             </select>
           </div>
         </section>
@@ -182,8 +182,9 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260812-risk-reward-4.5s.2m"></script>
+  <script src="composer-core.js?v=20260813-concept-review-step2"></script>
+  <script src="course-area-model.js?v=20260813-course-area-step3"></script>
   <script src="data/composer_library.js?v=20260812-risk-reward-4.5s.2m"></script>
-  <script src="composer.js?v=20260812-risk-reward-4.5s.2m"></script>
+  <script src="composer.js?v=20260813-course-area-step3"></script>
 </body>
 </html>
