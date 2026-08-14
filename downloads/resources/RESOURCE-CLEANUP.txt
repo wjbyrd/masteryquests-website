@@ -1,0 +1,22 @@
+Mastery Quests resource-folder cleanup — 2026-08-14
+
+REPLACE / UPDATE
+- example-question-architecture.docx
+- example-question-generation-prompt.docx
+- faculty-question-bank-helper.docx
+- faculty-question-bank-validator.xlsx
+- mastery-quests-faculty-template.html
+
+WHAT CHANGED
+- Added current-engine difficulty / metadata guidance to the question architecture.
+- Added graphRequired authoring rules so Trial by Graph can distinguish required visuals from decorative/helpful visuals.
+- Updated the question-generation prompt to the current pool conventions and ten-mode reuse model.
+- Updated the helper with graphRequired, Trial by Graph, Fading Fortune, and Risk & Reward compatibility guidance.
+- Updated the validator with a GraphRequired Yes/No field, validation, export support, and instructions.
+- Replaced the uploaded five-mode faculty template with the current ten-mode blank faculty template.
+
+REMOVE FROM THE PUBLIC RESOURCES FOLDER OR KEEP ONLY IN AN ARCHIVE
+- using-external-javascript-question-pools.docx
+- javascript-question-pool-code.txt
+
+Those two files document the retired Version 4 / external-pool workflow and should not be presented as current faculty resources.
