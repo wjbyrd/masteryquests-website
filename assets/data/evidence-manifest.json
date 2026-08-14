@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "page": "/evidence/",
+  "status": "current",
+  "evidence": [
+    {
+      "id": "composer-micro-overview",
+      "title": "Microeconomics course-area controls",
+      "category": "build",
+      "image": "/assets/images/evidence/composer-micro-overview.webp",
+      "alt": "Faculty Build Composer with Microeconomics selected in the course-area menu and Micro starter combinations displayed.",
+      "caption": "Microeconomics is selected, so the Composer displays only Micro starter combinations and concept inventory.",
+      "sourceType": "current Composer capture",
+      "status": "current"
+    },
+    {
+      "id": "composer-macro-concepts",
+      "title": "Macroeconomics concept selection",
+      "category": "build",
+      "image": "/assets/images/evidence/composer-macro-concepts.webp",
+      "alt": "Macroeconomics Composer inventory with Aggregate Demand selected and burgundy discipline accents on Macro concept cards.",
+      "caption": "Aggregate Demand is selected while the Macro inventory retains its discipline-specific accent and related-concept controls.",
+      "sourceType": "current Composer capture",
+      "status": "current"
+    },
+    {
+      "id": "ten-mode-selection",
+      "title": "Ten-mode selection",
+      "category": "modes",
+      "image": "/assets/images/evidence/ten-mode-selection.webp",
+      "alt": "Mode-selection screen showing Standard Campaign, Timed Trial, Exam Drill, Quiz, Unlimited Practice, Legendary Mode, Score Attack, Trial by Graph, Fading Fortune, and Risk and Reward.",
+      "caption": "The current generated game supports ten modes; only faculty-enabled modes appear for students.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "quiz-length-selector",
+      "title": "Quiz question-count selector",
+      "category": "modes",
+      "image": "/assets/images/evidence/quiz-length-selector.webp",
+      "alt": "Quiz setup dialog with a student-selectable question count from 1 through 15 and instructor-selected concepts kept fixed.",
+      "caption": "Quiz lets students choose 1-15 questions without changing the instructor-selected concepts.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "trial-by-graph",
+      "title": "Trial by Graph",
+      "category": "modes",
+      "image": "/assets/images/evidence/trial-by-graph.webp",
+      "alt": "Trial by Graph question showing readable marginal cost, average total cost, and average variable cost curves with standard answer controls.",
+      "caption": "Every Trial by Graph item requires the audited graph shown with the question.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "fading-fortune",
+      "title": "Fading Fortune",
+      "category": "modes",
+      "image": "/assets/images/evidence/fading-fortune.webp",
+      "alt": "Fading Fortune question after two wrong answer choices have disappeared, leaving two choices and a current value of 50 points.",
+      "caption": "Two faded choices reduce the available question value from 100 to 50 points.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "risk-and-reward",
+      "title": "Risk and Reward",
+      "category": "modes",
+      "image": "/assets/images/evidence/risk-and-reward.webp",
+      "alt": "Risk and Reward wager screen with a 1,000-point bankroll and choices to risk 10%, 25%, 50%, or all in before seeing the question.",
+      "caption": "Students lock a wager before the question and answers are revealed.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "conceptual-question",
+      "title": "Conceptual application",
+      "category": "questions",
+      "image": "/assets/images/evidence/conceptual-question.webp",
+      "alt": "Conceptual application question asking the student to apply an economic idea in a current game screen.",
+      "caption": "Conceptual items ask students to interpret and apply, not only recall.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "calculation-question",
+      "title": "Economic calculation",
+      "category": "questions",
+      "image": "/assets/images/evidence/calculation-question.webp",
+      "alt": "Calculation question asking the student to compute a four-firm concentration ratio from five market shares.",
+      "caption": "The item requires a four-firm concentration-ratio calculation from market-share data.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "checkpoint-question",
+      "title": "Checkpoint evidence",
+      "category": "questions",
+      "image": "/assets/images/evidence/checkpoint-question.webp",
+      "alt": "Checkpoint encounter using a short scaffold of higher-difficulty questions tied to one eligible learning objective.",
+      "caption": "Campaign checkpoints build a short mastery scaffold around an eligible learning objective.",
+      "sourceType": "current generated-game capture",
+      "status": "current"
+    },
+    {
+      "id": "mastery-report-concept-review",
+      "title": "Mastery Report 2.0 recommendation",
+      "category": "mastery",
+      "image": "/assets/images/evidence/mastery-report-concept-review.webp",
+      "alt": "Mastery Report showing Scarcity as the weakest concept, a button to open its Concept Review, and a next move to practice Application questions.",
+      "caption": "Weak Scarcity evidence and Application-question trouble resolve to GEN-ECON-01 and a targeted next move.",
+      "sourceType": "current controlled-run capture",
+      "status": "current"
+    },
+    {
+      "id": "concept-review-scarcity",
+      "title": "Scarcity Concept Review",
+      "category": "concept-reviews",
+      "image": "/assets/images/evidence/concept-review-scarcity.webp",
+      "alt": "GEN-ECON-01 Scarcity Concept Review with Core Idea, How to Recognize It, Watch Out, Worked Example, and Check Yourself sections; no graph is present.",
+      "caption": "The non-graph sample repairs the relationship among limited resources, choices, and tradeoffs.",
+      "sourceType": "current production PDF preview",
+      "status": "current"
+    },
+    {
+      "id": "concept-review-elasticity",
+      "title": "Price Elasticity of Demand Concept Review",
+      "category": "concept-reviews",
+      "image": "/assets/images/evidence/concept-review-elasticity.webp",
+      "alt": "MICRO-04 Price Elasticity of Demand Concept Review with recognition cues, a common mistake, a midpoint-elasticity worked example, a labeled demand graph, and a check-yourself prompt.",
+      "caption": "The graph-based sample pairs the midpoint calculation with a labeled demand curve and interpretation.",
+      "sourceType": "current production PDF preview",
+      "status": "current"
+    }
+  ]
+}
