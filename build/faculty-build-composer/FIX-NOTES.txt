@@ -1,0 +1,34 @@
+Mastery Quests Faculty Concept Composer — generation regression fix
+Date: 2026-08-14
+
+ROOT CAUSE
+The Concept Review manifest file was not missing.
+
+The live composer-core.js is using the centralized Concept Review architecture.
+That architecture requires composer.js to assign:
+    composition.conceptReviewRuntimeIndex = conceptReviews.runtimeIndex;
+
+The recent Selected Cards patch was built from an older composer.js that still used
+the retired sibling concept-reviews folder workflow. That older composer.js did not
+assign conceptReviewRuntimeIndex, so the central composer-core.js correctly stopped
+generation with:
+    Concept Review runtime manifest is missing from the composition.
+
+THIS PACKAGE
+- composer.js
+  Centralized Concept Review generation restored.
+  Selected Cards filter retained.
+  Internal card-area label removal retained.
+  LMS-neutral deployment wording retained.
+- index.html
+  Selected filter UI retained and cache-buster updated.
+- course-area-model.js
+  Corrected General Economics inventory retained.
+
+NO CHANGE IS NEEDED TO
+- data/concept-reviews/manifest.json
+- composer_library.js
+
+The manifest can remain exactly where it is. It is used by the Composer at build time;
+the generated game receives only its build-specific routing data and points review PDFs
+to the centralized Mastery Quests HTTPS library.
