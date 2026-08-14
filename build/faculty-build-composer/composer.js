@@ -190,15 +190,6 @@ function isConceptVisibleForArea(concept, activeArea){
   return CourseAreaModel.isConceptVisibleForArea({...concept, ...record}, activeArea);
 }
 
-function primaryAreaLabel(id){
-  const meta = metaById.get(id);
-  const discipline = conceptDiscipline(id);
-  const base = discipline === 'general' && conceptAreas(id).length > 1
-    ? 'General economics · Shared foundation'
-    : AREA_LABELS[discipline];
-  return meta?.parentConceptId ? `${base} · ${meta.familyTitle || 'Family'} subtopic` : base;
-}
-
 function setActiveArea(area){
   const normalized = AREA_LABELS[area] ? area : '';
   $('areaFilter').value = normalized;
@@ -641,7 +632,6 @@ function renderConcepts(){
     return `
       <article class="concept-card ${selected ? 'selected' : ''} ${concept.parentConceptId ? 'family-child' : ''} depth-${coverageStatus}" data-concept-id="${id}" data-discipline="${conceptDiscipline(id)}" data-areas="${conceptAreas(id).join(' ')}" data-browse-category="${conceptBrowseCategory(concept)}">
         <div class="concept-card-kickers">
-          <div class="concept-area">${esc(primaryAreaLabel(id))}</div>
           <div class="coverage-status ${coverageStatus}">${esc(coverageStatusLabel)}</div>
         </div>
         <div class="concept-head">
@@ -1169,6 +1159,25 @@ async function loadEmbeddedQuestionAssets(assets){
   return embedded;
 }
 
+async function loadConceptReviewAssets(assets){
+  const loaded = [];
+  for(const asset of assets || []){
+    const response = await fetch(asset.sourcePath);
+    if(!response.ok) throw new Error(`Could not load Concept Review ${asset.code} from ${asset.sourcePath}`);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    if(bytes.length !== asset.sizeBytes){
+      throw new Error(`Concept Review size check failed for ${asset.code}: expected ${asset.sizeBytes}, found ${bytes.length}`);
+    }
+    const actualSha = await sha256BytesHex(bytes);
+    if(!actualSha) throw new Error(`Concept Review SHA-256 is unavailable for ${asset.code}`);
+    if(actualSha !== asset.sha256){
+      throw new Error(`Concept Review integrity check failed for ${asset.code}`);
+    }
+    loaded.push({...asset, bytes, actualSha256:actualSha});
+  }
+  return loaded;
+}
+
 async function generateGameDownload(){
   const activeRecipe = recipe();
   const composition = Core.compose(Library, activeRecipe);
@@ -1187,9 +1196,11 @@ async function generateGameDownload(){
     throw new Error(`Answer verification failed for ${answerCheck.issues.length} questions.`);
   }
 
-  announce(conceptReviews.reviewCodes.length ? 'Embedding Concept Review routing for the centralized review library.' : 'No Concept Review routing is required for this build.');
+  announce(conceptReviews.assets.length ? 'Verifying required Concept Review PDFs.' : 'No Concept Review PDFs are required for this build.');
+  const conceptReviewFiles = await loadConceptReviewAssets(conceptReviews.assets);
   const conceptReviewRuntimeManifest = Core.stableStringify(conceptReviews.runtimeIndex, 2) + '\n';
   const conceptReviewRuntimeManifestBytes = new TextEncoder().encode(conceptReviewRuntimeManifest).length;
+  const conceptReviewPdfBytes = conceptReviewFiles.reduce((total, asset) => total + asset.bytes.length, 0);
 
   const config = await Core.createConfig(activeRecipe, Library, state.templateSha256);
   const metadata = {
@@ -1206,13 +1217,11 @@ async function generateGameDownload(){
     libraryVersion: Library.libraryVersion,
     librarySha256: Library.librarySha256,
     templateSha256: state.templateSha256,
-    conceptReviewDelivery: 'central-https',
-    conceptReviewBaseUrl: Core.CONCEPT_REVIEW_PUBLIC_BASE_URL
+    conceptReviewManifestPath: 'concept-reviews/manifest.json'
   };
   announce(composition.assets.length ? 'Embedding selected graph images.' : 'Preparing self-contained game file.');
   composition.embeddedQuestionAssets = await loadEmbeddedQuestionAssets(composition.assets);
   composition.conceptReviewRuntimeSource = state.conceptReviewRuntimeSource;
-  composition.conceptReviewRuntimeIndex = conceptReviews.runtimeIndex;
   const html = Core.buildHtml(state.templateText, composition, config, metadata);
   const manifest = {
     ...metadata,
@@ -1231,19 +1240,18 @@ async function generateGameDownload(){
       sizeBytes: asset.sizeBytes,
       embedded: true
     })),
-    conceptReviewDelivery: 'central-https',
-    conceptReviewBaseUrl: Core.CONCEPT_REVIEW_PUBLIC_BASE_URL,
-    conceptReviewPdfCount: 0,
-    conceptReviewMappedPdfCount: conceptReviews.reviewCodes.length,
+    conceptReviewDelivery: 'selective-external-pdf',
+    conceptReviewManifestPath: 'concept-reviews/manifest.json',
+    conceptReviewPdfCount: conceptReviewFiles.length,
     conceptReviewCodes: conceptReviews.reviewCodes,
+    conceptReviewPdfBytes,
     conceptReviewRuntimeManifestBytes,
-    conceptReviewAddedBytes: conceptReviewRuntimeManifestBytes,
-    conceptReviewAssetInventory: conceptReviews.assets.map(asset => ({
+    conceptReviewAddedBytes: conceptReviewPdfBytes + conceptReviewRuntimeManifestBytes,
+    conceptReviewAssetInventory: conceptReviewFiles.map(asset => ({
       code: asset.code,
-      path: asset.publicUrl,
-      sha256: asset.sha256,
-      sizeBytes: asset.sizeBytes,
-      bundled: false
+      path: asset.destinationPath,
+      sha256: asset.actualSha256,
+      sizeBytes: asset.bytes.length
     })),
     conceptReviewWarnings: conceptReviews.warnings,
     preflight: composition.validation,
@@ -1252,23 +1260,14 @@ async function generateGameDownload(){
     generationTimestamp: '1980-01-01T00:00:00.000Z',
     timestampPolicy: 'Fixed for deterministic ZIP output'
   };
-  const readme = `${config.title}
-
-Open ${config.slug}.html directly in a modern browser. The game HTML is self-contained; graph images and Concept Review routing are embedded, so no sibling asset or concept-reviews folder is required.
-
-Concept Review PDFs open from ${Core.CONCEPT_REVIEW_PUBLIC_BASE_URL} and require internet access only when a learner opens a recommended review. The game itself can still run from the downloaded HTML file.
-
-To deploy, upload the HTML to GitHub Pages, Canvas-compatible hosting, or another static host if desired. Progress and game data stay in the learner's browser. The game does not collect email addresses or transmit gameplay data to a server.
-
-Enabled modes: ${config.supportedModes.map(mode => MODE_LABELS[mode]).join(', ')}
-
-Checkpoint questions are assigned by their published difficulty. Optional checkpoint focus only narrows which eligible concepts supply a checkpoint; it never changes ordinary-question availability or question difficulty.
-`;
+  const readme = `${config.title}\n\nOpen ${config.slug}.html in a modern browser. The game HTML is self-contained; graph images are embedded and no question-assets folder is required. Keep the generated concept-reviews folder beside the HTML so the packaged review PDFs remain available.\n\nTo deploy, upload the complete package to GitHub Pages or another static host. Progress and game data stay in the learner's browser. The game does not collect email addresses or transmit gameplay data to a server.\n\nEnabled modes: ${config.supportedModes.map(mode => MODE_LABELS[mode]).join(', ')}\n\nCheckpoint questions are assigned by their published difficulty. Optional checkpoint focus only narrows which eligible concepts supply a checkpoint; it never changes ordinary-question availability or question difficulty.\n`;
   const entries = [
     {name: `${config.slug}.html`, data: html},
     {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library), 2) + '\n'},
     {name: 'composition_manifest.json', data: Core.stableStringify(manifest, 2) + '\n'},
-    {name: 'README.txt', data: readme}
+    {name: 'README.txt', data: readme},
+    {name: 'concept-reviews/manifest.json', data: conceptReviewRuntimeManifest},
+    ...conceptReviewFiles.map(asset => ({name:asset.destinationPath, data:asset.bytes}))
   ];
 
 
