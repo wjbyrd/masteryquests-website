@@ -107,12 +107,14 @@
               <legend>View cards</legend>
               <div class="segmented-filter" role="group" aria-label="Choose which concept cards are visible">
                 <button type="button" class="segment-button active" data-selection-filter="all" aria-pressed="true" disabled>All <span data-filter-count="all">0</span></button>
+                <button type="button" class="segment-button" data-selection-filter="selected" aria-pressed="false" disabled>Selected <span data-filter-count="selected">0</span></button>
                 <button type="button" class="segment-button" data-selection-filter="ready" aria-pressed="false" disabled>Ready <span data-filter-count="ready">0</span></button>
                 <button type="button" class="segment-button" data-selection-filter="supporting" aria-pressed="false" disabled>Supporting <span data-filter-count="supporting">0</span></button>
               </div>
             </fieldset>
             <select id="selectionFilter" class="screen-reader" aria-hidden="true" tabindex="-1" disabled>
               <option value="all">All concepts in this area</option>
+              <option value="selected">Selected concepts</option>
               <option value="ready">Ready for focused use</option>
               <option value="supporting">Supporting concepts</option>
             </select>
@@ -185,6 +187,6 @@
   <script src="composer-core.js?v=20260813-concept-review-step2"></script>
   <script src="course-area-model.js?v=20260813-course-area-step3"></script>
   <script src="data/composer_library.js?v=20260812-risk-reward-4.5s.2m"></script>
-  <script src="composer.js?v=20260813-course-area-step3"></script>
+  <script src="composer.js?v=20260814-selected-cards-filter"></script>
 </body>
 </html>

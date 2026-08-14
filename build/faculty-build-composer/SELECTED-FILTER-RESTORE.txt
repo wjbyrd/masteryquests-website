@@ -1,0 +1,16 @@
+Mastery Quests Faculty Concept Composer — Selected Cards filter restore
+
+Files to replace:
+- build/faculty-build-composer/index.html
+- build/faculty-build-composer/composer.js
+
+Restored behavior:
+- View cards now includes: All | Selected | Ready | Supporting
+- Selected count is scoped to the active course area and current search.
+- Choosing Selected hides every unselected concept card.
+- Selecting a card while the Selected view is active keeps it visible.
+- Deselecting a card while the Selected view is active removes it from the visible list immediately.
+- Presets and Clear Composition continue to reset the view to All, matching the existing behavior.
+- The composer.js cache-buster was updated in index.html.
+
+This patch is independent of the separate course-area-model.js General Economics alignment fix.

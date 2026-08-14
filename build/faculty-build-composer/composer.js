@@ -239,7 +239,9 @@ function conceptBrowseCategory(concept){
 }
 
 function matchesCurrentSubfilter(concept, filter){
-  return !filter || filter === 'all' || conceptBrowseCategory(concept) === filter;
+  if(!filter || filter === 'all') return true;
+  if(filter === 'selected') return state.selectedConceptIds.includes(concept.canonicalConceptId);
+  return conceptBrowseCategory(concept) === filter;
 }
 
 function updateBrowseFilterControls(area, search){
@@ -250,6 +252,7 @@ function updateBrowseFilterControls(area, search){
   }) : [];
   const counts = {
     all: candidates.length,
+    selected: candidates.filter(concept => state.selectedConceptIds.includes(concept.canonicalConceptId)).length,
     ready: candidates.filter(concept => conceptBrowseCategory(concept) === 'ready').length,
     supporting: candidates.filter(concept => conceptBrowseCategory(concept) === 'supporting').length
   };
