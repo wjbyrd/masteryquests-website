@@ -9799,7 +9799,8 @@ function titleCase(value){
         .replace(/-/g, " ")
         .replace(/\s+/g, " ")
         .trim()
-        .replace(/\b\w/g, letter => letter.toUpperCase());
+        .replace(/\b\w/g, letter => letter.toUpperCase())
+        .replace(/\bPpf\b/g, "PPF");
 }
 
 function formatMasteryLabel(key){
@@ -10130,13 +10131,14 @@ function getMasteryReportData(){
         };
     }
 
-    const noMajorWeakness = totalAttempts >= 8
+    const legendaryReady = totalAttempts >= 8
         && accuracy >= 0.85
         && evidence.exposure.hardestRank >= 3
         && !hasConceptWeakness
         && !hasTypeWeakness
         && !hasSkillWeakness
         && !hasBehaviorWeakness;
+    const noMajorWeakness = legendaryReady;
 
     let verdict = "The engine collected enough evidence to build a mastery report. Use the weak signals to plan the next round of practice.";
 
@@ -10146,9 +10148,9 @@ function getMasteryReportData(){
         verdict = accuracy >= 0.85
             ? "Promising performance, developing evidence. The score looks good, but the engine still wants more repetition or broader difficulty exposure before calling mastery."
             : "Developing evidence. The current weak signals are useful, but more attempts will make the diagnosis more reliable.";
-    } else if(evidence.key === "mastery" && noMajorWeakness){
+    } else if(evidence.key === "mastery" && legendaryReady){
         verdict = "Mastery demonstrated. Strong repeated performance survived advanced-or-harder questions without exposing a major weakness. The next useful test is harder pressure, not more safe repetitions.";
-    } else if(noMajorWeakness){
+    } else if(legendaryReady){
         verdict = "No major weakness detected and the evidence is strong enough to trust. Push into harder pressure to see whether that signal survives.";
     } else if(accuracy >= 0.90){
         verdict = "Strong performance with strong evidence. The weak signals below are narrow leaks worth cleaning up before the next pressure test.";
@@ -10160,7 +10162,7 @@ function getMasteryReportData(){
 
     const nextSteps = [];
 
-    if(noMajorWeakness){
+    if(legendaryReady){
         nextSteps.push("Enter Legendary Mode next. The current run did not expose a major weak point, so harder multi-step and trap-heavy questions are the right next test.");
         nextSteps.push("Use Score Attack after Legendary Mode feels stable. Speed pressure is useful only after mastery survives harder questions.");
     } else {
@@ -10184,7 +10186,11 @@ function getMasteryReportData(){
     }
 
     if(nextSteps.length === 0){
-        nextSteps.push("Run a harder mode next. The current evidence does not show a major weak point. Use a harder mode to produce a stronger diagnostic signal.");
+        if(evidence.key === "limited" || evidence.key === "developing"){
+            nextSteps.push("Keep practicing to build a stronger evidence sample before escalating difficulty.");
+        } else {
+            nextSteps.push("Repeat targeted practice and use the report signals to decide where the next run should focus.");
+        }
     }
 
     return {
@@ -10205,6 +10211,7 @@ function getMasteryReportData(){
         hasConceptWeakness,
         hasTypeWeakness,
         hasSkillWeakness,
+        legendaryReady,
         noMajorWeakness,
         behavior,
         evidence,
@@ -10357,7 +10364,9 @@ async function showMasteryReportScreen(options = {}){
                 entries: report.weakestConcepts,
                 hasWeakness: report.hasConceptWeakness,
                 weaknessEmptyText: "No concept weakness was detected. Either the run was clean, or there was not enough data.",
-                cleanText: "No major concept weakness detected. Push into Legendary Mode to see whether the signal holds under harder multi-step pressure."
+                cleanText: report.legendaryReady
+                    ? "No major concept weakness detected. Push into Legendary Mode to see whether the signal holds under harder multi-step pressure."
+                    : "No major concept-specific weakness was isolated in this run. Other evidence still shows areas to address before harder pressure."
             })}
 
             ${renderMasteryDiagnosticSection({
@@ -10366,7 +10375,9 @@ async function showMasteryReportScreen(options = {}){
                 entries: report.weakestTypes,
                 hasWeakness: report.hasTypeWeakness,
                 weaknessEmptyText: "No question-type weakness was detected.",
-                cleanText: "No major question-form weakness detected. The next useful test is harder prompts, closer traps, and less obvious wording."
+                cleanText: report.legendaryReady
+                    ? "No major question-form weakness detected. The next useful test is harder prompts, closer traps, and less obvious wording."
+                    : "No major question-form weakness was isolated in this run. Other evidence still shows areas to address."
             })}
 
             ${renderMasteryDiagnosticSection({
@@ -10375,7 +10386,9 @@ async function showMasteryReportScreen(options = {}){
                 entries: report.weakestSkills,
                 hasWeakness: report.hasSkillWeakness,
                 weaknessEmptyText: "No skill weakness was detected.",
-                cleanText: "No major skill weakness detected. That is your cue to stop farming safe questions and enter Legendary Mode."
+                cleanText: report.legendaryReady
+                    ? "No major skill weakness detected. That is your cue to stop farming safe questions and enter Legendary Mode."
+                    : "No major skill-specific weakness was isolated in this run. Concept, question-form, behavior, or evidence weaknesses still need attention."
             })}
 
             ${fadingFortuneSection}
@@ -10416,7 +10429,7 @@ async function showMasteryReportScreen(options = {}){
             <div class="mastery-actions">
                 <button class="continue-btn" onclick="copyMasteryReport()">Copy Report</button>
                 <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
-                ${report.noMajorWeakness && gameMode !== "legendary" && isFacultyModeSupported("legendary") ? `<button class="continue-btn" onclick="startSelectedMode('legendary')">Enter Legendary Mode</button>` : ""}
+                ${report.legendaryReady && gameMode !== "legendary" && isFacultyModeSupported("legendary") ? `<button class="continue-btn" onclick="startSelectedMode('legendary')">Enter Legendary Mode</button>` : ""}
                 <button class="continue-btn secondary-modal-btn" onclick="restoreResultsScreen()">Back to Results</button>
                 <button class="continue-btn secondary-modal-btn" onclick="returnToModeSelectFromRun()">Choose Another Battle</button>
             </div>
@@ -10456,7 +10469,7 @@ function copyMasteryReport(){
         ...(report.strongest.length ? report.strongest.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No clear strength signal yet."]),
         "",
         report.hasConceptWeakness ? "Concepts to Review:" : "Concept Signals:",
-        ...(report.hasConceptWeakness && report.weakestConcepts.length ? report.weakestConcepts.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No major concept weakness detected. Try Legendary Mode next."]),
+        ...(report.hasConceptWeakness && report.weakestConcepts.length ? report.weakestConcepts.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : [report.legendaryReady ? "- No major concept weakness detected. Try Legendary Mode next." : "- No major concept-specific weakness was isolated; other report signals still need attention."]),
         "",
         report.hasTypeWeakness ? "Weakest Question Forms:" : "Question Form Signals:",
         ...(report.hasTypeWeakness && report.weakestTypes.length ? report.weakestTypes.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`) : ["- No major question-form weakness detected."]),

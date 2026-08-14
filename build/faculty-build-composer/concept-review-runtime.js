@@ -6,7 +6,9 @@
   'use strict';
 
   const DEFAULT_MANIFEST_URL = 'concept-reviews/manifest.json';
-  const SAFE_REVIEW_PATH = /^concept-reviews\/(?:GEN-ECON|MICRO|MACRO)-\d{2}\.pdf$/;
+  const PUBLIC_REVIEW_BASE_URL = 'https://masteryquests.org/concept-reviews/';
+  const SAFE_RELATIVE_REVIEW_PATH = /^concept-reviews\/(?:GEN-ECON|MICRO|MACRO)-\d{2}\.pdf$/;
+  const SAFE_PUBLIC_REVIEW_PATH = /^\/concept-reviews\/(?:GEN-ECON|MICRO|MACRO)-\d{2}\.pdf$/;
   let manifestPromise = null;
 
   function strings(value){
@@ -16,8 +18,28 @@
   }
 
   function safeReviewPath(path){
-    const value = String(path || '');
-    return SAFE_REVIEW_PATH.test(value) && !value.includes('..') && !value.includes('\\') ? value : null;
+    const value = String(path || '').trim();
+    if(!value || value.includes('..') || value.includes('\\')) return null;
+    if(SAFE_RELATIVE_REVIEW_PATH.test(value)) return value;
+    try{
+      const url = new URL(value);
+      if(url.protocol !== 'https:') return null;
+      if(url.hostname !== 'masteryquests.org') return null;
+      if(url.port || url.username || url.password || url.search || url.hash) return null;
+      if(!SAFE_PUBLIC_REVIEW_PATH.test(url.pathname)) return null;
+      return `${PUBLIC_REVIEW_BASE_URL}${url.pathname.split('/').pop()}`;
+    }catch(error){
+      return null;
+    }
+  }
+
+  function getEmbeddedManifest(){
+    const embedded = typeof globalThis !== 'undefined'
+      ? globalThis.MQ_CONCEPT_REVIEW_MANIFEST
+      : null;
+    if(!embedded || typeof embedded !== 'object') return null;
+    const validation = validateManifest(embedded);
+    return validation.ok ? embedded : null;
   }
 
   function validateManifest(manifest){
@@ -51,6 +73,11 @@
 
   function loadConceptReviewManifest(options = {}){
     if(manifestPromise) return manifestPromise;
+    const embedded = options.manifest || getEmbeddedManifest();
+    if(embedded){
+      manifestPromise = Promise.resolve(embedded);
+      return manifestPromise;
+    }
     const fetchImpl = options.fetchImpl || (typeof fetch === 'function' ? fetch.bind(globalThis) : null);
     const url = options.url || DEFAULT_MANIFEST_URL;
     const logger = options.consoleImpl || (typeof console !== 'undefined' ? console : null);
@@ -233,28 +260,25 @@
     return {kind:'NONE', recommendations:[]};
   }
 
-  async function filterAvailableReviewResult(result, options = {}){
-    const fetchImpl = options.fetchImpl || (typeof fetch === 'function' ? fetch.bind(globalThis) : null);
-    const logger = options.consoleImpl || (typeof console !== 'undefined' ? console : null);
-    if(!fetchImpl || !result) return result;
-    async function available(items){
-      const checks = await Promise.all((items || []).map(async item => {
-        if(!safeReviewPath(item?.path)) return null;
-        try{
-          const response = await fetchImpl(item.path, {method:'HEAD', cache:'no-store'});
-          return response?.ok ? item : null;
-        }catch(error){
-          logger?.warn?.(`Concept Review asset unavailable: ${item.path}`);
-          return null;
-        }
-      }));
-      return checks.filter(Boolean);
+  async function filterAvailableReviewResult(result){
+    if(!result) return result;
+    function safeItems(items){
+      return (items || []).map(item => {
+        const path = safeReviewPath(item?.path);
+        return path ? {...item, path} : null;
+      }).filter(Boolean);
     }
-    return {...result, recommendations:await available(result.recommendations), more:await available(result.more), choices:await available(result.choices)};
+    return {
+      ...result,
+      recommendations:safeItems(result.recommendations),
+      more:safeItems(result.more),
+      choices:safeItems(result.choices)
+    };
   }
 
   return {
     DEFAULT_MANIFEST_URL,
+    PUBLIC_REVIEW_BASE_URL,
     safeReviewPath,
     validateManifest,
     loadConceptReviewManifest,

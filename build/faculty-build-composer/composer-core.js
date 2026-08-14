@@ -61,7 +61,8 @@ const CHECKPOINTS = {
     legacyStage: 'stageThree'
   }
 };
-const CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION = '2.0.0';
+const CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION = '2.1.0';
+const CONCEPT_REVIEW_PUBLIC_BASE_URL = 'https://masteryquests.org/concept-reviews/';
 const CONCEPT_REVIEW_DISPOSITIONS = new Set([
   'REVIEW_SHEET',
   'COVERED_BY_CHILD_CONCEPT',
@@ -558,7 +559,7 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
       title: review.title,
       discipline: review.discipline,
       sourcePath: `data/concept-reviews/${review.pdfPath}`,
-      destinationPath: `concept-reviews/${review.runtimeFilename}`,
+      publicUrl: `${CONCEPT_REVIEW_PUBLIC_BASE_URL}${review.runtimeFilename}`,
       sha256: review.sha256,
       sizeBytes: review.sizeBytes
     };
@@ -580,7 +581,7 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
         return review ? {
           code,
           title: review.title,
-          path: `concept-reviews/${review.runtimeFilename}`,
+          path: `${CONCEPT_REVIEW_PUBLIC_BASE_URL}${review.runtimeFilename}`,
           sha256: review.sha256
         } : null;
       }).filter(Boolean);
@@ -657,12 +658,14 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
   const runtimeIndex = {
     schemaVersion: CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION,
     sourceManifestSchemaVersion: manifest?.schemaVersion || '',
+    delivery: 'central-https',
+    baseUrl: CONCEPT_REVIEW_PUBLIC_BASE_URL,
     selectedConceptIds: [...selectedIds].sort(),
     diagnosticConceptIds,
     reviewCodes,
     assetInventory: assets.map(asset => ({
       code: asset.code,
-      path: asset.destinationPath,
+      path: asset.publicUrl,
       sha256: asset.sha256,
       sizeBytes: asset.sizeBytes
     })),
@@ -1313,6 +1316,14 @@ function replaceMarkedRegion(template, startLabel, endLabel, replacement){
   return template.slice(0, start) + replacement + template.slice(end);
 }
 
+function conceptReviewRuntimeRegion(composition){
+  const runtimeManifest = composition.conceptReviewRuntimeIndex || null;
+  if(!runtimeManifest) throw new Error('Concept Review runtime manifest is missing from the composition.');
+  const embeddedManifest = stableStringify(runtimeManifest, 2).replace(/<\/script/gi, '<\\/script');
+  const runtimeSource = String(composition.conceptReviewRuntimeSource || '').replace(/<\/script/gi, '<\\/script');
+  return `// =====================================================\n// CONCEPT REVIEW ROUTING — GENERATED\n// Routing data is embedded so local file:// games do not fetch a sibling manifest.\n// Review PDFs are served from ${CONCEPT_REVIEW_PUBLIC_BASE_URL}\n// =====================================================\nglobalThis.MQ_CONCEPT_REVIEW_MANIFEST = ${embeddedManifest};\n${runtimeSource}`;
+}
+
 function buildHtml(template, composition, config, metadata){
   let output = replaceMarkedRegion(
     template,
@@ -1324,7 +1335,7 @@ function buildHtml(template, composition, config, metadata){
     output,
     '// FACULTY QUESTION BANKS — SAFE TO EDIT',
     '// END FACULTY QUESTION BANKS',
-    `${String(composition.conceptReviewRuntimeSource || '').replace(/<\/script/gi, '<\\/script')}\n${questionMarkerRegion(composition, metadata)}`
+    `${conceptReviewRuntimeRegion(composition)}\n${questionMarkerRegion(composition, metadata)}`
   );
   return output;
 }
@@ -1417,6 +1428,7 @@ return {
   CHECKPOINT_ORDER,
   CHECKPOINTS,
   CONCEPT_REVIEW_RUNTIME_SCHEMA_VERSION,
+  CONCEPT_REVIEW_PUBLIC_BASE_URL,
   stableStringify,
   normalizeAnswerText,
   sha256Hex,
