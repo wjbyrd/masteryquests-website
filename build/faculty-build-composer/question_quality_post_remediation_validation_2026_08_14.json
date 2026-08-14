@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-14T21:32:00.000Z",
+  "phase": "phaseQH2-question-quality-remediation-v1",
+  "canonicalQuestionCount": 8163,
+  "questionOccurrences": 8184,
+  "structuralIssueCounts": {},
+  "exactStemDuplicateGroups": 0,
+  "exactFullDuplicateGroups": 0,
+  "tripleHitDistractorCandidates": 0,
+  "heuristicFlagCounts": {
+    "strong_correct_length_cue": 783,
+    "extreme_option_length_spread": 205,
+    "absolute_distractor_pattern": 789
+  },
+  "nearDuplicateCounts": {
+    "0.99": 11,
+    "0.97": 23,
+    "0.95": 52,
+    "0.9": 178
+  },
+  "marketStructureCalculationValidation": {
+    "checks": 60,
+    "findings": 0
+  },
+  "broaderMicroCalculationValidation": {
+    "checks": 98,
+    "findings": 1,
+    "note": "Known validator parser false positive on -$100; underlying P62F-PC-C-013 question is correct."
+  },
+  "monopolisticCompetitionValidator": "PASS",
+  "oligopolyValidator": "PASS",
+  "assetPhysicalIssues": []
+}

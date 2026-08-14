@@ -1,0 +1,802 @@
+{
+  "phase": "phaseQH2-question-quality-remediation-v1",
+  "generatedAt": "2026-08-14T21:32:00.000Z",
+  "composerVersion": "4.5p.0",
+  "canonicalQuestionCount": 8163,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1",
+  "librarySha256": "e10f63180aac27208eee3570f7c0051a90dc1ec841ca8de5d1d2ac2297773f02",
+  "changedQuestionIds": [
+    "ECON-EC-ELITE-13011",
+    "ECON-EC-ELITE-13024",
+    "ECON-EC-ELITE-13026",
+    "ECON-EC-LEGENDARY-14050",
+    "ECON-EC-LEGENDARY-14063",
+    "ECON-EC-LEGENDARY-14088",
+    "ECON-EC-LEGENDARY-14089",
+    "ECON-MG-MEDIUMBOSS-3011",
+    "ECON-NL-LEGENDARY-9016",
+    "ECON-SP-EASYBOSS-2002",
+    "ECON-SP-EASYBOSS-2005",
+    "ECON-SP-EASYBOSS-2008",
+    "ECON-SP-EASYBOSS-2011",
+    "ECON-SP-EASYBOSS-2014",
+    "LG-Q-9023",
+    "P62B-ELAS-LB-036",
+    "P62C-CPS-C-002",
+    "P62C-CPS-LB-017",
+    "P62C-CPS-LB-019",
+    "P62C-CPS-LB-021",
+    "P62D-ITP-E-020",
+    "P62D-ITP-E-026",
+    "P62D-ITP-EL-002",
+    "P62D-ITP-EL-003",
+    "P62D-ITP-EL-013",
+    "P62D-ITP-EL-026",
+    "P62F-PC-E-010",
+    "P62F-PC-E-012",
+    "P62F-PC-LB-032",
+    "P62F-PC-LB-033",
+    "P62F-PC-R-011",
+    "P62G-MON-C-001",
+    "P62G-MON-C-005",
+    "P62G-MON-C-018",
+    "P62G-MON-C-019",
+    "P62G-MON-C-022",
+    "P62G-MON-C-024",
+    "P62G-MON-C-025",
+    "P62G-MON-EL-036",
+    "P62G-MON-EL-040",
+    "P62G-MON-L-091",
+    "P62G-MON-L-092",
+    "P62G-MON-L-095",
+    "P62H-MCMP-B2-019",
+    "P62H-MCMP-B2-020",
+    "P62H-MCMP-B2-022",
+    "P62H-MCMP-B2-023",
+    "P62H-MCMP-B2-025",
+    "P62H-MCMP-B2-026",
+    "P62H-MCMP-B2-028",
+    "P62H-MCMP-B2-029",
+    "P62H-MCMP-B2-031",
+    "P62H-MCMP-B2-032",
+    "P62H-MCMP-B2-034",
+    "P62H-MCMP-B2-035",
+    "P62H-MCMP-C-013",
+    "P62H-MCMP-C-014",
+    "P62H-MCMP-C-015",
+    "P62H-MCMP-C-016",
+    "P62H-MCMP-C-017",
+    "P62H-MCMP-C-018",
+    "P62H-MCMP-C-019",
+    "P62H-MCMP-C-020",
+    "P62H-MCMP-C-021",
+    "P62H-MCMP-EL-036",
+    "P62H-MCMP-H-036",
+    "P62H-MCMP-L-036",
+    "P62H-MCMP-L-039",
+    "P62H-MCMP-L-042",
+    "P62H-MCMP-L-045",
+    "P62H-MCMP-L-048",
+    "P62I-OLI-B3-043",
+    "P62I-OLI-EL-028",
+    "PM5-PC-R-070",
+    "PMC-COP-BR-029",
+    "PMC-COP-BR-071",
+    "PMC-COP-BR-122",
+    "PMS-ITP-R-001"
+  ],
+  "changedQuestionCount": 78,
+  "categories": {
+    "calculationDefects": 14,
+    "wordingArtifacts": 13,
+    "duplicateStemDiversifications": 16,
+    "highestRiskDistractorCueItems": 18,
+    "conceptualCloneDiversifications": 5,
+    "checkpointCloneDiversifications": 12,
+    "additionalSemanticKeyDefects": 1
+  },
+  "changes": {
+    "ECON-EC-ELITE-13011": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "ECON-EC-ELITE-13024": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "ECON-EC-ELITE-13026": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "ECON-EC-LEGENDARY-14050": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "ECON-EC-LEGENDARY-14063": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "ECON-EC-LEGENDARY-14088": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "ECON-EC-LEGENDARY-14089": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-economic-analysis",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "ECON-MG-MEDIUMBOSS-3011": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "market-equilibrium",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "ECON-NL-LEGENDARY-9016": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "gdp-measurement",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "ECON-SP-EASYBOSS-2002": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-macroeconomic-analysis",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "ECON-SP-EASYBOSS-2005": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-macroeconomic-analysis",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "ECON-SP-EASYBOSS-2008": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-macroeconomic-analysis",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "ECON-SP-EASYBOSS-2011": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-macroeconomic-analysis",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "ECON-SP-EASYBOSS-2014": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "integrated-macroeconomic-analysis",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "LG-Q-9023": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "money-functions-and-measures",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62B-ELAS-LB-036": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "elasticity",
+          "route": "questions.legendaryBoss"
+        }
+      ]
+    },
+    "P62C-CPS-C-002": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "consumer-and-producer-surplus",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62C-CPS-LB-017": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "consumer-and-producer-surplus",
+          "route": "questions.legendaryBoss"
+        }
+      ]
+    },
+    "P62C-CPS-LB-019": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "consumer-and-producer-surplus",
+          "route": "questions.legendaryBoss"
+        }
+      ]
+    },
+    "P62C-CPS-LB-021": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "consumer-and-producer-surplus",
+          "route": "questions.legendaryBoss"
+        }
+      ]
+    },
+    "P62D-ITP-E-020": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "questions.easy"
+        }
+      ]
+    },
+    "P62D-ITP-E-026": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "questions.easy"
+        }
+      ]
+    },
+    "P62D-ITP-EL-002": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62D-ITP-EL-003": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62D-ITP-EL-013": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62D-ITP-EL-026": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62F-PC-E-010": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "perfect-competition",
+          "route": "questions.easy"
+        }
+      ]
+    },
+    "P62F-PC-E-012": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "perfect-competition",
+          "route": "questions.easy"
+        }
+      ]
+    },
+    "P62F-PC-LB-032": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "perfect-competition",
+          "route": "questions.legendaryBoss"
+        }
+      ]
+    },
+    "P62F-PC-LB-033": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "perfect-competition",
+          "route": "questions.legendaryBoss"
+        }
+      ]
+    },
+    "P62F-PC-R-011": {
+      "reason": "Diversify exact duplicate/recycled stem",
+      "locations": [
+        {
+          "concept": "perfect-competition",
+          "route": "repairQuestions"
+        }
+      ]
+    },
+    "P62G-MON-C-001": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-C-005": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-C-018": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-C-019": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-C-022": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-C-024": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-C-025": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62G-MON-EL-036": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62G-MON-EL-040": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62G-MON-L-091": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62G-MON-L-092": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62G-MON-L-095": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopoly",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-019": {
+      "reason": "Repair semantic/key mismatch and diversify checkpoint",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-020": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-022": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-023": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-025": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-026": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-028": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-029": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-031": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-032": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-034": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-B2-035": {
+      "reason": "Diversify repetitive checkpoint clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62H-MCMP-C-013": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-014": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-015": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-016": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-017": {
+      "reason": "Correct profit/loss framing and answer",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-018": {
+      "reason": "Displayed-number calculation correction",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-019": {
+      "reason": "Correct profit/loss framing and answer",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-020": {
+      "reason": "Repair impossible ATC < AVC data",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-C-021": {
+      "reason": "Repair impossible ATC < AVC data",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.calculation"
+        }
+      ]
+    },
+    "P62H-MCMP-EL-036": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "P62H-MCMP-H-036": {
+      "reason": "Mechanical wording cleanup",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.hard"
+        }
+      ]
+    },
+    "P62H-MCMP-L-036": {
+      "reason": "Diversify repetitive conceptual clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62H-MCMP-L-039": {
+      "reason": "Diversify repetitive conceptual clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62H-MCMP-L-042": {
+      "reason": "Diversify repetitive conceptual clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62H-MCMP-L-045": {
+      "reason": "Diversify repetitive conceptual clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62H-MCMP-L-048": {
+      "reason": "Diversify repetitive conceptual clone",
+      "locations": [
+        {
+          "concept": "monopolistic-competition",
+          "route": "questions.legendary"
+        }
+      ]
+    },
+    "P62I-OLI-B3-043": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "oligopoly",
+          "route": "questions.boss"
+        }
+      ]
+    },
+    "P62I-OLI-EL-028": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "oligopoly",
+          "route": "questions.elite"
+        }
+      ]
+    },
+    "PM5-PC-R-070": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "perfect-competition",
+          "route": "repairQuestions"
+        }
+      ]
+    },
+    "PMC-COP-BR-029": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "costs-of-production",
+          "route": "bridgeQuestions"
+        }
+      ]
+    },
+    "PMC-COP-BR-071": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "costs-of-production",
+          "route": "bridgeQuestions"
+        }
+      ]
+    },
+    "PMC-COP-BR-122": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "costs-of-production",
+          "route": "bridgeQuestions"
+        }
+      ]
+    },
+    "PMS-ITP-R-001": {
+      "reason": "Strengthen highest-risk distractors and remove test-wiseness cue",
+      "locations": [
+        {
+          "concept": "international-trade-and-trade-policy",
+          "route": "repairQuestions"
+        }
+      ]
+    }
+  }
+}
