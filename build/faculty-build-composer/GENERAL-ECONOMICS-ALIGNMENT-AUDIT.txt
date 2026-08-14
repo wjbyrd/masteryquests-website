@@ -1,0 +1,42 @@
+Mastery Quests Faculty Concept Composer — General Economics alignment fix
+Date: 2026-08-14
+
+RESULT
+General Economics now exposes 22 canonical concept cards corresponding to the 26 GEN-ECON Concept Review PDFs.
+Demand maps to two reviews, Supply maps to two reviews, and Market Equilibrium maps to three reviews; therefore 26 PDFs correctly resolve from 22 cards.
+
+Area counts after patch:
+- General Economics: 22
+- Microeconomics: 80
+- Macroeconomics: 63
+
+Removed from General Economics:
+- Elasticity (Micro family; review sheets are MICRO series)
+- Market Failures (MICRO-03)
+- Integrated Economic Analysis (meta-level diagnosis; intentionally has no review sheet)
+
+General Economics card inventory:
+- Price Ceilings
+- Price Floors
+- Competitive Markets
+- Demand
+- Economists and Policy
+- Comparative Advantage and Gains from Trade
+- Incentives
+- World Prices & Importer/Exporter Status
+- Tariffs, Revenue & Deadweight Loss
+- Import Quotas, Quota Rents & Tariff–Quota Comparison
+- Trade-Policy Arguments, Efficiency & Distribution
+- Marginal Analysis
+- Market Equilibrium
+- Microeconomics versus Macroeconomics
+- Models and Assumptions
+- Opportunity Cost
+- Positive versus Normative Analysis
+- Production Possibilities Frontier
+- Scarcity and Tradeoffs
+- Statutory versus Economic Tax Incidence
+- Supply
+- Tax Incidence
+
+composer_library.js was audited and did not require modification. All 22 target canonical concepts exist and are active in the supplied library.

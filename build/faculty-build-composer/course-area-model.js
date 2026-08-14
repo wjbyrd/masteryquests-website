@@ -6,12 +6,19 @@
   'use strict';
 
   const AREA_KEYS = Object.freeze(['general','micro','macro']);
+  // General Economics mirrors the canonical concepts covered by the
+  // GEN-ECON Concept Review series. Multiple review sheets can resolve from
+  // one card (Demand, Supply, and Market Equilibrium), so 26 PDFs map to
+  // 22 selectable General Economics concept cards.
   const GENERAL_AREA_IDS = new Set([
-    'scarcity-and-tradeoffs','opportunity-cost','marginal-analysis','incentives',
-    'gains-from-trade','market-failures','models-and-assumptions',
-    'production-possibilities-frontier','micro-versus-macro',
-    'positive-versus-normative-analysis','economist-policy-role',
-    'integrated-economic-analysis','elasticity'
+    'scarcity-and-tradeoffs','incentives','opportunity-cost','marginal-analysis',
+    'micro-versus-macro','positive-versus-normative-analysis',
+    'models-and-assumptions','production-possibilities-frontier',
+    'gains-from-trade','economist-policy-role','competitive-markets',
+    'demand','supply','market-equilibrium','binding-price-ceilings',
+    'binding-price-floors','statutory-versus-economic-tax-incidence',
+    'tax-incidence','trade-world-price-status','tariffs-revenue-deadweight-loss',
+    'import-quotas-quota-rents','trade-policy-efficiency-distribution'
   ]);
   const MICRO_AREA_IDS = new Set([
     'marginal-analysis','incentives','gains-from-trade','market-failures',
@@ -40,6 +47,12 @@
     'monopoly','oligopoly','perfect-competition'
   ]);
   const MICRO_DISCIPLINE_OVERRIDES = new Set(['elasticity']);
+  // These trade-family children use the General Economics review series even
+  // though their broader parent remains a Microeconomics family.
+  const GENERAL_DISCIPLINE_OVERRIDES = new Set([
+    'trade-world-price-status','tariffs-revenue-deadweight-loss',
+    'import-quotas-quota-rents','trade-policy-efficiency-distribution'
+  ]);
 
   function unique(items){ return [...new Set(items || [])]; }
 
@@ -62,7 +75,9 @@
       const nextStack = new Set(stack);
       nextStack.add(id);
       let discipline;
-      if(concept.parentConceptId){
+      if(GENERAL_DISCIPLINE_OVERRIDES.has(id)){
+        discipline = 'general';
+      }else if(concept.parentConceptId){
         discipline = disciplineFor(concept.parentConceptId, nextStack);
       }else if(MICRO_DISCIPLINE_OVERRIDES.has(id)){
         discipline = 'micro';
@@ -128,6 +143,7 @@
     MICRO_AREA_IDS:Object.freeze([...MICRO_AREA_IDS]),
     MICRO_FAMILY_PARENT_IDS:Object.freeze([...MICRO_FAMILY_PARENT_IDS]),
     MICRO_DISCIPLINE_OVERRIDES:Object.freeze([...MICRO_DISCIPLINE_OVERRIDES]),
+    GENERAL_DISCIPLINE_OVERRIDES:Object.freeze([...GENERAL_DISCIPLINE_OVERRIDES]),
     create,
     isConceptVisibleForArea,
     browseCategory
