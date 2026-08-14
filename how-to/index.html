@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Build an economics Mastery Quest with the Faculty Concept Composer, publish the self-contained HTML file, embed it in Canvas, or use the advanced manual workflow." name="description"/>
+<meta content="Build an economics Mastery Quest with the Faculty Concept Composer, deploy the self-contained HTML file, use the blank faculty template when needed, and embed the game in Canvas." name="description"/>
 <title>How To | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer src="/assets/js/site.js"></script>
@@ -23,8 +23,8 @@
 <div class="site-container page-hero-grid">
 <div>
 <p class="eyebrow">How To</p>
-<h1>Build a game. Put it in Canvas. Go deeper only when you need to.</h1>
-<p class="page-hero-lead">For economics, the fast path is the composer. It generates one self-contained HTML game. Host that file, point Canvas at the public URL, and the activity is live.</p>
+<h1>Build the game, deploy it, and go deeper only when you need to.</h1>
+<p class="page-hero-lead">For economics, the fast path is the Composer. It generates one self-contained HTML game. Host that file, point Canvas at the public URL, and the activity is live. For other subjects or deeper customization, start from the blank faculty template.</p>
 </div>
 <div class="page-actions page-actions-light">
 <a class="button button-primary" href="/how-to/composer/">Build with the Composer</a>
@@ -41,8 +41,8 @@
 </div>
 <div class="build-step-grid">
 <article class="build-step-card"><span class="feature-number">01</span><h3>Compose the game</h3><p>Name it, choose modes, choose a course area and concepts, review checkpoint coverage, confirm readiness, and generate.</p><a class="text-link" href="/how-to/composer/">See the six composer steps <span aria-hidden="true">→</span></a></article>
-<article class="build-step-card"><span class="feature-number">02</span><h3>Publish the generated package</h3><p>Keep the game HTML beside its <code>concept-reviews</code> folder so mapped review links work. The ZIP also includes faculty-facing build records. Rename the game file <code>index.html</code> for the simplest GitHub Pages URL.</p><a class="text-link" href="/how-to/canvas/#publish">See the hosting steps <span aria-hidden="true">→</span></a></article>
-<article class="build-step-card"><span class="feature-number">03</span><h3>Embed the public URL</h3><p>The Canvas iframe is the wrapper. There is no second wrapper file to build. Paste the public HTTPS game URL into the iframe and test it in Student View.</p><a class="text-link" href="/how-to/canvas/#canvas-embed">See the iframe example <span aria-hidden="true">→</span></a></article>
+<article class="build-step-card"><span class="feature-number">02</span><h3>Publish the generated game</h3><p>Host the self-contained game HTML at a public HTTPS URL. Concept Reviews open from the Mastery Quests web library when recommended, so no sibling review folder is required. Rename the game file <code>index.html</code> for the simplest hosted URL.</p><a class="text-link" href="/how-to/canvas/#publish">See the hosting steps <span aria-hidden="true">→</span></a></article>
+<article class="build-step-card"><span class="feature-number">03</span><h3>Embed the public URL</h3><p>Paste the public HTTPS game URL into the Canvas iframe and test the activity in Student View. No second wrapper file is required.</p><a class="text-link" href="/how-to/canvas/#canvas-embed">See the iframe example <span aria-hidden="true">→</span></a></article>
 </div>
 <div class="centered-actions"><a class="button button-download" download href="/downloads/resources/faculty-composer-quick-start-guide.docx">Download the Composer + Canvas Quick Start</a></div>
 </div>
@@ -56,7 +56,7 @@
 <p>The guides are grouped here by task instead of scattered through the resource library.</p>
 </div>
 <div class="resource-grid">
-<article class="resource-card featured-resource-card"><p class="resource-type">Quick start</p><h3>Composer + Canvas Quick Start</h3><p>Build an economics game, understand what the downloaded ZIP contains, host the game, and embed it in Canvas.</p><a class="button button-download" download href="/downloads/resources/faculty-composer-quick-start-guide.docx">Download Quick Start</a></article>
+<article class="resource-card featured-resource-card"><p class="resource-type">Quick start</p><h3>Composer + Canvas Quick Start</h3><p>Build an economics game, understand the generated files, host the game HTML, and embed it in Canvas.</p><a class="button button-download" download href="/downloads/resources/faculty-composer-quick-start-guide.docx">Download Quick Start</a></article>
 <article class="resource-card"><p class="resource-type">Overview</p><h3>Faculty Game Overview Guide</h3><p>Understand all ten modes, adaptive support, checkpoints, Mastery Report 2.0, Concept Reviews, local storage, and what students experience.</p><a class="button button-download" download href="/downloads/resources/faculty-game-overview-guide.docx">Download Overview</a></article>
 <article class="resource-card"><p class="resource-type">Implementation</p><h3>Faculty Implementation Guide</h3><p>Choose the instructional role and mode, generate the complete package, plan evidence and follow-up, test Concept Reviews, and launch accessibly.</p><a class="button button-download" download href="/downloads/resources/faculty-implementation-guide.docx">Download Guide</a></article>
 <article class="resource-card"><p class="resource-type">Student directions</p><h3>Student Instructions + Faculty Checklist</h3><p>Copy current student directions into Canvas, explain Mastery Report 2.0 and Concept Review follow-up, then complete the faculty launch checklist.</p><a class="button button-download" download href="/downloads/resources/student-instructions-and-faculty-customization-checklist.docx">Download Instructions</a></article>
@@ -64,15 +64,46 @@
 </div>
 </section>
 
+<section class="section section-light" id="blank-template">
+<div class="site-container">
+<div class="section-heading">
+<p class="eyebrow">Blank faculty template</p>
+<h2>Use the manual path when the Composer is not the right fit.</h2>
+<p>
+          The blank template provides the current ten-mode engine with no active questions.
+          Use it for another discipline, a custom question library, or deeper manual changes.
+          Economics faculty using the existing concept library should normally stay with the Composer.
+        </p>
+</div>
+<div class="resource-grid">
+<article class="resource-card featured-resource-card">
+<p class="resource-type">Current blank engine</p>
+<h3>Blank Faculty Template</h3>
+<p>Download the asset-free ten-mode template, then add and validate your own question banks before deployment.</p>
+<a class="button button-download" download="" href="/build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html">Download Blank Template</a>
+</article>
+<article class="resource-card">
+<p class="resource-type">Authoring references</p>
+<h3>Question Architecture and Validation</h3>
+<p>Use the prompt, architecture guide, helper, and validator to build the question system that feeds the blank template.</p>
+<div class="resource-actions">
+<a class="button button-outline-dark" href="/resources/#templates-authoring">Open Authoring Resources</a>
+<a class="button button-outline-dark" href="/resources/#faculty-tools">Open Validation Tools</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+
 <section class="section section-light" id="advanced-workflow">
 <div class="site-container">
 <div class="section-heading">
-<p class="eyebrow">Advanced manual workflow</p>
-<h2>Still useful when the composer is not the job.</h2>
-<p>These demonstrations remain valuable for building a new subject library or manually changing the faculty template. Economics faculty using the composer do not need to start here.</p>
+<p class="eyebrow">Advanced demonstrations</p>
+<h2>Older walkthroughs remain useful as reference.</h2>
+<p>These videos show question-authoring and manual-customization ideas from earlier versions of the workflow. Use the current blank template and current guides for production builds.</p>
 </div>
 <div class="video-grid">
-<article class="video-card"><div class="video-placeholder" style="padding:0; overflow:hidden;"><div class="sp-embed-player" data-aspect-ratio="2.021186" data-id="cOirFbnU7aG" data-padding-top="49.475891%" style="position:relative;width:100%;padding-top:49.475891%;height:0;"><script src="https://wjbyrd.screencasthost.com/consumption/player_appearance/cOirFbnU7aG/2.021186"></script><iframe allowfullscreen="true" scrolling="no" src="https://wjbyrd.screencasthost.com/player/cOirFbnU7aG?ff=1&amp;ahc=1&amp;dcc=1&amp;tl=1&amp;bg=transparent&amp;share=1&amp;download=1&amp;embed=1&amp;cl=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div></div><div class="video-card-body"><p class="resource-type">Overview</p><h3>Mastery Quests: Game, Template, and Workflow</h3><p>Compare the polished game and manual faculty template and see how the broader adaptive workflow is structured.</p></div></article>
+<article class="video-card"><div class="video-placeholder" style="padding:0; overflow:hidden;"><div class="sp-embed-player" data-aspect-ratio="2.021186" data-id="cOirFbnU7aG" data-padding-top="49.475891%" style="position:relative;width:100%;padding-top:49.475891%;height:0;"><script src="https://wjbyrd.screencasthost.com/consumption/player_appearance/cOirFbnU7aG/2.021186"></script><iframe allowfullscreen="true" scrolling="no" src="https://wjbyrd.screencasthost.com/player/cOirFbnU7aG?ff=1&amp;ahc=1&amp;dcc=1&amp;tl=1&amp;bg=transparent&amp;share=1&amp;download=1&amp;embed=1&amp;cl=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div></div><div class="video-card-body"><p class="resource-type">Architecture overview</p><h3>Mastery Quests: Game, Template, and Workflow</h3><p>Use this older walkthrough to understand the relationship between a polished game, the faculty template, and the broader adaptive architecture.</p></div></article>
 <article class="video-card"><div class="video-placeholder" style="padding:0; overflow:hidden;"><div class="sp-embed-player" data-aspect-ratio="2.101322" data-id="cOirFBnU7B0" data-padding-top="47.589099%" style="position:relative;width:100%;padding-top:47.589099%;height:0;"><script src="https://wjbyrd.screencasthost.com/consumption/player_appearance/cOirFBnU7B0/2.101322"></script><iframe allowfullscreen="true" scrolling="no" src="https://wjbyrd.screencasthost.com/player/cOirFBnU7B0?ff=1&amp;ahc=1&amp;dcc=1&amp;tl=1&amp;bg=transparent&amp;share=1&amp;download=1&amp;embed=1&amp;cl=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div></div><div class="video-card-body"><p class="resource-type">Questions</p><h3>Build the Question Pool with AI</h3><p>Use learning objectives to generate structured pools, then audit answer logic, distractors, feedback, tags, skills, and IDs.</p></div></article>
 <article class="video-card"><div class="video-placeholder" style="padding:0; overflow:hidden;"><div class="sp-embed-player" data-aspect-ratio="1.838150" data-id="cOirrQnU79X" data-padding-top="54.402516%" style="position:relative;width:100%;padding-top:54.402516%;height:0;"><script src="https://wjbyrd.screencasthost.com/consumption/player_appearance/cOirrQnU79X/1.838150"></script><iframe allowfullscreen="true" scrolling="no" src="https://wjbyrd.screencasthost.com/player/cOirrQnU79X?ff=1&amp;ahc=1&amp;dcc=1&amp;tl=1&amp;bg=transparent&amp;share=1&amp;download=1&amp;embed=1&amp;cl=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div></div><div class="video-card-body"><p class="resource-type">Legacy design walkthrough</p><h3>Customize the Manual Game</h3><p>This video demonstrates visual customization in the retired manual template. Use the current composer and guides for production builds; the outdated five-mode presentation deck is no longer distributed.</p></div></article>
 </div>
