@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Download Mastery Quests faculty guides, templates, question-authoring resources, validators, LMS support materials, and teaching utilities." name="description"/>
-<title>Faculty Resources | Mastery Quests</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Download current Mastery Quests faculty guides, question-authoring files, validators, templates, and utilities."/>
+<title>Downloads | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
-<script defer="" src="/assets/js/site.js"></script>
+<script defer src="/assets/js/site.js"></script>
+<style>
+.download-browse{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.download-browse a{
+  display:inline-block;
+  padding:8px 12px;
+  border:1px solid rgba(15,52,94,.20);
+  border-radius:999px;
+  text-decoration:none;
+}
+.download-list{
+  list-style:none;
+  margin:24px 0 0;
+  padding:0;
+  border-top:1px solid rgba(15,52,94,.14);
+}
+.download-list li{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:22px;
+  align-items:center;
+  padding:18px 0;
+  border-bottom:1px solid rgba(15,52,94,.14);
+}
+.download-list h3{
+  margin:0 0 4px;
+}
+.download-list p{
+  margin:0;
+}
+.download-link{
+  white-space:nowrap;
+}
+@media(max-width:680px){
+  .download-list li{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -19,179 +62,122 @@
 <button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">
 <span class="menu-toggle-label">Menu</span>
 </button>
-<nav aria-label="Primary navigation" class="primary-navigation" id="primary-navigation"><a href="/games/">Games</a>
+<nav aria-label="Primary navigation" class="primary-navigation" id="primary-navigation">
+<a href="/games/">Games</a>
 <a href="/evidence/">See It in Action</a>
 <a href="/build/">Build a Quest</a>
-<a aria-current="page" href="/resources/">Resources</a>
 <a href="/how-to/">How To</a>
-<a href="/about/">About</a></nav>
+<a href="/about/">About</a>
+<a aria-current="page" href="/resources/">Downloads</a>
+</nav>
 </div>
 </header>
+
 <main id="main-content">
 <section class="page-hero">
-<div class="site-container page-hero-grid">
-<div>
-<p class="eyebrow">Faculty resource library</p>
-<h1>Everything you may want to download, keep, or reuse.</h1>
-<p class="page-hero-lead">
-          This is the Mastery Quests file library: assignment guides, student directions,
-          the blank faculty template, question-authoring references, validators, converters,
-          and collection tools.
-        </p>
-</div>
-<div class="resource-callout">
-<strong>Browse by resource type</strong>
-<p>Jump directly to the files you need.</p>
-<div class="resource-actions">
-<a class="button button-outline-dark" href="#teaching-resources">Teaching</a>
-<a class="button button-outline-dark" href="#authoring-resources">Authoring</a>
-<a class="button button-outline-dark" href="#utilities">Utilities</a>
-</div>
-</div>
-</div>
-</section>
-<section class="section section-light" id="teaching-resources">
 <div class="site-container">
-<div class="resource-group-heading">
-<p class="eyebrow">Teaching and implementation</p>
-<h2>Assignment-ready guides for faculty and students</h2>
-<p>
-          Use these as reference documents, course-planning aids, or copy-ready directions.
-          They are not required to run a game.
-        </p>
-</div>
-<div class="resource-grid">
-<article class="resource-card">
-<p class="resource-type">Faculty overview</p>
-<h3>Faculty Game Overview</h3>
-<p>A concise explanation of the learning model, all ten modes, Mastery Report 2.0, Concept Reviews, privacy, and classroom use.</p>
-<a class="button button-download" download="" href="/downloads/resources/faculty-game-overview-guide.docx">Download Overview</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">Implementation</p>
-<h3>Faculty Implementation Guide</h3>
-<p>Plan the assignment, choose a mode, test the hosted game, explain evidence expectations, and verify the student experience in your LMS.</p>
-<a class="button button-download" download="" href="/downloads/resources/faculty-implementation-guide.docx">Download Guide</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">Student directions</p>
-<h3>Student Instructions + Faculty Checklist</h3>
-<p>Copy the student-facing directions into your LMS, then use the faculty checklist before launch.</p>
-<a class="button button-download" download="" href="/downloads/resources/student-instructions-and-faculty-customization-checklist.docx">Download Instructions</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">Composer reference</p>
-<h3>Faculty Composer Quick Start</h3>
-<p>A compact reference for concept selection, mode selection, coverage review, game generation, and recipe reuse.</p>
-<a class="button button-download" download="" href="/downloads/resources/faculty-composer-quick-start-guide.docx">Download Quick Start</a>
-</article>
+<p class="eyebrow">Downloads</p>
+<h1>Mastery Quests files.</h1>
+<p class="page-hero-lead">Browse the current guides, authoring files, templates, and utilities by resource type.</p>
+<div class="download-browse" aria-label="Browse downloads by resource type">
+<a href="#faculty-guides">Faculty guides</a>
+<a href="#authoring-files">Authoring files</a>
+<a href="#utilities">Utilities</a>
 </div>
 </div>
 </section>
-<section class="section" id="authoring-resources">
+
+<section class="section section-light" id="faculty-guides">
 <div class="site-container">
-<div class="resource-group-heading">
-<p class="eyebrow">Templates and question authoring</p>
-<h2>Build content outside the existing economics library</h2>
-<p>
-          These are the working files for faculty creating their own discipline, custom question bank,
-          or deeper manual build.
-        </p>
-</div>
-<div class="resource-grid">
-<article class="resource-card featured-resource-card">
-<p class="resource-type">Blank game template</p>
-<h3>Blank Faculty Template</h3>
-<p>Download the current asset-free ten-mode engine with no active questions, ready for your own question banks and subject-specific customization.</p>
-<a class="button button-download" download="" href="/build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html">Download Blank Template</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">AI prompt template</p>
-<h3>Example Question Generation Prompt</h3>
-<p>Generate structured questions across difficulty levels while distributing objectives, IDs, feedback, and skills.</p>
-<a class="button button-download" download="" href="/downloads/resources/example-question-generation-prompt.docx">Download Prompt</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">Question structure</p>
-<h3>Example Question Architecture</h3>
-<p>Review fields for options, answers, objectives, skill routing, common errors, feedback, images, and remediation.</p>
-<a class="button button-download" download="" href="/downloads/resources/example-question-architecture.docx">Download Architecture</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">Question builder</p>
-<h3>Faculty Question Bank Helper</h3>
-<p>Prepare main, boss, repair, bridge, and legendary pools with consistent IDs, tags, and routing.</p>
-<a class="button button-download" download="" href="/downloads/resources/faculty-question-bank-helper.docx">Download Helper</a>
-</article>
-<article class="resource-card">
-<p class="resource-type">Question validation</p>
-<h3>Faculty Question Bank Validator</h3>
-<p>Audit IDs, answer logic, objective coverage, distractors, remediation links, and graph-required metadata before publishing.</p>
-<a class="button button-download" download="" href="/downloads/resources/faculty-question-bank-validator.xlsx">Download Validator</a>
-</article>
-</div>
+<p class="eyebrow">Faculty guides</p>
+<h2>Planning, implementation, and student directions</h2>
+<ul class="download-list">
+<li>
+<div><h3>Composer + LMS Quick Start</h3><p>Build, publish, and place a Composer-generated game in your course workflow.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/faculty-composer-quick-start-guide.docx">Download</a>
+</li>
+<li>
+<div><h3>Faculty Game Overview</h3><p>The learning model, ten modes, Mastery Report 2.0, Concept Reviews, privacy, and classroom use.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/faculty-game-overview-guide.docx">Download</a>
+</li>
+<li>
+<div><h3>Faculty Implementation Guide</h3><p>Assignment design, hosting, LMS deployment, testing, evidence, accessibility, and launch checks.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/faculty-implementation-guide.docx">Download</a>
+</li>
+<li>
+<div><h3>Student Instructions + Faculty Launch Checklist</h3><p>Copy-ready student directions followed by the faculty-only prelaunch checklist.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/student-instructions-and-faculty-customization-checklist.docx">Download</a>
+</li>
+</ul>
 </div>
 </section>
+
+<section class="section" id="authoring-files">
+<div class="site-container">
+<p class="eyebrow">Authoring files</p>
+<h2>Build and validate your own question system</h2>
+<ul class="download-list">
+<li>
+<div><h3>Blank Faculty Template</h3><p>The current asset-free ten-mode engine with no active questions.</p></div>
+<a class="button button-download download-link" download href="/build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html">Download</a>
+</li>
+<li>
+<div><h3>Example Question Generation Prompt</h3><p>A starting prompt for building structured question banks from learning objectives.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/example-question-generation-prompt.docx">Download</a>
+</li>
+<li>
+<div><h3>Example Question Architecture</h3><p>A compact reference for current question fields and metadata.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/example-question-architecture.docx">Download</a>
+</li>
+<li>
+<div><h3>Faculty Question Bank Helper</h3><p>Detailed question roles, metadata, IDs, image use, remediation, and audit guidance.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/faculty-question-bank-helper.docx">Download</a>
+</li>
+<li>
+<div><h3>Faculty Question Bank Validator</h3><p>Spreadsheet validation for structure, answers, metadata, remediation, and graph-required items.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/faculty-question-bank-validator.xlsx">Download</a>
+</li>
+</ul>
+</div>
+</section>
+
 <section class="section section-light" id="utilities">
 <div class="site-container">
-<div class="resource-group-heading">
 <p class="eyebrow">Utilities</p>
 <h2>Special-purpose tools</h2>
-<p>
-          These tools solve jobs that sit beside the main Mastery Quests workflow.
-        </p>
-</div>
-<div class="resource-grid">
-<article class="resource-card">
-<p class="resource-type">Canvas-specific QTI tool</p>
-<h3>Canvas Quiz Converter</h3>
-<p>Convert formatted question text and optional images into a Canvas-compatible QTI ZIP in the browser.</p>
-<div class="resource-actions">
-<a class="button button-primary" href="/tools/canvas-quiz-converter/">Launch Converter</a>
-<a class="button button-download" download="" href="/downloads/resources/canvas-quiz-converter-instructions-v1.2.docx">Download Instructions</a>
-</div>
-</article>
-<article class="resource-card">
-<p class="resource-type">Collection builder</p>
-<h3>Multi-Game Hub Template</h3>
-<p>Create a shared landing page for multiple games with mission navigation, progress, and collection-level status.</p>
-<a class="button button-download" download="" href="/downloads/resources/mastery-quests-multi-game-hub-template.html">Download Hub</a>
-</article>
-</div>
-</div>
-</section>
-<section class="section">
-<div class="site-container">
-<div class="privacy-assurance compact-assurance">
-<div>
-<p class="eyebrow">Reference</p>
-<h2>Need policy or deployment guidance?</h2>
-<p>
-          Use the Privacy Notice for data-handling details and How To for hosting,
-          GitHub Pages, and LMS deployment instructions.
-        </p>
-</div>
-<div class="resource-actions">
-<a class="button button-outline-dark" href="/privacy/">Privacy Notice</a>
-<a class="button button-outline-dark" href="/how-to/">How To</a>
-</div>
-</div>
+<ul class="download-list">
+<li>
+<div><h3>Canvas Quiz Converter</h3><p>Convert supported question content and images into a Canvas-compatible QTI package.</p></div>
+<a class="button button-primary download-link" href="/tools/canvas-quiz-converter/">Launch</a>
+</li>
+<li>
+<div><h3>Canvas Quiz Converter Instructions</h3><p>Instructions for the Canvas-specific QTI conversion utility.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/canvas-quiz-converter-instructions-v1.2.docx">Download</a>
+</li>
+<li>
+<div><h3>Multi-Game Hub Template</h3><p>A reusable landing page for organizing multiple Mastery Quest games into a collection.</p></div>
+<a class="button button-download download-link" download href="/downloads/resources/mastery-quests-multi-game-hub-template.html">Download</a>
+</li>
+</ul>
 </div>
 </section>
 </main>
+
 <footer class="site-footer">
 <div class="site-container footer-inner">
 <div>
 <strong>Mastery Quests</strong>
 <p>Adaptive learning through practice, feedback, and mastery.</p>
 </div>
-<nav aria-label="Footer navigation" class="footer-navigation"><a href="/games/">Games</a>
+<nav aria-label="Footer navigation" class="footer-navigation">
+<a href="/games/">Games</a>
 <a href="/evidence/">See It in Action</a>
 <a href="/build/">Build a Quest</a>
-<a href="/resources/">Resources</a>
 <a href="/how-to/">How To</a>
 <a href="/about/">About</a>
-<a href="/privacy/">Privacy</a></nav>
+<a href="/privacy/">Privacy</a>
+<a aria-current="page" href="/resources/">Downloads</a>
+</nav>
 <p class="copyright">© <span id="current-year"></span> Mastery Quests</p>
 </div>
 </footer>
