@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Download current Mastery Quests faculty guides, question-authoring files, validators, templates, and utilities."/>
-<title>Downloads | Mastery Quests</title>
+<meta name="description" content="Download the free Market Gate starter asset pack plus current Mastery Quests faculty guides, authoring files, templates, validators, and utilities."/>
+<title>Game Assets & Downloads | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer src="/assets/js/site.js"></script>
 <style>
@@ -50,6 +50,88 @@
     gap:10px;
   }
 }
+
+.asset-feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);
+  gap:34px;
+  align-items:center;
+  margin-top:24px;
+}
+.asset-preview-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:12px;
+}
+.asset-preview-grid figure{
+  margin:0;
+  min-width:0;
+  border:1px solid rgba(15,52,94,.14);
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+}
+.asset-preview-grid img{
+  display:block;
+  width:100%;
+  aspect-ratio:1 / 1;
+  object-fit:contain;
+  background:linear-gradient(180deg,#f8fbff,#eef4fb);
+}
+.asset-preview-grid figcaption{
+  padding:8px 9px 9px;
+  font-size:12px;
+  line-height:1.25;
+  text-align:center;
+}
+.asset-feature-copy h3{
+  margin:0 0 10px;
+  font-size:clamp(26px,3vw,38px);
+}
+.asset-feature-copy p{
+  margin:0 0 14px;
+}
+.asset-stat-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:18px 0;
+}
+.asset-stat{
+  display:inline-block;
+  padding:7px 10px;
+  border:1px solid rgba(15,52,94,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.68);
+  font-size:13px;
+  font-weight:600;
+}
+.asset-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+.asset-note{
+  margin-top:18px;
+  padding:14px 16px;
+  border-left:4px solid rgba(15,52,94,.55);
+  background:rgba(255,255,255,.64);
+}
+.asset-note p{
+  margin:0;
+}
+@media(max-width:860px){
+  .asset-feature{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:520px){
+  .asset-preview-grid{
+    grid-template-columns:repeat(2, minmax(0,1fr));
+  }
+}
+
 </style>
 </head>
 <body>
@@ -76,10 +158,11 @@
 <main id="main-content">
 <section class="page-hero">
 <div class="site-container">
-<p class="eyebrow">Downloads</p>
-<h1>Mastery Quests files.</h1>
-<p class="page-hero-lead">Browse the current guides, authoring files, templates, and utilities by resource type.</p>
+<p class="eyebrow">Faculty resources</p>
+<h1>Build with Mastery Quests.</h1>
+<p class="page-hero-lead">Start with a free production asset sampler from The Market Gate, then grab the current faculty guides, authoring files, templates, validators, and utilities.</p>
 <div class="download-browse" aria-label="Browse downloads by resource type">
+<a href="#game-assets">Game assets</a>
 <a href="#faculty-guides">Faculty guides</a>
 <a href="#authoring-files">Authoring files</a>
 <a href="#utilities">Utilities</a>
@@ -87,7 +170,48 @@
 </div>
 </section>
 
-<section class="section section-light" id="faculty-guides">
+<section class="section section-light" id="game-assets">
+<div class="site-container">
+<p class="eyebrow">Game assets</p>
+<h2>Start with The Market Gate production style</h2>
+<p>The Market Gate Starter Asset Pack is a free sampler drawn from a finished Mastery Quests mission. Use the included media unchanged in your own Mastery Quests games.</p>
+
+<div class="asset-feature">
+  <div class="asset-preview-grid" aria-label="Sample assets from The Market Gate">
+    <figure><img src="/play/economic-realm/market-gate/keeper.webp" alt="Frontier Keeper boss artwork"><figcaption>Frontier Keeper</figcaption></figure>
+    <figure><img src="/play/economic-realm/market-gate/broker.webp" alt="Signal Broker boss artwork"><figcaption>Signal Broker</figcaption></figure>
+    <figure><img src="/play/economic-realm/market-gate/magistrate.webp" alt="Price Magistrate boss artwork"><figcaption>Price Magistrate</figcaption></figure>
+    <figure><img src="/play/economic-realm/market-gate/compass.webp" alt="Frontier Compass artifact artwork"><figcaption>Frontier Compass</figcaption></figure>
+    <figure><img src="/play/economic-realm/market-gate/lens.webp" alt="Signal Lens artifact artwork"><figcaption>Signal Lens</figcaption></figure>
+    <figure><img src="/play/economic-realm/market-gate/scales.webp" alt="Magistrate's Scales artifact artwork"><figcaption>Magistrate's Scales</figcaption></figure>
+  </div>
+
+  <div class="asset-feature-copy">
+    <h3>The Market Gate Starter Asset Pack</h3>
+    <p>Twenty production images and eight audio files: boss portraits, artifacts, The Custodian, hallway scenes, start and gameplay backgrounds, five mode images, streak graphics, music, and sound effects.</p>
+
+    <div class="asset-stat-row" aria-label="Asset pack contents">
+      <span class="asset-stat">20 images</span>
+      <span class="asset-stat">8 audio files</span>
+      <span class="asset-stat">Free faculty sampler</span>
+    </div>
+
+    <p><strong>Use:</strong> place the assets in as many of your own Mastery Quests games as you want. Keep the underlying artwork and audio unchanged. Resale and use outside Mastery Quests games are not permitted.</p>
+
+    <div class="asset-actions">
+      <a class="button button-download download-link" download href="/downloads/faculty-assets/mastery-quests-market-gate-starter-asset-pack.zip">Download Starter Asset Pack</a>
+      <a class="button button-primary" href="/play/economic-realm/">See the Economic Realm</a>
+    </div>
+  </div>
+</div>
+
+<div class="asset-note">
+  <p><strong>Asset pack only.</strong> The download does not include the game engine, question banks, question graphs, Concept Reviews, or Economic Realm hub assets. The blank faculty template and authoring resources remain available below.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="faculty-guides">
 <div class="site-container">
 <p class="eyebrow">Faculty guides</p>
 <h2>Planning, implementation, and student directions</h2>
@@ -112,7 +236,7 @@
 </div>
 </section>
 
-<section class="section" id="authoring-files">
+<section class="section section-light" id="authoring-files">
 <div class="site-container">
 <p class="eyebrow">Authoring files</p>
 <h2>Build and validate your own question system</h2>
@@ -141,7 +265,7 @@
 </div>
 </section>
 
-<section class="section section-light" id="utilities">
+<section class="section" id="utilities">
 <div class="site-container">
 <p class="eyebrow">Utilities</p>
 <h2>Special-purpose tools</h2>
