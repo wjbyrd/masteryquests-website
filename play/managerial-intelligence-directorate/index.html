@@ -1949,8 +1949,14 @@ body{
   const games = {
     directive: {
       title: "The Cost Directive",
-      file: "https://wjbyrd.github.io/The-Cost-Directive/",
+      file: "cost-directive/",
       statusKey: "managerialHub_directive_complete",
+      storageAliases: {
+        complete: ["managerialHub_costDirective_complete"],
+        started: ["managerialHub_costDirective_started"],
+        room: ["managerialHub_costDirective_room"],
+        status: ["managerialHub_costDirective_status"]
+      },
       startedKey: "managerialHub_directive_started",
       roomKey: "managerialHub_directive_room",
       unstableText: "Directive Unopened",
@@ -1993,8 +1999,14 @@ body{
     },
     market: {
       title: "The Market Signal",
-      file: "https://wjbyrd.github.io/The-Market-Signal/",
+      file: "market-signal/",
       statusKey: "managerialHub_market_complete",
+      storageAliases: {
+        complete: ["managerialHub_marketSignal_complete"],
+        started: ["managerialHub_marketSignal_started"],
+        room: ["managerialHub_marketSignal_room"],
+        status: ["managerialHub_marketSignal_status"]
+      },
       startedKey: "managerialHub_market_started",
       roomKey: "managerialHub_market_room",
       unstableText: "Signal Unopened",
@@ -2037,8 +2049,14 @@ body{
     },
     desk: {
       title: "The Strategy Desk",
-      file: "https://wjbyrd.github.io/The-Strategy-Desk/",
+      file: "strategy-desk/",
       statusKey: "managerialHub_desk_complete",
+      storageAliases: {
+        complete: ["managerialHub_strategyDesk_complete"],
+        started: ["managerialHub_strategyDesk_started"],
+        room: ["managerialHub_strategyDesk_room"],
+        status: ["managerialHub_strategyDesk_status"]
+      },
       startedKey: "managerialHub_desk_started",
       roomKey: "managerialHub_desk_room",
       unstableText: "Desk Unopened",
@@ -2081,8 +2099,14 @@ body{
     },
     agency: {
       title: "The Agency Protocol",
-      file: "https://wjbyrd.github.io/The-Agency-Protocol/",
+      file: "agency-protocol/",
       statusKey: "managerialHub_agency_complete",
+      storageAliases: {
+        complete: ["managerialHub_agencyProtocol_complete"],
+        started: ["managerialHub_agencyProtocol_started"],
+        room: ["managerialHub_agencyProtocol_room"],
+        status: ["managerialHub_agencyProtocol_status"]
+      },
       startedKey: "managerialHub_agency_started",
       roomKey: "managerialHub_agency_room",
       unstableText: "Protocol Unopened",
@@ -2198,6 +2222,42 @@ body{
   function pluralize(count, singular, plural){ return count === 1 ? singular : plural; }
   function getStorageFlag(key){ return localStorage.getItem(key) === "true"; }
 
+  function getOperationStorageKeys(gameKey, field){
+    const game = games[gameKey];
+    if(!game) return [];
+
+    const primary = {
+      complete: game.statusKey,
+      started: game.startedKey,
+      room: game.roomKey
+    }[field];
+
+    const aliases = Array.isArray(game.storageAliases?.[field])
+      ? game.storageAliases[field]
+      : [];
+
+    return [...new Set([primary, ...aliases].filter(Boolean))];
+  }
+
+  function getOperationStorageValue(gameKey, field){
+    const keys = getOperationStorageKeys(gameKey, field);
+    for(const key of keys){
+      const value = localStorage.getItem(key);
+      if(value !== null && value !== "") return value;
+    }
+    return null;
+  }
+
+  function setOperationStorageValue(gameKey, field, value){
+    getOperationStorageKeys(gameKey, field).forEach(key => {
+      localStorage.setItem(key, String(value));
+    });
+  }
+
+  function getOperationRoom(gameKey){
+    return getOperationStorageValue(gameKey, "room");
+  }
+
   function getHubSave(){
     try { return JSON.parse(localStorage.getItem(HUB_SAVE_KEY) || "{}"); }
     catch(error){ return {}; }
@@ -2214,7 +2274,8 @@ body{
 
     const savedState = getOperationSaveState(gameKey);
     const aliasKeys = [
-      game.statusKey,
+      ...getOperationStorageKeys(gameKey, "complete"),
+      ...(Array.isArray(game.storageAliases?.status) ? game.storageAliases.status : []),
       `${gameKey}Complete`,
       `${gameKey}_complete`,
       `${gameKey}_completed`,
@@ -2240,7 +2301,9 @@ body{
     const game = games[gameKey];
     if(!game) return false;
     const savedState = getOperationSaveState(gameKey);
-    return getStorageFlag(game.startedKey) || savedState.started === true || Boolean(savedState.room);
+    const storageStarted = getOperationStorageKeys(gameKey, "started")
+      .some(key => getStorageFlag(key));
+    return storageStarted || savedState.started === true || Boolean(savedState.room) || Boolean(getOperationRoom(gameKey));
   }
 
   function setHubSave(save){ localStorage.setItem(HUB_SAVE_KEY, JSON.stringify(save)); }
@@ -2255,7 +2318,7 @@ body{
     save.operations[gameKey] = {
       started: details.started ?? isOperationStarted(gameKey),
       completed: details.completed ?? isOperationCompleted(gameKey),
-      room: details.room ?? localStorage.getItem(game.roomKey) ?? null,
+      room: details.room ?? getOperationRoom(gameKey) ?? null,
       updatedAt: Date.now()
     };
 
@@ -2277,7 +2340,7 @@ body{
       if(game.unavailable) return;
       const completed = isOperationCompleted(key);
       const started = isOperationStarted(key);
-      const room = localStorage.getItem(game.roomKey);
+      const room = getOperationRoom(key);
       if(completed || started || room){
         recordOperationProgress(key, { started, completed, room });
       }
@@ -2370,7 +2433,7 @@ body{
       const unlocked = isOperationUnlocked(key);
       const completed = isOperationCompleted(key);
       const started = isOperationStarted(key);
-      const room = localStorage.getItem(game.roomKey);
+      const room = getOperationRoom(key);
 
       if(enterButton){
         enterButton.disabled = !unlocked;
@@ -2806,7 +2869,7 @@ body{
       return;
     }
 
-    localStorage.setItem(game.statusKey, "true");
+    setOperationStorageValue(gameKey, "complete", "true");
     localStorage.setItem(`${gameKey}Complete`, "true");
     localStorage.setItem(`${gameKey}_complete`, "true");
     localStorage.setItem(`managerialHub_${gameKey}_complete`, "true");
@@ -2814,8 +2877,8 @@ body{
       localStorage.setItem("agencyProtocolComplete", "true");
       localStorage.setItem("agency_protocol_complete", "true");
     }
-    localStorage.setItem(game.startedKey, "true");
-    localStorage.setItem(game.roomKey, "30");
+    setOperationStorageValue(gameKey, "started", "true");
+    setOperationStorageValue(gameKey, "room", "30");
 
     recordOperationProgress(gameKey, {
       started: true,
@@ -2845,12 +2908,12 @@ body{
 
     localStorage.setItem("selectedGauntlet", gameKey);
     localStorage.setItem("selectedMission", gameKey);
-    localStorage.setItem(games[gameKey].startedKey, "true");
+    setOperationStorageValue(gameKey, "started", "true");
 
     recordOperationProgress(gameKey, {
       started: true,
       completed: isOperationCompleted(gameKey),
-      room: localStorage.getItem(games[gameKey].roomKey),
+      room: getOperationRoom(gameKey),
       logMessage: `${games[gameKey].title} opened from the Managerial Intelligence Directorate hub.`
     });
 

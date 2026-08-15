@@ -3563,6 +3563,21 @@ const REALM_TRIAL_BY_CLOCK_KEY = "managerialHub_trialByClock_complete";
 const REALM_PERFECT_CALIBRATION_KEY = "managerialHub_perfectCalibration_complete";
 const REALM_RETURN_AND_REBUILD_KEY = "managerialHub_returnAndRebuild_complete";
 
+// Hub compatibility aliases.
+// The upgraded Cost Directive uses costDirective keys internally,
+// while the Managerial Intelligence Directorate historically used directive.
+const HUB_COMPAT_STARTED_KEY = "managerialHub_directive_started";
+const HUB_COMPAT_COMPLETE_KEY = "managerialHub_directive_complete";
+const HUB_COMPAT_STATUS_KEY = "managerialHub_directive_status";
+const HUB_COMPAT_ROOM_KEY = "managerialHub_directive_room";
+
+function syncCostDirectiveHubAliases({started = true, completed = false, status = "active", roomValue = room} = {}){
+    if(started) localStorage.setItem(HUB_COMPAT_STARTED_KEY, "true");
+    localStorage.setItem(HUB_COMPAT_COMPLETE_KEY, completed ? "true" : "false");
+    localStorage.setItem(HUB_COMPAT_STATUS_KEY, status);
+    localStorage.setItem(HUB_COMPAT_ROOM_KEY, String(roomValue ?? room ?? 1));
+}
+
 let gameMode = "standard";
 let runSessionId = 0;
 let runEnding = false;
@@ -3802,10 +3817,12 @@ function syncRealmAttemptState(){
     if(isRealmMissionComplete()){
         localStorage.setItem(REALM_STATUS_KEY, "complete");
         localStorage.setItem(REALM_ROOM_KEY, "30");
+        syncCostDirectiveHubAliases({started:true, completed:true, status:"complete", roomValue:30});
         return;
     }
     localStorage.setItem(REALM_STATUS_KEY, "active");
     localStorage.setItem(REALM_ROOM_KEY, String(room || 1));
+    syncCostDirectiveHubAliases({started:true, completed:false, status:"active", roomValue:room || 1});
 }
 function beginRunSession(){
     runSessionId += 1;
@@ -9584,6 +9601,7 @@ function handleVictory() {
 	localStorage.setItem(REALM_COMPLETE_KEY, "true");
 	localStorage.setItem(REALM_STATUS_KEY, "restored");
 	localStorage.setItem(REALM_ROOM_KEY, "30");
+    syncCostDirectiveHubAliases({started:true, completed:true, status:"restored", roomValue:30});
     setMissionArtifactCount(3);
     checkReturnAndRebuildAchievement();
     checkPerfectCalibrationAchievement();
