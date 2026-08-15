@@ -1,0 +1,567 @@
+1
+00:00:00,240 --> 00:00:04,480
+Hey, everyone, we are back in the second part of our game theory basics.
+
+2
+00:00:04,480 --> 00:00:11,080
+And what we're going to do here are some extensions of that simple form or normal form game that we saw in part one.
+
+3
+00:00:11,080 --> 00:00:12,640
+Let's go ahead and dive into it.
+
+4
+00:00:13,120 --> 00:00:15,040
+So again, we have player one, we have player two.
+
+5
+00:00:15,040 --> 00:00:18,440
+For some reason, player two's little tag is further down from his body.
+
+6
+00:00:18,440 --> 00:00:19,760
+I don't know what's going on there.
+
+7
+00:00:20,000 --> 00:00:28,320
+But what we have is a situation in which these two players have been, oh, cult doing something wrong and so they've been thrown in jail.
+
+8
+00:00:28,880 --> 00:00:32,840
+Now, what we see here is they have strategies of confess or stay silent.
+
+9
+00:00:32,840 --> 00:00:34,400
+So player one can confess.
+
+10
+00:00:34,720 --> 00:00:37,520
+Player two could also confess to the crime that they committed.
+
+11
+00:00:37,760 --> 00:00:40,520
+Player one could confess and player two could stay silent.
+
+12
+00:00:40,520 --> 00:00:46,160
+So maybe they were colluding and player two doesn't want to give away what they did.
+
+13
+00:00:46,240 --> 00:00:47,240
+They stay silent.
+
+14
+00:00:47,240 --> 00:00:48,960
+Player one says, no, I'm going to confess.
+
+15
+00:00:48,960 --> 00:00:50,120
+I don't feel right about it.
+
+16
+00:00:50,120 --> 00:00:53,920
+And then we could also flip those strategies for player one and players two.
+
+17
+00:00:54,440 --> 00:00:56,480
+This is what this type of game is.
+
+18
+00:00:56,480 --> 00:00:58,960
+What we're looking at is called a prisoner's dilemma.
+
+19
+00:00:58,960 --> 00:01:07,600
+This is a particular game between two capture players that illustrates why cooperation is difficult to maintain even when it's mutually beneficial.
+
+20
+00:01:07,600 --> 00:01:12,040
+Now, what this means, prisoner's dilemma doesn't just apply to people actually being put in jail.
+
+21
+00:01:12,200 --> 00:01:18,360
+It's actually looking at a situation in which we create suboptimal outcomes as our equilibrium.
+
+22
+00:01:18,840 --> 00:01:25,000
+So what we're going to be seeing here is what might look like a good choice for these players.
+
+23
+00:01:25,400 --> 00:01:27,400
+In reality, it's not a good choice.
+
+24
+00:01:27,480 --> 00:01:30,040
+So let's see what the penalty is going to be.
+
+25
+00:01:30,040 --> 00:01:33,080
+So minus 5,000 if they both confess.
+
+26
+00:01:33,320 --> 00:01:35,640
+So this could be $5,000, for example.
+
+27
+00:01:36,280 --> 00:01:40,400
+Now, if they.  If Player 2 confesses, Player 1 stays silent.
+
+28
+00:01:40,400 --> 00:01:43,560
+Player 1 now has to pay $10,000.
+
+29
+00:01:44,040 --> 00:01:46,600
+Player 2 only has to pay $1,000.
+
+30
+00:01:47,320 --> 00:01:55,720
+Now, if Player 1 confesses, Player 2 stays silent, then what we see is Player 1 only pays $1,000 and Player 2 pays 10,000.
+
+31
+00:01:56,200 --> 00:01:59,240
+Okay, now what happens if they both stay silent?
+
+32
+00:01:59,560 --> 00:02:02,520
+Then they Both only pay $1,500.
+
+33
+00:02:02,520 --> 00:02:19,600
+If we go ahead and add up the amounts, we can see that staying silent is the Pareto optimal outcome for these two players because that $3,000 that they would pay collectively is less than the 10,000 and 11,000 doll elsewhere.
+
+34
+00:02:20,000 --> 00:02:25,120
+But what we need to do is go in and figure out what they're actually going to do.
+
+35
+00:02:25,280 --> 00:02:31,200
+And so we want to use that little strategy that we developed in our previous video where we compared the payoffs top and bottom, left and right.
+
+36
+00:02:31,920 --> 00:02:33,280
+So let's start with player one.
+
+37
+00:02:33,280 --> 00:02:39,200
+5000 and 1000 sound a lot better than paying 10,000 and 1500.  So we can.
+
+38
+00:02:39,280 --> 00:02:43,600
+We can see player one has a dominant strategy to confess.
+
+39
+00:02:44,480 --> 00:02:49,200
+Player two compared the 5000 and the 1000 to the 10,000 and the 1500.
+
+40
+00:02:49,360 --> 00:02:55,760
+And again, we can see the dominant strategy is for player two to also confess.
+
+41
+00:02:56,560 --> 00:03:00,240
+So they both pursue their dominant strategies.
+
+42
+00:03:00,640 --> 00:03:07,680
+And what we find by doing that is that they both confess to the crime and they move to a suboptimal outcome.
+
+43
+00:03:07,680 --> 00:03:10,080
+In fact, this is what we call a Nash equilibrium.
+
+44
+00:03:10,720 --> 00:03:18,160
+This is when a player cannot unilaterally make a change in their strategy and be better off.
+
+45
+00:03:18,480 --> 00:03:20,640
+We found the equilibrium.  Confess, Confess.
+
+46
+00:03:20,640 --> 00:03:22,080
+It's our Nash equilibrium.
+
+47
+00:03:22,320 --> 00:03:31,360
+Okay, but look what happens if player one says, I want to deviate away from confessing and I want to move to staying silent.  Look what happens.
+
+48
+00:03:31,520 --> 00:03:33,720
+They're actually worse off by doing so.
+
+49
+00:03:33,720 --> 00:03:36,400
+They go from minus 5,000 to minus 10,000.
+
+50
+00:03:36,720 --> 00:03:39,880
+That unilateral change made them worse off.
+
+51
+00:03:40,200 --> 00:03:43,080
+If player two does the same thing, they say, you know what?
+
+52
+00:03:43,080 --> 00:03:44,240
+I don't want to confess anymore.
+
+53
+00:03:44,240 --> 00:03:45,320
+I want to stay silent.
+
+54
+00:03:45,560 --> 00:03:48,680
+That 5,000 is better than that, minus 10,000.
+
+55
+00:03:49,080 --> 00:03:53,800
+And what we see again is that unilateral change does not help the player.
+
+56
+00:03:54,280 --> 00:04:04,200
+So that means the Nash equilibrium of both players confessing is going to be a situation which they can't make a better move.
+
+57
+00:04:04,640 --> 00:04:06,640
+They have to stay at confess, confess.
+
+58
+00:04:06,800 --> 00:04:09,680
+Otherwise they're paying much, much.  How about that?
+
+59
+00:04:10,320 --> 00:04:11,840
+More than what they want to.
+
+60
+00:04:12,160 --> 00:04:19,440
+So Nash equilibria arise even when we have dominant strategies or when we don't have dominant strategies.
+
+61
+00:04:19,440 --> 00:04:23,360
+That's a really neat thing about the Nash equilibrium.
+
+62
+00:04:23,520 --> 00:04:28,200
+You don't have to have a dominant strategy for a Nash equilibrium to occur.
+
+63
+00:04:28,200 --> 00:04:30,800
+And I think I have a game that I'm going to show you how this works.
+
+64
+00:04:30,800 --> 00:04:33,600
+But now also notice what happens here.  I mentioned it earlier.
+
+65
+00:04:34,080 --> 00:04:36,240
+The Pareto optimal outcome disappears.
+
+66
+00:04:36,240 --> 00:04:37,280
+We don't choose it.
+
+67
+00:04:37,600 --> 00:04:42,640
+That is actually the best outcome for both players if they could both cooperate.
+
+68
+00:04:42,800 --> 00:04:47,760
+But in the classic dilemma, these two players are separated and they're interrogated differently.
+
+69
+00:04:48,000 --> 00:04:51,040
+So what we see is that these players can't cooperate.
+
+70
+00:04:51,040 --> 00:04:54,120
+They can't get the stay silent, stay silent.
+
+71
+00:04:54,120 --> 00:04:57,120
+So they rely on their own intuition, their own strategies.
+
+72
+00:04:57,280 --> 00:04:59,360
+And what we see is that they both confess.
+
+73
+00:05:00,080 --> 00:05:04,360
+So let's look at some more suboptimal outcomes, all right here.
+
+74
+00:05:04,360 --> 00:05:07,520
+Now we're choosing between raising price and lowering price.
+
+75
+00:05:08,080 --> 00:05:09,840
+And we're going to look at some payoffs here.
+
+76
+00:05:09,840 --> 00:05:16,880
+10 and 10 if they both choose to raise price, 12 and 0 if Player 1 lowers price and Player 2 raises price.
+
+77
+00:05:16,880 --> 00:05:22,240
+0 and 12 if Player 1 raises price and Player 2 lowers price.
+
+78
+00:05:22,480 --> 00:05:27,280
+And then 8 and 8, if they both choose to lower price, they look at 8 and 8.
+
+79
+00:05:27,440 --> 00:05:33,920
+Now, before we continue, just look at the combined payoffs and think to yourself, what is the Pareto optimal outcome?
+
+80
+00:05:33,920 --> 00:05:37,000
+And what do I think the outcome is going to be?
+
+81
+00:05:37,800 --> 00:05:43,480
+Again, what we have to do, compare the payoffs top, bottom, left and right.
+
+82
+00:05:43,560 --> 00:05:48,760
+And we see that the 10 and 0 oh, are not as good as the 12 and the 8.
+
+83
+00:05:48,840 --> 00:05:54,600
+Okay, so player one has a dominant strategy to do what?  Lower price.  All the time.
+
+84
+00:05:55,480 --> 00:06:02,960
+10 and 0 for player 2 is less than the 12 and 8 for player is less than the 12 and 8 in lowering the price.
+
+85
+00:06:02,960 --> 00:06:06,400
+So player 2 also has the dominant strategy to lower price.
+
+86
+00:06:06,560 --> 00:06:09,360
+But this is another sub optimal outcome.
+
+87
+00:06:09,920 --> 00:06:12,480
+They went based on their dominant strategies.
+
+88
+00:06:12,560 --> 00:06:17,560
+But we could do much, much better if we both chose to raise price.
+
+89
+00:06:17,560 --> 00:06:23,760
+The 10 and the 10 combined payoff of 20 is greater than the combined payoff of 16.
+
+90
+00:06:24,080 --> 00:06:26,240
+Also, the 10 is better than the 8.  So.
+
+91
+00:06:26,360 --> 00:06:28,600
+So in this case, we have a suboptimal outcome.
+
+92
+00:06:28,600 --> 00:06:29,880
+It's a Nash equilibrium.
+
+93
+00:06:30,120 --> 00:06:33,080
+We can't make ourselves any better by deviating.
+
+94
+00:06:33,080 --> 00:06:37,160
+If player one chooses to instead raise price, they go from 8 to 0.
+
+95
+00:06:37,560 --> 00:06:40,000
+The same thing for player two, they choose to raise price.
+
+96
+00:06:40,000 --> 00:06:41,880
+Instead of lowering price, they go from 8 to 0.
+
+97
+00:06:42,040 --> 00:06:45,160
+You can't make a unilateral change and make yourself better off.
+
+98
+00:06:45,480 --> 00:06:51,880
+So in this case, cooperation would be a great thing because they could have a much better outcome by doing so.
+
+99
+00:06:52,240 --> 00:06:54,320
+But in this case, they don't.
+
+100
+00:06:57,360 --> 00:06:58,720
+Let's move on to another one.
+
+101
+00:06:59,280 --> 00:07:02,400
+Now we're going to be looking at indifference in payoffs.
+
+102
+00:07:02,560 --> 00:07:03,680
+So what do we mean by this?
+
+103
+00:07:03,680 --> 00:07:07,600
+Well, we might have an outcome in which one player has the same payoff.
+
+104
+00:07:07,680 --> 00:07:08,880
+Let's look at what we get.
+
+105
+00:07:09,200 --> 00:07:21,240
+13 and 13 if they both choose to raise price, 9 if Player 1 lowers price, 10 if Player 2 raises price, 11 if Player 1 raises price.
+
+106
+00:07:21,240 --> 00:07:23,600
+And 14 if Player 2 lowers price.
+
+107
+00:07:23,840 --> 00:07:31,360
+And then 11 again if Player 1 lowers price, and Player 2 gets 12 for lowering their price.
+
+108
+00:07:31,680 --> 00:07:33,840
+So in this case, what are we going to do?
+
+109
+00:07:33,920 --> 00:07:35,520
+All right, let's look at the payoffs here.
+
+110
+00:07:35,520 --> 00:07:36,720
+13 versus 9.
+
+111
+00:07:36,800 --> 00:07:40,160
+So obviously 13 is better than 9, but 11 equals 11.
+
+112
+00:07:41,280 --> 00:07:48,360
+So it doesn't seem to be a clear dominant strategy for player one to necessarily raise price.
+
+113
+00:07:49,080 --> 00:07:51,360
+All right, so we're just Going to put one start.
+
+114
+00:07:51,360 --> 00:07:52,920
+We don't know what player.
+
+115
+00:07:53,640 --> 00:07:58,120
+If raise price, lower price is a good strategy yet for player one.
+
+116
+00:07:58,680 --> 00:08:00,760
+Player two, compare the 14 to 13.
+
+117
+00:08:01,080 --> 00:08:02,360
+Yeah, we see that that's better.
+
+118
+00:08:02,440 --> 00:08:03,880
+And compare the 12 to the 10.
+
+119
+00:08:03,880 --> 00:08:05,640
+And again, we see the 12 is better than 10.
+
+120
+00:08:05,640 --> 00:08:10,600
+So in this case, what we see, player two actually has a dominant strategy to always lower price.
+
+121
+00:08:10,920 --> 00:08:13,000
+But player one could go either way.
+
+122
+00:08:13,720 --> 00:08:24,800
+Now, the question then becomes, does player one, looking at player two strategies and payoff, does player one go, you know what?
+
+123
+00:08:24,800 --> 00:08:26,280
+I'm also going to choose lower.
+
+124
+00:08:26,440 --> 00:08:30,120
+Excuse me, choose raise price and give player two 14?
+
+125
+00:08:31,160 --> 00:08:40,360
+Or is player one going to go, you know what, I'm going to take 11 and lower price and give player two only 12.
+
+126
+00:08:40,640 --> 00:08:42,080
+What's that about?
+
+127
+00:08:42,560 --> 00:08:43,920
+This is a.
+
+128
+00:08:44,000 --> 00:08:46,560
+This is a credibility scenario.
+
+129
+00:08:46,720 --> 00:08:55,840
+In this case, if this is true competition, player one may actually choose to lower price, thus limiting the payoff that player two gets.
+
+130
+00:08:56,560 --> 00:09:03,920
+So when we have this indifference, we have to think about things like credibility is credibility is a credible threat.
+
+131
+00:09:05,280 --> 00:09:10,240
+Is one there?  Will it actually induce player two to go, you know what?
+
+132
+00:09:10,720 --> 00:09:15,680
+They're going to choose to lower price if I don't choose raise price.
+
+133
+00:09:16,480 --> 00:09:25,360
+So maybe I should choose to raise price, get 13, which is better than the 12, and take the hit by not getting the 14 that I want.
+
+134
+00:09:25,680 --> 00:09:30,720
+Now, now, it may be the case that player one decides to choose to raise price again.
+
+135
+00:09:30,720 --> 00:09:32,240
+Look, they make a unilateral decision.
+
+136
+00:09:33,040 --> 00:09:37,120
+They don't make themselves any better off, but they also don't make themselves any worse off.
+
+137
+00:09:37,520 --> 00:09:41,360
+So again, the idea of credibility comes into play here.
+
+138
+00:09:42,000 --> 00:09:47,000
+Will player one credibly commit to raising price or lowering price?
+
+139
+00:09:47,000 --> 00:09:51,120
+And that's some information that player two would want to get on player one.
+
+140
+00:09:51,360 --> 00:09:55,240
+All right, now, that is it for this particular video.
+
+141
+00:09:55,240 --> 00:09:56,760
+This, this, these basics.
+
+142
+00:09:56,760 --> 00:09:57,760
+So I hope you've enjoyed it.

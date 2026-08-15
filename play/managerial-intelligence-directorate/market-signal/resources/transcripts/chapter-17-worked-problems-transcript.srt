@@ -1,0 +1,499 @@
+1
+00:00:00,480 --> 00:00:05,680
+Hey, everyone.  We're going to be taking a look at some work problems coming out of chapter number 17.
+
+2
+00:00:06,000 --> 00:00:10,880
+And again, we are trying to make sure that we get good coverage across all the learning objectives.
+
+3
+00:00:10,880 --> 00:00:13,040
+So let's go ahead and dive into it.
+
+4
+00:00:13,360 --> 00:00:25,760
+Our first question says a firm is considering launching a new product, and there is a 40% chance of earning $50,000 and a 60% chance of losing $10,000.
+
+5
+00:00:26,520 --> 00:00:28,520
+What is the expected value of the decision?
+
+6
+00:00:28,840 --> 00:00:39,800
+So let's go ahead and set this up as 40% times 50,000 that we can earn plus 60% now because we have a chance of losing 10,000.
+
+7
+00:00:40,360 --> 00:00:42,480
+Make that minus 10,000 there.
+
+8
+00:00:42,480 --> 00:00:46,760
+And then all we need to do is solve for the expected value of this project.
+
+9
+00:00:47,480 --> 00:00:57,440
+And this is going to give us 20,000 minus 6,000, which means we have 14,000 as our answer.
+
+10
+00:00:57,600 --> 00:00:59,360
+So C is our answer there.
+
+11
+00:00:59,600 --> 00:01:01,040
+Let's move on to our next one.
+
+12
+00:01:01,840 --> 00:01:06,960
+A theater charges $12 per ticket for students and 18 for adults.
+
+13
+00:01:07,440 --> 00:01:09,760
+And students make up 60%.
+
+14
+00:01:10,240 --> 00:01:15,120
+So 0.6% of the audience and adults make up 40%.
+
+15
+00:01:15,920 --> 00:01:18,760
+What's the expected value of the outcome?
+
+16
+00:01:18,760 --> 00:01:27,560
+So let's go ahead and put in the $12 for the students at 60% of the audience and $18 for the adults at 40% of the audience.
+
+17
+00:01:27,560 --> 00:01:29,920
+And all we have to do is solve out what this is.
+
+18
+00:01:29,920 --> 00:01:32,720
+And that's going to be $6.
+
+19
+00:01:33,680 --> 00:01:37,680
+And this will be 70.  No, no, no, no.
+
+20
+00:01:38,800 --> 00:01:41,680
+This will be not $6.
+
+21
+00:01:41,760 --> 00:01:44,880
+This will be $7.20.
+
+22
+00:01:44,880 --> 00:01:53,440
+And this will also be $7.20, giving us a total of $14.40 as our answer.
+
+23
+00:01:54,240 --> 00:01:54,640
+All right.
+
+24
+00:01:55,760 --> 00:02:01,080
+A fitness app company offers a new version to users who voluntarily sign up.
+
+25
+00:02:01,080 --> 00:02:02,400
+Now, that's a key word right there.
+
+26
+00:02:02,400 --> 00:02:06,800
+Let's go ahead and underline voluntarily right there.
+
+27
+00:02:06,880 --> 00:02:10,880
+Later, the company finds that the users who try the new app are more engaged.
+
+28
+00:02:11,040 --> 00:02:14,400
+What's the most likely issue the app?
+
+29
+00:02:14,400 --> 00:02:15,520
+Improved engagement.
+
+30
+00:02:15,840 --> 00:02:19,040
+Maybe random assignment would reduce engagement.
+
+31
+00:02:20,560 --> 00:02:24,160
+The observed difference between difference may be due to selection bias.
+
+32
+00:02:24,480 --> 00:02:27,280
+Yeah, I'm gonna go ahead and that with this as the answer.
+
+33
+00:02:28,400 --> 00:02:33,080
+If you're voluntarily doing something, you're self selecting into that particular activity.
+
+34
+00:02:33,080 --> 00:02:39,760
+So, like those of you who do watch these videos, you are self selecting into watching the videos, which can mean several things.
+
+35
+00:02:40,480 --> 00:02:44,240
+But I do tend to find that students who watch the videos do better in the class.
+
+36
+00:02:44,720 --> 00:02:48,160
+Now, whether whether or not you're a stronger student, I don't know.
+
+37
+00:02:48,160 --> 00:02:50,400
+But the videos maybe do seem to help.
+
+38
+00:02:50,480 --> 00:02:54,760
+So what we may be seeing here is some selection bias is taking place.
+
+39
+00:02:54,920 --> 00:02:58,440
+So the Observed difference may be due to that selection bias.
+
+40
+00:02:59,800 --> 00:03:03,800
+A bank uses an algorithm to detect fraudulent transactions.
+
+41
+00:03:03,960 --> 00:03:05,280
+And here are the details.
+
+42
+00:03:05,280 --> 00:03:06,840
+We get a false positive rate.
+
+43
+00:03:06,920 --> 00:03:11,520
+So 1% of 100,000 legitimate transactions.
+
+44
+00:03:11,520 --> 00:03:20,880
+This gives us 0.1 times 100,000 is going to give us 1,000 people who are under a false positive, I.e.
+
+45
+00:03:20,880 --> 00:03:25,760
+they actually didn't commit fraud and the algorithm didn't detect it.  Right.
+
+46
+00:03:25,760 --> 00:03:28,200
+These people might just be a little miffed about the whole situation.
+
+47
+00:03:29,240 --> 00:03:32,600
+False negative rate, 5% of 2000.
+
+48
+00:03:32,760 --> 00:03:38,120
+So 5% of 2000 is also going to be 1000.
+
+49
+00:03:38,200 --> 00:03:40,840
+So these are people, not 1100.
+
+50
+00:03:41,640 --> 00:03:49,800
+So these are people who will, who actually committed fraud, but got away with it inside of this particular system.
+
+51
+00:03:49,880 --> 00:03:53,480
+So the cost of a false positive is going to be $10.
+
+52
+00:03:53,960 --> 00:04:00,840
+So let's just multiply that by 10 and we get $10,000 as our false positive error.
+
+53
+00:04:01,320 --> 00:04:05,640
+And then the cost of a false negative is $1,000.
+
+54
+00:04:05,640 --> 00:04:13,040
+So let's multiply that by 1,000 and we get $100,000 in false negative claims.
+
+55
+00:04:13,040 --> 00:04:16,240
+So this is, that's pretty big error cost that we have there.
+
+56
+00:04:16,240 --> 00:04:24,760
+So the total expected error cost is just the summation of both of those are $110,000, which gives us C as our answer.
+
+57
+00:04:25,080 --> 00:04:30,520
+And when we're looking at something, you know, this big, I mean, it can be much bigger depending on the size of the corporation.
+
+58
+00:04:31,080 --> 00:04:49,240
+But when you're looking at an expected error cost that is largely driven by that false negative rate, in this case fraudulent claims or fraudulent transactions, and it makes up 90 some odd percent of the expected error cost, then that's, that's, that's an issue that you do want to address.
+
+59
+00:04:49,240 --> 00:04:54,440
+So you're probably looking at this Algori, you probably go, I might want to correct this algorithm.
+
+60
+00:04:54,440 --> 00:04:58,920
+So that way, you know, we're not losing as much as we should be losing.
+
+61
+00:04:59,320 --> 00:05:00,360
+All right, next question.
+
+62
+00:05:01,080 --> 00:05:04,680
+Our company is forecasting holiday demand.
+
+63
+00:05:05,400 --> 00:05:13,480
+Why might simulating demand or simulating thousands of demand scenarios be more useful than just using last year's sales?
+
+64
+00:05:14,040 --> 00:05:22,600
+So simulating scenarios is actually a very useful thing because it allows you to see many, many different outcomes.
+
+65
+00:05:23,160 --> 00:05:28,280
+You can see a distribution of those types of outcomes, not just a single point in time of something that happens.
+
+66
+00:05:29,080 --> 00:05:35,240
+It allows you to get a better understanding of risk because of all the variants that could occur in those simulations of demand.
+
+67
+00:05:35,800 --> 00:05:38,440
+Basically, it would be doing something like this.
+
+68
+00:05:39,320 --> 00:05:45,240
+You would be taking a demand curve, which we'll cover in chapter eight.
+
+69
+00:05:45,960 --> 00:05:48,000
+So this would be a single point in time demand curve.
+
+70
+00:05:48,000 --> 00:05:51,000
+You would take all that Data estimate that demand curve, et cetera, et cetera.
+
+71
+00:05:51,480 --> 00:06:15,000
+But if you did a bunch of simulations, you get something like this, so you're simulating all different kinds of scenarios and then you could average out those simulations to have a better understanding of what is going to occur inside of, inside of your market.
+
+72
+00:06:15,080 --> 00:06:24,520
+So you have a better understanding of all the different outcomes that could have occurred and all the different risks that might be involved inside of that particular market at this particular time.
+
+73
+00:06:24,920 --> 00:06:27,240
+So B is going to be the answer here.
+
+74
+00:06:27,720 --> 00:06:29,360
+And let's just look at the other ones.
+
+75
+00:06:29,360 --> 00:06:31,480
+Historical sales always overestimate demand.
+
+76
+00:06:32,040 --> 00:06:34,520
+Historical sales could underestimate demand.
+
+77
+00:06:34,520 --> 00:06:37,800
+So in that case, that answer can't be right.
+
+78
+00:06:38,120 --> 00:06:42,360
+Randomization reduces long term cost.  Not really.
+
+79
+00:06:42,360 --> 00:06:45,080
+Good planning actually helps reduce long term costs.
+
+80
+00:06:45,400 --> 00:06:48,320
+Randomization could actually add to long term costs.
+
+81
+00:06:48,320 --> 00:06:53,400
+You never know how the numbers are going to fall and it avoids estimating expected value.
+
+82
+00:06:53,400 --> 00:07:00,120
+Actually, in fact, what we just talked about is it can give you the expected value of that particular outcome.
+
+83
+00:07:00,120 --> 00:07:04,200
+So that's, you know, that's why we're looking at B as being our answer there.
+
+84
+00:07:05,320 --> 00:07:06,440
+All right, our next question.
+
+85
+00:07:06,440 --> 00:07:10,280
+You're negotiating a software development contract.
+
+86
+00:07:11,000 --> 00:07:14,600
+There's uncertainty about future features and integrations.
+
+87
+00:07:14,760 --> 00:07:19,720
+Which structure is most effective for managing this risk?
+
+88
+00:07:19,960 --> 00:07:24,920
+And let's go through each of these by keeping in mind that we do want to remain flexible in this.
+
+89
+00:07:25,400 --> 00:07:38,480
+If we're looking at some type of new contract here and we're talking about managing that risk, we're trying to be effective in managing that risk based on future features and integrations, then we need to have some flexibility.
+
+90
+00:07:38,480 --> 00:07:42,000
+So fixed fee with fixed timeline has no flexibility in it.
+
+91
+00:07:42,560 --> 00:07:45,480
+That might not be too good at managing risk.
+
+92
+00:07:45,480 --> 00:07:50,320
+If your risk all of a sudden creep up and you're not prepared for it, then you have a big issue.
+
+93
+00:07:50,800 --> 00:07:53,520
+Verbal agreement with informal process change.
+
+94
+00:07:54,800 --> 00:08:00,360
+In this case, you might have more risk simply because there's just a verbal agreement.
+
+95
+00:08:00,360 --> 00:08:03,040
+There's nothing actually written down that's enforced legally.
+
+96
+00:08:04,320 --> 00:08:07,520
+So this probably isn't going to help you manage any risk.
+
+97
+00:08:08,000 --> 00:08:11,800
+Adaptive contract with renegotiation clauses tied to milestones.
+
+98
+00:08:11,800 --> 00:08:13,880
+That is very clearly going to be the answer.
+
+99
+00:08:13,880 --> 00:08:19,280
+It allows flexibility when we have that uncertainty inside of those future features and integrations.
+
+100
+00:08:20,240 --> 00:08:26,160
+Performance bonuses only incentives are a very powerful thing.
+
+101
+00:08:26,560 --> 00:08:33,920
+But there's no flexibility inside of that structure, inside of that contract, because it's only looking at performance bonuses.
+
+102
+00:08:34,000 --> 00:08:45,280
+So if something changes, we're not necessarily addressing any of those changes, not addressing any of the requirements that go along with those changes in the features or the integrations.
+
+103
+00:08:46,160 --> 00:08:47,560
+So C is going to be our answer.
+
+104
+00:08:47,560 --> 00:08:52,600
+And then lastly, we've got a difference in difference question here.
+
+105
+00:08:52,600 --> 00:08:55,520
+Company wants to measure the effects of a new sales training program.
+
+106
+00:08:56,160 --> 00:08:59,200
+They collect average and monthly sales data from two regions.
+
+107
+00:08:59,200 --> 00:09:03,520
+One that received the training, the treatment group, and one that did not, the control group.
+
+108
+00:09:04,080 --> 00:09:05,520
+And you can see the breakdown here.
+
+109
+00:09:05,520 --> 00:09:09,360
+The treatment group before training was $5,000 in sales.
+
+110
+00:09:09,360 --> 00:09:12,320
+After training, they had $7,500 in sales.
+
+111
+00:09:12,720 --> 00:09:21,120
+The control group had $4,500 in sales before training and $5,500 in sales after training.
+
+112
+00:09:21,120 --> 00:09:25,280
+So it's asking us what the difference in difference estimate of that training program is.
+
+113
+00:09:25,760 --> 00:09:33,440
+So all we need to do is set up our equation where we take the treatment group and the control group, we take the difference of those.
+
+114
+00:09:33,920 --> 00:09:38,720
+So let's do the first difference, 7,500 minus 5,000.
+
+115
+00:09:39,280 --> 00:09:41,360
+This is what the treatment group did in sales.
+
+116
+00:09:41,920 --> 00:09:43,640
+And then let's take the second difference.
+
+117
+00:09:43,640 --> 00:09:46,720
+And that's going to be what the control group did in cells.
+
+118
+00:09:47,440 --> 00:09:49,680
+All right, so this is 4,500 there.
+
+119
+00:09:49,840 --> 00:09:54,680
+And now the difference in difference is just the difference of those two.
+
+120
+00:09:54,680 --> 00:10:00,080
+Say that five times fast, and then we get 2,500 minus 1,000.
+
+121
+00:10:00,240 --> 00:10:01,800
+Had to think about that for half a second.
+
+122
+00:10:01,800 --> 00:10:06,400
+And this gives us $1500 as the difference in difference estimate.
+
+123
+00:10:06,400 --> 00:10:21,760
+And that basically says that once you control for all the other factors through the control group, that the new sales train program added an additional fifteen hundred dollars in sales compared to had there not been any training at all.
+
+124
+00:10:22,000 --> 00:10:24,320
+And that is it for chapter 17.
+
+125
+00:10:24,400 --> 00:10:25,440
+Hope you've enjoyed it.

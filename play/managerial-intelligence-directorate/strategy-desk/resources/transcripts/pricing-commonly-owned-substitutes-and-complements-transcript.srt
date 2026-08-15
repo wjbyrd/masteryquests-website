@@ -1,0 +1,475 @@
+1
+00:00:01,680 --> 00:00:02,240
+Hey everyone.
+
+2
+00:00:02,320 --> 00:00:06,880
+In part one we looked at basic pricing logic for commonly owned substitutes and complements.
+
+3
+00:00:06,880 --> 00:00:09,440
+In this video we're taking things a step further.
+
+4
+00:00:09,760 --> 00:00:13,560
+We're going to explore how these concepts apply in real business strategy.
+
+5
+00:00:13,560 --> 00:00:20,040
+Perhaps we need to retire a substitute or perhaps our complements can actually power our platform pricing.
+
+6
+00:00:20,040 --> 00:00:21,720
+So let's go ahead and dive into it.
+
+7
+00:00:22,360 --> 00:00:24,840
+The first thing we want to do is start with substitutes.
+
+8
+00:00:24,840 --> 00:00:28,600
+Here we are looking at pricing a substitute to avoid cannibalization.
+
+9
+00:00:28,840 --> 00:00:35,880
+Well, typically that's what we do, but sometimes we may want to cannibalize, that is before somebody else does it for us.
+
+10
+00:00:36,200 --> 00:00:37,840
+Take Apple for example.
+
+11
+00:00:37,840 --> 00:00:42,680
+When they launched the iPhone, they effectively killed their own ipod line.
+
+12
+00:00:43,080 --> 00:00:50,520
+But they did it intentionally because they knew smartphones were going to converge everything that is music and Internet phone and the camera.
+
+13
+00:00:50,760 --> 00:00:55,800
+So Apple sacrificed the ipod to make room for a much more valuable product.
+
+14
+00:00:56,280 --> 00:00:58,920
+This is called strategic cannibalization.
+
+15
+00:00:59,320 --> 00:01:03,000
+The logic here is, are you defending against a competitive threat?
+
+16
+00:01:03,160 --> 00:01:05,840
+Is the current product near the end of its life cycle?
+
+17
+00:01:05,840 --> 00:01:10,360
+Can the new substitute command higher margins or generate more loyalty?
+
+18
+00:01:10,600 --> 00:01:17,960
+If the answer is yes to any of these, then you might want to launch that substitute and go ahead and make that smart long term move.
+
+19
+00:01:18,120 --> 00:01:22,120
+If you don't cannibalize your own product, someone else will.
+
+20
+00:01:22,920 --> 00:01:24,760
+Now let's talk about compliments.
+
+21
+00:01:25,160 --> 00:01:33,320
+Compliments are powerful because you can price one product low or even at a loss and make your own money back on the other good.
+
+22
+00:01:33,640 --> 00:01:36,000
+Game consoles are a classic example.
+
+23
+00:01:36,000 --> 00:01:41,520
+Microsoft might lose money on every Xbox they sell, but they make up for it in the high margin.
+
+24
+00:01:41,520 --> 00:01:43,000
+Video games and subscriptions.
+
+25
+00:01:43,960 --> 00:01:45,000
+Same Gillette here.
+
+26
+00:01:45,080 --> 00:01:47,840
+They give away or heavily discount the razor handle.
+
+27
+00:01:47,840 --> 00:01:50,520
+But the blades, that's where the profit lives.
+
+28
+00:01:51,480 --> 00:01:56,360
+This strategy works when the complement is consumable or repeat purchases.
+
+29
+00:01:56,920 --> 00:02:01,240
+The base product creates lock in and the combined usage drops value.
+
+30
+00:02:01,640 --> 00:02:03,560
+We also see that with bundling.
+
+31
+00:02:03,640 --> 00:02:07,880
+So Amazon prime for example, includes music, video streaming, free shipping and more.
+
+32
+00:02:08,600 --> 00:02:10,640
+And they may price each separately.
+
+33
+00:02:10,640 --> 00:02:15,280
+But if they price them all together, they don't have to sell individual services anymore.
+
+34
+00:02:15,280 --> 00:02:16,960
+They're now selling a platform.
+
+35
+00:02:17,360 --> 00:02:20,320
+So in pricing complements, think about product margins.
+
+36
+00:02:20,320 --> 00:02:22,720
+Think about the ecosystem that you want to create.
+
+37
+00:02:23,840 --> 00:02:26,520
+Now let's look at a numerical example.
+
+38
+00:02:26,520 --> 00:02:29,120
+And with this, the cross price elasticity of demand.
+
+39
+00:02:29,280 --> 00:02:34,160
+So we know that substitutes and complements are going to have different cross price elasticities.
+
+40
+00:02:34,240 --> 00:02:36,800
+We're going to start with a substitute numerical good.
+
+41
+00:02:37,360 --> 00:02:42,640
+We have two Colas, Cola A, Cola B, Cola obviously different because one's red and one's blue.
+
+42
+00:02:43,040 --> 00:02:45,680
+Now, Cola A is the lower margin product.
+
+43
+00:02:45,680 --> 00:02:48,480
+Cola B is the higher margin product.
+
+44
+00:02:48,960 --> 00:02:51,880
+We have Cola a selling for $1.
+
+45
+00:02:51,880 --> 00:02:57,440
+We sell 1,000 of those and our margin is $0.20 per unit sold.
+
+46
+00:02:57,760 --> 00:02:59,840
+Cola B sells for A$20.
+
+47
+00:02:59,840 --> 00:03:04,880
+It sells 600 and its margin is $0.50.
+
+48
+00:03:05,280 --> 00:03:10,320
+So with the old profit or the original profit, what we see is a total profit of $500.
+
+49
+00:03:11,120 --> 00:03:20,720
+This comes from multiplying the amount sold for Cola A by its margin to get $200 and the amount sold of Cola B by its margin to get $300.
+
+50
+00:03:21,040 --> 00:03:27,920
+But now what we want to do is implement a new pricing strategy based off of what we know of commonly owned substitutes.
+
+51
+00:03:28,240 --> 00:03:32,480
+Here our price change is to raise Cola A to $1.15.
+
+52
+00:03:32,960 --> 00:03:34,960
+This gives us a 15% increase.
+
+53
+00:03:35,040 --> 00:03:42,840
+Remember, we're raising the price on the lower margin item more because this can help push customers to the higher margin item.
+
+54
+00:03:43,240 --> 00:03:47,400
+And so Cola B is going to have its price rise to $1.25.
+
+55
+00:03:47,400 --> 00:03:49,960
+This is only 4.2% increase.
+
+56
+00:03:50,040 --> 00:03:53,560
+And what we see is our sales are going to adjust down because the price increase.
+
+57
+00:03:53,960 --> 00:03:58,120
+But our sales adjust down to 850 units for Cola A.
+
+58
+00:03:58,120 --> 00:04:01,800
+And Cola B is now 700 units being sold.
+
+59
+00:04:02,440 --> 00:04:07,800
+See, we move people from the lower margin good to the higher margin good.
+
+60
+00:04:07,960 --> 00:04:13,960
+Now our new profit is going to be 8150 units of the Cola A times 35 cents.
+
+61
+00:04:13,960 --> 00:04:16,520
+And that gives us 297.50.
+
+62
+00:04:16,600 --> 00:04:21,960
+Now that extra 15 cents comes from that increase in the price of the good.
+
+63
+00:04:21,960 --> 00:04:24,600
+Our margin increases by the $0.15 change.
+
+64
+00:04:24,920 --> 00:04:28,440
+Cola B, our profit is now $385.
+
+65
+00:04:28,680 --> 00:04:32,920
+We had a change of $0.05 in our margin.
+
+66
+00:04:33,000 --> 00:04:41,160
+So we multiply the 55 margin by 700 units sold to get the $385 in profit.
+
+67
+00:04:41,160 --> 00:04:45,320
+So now our total is $682.50.
+
+68
+00:04:45,320 --> 00:04:58,960
+And we can see that we have a $182.50 profit gain simply by looking at the items pricing the lower margin item higher than the higher margin item.
+
+69
+00:04:59,600 --> 00:05:04,640
+Now let's move on to our compliments numerical example.
+
+70
+00:05:04,720 --> 00:05:08,800
+So here we're going to have our smartphone and our subscription plan.
+
+71
+00:05:09,640 --> 00:05:13,560
+And with these, we are selling this smartphone for $450.
+
+72
+00:05:13,560 --> 00:05:20,120
+We have 400 units being sold and our margin is $100 per unit.
+
+73
+00:05:20,120 --> 00:05:32,040
+With the subscription plan, we sell these at $50 per month and we get $20 a month in our margin and that gives us a margin of $240 per year.
+
+74
+00:05:32,440 --> 00:05:38,760
+Now, our original profit here, we're going to sell the phones 400 times $100 to get us $40,000.
+
+75
+00:05:38,760 --> 00:05:44,960
+To plan, we sell 400, multiply that by the yearly margin to get $96,000.
+
+76
+00:05:45,120 --> 00:05:48,720
+So our combined profit is $136,000.
+
+77
+00:05:49,120 --> 00:05:52,880
+Now, because these are compliments, we're going to lower the price on both of these.
+
+78
+00:05:53,600 --> 00:05:56,880
+And so the new smartphone price is going to be $425.
+
+79
+00:05:57,120 --> 00:05:59,680
+The new monthly plan is going to be $47.
+
+80
+00:06:00,320 --> 00:06:06,400
+And this causes our quantity demand of both of those to increase to 500 units being sold.
+
+81
+00:06:07,440 --> 00:06:15,280
+So our new profit becomes 500 phones times the $75 margin, and that gives us $37,500.
+
+82
+00:06:15,440 --> 00:06:24,720
+And recall, the reason why our margin is now 75 as opposed to 100 is because we cut into that margin by lowering price by $25.
+
+83
+00:06:25,360 --> 00:06:27,400
+The same logic applies to the plan.
+
+84
+00:06:27,400 --> 00:06:36,240
+We sell 500 plans, we have a $204 margin, which comes from the taking out $3 per month.
+
+85
+00:06:36,720 --> 00:06:39,360
+So 3 times 12 gives us 36.
+
+86
+00:06:39,440 --> 00:06:47,760
+So take the $240 margin that we had, subtract out the now $36 that we lose, and that's where the 204 comes from.
+
+87
+00:06:47,920 --> 00:06:51,360
+So that plan nets us 102,000 per year.
+
+88
+00:06:51,600 --> 00:06:54,960
+Combined profit is $139,500.
+
+89
+00:06:55,360 --> 00:07:00,000
+And we can see that the profit gain is going to be $3,500.
+
+90
+00:07:01,720 --> 00:07:07,960
+So what we see is lowering prices on both complement products, increased overall adoption and lifted profits.
+
+91
+00:07:08,280 --> 00:07:13,560
+This shows how coordinated price cuts across complements can grow the entire bundle.
+
+92
+00:07:13,560 --> 00:07:17,880
+Now, these numerical examples here help quantify what cross price elasticity describes.
+
+93
+00:07:18,040 --> 00:07:20,040
+Substitutes move in opposite directions.
+
+94
+00:07:20,040 --> 00:07:21,480
+Complements move together.
+
+95
+00:07:22,040 --> 00:07:27,400
+But with smart pricing across your product line, you can actively shape those outcomes to your advantage.
+
+96
+00:07:27,640 --> 00:07:29,280
+Now, this is an exercise for you.
+
+97
+00:07:29,280 --> 00:07:35,680
+Calculate what the cross price elasticity is for the substitute goods and the complement goods that we just did.
+
+98
+00:07:36,880 --> 00:07:41,840
+Now, I'm going to move on to our mergers, acquisitions and product strategy.
+
+99
+00:07:42,240 --> 00:07:46,320
+Sometimes the substitute or complement isn't one of your own products.
+
+100
+00:07:47,040 --> 00:07:48,480
+Sometimes it's someone else's.
+
+101
+00:07:48,480 --> 00:07:50,320
+And that's where acquisitions come in.
+
+102
+00:07:50,640 --> 00:07:53,360
+Facebook buying Instagram, well, that's a substitute.
+
+103
+00:07:53,360 --> 00:07:55,200
+Instagram was competing for attention.
+
+104
+00:07:55,440 --> 00:07:58,960
+Facebook bought it to neutralize the threat and integrate its value.
+
+105
+00:07:59,560 --> 00:08:02,840
+Disney buying Pixar and Marvel, well, those are compliments.
+
+106
+00:08:03,080 --> 00:08:09,240
+These IPs fit perfectly into Disney's flywheel movies, merchandising parks and streaming.
+
+107
+00:08:09,560 --> 00:08:14,760
+So by owning the compliments, Disney increased the value of its entire ecosystem.
+
+108
+00:08:16,120 --> 00:08:18,520
+And now let's look at some final tips here.
+
+109
+00:08:18,520 --> 00:08:26,680
+Managing our portfolio product means asking, how does pricing one product affect everything else that I sell?
+
+110
+00:08:26,680 --> 00:08:27,960
+So here are some quick tips.
+
+111
+00:08:28,600 --> 00:08:30,920
+Don't optimize products in isolation.
+
+112
+00:08:32,200 --> 00:08:35,080
+Use bundling or platform pricing when possible.
+
+113
+00:08:36,520 --> 00:08:39,560
+Watch for customer overlap across product lines.
+
+114
+00:08:39,720 --> 00:08:44,120
+And then lastly, think lifetime value, not just per unit profit.
+
+115
+00:08:44,440 --> 00:08:47,720
+So strategic pricing here isn't just about setting our numbers.
+
+116
+00:08:47,720 --> 00:08:51,880
+It's about playing offense and defense in our product ecosystem.
+
+117
+00:08:51,960 --> 00:08:55,800
+When we own the substitutes and complements, we control the chessboard.
+
+118
+00:08:56,160 --> 00:08:58,400
+So we need to make our moves wisely.
+
+119
+00:08:59,040 --> 00:09:00,640
+That's it.  Hope you've enjoyed it.

@@ -1,0 +1,179 @@
+1
+00:00:01,840 --> 00:00:08,360
+Hey everyone! We've seen simultaneous games and how to solve for them. Now let's take a look at a sequential games.
+
+2
+00:00:09,080 --> 00:00:13,800
+To make this easy on ourselves let's start with a familiar simultaneous game.
+
+3
+00:00:14,600 --> 00:00:17,040
+Here we have Tacorama and Taco Mama--
+
+4
+00:00:18,040 --> 00:00:33,240
+I don't know why I keep doing this to myself--with two strategies raise price and lower price. The payoffs for each set of strategies is in black and green to denote who gets what: black for Tacorama and green for Taco Mama.
+
+5
+00:00:33,920 --> 00:00:36,440
+Let's take this information and place it in the game.
+
+6
+00:00:37,240 --> 00:00:50,120
+First, we will assume that Tacorama moves first in the game—though it doesn't really matter who we place where unless there is a first mover advantage. Tacorama has two branches: raise price and lower price.
+
+7
+00:00:50,960 --> 00:00:53,480
+Now, we've added two nodes to the game tree. .
+
+8
+00:00:54,040 --> 00:00:58,280
+These are where Taco Mama makes their decision based on what Tacorama did.
+
+9
+00:00:58,840 --> 00:01:03,880
+We've completed the game tree and can look at the payoffs to verify that they line up with
+
+10
+00:01:04,440 --> 00:01:06,640
+what was in the simultaneous game.
+
+11
+00:01:07,800 --> 00:01:11,480
+The key to solving games like this is to use backwards induction.
+
+12
+00:01:12,120 --> 00:01:17,680
+That is, we start at the end of the game and work our way backwards to the start.
+
+13
+00:01:18,200 --> 00:01:23,400
+One other aspect is to divide the game up into subgames.
+
+14
+00:01:24,080 --> 00:01:31,680
+Here we are looking at each node of the game and finding the subgame equilibria. Let's start with the first subgame.
+
+15
+00:01:32,440 --> 00:01:50,320
+We will first compare the two payoffs that Taco Mama can receive if Tacorama chooses to raise price. We have payoffs of 13 if Taco Mama raises price and 14 if they lower price. Clearly, Taco Mama wants to lower price to get the higher payoff.
+
+16
+00:01:51,000 --> 00:01:53,560
+Let's compare the next subgame.
+
+17
+00:01:54,720 --> 00:02:04,160
+We have payoffs of 10 and 9. It's clear that Taco Mama will choose raise price if Tacorrama chooses to lower price.
+
+18
+00:02:05,040 --> 00:02:16,040
+But this leaves us with an issue? Taco Mama is never choosing the same strategy. So, Tacorama needs to compare its payoffs in each subgame.
+
+19
+00:02:17,080 --> 00:02:30,520
+We can see the 13 is greater than the 11 and the 11 is greater than the 9. If we compare across the subgames, we see that Tacorama will always want to choose raise price.
+
+20
+00:02:31,080 --> 00:02:37,280
+Thus, Taco Mama will choose to lower price once Tacorama raises price.
+
+21
+00:02:38,320 --> 00:02:42,920
+This is the same Nash equilibrium we found in another video.
+
+22
+00:02:43,440 --> 00:02:53,720
+Now, you may be wondering why didn't Tacorama choose to lower price. Keep in mind that doing so results in Taco Mama choosing to raise price,
+
+23
+00:02:54,240 --> 00:02:58,840
+giving Tacorama an even lower payout of 9.
+
+24
+00:03:00,160 --> 00:03:13,720
+Here, we have altered the payoffs and strategies. Now, we have both players either keeping their price or lowering their price. If they both choose keep price, then each gets a payoff of 0.
+
+25
+00:03:14,560 --> 00:03:24,400
+If Tacorama chooses keep price and Taco Mama chooses lower price, then Tacorama gets 0 and Taco Mama gets 2.
+
+26
+00:03:25,080 --> 00:03:33,760
+The opposite is also true. If both choose to lower price, then each receives a payoff of -1.
+
+27
+00:03:34,400 --> 00:03:36,080
+Let's construct our game tree.
+
+28
+00:03:37,480 --> 00:03:47,000
+Now, analyze each subgame to see that Taco Mama will choose lower price in the first one and keep price in the second one.
+
+29
+00:03:47,640 --> 00:03:54,240
+This leaves Tacorama with 0 in the first subgame and 2 in the second subgame.
+
+30
+00:03:54,880 --> 00:03:59,680
+For Tacorama, the key is achieve more than 0, but how?
+
+31
+00:04:00,200 --> 00:04:07,240
+How can Tacorama ensure that Taco Mama will not punish them if Tacorama chooses to lower price?
+
+32
+00:04:07,920 --> 00:04:20,760
+This is where we introduce credible threats. For example, Tacorama may discretely signal that they have no problem with launching a negative ad campaign against Taco Mama.
+
+33
+00:04:21,760 --> 00:04:27,800
+The point of credible threats is to make the other player believe you will follow through with them.
+
+34
+00:04:28,440 --> 00:04:36,360
+For example if you have kids you may not actually need to spank your child just merely sending the signal that you would.
+
+35
+00:04:37,440 --> 00:04:48,160
+I know as a kid, my father just had to cut his eye at me and that was all I needed. He walked away with a positive payoff, I got 0 and we both avoided a negative payoff.
+
+36
+00:04:48,760 --> 00:04:53,800
+Credible threats are good to have in your back pocket, you just don't want to use them.
+
+37
+00:04:54,440 --> 00:05:08,360
+In this case, if Tacorama's threat is credible enough then Tacorama can lower price and Taco Mama will keep price, thus giving Tacorama 2 and Taco Mama 0.
+
+38
+00:05:09,640 --> 00:05:11,960
+Lastly, let's have a look at this behemoth.
+
+39
+00:05:12,960 --> 00:05:18,840
+Sequential games need not stop with two branches. They can extend into multiple branches and nodes.
+
+40
+00:05:19,400 --> 00:05:23,680
+Pause the video, take a minute and see if you can solve it.
+
+41
+00:05:27,560 --> 00:05:28,160
+Did you get it?
+
+42
+00:05:29,440 --> 00:05:34,600
+Firm A chooses low, firm B chooses high and firm A chooses high.
+
+43
+00:05:35,160 --> 00:05:41,200
+If you compared the payoffs for firm B, you'll notice that they always choose high.
+
+44
+00:05:41,800 --> 00:05:45,720
+Thus, firm A chose the best payoff with this in mind.
+
+45
+00:05:46,240 --> 00:05:48,800
+Alright, that's it. Hope you have enjoyed it.

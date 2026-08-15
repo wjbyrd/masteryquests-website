@@ -1,0 +1,631 @@
+1
+00:00:00,000 --> 00:00:02,441
+Hey everyone! Sometimes we need to know ...
+
+2
+00:00:02,441 --> 00:00:05,252
+if the move that we want to make is worthwhile.
+
+3
+00:00:05,252 --> 00:00:08,285
+While we don't have a time machine to peer into the ...
+
+4
+00:00:08,285 --> 00:00:10,356
+future, we can use experiments to ...
+
+5
+00:00:10,356 --> 00:00:13,833
+help us better understand if some initial change has the ...
+
+6
+00:00:13,833 --> 00:00:15,756
+impact that we are looking for.
+
+7
+00:00:16,440 --> 00:00:17,240
+Why do we care?
+
+8
+00:00:17,760 --> 00:00:20,720
+We are in the business of, well,
+
+9
+00:00:21,320 --> 00:00:24,287
+being in business and making the right decisions ...
+
+10
+00:00:24,287 --> 00:00:25,879
+can improve our outcomes.
+
+11
+00:00:26,640 --> 00:00:29,713
+This is where having a well-designed experiment ...
+
+12
+00:00:29,713 --> 00:00:32,711
+really ups the ante by allowing us to make causal ...
+
+13
+00:00:32,711 --> 00:00:34,884
+inferences into business policy,
+
+14
+00:00:34,884 --> 00:00:36,158
+changes, et cetera.
+
+15
+00:00:36,880 --> 00:00:39,512
+We gain functional knowledge that reduces ...
+
+16
+00:00:39,512 --> 00:00:40,755
+uncertainty. This,
+
+17
+00:00:40,755 --> 00:00:43,679
+then leads to information that we may use later.
+
+18
+00:00:44,240 --> 00:00:45,971
+A simple question. We know,
+
+19
+00:00:45,971 --> 00:00:48,304
+or will know, that if we know the price ...
+
+20
+00:00:48,304 --> 00:00:51,616
+elasticity of demand for a particular product we can ...
+
+21
+00:00:51,616 --> 00:00:54,251
+raise or lower price to increase revenue.
+
+22
+00:00:54,251 --> 00:00:57,187
+But our goal may not always be to raise revenue.
+
+23
+00:00:57,187 --> 00:00:59,520
+Perhaps, you're trying to align with ...
+
+24
+00:00:59,520 --> 00:01:02,907
+another organizational goal of maximizing profits,
+
+25
+00:01:02,907 --> 00:01:06,294
+in which case continually increasing revenue has the ...
+
+26
+00:01:06,294 --> 00:01:07,875
+downfall of added costs.
+
+27
+00:01:08,760 --> 00:01:11,176
+What to do? Simply conduct a randomized ...
+
+28
+00:01:11,176 --> 00:01:14,398
+experiment to find out. This is where the tricky part ...
+
+29
+00:01:14,398 --> 00:01:16,595
+comes in. You have to be able to set up ...
+
+30
+00:01:16,595 --> 00:01:19,451
+the experiment so randomization of consumers ...
+
+31
+00:01:19,451 --> 00:01:21,794
+are not related in any systematic way.
+
+32
+00:01:21,794 --> 00:01:25,089
+Suppose you offer a voucher to the first 100 people who ...
+
+33
+00:01:25,089 --> 00:01:27,652
+enter your store on Tuesday. Why Tuesday?
+
+34
+00:01:27,652 --> 00:01:28,677
+Why not Tuesday?
+
+35
+00:01:29,200 --> 00:01:32,289
+What will we notice? That there are 100 motivated ...
+
+36
+00:01:32,289 --> 00:01:34,474
+people looking to get the voucher.
+
+37
+00:01:34,474 --> 00:01:36,809
+This is not randomization. Perhaps,
+
+38
+00:01:36,809 --> 00:01:40,124
+you have a machine that distributes vouchers using a ...
+
+39
+00:01:40,124 --> 00:01:43,439
+random number generator. The first person who gets a ...
+
+40
+00:01:43,439 --> 00:01:45,322
+voucher is customer number 3,
+
+41
+00:01:45,322 --> 00:01:47,733
+then next person is customer number 5,
+
+42
+00:01:47,733 --> 00:01:49,918
+then the next is customer number 9.
+
+43
+00:01:49,918 --> 00:01:52,630
+With this method, we can see if the vouchers ...
+
+44
+00:01:52,630 --> 00:01:56,322
+have any effect on shopping. This also lets us potentially ...
+
+45
+00:01:56,322 --> 00:01:59,863
+avoid selection bias.With our first proposed method of ...
+
+46
+00:01:59,863 --> 00:02:03,555
+giving out the vouchers to the first 100 people we create an ...
+
+47
+00:02:03,555 --> 00:02:06,870
+incentive for the highly motivated to be at the store ...
+
+48
+00:02:06,870 --> 00:02:09,356
+first. This distorts the true effect of ...
+
+49
+00:02:09,356 --> 00:02:11,993
+the treatment of our experiment, or goal.
+
+50
+00:02:13,080 --> 00:02:16,013
+Here we have our store with an end cap display that is ...
+
+51
+00:02:16,013 --> 00:02:17,513
+30%. We did this because an ...
+
+52
+00:02:17,513 --> 00:02:20,241
+eager young assistant manager promised that we ...
+
+53
+00:02:20,241 --> 00:02:23,037
+could increase sales of the items nearby as well.
+
+54
+00:02:23,720 --> 00:02:27,418
+If this endcap is not displayed in an ad and only customers ...
+
+55
+00:02:27,418 --> 00:02:29,575
+who enter the store know about it,
+
+56
+00:02:29,575 --> 00:02:32,811
+then we have added some degree of randomness to the ...
+
+57
+00:02:32,811 --> 00:02:34,968
+assistant manager's assertion.
+
+58
+00:02:34,968 --> 00:02:36,740
+However, if it is made known ...
+
+59
+00:02:36,740 --> 00:02:38,589
+beforehand, then we may find ...
+
+60
+00:02:38,589 --> 00:02:42,364
+self-selection arising and distorting the true effect as ...
+
+61
+00:02:42,364 --> 00:02:45,754
+customers may enter with the sole intent of getting a ...
+
+62
+00:02:45,754 --> 00:02:47,757
+product from the discount bin.
+
+63
+00:02:51,280 --> 00:02:53,763
+Other issues arise as well when we are creating ...
+
+64
+00:02:53,763 --> 00:02:55,737
+experiments. The first is leakages.
+
+65
+00:02:55,737 --> 00:02:58,347
+Let's suppose we are conducting an experiment on ...
+
+66
+00:02:58,347 --> 00:03:00,575
+price discounts at a local grocery store.
+
+67
+00:03:00,575 --> 00:03:02,357
+This will be our treatment group.
+
+68
+00:03:03,000 --> 00:03:06,157
+To see if these discounts work we need to compare ...
+
+69
+00:03:06,157 --> 00:03:09,867
+sales with another grocery store that isn't running the ...
+
+70
+00:03:09,867 --> 00:03:12,866
+price discounts. The issue we face is that our ...
+
+71
+00:03:12,866 --> 00:03:16,418
+control store may be in too close of proximity and some ...
+
+72
+00:03:16,418 --> 00:03:20,838
+customers visit that store for the same goods for whatever reason.
+
+73
+00:03:21,360 --> 00:03:25,244
+If we worry about leakages, then we will want to choose a ...
+
+74
+00:03:25,244 --> 00:03:26,679
+store further away.
+
+75
+00:03:27,280 --> 00:03:30,560
+Another issue that arises is representativeness.
+
+76
+00:03:31,080 --> 00:03:34,737
+Our grocery store want to make sure that their sales ...
+
+77
+00:03:34,737 --> 00:03:36,863
+can be closely tied to an area,
+
+78
+00:03:36,863 --> 00:03:40,861
+so they choose another local store (perhaps owned by the ...
+
+79
+00:03:40,861 --> 00:03:43,668
+same company) to use as a control group.
+
+80
+00:03:43,668 --> 00:03:46,985
+But as we just learned this may cause leakages.
+
+81
+00:03:46,985 --> 00:03:49,877
+In the end, we are faced with a trade-off.
+
+82
+00:03:50,760 --> 00:03:53,385
+Back to our endcap display. We now have another ...
+
+83
+00:03:53,385 --> 00:03:56,279
+endcap that looks very close to the discounted one.
+
+84
+00:03:56,840 --> 00:03:59,392
+We've also lowered the discount to 10%.
+
+85
+00:03:59,392 --> 00:04:02,408
+We satisfied the representativeness problem ...
+
+86
+00:04:02,408 --> 00:04:06,043
+by using another endcap as a control that is very close to ...
+
+87
+00:04:06,043 --> 00:04:07,358
+the discounted one.
+
+88
+00:04:08,000 --> 00:04:11,611
+But we may have introduced a leakage problem as the ...
+
+89
+00:04:11,611 --> 00:04:13,244
+10% may not be enough to ...
+
+90
+00:04:13,244 --> 00:04:16,941
+incentivize customers to purchase from the endcap ...
+
+91
+00:04:16,941 --> 00:04:19,176
+and surrounding items. Again,
+
+92
+00:04:19,176 --> 00:04:24,077
+we are faced with a trade-off, and our estimates may not be unbiased.
+
+93
+00:04:25,080 --> 00:04:28,298
+What if we can't generate a randomized experiment?
+
+94
+00:04:28,298 --> 00:04:30,842
+Sometimes, we have to rely on historical ...
+
+95
+00:04:30,842 --> 00:04:33,760
+data and data that we can collect after we make a ...
+
+96
+00:04:33,760 --> 00:04:36,005
+change. When this is our approach we ...
+
+97
+00:04:36,005 --> 00:04:38,998
+can use the difference-in-difference method.
+
+98
+00:04:39,640 --> 00:04:42,570
+This method does allow us to find the effect of an ...
+
+99
+00:04:42,570 --> 00:04:45,719
+experiment through treatment and control groups.
+
+100
+00:04:46,480 --> 00:04:49,718
+But we also have to keep in mind that our treatment is not ...
+
+101
+00:04:49,718 --> 00:04:53,097
+random and we can't control for confounders or a variable ...
+
+102
+00:04:53,097 --> 00:04:56,476
+that effects the dependent and independent variables at ...
+
+103
+00:04:56,476 --> 00:04:58,095
+the same time. For example,
+
+104
+00:04:58,095 --> 00:05:00,770
+we want to know the outcome of sales of turkey,
+
+105
+00:05:00,770 --> 00:05:02,741
+which is our dependent variable,
+
+106
+00:05:02,741 --> 00:05:04,712
+when we lower the price of turkey,
+
+107
+00:05:04,712 --> 00:05:06,824
+which is our independent variable.
+
+108
+00:05:06,824 --> 00:05:09,640
+If we begin this experiment near Thanksgiving,
+
+109
+00:05:09,640 --> 00:05:12,878
+then we may learn that historically prices fall during ...
+
+110
+00:05:12,878 --> 00:05:15,553
+Thanksgiving and that sales increase during ...
+
+111
+00:05:15,553 --> 00:05:18,017
+Thanksgiving, so we cannot determine the ...
+
+112
+00:05:18,017 --> 00:05:21,677
+true causal relationship without controlling for a holiday.
+
+113
+00:05:22,640 --> 00:05:25,047
+Lastly, we have selection bias again.
+
+114
+00:05:25,047 --> 00:05:25,874
+This, again,
+
+115
+00:05:25,874 --> 00:05:29,109
+distorts our true effect. With these assumptions,
+
+116
+00:05:29,109 --> 00:05:31,667
+we can use difference-in-difference to ...
+
+117
+00:05:31,667 --> 00:05:33,698
+estimate the effect of a change.
+
+118
+00:05:33,698 --> 00:05:35,729
+To do this, we use this equation,
+
+119
+00:05:35,729 --> 00:05:38,513
+which says the outcome effect is equal to the ...
+
+120
+00:05:38,513 --> 00:05:41,673
+difference of the treatment group post change and ...
+
+121
+00:05:41,673 --> 00:05:45,209
+treatment group pre-change minus the difference of the ...
+
+122
+00:05:45,209 --> 00:05:48,068
+control group post-change and control group ...
+
+123
+00:05:48,068 --> 00:05:50,475
+pre-change. Let's see how this works.
+
+124
+00:05:51,320 --> 00:05:54,791
+We have a scenario given to us where a grocery store is ...
+
+125
+00:05:54,791 --> 00:05:57,789
+implementing a new advertising campaign and ...
+
+126
+00:05:57,789 --> 00:06:00,944
+they want to know how well this campaign worked.
+
+127
+00:06:00,944 --> 00:06:04,178
+They have data going back 12 months and forward 12 ...
+
+128
+00:06:04,178 --> 00:06:06,544
+months. They compare their sales to ...
+
+129
+00:06:06,544 --> 00:06:08,516
+similar stores in the region.
+
+130
+00:06:09,120 --> 00:06:13,878
+We find that the store earned $120,000 in sales ...
+
+131
+00:06:13,878 --> 00:06:18,392
+post-campaign and $100,000 pre-campaign.
+
+132
+00:06:18,392 --> 00:06:23,638
+Similar stores earned $115,000 post-campaign and ...
+
+133
+00:06:23,638 --> 00:06:26,200
+$110,000 pre-campaign.
+
+134
+00:06:26,760 --> 00:06:29,724
+To estimate the effect, let's first recall the outcome ...
+
+135
+00:06:29,724 --> 00:06:32,559
+effect of the difference-in-difference estimator
+
+136
+00:06:34,480 --> 00:06:36,535
+Next, let's plug our pre and post ...
+
+137
+00:06:36,535 --> 00:06:39,199
+numbers into their corresponding spots.
+
+138
+00:06:39,800 --> 00:06:42,000
+Solving down and we get.
+
+139
+00:06:42,680 --> 00:06:47,458
+$15,000 as the total effect to include our time-varying and ...
+
+140
+00:06:47,458 --> 00:06:51,280
+constant factors. This tells us we could expect ...
+
+141
+00:06:51,280 --> 00:06:54,816
+a $5,000 change already with no ad campaign.
+
+142
+00:06:54,816 --> 00:06:57,969
+And by having the ad campaign we added an ...
+
+143
+00:06:57,969 --> 00:07:00,358
+additional $10,000 in sales.
+
+144
+00:07:01,120 --> 00:07:05,157
+We'll conclude by placing the previous numbers in a table.
+
+145
+00:07:05,157 --> 00:07:08,865
+This table sorts out the control and treatment groups ...
+
+146
+00:07:08,865 --> 00:07:11,749
+sales as well as adding in two new columns.
+
+147
+00:07:11,749 --> 00:07:15,292
+The factors constant over time measures the change ...
+
+148
+00:07:15,292 --> 00:07:17,681
+from the treatment group. That is,
+
+149
+00:07:17,681 --> 00:07:21,059
+we are looking at how the group changes by itself.
+
+150
+00:07:21,059 --> 00:07:24,602
+Subtracting the post treatment and pre-treatment ...
+
+151
+00:07:24,602 --> 00:07:25,755
+yields $20,000.
+
+152
+00:07:26,360 --> 00:07:29,960
+And the time-varying factors measures the control group.
+
+153
+00:07:30,480 --> 00:07:34,337
+This allows us to see what would have happened had ...
+
+154
+00:07:34,337 --> 00:07:37,159
+nothing else taken place over time.
+
+155
+00:07:37,760 --> 00:07:43,000
+Subtracting the post control and pre-control yields $5,000.
+
+156
+00:07:43,000 --> 00:07:48,039
+We take the difference of these two measures to get $15,000.
+
+157
+00:07:48,640 --> 00:07:49,539
+Alright, that's it.
+
+158
+00:07:49,539 --> 00:07:52,079
+Hope you've enjoyed it and we'll catch you in the next one.

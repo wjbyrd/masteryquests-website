@@ -1,0 +1,207 @@
+1
+00:00:00,000 --> 00:00:42,160
+Hey everyone in many cases when you are looking at games you have more than two strategies for each player so that means we have to think about what to do with the multiple strategies what ways can we eliminate their strategies and with that we're going to take a look at a few examples as to how we can solve these multi-strategy games so here we have taco takeout and takeout Taco again and they have three strategies between them they can raise price keep price or lower price for tacos. If they raise price we are looking at a profit of $10
+
+2
+00:00:42,680 --> 00:01:12,760
+$5 and $0 depending on what Takeout Taco does that is if Takeout Taco raises price then Taco Takeout gets $10 and also Takeout Taco gets $10. So what we want to do is try and figure out how can we eliminate some of these strategies so that we can get a game that's more simple for us to solve and the way that we do that is we eliminate
+
+3
+00:01:13,800 --> 00:01:15,120
+dominated.
+
+4
+00:01:16,040 --> 00:01:30,120
+strategies. Right we eliminate dominated strategies and what I mean by that is we look at strategies that either player will never choose because other strategies dominate it.
+
+5
+00:01:30,880 --> 00:01:35,920
+So let's start with Taco takeout and we noticed that we have 10.
+
+6
+00:01:36,440 --> 00:01:38,080
+5 and 0.
+
+7
+00:01:38,600 --> 00:01:56,480
+We have fifteen twelve and fifteen we have 20, 20 and 18. So right off the bat I can already see that keep price and lower price beat raised price if Takeout Taco chooses to raise price.
+
+8
+00:01:57,080 --> 00:02:13,000
+I can also see that keep price and lower price dominates because the 12 and 20 are greater than the five they dominate our raise price if Take out Taco chooses again
+
+9
+00:02:13,520 --> 00:02:43,280
+to keep price. And then lastly we see that the 15 and 18 dominate the zero so what we know is that with some forward-looking Takeout or excuse me Taco takeout will never choose to raise prices so with that being said we can cross these out because these are dominated strategies now look what that leaves us it leaves us with keep price and lower price.
+
+10
+00:02:43,800 --> 00:02:55,640
+Now, I ended up setting this strategy this payoff matrix up so that lower price dominates keep price as well: 20 was greater than the 15
+
+11
+00:02:56,240 --> 00:03:07,800
+20 is greater than 12 and the 18 is greater than the 15. So this leaves us with a much easier uhh payoff matrix to deal with because now
+
+12
+00:03:08,520 --> 00:03:18,520
+we know that Taco Takeout will always choose to lower price therefore Takeout Taco looks at their available options.
+
+13
+00:03:19,080 --> 00:03:50,680
+0 fifteen and eighteen and we can clearly see that Takeout Taco will never choose raise price they will never choose keep price and therefore our Nash equilibrium is going to be for both of those restaurants to lower price. Now that was an easy one because of the way it was set up in the payoff matrix. What happens if we don't have one that is so easy to look at? So let's go to this next example.
+
+14
+00:03:51,200 --> 00:03:58,680
+And we have 12 12 and 13 compare that to 15 14 and 15.
+
+15
+00:03:59,440 --> 00:04:17,800
+Alright so it does look like 15 is better than 12 14 is better than 12 and 15 is better than 13 so given this we would likely never choose to raise price if we are Taco Takeout so let's go ahead and let's cross that one out.
+
+16
+00:04:19,040 --> 00:04:29,800
+Okay now let's say that we are Takeout Taco we figured that out now we're going to look at our particular pairings and we're going to say I can get 10
+
+17
+00:04:30,400 --> 00:04:32,040
+14 and 20.
+
+18
+00:04:32,720 --> 00:04:39,040
+0, 10 and 18. We can see that again wow I forgot to change this up.
+
+19
+00:04:41,120 --> 00:05:10,240
+And what I mean by that is the simple fact that 20 and 18 always dominate the other strategies 20t is greater than 14, 20 is greater than 10, 18 is greater than zero we can cross these out and there we have it. So we are going to be down to the keep price and lower price now it's clear that Taco Takeout is going to select lower price.
+
+20
+00:05:10,760 --> 00:05:48,240
+Because 18 is greater than 15 which also means that Takeout Taco will also lower price so this becomes our Nash equilibrium. Now if Takeout Taco seasoning Taco take out a very beneficial very benevolent they would have chose to keep price to get take out Taco 20 but that's not going to happen that is not a credible action okay so what we need to do is have a set of strategies for both players to where we can actually have something a little more difficult to solve so what I'm going to do is have a little and down.
+
+21
+00:05:48,880 --> 00:05:52,720
+As our strategies I'm a try to write down here properly.
+
+22
+00:05:53,360 --> 00:05:56,000
+Up, middle and down as our strategies.
+
+23
+00:05:57,000 --> 00:06:00,240
+And let's just create our payoff Matrix here.
+
+24
+00:06:00,800 --> 00:06:04,680
+And then up middle and down for player B.
+
+25
+00:06:05,480 --> 00:06:09,200
+And let's just create this a three-by-three grid.
+
+26
+00:06:09,960 --> 00:06:15,240
+And just put in some numbers let's say we have four and six.
+
+27
+00:06:15,800 --> 00:06:20,000
+We'll have, I don't know, 6 and 3.
+
+28
+00:06:20,520 --> 00:06:24,200
+And let's do 7 and ah, let's make that one.
+
+29
+00:06:25,320 --> 00:06:45,120
+Here let's make this 3 and 5 and we're going to have four and two and let's make this 5 and 3 and then our last one was make this four and one will make this middle area middle down with make that ah
+
+30
+00:06:45,760 --> 00:06:55,560
+5 and 0 and will do the same number here five something a little bit bigger. Let's say that's 5 and 4.
+
+31
+00:06:56,680 --> 00:07:17,560
+Let's go in and compare the values. All right up has four three and four middle six four and five. Down 7, 5 and five we can clearly see that middle and down will always dominate up there for we know that player A is never going to choose.
+
+32
+00:07:18,240 --> 00:07:35,360
+So that leaves us with this payoff matrix, ah, 2 by 3 payoff matrix. So let's now look at what we have for each player here this is interesting because we see down does dominate middle.
+
+33
+00:07:35,880 --> 00:07:55,240
+Ah, for up so 7 is greater than 6, 5 is greater than 4 but we have five and five as equal to each other. So which one does player A choose? Well that really depends on what player B does because if play A chooses down
+
+34
+00:07:55,920 --> 00:07:59,880
+we might see player B choose middle.
+
+35
+00:08:00,600 --> 00:08:14,440
+And we would clearly, if we're player A, we would want to have the seven as opposed to the five. So what we need to do is go in and look at it and think about what player B would do. So layer B sees
+
+36
+00:08:15,000 --> 00:08:28,760
+3 and that's 3 beats that 2 and that three beats that zero. All right so that's good. So right now we know that up dominates middle and down for player B but if you look it at up
+
+37
+00:08:29,600 --> 00:08:48,160
+here that one is dominated by the three that one is dominated by the three and the four right there. So we know that we can't choose a strategy of up because we have other strategies that dominate it.
+
+38
+00:08:48,680 --> 00:08:54,280
+All right so now let's go in and think about what else can we choose. Let's see here.
+
+39
+00:08:55,160 --> 00:08:57,120
+We are player B.
+
+40
+00:08:57,760 --> 00:09:00,480
+So let us think about this.
+
+41
+00:09:01,040 --> 00:09:11,520
+0 was dominated by the 2 and it's dominated by the 3. The 4 is dominated or dominates the 3 and dominates the 1, so let's go to a different one.
+
+42
+00:09:12,040 --> 00:09:41,640
+Does middle dominate anything always? It dominates the 0 but the three dominates the 4. The two gets dominated by the three, the three dominates the one, so we can we don't have a good solution here. So what we are ending up with is a payoff matrix in which we going to have a mixed probability and I did not mean for that to happen. And that's a lesson for more advanced class. So what I'm going to do
+
+43
+00:09:42,560 --> 00:09:46,520
+is eliminate the advanceness of this and make that a 3.
+
+44
+00:09:47,200 --> 00:09:49,480
+So by making that a 3
+
+45
+00:09:50,240 --> 00:09:55,120
+what we've done is we've said we can eliminate the middle column.
+
+46
+00:09:55,640 --> 00:10:03,160
+Okay we can eliminate the middle column, so now what we are left with is a new payoff matrix of middle/down.
+
+47
+00:10:04,680 --> 00:10:10,960
+And let's go in and add in our number 6,3 5,3 7,1
+
+48
+00:10:11,560 --> 00:10:15,960
+5 and 4, middle down player B player A.
+
+49
+00:10:16,480 --> 00:10:23,480
+And let's look at what players are going to do. In this case we can see the threes
+
+50
+00:10:24,080 --> 00:10:54,480
+are going to be equal to each other for player B. 4 is greater than the 1 so if I'm player B I am more inclined to choose down in this case because the 3s are going to equal each other but the 4 is better than 1. So let's go to player A. 6 dominates or gets dominated by 7. 5 and 5 are the same. Alright, so 5 and 5 are the same. 6 is dominated by 7.
+
+51
+00:10:55,120 --> 00:11:05,680
+So in this case we are player A we're always going to choose down because it's going to give us a better payoff and what we end up with is down down
+
+52
+00:11:06,200 --> 00:11:43,400
+as our solution in this three strategy game. So we had to make a little change in order for this to work and not get involved in a mixed game that deals with probabilities of choosing up middle or down. But here what we've done is is simplified it a little bit so that way we can see how to get rid of these dominated strategies and what we are left with is a single strategy down down for both players A and B, and we can see that they end up with payoffs of 5 to A and 4 to B. All right that is it. Hope you have enjoyed it.

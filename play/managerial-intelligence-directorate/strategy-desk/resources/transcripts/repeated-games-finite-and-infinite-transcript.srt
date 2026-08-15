@@ -1,0 +1,379 @@
+1
+00:00:00,200 --> 00:00:02,440
+Hey everyone, we are going to be looking at repeated games.
+
+2
+00:00:02,520 --> 00:00:06,400
+Now these are games that are going to be played multiple times.
+
+3
+00:00:06,560 --> 00:00:13,640
+They can be a finitely repeated game as what we're going to see right here, or they can be an infinitely repeated game.
+
+4
+00:00:13,720 --> 00:00:18,400
+Now in finitely repeated games we do have a set number of rounds.
+
+5
+00:00:18,440 --> 00:00:22,120
+It could be 1, it could be 10, it could be 100, it doesn't really matter.
+
+6
+00:00:22,200 --> 00:00:25,760
+All that we know is that the game will end definitely.
+
+7
+00:00:25,960 --> 00:00:29,240
+So let's have a look at this particular game here.
+
+8
+00:00:29,400 --> 00:00:38,680
+This is between Uber and Lyft and they can choose to invest and innovate into their companies or they can choose to maintain the status quo for Uber.
+
+9
+00:00:38,840 --> 00:00:42,120
+If they invest, they have payoffs of 6 and 4.
+
+10
+00:00:42,720 --> 00:00:46,600
+If Uber decides to maintain, they have payoffs of 7 and 5.
+
+11
+00:00:46,720 --> 00:00:49,520
+And then we get the same thing with Lyft.
+
+12
+00:00:49,600 --> 00:00:54,280
+If Lyft decides to invest, they get payoffs of 6 and 4.
+
+13
+00:00:54,440 --> 00:00:58,280
+And then if they decide to maintain, they get payoffs of 7 and 5.
+
+14
+00:00:58,400 --> 00:01:01,880
+So let's start to look at how this game is going to be played.
+
+15
+00:01:02,240 --> 00:01:13,240
+Now we know in our previous lectures we have a one shot game and we look for the payoffs that dominant strategies that are going to lead to the payoffs each player receives.
+
+16
+00:01:13,400 --> 00:01:19,080
+So one thing that we would do is we would start to look at the strategies and the payoffs of each of those.
+
+17
+00:01:19,200 --> 00:01:25,120
+And we see that the 7 is better for better than 6 for Uber, and the 5 is also better than the 4.
+
+18
+00:01:25,200 --> 00:01:29,160
+So maintaining becomes a dominant strategy for Uber.
+
+19
+00:01:29,240 --> 00:01:31,760
+Let's do the same thing for Lyft.
+
+20
+00:01:31,880 --> 00:01:36,280
+Again, 7 is better than 6 and 5 is better than 4.
+
+21
+00:01:36,480 --> 00:01:40,400
+So again, what we see is a dominant strategy to maintain.
+
+22
+00:01:40,560 --> 00:01:46,280
+That means in this one shot game, the Nash equilibrium is for both of them to maintain.
+
+23
+00:01:46,600 --> 00:01:49,800
+Now let's say that this took place 10 times.
+
+24
+00:01:49,880 --> 00:01:52,360
+So now we're going to look at a 10 round game.
+
+25
+00:01:52,480 --> 00:02:00,000
+Well, we might naturally assume that they're going to look at the combined payoffs of 5 and 5 and go, but that's only 10.
+
+26
+00:02:00,160 --> 00:02:06,240
+If we both choose to invest, then that's going to be a 6 and 6, which gives us a total of 12.
+
+27
+00:02:06,600 --> 00:02:12,880
+So there may initially be some cooperation in this repeated game of 10 rounds.
+
+28
+00:02:13,040 --> 00:02:16,360
+But what do you think each is going to do in that last round?
+
+29
+00:02:16,560 --> 00:02:26,280
+Well, naturally they're going to say, well, this is the last time that this is going to be played and I can do better than six if I were to go back to maintaining.
+
+30
+00:02:26,400 --> 00:02:31,600
+So in that regard what would take place is you would both again still maintain.
+
+31
+00:02:31,720 --> 00:02:38,000
+So you don't go to the six and six like what you would get in the previous nine rounds.
+
+32
+00:02:38,080 --> 00:02:42,760
+On the final round, you end up with the Nash equilibrium of 5 and 5.
+
+33
+00:02:42,880 --> 00:02:56,640
+So what we see in these finitely repeated games is that we end up reverting back to what the Nash equilibrium is going to be, as opposed to what the socially optimum level of payouts is going to be.
+
+34
+00:02:56,800 --> 00:02:59,120
+Now, let's look at infinitely repeated games.
+
+35
+00:02:59,200 --> 00:03:05,600
+These have no set end time, no set number of rounds are played indefinitely.
+
+36
+00:03:05,760 --> 00:03:14,840
+Now, with infinitely repeated games, we're going to look at the same type of game here, so the same payoff matrix, everything set up the same.
+
+37
+00:03:15,200 --> 00:03:22,160
+But now we're just going to say, hey, you play this as many times as you want, and there are a few different outcomes that could take place.
+
+38
+00:03:22,200 --> 00:03:24,320
+And we need to look at each of these in turn.
+
+39
+00:03:24,440 --> 00:03:26,120
+Let's start with trigger strategies.
+
+40
+00:03:26,160 --> 00:03:34,280
+These are strategies in which a repeated game where the player stops cooperating to punish another player's break with cooperation.
+
+41
+00:03:34,760 --> 00:03:48,160
+So what we might see is initially that they are going to both choose to maintain, and then if one of them decides to do something else, well, we might say, all right, hey, let's go both invest.
+
+42
+00:03:48,480 --> 00:03:53,320
+But what happens if they're both investing and then one of them decides, you know what?
+
+43
+00:03:53,440 --> 00:03:57,160
+I think I'm going to try to sneak in maintaining, well, guess what?
+
+44
+00:03:57,200 --> 00:04:00,360
+The other player then says, you know what?  We're done.
+
+45
+00:04:00,560 --> 00:04:01,560
+We're done cooperating.
+
+46
+00:04:01,600 --> 00:04:03,600
+We're just going to maintain the rest of the time.
+
+47
+00:04:03,800 --> 00:04:14,120
+And so when they maintain the rest of the time, this now means that the trigger strategy has been employed because one player deviated from the cooperation of the 6 and 6.
+
+48
+00:04:14,240 --> 00:04:17,320
+And so now you're going to be stuck at that Nash equilibrium.
+
+49
+00:04:17,360 --> 00:04:23,680
+So with trigger strategies, your initial move there is to cooperate and get to that 6 and 6.
+
+50
+00:04:23,840 --> 00:04:29,720
+But then if a player deviates from that, then you punish them almost permanently.
+
+51
+00:04:29,800 --> 00:04:32,960
+This doesn't necessarily need to be permanent.
+
+52
+00:04:33,120 --> 00:04:34,720
+It can vary.
+
+53
+00:04:34,800 --> 00:04:37,440
+That is, you might have a forgiving player.
+
+54
+00:04:37,600 --> 00:04:42,960
+They may go back to the cooperative strategy.
+
+55
+00:04:43,080 --> 00:04:59,360
+And if that's the case, that's great, because now players are doing better in a Pareto optimal outcome, but it could end up being the worst outcome if you continue to punish the player and you don't have any forgiveness in there.
+
+56
+00:04:59,960 --> 00:05:03,720
+Our next one here is going to be the grim strategy.
+
+57
+00:05:03,760 --> 00:05:08,320
+Now, this is a subset of the trigger strategy in which you're going to do the same thing here.
+
+58
+00:05:08,360 --> 00:05:13,080
+A strategy that one player can use to deter Another player from cheating on a cooperative agreement.
+
+59
+00:05:13,200 --> 00:05:18,960
+So let's look at how the grim strategy works and then we'll talk about how to solve the grim strategy.
+
+60
+00:05:19,040 --> 00:05:30,000
+So here you might initially start out with cooperation, and then one player defects and then what we have is the other player says, you know what, we're done.
+
+61
+00:05:30,120 --> 00:05:31,920
+This is going to be the outcome from now on.
+
+62
+00:05:31,960 --> 00:05:35,880
+I'm going to maintain, I'm never going to invest, and we're going to end up with these payoffs.
+
+63
+00:05:35,960 --> 00:05:37,040
+That's the grim strategy.
+
+64
+00:05:37,080 --> 00:05:41,400
+It's actually worse than the trigger strategy because here you're done.
+
+65
+00:05:41,520 --> 00:05:43,400
+There is no forgiveness in the play.
+
+66
+00:05:43,480 --> 00:05:45,120
+You say, this is what's going to happen.
+
+67
+00:05:45,240 --> 00:05:47,560
+We're not going to deviate, we're not going to go back.
+
+68
+00:05:47,720 --> 00:05:53,840
+So it's a little bit more grim than what the trigger strategy is.
+
+69
+00:05:54,000 --> 00:05:59,280
+So in that regard, the grim strategy is much more strict.
+
+70
+00:05:59,600 --> 00:06:08,560
+Now, the way that you might could solve the grim strategy problem is to announce at the start of the play, this is the grim strategy.
+
+71
+00:06:08,600 --> 00:06:10,320
+This is what we're going to do if you deviate.
+
+72
+00:06:10,480 --> 00:06:16,880
+And that may then get the other player to always cooperate and get the better payoffs.
+
+73
+00:06:17,200 --> 00:06:20,720
+Now, the last one that we have here is the tit for tat strategy.
+
+74
+00:06:20,840 --> 00:06:33,040
+With the tit for tat strategy, we are going to begin by cooperating and then we're going to look at what the other player does and we are going to just replicate what they do.
+
+75
+00:06:33,200 --> 00:06:45,320
+So if we start with cooperating six and six and then one player deviates in the second round, then the next player is going to deviate in the third round.
+
+76
+00:06:45,360 --> 00:06:47,040
+They just copy what happens.
+
+77
+00:06:47,200 --> 00:06:48,480
+So they copy what happens.
+
+78
+00:06:48,520 --> 00:06:54,200
+Now, the nice thing about the tit for tat strategy is that we do start with cooperation.
+
+79
+00:06:54,240 --> 00:06:59,040
+We do retaliate, but we're much more forgiving in subsequent rounds.
+
+80
+00:06:59,200 --> 00:07:03,640
+So after the first retaliation, you probably say, okay, okay, we've had enough.
+
+81
+00:07:03,680 --> 00:07:06,520
+Let's go back to what we were doing when we were cooperating.
+
+82
+00:07:06,560 --> 00:07:16,080
+So the punishment strategy here isn't as strict as the trigger and definitely nowhere near as strict as the grim trigger strategy.
+
+83
+00:07:16,120 --> 00:07:27,120
+So what's going to end up happening is with the tit for tat strategy, you're going to move back to that social, that social or Pareto outcome of where they're both investing.
+
+84
+00:07:27,800 --> 00:07:34,720
+So that's where we end up with we start cooperating, we have a little bit of deviation in some of the rounds, and then we move back to cooperating.
+
+85
+00:07:34,840 --> 00:07:37,760
+Now, one last thing that we want to talk about is the discount factor.
+
+86
+00:07:37,800 --> 00:07:45,400
+When you look at infinitely repeated games, we're having these players who are basing things on a discount factor.
+
+87
+00:07:45,480 --> 00:07:49,600
+Higher discount factors lead to a higher valuation on future payouts.
+
+88
+00:07:49,640 --> 00:08:08,400
+So what this essentially means is if these players have high discount factors or their discount rates are high, that is, let's say, if you recall discount rates from present value, they can range anywhere from 0 to 1 and any probability in between, or any, excuse me, any interest rate in between.
+
+89
+00:08:09,000 --> 00:08:17,320
+And that interest rate, the higher it gets, the more you place value on the future payout, then you do the present payout.
+
+90
+00:08:17,360 --> 00:08:25,560
+So typically, what we're going to see with these high discount factors, people are going to be looking at what is going to be the final outcome.
+
+91
+00:08:25,600 --> 00:08:34,000
+And I'm going to place more weight on that final outcome than I will, you know, the next round or the next round after that, or something like that.
+
+92
+00:08:34,120 --> 00:08:42,880
+So that could easily work in conjunction with that tit for tat strategy, because you're thinking, who really cares if I get, you know, the seven just for that one round?
+
+93
+00:08:42,960 --> 00:08:47,480
+What I really care about is the ultimate payoff in which we're all better off in that regard.
+
+94
+00:08:47,640 --> 00:08:51,320
+All right, so that is it for our repeated games.
+
+95
+00:08:51,480 --> 00:08:53,200
+Hope you've enjoyed it, and we'll catch you in our next one.

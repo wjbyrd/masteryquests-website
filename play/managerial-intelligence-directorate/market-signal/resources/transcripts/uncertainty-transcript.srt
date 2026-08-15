@@ -1,0 +1,135 @@
+1
+00:00:00,000 --> 00:00:12,240
+Hey everyone! It's that time, or is it that time? I'm not quite sure. Maybe it's an uncertain time. If so, we need to figure out a way to help us navigate this uncertain time.
+
+2
+00:00:13,240 --> 00:00:19,560
+Just what is uncertainty? Quite simply, it's a state where outcomes are unknown.
+
+3
+00:00:20,160 --> 00:00:47,480
+I have this life we don't always have a good handle on how things will play out we may have an idea figuring out exact outcome is difficult how might we go about reducing the level on certain we have in making less risky decisions simple enough right attack probability random variables water random variables those are just values that we assign to whatever we are considered.
+
+4
+00:00:48,000 --> 00:01:05,680
+Simple enough right? Attach probabilities to random variables? Umm…but what are random variables? Those are just values that we assign to whatever we are considering? For example, you want to invest in the stock market and you pick an ETF that you think will do well. You're not quite sure of the gains, but maybe you assign values of $100, $200, and $500 over the course of a month
+
+5
+00:01:06,200 --> 00:01:11,040
+Naturally, since you don't know the outcome, you'd assign a probability to each value.
+
+6
+00:01:11,720 --> 00:01:15,320
+Ultimately what you're doing will look something like this.
+
+7
+00:01:16,360 --> 00:01:31,480
+This says that the expected value (or average outcome) is equal to a set of probabilities times their assigned random variables with the assumption that the summation of all probabilities does not go over one.
+
+8
+00:01:32,040 --> 00:01:58,520
+Let's say we take the values of $100, $200, and $500 from our ETF example and attach probabilities to them to see the expected value of our investment. Suppose we have probabilities of 0.5, 0.4 and 0.1 assigned to $100, $200, and $500.
+
+9
+00:01:59,280 --> 00:02:17,920
+Then our expected value is $180. This is useful to us because we can see that we are more likely to earn $100 to $200. If we add in costs associated with this investment, then our numbers change once more.
+
+10
+00:02:19,200 --> 00:02:23,120
+Let's look at an example where the probabilities are known.
+
+11
+00:02:23,960 --> 00:02:29,640
+Here we have a pair of dice. Each die has is assumed to be fair, that is they are not loaded.
+
+12
+00:02:30,440 --> 00:02:35,760
+What is the probability of rolling one die and landing on any number?
+
+13
+00:02:37,120 --> 00:02:48,160
+It's simply the roll of the die divided by the number of sides or you have a 16.7% chance of landing on any number 1 through 6.
+
+14
+00:02:49,000 --> 00:03:01,320
+Now, what is the probability of rolling both die and landing on any number? This one is a bit more involved because there are numerous ways to land on the same number.
+
+15
+00:03:02,000 --> 00:03:22,720
+This table summarizes each number combination by what each die can land on. The number 7 has the most possibilities at 6, whereas 2 and 12 have the least possibilities with 1 each. 7 has the highest probability of landing and 2 and 12 have the lowest probability of landing.
+
+16
+00:03:23,720 --> 00:03:38,360
+Let's say you are shooting dice with friends. You place a bet of $20 to land on 7 with a 1.5 to 1 payout (meaning you'll get $30 if you roll a 7). What is the expected value of the bet?
+
+17
+00:03:38,880 --> 00:04:04,000
+We've place each corresponding probability with the payout or loss. We end up with an expected value of -$11.67. We may get lucky and roll a 7 20 times in a row, but if we were to keep playing the Law of Large numbers would dictate that we always revert to that expected value. This is why the house always wins.
+
+18
+00:04:07,200 --> 00:04:09,400
+Here's another more complicated example.
+
+19
+00:04:10,320 --> 00:04:31,280
+The Wheel of Fortune is a popular TV show, and contestants spin the wheel to accumulate the highest purse and prizes. There are 24 slices of this wheel giving each a 4.17% share of the wheel. Of course, there are areas that cause you to lose your winnings or your turn.
+
+20
+00:04:31,840 --> 00:04:35,320
+If we break the wheel down by sections we get the following
+
+21
+00:04:36,080 --> 00:04:42,760
+Here we can see that the lower values and the Bankrupt areas have the highest probabilities to be landed on.
+
+22
+00:04:43,360 --> 00:05:01,040
+Winning a million dollars has the smallest probability. Because of the complexity of the wheel, that is calculating free plays, losing a turn, did I get the pegs on the wheel right, how much is the wild worth et cetera, we'll leave it here.
+
+23
+00:05:01,720 --> 00:05:08,720
+But for illustrative purposes, we can see how random variables are affected by the probability of landing on them.
+
+24
+00:05:10,160 --> 00:05:16,800
+What do we do with this information or lack of information? Uncertainty is well the lack of certainty.
+
+25
+00:05:17,480 --> 00:05:21,680
+We need to remedy this by making more outcomes certain.
+
+26
+00:05:22,200 --> 00:05:23,960
+There are a few things that we can do.
+
+27
+00:05:24,960 --> 00:05:35,800
+Gather as much information as you can. This reduces the amount of uncertainty that exists as it allows you to better understand the probabilities of associated random variables.
+
+28
+00:05:36,520 --> 00:06:02,720
+From there, determine probabilities of success and failure. A probability of failure is the leftover probability of success. We may estimate these based on past experience (remember the gathering of information) or based on market simulations. The latter are useful as they allow you to change probabilities and get different expected values based on those assigned parameters.
+
+29
+00:06:03,320 --> 00:06:10,640
+In the end, we proceed with a project is the expected return is greater than the expected loss.
+
+30
+00:06:12,000 --> 00:06:18,640
+Let's conclude with this example. A firm has raised enough capital to proceed with two projects
+
+31
+00:06:19,160 --> 00:06:22,440
+It can invest $800,000 into either one.
+
+32
+00:06:23,120 --> 00:06:36,480
+Based on prior experience, project 1 will succeed with 0.60 probability in which case it triples in value. If project 1 fails, it can be scrapped for $400,000.
+
+33
+00:06:37,000 --> 00:06:44,640
+Project 2 has a probability of success of 0.80 in which case it returns two times the initial investment
+
+34
+00:06:45,200 --> 00:06:49,760
+If project 2 fails, it can be scrapped for $500,000. The first line for each project yields the successful return.

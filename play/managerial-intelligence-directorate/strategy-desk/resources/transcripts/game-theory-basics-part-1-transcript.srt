@@ -1,0 +1,275 @@
+1
+00:00:00,560 --> 00:00:07,760
+Hey, everyone.  We are going to be taking a look at game theory basics, where we introduce you to the principles of game theory and how to solve some simple games.
+
+2
+00:00:08,000 --> 00:00:09,600
+Let's go ahead and jump into it.
+
+3
+00:00:10,720 --> 00:00:14,840
+To start with game theory, what we need to do is introduce the elements of a game.
+
+4
+00:00:14,840 --> 00:00:16,320
+So we're going to start with two players.
+
+5
+00:00:16,560 --> 00:00:19,200
+That makes it the simplest type of game to work with.
+
+6
+00:00:19,600 --> 00:00:24,080
+We could expand that to more than two players, but that makes the game a lot more complex.
+
+7
+00:00:24,480 --> 00:00:26,560
+So we stick with two players to begin with.
+
+8
+00:00:26,800 --> 00:00:30,560
+Now, these two players have to have strategies inside of this game.
+
+9
+00:00:30,560 --> 00:00:35,680
+Typically, we're going going to look at very simple games which just involve two strategies.
+
+10
+00:00:35,840 --> 00:00:40,400
+We could go three, four, and beyond with our strategies, but we're going to stick with just two.
+
+11
+00:00:40,640 --> 00:00:45,040
+So this could be price high, price low, go left, go right, those kind of things.
+
+12
+00:00:45,280 --> 00:00:47,360
+Those are strategies for the players.
+
+13
+00:00:47,360 --> 00:00:52,880
+They're going to choose one of those two options to get what we want and which is the payoff.
+
+14
+00:00:52,960 --> 00:01:02,000
+The payoff is going to be what the players are competing for, that is the reward that they get, the profit that they get, or the loss that they try to minimize.
+
+15
+00:01:02,240 --> 00:01:08,280
+So these are the elements in inside of a basic game that we're going to be looking at in economics.
+
+16
+00:01:08,440 --> 00:01:14,280
+Now, to use these elements, what we have to do is introduce the payoff matrix.
+
+17
+00:01:14,280 --> 00:01:20,600
+The payoff matrix combines the players, the strategies and the payoffs for a particular game.
+
+18
+00:01:20,680 --> 00:01:24,040
+So here we have Player 1, Player 2, Blue man, and red man.
+
+19
+00:01:24,440 --> 00:01:30,200
+And they are looking at strategies of raising price or lowering price.
+
+20
+00:01:30,680 --> 00:01:38,960
+So player one, they look at raise price, and player two, they could choose raise price or lower price.
+
+21
+00:01:38,960 --> 00:01:53,320
+So if player one gets locked in at raise price, what we see is that they have payoffs of A and C. If player one chooses to lower price, they get payoffs of E and G. So player two is a little bit different.
+
+22
+00:01:53,400 --> 00:01:59,040
+Now, player two goes from raise price on the left side to lower price on the right side.
+
+23
+00:01:59,040 --> 00:02:18,560
+So if they choose from raise price, their payoffs are B and F. And if they choose lower price, then their payoffs are D and H. Now, when both of these players commit to a strategy, so let's say they both choose to lower price, we get the set of strategies that gives us the payoff for these players.
+
+24
+00:02:18,960 --> 00:02:22,320
+So in this case, both players choose to lower price.
+
+25
+00:02:22,560 --> 00:02:35,240
+Player one gets G and player two gets H. Now, if these players could cooperate, that is, if this is the real life, these are firms and they would be engaging in collusion.
+
+26
+00:02:35,240 --> 00:02:37,880
+We know in the United States, collusion Is illegal.
+
+27
+00:02:37,880 --> 00:02:40,040
+We have laws against collusion.
+
+28
+00:02:40,520 --> 00:02:44,920
+So in most games that we deal with, we have non cooperative outcomes.
+
+29
+00:02:45,000 --> 00:02:52,840
+Now, in some cases, you could have cooperation take place either tacitly or overtly.
+
+30
+00:02:52,840 --> 00:02:57,560
+So these players could cooperate to get the desired payoff that they want.
+
+31
+00:02:57,640 --> 00:03:02,040
+But in a lot of cases that we're going to deal with, they don't have the ability to cooperate.
+
+32
+00:03:02,200 --> 00:03:05,080
+And that creates some suboptimal solutions.
+
+33
+00:03:05,800 --> 00:03:11,640
+So let's look at an actual game and some numbers in here and try to figure out what these players are going to do.
+
+34
+00:03:11,640 --> 00:03:14,520
+So here we start with raise price.  And raise price.
+
+35
+00:03:14,520 --> 00:03:17,240
+We see the payoff to both of these players is 10.
+
+36
+00:03:17,560 --> 00:03:25,920
+If we choose lower price for player 1 and raise price for player 2, then player 1 gets 18 and player 2 only gets 2.
+
+37
+00:03:26,480 --> 00:03:34,320
+If player 1 goes raise price and player 2 goes lower price, then player 1 only gets 2 and player 2 gets 18.
+
+38
+00:03:34,720 --> 00:03:40,320
+And then lastly, if they both choose to lower price, we see that each gets 11.
+
+39
+00:03:40,800 --> 00:03:48,640
+So now that we have some numbers that we can sink our teeth into, what we need to do is figure out which strategy each is going to go for.
+
+40
+00:03:48,960 --> 00:03:55,480
+So the easiest way to do that is to compare the payoffs on for player one, we're just going to start with player one.
+
+41
+00:03:55,720 --> 00:03:58,200
+So we compared the payoffs that they could receive.
+
+42
+00:03:58,200 --> 00:04:04,680
+So 10 and 2 for raising price versus 18 and 11 for lowering price.
+
+43
+00:04:05,000 --> 00:04:09,600
+What we see is that the 18 and 11 are much better than the 10 and 2.
+
+44
+00:04:09,600 --> 00:04:12,280
+This is always going to be the case if these are positive numbers.
+
+45
+00:04:12,600 --> 00:04:15,560
+And so what we want to do is put little stars right there.
+
+46
+00:04:15,560 --> 00:04:19,840
+That lets us know that this is the strategy that player one wants to go with.
+
+47
+00:04:19,840 --> 00:04:22,520
+This is in fact what we call a dominant strategy.
+
+48
+00:04:22,520 --> 00:04:30,880
+It doesn't matter what player 2 chooses to do, player 1 is always better off choosing to lower price.  Okay?
+
+49
+00:04:30,880 --> 00:04:41,960
+So regardless of what the other player decides their strategy is going to be, the dominant strategy is going to be the one that is the best for player one all the time.
+
+50
+00:04:42,680 --> 00:04:44,680
+Let's do the same thing for player two.
+
+51
+00:04:44,840 --> 00:04:50,600
+We compare the 10 to the 18 here and here and the two to the 11th.
+
+52
+00:04:51,040 --> 00:04:52,600
+So we see again, player two.
+
+53
+00:04:52,600 --> 00:04:55,840
+The 18 and 11 are better than the 10 and the two.
+
+54
+00:04:56,080 --> 00:04:57,440
+So we put little stars there.
+
+55
+00:04:57,440 --> 00:05:00,800
+Now notice we have one cell that has double stars.
+
+56
+00:05:01,200 --> 00:05:05,120
+This lets us know that this is going to be the outcome of the game.
+
+57
+00:05:05,360 --> 00:05:08,400
+Player two had a dominant strategy as well in lower price.
+
+58
+00:05:08,400 --> 00:05:11,280
+Player one had the dominant strategy in lower price two.
+
+59
+00:05:11,600 --> 00:05:19,600
+So what we see here is both of these players are going to choose lower price and it creates the dominant strategy or the equilibrium for the game.
+
+60
+00:05:20,520 --> 00:05:24,920
+So in this case 11 goes to player one and the other 11 goes to player two.
+
+61
+00:05:24,920 --> 00:05:38,840
+Now if you look at the other sales compare those payoffs or combined payoffs from the other sales what you see is that the combined payoffs from those is only 20 versus the combined payoff from the set of strategies.
+
+62
+00:05:38,840 --> 00:05:40,680
+That's the actual equilibrium of the game.
+
+63
+00:05:41,480 --> 00:05:45,560
+So what we see here is that this is actually the Pareto optimal solution.
+
+64
+00:05:46,200 --> 00:05:52,520
+That is both players are going to choose the solution that is the societal best outcome.
+
+65
+00:05:52,840 --> 00:05:55,040
+In this particular case they can't do any better.
+
+66
+00:05:55,040 --> 00:06:00,600
+In fact they make themselves worse off if they move to a different strategy.
+
+67
+00:06:00,600 --> 00:06:06,520
+So in this case not only do we find the equilibrium but we find the Pareto optimal equilibrium as well.
+
+68
+00:06:06,520 --> 00:06:09,120
+All right, so that's it for our game theory basics.  Part one.
+
+69
+00:06:09,120 --> 00:06:11,240
+We're going to catch you in part two.  Hope you've enjoyed it.
