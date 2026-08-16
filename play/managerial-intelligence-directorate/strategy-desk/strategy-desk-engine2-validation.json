@@ -1,0 +1,234 @@
+{
+  "game": "The Strategy Desk",
+  "build": "2026.08.16-engine2",
+  "modePreflights": {
+    "standard": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "timed": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "exam": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "quiz": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "unlimited": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "legendary": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "score": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "trialGraph": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "fadingFortune": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "riskReward": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    }
+  },
+  "inventories": {
+    "trialGraph": 24,
+    "trialTargets": [
+      10,
+      15,
+      20
+    ],
+    "fading": 240,
+    "fadingTargets": [
+      10,
+      15,
+      20
+    ],
+    "risk": 420,
+    "riskTargets": [
+      10,
+      15,
+      20
+    ],
+    "repair": 78,
+    "bridge": 78,
+    "trialDeck10": 10,
+    "fadingDeck10": 10,
+    "riskDeck10": 10,
+    "trialDeck15": 15,
+    "fadingDeck15": 15,
+    "riskDeck15": 15,
+    "trialDeck20": 20,
+    "fadingDeck20": 20,
+    "riskDeck20": 20
+  },
+  "remediationAliasRouting": {
+    "total": 90,
+    "correct": 90,
+    "samples": [
+      {
+        "id": 31,
+        "objective": "LO14.2",
+        "primary": "damaged_goods_metering",
+        "repair": "damaged_goods_metering",
+        "resolved": "versioning_and_metering"
+      },
+      {
+        "id": 32,
+        "objective": "LO14.2",
+        "primary": "damaged_goods_metering",
+        "repair": "damaged_goods_metering",
+        "resolved": "versioning_and_metering"
+      },
+      {
+        "id": 35,
+        "objective": "LO14.3",
+        "primary": "self_selection",
+        "repair": "self_selection",
+        "resolved": "consumer_surplus_extraction"
+      },
+      {
+        "id": 36,
+        "objective": "LO14.3",
+        "primary": "self_selection",
+        "repair": "self_selection",
+        "resolved": "consumer_surplus_extraction"
+      },
+      {
+        "id": 68,
+        "objective": "LO15.4",
+        "primary": "game_design",
+        "repair": "game_design",
+        "resolved": "strategic_rule_design"
+      },
+      {
+        "id": 73,
+        "objective": "LO15.4",
+        "primary": "game_design",
+        "repair": "game_design",
+        "resolved": "strategic_rule_design"
+      },
+      {
+        "id": 74,
+        "objective": "LO15.4",
+        "primary": "game_design",
+        "repair": "game_design",
+        "resolved": "strategic_rule_design"
+      },
+      {
+        "id": 120,
+        "objective": "LO13.3",
+        "primary": "arbitrage_prevention",
+        "repair": "arbitrage_prevention",
+        "resolved": "arbitrage_control"
+      }
+    ]
+  },
+  "hubCompatibility": {
+    "active": {
+      "deskStarted": "true",
+      "deskStatus": "contested",
+      "deskRoom": "7",
+      "aliasStarted": "true",
+      "aliasStatus": "contested",
+      "aliasRoom": "7"
+    },
+    "done": {
+      "deskStatus": "restored",
+      "deskRoom": "30",
+      "aliasComplete": "true",
+      "aliasStatus": "restored",
+      "aliasRoom": "30"
+    }
+  },
+  "saveModeGuard": {
+    "loaded": false,
+    "keyStillThere": false,
+    "mode": "standard",
+    "room": 7
+  },
+  "resourceRoutingSamples": {
+    "lo153": [
+      "cTihbinl3x9",
+      "c06OqtVEz9r",
+      "cTheY1nQ0CK"
+    ],
+    "lo134": [
+      "cThbbQn6h3l",
+      "cT1qFDnXkEW",
+      "chapter-13-lecture-slides"
+    ]
+  },
+  "legendaryBossDiversificationSample": [
+    {
+      "objective": "LO6.2",
+      "ids": [
+        9103,
+        9104,
+        9105
+      ]
+    },
+    {
+      "objective": "LO13.4",
+      "ids": [
+        9142,
+        9143,
+        9144
+      ]
+    },
+    {
+      "objective": "LO16.2",
+      "ids": [
+        9175,
+        9176,
+        9177
+      ]
+    }
+  ],
+  "publishedAnswerHashVerification": {
+    "records": 763,
+    "badCount": 0
+  },
+  "staticChecks": {
+    "newModeImages": {
+      "quiz": "mode_quiz.webp",
+      "unlimited": "mode_unlimited.webp",
+      "trialGraph": "mode_graph.webp",
+      "fadingFortune": "mode_fading.webp",
+      "riskReward": "mode_risk.webp"
+    },
+    "questionBankChanged": false,
+    "instructionalResourcesChanged": false,
+    "scoreAttackPerfectScore": 11590,
+    "strategyObjectiveCount": 26,
+    "instructionalResourceObjectiveCount": 26,
+    "unmappedInstructionalObjectives": 0,
+    "ordinaryTrialByGraphCandidates": 24,
+    "allAuditedGraphLinkedQuestions": 37,
+    "fadingFortuneEligibleQuestions": 240,
+    "riskRewardEligibleQuestions": 420
+  },
+  "htmlSha256": "ca73c5612d066197bd211b676ceb46b518705388e95a254f41d94ab4e0458171"
+}

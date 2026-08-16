@@ -1,0 +1,297 @@
+{
+  "game": "The Agency Protocol",
+  "build": "2026.08.16-engine2",
+  "visibleModes": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "unlimited",
+    "legendary",
+    "score",
+    "fadingFortune",
+    "riskReward"
+  ],
+  "trialByGraph": {
+    "enabled": false,
+    "reason": "The published Agency Protocol bank contains no graph/image questions.",
+    "candidateCount": 0
+  },
+  "modePreflights": {
+    "standard": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "timed": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "exam": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "quiz": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "unlimited": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "legendary": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "score": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "fadingFortune": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    },
+    "riskReward": {
+      "ok": true,
+      "issues": [],
+      "issueCount": 0
+    }
+  },
+  "runtimeModeLaunches": {
+    "standard": {
+      "gameMode": "standard",
+      "hasQuestion": true,
+      "questionId": 24,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "timed": {
+      "gameMode": "timed",
+      "hasQuestion": true,
+      "questionId": 20,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "exam": {
+      "gameMode": "exam",
+      "hasQuestion": true,
+      "questionId": 38,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "quiz": {
+      "gameMode": "quiz",
+      "hasQuestion": true,
+      "questionId": 2,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "unlimited": {
+      "gameMode": "unlimited",
+      "hasQuestion": true,
+      "questionId": 23,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "legendary": {
+      "gameMode": "legendary",
+      "hasQuestion": true,
+      "questionId": 9072,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "score": {
+      "gameMode": "score",
+      "hasQuestion": true,
+      "questionId": 11,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "fadingFortune": {
+      "gameMode": "fadingFortune",
+      "hasQuestion": true,
+      "questionId": 37,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 10,
+      "riskDeck": 0,
+      "riskRevealed": false
+    },
+    "riskReward": {
+      "gameMode": "riskReward",
+      "hasQuestion": true,
+      "questionId": 38,
+      "answers": 4,
+      "runEnding": false,
+      "quizCompleted": 0,
+      "fadingDeck": 0,
+      "riskDeck": 10,
+      "riskRevealed": false
+    }
+  },
+  "fixedModeInventories": {
+    "fading": 269,
+    "risk": 269,
+    "fading10": 10,
+    "fading15": 15,
+    "fading20": 20,
+    "risk10": 10,
+    "risk15": 15,
+    "risk20": 20
+  },
+  "hubCompatibility": {
+    "active": {
+      "managerialHub_agency_started": "true",
+      "managerialHub_agency_status": "contested",
+      "managerialHub_agency_room": "7",
+      "managerialHub_agencyProtocol_started": "true",
+      "managerialHub_agencyProtocol_status": "contested",
+      "managerialHub_agencyProtocol_room": "7"
+    },
+    "complete": {
+      "managerialHub_agency_complete": "true",
+      "managerialHub_agency_status": "restored",
+      "managerialHub_agency_room": "30",
+      "managerialHub_agencyProtocol_complete": "true",
+      "managerialHub_agencyProtocol_status": "restored",
+      "managerialHub_agencyProtocol_room": "30"
+    }
+  },
+  "saveModeGuard": {
+    "loaded": false,
+    "stillExists": false
+  },
+  "remediationAliasSamples": [
+    [
+      "risk_transfer_and_pooling",
+      "insurance"
+    ],
+    [
+      "hidden_information_before_contract",
+      "adverse_selection"
+    ],
+    [
+      "metric_gaming_and_unintended_responses",
+      "gaming"
+    ],
+    [
+      "transfer_pricing_internal_trade",
+      "transfer_pricing"
+    ]
+  ],
+  "interactionTests": {
+    "quiz": {
+      "runEnding": true,
+      "gameMode": "quiz",
+      "totalAttempts": 1,
+      "correctAnswers": 1,
+      "quizQuestionsCompleted": 1,
+      "target": 1,
+      "hasReport": true
+    },
+    "riskBust": {
+      "runEnding": true,
+      "bankroll": 0,
+      "busted": true,
+      "completed": 1,
+      "totalAttempts": 1,
+      "correctAnswers": 0
+    },
+    "riskBustReport": {
+      "mode": "Risk & Reward",
+      "accuracy": 0,
+      "evidence": "Limited Evidence",
+      "finalBankroll": 0
+    },
+    "unlimitedBefore": {
+      "runEnding": false,
+      "gameMode": "unlimited",
+      "totalAttempts": 0
+    },
+    "unlimitedAfter": {
+      "runEnding": true,
+      "gameMode": "unlimited",
+      "totalAttempts": 0
+    },
+    "unlimitedReport": {
+      "mode": "Unlimited Practice",
+      "evidence": "Limited Evidence",
+      "attempts": 0
+    },
+    "boss10": {
+      "room": 10,
+      "bossHealth": 3,
+      "ledgerUnlocked": "true",
+      "runEnding": false
+    }
+  },
+  "publishedBank": {
+    "primaryAndBossQuestions": 456,
+    "repairQuestions": 44,
+    "bridgeQuestions": 44,
+    "totalAuthoredRecords": 544,
+    "answerHashesVerified": 544,
+    "invalidAnswerHashes": 0,
+    "ordinaryPracticeQuestions": 269,
+    "imageBearingQuestions": 0,
+    "repairSkills": 22,
+    "bridgeSkills": 22
+  },
+  "instructionalResources": {
+    "chapters": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "resourceCount": 17,
+    "objectiveMappings": 23,
+    "bankObjectiveCount": 23,
+    "unmappedBankObjectives": 0
+  },
+  "newModeArtwork": {
+    "quiz": "mode_quiz.webp",
+    "unlimited": "mode_unlimited.webp",
+    "fadingFortune": "mode_fading.webp",
+    "riskReward": "mode_risk.webp"
+  },
+  "questionBankChanged": false,
+  "instructionalResourcesChanged": false,
+  "htmlSha256": "7abb06d743f52ede6d90730dc6cb02daaf2b9cade4dd14986a2704bc85fcdc49"
+}
