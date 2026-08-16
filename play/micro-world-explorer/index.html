@@ -1780,16 +1780,8 @@ artifacts: [
     Object.keys(games).forEach(key => {
       const game = games[key];
 
+      // Sealed/coming-soon worlds do not participate in active hub-save sync yet.
       if(game.available === false){
-        statusElement.innerText = "Coming Soon";
-        statusElement.dataset.realmState = "unstable";
-        if(card){ card.classList.add("locked"); }
-        const enterButton = card ? card.querySelector(".enter-btn") : null;
-        if(enterButton){
-          enterButton.disabled = true;
-          enterButton.setAttribute("aria-disabled", "true");
-          enterButton.innerText = "Coming Soon";
-        }
         return;
       }
 
@@ -1852,6 +1844,22 @@ artifacts: [
       if(!statusElement) return;
 
       const game = games[key];
+
+      // Coming-soon worlds remain visibly sealed regardless of any stale localStorage.
+      if(game.available === false){
+        statusElement.innerText = "Coming Soon";
+        statusElement.dataset.realmState = "unstable";
+        if(card){ card.classList.add("locked"); }
+
+        const enterButton = card ? card.querySelector(".enter-btn") : null;
+        if(enterButton){
+          enterButton.disabled = true;
+          enterButton.setAttribute("aria-disabled", "true");
+          enterButton.innerText = "Coming Soon";
+        }
+        return;
+      }
+
       const completed = getStorageFlag(game.statusKey);
       const started = getStorageFlag(game.startedKey);
       const room = localStorage.getItem(game.roomKey);
@@ -2191,7 +2199,7 @@ function selectGame(gameKey){
       started: true,
       completed: getStorageFlag(games[gameKey].statusKey),
       room: localStorage.getItem(games[gameKey].roomKey),
-      logMessage: `${games[gameKey].title} opened from the Micro Test Prep hub.`
+      logMessage: `${games[gameKey].title} opened from the Micro World Explorer hub.`
     });
     updateGameStatuses();
 
