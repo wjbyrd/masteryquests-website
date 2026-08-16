@@ -3513,9 +3513,14 @@ const FACULTY_COMPOSITION_CONFIG = {
     supportedModes: ["standard","timed","exam","quiz","unlimited","legendary","score","fadingFortune","riskReward"],
     fadingFortune: { allowedTargets:[10,15,20], intervals:{easy:8000,medium:10000,hard:12000,elite:15000,legendary:18000} },
     riskReward: { startingBankroll:1000, wagerOptions:[{label:"10%",ratio:0.10},{label:"25%",ratio:0.25},{label:"50%",ratio:0.50},{label:"ALL IN",ratio:1.00}], allowedTargets:[10,15,20] },
+    limitedRunSampling: {
+        quiz: {strategy:"balanced"},
+        fadingFortune: {strategy:"adaptive"},
+        riskReward: {strategy:"adaptive"}
+    },
     saveKeyNamespace: "agencyProtocol",
     libraryVersion: "managerial-v2",
-    compositionFingerprint: "agency-protocol-engine-upgrade-20260816"
+    compositionFingerprint: "agency-protocol-limited-adaptive-20260816"
 };
 const STORAGE_PREFIX = "agencyProtocol";
 const PLAYER_KEY = "agencyProtocolUser";
@@ -12564,6 +12569,691 @@ document.addEventListener("visibilitychange",function(){
     if(document.hidden) pauseFadingFortune("visibility");
     else { resumeFadingFortune("visibility"); reconcileTimedModeClock(); }
 });
+
+
+
+// =============================================================
+// AGENCY PROTOCOL LIMITED-RUN SAMPLING STANDARD — 2026-08-16
+//
+// FULL-EVIDENCE MODES — UNCHANGED:
+//   Standard / Timed / Exam / Unlimited / Legendary / Score Attack
+//
+// QUIZ:
+//   Balanced sampling only. No weakness chasing. No remediation.
+//
+// LIMITED-RUN ADAPTIVE MODES:
+//   Fading Fortune / Risk & Reward
+//   Unknown -> Calibration -> Investigation
+//   No repair/bridge detours.
+//
+// Trial by Graph remains disabled in Agency Protocol because
+// the published bank contains no graph/image questions.
+// =============================================================
+const AGENCY_LIMITED_RUN_MODES = new Set(["quiz","fadingFortune","riskReward"]);
+const AGENCY_LIMITED_RUN_ADAPTIVE_MODES = new Set(["fadingFortune","riskReward"]);
+
+function modeUsesLimitedRunSampling(mode = gameMode){
+    return AGENCY_LIMITED_RUN_MODES.has(String(mode || ""));
+}
+
+function modeUsesLimitedRunAdaptiveSampling(mode = gameMode){
+    const configured = FACULTY_COMPOSITION_CONFIG.limitedRunSampling?.[mode]?.strategy;
+    if(configured === "balanced") return false;
+    if(configured === "adaptive") return true;
+    return AGENCY_LIMITED_RUN_ADAPTIVE_MODES.has(String(mode || ""));
+}
+
+function getLimitedRunQuestionId(question){
+    return String(question?.id ?? question?.questionId ?? question?.canonicalId ?? "");
+}
+
+function getLimitedRunCandidates(mode){
+    if(mode === "fadingFortune") return getFadingFortuneCandidates();
+    if(mode === "riskReward") return getRiskRewardCandidates();
+    return [];
+}
+
+function getLimitedRunDeck(mode){
+    if(mode === "fadingFortune") return fadingFortuneDeck;
+    if(mode === "riskReward") return riskRewardDeck;
+    return [];
+}
+
+function getLimitedRunDeckIndex(mode){
+    if(mode === "fadingFortune") return fadingFortuneDeckIndex;
+    if(mode === "riskReward") return riskRewardDeckIndex;
+    return 0;
+}
+
+function getLimitedRunTarget(mode){
+    if(mode === "fadingFortune") return fadingFortuneQuestionTarget;
+    if(mode === "riskReward") return riskRewardQuestionTarget;
+    if(mode === "quiz") return normalizeQuizQuestionTarget(quizQuestionTarget);
+    return 0;
+}
+
+function getLimitedRunCompleted(mode){
+    if(mode === "fadingFortune") return fadingFortuneQuestionsCompleted;
+    if(mode === "riskReward") return riskRewardQuestionsCompleted;
+    if(mode === "quiz") return quizQuestionsCompleted;
+    return 0;
+}
+
+function getLimitedRunCalibrationCount(target){
+    const count = Math.max(1, Number(target) || 1);
+    if(count <= 5) return Math.min(count, 3);
+    if(count <= 10) return 4;
+    if(count <= 15) return 5;
+    return 6;
+}
+
+function getLimitedRunSelectionPhase(mode, completed = getLimitedRunCompleted(mode), target = getLimitedRunTarget(mode)){
+    if(mode === "quiz") return "quiz-balanced";
+    return completed < getLimitedRunCalibrationCount(target)
+        ? "limited-calibration"
+        : "limited-investigate";
+}
+
+function getLimitedRunDifficultyPlan(target){
+    const count = Math.max(1, Number(target) || 1);
+    const quotas = count >= 20
+        ? {easy:5, medium:5, hard:4, elite:3, legendary:3}
+        : count >= 15
+            ? {easy:4, medium:4, hard:3, elite:2, legendary:2}
+            : {easy:3, medium:3, hard:2, elite:1, legendary:1};
+
+    const plan = [];
+    ["easy","medium","hard","elite","legendary"].forEach(pool => {
+        for(let i = 0; i < (quotas[pool] || 0); i++) plan.push(pool);
+    });
+
+    while(plan.length < count){
+        plan.push(["easy","medium","hard"][plan.length % 3]);
+    }
+
+    return plan.slice(0, count);
+}
+
+function getLimitedRunPlannedDifficulty(mode){
+    const target = getLimitedRunTarget(mode);
+    const completed = getLimitedRunCompleted(mode);
+    const plan = getLimitedRunDifficultyPlan(target);
+    return plan[Math.min(completed, Math.max(0, plan.length - 1))] || "easy";
+}
+
+function getLimitedRunSelectionKey(question){
+    return String(
+        getSkillKey(question) ||
+        question?.primarySkill ||
+        question?.repairSkill ||
+        question?.skillId ||
+        question?.objective ||
+        inferObjective(question) ||
+        question?.tag ||
+        getLimitedRunQuestionId(question) ||
+        "unclassified"
+    );
+}
+
+function getLimitedRunEvidenceBucket(question){
+    const skillKey = getSkillKey(question);
+    if(skillKey && masteryState.bySkill?.[skillKey]) return masteryState.bySkill[skillKey];
+
+    const objectiveKey = String(question?.objective || inferObjective(question) || "");
+    if(objectiveKey && masteryState.byObjective?.[objectiveKey]) return masteryState.byObjective[objectiveKey];
+
+    const tagKey = String(question?.tag || "");
+    if(tagKey && masteryState.byTag?.[tagKey]) return masteryState.byTag[tagKey];
+
+    return null;
+}
+
+function selectLimitedRunAdaptiveQuestion(mode){
+    const candidates = getLimitedRunCandidates(mode);
+    const deck = getLimitedRunDeck(mode);
+    const usedIds = new Set((deck || []).filter(Boolean).map(getLimitedRunQuestionId));
+
+    let unused = candidates.filter(question => {
+        const id = getLimitedRunQuestionId(question);
+        return id && !usedIds.has(id);
+    });
+
+    if(!unused.length) return null;
+
+    const desiredDifficulty = getLimitedRunPlannedDifficulty(mode);
+    const difficultyPool = unused.filter(question => question.__mqDifficulty === desiredDifficulty);
+    if(difficultyPool.length) unused = difficultyPool;
+
+    const completed = getLimitedRunCompleted(mode);
+    const target = getLimitedRunTarget(mode);
+    const calibration = completed < getLimitedRunCalibrationCount(target);
+
+    const selectedKeyCounts = {};
+    (deck || []).filter(Boolean).forEach(question => {
+        const key = getLimitedRunSelectionKey(question);
+        selectedKeyCounts[key] = (selectedKeyCounts[key] || 0) + 1;
+    });
+
+    const recentKeys = (deck || [])
+        .filter(Boolean)
+        .slice(-2)
+        .map(getLimitedRunSelectionKey);
+
+    const scored = unused.map(question => {
+        const key = getLimitedRunSelectionKey(question);
+        const selectedCount = selectedKeyCounts[key] || 0;
+        const bucket = getLimitedRunEvidenceBucket(question);
+        const attempts = Number(bucket?.attempts || 0);
+        const correct = Number(bucket?.correct || 0);
+        const accuracy = attempts ? correct / attempts : null;
+
+        // Cold start: breadth first.
+        let score = selectedCount === 0 ? 2.4 : selectedCount === 1 ? 0.75 : 0.10;
+
+        if(calibration){
+            if(attempts === 0) score += 0.9;
+            if(recentKeys.includes(key)) score -= 1.6;
+        } else {
+            // Investigation: respond to emerging evidence without
+            // turning a short mode into repetitive remediation.
+            if(attempts === 0){
+                score += 1.1;
+            } else {
+                const weakness = Math.max(0, 1 - Number(accuracy ?? 1));
+                score += weakness * 2.7;
+                score += Math.min(attempts, 4) * 0.12;
+
+                if(attempts >= 2 && accuracy < 0.60) score += 0.75;
+
+                const targetMs = getTypeTargetMs(question?.type || "default");
+                const avgTime = Number(bucket?.avgTime || 0);
+                if(avgTime && targetMs && avgTime / targetMs > 1.30) score += 0.35;
+            }
+
+            if(recentKeys.at(-1) === key) score -= 2.0;
+            else if(recentKeys.includes(key)) score -= 0.9;
+        }
+
+        score += Math.random() * 0.25;
+        return {question, score};
+    });
+
+    scored.sort((a,b) => b.score - a.score);
+    return scored[0]?.question || null;
+}
+
+function primeLimitedRunQuestion(mode){
+    if(!modeUsesLimitedRunAdaptiveSampling(mode)) return null;
+    if(getLimitedRunCompleted(mode) >= getLimitedRunTarget(mode)) return null;
+
+    const deck = getLimitedRunDeck(mode);
+    const index = getLimitedRunDeckIndex(mode);
+    if(deck[index]) return deck[index];
+
+    const selected = selectLimitedRunAdaptiveQuestion(mode);
+    if(selected) deck[index] = selected;
+    return selected;
+}
+
+// -------------------------------------------------------------
+// QUIZ — balanced sampling only.
+// Performance does not steer later Quiz questions.
+// -------------------------------------------------------------
+function selectQuizBalancedQuestion(poolName){
+    const pool = questionBanks?.[poolName] || [];
+    if(!pool.length) return null;
+
+    const recentIds = new Set((questionHistory?.[poolName] || []).slice(-12).map(String));
+    let available = pool.filter(question => !recentIds.has(String(question.id)));
+    if(!available.length) available = [...pool];
+
+    const recentSkillKeys = (masteryState.attemptEvidence || [])
+        .slice(-3)
+        .map(item => String(item.primarySkill || item.repairSkill || item.tag || ""))
+        .filter(Boolean);
+
+    const scored = available.map(question => {
+        const skillKey = String(getSkillKey(question) || question.primarySkill || question.tag || "");
+        const skillBucket = skillKey ? masteryState.bySkill?.[skillKey] : null;
+        const tagBucket = question.tag ? masteryState.byTag?.[question.tag] : null;
+        const skillAttempts = Number(skillBucket?.attempts || 0);
+        const tagAttempts = Number(tagBucket?.attempts || 0);
+
+        let score = 1;
+
+        // Coverage only. Accuracy and pace are deliberately ignored.
+        if(skillAttempts === 0) score += 3.0;
+        else if(skillAttempts === 1) score += 1.0;
+
+        if(tagAttempts === 0) score += 1.2;
+        if(recentSkillKeys.includes(skillKey)) score -= 1.6;
+
+        score += Math.random() * 0.3;
+        return {question, score};
+    });
+
+    scored.sort((a,b) => b.score - a.score);
+    const picked = scored[0]?.question || null;
+    if(!picked) return null;
+
+    if(!questionHistory[poolName]) questionHistory[poolName] = [];
+    questionHistory[poolName].push(picked.id);
+    if(questionHistory[poolName].length > 15) questionHistory[poolName].shift();
+
+    if(picked.tag){
+        tagHistory.push(picked.tag);
+        if(tagHistory.length > 10) tagHistory.shift();
+    }
+
+    return picked;
+}
+
+// -------------------------------------------------------------
+// Limited-run launchers validate inventory, but do not prebuild
+// the whole deck. Later questions are selected after real evidence.
+// -------------------------------------------------------------
+launchFadingFortuneFromSetup = function(){
+    fadingFortuneQuestionTarget = normalizeFadingFortuneQuestionTarget(fadingFortuneQuestionTarget);
+    fadingFortuneQuestionsCompleted = 0;
+    fadingFortuneDeckIndex = 0;
+    fadingFortuneDeck = [];
+
+    const available = getFadingFortuneCandidates().length;
+    if(available < fadingFortuneQuestionTarget){
+        showFacultyPreflightFailure("fadingFortune", [{
+            pool:"fadingFortuneEligible",
+            id:"—",
+            issue:`Needs ${fadingFortuneQuestionTarget}; found ${available}`
+        }]);
+        return;
+    }
+
+    localStorage.setItem(`${STORAGE_PREFIX}:fadingFortune:questionCount`, String(fadingFortuneQuestionTarget));
+    closeFadingFortuneSetup();
+    startSelectedMode("fadingFortune", {fadingFortuneConfirmed:true});
+};
+
+launchRiskRewardFromSetup = function(){
+    riskRewardQuestionTarget = normalizeRiskRewardQuestionTarget(riskRewardQuestionTarget);
+    riskRewardQuestionsCompleted = 0;
+    riskRewardDeckIndex = 0;
+    riskRewardDeck = [];
+
+    const available = getRiskRewardCandidates().length;
+    if(available < riskRewardQuestionTarget){
+        showFacultyPreflightFailure("riskReward", [{
+            pool:"riskRewardEligible",
+            id:"—",
+            issue:`Needs ${riskRewardQuestionTarget}; found ${available}`
+        }]);
+        return;
+    }
+
+    localStorage.setItem(`${STORAGE_PREFIX}:riskReward:questionCount`, String(riskRewardQuestionTarget));
+    closeRiskRewardSetup();
+    startSelectedMode("riskReward", {riskRewardConfirmed:true});
+};
+
+// -------------------------------------------------------------
+// New limited runs begin with UNKNOWN mastery.
+// -------------------------------------------------------------
+const __agencyBaseResetRunStateForNewMode = resetRunStateForNewMode;
+resetRunStateForNewMode = function(){
+    __agencyBaseResetRunStateForNewMode();
+
+    if(gameMode === "fadingFortune"){
+        fadingFortuneDeck = [];
+        fadingFortuneDeckIndex = 0;
+        fadingFortuneQuestionsCompleted = 0;
+        primeLimitedRunQuestion("fadingFortune");
+    } else if(gameMode === "riskReward"){
+        riskRewardDeck = [];
+        riskRewardDeckIndex = 0;
+        riskRewardQuestionsCompleted = 0;
+        primeLimitedRunQuestion("riskReward");
+    }
+};
+
+// -------------------------------------------------------------
+// Current evidence is recorded BEFORE the next question is chosen.
+// -------------------------------------------------------------
+const __agencyBaseRecordAdaptiveAttempt = recordAdaptiveAttempt;
+recordAdaptiveAttempt = function(question, isCorrect, responseTime){
+    __agencyBaseRecordAdaptiveAttempt(question, isCorrect, responseTime);
+
+    if(gameMode === "fadingFortune") primeLimitedRunQuestion("fadingFortune");
+    else if(gameMode === "riskReward") primeLimitedRunQuestion("riskReward");
+};
+
+// -------------------------------------------------------------
+// Quiz keeps its planned Easy -> Medium -> Hard progression,
+// but performance-driven promotion and weakness chasing are disabled.
+// -------------------------------------------------------------
+const __agencyBaseGetSelectionProfile = getSelectionProfile;
+getSelectionProfile = function(){
+    const profile = __agencyBaseGetSelectionProfile();
+    if(gameMode !== "quiz") return profile;
+
+    return {
+        ...profile,
+        strongestTag: null,
+        strongestFluency: 0,
+        mediumReady: false,
+        hardReady: false,
+        eliteReady: false
+    };
+};
+
+const __agencyBaseDetermineSelectionPurpose = determineSelectionPurpose;
+determineSelectionPurpose = function(profile){
+    if(gameMode === "quiz") return "quiz-balanced";
+    return __agencyBaseDetermineSelectionPurpose(profile);
+};
+
+const __agencyBaseGetAdaptiveQuestion = getAdaptiveQuestion;
+getAdaptiveQuestion = function(poolName, targetTag = null, options = {}){
+    if(gameMode === "quiz"){
+        return selectQuizBalancedQuestion(poolName);
+    }
+    return __agencyBaseGetAdaptiveQuestion(poolName, targetTag, options);
+};
+
+// =============================================================
+// SAMPLE-AWARE MASTERY REPORT
+// =============================================================
+function modeUsesSampleAwareReport(mode = gameMode){
+    return modeUsesLimitedRunSampling(mode);
+}
+
+function getSampleAwareEntryEvidence(entry){
+    const exposure = getDifficultyExposure(entry?.byDifficulty || {});
+    const attempts = Number(entry?.attempts || 0);
+
+    if(attempts <= 2){
+        return {
+            key:"limited",
+            label:"Limited Signal",
+            explanation:"One or two observations can flag a possible issue, but they are not enough to confirm a weakness.",
+            exposure
+        };
+    }
+
+    if(attempts <= 4){
+        return {
+            key:"developing",
+            label:"Emerging Pattern",
+            explanation:"Three or four observations show a pattern worth investigating, but the sample is still limited.",
+            exposure
+        };
+    }
+
+    return {
+        key:"strong",
+        label:"Meaningful Sample",
+        explanation:"Five or more observations provide meaningful evidence about this sampled area, but not a full-content mastery claim.",
+        exposure
+    };
+}
+
+function applySampleAwareEntryEvidence(entries){
+    return (entries || []).map(entry => ({
+        ...entry,
+        evidence: getSampleAwareEntryEvidence(entry)
+    }));
+}
+
+function getObservedSampleSignals(entries, accuracyThreshold = 0.85){
+    return sortWeakest(entries)
+        .filter(entry => entry && entry.attempts >= 1)
+        .filter(entry => {
+            const accuracy = entry.accuracy === null || entry.accuracy === undefined
+                ? 1
+                : Number(entry.accuracy);
+
+            return accuracy < accuracyThreshold || entry.timeRatio > 1.35;
+        });
+}
+
+function hasConfirmedSampleWeakness(entries, accuracyThreshold = 0.85){
+    return (entries || []).some(entry => {
+        if(!entry || entry.attempts < 5) return false;
+
+        const accuracy = entry.accuracy === null || entry.accuracy === undefined
+            ? 1
+            : Number(entry.accuracy);
+
+        return accuracy < accuracyThreshold || entry.timeRatio > 1.35;
+    });
+}
+
+function getSampleAwareOverallEvidence({attempts=0, byDifficulty={}} = {}){
+    const exposure = getDifficultyExposure(byDifficulty);
+
+    if(attempts <= 4){
+        return {
+            key:"limited",
+            label:"Limited Sample",
+            explanation:"This short run provides only a small sample. Treat the results as signals to investigate, not as a mastery judgment.",
+            exposure
+        };
+    }
+
+    if(attempts <= 9){
+        return {
+            key:"developing",
+            label:"Developing Sample",
+            explanation:"The run contains useful evidence, but it still samples only part of the available content. Patterns are provisional.",
+            exposure
+        };
+    }
+
+    return {
+        key:"strong",
+        label:"Strong Sample Evidence",
+        explanation:"There is enough evidence to trust patterns inside this run, but a fixed-length sample does not establish mastery of unsampled content.",
+        exposure
+    };
+}
+
+const __agencyBaseGetMasteryReportData = getMasteryReportData;
+getMasteryReportData = function(){
+    const report = __agencyBaseGetMasteryReportData();
+    if(!modeUsesSampleAwareReport()) return report;
+
+    const tagEntries = applySampleAwareEntryEvidence(getEntriesFromBuckets(masteryState.byTag || {}, "tag"));
+    const objectiveEntries = applySampleAwareEntryEvidence(getEntriesFromBuckets(masteryState.byObjective || {}, "objective"));
+    const skillEntries = applySampleAwareEntryEvidence(getEntriesFromBuckets(masteryState.bySkill || {}, "skill"));
+    const typeEntries = applySampleAwareEntryEvidence(getTypeMasteryEntries());
+
+    const strongest = sortStrongest(tagEntries).slice(0, 4);
+    const weakestConcepts = getObservedSampleSignals(tagEntries, 0.85).slice(0, 4);
+    const weakestObjectives = getObservedSampleSignals(objectiveEntries, 0.85).slice(0, 4);
+    const weakestTypes = getObservedSampleSignals(typeEntries, 0.85).slice(0, 3);
+    const weakestSkills = getObservedSampleSignals(skillEntries, 0.85).slice(0, 3);
+
+    const hasConceptWeakness = hasConfirmedSampleWeakness(tagEntries, 0.85);
+    const hasObjectiveWeakness = hasConfirmedSampleWeakness(objectiveEntries, 0.85);
+    const hasTypeWeakness = hasConfirmedSampleWeakness(typeEntries, 0.85);
+    const hasSkillWeakness = hasConfirmedSampleWeakness(skillEntries, 0.85);
+
+    const behavior = getRecentBehaviorSignals();
+    const evidence = getSampleAwareOverallEvidence({
+        attempts: totalAttempts,
+        byDifficulty: masteryState.byDifficulty || {}
+    });
+
+    const hasObservedSignal = !!(
+        weakestConcepts.length ||
+        weakestObjectives.length ||
+        weakestTypes.length ||
+        weakestSkills.length
+    );
+
+    const hasConfirmedWeakness = !!(
+        hasConceptWeakness ||
+        hasObjectiveWeakness ||
+        hasTypeWeakness ||
+        hasSkillWeakness
+    );
+
+    let verdict;
+
+    if(totalAttempts <= 4){
+        verdict = "Limited sample. The answers are recorded accurately, but this run is too short to diagnose mastery. Treat the signals below as possibilities to investigate.";
+    } else if(hasConfirmedWeakness){
+        verdict = "This limited run produced a repeated pattern in at least one sampled area. That pattern is meaningful inside this run, but unsampled content remains unknown.";
+    } else if(hasObservedSignal){
+        verdict = "This run produced provisional weak signals, but none appeared often enough to count as a confirmed weakness. More evidence is needed before treating them as diagnostic.";
+    } else {
+        verdict = "No repeated weakness emerged in the sampled questions. That is a clean result for this run, not proof of mastery across content the mode did not sample.";
+    }
+
+    const nextSteps = [];
+
+    if(hasConceptWeakness && weakestConcepts[0]){
+        nextSteps.push(`Review ${weakestConcepts[0].label}. It appeared often enough in this run to support a meaningful weakness signal.`);
+    } else if(weakestConcepts[0]){
+        nextSteps.push(`${weakestConcepts[0].label} produced the weakest observed concept signal in this run, based on ${weakestConcepts[0].attempts} question${weakestConcepts[0].attempts === 1 ? "" : "s"}. Gather more evidence before treating it as a confirmed weakness.`);
+    }
+
+    if(hasSkillWeakness && weakestSkills[0]){
+        nextSteps.push(`Drill ${weakestSkills[0].label}. The repeated skill evidence in this sample is strong enough to act on.`);
+    } else if(weakestSkills[0] && weakestSkills[0].attempts >= 3){
+        nextSteps.push(`${weakestSkills[0].label} showed an emerging skill pattern. Recheck it in another run or a full-evidence mode.`);
+    }
+
+    if(behavior.fastMisses >= 2){
+        nextSteps.push("Slow down. Multiple fast misses occurred even though this mode is a short sample.");
+    }
+
+    if(nextSteps.length === 0){
+        nextSteps.push("Use another limited run for a fresh sample, or switch to Standard, Timed, Exam Drill, Score Attack, Legendary, or Unlimited Practice for a broader mastery diagnosis.");
+    }
+
+    return {
+        ...report,
+        strongest,
+        weakestConcepts,
+        weakestObjectives,
+        weakestTypes,
+        weakestSkills,
+        hasConceptWeakness,
+        hasObjectiveWeakness,
+        hasTypeWeakness,
+        hasSkillWeakness,
+        noMajorWeakness: false,
+        behavior,
+        evidence,
+        sampleAware: true,
+        verdict,
+        nextSteps
+    };
+};
+
+const __agencyBaseRenderMasteryDiagnosticSection = renderMasteryDiagnosticSection;
+renderMasteryDiagnosticSection = function({
+    weaknessTitle,
+    signalTitle,
+    entries,
+    hasWeakness,
+    weaknessEmptyText,
+    cleanText
+}){
+    if(!modeUsesSampleAwareReport()){
+        return __agencyBaseRenderMasteryDiagnosticSection({
+            weaknessTitle,
+            signalTitle,
+            entries,
+            hasWeakness,
+            weaknessEmptyText,
+            cleanText
+        });
+    }
+
+    const title = hasWeakness ? weaknessTitle : signalTitle;
+    const hasEntries = Array.isArray(entries) && entries.length > 0;
+
+    const body = hasEntries
+        ? renderMasteryRows(entries, weaknessEmptyText)
+        : `<p class="mastery-empty">${escapeHTML("No repeated weakness emerged in this sampled area. Unsampled content remains unknown.")}</p>`;
+
+    return `
+        <div class="mastery-section">
+            <h3>${escapeHTML(title)}</h3>
+            ${body}
+        </div>
+    `;
+};
+
+const __agencyBaseCopyMasteryReport = copyMasteryReport;
+copyMasteryReport = function(){
+    if(!modeUsesSampleAwareReport()){
+        return __agencyBaseCopyMasteryReport();
+    }
+
+    const report = getMasteryReportData();
+
+    const formatRows = (entries, fallback) =>
+        entries.length
+            ? entries.map(item => `- ${item.label}: ${formatPercent(item.accuracy)} (${item.correct}/${item.attempts}) — ${item.evidence.label}`)
+            : [fallback];
+
+    const lines = [
+        `${FACULTY_COMPOSITION_CONFIG.title} — Mastery Report`,
+        `Student: ${username}`,
+        `Mode: ${report.mode}`,
+        `Accuracy: ${formatPercent(report.accuracy)} (${report.correctAnswers}/${report.totalAttempts})`,
+        `Evidence: ${report.evidence.label}`,
+        `Best Streak: ${report.maxStreak}`,
+        `Time: ${report.timeString}`,
+        report.riskReward ? `Final Bankroll: ${report.riskReward.finalBankroll}` : null,
+        report.score !== null ? `Score: ${report.fadingFortune ? `${report.score}/${report.fadingFortune.maxScore}` : report.score}` : null,
+        "",
+        "Sample Warning:",
+        `- ${report.evidence.explanation}`,
+        "",
+        "Observed Strong Signals:",
+        ...formatRows(report.strongest, "- No clear strength signal yet."),
+        "",
+        report.hasObjectiveWeakness ? "Confirmed Objective Weaknesses:" : "Objective Signals:",
+        ...formatRows(report.weakestObjectives, "- No repeated objective weakness emerged in the sampled questions."),
+        "",
+        report.hasTypeWeakness ? "Confirmed Question-Form Weaknesses:" : "Question-Form Signals:",
+        ...formatRows(report.weakestTypes, "- No repeated question-form weakness emerged in this sample."),
+        "",
+        report.hasSkillWeakness ? "Confirmed Skill Weaknesses:" : "Skill Signals:",
+        ...formatRows(report.weakestSkills, "- No repeated skill weakness emerged in this sample."),
+        "",
+        "Next Moves:",
+        ...report.nextSteps.map(step => `- ${step}`)
+    ].filter(line => line !== null);
+
+    const text = lines.join("\n");
+
+    function markCopied(){
+        const btn = Array.from(document.querySelectorAll("button"))
+            .find(button => button.innerText === "Copy Report" || button.innerText === "Copied!");
+
+        if(!btn) return;
+
+        const original = btn.innerText;
+        btn.innerText = "Copied!";
+        setTimeout(() => { btn.innerText = original; }, 1800);
+    }
+
+    if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(markCopied);
+        return;
+    }
+
+    const temp = document.createElement("textarea");
+    temp.value = text;
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand("copy");
+    temp.remove();
+    markCopied();
+};
 
 </script></body>
 </html>

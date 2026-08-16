@@ -4460,6 +4460,7 @@ window.questionBanks = {
       "commonError": "uses_player1_payoff_at_player2_node",
       "feedback": "After Invest, Player 2 compares payoffs 4 and 5 and chooses Low Price.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "828e4e34bf5ef49f5198d11d51aa125f273f71f0229e985c4ac055db2375777f"
     },
     {
@@ -4505,6 +4506,7 @@ window.questionBanks = {
       "commonError": "compares_unreached_terminal_payoffs",
       "feedback": "Invest leads to Player 2 choosing Low Price and a payoff of 2 for Player 1. Don’t Invest leads to High Price and a payoff of 4.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "4671e5c7d95dc670068a1240101429fc7dd9f7b7b1be822c01e04c9e4d621cad"
     },
     {
@@ -4528,6 +4530,7 @@ window.questionBanks = {
       "commonError": "selects_best_terminal_payoff_without_backward_induction",
       "feedback": "Backward induction gives Low Price after Invest, High Price after Don’t Invest, and therefore Don’t Invest initially.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "a3f1e9346db832444dbbba3a6ead179420fe30563b0568d618b2e6f8b458cf35"
     },
     {
@@ -4551,6 +4554,7 @@ window.questionBanks = {
       "commonError": "checks_wrong_players_incentive",
       "feedback": "At the relevant node, Player 2 would choose Low Price, so the threat to choose High Price is not credible.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "de23756579294aeed312c8db66fb84f955a2904d2b5592bb825208e5193d2ac8"
     },
     {
@@ -7326,6 +7330,7 @@ window.questionBanks = {
       "commonError": "reads_first_payoff_as_firm_b",
       "feedback": "After High Price, Firm B compares 3 from Match with 6 from Not Match, so it chooses Not Match.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "52f222c61d845b6d7d8b2021d80f6379c9348f960300ca9dde232c1c1e6ff053"
     },
     {
@@ -7349,6 +7354,7 @@ window.questionBanks = {
       "commonError": "reads_wrong_branch_payoff",
       "feedback": "After Medium Price, Firm B receives 5 from Match and 4 from Not Match, so Match is optimal.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "4945a70fa7f9c13fe1931a3372ac5798140d42eba74d0dd805a4a216ed3a8142"
     },
     {
@@ -7372,6 +7378,7 @@ window.questionBanks = {
       "commonError": "reads_firm_a_payoff",
       "feedback": "Firm B receives 7 from Match and 8 from Not Match, so it chooses Not Match.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "52f222c61d845b6d7d8b2021d80f6379c9348f960300ca9dde232c1c1e6ff053"
     },
     {
@@ -7395,6 +7402,7 @@ window.questionBanks = {
       "commonError": "fails_to_compare_continuation_payoffs",
       "feedback": "Firm A anticipates payoffs of 5, 6, and 2 from High, Medium, and Low respectively, so it chooses Medium; Firm B then Matches.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "01282637a652c7e8358f08e8b5f8babdfe42adde22b59c85da4fffee8cb0c78e"
     },
     {
@@ -7418,6 +7426,7 @@ window.questionBanks = {
       "commonError": "accepts_noncredible_continuation_action",
       "feedback": "After High Price, Firm B gets 6 from Not Match rather than 3 from Match, so Match is not sequentially rational.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "387a400d0729427539d4e8a4801ca3809889a8860e301f3cc5910232dc21cdfd"
     },
     {
@@ -9291,6 +9300,7 @@ window.questionBanks = {
       "commonError": "fails_to_recompute_continuation_choices",
       "feedback": "Player 2 then chooses High after Invest (4>3) and High after Don't Invest (3>2). Player 1 compares 6 with 4 and invests.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "0926a01131a3b3e269cc910600a461de4174ba6400ad182b1be11bdf1c76ed08"
     },
     {
@@ -9314,6 +9324,7 @@ window.questionBanks = {
       "commonError": "compares_wrong_players_payoffs",
       "feedback": "Without commitment the outcome is Don't Invest–High, giving Player 2 payoff 3. Commitment induces Invest–High, giving 4, a gain of 1.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "9030d6790bf58d2bb2277d25564b65d0a6e06aed250a470502fa7212e964abd6"
     },
     {
@@ -9337,6 +9348,7 @@ window.questionBanks = {
       "commonError": "uses_sequential_contingent_responses_in_simultaneous_form",
       "feedback": "Invest strictly dominates Don't Invest for Player 1. Against Invest, Player 2 prefers Low Price, producing Invest–Low.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "4c3c5aa5a0875546ac47bf11c5fa9fdbc87a37153c9bf675ee82404ece9970df"
     },
     {
@@ -9360,6 +9372,7 @@ window.questionBanks = {
       "commonError": "ignores_strict_inequality",
       "feedback": "Original continuation payoffs to Player 1 are 2 after Invest and 4 after Don't Invest. An increase of 3 raises the investment payoff to 5.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "819939f17eaf949e8f3f24b644cf5aae8d84d803d6c2f45c8d992547b91159f4"
     },
     {
@@ -9383,6 +9396,7 @@ window.questionBanks = {
       "commonError": "updates_root_choice_without_updating_second_stage",
       "feedback": "Player 2 chooses Low after both branches. Player 1 then compares 2 from Invest with 1 from Don't Invest and invests.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "4c3c5aa5a0875546ac47bf11c5fa9fdbc87a37153c9bf675ee82404ece9970df"
     },
     {
@@ -9406,6 +9420,7 @@ window.questionBanks = {
       "commonError": "reports_only_realized_action_not_full_strategy",
       "feedback": "Firm B compares its payoff at each node: 6>3, 5>4, and 8>7.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "b77551fde5865416980667b6aa7418fac48e0cd233e9ccb23cfd7bdf18d89f6b"
     },
     {
@@ -9429,6 +9444,7 @@ window.questionBanks = {
       "commonError": "keeps_old_response_after_payoff_change",
       "feedback": "B chooses Not Match after all three prices. Firm A's induced payoffs are 5, 4, and 2, so it chooses High.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "88c784976f0bed9092a71d10c1eb5bcc89da176f13530718679adc6f2a6ddb3e"
     },
     {
@@ -9452,6 +9468,7 @@ window.questionBanks = {
       "commonError": "ignores_strict_preference_or_payoff_gap",
       "feedback": "At High Price, B receives 3 from Match and 6 from Not Match. A bonus must exceed 3 to make Match strictly better.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "3e801bc358acc2673a28a166e23b00a6758dbe8ad82ec9172df3978a96f0886d"
     },
     {
@@ -9475,6 +9492,7 @@ window.questionBanks = {
       "commonError": "compares_to_wrong_induced_payoff",
       "feedback": "A currently receives 2 from Low–Not Match and 6 from Medium–Match. It needs at least 7, requiring an increase of 5.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "d9bb1b137c5b693a35c5edc0cf22d4491a12f1a5d01cf6f66a3de2da1ae2a4ab"
     },
     {
@@ -9498,6 +9516,7 @@ window.questionBanks = {
       "commonError": "ignores_commitment_cost_or_original_equilibrium",
       "feedback": "Original payoff is 6 at Medium–Match. Commitment yields 5 at High–Not Match minus cost 2 = 3, a decline of 3.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "342907ae66f16ce6488842c437c215d0659667ba0224c9b57a1fcedd5902ed04"
     },
     {
@@ -9785,6 +9804,7 @@ window.questionBanks = {
       "commonError": "fails_to_recompute_union_choice_after_payoff_change",
       "feedback": "The company concedes after Demand More. The union then prefers 3 from demanding more to 2 from accepting, and the company prefers the resulting 3 to 1 from Stand Firm.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "0b2d8f0c8ad78ae9aacbe232de3ee43cf31ecf0922f55933c995b11b8e5cce98"
     },
     {
@@ -9808,6 +9828,7 @@ window.questionBanks = {
       "commonError": "assumes_any_commitment_changes_outcome",
       "feedback": "Accept already gives the union 4, while Demand More followed by Refuse gives 1. The commitment does not alter its choice.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "234f51cf10b362042fa326da7dd5281d0f2f68e2376680df49c0dc4fb3e53911"
     },
     {
@@ -9831,6 +9852,7 @@ window.questionBanks = {
       "commonError": "keeps_original_root_choice_after_payoff_change",
       "feedback": "The union still accepts after Compromise, yielding 0 to the company. Stand Firm yields 1 because the union strikes, so the company stands firm.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "81fdbfb25904c46a373b6077caa08582f51d0eba45dc19ae5c392060f58b916c"
     },
     {
@@ -9854,6 +9876,7 @@ window.questionBanks = {
       "commonError": "ignores_strict_preference_at_union_node",
       "feedback": "The union receives 5 from Strike and 2 from Accept. Accept must rise to at least 6, requiring an increase of 4.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "72d5c17e57a38cbdeda0fa52f1ecb59a7d2afbf42238592f4007bde3c606c22c"
     },
     {
@@ -9877,6 +9900,7 @@ window.questionBanks = {
       "commonError": "changes_wrong_players_incentive_at_union_node",
       "feedback": "The union's choice after Stand Firm depends on its own payoffs, which are unchanged. Compromise–Accept remains better for the company.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "c0f5e409e3299cbc9d321f335ba97964e2bd002f2e8b9c7dadf75678fef5b6b0"
     },
     {
@@ -11511,6 +11535,7 @@ window.questionBanks = {
       "feedback": "Player 2 compares its own payoffs: after Invest, 5 exceeds 4, so Low; after Don't Invest, 3 exceeds 2, so High.",
       "bossStage": "application",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "64d52f3ac8543a078a19b8462a9d71de548403a2fd5c8bf5023fdc0ac8efab59"
     },
     {
@@ -11535,6 +11560,7 @@ window.questionBanks = {
       "feedback": "Backward induction gives Low after Invest and High after Don't Invest. Player 1 then chooses Don't Invest because 4 exceeds 2.",
       "bossStage": "synthesis",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "90d311e39a2965448a04457c1fc65f12066ace2fe0c688d4a2fc2e3479f68319"
     },
     {
@@ -11651,6 +11677,7 @@ window.questionBanks = {
       "feedback": "Firm B compares its own payoffs at each node: 6>3 after High, 5>4 after Medium, and 8>7 after Low.",
       "bossStage": "application",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "fb95983718d90a54e32e3a1a95262ff7aa0991591d922fe0c85c6190568430f3"
     },
     {
@@ -11675,6 +11702,7 @@ window.questionBanks = {
       "feedback": "The contract changes B's action after High from Not Match to Match. Firm A receives 8−1=7, exceeding 6 from Medium and 2 from Low.",
       "bossStage": "synthesis",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "3a1d5ae3d60c68f2d271419aa22bbf17a803a2ea83f14e120c89d0d337b6b702"
     },
     {
@@ -11722,6 +11750,7 @@ window.questionBanks = {
       "feedback": "After Stand Firm, the union prefers Strike because 5>2. After Compromise, it anticipates Concede and compares 3 from demanding more with 4 from accepting, so it accepts.",
       "bossStage": "application",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "3c6427c3aabbab85a073362c335a2e94475b525cfe954037429190548543cb5a"
     },
     {
@@ -11746,6 +11775,7 @@ window.questionBanks = {
       "feedback": "With the union committed to Demand More, the company anticipates Concede and gets 3. Stand Firm leads to Strike and payoff 1, so the company chooses Compromise.",
       "bossStage": "synthesis",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "95d4c13590b015ebe6c3e924834bd8196b6a1ffcd1cc233dc98052e3287d0e00"
     },
     {
@@ -13226,6 +13256,7 @@ window.questionBanks = {
       "commonError": "reports_path_without_complete_contingent_strategy",
       "feedback": "Player 2 prefers Low after Invest (5>4) and High after Don’t Invest (3>2). Player 1 then chooses Don’t Invest because 4>2.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "d409218230c722c8f47ce360c5815941cc5df02d3888470cd148196b8a5b5902"
     },
     {
@@ -13249,6 +13280,7 @@ window.questionBanks = {
       "commonError": "ignores_off_path_actions",
       "feedback": "Firm B’s best responses are Not Match, Match, and Not Match. Firm A then compares 5, 6, and 2, choosing Medium.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "a194a4391acf625a1561c6be80caeff53ab2fec00d22f1e7d5a3f9eff869e1d8"
     },
     {
@@ -13272,6 +13304,7 @@ window.questionBanks = {
       "commonError": "reports_only_equilibrium_path",
       "feedback": "Backward induction gives Concede at the final node, Accept after Compromise, Strike after Stand Firm, and therefore Compromise initially.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "af5acd1468c14c3c77c1c3c1a219ed627a388b0bdbfa4155c16c47b66a78fe7e"
     },
     {
@@ -13361,6 +13394,7 @@ window.questionBanks = {
       "commonError": "treats_announcement_as_commitment",
       "feedback": "Player 2 earns 5 from Low versus 4 from High after Invest, so the announced action is not credible.",
       "image": "gametreeone.webp",
+      "graphRequired": true,
       "aHash": "04cb8ba9fd8cc1911d803fe3a14b423f3946dda4bf7db3b3a93a3515bd073b84"
     },
     {
@@ -13384,6 +13418,7 @@ window.questionBanks = {
       "commonError": "fails_to_recompute_follower_response",
       "feedback": "B now matches after High, giving A 8. A still gets 6 after Medium and 2 after Low, so A chooses High.",
       "image": "gametreetwo.webp",
+      "graphRequired": true,
       "aHash": "6fcb35dde2e15a85ff02d0e441d6193f7fe4950874bc17d27e7a2adcef621140"
     },
     {
@@ -13407,6 +13442,7 @@ window.questionBanks = {
       "commonError": "stops_backward_induction_before_root",
       "feedback": "The commitment makes the union accept after Compromise because 4>1. But the company then gets 0 from Compromise and 1 from Stand Firm followed by Strike, so it stands firm.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "81fdbfb25904c46a373b6077caa08582f51d0eba45dc19ae5c392060f58b916c"
     },
     {
@@ -13474,6 +13510,7 @@ window.questionBanks = {
       "commonError": "fails_to_recompute_middle_node",
       "feedback": "The company concedes after Demand More. The union then prefers 3 from demanding more to 2 from accepting, and the company prefers 3 from Compromise to 1 from Stand Firm.",
       "image": "gametreethree.webp",
+      "graphRequired": true,
       "aHash": "81a7ae8e3f30d5676cc133ee3d73ae84a047a7a9bdb2f1a95290fe8482095cb5"
     },
     {

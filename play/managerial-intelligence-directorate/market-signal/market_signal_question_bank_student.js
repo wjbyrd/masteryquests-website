@@ -3397,6 +3397,7 @@ const questionBanks = {
       "commonError": "Matching a price from one intersection with a quantity from another",
       "feedback": "The S0-D0 intersection is marked by price P1 and quantity QA.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "04113ad4b7082a8722c84eccda99bb6b0db04dc8bbcd43ec5a1ec3adb5a1dfa2"
     },
     {
@@ -3420,6 +3421,7 @@ const questionBanks = {
       "commonError": "Reading values from the wrong pair of curves",
       "feedback": "S2 and D1 intersect at price $16 and quantity 40.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "83e8d109c8a4f39e0ac7467b1adaaba712fb68c7303d39fc86755f2b3befb24a"
     },
     {
@@ -3445,6 +3447,7 @@ const questionBanks = {
       "commonError": "Using equilibrium quantities rather than quantities at the controlled price",
       "feedback": "At $14, demand on D1 is 65 and supply on S2 is 25, producing a shortage of 40.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a"
     },
     {
@@ -3468,6 +3471,7 @@ const questionBanks = {
       "commonError": "Moving the supply curve or using the long-run adjustment without being asked",
       "feedback": "With S0 unchanged and demand at D1, equilibrium moves to P2 and QB.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "8d81fd2c3da360e0e708777afaba6bbf2ee66e5c0d6943d4e596540a44e417c3"
     },
     {
@@ -3491,6 +3495,7 @@ const questionBanks = {
       "commonError": "Shifting demand when the shock changes production cost",
       "feedback": "The supply increase moves equilibrium from S2-D1 to S1-D1: price $14, quantity 65.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "8bc3042cd4eb121c9e5ec73dde043f6244992784ceeff712a20e3887f0b2f1a7"
     },
     {
@@ -3514,6 +3519,7 @@ const questionBanks = {
       "commonError": "Reading the intersection with the shifted supply curve",
       "feedback": "The S2-D2 intersection is price $18 and quantity 65.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "7a4d1d67c34813756a5ac2b405777fd6e60d42bc85a5e9afadcece4f98c641a8"
     },
     {
@@ -3537,6 +3543,7 @@ const questionBanks = {
       "commonError": "Analyzing only one shift or assuming both price and quantity must change",
       "feedback": "The market moves from S2-D1 to S1-D2; quantity doubles from 40 to 80 while price stays $16.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "2a96cdfb2e5c688ea970d241fb1696b8406ea4a9dfc5a8f376fac5d749c4d3c7"
     },
     {
@@ -3626,6 +3633,7 @@ const questionBanks = {
       "commonError": "Jumping directly to the long-run equilibrium and skipping the short-run price increase",
       "feedback": "With supply initially fixed at S0, the demand increase moves the market from A to B.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "6a585be1a8db4bb127c52987d75f18ae07502e0a72478bba9a212dab441dbe1c"
     },
     {
@@ -3715,6 +3723,7 @@ const questionBanks = {
       "commonError": "Reading the market price without carrying it into the firm's cost diagram",
       "feedback": "At P2, the firm chooses Q2 where price equals marginal cost, and price exceeds ATC.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "8bf81f1b66ed4fcbf72fd200738ff2f3e3b336808fb0280863547d43a60c465a"
     },
     {
@@ -3738,6 +3747,7 @@ const questionBanks = {
       "commonError": "Attributing the long-run adjustment to a demand reversal rather than entry",
       "feedback": "Profit at B attracts entry; increased industry supply returns price to P1 at D.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "57cb65b151fa5d8f3041b1b507c738aee963b22364897760fb846f187fcd7e98"
     },
     {
@@ -5193,6 +5203,7 @@ const questionBanks = {
       "commonError": "Reading quantities from the wrong curves",
       "feedback": "At $14, quantity demanded on D2 is 95 and quantity supplied on S2 is 25, so shortage is 70.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "6a0551c655ea7771eec732880d40eb3a9e35814dc4ca58fd611e5cef3b7acae7"
     },
     {
@@ -5216,6 +5227,7 @@ const questionBanks = {
       "commonError": "Reversing demanded and supplied quantities",
       "feedback": "At $18, supply on S1 is 95 and demand on D1 is 25, creating a 70-unit surplus.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "7cfe132a6cbc2031a6507fc713bba946e9d46e34965a006db020c4d65d2d7d22"
     },
     {
@@ -5283,6 +5295,7 @@ const questionBanks = {
       "commonError": "Moving to the intersection of the wrong curves",
       "feedback": "The new intersection of S0 and D1 is P2, QB.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "8d81fd2c3da360e0e708777afaba6bbf2ee66e5c0d6943d4e596540a44e417c3"
     },
     {
@@ -5306,6 +5319,7 @@ const questionBanks = {
       "commonError": "Following demand instead of the specified supply shift",
       "feedback": "The intersection of S1 and D1 is P1, QD.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "9995f2266c1f2f3559db4b78fecfe50bb248ecf9605708d2beb28024091832fc"
     },
     {
@@ -5329,6 +5343,7 @@ const questionBanks = {
       "commonError": "Analyzing only one of the two shifts",
       "feedback": "The market moves from S0-D0 at P1, QA to S1-D1 at P1, QD.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "9b4bf14dfbaef176d88d99ad97fbe1c2de6494006ed210e705b70198ed06fce4"
     },
     {
@@ -5352,6 +5367,7 @@ const questionBanks = {
       "commonError": "Inferring a demand shift even though demand is fixed",
       "feedback": "Holding D1 constant, the move from its intersection with S0 to its intersection with S1 is a supply increase.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "8e7f68745bb606048950a396f2a91fd4250ba2596dae0d59f2faa3208135e19a"
     },
     {
@@ -5375,6 +5391,7 @@ const questionBanks = {
       "commonError": "Stopping after only one curve shifts",
       "feedback": "The final intersection of S1 and D2 is price $16 and quantity 80.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "6f556cf01c84d78b94798d81c4143d28ad3413d05487f7b54573ae40e36c342e"
     },
     {
@@ -5398,6 +5415,7 @@ const questionBanks = {
       "commonError": "Reading the starting equilibrium from S2 instead of S1",
       "feedback": "The market moves from $14, 65 to $16, 80.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "3f44445ce57881fc326800aab4ee5b126e076098b1145d350e361bcb219721b4"
     },
     {
@@ -5421,6 +5439,7 @@ const questionBanks = {
       "commonError": "Following the wrong supply curve",
       "feedback": "The market moves from $18, 65 to $16, 80.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "97514b234d440ecc152959ef546d9c04686b2b945ee9c378a9a210e84a1cb07b"
     },
     {
@@ -5576,6 +5595,7 @@ const questionBanks = {
       "commonError": "Skipping the short-run profit signal or reversing entry",
       "feedback": "The demand increase first raises price at B; positive profit then attracts entry until price returns to P1 at D.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "0e46d09a9bf68ca7829e08c92b45df6d774c1c2570318f967226039cdbef240e"
     },
     {
@@ -5599,6 +5619,7 @@ const questionBanks = {
       "commonError": "Reading the firm panel at P1 instead of P2",
       "feedback": "At market price P2, the firm chooses Q2 where price exceeds ATC.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "38f953552d11db4dd0e3079b77045109a33d3d34e58339907b40cababaf8fb1c"
     },
     {
@@ -5622,6 +5643,7 @@ const questionBanks = {
       "commonError": "Inferring shutdown without an average variable cost curve",
       "feedback": "P0 is below minimum ATC, so firms lose money; the graph supports exit pressure, not a definite shutdown decision.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "244fe0ad1e4548af6c37788a046a63bf2f48df0a39f33f69fc9506a24ce139b8"
     },
     {
@@ -7566,6 +7588,7 @@ const questionBanks = {
       "commonError": "Jumping directly to the final point or reversing one of the shifts",
       "feedback": "The initial equilibrium is S2/D1; demand moves it to S2/D2; lower costs then move it to S1/D2.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "bad7049b5884e8a7cbd5c7ae018083337b2211332e7b7deff87a0239378a477d"
     },
     {
@@ -7591,6 +7614,7 @@ const questionBanks = {
       "commonError": "Reading the final price alone and ignoring the curve labels",
       "feedback": "Moving D2 to D1 is a demand decrease; moving S2 to S1 is a supply increase.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "6e165861ca509c544223df71ec7f74a9bcd121faf80bba1d4e4546dcf393166e"
     },
     {
@@ -7617,6 +7641,7 @@ const questionBanks = {
       "commonError": "Assuming both shifts must move price in the same direction",
       "feedback": "The final S1/D1 point is QD at P1: higher quantity with the original price restored.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "3f4a4fba37a67e2fb66585066a47242e55c95207087056d3b761cf3fcd222926"
     },
     {
@@ -7739,6 +7764,7 @@ const questionBanks = {
       "commonError": "Explaining a supply-curve movement with a demand determinant",
       "feedback": "Moving from S0 to S1 at the same demand curve is an increase in supply.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "c8cb3c79fb8ef0c71456d6d98ee70c041ee8b35bd66b4f857fc693cf2b0d7bb4"
     },
     {
@@ -7860,6 +7886,7 @@ const questionBanks = {
       "commonError": "Reading the market panel without linking its price to the firm panel",
       "feedback": "Point B sets price P2; the firm chooses Q2 where MC=P2, with price above ATC.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "020265266472f299bad9a8cab453d75a9dc742b565ea1dec95fd687284f4647b"
     },
     {
@@ -7909,6 +7936,7 @@ const questionBanks = {
       "commonError": "Treating the short-run profit point as a permanent equilibrium",
       "feedback": "Entry expands supply and erodes the temporary profit until firms again earn normal returns.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "6ac3563c0276abc36242055a6a8e729364216ea8cdf42613ee6b2dcb8aa3c27e"
     },
     {
@@ -7934,6 +7962,7 @@ const questionBanks = {
       "commonError": "Choosing entry when the market price creates losses",
       "feedback": "At C price is P0; losses induce exit, reducing supply and restoring P1 at A.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "ac9d2a0576355cc9c2d2f362e9498f79a40dc73dd3632090d842c4aef9f0e8ef"
     },
     {
@@ -9876,6 +9905,7 @@ const questionBanks = {
       "commonError": "Following only one shift or assuming two increases must raise price",
       "feedback": "The move from S2/D1 to S1/D2 doubles quantity while the opposing price effects cancel.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "05827fccebb1e7f32d06acb093d7aa425315b7c2eceb08d46bcbdb84bffcdf0a"
     },
     {
@@ -9902,6 +9932,7 @@ const questionBanks = {
       "commonError": "Reading the wrong starting supply curve or reversing the direction of a cost increase",
       "feedback": "A cost increase moves supply left from S1 to S2; a demand decrease moves D2 to D1. Their intersection is $16 and 40.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "810512ac7c1d50ce73e02ad4ed50c63c0b0f3a9f1683a6d1083e01cf2329f0ff"
     },
     {
@@ -9928,6 +9959,7 @@ const questionBanks = {
       "commonError": "Treating a previously equilibrium price as automatically nonbinding after supply changes",
       "feedback": "With S1 and D1, the competitive equilibrium price is $14, so a floor at $16 is above equilibrium and creates surplus.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "99437b1ce143b7d3942ee5546497062f87f016712f8ea14dbd2440c181b80ff9"
     },
     {
@@ -9954,6 +9986,7 @@ const questionBanks = {
       "commonError": "Inferring a single shift from a price that returns to its original level",
       "feedback": "The larger quantity with unchanged price requires rightward shifts of both demand and supply in the diagram.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "03aa3660d42c1f554c1f7b0244616ece86f420dd5ccdc190504d91f9ad707c00"
     },
     {
@@ -9980,6 +10013,7 @@ const questionBanks = {
       "commonError": "Reversing the curve labels or assuming S1 is the leftward supply curve",
       "feedback": "The move from S1 to S0 is a supply decrease; D0 to D1 is a demand increase. Both raise price.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "a27d436a34f652e3cd78c617bec5da956ce5d6c7a2c4b8bcfe3b80ccf22f6b5c"
     },
     {
@@ -10081,6 +10115,7 @@ const questionBanks = {
       "commonError": "Stopping at the short-run demand shift and ignoring entry",
       "feedback": "Positive profit attracts entry, expanding supply until economic profit is driven back toward normal.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "e73aa854feb66d5f235c5feb3ff88f389175b4361153035f3a45963b1bc47d6b"
     },
     {
@@ -10182,6 +10217,7 @@ const questionBanks = {
       "commonError": "Reading only the market panel and failing to connect P2 to the firm's cost curves",
       "feedback": "At P2, the firm produces where price equals MC at Q2, and price lies above ATC.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "b7c2fd3622d8be7fec96eccc0fef54889f8a90444fecb4a10624f8a046f030cb"
     },
     {
@@ -10208,6 +10244,7 @@ const questionBanks = {
       "commonError": "Reversing entry and exit or treating competitive firms as price setters",
       "feedback": "The demand increase creates short-run profit; entry expands supply until the normal-return price is restored.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "91627656ea7113ad02b0bf1d55ead757dcfd68822cf305473116f373c01f35dd"
     },
     {
@@ -10234,6 +10271,7 @@ const questionBanks = {
       "commonError": "Using the entry story when the market price is below the normal-return level",
       "feedback": "At C, price P0 produces losses. Exit contracts market supply and restores price toward P1.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "78cc3ecf165041b0909a729e8c1da25bc604c0e17fcc98e9b04624e2e280449e"
     },
     {
@@ -10260,6 +10298,7 @@ const questionBanks = {
       "commonError": "Assuming all above-normal returns disappear at the same speed regardless of market structure",
       "feedback": "Persistent excess returns suggest some force is slowing entry or imitation.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "7cd2cacbac59566b48a793ad4a9db217ffb33a3ea08a017586a09e01704c9937"
     },
     {
@@ -11889,6 +11928,7 @@ const questionBanks = {
       "commonError": "Following the wrong demand curve or treating a cost reduction as a demand shift",
       "feedback": "S1 and D1 intersect at price $14 and quantity 65.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "7b9385dd78d322a27d9d35dd1e89644729184512674316346cfd435694e98db2"
     },
     {
@@ -11915,6 +11955,7 @@ const questionBanks = {
       "commonError": "Stopping after the supply shift and failing to move to the new demand curve",
       "feedback": "S1 and D2 intersect at price $16 and quantity 80.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "fb576ec8da25dc25b845479790f8b0b2505e86b2dfead90a357c2b1208b3d9b7"
     },
     {
@@ -11941,6 +11982,7 @@ const questionBanks = {
       "commonError": "Looking only at the unchanged price and ignoring the large increase in quantity",
       "feedback": "Demand pushed price upward, while expanded supply pushed price downward. Their price effects offset, but both shifts increased quantity.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "ad676a00cb319fa66496d84238abd0656b0c6429d17adccf754c8dd20ac7e2be"
     },
     {
@@ -11967,6 +12009,7 @@ const questionBanks = {
       "commonError": "Reading the long-run outcome before entry has occurred",
       "feedback": "At P2, the firm produces Q2 where P = MC, and price lies above ATC, creating positive economic profit.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "8b54c1f96635738d4fa8a1f3772c9b709ee164380fd9fa0c1af956c370636dd1"
     },
     {
@@ -11993,6 +12036,7 @@ const questionBanks = {
       "commonError": "Reversing entry and exit or moving the demand curve instead of supply",
       "feedback": "Positive economic profit attracts entry. Market supply expands to S1, returning price to P1 at point D.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "7ca9113ce055d5d2605ccf9a724dc3859e2abf50425ff77f257700e68c385db8"
     },
     {
@@ -12019,6 +12063,7 @@ const questionBanks = {
       "commonError": "Assuming all abnormal returns disappear even when entry is blocked",
       "feedback": "The B-to-D adjustment depends on entry. A durable barrier can prevent the supply shift and allow above-normal returns to persist.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "3aaf718ebffd56e3fb0bc549520c01fb5fc8d20b0ea9f96c087e4015e9206e7f"
     },
     {
@@ -12045,6 +12090,7 @@ const questionBanks = {
       "commonError": "Treating the later supply response as the initial shock",
       "feedback": "With supply initially at S0, the rightward demand shift moves the market from A to B and creates short-run profit.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "b3394f021fc6308bba41a65a3b485e6227a362af7aac82caf54671917b433647"
     },
     {
@@ -12071,6 +12117,7 @@ const questionBanks = {
       "commonError": "Treating mean reversion as an automatic demand reversal rather than a supply response",
       "feedback": "Above-normal returns attract resources and firms. The resulting supply expansion reduces price and erodes the return.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "0d0569860a7502a9b72b351d61d454fc4617f2992d2f7f26e0bb854627373699"
     },
     {
@@ -12097,6 +12144,7 @@ const questionBanks = {
       "commonError": "Using entry when firms are earning losses",
       "feedback": "Losses induce exit. Industry supply contracts, raising price and moving surviving firms back toward a normal return at A.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "62216b62173c707b96aec799a82e0901f7654f6dc678248d5f8aed1b2cc9801c"
     },
     {
@@ -12272,6 +12320,7 @@ const questionBanks = {
       "commonError": "Moving demand instead of supply when new sellers enter",
       "feedback": "The S1-D0 intersection is P0-QC. Entry expands supply, lowering price and increasing market quantity.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "dbaa8b7a6461f1b88924422f1042c5303c8398595daa45e22646b5ce1dbd24f8"
     },
     {
@@ -13674,6 +13723,7 @@ const questionBanks = {
       "commonError": "Inferring only from the unchanged price and ignoring the larger quantity",
       "feedback": "On the graph, S1 and D1 intersect at P1 and QD. Both curves shifted right, preserving price while raising quantity.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "9e0628fb6328c80fccbf67a6c936271e7780ab824891c9e1f928d536a30b33e0"
     },
     {
@@ -13700,6 +13750,7 @@ const questionBanks = {
       "commonError": "Jumping directly to the final point and missing the short-run intermediate equilibrium",
       "feedback": "The demand increase first moves the market to S0-D1 at P2,QB. The supply increase then moves it to S1-D1 at P1,QD.",
       "image": "demand_supply.png",
+      "graphRequired": true,
       "aHash": "689b9af7a179837dd12effa02fa9967e431835ae2cec357178b5ac5a5f80775c"
     },
     {
@@ -13726,6 +13777,7 @@ const questionBanks = {
       "commonError": "Reporting one intermediate equilibrium instead of the final intersection",
       "feedback": "S2-D1 is $16 and 40. S1-D2 is $16 and 80, so quantity doubles while price returns to its initial level.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "1ee55ee5b6974eb8845c46fa7e861967e127e9a9a17cb6c3efa95e1cb0eebb22"
     },
     {
@@ -13752,6 +13804,7 @@ const questionBanks = {
       "commonError": "Matching a price label with the wrong curve intersection",
       "feedback": "The graph shows Q=65 at S2-D2 with P=$18 and at S1-D1 with P=$14.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "b56994572d85380fac7c19ea8eb80ae501fe87528b1762e1cc15e6049e8963f9"
     },
     {
@@ -14052,6 +14105,7 @@ const questionBanks = {
       "commonError": "Explaining the price change with a single curve while quantity stays fixed",
       "feedback": "The $18,65 point is S2-D2. The $14,65 point is S1-D1. Demand shifted left while supply shifted right.",
       "image": "demand_supply_two.png",
+      "graphRequired": true,
       "aHash": "afcf0baf6c7027ae63371cea49e7d1620b188c4b5dc5204e1d384a10f4166077"
     },
     {
@@ -14103,6 +14157,7 @@ const questionBanks = {
       "commonError": "Skipping the short-run profit at B or reversing entry and exit",
       "feedback": "Higher demand first raises price to P2 at B. Existing firms earn profit, entry expands supply to S1, and price returns to P1 at D.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "f1642437c67a290ead836319a69efeeca49c0cca435327b74f04966e047542e6"
     },
     {
@@ -14129,6 +14184,7 @@ const questionBanks = {
       "commonError": "Reversing the direction of exit or treating demand as the adjustment mechanism",
       "feedback": "At C, price P0 is below the zero-profit price P1. Losses induce exit, reducing market supply and restoring price toward P1.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "a4f0e3f03465ef6ddb1b03c34190ca5b7b2a89b77f8792dfcf4373601d1df86f"
     },
     {
@@ -14155,6 +14211,7 @@ const questionBanks = {
       "commonError": "Thinking MR=MC guarantees zero profit or that a price-taking firm controls price",
       "feedback": "At B, market price is P2. The firm produces where MC=P2 at Q2, and price exceeds ATC, creating profit.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "6b6019e7244c3a1a2406c052381dee0fe73017bf0e694d636454d074df475789"
     },
     {
@@ -14181,6 +14238,7 @@ const questionBanks = {
       "commonError": "Calling the initial demand shock mean reversion instead of the entry-exit response",
       "feedback": "Mean reversion is the competitive response: entry removes excess returns and exit removes persistent losses.",
       "image": "long_run_competition.png",
+      "graphRequired": true,
       "aHash": "3ed140073eb474e2a6364ed8739ab3ae37e800ddeee8042d6a671ab9e8782306"
     },
     {
