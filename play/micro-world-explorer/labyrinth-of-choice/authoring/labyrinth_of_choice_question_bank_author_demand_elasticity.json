@@ -2487,7 +2487,7 @@
         "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
         "feedback": "D1 lies to the left of D0, so consumers want less at every price. That is a decrease in demand.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-01.png",
+        "image": "demand_hamburgers_left_shift.png",
         "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
         "graphRequired": true
       },
@@ -2515,7 +2515,7 @@
         "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
         "feedback": "A to B is movement down the same demand curve: price drops from $10 to $5, so quantity demanded rises.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-02.png",
+        "image": "demand_tacos_movement_01.png",
         "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
         "graphRequired": true
       },
@@ -2543,7 +2543,7 @@
         "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
         "feedback": "Point A is at a price of $12 while point B is at $6, so point A reflects the higher willingness to pay.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-03.png",
+        "image": "demand_tacos_movement_02.png",
         "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
         "graphRequired": true
       },
@@ -2571,7 +2571,7 @@
         "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
         "feedback": "A rightward shift from D0 to D1 means consumers demand more tacos at each price.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-04.png",
+        "image": "demand_tacos_right_shift.png",
         "imageAlt": "Taco demand graph with D0 shifting right to D1.",
         "graphRequired": true
       },
@@ -2597,7 +2597,7 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "Along a downward-sloping linear demand curve, demand is more elastic toward the high-price, low-quantity end. Point C is in that region.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-01.png",
+        "image": "elasticity_linear_demand_points.png",
         "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
         "graphRequired": true
       },
@@ -2623,7 +2623,7 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "A vertical demand curve means quantity demanded does not change when price changes, so elasticity is zero: perfectly inelastic.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-02.png",
+        "image": "elasticity_perfectly_inelastic.png",
         "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
         "graphRequired": true
       },
@@ -2649,7 +2649,7 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "D1 shows a much larger quantity response to the same $5-to-$3 price change, so D1 is more elastic.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-03.png",
+        "image": "elasticity_compare_curves.png",
         "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
         "graphRequired": true
       },
@@ -2675,304 +2675,8 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "A horizontal demand curve represents perfectly elastic demand: even a tiny price increase above the shown price eliminates quantity demanded.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-05.png",
+        "image": "elasticity_perfectly_elastic.png",
         "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
-        "graphRequired": true
-      },
-      {
-        "id": 310001,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which indifference curve represents the highest utility level?",
-        "options": [
-          "IC1",
-          "IC2",
-          "IC3",
-          "All three represent the same utility"
-        ],
-        "a": 2,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "reverses_the_ordering_of_indifference_curves",
-        "feedback": "Higher indifference curves represent higher utility. IC3 is above IC2 and IC1, so it gives the greatest satisfaction.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-01.png",
-        "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
-        "graphRequired": true
-      },
-      {
-        "id": 310010,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The straight, parallel indifference curves indicate that the two goods are...",
-        "options": [
-          "perfect complements",
-          "perfect substitutes",
-          "inferior goods",
-          "unrelated goods"
-        ],
-        "a": 1,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "confuses_perfect_substitutes_with_perfect_complements",
-        "feedback": "Straight, downward-sloping and parallel indifference curves are the classic shape for perfect substitutes.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-05.png",
-        "imageAlt": "Three parallel downward-sloping indifference curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310012,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The right-angle indifference curves indicate that the two goods are...",
-        "options": [
-          "perfect substitutes",
-          "perfect complements",
-          "normal goods",
-          "public goods"
-        ],
-        "a": 1,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "confuses_l_shaped_indifference_curves_with_straight_line_curves",
-        "feedback": "L-shaped indifference curves show perfect complements because utility depends on consuming the goods together in fixed proportions.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-06.png",
-        "imageAlt": "Three right-angle indifference curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310016,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Budget₀ rotates outward to Budget₁ while the vertical intercept stays the same. What changed?",
-        "options": [
-          "The price of Good X fell",
-          "The price of Good Y fell",
-          "Income fell",
-          "The price of both goods rose"
-        ],
-        "a": 0,
-        "tag": "budget_line_changes",
-        "type": "graph",
-        "objective": "LO3.3",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.3_budget_line_changes",
-        "primarySkill": "budget_line_changes",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "budget_line_changes",
-        "commonError": "misreads_a_budget_pivot_around_the_y_intercept",
-        "feedback": "Because the Y-intercept is unchanged and the X-intercept increases, Good X became cheaper.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310023,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Budget₀ and Budget₁ share the same horizontal intercept, but Budget₁ has a higher vertical intercept. What changed?",
-        "options": [
-          "The price of Good X fell",
-          "The price of Good Y fell",
-          "Income fell",
-          "The consumer became indifferent"
-        ],
-        "a": 1,
-        "tag": "budget_line_changes",
-        "type": "graph",
-        "objective": "LO3.3",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.3_budget_line_changes",
-        "primarySkill": "budget_line_changes",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "budget_line_changes",
-        "commonError": "misreads_a_budget_pivot_around_the_x_intercept",
-        "feedback": "When the X-intercept stays fixed and the Y-intercept rises, Good Y has become cheaper.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310026,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Budget₀ rotates outward to Budget₁ while the vertical intercept stays fixed. Which statement is correct?",
-        "options": [
-          "The price of Good Y rose",
-          "The price of Good X fell",
-          "Income fell",
-          "Both goods became less expensive"
-        ],
-        "a": 1,
-        "tag": "budget_line_changes",
-        "type": "graph",
-        "objective": "LO3.3",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.3_budget_line_changes",
-        "primarySkill": "budget_line_changes",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "budget_line_changes",
-        "commonError": "fails_to_connect_budget_rotation_with_relative_price_changes",
-        "feedback": "A larger X-intercept with the same Y-intercept means Good X became cheaper.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-04.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310033,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. What bundle is represented by point C?",
-        "options": [
-          "10 units of Good X and 10 units of Good Y",
-          "5 units of Good X and 15 units of Good Y",
-          "15 units of Good X and 5 units of Good Y",
-          "20 units of Good X and 0 units of Good Y"
-        ],
-        "a": 0,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "indifference_curve_properties"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "misreads_coordinates_at_the_tangency_point",
-        "feedback": "Point C is located at 10 on the Good X axis and 10 on the Good Y axis.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-02.png",
-        "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310034,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. What bundle is represented by point A?",
-        "options": [
-          "5 units of Good X and 20 units of Good Y",
-          "10 units of Good X and 20 units of Good Y",
-          "20 units of Good X and 10 units of Good Y",
-          "10 units of Good X and 10 units of Good Y"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "reads_the_wrong_coordinates_for_point_A",
-        "feedback": "Point A is at 10 on the horizontal axis and 20 on the vertical axis.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-03.png",
-        "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
-        "graphRequired": true
-      },
-      {
-        "id": 310035,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Point A on the budget line shows a consumer choosing...",
-        "options": [
-          "10 units of Good X and 15 units of Good Y",
-          "15 units of Good X and 10 units of Good Y",
-          "20 units of Good X and 15 units of Good Y",
-          "15 units of Good X and 20 units of Good Y"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "misreads_the_bundle_at_the_single_tangency_point",
-        "feedback": "Point A is at 15 on the Good X axis and 10 on the Good Y axis.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-04.png",
-        "imageAlt": "Budget line tangent to IC2 at point A.",
-        "graphRequired": true
-      },
-      {
-        "id": 310036,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which indifference curve represents the lowest utility level?",
-        "options": [
-          "IC1",
-          "IC2",
-          "IC3",
-          "They all represent the same utility"
-        ],
-        "a": 0,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "easy",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "reverses_the_ordering_of_indifference_curves",
-        "feedback": "IC1 is the lowest curve, so it represents the lowest level of utility.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-01.png",
-        "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
-        "graphRequired": true
-      },
-      {
-        "id": 310037,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Before the price change, which point shows the consumer’s original optimal bundle?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "No point shows the original optimum"
-        ],
-        "a": 0,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "easy",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "confuses_the_initial_optimum_with_the_compensated_or_final_bundle",
-        "feedback": "Point A is on the original budget line and original utility curve, so it is the initial choice before the price of Good X falls.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph showing Budget0, Budget1, U0, U1, and points A, B, and C after a fall in the price of Good X.",
         "graphRequired": true
       }
     ],
@@ -4381,7 +4085,7 @@
         "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
         "feedback": "Reading across the graph at $5, quantity demanded drops from roughly 225 thousand to 125 thousand. That is a decrease of 100 thousand units.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-01.png",
+        "image": "demand_hamburgers_left_shift.png",
         "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
         "graphRequired": true
       },
@@ -4409,7 +4113,7 @@
         "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
         "feedback": "Quantity demanded rises from 100 thousand to 225 thousand, so the increase is 125 thousand.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-02.png",
+        "image": "demand_tacos_movement_01.png",
         "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
         "graphRequired": true
       },
@@ -4437,7 +4141,7 @@
         "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
         "feedback": "The price falls from $12 at A to $6 at B, so the change is a decrease of $6.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-03.png",
+        "image": "demand_tacos_movement_02.png",
         "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
         "graphRequired": true
       },
@@ -4465,7 +4169,7 @@
         "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
         "feedback": "A rightward shift in demand comes from a nonprice demand determinant, such as a rise in popularity.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-05.png",
+        "image": "demand_peanut_butter_right_shift.png",
         "imageAlt": "Peanut butter demand graph with D0 shifting right to D1.",
         "graphRequired": true
       },
@@ -4493,7 +4197,7 @@
         "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
         "feedback": "The midpoint percentage change in quantity is 30/60 = 50%, while the midpoint percentage change in price is 4/8 = 50%. The elasticity coefficient is 1.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-01.png",
+        "image": "elasticity_linear_demand_points.png",
         "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
         "graphRequired": true
       },
@@ -4519,7 +4223,7 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "Quantity demanded does not change at all, so the percentage change in quantity is zero and elasticity equals zero.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-02.png",
+        "image": "elasticity_perfectly_inelastic.png",
         "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
         "graphRequired": true
       },
@@ -4547,7 +4251,7 @@
         "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
         "feedback": "At B, total revenue is 5×35 = 175. At A, total revenue is 3×75 = 225. Revenue rises when price falls, consistent with elastic demand.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-03.png",
+        "image": "elasticity_compare_curves.png",
         "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
         "graphRequired": true
       },
@@ -4575,7 +4279,7 @@
         "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
         "feedback": "At B, total revenue is 7×20 = 140. At A, total revenue is 2×70 = 140. Revenue is unchanged.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-04.png",
+        "image": "elasticity_unit_elastic_curve.png",
         "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
         "graphRequired": true
       },
@@ -4601,308 +4305,8 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "Perfectly elastic demand exists at one price. A price even slightly above that level results in zero quantity demanded.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-05.png",
+        "image": "elasticity_perfectly_elastic.png",
         "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
-        "graphRequired": true
-      },
-      {
-        "id": 310002,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. A bundle on IC2 provides...",
-        "options": [
-          "more utility than IC3 and less than IC1",
-          "the same utility as any bundle on IC1",
-          "more utility than IC1 but less than IC3",
-          "more utility than both IC1 and IC3"
-        ],
-        "a": 2,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "does_not_understand_utility_ranking_across_curves",
-        "feedback": "IC2 is the middle curve, so it delivers more utility than IC1 and less utility than IC3.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-01.png",
-        "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
-        "graphRequired": true
-      },
-      {
-        "id": 310003,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which point gives the consumer the highest attainable utility subject to the budget line?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "All three points are equally preferred"
-        ],
-        "a": 2,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "indifference_curve_properties"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "chooses_an_affordable_bundle_that_is_not_the_best_feasible_bundle",
-        "feedback": "Point C is where the budget line is tangent to the highest attainable indifference curve, so it is the utility-maximizing bundle.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-02.png",
-        "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310006,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Why is point A the consumer’s optimal bundle?",
-        "options": [
-          "It is the cheapest bundle shown",
-          "It lies on the highest attainable indifference curve and is tangent to the budget line",
-          "It uses equal amounts of both goods",
-          "It lies inside the budget set"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "treats_any_affordable_point_as_optimal",
-        "feedback": "A consumer maximizes utility at the highest attainable indifference curve that just touches the budget line. That is exactly what point A shows.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-03.png",
-        "imageAlt": "Budget line tangent to IC2 at point A, with lower and higher indifference curves shown.",
-        "graphRequired": true
-      },
-      {
-        "id": 310011,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which indifference curve represents the highest satisfaction for perfect substitutes?",
-        "options": [
-          "IC1",
-          "IC2",
-          "IC3",
-          "All curves represent equal satisfaction"
-        ],
-        "a": 2,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "misorders_indifference_curves_for_perfect_substitutes",
-        "feedback": "Even with perfect substitutes, higher indifference curves still represent higher utility. IC3 is the highest.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-05.png",
-        "imageAlt": "Three parallel downward-sloping indifference curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310013,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Moving right along the horizontal arm of IC2 while Good Y stays fixed implies...",
-        "options": [
-          "utility rises because the consumer has more of both goods",
-          "utility falls because Good X is worth less",
-          "utility is unchanged because extra Good X alone does not improve utility for perfect complements",
-          "the budget line shifted"
-        ],
-        "a": 2,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "assumes_more_of_one_perfect_complement_always_raises_utility",
-        "feedback": "For perfect complements, extra units of only one good do not increase utility. Utility rises only when both goods increase together.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-06.png",
-        "imageAlt": "Three right-angle indifference curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310020,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Budget₀ rotates inward to Budget₁ while the vertical intercept stays fixed. What happened?",
-        "options": [
-          "The price of Good X rose",
-          "The price of Good Y rose",
-          "Income rose",
-          "Both goods became cheaper"
-        ],
-        "a": 0,
-        "tag": "budget_line_changes",
-        "type": "graph",
-        "objective": "LO3.3",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.3_budget_line_changes",
-        "primarySkill": "budget_line_changes",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "budget_line_changes",
-        "commonError": "misreads_a_budget_rotation_inward_from_the_x_intercept",
-        "feedback": "A smaller X-intercept with the same Y-intercept means Good X became more expensive.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310038,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which point lies on indifference curve IC2?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "Both A and B"
-        ],
-        "a": 2,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [
-          "utility_maximization_mrs"
-        ],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "fails_to_match_points_with_the_correct_indifference_curve",
-        "feedback": "Point C lies on IC2, while A and B lie on lower attainable curves.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-02.png",
-        "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310039,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The budget line is tangent to which indifference curve?",
-        "options": [
-          "IC1",
-          "IC2",
-          "IC3",
-          "none of the curves"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "indifference_curve_properties"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "cannot_identify_the_tangency_curve",
-        "feedback": "The budget line just touches IC2 at point A, so IC2 is the optimal indifference curve.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-03.png",
-        "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
-        "graphRequired": true
-      },
-      {
-        "id": 310040,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The shape of these indifference curves implies that the consumer is willing to trade one good for the other at a...",
-        "options": [
-          "diminishing rate",
-          "constant rate",
-          "rising rate only",
-          "zero rate"
-        ],
-        "a": 1,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [
-          "marginal_rate_substitution"
-        ],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "misses_that_straight_line_indifference_curves_mean_constant_mrs",
-        "feedback": "Perfect substitutes have straight-line indifference curves, which means the MRS is constant.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-05.png",
-        "imageAlt": "Three straight, parallel indifference curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310041,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The L-shaped indifference curves imply that the consumer values the two goods in...",
-        "options": [
-          "fixed proportions",
-          "perfectly flexible proportions",
-          "completely unrelated proportions",
-          "random proportions"
-        ],
-        "a": 0,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "does_not_recognize_the_meaning_of_l_shaped_indifference_curves",
-        "feedback": "L-shaped indifference curves represent perfect complements, meaning the goods are consumed in fixed proportions.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-06.png",
-        "imageAlt": "Three L-shaped indifference curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310042,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. When Budget₀ changes to Budget₁, which good becomes cheaper?",
-        "options": [
-          "Good X",
-          "Good Y",
-          "both goods equally",
-          "neither good"
-        ],
-        "a": 1,
-        "tag": "budget_line_changes",
-        "type": "graph",
-        "objective": "LO3.3",
-        "difficulty": "medium",
-        "conceptCluster": "LO3.3_budget_line_changes",
-        "primarySkill": "budget_line_changes",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "budget_line_changes",
-        "commonError": "misreads_a_budget_line_pivot_around_the_x_intercept",
-        "feedback": "The X-intercept stays the same while the Y-intercept rises, so Good Y becomes cheaper.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph showing a pivot from Budget0 to Budget1 caused by a fall in the price of Good Y.",
         "graphRequired": true
       }
     ],
@@ -6316,7 +5720,7 @@
         "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
         "feedback": "Because D1 is left of D0, D0 shows the larger quantity demanded at every common price.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-01.png",
+        "image": "demand_hamburgers_left_shift.png",
         "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
         "graphRequired": true
       },
@@ -6344,7 +5748,7 @@
         "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
         "feedback": "The entire curve shifts right, which means demand increased because of a nonprice determinant.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-04.png",
+        "image": "demand_tacos_right_shift.png",
         "imageAlt": "Taco demand graph with D0 shifting right to D1.",
         "graphRequired": true
       },
@@ -6372,7 +5776,7 @@
         "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
         "feedback": "From A to B on D0, price falls and quantity demanded increases, which matches the law of demand.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-05.png",
+        "image": "demand_peanut_butter_right_shift.png",
         "imageAlt": "Peanut butter demand graph with point A on D0 at a higher price and point B on D0 at a lower price.",
         "graphRequired": true
       },
@@ -6400,7 +5804,7 @@
         "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
         "feedback": "Reversing the move from B to A means a higher price and a lower quantity demanded on the same curve.",
         "source": "graph_batch_demand_20260816",
-        "image": "DEMAND-03.png",
+        "image": "demand_tacos_movement_02.png",
         "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
         "graphRequired": true
       },
@@ -6426,7 +5830,7 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "On a straight-line demand curve, elasticity declines as price falls and quantity rises. Thus C is most elastic, then B, then A.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-01.png",
+        "image": "elasticity_linear_demand_points.png",
         "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
         "graphRequired": true
       },
@@ -6454,7 +5858,7 @@
         "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
         "feedback": "The quantity remains fixed at 70. Elasticity is therefore zero even though a higher price mechanically raises total revenue.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-02.png",
+        "image": "elasticity_perfectly_inelastic.png",
         "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
         "graphRequired": true
       },
@@ -6482,7 +5886,7 @@
         "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
         "feedback": "For D1, quantity changes by 40 around a midpoint of 55, while price changes by 2 around a midpoint of 4. The ratio is about 72.7%/50% = 1.45.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-03.png",
+        "image": "elasticity_compare_curves.png",
         "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
         "graphRequired": true
       },
@@ -6510,7 +5914,7 @@
         "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
         "feedback": "Quantity changes from 20 to 70: 50/45 ≈ 111.1%. Price changes from 7 to 2: 5/4.5 ≈ 111.1%. Their ratio is 1.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-04.png",
+        "image": "elasticity_unit_elastic_curve.png",
         "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
         "graphRequired": true
       },
@@ -6536,396 +5940,8 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "With perfectly elastic demand, the market accepts the shown price, and quantities can vary along that horizontal line; a higher price drives quantity demanded to zero.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-05.png",
+        "image": "elasticity_perfectly_elastic.png",
         "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
-        "graphRequired": true
-      },
-      {
-        "id": 310004,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Why are points A and B not the best choices for the consumer?",
-        "options": [
-          "They are outside the budget line",
-          "They lie on higher indifference curves than C",
-          "They are affordable but lie on lower attainable indifference curves than point C",
-          "They violate transitivity"
-        ],
-        "a": 2,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "indifference_curve_properties"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "focuses_only_on_affordability_and_ignores_preference_rankings",
-        "feedback": "A and B are feasible, but C lies on the highest attainable indifference curve, so A and B are inferior choices.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-02.png",
-        "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310007,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which statement about IC3 is correct?",
-        "options": [
-          "It is the consumer’s chosen indifference curve at point A",
-          "It lies below the budget line and is affordable",
-          "It represents a preferred utility level but is unattainable with the current budget",
-          "It contains all affordable bundles"
-        ],
-        "a": 2,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "budget_constraint_intercepts_slope"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "thinks_any_higher_indifference_curve_must_be_affordable",
-        "feedback": "IC3 is above the budget line at every relevant point, so it is preferred but unattainable with the current budget.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-03.png",
-        "imageAlt": "Budget line tangent to IC2 at point A, with lower and higher indifference curves shown.",
-        "graphRequired": true
-      },
-      {
-        "id": 310008,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. At the consumer optimum shown at point A, which condition must hold?",
-        "options": [
-          "MRS = price ratio",
-          "MUx = MUy",
-          "Income = 0",
-          "The budget line is steeper than every indifference curve"
-        ],
-        "a": 0,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "marginal_rate_substitution"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "does_not_connect_tangency_with_mrs_and_market_tradeoffs",
-        "feedback": "At an interior optimum, the slope of the indifference curve equals the slope of the budget line, so MRS equals the price ratio.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-04.png",
-        "imageAlt": "Budget line tangent to IC2 at point A.",
-        "graphRequired": true
-      },
-      {
-        "id": 310014,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. If Good X and Good Y are both ordinary goods, what is the problem with these indifference curves?",
-        "options": [
-          "They are too steep",
-          "They slope upward, which violates the idea that more of both goods should be preferred",
-          "They are parallel",
-          "They intersect the axes"
-        ],
-        "a": 1,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "accepts_upward_sloping_indifference_curves_for_ordinary_goods",
-        "feedback": "For ordinary goods, indifference curves should slope downward. Upward-sloping curves imply that getting more of both goods leaves utility unchanged, which is not consistent with more-is-better.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-07.png",
-        "imageAlt": "Three upward-sloping parallel curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310017,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. When the price of Good X falls, the movement from point A to point B is the...",
-        "options": [
-          "income effect",
-          "substitution effect",
-          "market demand effect",
-          "consumer surplus effect"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "confuses_the_compensated_move_with_the_final_income_adjustment",
-        "feedback": "A to B is the substitution effect: the consumer responds to the new relative price of Good X while staying on the original utility level U₀.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310018,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In the same price-change graph, the movement from point B to point C is the...",
-        "options": [
-          "substitution effect",
-          "income effect",
-          "cross-price effect",
-          "normal-good effect"
-        ],
-        "a": 1,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "substitution_effect"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "confuses_the_shift_to_the_new_higher_utility_curve_with_substitution_alone",
-        "feedback": "B to C is the income effect. After the price drop in Good X raises real purchasing power, the consumer moves to a higher utility level U₁.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310021,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. When the price of Good X rises, the movement from point A to point B captures the...",
-        "options": [
-          "income effect",
-          "substitution effect",
-          "law of demand",
-          "budget share"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "mislabels_the_compensated_movement_after_a_price_increase",
-        "feedback": "A to B is the substitution effect: the consumer substitutes away from the now relatively more expensive Good X.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310024,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After the price change, which point is the consumer’s final optimal bundle?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "There is no final optimum"
-        ],
-        "a": 2,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "utility_maximization_mrs"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "mistakes_the_compensated_tangency_for_the_final_choice",
-        "feedback": "Point C lies on the new budget line and the highest attainable indifference curve after the price change, so C is the final chosen bundle.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310043,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Why is point C the consumer’s chosen bundle?",
-        "options": [
-          "It is the cheapest point on the graph",
-          "It lies on the highest attainable indifference curve and on the budget line",
-          "It uses equal amounts of both goods",
-          "It is above the budget line"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "indifference_curve_properties"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "treats_any_point_on_the_budget_line_as_equally_good",
-        "feedback": "Point C is where the budget line reaches the highest attainable indifference curve, so it maximizes utility.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-02.png",
-        "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310044,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. At point A, the slope of the indifference curve equals the slope of the budget line. This means that...",
-        "options": [
-          "total utility is maximized because income is zero",
-          "the marginal rate of substitution equals the price ratio",
-          "the consumer values both goods equally",
-          "the budget line is horizontal"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "marginal_rate_substitution"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "cannot_connect_tangency_to_the_mrs_equals_price_ratio_rule",
-        "feedback": "At an interior optimum, the indifference curve is tangent to the budget line, so the MRS equals the market tradeoff given by the price ratio.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-03.png",
-        "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
-        "graphRequired": true
-      },
-      {
-        "id": 310045,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. What is the main problem with these indifference curves if both items on the axes are goods?",
-        "options": [
-          "They are too flat",
-          "They are upward sloping, which violates the more-is-better assumption",
-          "They are perfectly straight",
-          "They are tangent to each other"
-        ],
-        "a": 1,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "hard",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "accepts_upward_sloping_indifference_curves_for_normal_goods",
-        "feedback": "For ordinary goods, indifference curves should slope downward. Upward-sloping curves would imply that more of both goods leaves utility unchanged.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-07.png",
-        "imageAlt": "Three upward-sloping curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310046,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. When the price of Good X falls, the movement from point A to point B shows the consumer choosing...",
-        "options": [
-          "more Good X and less Good Y",
-          "less Good X and more Good Y",
-          "more of both goods",
-          "less of both goods"
-        ],
-        "a": 0,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "gets_the_direction_of_substitution_wrong_after_a_price_drop",
-        "feedback": "From A to B, Good X rises from 5 to 10 while Good Y falls from 20 to 10. That is the substitution effect.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310047,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. When the price of Good Y falls, the movement from point A to point B indicates the consumer buys...",
-        "options": [
-          "more Good X and less Good Y",
-          "less Good X and more Good Y",
-          "more of both goods",
-          "less of both goods"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "reverses_the_substitution_effect_after_a_drop_in_good_y_price",
-        "feedback": "From A to B, Good X falls from 20 to 10 while Good Y rises from 5 to 10, which is the substitution effect toward the cheaper good Y.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
-        "graphRequired": true
-      },
-      {
-        "id": 310048,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After the price of Good X rises, the consumer’s final choice is at point C. Compared with point A, point C lies on...",
-        "options": [
-          "a higher indifference curve",
-          "the same indifference curve",
-          "a lower indifference curve",
-          "no indifference curve at all"
-        ],
-        "a": 2,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "hard",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "demand_response_income_prices"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "does_not_notice_the_loss_in_welfare_after_a_price_increase",
-        "feedback": "Point C lies on the lower curve U1 rather than the original curve U0, so the consumer is worse off after the price increase.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
         "graphRequired": true
       }
     ],
@@ -8340,7 +7356,7 @@
         "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
         "feedback": "Quantity changes 15/37.5 = 40%. Price changes 2/11 ≈ 18.2%. Elasticity is about 40/18.2 = 2.2.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-01.png",
+        "image": "elasticity_linear_demand_points.png",
         "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
         "graphRequired": true
       },
@@ -8369,7 +7385,7 @@
         "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
         "feedback": "For D1, revenue rises from 175 to 225 as price falls, so demand is elastic. For D2, revenue falls from 235 to 165 as price falls, so demand is inelastic.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-03.png",
+        "image": "elasticity_compare_curves.png",
         "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
         "graphRequired": true
       },
@@ -8397,319 +7413,8 @@
         "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
         "feedback": "Price falls while quantity rises enough to leave total revenue unchanged at 140. That is the total-revenue signature of unit elasticity.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-04.png",
+        "image": "elasticity_unit_elastic_curve.png",
         "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310005,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The tangency at point C implies that the consumer’s willingness to trade Good X for Good Y at C is...",
-        "options": [
-          "greater than the market tradeoff",
-          "less than the market tradeoff",
-          "equal to the market tradeoff shown by the budget line",
-          "unrelated to the market tradeoff"
-        ],
-        "a": 2,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "elite",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "marginal_rate_substitution"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "separates_mrs_from_the_budget_line_slope_at_tangency",
-        "feedback": "At tangency, the slope of the indifference curve equals the slope of the budget line, so the consumer’s MRS equals the market tradeoff.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-02.png",
-        "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
-        "graphRequired": true
-      },
-      {
-        "id": 310015,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. These upward-sloping “indifference curves” could make economic sense only if...",
-        "options": [
-          "at least one axis represented a bad rather than a good",
-          "the consumer had convex preferences",
-          "the goods were perfect substitutes",
-          "income was zero"
-        ],
-        "a": 0,
-        "tag": "indifference_curve_properties",
-        "type": "graph",
-        "objective": "LO3.2",
-        "difficulty": "elite",
-        "conceptCluster": "LO3.2_indifference_curve_properties",
-        "primarySkill": "indifference_curve_properties",
-        "secondarySkills": [],
-        "repairSkill": "indifference_curve_properties",
-        "commonError": "ignores_that_upward_sloping_curves_require_bads_or_reversed_preferences",
-        "feedback": "Upward-sloping indifference curves are inconsistent with ordinary goods. They could only be rationalized if at least one item were a bad or the axes were interpreted differently.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-07.png",
-        "imageAlt": "Three upward-sloping parallel curves labeled IC1, IC2, and IC3.",
-        "graphRequired": true
-      },
-      {
-        "id": 310019,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After Good X becomes cheaper, what is the consumer’s final utility-maximizing choice?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "Any point on U₀"
-        ],
-        "a": 2,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "substitution_effect",
-          "income_effect"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "stops_at_the_compensated_bundle_instead_of_the_final_bundle",
-        "feedback": "The final choice is point C, where the consumer reaches the new higher utility curve U₁ on Budget₁.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310022,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Compared with point A, point C implies that the consumer...",
-        "options": [
-          "reaches a higher utility level after the price increase",
-          "reaches a lower utility level after the price increase",
-          "faces no change in utility",
-          "is off the budget line"
-        ],
-        "a": 1,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "demand_response_income_prices"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "fails_to_notice_that_the_new_choice_is_on_a_lower_indifference_curve",
-        "feedback": "Point C lies on a lower indifference curve than point A, so the consumer ends up worse off after the price increase in Good X.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310025,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. If Good Y becomes cheaper, the compensated movement from A to B shows the consumer buying...",
-        "options": [
-          "more Good X and less Good Y",
-          "less Good X and more Good Y",
-          "more of both goods",
-          "less of both goods"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "gets_the_direction_of_substitution_wrong_when_y_becomes_cheaper",
-        "feedback": "When Good Y becomes cheaper, the substitution effect pushes the consumer toward more Y and away from X. That is the A to B movement shown here.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310027,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In this price-change graph, the movement from A to B isolates the substitution effect. Which change is shown?",
-        "options": [
-          "More Good X and less Good Y",
-          "Less Good X and more Good Y",
-          "More of both goods",
-          "No change in consumption"
-        ],
-        "a": 0,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "reverses_the_direction_of_substitution_when_x_becomes_cheaper",
-        "feedback": "Because Good X became cheaper, the substitution effect moves consumption toward X and away from Y. That is the A to B move.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-04.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310049,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After the price of Good X falls, how does the final bundle at C compare with the initial bundle at A?",
-        "options": [
-          "more Good X and the same amount of Good Y",
-          "more Good X and more Good Y",
-          "less Good X and more Good Y",
-          "the same bundle"
-        ],
-        "a": 0,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "substitution_effect",
-          "income_effect"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "miscompares_the_initial_and_final_bundles_after_a_price_change",
-        "feedback": "Point A is about (5, 20) and point C is about (20, 20), so the consumer ends with more Good X and the same amount of Good Y.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310050,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After the price of Good Y falls, how does the final bundle at C compare with the initial bundle at A?",
-        "options": [
-          "the same amount of Good X and more Good Y",
-          "more Good X and more Good Y",
-          "less Good X and more Good Y",
-          "more Good X and the same amount of Good Y"
-        ],
-        "a": 0,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "substitution_effect",
-          "income_effect"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "misreads_the_initial_and_final_coordinates",
-        "feedback": "Point A is about (20, 5) and point C is about (20, 20), so Good X stays the same while Good Y increases.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
-        "graphRequired": true
-      },
-      {
-        "id": 310051,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After the price of Good X rises, how does the final bundle at C compare with the initial bundle at A?",
-        "options": [
-          "more Good X and the same amount of Good Y",
-          "less Good X and the same amount of Good Y",
-          "less Good X and more Good Y",
-          "more Good X and less Good Y"
-        ],
-        "a": 1,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "income_effect",
-          "substitution_effect"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "misreads_the_coordinates_of_initial_and_final_bundles",
-        "feedback": "Point A is about (20, 20) and point C is about (5, 20), so the consumer ends with less Good X and the same amount of Good Y.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310052,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After the price of Good X falls in this graph, what happens to the consumer’s chosen amounts from A to C?",
-        "options": [
-          "Good X rises and Good Y falls",
-          "both Good X and Good Y rise",
-          "Good X falls and Good Y rises",
-          "Good X rises and Good Y stays the same"
-        ],
-        "a": 1,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "elite",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "income_effect",
-          "substitution_effect"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "cannot_compare_initial_and_final_choices_in_the_alternate_price_drop_graph",
-        "feedback": "Point A is about (10, 20) and point C is about (15, 25), so both goods increase in the final bundle.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-04.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with both goods increasing from the initial to the final bundle.",
-        "graphRequired": true
-      },
-      {
-        "id": 310053,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. For perfect complements, where will the optimal bundle typically occur?",
-        "options": [
-          "At the kink of the highest attainable indifference curve",
-          "Anywhere along a horizontal arm",
-          "Anywhere along a vertical arm",
-          "At the highest vertical intercept"
-        ],
-        "a": 0,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "elite",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "indifference_curve_properties"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "thinks_any_point_on_an_l_shaped_curve_is_equally_likely_to_be_optimal",
-        "feedback": "With perfect complements, extra units of only one good do not raise utility, so the optimum occurs at the kink of the highest attainable indifference curve.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "IC-06.png",
-        "imageAlt": "Three L-shaped indifference curves labeled IC1, IC2, and IC3.",
         "graphRequired": true
       }
     ],
@@ -10131,7 +8836,7 @@
         "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
         "feedback": "B→A has midpoint elasticity 1. C→B has midpoint elasticity about 2.2. Elasticity therefore declines as the movement proceeds down the linear curve.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-01.png",
+        "image": "elasticity_linear_demand_points.png",
         "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
         "graphRequired": true
       },
@@ -10160,7 +8865,7 @@
         "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
         "feedback": "D1 changes quantity by 40 around a midpoint of 55, producing elasticity about 1.45. D2 changes quantity by only 8 around a midpoint of 51, producing elasticity about 0.31.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-03.png",
+        "image": "elasticity_compare_curves.png",
         "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
         "graphRequired": true
       },
@@ -10186,318 +8891,8 @@
         "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
         "feedback": "Slope orientation matters here: vertical demand is perfectly inelastic, while horizontal demand is perfectly elastic.",
         "source": "graph_batch_elasticity_20260816",
-        "image": "ELASTICITY-05.png",
+        "image": "elasticity_perfectly_elastic.png",
         "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
-        "graphRequired": true
-      },
-      {
-        "id": 310009,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. The tangency at point A means the slope of IC2 at A must equal...",
-        "options": [
-          "the consumer’s income",
-          "the slope of the budget line",
-          "the vertical intercept",
-          "zero"
-        ],
-        "a": 1,
-        "tag": "utility_maximization_mrs",
-        "type": "graph",
-        "objective": "LO3.4",
-        "difficulty": "legendary",
-        "conceptCluster": "LO3.4_utility_maximization_mrs",
-        "primarySkill": "utility_maximization_mrs",
-        "secondarySkills": [
-          "marginal_rate_substitution"
-        ],
-        "repairSkill": "utility_maximization_mrs",
-        "commonError": "cannot_translate_a_tangency_picture_into_the_mrs_equals_price_ratio_condition",
-        "feedback": "At an interior optimum, the indifference curve and the budget line share a common slope. That is the MRS = price ratio condition.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "IC-04.png",
-        "imageAlt": "Budget line tangent to IC2 at point A.",
-        "graphRequired": true
-      },
-      {
-        "id": 310028,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. After Good X becomes cheaper, the movement from B to C indicates that the income effect causes the consumer to...",
-        "options": [
-          "buy less X and more Y",
-          "buy less of both goods",
-          "buy less X and less Y",
-          "buy fewer units of X than at B but more Y than at B"
-        ],
-        "a": 3,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "substitution_effect"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "ignores_that_income_effect_can_partially_offset_the_substitution_effect",
-        "feedback": "From B to C, the consumer gives up some X but buys more Y. The income effect partly offsets the substitution effect for X while increasing Y.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-04.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310029,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Comparing the initial and final optima, which statement is correct?",
-        "options": [
-          "At C the consumer buys less X and more Y than at A",
-          "At C the consumer buys more X and less Y than at A",
-          "At C the consumer buys more X and more Y than at A",
-          "At C the consumer buys the same amounts as at A"
-        ],
-        "a": 2,
-        "tag": "demand_response_income_prices",
-        "type": "graph",
-        "objective": "LO4.2",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.2_demand_response_income_prices",
-        "primarySkill": "demand_response_income_prices",
-        "secondarySkills": [
-          "income_effect",
-          "substitution_effect"
-        ],
-        "repairSkill": "demand_response_income_prices",
-        "commonError": "cannot_compare_initial_and_final_optima_after_a_price_change",
-        "feedback": "Point A is about (10, 20) and point C is about (15, 25), so the final bundle contains more of both goods than the initial bundle.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-04.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310030,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Which statement best describes point B in the price-increase graph?",
-        "options": [
-          "It is the final optimum on the new lower indifference curve",
-          "It is the compensated bundle that isolates the substitution effect",
-          "It is unaffordable",
-          "It is the initial optimum before prices change"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "income_effect"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "mistakes_the_compensated_bundle_for_the_final_choice",
-        "feedback": "Point B sits on the compensated budget line tangent to the original utility level, so it isolates the substitution effect.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310031,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In the Y-price-drop graph, which point represents the substitution-effect bundle?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "No point does"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "cannot_identify_the_compensated_tangency_bundle",
-        "feedback": "Point B is the compensated bundle: it lies on the dashed line and the original indifference curve, isolating the substitution effect.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310032,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Why does point C lie on a higher indifference curve than point A?",
-        "options": [
-          "Because the consumer became less efficient",
-          "Because the price change and resulting income effect let the consumer reach a higher utility level",
-          "Because point C is off the budget line",
-          "Because point A violates the budget constraint"
-        ],
-        "a": 1,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "demand_response_income_prices"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "fails_to_link_real_income_gain_with_higher_utility",
-        "feedback": "The lower price raises real purchasing power, so after substitution and income effects the consumer reaches a higher indifference curve at C.",
-        "source": "graph_batch_indifference_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
-        "graphRequired": true
-      },
-      {
-        "id": 310054,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In the price-drop-for-Good-X graph, the movement from point B to point C means the income effect causes the consumer to...",
-        "options": [
-          "buy more Good X and more Good Y",
-          "buy more Good X and the same amount of Good Y",
-          "buy less Good X and more Good Y",
-          "buy less of both goods"
-        ],
-        "a": 0,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "substitution_effect"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "cannot_trace_the_income_effect_from_the_compensated_bundle_to_the_final_bundle",
-        "feedback": "From B to C, Good X rises from 10 to 20 and Good Y rises from 10 to 20. The income effect raises consumption of both goods in this graph.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-01.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310055,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In the price-drop-for-Good-Y graph, what does the move from point B to point C show?",
-        "options": [
-          "the substitution effect reduces both goods",
-          "the income effect raises both goods from the compensated bundle",
-          "the final bundle is on the original utility curve",
-          "Good Y falls while Good X rises"
-        ],
-        "a": 1,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "substitution_effect"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "fails_to_separate_the_income_effect_from_the_substitution_effect",
-        "feedback": "From B at (10, 10) to C at (20, 20), the consumer buys more of both goods. That is the income effect after Good Y becomes cheaper.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-03.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
-        "graphRequired": true
-      },
-      {
-        "id": 310056,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In the price-rise-for-Good-X graph, what does the movement from point A to point B show?",
-        "options": [
-          "more Good X and less Good Y",
-          "less Good X and more Good Y",
-          "less Good X and less Good Y",
-          "more of both goods"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "budget_line_changes"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "gets_the_direction_of_substitution_wrong_when_good_x_becomes_more_expensive",
-        "feedback": "From A at (20, 20) to B at (10, 40), Good X falls and Good Y rises. The substitution effect pushes the consumer away from the now more expensive Good X.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310057,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. In the same price-rise-for-Good-X graph, what does the movement from point B to point C show?",
-        "options": [
-          "more Good X and less Good Y",
-          "less Good X and less Good Y",
-          "less Good X and more Good Y",
-          "more of both goods"
-        ],
-        "a": 1,
-        "tag": "income_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_income_effect",
-        "primarySkill": "income_effect",
-        "secondarySkills": [
-          "substitution_effect"
-        ],
-        "repairSkill": "income_effect",
-        "commonError": "cannot_read_the_income_effect_after_a_price_increase",
-        "feedback": "From B at (10, 40) to C at (5, 20), both goods decrease. The income effect lowers real purchasing power.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-02.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
-        "graphRequired": true
-      },
-      {
-        "id": 310058,
-        "sourceGame": "labyrinthOfChoice",
-        "q": "Refer to the graph. Why is point B not the consumer’s final choice after the price of Good X falls?",
-        "options": [
-          "Because it is not on any indifference curve",
-          "Because it stays on the original utility curve U₀ and only isolates the substitution effect",
-          "Because it lies outside the new budget set",
-          "Because it gives higher utility than point C"
-        ],
-        "a": 1,
-        "tag": "substitution_effect",
-        "type": "graph",
-        "objective": "LO4.3",
-        "difficulty": "legendary",
-        "conceptCluster": "LO4.3_substitution_effect",
-        "primarySkill": "substitution_effect",
-        "secondarySkills": [
-          "income_effect",
-          "demand_response_income_prices"
-        ],
-        "repairSkill": "substitution_effect",
-        "commonError": "mistakes_the_compensated_bundle_for_the_final_utility_maximizing_bundle",
-        "feedback": "Point B is the compensated bundle on the original utility curve U₀. The final choice is point C on the new budget line and higher utility curve U₁.",
-        "source": "graph_batch_indifference_actual_20260816",
-        "image": "INCOME-SUB-04.png",
-        "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with B as the compensated bundle and C as the final optimum.",
         "graphRequired": true
       }
     ],

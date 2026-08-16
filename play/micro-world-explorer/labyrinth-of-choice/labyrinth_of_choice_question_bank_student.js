@@ -1,6 +1,6 @@
 /*
  * STUDENT-FACING QUESTION BANK — THE LABYRINTH OF CHOICE
- * Engine 2.0 non-graph rebuild generated 2026-08-16.
+ * Engine 2.0 rebuild with demand + elasticity + indifference actual graph question batch generated 2026-08-16.
  * Plaintext answer indexes are removed and replaced with SHA-256 hashes.
  */
 
@@ -23,14 +23,14 @@ async function isPublishedAnswerCorrect(question, selectedOptionText) {
 
 const objectiveLabels = {
   "LO3.1": "Develop a theory of choice: how people make choices or decisions.",
-  "LO3.2": "Explain how to represent a consumer’s preferences.",
-  "LO3.3": "Understand how income and prices constrain a consumer’s choices.",
+  "LO3.2": "Explain how to represent a consumer\u2019s preferences.",
+  "LO3.3": "Understand how income and prices constrain a consumer\u2019s choices.",
   "LO3.4": "Determine how consumers maximize utility given their budget constraint and preferences.",
-  "LO4.1": "Derive an individual’s demand curve.",
-  "LO4.2": "Show how changes in income, price, and prices of related goods affect a consumer’s optimal choice.",
+  "LO4.1": "Derive an individual\u2019s demand curve.",
+  "LO4.2": "Show how changes in income, price, and prices of related goods affect a consumer\u2019s optimal choice.",
   "LO4.3": "Understand the difference between the substitution effect and income effect.",
-  "LO4.4": "Explain what factors cause an individual’s demand curve to shift inward (left) or outward (right).",
-  "LO4.5": "Explain how price changes affect people’s welfare or consumer surplus.",
+  "LO4.4": "Explain what factors cause an individual\u2019s demand curve to shift inward (left) or outward (right).",
+  "LO4.5": "Explain how price changes affect people\u2019s welfare or consumer surplus.",
   "LO4.6": "Derive a market demand curve from individual demand curves.",
   "LO4.7": "Measure responsiveness: how much quantity demanded changes when price or another variable changes."
 };
@@ -61,7 +61,4343 @@ const LABYRINTH_SKILL_OBJECTIVE_MAP = {
   "elasticity_determinants": "LO4.7"
 };
 
-const questionBanks = {
+const microSkillRepairPools = {
+  "theory_of_choice": [
+    {
+      "id": 500000,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of restaurant meals. In consumer choice theory, what determines the bundle selected?",
+      "options": [
+        "The most preferred affordable bundle",
+        "The bundle with the highest price",
+        "A randomly chosen bundle",
+        "The bundle with the most units regardless of preference"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "definition",
+      "objective": "LO3.1",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500001,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of gym visits. In consumer choice theory, what determines the bundle selected?",
+      "options": [
+        "The most preferred affordable bundle",
+        "The bundle with the highest price",
+        "A randomly chosen bundle",
+        "The bundle with the most units regardless of preference"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "definition",
+      "objective": "LO3.1",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500002,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of movie tickets. In consumer choice theory, what determines the bundle selected?",
+      "options": [
+        "The most preferred affordable bundle",
+        "The bundle with the highest price",
+        "A randomly chosen bundle",
+        "The bundle with the most units regardless of preference"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "definition",
+      "objective": "LO3.1",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500003,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of bottled tea. In consumer choice theory, what determines the bundle selected?",
+      "options": [
+        "The most preferred affordable bundle",
+        "The bundle with the highest price",
+        "A randomly chosen bundle",
+        "The bundle with the most units regardless of preference"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "definition",
+      "objective": "LO3.1",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_repair"
+    }
+  ],
+  "preferences_complete_transitive": [
+    {
+      "id": 5000,
+      "q": "Preferences are rational if they are...",
+      "options": [
+        "Complete and transitive",
+        "Based only on prices",
+        "Identical across consumers",
+        "Always maximize income"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "definition",
+      "objective": "LO3.2",
+      "feedback": "Rational preferences must be complete and transitive so consumers can rank bundles consistently.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5001,
+      "q": "If a consumer prefers bundle A to bundle B, this means...",
+      "options": [
+        "A provides greater satisfaction than B",
+        "A costs less than B",
+        "A contains more of every good",
+        "A lies inside the budget constraint"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "interpretation",
+      "objective": "LO3.1",
+      "feedback": "Preference means the consumer derives greater utility from A than from B.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.1_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5002,
+      "q": "Utility represents...",
+      "options": [
+        "A ranking of satisfaction across bundles",
+        "Total income a consumer earns",
+        "The price of goods",
+        "The quantity purchased"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "definition",
+      "objective": "LO3.1",
+      "feedback": "Utility measures the satisfaction a consumer receives from different bundles.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.1_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5003,
+      "q": "If preferences are complete, a consumer can...",
+      "options": [
+        "Compare any two bundles",
+        "Always afford their preferred bundle",
+        "Avoid trade-offs",
+        "Ignore prices"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "definition",
+      "objective": "LO3.2",
+      "feedback": "Completeness means consumers can rank any two bundles.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_repair"
+    }
+  ],
+  "indifference_curve_properties": [
+    {
+      "id": 5010,
+      "q": "Two bundles on the same indifference curve...",
+      "options": [
+        "Provide the same satisfaction",
+        "Cost the same amount",
+        "Contain the same quantities",
+        "Are always affordable"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "definition",
+      "objective": "LO3.2",
+      "feedback": "All points on an indifference curve yield the same utility.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5012,
+      "q": "Convex indifference curves imply...",
+      "options": [
+        "Diminishing marginal rate of substitution",
+        "Constant trade-offs",
+        "Perfect substitutes",
+        "Increasing marginal utility"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "definition",
+      "objective": "LO3.2",
+      "feedback": "As a consumer has more of one good, they are willing to give up less of the other.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5013,
+      "q": "A higher indifference curve represents...",
+      "options": [
+        "Greater satisfaction",
+        "Higher income",
+        "Higher prices",
+        "Greater demand"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "feedback": "Curves farther from the origin represent higher levels of utility.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5014,
+      "q": "If a bundle lies above an indifference curve, it is...",
+      "options": [
+        "Preferred to bundles on that curve",
+        "Less preferred",
+        "Unaffordable",
+        "Equal in satisfaction"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "feedback": "Bundles above the curve provide higher utility.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_repair"
+    }
+  ],
+  "marginal_rate_substitution": [
+    {
+      "id": 5011,
+      "q": "The slope of an indifference curve represents the...",
+      "options": [
+        "Marginal rate of substitution",
+        "Price ratio",
+        "Income level",
+        "Demand elasticity"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "definition",
+      "objective": "LO3.2",
+      "feedback": "The slope equals the marginal rate of substitution between the goods.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5018,
+      "q": "As a consumer moves down an indifference curve, the MRS...",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Remains constant",
+        "Becomes zero"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "feedback": "Convexity implies diminishing willingness to substitute.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5019,
+      "q": "A flatter indifference curve means...",
+      "options": [
+        "Lower MRS",
+        "Higher income",
+        "Higher utility",
+        "Greater demand"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "feedback": "A flatter slope means the consumer gives up less of Y for X.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 500004,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 The marginal rate of substitution (MRS) describes what?",
+      "options": [
+        "How much of one good a consumer is willing to give up for another while holding utility constant",
+        "How much income changes when price changes",
+        "The slope of the market demand curve only",
+        "The amount of consumer surplus"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "definition",
+      "objective": "LO3.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "MRS is the consumer's willingness to trade one good for another along an indifference curve.",
+      "source": "engine2_repair"
+    }
+  ],
+  "budget_constraint_intercepts_slope": [
+    {
+      "id": 5020,
+      "q": "A budget constraint shows...",
+      "options": [
+        "All combinations of goods a consumer can afford",
+        "The bundles consumers most prefer",
+        "The firm's production choices",
+        "The market demand curve"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "definition",
+      "objective": "LO3.3",
+      "feedback": "The budget line shows all affordable combinations given income and prices.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5022,
+      "q": "If the price of good X increases while income stays constant, the budget line...",
+      "options": [
+        "Pivots inward along the X-axis intercept",
+        "Shifts outward parallel",
+        "Rotates outward",
+        "Becomes horizontal"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "feedback": "A higher price reduces the maximum quantity of X that can be purchased.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5023,
+      "q": "The intercepts of a budget line represent...",
+      "options": [
+        "Maximum quantities of each good affordable if income is spent on only that good",
+        "The consumer's utility level",
+        "Market demand",
+        "Producer profits"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "definition",
+      "objective": "LO3.3",
+      "feedback": "Intercepts show the maximum amount of each good that could be purchased individually.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5024,
+      "q": "Bundles inside the budget constraint are...",
+      "options": [
+        "Affordable but not fully using income",
+        "Unaffordable",
+        "Preferred to all others",
+        "Impossible to purchase"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "feedback": "Points inside the line are affordable but do not spend the entire budget.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_repair"
+    }
+  ],
+  "budget_line_changes": [
+    {
+      "id": 5021,
+      "q": "If income rises and prices stay the same, the budget line...",
+      "options": [
+        "Shifts outward parallel",
+        "Rotates inward",
+        "Becomes steeper",
+        "Does not change"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "feedback": "Higher income increases purchasing power for both goods.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5029,
+      "q": "If income decreases, the budget line...",
+      "options": [
+        "Shifts inward parallel",
+        "Rotates outward",
+        "Becomes flatter",
+        "Does not change"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "feedback": "Lower income reduces purchasing power equally for both goods.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 500005,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 Income rises while both prices stay unchanged. What happens to the budget line?",
+      "options": [
+        "It shifts outward in parallel",
+        "It rotates around the X-intercept",
+        "It rotates around the Y-intercept",
+        "It becomes steeper with the same intercepts"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Higher income raises both intercepts proportionally without changing the slope.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500006,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair \u2014 Income rises while both prices stay unchanged. What happens to the budget line?",
+      "options": [
+        "It shifts outward in parallel",
+        "It rotates around the X-intercept",
+        "It rotates around the Y-intercept",
+        "It becomes steeper with the same intercepts"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Higher income raises both intercepts proportionally without changing the slope.",
+      "source": "engine2_repair"
+    }
+  ],
+  "utility_maximization_mrs": [
+    {
+      "id": 5030,
+      "q": "Consumer equilibrium occurs where...",
+      "options": [
+        "The highest attainable indifference curve touches the budget line",
+        "Demand equals supply",
+        "Income equals price",
+        "Utility equals zero"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "Consumers maximize utility at the tangency between the budget line and an indifference curve.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5031,
+      "q": "At the optimal bundle, the marginal rate of substitution equals...",
+      "options": [
+        "The price ratio",
+        "Income",
+        "Utility",
+        "Market demand"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "Utility maximization occurs when MRS equals Px/Py.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5034,
+      "q": "At equilibrium the consumer...",
+      "options": [
+        "Cannot increase satisfaction without changing prices or income",
+        "Consumes equal amounts of both goods",
+        "Faces zero prices",
+        "Has no preferences"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "At the optimal bundle no affordable reallocation improves utility.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5035,
+      "q": "If MRS > Px/Py, the consumer should...",
+      "options": [
+        "Consume more X",
+        "Consume more Y",
+        "Do nothing",
+        "Increase income"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "The consumer values X more than the market does\u2014buy more X.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_repair"
+    }
+  ],
+  "marginal_utility_per_dollar": [
+    {
+      "id": 5032,
+      "q": "If MUx/Px is greater than MUy/Py, the consumer should...",
+      "options": [
+        "Consume more X and less Y",
+        "Consume more Y and less X",
+        "Reduce income",
+        "Consume equal quantities"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "Consumers shift spending toward the good with higher marginal utility per dollar.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5033,
+      "q": "If MUx/Px is less than MUy/Py, the consumer should...",
+      "options": [
+        "Consume more Y and less X",
+        "Consume more X",
+        "Stop consuming both goods",
+        "Increase income"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "Consumers increase consumption of the good providing greater utility per dollar.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5036,
+      "q": "If MRS < Px/Py, the consumer should...",
+      "options": [
+        "Consume more Y",
+        "Consume more X",
+        "Stop consuming",
+        "Increase prices"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "The consumer values Y more per dollar\u2014shift toward Y.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 500007,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 MUx=20 and Px=$5. What is marginal utility per dollar for X?",
+      "options": [
+        "4",
+        "100",
+        "0.25",
+        "15"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "calculation",
+      "objective": "LO3.4",
+      "difficulty": "repair",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "feedback": "MUx/Px=20/5=4.",
+      "source": "engine2_repair"
+    }
+  ],
+  "derive_individual_demand": [
+    {
+      "id": 5040,
+      "q": "The law of demand states that when price rises...",
+      "options": [
+        "Quantity demanded falls",
+        "Quantity demanded rises",
+        "Demand shifts outward",
+        "Elasticity becomes zero"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "definition",
+      "objective": "LO4.1",
+      "feedback": "Higher prices reduce the quantity consumers are willing to buy.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5041,
+      "q": "A demand curve shows...",
+      "options": [
+        "The relationship between price and quantity demanded",
+        "Income and utility",
+        "Costs and production",
+        "Market equilibrium"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "definition",
+      "objective": "LO4.1",
+      "feedback": "Demand curves show how quantity demanded changes as price changes.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5043,
+      "q": "A movement along a demand curve occurs when...",
+      "options": [
+        "The price of the good changes",
+        "Income changes",
+        "Preferences change",
+        "Population changes"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "feedback": "Only price changes cause movement along the demand curve.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5048,
+      "q": "A student says: 'When price rises, demand falls.' What is wrong?",
+      "options": [
+        "They confused demand with quantity demanded",
+        "They are correct",
+        "Demand always falls with price",
+        "Demand and quantity demanded are identical"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "trap",
+      "objective": "LO4.1",
+      "feedback": "Price changes affect quantity demanded, not demand itself.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_repair"
+    }
+  ],
+  "demand_response_income_prices": [
+    {
+      "id": 500008,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It becomes perfectly inelastic",
+        "It moves along X's existing demand curve because Px changed"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500009,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It becomes perfectly inelastic",
+        "It moves along X's existing demand curve because Px changed"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500010,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It becomes perfectly inelastic",
+        "It moves along X's existing demand curve because Px changed"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500011,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It becomes perfectly inelastic",
+        "It moves along X's existing demand curve because Px changed"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
+      "source": "engine2_repair"
+    }
+  ],
+  "normal_inferior_goods": [
+    {
+      "id": 5044,
+      "q": "If income increases and a good is normal, demand will...",
+      "options": [
+        "Shift outward",
+        "Shift inward",
+        "Stay the same",
+        "Become perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "interpretation",
+      "objective": "LO4.2",
+      "feedback": "Higher income increases demand for normal goods.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 500012,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
+      "options": [
+        "Inferior",
+        "Normal",
+        "Perfect complement",
+        "Unit elastic"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "feedback": "Demand for an inferior good falls when income rises.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500013,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
+      "options": [
+        "Inferior",
+        "Normal",
+        "Perfect complement",
+        "Unit elastic"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "feedback": "Demand for an inferior good falls when income rises.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500014,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair \u2014 Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
+      "options": [
+        "Inferior",
+        "Normal",
+        "Perfect complement",
+        "Unit elastic"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "feedback": "Demand for an inferior good falls when income rises.",
+      "source": "engine2_repair"
+    }
+  ],
+  "substitution_effect": [
+    {
+      "id": 500015,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "options": [
+        "Buy relatively more X and less Y",
+        "Buy relatively less X and more Y",
+        "Buy less of both goods",
+        "Ignore relative prices"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500016,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "options": [
+        "Buy relatively more X and less Y",
+        "Buy relatively less X and more Y",
+        "Buy less of both goods",
+        "Ignore relative prices"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500017,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "options": [
+        "Buy relatively more X and less Y",
+        "Buy relatively less X and more Y",
+        "Buy less of both goods",
+        "Ignore relative prices"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500018,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "options": [
+        "Buy relatively more X and less Y",
+        "Buy relatively less X and more Y",
+        "Buy less of both goods",
+        "Ignore relative prices"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
+      "source": "engine2_repair"
+    }
+  ],
+  "income_effect": [
+    {
+      "id": 500019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "options": [
+        "Income effect",
+        "Substitution effect",
+        "Cross-price effect",
+        "Market aggregation"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "options": [
+        "Income effect",
+        "Substitution effect",
+        "Cross-price effect",
+        "Market aggregation"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "options": [
+        "Income effect",
+        "Substitution effect",
+        "Cross-price effect",
+        "Market aggregation"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "options": [
+        "Income effect",
+        "Substitution effect",
+        "Cross-price effect",
+        "Market aggregation"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
+      "source": "engine2_repair"
+    }
+  ],
+  "giffen_good_logic": [
+    {
+      "id": 500023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "options": [
+        "Quantity demanded rises",
+        "Quantity demanded falls normally",
+        "Demand becomes perfectly elastic",
+        "Income must rise"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "options": [
+        "Quantity demanded rises",
+        "Quantity demanded falls normally",
+        "Demand becomes perfectly elastic",
+        "Income must rise"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "options": [
+        "Quantity demanded rises",
+        "Quantity demanded falls normally",
+        "Demand becomes perfectly elastic",
+        "Income must rise"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500026,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "options": [
+        "Quantity demanded rises",
+        "Quantity demanded falls normally",
+        "Demand becomes perfectly elastic",
+        "Income must rise"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "definition",
+      "objective": "LO4.3",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
+      "source": "engine2_repair"
+    }
+  ],
+  "demand_curve_shifts": [
+    {
+      "id": 5045,
+      "q": "Which situation represents a shift in demand rather than a movement along the curve?",
+      "options": [
+        "A change in income",
+        "A change in the good\u2019s price",
+        "A movement from one point to another on the curve",
+        "A change in quantity demanded"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "trap",
+      "objective": "LO4.4",
+      "feedback": "Changes in income shift demand, while price changes move along the curve.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5046,
+      "q": "If the price of a substitute good rises, what happens to demand?",
+      "options": [
+        "Demand increases",
+        "Demand decreases",
+        "Quantity demanded increases",
+        "Nothing changes"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "feedback": "Substitutes becoming more expensive increase demand for the good.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5047,
+      "q": "If the price of a complement falls, demand for the related good will...",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Stay the same",
+        "Become perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "feedback": "Cheaper complements increase demand for the good.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 5049,
+      "q": "If population increases, the demand curve will...",
+      "options": [
+        "Shift outward",
+        "Shift inward",
+        "Rotate",
+        "Stay the same"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "feedback": "More consumers increase demand.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_repair"
+    }
+  ],
+  "consumer_surplus": [
+    {
+      "id": 500027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A buyer is willing to pay $50 for an item and pays $25. What is consumer surplus?",
+      "options": [
+        "$25",
+        "$75",
+        "$20",
+        "$50"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Consumer surplus is willingness to pay minus price: 50-25=$25.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A buyer is willing to pay $55 for an item and pays $30. What is consumer surplus?",
+      "options": [
+        "$25",
+        "$85",
+        "$30",
+        "$55"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Consumer surplus is willingness to pay minus price: 55-30=$25.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500029,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A buyer is willing to pay $60 for an item and pays $35. What is consumer surplus?",
+      "options": [
+        "$25",
+        "$95",
+        "$35",
+        "$60"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Consumer surplus is willingness to pay minus price: 60-35=$25.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500030,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A buyer is willing to pay $65 for an item and pays $20. What is consumer surplus?",
+      "options": [
+        "$45",
+        "$85",
+        "$20",
+        "$65"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Consumer surplus is willingness to pay minus price: 65-20=$45.",
+      "source": "engine2_repair"
+    }
+  ],
+  "market_demand_aggregation": [
+    {
+      "id": 5042,
+      "q": "Market demand is found by...",
+      "options": [
+        "Adding individual demand curves horizontally",
+        "Adding them vertically",
+        "Multiplying price by quantity",
+        "Averaging incomes"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "definition",
+      "objective": "LO4.6",
+      "feedback": "Market demand sums the quantities demanded by all consumers at each price.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "source": "legacy_repair"
+    },
+    {
+      "id": 500031,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 At a price of $10, three consumers demand 8, 15, and 3 units. What is market quantity demanded?",
+      "options": [
+        "26",
+        "8.67",
+        "15",
+        "360"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "calculation",
+      "objective": "LO4.6",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand horizontally sums individual quantities at the same price.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500032,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 At a price of $10, three consumers demand 9, 17, and 4 units. What is market quantity demanded?",
+      "options": [
+        "30",
+        "10.0",
+        "17",
+        "612"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "calculation",
+      "objective": "LO4.6",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand horizontally sums individual quantities at the same price.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500033,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 At a price of $10, three consumers demand 10, 19, and 1 units. What is market quantity demanded?",
+      "options": [
+        "30",
+        "10.0",
+        "19",
+        "190"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "calculation",
+      "objective": "LO4.6",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand horizontally sums individual quantities at the same price.",
+      "source": "engine2_repair"
+    }
+  ],
+  "price_elasticity_fundamentals": [
+    {
+      "id": 500034,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 0.4. Demand is:",
+      "options": [
+        "Inelastic",
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "A normal good"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "|Ed| < 1, so demand is inelastic.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500035,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 0.8. Demand is:",
+      "options": [
+        "Inelastic",
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "A normal good"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "|Ed| < 1, so demand is inelastic.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500036,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 1.0. Demand is:",
+      "options": [
+        "Unit elastic",
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "A normal good"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "|Ed| = 1, so demand is unit elastic.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500037,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 1.5. Demand is:",
+      "options": [
+        "Elastic",
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "A normal good"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "|Ed| > 1, so demand is elastic.",
+      "source": "engine2_repair"
+    }
+  ],
+  "midpoint_elasticity": [
+    {
+      "id": 500038,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "options": [
+        "It gives the same elasticity for a move between two points regardless of direction",
+        "It guarantees elasticity equals 1",
+        "It removes the need to calculate quantity changes",
+        "It measures only total revenue"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500039,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "options": [
+        "It gives the same elasticity for a move between two points regardless of direction",
+        "It guarantees elasticity equals 1",
+        "It removes the need to calculate quantity changes",
+        "It measures only total revenue"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500040,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "options": [
+        "It gives the same elasticity for a move between two points regardless of direction",
+        "It guarantees elasticity equals 1",
+        "It removes the need to calculate quantity changes",
+        "It measures only total revenue"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500041,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "options": [
+        "It gives the same elasticity for a move between two points regardless of direction",
+        "It guarantees elasticity equals 1",
+        "It removes the need to calculate quantity changes",
+        "It measures only total revenue"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
+      "source": "engine2_repair"
+    }
+  ],
+  "elasticity_total_revenue": [
+    {
+      "id": 500042,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "options": [
+        "Total revenue rises",
+        "Total revenue falls",
+        "Total revenue is unchanged",
+        "Total revenue becomes zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500043,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "options": [
+        "Total revenue rises",
+        "Total revenue falls",
+        "Total revenue is unchanged",
+        "Total revenue becomes zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500044,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "options": [
+        "Total revenue rises",
+        "Total revenue falls",
+        "Total revenue is unchanged",
+        "Total revenue becomes zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500045,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "options": [
+        "Total revenue rises",
+        "Total revenue falls",
+        "Total revenue is unchanged",
+        "Total revenue becomes zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "definition",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
+      "source": "engine2_repair"
+    }
+  ],
+  "cross_price_elasticity": [
+    {
+      "id": 500046,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "options": [
+        "Substitutes",
+        "Complements",
+        "Both inferior",
+        "Unrelated by definition"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500047,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "options": [
+        "Substitutes",
+        "Complements",
+        "Both inferior",
+        "Unrelated by definition"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500048,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "options": [
+        "Substitutes",
+        "Complements",
+        "Both inferior",
+        "Unrelated by definition"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500049,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "options": [
+        "Substitutes",
+        "Complements",
+        "Both inferior",
+        "Unrelated by definition"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
+      "source": "engine2_repair"
+    }
+  ],
+  "income_elasticity": [
+    {
+      "id": 500050,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 A negative income elasticity means the good is:",
+      "options": [
+        "Inferior",
+        "Normal",
+        "A substitute",
+        "Perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500051,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair \u2014 A negative income elasticity means the good is:",
+      "options": [
+        "Inferior",
+        "Normal",
+        "A substitute",
+        "Perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500052,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair \u2014 A negative income elasticity means the good is:",
+      "options": [
+        "Inferior",
+        "Normal",
+        "A substitute",
+        "Perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500053,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 A negative income elasticity means the good is:",
+      "options": [
+        "Inferior",
+        "Normal",
+        "A substitute",
+        "Perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
+      "source": "engine2_repair"
+    }
+  ],
+  "elasticity_determinants": [
+    {
+      "id": 500054,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "options": [
+        "A brand with many close substitutes",
+        "A unique emergency medicine with no close substitute",
+        "A tiny-budget necessity",
+        "A good buyers cannot postpone"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500055,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "options": [
+        "A brand with many close substitutes",
+        "A unique emergency medicine with no close substitute",
+        "A tiny-budget necessity",
+        "A good buyers cannot postpone"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500056,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "options": [
+        "A brand with many close substitutes",
+        "A unique emergency medicine with no close substitute",
+        "A tiny-budget necessity",
+        "A good buyers cannot postpone"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
+      "source": "engine2_repair"
+    },
+    {
+      "id": 500057,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "options": [
+        "A brand with many close substitutes",
+        "A unique emergency medicine with no close substitute",
+        "A tiny-budget necessity",
+        "A good buyers cannot postpone"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "repair",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
+      "source": "engine2_repair"
+    }
+  ]
+};
+
+const microSkillBridgePools = {
+  "theory_of_choice": [
+    {
+      "id": 600000,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "options": [
+        "Choose B because A is infeasible",
+        "Choose A because preferences always override constraints",
+        "Choose neither because the ranking is inconsistent",
+        "Choose randomly between A and B"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "application",
+      "objective": "LO3.1",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600001,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "options": [
+        "Choose B because A is infeasible",
+        "Choose A because preferences always override constraints",
+        "Choose neither because the ranking is inconsistent",
+        "Choose randomly between A and B"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "application",
+      "objective": "LO3.1",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600002,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "options": [
+        "Choose B because A is infeasible",
+        "Choose A because preferences always override constraints",
+        "Choose neither because the ranking is inconsistent",
+        "Choose randomly between A and B"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "application",
+      "objective": "LO3.1",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600003,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "options": [
+        "Choose B because A is infeasible",
+        "Choose A because preferences always override constraints",
+        "Choose neither because the ranking is inconsistent",
+        "Choose randomly between A and B"
+      ],
+      "a": 0,
+      "tag": "theory_of_choice",
+      "type": "application",
+      "objective": "LO3.1",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "preferences_complete_transitive": [
+    {
+      "id": 600004,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "options": [
+        "A is preferred to C",
+        "C is preferred to A",
+        "A and C must be identical",
+        "Nothing can be inferred"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600005,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using gym memberships, the Archivist asks: bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "options": [
+        "A is preferred to C",
+        "C is preferred to A",
+        "A and C must be identical",
+        "Nothing can be inferred"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600006,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "options": [
+        "A is preferred to C",
+        "C is preferred to A",
+        "A and C must be identical",
+        "Nothing can be inferred"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600007,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "options": [
+        "A is preferred to C",
+        "C is preferred to A",
+        "A and C must be identical",
+        "Nothing can be inferred"
+      ],
+      "a": 0,
+      "tag": "preferences_complete_transitive",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "indifference_curve_properties": [
+    {
+      "id": 600008,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "options": [
+        "A crossing would assign inconsistent utility rankings to the same bundles",
+        "Crossing would make income zero",
+        "Crossing would force both goods to have equal prices",
+        "Crossing would make demand perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600009,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "options": [
+        "A crossing would assign inconsistent utility rankings to the same bundles",
+        "Crossing would make income zero",
+        "Crossing would force both goods to have equal prices",
+        "Crossing would make demand perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600010,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "options": [
+        "A crossing would assign inconsistent utility rankings to the same bundles",
+        "Crossing would make income zero",
+        "Crossing would force both goods to have equal prices",
+        "Crossing would make demand perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600011,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "options": [
+        "A crossing would assign inconsistent utility rankings to the same bundles",
+        "Crossing would make income zero",
+        "Crossing would force both goods to have equal prices",
+        "Crossing would make demand perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "indifference_curve_properties",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "marginal_rate_substitution": [
+    {
+      "id": 600012,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 At a bundle, MUx=26 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
+      "options": [
+        "3.2 units of Y per unit of X",
+        "0.3 units of Y per unit of X",
+        "34 units of Y per unit of X",
+        "18 units of Y per unit of X"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "calculation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "MRS=26/8=3.2.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600013,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 At a bundle, MUx=28 and MUy=10. Using MRS=MUx/MUy, what is the MRS?",
+      "options": [
+        "2.8 units of Y per unit of X",
+        "0.4 units of Y per unit of X",
+        "38 units of Y per unit of X",
+        "18 units of Y per unit of X"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "calculation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "MRS=28/10=2.8.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600014,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 At a bundle, MUx=30 and MUy=6. Using MRS=MUx/MUy, what is the MRS?",
+      "options": [
+        "5.0 units of Y per unit of X",
+        "0.2 units of Y per unit of X",
+        "36 units of Y per unit of X",
+        "24 units of Y per unit of X"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "calculation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "MRS=30/6=5.0.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600015,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 At a bundle, MUx=32 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
+      "options": [
+        "4.0 units of Y per unit of X",
+        "0.2 units of Y per unit of X",
+        "40 units of Y per unit of X",
+        "24 units of Y per unit of X"
+      ],
+      "a": 0,
+      "tag": "marginal_rate_substitution",
+      "type": "calculation",
+      "objective": "LO3.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "MRS=32/8=4.0.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "budget_constraint_intercepts_slope": [
+    {
+      "id": 600016,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 With income $120, Px=$20, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "options": [
+        "-20/15",
+        "-15/20",
+        "-120/20",
+        "-120/15"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The budget-line slope is -Px/Py.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600017,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 With income $60, Px=$5, and Py=$20, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "options": [
+        "-5/20",
+        "-20/5",
+        "-60/5",
+        "-60/20"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The budget-line slope is -Px/Py.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600018,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 With income $80, Px=$10, and Py=$10, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "options": [
+        "-1",
+        "+1",
+        "-8",
+        "+8"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The budget-line slope is -Px/Py = -10/10 = -1.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 With income $100, Px=$15, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "options": [
+        "-1",
+        "+1",
+        "-6.67",
+        "+6.67"
+      ],
+      "a": 0,
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The budget-line slope is -Px/Py = -15/15 = -1.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "budget_line_changes": [
+    {
+      "id": 600020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "options": [
+        "It rotates outward around the Y-intercept",
+        "It shifts outward in parallel",
+        "It rotates inward around the X-intercept",
+        "It keeps both intercepts unchanged"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using gym memberships, the Archivist asks: bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "options": [
+        "It rotates outward around the Y-intercept",
+        "It shifts outward in parallel",
+        "It rotates inward around the X-intercept",
+        "It keeps both intercepts unchanged"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "options": [
+        "It rotates outward around the Y-intercept",
+        "It shifts outward in parallel",
+        "It rotates inward around the X-intercept",
+        "It keeps both intercepts unchanged"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "options": [
+        "It rotates outward around the Y-intercept",
+        "It shifts outward in parallel",
+        "It rotates inward around the X-intercept",
+        "It keeps both intercepts unchanged"
+      ],
+      "a": 0,
+      "tag": "budget_line_changes",
+      "type": "application",
+      "objective": "LO3.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "utility_maximization_mrs": [
+    {
+      "id": 6024,
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: consumer equilibrium occurs where...",
+      "options": [
+        "The highest attainable indifference curve is tangent to the budget line",
+        "Income equals spending on one good",
+        "Demand equals supply",
+        "Utility is zero"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "Consumers maximize utility at the point where the best affordable indifference curve touches the budget line.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6025,
+      "q": "During a bridge check using campus meals, the Archivist asks: at the optimal bundle, the marginal rate of substitution equals...",
+      "options": [
+        "The ratio of prices",
+        "Total income",
+        "The slope of the demand curve",
+        "Total utility"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "Consumer equilibrium occurs where MRS equals the price ratio.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6028,
+      "q": "If a consumer moves along a budget line to a higher indifference curve, utility...",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Stays the same",
+        "Becomes zero"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "Higher curves represent greater satisfaction.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6029,
+      "q": "A corner solution occurs when...",
+      "options": [
+        "Tangency is not possible",
+        "MRS equals price ratio",
+        "Income is zero",
+        "Prices are equal"
+      ],
+      "a": 0,
+      "tag": "utility_maximization_mrs",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "Sometimes the best bundle is at an endpoint.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_bridge"
+    }
+  ],
+  "marginal_utility_per_dollar": [
+    {
+      "id": 6026,
+      "q": "During a bridge check using concert tickets, the Archivist asks: if MUx/Px is greater than MUy/Py, the consumer should...",
+      "options": [
+        "Consume more X and less Y",
+        "Consume more Y and less X",
+        "Stop consuming both goods",
+        "Reduce income"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "The consumer should shift spending toward the good with higher marginal utility per dollar.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6027,
+      "q": "If MRS > Px/Py, the consumer is...",
+      "options": [
+        "Not maximizing utility",
+        "At equilibrium",
+        "Facing no trade-offs",
+        "Maximizing income"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "MRS must equal the price ratio at equilibrium.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6030,
+      "q": "If MUx/Px \u2260 MUy/Py, the consumer...",
+      "options": [
+        "Can increase utility",
+        "Is at equilibrium",
+        "Has no preferences",
+        "Must reduce consumption"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "interpretation",
+      "objective": "LO3.4",
+      "feedback": "Unequal marginal utility per dollar means reallocation can improve utility.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 600024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 MUx=30, Px=$5; MUy=16, Py=$4. What does the marginal-utility-per-dollar rule recommend?",
+      "options": [
+        "Buy more X",
+        "Buy equal quantities of X and Y",
+        "Choose the good with the higher marginal utility only",
+        "The comparison cannot use prices"
+      ],
+      "a": 0,
+      "tag": "marginal_utility_per_dollar",
+      "type": "calculation",
+      "objective": "LO3.4",
+      "difficulty": "bridge",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "feedback": "MUx/Px=6; MUy/Py=4. Shift spending toward the larger ratio until the ratios equalize.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "derive_individual_demand": [
+    {
+      "id": 6000,
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: a movement along a demand curve occurs when...",
+      "options": [
+        "The price of the good changes",
+        "Income changes",
+        "Consumer tastes change",
+        "The number of buyers changes"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "definition",
+      "objective": "LO4.1",
+      "feedback": "A change in the good\u2019s own price causes movement along the demand curve.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6003,
+      "q": "A student says: 'When price rises, demand falls.' What is the mistake?",
+      "options": [
+        "They confused demand with quantity demanded",
+        "They are correct",
+        "Demand always falls with price",
+        "Demand is unrelated to price"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "trap",
+      "objective": "LO4.1",
+      "feedback": "Price changes affect quantity demanded, not demand itself.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6004,
+      "q": "Which scenario causes a movement along the demand curve?",
+      "options": [
+        "A change in the good\u2019s own price",
+        "A change in income",
+        "A change in preferences",
+        "An increase in population"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "feedback": "Only a change in the good\u2019s own price moves along the curve.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 600025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A consumer's optimal quantity of X is 8 when Px=$6 and 11 when Px=$4, with income and other prices fixed. These two choices are points on what?",
+      "options": [
+        "The individual's demand curve for X",
+        "A market supply curve",
+        "An indifference curve",
+        "A cross-price elasticity curve"
+      ],
+      "a": 0,
+      "tag": "derive_individual_demand",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "feedback": "Varying Px and recording optimal X generates points on individual demand.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "demand_response_income_prices": [
+    {
+      "id": 6002,
+      "q": "If the price of coffee rises and demand for tea increases, coffee and tea are...",
+      "options": [
+        "Substitutes",
+        "Complements",
+        "Inferior goods",
+        "Unrelated goods"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "interpretation",
+      "objective": "LO4.2",
+      "feedback": "Substitutes are goods consumers switch between when relative prices change.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 600026,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 The price of X falls while income and other prices stay fixed. What happens?",
+      "options": [
+        "Quantity demanded of X changes along the existing demand curve",
+        "Demand for X shifts because income changed",
+        "Demand for X shifts because a related-good price changed",
+        "Nothing can change"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "trap",
+      "objective": "LO4.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "An own-price change causes a movement along the demand curve.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 The price of X falls while income and other prices stay fixed. What happens?",
+      "options": [
+        "Quantity demanded of X changes along the existing demand curve",
+        "Demand for X shifts because income changed",
+        "Demand for X shifts because a related-good price changed",
+        "Nothing can change"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "trap",
+      "objective": "LO4.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "An own-price change causes a movement along the demand curve.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check \u2014 The price of X falls while income and other prices stay fixed. What happens?",
+      "options": [
+        "Quantity demanded of X changes along the existing demand curve",
+        "Demand for X shifts because income changed",
+        "Demand for X shifts because a related-good price changed",
+        "Nothing can change"
+      ],
+      "a": 0,
+      "tag": "demand_response_income_prices",
+      "type": "trap",
+      "objective": "LO4.2",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "An own-price change causes a movement along the demand curve.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "normal_inferior_goods": [
+    {
+      "id": 6016,
+      "q": "A normal good is one where...",
+      "options": [
+        "Demand rises as income rises",
+        "Demand falls as income rises",
+        "Demand is unrelated to income",
+        "Price always rises with income"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "definition",
+      "objective": "LO4.2",
+      "feedback": "Normal goods are purchased more when income increases.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6017,
+      "q": "An inferior good is one where...",
+      "options": [
+        "Demand falls as income rises",
+        "Demand rises as income rises",
+        "Demand never changes",
+        "Price becomes lower as income rises"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "definition",
+      "objective": "LO4.2",
+      "feedback": "Inferior goods are purchased less when income increases.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6018,
+      "q": "If income rises and people buy more restaurant meals, restaurant meals are...",
+      "options": [
+        "Normal goods",
+        "Inferior goods",
+        "Giffen goods",
+        "Complements"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "interpretation",
+      "objective": "LO4.2",
+      "feedback": "If demand rises with income, the good is normal.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6019,
+      "q": "If income rises and demand falls, the good is...",
+      "options": [
+        "Inferior",
+        "Normal",
+        "Elastic",
+        "A substitute"
+      ],
+      "a": 0,
+      "tag": "normal_inferior_goods",
+      "type": "interpretation",
+      "objective": "LO4.2",
+      "feedback": "Inferior goods are consumed less as income rises.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_bridge"
+    }
+  ],
+  "substitution_effect": [
+    {
+      "id": 6008,
+      "q": "The substitution effect occurs because...",
+      "options": [
+        "Relative prices change",
+        "Income changes",
+        "Preferences change",
+        "Demand shifts randomly"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "feedback": "The substitution effect occurs because one good becomes relatively cheaper or more expensive.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6010,
+      "q": "When the price of a good falls, the substitution effect causes consumers to...",
+      "options": [
+        "Buy more of the relatively cheaper good",
+        "Buy less of the good",
+        "Ignore the price change",
+        "Buy equal amounts of all goods"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "interpretation",
+      "objective": "LO4.3",
+      "feedback": "Consumers substitute toward the relatively cheaper good.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6011,
+      "q": "Which effect explains why a price change alters relative attractiveness between goods?",
+      "options": [
+        "Substitution effect",
+        "Income effect",
+        "Demand shift",
+        "Supply effect"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "feedback": "Substitution effect comes from changes in relative prices.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6013,
+      "q": "When the price of a good falls, which effect always increases quantity demanded?",
+      "options": [
+        "Substitution effect",
+        "Income effect",
+        "Both always increase",
+        "Neither"
+      ],
+      "a": 0,
+      "tag": "substitution_effect",
+      "type": "interpretation",
+      "objective": "LO4.3",
+      "feedback": "Substitution effect always increases consumption of the relatively cheaper good.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_bridge"
+    }
+  ],
+  "income_effect": [
+    {
+      "id": 6009,
+      "q": "The income effect occurs because...",
+      "options": [
+        "A price change changes purchasing power",
+        "Consumers always buy less",
+        "Preferences suddenly change",
+        "Supply conditions shift"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "feedback": "When price changes, the consumer\u2019s real purchasing power changes too.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6012,
+      "q": "Which effect reflects a change in real purchasing power?",
+      "options": [
+        "Income effect",
+        "Substitution effect",
+        "Elasticity",
+        "Opportunity cost"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "definition",
+      "objective": "LO4.3",
+      "feedback": "Income effect captures the change in real income after a price change.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 600029,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 X is a normal good. Px falls. What direction does the income effect have on X?",
+      "options": [
+        "It increases consumption of X",
+        "It decreases consumption of X",
+        "It is always zero",
+        "It changes only Y"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "A price fall raises real income, and demand for a normal good rises with real income.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600030,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 X is a normal good. Px falls. What direction does the income effect have on X?",
+      "options": [
+        "It increases consumption of X",
+        "It decreases consumption of X",
+        "It is always zero",
+        "It changes only Y"
+      ],
+      "a": 0,
+      "tag": "income_effect",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "A price fall raises real income, and demand for a normal good rises with real income.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "giffen_good_logic": [
+    {
+      "id": 6023,
+      "q": "Which case would violate the law of demand?",
+      "options": [
+        "Income effect outweighs substitution effect",
+        "Substitution effect dominates",
+        "Demand shifts outward",
+        "Price decreases"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "trap",
+      "objective": "LO4.3",
+      "feedback": "This describes a Giffen good.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 600031,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Which condition is necessary for Giffen behavior?",
+      "options": [
+        "The good must be inferior and the income effect must dominate the substitution effect",
+        "The good must be normal",
+        "The substitution effect must be zero for all prices",
+        "Cross-price elasticity must be positive"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "interpretation",
+      "objective": "LO4.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600032,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 Which condition is necessary for Giffen behavior?",
+      "options": [
+        "The good must be inferior and the income effect must dominate the substitution effect",
+        "The good must be normal",
+        "The substitution effect must be zero for all prices",
+        "Cross-price elasticity must be positive"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "interpretation",
+      "objective": "LO4.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600033,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 Which condition is necessary for Giffen behavior?",
+      "options": [
+        "The good must be inferior and the income effect must dominate the substitution effect",
+        "The good must be normal",
+        "The substitution effect must be zero for all prices",
+        "Cross-price elasticity must be positive"
+      ],
+      "a": 0,
+      "tag": "giffen_good_logic",
+      "type": "interpretation",
+      "objective": "LO4.3",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.3_giffen_good_logic",
+      "primarySkill": "giffen_good_logic",
+      "secondarySkills": [],
+      "repairSkill": "giffen_good_logic",
+      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "demand_curve_shifts": [
+    {
+      "id": 6001,
+      "q": "A demand curve shifts when...",
+      "options": [
+        "Income or preferences change",
+        "The good\u2019s own price changes",
+        "Firms change production",
+        "Technology changes"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "definition",
+      "objective": "LO4.4",
+      "feedback": "Demand shifts occur when factors other than the good\u2019s own price change.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6005,
+      "q": "If both income and price increase, what happens to demand?",
+      "options": [
+        "Cannot be determined without more information",
+        "Demand always increases",
+        "Demand always decreases",
+        "Demand stays constant"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "trap",
+      "objective": "LO4.4",
+      "feedback": "Multiple factors can affect demand and quantity demanded differently, so the net result cannot be determined without more information.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6006,
+      "q": "Which would shift demand for a good inward?",
+      "options": [
+        "A decrease in income for a normal good",
+        "A decrease in price",
+        "An increase in substitutes' prices",
+        "An increase in population"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "feedback": "Lower income reduces demand for normal goods.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6007,
+      "q": "If the price of a substitute falls, demand for the good will...",
+      "options": [
+        "Decrease",
+        "Increase",
+        "Stay the same",
+        "Become perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "feedback": "Cheaper substitutes reduce demand for the original good.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_bridge"
+    }
+  ],
+  "consumer_surplus": [
+    {
+      "id": 600034,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A buyer's willingness to pay remains $60. Price falls from $35 to $25. By how much does this buyer's consumer surplus rise?",
+      "options": [
+        "$10",
+        "$35",
+        "$25",
+        "$50"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600035,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A buyer's willingness to pay remains $65. Price falls from $20 to $10. By how much does this buyer's consumer surplus rise?",
+      "options": [
+        "$10",
+        "$55",
+        "$45",
+        "$55"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600036,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A buyer's willingness to pay remains $70. Price falls from $25 to $15. By how much does this buyer's consumer surplus rise?",
+      "options": [
+        "$10",
+        "$55",
+        "$45",
+        "$60"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600037,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 A buyer's willingness to pay remains $50. Price falls from $30 to $20. By how much does this buyer's consumer surplus rise?",
+      "options": [
+        "$10",
+        "$30",
+        "$20",
+        "$40"
+      ],
+      "a": 0,
+      "tag": "consumer_surplus",
+      "type": "calculation",
+      "objective": "LO4.5",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "market_demand_aggregation": [
+    {
+      "id": 600038,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "options": [
+        "Add individual quantities demanded at each price",
+        "Average individual prices at each quantity",
+        "Add individual prices vertically",
+        "Use only the largest buyer"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "definition",
+      "objective": "LO4.6",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600039,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "options": [
+        "Add individual quantities demanded at each price",
+        "Average individual prices at each quantity",
+        "Add individual prices vertically",
+        "Use only the largest buyer"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "definition",
+      "objective": "LO4.6",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600040,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "options": [
+        "Add individual quantities demanded at each price",
+        "Average individual prices at each quantity",
+        "Add individual prices vertically",
+        "Use only the largest buyer"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "definition",
+      "objective": "LO4.6",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600041,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "options": [
+        "Add individual quantities demanded at each price",
+        "Average individual prices at each quantity",
+        "Add individual prices vertically",
+        "Use only the largest buyer"
+      ],
+      "a": 0,
+      "tag": "market_demand_aggregation",
+      "type": "definition",
+      "objective": "LO4.6",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "price_elasticity_fundamentals": [
+    {
+      "id": 6032,
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: price elasticity of demand measures...",
+      "options": [
+        "How responsive quantity demanded is to price changes",
+        "How responsive supply is to price changes",
+        "How much income consumers earn",
+        "How much firms spend on production"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "definition",
+      "objective": "LO4.7",
+      "feedback": "Elasticity measures the responsiveness of quantity demanded to a change in price.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6033,
+      "q": "If elasticity is greater than 1, demand is...",
+      "options": [
+        "Elastic",
+        "Inelastic",
+        "Unit elastic",
+        "Perfectly inelastic"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "definition",
+      "objective": "LO4.7",
+      "feedback": "Elastic demand means quantity demanded responds strongly to price changes.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6034,
+      "q": "If elasticity is less than 1, demand is...",
+      "options": [
+        "Inelastic",
+        "Elastic",
+        "Unit elastic",
+        "Perfectly elastic"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "definition",
+      "objective": "LO4.7",
+      "feedback": "Inelastic demand means quantity demanded responds weakly to price changes.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 6035,
+      "q": "If demand is elastic, a price increase will...",
+      "options": [
+        "Decrease total revenue",
+        "Increase total revenue",
+        "Not affect revenue",
+        "Double revenue"
+      ],
+      "a": 0,
+      "tag": "price_elasticity_fundamentals",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "Elastic demand means quantity drops significantly when price rises.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_bridge"
+    }
+  ],
+  "midpoint_elasticity": [
+    {
+      "id": 600042,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Price rises from $34 to $38; quantity falls from 65 to 45. Using midpoint percentage changes, approximately what is |Ed|?",
+      "options": [
+        "3.27",
+        "5.00",
+        "0.20",
+        "2.62"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Midpoint %\u0394Q=-20/55; %\u0394P=4/36; |Ed|\u22483.27.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600043,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Price rises from $36 to $40; quantity falls from 60 to 40. Using midpoint percentage changes, approximately what is |Ed|?",
+      "options": [
+        "3.80",
+        "5.00",
+        "0.20",
+        "3.00"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Midpoint %\u0394Q=-20/50; %\u0394P=4/38; |Ed|\u22483.80.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600044,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Price rises from $38 to $42; quantity falls from 55 to 35. Using midpoint percentage changes, approximately what is |Ed|?",
+      "options": [
+        "4.44",
+        "5.00",
+        "0.20",
+        "3.45"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Midpoint %\u0394Q=-20/45; %\u0394P=4/40; |Ed|\u22484.44.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600045,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Price rises from $40 to $44; quantity falls from 50 to 30. Using midpoint percentage changes, approximately what is |Ed|?",
+      "options": [
+        "5.25",
+        "5.00",
+        "0.20",
+        "4.00"
+      ],
+      "a": 0,
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Midpoint %\u0394Q=-20/40; %\u0394P=4/42; |Ed|\u22485.25.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "elasticity_total_revenue": [
+    {
+      "id": 600046,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "options": [
+        "Demand is inelastic",
+        "Demand is elastic",
+        "Demand is perfectly elastic",
+        "Demand must have shifted"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600047,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "options": [
+        "Demand is inelastic",
+        "Demand is elastic",
+        "Demand is perfectly elastic",
+        "Demand must have shifted"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600048,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "options": [
+        "Demand is inelastic",
+        "Demand is elastic",
+        "Demand is perfectly elastic",
+        "Demand must have shifted"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600049,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "options": [
+        "Demand is inelastic",
+        "Demand is elastic",
+        "Demand is perfectly elastic",
+        "Demand must have shifted"
+      ],
+      "a": 0,
+      "tag": "elasticity_total_revenue",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "cross_price_elasticity": [
+    {
+      "id": 6039,
+      "q": "A good with many substitutes is likely to have...",
+      "options": [
+        "Elastic demand",
+        "Inelastic demand",
+        "Perfectly inelastic demand",
+        "Unit elasticity"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "Substitutes increase responsiveness to price changes.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "source": "legacy_bridge"
+    },
+    {
+      "id": 600050,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
+      "options": [
+        "-0.5",
+        "0.5",
+        "-2.0",
+        "2.0"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600051,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
+      "options": [
+        "-0.5",
+        "0.5",
+        "-2.0",
+        "2.0"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600052,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check \u2014 The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
+      "options": [
+        "-0.5",
+        "0.5",
+        "-2.0",
+        "2.0"
+      ],
+      "a": 0,
+      "tag": "cross_price_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "income_elasticity": [
+    {
+      "id": 600053,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "options": [
+        "1.5",
+        "0.67",
+        "-1.5",
+        "20"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Income elasticity = 12%/8% = 1.5.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600054,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "options": [
+        "1.5",
+        "0.67",
+        "-1.5",
+        "20"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Income elasticity = 12%/8% = 1.5.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600055,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "options": [
+        "1.5",
+        "0.67",
+        "-1.5",
+        "20"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Income elasticity = 12%/8% = 1.5.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600056,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "options": [
+        "1.5",
+        "0.67",
+        "-1.5",
+        "20"
+      ],
+      "a": 0,
+      "tag": "income_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "Income elasticity = 12%/8% = 1.5.",
+      "source": "engine2_bridge"
+    }
+  ],
+  "elasticity_determinants": [
+    {
+      "id": 600057,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "options": [
+        "Consumers have more time to find substitutes and change behavior",
+        "Prices stop mattering",
+        "Income effects disappear",
+        "Budget shares become zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600058,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "options": [
+        "Consumers have more time to find substitutes and change behavior",
+        "Prices stop mattering",
+        "Income effects disappear",
+        "Budget shares become zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600059,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "options": [
+        "Consumers have more time to find substitutes and change behavior",
+        "Prices stop mattering",
+        "Income effects disappear",
+        "Budget shares become zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
+      "source": "engine2_bridge"
+    },
+    {
+      "id": 600060,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "options": [
+        "Consumers have more time to find substitutes and change behavior",
+        "Prices stop mattering",
+        "Income effects disappear",
+        "Budget shares become zero"
+      ],
+      "a": 0,
+      "tag": "elasticity_determinants",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "bridge",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
+      "source": "engine2_bridge"
+    }
+  ]
+};
+
+const questionBank = {
+  "version": 2,
+  "gameId": "labyrinth-of-choice",
+  "gameTitle": "The Labyrinth of Choice",
+  "objectiveLabels": objectiveLabels,
+  "skillObjectiveMap": LABYRINTH_SKILL_OBJECTIVE_MAP,
+  "questionBanks": {
   "easyBoss": [
     {
       "id": 1000,
@@ -83,6 +4419,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "65401002184468b5cbe2e803a096bc643dd83c0a94ab38d4c3574b862c2f5824"
     },
     {
@@ -105,11 +4442,12 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
     },
     {
       "id": 1002,
-      "q": "The Warden challenges consistency. If a consumer’s preferences change unpredictably, what happens?",
+      "q": "The Warden challenges consistency. If a consumer\u2019s preferences change unpredictably, what happens?",
       "options": [
         "Utility maximization improves",
         "Choices become inconsistent",
@@ -127,6 +4465,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "dd2738c61571c7201b0527aff0fcec21cb14fd33f3b5fed2bb6a7473deccbe63"
     },
     {
@@ -149,6 +4488,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "fed393939abfdeda560d810d103d3d017b66779bf2b9a0fc68b949c359a9dd6c"
     },
     {
@@ -171,6 +4511,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "cf543b9321d16cf1cb8b3bb44f3e7afb25a1ad4cdab47c14d6ff87c8da56b835"
     },
     {
@@ -193,6 +4534,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "a8bcb59ba002fb66b157e3f084722b60e0f57fc83ecc85935b8cdf4ef9ddc5c1"
     },
     {
@@ -215,6 +4557,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "051d9ccaeccbcc3d83752a8e5177cd2de1b7b3b853ffce064c75d8ef205ccb96"
     },
     {
@@ -237,6 +4580,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
     },
     {
@@ -259,6 +4603,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "46c3ad46c812280916830cabd31fe84ec8ce87f08c665bda23e8029c5da44d8a"
     },
     {
@@ -281,6 +4626,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "cbf566da58796e8905e5356d8e7f97a1fefe19ae2820db73b2671450ffc5d0ce"
     },
     {
@@ -303,6 +4649,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "3599c66169fed8c0934baac8d68b93d31495020660b5b4702645872ae907c1c2"
     },
     {
@@ -325,6 +4672,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "fb074552d8cf9d4d26fd5c04df7b3a6c79e1673621b05ee37cffc5fb60153b5e"
     },
     {
@@ -347,6 +4695,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "35f9316761ad750d7d62e0e3a52736c9adfe715042f9c30c8b08425a1a7b693d"
     },
     {
@@ -369,6 +4718,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
     },
     {
@@ -391,6 +4741,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "5d6430cb33754a2c2e17e473e166d8252640a6998bff427b9f199335f9bdc990"
     }
   ],
@@ -415,6 +4766,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "eaa6b347bc9896529887c20c5ba1f331312d84667213cd6b59777fec8299e242"
     },
     {
@@ -437,6 +4789,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
     },
     {
@@ -459,6 +4812,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "60e9a4ad07d944492c8bc97cccd464c67356492d0e113af5f62d35edfb1a607a"
     },
     {
@@ -481,6 +4835,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "874772174748e0faea43bec20db23dd253dcb2862a65a88ee6daf5e9ff92775f"
     },
     {
@@ -503,6 +4858,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "01c36a799a7d1e817e44d5b623e4d5e3c41eac3abaff1681bcaf86e34c13a108"
     },
     {
@@ -517,7 +4873,7 @@ const questionBanks = {
       "tag": "marginal_rate_substitution",
       "type": "interpretation",
       "objective": "LO3.2",
-      "feedback": "Straight lines imply a constant MRS—perfect substitutes.",
+      "feedback": "Straight lines imply a constant MRS\u2014perfect substitutes.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
@@ -525,6 +4881,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "da08e99e60590d4d758e071e3e76b760bc5732ea127c333456c06789d8a591b6"
     },
     {
@@ -547,6 +4904,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "3b9b0f4c608b1a3b86418d06ad8ffeb788a96eccd7ea6028baec960665e92672"
     },
     {
@@ -561,7 +4919,7 @@ const questionBanks = {
       "tag": "budget_constraint_intercepts_slope",
       "type": "calculation",
       "objective": "LO3.3",
-      "feedback": "100/10 = 10 → 100/5 = 20, so it doubles.",
+      "feedback": "100/10 = 10 \u2192 100/5 = 20, so it doubles.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
@@ -569,6 +4927,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "0de009f9cbd389c7ec952daa169686c11fcae680251d7ae2d448543ff7f16c8e"
     },
     {
@@ -591,6 +4950,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "58675c4c66916b7b10428eed84e625feaa95859eaeb2fe6de04e87110933a9d0"
     },
     {
@@ -613,6 +4973,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "52e54867decd20f3209228ea85564360b3f5facacd38757529082b48512494a5"
     },
     {
@@ -635,6 +4996,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "31365ab9453d6a1ec03731622803d3b44f345b6afad08040d7f3e97290c77913"
     },
     {
@@ -657,6 +5019,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "8327533376dca3dda8f6639179bf5bde50111c78c3994efbaccff6cc90631faa"
     },
     {
@@ -679,6 +5042,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "50a08606c9df885a392ac354be6f6f9878d5e4338d9aed83059ce0b498d7eafb"
     },
     {
@@ -701,6 +5065,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "630a71b67a56aeb7260f99fe738b85c1a99f4482388d2400e8a23b8ee28a5ff5"
     },
     {
@@ -723,6 +5088,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "source": "legacy_primary",
       "aHash": "0e64998cbc19cc45ab1d6be3e34df977430b1d4cd32e33b5f22912dd1e5d01ce"
     }
   ],
@@ -747,6 +5113,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "dd1626d7b34163ec88bf4ffbacf07b90c1b08d574c077be0813d4fb4a1dc5396"
     },
     {
@@ -769,6 +5136,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "a8bcb59ba002fb66b157e3f084722b60e0f57fc83ecc85935b8cdf4ef9ddc5c1"
     },
     {
@@ -791,6 +5159,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "2460786f7128ca66b0ef2dc90dc0906bd74d843464d9a04cc9b2f3102ded0e32"
     },
     {
@@ -813,6 +5182,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "0b0115c9ac48a6c1471cc4870b7d42c99ed1a14ae8b9d4f7dd5679589cdb421f"
     },
     {
@@ -835,6 +5205,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "8327533376dca3dda8f6639179bf5bde50111c78c3994efbaccff6cc90631faa"
     },
     {
@@ -857,6 +5228,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "8393e5502fed88243a37204bbd0c8c9de1aff34815b4d6fea60c94df4d57f9b5"
     },
     {
@@ -879,6 +5251,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "0f5ae8cf70f4141bac17caa8ed87fd9125a71376a36c5986f1b982eb0766b442"
     },
     {
@@ -901,6 +5274,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "0daea351d0e68579cb4e2decf1613119597bae1b84984247935c54fbecb92afd"
     },
     {
@@ -923,6 +5297,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "b6fdda2307da848d344b3e6bc00c506f726f6435e769d27267a12d6a8c2e1f68"
     },
     {
@@ -945,6 +5320,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "9a2537508fa605da333c97de06dbe22de11109dac645b570ec6d25a7ea207e31"
     },
     {
@@ -967,6 +5343,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "8327533376dca3dda8f6639179bf5bde50111c78c3994efbaccff6cc90631faa"
     },
     {
@@ -989,6 +5366,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "698a96b17f527c1a95be21504e2f63d671a91e6a484bf58283d2a8680f972696"
     },
     {
@@ -1011,6 +5389,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "cf1a32f15177cc43fddf2f8947e9277b290d9092216a181d8059c6d95b41563e"
     },
     {
@@ -1033,6 +5412,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "8da38cb48d3119efb4a22389a49b44260398b8d45063e22f5c607b4fdd87bac4"
     },
     {
@@ -1055,6 +5435,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "source": "legacy_primary",
       "aHash": "0e64998cbc19cc45ab1d6be3e34df977430b1d4cd32e33b5f22912dd1e5d01ce"
     }
   ],
@@ -1079,6 +5460,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "7ce26e31be210af181e38f0e121d32105acfbde12da34980a30581e4ea7b841f"
     },
     {
@@ -1101,6 +5483,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "93ca692b89dfa9ceafba026e399a4b4c15b83b6eaf24a9c434a67460515ef298"
     },
     {
@@ -1123,6 +5506,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "d845100ba24d710d5abc7e56967fa9c09bf786ede07165c9f6dc826dbb455292"
     },
     {
@@ -1145,6 +5529,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "9aeef6c1e3eb9627c95edd4d4ea973b7a91d896537ac0a940c1857f7071a3ed5"
     },
     {
@@ -1167,6 +5552,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "f1caa8f42b4611718fadd61eae8cf5081c30886af53205ae1537126b668238c2"
     },
     {
@@ -1189,6 +5575,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "051d9ccaeccbcc3d83752a8e5177cd2de1b7b3b853ffce064c75d8ef205ccb96"
     },
     {
@@ -1211,6 +5598,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "4afbcea944361503dc4c6f508f7a6c626aede9571cd6b3e4e1f5e4d60df6e6c3"
     },
     {
@@ -1233,6 +5621,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "1bb333a8a8fdd94424be41affe7821e9daca171631a022f85b59972f911fe7e1"
     },
     {
@@ -1255,6 +5644,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "21161a7aaac1e6e45130db352329d53fc07ca5f65f1377b3cc626a6daece2f27"
     },
     {
@@ -1277,6 +5667,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "aac37f061a3268aa3266c361eb9ca4544ca36d2111928af54c5a7f1e7b978ce1"
     },
     {
@@ -1299,6 +5690,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "source": "legacy_primary",
       "aHash": "053e559d23b4b933e70df398f2b81396ad1e34b02b567002a42085e5692ed0ea"
     },
     {
@@ -1321,6 +5713,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "source": "legacy_primary",
       "aHash": "606937cb910e6256884e33e3fa5fb9d76930b2e6d4f21a2a32e5d839d90ac24a"
     },
     {
@@ -1343,6 +5736,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
     },
     {
@@ -1365,6 +5759,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "e3dfb6f6c48e62a2caa855d3396b1a985eae16144ef74ce057503bf5190c355c"
     },
     {
@@ -1387,6 +5782,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "ccd0695aeda78cbb136cddc194855d51ede47bd3b8dda723f5d2481dc147cd38"
     },
     {
@@ -1409,6 +5805,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "source": "legacy_primary",
       "aHash": "42c58a97db91ca00218b8891b48b0def9232a8514d89ad5f03f4ce315bcb8292"
     },
     {
@@ -1431,6 +5828,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "85384dd94fbf986fa575ed828d4525ca92ef2e254010dbd591285ce17175ccaf"
     },
     {
@@ -1453,6 +5851,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "178c359a55b2fd12bb0a80b7101163fbb5a85a7775cd31ba16d14afb2bedc35b"
     },
     {
@@ -1475,6 +5874,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "55fecdfee38bcca77841dee6b6f556cfbdb5adee400f26355fb0c40c1646a6b8"
     },
     {
@@ -1497,6 +5897,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "4d0d5052817f54f650ba8acf733400ad25622f27570f27c139f89a5984c06eb8"
     },
     {
@@ -1519,6 +5920,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
     },
     {
@@ -1541,6 +5943,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "f33e03d029ee5e351d551b15854074aab00506ae4a127b312dcc940f256cc994"
     },
     {
@@ -1563,6 +5966,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "986051385feae5b9850804db2d701c0b029ad24f09bce340c12aee7a5c8a0391"
     },
     {
@@ -1585,6 +5989,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "2812165a89a76b18c5f54dc9949f5e9550b67437f5309b6badeac359f03754bd"
     },
     {
@@ -1607,6 +6012,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "07793f63210372c0959fcf521f631be2028bb123d964fec0d1d0fa70c167c2a3"
     },
     {
@@ -1629,6 +6035,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "source": "legacy_primary",
       "aHash": "e20a548f23fa36bc8d5ba48237ec3ee4d4f00087841d3614f81749e3c6c1b47e"
     },
     {
@@ -1651,6 +6058,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "fe3e639dac69bc6f7e095577813397095a6b6f54b44df763419e93b5abef599f"
     },
     {
@@ -1673,6 +6081,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "01c36a799a7d1e817e44d5b623e4d5e3c41eac3abaff1681bcaf86e34c13a108"
     },
     {
@@ -1695,6 +6104,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "source": "legacy_primary",
       "aHash": "ba06392e5976f5a4d4fcf64eb34a8cdbc39939e2301ee77e3bc49feba94ada0c"
     },
     {
@@ -1717,6 +6127,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "bf951d2992447cff98cdcaf1e0269a1dfda24a2b2a437e9bbfdf7271900b4abc"
     },
     {
@@ -1739,6 +6150,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "b2dc971f4895ca1f298f3f72fa80f67a6a2100532dfc3e74898b93ab12fdb8cd"
     },
     {
@@ -1761,6 +6173,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "a8bcb59ba002fb66b157e3f084722b60e0f57fc83ecc85935b8cdf4ef9ddc5c1"
     },
     {
@@ -1783,6 +6196,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "38de4c9dc0a4417709f3b19cc720962f336ccb29f6d47fcf804e24bb50995cee"
     },
     {
@@ -1805,6 +6219,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "9f336a4aef96c6374f60fc9d353dae6c3f64a53fc57fc1a91f96bd8102466b30"
     },
     {
@@ -1827,6 +6242,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "317b32c143692b9939c197f6a5df54f9698df9a4882fe8bf19608968662be4fa"
     },
     {
@@ -1849,6 +6265,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "source": "legacy_primary",
       "aHash": "00cf141f881d4b5572d4d5ce73db9657f5e6087f9f31a6527a9f3e212dfa4e70"
     },
     {
@@ -1871,6 +6288,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "d87fee1b13fdef751833f7fcf843bfc26ab1fc8d6a3a47b4f33d9193fc03d6ae"
     },
     {
@@ -1893,6 +6311,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "d88f2633fad59c021750a8e0cdc68605bc4937ae0a3413f88515045d4f9dea5b"
     },
     {
@@ -1915,6 +6334,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_expansion",
       "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
     },
     {
@@ -1937,6 +6357,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "MUx/Px=20/5=4.",
+      "source": "engine2_expansion",
       "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
     },
     {
@@ -1959,6 +6380,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
+      "source": "engine2_expansion",
       "aHash": "1ed19479e63c878d8c6d94e9daae9caef5a94312877bff22406603df8d5620b6"
     },
     {
@@ -1981,6 +6403,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "The income effect captures how the change in real purchasing power affects choice.",
+      "source": "engine2_expansion",
       "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
     },
     {
@@ -2003,6 +6426,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
+      "source": "engine2_expansion",
       "aHash": "521b93404eba2e1330c231689f11925c20e211c386331337f04db4f8717ff525"
     },
     {
@@ -2025,6 +6449,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "Non-price determinants such as income shift demand; an own-price change causes movement along the curve.",
+      "source": "engine2_expansion",
       "aHash": "d843c6c1a87ec8e97ddeb60f27a5c95dd7ae67662c5085d00b16254449353e0a"
     },
     {
@@ -2047,6 +6472,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
+      "source": "engine2_expansion",
       "aHash": "683c3642ba5fb441f1a9a3c927aafc61f9ecf4157c73e92127425c5012d94668"
     },
     {
@@ -2069,6 +6495,7 @@ const questionBanks = {
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
       "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
+      "source": "engine2_expansion",
       "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
     },
     {
@@ -2091,6 +6518,7 @@ const questionBanks = {
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
+      "source": "engine2_expansion",
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
@@ -2113,6 +6541,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_expansion",
       "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
     },
     {
@@ -2135,6 +6564,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "MUx/Px=25/5=5.",
+      "source": "engine2_expansion",
       "aHash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
     },
     {
@@ -2157,6 +6587,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
+      "source": "engine2_expansion",
       "aHash": "1ed19479e63c878d8c6d94e9daae9caef5a94312877bff22406603df8d5620b6"
     },
     {
@@ -2179,6 +6610,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "The income effect captures how the change in real purchasing power affects choice.",
+      "source": "engine2_expansion",
       "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
     },
     {
@@ -2201,6 +6633,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
+      "source": "engine2_expansion",
       "aHash": "521b93404eba2e1330c231689f11925c20e211c386331337f04db4f8717ff525"
     },
     {
@@ -2223,6 +6656,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "Non-price determinants such as income shift demand; an own-price change causes movement along the curve.",
+      "source": "engine2_expansion",
       "aHash": "d843c6c1a87ec8e97ddeb60f27a5c95dd7ae67662c5085d00b16254449353e0a"
     },
     {
@@ -2245,6 +6679,7 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Consumer surplus is willingness to pay minus price: 50-20=$30.",
+      "source": "engine2_expansion",
       "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     },
     {
@@ -2267,6 +6702,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
+      "source": "engine2_expansion",
       "aHash": "683c3642ba5fb441f1a9a3c927aafc61f9ecf4157c73e92127425c5012d94668"
     },
     {
@@ -2289,6 +6725,7 @@ const questionBanks = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
+      "source": "engine2_expansion",
       "aHash": "a6e2545fcd6c1031672c546888a30992cc374549d235074b3c96fcccc28e9315"
     },
     {
@@ -2311,6 +6748,7 @@ const questionBanks = {
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
       "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
+      "source": "engine2_expansion",
       "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
     },
     {
@@ -2333,6 +6771,7 @@ const questionBanks = {
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
+      "source": "engine2_expansion",
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
@@ -2355,6 +6794,7 @@ const questionBanks = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
+      "source": "engine2_expansion",
       "aHash": "42d32cdc6af1b6eb2417b49b4d4787274388847872bf9977fa780393dc548bcd"
     },
     {
@@ -2377,7 +6817,520 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
+      "source": "engine2_expansion",
       "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
+    },
+    {
+      "id": 110022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Relative to D0, what does D1 represent in the hamburger market?",
+      "options": [
+        "A decrease in demand",
+        "An increase in demand",
+        "A movement along the same demand curve",
+        "No change in demand"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "derive_individual_demand"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "D1 lies to the left of D0, so consumers want less at every price. That is a decrease in demand.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-01.png",
+      "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
+      "graphRequired": true,
+      "aHash": "694a08284bba5da73688d49e505d3933e4eae0008f1d3f731b262bce4b8d2c50"
+    },
+    {
+      "id": 110023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Moving from point A to point B on D0 shows which change in the taco market?",
+      "options": [
+        "Price falls and quantity demanded rises",
+        "Price rises and quantity demanded rises",
+        "Demand shifts right",
+        "Demand shifts left"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
+      "feedback": "A to B is movement down the same demand curve: price drops from $10 to $5, so quantity demanded rises.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-02.png",
+      "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
+      "graphRequired": true,
+      "aHash": "3788080942a517ed7e3c352124e142cf141771f00dbc41d5ce24d4c4ce52aa20"
+    },
+    {
+      "id": 110024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which point shows the higher price consumers are willing to pay for tacos?",
+      "options": [
+        "Point A",
+        "Point B",
+        "Both points show the same price",
+        "Neither point is on the demand curve"
+      ],
+      "tag": "consumer_surplus",
+      "type": "interpretation",
+      "objective": "LO4.5",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [
+        "derive_individual_demand"
+      ],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Point A is at a price of $12 while point B is at $6, so point A reflects the higher willingness to pay.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-03.png",
+      "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
+      "graphRequired": true,
+      "aHash": "502372a865dba96f36d1ac2a30db3c6a80aa6a963e27bb2acc1ec3bbb0a830a0"
+    },
+    {
+      "id": 110025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The shift from D0 to D1 in the taco market means that at the same price consumers want to buy...",
+      "options": [
+        "More tacos",
+        "Fewer tacos",
+        "The same number of tacos",
+        "Zero tacos"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "market_demand_aggregation"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "A rightward shift from D0 to D1 means consumers demand more tacos at each price.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-04.png",
+      "imageAlt": "Taco demand graph with D0 shifting right to D1.",
+      "graphRequired": true,
+      "aHash": "95cdfc2f0636fb8e396d27aad36048f34247f60e60306f306269b1d0f6b45174"
+    },
+    {
+      "id": 110026,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which labeled point lies in the more elastic portion of this linear demand curve?",
+      "options": [
+        "Point C",
+        "Point A",
+        "Points A and C are equally elastic",
+        "Elasticity cannot vary along a straight-line demand curve"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "Along a downward-sloping linear demand curve, demand is more elastic toward the high-price, low-quantity end. Point C is in that region.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-01.png",
+      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "graphRequired": true,
+      "aHash": "1ddf7973e5b61d38fa9b006a2114abd9568562684cd21fbe42afe7e33e63fb6a"
+    },
+    {
+      "id": 110027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What type of price elasticity of demand is represented by the vertical demand curve?",
+      "options": [
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "Unit elastic",
+        "Relatively elastic"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "A vertical demand curve means quantity demanded does not change when price changes, so elasticity is zero: perfectly inelastic.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-02.png",
+      "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
+      "graphRequired": true,
+      "aHash": "4664732ebe659706470f23ecb814a2d98f222e18800c8f8984691ae4c3b9603c"
+    },
+    {
+      "id": 110028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which demand curve is more price elastic over the price change from $5 to $3?",
+      "options": [
+        "D1",
+        "D2",
+        "They are equally elastic",
+        "Neither curve responds to price"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "D1 shows a much larger quantity response to the same $5-to-$3 price change, so D1 is more elastic.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-03.png",
+      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "graphRequired": true,
+      "aHash": "8b53639f152c8fc6ef30802fde462ba0be9cf085f7580dc69efd72e002abbb35"
+    },
+    {
+      "id": 110029,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What type of price elasticity of demand is represented by the horizontal demand curve?",
+      "options": [
+        "Perfectly elastic",
+        "Perfectly inelastic",
+        "Unit elastic",
+        "Relatively inelastic"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "classification",
+      "objective": "LO4.7",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "A horizontal demand curve represents perfectly elastic demand: even a tiny price increase above the shown price eliminates quantity demanded.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-05.png",
+      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "graphRequired": true,
+      "aHash": "4ce3dd0496412b51b4c3529c44337174d685ae60aa83c60e04ce26c656a7b8eb"
+    },
+    {
+      "id": 310001,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which indifference curve represents the highest utility level?",
+      "options": [
+        "IC1",
+        "IC2",
+        "IC3",
+        "All three represent the same utility"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "reverses_the_ordering_of_indifference_curves",
+      "feedback": "Higher indifference curves represent higher utility. IC3 is above IC2 and IC1, so it gives the greatest satisfaction.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-01.png",
+      "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
+      "graphRequired": true,
+      "aHash": "1e94404e9ad3ef3b579079e2f448df711a97d917ad6d18916ccdc168c1bc3a12"
+    },
+    {
+      "id": 310010,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The straight, parallel indifference curves indicate that the two goods are...",
+      "options": [
+        "perfect complements",
+        "perfect substitutes",
+        "inferior goods",
+        "unrelated goods"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "confuses_perfect_substitutes_with_perfect_complements",
+      "feedback": "Straight, downward-sloping and parallel indifference curves are the classic shape for perfect substitutes.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-05.png",
+      "imageAlt": "Three parallel downward-sloping indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "da08e99e60590d4d758e071e3e76b760bc5732ea127c333456c06789d8a591b6"
+    },
+    {
+      "id": 310012,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The right-angle indifference curves indicate that the two goods are...",
+      "options": [
+        "perfect substitutes",
+        "perfect complements",
+        "normal goods",
+        "public goods"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "confuses_l_shaped_indifference_curves_with_straight_line_curves",
+      "feedback": "L-shaped indifference curves show perfect complements because utility depends on consuming the goods together in fixed proportions.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-06.png",
+      "imageAlt": "Three right-angle indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "bda66d4f831df6cc15cdcefe77eb878a83318ad42bfe76a1c67ce813fd686a9c"
+    },
+    {
+      "id": 310016,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Budget\u2080 rotates outward to Budget\u2081 while the vertical intercept stays the same. What changed?",
+      "options": [
+        "The price of Good X fell",
+        "The price of Good Y fell",
+        "Income fell",
+        "The price of both goods rose"
+      ],
+      "tag": "budget_line_changes",
+      "type": "graph",
+      "objective": "LO3.3",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "budget_line_changes",
+      "commonError": "misreads_a_budget_pivot_around_the_y_intercept",
+      "feedback": "Because the Y-intercept is unchanged and the X-intercept increases, Good X became cheaper.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "fc4ef110eb01f9a087be12c680b018a2b6d05bf4e84d605e4804f50687487d14"
+    },
+    {
+      "id": 310023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Budget\u2080 and Budget\u2081 share the same horizontal intercept, but Budget\u2081 has a higher vertical intercept. What changed?",
+      "options": [
+        "The price of Good X fell",
+        "The price of Good Y fell",
+        "Income fell",
+        "The consumer became indifferent"
+      ],
+      "tag": "budget_line_changes",
+      "type": "graph",
+      "objective": "LO3.3",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "budget_line_changes",
+      "commonError": "misreads_a_budget_pivot_around_the_x_intercept",
+      "feedback": "When the X-intercept stays fixed and the Y-intercept rises, Good Y has become cheaper.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "c4e99f6ffcb5dfb4ca9d56b76cbf30e5bb10600931e9b32b03e5be6cf159406c"
+    },
+    {
+      "id": 310026,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Budget\u2080 rotates outward to Budget\u2081 while the vertical intercept stays fixed. Which statement is correct?",
+      "options": [
+        "The price of Good Y rose",
+        "The price of Good X fell",
+        "Income fell",
+        "Both goods became less expensive"
+      ],
+      "tag": "budget_line_changes",
+      "type": "graph",
+      "objective": "LO3.3",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "budget_line_changes",
+      "commonError": "fails_to_connect_budget_rotation_with_relative_price_changes",
+      "feedback": "A larger X-intercept with the same Y-intercept means Good X became cheaper.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "graphRequired": true,
+      "aHash": "fc4ef110eb01f9a087be12c680b018a2b6d05bf4e84d605e4804f50687487d14"
+    },
+    {
+      "id": 310033,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What bundle is represented by point C?",
+      "options": [
+        "10 units of Good X and 10 units of Good Y",
+        "5 units of Good X and 15 units of Good Y",
+        "15 units of Good X and 5 units of Good Y",
+        "20 units of Good X and 0 units of Good Y"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "misreads_coordinates_at_the_tangency_point",
+      "feedback": "Point C is located at 10 on the Good X axis and 10 on the Good Y axis.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "graphRequired": true,
+      "aHash": "461479214bf11f98358d54cd5089d421ecab7c2310a75233c9bfca7212b83a46"
+    },
+    {
+      "id": 310034,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What bundle is represented by point A?",
+      "options": [
+        "5 units of Good X and 20 units of Good Y",
+        "10 units of Good X and 20 units of Good Y",
+        "20 units of Good X and 10 units of Good Y",
+        "10 units of Good X and 10 units of Good Y"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "reads_the_wrong_coordinates_for_point_A",
+      "feedback": "Point A is at 10 on the horizontal axis and 20 on the vertical axis.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-03.png",
+      "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
+      "graphRequired": true,
+      "aHash": "83a1a52cda3931e39d15f1b86afa7fb6af1fc8d4d07bd2e3e8f82334379a735a"
+    },
+    {
+      "id": 310035,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Point A on the budget line shows a consumer choosing...",
+      "options": [
+        "10 units of Good X and 15 units of Good Y",
+        "15 units of Good X and 10 units of Good Y",
+        "20 units of Good X and 15 units of Good Y",
+        "15 units of Good X and 20 units of Good Y"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "misreads_the_bundle_at_the_single_tangency_point",
+      "feedback": "Point A is at 15 on the Good X axis and 10 on the Good Y axis.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-04.png",
+      "imageAlt": "Budget line tangent to IC2 at point A.",
+      "graphRequired": true,
+      "aHash": "50066600cbc254b1de742d0ee46c9f35db87558887e2f0c3357109c93dea7fcb"
+    },
+    {
+      "id": 310036,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which indifference curve represents the lowest utility level?",
+      "options": [
+        "IC1",
+        "IC2",
+        "IC3",
+        "They all represent the same utility"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "easy",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "reverses_the_ordering_of_indifference_curves",
+      "feedback": "IC1 is the lowest curve, so it represents the lowest level of utility.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-01.png",
+      "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
+      "graphRequired": true,
+      "aHash": "a4a2c3fe57903188470ca34e14ce973446feb274ff4623d33ff9b111f8f8377e"
+    },
+    {
+      "id": 310037,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Before the price change, which point shows the consumer\u2019s original optimal bundle?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "No point shows the original optimum"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "easy",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_the_initial_optimum_with_the_compensated_or_final_bundle",
+      "feedback": "Point A is on the original budget line and original utility curve, so it is the initial choice before the price of Good X falls.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph showing Budget0, Budget1, U0, U1, and points A, B, and C after a fall in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     }
   ],
   "medium": [
@@ -2386,7 +7339,7 @@ const questionBanks = {
       "q": "The substitution effect of a price decrease occurs because...",
       "options": [
         "Relative prices change while utility is held constant",
-        "The consumer’s real income increases, allowing more consumption",
+        "The consumer\u2019s real income increases, allowing more consumption",
         "Preferences adjust in response to lower prices",
         "The good becomes cheaper, increasing demand"
       ],
@@ -2401,13 +7354,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "e68c8fff31ba91a8ad38dea6f0b10c6caf75f3d3911c4affada6d5f11ae8149e"
     },
     {
       "id": 101,
       "q": "A demand curve can be interpreted as...",
       "options": [
-        "The consumer’s willingness to pay for additional units",
+        "The consumer\u2019s willingness to pay for additional units",
         "A firm's marginal cost curve",
         "Total utility over time",
         "Market supply"
@@ -2415,7 +7369,7 @@ const questionBanks = {
       "tag": "derive_individual_demand",
       "type": "definition",
       "objective": "LO4.1",
-      "feedback": "Each point on the demand curve reflects the consumer’s willingness to pay for one more unit.",
+      "feedback": "Each point on the demand curve reflects the consumer\u2019s willingness to pay for one more unit.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "medium",
       "conceptCluster": "LO4.1_derive_individual_demand",
@@ -2423,6 +7377,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "source": "legacy_primary",
       "aHash": "b69268ff5d99a8c7c46c57ce4091f5a9293ba19f1fcaa7100e6d243226b4a457"
     },
     {
@@ -2445,6 +7400,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "209f8e01faea1adfc818ce8b95d3998ffc0f07997ca2b3c3711374c65f6a3ea3"
     },
     {
@@ -2467,6 +7423,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "8a9e66bf716b8867eb5e50b70e2406365f02bb563c96c5dbb6f183c65fb9d006"
     },
     {
@@ -2489,6 +7446,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "8da38cb48d3119efb4a22389a49b44260398b8d45063e22f5c607b4fdd87bac4"
     },
     {
@@ -2511,6 +7469,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "fdc322005cdab6ce5117f1b092ebcb4da6c8a7d7a08d73e83cd73fd5c8025048"
     },
     {
@@ -2533,6 +7492,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "9ec81fa93b1da0bd54f99cb3b53b270073ab687331db993c93bac52c6425f5e1"
     },
     {
@@ -2555,6 +7515,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "cefe0880ac21fc46d447ba85092584d0acddd18fdbf53d5ea6cfb6bc281730f1"
     },
     {
@@ -2577,6 +7538,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "682fb9a1ef1d6d42d644ab1268fedf1897c49d52982fbe726b6ea60f05e9691f"
     },
     {
@@ -2599,6 +7561,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "d20ec5f2efaacfe9885ef7ee3fefacfe42e21e40984549a93051e95b6177ddc8"
     },
     {
@@ -2621,6 +7584,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "8da38cb48d3119efb4a22389a49b44260398b8d45063e22f5c607b4fdd87bac4"
     },
     {
@@ -2643,6 +7607,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
@@ -2665,6 +7630,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "33e9429bb084548cab5dd67ca1080369c02eaf6789efccb8cd053845f71f796f"
     },
     {
@@ -2687,6 +7653,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "fbc5f4ce994d819e1ac1f2ecf0e3b7f4af1134f18859cfdbdeb01521ffc53bf0"
     },
     {
@@ -2709,6 +7676,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "source": "legacy_primary",
       "aHash": "317b32c143692b9939c197f6a5df54f9698df9a4882fe8bf19608968662be4fa"
     },
     {
@@ -2731,6 +7699,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
     },
     {
@@ -2753,6 +7722,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
     },
     {
@@ -2775,6 +7745,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "f33e03d029ee5e351d551b15854074aab00506ae4a127b312dcc940f256cc994"
     },
     {
@@ -2797,6 +7768,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "986051385feae5b9850804db2d701c0b029ad24f09bce340c12aee7a5c8a0391"
     },
     {
@@ -2819,6 +7791,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "862be9846b7db52d7a7ead25fbad55dbdab1658dec6260ec427b9144838648f7"
     },
     {
@@ -2841,6 +7814,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "317b32c143692b9939c197f6a5df54f9698df9a4882fe8bf19608968662be4fa"
     },
     {
@@ -2863,6 +7837,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
@@ -2885,6 +7860,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "ad757bab985f33bc5343f12076803530f999d65d746e89e6efbe9fda0cd429ca"
     },
     {
@@ -2907,6 +7883,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "b997472c4aca76f02e13ba10ddfdf1392335b3ac29c2cc8381051e7ea81ebff8"
     },
     {
@@ -2929,6 +7906,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "source": "legacy_primary",
       "aHash": "55fecdfee38bcca77841dee6b6f556cfbdb5adee400f26355fb0c40c1646a6b8"
     },
     {
@@ -2951,6 +7929,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "862be9846b7db52d7a7ead25fbad55dbdab1658dec6260ec427b9144838648f7"
     },
     {
@@ -2973,6 +7952,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
     },
     {
@@ -2995,6 +7975,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "ba06392e5976f5a4d4fcf64eb34a8cdbc39939e2301ee77e3bc49feba94ada0c"
     },
     {
@@ -3017,6 +7998,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "e25e436fab28400731cfd1e864581b217041d6693fea9fa6307240fbd1c197aa"
     },
     {
@@ -3039,6 +8021,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "f31ff2216093721e83287b1543403015c283a7b9795f0054380bc7cc0393cf0b"
     },
     {
@@ -3061,13 +8044,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "58f78ff344fcf63aed91d39b1926263a34e1f194fae99540b77354bb7fa74d2f"
     },
     {
       "id": 131,
       "q": "A consumer moves along a demand curve after income rises. What actually happened?",
       "options": [
-        "Nothing — income changes do not affect demand",
+        "Nothing \u2014 income changes do not affect demand",
         "Demand shifted",
         "Supply changed",
         "Prices disappeared"
@@ -3083,6 +8067,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "source": "legacy_primary",
       "aHash": "4a9b89f1052f65721d9cc55c47d14818394308a6c026912cc2846a727da3e3c9"
     },
     {
@@ -3105,6 +8090,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "5763b65131e01267b4422a27c40abe3d778cf3411c81783a93ea585937b0806e"
     },
     {
@@ -3127,6 +8113,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "a8bcb59ba002fb66b157e3f084722b60e0f57fc83ecc85935b8cdf4ef9ddc5c1"
     },
     {
@@ -3149,6 +8136,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "447c6ae2cc813e7f21cd8bd6cc78e271ccb529555136d3664ff0434598ac591d"
     },
     {
@@ -3171,6 +8159,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "898147c60ec0dcbd487f6c05e66e558d31c42e2cd8ea768daa30a7fbb156e402"
     },
     {
@@ -3193,6 +8182,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
@@ -3215,6 +8205,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
     },
     {
@@ -3237,6 +8228,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "4f5977b5367b0655766c02f6cc960f7c71b03ed64a18375dc53979d665250191"
     },
     {
@@ -3259,6 +8251,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "4b6e000efa4c56729c69db6a275e44d56a726e1e1e8b278b8662ea1fd14061e8"
     },
     {
@@ -3281,6 +8274,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "317b32c143692b9939c197f6a5df54f9698df9a4882fe8bf19608968662be4fa"
     },
     {
@@ -3303,6 +8297,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "50ed599199bd8a8704ca778dac332f99c41a6273fd4e0a796d47c2fbe00c96e2"
     },
     {
@@ -3325,6 +8320,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "source": "legacy_primary",
       "aHash": "ef2050199f5c26a9d65b2912d046afe1e78f5c1c2e200760bdaf8624588d29ab"
     },
     {
@@ -3347,6 +8343,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "source": "engine2_expansion",
       "aHash": "3588ca4b093ead5e6d24041ae00833b810dfca042fee4718d73132703e3f76c7"
     },
     {
@@ -3368,7 +8365,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
+      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "source": "engine2_expansion",
       "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
     },
     {
@@ -3391,6 +8389,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
+      "source": "engine2_expansion",
       "aHash": "fb535d4909a53b092bfa49427d9a7743f4da601dc3da8c5e08988a08d5423021"
     },
     {
@@ -3413,6 +8412,7 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "Market demand is the horizontal sum of individual demand schedules.",
+      "source": "engine2_expansion",
       "aHash": "537a1c840b78808d1f60941c14e01165a5fedee040e66a772d2bd59bdd464f78"
     },
     {
@@ -3434,7 +8434,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %ΔQ=-20/90; %ΔP=4/22; |Ed|≈1.22.",
+      "feedback": "Midpoint %\u0394Q=-20/90; %\u0394P=4/22; |Ed|\u22481.22.",
+      "source": "engine2_expansion",
       "aHash": "7f1bfb468d99e5451444f5ee3327293b7082b4a81087357ea826ee8ad176d485"
     },
     {
@@ -3456,7 +8457,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
+      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "source": "engine2_expansion",
       "aHash": "1b07b0cffa0b3f596b5e048b0115168886cc5183dd518655b5515ee5dddac6d1"
     },
     {
@@ -3479,6 +8481,7 @@ const questionBanks = {
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "Income elasticity = 12%/8% = 1.5.",
+      "source": "engine2_expansion",
       "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
     },
     {
@@ -3501,6 +8504,7 @@ const questionBanks = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
+      "source": "engine2_expansion",
       "aHash": "764509ad6719a60b9c63640ef3130133dd002ebc62d1cf47f403742fe5cb2ae5"
     },
     {
@@ -3523,6 +8527,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "source": "engine2_expansion",
       "aHash": "3588ca4b093ead5e6d24041ae00833b810dfca042fee4718d73132703e3f76c7"
     },
     {
@@ -3544,7 +8549,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
+      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "source": "engine2_expansion",
       "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
     },
     {
@@ -3567,6 +8573,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
+      "source": "engine2_expansion",
       "aHash": "f9440e0da00c076a80c01e7cfde518b27aee6dee324a486ba98258ab57499ef1"
     },
     {
@@ -3589,6 +8596,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
+      "source": "engine2_expansion",
       "aHash": "fb535d4909a53b092bfa49427d9a7743f4da601dc3da8c5e08988a08d5423021"
     },
     {
@@ -3611,6 +8619,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Varying Px and recording optimal X generates points on individual demand.",
+      "source": "engine2_expansion",
       "aHash": "347a2179bd80c6deb1779d718d2666a78c2aa4a206a03c897a3fb2fded22f596"
     },
     {
@@ -3633,6 +8642,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "A price fall raises real income, and demand for a normal good rises with real income.",
+      "source": "engine2_expansion",
       "aHash": "415bdef8f60d72d63e5c5b7d09e5d6a7e681dc77536a43f3704a1c22cab7ba64"
     },
     {
@@ -3655,6 +8665,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
+      "source": "engine2_expansion",
       "aHash": "6cea78e12fdd7aeaa6634a0baa5f0722c3b1bd221a27a0a8a241bd13083f3872"
     },
     {
@@ -3677,6 +8688,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "A favorable preference change increases demand at each price.",
+      "source": "engine2_expansion",
       "aHash": "0c793e6f50d8a7a058e4de02ae2d75af4454bd0354d3598f5672abd9c14ee314"
     },
     {
@@ -3699,7 +8711,556 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
+      "source": "engine2_expansion",
       "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
+    },
+    {
+      "id": 120017,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. At a price of $5, quantity demanded falls from about 225 thousand on D0 to about 125 thousand on D1. What is the change?",
+      "options": [
+        "A decrease of 100 thousand units",
+        "An increase of 100 thousand units",
+        "A decrease of 225 thousand units",
+        "No change in quantity demanded"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "calculation",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "derive_individual_demand"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "Reading across the graph at $5, quantity demanded drops from roughly 225 thousand to 125 thousand. That is a decrease of 100 thousand units.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-01.png",
+      "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
+      "graphRequired": true,
+      "aHash": "e32dfc65431cbfd52d1251e9db1b729827353b63bc3ad12e1e49bb83d195a38d"
+    },
+    {
+      "id": 120018,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When price falls from $10 to $5, quantity demanded rises from 100 thousand to 225 thousand. By how much does quantity demanded increase?",
+      "options": [
+        "125 thousand",
+        "100 thousand",
+        "225 thousand",
+        "50 thousand"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "calculation",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
+      "feedback": "Quantity demanded rises from 100 thousand to 225 thousand, so the increase is 125 thousand.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-02.png",
+      "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
+      "graphRequired": true,
+      "aHash": "86d0e9d813d48e132a194eb153fbc04ee215570f1f970fd4a91aa41384a64384"
+    },
+    {
+      "id": 120019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Moving from point A to point B on D0, the price of tacos changes by...",
+      "options": [
+        "A decrease of $6",
+        "An increase of $6",
+        "A decrease of $12",
+        "An increase of $12"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "calculation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "derive_individual_demand"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
+      "feedback": "The price falls from $12 at A to $6 at B, so the change is a decrease of $6.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-03.png",
+      "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
+      "graphRequired": true,
+      "aHash": "0515b99084c67e889e1ca62bcbb0d7f52635c0f097afd047f7d64508e9575316"
+    },
+    {
+      "id": 120020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which event would best explain the shift from D0 to D1 in the peanut butter graph?",
+      "options": [
+        "Peanut butter becomes more popular with consumers",
+        "The price of peanut butter changes and consumers move along D0",
+        "Firms lower production costs",
+        "The quantity supplied falls"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "normal_inferior_goods"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "A rightward shift in demand comes from a nonprice demand determinant, such as a rise in popularity.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-05.png",
+      "imageAlt": "Peanut butter demand graph with D0 shifting right to D1.",
+      "graphRequired": true,
+      "aHash": "96c80d83563ca6d53eb7cc087b9bb18bc8e16d86b03fb70b0ed8add6f178bcd9"
+    },
+    {
+      "id": 120021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Moving from point B to point A, price falls from $10 to $6 while quantity rises from 45 to 75. Using the midpoint method, demand over this arc is approximately...",
+      "options": [
+        "Unit elastic",
+        "Elastic with a coefficient of about 2.0",
+        "Inelastic with a coefficient of about 0.5",
+        "Perfectly inelastic"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "The midpoint percentage change in quantity is 30/60 = 50%, while the midpoint percentage change in price is 4/8 = 50%. The elasticity coefficient is 1.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-01.png",
+      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "graphRequired": true,
+      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
+    },
+    {
+      "id": 120022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Price rises from $6 at A to $10 at B, but quantity remains 70. What is the elasticity coefficient?",
+      "options": [
+        "0",
+        "1",
+        "About 0.5",
+        "Infinity"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "Quantity demanded does not change at all, so the percentage change in quantity is zero and elasticity equals zero.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-02.png",
+      "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
+      "graphRequired": true,
+      "aHash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "id": 120023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When price falls from $5 to $3 on D1, quantity rises from 35 to 75. What happens to total revenue?",
+      "options": [
+        "It rises from 175 to 225",
+        "It falls from 175 to 105",
+        "It stays at 175",
+        "It falls from 225 to 175"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "At B, total revenue is 5\u00d735 = 175. At A, total revenue is 3\u00d775 = 225. Revenue rises when price falls, consistent with elastic demand.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-03.png",
+      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "graphRequired": true,
+      "aHash": "ff4354bae2601d1f5d39b2b6f6ac2bae6563d90df3a78ae1ca140e29596888c9"
+    },
+    {
+      "id": 120024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Compare total revenue at B and A on the curved demand graph.",
+      "options": [
+        "Total revenue is the same at both points",
+        "Total revenue is greater at A",
+        "Total revenue is greater at B",
+        "Total revenue is zero at A"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "midpoint_elasticity"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "At B, total revenue is 7\u00d720 = 140. At A, total revenue is 2\u00d770 = 140. Revenue is unchanged.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-04.png",
+      "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
+      "graphRequired": true,
+      "aHash": "0aedddfcefa47278621796463d85455bea4e07d9e0b99b82d6b7bf19af7e82b3"
+    },
+    {
+      "id": 120025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Along the horizontal demand curve, what happens to quantity demanded if price rises even slightly above $10?",
+      "options": [
+        "Quantity demanded falls to zero",
+        "Quantity demanded stays at 70",
+        "Quantity demanded rises without limit",
+        "Quantity demanded moves from A to B"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "Perfectly elastic demand exists at one price. A price even slightly above that level results in zero quantity demanded.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-05.png",
+      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "graphRequired": true,
+      "aHash": "81403360a768328122a9714d7f5f88fbfb66797c4de0c17dcfdc6d9f20582db5"
+    },
+    {
+      "id": 310002,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. A bundle on IC2 provides...",
+      "options": [
+        "more utility than IC3 and less than IC1",
+        "the same utility as any bundle on IC1",
+        "more utility than IC1 but less than IC3",
+        "more utility than both IC1 and IC3"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "does_not_understand_utility_ranking_across_curves",
+      "feedback": "IC2 is the middle curve, so it delivers more utility than IC1 and less utility than IC3.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-01.png",
+      "imageAlt": "Indifference curve graph with IC2 in the middle, IC1 below it, and IC3 above it.",
+      "graphRequired": true,
+      "aHash": "485386942b79859fae7a5a54540f4bc5f99d56f075b23aebed8148b8ab32cde0"
+    },
+    {
+      "id": 310003,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which point gives the consumer the highest attainable utility subject to the budget line?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "All three points are equally preferred"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "chooses_an_affordable_bundle_that_is_not_the_best_feasible_bundle",
+      "feedback": "Point C is where the budget line is tangent to the highest attainable indifference curve, so it is the utility-maximizing bundle.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "graphRequired": true,
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 310006,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Why is point A the consumer\u2019s optimal bundle?",
+      "options": [
+        "It is the cheapest bundle shown",
+        "It lies on the highest attainable indifference curve and is tangent to the budget line",
+        "It uses equal amounts of both goods",
+        "It lies inside the budget set"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "treats_any_affordable_point_as_optimal",
+      "feedback": "A consumer maximizes utility at the highest attainable indifference curve that just touches the budget line. That is exactly what point A shows.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-03.png",
+      "imageAlt": "Budget line tangent to IC2 at point A, with lower and higher indifference curves shown.",
+      "graphRequired": true,
+      "aHash": "19018491b824be55953361cdd5c8d4698a661f55def745d811664d5f410862d4"
+    },
+    {
+      "id": 310011,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which indifference curve represents the highest satisfaction for perfect substitutes?",
+      "options": [
+        "IC1",
+        "IC2",
+        "IC3",
+        "All curves represent equal satisfaction"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "misorders_indifference_curves_for_perfect_substitutes",
+      "feedback": "Even with perfect substitutes, higher indifference curves still represent higher utility. IC3 is the highest.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-05.png",
+      "imageAlt": "Three parallel downward-sloping indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "1e94404e9ad3ef3b579079e2f448df711a97d917ad6d18916ccdc168c1bc3a12"
+    },
+    {
+      "id": 310013,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Moving right along the horizontal arm of IC2 while Good Y stays fixed implies...",
+      "options": [
+        "utility rises because the consumer has more of both goods",
+        "utility falls because Good X is worth less",
+        "utility is unchanged because extra Good X alone does not improve utility for perfect complements",
+        "the budget line shifted"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "assumes_more_of_one_perfect_complement_always_raises_utility",
+      "feedback": "For perfect complements, extra units of only one good do not increase utility. Utility rises only when both goods increase together.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-06.png",
+      "imageAlt": "Three right-angle indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "1bef35c53bc64cbd19184f172c761d6a52043c6eeaaf0ee3235e18c027669375"
+    },
+    {
+      "id": 310020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Budget\u2080 rotates inward to Budget\u2081 while the vertical intercept stays fixed. What happened?",
+      "options": [
+        "The price of Good X rose",
+        "The price of Good Y rose",
+        "Income rose",
+        "Both goods became cheaper"
+      ],
+      "tag": "budget_line_changes",
+      "type": "graph",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "budget_line_changes",
+      "commonError": "misreads_a_budget_rotation_inward_from_the_x_intercept",
+      "feedback": "A smaller X-intercept with the same Y-intercept means Good X became more expensive.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "graphRequired": true,
+      "aHash": "834e731e3e3063cc18d67f6f20673dd8a35bc9b01946e975c9d23e7cc5cd23da"
+    },
+    {
+      "id": 310038,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which point lies on indifference curve IC2?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Both A and B"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [
+        "utility_maximization_mrs"
+      ],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "fails_to_match_points_with_the_correct_indifference_curve",
+      "feedback": "Point C lies on IC2, while A and B lie on lower attainable curves.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "graphRequired": true,
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 310039,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The budget line is tangent to which indifference curve?",
+      "options": [
+        "IC1",
+        "IC2",
+        "IC3",
+        "none of the curves"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "cannot_identify_the_tangency_curve",
+      "feedback": "The budget line just touches IC2 at point A, so IC2 is the optimal indifference curve.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-03.png",
+      "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
+      "graphRequired": true,
+      "aHash": "dd38f2a6bf8b518141a2c88e898b5e71669fb8e8dcf5ed6960ae9aa5c506def2"
+    },
+    {
+      "id": 310040,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The shape of these indifference curves implies that the consumer is willing to trade one good for the other at a...",
+      "options": [
+        "diminishing rate",
+        "constant rate",
+        "rising rate only",
+        "zero rate"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "misses_that_straight_line_indifference_curves_mean_constant_mrs",
+      "feedback": "Perfect substitutes have straight-line indifference curves, which means the MRS is constant.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-05.png",
+      "imageAlt": "Three straight, parallel indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "89e33773aaf7d6d3098d2312be48c5a965fe80a2c06fbb5af040ea363e734839"
+    },
+    {
+      "id": 310041,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The L-shaped indifference curves imply that the consumer values the two goods in...",
+      "options": [
+        "fixed proportions",
+        "perfectly flexible proportions",
+        "completely unrelated proportions",
+        "random proportions"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "does_not_recognize_the_meaning_of_l_shaped_indifference_curves",
+      "feedback": "L-shaped indifference curves represent perfect complements, meaning the goods are consumed in fixed proportions.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-06.png",
+      "imageAlt": "Three L-shaped indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "c7530b9748ed503e4d0b93abe8e75dc299a3e48546fcd3f77b80204150671e26"
+    },
+    {
+      "id": 310042,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When Budget\u2080 changes to Budget\u2081, which good becomes cheaper?",
+      "options": [
+        "Good X",
+        "Good Y",
+        "both goods equally",
+        "neither good"
+      ],
+      "tag": "budget_line_changes",
+      "type": "graph",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "budget_line_changes",
+      "commonError": "misreads_a_budget_line_pivot_around_the_x_intercept",
+      "feedback": "The X-intercept stays the same while the Y-intercept rises, so Good Y becomes cheaper.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph showing a pivot from Budget0 to Budget1 caused by a fall in the price of Good Y.",
+      "graphRequired": true,
+      "aHash": "bc3f7f738025403c98c6c9c896e67ad52784db34e603d754d10f8c041186b12c"
     }
   ],
   "hard": [
@@ -3723,6 +9284,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "2fbc941ceb39e7ac209d7678461dc0c915145d0fa3b490900e12e6f3f416f5b7"
     },
     {
@@ -3745,6 +9307,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "94c91649771132d388c42292891ef450001fc31b210b4cb4c188333b3f6c7466"
     },
     {
@@ -3767,6 +9330,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "8da38cb48d3119efb4a22389a49b44260398b8d45063e22f5c607b4fdd87bac4"
     },
     {
@@ -3789,6 +9353,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "source": "legacy_primary",
       "aHash": "f732f1f9c3ffa7b9b22690ca979f730fc096799ee0b6d977b80718db73789afb"
     },
     {
@@ -3811,6 +9376,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "cbb7f620ffb9e83332ff9646d8d98d1838cad408fa460a4315e415209743cf21"
     },
     {
@@ -3833,6 +9399,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "source": "legacy_primary",
       "aHash": "94321278d8cce614432ff7a216efc67f1e80906a28294f00a9afd74a51372ec5"
     },
     {
@@ -3855,6 +9422,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "source": "legacy_primary",
       "aHash": "c7a586dfb18aea750a52b6ab037262f22d00d8b2d16e835959653be8171b3e92"
     },
     {
@@ -3877,6 +9445,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
     },
     {
@@ -3899,6 +9468,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "source": "legacy_primary",
       "aHash": "7b2c8c375e57dd7834b68e6f0c92e99942368a03bc02026e60803cfccb5ee818"
     },
     {
@@ -3921,6 +9491,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "9d9022caabe06a84efa98672a61092108297294acb628ee7f56066e188c023ea"
     },
     {
@@ -3943,6 +9514,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "source": "legacy_primary",
       "aHash": "20c8dc8b96cf89d6a76cb246ba07f3eb86f60f19a3effafef79eb1b2f7e5c350"
     },
     {
@@ -3965,6 +9537,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
     },
     {
@@ -3987,6 +9560,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "7d6b305127028d0967909088d4ca9f1328ef416537a9a6d2c7cd72ee79e0094a"
     },
     {
@@ -4009,6 +9583,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "c3094eb5231b9f1916c93d95a8f87a514ff1d3ef5aa12abcd4cc5341fb3f752a"
     },
     {
@@ -4031,6 +9606,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
       "aHash": "a8bcb59ba002fb66b157e3f084722b60e0f57fc83ecc85935b8cdf4ef9ddc5c1"
     },
     {
@@ -4053,6 +9629,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "source": "legacy_primary",
       "aHash": "e56ee88abb98e36d0c54073bdb316823b9b97381432bf22eca949c81f2d77a5a"
     },
     {
@@ -4075,6 +9652,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "01c36a799a7d1e817e44d5b623e4d5e3c41eac3abaff1681bcaf86e34c13a108"
     },
     {
@@ -4097,6 +9675,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
       "aHash": "d02c66126c2672b3ae9e1d38a0460ab85442a6c48e5667277398a7237fcaa0ea"
     },
     {
@@ -4119,6 +9698,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "fdc322005cdab6ce5117f1b092ebcb4da6c8a7d7a08d73e83cd73fd5c8025048"
     },
     {
@@ -4141,6 +9721,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "0f686f3020dcf931f09f8d328d02ff43a8f88afa2cf35e5c1f9fb4559e534ad3"
     },
     {
@@ -4163,6 +9744,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "911d3496f6e4d349b92cc7d125ba894947df4ea5d55d25e6b4b701a10814e49e"
     },
     {
@@ -4185,11 +9767,12 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "2da5d962945d124120b7d86d7ff9a47e9067d41c11f840b541e5b261c7b579c6"
     },
     {
       "id": 222,
-      "q": "A consumer’s income increases and the demand for good X falls. Meanwhile, when price falls, quantity demanded rises. What type of good is X?",
+      "q": "A consumer\u2019s income increases and the demand for good X falls. Meanwhile, when price falls, quantity demanded rises. What type of good is X?",
       "options": [
         "Inferior",
         "Normal",
@@ -4207,6 +9790,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "source": "legacy_primary",
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
@@ -4229,6 +9813,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
     },
     {
@@ -4251,6 +9836,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "e938805cdff2e87b93de62b541b4708f9e356374876c2588f4b7f4ac62776ece"
     },
     {
@@ -4273,6 +9859,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
       "aHash": "58675c4c66916b7b10428eed84e625feaa95859eaeb2fe6de04e87110933a9d0"
     },
     {
@@ -4287,7 +9874,7 @@ const questionBanks = {
       "tag": "elasticity_total_revenue",
       "type": "calculation",
       "objective": "LO4.7",
-      "feedback": "Initial revenue is $8 × 50 = $400. New revenue is $10 × 40 = $400. Total revenue remains unchanged.",
+      "feedback": "Initial revenue is $8 \u00d7 50 = $400. New revenue is $10 \u00d7 40 = $400. Total revenue remains unchanged.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "hard",
       "conceptCluster": "LO4.7_elasticity_total_revenue",
@@ -4295,11 +9882,12 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "898147c60ec0dcbd487f6c05e66e558d31c42e2cd8ea768daa30a7fbb156e402"
     },
     {
       "id": 227,
-      "q": "A consumer’s marginal rate of substitution is decreasing. What does this imply about preferences?",
+      "q": "A consumer\u2019s marginal rate of substitution is decreasing. What does this imply about preferences?",
       "options": [
         "They are convex",
         "They are linear",
@@ -4317,6 +9905,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
       "aHash": "0a0f278199de5fd6372ac3c83a85b0c4ded7b64798bb8a3b06b2358494891760"
     },
     {
@@ -4339,6 +9928,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "0d7b83896c5b1e5ffddb801056ce22e7bc7ab4fbdfb586104bfb574859f06ede"
     },
     {
@@ -4361,6 +9951,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
       "aHash": "9d0e17ef8099428ee774675b0c51216fc6a28cb3aca4a3ece20e26d07975e2ad"
     },
     {
@@ -4383,6 +9974,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "7b8ad25435df8b198793e00925a5af6a7c794d922acb98375425220a930ccea9"
     },
     {
@@ -4405,6 +9997,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "98f97a37eff4af234d42a183dd4e90324b215d9cba3661dfb3b5a4bbd3475866"
     },
     {
@@ -4427,6 +10020,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
+      "source": "legacy_primary",
       "aHash": "ce081db6b5e1d24ee80405f9aab6f233272ad840d09a56f8d96d538ed1b7ccf5"
     },
     {
@@ -4449,6 +10043,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "8327533376dca3dda8f6639179bf5bde50111c78c3994efbaccff6cc90631faa"
     },
     {
@@ -4471,6 +10066,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "4e1125e111d93d021e912cfb1ae65a99608d3a2a58a3d05f6904df9c5c16aed3"
     },
     {
@@ -4493,6 +10089,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "source": "legacy_primary",
       "aHash": "926d16de5c57248fd9bca6ba484d37a34e4031c17e395dbfd7f56aaae54b2194"
     },
     {
@@ -4515,6 +10112,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "source": "legacy_primary",
       "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
     },
     {
@@ -4537,6 +10135,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
     },
     {
@@ -4559,6 +10158,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
       "aHash": "cac24141b5f2bf609825994dfd424299a57ebdca786c384138e725959136a7b5"
     },
     {
@@ -4581,6 +10181,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
       "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
     },
     {
@@ -4603,12 +10204,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal utility represents rankings. Any transformation that preserves the ranking preserves predicted choices.",
+      "source": "engine2_expansion",
       "aHash": "341c905e91e60c958d4caade607a9e221f6333a268ee6cf61ad858581a107fc1"
     },
     {
       "id": 130001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer reports A ≻ B, B ~ C, and C ≻ A. What is the problem?",
+      "q": "A consumer reports A \u227b B, B ~ C, and C \u227b A. What is the problem?",
       "options": [
         "The ranking violates transitivity",
         "The ranking violates the budget constraint",
@@ -4624,7 +10226,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Combining A ≻ B and B ~ C implies A ≻ C, so C ≻ A creates a transitivity violation.",
+      "feedback": "Combining A \u227b B and B ~ C implies A \u227b C, so C \u227b A creates a transitivity violation.",
+      "source": "engine2_expansion",
       "aHash": "97aa662894429360551f673ae5949433f4a7aca1c58728b682601e8271912f96"
     },
     {
@@ -4647,6 +10250,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "Proportional changes in nominal income and all prices leave real purchasing power and the budget set unchanged.",
+      "source": "engine2_expansion",
       "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
     },
     {
@@ -4669,6 +10273,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "The individual demand curve isolates the effect of own price on the consumer's optimal quantity.",
+      "source": "engine2_expansion",
       "aHash": "e545d63760fe7e84e02622b458a7fa729cc2ff1a01e96d14387999ff43d8f640"
     },
     {
@@ -4691,6 +10296,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "For an inferior good, higher real purchasing power reduces demand for X, opposing the positive substitution effect from a price fall.",
+      "source": "engine2_expansion",
       "aHash": "bf7d90a2317a6f2060a8fe220831a616d374d060197dde17a9699c46282027b0"
     },
     {
@@ -4713,6 +10319,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "For a normal good, higher income raises demand; a higher substitute price also raises demand for X.",
+      "source": "engine2_expansion",
       "aHash": "b084159172cc56031df6d7d40efc2b54454e3d4882c7a805c34973ee7ad44183"
     },
     {
@@ -4735,6 +10342,7 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "Sum quantities across consumers at each common price.",
+      "source": "engine2_expansion",
       "aHash": "d337b5f229ba6ed5e970de24ad3c865ef2ef37a347b8ed5a2e555cd1a79e7fa7"
     },
     {
@@ -4757,6 +10365,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "The midpoint method divides the quantity change by the average of the two quantities.",
+      "source": "engine2_expansion",
       "aHash": "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763"
     },
     {
@@ -4779,6 +10388,7 @@ const questionBanks = {
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "Positive elasticity indicates normal; a value below 1 indicates demand rises less than proportionally with income.",
+      "source": "engine2_expansion",
       "aHash": "3e370ca3c653b3eeadb052abed299856c6c872bdc287edcd26f0f538204618d0"
     },
     {
@@ -4801,12 +10411,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal utility represents rankings. Any transformation that preserves the ranking preserves predicted choices.",
+      "source": "engine2_expansion",
       "aHash": "341c905e91e60c958d4caade607a9e221f6333a268ee6cf61ad858581a107fc1"
     },
     {
       "id": 130010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a consumer reports A ≻ B, B ~ C, and C ≻ A. What is the problem?",
+      "q": "In a consumer-choice scenario involving concert tickets, a consumer reports A \u227b B, B ~ C, and C \u227b A. What is the problem?",
       "options": [
         "The ranking violates transitivity",
         "The ranking violates the budget constraint",
@@ -4822,7 +10433,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Combining A ≻ B and B ~ C implies A ≻ C, so C ≻ A creates a transitivity violation.",
+      "feedback": "Combining A \u227b B and B ~ C implies A \u227b C, so C \u227b A creates a transitivity violation.",
+      "source": "engine2_expansion",
       "aHash": "97aa662894429360551f673ae5949433f4a7aca1c58728b682601e8271912f96"
     },
     {
@@ -4845,6 +10457,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "When both goods are desirable, having more of both places the consumer on a higher utility level.",
+      "source": "engine2_expansion",
       "aHash": "528417832443b165090b6a0546a9db10d7437f328367a638347b927d8f88af14"
     },
     {
@@ -4867,6 +10480,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "Because intercepts are I/Px and I/Py, their ratio implies Px/Py = Y-intercept/X-intercept.",
+      "source": "engine2_expansion",
       "aHash": "f88afaea4207e3bdbf9381c1649835a1780019d246fe640dd86f1abe706462c0"
     },
     {
@@ -4889,6 +10503,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "Proportional changes in nominal income and all prices leave real purchasing power and the budget set unchanged.",
+      "source": "engine2_expansion",
       "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
     },
     {
@@ -4911,6 +10526,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "The individual demand curve isolates the effect of own price on the consumer's optimal quantity.",
+      "source": "engine2_expansion",
       "aHash": "e545d63760fe7e84e02622b458a7fa729cc2ff1a01e96d14387999ff43d8f640"
     },
     {
@@ -4935,6 +10551,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Positive income elasticity indicates a normal good; a value between 0 and 1 indicates less-than-proportional response.",
+      "source": "engine2_expansion",
       "aHash": "5c957586005b552e0891efcd7e4e0f24ef16842b0b4ef01cc6e0fbe403f6b2a3"
     },
     {
@@ -4957,6 +10574,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "For an inferior good, higher real purchasing power reduces demand for X, opposing the positive substitution effect from a price fall.",
+      "source": "engine2_expansion",
       "aHash": "bf7d90a2317a6f2060a8fe220831a616d374d060197dde17a9699c46282027b0"
     },
     {
@@ -4982,6 +10600,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Total effect = +3 - 5 = -2. Quantity falls when price falls, the Giffen pattern.",
+      "source": "engine2_expansion",
       "aHash": "3ad68bb4e5401a39e232fae700ab5462a46d6c02f3e0e264bbe8093ca1cd694b"
     },
     {
@@ -5004,6 +10623,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "For a normal good, higher income raises demand; a higher substitute price also raises demand for X.",
+      "source": "engine2_expansion",
       "aHash": "b084159172cc56031df6d7d40efc2b54454e3d4882c7a805c34973ee7ad44183"
     },
     {
@@ -5026,7 +10646,644 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "Sum quantities across consumers at each common price.",
+      "source": "engine2_expansion",
       "aHash": "d337b5f229ba6ed5e970de24ad3c865ef2ef37a347b8ed5a2e555cd1a79e7fa7"
+    },
+    {
+      "id": 130020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement is most accurate about D0 and D1 in the hamburger market?",
+      "options": [
+        "At every price, D0 shows a greater quantity demanded than D1",
+        "At every price, D1 shows a greater quantity demanded than D0",
+        "The curves cross, so sometimes D1 shows more demand",
+        "The graph shows only movements along one demand curve"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "market_demand_aggregation"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "Because D1 is left of D0, D0 shows the larger quantity demanded at every common price.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-01.png",
+      "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
+      "graphRequired": true,
+      "aHash": "9e9e524e6544d723e524648baaf3fb9a9c833af9c3d535b6c61ac2d79e4c7a14"
+    },
+    {
+      "id": 130021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The arrow from D0 to D1 in the taco graph is best described as...",
+      "options": [
+        "A rightward shift of demand caused by a nonprice determinant",
+        "A movement along D0 caused by a fall in price",
+        "A leftward shift of demand caused by lower consumer income for a normal good",
+        "An increase in quantity supplied"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "The entire curve shifts right, which means demand increased because of a nonprice determinant.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-04.png",
+      "imageAlt": "Taco demand graph with D0 shifting right to D1.",
+      "graphRequired": true,
+      "aHash": "5ae7509f640114ec6db907c65a6f155edf0edae296eb6071c96450ee79241e1c"
+    },
+    {
+      "id": 130022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Compared with point A, point B on D0 in the peanut butter graph represents...",
+      "options": [
+        "A lower price and a larger quantity demanded",
+        "A higher price and a lower quantity demanded",
+        "A higher price and a larger quantity demanded",
+        "A lower price and a smaller quantity demanded"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
+      "feedback": "From A to B on D0, price falls and quantity demanded increases, which matches the law of demand.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-05.png",
+      "imageAlt": "Peanut butter demand graph with point A on D0 at a higher price and point B on D0 at a lower price.",
+      "graphRequired": true,
+      "aHash": "5a00d82bf48f9860644424b2132369a9d754baa168a9f552c42616bac962d2ee"
+    },
+    {
+      "id": 130023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. If the price of tacos rises from $6 back to $12 on D0, what happens to quantity demanded?",
+      "options": [
+        "It falls from 200 thousand back to 50 thousand",
+        "It rises from 50 thousand to 200 thousand",
+        "The entire demand curve shifts right",
+        "Nothing changes because the demand curve is fixed"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "interpretation",
+      "objective": "LO4.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "derive_individual_demand"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
+      "feedback": "Reversing the move from B to A means a higher price and a lower quantity demanded on the same curve.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-03.png",
+      "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
+      "graphRequired": true,
+      "aHash": "6284c96a075348b8289468cc77ab613b3ce383367e41fda1a8427fb8ae205f74"
+    },
+    {
+      "id": 130024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which ranking correctly orders the labeled points from most elastic to least elastic on the linear demand curve?",
+      "options": [
+        "C, B, A",
+        "A, B, C",
+        "B, C, A",
+        "C, A, B"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "On a straight-line demand curve, elasticity declines as price falls and quantity rises. Thus C is most elastic, then B, then A.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-01.png",
+      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "graphRequired": true,
+      "aHash": "745a8ba91ac05c30cef5f062493979c2778066eaf83ecf48f918b2e2432bc96b"
+    },
+    {
+      "id": 130025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Total revenue rises from 420 at A to 700 at B when price rises from $6 to $10. Why does this not imply elastic demand?",
+      "options": [
+        "Because quantity does not change, so demand is perfectly inelastic",
+        "Because revenue can never be used to study elasticity",
+        "Because price and quantity both rose",
+        "Because the demand curve is unit elastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "diagnosis",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "The quantity remains fixed at 70. Elasticity is therefore zero even though a higher price mechanically raises total revenue.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-02.png",
+      "imageAlt": "Vertical demand curve at quantity 70 with point A at price 6 and point B at price 10.",
+      "graphRequired": true,
+      "aHash": "26ff71763a8baece69a3d90472810172d925def5e3e5e3b3d9f9dc237088b04f"
+    },
+    {
+      "id": 130026,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Using the midpoint method, the elasticity of D1 between B and A is closest to...",
+      "options": [
+        "1.45",
+        "0.31",
+        "1.00",
+        "2.75"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "For D1, quantity changes by 40 around a midpoint of 55, while price changes by 2 around a midpoint of 4. The ratio is about 72.7%/50% = 1.45.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-03.png",
+      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "graphRequired": true,
+      "aHash": "6918de1a26a10e9b603116c8dfc0c092ec727da4e8f830125357cd8ad5eddd50"
+    },
+    {
+      "id": 130027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Using the midpoint method between B and A, the elasticity coefficient is...",
+      "options": [
+        "1.0",
+        "0.5",
+        "2.0",
+        "0"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "elasticity_total_revenue"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Quantity changes from 20 to 70: 50/45 \u2248 111.1%. Price changes from 7 to 2: 5/4.5 \u2248 111.1%. Their ratio is 1.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-04.png",
+      "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
+      "graphRequired": true,
+      "aHash": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6"
+    },
+    {
+      "id": 130028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement best describes the horizontal demand curve?",
+      "options": [
+        "Consumers are willing to buy different quantities at $10, but none at a price above $10",
+        "Consumers buy exactly 70 units at every price",
+        "Quantity demanded never changes when price changes",
+        "The curve is inelastic because it is flat"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "With perfectly elastic demand, the market accepts the shown price, and quantities can vary along that horizontal line; a higher price drives quantity demanded to zero.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-05.png",
+      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "graphRequired": true,
+      "aHash": "55c4479fff1dd7d62524eedfd829499db0dc16eaa694ad182591c09a17b9a75f"
+    },
+    {
+      "id": 310004,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Why are points A and B not the best choices for the consumer?",
+      "options": [
+        "They are outside the budget line",
+        "They lie on higher indifference curves than C",
+        "They are affordable but lie on lower attainable indifference curves than point C",
+        "They violate transitivity"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "focuses_only_on_affordability_and_ignores_preference_rankings",
+      "feedback": "A and B are feasible, but C lies on the highest attainable indifference curve, so A and B are inferior choices.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "graphRequired": true,
+      "aHash": "d7e5e9816b62f08fdf3e8826148ee98f49ccbe006837214d9f2ae268532c16bb"
+    },
+    {
+      "id": 310007,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement about IC3 is correct?",
+      "options": [
+        "It is the consumer\u2019s chosen indifference curve at point A",
+        "It lies below the budget line and is affordable",
+        "It represents a preferred utility level but is unattainable with the current budget",
+        "It contains all affordable bundles"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "budget_constraint_intercepts_slope"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "thinks_any_higher_indifference_curve_must_be_affordable",
+      "feedback": "IC3 is above the budget line at every relevant point, so it is preferred but unattainable with the current budget.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-03.png",
+      "imageAlt": "Budget line tangent to IC2 at point A, with lower and higher indifference curves shown.",
+      "graphRequired": true,
+      "aHash": "943cbfc7eb265d70a8b33702628c5254a5427a190bdc986ace13c8b89a07b201"
+    },
+    {
+      "id": 310008,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. At the consumer optimum shown at point A, which condition must hold?",
+      "options": [
+        "MRS = price ratio",
+        "MUx = MUy",
+        "Income = 0",
+        "The budget line is steeper than every indifference curve"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "does_not_connect_tangency_with_mrs_and_market_tradeoffs",
+      "feedback": "At an interior optimum, the slope of the indifference curve equals the slope of the budget line, so MRS equals the price ratio.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-04.png",
+      "imageAlt": "Budget line tangent to IC2 at point A.",
+      "graphRequired": true,
+      "aHash": "210baedb4c17c1f63b8a8ecdf1afa78920926017c9557ac4934ee817cd941d8f"
+    },
+    {
+      "id": 310014,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. If Good X and Good Y are both ordinary goods, what is the problem with these indifference curves?",
+      "options": [
+        "They are too steep",
+        "They slope upward, which violates the idea that more of both goods should be preferred",
+        "They are parallel",
+        "They intersect the axes"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "accepts_upward_sloping_indifference_curves_for_ordinary_goods",
+      "feedback": "For ordinary goods, indifference curves should slope downward. Upward-sloping curves imply that getting more of both goods leaves utility unchanged, which is not consistent with more-is-better.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-07.png",
+      "imageAlt": "Three upward-sloping parallel curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "4ebbf43d2872ae4e1dbcd01045bb5d024c659ddcff94c740cbc302da6e2f987d"
+    },
+    {
+      "id": 310017,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good X falls, the movement from point A to point B is the...",
+      "options": [
+        "income effect",
+        "substitution effect",
+        "market demand effect",
+        "consumer surplus effect"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "confuses_the_compensated_move_with_the_final_income_adjustment",
+      "feedback": "A to B is the substitution effect: the consumer responds to the new relative price of Good X while staying on the original utility level U\u2080.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
+    },
+    {
+      "id": 310018,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the same price-change graph, the movement from point B to point C is the...",
+      "options": [
+        "substitution effect",
+        "income effect",
+        "cross-price effect",
+        "normal-good effect"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_the_shift_to_the_new_higher_utility_curve_with_substitution_alone",
+      "feedback": "B to C is the income effect. After the price drop in Good X raises real purchasing power, the consumer moves to a higher utility level U\u2081.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
+    },
+    {
+      "id": 310021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good X rises, the movement from point A to point B captures the...",
+      "options": [
+        "income effect",
+        "substitution effect",
+        "law of demand",
+        "budget share"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "mislabels_the_compensated_movement_after_a_price_increase",
+      "feedback": "A to B is the substitution effect: the consumer substitutes away from the now relatively more expensive Good X.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "graphRequired": true,
+      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
+    },
+    {
+      "id": 310024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price change, which point is the consumer\u2019s final optimal bundle?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "There is no final optimum"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "utility_maximization_mrs"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "mistakes_the_compensated_tangency_for_the_final_choice",
+      "feedback": "Point C lies on the new budget line and the highest attainable indifference curve after the price change, so C is the final chosen bundle.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 310043,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Why is point C the consumer\u2019s chosen bundle?",
+      "options": [
+        "It is the cheapest point on the graph",
+        "It lies on the highest attainable indifference curve and on the budget line",
+        "It uses equal amounts of both goods",
+        "It is above the budget line"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "treats_any_point_on_the_budget_line_as_equally_good",
+      "feedback": "Point C is where the budget line reaches the highest attainable indifference curve, so it maximizes utility.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "graphRequired": true,
+      "aHash": "8d2617f6592affbc6b333068bb01e8ed6cdb5c86b4cb3bae35d8e620e02ad123"
+    },
+    {
+      "id": 310044,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. At point A, the slope of the indifference curve equals the slope of the budget line. This means that...",
+      "options": [
+        "total utility is maximized because income is zero",
+        "the marginal rate of substitution equals the price ratio",
+        "the consumer values both goods equally",
+        "the budget line is horizontal"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "cannot_connect_tangency_to_the_mrs_equals_price_ratio_rule",
+      "feedback": "At an interior optimum, the indifference curve is tangent to the budget line, so the MRS equals the market tradeoff given by the price ratio.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-03.png",
+      "imageAlt": "Budget line tangent to IC2 at point A, with IC1 below and IC3 above.",
+      "graphRequired": true,
+      "aHash": "399f0a4ee9a59d58ff77b51e779198886a2d4bf425e879c6bf290054fe9f95d8"
+    },
+    {
+      "id": 310045,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What is the main problem with these indifference curves if both items on the axes are goods?",
+      "options": [
+        "They are too flat",
+        "They are upward sloping, which violates the more-is-better assumption",
+        "They are perfectly straight",
+        "They are tangent to each other"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "accepts_upward_sloping_indifference_curves_for_normal_goods",
+      "feedback": "For ordinary goods, indifference curves should slope downward. Upward-sloping curves would imply that more of both goods leaves utility unchanged.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-07.png",
+      "imageAlt": "Three upward-sloping curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "739bc436e633eddd0cd33606b9191098e7b9f84a0acd10dec2eedf4bb0a88cf6"
+    },
+    {
+      "id": 310046,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good X falls, the movement from point A to point B shows the consumer choosing...",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods",
+        "less of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "gets_the_direction_of_substitution_wrong_after_a_price_drop",
+      "feedback": "From A to B, Good X rises from 5 to 10 while Good Y falls from 20 to 10. That is the substitution effect.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
+    },
+    {
+      "id": 310047,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good Y falls, the movement from point A to point B indicates the consumer buys...",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods",
+        "less of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_after_a_drop_in_good_y_price",
+      "feedback": "From A to B, Good X falls from 20 to 10 while Good Y rises from 5 to 10, which is the substitution effect toward the cheaper good Y.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
+      "graphRequired": true,
+      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
+    },
+    {
+      "id": 310048,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X rises, the consumer\u2019s final choice is at point C. Compared with point A, point C lies on...",
+      "options": [
+        "a higher indifference curve",
+        "the same indifference curve",
+        "a lower indifference curve",
+        "no indifference curve at all"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "does_not_notice_the_loss_in_welfare_after_a_price_increase",
+      "feedback": "Point C lies on the lower curve U1 rather than the original curve U0, so the consumer is worse off after the price increase.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "87905b2c03987189aeac6bb5929ee00a851847ab5889a8dd367251a9dfbd9d4d"
     }
   ],
   "elite": [
@@ -5050,12 +11307,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "With stable preferences and both bundles feasible in both situations, the reversal needs an explanation such as changed constraints, changed preferences, or measurement error.",
+      "source": "engine2_expansion",
       "aHash": "0f556be73d9b0b6ac5dd5495e64efc743b2a1738cf0f43df1d21278e10323f67"
     },
     {
       "id": 140001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "An observed choice cycle repeatedly moves A → B → C → A even when all three bundles remain feasible. Which assumption is most directly threatened?",
+      "q": "An observed choice cycle repeatedly moves A \u2192 B \u2192 C \u2192 A even when all three bundles remain feasible. Which assumption is most directly threatened?",
       "options": [
         "Transitivity of preferences",
         "The law of one price",
@@ -5072,6 +11330,7 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Choice cycles are inconsistent with transitive preferences when constraints are unchanged.",
+      "source": "engine2_expansion",
       "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
     },
     {
@@ -5094,6 +11353,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
+      "source": "engine2_expansion",
       "aHash": "74481056a3de88429ca27541b28e1584779be866095db9ff1f7d3f1ba5ff5d12"
     },
     {
@@ -5116,6 +11376,7 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
+      "source": "engine2_expansion",
       "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
     },
     {
@@ -5138,6 +11399,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
+      "source": "engine2_expansion",
       "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
     },
     {
@@ -5160,6 +11422,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
+      "source": "engine2_expansion",
       "aHash": "0979d7da5bb26fec5371a696f40301a65e6e9f29922124dde337231a993994aa"
     },
     {
@@ -5182,6 +11445,7 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "Exhausting the budget is necessary but not sufficient; the marginal tradeoff condition must also hold at an interior optimum.",
+      "source": "engine2_expansion",
       "aHash": "c959f3445c88e339a553506af5af1d9e6ccc018ecf7defe24bc36b8bbeb67c0e"
     },
     {
@@ -5204,6 +11468,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "All purchased goods should deliver equal marginal utility per dollar at the optimum; Z currently yields more.",
+      "source": "engine2_expansion",
       "aHash": "c27825da7674146dd9e22e5a1d2999759ff31b25adf9776f547f047fecc1a733"
     },
     {
@@ -5226,6 +11491,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "A demand curve holds non-price determinants constant; simultaneous income changes shift the demand relationship.",
+      "source": "engine2_expansion",
       "aHash": "86f61142fd078a7f26e66abfd4f34f2b4f70c18c50532d41e57f1547db094522"
     },
     {
@@ -5248,6 +11514,7 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
+      "source": "engine2_expansion",
       "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
     },
     {
@@ -5272,6 +11539,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Inferiority concerns the response to income. A Giffen good is a much stronger case involving an upward-sloping demand response to own price.",
+      "source": "engine2_expansion",
       "aHash": "c125c250b1c3a79a47fe84e221f4e1d826c068e44e070f883b922c0f5793a525"
     },
     {
@@ -5294,6 +11562,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
+      "source": "engine2_expansion",
       "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
     },
     {
@@ -5316,6 +11585,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
+      "source": "engine2_expansion",
       "aHash": "3ffc99f478074f705b1ca257abc8f4b1231e43d178108331f60ed9013c7499e8"
     },
     {
@@ -5338,6 +11608,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Inferiority describes income response; Giffen behavior requires the income effect to be unusually strong relative to substitution.",
+      "source": "engine2_expansion",
       "aHash": "2a657502820038fc812b90d88225ec042e36536c19c6bb588bb76cc23f044de8"
     },
     {
@@ -5360,6 +11631,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "When demand shifts outward, equilibrium price and quantity can both rise without violating the law of demand along a fixed curve.",
+      "source": "engine2_expansion",
       "aHash": "50c92d898b1ca1351c771ebb18a200126a54dae2c2f0ac3e71c7a7acdf0d8ea7"
     },
     {
@@ -5382,6 +11654,7 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Lower prices raise surplus for existing purchasers and can create surplus for new purchasers.",
+      "source": "engine2_expansion",
       "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
     },
     {
@@ -5404,6 +11677,7 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "Adding consumers increases market quantity demanded at each price.",
+      "source": "engine2_expansion",
       "aHash": "e79599d25c7b3f2632ed71a6e97a47cd8fd536e76126b070287d02d9299e6b68"
     },
     {
@@ -5426,6 +11700,7 @@ const questionBanks = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "feedback": "Elasticity is unit-free percentage responsiveness; slope and the price/quantity position jointly matter.",
+      "source": "engine2_expansion",
       "aHash": "7a54873adefecbe732bb1629e4fc75d7122175a782c05838925a1fed9a2dab0a"
     },
     {
@@ -5448,6 +11723,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Midpoint percentages use a symmetric base and therefore give the same magnitude in either direction.",
+      "source": "engine2_expansion",
       "aHash": "0951ab25f408cd1f5a3fa9ebd7f66379d68962884fa0a775a257b76ca174f923"
     },
     {
@@ -5470,6 +11746,7 @@ const questionBanks = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue increases.",
+      "source": "engine2_expansion",
       "aHash": "39b3e5780d93c0191c20515ef109bd7b1cdd742102ac4fbae3031752e030f9d8"
     },
     {
@@ -5492,6 +11769,7 @@ const questionBanks = {
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
       "feedback": "A sizable positive cross-price elasticity indicates substitution between the services.",
+      "source": "engine2_expansion",
       "aHash": "c7db24ab5122a8d37991120826dcc1708ef41dfb283f3b488ac0d839ad657dbc"
     },
     {
@@ -5514,6 +11792,7 @@ const questionBanks = {
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "An income elasticity above 1 indicates a strongly income-responsive normal good.",
+      "source": "engine2_expansion",
       "aHash": "2191e60b96079e863a9ad079f89f3d387d638185033ed2cb0d2171d9c8259627"
     },
     {
@@ -5536,6 +11815,7 @@ const questionBanks = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Elasticity can differ across time horizons because adjustment opportunities expand.",
+      "source": "engine2_expansion",
       "aHash": "56fde23a30e378873fb352d44b43195a26a2f3bd2ffcf26431b091ded582ff2e"
     },
     {
@@ -5558,12 +11838,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "With stable preferences and both bundles feasible in both situations, the reversal needs an explanation such as changed constraints, changed preferences, or measurement error.",
+      "source": "engine2_expansion",
       "aHash": "0f556be73d9b0b6ac5dd5495e64efc743b2a1738cf0f43df1d21278e10323f67"
     },
     {
       "id": 140024,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, an observed choice cycle repeatedly moves A → B → C → A even when all three bundles remain feasible. Which assumption is most directly threatened?",
+      "q": "In a consumer-choice scenario involving streaming subscriptions, an observed choice cycle repeatedly moves A \u2192 B \u2192 C \u2192 A even when all three bundles remain feasible. Which assumption is most directly threatened?",
       "options": [
         "Transitivity of preferences",
         "The law of one price",
@@ -5580,6 +11861,7 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Choice cycles are inconsistent with transitive preferences when constraints are unchanged.",
+      "source": "engine2_expansion",
       "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
     },
     {
@@ -5602,6 +11884,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
+      "source": "engine2_expansion",
       "aHash": "74481056a3de88429ca27541b28e1584779be866095db9ff1f7d3f1ba5ff5d12"
     },
     {
@@ -5624,6 +11907,7 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
+      "source": "engine2_expansion",
       "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
     },
     {
@@ -5646,6 +11930,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
+      "source": "engine2_expansion",
       "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
     },
     {
@@ -5668,6 +11953,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
+      "source": "engine2_expansion",
       "aHash": "0979d7da5bb26fec5371a696f40301a65e6e9f29922124dde337231a993994aa"
     },
     {
@@ -5690,6 +11976,7 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "Exhausting the budget is necessary but not sufficient; the marginal tradeoff condition must also hold at an interior optimum.",
+      "source": "engine2_expansion",
       "aHash": "c959f3445c88e339a553506af5af1d9e6ccc018ecf7defe24bc36b8bbeb67c0e"
     },
     {
@@ -5712,6 +11999,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "All purchased goods should deliver equal marginal utility per dollar at the optimum; Z currently yields more.",
+      "source": "engine2_expansion",
       "aHash": "c27825da7674146dd9e22e5a1d2999759ff31b25adf9776f547f047fecc1a733"
     },
     {
@@ -5734,6 +12022,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "A demand curve holds non-price determinants constant; simultaneous income changes shift the demand relationship.",
+      "source": "engine2_expansion",
       "aHash": "86f61142fd078a7f26e66abfd4f34f2b4f70c18c50532d41e57f1547db094522"
     },
     {
@@ -5756,6 +12045,7 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
+      "source": "engine2_expansion",
       "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
     },
     {
@@ -5780,6 +12070,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Inferiority concerns the response to income. A Giffen good is a much stronger case involving an upward-sloping demand response to own price.",
+      "source": "engine2_expansion",
       "aHash": "c125c250b1c3a79a47fe84e221f4e1d826c068e44e070f883b922c0f5793a525"
     },
     {
@@ -5802,6 +12093,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
+      "source": "engine2_expansion",
       "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
     },
     {
@@ -5824,6 +12116,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
+      "source": "engine2_expansion",
       "aHash": "3ffc99f478074f705b1ca257abc8f4b1231e43d178108331f60ed9013c7499e8"
     },
     {
@@ -5846,6 +12139,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Inferiority describes income response; Giffen behavior requires the income effect to be unusually strong relative to substitution.",
+      "source": "engine2_expansion",
       "aHash": "2a657502820038fc812b90d88225ec042e36536c19c6bb588bb76cc23f044de8"
     },
     {
@@ -5868,6 +12162,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "When demand shifts outward, equilibrium price and quantity can both rise without violating the law of demand along a fixed curve.",
+      "source": "engine2_expansion",
       "aHash": "50c92d898b1ca1351c771ebb18a200126a54dae2c2f0ac3e71c7a7acdf0d8ea7"
     },
     {
@@ -5890,6 +12185,7 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Lower prices raise surplus for existing purchasers and can create surplus for new purchasers.",
+      "source": "engine2_expansion",
       "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
     },
     {
@@ -5912,6 +12208,7 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "Adding consumers increases market quantity demanded at each price.",
+      "source": "engine2_expansion",
       "aHash": "e79599d25c7b3f2632ed71a6e97a47cd8fd536e76126b070287d02d9299e6b68"
     },
     {
@@ -5934,6 +12231,7 @@ const questionBanks = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "feedback": "Elasticity is unit-free percentage responsiveness; slope and the price/quantity position jointly matter.",
+      "source": "engine2_expansion",
       "aHash": "7a54873adefecbe732bb1629e4fc75d7122175a782c05838925a1fed9a2dab0a"
     },
     {
@@ -5956,6 +12254,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Midpoint percentages use a symmetric base and therefore give the same magnitude in either direction.",
+      "source": "engine2_expansion",
       "aHash": "0951ab25f408cd1f5a3fa9ebd7f66379d68962884fa0a775a257b76ca174f923"
     },
     {
@@ -5978,6 +12277,7 @@ const questionBanks = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue increases.",
+      "source": "engine2_expansion",
       "aHash": "39b3e5780d93c0191c20515ef109bd7b1cdd742102ac4fbae3031752e030f9d8"
     },
     {
@@ -6000,6 +12300,7 @@ const questionBanks = {
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
       "feedback": "A sizable positive cross-price elasticity indicates substitution between the services.",
+      "source": "engine2_expansion",
       "aHash": "c7db24ab5122a8d37991120826dcc1708ef41dfb283f3b488ac0d839ad657dbc"
     },
     {
@@ -6022,6 +12323,7 @@ const questionBanks = {
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "An income elasticity above 1 indicates a strongly income-responsive normal good.",
+      "source": "engine2_expansion",
       "aHash": "2191e60b96079e863a9ad079f89f3d387d638185033ed2cb0d2171d9c8259627"
     },
     {
@@ -6044,6 +12346,7 @@ const questionBanks = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Elasticity can differ across time horizons because adjustment opportunities expand.",
+      "source": "engine2_expansion",
       "aHash": "56fde23a30e378873fb352d44b43195a26a2f3bd2ffcf26431b091ded582ff2e"
     },
     {
@@ -6066,12 +12369,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "With stable preferences and both bundles feasible in both situations, the reversal needs an explanation such as changed constraints, changed preferences, or measurement error.",
+      "source": "engine2_expansion",
       "aHash": "0f556be73d9b0b6ac5dd5495e64efc743b2a1738cf0f43df1d21278e10323f67"
     },
     {
       "id": 140047,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, an observed choice cycle repeatedly moves A → B → C → A even when all three bundles remain feasible. Which assumption is most directly threatened?",
+      "q": "In a consumer-choice scenario involving coffee purchases, an observed choice cycle repeatedly moves A \u2192 B \u2192 C \u2192 A even when all three bundles remain feasible. Which assumption is most directly threatened?",
       "options": [
         "Transitivity of preferences",
         "The law of one price",
@@ -6088,6 +12392,7 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Choice cycles are inconsistent with transitive preferences when constraints are unchanged.",
+      "source": "engine2_expansion",
       "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
     },
     {
@@ -6110,6 +12415,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
+      "source": "engine2_expansion",
       "aHash": "74481056a3de88429ca27541b28e1584779be866095db9ff1f7d3f1ba5ff5d12"
     },
     {
@@ -6132,6 +12438,7 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
+      "source": "engine2_expansion",
       "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
     },
     {
@@ -6154,6 +12461,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
+      "source": "engine2_expansion",
       "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
     },
     {
@@ -6176,6 +12484,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
+      "source": "engine2_expansion",
       "aHash": "0979d7da5bb26fec5371a696f40301a65e6e9f29922124dde337231a993994aa"
     },
     {
@@ -6198,6 +12507,7 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "Exhausting the budget is necessary but not sufficient; the marginal tradeoff condition must also hold at an interior optimum.",
+      "source": "engine2_expansion",
       "aHash": "c959f3445c88e339a553506af5af1d9e6ccc018ecf7defe24bc36b8bbeb67c0e"
     },
     {
@@ -6220,6 +12530,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "All purchased goods should deliver equal marginal utility per dollar at the optimum; Z currently yields more.",
+      "source": "engine2_expansion",
       "aHash": "c27825da7674146dd9e22e5a1d2999759ff31b25adf9776f547f047fecc1a733"
     },
     {
@@ -6242,6 +12553,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "A demand curve holds non-price determinants constant; simultaneous income changes shift the demand relationship.",
+      "source": "engine2_expansion",
       "aHash": "86f61142fd078a7f26e66abfd4f34f2b4f70c18c50532d41e57f1547db094522"
     },
     {
@@ -6264,6 +12576,7 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
+      "source": "engine2_expansion",
       "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
     },
     {
@@ -6288,6 +12601,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Inferiority concerns the response to income. A Giffen good is a much stronger case involving an upward-sloping demand response to own price.",
+      "source": "engine2_expansion",
       "aHash": "c125c250b1c3a79a47fe84e221f4e1d826c068e44e070f883b922c0f5793a525"
     },
     {
@@ -6310,6 +12624,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
+      "source": "engine2_expansion",
       "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
     },
     {
@@ -6332,6 +12647,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
+      "source": "engine2_expansion",
       "aHash": "3ffc99f478074f705b1ca257abc8f4b1231e43d178108331f60ed9013c7499e8"
     },
     {
@@ -6354,7 +12670,404 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Inferiority describes income response; Giffen behavior requires the income effect to be unusually strong relative to substitution.",
+      "source": "engine2_expansion",
       "aHash": "2a657502820038fc812b90d88225ec042e36536c19c6bb588bb76cc23f044de8"
+    },
+    {
+      "id": 140060,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Between C and B, quantity rises from 30 to 45 while price falls from $12 to $10. Using the midpoint method, the elasticity coefficient is closest to...",
+      "options": [
+        "2.2",
+        "1.0",
+        "0.45",
+        "3.0"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "multi-step",
+      "objective": "LO4.7",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Quantity changes 15/37.5 = 40%. Price changes 2/11 \u2248 18.2%. Elasticity is about 40/18.2 = 2.2.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-01.png",
+      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "graphRequired": true,
+      "aHash": "914204c25f3f144ddec3469c61a6faea695c87590ab78a5eb25b0f3904cf84e0"
+    },
+    {
+      "id": 140061,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When price falls from $5 to $3, total revenue rises on D1 but falls on D2. Which conclusion follows?",
+      "options": [
+        "D1 is elastic over the interval while D2 is inelastic",
+        "D1 is inelastic while D2 is elastic",
+        "Both curves are unit elastic",
+        "Both curves are perfectly inelastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "price_elasticity_fundamentals",
+        "midpoint_elasticity"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "For D1, revenue rises from 175 to 225 as price falls, so demand is elastic. For D2, revenue falls from 235 to 165 as price falls, so demand is inelastic.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-03.png",
+      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "graphRequired": true,
+      "aHash": "fcc1334068982de8b792517185c75ff76d256e70b6367a413e927cb8de2fb1b6"
+    },
+    {
+      "id": 140062,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The movement from B to A leaves total revenue unchanged. What does the total-revenue test imply about demand over this arc?",
+      "options": [
+        "Demand is unit elastic",
+        "Demand is perfectly elastic",
+        "Demand is relatively inelastic",
+        "Demand is perfectly inelastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "midpoint_elasticity"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "Price falls while quantity rises enough to leave total revenue unchanged at 140. That is the total-revenue signature of unit elasticity.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-04.png",
+      "imageAlt": "Curved demand curve with point B at quantity 20 price 7 and point A at quantity 70 price 2.",
+      "graphRequired": true,
+      "aHash": "94c91649771132d388c42292891ef450001fc31b210b4cb4c188333b3f6c7466"
+    },
+    {
+      "id": 310005,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The tangency at point C implies that the consumer\u2019s willingness to trade Good X for Good Y at C is...",
+      "options": [
+        "greater than the market tradeoff",
+        "less than the market tradeoff",
+        "equal to the market tradeoff shown by the budget line",
+        "unrelated to the market tradeoff"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "elite",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "separates_mrs_from_the_budget_line_slope_at_tangency",
+      "feedback": "At tangency, the slope of the indifference curve equals the slope of the budget line, so the consumer\u2019s MRS equals the market tradeoff.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget-line and indifference-curve graph with points A, B, and C, where C is the tangency point on IC2.",
+      "graphRequired": true,
+      "aHash": "d3817858d5f7fa26acbdb6e7b53ecfe91d042e09af7ab3a0fce338c95a2f4a8f"
+    },
+    {
+      "id": 310015,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. These upward-sloping \u201cindifference curves\u201d could make economic sense only if...",
+      "options": [
+        "at least one axis represented a bad rather than a good",
+        "the consumer had convex preferences",
+        "the goods were perfect substitutes",
+        "income was zero"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "elite",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "ignores_that_upward_sloping_curves_require_bads_or_reversed_preferences",
+      "feedback": "Upward-sloping indifference curves are inconsistent with ordinary goods. They could only be rationalized if at least one item were a bad or the axes were interpreted differently.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-07.png",
+      "imageAlt": "Three upward-sloping parallel curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "0dd1dce7e4edebc6994dd2c1c624f2f0879cd6b4672c2539dbf2da15ac8bb9c8"
+    },
+    {
+      "id": 310019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After Good X becomes cheaper, what is the consumer\u2019s final utility-maximizing choice?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Any point on U\u2080"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "substitution_effect",
+        "income_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "stops_at_the_compensated_bundle_instead_of_the_final_bundle",
+      "feedback": "The final choice is point C, where the consumer reaches the new higher utility curve U\u2081 on Budget\u2081.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 310022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Compared with point A, point C implies that the consumer...",
+      "options": [
+        "reaches a higher utility level after the price increase",
+        "reaches a lower utility level after the price increase",
+        "faces no change in utility",
+        "is off the budget line"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "fails_to_notice_that_the_new_choice_is_on_a_lower_indifference_curve",
+      "feedback": "Point C lies on a lower indifference curve than point A, so the consumer ends up worse off after the price increase in Good X.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "graphRequired": true,
+      "aHash": "066a1b9e57f490e93c671d33c17b6652e1330325bb92025af0b975ef755ec366"
+    },
+    {
+      "id": 310025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. If Good Y becomes cheaper, the compensated movement from A to B shows the consumer buying...",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods",
+        "less of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "gets_the_direction_of_substitution_wrong_when_y_becomes_cheaper",
+      "feedback": "When Good Y becomes cheaper, the substitution effect pushes the consumer toward more Y and away from X. That is the A to B movement shown here.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
+    },
+    {
+      "id": 310027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In this price-change graph, the movement from A to B isolates the substitution effect. Which change is shown?",
+      "options": [
+        "More Good X and less Good Y",
+        "Less Good X and more Good Y",
+        "More of both goods",
+        "No change in consumption"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_direction_of_substitution_when_x_becomes_cheaper",
+      "feedback": "Because Good X became cheaper, the substitution effect moves consumption toward X and away from Y. That is the A to B move.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "graphRequired": true,
+      "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
+    },
+    {
+      "id": 310049,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X falls, how does the final bundle at C compare with the initial bundle at A?",
+      "options": [
+        "more Good X and the same amount of Good Y",
+        "more Good X and more Good Y",
+        "less Good X and more Good Y",
+        "the same bundle"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "substitution_effect",
+        "income_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "miscompares_the_initial_and_final_bundles_after_a_price_change",
+      "feedback": "Point A is about (5, 20) and point C is about (20, 20), so the consumer ends with more Good X and the same amount of Good Y.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "fa7d3b4504708f977ef98c2b020f4f06fb40e19384e87fa92c90ba17ceef869c"
+    },
+    {
+      "id": 310050,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good Y falls, how does the final bundle at C compare with the initial bundle at A?",
+      "options": [
+        "the same amount of Good X and more Good Y",
+        "more Good X and more Good Y",
+        "less Good X and more Good Y",
+        "more Good X and the same amount of Good Y"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "substitution_effect",
+        "income_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "misreads_the_initial_and_final_coordinates",
+      "feedback": "Point A is about (20, 5) and point C is about (20, 20), so Good X stays the same while Good Y increases.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
+      "graphRequired": true,
+      "aHash": "0419e66c983c7c20c26b029f9f4a365b8216e94e67d46b7dfb871ddf93f6b3d7"
+    },
+    {
+      "id": 310051,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X rises, how does the final bundle at C compare with the initial bundle at A?",
+      "options": [
+        "more Good X and the same amount of Good Y",
+        "less Good X and the same amount of Good Y",
+        "less Good X and more Good Y",
+        "more Good X and less Good Y"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "income_effect",
+        "substitution_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "misreads_the_coordinates_of_initial_and_final_bundles",
+      "feedback": "Point A is about (20, 20) and point C is about (5, 20), so the consumer ends with less Good X and the same amount of Good Y.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "fd45ba3df3bf946f3686940737eff2be832969766b4bfce2b8939aca71c9a4c2"
+    },
+    {
+      "id": 310052,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X falls in this graph, what happens to the consumer\u2019s chosen amounts from A to C?",
+      "options": [
+        "Good X rises and Good Y falls",
+        "both Good X and Good Y rise",
+        "Good X falls and Good Y rises",
+        "Good X rises and Good Y stays the same"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "elite",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "income_effect",
+        "substitution_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "cannot_compare_initial_and_final_choices_in_the_alternate_price_drop_graph",
+      "feedback": "Point A is about (10, 20) and point C is about (15, 25), so both goods increase in the final bundle.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with both goods increasing from the initial to the final bundle.",
+      "graphRequired": true,
+      "aHash": "86d7604f974695a66f7b8d52d5a6f735fd179810b9ae03a2ff2056ae94a01c63"
+    },
+    {
+      "id": 310053,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. For perfect complements, where will the optimal bundle typically occur?",
+      "options": [
+        "At the kink of the highest attainable indifference curve",
+        "Anywhere along a horizontal arm",
+        "Anywhere along a vertical arm",
+        "At the highest vertical intercept"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "elite",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "thinks_any_point_on_an_l_shaped_curve_is_equally_likely_to_be_optimal",
+      "feedback": "With perfect complements, extra units of only one good do not raise utility, so the optimum occurs at the kink of the highest attainable indifference curve.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-06.png",
+      "imageAlt": "Three L-shaped indifference curves labeled IC1, IC2, and IC3.",
+      "graphRequired": true,
+      "aHash": "75eaea62592320adb9e2384e69370d028f34a68c7b9bd79da240254ff64647ba"
     }
   ],
   "legendary": [
@@ -6378,6 +13091,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "source": "engine2_expansion",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
@@ -6400,6 +13114,7 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "source": "engine2_expansion",
       "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
     },
     {
@@ -6422,6 +13137,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "source": "engine2_expansion",
       "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
     },
     {
@@ -6444,6 +13160,7 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "source": "engine2_expansion",
       "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
     },
     {
@@ -6466,6 +13183,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_expansion",
       "aHash": "56bacb7f697eeb84038a42fcb6f80fb81b0d6273441486f1503f9253b41b117e"
     },
     {
@@ -6488,6 +13206,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_expansion",
       "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
     },
     {
@@ -6510,6 +13229,7 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_expansion",
       "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
     },
     {
@@ -6532,6 +13252,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_expansion",
       "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
     },
     {
@@ -6554,6 +13275,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_expansion",
       "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
     },
     {
@@ -6576,6 +13298,7 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "source": "engine2_expansion",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
@@ -6600,6 +13323,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_expansion",
       "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
     },
     {
@@ -6624,6 +13348,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_expansion",
       "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
     },
     {
@@ -6646,6 +13371,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_expansion",
       "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
     },
     {
@@ -6668,6 +13394,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "source": "engine2_expansion",
       "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
     },
     {
@@ -6690,6 +13417,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "source": "engine2_expansion",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
@@ -6712,6 +13440,7 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "source": "engine2_expansion",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
@@ -6734,6 +13463,7 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "source": "engine2_expansion",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
@@ -6756,6 +13486,7 @@ const questionBanks = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "feedback": "Point elasticity equals slope-related responsiveness multiplied by P/Q, so it varies along a linear curve.",
+      "source": "engine2_expansion",
       "aHash": "a8c07dae721c40617c0fbb09a71baca82308693d2bd38f83f9041bc448e49c40"
     },
     {
@@ -6778,6 +13509,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
+      "source": "engine2_expansion",
       "aHash": "fa5b2591be44f36adfeaaab1ae069a2433c49c6eb45bb8ff396733c7c01161b4"
     },
     {
@@ -6800,6 +13532,7 @@ const questionBanks = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
+      "source": "engine2_expansion",
       "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
     },
     {
@@ -6821,7 +13554,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "%ΔQx ≈ Exy × %ΔPy = -1.2 × 5% = -6%.",
+      "feedback": "%\u0394Qx \u2248 Exy \u00d7 %\u0394Py = -1.2 \u00d7 5% = -6%.",
+      "source": "engine2_expansion",
       "aHash": "f4379d747e6bf0ab6a5cf3d03eb450c6b5a46d193ed642a9a7692e797bba682a"
     },
     {
@@ -6843,7 +13577,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "%ΔQ ≈ Ey × %ΔIncome = -0.8 × -5% = +4%.",
+      "feedback": "%\u0394Q \u2248 Ey \u00d7 %\u0394Income = -0.8 \u00d7 -5% = +4%.",
+      "source": "engine2_expansion",
       "aHash": "8a9dc06b6e65012609b1be11814dda93d1169c12a0d51ca090848054d700e7c9"
     },
     {
@@ -6866,6 +13601,7 @@ const questionBanks = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Necessity and few immediate substitutes reduce short-run responsiveness; substitution possibilities can expand over time.",
+      "source": "engine2_expansion",
       "aHash": "2a9d77534a775c9e58d10b2be9053b37f9fe98f2aa85147462ece6c2002ce3b8"
     },
     {
@@ -6888,6 +13624,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "source": "engine2_expansion",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
@@ -6910,6 +13647,7 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "source": "engine2_expansion",
       "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
     },
     {
@@ -6932,6 +13670,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "source": "engine2_expansion",
       "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
     },
     {
@@ -6954,6 +13693,7 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "source": "engine2_expansion",
       "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
     },
     {
@@ -6976,6 +13716,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_expansion",
       "aHash": "2d5b676012f4e757a5602e7a57eb67216b76ea71db2b19fa45c6eadab16c0796"
     },
     {
@@ -6998,6 +13739,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_expansion",
       "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
     },
     {
@@ -7020,6 +13762,7 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_expansion",
       "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
     },
     {
@@ -7042,6 +13785,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_expansion",
       "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
     },
     {
@@ -7064,6 +13808,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_expansion",
       "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
     },
     {
@@ -7086,6 +13831,7 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "source": "engine2_expansion",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
@@ -7110,6 +13856,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_expansion",
       "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
     },
     {
@@ -7134,6 +13881,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_expansion",
       "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
     },
     {
@@ -7156,6 +13904,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_expansion",
       "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
     },
     {
@@ -7178,6 +13927,7 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "source": "engine2_expansion",
       "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
     },
     {
@@ -7200,6 +13950,7 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "source": "engine2_expansion",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
@@ -7222,6 +13973,7 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "source": "engine2_expansion",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
@@ -7244,6 +13996,7 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "source": "engine2_expansion",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
@@ -7266,6 +14019,7 @@ const questionBanks = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "feedback": "Point elasticity equals slope-related responsiveness multiplied by P/Q, so it varies along a linear curve.",
+      "source": "engine2_expansion",
       "aHash": "a8c07dae721c40617c0fbb09a71baca82308693d2bd38f83f9041bc448e49c40"
     },
     {
@@ -7288,6 +14042,7 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
+      "source": "engine2_expansion",
       "aHash": "fa5b2591be44f36adfeaaab1ae069a2433c49c6eb45bb8ff396733c7c01161b4"
     },
     {
@@ -7310,6 +14065,7 @@ const questionBanks = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
+      "source": "engine2_expansion",
       "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
     },
     {
@@ -7331,7 +14087,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "%ΔQx ≈ Exy × %ΔPy = -1.2 × 5% = -6%.",
+      "feedback": "%\u0394Qx \u2248 Exy \u00d7 %\u0394Py = -1.2 \u00d7 5% = -6%.",
+      "source": "engine2_expansion",
       "aHash": "f4379d747e6bf0ab6a5cf3d03eb450c6b5a46d193ed642a9a7692e797bba682a"
     },
     {
@@ -7353,7 +14110,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "income_elasticity",
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "%ΔQ ≈ Ey × %ΔIncome = -0.8 × -5% = +4%.",
+      "feedback": "%\u0394Q \u2248 Ey \u00d7 %\u0394Income = -0.8 \u00d7 -5% = +4%.",
+      "source": "engine2_expansion",
       "aHash": "8a9dc06b6e65012609b1be11814dda93d1169c12a0d51ca090848054d700e7c9"
     },
     {
@@ -7376,6 +14134,7 @@ const questionBanks = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Necessity and few immediate substitutes reduce short-run responsiveness; substitution possibilities can expand over time.",
+      "source": "engine2_expansion",
       "aHash": "2a9d77534a775c9e58d10b2be9053b37f9fe98f2aa85147462ece6c2002ce3b8"
     },
     {
@@ -7398,6 +14157,7 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "source": "engine2_expansion",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
@@ -7420,6 +14180,7 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "source": "engine2_expansion",
       "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
     },
     {
@@ -7442,6 +14203,7 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "source": "engine2_expansion",
       "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
     },
     {
@@ -7464,6 +14226,7 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "source": "engine2_expansion",
       "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
     },
     {
@@ -7486,6 +14249,7 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_expansion",
       "aHash": "b0c38cafc5a4b88494b281c20e8dbcc8afa7565a3d57ac46cdad33a5323a4aba"
     },
     {
@@ -7508,6 +14272,7 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_expansion",
       "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
     },
     {
@@ -7530,6 +14295,7 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_expansion",
       "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
     },
     {
@@ -7552,6 +14318,7 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_expansion",
       "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
     },
     {
@@ -7574,6 +14341,7 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_expansion",
       "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
     },
     {
@@ -7596,6 +14364,7 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "source": "engine2_expansion",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
@@ -7620,6 +14389,7 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_expansion",
       "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
     },
     {
@@ -7644,6 +14414,7 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_expansion",
       "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
     },
     {
@@ -7666,6 +14437,7 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_expansion",
       "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
     },
     {
@@ -7688,14 +14460,409 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "source": "engine2_expansion",
       "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
+    },
+    {
+      "id": 150060,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement correctly compares the B\u2192A interval with the C\u2192B interval on the same linear demand curve?",
+      "options": [
+        "B\u2192A is unit elastic, while C\u2192B is elastic",
+        "Both intervals are unit elastic",
+        "B\u2192A is elastic, while C\u2192B is inelastic",
+        "B\u2192A is perfectly inelastic, while C\u2192B is unit elastic"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "synthesis",
+      "objective": "LO4.7",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "price_elasticity_fundamentals",
+        "elasticity_total_revenue"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "B\u2192A has midpoint elasticity 1. C\u2192B has midpoint elasticity about 2.2. Elasticity therefore declines as the movement proceeds down the linear curve.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-01.png",
+      "imageAlt": "Downward-sloping linear demand curve with point C at quantity 30 price 12, point B at quantity 45 price 10, and point A at quantity 75 price 6.",
+      "graphRequired": true,
+      "aHash": "b8bdf0cd58d0b04e6da31164859be6c15df7046c62d49b5d4f25e0fc98c48fa0"
+    },
+    {
+      "id": 150061,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which pair of midpoint elasticity estimates best matches D1 and D2 over the $5-to-$3 price change?",
+      "options": [
+        "D1 \u2248 1.45 and D2 \u2248 0.31",
+        "D1 \u2248 0.31 and D2 \u2248 1.45",
+        "D1 = 1 and D2 = 1",
+        "D1 = 0 and D2 = infinity"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "multi-step",
+      "objective": "LO4.7",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "elasticity_total_revenue",
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "D1 changes quantity by 40 around a midpoint of 55, producing elasticity about 1.45. D2 changes quantity by only 8 around a midpoint of 51, producing elasticity about 0.31.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-03.png",
+      "imageAlt": "Two downward-sloping demand curves. D1 is flatter with points B at quantity 35 price 5 and A at quantity 75 price 3. D2 is steeper with points D at quantity 47 price 5 and C at quantity 55 price 3.",
+      "graphRequired": true,
+      "aHash": "85feb8ad028b3a521ff6c3dfb78fa93064117719ad3ec319bb805d78da1a8406"
+    },
+    {
+      "id": 150062,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. A student claims that the horizontal line must be perfectly inelastic because price never changes between A and B. What is the best critique?",
+      "options": [
+        "The student has it backward: a horizontal demand curve is perfectly elastic because an arbitrarily small price increase causes quantity demanded to collapse",
+        "The student is correct because price is fixed",
+        "The curve is unit elastic because A and B share the same price",
+        "Elasticity cannot be classified from the graph"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "critique",
+      "objective": "LO4.7",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "Slope orientation matters here: vertical demand is perfectly inelastic, while horizontal demand is perfectly elastic.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-05.png",
+      "imageAlt": "Horizontal demand curve at price 10 with point A at quantity 50 and point B at quantity 100.",
+      "graphRequired": true,
+      "aHash": "8d831302e3a137e0797df55a24f56efe0ff4c238c40c8690fcc903b35e27fd7b"
+    },
+    {
+      "id": 310009,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The tangency at point A means the slope of IC2 at A must equal...",
+      "options": [
+        "the consumer\u2019s income",
+        "the slope of the budget line",
+        "the vertical intercept",
+        "zero"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "legendary",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "cannot_translate_a_tangency_picture_into_the_mrs_equals_price_ratio_condition",
+      "feedback": "At an interior optimum, the indifference curve and the budget line share a common slope. That is the MRS = price ratio condition.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-04.png",
+      "imageAlt": "Budget line tangent to IC2 at point A.",
+      "graphRequired": true,
+      "aHash": "5eb06c0d47f7167b3d1a732d987e9643b5e84946a95601b46633f662148a6b5d"
+    },
+    {
+      "id": 310028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After Good X becomes cheaper, the movement from B to C indicates that the income effect causes the consumer to...",
+      "options": [
+        "buy less X and more Y",
+        "buy less of both goods",
+        "buy less X and less Y",
+        "buy fewer units of X than at B but more Y than at B"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "ignores_that_income_effect_can_partially_offset_the_substitution_effect",
+      "feedback": "From B to C, the consumer gives up some X but buys more Y. The income effect partly offsets the substitution effect for X while increasing Y.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "graphRequired": true,
+      "aHash": "82f2b3dc96d8a8f8c53ff2dfa46467d17372ebad5eda90396c0cc5cbe2d6920c"
+    },
+    {
+      "id": 310029,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Comparing the initial and final optima, which statement is correct?",
+      "options": [
+        "At C the consumer buys less X and more Y than at A",
+        "At C the consumer buys more X and less Y than at A",
+        "At C the consumer buys more X and more Y than at A",
+        "At C the consumer buys the same amounts as at A"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "income_effect",
+        "substitution_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "cannot_compare_initial_and_final_optima_after_a_price_change",
+      "feedback": "Point A is about (10, 20) and point C is about (15, 25), so the final bundle contains more of both goods than the initial bundle.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept and points A, B, and C marking a price drop in Good X.",
+      "graphRequired": true,
+      "aHash": "cab23d63ec3db6c65dc608a509e6beda3ce0bfbbc72c70d35438c1c731a689d9"
+    },
+    {
+      "id": 310030,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement best describes point B in the price-increase graph?",
+      "options": [
+        "It is the final optimum on the new lower indifference curve",
+        "It is the compensated bundle that isolates the substitution effect",
+        "It is unaffordable",
+        "It is the initial optimum before prices change"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "income_effect"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "mistakes_the_compensated_bundle_for_the_final_choice",
+      "feedback": "Point B sits on the compensated budget line tangent to the original utility level, so it isolates the substitution effect.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing a price increase in Good X.",
+      "graphRequired": true,
+      "aHash": "8f2565d7a0c4d42ee4ecc9ceaba32d8472b7bbbf3bf04eb2c5a98d1f2ca1e5e3"
+    },
+    {
+      "id": 310031,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the Y-price-drop graph, which point represents the substitution-effect bundle?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "No point does"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "cannot_identify_the_compensated_tangency_bundle",
+      "feedback": "Point B is the compensated bundle: it lies on the dashed line and the original indifference curve, isolating the substitution effect.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the X-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    {
+      "id": 310032,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Why does point C lie on a higher indifference curve than point A?",
+      "options": [
+        "Because the consumer became less efficient",
+        "Because the price change and resulting income effect let the consumer reach a higher utility level",
+        "Because point C is off the budget line",
+        "Because point A violates the budget constraint"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "fails_to_link_real_income_gain_with_higher_utility",
+      "feedback": "The lower price raises real purchasing power, so after substitution and income effects the consumer reaches a higher indifference curve at C.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph with Budget0 and Budget1 sharing the Y-intercept, and points A, B, and C showing substitution and income effects.",
+      "graphRequired": true,
+      "aHash": "1f0a5da8b1ef9e94161a17a3f0833f9c19ea4e3642d3aa997c350fa2f517e348"
+    },
+    {
+      "id": 310054,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the price-drop-for-Good-X graph, the movement from point B to point C means the income effect causes the consumer to...",
+      "options": [
+        "buy more Good X and more Good Y",
+        "buy more Good X and the same amount of Good Y",
+        "buy less Good X and more Good Y",
+        "buy less of both goods"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "cannot_trace_the_income_effect_from_the_compensated_bundle_to_the_final_bundle",
+      "feedback": "From B to C, Good X rises from 10 to 20 and Good Y rises from 10 to 20. The income effect raises consumption of both goods in this graph.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "83e984e191fcb7e862cde7dc74a0f636dd5a9d072ac0d70ba8a4742634570fba"
+    },
+    {
+      "id": 310055,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the price-drop-for-Good-Y graph, what does the move from point B to point C show?",
+      "options": [
+        "the substitution effect reduces both goods",
+        "the income effect raises both goods from the compensated bundle",
+        "the final bundle is on the original utility curve",
+        "Good Y falls while Good X rises"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "fails_to_separate_the_income_effect_from_the_substitution_effect",
+      "feedback": "From B at (10, 10) to C at (20, 20), the consumer buys more of both goods. That is the income effect after Good Y becomes cheaper.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good Y.",
+      "graphRequired": true,
+      "aHash": "cfaae0b55e001e397e1b58b21c054b4ea393c90f71f5dfe46b4e1b77ceff1466"
+    },
+    {
+      "id": 310056,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the price-rise-for-Good-X graph, what does the movement from point A to point B show?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "less Good X and less Good Y",
+        "more of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "gets_the_direction_of_substitution_wrong_when_good_x_becomes_more_expensive",
+      "feedback": "From A at (20, 20) to B at (10, 40), Good X falls and Good Y rises. The substitution effect pushes the consumer away from the now more expensive Good X.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
+    },
+    {
+      "id": 310057,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the same price-rise-for-Good-X graph, what does the movement from point B to point C show?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "cannot_read_the_income_effect_after_a_price_increase",
+      "feedback": "From B at (10, 40) to C at (5, 20), both goods decrease. The income effect lowers real purchasing power.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after an increase in the price of Good X.",
+      "graphRequired": true,
+      "aHash": "565aa66afe948be1602a81fd1d34e5d52d79f23db3d44d526abd698b224f406b"
+    },
+    {
+      "id": 310058,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Why is point B not the consumer\u2019s final choice after the price of Good X falls?",
+      "options": [
+        "Because it is not on any indifference curve",
+        "Because it stays on the original utility curve U\u2080 and only isolates the substitution effect",
+        "Because it lies outside the new budget set",
+        "Because it gives higher utility than point C"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "legendary",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "income_effect",
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "mistakes_the_compensated_bundle_for_the_final_utility_maximizing_bundle",
+      "feedback": "Point B is the compensated bundle on the original utility curve U\u2080. The final choice is point C on the new budget line and higher utility curve U\u2081.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with B as the compensated bundle and C as the final optimum.",
+      "graphRequired": true,
+      "aHash": "0f2daf09444cc8a3b41242c270d923a9e0b233f328ac478f544f497c484b48e9"
     }
   ],
   "legendaryBoss": [
     {
       "id": 210000,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "The Sovereign's final trial \u2014 A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -7712,12 +14879,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "source": "engine2_legendary_boss",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 210001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving campus meals, the Sovereign's final trial — A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "In a new trial involving campus meals, the Sovereign's final trial \u2014 A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -7734,12 +14902,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "source": "engine2_legendary_boss",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 210002,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving concert tickets, the Sovereign's final trial — A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "In a new trial involving concert tickets, the Sovereign's final trial \u2014 A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -7756,12 +14925,13 @@ const questionBanks = {
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
       "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "source": "engine2_legendary_boss",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 210003,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Suppose preferences are complete but not transitive. Which part of the standard optimization story is most endangered?",
+      "q": "The Sovereign's final trial \u2014 Suppose preferences are complete but not transitive. Which part of the standard optimization story is most endangered?",
       "options": [
         "A stable ranking that supports a well-defined optimum",
         "The arithmetic of budget intercepts",
@@ -7778,12 +14948,13 @@ const questionBanks = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "source": "engine2_legendary_boss",
       "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
     },
     {
       "id": 210004,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — An indifference map is internally consistent, downward sloping, and nested. Which additional feature most naturally represents a taste for balanced bundles rather than extremes?",
+      "q": "The Sovereign's final trial \u2014 An indifference map is internally consistent, downward sloping, and nested. Which additional feature most naturally represents a taste for balanced bundles rather than extremes?",
       "options": [
         "Convexity toward the origin",
         "Crossing curves",
@@ -7800,12 +14971,13 @@ const questionBanks = {
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
       "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "source": "engine2_legendary_boss",
       "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
     },
     {
       "id": 210005,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A consumer's MRS falls from 5 to 2 as X increases. The market price ratio Px/Py is 2. Which statement best describes the endpoint?",
+      "q": "The Sovereign's final trial \u2014 A consumer's MRS falls from 5 to 2 as X increases. The market price ratio Px/Py is 2. Which statement best describes the endpoint?",
       "options": [
         "The consumer has moved toward a tangency where subjective and market tradeoffs match",
         "The budget line must have become steeper",
@@ -7822,12 +14994,13 @@ const questionBanks = {
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
       "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "source": "engine2_legendary_boss",
       "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
     },
     {
       "id": 210006,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Suppose the budget equation is 5X + 10Y = 60. Which pair of facts is simultaneously correct?",
+      "q": "The Sovereign's final trial \u2014 Suppose the budget equation is 5X + 10Y = 60. Which pair of facts is simultaneously correct?",
       "options": [
         "X-intercept=12 and slope=-0.50",
         "X-intercept=6 and slope=-2.00",
@@ -7844,12 +15017,13 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_legendary_boss",
       "aHash": "56bacb7f697eeb84038a42fcb6f80fb81b0d6273441486f1503f9253b41b117e"
     },
     {
       "id": 210007,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
+      "q": "The Sovereign's final trial \u2014 A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
       "options": [
         "The X-intercept doubles, the Y-intercept is unchanged, and the budget line becomes flatter",
         "Both intercepts are unchanged",
@@ -7866,12 +15040,13 @@ const questionBanks = {
       "repairSkill": "budget_line_changes",
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_legendary_boss",
       "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
     },
     {
       "id": 210008,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Suppose the budget equation is 15X + 20Y = 100. Which pair of facts is simultaneously correct?",
+      "q": "The Sovereign's final trial \u2014 Suppose the budget equation is 15X + 20Y = 100. Which pair of facts is simultaneously correct?",
       "options": [
         "X-intercept=6.66667 and slope=-0.75",
         "X-intercept=5 and slope=-1.33",
@@ -7888,12 +15063,13 @@ const questionBanks = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_legendary_boss",
       "aHash": "b0c38cafc5a4b88494b281c20e8dbcc8afa7565a3d57ac46cdad33a5323a4aba"
     },
     {
       "id": 210009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "q": "The Sovereign's final trial \u2014 An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
       "options": [
         "The market tradeoff changes, so the old MRS no longer matches the new relative price",
         "The consumer's preferences automatically reverse",
@@ -7910,12 +15086,13 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_legendary_boss",
       "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
     },
     {
       "id": 210010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
+      "q": "The Sovereign's final trial \u2014 Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
       "options": [
         "Goods can have different prices, so the relevant comparison is utility gained per dollar",
         "Marginal utility is always negative",
@@ -7932,12 +15109,13 @@ const questionBanks = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_legendary_boss",
       "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
     },
     {
       "id": 210011,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving ride-share trips, the Sovereign's final trial — An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "q": "In a new trial involving ride-share trips, the Sovereign's final trial \u2014 An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
       "options": [
         "The market tradeoff changes, so the old MRS no longer matches the new relative price",
         "The consumer's preferences automatically reverse",
@@ -7954,12 +15132,13 @@ const questionBanks = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_legendary_boss",
       "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
     },
     {
       "id": 210012,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "q": "The Sovereign's final trial \u2014 An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
       "options": [
         "The budget constraint and resulting optimal bundle",
         "The preference ordering itself",
@@ -7976,12 +15155,13 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
     },
     {
       "id": 210013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving gym memberships, the Sovereign's final trial — An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "q": "In a new trial involving gym memberships, the Sovereign's final trial \u2014 An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
       "options": [
         "The budget constraint and resulting optimal bundle",
         "The preference ordering itself",
@@ -7998,12 +15178,13 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
     },
     {
       "id": 210014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving movie tickets, the Sovereign's final trial — An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "q": "In a new trial involving movie tickets, the Sovereign's final trial \u2014 An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
       "options": [
         "The budget constraint and resulting optimal bundle",
         "The preference ordering itself",
@@ -8020,12 +15201,13 @@ const questionBanks = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
     },
     {
       "id": 210015,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "The Sovereign's final trial \u2014 Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
       "options": [
         "The price effect and income-induced demand shift occur simultaneously",
         "Normal goods never obey the law of demand",
@@ -8042,12 +15224,13 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "source": "engine2_legendary_boss",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
       "id": 210016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
+      "q": "The Sovereign's final trial \u2014 A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
       "options": [
         "The good is inferior for this household",
         "The good is normal and a necessity",
@@ -8066,12 +15249,13 @@ const questionBanks = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_legendary_boss",
       "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
     },
     {
       "id": 210017,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving campus meals, the Sovereign's final trial — Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "In a new trial involving campus meals, the Sovereign's final trial \u2014 Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
       "options": [
         "The price effect and income-induced demand shift occur simultaneously",
         "Normal goods never obey the law of demand",
@@ -8088,12 +15272,13 @@ const questionBanks = {
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
       "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "source": "engine2_legendary_boss",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
       "id": 210018,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
+      "q": "The Sovereign's final trial \u2014 A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
       "options": [
         "+3 units",
         "+5 units",
@@ -8112,12 +15297,13 @@ const questionBanks = {
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
       "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_legendary_boss",
       "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
     },
     {
       "id": 210019,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
+      "q": "The Sovereign's final trial \u2014 A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
       "options": [
         "Upward",
         "Downward",
@@ -8134,12 +15320,13 @@ const questionBanks = {
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_legendary_boss",
       "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
     },
     {
       "id": 210020,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — For a Giffen good, a rise in price makes the consumer effectively poorer. Why can that increase purchases of the good?",
+      "q": "The Sovereign's final trial \u2014 For a Giffen good, a rise in price makes the consumer effectively poorer. Why can that increase purchases of the good?",
       "options": [
         "Because the good is so strongly inferior that the purchasing-power effect toward it outweighs substitution away from it",
         "Because the substitution effect reverses sign",
@@ -8156,12 +15343,13 @@ const questionBanks = {
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "source": "engine2_legendary_boss",
       "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
     },
     {
       "id": 210021,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "The Sovereign's final trial \u2014 A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
       "options": [
         "The observed relationship may mix movements along demand with shifts of demand",
         "Market demand must equal average individual demand",
@@ -8178,12 +15366,13 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
       "id": 210022,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving movie tickets, the Sovereign's final trial — A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "In a new trial involving movie tickets, the Sovereign's final trial \u2014 A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
       "options": [
         "The observed relationship may mix movements along demand with shifts of demand",
         "Market demand must equal average individual demand",
@@ -8200,12 +15389,13 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
       "id": 210023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving coffee purchases, the Sovereign's final trial — A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "In a new trial involving coffee purchases, the Sovereign's final trial \u2014 A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
       "options": [
         "The observed relationship may mix movements along demand with shifts of demand",
         "Market demand must equal average individual demand",
@@ -8222,12 +15412,13 @@ const questionBanks = {
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
       "id": 210024,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "The Sovereign's final trial \u2014 Why does the area under a demand curve and above the market price represent consumer surplus?",
       "options": [
         "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
         "The demand curve measures sellers' marginal cost",
@@ -8244,12 +15435,13 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "source": "engine2_legendary_boss",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
       "id": 210025,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving campus meals, the Sovereign's final trial — Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "In a new trial involving campus meals, the Sovereign's final trial \u2014 Why does the area under a demand curve and above the market price represent consumer surplus?",
       "options": [
         "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
         "The demand curve measures sellers' marginal cost",
@@ -8266,12 +15458,13 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "source": "engine2_legendary_boss",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
       "id": 210026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving concert tickets, the Sovereign's final trial — Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "In a new trial involving concert tickets, the Sovereign's final trial \u2014 Why does the area under a demand curve and above the market price represent consumer surplus?",
       "options": [
         "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
         "The demand curve measures sellers' marginal cost",
@@ -8288,12 +15481,13 @@ const questionBanks = {
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "source": "engine2_legendary_boss",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
       "id": 210027,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "The Sovereign's final trial \u2014 Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
       "options": [
         "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
         "Market demand is a vertical sum",
@@ -8310,12 +15504,13 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
       "id": 210028,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving textbook purchases, the Sovereign's final trial — Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "In a new trial involving textbook purchases, the Sovereign's final trial \u2014 Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
       "options": [
         "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
         "Market demand is a vertical sum",
@@ -8332,12 +15527,13 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
       "id": 210029,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving gym memberships, the Sovereign's final trial — Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "In a new trial involving gym memberships, the Sovereign's final trial \u2014 Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
       "options": [
         "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
         "Market demand is a vertical sum",
@@ -8354,12 +15550,13 @@ const questionBanks = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
       "id": 210030,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — A firm's demand elasticity estimate changes along a linear demand curve even though the slope is constant. Why?",
+      "q": "The Sovereign's final trial \u2014 A firm's demand elasticity estimate changes along a linear demand curve even though the slope is constant. Why?",
       "options": [
         "Elasticity also depends on the price-to-quantity ratio at the point",
         "The slope secretly changes",
@@ -8376,12 +15573,13 @@ const questionBanks = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "feedback": "Point elasticity equals slope-related responsiveness multiplied by P/Q, so it varies along a linear curve.",
+      "source": "engine2_legendary_boss",
       "aHash": "a8c07dae721c40617c0fbb09a71baca82308693d2bd38f83f9041bc448e49c40"
     },
     {
       "id": 210031,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — When midpoint elasticity is 1.00 between two points, which interpretation is best?",
+      "q": "The Sovereign's final trial \u2014 When midpoint elasticity is 1.00 between two points, which interpretation is best?",
       "options": [
         "The percentage change in quantity equals the percentage change in price in magnitude over that interval",
         "The slope of demand is -1",
@@ -8398,12 +15596,13 @@ const questionBanks = {
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
       "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
+      "source": "engine2_legendary_boss",
       "aHash": "fa5b2591be44f36adfeaaab1ae069a2433c49c6eb45bb8ff396733c7c01161b4"
     },
     {
       "id": 210032,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial — On a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
+      "q": "The Sovereign's final trial \u2014 On a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
       "options": [
         "Unit elastic",
         "Perfectly inelastic",
@@ -8420,4153 +15619,11 @@ const questionBanks = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
+      "source": "engine2_legendary_boss",
       "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
     }
   ]
-};
-
-const microSkillRepairPools = {
-  "theory_of_choice": [
-    {
-      "id": 500000,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A student has $20 and ranks several affordable bundles of restaurant meals. In consumer choice theory, what determines the bundle selected?",
-      "options": [
-        "The most preferred affordable bundle",
-        "The bundle with the highest price",
-        "A randomly chosen bundle",
-        "The bundle with the most units regardless of preference"
-      ],
-      "tag": "theory_of_choice",
-      "type": "definition",
-      "objective": "LO3.1",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
-      "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
-    },
-    {
-      "id": 500001,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A student has $20 and ranks several affordable bundles of gym visits. In consumer choice theory, what determines the bundle selected?",
-      "options": [
-        "The most preferred affordable bundle",
-        "The bundle with the highest price",
-        "A randomly chosen bundle",
-        "The bundle with the most units regardless of preference"
-      ],
-      "tag": "theory_of_choice",
-      "type": "definition",
-      "objective": "LO3.1",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
-      "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
-    },
-    {
-      "id": 500002,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A student has $20 and ranks several affordable bundles of movie tickets. In consumer choice theory, what determines the bundle selected?",
-      "options": [
-        "The most preferred affordable bundle",
-        "The bundle with the highest price",
-        "A randomly chosen bundle",
-        "The bundle with the most units regardless of preference"
-      ],
-      "tag": "theory_of_choice",
-      "type": "definition",
-      "objective": "LO3.1",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
-      "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
-    },
-    {
-      "id": 500003,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A student has $20 and ranks several affordable bundles of bottled tea. In consumer choice theory, what determines the bundle selected?",
-      "options": [
-        "The most preferred affordable bundle",
-        "The bundle with the highest price",
-        "A randomly chosen bundle",
-        "The bundle with the most units regardless of preference"
-      ],
-      "tag": "theory_of_choice",
-      "type": "definition",
-      "objective": "LO3.1",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Choice theory combines preferences with feasibility: the consumer selects the most preferred bundle that is affordable.",
-      "aHash": "b86bc9b1003e7e00db7fc1a21cb6dbcb4d86eee88f07a5db9a1052db64887654"
-    }
-  ],
-  "preferences_complete_transitive": [
-    {
-      "id": 5000,
-      "q": "Preferences are rational if they are...",
-      "options": [
-        "Complete and transitive",
-        "Based only on prices",
-        "Identical across consumers",
-        "Always maximize income"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "definition",
-      "objective": "LO3.2",
-      "feedback": "Rational preferences must be complete and transitive so consumers can rank bundles consistently.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "aHash": "088f6597cfc9ffa4b69beacac97e8bde1bfc1470b3c99ed1985e585b85bc7272"
-    },
-    {
-      "id": 5001,
-      "q": "If a consumer prefers bundle A to bundle B, this means...",
-      "options": [
-        "A provides greater satisfaction than B",
-        "A costs less than B",
-        "A contains more of every good",
-        "A lies inside the budget constraint"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "interpretation",
-      "objective": "LO3.1",
-      "feedback": "Preference means the consumer derives greater utility from A than from B.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.1_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "aHash": "b396cc6b9c0fa9538971a8d72307d0a7a6701e3325e09170cea98f26bd5b6d03"
-    },
-    {
-      "id": 5002,
-      "q": "Utility represents...",
-      "options": [
-        "A ranking of satisfaction across bundles",
-        "Total income a consumer earns",
-        "The price of goods",
-        "The quantity purchased"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "definition",
-      "objective": "LO3.1",
-      "feedback": "Utility measures the satisfaction a consumer receives from different bundles.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.1_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "aHash": "bba96724482370baf68f12216bac2f4e27314f9e98cb52badab0bfd11d8a2be7"
-    },
-    {
-      "id": 5003,
-      "q": "If preferences are complete, a consumer can...",
-      "options": [
-        "Compare any two bundles",
-        "Always afford their preferred bundle",
-        "Avoid trade-offs",
-        "Ignore prices"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "definition",
-      "objective": "LO3.2",
-      "feedback": "Completeness means consumers can rank any two bundles.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "aHash": "e9c60a1ec99e1cbd085b6d73a844a5fda3185e4501db31fe348ac83c0240bf46"
-    }
-  ],
-  "indifference_curve_properties": [
-    {
-      "id": 5010,
-      "q": "Two bundles on the same indifference curve...",
-      "options": [
-        "Provide the same satisfaction",
-        "Cost the same amount",
-        "Contain the same quantities",
-        "Are always affordable"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "definition",
-      "objective": "LO3.2",
-      "feedback": "All points on an indifference curve yield the same utility.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "aHash": "9585ea0ea75c5f55f96f7d3e7384bfdba97d9e5b77bff337b1eec62552bac441"
-    },
-    {
-      "id": 5012,
-      "q": "Convex indifference curves imply...",
-      "options": [
-        "Diminishing marginal rate of substitution",
-        "Constant trade-offs",
-        "Perfect substitutes",
-        "Increasing marginal utility"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "definition",
-      "objective": "LO3.2",
-      "feedback": "As a consumer has more of one good, they are willing to give up less of the other.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "aHash": "01c36a799a7d1e817e44d5b623e4d5e3c41eac3abaff1681bcaf86e34c13a108"
-    },
-    {
-      "id": 5013,
-      "q": "A higher indifference curve represents...",
-      "options": [
-        "Greater satisfaction",
-        "Higher income",
-        "Higher prices",
-        "Greater demand"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "feedback": "Curves farther from the origin represent higher levels of utility.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "aHash": "b999a8cbfb6eabb7f563bde538254056023fe80f70d7cf08dc86e904a492efab"
-    },
-    {
-      "id": 5014,
-      "q": "If a bundle lies above an indifference curve, it is...",
-      "options": [
-        "Preferred to bundles on that curve",
-        "Less preferred",
-        "Unaffordable",
-        "Equal in satisfaction"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "feedback": "Bundles above the curve provide higher utility.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "aHash": "6842f97b9f52fd066ac92f2c7ff3dc30fdb487150e9cc94e7f5776c9d350d4ee"
-    }
-  ],
-  "marginal_rate_substitution": [
-    {
-      "id": 5011,
-      "q": "The slope of an indifference curve represents the...",
-      "options": [
-        "Marginal rate of substitution",
-        "Price ratio",
-        "Income level",
-        "Demand elasticity"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "definition",
-      "objective": "LO3.2",
-      "feedback": "The slope equals the marginal rate of substitution between the goods.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "aHash": "874772174748e0faea43bec20db23dd253dcb2862a65a88ee6daf5e9ff92775f"
-    },
-    {
-      "id": 5018,
-      "q": "As a consumer moves down an indifference curve, the MRS...",
-      "options": [
-        "Decreases",
-        "Increases",
-        "Remains constant",
-        "Becomes zero"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "feedback": "Convexity implies diminishing willingness to substitute.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "aHash": "2d273a5704c484d522b70909cab40fa600e00a82b120bc57d2a8ce8aeb6dc1b5"
-    },
-    {
-      "id": 5019,
-      "q": "A flatter indifference curve means...",
-      "options": [
-        "Lower MRS",
-        "Higher income",
-        "Higher utility",
-        "Greater demand"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "feedback": "A flatter slope means the consumer gives up less of Y for X.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "aHash": "d85c96783ccc269ad6c93f6512416a7fcf0a907f56abbc347957763b16d5810d"
-    },
-    {
-      "id": 500004,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — The marginal rate of substitution (MRS) describes what?",
-      "options": [
-        "How much of one good a consumer is willing to give up for another while holding utility constant",
-        "How much income changes when price changes",
-        "The slope of the market demand curve only",
-        "The amount of consumer surplus"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "definition",
-      "objective": "LO3.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS is the consumer's willingness to trade one good for another along an indifference curve.",
-      "aHash": "c92b25e2b771f3254d69571b9eafce48eb8d59bfca2153f6f2ba3d3394c114f8"
-    }
-  ],
-  "budget_constraint_intercepts_slope": [
-    {
-      "id": 5020,
-      "q": "A budget constraint shows...",
-      "options": [
-        "All combinations of goods a consumer can afford",
-        "The bundles consumers most prefer",
-        "The firm's production choices",
-        "The market demand curve"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "definition",
-      "objective": "LO3.3",
-      "feedback": "The budget line shows all affordable combinations given income and prices.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "aHash": "339551e28d11fa078b63b67ba3ada4c7baaac7ed69e28d05408f542552d05fae"
-    },
-    {
-      "id": 5022,
-      "q": "If the price of good X increases while income stays constant, the budget line...",
-      "options": [
-        "Pivots inward along the X-axis intercept",
-        "Shifts outward parallel",
-        "Rotates outward",
-        "Becomes horizontal"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "feedback": "A higher price reduces the maximum quantity of X that can be purchased.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "aHash": "fdfe656b7e7b8006ae05d476e3a03a1f163fb4d14826be2740489536fee57a1b"
-    },
-    {
-      "id": 5023,
-      "q": "The intercepts of a budget line represent...",
-      "options": [
-        "Maximum quantities of each good affordable if income is spent on only that good",
-        "The consumer's utility level",
-        "Market demand",
-        "Producer profits"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "definition",
-      "objective": "LO3.3",
-      "feedback": "Intercepts show the maximum amount of each good that could be purchased individually.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "aHash": "5a7a5c3daefea852811b14dba7d09ed376850dc11010f1c7bdbf4354e343a323"
-    },
-    {
-      "id": 5024,
-      "q": "Bundles inside the budget constraint are...",
-      "options": [
-        "Affordable but not fully using income",
-        "Unaffordable",
-        "Preferred to all others",
-        "Impossible to purchase"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "feedback": "Points inside the line are affordable but do not spend the entire budget.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "aHash": "c0e83d229d2d95582a66231414ff27c925a0ba4289c0a61865422b2c872549e6"
-    }
-  ],
-  "budget_line_changes": [
-    {
-      "id": 5021,
-      "q": "If income rises and prices stay the same, the budget line...",
-      "options": [
-        "Shifts outward parallel",
-        "Rotates inward",
-        "Becomes steeper",
-        "Does not change"
-      ],
-      "tag": "budget_line_changes",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "feedback": "Higher income increases purchasing power for both goods.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "aHash": "581c7f41569a4000e7da6ba5604d54958d9e445298095eea317242f3993085ed"
-    },
-    {
-      "id": 5029,
-      "q": "If income decreases, the budget line...",
-      "options": [
-        "Shifts inward parallel",
-        "Rotates outward",
-        "Becomes flatter",
-        "Does not change"
-      ],
-      "tag": "budget_line_changes",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "feedback": "Lower income reduces purchasing power equally for both goods.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "aHash": "0a10a9bb8cb150637f3141718c85022aaf26550c2dce1e174768e78af196a9bb"
-    },
-    {
-      "id": 500005,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — Income rises while both prices stay unchanged. What happens to the budget line?",
-      "options": [
-        "It shifts outward in parallel",
-        "It rotates around the X-intercept",
-        "It rotates around the Y-intercept",
-        "It becomes steeper with the same intercepts"
-      ],
-      "tag": "budget_line_changes",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Higher income raises both intercepts proportionally without changing the slope.",
-      "aHash": "e4462e9b4ea1a5311a4b8d656de51e1e09b4feb01c372e9a0c7e66f2bbe39001"
-    },
-    {
-      "id": 500006,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair — Income rises while both prices stay unchanged. What happens to the budget line?",
-      "options": [
-        "It shifts outward in parallel",
-        "It rotates around the X-intercept",
-        "It rotates around the Y-intercept",
-        "It becomes steeper with the same intercepts"
-      ],
-      "tag": "budget_line_changes",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Higher income raises both intercepts proportionally without changing the slope.",
-      "aHash": "e4462e9b4ea1a5311a4b8d656de51e1e09b4feb01c372e9a0c7e66f2bbe39001"
-    }
-  ],
-  "utility_maximization_mrs": [
-    {
-      "id": 5030,
-      "q": "Consumer equilibrium occurs where...",
-      "options": [
-        "The highest attainable indifference curve touches the budget line",
-        "Demand equals supply",
-        "Income equals price",
-        "Utility equals zero"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Consumers maximize utility at the tangency between the budget line and an indifference curve.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "f9ec728a4396c8f8dfe14de084f492a400d403fbd1a5569efd03a5296caf7dcd"
-    },
-    {
-      "id": 5031,
-      "q": "At the optimal bundle, the marginal rate of substitution equals...",
-      "options": [
-        "The price ratio",
-        "Income",
-        "Utility",
-        "Market demand"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Utility maximization occurs when MRS equals Px/Py.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "0b487f25828e42eb1c445267a97f0b688c61f5de6cfcac14f5116808c3b31749"
-    },
-    {
-      "id": 5034,
-      "q": "At equilibrium the consumer...",
-      "options": [
-        "Cannot increase satisfaction without changing prices or income",
-        "Consumes equal amounts of both goods",
-        "Faces zero prices",
-        "Has no preferences"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "At the optimal bundle no affordable reallocation improves utility.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "49d5bcad484167634a5a51b4cff07a1a962ce2b34c853641c897627e6e595846"
-    },
-    {
-      "id": 5035,
-      "q": "If MRS > Px/Py, the consumer should...",
-      "options": [
-        "Consume more X",
-        "Consume more Y",
-        "Do nothing",
-        "Increase income"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "The consumer values X more than the market does—buy more X.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "8327533376dca3dda8f6639179bf5bde50111c78c3994efbaccff6cc90631faa"
-    }
-  ],
-  "marginal_utility_per_dollar": [
-    {
-      "id": 5032,
-      "q": "If MUx/Px is greater than MUy/Py, the consumer should...",
-      "options": [
-        "Consume more X and less Y",
-        "Consume more Y and less X",
-        "Reduce income",
-        "Consume equal quantities"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "Consumers shift spending toward the good with higher marginal utility per dollar.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "aHash": "12c55e25d588941780f2260216a74ba19650fd1bb7d972ef542f962c353283db"
-    },
-    {
-      "id": 5033,
-      "q": "If MUx/Px is less than MUy/Py, the consumer should...",
-      "options": [
-        "Consume more Y and less X",
-        "Consume more X",
-        "Stop consuming both goods",
-        "Increase income"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "Consumers increase consumption of the good providing greater utility per dollar.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "aHash": "98ac6c09ee09b6f655b86dde86fd581d3d7c1b6f20983964263e7dd8ade85a3d"
-    },
-    {
-      "id": 5036,
-      "q": "If MRS < Px/Py, the consumer should...",
-      "options": [
-        "Consume more Y",
-        "Consume more X",
-        "Stop consuming",
-        "Increase prices"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "The consumer values Y more per dollar—shift toward Y.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "aHash": "5743b76aeaa6268d357f67e74c3777bde01a1268291ab641a0a0c57e2f01c32c"
-    },
-    {
-      "id": 500007,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — MUx=20 and Px=$5. What is marginal utility per dollar for X?",
-      "options": [
-        "4",
-        "100",
-        "0.25",
-        "15"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "calculation",
-      "objective": "LO3.4",
-      "difficulty": "repair",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "MUx/Px=20/5=4.",
-      "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
-    }
-  ],
-  "derive_individual_demand": [
-    {
-      "id": 5040,
-      "q": "The law of demand states that when price rises...",
-      "options": [
-        "Quantity demanded falls",
-        "Quantity demanded rises",
-        "Demand shifts outward",
-        "Elasticity becomes zero"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "definition",
-      "objective": "LO4.1",
-      "feedback": "Higher prices reduce the quantity consumers are willing to buy.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "eaa63d82c87d62cd1ee6b63e191554f372fa7709ca90cd3fe52b440c8b04ac72"
-    },
-    {
-      "id": 5041,
-      "q": "A demand curve shows...",
-      "options": [
-        "The relationship between price and quantity demanded",
-        "Income and utility",
-        "Costs and production",
-        "Market equilibrium"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "definition",
-      "objective": "LO4.1",
-      "feedback": "Demand curves show how quantity demanded changes as price changes.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "0a6e4432473a9f03db28c08bd866b65e3c227ba9225228e2a121b93ed815447e"
-    },
-    {
-      "id": 5043,
-      "q": "A movement along a demand curve occurs when...",
-      "options": [
-        "The price of the good changes",
-        "Income changes",
-        "Preferences change",
-        "Population changes"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "interpretation",
-      "objective": "LO4.1",
-      "feedback": "Only price changes cause movement along the demand curve.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "a963075fd29a8bfb685cff2410bad84b60368d90e9e5a23b03163bd8dac8b15f"
-    },
-    {
-      "id": 5048,
-      "q": "A student says: 'When price rises, demand falls.' What is wrong?",
-      "options": [
-        "They confused demand with quantity demanded",
-        "They are correct",
-        "Demand always falls with price",
-        "Demand and quantity demanded are identical"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "trap",
-      "objective": "LO4.1",
-      "feedback": "Price changes affect quantity demanded, not demand itself.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "8bb221f136e589800b8dd75b4d689b895027c36fec3c6adf429af92148926890"
-    }
-  ],
-  "demand_response_income_prices": [
-    {
-      "id": 500008,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — If the price of a substitute for X rises, what usually happens to demand for X?",
-      "options": [
-        "It increases",
-        "It decreases",
-        "It becomes perfectly inelastic",
-        "It moves along X's existing demand curve because Px changed"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
-      "aHash": "07793f63210372c0959fcf521f631be2028bb123d964fec0d1d0fa70c167c2a3"
-    },
-    {
-      "id": 500009,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair — If the price of a substitute for X rises, what usually happens to demand for X?",
-      "options": [
-        "It increases",
-        "It decreases",
-        "It becomes perfectly inelastic",
-        "It moves along X's existing demand curve because Px changed"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
-      "aHash": "07793f63210372c0959fcf521f631be2028bb123d964fec0d1d0fa70c167c2a3"
-    },
-    {
-      "id": 500010,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair — If the price of a substitute for X rises, what usually happens to demand for X?",
-      "options": [
-        "It increases",
-        "It decreases",
-        "It becomes perfectly inelastic",
-        "It moves along X's existing demand curve because Px changed"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
-      "aHash": "07793f63210372c0959fcf521f631be2028bb123d964fec0d1d0fa70c167c2a3"
-    },
-    {
-      "id": 500011,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair — If the price of a substitute for X rises, what usually happens to demand for X?",
-      "options": [
-        "It increases",
-        "It decreases",
-        "It becomes perfectly inelastic",
-        "It moves along X's existing demand curve because Px changed"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "A more expensive substitute makes X relatively more attractive, shifting demand for X outward.",
-      "aHash": "07793f63210372c0959fcf521f631be2028bb123d964fec0d1d0fa70c167c2a3"
-    }
-  ],
-  "normal_inferior_goods": [
-    {
-      "id": 5044,
-      "q": "If income increases and a good is normal, demand will...",
-      "options": [
-        "Shift outward",
-        "Shift inward",
-        "Stay the same",
-        "Become perfectly elastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "interpretation",
-      "objective": "LO4.2",
-      "feedback": "Higher income increases demand for normal goods.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "aHash": "4fa0c95857dca4e85fb35f65172a6c2460841aaf92f5664a2f78b45c27e4b5c0"
-    },
-    {
-      "id": 500012,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
-      "options": [
-        "Inferior",
-        "Normal",
-        "Perfect complement",
-        "Unit elastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Demand for an inferior good falls when income rises.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    },
-    {
-      "id": 500013,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair — Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
-      "options": [
-        "Inferior",
-        "Normal",
-        "Perfect complement",
-        "Unit elastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Demand for an inferior good falls when income rises.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    },
-    {
-      "id": 500014,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair — Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
-      "options": [
-        "Inferior",
-        "Normal",
-        "Perfect complement",
-        "Unit elastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Demand for an inferior good falls when income rises.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    }
-  ],
-  "substitution_effect": [
-    {
-      "id": 500015,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
-      "options": [
-        "Buy relatively more X and less Y",
-        "Buy relatively less X and more Y",
-        "Buy less of both goods",
-        "Ignore relative prices"
-      ],
-      "tag": "substitution_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
-      "aHash": "1ed19479e63c878d8c6d94e9daae9caef5a94312877bff22406603df8d5620b6"
-    },
-    {
-      "id": 500016,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair — When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
-      "options": [
-        "Buy relatively more X and less Y",
-        "Buy relatively less X and more Y",
-        "Buy less of both goods",
-        "Ignore relative prices"
-      ],
-      "tag": "substitution_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
-      "aHash": "1ed19479e63c878d8c6d94e9daae9caef5a94312877bff22406603df8d5620b6"
-    },
-    {
-      "id": 500017,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair — When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
-      "options": [
-        "Buy relatively more X and less Y",
-        "Buy relatively less X and more Y",
-        "Buy less of both goods",
-        "Ignore relative prices"
-      ],
-      "tag": "substitution_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
-      "aHash": "1ed19479e63c878d8c6d94e9daae9caef5a94312877bff22406603df8d5620b6"
-    },
-    {
-      "id": 500018,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair — When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
-      "options": [
-        "Buy relatively more X and less Y",
-        "Buy relatively less X and more Y",
-        "Buy less of both goods",
-        "Ignore relative prices"
-      ],
-      "tag": "substitution_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "The substitution effect moves consumption toward the relatively cheaper good.",
-      "aHash": "1ed19479e63c878d8c6d94e9daae9caef5a94312877bff22406603df8d5620b6"
-    }
-  ],
-  "income_effect": [
-    {
-      "id": 500019,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
-      "options": [
-        "Income effect",
-        "Substitution effect",
-        "Cross-price effect",
-        "Market aggregation"
-      ],
-      "tag": "income_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
-      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
-    },
-    {
-      "id": 500020,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair — A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
-      "options": [
-        "Income effect",
-        "Substitution effect",
-        "Cross-price effect",
-        "Market aggregation"
-      ],
-      "tag": "income_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
-      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
-    },
-    {
-      "id": 500021,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair — A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
-      "options": [
-        "Income effect",
-        "Substitution effect",
-        "Cross-price effect",
-        "Market aggregation"
-      ],
-      "tag": "income_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
-      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
-    },
-    {
-      "id": 500022,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair — A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
-      "options": [
-        "Income effect",
-        "Substitution effect",
-        "Cross-price effect",
-        "Market aggregation"
-      ],
-      "tag": "income_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "The income effect captures how the change in real purchasing power affects choice.",
-      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
-    }
-  ],
-  "giffen_good_logic": [
-    {
-      "id": 500023,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
-      "options": [
-        "Quantity demanded rises",
-        "Quantity demanded falls normally",
-        "Demand becomes perfectly elastic",
-        "Income must rise"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
-      "aHash": "521b93404eba2e1330c231689f11925c20e211c386331337f04db4f8717ff525"
-    },
-    {
-      "id": 500024,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair — A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
-      "options": [
-        "Quantity demanded rises",
-        "Quantity demanded falls normally",
-        "Demand becomes perfectly elastic",
-        "Income must rise"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
-      "aHash": "521b93404eba2e1330c231689f11925c20e211c386331337f04db4f8717ff525"
-    },
-    {
-      "id": 500025,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair — A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
-      "options": [
-        "Quantity demanded rises",
-        "Quantity demanded falls normally",
-        "Demand becomes perfectly elastic",
-        "Income must rise"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
-      "aHash": "521b93404eba2e1330c231689f11925c20e211c386331337f04db4f8717ff525"
-    },
-    {
-      "id": 500026,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair — A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
-      "options": [
-        "Quantity demanded rises",
-        "Quantity demanded falls normally",
-        "Demand becomes perfectly elastic",
-        "Income must rise"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "definition",
-      "objective": "LO4.3",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "For a Giffen good, the negative income effect associated with inferiority dominates the substitution effect, producing an upward-sloping demand response.",
-      "aHash": "521b93404eba2e1330c231689f11925c20e211c386331337f04db4f8717ff525"
-    }
-  ],
-  "demand_curve_shifts": [
-    {
-      "id": 5045,
-      "q": "Which situation represents a shift in demand rather than a movement along the curve?",
-      "options": [
-        "A change in income",
-        "A change in the good’s price",
-        "A movement from one point to another on the curve",
-        "A change in quantity demanded"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "trap",
-      "objective": "LO4.4",
-      "feedback": "Changes in income shift demand, while price changes move along the curve.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "00bd003830c33588cd9741c522b6ca981c38c0a6a0930b72b394c4406a721e23"
-    },
-    {
-      "id": 5046,
-      "q": "If the price of a substitute good rises, what happens to demand?",
-      "options": [
-        "Demand increases",
-        "Demand decreases",
-        "Quantity demanded increases",
-        "Nothing changes"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "feedback": "Substitutes becoming more expensive increase demand for the good.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "5d6430cb33754a2c2e17e473e166d8252640a6998bff427b9f199335f9bdc990"
-    },
-    {
-      "id": 5047,
-      "q": "If the price of a complement falls, demand for the related good will...",
-      "options": [
-        "Increase",
-        "Decrease",
-        "Stay the same",
-        "Become perfectly elastic"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "feedback": "Cheaper complements increase demand for the good.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "e20a548f23fa36bc8d5ba48237ec3ee4d4f00087841d3614f81749e3c6c1b47e"
-    },
-    {
-      "id": 5049,
-      "q": "If population increases, the demand curve will...",
-      "options": [
-        "Shift outward",
-        "Shift inward",
-        "Rotate",
-        "Stay the same"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "feedback": "More consumers increase demand.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "4fa0c95857dca4e85fb35f65172a6c2460841aaf92f5664a2f78b45c27e4b5c0"
-    }
-  ],
-  "consumer_surplus": [
-    {
-      "id": 500027,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A buyer is willing to pay $50 for an item and pays $25. What is consumer surplus?",
-      "options": [
-        "$25",
-        "$75",
-        "$20",
-        "$50"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Consumer surplus is willingness to pay minus price: 50-25=$25.",
-      "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95"
-    },
-    {
-      "id": 500028,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A buyer is willing to pay $55 for an item and pays $30. What is consumer surplus?",
-      "options": [
-        "$25",
-        "$85",
-        "$30",
-        "$55"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Consumer surplus is willingness to pay minus price: 55-30=$25.",
-      "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95"
-    },
-    {
-      "id": 500029,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A buyer is willing to pay $60 for an item and pays $35. What is consumer surplus?",
-      "options": [
-        "$25",
-        "$95",
-        "$35",
-        "$60"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Consumer surplus is willingness to pay minus price: 60-35=$25.",
-      "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95"
-    },
-    {
-      "id": 500030,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A buyer is willing to pay $65 for an item and pays $20. What is consumer surplus?",
-      "options": [
-        "$45",
-        "$85",
-        "$20",
-        "$65"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Consumer surplus is willingness to pay minus price: 65-20=$45.",
-      "aHash": "d503dcfdd44cb6216b22dba5a43ecacce36079e0f6445b5906ba9b0a4daaf2dc"
-    }
-  ],
-  "market_demand_aggregation": [
-    {
-      "id": 5042,
-      "q": "Market demand is found by...",
-      "options": [
-        "Adding individual demand curves horizontally",
-        "Adding them vertically",
-        "Multiplying price by quantity",
-        "Averaging incomes"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "definition",
-      "objective": "LO4.6",
-      "feedback": "Market demand sums the quantities demanded by all consumers at each price.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "aHash": "937b7ddb2681a2766efe1f7be76f25b57659f22c699d9148b94b2c48eac8f752"
-    },
-    {
-      "id": 500031,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — At a price of $10, three consumers demand 8, 15, and 3 units. What is market quantity demanded?",
-      "options": [
-        "26",
-        "8.67",
-        "15",
-        "360"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "calculation",
-      "objective": "LO4.6",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand horizontally sums individual quantities at the same price.",
-      "aHash": "5f9c4ab08cac7457e9111a30e4664920607ea2c115a1433d7be98e97e64244ca"
-    },
-    {
-      "id": 500032,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — At a price of $10, three consumers demand 9, 17, and 4 units. What is market quantity demanded?",
-      "options": [
-        "30",
-        "10.0",
-        "17",
-        "612"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "calculation",
-      "objective": "LO4.6",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand horizontally sums individual quantities at the same price.",
-      "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
-    },
-    {
-      "id": 500033,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — At a price of $10, three consumers demand 10, 19, and 1 units. What is market quantity demanded?",
-      "options": [
-        "30",
-        "10.0",
-        "19",
-        "190"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "calculation",
-      "objective": "LO4.6",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand horizontally sums individual quantities at the same price.",
-      "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
-    }
-  ],
-  "price_elasticity_fundamentals": [
-    {
-      "id": 500034,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — The absolute value of price elasticity of demand is 0.4. Demand is:",
-      "options": [
-        "Inelastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "A normal good"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "|Ed| < 1, so demand is inelastic.",
-      "aHash": "862be9846b7db52d7a7ead25fbad55dbdab1658dec6260ec427b9144838648f7"
-    },
-    {
-      "id": 500035,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — The absolute value of price elasticity of demand is 0.8. Demand is:",
-      "options": [
-        "Inelastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "A normal good"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "|Ed| < 1, so demand is inelastic.",
-      "aHash": "862be9846b7db52d7a7ead25fbad55dbdab1658dec6260ec427b9144838648f7"
-    },
-    {
-      "id": 500036,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — The absolute value of price elasticity of demand is 1.0. Demand is:",
-      "options": [
-        "Unit elastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "A normal good"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "|Ed| = 1, so demand is unit elastic.",
-      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
-    },
-    {
-      "id": 500037,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — The absolute value of price elasticity of demand is 1.5. Demand is:",
-      "options": [
-        "Elastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "A normal good"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "|Ed| > 1, so demand is elastic.",
-      "aHash": "986051385feae5b9850804db2d701c0b029ad24f09bce340c12aee7a5c8a0391"
-    }
-  ],
-  "midpoint_elasticity": [
-    {
-      "id": 500038,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
-      "options": [
-        "It gives the same elasticity for a move between two points regardless of direction",
-        "It guarantees elasticity equals 1",
-        "It removes the need to calculate quantity changes",
-        "It measures only total revenue"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
-      "aHash": "683c3642ba5fb441f1a9a3c927aafc61f9ecf4157c73e92127425c5012d94668"
-    },
-    {
-      "id": 500039,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair — Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
-      "options": [
-        "It gives the same elasticity for a move between two points regardless of direction",
-        "It guarantees elasticity equals 1",
-        "It removes the need to calculate quantity changes",
-        "It measures only total revenue"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
-      "aHash": "683c3642ba5fb441f1a9a3c927aafc61f9ecf4157c73e92127425c5012d94668"
-    },
-    {
-      "id": 500040,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair — Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
-      "options": [
-        "It gives the same elasticity for a move between two points regardless of direction",
-        "It guarantees elasticity equals 1",
-        "It removes the need to calculate quantity changes",
-        "It measures only total revenue"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
-      "aHash": "683c3642ba5fb441f1a9a3c927aafc61f9ecf4157c73e92127425c5012d94668"
-    },
-    {
-      "id": 500041,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair — Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
-      "options": [
-        "It gives the same elasticity for a move between two points regardless of direction",
-        "It guarantees elasticity equals 1",
-        "It removes the need to calculate quantity changes",
-        "It measures only total revenue"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Using averages avoids getting different percentage changes when moving from A to B versus B to A.",
-      "aHash": "683c3642ba5fb441f1a9a3c927aafc61f9ecf4157c73e92127425c5012d94668"
-    }
-  ],
-  "elasticity_total_revenue": [
-    {
-      "id": 500042,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — If demand is elastic, what happens to total revenue when price falls?",
-      "options": [
-        "Total revenue rises",
-        "Total revenue falls",
-        "Total revenue is unchanged",
-        "Total revenue becomes zero"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
-      "aHash": "a6e2545fcd6c1031672c546888a30992cc374549d235074b3c96fcccc28e9315"
-    },
-    {
-      "id": 500043,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair — If demand is elastic, what happens to total revenue when price falls?",
-      "options": [
-        "Total revenue rises",
-        "Total revenue falls",
-        "Total revenue is unchanged",
-        "Total revenue becomes zero"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
-      "aHash": "a6e2545fcd6c1031672c546888a30992cc374549d235074b3c96fcccc28e9315"
-    },
-    {
-      "id": 500044,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair — If demand is elastic, what happens to total revenue when price falls?",
-      "options": [
-        "Total revenue rises",
-        "Total revenue falls",
-        "Total revenue is unchanged",
-        "Total revenue becomes zero"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
-      "aHash": "a6e2545fcd6c1031672c546888a30992cc374549d235074b3c96fcccc28e9315"
-    },
-    {
-      "id": 500045,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair — If demand is elastic, what happens to total revenue when price falls?",
-      "options": [
-        "Total revenue rises",
-        "Total revenue falls",
-        "Total revenue is unchanged",
-        "Total revenue becomes zero"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "definition",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "With elastic demand, quantity responds more than proportionally, so a price cut raises total revenue.",
-      "aHash": "a6e2545fcd6c1031672c546888a30992cc374549d235074b3c96fcccc28e9315"
-    }
-  ],
-  "cross_price_elasticity": [
-    {
-      "id": 500046,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A positive cross-price elasticity between X and Y indicates the goods are most likely:",
-      "options": [
-        "Substitutes",
-        "Complements",
-        "Both inferior",
-        "Unrelated by definition"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
-      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
-    },
-    {
-      "id": 500047,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair — A positive cross-price elasticity between X and Y indicates the goods are most likely:",
-      "options": [
-        "Substitutes",
-        "Complements",
-        "Both inferior",
-        "Unrelated by definition"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
-      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
-    },
-    {
-      "id": 500048,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair — A positive cross-price elasticity between X and Y indicates the goods are most likely:",
-      "options": [
-        "Substitutes",
-        "Complements",
-        "Both inferior",
-        "Unrelated by definition"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
-      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
-    },
-    {
-      "id": 500049,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair — A positive cross-price elasticity between X and Y indicates the goods are most likely:",
-      "options": [
-        "Substitutes",
-        "Complements",
-        "Both inferior",
-        "Unrelated by definition"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "If Py rises and Qx rises, consumers substitute toward X, producing positive cross-price elasticity.",
-      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
-    }
-  ],
-  "income_elasticity": [
-    {
-      "id": 500050,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — A negative income elasticity means the good is:",
-      "options": [
-        "Inferior",
-        "Normal",
-        "A substitute",
-        "Perfectly elastic"
-      ],
-      "tag": "income_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    },
-    {
-      "id": 500051,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair — A negative income elasticity means the good is:",
-      "options": [
-        "Inferior",
-        "Normal",
-        "A substitute",
-        "Perfectly elastic"
-      ],
-      "tag": "income_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    },
-    {
-      "id": 500052,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair — A negative income elasticity means the good is:",
-      "options": [
-        "Inferior",
-        "Normal",
-        "A substitute",
-        "Perfectly elastic"
-      ],
-      "tag": "income_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    },
-    {
-      "id": 500053,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair — A negative income elasticity means the good is:",
-      "options": [
-        "Inferior",
-        "Normal",
-        "A substitute",
-        "Perfectly elastic"
-      ],
-      "tag": "income_elasticity",
-      "type": "classification",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Demand for an inferior good moves opposite income, giving negative income elasticity.",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    }
-  ],
-  "elasticity_determinants": [
-    {
-      "id": 500054,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair — Which good is likely to have more elastic demand, other things equal?",
-      "options": [
-        "A brand with many close substitutes",
-        "A unique emergency medicine with no close substitute",
-        "A tiny-budget necessity",
-        "A good buyers cannot postpone"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
-      "aHash": "42d32cdc6af1b6eb2417b49b4d4787274388847872bf9977fa780393dc548bcd"
-    },
-    {
-      "id": 500055,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair — Which good is likely to have more elastic demand, other things equal?",
-      "options": [
-        "A brand with many close substitutes",
-        "A unique emergency medicine with no close substitute",
-        "A tiny-budget necessity",
-        "A good buyers cannot postpone"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
-      "aHash": "42d32cdc6af1b6eb2417b49b4d4787274388847872bf9977fa780393dc548bcd"
-    },
-    {
-      "id": 500056,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair — Which good is likely to have more elastic demand, other things equal?",
-      "options": [
-        "A brand with many close substitutes",
-        "A unique emergency medicine with no close substitute",
-        "A tiny-budget necessity",
-        "A good buyers cannot postpone"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
-      "aHash": "42d32cdc6af1b6eb2417b49b4d4787274388847872bf9977fa780393dc548bcd"
-    },
-    {
-      "id": 500057,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair — Which good is likely to have more elastic demand, other things equal?",
-      "options": [
-        "A brand with many close substitutes",
-        "A unique emergency medicine with no close substitute",
-        "A tiny-budget necessity",
-        "A good buyers cannot postpone"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "repair",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "More close substitutes make it easier for buyers to respond to a price change.",
-      "aHash": "42d32cdc6af1b6eb2417b49b4d4787274388847872bf9977fa780393dc548bcd"
-    }
-  ]
-};
-
-const microSkillBridgePools = {
-  "theory_of_choice": [
-    {
-      "id": 600000,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
-      "options": [
-        "Choose B because A is infeasible",
-        "Choose A because preferences always override constraints",
-        "Choose neither because the ranking is inconsistent",
-        "Choose randomly between A and B"
-      ],
-      "tag": "theory_of_choice",
-      "type": "application",
-      "objective": "LO3.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
-      "aHash": "3588ca4b093ead5e6d24041ae00833b810dfca042fee4718d73132703e3f76c7"
-    },
-    {
-      "id": 600001,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check — A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
-      "options": [
-        "Choose B because A is infeasible",
-        "Choose A because preferences always override constraints",
-        "Choose neither because the ranking is inconsistent",
-        "Choose randomly between A and B"
-      ],
-      "tag": "theory_of_choice",
-      "type": "application",
-      "objective": "LO3.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
-      "aHash": "3588ca4b093ead5e6d24041ae00833b810dfca042fee4718d73132703e3f76c7"
-    },
-    {
-      "id": 600002,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check — A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
-      "options": [
-        "Choose B because A is infeasible",
-        "Choose A because preferences always override constraints",
-        "Choose neither because the ranking is inconsistent",
-        "Choose randomly between A and B"
-      ],
-      "tag": "theory_of_choice",
-      "type": "application",
-      "objective": "LO3.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
-      "aHash": "3588ca4b093ead5e6d24041ae00833b810dfca042fee4718d73132703e3f76c7"
-    },
-    {
-      "id": 600003,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check — A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
-      "options": [
-        "Choose B because A is infeasible",
-        "Choose A because preferences always override constraints",
-        "Choose neither because the ranking is inconsistent",
-        "Choose randomly between A and B"
-      ],
-      "tag": "theory_of_choice",
-      "type": "application",
-      "objective": "LO3.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
-      "aHash": "3588ca4b093ead5e6d24041ae00833b810dfca042fee4718d73132703e3f76c7"
-    }
-  ],
-  "preferences_complete_transitive": [
-    {
-      "id": 600004,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
-      "options": [
-        "A is preferred to C",
-        "C is preferred to A",
-        "A and C must be identical",
-        "Nothing can be inferred"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
-      "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
-    },
-    {
-      "id": 600005,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using gym memberships, the Archivist asks: bridge check — A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
-      "options": [
-        "A is preferred to C",
-        "C is preferred to A",
-        "A and C must be identical",
-        "Nothing can be inferred"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
-      "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
-    },
-    {
-      "id": 600006,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check — A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
-      "options": [
-        "A is preferred to C",
-        "C is preferred to A",
-        "A and C must be identical",
-        "Nothing can be inferred"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
-      "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
-    },
-    {
-      "id": 600007,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check — A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
-      "options": [
-        "A is preferred to C",
-        "C is preferred to A",
-        "A and C must be identical",
-        "Nothing can be inferred"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
-      "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
-    }
-  ],
-  "indifference_curve_properties": [
-    {
-      "id": 600008,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
-      "options": [
-        "A crossing would assign inconsistent utility rankings to the same bundles",
-        "Crossing would make income zero",
-        "Crossing would force both goods to have equal prices",
-        "Crossing would make demand perfectly elastic"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
-      "aHash": "f9440e0da00c076a80c01e7cfde518b27aee6dee324a486ba98258ab57499ef1"
-    },
-    {
-      "id": 600009,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check — Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
-      "options": [
-        "A crossing would assign inconsistent utility rankings to the same bundles",
-        "Crossing would make income zero",
-        "Crossing would force both goods to have equal prices",
-        "Crossing would make demand perfectly elastic"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
-      "aHash": "f9440e0da00c076a80c01e7cfde518b27aee6dee324a486ba98258ab57499ef1"
-    },
-    {
-      "id": 600010,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check — Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
-      "options": [
-        "A crossing would assign inconsistent utility rankings to the same bundles",
-        "Crossing would make income zero",
-        "Crossing would force both goods to have equal prices",
-        "Crossing would make demand perfectly elastic"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
-      "aHash": "f9440e0da00c076a80c01e7cfde518b27aee6dee324a486ba98258ab57499ef1"
-    },
-    {
-      "id": 600011,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check — Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
-      "options": [
-        "A crossing would assign inconsistent utility rankings to the same bundles",
-        "Crossing would make income zero",
-        "Crossing would force both goods to have equal prices",
-        "Crossing would make demand perfectly elastic"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "A crossing makes the same bundle belong to conflicting utility rankings and violates consistent preferences.",
-      "aHash": "f9440e0da00c076a80c01e7cfde518b27aee6dee324a486ba98258ab57499ef1"
-    }
-  ],
-  "marginal_rate_substitution": [
-    {
-      "id": 600012,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — At a bundle, MUx=26 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
-      "options": [
-        "3.2 units of Y per unit of X",
-        "0.3 units of Y per unit of X",
-        "34 units of Y per unit of X",
-        "18 units of Y per unit of X"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=26/8=3.2.",
-      "aHash": "f7f5733cc22ea048e3fcad55ffaf4915d147f757f18f6b57962beee137b1ec61"
-    },
-    {
-      "id": 600013,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — At a bundle, MUx=28 and MUy=10. Using MRS=MUx/MUy, what is the MRS?",
-      "options": [
-        "2.8 units of Y per unit of X",
-        "0.4 units of Y per unit of X",
-        "38 units of Y per unit of X",
-        "18 units of Y per unit of X"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=28/10=2.8.",
-      "aHash": "55253e8932a06c117c012785b89cbef8bc0cddc89828a3cd4eda577da5843341"
-    },
-    {
-      "id": 600014,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — At a bundle, MUx=30 and MUy=6. Using MRS=MUx/MUy, what is the MRS?",
-      "options": [
-        "5.0 units of Y per unit of X",
-        "0.2 units of Y per unit of X",
-        "36 units of Y per unit of X",
-        "24 units of Y per unit of X"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=30/6=5.0.",
-      "aHash": "2fe0666cc571bc66dd18d941e63758e9f54324c56390dafa2ca1db2089f29935"
-    },
-    {
-      "id": 600015,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — At a bundle, MUx=32 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
-      "options": [
-        "4.0 units of Y per unit of X",
-        "0.2 units of Y per unit of X",
-        "40 units of Y per unit of X",
-        "24 units of Y per unit of X"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "calculation",
-      "objective": "LO3.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=32/8=4.0.",
-      "aHash": "3eda3b053f348f07db9be9c14fbd9187044b397e5e0ee6c960e1a9a6cb828739"
-    }
-  ],
-  "budget_constraint_intercepts_slope": [
-    {
-      "id": 600016,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — With income $120, Px=$20, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
-      "options": [
-        "-20/15",
-        "-15/20",
-        "-120/20",
-        "-120/15"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The budget-line slope is -Px/Py.",
-      "aHash": "67e7cc694ff4f617ae0436b0292aed46a9bf48e4d1bdc13a8935d9a39805f274"
-    },
-    {
-      "id": 600017,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — With income $60, Px=$5, and Py=$20, which expression gives the budget-line slope when X is on the horizontal axis?",
-      "options": [
-        "-5/20",
-        "-20/5",
-        "-60/5",
-        "-60/20"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The budget-line slope is -Px/Py.",
-      "aHash": "a2aab9fa9107c8514c1c36320f7669fb1760f4aa0a2901fd8704720d6b39d683"
-    },
-    {
-      "id": 600018,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — With income $80, Px=$10, and Py=$10, which expression gives the budget-line slope when X is on the horizontal axis?",
-      "options": [
-        "-1",
-        "+1",
-        "-8",
-        "+8"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The budget-line slope is -Px/Py = -10/10 = -1.",
-      "aHash": "1bad6b8cf97131fceab8543e81f7757195fbb1d36b376ee994ad1cf17699c464"
-    },
-    {
-      "id": 600019,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — With income $100, Px=$15, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
-      "options": [
-        "-1",
-        "+1",
-        "-6.67",
-        "+6.67"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The budget-line slope is -Px/Py = -15/15 = -1.",
-      "aHash": "1bad6b8cf97131fceab8543e81f7757195fbb1d36b376ee994ad1cf17699c464"
-    }
-  ],
-  "budget_line_changes": [
-    {
-      "id": 600020,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — The price of X falls while income and Py are unchanged. How does the budget line change?",
-      "options": [
-        "It rotates outward around the Y-intercept",
-        "It shifts outward in parallel",
-        "It rotates inward around the X-intercept",
-        "It keeps both intercepts unchanged"
-      ],
-      "tag": "budget_line_changes",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
-      "aHash": "fb535d4909a53b092bfa49427d9a7743f4da601dc3da8c5e08988a08d5423021"
-    },
-    {
-      "id": 600021,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using gym memberships, the Archivist asks: bridge check — The price of X falls while income and Py are unchanged. How does the budget line change?",
-      "options": [
-        "It rotates outward around the Y-intercept",
-        "It shifts outward in parallel",
-        "It rotates inward around the X-intercept",
-        "It keeps both intercepts unchanged"
-      ],
-      "tag": "budget_line_changes",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
-      "aHash": "fb535d4909a53b092bfa49427d9a7743f4da601dc3da8c5e08988a08d5423021"
-    },
-    {
-      "id": 600022,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check — The price of X falls while income and Py are unchanged. How does the budget line change?",
-      "options": [
-        "It rotates outward around the Y-intercept",
-        "It shifts outward in parallel",
-        "It rotates inward around the X-intercept",
-        "It keeps both intercepts unchanged"
-      ],
-      "tag": "budget_line_changes",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
-      "aHash": "fb535d4909a53b092bfa49427d9a7743f4da601dc3da8c5e08988a08d5423021"
-    },
-    {
-      "id": 600023,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check — The price of X falls while income and Py are unchanged. How does the budget line change?",
-      "options": [
-        "It rotates outward around the Y-intercept",
-        "It shifts outward in parallel",
-        "It rotates inward around the X-intercept",
-        "It keeps both intercepts unchanged"
-      ],
-      "tag": "budget_line_changes",
-      "type": "application",
-      "objective": "LO3.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Only the X-intercept changes, so the line rotates outward around the unchanged Y-intercept.",
-      "aHash": "fb535d4909a53b092bfa49427d9a7743f4da601dc3da8c5e08988a08d5423021"
-    }
-  ],
-  "utility_maximization_mrs": [
-    {
-      "id": 6024,
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: consumer equilibrium occurs where...",
-      "options": [
-        "The highest attainable indifference curve is tangent to the budget line",
-        "Income equals spending on one good",
-        "Demand equals supply",
-        "Utility is zero"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Consumers maximize utility at the point where the best affordable indifference curve touches the budget line.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "ef206537ae6b1b33de841a6b98c3255218a269ac330b05cb16d27e101bb2ce7e"
-    },
-    {
-      "id": 6025,
-      "q": "During a bridge check using campus meals, the Archivist asks: at the optimal bundle, the marginal rate of substitution equals...",
-      "options": [
-        "The ratio of prices",
-        "Total income",
-        "The slope of the demand curve",
-        "Total utility"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Consumer equilibrium occurs where MRS equals the price ratio.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "a56e9475a0369dd712c1facdb3b1fae356d1a1098615d5b654a120c659f3eb48"
-    },
-    {
-      "id": 6028,
-      "q": "If a consumer moves along a budget line to a higher indifference curve, utility...",
-      "options": [
-        "Increases",
-        "Decreases",
-        "Stays the same",
-        "Becomes zero"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "Higher curves represent greater satisfaction.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "0387dd2081a1cde3b02dc49d5dd17fac11e9a4d19533342189f020b9fdc4070c"
-    },
-    {
-      "id": 6029,
-      "q": "A corner solution occurs when...",
-      "options": [
-        "Tangency is not possible",
-        "MRS equals price ratio",
-        "Income is zero",
-        "Prices are equal"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Sometimes the best bundle is at an endpoint.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "aHash": "ab4b0ca8ae6405cef4fe93cb52a6234093493095361db89d8b9d0f52c82b8855"
-    }
-  ],
-  "marginal_utility_per_dollar": [
-    {
-      "id": 6026,
-      "q": "During a bridge check using concert tickets, the Archivist asks: if MUx/Px is greater than MUy/Py, the consumer should...",
-      "options": [
-        "Consume more X and less Y",
-        "Consume more Y and less X",
-        "Stop consuming both goods",
-        "Reduce income"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "The consumer should shift spending toward the good with higher marginal utility per dollar.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "aHash": "12c55e25d588941780f2260216a74ba19650fd1bb7d972ef542f962c353283db"
-    },
-    {
-      "id": 6027,
-      "q": "If MRS > Px/Py, the consumer is...",
-      "options": [
-        "Not maximizing utility",
-        "At equilibrium",
-        "Facing no trade-offs",
-        "Maximizing income"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "MRS must equal the price ratio at equilibrium.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "aHash": "bff5166d65e494e0a1e75df95963ed47c6676708dab338f1f0f2cca18eb582af"
-    },
-    {
-      "id": 6030,
-      "q": "If MUx/Px ≠ MUy/Py, the consumer...",
-      "options": [
-        "Can increase utility",
-        "Is at equilibrium",
-        "Has no preferences",
-        "Must reduce consumption"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "interpretation",
-      "objective": "LO3.4",
-      "feedback": "Unequal marginal utility per dollar means reallocation can improve utility.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "aHash": "d610504e4bf3f15b7a30c63be092caae8d9e9c8aa25e4b5b2fa0d8bd45b9de4b"
-    },
-    {
-      "id": 600024,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — MUx=30, Px=$5; MUy=16, Py=$4. What does the marginal-utility-per-dollar rule recommend?",
-      "options": [
-        "Buy more X",
-        "Buy equal quantities of X and Y",
-        "Choose the good with the higher marginal utility only",
-        "The comparison cannot use prices"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "calculation",
-      "objective": "LO3.4",
-      "difficulty": "bridge",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "MUx/Px=6; MUy/Py=4. Shift spending toward the larger ratio until the ratios equalize.",
-      "aHash": "fb074552d8cf9d4d26fd5c04df7b3a6c79e1673621b05ee37cffc5fb60153b5e"
-    }
-  ],
-  "derive_individual_demand": [
-    {
-      "id": 6000,
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: a movement along a demand curve occurs when...",
-      "options": [
-        "The price of the good changes",
-        "Income changes",
-        "Consumer tastes change",
-        "The number of buyers changes"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "definition",
-      "objective": "LO4.1",
-      "feedback": "A change in the good’s own price causes movement along the demand curve.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "a963075fd29a8bfb685cff2410bad84b60368d90e9e5a23b03163bd8dac8b15f"
-    },
-    {
-      "id": 6003,
-      "q": "A student says: 'When price rises, demand falls.' What is the mistake?",
-      "options": [
-        "They confused demand with quantity demanded",
-        "They are correct",
-        "Demand always falls with price",
-        "Demand is unrelated to price"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "trap",
-      "objective": "LO4.1",
-      "feedback": "Price changes affect quantity demanded, not demand itself.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "8bb221f136e589800b8dd75b4d689b895027c36fec3c6adf429af92148926890"
-    },
-    {
-      "id": 6004,
-      "q": "Which scenario causes a movement along the demand curve?",
-      "options": [
-        "A change in the good’s own price",
-        "A change in income",
-        "A change in preferences",
-        "An increase in population"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "interpretation",
-      "objective": "LO4.1",
-      "feedback": "Only a change in the good’s own price moves along the curve.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "aHash": "347418d60308c37591d35c73ec6957c14c7852d9f335005ccc53da29d4904ce0"
-    },
-    {
-      "id": 600025,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A consumer's optimal quantity of X is 8 when Px=$6 and 11 when Px=$4, with income and other prices fixed. These two choices are points on what?",
-      "options": [
-        "The individual's demand curve for X",
-        "A market supply curve",
-        "An indifference curve",
-        "A cross-price elasticity curve"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "application",
-      "objective": "LO4.1",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Varying Px and recording optimal X generates points on individual demand.",
-      "aHash": "347a2179bd80c6deb1779d718d2666a78c2aa4a206a03c897a3fb2fded22f596"
-    }
-  ],
-  "demand_response_income_prices": [
-    {
-      "id": 6002,
-      "q": "If the price of coffee rises and demand for tea increases, coffee and tea are...",
-      "options": [
-        "Substitutes",
-        "Complements",
-        "Inferior goods",
-        "Unrelated goods"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "interpretation",
-      "objective": "LO4.2",
-      "feedback": "Substitutes are goods consumers switch between when relative prices change.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "aHash": "f4d9824f5c901a6faf07a621ac4051cb5cfc18afa51d8c106a687413c529f24b"
-    },
-    {
-      "id": 600026,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — The price of X falls while income and other prices stay fixed. What happens?",
-      "options": [
-        "Quantity demanded of X changes along the existing demand curve",
-        "Demand for X shifts because income changed",
-        "Demand for X shifts because a related-good price changed",
-        "Nothing can change"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "trap",
-      "objective": "LO4.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "An own-price change causes a movement along the demand curve.",
-      "aHash": "22de353e44d3cc44196edb0618b7c7e6cb737edb615a8498cfda4119fba8fc4f"
-    },
-    {
-      "id": 600027,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check — The price of X falls while income and other prices stay fixed. What happens?",
-      "options": [
-        "Quantity demanded of X changes along the existing demand curve",
-        "Demand for X shifts because income changed",
-        "Demand for X shifts because a related-good price changed",
-        "Nothing can change"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "trap",
-      "objective": "LO4.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "An own-price change causes a movement along the demand curve.",
-      "aHash": "22de353e44d3cc44196edb0618b7c7e6cb737edb615a8498cfda4119fba8fc4f"
-    },
-    {
-      "id": 600028,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check — The price of X falls while income and other prices stay fixed. What happens?",
-      "options": [
-        "Quantity demanded of X changes along the existing demand curve",
-        "Demand for X shifts because income changed",
-        "Demand for X shifts because a related-good price changed",
-        "Nothing can change"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "trap",
-      "objective": "LO4.2",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "An own-price change causes a movement along the demand curve.",
-      "aHash": "22de353e44d3cc44196edb0618b7c7e6cb737edb615a8498cfda4119fba8fc4f"
-    }
-  ],
-  "normal_inferior_goods": [
-    {
-      "id": 6016,
-      "q": "A normal good is one where...",
-      "options": [
-        "Demand rises as income rises",
-        "Demand falls as income rises",
-        "Demand is unrelated to income",
-        "Price always rises with income"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "definition",
-      "objective": "LO4.2",
-      "feedback": "Normal goods are purchased more when income increases.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "aHash": "cefe0880ac21fc46d447ba85092584d0acddd18fdbf53d5ea6cfb6bc281730f1"
-    },
-    {
-      "id": 6017,
-      "q": "An inferior good is one where...",
-      "options": [
-        "Demand falls as income rises",
-        "Demand rises as income rises",
-        "Demand never changes",
-        "Price becomes lower as income rises"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "definition",
-      "objective": "LO4.2",
-      "feedback": "Inferior goods are purchased less when income increases.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "aHash": "682fb9a1ef1d6d42d644ab1268fedf1897c49d52982fbe726b6ea60f05e9691f"
-    },
-    {
-      "id": 6018,
-      "q": "If income rises and people buy more restaurant meals, restaurant meals are...",
-      "options": [
-        "Normal goods",
-        "Inferior goods",
-        "Giffen goods",
-        "Complements"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "interpretation",
-      "objective": "LO4.2",
-      "feedback": "If demand rises with income, the good is normal.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "aHash": "7ed0e5ed34511aa2f5e2a447763704b64ae39f979dd0881e59289bb73613abc4"
-    },
-    {
-      "id": 6019,
-      "q": "If income rises and demand falls, the good is...",
-      "options": [
-        "Inferior",
-        "Normal",
-        "Elastic",
-        "A substitute"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "interpretation",
-      "objective": "LO4.2",
-      "feedback": "Inferior goods are consumed less as income rises.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
-    }
-  ],
-  "substitution_effect": [
-    {
-      "id": 6008,
-      "q": "The substitution effect occurs because...",
-      "options": [
-        "Relative prices change",
-        "Income changes",
-        "Preferences change",
-        "Demand shifts randomly"
-      ],
-      "tag": "substitution_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "feedback": "The substitution effect occurs because one good becomes relatively cheaper or more expensive.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "aHash": "b39e12ebace7819695052ab681b618f16be85a4d1b9b56fc7626b8142d590f3f"
-    },
-    {
-      "id": 6010,
-      "q": "When the price of a good falls, the substitution effect causes consumers to...",
-      "options": [
-        "Buy more of the relatively cheaper good",
-        "Buy less of the good",
-        "Ignore the price change",
-        "Buy equal amounts of all goods"
-      ],
-      "tag": "substitution_effect",
-      "type": "interpretation",
-      "objective": "LO4.3",
-      "feedback": "Consumers substitute toward the relatively cheaper good.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "aHash": "4b373a9a76accbe5b1120e1cf9efe7678af4ec6921686c7f0a7993c6f15963f5"
-    },
-    {
-      "id": 6011,
-      "q": "Which effect explains why a price change alters relative attractiveness between goods?",
-      "options": [
-        "Substitution effect",
-        "Income effect",
-        "Demand shift",
-        "Supply effect"
-      ],
-      "tag": "substitution_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "feedback": "Substitution effect comes from changes in relative prices.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
-    },
-    {
-      "id": 6013,
-      "q": "When the price of a good falls, which effect always increases quantity demanded?",
-      "options": [
-        "Substitution effect",
-        "Income effect",
-        "Both always increase",
-        "Neither"
-      ],
-      "tag": "substitution_effect",
-      "type": "interpretation",
-      "objective": "LO4.3",
-      "feedback": "Substitution effect always increases consumption of the relatively cheaper good.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
-    }
-  ],
-  "income_effect": [
-    {
-      "id": 6009,
-      "q": "The income effect occurs because...",
-      "options": [
-        "A price change changes purchasing power",
-        "Consumers always buy less",
-        "Preferences suddenly change",
-        "Supply conditions shift"
-      ],
-      "tag": "income_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "feedback": "When price changes, the consumer’s real purchasing power changes too.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "aHash": "4f603acecb01ea009e64f10f9524376e7695bbba99b8774609826a7aa649d791"
-    },
-    {
-      "id": 6012,
-      "q": "Which effect reflects a change in real purchasing power?",
-      "options": [
-        "Income effect",
-        "Substitution effect",
-        "Elasticity",
-        "Opportunity cost"
-      ],
-      "tag": "income_effect",
-      "type": "definition",
-      "objective": "LO4.3",
-      "feedback": "Income effect captures the change in real income after a price change.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
-    },
-    {
-      "id": 600029,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — X is a normal good. Px falls. What direction does the income effect have on X?",
-      "options": [
-        "It increases consumption of X",
-        "It decreases consumption of X",
-        "It is always zero",
-        "It changes only Y"
-      ],
-      "tag": "income_effect",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "A price fall raises real income, and demand for a normal good rises with real income.",
-      "aHash": "415bdef8f60d72d63e5c5b7d09e5d6a7e681dc77536a43f3704a1c22cab7ba64"
-    },
-    {
-      "id": 600030,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check — X is a normal good. Px falls. What direction does the income effect have on X?",
-      "options": [
-        "It increases consumption of X",
-        "It decreases consumption of X",
-        "It is always zero",
-        "It changes only Y"
-      ],
-      "tag": "income_effect",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "A price fall raises real income, and demand for a normal good rises with real income.",
-      "aHash": "415bdef8f60d72d63e5c5b7d09e5d6a7e681dc77536a43f3704a1c22cab7ba64"
-    }
-  ],
-  "giffen_good_logic": [
-    {
-      "id": 6023,
-      "q": "Which case would violate the law of demand?",
-      "options": [
-        "Income effect outweighs substitution effect",
-        "Substitution effect dominates",
-        "Demand shifts outward",
-        "Price decreases"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "trap",
-      "objective": "LO4.3",
-      "feedback": "This describes a Giffen good.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "aHash": "ce081db6b5e1d24ee80405f9aab6f233272ad840d09a56f8d96d538ed1b7ccf5"
-    },
-    {
-      "id": 600031,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Which condition is necessary for Giffen behavior?",
-      "options": [
-        "The good must be inferior and the income effect must dominate the substitution effect",
-        "The good must be normal",
-        "The substitution effect must be zero for all prices",
-        "Cross-price elasticity must be positive"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "interpretation",
-      "objective": "LO4.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
-      "aHash": "6cea78e12fdd7aeaa6634a0baa5f0722c3b1bd221a27a0a8a241bd13083f3872"
-    },
-    {
-      "id": 600032,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check — Which condition is necessary for Giffen behavior?",
-      "options": [
-        "The good must be inferior and the income effect must dominate the substitution effect",
-        "The good must be normal",
-        "The substitution effect must be zero for all prices",
-        "Cross-price elasticity must be positive"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "interpretation",
-      "objective": "LO4.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
-      "aHash": "6cea78e12fdd7aeaa6634a0baa5f0722c3b1bd221a27a0a8a241bd13083f3872"
-    },
-    {
-      "id": 600033,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check — Which condition is necessary for Giffen behavior?",
-      "options": [
-        "The good must be inferior and the income effect must dominate the substitution effect",
-        "The good must be normal",
-        "The substitution effect must be zero for all prices",
-        "Cross-price elasticity must be positive"
-      ],
-      "tag": "giffen_good_logic",
-      "type": "interpretation",
-      "objective": "LO4.3",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.3_giffen_good_logic",
-      "primarySkill": "giffen_good_logic",
-      "secondarySkills": [],
-      "repairSkill": "giffen_good_logic",
-      "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "Giffen behavior requires a strong negative income effect that outweighs the substitution effect.",
-      "aHash": "6cea78e12fdd7aeaa6634a0baa5f0722c3b1bd221a27a0a8a241bd13083f3872"
-    }
-  ],
-  "demand_curve_shifts": [
-    {
-      "id": 6001,
-      "q": "A demand curve shifts when...",
-      "options": [
-        "Income or preferences change",
-        "The good’s own price changes",
-        "Firms change production",
-        "Technology changes"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "definition",
-      "objective": "LO4.4",
-      "feedback": "Demand shifts occur when factors other than the good’s own price change.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "b022209d3c4a8839a323a07e24b4ebb0f907695cc95764dd8a83a2c5db80eecf"
-    },
-    {
-      "id": 6005,
-      "q": "If both income and price increase, what happens to demand?",
-      "options": [
-        "Cannot be determined without more information",
-        "Demand always increases",
-        "Demand always decreases",
-        "Demand stays constant"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "trap",
-      "objective": "LO4.4",
-      "feedback": "Multiple factors can affect demand and quantity demanded differently, so the net result cannot be determined without more information.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "a80800f672bc9ecc8b36aab201ec97131f1a1550c1c9cc789f0f365e17b0fcb2"
-    },
-    {
-      "id": 6006,
-      "q": "Which would shift demand for a good inward?",
-      "options": [
-        "A decrease in income for a normal good",
-        "A decrease in price",
-        "An increase in substitutes' prices",
-        "An increase in population"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "feedback": "Lower income reduces demand for normal goods.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "30f028b829008da6f0aecf574e1dee871f07f15c3b7f4cc4df823152eff005ee"
-    },
-    {
-      "id": 6007,
-      "q": "If the price of a substitute falls, demand for the good will...",
-      "options": [
-        "Decrease",
-        "Increase",
-        "Stay the same",
-        "Become perfectly elastic"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "feedback": "Cheaper substitutes reduce demand for the original good.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "aHash": "b2dc971f4895ca1f298f3f72fa80f67a6a2100532dfc3e74898b93ab12fdb8cd"
-    }
-  ],
-  "consumer_surplus": [
-    {
-      "id": 600034,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A buyer's willingness to pay remains $60. Price falls from $35 to $25. By how much does this buyer's consumer surplus rise?",
-      "options": [
-        "$10",
-        "$35",
-        "$25",
-        "$50"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
-      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
-    },
-    {
-      "id": 600035,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A buyer's willingness to pay remains $65. Price falls from $20 to $10. By how much does this buyer's consumer surplus rise?",
-      "options": [
-        "$10",
-        "$55",
-        "$45",
-        "$55"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
-      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
-    },
-    {
-      "id": 600036,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A buyer's willingness to pay remains $70. Price falls from $25 to $15. By how much does this buyer's consumer surplus rise?",
-      "options": [
-        "$10",
-        "$55",
-        "$45",
-        "$60"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
-      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
-    },
-    {
-      "id": 600037,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — A buyer's willingness to pay remains $50. Price falls from $30 to $20. By how much does this buyer's consumer surplus rise?",
-      "options": [
-        "$10",
-        "$30",
-        "$20",
-        "$40"
-      ],
-      "tag": "consumer_surplus",
-      "type": "calculation",
-      "objective": "LO4.5",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "With willingness to pay unchanged, a $10 price reduction raises this buyer's surplus by $10.",
-      "aHash": "a5e5e8d362fb74d764de0ae02c1301975aa694ee1175c61c2cc45a60a78245ec"
-    }
-  ],
-  "market_demand_aggregation": [
-    {
-      "id": 600038,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — How is a market demand curve constructed from individual demand curves?",
-      "options": [
-        "Add individual quantities demanded at each price",
-        "Average individual prices at each quantity",
-        "Add individual prices vertically",
-        "Use only the largest buyer"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "definition",
-      "objective": "LO4.6",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
-      "aHash": "537a1c840b78808d1f60941c14e01165a5fedee040e66a772d2bd59bdd464f78"
-    },
-    {
-      "id": 600039,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check — How is a market demand curve constructed from individual demand curves?",
-      "options": [
-        "Add individual quantities demanded at each price",
-        "Average individual prices at each quantity",
-        "Add individual prices vertically",
-        "Use only the largest buyer"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "definition",
-      "objective": "LO4.6",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
-      "aHash": "537a1c840b78808d1f60941c14e01165a5fedee040e66a772d2bd59bdd464f78"
-    },
-    {
-      "id": 600040,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check — How is a market demand curve constructed from individual demand curves?",
-      "options": [
-        "Add individual quantities demanded at each price",
-        "Average individual prices at each quantity",
-        "Add individual prices vertically",
-        "Use only the largest buyer"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "definition",
-      "objective": "LO4.6",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
-      "aHash": "537a1c840b78808d1f60941c14e01165a5fedee040e66a772d2bd59bdd464f78"
-    },
-    {
-      "id": 600041,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check — How is a market demand curve constructed from individual demand curves?",
-      "options": [
-        "Add individual quantities demanded at each price",
-        "Average individual prices at each quantity",
-        "Add individual prices vertically",
-        "Use only the largest buyer"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "definition",
-      "objective": "LO4.6",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Market demand is the horizontal sum of individual demand schedules.",
-      "aHash": "537a1c840b78808d1f60941c14e01165a5fedee040e66a772d2bd59bdd464f78"
-    }
-  ],
-  "price_elasticity_fundamentals": [
-    {
-      "id": 6032,
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: price elasticity of demand measures...",
-      "options": [
-        "How responsive quantity demanded is to price changes",
-        "How responsive supply is to price changes",
-        "How much income consumers earn",
-        "How much firms spend on production"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "definition",
-      "objective": "LO4.7",
-      "feedback": "Elasticity measures the responsiveness of quantity demanded to a change in price.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "aHash": "e7af6550c2e11bf559eba587ec0a4e5510a871985d36eb0d94acc6749cf149b4"
-    },
-    {
-      "id": 6033,
-      "q": "If elasticity is greater than 1, demand is...",
-      "options": [
-        "Elastic",
-        "Inelastic",
-        "Unit elastic",
-        "Perfectly inelastic"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "definition",
-      "objective": "LO4.7",
-      "feedback": "Elastic demand means quantity demanded responds strongly to price changes.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "aHash": "986051385feae5b9850804db2d701c0b029ad24f09bce340c12aee7a5c8a0391"
-    },
-    {
-      "id": 6034,
-      "q": "If elasticity is less than 1, demand is...",
-      "options": [
-        "Inelastic",
-        "Elastic",
-        "Unit elastic",
-        "Perfectly elastic"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "definition",
-      "objective": "LO4.7",
-      "feedback": "Inelastic demand means quantity demanded responds weakly to price changes.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "aHash": "862be9846b7db52d7a7ead25fbad55dbdab1658dec6260ec427b9144838648f7"
-    },
-    {
-      "id": 6035,
-      "q": "If demand is elastic, a price increase will...",
-      "options": [
-        "Decrease total revenue",
-        "Increase total revenue",
-        "Not affect revenue",
-        "Double revenue"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "Elastic demand means quantity drops significantly when price rises.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "aHash": "d20ec5f2efaacfe9885ef7ee3fefacfe42e21e40984549a93051e95b6177ddc8"
-    }
-  ],
-  "midpoint_elasticity": [
-    {
-      "id": 600042,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Price rises from $34 to $38; quantity falls from 65 to 45. Using midpoint percentage changes, approximately what is |Ed|?",
-      "options": [
-        "3.27",
-        "5.00",
-        "0.20",
-        "2.62"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %ΔQ=-20/55; %ΔP=4/36; |Ed|≈3.27.",
-      "aHash": "a0e254be0e5790fe4c1f550adef4d0afece32bc018e0c4dcdd3023a2ac24cb4d"
-    },
-    {
-      "id": 600043,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Price rises from $36 to $40; quantity falls from 60 to 40. Using midpoint percentage changes, approximately what is |Ed|?",
-      "options": [
-        "3.80",
-        "5.00",
-        "0.20",
-        "3.00"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %ΔQ=-20/50; %ΔP=4/38; |Ed|≈3.80.",
-      "aHash": "35433d8a90304b566c7bee7f578d81ccf23ea8bac640064656a39fdc77fd1bb4"
-    },
-    {
-      "id": 600044,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Price rises from $38 to $42; quantity falls from 55 to 35. Using midpoint percentage changes, approximately what is |Ed|?",
-      "options": [
-        "4.44",
-        "5.00",
-        "0.20",
-        "3.45"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %ΔQ=-20/45; %ΔP=4/40; |Ed|≈4.44.",
-      "aHash": "b15dcb6ff2cb568cfa2ee32b67a1a0bc349de7452814458c06c634e91512b329"
-    },
-    {
-      "id": 600045,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Price rises from $40 to $44; quantity falls from 50 to 30. Using midpoint percentage changes, approximately what is |Ed|?",
-      "options": [
-        "5.25",
-        "5.00",
-        "0.20",
-        "4.00"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %ΔQ=-20/40; %ΔP=4/42; |Ed|≈5.25.",
-      "aHash": "b259b971e52894c8e406c02ea110231f68056d16437c0cda5d34ae1311540a79"
-    }
-  ],
-  "elasticity_total_revenue": [
-    {
-      "id": 600046,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
-      "options": [
-        "Demand is inelastic",
-        "Demand is elastic",
-        "Demand is perfectly elastic",
-        "Demand must have shifted"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
-      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
-    },
-    {
-      "id": 600047,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check — Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
-      "options": [
-        "Demand is inelastic",
-        "Demand is elastic",
-        "Demand is perfectly elastic",
-        "Demand must have shifted"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
-      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
-    },
-    {
-      "id": 600048,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check — Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
-      "options": [
-        "Demand is inelastic",
-        "Demand is elastic",
-        "Demand is perfectly elastic",
-        "Demand must have shifted"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
-      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
-    },
-    {
-      "id": 600049,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check — Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
-      "options": [
-        "Demand is inelastic",
-        "Demand is elastic",
-        "Demand is perfectly elastic",
-        "Demand must have shifted"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
-      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
-    }
-  ],
-  "cross_price_elasticity": [
-    {
-      "id": 6039,
-      "q": "A good with many substitutes is likely to have...",
-      "options": [
-        "Elastic demand",
-        "Inelastic demand",
-        "Perfectly inelastic demand",
-        "Unit elasticity"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "Substitutes increase responsiveness to price changes.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "aHash": "630a71b67a56aeb7260f99fe738b85c1a99f4482388d2400e8a23b8ee28a5ff5"
-    },
-    {
-      "id": 600050,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
-      "options": [
-        "-0.5",
-        "0.5",
-        "-2.0",
-        "2.0"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
-      "aHash": "1b07b0cffa0b3f596b5e048b0115168886cc5183dd518655b5515ee5dddac6d1"
-    },
-    {
-      "id": 600051,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check — The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
-      "options": [
-        "-0.5",
-        "0.5",
-        "-2.0",
-        "2.0"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
-      "aHash": "1b07b0cffa0b3f596b5e048b0115168886cc5183dd518655b5515ee5dddac6d1"
-    },
-    {
-      "id": 600052,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check — The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
-      "options": [
-        "-0.5",
-        "0.5",
-        "-2.0",
-        "2.0"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
-      "aHash": "1b07b0cffa0b3f596b5e048b0115168886cc5183dd518655b5515ee5dddac6d1"
-    }
-  ],
-  "income_elasticity": [
-    {
-      "id": 600053,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Income rises 8% and demand for X rises 12%. What is income elasticity?",
-      "options": [
-        "1.5",
-        "0.67",
-        "-1.5",
-        "20"
-      ],
-      "tag": "income_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Income elasticity = 12%/8% = 1.5.",
-      "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
-    },
-    {
-      "id": 600054,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check — Income rises 8% and demand for X rises 12%. What is income elasticity?",
-      "options": [
-        "1.5",
-        "0.67",
-        "-1.5",
-        "20"
-      ],
-      "tag": "income_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Income elasticity = 12%/8% = 1.5.",
-      "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
-    },
-    {
-      "id": 600055,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check — Income rises 8% and demand for X rises 12%. What is income elasticity?",
-      "options": [
-        "1.5",
-        "0.67",
-        "-1.5",
-        "20"
-      ],
-      "tag": "income_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Income elasticity = 12%/8% = 1.5.",
-      "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
-    },
-    {
-      "id": 600056,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check — Income rises 8% and demand for X rises 12%. What is income elasticity?",
-      "options": [
-        "1.5",
-        "0.67",
-        "-1.5",
-        "20"
-      ],
-      "tag": "income_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "Income elasticity = 12%/8% = 1.5.",
-      "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
-    }
-  ],
-  "elasticity_determinants": [
-    {
-      "id": 600057,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check — Why does demand often become more elastic over a longer time horizon?",
-      "options": [
-        "Consumers have more time to find substitutes and change behavior",
-        "Prices stop mattering",
-        "Income effects disappear",
-        "Budget shares become zero"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
-      "aHash": "764509ad6719a60b9c63640ef3130133dd002ebc62d1cf47f403742fe5cb2ae5"
-    },
-    {
-      "id": 600058,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check — Why does demand often become more elastic over a longer time horizon?",
-      "options": [
-        "Consumers have more time to find substitutes and change behavior",
-        "Prices stop mattering",
-        "Income effects disappear",
-        "Budget shares become zero"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
-      "aHash": "764509ad6719a60b9c63640ef3130133dd002ebc62d1cf47f403742fe5cb2ae5"
-    },
-    {
-      "id": 600059,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check — Why does demand often become more elastic over a longer time horizon?",
-      "options": [
-        "Consumers have more time to find substitutes and change behavior",
-        "Prices stop mattering",
-        "Income effects disappear",
-        "Budget shares become zero"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
-      "aHash": "764509ad6719a60b9c63640ef3130133dd002ebc62d1cf47f403742fe5cb2ae5"
-    },
-    {
-      "id": 600060,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check — Why does demand often become more elastic over a longer time horizon?",
-      "options": [
-        "Consumers have more time to find substitutes and change behavior",
-        "Prices stop mattering",
-        "Income effects disappear",
-        "Budget shares become zero"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "difficulty": "bridge",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "Time allows consumers to adjust habits, technologies, and substitute choices.",
-      "aHash": "764509ad6719a60b9c63640ef3130133dd002ebc62d1cf47f403742fe5cb2ae5"
-    }
-  ]
+},
+  "microSkillRepairPools": microSkillRepairPools,
+  "microSkillBridgePools": microSkillBridgePools
 };

@@ -1,0 +1,28 @@
+LABYRINTH OF CHOICE — PRODUCTION PLACEMENT
+
+DROP INTO CURRENT labyrinth-of-choice FOLDER:
+  labyrinth_of_choice_question_bank_student.js
+
+PLACE IN THE EXISTING authoring FOLDER:
+  labyrinth_of_choice_question_bank_author.json
+
+DO NOT ADD DUPLICATE GRAPH FILES. The bank is aligned to the production filenames already visible in your folder:
+  DEMAND-01.png through DEMAND-05.png
+  ELASTICITY-01.png through ELASTICITY-05.png
+  IC-01.png through IC-07.png
+  INCOME-SUB-01.png through INCOME-SUB-04.png
+
+KEEP AT ROOT:
+  index.html
+  instructional_resources.js
+  all bosses/artifacts/backgrounds/audio
+  all graph PNGs listed above
+
+KEEP AS FOLDERS:
+  authoring/
+  resources/
+
+IMPORTANT:
+- index.html loads labyrinth_of_choice_question_bank_student.js from the SAME folder as index.html.
+- Do not leave the experimental labyrinth_of_choice_question_bank_student_demand_elasticity.js as the active bank. It is not referenced by index.html and can be moved to authoring/archive or deleted once you are comfortable with the new bank.
+- Trial by Graph remains disabled in the current HTML until the graph collection is complete and we intentionally switch it on.
