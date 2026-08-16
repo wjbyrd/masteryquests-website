@@ -15627,3 +15627,9 @@ const questionBank = {
   "microSkillRepairPools": microSkillRepairPools,
   "microSkillBridgePools": microSkillBridgePools
 };
+
+// Engine 2.0 compatibility alias.
+// The Labyrinth HTML consumes `questionBanks.easy`, `questionBanks.medium`, etc.
+// The rebuilt bank stores those pools under `questionBank.questionBanks`.
+const questionBanks = questionBank.questionBanks;
+
