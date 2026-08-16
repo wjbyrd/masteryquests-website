@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Publish a Mastery Quest with GitHub Pages: create a repository, upload the game, turn on Pages, test the public URL, and link or embed it in your LMS." name="description"/>
+<meta content="Understand how Mastery Quests adaptive selection, remediation, limited-run sampling, and mastery evidence work, then publish a game with GitHub Pages and your LMS." name="description"/>
 <title>How To | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/site.js"></script>
@@ -164,6 +164,17 @@
     grid-template-columns:1fr;
   }
 }
+
+.adaptive-flow{margin:14px 0;padding:14px 16px;border-radius:12px;background:#eef3f8;color:#0d315e;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700;line-height:1.5;}
+.adaptive-table-wrap{margin-top:22px;overflow-x:auto;border:1px solid rgba(15,52,94,.14);border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(8,36,68,.06);}
+.adaptive-table{width:100%;min-width:880px;border-collapse:collapse;}
+.adaptive-table th,.adaptive-table td{padding:14px 15px;border-bottom:1px solid rgba(15,52,94,.11);text-align:left;vertical-align:top;line-height:1.45;}
+.adaptive-table th{background:#0d315e;color:#fff;font-size:.88rem;letter-spacing:.03em;}
+.adaptive-table tr:last-child td{border-bottom:none;}.adaptive-table td:first-child{font-weight:800;color:#0d315e;white-space:nowrap;}
+.adaptive-rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px;}
+.adaptive-rule-card{padding:20px;border:1px solid rgba(15,52,94,.14);border-radius:14px;background:#fff;}.adaptive-rule-card h3{margin:0 0 9px;color:#0d315e;}.adaptive-rule-card p{margin:0 0 10px;}.adaptive-rule-card ul{margin:8px 0 0 20px;}
+@media(max-width:760px){.adaptive-rule-grid{grid-template-columns:1fr;}}
+
 </style></head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -185,13 +196,14 @@
 <div class="site-container page-hero-grid">
 <div>
 <p class="eyebrow">How To</p>
-<h1>Publish your Mastery Quest with GitHub Pages.</h1>
+<h1>Understand the engine. Then publish your Mastery Quest.</h1>
 <p class="page-hero-lead">
-        Once the game is built, deployment is mostly a hosting job: create a GitHub repository,
-        upload the self-contained game HTML, turn on GitHub Pages, test the public URL, and then
-        link or embed that URL in your LMS.
+        Start with the adaptive rules: what the engine records, when it can remediate, how short
+        modes calibrate, and when a Mastery Report is allowed to make a strong claim. Then use the
+        deployment guide to publish the finished game with GitHub Pages and your LMS.
       </p>
 <div class="howto-jump">
+<a href="#adaptive-engine">Adaptive engine</a>
 <a href="#prepare">Prepare the file</a>
 <a href="#repository">Create the repository</a>
 <a href="#pages">Turn on Pages</a>
@@ -199,14 +211,46 @@
 </div>
 </div>
 <div class="howto-hero-note">
-<strong>Already have your generated game?</strong>
+<strong>Want to know what “adaptive” actually means?</strong>
 <p>
-        Good. You do not need to rebuild it here. This page begins where Build a Quest ends.
-        Keep your recipe and faculty build records for later; only the game HTML needs to be published.
+        The first section spells out the current engine standard by mode, including remediation,
+        limited-run calibration, and evidence rules. The deployment guide begins immediately after it.
       </p>
 </div>
 </div>
 </section>
+<section class="section section-light" id="adaptive-engine">
+<div class="site-container">
+<div class="section-heading">
+<p class="eyebrow">Engine transparency</p>
+<h2>How adaptation, remediation, and evidence work by mode</h2>
+<p>Mastery Quests does not use one adaptive rule everywhere. Every accepted answer can contribute correctness, response time, concept/tag, learning objective, skill, question type, difficulty exposure, and recent-performance evidence. What the engine does with that evidence depends on the mode.</p>
+</div>
+<div class="adaptive-rule-grid">
+<article class="adaptive-rule-card"><h3>Full adaptive selection</h3><p>Standard Campaign, Timed Trial, Exam Drill, Score Attack, and Unlimited Practice can use the full selector. The engine balances coverage and novelty while also responding to demonstrated weakness, recent performance, response time, and readiness for harder material.</p><div class="adaptive-flow">observe → adapt → remediate when warranted → confirm → return</div></article>
+<article class="adaptive-rule-card"><h3>Targeted remediation</h3><p>In remediation-enabled modes, a meaningful miss can move the learner out of the ordinary stream. The engine uses the question’s skill, objective, concept, question type, response time, and prior evidence to choose the recovery path.</p><ul><li><strong>Repair</strong> isolates the underlying concept or skill.</li><li><strong>Bridge</strong> asks the learner to apply that repaired idea in a nearby context.</li><li><strong>Retest</strong> checks whether the learner can return to normal difficulty.</li></ul><p>A very fast or apparently careless miss can begin with a bridge-style check instead of assuming a deep conceptual failure.</p></article>
+<article class="adaptive-rule-card"><h3>Cold-start limited runs</h3><p>Fading Fortune, Risk &amp; Reward, and Trial by Graph do not begin by pretending the engine already knows the learner. Mastery starts as unknown.</p><div class="adaptive-flow">unknown → calibration → investigation</div><p>Calibration emphasizes breadth and avoids repeating the same skill. After calibration, repeated misses, weak observed accuracy, slow responses, and unsampled areas influence what eligible question comes next.</p></article>
+<article class="adaptive-rule-card"><h3>Sample-aware reporting</h3><p>Short fixed-length modes never treat a small sample as a full mastery diagnosis.</p><ul><li><strong>1–2 observations:</strong> Limited Signal</li><li><strong>3–4 observations:</strong> Emerging Pattern</li><li><strong>5+ observations:</strong> Meaningful Sample</li></ul><p>A sampled area needs at least five observations before the report can treat it as a confirmed weakness. Unsampled content remains unknown.</p></article>
+</div>
+<div class="adaptive-table-wrap" role="region" aria-label="Adaptive behavior by Mastery Quests mode" tabindex="0">
+<table class="adaptive-table"><thead><tr><th scope="col">Mode</th><th scope="col">How questions are selected</th><th scope="col">Repair / Bridge detours</th><th scope="col">How the report interprets evidence</th></tr></thead><tbody>
+<tr><td>Standard Campaign</td><td>Full adaptive selection using coverage, recent performance, weakness signals, response time, repetition control, and difficulty readiness.</td><td><strong>Yes.</strong> Targeted remediation can interrupt the normal path when the evidence supports it.</td><td>Full-evidence Mastery Report.</td></tr>
+<tr><td>Timed Trial</td><td>The full adaptive selector continues operating under the countdown.</td><td><strong>Yes.</strong> Remediation can still occur while time pressure remains part of the run.</td><td>Full-evidence interpretation with timing behavior included.</td></tr>
+<tr><td>Exam Drill</td><td>Full adaptive practice without campaign progression, bosses, or artifacts.</td><td><strong>Yes.</strong> Demonstrated weakness can trigger targeted recovery work.</td><td>Full-evidence Mastery Report.</td></tr>
+<tr><td>Score Attack</td><td>Full adaptive selection underneath the scoring mechanic. Score changes the stakes, not the learning selector.</td><td><strong>Yes.</strong> Remediation remains available.</td><td>Full-evidence report plus score behavior.</td></tr>
+<tr><td>Unlimited Practice</td><td>Full adaptive selection continues until the learner ends the session.</td><td><strong>Yes.</strong> Repair and bridge behavior remains available throughout practice.</td><td>Full-evidence report; long sessions can accumulate especially deep evidence.</td></tr>
+<tr><td>Legendary Mode</td><td>Adaptive challenge selection favors the hardest available material and pressure-tests stronger performance.</td><td><strong>No.</strong> Legendary does not interrupt the challenge with remediation detours.</td><td>Full-evidence challenge report. Strong conclusions still depend on sufficient evidence.</td></tr>
+<tr><td>Quiz</td><td>Balanced sampling with planned Easy → Medium → Hard coverage. Early misses do not cause weakness-chasing.</td><td><strong>No.</strong> The instructor-selected quiz remains a quiz.</td><td>Sample-aware report. A short quiz is not treated as a complete mastery diagnosis.</td></tr>
+<tr><td>Fading Fortune</td><td>Broad calibration first, then constrained adaptive investigation inside the eligible Fading Fortune pool.</td><td><strong>No.</strong> The normal question stream itself becomes more targeted.</td><td>Sample-aware report.</td></tr>
+<tr><td>Risk &amp; Reward</td><td>Broad calibration first, then constrained adaptive investigation inside the eligible Risk &amp; Reward pool.</td><td><strong>No.</strong> Wager play is not interrupted by a repair hallway.</td><td>Sample-aware report.</td></tr>
+<tr><td>Trial by Graph</td><td>Broad calibration first, then constrained adaptive investigation using only legitimate <code>graphRequired</code> questions.</td><td><strong>No.</strong> The graph-only stream remains intact.</td><td>Sample-aware report. The mode appears only when the game has enough graph-dependent inventory.</td></tr>
+</tbody></table></div>
+<div class="adaptive-rule-grid">
+<article class="adaptive-rule-card"><h3>Calibration length in short adaptive runs</h3><ul><li>Up to 5 questions: first 3 are calibration.</li><li>6–10 questions: first 4 are calibration.</li><li>11–15 questions: first 5 are calibration.</li><li>16–20 questions: first 6 are calibration.</li></ul><p>After that point, the engine can investigate emerging signals without repeatedly hammering the same skill or leaving the mode’s eligible question pool.</p></article>
+<article class="adaptive-rule-card"><h3>Why Quiz is different</h3><p>Quiz is intentionally protected from weakness-chasing because an instructor may use it as an actual graded or assigned quiz. The engine still spreads coverage and avoids unnecessary repetition, but student performance does not progressively rewrite the quiz around early mistakes.</p></article>
+</div>
+<div class="howto-note"><strong>Availability varies by game.</strong> A mode is shown only when the game and its question bank support it. Trial by Graph, for example, requires enough questions whose graph is genuinely necessary to answer the item.</div>
+</div></section>
 <section class="section section-light" id="prepare">
 <div class="site-container">
 <div class="section-heading">
