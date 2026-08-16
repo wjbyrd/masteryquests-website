@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Micro Test Prep</title>
+<title>Micro World Explorer</title>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
@@ -1210,7 +1210,7 @@
 </head>
 
 <body>
-  <section id="splashScreen" aria-label="Micro Test Prep splash screen">
+  <section id="splashScreen" aria-label="Micro World Explorer splash screen">
     <button id="enterHubButton" class="splash-enter" onclick="enterHub()">Click to Enter</button>
     <div class="splash-status" id="splashStatus">Initializing adaptive gauntlet...</div>
   </section>
@@ -1221,15 +1221,15 @@
     Dungeon Menu
   </button>
 
-  <main id="mainMenu" aria-label="Game selection menu">
+  <main id="mainMenu" aria-label="World selection menu">
     <div class="menu-overlay"></div>
     <video class="menu-video-bg" autoplay muted loop playsinline aria-hidden="true">
       <source src="menu_mist.mp4" type="video/mp4">
     </video>
     <div class="menu-shell">
       <header class="menu-header">
-        <p class="menu-kicker">Microeconomics Review System</p>
-        <h1 class="menu-title">Choose Your Dungeon</h1>
+        <p class="menu-kicker">Microeconomics World System</p>
+        <h1 class="menu-title">Choose Your World</h1>
         <p class="menu-subtitle">Select the dungeon you want to run. Each dungeon targets a different set of concepts, adapts to your performance, and reports completion when you finish.</p>
 
         <div class="briefing-folder collapsed" id="briefingFolder">
@@ -1264,7 +1264,7 @@
         </div>
       </header>
 
-      <section class="game-grid" aria-label="Available review dungeons">
+      <section class="game-grid" aria-label="Available microeconomics worlds">
         <article class="game-card loc">
           <div class="game-thumb" aria-hidden="true"></div>
           <div class="game-content">
@@ -1290,7 +1290,7 @@
           <div class="game-content">
             <h2 class="game-title">Strategic Vault</h2>
             <p class="game-tagline">Think like a strategist: weigh risk, predict rivals, and choose when the outcome depends on more than you.</p>
-            <p class="mission-briefing" id="briefing-vault">Open dungeon. Risk, insurance, game theory, and strategic interaction are waiting inside.</p>
+            <p class="mission-briefing" id="briefing-vault">Coming soon. Strategic Vault is being rebuilt on the current Mastery Quests engine.</p>
             <div class="restored-badge" id="badge-vault">Vault cleared · Dungeon secured</div>
             <div class="topic-list">
               <span class="topic-chip">Uncertainty</span>
@@ -1299,8 +1299,8 @@
               <span class="topic-chip">Strategic Interaction</span>
             </div>
             <div class="game-meta">
-              <div class="status-line"><span>Status</span><span class="status-value" id="status-vault">Ready</span></div>
-              <button class="enter-btn" onclick="selectGame('vault')">Enter Vault</button>
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-vault">Coming Soon</span></div>
+              <button class="enter-btn" onclick="selectGame('vault')" disabled aria-disabled="true">Coming Soon</button>
             </div>
           </div>
         </article>
@@ -1310,7 +1310,7 @@
           <div class="game-content">
             <h2 class="game-title">The Foundry</h2>
             <p class="game-tagline">Run the firm: manage production, control costs, and decide when competition makes profit possible.</p>
-            <p class="mission-briefing" id="briefing-foundry">Open dungeon. Production, costs, profit maximization, and perfect competition run hot here.</p>
+            <p class="mission-briefing" id="briefing-foundry">Coming soon. The Foundry is being rebuilt on the current Mastery Quests engine.</p>
             <div class="restored-badge" id="badge-foundry">Foundry cleared · Dungeon secured</div>
             <div class="topic-list">
               <span class="topic-chip">Production</span>
@@ -1319,8 +1319,8 @@
               <span class="topic-chip">Perfect Competition</span>
             </div>
             <div class="game-meta">
-              <div class="status-line"><span>Status</span><span class="status-value" id="status-foundry">Ready</span></div>
-              <button class="enter-btn" onclick="selectGame('foundry')">Enter Foundry</button>
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-foundry">Coming Soon</span></div>
+              <button class="enter-btn" onclick="selectGame('foundry')" disabled aria-disabled="true">Coming Soon</button>
             </div>
           </div>
         </article>
@@ -1330,7 +1330,7 @@
           <div class="game-content">
             <h2 class="game-title">Dominion of Power</h2>
             <p class="game-tagline">Confront market power: monopoly, welfare, and the imperfect worlds where efficiency starts to crack.</p>
-            <p class="mission-briefing" id="briefing-dominion">Open dungeon. General equilibrium, welfare, monopoly, and imperfect competition hold the final gate.</p>
+            <p class="mission-briefing" id="briefing-dominion">Coming soon. Dominion of Power is being rebuilt on the current Mastery Quests engine.</p>
             <div class="restored-badge" id="badge-dominion">Dominion cleared · Dungeon secured</div>
             <div class="topic-list">
               <span class="topic-chip">General Equilibrium</span>
@@ -1339,8 +1339,8 @@
               <span class="topic-chip">Imperfect Competition</span>
             </div>
             <div class="game-meta">
-              <div class="status-line"><span>Status</span><span class="status-value" id="status-dominion">Ready</span></div>
-              <button class="enter-btn" onclick="selectGame('dominion')">Enter Dominion</button>
+              <div class="status-line"><span>Status</span><span class="status-value" id="status-dominion">Coming Soon</span></div>
+              <button class="enter-btn" onclick="selectGame('dominion')" disabled aria-disabled="true">Coming Soon</button>
             </div>
           </div>
         </article>
@@ -1491,7 +1491,8 @@
   const games = {
     loc: {
       title: "Labyrinth of Choice",
-      file: "https://wjbyrd.github.io/Labyrinth-of-Choice/",
+      file: "labyrinth-of-choice/",
+      available: true,
       statusKey: "microHub_loc_complete",
       startedKey: "microHub_loc_started",
       roomKey: "microHub_loc_room",
@@ -1538,7 +1539,8 @@ artifacts: [
     },
     vault: {
       title: "Strategic Vault",
-      file: "https://wjbyrd.github.io/The-Strategic-Vault/",
+      file: "strategic-vault/",
+      available: false,
       statusKey: "microHub_vault_complete",
       startedKey: "microHub_vault_started",
       roomKey: "microHub_vault_room",
@@ -1585,7 +1587,8 @@ artifacts: [
     },
     foundry: {
       title: "The Foundry",
-      file: "https://wjbyrd.github.io/The-Foundry/",
+      file: "the-foundry/",
+      available: false,
       statusKey: "microHub_foundry_complete",
       startedKey: "microHub_foundry_started",
       roomKey: "microHub_foundry_room",
@@ -1632,7 +1635,8 @@ artifacts: [
     },
     dominion: {
       title: "Dominion of Power",
-      file: "https://wjbyrd.github.io/Dominion-of-Power/",
+      file: "dominion-of-power/",
+      available: false,
       statusKey: "microHub_dominion_complete",
       startedKey: "microHub_dominion_started",
       roomKey: "microHub_dominion_room",
@@ -1775,6 +1779,20 @@ artifacts: [
   function syncHubSaveFromExistingKeys(){
     Object.keys(games).forEach(key => {
       const game = games[key];
+
+      if(game.available === false){
+        statusElement.innerText = "Coming Soon";
+        statusElement.dataset.realmState = "unstable";
+        if(card){ card.classList.add("locked"); }
+        const enterButton = card ? card.querySelector(".enter-btn") : null;
+        if(enterButton){
+          enterButton.disabled = true;
+          enterButton.setAttribute("aria-disabled", "true");
+          enterButton.innerText = "Coming Soon";
+        }
+        return;
+      }
+
       const completed = getStorageFlag(game.statusKey);
       const started = getStorageFlag(game.startedKey);
       const room = localStorage.getItem(game.roomKey);
@@ -1866,7 +1884,7 @@ artifacts: [
     const nextReason = document.getElementById("nextDungeonReason");
     const nextButton = document.getElementById("nextDungeonButton");
 
-    nextDungeonKey = getSortedDungeonKeys().find(key => !getStorageFlag(games[key].statusKey)) || null;
+    nextDungeonKey = getSortedDungeonKeys().find(key => games[key].available !== false && !getStorageFlag(games[key].statusKey)) || null;
 
     if(title){ title.innerText = `${clearedCount} of ${totalDungeons} ${pluralize(totalDungeons, "dungeon", "dungeons")} cleared`; }
 
@@ -2156,7 +2174,12 @@ artifacts: [
   
 function selectGame(gameKey){
     if(!games[gameKey]){
-      alert("Select a dungeon first.");
+      alert("Select a world first.");
+      return;
+    }
+
+    if(games[gameKey].available === false){
+      alert(`${games[gameKey].title} is coming soon.`);
       return;
     }
 
