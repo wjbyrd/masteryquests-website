@@ -2289,6 +2289,78 @@ body.game-active #soundToggle {
 
 
 
+
+/* =========================================================
+   ENGINE 2.0 GAME MODAL — TEMPLATE PARITY
+   Keeps answer feedback centered over the game rather than
+   participating in the page flex layout.
+========================================================= */
+.game-modal{
+  position:fixed;
+  inset:0;
+  z-index:500;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  box-sizing:border-box;
+  background:rgba(2,6,23,0.72);
+  backdrop-filter:blur(6px);
+}
+
+.game-modal-card{
+  width:min(520px, 100%);
+  padding:28px;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at top,
+      rgba(56,189,248,0.16),
+      rgba(11,34,56,0.88) 48%,
+      rgba(2,6,23,0.98));
+  border:1px solid rgba(247,217,130,0.42);
+  box-shadow:
+    0 0 34px rgba(0,0,0,0.88),
+    0 0 38px rgba(56,189,248,0.24),
+    0 0 46px rgba(247,217,130,0.14),
+    inset 0 0 30px rgba(0,0,0,0.72);
+  text-align:center;
+}
+
+.game-modal-card h2{
+  margin:0 0 12px;
+  color:#f7d982;
+  font-size:30px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.game-modal-card p{
+  margin:0 0 24px;
+  color:#e0f2fe;
+  font-size:18px;
+  line-height:1.45;
+}
+
+.game-modal-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.secondary-modal-btn{
+  color:#e0f2fe;
+  border-color:rgba(56,189,248,0.42);
+}
+
+@media(max-width:600px){
+  .game-modal{ padding:14px; }
+  .game-modal-card{ padding:22px 18px; }
+  .game-modal-card h2{ font-size:25px; }
+  .game-modal-card p{ font-size:16px; }
+}
+
+
 /* LABYRINTH OF CHOICE ENGINE 2.0 MODE AVAILABILITY */
 .mode-card[hidden]{display:none !important;}
 #gameModalText{white-space:pre-line;}
@@ -2404,6 +2476,11 @@ Respect structure strictly.
 <span class="mode-card-title">Score Attack</span>
 <span class="mode-card-text">Rack up points with correct answers, streaks, and speed. Misses cost you.</span>
 </button>
+<button class="mode-card" data-mode="trialGraph" onclick="startSelectedMode('trialGraph')" aria-label="Trial by Graph. Every question requires a graph. Choose a 10, 15, or 20 question run when enough graph-required questions are available.">
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_graph.webp"/>
+<span class="mode-card-title">Trial by Graph</span>
+<span class="mode-card-text">Every question requires the graph. Choose 10, 15, or 20 and read the visual evidence.</span>
+</button>
 <button class="mode-card" data-mode="fadingFortune" onclick="startSelectedMode('fadingFortune')" aria-label="Fading Fortune. Every question starts worth one hundred points. Incorrect choices disappear over time, reducing the available value.">
 <img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_fading.webp"/>
 <span class="mode-card-title">Fading Fortune</span>
@@ -2449,6 +2526,24 @@ Respect structure strictly.
     <div class="quiz-setup-actions">
       <button class="continue-btn" onclick="launchQuizFromSetup()">Launch Quiz</button>
       <button class="continue-btn secondary-modal-btn" onclick="closeQuizSetup()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="trialGraphSetupModal" class="quiz-setup-modal" role="dialog" aria-modal="true" aria-labelledby="trialGraphSetupTitle" style="display:none;">
+  <div class="quiz-setup-card">
+    <h2 id="trialGraphSetupTitle" class="quiz-setup-title">Trial by Graph</h2>
+    <p class="quiz-setup-text">Every question in this run requires its graph. Choose a run length supported by the current graph bank.</p>
+    <div class="quiz-quick-counts" aria-label="Trial by Graph run lengths">
+      <button type="button" data-trial-graph-count="10" onclick="setTrialGraphQuestionCount(10)">10</button>
+      <button type="button" data-trial-graph-count="15" onclick="setTrialGraphQuestionCount(15)">15</button>
+      <button type="button" data-trial-graph-count="20" onclick="setTrialGraphQuestionCount(20)">20</button>
+    </div>
+    <p id="trialGraphInventoryNote" class="quiz-setup-text"></p>
+    <div class="quiz-setup-actions">
+      <button id="trialGraphLaunchButton" class="continue-btn" onclick="launchTrialGraphFromSetup()">Launch Trial by Graph</button>
+      <button class="continue-btn secondary-modal-btn" onclick="closeTrialGraphSetup()">Cancel</button>
     </div>
   </div>
 </div>
@@ -2979,12 +3074,12 @@ const FACULTY_COMPOSITION_CONFIG = {
     compositionId: "labyrinth-of-choice-v2",
     title: "The Labyrinth of Choice",
     slug: "labyrinthChoice",
-    supportedModes: ["standard","timed","exam","quiz","unlimited","legendary","score","fadingFortune","riskReward"],
+    supportedModes: ["standard","timed","exam","quiz","unlimited","legendary","score","trialGraph","fadingFortune","riskReward"],
     fadingFortune: { allowedTargets:[10,15,20], intervals:{easy:8000,medium:10000,hard:12000,elite:15000,legendary:18000} },
     riskReward: { startingBankroll:1000, wagerOptions:[{label:"10%",ratio:0.10},{label:"25%",ratio:0.25},{label:"50%",ratio:0.50},{label:"ALL IN",ratio:1.00}], allowedTargets:[10,15,20] },
     saveKeyNamespace: "labyrinthChoice",
     libraryVersion: "micro-v2",
-    compositionFingerprint: "labyrinth-of-choice-engine2-nograph-20260816"
+    compositionFingerprint: "labyrinth-of-choice-engine2-graph-20260816"
 };
 const STORAGE_PREFIX = "labyrinthChoice";
 const PLAYER_KEY = "labyrinthChoiceUser";
@@ -3011,13 +3106,12 @@ const QUIZ_MAX_QUESTIONS = 15;
 let quizQuestionTarget = 10;
 let quizQuestionsCompleted = 0;
 
-// Trial by Graph is intentionally disabled for Labyrinth of Choice: this bank has no graph assets.
+// Trial by Graph uses all ordinary graph-required questions in the published bank.
 const TRIAL_GRAPH_ALLOWED_TARGETS = [10,15,20];
 let trialGraphQuestionTarget = 10;
 let trialGraphQuestionsCompleted = 0;
 let trialGraphDeck = [];
 let trialGraphDeckIndex = 0;
-const trialGraphQuestionIds = [];
 
 const FADING_FORTUNE_ALLOWED_TARGETS = [10,15,20];
 const FADING_FORTUNE_INTERVALS = FACULTY_COMPOSITION_CONFIG.fadingFortune.intervals;
@@ -8336,8 +8430,7 @@ function downloadTelemetryCsv(activeRunID = runID){
 
 /* =====================================================
    LABYRINTH OF CHOICE ENGINE 2.0 OVERRIDES — 2026-08-16
-   Quiz · Unlimited Practice · Fading Fortune · Risk & Reward
-   Trial by Graph intentionally disabled: no graph assets in this deck.
+   Quiz · Unlimited Practice · Trial by Graph · Fading Fortune · Risk & Reward
 ===================================================== */
 function normalizeQuizQuestionTarget(value){
     const numeric = Math.round(Number(value));
@@ -8391,6 +8484,120 @@ function launchQuizFromSetup(){
     closeQuizSetup();
     startSelectedMode("quiz", {quizConfirmed:true});
 }
+
+
+function getTrialGraphCandidates(){
+    return ["easy","medium","hard","elite","legendary"].flatMap(poolName =>
+        (questionBanks?.[poolName] || [])
+            .filter(question =>
+                question &&
+                question.graphRequired === true &&
+                typeof question.image === "string" &&
+                question.image.trim() !== "" &&
+                Array.isArray(question.options) &&
+                question.options.length === 4
+            )
+            .map(question => ({...question, __mqDifficulty: poolName}))
+    );
+}
+
+function getTrialGraphSupportedTargets(){
+    const available = getTrialGraphCandidates().length;
+    return TRIAL_GRAPH_ALLOWED_TARGETS.filter(target => available >= target);
+}
+
+function normalizeTrialGraphQuestionTarget(value){
+    const supported = getTrialGraphSupportedTargets();
+    if(!supported.length) return 10;
+    const numeric = Math.round(Number(value));
+    return supported.includes(numeric) ? numeric : supported[0];
+}
+
+function updateTrialGraphCountControls(){
+    const supported = new Set(getTrialGraphSupportedTargets());
+    document.querySelectorAll("[data-trial-graph-count]").forEach(button => {
+        const value = Number(button.dataset.trialGraphCount);
+        const enabled = supported.has(value);
+        const selected = value === trialGraphQuestionTarget;
+        button.disabled = !enabled;
+        button.hidden = !enabled;
+        button.classList.toggle("selected", selected);
+        button.setAttribute("aria-pressed", selected ? "true" : "false");
+    });
+
+    const available = getTrialGraphCandidates().length;
+    const note = document.getElementById("trialGraphInventoryNote");
+    if(note){
+        note.textContent = `${available} graph-required question${available === 1 ? "" : "s"} available in this build.`;
+    }
+
+    const launch = document.getElementById("trialGraphLaunchButton");
+    if(launch) launch.disabled = supported.size === 0;
+}
+
+function setTrialGraphQuestionCount(value){
+    trialGraphQuestionTarget = normalizeTrialGraphQuestionTarget(value);
+    updateTrialGraphCountControls();
+}
+
+function buildTrialGraphDeck(target){
+    const candidates = getTrialGraphCandidates();
+    const shuffled = [...candidates];
+
+    for(let i = shuffled.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled.slice(0, Math.max(0, Number(target) || 0));
+}
+
+function openTrialGraphSetup(){
+    if(!isFacultyModeSupported("trialGraph")){
+        alert("Trial by Graph is not enabled for this game.");
+        return;
+    }
+
+    const preflight = validateFacultyMode("trialGraph");
+    if(!preflight.ok){
+        showFacultyPreflightFailure("trialGraph", preflight.issues);
+        return;
+    }
+
+    const supported = getTrialGraphSupportedTargets();
+    const saved = Number(localStorage.getItem(`${STORAGE_PREFIX}:trialGraph:questionCount`));
+    trialGraphQuestionTarget = supported.includes(saved) ? saved : supported[0];
+    updateTrialGraphCountControls();
+
+    const modal = document.getElementById("trialGraphSetupModal");
+    if(modal) modal.style.display = "flex";
+}
+
+function closeTrialGraphSetup(){
+    const modal = document.getElementById("trialGraphSetupModal");
+    if(modal) modal.style.display = "none";
+}
+
+function launchTrialGraphFromSetup(){
+    trialGraphQuestionTarget = normalizeTrialGraphQuestionTarget(trialGraphQuestionTarget);
+    trialGraphQuestionsCompleted = 0;
+    trialGraphDeckIndex = 0;
+    trialGraphDeck = buildTrialGraphDeck(trialGraphQuestionTarget);
+
+    if(trialGraphDeck.length < trialGraphQuestionTarget){
+        showFacultyPreflightFailure("trialGraph", [{
+            pool:"graphRequired",
+            id:"—",
+            issue:`Needs ${trialGraphQuestionTarget}; found ${trialGraphDeck.length}`
+        }]);
+        return;
+    }
+
+    localStorage.setItem(`${STORAGE_PREFIX}:trialGraph:questionCount`, String(trialGraphQuestionTarget));
+    closeTrialGraphSetup();
+    startSelectedMode("trialGraph", {trialGraphConfirmed:true});
+}
+
 
 function modeUsesFadingFortune(){
     return gameMode === 'fadingFortune';
@@ -9749,6 +9956,22 @@ function validateFacultyMode(mode){
         });
         return {ok:issues.length===0,issues};
     }
+    if(normalizedMode === "trialGraph"){
+        const candidates = getTrialGraphCandidates();
+        if(candidates.length < 10){
+            issues.push({pool:"graphRequired",id:"—",issue:`Needs at least 10; found ${candidates.length}`});
+        }
+        candidates.forEach(q => {
+            const invalid = validateFacultyQuestion(q,"trialGraph");
+            if(q.graphRequired !== true || !String(q.image || "").trim()){
+                invalid.push("graphRequired/image");
+            }
+            if(invalid.length){
+                issues.push({pool:"graphRequired",id:q.id,issue:`Invalid: ${invalid.join(", ")}`});
+            }
+        });
+        return {ok:issues.length===0,issues};
+    }
     const required = normalizedMode === "legendary"
         ? ["legendary","legendaryBoss"]
         : normalizedMode === "standard" || normalizedMode === "score"
@@ -9988,6 +10211,7 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
 
 
 function getDifficultyForMode(){
+    if(gameMode==="trialGraph") return trialGraphDeck[trialGraphDeckIndex]?.__mqDifficulty || "hard";
     if(gameMode==="fadingFortune") return fadingFortuneDeck[fadingFortuneDeckIndex]?.__mqDifficulty || "easy";
     if(gameMode==="riskReward") return riskRewardDeck[riskRewardDeckIndex]?.__mqDifficulty || "easy";
     if(gameMode==="quiz"){
@@ -10093,6 +10317,7 @@ function resetRunStateForNewMode(){
     tagHistory=[]; lastTypes=[]; adaptiveMode="support"; resetRemediationState();
     rapidGuessHistory=[]; rapidGuessWarnings=0; rapidGuessLocked=false; principalIntroPlayed=false;
     timedHighestRoom=1; timedSetbacks=0; quizQuestionsCompleted=0; trialGraphQuestionsCompleted=0; trialGraphDeckIndex=0;
+    if(gameMode!=="trialGraph") trialGraphDeck=[];
     resetFadingFortuneRunState(); if(gameMode!=="fadingFortune") fadingFortuneDeck=[];
     resetRiskRewardRunState(); if(gameMode!=="riskReward") riskRewardDeck=[];
     legendaryBossObjectivesUsedThisRun=[]; bossMistakeCountThisRun=0; bossesDefeatedThisRun=0; resumedSavedRunThisSession=false;
@@ -10107,6 +10332,7 @@ function initializeRunForMode(mode){
         autosave.innerText=gameMode==="timed"?"⏱ Timed Trial Active"
             :gameMode==="exam"?"✎ Exam Drill Active"
             :gameMode==="quiz"?`? Quiz Active · ${quizQuestionTarget} Questions`
+            :gameMode==="trialGraph"?`▦ Trial by Graph · ${trialGraphQuestionTarget} Questions`
             :gameMode==="unlimited"?"∞ Unlimited Practice Active"
             :gameMode==="fadingFortune"?`◫ Fading Fortune · ${fadingFortuneQuestionTarget} Questions`
             :gameMode==="riskReward"?`♠ Risk & Reward · ${riskRewardQuestionTarget} Questions`
@@ -10129,6 +10355,7 @@ function startSelectedMode(mode,options={}){
     const requestedMode=mode||"standard";
     if(!isFacultyModeSupported(requestedMode)){ alert("This mode is not enabled for The Labyrinth of Choice."); return; }
     if(requestedMode==="quiz" && !options.quizConfirmed){ openQuizSetup(); return; }
+    if(requestedMode==="trialGraph" && !options.trialGraphConfirmed){ openTrialGraphSetup(); return; }
     if(requestedMode==="fadingFortune" && !options.fadingFortuneConfirmed){ openFadingFortuneSetup(); return; }
     if(requestedMode==="riskReward" && !options.riskRewardConfirmed){ openRiskRewardSetup(); return; }
     const preflight=validateFacultyMode(requestedMode);
@@ -10143,7 +10370,7 @@ function confirmReturnToModeMenu(){
     if(gameMode==="exam" || gameMode==="unlimited"){ confirmEndPractice(); return; }
     showGameModal({
         title:"Return to Labyrinth Menu?",
-        text:"Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, Score Attack, Fading Fortune, and Risk & Reward attempts will end.",
+        text:"Standard Campaign progress will be saved. Timed Trial, Exam Drill, Quiz, Unlimited Practice, Score Attack, Trial by Graph, Fading Fortune, and Risk & Reward attempts will end.",
         confirmText:"Return",cancelText:"Stay",
         onConfirm:()=>{ if(gameMode==="standard") saveGameState(); if(gameMode==="timed"){endTimedAttemptEarly();return;} returnToModeSelectFromRun(); }
     });
@@ -10178,7 +10405,7 @@ function startGame(shouldResume=false,requestedMode=null){
     document.getElementById("startScreen").style.display="none";
     const modeScreen=document.getElementById("modeSelectScreen"); if(modeScreen) modeScreen.style.display="none";
     document.querySelector(".top-panel").style.display="flex";
-    const maze=document.getElementById("mazeTrackContainer"); if(maze) maze.style.display=["quiz","fadingFortune","riskReward"].includes(gameMode)?"none":"block";
+    const maze=document.getElementById("mazeTrackContainer"); if(maze) maze.style.display=["quiz","trialGraph","fadingFortune","riskReward"].includes(gameMode)?"none":"block";
     document.getElementById("gameShell").style.display="flex"; document.getElementById("gameBox").style.display="block";
     document.getElementById("artifactVault").style.display=modeAllowsRealmProgress()?"block":"none";
     [["vaultSeal","seal"],["vaultPrism","prism"],["vaultScepter","scepter"]].forEach(([id,key])=>{
@@ -10322,7 +10549,7 @@ function loadQuestion() {
     // 1. Determine Difficulty and Boss Status
 	let diff = getDifficultyForMode();
 
-   const isBoss = diff.includes("Boss") && gameMode !== "exam" && gameMode !== "timed" && gameMode !== "unlimited";
+   const isBoss = diff.includes("Boss") && !["exam","timed","unlimited","quiz","trialGraph","fadingFortune","riskReward"].includes(gameMode);
 
    // Only reset health if the bossPool is currently empty (meaning a new encounter)
      if (isBoss && (!bossPool || bossPool.length === 0)) {
