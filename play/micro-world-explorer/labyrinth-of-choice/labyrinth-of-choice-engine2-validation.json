@@ -1,0 +1,138 @@
+{
+  "game": "The Labyrinth of Choice",
+  "build": "2026.08.16-engine2-nograph",
+  "modeCards": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "unlimited",
+    "legendary",
+    "score",
+    "fadingFortune",
+    "riskReward"
+  ],
+  "modePreflights": {
+    "standard": {
+      "ok": true,
+      "issues": []
+    },
+    "timed": {
+      "ok": true,
+      "issues": []
+    },
+    "exam": {
+      "ok": true,
+      "issues": []
+    },
+    "quiz": {
+      "ok": true,
+      "issues": []
+    },
+    "unlimited": {
+      "ok": true,
+      "issues": []
+    },
+    "legendary": {
+      "ok": true,
+      "issues": []
+    },
+    "score": {
+      "ok": true,
+      "issues": []
+    },
+    "fadingFortune": {
+      "ok": true,
+      "issues": []
+    },
+    "riskReward": {
+      "ok": true,
+      "issues": []
+    }
+  },
+  "trialByGraph": {
+    "enabled": false,
+    "graphQuestionCount": 0,
+    "graphRequiredCount": 0,
+    "reason": "Graph assets/questions will be authored in the next content phase."
+  },
+  "fixedModes": {
+    "fadingFortuneCandidates": 115,
+    "riskRewardCandidates": 115,
+    "fadingDecks": {
+      "10": 10,
+      "15": 15,
+      "20": 20
+    },
+    "riskDecks": {
+      "10": 10,
+      "15": 15,
+      "20": 20
+    }
+  },
+  "questionBank": {
+    "ordinary": {
+      "easy": 60,
+      "medium": 60,
+      "hard": 60,
+      "elite": 60,
+      "legendary": 60
+    },
+    "boss": {
+      "easyBoss": 15,
+      "mediumBoss": 15,
+      "finalBoss": 15,
+      "legendaryBoss": 33
+    },
+    "mainAndBossTotal": 378,
+    "repairSkills": 23,
+    "repairQuestions": 92,
+    "bridgeSkills": 23,
+    "bridgeQuestions": 92,
+    "totalRecords": 562,
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "imageBearingQuestions": 0,
+    "objectiveCounts": {
+      "LO3.1": 24,
+      "LO3.2": 54,
+      "LO3.3": 40,
+      "LO3.4": 43,
+      "LO4.1": 21,
+      "LO4.2": 33,
+      "LO4.3": 45,
+      "LO4.4": 13,
+      "LO4.5": 13,
+      "LO4.6": 12,
+      "LO4.7": 80
+    },
+    "skillCount": 23,
+    "publishedAnswerHashVerification": {
+      "recordsChecked": 562,
+      "invalidRecords": 0
+    }
+  },
+  "resources": {
+    "videoResources": 18,
+    "chapters": [
+      3,
+      4
+    ],
+    "objectiveMappings": 11,
+    "slideDecksRequired": false
+  },
+  "architecture": {
+    "embeddedPrimaryBankRemoved": true,
+    "externalStudentBank": "labyrinth_of_choice_question_bank_student.js",
+    "externalResourceCatalog": "instructional_resources.js",
+    "legacyRngHallRemoved": true,
+    "powerAutomateFetchRemoved": true,
+    "localTelemetry": true,
+    "standardOnlyCampaignProgress": true
+  },
+  "files": {
+    "htmlSha256": "29fb10c40c06e9469138f8300f4e485edab7f4ddba2a8cd188d668c91b3166f6",
+    "studentBankSha256": "ced99d4900ceb089f73d82d07db62fe85f4ec845b20b9f265c094cab67817d7a",
+    "resourcesSha256": "9a80f5197cfbc06ec939f7fa7c2b4db86050ad484cbe02bfcbb0ebacd4f91f58"
+  }
+}
