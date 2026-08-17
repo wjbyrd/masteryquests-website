@@ -30,7 +30,7 @@ body {
     align-items: center;
     overflow-x: hidden;
     color: white;
-    background: url('question_background_image.jpeg');
+    background: url('question_background_image.webp');
     background-size: cover;
     background-position: center;
 }
@@ -2553,52 +2553,52 @@ Respect structure strictly.
 <p class="mode-subtitle">Choose how you want to enter The Labyrinth of Choice.</p>
 <div class="mode-grid">
 <button class="mode-card" data-mode="standard" onclick="startSelectedMode('standard')" aria-label="Standard Campaign. Full 30-room protocol with bosses, artifacts, setbacks, save and resume status, and labyrinth progress.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='start-screen-image.webp';" src="start-screen-image.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='mode_standard.webp';" src="start-screen-image.webp"/>
 <span class="mode-card-title">Standard Campaign</span>
 <span class="mode-card-text">Full 30-room labyrinth with bosses, artifacts, setbacks, and local progress.</span>
 </button>
 <button class="mode-card" data-mode="timed" onclick="startSelectedMode('timed')" aria-label="Timed Trial. Ten minute run with visible countdown, normal setbacks, rapid guessing penalties, and results saved separately.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.webp';" src="hallway1.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.webp';" src="mode_timed.webp"/>
 <span class="mode-card-title">Timed Trial</span>
 <span class="mode-card-text">Ten minutes. Correct answers advance. Misses push you back.</span>
 </button>
 <button class="mode-card" data-mode="exam" onclick="startSelectedMode('exam')" aria-label="Exam Drill. No bosses, no artifacts, no labyrinth progress. Just adaptive practice.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="question_background_image.jpeg"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src="mode_exam"/>
 <span class="mode-card-title">Exam Drill</span>
 <span class="mode-card-text">No bosses. No artifacts. No labyrinth progress. Just adaptive practice.</span>
 </button>
 <button class="mode-card" data-mode="quiz" onclick="startSelectedMode('quiz')" aria-label="Quiz. Choose from one to fifteen questions from The Labyrinth of Choice bank.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_quiz.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src="mode_quiz.webp"/>
 <span class="mode-card-title">Quiz</span>
 <span class="mode-card-text">Choose 1–15 questions. The Labyrinth of Choice bank is already set. Focus on the assignment.</span>
 </button>
 <button class="mode-card" data-mode="unlimited" onclick="startSelectedMode('unlimited')" aria-label="Unlimited Practice. Adaptive practice continues until you end the session and generate a Mastery Report.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_unlimited.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src="mode_unlimited.webp"/>
 <span class="mode-card-title">Unlimited Practice</span>
 <span class="mode-card-text">Practice as long as you want. End when you are ready for the Mastery Report.</span>
 </button>
 <button class="mode-card" data-mode="legendary" onclick="startSelectedMode('legendary')" aria-label="Legendary Mode. Full 30-room operation using the hardest available Labyrinth of Choice questions.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="hallway3.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src=mode_legendary.webp"/>
 <span class="mode-card-title">Legendary Mode</span>
 <span class="mode-card-text">Full operation. Hardest available questions. Bosses still hit. No mercy.</span>
 </button>
 <button class="mode-card" data-mode="score" onclick="startSelectedMode('score')" aria-label="Score Attack. Build points through correct answers, streaks, and speed. Misses subtract points and rapid guessing is punished.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.webp';" src="hallway2.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.webp';" src="mode_score.webp"/>
 <span class="mode-card-title">Score Attack</span>
 <span class="mode-card-text">Rack up points with correct answers, streaks, and speed. Misses cost you.</span>
 </button>
 <button class="mode-card" data-mode="trialGraph" onclick="startSelectedMode('trialGraph')" aria-label="Trial by Graph. Every question requires a graph. Choose a 10, 15, or 20 question run when enough graph-required questions are available.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_graph.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src="mode_graph.webp"/>
 <span class="mode-card-title">Trial by Graph</span>
 <span class="mode-card-text">Every question requires the graph. Choose 10, 15, or 20 and read the visual evidence.</span>
 </button>
 <button class="mode-card" data-mode="fadingFortune" onclick="startSelectedMode('fadingFortune')" aria-label="Fading Fortune. Every question starts worth one hundred points. Incorrect choices disappear over time, reducing the available value.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_fading.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src="mode_fading.webp"/>
 <span class="mode-card-title">Fading Fortune</span>
 <span class="mode-card-text">Commit early for full value or wait as bad choices disappear. Every fade costs 25 points.</span>
 </button>
 <button class="mode-card" data-mode="riskReward" onclick="startSelectedMode('riskReward')" aria-label="Risk and Reward. Choose how much of your bankroll to risk before seeing each question. Correct answers win the wager. Wrong answers lose it.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="mode_risk.webp"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.webp';" src="mode_risk.webp"/>
 <span class="mode-card-title">Risk &amp; Reward</span>
 <span class="mode-card-text">Risk 10%, 25%, 50%, or go All In before the question appears. Correct wins the wager. Wrong loses it.</span>
 </button>
