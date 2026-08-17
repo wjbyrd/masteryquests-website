@@ -3669,7 +3669,7 @@ const microSkillBridgePools = {
         "$10",
         "$55",
         "$45",
-        "$55"
+        "$65"
       ],
       "a": 0,
       "tag": "consumer_surplus",
@@ -6843,7 +6843,7 @@ const questionBank = {
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "D1 lies to the left of D0, so consumers want less at every price. That is a decrease in demand.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-01.png",
+      "image": "DEMAND-05.png",
       "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
       "graphRequired": true,
       "aHash": "694a08284bba5da73688d49e505d3933e4eae0008f1d3f731b262bce4b8d2c50"
@@ -6871,7 +6871,7 @@ const questionBank = {
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
       "feedback": "A to B is movement down the same demand curve: price drops from $10 to $5, so quantity demanded rises.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-02.png",
+      "image": "DEMAND-01.png",
       "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
       "graphRequired": true,
       "aHash": "3788080942a517ed7e3c352124e142cf141771f00dbc41d5ce24d4c4ce52aa20"
@@ -6899,7 +6899,7 @@ const questionBank = {
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
       "feedback": "Point A is at a price of $12 while point B is at $6, so point A reflects the higher willingness to pay.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-03.png",
+      "image": "DEMAND-02.png",
       "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
       "graphRequired": true,
       "aHash": "502372a865dba96f36d1ac2a30db3c6a80aa6a963e27bb2acc1ec3bbb0a830a0"
@@ -6927,7 +6927,7 @@ const questionBank = {
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "A rightward shift from D0 to D1 means consumers demand more tacos at each price.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-04.png",
+      "image": "DEMAND-03.png",
       "imageAlt": "Taco demand graph with D0 shifting right to D1.",
       "graphRequired": true,
       "aHash": "95cdfc2f0636fb8e396d27aad36048f34247f60e60306f306269b1d0f6b45174"
@@ -8699,7 +8699,7 @@ const questionBank = {
         "$10",
         "$40",
         "$30",
-        "$40"
+        "$50"
       ],
       "tag": "consumer_surplus",
       "type": "calculation",
@@ -8737,7 +8737,7 @@ const questionBank = {
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "Reading across the graph at $5, quantity demanded drops from roughly 225 thousand to 125 thousand. That is a decrease of 100 thousand units.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-01.png",
+      "image": "DEMAND-05.png",
       "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
       "graphRequired": true,
       "aHash": "e32dfc65431cbfd52d1251e9db1b729827353b63bc3ad12e1e49bb83d195a38d"
@@ -8765,7 +8765,7 @@ const questionBank = {
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
       "feedback": "Quantity demanded rises from 100 thousand to 225 thousand, so the increase is 125 thousand.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-02.png",
+      "image": "DEMAND-01.png",
       "imageAlt": "Taco demand graph D0 with point A at price 10 quantity 100 and point B at price 5 quantity 225.",
       "graphRequired": true,
       "aHash": "86d0e9d813d48e132a194eb153fbc04ee215570f1f970fd4a91aa41384a64384"
@@ -8793,7 +8793,7 @@ const questionBank = {
       "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
       "feedback": "The price falls from $12 at A to $6 at B, so the change is a decrease of $6.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-03.png",
+      "image": "DEMAND-02.png",
       "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
       "graphRequired": true,
       "aHash": "0515b99084c67e889e1ca62bcbb0d7f52635c0f097afd047f7d64508e9575316"
@@ -8821,7 +8821,7 @@ const questionBank = {
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "A rightward shift in demand comes from a nonprice demand determinant, such as a rise in popularity.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-05.png",
+      "image": "DEMAND-04.png",
       "imageAlt": "Peanut butter demand graph with D0 shifting right to D1.",
       "graphRequired": true,
       "aHash": "96c80d83563ca6d53eb7cc087b9bb18bc8e16d86b03fb70b0ed8add6f178bcd9"
@@ -10672,7 +10672,7 @@ const questionBank = {
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "Because D1 is left of D0, D0 shows the larger quantity demanded at every common price.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-01.png",
+      "image": "DEMAND-05.png",
       "imageAlt": "Hamburger demand graph with D0 above D1, showing a leftward decrease in demand.",
       "graphRequired": true,
       "aHash": "9e9e524e6544d723e524648baaf3fb9a9c833af9c3d535b6c61ac2d79e4c7a14"
@@ -10700,7 +10700,7 @@ const questionBank = {
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
       "feedback": "The entire curve shifts right, which means demand increased because of a nonprice determinant.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-04.png",
+      "image": "DEMAND-03.png",
       "imageAlt": "Taco demand graph with D0 shifting right to D1.",
       "graphRequired": true,
       "aHash": "5ae7509f640114ec6db907c65a6f155edf0edae296eb6071c96450ee79241e1c"
@@ -10728,7 +10728,7 @@ const questionBank = {
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
       "feedback": "From A to B on D0, price falls and quantity demanded increases, which matches the law of demand.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-05.png",
+      "image": "DEMAND-04.png",
       "imageAlt": "Peanut butter demand graph with point A on D0 at a higher price and point B on D0 at a lower price.",
       "graphRequired": true,
       "aHash": "5a00d82bf48f9860644424b2132369a9d754baa168a9f552c42616bac962d2ee"
@@ -10756,7 +10756,7 @@ const questionBank = {
       "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
       "feedback": "Reversing the move from B to A means a higher price and a lower quantity demanded on the same curve.",
       "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-03.png",
+      "image": "DEMAND-02.png",
       "imageAlt": "Taco demand graph D0 with point A at price 12 quantity 50 and point B at price 6 quantity 200.",
       "graphRequired": true,
       "aHash": "6284c96a075348b8289468cc77ab613b3ce383367e41fda1a8427fb8ae205f74"
@@ -14855,7 +14855,7 @@ const questionBank = {
       "image": "INCOME-SUB-04.png",
       "imageAlt": "Consumer-choice graph showing A, B, and C after a fall in the price of Good X, with B as the compensated bundle and C as the final optimum.",
       "graphRequired": true,
-      "aHash": "0f2daf09444cc8a3b41242c270d923a9e0b233f328ac478f544f497c484b48e9"
+      "aHash": "f22b31925da5c739bd742058cc16d5f0df19b71101365f9444625f5c66fc774f"
     }
   ],
   "legendaryBoss": [
