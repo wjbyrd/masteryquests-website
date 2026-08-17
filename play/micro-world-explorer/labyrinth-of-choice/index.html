@@ -554,7 +554,7 @@ Good transitions = smoother experience.
 #startScreen{
   position: fixed;
   inset: 0;
-  background-image: url('start screen image.png');
+  background-image: url('start-screen-image.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -571,7 +571,7 @@ Good transitions = smoother experience.
   box-sizing: border-box;
 }
 /* Transition overlay — appears between rooms (controlled by JS) */
-#hallwayTransition { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('hallway1.png'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center; color: white; font-size: 26px; z-index: 200; opacity: 0; pointer-events: none; transition: opacity 1.2s ease; animation: hallwayZoom 3.2s ease-out forwards; }
+#hallwayTransition { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('hallway1.webp'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center; color: white; font-size: 26px; z-index: 200; opacity: 0; pointer-events: none; transition: opacity 1.2s ease; animation: hallwayZoom 3.2s ease-out forwards; }
 
 /* Activates transition visibility (DO NOT REMOVE) */    
 #hallwayTransition.active { opacity: 1; }
@@ -1264,7 +1264,7 @@ TIP:
   padding:30px;
   background:
     linear-gradient(rgba(2,6,23,0.48), rgba(2,6,23,0.82)),
-    url('start screen image.webp');
+    url('start-screen-image.webp');
   background-size:cover;
   background-position:center;
 }
@@ -2553,12 +2553,12 @@ Respect structure strictly.
 <p class="mode-subtitle">Choose how you want to enter The Labyrinth of Choice.</p>
 <div class="mode-grid">
 <button class="mode-card" data-mode="standard" onclick="startSelectedMode('standard')" aria-label="Standard Campaign. Full 30-room protocol with bosses, artifacts, setbacks, save and resume status, and labyrinth progress.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='start screen image.png';" src="start screen image.png"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='start-screen-image.webp';" src="start-screen-image.webp"/>
 <span class="mode-card-title">Standard Campaign</span>
 <span class="mode-card-text">Full 30-room labyrinth with bosses, artifacts, setbacks, and local progress.</span>
 </button>
 <button class="mode-card" data-mode="timed" onclick="startSelectedMode('timed')" aria-label="Timed Trial. Ten minute run with visible countdown, normal setbacks, rapid guessing penalties, and results saved separately.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.png';" src="hallway1.png"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.webp';" src="hallway1.webp"/>
 <span class="mode-card-title">Timed Trial</span>
 <span class="mode-card-text">Ten minutes. Correct answers advance. Misses push you back.</span>
 </button>
@@ -2578,12 +2578,12 @@ Respect structure strictly.
 <span class="mode-card-text">Practice as long as you want. End when you are ready for the Mastery Report.</span>
 </button>
 <button class="mode-card" data-mode="legendary" onclick="startSelectedMode('legendary')" aria-label="Legendary Mode. Full 30-room operation using the hardest available Labyrinth of Choice questions.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="hallway3.png"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='question_background_image.jpeg';" src="hallway3.webp"/>
 <span class="mode-card-title">Legendary Mode</span>
 <span class="mode-card-text">Full operation. Hardest available questions. Bosses still hit. No mercy.</span>
 </button>
 <button class="mode-card" data-mode="score" onclick="startSelectedMode('score')" aria-label="Score Attack. Build points through correct answers, streaks, and speed. Misses subtract points and rapid guessing is punished.">
-<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.png';" src="hallway2.png"/>
+<img alt="" aria-hidden="true" onerror="this.onerror=null;this.src='hallway1.webp';" src="hallway2.webp"/>
 <span class="mode-card-title">Score Attack</span>
 <span class="mode-card-text">Rack up points with correct answers, streaks, and speed. Misses cost you.</span>
 </button>
@@ -2730,15 +2730,15 @@ or simplify this section.
 <h3>Classified Items</h3>
 <div class="vaultRow">
 <div class="artifactSlot" id="vaultSeal">
-<img src="seal_of_preferences.png"/>
+<img src="seal_of_preferences.webp"/>
 <span>Seal of Preferences</span>
 </div>
 <div class="artifactSlot" id="vaultPrism">
-<img src="prsim_of_tradeoffs.png"/>
+<img src="prism_of_tradeoffs.webp"/>
 <span>Prism of Tradeoffs</span>
 </div>
 <div class="artifactSlot" id="vaultScepter">
-<img src="scepter_of_elasticity.png"/>
+<img src="scepter_of_elasticity.webp"/>
 <span>Scepter of Elasticity</span>
 </div>
 </div>
@@ -2750,7 +2750,7 @@ or simplify this section.
 <div id="gameShell">
 <div id="wizardBox">
 <div id="wizardName">The Archivist</div>
-<img id="wizardImage" src="wizard.png" alt="The Archivist"/>
+<img id="wizardImage" src="wizard.webp" alt="The Archivist"/>
 </div>
 <!-- GAME -->
 <!-- Dynamic question + answer rendering (DO NOT rename IDs) -->
@@ -2862,9 +2862,9 @@ const sfxWrong = new Audio('mistake.wav');
       sfxWrong.volume = 0.4;
     
 const hallwayImages = [
-    "hallway1.png",
-    "hallway2.png",
-    "hallway3.png"
+    "hallway1.webp",
+    "hallway2.webp",
+    "hallway3.webp"
 ];
 
 let soundEnabled = true;
@@ -4630,17 +4630,17 @@ const TIMING = {
      
 const artifacts = {
 seal:{
-    img:"seal_of_preferences.png",
+    img:"seal_of_preferences.webp",
     title:"The Seal of Preferences",
     text:"The first chamber yields its secret: consistent preferences can be represented, compared, and carried into the optimization problem."
 },
 prism:{
-    img:"prsim_of_tradeoffs.png",
+    img:"prism_of_tradeoffs.webp",
     title:"The Prism of Tradeoffs",
     text:"Budget constraints and marginal tradeoffs are now visible. The feasible path and the preferred path can finally be read together."
 },
 scepter:{
-    img:"scepter_of_elasticity.png",
+    img:"scepter_of_elasticity.webp",
     title:"The Scepter of Elasticity",
     text:"Demand now reveals not just direction but responsiveness. Price, revenue, related goods, income, and market demand can be read with precision."
 }
@@ -5073,7 +5073,7 @@ function showPrincipalIntro(step = 1){
     if (step === 1) {
         questionElement.innerHTML = `
             <div class="principal-intro">
-                <img src="Sovereign.png" class="bossIcon principalGlow principal-dialogue-img">
+                <img src="sovereign.webp" class="bossIcon principalGlow principal-dialogue-img">
                 <div class="principal-intro-title">THE SOVEREIGN</div>
 
                 <div class="principal-dialogue">
@@ -5096,7 +5096,7 @@ function showPrincipalIntro(step = 1){
 
     questionElement.innerHTML = `
         <div class="principal-intro">
-            <img src="Sovereign.png" class="bossIcon principalGlow">
+            <img src="sovereign.webp" class="bossIcon principalGlow">
             <div class="principal-intro-title">THE SOVEREIGN</div>
 
             <div class="principal-dialogue">
@@ -5143,7 +5143,7 @@ function showPrincipalSuspenseIntro(){
 
     questionElement.innerHTML = `
         <div class="principal-intro principal-suspense">
-            <img src="Sovereign.png" class="bossIcon principalGlow">
+            <img src="sovereign.webp" class="bossIcon principalGlow">
             <div class="principal-intro-title">THE SOVEREIGN</div>
             <div class="principal-intro-line">Final guardian revealed.</div>
             <div class="principal-intro-subline">The maze itself gives way to its final guardian.</div>
@@ -5745,9 +5745,9 @@ function updateMazeTrack() {
         if (i < room) { box.innerText = "⬜"; box.style.opacity = "0.6"; }
         else if (i === room) { box.classList.add("active"); box.setAttribute("aria-label",`Current room ${i} of 30`); box.innerText = "🟦"; }
         else if (isBossRoomForMode(i)) {
-            if (i === 10){ box.innerHTML = '<img src="warden.png" class="boss-icon" alt="">'; box.classList.add("boss10"); }
-            else if (i === 20){ box.innerHTML = '<img src="decomposer.png" class="boss-icon" alt="">'; box.classList.add("boss20"); }
-            else if (i === 30){ box.innerHTML = '<img src="Sovereign.png" class="boss-icon" alt="">'; box.classList.add("boss30"); }
+            if (i === 10){ box.innerHTML = '<img src="warden.webp" class="boss-icon" alt="">'; box.classList.add("boss10"); }
+            else if (i === 20){ box.innerHTML = '<img src="decomposer.webp" class="boss-icon" alt="">'; box.classList.add("boss20"); }
+            else if (i === 30){ box.innerHTML = '<img src="sovereign.webp" class="boss-icon" alt="">'; box.classList.add("boss30"); }
             else box.innerText = "🟨";
         } else box.innerText = "🟨";
         track.appendChild(box);
@@ -5935,7 +5935,7 @@ function loadQuestion() {
     document.getElementById("areaDisplay").innerText = `${getModeDisplayName()} — ${getAreaName(roomCap)} (${roomCap}/30)`;
     document.getElementById("srAnnouncements").innerText = `Entering ${getModeDisplayName()}. ${getAreaName(roomCap)}. Room ${roomCap} of 30.`;
 
-    // 3. Select the Question (CHANGE BOSS NAMES AND PNG)
+    // 3. Select the Question (CHANGE BOSS NAMES AND WEBP)
 if (isBoss) {
     if (room === 30 && bossHealth === 3 && !principalIntroPlayed) {
         principalIntroPlayed = true;
@@ -6024,15 +6024,15 @@ if (isBoss) {
     let bossClass = "";
 
     if (room === 10) {
-        bossImage = "warden.png";
+        bossImage = "warden.webp";
         bossClass = "underwriterGlow";
     }
     else if (room === 20) {
-        bossImage = "decomposer.png";
+        bossImage = "decomposer.webp";
         bossClass = "auditorGlow";
     }
     else {
-        bossImage = "Sovereign.png";
+        bossImage = "sovereign.webp";
         bossClass = "principalGlow";
     }
 
@@ -6844,15 +6844,15 @@ function handleStreakVisuals() {
     let streakColor = "#f0c86a";
 
 if (streak === 5) {
-    streakMsg = `<span class="streak"><img src="streakinsight.png" class="streak-icon">INSIGHT GAINED</span>`;
+    streakMsg = `<span class="streak"><img src="streakinsight.webp" class="streak-icon">INSIGHT GAINED</span>`;
     streakColor = "#f0c86a";
 }
 else if (streak === 10) {
-    streakMsg = `<span class="streak"><img src="streakclarity.png" class="streak-icon">CLARITY ACHIEVED</span>`;
+    streakMsg = `<span class="streak"><img src="streakclarity.webp" class="streak-icon">CLARITY ACHIEVED</span>`;
     streakColor = "#38bdf8";
 }
 else if (streak === 20) {
-    streakMsg = `<span class="streak"><img src="streakmastery.png" class="streak-icon">MASTERY REACHED</span>`;
+    streakMsg = `<span class="streak"><img src="streakmastery.webp" class="streak-icon">MASTERY REACHED</span>`;
     streakColor = "#f5e6b8";
 }
 
@@ -10763,7 +10763,7 @@ if (isBoss) {
     // 3. Boss identity — Labyrinth of Choice
     const bTitle = room === 10 ? "THE WARDEN" : room === 20 ? "THE DECOMPOSER" : "THE SOVEREIGN";
     const bColor = room === 10 ? "#b91c1c" : room === 20 ? "#38bdf8" : "#fff8e7";
-    const bossImage = room === 10 ? "warden.png" : room === 20 ? "decomposer.png" : "Sovereign.png";
+    const bossImage = room === 10 ? "warden.webp" : room === 20 ? "decomposer.webp" : "sovereign.webp";
     const bossClass = room === 10 ? "underwriterGlow" : room === 20 ? "auditorGlow" : "principalGlow";
     document.getElementById("srAnnouncements").innerText = `Boss encounter. ${bTitle}. Prepare yourself.`;
     bossMsg.innerText = "⚠ BOSS ENCOUNTER ⚠";

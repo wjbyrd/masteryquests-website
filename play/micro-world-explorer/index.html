@@ -1935,79 +1935,404 @@ artifacts: [
   }
 
   const MICRO_ACHIEVEMENTS = [
-    { id:"first", title:"First Choice", description:"Clear one dungeon.", icon:"prism_of_tradeoffs.webp", unlocked:stats => stats.completed >= 1 },
-    { id:"clear", title:"Micro Gauntlet", description:"Clear every dungeon.", icon:"core_of_equilibrium.webp", unlocked:stats => stats.completed >= stats.total && stats.total > 0 },
-    { id:"streak", title:"Unbroken Hand", description:"Reach a streak of 20.", icon:"heart.webp", unlocked:stats => stats.bestStreak >= 20 },
-    { id:"timed", title:"Trial by Clock", description:"Reach Room 30 in Timed Trial with at least 80 percent accuracy.", icon:"dice_of_probability.webp", unlocked:stats => stats.timedRoom >= 30 && stats.timedAccuracy >= 80 },
-    { id:"exam", title:"Exam Survivor", description:"Complete an Exam Drill session.", icon:"shield_of_risk_pooling.webp", unlocked:stats => stats.examSessions >= 1 },
-    { id:"legend", title:"Legend Walker", description:"Complete one dungeon in Legendary Mode.", icon:"crown.webp", unlocked:stats => stats.legendaryCompletions >= 1 },
-    { id:"perfect", title:"Perfect Equilibrium", description:"Defeat all three bosses in one dungeon without a wrong answer.", icon:"edge.webp", unlocked:stats => stats.perfectBossRuns >= 1 },
-    { id:"return", title:"Return and Rebuild", description:"Resume a saved run and finish it.", icon:"seal_of_preferences.webp", unlocked:stats => stats.resumeFinishes >= 1 },
-    { id:"vault", title:"Full Vault", description:"Unlock every dungeon artifact set.", icon:"orb.webp", unlocked:stats => stats.artifactsCollected >= stats.totalArtifacts && stats.totalArtifacts > 0 },
-    { id:"proof", title:"Proof of Choice", description:"Answer 400 questions correctly.", icon:"scepter_of_elasticity.webp", unlocked:stats => stats.totalCorrect >= 400 }
+    { id:"firstSteps", title:"First Steps", description:"Clear one domain.", icon:"first-steps.webp", unlocked:stats => stats.completed >= 1 },
+    { id:"domainWalker", title:"Domain Walker", description:"Clear every domain.", icon:"domain-walker.webp", unlocked:stats => stats.completed >= stats.total && stats.total > 0 },
+    { id:"stableSignal", title:"Stable Signal", description:"Reach a streak of 20.", icon:"stable-signal.webp", unlocked:stats => stats.bestStreak >= 20 },
+    { id:"trialByClock", title:"Trial by Clock", description:"Reach Room 30 in Timed Trial with at least 80 percent accuracy.", icon:"trial-by-clock.webp", unlocked:stats => stats.timedRoom >= 30 && stats.timedAccuracy >= 80 },
+    { id:"examSurvivor", title:"Exam Survivor", description:"Complete an Exam Drill session.", icon:"exam-survivor.webp", unlocked:stats => stats.examSessions >= 1 },
+    { id:"legendWalker", title:"Legend Walker", description:"Complete one domain in Legendary Mode.", icon:"legend-walker.webp", unlocked:stats => stats.legendaryCompletions >= 1 },
+    { id:"perfectEquilibrium", title:"Perfect Equilibrium", description:"Defeat all three bosses in one domain without a wrong answer.", icon:"perfect-equilibrium.webp", unlocked:stats => stats.perfectBossRuns >= 1 },
+    { id:"returnAndRebuild", title:"Return and Rebuild", description:"Resume a saved run and finish it.", icon:"return-and-rebuild.webp", unlocked:stats => stats.resumeFinishes >= 1 },
+    { id:"fullVault", title:"Full Vault", description:"Unlock every domain artifact set.", icon:"full-vault.webp", unlocked:stats => stats.artifactsCollected >= stats.totalArtifacts && stats.totalArtifacts > 0 },
+    { id:"archivist", title:"The Archivist Watches", description:"Answer 400 questions correctly.", icon:"the-archivist-watches.webp", unlocked:stats => stats.totalCorrect >= 400 },
+    { id:"highRoller", title:"High Roller", description:"Go all in for 20 questions and win.", icon:"high-roller.webp", unlocked:stats => stats.highRollerComplete },
+    { id:"fadeless", title:"Fadeless", description:"Complete 20 questions with no answer choices faded.", icon:"fadeless.webp", unlocked:stats => stats.fadelessComplete },
+    { id:"cartographer", title:"Cartographer", description:"Complete 20 graph questions without a mistake.", icon:"cartographer.webp", unlocked:stats => stats.cartographerComplete },
+    { id:"quizinator", title:"Quizinator", description:"Complete four 20-question quizzes—one for each domain—with 80% or better.", icon:"quizinator.webp", unlocked:stats => stats.quizinatorDomains >= stats.total && stats.total > 0 },
+    { id:"domainRuler", title:"Domain Ruler", description:"Clear every domain, secure every artifact set, and unlock every other achievement.", icon:"domain-ruler.webp", unlocked:() => false }
   ];
+
+  const MICRO_DOMAIN_STORAGE_ALIASES = {
+    loc: {
+      complete:["microHub_loc_complete","microHub_labyrinth_complete","microHub_labyrinthOfChoice_complete"],
+      started:["microHub_loc_started","microHub_labyrinth_started","microHub_labyrinthOfChoice_started"],
+      prefixes:["loc","labyrinth","labyrinthofchoice"]
+    },
+    vault: {
+      complete:["microHub_vault_complete","microHub_strategicVault_complete"],
+      started:["microHub_vault_started","microHub_strategicVault_started"],
+      prefixes:["vault","strategicvault"]
+    },
+    foundry: {
+      complete:["microHub_foundry_complete"],
+      started:["microHub_foundry_started"],
+      prefixes:["foundry"]
+    },
+    dominion: {
+      complete:["microHub_dominion_complete","microHub_dominionOfPower_complete"],
+      started:["microHub_dominion_started","microHub_dominionOfPower_started"],
+      prefixes:["dominion","dominionofpower"]
+    }
+  };
 
   function getMicroStorageEntries(){
     const entries = [];
     for(let i = 0; i < localStorage.length; i++){
       const key = localStorage.key(i);
-      entries.push({ lowerKey:String(key || "").toLowerCase(), value:localStorage.getItem(key) });
+      entries.push({
+        key:String(key || ""),
+        lowerKey:String(key || "").toLowerCase(),
+        value:localStorage.getItem(key)
+      });
     }
     return entries;
+  }
+
+  function microStorageValueIsTrue(value){
+    return value === "true" || value === "1";
+  }
+
+  function getMicroDomainAliasList(domainKey, field){
+    const configured = games[domainKey];
+    const aliases = MICRO_DOMAIN_STORAGE_ALIASES[domainKey]?.[field] || [];
+    const configuredKey = field === "complete" ? configured?.statusKey : configured?.startedKey;
+    return [...new Set([configuredKey, ...aliases].filter(Boolean))];
+  }
+
+  function getMicroDomainFlag(domainKey, field = "complete"){
+    return getMicroDomainAliasList(domainKey, field)
+      .some(key => localStorage.getItem(key) === "true");
+  }
+
+  function getMicroTelemetryRecords(entries){
+    const records = [];
+
+    entries.forEach(entry => {
+      const raw = String(entry.value || "").trim();
+      if(!raw || (raw[0] !== "[" && raw[0] !== "{")) return;
+
+      try {
+        const parsed = JSON.parse(raw);
+        const candidates = Array.isArray(parsed)
+          ? parsed
+          : (Array.isArray(parsed?.records) ? parsed.records : []);
+
+        candidates.forEach(record => {
+          if(!record || typeof record !== "object") return;
+          if(!("mode" in record) && !("event" in record) && !("game" in record)) return;
+          records.push({ ...record, __storageKey:entry.lowerKey });
+        });
+      } catch(error){
+        // Not every localStorage JSON value is telemetry. Ignore the rest.
+      }
+    });
+
+    return records;
+  }
+
+  function normalizeAchievementAccuracy(record){
+    const raw = Number(record?.accuracy);
+    if(!Number.isFinite(raw)) return 0;
+    return raw >= 0 && raw <= 1 ? raw * 100 : raw;
+  }
+
+  function normalizeAchievementMode(value){
+    return String(value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  }
+
+  function isCompletedAchievementMode(record, mode){
+    const expected = normalizeAchievementMode(mode);
+    const recordMode = normalizeAchievementMode(record?.mode);
+    const event = normalizeAchievementMode(record?.event);
+
+    return recordMode === expected
+      && (event.includes("complete") || event.includes(`${expected}complete`));
+  }
+
+  function getAchievementDomainFromRecord(record){
+    const source = [
+      record?.game,
+      record?.mission,
+      record?.compositionId,
+      record?.__storageKey
+    ].filter(Boolean).join(" ").toLowerCase();
+
+    if(source.includes("labyrinth")) return "loc";
+    if(source.includes("strategic vault") || source.includes("strategicvault")) return "vault";
+    if(source.includes("foundry")) return "foundry";
+    if(source.includes("dominion")) return "dominion";
+
+    return null;
+  }
+
+  function fadingDistributionIsPerfect(value){
+    if(value === null || value === undefined || value === "") return false;
+
+    if(typeof value === "object"){
+      const entries = Object.entries(value);
+      const at100 = entries.reduce((sum, [key, count]) => Number(key) === 100 ? sum + Number(count || 0) : sum, 0);
+      const below100 = entries.reduce((sum, [key, count]) => Number(key) < 100 ? sum + Number(count || 0) : sum, 0);
+      return at100 >= 20 && below100 === 0;
+    }
+
+    const text = String(value).trim();
+    try {
+      return fadingDistributionIsPerfect(JSON.parse(text));
+    } catch(error){
+      const pairs = [...text.matchAll(/(100|75|50|25)\D+(\d+)/g)];
+      if(!pairs.length) return false;
+      let at100 = 0;
+      let below100 = 0;
+      pairs.forEach(match => {
+        const points = Number(match[1]);
+        const count = Number(match[2]);
+        if(points === 100) at100 += count;
+        else below100 += count;
+      });
+      return at100 >= 20 && below100 === 0;
+    }
+  }
+
+  function getMicroAchievementFlagKey(id){
+    return `microHub_achievement_${id}_complete`;
+  }
+
+  function hasPersistentMicroAchievement(id){
+    return localStorage.getItem(getMicroAchievementFlagKey(id)) === "true";
+  }
+
+  function persistMicroAchievement(id){
+    localStorage.setItem(getMicroAchievementFlagKey(id), "true");
   }
 
   function getMicroAchievementStats(){
     const keys = getSortedDungeonKeys();
     const entries = getMicroStorageEntries();
-    const maxValue = matcher => entries.reduce((max, entry) => {
+    const gameplayEntries = entries.filter(entry => !entry.lowerKey.includes("microhub_achievement_"));
+    const telemetry = getMicroTelemetryRecords(entries);
+
+    const maxValue = matcher => gameplayEntries.reduce((max, entry) => {
       const value = Number(entry.value);
       return matcher(entry.lowerKey) && Number.isFinite(value) ? Math.max(max, value) : max;
     }, 0);
-    const trueCount = matcher => entries.filter(entry => matcher(entry.lowerKey) && (entry.value === "true" || entry.value === "1")).length;
-    const completed = keys.filter(key => getStorageFlag(games[key].statusKey)).length;
+
+    const trueCount = matcher => gameplayEntries
+      .filter(entry => matcher(entry.lowerKey) && microStorageValueIsTrue(entry.value))
+      .length;
+
+    const hasTrueFlag = matcher => gameplayEntries
+      .some(entry => matcher(entry.lowerKey) && microStorageValueIsTrue(entry.value));
+
+    const completed = keys.filter(key => getMicroDomainFlag(key, "complete")).length;
     const totalArtifacts = keys.reduce((total, key) => total + ((games[key].artifacts || []).length), 0);
-    const artifactsCollected = keys.reduce((total, key) => total + (getStorageFlag(games[key].statusKey) ? (games[key].artifacts || []).length : 0), 0);
+
+    const artifactsCollected = keys.reduce((total, key) => {
+      const artifactSlots = (games[key].artifacts || []).length;
+      if(!artifactSlots) return total;
+      if(getMicroDomainFlag(key, "complete")) return total + artifactSlots;
+
+      const prefixes = MICRO_DOMAIN_STORAGE_ALIASES[key]?.prefixes || [key];
+      const reported = maxValue(storageKey =>
+        prefixes.some(prefix => storageKey.includes(prefix))
+        && storageKey.includes("artifactscollected")
+      );
+
+      return total + Math.min(artifactSlots, reported);
+    }, 0);
+
+    const telemetryLegendaryDomains = new Set(
+      telemetry
+        .filter(record => isCompletedAchievementMode(record, "legendary"))
+        .map(getAchievementDomainFromRecord)
+        .filter(Boolean)
+    );
+
+    const flaggedLegendaryDomains = new Set();
+    keys.forEach(key => {
+      const prefixes = MICRO_DOMAIN_STORAGE_ALIASES[key]?.prefixes || [key];
+      if(hasTrueFlag(storageKey =>
+        prefixes.some(prefix => storageKey.includes(prefix))
+        && storageKey.includes("legendary")
+        && storageKey.includes("complete")
+      )){
+        flaggedLegendaryDomains.add(key);
+      }
+    });
+
+    const highRollerTelemetry = telemetry.some(record => {
+      if(!isCompletedAchievementMode(record, "riskReward")) return false;
+      const target = Number(record.riskRewardTarget ?? record.questionTarget ?? 0);
+      const completedQuestions = Number(record.riskRewardQuestionsCompleted ?? record.totalAttempts ?? 0);
+      const allInAttempts = Number(record.riskRewardAllInAttempts ?? 0);
+      const busted = Number(record.riskRewardBusted ?? 0) === 1 || record.riskRewardBusted === true;
+      return target >= 20 && completedQuestions >= 20 && allInAttempts >= 20 && !busted;
+    });
+
+    const fadelessTelemetry = telemetry.some(record => {
+      if(!isCompletedAchievementMode(record, "fadingFortune")) return false;
+      const completedQuestions = Number(record.totalAttempts ?? record.fadingFortuneQuestionsCompleted ?? 0);
+      if(completedQuestions < 20) return false;
+
+      const averageValue = Number(record.fadingFortuneAverageValue);
+      if(Number.isFinite(averageValue) && averageValue >= 100) return true;
+
+      return fadingDistributionIsPerfect(record.fadingFortuneDistribution);
+    });
+
+    const cartographerTelemetry = telemetry.some(record => {
+      if(!isCompletedAchievementMode(record, "trialGraph")) return false;
+      const attempts = Number(record.totalAttempts ?? 0);
+      return attempts >= 20 && normalizeAchievementAccuracy(record) >= 100;
+    });
+
+    const quizDomains = new Set();
+    telemetry.forEach(record => {
+      if(!isCompletedAchievementMode(record, "quiz")) return;
+      const attempts = Number(record.totalAttempts ?? 0);
+      if(attempts < 20 || normalizeAchievementAccuracy(record) < 80) return;
+      const domain = getAchievementDomainFromRecord(record);
+      if(domain) quizDomains.add(domain);
+    });
+
+    keys.forEach(key => {
+      const prefixes = MICRO_DOMAIN_STORAGE_ALIASES[key]?.prefixes || [key];
+      if(hasTrueFlag(storageKey =>
+        prefixes.some(prefix => storageKey.includes(prefix))
+        && storageKey.includes("quiz")
+        && storageKey.includes("20")
+        && (storageKey.includes("80") || storageKey.includes("quizinator"))
+        && storageKey.includes("complete")
+      )){
+        quizDomains.add(key);
+      }
+    });
+
+    const readStoredNumber = key => {
+      const raw = localStorage.getItem(key);
+      if(raw === null || raw === "") return null;
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : null;
+    };
+
+    const globalCorrect = readStoredNumber("microHub_totalCorrectAnswers");
+    const fallbackCorrect = maxValue(key =>
+      key.includes("correcttotal")
+      || key.includes("totalcorrect")
+      || key.includes("correctanswerslifetime")
+    );
+
+    const globalBestStreak = readStoredNumber("microHub_bestStreak");
+    const globalTimedRoom = readStoredNumber("microHub_timedBestRoom");
+    const globalTimedAccuracy = readStoredNumber("microHub_timedBestAccuracy");
+
     return {
       total:keys.length,
       completed,
-      legendaryCompletions:keys.filter(key => localStorage.getItem(`microHub_${key}_legendary_complete`) === "true" || localStorage.getItem(`${key}LegendaryComplete`) === "true").length,
-      bestStreak:maxValue(key => key.includes("maxstreak") || key.includes("beststreak") || key.includes("timedlaststreak")),
-      timedRoom:maxValue(key => key.includes("timed") && key.includes("room")),
-      timedAccuracy:maxValue(key => key.includes("timed") && key.includes("accuracy")),
-      examSessions:trueCount(key => key.includes("exam") && (key.includes("complete") || key.includes("survivor"))),
-      perfectBossRuns:trueCount(key => key.includes("perfect") && (key.includes("boss") || key.includes("calibration")) && (key.includes("complete") || key.includes("run"))),
-      resumeFinishes:trueCount(key => (key.includes("resume") || key.includes("rebuild")) && (key.includes("finish") || key.includes("complete"))),
-      totalCorrect:maxValue(key => key.includes("correcttotal") || key.includes("totalcorrect") || key.includes("correctanswerslifetime")),
+      legendaryCompletions:new Set([...telemetryLegendaryDomains, ...flaggedLegendaryDomains]).size,
+      bestStreak:globalBestStreak !== null ? globalBestStreak : maxValue(key => key.includes("maxstreak") || key.includes("beststreak") || key.includes("timedlaststreak")),
+      timedRoom:globalTimedRoom !== null ? globalTimedRoom : maxValue(key => key.includes("timed") && key.includes("room")),
+      timedAccuracy:globalTimedAccuracy !== null ? globalTimedAccuracy : maxValue(key => key.includes("timed") && key.includes("accuracy")),
+      examSessions:(
+        localStorage.getItem("microHub_examDrillCompleted") === "true"
+        || trueCount(key => key.includes("exam") && (key.includes("complete") || key.includes("survivor"))) > 0
+        || telemetry.some(record => isCompletedAchievementMode(record, "exam"))
+      ) ? 1 : 0,
+      perfectBossRuns:(
+        localStorage.getItem("microHub_perfectCalibration_complete") === "true"
+        || trueCount(key => key.includes("perfect") && (key.includes("boss") || key.includes("calibration")) && (key.includes("complete") || key.includes("run"))) > 0
+      ) ? 1 : 0,
+      resumeFinishes:(
+        localStorage.getItem("microHub_returnAndRebuild_complete") === "true"
+        || trueCount(key => (key.includes("resume") || key.includes("rebuild")) && (key.includes("finish") || key.includes("complete"))) > 0
+      ) ? 1 : 0,
+      totalCorrect:globalCorrect !== null ? globalCorrect : fallbackCorrect,
       totalArtifacts,
-      artifactsCollected
+      artifactsCollected,
+      highRollerComplete:(
+        localStorage.getItem("microHub_highRoller_complete") === "true"
+        || hasTrueFlag(key => key.includes("highroller") && key.includes("complete"))
+        || highRollerTelemetry
+      ),
+      fadelessComplete:(
+        localStorage.getItem("microHub_fadeless_complete") === "true"
+        || hasTrueFlag(key => key.includes("fadeless") && key.includes("complete"))
+        || fadelessTelemetry
+      ),
+      cartographerComplete:(
+        localStorage.getItem("microHub_cartographer_complete") === "true"
+        || hasTrueFlag(key => key.includes("cartographer") && key.includes("complete"))
+        || cartographerTelemetry
+      ),
+      quizinatorDomains:(
+        localStorage.getItem("microHub_quizinator_complete") === "true"
+        ? keys.length
+        : quizDomains.size
+      )
     };
+  }
+
+  function evaluateMicroAchievements(stats = getMicroAchievementStats()){
+    const unlockedById = new Map();
+
+    MICRO_ACHIEVEMENTS.forEach(item => {
+      if(item.id === "domainRuler") return;
+
+      const unlocked = hasPersistentMicroAchievement(item.id) || !!item.unlocked(stats);
+      if(unlocked) persistMicroAchievement(item.id);
+      unlockedById.set(item.id, unlocked);
+    });
+
+    const allOtherAchievementsUnlocked = MICRO_ACHIEVEMENTS
+      .filter(item => item.id !== "domainRuler")
+      .every(item => unlockedById.get(item.id) === true);
+
+    const domainRulerUnlocked = hasPersistentMicroAchievement("domainRuler")
+      || (
+        stats.completed >= stats.total
+        && stats.total > 0
+        && stats.artifactsCollected >= stats.totalArtifacts
+        && stats.totalArtifacts > 0
+        && allOtherAchievementsUnlocked
+      );
+
+    if(domainRulerUnlocked) persistMicroAchievement("domainRuler");
+    unlockedById.set("domainRuler", domainRulerUnlocked);
+
+    return MICRO_ACHIEVEMENTS.map(item => ({
+      ...item,
+      unlocked:unlockedById.get(item.id) === true
+    }));
   }
 
   function renderAchievements(){
     const container = document.getElementById("achievementsContent");
     if(!container) return;
+
     const stats = getMicroAchievementStats();
-    const achievements = MICRO_ACHIEVEMENTS.map(item => ({ ...item, unlocked:!!item.unlocked(stats) }));
+    const achievements = evaluateMicroAchievements(stats);
     const unlockedCount = achievements.filter(item => item.unlocked).length;
     const progressPct = Math.round((unlockedCount / achievements.length) * 100);
+
     const cards = achievements.map(item => `
       <div class="achievement-card ${item.unlocked ? "unlocked" : "locked"}" onclick="openMicroAchievementModal('${item.id}')" role="button" tabindex="0" aria-label="Open achievement ${item.title}" onkeydown="if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); openMicroAchievementModal('${item.id}'); }">
         <div class="achievement-icon" aria-hidden="true"><img src="${item.icon}" alt=""></div>
         <div><div class="achievement-name">${item.title}</div><div class="achievement-desc">${item.description}</div><div class="achievement-status">${item.unlocked ? "Unlocked" : "Locked"}</div></div>
       </div>`).join("");
-    container.innerHTML = `<div class="achievement-summary"><div class="achievement-summary-label">Achievement Progress</div><div class="achievement-summary-title">${unlockedCount}/${achievements.length}</div><div class="achievement-summary-text">${stats.completed}/${stats.total} dungeons cleared &middot; ${stats.artifactsCollected}/${stats.totalArtifacts} artifacts secured</div><div class="achievement-progress-track" aria-hidden="true"><div class="achievement-progress-fill" style="width:${progressPct}%"></div></div></div><div class="achievement-grid">${cards}</div>`;
+
+    container.innerHTML = `<div class="achievement-summary"><div class="achievement-summary-label">Achievement Progress</div><div class="achievement-summary-title">${unlockedCount}/${achievements.length}</div><div class="achievement-summary-text">${stats.completed}/${stats.total} domains cleared &middot; ${stats.artifactsCollected}/${stats.totalArtifacts} artifacts secured</div><div class="achievement-progress-track" aria-hidden="true"><div class="achievement-progress-fill" style="width:${progressPct}%"></div></div></div><div class="achievement-grid">${cards}</div>`;
   }
 
   function openMicroAchievementModal(id){
-    const item = MICRO_ACHIEVEMENTS.find(achievement => achievement.id === id);
-    if(!item) return;
     const stats = getMicroAchievementStats();
-    const unlocked = !!item.unlocked(stats);
+    const item = evaluateMicroAchievements(stats).find(achievement => achievement.id === id);
+    if(!item) return;
+
     const modal = document.getElementById("achievementModal");
     const icon = document.getElementById("achievementModalIcon");
     if(!modal || !icon) return;
+
     document.getElementById("achievementModalTitle").textContent = item.title;
-    document.getElementById("achievementModalStatus").textContent = unlocked ? "Unlocked" : "Locked";
+    document.getElementById("achievementModalStatus").textContent = item.unlocked ? "Unlocked" : "Locked";
     document.getElementById("achievementModalDescription").textContent = item.description;
     icon.innerHTML = `<img src="${item.icon}" alt="">`;
     modal.classList.add("active");
