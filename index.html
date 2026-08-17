@@ -7,6 +7,42 @@
 <meta content="Build adaptive Mastery Quests, explore polished economics games, and see how practice, repair, bridge, and mastery work together." name="description"/>
 <title>Mastery Quests | Adaptive Learning Games</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
+<style>
+/* Adaptive mastery path refinement — 2026-08-17 */
+.mastery-path-svg .mastery-arc{
+  fill:none !important;
+  stroke-width:58px !important;
+  stroke-linecap:butt !important;
+}
+.mastery-path-svg .segment-practice{ stroke:#14aaa6 !important; }
+.mastery-path-svg .segment-repair{ stroke:#50c5d0 !important; }
+.mastery-path-svg .segment-bridge{ stroke:#82d3c7 !important; }
+.mastery-path-svg .segment-master{ stroke:#4b89a7 !important; }
+
+.mastery-path-svg .mastery-node circle{
+  stroke:#082b59 !important;
+  stroke-width:5px !important;
+}
+.mastery-path-svg .mastery-node.node-practice circle{ fill:#14aaa6 !important; }
+.mastery-path-svg .mastery-node.node-repair circle{ fill:#50c5d0 !important; }
+.mastery-path-svg .mastery-node.node-bridge circle{ fill:#82d3c7 !important; }
+.mastery-path-svg .mastery-node.node-master circle{ fill:#4b89a7 !important; }
+
+.mastery-path-svg .mastery-node > text:not(.mastery-node-label-svg){
+  fill:#082b59 !important;
+  font-weight:900 !important;
+}
+.mastery-path-svg .mastery-node-label-svg{
+  fill:#ffffff !important;
+  font-size:16px !important;
+  font-weight:800 !important;
+  letter-spacing:.1px;
+  paint-order:stroke fill;
+  stroke:#082b59;
+  stroke-width:3px;
+  stroke-linejoin:round;
+}
+</style>
 <script defer="" src="/assets/js/site.js"></script>
 </head>
 <body>
@@ -51,32 +87,32 @@
 <desc id="mastery-path-desc">
                 Four centered ring segments represent Practice, Repair, Bridge, and Master as a repeating adaptive learning cycle.
               </desc>
-<circle class="mastery-ring-shadow" cx="250" cy="250" r="210"></circle>
-<path class="mastery-arc segment-practice" d="M 131.90 118.83 A 176.5 176.5 0 0 1 368.10 118.83"></path>
-<path class="mastery-arc segment-repair" d="M 381.17 131.90 A 176.5 176.5 0 0 1 381.17 368.10"></path>
-<path class="mastery-arc segment-bridge" d="M 368.10 381.17 A 176.5 176.5 0 0 1 131.90 381.17"></path>
-<path class="mastery-arc segment-master" d="M 118.83 368.10 A 176.5 176.5 0 0 1 118.83 131.90"></path>
+<circle class="mastery-ring-shadow" cx="250" cy="250" r="220"></circle>
+<path class="mastery-arc segment-practice" d="M 122.86 108.82 A 190 190 0 0 1 377.14 108.82"></path>
+<path class="mastery-arc segment-repair" d="M 391.18 122.86 A 190 190 0 0 1 391.18 377.14"></path>
+<path class="mastery-arc segment-bridge" d="M 377.14 391.18 A 190 190 0 0 1 122.86 391.18"></path>
+<path class="mastery-arc segment-master" d="M 108.82 377.14 A 190 190 0 0 1 108.82 122.86"></path>
 <circle class="mastery-center-disc" cx="250" cy="250" r="143"></circle>
 <circle class="mastery-center-outline" cx="250" cy="250" r="132"></circle>
-<g class="mastery-node" transform="translate(250 73.5)">
+<g class="mastery-node node-practice" transform="translate(250 73.5)">
 <circle r="23"></circle>
 <text dominant-baseline="central" text-anchor="middle">1</text>
-<text class="mastery-node-label-svg" text-anchor="start" x="36" y="7">Practice</text>
+<text class="mastery-node-label-svg" text-anchor="start" x="34" y="6">Practice</text>
 </g>
-<g class="mastery-node" transform="translate(426.5 250)">
+<g class="mastery-node node-repair" transform="translate(426.5 250)">
 <circle r="23"></circle>
 <text dominant-baseline="central" text-anchor="middle">2</text>
-<text class="mastery-node-label-svg" text-anchor="start" x="36" y="7">Repair</text>
+<text class="mastery-node-label-svg" text-anchor="start" x="34" y="6">Repair</text>
 </g>
-<g class="mastery-node" transform="translate(250 426.5)">
+<g class="mastery-node node-bridge" transform="translate(250 426.5)">
 <circle r="23"></circle>
 <text dominant-baseline="central" text-anchor="middle">3</text>
-<text class="mastery-node-label-svg" text-anchor="start" x="36" y="7">Bridge</text>
+<text class="mastery-node-label-svg" text-anchor="start" x="34" y="6">Bridge</text>
 </g>
-<g class="mastery-node" transform="translate(73.5 250)">
+<g class="mastery-node node-master" transform="translate(73.5 250)">
 <circle r="23"></circle>
 <text dominant-baseline="central" text-anchor="middle">4</text>
-<text class="mastery-node-label-svg" text-anchor="end" x="-36" y="7">Master</text>
+<text class="mastery-node-label-svg" text-anchor="end" x="-34" y="6">Master</text>
 </g>
 <text class="mastery-center-title-svg" text-anchor="middle" x="250" y="248">
                 Adaptive
