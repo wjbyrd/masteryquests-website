@@ -10183,7 +10183,7 @@ function isTimedModeTerminal(){
     return runEnding || gameMode === "timed-complete" || gameMode === "timed-ended-early";
 }
 function isBossRoomForMode(r){
-    if(["exam","timed","quiz","unlimited","fadingFortune","riskReward"].includes(gameMode)) return false;
+    if(["exam","timed","quiz","unlimited","trialGraph","fadingFortune","riskReward"].includes(gameMode)) return false;
     if(gameMode === "bossRush") return true;
     return r===10 || r===20 || r===30;
 }
