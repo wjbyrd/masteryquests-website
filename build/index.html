@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Build an economics Mastery Quest, start from the blank faculty template, or find the deployment, validation, and conversion tools you need." name="description"/>
+<meta content="Build an economics Mastery Quest, start from the blank faculty template, and deploy a self-contained game with hashed correct-answer representations, validation, and LMS-ready tools." name="description"/>
 <title>Build a Quest | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/site.js"></script>
@@ -121,7 +121,7 @@
 <h2>Faculty Concept Composer</h2>
 <p>
                 Select concepts by course area, review concept-readiness guidance, choose supported
-                modes, confirm checkpoint coverage, and generate a self-contained Mastery Quest.
+                modes, confirm checkpoint coverage, and generate a self-contained Mastery Quest. Published question records use hashed correct-answer representations rather than plain numeric answer indexes.
               </p>
 </div>
 <div class="resource-actions">
@@ -145,7 +145,7 @@
 <article class="build-step-card">
 <span class="feature-number">03</span>
 <h3>Generate the game</h3>
-<p>Download a self-contained HTML game plus a recipe that can be reopened later.</p>
+<p>Download a self-contained HTML game plus a recipe that can be reopened later. The published game keeps correct answers hash-protected rather than exposing a plain option index.</p>
 </article>
 </div>
 <div class="composer-frame-shell">
@@ -203,12 +203,19 @@
 <p>
                 Host the generated HTML file at a public HTTPS URL, test that URL, and then link
                 or embed the game in your LMS. Graphs are embedded and Concept Reviews open from the
-                Mastery Quests web library when recommended, so no sibling asset or review folder is required.
+                Mastery Quests web library when recommended, so no sibling asset or review folder is required. Published answers are stored as hashes rather than plain answer indexes, adding practical answer-key hardening without requiring server-side hosting.
               </p>
 </div>
 <a class="button button-primary" href="/how-to/">Open Hosting + LMS Guide</a>
 </div>
 <div class="resource-grid">
+
+<article class="resource-card">
+<p class="resource-type">Deployment hardening</p>
+<h3>Hashed answers, no backend required</h3>
+<p>Generated games do not publish correct answers as plain numeric option indexes. LMS iframe deployment adds additional inspection friction while keeping the activity portable. This is practical answer-key hardening, not a substitute for server-side secure-exam infrastructure.</p>
+<a class="text-link" href="/how-to/#answer-hardening">Read how the hardening works <span aria-hidden="true">→</span></a>
+</article>
 <article class="resource-card">
 <p class="resource-type">Faculty guide</p>
 <h3>Implementation Guide</h3>

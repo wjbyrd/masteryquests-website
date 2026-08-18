@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="See current Mastery Quests evidence: the Faculty Build Composer, ten practice modes, graph and calculation questions, Mastery Report 2.0, and targeted one-page Concept Reviews." name="description"/>
+<meta content="See current Mastery Quests evidence: the Faculty Build Composer, ten practice modes, graph and calculation questions, practical answer-key hardening, Mastery Report 2.0, and targeted one-page Concept Reviews." name="description"/>
 <title>See It in Action | Mastery Quests</title>
 <link href="/assets/css/site.css?v=20260813" rel="stylesheet"/>
 <script defer="" src="/assets/js/site.js"></script>
@@ -118,11 +118,42 @@
 <main id="main-content">
 <section class="page-hero page-hero-dark evidence-page-hero"><div class="site-container page-hero-grid"><div><p class="eyebrow">Current system evidence</p><h1>See the complete mastery loop.</h1><p class="page-hero-lead">Faculty choose the content and practice modes. Students work through real graphs, calculations, and applied questions. Mastery Report 2.0 identifies the weak signal, opens a targeted Concept Review, and points students back to practice.</p></div><div class="evidence-hero-note"><strong>Evidence, not a feature list.</strong><p>Every screen below comes from the current Faculty Build Composer, its generated ten-mode game, or the current one-page Concept Review library.</p></div></div></section>
 <section aria-label="Mastery Quests learning loop" class="evidence-loop-section"><div class="site-container"><ol class="evidence-loop"><li><strong>Play</strong><span>Use the selected mode</span></li><li><strong>Diagnose</strong><span>Read the mastery evidence</span></li><li><strong>Review</strong><span>Open the matched concept sheet</span></li><li><strong>Practice</strong><span>Repair the weak signal</span></li><li><strong>Master</strong><span>Return with stronger evidence</span></li></ol></div></section>
-<nav aria-label="Jump to evidence section" class="evidence-jump-nav"><div class="site-container evidence-jump-inner"><span class="evidence-jump-label">Jump to:</span><a href="#build">Build</a><a href="#modes">Ten modes</a><a href="#questions">Questions</a><a href="#mastery">Mastery Report</a><a href="#results-csv">Results CSV</a><a href="#concept-reviews">Concept Reviews</a><a href="#practice">Return to practice</a></div></nav>
+<nav aria-label="Jump to evidence section" class="evidence-jump-nav"><div class="site-container evidence-jump-inner"><span class="evidence-jump-label">Jump to:</span><a href="#build">Build</a><a href="#deployment-hardening">Deployment hardening</a><a href="#modes">Ten modes</a><a href="#questions">Questions</a><a href="#mastery">Mastery Report</a><a href="#results-csv">Results CSV</a><a href="#concept-reviews">Concept Reviews</a><a href="#practice">Return to practice</a></div></nav>
 <section class="section evidence-section" id="build"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Build the experience</p><h2>Faculty control the content before students begin.</h2><p>The Composer now separates General Economics, Microeconomics, and Macroeconomics, then applies the matching discipline accent to the concept inventory. Faculty can start from a course-area combination or select concepts directly.</p></div><div class="evidence-grid evidence-grid-two">
 <article class="evidence-card evidence-card-feature"><a aria-label="Open full-size screenshot: Microeconomics course-area controls" class="evidence-shot evidence-shot-feature" href="/assets/images/evidence/composer-micro-overview.webp" rel="noopener" target="_blank"><img alt="Faculty Build Composer with Microeconomics selected in the course-area menu and Micro starter combinations displayed." src="/assets/images/evidence/composer-micro-overview.webp"/></a><div class="evidence-card-body"><h3>Choose a course area</h3><p>Microeconomics is selected, so only Micro starter combinations and concept cards belong in the working view. The selection sits above the faculty's granular concept controls.</p><a class="evidence-full-link" href="/assets/images/evidence/composer-micro-overview.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
 <article class="evidence-card evidence-card-feature"><a aria-label="Open full-size screenshot: Macroeconomics concept cards" class="evidence-shot evidence-shot-feature" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank"><img alt="Macroeconomics Composer inventory with Aggregate Demand selected and burgundy discipline accents on Macro concept cards." loading="lazy" src="/assets/images/evidence/composer-macro-concepts.webp"/></a><div class="evidence-card-body"><h3>Select the exact concepts</h3><p>Aggregate Demand is selected while related Macro concepts remain available. The consistent burgundy accent makes the active discipline visually explicit.</p><a class="evidence-full-link" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
 </div></div></section>
+
+<section class="section section-light evidence-section" id="deployment-hardening">
+<div class="site-container">
+<div class="resource-group-heading evidence-heading">
+<p class="eyebrow">Portable deployment</p>
+<h2>Self-contained does not mean casually exposed.</h2>
+<p>A Composer-generated Mastery Quest can be published as one HTML file and embedded in an LMS without a backend server. Published questions use hashed correct-answer representations rather than plain numeric answer indexes. Like any client-side application, the game remains technically inspectable, but the practical path to a live question runs through the LMS source tree, iframe execution context, adaptive runtime state, and hashed answer verification instead of an exposed answer key.</p>
+</div>
+<div class="evidence-grid evidence-grid-three">
+<article class="evidence-card">
+<div class="evidence-card-body">
+<h3>Answer-key hardening</h3>
+<p>Published question records do not expose the correct choice as a simple <code>a: 2</code>-style index. The game verifies the selected answer against a stored hash.</p>
+</div>
+</article>
+<article class="evidence-card">
+<div class="evidence-card-body">
+<h3>Practical inspection friction</h3>
+<p>When the game runs inside an LMS iframe, browser developer tools first expose the LMS application, its source tree, and frame boundaries. Reaching the active Mastery Quest question requires deliberate runtime inspection rather than casual source browsing.</p>
+</div>
+</article>
+<article class="evidence-card">
+<div class="evidence-card-body">
+<h3>A clear security boundary</h3>
+<p>This is practical answer-key hardening, not server-side exam security. A determined technical user can still inspect client-side software. The goal is to remove the easy answer-key shortcut while preserving a portable, faculty-controlled deployment model.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
 <section class="section evidence-section" id="modes"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Choose how students practice</p><h2>Ten ways to play.</h2><p>Faculty enable the modes that fit the assignment. The mode menu proves the full set; the concise guide explains what changes from one run to the next.</p></div>
 <article class="evidence-card evidence-card-feature evidence-card-full"><a aria-label="Open full-size screenshot: all ten Mastery Quests modes" class="evidence-shot evidence-shot-mode-menu" href="/assets/images/evidence/ten-mode-selection.webp" rel="noopener" target="_blank"><img alt="Mode-selection screen showing Standard Campaign, Timed Trial, Exam Drill, Quiz, Unlimited Practice, Legendary Mode, Score Attack, Trial by Graph, Fading Fortune, and Risk and Reward." loading="lazy" src="/assets/images/evidence/ten-mode-selection.webp"/></a><div class="evidence-card-body"><h3>One menu, ten practice goals</h3><p>The generated game displays only the modes enabled by the instructor. This current build enables all ten, including the three newest mechanics.</p><a class="evidence-full-link" href="/assets/images/evidence/ten-mode-selection.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
 <div aria-label="Descriptions of all ten Mastery Quests modes" class="mode-copy-grid">

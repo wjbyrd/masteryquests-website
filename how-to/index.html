@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Understand how Mastery Quests adaptive selection, remediation, limited-run sampling, and mastery evidence work, then publish a game with GitHub Pages and your LMS." name="description"/>
+<meta content="Understand how Mastery Quests adaptive selection, remediation, limited-run sampling, mastery evidence, and client-side answer-key hardening work, then publish a game with GitHub Pages and your LMS." name="description"/>
 <title>How To | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/site.js"></script>
@@ -204,6 +204,7 @@
       </p>
 <div class="howto-jump">
 <a href="#adaptive-engine">Adaptive engine</a>
+<a href="#answer-hardening">Answer-key hardening</a>
 <a href="#prepare">Prepare the file</a>
 <a href="#repository">Create the repository</a>
 <a href="#pages">Turn on Pages</a>
@@ -251,6 +252,36 @@
 </div>
 <div class="howto-note"><strong>Availability varies by game.</strong> A mode is shown only when the game and its question bank support it. Trial by Graph, for example, requires enough questions whose graph is genuinely necessary to answer the item.</div>
 </div></section>
+
+<section class="section" id="answer-hardening">
+<div class="site-container">
+<div class="section-heading">
+<p class="eyebrow">Portable answer-key hardening</p>
+<h2>What the published game exposes—and what it does not.</h2>
+<p>Mastery Quests is designed to stay portable: faculty can publish one generated HTML file without standing up a backend server. That portability does not require publishing a plain answer key. Correct answers in published question records are stored as hashes rather than numeric option indexes.</p>
+</div>
+<div class="adaptive-rule-grid">
+<article class="adaptive-rule-card">
+<h3>Hashed published answers</h3>
+<p>A published question does not need to expose a plain correct-choice field such as <code>a: 2</code>. The game compares the learner's selected answer with a stored hash during verification.</p>
+</article>
+<article class="adaptive-rule-card">
+<h3>LMS iframe friction</h3>
+<p>When a Quest is embedded in an LMS, developer tools still exist, but the student first encounters the LMS application, its source tree, and separate frame contexts. Inspecting the active game state requires deliberate navigation into the Quest's runtime rather than simply opening page source.</p>
+</article>
+<article class="adaptive-rule-card">
+<h3>No backend required</h3>
+<p>This approach keeps deployment simple. Faculty can host the generated file at a public HTTPS URL and embed it in an LMS without maintaining accounts, APIs, databases, or a server-side answer service.</p>
+</article>
+<article class="adaptive-rule-card">
+<h3>Know the limit</h3>
+<p>This is answer-key hardening and inspection friction, not secure-exam infrastructure. Any client-side application can be reverse engineered by a sufficiently determined technical user. Use server-side assessment tools when concealed answer verification is a formal security requirement.</p>
+</article>
+</div>
+<div class="howto-note"><strong>Practical takeaway:</strong> for ordinary practice, review, homework, and instructor-directed quiz workflows, the generated file avoids the easiest developer-tools shortcut while preserving the one-file deployment model.</div>
+</div>
+</section>
+
 <section class="section section-light" id="prepare">
 <div class="site-container">
 <div class="section-heading">
@@ -415,7 +446,7 @@
   allowfullscreen&gt;
 &lt;/iframe&gt;</pre>
 <div class="howto-note">
-            LMS security policies vary. If your institution blocks the iframe, use the same public HTTPS URL as an external link instead.
+            LMS security policies vary. If your institution blocks the iframe, use the same public HTTPS URL as an external link instead. Embedding the Quest in an iframe also adds practical inspection friction, but the iframe should not be treated as a formal security boundary.
           </div>
 </div>
 </article>
