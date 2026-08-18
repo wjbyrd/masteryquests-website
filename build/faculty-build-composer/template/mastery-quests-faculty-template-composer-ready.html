@@ -2889,13 +2889,13 @@ Respect structure strictly.
 </button>
 
 <button class="mode-card" data-mode="exam" onclick="startSelectedMode('exam')" aria-label="Exam Drill. No checkpoints, no milestones, and no campaign progress. Just adaptive practice.">
-  <div class="mode-symbol" aria-hidden="true">✓</div>
+  <div class="mode-symbol" aria-hidden="true">✎</div>
  <span class="mode-card-title">Exam Drill</span>
   <span class="mode-card-text">No checkpoints. No milestones. No campaign progress. Just adaptive practice.</span>
 </button>
 
 <button class="mode-card" data-mode="quiz" onclick="startSelectedMode('quiz')" aria-label="Quiz. Fixed-length classroom quiz using the concepts selected by your instructor. Choose from one to fifteen questions before launching.">
-  <div class="mode-symbol" aria-hidden="true">?</div>
+  <div class="mode-symbol" aria-hidden="true">❔</div>
   <span class="mode-card-title">Quiz</span>
   <span class="mode-card-text">Choose 1–15 questions. The concepts are already set by your instructor.</span>
 </button>
@@ -2907,7 +2907,7 @@ Respect structure strictly.
 </button>
 
 <button class="mode-card" data-mode="legendary" onclick="startSelectedMode('legendary')" aria-label="Legendary Mode. Full 30-room campaign using only mastery-level multi-step questions with close answer choices.">
-  <div class="mode-symbol" aria-hidden="true">◆</div>
+  <div class="mode-symbol" aria-hidden="true">♔</div>
   <span class="mode-card-title">Legendary Mode</span>
   <span class="mode-card-text">Full campaign. Mastery-level questions. Checkpoints remain. No soft landing.</span>
 </button>
@@ -2916,25 +2916,25 @@ Respect structure strictly.
      New arcade-style scoring mode. Uses the normal 30-room path and bosses,
      but does NOT count as Standard Campaign campaign progress. -->
 <button class="mode-card" data-mode="score" onclick="startSelectedMode('score')" aria-label="Score Attack. Build points through correct answers, streaks, and speed. Misses subtract points and rapid guessing is punished.">
-  <div class="mode-symbol" aria-hidden="true">★</div>
+  <div class="mode-symbol" aria-hidden="true">⍟</div>
   <span class="mode-card-title">Score Attack</span>
   <span class="mode-card-text">Rack up points with correct answers, streaks, and speed. Misses cost you.</span>
 </button>
 
 <button class="mode-card" data-mode="trialGraph" onclick="startSelectedMode('trialGraph')" aria-label="Trial by Graph. Fixed-length graph-only run using questions where the graph is required. Choose ten, fifteen, or twenty questions when available.">
-  <div class="mode-symbol" aria-hidden="true">▧</div>
+  <div class="mode-symbol" aria-hidden="true">▦</div>
   <span class="mode-card-title">Trial by Graph</span>
   <span class="mode-card-text">Every question requires the graph. Choose 10, 15, or 20 when the selected content has enough graph-safe questions.</span>
 </button>
 
 <button class="mode-card" data-mode="fadingFortune" onclick="startSelectedMode('fadingFortune')" aria-label="Fading Fortune. Every question starts worth one hundred points. Incorrect choices disappear over time, reducing the available value to seventy-five, fifty, then twenty-five points.">
-  <div class="mode-symbol" aria-hidden="true">◫</div>
+  <div class="mode-symbol" aria-hidden="true">◕</div>
   <span class="mode-card-title">Fading Fortune</span>
   <span class="mode-card-text">Answer early for full value or wait as wrong choices disappear. Each fade costs 25 points.</span>
 </button>
 
 <button class="mode-card" data-mode="riskReward" onclick="startSelectedMode('riskReward')" aria-label="Risk and Reward. Choose how much of your bankroll to risk before seeing each question. Correct answers win the wager. Wrong answers lose it.">
-  <div class="mode-symbol" aria-hidden="true">♠</div>
+  <div class="mode-symbol" aria-hidden="true">⛁</div>
   <span class="mode-card-title">Risk &amp; Reward</span>
   <span class="mode-card-text">Risk 10%, 25%, 50%, or go All In before the question is revealed. Correct wins the wager. Wrong loses it.</span>
 </button>
@@ -6844,19 +6844,19 @@ function initializeRunForMode(mode){
             : gameMode === "exam"
                 ? "✎ Exam Drill Active"
                 : gameMode === "quiz"
-                    ? `? Quiz Active · ${quizQuestionTarget} Questions`
+                    ? `❔ Quiz Active · ${quizQuestionTarget} Questions`
                     : gameMode === "trialGraph"
-                        ? `▧ Trial by Graph · ${trialGraphQuestionTarget} Questions`
+                        ? `▦ Trial by Graph · ${trialGraphQuestionTarget} Questions`
                     : gameMode === "fadingFortune"
-                        ? `◫ Fading Fortune · ${fadingFortuneQuestionTarget} Questions`
+                        ? `◕ Fading Fortune · ${fadingFortuneQuestionTarget} Questions`
                     : gameMode === "riskReward"
-                        ? `♠ Risk & Reward · ${riskRewardQuestionTarget} Questions`
+                        ? `⛁ Risk & Reward · ${riskRewardQuestionTarget} Questions`
                     : gameMode === "unlimited"
                         ? "∞ Unlimited Practice Active"
                     : gameMode === "score"
-                    ? "🏆 Score Attack Active"
+                    ? "⍟ Score Attack Active"
                     : gameMode === "legendary"
-                        ? "🔥 Legendary Mode Active"
+                        ? "♔ Legendary Mode Active"
                         : gameMode === "bossRush"
                             ? "⚔ Boss Rush Active"
             : "💾 Local progress saved";
