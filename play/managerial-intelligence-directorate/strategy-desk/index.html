@@ -5108,6 +5108,78 @@ function pickRemediationFromBank(poolName, objectiveKey, tag, purpose = "confirm
     return picked;
 }
 
+
+// =============================================
+// REMEDIATION ANTI-REPETITION — 2026-08-19
+// Exhaust eligible repair/bridge items before reuse.
+// After exhaustion, prefer the least-recently-seen eligible item.
+// =============================================
+function getRemediationQuestionIdentity(question){
+    const id = question?.id ?? question?.questionId ?? null;
+    return id === undefined || id === null ? null : String(id);
+}
+
+function getProtectedRemediationCandidates(candidates, stage){
+    if(!Array.isArray(candidates) || candidates.length <= 1) return candidates || [];
+    if(stage !== "repair" && stage !== "bridge") return candidates;
+
+    if(!Array.isArray(questionHistory[stage])){
+        questionHistory[stage] = [];
+    }
+
+    const history = questionHistory[stage].map(value => String(value));
+    if(history.length === 0) return candidates;
+
+    // First exhaust every eligible question not yet seen in this stage history.
+    const unseen = candidates.filter(question => {
+        const id = getRemediationQuestionIdentity(question);
+        return id === null || !history.includes(id);
+    });
+
+    if(unseen.length > 0){
+        return unseen;
+    }
+
+    // Every eligible item has been seen. Reopen the least-recently-seen item(s).
+    let oldestIndex = Infinity;
+    const indexed = candidates.map(question => {
+        const id = getRemediationQuestionIdentity(question);
+        const lastIndex = id === null ? -1 : history.lastIndexOf(id);
+        if(lastIndex < oldestIndex) oldestIndex = lastIndex;
+        return { question, lastIndex };
+    });
+
+    return indexed
+        .filter(item => item.lastIndex === oldestIndex)
+        .map(item => item.question);
+}
+
+function rememberRemediationQuestion(stage, question){
+    if(!question || (stage !== "repair" && stage !== "bridge")) return question;
+
+    if(!Array.isArray(questionHistory[stage])){
+        questionHistory[stage] = [];
+    }
+
+    const id = getRemediationQuestionIdentity(question);
+    if(id !== null){
+        questionHistory[stage].push(id);
+        if(questionHistory[stage].length > 120){
+            questionHistory[stage] = questionHistory[stage].slice(-120);
+        }
+    }
+
+    return question;
+}
+
+function pickProtectedRemediationQuestion(stage, candidates, options = {}){
+    const protectedCandidates = getProtectedRemediationCandidates(candidates, stage);
+    if(!protectedCandidates.length) return null;
+
+    const picked = weightedPick(protectedCandidates, options);
+    return rememberRemediationQuestion(stage, picked);
+}
+
 function getRemediationQuestion(state){
     if(!state || !state.active) return null;
 
@@ -5160,7 +5232,7 @@ function getRemediationQuestion(state){
         }
 
         if(repairCandidates.length > 0){
-            return weightedPick(repairCandidates, {
+            return pickProtectedRemediationQuestion(state.stage, repairCandidates, {
                 mode: "support",
                 purpose: "repair"
             });
@@ -5199,7 +5271,7 @@ function getRemediationQuestion(state){
         }
 
         if(bridgeCandidates.length > 0){
-            return weightedPick(bridgeCandidates, {
+            return pickProtectedRemediationQuestion(state.stage, bridgeCandidates, {
                 mode: "support",
                 purpose: "confirm"
             });

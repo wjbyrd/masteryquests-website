@@ -3104,7 +3104,8 @@ let remediationState = {
     sourceType: null,
     returnRoom: null,
     originQuestionId: null,
-    careless: false
+    careless: false,
+    remediationHistory: { repair: [], bridge: [] }
 };
 let conceptMemory = {};
 let masteryState = { byTag: {}, byObjective: {}, bySkill: {}, recent: [] };
@@ -4236,7 +4237,8 @@ function resetRemediationState(){
         sourceType: null,
         returnRoom: null,
         originQuestionId: null,
-        careless: false
+        careless: false,
+        remediationHistory: { repair: [], bridge: [] }
     };
     detourActive = false;
     detourReturnRoom = null;
@@ -4266,7 +4268,8 @@ function planRemediation(question, responseTime){
         originQuestionId: question.id || null,
         careless: carelessMiss,
         repeatedObjectiveMiss,
-        slowStruggle
+        slowStruggle,
+        remediationHistory: { repair: [], bridge: [] }
     };
 }
 
@@ -4325,6 +4328,57 @@ function getRetestPoolName(){
     return "elite";
 }
 
+// Remediation anti-repeat guard.
+// Repair and bridge pools exhaust eligible alternatives before reusing an item.
+// Once a pool is exhausted, prefer the least-recently-seen eligible question.
+function getRemediationHistory(state, stage){
+    if(!state) return [];
+    if(!state.remediationHistory || typeof state.remediationHistory !== "object"){
+        state.remediationHistory = { repair: [], bridge: [] };
+    }
+    if(!Array.isArray(state.remediationHistory[stage])){
+        state.remediationHistory[stage] = [];
+    }
+    return state.remediationHistory[stage];
+}
+
+function rememberRemediationQuestion(state, stage, question){
+    if(!state || !stage || !question || question.id === undefined || question.id === null) return;
+    const history = getRemediationHistory(state, stage);
+    history.push(question.id);
+    if(history.length > 30) history.shift();
+}
+
+function pickRemediationAuxiliaryQuestion(candidates, state, stage, options = {}){
+    const uniqueCandidates = dedupeQuestionsById(candidates || []);
+    if(uniqueCandidates.length === 0) return null;
+
+    const history = getRemediationHistory(state, stage);
+    const seen = new Set(history);
+    let eligible = uniqueCandidates.filter(question => !seen.has(question.id));
+
+    if(eligible.length === 0){
+        let oldestPosition = Infinity;
+        let leastRecent = [];
+
+        uniqueCandidates.forEach(question => {
+            const position = history.lastIndexOf(question.id);
+            if(position < oldestPosition){
+                oldestPosition = position;
+                leastRecent = [question];
+            } else if(position === oldestPosition){
+                leastRecent.push(question);
+            }
+        });
+
+        eligible = leastRecent.length > 0 ? leastRecent : uniqueCandidates;
+    }
+
+    const picked = weightedPick(eligible, options);
+    rememberRemediationQuestion(state, stage, picked);
+    return picked;
+}
+
 function pickRemediationFromBank(poolName, objectiveKey, tag, purpose = "confirm", skillKey = null){
     const pool = questionBanks[poolName] || [];
     const recentIds = (questionHistory[poolName] || []).slice(-10);
@@ -4372,7 +4426,7 @@ function getRemediationQuestion(state){
             );
 
             if(skillRepairCandidates.length > 0){
-                return weightedPick(skillRepairCandidates, {
+                return pickRemediationAuxiliaryQuestion(skillRepairCandidates, state, "repair", {
                     mode: "support",
                     purpose: "repair"
                 });
@@ -4391,7 +4445,7 @@ function getRemediationQuestion(state){
         );
 
         if(repairCandidates.length > 0){
-            return weightedPick(repairCandidates, {
+            return pickRemediationAuxiliaryQuestion(repairCandidates, state, "repair", {
                 mode: "support",
                 purpose: "repair"
             });
@@ -4410,7 +4464,7 @@ function getRemediationQuestion(state){
             );
 
             if(skillBridgeCandidates.length > 0){
-                return weightedPick(skillBridgeCandidates, {
+                return pickRemediationAuxiliaryQuestion(skillBridgeCandidates, state, "bridge", {
                     mode: "support",
                     purpose: "confirm"
                 });
@@ -4431,7 +4485,7 @@ function getRemediationQuestion(state){
         );
 
         if(bridgeCandidates.length > 0){
-            return weightedPick(bridgeCandidates, {
+            return pickRemediationAuxiliaryQuestion(bridgeCandidates, state, "bridge", {
                 mode: "support",
                 purpose: "confirm"
             });
