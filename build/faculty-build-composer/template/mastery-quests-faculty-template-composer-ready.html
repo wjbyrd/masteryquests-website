@@ -3515,7 +3515,11 @@ let remediationState = {
     sourceType: null,
     returnRoom: null,
     originQuestionId: null,
-    careless: false
+    careless: false,
+    history: {
+        repair: [],
+        bridge: []
+    }
 };
 let conceptMemory = {};
 let masteryState = { byTag: {}, byObjective: {}, bySkill: {}, byDifficulty: {}, recent: [], attemptEvidence: [] };
@@ -4860,7 +4864,11 @@ function resetRemediationState(){
         sourceType: null,
         returnRoom: null,
         originQuestionId: null,
-        careless: false
+        careless: false,
+        history: {
+            repair: [],
+            bridge: []
+        }
     };
     detourActive = false;
     detourReturnRoom = null;
@@ -4891,7 +4899,11 @@ function planRemediation(question, responseTime){
         originQuestionId: question.id || null,
         careless: carelessMiss,
         repeatedObjectiveMiss,
-        slowStruggle
+        slowStruggle,
+        history: {
+            repair: [],
+            bridge: []
+        }
     };
 }
 
@@ -4919,6 +4931,69 @@ function getRecoveryLine(stage){
   }
 
   return `Recovery confirmed. Return to ${FACULTY_COMPOSITION_CONFIG.title}.`;
+}
+
+// =============================================
+// REMEDIATION ANTI-REPETITION
+// Repair and bridge items exhaust eligible alternatives before reuse.
+// Once a pool is exhausted, prefer the least-recently-seen eligible item.
+// A one-item pool may repeat because no alternative exists.
+// =============================================
+function ensureRemediationHistory(state){
+    if(!state || typeof state !== "object") return { repair: [], bridge: [] };
+
+    if(!state.history || typeof state.history !== "object"){
+        state.history = { repair: [], bridge: [] };
+    }
+
+    if(!Array.isArray(state.history.repair)) state.history.repair = [];
+    if(!Array.isArray(state.history.bridge)) state.history.bridge = [];
+
+    return state.history;
+}
+
+function getRemediationSelectionPool(candidates, state, stage){
+    const pool = deduplicateQuestions(candidates || []);
+    if(pool.length <= 1 || !["repair", "bridge"].includes(stage)) return pool;
+
+    const history = ensureRemediationHistory(state);
+    const stageHistory = history[stage];
+    const seen = new Set(stageHistory.map(String));
+
+    const unseen = pool.filter(question =>
+        !seen.has(String(getStableQuestionIdentityValue(question)))
+    );
+
+    if(unseen.length > 0) return unseen;
+
+    const recency = new Map(stageHistory.map((identity, index) => [String(identity), index]));
+    let oldestIndex = Infinity;
+
+    pool.forEach(question => {
+        const identity = String(getStableQuestionIdentityValue(question));
+        const index = recency.has(identity) ? recency.get(identity) : -1;
+        if(index < oldestIndex) oldestIndex = index;
+    });
+
+    const leastRecentlySeen = pool.filter(question => {
+        const identity = String(getStableQuestionIdentityValue(question));
+        const index = recency.has(identity) ? recency.get(identity) : -1;
+        return index === oldestIndex;
+    });
+
+    return leastRecentlySeen.length > 0 ? leastRecentlySeen : pool;
+}
+
+function rememberRemediationSelection(state, stage, question){
+    if(!state || !question || !["repair", "bridge"].includes(stage)) return;
+
+    const history = ensureRemediationHistory(state);
+    const identity = String(getStableQuestionIdentityValue(question));
+    const stageHistory = history[stage];
+    const existingIndex = stageHistory.indexOf(identity);
+
+    if(existingIndex >= 0) stageHistory.splice(existingIndex, 1);
+    stageHistory.push(identity);
 }
 
 function getQuestionsMatchingNeed(pool, objectiveKey, tag, excludeIds = [], skillKey = null){
@@ -5045,10 +5120,17 @@ function getRemediationQuestion(state){
         }
 
         if(repairCandidates.length > 0){
-            return weightedPick(repairCandidates, {
+            const selectionPool = getRemediationSelectionPool(
+                repairCandidates,
+                state,
+                "repair"
+            );
+            const picked = weightedPick(selectionPool, {
                 mode: "support",
                 purpose: "repair"
             });
+            rememberRemediationSelection(state, "repair", picked);
+            return picked;
         }
     }
 
@@ -5084,10 +5166,17 @@ function getRemediationQuestion(state){
         }
 
         if(bridgeCandidates.length > 0){
-            return weightedPick(bridgeCandidates, {
+            const selectionPool = getRemediationSelectionPool(
+                bridgeCandidates,
+                state,
+                "bridge"
+            );
+            const picked = weightedPick(selectionPool, {
                 mode: "support",
                 purpose: "confirm"
             });
+            rememberRemediationSelection(state, "bridge", picked);
+            return picked;
         }
     }
 

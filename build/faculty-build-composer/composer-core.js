@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.2n';
+const COMPOSER_VERSION = '4.5s.2o';
 const RECIPE_SCHEMA_VERSION = '1.2.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score', 'trialGraph', 'fadingFortune', 'riskReward'];
 const POOL_MINIMUMS = {
@@ -1355,7 +1355,7 @@ function canonicalRecipe(inputRecipe, library){
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5s.2n-limited-run-adaptive'
+    templateVersion: 'phase4.5s.2o-remediation-dedup'
   };
 }
 
