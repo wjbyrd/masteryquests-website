@@ -2593,6 +2593,15 @@ body.game-active #soundToggle {
 }
 
 </style>
+
+<style id="targetedMasteryRepairStyles">
+.practice-mode-controls{flex-wrap:wrap;gap:8px;align-items:center}
+.targeted-repair-indicator{display:none;max-width:520px;padding:8px 12px;border:1px solid rgba(247,217,130,.55);border-radius:8px;background:rgba(4,16,31,.94);color:#f7d982;font-size:12px;font-weight:800;line-height:1.35;text-align:center}
+.targeted-repair-indicator span{display:block;color:rgba(255,255,255,.8);font-size:11px;font-weight:500}
+.repair-weak-areas-btn{order:-1;border-color:rgba(74,222,128,.75)!important;box-shadow:0 0 18px rgba(74,222,128,.22)!important}
+.target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
+@media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
+</style>
 </head>
 
 <!-- =========================================
@@ -4638,6 +4647,7 @@ function weightedPick(pool, options = {}){
         }
 
         w = Math.min(w, mode === "challenge" ? 5.5 : 4.5);
+        w += getRepairPriorityBonus(q);
         totalWeight += w;
         return { q, w };
     });
@@ -8505,6 +8515,320 @@ function sendGameData(data = {}){
 // Most issues come from bad question formatting.
 //
 // =====================================================
+
+
+
+// TARGETED MASTERY REPAIR — PHASE 1
+const targetedRepairState = {
+    active: false,
+    sourceMode: null,
+    objectiveKeys: [],
+    skillKeys: [],
+    tagKeys: [],
+    typeKeys: [],
+    scoredAttempts: 0
+  };
+
+  function normalizeRepairKey(value) {
+    return String(value == null ? '' : value).trim().toLowerCase().slice(0, 120);
+  }
+
+  function uniqueRepairKeys(values) {
+    return [...new Set((Array.isArray(values) ? values : []).map(normalizeRepairKey).filter(Boolean))].slice(0, 16);
+  }
+
+  function sanitizeRepairTargets(targets) {
+    const clean = {
+      objectiveKeys: uniqueRepairKeys(targets && targets.objectiveKeys),
+      skillKeys: uniqueRepairKeys(targets && targets.skillKeys),
+      tagKeys: uniqueRepairKeys(targets && targets.tagKeys),
+      typeKeys: uniqueRepairKeys(targets && targets.typeKeys)
+    };
+    clean.hasTargets = !!(clean.objectiveKeys.length || clean.skillKeys.length || clean.tagKeys.length || clean.typeKeys.length);
+    return clean;
+  }
+
+  function clearTargetedRepairState() {
+    targetedRepairState.active = false;
+    targetedRepairState.sourceMode = null;
+    targetedRepairState.objectiveKeys = [];
+    targetedRepairState.skillKeys = [];
+    targetedRepairState.tagKeys = [];
+    targetedRepairState.typeKeys = [];
+    targetedRepairState.scoredAttempts = 0;
+    updateTargetedRepairIndicator();
+  }
+
+  function questionMatchesRepairObjective(question) {
+    const value = typeof inferObjective === 'function' ? inferObjective(question) : question && question.objective;
+    return targetedRepairState.objectiveKeys.includes(normalizeRepairKey(value));
+  }
+
+  function questionMatchesRepairSkill(question) {
+    const value = typeof getSkillKey === 'function'
+      ? getSkillKey(question)
+      : question && (question.primarySkill || question.repairSkill || question.skill);
+    return targetedRepairState.skillKeys.includes(normalizeRepairKey(value));
+  }
+
+  function questionMatchesRepairTag(question) {
+    return targetedRepairState.tagKeys.includes(normalizeRepairKey(question && question.tag));
+  }
+
+  function questionMatchesRepairType(question) {
+    return targetedRepairState.typeKeys.includes(normalizeRepairKey(question && question.type));
+  }
+
+  function getRepairPriorityBonus(question) {
+    if (!targetedRepairState.active) return 0;
+    let bonus = 0;
+    if (questionMatchesRepairObjective(question)) bonus += 8;
+    if (questionMatchesRepairSkill(question)) bonus += 5;
+    if (questionMatchesRepairTag(question)) bonus += 4;
+    if (questionMatchesRepairType(question)) bonus += 1.5;
+    const attempts = targetedRepairState.scoredAttempts;
+    const decay = attempts >= 16 ? 0.3 : attempts >= 8 ? 0.6 : 1;
+    return bonus * decay;
+  }
+
+  function actionableRepairEntries(entries) {
+    return (Array.isArray(entries) ? entries : []).filter(entry =>
+      entry && Number(entry.attempts) >= 2 && Number(entry.accuracy) < 0.85
+    );
+  }
+
+  function getRepairTargetsFromReport(report) {
+    const targets = sanitizeRepairTargets({
+      objectiveKeys: actionableRepairEntries(report && report.weakestObjectives).map(entry => entry.key),
+      skillKeys: actionableRepairEntries(report && report.weakestSkills).map(entry => entry.key),
+      tagKeys: actionableRepairEntries(report && report.weakestConcepts).map(entry => entry.key),
+      typeKeys: actionableRepairEntries(report && report.weakestTypes).map(entry => entry.key)
+    });
+    return targets;
+  }
+
+  function ensureTargetedRepairIndicator() {
+    const controls = typeof ensurePracticeControls === 'function'
+      ? ensurePracticeControls()
+      : document.getElementById('practiceModeControls');
+    if (!controls) return null;
+    let indicator = document.getElementById('targetedRepairIndicator');
+    if (!indicator) {
+      indicator = document.createElement('div');
+      indicator.id = 'targetedRepairIndicator';
+      indicator.className = 'targeted-repair-indicator';
+      indicator.setAttribute('role', 'status');
+      indicator.innerHTML = 'Targeted Repair<span>Prioritizing weak areas from your last Mastery Report.</span>';
+      controls.prepend(indicator);
+    }
+    return indicator;
+  }
+
+  function updateTargetedRepairIndicator() {
+    if (typeof document === 'undefined') return;
+    const indicator = ensureTargetedRepairIndicator();
+    if (indicator) indicator.style.display = targetedRepairState.active ? 'block' : 'none';
+  }
+
+  function deriveRepairObjectives() {
+    if (typeof getEntriesFromBuckets !== 'function' || typeof masteryState === 'undefined') return [];
+    return getEntriesFromBuckets(masteryState.byObjective || {}, 'objective')
+      .filter(entry => Number(entry.attempts) >= 2 && Number(entry.accuracy) < 0.85)
+      .sort((a, b) => a.accuracy - b.accuracy || b.attempts - a.attempts)
+      .slice(0, 4);
+  }
+
+  const mqRepairBaseReportData = getMasteryReportData;
+  getMasteryReportData = function(...args) {
+    const report = mqRepairBaseReportData.apply(this, args);
+    if (!Array.isArray(report.weakestObjectives)) report.weakestObjectives = deriveRepairObjectives();
+    return report;
+  };
+
+  function launchTargetedRepair(targets, sourceMode) {
+    const clean = sanitizeRepairTargets(targets);
+    if (!clean.hasTargets) return false;
+    startSelectedMode('unlimited', {
+      targetedRepair: true,
+      repairTargets: clean,
+      repairSourceMode: sourceMode || ''
+    });
+    return true;
+  }
+
+  function installRepairWeakAreasAction(report) {
+    const screen = document.getElementById('masteryReportScreen');
+    const actions = screen && screen.querySelector('.mastery-actions');
+    if (!actions) return;
+    const existing = document.getElementById('repairWeakAreasBtn');
+    if (existing) existing.remove();
+    const targets = getRepairTargetsFromReport(report);
+    if (!targets.hasTargets) return;
+    const button = document.createElement('button');
+    button.id = 'repairWeakAreasBtn';
+    button.type = 'button';
+    button.className = 'continue-btn repair-weak-areas-btn';
+    button.textContent = 'Repair Weak Areas';
+    button.addEventListener('click', () => launchTargetedRepair(targets, report.mode));
+    actions.prepend(button);
+  }
+
+  const mqRepairBaseShowReport = showMasteryReportScreen;
+  showMasteryReportScreen = function(...args) {
+    const result = mqRepairBaseShowReport.apply(this, args);
+    if (result && typeof result.then === 'function') {
+      return result.then(value => {
+        installRepairWeakAreasAction(getMasteryReportData());
+        return value;
+      });
+    }
+    installRepairWeakAreasAction(getMasteryReportData());
+    return result;
+  };
+
+  const mqRepairBaseRecordAttempt = recordAdaptiveAttempt;
+  recordAdaptiveAttempt = function(...args) {
+    if (targetedRepairState.active) targetedRepairState.scoredAttempts++;
+    return mqRepairBaseRecordAttempt.apply(this, args);
+  };
+
+  function activateTargetedRepair(targets, sourceMode) {
+    const clean = sanitizeRepairTargets(targets);
+    if (!clean.hasTargets) return false;
+    targetedRepairState.active = true;
+    targetedRepairState.sourceMode = normalizeRepairKey(sourceMode) || null;
+    targetedRepairState.objectiveKeys = clean.objectiveKeys;
+    targetedRepairState.skillKeys = clean.skillKeys;
+    targetedRepairState.tagKeys = clean.tagKeys;
+    targetedRepairState.typeKeys = clean.typeKeys;
+    targetedRepairState.scoredAttempts = 0;
+    return true;
+  }
+
+let mqUnlimitedPracticeCycle = 1;
+
+  function ensureUnlimitedModeCard() {
+    const grid = document.querySelector('#modeSelectScreen .mode-grid');
+    if (!grid || grid.querySelector('[data-mode="unlimited"]')) return;
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'mode-card';
+    card.dataset.mode = 'unlimited';
+    card.setAttribute('aria-label', 'Unlimited Practice. Adaptive practice continues until you end the session and generate a Mastery Report.');
+    card.innerHTML = '<div class="target-unlimited-symbol" aria-hidden="true">∞</div><span class="mode-card-title">Unlimited Practice</span><span class="mode-card-text">Practice as long as you want. End when you are ready for your Mastery Report.</span>';
+    card.addEventListener('click', () => startSelectedMode('unlimited'));
+    const legendary = [...grid.querySelectorAll('.mode-card')].find(item => /legendary/i.test(item.textContent));
+    grid.insertBefore(card, legendary || null);
+  }
+
+  function ensurePracticeControls() {
+    const gameBox = document.getElementById('gameBox');
+    if (!gameBox) return null;
+    let controls = document.getElementById('practiceModeControls');
+    if (!controls) {
+      controls = document.createElement('div');
+      controls.id = 'practiceModeControls';
+      controls.className = 'practice-mode-controls';
+      const endButton = document.createElement('button');
+      endButton.id = 'endPracticeBtn';
+      endButton.type = 'button';
+      endButton.className = 'end-practice-btn';
+      endButton.textContent = 'End Practice';
+      endButton.addEventListener('click', confirmEndPractice);
+      controls.append(endButton);
+      const streak = document.getElementById('streakDisplay');
+      (streak && streak.parentNode ? streak : gameBox).insertAdjacentElement('afterend', controls);
+      if (!controls.isConnected) gameBox.prepend(controls);
+    }
+    return controls;
+  }
+
+  function updatePracticeEndControl() {
+    const controls = ensurePracticeControls();
+    if (!controls) return;
+    controls.style.display = gameMode === 'unlimited' ? 'flex' : 'none';
+    updateTargetedRepairIndicator();
+  }
+
+  function confirmEndPractice() {
+    if (gameMode !== 'unlimited') return;
+    const attempts = Number(totalAttempts) || 0;
+    showGameModal({
+      title: 'End Practice?',
+      text: `This will end Unlimited Practice after ${attempts} scored attempt${attempts === 1 ? '' : 's'} and generate your Mastery Report.`,
+      confirmText: 'Generate Mastery Report',
+      cancelText: 'Keep Practicing',
+      onConfirm: function() {
+        handlePracticeModeComplete({ endedByStudent: true });
+        showMasteryReportScreen();
+      }
+    });
+  }
+
+  const mqRepairBaseStartSelectedMode = startSelectedMode;
+  startSelectedMode = function(mode, options = {}) {
+    const requestedMode = mode || 'standard';
+    const isRepair = requestedMode === 'unlimited' && options && options.targetedRepair;
+    const clean = sanitizeRepairTargets(options && options.repairTargets);
+    clearTargetedRepairState();
+    mqUnlimitedPracticeCycle = 1;
+    if (isRepair && clean.hasTargets) activateTargetedRepair(clean, options.repairSourceMode);
+    const result = mqRepairBaseStartSelectedMode.call(this, requestedMode, options);
+    updatePracticeEndControl();
+    return result;
+  };
+
+  const mqRepairBaseModeName = getModeDisplayName;
+  getModeDisplayName = function(...args) {
+    return gameMode === 'unlimited' ? 'Unlimited Practice' : mqRepairBaseModeName.apply(this, args);
+  };
+
+  const mqRepairBaseDifficulty = getDifficultyForMode;
+  getDifficultyForMode = function(...args) {
+    if (gameMode === 'unlimited') return room <= 10 ? 'easy' : room <= 20 ? 'medium' : 'hard';
+    return mqRepairBaseDifficulty.apply(this, args);
+  };
+
+  const mqRepairBaseBossRoom = isBossRoomForMode;
+  isBossRoomForMode = function(...args) {
+    if (gameMode === 'unlimited') return false;
+    return mqRepairBaseBossRoom.apply(this, args);
+  };
+
+  const mqRepairBaseLoadQuestion = loadQuestion;
+  loadQuestion = function(...args) {
+    if (gameMode === 'unlimited' && room > 30) {
+      room = 1;
+      mqUnlimitedPracticeCycle++;
+    }
+    const result = mqRepairBaseLoadQuestion.apply(this, args);
+    if (gameMode === 'unlimited') {
+      const area = document.getElementById('areaDisplay');
+      if (area) area.textContent = `Unlimited Practice — Cycle ${mqUnlimitedPracticeCycle} · ${getAreaName(room)} (${room}/30)`;
+    }
+    updatePracticeEndControl();
+    return result;
+  };
+
+  const mqRepairBaseInitializeRunForMode = initializeRunForMode;
+  initializeRunForMode = function(...args) {
+    const result = mqRepairBaseInitializeRunForMode.apply(this, args);
+    if (gameMode === 'unlimited') {
+      const autosave = document.getElementById('autosave');
+      if (autosave) autosave.textContent = '∞ Unlimited Practice Active';
+    }
+    updatePracticeEndControl();
+    return result;
+  };
+
+  const mqRepairBaseReturnToModeMenu = confirmReturnToModeMenu;
+  confirmReturnToModeMenu = function(...args) {
+    if (gameMode === 'unlimited') return confirmEndPractice();
+    return mqRepairBaseReturnToModeMenu.apply(this, args);
+  };
+
+  ensureUnlimitedModeCard();
+  updatePracticeEndControl();
 
 </script>
 </body>

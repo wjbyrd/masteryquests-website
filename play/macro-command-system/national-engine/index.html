@@ -1760,6 +1760,27 @@ TIP:
 }
  
 </style>
+
+<style id="targetedMasteryRepairStyles">
+.practice-mode-controls{flex-wrap:wrap;gap:8px;align-items:center}
+.targeted-repair-indicator{display:none;max-width:520px;padding:8px 12px;border:1px solid rgba(247,217,130,.55);border-radius:8px;background:rgba(4,16,31,.94);color:#f7d982;font-size:12px;font-weight:800;line-height:1.35;text-align:center}
+.targeted-repair-indicator span{display:block;color:rgba(255,255,255,.8);font-size:11px;font-weight:500}
+.repair-weak-areas-btn{order:-1;border-color:rgba(74,222,128,.75)!important;box-shadow:0 0 18px rgba(74,222,128,.22)!important}
+.target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
+@media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
+</style>
+
+<style id="nationalPhase1Styles">
+.national-mode-select{position:fixed;inset:0;z-index:1200;align-items:center;justify-content:center;padding:18px;background:rgba(4,5,5,.96);color:#f3ead2;overflow:auto}
+.national-mode-card-shell{width:min(760px,100%);text-align:center}
+.national-mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0}
+.national-mode-card{min-height:170px;padding:22px;border:1px solid rgba(214,177,92,.5);border-radius:8px;background:rgba(12,18,18,.94);color:#f3ead2;cursor:pointer}
+.national-mode-card strong,.national-mode-card span{display:block}.national-mode-card strong{font-size:22px;color:#f4d58d;margin-bottom:12px}.national-mode-card span{line-height:1.5}
+.mastery-report-screen{position:fixed;inset:0;z-index:1250;box-sizing:border-box;overflow:auto;padding:24px max(calc((100% - 760px)/2),18px);background:rgba(4,5,5,.98);text-align:left}.mastery-report-screen>h1,.mastery-report-screen>p{text-align:center}
+.mastery-summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:18px 0}.mastery-summary-grid>div,.mastery-section{padding:12px;border:1px solid rgba(214,177,92,.35);border-radius:8px;background:rgba(12,18,18,.7)}
+.mastery-summary-grid span,.mastery-summary-grid strong{display:block}.mastery-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid rgba(255,255,255,.1)}.mastery-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+@media(max-width:520px){.national-mode-grid{grid-template-columns:1fr}.mastery-row{align-items:flex-start;flex-direction:column}.mastery-actions button{width:100%;white-space:normal}}
+</style>
 </head>
 
 <!-- =========================================
@@ -2704,6 +2725,7 @@ function weightedPick(pool, options = {}){
         }
 
         w = Math.min(w, mode === "challenge" ? 5.5 : 4.5);
+        w += getRepairPriorityBonus(q);
         totalWeight += w;
         return { q, w };
     });
@@ -2954,12 +2976,14 @@ function startGame() {
     adaptiveMode = "support";
     resetRemediationState();
 
-    localStorage.removeItem("gauntletRoom");
+    if(modeAllowsSave()) localStorage.removeItem("gauntletRoom");
 
     // National Engine artifact keys — keep these matched to your actual National Engine IDs.
-    localStorage.removeItem("vaultIndex");
-    localStorage.removeItem("vaultValve");
-    localStorage.removeItem("vaultSeal");
+    if(modeAllowsRealmProgress()){
+        localStorage.removeItem("vaultIndex");
+        localStorage.removeItem("vaultValve");
+        localStorage.removeItem("vaultSeal");
+    }
 
     questionHistory = {
         easy: [], medium: [], hard: [], elite: [], calculation: [],
@@ -2977,7 +3001,7 @@ function startGame() {
 // Shows main game elements and restores vault visuals
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("gameBox").style.display = "block";
-    document.getElementById("artifactVault").style.display = "block";
+    document.getElementById("artifactVault").style.display = modeAllowsRealmProgress() ? "block" : "none";
     document.querySelectorAll(".torch").forEach(t => t.style.display = "block");
 
    // =============================================
@@ -4120,7 +4144,7 @@ function loadQuestion() {
              : (room <= 29) ? "calculation"
              : "finalBoss";
 
-   const isBoss = diff.includes("Boss");
+   const isBoss = modeAllowsBosses() && diff.includes("Boss");
 
    // Only reset health if the bossPool is currently empty (meaning a new encounter)
      if (isBoss && (!bossPool || bossPool.length === 0)) {
@@ -4384,7 +4408,7 @@ function answer(choice) {
    
     totalAttempts++;
    
-    const isBossRoom = (room === 10 || room === 20 || room === 30);
+    const isBossRoom = modeAllowsBosses() && (room === 10 || room === 20 || room === 30);
     const msgElement = document.getElementById("message");
     const wizard = document.getElementById("wizardImage");
     const isCorrect = (choice === currentQuestion.a);
@@ -4512,7 +4536,7 @@ if(remediationState.active){
         `<span class='fade-out-text'>Recovery confirmed. Return to the Dominion.</span>`;
 
     room = returnRoom;
-    localStorage.setItem("gauntletRoom", room);
+    if(modeAllowsSave()) localStorage.setItem("gauntletRoom", room);
 
     setTimeout(loadQuestion, TIMING.normal);
     return;
@@ -4581,7 +4605,7 @@ if(remediationState.active){
     // AND it wasn't a Boss Room (or a Detour).
    msgElement.innerHTML = "";
    room++;
-   localStorage.setItem("gauntletRoom", room);
+   if(modeAllowsSave()) localStorage.setItem("gauntletRoom", room);
    showHallwayTransition(currentQuestion.feedback);
    return;
     }      
@@ -4684,7 +4708,7 @@ if (!remediationState.active && currentQuestion.tag && shouldTriggerDetour(curre
 // Never fall back behind the most recently cleared boss gate
 	room = Math.max(bossCheckpoint, newRoom);
 
-    localStorage.setItem("gauntletRoom", room);
+    if(modeAllowsSave()) localStorage.setItem("gauntletRoom", room);
 
     alert(`Incorrect! You trip in the darkness and tumble back to Room ${room}.`);
 
@@ -4968,7 +4992,7 @@ document.getElementById("continueBtn").onclick = () => {
         handleVictory();
     } else {
         room++;
-        localStorage.setItem("gauntletRoom", room);
+        if(modeAllowsSave()) localStorage.setItem("gauntletRoom", room);
         loadQuestion();
     }
 };
@@ -5343,8 +5367,388 @@ function sendGameData(data) {
 //
 // =====================================================
 
+
+
+// TARGETED MASTERY REPAIR — PHASE 1
+const targetedRepairState = {
+    active: false,
+    sourceMode: null,
+    objectiveKeys: [],
+    skillKeys: [],
+    tagKeys: [],
+    typeKeys: [],
+    scoredAttempts: 0
+  };
+
+  function normalizeRepairKey(value) {
+    return String(value == null ? '' : value).trim().toLowerCase().slice(0, 120);
+  }
+
+  function uniqueRepairKeys(values) {
+    return [...new Set((Array.isArray(values) ? values : []).map(normalizeRepairKey).filter(Boolean))].slice(0, 16);
+  }
+
+  function sanitizeRepairTargets(targets) {
+    const clean = {
+      objectiveKeys: uniqueRepairKeys(targets && targets.objectiveKeys),
+      skillKeys: uniqueRepairKeys(targets && targets.skillKeys),
+      tagKeys: uniqueRepairKeys(targets && targets.tagKeys),
+      typeKeys: uniqueRepairKeys(targets && targets.typeKeys)
+    };
+    clean.hasTargets = !!(clean.objectiveKeys.length || clean.skillKeys.length || clean.tagKeys.length || clean.typeKeys.length);
+    return clean;
+  }
+
+  function clearTargetedRepairState() {
+    targetedRepairState.active = false;
+    targetedRepairState.sourceMode = null;
+    targetedRepairState.objectiveKeys = [];
+    targetedRepairState.skillKeys = [];
+    targetedRepairState.tagKeys = [];
+    targetedRepairState.typeKeys = [];
+    targetedRepairState.scoredAttempts = 0;
+    updateTargetedRepairIndicator();
+  }
+
+  function questionMatchesRepairObjective(question) {
+    const value = typeof inferObjective === 'function' ? inferObjective(question) : question && question.objective;
+    return targetedRepairState.objectiveKeys.includes(normalizeRepairKey(value));
+  }
+
+  function questionMatchesRepairSkill(question) {
+    const value = typeof getSkillKey === 'function'
+      ? getSkillKey(question)
+      : question && (question.primarySkill || question.repairSkill || question.skill);
+    return targetedRepairState.skillKeys.includes(normalizeRepairKey(value));
+  }
+
+  function questionMatchesRepairTag(question) {
+    return targetedRepairState.tagKeys.includes(normalizeRepairKey(question && question.tag));
+  }
+
+  function questionMatchesRepairType(question) {
+    return targetedRepairState.typeKeys.includes(normalizeRepairKey(question && question.type));
+  }
+
+  function getRepairPriorityBonus(question) {
+    if (!targetedRepairState.active) return 0;
+    let bonus = 0;
+    if (questionMatchesRepairObjective(question)) bonus += 8;
+    if (questionMatchesRepairSkill(question)) bonus += 5;
+    if (questionMatchesRepairTag(question)) bonus += 4;
+    if (questionMatchesRepairType(question)) bonus += 1.5;
+    const attempts = targetedRepairState.scoredAttempts;
+    const decay = attempts >= 16 ? 0.3 : attempts >= 8 ? 0.6 : 1;
+    return bonus * decay;
+  }
+
+  function actionableRepairEntries(entries) {
+    return (Array.isArray(entries) ? entries : []).filter(entry =>
+      entry && Number(entry.attempts) >= 2 && Number(entry.accuracy) < 0.85
+    );
+  }
+
+  function getRepairTargetsFromReport(report) {
+    const targets = sanitizeRepairTargets({
+      objectiveKeys: actionableRepairEntries(report && report.weakestObjectives).map(entry => entry.key),
+      skillKeys: actionableRepairEntries(report && report.weakestSkills).map(entry => entry.key),
+      tagKeys: actionableRepairEntries(report && report.weakestConcepts).map(entry => entry.key),
+      typeKeys: actionableRepairEntries(report && report.weakestTypes).map(entry => entry.key)
+    });
+    return targets;
+  }
+
+  function ensureTargetedRepairIndicator() {
+    const controls = typeof ensurePracticeControls === 'function'
+      ? ensurePracticeControls()
+      : document.getElementById('practiceModeControls');
+    if (!controls) return null;
+    let indicator = document.getElementById('targetedRepairIndicator');
+    if (!indicator) {
+      indicator = document.createElement('div');
+      indicator.id = 'targetedRepairIndicator';
+      indicator.className = 'targeted-repair-indicator';
+      indicator.setAttribute('role', 'status');
+      indicator.innerHTML = 'Targeted Repair<span>Prioritizing weak areas from your last Mastery Report.</span>';
+      controls.prepend(indicator);
+    }
+    return indicator;
+  }
+
+  function updateTargetedRepairIndicator() {
+    if (typeof document === 'undefined') return;
+    const indicator = ensureTargetedRepairIndicator();
+    if (indicator) indicator.style.display = targetedRepairState.active ? 'block' : 'none';
+  }
+
+  function deriveRepairObjectives() {
+    if (typeof getEntriesFromBuckets !== 'function' || typeof masteryState === 'undefined') return [];
+    return getEntriesFromBuckets(masteryState.byObjective || {}, 'objective')
+      .filter(entry => Number(entry.attempts) >= 2 && Number(entry.accuracy) < 0.85)
+      .sort((a, b) => a.accuracy - b.accuracy || b.attempts - a.attempts)
+      .slice(0, 4);
+  }
+
+  const mqRepairBaseReportData = getMasteryReportData;
+  getMasteryReportData = function(...args) {
+    const report = mqRepairBaseReportData.apply(this, args);
+    if (!Array.isArray(report.weakestObjectives)) report.weakestObjectives = deriveRepairObjectives();
+    return report;
+  };
+
+  function launchTargetedRepair(targets, sourceMode) {
+    const clean = sanitizeRepairTargets(targets);
+    if (!clean.hasTargets) return false;
+    startSelectedMode('unlimited', {
+      targetedRepair: true,
+      repairTargets: clean,
+      repairSourceMode: sourceMode || ''
+    });
+    return true;
+  }
+
+  function installRepairWeakAreasAction(report) {
+    const screen = document.getElementById('masteryReportScreen');
+    const actions = screen && screen.querySelector('.mastery-actions');
+    if (!actions) return;
+    const existing = document.getElementById('repairWeakAreasBtn');
+    if (existing) existing.remove();
+    const targets = getRepairTargetsFromReport(report);
+    if (!targets.hasTargets) return;
+    const button = document.createElement('button');
+    button.id = 'repairWeakAreasBtn';
+    button.type = 'button';
+    button.className = 'continue-btn repair-weak-areas-btn';
+    button.textContent = 'Repair Weak Areas';
+    button.addEventListener('click', () => launchTargetedRepair(targets, report.mode));
+    actions.prepend(button);
+  }
+
+  const mqRepairBaseShowReport = showMasteryReportScreen;
+  showMasteryReportScreen = function(...args) {
+    const result = mqRepairBaseShowReport.apply(this, args);
+    if (result && typeof result.then === 'function') {
+      return result.then(value => {
+        installRepairWeakAreasAction(getMasteryReportData());
+        return value;
+      });
+    }
+    installRepairWeakAreasAction(getMasteryReportData());
+    return result;
+  };
+
+  const mqRepairBaseRecordAttempt = recordAdaptiveAttempt;
+  recordAdaptiveAttempt = function(...args) {
+    if (targetedRepairState.active) targetedRepairState.scoredAttempts++;
+    return mqRepairBaseRecordAttempt.apply(this, args);
+  };
+
+  function activateTargetedRepair(targets, sourceMode) {
+    const clean = sanitizeRepairTargets(targets);
+    if (!clean.hasTargets) return false;
+    targetedRepairState.active = true;
+    targetedRepairState.sourceMode = normalizeRepairKey(sourceMode) || null;
+    targetedRepairState.objectiveKeys = clean.objectiveKeys;
+    targetedRepairState.skillKeys = clean.skillKeys;
+    targetedRepairState.tagKeys = clean.tagKeys;
+    targetedRepairState.typeKeys = clean.typeKeys;
+    targetedRepairState.scoredAttempts = 0;
+    return true;
+  }
+
+let gameMode = 'standard';
+  let mqUnlimitedPracticeCycle = 1;
+  let mqNationalRunEnding = false;
+
+  function modeAllowsSave() { return gameMode === 'standard'; }
+  function modeAllowsRealmProgress() { return gameMode === 'standard'; }
+  function modeAllowsBosses() { return gameMode === 'standard'; }
+  function getModeDisplayName() { return gameMode === 'unlimited' ? 'Unlimited Practice' : 'Standard Campaign'; }
+
+  function ensureNationalModeScreen() {
+    let screen = document.getElementById('modeSelectScreen');
+    if (screen) return screen;
+    screen = document.createElement('section');
+    screen.id = 'modeSelectScreen';
+    screen.className = 'national-mode-select';
+    screen.style.display = 'none';
+    screen.innerHTML = '<div class="national-mode-card-shell"><h1>CHOOSE A MODE</h1><div class="national-mode-grid"><button type="button" class="national-mode-card" data-mode="standard"><strong>Standard Campaign</strong><span>Original 30-room campaign with bosses, artifacts, and saved progress.</span></button><button type="button" class="national-mode-card" data-mode="unlimited"><strong>Unlimited Practice</strong><span>Adaptive practice with no bosses, artifacts, or campaign progression. End whenever you are ready for a Mastery Report.</span></button></div><button type="button" class="start-btn national-mode-back">BACK</button></div>';
+    document.body.append(screen);
+    screen.querySelector('[data-mode="standard"]').addEventListener('click', () => startSelectedMode('standard'));
+    screen.querySelector('[data-mode="unlimited"]').addEventListener('click', () => startSelectedMode('unlimited'));
+    screen.querySelector('.national-mode-back').addEventListener('click', () => {
+      screen.style.display = 'none';
+      document.getElementById('startScreen').style.display = 'flex';
+    });
+    return screen;
+  }
+
+  function openNationalModeSelect() {
+    document.getElementById('startScreen').style.display = 'none';
+    ensureNationalModeScreen().style.display = 'flex';
+  }
+
+  function returnToModeSelectFromRun() {
+    mqNationalRunEnding = false;
+    const reportScreen = document.getElementById('masteryReportScreen');
+    if (reportScreen) reportScreen.remove();
+    document.getElementById('gameBox').style.display = 'none';
+    ensureNationalModeScreen().style.display = 'flex';
+  }
+
+  function ensurePracticeControls() {
+    const gameBox = document.getElementById('gameBox');
+    if (!gameBox) return null;
+    let controls = document.getElementById('practiceModeControls');
+    if (!controls) {
+      controls = document.createElement('div');
+      controls.id = 'practiceModeControls';
+      controls.className = 'practice-mode-controls';
+      const button = document.createElement('button');
+      button.id = 'endPracticeBtn';
+      button.type = 'button';
+      button.className = 'end-practice-btn';
+      button.textContent = 'End Practice';
+      button.addEventListener('click', confirmEndPractice);
+      controls.append(button);
+      const streak = document.getElementById('streakDisplay');
+      if (streak && streak.parentNode) streak.insertAdjacentElement('afterend', controls);
+      else gameBox.prepend(controls);
+    }
+    return controls;
+  }
+
+  function updatePracticeEndControl() {
+    const controls = ensurePracticeControls();
+    if (!controls) return;
+    controls.style.display = !mqNationalRunEnding && gameMode === 'unlimited' ? 'flex' : 'none';
+    updateTargetedRepairIndicator();
+  }
+
+  function getNationalBucketEntries(buckets, kind) {
+    return Object.entries(buckets || {}).map(([key, bucket]) => ({
+      key,
+      label: String(key).replace(/[_-]+/g, ' ').replace(/\b\w/g, char => char.toUpperCase()),
+      kind,
+      attempts: Number(bucket && bucket.attempts) || 0,
+      correct: Number(bucket && bucket.correct) || 0,
+      accuracy: bucket && bucket.attempts ? bucket.correct / bucket.attempts : 0,
+      avgTime: Number(bucket && bucket.avgTime) || 0
+    }));
+  }
+
+  function getNationalTypeEntries() {
+    const totals = {};
+    Object.values(masteryState.byTag || {}).forEach(tag => {
+      Object.entries(tag.byType || {}).forEach(([key, bucket]) => {
+        if (!totals[key]) totals[key] = { attempts: 0, correct: 0, weightedTime: 0 };
+        totals[key].attempts += Number(bucket.attempts) || 0;
+        totals[key].correct += Number(bucket.correct) || 0;
+        totals[key].weightedTime += (Number(bucket.avgTime) || 0) * (Number(bucket.attempts) || 0);
+      });
+    });
+    return Object.entries(totals).map(([key, bucket]) => ({
+      key,
+      label: String(key).replace(/[_-]+/g, ' ').replace(/\b\w/g, char => char.toUpperCase()),
+      attempts: bucket.attempts,
+      correct: bucket.correct,
+      accuracy: bucket.attempts ? bucket.correct / bucket.attempts : 0,
+      avgTime: bucket.attempts ? bucket.weightedTime / bucket.attempts : 0
+    }));
+  }
+
+  function getMasteryReportData() {
+    const weakest = entries => entries.filter(entry => entry.attempts >= 2 && entry.accuracy < 0.85)
+      .sort((a, b) => a.accuracy - b.accuracy || b.attempts - a.attempts).slice(0, 4);
+    const objectives = getNationalBucketEntries(masteryState.byObjective, 'objective');
+    const concepts = getNationalBucketEntries(masteryState.byTag, 'tag');
+    const types = getNationalTypeEntries();
+    const totalTimeMs = startTime ? Math.max(0, Date.now() - startTime) : 0;
+    return {
+      mode: getModeDisplayName(),
+      accuracy: totalAttempts ? correctAnswers / totalAttempts : 0,
+      totalTimeMs,
+      timeString: formatTime(totalTimeMs),
+      totalAttempts,
+      correctAnswers,
+      maxStreak,
+      weakestObjectives: weakest(objectives),
+      weakestConcepts: weakest(concepts),
+      weakestSkills: [],
+      weakestTypes: weakest(types),
+      noMajorWeakness: !weakest(objectives).length && !weakest(concepts).length && !weakest(types).length
+    };
+  }
+
+  function renderNationalRows(entries, emptyText) {
+    if (!entries.length) return `<p class="mastery-empty">${emptyText}</p>`;
+    return entries.map(entry => `<div class="mastery-row"><span>${entry.label}</span><strong>${Math.round(entry.accuracy * 100)}% · ${entry.correct}/${entry.attempts}</strong></div>`).join('');
+  }
+
+  function showMasteryReportScreen() {
+    mqNationalRunEnding = true;
+    updatePracticeEndControl();
+    const report = getMasteryReportData();
+    const gameBox = document.getElementById('gameBox');
+    const existing = document.getElementById('masteryReportScreen');
+    if (existing) existing.remove();
+    const screen = document.createElement('section');
+    screen.id = 'masteryReportScreen';
+    screen.className = 'mastery-report-screen';
+    screen.innerHTML = `<h1>MASTERY REPORT</h1><p>Fresh evidence from this ${report.mode} session.</p><div class="mastery-summary-grid"><div><span>Mode</span><strong>${report.mode}</strong></div><div><span>Accuracy</span><strong>${Math.round(report.accuracy * 100)}%</strong></div><div><span>Correct</span><strong>${report.correctAnswers}/${report.totalAttempts}</strong></div><div><span>Best Streak</span><strong>${report.maxStreak}</strong></div><div><span>Time</span><strong>${report.timeString}</strong></div></div><div class="mastery-section"><h2>Learning Objectives</h2>${renderNationalRows(report.weakestObjectives, 'No actionable objective weakness detected.')}</div><div class="mastery-section"><h2>Concepts</h2>${renderNationalRows(report.weakestConcepts, 'No actionable concept weakness detected.')}</div><div class="mastery-section"><h2>Question Forms</h2>${renderNationalRows(report.weakestTypes, 'No actionable question-form weakness detected.')}</div><div class="mastery-actions"><button class="continue-btn" type="button" onclick="returnToModeSelectFromRun()">Choose Another Battle</button></div>`;
+    gameBox.style.display = 'none';
+    document.body.append(screen);
+  }
+
+  function confirmEndPractice() {
+    if (gameMode !== 'unlimited' || mqNationalRunEnding) return;
+    const attempts = Number(totalAttempts) || 0;
+    const confirmed = window.confirm(`End Unlimited Practice after ${attempts} scored attempt${attempts === 1 ? '' : 's'} and generate your Mastery Report?`);
+    if (confirmed) showMasteryReportScreen();
+  }
+
+  const mqNationalBaseStartGame = startGame;
+  function startSelectedMode(mode, options = {}) {
+    const requestedMode = mode || 'standard';
+    const isRepair = requestedMode === 'unlimited' && options && options.targetedRepair;
+    const clean = sanitizeRepairTargets(options && options.repairTargets);
+    clearTargetedRepairState();
+    gameMode = requestedMode;
+    mqUnlimitedPracticeCycle = 1;
+    mqNationalRunEnding = false;
+    if (isRepair && clean.hasTargets) activateTargetedRepair(clean, options.repairSourceMode);
+    const reportScreen = document.getElementById('masteryReportScreen');
+    if (reportScreen) reportScreen.remove();
+    ensureNationalModeScreen().style.display = 'none';
+    mqNationalBaseStartGame();
+    const vault = document.getElementById('artifactVault');
+    if (vault) vault.style.display = modeAllowsRealmProgress() ? 'block' : 'none';
+    const autosave = document.getElementById('autosave');
+    if (autosave) autosave.textContent = gameMode === 'unlimited' ? '∞ Unlimited Practice Active' : '💾 Ledger Saved';
+    updatePracticeEndControl();
+  }
+
+  const mqNationalBaseLoadQuestion = loadQuestion;
+  loadQuestion = function(...args) {
+    if (gameMode === 'unlimited' && room > 30) {
+      room = 1;
+      mqUnlimitedPracticeCycle++;
+    }
+    const result = mqNationalBaseLoadQuestion.apply(this, args);
+    if (gameMode === 'unlimited') {
+      const area = document.getElementById('areaDisplay');
+      if (area) area.textContent = `Unlimited Practice — Cycle ${mqUnlimitedPracticeCycle} · ${getAreaName(room)} (${room}/30)`;
+    }
+    updatePracticeEndControl();
+    return result;
+  };
+
+  const originalStartButton = document.querySelector('#startScreen .start-btn');
+  if (originalStartButton) originalStartButton.onclick = openNationalModeSelect;
+  ensureNationalModeScreen();
+  updatePracticeEndControl();
+
 </script>
 </body>
 </html>
-
 
