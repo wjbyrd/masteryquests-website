@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {attachConceptReviewRuntime,assertCanonicalCoreVersion,assertGeneratedComposerVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
@@ -44,7 +45,7 @@ function runtimeDeckCheck(composition,target){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[7]!=='trialGraph' || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
@@ -110,8 +111,10 @@ function runtimeDeckCheck(composition,target){
   const config=await core.createConfig(recipe('perfect-competition'),library,await core.sha256Hex(template));
   const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:allEight.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:config.templateSha256};
   const trialOnly=core.compose(library,recipe('perfect-competition'));
+  attachConceptReviewRuntime(core,trialOnly,library,config.selectedConceptIds);
   const html=core.buildHtml(template,trialOnly,config,metadata);
-  fs.writeFileSync(path.join(__dirname,'trial-by-graph-only.html'),html);
+  assertGeneratedComposerVersion(html);
+  writeTestArtifact('tests/trial-by-graph-only.html',html);
   const checks={
     card:html.includes('data-mode="trialGraph"'),
     setup:html.includes('id="trialGraphSetupModal"'),
@@ -133,7 +136,7 @@ function runtimeDeckCheck(composition,target){
     supportedTargets:{perfectCompetition:deck20.supported,demand:demandRuntime.supported,aggregateDemand:adRuntime.supported},
     allEightModes:allEight.validation.modes.map(m=>({mode:m.mode,ok:m.ok})),issues
   };
-  fs.writeFileSync(path.join(root,'trial_by_graph_validation_results_4.5s.2m.json'),JSON.stringify(result,null,2));
+  writeTestArtifact('trial_by_graph_validation_results_4.5s.2m.json',JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();

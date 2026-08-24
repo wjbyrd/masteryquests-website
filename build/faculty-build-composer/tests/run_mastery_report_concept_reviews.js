@@ -5,9 +5,14 @@ const path = require('path');
 const crypto = require('crypto');
 const Core = require('../composer-core.js');
 const Runtime = require('../concept-review-runtime.js');
+const {
+  assertCanonicalCoreVersion,
+  assertGeneratedComposerVersion,
+  testArtifactPath
+} = require('./composer-test-helpers.js');
 
 const root = path.resolve(__dirname, '..');
-const resultsPath = path.join(__dirname, 'mastery_report_concept_review_results.json');
+const resultsPath = testArtifactPath('tests/mastery_report_concept_review_results.json');
 
 function assert(condition, message){ if(!condition) throw new Error(message); }
 function hash(value){ return crypto.createHash('sha256').update(value).digest('hex'); }
@@ -30,6 +35,7 @@ function weakAttempt(values = {}){
 }
 
 async function run(){
+  assertCanonicalCoreVersion(Core);
   const library = loadLibrary();
   const sourceManifest = JSON.parse(fs.readFileSync(path.join(root, 'data', 'concept-reviews', 'manifest.json'), 'utf8'));
   const template = fs.readFileSync(path.join(root, 'template', 'mastery-quests-faculty-template-composer-ready.html'), 'utf8');
@@ -125,11 +131,18 @@ async function run(){
     assert(Runtime.safeReviewPath('concept-reviews/MICRO-01.pdf') !== null, 'Safe review path was rejected.');
   });
 
-  await test('O','missing mapped PDF is hidden', async () => {
+  await test('O','canonical GEN-ECON-01 fixture exists and remains visible', async () => {
     const {manifest} = makeRuntime(library, sourceManifest, ['scarcity-and-tradeoffs']);
     const result = Runtime.resolveMasteryConceptReviews({manifest,canonicalConceptId:'scarcity-and-tradeoffs',hasMeaningfulWeakness:true});
-    const filtered = await Runtime.filterAvailableReviewResult(result,{fetchImpl:async () => ({ok:false,status:404}),consoleImpl:{warn(){}}});
-    assert(filtered.recommendations.length === 0, 'Missing mapped PDF remained visible.');
+    const filtered = await Runtime.filterAvailableReviewResult(result);
+    assert(filtered.recommendations.length === 1 && filtered.recommendations[0].code === 'GEN-ECON-01', 'GEN-ECON-01 was not retained as a safe mapped recommendation.');
+    const sourceReview = sourceManifest.reviews.find(review => review.code === 'GEN-ECON-01');
+    assert(sourceReview, 'Source manifest is missing GEN-ECON-01.');
+    const pdfPath = path.join(root, 'data', 'concept-reviews', sourceReview.pdfPath);
+    assert(fs.existsSync(pdfPath), 'Canonical GEN-ECON-01 PDF fixture is missing.');
+    const bytes = fs.readFileSync(pdfPath);
+    assert(bytes.length === sourceReview.sizeBytes, 'GEN-ECON-01 fixture size differs from the source manifest.');
+    assert(hash(bytes) === sourceReview.sha256, 'GEN-ECON-01 fixture hash differs from the source manifest.');
   });
 
   await test('P','one generated build supports all ten modes without engine mutation', async () => {
@@ -141,8 +154,10 @@ async function run(){
     const after = hash(Core.stableStringify({banks:composition.banks,challenge:composition.challengeQuestionBanks,repair:composition.repairQuestions,bridge:composition.bridgeQuestions}));
     assert(before === after, 'Concept Review resolution mutated selection, Repair, or Bridge data.');
     composition.conceptReviewRuntimeSource = runtimeSource;
+    composition.conceptReviewRuntimeIndex = resolution.runtimeIndex;
     const config = await Core.createConfig(input, library, hash(template));
-    const html = Core.buildHtml(template, composition, config, {conceptReviewManifestPath:'concept-reviews/manifest.json'});
+    const html = Core.buildHtml(template, composition, config, {composerVersion:Core.COMPOSER_VERSION,conceptReviewManifestPath:'concept-reviews/manifest.json'});
+    assertGeneratedComposerVersion(html);
     assert(config.supportedModes.length === 10, 'Generated config does not contain all ten modes.');
     assert(html.includes('function loadConceptReviewManifest') && html.includes('async function showMasteryReportScreen'), 'Generated HTML lacks the runtime loader or async report integration.');
     assert(html.includes('latestConceptReviewTitles') && html.includes('Concept Review:'), 'Copy-report title-only integration is absent.');

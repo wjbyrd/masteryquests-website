@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {attachConceptReviewRuntime,assertCanonicalCoreVersion,assertGeneratedComposerVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
@@ -24,10 +25,12 @@ function extractFunction(src,name){
 
 function difficultySequence(target){
   const normalize=extractFunction(template,'normalizeQuizQuestionTarget');
+  const plan=extractFunction(template,'getLimitedRunDifficultyPlan');
+  const planned=extractFunction(template,'getLimitedRunPlannedDifficulty');
   const diff=extractFunction(template,'getDifficultyForMode');
-  const ctx={gameMode:'quiz',quizQuestionTarget:target,quizQuestionsCompleted:0,QUIZ_MAX_QUESTIONS:15,Math,Number};
+  const ctx={gameMode:'quiz',quizQuestionTarget:target,quizQuestionsCompleted:0,quizDeck:[],quizDeckIndex:0,QUIZ_MAX_QUESTIONS:15,Math,Number};
   vm.createContext(ctx);
-  vm.runInContext(`${normalize}\n${diff}`,ctx);
+  vm.runInContext(`${normalize}\n${plan}\n${planned}\n${diff}`,ctx);
   const seq=[];
   for(let i=0;i<target;i++){
     ctx.quizQuestionsCompleted=i;
@@ -41,6 +44,7 @@ function countSeq(seq){
 }
 
 (async()=>{
+  assertCanonicalCoreVersion(core);
   const issues=[];
   const recipe={
     schemaVersion:'1.2.0',
@@ -69,8 +73,10 @@ function countSeq(seq){
 
   const config=await core.createConfig(recipe,library,await core.sha256Hex(template));
   const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:composition.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:config.templateSha256};
+  attachConceptReviewRuntime(core,composition,library,recipe.selectedConceptIds);
   const html=core.buildHtml(template,composition,config,metadata);
-  fs.writeFileSync(path.join(__dirname,'quiz-only.html'),html);
+  assertGeneratedComposerVersion(html);
+  writeTestArtifact('tests/quiz-only.html',html);
 
   const checks={
     quizCard: html.includes('data-mode="quiz"'),
@@ -101,7 +107,7 @@ function countSeq(seq){
     distributions:{ten:{sequence:seq10,counts:counts10},fifteen:{sequence:seq15,counts:counts15}},
     checks,generatedHtmlBytes:Buffer.byteLength(html),issues
   };
-  fs.writeFileSync(path.join(root,'quiz_mode_validation_results.json'),JSON.stringify(result,null,2));
+  writeTestArtifact('quiz_mode_validation_results.json',JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();

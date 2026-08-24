@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {attachConceptReviewRuntime,assertCanonicalCoreVersion,assertGeneratedComposerVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
@@ -54,9 +55,10 @@ async function buildCase(name,supportedModes){
   if(composition.errors.length) throw new Error(`${name}: ${composition.errors.join(' | ')}`);
   const config=await core.createConfig(recipe,library,await core.sha256Hex(template));
   const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:composition.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:config.templateSha256};
+  attachConceptReviewRuntime(core,composition,library,recipe.selectedConceptIds);
   const html=core.buildHtml(template,composition,config,metadata);
-  const out=path.join(__dirname,`${name}.html`);
-  fs.writeFileSync(out,html);
+  assertGeneratedComposerVersion(html);
+  writeTestArtifact(`tests/${name}.html`,html);
   const match=html.match(/const FACULTY_COMPOSITION_CONFIG = (\{[\s\S]*?\n\});/);
   if(!match) throw new Error(`${name}: config not injected`);
   const injected=JSON.parse(match[1]);
@@ -77,6 +79,7 @@ async function buildCase(name,supportedModes){
 }
 
 (async()=>{
+  assertCanonicalCoreVersion(core);
   const cssGuard=template.includes('.mode-card[hidden],') && template.includes('display:none !important;');
   const showReapply=/function showModeSelect\(\)\{[\s\S]{0,260}applyFacultyCompositionConfig\(\);/.test(template);
   const returnReapply=/function returnToModeSelectFromRun\(\)\{[\s\S]{0,1800}applyFacultyCompositionConfig\(\);/.test(template);
@@ -90,7 +93,6 @@ async function buildCase(name,supportedModes){
     await buildCase('all-ten',[...core.MODE_ORDER])
   ];
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`composer version ${core.COMPOSER_VERSION}`);
   if(!cssGuard) issues.push('missing hard hidden CSS guard');
   if(!showReapply) issues.push('showModeSelect does not reapply config');
   if(!returnReapply) issues.push('returnToModeSelectFromRun does not reapply config');
@@ -102,7 +104,7 @@ async function buildCase(name,supportedModes){
     if(c.validation.some(v=>!v.ok)) issues.push(`${c.name}: selected mode preflight failed`);
   }
   const result={phase:'mode-availability-fix-v6-ten-mode-aware',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,cssGuard,showReapply,returnReapply,cases,issues};
-  fs.writeFileSync(path.join(root,'mode_availability_fix_validation_results.json'),JSON.stringify(result,null,2));
+  writeTestArtifact('mode_availability_fix_validation_results.json',JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();

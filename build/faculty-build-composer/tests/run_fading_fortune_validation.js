@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {assertCanonicalCoreVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
@@ -28,7 +29,7 @@ function runtimeDeckCheck(composition,target){
 }
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
@@ -81,7 +82,7 @@ function runtimeDeckCheck(composition,target){
   Object.entries(sourceChecks).forEach(([k,v])=>{if(!v) issues.push(`missing ${k}`);});
 
   const result={phase:'mode9-fading-fortune-v1',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,perfectCompetitionEligible:allNine.counts.fadingFortuneEligible,byDifficulty:allNine.counts.fadingFortuneByDifficulty,supportedTargets:{perfectCompetition:pcRuntime.supported,integratedEconomicAnalysis:twelveRun.supported,competitiveMarkets:seventeenRun.supported},allNineModes:allNine.validation.modes.map(m=>({mode:m.mode,ok:m.ok})),sourceChecks,issues};
-  fs.writeFileSync(path.join(root,'fading_fortune_validation_results_4.5s.2m.json'),JSON.stringify(result,null,2));
+  writeTestArtifact('fading_fortune_validation_results_4.5s.2m.json',JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();

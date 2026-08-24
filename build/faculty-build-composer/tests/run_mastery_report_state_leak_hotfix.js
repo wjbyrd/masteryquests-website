@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {assertCanonicalCoreVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
 
 function extractFunction(src,name){
@@ -15,7 +16,7 @@ function extractFunction(src,name){
 }
 
 const issues=[];
-if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`version ${core.COMPOSER_VERSION}`);
+assertCanonicalCoreVersion(core);
 if(!template.includes('<div id="question"></div>')) issues.push('question container is not block-safe');
 if(template.includes('<p id="question"></p>')) issues.push('legacy paragraph question container remains');
 if(!/function startGame\(shouldResume = false\)[\s\S]{0,420}restoreGameplayShell\(true\)/.test(template)) issues.push('new runs do not force pristine shell restoration');
@@ -54,6 +55,6 @@ const result={
   },
   issues
 };
-fs.writeFileSync(path.join(root,'mastery_report_state_leak_hotfix_results.json'),JSON.stringify(result,null,2));
+writeTestArtifact('mastery_report_state_leak_hotfix_results.json',JSON.stringify(result,null,2));
 console.log(JSON.stringify(result,null,2));
 if(!result.ok)process.exit(1);

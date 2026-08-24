@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {assertCanonicalCoreVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
@@ -42,7 +43,7 @@ function simulateManualEnd(mode){
 }
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`version ${core.COMPOSER_VERSION}`);
+  assertCanonicalCoreVersion(core);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical ${library.canonicalQuestionCount}`);
   const tiny=evidence({attempts:2,accuracy:1,byDifficulty:{easy:{attempts:2}},overall:false});
   const developing=evidence({attempts:7,accuracy:.86,byDifficulty:{easy:{attempts:4},medium:{attempts:3}},recentAccuracy:.86,overall:true});
@@ -71,6 +72,6 @@ function simulateManualEnd(mode){
   const recipe={schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'MR2 Seven Mode Validation',slug:'mr2-seven-mode',supportedModes:['standard','timed','exam','quiz','unlimited','legendary','score'],selectedConceptIds:['oligopoly'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
   const comp=core.compose(library,recipe); if(comp.errors.length) issues.push(...comp.errors);
   const result={phase:'mastery-report-2.0',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,canonicalQuestionCount:library.canonicalQuestionCount,evidenceCases:{tiny,developing,mastered,weakStrong},battleMenu:{exam:examMenu,unlimited:unlimitedMenu,standard:standardMenu},manualEnd:{exam:examEnd,unlimited:unlimitedEnd},sourceChecks,sevenModeValidation:comp.validation.modes.map(x=>({mode:x.mode,ok:x.ok})),issues};
-  fs.writeFileSync(path.join(root,'mastery_report_2_validation_results.json'),JSON.stringify(result,null,2));
+  writeTestArtifact('mastery_report_2_validation_results.json',JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2)); if(!result.ok)process.exit(1);
 })();

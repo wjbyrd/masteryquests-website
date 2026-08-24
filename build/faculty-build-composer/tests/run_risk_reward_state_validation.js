@@ -1,4 +1,5 @@
 const fs=require('fs'),path=require('path'),vm=require('vm');
+const {writeTestArtifact}=require('./composer-test-helpers.js');
 const root=path.resolve(__dirname,'..');
 const src=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
 function extractFunction(name){const start=src.indexOf(`function ${name}(`);if(start<0)throw new Error('missing '+name);const brace=src.indexOf('{',start);let d=0;for(let i=brace;i<src.length;i++){if(src[i]==='{')d++;else if(src[i]==='}'){d--;if(d===0)return src.slice(start,i+1);}}throw new Error('unterminated '+name);}
@@ -13,4 +14,4 @@ ctx.riskRewardBankroll=1000;ctx.riskRewardCurrentWager=250;ctx.riskRewardCurrent
 let one=vm.runInContext('settleRiskRewardAnswer(true,1200)',ctx);let two=vm.runInContext('settleRiskRewardAnswer(false,1300)',ctx);ck('correct_adds_wager',ctx.riskRewardBankroll===1250,ctx.riskRewardBankroll);ck('settles_once',two===null&&ctx.riskRewardBankroll===1250&&ctx.riskRewardQuestionsCompleted===1,JSON.stringify({two,bank:ctx.riskRewardBankroll,count:ctx.riskRewardQuestionsCompleted}));
 ctx.riskRewardBankroll=37;ctx.riskRewardCurrentWager=37;ctx.riskRewardCurrentWagerRatio=1;ctx.riskRewardWagerLocked=true;ctx.riskRewardWagerSettled=false;ctx.riskRewardBusted=false;let bust=vm.runInContext('settleRiskRewardAnswer(false,1500)',ctx);ck('all_in_loss_zero',ctx.riskRewardBankroll===0,ctx.riskRewardBankroll);ck('all_in_sets_bust',ctx.riskRewardBusted===true&&bust.busted===true,JSON.stringify(bust));
 const report=vm.runInContext('getRiskRewardReportData()',ctx);ck('report_separates_risk',report.startingBankroll===1000&&report.finalBankroll===0&&report.busted===true,JSON.stringify(report));
-const out={phase:'mode10-risk-reward-state-v1',ok:checks.every(c=>c.ok),checks};fs.writeFileSync(path.join(root,'risk_reward_state_validation_results_4.5s.2m.json'),JSON.stringify(out,null,2));console.log(JSON.stringify(out,null,2));if(!out.ok)process.exit(1);
+const out={phase:'mode10-risk-reward-state-v1',ok:checks.every(c=>c.ok),checks};writeTestArtifact('risk_reward_state_validation_results_4.5s.2m.json',JSON.stringify(out,null,2));console.log(JSON.stringify(out,null,2));if(!out.ok)process.exit(1);

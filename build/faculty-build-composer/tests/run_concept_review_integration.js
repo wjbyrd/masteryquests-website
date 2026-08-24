@@ -5,11 +5,16 @@ const os = require('os');
 const path = require('path');
 const crypto = require('crypto');
 const Core = require('../composer-core.js');
+const {
+  assertCanonicalCoreVersion,
+  assertGeneratedComposerVersion,
+  testArtifactPath
+} = require('./composer-test-helpers.js');
 
 const composerRoot = path.resolve(__dirname, '..');
 const manifestPath = path.join(composerRoot, 'data', 'concept-reviews', 'manifest.json');
-const outputPath = path.join(__dirname, 'concept_review_integration_results.json');
-const runtimeSamplePath = path.join(__dirname, 'concept_review_runtime_manifest_sample.json');
+const outputPath = testArtifactPath('tests/concept_review_integration_results.json');
+const runtimeSamplePath = testArtifactPath('tests/concept_review_runtime_manifest_sample.json');
 
 function loadLibrary(){
   const source = fs.readFileSync(path.join(composerRoot, 'data', 'composer_library.js'), 'utf8').trim();
@@ -40,11 +45,10 @@ function allCompositionQuestions(composition){
   ]);
 }
 
-function validateAndCopyConceptReviewPackage(caseDirectory, resolution){
+function validateConceptReviewRuntimePackage(caseDirectory, resolution){
   const reviewDirectory = path.join(caseDirectory, 'concept-reviews');
   fs.mkdirSync(reviewDirectory, {recursive:true});
-  const destinationPaths = new Set();
-  let pdfBytes = 0;
+  let referencedPdfBytes = 0;
 
   for(const asset of resolution.assets){
     const sourcePath = path.join(composerRoot, ...asset.sourcePath.split('/'));
@@ -52,13 +56,11 @@ function validateAndCopyConceptReviewPackage(caseDirectory, resolution){
     const sourceBytes = fs.readFileSync(sourcePath);
     assert(sourceBytes.length === asset.sizeBytes, `Source size differs for ${asset.code}.`);
     assert(hashBuffer(sourceBytes) === asset.sha256, `Source hash differs for ${asset.code}.`);
-    assert(!destinationPaths.has(asset.destinationPath.toLowerCase()), `Duplicate destination ${asset.destinationPath}.`);
-    destinationPaths.add(asset.destinationPath.toLowerCase());
-    const destinationPath = path.join(caseDirectory, ...asset.destinationPath.split('/'));
-    fs.writeFileSync(destinationPath, sourceBytes);
-    const copiedBytes = fs.readFileSync(destinationPath);
-    assert(hashBuffer(copiedBytes) === asset.sha256, `Copied hash differs for ${asset.code}.`);
-    pdfBytes += copiedBytes.length;
+    assert(
+      asset.publicUrl === `https://masteryquests.org/concept-reviews/${asset.code}.pdf`,
+      `Unexpected public Concept Review URL for ${asset.code}.`
+    );
+    referencedPdfBytes += sourceBytes.length;
   }
 
   const runtimeText = Core.stableStringify(resolution.runtimeIndex, 2) + '\n';
@@ -66,16 +68,18 @@ function validateAndCopyConceptReviewPackage(caseDirectory, resolution){
   fs.writeFileSync(runtimePath, runtimeText, 'utf8');
   const runtime = JSON.parse(fs.readFileSync(runtimePath, 'utf8'));
   for(const asset of runtime.assetInventory){
-    const packagedPath = path.join(caseDirectory, ...asset.path.split('/'));
-    assert(fs.existsSync(packagedPath), `Runtime manifest points to missing asset ${asset.path}.`);
-    assert(hashBuffer(fs.readFileSync(packagedPath)) === asset.sha256, `Runtime asset hash differs for ${asset.code}.`);
+    const sourceAsset = resolution.assets.find(candidate => candidate.code === asset.code);
+    assert(sourceAsset, `Runtime manifest references unknown asset ${asset.code}.`);
+    assert(asset.path === sourceAsset.publicUrl, `Runtime URL differs for ${asset.code}.`);
+    assert(asset.sha256 === sourceAsset.sha256, `Runtime asset hash differs for ${asset.code}.`);
   }
-  assert(runtime.assetInventory.length === resolution.assets.length, 'Runtime asset inventory count differs from copied assets.');
+  assert(runtime.assetInventory.length === resolution.assets.length, 'Runtime asset inventory count differs from resolved assets.');
   const runtimeManifestBytes = Buffer.byteLength(runtimeText, 'utf8');
-  return {pdfBytes, runtimeManifestBytes, totalAddedBytes:pdfBytes + runtimeManifestBytes};
+  return {referencedPdfBytes, runtimeManifestBytes, generatedPackageBytes:runtimeManifestBytes};
 }
 
 async function run(){
+  assertCanonicalCoreVersion(Core);
   const library = loadLibrary();
   const manifestText = fs.readFileSync(manifestPath, 'utf8');
   const manifest = JSON.parse(manifestText);
@@ -219,15 +223,17 @@ async function run(){
       fs.mkdirSync(caseDirectory, {recursive:true});
       const config = await Core.createConfig(recipe, library, templateSha256);
       composition.conceptReviewRuntimeSource = conceptReviewRuntimeSource;
+      composition.conceptReviewRuntimeIndex = resolution.runtimeIndex;
       const html = Core.buildHtml(template, composition, config, {
         schemaVersion:Core.RECIPE_SCHEMA_VERSION,
         composerVersion:Core.COMPOSER_VERSION,
         selectedConceptIds:testCase.selectedConceptIds,
         conceptReviewManifestPath:'concept-reviews/manifest.json'
       });
+      assertGeneratedComposerVersion(html);
       fs.writeFileSync(path.join(caseDirectory, `${config.slug}.html`), html, 'utf8');
       assert(html.includes('function loadConceptReviewManifest'), `${testCase.id} generated HTML lacks the Concept Review runtime.`);
-      const size = validateAndCopyConceptReviewPackage(caseDirectory, resolution);
+      const size = validateConceptReviewRuntimePackage(caseDirectory, resolution);
 
       if(testCase.id === 'D'){
         fs.writeFileSync(runtimeSamplePath, Core.stableStringify(resolution.runtimeIndex, 2) + '\n', 'utf8');
@@ -245,9 +251,9 @@ async function run(){
         reviewCodes:resolution.reviewCodes,
         questionCount:composition.counts.totalCanonical,
         answerVerification,
-        pdfBytes:size.pdfBytes,
+        referencedPdfBytes:size.referencedPdfBytes,
         runtimeManifestBytes:size.runtimeManifestBytes,
-        totalAddedBytes:size.totalAddedBytes
+        generatedPackageBytes:size.generatedPackageBytes
       });
     }
   } finally {
@@ -272,7 +278,8 @@ async function run(){
       missingRequiredReviewPdfs:[],
       duplicateConflictingMappings:[],
       brokenRuntimePaths:[],
-      copiedHashMismatches:[],
+      sourceHashMismatches:[],
+      runtimeUrlIssues:[],
       fullLibraryPackagedOnlyWhenRequired:true
     },
     testCases:results
@@ -283,7 +290,7 @@ async function run(){
     selected:item.selectedConceptCount,
     closure:item.diagnosticClosureSize,
     reviews:item.reviewPdfCount,
-    addedBytes:item.totalAddedBytes,
+    generatedPackageBytes:item.generatedPackageBytes,
     status:item.status
   }))}, null, 2));
 }

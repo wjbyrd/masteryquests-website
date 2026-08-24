@@ -3,6 +3,7 @@ const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
+const {attachConceptReviewRuntime,assertCanonicalCoreVersion,assertGeneratedComposerVersion,writeTestArtifact}=require('./composer-test-helpers.js');
 const raw=fs.readFileSync(path.join(root,'data','composer_library.js'),'utf8');
 const library=JSON.parse(raw.replace(/^\s*window\.MQ_COMPOSER_LIBRARY\s*=\s*/,'').replace(/;\s*$/,''));
 const template=fs.readFileSync(path.join(root,'template','mastery-quests-faculty-template-composer-ready.html'),'utf8');
@@ -70,7 +71,7 @@ function simulateManualPracticeEnd(mode){
 
 (async()=>{
   const issues=[];
-  if(core.COMPOSER_VERSION!=='4.5s.2m') issues.push(`composer version ${core.COMPOSER_VERSION}`);
+  assertCanonicalCoreVersion(core);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
   if(core.MODE_ORDER.length!==10) issues.push(`mode count ${core.MODE_ORDER.length}`);
   if(library.canonicalQuestionCount!==8163) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
@@ -93,8 +94,10 @@ function simulateManualPracticeEnd(mode){
 
   const config=await core.createConfig(recipe,library,await core.sha256Hex(template));
   const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:composition.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:config.templateSha256};
+  attachConceptReviewRuntime(core,composition,library,recipe.selectedConceptIds);
   const html=core.buildHtml(template,composition,config,metadata);
-  fs.writeFileSync(path.join(__dirname,'unlimited-only.html'),html);
+  assertGeneratedComposerVersion(html);
+  writeTestArtifact('tests/unlimited-only.html',html);
 
   const checks={
     unlimitedCard: html.includes('data-mode="unlimited"'),
@@ -147,7 +150,7 @@ function simulateManualPracticeEnd(mode){
     generatedHtmlBytes:Buffer.byteLength(html),
     issues
   };
-  fs.writeFileSync(path.join(root,'unlimited_practice_validation_results.json'),JSON.stringify(result,null,2));
+  writeTestArtifact('unlimited_practice_validation_results.json',JSON.stringify(result,null,2));
   console.log(JSON.stringify(result,null,2));
   if(!result.ok) process.exit(1);
 })();
