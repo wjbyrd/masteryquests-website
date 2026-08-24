@@ -481,11 +481,11 @@ body{
 
   .game-card{
     position:relative;
-    min-height:0;
-    height:calc(100vh - 300px);
+    min-height:calc(100vh - 300px);
+    height:auto;
     border:1px solid rgba(255,255,255,.16);
     border-radius:18px;
-    overflow:hidden;
+    overflow:visible;
     background:rgba(4,6,12,.84);
     box-shadow:0 18px 48px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
     transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
@@ -981,6 +981,9 @@ body{
 }
 
 .game-card.restored{
+  min-height:calc(100vh - 300px);
+  height:auto;
+  overflow:visible;
   border-color:color-mix(in srgb, var(--accent) 58%, white 18%);
   box-shadow:
     0 24px 70px rgba(0,0,0,.72),
@@ -3782,6 +3785,5 @@ function selectGame(gameKey){
 </script>
 </body>
 </html>
-
 
 

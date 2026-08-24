@@ -1775,6 +1775,7 @@ TIP:
 .national-mode-card-shell{width:min(760px,100%);text-align:center}
 .national-mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0}
 .national-mode-card{min-height:170px;padding:22px;border:1px solid rgba(214,177,92,.5);border-radius:8px;background:rgba(12,18,18,.94);color:#f3ead2;cursor:pointer}
+.national-mode-card img{display:block;width:100%;height:110px;object-fit:cover;border-radius:6px;margin-bottom:12px}
 .national-mode-card strong,.national-mode-card span{display:block}.national-mode-card strong{font-size:22px;color:#f4d58d;margin-bottom:12px}.national-mode-card span{line-height:1.5}
 .mastery-report-screen{position:fixed;inset:0;z-index:1250;box-sizing:border-box;overflow:auto;padding:24px max(calc((100% - 760px)/2),18px);background:rgba(4,5,5,.98);text-align:left}.mastery-report-screen>h1,.mastery-report-screen>p{text-align:center}
 .mastery-summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:18px 0}.mastery-summary-grid>div,.mastery-section{padding:12px;border:1px solid rgba(214,177,92,.35);border-radius:8px;background:rgba(12,18,18,.7)}
@@ -4431,7 +4432,7 @@ function answer(choice) {
     // =============================================
     sendGameData({
         runID: runID,
-		game: "The Dominion of Power",
+		game: "The National Engine",
         event: "question",
         user: username || "anonymous",
 		email: studentEmail || "",
@@ -4444,7 +4445,7 @@ function answer(choice) {
         responseTime: responseTime,
 	     attempt: totalAttempts ?? 0,
 		  streak: streak ?? 0,
-		  elapsedTime: startTime ? (Date.now() - startTime) : 0,
+		  elapsedTime: getElapsedTimeMs(),
           adaptiveMode: adaptiveMode
     });
 
@@ -4565,7 +4566,7 @@ if(remediationState.active){
          // Boss defeated
          sendGameData({
             runID: runID,
-			game: "The Dominion of Power",
+			game: "The National Engine",
             event: "boss_defeated",
             user: username,
 			email: studentEmail,
@@ -5082,14 +5083,14 @@ function handleVictory() {
         sfxVictory.play();
     }
     
-    const totalTimeMs = Date.now() - startTime;
+    const totalTimeMs = freezeCompletionTime();
     const timeString = formatTime(totalTimeMs);
     const accuracy = Math.round((correctAnswers / totalAttempts) * 100);
     const verificationCode = generateCode(username, accuracy, maxStreak, totalTimeMs);
 
 sendGameData({
     runID: runID,
-	game: "The Dominion of Power",
+	game: "The National Engine",
     event: "complete",
     user: username,
 	email: studentEmail,
@@ -5102,7 +5103,7 @@ sendGameData({
     responseTime: 0,
     attempt: totalAttempts,
     streak: streak,
-    elapsedTime: startTime ? (Date.now() - startTime) : 0,
+    elapsedTime: getElapsedTimeMs(),
     adaptiveMode: "complete",
     totalTime: totalTimeMs,
     accuracy: accuracy / 100,
@@ -5288,7 +5289,7 @@ function formatTime(ms) {
 // Removing those will break this function.
 // =============================================     
 function copyResults() {
-    const totalTimeMs = Date.now() - startTime;
+    const totalTimeMs = getElapsedTimeMs();
     const timeString = formatTime(totalTimeMs);
     const code = document.getElementById("vCode").innerText;
     const accuracy = Math.round((correctAnswers / totalAttempts) * 100);
@@ -5321,9 +5322,11 @@ function sendGameData(data) {
     timestamp: new Date().toISOString(),
     runID: data.runID || localStorage.getItem("gauntletRunID") || "",
     token: data.token || "",
-    version: "LOC-foundry-engine-ms-telemetry-v1",
+    version: NATIONAL_TELEMETRY_VERSION,
+    telemetryVersion: NATIONAL_TELEMETRY_VERSION,
+    gameVersion: NATIONAL_GAME_VERSION,
     userAgent: navigator.userAgent || "",
-    game: data.game || "The Dominion of Power",
+    game: data.game || "The National Engine",
     event: data.event || "",
     user: data.user || username || "anonymous",
 	email: studentEmail || "",  
@@ -5572,7 +5575,7 @@ let gameMode = 'standard';
     screen.id = 'modeSelectScreen';
     screen.className = 'national-mode-select';
     screen.style.display = 'none';
-    screen.innerHTML = '<div class="national-mode-card-shell"><h1>CHOOSE A MODE</h1><div class="national-mode-grid"><button type="button" class="national-mode-card" data-mode="standard"><strong>Standard Campaign</strong><span>Original 30-room campaign with bosses, artifacts, and saved progress.</span></button><button type="button" class="national-mode-card" data-mode="unlimited"><strong>Unlimited Practice</strong><span>Adaptive practice with no bosses, artifacts, or campaign progression. End whenever you are ready for a Mastery Report.</span></button></div><button type="button" class="start-btn national-mode-back">BACK</button></div>';
+    screen.innerHTML = '<div class="national-mode-card-shell"><h1>CHOOSE A MODE</h1><div class="national-mode-grid"><button type="button" class="national-mode-card" data-mode="standard"><strong>Standard Campaign</strong><span>Original 30-room campaign with bosses, artifacts, and saved progress.</span></button><button type="button" class="national-mode-card" data-mode="unlimited"><img src="unlimited-mode.webp" alt="" aria-hidden="true" onerror="this.hidden=true"><strong>Unlimited Practice</strong><span>Adaptive practice with no bosses, artifacts, or campaign progression. End whenever you are ready for a Mastery Report.</span></button></div><button type="button" class="start-btn national-mode-back">BACK</button></div>';
     document.body.append(screen);
     screen.querySelector('[data-mode="standard"]').addEventListener('click', () => startSelectedMode('standard'));
     screen.querySelector('[data-mode="unlimited"]').addEventListener('click', () => startSelectedMode('unlimited'));
@@ -5663,7 +5666,7 @@ let gameMode = 'standard';
     const objectives = getNationalBucketEntries(masteryState.byObjective, 'objective');
     const concepts = getNationalBucketEntries(masteryState.byTag, 'tag');
     const types = getNationalTypeEntries();
-    const totalTimeMs = startTime ? Math.max(0, Date.now() - startTime) : 0;
+    const totalTimeMs = getElapsedTimeMs();
     return {
       mode: getModeDisplayName(),
       accuracy: totalAttempts ? correctAnswers / totalAttempts : 0,
@@ -5748,7 +5751,349 @@ let gameMode = 'standard';
   ensureNationalModeScreen();
   updatePracticeEndControl();
 
+// PHASE 1.5 PRODUCTION HARDENING — NATIONAL ENGINE
+const NATIONAL_GAME_VERSION = "National-Engine-2026.08.24-phase1.5";
+const NATIONAL_TELEMETRY_VERSION = "NationalEngine-local-telemetry-v2";
+const NATIONAL_PHASE15_SAVE_KEY = "NationalEngine:standard:save:phase1.5";
+const NATIONAL_PHASE15_SAVE_SCHEMA = "phase1.5-v1";
+let accumulatedElapsedMs = 0;
+let finalElapsedTimeMs = null;
+let runPhase = "transition";
+let nationalBossSummaryRoom = null;
+let nationalSavedQuestionUI = null;
+let nationalSuppressSave = false;
+let nationalResumeBootstrap = false;
+let nationalCompletionLocked = false;
+let nationalResumeClockOnVisible = false;
+
+const nationalPhase15BaseSendGameData = sendGameData;
+sendGameData = function(data){
+  if(nationalResumeBootstrap) return;
+  return nationalPhase15BaseSendGameData.call(this, data);
+};
+
+function getElapsedTimeMs(){
+  if(Number.isFinite(finalElapsedTimeMs)) return finalElapsedTimeMs;
+  const priorSessionsMs = Math.max(0, Number(accumulatedElapsedMs) || 0);
+  const currentSessionMs = startTime ? Math.max(0, Date.now() - startTime) : 0;
+  return priorSessionsMs + currentSessionMs;
+}
+
+function freezeCompletionTime(fallbackMs = 0){
+  if(!Number.isFinite(finalElapsedTimeMs)){
+    const elapsed = getElapsedTimeMs();
+    finalElapsedTimeMs = Number.isFinite(elapsed) ? elapsed : Math.max(0, Number(fallbackMs) || 0);
+  }
+  return finalElapsedTimeMs;
+}
+
+function nationalPauseActiveClock(){
+  if(!startTime || Number.isFinite(finalElapsedTimeMs)) return;
+  accumulatedElapsedMs = getElapsedTimeMs();
+  startTime = null;
+  nationalResumeClockOnVisible = true;
+}
+
+function nationalResumeActiveClock(){
+  if(nationalResumeClockOnVisible && !Number.isFinite(finalElapsedTimeMs)) startTime = Date.now();
+  nationalResumeClockOnVisible = false;
+}
+
+function renderQuestionMedia(question){
+  const imageBox = document.getElementById("questionImageBox");
+  if(!imageBox) return;
+  imageBox.innerHTML = "";
+  imageBox.style.display = "none";
+  if(!question || !question.image) return;
+  const image = document.createElement("img");
+  image.src = question.image;
+  image.alt = String(question.imageAlt || question.alt || "Question graph");
+  image.title = "Click to enlarge";
+  image.tabIndex = 0;
+  image.setAttribute("role", "button");
+  image.setAttribute("aria-label", "Open expanded graph: " + image.alt);
+  imageBox.appendChild(image);
+  imageBox.style.display = "block";
+}
+
+function nationalClone(value, fallback){
+  try { return JSON.parse(JSON.stringify(value)); }
+  catch(error) { return fallback; }
+}
+
+function captureNationalQuestionUI(){
+  const read = id => document.getElementById(id);
+  nationalSavedQuestionUI = {
+    questionHTML: read("question")?.innerHTML || "",
+    hintText: read("formulaHint")?.innerText || "",
+    bossMessageHTML: read("bossMessage")?.innerHTML || "",
+    areaText: read("areaDisplay")?.innerText || "",
+    progressWidth: read("progressFill")?.style.width || ""
+  };
+  return nationalSavedQuestionUI;
+}
+
+function saveGameState(){
+  if(nationalSuppressSave || gameMode !== "standard" || nationalCompletionLocked) return;
+  const saveData = {
+    saveSchema: NATIONAL_PHASE15_SAVE_SCHEMA,
+    gameVersion: NATIONAL_GAME_VERSION,
+    elapsedMs: getElapsedTimeMs(),
+    runPhase,
+    room,
+    bossHealth,
+    bossCheckpoint,
+    bossPool: nationalClone(bossPool, []),
+    correctAnswers,
+    totalAttempts,
+    maxStreak,
+    streak,
+    username,
+    studentEmail,
+    runID,
+    conceptMemory: nationalClone(conceptMemory, {}),
+    masteryState: nationalClone(masteryState, {}),
+    adaptiveMode,
+    tagHistory: nationalClone(tagHistory, []),
+    lastTypes: nationalClone(lastTypes, []),
+    usedQuestions: nationalClone(usedQuestions, {}),
+    questionHistory: nationalClone(questionHistory, {}),
+    remediationState: nationalClone(remediationState, null),
+    detourActive: !!detourActive,
+    detourReturnRoom: Number(detourReturnRoom || 1),
+    currentQuestion: nationalClone(currentQuestion, null),
+    questionUI: captureNationalQuestionUI(),
+    bossSummaryRoom: nationalBossSummaryRoom,
+    artifacts: {
+      index: localStorage.getItem("vaultIndex") === "true",
+      valve: localStorage.getItem("vaultValve") === "true",
+      seal: localStorage.getItem("vaultSeal") === "true"
+    }
+  };
+  localStorage.setItem(NATIONAL_PHASE15_SAVE_KEY, JSON.stringify(saveData));
+  localStorage.setItem("gauntletRoom", String(room));
+}
+
+function persistStandardRunAfterStateChange(nextPhase = runPhase){
+  runPhase = nextPhase || runPhase;
+  if(gameMode === "standard") saveGameState();
+}
+
+function loadSavedGame(){
+  const raw = localStorage.getItem(NATIONAL_PHASE15_SAVE_KEY);
+  if(!raw) return false;
+  try {
+    const saveData = JSON.parse(raw);
+    room = Number(saveData.room || 1);
+    bossHealth = Number(saveData.bossHealth || 3);
+    bossCheckpoint = Number(saveData.bossCheckpoint || 1);
+    bossPool = Array.isArray(saveData.bossPool) ? saveData.bossPool : [];
+    correctAnswers = Number(saveData.correctAnswers || 0);
+    totalAttempts = Number(saveData.totalAttempts || 0);
+    maxStreak = Number(saveData.maxStreak || 0);
+    streak = Number(saveData.streak || 0);
+    username = saveData.username || username || "";
+    studentEmail = saveData.studentEmail || studentEmail || "";
+    runID = saveData.runID || runID || "";
+    conceptMemory = saveData.conceptMemory || {};
+    masteryState = saveData.masteryState || {byTag:{},byObjective:{},bySkill:{},byDifficulty:{},recent:[],attemptEvidence:[]};
+    adaptiveMode = saveData.adaptiveMode || "support";
+    tagHistory = Array.isArray(saveData.tagHistory) ? saveData.tagHistory : [];
+    lastTypes = Array.isArray(saveData.lastTypes) ? saveData.lastTypes : [];
+    usedQuestions = saveData.usedQuestions || usedQuestions;
+    questionHistory = saveData.questionHistory || questionHistory;
+    if(saveData.remediationState) remediationState = saveData.remediationState;
+    detourActive = !!saveData.detourActive;
+    detourReturnRoom = Number(saveData.detourReturnRoom || room);
+    if(saveData.currentQuestion) currentQuestion = saveData.currentQuestion;
+    nationalSavedQuestionUI = saveData.questionUI || null;
+    nationalBossSummaryRoom = Number(saveData.bossSummaryRoom) || null;
+    runPhase = saveData.runPhase || "transition";
+    accumulatedElapsedMs = Math.max(0, Number(saveData.elapsedMs || 0));
+    startTime = Date.now();
+    finalElapsedTimeMs = null;
+    nationalResumeClockOnVisible = false;
+    if(saveData.artifacts?.index) localStorage.setItem("vaultIndex", "true");
+    if(saveData.artifacts?.valve) localStorage.setItem("vaultValve", "true");
+    if(saveData.artifacts?.seal) localStorage.setItem("vaultSeal", "true");
+    return true;
+  } catch(error) {
+    return false;
+  }
+}
+
+function clearSavedGame(){
+  localStorage.removeItem(NATIONAL_PHASE15_SAVE_KEY);
+}
+
+function hasSavedGame(){
+  if(localStorage.getItem(NATIONAL_PHASE15_SAVE_KEY)) return true;
+  const legacyRoom = Number(localStorage.getItem("gauntletRoom") || 0);
+  return Number.isFinite(legacyRoom) && legacyRoom > 1;
+}
+
+const nationalPhase15BaseDisplayQuestion = displayQuestion;
+displayQuestion = function(...args){
+  renderQuestionMedia(currentQuestion);
+  const result = nationalPhase15BaseDisplayQuestion.apply(this, args);
+  if(currentQuestion && Array.isArray(currentQuestion.options)) persistStandardRunAfterStateChange("question");
+  return result;
+};
+
+function restoreNationalQuestion(){
+  const ui = nationalSavedQuestionUI || {};
+  const question = document.getElementById("question");
+  const hint = document.getElementById("formulaHint");
+  const boss = document.getElementById("bossMessage");
+  const area = document.getElementById("areaDisplay");
+  const progress = document.getElementById("progressFill");
+  if(question) question.innerHTML = ui.questionHTML || currentQuestion?.q || "";
+  if(hint) hint.innerText = ui.hintText || "";
+  if(boss) boss.innerHTML = ui.bossMessageHTML || "";
+  if(area) area.innerText = ui.areaText || "";
+  if(progress && ui.progressWidth) progress.style.width = ui.progressWidth;
+  if(typeof updateMazeTrack === "function") updateMazeTrack();
+  renderQuestionMedia(currentQuestion);
+  nationalPhase15BaseDisplayQuestion();
+  persistStandardRunAfterStateChange("question");
+}
+
+const nationalPhase15BaseAnswer = answer;
+answer = function(choice, ...args){
+  const beforeAttempts = Number(totalAttempts || 0);
+  runPhase = "resolving";
+  const result = nationalPhase15BaseAnswer.call(this, choice, ...args);
+  if(Number(totalAttempts || 0) > beforeAttempts){
+    if(runPhase === "resolving") runPhase = remediationState?.active ? "remediation" : "resolved";
+    persistStandardRunAfterStateChange(runPhase);
+  } else if(runPhase === "resolving") {
+    runPhase = "question";
+  }
+  return result;
+};
+
+const nationalPhase15BaseKnowledgeRoom = showKnowledgeRoom;
+showKnowledgeRoom = function(bossRoom, ...args){
+  const result = nationalPhase15BaseKnowledgeRoom.call(this, bossRoom, ...args);
+  nationalBossSummaryRoom = Number(bossRoom) || null;
+  persistStandardRunAfterStateChange("boss-summary");
+  return result;
+};
+
+const nationalPhase15BaseReportData = getMasteryReportData;
+getMasteryReportData = function(...args){
+  const report = nationalPhase15BaseReportData.apply(this, args);
+  report.totalTimeMs = getElapsedTimeMs();
+  report.timeString = formatTime(report.totalTimeMs);
+  return report;
+};
+
+const nationalPhase15BaseVictory = handleVictory;
+handleVictory = function(...args){
+  if(nationalCompletionLocked) return;
+  nationalCompletionLocked = true;
+  freezeCompletionTime();
+  const result = nationalPhase15BaseVictory.apply(this, args);
+  runPhase = "complete";
+  clearSavedGame();
+  return result;
+};
+
+const nationalPhase15BaseStartSelectedMode = startSelectedMode;
+startSelectedMode = function(mode, options = {}){
+  accumulatedElapsedMs = 0;
+  startTime = null;
+  finalElapsedTimeMs = null;
+  runPhase = "transition";
+  nationalBossSummaryRoom = null;
+  nationalSavedQuestionUI = null;
+  nationalCompletionLocked = false;
+  nationalResumeClockOnVisible = false;
+  return nationalPhase15BaseStartSelectedMode.call(this, mode, options);
+};
+
+function continueSavedRun(){
+  if(!hasSavedGame()) return;
+  const hasPhase15Save = !!localStorage.getItem(NATIONAL_PHASE15_SAVE_KEY);
+  const legacyState = hasPhase15Save ? null : {
+    room:Math.max(1, Math.min(30, Number(localStorage.getItem("gauntletRoom") || 1))),
+    artifacts:{
+      index:localStorage.getItem("vaultIndex") === "true",
+      valve:localStorage.getItem("vaultValve") === "true",
+      seal:localStorage.getItem("vaultSeal") === "true"
+    }
+  };
+  gameMode = "standard";
+  mqNationalRunEnding = false;
+  nationalCompletionLocked = false;
+  ensureNationalModeScreen().style.display = "none";
+  nationalSuppressSave = true;
+  nationalResumeBootstrap = true;
+  try { mqNationalBaseStartGame(); }
+  finally {
+    nationalSuppressSave = false;
+    nationalResumeBootstrap = false;
+  }
+  if(hasPhase15Save){
+    if(!loadSavedGame()) return;
+  } else {
+    room = legacyState.room;
+    accumulatedElapsedMs = 0;
+    startTime = Date.now();
+    finalElapsedTimeMs = null;
+    runPhase = "transition";
+    if(legacyState.artifacts.index) localStorage.setItem("vaultIndex", "true");
+    if(legacyState.artifacts.valve) localStorage.setItem("vaultValve", "true");
+    if(legacyState.artifacts.seal) localStorage.setItem("vaultSeal", "true");
+  }
+  ["vaultIndex", "vaultValve", "vaultSeal"].forEach(id => {
+    if(localStorage.getItem(id) === "true") document.getElementById(id)?.classList.add("unlocked");
+  });
+  if(runPhase === "boss-summary" && nationalBossSummaryRoom){
+    showKnowledgeRoom(nationalBossSummaryRoom);
+  } else if(runPhase === "question" && currentQuestion && Array.isArray(currentQuestion.options)) {
+    restoreNationalQuestion();
+  } else {
+    loadQuestion();
+  }
+  updatePracticeEndControl();
+}
+
+function installNationalContinueButton(){
+  const startContent = document.querySelector("#startScreen .start-content");
+  if(!startContent) return;
+  let button = document.getElementById("continueRunBtn");
+  if(!button){
+    button = document.createElement("button");
+    button.id = "continueRunBtn";
+    button.type = "button";
+    button.className = "start-btn secondary-start-btn";
+    button.textContent = "CONTINUE STANDARD RUN";
+    button.addEventListener("click", continueSavedRun);
+    startContent.appendChild(button);
+  }
+  button.style.display = hasSavedGame() ? "block" : "none";
+}
+
+document.addEventListener("visibilitychange", () => {
+  if(document.visibilityState === "hidden") {
+    nationalPauseActiveClock();
+    persistStandardRunAfterStateChange(runPhase);
+  } else {
+    nationalResumeActiveClock();
+  }
+});
+window.addEventListener("pagehide", () => {
+  nationalPauseActiveClock();
+  persistStandardRunAfterStateChange(runPhase);
+});
+
+const nationalPhase15Style = document.createElement("style");
+nationalPhase15Style.id = "phase15HardeningStyles";
+nationalPhase15Style.textContent = "@media (min-width:769px) and (max-width:1180px){#gameBox .practice-mode-controls{width:100%;max-width:none;box-sizing:border-box;justify-content:flex-start}#gameBox .targeted-repair-indicator{flex:1 1 100%;width:100%;max-width:none;box-sizing:border-box;text-align:left}.national-mode-card img{width:100%;max-height:150px;object-fit:cover}}";
+document.head.appendChild(nationalPhase15Style);
+installNationalContinueButton();
+
 </script>
 </body>
 </html>
-
