@@ -5,6 +5,7 @@ const Core = window.MQComposerCore;
 const Library = window.MQ_COMPOSER_LIBRARY;
 const CourseAreaModel = window.MQCourseAreaModel;
 const ThemeLibrary = window.MQOfficialThemeLibrary;
+const CustomAssets = window.MQFacultyCustomAssets;
 const MODE_LABELS = {
   standard: 'Standard Campaign',
   timed: 'Timed Trial',
@@ -161,7 +162,9 @@ const state = {
     checkpointTwo: null,
     finalCheckpoint: null
   },
-  appearance: {presetId:'default', overrides:{}},
+  appearance: {presetId:'default', overrides:{}, customOverrides:{}},
+  customAssets: {},
+  customStatus: {},
   importWarnings: [],
   step: 1,
   templateText: '',
@@ -487,7 +490,7 @@ function renderModeOptions(){
 }
 
 function currentResolvedTheme(){
-  return Core.resolveThemeSelection(state.appearance, ThemeLibrary);
+  return Core.resolveThemeSelection(state.appearance, ThemeLibrary, state.customAssets);
 }
 
 function themeAssetOptions(slotId){
@@ -500,7 +503,54 @@ function themeThumbnail(asset, fallbackLabel){
   if(!asset){
     return `<div class="theme-fallback-preview" aria-label="${esc(fallbackLabel)}">MQ</div>`;
   }
-  return `<img loading="lazy" src="${esc(asset.previewUrl)}" alt="${esc(asset.alt || asset.description || asset.label)}">`;
+  return `<img loading="lazy" src="${esc(asset.dataUrl || asset.previewUrl)}" alt="${esc(asset.alt || asset.description || asset.label)}">`;
+}
+
+function formatImageBytes(bytes){
+  const value = Number(bytes) || 0;
+  return value >= 1048576 ? `${(value / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(value / 1024))} KB`;
+}
+
+function cleanCustomAssetState(){
+  state.appearance = Core.canonicalThemeSelection(state.appearance, ThemeLibrary, state.customAssets);
+  state.customAssets = Core.pruneCustomAssets(state.customAssets, state.appearance, ThemeLibrary);
+}
+
+async function useCustomImage(slotId, file){
+  const definition = ThemeLibrary.slots[slotId];
+  if(!definition || !file) return;
+  state.customStatus[slotId] = {type:'processing', message:'Preparing your image...'};
+  renderThemeSlots();
+  try{
+    const result = await CustomAssets.processFile(file, slotId, definition);
+    const prior = state.customAssets[result.record.id];
+    const record = prior ? {
+      ...prior,
+      compatibleSlots:[...new Set([...(prior.compatibleSlots || []), slotId])],
+      originalName:result.record.originalName || prior.originalName
+    } : result.record;
+    const nextAppearance = {
+      ...state.appearance,
+      overrides:{...state.appearance.overrides},
+      customOverrides:{...(state.appearance.customOverrides || {}), [slotId]:record.id}
+    };
+    delete nextAppearance.overrides[slotId];
+    const nextAssets = {...state.customAssets, [record.id]:record};
+    const retained = Core.pruneCustomAssets(nextAssets, nextAppearance, ThemeLibrary);
+    if(CustomAssets.totalBytes(retained) > Core.CUSTOM_ASSET_POLICY.maxTotalBytes){
+      throw new Error(`Your custom artwork is over the ${Math.round(Core.CUSTOM_ASSET_POLICY.maxTotalBytes / 1048576)} MB game budget. Reset or replace another custom image first.`);
+    }
+    state.appearance = nextAppearance;
+    state.customAssets = retained;
+    state.customStatus[slotId] = {type:result.warnings.length ? 'warning' : 'valid', message:result.warnings.length ? result.warnings.join(' ') : 'Custom image ready.'};
+    renderThemeSlots();
+    recalculate();
+    announce(`${definition.label} custom image is ready.`);
+  } catch(error){
+    state.customStatus[slotId] = {type:'error', message:error.facultyMessage || error.message || 'This image could not be used.'};
+    renderThemeSlots();
+    announce(`${definition.label} custom image was not accepted.`);
+  }
 }
 
 function renderThemePresets(){
@@ -543,8 +593,15 @@ function renderThemeSlots(){
       <div class="theme-slot-grid">${entries.map(([slotId, definition]) => {
         const current = resolved.slots[slotId];
         const selectedOverride = state.appearance.overrides[slotId] || '';
+        const customId = state.appearance.customOverrides?.[slotId] || '';
+        const customAsset = customId ? state.customAssets[customId] : null;
         const options = themeAssetOptions(slotId);
-        const sourceLabel = current.source === 'override' ? 'Custom selection' : current.source === 'preset' ? resolved.presetLabel : 'Default shell fallback';
+        const sourceLabel = current.source === 'custom' ? 'Custom image' : current.source === 'override' ? 'Official selection' : current.source === 'preset' ? resolved.presetLabel : 'Default shell fallback';
+        const status = state.customStatus[slotId];
+        const fitWarnings = customAsset ? CustomAssets.slotFitWarnings(customAsset.width, customAsset.height, definition) : [];
+        const customDetails = customAsset ? `${customAsset.width} x ${customAsset.height} - ${formatImageBytes(customAsset.sizeBytes)}` : '';
+        const message = status?.message || fitWarnings.join(' ');
+        const messageType = status?.type || (fitWarnings.length ? 'warning' : '');
         return `<div class="theme-slot-row" data-theme-slot="${esc(slotId)}">
           <div class="theme-slot-thumbnail">${themeThumbnail(current.asset, `${definition.label} default`)}</div>
           <div class="theme-slot-control">
@@ -554,8 +611,14 @@ function renderThemeSlots(){
               <option value="">Use selected theme</option>
               ${options.map(asset => `<option value="${esc(asset.id)}" ${selectedOverride === asset.id ? 'selected' : ''}>${esc(asset.label)}</option>`).join('')}
             </select>
+            <div class="custom-image-actions">
+              <button type="button" class="custom-upload" data-custom-upload-button="${esc(slotId)}">${customAsset ? 'Replace' : 'Upload My Image'}</button>
+              <input class="hidden" type="file" data-custom-upload-input="${esc(slotId)}" accept="image/webp,image/png,image/jpeg,.webp,.png,.jpg,.jpeg">
+              ${customDetails ? `<span class="custom-image-meta">${esc(customDetails)}</span>` : ''}
+            </div>
+            ${message ? `<div class="custom-image-message ${esc(messageType)}" role="status">${esc(message)}</div>` : ''}
           </div>
-          <button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset ${esc(definition.label)} to selected theme" ${selectedOverride ? '' : 'disabled'}>Reset</button>
+          <button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset ${esc(definition.label)} to selected theme" ${selectedOverride || customId ? '' : 'disabled'}>Reset to Theme</button>
         </div>`;
       }).join('')}</div>
     </details>`).join('');
@@ -565,13 +628,30 @@ function renderThemeSlots(){
       const slotId = select.dataset.themeSlotSelect;
       if(select.value) state.appearance.overrides[slotId] = select.value;
       else delete state.appearance.overrides[slotId];
+      delete state.appearance.customOverrides[slotId];
+      delete state.customStatus[slotId];
+      cleanCustomAssetState();
       renderThemeSlots();
       recalculate();
     });
   });
+  container.querySelectorAll('[data-custom-upload-button]').forEach(button => {
+    button.addEventListener('click', () => container.querySelector(`[data-custom-upload-input="${button.dataset.customUploadButton}"]`)?.click());
+  });
+  container.querySelectorAll('[data-custom-upload-input]').forEach(input => {
+    input.addEventListener('change', async () => {
+      const file = input.files?.[0];
+      input.value = '';
+      if(file) await useCustomImage(input.dataset.customUploadInput, file);
+    });
+  });
   container.querySelectorAll('[data-theme-reset]').forEach(button => {
     button.addEventListener('click', () => {
-      delete state.appearance.overrides[button.dataset.themeReset];
+      const slotId = button.dataset.themeReset;
+      delete state.appearance.overrides[slotId];
+      delete state.appearance.customOverrides[slotId];
+      delete state.customStatus[slotId];
+      cleanCustomAssetState();
       renderThemeSlots();
       recalculate();
       announce('Artwork reset to the selected theme.');
@@ -911,13 +991,15 @@ function renderCheckpointBoard(){
 }
 
 function recipe(){
+  cleanCustomAssetState();
   return {
     schemaVersion: Core.RECIPE_SCHEMA_VERSION,
     title: state.title.trim(),
     slug: state.slug.trim(),
     supportedModes: [...state.supportedModes],
     selectedConceptIds: [...state.selectedConceptIds],
-    appearance: Core.canonicalThemeSelection(state.appearance, ThemeLibrary),
+    appearance: Core.canonicalThemeSelection(state.appearance, ThemeLibrary, state.customAssets),
+    customAssets: Core.pruneCustomAssets(state.customAssets, state.appearance, ThemeLibrary),
     checkpointFocus: Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
       checkpointKey,
       state.checkpointFocus[checkpointKey] == null
@@ -1276,7 +1358,42 @@ async function loadEmbeddedThemeAssets(assets){
   return embedded;
 }
 
+async function verifyCurrentCustomAssets(){
+  const accepted = {};
+  const rejected = new Map();
+  let total = 0;
+  for(const [id, record] of Object.entries(state.customAssets || {})){
+    const verification = await CustomAssets.verifyRecord(record);
+    if(!verification.ok){
+      rejected.set(id, verification.error);
+      continue;
+    }
+    if(total + record.sizeBytes > Core.CUSTOM_ASSET_POLICY.maxTotalBytes){
+      rejected.set(id, `This image exceeds the ${Math.round(Core.CUSTOM_ASSET_POLICY.maxTotalBytes / 1048576)} MB custom-artwork budget.`);
+      continue;
+    }
+    total += record.sizeBytes;
+    accepted[id] = record;
+  }
+  const warnings = [];
+  for(const [slotId, assetId] of Object.entries(state.appearance.customOverrides || {})){
+    if(accepted[assetId]) continue;
+    delete state.appearance.customOverrides[slotId];
+    const label = ThemeLibrary.slots[slotId]?.label || slotId;
+    warnings.push({type:'custom-asset-fallback', message:`${label}: ${rejected.get(assetId) || 'The saved custom image is missing.'} The selected theme was restored.`});
+  }
+  state.customAssets = Core.pruneCustomAssets(accepted, state.appearance, ThemeLibrary);
+  if(warnings.length){
+    state.importWarnings.push(...warnings);
+    renderThemeSlots();
+    recalculate();
+  }
+  return warnings;
+}
+
 async function generateGameDownload(){
+  const customWarnings = await verifyCurrentCustomAssets();
+  if(customWarnings.length) announce(`${customWarnings.length} invalid custom image selection${customWarnings.length === 1 ? ' was' : 's were'} restored to the selected theme.`);
   const activeRecipe = recipe();
   const composition = Core.compose(Library, activeRecipe);
   if(composition.errors.length) throw new Error(composition.errors.join('\n'));
@@ -1298,8 +1415,9 @@ async function generateGameDownload(){
   const conceptReviewRuntimeManifest = Core.stableStringify(conceptReviews.runtimeIndex, 2) + '\n';
   const conceptReviewRuntimeManifestBytes = new TextEncoder().encode(conceptReviewRuntimeManifest).length;
 
-  const resolvedTheme = Core.resolveThemeSelection(activeRecipe.appearance, ThemeLibrary);
+  const resolvedTheme = Core.resolveThemeSelection(activeRecipe.appearance, ThemeLibrary, activeRecipe.customAssets);
   const selectedThemeAssets = Core.themeAssetsForSelection(resolvedTheme, activeRecipe.supportedModes);
+  const selectedCustomAssets = Core.customAssetsForSelection(resolvedTheme, activeRecipe.supportedModes);
   const config = await Core.createConfig(activeRecipe, Library, state.templateSha256, ThemeLibrary);
   const metadata = {
     schemaVersion: Core.RECIPE_SCHEMA_VERSION,
@@ -1320,6 +1438,7 @@ async function generateGameDownload(){
   };
   announce(selectedThemeAssets.length ? 'Embedding selected official theme artwork.' : 'Using the default Mastery Quest presentation.');
   const embeddedThemeAssets = await loadEmbeddedThemeAssets(selectedThemeAssets);
+  for(const asset of selectedCustomAssets) embeddedThemeAssets[asset.id] = asset.dataUrl;
   config.visualTheme = Core.createRuntimeThemeConfig(resolvedTheme, embeddedThemeAssets, activeRecipe.supportedModes);
   metadata.themePreset = resolvedTheme.presetId;
   metadata.themeLibraryVersion = ThemeLibrary.libraryVersion;
@@ -1352,6 +1471,14 @@ async function generateGameDownload(){
       path:asset.sourceUrl,
       sha256:asset.sha256,
       sizeBytes:asset.sizeBytes,
+      embedded:true
+    })),
+    customThemeAssetInventory: selectedCustomAssets.map(asset => ({
+      id:asset.id,
+      sha256:asset.sha256,
+      sizeBytes:asset.sizeBytes,
+      width:asset.width,
+      height:asset.height,
       embedded:true
     })),
     conceptReviewDelivery: 'central-https',
@@ -1404,11 +1531,30 @@ async function importRecipe(file){
   const imported = JSON.parse(await file.text());
   const migrated = Core.migrateRecipe(imported, Library, ThemeLibrary);
   const next = migrated.recipe;
+  const verifiedCustomAssets = {};
+  const customWarnings = [];
+  const rejectedCustomAssets = new Map();
+  let customTotal = 0;
+  for(const [id, record] of Object.entries(next.customAssets || {})){
+    const verification = await CustomAssets.verifyRecord(record);
+    if(!verification.ok){
+      rejectedCustomAssets.set(id, verification.error);
+      continue;
+    }
+    if(customTotal + record.sizeBytes > Core.CUSTOM_ASSET_POLICY.maxTotalBytes){
+      rejectedCustomAssets.set(id, `This image exceeds the ${Math.round(Core.CUSTOM_ASSET_POLICY.maxTotalBytes / 1048576)} MB custom-artwork budget.`);
+      continue;
+    }
+    customTotal += record.sizeBytes;
+    verifiedCustomAssets[id] = record;
+  }
   state.title = next.title || 'Imported Faculty Quest';
   state.slug = Core.safeSlug(next.slug || state.title);
   state.slugTouched = true;
   state.supportedModes = [...next.supportedModes];
-  state.appearance = Core.canonicalThemeSelection(next.appearance, ThemeLibrary);
+  state.customAssets = verifiedCustomAssets;
+  state.customStatus = {};
+  state.appearance = Core.canonicalThemeSelection(next.appearance, ThemeLibrary, state.customAssets);
   state.selectedConceptIds = next.selectedConceptIds.filter(id => Library.concepts[id]);
   state.checkpointFocus = Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
     checkpointKey,
@@ -1416,7 +1562,17 @@ async function importRecipe(file){
       ? null
       : next.checkpointFocus[checkpointKey].filter(id => state.selectedConceptIds.includes(id))
   ]));
-  state.importWarnings = migrated.migrationWarnings;
+  const requestedCustomSlots = Object.keys(next.appearance?.customOverrides || {});
+  for(const slotId of requestedCustomSlots){
+    if(state.appearance.customOverrides[slotId]) continue;
+    const label = ThemeLibrary.slots[slotId]?.label || slotId;
+    const assetId = next.appearance.customOverrides[slotId];
+    const reason = rejectedCustomAssets.get(assetId) || 'The saved custom image was missing or invalid.';
+    const message = `${label}: ${reason} The selected theme was restored.`;
+    state.customStatus[slotId] = {type:'error', message};
+    customWarnings.push({type:'custom-asset-fallback', message});
+  }
+  state.importWarnings = [...migrated.migrationWarnings, ...customWarnings];
 
   $('gameTitle').value = state.title;
   $('gameSlug').value = state.slug;
@@ -1427,7 +1583,9 @@ async function importRecipe(file){
   renderConcepts();
   renderCheckpointBoard();
   recalculate();
-  announce(migrated.migrationWarnings.length
+  announce(customWarnings.length
+    ? `${customWarnings.length} custom image selection${customWarnings.length === 1 ? ' was' : 's were'} invalid and restored to the selected theme.`
+    : migrated.migrationWarnings.length
     ? 'Legacy recipe imported, migrated, and revalidated.'
     : 'Composition recipe imported and revalidated.');
 }
@@ -1484,7 +1642,9 @@ async function init(){
     if(!confirm('Clear the current composition?')) return;
     state.selectedConceptIds = [];
     state.checkpointFocus = emptyCheckpointFocus();
-    state.appearance = {presetId:'default', overrides:{}};
+    state.appearance = {presetId:'default', overrides:{}, customOverrides:{}};
+    state.customAssets = {};
+    state.customStatus = {};
     state.importWarnings = [];
     $('conceptSearch').value = '';
     $('selectionFilter').value = 'all';

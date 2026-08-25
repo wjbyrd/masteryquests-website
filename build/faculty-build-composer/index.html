@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260824-phase3a-official-themes">
+  <link rel="stylesheet" href="composer.css?v=20260824-phase3b-custom-images">
 </head>
 <body>
   <header class="site-header">
@@ -147,7 +147,7 @@
         <div class="panel-heading-row">
           <div>
             <h2>Game appearance</h2>
-            <p>Choose a polished official theme. Customize individual artwork only where your game needs a different look.</p>
+            <p>Choose a polished official theme, then use official artwork or upload your own image for any visual slot.</p>
           </div>
         </div>
         <h3>Official themes</h3>
@@ -155,7 +155,7 @@
         <div class="theme-override-heading">
           <div>
             <h3>Artwork details</h3>
-            <p>Theme artwork is already matched to each part of the game. Open a group to review or replace individual selections.</p>
+            <p>Open a group to review each selection, choose another official image, or upload a local WebP, PNG, or JPEG.</p>
           </div>
         </div>
         <div id="themeSlotGroups" class="theme-slot-groups"></div>
@@ -180,7 +180,7 @@
     <section class="step" data-step-panel="7">
       <div class="panel">
         <h2>Generate your game</h2>
-        <p>The downloaded game uses one self-contained HTML file. Graph images are embedded, so there is no separate asset folder to upload or keep beside the game.</p>
+        <p>The downloaded game uses one self-contained HTML file. Graph images and selected custom artwork are embedded, so there is no separate asset folder to upload or keep beside the game.</p>
         <div id="finalSummary" class="review-box"></div>
         <div class="action-row" style="margin-top:16px">
           <button id="downloadPackage" class="primary">Download Game (.ZIP)</button>
@@ -205,10 +205,11 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260824-phase3a-official-themes"></script>
+  <script src="composer-core.js?v=20260824-phase3b-custom-images"></script>
   <script src="course-area-model.js?v=20260813-course-area-step3"></script>
   <script src="data/composer_library.js?v=20260812-risk-reward-4.5s.2m"></script>
   <script src="data/official_theme_library.js?v=20260824-phase3a"></script>
-  <script src="composer.js?v=20260824-phase3a-official-themes"></script>
+  <script src="custom-asset-core.js?v=20260824-phase3b"></script>
+  <script src="composer.js?v=20260824-phase3b-custom-images"></script>
 </body>
 </html>

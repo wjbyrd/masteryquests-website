@@ -3488,7 +3488,9 @@ function isFacultyModeSupported(mode){
 
 function getFacultyVisualSlot(slotId){
     const slot = FACULTY_COMPOSITION_CONFIG.visualTheme?.slots?.[slotId];
-    return slot && typeof slot === "object" ? slot : {id:null,label:"",displayName:"",alt:"",source:"fallback",src:""};
+    if(!slot || typeof slot !== "object") return {id:null,label:"",displayName:"",alt:"",source:"fallback",src:""};
+    const embeddedCustom = slot.id ? FACULTY_COMPOSITION_CONFIG.visualTheme?.customAssetData?.[slot.id] : "";
+    return {...slot, src:slot.src || embeddedCustom || ""};
 }
 
 function facultyEscapeAttribute(value){

@@ -5,8 +5,19 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.3a';
-const RECIPE_SCHEMA_VERSION = '1.3.0';
+const COMPOSER_VERSION = '4.5s.3b';
+const RECIPE_SCHEMA_VERSION = '1.4.0';
+const CUSTOM_ASSET_POLICY = Object.freeze({
+  allowedSourceTypes:['image/webp','image/png','image/jpeg'],
+  maxSourceBytes:12 * 1024 * 1024,
+  maxNormalizedBytes:6 * 1024 * 1024,
+  maxTotalBytes:24 * 1024 * 1024,
+  maxDimension:8192,
+  maxPixels:40 * 1000 * 1000,
+  sceneLongEdge:2560,
+  objectLongEdge:2048,
+  webpQuality:0.9
+});
 const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score', 'trialGraph', 'fadingFortune', 'riskReward'];
 const POOL_MINIMUMS = {
   easy: 6,
@@ -132,11 +143,55 @@ function isThemeAssetCompatible(asset, slotId){
   return Boolean(asset && Array.isArray(asset.compatibleSlots) && asset.compatibleSlots.includes(slotId));
 }
 
-function canonicalThemeSelection(input, themeLibrary){
+function canonicalCustomAssets(input, themeLibrary){
+  const slots = themeLibrary?.slots || {};
+  const records = Array.isArray(input) ? input : Object.values(input && typeof input === 'object' ? input : {});
+  const out = {};
+  for(const record of records){
+    const source = record && typeof record === 'object' ? record : {};
+    const id = String(source.id || '');
+    const fileType = String(source.fileType || source.mimeType || '').toLowerCase();
+    const width = Math.round(Number(source.width) || 0);
+    const height = Math.round(Number(source.height) || 0);
+    const sizeBytes = Math.round(Number(source.sizeBytes) || 0);
+    const originalWidth = Math.round(Number(source.originalWidth) || width);
+    const originalHeight = Math.round(Number(source.originalHeight) || height);
+    const originalSizeBytes = Math.round(Number(source.originalSizeBytes) || sizeBytes);
+    const sha256 = String(source.sha256 || '').toLowerCase();
+    const dataUrl = String(source.dataUrl || '');
+    const compatibleSlots = uniqueStrings(source.compatibleSlots).filter(slotId => Boolean(slots[slotId]));
+    if(!/^faculty-[a-f0-9]{16,64}$/.test(id)) continue;
+    if(!CUSTOM_ASSET_POLICY.allowedSourceTypes.includes(fileType)) continue;
+    if(width < 1 || height < 1 || sizeBytes < 1 || sizeBytes > CUSTOM_ASSET_POLICY.maxNormalizedBytes) continue;
+    if(width > CUSTOM_ASSET_POLICY.maxDimension || height > CUSTOM_ASSET_POLICY.maxDimension || width * height > CUSTOM_ASSET_POLICY.maxPixels) continue;
+    if(!/^[a-f0-9]{64}$/.test(sha256) || !dataUrl.startsWith(`data:${fileType};base64,`) || !compatibleSlots.length) continue;
+    out[id] = {
+      id,
+      label:String(source.label || 'Custom image').slice(0, 120),
+      originalName:String(source.originalName || '').slice(0, 180),
+      category:'theme-custom',
+      fileType,
+      width,
+      height,
+      originalWidth,
+      originalHeight,
+      originalSizeBytes,
+      sizeBytes,
+      sha256,
+      dataUrl,
+      compatibleSlots,
+      normalized:true
+    };
+  }
+  return out;
+}
+
+function canonicalThemeSelection(input, themeLibrary, customAssets = {}){
   const source = input && typeof input === 'object' ? input : {};
   const presets = themeLibrary?.presets || {};
   const slots = themeLibrary?.slots || {};
   const assets = themeAssetIndex(themeLibrary);
+  const custom = canonicalCustomAssets(customAssets, themeLibrary);
   const presetId = presets[source.presetId] ? source.presetId : 'default';
   const overrides = {};
   for(const [slotId, assetId] of Object.entries(source.overrides || {})){
@@ -144,31 +199,44 @@ function canonicalThemeSelection(input, themeLibrary){
     const asset = assets.get(String(assetId || ''));
     if(isThemeAssetCompatible(asset, slotId)) overrides[slotId] = asset.id;
   }
-  return {presetId, overrides};
+  const customOverrides = {};
+  for(const [slotId, assetId] of Object.entries(source.customOverrides || {})){
+    const asset = custom[String(assetId || '')];
+    if(slots[slotId] && isThemeAssetCompatible(asset, slotId)) customOverrides[slotId] = asset.id;
+  }
+  return {presetId, overrides, customOverrides};
 }
 
-function resolveThemeSelection(input, themeLibrary){
-  const selection = canonicalThemeSelection(input, themeLibrary);
+function resolveThemeSelection(input, themeLibrary, customAssets = {}){
+  const custom = canonicalCustomAssets(customAssets, themeLibrary);
+  const selection = canonicalThemeSelection(input, themeLibrary, custom);
   const presets = themeLibrary?.presets || {};
   const slotDefinitions = themeLibrary?.slots || {};
   const assets = themeAssetIndex(themeLibrary);
   const preset = presets[selection.presetId] || presets.default || {id:'default', label:'Default Mastery Quest', values:{}};
   const resolvedSlots = {};
   for(const [slotId, definition] of Object.entries(slotDefinitions)){
+    const customAsset = custom[selection.customOverrides[slotId]];
     const overrideId = selection.overrides[slotId];
     const presetId = preset.values?.[slotId];
     const overrideAsset = assets.get(overrideId);
     const presetAsset = assets.get(presetId);
-    const asset = isThemeAssetCompatible(overrideAsset, slotId)
+    const officialAsset = isThemeAssetCompatible(overrideAsset, slotId)
       ? overrideAsset
-      : isThemeAssetCompatible(presetAsset, slotId)
-        ? presetAsset
-        : null;
+      : isThemeAssetCompatible(presetAsset, slotId) ? presetAsset : null;
+    const asset = isThemeAssetCompatible(customAsset, slotId) ? customAsset : officialAsset;
+    const semantic = definition.group === 'Characters' || definition.group === 'Rewards';
+    const resolvedAsset = asset ? deepClone(asset) : null;
+    if(resolvedAsset && asset === customAsset){
+      resolvedAsset.label = `Custom ${definition.label} image`;
+      resolvedAsset.displayName = semantic ? definition.label : '';
+      resolvedAsset.alt = semantic ? definition.label : '';
+    }
     resolvedSlots[slotId] = {
       slotId,
-      source: asset ? (asset === overrideAsset ? 'override' : 'preset') : 'fallback',
+      source: asset ? (asset === customAsset ? 'custom' : asset === overrideAsset ? 'override' : 'preset') : 'fallback',
       fallback: definition.fallback || 'shell-default',
-      asset: asset ? deepClone(asset) : null
+      asset: resolvedAsset
     };
   }
   return {
@@ -177,6 +245,7 @@ function resolveThemeSelection(input, themeLibrary){
     presetId: preset.id || selection.presetId,
     presetLabel: preset.label || 'Default Mastery Quest',
     overrides: selection.overrides,
+    customOverrides: selection.customOverrides,
     slots: resolvedSlots
   };
 }
@@ -190,25 +259,47 @@ function themeAssetsForSelection(resolvedTheme, supportedModes = MODE_ORDER){
         .find(([slotId]) => slotId === resolved.slotId)?.[1]
       : null;
     if(mode && !enabledModes.has(mode)) continue;
-    if(resolved?.asset?.id && !unique.has(resolved.asset.id)) unique.set(resolved.asset.id, resolved.asset);
+    if(resolved?.source !== 'custom' && resolved?.asset?.id && !unique.has(resolved.asset.id)) unique.set(resolved.asset.id, resolved.asset);
   }
   return [...unique.values()];
+}
+
+function customAssetsForSelection(resolvedTheme, supportedModes = MODE_ORDER){
+  const enabledModes = new Set(supportedModes || []);
+  const unique = new Map();
+  for(const resolved of Object.values(resolvedTheme?.slots || {})){
+    const definitionMode = resolved?.slotId?.startsWith('mode')
+      ? {modeStandard:'standard',modeTimed:'timed',modeExam:'exam',modeQuiz:'quiz',modeUnlimited:'unlimited',modeLegendary:'legendary',modeScore:'score',modeTrialGraph:'trialGraph',modeFadingFortune:'fadingFortune',modeRiskReward:'riskReward'}[resolved.slotId]
+      : null;
+    if(definitionMode && !enabledModes.has(definitionMode)) continue;
+    if(resolved?.source === 'custom' && resolved?.asset?.id && !unique.has(resolved.asset.id)) unique.set(resolved.asset.id, resolved.asset);
+  }
+  return [...unique.values()];
+}
+
+function pruneCustomAssets(customAssets, appearance, themeLibrary){
+  const canonical = canonicalCustomAssets(customAssets, themeLibrary);
+  const referenced = new Set(Object.values(appearance?.customOverrides || {}).map(String));
+  return Object.fromEntries(Object.entries(canonical).filter(([id]) => referenced.has(id)));
 }
 
 function createRuntimeThemeConfig(resolvedTheme, embeddedAssets = {}, supportedModes = MODE_ORDER){
   const enabledModes = new Set(supportedModes || []);
   const modeBySlot = {modeStandard:'standard',modeTimed:'timed',modeExam:'exam',modeQuiz:'quiz',modeUnlimited:'unlimited',modeLegendary:'legendary',modeScore:'score',modeTrialGraph:'trialGraph',modeFadingFortune:'fadingFortune',modeRiskReward:'riskReward'};
   const slots = {};
+  const customAssetData = {};
   for(const [slotId, resolved] of Object.entries(resolvedTheme?.slots || {})){
     const mode = modeBySlot[slotId];
     const asset = mode && !enabledModes.has(mode) ? null : resolved?.asset;
+    const embedded = asset ? String(embeddedAssets[asset.id] || '') : '';
+    if(asset && resolved.source === 'custom' && embedded) customAssetData[asset.id] = embedded;
     slots[slotId] = asset ? {
       id:asset.id,
       label:asset.label || '',
       displayName:asset.displayName || asset.label || '',
       alt:asset.alt || '',
       source:resolved.source,
-      src:String(embeddedAssets[asset.id] || '')
+      src:resolved.source === 'custom' ? '' : embedded
     } : {
       id:null,
       label:'',
@@ -224,6 +315,8 @@ function createRuntimeThemeConfig(resolvedTheme, embeddedAssets = {}, supportedM
     presetId:resolvedTheme?.presetId || 'default',
     presetLabel:resolvedTheme?.presetLabel || 'Default Mastery Quest',
     overrides:deepClone(resolvedTheme?.overrides || {}),
+    customOverrides:deepClone(resolvedTheme?.customOverrides || {}),
+    customAssetData,
     slots
   };
 }
@@ -905,6 +998,7 @@ function migrateRecipe(recipe, library, themeLibrary){
   const source = recipe && typeof recipe === 'object' ? recipe : {};
   const selectedConceptIds = uniqueStrings(source.selectedConceptIds || source.concepts || []);
   const migrationWarnings = [];
+  const customAssets = canonicalCustomAssets(source.customAssets, themeLibrary);
   const checkpointFocus = {
     checkpointOne: null,
     checkpointTwo: null,
@@ -954,7 +1048,8 @@ function migrateRecipe(recipe, library, themeLibrary){
       supportedModes: MODE_ORDER.filter(mode => (source.supportedModes || []).includes(mode)),
       selectedConceptIds,
       checkpointFocus,
-      appearance: canonicalThemeSelection(source.appearance, themeLibrary)
+      appearance: canonicalThemeSelection(source.appearance, themeLibrary, customAssets),
+      customAssets: pruneCustomAssets(customAssets, source.appearance, themeLibrary)
     },
     migrationWarnings
   };
@@ -1447,6 +1542,7 @@ function buildHtml(template, composition, config, metadata){
 
 function canonicalRecipe(inputRecipe, library, themeLibrary){
   const migrated = migrateRecipe(inputRecipe, library, themeLibrary).recipe;
+  const customAssets = pruneCustomAssets(migrated.customAssets, migrated.appearance, themeLibrary);
   return {
     schemaVersion: RECIPE_SCHEMA_VERSION,
     title: String(migrated.title).trim(),
@@ -1459,18 +1555,20 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
         ? null
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
-    appearance: canonicalThemeSelection(migrated.appearance, themeLibrary),
+    appearance: canonicalThemeSelection(migrated.appearance, themeLibrary, customAssets),
+    customAssets,
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5s.3a-official-themes-phase1.5-hardening'
+    templateVersion: 'phase4.5s.3b-custom-assets-phase3a-official-themes-phase1.5-hardening'
   };
 }
 
 async function createConfig(recipe, library, templateSha, themeLibrary){
   const canonical = canonicalRecipe(recipe, library, themeLibrary);
   const fingerprint = await sha256Hex(stableStringify(canonical));
-  const resolvedTheme = resolveThemeSelection(canonical.appearance, themeLibrary);
+  const resolvedTheme = resolveThemeSelection(canonical.appearance, themeLibrary, canonical.customAssets);
+  const {customAssets:authoringCustomAssets, ...runtimeCanonical} = canonical;
   return {
-    ...canonical,
+    ...runtimeCanonical,
     composerVersion: COMPOSER_VERSION,
     compositionId: canonical.slug,
     fadingFortune: {
@@ -1536,6 +1634,7 @@ async function verifyAnswers(composition){
 return {
   COMPOSER_VERSION,
   RECIPE_SCHEMA_VERSION,
+  CUSTOM_ASSET_POLICY,
   MODE_ORDER,
   POOL_MINIMUMS,
   MODE_REQUIREMENTS,
@@ -1550,8 +1649,11 @@ return {
   bossDifficulty,
   bossQuestionsForCheckpoint,
   canonicalThemeSelection,
+  canonicalCustomAssets,
   resolveThemeSelection,
   themeAssetsForSelection,
+  customAssetsForSelection,
+  pruneCustomAssets,
   createRuntimeThemeConfig,
   resolveConceptModule,
   validateConceptReviewManifest,
