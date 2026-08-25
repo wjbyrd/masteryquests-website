@@ -127,6 +127,17 @@ function backgroundRecipe(label, presetId, customSourceId = ''){
   return recipe;
 }
 
+function guideRecipe(label, presetId, customSourceId = ''){
+  const recipe = backgroundRecipe(label, presetId);
+  recipe.slug = `manual-qa-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-guide`;
+  if(customSourceId){
+    const record = customRecord(customSourceId, 'guideImage');
+    recipe.customAssets[record.id] = record;
+    recipe.appearance.customOverrides.guideImage = record.id;
+  }
+  return recipe;
+}
+
 async function largeCustomRecord(seed, slotId){
   const width = 2560;
   const height = 1440;
@@ -686,6 +697,60 @@ try{
     backgroundBuilds.set(definition.label, await generateRecipe(definition.recipe));
   }
 
+  const customGuideBuild = await generateRecipe(guideRecipe('Default Custom', 'default', 'arcane-guide'));
+  const guideDefinitions = [
+    {label:'default-no-guide',build:backgroundBuilds.get('default'),hasImage:false},
+    {label:'default-custom-guide',build:customGuideBuild,hasImage:true},
+    {label:'official-market-guide',build:backgroundBuilds.get('market'),hasImage:true}
+  ];
+  const guideResults = [];
+  for(const definition of guideDefinitions){
+    const targetPage = await openRuntime(definition.build.html);
+    for(const viewport of [viewports[0], viewports[3]]){
+      await targetPage.setViewportSize(viewport);
+      await targetPage.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      const presentation = await targetPage.evaluate(() => {
+        const label = document.querySelector('#wizardName');
+        const box = document.querySelector('#wizardBox');
+        const imageArea = document.querySelector('#wizardImage');
+        const image = imageArea?.querySelector('img');
+        const visible = element => {
+          const rect = element?.getBoundingClientRect();
+          const style = element ? getComputedStyle(element) : null;
+          return Boolean(rect && rect.width > 0 && rect.height > 0 && style.display !== 'none' && style.visibility !== 'hidden');
+        };
+        const labelStyle = getComputedStyle(label);
+        return {
+          labelVisible:visible(label),
+          labelBorderBottomWidth:labelStyle.borderBottomWidth,
+          labelTextDecoration:labelStyle.textDecorationLine,
+          emptyState:box?.classList.contains('mq-guide-empty') || false,
+          boxHeight:box?.getBoundingClientRect().height || 0,
+          imageAreaHidden:Boolean(imageArea?.hidden) && getComputedStyle(imageArea).display === 'none',
+          imageAreaText:imageArea?.textContent.trim() || '',
+          imageVisible:visible(image),
+          imageSource:image?.src || '',
+          noHorizontalOverflow:document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1
+        };
+      });
+      assert(presentation.labelVisible, `${definition.label} Guide label was hidden at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.labelBorderBottomWidth, '0px', `${definition.label} Guide label retained its border underline at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.labelTextDecoration, 'none', `${definition.label} Guide label retained text decoration at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.emptyState, !definition.hasImage, `${definition.label} Guide panel state mismatch at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.imageAreaHidden, !definition.hasImage, `${definition.label} Guide image visibility mismatch at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.imageAreaText, '', `${definition.label} retained fallback placeholder text at ${viewport.width}x${viewport.height}`);
+      if(!definition.hasImage) assert(presentation.boxHeight < 80, `${definition.label} Guide panel did not collapse at ${viewport.width}x${viewport.height}`);
+      if(definition.hasImage){
+        assert(presentation.imageVisible, `${definition.label} Guide image was not visible at ${viewport.width}x${viewport.height}`);
+        assert(presentation.imageSource.startsWith('data:image/webp;base64,'), `${definition.label} Guide image was not embedded at ${viewport.width}x${viewport.height}`);
+      }
+      assert(presentation.noHorizontalOverflow, `${definition.label} overflowed horizontally at ${viewport.width}x${viewport.height}`);
+      await targetPage.screenshot({path:path.join(artifactRoot, `guide-fallback-${definition.label}-${viewport.width}x${viewport.height}.png`)});
+      guideResults.push({label:definition.label,viewport,presentation});
+    }
+    await targetPage.close();
+  }
+
   async function screenshotMean(pathname, crop){
     const pipeline = sharp(pathname);
     if(crop) pipeline.extract(crop);
@@ -816,6 +881,7 @@ try{
     boss2:true,
     artifact2:true,
     hallwayTransitions:{official:officialHallways.length,custom:customHallways.length,hybrid:hybridHallways.length,resume:officialHallways.filter(result => result.resume).length,trialGraph:trialGraphHallway},
+    guideFallbacks:{checks:guideResults.length,results:guideResults},
     backgrounds:{checks:backgroundResults.length,beforeAfter},
     generatedSizes:sizeBuilds,
     presetSwitch:officialResult.presetSwitch,
