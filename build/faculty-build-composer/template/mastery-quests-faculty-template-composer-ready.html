@@ -2695,22 +2695,48 @@ body{
     display:none !important;
 }
 
-#wizardBox{
-    display:none !important;
-}
-
 #gameShell{
     max-width:980px !important;
 }
 
 #gameBox{
-    width:100% !important;
+    flex:1 1 0;
+    min-width:0;
+    width:auto !important;
     max-width:none !important;
 }
 
 .mode-card{
     display:grid;
     grid-template-rows:160px auto 1fr;
+}
+
+.mode-card-media{
+    position:relative;
+    display:block;
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    min-height:0;
+    overflow:hidden;
+    border-bottom:1px solid rgba(247,217,130,.22);
+    background:linear-gradient(180deg,rgba(11,34,56,.95),rgba(2,6,23,.98));
+}
+
+.mode-card-media > img{
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:0;
+    object-fit:cover;
+    object-position:center;
+    border:0;
+}
+
+.mode-card-media > .mode-symbol{
+    height:100%;
+    min-height:0;
+    border:0;
 }
 
 /* FACULTY MODE AVAILABILITY FIX
@@ -2740,6 +2766,12 @@ body{
     .mode-symbol{
         min-height:135px;
         font-size:56px;
+    }
+}
+
+@media(max-width:768px){
+    #gameBox{
+        width:100% !important;
     }
 }
 
@@ -3558,6 +3590,13 @@ function applyFacultyVisualTheme(){
     document.querySelectorAll(".mode-card[data-mode]").forEach(card => {
         const slot = getFacultyVisualSlot(modeSlots[card.dataset.mode]);
         const symbol = card.querySelector(".mode-symbol");
+        let media = card.querySelector(".mode-card-media");
+        if(!media){
+            media = document.createElement("span");
+            media.className = "mode-card-media";
+            card.insertBefore(media, card.firstChild);
+            if(symbol) media.appendChild(symbol);
+        }
         const priorImage = card.querySelector(".mq-theme-mode-image");
         if(priorImage) priorImage.remove();
         if(slot.src){
@@ -3566,7 +3605,7 @@ function applyFacultyVisualTheme(){
             image.src = slot.src;
             image.alt = "";
             image.setAttribute("aria-hidden", "true");
-            card.insertBefore(image, card.firstChild);
+            media.insertBefore(image, media.firstChild);
             if(symbol) symbol.hidden = true;
         } else if(symbol){
             symbol.hidden = false;

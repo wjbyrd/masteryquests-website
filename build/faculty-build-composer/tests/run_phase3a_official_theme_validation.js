@@ -95,6 +95,14 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
     pass(!/^[A-Z]:\\|^file:/i.test(asset.sourceUrl), `${asset.id} contains a local development path`);
   }
 
+  const productionPathEmbedded = await core.loadEmbeddedThemeAssets(themes.assets, async sourceUrl => {
+    const asset = themes.assets.find(candidate => candidate.sourceUrl === sourceUrl);
+    const bytes = fs.readFileSync(sourceFile(asset));
+    return new Response(bytes, {status:200, headers:{'content-type':asset.fileType}});
+  });
+  pass(Object.keys(productionPathEmbedded).length === 51, 'Production embed path did not verify all 51 official assets');
+  pass(Object.values(productionPathEmbedded).every(value => value.startsWith('data:image/webp;base64,')), 'Production embed path returned a nonportable official asset');
+
   for(const [presetId, preset] of Object.entries(themes.presets)){
     pass(preset.id === presetId, `Preset key mismatch: ${presetId}`);
     pass(Boolean(preset.label && preset.description), `Preset metadata incomplete: ${presetId}`);
@@ -113,6 +121,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   }
 
   const hybridInput = {presetId:'market-citadel',overrides:{boss1:'arcane-boss-1',artifact3:'ledger-artifact-3',hallway2:'ledger-hall-2'}};
+  pass(themes.presets['market-citadel'].label === 'Market Gate', 'Stable market-citadel preset ID must display as Market Gate');
   const hybrid = core.resolveThemeSelection(hybridInput, themes);
   pass(hybrid.slots.boss1.asset.id === 'arcane-boss-1' && hybrid.slots.boss1.source === 'override', 'Boss override precedence failed');
   pass(hybrid.slots.hallway1.asset.id === 'market-hall-1' && hybrid.slots.hallway1.source === 'preset', 'Preset value was disturbed by another override');

@@ -428,6 +428,45 @@ async function sha256Hex(text){
   return sha256Fallback(text);
 }
 
+async function sha256BytesHex(input){
+  if(!globalThis.crypto?.subtle) throw new Error('This browser cannot verify official artwork integrity.');
+  const bytes = input instanceof Uint8Array
+    ? input
+    : input instanceof ArrayBuffer
+      ? new Uint8Array(input)
+      : ArrayBuffer.isView(input)
+        ? new Uint8Array(input.buffer, input.byteOffset, input.byteLength)
+        : null;
+  if(!bytes) throw new TypeError('Official artwork integrity requires binary bytes.');
+  const digest = await globalThis.crypto.subtle.digest('SHA-256', bytes);
+  return Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
+}
+
+function byteArrayToBase64(bytes){
+  let binary = '';
+  const chunkSize = 0x8000;
+  for(let index = 0; index < bytes.length; index += chunkSize){
+    binary += String.fromCharCode(...bytes.subarray(index, Math.min(index + chunkSize, bytes.length)));
+  }
+  return btoa(binary);
+}
+
+async function loadEmbeddedThemeAssets(assets, fetchAsset = globalThis.fetch?.bind(globalThis)){
+  if(typeof fetchAsset !== 'function') throw new Error('Official theme artwork cannot be loaded in this environment.');
+  const embedded = {};
+  for(const asset of assets || []){
+    const response = await fetchAsset(asset.sourceUrl);
+    if(!response.ok) throw new Error(`Could not load official theme artwork: ${asset.label}`);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    const actualSha = await sha256BytesHex(bytes);
+    if(asset.sha256 && actualSha !== asset.sha256){
+      throw new Error(`Official theme artwork failed its integrity check: ${asset.label}`);
+    }
+    embedded[asset.id] = `data:${asset.fileType || 'application/octet-stream'};base64,${byteArrayToBase64(bytes)}`;
+  }
+  return embedded;
+}
+
 // Canonical field-level question contract. The composer calls this function
 // directly and embeds this exact function source into each generated game.
 function validateFacultyQuestionRecord(question, poolName, availableAssets){
@@ -1645,6 +1684,8 @@ return {
   stableStringify,
   normalizeAnswerText,
   sha256Hex,
+  sha256BytesHex,
+  loadEmbeddedThemeAssets,
   safeSlug,
   bossDifficulty,
   bossQuestionsForCheckpoint,

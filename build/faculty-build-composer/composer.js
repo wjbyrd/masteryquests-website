@@ -1344,18 +1344,7 @@ async function loadEmbeddedQuestionAssets(assets){
 }
 
 async function loadEmbeddedThemeAssets(assets){
-  const embedded = {};
-  for(const asset of assets || []){
-    const response = await fetch(asset.sourceUrl);
-    if(!response.ok) throw new Error(`Could not load official theme artwork: ${asset.label}`);
-    const bytes = new Uint8Array(await response.arrayBuffer());
-    const actualSha = await Core.sha256Hex(bytes);
-    if(asset.sha256 && actualSha !== asset.sha256){
-      throw new Error(`Official theme artwork failed its integrity check: ${asset.label}`);
-    }
-    embedded[asset.id] = `data:${asset.fileType || mimeTypeForAsset(asset.sourceUrl)};base64,${bytesToBase64(bytes)}`;
-  }
-  return embedded;
+  return Core.loadEmbeddedThemeAssets(assets);
 }
 
 async function verifyCurrentCustomAssets(){

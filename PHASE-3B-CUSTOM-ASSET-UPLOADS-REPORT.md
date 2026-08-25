@@ -246,3 +246,116 @@ The richer generated-game preview and comparison workflow remain Phase 3C work.
 - Browser-local autosave is intentionally absent. Portable recipe export is the persistence mechanism.
 
 No commit was created.
+
+## Manual Faculty QA Repair
+
+### 1. Official-Asset Integrity Root Cause
+
+The browser generation path fetched the correct official asset bytes but passed its `Uint8Array` to `Core.sha256Hex()`, which is intentionally a text-hash helper. That helper converted the byte array to a comma-separated string before hashing it. The repair adds a strict `sha256BytesHex()` binary helper and a shared `loadEmbeddedThemeAssets()` production routine in `composer-core.js`; the Generate button now calls that same routine. Integrity checks remain mandatory and unchanged in strength.
+
+The three required pre-repair runtime hashes demonstrate the type error:
+
+| Asset | Incorrect pre-repair runtime SHA | Correct manifest/source SHA |
+|---|---|---|
+| `market-start` | `2b8000895f7a745582b5a5c6a790f4612c1b0f4e7ba0ad9243b7814de0a8ceb8` | `393487865dc2bea151a40ba66338c84f341b9e0404c603af83630d84aecf7af9` |
+| `market-gameplay` | `d3637661ee31a63581277f79ecdf43e5d40828e1ff1fd36e95532ce7eed7e9c0` | `1cabe91dbd264c5fceb721f76248c0ad9b6e875daa86bad3f85b9b4a7287519b` |
+| `ledger-hall-1` | `792afe9da863bc7b44bbf915c92411e75ad9e3f262713fb939bcaf6a507ac1e5` | `c986d6ea0dff70751b3b2ecb2281777387a530840541bb3f00b464bab660915b` |
+
+### 2. Local and Deployed Behavior
+
+Before repair, both local production and deployed `masteryquests.org` contained the faulty `Core.sha256Hex(bytes)` call and therefore had the same failure. After repair, the local Composer passes real browser generation. The deployed site still serves the pre-repair Composer until this uncommitted repair is published. This is a code-version difference after the local repair, not an artwork or path difference.
+
+The deployed responses used `Cache-Control: public, max-age=0, must-revalidate`; no stale artwork response was found. Composer script cache keys were advanced to `20260825-phase3b-manual-qa`, and the theme-library key was advanced to `20260825-market-gate-label` for the eventual deployment.
+
+### 3. Artwork Byte Comparison
+
+Repository files, local-server responses, and deployed-site responses were byte-for-byte identical for all three required samples:
+
+| Asset | Bytes | Repository SHA | Local response SHA | Deployed response SHA |
+|---|---:|---|---|---|
+| `market-start` | 784,744 | `393487865dc2bea151a40ba66338c84f341b9e0404c603af83630d84aecf7af9` | same | same |
+| `market-gameplay` | 716,792 | `1cabe91dbd264c5fceb721f76248c0ad9b6e875daa86bad3f85b9b4a7287519b` | same | same |
+| `ledger-hall-1` | 638,012 | `c986d6ea0dff70751b3b2ecb2281777387a530840541bb3f00b464bab660915b` | same | same |
+
+### 4. Manifest SHA Decision
+
+No manifest SHA was wrong, weakened, or regenerated. All 51 existing manifest hashes continue to match the repository artwork bytes.
+
+### 5. Source-Path Resolution
+
+Path construction was not the defect. Generation now and previously consumes each canonical asset record's `sourceUrl` directly. The browser regression records every requested URL and asserts it exactly equals the corresponding manifest `sourceUrl`. No display label, preset label, theme family, filename guess, or `market-citadel` slug is used to construct an artwork path.
+
+### 6. Market Gate Display Label
+
+The faculty-visible preset label and the two visible start/gameplay asset labels now say **Market Gate**. The stable internal preset ID `market-citadel`, asset IDs, and recipe schema references remain unchanged, so existing Phase 3A/3B recipes continue to resolve.
+
+### 7. Mode-Card Overflow Root Cause
+
+Generated mode images were inserted directly into a fixed `160px` grid row while an earlier generic rule gave them `height:220px`. Portrait and custom images could therefore extend into the title/description tracks. The first wrapper repair also exposed a one-pixel boundary error because its border initially used content-box sizing.
+
+### 8. Mode-Card Fix
+
+Every mode card now receives one shared `.mode-card-media` wrapper. The wrapper owns the fixed grid row, uses `overflow:hidden` and `box-sizing:border-box`, and contains both official and custom images at `width:100%`, `height:100%`, and `object-fit:cover`. The implementation has no per-image exceptions and does not distort images.
+
+### 9. Missing-Guide Root Cause
+
+The guide DOM, configuration resolver, and image-application hook still existed, but a later blank-template rule applied `#wizardBox { display:none !important; }`. This hid valid custom and official Guide selections after they were successfully embedded.
+
+### 10. Guide Rendering Restoration
+
+The blanket hide rule was removed. The existing polished-game pattern was retained: Market Gate, National Ledger, and Labyrinth of Choice all place the Guide in a dedicated panel beside the normal gameplay card, stack it above gameplay at tablet/phone widths, and hide it only during boss presentation. The faculty template uses this one shared normal-game renderer for Standard Campaign and other normal-shell modes; no gameplay, dialogue, or routing logic changed.
+
+### 11. Real Generation Integrity Result
+
+**51/51 PASS.** The new browser test loads the real production Composer page, resolves all 51 manifest records, fetches each `sourceUrl` through the browser, runs the same `loadEmbeddedThemeAssets()` integrity/embedding routine used by Generate, and confirms 51 portable WebP data URIs.
+
+### 12. Mixed Theme and Custom Generation
+
+**PASS.** The durable regression imports and generates this representative recipe through the actual Download button:
+
+- Market Gate preset
+- Ledger Hallway 1, Arcane Hallway 2, and Market Hallway 3 official overrides
+- custom Start Screen, Guide, Boss 2, Artifact 2, and Exam Drill card
+
+The generated ZIP contains a syntax-valid self-contained game. It embeds 14 selected official assets and five deduplicated custom assets. Standard gameplay loads, the custom Guide is visible, custom Boss 2 and Artifact 2 render, and the browser reports zero console or page errors.
+
+### 13. Four-Viewport Result
+
+**PASS** at `1440x900`, `1024x768`, `768x1024`, and `390x844`. Browser geometry and screenshots verified wide, near-square, and portrait custom mode images plus an official mode image. Artwork remained clipped to the media region, titles/descriptions remained readable, Guide images stayed inside their panel, question/answer regions were unobstructed, and no horizontal overflow occurred.
+
+### 14. Phase 3A Validator
+
+**PASS: 1,043 checks.** The three added checks cover the shared 51-asset production embed routine, portable output, and the Market Gate display label while preserving the stable internal ID.
+
+### 15. Phase 3B Validator
+
+**PASS: 51 checks.** Existing custom upload, validation, normalization, deduplication, precedence, migration, round-trip, portability, and fallback coverage remains green.
+
+### 16. Active Suite
+
+**PASS: 15/15 active runners.** No prior assertions were weakened.
+
+### 17. Manual Repair Files Changed
+
+- `build/faculty-build-composer/composer-core.js`
+- `build/faculty-build-composer/composer.js`
+- `build/faculty-build-composer/data/official_theme_library.js`
+- `build/faculty-build-composer/index.html`
+- `build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html`
+- `build/faculty-build-composer/tests/run_phase3a_official_theme_validation.js`
+- `build/faculty-build-composer/tests/run_phase3b_manual_qa_browser_validation.mjs`
+- `PHASE-3B-CUSTOM-ASSET-UPLOADS-REPORT.md`
+
+No deployed `play/` game, question bank, question artwork, official WebP, gameplay/adaptive logic, telemetry, archive, backup, or snapshot was modified.
+
+### 18. Git Diff Check
+
+`git diff --check`: **PASS**. Git emitted only the repository's existing LF-to-CRLF working-copy notices.
+
+### 19. Unresolved Issues
+
+- `masteryquests.org` will retain the pre-repair hash bug until this repair is published; deployment was outside this task and was not performed.
+- The durable browser test requires a local Chromium-family browser plus Playwright. It accepts `MQ_BROWSER_EXECUTABLE` when Chrome or Edge is installed outside the default Windows paths.
+- The previously documented Phase 3B payload-size, contrast-review, and recipe-only persistence constraints remain unchanged.
+
+No commit was created for the Manual Faculty QA Repair.
