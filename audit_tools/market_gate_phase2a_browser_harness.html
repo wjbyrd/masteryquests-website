@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market Gate Phase 2A Browser Harness</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; color: #f8fafc; background: #111827; }
+    header { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px; background: #0b1220; }
+    h1 { margin: 0 12px 0 0; font-size: 18px; }
+    button { min-height: 40px; padding: 8px 12px; color: #111827; background: #f8fafc; border: 2px solid transparent; border-radius: 4px; font-weight: 700; }
+    button:focus-visible { border-color: #38bdf8; outline: none; }
+    #status { padding: 8px 12px; min-height: 40px; background: #1f2937; }
+    iframe { display: block; width: 100%; height: calc(100vh - 118px); min-height: 520px; border: 0; background: #020617; }
+    @media (max-width: 520px) { h1 { width: 100%; } iframe { height: calc(100vh - 172px); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Market Gate Phase 2A Renderer</h1>
+    <button type="button" data-id="40000">PPF</button>
+    <button type="button" data-id="40015">Demand / Supply</button>
+    <button type="button" data-id="40022">Ceiling</button>
+    <button type="button" data-id="40028">Floor</button>
+    <button type="button" data-id="40045">Tax</button>
+    <button type="button" data-id="none">No Graph</button>
+  </header>
+  <div id="status" role="status">Loading production Market Gate...</div>
+  <iframe id="game" title="Production Market Gate renderer" src="../play/economic-realm/market-gate/index.html?v=phase2a"></iframe>
+  <script>
+    const frame = document.getElementById("game");
+    const status = document.getElementById("status");
+    const findQuestion = (win, id) => Object.values(win.eval("questionBanks")).flat().find(question => String(question.id) === String(id));
+    function exposeRenderer(win) {
+      ["startScreen", "modeSelectScreen", "quizSetupScreen"].forEach(id => {
+        const element = win.document.getElementById(id);
+        if(element) element.style.display = "none";
+      });
+      const shell = win.document.getElementById("gameShell");
+      const box = win.document.getElementById("gameBox");
+      if(shell) shell.style.display = "block";
+      if(box) box.style.display = "block";
+    }
+    function show(id) {
+      const win = frame.contentWindow;
+      exposeRenderer(win);
+      const question = id === "none" ? { id: "no-graph", q: "Graph-less control" } : findQuestion(win, id);
+      if(!question) throw new Error(`Question ${id} not found`);
+      win.renderQuestionMedia(question);
+      const image = win.document.querySelector("#questionImageBox img");
+      status.textContent = image ? `${question.id}: ${question.image} | ${image.alt}` : `${question.id}: media hidden`;
+    }
+    frame.addEventListener("load", () => show(40000));
+    document.addEventListener("click", event => {
+      const button = event.target.closest("button[data-id]");
+      if(button) show(button.dataset.id);
+    });
+  </script>
+</body>
+</html>
