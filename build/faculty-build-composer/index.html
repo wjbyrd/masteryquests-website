@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260813-course-area-step3">
+  <link rel="stylesheet" href="composer.css?v=20260824-phase3a-official-themes">
 </head>
 <body>
   <header class="site-header">
     <h1>Faculty Concept Composer</h1>
-    <p>Choose economic concepts, select the game modes you plan to use, review automatic checkpoint coverage, and generate a populated Mastery Quest without editing JavaScript.</p>
+    <p>Choose economic concepts, select game modes and official artwork, review checkpoint coverage, and generate a polished Mastery Quest without editing code.</p>
   </header>
 
   <main class="app-shell">
@@ -22,8 +22,9 @@
       <button data-step="2">2. Modes</button>
       <button data-step="3">3. Concepts</button>
       <button data-step="4">4. Checkpoints</button>
-      <button data-step="5">5. Readiness</button>
-      <button data-step="6">6. Generate</button>
+      <button data-step="5">5. Appearance</button>
+      <button data-step="6">6. Readiness</button>
+      <button data-step="7">7. Generate</button>
     </nav>
 
     <section class="step active" data-step-panel="1">
@@ -142,6 +143,26 @@
     </section>
 
     <section class="step" data-step-panel="5">
+      <div class="panel appearance-panel">
+        <div class="panel-heading-row">
+          <div>
+            <h2>Game appearance</h2>
+            <p>Choose a polished official theme. Customize individual artwork only where your game needs a different look.</p>
+          </div>
+        </div>
+        <h3>Official themes</h3>
+        <div id="themePresetOptions" class="theme-preset-options"></div>
+        <div class="theme-override-heading">
+          <div>
+            <h3>Artwork details</h3>
+            <p>Theme artwork is already matched to each part of the game. Open a group to review or replace individual selections.</p>
+          </div>
+        </div>
+        <div id="themeSlotGroups" class="theme-slot-groups"></div>
+      </div>
+    </section>
+
+    <section class="step" data-step-panel="6">
       <div class="panel">
         <h2>Game readiness</h2>
         <div id="readinessMessage" class="readiness-message"></div>
@@ -156,7 +177,7 @@
       </div>
     </section>
 
-    <section class="step" data-step-panel="6">
+    <section class="step" data-step-panel="7">
       <div class="panel">
         <h2>Generate your game</h2>
         <p>The downloaded game uses one self-contained HTML file. Graph images are embedded, so there is no separate asset folder to upload or keep beside the game.</p>
@@ -184,9 +205,10 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260819-remediation-dedup"></script>
+  <script src="composer-core.js?v=20260824-phase3a-official-themes"></script>
   <script src="course-area-model.js?v=20260813-course-area-step3"></script>
   <script src="data/composer_library.js?v=20260812-risk-reward-4.5s.2m"></script>
-  <script src="composer.js?v=20260814-central-reviews-selected-filter"></script>
+  <script src="data/official_theme_library.js?v=20260824-phase3a"></script>
+  <script src="composer.js?v=20260824-phase3a-official-themes"></script>
 </body>
 </html>

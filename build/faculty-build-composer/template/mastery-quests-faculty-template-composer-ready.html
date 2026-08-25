@@ -2812,6 +2812,17 @@ body.game-active #soundToggle{
 .target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
 @media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
 </style>
+<style id="facultyOfficialThemeStyles">
+body.blank-builder-template.mq-themed{background-image:linear-gradient(rgba(2,6,23,.70),rgba(2,6,23,.82)),var(--mq-gameplay-image)!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important}
+#startScreen.mq-themed-start{background-image:linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.68)),var(--mq-start-image)!important;background-size:cover!important;background-position:center!important}
+#wizardImage.mq-guide-image{display:flex;align-items:center;justify-content:center;width:100%;max-width:190px;margin:0 auto;background:none}
+#wizardImage.mq-guide-image img{display:block;width:100%;max-height:300px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,.55))}
+.generic-boss-image{display:block;width:min(220px,52vw);height:210px;margin:0 auto 8px;object-fit:contain;filter:drop-shadow(0 0 18px var(--bossColor,#38bdf8))}
+.maze-boss-image{display:block;width:100%;height:100%;object-fit:contain}
+.mode-card .mode-symbol[hidden]{display:none!important}
+.artifactSlot img{object-fit:contain}
+@media(max-width:560px){#wizardImage.mq-guide-image{max-width:122px}.generic-boss-image{height:150px;width:min(160px,48vw)}}
+</style>
 </head>
 
 <!-- =========================================
@@ -2921,8 +2932,8 @@ Respect structure strictly.
 </button>
 
 <button class="mode-card" data-mode="unlimited" onclick="startSelectedMode('unlimited')" aria-label="Unlimited Practice. Adaptive Exam Drill-style practice continues until you decide to end the session and generate a Mastery Report.">
-  <img src="unlimited-mode.webp" alt="" aria-hidden="true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-  <div class="mode-symbol" aria-hidden="true" hidden>∞</div>
+  <!-- Phase 1.5 trace: src="unlimited-mode.webp" was the canonical standalone asset; Phase 3A embeds the resolved modeUnlimited artwork. -->
+  <div class="mode-symbol" aria-hidden="true">∞</div>
   <span class="mode-card-title">Unlimited Practice</span>
   <span class="mode-card-text">Practice as long as you want. End the session when you are ready for your Mastery Report.</span>
 </button>
@@ -3448,6 +3459,15 @@ const FACULTY_COMPOSITION_CONFIG = {
         "riskReward": {"strategy":"adaptive"}
     },
     "selectedConceptIds": [],
+    "appearance": {"presetId":"default","overrides":{}},
+    "visualTheme": {
+        "schemaVersion":"1.0.0",
+        "libraryVersion":"",
+        "presetId":"default",
+        "presetLabel":"Default Mastery Quest",
+        "overrides":{},
+        "slots":{}
+    },
     "stages": {
         "stageOne": [],
         "stageTwo": [],
@@ -3464,6 +3484,92 @@ const FACULTY_COMPOSITION_CONFIG = {
 function isFacultyModeSupported(mode){
     return Array.isArray(FACULTY_COMPOSITION_CONFIG.supportedModes)
         && FACULTY_COMPOSITION_CONFIG.supportedModes.includes(String(mode || "standard"));
+}
+
+function getFacultyVisualSlot(slotId){
+    const slot = FACULTY_COMPOSITION_CONFIG.visualTheme?.slots?.[slotId];
+    return slot && typeof slot === "object" ? slot : {id:null,label:"",displayName:"",alt:"",source:"fallback",src:""};
+}
+
+function facultyEscapeAttribute(value){
+    return String(value || "").replace(/[&<>"']/g, character => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[character]);
+}
+
+function getFacultyCheckpointSlot(roomNumber){
+    return getFacultyVisualSlot(roomNumber === 10 ? "boss1" : roomNumber === 20 ? "boss2" : "boss3");
+}
+
+function getFacultyArtifactSlot(key){
+    return getFacultyVisualSlot(key === "compass" ? "artifact1" : key === "lens" ? "artifact2" : "artifact3");
+}
+
+function applyFacultyVisualTheme(){
+    const start = getFacultyVisualSlot("startBackground");
+    const gameplay = getFacultyVisualSlot("gameplayBackground");
+    if(start.src){
+        document.documentElement.style.setProperty("--mq-start-image", `url("${start.src}")`);
+        document.getElementById("startScreen")?.classList.add("mq-themed-start");
+    }
+    if(gameplay.src){
+        document.documentElement.style.setProperty("--mq-gameplay-image", `url("${gameplay.src}")`);
+        document.body.classList.add("mq-themed");
+    }
+
+    const guide = getFacultyVisualSlot("guideImage");
+    const wizard = document.getElementById("wizardImage");
+    const wizardName = document.getElementById("wizardName");
+    if(guide.src && wizard){
+        const image = document.createElement("img");
+        image.src = guide.src;
+        image.alt = guide.alt || guide.displayName || guide.label || "Game guide";
+        wizard.textContent = "";
+        wizard.classList.remove("guide-symbol");
+        wizard.classList.add("mq-guide-image");
+        wizard.removeAttribute("role");
+        wizard.removeAttribute("aria-label");
+        wizard.appendChild(image);
+    }
+    if(wizardName && guide.displayName) wizardName.textContent = guide.displayName;
+
+    const artifactRows = [
+        ["vaultCompass","artifact1","Milestone One"],
+        ["vaultLens","artifact2","Milestone Two"],
+        ["vaultScales","artifact3","Milestone Three"]
+    ];
+    artifactRows.forEach(([rowId, slotId, fallbackName]) => {
+        const row = document.getElementById(rowId);
+        const slot = getFacultyVisualSlot(slotId);
+        if(!row) return;
+        const marker = row.querySelector("span[aria-hidden='true']");
+        const label = row.querySelector("span:last-child");
+        if(slot.src && marker){
+            const image = document.createElement("img");
+            image.src = slot.src;
+            image.alt = "";
+            image.setAttribute("aria-hidden", "true");
+            marker.replaceWith(image);
+        }
+        if(label) label.textContent = slot.displayName || fallbackName;
+    });
+
+    const modeSlots = {standard:"modeStandard",timed:"modeTimed",exam:"modeExam",quiz:"modeQuiz",unlimited:"modeUnlimited",legendary:"modeLegendary",score:"modeScore",trialGraph:"modeTrialGraph",fadingFortune:"modeFadingFortune",riskReward:"modeRiskReward"};
+    document.querySelectorAll(".mode-card[data-mode]").forEach(card => {
+        const slot = getFacultyVisualSlot(modeSlots[card.dataset.mode]);
+        const symbol = card.querySelector(".mode-symbol");
+        const priorImage = card.querySelector(".mq-theme-mode-image");
+        if(priorImage) priorImage.remove();
+        if(slot.src){
+            const image = document.createElement("img");
+            image.className = "mq-theme-mode-image";
+            image.src = slot.src;
+            image.alt = "";
+            image.setAttribute("aria-hidden", "true");
+            card.insertBefore(image, card.firstChild);
+            if(symbol) symbol.hidden = true;
+        } else if(symbol){
+            symbol.hidden = false;
+        }
+    });
 }
 
 function applyFacultyCompositionConfig(){
@@ -3496,6 +3602,7 @@ function applyFacultyCompositionConfig(){
             ? "Your instructor enabled one mode for this game."
             : "Choose one of the modes enabled by your instructor.";
     }
+    if(typeof applyFacultyVisualTheme === "function") applyFacultyVisualTheme();
 }
 
 applyFacultyCompositionConfig();
@@ -5390,12 +5497,14 @@ const TIMING = {
 // Do NOT remove bossHealth logic.
      
 const artifacts = {
-    compass: { img: "", title: "Milestone One", text: "The first checkpoint is complete." },
-    lens: { img: "", title: "Milestone Two", text: "The second checkpoint is complete." },
-    scales: { img: "", title: "Milestone Three", text: "The final checkpoint is complete." }
+    compass: { img: getFacultyArtifactSlot("compass").src, title: getFacultyArtifactSlot("compass").displayName || "Milestone One", text: "The first checkpoint is complete." },
+    lens: { img: getFacultyArtifactSlot("lens").src, title: getFacultyArtifactSlot("lens").displayName || "Milestone Two", text: "The second checkpoint is complete." },
+    scales: { img: getFacultyArtifactSlot("scales").src, title: getFacultyArtifactSlot("scales").displayName || "Milestone Three", text: "The final checkpoint is complete." }
 }
 
 function getFacultyBossName(){
+    const themedName = getFacultyCheckpointSlot(room).displayName;
+    if(themedName) return themedName;
     if(room === 10) return "Checkpoint One";
     if(room === 20) return "Checkpoint Two";
     if(room === 30) return "Final Checkpoint";
@@ -8426,9 +8535,8 @@ if (isBoss) {
     renderQuestionGraph(currentQuestion);
 
     // 3. Generic checkpoint identity
-    const bTitle = room === 10 ? "CHECKPOINT ONE"
-        : room === 20 ? "CHECKPOINT TWO"
-        : "FINAL CHECKPOINT";
+    const bossVisual = getFacultyCheckpointSlot(room);
+    const bTitle = getFacultyBossName().toUpperCase();
 
     const bColor = room === 10 ? "#d7b35a"
         : room === 20 ? "#38bdf8"
@@ -8441,8 +8549,11 @@ if (isBoss) {
     bossMsg.style.color = bColor;
     gameBox.style.setProperty("--bossColor", bColor);
 
+    const bossArtwork = bossVisual.src
+        ? `<img class="generic-boss-image" src="${bossVisual.src}" alt="${facultyEscapeAttribute(bossVisual.alt || bossVisual.displayName || "Checkpoint guardian")}" style="--bossColor:${bColor}">`
+        : `<div class="generic-boss-symbol" style="color:${bColor}" aria-hidden="true">?</div>`;
     questionElement.innerHTML = `
-        <div class="generic-boss-symbol" style="color:${bColor}" aria-hidden="true">?</div>
+        ${bossArtwork}
         <span class="boss-title" style="color:${bColor}">${bTitle}</span>
         <div class="boss-q" style="--bossColor:${bColor}">
             ${currentQuestion.q}
@@ -9448,9 +9559,12 @@ function handleStreakVisuals() {
 function showHallwayTransition(feedback){
     const overlay = document.getElementById("hallwayTransition");
     const text = document.getElementById("hallwayText");
+    const hallwaySlot = getFacultyVisualSlot(room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3");
 
     overlay.style.background =
-        "linear-gradient(135deg, rgba(2,6,23,.96), rgba(11,34,56,.96))";
+        hallwaySlot.src
+            ? `linear-gradient(rgba(2,6,23,.70), rgba(2,6,23,.80)), url("${hallwaySlot.src}")`
+            : "linear-gradient(135deg, rgba(2,6,23,.96), rgba(11,34,56,.96))";
     overlay.style.backgroundSize = "cover";
     overlay.style.backgroundPosition = "center";
 

@@ -4,6 +4,7 @@
 const Core = window.MQComposerCore;
 const Library = window.MQ_COMPOSER_LIBRARY;
 const CourseAreaModel = window.MQCourseAreaModel;
+const ThemeLibrary = window.MQOfficialThemeLibrary;
 const MODE_LABELS = {
   standard: 'Standard Campaign',
   timed: 'Timed Trial',
@@ -160,6 +161,7 @@ const state = {
     checkpointTwo: null,
     finalCheckpoint: null
   },
+  appearance: {presetId:'default', overrides:{}},
   importWarnings: [],
   step: 1,
   templateText: '',
@@ -478,7 +480,101 @@ function renderModeOptions(){
       state.supportedModes = Core.MODE_ORDER.filter(mode =>
         container.querySelector(`[data-mode="${mode}"]`)?.checked
       );
+      renderThemeSlots();
       recalculate();
+    });
+  });
+}
+
+function currentResolvedTheme(){
+  return Core.resolveThemeSelection(state.appearance, ThemeLibrary);
+}
+
+function themeAssetOptions(slotId){
+  return (ThemeLibrary?.assets || [])
+    .filter(asset => asset.category === 'theme' && asset.compatibleSlots.includes(slotId))
+    .sort((a, b) => a.label.localeCompare(b.label));
+}
+
+function themeThumbnail(asset, fallbackLabel){
+  if(!asset){
+    return `<div class="theme-fallback-preview" aria-label="${esc(fallbackLabel)}">MQ</div>`;
+  }
+  return `<img loading="lazy" src="${esc(asset.previewUrl)}" alt="${esc(asset.alt || asset.description || asset.label)}">`;
+}
+
+function renderThemePresets(){
+  const container = $('themePresetOptions');
+  if(!container || !ThemeLibrary) return;
+  const assets = new Map(ThemeLibrary.assets.map(asset => [asset.id, asset]));
+  container.innerHTML = Object.values(ThemeLibrary.presets).map(preset => {
+    const preview = assets.get(preset.previewAssetId) || null;
+    const active = preset.id === state.appearance.presetId;
+    return `<button type="button" class="theme-preset-card${active ? ' selected' : ''}" data-theme-preset="${esc(preset.id)}" aria-pressed="${active}">
+      <span class="theme-preset-preview">${themeThumbnail(preview, preset.label)}</span>
+      <span class="theme-preset-copy"><strong>${esc(preset.label)}</strong><small>${esc(preset.description || '')}</small></span>
+    </button>`;
+  }).join('');
+  container.querySelectorAll('[data-theme-preset]').forEach(button => {
+    button.addEventListener('click', () => {
+      state.appearance.presetId = button.dataset.themePreset;
+      renderThemePresets();
+      renderThemeSlots();
+      recalculate();
+      announce(`${ThemeLibrary.presets[state.appearance.presetId].label} selected. Existing artwork overrides were kept.`);
+    });
+  });
+}
+
+function renderThemeSlots(){
+  const container = $('themeSlotGroups');
+  if(!container || !ThemeLibrary) return;
+  const resolved = currentResolvedTheme();
+  const groups = new Map();
+  for(const [slotId, definition] of Object.entries(ThemeLibrary.slots)){
+    if(definition.mode && !state.supportedModes.includes(definition.mode)) continue;
+    const list = groups.get(definition.group) || [];
+    list.push([slotId, definition]);
+    groups.set(definition.group, list);
+  }
+  container.innerHTML = [...groups.entries()].map(([group, entries], groupIndex) => `
+    <details class="theme-slot-group" ${groupIndex === 0 ? 'open' : ''}>
+      <summary>${esc(group)} <span>${entries.length}</span></summary>
+      <div class="theme-slot-grid">${entries.map(([slotId, definition]) => {
+        const current = resolved.slots[slotId];
+        const selectedOverride = state.appearance.overrides[slotId] || '';
+        const options = themeAssetOptions(slotId);
+        const sourceLabel = current.source === 'override' ? 'Custom selection' : current.source === 'preset' ? resolved.presetLabel : 'Default shell fallback';
+        return `<div class="theme-slot-row" data-theme-slot="${esc(slotId)}">
+          <div class="theme-slot-thumbnail">${themeThumbnail(current.asset, `${definition.label} default`)}</div>
+          <div class="theme-slot-control">
+            <label for="theme-slot-${esc(slotId)}">${esc(definition.label)}</label>
+            <small>${esc(sourceLabel)}</small>
+            <select id="theme-slot-${esc(slotId)}" data-theme-slot-select="${esc(slotId)}">
+              <option value="">Use selected theme</option>
+              ${options.map(asset => `<option value="${esc(asset.id)}" ${selectedOverride === asset.id ? 'selected' : ''}>${esc(asset.label)}</option>`).join('')}
+            </select>
+          </div>
+          <button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset ${esc(definition.label)} to selected theme" ${selectedOverride ? '' : 'disabled'}>Reset</button>
+        </div>`;
+      }).join('')}</div>
+    </details>`).join('');
+
+  container.querySelectorAll('[data-theme-slot-select]').forEach(select => {
+    select.addEventListener('change', () => {
+      const slotId = select.dataset.themeSlotSelect;
+      if(select.value) state.appearance.overrides[slotId] = select.value;
+      else delete state.appearance.overrides[slotId];
+      renderThemeSlots();
+      recalculate();
+    });
+  });
+  container.querySelectorAll('[data-theme-reset]').forEach(button => {
+    button.addEventListener('click', () => {
+      delete state.appearance.overrides[button.dataset.themeReset];
+      renderThemeSlots();
+      recalculate();
+      announce('Artwork reset to the selected theme.');
     });
   });
 }
@@ -821,6 +917,7 @@ function recipe(){
     slug: state.slug.trim(),
     supportedModes: [...state.supportedModes],
     selectedConceptIds: [...state.selectedConceptIds],
+    appearance: Core.canonicalThemeSelection(state.appearance, ThemeLibrary),
     checkpointFocus: Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
       checkpointKey,
       state.checkpointFocus[checkpointKey] == null
@@ -994,6 +1091,7 @@ function renderFinal(){
   const lines = [
     `Title: ${state.title || '—'}`,
     `Slug: ${state.slug || '—'}`,
+    `Visual theme: ${currentResolvedTheme().presetLabel}`,
     `Modes: ${state.supportedModes.map(mode => MODE_LABELS[mode]).join(', ') || 'None'}`,
     `Selected concepts: ${instructionSelected.length}${state.selectedConceptIds.some(isCheckpointSupplement) ? ' + Advanced Macro Checkpoint Supplement' : ''}`, 
     `Checkpoint focus: ${focusSummary}`,
@@ -1025,7 +1123,7 @@ function renderFinal(){
 }
 
 function switchStep(step){
-  state.step = Math.max(1, Math.min(6, Number(step)));
+  state.step = Math.max(1, Math.min(7, Number(step)));
   document.querySelectorAll('[data-step-panel]').forEach(panel => {
     panel.classList.toggle('active', Number(panel.dataset.stepPanel) === state.step);
   });
@@ -1033,7 +1131,7 @@ function switchStep(step){
     button.classList.toggle('active', Number(button.dataset.step) === state.step);
   });
   $('prevStep').disabled = state.step === 1;
-  $('nextStep').disabled = state.step === 6;
+  $('nextStep').disabled = state.step === 7;
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
@@ -1048,7 +1146,7 @@ function downloadBlob(blob, name){
 }
 
 function recipeText(){
-  return Core.stableStringify(Core.canonicalRecipe(recipe(), Library), 2) + '\n';
+  return Core.stableStringify(Core.canonicalRecipe(recipe(), Library, ThemeLibrary), 2) + '\n';
 }
 
 function crc32(bytes){
@@ -1163,6 +1261,21 @@ async function loadEmbeddedQuestionAssets(assets){
   return embedded;
 }
 
+async function loadEmbeddedThemeAssets(assets){
+  const embedded = {};
+  for(const asset of assets || []){
+    const response = await fetch(asset.sourceUrl);
+    if(!response.ok) throw new Error(`Could not load official theme artwork: ${asset.label}`);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    const actualSha = await Core.sha256Hex(bytes);
+    if(asset.sha256 && actualSha !== asset.sha256){
+      throw new Error(`Official theme artwork failed its integrity check: ${asset.label}`);
+    }
+    embedded[asset.id] = `data:${asset.fileType || mimeTypeForAsset(asset.sourceUrl)};base64,${bytesToBase64(bytes)}`;
+  }
+  return embedded;
+}
+
 async function generateGameDownload(){
   const activeRecipe = recipe();
   const composition = Core.compose(Library, activeRecipe);
@@ -1185,7 +1298,9 @@ async function generateGameDownload(){
   const conceptReviewRuntimeManifest = Core.stableStringify(conceptReviews.runtimeIndex, 2) + '\n';
   const conceptReviewRuntimeManifestBytes = new TextEncoder().encode(conceptReviewRuntimeManifest).length;
 
-  const config = await Core.createConfig(activeRecipe, Library, state.templateSha256);
+  const resolvedTheme = Core.resolveThemeSelection(activeRecipe.appearance, ThemeLibrary);
+  const selectedThemeAssets = Core.themeAssetsForSelection(resolvedTheme, activeRecipe.supportedModes);
+  const config = await Core.createConfig(activeRecipe, Library, state.templateSha256, ThemeLibrary);
   const metadata = {
     schemaVersion: Core.RECIPE_SCHEMA_VERSION,
     composerVersion: Core.COMPOSER_VERSION,
@@ -1203,6 +1318,11 @@ async function generateGameDownload(){
     conceptReviewDelivery: 'central-https',
     conceptReviewBaseUrl: Core.CONCEPT_REVIEW_PUBLIC_BASE_URL
   };
+  announce(selectedThemeAssets.length ? 'Embedding selected official theme artwork.' : 'Using the default Mastery Quest presentation.');
+  const embeddedThemeAssets = await loadEmbeddedThemeAssets(selectedThemeAssets);
+  config.visualTheme = Core.createRuntimeThemeConfig(resolvedTheme, embeddedThemeAssets, activeRecipe.supportedModes);
+  metadata.themePreset = resolvedTheme.presetId;
+  metadata.themeLibraryVersion = ThemeLibrary.libraryVersion;
   announce(composition.assets.length ? 'Embedding selected graph images.' : 'Preparing self-contained game file.');
   composition.embeddedQuestionAssets = await loadEmbeddedQuestionAssets(composition.assets);
   composition.conceptReviewRuntimeSource = state.conceptReviewRuntimeSource;
@@ -1224,6 +1344,15 @@ async function generateGameDownload(){
       sha256: asset.sha256,
       sizeBytes: asset.sizeBytes,
       embedded: true
+    })),
+    themePreset: resolvedTheme.presetId,
+    themeLibraryVersion: ThemeLibrary.libraryVersion,
+    themeAssetInventory: selectedThemeAssets.map(asset => ({
+      id:asset.id,
+      path:asset.sourceUrl,
+      sha256:asset.sha256,
+      sizeBytes:asset.sizeBytes,
+      embedded:true
     })),
     conceptReviewDelivery: 'central-https',
     conceptReviewBaseUrl: Core.CONCEPT_REVIEW_PUBLIC_BASE_URL,
@@ -1260,7 +1389,7 @@ Checkpoint questions are assigned by their published difficulty. Optional checkp
 `;
   const entries = [
     {name: `${config.slug}.html`, data: html},
-    {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library), 2) + '\n'},
+    {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library, ThemeLibrary), 2) + '\n'},
     {name: 'composition_manifest.json', data: Core.stableStringify(manifest, 2) + '\n'},
     {name: 'README.txt', data: readme}
   ];
@@ -1273,12 +1402,13 @@ Checkpoint questions are assigned by their published difficulty. Optional checkp
 
 async function importRecipe(file){
   const imported = JSON.parse(await file.text());
-  const migrated = Core.migrateRecipe(imported, Library);
+  const migrated = Core.migrateRecipe(imported, Library, ThemeLibrary);
   const next = migrated.recipe;
   state.title = next.title || 'Imported Faculty Quest';
   state.slug = Core.safeSlug(next.slug || state.title);
   state.slugTouched = true;
   state.supportedModes = [...next.supportedModes];
+  state.appearance = Core.canonicalThemeSelection(next.appearance, ThemeLibrary);
   state.selectedConceptIds = next.selectedConceptIds.filter(id => Library.concepts[id]);
   state.checkpointFocus = Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
     checkpointKey,
@@ -1292,6 +1422,8 @@ async function importRecipe(file){
   $('gameSlug').value = state.slug;
   setActiveArea(inferAreaForConceptIds(state.selectedConceptIds));
   renderModeOptions();
+  renderThemePresets();
+  renderThemeSlots();
   renderConcepts();
   renderCheckpointBoard();
   recalculate();
@@ -1302,6 +1434,8 @@ async function importRecipe(file){
 
 async function init(){
   renderModeOptions();
+  renderThemePresets();
+  renderThemeSlots();
   renderConcepts();
   renderCheckpointBoard();
 
@@ -1350,12 +1484,15 @@ async function init(){
     if(!confirm('Clear the current composition?')) return;
     state.selectedConceptIds = [];
     state.checkpointFocus = emptyCheckpointFocus();
+    state.appearance = {presetId:'default', overrides:{}};
     state.importWarnings = [];
     $('conceptSearch').value = '';
     $('selectionFilter').value = 'all';
     setActiveArea('');
     renderConcepts();
     renderCheckpointBoard();
+    renderThemePresets();
+    renderThemeSlots();
     recalculate();
   });
   $('downloadPackage').addEventListener('click', () => {

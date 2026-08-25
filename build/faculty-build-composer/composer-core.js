@@ -5,8 +5,8 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.2p';
-const RECIPE_SCHEMA_VERSION = '1.2.0';
+const COMPOSER_VERSION = '4.5s.3a';
+const RECIPE_SCHEMA_VERSION = '1.3.0';
 const MODE_ORDER = ['standard', 'timed', 'exam', 'quiz', 'unlimited', 'legendary', 'score', 'trialGraph', 'fadingFortune', 'riskReward'];
 const POOL_MINIMUMS = {
   easy: 6,
@@ -122,6 +122,110 @@ function uniqueStrings(items){
     out.push(value);
   }
   return out;
+}
+
+function themeAssetIndex(themeLibrary){
+  return new Map((themeLibrary?.assets || []).map(asset => [String(asset.id || ''), asset]));
+}
+
+function isThemeAssetCompatible(asset, slotId){
+  return Boolean(asset && Array.isArray(asset.compatibleSlots) && asset.compatibleSlots.includes(slotId));
+}
+
+function canonicalThemeSelection(input, themeLibrary){
+  const source = input && typeof input === 'object' ? input : {};
+  const presets = themeLibrary?.presets || {};
+  const slots = themeLibrary?.slots || {};
+  const assets = themeAssetIndex(themeLibrary);
+  const presetId = presets[source.presetId] ? source.presetId : 'default';
+  const overrides = {};
+  for(const [slotId, assetId] of Object.entries(source.overrides || {})){
+    if(!slots[slotId]) continue;
+    const asset = assets.get(String(assetId || ''));
+    if(isThemeAssetCompatible(asset, slotId)) overrides[slotId] = asset.id;
+  }
+  return {presetId, overrides};
+}
+
+function resolveThemeSelection(input, themeLibrary){
+  const selection = canonicalThemeSelection(input, themeLibrary);
+  const presets = themeLibrary?.presets || {};
+  const slotDefinitions = themeLibrary?.slots || {};
+  const assets = themeAssetIndex(themeLibrary);
+  const preset = presets[selection.presetId] || presets.default || {id:'default', label:'Default Mastery Quest', values:{}};
+  const resolvedSlots = {};
+  for(const [slotId, definition] of Object.entries(slotDefinitions)){
+    const overrideId = selection.overrides[slotId];
+    const presetId = preset.values?.[slotId];
+    const overrideAsset = assets.get(overrideId);
+    const presetAsset = assets.get(presetId);
+    const asset = isThemeAssetCompatible(overrideAsset, slotId)
+      ? overrideAsset
+      : isThemeAssetCompatible(presetAsset, slotId)
+        ? presetAsset
+        : null;
+    resolvedSlots[slotId] = {
+      slotId,
+      source: asset ? (asset === overrideAsset ? 'override' : 'preset') : 'fallback',
+      fallback: definition.fallback || 'shell-default',
+      asset: asset ? deepClone(asset) : null
+    };
+  }
+  return {
+    schemaVersion: String(themeLibrary?.schemaVersion || '1.0.0'),
+    libraryVersion: String(themeLibrary?.libraryVersion || ''),
+    presetId: preset.id || selection.presetId,
+    presetLabel: preset.label || 'Default Mastery Quest',
+    overrides: selection.overrides,
+    slots: resolvedSlots
+  };
+}
+
+function themeAssetsForSelection(resolvedTheme, supportedModes = MODE_ORDER){
+  const enabledModes = new Set(supportedModes || []);
+  const unique = new Map();
+  for(const resolved of Object.values(resolvedTheme?.slots || {})){
+    const mode = resolved?.slotId?.startsWith('mode')
+      ? Object.entries({modeStandard:'standard',modeTimed:'timed',modeExam:'exam',modeQuiz:'quiz',modeUnlimited:'unlimited',modeLegendary:'legendary',modeScore:'score',modeTrialGraph:'trialGraph',modeFadingFortune:'fadingFortune',modeRiskReward:'riskReward'})
+        .find(([slotId]) => slotId === resolved.slotId)?.[1]
+      : null;
+    if(mode && !enabledModes.has(mode)) continue;
+    if(resolved?.asset?.id && !unique.has(resolved.asset.id)) unique.set(resolved.asset.id, resolved.asset);
+  }
+  return [...unique.values()];
+}
+
+function createRuntimeThemeConfig(resolvedTheme, embeddedAssets = {}, supportedModes = MODE_ORDER){
+  const enabledModes = new Set(supportedModes || []);
+  const modeBySlot = {modeStandard:'standard',modeTimed:'timed',modeExam:'exam',modeQuiz:'quiz',modeUnlimited:'unlimited',modeLegendary:'legendary',modeScore:'score',modeTrialGraph:'trialGraph',modeFadingFortune:'fadingFortune',modeRiskReward:'riskReward'};
+  const slots = {};
+  for(const [slotId, resolved] of Object.entries(resolvedTheme?.slots || {})){
+    const mode = modeBySlot[slotId];
+    const asset = mode && !enabledModes.has(mode) ? null : resolved?.asset;
+    slots[slotId] = asset ? {
+      id:asset.id,
+      label:asset.label || '',
+      displayName:asset.displayName || asset.label || '',
+      alt:asset.alt || '',
+      source:resolved.source,
+      src:String(embeddedAssets[asset.id] || '')
+    } : {
+      id:null,
+      label:'',
+      displayName:'',
+      alt:'',
+      source:'fallback',
+      src:''
+    };
+  }
+  return {
+    schemaVersion:resolvedTheme?.schemaVersion || '1.0.0',
+    libraryVersion:resolvedTheme?.libraryVersion || '',
+    presetId:resolvedTheme?.presetId || 'default',
+    presetLabel:resolvedTheme?.presetLabel || 'Default Mastery Quest',
+    overrides:deepClone(resolvedTheme?.overrides || {}),
+    slots
+  };
 }
 
 function uniqueById(items){
@@ -797,7 +901,7 @@ function bossQuestionsForCheckpoint(module, checkpointKey){
   return (module?.questions?.boss || []).filter(question => bossDifficulty(question) === expected);
 }
 
-function migrateRecipe(recipe, library){
+function migrateRecipe(recipe, library, themeLibrary){
   const source = recipe && typeof recipe === 'object' ? recipe : {};
   const selectedConceptIds = uniqueStrings(source.selectedConceptIds || source.concepts || []);
   const migrationWarnings = [];
@@ -849,7 +953,8 @@ function migrateRecipe(recipe, library){
       slug: String(source.slug || ''),
       supportedModes: MODE_ORDER.filter(mode => (source.supportedModes || []).includes(mode)),
       selectedConceptIds,
-      checkpointFocus
+      checkpointFocus,
+      appearance: canonicalThemeSelection(source.appearance, themeLibrary)
     },
     migrationWarnings
   };
@@ -1321,7 +1426,7 @@ function conceptReviewRuntimeRegion(composition){
   if(!runtimeManifest) throw new Error('Concept Review runtime manifest is missing from the composition.');
   const embeddedManifest = stableStringify(runtimeManifest, 2).replace(/<\/script/gi, '<\\/script');
   const runtimeSource = String(composition.conceptReviewRuntimeSource || '').replace(/<\/script/gi, '<\\/script');
-  return `// =====================================================\n// CONCEPT REVIEW ROUTING — GENERATED\n// Routing data is embedded so local file:// games do not fetch a sibling manifest.\n// Review PDFs are served from ${CONCEPT_REVIEW_PUBLIC_BASE_URL}\n// =====================================================\nglobalThis.MQ_CONCEPT_REVIEW_MANIFEST = ${embeddedManifest};\n${runtimeSource}`;
+  return `// =====================================================\n// CONCEPT REVIEW ROUTING — GENERATED\n// Routing data is embedded so locally opened games do not fetch a sibling manifest.\n// Review PDFs are served from ${CONCEPT_REVIEW_PUBLIC_BASE_URL}\n// =====================================================\nglobalThis.MQ_CONCEPT_REVIEW_MANIFEST = ${embeddedManifest};\n${runtimeSource}`;
 }
 
 function buildHtml(template, composition, config, metadata){
@@ -1340,8 +1445,8 @@ function buildHtml(template, composition, config, metadata){
   return output;
 }
 
-function canonicalRecipe(inputRecipe, library){
-  const migrated = migrateRecipe(inputRecipe, library).recipe;
+function canonicalRecipe(inputRecipe, library, themeLibrary){
+  const migrated = migrateRecipe(inputRecipe, library, themeLibrary).recipe;
   return {
     schemaVersion: RECIPE_SCHEMA_VERSION,
     title: String(migrated.title).trim(),
@@ -1354,14 +1459,16 @@ function canonicalRecipe(inputRecipe, library){
         ? null
         : [...migrated.checkpointFocus[checkpointKey]]
     ])),
+    appearance: canonicalThemeSelection(migrated.appearance, themeLibrary),
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5s.2p-phase1.5-hardening'
+    templateVersion: 'phase4.5s.3a-official-themes-phase1.5-hardening'
   };
 }
 
-async function createConfig(recipe, library, templateSha){
-  const canonical = canonicalRecipe(recipe, library);
+async function createConfig(recipe, library, templateSha, themeLibrary){
+  const canonical = canonicalRecipe(recipe, library, themeLibrary);
   const fingerprint = await sha256Hex(stableStringify(canonical));
+  const resolvedTheme = resolveThemeSelection(canonical.appearance, themeLibrary);
   return {
     ...canonical,
     composerVersion: COMPOSER_VERSION,
@@ -1388,6 +1495,7 @@ async function createConfig(recipe, library, templateSha){
       fadingFortune: {strategy:'adaptive'},
       riskReward: {strategy:'adaptive'}
     },
+    visualTheme: createRuntimeThemeConfig(resolvedTheme, {}, canonical.supportedModes),
     saveKeyNamespace: `mq-econ:${canonical.slug}:${fingerprint.slice(0, 12)}`,
     librarySha256: library.librarySha256,
     templateSha256: templateSha,
@@ -1441,6 +1549,10 @@ return {
   safeSlug,
   bossDifficulty,
   bossQuestionsForCheckpoint,
+  canonicalThemeSelection,
+  resolveThemeSelection,
+  themeAssetsForSelection,
+  createRuntimeThemeConfig,
   resolveConceptModule,
   validateConceptReviewManifest,
   resolveConceptReviews,
