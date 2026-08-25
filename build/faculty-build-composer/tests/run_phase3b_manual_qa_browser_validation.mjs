@@ -138,6 +138,13 @@ function guideRecipe(label, presetId, customSourceId = ''){
   return recipe;
 }
 
+function resetCustomGuideRecipe(){
+  const recipe = guideRecipe('Reset Custom To Default', 'default', 'arcane-guide');
+  delete recipe.appearance.customOverrides.guideImage;
+  recipe.customAssets = {};
+  return recipe;
+}
+
 async function largeCustomRecord(seed, slotId){
   const width = 2560;
   const height = 1440;
@@ -684,13 +691,13 @@ try{
   await hybridPage.close();
 
   const backgroundDefinitions = [
-    {label:'default',recipe:backgroundRecipe('Default', 'default'),themed:false},
-    {label:'market',recipe:backgroundRecipe('Market Gate', 'market-citadel'),themed:true},
-    {label:'ledger',recipe:backgroundRecipe('National Ledger', 'national-ledger'),themed:true},
-    {label:'arcane',recipe:backgroundRecipe('Arcane', 'arcane-archive'),themed:true},
-    {label:'custom-light',recipe:backgroundRecipe('Custom Light', 'default', 'market-start'),themed:true},
-    {label:'custom-dark',recipe:backgroundRecipe('Custom Dark', 'default', 'arcane-gameplay'),themed:true},
-    {label:'custom-busy',recipe:backgroundRecipe('Custom Busy', 'default', 'ledger-start'),themed:true}
+    {label:'default',recipe:backgroundRecipe('Default', 'default'),themed:false,hasGuide:false},
+    {label:'market',recipe:backgroundRecipe('Market Gate', 'market-citadel'),themed:true,hasGuide:true},
+    {label:'ledger',recipe:backgroundRecipe('National Ledger', 'national-ledger'),themed:true,hasGuide:true},
+    {label:'arcane',recipe:backgroundRecipe('Arcane', 'arcane-archive'),themed:true,hasGuide:true},
+    {label:'custom-light',recipe:backgroundRecipe('Custom Light', 'default', 'market-start'),themed:true,hasGuide:false},
+    {label:'custom-dark',recipe:backgroundRecipe('Custom Dark', 'default', 'arcane-gameplay'),themed:true,hasGuide:false},
+    {label:'custom-busy',recipe:backgroundRecipe('Custom Busy', 'default', 'ledger-start'),themed:true,hasGuide:false}
   ];
   const backgroundBuilds = new Map();
   for(const definition of backgroundDefinitions){
@@ -698,15 +705,19 @@ try{
   }
 
   const customGuideBuild = await generateRecipe(guideRecipe('Default Custom', 'default', 'arcane-guide'));
+  const resetGuideBuild = await generateRecipe(resetCustomGuideRecipe());
   const guideDefinitions = [
     {label:'default-no-guide',build:backgroundBuilds.get('default'),hasImage:false},
     {label:'default-custom-guide',build:customGuideBuild,hasImage:true},
-    {label:'official-market-guide',build:backgroundBuilds.get('market'),hasImage:true}
+    {label:'official-market-guide',build:backgroundBuilds.get('market'),hasImage:true},
+    {label:'official-ledger-guide',build:backgroundBuilds.get('ledger'),hasImage:true},
+    {label:'official-arcane-guide',build:backgroundBuilds.get('arcane'),hasImage:true},
+    {label:'reset-custom-to-default',build:resetGuideBuild,hasImage:false}
   ];
   const guideResults = [];
   for(const definition of guideDefinitions){
     const targetPage = await openRuntime(definition.build.html);
-    for(const viewport of [viewports[0], viewports[3]]){
+    for(const viewport of viewports){
       await targetPage.setViewportSize(viewport);
       await targetPage.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       const presentation = await targetPage.evaluate(() => {
@@ -720,26 +731,37 @@ try{
           return Boolean(rect && rect.width > 0 && rect.height > 0 && style.display !== 'none' && style.visibility !== 'hidden');
         };
         const labelStyle = getComputedStyle(label);
+        const boxRect = box?.getBoundingClientRect();
+        const shell = document.querySelector('#gameShell');
+        const shellRect = shell?.getBoundingClientRect();
+        const shellStyle = getComputedStyle(shell);
+        const gameRect = document.querySelector('#gameBox')?.getBoundingClientRect();
+        const contentLeft = (shellRect?.left || 0) + Number.parseFloat(shellStyle.borderLeftWidth) + Number.parseFloat(shellStyle.paddingLeft);
+        const contentWidth = (shell?.clientWidth || 0) - Number.parseFloat(shellStyle.paddingLeft) - Number.parseFloat(shellStyle.paddingRight);
         return {
           labelVisible:visible(label),
           labelBorderBottomWidth:labelStyle.borderBottomWidth,
           labelTextDecoration:labelStyle.textDecorationLine,
-          emptyState:box?.classList.contains('mq-guide-empty') || false,
-          boxHeight:box?.getBoundingClientRect().height || 0,
+          boxHidden:Boolean(box?.hidden) && getComputedStyle(box).display === 'none',
+          boxVisible:visible(box),
+          boxWidth:boxRect?.width || 0,
           imageAreaHidden:Boolean(imageArea?.hidden) && getComputedStyle(imageArea).display === 'none',
           imageAreaText:imageArea?.textContent.trim() || '',
           imageVisible:visible(image),
           imageSource:image?.src || '',
+          gameBoxWidth:gameRect?.width || 0,
+          gameFillsShell:Boolean(gameRect) && Math.abs(gameRect.left - contentLeft) <= 2 && Math.abs(gameRect.width - contentWidth) <= 2,
           noHorizontalOverflow:document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1
         };
       });
-      assert(presentation.labelVisible, `${definition.label} Guide label was hidden at ${viewport.width}x${viewport.height}`);
       assert.equal(presentation.labelBorderBottomWidth, '0px', `${definition.label} Guide label retained its border underline at ${viewport.width}x${viewport.height}`);
       assert.equal(presentation.labelTextDecoration, 'none', `${definition.label} Guide label retained text decoration at ${viewport.width}x${viewport.height}`);
-      assert.equal(presentation.emptyState, !definition.hasImage, `${definition.label} Guide panel state mismatch at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.boxHidden, !definition.hasImage, `${definition.label} Guide panel hidden state mismatch at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.boxVisible, definition.hasImage, `${definition.label} Guide panel visibility mismatch at ${viewport.width}x${viewport.height}`);
+      assert.equal(presentation.labelVisible, definition.hasImage, `${definition.label} Guide label visibility mismatch at ${viewport.width}x${viewport.height}`);
       assert.equal(presentation.imageAreaHidden, !definition.hasImage, `${definition.label} Guide image visibility mismatch at ${viewport.width}x${viewport.height}`);
       assert.equal(presentation.imageAreaText, '', `${definition.label} retained fallback placeholder text at ${viewport.width}x${viewport.height}`);
-      if(!definition.hasImage) assert(presentation.boxHeight < 80, `${definition.label} Guide panel did not collapse at ${viewport.width}x${viewport.height}`);
+      if(!definition.hasImage) assert(presentation.gameFillsShell, `${definition.label} question panel did not fill the Guide-free layout at ${viewport.width}x${viewport.height}`);
       if(definition.hasImage){
         assert(presentation.imageVisible, `${definition.label} Guide image was not visible at ${viewport.width}x${viewport.height}`);
         assert(presentation.imageSource.startsWith('data:image/webp;base64,'), `${definition.label} Guide image was not embedded at ${viewport.width}x${viewport.height}`);
@@ -749,6 +771,13 @@ try{
       guideResults.push({label:definition.label,viewport,presentation});
     }
     await targetPage.close();
+  }
+  for(const viewport of viewports.filter(item => item.width > 768)){
+    const atViewport = label => guideResults.find(result => result.label === label && result.viewport.width === viewport.width);
+    const customWidth = atViewport('default-custom-guide').presentation.gameBoxWidth;
+    for(const label of ['default-no-guide','reset-custom-to-default']){
+      assert(atViewport(label).presentation.gameBoxWidth > customWidth + 150, `${label} did not reclaim the Guide column at ${viewport.width}x${viewport.height}`);
+    }
   }
 
   async function screenshotMean(pathname, crop){
@@ -795,7 +824,7 @@ try{
           answersVisible:answerButtons.length === 4 && answerButtons.every(visible),
           statusVisible:visible(document.querySelector('#areaDisplay')) && visible(document.querySelector('#progressBar')),
           guideVisible:visible(document.querySelector('#wizardBox')) && visible(document.querySelector('#wizardName')),
-          readableSurfaces:['#gameShell','#gameBox','#wizardBox'].every(selector => opaqueSurface(document.querySelector(selector))) && answerButtons.every(opaqueSurface),
+          readableSurfaces:['#gameShell','#gameBox'].every(selector => opaqueSurface(document.querySelector(selector))) && (!visible(document.querySelector('#wizardBox')) || opaqueSurface(document.querySelector('#wizardBox'))) && answerButtons.every(opaqueSurface),
           noHorizontalOverflow:document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1
         };
       });
@@ -804,7 +833,8 @@ try{
         assert(presentation.backgroundImage.includes('data:image/webp;base64,'), `${definition.label} artwork was not present in the outer scene`);
         assert(presentation.overlayVariable.includes('rgba(2,6,23,.30)') && presentation.overlayVariable.includes('rgba(2,6,23,.48)'), `${definition.label} did not use the shared scene overlay contract`);
       }
-      assert(presentation.questionVisible && presentation.answersVisible && presentation.statusVisible && presentation.guideVisible, `${definition.label} content was unreadable at ${viewport.width}x${viewport.height}: ${JSON.stringify(presentation)}`);
+      assert(presentation.questionVisible && presentation.answersVisible && presentation.statusVisible, `${definition.label} content was unreadable at ${viewport.width}x${viewport.height}: ${JSON.stringify(presentation)}`);
+      assert.equal(presentation.guideVisible, definition.hasGuide, `${definition.label} Guide visibility did not match its resolved asset at ${viewport.width}x${viewport.height}`);
       assert(presentation.readableSurfaces, `${definition.label} lost an opaque content surface at ${viewport.width}x${viewport.height}`);
       assert(presentation.noHorizontalOverflow, `${definition.label} overflowed horizontally at ${viewport.width}x${viewport.height}`);
 

@@ -1432,17 +1432,8 @@ button:active {
     display:none !important;
 }
 
-#wizardBox.mq-guide-empty{
-    width:auto;
-    min-width:104px;
-    min-height:0;
-    align-self:center;
-    padding:10px 14px;
-}
-
-#wizardBox.mq-guide-empty #wizardName{
-    margin:0;
-    padding:0;
+#wizardBox[hidden]{
+    display:none !important;
 }
     
 
@@ -3163,7 +3154,7 @@ DO NOT REMOVE:
 <!-- Main game area: question interface -->
 <div class="main-panel">
     <div id="gameShell">
-        <div id="wizardBox">
+        <div id="wizardBox" hidden>
             <div id="wizardName">Guide</div>
             <div id="wizardImage" hidden></div>
         </div>
@@ -3564,9 +3555,10 @@ function applyFacultyVisualTheme(){
     }
 
     const guide = getFacultyVisualSlot("guideImage");
+    const wizardBox = document.getElementById("wizardBox");
     const wizard = document.getElementById("wizardImage");
     const wizardName = document.getElementById("wizardName");
-    document.getElementById("wizardBox")?.classList.toggle("mq-guide-empty", !guide.src);
+    if(wizardBox) wizardBox.hidden = !guide.src;
     if(wizard) wizard.hidden = !guide.src;
     if(guide.src && wizard){
         const image = document.createElement("img");
