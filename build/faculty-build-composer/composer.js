@@ -171,8 +171,13 @@ const state = {
   templateSha256: '',
   conceptReviewManifest: null,
   conceptReviewRuntimeSource: '',
-  composition: null
+  composition: null,
+  generatedSizeEstimate: null,
+  generatedSizeEstimateStatus: 'idle'
 };
+
+let compositionRevision = 0;
+let sizeEstimateRequestId = 0;
 
 const $ = id => document.getElementById(id);
 const registry = Library.registry.concepts;
@@ -493,6 +498,14 @@ function currentResolvedTheme(){
   return Core.resolveThemeSelection(state.appearance, ThemeLibrary, state.customAssets);
 }
 
+const themeGroupOpenState = new Map();
+
+function rememberThemeGroupOpenState(container){
+  container?.querySelectorAll('[data-theme-group]').forEach(group => {
+    themeGroupOpenState.set(group.dataset.themeGroup, group.open);
+  });
+}
+
 function themeAssetOptions(slotId){
   return (ThemeLibrary?.assets || [])
     .filter(asset => asset.category === 'theme' && asset.compatibleSlots.includes(slotId))
@@ -579,6 +592,7 @@ function renderThemePresets(){
 function renderThemeSlots(){
   const container = $('themeSlotGroups');
   if(!container || !ThemeLibrary) return;
+  rememberThemeGroupOpenState(container);
   const resolved = currentResolvedTheme();
   const groups = new Map();
   for(const [slotId, definition] of Object.entries(ThemeLibrary.slots)){
@@ -588,7 +602,7 @@ function renderThemeSlots(){
     groups.set(definition.group, list);
   }
   container.innerHTML = [...groups.entries()].map(([group, entries], groupIndex) => `
-    <details class="theme-slot-group" ${groupIndex === 0 ? 'open' : ''}>
+    <details class="theme-slot-group" data-theme-group="${esc(group)}" ${themeGroupOpenState.has(group) ? (themeGroupOpenState.get(group) ? 'open' : '') : (groupIndex === 0 ? 'open' : '')}>
       <summary>${esc(group)} <span>${entries.length}</span></summary>
       <div class="theme-slot-grid">${entries.map(([slotId, definition]) => {
         const current = resolved.slots[slotId];
@@ -622,6 +636,10 @@ function renderThemeSlots(){
         </div>`;
       }).join('')}</div>
     </details>`).join('');
+
+  container.querySelectorAll('[data-theme-group]').forEach(group => {
+    group.addEventListener('toggle', () => themeGroupOpenState.set(group.dataset.themeGroup, group.open));
+  });
 
   container.querySelectorAll('[data-theme-slot-select]').forEach(select => {
     select.addEventListener('change', () => {
@@ -1010,11 +1028,16 @@ function recipe(){
 }
 
 function recalculate(){
+  compositionRevision++;
   state.title = $('gameTitle').value;
   state.slug = $('gameSlug').value;
   state.composition = Core.compose(Library, recipe());
+  state.generatedSizeEstimate = null;
+  state.generatedSizeEstimateStatus = 'idle';
   renderCoverage();
   renderFinal();
+  renderGeneratedSizeEstimate();
+  if(state.step >= 6) refreshGeneratedSizeEstimate();
 }
 
 function candidatePoolCount(concept, pool){
@@ -1199,9 +1222,48 @@ function renderFinal(){
       repairSeed: Object.keys(composition?.skillRepairSeedPools || {}).length,
       bridge: Object.keys(composition?.microSkillBridgePools || {}).length
     },
+    generatedHtmlSize: state.generatedSizeEstimate,
     errors,
     warnings: [...state.importWarnings, ...(composition?.warnings || [])]
   }, null, 2);
+}
+
+function renderGeneratedSizeEstimate(){
+  const targets = [$('gameSizeEstimate'), $('finalGameSizeEstimate')].filter(Boolean);
+  let content = '<strong>Estimated game size: Not calculated yet</strong>';
+  if(state.generatedSizeEstimateStatus === 'calculating'){
+    content = '<strong>Estimated game size: Calculating...</strong><span>Preparing embedded artwork and graph media.</span>';
+  } else if(state.generatedSizeEstimateStatus === 'ready' && state.generatedSizeEstimate){
+    content = `<strong>Estimated game size: ${formatImageBytes(state.generatedSizeEstimate.totalBytes)}</strong><span>Self-contained HTML</span>`;
+  } else if(state.generatedSizeEstimateStatus === 'error'){
+    content = '<strong>Estimated game size: Unavailable</strong><span>Resolve readiness errors before generating.</span>';
+  }
+  targets.forEach(target => { target.innerHTML = content; });
+}
+
+async function refreshGeneratedSizeEstimate(){
+  const requestId = ++sizeEstimateRequestId;
+  const revision = compositionRevision;
+  if($('downloadPackage').disabled || !state.templateText || !state.conceptReviewManifest){
+    state.generatedSizeEstimateStatus = 'error';
+    renderGeneratedSizeEstimate();
+    return;
+  }
+  state.generatedSizeEstimateStatus = 'calculating';
+  renderGeneratedSizeEstimate();
+  try{
+    const prepared = await prepareGeneratedGame();
+    if(requestId !== sizeEstimateRequestId || revision !== compositionRevision) return;
+    state.generatedSizeEstimate = prepared.sizeBreakdown;
+    state.generatedSizeEstimateStatus = 'ready';
+    renderGeneratedSizeEstimate();
+    renderFinal();
+  } catch(error){
+    if(requestId !== sizeEstimateRequestId || revision !== compositionRevision) return;
+    console.error(error);
+    state.generatedSizeEstimateStatus = 'error';
+    renderGeneratedSizeEstimate();
+  }
 }
 
 function switchStep(step){
@@ -1214,6 +1276,7 @@ function switchStep(step){
   });
   $('prevStep').disabled = state.step === 1;
   $('nextStep').disabled = state.step === 7;
+  if(state.step >= 6) refreshGeneratedSizeEstimate();
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
@@ -1380,9 +1443,30 @@ async function verifyCurrentCustomAssets(){
   return warnings;
 }
 
-async function generateGameDownload(){
-  const customWarnings = await verifyCurrentCustomAssets();
-  if(customWarnings.length) announce(`${customWarnings.length} invalid custom image selection${customWarnings.length === 1 ? ' was' : 's were'} restored to the selected theme.`);
+function generatedHtmlSizeBreakdown(html, composition, config, metadata){
+  const encoder = new TextEncoder();
+  const bytes = value => encoder.encode(value).length;
+  const withoutQuestionMedia = {...composition, embeddedQuestionAssets:{}};
+  const withoutCustom = JSON.parse(JSON.stringify(config));
+  withoutCustom.visualTheme.customAssetData = {};
+  const withoutArtwork = JSON.parse(JSON.stringify(withoutCustom));
+  for(const slot of Object.values(withoutArtwork.visualTheme.slots || {})) slot.src = '';
+
+  const baseBytes = bytes(Core.buildHtml(state.templateText, withoutQuestionMedia, withoutArtwork, metadata));
+  const officialBytes = bytes(Core.buildHtml(state.templateText, withoutQuestionMedia, withoutCustom, metadata)) - baseBytes;
+  const withArtworkBytes = bytes(Core.buildHtml(state.templateText, withoutQuestionMedia, config, metadata));
+  const customBytes = withArtworkBytes - baseBytes - officialBytes;
+  const questionGraphMediaBytes = bytes(html) - withArtworkBytes;
+  return {
+    totalBytes:bytes(html),
+    baseTemplateCodeQuestionBytes:baseBytes,
+    officialArtworkBytes:officialBytes,
+    customArtworkBytes:customBytes,
+    questionGraphMediaBytes
+  };
+}
+
+async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress = false} = {}){
   const activeRecipe = recipe();
   const composition = Core.compose(Library, activeRecipe);
   if(composition.errors.length) throw new Error(composition.errors.join('\n'));
@@ -1394,13 +1478,16 @@ async function generateGameDownload(){
   );
   if(conceptReviews.errors.length) throw new Error(conceptReviews.errors.join('\n'));
 
-  announce('Verifying answer hashes.');
-  const answerCheck = await Core.verifyAnswers(composition);
-  if(!answerCheck.ok){
-    throw new Error(`Answer verification failed for ${answerCheck.issues.length} questions.`);
+  let answerCheck = {ok:true, questionCount:composition.counts?.totalCanonical || 0, issues:[]};
+  if(verifyAnswerHashes){
+    if(reportProgress) announce('Verifying answer hashes.');
+    answerCheck = await Core.verifyAnswers(composition);
+    if(!answerCheck.ok){
+      throw new Error(`Answer verification failed for ${answerCheck.issues.length} questions.`);
+    }
   }
 
-  announce(conceptReviews.reviewCodes.length ? 'Embedding Concept Review routing for the centralized review library.' : 'No Concept Review routing is required for this build.');
+  if(reportProgress) announce(conceptReviews.reviewCodes.length ? 'Embedding Concept Review routing for the centralized review library.' : 'No Concept Review routing is required for this build.');
   const conceptReviewRuntimeManifest = Core.stableStringify(conceptReviews.runtimeIndex, 2) + '\n';
   const conceptReviewRuntimeManifestBytes = new TextEncoder().encode(conceptReviewRuntimeManifest).length;
 
@@ -1425,17 +1512,56 @@ async function generateGameDownload(){
     conceptReviewDelivery: 'central-https',
     conceptReviewBaseUrl: Core.CONCEPT_REVIEW_PUBLIC_BASE_URL
   };
-  announce(selectedThemeAssets.length ? 'Embedding selected official theme artwork.' : 'Using the default Mastery Quest presentation.');
+  if(reportProgress) announce(selectedThemeAssets.length ? 'Embedding selected official theme artwork.' : 'Using the default Mastery Quest presentation.');
   const embeddedThemeAssets = await loadEmbeddedThemeAssets(selectedThemeAssets);
   for(const asset of selectedCustomAssets) embeddedThemeAssets[asset.id] = asset.dataUrl;
   config.visualTheme = Core.createRuntimeThemeConfig(resolvedTheme, embeddedThemeAssets, activeRecipe.supportedModes);
   metadata.themePreset = resolvedTheme.presetId;
   metadata.themeLibraryVersion = ThemeLibrary.libraryVersion;
-  announce(composition.assets.length ? 'Embedding selected graph images.' : 'Preparing self-contained game file.');
+  if(reportProgress) announce(composition.assets.length ? 'Embedding selected graph images.' : 'Preparing self-contained game file.');
   composition.embeddedQuestionAssets = await loadEmbeddedQuestionAssets(composition.assets);
   composition.conceptReviewRuntimeSource = state.conceptReviewRuntimeSource;
   composition.conceptReviewRuntimeIndex = conceptReviews.runtimeIndex;
   const html = Core.buildHtml(state.templateText, composition, config, metadata);
+  const sizeBreakdown = generatedHtmlSizeBreakdown(html, composition, config, metadata);
+  return {
+    activeRecipe,
+    answerCheck,
+    composition,
+    conceptReviews,
+    conceptReviewRuntimeManifestBytes,
+    config,
+    html,
+    metadata,
+    resolvedTheme,
+    selectedCustomAssets,
+    selectedThemeAssets,
+    sizeBreakdown
+  };
+}
+
+async function generateGameDownload(){
+  const customWarnings = await verifyCurrentCustomAssets();
+  if(customWarnings.length) announce(`${customWarnings.length} invalid custom image selection${customWarnings.length === 1 ? ' was' : 's were'} restored to the selected theme.`);
+  const prepared = await prepareGeneratedGame({verifyAnswerHashes:true, reportProgress:true});
+  const {
+    activeRecipe,
+    answerCheck,
+    composition,
+    conceptReviews,
+    conceptReviewRuntimeManifestBytes,
+    config,
+    html,
+    metadata,
+    resolvedTheme,
+    selectedCustomAssets,
+    selectedThemeAssets,
+    sizeBreakdown
+  } = prepared;
+  state.generatedSizeEstimate = sizeBreakdown;
+  state.generatedSizeEstimateStatus = 'ready';
+  renderGeneratedSizeEstimate();
+  renderFinal();
   const manifest = {
     ...metadata,
     generatedFilename: `${config.slug}.html`,

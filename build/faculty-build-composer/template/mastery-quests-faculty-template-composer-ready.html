@@ -2841,7 +2841,8 @@ body.game-active #soundToggle{
 @media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
 </style>
 <style id="facultyOfficialThemeStyles">
-body.blank-builder-template.mq-themed{background-image:linear-gradient(rgba(2,6,23,.70),rgba(2,6,23,.82)),var(--mq-gameplay-image)!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important}
+body.blank-builder-template{--mq-gameplay-scene-overlay:linear-gradient(rgba(2,6,23,.30),rgba(2,6,23,.48))}
+body.blank-builder-template.mq-themed{background-image:var(--mq-gameplay-scene-overlay),var(--mq-gameplay-image)!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important;background-repeat:no-repeat!important}
 #startScreen.mq-themed-start{background-image:linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.68)),var(--mq-start-image)!important;background-size:cover!important;background-position:center!important}
 #wizardImage.mq-guide-image{display:flex;align-items:center;justify-content:center;width:100%;max-width:190px;margin:0 auto;background:none}
 #wizardImage.mq-guide-image img{display:block;width:100%;max-height:300px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,.55))}
@@ -9590,13 +9591,17 @@ function handleStreakVisuals() {
 // - change images (hallwayImages array)
 // - adjust timing (setTimeout)
 //
-// DO NOT remove loadQuestion() call,
-// or the game will stall.
+// The optional next action advances the existing game lifecycle after the
+// presentation interval; it must not mutate scored state.
 // =============================================
-function showHallwayTransition(feedback){
+function showHallwayTransition(feedback, options = {}){
     const overlay = document.getElementById("hallwayTransition");
     const text = document.getElementById("hallwayText");
-    const hallwaySlot = getFacultyVisualSlot(room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3");
+    const slotId = options.slotId || (room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3");
+    const hallwaySlot = getFacultyVisualSlot(slotId);
+    const nextAction = options.nextAction === "victory" ? "victory" : "question";
+    const transitionFeedback = String(feedback || "Checkpoint complete.");
+    const destinationText = options.destinationText || "Continue to the next room.";
 
     overlay.style.background =
         hallwaySlot.src
@@ -9607,16 +9612,19 @@ function showHallwayTransition(feedback){
 
     text.innerHTML = `
         <div style="font-size:22px;margin-bottom:15px;color:#f0c86a;">${getWizardFeedback("correct")}</div>
-        <div style="font-size:18px;opacity:.92;color:#f5e6b8;">${feedback}</div>
-        <div style="margin-top:25px;font-size:14px;opacity:.74;color:#c4b5fd;">Continue to the next room.</div>
+        <div style="font-size:18px;opacity:.92;color:#f5e6b8;">${transitionFeedback}</div>
+        <div style="margin-top:25px;font-size:14px;opacity:.74;color:#c4b5fd;">${destinationText}</div>
     `;
 
     overlay.classList.add("active");
-    document.getElementById("srAnnouncements").innerText = `Correct. ${feedback}`;
+    document.getElementById("srAnnouncements").innerText = `Correct. ${transitionFeedback}`;
 
     scheduleForCurrentRun(() => {
         overlay.classList.remove("active");
-        loadQuestion();
+        scheduleForCurrentRun(() => {
+            if(nextAction === "victory") handleVictory();
+            else loadQuestion();
+        }, 0);
     }, 1800);
 }
 
@@ -9739,7 +9747,6 @@ function showKnowledgeRoom(bossRoom) {
         <div class="boss-q">${summary}</div>
     `;
 
-    const nextAction = bossRoom === 30 ? "handleVictory()" : "room++; loadQuestion();";
     const buttonLabel = bossRoom === 30 ? "VIEW RESULTS →" : `CONTINUE TO ROOM ${bossRoom + 1} →`;
 
     aContainer.innerHTML = `
@@ -9750,12 +9757,16 @@ function showKnowledgeRoom(bossRoom) {
         const continueButton = document.getElementById("continueBtn");
         if(!continueButton) return;
         continueButton.onclick = () => {
-            if(bossRoom === 30){
-                handleVictory();
-            } else {
-                room++;
-                loadQuestion();
-            }
+            const slotId = bossRoom === 10 ? "hallway1" : bossRoom === 20 ? "hallway2" : "hallway3";
+            if(bossRoom !== 30) room++;
+            showHallwayTransition(
+                bossRoom === 30 ? "The final checkpoint is secured." : `Checkpoint ${bossRoom === 10 ? "One" : "Two"} is secured.`,
+                {
+                    slotId,
+                    nextAction:bossRoom === 30 ? "victory" : "question",
+                    destinationText:bossRoom === 30 ? "Continue to your results." : `Continue to Room ${bossRoom + 1}.`
+                }
+            );
         };
     }, 0);
 

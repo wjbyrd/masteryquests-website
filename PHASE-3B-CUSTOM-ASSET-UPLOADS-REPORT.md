@@ -446,3 +446,87 @@ No question bank, gameplay/adaptive engine, save schema, telemetry, deployed `pl
 - `masteryquests.org` will continue to serve the committed pre-repair Composer until the combined manual-QA repair is published. Deployment was not performed.
 
 No commit was created for the Hallway Transition Runtime Repair.
+
+## Phase 3B Final Manual-QA Repair
+
+This section supersedes the earlier hallway section's conclusion that CSS was the entire remaining hallway defect. Removing the stale important background fixed asset visibility when the renderer was invoked, but new faculty evidence and real-lifecycle browser testing proved that Standard checkpoint continuation still lacked the presentation invocation.
+
+### 1. Appearance Group State
+
+**PASS.** `renderThemeSlots()` now remembers each stable Appearance group label and its current `<details>` open state before rebuilding the slot DOM. The first group opens only on a faculty member's first visit; subsequent official selections, custom uploads, custom replacements, resets, mode-driven rerenders, and theme-preset changes preserve the faculty member's own open/closed choices. Progression, Characters, Rewards, and Mode Cards were each tested through official selection, upload, replacement, and reset. A mixed open/closed state across all four groups survived a preset change.
+
+### 2. Hallway Runtime Map
+
+| Event / mode | Production path | Hallway shown | Index / next state |
+|---|---|---|---|
+| Standard ordinary correct answer | `answer()` -> `showHallwayTransition()` | Yes | Room-derived Hallway 1/2/3 -> `loadQuestion()` |
+| Standard Checkpoint 1 Continue | `showKnowledgeRoom(10)` -> Continue -> `showHallwayTransition()` | Yes, repaired | Explicit Hallway 1 -> Room 11 |
+| Standard Checkpoint 2 Continue | `showKnowledgeRoom(20)` -> Continue -> `showHallwayTransition()` | Yes, repaired | Explicit Hallway 2 -> Room 21 |
+| Standard final checkpoint results | `showKnowledgeRoom(30)` -> View Results -> `showHallwayTransition()` | Yes, repaired | Explicit Hallway 3 -> `handleVictory()` |
+| Standard boss-summary resume | Phase 1.5 `loadQuestion` wrapper -> `showKnowledgeRoom()` | Yes after faculty/student Continue | Restored checkpoint's explicit hallway; next question is saved only after the overlay closes |
+| Timed Trial / Exam Drill / Unlimited Practice | Correct-answer path -> `showHallwayTransition()` | Yes under current engine behavior | Room-derived; no campaign boss checkpoint |
+| Legendary / Score Attack | Ordinary correct path and shared checkpoint summary path | Yes | Room-derived ordinary transition; explicit checkpoint hallway after Continue |
+| Quiz / Trial by Graph / Fading Fortune / Risk & Reward | Correct-answer path -> `showHallwayTransition()` | Yes under current limited-run behavior | Room-derived; terminal callback then opens results |
+
+No mode progression was redesigned. The map documents the current shared engine behavior; the repair adds only the missing Standard checkpoint presentation hook.
+
+### 3. Standard Checkpoint Root Cause and Repair
+
+The working Trial by Graph path and ordinary correct-answer path already invoked `showHallwayTransition()`. Standard boss victory instead called `showKnowledgeRoom()`, whose Continue handler incremented the room and called `loadQuestion()` directly. Therefore the configured hallway could render, but Standard checkpoint continuation never asked it to render.
+
+The Continue handler now chooses Hallway 1/2/3 explicitly, uses the existing 1.8-second transition interval, and schedules the authoritative next action after overlay teardown. Checkpoints 1 and 2 load the next room; the final checkpoint calls the existing victory handler. Question counts, boss health rules, scoring, adaptive routing, artifact rules, and realm completion rules were not changed.
+
+### 4. Save / Resume
+
+**PASS.** The Phase 1.5 `boss-summary` lifecycle remains authoritative. A save taken after Checkpoint 1 restored `CHECKPOINT ONE COMPLETE`, the real Continue control presented Hallway 1, Room 11 followed normally, and the post-transition question state was then persisted. No save is created inside the cosmetic hallway. The final checkpoint still clears the Standard save through `handleVictory()`.
+
+### 5. Real-Play Hallway Browser Result
+
+**PASS.** The durable regression no longer calls `showHallwayTransition()` directly. It loads a generated game, enters each real boss room, answers the rendered protected-hash question through its actual answer button, reaches the checkpoint-complete screen, clicks the real Continue control, observes the overlay's class lifecycle, verifies the resolved data URI/source, measures at least 1.6 seconds of visibility around the production 1.8-second interval, and waits for the normal next state.
+
+Results: 12 official checkpoint transitions across four viewports, three fully custom checkpoint transitions, three hybrid checkpoint transitions, one real saved-checkpoint resume, and one real Trial by Graph correct-answer comparison. All passed with zero browser console/page errors.
+
+### 6. Generated HTML Size Visibility
+
+**PASS.** Readiness and Generate now display `Estimated game size: N.N MB`. The estimate is built from the fully composed self-contained HTML through the same preparation function used by Download. Every browser-generated ZIP asserted that the displayed `totalBytes` exactly equaled the downloaded HTML byte length. Valid large builds remain downloadable and all existing custom-asset hard limits remain unchanged.
+
+| Representative build | Exact HTML bytes | Display size |
+|---|---:|---:|
+| Default shell | 4,067,680 | 3.9 MB |
+| Market Gate | 12,414,383 | 11.8 MB |
+| National Ledger | 12,995,759 | 12.4 MB |
+| Arcane Archive | 9,716,651 | 9.3 MB |
+| Light custom gameplay background | 5,114,388 | 4.9 MB |
+| Moderate mixed custom build | 12,074,369 | 11.5 MB |
+| Near-24 MB custom-payload-limit build | 36,075,457 | 34.4 MB |
+
+The near-limit build's exact generated-byte accounting was: 1,887,351 base template/code/question content, 0 official artwork, 32,006,410 custom-artwork embedding, and 2,181,696 question-graph media. The moderate build was: 1,887,751 base, 5,476,323 official artwork, 2,528,599 custom artwork, and 2,181,696 graph media. Component deltas sum exactly to total HTML bytes; no clear duplication defect was found and no packaging optimization was attempted.
+
+### 7. Gameplay Background Contract
+
+**PASS.** The excessive `rgba(2,6,23,.70)` to `.82` outer-scene darkening was replaced by one shared internal `--mq-gameplay-scene-overlay` variable using `.30` to `.48`. Official and faculty custom gameplay backgrounds use the same contract. The change affects only the body's scene layers; `#gameShell`, `#gameBox`, the Guide panel, question region, and answer buttons retain their own dark readable surfaces and backdrop treatment. No per-theme opacity rules or faculty-facing slider were added.
+
+### 8. Background Matrix and Visual Review
+
+**PASS: 28/28 browser presentation checks** covering default fallback, Market Gate, National Ledger, Arcane, light custom, dark custom, and visually busy custom backgrounds at `1440x900`, `1024x768`, `768x1024`, and `390x844`. Each themed build embedded its selected gameplay image, differed meaningfully from the fallback at the screenshot-pixel level, kept question/answer/status/Guide surfaces visible, and had no horizontal overflow.
+
+Representative Market before/after screenshots measured the outer-scene crop's mean channel brightness from `32.25` to `44.48`, with a `12.31` mean absolute full-screenshot pixel delta. Visual inspection confirmed that artwork identity is now immediate while gameplay content remains readable.
+
+### 9. Validation Results
+
+- Phase 3A official-theme validator: **PASS, 1,043 checks**
+- Phase 3B custom-asset validator: **PASS, 51 checks**
+- Active Composer suite: **PASS, all active runners**
+- Final manual-QA browser regression: **PASS**, 67 generated ZIP/screenshot artifacts and zero browser errors
+- JavaScript syntax: **PASS**
+
+### 10. Final Repair Files Changed
+
+- `build/faculty-build-composer/composer.css`
+- `build/faculty-build-composer/composer.js`
+- `build/faculty-build-composer/index.html`
+- `build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html`
+- `build/faculty-build-composer/tests/run_phase3b_manual_qa_browser_validation.mjs`
+- `PHASE-3B-CUSTOM-ASSET-UPLOADS-REPORT.md`
+
+No question bank, answer key, deployed `play/` game, official/custom artwork file, telemetry system, archive, backup, or snapshot was modified. No commit or deployment was created.
