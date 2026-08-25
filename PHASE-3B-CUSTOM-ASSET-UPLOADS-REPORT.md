@@ -359,3 +359,90 @@ No deployed `play/` game, question bank, question artwork, official WebP, gamepl
 - The previously documented Phase 3B payload-size, contrast-review, and recipe-only persistence constraints remain unchanged.
 
 No commit was created for the Manual Faculty QA Repair.
+
+### Hallway Transition Runtime Repair
+
+#### 1. Root Cause
+
+The generated configuration, official/custom embedding, hallway slot references, and room-to-stage mapping were already correct. The runtime `showHallwayTransition()` assigned the resolved Hallway 1/2/3 data URI to the overlay's inline `background`, but a later blank-template rule declared a default gradient with `#hallwayTransition { background: ... !important; }`. That author-level `!important` rule overrode the ordinary inline background, so the computed/rendered transition continued to show the shell fallback.
+
+#### 2. Embedded Hallway Assets
+
+The correct hallway assets were already present in `visualTheme.slots`, in the selected official/custom embedded asset data, and in each generated slot reference. No hashing, packaging, manifest, source URL, or artwork byte changed.
+
+#### 3. Old Runtime Hallway Source
+
+The transition function already called `getFacultyVisualSlot(room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3")`. Its inline style contained the correct data URI, but the rendered/computed background came from the later important shell gradient. The faculty template's legacy `hallwayImages` array is empty and was not the active source; there were no hard-coded hallway filenames in the active faculty transition renderer.
+
+#### 4. New Resolved Hallway Source
+
+The active renderer continues to use the existing Phase 3A/3B `getFacultyVisualSlot()` result and precedence. Only the stale CSS override was removed. No second hallway configuration system was added.
+
+#### 5. CSS Contribution
+
+CSS was the entire defect. Removing the late important shorthand allows the existing inline gradient-plus-resolved-image background to win. The earlier generic gradient remains in the base `#hallwayTransition` rule and still supplies the default-shell fallback when no configured hallway image exists.
+
+#### 6. Official Hallway 1/2/3 Result
+
+**PASS.** The generated Market Gate mixed build rendered:
+
+- Stage One: `ledger-hall-1`, source `override`
+- Stage Two: `arcane-hall-2`, source `override`
+- Stage Three: `market-hall-3`, source `override`
+
+The browser asserted both the assigned inline background and the final computed background, not merely presence of the three data URIs in generated HTML.
+
+#### 7. Custom Hallway 1/2/3 Result
+
+**PASS.** A second real Composer download used three faculty custom hallway records. All three transitions resolved with source `custom`, rendered their matching embedded data URI, and retained `cover` sizing.
+
+#### 8. Hybrid Result
+
+**PASS.** The hybrid generated build rendered official Ledger Hallway 1 with source `override`, custom Arcane Hallway 2 with source `custom`, and Market Hallway 3 from the Market Gate preset with source `preset`.
+
+#### 9. Preset Switch and Reset Result
+
+**PASS.** Market Gate plus a Ledger Hallway 1 override was switched to Arcane Archive. Hallway 1 remained `ledger-hall-1`; non-overridden Hallway 2/3 became `arcane-hall-2` and `arcane-hall-3`. Resetting Hallway 1 produced `arcane-hall-1`. Stable precedence behavior was unchanged.
+
+#### 10. Resume Result
+
+**PASS.** Standard Campaign was saved at room 11, the generated page was reloaded, and Continue Standard Run restored room 11. The next rendered Stage Two transition remained `arcane-hall-2` with source `override`. No presentation state was added to or read from the save payload.
+
+#### 11. Four-Viewport Result
+
+**PASS** at `1440x900`, `1024x768`, `768x1024`, and `390x844`. Each of the three official mixed hallways was rendered at every viewport, for 12 official transition checks. Every computed background used the expected data URI, all background layers used `cover`, transition text remained contained, and no horizontal overflow occurred. Representative Ledger, Arcane, and Market screenshots were visually inspected.
+
+#### 12. Browser Regression Result
+
+**PASS.** `run_phase3b_manual_qa_browser_validation.mjs` now performs 19 rendered hallway assertions: 12 official stage/viewport combinations, three custom transitions, three hybrid transitions, and one resumed transition. It generates all three recipes through the actual Composer Download button and checks the resulting runtime computed backgrounds. Existing 51/51 integrity, mode-card, Guide, Boss 2, Artifact 2, inline-script, and zero-console-error assertions remain enabled.
+
+#### 13. Active Suite Result
+
+**PASS: 15/15 active runners.** No existing assertion was removed or weakened.
+
+#### 14. Phase 3A Result
+
+**PASS: 1,043 checks.** Official theme inventory, hashes, embedding, presets, overrides, generation, and stable Market Gate labeling remain green.
+
+#### 15. Phase 3B Result
+
+**PASS: 51 checks.** Custom upload validation, normalization, persistence, precedence, deduplication, fallback, and generation remain green.
+
+#### 16. Hallway Repair Files Changed
+
+- `build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html`
+- `build/faculty-build-composer/tests/run_phase3b_manual_qa_browser_validation.mjs`
+- `PHASE-3B-CUSTOM-ASSET-UPLOADS-REPORT.md`
+
+No question bank, gameplay/adaptive engine, save schema, telemetry, deployed `play/` game, artwork, archive, backup, or snapshot was modified.
+
+#### 17. Git Diff Check
+
+`git diff --check`: **PASS**. Git emitted only the repository's existing LF-to-CRLF working-copy notices.
+
+#### 18. Unresolved Issues
+
+- There is no hallway-specific unresolved defect in the local production Composer or generated game.
+- `masteryquests.org` will continue to serve the committed pre-repair Composer until the combined manual-QA repair is published. Deployment was not performed.
+
+No commit was created for the Hallway Transition Runtime Repair.
