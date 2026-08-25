@@ -47,12 +47,13 @@ function runtimeDeckCheck(composition,target){
   const issues=[];
   assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[7]!=='trialGraph' || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
-  if(library.canonicalQuestionCount!==8163) issues.push(`canonical count ${library.canonicalQuestionCount}`);
+  if(library.canonicalQuestionCount!==8211) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
   const auditIds=new Set();
   for(const fn of ['MICRO_GRAPH_QUESTIONS_AUDIT_CORRECTED.json','TODAYS_GRAPH_QUESTIONS_AUDIT_CORRECTED_V2.json']){
     for(const r of JSON.parse(fs.readFileSync(path.join(root,fn),'utf8'))) auditIds.add(String(r.id));
   }
+  const phase3eIds=new Set(Array.from({length:48},(_,index)=>String(40000+index)));
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -61,14 +62,14 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
     }
   }
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
-  if(flagged!==602) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==650) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 
@@ -94,8 +95,8 @@ function runtimeDeckCheck(composition,target){
 
   const demand=core.compose(library,recipe('demand'));
   const demandRuntime=runtimeDeckCheck(demand,15);
-  if(demand.counts.graphSafe!==18) issues.push(`demand graphSafe ${demand.counts.graphSafe}`);
-  if(JSON.stringify(demandRuntime.supported)!==JSON.stringify([10,15])) issues.push(`18-inventory targets ${JSON.stringify(demandRuntime.supported)}`);
+  if(demand.counts.graphSafe!==21) issues.push(`demand graphSafe ${demand.counts.graphSafe}`);
+  if(JSON.stringify(demandRuntime.supported)!==JSON.stringify([10,15,20])) issues.push(`21-inventory targets ${JSON.stringify(demandRuntime.supported)}`);
   if(demandRuntime.deck.length!==15) issues.push('15 deck failed');
 
   const ad=core.compose(library,recipe('aggregate-demand'));

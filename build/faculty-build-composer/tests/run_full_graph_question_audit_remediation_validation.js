@@ -33,8 +33,8 @@ for(const qx of newQuestions){
  const ci=q.options.indexOf(correct); const clen=correct.length; const maxOther=Math.max(...q.options.filter((_,i)=>i!==ci).map(o=>o.length));
  if(clen>maxOther) issues.push(`${q.id} correct option remains uniquely longest by ${clen-maxOther}`);
 }
-if(library.canonicalQuestionCount!==8163) issues.push(`canonicalQuestionCount ${library.canonicalQuestionCount} != 8163`);
-if(library.assetInventory.length!==427) issues.push(`asset count ${library.assetInventory.length} != 427`);
+if(library.canonicalQuestionCount!==8211) issues.push(`canonicalQuestionCount ${library.canonicalQuestionCount} != 8211`);
+if(library.assetInventory.length!==448) issues.push(`asset count ${library.assetInventory.length} != 448`);
 const assetIssues=[];
 for(const a of library.assetInventory){
  const disk=path.join(root,'data',a.runtimePath);
@@ -65,6 +65,9 @@ async function check(name,ids){
  cases.push(await check('Phillips Curve Family',['short-run-phillips-curve','long-run-phillips-curve','phillips-curve-expectations']));
  cases.push(await check('Macro Graph Core',['aggregate-demand','aggregate-supply','macroeconomic-equilibrium-and-shocks','liquidity-preference-and-money-market','monetary-policy-transmission','short-run-phillips-curve','long-run-phillips-curve','phillips-curve-expectations']));
  const out={phase:'phaseGraphAudit-remediation-v1',composerVersion:core.COMPOSER_VERSION,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,canonicalQuestionCount:library.canonicalQuestionCount,assetCount:library.assetInventory.length,auditedQuestionCount:newQuestions.length,issues,globalAssetIssues:assetIssues,cases,ok:issues.length===0&&assetIssues.length===0&&cases.every(c=>c.ok)};
- fs.writeFileSync(path.join(root,'tests','full_graph_question_audit_remediation_validation_results.json'),JSON.stringify(out,null,2));
+ const outputRoot=process.env.MQ_COMPOSER_TEST_OUTPUT_DIR?path.resolve(process.env.MQ_COMPOSER_TEST_OUTPUT_DIR):root;
+ const outputFile=path.join(outputRoot,'tests','full_graph_question_audit_remediation_validation_results.json');
+ fs.mkdirSync(path.dirname(outputFile),{recursive:true});
+ fs.writeFileSync(outputFile,JSON.stringify(out,null,2));
  console.log(JSON.stringify(out,null,2)); if(!out.ok) process.exit(1);
 })();
