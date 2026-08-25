@@ -610,7 +610,8 @@ function renderThemeSlots(){
         const customId = state.appearance.customOverrides?.[slotId] || '';
         const customAsset = customId ? state.customAssets[customId] : null;
         const options = themeAssetOptions(slotId);
-        const sourceLabel = current.source === 'custom' ? 'Custom image' : current.source === 'override' ? 'Official selection' : current.source === 'preset' ? resolved.presetLabel : 'Default shell fallback';
+        const sourceLabel = current.source === 'custom' ? 'Custom image' : current.source === 'override' ? 'Official override' : current.source === 'preset' ? resolved.presetLabel : 'Default fallback';
+        const sourceClass = current.source === 'custom' ? 'custom' : current.source === 'override' ? 'override' : 'theme';
         const status = state.customStatus[slotId];
         const fitWarnings = customAsset ? CustomAssets.slotFitWarnings(customAsset.width, customAsset.height, definition) : [];
         const customDetails = customAsset ? `${customAsset.width} x ${customAsset.height} - ${formatImageBytes(customAsset.sizeBytes)}` : '';
@@ -619,20 +620,22 @@ function renderThemeSlots(){
         return `<div class="theme-slot-row" data-theme-slot="${esc(slotId)}">
           <div class="theme-slot-thumbnail">${themeThumbnail(current.asset, `${definition.label} default`)}</div>
           <div class="theme-slot-control">
-            <label for="theme-slot-${esc(slotId)}">${esc(definition.label)}</label>
-            <small>${esc(sourceLabel)}</small>
+            <div class="theme-slot-label-row">
+              <label for="theme-slot-${esc(slotId)}">${esc(definition.label)}</label>
+              <span class="theme-source-badge ${sourceClass}">${esc(sourceLabel)}</span>
+            </div>
             <select id="theme-slot-${esc(slotId)}" data-theme-slot-select="${esc(slotId)}">
               <option value="">Use selected theme</option>
               ${options.map(asset => `<option value="${esc(asset.id)}" ${selectedOverride === asset.id ? 'selected' : ''}>${esc(asset.label)}</option>`).join('')}
             </select>
             <div class="custom-image-actions">
-              <button type="button" class="custom-upload" data-custom-upload-button="${esc(slotId)}">${customAsset ? 'Replace' : 'Upload My Image'}</button>
+              <button type="button" class="custom-upload" data-custom-upload-button="${esc(slotId)}">${customAsset ? 'Replace Image' : 'Upload My Image'}</button>
               <input class="hidden" type="file" data-custom-upload-input="${esc(slotId)}" accept="image/webp,image/png,image/jpeg,.webp,.png,.jpg,.jpeg">
               ${customDetails ? `<span class="custom-image-meta">${esc(customDetails)}</span>` : ''}
             </div>
             ${message ? `<div class="custom-image-message ${esc(messageType)}" role="status">${esc(message)}</div>` : ''}
           </div>
-          <button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset ${esc(definition.label)} to selected theme" ${selectedOverride || customId ? '' : 'disabled'}>Reset to Theme</button>
+          ${selectedOverride || customId ? `<button type="button" class="theme-reset" data-theme-reset="${esc(slotId)}" title="Reset ${esc(definition.label)} to selected theme" aria-label="Reset ${esc(definition.label)} to selected theme">Reset to Theme</button>` : ''}
         </div>`;
       }).join('')}</div>
     </details>`).join('');
@@ -681,10 +684,12 @@ function renderPresets(){
   const area = $('areaFilter').value;
   const help = $('presetHelp');
   const container = $('presetOptions');
+  $('presetSection')?.classList.toggle('hidden', !area);
+  $('conceptBrowseToolbar')?.classList.toggle('hidden', !area);
+  $('conceptReadingGuide')?.classList.toggle('hidden', !area);
 
   if(!area){
-    if(help) help.textContent = 'Choose a course area to see relevant quick starts.';
-    container.innerHTML = '<div class="preset-empty">Choose a course area above to show only the starter combinations that fit it.</div>';
+    container.innerHTML = '';
     return;
   }
 
@@ -722,7 +727,7 @@ function applyPreset(presetId){
 function renderSelectedSummary(){
   const container = $('selectedConceptSummary');
   if(!state.selectedConceptIds.length){
-    container.innerHTML = '<strong>No concepts selected.</strong><span>Choose individual concepts or start with a combination above.</span>';
+    container.innerHTML = '';
     return;
   }
   const instructionIds = selectedInstructionConceptIds();
@@ -788,14 +793,9 @@ function renderConcepts(){
 
   if(!area){
     updateBrowseFilterControls('', '');
-    $('conceptGrid').innerHTML = `
-      <div class="empty" role="status">
-        <strong>Choose a course area to view concepts.</strong>
-        <span>Select General economics, Microeconomics, or Macroeconomics above. Your selections remain saved when you switch areas.</span>
-      </div>
-    `;
+    $('conceptGrid').innerHTML = '';
     $('conceptRecommendations').innerHTML = '';
-    if($('browseConceptCount')) $('browseConceptCount').textContent = 'Choose an area to view its concept inventory.';
+    if($('browseConceptCount')) $('browseConceptCount').textContent = '';
     return;
   }
 
@@ -1116,7 +1116,7 @@ function renderCoverage(){
 
   $('readinessMessage').className = `readiness-message ${failedModes.length ? 'not-ready' : thinSelected.length ? 'caution' : 'ready'}`;
   $('readinessMessage').innerHTML = failedModes.length
-    ? `<strong>Not ready for every selected mode.</strong><span>${failedModes.map(mode => mode.label).join(', ')} ${failedModes.length === 1 ? 'has' : 'have'} coverage or field-level validation errors. Review the affected question IDs below.</span>`
+    ? `<strong>${failedModes.length} selected mode${failedModes.length === 1 ? ' needs' : 's need'} attention.</strong><span>Review the mode summaries and coverage suggestions below.</span>`
     : thinSelected.length
       ? `<strong>Mode coverage passes, but some concepts remain thin.</strong><span>${thinSelected.map(concept => concept.title).join(', ')} ${thinSelected.length === 1 ? 'is' : 'are'} best used only as part of this broader mix until expansion is complete.</span>`
       : `<strong>Ready for all selected modes.</strong><span>The current concept mix meets the required question coverage.</span>`;
@@ -1136,18 +1136,16 @@ function renderCoverage(){
   $('modeValidation').innerHTML = selectedModes.map(mode => {
     const deficient = mode.requirements.filter(requirement => requirement.count < requirement.minimum);
     const fieldIssues = mode.issues || [];
-    const failureSummary = [
-      ...deficient.map(item => `${POOL_LABELS[item.pool] || item.pool}: ${item.count} available; ${item.minimum} required.`),
-      ...fieldIssues.slice(0, 6).map(item => `${POOL_LABELS[item.pool] || item.pool}${item.id !== '—' ? ` (ID ${esc(item.id)})` : ''}: ${esc(item.issue)}.`)
-    ].join(' ');
-    const moreIssues = fieldIssues.length > 6 ? ` ${fieldIssues.length - 6} more field issue(s) are included in the generated validation details.` : '';
+    const failureSummary = fieldIssues.length
+      ? `${fieldIssues.length} question record${fieldIssues.length === 1 ? ' has' : 's have'} validation errors${deficient.length ? `, and ${deficient.length} pool${deficient.length === 1 ? ' needs' : 's need'} more coverage` : ''}.`
+      : `${deficient.length} question pool${deficient.length === 1 ? ' needs' : 's need'} more coverage.`;
     return `
       <div class="validation-card ${mode.ok ? '' : 'fail'}">
         <div class="status ${mode.ok ? 'ok' : 'fail'}">${mode.ok ? 'READY' : fieldIssues.length ? 'VALIDATION ERRORS' : 'NEEDS MORE QUESTIONS'}</div>
         <h3>${mode.label}</h3>
         <p>${mode.ok
           ? 'This mode has the required question coverage and every required record passes runtime validation.'
-          : `${failureSummary}${moreIssues}`}</p>
+          : failureSummary}</p>
         <details><summary>View requirements and validation</summary>${mode.requirements.map(requirement => `<div>${POOL_LABELS[requirement.pool] || requirement.pool}: ${requirement.count}/${requirement.minimum}</div>`).join('')}${fieldIssues.map(item => `<div>${POOL_LABELS[item.pool] || item.pool}${item.id !== '—' ? ` (ID ${esc(item.id)})` : ''}: ${esc(item.issue)}</div>`).join('')}</details>
       </div>
     `;
@@ -1188,26 +1186,27 @@ function renderFinal(){
     errors.push('Open the composer from a hosted site or local HTTP server before generating a ZIP.');
   }
   const okay = errors.length === 0;
-  const focusSummary = Core.CHECKPOINT_ORDER.map(checkpointKey => {
-    const checkpoint = Core.CHECKPOINTS[checkpointKey];
-    const focus = state.checkpointFocus[checkpointKey];
-    return `${checkpoint.label}: ${focus == null ? 'Automatic' : `Custom (${focus.length})`}`;
-  }).join(' · ');
-  const lines = [
-    `Title: ${state.title || '—'}`,
-    `Slug: ${state.slug || '—'}`,
-    `Visual theme: ${currentResolvedTheme().presetLabel}`,
-    `Modes: ${state.supportedModes.map(mode => MODE_LABELS[mode]).join(', ') || 'None'}`,
-    `Selected concepts: ${instructionSelected.length}${state.selectedConceptIds.some(isCheckpointSupplement) ? ' + Advanced Macro Checkpoint Supplement' : ''}`, 
-    `Checkpoint focus: ${focusSummary}`,
-    `Question count: ${composition?.counts?.totalCanonical || 0}`,
-    okay ? 'Status: READY TO GENERATE' : 'Status: NOT READY',
-    ...errors.map(error => `• ${error}`)
-  ];
-
-  $('finalSummary').textContent = lines.join('\n');
+  const selectedTitles = instructionSelected.map(id => metaById.get(id)?.title || id);
+  const scopeSummary = selectedTitles.join(', ') || 'No concepts selected';
+  const modeSummary = state.supportedModes.map(mode => MODE_LABELS[mode]).join(', ') || 'No modes selected';
+  const failedModeCount = composition?.validation?.modes?.filter(mode => !mode.ok).length || 0;
+  const blockerSummary = errors.length
+    ? `<div class="generate-blocker" role="alert"><strong>Download is not available yet.</strong><span>${failedModeCount ? `${failedModeCount} selected mode${failedModeCount === 1 ? ' needs' : 's need'} attention. ` : ''}Review Readiness for the exact requirements.</span></div>`
+    : '';
+  $('finalSummary').innerHTML = `
+    <div class="final-review-grid">
+      <div><span>Game</span><strong>${esc(state.title || 'Untitled game')}</strong><small>${esc(state.slug || 'No file name')}</small></div>
+      <div><span>Appearance</span><strong>${esc(currentResolvedTheme().presetLabel)}</strong><small>${Object.keys(state.appearance.customOverrides || {}).length} custom image${Object.keys(state.appearance.customOverrides || {}).length === 1 ? '' : 's'}</small></div>
+      <div><span>Questions</span><strong>${composition?.counts?.totalCanonical || 0}</strong><small>${instructionSelected.length} selected concept${instructionSelected.length === 1 ? '' : 's'}</small></div>
+      <div class="final-status ${okay ? 'ready' : 'not-ready'}"><span>Status</span><strong>${okay ? 'Ready to download' : 'Needs attention'}</strong><small>Estimated size appears above</small></div>
+      <div class="final-review-wide"><span>Concept scope</span><strong>${esc(scopeSummary)}</strong></div>
+      <div class="final-review-wide"><span>Modes</span><strong>${esc(modeSummary)}</strong></div>
+    </div>
+    ${blockerSummary}
+  `;
   $('downloadPackage').disabled = !okay;
   $('downloadRecipe').disabled = !state.selectedConceptIds.length;
+  $('reviewReadiness').classList.toggle('hidden', okay);
   $('technicalDetails').textContent = JSON.stringify({
     composerVersion: Core.COMPOSER_VERSION,
     recipeSchemaVersion: Core.RECIPE_SCHEMA_VERSION,
@@ -1717,6 +1716,7 @@ async function init(){
   });
   $('prevStep').addEventListener('click', () => switchStep(state.step - 1));
   $('nextStep').addEventListener('click', () => switchStep(state.step + 1));
+  $('reviewReadiness').addEventListener('click', () => switchStep(6));
   $('gameTitle').addEventListener('input', event => {
     state.title = event.target.value;
     if(!state.slugTouched){

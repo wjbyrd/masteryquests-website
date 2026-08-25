@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260824-phase3b-custom-images">
+  <link rel="stylesheet" href="composer.css?v=20260825-phase3c-polish">
 </head>
 <body>
   <header class="site-header">
     <h1>Faculty Concept Composer</h1>
-    <p>Choose economic concepts, select game modes and official artwork, review checkpoint coverage, and generate a polished Mastery Quest without editing code.</p>
+    <p>Choose economics content, modes, and artwork. Check readiness, then download a polished Mastery Quest.</p>
   </header>
 
   <main class="app-shell">
@@ -57,12 +57,8 @@
         <div class="panel-heading-row">
           <div>
             <h2>Choose concepts</h2>
-            <p>Select a course area first. The composer will display only the concepts assigned to that area, independent of any textbook chapter sequence.</p>
+            <p>Start with a course area, then use a starter combination or choose individual concepts.</p>
           </div>
-        </div>
-
-        <div class="concept-flow-note">
-          <strong>Choose a course area.</strong> Then start with a suggested combination or select individual concepts. Shared selections that fit another area stay in place; incompatible selections are removed when you switch areas.
         </div>
 
         <div class="area-selector">
@@ -74,11 +70,11 @@
               <option value="micro">Microeconomics</option>
               <option value="macro">Macroeconomics</option>
             </select>
-            <small id="areaFilterHint">Concept cards stay hidden until you choose an area. Switching areas removes selections that are not eligible there.</small>
+            <small id="areaFilterHint">Selections shared with another area stay in place when you switch; ineligible selections are removed.</small>
           </div>
         </div>
 
-        <div class="preset-section" aria-labelledby="presetHeading">
+        <div id="presetSection" class="preset-section hidden" aria-labelledby="presetHeading">
           <div>
             <h3 id="presetHeading">Starter combinations</h3>
             <p id="presetHelp">Choose a course area to see relevant quick starts.</p>
@@ -89,12 +85,12 @@
         <div id="selectedConceptSummary" class="selected-summary" aria-live="polite"></div>
         <div id="conceptRecommendations" class="recommendation-box"></div>
 
-        <details class="reading-guide">
+        <details id="conceptReadingGuide" class="reading-guide hidden">
           <summary>How to read the concept cards</summary>
           <p><strong>Practice questions</strong> are used throughout the game. <strong>Checkpoint questions</strong> test readiness at the three checkpoints. <strong>Repair</strong> and <strong>bridge</strong> questions support adaptive review after a missed concept. Graph, calculation, and integrated-analysis labels appear only when that special format is actually present.</p>
         </details>
 
-        <section id="conceptBrowseToolbar" class="concept-browse-toolbar" aria-labelledby="browseConceptsHeading">
+        <section id="conceptBrowseToolbar" class="concept-browse-toolbar hidden" aria-labelledby="browseConceptsHeading">
           <div class="browse-toolbar-heading">
             <h3 id="browseConceptsHeading">Browse concepts</h3>
             <p id="browseConceptCount">Choose an area to view its concept inventory.</p>
@@ -147,7 +143,7 @@
         <div class="panel-heading-row">
           <div>
             <h2>Game appearance</h2>
-            <p>Choose a polished official theme, then use official artwork or upload your own image for any visual slot.</p>
+            <p>Choose an official theme. Open a group only when you want to replace a specific image.</p>
           </div>
         </div>
         <h3>Official themes</h3>
@@ -155,7 +151,7 @@
         <div class="theme-override-heading">
           <div>
             <h3>Artwork details</h3>
-            <p>Open a group to review each selection, choose another official image, or upload a local WebP, PNG, or JPEG.</p>
+            <p>Each slot can use the theme image, another official image, or your own WebP, PNG, or JPEG.</p>
           </div>
         </div>
         <div id="themeSlotGroups" class="theme-slot-groups"></div>
@@ -183,7 +179,7 @@
     <section class="step" data-step-panel="7">
       <div class="panel">
         <h2>Generate your game</h2>
-        <p>The downloaded game uses one self-contained HTML file. Graph images and selected custom artwork are embedded, so there is no separate asset folder to upload or keep beside the game.</p>
+        <p>Review the build, then download one package containing the self-contained game and its faculty records.</p>
         <div id="finalGameSizeEstimate" class="game-size-estimate" aria-live="polite">
           <strong>Estimated game size: Not calculated yet</strong>
         </div>
@@ -191,6 +187,7 @@
         <div class="action-row" style="margin-top:16px">
           <button id="downloadPackage" class="primary">Download Game (.ZIP)</button>
           <button id="downloadRecipe" class="secondary">Download Composition Recipe (.JSON)</button>
+          <button id="reviewReadiness" class="secondary hidden">Review Readiness</button>
           <button id="importRecipeBtn" class="secondary">Import Composition Recipe</button>
           <input id="importRecipe" class="hidden" type="file" accept="application/json,.json">
           <button id="clearComposition" class="danger">Clear Composition</button>
@@ -211,11 +208,11 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260825-phase3b-manual-qa"></script>
+  <script src="composer-core.js?v=20260825-phase3c-polish"></script>
   <script src="course-area-model.js?v=20260813-course-area-step3"></script>
   <script src="data/composer_library.js?v=20260812-risk-reward-4.5s.2m"></script>
   <script src="data/official_theme_library.js?v=20260825-market-gate-label"></script>
   <script src="custom-asset-core.js?v=20260824-phase3b"></script>
-  <script src="composer.js?v=20260825-phase3b-manual-qa"></script>
+  <script src="composer.js?v=20260825-phase3c-polish"></script>
 </body>
 </html>

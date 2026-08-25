@@ -93,7 +93,7 @@ async function build({library, template, composition, baseRecipe, appearance, cu
     pass(caught?.code === code, `Expected ${code}, received ${caught?.code || 'no error'}`);
   };
 
-  pass(core.COMPOSER_VERSION === '4.5s.3b', 'Unexpected Composer version');
+  pass(core.COMPOSER_VERSION === '4.5s.3c', 'Unexpected Composer version');
   pass(core.RECIPE_SCHEMA_VERSION === '1.4.0', 'Unexpected recipe schema');
   pass(custom.POLICY === core.CUSTOM_ASSET_POLICY, 'Custom policy is not shared with the Composer core');
   pass(custom.POLICY.allowedSourceTypes.join(',') === 'image/webp,image/png,image/jpeg', 'Supported MIME policy changed');
