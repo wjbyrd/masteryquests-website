@@ -7,6 +7,7 @@ import {
   PHASE,
   ID_FIRST,
   ID_LAST,
+  PARENT_CONCEPT_ID,
   CONCEPT_ID,
   OBJECTIVES,
   GRAPH_ASSETS,
@@ -106,9 +107,10 @@ async function run() {
   const authoredGraph = ordinaryQuestions.filter(question => question.graphRequired);
   const authoredNonGraph = ordinaryQuestions.filter(question => !question.graphRequired);
 
-  pass(core.COMPOSER_VERSION === "4.5s.3f", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3g", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3f", `Library version ${library.composerVersion}`);
+  pass(library.composerVersion === "4.5s.3g", `Library version ${library.composerVersion}`);
+  pass(library.conceptCount === 129, `Concept count ${library.conceptCount}`);
   pass(library.canonicalQuestionCount === 8371 && manifest.canonicalQuestionCount === 8371, "Canonical count mismatch");
   pass(library.assetInventory.length === 461 && manifest.assetCount === 461, "Registered asset count mismatch");
   pass(ordinaryQuestions.length === 160 && published.length === 160, `Question total ${ordinaryQuestions.length}/${published.length}`);
@@ -170,7 +172,7 @@ async function run() {
     const found = publishedById.get(author.id);
     if (!found) continue;
     const { conceptId, pool, question } = found;
-    pass(conceptId === CONCEPT_ID && pool === author.difficulty, `Concept/pool ${author.id}`);
+    pass(conceptId === PARENT_CONCEPT_ID && pool === author.difficulty && question.subtopicIds?.includes(CONCEPT_ID), `Concept/pool ${author.id}`);
     pass(question.q === author.q && question.type === author.type && question.objective === author.objective, `Published metadata ${author.id}`);
     pass(question.primarySkill === author.primarySkill && question.repairSkill === author.repairSkill, `Skill metadata ${author.id}`);
     pass(!["answer", "correctAnswer", "correctIndex", "a"].some(field => Object.hasOwn(question, field)), `Plaintext answer field ${author.id}`);
@@ -199,7 +201,7 @@ async function run() {
   pass(!fs.existsSync(path.join(composerRoot, "data", "question-assets", "_incoming-externalities")), "Incoming staging directory remains");
   const physicalWebPs = fs.readdirSync(path.join(composerRoot, "data", "question-assets"), { recursive: true }).filter(file => String(file).toLowerCase().endsWith(".webp"));
   pass(physicalWebPs.length === 461, `Physical WebP count ${physicalWebPs.length}`);
-  const concept = library.concepts[CONCEPT_ID];
+  const concept = library.concepts[PARENT_CONCEPT_ID];
   for (const [objective, label] of Object.entries(OBJECTIVES)) pass(concept.objectiveLabels[objective] === label, `Objective label ${objective}`);
   pass((concept.repairQuestions || []).filter(question => question.sourceCurationPhase === PHASE).length === 0, "Unexpected Repair additions");
   pass((concept.bridgeQuestions || []).filter(question => question.sourceCurationPhase === PHASE).length === 0, "Unexpected Bridge additions");
@@ -208,7 +210,7 @@ async function run() {
     schemaVersion: core.RECIPE_SCHEMA_VERSION,
     title: "Externalities Production Validation",
     slug: "externalities-production-validation",
-    supportedModes: [...core.MODE_ORDER],
+    supportedModes: ["timed", "exam", "quiz", "unlimited", "trialGraph", "fadingFortune", "riskReward"],
     selectedConceptIds: [CONCEPT_ID],
     checkpointFocus: { checkpointOne: null, checkpointTwo: null, finalCheckpoint: null }
   };

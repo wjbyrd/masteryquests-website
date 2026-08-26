@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.3f';
+const COMPOSER_VERSION = '4.5s.3g';
 const RECIPE_SCHEMA_VERSION = '1.4.0';
 const CUSTOM_ASSET_POLICY = Object.freeze({
   allowedSourceTypes:['image/webp','image/png','image/jpeg'],
@@ -1033,10 +1033,30 @@ function bossQuestionsForCheckpoint(module, checkpointKey){
   return (module?.questions?.boss || []).filter(question => bossDifficulty(question) === expected);
 }
 
+const LEGACY_CONCEPT_SELECTION_MIGRATIONS = Object.freeze({
+  'market-failures':Object.freeze([
+    'externalities',
+    'public-goods-and-common-resources',
+    'market-power',
+    'market-failures'
+  ])
+});
+
+function migrateConceptSelectionIds(ids){
+  return uniqueStrings(uniqueStrings(ids || []).flatMap(id => LEGACY_CONCEPT_SELECTION_MIGRATIONS[id] || [id]));
+}
+
 function migrateRecipe(recipe, library, themeLibrary){
   const source = recipe && typeof recipe === 'object' ? recipe : {};
-  const selectedConceptIds = uniqueStrings(source.selectedConceptIds || source.concepts || []);
+  const sourceSelectedConceptIds = uniqueStrings(source.selectedConceptIds || source.concepts || []);
+  const selectedConceptIds = migrateConceptSelectionIds(sourceSelectedConceptIds);
   const migrationWarnings = [];
+  if(sourceSelectedConceptIds.some(id => LEGACY_CONCEPT_SELECTION_MIGRATIONS[id])){
+    migrationWarnings.push({
+      type:'concept-taxonomy-migration',
+      message:'The legacy Market Failures selection was expanded into Externalities, Public Goods and Common Resources, and Market Power while retaining hidden compatibility support for its remaining general questions.'
+    });
+  }
   const customAssets = canonicalCustomAssets(source.customAssets, themeLibrary);
   const checkpointFocus = {
     checkpointOne: null,
@@ -1047,7 +1067,7 @@ function migrateRecipe(recipe, library, themeLibrary){
   if(source.checkpointFocus && typeof source.checkpointFocus === 'object'){
     for(const checkpointKey of CHECKPOINT_ORDER){
       const value = source.checkpointFocus[checkpointKey];
-      checkpointFocus[checkpointKey] = value == null ? null : uniqueStrings(Array.isArray(value) ? value : []);
+      checkpointFocus[checkpointKey] = value == null ? null : migrateConceptSelectionIds(Array.isArray(value) ? value : []);
     }
   } else if(source.stages && typeof source.stages === 'object'){
     migrationWarnings.push({
@@ -1057,7 +1077,7 @@ function migrateRecipe(recipe, library, themeLibrary){
 
     for(const checkpointKey of CHECKPOINT_ORDER){
       const checkpoint = CHECKPOINTS[checkpointKey];
-      const assigned = uniqueStrings(source.stages[checkpoint.legacyStage] || [])
+      const assigned = migrateConceptSelectionIds(source.stages[checkpoint.legacyStage] || [])
         .filter(id => selectedConceptIds.includes(id));
       const mismatched = assigned.filter(id => {
         const module = library?.concepts?.[id];
@@ -1122,7 +1142,8 @@ function validateRecipeShape(library, recipe){
   for(const id of selected){
     const module = library?.concepts?.[id];
     const parentId = module?.derivedFromConceptId;
-    if(parentId && selectedSet.has(parentId)){
+    const parentStatus = library?.registry?.concepts?.find(entry => (entry.canonicalConceptId || entry.id) === parentId)?.status;
+    if(parentId && selectedSet.has(parentId) && parentStatus !== 'legacy'){
       errors.push(`${id} cannot be selected together with its parent family ${parentId}. Choose the full family or granular subtopics, not both.`);
     }
   }

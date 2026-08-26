@@ -22,6 +22,7 @@
   ]);
   const MICRO_AREA_IDS = new Set([
     'marginal-analysis','incentives','gains-from-trade','market-failures',
+    'externalities','public-goods-and-common-resources','market-power',
     'production-possibilities-frontier','positive-versus-normative-analysis',
     'economist-policy-role','competitive-markets','demand','supply',
     'market-equilibrium','price-signals','binding-price-ceilings',

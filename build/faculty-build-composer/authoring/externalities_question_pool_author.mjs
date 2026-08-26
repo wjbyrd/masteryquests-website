@@ -1,8 +1,45 @@
 export const PHASE = "phase-externalities-question-pool-v1";
-export const SOURCE_VERSION = "Externalities-2026.08.26-production-v1";
+export const SOURCE_VERSION = "Externalities-2026.08.26-copy-taxonomy-repair-v2";
 export const ID_FIRST = 42000;
 export const ID_LAST = 42159;
-export const CONCEPT_ID = "market-failures";
+export const PARENT_CONCEPT_ID = "market-failures";
+export const CONCEPT_ID = "externalities";
+
+export const TAXONOMY_CONCEPTS = Object.freeze({
+  externalities: {
+    title: "Externalities",
+    description: "Analyze positive and negative externalities, social and private margins, corrective policies, private solutions, and Coase bargaining."
+  },
+  "public-goods-and-common-resources": {
+    title: "Public Goods and Common Resources",
+    description: "Distinguish public goods from common resources and analyze free riding, nonrivalry, nonexcludability, congestion, and shared-resource depletion."
+  },
+  "market-power": {
+    title: "Market Power",
+    description: "Identify price-setting ability, barriers to entry, restricted output, allocative inefficiency, and deadweight loss from market power."
+  }
+});
+
+export const LEGACY_SUBTOPIC_ASSIGNMENTS = Object.freeze({
+  externalities: Object.freeze([
+    "ECON-MG-EASY-12", "P77-MFAIL-E-003", "ECON-MG-MEDIUM-106", "P52B-MFAIL-M-001",
+    "P77-MFAIL-M-006", "P52B-MFAIL-H-001", "ECON-MG-ELITE-337", "ECON-MG-ELITE-338",
+    "P77-MFAIL-EL-014", "P52B-MFAIL-L-001", "P77-MFAIL-L-019", "P77-MFAIL-L-022",
+    "ECON-MG-EASYBOSS-2016", "P52B-MFAIL-B2-001", "P52B-MFAIL-R-001",
+    "P77-MFAIL-R-035", "P77-MFAIL-BR-038"
+  ]),
+  "public-goods-and-common-resources": Object.freeze([
+    "ECON-MG-EASY-13", "P77-MFAIL-E-004", "P52B-MFAIL-M-002", "P77-MFAIL-M-007",
+    "P52B-MFAIL-H-002", "P77-MFAIL-H-012", "P52B-MFAIL-L-002", "P77-MFAIL-L-016",
+    "P77-MFAIL-L-017", "P77-MFAIL-L-023", "P52B-MFAIL-B2-002", "P77-MFAIL-LB-029",
+    "P77-MFAIL-LB-031", "P52B-MFAIL-R-002", "P52B-MFAIL-BR-001", "P77-MFAIL-BR-039"
+  ]),
+  "market-power": Object.freeze([
+    "ECON-MG-EASY-14", "P77-MFAIL-E-005", "ECON-MG-MEDIUM-107", "P77-MFAIL-M-009",
+    "P52B-MFAIL-H-003", "P52B-MFAIL-L-003", "P77-MFAIL-L-020", "P52B-MFAIL-B2-003",
+    "P77-MFAIL-R-036"
+  ])
+});
 
 export const OBJECTIVES = {
   "EXT.1": "Positive versus Negative Externalities",
@@ -110,6 +147,35 @@ function tuple(q, answer, distractors, objective, type, difficulty, primarySkill
   return { q, answer, distractors, objective, type, difficulty, primarySkill, feedback };
 }
 
+function efficientIntersection(s) {
+  if (s.number === 1) return "MSC intersects MPB";
+  if (s.number === 2) return "MPC intersects MSB";
+  if (s.number === 3) return "MSC intersects MPB";
+  return "MPC intersects MSB";
+}
+
+function marketFeedback(s) {
+  return `The unregulated market equilibrium occurs where MPC intersects MPB, at ${s.marketQ} ${s.unit} and ${s.marketP}.`;
+}
+
+function efficientFeedback(s) {
+  return `The socially efficient outcome occurs where ${efficientIntersection(s)}, at ${s.efficientQ} ${s.unit} and ${s.efficientP}.`;
+}
+
+function quantityFeedback(s) {
+  return `${marketFeedback(s)} ${efficientFeedback(s)} The difference is ${s.quantityGap} ${s.unit}, so the market has ${s.gapDirection}.`;
+}
+
+function policyFeedback(s) {
+  const mechanisms = {
+    1: "The tax makes producers face the $6 marginal external cost, aligning private marginal cost with MSC",
+    2: "The tax makes consumers face the $4 marginal external cost, aligning their private incentive with MSB",
+    3: "The producer subsidy rewards the $5 marginal external benefit, aligning the producer's effective cost with MSC",
+    4: "The rider subsidy rewards the $2 marginal external benefit, aligning the rider's private incentive with MSB"
+  };
+  return `${mechanisms[s.number]} and moving quantity to ${s.efficientQ} ${s.unit}.`;
+}
+
 function graphA(s, difficulties, objectives) {
   const asset = `EXTERNALITY-A-0${s.number}.webp`;
   const choices = ["Negative production externality", "Negative consumption externality", "Positive production externality", "Positive consumption externality"];
@@ -117,11 +183,11 @@ function graphA(s, difficulties, objectives) {
   const externalUnit = s.externalAmount.replace(/^\$\d+\s*/, "");
   const amountDistractors = [2, 4, 5, 6].filter(value => value !== externalValue).slice(0, 3).map(value => `$${value} ${externalUnit}`);
   return [
-    tuple(`The ${s.subject} graph shows private and social marginal curves. Which classification matches the spillover?`, s.externality[0].toUpperCase() + s.externality.slice(1), choices.filter(choice => choice.toLowerCase() !== s.externality), objectives[0], "graph_interpretation", difficulties[0], "externality_identification", `The affected private and social curves identify a ${s.externality}.`),
-    tuple(`In the ${s.subject} graph, what does the vertical relationship between the social and private curves mean?`, s.curveAnswer, s.curveDistractors, objectives[1], "graph_interpretation", difficulties[1], s.number <= 2 ? "externality_social_cost" : "positive_externality", s.curves),
-    tuple(`Without corrective policy, what quantity problem does the ${s.subject} graph predict?`, s.directionAnswer, s.directionDistractors, objectives[2], "graph_interpretation", difficulties[2], s.number <= 2 ? "externality_social_cost" : "positive_externality", `The private and social intersections differ, creating ${s.gapDirection}.`),
-    tuple(`What constant marginal external effect is represented in the ${s.subject} graph?`, s.externalAmount, amountDistractors, objectives[3], "graph_interpretation", difficulties[3], "external_marginal_cost", `The private and social curves are separated by ${s.externalAmount}.`),
-    tuple(`Which policy direction is consistent with the ${s.subject} graph?`, s.policyDirection, s.policyDistractors, objectives[4], "graph_trap", difficulties[4], s.number <= 2 ? "corrective_tax_externality_logic" : "subsidy_price_signal", `${s.policy} aligns private incentives with the social margin.`)
+    tuple(`Refer to the ${s.subject} graph. Which type of externality is represented by the private and social marginal curves?`, s.externality[0].toUpperCase() + s.externality.slice(1), choices.filter(choice => choice.toLowerCase() !== s.externality), objectives[0], "graph_interpretation", difficulties[0], "externality_identification", `This is a ${s.externality}: the activity creates a ${s.number <= 2 ? "cost" : "benefit"} for people outside the market transaction, so the relevant social and private marginal curves differ.`),
+    tuple(`Based on the ${s.subject} graph, what economic relationship explains the position of the social curve relative to the private curve?`, s.curveAnswer, s.curveDistractors, objectives[1], "graph_interpretation", difficulties[1], s.number <= 2 ? "externality_social_cost" : "positive_externality", `${s.curveAnswer}. The constant vertical separation is the marginal external ${s.number <= 2 ? "cost omitted from private decisions" : "benefit not captured by the private decision-maker"}.`),
+    tuple(`If no corrective policy is adopted, how will the market quantity of ${s.subject} compare with the socially efficient quantity?`, s.directionAnswer, s.directionDistractors, objectives[2], "graph_interpretation", difficulties[2], s.number <= 2 ? "externality_social_cost" : "positive_externality", `${quantityFeedback(s)} Private choices omit the external ${s.number <= 2 ? "cost" : "benefit"}.`),
+    tuple(`Based on the vertical distance between the private and social curves, what is the constant marginal external effect for ${s.subject}?`, s.externalAmount, amountDistractors, objectives[3], "graph_interpretation", difficulties[3], "external_marginal_cost", `The private and social curves remain ${s.externalAmount} apart, so each unit creates that amount of marginal external ${s.number <= 2 ? "cost" : "benefit"}.`),
+    tuple(`Which change in incentives would move the ${s.subject} market toward its socially efficient quantity?`, s.policyDirection, s.policyDistractors, objectives[4], "graph_trap", difficulties[4], s.number <= 2 ? "corrective_tax_externality_logic" : "subsidy_price_signal", policyFeedback(s))
   ].map(question => ({ ...question, asset }));
 }
 
@@ -134,16 +200,16 @@ function graphB(s, difficulties, objectives) {
   const externalUnit = s.externalAmount.replace(/^\$\d+\s*/, "");
   const amountDistractors = [2, 4, 5, 6].filter(value => value !== externalValue).slice(0, 3).map(value => `$${value} ${externalUnit}`);
   return [
-    tuple(`Read the unregulated market quantity from the ${s.subject} graph.`, market, [efficient, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[0], "graph_interpretation", difficulties[0], "graph_reading", `The private curves intersect at ${market}.`),
-    tuple(`What price is observed at the unregulated ${s.subject} market outcome?`, s.marketP, [s.efficientP, s.buyerPrice, s.sellerPrice, "$0"].filter((value, index, all) => value !== s.marketP && all.indexOf(value) === index).slice(0, 3), objectives[1], "graph_interpretation", difficulties[1], "equilibrium_price", `The market-outcome dot is at ${s.marketP}.`),
-    tuple(`Which quantity is socially efficient in the ${s.subject} graph?`, efficient, [market, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[2], "graph_interpretation", difficulties[2], "externality_social_cost", `The relevant social curve intersects the opposing private curve at ${efficient}.`),
-    tuple(`Why do the two marked ${s.subject} outcomes differ?`, "The market uses private incentives, while efficiency uses the relevant social marginal curve", ["The efficient outcome ignores all external effects", "The market outcome already includes the full spillover", "The difference is caused only by statutory tax incidence"], objectives[3], "graph_interpretation", difficulties[3], "externality_social_cost", "Market equilibrium uses private curves; efficiency includes the spillover."),
-    tuple(`Calculate the quantity distortion shown for ${s.subject}.`, gap, [market, efficient, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[4], "graph_calculation", difficulties[4], "externality_quantity_gap", `The absolute quantity difference is ${gap}.`),
-    tuple(`At the efficient ${s.subject} quantity, what marginal external effect separates the curves?`, s.externalAmount, amountDistractors, objectives[5], "graph_calculation", difficulties[5], "external_marginal_cost", `The private-social gap is ${s.externalAmount}.`),
-    tuple(`Using the outcome gap and marginal spillover, what is the original deadweight loss for ${s.subject}?`, s.dwl, [s.fiscalAmount, `$${s.quantityGap}`, `$${s.quantityGap * Number(s.externalAmount.match(/\d+/)[0])}`], objectives[6], "graph_calculation", difficulties[6], "externality_dwl_calculation", `DWL is one-half times the quantity distortion times the marginal external effect: ${s.dwl}.`),
-    tuple(`A quantity rule replaces a price instrument. What target matches the efficient ${s.subject} outcome?`, efficient, [market, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[7], "graph_calculation", difficulties[7], s.number <= 2 ? "regulatory_quantity_target" : "subsidy_quantity_target", `A correctly calibrated policy targets ${efficient}.`),
-    tuple(`Which claim about corrective policy inferred from the ${s.subject} graph is accurate?`, `${s.policy} would close the marginal private-social gap`, ["Any $1 policy would necessarily restore efficiency", "The policy should move quantity farther from the social outcome", "The policy amount should equal market price rather than the spillover"], objectives[8], "graph_trap", difficulties[8], s.number <= 2 ? "corrective_tax_externality_logic" : "subsidy_price_signal", `The optimal correction equals ${s.externalAmount}.`),
-    tuple(`Suppose affected parties can bargain costlessly over the ${s.subject} spillover. Which graph outcome is the efficient bargaining target?`, efficient, [market, gap, "Equal gains for every party regardless of rights"], objectives[9], "graph_trap", difficulties[9], "coase_efficiency", `Under Coase assumptions, bargaining targets ${efficient}; initial rights still affect distribution.`)
+    tuple(`Refer to the graph. At what quantity do MPC and MPB intersect in the unregulated market for ${s.subject}?`, market, [efficient, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[0], "graph_interpretation", difficulties[0], "graph_reading", marketFeedback(s)),
+    tuple(`At the unregulated MPC-MPB intersection for ${s.subject}, what market price is shown?`, s.marketP, [s.efficientP, s.buyerPrice, s.sellerPrice, "$0"].filter((value, index, all) => value !== s.marketP && all.indexOf(value) === index).slice(0, 3), objectives[1], "graph_interpretation", difficulties[1], "equilibrium_price", marketFeedback(s)),
+    tuple(`Which marked quantity represents the socially efficient outcome for ${s.subject}?`, efficient, [market, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[2], "graph_interpretation", difficulties[2], "externality_social_cost", efficientFeedback(s)),
+    tuple(`Based on the graph, why does the unregulated ${s.subject} outcome differ from the socially efficient outcome?`, "The market uses private incentives, while efficiency uses the relevant social marginal curve", ["The efficient outcome ignores all external effects", "The market outcome already includes the full spillover", "The difference is caused only by statutory tax incidence"], objectives[3], "graph_interpretation", difficulties[3], "externality_social_cost", `${marketFeedback(s)} By contrast, ${efficientFeedback(s).replace(/^The /, "the ")} The social outcome includes the spillover that private choices omit.`),
+    tuple(`By how many ${s.unit} does the unregulated ${s.subject} quantity differ from the socially efficient quantity?`, gap, [market, efficient, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[4], "graph_calculation", difficulties[4], "externality_quantity_gap", quantityFeedback(s)),
+    tuple(`At the efficient quantity for ${s.subject}, what marginal external ${s.number <= 2 ? "cost" : "benefit"} is represented by the gap between the curves?`, s.externalAmount, amountDistractors, objectives[5], "graph_calculation", difficulties[5], "external_marginal_cost", `At the efficient quantity, the relevant private and social curves are ${s.externalAmount} apart. That vertical gap is the marginal external ${s.number <= 2 ? "cost" : "benefit"}.`),
+    tuple(`Using the quantity distortion and marginal external effect shown for ${s.subject}, what is the original deadweight loss?`, s.dwl, [s.fiscalAmount, `$${s.quantityGap}`, `$${s.quantityGap * Number(s.externalAmount.match(/\d+/)[0])}`], objectives[6], "graph_calculation", difficulties[6], "externality_dwl_calculation", `The distortion is ${s.quantityGap} ${s.unit} and the marginal external effect is ${s.externalAmount}. The triangular loss is one-half times those values, or ${s.dwl}.`),
+    tuple(`Suppose regulators replace the price instrument with a quantity limit. Based on the graph, what ${s.subject} quantity would reproduce the efficient outcome?`, efficient, [market, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[7], "graph_calculation", difficulties[7], s.number <= 2 ? "regulatory_quantity_target" : "subsidy_quantity_target", `${efficientFeedback(s)} A correctly calibrated quantity rule would therefore set the target at ${efficient}.`),
+    tuple(`Based on the ${s.subject} graph, which corrective-policy claim is economically accurate?`, `${s.policy} would close the marginal private-social gap`, ["Any $1 policy would necessarily restore efficiency", "The policy should move quantity farther from the social outcome", "The policy amount should equal market price rather than the spillover"], objectives[8], "graph_trap", difficulties[8], s.number <= 2 ? "corrective_tax_externality_logic" : "subsidy_price_signal", `${policyFeedback(s)} The optimal per-unit correction equals the marginal external effect, ${s.externalAmount}.`),
+    tuple(`If affected parties could bargain costlessly over the ${s.subject} spillover, which quantity on the graph would be their efficient target?`, efficient, [market, gap, "Equal gains for every party regardless of rights"], objectives[9], "graph_trap", difficulties[9], "coase_efficiency", `${efficientFeedback(s)} Under the Coase assumptions, bargaining can reach that quantity, although the initial rights assignment still affects who compensates whom.`)
   ].map(question => ({ ...question, asset }));
 }
 
@@ -159,29 +225,29 @@ function graphC(s, difficulties, objectives, types) {
     ? [s.dwl, `$${s.efficientQ * 2}${scale}`, `$${s.marketQ * Number(s.externalAmount.match(/\d+/)[0])}${scale}`]
     : [s.dwl, `$${s.marketQ * Number(s.externalAmount.match(/\d+/)[0])}`, `$${s.quantityGap * Number(s.externalAmount.match(/\d+/)[0])}`];
   return [
-    tuple(`How far must ${s.subject} quantity move from market outcome to corrected outcome?`, gap, [`${s.marketQ} ${s.unit}`, efficient, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[0], types[0], difficulties[0], "externality_quantity_gap", `The change is ${gap}.`),
-    tuple(`What vertical private-social gap must policy internalize in the ${s.subject} graph?`, s.externalAmount, amountDistractors, objectives[1], types[1], difficulties[1], "external_marginal_cost", `The policy wedge equals ${s.externalAmount}.`),
-    tuple(`Which corrective instrument and amount are shown for ${s.subject}?`, s.policy, [`a $1 ${s.policyNoun} per unit`, `a ${s.externalAmount} policy in the opposite direction`, `a quantity target at ${s.marketQ} ${s.unit}`], objectives[2], types[2], difficulties[2], s.number <= 2 ? "corrective_tax_externality_logic" : "subsidy_price_signal", `The optimal policy is ${s.policy}.`),
-    tuple(`Calculate the ${s.fiscalLabel} at corrected ${s.subject} quantity.`, s.fiscalAmount, fiscalDistractors, objectives[3], types[3], difficulties[3], s.fiscalLabel === "tax revenue" ? "tax_revenue_calculation" : "subsidy_expenditure_calculation", `${s.efficientQ} times ${s.externalAmount} gives ${s.fiscalAmount}.`),
-    tuple(`What corrected quantity is produced by the optimal ${s.policyNoun} for ${s.subject}?`, efficient, [`${s.marketQ} ${s.unit}`, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[4], types[4], difficulties[4], "corrective_policy_quantity", `Policy-adjusted incentives meet at ${efficient}.`),
-    tuple(`Why is ${efficient} efficient in the ${s.subject} graph?`, "Marginal social benefit equals marginal social cost there", ["Tax revenue or subsidy spending is maximized there", "Buyers and sellers receive equal dollar gains there", "Private curves remain at their original market intersection there"], objectives[5], types[5], difficulties[5], "social_efficiency_condition", "Efficiency requires equality of marginal social benefit and marginal social cost."),
-    tuple(`At corrected ${s.subject} outcome, which price pair matches the policy wedge?`, `Buyers pay ${s.buyerPrice}; sellers receive ${s.sellerPrice}`, [`Buyers pay ${s.sellerPrice}; sellers receive ${s.buyerPrice}`, `Both sides face ${s.marketP}`, `Both sides face ${s.efficientP}`], objectives[6], types[6], difficulties[6], "buyer_seller_policy_wedge", `The price difference equals ${s.externalAmount}.`),
-    tuple(`How does the ${s.policyNoun} correct the incentive problem for ${s.subject}?`, "It makes the private decision-maker face the marginal social effect", ["It removes scarcity from the market", "It guarantees equal surplus for buyers and sellers", "It preserves market quantity while changing only transfers"], objectives[7], types[7], difficulties[7], "policy_internalization", "The correction internalizes the spillover."),
-    tuple(`Which conclusion should be rejected after reading the corrected ${s.subject} graph?`, "Any policy with the correct direction automatically has the optimal size", ["The optimal wedge equals the marginal external effect", "Corrected quantity equates social marginal benefit and cost", "Policy can create a price difference between buyers and sellers"], objectives[8], types[8], difficulties[8], s.number <= 2 ? "corrective_tax_misconception" : "coase_policy_comparison", "Direction alone is insufficient; policy must also be calibrated.")
+    tuple(`Based on the graph, by how much must the quantity of ${s.subject} change to move from the unregulated market outcome to the corrected outcome?`, gap, [`${s.marketQ} ${s.unit}`, efficient, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[0], types[0], difficulties[0], "externality_quantity_gap", quantityFeedback(s)),
+    tuple(`What per-unit gap between private and social incentives must the policy internalize in the ${s.subject} market?`, s.externalAmount, amountDistractors, objectives[1], types[1], difficulties[1], "external_marginal_cost", `The relevant private and social marginal curves are ${s.externalAmount} apart. Matching that vertical gap makes the private decision reflect the marginal external ${s.number <= 2 ? "cost" : "benefit"}.`),
+    tuple(`Which corrective instrument and per-unit amount shown on the graph would move ${s.subject} to the efficient quantity?`, s.policy, [`a $1 ${s.policyNoun} per unit`, `a ${s.externalAmount} policy in the opposite direction`, `a quantity target at ${s.marketQ} ${s.unit}`], objectives[2], types[2], difficulties[2], s.number <= 2 ? "corrective_tax_externality_logic" : "subsidy_price_signal", `${policyFeedback(s)} Therefore the graph's optimal instrument is ${s.policy}.`),
+    tuple(`At the corrected quantity shown for ${s.subject}, how much ${s.fiscalLabel} does the per-unit policy generate?`, s.fiscalAmount, fiscalDistractors, objectives[3], types[3], difficulties[3], s.fiscalLabel === "tax revenue" ? "tax_revenue_calculation" : "subsidy_expenditure_calculation", `The corrected quantity is ${s.efficientQ} ${s.unit} and the policy is ${s.externalAmount}. Multiplying the per-unit amount by quantity gives ${s.fiscalAmount} in ${s.fiscalLabel}.`),
+    tuple(`After the optimal ${s.policyNoun} internalizes the spillover, what quantity of ${s.subject} is produced or consumed?`, efficient, [`${s.marketQ} ${s.unit}`, gap, `${s.marketQ + s.efficientQ} ${s.unit}`], objectives[4], types[4], difficulties[4], "corrective_policy_quantity", `${policyFeedback(s)} The corrected quantity is therefore ${efficient}.`),
+    tuple(`Why does the corrected quantity of ${efficient} represent social efficiency in this market?`, "Marginal social benefit equals marginal social cost there", ["Tax revenue or subsidy spending is maximized there", "Buyers and sellers receive equal dollar gains there", "Private curves remain at their original market intersection there"], objectives[5], types[5], difficulties[5], "social_efficiency_condition", `${efficientFeedback(s)} At that intersection, marginal social benefit equals marginal social cost, so no additional mutually beneficial unit is omitted and no inefficient unit is produced.`),
+    tuple(`At the corrected ${s.subject} quantity, which buyer-price and seller-receipt pair reflects the policy wedge?`, `Buyers pay ${s.buyerPrice}; sellers receive ${s.sellerPrice}`, [`Buyers pay ${s.sellerPrice}; sellers receive ${s.buyerPrice}`, `Both sides face ${s.marketP}`, `Both sides face ${s.efficientP}`], objectives[6], types[6], difficulties[6], "buyer_seller_policy_wedge", `At ${efficient}, buyers pay ${s.buyerPrice} and sellers receive ${s.sellerPrice}. The ${s.externalAmount} difference is the ${s.policyNoun} wedge, not deadweight loss.`),
+    tuple(`How does the ${s.policyNoun} change private incentives in the ${s.subject} market?`, "It makes the private decision-maker face the marginal social effect", ["It removes scarcity from the market", "It guarantees equal surplus for buyers and sellers", "It preserves market quantity while changing only transfers"], objectives[7], types[7], difficulties[7], "policy_internalization", `${policyFeedback(s)} Internalization changes the marginal choice; it does not remove scarcity or guarantee equal gains.`),
+    tuple(`Which conclusion is inconsistent with the correctly calibrated ${s.subject} policy shown on the graph?`, "Any policy with the correct direction automatically has the optimal size", ["The optimal wedge equals the marginal external effect", "Corrected quantity equates social marginal benefit and cost", "Policy can create a price difference between buyers and sellers"], objectives[8], types[8], difficulties[8], s.number <= 2 ? "corrective_tax_misconception" : "coase_policy_comparison", `A policy must have both the correct direction and the correct size. Here the optimal wedge equals ${s.externalAmount}; a smaller or larger intervention would leave a quantity distortion.`)
   ].map(question => ({ ...question, asset }));
 }
 
 function graphD() {
   const asset = "EXTERNALITY-D-02.webp";
   return [
-    tuple("What actual tax is represented by the policy-adjusted MPB curve?", "$2 per vape", ["$1 per vape", "$4 per vape", "$6 per vape"], "EXT.3", "graph_interpretation", "elite", "imperfect_corrective_tax", "The adjusted curve is $2 below MPB."),
-    tuple("At what quantity does the $2 vaping tax leave the market?", "160 thousand vapes", ["140 thousand vapes", "180 thousand vapes", "20 thousand vapes"], "EXT.3", "graph_interpretation", "elite", "imperfect_policy_quantity", "Adjusted MPB intersects MPC at 160 thousand."),
-    tuple("How much overconsumption remains after the imperfect vaping tax?", "20 thousand vapes", ["40 thousand vapes", "140 thousand vapes", "160 thousand vapes"], "EXT.3", "graph_integration", "elite", "residual_quantity_distortion", "The taxed quantity is 160 thousand and efficient quantity is 140 thousand."),
-    tuple("Which price pair is produced by the $2 tax at 160 thousand vapes?", "Consumers pay $11; sellers receive $9", ["Consumers pay $12; sellers receive $8", "Consumers pay $10; sellers receive $10", "Consumers pay $9; sellers receive $11"], "EXT.4", "graph_integration", "elite", "buyer_seller_policy_wedge", "The graph shows a $2 wedge between $11 and $9."),
-    tuple("Calculate residual deadweight loss after the $2 vaping tax.", "$20 thousand", ["$80 thousand", "$320 thousand", "$40 thousand"], "EXT.4", "graph_integration", "legendary", "residual_dwl_calculation", "Residual DWL is 0.5 x 20 thousand x $2 = $20 thousand."),
-    tuple("What share of original vaping deadweight loss does the $2 tax remove?", "75%", ["25%", "50%", "100%"], "EXT.4", "graph_integration", "elite", "dwl_reduction_percentage", "It removes $60 thousand of the original $80 thousand."),
-    tuple("What tax revenue is collected under the imperfect vaping policy?", "$320 thousand", ["$560 thousand", "$80 thousand", "$20 thousand"], "EXT.4", "graph_integration", "elite", "tax_revenue_calculation", "Revenue is 160 thousand x $2."),
-    tuple("Which evaluation of the $2 vaping tax is correct?", "It improves efficiency but does not restore it because the optimal tax is $4", ["It restores efficiency because every positive tax is corrective", "It worsens efficiency because revenue is not social surplus", "It eliminates the external cost although quantity remains above 140 thousand"], "EXT.4", "graph_integration", "legendary", "imperfect_policy_evaluation", "The tax helps but leaves 20 thousand vapes of overconsumption.")
+    tuple("Refer to the imperfect-correction graph. How large is the tax represented by the policy-adjusted MPB curve?", "$2 per vape", ["$1 per vape", "$4 per vape", "$6 per vape"], "EXT.3", "graph_interpretation", "elite", "imperfect_corrective_tax", "The policy-adjusted MPB curve is $2 below MPB, so consumers face a $2 tax. The optimal correction would equal the full $4 marginal external cost."),
+    tuple("At what quantity does the $2 vaping tax leave the market after shifting the private consumption incentive?", "160 thousand vapes", ["140 thousand vapes", "180 thousand vapes", "20 thousand vapes"], "EXT.3", "graph_interpretation", "elite", "imperfect_policy_quantity", "The policy-adjusted MPB curve intersects MPC at 160 thousand vapes. That is below the unregulated 180 thousand but above the efficient 140 thousand."),
+    tuple("Based on the graph, how much overconsumption remains after the imperfect $2 vaping tax?", "20 thousand vapes", ["40 thousand vapes", "140 thousand vapes", "160 thousand vapes"], "EXT.3", "graph_integration", "elite", "residual_quantity_distortion", "The tax reduces consumption to 160 thousand vapes, while efficiency requires MPC to intersect MSB at 140 thousand. The remaining overconsumption is 20 thousand vapes."),
+    tuple("At the taxed quantity of 160 thousand vapes, which consumer-price and seller-receipt pair is shown?", "Consumers pay $11; sellers receive $9", ["Consumers pay $12; sellers receive $8", "Consumers pay $10; sellers receive $10", "Consumers pay $9; sellers receive $11"], "EXT.4", "graph_integration", "elite", "buyer_seller_policy_wedge", "At 160 thousand vapes, consumers pay $11 and sellers receive $9. Their $2 difference is the actual tax wedge, which is smaller than the optimal $4 wedge."),
+    tuple("Using the remaining quantity distortion, what residual deadweight loss remains after the $2 vaping tax?", "$20 thousand", ["$80 thousand", "$320 thousand", "$40 thousand"], "EXT.4", "graph_integration", "legendary", "residual_dwl_calculation", "The market still overconsumes by 20 thousand vapes, and the remaining marginal wedge is $2. Residual DWL is 0.5 x 20 thousand x $2 = $20 thousand."),
+    tuple("What percentage of the original vaping deadweight loss is removed by the $2 tax?", "75%", ["25%", "50%", "100%"], "EXT.4", "graph_integration", "elite", "dwl_reduction_percentage", "Original DWL is $80 thousand and residual DWL is $20 thousand, so the policy removes $60 thousand, or 75%, while leaving 25%."),
+    tuple("How much tax revenue does the government collect when the $2 vaping tax leaves consumption at 160 thousand units?", "$320 thousand", ["$560 thousand", "$80 thousand", "$20 thousand"], "EXT.4", "graph_integration", "elite", "tax_revenue_calculation", "Tax revenue equals the $2 tax multiplied by 160 thousand vapes, or $320 thousand. Revenue is a transfer and should not be confused with residual DWL."),
+    tuple("Which assessment correctly compares the actual $2 vaping tax with the optimal $4 correction?", "It improves efficiency but does not restore it because the optimal tax is $4", ["It restores efficiency because every positive tax is corrective", "It worsens efficiency because revenue is not social surplus", "It eliminates the external cost although quantity remains above 140 thousand"], "EXT.4", "graph_integration", "legendary", "imperfect_policy_evaluation", "The $2 tax reduces consumption from 180 thousand to 160 thousand, so it improves efficiency. Because MPC and MSB intersect at 140 thousand, 20 thousand vapes of overconsumption and $20 thousand of residual DWL remain.")
   ].map(question => ({ ...question, asset }));
 }
 
@@ -298,7 +364,73 @@ const NON_GRAPH_BLUEPRINTS = {
   ]
 };
 
-const nonGraphQuestions = Object.entries(NON_GRAPH_BLUEPRINTS).flatMap(([objective, rows]) => rows.map(row => ({ ...row, objective })));
+const NON_GRAPH_FEEDBACK_EXTENSIONS = [
+  " Because the smoke is created during production, the omitted harm raises marginal social cost above the mill's private marginal cost.",
+  " The purchase itself is not the spillover; the harm generated when the product is consumed falls on people outside the transaction.",
+  " The beekeeper does not capture all of the added orchard output, so the social benefit of producing hives exceeds the private benefit.",
+  " The patient receives a private benefit, while reduced transmission creates an additional social benefit for other people.",
+  " The customer and landscaper are the transacting parties, while nearby residents experience a cost created by the production process.",
+  " Each trip adds congestion delays for other road users, so the driver's private cost understates the social cost of road use.",
+  " Costs already paid by the buyer or seller are private; an external cost is omitted from their exchange and therefore from the market price.",
+  " A positive or negative sign identifies the effect on third parties, whereas production or consumption identifies the activity that generates it.",
+  " Because imitators receive gains without compensating the innovator, private production incentives can be weaker than the total social return.",
+  " Benefits and costs confined to the transacting parties are already private; evidence of a spillover requires an effect on someone else.",
+  " The factory compares MPB with MPC and omits pollution damage, so MPC lies below MSC and the private intersection occurs at too much output.",
+  " When consumers omit harm to bystanders, MPB lies above MSB and the market chooses units whose social benefit is below their social cost.",
+  " The market uses MPB, but efficiency uses MSB for a consumption externality; confusing those curves overstates the value of marginal consumption.",
+  " The inefficient quantity range is 30 units, and the triangular welfare loss uses one-half of that base rather than the full rectangle.",
+  " Because the regulator specifies the equipment rather than a price or emissions allowance, firms cannot choose a different compliance technology.",
+  " The legal maximum directly constrains each plant's emissions quantity; it does not create a subsidy or a tradable right by itself.",
+  " Equal cuts ignore differences in marginal abatement cost, so the target could be reached with less total cost by shifting reductions toward lower-cost plants.",
+  " A ban is a direct quantity restriction: it prevents the damaging behavior instead of charging a price for each unit of harm.",
+  " A written standard changes outcomes only when emissions can be observed and violations can be detected and penalized.",
+  " Flexibility lets low-cost firms undertake more abatement and high-cost firms less, potentially preserving the target while lowering total compliance cost.",
+  " A standard determines an allowed quantity, while a corrective tax changes the marginal private price; those instruments need not produce identical certainty or revenue.",
+  " Firms retain freedom to select the least-cost method, although regulators still must define, monitor, and enforce the performance outcome.",
+  " Eliminating every unit can sacrifice trades whose private and social benefits still exceed their harm, so efficient policy compares marginal benefits and costs.",
+  " Reaching the efficient aggregate quantity does not ensure least-cost abatement when marginal abatement costs remain unequal across firms.",
+  " At the efficient quantity, adding the tax to the private margin closes the gap between private and social cost and removes the incentive to choose harmful excess units.",
+  " Tax revenue changes who holds purchasing power, while deadweight loss measures mutually beneficial surplus that disappears because quantity is inefficient.",
+  " Revenue uses the post-tax quantity: $3 per unit multiplied by 500 units. It is not calculated from the pre-tax quantity or from a welfare triangle.",
+  " The $4 tax internalizes only part of the $7 marginal harm, so decision-makers still omit $3 of social cost on each unit.",
+  " Because consumers count only their private return, MPB lies below MSB and the private market stops before all socially worthwhile units are consumed.",
+  " For a positive production externality, MSC lies below MPC because some production benefit reaches third parties rather than the producer.",
+  " By rewarding the external benefit, the subsidy raises the consumer's effective private incentive and moves the MPB-based choice toward the MSB-based efficient quantity.",
+  " Government spending is a fiscal cost, not a direct measure of welfare; policy evaluation must compare the external benefit gained with real resource and financing costs.",
+  " Each permit authorizes a unit of emissions, so the number of valid permits fixes total legal emissions even when ownership changes through trade.",
+  " Firm A's $20 abatement cost is below the $45 permit price, while Firm B's $70 cost is above it, so trade assigns more reduction to the lower-cost source.",
+  " A trade transfers permission to emit from one firm to another; it neither creates nor retires a permit and therefore leaves aggregate emissions unchanged.",
+  " Retiring permits reduces the legal quantity of emissions, requiring additional aggregate abatement if regulated demand for emissions is otherwise unchanged.",
+  " Firms compare marginal abatement cost with the permit price, and trading shifts reductions until avoidable cost differences are exhausted.",
+  " Using a permit now carries a larger opportunity cost, so more emissions-reduction projects become cheaper than surrendering the permit.",
+  " Free allocation changes who receives permit scarcity value, but with frictionless trading the cap and marginal-cost comparisons still govern total emissions and abatement.",
+  " A cap is effective only when emissions are measured and permits are enforced; unrecorded emissions break the link between permits and actual pollution.",
+  " With a smaller fixed supply of permits and unchanged demand to emit, scarcity increases and the equilibrium permit price tends to rise.",
+  " Both systems can reach the same least-cost allocation through trading, while the initial distribution or auction of permits changes who receives the scarcity rents.",
+  " Selecting the $15 and $35 reductions minimizes cost because the required two tons should be abated by the two lowest marginal-cost firms.",
+  " The cap reduction itself determines required aggregate abatement: authorized emissions fall by 80 tons regardless of which firms ultimately reduce them.",
+  " Combining ownership makes the mill bear both production gains and fishery losses, bringing a previously external cost into the same private decision.",
+  " The enforceable agreement assigns obligations and compensation between affected parties rather than relying on a government tax or quantity mandate.",
+  " Norms can change behavior, but incomplete participation and weak enforcement can leave some marginal external harm outside private decisions.",
+  " Higher rents let the landlord capture part of the neighbors' benefit, strengthening the private incentive to undertake an otherwise externality-reducing investment.",
+  " When many parties each have small stakes, locating participants, coordinating terms, preventing holdouts, and enforcing payment can consume the bargaining surplus.",
+  " The efficient action creates $900 of avoided harm at a $500 resource cost, leaving $400 that the parties could divide before transaction costs.",
+  " Negotiation and enforcement costs use $350 of the $1,200 gross surplus, leaving $850 available to make the parties better off.",
+  " The action creates only $300 of gross joint surplus, so spending $400 to reach and enforce an agreement would make the bargain inefficient.",
+  " With enforceable rights and negligible transaction costs, the parties can compare prevention cost with avoided harm and bargain to the quantity that maximizes joint surplus.",
+  " Either rights assignment can support the efficient quantity under ideal bargaining, but it determines which party pays and how the bargaining gains are divided.",
+  " Poor information, many participants, and strategic holdouts raise the cost of reaching and enforcing agreement, undermining the low-transaction-cost assumption.",
+  " Prevention creates only $0.8 million of gross joint surplus, which cannot cover $1 million of bargaining cost; the mutually beneficial bargain therefore disappears."
+];
+
+const nonGraphRows = Object.entries(NON_GRAPH_BLUEPRINTS).flatMap(([objective, rows]) => rows.map(row => ({ ...row, objective })));
+if (NON_GRAPH_FEEDBACK_EXTENSIONS.length !== nonGraphRows.length) {
+  throw new Error(`Expected ${nonGraphRows.length} non-graph feedback extensions; found ${NON_GRAPH_FEEDBACK_EXTENSIONS.length}.`);
+}
+const nonGraphQuestions = nonGraphRows.map((row, index) => ({
+  ...row,
+  feedback: `${row.feedback}${NON_GRAPH_FEEDBACK_EXTENSIONS[index]}`
+}));
 
 const ANSWER_SET_RATIONALES = [
   "because only the private curves determine the outcome",

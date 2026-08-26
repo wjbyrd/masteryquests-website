@@ -7,7 +7,10 @@ import {
   SOURCE_VERSION,
   ID_FIRST,
   ID_LAST,
+  PARENT_CONCEPT_ID,
   CONCEPT_ID,
+  TAXONOMY_CONCEPTS,
+  LEGACY_SUBTOPIC_ASSIGNMENTS,
   OBJECTIVES,
   GRAPH_ASSETS,
   ordinaryQuestions
@@ -19,12 +22,15 @@ const libraryPath = path.join(composerRoot, "data", "composer_library.js");
 const registryPath = path.join(composerRoot, "data", "composer_registry.json");
 const manifestPath = path.join(composerRoot, "data", "composer_library_manifest.json");
 const reviewManifestPath = path.join(composerRoot, "data", "concept-reviews", "manifest.json");
+const reviewSourcePath = path.join(composerRoot, "data", "concept-reviews", "full-library-production", "concept_review_source.json");
 const incomingDir = path.join(composerRoot, "data", "question-assets", "_incoming-externalities");
-const finalDir = path.join(composerRoot, "data", "question-assets", CONCEPT_ID);
-const COMPOSER_VERSION = "4.5s.3f";
-const GENERATED_AT = "2026-08-26T12:00:00.000Z";
+const finalDir = path.join(composerRoot, "data", "question-assets", PARENT_CONCEPT_ID);
+const COMPOSER_VERSION = "4.5s.3g";
+const GENERATED_AT = "2026-08-26T18:00:00.000Z";
 const EXPECTED_ASSETS = new Set(Object.keys(GRAPH_ASSETS));
 const PHASE_IDS = new Set(Array.from({ length: ID_LAST - ID_FIRST + 1 }, (_, index) => String(ID_FIRST + index)));
+const CHILD_CONCEPT_IDS = Object.freeze(Object.keys(TAXONOMY_CONCEPTS));
+const CHILD_CONCEPT_SET = new Set(CHILD_CONCEPT_IDS);
 
 function normalize(value) {
   return String(value).normalize("NFKC").trim().replace(/\s+/g, " ").toLowerCase();
@@ -56,6 +62,17 @@ function allQuestionEntries(library) {
     for (const key of ["repairQuestions", "repairSeedQuestions", "bridgeQuestions"]) {
       for (const question of concept[key] || []) entries.push({ conceptId, pool: key, question });
     }
+  }
+  return entries;
+}
+
+function conceptQuestionEntries(concept) {
+  const entries = [];
+  for (const [pool, questions] of Object.entries(concept.questions || {})) {
+    for (const question of questions || []) entries.push({ pool, question });
+  }
+  for (const key of ["repairQuestions", "repairSeedQuestions", "bridgeQuestions"]) {
+    for (const question of concept[key] || []) entries.push({ pool: key, question });
   }
   return entries;
 }
@@ -111,6 +128,12 @@ function validateAuthorSource(library) {
     const dimensions = webpDimensions(bytes);
     if (dimensions.width !== 1720 || dimensions.height !== 1200) errors.push(`Unexpected dimensions: ${filename}`);
   }
+  const assignedIds = Object.values(LEGACY_SUBTOPIC_ASSIGNMENTS).flat();
+  if (new Set(assignedIds).size !== assignedIds.length) errors.push("A legacy Market Failures record is assigned to multiple child concepts.");
+  const parent = library.concepts[PARENT_CONCEPT_ID];
+  if (!parent) errors.push(`Missing compatibility parent: ${PARENT_CONCEPT_ID}`);
+  const existingIds = new Set(conceptQuestionEntries(parent || {}).map(({ question }) => String(question.id)));
+  for (const id of assignedIds) if (!existingIds.has(id)) errors.push(`Missing legacy taxonomy record: ${id}`);
   if (errors.length) throw new Error(errors.join("\n"));
 }
 
@@ -135,14 +158,35 @@ function publishAssets() {
 }
 
 function removePriorPhase(library) {
-  const concept = library.concepts[CONCEPT_ID];
+  const concept = library.concepts[PARENT_CONCEPT_ID];
   for (const [pool, questions] of Object.entries(concept.questions || {})) {
     concept.questions[pool] = questions.filter(question => !PHASE_IDS.has(String(question.id)));
   }
   concept.assetMetadata = (concept.assetMetadata || []).filter(asset => asset.sourceCurationPhase !== PHASE);
-  concept.assets = (concept.assets || []).filter(runtimePath => !runtimePath.startsWith(`question-assets/${CONCEPT_ID}/EXTERNALITY-`));
-  concept.assetPaths = (concept.assetPaths || []).filter(runtimePath => !runtimePath.startsWith(`question-assets/${CONCEPT_ID}/EXTERNALITY-`));
+  concept.assets = (concept.assets || []).filter(runtimePath => !runtimePath.startsWith(`question-assets/${PARENT_CONCEPT_ID}/EXTERNALITY-`));
+  concept.assetPaths = (concept.assetPaths || []).filter(runtimePath => !runtimePath.startsWith(`question-assets/${PARENT_CONCEPT_ID}/EXTERNALITY-`));
   library.assetInventory = (library.assetInventory || []).filter(asset => asset.sourceCurationPhase !== PHASE);
+  for (const id of CHILD_CONCEPT_IDS) delete library.concepts[id];
+  library.registry.concepts = library.registry.concepts.filter(conceptRecord => !CHILD_CONCEPT_SET.has(conceptRecord.canonicalConceptId));
+}
+
+function assignLegacySubtopics(library) {
+  const parent = library.concepts[PARENT_CONCEPT_ID];
+  const assignmentById = new Map();
+  for (const [conceptId, ids] of Object.entries(LEGACY_SUBTOPIC_ASSIGNMENTS)) {
+    for (const id of ids) assignmentById.set(String(id), conceptId);
+  }
+  const counts = Object.fromEntries(CHILD_CONCEPT_IDS.map(id => [id, 0]));
+  for (const { question } of conceptQuestionEntries(parent)) {
+    const preserved = (question.subtopicIds || []).filter(id => !CHILD_CONCEPT_SET.has(id));
+    const assigned = assignmentById.get(String(question.id));
+    question.subtopicIds = assigned ? [...preserved, assigned] : preserved;
+    if (assigned) {
+      question.familyConceptId = PARENT_CONCEPT_ID;
+      counts[assigned] += 1;
+    }
+  }
+  return counts;
 }
 
 function rotateOptions(question) {
@@ -153,7 +197,7 @@ function rotateOptions(question) {
 
 function publishQuestion(question) {
   const options = rotateOptions(question);
-  const runtimePath = question.asset ? `question-assets/${CONCEPT_ID}/${question.asset}` : undefined;
+  const runtimePath = question.asset ? `question-assets/${PARENT_CONCEPT_ID}/${question.asset}` : undefined;
   const asset = question.asset ? GRAPH_ASSETS[question.asset] : undefined;
   const safe = {
     id: String(question.id),
@@ -200,8 +244,10 @@ function publishQuestion(question) {
       sourceHash,
       sourceCurationPhase: PHASE
     }],
-    primaryConceptId: CONCEPT_ID,
+    primaryConceptId: PARENT_CONCEPT_ID,
     secondaryConceptIds: [],
+    familyConceptId: PARENT_CONCEPT_ID,
+    subtopicIds: [CONCEPT_ID],
     instructionalRole: "main",
     canonicalDifficulty: question.difficulty,
     originalSourcePool: question.difficulty,
@@ -210,14 +256,14 @@ function publishQuestion(question) {
 }
 
 function registerAsset(library, filename) {
-  const concept = library.concepts[CONCEPT_ID];
-  const runtimePath = `question-assets/${CONCEPT_ID}/${filename}`;
+  const concept = library.concepts[PARENT_CONCEPT_ID];
+  const runtimePath = `question-assets/${PARENT_CONCEPT_ID}/${filename}`;
   const sourceUrl = `data/${runtimePath}`;
   const bytes = fs.readFileSync(locateAsset(filename));
   const dimensions = webpDimensions(bytes);
   const authored = GRAPH_ASSETS[filename];
   const metadata = {
-    conceptId: CONCEPT_ID,
+    conceptId: PARENT_CONCEPT_ID,
     filename,
     sourceAssetPath: runtimePath,
     sourceUrl,
@@ -239,50 +285,202 @@ function registerAsset(library, filename) {
   library.assetInventory.push(metadata);
 }
 
-function refreshRegistry(library) {
-  const registryConcept = library.registry.concepts.find(concept => concept.canonicalConceptId === CONCEPT_ID);
-  const concept = library.concepts[CONCEPT_ID];
-  const ordinary = Object.entries(concept.questions || {}).flatMap(([pool, questions]) => questions.map(question => ({ pool, question })));
-  const support = [...(concept.repairQuestions || []), ...(concept.repairSeedQuestions || []), ...(concept.bridgeQuestions || [])];
+function countRegistryRecords(entries) {
+  const ordinary = entries.filter(({ pool }) => !["repairQuestions", "repairSeedQuestions", "bridgeQuestions"].includes(pool));
+  const support = entries.filter(({ pool }) => ["repairQuestions", "repairSeedQuestions", "bridgeQuestions"].includes(pool));
   const difficultyCounts = {};
-  for (const { pool, question } of ordinary) {
+  for (const { pool, question } of entries) {
     const difficulty = question.canonicalDifficulty || question.difficulty || pool || "unknown";
     difficultyCounts[difficulty] = (difficultyCounts[difficulty] || 0) + 1;
   }
-  for (const question of support) {
-    const difficulty = question.canonicalDifficulty || "unknown";
-    difficultyCounts[difficulty] = (difficultyCounts[difficulty] || 0) + 1;
-  }
-  registryConcept.questionCountByRole = {
-    boss: concept.questions?.boss?.length || 0,
-    bridge: concept.bridgeQuestions?.length || 0,
-    calculation: concept.questions?.calculation?.length || 0,
-    elite: concept.questions?.elite?.length || 0,
-    integration: concept.questions?.integration?.length || 0,
-    legendary: concept.questions?.legendary?.length || 0,
-    legendaryBoss: concept.questions?.legendaryBoss?.length || 0,
-    main: ["easy", "medium", "hard"].reduce((sum, pool) => sum + (concept.questions?.[pool]?.length || 0), 0),
-    repair: concept.repairQuestions?.length || 0,
-    repairSeed: concept.repairSeedQuestions?.length || 0
+  return {
+    ordinary,
+    support,
+    questionCountByRole: {
+      boss: entries.filter(({ pool }) => pool === "boss").length,
+      bridge: entries.filter(({ pool }) => pool === "bridgeQuestions").length,
+      calculation: entries.filter(({ pool }) => pool === "calculation").length,
+      elite: entries.filter(({ pool }) => pool === "elite").length,
+      integration: entries.filter(({ pool }) => pool === "integration").length,
+      legendary: entries.filter(({ pool }) => pool === "legendary").length,
+      legendaryBoss: entries.filter(({ pool }) => pool === "legendaryBoss").length,
+      main: entries.filter(({ pool }) => ["easy", "medium", "hard"].includes(pool)).length,
+      repair: entries.filter(({ pool }) => pool === "repairQuestions").length,
+      repairSeed: entries.filter(({ pool }) => pool === "repairSeedQuestions").length
+    },
+    difficultyCounts
   };
-  registryConcept.questionCountByDifficulty = difficultyCounts;
-  registryConcept.repairCoverage = { directSkillMatches: concept.repairQuestions?.length || 0, mainWithUsableSkill: ordinary.length };
-  registryConcept.bridgeCoverage = { directSkillMatches: concept.bridgeQuestions?.length || 0, mainWithUsableSkill: ordinary.length };
-  registryConcept.calculationCoverage = ordinary.filter(({ pool, question }) => pool === "calculation" || /calculation/i.test(question.type || "")).length;
-  registryConcept.graphCoverage = ordinary.filter(({ question }) => Boolean(question.image)).length;
-  registryConcept.includedSkills = [...new Set([...registryConcept.includedSkills, ...ordinary.map(({ question }) => question.primarySkill).filter(Boolean)])].sort();
-  registryConcept.sourceObjectives = [...new Set([...(registryConcept.sourceObjectives || []), ...Object.keys(OBJECTIVES)])];
-  registryConcept.notes = "Externalities production pool adds 160 ordinary Principles of Microeconomics questions, including 104 graph-dependent questions across four externality scenarios. Existing remediation remains unchanged.";
+}
+
+function createDerivedConcepts(library) {
+  const parent = library.concepts[PARENT_CONCEPT_ID];
+  for (const [conceptId, definition] of Object.entries(TAXONOMY_CONCEPTS)) {
+    library.concepts[conceptId] = {
+      schemaVersion: parent.schemaVersion,
+      canonicalConceptId: conceptId,
+      title: definition.title,
+      description: definition.description,
+      derivedFromConceptId: PARENT_CONCEPT_ID,
+      subtopicFilterId: conceptId,
+      familyConceptId: PARENT_CONCEPT_ID,
+      assetConceptId: PARENT_CONCEPT_ID,
+      standaloneRecommendation: conceptId === CONCEPT_ID ? "standalone-ready" : "supporting-subtopic",
+      assets: [],
+      assetPaths: [],
+      assetMetadata: []
+    };
+  }
+}
+
+function replaceLegacyRelatedIds(ids) {
+  const source = Array.isArray(ids) ? ids : [];
+  return [...new Set(source.flatMap(id => id === PARENT_CONCEPT_ID ? CHILD_CONCEPT_IDS : [id]))];
+}
+
+function childRegistryRecord(library, conceptId) {
+  const parent = library.concepts[PARENT_CONCEPT_ID];
+  const definition = TAXONOMY_CONCEPTS[conceptId];
+  const entries = conceptQuestionEntries(parent).filter(({ question }) => (question.subtopicIds || []).includes(conceptId));
+  const counts = countRegistryRecords(entries);
+  const ordinaryCount = counts.ordinary.length;
+  const repairCount = entries.filter(({ pool }) => pool === "repairQuestions").length;
+  const bridgeCount = entries.filter(({ pool }) => pool === "bridgeQuestions").length;
+  const externalities = conceptId === CONCEPT_ID;
+  return {
+    canonicalConceptId: conceptId,
+    title: definition.title,
+    description: definition.description,
+    includedSkills: [...new Set(entries.map(({ question }) => question.primarySkill).filter(Boolean))].sort(),
+    excludedNeighboringSkills: externalities
+      ? ["Public-good, common-resource, and general market-power questions use separate Composer concepts."]
+      : ["Detailed externalities and established market-structure families remain in their own concepts."],
+    prerequisiteConceptIds: ["competitive-markets", "price-signals"],
+    relatedConceptIds: CHILD_CONCEPT_IDS.filter(id => id !== conceptId),
+    sourceChapters: [...new Set(entries.flatMap(({ question }) => question.sourceChapter || []))],
+    sourceObjectives: [...new Set(entries.map(({ question }) => question.objective).filter(Boolean))],
+    sourceGames: [...new Set(entries.map(({ question }) => question.sourceGame).filter(Boolean))],
+    questionCountByRole: counts.questionCountByRole,
+    questionCountByDifficulty: counts.difficultyCounts,
+    repairCoverage: { directSkillMatches: repairCount, mainWithUsableSkill: ordinaryCount },
+    bridgeCoverage: { directSkillMatches: bridgeCount, mainWithUsableSkill: ordinaryCount },
+    calculationCoverage: counts.ordinary.filter(({ pool, question }) => pool === "calculation" || /calculation/i.test(question.type || "")).length,
+    graphCoverage: counts.ordinary.filter(({ question }) => Boolean(question.image)).length,
+    status: "active",
+    notes: externalities
+      ? "Dedicated Externalities selector containing the intact 160-question production pool plus pre-existing externality records."
+      : `Dedicated ${definition.title} selector containing only reclassified legacy records; no expansion questions were added.`,
+    instructionalClassification: externalities ? "Standalone-ready" : "Supporting / Light-Touch",
+    coverageStatus: externalities ? "ready-focused" : "supporting-subtopic",
+    coverageStatusLabel: externalities ? "Ready for focused use" : "Best paired with related concepts",
+    coverageStatusNote: externalities
+      ? "Production externalities bank with graph, policy, calculation, private-solution, and Coase coverage."
+      : "Existing records were separated from the legacy Market Failures pool without expanding the bank.",
+    coverageFloorVersion: SOURCE_VERSION,
+    selectionRole: "standalone"
+  };
+}
+
+function refreshRegistry(library) {
+  const parent = library.concepts[PARENT_CONCEPT_ID];
+  const parentIndex = library.registry.concepts.findIndex(concept => concept.canonicalConceptId === PARENT_CONCEPT_ID);
+  if (parentIndex < 0) throw new Error(`Missing registry concept: ${PARENT_CONCEPT_ID}`);
+  const parentRegistry = library.registry.concepts[parentIndex];
+  const parentCounts = countRegistryRecords(conceptQuestionEntries(parent));
+  Object.assign(parentRegistry, {
+    title: "Market Failures",
+    description: "Legacy compatibility parent for migrated Market Failures recipes and the shared organizational review sheet.",
+    includedSkills: [...new Set(parentCounts.ordinary.map(({ question }) => question.primarySkill).filter(Boolean))].sort(),
+    relatedConceptIds: replaceLegacyRelatedIds(parentRegistry.relatedConceptIds),
+    questionCountByRole: parentCounts.questionCountByRole,
+    questionCountByDifficulty: parentCounts.difficultyCounts,
+    repairCoverage: {
+      directSkillMatches: parentCounts.questionCountByRole.repair,
+      mainWithUsableSkill: parentCounts.ordinary.length
+    },
+    bridgeCoverage: {
+      directSkillMatches: parentCounts.questionCountByRole.bridge,
+      mainWithUsableSkill: parentCounts.ordinary.length
+    },
+    calculationCoverage: parentCounts.ordinary.filter(({ pool, question }) => pool === "calculation" || /calculation/i.test(question.type || "")).length,
+    graphCoverage: parentCounts.ordinary.filter(({ question }) => Boolean(question.image)).length,
+    status: "legacy",
+    notes: "Nonselectable compatibility parent. Faculty select Externalities, Public Goods and Common Resources, or Market Power; legacy recipes migrate to those concepts.",
+    instructionalClassification: "Legacy compatibility parent",
+    coverageStatus: "retired-selector",
+    coverageStatusLabel: "Replaced by separate concepts",
+    coverageStatusNote: "Not shown as a faculty-selectable card.",
+    childConceptIds: CHILD_CONCEPT_IDS,
+    selectionRole: "legacy-parent"
+  });
+  const childRecords = CHILD_CONCEPT_IDS.map(id => childRegistryRecord(library, id));
+  library.registry.concepts.splice(parentIndex + 1, 0, ...childRecords);
+  for (const record of library.registry.concepts) {
+    if (record.canonicalConceptId === PARENT_CONCEPT_ID || CHILD_CONCEPT_SET.has(record.canonicalConceptId)) continue;
+    record.relatedConceptIds = replaceLegacyRelatedIds(record.relatedConceptIds);
+  }
+}
+
+function refreshConceptReviews(reviewManifest, reviewSource, libraryVersion) {
+  const review = reviewManifest.reviews.find(item => item.code === "MICRO-03");
+  if (!review) throw new Error("Missing MICRO-03 Market Failures review record.");
+  review.canonicalConceptIds = [...CHILD_CONCEPT_IDS];
+
+  reviewManifest.concepts = reviewManifest.concepts.filter(item => !CHILD_CONCEPT_SET.has(item.canonicalConceptId));
+  const parentIndex = reviewManifest.concepts.findIndex(item => item.canonicalConceptId === PARENT_CONCEPT_ID);
+  if (parentIndex < 0) throw new Error("Missing Market Failures concept-review mapping.");
+  Object.assign(reviewManifest.concepts[parentIndex], {
+    selectable: false,
+    selectableCard: false,
+    diagnosable: false,
+    selectionRole: "legacy-parent",
+    disposition: "HIDDEN_SUPPLEMENTAL",
+    reviewCodes: [],
+    primaryReviewCode: null,
+    reason: "Legacy recipe compatibility parent; the shared Market Failures review is mapped through the three selectable child concepts."
+  });
+  const conceptMappings = CHILD_CONCEPT_IDS.map(conceptId => ({
+    canonicalConceptId: conceptId,
+    displayName: TAXONOMY_CONCEPTS[conceptId].title,
+    discipline: "micro",
+    areas: ["micro"],
+    parentId: null,
+    childIds: [],
+    selectable: true,
+    selectableCard: true,
+    diagnosable: true,
+    selectionRole: "standalone",
+    disposition: "REVIEW_SHEET",
+    reviewCodes: ["MICRO-03"],
+    primaryReviewCode: "MICRO-03"
+  }));
+  reviewManifest.concepts.splice(parentIndex + 1, 0, ...conceptMappings);
+  reviewManifest.generatedAt = GENERATED_AT;
+  reviewManifest.composerLibraryVersion = libraryVersion;
+  reviewManifest.summary.canonicalConceptCount = reviewManifest.concepts.length;
+  reviewManifest.summary.directlyMappedCanonicalConceptCount = reviewManifest.concepts.filter(item => (item.reviewCodes || []).length > 0).length;
+  reviewManifest.summary.dispositionCounts = reviewManifest.concepts.reduce((counts, item) => {
+    counts[item.disposition] = (counts[item.disposition] || 0) + 1;
+    return counts;
+  }, {});
+
+  const sourceReview = reviewSource.reviews.find(item => item.code === "MICRO-03");
+  if (!sourceReview) throw new Error("Missing MICRO-03 concept-review authoring source.");
+  sourceReview.canonicalConceptIds = [...CHILD_CONCEPT_IDS];
+  sourceReview.evidence.questionsInspected = Object.values(LEGACY_SUBTOPIC_ASSIGNMENTS).flat().length + ordinaryQuestions.length;
+  reviewSource.generatedAt = GENERATED_AT;
+  reviewSource.composerLibraryVersion = libraryVersion;
 }
 
 function render() {
   const library = readLibrary();
   validateAuthorSource(library);
   removePriorPhase(library);
-  const concept = library.concepts[CONCEPT_ID];
+  assignLegacySubtopics(library);
+  const concept = library.concepts[PARENT_CONCEPT_ID];
   concept.objectiveLabels = { ...(concept.objectiveLabels || {}), ...OBJECTIVES };
   for (const question of ordinaryQuestions) concept.questions[question.difficulty].push(publishQuestion(question));
   for (const filename of EXPECTED_ASSETS) registerAsset(library, filename);
+  createDerivedConcepts(library);
   library.composerVersion = COMPOSER_VERSION;
   library.libraryVersion = `${library.libraryVersion.replace(new RegExp(`-${PHASE}$`), "")}-${PHASE}`;
   library.sourceCurationPhase = PHASE;
@@ -300,7 +498,8 @@ function render() {
   library.librarySha256 = sha256(stableStringify(library));
   library.registry.librarySha256 = library.librarySha256;
   const reviewManifest = JSON.parse(fs.readFileSync(reviewManifestPath, "utf8"));
-  reviewManifest.composerLibraryVersion = library.libraryVersion;
+  const reviewSource = JSON.parse(fs.readFileSync(reviewSourcePath, "utf8"));
+  refreshConceptReviews(reviewManifest, reviewSource, library.libraryVersion);
   const manifest = {
     assetCount: library.assetInventory.length,
     assets: library.assetInventory,
@@ -315,7 +514,8 @@ function render() {
       [libraryPath, `window.MQ_COMPOSER_LIBRARY=${JSON.stringify(library)};\n`],
       [registryPath, `${JSON.stringify(library.registry, null, 2)}\n`],
       [manifestPath, `${JSON.stringify(manifest, null, 2)}\n`],
-      [reviewManifestPath, `${JSON.stringify(reviewManifest, null, 2)}\n`]
+      [reviewManifestPath, `${JSON.stringify(reviewManifest, null, 2)}\n`],
+      [reviewSourcePath, `${JSON.stringify(reviewSource, null, 2)}\n`]
     ],
     summary: {
       sourceVersion: SOURCE_VERSION,
@@ -324,6 +524,7 @@ function render() {
       assets: EXPECTED_ASSETS.size,
       canonicalQuestionCount: library.canonicalQuestionCount,
       assetInventoryCount: library.assetInventory.length,
+      conceptCount: library.conceptCount,
       librarySha256: library.librarySha256
     }
   };

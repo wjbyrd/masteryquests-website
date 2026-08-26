@@ -99,9 +99,9 @@ async function run() {
   const ordinary = allOrdinary(library);
   const synchronized = ordinary.filter(({ question }) => phaseIds.has(String(question.id)));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3f", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3g", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3f", `Library Composer version ${library.composerVersion}`);
+  pass(library.composerVersion === "4.5s.3g", `Library Composer version ${library.composerVersion}`);
   pass(library.canonicalQuestionCount === 8371, `Canonical count ${library.canonicalQuestionCount}`);
   pass(manifest.canonicalQuestionCount === 8371, `Manifest canonical count ${manifest.canonicalQuestionCount}`);
   pass(synchronized.length === 48, `Synchronized record count ${synchronized.length}`);

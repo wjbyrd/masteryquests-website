@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-26T12:00:00.000Z",
+  "generatedAt": "2026-08-26T18:00:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -6264,7 +6264,7 @@
     {
       "canonicalConceptId": "market-failures",
       "title": "Market Failures",
-      "description": "Identify externalities, public goods, market power, and corrective policy logic.",
+      "description": "Legacy compatibility parent for migrated Market Failures recipes and the shared organizational review sheet.",
       "includedSkills": [
         "abatement_cost_allocation",
         "asymmetric_information",
@@ -6276,8 +6276,6 @@
         "coase_transaction_cost_threshold",
         "common_resource_policy",
         "common_resource_problem",
-        "core_market_failure",
-        "core_markets",
         "corrective_policy_quantity",
         "corrective_tax_externality_logic",
         "corrective_tax_misconception",
@@ -6401,13 +6399,307 @@
       },
       "calculationCoverage": 38,
       "graphCoverage": 104,
+      "status": "legacy",
+      "notes": "Nonselectable compatibility parent. Faculty select Externalities, Public Goods and Common Resources, or Market Power; legacy recipes migrate to those concepts.",
+      "instructionalClassification": "Legacy compatibility parent",
+      "coverageStatus": "retired-selector",
+      "coverageStatusLabel": "Replaced by separate concepts",
+      "coverageStatusNote": "Not shown as a faculty-selectable card.",
+      "coverageFloorVersion": "phase7.7-general-economics-final-maturation-v1",
+      "childConceptIds": [
+        "externalities",
+        "public-goods-and-common-resources",
+        "market-power"
+      ],
+      "selectionRole": "legacy-parent"
+    },
+    {
+      "canonicalConceptId": "externalities",
+      "title": "Externalities",
+      "description": "Analyze positive and negative externalities, social and private margins, corrective policies, private solutions, and Coase bargaining.",
+      "includedSkills": [
+        "abatement_cost_allocation",
+        "buyer_seller_policy_wedge",
+        "coase_assumptions",
+        "coase_distribution",
+        "coase_efficiency",
+        "coase_policy_comparison",
+        "coase_transaction_cost_threshold",
+        "corrective_policy_quantity",
+        "corrective_tax_externality_logic",
+        "corrective_tax_misconception",
+        "dwl_reduction_percentage",
+        "efficiency_vs_cost_effectiveness",
+        "efficiency_vs_distribution",
+        "equilibrium_price",
+        "external_marginal_cost",
+        "externality",
+        "externality_channel",
+        "externality_dwl_calculation",
+        "externality_identification",
+        "externality_quantity_gap",
+        "externality_social_cost",
+        "graph_reading",
+        "imperfect_corrective_tax",
+        "imperfect_policy_evaluation",
+        "imperfect_policy_quantity",
+        "intervention_limits",
+        "market_failure_definition",
+        "negative_externality_efficiency",
+        "permit_allocation_distribution",
+        "permit_cap_comparative_statics",
+        "permit_enforcement",
+        "policy_comparison",
+        "policy_internalization",
+        "positive_externality",
+        "positive_externality_efficiency",
+        "private_contract_solution",
+        "private_incentive_capture",
+        "private_solution_integration",
+        "regulation_mechanism",
+        "regulation_policy_identification",
+        "regulatory_cost_effectiveness",
+        "regulatory_design",
+        "regulatory_enforcement",
+        "regulatory_flexibility",
+        "regulatory_quantity_target",
+        "regulatory_tradeoff",
+        "residual_dwl_calculation",
+        "residual_quantity_distortion",
+        "social_efficiency_condition",
+        "social_norm_solution",
+        "subsidy_expenditure_calculation",
+        "subsidy_policy_evaluation",
+        "subsidy_price_signal",
+        "subsidy_quantity_target",
+        "tax_revenue_calculation",
+        "tax_revenue_vs_dwl",
+        "tradable_permit_cap",
+        "tradable_permit_cap_calculation",
+        "tradable_permit_cost_effectiveness",
+        "tradable_permit_price_signal",
+        "tradable_permit_trading",
+        "transaction_cost_barrier",
+        "transaction_cost_net_gain",
+        "transaction_cost_threshold"
+      ],
+      "excludedNeighboringSkills": [
+        "Public-good, common-resource, and general market-power questions use separate Composer concepts."
+      ],
+      "prerequisiteConceptIds": [
+        "competitive-markets",
+        "price-signals"
+      ],
+      "relatedConceptIds": [
+        "public-goods-and-common-resources",
+        "market-power"
+      ],
+      "sourceChapters": [
+        1,
+        6
+      ],
+      "sourceObjectives": [
+        "LO1.6",
+        "GE.7.7",
+        "EXT.1",
+        "EXT.2",
+        "EXT.5",
+        "EXT.3",
+        "EXT.6",
+        "EXT.4",
+        "EXT.7",
+        "EXT.8",
+        "EXT.9"
+      ],
+      "sourceGames": [
+        "market-gate",
+        "general-economics-final-maturation",
+        "externalities-authoring",
+        "phase5.2b-minimum-coverage-rescue"
+      ],
+      "questionCountByRole": {
+        "boss": 2,
+        "bridge": 1,
+        "calculation": 0,
+        "elite": 31,
+        "integration": 0,
+        "legendary": 15,
+        "legendaryBoss": 0,
+        "main": 126,
+        "repair": 2,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 27,
+        "medium": 52,
+        "hard": 49,
+        "elite": 31,
+        "legendary": 15,
+        "unknown": 3
+      },
+      "repairCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 174
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 174
+      },
+      "calculationCoverage": 38,
+      "graphCoverage": 104,
       "status": "active",
-      "notes": "Externalities production pool adds 160 ordinary Principles of Microeconomics questions, including 104 graph-dependent questions across four externality scenarios. Existing remediation remains unchanged.",
+      "notes": "Dedicated Externalities selector containing the intact 160-question production pool plus pre-existing externality records.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Production externalities bank with graph, policy, calculation, private-solution, and Coase coverage.",
+      "coverageFloorVersion": "Externalities-2026.08.26-copy-taxonomy-repair-v2",
+      "selectionRole": "standalone"
+    },
+    {
+      "canonicalConceptId": "public-goods-and-common-resources",
+      "title": "Public Goods and Common Resources",
+      "description": "Distinguish public goods from common resources and analyze free riding, nonrivalry, nonexcludability, congestion, and shared-resource depletion.",
+      "includedSkills": [
+        "common_resource_policy",
+        "common_resource_problem",
+        "intervention_limits",
+        "public_common",
+        "public_good_definition"
+      ],
+      "excludedNeighboringSkills": [
+        "Detailed externalities and established market-structure families remain in their own concepts."
+      ],
+      "prerequisiteConceptIds": [
+        "competitive-markets",
+        "price-signals"
+      ],
+      "relatedConceptIds": [
+        "externalities",
+        "market-power"
+      ],
+      "sourceChapters": [
+        1,
+        6
+      ],
+      "sourceObjectives": [
+        "LO1.6",
+        "GE.7.7"
+      ],
+      "sourceGames": [
+        "market-gate",
+        "general-economics-final-maturation",
+        "phase5.2b-minimum-coverage-rescue"
+      ],
+      "questionCountByRole": {
+        "boss": 1,
+        "bridge": 2,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 4,
+        "legendaryBoss": 2,
+        "main": 6,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 2,
+        "medium": 3,
+        "hard": 2,
+        "legendary": 6,
+        "unknown": 3
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 13
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 2,
+        "mainWithUsableSkill": 13
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Dedicated Public Goods and Common Resources selector containing only reclassified legacy records; no expansion questions were added.",
       "instructionalClassification": "Supporting / Light-Touch",
-      "coverageStatus": "supplemental-ready",
-      "coverageStatusLabel": "Supporting — validated for solo and combined play",
-      "coverageStatusNote": "Phase 7.7 light-touch maturation: application-led ordinary depth, complete checkpoints, diagnostic Repair, genuine Bridges, and controlled solo Legendary reuse.",
-      "coverageFloorVersion": "phase7.7-general-economics-final-maturation-v1"
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with related concepts",
+      "coverageStatusNote": "Existing records were separated from the legacy Market Failures pool without expanding the bank.",
+      "coverageFloorVersion": "Externalities-2026.08.26-copy-taxonomy-repair-v2",
+      "selectionRole": "standalone"
+    },
+    {
+      "canonicalConceptId": "market-power",
+      "title": "Market Power",
+      "description": "Identify price-setting ability, barriers to entry, restricted output, allocative inefficiency, and deadweight loss from market power.",
+      "includedSkills": [
+        "market_power",
+        "market_power_definition",
+        "market_power_effect",
+        "natural_monopoly_tradeoff"
+      ],
+      "excludedNeighboringSkills": [
+        "Detailed externalities and established market-structure families remain in their own concepts."
+      ],
+      "prerequisiteConceptIds": [
+        "competitive-markets",
+        "price-signals"
+      ],
+      "relatedConceptIds": [
+        "externalities",
+        "public-goods-and-common-resources"
+      ],
+      "sourceChapters": [
+        1,
+        6
+      ],
+      "sourceObjectives": [
+        "LO1.6",
+        "GE.7.7"
+      ],
+      "sourceGames": [
+        "market-gate",
+        "general-economics-final-maturation",
+        "phase5.2b-minimum-coverage-rescue"
+      ],
+      "questionCountByRole": {
+        "boss": 1,
+        "bridge": 0,
+        "calculation": 0,
+        "elite": 0,
+        "integration": 0,
+        "legendary": 2,
+        "legendaryBoss": 0,
+        "main": 5,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 2,
+        "medium": 3,
+        "hard": 1,
+        "legendary": 2,
+        "unknown": 1
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 8
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 0,
+        "mainWithUsableSkill": 8
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Dedicated Market Power selector containing only reclassified legacy records; no expansion questions were added.",
+      "instructionalClassification": "Supporting / Light-Touch",
+      "coverageStatus": "supporting-subtopic",
+      "coverageStatusLabel": "Best paired with related concepts",
+      "coverageStatusNote": "Existing records were separated from the legacy Market Failures pool without expanding the bank.",
+      "coverageFloorVersion": "Externalities-2026.08.26-copy-taxonomy-repair-v2",
+      "selectionRole": "standalone"
     },
     {
       "canonicalConceptId": "micro-versus-macro",
@@ -7130,7 +7422,9 @@
         "consumer-and-producer-surplus",
         "consumer-choice",
         "incentives",
-        "market-failures"
+        "externalities",
+        "public-goods-and-common-resources",
+        "market-power"
       ],
       "sourceChapters": [],
       "sourceObjectives": [
@@ -7761,7 +8055,9 @@
       ],
       "relatedConceptIds": [
         "consumer-and-producer-surplus",
-        "market-failures",
+        "externalities",
+        "public-goods-and-common-resources",
+        "market-power",
         "incentives",
         "international-trade-and-trade-policy"
       ],
@@ -8637,7 +8933,9 @@
       "relatedConceptIds": [
         "consumer-and-producer-surplus",
         "incentives",
-        "market-failures",
+        "externalities",
+        "public-goods-and-common-resources",
+        "market-power",
         "international-trade-and-trade-policy"
       ],
       "sourceChapters": [],
@@ -11922,6 +12220,6 @@
   "curationSummary": "Phase Graph 4: seven approved money-market and money-market-to-AD assets plus 42 graph-dependent questions. Coverage emphasizes money-market equilibrium, money-supply expansion/contraction, simultaneous money shifts, and monetary transmission to aggregate demand.",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-externalities-question-pool-v1",
   "canonicalQuestionCount": 8371,
-  "composerVersion": "4.5s.3f",
-  "librarySha256": "a6570af954330fedf0c48f3a014b64fada157a361a71b0ccb6f89961f5a616b6"
+  "composerVersion": "4.5s.3g",
+  "librarySha256": "7ad1dbf3a3a5b0f546da28203dafb4fe8b20a50639e1b2e50fd279f377c8e57d"
 }
