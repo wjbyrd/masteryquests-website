@@ -114,9 +114,9 @@ async function run() {
   const parentEntries = conceptEntries(library.concepts[parent]);
   const phasePublished = parentEntries.filter(({ question }) => phaseIds.has(String(question.id)));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3g", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3h", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.canonicalQuestionCount === 8371 && manifest.canonicalQuestionCount === 8371, "Canonical question count changed");
+  pass(library.canonicalQuestionCount === 8531 && manifest.canonicalQuestionCount === 8531, "Canonical question count changed");
   pass(library.conceptCount === 129 && library.registry.concepts.length === 129, "Concept count mismatch");
   pass(ordinaryQuestions.length === 160 && phasePublished.length === 160, "The 160-question pool is not intact");
   pass(ordinaryQuestions.filter(question => question.graphRequired).length === 104, "Graph-question count changed");
@@ -139,7 +139,7 @@ async function run() {
   pass(phaseSubtopics.size === 1 && phaseSubtopics.has(CONCEPT_ID), "A production externalities question remains only in the broad parent");
   const assigned = Object.fromEntries(children.map(id => [id, selectedEntries(library, id)]));
   pass(assigned.externalities.length === 177, `Externalities assignment ${assigned.externalities.length}`);
-  pass(assigned["public-goods-and-common-resources"].length === 16, `Public-goods assignment ${assigned["public-goods-and-common-resources"].length}`);
+  pass(assigned["public-goods-and-common-resources"].length === 176, `Public-goods assignment ${assigned["public-goods-and-common-resources"].length}`);
   pass(assigned["market-power"].length === 9, `Market-power assignment ${assigned["market-power"].length}`);
   const assignedIds = Object.values(assigned).flat().map(({ question }) => String(question.id));
   pass(new Set(assignedIds).size === assignedIds.length, "A question is assigned to multiple new concepts");

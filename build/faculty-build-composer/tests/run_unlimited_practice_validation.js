@@ -74,7 +74,7 @@ function simulateManualPracticeEnd(mode){
   assertCanonicalCoreVersion(core);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
   if(core.MODE_ORDER.length!==10) issues.push(`mode count ${core.MODE_ORDER.length}`);
-  if(library.canonicalQuestionCount!==8371) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
+  if(library.canonicalQuestionCount!==8531) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
 
   const recipe={
     schemaVersion:core.RECIPE_SCHEMA_VERSION,

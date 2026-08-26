@@ -1,5 +1,5 @@
 {
-  "assetCount": 461,
+  "assetCount": 466,
   "assets": [
     {
       "conceptId": "aggregate-demand",
@@ -4715,11 +4715,81 @@
       "imageAlt": "Disposable-vape externality graph showing an imperfect $2 corrective tax and remaining overconsumption.",
       "graphDescription": "The horizontal axis is disposable vapes consumed in thousands; the vertical axis is marginal benefit and cost in dollars per vape. MPC slopes upward, MPB slopes downward, and MSB is $4 below MPB. A dashed policy-adjusted MPB lies $2 below MPB and intersects MPC at 160 thousand vapes. Consumers pay $11 and sellers receive $9. The efficient outcome remains 140 thousand vapes at $8.",
       "sourceCurationPhase": "phase-externalities-question-pool-v1"
+    },
+    {
+      "conceptId": "market-failures",
+      "filename": "PUBLIC-01.webp",
+      "sourceAssetPath": "question-assets/market-failures/PUBLIC-01.webp",
+      "sourceUrl": "data/question-assets/market-failures/PUBLIC-01.webp",
+      "runtimePath": "question-assets/market-failures/PUBLIC-01.webp",
+      "sha256": "fb2bc35d6456da6b40bef235909b878467f3172ea5daf1a1a129a1fc3cc399ab",
+      "sizeBytes": 56404,
+      "width": 1720,
+      "height": 1200,
+      "imageAlt": "Emergency warning siren provision graph with downward-sloping MSB and horizontal MC intersecting at 40 sirens and $20 thousand per siren.",
+      "graphDescription": "The horizontal axis is the number of emergency warning sirens. The vertical axis is marginal benefit and marginal cost in thousands of dollars per siren. MSB equals 40 minus 0.5Q and MC equals 20. The curves intersect at 40 sirens, where both equal $20 thousand per siren.",
+      "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1"
+    },
+    {
+      "conceptId": "market-failures",
+      "filename": "PUBLIC-02.webp",
+      "sourceAssetPath": "question-assets/market-failures/PUBLIC-02.webp",
+      "sourceUrl": "data/question-assets/market-failures/PUBLIC-02.webp",
+      "runtimePath": "question-assets/market-failures/PUBLIC-02.webp",
+      "sha256": "5e046ff8d1d2833ba1c45bf56733b40f6698a89a8afa6abfd011e56ed0eb0eac",
+      "sizeBytes": 76154,
+      "width": 1720,
+      "height": 1200,
+      "imageAlt": "Local public radio graph with MSB, Private Benefit, and MC, showing private provision at 40 hours and efficient provision at 80 hours per week.",
+      "graphDescription": "The horizontal axis is hours of local public radio programming per week. The vertical axis is marginal benefit and marginal cost in hundreds of dollars per hour. MSB equals 100 minus Q, Private Benefit equals 60 minus Q, and MC equals 20. Private Benefit intersects MC at 40 hours; MSB intersects MC at 80 hours.",
+      "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1"
+    },
+    {
+      "conceptId": "market-failures",
+      "filename": "PUBLIC-03.webp",
+      "sourceAssetPath": "question-assets/market-failures/PUBLIC-03.webp",
+      "sourceUrl": "data/question-assets/market-failures/PUBLIC-03.webp",
+      "runtimePath": "question-assets/market-failures/PUBLIC-03.webp",
+      "sha256": "35ce117935f176216b19c83d18f3b7822245273ba1b90f5981574d55f379e25c",
+      "sizeBytes": 64242,
+      "width": 1720,
+      "height": 1200,
+      "imageAlt": "Coastal flood protection graph with downward-sloping MSB and upward-sloping MC intersecting at 30 miles and $30 million per mile.",
+      "graphDescription": "The horizontal axis is miles of coastal flood protection. The vertical axis is marginal benefit and marginal cost in millions of dollars per mile. MSB equals 60 minus Q and MC equals 15 plus 0.5Q. They intersect at 30 miles, where both equal $30 million per mile.",
+      "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1"
+    },
+    {
+      "conceptId": "market-failures",
+      "filename": "PUBLIC-04.webp",
+      "sourceAssetPath": "question-assets/market-failures/PUBLIC-04.webp",
+      "sourceUrl": "data/question-assets/market-failures/PUBLIC-04.webp",
+      "runtimePath": "question-assets/market-failures/PUBLIC-04.webp",
+      "sha256": "ade235c1c2ec006e997f95cbaa3e6139ab5be69bb36c029703812eed030f0dfc",
+      "sizeBytes": 78610,
+      "width": 1720,
+      "height": 1200,
+      "imageAlt": "Community fireworks graph with North MB, South MB, vertically summed MSB, and MC, with decomposition guides at four displays.",
+      "graphDescription": "The horizontal axis is community fireworks displays per summer. The vertical axis is marginal benefit and marginal cost in thousands of dollars per display. North MB is max of zero and 50 minus 5Q. South MB is max of zero and 40 minus 5Q. MSB is their vertical sum and MC equals 50. At four displays, North MB is 30, South MB is 20, and MSB equals MC at 50.",
+      "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1"
+    },
+    {
+      "conceptId": "market-failures",
+      "filename": "PUBLIC-05.webp",
+      "sourceAssetPath": "question-assets/market-failures/PUBLIC-05.webp",
+      "sourceUrl": "data/question-assets/market-failures/PUBLIC-05.webp",
+      "runtimePath": "question-assets/market-failures/PUBLIC-05.webp",
+      "sha256": "b575b8870460310b96368bef71e4bbcd0ea44a73819fb72f2e7f16a2ae480b6d",
+      "sizeBytes": 73882,
+      "width": 1720,
+      "height": 1200,
+      "imageAlt": "Public radio vertical-summation graph with Group A MB, Group B MB, MSB, and MC, highlighting 40 hours per week.",
+      "graphDescription": "The horizontal axis is hours of local public radio programming per week. The vertical axis is marginal benefit and marginal cost in hundreds of dollars per hour. Group A MB is max of zero and 50 minus 0.5Q. Group B MB is max of zero and 30 minus 0.5Q. MSB is their vertical sum and MC equals 30. At 40 hours, Group A MB is 30, Group B MB is 10, and MSB is 40.",
+      "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1"
     }
   ],
   "conceptCount": 129,
-  "canonicalQuestionCount": 8371,
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-externalities-question-pool-v1",
-  "librarySha256": "7ad1dbf3a3a5b0f546da28203dafb4fe8b20a50639e1b2e50fd279f377c8e57d",
-  "generatedAt": "2026-08-26T18:00:00.000Z"
+  "canonicalQuestionCount": 8531,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1",
+  "librarySha256": "54588be5e3ef5fcbea4615194d6dfd9fb9ecf469019f9a838186d9ad782fd073",
+  "generatedAt": "2026-08-26T21:00:00.000Z"
 }

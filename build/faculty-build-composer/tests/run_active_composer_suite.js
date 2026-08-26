@@ -13,6 +13,7 @@ const ACTIVE_RUNNERS = [
   'run_phase3e_graph_question_sync_validation.mjs',
   'run_externalities_question_pool_validation.mjs',
   'run_externalities_copy_taxonomy_repair_validation.mjs',
+  'run_public_goods_common_resources_question_pool_validation.mjs',
   'run_concept_review_integration.js',
   'run_mastery_report_concept_reviews.js',
   'run_mastery_report_2_validation.js',
