@@ -71,7 +71,7 @@ function runtimeDeckCheck(composition,target){
     }
   }
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
-  if(flagged!==802) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==797) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 

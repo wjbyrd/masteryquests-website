@@ -24,7 +24,7 @@ const reviewManifestPath = path.join(composerRoot, "data", "concept-reviews", "m
 const reviewSourcePath = path.join(composerRoot, "data", "concept-reviews", "full-library-production", "concept_review_source.json");
 const incomingDir = path.join(composerRoot, "data", "question-assets", "_incoming-public-goods");
 const finalDir = path.join(composerRoot, "data", "question-assets", PARENT_CONCEPT_ID);
-const COMPOSER_VERSION = "4.5s.3h";
+const COMPOSER_VERSION = "4.5s.3i";
 const GENERATED_AT = "2026-08-26T21:00:00.000Z";
 const EXTERNALITIES_PHASE = "phase-externalities-question-pool-v1";
 const EXPECTED_ASSETS = new Set(Object.keys(GRAPH_ASSETS));
@@ -115,7 +115,7 @@ function distribution(items, key) {
 function validateAuthorSource(library) {
   const errors = [];
   if (productionQuestions.length !== 160) errors.push(`Expected 160 questions; found ${productionQuestions.length}`);
-  if (productionQuestions.filter(question => question.graphRequired).length !== 48) errors.push("Expected 48 graph questions.");
+  if (productionQuestions.filter(question => question.graphRequired).length !== 43) errors.push("Expected 43 graph-dependent questions after manual audit.");
   if (productionQuestions.some((question, index) => question.id !== ID_FIRST + index)) errors.push("Question IDs are not contiguous.");
   const existing = allQuestionEntries(library).filter(({ question }) => !PHASE_IDS.has(String(question.id)));
   const existingIds = new Set(existing.map(({ question }) => String(question.id)));
@@ -133,7 +133,7 @@ function validateAuthorSource(library) {
     if (question.graphRequired && !EXPECTED_ASSETS.has(question.asset)) errors.push(`Unknown graph asset: ${question.id}`);
     if (!question.graphRequired && question.asset) errors.push(`Unexpected graph asset: ${question.id}`);
   }
-  const expectedAssetDistribution = { "PUBLIC-01.webp": 10, "PUBLIC-02.webp": 12, "PUBLIC-03.webp": 10, "PUBLIC-04.webp": 8, "PUBLIC-05.webp": 8, null: 112 };
+  const expectedAssetDistribution = { "PUBLIC-01.webp": 9, "PUBLIC-02.webp": 10, "PUBLIC-03.webp": 8, "PUBLIC-04.webp": 8, "PUBLIC-05.webp": 8, null: 117 };
   const actualAssetDistribution = distribution(productionQuestions, "asset");
   for (const [asset, count] of Object.entries(expectedAssetDistribution)) {
     if (actualAssetDistribution[asset] !== count) errors.push(`Asset allocation ${asset}: ${actualAssetDistribution[asset]} instead of ${count}`);

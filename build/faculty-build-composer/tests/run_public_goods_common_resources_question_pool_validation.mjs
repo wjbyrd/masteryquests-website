@@ -32,7 +32,7 @@ const EXPECTED = Object.freeze({
   difficulty: { easy: 44, medium: 60, hard: 32, elite: 12, legendary: 12 },
   ordinaryDifficulty: { easy: 44, medium: 52, hard: 32, elite: 12, legendary: 12 },
   pools: { easy: 40, medium: 48, hard: 28, elite: 12, legendary: 8, easyBoss: 4, mediumBoss: 4, finalBoss: 4, legendaryBoss: 4, repairQuestions: 4, bridgeQuestions: 4 },
-  types: { graph_interpretation: 11, graph_calculation: 18, graph_integration: 12, graph_trap: 7, application: 66, bridge: 4, calculation: 1, definition: 4, integration: 11, interpretation: 26 },
+  types: { graph_interpretation: 11, graph_calculation: 18, graph_integration: 9, graph_trap: 5, application: 68, bridge: 4, calculation: 1, definition: 4, integration: 14, interpretation: 26 },
   subtopics: {
     "excludability-and-rivalry": 46,
     "four-way-goods-classification": 26,
@@ -42,7 +42,7 @@ const EXPECTED = Object.freeze({
     "common-resources-and-tragedy-of-the-commons": 20,
     "property-rights-and-resource-use-incentives": 16
   },
-  assets: { "PUBLIC-01.webp": 10, "PUBLIC-02.webp": 12, "PUBLIC-03.webp": 10, "PUBLIC-04.webp": 8, "PUBLIC-05.webp": 8 },
+  assets: { "PUBLIC-01.webp": 9, "PUBLIC-02.webp": 10, "PUBLIC-03.webp": 8, "PUBLIC-04.webp": 8, "PUBLIC-05.webp": 8 },
   assetBytes: { "PUBLIC-01.webp": 56404, "PUBLIC-02.webp": 76154, "PUBLIC-03.webp": 64242, "PUBLIC-04.webp": 78610, "PUBLIC-05.webp": 73882 },
   assetHashes: {
     "PUBLIC-01.webp": "fb2bc35d6456da6b40bef235909b878467f3172ea5daf1a1a129a1fc3cc399ab",
@@ -55,13 +55,13 @@ const EXPECTED = Object.freeze({
 
 const SOURCE_DIGESTS = Object.freeze({
   ids: "46eec2f830f19981f22e7ab916581c5f41c1e48ea2ef02600781da8626b0db67",
-  answers: "f81c216c4f8bbe5501ccca584d225e3c8d0e3376afb139a9643d323a58ef6c22",
+  answers: "924c32cd0762810413ff4ff7a132724d64d0b284047fa0c92a2755c4695e99c8",
   skills: "962b5bf7c5d2ef9c711beda8304067be7ad5652a67d4c8418b33d8b6e601ec5d",
-  graphs: "0fcd2aac92b60bde1320fc044767c4f675b90d3ef71f63514ff822f99cba85a1",
+  graphs: "5b4dfeeb302dac78ad63b4255b4b63038414361307ce6e43a2fb07280df66a70",
   objectives: "ea76a763ddb0d67e1038c55d910619afe2615d2105d84d8f8f71e1a7d808154a",
   difficulty: "0f419b4faee99189b928dc4d496236f33ebe44fb23726ca8647fdce0d5751921",
   pools: "227d2d43a6338c6e26e03f1364f72487c50fb634eaf5775416dfe68fa944a833",
-  stems: "06bc5d55c49dbc25e3e8996bfee6b168e004657066f786c608d1add6eb33e87e"
+  stems: "ff5130792c71e6c8c6c6598f5ad8fb1acc807612e9ea22845fa5d16a6370c95e"
 });
 
 const LEGACY_DIGESTS = Object.freeze({
@@ -153,14 +153,14 @@ async function run() {
   const authoredNonGraph = productionQuestions.filter(question => !question.graphRequired);
   const authoredOrdinary = productionQuestions.filter(question => !["repairQuestions", "bridgeQuestions"].includes(question.pool));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3h", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3i", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3h", `Library version ${library.composerVersion}`);
+  pass(library.composerVersion === "4.5s.3i", `Library version ${library.composerVersion}`);
   pass(library.canonicalQuestionCount === 8531 && manifest.canonicalQuestionCount === 8531, "Canonical count mismatch");
   pass(library.conceptCount === 129 && library.registry.concepts.length === 129, "Concept count mismatch");
   pass(library.assetInventory.length === 466 && manifest.assetCount === 466, "Asset inventory count mismatch");
   pass(productionQuestions.length === 160 && published.length === 160, `Question total ${productionQuestions.length}/${published.length}`);
-  pass(authoredGraph.length === 48 && authoredNonGraph.length === 112, "Graph/non-graph total mismatch");
+  pass(authoredGraph.length === 43 && authoredNonGraph.length === 117, "Graph/non-graph total mismatch");
   pass(productionQuestions[0].id === ID_FIRST && productionQuestions.at(-1).id === ID_LAST, "ID range mismatch");
   pass(productionQuestions.every((question, index) => question.id === ID_FIRST + index), "IDs are not contiguous");
   pass(new Set(productionQuestions.map(question => question.id)).size === 160, "Author IDs are not unique");
@@ -218,6 +218,8 @@ async function run() {
   pass(maximumStemSimilarity < 0.8, `Near-duplicate stems ${closestStemPair.join("/")} at ${maximumStemSimilarity.toFixed(3)}`);
 
   const byId = new Map(productionQuestions.map(question => [question.id, question]));
+  const convertedGraphIds = [42168, 42177, 42180, 42187, 42190];
+  pass(convertedGraphIds.every(id => !byId.get(id).graphRequired && !byId.get(id).asset), "Manual graph-audit conversion mismatch");
   const sirenQ = (40 - 20) / 0.5;
   const privateRadioQ = 60 - 20;
   const efficientRadioQ = 100 - 20;
@@ -227,13 +229,13 @@ async function run() {
   const southAtFour = Math.max(0, 40 - 5 * 4);
   const groupAAtForty = Math.max(0, 50 - 0.5 * 40);
   const groupBAtForty = Math.max(0, 30 - 0.5 * 40);
-  pass(sirenQ === 40 && byId.get(42160).answer === `${sirenQ} sirens` && byId.get(42161).answer === "$20 thousand per siren", "PUBLIC-01 source math");
+  pass(sirenQ === 40 && byId.get(42160).answer === `${sirenQ} sirens` && byId.get(42161).answer === "$20,000 per siren", "PUBLIC-01 source math");
   pass(privateRadioQ === 40 && efficientRadioQ === 80 && efficientRadioQ - privateRadioQ === 40, "PUBLIC-02 source intersections");
   pass(byId.get(42170).answer === "40 hours per week" && byId.get(42171).answer === "80 hours per week" && byId.get(42172).answer === "40 hours per week", "PUBLIC-02 keyed math");
   pass(coastalQ === 30 && coastalValue === 30 && byId.get(42182).answer === "30 miles" && byId.get(42183).answer === "$30 million per mile", "PUBLIC-03 source math");
   pass(northAtFour === 30 && southAtFour === 20 && northAtFour + southAtFour === 50 && byId.get(42196).answer === "4 displays", "PUBLIC-04 vertical summation");
   pass(groupAAtForty === 30 && groupBAtForty === 10 && groupAAtForty + groupBAtForty === 40, "PUBLIC-05 vertical summation");
-  pass(byId.get(42200).answer === "$30 hundred per hour" && byId.get(42201).answer === "$10 hundred per hour" && byId.get(42202).answer === "$40 hundred per hour", "PUBLIC-05 keyed math");
+  pass(byId.get(42200).answer === "$3,000 per hour" && byId.get(42201).answer === "$1,000 per hour" && byId.get(42202).answer === "$4,000 per hour", "PUBLIC-05 keyed math");
 
   const publishedById = new Map(published.map(entry => [Number(entry.question.id), entry]));
   const answerPositions = [0, 0, 0, 0];
@@ -310,7 +312,7 @@ async function run() {
   const composition = core.compose(library, recipe);
   pass(composition.errors.length === 0, `Composition errors: ${composition.errors.join(" | ")}`);
   pass(composition.validation.modes.length === 10 && composition.validation.modes.every(mode => mode.ok), "A supported mode failed");
-  pass(composition.counts.totalCanonical === 176 && composition.counts.graph === 48 && composition.counts.graphSafe >= 10, "Focused composition counts mismatch");
+  pass(composition.counts.totalCanonical === 176 && composition.counts.graph === 43 && composition.counts.graphSafe >= 10, "Focused composition counts mismatch");
   pass(composition.counts.repair >= 5 && composition.counts.bridge >= 6, "Adaptive support depth mismatch");
   const generatedQuestions = [...Object.values(composition.banks).flat(), ...composition.repairQuestions, ...composition.bridgeQuestions];
   pass(generatedQuestions.every(question => question.primaryConceptId === CONCEPT_ID), "Focused quest contains another concept");
@@ -320,6 +322,10 @@ async function run() {
   helpers.attachConceptReviewRuntime(core, composition, library, [CONCEPT_ID]);
   pass(composition.conceptReviewRuntimeIndex.diagnosticConceptIds.includes(CONCEPT_ID), "Mastery Report diagnostic signal missing");
   const template = helpers.loadCanonicalTemplate();
+  pass(/feedback:\s*2800/.test(template), "Explanatory feedback duration is not 2800 ms");
+  pass(/checkpointTransition:\s*1800/.test(template), "Checkpoint transition duration changed");
+  pass(/const presentationDuration = options\.duration \?\? TIMING\.feedback;/.test(template), "Hallway feedback does not default to the shared feedback duration");
+  pass(/duration:TIMING\.checkpointTransition/.test(template), "Checkpoint path does not preserve its original transition duration");
   const config = await core.createConfig(recipe, library, await core.sha256Hex(template));
   const metadata = helpers.createMetadata(core, composition, config, library, { phase: PHASE, sourceVersion: SOURCE_VERSION });
   const html = core.buildHtml(template, composition, config, metadata);

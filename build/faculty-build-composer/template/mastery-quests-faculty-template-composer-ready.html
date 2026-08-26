@@ -5531,7 +5531,9 @@ function getAdaptiveQuestion(poolName, targetTag = null, options = {}){
 const TIMING = {
     normal: 1200,
     boss: 1000,
-    detour: 1400
+    detour: 1400,
+    feedback: 2800,
+    checkpointTransition: 1800
 };
 
 // =============================================
@@ -9611,6 +9613,7 @@ function showHallwayTransition(feedback, options = {}){
     const slotId = options.slotId || (room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3");
     const hallwaySlot = getFacultyVisualSlot(slotId);
     const nextAction = options.nextAction === "victory" ? "victory" : "question";
+    const presentationDuration = options.duration ?? TIMING.feedback;
     const transitionFeedback = String(feedback || "Checkpoint complete.");
     const destinationText = options.destinationText || "Continue to the next room.";
 
@@ -9636,7 +9639,7 @@ function showHallwayTransition(feedback, options = {}){
             if(nextAction === "victory") handleVictory();
             else loadQuestion();
         }, 0);
-    }, 1800);
+    }, presentationDuration);
 }
 
 // Displays artifact reward popup
@@ -9775,6 +9778,7 @@ function showKnowledgeRoom(bossRoom) {
                 {
                     slotId,
                     nextAction:bossRoom === 30 ? "victory" : "question",
+                    duration:TIMING.checkpointTransition,
                     destinationText:bossRoom === 30 ? "Continue to your results." : `Continue to Room ${bossRoom + 1}.`
                 }
             );

@@ -107,9 +107,9 @@ async function run() {
   const authoredGraph = ordinaryQuestions.filter(question => question.graphRequired);
   const authoredNonGraph = ordinaryQuestions.filter(question => !question.graphRequired);
 
-  pass(core.COMPOSER_VERSION === "4.5s.3h", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3i", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3h", `Library version ${library.composerVersion}`);
+  pass(library.composerVersion === "4.5s.3i", `Library version ${library.composerVersion}`);
   pass(library.conceptCount === 129, `Concept count ${library.conceptCount}`);
   pass(library.canonicalQuestionCount === 8531 && manifest.canonicalQuestionCount === 8531, "Canonical count mismatch");
   pass(library.assetInventory.length === 466 && manifest.assetCount === 466, "Registered asset count mismatch");

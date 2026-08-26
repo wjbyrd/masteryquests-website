@@ -19,13 +19,13 @@ Final production totals:
 | New questions | 160 |
 | Retained legacy questions | 16 |
 | Resulting focused concept records | 176 |
-| New graph-dependent questions | 48 |
-| New non-graph questions | 112 |
+| New graph-dependent questions | 43 |
+| New non-graph questions | 117 |
 | New graph assets | 5 |
 | Canonical library questions | 8,531 |
 | Registered/physical WebP assets | 466 |
 | Composer concepts | 129 |
-| Composer version | `4.5s.3h` |
+| Composer version | `4.5s.3i` |
 | Recipe schema | `1.4.0` |
 
 ## Baseline audit
@@ -84,13 +84,13 @@ Pinned author-source digests:
 | Invariant | SHA-256 |
 | --- | --- |
 | IDs | `46eec2f830f19981f22e7ab916581c5f41c1e48ea2ef02600781da8626b0db67` |
-| Answer keys | `f81c216c4f8bbe5501ccca584d225e3c8d0e3376afb139a9643d323a58ef6c22` |
+| Answer keys | `924c32cd0762810413ff4ff7a132724d64d0b284047fa0c92a2755c4695e99c8` |
 | Primary skills | `962b5bf7c5d2ef9c711beda8304067be7ad5652a67d4c8418b33d8b6e601ec5d` |
-| Graph allocations | `0fcd2aac92b60bde1320fc044767c4f675b90d3ef71f63514ff822f99cba85a1` |
+| Graph allocations | `5b4dfeeb302dac78ad63b4255b4b63038414361307ce6e43a2fb07280df66a70` |
 | Objectives | `ea76a763ddb0d67e1038c55d910619afe2615d2105d84d8f8f71e1a7d808154a` |
 | Difficulties | `0f419b4faee99189b928dc4d496236f33ebe44fb23726ca8647fdce0d5751921` |
 | Pools | `227d2d43a6338c6e26e03f1364f72487c50fb634eaf5775416dfe68fa944a833` |
-| Stems | `06bc5d55c49dbc25e3e8996bfee6b168e004657066f786c608d1add6eb33e87e` |
+| Stems | `ff5130792c71e6c8c6c6598f5ad8fb1acc807612e9ea22845fa5d16a6370c95e` |
 
 Published records retain hashed correct answers and do not expose plaintext `answer`, `correctAnswer`, `correctIndex`, or numeric `a` fields.
 
@@ -165,16 +165,16 @@ The final focused build passes Standard, Timed, Exam, Quiz, Unlimited Practice, 
 
 | Type | Count |
 | --- | ---: |
-| Application | 66 |
+| Application | 68 |
 | Interpretation | 26 |
-| Integration | 11 |
+| Integration | 14 |
 | Calculation | 1 |
 | Definition | 4 |
 | Bridge | 4 |
 | Graph interpretation | 11 |
 | Graph calculation | 18 |
-| Graph integration | 12 |
-| Graph trap | 7 |
+| Graph integration | 9 |
+| Graph trap | 5 |
 | **Total** | **160** |
 
 All type strings are from the existing legal Composer vocabulary.
@@ -189,9 +189,9 @@ Each remains 1720 x 1200 pixels.
 
 | Asset | Questions | Bytes | SHA-256 |
 | --- | ---: | ---: | --- |
-| `PUBLIC-01.webp` | 10 | 56,404 | `fb2bc35d6456da6b40bef235909b878467f3172ea5daf1a1a129a1fc3cc399ab` |
-| `PUBLIC-02.webp` | 12 | 76,154 | `5e046ff8d1d2833ba1c45bf56733b40f6698a89a8afa6abfd011e56ed0eb0eac` |
-| `PUBLIC-03.webp` | 10 | 64,242 | `35ce117935f176216b19c83d18f3b7822245273ba1b90f5981574d55f379e25c` |
+| `PUBLIC-01.webp` | 9 | 56,404 | `fb2bc35d6456da6b40bef235909b878467f3172ea5daf1a1a129a1fc3cc399ab` |
+| `PUBLIC-02.webp` | 10 | 76,154 | `5e046ff8d1d2833ba1c45bf56733b40f6698a89a8afa6abfd011e56ed0eb0eac` |
+| `PUBLIC-03.webp` | 8 | 64,242 | `35ce117935f176216b19c83d18f3b7822245273ba1b90f5981574d55f379e25c` |
 | `PUBLIC-04.webp` | 8 | 78,610 | `ade235c1c2ec006e997f95cbaa3e6139ab5be69bb36c029703812eed030f0dfc` |
 | `PUBLIC-05.webp` | 8 | 73,882 | `b575b8870460310b96368bef71e4bbcd0ea44a73819fb72f2e7f16a2ae480b6d` |
 
@@ -217,7 +217,7 @@ One integration defect was found during preflight: the initial publisher routed 
 
 Final deterministic result:
 
-`librarySha256 = 54588be5e3ef5fcbea4615194d6dfd9fb9ecf469019f9a838186d9ad782fd073`
+`librarySha256 = f30d1ecb17065bef23b2fce552e8901d6fac423151ed4089264451c0a297b6f3`
 
 The final publisher write was immediately followed by a no-write rerun. It returned `PASS` with the same library hash and no stale outputs.
 
@@ -225,11 +225,19 @@ Generated file SHA-256 values:
 
 | Output | SHA-256 |
 | --- | --- |
-| `composer_library.js` | `9665ee9dca81c562a064ed90fa17e9aa0274a8230af54b9529ddc6abf205ba4b` |
-| `composer_registry.json` | `8e53192278f7064a00d4a060d3f489822f1a17378e0b805c1bb7082df889579a` |
-| `composer_library_manifest.json` | `05e846ad6cee90cee94f545abdbc8fbf035555324bbf555060dc577e00958b70` |
+| `composer_library.js` | `d604e93b5b283c726631bb54fdd596d231eccbeed1dec4c7fdf85969490753c0` |
+| `composer_registry.json` | `eca1db759e2aa8240135098f8a12771ac50ae2d70da5459895c0168b29d7ee0c` |
+| `composer_library_manifest.json` | `269ce089343f5d784eec2ba5e644893356019d5b723b2b813433e504beadee2d` |
 | Concept-review manifest | `ecc108076302e0786548407593c9091075e95ae933702fb705d41d8dbb381a92` |
 | Concept-review source | `a4eecf104f0533d0dc9c8db4063bba37583261abf0ab36d0e520d598ee5f5ac7` |
+
+## Manual gameplay refinement pass
+
+All 48 originally graph-tagged records were reviewed against their displayed figures. Twenty-nine retained graph questions received stronger figure-integrated stems. Five records (`42168`, `42177`, `42180`, `42187`, and `42190`) were converted to normal application/integration questions because the figure did not substantively determine or support the answer. The final allocation is 43 graph-dependent and 117 non-graph records.
+
+Twenty question records received monetary-unit copy normalization, and the accessibility descriptions for `PUBLIC-01.webp`, `PUBLIC-04.webp`, and `PUBLIC-05.webp` received the same treatment. Awkward forms such as `$20 thousand` and `$30 hundred` now appear as `$20,000` and `$3,000`. No economic conclusion or correct-option position changed. Thirteen correct-option labels changed as part of that display normalization, which intentionally updates the answer-text digest while retaining balanced answer positions `40/40/40/40`.
+
+The ordinary correct-answer explanation now remains visible for `2800 ms`, up from `1800 ms`. The canonical template exposes this as `TIMING.feedback`, while checkpoint Continue transitions retain their original `1800 ms` interval through `TIMING.checkpointTransition`; no boss, detour, challenge-timer, save, scoring, remediation, or mode rule changed.
 
 ## Validation
 
@@ -240,13 +248,13 @@ Targeted validator:
 It pins and verifies:
 
 - exactly 160 new records and IDs `42160-42319`;
-- 48 graph and 112 non-graph records;
+- 43 graph and 117 non-graph records after manual review of all 48 originally graph-tagged records;
 - IDs, answer keys, skills, graph allocations, objectives, difficulty, pools, and stems;
 - required metadata, four distinct options, answer hashes, and balanced answer positions `40/40/40/40`;
 - exact objective, subtopic, difficulty, pool, type, and asset distributions;
 - graph math, bytes, dimensions, hashes, registrations, accessibility text, and absence of orphan assets;
 - exact visible-stem uniqueness and no visible duplicate records;
-- maximum token-Jaccard stem similarity of 0.750 (the intentional North/South paired calculation at IDs 42192/42193);
+- maximum token-Jaccard stem similarity of 0.727;
 - no answer leakage or banned mechanical copy phrases;
 - classification feedback explains both excludability and rivalry;
 - all 16 legacy Public Goods records, all 177 Externalities records, and all 9 Market Power records are unchanged;
@@ -288,12 +296,14 @@ Mode coverage:
 - Legendary Mode launched with a high-challenge common-resource question.
 - Score Attack launched with score and best-score counters.
 - Unlimited Practice launched, accepted a scored answer, ended manually, and generated a fresh 100% / 1-of-1 limited-evidence Mastery Report.
-- Trial by Graph launched with 32 eligible graph-safe questions, completed a 10-question run, and reported that campaign state was unchanged.
+- Trial by Graph launched with 29 eligible graph-safe questions, completed a 10-question run, and reported that campaign state was unchanged.
 - Quiz, Fading Fortune, and Risk & Reward passed focused composition plus the active engine/runtime regression suite.
 
 The completed Trial by Graph run rendered at least one question from every supplied asset. Observed accessible graph labels covered emergency sirens, local public radio private/social provision, coastal flood protection, community fireworks vertical summation, and public-radio vertical summation.
 
 Interaction checks passed for correct feedback, wrong feedback, adaptive response after a miss, graph enlargement, full graph descriptions, End Practice, Mastery Report generation, and concept-only question isolation. No Externalities or Market Power question appeared.
+
+The refinement-pass browser check displayed normalized `$4,000`, `$3,000`, and `$1,000` graph copy in a live Trial by Graph question. After a correct answer, the explanation remained present at approximately 2.55 seconds and the next question was present by approximately 3.49 seconds, consistent with the configured `2800 ms` automatic transition.
 
 Responsive checks:
 
@@ -384,9 +394,14 @@ Generated Composer outputs:
 - `build/faculty-build-composer/data/concept-reviews/manifest.json`
 - `build/faculty-build-composer/data/concept-reviews/full-library-production/concept_review_source.json`
 
+Generated validation artifact:
+
+- `build/faculty-build-composer/tests/public-goods-common-resources-production-sample.html`
+
 Version/suite integration:
 
 - `build/faculty-build-composer/composer-core.js`
+- `build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html`
 - `audit_tools/publish_externalities_question_pool.mjs` (Composer version pin only)
 - `build/faculty-build-composer/tests/run_active_composer_suite.js`
 - `build/faculty-build-composer/tests/run_externalities_question_pool_validation.mjs`
@@ -408,7 +423,7 @@ The existing test files received only the new Composer version, canonical/asset 
 - all Externalities question records, IDs, answers, skills, tags, graph allocations, and WebP assets;
 - all Market Power records;
 - the 16 legacy Public Goods/Common Resources records;
-- the canonical faculty template and gameplay engine behavior;
+- gameplay logic other than the ordinary correct-answer feedback display interval;
 - game-mode and checkpoint floors;
 - recipe schema and legacy Market Failures migration behavior;
 - Market Gate runtime banks and unrelated website pages.

@@ -114,7 +114,7 @@ async function run() {
   const parentEntries = conceptEntries(library.concepts[parent]);
   const phasePublished = parentEntries.filter(({ question }) => phaseIds.has(String(question.id)));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3h", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3i", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
   pass(library.canonicalQuestionCount === 8531 && manifest.canonicalQuestionCount === 8531, "Canonical question count changed");
   pass(library.conceptCount === 129 && library.registry.concepts.length === 129, "Concept count mismatch");

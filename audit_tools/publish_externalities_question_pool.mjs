@@ -25,7 +25,7 @@ const reviewManifestPath = path.join(composerRoot, "data", "concept-reviews", "m
 const reviewSourcePath = path.join(composerRoot, "data", "concept-reviews", "full-library-production", "concept_review_source.json");
 const incomingDir = path.join(composerRoot, "data", "question-assets", "_incoming-externalities");
 const finalDir = path.join(composerRoot, "data", "question-assets", PARENT_CONCEPT_ID);
-const COMPOSER_VERSION = "4.5s.3h";
+const COMPOSER_VERSION = "4.5s.3i";
 const GENERATED_AT = "2026-08-26T18:00:00.000Z";
 const EXPECTED_ASSETS = new Set(Object.keys(GRAPH_ASSETS));
 const PHASE_IDS = new Set(Array.from({ length: ID_LAST - ID_FIRST + 1 }, (_, index) => String(ID_FIRST + index)));
