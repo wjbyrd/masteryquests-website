@@ -44,7 +44,7 @@ function simulateManualEnd(mode){
 (async()=>{
   const issues=[];
   assertCanonicalCoreVersion(core);
-  if(library.canonicalQuestionCount!==8211) issues.push(`canonical ${library.canonicalQuestionCount}`);
+  if(library.canonicalQuestionCount!==8371) issues.push(`canonical ${library.canonicalQuestionCount}`);
   const tiny=evidence({attempts:2,accuracy:1,byDifficulty:{easy:{attempts:2}},overall:false});
   const developing=evidence({attempts:7,accuracy:.86,byDifficulty:{easy:{attempts:4},medium:{attempts:3}},recentAccuracy:.86,overall:true});
   const mastered=evidence({attempts:20,accuracy:.90,byDifficulty:{easy:{attempts:6},medium:{attempts:6},hard:{attempts:8}},recentAccuracy:.90,overall:true});

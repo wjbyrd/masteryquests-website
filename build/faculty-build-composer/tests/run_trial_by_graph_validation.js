@@ -47,13 +47,14 @@ function runtimeDeckCheck(composition,target){
   const issues=[];
   assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[7]!=='trialGraph' || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
-  if(library.canonicalQuestionCount!==8211) issues.push(`canonical count ${library.canonicalQuestionCount}`);
+  if(library.canonicalQuestionCount!==8371) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
   const auditIds=new Set();
   for(const fn of ['MICRO_GRAPH_QUESTIONS_AUDIT_CORRECTED.json','TODAYS_GRAPH_QUESTIONS_AUDIT_CORRECTED_V2.json']){
     for(const r of JSON.parse(fs.readFileSync(path.join(root,fn),'utf8'))) auditIds.add(String(r.id));
   }
   const phase3eIds=new Set(Array.from({length:48},(_,index)=>String(40000+index)));
+  const externalitiesIds=new Set(Array.from({length:104},(_,index)=>String(42000+index)));
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -62,14 +63,14 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
     }
   }
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
-  if(flagged!==650) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==754) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 

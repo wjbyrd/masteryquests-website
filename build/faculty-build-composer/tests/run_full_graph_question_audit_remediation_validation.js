@@ -33,8 +33,8 @@ for(const qx of newQuestions){
  const ci=q.options.indexOf(correct); const clen=correct.length; const maxOther=Math.max(...q.options.filter((_,i)=>i!==ci).map(o=>o.length));
  if(clen>maxOther) issues.push(`${q.id} correct option remains uniquely longest by ${clen-maxOther}`);
 }
-if(library.canonicalQuestionCount!==8211) issues.push(`canonicalQuestionCount ${library.canonicalQuestionCount} != 8211`);
-if(library.assetInventory.length!==448) issues.push(`asset count ${library.assetInventory.length} != 448`);
+if(library.canonicalQuestionCount!==8371) issues.push(`canonicalQuestionCount ${library.canonicalQuestionCount} != 8371`);
+if(library.assetInventory.length!==461) issues.push(`asset count ${library.assetInventory.length} != 461`);
 const assetIssues=[];
 for(const a of library.assetInventory){
  const disk=path.join(root,'data',a.runtimePath);
