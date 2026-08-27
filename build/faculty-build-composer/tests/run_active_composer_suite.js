@@ -16,6 +16,7 @@ const ACTIVE_RUNNERS = [
   'run_public_goods_common_resources_question_pool_validation.mjs',
   'run_factor_markets_question_pool_validation.mjs',
   'run_remaining_principles_micro_question_pool_validation.mjs',
+  'run_remaining_micro_manual_audit_validation.mjs',
   'run_concept_review_integration.js',
   'run_mastery_report_concept_reviews.js',
   'run_mastery_report_2_validation.js',

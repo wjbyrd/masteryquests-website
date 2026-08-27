@@ -39,7 +39,10 @@
     'trade-domestic-production-consumption-quantities',
     'trade-gains-surplus-winners-losers','tariffs-revenue-deadweight-loss',
     'import-quotas-quota-rents','trade-policy-efficiency-distribution',
-    'costs-of-production','factor-markets','perfect-competition','monopoly',
+    'costs-of-production','factor-markets','consumer-choice',
+    'income-inequality-poverty-and-redistribution',
+    'information-asymmetry-behavioral-and-political-economy',
+    'perfect-competition','monopoly',
     'monopolistic-competition','oligopoly'
   ]);
   const MICRO_FAMILY_PARENT_IDS = new Set([

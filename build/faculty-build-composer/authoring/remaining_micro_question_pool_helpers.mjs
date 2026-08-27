@@ -43,6 +43,10 @@ function poolFor(difficulty, seen) {
   return difficulty;
 }
 
+function capitalizeFirstAlphabetic(value) {
+  return String(value).replace(/\p{L}/u, letter => letter.toUpperCase());
+}
+
 export function finalizeQuestions(rows, config) {
   const { idFirst, idLast, conceptId, objectives, objectiveCounts, difficultyQuotas, phase, graphAssets } = config;
   const byObjective = new Map();
@@ -70,7 +74,7 @@ export function finalizeQuestions(rows, config) {
     const pool = supportPool || poolFor(difficulty, poolSeen);
     return {
       id: idFirst + index,
-      q: row.q,
+      q: capitalizeFirstAlphabetic(row.q),
       answer: row.answer,
       distractors: row.distractors,
       objective: row.objective,

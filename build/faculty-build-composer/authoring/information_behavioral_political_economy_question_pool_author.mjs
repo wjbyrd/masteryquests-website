@@ -1,4 +1,4 @@
-import { CONTEXTS, authoredRow as row, finalizeQuestions } from "./remaining_micro_question_pool_helpers.mjs";
+import { authoredRow as row, finalizeQuestions } from "./remaining_micro_question_pool_helpers.mjs";
 
 export const PHASE="phase-remaining-principles-micro-question-pools-v1";
 export const SOURCE_VERSION="InformationBehavioralPoliticalEconomy-2026.08.26-production-v1";
@@ -18,8 +18,8 @@ const tags={"IBP.1":SUBTOPICS.asymmetry,"IBP.2":SUBTOPICS.adverse,"IBP.3":SUBTOP
 const skills={"IBP.1":"identify_information_asymmetry","IBP.2":"analyze_adverse_selection","IBP.3":"analyze_moral_hazard","IBP.4":"distinguish_signaling_screening","IBP.5":"apply_behavioral_economics","IBP.6":"diagnose_behavioral_bias","IBP.7":"apply_arrow_impossibility","IBP.8":"identify_condorcet_cycle","IBP.9":"apply_median_voter_theorem"};
 
 function caseFor(objective,i){
-  const context=CONTEXTS[(i+Number(objective.split(".")[1])*7)%CONTEXTS.length],v=i%4;
-  const opener=[`In ${context},`,`${context} presents a case where`,`While evaluating ${context},`,`${context} yields evidence that`][v];
+  const v=i%4;
+  const opener=["Suppose that","An economist observes that","Consider a case in which","In this setting,","A policy analyst notes that","A classroom example assumes that","Evidence indicates that"][i%7];
   if(objective==="IBP.1"){
     const cases=[
       [`${opener} sellers know product quality but buyers cannot verify it before purchase. What market friction is present?`,"Information asymmetry",["A public good","Perfect information","A binding price floor"],"One side possesses payoff-relevant quality information that the other side lacks before contracting."],
@@ -95,6 +95,39 @@ function caseFor(objective,i){
 const rows=[];
 for(const [objective,target] of Object.entries(TARGETS)){
   for(let i=0;i<target;i+=1){ const [q,a,d,f]=caseFor(objective,i); rows.push(row(q,a,d,objective,i%5===0?"interpretation":i%3===0?"integration":"application",skills[objective],f,tags[objective])); }
+}
+
+// Repair and bridge prompts deliberately omit decorative settings so the
+// diagnosed economic distinction remains the only cognitive load.
+const supportCopy={
+  "IBP.1":[
+    ["A borrower knows more than a lender about the risk of a proposed project. What information problem can make lending inefficient?","The lender cannot directly observe the borrower's risk type",["The project has no opportunity cost","Both sides have identical information","Every risky project must fail"],"Private risk information can prevent loan terms from matching each borrower's expected cost."],
+    ["A seller's quality history is independently verified and shown to buyers. How can this improve market exchange?","It reduces the information gap about product quality",["It guarantees every product is high quality","It makes prices irrelevant","It eliminates all uncertainty"],"Credible verification helps buyers distinguish quality and can preserve mutually beneficial trades."]
+  ],
+  "IBP.2":[
+    ["Customers who privately know their devices are fragile are especially likely to buy warranties. What problem does this illustrate?","Adverse selection",["Moral hazard after coverage","A default effect","A Condorcet cycle"],"Hidden risk type affects who purchases the warranty before covered behavior occurs."],
+    ["When low-risk customers leave an insurance pool after premiums rise, what can happen next?","Average cost rises and premiums may increase again",["Average risk necessarily falls","Every applicant's risk becomes observable","Coverage becomes a public good"],"The pool becomes more concentrated with high-risk customers, reinforcing the adverse-selection spiral."]
+  ],
+  "IBP.3":[
+    ["If an insurer can observe and contract on every safety action, what happens to hidden-action moral hazard?","It can be greatly reduced through enforceable incentives",["It automatically becomes adverse selection","It must increase","It makes every insurance contract unnecessary"],"Contractible behavior can be rewarded or penalized, reducing the hidden-action problem."],
+    ["Why can a deductible reduce moral hazard?","The insured person bears part of the marginal cost of a loss",["It reveals every customer's risk type","It guarantees that no accident occurs","It makes coverage a public good"],"Cost sharing preserves some incentive to take care after coverage begins."]
+  ],
+  "IBP.4":[
+    ["A lender requires collateral before approving a loan. What informational role can collateral play?","It can screen or separate borrowers by the consequences they accept if they default",["It insures borrowers against every loss","It proves all borrowers have identical risk","It intentionally creates moral hazard"],"Different borrower types may differ in willingness or ability to pledge collateral."],
+    ["An insurer offers plans with different deductibles so applicants reveal risk through their choices. What mechanism is this?","Screening by the less-informed insurer",["Signaling by the insurer","A default nudge","A Condorcet vote"],"The uninformed side designs a menu that induces hidden types to self-select."]
+  ],
+  "IBP.5":[
+    ["An employer makes retirement-plan enrollment the default but allows workers to opt out. Why can participation rise?","Defaults influence choice even when the available options remain the same",["The policy bans opting out","Retirement saving becomes costless","Every worker has identical preferences"],"Choice architecture can affect behavior without changing the formal option set."],
+    ["A nudge changes how choices are presented without banning options or materially changing prices. How should it be classified?","A choice-architecture intervention",["A binding quantity control","A compulsory transfer","Proof that every person is irrational"],"Nudges preserve formal choice while using predictable decision patterns to influence selection."]
+  ],
+  "IBP.6":[
+    ["A dramatic recent news story causes people to overestimate a rare risk. Which heuristic fits?","Availability heuristic",["Loss aversion","Moral hazard","Median-voter convergence"],"Vivid or easily recalled events can receive too much weight relative to their statistical frequency."],
+    ["A person values the same mug more after receiving ownership of it. Which behavioral pattern fits?","Endowment effect",["Adverse selection","Availability heuristic","Condorcet consistency"],"Ownership raises stated valuation even though the object's attributes have not changed."]
+  ]
+};
+for(const [objective,replacements] of Object.entries(supportCopy)){
+  const group=rows.filter(item=>item.objective===objective);
+  replacements.forEach(([q,answer,distractors,feedback],index)=>Object.assign(group[group.length-2+index],{q,answer,distractors,feedback}));
 }
 export const productionQuestions=finalizeQuestions(rows,{idFirst:ID_FIRST,idLast:ID_LAST,conceptId:CONCEPT_ID,objectives:OBJECTIVES,objectiveCounts:TARGETS,difficultyQuotas:{easy:44,medium:68,hard:40,elite:14,legendary:14},phase:PHASE,graphAssets:GRAPH_ASSETS});
 if(productionQuestions.some(question=>question.graphRequired)) throw new Error("This family must not claim unrelated graph assets.");

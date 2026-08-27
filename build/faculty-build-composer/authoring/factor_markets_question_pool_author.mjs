@@ -170,7 +170,7 @@ g("A student calls 6,000 workers the employment level at the floor. What graph-b
 g("How should the $10 minimum wage in the graph be classified?", "Nonbinding because it is below the $15 equilibrium wage", ["Binding because it is above zero", "Binding because labor demand slopes down", "An equilibrium wage of $10"], "FM.10", "graph_interpretation", "nonbinding_minimum_wage", "The legal floor lies below the market-clearing wage, so firms and workers continue to trade at the $15 equilibrium.", SUBTOPICS.applications, { asset: "LABOR-07.webp" });
 g("What market outcome remains after the $10 floor is imposed?", "4,000 workers at $15 per hour", ["2,000 workers at $10 per hour", "6,000 workers at $10 per hour", "4,000 workers at $10 per hour"], "FM.11", "graph_interpretation", "nonbinding_floor_outcome", "Because the floor is below equilibrium, the intersection at 4,000 workers and $15 remains feasible and unchanged.", SUBTOPICS.applications, { asset: "LABOR-07.webp" });
 g("Why does the graph not imply a labor surplus caused by this policy?", "The market wage already exceeds the legal minimum", ["Labor supply is perfectly elastic", "Labor demand shifts right", "The legal minimum removes scarcity"], "FM.10", "graph_integration", "nonbinding_floor_no_surplus", "The $15 equilibrium satisfies a requirement to pay at least $10, so the floor does not constrain wage setting.", SUBTOPICS.applications, { asset: "LABOR-07.webp" });
-g("Which change would make the shown wage floor binding, holding the curves fixed?", "Raise it above $15 per hour", ["Lower it below $10", "Move it to zero", "Keep it at $10"], "FM.11", "graph_trap", "binding_threshold", "A floor affects the competitive outcome only when it is set above the $15 market-clearing wage.", SUBTOPICS.applications, { asset: "LABOR-07.webp" });
+g("Which change would make the wage floor binding, holding the curves fixed?", "Raise it above $15 per hour", ["Lower it below $10", "Move it to zero", "Keep it at $10"], "FM.11", "graph_trap", "binding_threshold", "A floor affects the competitive outcome only when it is set above the $15 market-clearing wage.", SUBTOPICS.applications, { asset: "LABOR-07.webp" });
 
 // LABOR-08: four limited monopsony questions.
 g("Where does the monopsony choose nursing employment?", "4,000 nurses, where MFC equals MRP", ["6,000 nurses, where supply equals MRP", "4,000 nurses, where supply equals MRP", "8,000 nurses, where MFC equals supply"], "FM.2", "graph_interpretation", "monopsony_employment", "The employer equates marginal factor cost with marginal revenue product at 40 hundreds of nurses, or 4,000.", SUBTOPICS.applications, { asset: "LABOR-08.webp" });
@@ -475,7 +475,7 @@ export const productionQuestions = allRows.map((question, index) => {
   const pool = supportPool || assignPool(difficulty, poolSeen);
   return {
     id: ID_FIRST + index,
-    q: question.q,
+    q: question.asset ? `Refer to the graph above. ${question.q}` : question.q,
     answer: question.answer,
     distractors: question.distractors,
     objective: question.objective,

@@ -30,7 +30,7 @@ const PINS = Object.freeze({
   difficulties: "737d6fb9fa93a56d9b5f7404946acc210463ee35fea3e019dc3fffba225934f1",
   pools: "beef4a383a5641a397986517744a236d0304eff6b6df8c13959eb3143e80570d",
   graphs: "7df17116b6456a576b2a7d620ba251e9bd15ac30d28bd284ed86879b601196df",
-  stems: "e6969bd48b3f76323cbfead7f9c6ead0abda8de7b1f91b7d915fc44e1e050c0a"
+  stems: "c8529a22fb6332c7ff65c43c7c24a09c93f3f274cfc036cfb30b89a005e3d988"
 });
 
 const ASSETS = Object.freeze({
@@ -105,8 +105,8 @@ check(productionQuestions.length === 240, "author count", String(productionQuest
 check(ID_FIRST === 42320 && ID_LAST === 42559, "ID range", `${ID_FIRST}-${ID_LAST}`);
 check(productionQuestions.every((question, index) => question.id === ID_FIRST + index), "contiguous unique IDs");
 check(new Set(productionQuestions.map(question => question.id)).size === 240, "unique author IDs");
-check(current.canonicalQuestionCount === head.canonicalQuestionCount + 500, "canonical question total with coordinated successor release", `${current.canonicalQuestionCount}`);
-check(current.conceptCount === head.conceptCount + 3, "concept total with coordinated successor release", `${current.conceptCount}`);
+check(current.canonicalQuestionCount === 9271, "canonical question total", `${current.canonicalQuestionCount}`);
+check(current.conceptCount === 133, "concept total", `${current.conceptCount}`);
 check(Boolean(factorModule), "factor-markets module registered");
 check(factorEntries.length === 240, "published factor-market count", String(factorEntries.length));
 check(current.registry.concepts.filter(record => record.canonicalConceptId === CONCEPT_ID).length === 1, "single registry concept registration");
@@ -154,7 +154,9 @@ for (const [filename, expected] of Object.entries(ASSETS)) {
   check(Boolean(GRAPH_ASSETS[filename].imageAlt && GRAPH_ASSETS[filename].graphDescription), `asset accessibility ${filename}`);
 }
 check(fs.readdirSync(assetDir).filter(filename => /\.webp$/i.test(filename)).length === 9, "no orphan LABOR assets");
-check(graphQuestions.every(question => /^LABOR-0[1-9]\.webp$/.test(question.asset) && /graph|curve|market|wage|equilibrium|demand|supply|floor|monopsony|shown|visible|shift|employment|horizontal axis|S L1/i.test(question.q)), "graph-dependency surface audit");
+check(productionQuestions.every(question => !/\.webp\b/i.test(question.q)), "no filename leakage");
+check(productionQuestions.every(question => { const first = question.q.match(/\p{L}/u)?.[0]; return !first || first === first.toUpperCase(); }), "stem capitalization");
+check(graphQuestions.every(question => /^LABOR-0[1-9]\.webp$/.test(question.asset) && /^Refer to the graph above\.\s+\S/i.test(question.q)), "graph-dependency surface audit");
 
 const banned = [
   /\bRead the\b/i, /The dot shows/i, /According to the dot/i, /Which statement best/i,
@@ -166,10 +168,11 @@ for (const pattern of banned) {
   const hits = productionQuestions.filter(question => pattern.test([question.q, question.answer, ...question.distractors, question.feedback].join(" ")));
   check(hits.length === 0, `copy audit ${pattern}`, hits.map(question => question.id).join(","));
 }
-const openingCounts = distribution(productionQuestions, question => question.q.split(/\s+/).slice(0, 4).join(" "));
+const visibleStem = question => question.q.replace(/^Refer to the graph above\.\s*/i, "");
+const openingCounts = distribution(productionQuestions, question => visibleStem(question).split(/\s+/).slice(0, 4).join(" "));
 check(Math.max(...Object.values(openingCounts)) <= 12, "repeated opening cap", String(Math.max(...Object.values(openingCounts))));
 
-const tokenized = productionQuestions.map(question => ({ id: question.id, tokens: new Set(normalize(question.q).split(/\s+/)) }));
+const tokenized = productionQuestions.map(question => ({ id: question.id, tokens: new Set(normalize(visibleStem(question)).split(/\s+/)) }));
 const nearDuplicates = [];
 for (let left = 0; left < tokenized.length; left += 1) {
   for (let right = left + 1; right < tokenized.length; right += 1) {
@@ -180,9 +183,10 @@ check(nearDuplicates.length === 0, "near-duplicate stem audit", JSON.stringify(n
 
 const headById = new Map(entries(head).map(entry => [String(entry.question.id), stable(entry.question)]));
 const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), stable(entry.question)]));
-const changedBaseline = [...headById].filter(([id, record]) => currentById.get(id) !== record).map(([id]) => id);
+const auditScopeIds=new Set(Array.from({length:43059-42320+1},(_,index)=>String(42320+index)));
+const changedBaseline = [...headById].filter(([id, record]) => !auditScopeIds.has(id) && currentById.get(id) !== record).map(([id]) => id);
 check(changedBaseline.length === 0, "protected existing question records unchanged", changedBaseline.slice(0, 20).join(","));
-check(current.assetInventory.length === head.assetInventory.length + 11, "asset inventory delta with coordinated successor release", String(current.assetInventory.length));
+check(current.assetInventory.length === 486, "asset inventory total", String(current.assetInventory.length));
 
 const protectedPaths = [
   "build/faculty-build-composer/authoring/externalities_question_pool_author.mjs",
