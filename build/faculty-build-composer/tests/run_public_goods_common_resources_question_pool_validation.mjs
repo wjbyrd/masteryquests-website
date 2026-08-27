@@ -24,7 +24,7 @@ const testRoot = path.dirname(fileURLToPath(import.meta.url));
 const composerRoot = path.resolve(testRoot, "..");
 const repoRoot = path.resolve(composerRoot, "..", "..");
 const manifestPath = path.join(composerRoot, "data", "composer_library_manifest.json");
-const publisherPath = path.join(repoRoot, "audit_tools", "publish_factor_markets_question_pool.mjs");
+const publisherPath = path.join(repoRoot, "audit_tools", "publish_remaining_principles_micro_question_pools.mjs");
 const phaseIds = new Set(productionQuestions.map(question => String(question.id)));
 
 const EXPECTED = Object.freeze({
@@ -153,12 +153,12 @@ async function run() {
   const authoredNonGraph = productionQuestions.filter(question => !question.graphRequired);
   const authoredOrdinary = productionQuestions.filter(question => !["repairQuestions", "bridgeQuestions"].includes(question.pool));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3j", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3j", `Library version ${library.composerVersion}`);
-  pass(library.canonicalQuestionCount === 8771 && manifest.canonicalQuestionCount === 8771, "Canonical count mismatch");
-  pass(library.conceptCount === 130 && library.registry.concepts.length === 130, "Concept count mismatch");
-  pass(library.assetInventory.length === 475 && manifest.assetCount === 475, "Asset inventory count mismatch");
+  pass(library.composerVersion === "4.5s.3k", `Library version ${library.composerVersion}`);
+  pass(library.canonicalQuestionCount === 9271 && manifest.canonicalQuestionCount === 9271, "Canonical count mismatch");
+  pass(library.conceptCount === 133 && library.registry.concepts.length === 133, "Concept count mismatch");
+  pass(library.assetInventory.length === 486 && manifest.assetCount === 486, "Asset inventory count mismatch");
   pass(productionQuestions.length === 160 && published.length === 160, `Question total ${productionQuestions.length}/${published.length}`);
   pass(authoredGraph.length === 43 && authoredNonGraph.length === 117, "Graph/non-graph total mismatch");
   pass(productionQuestions[0].id === ID_FIRST && productionQuestions.at(-1).id === ID_LAST, "ID range mismatch");
@@ -283,7 +283,7 @@ async function run() {
   }
   pass(!fs.existsSync(path.join(composerRoot, "data", "question-assets", "_incoming-public-goods")), "Incoming asset staging directory remains");
   const physicalWebPs = fs.readdirSync(path.join(composerRoot, "data", "question-assets"), { recursive: true }).filter(file => String(file).toLowerCase().endsWith(".webp"));
-  pass(physicalWebPs.length === 475, `Physical WebP count ${physicalWebPs.length}`);
+  pass(physicalWebPs.length === 486, `Physical WebP count ${physicalWebPs.length}`);
 
   const childModule = library.concepts[CONCEPT_ID];
   const childRegistry = library.registry.concepts.filter(record => record.canonicalConceptId === CONCEPT_ID);

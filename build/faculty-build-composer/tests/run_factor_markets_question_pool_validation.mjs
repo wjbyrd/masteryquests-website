@@ -105,8 +105,8 @@ check(productionQuestions.length === 240, "author count", String(productionQuest
 check(ID_FIRST === 42320 && ID_LAST === 42559, "ID range", `${ID_FIRST}-${ID_LAST}`);
 check(productionQuestions.every((question, index) => question.id === ID_FIRST + index), "contiguous unique IDs");
 check(new Set(productionQuestions.map(question => question.id)).size === 240, "unique author IDs");
-check(current.canonicalQuestionCount === head.canonicalQuestionCount + 240, "canonical question total", `${current.canonicalQuestionCount}`);
-check(current.conceptCount === head.conceptCount + 1, "concept total", `${current.conceptCount}`);
+check(current.canonicalQuestionCount === head.canonicalQuestionCount + 500, "canonical question total with coordinated successor release", `${current.canonicalQuestionCount}`);
+check(current.conceptCount === head.conceptCount + 3, "concept total with coordinated successor release", `${current.conceptCount}`);
 check(Boolean(factorModule), "factor-markets module registered");
 check(factorEntries.length === 240, "published factor-market count", String(factorEntries.length));
 check(current.registry.concepts.filter(record => record.canonicalConceptId === CONCEPT_ID).length === 1, "single registry concept registration");
@@ -182,7 +182,7 @@ const headById = new Map(entries(head).map(entry => [String(entry.question.id), 
 const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), stable(entry.question)]));
 const changedBaseline = [...headById].filter(([id, record]) => currentById.get(id) !== record).map(([id]) => id);
 check(changedBaseline.length === 0, "protected existing question records unchanged", changedBaseline.slice(0, 20).join(","));
-check(current.assetInventory.length === head.assetInventory.length + 9, "asset inventory delta", String(current.assetInventory.length));
+check(current.assetInventory.length === head.assetInventory.length + 11, "asset inventory delta with coordinated successor release", String(current.assetInventory.length));
 
 const protectedPaths = [
   "build/faculty-build-composer/authoring/externalities_question_pool_author.mjs",
@@ -196,8 +196,8 @@ check(!protectedDiff, "protected production sources unchanged", protectedDiff);
 const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 const reviewManifest = JSON.parse(fs.readFileSync(reviewManifestPath, "utf8"));
-check(registry.canonicalQuestionCount === 8771 && manifest.canonicalQuestionCount === 8771, "registry/manifest question totals");
-check(manifest.assetCount === 475 && manifest.conceptCount === 130, "manifest totals");
+check(registry.canonicalQuestionCount === 9271 && manifest.canonicalQuestionCount === 9271, "registry/manifest question totals");
+check(manifest.assetCount === 486 && manifest.conceptCount === 133, "manifest totals");
 const reviewMapping = reviewManifest.concepts.find(item => item.canonicalConceptId === CONCEPT_ID);
 check(reviewMapping?.diagnosable === true && reviewMapping?.disposition === "NO_SHEET_INTEGRATION_META", "concept-review/report integration");
 

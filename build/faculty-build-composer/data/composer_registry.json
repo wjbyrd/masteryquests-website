@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-26T22:30:00.000Z",
+  "generatedAt": "2026-08-26T23:15:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -12464,12 +12464,300 @@
       "coverageStatusNote": "Production-depth factor-market bank with MPL, VMP, hiring, derived demand, labor supply, equilibrium, comparative statics, cross-factor links, repair, bridge, checkpoints, and limited applications.",
       "coverageFloorVersion": "FactorMarkets-2026.08.26-production-v1",
       "selectionRole": "standalone"
+    },
+    {
+      "canonicalConceptId": "consumer-choice",
+      "title": "Consumer Choice",
+      "description": "Analyze budget constraints, preferences, indifference curves, marginal rates of substitution, marginal utility per dollar, and utility-maximizing consumer choice.",
+      "includedSkills": [
+        "affordable_bundle",
+        "analyze_budget_change",
+        "apply_indifference_curve_properties",
+        "apply_marginal_rate_substitution",
+        "apply_marginal_utility_per_dollar",
+        "attainable_indifference_curve",
+        "best_affordable_bundle",
+        "budget_boundary",
+        "budget_equation",
+        "budget_exhaustion_not_enough",
+        "budget_slope",
+        "budget_vs_demand",
+        "construct_budget_constraint",
+        "convex_preferences",
+        "distinguish_special_preferences",
+        "equimarginal_rule",
+        "feasible_set_contraction",
+        "feasible_set_expansion",
+        "fixed_intercept",
+        "highest_attainable_curve",
+        "identify_consumer_optimum",
+        "income_change_shift",
+        "income_intercept",
+        "indifference",
+        "intercept_logic",
+        "interpret_ordinal_utility",
+        "interpret_relative_price",
+        "mrs_adjustment",
+        "mrs_price_ratio",
+        "mrs_units",
+        "new_budget_bundle",
+        "noncrossing_curves",
+        "optimal_bundle_coordinates",
+        "ordinal_utility",
+        "parallel_budget_lines",
+        "pivot_vs_shift",
+        "preference_and_feasibility",
+        "preference_ranking",
+        "price_change_pivot",
+        "price_increase_pivot",
+        "purchasing_power",
+        "rank_preferences",
+        "relative_price",
+        "relative_price_change",
+        "slope_change",
+        "tangency_condition",
+        "unaffordable_bundle",
+        "unattainable_preference"
+      ],
+      "excludedNeighboringSkills": [
+        "Demand-curve shifts remain in demand; this bank focuses on an individual consumer's feasible set and preferences.",
+        "Consumer and producer surplus remain in their welfare concepts; willingness to pay is not treated as an indifference curve.",
+        "Income inequality and poverty remain in the separate distributional concept."
+      ],
+      "prerequisiteConceptIds": [
+        "demand",
+        "opportunity-cost"
+      ],
+      "relatedConceptIds": [
+        "price-elasticity-of-demand",
+        "income-elasticity-of-demand",
+        "consumer-and-producer-surplus",
+        "marginal-analysis"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "CC.1",
+        "CC.2",
+        "CC.3",
+        "CC.4",
+        "CC.5",
+        "CC.6",
+        "CC.7",
+        "CC.8",
+        "CC.9",
+        "CC.10"
+      ],
+      "sourceGames": [
+        "consumer-choice-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 18,
+        "bridge": 6,
+        "calculation": 35,
+        "elite": 12,
+        "integration": 38,
+        "legendary": 6,
+        "legendaryBoss": 6,
+        "main": 106,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 40,
+        "medium": 60,
+        "hard": 36,
+        "elite": 12,
+        "legendary": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 148
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 148
+      },
+      "calculationCoverage": 35,
+      "graphCoverage": 46,
+      "status": "active",
+      "notes": "Standalone 160-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Standalone 160-record consumer-choice bank with eight dedicated CHOICE assets and explicit preference, budget, MRS, tangency, and equimarginal coverage.",
+      "coverageFloorVersion": "ConsumerChoice-2026.08.26-production-v1",
+      "selectionRole": "standalone"
+    },
+    {
+      "canonicalConceptId": "income-inequality-poverty-and-redistribution",
+      "title": "Income Inequality, Poverty, and Redistribution",
+      "description": "Measure and compare income distributions, read Lorenz curves and Gini coefficients, analyze poverty measures and income differences, and evaluate redistribution and antipoverty policy.",
+      "includedSkills": [
+        "analyze_income_differences",
+        "apply_poverty_threshold",
+        "compare_antipoverty_policies",
+        "compare_inequality",
+        "evaluate_in_kind_transfer",
+        "evaluate_redistribution_tradeoff",
+        "interpret_gini_coefficient",
+        "measure_income_distribution",
+        "read_lorenz_curve"
+      ],
+      "excludedNeighboringSkills": [
+        "Factor-price determination remains in factor-markets.",
+        "Generic tax incidence and deadweight loss remain in tax-wedges-and-revenue.",
+        "Aggregate fiscal multipliers remain in government-spending-and-multipliers; transfers here are evaluated as distributional policy."
+      ],
+      "prerequisiteConceptIds": [
+        "percentage-change"
+      ],
+      "relatedConceptIds": [
+        "factor-markets",
+        "labor-market-institutions",
+        "tax-wedges-and-revenue",
+        "government-spending-and-multipliers"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "IP.1",
+        "IP.2",
+        "IP.3",
+        "IP.4",
+        "IP.5",
+        "IP.6",
+        "IP.7",
+        "IP.8",
+        "IP.9"
+      ],
+      "sourceGames": [
+        "income-inequality-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 18,
+        "bridge": 6,
+        "calculation": 36,
+        "elite": 12,
+        "integration": 36,
+        "legendary": 6,
+        "legendaryBoss": 6,
+        "main": 106,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 42,
+        "medium": 58,
+        "hard": 36,
+        "elite": 12,
+        "legendary": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 148
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 148
+      },
+      "calculationCoverage": 36,
+      "graphCoverage": 42,
+      "status": "active",
+      "notes": "Standalone 160-record distribution bank with three dedicated Lorenz assets, poverty measurement, in-kind transfers, redistribution philosophy, and antipoverty design.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Standalone 160-record distribution bank with three dedicated Lorenz assets, poverty measurement, in-kind transfers, redistribution philosophy, and antipoverty design.",
+      "coverageFloorVersion": "IncomeInequality-2026.08.26-production-v1",
+      "selectionRole": "standalone"
+    },
+    {
+      "canonicalConceptId": "information-asymmetry-behavioral-and-political-economy",
+      "title": "Information Asymmetry, Behavioral Economics, and Political Economy",
+      "description": "Analyze hidden information and action, signaling and screening, behavioral decision patterns, and collective-choice results from Arrow, Condorcet, and the median-voter theorem.",
+      "includedSkills": [
+        "analyze_adverse_selection",
+        "analyze_moral_hazard",
+        "apply_arrow_impossibility",
+        "apply_behavioral_economics",
+        "apply_median_voter_theorem",
+        "diagnose_behavioral_bias",
+        "distinguish_signaling_screening",
+        "identify_condorcet_cycle",
+        "identify_information_asymmetry"
+      ],
+      "excludedNeighboringSkills": [
+        "Advertising and product differentiation remain in monopolistic-competition unless the task specifically concerns informational signaling.",
+        "Insurance calculations remain in insurance-and-risk; this bank distinguishes selection from post-contract hidden action.",
+        "Government externality remedies and public-good provision remain in their canonical market-failure concepts."
+      ],
+      "prerequisiteConceptIds": [
+        "incentives",
+        "models-and-assumptions"
+      ],
+      "relatedConceptIds": [
+        "market-failures",
+        "insurance-and-risk",
+        "monopolistic-competition",
+        "public-goods-and-common-resources"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "IBP.1",
+        "IBP.2",
+        "IBP.3",
+        "IBP.4",
+        "IBP.5",
+        "IBP.6",
+        "IBP.7",
+        "IBP.8",
+        "IBP.9"
+      ],
+      "sourceGames": [
+        "information-behavioral-political-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 18,
+        "bridge": 6,
+        "calculation": 0,
+        "elite": 14,
+        "integration": 45,
+        "legendary": 8,
+        "legendaryBoss": 6,
+        "main": 122,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 44,
+        "medium": 68,
+        "hard": 40,
+        "elite": 14,
+        "legendary": 14
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 168
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 168
+      },
+      "calculationCoverage": 0,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Standalone 180-record bank with no unrelated graph dependency; adverse selection and moral hazard are separated by information type and timing, followed by behavioral and collective-choice coverage.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Standalone 180-record bank with no unrelated graph dependency; adverse selection and moral hazard are separated by information type and timing, followed by behavioral and collective-choice coverage.",
+      "coverageFloorVersion": "InformationBehavioralPoliticalEconomy-2026.08.26-production-v1",
+      "selectionRole": "standalone"
     }
   ],
   "curationPhase": "phaseGraph4-money-market-ad-transmission-v1",
   "curationSummary": "Phase Graph 4: seven approved money-market and money-market-to-AD assets plus 42 graph-dependent questions. Coverage emphasizes money-market equilibrium, money-supply expansion/contraction, simultaneous money shifts, and monetary transmission to aggregate demand.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1",
-  "canonicalQuestionCount": 8771,
-  "composerVersion": "4.5s.3j",
-  "librarySha256": "dc7e539f7c63e2bb32b69d0497f2f6d357e1a3da9626232a4b15642bd5836da3"
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1",
+  "canonicalQuestionCount": 9271,
+  "composerVersion": "4.5s.3k",
+  "librarySha256": "7d3856431775c72d86443c7a2358eccb976f2988a34003cfe3c6df3164603218"
 }

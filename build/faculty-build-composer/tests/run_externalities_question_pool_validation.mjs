@@ -107,12 +107,12 @@ async function run() {
   const authoredGraph = ordinaryQuestions.filter(question => question.graphRequired);
   const authoredNonGraph = ordinaryQuestions.filter(question => !question.graphRequired);
 
-  pass(core.COMPOSER_VERSION === "4.5s.3j", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3j", `Library version ${library.composerVersion}`);
-  pass(library.conceptCount === 130, `Concept count ${library.conceptCount}`);
-  pass(library.canonicalQuestionCount === 8771 && manifest.canonicalQuestionCount === 8771, "Canonical count mismatch");
-  pass(library.assetInventory.length === 475 && manifest.assetCount === 475, "Registered asset count mismatch");
+  pass(library.composerVersion === "4.5s.3k", `Library version ${library.composerVersion}`);
+  pass(library.conceptCount === 133, `Concept count ${library.conceptCount}`);
+  pass(library.canonicalQuestionCount === 9271 && manifest.canonicalQuestionCount === 9271, "Canonical count mismatch");
+  pass(library.assetInventory.length === 486 && manifest.assetCount === 486, "Registered asset count mismatch");
   pass(ordinaryQuestions.length === 160 && published.length === 160, `Question total ${ordinaryQuestions.length}/${published.length}`);
   pass(authoredGraph.length === 104 && authoredNonGraph.length === 56, "Graph/non-graph total mismatch");
   pass(ordinaryQuestions[0].id === ID_FIRST && ordinaryQuestions.at(-1).id === ID_LAST, "ID range mismatch");
@@ -200,7 +200,7 @@ async function run() {
   }
   pass(!fs.existsSync(path.join(composerRoot, "data", "question-assets", "_incoming-externalities")), "Incoming staging directory remains");
   const physicalWebPs = fs.readdirSync(path.join(composerRoot, "data", "question-assets"), { recursive: true }).filter(file => String(file).toLowerCase().endsWith(".webp"));
-  pass(physicalWebPs.length === 475, `Physical WebP count ${physicalWebPs.length}`);
+  pass(physicalWebPs.length === 486, `Physical WebP count ${physicalWebPs.length}`);
   const concept = library.concepts[PARENT_CONCEPT_ID];
   for (const [objective, label] of Object.entries(OBJECTIVES)) pass(concept.objectiveLabels[objective] === label, `Objective label ${objective}`);
   pass((concept.repairQuestions || []).filter(question => question.sourceCurationPhase === PHASE).length === 0, "Unexpected Repair additions");

@@ -99,11 +99,11 @@ async function run() {
   const ordinary = allOrdinary(library);
   const synchronized = ordinary.filter(({ question }) => phaseIds.has(String(question.id)));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3j", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.composerVersion === "4.5s.3j", `Library Composer version ${library.composerVersion}`);
-  pass(library.canonicalQuestionCount === 8771, `Canonical count ${library.canonicalQuestionCount}`);
-  pass(manifest.canonicalQuestionCount === 8771, `Manifest canonical count ${manifest.canonicalQuestionCount}`);
+  pass(library.composerVersion === "4.5s.3k", `Library Composer version ${library.composerVersion}`);
+  pass(library.canonicalQuestionCount === 9271, `Canonical count ${library.canonicalQuestionCount}`);
+  pass(manifest.canonicalQuestionCount === 9271, `Manifest canonical count ${manifest.canonicalQuestionCount}`);
   pass(synchronized.length === 48, `Synchronized record count ${synchronized.length}`);
   pass(new Set(synchronized.map(({ question }) => String(question.id))).size === 48, "Phase 3E IDs are not unique");
   pass(JSON.stringify(distribution(ordinaryQuestions, "pool")) === JSON.stringify({ medium: 7, hard: 16, elite: 20, legendary: 5 }), "Source difficulty distribution changed");
