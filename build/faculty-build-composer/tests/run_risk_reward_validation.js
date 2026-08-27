@@ -55,7 +55,7 @@ function runtimeDeckCheck(composition,target){
    hiddenUntilWager:template.includes('showRiskRewardWagerPrompt();')&&template.includes('renderRiskRewardQuestion();'),
    settlementGuard:template.includes('riskRewardWagerSettled = true;')&&template.includes('if(!modeUsesRiskReward() || !riskRewardWagerLocked || riskRewardWagerSettled) return null;'),
    allInBust:template.includes('riskRewardBankroll = Math.max(0, riskRewardBankroll - wager);')&&template.includes('riskRewardBusted = riskRewardBankroll <= 0;'),
-   noRemediation:template.includes('gameMode !== "riskReward" && currentQuestion.tag'),
+   noRemediation:/function remediationTransitionAllowed\(question\)[\s\S]*?gameMode !== "riskReward"/.test(template)&&template.includes('if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion))'),
    fixedCompletion:template.includes('riskRewardQuestionsCompleted >= riskRewardQuestionTarget'),
    mastery:template.includes('Risk & Confidence')&&template.includes('getRiskRewardReportData()'),
    telemetry:template.includes('riskRewardWagerAmount')&&template.includes('riskRewardBankrollAfter')&&template.includes('riskRewardWagerDistribution'),

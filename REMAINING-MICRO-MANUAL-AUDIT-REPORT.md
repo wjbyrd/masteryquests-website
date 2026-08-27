@@ -50,18 +50,21 @@ The observed repetition was primarily authored template concentration, not a sel
 
 A checkpoint first chooses one diagnosed objective and uses matching checkpoint records. If fewer than three matching records exist, remaining slots are filled from other checkpoint-eligible questions, preferring objective diversity. Consequently, a checkpoint can legitimately contain more than one selected concept.
 
-Concept Repair is allowed to interrupt a checkpoint. The remediation state captures the checkpoint room, executes Repair, Bridge, and Recovery Retest, then restores the same room and resumes that checkpoint. The `Concept Repair` prefix is a runtime label, not author text. Deterministic simulations and browser gameplay reproduced this architecture, including cross-concept checkpoint questions and same-room resumption.
+Historical note: at the time of the original August 27 audit, Concept Repair could interrupt a checkpoint, retain the checkpoint room, run Repair → Bridge → Recovery Retest, and then resume that room. Faculty review subsequently changed the intended design.
+
+The current invariant is that a checkpoint is an uninterrupted three-question diagnostic sequence. Every response is scored and recorded, including misses, but no Repair, Bridge, or Recovery Retest transition can begin while the checkpoint is active. After the checkpoint resolves and advances to the post-checkpoint room, ordinary remediation eligibility resumes. The `Concept Repair` prefix remains a runtime label, not author text.
 
 ## 12. Whether checkpoint behavior required a code change
 
-No. The manual behavior matches the current tested design, so no selector, adaptive, remediation, checkpoint, template, or timing code was changed. The 2,800 ms ordinary-feedback timing, remediation thresholds, recipe schema, difficulty routing, and pool rules remain intact.
+Yes, after the subsequent faculty design decision. The canonical runtime now rejects remediation planning during a checkpoint, and each scored checkpoint response advances the three-question assessment whether correct or incorrect. A completed checkpoint routes to the next room before remediation can become eligible again. Checkpoint selection, remediation thresholds/content, the 2,800 ms ordinary-feedback timing, recipe schema, difficulty routing, and pool rules remain unchanged.
 
 ## 13. Final validation
 
 - Factor Markets focused validator: PASS, 1,067 checks.
 - Remaining Principles Micro focused validator: PASS, 2,171 checks.
-- Manual-audit validator: PASS, 241 checks, including 25 deterministic runs and 240 simulation assertions.
-- Full active Composer suite: PASS, 22 of 22 runners.
+- Manual-audit validator: PASS, 268 checks, including 25 deterministic runs with uninterrupted checkpoint and post-checkpoint repair assertions.
+- Checkpoint-remediation design-change validator: PASS, 28 checks covering the ten requested regression behaviors.
+- Full active Composer suite: PASS, 23 of 23 runners.
 - Published totals remain 9,271 questions, 133 concepts, and 486 assets.
 - Current library SHA-256: `a14c7735a89a66466e2eb56d17b1204046dd3d0c0fa38547b933d09aac5a064e`.
 - `git diff --check`: clean.
@@ -72,9 +75,9 @@ Regression coverage now includes realm placement, filename leakage, capitalizati
 
 - Composer: all four concepts displayed under Micro and none under Macro.
 - Trial by Graph: Consumer Choice, Inequality, and Factors of Production all rendered natural graph references with no filenames and correct graph-dependent content.
-- Mixed Standard Campaign: forced a pre-checkpoint miss, entered Repair, completed Bridge and Recovery Retest, returned to the same Checkpoint One room, cleared Checkpoint One, and reached Checkpoint Two. Cross-concept checkpoint selection matched the documented architecture.
+- Mixed Standard Campaign after the design change: created ordinary weakness evidence, reached Checkpoint One, intentionally missed Q1 and Q2, received Q2 and Q3 without a Repair screen, completed Q3, resolved Checkpoint One exactly once, and advanced to Room 11. The completed checkpoint did not reopen.
 - Regenerated mixed build: question copy remained natural after the final author-source cleanup.
-- Unlimited Practice: a scored attempt generated a correct Mastery Report with 100% accuracy, `Limited Evidence`, a 1/1 count, concept/form/skill signals, behavior signals, next moves, and report controls.
+- Unlimited Practice: a deliberate miss generated a Mastery Report with 0% accuracy, a 0/1 count, `Limited Evidence`, one foundational attempt, one fast miss, and the normal report controls. Static ordering and regression simulation confirm checkpoint responses enter the same evidence path before remediation suppression.
 - Browser console: no errors.
 
 ## 15. Exact files changed
@@ -87,6 +90,8 @@ Authoritative sources and grouping:
 - `build/faculty-build-composer/authoring/information_behavioral_political_economy_question_pool_author.mjs`
 - `build/faculty-build-composer/authoring/remaining_micro_question_pool_helpers.mjs`
 - `build/faculty-build-composer/course-area-model.js`
+- `build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html`
+- `build/faculty-build-composer/CHECKPOINT-REMEDIATION-DESIGN-NOTE.md`
 
 Deterministically regenerated publisher outputs:
 
@@ -100,15 +105,27 @@ Validation and generated QA artifacts:
 - `build/faculty-build-composer/tests/run_factor_markets_question_pool_validation.mjs`
 - `build/faculty-build-composer/tests/run_remaining_principles_micro_question_pool_validation.mjs`
 - `build/faculty-build-composer/tests/run_remaining_micro_manual_audit_validation.mjs`
+- `build/faculty-build-composer/tests/run_checkpoint_remediation_design_change_validation.mjs`
+- `build/faculty-build-composer/tests/run_quiz_mode_validation.js`
+- `build/faculty-build-composer/tests/run_trial_by_graph_validation.js`
+- `build/faculty-build-composer/tests/run_fading_fortune_validation.js`
+- `build/faculty-build-composer/tests/run_risk_reward_validation.js`
 - `build/faculty-build-composer/tests/factor-markets-production-sample.html`
 - `build/faculty-build-composer/tests/consumer-choice-production-sample.html`
 - `build/faculty-build-composer/tests/income-inequality-production-sample.html`
 - `build/faculty-build-composer/tests/information-behavioral-political-production-sample.html`
 - `build/faculty-build-composer/tests/remaining-micro-manual-audit-production-sample.html`
+- `build/faculty-build-composer/tests/quiz-only.html`
+- `build/faculty-build-composer/tests/trial-by-graph-only.html`
+- `build/faculty-build-composer/quiz_mode_validation_results.json`
+- `build/faculty-build-composer/trial_by_graph_validation_results_4.5s.2m.json`
+- `build/faculty-build-composer/fading_fortune_validation_results_4.5s.2m.json`
+- `build/faculty-build-composer/risk_reward_validation_results_4.5s.2m.json`
 - `REMAINING-MICRO-MANUAL-AUDIT-REPORT.md`
+- `CHECKPOINT-REMEDIATION-DESIGN-CHANGE-REPORT.md`
 
 ## 16. Unresolved issues
 
-No release-blocking issues remain. Two intended characteristics are worth retaining in faculty expectations: single-concept 27-question simulations naturally have a concept streak of 27, and an ID may recur after it leaves the ten-question recent-history window. The runtime has no normalized-answer-text suppression; current authored variety and mixed-run results do not demonstrate a need to add it.
+No release-blocking issues remain. Generic remediation `returnRoom` infrastructure is retained because ordinary-room Repair still uses it; checkpoint-caused return state is no longer created. Two unrelated intended characteristics remain: single-concept 27-question simulations naturally have a concept streak of 27, and an ID may recur after it leaves the ten-question recent-history window.
 
 No commit was created.

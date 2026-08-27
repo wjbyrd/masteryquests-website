@@ -3564,7 +3564,7 @@ const FACULTY_COMPOSITION_CONFIG = {
     },
     "saveKeyNamespace": "mq-econ:income-inequality-poverty-and-redistribution-production-validation:f885cc913c31",
     "librarySha256": "a14c7735a89a66466e2eb56d17b1204046dd3d0c0fa38547b933d09aac5a064e",
-    "templateSha256": "38891e15c43ea3ce78388db4e351b152e69c82d86fe55274e6f3269a8940ad47",
+    "templateSha256": "1ee4e6a7ef81500f5f23af2fa5a91d1500d875c3ad02fbfcb2dbb301641f5eab",
     "compositionFingerprint": "f885cc913c31f2e69d27c8a2860f23e5e467f17350a05ecf91ae0db85e4e748a"
 };
 // =====================================================
@@ -5072,6 +5072,23 @@ function shouldTriggerDetour(question){
         || (objectiveAccuracy !== null && objectiveAccuracy < 0.5 && getObjectiveBucket(question).attempts >= 2);
 }
 
+// Checkpoint encounters are diagnostic/assessment sequences. Remediation
+// transitions are suppressed until the checkpoint has fully resolved.
+function isCheckpointEncounterActive(){
+    return isBossRoomForMode(room);
+}
+
+function remediationTransitionAllowed(question){
+    return !isCheckpointEncounterActive()
+        && gameMode !== "legendary"
+        && gameMode !== "quiz"
+        && !remediationState.active
+        && gameMode !== "trialGraph"
+        && gameMode !== "fadingFortune"
+        && gameMode !== "riskReward"
+        && !!question?.tag;
+}
+
 function resetRemediationState(){
     remediationState = {
         active: false,
@@ -5094,7 +5111,7 @@ function resetRemediationState(){
 }
 
 function planRemediation(question, responseTime){
-    if(!question || !question.tag) return null;
+    if(!question || !question.tag || isCheckpointEncounterActive()) return null;
 
     const expected = getTypeTargetMs(question.type);
     const objectiveBucket = getObjectiveBucket(question);
@@ -5624,6 +5641,50 @@ function getFacultyBossLine({ isCorrect, tag, streak, bossHealth, responseTime }
     if(!isCorrect && tag) return `${bossName}: Review ${tag}. The engine will return to it.`;
     if(isCorrect) return `${bossName}: Correct. Continue.`;
     return `${bossName}: Try again.`;
+}
+
+function advanceCheckpointAttempt(){
+    bossHealth = Math.max(0, bossHealth - 1);
+    return bossHealth === 0;
+}
+
+function completeCheckpointEncounter(){
+    recordBossDefeatForAchievements();
+    sendGameData({
+        runID: runID,
+        game: FACULTY_COMPOSITION_CONFIG.title,
+        event: "boss_defeated",
+        user: username,
+        room: room
+    });
+
+    bossPool = [];
+
+    if(modeAllowsRealmProgress()){
+        if(room === 10){
+            document.getElementById("vaultCompass").classList.add("unlocked");
+            localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
+            showArtifact(artifacts.compass.img, artifacts.compass.title, artifacts.compass.text);
+        }
+
+        if(room === 20){
+            document.getElementById("vaultLens").classList.add("unlocked");
+            localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
+            showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
+        }
+
+        if(room === 30){
+            document.getElementById("vaultScales").classList.add("unlocked");
+            localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
+            showArtifact(artifacts.scales.img, artifacts.scales.title, artifacts.scales.text);
+        }
+
+        updateMissionArtifactCountFromVault();
+    }
+
+    showKnowledgeRoom(room);
+    bossHealth = 3;
+    bossPool = [];
 }
 
 // =============================================
@@ -15735,7 +15796,7 @@ const facultyCompositionMetadata = {
   "compositionFingerprint": "f885cc913c31f2e69d27c8a2860f23e5e467f17350a05ecf91ae0db85e4e748a",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1",
   "librarySha256": "a14c7735a89a66466e2eb56d17b1204046dd3d0c0fa38547b933d09aac5a064e",
-  "templateSha256": "38891e15c43ea3ce78388db4e351b152e69c82d86fe55274e6f3269a8940ad47",
+  "templateSha256": "1ee4e6a7ef81500f5f23af2fa5a91d1500d875c3ad02fbfcb2dbb301641f5eab",
   "phase": "phase-remaining-principles-micro-question-pools-v1",
   "sourceVersion": "IncomeInequality-2026.08.26-production-v1"
 };
@@ -18795,7 +18856,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         
        // --- BOSS HIT LOGIC ---
         if(isBossRoom){
-        bossHealth--;
+        const checkpointComplete = advanceCheckpointAttempt();
         
 		const bossLine = getFacultyBossLine({
  		 isCorrect: true,
@@ -18813,50 +18874,12 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 
 		triggerBossShake();
         
-        if (bossHealth > 0) {
+        if (!checkpointComplete) {
            scheduleForCurrentRun(loadQuestion, TIMING.boss);
            return;
         }
-			
-         // Boss defeated
-		 recordBossDefeatForAchievements();
-         sendGameData({
-            runID: runID,
-			game: FACULTY_COMPOSITION_CONFIG.title,
-            event: "boss_defeated",
-            user: username,
-            room: room
-         });
-           
-         bossPool = [];
-          
-       // Boss defeated — Blank Mastery Quest boss artifacts
- if(modeAllowsRealmProgress()){
-    if(room === 10){
-        document.getElementById("vaultCompass").classList.add("unlocked");
-        localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
-        showArtifact(artifacts.compass.img, artifacts.compass.title, artifacts.compass.text);
-    }
 
-    if(room === 20){
-        document.getElementById("vaultLens").classList.add("unlocked");
-        localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
-        showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
-    }
-
-    if(room === 30){
-        document.getElementById("vaultScales").classList.add("unlocked");
-        localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
-        showArtifact(artifacts.scales.img, artifacts.scales.title, artifacts.scales.text);
-    }
-
-    updateMissionArtifactCountFromVault();
-}
-
-// ... (Inside the Boss Victory check)
-        showKnowledgeRoom(room);
-        bossHealth = 3;
-        bossPool = []; // Clear the pool so the next boss is fresh
+        completeCheckpointEncounter();
         return; 
     } // <--- THIS ends the "if(isBossRoom)" block
 
@@ -18920,6 +18943,14 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
   	 });
 
      msgElement.innerHTML = `<span class='fade-out-text'>${bossLine}</span>`;
+
+     const checkpointComplete = advanceCheckpointAttempt();
+     if(checkpointComplete){
+        completeCheckpointEncounter();
+     } else {
+        scheduleForCurrentRun(loadQuestion, TIMING.boss);
+     }
+     return;
    }
 
     // --- IF STUDENT MISSES DURING ACTIVE REMEDIATION ---
@@ -18948,7 +18979,7 @@ if(remediationState.active){
 }
 
 // --- STAGED REMEDIATION TRIGGER ---
-if (gameMode !== "legendary" && gameMode !== "quiz" && !remediationState.active && gameMode !== "trialGraph" && gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag && shouldTriggerDetour(currentQuestion)) {
+if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion)) {
     remediationState = planRemediation(currentQuestion, responseTime) || remediationState;
     detourActive = true;
     detourReturnRoom = room;

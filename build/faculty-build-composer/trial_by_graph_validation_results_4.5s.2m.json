@@ -1,13 +1,13 @@
 {
   "phase": "mode8-trial-by-graph-v1",
   "ok": true,
-  "composerVersion": "4.5s.2m",
-  "canonicalQuestionCount": 8163,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9271,
   "auditedIds": 612,
-  "graphRequiredFlagged": 602,
+  "graphRequiredFlagged": 949,
   "examples": {
     "perfectCompetition": 76,
-    "demand": 18,
+    "demand": 21,
     "aggregateDemand": 12,
     "bankMoneyCreation": 0
   },
@@ -19,7 +19,8 @@
     ],
     "demand": [
       10,
-      15
+      15,
+      20
     ],
     "aggregateDemand": [
       10

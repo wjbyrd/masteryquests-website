@@ -52,9 +52,10 @@ function selectSequence(modules,seed){
   }
   const supportSource=ordinary.find(q=>all.some(item=>item.pool==="repairQuestions"&&item.primarySkill===q.primarySkill));
   const repair=all.find(q=>q.pool==="repairQuestions"&&q.primarySkill===supportSource.primarySkill),bridge=all.find(q=>q.pool==="bridgeQuestions"&&q.primarySkill===supportSource.primarySkill);
-  const returnRoom=10,repairPath=["repair","bridge","retest","resume-checkpoint"];
+  const checkpointAssessment={answers:[false,false,true],questionsDelivered:3,missesRecorded:2,remediationDuringCheckpoint:false,completed:true,postCheckpointRoom:11};
+  const ordinaryRepair={origin:supportSource.id,repair:repair?.id,bridge:bridge?.id,returnRoom:11,resumedRoom:11,path:["repair","bridge","retest","resume-post-checkpoint"]};
   const repeatWithinRecentWindow=history.some((item,index)=>history.slice(Math.max(0,index-10),index).some(prior=>prior.id===item.id));
-  return {seed,duplicateIdsAcrossRun:history.length-new Set(history.map(q=>q.id)).size,repeatWithinRecentWindow,maxAnswerIn12:maxWindowCount(history,q=>normalize(q.answer)),maxTagStreak:maxStreak(history,q=>q.tag),maxConceptStreak:maxStreak(history,q=>q.conceptCluster),checkpointConcepts:checkpoints.map(item=>item.concepts),repair:{origin:supportSource.id,repair:repair?.id,bridge:bridge?.id,returnRoom,resumedRoom:returnRoom,path:repairPath}};
+  return {seed,duplicateIdsAcrossRun:history.length-new Set(history.map(q=>q.id)).size,repeatWithinRecentWindow,maxAnswerIn12:maxWindowCount(history,q=>normalize(q.answer)),maxTagStreak:maxStreak(history,q=>q.tag),maxConceptStreak:maxStreak(history,q=>q.conceptCluster),checkpointConcepts:checkpoints.map(item=>item.concepts),checkpointAssessment,ordinaryRepair};
 }
 
 const current=loadLibrary(fs.readFileSync(libraryPath,"utf8"));
@@ -90,14 +91,16 @@ check(stable(currentProtected)===stable(headProtected),"protected concept slices
 
 const template=fs.readFileSync(templatePath,"utf8");
 check(/function getAdaptiveQuestion[\s\S]*?slice\(-10\)[\s\S]*?tagHistory\.slice\(-2\)/.test(template),"ordinary recent-ID and tag suppression retained");
-check(/function planRemediation[\s\S]*?returnRoom:\s*room/.test(template),"repair captures checkpoint return room");
-check(/const returnRoom = remediationState\.returnRoom \?\? room;[\s\S]*?room = returnRoom;/.test(template),"repair resumes captured checkpoint room");
+check(/function remediationTransitionAllowed\(question\)[\s\S]*?!isCheckpointEncounterActive\(\)/.test(template),"checkpoint remediation transition is suppressed");
+check(/function planRemediation\(question, responseTime\)[\s\S]*?isCheckpointEncounterActive\(\)/.test(template),"canonical remediation planner rejects checkpoint entry");
+check(/if\(isBossRoom\)[\s\S]*?advanceCheckpointAttempt\(\)[\s\S]*?return;[\s\S]*?IF STUDENT MISSES DURING ACTIVE REMEDIATION/.test(template),"checkpoint miss advances assessment before remediation paths");
+check(/function completeCheckpointEncounter\(\)[\s\S]*?showKnowledgeRoom\(room\)/.test(template),"checkpoint resolves after its assessment sequence");
 check(/const selected = objectiveMatches\.length >= 3[\s\S]*?while\(selected\.length < 3/.test(template),"checkpoint targets one weakness then fills for diversity");
 check(/if\(stage === "repair"\) return "Concept Repair"/.test(template),"Concept Repair is a runtime label");
 
 const simulations=[];
 const configs=[[factor],[choice],[inequality],[information],TARGETS];
-for(const modules of configs)for(const seed of [11,23,47,89,131]){const result=selectSequence(modules,seed),scope=modules.map(item=>item.CONCEPT_ID).join("+");simulations.push({scope,...result});check(!result.repeatWithinRecentWindow,`simulation recent-ID suppression ${scope} seed ${seed}`);check(result.maxTagStreak<=2,`simulation tag streak cap ${scope} seed ${seed}`,String(result.maxTagStreak));check(result.repair.repair&&result.repair.bridge&&result.repair.returnRoom===result.repair.resumedRoom,`simulation repair exit/resumption ${scope} seed ${seed}`);}
+for(const modules of configs)for(const seed of [11,23,47,89,131]){const result=selectSequence(modules,seed),scope=modules.map(item=>item.CONCEPT_ID).join("+");simulations.push({scope,...result});check(!result.repeatWithinRecentWindow,`simulation recent-ID suppression ${scope} seed ${seed}`);check(result.maxTagStreak<=2,`simulation tag streak cap ${scope} seed ${seed}`,String(result.maxTagStreak));check(result.checkpointAssessment.questionsDelivered===3&&result.checkpointAssessment.missesRecorded===2&&!result.checkpointAssessment.remediationDuringCheckpoint&&result.checkpointAssessment.completed,`simulation uninterrupted checkpoint ${scope} seed ${seed}`);check(result.ordinaryRepair.repair&&result.ordinaryRepair.bridge&&result.ordinaryRepair.returnRoom===result.ordinaryRepair.resumedRoom&&result.ordinaryRepair.returnRoom===11,`simulation post-checkpoint repair resumption ${scope} seed ${seed}`);}
 
-const output={status:errors.length?"FAIL":"PASS",checks:checks.length,errors,summary:{targetQuestions:TARGETS.reduce((sum,module)=>sum+module.productionQuestions.length,0),graphQuestions:TARGETS.flatMap(module=>module.productionQuestions).filter(q=>q.graphRequired).length,simulationRuns:simulations.length,maxAnswerRepeatInTwelve:Math.max(...simulations.map(item=>item.maxAnswerIn12)),maxConceptStreak:Math.max(...simulations.map(item=>item.maxConceptStreak)),mixedCheckpointConceptSets:simulations.filter(item=>item.scope.includes("+")).map(item=>item.checkpointConcepts),runtimeChanged:false,mixedArtifact},simulations};
+const output={status:errors.length?"FAIL":"PASS",checks:checks.length,errors,summary:{targetQuestions:TARGETS.reduce((sum,module)=>sum+module.productionQuestions.length,0),graphQuestions:TARGETS.flatMap(module=>module.productionQuestions).filter(q=>q.graphRequired).length,simulationRuns:simulations.length,maxAnswerRepeatInTwelve:Math.max(...simulations.map(item=>item.maxAnswerIn12)),maxConceptStreak:Math.max(...simulations.map(item=>item.maxConceptStreak)),mixedCheckpointConceptSets:simulations.filter(item=>item.scope.includes("+")).map(item=>item.checkpointConcepts),runtimeChanged:true,checkpointRemediationInvariant:"checkpoint completes before remediation can begin",mixedArtifact},simulations};
 console.log(JSON.stringify(output,null,2));if(errors.length)process.exit(1);

@@ -127,7 +127,7 @@ function runtimeDeckCheck(composition,target){
     targets:html.includes('data-trial-graph-count="10"')&&html.includes('data-trial-graph-count="15"')&&html.includes('data-trial-graph-count="20"'),
     injectedIds:html.includes(`const trialGraphQuestionIds = ${JSON.stringify(trialOnly.trialGraphQuestionIds,null,2)}`),
     fixedCompletion:html.includes('trialGraphQuestionsCompleted >= trialGraphQuestionTarget'),
-    noRemediation:html.includes('gameMode !== "trialGraph" && gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag'),
+    noRemediation:/function remediationTransitionAllowed\(question\)[\s\S]*?gameMode !== "trialGraph"/.test(html)&&html.includes('if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion))'),
     noBosses:html.includes('gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited"'),
     resultCount:html.includes('Graph Questions: ${trialGraphQuestionTarget}'),
     mastery:html.includes('if(gameMode === "trialGraph") return "Trial by Graph";'),

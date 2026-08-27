@@ -74,7 +74,7 @@ function runtimeDeckCheck(composition,target){
     visibilityPause:template.includes('pauseFadingFortune("visibility")')&&template.includes('resumeFadingFortune("visibility")'),
     modalPause:template.includes('pauseFadingFortune("game-modal")')&&template.includes('resumeFadingFortune("game-modal")'),
     rapidPause:template.includes('pauseFadingFortune("rapid-guess")')&&template.includes("resumeFadingFortune('rapid-guess')"),
-    noRemediation:template.includes('gameMode !== "fadingFortune" && gameMode !== "riskReward" && currentQuestion.tag'),
+    noRemediation:/function remediationTransitionAllowed\(question\)[\s\S]*?gameMode !== "fadingFortune"/.test(template)&&template.includes('if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion))'),
     fixedCompletion:template.includes('fadingFortuneQuestionsCompleted >= fadingFortuneQuestionTarget'),
     report:template.includes('Independence Under Pressure')&&template.includes('getFadingFortuneAverageValue()'),
     telemetry:template.includes('"fadingFortuneQuestionValue"')&&template.includes('"fadingFortunePausedDurationMs"')&&template.includes('"fadingFortuneDistribution"')
