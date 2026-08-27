@@ -91,9 +91,9 @@ const PRESETS = [
     id: 'micro-firms-markets',
     area: 'micro',
     title: 'Firms & Market Structure',
-    description: 'Production costs and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.',
+    description: 'Production costs, factor markets, and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.',
     conceptIds: [
-      'costs-of-production', 'perfect-competition', 'monopoly',
+      'costs-of-production', 'factor-markets', 'perfect-competition', 'monopoly',
       'monopolistic-competition', 'oligopoly'
     ]
   },
@@ -105,7 +105,7 @@ const PRESETS = [
     conceptIds: [
       'competitive-markets', 'demand', 'supply', 'market-equilibrium', 'price-signals',
       'elasticity', 'consumer-and-producer-surplus', 'international-trade-and-trade-policy',
-      'costs-of-production', 'perfect-competition', 'monopoly',
+      'costs-of-production', 'factor-markets', 'perfect-competition', 'monopoly',
       'monopolistic-competition', 'oligopoly'
     ]
   },

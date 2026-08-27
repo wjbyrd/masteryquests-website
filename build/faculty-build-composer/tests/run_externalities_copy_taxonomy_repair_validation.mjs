@@ -114,10 +114,10 @@ async function run() {
   const parentEntries = conceptEntries(library.concepts[parent]);
   const phasePublished = parentEntries.filter(({ question }) => phaseIds.has(String(question.id)));
 
-  pass(core.COMPOSER_VERSION === "4.5s.3i", `Composer version ${core.COMPOSER_VERSION}`);
+  pass(core.COMPOSER_VERSION === "4.5s.3j", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.canonicalQuestionCount === 8531 && manifest.canonicalQuestionCount === 8531, "Canonical question count changed");
-  pass(library.conceptCount === 129 && library.registry.concepts.length === 129, "Concept count mismatch");
+  pass(library.canonicalQuestionCount === 8771 && manifest.canonicalQuestionCount === 8771, "Canonical question count changed");
+  pass(library.conceptCount === 130 && library.registry.concepts.length === 130, "Concept count mismatch");
   pass(ordinaryQuestions.length === 160 && phasePublished.length === 160, "The 160-question pool is not intact");
   pass(ordinaryQuestions.filter(question => question.graphRequired).length === 104, "Graph-question count changed");
   pass(ordinaryQuestions[0].id === ID_FIRST && ordinaryQuestions.at(-1).id === ID_LAST, "ID range changed");

@@ -31,7 +31,7 @@ function runtimeDeckCheck(composition,target){
   const issues=[];
   assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
-  if(library.canonicalQuestionCount!==8531) issues.push(`canonical count ${library.canonicalQuestionCount}`);
+  if(library.canonicalQuestionCount!==8771) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
   const allNine=core.compose(library,recipe('perfect-competition',[...core.MODE_ORDER]));
   if(allNine.errors.length) issues.push(...allNine.errors.map(x=>`all-nine: ${x}`));

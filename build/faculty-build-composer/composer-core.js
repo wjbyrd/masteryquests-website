@@ -5,7 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(){
 'use strict';
 
-const COMPOSER_VERSION = '4.5s.3i';
+const COMPOSER_VERSION = '4.5s.3j';
 const RECIPE_SCHEMA_VERSION = '1.4.0';
 const CUSTOM_ASSET_POLICY = Object.freeze({
   allowedSourceTypes:['image/webp','image/png','image/jpeg'],

@@ -69,7 +69,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   const assetIds = new Set();
   const presetIds = new Set(Object.keys(themes.presets));
 
-  pass(core.COMPOSER_VERSION === '4.5s.3i', 'Unexpected Composer version');
+  pass(core.COMPOSER_VERSION === '4.5s.3j', 'Unexpected Composer version');
   pass(core.RECIPE_SCHEMA_VERSION === '1.4.0', 'Unexpected recipe schema');
   pass(themes.schemaVersion === '1.0.0', 'Unexpected theme schema');
   pass(Object.keys(themes.slots).length === 22, 'Unexpected visual-slot count');
