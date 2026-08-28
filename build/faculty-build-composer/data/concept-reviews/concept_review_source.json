@@ -11355,7 +11355,7 @@
           "Corrective taxes, subsidies, permits, regulation, or bargaining can internalize the spillover."
         ],
         "watch": "Do not label every harmful outcome an externality. A spillover must affect a third party and be missing from the market price.",
-        "worked": "A factory's market supply is MPC. Pollution adds $20 per unit, so MSC lies $20 above MPC. The market chooses Qm where MPB = MPC. The efficient quantity is the lower Q* where MPB = MSC. A $20 corrective tax aligns the firm's private marginal cost with social marginal cost.",
+        "worked": "Fast-fashion production creates a $6 external cost per garment, so MSC lies $6 above MPC. The market produces 240 million garments where MPB = MPC at $12. Efficiency occurs at 160 million garments where MPB = MSC at $15, eliminating 80 million units of overproduction. A $6 corrective tax aligns private and social marginal cost.",
         "check": "If MSB lies above MPB, is the unregulated market quantity too high or too low?",
         "graph": true,
         "calculation": true,
@@ -11363,7 +11363,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "NEGATIVE PRODUCTION EXTERNALITY"
+        "workedLabel": "NEGATIVE PRODUCTION EXTERNALITY",
+        "graphAssetPath": "question-assets/market-failures/EXTERNALITY-B-01.webp"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "An externality is a cost or benefit imposed on someone outside a transaction. Negative externalities make private decision makers ignore part of social cost; positive externalities make them ignore part of social benefit. Efficiency uses all marginal social costs and benefits.",
@@ -11422,7 +11423,7 @@
           "Common resources tend toward overuse; property rights, access rules, or practical exclusion can change incentives."
         ],
         "watch": "Do not classify a good by who supplies it. Government provision does not automatically make a good nonexcludable or nonrival.",
-        "worked": "At four displays, Group A values the next display at $30,000 and Group B at $20,000. Because both groups consume the same public-good quantity, MSB is the vertical sum: $50,000. If MC is $50,000, four displays are efficient. Summing quantities horizontally would be the wrong procedure.",
+        "worked": "At four community fireworks displays, North's marginal benefit is $30,000 and South's is $20,000. Because both communities consume the same shared quantity, MSB is the vertical sum: $50,000. MC is also $50,000, so four displays are efficient. Summing quantities horizontally would be incorrect.",
         "check": "Which combination describes a common resource: excludable/nonrival or nonexcludable/rival?",
         "graph": true,
         "calculation": true,
@@ -11430,7 +11431,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "VERTICAL SUMMATION"
+        "workedLabel": "VERTICAL SUMMATION",
+        "graphAssetPath": "question-assets/market-failures/PUBLIC-04.webp"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Excludability asks whether nonpayers can be kept out; rivalry asks whether one person's use reduces another's. Public goods are nonexcludable and nonrival, common resources are nonexcludable and rival, club goods are excludable and nonrival, and private goods are excludable and rival.",
@@ -11558,7 +11560,7 @@
           "Competitive wage and employment occur where market labor demand intersects market labor supply."
         ],
         "watch": "Do not confuse MPL with VMP. MPL is extra physical output; VMP converts that output into dollars by multiplying by the output price.",
-        "worked": "A worker adds 6 units of output per hour and each unit sells for $5, so VMP = $5 x 6 = $30 per hour. At a $24 wage, hiring the worker adds $6 to profit. The firm continues hiring until the next worker's VMP falls to the wage.",
+        "worked": "Warehouse labor demand and labor supply intersect at an hourly wage of $20 and 40 hundreds of workers. Because the horizontal axis is measured in hundreds, equilibrium employment is 4,000 workers. Below $20, firms demand more labor than workers supply; above $20, labor supplied exceeds labor demanded.",
         "check": "If the output price rises while worker productivity is unchanged, what happens to labor demand?",
         "graph": true,
         "calculation": true,
@@ -11566,7 +11568,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "VMP HIRING RULE"
+        "workedLabel": "COMPETITIVE LABOR-MARKET EQUILIBRIUM",
+        "graphAssetPath": "question-assets/factor-markets/LABOR-01.webp"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Labor demand is derived from the value workers add to output. Marginal product of labor is the extra output from one more worker. For a price-taking seller, VMP = output price x MPL. A profit-maximizing firm hires labor up to the point where VMP equals the wage.",
@@ -11626,7 +11629,7 @@
           "At an interior optimum, marginal utility per dollar is equal across goods."
         ],
         "watch": "Spending the whole budget is not enough to prove optimality. The chosen bundle must also provide the highest attainable preference ranking.",
-        "worked": "Income is $40, X costs $4, and Y costs $8. The intercepts are 10 units of X and 5 of Y, and the slope is -Px/Py = -1/2. A bundle with 6 X and 2 Y costs exactly $40. Among affordable bundles, choose the one on the highest attainable indifference curve.",
+        "worked": "The budget line reaches 20 units of X or 40 units of Y, so its slope is -2. Bundle A contains 10 units of X and 20 of Y. At A, the budget line is tangent to IC2, the highest attainable indifference curve. IC3 is preferred but lies outside the feasible set, while IC1 is attainable but provides a lower ranking.",
         "check": "If only the price of Y falls, does the budget line shift in parallel or pivot?",
         "graph": true,
         "calculation": true,
@@ -11634,7 +11637,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "BUDGET LINE AND OPTIMUM"
+        "workedLabel": "BEST AFFORDABLE BUNDLE",
+        "graphAssetPath": "question-assets/consumer-choice/CHOICE-07.webp"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "A budget constraint shows every bundle a consumer can afford at given income and prices. Its intercepts are income divided by each good's price, and its slope is the negative relative price. Preferences rank feasible bundles; the optimum is the highest attainable indifference curve, usually where MRS equals the price ratio.",
@@ -11694,7 +11698,7 @@
           "Poverty thresholds and redistribution policies address related but distinct questions from inequality measurement."
         ],
         "watch": "Do not use a Lorenz curve to infer a country's income level. Two countries can have the same distribution shape and very different average incomes.",
-        "worked": "The curve shows that the bottom 40 percent receives 15 percent of total income. After a policy, the curve moves closer to equality and the Gini falls from 0.38 to 0.25. Both changes indicate less inequality, but they do not by themselves reveal whether total income rose or fell.",
+        "worked": "Before transfers, the bottom 40 percent receives 15 percent of income. After transfers, its share rises to 22 percent and the Lorenz curve moves closer to equality. The displayed Gini falls from 0.380 to 0.252. These changes indicate less relative inequality, but do not show whether total or average income rose.",
         "check": "Which society is more unequal: the one with Gini 0.28 or Gini 0.46?",
         "graph": true,
         "calculation": true,
@@ -11702,7 +11706,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "READING A LORENZ CURVE"
+        "workedLabel": "READING A LORENZ CURVE",
+        "graphAssetPath": "question-assets/income-inequality-poverty-and-redistribution/LORENZ-03.webp"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "A Lorenz curve plots the cumulative share of income received by cumulative shares of the population, ordered from lowest to highest income. The 45-degree line represents complete equality. A curve farther below that line indicates greater inequality, not necessarily lower average income.",

@@ -2,12 +2,13 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
+from PIL import Image
 from reportlab.lib.colors import Color, HexColor, white
 from reportlab.lib.pagesizes import letter
+from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase.pdfdoc import PDFString
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
@@ -19,12 +20,7 @@ TEAL = HexColor("#00A7A7")
 DEEP_TEAL = HexColor("#008F95")
 PALE = HexColor("#EAF7F7")
 INK = HexColor("#182231")
-MUTED = HexColor("#5C6878")
 LIGHT = HexColor("#D8E2EC")
-RED = HexColor("#D94040")
-ORANGE = HexColor("#F28C28")
-GREEN = HexColor("#2D9B5F")
-BLUE = HexColor("#2878B5")
 
 
 REVIEWS: list[dict[str, Any]] = [
@@ -42,11 +38,11 @@ REVIEWS: list[dict[str, Any]] = [
         ],
         "watch": "Do not label every harmful outcome an externality. A spillover must affect a third party and be missing from the market price.",
         "workedLabel": "NEGATIVE PRODUCTION EXTERNALITY",
-        "worked": "A factory's market supply is MPC. Pollution adds $20 per unit, so MSC lies $20 above MPC. The market chooses Qm where MPB = MPC. The efficient quantity is the lower Q* where MPB = MSC. A $20 corrective tax aligns the firm's private marginal cost with social marginal cost.",
+        "worked": "Fast-fashion production creates a $6 external cost per garment, so MSC lies $6 above MPC. The market produces 240 million garments where MPB = MPC at $12. Efficiency occurs at 160 million garments where MPB = MSC at $15, eliminating 80 million units of overproduction. A $6 corrective tax aligns private and social marginal cost.",
         "check": "If MSB lies above MPB, is the unregulated market quantity too high or too low?",
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "graph": "externalities",
+        "graphAsset": "question-assets/market-failures/EXTERNALITY-B-01.webp",
         "tested": ["negative and positive externalities", "production and consumption spillovers", "private versus social values", "corrective policy"],
         "questionsInspected": 177,
     },
@@ -64,11 +60,11 @@ REVIEWS: list[dict[str, Any]] = [
         ],
         "watch": "Do not classify a good by who supplies it. Government provision does not automatically make a good nonexcludable or nonrival.",
         "workedLabel": "VERTICAL SUMMATION",
-        "worked": "At four displays, Group A values the next display at $30,000 and Group B at $20,000. Because both groups consume the same public-good quantity, MSB is the vertical sum: $50,000. If MC is $50,000, four displays are efficient. Summing quantities horizontally would be the wrong procedure.",
+        "worked": "At four community fireworks displays, North's marginal benefit is $30,000 and South's is $20,000. Because both communities consume the same shared quantity, MSB is the vertical sum: $50,000. MC is also $50,000, so four displays are efficient. Summing quantities horizontally would be incorrect.",
         "check": "Which combination describes a common resource: excludable/nonrival or nonexcludable/rival?",
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "graph": "public_goods",
+        "graphAsset": "question-assets/market-failures/PUBLIC-04.webp",
         "tested": ["goods classification", "free riding", "vertical summation", "tragedy of the commons", "property rights"],
         "questionsInspected": 176,
     },
@@ -107,12 +103,12 @@ REVIEWS: list[dict[str, Any]] = [
             "Competitive wage and employment occur where market labor demand intersects market labor supply.",
         ],
         "watch": "Do not confuse MPL with VMP. MPL is extra physical output; VMP converts that output into dollars by multiplying by the output price.",
-        "workedLabel": "VMP HIRING RULE",
-        "worked": "A worker adds 6 units of output per hour and each unit sells for $5, so VMP = $5 x 6 = $30 per hour. At a $24 wage, hiring the worker adds $6 to profit. The firm continues hiring until the next worker's VMP falls to the wage.",
+        "workedLabel": "COMPETITIVE LABOR-MARKET EQUILIBRIUM",
+        "worked": "Warehouse labor demand and labor supply intersect at an hourly wage of $20 and 40 hundreds of workers. Because the horizontal axis is measured in hundreds, equilibrium employment is 4,000 workers. Below $20, firms demand more labor than workers supply; above $20, labor supplied exceeds labor demanded.",
         "check": "If the output price rises while worker productivity is unchanged, what happens to labor demand?",
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "graph": "labor",
+        "graphAsset": "question-assets/factor-markets/LABOR-01.webp",
         "tested": ["derived demand", "MPL", "VMP", "hiring rule", "labor demand and supply shifts"],
         "questionsInspected": 240,
     },
@@ -129,12 +125,12 @@ REVIEWS: list[dict[str, Any]] = [
             "At an interior optimum, marginal utility per dollar is equal across goods.",
         ],
         "watch": "Spending the whole budget is not enough to prove optimality. The chosen bundle must also provide the highest attainable preference ranking.",
-        "workedLabel": "BUDGET LINE AND OPTIMUM",
-        "worked": "Income is $40, X costs $4, and Y costs $8. The intercepts are 10 units of X and 5 of Y, and the slope is -Px/Py = -1/2. A bundle with 6 X and 2 Y costs exactly $40. Among affordable bundles, choose the one on the highest attainable indifference curve.",
+        "workedLabel": "BEST AFFORDABLE BUNDLE",
+        "worked": "The budget line reaches 20 units of X or 40 units of Y, so its slope is -2. Bundle A contains 10 units of X and 20 of Y. At A, the budget line is tangent to IC2, the highest attainable indifference curve. IC3 is preferred but lies outside the feasible set, while IC1 is attainable but provides a lower ranking.",
         "check": "If only the price of Y falls, does the budget line shift in parallel or pivot?",
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "graph": "consumer",
+        "graphAsset": "question-assets/consumer-choice/CHOICE-07.webp",
         "tested": ["budget constraint", "relative price", "feasible set", "indifference curves", "consumer optimum"],
         "questionsInspected": 160,
     },
@@ -152,11 +148,11 @@ REVIEWS: list[dict[str, Any]] = [
         ],
         "watch": "Do not use a Lorenz curve to infer a country's income level. Two countries can have the same distribution shape and very different average incomes.",
         "workedLabel": "READING A LORENZ CURVE",
-        "worked": "The curve shows that the bottom 40 percent receives 15 percent of total income. After a policy, the curve moves closer to equality and the Gini falls from 0.38 to 0.25. Both changes indicate less inequality, but they do not by themselves reveal whether total income rose or fell.",
+        "worked": "Before transfers, the bottom 40 percent receives 15 percent of income. After transfers, its share rises to 22 percent and the Lorenz curve moves closer to equality. The displayed Gini falls from 0.380 to 0.252. These changes indicate less relative inequality, but do not show whether total or average income rose.",
         "check": "Which society is more unequal: the one with Gini 0.28 or Gini 0.46?",
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "graph": "lorenz",
+        "graphAsset": "question-assets/income-inequality-poverty-and-redistribution/LORENZ-03.webp",
         "tested": ["Lorenz curve", "line of equality", "inequality comparisons", "Gini coefficient", "income level versus distribution"],
         "questionsInspected": 160,
     },
@@ -247,86 +243,31 @@ def draw_icon(c: canvas.Canvas, x: float, y: float, symbol: str, fill: Color = T
     c.drawCentredString(x, y - 5, symbol)
 
 
-def chart_axes(c: canvas.Canvas, x: float, y: float, w: float, h: float, xlabel: str, ylabel: str) -> tuple[float, float, float, float]:
-    left, bottom, right, top = x + 32, y + 24, x + w - 8, y + h - 10
-    c.setStrokeColor(INK)
-    c.setLineWidth(0.8)
-    c.line(left, bottom, right, bottom)
-    c.line(left, bottom, left, top)
-    c.setFont("Helvetica", 6.5)
-    c.setFillColor(INK)
-    c.drawCentredString((left + right) / 2, y + 8, xlabel)
-    c.saveState()
-    c.translate(x + 8, (bottom + top) / 2)
-    c.rotate(90)
-    c.drawCentredString(0, 0, ylabel)
-    c.restoreState()
-    return left, bottom, right, top
+def draw_graph_asset(c: canvas.Canvas, asset_path: Path, x: float, y: float, w: float, h: float) -> None:
+    if not asset_path.is_file():
+        raise FileNotFoundError(f"Concept Review graph asset is missing: {asset_path}")
+    with Image.open(asset_path) as source:
+        image = source.convert("RGB")
+        luminance = image.convert("L")
+        nonwhite = luminance.point(lambda value: 255 if value < 248 else 0)
+        bounds = nonwhite.getbbox()
+        if bounds:
+            padding = max(8, round(min(image.size) * 0.012))
+            left = max(0, bounds[0] - padding)
+            top = max(0, bounds[1] - padding)
+            right = min(image.width, bounds[2] + padding)
+            bottom = min(image.height, bounds[3] + padding)
+            image = image.crop((left, top, right, bottom))
+        image.load()
+    scale = min(w / image.width, h / image.height)
+    draw_w = image.width * scale
+    draw_h = image.height * scale
+    draw_x = x + (w - draw_w) / 2
+    draw_y = y + (h - draw_h) / 2
+    c.drawImage(ImageReader(image), draw_x, draw_y, draw_w, draw_h, preserveAspectRatio=True, mask="auto")
 
 
-def draw_externalities(c: canvas.Canvas, x: float, y: float, w: float, h: float) -> None:
-    l, b, r, t = chart_axes(c, x, y, w, h, "Quantity", "Marginal value / cost")
-    q_m, q_e = l + .72 * (r-l), l + .50 * (r-l)
-    c.setLineWidth(1.6)
-    c.setStrokeColor(BLUE); c.line(l, t-8, r, b+8); c.setFillColor(BLUE); c.drawString(r-30, b+10, "MPB")
-    c.setStrokeColor(ORANGE); c.line(l, b+20, r, t-25); c.setFillColor(ORANGE); c.drawString(r-30, t-23, "MPC")
-    c.setStrokeColor(RED); c.line(l, b+42, r, t-3); c.setFillColor(RED); c.drawString(r-30, t-5, "MSC")
-    c.setDash(2,2); c.setStrokeColor(MUTED); c.line(q_e,b,q_e,b+70); c.line(q_m,b,q_m,b+48); c.setDash()
-    c.setFont("Helvetica-Bold",7); c.setFillColor(INK); c.drawCentredString(q_e,b-10,"Q*"); c.drawCentredString(q_m,b-10,"Qm")
-    c.setFillColor(RED); c.setFont("Helvetica",6.5); c.drawString(l+4,t-18,"external cost wedge")
-
-
-def draw_public_goods(c: canvas.Canvas, x: float, y: float, w: float, h: float) -> None:
-    l, b, r, t = chart_axes(c, x, y, w, h, "Shared quantity", "Marginal benefit / cost")
-    c.setLineWidth(1.2)
-    c.setStrokeColor(HexColor("#8E5DB7")); c.line(l,t-22,r,b+10); c.setFillColor(HexColor("#8E5DB7")); c.drawString(r-26,b+12,"MB A")
-    c.setStrokeColor(GREEN); c.line(l,t-42,r,b+6); c.setFillColor(GREEN); c.drawString(r-26,b+4,"MB B")
-    c.setLineWidth(1.8); c.setStrokeColor(BLUE); c.line(l,t-2,r,b+30); c.setFillColor(BLUE); c.drawString(r-28,b+32,"MSB")
-    mc_y=b+60; c.setStrokeColor(ORANGE); c.line(l,mc_y,r,mc_y); c.setFillColor(ORANGE); c.drawString(r-20,mc_y+3,"MC")
-    q=l+.58*(r-l); c.setDash(2,2); c.setStrokeColor(MUTED); c.line(q,b,q,mc_y); c.setDash(); c.setFillColor(INK); c.setFont("Helvetica-Bold",7); c.drawCentredString(q,b-10,"Q*")
-    c.setFont("Helvetica",6.5); c.drawString(l+2,t-12,"MSB = vertical sum of individual MB")
-
-
-def draw_labor(c: canvas.Canvas, x: float, y: float, w: float, h: float) -> None:
-    l, b, r, t = chart_axes(c, x, y, w, h, "Labor", "Wage / VMP")
-    c.setLineWidth(1.7); c.setStrokeColor(BLUE); c.line(l,t-5,r,b+10); c.setFillColor(BLUE); c.drawString(r-44,b+12,"D_L = VMP")
-    c.setStrokeColor(GREEN); c.line(l,b+8,r,t-12); c.setFillColor(GREEN); c.drawString(r-18,t-12,"S_L")
-    q=l+.5*(r-l); wy=b+.48*(t-b); c.setFillColor(NAVY); c.circle(q,wy,2.5,stroke=0,fill=1)
-    c.setDash(2,2); c.setStrokeColor(MUTED); c.line(l,wy,q,wy); c.line(q,b,q,wy); c.setDash(); c.setFont("Helvetica-Bold",7); c.setFillColor(INK); c.drawString(l-14,wy-2,"W*"); c.drawCentredString(q,b-10,"L*")
-
-
-def draw_consumer(c: canvas.Canvas, x: float, y: float, w: float, h: float) -> None:
-    l, b, r, t = chart_axes(c, x, y, w, h, "Good X", "Good Y")
-    c.setStrokeColor(NAVY); c.setLineWidth(1.7); c.line(l,t-7,r-5,b); c.setFillColor(NAVY); c.setFont("Helvetica",7); c.drawString(r-55,b+7,"Budget line")
-    for off, col in [(0,HexColor("#B9D8D8")),(15,TEAL),(30,HexColor("#7CC8C8"))]:
-        pts=[]
-        for i in range(31):
-            xx=l+30+i*4.6; yy=b+18+off+55/(1+math.exp((i-15)/5))
-            pts.append((xx,yy))
-        c.setStrokeColor(col); c.setLineWidth(1.1 if off!=15 else 1.8)
-        for p1,p2 in zip(pts,pts[1:]): c.line(*p1,*p2)
-    ox=l+.52*(r-l); oy=b+.48*(t-b); c.setFillColor(RED); c.circle(ox,oy,2.8,stroke=0,fill=1); c.setFont("Helvetica-Bold",7); c.drawString(ox+5,oy+2,"optimum")
-
-
-def draw_lorenz(c: canvas.Canvas, x: float, y: float, w: float, h: float) -> None:
-    l, b, r, t = chart_axes(c, x, y, w, h, "Cumulative population (%)", "Cumulative income (%)")
-    c.setStrokeColor(MUTED); c.setDash(3,2); c.line(l,b,r,t); c.setDash(); c.setFillColor(MUTED); c.setFont("Helvetica",6.5); c.drawString(l+68,t-10,"line of equality")
-    pts=[(0,0),(.2,.05),(.4,.15),(.6,.30),(.8,.55),(1,1)]
-    c.setStrokeColor(TEAL); c.setLineWidth(1.8)
-    for (a,aa),(d,dd) in zip(pts,pts[1:]): c.line(l+a*(r-l),b+aa*(t-b),l+d*(r-l),b+dd*(t-b))
-    qx=l+.4*(r-l); qy=b+.15*(t-b); c.setFillColor(RED); c.circle(qx,qy,2.5,stroke=0,fill=1); c.setFont("Helvetica-Bold",6.5); c.drawString(qx+4,qy-1,"(40, 15)")
-
-
-CHARTS: dict[str, Callable[[canvas.Canvas, float, float, float, float], None]] = {
-    "externalities": draw_externalities,
-    "public_goods": draw_public_goods,
-    "labor": draw_labor,
-    "consumer": draw_consumer,
-    "lorenz": draw_lorenz,
-}
-
-
-def draw_review(review: dict[str, Any], output: Path, logo_path: Path) -> None:
+def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_root: Path) -> None:
     c = canvas.Canvas(str(output), pagesize=letter, pageCompression=1, invariant=1)
     c.setTitle(f"{review['code']} - {review['title']}")
     c.setAuthor("Mastery Quests")
@@ -380,10 +321,10 @@ def draw_review(review: dict[str, Any], output: Path, logo_path: Path) -> None:
     while stringWidth(label, "Helvetica-Bold", label_size) > 474 and label_size > 9.5:
         label_size -= .4
     c.setFillColor(NAVY); c.setFont("Helvetica-Bold",label_size); c.drawString(91,373,label)
-    chart = review.get("graph")
-    if chart:
-        CHARTS[chart](c, 91, 214, 238, 142)
-        draw_wrapped(c, review["worked"], 340, 337, 224, size=8.4, leading=10.0, max_lines=13)
+    graph_asset = review.get("graphAsset")
+    if graph_asset:
+        draw_graph_asset(c, asset_root / graph_asset, 91, 206, 255, 154)
+        draw_wrapped(c, review["worked"], 358, 337, 206, size=8.2, leading=9.8, max_lines=14)
     else:
         rounded_box(c, 96, 218, 142, 126, PALE, TEAL, 7)
         c.setFillColor(DEEP_TEAL); c.setFont("Helvetica-Bold",10); c.drawCentredString(167,326,"DIAGNOSE")
@@ -405,7 +346,8 @@ def draw_review(review: dict[str, Any], output: Path, logo_path: Path) -> None:
 
 
 def source_record(review: dict[str, Any]) -> dict[str, Any]:
-    has_graph = bool(review.get("graph"))
+    graph_asset = review.get("graphAsset")
+    has_graph = bool(graph_asset)
     return {
         "code": review["code"],
         "canonicalConceptIds": review["canonicalConceptIds"],
@@ -427,6 +369,7 @@ def source_record(review: dict[str, Any]) -> dict[str, Any]:
             "exampleQuestionId": None,
             "checkQuestionId": None,
             "workedLabel": review["workedLabel"],
+            **({"graphAssetPath": graph_asset} if graph_asset else {}),
         },
         "instructionalEvidence": {
             "canonicalDefinition": review["core"],
@@ -493,17 +436,27 @@ def update_sources(review_root: Path) -> None:
         "renderAndVisualQaRequired": True,
         "manualVisualChecksPassed": True,
     }
+    validation["graphRepairValidation"] = {
+        "reviewCodes": [item["code"] for item in REVIEWS if item.get("graphAsset")],
+        "productionAssets": {
+            item["code"]: item["graphAsset"] for item in REVIEWS if item.get("graphAsset")
+        },
+        "productionAssetsInspected": True,
+        "manualVisualChecksPassed": True,
+        "graphFreeReviewCodes": [item["code"] for item in REVIEWS if not item.get("graphAsset")],
+    }
     write_json(validation_path, validation)
 
     full_path = review_root / "full-library-production" / "concept_review_source.json"
     full = json.loads(full_path.read_text(encoding="utf-8"))
-    full_by_code = {item["code"]: item for item in full.get("reviews", [])}
-    for record in updated:
-        if record["code"] not in full_by_code:
-            full["reviews"].append(record)
-            full_by_code[record["code"]] = record
-        elif record["code"] == "MICRO-03":
-            full_by_code[record["code"]]["canonicalConceptIds"] = []
+    updated_by_code = {item["code"]: item for item in updated}
+    owned_codes = {item["code"] for item in REVIEWS} | {"MICRO-03"}
+    full_codes = {item["code"] for item in full.get("reviews", [])}
+    full["reviews"] = [
+        updated_by_code.get(item["code"], item) if item["code"] in owned_codes else item
+        for item in full.get("reviews", [])
+    ]
+    full["reviews"].extend(item for item in updated if item["code"] not in full_codes)
     full["generatedAt"] = GENERATED_AT
     write_json(full_path, full)
 
@@ -511,17 +464,24 @@ def update_sources(review_root: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate the dedicated Principles Micro Concept Reviews.")
     parser.add_argument("--composer-root", type=Path, required=True)
+    parser.add_argument("--review-codes", nargs="*", default=None)
     args = parser.parse_args()
     root = args.composer_root.resolve()
     review_root = root / "data" / "concept-reviews"
     logo = root.parent.parent / "assets" / "images" / "mastery-quests-logo-standalone.png"
+    asset_root = root / "data"
+    requested_codes = set(args.review_codes or [item["code"] for item in REVIEWS])
+    unknown_codes = sorted(requested_codes - {item["code"] for item in REVIEWS})
+    if unknown_codes:
+        raise ValueError(f"Unknown dedicated Micro Concept Review codes: {', '.join(unknown_codes)}")
+    selected_reviews = [item for item in REVIEWS if item["code"] in requested_codes]
     update_sources(review_root)
-    for review in REVIEWS:
-        draw_review(review, review_root / f"{review['code']}.pdf", logo)
+    for review in selected_reviews:
+        draw_review(review, review_root / f"{review['code']}.pdf", logo, asset_root)
     print(json.dumps({
         "generatedAt": GENERATED_AT,
-        "reviewCodes": [item["code"] for item in REVIEWS],
-        "outputCount": len(REVIEWS),
+        "reviewCodes": [item["code"] for item in selected_reviews],
+        "outputCount": len(selected_reviews),
         "sourceReviewCount": len(json.loads((review_root / 'concept_review_source.json').read_text(encoding='utf-8'))['reviews']),
     }, indent=2))
 

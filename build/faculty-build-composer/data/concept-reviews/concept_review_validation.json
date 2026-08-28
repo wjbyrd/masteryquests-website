@@ -29,5 +29,27 @@
     ],
     "renderAndVisualQaRequired": true,
     "manualVisualChecksPassed": true
+  },
+  "graphRepairValidation": {
+    "reviewCodes": [
+      "MICRO-54",
+      "MICRO-55",
+      "MICRO-57",
+      "MICRO-58",
+      "MICRO-59"
+    ],
+    "productionAssets": {
+      "MICRO-54": "question-assets/market-failures/EXTERNALITY-B-01.webp",
+      "MICRO-55": "question-assets/market-failures/PUBLIC-04.webp",
+      "MICRO-57": "question-assets/factor-markets/LABOR-01.webp",
+      "MICRO-58": "question-assets/consumer-choice/CHOICE-07.webp",
+      "MICRO-59": "question-assets/income-inequality-poverty-and-redistribution/LORENZ-03.webp"
+    },
+    "productionAssetsInspected": true,
+    "manualVisualChecksPassed": true,
+    "graphFreeReviewCodes": [
+      "MICRO-56",
+      "MICRO-60"
+    ]
   }
 }
