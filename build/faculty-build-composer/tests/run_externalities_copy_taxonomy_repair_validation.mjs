@@ -116,8 +116,8 @@ async function run() {
 
   pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
-  pass(library.canonicalQuestionCount === 9271 && manifest.canonicalQuestionCount === 9271, "Canonical question count changed");
-  pass(library.conceptCount === 133 && library.registry.concepts.length === 133, "Concept count mismatch");
+  pass(library.canonicalQuestionCount === 9379 && manifest.canonicalQuestionCount === 9379, "Canonical question count changed");
+  pass(library.conceptCount === 134 && library.registry.concepts.length === 134, "Concept count mismatch");
   pass(ordinaryQuestions.length === 160 && phasePublished.length === 160, "The 160-question pool is not intact");
   pass(ordinaryQuestions.filter(question => question.graphRequired).length === 104, "Graph-question count changed");
   pass(ordinaryQuestions[0].id === ID_FIRST && ordinaryQuestions.at(-1).id === ID_LAST, "ID range changed");

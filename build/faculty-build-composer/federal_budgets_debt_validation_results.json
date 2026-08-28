@@ -1,0 +1,365 @@
+{
+  "status": "PASS",
+  "checks": 2186,
+  "errors": [],
+  "summary": {
+    "conceptId": "federal-budgets-and-debt",
+    "newQuestions": 108,
+    "idRange": "43060-43167",
+    "objectives": {
+      "FB1": 15,
+      "FB2": 17,
+      "FB3": 11,
+      "FB4": 11,
+      "FB5": 11,
+      "FB6": 15,
+      "FB7": 10,
+      "FB8": 11,
+      "FB9": 7
+    },
+    "difficulty": {
+      "easy": 32,
+      "medium": 32,
+      "hard": 22,
+      "elite": 10,
+      "legendary": 12
+    },
+    "pools": {
+      "easy": 20,
+      "medium": 20,
+      "hard": 18,
+      "elite": 10,
+      "legendary": 8,
+      "easyBoss": 4,
+      "mediumBoss": 4,
+      "repairQuestions": 8,
+      "bridgeQuestions": 8,
+      "finalBoss": 4,
+      "legendaryBoss": 4
+    },
+    "types": {
+      "definition": 14,
+      "interpretation": 17,
+      "calculation": 16,
+      "integration": 43,
+      "application": 9,
+      "bridge": 8,
+      "comparison": 1
+    },
+    "realDataQuestions": 15,
+    "graphQuestions": 0,
+    "answerPositions": [
+      27,
+      27,
+      27,
+      27
+    ],
+    "nearDuplicates": [],
+    "repeatedFiveWordOpeningMaximum": 6,
+    "protectedRecords": 38,
+    "modeResults": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 18
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 4
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 4
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 4
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 8
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 8
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 8
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 8
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 8
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 8
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 20
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 20
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 18
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 8
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 8
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 8
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 4
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 20
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 18
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 4
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 4
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 4
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 8
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 8
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 0
+          }
+        ],
+        "deficiencies": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 0
+          }
+        ],
+        "issues": [],
+        "ok": false
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 76
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 76
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ],
+    "inlineScripts": 1,
+    "artifacts": [
+      "build\\faculty-build-composer\\tests\\federal-budgets-debt-production-sample.html",
+      "build\\faculty-build-composer\\tests\\federal-budgets-debt-faculty-sample.html"
+    ],
+    "publishedTotals": {
+      "questions": 9379,
+      "concepts": 134,
+      "assets": 486
+    },
+    "librarySha256": "e47d94f4b2e11e010a8ce02c18f606ed0589d493e7cbf0170a3bdd9eeb10d742"
+  }
+}

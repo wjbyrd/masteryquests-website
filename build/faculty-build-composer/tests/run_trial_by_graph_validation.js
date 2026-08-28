@@ -47,7 +47,7 @@ function runtimeDeckCheck(composition,target){
   const issues=[];
   assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[7]!=='trialGraph' || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
-  if(library.canonicalQuestionCount!==9271) issues.push(`canonical count ${library.canonicalQuestionCount}`);
+  if(library.canonicalQuestionCount!==9379) issues.push(`canonical count ${library.canonicalQuestionCount}`);
 
   const auditIds=new Set();
   for(const fn of ['MICRO_GRAPH_QUESTIONS_AUDIT_CORRECTED.json','TODAYS_GRAPH_QUESTIONS_AUDIT_CORRECTED_V2.json']){

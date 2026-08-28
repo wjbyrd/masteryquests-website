@@ -105,8 +105,8 @@ check(productionQuestions.length === 240, "author count", String(productionQuest
 check(ID_FIRST === 42320 && ID_LAST === 42559, "ID range", `${ID_FIRST}-${ID_LAST}`);
 check(productionQuestions.every((question, index) => question.id === ID_FIRST + index), "contiguous unique IDs");
 check(new Set(productionQuestions.map(question => question.id)).size === 240, "unique author IDs");
-check(current.canonicalQuestionCount === 9271, "canonical question total", `${current.canonicalQuestionCount}`);
-check(current.conceptCount === 133, "concept total", `${current.conceptCount}`);
+check(current.canonicalQuestionCount === 9379, "canonical question total", `${current.canonicalQuestionCount}`);
+check(current.conceptCount === 134, "concept total", `${current.conceptCount}`);
 check(Boolean(factorModule), "factor-markets module registered");
 check(factorEntries.length === 240, "published factor-market count", String(factorEntries.length));
 check(current.registry.concepts.filter(record => record.canonicalConceptId === CONCEPT_ID).length === 1, "single registry concept registration");
@@ -200,8 +200,8 @@ check(!protectedDiff, "protected production sources unchanged", protectedDiff);
 const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 const reviewManifest = JSON.parse(fs.readFileSync(reviewManifestPath, "utf8"));
-check(registry.canonicalQuestionCount === 9271 && manifest.canonicalQuestionCount === 9271, "registry/manifest question totals");
-check(manifest.assetCount === 486 && manifest.conceptCount === 133, "manifest totals");
+check(registry.canonicalQuestionCount === 9379 && manifest.canonicalQuestionCount === 9379, "registry/manifest question totals");
+check(manifest.assetCount === 486 && manifest.conceptCount === 134, "manifest totals");
 const reviewMapping = reviewManifest.concepts.find(item => item.canonicalConceptId === CONCEPT_ID);
 check(reviewMapping?.diagnosable === true && reviewMapping?.disposition === "NO_SHEET_INTEGRATION_META", "concept-review/report integration");
 

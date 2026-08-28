@@ -110,8 +110,8 @@ async function run() {
   pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
   pass(library.composerVersion === "4.5s.3k", `Library version ${library.composerVersion}`);
-  pass(library.conceptCount === 133, `Concept count ${library.conceptCount}`);
-  pass(library.canonicalQuestionCount === 9271 && manifest.canonicalQuestionCount === 9271, "Canonical count mismatch");
+  pass(library.conceptCount === 134, `Concept count ${library.conceptCount}`);
+  pass(library.canonicalQuestionCount === 9379 && manifest.canonicalQuestionCount === 9379, "Canonical count mismatch");
   pass(library.assetInventory.length === 486 && manifest.assetCount === 486, "Registered asset count mismatch");
   pass(ordinaryQuestions.length === 160 && published.length === 160, `Question total ${ordinaryQuestions.length}/${published.length}`);
   pass(authoredGraph.length === 104 && authoredNonGraph.length === 56, "Graph/non-graph total mismatch");

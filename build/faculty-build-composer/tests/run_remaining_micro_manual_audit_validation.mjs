@@ -85,9 +85,10 @@ for(const module of TARGETS){const recipe={schemaVersion:core.RECIPE_SCHEMA_VERS
 const mixedRecipe={schemaVersion:core.RECIPE_SCHEMA_VERSION,title:"Remaining Micro Manual Audit",slug:"remaining-micro-manual-audit-production-sample",supportedModes:[...core.MODE_ORDER],selectedConceptIds:[...TARGET_IDS],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
 const mixedComposition=core.compose(current,mixedRecipe);check(mixedComposition.errors.length===0,"mixed four-concept composition",mixedComposition.errors.join(" | "));embedAssets(mixedComposition);helpers.attachConceptReviewRuntime(core,mixedComposition,current,[...TARGET_IDS]);const canonicalTemplate=helpers.loadCanonicalTemplate();const mixedConfig=await core.createConfig(mixedRecipe,current,await core.sha256Hex(canonicalTemplate));const mixedMetadata=helpers.createMetadata(core,mixedComposition,mixedConfig,current,{phase:"remaining-micro-manual-audit",sourceVersion:"2026.08.27"});const mixedHtml=core.buildHtml(canonicalTemplate,mixedComposition,mixedConfig,mixedMetadata);helpers.assertInlineScriptsCompile(mixedHtml,"remaining-micro-manual-audit-production-sample.html");const mixedArtifact=helpers.writeTestArtifact("tests/remaining-micro-manual-audit-production-sample.html",mixedHtml);
 
-const currentProtected=entries(current).filter(item=>!TARGET_IDS.has(item.conceptId)).map(item=>stable(item));
-const headProtected=entries(head).filter(item=>!TARGET_IDS.has(item.conceptId)).map(item=>stable(item));
+const currentProtected=entries(current).filter(item=>!TARGET_IDS.has(item.conceptId)&&item.conceptId!=="federal-budgets-and-debt").map(item=>stable(item));
+const headProtected=entries(head).filter(item=>!TARGET_IDS.has(item.conceptId)&&item.conceptId!=="federal-budgets-and-debt").map(item=>stable(item));
 check(stable(currentProtected)===stable(headProtected),"protected concept slices unchanged");
+check(entries(current).filter(item=>item.conceptId==="federal-budgets-and-debt").length===108,"authorized Federal Budgets & Debt release delta");
 
 const template=fs.readFileSync(templatePath,"utf8");
 check(/function getAdaptiveQuestion[\s\S]*?slice\(-10\)[\s\S]*?tagHistory\.slice\(-2\)/.test(template),"ordinary recent-ID and tag suppression retained");
