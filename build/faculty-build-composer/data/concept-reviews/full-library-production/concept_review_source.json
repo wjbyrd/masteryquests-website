@@ -9113,48 +9113,592 @@
       "canonicalConceptIds": [
         "information-asymmetry-behavioral-and-political-economy"
       ],
-      "title": "Information, Behavior & Public Choice",
+      "title": "Adverse Selection",
       "discipline": "micro",
       "disciplineLabel": "MICROECONOMICS",
       "focusTerms": [
-        "adverse selection",
-        "moral hazard",
-        "signaling and screening",
-        "behavioral biases",
-        "public choice"
+        "hidden characteristics",
+        "before agreement",
+        "private risk",
+        "selection into the pool",
+        "market response"
       ],
       "content": {
-        "outcome": "Diagnose information problems, behavioral biases, and collective-choice limits.",
-        "core": "Standard market models can miss three distinct forces: unequal information between parties, predictable departures from fully rational choice, and political decision rules that aggregate competing preferences. Identify the mechanism before choosing a remedy or prediction.",
+        "outcome": "Identify hidden-information problems that arise before an agreement or transaction.",
+        "core": "Adverse selection arises when one side has private information about characteristics or risk before an agreement. Because prices or terms cannot fully reflect each type, higher-risk or higher-cost participants may be more likely to enter, changing the market pool.",
         "recognition": [
-          "Adverse selection occurs before agreement; moral hazard occurs after protection changes behavior.",
-          "Signaling is initiated by the informed side; screening is initiated by the uninformed side.",
-          "Behavioral economics studies systematic biases such as present bias, loss aversion, and framing.",
-          "Public choice applies incentives to voters and officials; majority preferences can cycle, and aggregation has limits."
+          "Look for hidden characteristics or risk known by one party before agreement.",
+          "The informed and uninformed sides value the transaction differently because information is unequal.",
+          "When one price covers many types, high-risk or high-cost types may participate disproportionately.",
+          "The pool can worsen, raising prices, reducing coverage, or eliminating beneficial trade."
         ],
-        "watch": "Do not treat every bad decision as asymmetric information. Ask who knows what, when hidden information or action matters, and whether the issue is instead a behavioral bias or a voting rule.",
-        "worked": "An insurer cannot observe a buyer's risk before enrollment: adverse selection. After coverage, the buyer takes fewer precautions: moral hazard. A default enrollment rule raises saving without changing prices: a behavioral nudge. A three-option vote cycles depending on the agenda: a collective-choice problem.",
-        "check": "A lender requires documentation from applicants. Is that signaling or screening?",
+        "watch": "Do not confuse adverse selection with moral hazard. Adverse selection is hidden information before agreement; moral hazard is hidden action or changed behavior after protection.",
+        "worked": "An insurer cannot perfectly observe applicants' health risk before enrollment, so it charges one premium based on average expected cost. Risk type already exists before coverage. Higher-risk applicants find the policy more attractive and enroll at a higher rate. The insured pool's expected cost rises, so the insurer may raise premiums or reduce coverage. Those responses can drive more low-risk buyers away, worsening selection.",
+        "check": "An applicant conceals a chronic condition before enrolling. Does the information problem occur before or after agreement?",
         "graph": false,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "IDENTIFY THE MECHANISM"
+        "workedLabel": "AN INSURANCE RISK POOL"
       },
       "instructionalEvidence": {
-        "canonicalDefinition": "Standard market models can miss three distinct forces: unequal information between parties, predictable departures from fully rational choice, and political decision rules that aggregate competing preferences. Identify the mechanism before choosing a remedy or prediction.",
+        "canonicalDefinition": "Adverse selection arises when one side has private information about characteristics or risk before an agreement. Because prices or terms cannot fully reflect each type, higher-risk or higher-cost participants may be more likely to enter, changing the market pool.",
         "selectedQuestionIds": [],
         "testedDistinctions": [
-          "adverse selection",
-          "moral hazard",
-          "signaling and screening",
-          "behavioral biases",
-          "public choice"
+          "hidden characteristics",
+          "before agreement",
+          "private risk",
+          "selection into the pool",
+          "market response"
         ],
         "observedMisconceptions": [
-          "Do not treat every bad decision as asymmetric information. Ask who knows what, when hidden information or action matters, and whether the issue is instead a behavioral bias or a voting rule."
+          "Do not confuse adverse selection with moral hazard. Adverse selection is hidden information before agreement; moral hazard is hidden action or changed behavior after protection."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-61",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Moral Hazard",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "after agreement",
+        "hidden action",
+        "protection",
+        "reduced precaution",
+        "changed incentives"
+      ],
+      "content": {
+        "outcome": "Identify how protection or a contract can change behavior after an agreement.",
+        "core": "Moral hazard occurs when protection from some consequences changes a person's actions after an agreement, while those actions are difficult for the other party to observe or control. The protection changes incentives rather than merely revealing a preexisting type.",
+        "recognition": [
+          "Coverage, a guarantee, or another agreement is already in place.",
+          "Behavior changes afterward because the person bears less of the consequence.",
+          "The relevant action or precaution is imperfectly observed or controlled.",
+          "Insurance, lending, employment, and guarantees can create this incentive."
+        ],
+        "watch": "Moral hazard is not simply bad behavior. Protection must change incentives after agreement. Hidden characteristics that exist before agreement instead point to adverse selection.",
+        "worked": "A driver obtains collision insurance with a very low deductible. Coverage comes first. Because the insurer now pays most damage costs, the driver bears less of the financial consequence and becomes less careful about where the car is parked. That reduced incentive for precaution can raise expected losses. The mechanism is moral hazard because behavior changes after protection, not because the driver's type was hidden beforehand.",
+        "check": "After receiving a loan guarantee, a borrower chooses a riskier project. Does that change illustrate moral hazard?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "PRECAUTION AFTER COVERAGE"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Moral hazard occurs when protection from some consequences changes a person's actions after an agreement, while those actions are difficult for the other party to observe or control. The protection changes incentives rather than merely revealing a preexisting type.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "after agreement",
+          "hidden action",
+          "protection",
+          "reduced precaution",
+          "changed incentives"
+        ],
+        "observedMisconceptions": [
+          "Moral hazard is not simply bad behavior. Protection must change incentives after agreement. Hidden characteristics that exist before agreement instead point to adverse selection."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-62",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Signaling & Screening",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "informed party",
+        "uninformed party",
+        "signal",
+        "screen",
+        "who initiates"
+      ],
+      "content": {
+        "outcome": "Distinguish who initiates an information-revealing action in an asymmetric-information market.",
+        "core": "Markets use actions and information-gathering mechanisms to reduce asymmetric information. Signaling begins with the informed party, who sends credible information. Screening begins with the uninformed party, who requests evidence or designs choices that help reveal type.",
+        "recognition": [
+          "Signals come from the informed side: credentials, warranties, certifications, or reputation investment.",
+          "Screens come from the uninformed side: tests, interviews, credit checks, or medical exams.",
+          "A menu of contracts can screen when choices reveal otherwise hidden information.",
+          "Ask who initiated the information-revealing action, not merely what information appeared."
+        ],
+        "watch": "Do not classify the mechanism from the evidence alone. The same fact can be disclosed voluntarily as a signal or requested by the uninformed side as a screen.",
+        "worked": "A job applicant knows more about personal skill than an employer. The applicant earns a certification to demonstrate ability: the informed applicant initiates the action, so it is signaling. The employer then requires every applicant to complete a skills test: the uninformed employer initiates the information request, so it is screening. Direction of action, not the labor-market setting, distinguishes the mechanisms.",
+        "check": "A lender requires borrowers to provide income documentation. Is the lender signaling or screening?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "ONE LABOR MARKET, TWO DIRECTIONS"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Markets use actions and information-gathering mechanisms to reduce asymmetric information. Signaling begins with the informed party, who sends credible information. Screening begins with the uninformed party, who requests evidence or designs choices that help reveal type.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "informed party",
+          "uninformed party",
+          "signal",
+          "screen",
+          "who initiates"
+        ],
+        "observedMisconceptions": [
+          "Do not classify the mechanism from the evidence alone. The same fact can be disclosed voluntarily as a signal or requested by the uninformed side as a screen."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-63",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Present Bias",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "immediate present",
+        "procrastination",
+        "preference reversal",
+        "undersaving",
+        "commitment device"
+      ],
+      "content": {
+        "outcome": "Recognize choices that place disproportionate weight on immediate costs or benefits.",
+        "core": "Present bias occurs when people give unusually strong weight to rewards or costs in the immediate present relative to future consequences. It can produce procrastination, undersaving, and repeated plans to act later that are abandoned when later becomes now.",
+        "recognition": [
+          "Look for a conflict between what a person plans for later and chooses now.",
+          "Immediate gratification or an immediate cost receives disproportionate weight.",
+          "Beneficial actions such as saving, studying, or preventive care are repeatedly postponed.",
+          "Commitment devices and well-designed defaults can help counter the bias."
+        ],
+        "watch": "Preferring an earlier reward is not automatically present bias. The defining clue is an extra, disproportionate weight on the immediate present, often visible in preference reversals.",
+        "worked": "A worker values retirement saving and repeatedly plans to increase contributions next month. Yet each payday, immediate consumption receives extra weight, so the worker spends the money and postpones saving again. The future goal is valued, but behavior reverses when the choice becomes immediate. Automatic enrollment or a binding contribution commitment can prevent the repeated delay.",
+        "check": "A student plans to begin studying tomorrow but makes the same choice to delay each evening. What clue indicates present bias?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "SAVING STARTS 'NEXT MONTH'"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Present bias occurs when people give unusually strong weight to rewards or costs in the immediate present relative to future consequences. It can produce procrastination, undersaving, and repeated plans to act later that are abandoned when later becomes now.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "immediate present",
+          "procrastination",
+          "preference reversal",
+          "undersaving",
+          "commitment device"
+        ],
+        "observedMisconceptions": [
+          "Preferring an earlier reward is not automatically present bias. The defining clue is an extra, disproportionate weight on the immediate present, often visible in preference reversals."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-64",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Loss Aversion",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "reference point",
+        "equal magnitude",
+        "gain",
+        "loss",
+        "asymmetric reaction"
+      ],
+      "content": {
+        "outcome": "Recognize when an equal-sized loss affects choice more strongly than a gain.",
+        "core": "Loss aversion means that people often experience a loss as more consequential than an equal-sized gain, measured relative to a reference point. This asymmetry can make giving something up feel more important than acquiring the same amount.",
+        "recognition": [
+          "Identify the reference point that separates a perceived gain from a perceived loss.",
+          "Compare reactions to changes of equal magnitude in opposite directions.",
+          "Reluctance to give up something already owned can reflect the same asymmetry.",
+          "The key evidence is stronger weight on the loss, not simply dislike of uncertainty."
+        ],
+        "watch": "Loss aversion is not identical to risk aversion. Risk aversion concerns uncertainty; loss aversion concerns asymmetric reactions to losses and equivalent gains around a reference point.",
+        "worked": "A student uses the expected account balance as a reference point. An unexpected $50 refund produces mild pleasure, while an unexpected $50 fee produces much greater distress. The dollar changes are equal in magnitude, but the $50 loss receives greater psychological weight than the $50 gain. That asymmetry around the reference point is evidence of loss aversion.",
+        "check": "Someone is much more upset by losing $20 than pleased by gaining $20. Which comparison supports loss aversion?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "EQUAL DOLLARS, UNEQUAL WEIGHT"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Loss aversion means that people often experience a loss as more consequential than an equal-sized gain, measured relative to a reference point. This asymmetry can make giving something up feel more important than acquiring the same amount.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "reference point",
+          "equal magnitude",
+          "gain",
+          "loss",
+          "asymmetric reaction"
+        ],
+        "observedMisconceptions": [
+          "Loss aversion is not identical to risk aversion. Risk aversion concerns uncertainty; loss aversion concerns asymmetric reactions to losses and equivalent gains around a reference point."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-65",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Framing Effects",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "equivalent outcomes",
+        "presentation",
+        "gain frame",
+        "loss frame",
+        "choice reversal"
+      ],
+      "content": {
+        "outcome": "Recognize when equivalent choices produce different decisions because of their description.",
+        "core": "A framing effect occurs when presenting economically equivalent information in different ways changes choice. A gain frame and a loss frame can draw attention to different features even though the underlying outcomes are the same or nearly the same.",
+        "recognition": [
+          "First verify that the underlying outcomes are economically equivalent or nearly equivalent.",
+          "Compare gain wording with loss wording, such as survival versus mortality.",
+          "Equivalent discounts and surcharges can also create different reactions through framing.",
+          "A changed choice caused by presentation, rather than outcomes, is the diagnostic clue."
+        ],
+        "watch": "Framing requires equivalent underlying alternatives. If costs, probabilities, or consequences actually differ, a different choice may be rational rather than a framing effect.",
+        "worked": "A treatment is described to one group as having a 90% survival rate and to another as having a 10% mortality rate. The probabilities describe the same outcome. If acceptance changes merely because one statement emphasizes survival and the other emphasizes death, the wording—not an economic difference—changed choice. That response is a framing effect.",
+        "check": "A fee is described either as a $5 surcharge or as losing a $5 discount. If the net price is identical, what mechanism may change choice?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "SURVIVAL VERSUS MORTALITY"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "A framing effect occurs when presenting economically equivalent information in different ways changes choice. A gain frame and a loss frame can draw attention to different features even though the underlying outcomes are the same or nearly the same.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "equivalent outcomes",
+          "presentation",
+          "gain frame",
+          "loss frame",
+          "choice reversal"
+        ],
+        "observedMisconceptions": [
+          "Framing requires equivalent underlying alternatives. If costs, probabilities, or consequences actually differ, a different choice may be rational rather than a framing effect."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-66",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Condorcet Paradox & Voting Cycles",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "pairwise majority",
+        "consistent voters",
+        "A beats B",
+        "B beats C",
+        "C beats A"
+      ],
+      "content": {
+        "outcome": "Explain how pairwise majority rule can generate cyclic collective preferences.",
+        "core": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.",
+        "recognition": [
+          "There are at least three alternatives and voters rank them differently.",
+          "Compare alternatives two at a time using majority rule.",
+          "The collective relation cycles even though each individual's ranking is consistent.",
+          "Because no option is a universal majority winner, agenda order may matter."
+        ],
+        "watch": "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.",
+        "worked": "Voter 1 ranks A > B > C; Voter 2 ranks B > C > A; Voter 3 ranks C > A > B. Against B, A wins with Voters 1 and 3. Against C, B wins with Voters 1 and 2. Against A, C wins with Voters 2 and 3. Thus the majority relation is A > B > C > A, so the agenda can determine which comparison occurs last and which option survives.",
+        "check": "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "THREE VOTERS, THREE OPTIONS"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "pairwise majority",
+          "consistent voters",
+          "A beats B",
+          "B beats C",
+          "C beats A"
+        ],
+        "observedMisconceptions": [
+          "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-67",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Arrow's Impossibility Theorem",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "social ranking",
+        "unanimity",
+        "nondictatorship",
+        "consistency",
+        "irrelevant alternatives"
+      ],
+      "content": {
+        "outcome": "Explain the basic limitation on combining individual rankings into a social ranking.",
+        "core": "With at least three alternatives, Arrow's theorem shows that no ranked-choice social decision rule can guarantee all of a specified set of desirable conditions at once. The result identifies a tradeoff among aggregation properties; it does not prove that democracy or every voting system is impossible.",
+        "recognition": [
+          "The problem combines individual rankings into a complete and consistent social ranking.",
+          "Desirable conditions include respecting unanimity and avoiding control by one dictator.",
+          "Independence of irrelevant alternatives limits how an outside option may change a pairwise ranking.",
+          "The theorem concerns simultaneous guarantees under its conditions, not whether voting can occur."
+        ],
+        "watch": "Do not conclude that no voting system works or that democracy is impossible. The theorem applies to ranked aggregation and the simultaneous satisfaction of specified conditions.",
+        "worked": "A community wants a ranked-choice rule that respects unanimous rankings, is not controlled by one voter, produces a consistent social ranking, and treats irrelevant alternatives appropriately. Each property seems reasonable. Arrow's theorem says that, with at least three alternatives and unrestricted individual rankings, no aggregation rule can guarantee all of them simultaneously. The lesson is an unavoidable design tradeoff, not a claim that collective choice is meaningless.",
+        "check": "Which is accurate: Arrow identifies incompatible guarantees under stated conditions, or proves that no election can produce a winner?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "DESIRABLE RULES IN TENSION"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "With at least three alternatives, Arrow's theorem shows that no ranked-choice social decision rule can guarantee all of a specified set of desirable conditions at once. The result identifies a tradeoff among aggregation properties; it does not prove that democracy or every voting system is impossible.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "social ranking",
+          "unanimity",
+          "nondictatorship",
+          "consistency",
+          "irrelevant alternatives"
+        ],
+        "observedMisconceptions": [
+          "Do not conclude that no voting system works or that democracy is impossible. The theorem applies to ranked aggregation and the simultaneous satisfaction of specified conditions."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-68",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Median Voter Theorem",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "one dimension",
+        "single-peaked",
+        "majority rule",
+        "ordered voters",
+        "median position"
+      ],
+      "content": {
+        "outcome": "Explain why majority-rule competition can favor the median voter's position under specific assumptions.",
+        "core": "When policy lies on one dimension, preferences are single-peaked, and decisions use majority rule, the median voter's preferred position has a special advantage. Policies or candidates may move toward it because alternatives on either side can be defeated by a majority.",
+        "recognition": [
+          "Place voters along one policy dimension and identify the middle preferred position.",
+          "Each voter has a single peak and prefers positions less as they move away from it.",
+          "Pairwise decisions use majority rule.",
+          "Competition can favor the median, but the conclusion depends on these assumptions."
+        ],
+        "watch": "The median voter does not always decide elections. Multidimensional policy, non-single-peaked preferences, turnout, institutions, or other departures can break the result.",
+        "worked": "Five voters prefer policy levels 10, 20, 30, 40, and 50. The ordered middle preference is 30. Against a proposal below 30, the voters at 30, 40, and 50 form a majority for 30; against one above 30, the voters at 10, 20, and 30 form a majority for 30. Under one-dimensional, single-peaked preferences and majority rule, the median position can defeat alternatives on either side.",
+        "check": "For preferred policies 5, 15, 25, 35, and 45, which position is median, and what preference assumption is required?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "THE PIVOTAL POLICY POSITION"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "When policy lies on one dimension, preferences are single-peaked, and decisions use majority rule, the median voter's preferred position has a special advantage. Policies or candidates may move toward it because alternatives on either side can be defeated by a majority.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "one dimension",
+          "single-peaked",
+          "majority rule",
+          "ordered voters",
+          "median position"
+        ],
+        "observedMisconceptions": [
+          "The median voter does not always decide elections. Multidimensional policy, non-single-peaked preferences, turnout, institutions, or other departures can break the result."
         ],
         "questionsInspected": 180
       },

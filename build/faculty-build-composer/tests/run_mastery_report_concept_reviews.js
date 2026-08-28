@@ -172,8 +172,7 @@ async function run(){
       'market-power':'MICRO-56',
       'factor-markets':'MICRO-57',
       'consumer-choice':'MICRO-58',
-      'income-inequality-poverty-and-redistribution':'MICRO-59',
-      'information-asymmetry-behavioral-and-political-economy':'MICRO-60'
+      'income-inequality-poverty-and-redistribution':'MICRO-59'
     };
     for(const [conceptId, code] of Object.entries(expected)){
       const {manifest} = makeRuntime(library, sourceManifest, [conceptId]);
@@ -192,7 +191,7 @@ async function run(){
       ['factor-markets','marginal-product-and-value-of-marginal-product','FM.1','calculate_marginal_product_labor'],
       ['consumer-choice','budget-constraints-and-feasible-sets','CC.1','budget_equation'],
       ['income-inequality-poverty-and-redistribution','lorenz-curves','IP.1','read_lorenz_curve'],
-      ['information-asymmetry-behavioral-and-political-economy','adverse-selection','IBP.1','analyze_adverse_selection']
+      ['information-asymmetry-behavioral-and-political-economy','adverse-selection','IBP.2','analyze_adverse_selection']
     ];
     for(const [conceptId, tag, objective, skill] of fixtures){
       const {manifest} = makeRuntime(library, sourceManifest, [conceptId]);
@@ -242,6 +241,64 @@ async function run(){
     assert(!resolution.reviewCodes.includes('MICRO-03'), 'Legacy migration exposed MICRO-03 as an active child review.');
     const composition = Core.compose(library, migrated);
     assert(!composition.errors.length && composition.counts.totalCanonical > 0, 'Legacy Market Failures recipe no longer composes.');
+  });
+
+  const informationBundle = makeRuntime(library, sourceManifest, ['information-asymmetry-behavioral-and-political-economy']);
+  const informationConceptId = 'information-asymmetry-behavioral-and-political-economy';
+  const splitCodes = ['MICRO-60','MICRO-61','MICRO-62','MICRO-63','MICRO-64','MICRO-65','MICRO-66','MICRO-67','MICRO-68'];
+
+  await test('V','information parent packages all nine focused reviews', async () => {
+    assert(JSON.stringify(informationBundle.resolution.reviewCodes) === JSON.stringify(splitCodes), 'Information bundle does not contain MICRO-60 through MICRO-68 in order.');
+    const route = informationBundle.manifest.bundleRoutes[informationConceptId];
+    assert(route?.suppressUnmatched === true, 'Information bundle does not suppress unmatched broad evidence.');
+    assert(Object.keys(route.reasonByReviewCode || {}).length === 9, 'Information bundle lacks focused routing reasons.');
+  });
+
+  await test('W','objective and production-skill evidence routes six exact information topics', async () => {
+    const fixtures = [
+      ['IBP.2','analyze_adverse_selection','MICRO-60'],
+      ['IBP.3','analyze_moral_hazard','MICRO-61'],
+      ['IBP.4','distinguish_signaling_screening','MICRO-62'],
+      ['IBP.8','identify_condorcet_cycle','MICRO-66'],
+      ['IBP.7','apply_arrow_impossibility','MICRO-67'],
+      ['IBP.9','apply_median_voter_theorem','MICRO-68']
+    ];
+    for(const [objective, skill, code] of fixtures){
+      for(const evidence of [weakAttempt({objective}), weakAttempt({repairSkill:skill})]){
+        const result = Runtime.resolveMasteryConceptReviews({manifest:informationBundle.manifest,canonicalConceptId:informationConceptId,hasMeaningfulWeakness:true,attemptEvidence:[evidence]});
+        assert(result.kind === 'BUNDLE' && result.recommendations.length === 1 && result.recommendations[0].code === code, `${objective}/${skill} did not route exclusively to ${code}.`);
+      }
+    }
+  });
+
+  await test('X','current combined-bias questions route present bias and loss aversion exactly', async () => {
+    const fixtures = [
+      ...['42998','43002','43006','43010','43014'].map(questionId => [questionId,'MICRO-63']),
+      ...['42997','43001','43005','43009','43013','43017'].map(questionId => [questionId,'MICRO-64'])
+    ];
+    for(const [questionId, code] of fixtures){
+      const result = Runtime.resolveMasteryConceptReviews({manifest:informationBundle.manifest,canonicalConceptId:informationConceptId,hasMeaningfulWeakness:true,attemptEvidence:[weakAttempt({questionId,objective:'IBP.6',repairSkill:'diagnose_behavioral_bias'})]});
+      assert(result.recommendations.length === 1 && result.recommendations[0].code === code, `Question ${questionId} did not route exclusively to ${code}.`);
+    }
+  });
+
+  await test('Y','exact framing aliases route without treating broad behavioral evidence as framing', async () => {
+    for(const evidence of [weakAttempt({repairSkill:'diagnose_framing_effect'}), weakAttempt({tag:'framing-effects'})]){
+      const result = Runtime.resolveMasteryConceptReviews({manifest:informationBundle.manifest,canonicalConceptId:informationConceptId,hasMeaningfulWeakness:true,attemptEvidence:[evidence]});
+      assert(result.recommendations.length === 1 && result.recommendations[0].code === 'MICRO-65', 'Exact framing alias did not route exclusively to MICRO-65.');
+    }
+  });
+
+  await test('Z','unmatched broad parent and ambiguous objectives do not select an arbitrary sheet', async () => {
+    for(const options of [
+      {attemptEvidence:[]},
+      {attemptEvidence:[weakAttempt({objective:'IBP.1',repairSkill:'identify_information_asymmetry'})]},
+      {attemptEvidence:[weakAttempt({objective:'IBP.5',repairSkill:'apply_behavioral_economics'})]},
+      {attemptEvidence:[weakAttempt({questionId:'42999',objective:'IBP.6',repairSkill:'diagnose_behavioral_bias'})]}
+    ]){
+      const result = Runtime.resolveMasteryConceptReviews({manifest:informationBundle.manifest,canonicalConceptId:informationConceptId,hasMeaningfulWeakness:true,...options});
+      assert(result.kind === 'NONE' && result.recommendations.length === 0, 'Ambiguous information evidence selected an arbitrary focused review.');
+    }
   });
 
   const output = {schemaVersion:'1.0.0',status:'PASS',caseCount:cases.length,cases};

@@ -5,11 +5,11 @@
     "countByDiscipline": {
       "general": 26,
       "macro": 41,
-      "micro": 60
+      "micro": 68
     },
-    "manifestSha256": "59bfbce569ee279816ca520e7943d134906b8d71c2c26bcbe148e30e03ea11cb",
-    "pdfCount": 127,
-    "totalPdfBytes": 63171675
+    "manifestSha256": "2ff115d99909040afbdc8fe6cfb845d41c5d88401cfa1ed944c5255488e33327",
+    "pdfCount": 135,
+    "totalPdfBytes": 65131021
   },
   "status": "PASS",
   "testCases": [
@@ -256,15 +256,23 @@
       "diagnosticConceptIds": [
         "information-asymmetry-behavioral-and-political-economy"
       ],
-      "generatedPackageBytes": 22388,
+      "generatedPackageBytes": 31686,
       "name": "information-behavior-public-choice-dedicated-review",
       "questionCount": 180,
-      "referencedPdfBytes": 245031,
+      "referencedPdfBytes": 2204377,
       "reviewCodes": [
-        "MICRO-60"
+        "MICRO-60",
+        "MICRO-61",
+        "MICRO-62",
+        "MICRO-63",
+        "MICRO-64",
+        "MICRO-65",
+        "MICRO-66",
+        "MICRO-67",
+        "MICRO-68"
       ],
-      "reviewPdfCount": 1,
-      "runtimeManifestBytes": 22388,
+      "reviewPdfCount": 9,
+      "runtimeManifestBytes": 31686,
       "selectedConceptCount": 1,
       "selectedConceptIds": [
         "information-asymmetry-behavioral-and-political-economy"
@@ -541,10 +549,10 @@
         "unemployment-measurement",
         "unemployment-types"
       ],
-      "generatedPackageBytes": 1370926,
+      "generatedPackageBytes": 1380513,
       "name": "large-all-top-level-concepts",
       "questionCount": 9267,
-      "referencedPdfBytes": 62818072,
+      "referencedPdfBytes": 64777418,
       "reviewCodes": [
         "GEN-ECON-01",
         "GEN-ECON-02",
@@ -671,10 +679,18 @@
         "MICRO-57",
         "MICRO-58",
         "MICRO-59",
-        "MICRO-60"
+        "MICRO-60",
+        "MICRO-61",
+        "MICRO-62",
+        "MICRO-63",
+        "MICRO-64",
+        "MICRO-65",
+        "MICRO-66",
+        "MICRO-67",
+        "MICRO-68"
       ],
-      "reviewPdfCount": 126,
-      "runtimeManifestBytes": 1370926,
+      "reviewPdfCount": 134,
+      "runtimeManifestBytes": 1380513,
       "selectedConceptCount": 79,
       "selectedConceptIds": [
         "aggregate-demand",
@@ -775,13 +791,35 @@
   "validation": {
     "brokenRuntimePaths": [],
     "dedicatedRouting": {
-      "consumer-choice": "MICRO-58",
-      "externalities": "MICRO-54",
-      "factor-markets": "MICRO-57",
-      "income-inequality-poverty-and-redistribution": "MICRO-59",
-      "information-asymmetry-behavioral-and-political-economy": "MICRO-60",
-      "market-power": "MICRO-56",
-      "public-goods-and-common-resources": "MICRO-55"
+      "consumer-choice": [
+        "MICRO-58"
+      ],
+      "externalities": [
+        "MICRO-54"
+      ],
+      "factor-markets": [
+        "MICRO-57"
+      ],
+      "income-inequality-poverty-and-redistribution": [
+        "MICRO-59"
+      ],
+      "information-asymmetry-behavioral-and-political-economy": [
+        "MICRO-60",
+        "MICRO-61",
+        "MICRO-62",
+        "MICRO-63",
+        "MICRO-64",
+        "MICRO-65",
+        "MICRO-66",
+        "MICRO-67",
+        "MICRO-68"
+      ],
+      "market-power": [
+        "MICRO-56"
+      ],
+      "public-goods-and-common-resources": [
+        "MICRO-55"
+      ]
     },
     "duplicateConflictingMappings": [],
     "fullLibraryPackagedOnlyWhenRequired": true,

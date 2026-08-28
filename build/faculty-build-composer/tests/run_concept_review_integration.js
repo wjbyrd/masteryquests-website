@@ -93,20 +93,20 @@ async function run(){
   assert(validation.ok, validation.errors.join('\n'));
 
   const dedicatedRouting = {
-    externalities:'MICRO-54',
-    'public-goods-and-common-resources':'MICRO-55',
-    'market-power':'MICRO-56',
-    'factor-markets':'MICRO-57',
-    'consumer-choice':'MICRO-58',
-    'income-inequality-poverty-and-redistribution':'MICRO-59',
-    'information-asymmetry-behavioral-and-political-economy':'MICRO-60'
+    externalities:['MICRO-54'],
+    'public-goods-and-common-resources':['MICRO-55'],
+    'market-power':['MICRO-56'],
+    'factor-markets':['MICRO-57'],
+    'consumer-choice':['MICRO-58'],
+    'income-inequality-poverty-and-redistribution':['MICRO-59'],
+    'information-asymmetry-behavioral-and-political-economy':['MICRO-60','MICRO-61','MICRO-62','MICRO-63','MICRO-64','MICRO-65','MICRO-66','MICRO-67','MICRO-68']
   };
-  for(const [conceptId, expectedCode] of Object.entries(dedicatedRouting)){
+  for(const [conceptId, expectedCodes] of Object.entries(dedicatedRouting)){
     const resolution = Core.resolveConceptReviews(library, manifest, [conceptId]);
     assert(resolution.errors.length === 0, `${conceptId} resolver failed: ${resolution.errors.join('; ')}`);
     assert(
-      JSON.stringify(resolution.reviewCodes) === JSON.stringify([expectedCode]),
-      `${conceptId} did not resolve exclusively to ${expectedCode}: ${resolution.reviewCodes.join(', ')}`
+      JSON.stringify(resolution.reviewCodes) === JSON.stringify(expectedCodes),
+      `${conceptId} did not resolve exclusively to ${expectedCodes.join(', ')}: ${resolution.reviewCodes.join(', ')}`
     );
     assert(!resolution.reviewCodes.includes('GEN-ECON-04'), `${conceptId} resolved to unrelated Marginal Analysis review.`);
     if(['externalities','public-goods-and-common-resources','market-power'].includes(conceptId)){
@@ -123,6 +123,31 @@ async function run(){
     return {code:review.code, sizeBytes:bytes.length, sha256:review.sha256};
   });
   assert(new Set(sourceAssets.map(asset => asset.code)).size === sourceAssets.length, 'Duplicate review code in source inventory.');
+  const splitTitles = {
+    'MICRO-60':'Adverse Selection',
+    'MICRO-61':'Moral Hazard',
+    'MICRO-62':'Signaling & Screening',
+    'MICRO-63':'Present Bias',
+    'MICRO-64':'Loss Aversion',
+    'MICRO-65':'Framing Effects',
+    'MICRO-66':'Condorcet Paradox & Voting Cycles',
+    'MICRO-67':"Arrow's Impossibility Theorem",
+    'MICRO-68':'Median Voter Theorem'
+  };
+  const reviewSource = JSON.parse(fs.readFileSync(path.join(composerRoot, 'data', 'concept-reviews', 'concept_review_source.json'), 'utf8'));
+  const splitSource = reviewSource.reviews.filter(review => splitTitles[review.code]);
+  assert(splitSource.length === 9, `Expected nine MICRO-60 through MICRO-68 source records, found ${splitSource.length}.`);
+  assert(!reviewSource.reviews.some(review => review.title === 'Information, Behavior & Public Choice'), 'Retired broad MICRO-60 title remains active.');
+  for(const review of splitSource){
+    assert(review.title === splitTitles[review.code], `${review.code} title does not match its focused concept.`);
+    assert(JSON.stringify(review.canonicalConceptIds) === JSON.stringify(['information-asymmetry-behavioral-and-political-economy']), `${review.code} canonical mapping is incorrect.`);
+    for(const section of ['outcome','core','recognition','watch','worked','check']) assert(review.content?.[section], `${review.code} is missing ${section}.`);
+    assert(typeof review.content.worked === 'string' && review.content.worked.trim().length > 100, `${review.code} lacks one substantive worked example.`);
+    assert(typeof review.content.check === 'string' && review.content.check.trim().length > 20, `${review.code} lacks one Check Yourself item.`);
+    const manifestRecord = manifest.reviews.find(item => item.code === review.code);
+    assert(manifestRecord?.title === splitTitles[review.code], `${review.code} manifest title is incorrect.`);
+    assert(manifestRecord?.pdfPath === `${review.code}.pdf`, `${review.code} filename is not canonical.`);
+  }
   const unreachableCodes = new Set(validation.warnings.filter(item => item.type === 'unreachable-review').map(item => item.reviewCode));
   const reachableSourceReviewCount = sourceAssets.filter(asset => !unreachableCodes.has(asset.code)).length;
 
@@ -209,7 +234,7 @@ async function run(){
       name:'information-behavior-public-choice-dedicated-review',
       selectedConceptIds:['information-asymmetry-behavioral-and-political-economy'],
       supportedModes:['quiz'],
-      expectedCodes:['MICRO-60']
+      expectedCodes:['MICRO-60','MICRO-61','MICRO-62','MICRO-63','MICRO-64','MICRO-65','MICRO-66','MICRO-67','MICRO-68']
     },
     {
       id:'D',

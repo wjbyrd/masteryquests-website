@@ -112,6 +112,54 @@ const CONCEPT_REVIEW_BUNDLE_ROUTES = {
       'GEN-ECON-17':'Review shortages, surpluses, and market adjustment toward equilibrium.',
       'GEN-ECON-18':'Review simultaneous demand-and-supply shifts and which outcome may be ambiguous.'
     }
+  },
+  'information-asymmetry-behavioral-and-political-economy': {
+    questionToReviewCode: Object.fromEntries([
+      ...['42998','43002','43006','43010','43014'].map(questionId => [questionId, 'MICRO-63']),
+      ...['42997','43001','43005','43009','43013','43017'].map(questionId => [questionId, 'MICRO-64'])
+    ]),
+    tagToReviewCode: Object.fromEntries([
+      ...['adverse-selection'].map(tag => [tag, 'MICRO-60']),
+      ...['moral-hazard'].map(tag => [tag, 'MICRO-61']),
+      ...['signaling-and-screening','signaling-screening'].map(tag => [tag, 'MICRO-62']),
+      ...['present-bias'].map(tag => [tag, 'MICRO-63']),
+      ...['loss-aversion'].map(tag => [tag, 'MICRO-64']),
+      ...['framing-effects','framing'].map(tag => [tag, 'MICRO-65']),
+      ...['condorcet-cycles','condorcet-paradox','voting-cycles'].map(tag => [tag, 'MICRO-66']),
+      ...['arrow-impossibility-theorem','arrows-impossibility-theorem'].map(tag => [tag, 'MICRO-67']),
+      ...['median-voter-theorem'].map(tag => [tag, 'MICRO-68'])
+    ]),
+    skillToReviewCode: Object.fromEntries([
+      ...['analyze_adverse_selection','adverse_selection'].map(skill => [skill, 'MICRO-60']),
+      ...['analyze_moral_hazard','moral_hazard'].map(skill => [skill, 'MICRO-61']),
+      ...['distinguish_signaling_screening','signaling_and_screening','signaling_screening'].map(skill => [skill, 'MICRO-62']),
+      ...['identify_present_bias','diagnose_present_bias','present_bias'].map(skill => [skill, 'MICRO-63']),
+      ...['identify_loss_aversion','diagnose_loss_aversion','loss_aversion'].map(skill => [skill, 'MICRO-64']),
+      ...['identify_framing_effect','diagnose_framing_effect','framing_effects'].map(skill => [skill, 'MICRO-65']),
+      ...['identify_condorcet_cycle','condorcet_cycle','voting_cycles'].map(skill => [skill, 'MICRO-66']),
+      ...['apply_arrow_impossibility','arrow_impossibility'].map(skill => [skill, 'MICRO-67']),
+      ...['apply_median_voter_theorem','median_voter_theorem'].map(skill => [skill, 'MICRO-68'])
+    ]),
+    objectiveToReviewCode: {
+      'IBP.2':'MICRO-60',
+      'IBP.3':'MICRO-61',
+      'IBP.4':'MICRO-62',
+      'IBP.7':'MICRO-67',
+      'IBP.8':'MICRO-66',
+      'IBP.9':'MICRO-68'
+    },
+    reasonByReviewCode: {
+      'MICRO-60':'Review hidden characteristics and selection before an agreement.',
+      'MICRO-61':'Review hidden action and changed incentives after protection.',
+      'MICRO-62':'Review whether the informed or uninformed party initiates information revelation.',
+      'MICRO-63':'Review disproportionate weight on immediate costs and benefits.',
+      'MICRO-64':'Review why losses can weigh more than equivalent gains.',
+      'MICRO-65':'Review how equivalent descriptions can change choice.',
+      'MICRO-66':'Review pairwise majority cycles and agenda dependence.',
+      'MICRO-67':'Review the limits on satisfying all desirable social-ranking conditions.',
+      'MICRO-68':'Review the median position under one-dimensional, single-peaked majority rule.'
+    },
+    suppressUnmatched: true
   }
 };
 
@@ -886,9 +934,12 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
       const allowedCodes = new Set(runtimeReviews[id].assets.map(asset => asset.code));
       const source = CONCEPT_REVIEW_BUNDLE_ROUTES[id];
       bundleRoutes[id] = {
-        skillToReviewCode:Object.fromEntries(Object.entries(source.skillToReviewCode).filter(([, code]) => allowedCodes.has(code))),
-        objectiveToReviewCode:{},
-        reasonByReviewCode:Object.fromEntries(Object.entries(source.reasonByReviewCode).filter(([code]) => allowedCodes.has(code)))
+        questionToReviewCode:Object.fromEntries(Object.entries(source.questionToReviewCode || {}).filter(([, code]) => allowedCodes.has(code))),
+        tagToReviewCode:Object.fromEntries(Object.entries(source.tagToReviewCode || {}).filter(([, code]) => allowedCodes.has(code))),
+        skillToReviewCode:Object.fromEntries(Object.entries(source.skillToReviewCode || {}).filter(([, code]) => allowedCodes.has(code))),
+        objectiveToReviewCode:Object.fromEntries(Object.entries(source.objectiveToReviewCode || {}).filter(([, code]) => allowedCodes.has(code))),
+        reasonByReviewCode:Object.fromEntries(Object.entries(source.reasonByReviewCode || {}).filter(([code]) => allowedCodes.has(code))),
+        suppressUnmatched:source.suppressUnmatched === true
       };
     }
   }

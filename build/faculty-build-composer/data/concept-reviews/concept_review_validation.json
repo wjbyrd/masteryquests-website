@@ -1,7 +1,7 @@
 {
   "schemaVersion": "7.0.0-no-subtitle-template-validation",
   "generatedAt": "2026-08-28T12:00:00-04:00",
-  "reviewCount": 127,
+  "reviewCount": 135,
   "allStructuralChecksPassed": true,
   "allPedagogyChecksPassed": true,
   "allLayoutChecksPassed": true,
@@ -25,7 +25,15 @@
       "MICRO-57",
       "MICRO-58",
       "MICRO-59",
-      "MICRO-60"
+      "MICRO-60",
+      "MICRO-61",
+      "MICRO-62",
+      "MICRO-63",
+      "MICRO-64",
+      "MICRO-65",
+      "MICRO-66",
+      "MICRO-67",
+      "MICRO-68"
     ],
     "renderAndVisualQaRequired": true,
     "manualVisualChecksPassed": true
@@ -49,7 +57,35 @@
     "manualVisualChecksPassed": true,
     "graphFreeReviewCodes": [
       "MICRO-56",
-      "MICRO-60"
+      "MICRO-60",
+      "MICRO-61",
+      "MICRO-62",
+      "MICRO-63",
+      "MICRO-64",
+      "MICRO-65",
+      "MICRO-66",
+      "MICRO-67",
+      "MICRO-68"
     ]
+  },
+  "micro60To68SplitValidation": {
+    "retiredActiveUmbrellaTitle": "Information, Behavior & Public Choice",
+    "canonicalConceptId": "information-asymmetry-behavioral-and-political-economy",
+    "reviewTitles": {
+      "MICRO-60": "Adverse Selection",
+      "MICRO-61": "Moral Hazard",
+      "MICRO-62": "Signaling & Screening",
+      "MICRO-63": "Present Bias",
+      "MICRO-64": "Loss Aversion",
+      "MICRO-65": "Framing Effects",
+      "MICRO-66": "Condorcet Paradox & Voting Cycles",
+      "MICRO-67": "Arrow's Impossibility Theorem",
+      "MICRO-68": "Median Voter Theorem"
+    },
+    "onePrimaryMechanismPerReview": true,
+    "oneWorkedExamplePerReview": true,
+    "oneCheckYourselfPerReview": true,
+    "renderAndVisualQaRequired": true,
+    "manualVisualChecksPassed": true
   }
 }

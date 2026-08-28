@@ -8858,21 +8858,24 @@ globalThis.MQ_CONCEPT_REVIEW_MANIFEST = {
     if(assets.length <= 1) return {kind:'DIRECT', recommendations:assets.map(asset => ({...asset, reason:reasonFor(manifest, conceptId, asset)}))};
     const route = manifest?.bundleRoutes?.[conceptId] || {};
     const scores = new Map(assets.map(asset => [asset.code, 0]));
-    const add = (signal, weight) => {
-      const code = route.skillToReviewCode?.[signal] || route.objectiveToReviewCode?.[signal];
+    const add = (mapName, signal, weight) => {
+      const code = route?.[mapName]?.[signal];
       if(scores.has(code)) scores.set(code, scores.get(code) + weight);
     };
     for(const attempt of options.attemptEvidence || []){
       const weight = weakWeight(attempt);
-      add(String(attempt?.repairSkill || ''), weight * 3);
-      add(String(attempt?.primarySkill || ''), weight * 2.5);
-      strings(attempt?.secondarySkills || attempt?.secondarySkillIds).forEach(skill => add(skill, weight));
-      add(String(attempt?.objective || ''), weight);
+      add('questionToReviewCode', String(attempt?.questionId ?? attempt?.id ?? ''), weight * 5);
+      add('tagToReviewCode', String(attempt?.tag || ''), weight * 4);
+      add('skillToReviewCode', String(attempt?.repairSkill || ''), weight * 3);
+      add('skillToReviewCode', String(attempt?.primarySkill || ''), weight * 2.5);
+      strings(attempt?.secondarySkills || attempt?.secondarySkillIds).forEach(skill => add('skillToReviewCode', skill, weight));
+      add('objectiveToReviewCode', String(attempt?.objective || ''), weight);
     }
-    for(const item of normalizeEvidence(options.skillEvidence)) add(String(item?.id || item?.skill || item?.key || ''), weakWeight(item) * 2);
-    for(const item of normalizeEvidence(options.objectiveEvidence)) add(String(item?.id || item?.objective || item?.key || ''), weakWeight(item));
+    for(const item of normalizeEvidence(options.skillEvidence)) add('skillToReviewCode', String(item?.id || item?.skill || item?.key || ''), weakWeight(item) * 2);
+    for(const item of normalizeEvidence(options.objectiveEvidence)) add('objectiveToReviewCode', String(item?.id || item?.objective || item?.key || ''), weakWeight(item));
     const ranked = assets.map((asset, order) => ({...asset, score:scores.get(asset.code) || 0, order})).sort((a,b) => b.score-a.score || a.order-b.order);
     const positive = ranked.filter(item => item.score > 0);
+    if(!positive.length && route.suppressUnmatched === true) return {kind:'NONE', recommendations:[]};
     const selected = positive.length ? positive.slice(0, positive.length > 1 ? 2 : 1) : ranked.slice(0, 1);
     const selectedCodes = new Set(selected.map(item => item.code));
     return {

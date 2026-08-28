@@ -1078,7 +1078,15 @@
         "selectionRole": "standalone",
         "disposition": "REVIEW_SHEET",
         "reviewCodes": [
-          "MICRO-60"
+          "MICRO-60",
+          "MICRO-61",
+          "MICRO-62",
+          "MICRO-63",
+          "MICRO-64",
+          "MICRO-65",
+          "MICRO-66",
+          "MICRO-67",
+          "MICRO-68"
         ],
         "primaryReviewCode": "MICRO-60"
       },
@@ -2771,13 +2779,13 @@
     ]
   },
   "pdfAudit": {
-    "totalPdfCount": 127,
+    "totalPdfCount": 135,
     "countByDiscipline": {
       "general": 26,
       "macro": 41,
-      "micro": 60
+      "micro": 68
     },
-    "totalSizeBytes": 63171675,
+    "totalSizeBytes": 65131021,
     "files": [
       {
         "filename": "GEN-ECON-01.pdf",
@@ -4420,13 +4428,117 @@
       {
         "filename": "MICRO-60.pdf",
         "relativePath": "MICRO-60.pdf",
-        "sizeBytes": 245031,
-        "sha256": "2e84ca33487355739b352cbff062b59b032131f1abdee5c9222697313aee4609",
+        "sizeBytes": 244985,
+        "sha256": "9750b041d84babb9eb75f65fe490b38bc2e3b302891139528e3a894b0c34cdf0",
         "malformed": false,
         "pageCount": 1,
         "hasSelectableText": true,
         "documentLanguage": "en-US",
         "reviewCode": "MICRO-60",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-61.pdf",
+        "relativePath": "MICRO-61.pdf",
+        "sizeBytes": 244946,
+        "sha256": "41f2b76b62e0943f5901ace695deeea9d1530c587477d306b0b30c721885a3c8",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-61",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-62.pdf",
+        "relativePath": "MICRO-62.pdf",
+        "sizeBytes": 244927,
+        "sha256": "f72792fe2697a205b89f64712aad204d404e161fc28e305eae8770fbe7f2aa64",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-62",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-63.pdf",
+        "relativePath": "MICRO-63.pdf",
+        "sizeBytes": 244985,
+        "sha256": "5466c7c98f156050e21683a8892d4e22a8762555a4c3073fd5366fe336bcdf09",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-63",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-64.pdf",
+        "relativePath": "MICRO-64.pdf",
+        "sizeBytes": 244887,
+        "sha256": "3333c429eaa54e5a07410ff1896934f97430b93a60643075596481711c98b8b7",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-64",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-65.pdf",
+        "relativePath": "MICRO-65.pdf",
+        "sizeBytes": 244899,
+        "sha256": "fd8aaccc5ba4720a3c2833741f6f2afbed479fd99a11a8620e13c0bac7bd974c",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-65",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-66.pdf",
+        "relativePath": "MICRO-66.pdf",
+        "sizeBytes": 244822,
+        "sha256": "3ea0b9635787e39daac93f02730a21e94377e319d55c465c3533f0973144b3c1",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-66",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-67.pdf",
+        "relativePath": "MICRO-67.pdf",
+        "sizeBytes": 245058,
+        "sha256": "2ed1b090e37625ad19807a88b9d2caca402208bd78bacf4a8857a1dad811bc11",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-67",
+        "discipline": "micro",
+        "filenameCodeMatches": true
+      },
+      {
+        "filename": "MICRO-68.pdf",
+        "relativePath": "MICRO-68.pdf",
+        "sizeBytes": 244868,
+        "sha256": "5193e56085fdfbc0a733d8397b6fd8b8e7799f5ed61667b3d4cf0382a5fbdf34",
+        "malformed": false,
+        "pageCount": 1,
+        "hasSelectableText": true,
+        "documentLanguage": "en-US",
+        "reviewCode": "MICRO-68",
         "discipline": "micro",
         "filenameCodeMatches": true
       }
@@ -4458,6 +4570,21 @@
         "reviewCodes": [
           "GEN-ECON-12",
           "GEN-ECON-13"
+        ],
+        "mappingKind": "EXPLICIT_ORDERED_REVIEW_BUNDLE"
+      },
+      {
+        "canonicalConceptId": "information-asymmetry-behavioral-and-political-economy",
+        "reviewCodes": [
+          "MICRO-60",
+          "MICRO-61",
+          "MICRO-62",
+          "MICRO-63",
+          "MICRO-64",
+          "MICRO-65",
+          "MICRO-66",
+          "MICRO-67",
+          "MICRO-68"
         ],
         "mappingKind": "EXPLICIT_ORDERED_REVIEW_BUNDLE"
       },
