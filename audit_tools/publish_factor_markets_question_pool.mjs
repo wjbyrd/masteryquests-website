@@ -343,27 +343,9 @@ function updateLibraryVersion(version) {
 }
 
 function refreshConceptReviews(reviewManifest, reviewSource, library) {
-  reviewManifest.concepts = reviewManifest.concepts.filter(item => item.canonicalConceptId !== CONCEPT_ID);
-  reviewManifest.concepts.push({
-    canonicalConceptId: CONCEPT_ID,
-    displayName: "Factor Markets",
-    discipline: "micro",
-    areas: ["micro"],
-    parentId: null,
-    childIds: [],
-    selectable: true,
-    selectableCard: true,
-    diagnosable: true,
-    selectionRole: "standalone",
-    disposition: "NO_SHEET_INTEGRATION_META",
-    reason: "The new factor-market concept is independently diagnosable in Mastery Reports; no immutable faculty review PDF was supplied for this production phase."
-  });
-  reviewManifest.summary.canonicalConceptCount = library.conceptCount;
-  reviewManifest.summary.dispositionCounts.NO_SHEET_INTEGRATION_META = reviewManifest.concepts.filter(item => item.disposition === "NO_SHEET_INTEGRATION_META").length;
-  reviewManifest.generatedAt = GENERATED_AT;
-  reviewManifest.composerLibraryVersion = library.libraryVersion;
-  reviewSource.generatedAt = GENERATED_AT;
-  reviewSource.composerLibraryVersion = library.libraryVersion;
+  const mapping = reviewManifest.concepts.find(item => item.canonicalConceptId === CONCEPT_ID);
+  if (mapping?.diagnosable !== true || mapping?.primaryReviewCode !== "MICRO-57") throw new Error("Factor Markets lacks its dedicated Concept Review mapping.");
+  if (!reviewSource.reviews.some(item => item.code === "MICRO-57" && item.canonicalConceptIds?.includes(CONCEPT_ID))) throw new Error("Missing MICRO-57 Concept Review source.");
 }
 
 function render() {

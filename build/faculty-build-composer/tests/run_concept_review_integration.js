@@ -92,6 +92,28 @@ async function run(){
   const validation = Core.validateConceptReviewManifest(library, manifest);
   assert(validation.ok, validation.errors.join('\n'));
 
+  const dedicatedRouting = {
+    externalities:'MICRO-54',
+    'public-goods-and-common-resources':'MICRO-55',
+    'market-power':'MICRO-56',
+    'factor-markets':'MICRO-57',
+    'consumer-choice':'MICRO-58',
+    'income-inequality-poverty-and-redistribution':'MICRO-59',
+    'information-asymmetry-behavioral-and-political-economy':'MICRO-60'
+  };
+  for(const [conceptId, expectedCode] of Object.entries(dedicatedRouting)){
+    const resolution = Core.resolveConceptReviews(library, manifest, [conceptId]);
+    assert(resolution.errors.length === 0, `${conceptId} resolver failed: ${resolution.errors.join('; ')}`);
+    assert(
+      JSON.stringify(resolution.reviewCodes) === JSON.stringify([expectedCode]),
+      `${conceptId} did not resolve exclusively to ${expectedCode}: ${resolution.reviewCodes.join(', ')}`
+    );
+    assert(!resolution.reviewCodes.includes('GEN-ECON-04'), `${conceptId} resolved to unrelated Marginal Analysis review.`);
+    if(['externalities','public-goods-and-common-resources','market-power'].includes(conceptId)){
+      assert(!resolution.reviewCodes.includes('MICRO-03'), `${conceptId} retained the legacy Market Failures review.`);
+    }
+  }
+
   const sourceAssets = manifest.reviews.map(review => {
     const sourcePath = path.join(composerRoot, 'data', 'concept-reviews', review.pdfPath);
     assert(fs.existsSync(sourcePath), `Manifest PDF is missing: ${review.code}.`);
@@ -101,6 +123,8 @@ async function run(){
     return {code:review.code, sizeBytes:bytes.length, sha256:review.sha256};
   });
   assert(new Set(sourceAssets.map(asset => asset.code)).size === sourceAssets.length, 'Duplicate review code in source inventory.');
+  const unreachableCodes = new Set(validation.warnings.filter(item => item.type === 'unreachable-review').map(item => item.reviewCode));
+  const reachableSourceReviewCount = sourceAssets.filter(asset => !unreachableCodes.has(asset.code)).length;
 
   const macroStabilizationStarter = [
     'liquidity-preference-and-money-market',
@@ -146,6 +170,48 @@ async function run(){
       expectedCodes:['MICRO-04']
     },
     {
+      id:'G',
+      name:'externalities-dedicated-review',
+      selectedConceptIds:['externalities'],
+      supportedModes:['quiz'],
+      expectedCodes:['MICRO-54']
+    },
+    {
+      id:'H',
+      name:'public-goods-dedicated-review',
+      selectedConceptIds:['public-goods-and-common-resources'],
+      supportedModes:['quiz'],
+      expectedCodes:['MICRO-55']
+    },
+    {
+      id:'I',
+      name:'factor-markets-dedicated-review',
+      selectedConceptIds:['factor-markets'],
+      supportedModes:['quiz'],
+      expectedCodes:['MICRO-57']
+    },
+    {
+      id:'J',
+      name:'consumer-choice-dedicated-review',
+      selectedConceptIds:['consumer-choice'],
+      supportedModes:['quiz'],
+      expectedCodes:['MICRO-58']
+    },
+    {
+      id:'K',
+      name:'income-inequality-dedicated-review',
+      selectedConceptIds:['income-inequality-poverty-and-redistribution'],
+      supportedModes:['quiz'],
+      expectedCodes:['MICRO-59']
+    },
+    {
+      id:'L',
+      name:'information-behavior-public-choice-dedicated-review',
+      selectedConceptIds:['information-asymmetry-behavioral-and-political-economy'],
+      supportedModes:['quiz'],
+      expectedCodes:['MICRO-60']
+    },
+    {
       id:'D',
       name:'micro-costs-family-parent',
       selectedConceptIds:['costs-of-production'],
@@ -163,7 +229,7 @@ async function run(){
       name:'large-all-top-level-concepts',
       selectedConceptIds:largeBuildIds,
       supportedModes:[...Core.MODE_ORDER],
-      expectedReviewCount:sourceAssets.length
+      expectedReviewCount:reachableSourceReviewCount
     }
   ];
 
@@ -275,6 +341,7 @@ async function run(){
     },
     validation:{
       manifest:validation,
+      dedicatedRouting,
       missingRequiredReviewPdfs:[],
       duplicateConflictingMappings:[],
       brokenRuntimePaths:[],

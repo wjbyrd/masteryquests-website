@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-13T21:31:00.510774+00:00",
+  "generatedAt": "2026-08-28T12:00:00-04:00",
   "schemaVersion": "1.0.0",
   "sourceLibrary": {
     "countByDiscipline": {
       "general": 26,
       "macro": 41,
-      "micro": 53
+      "micro": 60
     },
-    "manifestSha256": "fe07333cc40b4a5d9e0c967d20efa6ea17d00c70e027d4636d95a6d5ededf199",
-    "pdfCount": 120,
-    "totalPdfBytes": 59987311
+    "manifestSha256": "658ae5925b6400c71cb482489ee47a377d8d6d6ef1c9cd4762366733eda49f04",
+    "pdfCount": 127,
+    "totalPdfBytes": 61701663
   },
   "status": "PASS",
   "testCases": [
@@ -24,14 +24,15 @@
       "diagnosticConceptIds": [
         "scarcity-and-tradeoffs"
       ],
+      "generatedPackageBytes": 11213,
       "name": "one-general-concept",
-      "pdfBytes": 353549,
       "questionCount": 96,
+      "referencedPdfBytes": 353549,
       "reviewCodes": [
         "GEN-ECON-01"
       ],
       "reviewPdfCount": 1,
-      "runtimeManifestBytes": 10656,
+      "runtimeManifestBytes": 11213,
       "selectedConceptCount": 1,
       "selectedConceptIds": [
         "scarcity-and-tradeoffs"
@@ -39,28 +40,28 @@
       "status": "PASS",
       "supportedModes": [
         "quiz"
-      ],
-      "totalAddedBytes": 364205
+      ]
     },
     {
       "answerVerification": {
         "issues": [],
         "ok": true,
-        "questionCount": 84
+        "questionCount": 90
       },
       "case": "B",
       "diagnosticClosureSize": 1,
       "diagnosticConceptIds": [
         "production-possibilities-frontier"
       ],
+      "generatedPackageBytes": 16886,
       "name": "general-graph-concept",
-      "pdfBytes": 605896,
-      "questionCount": 84,
+      "questionCount": 90,
+      "referencedPdfBytes": 605896,
       "reviewCodes": [
         "GEN-ECON-08"
       ],
       "reviewPdfCount": 1,
-      "runtimeManifestBytes": 15659,
+      "runtimeManifestBytes": 16886,
       "selectedConceptCount": 1,
       "selectedConceptIds": [
         "production-possibilities-frontier"
@@ -68,8 +69,7 @@
       "status": "PASS",
       "supportedModes": [
         "quiz"
-      ],
-      "totalAddedBytes": 621555
+      ]
     },
     {
       "answerVerification": {
@@ -82,14 +82,15 @@
       "diagnosticConceptIds": [
         "price-elasticity-of-demand"
       ],
+      "generatedPackageBytes": 17708,
       "name": "micro-granular-subtopic",
-      "pdfBytes": 533875,
       "questionCount": 171,
+      "referencedPdfBytes": 533875,
       "reviewCodes": [
         "MICRO-04"
       ],
       "reviewPdfCount": 1,
-      "runtimeManifestBytes": 17399,
+      "runtimeManifestBytes": 17708,
       "selectedConceptCount": 1,
       "selectedConceptIds": [
         "price-elasticity-of-demand"
@@ -97,8 +98,181 @@
       "status": "PASS",
       "supportedModes": [
         "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 177
+      },
+      "case": "G",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "externalities"
       ],
-      "totalAddedBytes": 551274
+      "generatedPackageBytes": 20739,
+      "name": "externalities-dedicated-review",
+      "questionCount": 177,
+      "referencedPdfBytes": 244608,
+      "reviewCodes": [
+        "MICRO-54"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 20739,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "externalities"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 176
+      },
+      "case": "H",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "public-goods-and-common-resources"
+      ],
+      "generatedPackageBytes": 32531,
+      "name": "public-goods-dedicated-review",
+      "questionCount": 176,
+      "referencedPdfBytes": 244732,
+      "reviewCodes": [
+        "MICRO-55"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 32531,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "public-goods-and-common-resources"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 240
+      },
+      "case": "I",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "factor-markets"
+      ],
+      "generatedPackageBytes": 25796,
+      "name": "factor-markets-dedicated-review",
+      "questionCount": 240,
+      "referencedPdfBytes": 244682,
+      "reviewCodes": [
+        "MICRO-57"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 25796,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "factor-markets"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 160
+      },
+      "case": "J",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "consumer-choice"
+      ],
+      "generatedPackageBytes": 17920,
+      "name": "consumer-choice-dedicated-review",
+      "questionCount": 160,
+      "referencedPdfBytes": 245641,
+      "reviewCodes": [
+        "MICRO-58"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 17920,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "consumer-choice"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 160
+      },
+      "case": "K",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "income-inequality-poverty-and-redistribution"
+      ],
+      "generatedPackageBytes": 18501,
+      "name": "income-inequality-dedicated-review",
+      "questionCount": 160,
+      "referencedPdfBytes": 244717,
+      "reviewCodes": [
+        "MICRO-59"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 18501,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "income-inequality-poverty-and-redistribution"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 180
+      },
+      "case": "L",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "generatedPackageBytes": 22388,
+      "name": "information-behavior-public-choice-dedicated-review",
+      "questionCount": 180,
+      "referencedPdfBytes": 245031,
+      "reviewCodes": [
+        "MICRO-60"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 22388,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
     },
     {
       "answerVerification": {
@@ -121,9 +295,10 @@
         "short-run-production",
         "sunk-avoidable-costs"
       ],
+      "generatedPackageBytes": 85969,
       "name": "micro-costs-family-parent",
-      "pdfBytes": 5163313,
       "questionCount": 608,
+      "referencedPdfBytes": 5163313,
       "reviewCodes": [
         "MICRO-18",
         "MICRO-19",
@@ -137,7 +312,7 @@
         "MICRO-27"
       ],
       "reviewPdfCount": 10,
-      "runtimeManifestBytes": 62738,
+      "runtimeManifestBytes": 85969,
       "selectedConceptCount": 1,
       "selectedConceptIds": [
         "costs-of-production"
@@ -145,8 +320,7 @@
       "status": "PASS",
       "supportedModes": [
         "standard"
-      ],
-      "totalAddedBytes": 5226051
+      ]
     },
     {
       "answerVerification": {
@@ -172,9 +346,10 @@
         "short-run-phillips-curve",
         "stabilization-policy"
       ],
+      "generatedPackageBytes": 147961,
       "name": "macro-stabilization-starter",
-      "pdfBytes": 7905449,
       "questionCount": 919,
+      "referencedPdfBytes": 7905449,
       "reviewCodes": [
         "MACRO-28",
         "MACRO-29",
@@ -192,7 +367,7 @@
         "MACRO-41"
       ],
       "reviewPdfCount": 14,
-      "runtimeManifestBytes": 142236,
+      "runtimeManifestBytes": 147961,
       "selectedConceptCount": 14,
       "selectedConceptIds": [
         "liquidity-preference-and-money-market",
@@ -222,17 +397,16 @@
         "trialGraph",
         "fadingFortune",
         "riskReward"
-      ],
-      "totalAddedBytes": 8047685
+      ]
     },
     {
       "answerVerification": {
         "issues": [],
         "ok": true,
-        "questionCount": 8051
+        "questionCount": 9267
       },
       "case": "F",
-      "diagnosticClosureSize": 125,
+      "diagnosticClosureSize": 132,
       "diagnosticConceptIds": [
         "aggregate-demand",
         "aggregate-supply",
@@ -252,6 +426,7 @@
         "competitive-short-run-supply",
         "competitive-shutdown",
         "consumer-and-producer-surplus",
+        "consumer-choice",
         "consumer-surplus",
         "cost-components-schedules",
         "costs-of-production",
@@ -268,6 +443,9 @@
         "efficient-quantity-allocation",
         "elasticity",
         "elasticity-and-total-revenue",
+        "externalities",
+        "factor-markets",
+        "federal-budgets-and-debt",
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "fisher-effect",
@@ -277,9 +455,11 @@
         "import-quotas-quota-rents",
         "incentives",
         "income-elasticity-of-demand",
+        "income-inequality-poverty-and-redistribution",
         "indexing-and-real-values",
         "inflation-costs",
         "inflation-tax-and-deflation",
+        "information-asymmetry-behavioral-and-political-economy",
         "integrated-economic-analysis",
         "international-trade-and-trade-policy",
         "labor-market-institutions",
@@ -293,7 +473,7 @@
         "marginal-analysis",
         "marginal-cost-production-linkages",
         "market-equilibrium",
-        "market-failures",
+        "market-power",
         "mcomp-advertising-nonprice",
         "mcomp-efficiency-variety-limits",
         "mcomp-entry-exit-long-run",
@@ -335,6 +515,7 @@
         "production-possibilities-frontier",
         "productivity-measurement",
         "profit-concepts",
+        "public-goods-and-common-resources",
         "quantity-theory-of-money",
         "real-versus-nominal-gdp",
         "real-versus-nominal-interest-rates",
@@ -360,9 +541,10 @@
         "unemployment-measurement",
         "unemployment-types"
       ],
+      "generatedPackageBytes": 1370926,
       "name": "large-all-top-level-concepts",
-      "pdfBytes": 59987311,
-      "questionCount": 8051,
+      "questionCount": 9267,
+      "referencedPdfBytes": 61348060,
       "reviewCodes": [
         "GEN-ECON-01",
         "GEN-ECON-02",
@@ -433,7 +615,6 @@
         "MACRO-41",
         "MICRO-01",
         "MICRO-02",
-        "MICRO-03",
         "MICRO-04",
         "MICRO-05",
         "MICRO-06",
@@ -483,11 +664,18 @@
         "MICRO-50",
         "MICRO-51",
         "MICRO-52",
-        "MICRO-53"
+        "MICRO-53",
+        "MICRO-54",
+        "MICRO-55",
+        "MICRO-56",
+        "MICRO-57",
+        "MICRO-58",
+        "MICRO-59",
+        "MICRO-60"
       ],
-      "reviewPdfCount": 120,
-      "runtimeManifestBytes": 1035102,
-      "selectedConceptCount": 71,
+      "reviewPdfCount": 126,
+      "runtimeManifestBytes": 1370926,
+      "selectedConceptCount": 79,
       "selectedConceptIds": [
         "aggregate-demand",
         "aggregate-supply",
@@ -497,6 +685,7 @@
         "central-bank-and-federal-reserve",
         "competitive-markets",
         "consumer-and-producer-surplus",
+        "consumer-choice",
         "costs-of-production",
         "cpi-and-inflation-measurement",
         "cpi-bias",
@@ -506,6 +695,9 @@
         "economic-growth-policy",
         "economist-policy-role",
         "elasticity",
+        "externalities",
+        "factor-markets",
+        "federal-budgets-and-debt",
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "fisher-effect",
@@ -513,9 +705,11 @@
         "gdp-components",
         "gdp-measurement",
         "incentives",
+        "income-inequality-poverty-and-redistribution",
         "indexing-and-real-values",
         "inflation-costs",
         "inflation-tax-and-deflation",
+        "information-asymmetry-behavioral-and-political-economy",
         "integrated-economic-analysis",
         "international-trade-and-trade-policy",
         "labor-market-institutions",
@@ -528,6 +722,7 @@
         "marginal-analysis",
         "market-equilibrium",
         "market-failures",
+        "market-power",
         "micro-versus-macro",
         "models-and-assumptions",
         "monetary-control-limits",
@@ -546,6 +741,7 @@
         "price-signals",
         "production-possibilities-frontier",
         "productivity-measurement",
+        "public-goods-and-common-resources",
         "quantity-theory-of-money",
         "real-versus-nominal-gdp",
         "real-versus-nominal-interest-rates",
@@ -573,13 +769,20 @@
         "trialGraph",
         "fadingFortune",
         "riskReward"
-      ],
-      "totalAddedBytes": 61022413
+      ]
     }
   ],
   "validation": {
     "brokenRuntimePaths": [],
-    "copiedHashMismatches": [],
+    "dedicatedRouting": {
+      "consumer-choice": "MICRO-58",
+      "externalities": "MICRO-54",
+      "factor-markets": "MICRO-57",
+      "income-inequality-poverty-and-redistribution": "MICRO-59",
+      "information-asymmetry-behavioral-and-political-economy": "MICRO-60",
+      "market-power": "MICRO-56",
+      "public-goods-and-common-resources": "MICRO-55"
+    },
     "duplicateConflictingMappings": [],
     "fullLibraryPackagedOnlyWhenRequired": true,
     "manifest": {
@@ -597,6 +800,10 @@
         {
           "canonicalConceptId": "elasticity",
           "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "federal-budgets-and-debt",
+          "type": "diagnosable-no-sheet-meta"
         },
         {
           "canonicalConceptId": "integrated-economic-analysis",
@@ -621,9 +828,19 @@
         {
           "canonicalConceptId": "perfect-competition",
           "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "reviewCode": "MICRO-03",
+          "type": "orphan-review"
+        },
+        {
+          "reviewCode": "MICRO-03",
+          "type": "unreachable-review"
         }
       ]
     },
-    "missingRequiredReviewPdfs": []
+    "missingRequiredReviewPdfs": [],
+    "runtimeUrlIssues": [],
+    "sourceHashMismatches": []
   }
 }

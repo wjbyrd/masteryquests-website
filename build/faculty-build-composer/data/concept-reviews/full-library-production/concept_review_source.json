@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0-evidence-driven-full-library",
-  "generatedAt": "2026-08-27T18:00:00.000Z",
+  "generatedAt": "2026-08-28T12:00:00-04:00",
   "composerLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1",
   "reviews": [
     {
@@ -1914,11 +1914,7 @@
     },
     {
       "code": "MICRO-03",
-      "canonicalConceptIds": [
-        "externalities",
-        "public-goods-and-common-resources",
-        "market-power"
-      ],
+      "canonicalConceptIds": [],
       "title": "Market Failures",
       "discipline": "micro",
       "disciplineLabel": "MICROECONOMICS",
@@ -8488,6 +8484,670 @@
         "graphVisiblyInterpreted": false,
         "altTextReviewed": false,
         "approvedCalibrationContentRetained": false
+      }
+    },
+    {
+      "code": "GEN-ECON-25",
+      "canonicalConceptIds": [
+        "import-quotas-quota-rents"
+      ],
+      "title": "International Trade: Quotas",
+      "discipline": "general",
+      "disciplineLabel": "GENERAL ECONOMICS",
+      "focusTerms": [],
+      "content": {
+        "outcome": "Analyze International Trade: Quotas.",
+        "core": "An import quota directly limits the quantity of a good that may enter the country. A binding quota reduces imports below their free-trade level, raises the domestic price, increases domestic production, and reduces domestic consumption. The price gap between the domestic quota price and the world price creates quota rent. Who receives that rent affects the country's national-surplus result, while the production and consumption distortions create deadweight loss.",
+        "recognition": [
+          "Begin with the free-trade outcome at the world price.",
+          "A binding import quota limits imports below their free-trade quantity.",
+          "The restriction raises domestic price, increases domestic production, and reduces domestic consumption.",
+          "The gap between the quota price and world price creates quota rent on each permitted import.",
+          "Look for deadweight loss from excessive domestic production and reduced consumption."
+        ],
+        "watch": "Do not treat tariff revenue as full welfare loss. Part of the consumer loss is transferred to producers and government; the production and consumption distortions are net losses.",
+        "worked": "Before trade, domestic supply and demand intersect at a price of $7. With free trade, buyers can purchase at the $3 world price, which creates imports. The quota limits imports, so the domestic price rises to $6. The difference between the $6 quota price and the $3 world price is $3 per imported unit; that $3 gap is quota rent.",
+        "check": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Beginner",
+        "time": "5 minutes",
+        "exampleQuestionId": "P62D-ITP-M-042",
+        "checkQuestionId": "P62D-ITP-R-017",
+        "workedLabel": "QUOTA PRICE AND IMPORTS",
+        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-04.webp",
+        "assetMetadata": {
+          "filename": "TRD-04.webp",
+          "sourceUrl": "data/question-assets/international-trade-and-trade-policy/TRD-04.webp",
+          "sha256": "2dcfacad1cea8cb6e52173de9bd30b87b509ff684bccb6569d31a9bd73f7dbfa",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand."
+        }
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Analyze import quotas, quota rents, domestic price and quantity effects, welfare consequences, and tariff-versus-quota differences.",
+        "selectedQuestionIds": [
+          "PMS-ITP-R-015",
+          "P62D-ITP-L-100",
+          "PMA-ITP-E-026",
+          "PMS-ITP-BR-018",
+          "PMA-ITP-M-023",
+          "P62D-ITP-M-042",
+          "P62D-ITP-R-017"
+        ],
+        "testedDistinctions": [
+          "consumer surplus trade",
+          "consumption distortion",
+          "domestic consumption under trade",
+          "domestic production under trade",
+          "integrated trade analysis",
+          "production distortion",
+          "quota quantity effect",
+          "quota rent"
+        ],
+        "observedMisconceptions": [
+          "treats_small_country_as_world_price_setter",
+          "moves_quantity_demanded_in_wrong_direction",
+          "moves_quantity_supplied_in_wrong_direction",
+          "ignores_consumer_price_and_quantity_changes",
+          "counts_transfers_as_social_losses",
+          "assumes_quota_leaves_price_at_world_price"
+        ],
+        "questionsInspected": 261
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseRevised": true,
+        "workedExampleSubstantiallyRewritten": true,
+        "coreIdeaStartsDirectly": true,
+        "conceptContaminationDetected": false,
+        "recognitionIsPedagogical": true,
+        "recognitionContainsUnexplainedGraphValues": false,
+        "workedExampleMatchesConcept": true,
+        "workedExampleMatchesVisibleGraph": true,
+        "numericValuesInternallyConsistent": true,
+        "subtitleIsConceptual": true,
+        "proseReadsNaturally": true,
+        "coreIdeaEstablishesTopicFirst": true,
+        "coreIdeaContainsPrematureExample": false,
+        "workedExampleLabelIsDescriptive": true,
+        "workedExampleDetailsNotDuplicatedInCoreIdea": true,
+        "subtitleRetiredFromStudentFacingModel": true
+      }
+    },
+    {
+      "code": "GEN-ECON-26",
+      "canonicalConceptIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "title": "International Trade: Policy and Distribution",
+      "discipline": "general",
+      "disciplineLabel": "GENERAL ECONOMICS",
+      "focusTerms": [],
+      "content": {
+        "outcome": "Evaluate International Trade: Policy and Distribution.",
+        "core": "Trade protection redistributes income and usually reduces total surplus, so a policy claim must be evaluated against its costs and alternatives. Security, infant-industry, employment, and bargaining arguments may identify legitimate goals, but each claim requires evidence that the policy can achieve the goal and that a less costly policy is unavailable. Sound analysis separates measurable economic effects from the value judgments used to choose among them.",
+        "recognition": [
+          "Security can be legitimate, but the claim still requires evidence and comparison.",
+          "Compare the free-trade and quota outcomes.",
+          "The argument requires a temporary, evidence-based learning mechanism and net benefits.",
+          "Efficiency concerns total surplus; equity concerns distribution.",
+          "Adjustment goals can be pursued through policies with different efficiency costs."
+        ],
+        "watch": "Do not ignore efficiency or distribution evidence. Security can be legitimate, but the claim still requires evidence and comparison. The argument requires a temporary, evidence-based learning mechanism and net benefits.",
+        "worked": "Suppose protection preserves 1,000 domestic jobs but costs consumers $30 million each year. The positive analysis reports both effects and asks whether less costly policies could assist affected workers. The normative decision then weighs security, distribution, and adjustment goals against the efficiency cost. Saying only that protection 'saves jobs' leaves the consumer cost and alternatives unexamined.",
+        "check": "What is missing from the claim “protection saves jobs”?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Beginner",
+        "time": "4 minutes",
+        "exampleQuestionId": "PMS-ITP-BR-022",
+        "checkQuestionId": "P62D-ITP-R-019",
+        "workedLabel": "EVALUATING A TRADE-POLICY CLAIM"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Evaluate trade-policy arguments using efficiency, distribution, evidence, and the tradeoffs created by protection.",
+        "selectedQuestionIds": [
+          "P62D-ITP-E-027",
+          "P62D-ITP-L-100",
+          "P62D-ITP-M-029",
+          "P62D-ITP-E-030",
+          "P62D-ITP-EL-027",
+          "PMS-ITP-BR-022",
+          "P62D-ITP-R-019"
+        ],
+        "testedDistinctions": [
+          "efficiency equity trade",
+          "protectionism arguments",
+          "trade claim evaluation",
+          "trade policy evaluation"
+        ],
+        "observedMisconceptions": [
+          "treats_policy_slogan_as_complete_analysis",
+          "ignores_efficiency_or_distribution_evidence",
+          "equates_efficiency_with_fairness",
+          "accepts_protection_claim_without_full_cost_benefit",
+          "fails_economywide_trade_policy_evaluation",
+          "accepts_claim_without_tracing_market_effects"
+        ],
+        "questionsInspected": 67
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseRevised": true,
+        "workedExampleSubstantiallyRewritten": true,
+        "coreIdeaStartsDirectly": true,
+        "conceptContaminationDetected": false,
+        "recognitionIsPedagogical": true,
+        "recognitionContainsUnexplainedGraphValues": false,
+        "workedExampleMatchesConcept": true,
+        "workedExampleMatchesVisibleGraph": null,
+        "numericValuesInternallyConsistent": true,
+        "subtitleIsConceptual": true,
+        "proseReadsNaturally": true,
+        "coreIdeaEstablishesTopicFirst": true,
+        "coreIdeaContainsPrematureExample": false,
+        "workedExampleLabelIsDescriptive": true,
+        "workedExampleDetailsNotDuplicatedInCoreIdea": true,
+        "subtitleRetiredFromStudentFacingModel": true
+      }
+    },
+    {
+      "code": "MICRO-54",
+      "canonicalConceptIds": [
+        "externalities"
+      ],
+      "title": "Externalities",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "negative and positive externalities",
+        "production and consumption spillovers",
+        "private versus social values",
+        "corrective policy"
+      ],
+      "content": {
+        "outcome": "Compare private and social incentives and identify the efficient quantity.",
+        "core": "An externality is a cost or benefit imposed on someone outside a transaction. Negative externalities make private decision makers ignore part of social cost; positive externalities make them ignore part of social benefit. Efficiency uses all marginal social costs and benefits.",
+        "recognition": [
+          "Ask whether the spillover is a cost or benefit and whether it comes from production or consumption.",
+          "Negative: MSC > MPC or MPB > MSB, so the market quantity is too high.",
+          "Positive: MSB > MPB or MPC > MSC, so the market quantity is too low.",
+          "Corrective taxes, subsidies, permits, regulation, or bargaining can internalize the spillover."
+        ],
+        "watch": "Do not label every harmful outcome an externality. A spillover must affect a third party and be missing from the market price.",
+        "worked": "A factory's market supply is MPC. Pollution adds $20 per unit, so MSC lies $20 above MPC. The market chooses Qm where MPB = MPC. The efficient quantity is the lower Q* where MPB = MSC. A $20 corrective tax aligns the firm's private marginal cost with social marginal cost.",
+        "check": "If MSB lies above MPB, is the unregulated market quantity too high or too low?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "NEGATIVE PRODUCTION EXTERNALITY"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "An externality is a cost or benefit imposed on someone outside a transaction. Negative externalities make private decision makers ignore part of social cost; positive externalities make them ignore part of social benefit. Efficiency uses all marginal social costs and benefits.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "negative and positive externalities",
+          "production and consumption spillovers",
+          "private versus social values",
+          "corrective policy"
+        ],
+        "observedMisconceptions": [
+          "Do not label every harmful outcome an externality. A spillover must affect a third party and be missing from the market price."
+        ],
+        "questionsInspected": 177
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-55",
+      "canonicalConceptIds": [
+        "public-goods-and-common-resources"
+      ],
+      "title": "Public Goods & Common Resources",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "goods classification",
+        "free riding",
+        "vertical summation",
+        "tragedy of the commons",
+        "property rights"
+      ],
+      "content": {
+        "outcome": "Classify goods and apply efficient provision and resource-use rules.",
+        "core": "Excludability asks whether nonpayers can be kept out; rivalry asks whether one person's use reduces another's. Public goods are nonexcludable and nonrival, common resources are nonexcludable and rival, club goods are excludable and nonrival, and private goods are excludable and rival.",
+        "recognition": [
+          "Free riding can make private payments understate total social willingness to pay for a public good.",
+          "Vertically sum individual marginal benefits to obtain MSB for a shared quantity.",
+          "Provide the efficient public-good quantity where MSB = MC.",
+          "Common resources tend toward overuse; property rights, access rules, or practical exclusion can change incentives."
+        ],
+        "watch": "Do not classify a good by who supplies it. Government provision does not automatically make a good nonexcludable or nonrival.",
+        "worked": "At four displays, Group A values the next display at $30,000 and Group B at $20,000. Because both groups consume the same public-good quantity, MSB is the vertical sum: $50,000. If MC is $50,000, four displays are efficient. Summing quantities horizontally would be the wrong procedure.",
+        "check": "Which combination describes a common resource: excludable/nonrival or nonexcludable/rival?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "VERTICAL SUMMATION"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Excludability asks whether nonpayers can be kept out; rivalry asks whether one person's use reduces another's. Public goods are nonexcludable and nonrival, common resources are nonexcludable and rival, club goods are excludable and nonrival, and private goods are excludable and rival.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "goods classification",
+          "free riding",
+          "vertical summation",
+          "tragedy of the commons",
+          "property rights"
+        ],
+        "observedMisconceptions": [
+          "Do not classify a good by who supplies it. Government provision does not automatically make a good nonexcludable or nonrival."
+        ],
+        "questionsInspected": 176
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-56",
+      "canonicalConceptIds": [
+        "market-power"
+      ],
+      "title": "Market Power",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "price influence",
+        "imperfect competition",
+        "entry barriers",
+        "output restriction",
+        "inefficiency"
+      ],
+      "content": {
+        "outcome": "Explain how limited competition lets a firm influence price and efficiency.",
+        "core": "Market power is the ability to influence price rather than take the market price as given. It can arise from barriers to entry, product differentiation, control of a key input, network effects, or a small number of rivals. Monopoly is one strong case, but market power is broader than monopoly.",
+        "recognition": [
+          "A price-setting firm faces a downward-sloping demand curve for its product.",
+          "Barriers or limited substitutes reduce competitive pressure and protect markups.",
+          "Compared with a competitive benchmark, market power commonly raises price and reduces output.",
+          "The output restriction can create deadweight loss because mutually beneficial trades do not occur."
+        ],
+        "watch": "Do not infer market power from a high price alone. Look for limited substitution, entry barriers, concentration, or evidence that the firm can profitably influence price.",
+        "worked": "A local utility is protected by very high fixed network costs, so duplicating the network is inefficient. The firm can influence price because entry is difficult. Regulation may limit the price, but a price set too low can also prevent cost recovery. The central issue is the tradeoff between market power and feasible service provision.",
+        "check": "Why can a firm with close substitutes usually exercise less market power?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Foundational",
+        "time": "4 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "PRICE SETTER, NOT PRICE TAKER"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Market power is the ability to influence price rather than take the market price as given. It can arise from barriers to entry, product differentiation, control of a key input, network effects, or a small number of rivals. Monopoly is one strong case, but market power is broader than monopoly.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "price influence",
+          "imperfect competition",
+          "entry barriers",
+          "output restriction",
+          "inefficiency"
+        ],
+        "observedMisconceptions": [
+          "Do not infer market power from a high price alone. Look for limited substitution, entry barriers, concentration, or evidence that the firm can profitably influence price."
+        ],
+        "questionsInspected": 9
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-57",
+      "canonicalConceptIds": [
+        "factor-markets"
+      ],
+      "title": "Factor Markets & Labor Demand",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "derived demand",
+        "MPL",
+        "VMP",
+        "hiring rule",
+        "labor demand and supply shifts"
+      ],
+      "content": {
+        "outcome": "Use marginal productivity to analyze labor demand, wages, and employment.",
+        "core": "Labor demand is derived from the value workers add to output. Marginal product of labor is the extra output from one more worker. For a price-taking seller, VMP = output price x MPL. A profit-maximizing firm hires labor up to the point where VMP equals the wage.",
+        "recognition": [
+          "A wage change causes movement along labor demand; productivity or output-price changes shift labor demand.",
+          "Higher product demand, output price, or worker productivity shifts labor demand right.",
+          "Worker preferences, population, migration, training, and alternative jobs can shift labor supply.",
+          "Competitive wage and employment occur where market labor demand intersects market labor supply."
+        ],
+        "watch": "Do not confuse MPL with VMP. MPL is extra physical output; VMP converts that output into dollars by multiplying by the output price.",
+        "worked": "A worker adds 6 units of output per hour and each unit sells for $5, so VMP = $5 x 6 = $30 per hour. At a $24 wage, hiring the worker adds $6 to profit. The firm continues hiring until the next worker's VMP falls to the wage.",
+        "check": "If the output price rises while worker productivity is unchanged, what happens to labor demand?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "VMP HIRING RULE"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Labor demand is derived from the value workers add to output. Marginal product of labor is the extra output from one more worker. For a price-taking seller, VMP = output price x MPL. A profit-maximizing firm hires labor up to the point where VMP equals the wage.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "derived demand",
+          "MPL",
+          "VMP",
+          "hiring rule",
+          "labor demand and supply shifts"
+        ],
+        "observedMisconceptions": [
+          "Do not confuse MPL with VMP. MPL is extra physical output; VMP converts that output into dollars by multiplying by the output price."
+        ],
+        "questionsInspected": 240
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-58",
+      "canonicalConceptIds": [
+        "consumer-choice"
+      ],
+      "title": "Consumer Choice",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "budget constraint",
+        "relative price",
+        "feasible set",
+        "indifference curves",
+        "consumer optimum"
+      ],
+      "content": {
+        "outcome": "Use a budget constraint and preferences to identify the best affordable bundle.",
+        "core": "A budget constraint shows every bundle a consumer can afford at given income and prices. Its intercepts are income divided by each good's price, and its slope is the negative relative price. Preferences rank feasible bundles; the optimum is the highest attainable indifference curve, usually where MRS equals the price ratio.",
+        "recognition": [
+          "Bundles inside or on the budget line are feasible; bundles outside it are infeasible.",
+          "An income change shifts the line in parallel when prices are fixed.",
+          "A change in one price pivots the line around the unchanged intercept.",
+          "At an interior optimum, marginal utility per dollar is equal across goods."
+        ],
+        "watch": "Spending the whole budget is not enough to prove optimality. The chosen bundle must also provide the highest attainable preference ranking.",
+        "worked": "Income is $40, X costs $4, and Y costs $8. The intercepts are 10 units of X and 5 of Y, and the slope is -Px/Py = -1/2. A bundle with 6 X and 2 Y costs exactly $40. Among affordable bundles, choose the one on the highest attainable indifference curve.",
+        "check": "If only the price of Y falls, does the budget line shift in parallel or pivot?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "BUDGET LINE AND OPTIMUM"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "A budget constraint shows every bundle a consumer can afford at given income and prices. Its intercepts are income divided by each good's price, and its slope is the negative relative price. Preferences rank feasible bundles; the optimum is the highest attainable indifference curve, usually where MRS equals the price ratio.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "budget constraint",
+          "relative price",
+          "feasible set",
+          "indifference curves",
+          "consumer optimum"
+        ],
+        "observedMisconceptions": [
+          "Spending the whole budget is not enough to prove optimality. The chosen bundle must also provide the highest attainable preference ranking."
+        ],
+        "questionsInspected": 160
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-59",
+      "canonicalConceptIds": [
+        "income-inequality-poverty-and-redistribution"
+      ],
+      "title": "Income Inequality & the Lorenz Curve",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "Lorenz curve",
+        "line of equality",
+        "inequality comparisons",
+        "Gini coefficient",
+        "income level versus distribution"
+      ],
+      "content": {
+        "outcome": "Interpret Lorenz curves, Gini coefficients, and redistribution tradeoffs.",
+        "core": "A Lorenz curve plots the cumulative share of income received by cumulative shares of the population, ordered from lowest to highest income. The 45-degree line represents complete equality. A curve farther below that line indicates greater inequality, not necessarily lower average income.",
+        "recognition": [
+          "Read a point as a cumulative population share paired with a cumulative income share.",
+          "A Lorenz curve moving toward the equality line indicates less inequality.",
+          "The Gini coefficient summarizes the gap from equality: 0 is equality; values nearer 1 indicate more inequality.",
+          "Poverty thresholds and redistribution policies address related but distinct questions from inequality measurement."
+        ],
+        "watch": "Do not use a Lorenz curve to infer a country's income level. Two countries can have the same distribution shape and very different average incomes.",
+        "worked": "The curve shows that the bottom 40 percent receives 15 percent of total income. After a policy, the curve moves closer to equality and the Gini falls from 0.38 to 0.25. Both changes indicate less inequality, but they do not by themselves reveal whether total income rose or fell.",
+        "check": "Which society is more unequal: the one with Gini 0.28 or Gini 0.46?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "READING A LORENZ CURVE"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "A Lorenz curve plots the cumulative share of income received by cumulative shares of the population, ordered from lowest to highest income. The 45-degree line represents complete equality. A curve farther below that line indicates greater inequality, not necessarily lower average income.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "Lorenz curve",
+          "line of equality",
+          "inequality comparisons",
+          "Gini coefficient",
+          "income level versus distribution"
+        ],
+        "observedMisconceptions": [
+          "Do not use a Lorenz curve to infer a country's income level. Two countries can have the same distribution shape and very different average incomes."
+        ],
+        "questionsInspected": 160
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
+      }
+    },
+    {
+      "code": "MICRO-60",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Information, Behavior & Public Choice",
+      "discipline": "micro",
+      "disciplineLabel": "MICROECONOMICS",
+      "focusTerms": [
+        "adverse selection",
+        "moral hazard",
+        "signaling and screening",
+        "behavioral biases",
+        "public choice"
+      ],
+      "content": {
+        "outcome": "Diagnose information problems, behavioral biases, and collective-choice limits.",
+        "core": "Standard market models can miss three distinct forces: unequal information between parties, predictable departures from fully rational choice, and political decision rules that aggregate competing preferences. Identify the mechanism before choosing a remedy or prediction.",
+        "recognition": [
+          "Adverse selection occurs before agreement; moral hazard occurs after protection changes behavior.",
+          "Signaling is initiated by the informed side; screening is initiated by the uninformed side.",
+          "Behavioral economics studies systematic biases such as present bias, loss aversion, and framing.",
+          "Public choice applies incentives to voters and officials; majority preferences can cycle, and aggregation has limits."
+        ],
+        "watch": "Do not treat every bad decision as asymmetric information. Ask who knows what, when hidden information or action matters, and whether the issue is instead a behavioral bias or a voting rule.",
+        "worked": "An insurer cannot observe a buyer's risk before enrollment: adverse selection. After coverage, the buyer takes fewer precautions: moral hazard. A default enrollment rule raises saving without changing prices: a behavioral nudge. A three-option vote cycles depending on the agenda: a collective-choice problem.",
+        "check": "A lender requires documentation from applicants. Is that signaling or screening?",
+        "graph": false,
+        "calculation": false,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "IDENTIFY THE MECHANISM"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Standard market models can miss three distinct forces: unequal information between parties, predictable departures from fully rational choice, and political decision rules that aggregate competing preferences. Identify the mechanism before choosing a remedy or prediction.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "adverse selection",
+          "moral hazard",
+          "signaling and screening",
+          "behavioral biases",
+          "public choice"
+        ],
+        "observedMisconceptions": [
+          "Do not treat every bad decision as asymmetric information. Ask who knows what, when hidden information or action matters, and whether the issue is instead a behavioral bias or a voting rule."
+        ],
+        "questionsInspected": 180
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false
       }
     }
   ]

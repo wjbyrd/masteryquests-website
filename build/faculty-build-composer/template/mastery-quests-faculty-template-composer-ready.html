@@ -11006,10 +11006,10 @@ function getConceptReviewResolutionInput(report){
 }
 
 function renderConceptReviewLink(item, compact = false){
-    return `<a class="concept-review-link${compact ? " compact" : ""}" href="${escapeHTML(item.path)}" target="_blank" rel="noopener" aria-label="Open Concept Review: ${escapeHTML(item.title)}">
+    return `<a class="concept-review-link${compact ? " compact" : ""}" href="${escapeHTML(item.path)}" target="_blank" rel="noopener" aria-label="Open Concept Review ${escapeHTML(item.code)}: ${escapeHTML(item.title)}">
         <span class="concept-review-link-title">${escapeHTML(item.title)}</span>
         ${compact ? "" : `<span class="concept-review-reason">${escapeHTML(item.reason || "Review this concept before your next run.")}</span>`}
-        <span class="concept-review-open" aria-hidden="true">Open PDF ↗</span>
+        <span class="concept-review-open" aria-hidden="true">${escapeHTML(item.code)} · Open PDF ↗</span>
     </a>`;
 }
 

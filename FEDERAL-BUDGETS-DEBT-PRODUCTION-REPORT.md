@@ -7,7 +7,7 @@
 
 ## 1. Executive summary
 
-Published one original Principles Macroeconomics concept with exactly 108 new questions. The release adds no assets or graph-dependent questions, changes no prior question record, preserves all 38 audited supporting records, and raises the canonical library to 9,379 questions, 134 concepts, and 486 assets. The focused validator passed 2,186 checks and the active Composer suite passed all 24 runners.
+Published one original Principles Macroeconomics concept with exactly 108 questions. The answer-choice follow-up changes only the targeted concept, adds no assets or graph-dependent questions, preserves all 38 audited supporting records, and keeps the canonical library at 9,379 questions, 134 concepts, and 486 assets. The focused validator passed 2,186 checks and the active Composer suite passed all 25 runners.
 
 ## 2. Concept registration
 
@@ -150,7 +150,19 @@ No president, administration, political party, campaign language, ideological la
 
 ## 22. Active Composer suite
 
-The active suite passed **24/24 runners**. It includes the new focused validator, the existing 1,067-check Factor Markets validator, the 2,171-check remaining-Micro validator, the 25-run simulation/manual audit, checkpoint regression, concept-review and Mastery Report tests, and all mode validators. Release pins were advanced from 9,271/133 to 9,379/134; behavioral thresholds were not changed. Historical `audit_tools/run_macro_m2*.mjs` scripts remain archival phase-tail validators whose `libraryVersion.endsWith(PHASE)` contract predates multiple later releases; the focused validator instead proves every pre-existing question record—including all Macro banks—is byte-for-byte unchanged from `HEAD`.
+The active suite passed **25/25 runners**. It includes the focused content validator, the durable answer-length regression validator, the existing 1,067-check Factor Markets validator, the 2,171-check remaining-Micro validator, the 25-run simulation/manual audit, checkpoint regression, concept-review and Mastery Report tests, and all mode validators. The two earlier bank validators exclude only the pinned 43060–43167 active-repair range from their cross-bank immutability comparison; the Federal Budgets & Debt focused validator pins that complete range, while all records outside the repaired concept and all 38 named supporting records remain byte-for-byte unchanged from `HEAD`. Historical `audit_tools/run_macro_m2*.mjs` scripts remain archival phase-tail validators whose `libraryVersion.endsWith(PHASE)` contract predates multiple later releases; current Macro placement, composition, and non-target record integrity are covered by the focused and active-suite checks.
+
+## Faculty Gameplay Answer-Choice Audit
+
+Faculty Unlimited Practice sampling correctly identified a systematic presentation cue. The frozen 108-question baseline found the correct answer was longest, including ties, on **94/108 (87.037%)** questions and uniquely longest on **62/108 (57.407%)**. Correct answers averaged **8.463 normalized words** (median **8**) versus **5.460** across distractor choices (median **6**). Correct answers exceeded the average distractor by at least 20%, 35%, and 50% on 65, 60, and 48 questions, respectively.
+
+The audit traced the bias primarily to four constructions: a full explanation in the correct choice against short labels; necessary qualifications appearing only in the correct choice; complete-sentence keys against fragment distractors; and Elite/Legendary keys carrying the only nuanced claim while distractors used crude absolutes. Official-source qualifications were also repeated in some correct choices even though the stem already established the agency, date, and projection status.
+
+Targeted repairs changed answer-choice wording on **60 questions**: 57 included a more concise keyed-choice phrasing and 3 changed distractors only. Explanatory substance remains in the existing feedback, and longer distractors represent recognizable misconceptions rather than filler. The repaired correct-length ranks are 37 shortest, 36 second shortest, 27 second longest, and 8 longest, avoiding a replacement mechanical pattern. The correct answer is now longest, including ties, on **45/108 (41.667%)** and uniquely longest on **8/108 (7.407%)**. Correct choices average **6.185 normalized words** (median **6**) versus **6.287** for distractors (median **6**); only one question remains at or above a 1.5× correct-to-average-distractor ratio.
+
+The 15 official-data questions now have a 33.333% longest-correct rate and 0% uniquely-longest rate. Repair remains intentionally simple at 2.625 average words for both correct and distractor choices; Bridge averages 5.875 correct versus 6.833 distractor words. Qualifier-bearing correct answers fell from 13 to 11 while qualifier-bearing distractor choices rose from 18 to 19. The term `can` is balanced 7-to-7 across correct answers and distractor choices; absolute terms remain more common in distractors (33 choices) than correct answers (1), as expected for the audited misconceptions.
+
+No answer position or keyed economic conclusion changed. Because 57 correct-choice phrasings changed, their published answer hashes were deterministically regenerated and the focused answer-sequence pin was advanced; no question was re-keyed to a different option, and no economics, learning objective, feedback conclusion, distribution, source claim, or runtime behavior changed. The validator records character, raw-word, and normalized-word measures per option; reports breakdowns by FB objective, difficulty, pool, type, official-data status, Repair, and Bridge; and warns on systematic longest/unique-longest, rank concentration, average-length, qualifier, and extreme-ratio regressions. The frozen baseline, repaired JSON diagnostics, and faculty-readable before/after sample are retained beside the validator.
 
 ## 23. Browser QA
 
@@ -170,7 +182,7 @@ Exam Drill and Unlimited Practice both generated reports. The longer report disp
 | Concepts | 133 | 134 | +1 |
 | Assets | 486 | 486 | 0 |
 
-Published library SHA-256: `e47d94f4b2e11e010a8ce02c18f606ed0589d493e7cbf0170a3bdd9eeb10d742`.
+Published library SHA-256: `101f2f8fdc40822fdd4ade7128bc6fc41799f96ed137a8f88d3d83dd137927e6`.
 
 ## 26. Exact files changed
 
@@ -182,8 +194,12 @@ New production files:
 - `build/faculty-build-composer/authoring/federal_budgets_debt_question_pool_author.mjs`
 - `build/faculty-build-composer/federal_budgets_debt_validation_results.json`
 - `build/faculty-build-composer/tests/federal-budgets-debt-browser-qa-results.json`
+- `build/faculty-build-composer/tests/federal-budgets-debt-answer-choice-repair-sample.html`
+- `build/faculty-build-composer/tests/federal-budgets-debt-answer-length-baseline.json`
+- `build/faculty-build-composer/tests/federal-budgets-debt-answer-length-results.json`
 - `build/faculty-build-composer/tests/federal-budgets-debt-faculty-sample.html`
 - `build/faculty-build-composer/tests/federal-budgets-debt-production-sample.html`
+- `build/faculty-build-composer/tests/run_federal_budgets_debt_answer_length_validation.mjs`
 - `build/faculty-build-composer/tests/run_federal_budgets_debt_question_pool_validation.mjs`
 
 Deterministically generated library/registration files:
@@ -214,4 +230,4 @@ Active-suite baseline/integration files:
 
 ## 27. Remaining limitations/issues
 
-No production-blocking issue remains. Intended limitations are: zero dedicated graph questions; standalone Trial by Graph unavailable; official statistics frozen to dated CBO/Treasury sources rather than live values; and no final faculty concept-review sheet until the later synchronization pass. No runtime change was made, no legacy question was altered, and no commit was created.
+No production-blocking issue remains. Intended limitations are: zero dedicated graph questions; standalone Trial by Graph unavailable; official statistics frozen to dated CBO/Treasury sources rather than live values; and no final faculty concept-review sheet until the later synchronization pass. No runtime change was made, no record outside the targeted concept was altered, and no commit was created.

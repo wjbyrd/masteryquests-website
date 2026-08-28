@@ -1,6 +1,6 @@
 {
   "schemaVersion": "8.0.0-composer-integration",
-  "generatedAt": "2026-08-27T18:00:00.000Z",
+  "generatedAt": "2026-08-28T12:00:00-04:00",
   "sourceAuthoringSchemaVersion": "7.0.0-no-subtitle-template-authoritative",
   "composerLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1",
   "contract": {
@@ -17,21 +17,21 @@
     "sourcePdfPolicy": "immutable-copy-with-sha256-verification"
   },
   "summary": {
-    "totalPdfCount": 120,
+    "totalPdfCount": 127,
     "generalPdfCount": 26,
-    "microPdfCount": 53,
+    "microPdfCount": 60,
     "macroPdfCount": 41,
-    "totalPdfSizeBytes": 59987311,
+    "totalPdfSizeBytes": 61701663,
     "canonicalConceptCount": 134,
-    "directlyMappedCanonicalConceptCount": 118,
+    "directlyMappedCanonicalConceptCount": 122,
     "dispositionCounts": {
-      "REVIEW_SHEET": 118,
       "COVERED_BY_CHILD_CONCEPT": 8,
-      "NO_SHEET_INTEGRATION_META": 6,
-      "HIDDEN_SUPPLEMENTAL": 2
+      "HIDDEN_SUPPLEMENTAL": 2,
+      "NO_SHEET_INTEGRATION_META": 2,
+      "REVIEW_SHEET": 122
     },
     "hardFailureCount": 0,
-    "warningCount": 2
+    "warningCount": 4
   },
   "standardizedBenchmark": null,
   "renumberingMap": {
@@ -1371,11 +1371,7 @@
     },
     {
       "code": "MICRO-03",
-      "canonicalConceptIds": [
-        "externalities",
-        "public-goods-and-common-resources",
-        "market-power"
-      ],
+      "canonicalConceptIds": [],
       "title": "Market Failures",
       "discipline": "micro",
       "disposition": "REVIEW_SHEET",
@@ -2339,6 +2335,139 @@
       "hasSelectableText": true,
       "documentLanguage": "en-US",
       "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MICRO-54",
+      "canonicalConceptIds": [
+        "externalities"
+      ],
+      "title": "Externalities",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-54.pdf",
+      "runtimeFilename": "MICRO-54.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "89e04eb711c09baed35556218262dbedf34bf3cbd60730ee3e09e518e0fedf7e",
+      "sizeBytes": 244608,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MICRO-55",
+      "canonicalConceptIds": [
+        "public-goods-and-common-resources"
+      ],
+      "title": "Public Goods & Common Resources",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-55.pdf",
+      "runtimeFilename": "MICRO-55.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "f2a586200ed66c9a30d1a672b4adf39b7d2e52d197c98206321e5a16ddda18bc",
+      "sizeBytes": 244732,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MICRO-56",
+      "canonicalConceptIds": [
+        "market-power"
+      ],
+      "title": "Market Power",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-56.pdf",
+      "runtimeFilename": "MICRO-56.pdf",
+      "hasGraph": false,
+      "hasCalculation": false,
+      "sha256": "5e3ae831058a43d294e70178a757c73e5bfd6e93c8e7f7d33c2ce0ce5ab68dfb",
+      "sizeBytes": 244941,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MICRO-57",
+      "canonicalConceptIds": [
+        "factor-markets"
+      ],
+      "title": "Factor Markets & Labor Demand",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-57.pdf",
+      "runtimeFilename": "MICRO-57.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "f66f7b5617440d57fafcbcb5ef3038d11da5ae6aaa74f08f01aa1219921e875a",
+      "sizeBytes": 244682,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MICRO-58",
+      "canonicalConceptIds": [
+        "consumer-choice"
+      ],
+      "title": "Consumer Choice",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-58.pdf",
+      "runtimeFilename": "MICRO-58.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "b43c0e12e87e8557f62d57f205d94caf922e8b99d0cc755ec7250cfb22d187d8",
+      "sizeBytes": 245641,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MICRO-59",
+      "canonicalConceptIds": [
+        "income-inequality-poverty-and-redistribution"
+      ],
+      "title": "Income Inequality & the Lorenz Curve",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-59.pdf",
+      "runtimeFilename": "MICRO-59.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "5ff8e71d032565c07a683d0c1df0f6d028ed9bab3329c99fecbbd3ecb9116e89",
+      "sizeBytes": 244717,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MICRO-60",
+      "canonicalConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "title": "Information, Behavior & Public Choice",
+      "discipline": "micro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MICRO-60.pdf",
+      "runtimeFilename": "MICRO-60.pdf",
+      "hasGraph": false,
+      "hasCalculation": false,
+      "sha256": "2e84ca33487355739b352cbff062b59b032131f1abdee5c9222697313aee4609",
+      "sizeBytes": 245031,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
     }
   ],
   "concepts": [
@@ -2442,7 +2571,9 @@
       "displayName": "Price Ceilings",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -2461,7 +2592,9 @@
       "displayName": "Price Floors",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -2575,7 +2708,9 @@
       "displayName": "Competitive Markets",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -2703,6 +2838,25 @@
         "MICRO-15"
       ],
       "reason": "The broad family has no synthetic parent sheet. Its explicit child concepts provide review coverage."
+    },
+    {
+      "canonicalConceptId": "consumer-choice",
+      "displayName": "Consumer Choice",
+      "discipline": "micro",
+      "areas": [
+        "micro"
+      ],
+      "parentId": null,
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MICRO-58"
+      ],
+      "primaryReviewCode": "MICRO-58"
     },
     {
       "canonicalConceptId": "consumer-surplus",
@@ -2874,7 +3028,9 @@
       "displayName": "Demand",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -3010,9 +3166,7 @@
       "displayName": "Elasticity",
       "discipline": "micro",
       "areas": [
-        "general",
-        "micro",
-        "macro"
+        "micro"
       ],
       "parentId": null,
       "childIds": [
@@ -3064,6 +3218,60 @@
         "MICRO-08"
       ],
       "primaryReviewCode": "MICRO-08"
+    },
+    {
+      "canonicalConceptId": "externalities",
+      "displayName": "Externalities",
+      "discipline": "micro",
+      "areas": [
+        "micro"
+      ],
+      "parentId": "market-failures",
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MICRO-54"
+      ],
+      "primaryReviewCode": "MICRO-54"
+    },
+    {
+      "canonicalConceptId": "factor-markets",
+      "displayName": "Factor Markets",
+      "discipline": "micro",
+      "areas": [
+        "micro"
+      ],
+      "parentId": null,
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MICRO-57"
+      ],
+      "primaryReviewCode": "MICRO-57"
+    },
+    {
+      "canonicalConceptId": "federal-budgets-and-debt",
+      "displayName": "Federal Budgets & Debt",
+      "discipline": "macro",
+      "areas": [
+        "macro"
+      ],
+      "parentId": null,
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "NO_SHEET_INTEGRATION_META",
+      "reason": "This independently diagnosable production concept was added without an immutable faculty review PDF."
     },
     {
       "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
@@ -3186,7 +3394,9 @@
       "displayName": "Import Quotas, Quota Rents & Tariff–Quota Comparison",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": "international-trade-and-trade-policy",
       "childIds": [],
@@ -3239,6 +3449,25 @@
         "MICRO-06"
       ],
       "primaryReviewCode": "MICRO-06"
+    },
+    {
+      "canonicalConceptId": "income-inequality-poverty-and-redistribution",
+      "displayName": "Income Inequality, Poverty, and Redistribution",
+      "discipline": "micro",
+      "areas": [
+        "micro"
+      ],
+      "parentId": null,
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MICRO-59"
+      ],
+      "primaryReviewCode": "MICRO-59"
     },
     {
       "canonicalConceptId": "indexing-and-real-values",
@@ -3298,13 +3527,30 @@
       "primaryReviewCode": "MACRO-27"
     },
     {
+      "canonicalConceptId": "information-asymmetry-behavioral-and-political-economy",
+      "displayName": "Information Asymmetry, Behavioral Economics, and Political Economy",
+      "discipline": "micro",
+      "areas": [
+        "micro"
+      ],
+      "parentId": null,
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MICRO-60"
+      ],
+      "primaryReviewCode": "MICRO-60"
+    },
+    {
       "canonicalConceptId": "integrated-economic-analysis",
       "displayName": "Integrated Economic Analysis",
       "discipline": "general",
       "areas": [
-        "general",
-        "micro",
-        "macro"
+        "micro"
       ],
       "parentId": null,
       "childIds": [],
@@ -3567,7 +3813,9 @@
       "displayName": "Market Equilibrium",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -3588,58 +3836,20 @@
       "displayName": "Market Failures",
       "discipline": "micro",
       "areas": [
-        "general",
-        "micro",
-        "macro"
+        "micro"
       ],
       "parentId": null,
-      "childIds": [],
+      "childIds": [
+        "externalities",
+        "public-goods-and-common-resources",
+        "market-power"
+      ],
       "selectable": false,
       "selectableCard": false,
       "diagnosable": false,
       "selectionRole": "legacy-parent",
       "disposition": "HIDDEN_SUPPLEMENTAL",
-      "reviewCodes": [],
-      "primaryReviewCode": null,
-      "reason": "Legacy recipe compatibility parent; the shared Market Failures review is mapped through the three selectable child concepts."
-    },
-    {
-      "canonicalConceptId": "externalities",
-      "displayName": "Externalities",
-      "discipline": "micro",
-      "areas": [
-        "micro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "REVIEW_SHEET",
-      "reviewCodes": [
-        "MICRO-03"
-      ],
-      "primaryReviewCode": "MICRO-03"
-    },
-    {
-      "canonicalConceptId": "public-goods-and-common-resources",
-      "displayName": "Public Goods and Common Resources",
-      "discipline": "micro",
-      "areas": [
-        "micro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "REVIEW_SHEET",
-      "reviewCodes": [
-        "MICRO-03"
-      ],
-      "primaryReviewCode": "MICRO-03"
+      "reason": "Legacy compatibility parent retained for migrated recipes and residual records; active child concepts own dedicated review sheets."
     },
     {
       "canonicalConceptId": "market-power",
@@ -3648,7 +3858,7 @@
       "areas": [
         "micro"
       ],
-      "parentId": null,
+      "parentId": "market-failures",
       "childIds": [],
       "selectable": true,
       "selectableCard": true,
@@ -3656,9 +3866,9 @@
       "selectionRole": "standalone",
       "disposition": "REVIEW_SHEET",
       "reviewCodes": [
-        "MICRO-03"
+        "MICRO-56"
       ],
-      "primaryReviewCode": "MICRO-03"
+      "primaryReviewCode": "MICRO-56"
     },
     {
       "canonicalConceptId": "mcomp-advertising-nonprice",
@@ -4533,6 +4743,25 @@
       "primaryReviewCode": "MICRO-19"
     },
     {
+      "canonicalConceptId": "public-goods-and-common-resources",
+      "displayName": "Public Goods and Common Resources",
+      "discipline": "micro",
+      "areas": [
+        "micro"
+      ],
+      "parentId": "market-failures",
+      "childIds": [],
+      "selectable": true,
+      "selectableCard": true,
+      "diagnosable": true,
+      "selectionRole": "standalone",
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MICRO-55"
+      ],
+      "primaryReviewCode": "MICRO-55"
+    },
+    {
       "canonicalConceptId": "quantity-theory-of-money",
       "displayName": "Quantity Theory of Money",
       "discipline": "macro",
@@ -4728,7 +4957,9 @@
       "displayName": "Statutory versus Economic Tax Incidence",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -4766,7 +4997,9 @@
       "displayName": "Supply",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -4805,7 +5038,9 @@
       "displayName": "Tariffs, Revenue & Deadweight Loss",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": "international-trade-and-trade-policy",
       "childIds": [],
@@ -4824,7 +5059,9 @@
       "displayName": "Tax Incidence",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": null,
       "childIds": [],
@@ -4919,7 +5156,9 @@
       "displayName": "Trade-Policy Arguments, Efficiency & Distribution",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": "international-trade-and-trade-policy",
       "childIds": [],
@@ -4938,7 +5177,9 @@
       "displayName": "World Prices & Importer/Exporter Status",
       "discipline": "general",
       "areas": [
-        "micro"
+        "general",
+        "micro",
+        "macro"
       ],
       "parentId": "international-trade-and-trade-policy",
       "childIds": [],
@@ -4989,86 +5230,6 @@
         "MACRO-15"
       ],
       "primaryReviewCode": "MACRO-15"
-    },
-    {
-      "canonicalConceptId": "factor-markets",
-      "displayName": "Factor Markets",
-      "discipline": "micro",
-      "areas": [
-        "micro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "The new factor-market concept is independently diagnosable in Mastery Reports; no immutable faculty review PDF was supplied for this production phase."
-    },
-    {
-      "canonicalConceptId": "consumer-choice",
-      "displayName": "Consumer Choice",
-      "discipline": "micro",
-      "areas": [
-        "micro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "This independently diagnosable production concept was added without an immutable faculty review PDF."
-    },
-    {
-      "canonicalConceptId": "income-inequality-poverty-and-redistribution",
-      "displayName": "Income Inequality, Poverty, and Redistribution",
-      "discipline": "micro",
-      "areas": [
-        "micro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "This independently diagnosable production concept was added without an immutable faculty review PDF."
-    },
-    {
-      "canonicalConceptId": "information-asymmetry-behavioral-and-political-economy",
-      "displayName": "Information Asymmetry, Behavioral Economics, and Political Economy",
-      "discipline": "micro",
-      "areas": [
-        "micro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "This independently diagnosable production concept was added without an immutable faculty review PDF."
-    },
-    {
-      "canonicalConceptId": "federal-budgets-and-debt",
-      "displayName": "Federal Budgets & Debt",
-      "discipline": "macro",
-      "areas": [
-        "macro"
-      ],
-      "parentId": null,
-      "childIds": [],
-      "selectable": true,
-      "selectableCard": true,
-      "diagnosable": true,
-      "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "This independently diagnosable production concept was added without an immutable faculty review PDF."
     }
   ]
 }

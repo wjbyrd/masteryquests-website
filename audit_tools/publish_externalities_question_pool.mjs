@@ -421,54 +421,14 @@ function refreshRegistry(library) {
 }
 
 function refreshConceptReviews(reviewManifest, reviewSource, libraryVersion) {
-  const review = reviewManifest.reviews.find(item => item.code === "MICRO-03");
-  if (!review) throw new Error("Missing MICRO-03 Market Failures review record.");
-  review.canonicalConceptIds = [...CHILD_CONCEPT_IDS];
-
-  reviewManifest.concepts = reviewManifest.concepts.filter(item => !CHILD_CONCEPT_SET.has(item.canonicalConceptId));
-  const parentIndex = reviewManifest.concepts.findIndex(item => item.canonicalConceptId === PARENT_CONCEPT_ID);
-  if (parentIndex < 0) throw new Error("Missing Market Failures concept-review mapping.");
-  Object.assign(reviewManifest.concepts[parentIndex], {
-    selectable: false,
-    selectableCard: false,
-    diagnosable: false,
-    selectionRole: "legacy-parent",
-    disposition: "HIDDEN_SUPPLEMENTAL",
-    reviewCodes: [],
-    primaryReviewCode: null,
-    reason: "Legacy recipe compatibility parent; the shared Market Failures review is mapped through the three selectable child concepts."
-  });
-  const conceptMappings = CHILD_CONCEPT_IDS.map(conceptId => ({
-    canonicalConceptId: conceptId,
-    displayName: TAXONOMY_CONCEPTS[conceptId].title,
-    discipline: "micro",
-    areas: ["micro"],
-    parentId: null,
-    childIds: [],
-    selectable: true,
-    selectableCard: true,
-    diagnosable: true,
-    selectionRole: "standalone",
-    disposition: "REVIEW_SHEET",
-    reviewCodes: ["MICRO-03"],
-    primaryReviewCode: "MICRO-03"
-  }));
-  reviewManifest.concepts.splice(parentIndex + 1, 0, ...conceptMappings);
-  reviewManifest.generatedAt = GENERATED_AT;
-  reviewManifest.composerLibraryVersion = libraryVersion;
-  reviewManifest.summary.canonicalConceptCount = reviewManifest.concepts.length;
-  reviewManifest.summary.directlyMappedCanonicalConceptCount = reviewManifest.concepts.filter(item => (item.reviewCodes || []).length > 0).length;
-  reviewManifest.summary.dispositionCounts = reviewManifest.concepts.reduce((counts, item) => {
-    counts[item.disposition] = (counts[item.disposition] || 0) + 1;
-    return counts;
-  }, {});
-
-  const sourceReview = reviewSource.reviews.find(item => item.code === "MICRO-03");
-  if (!sourceReview) throw new Error("Missing MICRO-03 concept-review authoring source.");
-  sourceReview.canonicalConceptIds = [...CHILD_CONCEPT_IDS];
-  sourceReview.evidence.questionsInspected = Object.values(LEGACY_SUBTOPIC_ASSIGNMENTS).flat().length + ordinaryQuestions.length;
-  reviewSource.generatedAt = GENERATED_AT;
-  reviewSource.composerLibraryVersion = libraryVersion;
+  const expected = new Map([["externalities", "MICRO-54"], ["public-goods-and-common-resources", "MICRO-55"], ["market-power", "MICRO-56"]]);
+  for (const [conceptId, code] of expected) {
+    const mapping = reviewManifest.concepts.find(item => item.canonicalConceptId === conceptId);
+    if (mapping?.primaryReviewCode !== code) throw new Error(`Concept Review source is stale for ${conceptId}.`);
+    if (!reviewSource.reviews.some(item => item.code === code && item.canonicalConceptIds?.includes(conceptId))) throw new Error(`Missing dedicated Concept Review source ${code}.`);
+  }
+  const legacy = reviewManifest.reviews.find(item => item.code === "MICRO-03");
+  if (!legacy || (legacy.canonicalConceptIds || []).length) throw new Error("MICRO-03 must remain preserved and unreachable from active children.");
 }
 
 function render() {

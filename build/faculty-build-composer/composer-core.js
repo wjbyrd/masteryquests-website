@@ -845,6 +845,7 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
 
   const evidenceRoutes = {
     questionToConceptIds:{},
+    tagToConceptIds:{},
     repairSkillToConceptIds:{},
     primarySkillToConceptIds:{},
     secondarySkillToConceptIds:{},
@@ -865,10 +866,11 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
       const subtopicIds = uniqueStrings(question?.subtopicIds || []).filter(id => diagnosticIds.has(id));
       const targets = uniqueStrings([
         ...(subtopicIds.length ? subtopicIds : []),
-        ...(diagnosticIds.has(primaryId) && primaryId !== familyId ? [primaryId] : [])
+        ...(diagnosticIds.has(primaryId) ? [primaryId] : [])
       ]);
       if(!targets.length) continue;
       addEvidenceRoute(evidenceRoutes.questionToConceptIds, idOf(question), targets);
+      addEvidenceRoute(evidenceRoutes.tagToConceptIds, question?.tag, targets);
       addEvidenceRoute(evidenceRoutes.repairSkillToConceptIds, question?.repairSkill || question?.repairSkillId, targets);
       addEvidenceRoute(evidenceRoutes.primarySkillToConceptIds, question?.primarySkill || question?.skillId, targets);
       for(const skill of uniqueStrings([...(question?.secondarySkills || []), ...(question?.secondarySkillIds || [])])){

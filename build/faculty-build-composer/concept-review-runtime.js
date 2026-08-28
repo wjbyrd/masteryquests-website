@@ -134,6 +134,7 @@
     const scores = new Map();
     const maps = {
       question:routeMap(manifest, 'questionToConceptIds'),
+      tag:routeMap(manifest, 'tagToConceptIds'),
       repair:routeMap(manifest, 'repairSkillToConceptIds'),
       primary:routeMap(manifest, 'primarySkillToConceptIds'),
       secondary:routeMap(manifest, 'secondarySkillToConceptIds'),
@@ -144,6 +145,7 @@
       const direct = [attempt?.canonicalConceptId, attempt?.primaryConceptId].filter(Boolean);
       scoreIds(scores, direct, weight * 5, allowed);
       scoreIds(scores, attempt?.subtopicIds, weight * 4, allowed);
+      scoreIds(scores, maps.tag[String(attempt?.tag || '')], weight * 4, allowed);
       scoreIds(scores, maps.repair[String(attempt?.repairSkill || '')], weight * 3, allowed);
       scoreIds(scores, maps.primary[String(attempt?.primarySkill || '')], weight * 2.5, allowed);
       for(const skill of strings(attempt?.secondarySkills || attempt?.secondarySkillIds)){
@@ -164,6 +166,25 @@
       scoreIds(scores, maps.objective[id], weakWeight(item), allowed);
     }
     return scores;
+  }
+
+  function inferCanonicalConceptId(manifest, options){
+    const candidates = Object.entries(manifest?.concepts || {})
+      .filter(([, record]) => record?.disposition !== 'HIDDEN_SUPPLEMENTAL')
+      .map(([id]) => id);
+    const scores = evidenceScores(
+      manifest,
+      candidates,
+      options.attemptEvidence,
+      options.objectiveEvidence,
+      options.skillEvidence
+    );
+    const ranked = [...scores.entries()]
+      .filter(([, score]) => score > 0)
+      .sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    if(!ranked.length) return '';
+    if(ranked[1] && ranked[1][1] === ranked[0][1]) return '';
+    return ranked[0][0];
   }
 
   function reviewAssets(manifest, conceptId){
@@ -227,7 +248,10 @@
   function resolveMasteryConceptReviews(options = {}){
     const manifest = options.manifest;
     if(!manifest || !options.hasMeaningfulWeakness) return {kind:'NONE', recommendations:[]};
-    const canonicalConceptId = String(options.canonicalConceptId || '');
+    const requestedConceptId = String(options.canonicalConceptId || '');
+    const canonicalConceptId = manifest.concepts?.[requestedConceptId]
+      ? requestedConceptId
+      : inferCanonicalConceptId(manifest, options);
     const concept = manifest.concepts?.[canonicalConceptId];
     if(!concept || concept.disposition === 'HIDDEN_SUPPLEMENTAL') return {kind:'NONE', recommendations:[]};
     if(concept.disposition === 'REVIEW_SHEET') return resolveBundle(manifest, canonicalConceptId, options);

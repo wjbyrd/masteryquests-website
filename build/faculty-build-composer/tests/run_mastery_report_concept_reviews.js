@@ -161,7 +161,87 @@ async function run(){
     assert(config.supportedModes.length === 10, 'Generated config does not contain all ten modes.');
     assert(html.includes('function loadConceptReviewManifest') && html.includes('async function showMasteryReportScreen'), 'Generated HTML lacks the runtime loader or async report integration.');
     assert(html.includes('latestConceptReviewTitles') && html.includes('Concept Review:'), 'Copy-report title-only integration is absent.');
+    assert(html.includes('${escapeHTML(item.code)} · Open PDF'), 'Generated template does not visibly identify the Concept Review code.');
     assert(!html.includes('data/concept-reviews/manifest.json'), 'Generated game reaches back into Composer source data.');
+  });
+
+  await test('Q','new Micro concepts resolve to exact dedicated reviews', async () => {
+    const expected = {
+      externalities:'MICRO-54',
+      'public-goods-and-common-resources':'MICRO-55',
+      'market-power':'MICRO-56',
+      'factor-markets':'MICRO-57',
+      'consumer-choice':'MICRO-58',
+      'income-inequality-poverty-and-redistribution':'MICRO-59',
+      'information-asymmetry-behavioral-and-political-economy':'MICRO-60'
+    };
+    for(const [conceptId, code] of Object.entries(expected)){
+      const {manifest} = makeRuntime(library, sourceManifest, [conceptId]);
+      const result = Runtime.resolveMasteryConceptReviews({manifest,canonicalConceptId:conceptId,hasMeaningfulWeakness:true});
+      assert(result.kind === 'DIRECT' && result.recommendations.length === 1, `${conceptId} did not resolve directly.`);
+      assert(result.recommendations[0].code === code, `${conceptId} resolved to ${result.recommendations[0]?.code || 'nothing'} instead of ${code}.`);
+      assert(!['GEN-ECON-04','MICRO-03'].includes(result.recommendations[0].code), `${conceptId} retained a stale review route.`);
+    }
+  });
+
+  await test('R','exact diagnostic aliases stay inside their canonical Micro concept', async () => {
+    const fixtures = [
+      ['externalities','externalities','EXT.1','externality_identification'],
+      ['public-goods-and-common-resources','public-goods-and-common-resources','PGCR.1','goods_classification'],
+      ['market-power','market-power','GE.7.7','market_power'],
+      ['factor-markets','marginal-product-and-value-of-marginal-product','FM.1','calculate_marginal_product_labor'],
+      ['consumer-choice','budget-constraints-and-feasible-sets','CC.1','budget_equation'],
+      ['income-inequality-poverty-and-redistribution','lorenz-curves','IP.1','read_lorenz_curve'],
+      ['information-asymmetry-behavioral-and-political-economy','adverse-selection','IBP.1','analyze_adverse_selection']
+    ];
+    for(const [conceptId, tag, objective, skill] of fixtures){
+      const {manifest} = makeRuntime(library, sourceManifest, [conceptId]);
+      for(const [routeName, key] of [
+        ['tagToConceptIds',tag],
+        ['objectiveToConceptIds',objective],
+        ['primarySkillToConceptIds',skill],
+        ['repairSkillToConceptIds',skill]
+      ]){
+        assert((manifest.evidenceRoutes[routeName]?.[key] || []).includes(conceptId), `${routeName} ${key} does not route to ${conceptId}.`);
+      }
+    }
+  });
+
+  await test('S','legacy Public Goods tag repairs a missing canonical signal without broad fallback', async () => {
+    const {manifest} = makeRuntime(library, sourceManifest, ['public-goods-and-common-resources']);
+    const result = Runtime.resolveMasteryConceptReviews({
+      manifest,
+      canonicalConceptId:'',
+      hasMeaningfulWeakness:true,
+      attemptEvidence:[weakAttempt({tag:'public-goods-and-common-resources',objective:'PGCR.1'})]
+    });
+    assert(result.kind === 'DIRECT', 'Exact Public Goods tag did not recover the canonical concept.');
+    assert(result.recommendations[0]?.code === 'MICRO-55', 'Exact Public Goods tag did not resolve MICRO-55.');
+    assert(!result.recommendations.some(item => ['GEN-ECON-04','MICRO-03'].includes(item.code)), 'Legacy Public Goods tag used a stale fallback.');
+  });
+
+  await test('T','ambiguous objective alone does not trigger a broad Concept Review fallback', async () => {
+    const {manifest} = makeRuntime(library, sourceManifest, ['externalities','public-goods-and-common-resources','market-power']);
+    const result = Runtime.resolveMasteryConceptReviews({
+      manifest,
+      canonicalConceptId:'',
+      hasMeaningfulWeakness:true,
+      objectiveEvidence:[{id:'LO1.6',attempts:2,incorrect:2}]
+    });
+    assert(result.kind === 'NONE', 'Ambiguous shared objective produced a broad fallback review.');
+  });
+
+  await test('U','legacy Market Failures recipe migration retains compatibility and dedicated children', async () => {
+    const migrated = Core.migrateRecipe({schemaVersion:'1.0.0',title:'Legacy',slug:'legacy-market-failures',supportedModes:['standard'],concepts:['market-failures']}, library, {}).recipe;
+    for(const id of ['externalities','public-goods-and-common-resources','market-power','market-failures']){
+      assert(migrated.selectedConceptIds.includes(id), `Legacy migration omitted ${id}.`);
+    }
+    const resolution = Core.resolveConceptReviews(library, sourceManifest, migrated.selectedConceptIds);
+    assert(!resolution.errors.length, resolution.errors.join('\n'));
+    for(const code of ['MICRO-54','MICRO-55','MICRO-56']) assert(resolution.reviewCodes.includes(code), `Legacy migration omitted ${code}.`);
+    assert(!resolution.reviewCodes.includes('MICRO-03'), 'Legacy migration exposed MICRO-03 as an active child review.');
+    const composition = Core.compose(library, migrated);
+    assert(!composition.errors.length && composition.counts.totalCanonical > 0, 'Legacy Market Failures recipe no longer composes.');
   });
 
   const output = {schemaVersion:'1.0.0',status:'PASS',caseCount:cases.length,cases};

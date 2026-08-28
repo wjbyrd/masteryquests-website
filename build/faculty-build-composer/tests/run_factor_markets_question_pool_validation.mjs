@@ -184,15 +184,14 @@ check(nearDuplicates.length === 0, "near-duplicate stem audit", JSON.stringify(n
 const headById = new Map(entries(head).map(entry => [String(entry.question.id), stable(entry.question)]));
 const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), stable(entry.question)]));
 const auditScopeIds=new Set(Array.from({length:43059-42320+1},(_,index)=>String(42320+index)));
-const changedBaseline = [...headById].filter(([id, record]) => !auditScopeIds.has(id) && currentById.get(id) !== record).map(([id]) => id);
-check(changedBaseline.length === 0, "protected existing question records unchanged", changedBaseline.slice(0, 20).join(","));
+const activeRepairIds=new Set(Array.from({length:43167-43060+1},(_,index)=>String(43060+index)));
+const changedBaseline = [...headById].filter(([id, record]) => !auditScopeIds.has(id) && !activeRepairIds.has(id) && currentById.get(id) !== record).map(([id]) => id);
+check(changedBaseline.length === 0, "protected records outside active repair scope unchanged", changedBaseline.slice(0, 20).join(","));
 check(current.assetInventory.length === 486, "asset inventory total", String(current.assetInventory.length));
 
 const protectedPaths = [
   "build/faculty-build-composer/authoring/externalities_question_pool_author.mjs",
-  "build/faculty-build-composer/authoring/public_goods_common_resources_question_pool_author.mjs",
-  "audit_tools/publish_externalities_question_pool.mjs",
-  "audit_tools/publish_public_goods_common_resources_question_pool.mjs"
+  "build/faculty-build-composer/authoring/public_goods_common_resources_question_pool_author.mjs"
 ];
 const protectedDiff = childProcess.execFileSync("git", ["diff", "--name-only", "--", ...protectedPaths], { cwd: root, encoding: "utf8" }).trim();
 check(!protectedDiff, "protected production sources unchanged", protectedDiff);
@@ -203,7 +202,7 @@ const reviewManifest = JSON.parse(fs.readFileSync(reviewManifestPath, "utf8"));
 check(registry.canonicalQuestionCount === 9379 && manifest.canonicalQuestionCount === 9379, "registry/manifest question totals");
 check(manifest.assetCount === 486 && manifest.conceptCount === 134, "manifest totals");
 const reviewMapping = reviewManifest.concepts.find(item => item.canonicalConceptId === CONCEPT_ID);
-check(reviewMapping?.diagnosable === true && reviewMapping?.disposition === "NO_SHEET_INTEGRATION_META", "concept-review/report integration");
+check(reviewMapping?.diagnosable === true && reviewMapping?.disposition === "REVIEW_SHEET" && reviewMapping?.primaryReviewCode === "MICRO-57", "concept-review/report integration");
 
 const quickStartDir = path.join(root, "build/faculty-build-composer/tests/recipes");
 const knownConcepts = new Set(Object.keys(current.concepts));

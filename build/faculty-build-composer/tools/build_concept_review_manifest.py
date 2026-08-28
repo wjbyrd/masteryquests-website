@@ -24,6 +24,11 @@ def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def write_json(path: Path, value: dict[str, Any]) -> None:
+    with path.open("w", encoding="utf-8", newline="\n") as stream:
+        stream.write(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
+
+
 def load_library(path: Path) -> dict[str, Any]:
     text = path.read_text(encoding="utf-8").strip()
     prefix = "window.MQ_COMPOSER_LIBRARY="
@@ -133,6 +138,7 @@ def build_manifest(composer_root: Path) -> tuple[dict[str, Any], dict[str, Any]]
     source_content = load_json(review_root / "concept_review_source.json")
     source_manifest = source_content
     source_validation = load_json(review_root / "concept_review_validation.json")
+    disposition_overrides = source_manifest.get("conceptDispositionOverrides") or {}
     library = load_library(composer_root / "data" / "composer_library.js")
     course_area_js = (composer_root / "course-area-model.js").read_text(encoding="utf-8")
     general_ids = parse_id_set(course_area_js, "GENERAL_AREA_IDS")
@@ -236,6 +242,7 @@ def build_manifest(composer_root: Path) -> tuple[dict[str, Any], dict[str, Any]]
         parent_id = meta.get("parentConceptId") or library_concept.get("derivedFromConceptId")
         child_ids = list(meta.get("childConceptIds") or [])
         review_codes = sorted(set(codes_by_concept.get(concept_id, [])))
+        override = disposition_overrides.get(concept_id) or {}
         diagnosable = module_has_questions(concept_id, library_concept, concepts)
         selectable_card = meta.get("status") == "active" and meta.get("supplementType") != "checkpoint-challenge"
         selectable = meta.get("status") == "active"
@@ -260,10 +267,20 @@ def build_manifest(composer_root: Path) -> tuple[dict[str, Any], dict[str, Any]]
         elif review_codes:
             disposition = "REVIEW_SHEET"
             reason = None
+        elif override:
+            disposition = override.get("disposition")
+            reason = override.get("reason")
+            if disposition not in {"NO_SHEET_INTEGRATION_META", "HIDDEN_SUPPLEMENTAL"}:
+                raise ValueError(f"Invalid explicit Concept Review disposition for {concept_id}: {disposition}")
+            if not str(reason or "").strip():
+                raise ValueError(f"Explicit Concept Review disposition for {concept_id} requires a reason")
         else:
             raise ValueError(f"Diagnosable concept lacks an explicit disposition: {concept_id}")
 
-        discipline = primary_discipline(concept_id, review_codes, review_by_code, meta)
+        if disposition == "HIDDEN_SUPPLEMENTAL":
+            diagnosable = False
+
+        discipline = override.get("discipline") or primary_discipline(concept_id, review_codes, review_by_code, meta)
         record: dict[str, Any] = {
             "canonicalConceptId": concept_id,
             "displayName": meta.get("title") or library_concept.get("title") or concept_id,
@@ -485,8 +502,8 @@ def main() -> None:
     manifest, audit = build_manifest(args.composer_root.resolve())
     args.manifest_output.parent.mkdir(parents=True, exist_ok=True)
     args.audit_output.parent.mkdir(parents=True, exist_ok=True)
-    args.manifest_output.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    args.audit_output.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_json(args.manifest_output, manifest)
+    write_json(args.audit_output, audit)
     if not audit["validation"]["passed"]:
         raise SystemExit("Concept Review audit failed: " + "; ".join(audit["validation"]["hardFailures"]))
     print(json.dumps({"summary": manifest["summary"], "warnings": audit["validation"]["warnings"]}, indent=2))

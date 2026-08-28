@@ -358,18 +358,9 @@ function updateLibraryVersion(version) {
 }
 
 function refreshConceptReviews(reviewManifest, reviewSource, library) {
-  if (!reviewManifest.concepts.some(item => item.canonicalConceptId === CONCEPT_ID && item.diagnosable === true)) {
-    throw new Error("Public Goods and Common Resources lacks a diagnostic concept-review mapping.");
-  }
-  reviewManifest.generatedAt = GENERATED_AT;
-  reviewManifest.composerLibraryVersion = library.libraryVersion;
-  const sourceReview = reviewSource.reviews.find(item => item.code === "MICRO-03");
-  if (!sourceReview) throw new Error("Missing MICRO-03 concept-review source.");
-  const childIds = new Set(["externalities", CONCEPT_ID, "market-power"]);
-  sourceReview.evidence.questionsInspected = conceptEntries(library.concepts[PARENT_CONCEPT_ID])
-    .filter(({ question }) => (question.subtopicIds || []).some(id => childIds.has(id))).length;
-  reviewSource.generatedAt = GENERATED_AT;
-  reviewSource.composerLibraryVersion = library.libraryVersion;
+  const mapping = reviewManifest.concepts.find(item => item.canonicalConceptId === CONCEPT_ID);
+  if (mapping?.diagnosable !== true || mapping?.primaryReviewCode !== "MICRO-55") throw new Error("Public Goods and Common Resources lacks its dedicated Concept Review mapping.");
+  if (!reviewSource.reviews.some(item => item.code === "MICRO-55" && item.canonicalConceptIds?.includes(CONCEPT_ID))) throw new Error("Missing MICRO-55 Concept Review source.");
 }
 
 function render() {

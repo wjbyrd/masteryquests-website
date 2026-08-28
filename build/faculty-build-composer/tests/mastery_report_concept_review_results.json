@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "status": "PASS",
-  "caseCount": 16,
+  "caseCount": 21,
   "cases": [
     {
       "id": "A",
@@ -75,12 +75,37 @@
     },
     {
       "id": "O",
-      "name": "missing mapped PDF is hidden",
+      "name": "canonical GEN-ECON-01 fixture exists and remains visible",
       "status": "PASS"
     },
     {
       "id": "P",
       "name": "one generated build supports all ten modes without engine mutation",
+      "status": "PASS"
+    },
+    {
+      "id": "Q",
+      "name": "new Micro concepts resolve to exact dedicated reviews",
+      "status": "PASS"
+    },
+    {
+      "id": "R",
+      "name": "exact diagnostic aliases stay inside their canonical Micro concept",
+      "status": "PASS"
+    },
+    {
+      "id": "S",
+      "name": "legacy Public Goods tag repairs a missing canonical signal without broad fallback",
+      "status": "PASS"
+    },
+    {
+      "id": "T",
+      "name": "ambiguous objective alone does not trigger a broad Concept Review fallback",
+      "status": "PASS"
+    },
+    {
+      "id": "U",
+      "name": "legacy Market Failures recipe migration retains compatibility and dedicated children",
       "status": "PASS"
     }
   ]
