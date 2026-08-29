@@ -575,40 +575,6 @@ button:active {
         inset 0 0 14px rgba(0,0,0,0.74);
 }
 
-/* Utility button (fullscreen toggle) — safe to restyle or move */	
-.fullscreenBtn {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    padding: 6px 12px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #e0f2fe;
-    background: linear-gradient(180deg, #12304f, #04101f);
-    border: 1px solid rgba(56,189,248,0.32);
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow:
-        0 0 10px rgba(56,189,248,0.22),
-        inset 0 0 7px rgba(0,0,0,0.80);
-    transition: all 0.15s ease;
-}
-
-.fullscreenBtn:hover {
-    background: linear-gradient(180deg, #1d4d73, #0b2238);
-    border-color: rgba(247,217,130,0.62);
-    box-shadow:
-        0 0 16px rgba(56,189,248,0.34),
-        inset 0 0 8px rgba(0,0,0,0.76);
-}
-
-.fullscreenBtn:active {
-    transform: scale(0.95);
-    box-shadow:
-        0 0 8px rgba(56,189,248,0.28),
-        inset 0 0 10px rgba(0,0,0,0.86);
-}
 
 .return-menu-btn{
     position: absolute;
@@ -1142,6 +1108,38 @@ button:active {
   flex-wrap:wrap;
 }
 
+.game-menu-options{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  width:min(360px, 100%);
+  margin:0 auto 18px;
+}
+
+.game-menu-options[hidden]{display:none;}
+
+.game-menu-option{
+  width:100%;
+  min-height:48px;
+  padding:11px 16px;
+  border:1px solid rgba(56,189,248,.38);
+  border-radius:10px;
+  color:#e0f2fe;
+  background:linear-gradient(180deg,rgba(18,48,79,.96),rgba(4,16,31,.98));
+  box-shadow:0 0 12px rgba(56,189,248,.15),inset 0 0 9px rgba(0,0,0,.72);
+  font:700 13px/1.25 inherit;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.game-menu-option:hover,
+.game-menu-option:focus-visible{
+  color:#f7d982;
+  border-color:rgba(247,217,130,.64);
+  outline:none;
+}
+
 .secondary-modal-btn{
   color:#e0f2fe;
   border-color:rgba(56,189,248,0.42);
@@ -1522,10 +1520,6 @@ Every pixel matters.
 
 @media (max-width: 768px){
 
-  /* Hide fullscreen on mobile. Keep the game menu alive. */
-  .fullscreenBtn{
-    display: none !important;
-  }
 
   .return-menu-btn{
     display: block !important;
@@ -2904,6 +2898,11 @@ body.game-active #soundToggle{
 }
 
 .daily-details-panel[hidden]{display:none;}
+body:not(.mode-selection-active) .daily-task-dock:not(.daily-panel-open){display:none;}
+body.game-active .daily-task-pill{display:none;}
+.daily-details-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
+.daily-details-close{flex:0 0 auto;width:30px;height:30px;padding:0;border:1px solid rgba(56,189,248,.32);border-radius:999px;color:#e0f2fe;background:rgba(4,16,31,.84);font:700 18px/1 inherit;cursor:pointer;}
+.daily-details-close:hover,.daily-details-close:focus-visible{color:#f7d982;border-color:rgba(247,217,130,.62);outline:none;}
 .daily-details-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
 .daily-details-title{margin:7px 0 5px;color:#f8fbff;font-size:18px;line-height:1.3;}
 .daily-details-meta{margin:0;color:rgba(224,242,254,.76);font-size:12px;line-height:1.45;}
@@ -3052,7 +3051,10 @@ Respect structure strictly.
     DAILY TASK
   </button>
   <section id="dailyDetailsPanel" class="daily-details-panel" aria-label="Daily task details" hidden>
-    <div class="daily-details-kicker">Today's Daily</div>
+    <div class="daily-details-heading">
+      <div class="daily-details-kicker">Today's Daily</div>
+      <button id="dailyDetailsClose" class="daily-details-close" type="button" aria-label="Close Daily Task details">×</button>
+    </div>
     <h2 id="dailyDetailsTitle" class="daily-details-title"></h2>
     <p id="dailyDetailsMeta" class="daily-details-meta"></p>
     <div class="daily-progress-track" aria-hidden="true"><div id="dailyDetailsProgress" class="daily-progress-fill"></div></div>
@@ -3243,8 +3245,7 @@ Respect structure strictly.
 </div>
 
 <div class="dungeon-container">
-    <button class="fullscreenBtn" onclick="goFullscreen()">FULLSCREEN</button>
-	<button id="returnMenuBtn" class="return-menu-btn" onclick="confirmReturnToModeMenu()">MODE MENU</button>
+	<button id="returnMenuBtn" class="return-menu-btn" type="button" onclick="openGameMenu()" aria-haspopup="dialog" aria-controls="gameModal">GAME MENU</button>
     <button id="soundToggle" class="sound-toggle" onclick="toggleGameSound()" aria-label="Toggle sound">Sound On</button>
 
 <!-- =========================================
@@ -3377,7 +3378,13 @@ DO NOT REMOVE:
     <h2 id="gameModalTitle">Signal Warning</h2>
     <p id="gameModalText"></p>
 
-    <div class="game-modal-actions">
+    <div id="gameMenuOptions" class="game-menu-options" hidden>
+      <button id="gameMenuModeSelect" class="game-menu-option" type="button" onclick="chooseGameMenuModeSelection()">Mode Selection</button>
+      <button id="gameMenuFullscreen" class="game-menu-option" type="button" onclick="toggleGameMenuFullscreen()">Enter Fullscreen</button>
+      <button id="gameMenuDaily" class="game-menu-option" type="button" onclick="openDailyFromGameMenu()">Daily Task</button>
+    </div>
+
+    <div id="gameModalActions" class="game-modal-actions">
       <button id="gameModalConfirm" class="continue-btn">Continue</button>
       <button id="gameModalCancel" class="continue-btn secondary-modal-btn" style="display:none;">Cancel</button>
     </div>
@@ -3466,16 +3473,34 @@ function safePlay(){ return Promise.resolve(); }
 function resumeCurrentMusic(){ return Promise.resolve(); }
 function setGameControlsVisible(isVisible){
     document.body.classList.toggle("game-active", !!isVisible);
+    if(isVisible){
+        document.body.classList.remove("mode-selection-active");
+        const dock = document.getElementById("dailyTaskDock");
+        const panel = document.getElementById("dailyDetailsPanel");
+        const pill = document.getElementById("dailyTaskPill");
+        if(dock) dock.classList.remove("daily-panel-open");
+        if(panel) panel.hidden = true;
+        if(pill) pill.setAttribute("aria-expanded", "false");
+    }
 }
 
 restoreSoundSetting();
 setGameControlsVisible(false);
 
+function isGameFullscreen(){
+    return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+}
+
+function updateGameMenuFullscreenAction(){
+    const button = document.getElementById("gameMenuFullscreen");
+    if(button) button.textContent = isGameFullscreen() ? "Exit Fullscreen" : "Enter Fullscreen";
+}
+
 function goFullscreen(){
 let el = document.documentElement;
 
 // Check if we are ALREADY in fullscreen
-let isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
+let isFullscreen = isGameFullscreen();
 
 if (!isFullscreen) {
         // ENTER Fullscreen
@@ -3495,6 +3520,13 @@ if (!isFullscreen) {
         }
     }
 }
+
+function toggleGameMenuFullscreen(){
+    goFullscreen();
+}
+
+document.addEventListener("fullscreenchange", updateGameMenuFullscreenAction);
+document.addEventListener("webkitfullscreenchange", updateGameMenuFullscreenAction);
     
 // =============================================
 // 1. Initial UI State: Hide game until startGame runs
@@ -6813,6 +6845,7 @@ function showModeSelect(){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
+    document.body.classList.add("mode-selection-active");
     maybeShowDailyAnnouncement();
 }
 
@@ -6828,6 +6861,8 @@ function returnToTitleScreen(){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "none";
+    document.body.classList.remove("mode-selection-active");
+    closeDailyDetailsPanel(false);
 
     document.getElementById("startScreen").style.display = "flex";
     showContinueButtonIfSaved();
@@ -6869,6 +6904,7 @@ function startSelectedMode(mode, options = {}){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "none";
+    document.body.classList.remove("mode-selection-active");
 
     if(gameMode === "standard"){
         startGame(false);
@@ -6877,6 +6913,56 @@ function startSelectedMode(mode, options = {}){
 
     resetRunStateForNewMode();
     startGame(false);
+}
+
+function updateGameMenuDailyAction(){
+    const button = document.getElementById("gameMenuDaily");
+    if(!button) return;
+    const daily = dailyState?.today;
+    const available = Boolean(dailyChallengesAreEnabled() && daily);
+    button.hidden = !available;
+    if(!available) return;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    button.textContent = progress.completed
+        ? "Daily Task ✓"
+        : `Daily Task · ${Math.min(Number(progress.value || 0), daily.target)}/${daily.target}`;
+}
+
+function openGameMenu(){
+    const modal = document.getElementById("gameModal");
+    const titleEl = document.getElementById("gameModalTitle");
+    const textEl = document.getElementById("gameModalText");
+    const menuOptions = document.getElementById("gameMenuOptions");
+    const actions = document.getElementById("gameModalActions");
+    const confirmBtn = document.getElementById("gameModalConfirm");
+    const cancelBtn = document.getElementById("gameModalCancel");
+    if(!modal || !titleEl || !textEl || !menuOptions || !actions || !confirmBtn || !cancelBtn) return;
+
+    activeModalConfirmAction = null;
+    activeModalCancelAction = null;
+    titleEl.textContent = "Game Menu";
+    textEl.textContent = "Choose a utility or return to mode selection.";
+    menuOptions.hidden = false;
+    actions.style.display = "flex";
+    confirmBtn.style.display = "none";
+    cancelBtn.textContent = "Close";
+    cancelBtn.style.display = "inline-block";
+    cancelBtn.onclick = closeGameModal;
+    updateGameMenuFullscreenAction();
+    updateGameMenuDailyAction();
+    modal.style.display = "flex";
+    pauseFadingFortune("game-modal");
+    document.getElementById("gameMenuModeSelect")?.focus();
+}
+
+function chooseGameMenuModeSelection(){
+    closeGameModal();
+    confirmReturnToModeMenu();
+}
+
+function openDailyFromGameMenu(){
+    closeGameModal();
+    openDailyDetailsFromGameMenu();
 }
 
 function confirmReturnToModeMenu(){
@@ -6942,6 +7028,8 @@ function showGameModal({
     const textEl = document.getElementById("gameModalText");
     const confirmBtn = document.getElementById("gameModalConfirm");
     const cancelBtn = document.getElementById("gameModalCancel");
+    const menuOptions = document.getElementById("gameMenuOptions");
+    const actions = document.getElementById("gameModalActions");
 
     if(!modal || !titleEl || !textEl || !confirmBtn || !cancelBtn){
         console.warn("Game modal elements are missing.");
@@ -6953,7 +7041,10 @@ function showGameModal({
 
     titleEl.innerText = title;
     textEl.innerText = text;
+    if(menuOptions) menuOptions.hidden = true;
+    if(actions) actions.style.display = "flex";
     confirmBtn.innerText = confirmText;
+    confirmBtn.style.display = "inline-block";
 
     if(cancelText){
         cancelBtn.innerText = cancelText;
@@ -6986,7 +7077,9 @@ cancelBtn.onclick = function(){
 
 function closeGameModal(){
     const modal = document.getElementById("gameModal");
+    const menuOptions = document.getElementById("gameMenuOptions");
     if(modal) modal.style.display = "none";
+    if(menuOptions) menuOptions.hidden = true;
     resumeFadingFortune("game-modal");
 
     activeModalConfirmAction = null;
@@ -7523,6 +7616,8 @@ function returnToModeSelectFromRun(){
     applyFacultyCompositionConfig();
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
+    document.body.classList.add("mode-selection-active");
+    updateDailyUI();
     localStorage.removeItem(RUN_ID_KEY);
     runID = "";
 }
@@ -8521,24 +8616,55 @@ function updateDailyUI(){
     document.getElementById("dailyMilestoneMeta").textContent = total >= DailyChallengesCore.MILESTONES.at(-1)
         ? "All current milestones reached. Your lifetime total keeps growing."
         : `${total} of ${milestone} lifetime Dailies completed.`;
+    if(typeof updateGameMenuDailyAction === "function") updateGameMenuDailyAction();
+}
+
+function closeDailyDetailsPanel(restoreFocus = true){
+    const dock = document.getElementById("dailyTaskDock");
+    const pill = document.getElementById("dailyTaskPill");
+    const panel = document.getElementById("dailyDetailsPanel");
+    if(panel) panel.hidden = true;
+    if(dock) dock.classList.remove("daily-panel-open");
+    if(pill){
+        pill.setAttribute("aria-expanded", "false");
+        if(restoreFocus && !pill.hidden && document.body.classList.contains("mode-selection-active")) pill.focus();
+    }
+}
+
+function openDailyDetailsFromGameMenu(){
+    if(!dailyState?.today) initializeDailyChallenges();
+    const dock = document.getElementById("dailyTaskDock");
+    const pill = document.getElementById("dailyTaskPill");
+    const panel = document.getElementById("dailyDetailsPanel");
+    if(!dock || !pill || !panel || !dailyState?.today) return;
+    dock.hidden = false;
+    dock.classList.add("daily-panel-open");
+    panel.hidden = false;
+    pill.setAttribute("aria-expanded", "true");
+    updateDailyUI();
+    document.getElementById("dailyDetailsClose")?.focus();
 }
 
 function bindDailyUI(){
     const pill = document.getElementById("dailyTaskPill");
     const panel = document.getElementById("dailyDetailsPanel");
+    const closeButton = document.getElementById("dailyDetailsClose");
     if(!pill || !panel || pill.dataset.dailyBound === "true") return;
     pill.dataset.dailyBound = "true";
     pill.addEventListener("click", () => {
         const shouldOpen = panel.hidden;
-        panel.hidden = !shouldOpen;
-        pill.setAttribute("aria-expanded", shouldOpen ? "true" : "false");
-        updateDailyUI();
+        if(shouldOpen){
+            panel.hidden = false;
+            pill.setAttribute("aria-expanded", "true");
+            updateDailyUI();
+        } else {
+            closeDailyDetailsPanel(false);
+        }
     });
+    if(closeButton) closeButton.addEventListener("click", () => closeDailyDetailsPanel(true));
     document.addEventListener("keydown", event => {
         if(event.key === "Escape" && !panel.hidden){
-            panel.hidden = true;
-            pill.setAttribute("aria-expanded", "false");
-            pill.focus();
+            closeDailyDetailsPanel(true);
         }
     });
 }
