@@ -2838,6 +2838,126 @@ body.game-active #soundToggle{
     }
 }
 
+
+
+
+
+
+/* =========================================
+   DAILY CHALLENGES V1 — COMPACT STATUS UI
+========================================= */
+.daily-task-dock{
+    position:fixed;
+    top:14px;
+    left:50%;
+    z-index:145;
+    width:min(360px, calc(100vw - 28px));
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    pointer-events:none;
+}
+
+.daily-task-pill{
+    pointer-events:auto;
+    min-height:38px;
+    padding:8px 16px;
+    border:1px solid rgba(247,217,130,.66);
+    border-radius:999px;
+    color:#f7d982;
+    background:linear-gradient(180deg,rgba(20,56,83,.98),rgba(3,12,25,.98));
+    box-shadow:0 0 18px rgba(56,189,248,.25),0 0 24px rgba(247,217,130,.12),inset 0 0 12px rgba(0,0,0,.62);
+    font:700 12px/1.2 inherit;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+
+.daily-task-pill:hover,
+.daily-task-pill:focus-visible{
+    transform:translateY(1px) scale(1.02);
+    border-color:#f7d982;
+    box-shadow:0 0 22px rgba(56,189,248,.38),0 0 30px rgba(247,217,130,.2),inset 0 0 12px rgba(0,0,0,.62);
+    outline:none;
+}
+
+.daily-task-pill.is-complete{
+    color:#d1fae5;
+    border-color:rgba(52,211,153,.72);
+    box-shadow:0 0 18px rgba(52,211,153,.24),inset 0 0 12px rgba(0,0,0,.62);
+}
+
+.daily-details-panel{
+    pointer-events:auto;
+    width:100%;
+    margin-top:8px;
+    padding:16px;
+    box-sizing:border-box;
+    border:1px solid rgba(247,217,130,.42);
+    border-radius:14px;
+    color:#e0f2fe;
+    background:linear-gradient(155deg,rgba(5,17,34,.98),rgba(2,7,18,.98));
+    box-shadow:0 14px 38px rgba(0,0,0,.72),0 0 22px rgba(56,189,248,.18),inset 0 0 18px rgba(56,189,248,.05);
+    text-align:left;
+}
+
+.daily-details-panel[hidden]{display:none;}
+.daily-details-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+.daily-details-title{margin:7px 0 5px;color:#f8fbff;font-size:18px;line-height:1.3;}
+.daily-details-meta{margin:0;color:rgba(224,242,254,.76);font-size:12px;line-height:1.45;}
+.daily-progress-track{height:7px;margin:12px 0 10px;overflow:hidden;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.2);}
+.daily-progress-fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#38bdf8,#f7d982);box-shadow:0 0 12px rgba(247,217,130,.5);transition:width .25s ease;}
+.daily-details-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;}
+.daily-stat{padding:9px;border-radius:9px;background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.13);}
+.daily-stat-label{display:block;color:rgba(199,236,255,.68);font-size:10px;letter-spacing:1px;text-transform:uppercase;}
+.daily-stat-value{display:block;margin-top:3px;color:#f7d982;font-size:15px;font-weight:700;}
+
+.daily-toast-region{
+    position:fixed;
+    top:68px;
+    left:50%;
+    z-index:160;
+    width:min(420px, calc(100vw - 28px));
+    transform:translateX(-50%);
+    pointer-events:none;
+}
+
+.daily-toast{
+    pointer-events:auto;
+    padding:18px 20px;
+    border:1px solid rgba(247,217,130,.62);
+    border-radius:16px;
+    color:#eaf7ff;
+    background:linear-gradient(145deg,rgba(9,31,51,.98),rgba(2,8,20,.98));
+    box-shadow:0 16px 44px rgba(0,0,0,.78),0 0 30px rgba(56,189,248,.28),0 0 20px rgba(247,217,130,.14);
+    cursor:pointer;
+    animation:dailyToastIn .32s ease-out both;
+}
+.daily-toast.is-leaving{animation:dailyToastOut .24s ease-in both;}
+.daily-toast.is-complete{border-color:rgba(52,211,153,.72);box-shadow:0 16px 44px rgba(0,0,0,.78),0 0 30px rgba(52,211,153,.23),0 0 20px rgba(247,217,130,.12);}
+.daily-toast-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2.3px;text-transform:uppercase;}
+.daily-toast-title{margin:7px 0 5px;color:#fff;font-size:20px;font-weight:700;line-height:1.25;}
+.daily-toast-progress{color:#c7ecff;font-size:16px;font-weight:700;}
+.daily-toast-copy{margin-top:7px;color:rgba(224,242,254,.72);font-size:12px;line-height:1.4;}
+
+@keyframes dailyToastIn{from{opacity:0;transform:translateY(-12px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes dailyToastOut{to{opacity:0;transform:translateY(-8px) scale(.98)}}
+
+@media(max-width:560px){
+    .daily-task-dock{top:8px;width:calc(100vw - 20px);}
+    .daily-task-pill{min-height:34px;padding:7px 13px;font-size:11px;}
+    .daily-details-panel{padding:13px;}
+    .daily-toast-region{top:52px;width:calc(100vw - 20px);}
+    .daily-toast{padding:15px 16px;}
+    .daily-toast-title{font-size:18px;}
+}
+
+@media(prefers-reduced-motion:reduce){
+    .daily-toast,.daily-toast.is-leaving{animation:none;}
+    .daily-progress-fill,.daily-task-pill{transition:none;}
+}
 </style>
 
 <style id="targetedMasteryRepairStyles">
@@ -2847,6 +2967,8 @@ body.game-active #soundToggle{
 .repair-weak-areas-btn{order:-1;border-color:rgba(74,222,128,.75)!important;box-shadow:0 0 18px rgba(74,222,128,.22)!important}
 .target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
 @media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
+
+
 </style>
 <style id="facultyOfficialThemeStyles">
 body.blank-builder-template{--mq-gameplay-scene-overlay:linear-gradient(rgba(2,6,23,.30),rgba(2,6,23,.48))}
@@ -2859,6 +2981,8 @@ body.blank-builder-template.mq-themed{background-image:var(--mq-gameplay-scene-o
 .mode-card .mode-symbol[hidden]{display:none!important}
 .artifactSlot img{object-fit:contain}
 @media(max-width:560px){#wizardImage.mq-guide-image{max-width:122px}.generic-boss-image{height:150px;width:min(160px,48vw)}}
+
+
 </style>
 </head>
 
@@ -2921,6 +3045,25 @@ Respect structure strictly.
      aria-atomic="true"
      style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;">
 </div>
+
+<!-- Daily Challenges is a persistent layer, not a game mode. -->
+<div id="dailyTaskDock" class="daily-task-dock" hidden>
+  <button id="dailyTaskPill" class="daily-task-pill" type="button" aria-expanded="false" aria-controls="dailyDetailsPanel">
+    DAILY TASK
+  </button>
+  <section id="dailyDetailsPanel" class="daily-details-panel" aria-label="Daily task details" hidden>
+    <div class="daily-details-kicker">Today's Daily</div>
+    <h2 id="dailyDetailsTitle" class="daily-details-title"></h2>
+    <p id="dailyDetailsMeta" class="daily-details-meta"></p>
+    <div class="daily-progress-track" aria-hidden="true"><div id="dailyDetailsProgress" class="daily-progress-fill"></div></div>
+    <div class="daily-details-grid">
+      <div class="daily-stat"><span class="daily-stat-label">Dailies completed</span><span id="dailyLifetimeValue" class="daily-stat-value">0</span></div>
+      <div class="daily-stat"><span class="daily-stat-label">Next milestone</span><span id="dailyMilestoneValue" class="daily-stat-value">1</span></div>
+    </div>
+    <p id="dailyMilestoneMeta" class="daily-details-meta" style="margin-top:9px;"></p>
+  </section>
+</div>
+<div id="dailyToastRegion" class="daily-toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
 
 <!-- Transition overlay between rooms (safe to style, keep IDs) -->    
 <div id="hallwayTransition">
@@ -3466,6 +3609,7 @@ function freezeCompletionTime(fallbackMs = 0){
 const FACULTY_COMPOSITION_CONFIG = {
     "schemaVersion": "1.0.0",
     "compositionId": "blank-faculty-quest",
+    "dailyChallengesEnabled": true,
     "title": "Blank Faculty Quest",
     "slug": "blank-faculty-quest",
     "supportedModes": [
@@ -6669,6 +6813,7 @@ function showModeSelect(){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
+    maybeShowDailyAnnouncement();
 }
 
 function returnToTitleScreen(){
@@ -7892,6 +8037,662 @@ function getFacultyModePoolMinimum(mode, poolName){
         ?? FACULTY_POOL_REQUIREMENTS[poolName]
         ?? 0;
 }
+
+// =============================================
+// DAILY CHALLENGES V1 — DETERMINISTIC CORE
+// Pure helpers are kept together so selection and progress can be regression-tested
+// without booting the rest of the game. The browser adapter immediately below owns
+// persistence, UI, and telemetry integration.
+// =============================================
+const DailyChallengesCore = (() => {
+    const FAMILY_ORDER = [
+        "correct_answers",
+        "streak",
+        "accuracy_window",
+        "perfect_stretch",
+        "graph_questions",
+        "concept_variety"
+    ];
+    const MILESTONES = [1,3,5,10,20,30,50,75,100];
+    const UNIVERSAL_FAMILIES = FAMILY_ORDER.slice(0, 4);
+    const GRAMMAR = {
+        correct_answers: [
+            {target:5,tier:"quick"},{target:8,tier:"standard"},{target:10,tier:"standard"},{target:12,tier:"stretch"}
+        ],
+        streak: [
+            {target:4,tier:"quick"},{target:5,tier:"standard"},{target:6,tier:"standard"},{target:8,tier:"stretch"}
+        ],
+        accuracy_window: [
+            {target:4,windowSize:5,tier:"quick"},{target:6,windowSize:8,tier:"standard"},{target:8,windowSize:10,tier:"stretch"}
+        ],
+        perfect_stretch: [
+            {target:3,tier:"quick"},{target:5,tier:"standard"},{target:7,tier:"stretch"}
+        ],
+        graph_questions: [
+            {target:2,tier:"quick",minimumAccessible:4},{target:3,tier:"standard",minimumAccessible:6},{target:5,tier:"stretch",minimumAccessible:10}
+        ],
+        concept_variety: [
+            {target:2,tier:"quick"},{target:3,tier:"standard"},{target:4,tier:"stretch"}
+        ]
+    };
+
+    function localDateKey(value = new Date()){
+        const date = value instanceof Date ? value : new Date(value);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+    }
+
+    function hash32(input){
+        let hash = 2166136261;
+        const text = String(input || "");
+        for(let index = 0; index < text.length; index++){
+            hash ^= text.charCodeAt(index);
+            hash = Math.imul(hash, 16777619);
+        }
+        return hash >>> 0;
+    }
+
+    function stableQuestionIdentity(question){
+        return String(question?.id ?? question?.questionId ?? `${question?.q || ""}:${JSON.stringify(question?.options || [])}`);
+    }
+
+    function isGraphQuestion(question){
+        return Boolean(
+            question?.image
+            || question?.graph
+            || question?.requiresGraph
+            || /(?:^|[_\s-])graph(?:$|[_\s-])/i.test(String(question?.type || ""))
+        );
+    }
+
+    function conceptIdentity(question){
+        return String(
+            question?.primaryConceptId
+            || question?.conceptId
+            || question?.objective
+            || question?.tag
+            || ""
+        ).trim();
+    }
+
+    function getAccessibleQuestions(banks, supportedModes, modeRequirements){
+        const poolNames = new Set();
+        (supportedModes || []).forEach(mode => {
+            (modeRequirements?.[mode] || []).forEach(poolName => {
+                if(poolName !== "repair" && poolName !== "bridge") poolNames.add(poolName);
+            });
+        });
+        const seen = new Set();
+        const questions = [];
+        poolNames.forEach(poolName => {
+            (Array.isArray(banks?.[poolName]) ? banks[poolName] : []).forEach(question => {
+                if(!question || !Array.isArray(question.options) || question.options.length < 2) return;
+                const identity = stableQuestionIdentity(question);
+                if(seen.has(identity)) return;
+                seen.add(identity);
+                questions.push(question);
+            });
+        });
+        return questions;
+    }
+
+    function getEligibilityContext(banks, supportedModes, modeRequirements){
+        const accessibleQuestions = getAccessibleQuestions(banks, supportedModes, modeRequirements);
+        const graphQuestionCount = accessibleQuestions.filter(isGraphQuestion).length;
+        const concepts = new Set(accessibleQuestions.map(conceptIdentity).filter(Boolean));
+        return {
+            accessibleQuestionCount: accessibleQuestions.length,
+            graphQuestionCount,
+            conceptCount: concepts.size
+        };
+    }
+
+    function getEligibleFamilies(context){
+        const eligible = [...UNIVERSAL_FAMILIES];
+        if(Number(context?.graphQuestionCount || 0) >= 4) eligible.push("graph_questions");
+        if(Number(context?.conceptCount || 0) >= 2) eligible.push("concept_variety");
+        return eligible;
+    }
+
+    function getParameterOptions(family, context){
+        const options = [...(GRAMMAR[family] || [])];
+        if(family === "graph_questions"){
+            return options.filter(option => Number(context?.graphQuestionCount || 0) >= option.minimumAccessible);
+        }
+        if(family === "concept_variety"){
+            return options.filter(option => Number(context?.conceptCount || 0) >= option.target);
+        }
+        return options;
+    }
+
+    function selectFamily(eligibleFamilies, seed, history = [], date){
+        const eligible = FAMILY_ORDER.filter(family => (eligibleFamilies || []).includes(family));
+        if(!eligible.length) return "correct_answers";
+        const recent = [...history]
+            .filter(item => item?.family && item?.date !== date)
+            .sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")))
+            .map(item => item.family);
+        let candidates = [...eligible];
+        const cooldownDepth = eligible.length >= 4 ? 2 : eligible.length >= 2 ? 1 : 0;
+        for(let index = 0; index < cooldownDepth; index++){
+            const filtered = candidates.filter(family => family !== recent[index]);
+            if(filtered.length) candidates = filtered;
+        }
+        return candidates[hash32(`${seed}:family`) % candidates.length];
+    }
+
+    function selectParameters(family, context, seed){
+        const options = getParameterOptions(family, context);
+        const fallback = GRAMMAR[family]?.[0] || {target:5,tier:"quick"};
+        if(!options.length) return {...fallback};
+        const tierRotation = ["quick","standard","standard","stretch"];
+        const desiredTier = tierRotation[hash32(`${seed}:tier`) % tierRotation.length];
+        const tierOptions = options.filter(option => option.tier === desiredTier);
+        const candidates = tierOptions.length ? tierOptions : options;
+        return {...candidates[hash32(`${seed}:parameters`) % candidates.length]};
+    }
+
+    function previousDateKey(date, offset = 1){
+        const parts = String(date || "").split("-").map(Number);
+        if(parts.length !== 3 || parts.some(part => !Number.isFinite(part))) return date;
+        const previous = new Date(parts[0], parts[1] - 1, parts[2]);
+        previous.setDate(previous.getDate() - offset);
+        return localDateKey(previous);
+    }
+
+    function describe(family, parameters){
+        const target = Number(parameters?.target || 0);
+        if(family === "correct_answers") return `Get ${target} correct answers`;
+        if(family === "streak") return `Reach a streak of ${target}`;
+        if(family === "accuracy_window") return `Get ${target} of the next ${parameters.windowSize} correct`;
+        if(family === "perfect_stretch") return `Get ${target} correct without a miss`;
+        if(family === "graph_questions") return `Get ${target} graph questions correct`;
+        if(family === "concept_variety") return `Get correct answers from ${target} different concepts`;
+        return `Get ${target} correct answers`;
+    }
+
+    function resolveDaily({identity,date,eligibleFamilies,history = [],context = {}}){
+        const seed = `${identity}|${date}`;
+        // Derive the cooldown window from the same deterministic rotation so a
+        // fresh browser and a returning browser resolve the same Quest/date alike.
+        // Persisted history remains available for diagnostics and migration, but
+        // cannot make today's locked Daily differ across devices.
+        const deterministicHistory = [];
+        for(let offset = 2; offset >= 1; offset--){
+            const priorDate = previousDateKey(date, offset);
+            const priorFamily = selectFamily(
+                eligibleFamilies,
+                `${identity}|${priorDate}`,
+                deterministicHistory,
+                priorDate
+            );
+            deterministicHistory.push({date:priorDate,family:priorFamily});
+        }
+        const cooldownHistory = deterministicHistory.length ? deterministicHistory : history;
+        let family = selectFamily(eligibleFamilies, seed, cooldownHistory, date);
+        let parameters = selectParameters(family, context, seed);
+        if(!parameters?.target){
+            family = "correct_answers";
+            parameters = selectParameters(family, context, seed);
+        }
+        return {
+            id: `${date}:${hash32(`${seed}:${family}:${parameters.target}:${parameters.windowSize || 0}`).toString(36)}`,
+            date,
+            family,
+            target:Number(parameters.target),
+            windowSize:Number(parameters.windowSize || 0),
+            tier:parameters.tier || "standard",
+            description:describe(family, parameters),
+            eligibleFamilies:[...(eligibleFamilies || [])],
+            eligibility:{
+                accessibleQuestionCount:Number(context.accessibleQuestionCount || 0),
+                graphQuestionCount:Number(context.graphQuestionCount || 0),
+                conceptCount:Number(context.conceptCount || 0)
+            }
+        };
+    }
+
+    function createProgress(){
+        return {
+            value:0,
+            completed:false,
+            startedAt:null,
+            completedAt:null,
+            qualifyingQuestions:0,
+            perfectCurrent:0,
+            windowAttempts:0,
+            windowCorrect:0,
+            windowNumber:1,
+            uniqueConcepts:[],
+            postCompletionQuestions:0,
+            lastQuestionAt:null
+        };
+    }
+
+    function applyProgress(daily, existingProgress, event){
+        const progress = {...createProgress(), ...(existingProgress || {})};
+        progress.uniqueConcepts = Array.isArray(progress.uniqueConcepts) ? [...progress.uniqueConcepts] : [];
+        const before = Number(progress.value || 0);
+        const alreadyComplete = Boolean(progress.completed);
+        const now = event?.timestamp || new Date().toISOString();
+        const windowAttemptBefore = Number(progress.windowNumber || 1);
+        const result = {progress,before,after:before,completedNow:false,alreadyComplete,windowFailed:false,windowAttemptBefore};
+        if(alreadyComplete){
+            progress.postCompletionQuestions = Number(progress.postCompletionQuestions || 0) + 1;
+            progress.lastQuestionAt = now;
+            return result;
+        }
+
+        if(!progress.startedAt) progress.startedAt = now;
+        progress.qualifyingQuestions = Number(progress.qualifyingQuestions || 0) + 1;
+        progress.lastQuestionAt = now;
+        const correct = Boolean(event?.correct);
+
+        if(daily.family === "correct_answers"){
+            if(correct) progress.value = before + 1;
+        } else if(daily.family === "streak"){
+            progress.value = Math.max(before, Number(event?.streak || 0));
+        } else if(daily.family === "perfect_stretch"){
+            progress.perfectCurrent = correct ? Number(progress.perfectCurrent || 0) + 1 : 0;
+            progress.value = progress.perfectCurrent;
+        } else if(daily.family === "graph_questions"){
+            if(correct && event?.isGraph) progress.value = before + 1;
+        } else if(daily.family === "concept_variety"){
+            if(correct && event?.concept && !progress.uniqueConcepts.includes(event.concept)){
+                progress.uniqueConcepts.push(event.concept);
+            }
+            progress.value = progress.uniqueConcepts.length;
+        } else if(daily.family === "accuracy_window"){
+            progress.windowAttempts = Number(progress.windowAttempts || 0) + 1;
+            if(correct) progress.windowCorrect = Number(progress.windowCorrect || 0) + 1;
+            progress.value = progress.windowCorrect;
+            if(progress.windowAttempts >= daily.windowSize){
+                if(progress.windowCorrect >= daily.target){
+                    progress.value = daily.target;
+                } else {
+                    result.windowFailed = true;
+                    progress.windowNumber = Number(progress.windowNumber || 1) + 1;
+                    progress.windowAttempts = 0;
+                    progress.windowCorrect = 0;
+                    progress.value = 0;
+                }
+            }
+        }
+
+        const accuracyWindowReady = daily.family !== "accuracy_window"
+            || progress.windowAttempts >= daily.windowSize;
+        if(Number(progress.value || 0) >= daily.target && accuracyWindowReady){
+            progress.value = daily.target;
+            progress.completed = true;
+            progress.completedAt = now;
+            result.completedNow = true;
+        }
+        result.after = Number(progress.value || 0);
+        return result;
+    }
+
+    return {
+        FAMILY_ORDER,
+        MILESTONES,
+        localDateKey,
+        hash32,
+        isGraphQuestion,
+        conceptIdentity,
+        getAccessibleQuestions,
+        getEligibilityContext,
+        getEligibleFamilies,
+        getParameterOptions,
+        selectFamily,
+        resolveDaily,
+        createProgress,
+        applyProgress
+    };
+})();
+globalThis.MQDailyChallengesCore = DailyChallengesCore;
+
+
+// =============================================
+// DAILY CHALLENGES V1 — BROWSER ADAPTER
+// =============================================
+const DAILY_STORAGE_KEY = `${STORAGE_PREFIX}:daily:v1`;
+const DAILY_ANNOUNCEMENT_SESSION_PREFIX = `${STORAGE_PREFIX}:daily:announced:`;
+let dailyState = null;
+let dailyToastTimer = null;
+let dailyRolloverTimer = null;
+
+function dailyChallengesAreEnabled(){
+    return FACULTY_COMPOSITION_CONFIG.dailyChallengesEnabled !== false;
+}
+
+function readDailyState(){
+    try {
+        const raw = localStorage.getItem(DAILY_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+    } catch(error){
+        console.warn("Daily task state could not be read:", error);
+        return null;
+    }
+}
+
+function persistDailyState(){
+    if(!dailyState) return;
+    try {
+        localStorage.setItem(DAILY_STORAGE_KEY, JSON.stringify(dailyState));
+    } catch(error){
+        console.warn("Daily task state could not be saved:", error);
+    }
+}
+
+function getDailyQuestIdentity(){
+    return FACULTY_COMPOSITION_CONFIG.compositionFingerprint
+        || FACULTY_COMPOSITION_CONFIG.compositionId
+        || FACULTY_COMPOSITION_CONFIG.slug
+        || FACULTY_COMPOSITION_CONFIG.title
+        || "mastery-quest";
+}
+
+function getDailyEligibility(){
+    const supportedModes = (FACULTY_COMPOSITION_CONFIG.supportedModes || [])
+        .filter(mode => FACULTY_MODE_REQUIREMENTS[mode]);
+    const eligibilityBanks = {...questionBanks};
+    const eligibilityRequirements = {...FACULTY_MODE_REQUIREMENTS};
+    if(supportedModes.includes("trialGraph") && typeof getTrialGraphCandidates === "function"){
+        eligibilityBanks.trialGraph = getTrialGraphCandidates();
+        eligibilityRequirements.trialGraph = ["trialGraph"];
+    }
+    if(supportedModes.includes("fadingFortune") && typeof getFadingFortuneCandidates === "function"){
+        eligibilityBanks.fadingFortune = getFadingFortuneCandidates();
+        eligibilityRequirements.fadingFortune = ["fadingFortune"];
+    }
+    if(supportedModes.includes("riskReward") && typeof getRiskRewardCandidates === "function"){
+        eligibilityBanks.riskReward = getRiskRewardCandidates();
+        eligibilityRequirements.riskReward = ["riskReward"];
+    }
+    const context = DailyChallengesCore.getEligibilityContext(
+        eligibilityBanks,
+        supportedModes,
+        eligibilityRequirements
+    );
+    return {context, families:DailyChallengesCore.getEligibleFamilies(context)};
+}
+
+function normalizeDailyState(stored){
+    const creditedDates = Array.isArray(stored?.creditedDates)
+        ? [...new Set(stored.creditedDates.map(String))]
+        : [];
+    return {
+        version:1,
+        totalCompleted:Math.max(Number(stored?.totalCompleted || 0), creditedDates.length),
+        creditedDates,
+        familyHistory:Array.isArray(stored?.familyHistory) ? stored.familyHistory.slice(-8) : [],
+        today:stored?.today || null
+    };
+}
+
+function initializeDailyChallenges(now = new Date()){
+    const dock = document.getElementById("dailyTaskDock");
+    if(!dailyChallengesAreEnabled()){
+        if(dock) dock.hidden = true;
+        dailyState = null;
+        return null;
+    }
+
+    const date = DailyChallengesCore.localDateKey(now);
+    dailyState = normalizeDailyState(readDailyState());
+    if(!dailyState.today || dailyState.today.date !== date){
+        const eligibility = getDailyEligibility();
+        const daily = DailyChallengesCore.resolveDaily({
+            identity:getDailyQuestIdentity(),
+            date,
+            eligibleFamilies:eligibility.families,
+            history:dailyState.familyHistory,
+            context:eligibility.context
+        });
+        daily.progress = DailyChallengesCore.createProgress();
+        dailyState.today = daily;
+        dailyState.familyHistory = [
+            ...dailyState.familyHistory.filter(item => item?.date !== date),
+            {date,family:daily.family}
+        ].slice(-8);
+        persistDailyState();
+    } else {
+        dailyState.today.progress = {
+            ...DailyChallengesCore.createProgress(),
+            ...(dailyState.today.progress || {})
+        };
+    }
+    bindDailyUI();
+    updateDailyUI();
+    scheduleDailyRollover(now);
+    return dailyState.today;
+}
+
+function scheduleDailyRollover(now = new Date()){
+    if(dailyRolloverTimer) clearTimeout(dailyRolloverTimer);
+    const nextMidnight = new Date(now);
+    nextMidnight.setHours(24,0,0,100);
+    dailyRolloverTimer = setTimeout(() => initializeDailyChallenges(new Date()), Math.max(1000, nextMidnight - now));
+}
+
+function getNextDailyMilestone(total = 0){
+    return DailyChallengesCore.MILESTONES.find(value => value > total)
+        || DailyChallengesCore.MILESTONES[DailyChallengesCore.MILESTONES.length - 1];
+}
+
+function getDailyProgressText(daily = dailyState?.today){
+    if(!daily) return "";
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    if(daily.family === "accuracy_window" && !progress.completed){
+        return `${progress.windowCorrect}/${daily.target} · question ${progress.windowAttempts}/${daily.windowSize} · window ${progress.windowNumber}`;
+    }
+    return `${Math.min(Number(progress.value || 0), daily.target)} / ${daily.target}`;
+}
+
+function updateDailyUI(){
+    const daily = dailyState?.today;
+    const dock = document.getElementById("dailyTaskDock");
+    if(!dock || !dailyChallengesAreEnabled() || !daily){
+        if(dock) dock.hidden = true;
+        return;
+    }
+    dock.hidden = false;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    const total = Number(dailyState.totalCompleted || 0);
+    const milestone = getNextDailyMilestone(total);
+    const pill = document.getElementById("dailyTaskPill");
+    pill.textContent = progress.completed
+        ? "DAILY COMPLETE ✓"
+        : `DAILY TASK · ${Math.min(Number(progress.value || 0), daily.target)}/${daily.target}`;
+    pill.classList.toggle("is-complete", Boolean(progress.completed));
+    document.getElementById("dailyDetailsTitle").textContent = daily.description;
+    document.getElementById("dailyDetailsMeta").textContent = progress.completed
+        ? `Complete · ${getDailyProgressText(daily)}`
+        : `In progress · ${getDailyProgressText(daily)}`;
+    const percent = progress.completed
+        ? 100
+        : Math.min(95, Math.round((Number(progress.value || 0) / Math.max(1, daily.target)) * 100));
+    document.getElementById("dailyDetailsProgress").style.width = `${percent}%`;
+    document.getElementById("dailyLifetimeValue").textContent = String(total);
+    document.getElementById("dailyMilestoneValue").textContent = total >= DailyChallengesCore.MILESTONES.at(-1)
+        ? `${total}+`
+        : String(milestone);
+    document.getElementById("dailyMilestoneMeta").textContent = total >= DailyChallengesCore.MILESTONES.at(-1)
+        ? "All current milestones reached. Your lifetime total keeps growing."
+        : `${total} of ${milestone} lifetime Dailies completed.`;
+}
+
+function bindDailyUI(){
+    const pill = document.getElementById("dailyTaskPill");
+    const panel = document.getElementById("dailyDetailsPanel");
+    if(!pill || !panel || pill.dataset.dailyBound === "true") return;
+    pill.dataset.dailyBound = "true";
+    pill.addEventListener("click", () => {
+        const shouldOpen = panel.hidden;
+        panel.hidden = !shouldOpen;
+        pill.setAttribute("aria-expanded", shouldOpen ? "true" : "false");
+        updateDailyUI();
+    });
+    document.addEventListener("keydown", event => {
+        if(event.key === "Escape" && !panel.hidden){
+            panel.hidden = true;
+            pill.setAttribute("aria-expanded", "false");
+            pill.focus();
+        }
+    });
+}
+
+function dismissDailyToast(){
+    const region = document.getElementById("dailyToastRegion");
+    const toast = region?.querySelector(".daily-toast");
+    if(!toast) return;
+    if(dailyToastTimer) clearTimeout(dailyToastTimer);
+    toast.classList.add("is-leaving");
+    setTimeout(() => { if(toast.isConnected) toast.remove(); }, 250);
+}
+
+function showDailyToast({kicker,title,progress,copy,complete = false,duration = 5200}){
+    const region = document.getElementById("dailyToastRegion");
+    if(!region) return;
+    region.innerHTML = "";
+    const toast = document.createElement("div");
+    toast.className = `daily-toast${complete ? " is-complete" : ""}`;
+    toast.setAttribute("role", "status");
+    toast.setAttribute("tabindex", "0");
+    toast.setAttribute("aria-label", `${kicker}. ${title}. ${progress}. ${copy}`);
+    const kickerElement = document.createElement("div");
+    kickerElement.className = "daily-toast-kicker";
+    kickerElement.textContent = kicker;
+    const titleElement = document.createElement("div");
+    titleElement.className = "daily-toast-title";
+    titleElement.textContent = title;
+    const progressElement = document.createElement("div");
+    progressElement.className = "daily-toast-progress";
+    progressElement.textContent = progress;
+    const copyElement = document.createElement("div");
+    copyElement.className = "daily-toast-copy";
+    copyElement.textContent = copy;
+    toast.append(kickerElement,titleElement,progressElement,copyElement);
+    toast.addEventListener("click", dismissDailyToast);
+    toast.addEventListener("keydown", event => {
+        if(event.key === "Enter" || event.key === " ") dismissDailyToast();
+    });
+    region.appendChild(toast);
+    if(dailyToastTimer) clearTimeout(dailyToastTimer);
+    dailyToastTimer = setTimeout(dismissDailyToast, duration);
+}
+
+function maybeShowDailyAnnouncement(){
+    const daily = initializeDailyChallenges();
+    if(!daily || daily.progress?.completed) return;
+    const key = `${DAILY_ANNOUNCEMENT_SESSION_PREFIX}${daily.date}`;
+    try {
+        if(sessionStorage.getItem(key) === "true") return;
+        sessionStorage.setItem(key, "true");
+    } catch(error){
+        if(document.body.dataset.dailyAnnounced === daily.date) return;
+        document.body.dataset.dailyAnnounced = daily.date;
+    }
+    showDailyToast({
+        kicker:"Today's Daily",
+        title:daily.description,
+        progress:getDailyProgressText(daily),
+        copy:"Complete today's task in any eligible mode. Tap for details."
+    });
+}
+
+function creditDailyCompletion(date){
+    if(dailyState.creditedDates.includes(date)) return false;
+    dailyState.creditedDates.push(date);
+    dailyState.totalCompleted = Number(dailyState.totalCompleted || 0) + 1;
+    return true;
+}
+
+function getDailyTelemetrySnapshot(overrides = {}){
+    const daily = dailyState?.today;
+    if(!daily) return overrides;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    const completedAtMs = progress.completedAt ? Date.parse(progress.completedAt) : 0;
+    const startedAtMs = progress.startedAt ? Date.parse(progress.startedAt) : 0;
+    return {
+        dailyID:daily.id,
+        dailyDate:daily.date,
+        dailyFamily:daily.family,
+        dailyTarget:daily.target,
+        dailyWindowSize:daily.windowSize || 0,
+        dailyEligibleFamilies:(daily.eligibleFamilies || []).join("|"),
+        dailyProgressBefore:Number(progress.value || 0),
+        dailyProgressAfter:Number(progress.value || 0),
+        dailyWindowAttempt:Number(progress.windowNumber || 1),
+        dailyCompleted:progress.completed ? 1 : 0,
+        dailyCompletionTimestamp:progress.completedAt || "",
+        dailyAlreadyComplete:progress.completed ? 1 : 0,
+        dailyPostCompletionQuestions:Number(progress.postCompletionQuestions || 0),
+        dailyMsSinceCompletion:completedAtMs ? Math.max(0, Date.now() - completedAtMs) : 0,
+        dailyQuestionsToComplete:progress.completed ? Number(progress.qualifyingQuestions || 0) : 0,
+        dailyElapsedToCompleteMs:progress.completed && startedAtMs && completedAtMs ? Math.max(0, completedAtMs - startedAtMs) : 0,
+        dailyConcept:"",
+        ...overrides
+    };
+}
+
+function recordDailyGameplayEvent({correct,streak:currentStreak,question,timestamp = new Date().toISOString()}){
+    if(!dailyChallengesAreEnabled()) return {};
+    const today = DailyChallengesCore.localDateKey();
+    if(!dailyState?.today || dailyState.today.date !== today) initializeDailyChallenges();
+    const daily = dailyState?.today;
+    if(!daily) return {};
+    const concept = DailyChallengesCore.conceptIdentity(question);
+    const result = DailyChallengesCore.applyProgress(daily,daily.progress,{
+        correct,
+        streak:currentStreak,
+        isGraph:DailyChallengesCore.isGraphQuestion(question),
+        concept,
+        timestamp
+    });
+    daily.progress = result.progress;
+    let creditedNow = false;
+    if(result.completedNow){
+        creditedNow = creditDailyCompletion(daily.date);
+    }
+    persistDailyState();
+    updateDailyUI();
+
+    if(result.completedNow){
+        const total = Number(dailyState.totalCompleted || 0);
+        const nextMilestone = getNextDailyMilestone(total);
+        showDailyToast({
+            kicker:"Daily Complete",
+            title:daily.description,
+            progress:`${daily.target} / ${daily.target} · ${total} Dailies completed`,
+            copy:total >= DailyChallengesCore.MILESTONES.at(-1)
+                ? "All current milestones reached. Keep building your lifetime total."
+                : `Next milestone: ${nextMilestone}`,
+            complete:true
+        });
+    }
+
+    const completedAtMs = daily.progress.completedAt ? Date.parse(daily.progress.completedAt) : 0;
+    return getDailyTelemetrySnapshot({
+        dailyProgressBefore:result.before,
+        dailyProgressAfter:result.after,
+        dailyWindowAttempt:Number(result.windowAttemptBefore || daily.progress.windowNumber || 1),
+        dailyCompleted:daily.progress.completed ? 1 : 0,
+        dailyAlreadyComplete:result.alreadyComplete ? 1 : 0,
+        dailyPostCompletionQuestions:Number(daily.progress.postCompletionQuestions || 0),
+        dailyMsSinceCompletion:result.alreadyComplete && completedAtMs ? Math.max(0, Date.now() - completedAtMs) : 0,
+        dailyConcept:concept,
+        dailyCompletedNow:result.completedNow ? 1 : 0,
+        dailyCreditedNow:creditedNow ? 1 : 0,
+        dailyWindowFailed:result.windowFailed ? 1 : 0
+    });
+}
+
+initializeDailyChallenges();
+document.addEventListener("visibilitychange", () => {
+    if(!document.hidden) initializeDailyChallenges();
+});
 
 function getFacultyPool(poolName){
     if(poolName === "repair") return getAllFacultyRepairQuestions();
@@ -9195,7 +9996,14 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         streak = 0;
         recordBossMistakeForAchievements();
     }
-   
+
+    // Daily Challenges consumes the same validated answer event used by every mode.
+    // Rapid-guess lockouts return above, so they cannot create Daily progress.
+    const dailyTelemetry = recordDailyGameplayEvent({
+        correct:isCorrect,
+        streak,
+        question:currentQuestion
+    });
 
     // SCORE ATTACK MODE ADDITION:
     // Apply score after streak updates, because streak bonus depends on the new streak value.
@@ -9234,8 +10042,28 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         riskRewardWagerPercent: modeUsesRiskReward() ? Math.round(riskRewardCurrentWagerRatio * 100) : null,
         riskRewardWagerTier: modeUsesRiskReward() ? riskRewardTierLabel(riskRewardCurrentWagerRatio) : null,
         riskRewardBankrollAfter: modeUsesRiskReward() ? riskRewardBankroll : null,
-        riskRewardAllIn: modeUsesRiskReward() ? riskRewardCurrentWagerRatio >= 0.999 : null
+        riskRewardAllIn: modeUsesRiskReward() ? riskRewardCurrentWagerRatio >= 0.999 : null,
+        ...dailyTelemetry
     });
+
+    if(dailyTelemetry.dailyCompletedNow){
+        sendGameData({
+            runID,
+            game:FACULTY_COMPOSITION_CONFIG.title,
+            event:"daily_complete",
+            user:username || "anonymous",
+            room,
+            questionId:currentQuestion.id || 0,
+            tag:currentQuestion.tag || "",
+            type:currentQuestion.type || "",
+            objective:currentQuestion.objective || inferObjective(currentQuestion),
+            attempt:totalAttempts ?? 0,
+            streak:streak ?? 0,
+            elapsedTime:getElapsedTimeMs(),
+            totalTime:getElapsedTimeMs(),
+            ...dailyTelemetry
+        });
+    }
 
     // SCORE ATTACK MODE ADDITION:
     // Pause only in Score Attack so the player can actually read the score result
@@ -11405,7 +12233,12 @@ const TELEMETRY_COLUMNS = [
     "firstExposure","score","bestScore","totalTimeMs","accuracy","maxStreak",
     "totalAttempts","verificationCode","fadingFortuneScore","fadingFortuneQuestionValue",
     "fadingFortuneFadeCount","fadingFortuneIntervalMs","fadingFortunePausedDurationMs",
-    "fadingFortuneMaxScore","fadingFortuneAverageValue","fadingFortuneDistribution"
+    "fadingFortuneMaxScore","fadingFortuneAverageValue","fadingFortuneDistribution",
+    "dailyID","dailyDate","dailyFamily","dailyTarget","dailyWindowSize","dailyEligibleFamilies",
+    "dailyProgressBefore","dailyProgressAfter","dailyWindowAttempt","dailyCompleted",
+    "dailyCompletionTimestamp","dailyAlreadyComplete","dailyPostCompletionQuestions",
+    "dailyMsSinceCompletion","dailyQuestionsToComplete","dailyElapsedToCompleteMs",
+    "dailyConcept","dailyCompletedNow","dailyWindowFailed"
 ];
 
 function createTelemetryEventID(){
@@ -11444,6 +12277,9 @@ function sendGameData(data = {}){
         const priorExposureCount = questionID > 0
             ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
             : 0;
+        const dailyData = typeof getDailyTelemetrySnapshot === "function"
+            ? getDailyTelemetrySnapshot()
+            : {};
 
         const record = {
             eventID: createTelemetryEventID(),
@@ -11486,7 +12322,26 @@ function sendGameData(data = {}){
             fadingFortunePausedDurationMs: Number(data.fadingFortunePausedDurationMs ?? 0),
             fadingFortuneMaxScore: Number(data.fadingFortuneMaxScore ?? 0),
             fadingFortuneAverageValue: Number(data.fadingFortuneAverageValue ?? 0),
-            fadingFortuneDistribution: data.fadingFortuneDistribution || ""
+            fadingFortuneDistribution: data.fadingFortuneDistribution || "",
+            dailyID: data.dailyID ?? dailyData.dailyID ?? "",
+            dailyDate: data.dailyDate ?? dailyData.dailyDate ?? "",
+            dailyFamily: data.dailyFamily ?? dailyData.dailyFamily ?? "",
+            dailyTarget: Number(data.dailyTarget ?? dailyData.dailyTarget ?? 0),
+            dailyWindowSize: Number(data.dailyWindowSize ?? dailyData.dailyWindowSize ?? 0),
+            dailyEligibleFamilies: data.dailyEligibleFamilies ?? dailyData.dailyEligibleFamilies ?? "",
+            dailyProgressBefore: Number(data.dailyProgressBefore ?? dailyData.dailyProgressBefore ?? 0),
+            dailyProgressAfter: Number(data.dailyProgressAfter ?? dailyData.dailyProgressAfter ?? 0),
+            dailyWindowAttempt: Number(data.dailyWindowAttempt ?? dailyData.dailyWindowAttempt ?? 0),
+            dailyCompleted: Number(data.dailyCompleted ?? dailyData.dailyCompleted ?? 0),
+            dailyCompletionTimestamp: data.dailyCompletionTimestamp ?? dailyData.dailyCompletionTimestamp ?? "",
+            dailyAlreadyComplete: Number(data.dailyAlreadyComplete ?? dailyData.dailyAlreadyComplete ?? 0),
+            dailyPostCompletionQuestions: Number(data.dailyPostCompletionQuestions ?? dailyData.dailyPostCompletionQuestions ?? 0),
+            dailyMsSinceCompletion: Number(data.dailyMsSinceCompletion ?? dailyData.dailyMsSinceCompletion ?? 0),
+            dailyQuestionsToComplete: Number(data.dailyQuestionsToComplete ?? dailyData.dailyQuestionsToComplete ?? 0),
+            dailyElapsedToCompleteMs: Number(data.dailyElapsedToCompleteMs ?? dailyData.dailyElapsedToCompleteMs ?? 0),
+            dailyConcept: data.dailyConcept ?? dailyData.dailyConcept ?? "",
+            dailyCompletedNow: Number(data.dailyCompletedNow ?? 0),
+            dailyWindowFailed: Number(data.dailyWindowFailed ?? 0)
         };
 
         records.push(record);

@@ -1684,6 +1684,7 @@ async function createConfig(recipe, library, templateSha, themeLibrary){
     ...runtimeCanonical,
     composerVersion: COMPOSER_VERSION,
     compositionId: canonical.slug,
+    dailyChallengesEnabled: true,
     fadingFortune: {
       enabled: canonical.supportedModes.includes('fadingFortune'),
       allowedTargets: [10, 15, 20],
