@@ -6,6 +6,7 @@ const path = require('path');
 const {spawnSync} = require('child_process');
 
 const ACTIVE_RUNNERS = [
+  'run_guide_intro_validation.js',
   'run_phase1_targeted_repair_validation.js',
   'run_phase15_production_hardening_validation.js',
   'run_phase3a_official_theme_validation.js',

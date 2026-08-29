@@ -71,10 +71,13 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
 
   pass(core.COMPOSER_VERSION === '4.5s.3k', 'Unexpected Composer version');
   pass(core.RECIPE_SCHEMA_VERSION === '1.4.0', 'Unexpected recipe schema');
-  pass(themes.schemaVersion === '1.0.0', 'Unexpected theme schema');
+  pass(themes.schemaVersion === '1.1.0', 'Unexpected theme schema');
   pass(Object.keys(themes.slots).length === 22, 'Unexpected visual-slot count');
-  pass(themes.assets.length === 51, 'Unexpected official-asset count');
+  pass(themes.assets.length === 72, 'Unexpected official-asset count');
   pass(presetIds.has('default'), 'Default theme is missing');
+  pass(themes.defaultPresetId === 'arcane-archive', 'Faculty default theme changed');
+  pass(JSON.stringify(Object.values(themes.presets).filter(preset => preset.facultyVisible !== false).map(preset => preset.id)) === JSON.stringify(['arcane-archive','market-citadel','managerial-cost-directive']), 'Faculty-facing theme list is not the approved three-theme set');
+  pass(!presetIds.has('national-ledger'), 'Retired National Ledger preset remains available');
 
   for(const asset of themes.assets){
     pass(Boolean(asset.id && asset.label), 'Theme asset lacks an ID or label');
@@ -100,7 +103,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
     const bytes = fs.readFileSync(sourceFile(asset));
     return new Response(bytes, {status:200, headers:{'content-type':asset.fileType}});
   });
-  pass(Object.keys(productionPathEmbedded).length === 51, 'Production embed path did not verify all 51 official assets');
+  pass(Object.keys(productionPathEmbedded).length === 72, 'Production embed path did not verify all 72 official assets');
   pass(Object.values(productionPathEmbedded).every(value => value.startsWith('data:image/webp;base64,')), 'Production embed path returned a nonportable official asset');
 
   for(const [presetId, preset] of Object.entries(themes.presets)){
@@ -125,10 +128,10 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   const hybrid = core.resolveThemeSelection(hybridInput, themes);
   pass(hybrid.slots.boss1.asset.id === 'arcane-boss-1' && hybrid.slots.boss1.source === 'override', 'Boss override precedence failed');
   pass(hybrid.slots.hallway1.asset.id === 'market-hall-1' && hybrid.slots.hallway1.source === 'preset', 'Preset value was disturbed by another override');
-  const changedPreset = core.resolveThemeSelection({...hybridInput,presetId:'national-ledger'}, themes);
+  const changedPreset = core.resolveThemeSelection({...hybridInput,presetId:'managerial-cost-directive'}, themes);
   pass(changedPreset.slots.boss1.asset.id === 'arcane-boss-1', 'Explicit override did not survive a preset change');
-  const resetBoss = core.resolveThemeSelection({presetId:'national-ledger',overrides:{artifact3:'ledger-artifact-3',hallway2:'ledger-hall-2'}}, themes);
-  pass(resetBoss.slots.boss1.asset.id === 'ledger-boss-1' && resetBoss.slots.boss1.source === 'preset', 'Reset to theme failed');
+  const resetBoss = core.resolveThemeSelection({presetId:'managerial-cost-directive',overrides:{artifact3:'ledger-artifact-3',hallway2:'ledger-hall-2'}}, themes);
+  pass(resetBoss.slots.boss1.asset.id === 'directive-boss-1' && resetBoss.slots.boss1.source === 'preset', 'Reset to theme failed');
   const invalidOverride = core.resolveThemeSelection({presetId:'market-citadel',overrides:{boss1:'arcane-start'}}, themes);
   pass(invalidOverride.slots.boss1.asset.id === 'market-boss-1', 'Incompatible override was not rejected');
 
@@ -144,7 +147,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
     selectedConceptIds:['oligopoly'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}
   };
   const migrated = core.migrateRecipe(oldRecipe, loadComposerLibrary(), themes).recipe;
-  pass(migrated.appearance.presetId === 'default', 'Old recipe did not migrate to the default theme');
+  pass(migrated.appearance.presetId === 'arcane-archive', 'Old recipe did not migrate to the faculty default theme');
   pass(Object.keys(migrated.appearance.overrides).length === 0, 'Old recipe gained unexpected artwork overrides');
 
   const library = loadComposerLibrary();
@@ -178,7 +181,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   pass(builds.default.selectedAssets.length === 0, 'Default theme embedded unnecessary artwork');
   pass(builds['arcane-archive'].selectedAssets.length === 22, 'Arcane preset coverage changed');
   pass(builds['market-citadel'].config.visualTheme.slots.modeQuiz.source === 'fallback', 'Missing optional mode art did not fall back');
-  pass(builds['national-ledger'].config.visualTheme.slots.modeTrialGraph.source === 'fallback', 'Missing graph-mode art did not fall back');
+  pass(builds['managerial-cost-directive'].config.visualTheme.slots.modeTrialGraph.source === 'fallback', 'Missing graph-mode art did not fall back');
   assertInlineScriptsCompile(builds['arcane-archive'].html, 'phase3a-arcane.html');
   checks++;
 

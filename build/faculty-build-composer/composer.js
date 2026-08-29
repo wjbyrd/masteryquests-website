@@ -154,6 +154,7 @@ const PRESETS = [
 const state = {
   title: 'My Faculty Mastery Quest',
   slug: 'my-faculty-mastery-quest',
+  guideName: '',
   slugTouched: false,
   supportedModes: [...Core.MODE_ORDER],
   selectedConceptIds: [],
@@ -162,7 +163,7 @@ const state = {
     checkpointTwo: null,
     finalCheckpoint: null
   },
-  appearance: {presetId:'default', overrides:{}, customOverrides:{}},
+  appearance: {presetId:ThemeLibrary?.defaultPresetId || 'arcane-archive', overrides:{}, customOverrides:{}},
   customAssets: {},
   customStatus: {},
   importWarnings: [],
@@ -570,7 +571,7 @@ function renderThemePresets(){
   const container = $('themePresetOptions');
   if(!container || !ThemeLibrary) return;
   const assets = new Map(ThemeLibrary.assets.map(asset => [asset.id, asset]));
-  container.innerHTML = Object.values(ThemeLibrary.presets).map(preset => {
+  container.innerHTML = Object.values(ThemeLibrary.presets).filter(preset => preset.facultyVisible !== false).map(preset => {
     const preview = assets.get(preset.previewAssetId) || null;
     const active = preset.id === state.appearance.presetId;
     return `<button type="button" class="theme-preset-card${active ? ' selected' : ''}" data-theme-preset="${esc(preset.id)}" aria-pressed="${active}">
@@ -1014,6 +1015,7 @@ function recipe(){
     schemaVersion: Core.RECIPE_SCHEMA_VERSION,
     title: state.title.trim(),
     slug: state.slug.trim(),
+    guideName: state.guideName.trim(),
     supportedModes: [...state.supportedModes],
     selectedConceptIds: [...state.selectedConceptIds],
     appearance: Core.canonicalThemeSelection(state.appearance, ThemeLibrary, state.customAssets),
@@ -1031,6 +1033,7 @@ function recalculate(){
   compositionRevision++;
   state.title = $('gameTitle').value;
   state.slug = $('gameSlug').value;
+  state.guideName = $('guideName').value;
   state.composition = Core.compose(Library, recipe());
   state.generatedSizeEstimate = null;
   state.generatedSizeEstimateStatus = 'idle';
@@ -1189,6 +1192,8 @@ function renderFinal(){
   const selectedTitles = instructionSelected.map(id => metaById.get(id)?.title || id);
   const scopeSummary = selectedTitles.join(', ') || 'No concepts selected';
   const modeSummary = state.supportedModes.map(mode => MODE_LABELS[mode]).join(', ') || 'No modes selected';
+  const resolvedTheme = currentResolvedTheme();
+  const guideSummary = Core.createGuideConfig({guideName:state.guideName}, resolvedTheme, ThemeLibrary);
   const failedModeCount = composition?.validation?.modes?.filter(mode => !mode.ok).length || 0;
   const blockerSummary = errors.length
     ? `<div class="generate-blocker" role="alert"><strong>Download is not available yet.</strong><span>${failedModeCount ? `${failedModeCount} selected mode${failedModeCount === 1 ? ' needs' : 's need'} attention. ` : ''}Review Readiness for the exact requirements.</span></div>`
@@ -1196,7 +1201,7 @@ function renderFinal(){
   $('finalSummary').innerHTML = `
     <div class="final-review-grid">
       <div><span>Game</span><strong>${esc(state.title || 'Untitled game')}</strong><small>${esc(state.slug || 'No file name')}</small></div>
-      <div><span>Appearance</span><strong>${esc(currentResolvedTheme().presetLabel)}</strong><small>${Object.keys(state.appearance.customOverrides || {}).length} custom image${Object.keys(state.appearance.customOverrides || {}).length === 1 ? '' : 's'}</small></div>
+      <div><span>Appearance</span><strong>${esc(resolvedTheme.presetLabel)}</strong><small>${esc(guideSummary.displayName)} · ${Object.keys(state.appearance.customOverrides || {}).length} custom image${Object.keys(state.appearance.customOverrides || {}).length === 1 ? '' : 's'}</small></div>
       <div><span>Questions</span><strong>${composition?.counts?.totalCanonical || 0}</strong><small>${instructionSelected.length} selected concept${instructionSelected.length === 1 ? '' : 's'}</small></div>
       <div class="final-status ${okay ? 'ready' : 'not-ready'}"><span>Status</span><strong>${okay ? 'Ready to download' : 'Needs attention'}</strong><small>Estimated size appears above</small></div>
       <div class="final-review-wide"><span>Concept scope</span><strong>${esc(scopeSummary)}</strong></div>
@@ -1664,6 +1669,7 @@ async function importRecipe(file){
   }
   state.title = next.title || 'Imported Faculty Quest';
   state.slug = Core.safeSlug(next.slug || state.title);
+  state.guideName = next.guideName || '';
   state.slugTouched = true;
   state.supportedModes = [...next.supportedModes];
   state.customAssets = verifiedCustomAssets;
@@ -1690,6 +1696,7 @@ async function importRecipe(file){
 
   $('gameTitle').value = state.title;
   $('gameSlug').value = state.slug;
+  $('guideName').value = state.guideName;
   setActiveArea(inferAreaForConceptIds(state.selectedConceptIds));
   renderModeOptions();
   renderThemePresets();
@@ -1730,6 +1737,10 @@ async function init(){
     state.slug = event.target.value;
     recalculate();
   });
+  $('guideName').addEventListener('input', event => {
+    state.guideName = event.target.value;
+    recalculate();
+  });
 
   $('conceptSearch').addEventListener('input', renderConcepts);
   $('areaFilter').addEventListener('change', event => changeActiveCourseArea(event.target.value));
@@ -1757,7 +1768,9 @@ async function init(){
     if(!confirm('Clear the current composition?')) return;
     state.selectedConceptIds = [];
     state.checkpointFocus = emptyCheckpointFocus();
-    state.appearance = {presetId:'default', overrides:{}, customOverrides:{}};
+    state.guideName = '';
+    $('guideName').value = '';
+    state.appearance = {presetId:ThemeLibrary?.defaultPresetId || 'arcane-archive', overrides:{}, customOverrides:{}};
     state.customAssets = {};
     state.customStatus = {};
     state.importWarnings = [];

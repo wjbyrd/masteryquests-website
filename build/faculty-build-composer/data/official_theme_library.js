@@ -37,6 +37,7 @@
       compatibleSlots, width, height, sizeBytes, sha256, fileType:'image/webp',
       alt:metadata.alt || '', description:metadata.description || label,
       displayName:metadata.displayName || '', origin:metadata.origin || '',
+      guideIdentity:metadata.guideIdentity || '',
       themeFamilies:metadata.themeFamilies || []
     });
   }
@@ -47,7 +48,7 @@
   add('arcane-hall-1','Arcane hallway I',arcane+'hallway1.webp',['hallway1','hallway2','hallway3'],1448,1086,501310,'663763a7b8420630b52023b46243fe50b767f180a8630e01678079424e947ade',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
   add('arcane-hall-2','Arcane hallway II',arcane+'hallway2.webp',['hallway1','hallway2','hallway3'],1448,1086,412556,'c6d184656ed85d3fcc427fb0af9519618c85e80cbedd88fb422de8cae2f4e825',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
   add('arcane-hall-3','Arcane hallway III',arcane+'hallway3.webp',['hallway1','hallway2','hallway3'],1448,1086,535734,'1c05bbbe9d56d79bb4eadb3b51dcd76b969887d8adada3e887eb9a0d4f1d48de',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
-  add('arcane-guide','The Archivist',arcane+'wizard.webp',['guideImage'],1254,1254,132350,'40c7f1ce97ec71de6d2141300929491f2cfe3f38dbca894ee2c98c74da540172',{alt:'The Archivist, an arcane guide',displayName:'The Archivist',origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
+  add('arcane-guide','The Archivist',arcane+'wizard.webp',['guideImage'],1254,1254,132350,'40c7f1ce97ec71de6d2141300929491f2cfe3f38dbca894ee2c98c74da540172',{alt:'The Archivist, an arcane guide',displayName:'The Archivist',guideIdentity:'archivist',origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
   add('arcane-boss-1','The Warden',arcane+'warden.webp',['boss1','boss2','boss3'],1254,1254,136942,'b74c42807c4a990c09def497cc82f3262d9f8acf9feabf80f72431a12e57db85',{alt:'The Warden',displayName:'The Warden',origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
   add('arcane-boss-2','The Decomposer',arcane+'decomposer.webp',['boss1','boss2','boss3'],1254,1254,177982,'848b08be1f9284b345508d0a2652ea09a508f8ea7513aec3b127f97d020051ec',{alt:'The Decomposer',displayName:'The Decomposer',origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
   add('arcane-boss-3','The Sovereign',arcane+'sovereign.webp',['boss1','boss2','boss3'],1254,1254,374830,'19df475c586f3fca4ae008a077a938c6b6bc3ae77b1d777e0e5320571b056186',{alt:'The Sovereign',displayName:'The Sovereign',origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
@@ -72,7 +73,7 @@
   }
 
   const economic = '../../play/economic-realm/market-gate/';
-  add('economic-guide','The Chancellor',economic+'chancellor.webp',['guideImage'],1086,1448,146328,'df576dd008c7353db4a5f6d4cc16b46d766e0ff6b99df6a255393ad8b7ee4cbb',{alt:'The Chancellor, an Economic Realm guide',displayName:'The Chancellor',origin:'Economic Realm',themeFamilies:['market-citadel','national-ledger']});
+  add('economic-guide','The Chancellor',economic+'chancellor.webp',['guideImage'],1086,1448,146328,'df576dd008c7353db4a5f6d4cc16b46d766e0ff6b99df6a255393ad8b7ee4cbb',{alt:'The Chancellor, an Economic Realm guide',displayName:'The Chancellor',guideIdentity:'chancellor',origin:'Economic Realm',themeFamilies:['market-citadel','national-ledger']});
   const economicModes = [
     ['standard','Standard Campaign','mode_standard.webp',900,520,156380,'ebba9fff124f76525e83023ef7ad3645cba04afd693ce59df47003428c8dc2cb'],
     ['timed','Timed Trial','mode_timed.webp',900,520,139248,'7f5722460235219d88ce8221f504cbf9f5c505d6703fcc13e2e1022e8097a2f9'],
@@ -107,17 +108,47 @@
   add('ledger-artifact-2',"Warden's Prism",ledger+'prism.webp',['artifact1','artifact2','artifact3'],1254,1254,430660,'65acbdb7602cbd96688b55c1b465e1caefd8eb82146a69c5025b5086f56d5774',{alt:"Warden's Prism",displayName:"Warden's Prism",origin:'The National Ledger',themeFamilies:['national-ledger']});
   add('ledger-artifact-3',"Comptroller's Crown",ledger+'crown.webp',['artifact1','artifact2','artifact3'],1254,1254,471094,'017a88f3a74a4cc52e7167bbd140230539f644658e473cac2e39b99c7bbfe81a',{alt:"Comptroller's Crown",displayName:"Comptroller's Crown",origin:'The National Ledger',themeFamilies:['national-ledger']});
 
+  const directive = '../../play/managerial-intelligence-directorate/cost-directive/';
+  add('directive-start','Cost Directive briefing room',directive+'start screen image.webp',['startBackground'],1672,941,320760,'a9aa8923dc383d8bab5f24470049e28b1a847d62970c279b7475a16593065483',{origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-gameplay','Cost Directive operations floor',directive+'question_background_image.webp',['gameplayBackground'],1672,941,219184,'04efa39a02aea1134a6f48e169f5121df6e2427728a58e5bcf3557641b808752',{origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  for(const [number,size,hash] of [[1,289390,'d2517ef26d3c5da1751aae62d0d1db1faa65e4e95643d6db46495738a5403299'],[2,289436,'2003bdbbd118419dcee6437122bf1773b853fe4e88cde950742255973e2ac190'],[3,309184,'2fe3a512c7d133c2a3d97942ec5f38a7cb0b4d298625702bad21efbe05d58817']]) add('directive-hall-'+number,'Directorate corridor '+number,directive+'hallway'+number+'.webp',['hallway1','hallway2','hallway3'],1672,941,size,hash,{origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-guide','The Principal',directive+'principal.webp',['guideImage'],1086,1448,86860,'b24aa6a77bbb0e91c630dece875a576d16cf1aeebffc72645c1c0cc66003a05f',{alt:'The Principal, your Directorate guide',displayName:'The Principal',guideIdentity:'principal',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-boss-1','The Analyst',directive+'analyst.webp',['boss1','boss2','boss3'],1086,1448,83840,'c11330e60817f451c5d76b1da95a33e1bb93271d37bd040d85681e36fc124af2',{alt:'The Analyst',displayName:'The Analyst',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-boss-2','The Manager',directive+'manager.webp',['boss1','boss2','boss3'],1086,1448,84032,'226bd46543c43c226ad4f6b7160eb8190fc931b296bf70d478f41cb7d29c9fba',{alt:'The Manager',displayName:'The Manager',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-boss-3','The Director',directive+'director.webp',['boss1','boss2','boss3'],1086,1448,99640,'441b052b7096391deece88fcdf91ed79ee4617ea9d1c76d95b73350ffad383b9',{alt:'The Director',displayName:'The Director',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-artifact-1','The Tradeoff Report',directive+'report.webp',['artifact1','artifact2','artifact3'],1254,1254,408830,'062d9d7314d39a4d6bd0af764033b4ce8db54d8092d1727b1c1bfccfd8ccb32b',{alt:'The Tradeoff Report',displayName:'The Tradeoff Report',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-artifact-2','The Marginal Ledger',directive+'ledger.webp',['artifact1','artifact2','artifact3'],1254,1254,355048,'62903be39a1c477c6b188e8f782646cda16f59c99ea4b660849f908ffe215d21',{alt:'The Marginal Ledger',displayName:'The Marginal Ledger',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  add('directive-artifact-3','The Strategic Scale Plan',directive+'plan.webp',['artifact1','artifact2','artifact3'],1254,1254,447392,'36b89483b11e96658fd9a2c402030c481e680ad2539b49a32cead84eb753ac00',{alt:'The Strategic Scale Plan',displayName:'The Strategic Scale Plan',origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  const directiveModes = [
+    ['standard','Standard Campaign','mode_standard.webp',415496,'6bfced02354d4b06437804ee5bec99523a0efc93cda5116527878b139177a3c1'],
+    ['timed','Timed Trial','mode_timed.webp',397430,'86b1f3473ef5e1e72ebc46985b7dcdeee1221281deea9de8ec3a41ced39d6693'],
+    ['exam','Exam Drill','mode_exam.webp',331044,'43b3ad63c761241d938abf8951cb9410b511b90ce18578df62fde9086b5822bb'],
+    ['quiz','Quiz','mode_quiz.webp',416988,'a0ac7cd3f00e5af8ca678e388d9173f9a0c0d4d7ce3deb0ba5c801731398da73'],
+    ['unlimited','Unlimited Practice','mode_unlimited.webp',410426,'8d2d519b7c771791ca6bd0771d6115d89273aae34a54d4d6238f551fcd154501'],
+    ['legendary','Legendary','mode_legendary.webp',389500,'2ed5582c29ad406e81e853902a9f1a75ff5eb3e81b6beb1fbd9300202703a364'],
+    ['score','Score Attack','scoreattack.webp',366680,'09f4b867fe473c0635b891fd3522e4dc705b9293ffe8f1c1533ee6e577db0fef'],
+    ['fadingFortune','Fading Fortune','mode_fading.webp',426984,'09c102eda6fc3bacba7a5289886929e35fe15bf1915a0da1be3f7a2760ed241a'],
+    ['riskReward','Risk & Reward','mode_risk.webp',421930,'da37e146d426ca992c9e7c72e906675d8eb76e59ef1e6b582acc3af41de63240']
+  ];
+  for(const [mode,label,file,size,hash] of directiveModes){
+    add('directive-mode-'+mode,'Cost Directive '+label,directive+file,[modeSlot[mode]],1672,941,size,hash,{origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
+  }
+
   const arcaneValues = {
     startBackground:'arcane-start',gameplayBackground:'arcane-gameplay',hallway1:'arcane-hall-1',hallway2:'arcane-hall-2',hallway3:'arcane-hall-3',guideImage:'arcane-guide',boss1:'arcane-boss-1',boss2:'arcane-boss-2',boss3:'arcane-boss-3',artifact1:'arcane-artifact-1',artifact2:'arcane-artifact-2',artifact3:'arcane-artifact-3',
     modeStandard:'arcane-mode-standard',modeTimed:'arcane-mode-timed',modeExam:'arcane-mode-exam',modeQuiz:'arcane-mode-quiz',modeUnlimited:'arcane-mode-unlimited',modeLegendary:'arcane-mode-legendary',modeScore:'arcane-mode-score',modeTrialGraph:'arcane-mode-trialGraph',modeFadingFortune:'arcane-mode-fadingFortune',modeRiskReward:'arcane-mode-riskReward'
   };
   const economicModeValues = {modeStandard:'economic-mode-standard',modeTimed:'economic-mode-timed',modeExam:'economic-mode-exam',modeUnlimited:'economic-mode-unlimited',modeLegendary:'economic-mode-legendary',modeScore:'economic-mode-score'};
+  const directiveValues = {
+    startBackground:'directive-start',gameplayBackground:'directive-gameplay',hallway1:'directive-hall-1',hallway2:'directive-hall-2',hallway3:'directive-hall-3',guideImage:'directive-guide',boss1:'directive-boss-1',boss2:'directive-boss-2',boss3:'directive-boss-3',artifact1:'directive-artifact-1',artifact2:'directive-artifact-2',artifact3:'directive-artifact-3',
+    modeStandard:'directive-mode-standard',modeTimed:'directive-mode-timed',modeExam:'directive-mode-exam',modeQuiz:'directive-mode-quiz',modeUnlimited:'directive-mode-unlimited',modeLegendary:'directive-mode-legendary',modeScore:'directive-mode-score',modeFadingFortune:'directive-mode-fadingFortune',modeRiskReward:'directive-mode-riskReward'
+  };
   const presets = {
-    default:{id:'default',label:'Default Mastery Quest',description:'The clean, image-free faculty shell with intentional symbols and resilient fallbacks.',previewAssetId:null,values:{}},
-    'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers, an archivist guide, and a complete illustrated mode set.',previewAssetId:'arcane-start',values:arcaneValues},
-    'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls with civic guardians and economic artifacts.',previewAssetId:'market-start',values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
-    'national-ledger':{id:'national-ledger',label:'National Ledger',description:'A stately ledger chamber with formal custodians and archival rewards.',previewAssetId:'ledger-start',values:{startBackground:'ledger-start',gameplayBackground:'ledger-gameplay',hallway1:'ledger-hall-1',hallway2:'ledger-hall-2',hallway3:'ledger-hall-3',guideImage:'economic-guide',boss1:'ledger-boss-1',boss2:'ledger-boss-2',boss3:'ledger-boss-3',artifact1:'ledger-artifact-1',artifact2:'ledger-artifact-2',artifact3:'ledger-artifact-3',...economicModeValues}}
+    default:{id:'default',label:'Default Mastery Quest',description:'Internal image-free fallback used for older recipes.',previewAssetId:null,values:{},facultyVisible:false},
+    'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers led by the Archivist.',previewAssetId:'arcane-start',guide:{identity:'archivist',displayName:'The Archivist'},values:arcaneValues},
+    'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls led by the Chancellor.',previewAssetId:'market-start',guide:{identity:'chancellor',displayName:'The Chancellor'},values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
+    'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Managerial Intelligence Directorate briefing led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
   };
 
-  return Object.freeze({schemaVersion:'1.0.0',libraryVersion:'phase3a-2026-08-24',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
+  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'guide-intro-2026-08-29',defaultPresetId:'arcane-archive',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
 });

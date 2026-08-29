@@ -240,7 +240,14 @@ function canonicalThemeSelection(input, themeLibrary, customAssets = {}){
   const slots = themeLibrary?.slots || {};
   const assets = themeAssetIndex(themeLibrary);
   const custom = canonicalCustomAssets(customAssets, themeLibrary);
-  const presetId = presets[source.presetId] ? source.presetId : 'default';
+  const configuredDefault = String(themeLibrary?.defaultPresetId || 'default');
+  const defaultPresetId = presets[configuredDefault]
+    ? configuredDefault
+    : presets.default ? 'default' : Object.keys(presets)[0] || 'default';
+  const requestedPresetId = source.presetId === 'national-ledger' && presets['managerial-cost-directive']
+    ? 'managerial-cost-directive'
+    : String(source.presetId || '');
+  const presetId = presets[requestedPresetId] ? requestedPresetId : defaultPresetId;
   const overrides = {};
   for(const [slotId, assetId] of Object.entries(source.overrides || {})){
     if(!slots[slotId]) continue;
@@ -261,7 +268,10 @@ function resolveThemeSelection(input, themeLibrary, customAssets = {}){
   const presets = themeLibrary?.presets || {};
   const slotDefinitions = themeLibrary?.slots || {};
   const assets = themeAssetIndex(themeLibrary);
-  const preset = presets[selection.presetId] || presets.default || {id:'default', label:'Default Mastery Quest', values:{}};
+  const preset = presets[selection.presetId]
+    || presets[themeLibrary?.defaultPresetId]
+    || presets.default
+    || {id:'default', label:'Default Mastery Quest', values:{}};
   const resolvedSlots = {};
   for(const [slotId, definition] of Object.entries(slotDefinitions)){
     const customAsset = custom[selection.customOverrides[slotId]];
@@ -366,6 +376,52 @@ function createRuntimeThemeConfig(resolvedTheme, embeddedAssets = {}, supportedM
     customOverrides:deepClone(resolvedTheme?.customOverrides || {}),
     customAssetData,
     slots
+  };
+}
+
+const BUILT_IN_GUIDE_INTROS = Object.freeze({
+  archivist:Object.freeze([
+    'Greetings. I am the Archivist. It is my responsibility to guide you through these halls and ensure you know your economics.',
+    'If you are ready, follow me.'
+  ]),
+  chancellor:Object.freeze([
+    'Welcome. I am the Chancellor. I will guide you through this realm and help you read its economic signals clearly.',
+    'If you are ready, follow me.'
+  ]),
+  principal:Object.freeze([
+    'Welcome. I am the Principal. I will guide you through this directive and see that your decisions hold up under pressure.',
+    'If you are ready, follow me.'
+  ])
+});
+
+function spokenGuideName(displayName){
+  const name = String(displayName || 'Guide').trim() || 'Guide';
+  return /^The\s+/i.test(name) ? `the ${name.replace(/^The\s+/i, '')}` : name;
+}
+
+function createGuideConfig(recipe, resolvedTheme, themeLibrary){
+  const guideSlot = resolvedTheme?.slots?.guideImage || {};
+  const asset = guideSlot.asset || null;
+  const preset = themeLibrary?.presets?.[resolvedTheme?.presetId] || null;
+  const custom = guideSlot.source === 'custom';
+  const identity = custom
+    ? 'custom'
+    : String(asset?.guideIdentity || preset?.guide?.identity || 'guide');
+  const displayName = custom
+    ? String(recipe?.guideName || '').trim().slice(0, 80) || 'Guide'
+    : String(asset?.displayName || preset?.guide?.displayName || 'Guide').trim() || 'Guide';
+  const introLines = BUILT_IN_GUIDE_INTROS[identity]
+    ? [...BUILT_IN_GUIDE_INTROS[identity]]
+    : [
+        `Greetings. I am ${spokenGuideName(displayName)}. I'll be with you as you make your way through this Quest.`,
+        'If you are ready, follow me.'
+      ];
+  return {
+    identity,
+    displayName,
+    imageSlot:'guideImage',
+    introLines,
+    custom
   };
 }
 
@@ -1111,6 +1167,17 @@ function migrateRecipe(recipe, library, themeLibrary){
     });
   }
   const customAssets = canonicalCustomAssets(source.customAssets, themeLibrary);
+  const sourceAppearance = source.appearance && typeof source.appearance === 'object'
+    ? deepClone(source.appearance)
+    : {};
+  if(sourceAppearance.presetId === 'national-ledger' && themeLibrary?.presets?.['managerial-cost-directive']){
+    sourceAppearance.presetId = 'managerial-cost-directive';
+    migrationWarnings.push({
+      type:'theme-preset-migration',
+      message:'The retired National Ledger paintjob was updated to the Managerial Intelligence Directorate / Cost Directive theme.'
+    });
+  }
+  const guideName = String(source.guideName || source.guide?.displayName || '').trim().slice(0, 80);
   const checkpointFocus = {
     checkpointOne: null,
     checkpointTwo: null,
@@ -1159,9 +1226,10 @@ function migrateRecipe(recipe, library, themeLibrary){
       slug: String(source.slug || ''),
       supportedModes: MODE_ORDER.filter(mode => (source.supportedModes || []).includes(mode)),
       selectedConceptIds,
+      guideName,
       checkpointFocus,
-      appearance: canonicalThemeSelection(source.appearance, themeLibrary, customAssets),
-      customAssets: pruneCustomAssets(customAssets, source.appearance, themeLibrary)
+      appearance: canonicalThemeSelection(sourceAppearance, themeLibrary, customAssets),
+      customAssets: pruneCustomAssets(customAssets, sourceAppearance, themeLibrary)
     },
     migrationWarnings
   };
@@ -1662,6 +1730,7 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
     slug: safeSlug(migrated.slug),
     supportedModes: MODE_ORDER.filter(mode => migrated.supportedModes.includes(mode)),
     selectedConceptIds: [...migrated.selectedConceptIds],
+    guideName:String(migrated.guideName || '').trim().slice(0, 80),
     checkpointFocus: Object.fromEntries(CHECKPOINT_ORDER.map(checkpointKey => [
       checkpointKey,
       migrated.checkpointFocus[checkpointKey] == null
@@ -1671,7 +1740,7 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
     appearance: canonicalThemeSelection(migrated.appearance, themeLibrary, customAssets),
     customAssets,
     libraryVersion: library.libraryVersion,
-    templateVersion: 'phase4.5s.3e-market-gate-graph-sync-visual-ux-polish-phase3b-custom-assets-phase3a-official-themes-phase1.5-hardening'
+    templateVersion: 'guide-intro-v1-phase4.5s.3e-market-gate-graph-sync-visual-ux-polish-phase3b-custom-assets-phase3a-official-themes-phase1.5-hardening'
   };
 }
 
@@ -1685,6 +1754,7 @@ async function createConfig(recipe, library, templateSha, themeLibrary){
     composerVersion: COMPOSER_VERSION,
     compositionId: canonical.slug,
     dailyChallengesEnabled: true,
+    guide:createGuideConfig(canonical, resolvedTheme, themeLibrary),
     fadingFortune: {
       enabled: canonical.supportedModes.includes('fadingFortune'),
       allowedTargets: [10, 15, 20],
@@ -1771,6 +1841,7 @@ return {
   customAssetsForSelection,
   pruneCustomAssets,
   createRuntimeThemeConfig,
+  createGuideConfig,
   resolveConceptModule,
   validateConceptReviewManifest,
   resolveConceptReviews,

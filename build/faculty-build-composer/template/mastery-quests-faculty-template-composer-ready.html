@@ -2981,6 +2981,25 @@ body.blank-builder-template.mq-themed{background-image:var(--mq-gameplay-scene-o
 .artifactSlot img{object-fit:contain}
 @media(max-width:560px){#wizardImage.mq-guide-image{max-width:122px}.generic-boss-image{height:150px;width:min(160px,48vw)}}
 
+.guide-intro-screen{position:fixed;inset:0;z-index:6500;display:grid;place-items:center;box-sizing:border-box;min-height:100dvh;padding:clamp(24px,5vw,72px);overflow:auto;color:#eef6ff;background:linear-gradient(115deg,rgba(2,6,23,.98),rgba(4,18,35,.90)),var(--mq-guide-intro-image,var(--mq-start-image,none));background-size:cover;background-position:center}
+.guide-intro-screen[hidden]{display:none}
+body.guide-intro-active{overflow:hidden}
+.guide-intro-screen::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 28% 42%,rgba(56,189,248,.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-stage{position:relative;display:grid;grid-template-columns:minmax(260px,42vw) minmax(300px,540px);align-items:center;gap:clamp(28px,6vw,90px);width:min(1120px,100%);margin:auto}
+.guide-intro-portrait-frame{display:grid;place-items:end center;min-height:min(68vh,680px);overflow:hidden;border:1px solid rgba(56,189,248,.28);border-radius:24px;background:radial-gradient(circle at 50% 34%,rgba(56,189,248,.19),rgba(2,8,20,.82) 66%);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(56,189,248,.15),inset 0 0 34px rgba(247,217,130,.06)}
+.guide-intro-image{display:block;width:100%;height:min(68vh,680px);object-fit:contain;object-position:center bottom;filter:drop-shadow(0 18px 22px rgba(0,0,0,.62))}
+.guide-intro-image[hidden],.guide-intro-fallback[hidden]{display:none}
+.guide-intro-fallback{align-self:center;color:#f7d982;font-size:clamp(110px,22vw,250px);filter:drop-shadow(0 0 28px rgba(56,189,248,.48))}
+.guide-intro-copy{padding:clamp(8px,2vw,24px) 0;text-shadow:0 2px 8px rgba(0,0,0,.85)}
+.guide-intro-kicker{margin:0 0 10px;color:#8bdcff;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+.guide-intro-name{margin:0 0 24px;color:#f7d982;font-size:clamp(36px,5vw,68px);line-height:.98;letter-spacing:2px;text-transform:uppercase}
+.guide-intro-dialogue{margin:0 0 18px;color:#f7fbff;font-size:clamp(18px,2.1vw,25px);line-height:1.55}
+.guide-intro-dialogue.secondary{margin-bottom:30px;color:rgba(224,242,254,.78);font-size:clamp(16px,1.7vw,21px)}
+.guide-intro-proceed{min-width:190px;padding:14px 30px;border:1px solid rgba(247,217,130,.72);border-radius:999px;color:#07111e;background:linear-gradient(180deg,#f7d982,#cda94c);box-shadow:0 0 24px rgba(247,217,130,.25),0 12px 30px rgba(0,0,0,.42);font:900 14px/1 inherit;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible{transform:translateY(-1px);box-shadow:0 0 32px rgba(247,217,130,.4),0 14px 34px rgba(0,0,0,.48);outline:2px solid rgba(139,220,255,.7);outline-offset:3px}
+@media(max-width:760px){.guide-intro-screen{place-items:start center;padding:18px 16px 26px}.guide-intro-stage{grid-template-columns:1fr;gap:20px;max-width:560px}.guide-intro-portrait-frame{min-height:38vh;max-height:46vh;border-radius:18px}.guide-intro-image{height:44vh;max-height:440px}.guide-intro-copy{text-align:center;padding:0}.guide-intro-name{margin-bottom:16px}.guide-intro-dialogue{line-height:1.42}.guide-intro-dialogue.secondary{margin-bottom:22px}.guide-intro-proceed{width:min(280px,100%)}}
+@media(max-height:650px) and (min-width:761px){.guide-intro-screen{padding:20px 34px}.guide-intro-portrait-frame,.guide-intro-image{min-height:0;height:76vh}.guide-intro-name{font-size:42px;margin-bottom:14px}.guide-intro-dialogue{font-size:18px;line-height:1.4}.guide-intro-dialogue.secondary{margin-bottom:18px}}
+
 
 </style>
 </head>
@@ -3158,6 +3177,22 @@ Respect structure strictly.
     <button class="mode-back-btn" onclick="returnToTitleScreen()">BACK</button>
   </div>
 </div>
+
+<section id="guideIntroScreen" class="guide-intro-screen" role="dialog" aria-modal="true" aria-labelledby="guideIntroName" hidden>
+  <div class="guide-intro-stage">
+    <div class="guide-intro-portrait-frame">
+      <img id="guideIntroImage" class="guide-intro-image" alt="" hidden>
+      <div id="guideIntroFallback" class="guide-intro-fallback" aria-hidden="true">✦</div>
+    </div>
+    <div class="guide-intro-copy">
+      <p class="guide-intro-kicker">Your Guide</p>
+      <h1 id="guideIntroName" class="guide-intro-name">Guide</h1>
+      <p id="guideIntroPrimary" class="guide-intro-dialogue"></p>
+      <p id="guideIntroSecondary" class="guide-intro-dialogue secondary"></p>
+      <button id="guideIntroProceed" class="guide-intro-proceed" type="button" onclick="proceedGuideIntroduction()">Proceed</button>
+    </div>
+  </div>
+</section>
 
 <div id="quizSetupModal" class="quiz-setup-modal" role="dialog" aria-modal="true" aria-labelledby="quizSetupTitle">
   <div class="quiz-setup-card">
@@ -3382,6 +3417,7 @@ DO NOT REMOVE:
       <button id="gameMenuModeSelect" class="game-menu-option" type="button" onclick="chooseGameMenuModeSelection()">Mode Selection</button>
       <button id="gameMenuFullscreen" class="game-menu-option" type="button" onclick="toggleGameMenuFullscreen()">Enter Fullscreen</button>
       <button id="gameMenuDaily" class="game-menu-option" type="button" onclick="openDailyFromGameMenu()">Daily Task</button>
+      <button id="gameMenuGuideIntro" class="game-menu-option" type="button" onclick="replayGuideIntroduction()">Replay Introduction</button>
     </div>
 
     <div id="gameModalActions" class="game-modal-actions">
@@ -3672,6 +3708,13 @@ const FACULTY_COMPOSITION_CONFIG = {
         "riskReward": {"strategy":"adaptive"}
     },
     "selectedConceptIds": [],
+    "guide": {
+        "identity":"guide",
+        "displayName":"Guide",
+        "imageSlot":"guideImage",
+        "introLines":["Greetings. I am your guide. I'll be with you as you make your way through this Quest.","If you are ready, follow me."],
+        "custom":false
+    },
     "appearance": {"presetId":"default","overrides":{}},
     "visualTheme": {
         "schemaVersion":"1.0.0",
@@ -3729,8 +3772,12 @@ function applyFacultyVisualTheme(){
         document.documentElement.style.setProperty("--mq-gameplay-image", `url("${gameplay.src}")`);
         document.body.classList.add("mq-themed");
     }
+    const introBackground = gameplay.src || start.src;
+    if(introBackground) document.documentElement.style.setProperty("--mq-guide-intro-image", `url("${introBackground}")`);
 
     const guide = getFacultyVisualSlot("guideImage");
+    const guideConfig = FACULTY_COMPOSITION_CONFIG.guide || {};
+    const guideDisplayName = guideConfig.displayName || guide.displayName || "Guide";
     const wizardBox = document.getElementById("wizardBox");
     const wizard = document.getElementById("wizardImage");
     const wizardName = document.getElementById("wizardName");
@@ -3739,7 +3786,7 @@ function applyFacultyVisualTheme(){
     if(guide.src && wizard){
         const image = document.createElement("img");
         image.src = guide.src;
-        image.alt = guide.alt || guide.displayName || guide.label || "Game guide";
+        image.alt = guide.alt || guideDisplayName;
         wizard.textContent = "";
         wizard.classList.remove("guide-symbol");
         wizard.classList.add("mq-guide-image");
@@ -3747,7 +3794,21 @@ function applyFacultyVisualTheme(){
         wizard.removeAttribute("aria-label");
         wizard.appendChild(image);
     }
-    if(wizardName && guide.displayName) wizardName.textContent = guide.displayName;
+    if(wizardName) wizardName.textContent = guideDisplayName;
+
+    const introImage = document.getElementById("guideIntroImage");
+    const introFallback = document.getElementById("guideIntroFallback");
+    const introName = document.getElementById("guideIntroName");
+    const introLines = Array.isArray(guideConfig.introLines) ? guideConfig.introLines : [];
+    if(introName) introName.textContent = guideDisplayName;
+    if(document.getElementById("guideIntroPrimary")) document.getElementById("guideIntroPrimary").textContent = introLines[0] || `Greetings. I am your guide. I'll be with you as you make your way through this Quest.`;
+    if(document.getElementById("guideIntroSecondary")) document.getElementById("guideIntroSecondary").textContent = introLines[1] || "If you are ready, follow me.";
+    if(introImage){
+        introImage.hidden = !guide.src;
+        introImage.src = guide.src || "";
+        introImage.alt = guide.src ? `${guideDisplayName}, your guide` : "";
+    }
+    if(introFallback) introFallback.hidden = Boolean(guide.src);
 
     const artifactRows = [
         ["vaultCompass","artifact1","Milestone One"],
@@ -3837,6 +3898,7 @@ const PLAYER_KEY = `${STORAGE_PREFIX}:player`;
 const RUN_ID_KEY = `${STORAGE_PREFIX}:runID`;
 const ROOM_KEY = `${STORAGE_PREFIX}:standard:room`;
 const CURRENT_MODE_KEY = `${STORAGE_PREFIX}:currentMode`;
+const GUIDE_INTRO_SEEN_KEY = `${STORAGE_PREFIX}:guideIntroSeen`;
 const ARTIFACT_STORAGE_KEYS = {
     compass: `${STORAGE_PREFIX}:standard:artifact:one`,
     lens: `${STORAGE_PREFIX}:standard:artifact:two`,
@@ -6868,6 +6930,65 @@ function returnToTitleScreen(){
     showContinueButtonIfSaved();
 }
 
+let activeGuideIntroduction = null;
+
+function hasSeenGuideIntroduction(){
+    return localStorage.getItem(GUIDE_INTRO_SEEN_KEY) === "true";
+}
+
+function setGuideIntroductionSeen(){
+    localStorage.setItem(GUIDE_INTRO_SEEN_KEY, "true");
+}
+
+function openGuideIntroduction({selectedMode = null, replay = false, onProceed = null} = {}){
+    const screen = document.getElementById("guideIntroScreen");
+    if(!screen){
+        if(typeof onProceed === "function") onProceed();
+        return;
+    }
+
+    activeGuideIntroduction = {selectedMode, replay:Boolean(replay), onProceed};
+    screen.dataset.selectedMode = selectedMode || "replay";
+    screen.dataset.replay = replay ? "true" : "false";
+    screen.hidden = false;
+    document.body.classList.add("guide-intro-active");
+
+    if(!replay){
+        const modeScreen = document.getElementById("modeSelectScreen");
+        if(modeScreen) modeScreen.style.display = "none";
+        document.body.classList.remove("mode-selection-active");
+    }
+
+    pauseFadingFortune("guide-intro");
+    document.getElementById("guideIntroProceed")?.focus();
+}
+
+function closeGuideIntroduction(){
+    const screen = document.getElementById("guideIntroScreen");
+    if(screen) screen.hidden = true;
+    document.body.classList.remove("guide-intro-active");
+    resumeFadingFortune("guide-intro");
+}
+
+function proceedGuideIntroduction(){
+    const intro = activeGuideIntroduction;
+    if(!intro) return;
+    activeGuideIntroduction = null;
+    setGuideIntroductionSeen();
+    closeGuideIntroduction();
+
+    if(typeof intro.onProceed === "function"){
+        intro.onProceed();
+        return;
+    }
+    if(intro.replay) document.getElementById("returnMenuBtn")?.focus();
+}
+
+function replayGuideIntroduction(){
+    closeGameModal();
+    openGuideIntroduction({replay:true});
+}
+
 function startSelectedMode(mode, options = {}){
     const requestedMode = mode || "standard";
     if(!isFacultyModeSupported(requestedMode)){
@@ -6893,6 +7014,16 @@ function startSelectedMode(mode, options = {}){
     const preflight = validateFacultyMode(requestedMode);
     if(!preflight.ok){
         showFacultyPreflightFailure(requestedMode, preflight.issues);
+        return;
+    }
+
+    if(!options.guideIntroConfirmed && !hasSeenGuideIntroduction()){
+        openGuideIntroduction({
+            selectedMode:requestedMode,
+            onProceed:function(){
+                startSelectedMode(requestedMode, {...options, guideIntroConfirmed:true});
+            }
+        });
         return;
     }
 
