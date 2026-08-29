@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "date": "2026-08-28",
+  "date": "2026-08-29",
   "browser": "Codex In-app Browser",
   "standaloneArtifact": "saving-investment-loanable-funds-production-sample.html",
   "modesExercised": [
@@ -12,6 +12,11 @@
     "Legendary Mode",
     "Score Attack"
   ],
+  "difficultyCalibrationPassModes": [
+    "Trial by Graph",
+    "Unlimited Practice",
+    "Standard Campaign"
+  ],
   "trialByGraph": {
     "availableGraphSafeQuestions": 59,
     "requestedQuestions": 15,
@@ -19,6 +24,22 @@
     "correct": 14,
     "intentionalIncorrect": 1,
     "accuracyPercent": 93,
+    "servedByDifficulty": {
+      "easy": [43222, 43258, 43276, 43312],
+      "medium": [43286, 43279, 43310, 43270],
+      "hard": [43290, 43249, 43278],
+      "elite": [43217, 43295],
+      "legendary": [43273, 43309]
+    },
+    "highDifficultyExamplesVerified": {
+      "movementVersusShift": 43290,
+      "reverseInference": 43249,
+      "causeFromEffect": 43278,
+      "equilibriumAdjustment": 43217,
+      "accountingPlusGraph": 43295,
+      "limitsOfInference": 43273,
+      "simultaneousShifts": 43309
+    },
     "assetsObserved": [
       "LOANABLE-01.webp",
       "LOANABLE-02.webp",
@@ -36,20 +57,20 @@
   },
   "adaptiveRouting": {
     "repairObserved": true,
-    "repairQuestionId": 43183,
+    "repairQuestionId": 43202,
     "bridgeObserved": true,
-    "bridgeQuestionId": 43266,
+    "bridgeQuestionId": 43247,
     "recoveryRetestObserved": true,
-    "recoveryRetestQuestionId": 43320,
+    "recoveryRetestQuestionId": 43304,
     "originRoom": 1,
     "returnedRoom": 1
   },
   "checkpoint": {
     "checkpoint": "Checkpoint One",
     "room": 10,
-    "q1QuestionId": 43190,
+    "q1QuestionId": 43168,
     "q1IntentionalMiss": true,
-    "q2QuestionId": 43186,
+    "q2QuestionId": 43180,
     "q3QuestionId": 43172,
     "remediationDuringCheckpoint": false,
     "q1MissRoutedDirectlyToQ2": true,

@@ -20,6 +20,7 @@ const ACTIVE_RUNNERS = [
   'run_federal_budgets_debt_question_pool_validation.mjs',
   'run_federal_budgets_debt_answer_length_validation.mjs',
   'run_saving_investment_loanable_funds_question_pool_validation.mjs',
+  'run_saving_investment_loanable_funds_high_difficulty_validation.mjs',
   'run_saving_investment_loanable_funds_answer_length_validation.mjs',
   'run_checkpoint_remediation_design_change_validation.mjs',
   'run_concept_review_integration.js',

@@ -3563,7 +3563,7 @@ const FACULTY_COMPOSITION_CONFIG = {
         "slots": {}
     },
     "saveKeyNamespace": "mq-econ:saving-investment-loanable-funds-production-validation:21b0f60b56ff",
-    "librarySha256": "fd8ebae2e12fe19d1542b07076247197a0bdd5982aaee78488118b87006f6c10",
+    "librarySha256": "16772f922e29a5442852dff2e5bec394f5827f567706c60bb982ebec59bb11b2",
     "templateSha256": "896062befef3daf11e2af814010e0a3f3d64dfa48572b75bf319c17adc151f85",
     "compositionFingerprint": "21b0f60b56ff203ff1e5ed08ae424f09c4fc6bdc3f69c9b76582c1596468c9cb"
 };
@@ -9952,15 +9952,15 @@ const questionBanks = {
     {
       "id": "43312",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which point is formed by the new S1 and D1 curves?",
+      "q": "Refer to the graph above. Where do the new saving and investment-demand curves intersect?",
       "options": [
-        "Point B",
-        "Point A",
-        "The D0 intercept",
-        "The S0 intercept"
+        "At point B",
+        "At point A",
+        "At the D0 intercept",
+        "At the S0 intercept"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
-      "type": "graph_integration",
+      "type": "graph_interpretation",
       "objective": "SLF9",
       "difficulty": "easy",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -9968,9 +9968,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "The dashed new curves S1 and D1 intersect at point B.",
+      "feedback": "The dashed S1 and D1 curves represent the new saving and investment-demand schedules, and their intersection is labeled point B.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
+      "aHash": "59d5ddf6172b6de8342a15627cc7f915cec6965fa7464a8f3c7c1b54a9bd6019",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
       "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
       "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged.",
@@ -9980,7 +9980,7 @@ const questionBanks = {
       "sourceId": 43312,
       "sourceChapter": [],
       "sourcePool": "easy",
-      "sourceHash": "197671f6ae84a4aa18a0556249f94bc9071b796fe9ab4e37e8481ba243760795",
+      "sourceHash": "1b6ae7f9c515ca45668a93a5dac46359fa3387f2d218c96fc409046a43dfdf55",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -9990,7 +9990,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 144,
           "sourceId": 43312,
-          "sourceHash": "197671f6ae84a4aa18a0556249f94bc9071b796fe9ab4e37e8481ba243760795",
+          "sourceHash": "1b6ae7f9c515ca45668a93a5dac46359fa3387f2d218c96fc409046a43dfdf55",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -10851,12 +10851,12 @@ const questionBanks = {
     {
       "id": "43225",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which axis shows the price that coordinates this market?",
+      "q": "Refer to the graph above. Which variable acts as the market price, and where is it measured?",
       "options": [
-        "The horizontal quantity axis",
-        "The vertical real-interest-rate axis",
-        "The S0 curve label",
-        "The point A label"
+        "The quantity of loanable funds on the horizontal axis",
+        "The real interest rate on the vertical axis",
+        "National saving along the S0 curve",
+        "Desired investment along the D0 curve"
       ],
       "tag": "loanable-funds-equilibrium",
       "type": "graph_interpretation",
@@ -10867,9 +10867,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "The real interest rate is the market price; the horizontal axis measures the quantity of funds.",
+      "feedback": "The real interest rate is the price that coordinates saving and investment decisions, and the graph measures it on the vertical axis.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "662a68912d03a9515ebfd7af2df3fca3aecc46a4faa3708a8e043ed8db5d2516",
+      "aHash": "2076db5956f75c81a8fe42cf91760c176a87c132ea539fac21252e79ebf8eb98",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp",
       "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
       "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent.",
@@ -10879,7 +10879,7 @@ const questionBanks = {
       "sourceId": 43225,
       "sourceChapter": [],
       "sourcePool": "medium",
-      "sourceHash": "ce29e755b73584333a0e09b5343dcf8a06bda5630cd3952126a75eadd9900339",
+      "sourceHash": "af2c99c5402c4b98e8dba6f97b3502401cd931c1e5dd9dcbd74e0a189a2be8c0",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -10889,7 +10889,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 57,
           "sourceId": 43225,
-          "sourceHash": "ce29e755b73584333a0e09b5343dcf8a06bda5630cd3952126a75eadd9900339",
+          "sourceHash": "af2c99c5402c4b98e8dba6f97b3502401cd931c1e5dd9dcbd74e0a189a2be8c0",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -11253,15 +11253,15 @@ const questionBanks = {
     {
       "id": "43253",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which event is consistent with the displayed shift?",
+      "q": "Refer to the graph above. Which economic change could shift saving supply from S0 to S1?",
       "options": [
-        "Expected investment profitability rises",
-        "Households save more at every real rate",
-        "Households save less at every real rate",
-        "The current real rate rises by itself"
+        "Expected investment profitability rises at every real interest rate",
+        "Households become more willing to save at every real interest rate",
+        "Households become less willing to save at every real interest rate",
+        "The current real interest rate rises with saving preferences unchanged"
       ],
       "tag": "changes-in-saving",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF6",
       "difficulty": "medium",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -11269,9 +11269,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "The displayed rightward supply shift means more national saving is offered at each real interest rate.",
+      "feedback": "A greater willingness to save increases the quantity supplied at every real interest rate, shifting the saving curve right from S0 to S1.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "6bdaea85c54072303c78a2d5327ff8829b2ba7b4c5204ff24f04b1c525d0a629",
+      "aHash": "cc8490531cb2d664248470e110e696413554dc25595a2b7f6358275df39b123b",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent).",
@@ -11281,7 +11281,7 @@ const questionBanks = {
       "sourceId": 43253,
       "sourceChapter": [],
       "sourcePool": "medium",
-      "sourceHash": "07762d576059681e53ef414b1cf58b275de98458b205bc30af6f49b7eee406fb",
+      "sourceHash": "f093d3af3719bd43248bb07dc257c611da2c7f3650a95a04578343c27916931e",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -11291,7 +11291,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 85,
           "sourceId": 43253,
-          "sourceHash": "07762d576059681e53ef414b1cf58b275de98458b205bc30af6f49b7eee406fb",
+          "sourceHash": "f093d3af3719bd43248bb07dc257c611da2c7f3650a95a04578343c27916931e",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12200,12 +12200,12 @@ const questionBanks = {
     {
       "id": "43310",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which statement is supported by the displayed shift magnitudes?",
+      "q": "Refer to the graph above. Given the relative shift sizes drawn, which outcome occurs from A to B?",
       "options": [
-        "Quantity is ambiguous and the rate rises",
-        "Quantity falls while the rate is unchanged",
-        "Quantity rises while the real rate is unchanged",
-        "Both equilibrium variables are ambiguous"
+        "Quantity falls while the real interest rate remains unchanged",
+        "Quantity remains unchanged while the real interest rate rises",
+        "Quantity rises while the real interest rate remains unchanged",
+        "Both equilibrium variables fall"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
       "type": "graph_integration",
@@ -12216,9 +12216,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "The actual intersections resolve the result: Q doubles from 40 to 80 and r remains 6 percent.",
+      "feedback": "The marked intersections incorporate the relative curve shifts: equilibrium quantity rises from 40 to 80, while both points remain at a 6 percent real interest rate.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "5c02b4313d16a9000b95a262b98f24afde7264737ce9513b999f74c12c787b2b",
+      "aHash": "54f70c203264a114b459bafc8806becd65c9ff9a053fbf47f9f461bfb60354db",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
       "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
       "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged.",
@@ -12228,7 +12228,7 @@ const questionBanks = {
       "sourceId": 43310,
       "sourceChapter": [],
       "sourcePool": "medium",
-      "sourceHash": "3ec022e389425dd5a019f4952e6f2cc168fcb55396346cc05d0a8b8edd390c1b",
+      "sourceHash": "75ee659d36f43f94e791b5d21e4bd77035760a1e2dfa7d5e56e6772e4b585d85",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12238,7 +12238,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 142,
           "sourceId": 43310,
-          "sourceHash": "3ec022e389425dd5a019f4952e6f2cc168fcb55396346cc05d0a8b8edd390c1b",
+          "sourceHash": "75ee659d36f43f94e791b5d21e4bd77035760a1e2dfa7d5e56e6772e4b585d85",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12357,12 +12357,12 @@ const questionBanks = {
     {
       "id": "43318",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Saving supply falls while investment demand rises. What happens to the real interest rate?",
+      "q": "Saving supply falls while investment demand rises. What happens to the equilibrium real interest rate?",
       "options": [
-        "It falls unambiguously",
-        "It must remain unchanged",
-        "It rises unambiguously",
-        "Its direction is always ambiguous"
+        "It falls",
+        "It remains unchanged",
+        "It rises",
+        "It cannot be determined"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
       "type": "application",
@@ -12373,14 +12373,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "Both a leftward supply shift and a rightward demand shift push the equilibrium real rate upward; quantity may be ambiguous.",
+      "feedback": "Both the leftward supply shift and the rightward demand shift put upward pressure on the equilibrium real interest rate, while their quantity effects oppose one another.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "138435bb8914e6b829e1c0e0cb1a7ed7d831cc62a07305ffd8c8bf5aa5e5c88d",
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203",
       "canonicalId": "43318",
       "sourceId": 43318,
       "sourceChapter": [],
       "sourcePool": "medium",
-      "sourceHash": "8ab2f1bbc4ed53bd97f0753d567e274263fee265c6bb9b802a51e92a123daa5e",
+      "sourceHash": "9aa1c8241f9908e4788246f2e04f8eb175945f224c975c5f5bf80b168e3747b1",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12390,7 +12390,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 150,
           "sourceId": 43318,
-          "sourceHash": "8ab2f1bbc4ed53bd97f0753d567e274263fee265c6bb9b802a51e92a123daa5e",
+          "sourceHash": "9aa1c8241f9908e4788246f2e04f8eb175945f224c975c5f5bf80b168e3747b1",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12457,15 +12457,15 @@ const questionBanks = {
     {
       "id": "43196",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Income rises from $1,400 to $1,500 while consumption and government purchases are unchanged. How does national saving change?",
+      "q": "Output rises by $100, consumption rises by $70, and government purchases rise by $10. What happens to national saving and loanable-funds supply?",
       "options": [
-        "It rises by $100",
-        "It falls by $100",
-        "It stays fixed",
-        "It rises by $1,500"
+        "National saving rises by $20, so loanable-funds supply shifts right",
+        "National saving falls by $20, so loanable-funds supply shifts left",
+        "National saving rises by $180, so investment demand shifts right",
+        "National saving is unchanged because output and spending all increased"
       ],
       "tag": "private-public-national-saving",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF2",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12473,14 +12473,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "calculate_national_saving",
       "commonError": "Uses a neighboring rule instead of the evidence required by Private, Public, and National Saving.",
-      "feedback": "Holding C and G fixed, the $100 increase in Y raises Y − C − G by $100.",
+      "feedback": "Using S = Y − C − G, the change is +100 − 70 − 10 = +$20. Higher national saving shifts the loanable-funds supply curve right.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "0e2d797a8e4ecb67540e3e2ba4b1848672c2e25c8de49e2512ea05bc86327439",
+      "aHash": "8558700a5b1ecd3e8fcdc60f8cde94aaf5372ed59a8eedbdd02b3124908c59b3",
       "canonicalId": "43196",
       "sourceId": 43196,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "b0b725719df9fb3bdd485dbb3d6170b0cd41d8bc0e0e085887070f24d195efc6",
+      "sourceHash": "895d6c94fc50fb82b7db738af43b1b87932de3370b05c4b25df232a1e0c972ad",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12490,7 +12490,7 @@ const questionBanks = {
           "routeKey": "SLF2",
           "sourceRecordOrder": 28,
           "sourceId": 43196,
-          "sourceHash": "b0b725719df9fb3bdd485dbb3d6170b0cd41d8bc0e0e085887070f24d195efc6",
+          "sourceHash": "895d6c94fc50fb82b7db738af43b1b87932de3370b05c4b25df232a1e0c972ad",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12506,15 +12506,15 @@ const questionBanks = {
     {
       "id": "43199",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Net taxes are $320 and government purchases are $280. What fiscal saving contribution enters national saving?",
+      "q": "Net taxes are $320 and government purchases are $280. Private saving then falls by $20 while fiscal quantities remain fixed. What follows?",
       "options": [
-        "−$40 of private saving",
-        "+$280 of public saving",
-        "$600 of national saving",
-        "+$40 of public saving"
+        "Public saving falls to $20, but national saving remains unchanged",
+        "Public saving remains $40, while national saving rises $20 and supply shifts right",
+        "Public saving rises to $60, shifting investment demand rather than loanable-funds supply",
+        "Public saving stays $40; national saving falls $20"
       ],
       "tag": "private-public-national-saving",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF2",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12522,14 +12522,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "calculate_national_saving",
       "commonError": "Uses a neighboring rule instead of the evidence required by Private, Public, and National Saving.",
-      "feedback": "Public saving is T − G = $320 − $280 = +$40, which is one component of national saving.",
+      "feedback": "Public saving remains T − G = $40 because fiscal quantities do not change. The $20 decline in private saving therefore lowers national saving and shifts supply left.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "e1dab786b6707746ab8be809115da879c1aab944d6d9e34104ad4f45a3cfe915",
+      "aHash": "1932ba715d1d51abd9ac66bc747b84d4634f4695fa088d6141f1f12e5ca12afc",
       "canonicalId": "43199",
       "sourceId": 43199,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "ff8ad386584a404107b56bece1b04feeaf19dce6d5bacb1e649fe3fb224921e9",
+      "sourceHash": "6c393b31417e99c570a6f4b35154d8468366e6747bd4678a0a797f25c82f9037",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12539,7 +12539,7 @@ const questionBanks = {
           "routeKey": "SLF2",
           "sourceRecordOrder": 31,
           "sourceId": 43199,
-          "sourceHash": "ff8ad386584a404107b56bece1b04feeaf19dce6d5bacb1e649fe3fb224921e9",
+          "sourceHash": "6c393b31417e99c570a6f4b35154d8468366e6747bd4678a0a797f25c82f9037",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12555,15 +12555,15 @@ const questionBanks = {
     {
       "id": "43207",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "National saving is $420 in a closed economy. What aggregate investment amount is consistent with the identity?",
+      "q": "National saving is initially $420 billion in a closed economy. Improved technology then raises desired investment at every real interest rate. What is the adjustment?",
       "options": [
-        "$0",
-        "$210",
-        "$840",
-        "$420"
+        "Investment stays permanently at $420 billion because the identity prevents demand from shifting",
+        "Loanable-funds supply shifts right by exactly the technology improvement, leaving the rate fixed",
+        "The identity is violated because desired investment can never differ from saving, even away from equilibrium",
+        "Investment demand shifts right, creating upward rate pressure until planned saving and investment are equal again"
       ],
       "tag": "closed-economy-saving-investment-identity",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF3",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12571,14 +12571,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "apply_closed_economy_saving_identity",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving and Investment in a Closed Economy.",
-      "feedback": "The closed-economy aggregate identity requires S = I, so investment is $420.",
+      "feedback": "The accounting identity does not freeze behavior. Higher expected returns shift investment demand right; the real rate adjusts, inducing movements along both curves toward a new equilibrium equality.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "6f24e0a71765edc5186214df27d874dbd8bd4e79312e7262d2f6d8964fa08def",
+      "aHash": "eb33447f323f092b4c39b1c1ca03debd2e64c3363566939c319e960275f95cb8",
       "canonicalId": "43207",
       "sourceId": 43207,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "57286a511539e903a35633cdee0b1f784b0a55986edf9d8619d81fda950ab5e2",
+      "sourceHash": "e51bf74f0667b90d1dcd5138c8bf7d3a42ad6d9f3763b44705704924920ef50f",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12588,7 +12588,7 @@ const questionBanks = {
           "routeKey": "SLF3",
           "sourceRecordOrder": 39,
           "sourceId": 43207,
-          "sourceHash": "57286a511539e903a35633cdee0b1f784b0a55986edf9d8619d81fda950ab5e2",
+          "sourceHash": "e51bf74f0667b90d1dcd5138c8bf7d3a42ad6d9f3763b44705704924920ef50f",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12604,15 +12604,15 @@ const questionBanks = {
     {
       "id": "43210",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Government purchases fall by $25 with output and consumption fixed in a closed economy. What follows?",
+      "q": "Government purchases fall by $25 billion with output and consumption fixed in a closed economy, while firms also become more optimistic about future sales. Which market description is complete?",
       "options": [
-        "Saving and investment fall by $25",
-        "Only private saving changes",
-        "Saving and investment rise by $25",
-        "Investment becomes unrelated to saving"
+        "Only supply shifts right, so both quantity and the real rate must rise",
+        "Only investment demand shifts right, so quantity rises and the real rate falls",
+        "Both curves shift right; quantity rises and the rate is ambiguous",
+        "Both curves shift left, so quantity falls while the real-rate effect is ambiguous"
       ],
       "tag": "closed-economy-saving-investment-identity",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF3",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12620,14 +12620,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "apply_closed_economy_saving_identity",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving and Investment in a Closed Economy.",
-      "feedback": "Lower G raises Y − C − G by $25, so both aggregate national saving and investment rise.",
+      "feedback": "Lower government purchases raise national saving by $25 billion and shift supply right. Stronger expected sales shift investment demand right. Quantity rises, but the rate depends on relative shifts.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "755f79950083f060b63426559099decacb41c1adf481f97fef4e8f4950a40055",
+      "aHash": "e490cc9ceff6b6c438cd6b4631bddfd5677b861cebfcefcc989feb013fe17c33",
       "canonicalId": "43210",
       "sourceId": 43210,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "5bb4b79ec8a2f23961c85a6608c12e864b9f4efce52129f565b3f9aff5c06e8f",
+      "sourceHash": "52be39a119c3e6d8647dc6d2d6fc8e64a274bb39eddc80f3380fe71c0cc23a06",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12637,7 +12637,7 @@ const questionBanks = {
           "routeKey": "SLF3",
           "sourceRecordOrder": 42,
           "sourceId": 43210,
-          "sourceHash": "5bb4b79ec8a2f23961c85a6608c12e864b9f4efce52129f565b3f9aff5c06e8f",
+          "sourceHash": "52be39a119c3e6d8647dc6d2d6fc8e64a274bb39eddc80f3380fe71c0cc23a06",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12653,15 +12653,15 @@ const questionBanks = {
     {
       "id": "43213",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Private saving is $360 and public saving is −$60 in a closed economy. What investment level is implied?",
+      "q": "Private saving is $360 billion and public saving is −$60 billion. If desired investment at the current real rate is $340 billion, what pressure should move the closed-economy market toward equilibrium?",
       "options": [
-        "$60",
-        "$300",
-        "$360",
-        "$420"
+        "Excess saving puts downward pressure on the real rate, increasing the gap",
+        "Excess demand raises the real rate toward equilibrium",
+        "Investment demand shifts left automatically by $40 billion because S = I is an identity",
+        "Loanable-funds supply shifts right automatically until both quantities equal $360 billion"
       ],
       "tag": "closed-economy-saving-investment-identity",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF3",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12669,14 +12669,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "apply_closed_economy_saving_identity",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving and Investment in a Closed Economy.",
-      "feedback": "National saving is $360 − $60 = $300, and closed-economy investment equals national saving.",
+      "feedback": "National saving is $300 billion, below desired investment of $340 billion at the current rate. Excess demand pushes the rate upward, causing movements along the curves toward equilibrium.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "3977c27d53b276cb260062e3160e8fb18bccde32c51f69b3f93a4f638b32279e",
+      "aHash": "b1eb33d39d263e7b5a6bc9e7d757d3313f9d87855ea4ab28b53bf3e8bcd19fbc",
       "canonicalId": "43213",
       "sourceId": 43213,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "31320ad816b872bca004f246eaa1d53f9c6987d16252fdd6654ae07686327377",
+      "sourceHash": "fd0b6518514fe0daf974acb90fee937c18c6ed5e2589abcf9b6d8c00c2d0e4c9",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12686,7 +12686,7 @@ const questionBanks = {
           "routeKey": "SLF3",
           "sourceRecordOrder": 45,
           "sourceId": 43213,
-          "sourceHash": "31320ad816b872bca004f246eaa1d53f9c6987d16252fdd6654ae07686327377",
+          "sourceHash": "fd0b6518514fe0daf974acb90fee937c18c6ed5e2589abcf9b6d8c00c2d0e4c9",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12810,15 +12810,15 @@ const questionBanks = {
     {
       "id": "43227",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "What supplies loanable funds in the closed-economy model?",
+      "q": "A larger budget deficit lowers public saving while private saving and investment determinants remain unchanged. Which complete loanable-funds sequence follows?",
       "options": [
-        "Household consumption",
-        "Government purchases",
-        "Desired investment",
-        "National saving"
+        "National saving falls, investment demand shifts left, and both the rate and quantity fall",
+        "National saving rises, supply shifts right, and investment falls along demand",
+        "National saving is unchanged because public saving is not part of loanable-funds supply",
+        "Supply shifts left, raising the rate and reducing investment"
       ],
       "tag": "loanable-funds-equilibrium",
-      "type": "definition",
+      "type": "integration",
       "objective": "SLF4",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12826,14 +12826,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "Private and public saving combine into national saving, the source of funds offered in this market.",
+      "feedback": "Public saving is part of national saving, which supplies loanable funds. A deficit lowers that supply, raises the equilibrium real interest rate, and crowds out investment along unchanged demand.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "f641f1d5cc8483d4b442a7a85e7b7e1aeba9eb0dab1de118cd27e1c4052bc500",
+      "aHash": "265b421c4884f3eee584601672cbabd9d95c6d98949901c54aa7e44fdb2fc22e",
       "canonicalId": "43227",
       "sourceId": 43227,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "278bd459a36b86c3eb1af59a234245d1412a30057420c8b6cf889c8efea70ca5",
+      "sourceHash": "fee3d0b4a774894e8b78a90ae9d8713baba304c8652255738cc202664ed27861",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12843,7 +12843,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 59,
           "sourceId": 43227,
-          "sourceHash": "278bd459a36b86c3eb1af59a234245d1412a30057420c8b6cf889c8efea70ca5",
+          "sourceHash": "fee3d0b4a774894e8b78a90ae9d8713baba304c8652255738cc202664ed27861",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12859,15 +12859,15 @@ const questionBanks = {
     {
       "id": "43233",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "How does the equilibrium real interest rate connect saving and investment decisions?",
+      "q": "The real interest rate is above equilibrium with loanable-funds curves unchanged. Which adjustment moves the market back toward equilibrium?",
       "options": [
-        "It makes every investment project identical",
-        "It makes the quantities supplied and demanded equal",
-        "It forces each household to lend directly",
-        "It fixes national saving independently of behavior"
+        "Excess investment demand pushes the rate up, increasing the imbalance",
+        "Excess saving pushes the rate down toward equilibrium",
+        "Saving supply shifts left until all planned investment disappears",
+        "Investment demand shifts right because the high rate makes more projects profitable"
       ],
       "tag": "loanable-funds-equilibrium",
-      "type": "bridge",
+      "type": "application",
       "objective": "SLF4",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12875,14 +12875,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "The equilibrium rate is the price at which planned national saving matches desired investment financing.",
+      "feedback": "Above equilibrium, the quantity of funds supplied exceeds the quantity demanded. Downward pressure on the rate causes movements along both curves until planned saving and investment are equal.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "dc4cff86af36da5a7b62a819fd715cd69de0f43f4e896c65787bb50b016818a8",
+      "aHash": "8d9166f06597a489836e070b6c4d0543eecdb74a5cb36577ed8bc571e0cc381b",
       "canonicalId": "43233",
       "sourceId": 43233,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "b844dcf385aa833b2b374704cd2e4161ed6d7d4b2c97f44e312ed7c870985684",
+      "sourceHash": "83d54d886be2167fd43857bca802656da93c38cd3435b9df3e42d2d5b8612029",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12892,7 +12892,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 65,
           "sourceId": 43233,
-          "sourceHash": "b844dcf385aa833b2b374704cd2e4161ed6d7d4b2c97f44e312ed7c870985684",
+          "sourceHash": "83d54d886be2167fd43857bca802656da93c38cd3435b9df3e42d2d5b8612029",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12908,15 +12908,15 @@ const questionBanks = {
     {
       "id": "43238",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Households become more willing to save at every real interest rate. What changes?",
+      "q": "Households become more willing to save at every real interest rate. The resulting equilibrium rate falls, and firms undertake more projects. Which description separates the initial cause from the response?",
       "options": [
-        "There is only movement along saving",
-        "Investment demand shifts left",
-        "The saving curve shifts right",
-        "The real-interest-rate axis shifts"
+        "Investment demand shifts right first; saving rises through movement along unchanged supply",
+        "Both saving supply and investment demand shift right merely because their quantities rise",
+        "Saving supply shifts right; investment rises through movement down along unchanged demand",
+        "The lower rate shifts saving supply left and shifts investment demand right"
       ],
       "tag": "loanable-funds-movement-versus-shift",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF5",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12924,14 +12924,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_movement_from_shift_loanable_funds",
       "commonError": "Uses a neighboring rule instead of the evidence required by Movement Along Versus Shift.",
-      "feedback": "Greater willingness to save is a non-interest determinant, raising supply at each rate and shifting the curve right.",
+      "feedback": "Greater willingness to save shifts supply right. The lower equilibrium rate then makes more projects profitable, increasing investment as movement along the original investment-demand curve.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "fb3d4637f05a475e3d1718664d441fa5076f40d4b1f00070cee1590801131465",
+      "aHash": "2c88bda45bfcb5ab044bd6816b9ced95adfef1ce2f44e5e33147eabb2baaebe9",
       "canonicalId": "43238",
       "sourceId": 43238,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "c19e4cacf3b1204ad80684aadbb1895a683b62dc820148ab051d4fe649ad5438",
+      "sourceHash": "869b49b14bd35b3ffb3e651ed141ff2be2b274d4391744d84941164fa7fb13c8",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12941,7 +12941,7 @@ const questionBanks = {
           "routeKey": "SLF5",
           "sourceRecordOrder": 70,
           "sourceId": 43238,
-          "sourceHash": "c19e4cacf3b1204ad80684aadbb1895a683b62dc820148ab051d4fe649ad5438",
+          "sourceHash": "869b49b14bd35b3ffb3e651ed141ff2be2b274d4391744d84941164fa7fb13c8",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -12957,15 +12957,15 @@ const questionBanks = {
     {
       "id": "43241",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "A saving tax incentive increases funds supplied at every real rate. How should it be shown?",
+      "q": "A retirement incentive increases saving at every real rate, while improved technology raises expected returns on investment. Which conclusion follows without knowing shift sizes?",
       "options": [
-        "As movement up along saving supply",
-        "As a rightward saving-supply shift",
-        "As a leftward investment-demand shift",
-        "As movement down along investment demand"
+        "Only saving supply shifts right, so the real rate must fall",
+        "Both curves shift right and equilibrium quantity rises; the real-rate direction is ambiguous",
+        "Both curves shift right and the real rate must remain unchanged",
+        "Saving supply shifts left while investment demand shifts right, so quantity is ambiguous"
       ],
       "tag": "loanable-funds-movement-versus-shift",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF5",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -12973,14 +12973,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_movement_from_shift_loanable_funds",
       "commonError": "Uses a neighboring rule instead of the evidence required by Movement Along Versus Shift.",
-      "feedback": "The incentive changes saving behavior independently of the current rate, so supply shifts rather than showing movement along it.",
+      "feedback": "The saving incentive shifts supply right, while improved technology shifts investment demand right. Both changes raise equilibrium quantity, but their pressures on the real interest rate oppose one another.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "a49688ab48b5f1055d609c42a46594cca762b04d2cc8a16cd7b1e7c641dca2e1",
+      "aHash": "67c21c31de25729d3627b6383f8095045248dec12980ab5e7b3d8dbd8d5cf2a4",
       "canonicalId": "43241",
       "sourceId": 43241,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "d4fbda384efceb1700a00e9eabf1bf8014340c130d033f26c28e6a370f1267f1",
+      "sourceHash": "94cf86a0f459d07671abaddfac7815bfdf267f6c3bc028273b8ac5709d0baf8a",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -12990,7 +12990,7 @@ const questionBanks = {
           "routeKey": "SLF5",
           "sourceRecordOrder": 73,
           "sourceId": 43241,
-          "sourceHash": "d4fbda384efceb1700a00e9eabf1bf8014340c130d033f26c28e6a370f1267f1",
+          "sourceHash": "94cf86a0f459d07671abaddfac7815bfdf267f6c3bc028273b8ac5709d0baf8a",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13006,12 +13006,12 @@ const questionBanks = {
     {
       "id": "43249",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. After saving increases, what real interest rate is shown at B?",
+      "q": "Refer to the graph above. The market moves from A to B. Which event is inconsistent with the change shown?",
       "options": [
-        "4 percent",
-        "6 percent",
-        "8 percent",
-        "10 percent"
+        "Households become more willing to save at every real rate",
+        "A new investment tax credit raises expected project profitability",
+        "A retirement incentive increases private saving",
+        "A budget improvement increases public and national saving"
       ],
       "tag": "changes-in-saving",
       "type": "graph_integration",
@@ -13022,9 +13022,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "The new S1-D0 intersection is point B at a 6 percent real interest rate.",
+      "feedback": "The graph shows saving supply shifting right while investment demand remains D0. An investment tax credit would instead shift investment demand right and would not by itself produce this diagram.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "5bd030d5464d74b1316a839186c8e6e80283edd05cce812fb5ffe4ba9cd05f2a",
+      "aHash": "20ed5e7c07d2d2a48efefb40232456ab01d21a4aef338e45ecb930954cc22932",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent).",
@@ -13034,7 +13034,7 @@ const questionBanks = {
       "sourceId": 43249,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "f1f867ae334aef633a704a83b05defb0eb6312c1196870363c79294596fb4ba9",
+      "sourceHash": "0ad8ae0eac5dd13295c979c73738d2894c61a705311e816071c04441ce7a3f09",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13044,7 +13044,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 81,
           "sourceId": 43249,
-          "sourceHash": "f1f867ae334aef633a704a83b05defb0eb6312c1196870363c79294596fb4ba9",
+          "sourceHash": "0ad8ae0eac5dd13295c979c73738d2894c61a705311e816071c04441ce7a3f09",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13060,12 +13060,12 @@ const questionBanks = {
     {
       "id": "43252",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which curve shifts between the two equilibria?",
+      "q": "Refer to the graph above. Congress reduces government purchases while output and consumption remain fixed. Which explanation connects that policy to the movement from A to B?",
       "options": [
-        "Saving supply shifts right from S0 to S1",
-        "Saving supply shifts left from S1 to S0",
-        "Investment demand shifts right from D0",
-        "Investment demand shifts left from D0"
+        "National saving and supply rise; the rate falls and investment rises",
+        "National saving falls, shifting supply left; the higher rate lowers investment along demand",
+        "Desired investment rises, shifting D0 right; saving supply remains fixed",
+        "The lower rate itself shifts saving supply right and investment demand left"
       ],
       "tag": "changes-in-saving",
       "type": "graph_integration",
@@ -13076,9 +13076,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "D0 remains fixed while the saving curve moves right from solid S0 to dashed S1.",
+      "feedback": "Lower government purchases raise Y − C − G and national saving. Supply shifts from S0 to S1; the lower equilibrium rate then increases investment through movement along D0.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "1e7b08aea5c6f80bc5cb561bc36647e96db2ef14fffe8336d199038f25bdc170",
+      "aHash": "fcf6ec69de23eb036d1edd5f1ae8f66ad78bf027a5e0fa433ed075f5980fd853",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent).",
@@ -13088,7 +13088,7 @@ const questionBanks = {
       "sourceId": 43252,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "c613f5f77b4bd4ba7e0739fe61f0a3497748d6b0c1c9fac7854043ab10d2ff67",
+      "sourceHash": "77a444b9c2b95475f748fb10b6297f843a0f0c8c60d2637f500abe69ddf0f9c1",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13098,7 +13098,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 84,
           "sourceId": 43252,
-          "sourceHash": "c613f5f77b4bd4ba7e0739fe61f0a3497748d6b0c1c9fac7854043ab10d2ff67",
+          "sourceHash": "77a444b9c2b95475f748fb10b6297f843a0f0c8c60d2637f500abe69ddf0f9c1",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13114,12 +13114,12 @@ const questionBanks = {
     {
       "id": "43255",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which point is the equilibrium after saving increases?",
+      "q": "Refer to the graph above. From A to B, firms undertake more investment because the real interest rate falls. How should the firm's response be classified?",
       "options": [
-        "Point A",
-        "The S0 label",
-        "The D0 intercept",
-        "Point B"
+        "A rightward shift from D0 because every increase in investment is a demand shift",
+        "A leftward shift of D0 caused by the lower financing cost",
+        "A movement up along S0 caused by improved expected profitability",
+        "A movement down along D0 caused by the saving-supply shift"
       ],
       "tag": "changes-in-saving",
       "type": "graph_integration",
@@ -13130,9 +13130,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "Point B is where the new saving curve S1 intersects unchanged investment demand D0.",
+      "feedback": "The initiating change is the rightward saving-supply shift. Firms respond to the lower rate by moving along unchanged investment demand D0, rather than shifting that curve.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "2921798e8321b2d9ec891c4a033f0599528027db652446ed8fcb30f94a3d4107",
+      "aHash": "5aa1554fabc2231aba9f0ed58aba06b1ac23f11f9fae7d22ccda91fb1d06ad54",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent).",
@@ -13142,7 +13142,7 @@ const questionBanks = {
       "sourceId": 43255,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "92293f7f5c7679916d947d8f70b107a2d212eaddaaa55e095804d7c0178d6523",
+      "sourceHash": "511f1012e0187f28d94fc23eaf88a81ecc4beb39641340220f9600a138e0ae4e",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13152,7 +13152,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 87,
           "sourceId": 43255,
-          "sourceHash": "92293f7f5c7679916d947d8f70b107a2d212eaddaaa55e095804d7c0178d6523",
+          "sourceHash": "511f1012e0187f28d94fc23eaf88a81ecc4beb39641340220f9600a138e0ae4e",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13168,12 +13168,12 @@ const questionBanks = {
     {
       "id": "43261",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. By how much does equilibrium quantity decline?",
+      "q": "Refer to the graph above. Can the 20-unit decline in equilibrium quantity be interpreted as the horizontal size of the saving-supply shift?",
       "options": [
-        "1 unit",
-        "20 units",
-        "7 units",
-        "80 units"
+        "Yes; every change in equilibrium quantity equals the horizontal curve shift",
+        "No; quantity also changes through movement along D0",
+        "Yes; D0 is fixed, so firms cannot move along it",
+        "No; the quantity decline must instead equal a leftward investment-demand shift"
       ],
       "tag": "changes-in-saving",
       "type": "graph_integration",
@@ -13184,9 +13184,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "The quantity falls from 100 at A to 80 at B, a decline of 20 units.",
+      "feedback": "The supply curve shifts, but the higher real rate also moves firms upward along unchanged D0. Therefore the change from 100 to 80 is an equilibrium response, not the horizontal shift magnitude.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "ff6d647b64d4b8c74e939144b409cde7dbeb4f275ba47d37c03a3ece82a3d694",
+      "aHash": "d55db990ad004a6f3e1b8dfa532b8551fedf08bdd51b065f210c12b76d02b36d",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-03.webp",
       "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent).",
@@ -13196,7 +13196,7 @@ const questionBanks = {
       "sourceId": 43261,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "b08f7c8d280b5377199ac9ce1272e7dd0eafb45754e3ec138e6c0d5f8797707f",
+      "sourceHash": "cf1c4b899dc3a6701dd0efa23bb46805ed39ecad65816613ccf3bada74fcc02c",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13206,7 +13206,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 93,
           "sourceId": 43261,
-          "sourceHash": "b08f7c8d280b5377199ac9ce1272e7dd0eafb45754e3ec138e6c0d5f8797707f",
+          "sourceHash": "cf1c4b899dc3a6701dd0efa23bb46805ed39ecad65816613ccf3bada74fcc02c",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13222,15 +13222,15 @@ const questionBanks = {
     {
       "id": "43264",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Public saving falls while private saving is unchanged. What happens to national saving?",
+      "q": "Public saving falls by $30 billion while private saving rises by $10 billion. With investment demand unchanged, what follows?",
       "options": [
-        "It falls, shifting loanable-funds supply left",
-        "It rises, shifting supply right",
-        "It is unchanged, leaving supply fixed",
-        "It shifts investment demand right"
+        "Supply shifts left, raising the rate and reducing investment",
+        "National saving rises $40 billion, shifting supply right and increasing investment",
+        "National saving falls $20 billion, shifting investment demand left and lowering the rate",
+        "National saving remains unchanged because private saving always offsets a deficit"
       ],
       "tag": "changes-in-saving",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF6",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13238,14 +13238,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "National saving is the sum of private and public saving, so a lower public component reduces supply.",
+      "feedback": "The component changes sum to −$20 billion. Lower national saving shifts loanable-funds supply left, which raises the equilibrium real rate and reduces investment along demand.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "a8d0f98f9c970281463563cd395870467fb36ad5ce7563a8671e046ac82d8616",
+      "aHash": "265b421c4884f3eee584601672cbabd9d95c6d98949901c54aa7e44fdb2fc22e",
       "canonicalId": "43264",
       "sourceId": 43264,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "0f298c8c51f05316dfa9e1d7e7d684a16efd0cce1a438abb51b81b52a5b741a1",
+      "sourceHash": "74d13a8a79691e332a2c2a87f5b966c1fa053559e6a440942de0599ebe4643ee",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13255,7 +13255,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 96,
           "sourceId": 43264,
-          "sourceHash": "0f298c8c51f05316dfa9e1d7e7d684a16efd0cce1a438abb51b81b52a5b741a1",
+          "sourceHash": "74d13a8a79691e332a2c2a87f5b966c1fa053559e6a440942de0599ebe4643ee",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13271,15 +13271,15 @@ const questionBanks = {
     {
       "id": "43269",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What equilibrium quantity follows the investment-demand increase?",
+      "q": "Refer to the graph above. Both the real interest rate and equilibrium quantity rise from A to B while saving behavior is unchanged. Which diagnosis fits the evidence?",
       "options": [
-        "80 units",
-        "120 units",
-        "160 units",
-        "260 units"
+        "Households became more willing to save, shifting loanable-funds supply right",
+        "Expected project profitability increased, shifting investment demand right",
+        "A larger deficit reduced public saving, shifting loanable-funds supply left",
+        "The higher real rate itself shifted investment demand right"
       ],
       "tag": "investment-demand",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF7",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13287,9 +13287,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "Point B lies at 120 units after investment demand increases.",
+      "feedback": "With S0 fixed, higher expected profitability shifts investment demand from D0 to D1. That demand increase raises both the equilibrium real rate and quantity, as shown.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "07573ac0a912aa05baad8a67e8d1eda156eb6d7ddb456ebe72bb83ae50702eed",
+      "aHash": "fd04b74be2e16f7a212d1b4c1a5c91e885b6710f9e6010dbfc6cb928afd0173e",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-04.webp",
       "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
       "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent).",
@@ -13299,7 +13299,7 @@ const questionBanks = {
       "sourceId": 43269,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "a6a930799c7364ff9ea4e91cf445e61a0b4e554fbeb86f0a1c398c9b413f7c62",
+      "sourceHash": "74fa56db64df411ce7e41298ede0addfb31647d601bfc5a1e77e03ed657624a7",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13309,7 +13309,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 101,
           "sourceId": 43269,
-          "sourceHash": "a6a930799c7364ff9ea4e91cf445e61a0b4e554fbeb86f0a1c398c9b413f7c62",
+          "sourceHash": "74fa56db64df411ce7e41298ede0addfb31647d601bfc5a1e77e03ed657624a7",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13325,15 +13325,15 @@ const questionBanks = {
     {
       "id": "43275",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What equilibrium quantity follows the investment-demand decrease?",
+      "q": "Refer to the graph above. The market moves from A to B while saving behavior remains unchanged. Which change best explains the joint decline in the real rate and quantity?",
       "options": [
-        "40 units",
-        "80 units",
-        "140 units",
-        "60 units"
+        "Households save more at every real rate, shifting supply right",
+        "A larger deficit reduces national saving, shifting supply left",
+        "The lower real rate itself shifts investment demand left",
+        "Firms expect weaker future sales, shifting investment demand left"
       ],
       "tag": "investment-demand",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF7",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13341,9 +13341,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "Point B lies at 60 units after investment demand decreases.",
+      "feedback": "Weaker expected sales reduce desired investment at every rate, shifting D0 left to D1. With S0 fixed, both the equilibrium real rate and quantity fall.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "482ed0d61fba98054b39622add4b6f33732fddedb4a4e5166c23dd2c505850ee",
+      "aHash": "a4305f32be56598868ce9a54fc24f651790d3a4efff2689b387e836739cbdeee",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-05.webp",
       "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
       "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent).",
@@ -13353,7 +13353,7 @@ const questionBanks = {
       "sourceId": 43275,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "aa4c99335ac81658d51425b21e918c8f468052eeb2cd6629140a0b625fc8e6b2",
+      "sourceHash": "121eeaa3360278044dd636b04a6674f6804275267226763ac3193a018d81d23c",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13363,7 +13363,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 107,
           "sourceId": 43275,
-          "sourceHash": "aa4c99335ac81658d51425b21e918c8f468052eeb2cd6629140a0b625fc8e6b2",
+          "sourceHash": "121eeaa3360278044dd636b04a6674f6804275267226763ac3193a018d81d23c",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13379,12 +13379,12 @@ const questionBanks = {
     {
       "id": "43278",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which event could explain the displayed demand decrease?",
+      "q": "Refer to the graph above. The market moves from A to B with saving supply fixed. Which change could have caused this outcome?",
       "options": [
-        "A tax credit raises investment profitability",
-        "Households become more willing to save",
+        "A tax credit raises expected investment profitability",
+        "Households become more willing to save at every real rate",
         "Firms expect weaker future demand for their output",
-        "Public saving declines with demand unchanged"
+        "A deficit reduces public saving while investment determinants remain fixed"
       ],
       "tag": "investment-demand",
       "type": "graph_integration",
@@ -13395,7 +13395,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "Weaker expected sales reduce desired investment at each rate, matching the leftward demand shift.",
+      "feedback": "Weaker expected sales reduce desired investment at every real interest rate, shifting demand left from D0 to D1 and lowering both equilibrium variables.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
       "aHash": "4cbc9cf3e1cdeeede36a691010db1d9d9c72f91d0f50a13c0af282bb307d8c7a",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-05.webp",
@@ -13407,7 +13407,7 @@ const questionBanks = {
       "sourceId": 43278,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "35cdc628ae8043bdddbbeeca18afd641a8c59a0aa1affc573e87b0a93235bb42",
+      "sourceHash": "1019eee6d4740bc2cf873103fcc3f0eda181c1fde124f17054f7e276352e1836",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13417,7 +13417,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 110,
           "sourceId": 43278,
-          "sourceHash": "35cdc628ae8043bdddbbeeca18afd641a8c59a0aa1affc573e87b0a93235bb42",
+          "sourceHash": "1019eee6d4740bc2cf873103fcc3f0eda181c1fde124f17054f7e276352e1836",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13433,15 +13433,15 @@ const questionBanks = {
     {
       "id": "43281",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Firms expect much weaker sales next year. What is the likely market effect?",
+      "q": "The real interest rate and equilibrium quantity both fall while saving supply is unchanged. Which explanation is most consistent with those observations?",
       "options": [
-        "Investment demand shifts right",
-        "Investment demand shifts left",
-        "Saving supply shifts left",
-        "There is movement up along demand"
+        "Households became more willing to save at every real rate",
+        "Weaker expected sales reduced investment demand at every real rate",
+        "A larger deficit reduced public and national saving",
+        "The lower real rate caused investment demand to shift left"
       ],
       "tag": "investment-demand",
-      "type": "application",
+      "type": "interpretation",
       "objective": "SLF7",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13449,14 +13449,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "Weaker expected sales reduce expected returns from new capital, lowering desired investment at every rate.",
+      "feedback": "With supply fixed, a leftward investment-demand shift lowers both equilibrium variables. Weaker sales expectations provide the causal determinant; the rate change itself produces movement along demand.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "56ff27a674f11d2fb3301af63c80663ce926fed1ef60359fea1a522be2f8d18a",
+      "aHash": "2b7cae9cfa201baa2d578d6d0d243317b0cd1c3868176a4c7118294ee9e2f7d8",
       "canonicalId": "43281",
       "sourceId": 43281,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "8dc0924901988eaa9a6c6977da22ba93a825343820ff1d2fd067d5ebad85870a",
+      "sourceHash": "d3c24b64e7180b5207d4e55b2e15ad60f4d6d38e1434dc58c291777667be8514",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13466,7 +13466,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 113,
           "sourceId": 43281,
-          "sourceHash": "8dc0924901988eaa9a6c6977da22ba93a825343820ff1d2fd067d5ebad85870a",
+          "sourceHash": "d3c24b64e7180b5207d4e55b2e15ad60f4d6d38e1434dc58c291777667be8514",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13482,15 +13482,15 @@ const questionBanks = {
     {
       "id": "43287",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What equilibrium quantity follows the fall in national saving?",
+      "q": "Refer to the graph above. A deficit rises by $30 billion while private saving increases by only $10 billion. Which chain matches the movement from A to B?",
       "options": [
-        "40 units",
-        "100 units",
-        "140 units",
-        "60 units"
+        "National saving rises $40 billion, supply shifts right, and investment rises along D0",
+        "National saving falls $20 billion, D0 shifts left, and the real rate falls",
+        "Public and private saving cancel, so neither curve moves from the initial equilibrium",
+        "Supply shifts left; the rate rises and investment falls along D0"
       ],
       "tag": "deficits-and-crowding-out",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF8",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13498,9 +13498,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "trace_deficit_crowding_out",
       "commonError": "Uses a neighboring rule instead of the evidence required by Government Deficits and Crowding Out.",
-      "feedback": "After supply shifts left, B lies at 60 units of loanable funds.",
+      "feedback": "The deficit-driven public-saving loss exceeds the private-saving gain, reducing national saving by $20 billion. The leftward supply shift raises the rate and crowds out investment along unchanged D0.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "482ed0d61fba98054b39622add4b6f33732fddedb4a4e5166c23dd2c505850ee",
+      "aHash": "3893a4f2db3fc11619570a7ea51c2b1fb6725e1be09055df1ea5f83e3ce5b0d9",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-06.webp",
       "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case.",
@@ -13510,7 +13510,7 @@ const questionBanks = {
       "sourceId": 43287,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "cdd43927219ae2e21c2aac3520d611164e652f09345de88f23e8da95be1583d2",
+      "sourceHash": "38ecf50a59755e70a80c0de609ec5064f3f01c992cba180ea138092d654f3f5d",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13520,7 +13520,7 @@ const questionBanks = {
           "routeKey": "SLF8",
           "sourceRecordOrder": 119,
           "sourceId": 43287,
-          "sourceHash": "cdd43927219ae2e21c2aac3520d611164e652f09345de88f23e8da95be1583d2",
+          "sourceHash": "38ecf50a59755e70a80c0de609ec5064f3f01c992cba180ea138092d654f3f5d",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13536,12 +13536,12 @@ const questionBanks = {
     {
       "id": "43290",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. By how much does equilibrium investment fall?",
+      "q": "Refer to the graph above. Why is the fall in equilibrium investment from A to B a movement along D0 rather than a leftward shift of investment demand?",
       "options": [
-        "2 units",
-        "60 units",
-        "40 units",
-        "100 units"
+        "The deficit directly lowers expected project profitability at every real rate",
+        "Any decline in investment quantity requires the demand curve itself to shift",
+        "Firms move along D0 after the deficit raises the real rate",
+        "The graph shows D0 moving left while saving supply remains fixed"
       ],
       "tag": "deficits-and-crowding-out",
       "type": "graph_integration",
@@ -13552,9 +13552,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "trace_deficit_crowding_out",
       "commonError": "Uses a neighboring rule instead of the evidence required by Government Deficits and Crowding Out.",
-      "feedback": "In the closed-economy model equilibrium investment equals loanable funds, which fall from 100 to 60.",
+      "feedback": "The fiscal shock reduces public and national saving, shifting supply left. The higher equilibrium rate makes fewer projects profitable, so investment falls along the unchanged D0 curve.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "aHash": "8be35ceb3c4e9ac1a4cee8edfeda682ee5de4e4a68fb39b802c948de57d84f39",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-06.webp",
       "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case.",
@@ -13564,7 +13564,7 @@ const questionBanks = {
       "sourceId": 43290,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "6af8670bd75d3e6c1171cf5da6b9aa1382ea0e1ce41d5bd22555c144f44090fe",
+      "sourceHash": "c5745ecbc2cd7f85bccdf99d3ebddf6e8049ecd016b5683783fa2c5c1315c4de",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13574,7 +13574,7 @@ const questionBanks = {
           "routeKey": "SLF8",
           "sourceRecordOrder": 122,
           "sourceId": 43290,
-          "sourceHash": "6af8670bd75d3e6c1171cf5da6b9aa1382ea0e1ce41d5bd22555c144f44090fe",
+          "sourceHash": "c5745ecbc2cd7f85bccdf99d3ebddf6e8049ecd016b5683783fa2c5c1315c4de",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13590,15 +13590,15 @@ const questionBanks = {
     {
       "id": "43293",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What is the real interest rate after national saving rises?",
+      "q": "Refer to the graph above. Private saving rises by $30 billion while public saving falls by $10 billion. Which interpretation is consistent with A moving to B?",
       "options": [
-        "5 percent",
-        "6 percent",
-        "8 percent",
-        "10 percent"
+        "National saving falls $40 billion, shifting supply left and reducing investment",
+        "Supply shifts right; the rate falls and investment rises",
+        "National saving rises $20 billion, shifting investment demand right and raising the rate",
+        "National saving is unchanged because public saving offsets all private-saving changes"
       ],
       "tag": "deficits-and-crowding-out",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF8",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13606,9 +13606,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "trace_deficit_crowding_out",
       "commonError": "Uses a neighboring rule instead of the evidence required by Government Deficits and Crowding Out.",
-      "feedback": "The new S1-D0 intersection at B lies at a 6 percent real interest rate.",
+      "feedback": "The net change in national saving is +$20 billion. Greater loanable-funds supply shifts right, lowers the equilibrium real rate, and increases investment along unchanged demand.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "5bd030d5464d74b1316a839186c8e6e80283edd05cce812fb5ffe4ba9cd05f2a",
+      "aHash": "654d12b3cc24a1ebb3c56d8fa6bf0264a70369a95079063e718519fee2b69234",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-07.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent).",
@@ -13618,7 +13618,7 @@ const questionBanks = {
       "sourceId": 43293,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "04032e8bfaac95c457f83326cb7efd301c537df01180030bc43465ab4c23e2f4",
+      "sourceHash": "9d0dd6f0c2d787f71346af39588175bbf98664eb02ce285e7b972481cf2d4649",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13628,7 +13628,7 @@ const questionBanks = {
           "routeKey": "SLF8",
           "sourceRecordOrder": 125,
           "sourceId": 43293,
-          "sourceHash": "04032e8bfaac95c457f83326cb7efd301c537df01180030bc43465ab4c23e2f4",
+          "sourceHash": "9d0dd6f0c2d787f71346af39588175bbf98664eb02ce285e7b972481cf2d4649",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13698,15 +13698,15 @@ const questionBanks = {
     {
       "id": "43302",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Which statement respects the boundary with short-run fiscal-multiplier analysis?",
+      "q": "A deficit increases by $30 billion while private saving rises by $10 billion. Which conclusion stays within the loanable-funds mechanism rather than importing multiplier analysis?",
       "options": [
-        "This bank calculates the final aggregate-demand multiplier",
-        "This bank treats every deficit as a fixed AD offset",
-        "This bank traces deficits through saving, real rates, and investment",
-        "This bank replaces loanable funds with the money multiplier"
+        "Aggregate demand must fall by exactly $20 billion after every multiplier effect",
+        "Investment demand shifts right by $30 billion because deficits directly raise project profitability",
+        "Supply shifts left, raising the rate and crowding out investment",
+        "National saving rises $40 billion, so the real rate falls and private investment expands"
       ],
       "tag": "deficits-and-crowding-out",
-      "type": "interpretation",
+      "type": "integration",
       "objective": "SLF8",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13714,14 +13714,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "trace_deficit_crowding_out",
       "commonError": "Uses a neighboring rule instead of the evidence required by Government Deficits and Crowding Out.",
-      "feedback": "The focus here is the saving-supply and investment mechanism, not calculation of net short-run aggregate-demand effects.",
+      "feedback": "The relevant chain is public saving down, only partly offset by private saving, then national saving and loanable-funds supply down. The task does not calculate short-run aggregate-demand multipliers.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "f4ce543206286b26ec68c6a4629eba9e36050914ad45e143dfd0aeee9b8261ee",
+      "aHash": "3397a553938ccd154ba9547b0b719eeaf9b9e0995960a741f07d48ad2cd0f063",
       "canonicalId": "43302",
       "sourceId": 43302,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "08d4924cb85095ff1a65e15bf804e780f7362893a2ae66f3521e5a251d69569d",
+      "sourceHash": "79779db19881bdc4b267d5a28816a67da1721ca132bd099090370ad207df4d12",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13731,7 +13731,7 @@ const questionBanks = {
           "routeKey": "SLF8",
           "sourceRecordOrder": 134,
           "sourceId": 43302,
-          "sourceHash": "08d4924cb85095ff1a65e15bf804e780f7362893a2ae66f3521e5a251d69569d",
+          "sourceHash": "79779db19881bdc4b267d5a28816a67da1721ca132bd099090370ad207df4d12",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13747,15 +13747,15 @@ const questionBanks = {
     {
       "id": "43305",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What is the original equilibrium quantity at A?",
+      "q": "Refer to the graph above. Saving supply and investment demand both increase. What does theory establish before the graph's marked intersections resolve the remaining issue?",
       "options": [
-        "6 units",
-        "40 units",
-        "60 units",
-        "80 units"
+        "The real rate must rise, while quantity is theoretically ambiguous; this graph shows quantity unchanged",
+        "Quantity rises; theory leaves the rate ambiguous, but this graph shows no change",
+        "Both variables are theoretically ambiguous; the graph shows both falling",
+        "Quantity must fall, while the real rate must remain unchanged in every such case"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF9",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13763,9 +13763,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "Solid S0 and D0 intersect at A at 40 units.",
+      "feedback": "Both rightward shifts raise equilibrium quantity. Supply puts downward pressure on the real rate while demand puts upward pressure on it; the marked A and B intersections show those pressures offset here.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "aHash": "7c40e8e3cc527e59b9bc51c0cf77b67a67b4761a56747b0fe79e42c963db4727",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
       "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
       "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged.",
@@ -13775,7 +13775,7 @@ const questionBanks = {
       "sourceId": 43305,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "a258b50f20f85dd66e22c0caab9f7da344ac0a80dcfd1457fa251ee9e4feb1a3",
+      "sourceHash": "83df1350310b3afa86f51c67a722cc903f4a0a18ecb85993eabfff0421ab035a",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13785,7 +13785,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 137,
           "sourceId": 43305,
-          "sourceHash": "a258b50f20f85dd66e22c0caab9f7da344ac0a80dcfd1457fa251ee9e4feb1a3",
+          "sourceHash": "83df1350310b3afa86f51c67a722cc903f4a0a18ecb85993eabfff0421ab035a",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13855,12 +13855,12 @@ const questionBanks = {
     {
       "id": "43314",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. How does the new quantity compare with the old quantity?",
+      "q": "Refer to the graph above. Why can the real interest rate remain at 6 percent even though equilibrium quantity doubles?",
       "options": [
-        "It is half as large",
-        "It is unchanged",
-        "It is twice as large",
-        "It is 20 units smaller"
+        "Simultaneous rightward shifts always leave the real interest rate unchanged",
+        "The quantity axis fixes the real interest rate whenever quantity increases",
+        "The shifts' opposing rate pressures offset in this graph",
+        "Both curves are vertical at point B, so neither shift affects the rate"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
       "type": "graph_integration",
@@ -13871,9 +13871,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "The graph moves from 40 units at A to 80 units at B, so the new quantity is double.",
+      "feedback": "The two shocks reinforce one another on equilibrium quantity but have opposing effects on the real rate. In this graph, their depicted magnitudes leave the new intersection at 6 percent.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "0c36c6c077af19cfe1b1826437ec837514c0e83b8ef40ecb16fce7b4fafd971b",
+      "aHash": "f90c8e52a86b697e5174a038dd947a3dcf19a305bea97a8986040a7dd8223797",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
       "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
       "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged.",
@@ -13883,7 +13883,7 @@ const questionBanks = {
       "sourceId": 43314,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "23a9a2a0e9698f72bdce5caa7b91869d30ebfa706b43664599197f765ad53807",
+      "sourceHash": "2bbee9a24c1a15678591ea6fa4de7b0f6a409d41f6d9ed5cbb46f98b94cb5dc3",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13893,7 +13893,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 146,
           "sourceId": 43314,
-          "sourceHash": "23a9a2a0e9698f72bdce5caa7b91869d30ebfa706b43664599197f765ad53807",
+          "sourceHash": "2bbee9a24c1a15678591ea6fa4de7b0f6a409d41f6d9ed5cbb46f98b94cb5dc3",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13909,12 +13909,12 @@ const questionBanks = {
     {
       "id": "43317",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Saving supply rises while investment demand falls. What happens to the real interest rate?",
+      "q": "Saving supply rises while investment demand falls. What happens to the equilibrium real interest rate?",
       "options": [
-        "It rises unambiguously",
-        "It falls unambiguously",
-        "It must remain unchanged",
-        "Its direction is always ambiguous"
+        "It rises",
+        "It falls",
+        "It remains unchanged",
+        "It cannot be determined"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
       "type": "application",
@@ -13925,14 +13925,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "Both a rightward supply shift and a leftward demand shift push the equilibrium real rate downward; quantity depends on relative shifts.",
+      "feedback": "Both the rightward supply shift and the leftward demand shift put downward pressure on the equilibrium real interest rate, while their quantity effects oppose one another.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "a2850ba8d85a88710993ff490872b0063e28f70fc6451a415687fc703a765e77",
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884",
       "canonicalId": "43317",
       "sourceId": 43317,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "f05f3b7b6f1e15923d5335f1dbc9175d6cd7b07d064dc1679f64bf9fd0cd2917",
+      "sourceHash": "68f80b8944af96115976954e2b53235ca56d6dfc19b7ca3f7bb208b5e70f5cc6",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13942,7 +13942,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 149,
           "sourceId": 43317,
-          "sourceHash": "f05f3b7b6f1e15923d5335f1dbc9175d6cd7b07d064dc1679f64bf9fd0cd2917",
+          "sourceHash": "68f80b8944af96115976954e2b53235ca56d6dfc19b7ca3f7bb208b5e70f5cc6",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -13958,15 +13958,15 @@ const questionBanks = {
     {
       "id": "43323",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "A firm buys new productivity-enhancing machinery. What is the long-run connection?",
+      "q": "Crowding out reduces new machinery purchases, while depreciation and all other growth determinants are unchanged. Which conclusion is warranted?",
       "options": [
-        "The purchase is only a financial-asset transfer",
-        "The machinery reduces the physical capital stock",
-        "The transaction must lower national saving",
-        "The machinery can increase future productive capacity"
+        "The existing capital stock falls immediately by the full amount of forgone investment",
+        "Future output must decline by exactly the reduction in machinery spending",
+        "The capital stock is unchanged because investment affects only financial claims",
+        "The future capital stock is lower than otherwise, but may still grow"
       ],
       "tag": "investment-capital-formation",
-      "type": "application",
+      "type": "interpretation",
       "objective": "SLF10",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -13974,14 +13974,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "connect_investment_to_capital_formation",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment and Capital Formation.",
-      "feedback": "New machinery is physical investment that can help workers produce more output in future periods.",
+      "feedback": "Less gross investment means less addition to the capital stock than in the counterfactual. The stock can still grow if remaining investment exceeds depreciation, so an absolute decline is not implied.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "3bd12d2412a2c4f3e87b3513a2baa53e64a8ae6914b386f395435d76dfa31dd9",
+      "aHash": "08a0b50e697234e730978c20a6475726f44816a579edc604c9a7c1239f07990c",
       "canonicalId": "43323",
       "sourceId": 43323,
       "sourceChapter": [],
       "sourcePool": "hard",
-      "sourceHash": "b97f221a019515ab59a21ce39d6626761424b6b0764db17e2888bddcffb19518",
+      "sourceHash": "3441b8b4afb8fb136110a445fdf60fa1672b821daeb3c1fbaa80c407c221f9cb",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -13991,7 +13991,7 @@ const questionBanks = {
           "routeKey": "SLF10",
           "sourceRecordOrder": 155,
           "sourceId": 43323,
-          "sourceHash": "b97f221a019515ab59a21ce39d6626761424b6b0764db17e2888bddcffb19518",
+          "sourceHash": "3441b8b4afb8fb136110a445fdf60fa1672b821daeb3c1fbaa80c407c221f9cb",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14009,15 +14009,15 @@ const questionBanks = {
     {
       "id": "43175",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "A corporation sells newly issued bonds to finance a factory. What does the bond market do in this example?",
+      "q": "Households reduce current consumption and buy a firm's newly issued bonds. The firm uses the proceeds for new machinery and to purchase an existing office building. Which chain is economically correct?",
       "options": [
-        "Converts every bond purchase into household consumption",
-        "Counts the existing bond itself as physical capital",
-        "Eliminates the need for saving before investment",
-        "Channels savers' funds toward a borrowing firm"
+        "Both firm purchases are current GDP investment because both use borrowed funds",
+        "The bond purchase is physical investment, while neither firm purchase enters GDP",
+        "Household saving enters GDP directly, and the machinery is only a financial asset",
+        "Saving finances the firm, but only the new machinery is current GDP investment"
       ],
       "tag": "saving-versus-investment",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF1",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14025,14 +14025,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_saving_and_investment",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving Versus Investment.",
-      "feedback": "The bond market connects savers and borrowers; the factory, not the financial claim, is the new productive capital.",
+      "feedback": "The bond market channels household saving to the borrower. New machinery is current production and GDP investment; transferring an existing building is not new production.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "353f2c1ad7fab77347824b5d1512f9a0d1e24e229d7d3d6f11f7569a8c6afe02",
+      "aHash": "d0c0ee8e65c23aee00b500e90dfdc93d62c0f93c42b8202b628bf6f0f1e8762f",
       "canonicalId": "43175",
       "sourceId": 43175,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "9c0eebbe6487b83b79041732562fcc12eb3efb5091713ac8b3a12e8460804109",
+      "sourceHash": "704f18d16d238a3c7c5200c7bff2051e71550dfadd2ce46bca9d37277e0f1d27",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14042,7 +14042,7 @@ const questionBanks = {
           "routeKey": "SLF1",
           "sourceRecordOrder": 7,
           "sourceId": 43175,
-          "sourceHash": "9c0eebbe6487b83b79041732562fcc12eb3efb5091713ac8b3a12e8460804109",
+          "sourceHash": "704f18d16d238a3c7c5200c7bff2051e71550dfadd2ce46bca9d37277e0f1d27",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14058,15 +14058,15 @@ const questionBanks = {
     {
       "id": "43189",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Private saving is $180 and public saving is −$40. What is national saving?",
+      "q": "Private saving increases by $25 billion, but a larger deficit reduces public saving by $40 billion. With investment demand unchanged, which sequence follows?",
       "options": [
-        "$40",
-        "$140",
-        "$180",
-        "$220"
+        "National saving rises by $65 billion; supply shifts right, the real rate falls, and investment rises",
+        "National saving falls by $15 billion; supply shifts left, the real rate rises, and investment falls",
+        "National saving falls by $15 billion; investment demand shifts left, lowering both rate and quantity",
+        "National saving rises by $15 billion; supply shifts right, but investment necessarily falls"
       ],
       "tag": "private-public-national-saving",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF2",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14074,14 +14074,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "calculate_national_saving",
       "commonError": "Uses a neighboring rule instead of the evidence required by Private, Public, and National Saving.",
-      "feedback": "National saving is the sum of private and public saving: $180 + (−$40) = $140.",
+      "feedback": "The public-saving decline is larger than the private-saving increase, so national saving falls by $15 billion. Supply shifts left, raising financing costs and crowding out investment along demand.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "6b0bb84f258e77b07ffe326e3725b507e0b8b8e1227ca05360f78b4ff98b1142",
+      "aHash": "76bc2ca45184ef14f5c973a462fb9bb46e851c88060f8c717bf12d004d27429e",
       "canonicalId": "43189",
       "sourceId": 43189,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "3f75c345277b3df49f4bf8f2e1a01093a8608ccbe225ea6cce3298ac7ba990db",
+      "sourceHash": "dc27474253fa686284226de193a1c9eae508656dedf8798ffed3ebb23ca49f97",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14091,7 +14091,7 @@ const questionBanks = {
           "routeKey": "SLF2",
           "sourceRecordOrder": 21,
           "sourceId": 43189,
-          "sourceHash": "3f75c345277b3df49f4bf8f2e1a01093a8608ccbe225ea6cce3298ac7ba990db",
+          "sourceHash": "dc27474253fa686284226de193a1c9eae508656dedf8798ffed3ebb23ca49f97",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14107,15 +14107,15 @@ const questionBanks = {
     {
       "id": "43203",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "In a closed economy, which expenditure identity omits net exports?",
+      "q": "In a closed economy, private saving rises by $20 billion while public saving falls by $35 billion. At the same time, new technology raises desired investment. What can be concluded without shift magnitudes?",
       "options": [
-        "Y = C + G − I",
-        "Y = T + I + G",
-        "Y = C + I + NX",
-        "Y = C + I + G"
+        "Both curves shift right; quantity rises, while the real rate is ambiguous",
+        "Supply shifts left only; both the real rate and quantity must fall",
+        "Investment demand shifts right only; the real rate rises and quantity must rise",
+        "Supply shifts left, demand shifts right; the rate rises and quantity is ambiguous"
       ],
       "tag": "closed-economy-saving-investment-identity",
-      "type": "definition",
+      "type": "integration",
       "objective": "SLF3",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14123,14 +14123,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "apply_closed_economy_saving_identity",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving and Investment in a Closed Economy.",
-      "feedback": "With no international sector in the model, output is allocated to consumption, investment, and government purchases.",
+      "feedback": "National saving falls by $15 billion, shifting supply left. Technology shifts investment demand right. Both changes raise the real rate, but they push equilibrium quantity in opposite directions.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "08b7896bb24bdb727c4c6c2ac0b208d63abab45b3c03d719fea36acefe9faa7a",
+      "aHash": "5369e6902ee36bd91036f633a6ae24dfbc755bd5ff80bfea787e74ae0a7397fc",
       "canonicalId": "43203",
       "sourceId": 43203,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "f22bb76bf2bce059144b821e2c6ff681e2763f12aa579b8c3ec0b1afe2a4521b",
+      "sourceHash": "fd48cc3d373119c76946b56f1f454898168375309e1499fd2f12fa7e72e5a1db",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14140,7 +14140,7 @@ const questionBanks = {
           "routeKey": "SLF3",
           "sourceRecordOrder": 35,
           "sourceId": 43203,
-          "sourceHash": "f22bb76bf2bce059144b821e2c6ff681e2763f12aa579b8c3ec0b1afe2a4521b",
+          "sourceHash": "fd48cc3d373119c76946b56f1f454898168375309e1499fd2f12fa7e72e5a1db",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14156,15 +14156,15 @@ const questionBanks = {
     {
       "id": "43217",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What real interest rate clears the market at point A?",
+      "q": "Refer to the graph above. Suppose the real interest rate is temporarily 10 percent while the curves remain fixed. Which adjustment is consistent with the market returning to point A?",
       "options": [
-        "6 percent",
-        "8 percent",
-        "10 percent",
-        "14 percent"
+        "Excess investment demand pushes the rate higher as both curves shift right",
+        "Excess saving pushes the rate down toward point A",
+        "Excess saving shifts investment demand left until quantity reaches zero",
+        "Saving and investment remain unequal because point A no longer represents equilibrium"
       ],
       "tag": "loanable-funds-equilibrium",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF4",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14172,9 +14172,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "S0 and D0 intersect at A on the 8 percent horizontal guide, so planned saving equals planned investment there.",
+      "feedback": "Above the 8 percent equilibrium, saving supplied exceeds investment demanded. Downward pressure on the rate moves the market along S0 and D0 until their planned quantities again match at A.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "b6ac2eb497e2cf9a7202c2c2e49c8e38c789314f780e77a782373394db856f0d",
+      "aHash": "97b3b9feb8f1ab5a55a5b37f61350cbced530bd83c903ab82b064d5125f0ef4d",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp",
       "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
       "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent.",
@@ -14184,7 +14184,7 @@ const questionBanks = {
       "sourceId": 43217,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "ac728a62fa4c2ebe10fe1992cb66d7e471aa9e0e33620b1e7f2c0c8ad7c1348e",
+      "sourceHash": "b82bbd817b26a0b8047e1ef5a9b12630207559ec5acdcf11a19bfc41e7e98754",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14194,7 +14194,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 49,
           "sourceId": 43217,
-          "sourceHash": "ac728a62fa4c2ebe10fe1992cb66d7e471aa9e0e33620b1e7f2c0c8ad7c1348e",
+          "sourceHash": "b82bbd817b26a0b8047e1ef5a9b12630207559ec5acdcf11a19bfc41e7e98754",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14210,15 +14210,15 @@ const questionBanks = {
     {
       "id": "43229",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Why does the supply of loanable funds slope upward?",
+      "q": "A higher real return encourages households to postpone consumption, while a new retirement incentive increases saving at every real rate. How should these effects be represented?",
       "options": [
-        "Higher rates make every investment project profitable",
-        "Higher real returns encourage more saving",
-        "Lower rates increase the reward to saving",
-        "Saving is fixed at every possible rate"
+        "Both changes shift saving supply right because each raises observed saving",
+        "Movement along supply, followed by a rightward supply shift",
+        "The higher rate shifts supply right, while the incentive causes movement along the curve",
+        "Both changes cause movement along the original saving curve because neither affects demand"
       ],
       "tag": "loanable-funds-equilibrium",
-      "type": "interpretation",
+      "type": "integration",
       "objective": "SLF4",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14226,14 +14226,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "A higher real return rewards postponing consumption, increasing the quantity of funds supplied along the saving curve.",
+      "feedback": "The current real rate determines a quantity supplied on a given curve. A retirement incentive changes saving behavior at every real rate, so it shifts the whole curve.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "77231e08aadd1647d7263c30e5b6d6006095679608eda9b09dc6f82a1e799704",
+      "aHash": "dcd36a9e1ff3bd6799cd4d67b44d67dbac16f4ff485e75ace1e1b73ab68baf4e",
       "canonicalId": "43229",
       "sourceId": 43229,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "ba91197ffa287c02746768aa7345bc86887376e817fa2694609685b328dac24f",
+      "sourceHash": "ae3725da72753ac67e139e15495cfb8cef055c2c92b12e1aa241918a44feb651",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14243,7 +14243,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 61,
           "sourceId": 43229,
-          "sourceHash": "ba91197ffa287c02746768aa7345bc86887376e817fa2694609685b328dac24f",
+          "sourceHash": "ae3725da72753ac67e139e15495cfb8cef055c2c92b12e1aa241918a44feb651",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14259,12 +14259,12 @@ const questionBanks = {
     {
       "id": "43243",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "After saving supply shifts right, the equilibrium rate falls. How should the resulting investment change be described?",
+      "q": "A saving incentive shifts loanable-funds supply right. The lower equilibrium real rate makes more investment projects profitable, and firms also become more optimistic about future sales. Which description is complete?",
       "options": [
-        "A rightward shift of investment demand",
-        "A leftward shift of investment demand",
-        "A movement up along saving supply",
-        "A movement down along investment demand"
+        "Both investment increases are movements along demand because firms ultimately borrow more",
+        "Both investment increases shift demand because the equilibrium rate changes",
+        "The saving incentive shifts investment demand right, while optimism moves firms along that curve",
+        "Movement along demand, followed by a separate rightward demand shift"
       ],
       "tag": "loanable-funds-movement-versus-shift",
       "type": "integration",
@@ -14275,14 +14275,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_movement_from_shift_loanable_funds",
       "commonError": "Uses a neighboring rule instead of the evidence required by Movement Along Versus Shift.",
-      "feedback": "The original shock shifts saving; the lower equilibrium rate then increases investment as movement along unchanged demand.",
+      "feedback": "The saving shock lowers the rate and causes movement along the existing investment-demand curve. Optimism changes desired investment at every rate, so it separately shifts demand right.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "b705cd5b5d59437d86f7968733e12793ab589910b9843074b6ce586cdce1a5fb",
+      "aHash": "3a064d8ff00ed586b8befa45429dffb0deb08a4337bca74f349fd772bbdd25d9",
       "canonicalId": "43243",
       "sourceId": 43243,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "74e26d970e3a556ea8613eaf37753e914bf1a30dcf62d6648857e18d0c165ffe",
+      "sourceHash": "29ca5c614d7f4f3bdf05dc9ced264e86eeb9773de568bccdc001b3a79c193080",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14292,7 +14292,7 @@ const questionBanks = {
           "routeKey": "SLF5",
           "sourceRecordOrder": 75,
           "sourceId": 43243,
-          "sourceHash": "74e26d970e3a556ea8613eaf37753e914bf1a30dcf62d6648857e18d0c165ffe",
+          "sourceHash": "29ca5c614d7f4f3bdf05dc9ced264e86eeb9773de568bccdc001b3a79c193080",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14308,15 +14308,15 @@ const questionBanks = {
     {
       "id": "43257",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What is the new equilibrium quantity after the shift?",
+      "q": "Refer to the graph above. Private saving rises by $15 billion while a larger deficit reduces public saving by $30 billion. Which interpretation is consistent with A moving to B?",
       "options": [
-        "60 units",
-        "80 units",
-        "100 units",
-        "120 units"
+        "National saving rises by $45 billion, shifting supply right and lowering the real rate",
+        "National saving falls by $15 billion, shifting supply left and raising the real rate",
+        "National saving falls by $15 billion, shifting investment demand left and lowering the rate",
+        "National saving is unchanged because private and public saving changes cannot be combined"
       ],
       "tag": "changes-in-saving",
-      "type": "graph_calculation",
+      "type": "graph_integration",
       "objective": "SLF6",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14324,9 +14324,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "Point B lies at 80 units after the decrease in saving supply.",
+      "feedback": "The net change in national saving is +15 − 30 = −$15 billion. The resulting leftward supply shift matches S0 to S1 and raises the equilibrium real interest rate.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "ddd31c69fb8a28390db96f2aeaced9c4cb4737d06ae6f66cd27e93310b4ea11f",
+      "aHash": "8efba07749f3766f936d6c5cbadcc66faa50932245f320a44fa1bea9b339581d",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-03.webp",
       "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent).",
@@ -14336,7 +14336,7 @@ const questionBanks = {
       "sourceId": 43257,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "9aae3084826dda6c086668c193ccb02e90539b7e716c14741e56315dce56785e",
+      "sourceHash": "1038671c5478bd090674bbde79520fb26eb32402b69ff684ee95340b1f59b3ea",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14346,7 +14346,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 89,
           "sourceId": 43257,
-          "sourceHash": "9aae3084826dda6c086668c193ccb02e90539b7e716c14741e56315dce56785e",
+          "sourceHash": "1038671c5478bd090674bbde79520fb26eb32402b69ff684ee95340b1f59b3ea",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14362,12 +14362,12 @@ const questionBanks = {
     {
       "id": "43271",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which rightward curve shift creates B?",
+      "q": "Refer to the graph above. Improved technology raises investment demand, while households also become more willing to save. What limitation matters when using this graph for that scenario?",
       "options": [
-        "Investment demand shifts left from D1 to D0",
-        "Saving supply shifts right from S0",
-        "Saving supply shifts left from S0",
-        "Investment demand shifts right from D0 to D1"
+        "It depicts the saving shift but keeps investment demand fixed",
+        "It depicts both shifts and therefore proves the real rate must rise",
+        "It cannot show investment demand because D1 is a saving curve",
+        "It omits the household-saving supply shift"
       ],
       "tag": "investment-demand",
       "type": "graph_integration",
@@ -14378,9 +14378,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "S0 stays fixed while the investment-demand curve moves right to D1.",
+      "feedback": "The graph cleanly represents technology through D0 shifting to D1. The scenario also requires saving supply to shift right, but S0 remains fixed, so the full combined outcome is not shown.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "cf9e766f9e363b55aebde7226c9d6f2df231a79822434770a434ce4e3a0f668f",
+      "aHash": "9dbccfe188009a06adaaac89b6a7737e132e6338071804140fb23be9e85d262b",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-04.webp",
       "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
       "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent).",
@@ -14390,7 +14390,7 @@ const questionBanks = {
       "sourceId": 43271,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "56b7720d88a64988cd115a02fdbb110365760d9d6049d79ba80a5ef61ad70e69",
+      "sourceHash": "5dcc3db7157045c9efff2c7b993cd45d9be9ff9fd41f4452925292beb21b7ac9",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14400,7 +14400,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 103,
           "sourceId": 43271,
-          "sourceHash": "56b7720d88a64988cd115a02fdbb110365760d9d6049d79ba80a5ef61ad70e69",
+          "sourceHash": "5dcc3db7157045c9efff2c7b993cd45d9be9ff9fd41f4452925292beb21b7ac9",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14416,15 +14416,15 @@ const questionBanks = {
     {
       "id": "43283",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Why can improved technology increase investment demand?",
+      "q": "Technology improves expected project returns, but the equilibrium real interest rate subsequently rises. Which statement correctly separates the two effects on investment?",
       "options": [
-        "It makes every saver consume more",
-        "It fixes the real interest rate by law",
-        "It turns investment into public saving",
-        "It can raise the expected return from new capital"
+        "Technology moves firms along demand, while the higher rate shifts the entire curve left",
+        "Both changes shift demand right because equilibrium investment initially rises",
+        "The higher rate shifts loanable-funds supply left and leaves investment demand unchanged",
+        "Demand shifts right; the higher rate partly offsets the increase"
       ],
       "tag": "investment-demand",
-      "type": "interpretation",
+      "type": "integration",
       "objective": "SLF7",
       "difficulty": "elite",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14432,14 +14432,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "Productivity-enhancing technology can make more projects profitable at each financing rate.",
+      "feedback": "Improved technology changes profitability at every rate and shifts investment demand right. The endogenous rate increase makes fewer marginal projects profitable along the new curve, partly offsetting the initial increase.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "49591a07b40ff7f2b2273fe9524f9c7f212c4f68b37565f99daba604bd9d28db",
+      "aHash": "b50889e0a3ce70645514ff7a5aec30e8b2f141207816fc07bc0868f7c5727a5f",
       "canonicalId": "43283",
       "sourceId": 43283,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "e1b0e264f52f7e981c924b6e65675340ad9da0307c9705f7eac50aeb267ec3ae",
+      "sourceHash": "c07fe3535b6847a967c51415bc0332fdf1bbf4e432821da7578366c857dc882c",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14449,7 +14449,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 115,
           "sourceId": 43283,
-          "sourceHash": "e1b0e264f52f7e981c924b6e65675340ad9da0307c9705f7eac50aeb267ec3ae",
+          "sourceHash": "c07fe3535b6847a967c51415bc0332fdf1bbf4e432821da7578366c857dc882c",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14465,12 +14465,12 @@ const questionBanks = {
     {
       "id": "43295",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. How does higher national saving move equilibrium from A to B?",
+      "q": "Refer to the graph above. A budget improvement raises public saving by $25 billion while private saving falls by $10 billion. What connects the accounting to the new equilibrium?",
       "options": [
-        "The rate rises and quantity falls",
-        "Both outcomes rise",
-        "Both outcomes fall",
-        "The rate falls and quantity rises"
+        "National saving falls $35 billion, shifting supply left; the higher rate reduces investment",
+        "National saving rises $15 billion, shifting D0 right; the real rate and quantity both rise",
+        "National saving remains fixed, so the move to B must come from weaker investment demand",
+        "National saving rises, shifting supply right and increasing investment along D0"
       ],
       "tag": "deficits-and-crowding-out",
       "type": "graph_integration",
@@ -14481,9 +14481,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "trace_deficit_crowding_out",
       "commonError": "Uses a neighboring rule instead of the evidence required by Government Deficits and Crowding Out.",
-      "feedback": "The graph moves from A (60, 8 percent) to B (100, 6 percent).",
+      "feedback": "Public and private saving changes sum to +$15 billion. The resulting supply increase matches S0 to S1; the lower rate then raises investment through movement along D0.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "b261bb98e0f759d2884dfe4cc376d83d2856f8ad29fabee9ca0f6e64826425cf",
+      "aHash": "405757e0ee101f9a75823a3a86b6c9f6ca7661bc9ed5ad0b213d23b10eb7044a",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-07.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent).",
@@ -14493,7 +14493,7 @@ const questionBanks = {
       "sourceId": 43295,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "6fefd6d73e3b32c07a825b64a9cd42875290697e88c2fda6c129b531c0ae4cb3",
+      "sourceHash": "afd257c8855cdf3efa4142fd3d999e7e026719929cf99c55753d4f46476aab66",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14503,7 +14503,7 @@ const questionBanks = {
           "routeKey": "SLF8",
           "sourceRecordOrder": 127,
           "sourceId": 43295,
-          "sourceHash": "6fefd6d73e3b32c07a825b64a9cd42875290697e88c2fda6c129b531c0ae4cb3",
+          "sourceHash": "afd257c8855cdf3efa4142fd3d999e7e026719929cf99c55753d4f46476aab66",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14519,12 +14519,12 @@ const questionBanks = {
     {
       "id": "43307",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. What happens to the real interest rate from A to B?",
+      "q": "Refer to the graph above. In general, simultaneous rightward shifts make the real-rate effect ambiguous. What does this particular outcome imply about the depicted shift magnitudes?",
       "options": [
-        "It rises to 8 percent",
-        "It falls to 4 percent",
-        "It becomes 80 percent",
-        "It remains at 6 percent"
+        "The saving shift is absent because the real rate did not fall",
+        "The investment-demand shift dominates, so the real rate must rise above 6 percent",
+        "Both shifts reduce quantity, but equal magnitudes conceal the decline",
+        "The rate pressures offset while both shifts raise quantity"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
       "type": "graph_integration",
@@ -14535,9 +14535,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "Both marked equilibria lie on the 6 percent horizontal level.",
+      "feedback": "A rightward supply shift pushes the rate down and a rightward demand shift pushes it up. The unchanged 6 percent rate shows offsetting rate effects, while both shifts raise quantity from A to B.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "91e191f22b800484835454fa9b7a34ed2bb24cb186baba2989f5f07428a6dbfe",
+      "aHash": "4fd55089fe93378604629e5cf1598dce74d140b399a4bf8ef40ab7fb836ef5bf",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
       "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
       "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged.",
@@ -14547,7 +14547,7 @@ const questionBanks = {
       "sourceId": 43307,
       "sourceChapter": [],
       "sourcePool": "elite",
-      "sourceHash": "a9215c9162a68c19b121b4a3a1752c90bb399638545e5022c183aaecd6aee933",
+      "sourceHash": "3b76be9860257a48f5543eaa445cac9ae7bb6005ab709275f282d8e4cda0665d",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14557,7 +14557,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 139,
           "sourceId": 43307,
-          "sourceHash": "a9215c9162a68c19b121b4a3a1752c90bb399638545e5022c183aaecd6aee933",
+          "sourceHash": "3b76be9860257a48f5543eaa445cac9ae7bb6005ab709275f282d8e4cda0665d",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14624,12 +14624,12 @@ const questionBanks = {
     {
       "id": "43259",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which curve movement is displayed?",
+      "q": "Refer to the graph above. A deficit reduces public saving while a technological improvement raises expected investment returns. Why can this graph not represent the complete scenario?",
       "options": [
-        "Saving supply shifts right from S1 to S0",
-        "Investment demand shifts right from D0",
-        "Investment demand shifts left from D0",
-        "Saving supply shifts left from S0 to S1"
+        "It shifts both curves right, although a deficit should shift supply left",
+        "It shows investment demand shifting right but leaves saving supply fixed",
+        "It is inconsistent because both shocks must lower the real interest rate",
+        "It omits the technology-driven rightward demand shift"
       ],
       "tag": "changes-in-saving",
       "type": "graph_integration",
@@ -14640,9 +14640,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_saving_supply_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Changes in Saving.",
-      "feedback": "D0 is unchanged while saving supply moves left from solid S0 to dashed S1.",
+      "feedback": "The deficit is represented by the leftward saving-supply shift. The technology shock would also require a rightward investment-demand shift, which the graph does not display.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "83a46c6297143d6a23aceb23ffa5a35b9c44f6135e26c463840db09a225b9af4",
+      "aHash": "3bf6c4f3d8d74dcb02aff9aa8c370486234575881207dfb6b453030ab14f45e6",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-03.webp",
       "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent).",
@@ -14652,7 +14652,7 @@ const questionBanks = {
       "sourceId": 43259,
       "sourceChapter": [],
       "sourcePool": "legendary",
-      "sourceHash": "96a3a80831d1f36605cb6f279a9ae40ffcdc1f573b84c5975e405cd75866f6d1",
+      "sourceHash": "c9ae3379745f19d05941226c686eaa8951c885f6bd3a54bd98dbf41e058ab5b5",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14662,7 +14662,7 @@ const questionBanks = {
           "routeKey": "SLF6",
           "sourceRecordOrder": 91,
           "sourceId": 43259,
-          "sourceHash": "96a3a80831d1f36605cb6f279a9ae40ffcdc1f573b84c5975e405cd75866f6d1",
+          "sourceHash": "c9ae3379745f19d05941226c686eaa8951c885f6bd3a54bd98dbf41e058ab5b5",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14678,12 +14678,12 @@ const questionBanks = {
     {
       "id": "43273",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. By how much does equilibrium quantity rise?",
+      "q": "Refer to the graph above. Technology raises investment demand, but a new deficit simultaneously reduces national saving. Which conclusion goes beyond what this graph establishes?",
       "options": [
-        "2 units",
-        "40 units",
-        "80 units",
-        "120 units"
+        "Technology places upward pressure on the real interest rate",
+        "That the combined scenario must raise equilibrium quantity from 80 to 120",
+        "The deficit would shift loanable-funds supply left",
+        "The two shocks together place upward pressure on the real interest rate"
       ],
       "tag": "investment-demand",
       "type": "graph_integration",
@@ -14694,9 +14694,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "Quantity rises from 80 at A to 120 at B, an increase of 40 units.",
+      "feedback": "This graph isolates a rightward demand shift with supply fixed. Adding a deficit would shift supply left; both shocks raise the rate, but their quantity effects oppose one another, so 120 is not guaranteed.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "aHash": "14e08ef84c7f1ad3b600f4b2175b9f3e69924a1c5b24755273e2de01b8584110",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-04.webp",
       "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
       "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent).",
@@ -14706,7 +14706,7 @@ const questionBanks = {
       "sourceId": 43273,
       "sourceChapter": [],
       "sourcePool": "legendary",
-      "sourceHash": "f4c461d1338760f91b4bd1bafb12c7c971e224061814afaa3cb0a59150d1cb5a",
+      "sourceHash": "4e3ee023b2006fa3df5fa36bc03b245712d9ac75c972c56bd8f726cfaf5b3fa5",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14716,7 +14716,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 105,
           "sourceId": 43273,
-          "sourceHash": "f4c461d1338760f91b4bd1bafb12c7c971e224061814afaa3cb0a59150d1cb5a",
+          "sourceHash": "4e3ee023b2006fa3df5fa36bc03b245712d9ac75c972c56bd8f726cfaf5b3fa5",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14732,15 +14732,15 @@ const questionBanks = {
     {
       "id": "43285",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Investment demand falls while saving supply is fixed. What must happen?",
+      "q": "Expected investment profitability falls while a budget deficit also reduces national saving. What must happen, and what remains uncertain?",
       "options": [
-        "The real rate and quantity both rise",
-        "The real rate and quantity both fall",
-        "The rate falls while quantity rises",
-        "The rate rises while quantity falls"
+        "The real rate falls, while equilibrium quantity is ambiguous",
+        "Quantity falls; the real-rate direction is ambiguous",
+        "Both the real rate and quantity must rise",
+        "The real rate must remain unchanged, while quantity falls"
       ],
       "tag": "investment-demand",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF7",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -14748,14 +14748,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_investment_demand_shift",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment Demand.",
-      "feedback": "A leftward demand shift along upward-sloping supply lowers the equilibrium price and quantity.",
+      "feedback": "Investment demand shifts left and loanable-funds supply shifts left. Both changes reduce equilibrium quantity, but demand puts downward pressure on the rate while supply puts upward pressure on it.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "464355d30459953c81a77dd35e127c95261775b0d973e62e637b9c70efc61a84",
+      "aHash": "6db9e487ac35d11244077f7323e757863a9534e3635dc792ca2a58dd0b025be5",
       "canonicalId": "43285",
       "sourceId": 43285,
       "sourceChapter": [],
       "sourcePool": "legendary",
-      "sourceHash": "8d4cf9a67f73d3dd0f5baea6b2e7d6c02855aa7a6909a8af8cd96b3dad91c123",
+      "sourceHash": "1b31146a4036f8f0e95f6c03833b01c77b9554901c9d2fe440d62d3be782e68f",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14765,7 +14765,7 @@ const questionBanks = {
           "routeKey": "SLF7",
           "sourceRecordOrder": 117,
           "sourceId": 43285,
-          "sourceHash": "8d4cf9a67f73d3dd0f5baea6b2e7d6c02855aa7a6909a8af8cd96b3dad91c123",
+          "sourceHash": "1b31146a4036f8f0e95f6c03833b01c77b9554901c9d2fe440d62d3be782e68f",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14781,12 +14781,12 @@ const questionBanks = {
     {
       "id": "43297",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. By how much does equilibrium investment rise?",
+      "q": "Refer to the graph above. In this closed economy, a student says the rise in investment from A to B occurs ‘because S = I forces firms to invest every extra unit households save at the old rate.’ Which correction is best?",
       "options": [
-        "2 units",
-        "40 units",
-        "60 units",
-        "100 units"
+        "The claim is correct because the accounting identity removes any role for the real interest rate",
+        "Rate adjustment, not the identity alone, induces the investment increase",
+        "Higher saving shifts investment demand right directly, so firms invest more at every rate",
+        "S = I applies only to individual saver-firm pairs and not to the aggregate market"
       ],
       "tag": "deficits-and-crowding-out",
       "type": "graph_integration",
@@ -14797,9 +14797,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "trace_deficit_crowding_out",
       "commonError": "Uses a neighboring rule instead of the evidence required by Government Deficits and Crowding Out.",
-      "feedback": "Equilibrium loanable funds and investment increase from 60 at A to 100 at B.",
+      "feedback": "The identity does not specify a behavioral one-for-one transfer at the old rate. Greater saving shifts supply, the real rate adjusts downward, and firms move along demand to the new equilibrium quantity.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "aHash": "6c00fb661a07920472e4d00a06114b557956123b15142cb6b0fab4beaef4e9a0",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-07.webp",
       "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
       "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent).",
@@ -14809,7 +14809,7 @@ const questionBanks = {
       "sourceId": 43297,
       "sourceChapter": [],
       "sourcePool": "legendary",
-      "sourceHash": "816ba214037b028cd2d331ae97a293ff142fdc6e374eed3e080d222080765f8b",
+      "sourceHash": "f3ab7a21f2c4cc3cdd6a08adf6a4b65081e3e8618945d6e382ef0754ec5ec399",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14819,7 +14819,7 @@ const questionBanks = {
           "routeKey": "SLF8",
           "sourceRecordOrder": 129,
           "sourceId": 43297,
-          "sourceHash": "816ba214037b028cd2d331ae97a293ff142fdc6e374eed3e080d222080765f8b",
+          "sourceHash": "f3ab7a21f2c4cc3cdd6a08adf6a4b65081e3e8618945d6e382ef0754ec5ec399",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14835,12 +14835,12 @@ const questionBanks = {
     {
       "id": "43309",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. How much does equilibrium quantity increase under the two displayed shifts?",
+      "q": "Refer to the graph above. Private saving rises by $25 billion, public saving falls by $10 billion, and technology raises desired investment. Which interpretation uses both the accounting and the graph?",
       "options": [
-        "6 units",
-        "40 units",
-        "20 units",
-        "80 units"
+        "National saving falls, both curves shift left, and the graph shows a lower equilibrium quantity",
+        "National saving and both curves shift right; rate pressures offset and quantity rises",
+        "National saving rises, only supply shifts right, and the graph proves technology had no effect",
+        "National saving is unchanged, only demand shifts right, and the graph shows the real rate rising"
       ],
       "tag": "simultaneous-loanable-funds-shifts",
       "type": "graph_integration",
@@ -14851,9 +14851,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_simultaneous_loanable_funds_shifts",
       "commonError": "Uses a neighboring rule instead of the evidence required by Simultaneous Shifts.",
-      "feedback": "Quantity rises from 40 at A to 80 at B, a 40-unit increase.",
+      "feedback": "Private and public changes raise national saving by $15 billion, shifting supply right; technology shifts demand right. Both raise quantity, while the graph shows their opposing real-rate pressures offset at 6 percent.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "aHash": "30299d50bc6a20929d018bfef3107295b5b3c24c6091aa0da0d7ada0512fa588",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-08.webp",
       "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
       "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged.",
@@ -14863,7 +14863,7 @@ const questionBanks = {
       "sourceId": 43309,
       "sourceChapter": [],
       "sourcePool": "legendary",
-      "sourceHash": "b5d60f466f0eb544094b523c25c7fa63c421fb2679531ad03b86c0ca3172cd02",
+      "sourceHash": "1f70027aa2650faa6829f6cf6f91d6ebf7fd8a27d4576a10d4e6f08f7149057e",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14873,7 +14873,7 @@ const questionBanks = {
           "routeKey": "SLF9",
           "sourceRecordOrder": 141,
           "sourceId": 43309,
-          "sourceHash": "b5d60f466f0eb544094b523c25c7fa63c421fb2679531ad03b86c0ca3172cd02",
+          "sourceHash": "1f70027aa2650faa6829f6cf6f91d6ebf7fd8a27d4576a10d4e6f08f7149057e",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -14889,12 +14889,12 @@ const questionBanks = {
     {
       "id": "43321",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Which chain best links saving to long-run productive capacity?",
+      "q": "National saving rises and lowers the real interest rate, but many funded projects have low returns and depreciation is unusually high. What is the careful long-run conclusion?",
       "options": [
-        "Saving raises consumption, which removes capital",
-        "Saving finances investment, which adds to capital",
-        "Investment lowers saving, which eliminates output",
-        "Consumption becomes loanable-funds supply"
+        "The higher saving rate guarantees an equal permanent increase in productive capacity",
+        "More financing can support capital formation, but does not guarantee it",
+        "Every financed project becomes physical capital, so project quality and depreciation are irrelevant",
+        "Greater saving must reduce investment because the closed-economy identity fixes the capital stock"
       ],
       "tag": "investment-capital-formation",
       "type": "integration",
@@ -14905,14 +14905,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "connect_investment_to_capital_formation",
       "commonError": "Uses a neighboring rule instead of the evidence required by Investment and Capital Formation.",
-      "feedback": "The financial system channels saving toward investment, and successful investment expands the productive capital stock.",
+      "feedback": "Greater saving can lower financing costs and enable more investment. Actual capital accumulation and future output still depend on project quality, depreciation, technology, and other conditions.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "19eebe8baa317bc1cb613c9f70099af82dc05c8630b3f9a89484bc35bb32fc6d",
+      "aHash": "b02d7d0e5e66f9105d87a5f14c548776f7c998b493897244f22b1d3ad9baf249",
       "canonicalId": "43321",
       "sourceId": 43321,
       "sourceChapter": [],
       "sourcePool": "legendary",
-      "sourceHash": "c612970a343bdec77a74f17f1ae3bd8d643c094167e17698ffc78bf39b867a16",
+      "sourceHash": "f372f7f3ba4d1c9831067891774629438c3fe37d80af523126c35bf3edb90f0c",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -14922,7 +14922,7 @@ const questionBanks = {
           "routeKey": "SLF10",
           "sourceRecordOrder": 153,
           "sourceId": 43321,
-          "sourceHash": "c612970a343bdec77a74f17f1ae3bd8d643c094167e17698ffc78bf39b867a16",
+          "sourceHash": "f372f7f3ba4d1c9831067891774629438c3fe37d80af523126c35bf3edb90f0c",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15532,15 +15532,15 @@ const questionBanks = {
     {
       "id": "43170",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "An investor buys 100 shares from another investor. How is the transaction classified?",
+      "q": "A household buys existing shares from another investor. Later, the corporation issues new bonds and uses the proceeds to build a factory. Which statement correctly distinguishes the transactions?",
       "options": [
-        "New business fixed investment in current GDP",
-        "New residential investment in current GDP",
-        "A financial-asset purchase, not new GDP investment",
-        "An increase in current business inventories"
+        "Both securities trades are current GDP investment because money changes hands",
+        "Only the existing-share purchase is current GDP investment because it changes ownership",
+        "Only the new factory is current GDP investment",
+        "Neither the bond issue nor the factory affects saving, financing, or current production"
       ],
       "tag": "saving-versus-investment",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF1",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15548,14 +15548,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_saving_and_investment",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving Versus Investment.",
-      "feedback": "Ownership of an existing share changes hands, but the transaction does not itself create new capital included in GDP investment.",
+      "feedback": "Existing-share trades transfer financial claims. Newly issued bonds can channel saving to the firm, but the newly produced factory is the transaction counted as current macroeconomic investment.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "9ef237ab599d84b9b0568291af922114e458474eec5900388734290fa8c281ad",
+      "aHash": "572471ff1c5382e03f7825b07f7dc81b5132af494d1ada69aa1b2dc11e5f8b9f",
       "canonicalId": "43170",
       "sourceId": 43170,
       "sourceChapter": [],
       "sourcePool": "finalBoss",
-      "sourceHash": "6aeb24573b5c192bd9be8c0a6eabfc872e8a121fff1b92aa2bb73eb02aae9593",
+      "sourceHash": "42ec7d40ff77975697183c4f13d271dc704e3c3a8387be149717c9d09d9ff76f",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15565,7 +15565,7 @@ const questionBanks = {
           "routeKey": "SLF1",
           "sourceRecordOrder": 2,
           "sourceId": 43170,
-          "sourceHash": "6aeb24573b5c192bd9be8c0a6eabfc872e8a121fff1b92aa2bb73eb02aae9593",
+          "sourceHash": "42ec7d40ff77975697183c4f13d271dc704e3c3a8387be149717c9d09d9ff76f",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15581,12 +15581,12 @@ const questionBanks = {
     {
       "id": "43173",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "When a firm produces goods that remain unsold at year-end, how are they recorded?",
+      "q": "A firm produces $12 million of goods this year but sells them next year without producing replacements. How are the two years affected, all else equal?",
       "options": [
-        "As household saving",
-        "As inventory investment",
-        "As a financial transfer",
-        "As used-goods consumption"
+        "Consumption rises this year and inventory investment is unchanged next year",
+        "Inventory investment rises this year and falls next year",
+        "Inventory investment falls this year and rises again when the goods are sold",
+        "The goods count as financial investment in both years because ownership changes"
       ],
       "tag": "saving-versus-investment",
       "type": "application",
@@ -15597,14 +15597,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_saving_and_investment",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving Versus Investment.",
-      "feedback": "Unsold current production adds to inventories, which are included in macroeconomic investment for the period.",
+      "feedback": "Unsold current production adds $12 million to inventories this year. Selling those previously produced goods next year reduces inventories, creating negative inventory investment then.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "6afcab1bd8a546b9dd02d125570e8df24bf0c5d8ac19d8ecaffa2f4e99150287",
+      "aHash": "c2550b318d827bc7918e91ec0ea54b5c382a79501bd6cf22d550c26fc765d04a",
       "canonicalId": "43173",
       "sourceId": 43173,
       "sourceChapter": [],
       "sourcePool": "finalBoss",
-      "sourceHash": "75265d31490fa13e9f66275012fd6db5b9619440a96e393bf5091aaaefc1bfcd",
+      "sourceHash": "bf7792a81e1170c4ccfd6630c8970cd698bd171fc5f7a3195a7b8d87c3e7e3ac",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15614,7 +15614,7 @@ const questionBanks = {
           "routeKey": "SLF1",
           "sourceRecordOrder": 5,
           "sourceId": 43173,
-          "sourceHash": "75265d31490fa13e9f66275012fd6db5b9619440a96e393bf5091aaaefc1bfcd",
+          "sourceHash": "bf7792a81e1170c4ccfd6630c8970cd698bd171fc5f7a3195a7b8d87c3e7e3ac",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15630,15 +15630,15 @@ const questionBanks = {
     {
       "id": "43179",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "A buyer purchases an existing bond from another household. What is the direct GDP effect of that trade?",
+      "q": "An investor buys an existing corporate bond from another household, and the issuer receives none of the sale proceeds. Which inference is justified?",
       "options": [
-        "Business fixed investment rises by the bond's price",
-        "Residential investment rises by the bond's price",
-        "Inventory investment rises by the bond's face value",
-        "No new macroeconomic investment is created by the trade"
+        "The issuer's investment rises automatically by the bond's resale price",
+        "National saving falls because every secondary-market trade uses saved funds",
+        "The trade creates inventory investment because the bond remains unsold by the issuer",
+        "It only reallocates an existing financial claim"
       ],
       "tag": "saving-versus-investment",
-      "type": "application",
+      "type": "interpretation",
       "objective": "SLF1",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15646,14 +15646,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_saving_and_investment",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving Versus Investment.",
-      "feedback": "The secondary-market transaction transfers a financial claim; it does not itself produce a new structure, machine, inventory, or intellectual property asset.",
+      "feedback": "A secondary-market bond sale changes who owns the claim. With no new proceeds to the issuer and no new production specified, it creates no direct GDP investment.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "bf095cfbe96f3bf411a82fc42e199f3cec4d8382b8ecf56aa00af7913dc6b003",
+      "aHash": "83292ded0941e9cbb10d312f2d86cdf359dd981f6d16f99e61fa43fbce3c0722",
       "canonicalId": "43179",
       "sourceId": 43179,
       "sourceChapter": [],
       "sourcePool": "finalBoss",
-      "sourceHash": "30b13a69bdbe2edbe263a2be605fd51f63f69cf78a72b1939d1e4e2296e9dc7c",
+      "sourceHash": "a2b4b8de405c5fed71f0305ce7d2df4f565d5b01b6cbf9f95f58c736250e0518",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15663,7 +15663,7 @@ const questionBanks = {
           "routeKey": "SLF1",
           "sourceRecordOrder": 11,
           "sourceId": 43179,
-          "sourceHash": "30b13a69bdbe2edbe263a2be605fd51f63f69cf78a72b1939d1e4e2296e9dc7c",
+          "sourceHash": "a2b4b8de405c5fed71f0305ce7d2df4f565d5b01b6cbf9f95f58c736250e0518",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15679,15 +15679,15 @@ const questionBanks = {
     {
       "id": "43184",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "With T defined as net tax revenue, which expression gives private saving?",
+      "q": "Income is $1,000, net taxes are $180, consumption is $650, and government purchases are $220. If government purchases then rise by $30 with the other values fixed, which result follows?",
       "options": [
-        "Y − T − C",
-        "T − G",
-        "Y − C − G",
-        "C + G − Y"
+        "Private saving stays $170; public and national saving fall $30",
+        "Private saving falls to $140; public saving is unchanged, shifting investment demand left",
+        "Private saving stays $170; public and national saving each rise by $30, shifting supply right",
+        "Private saving rises to $200; national saving is unchanged because taxes did not change"
       ],
       "tag": "private-public-national-saving",
-      "type": "definition",
+      "type": "integration",
       "objective": "SLF2",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15695,14 +15695,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "calculate_national_saving",
       "commonError": "Uses a neighboring rule instead of the evidence required by Private, Public, and National Saving.",
-      "feedback": "Private saving is disposable income, Y minus net taxes, less consumption C.",
+      "feedback": "Private saving is Y − T − C = $170. Higher G does not change that amount, but it lowers T − G and national saving by $30, so loanable-funds supply shifts left.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "68966302a3ad00101aa700111d95b8f6095cbcf8d2436262bad8c15246b166c9",
+      "aHash": "e26a39c7ac95ed793c28426fd0ad03dc4b501a80378563da105c02a64c49306c",
       "canonicalId": "43184",
       "sourceId": 43184,
       "sourceChapter": [],
       "sourcePool": "finalBoss",
-      "sourceHash": "63ef5857119286935a55025adc6c61f7927fa3bd11ae682be6a70a8d07d633a9",
+      "sourceHash": "bebc52ebb7e19ff83acfcfd47ee4ab6fefd6d18bf9b4238dce4cf9b2916fdd26",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15712,7 +15712,7 @@ const questionBanks = {
           "routeKey": "SLF2",
           "sourceRecordOrder": 16,
           "sourceId": 43184,
-          "sourceHash": "63ef5857119286935a55025adc6c61f7927fa3bd11ae682be6a70a8d07d633a9",
+          "sourceHash": "bebc52ebb7e19ff83acfcfd47ee4ab6fefd6d18bf9b4238dce4cf9b2916fdd26",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15728,15 +15728,15 @@ const questionBanks = {
     {
       "id": "43187",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Income is $1,000, net taxes are $180, and consumption is $650. What is private saving?",
+      "q": "Private saving rises by $25 billion while public saving falls by $40 billion. What happens in the loanable-funds market, all else equal?",
       "options": [
-        "$180",
-        "$350",
-        "$530",
-        "$170"
+        "National saving rises by $65 billion, shifting supply right and lowering the real rate",
+        "National saving rises by $15 billion, shifting investment demand right and raising the real rate",
+        "National saving is unchanged because private and public saving always offset one another",
+        "National saving falls by $15 billion, shifting supply left and raising the equilibrium real rate"
       ],
       "tag": "private-public-national-saving",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF2",
       "difficulty": "hard",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15744,14 +15744,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "calculate_national_saving",
       "commonError": "Uses a neighboring rule instead of the evidence required by Private, Public, and National Saving.",
-      "feedback": "Private saving equals Y − T − C, so $1,000 − $180 − $650 = $170.",
+      "feedback": "The two components change national saving by +25 − 40 = −$15 billion. Lower national saving shifts loanable-funds supply left, raising the real rate and reducing equilibrium investment.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "dcad11a298e1593d559c713f2245c450a838da75b1b517b5548cab7df4a0e5f8",
+      "aHash": "143c93a7c406468a2a8818267d50ab2f0ef0dee08c8db547de70935a504a6f58",
       "canonicalId": "43187",
       "sourceId": 43187,
       "sourceChapter": [],
       "sourcePool": "finalBoss",
-      "sourceHash": "9bc21c5bd454aac7fabc080103eb8f2c710eaa5ff6b99d29c5a91ea84dfc8274",
+      "sourceHash": "66f76cdba1e2b1665e30cd07876b2c71224c985f8ec8e31b8b589a3e6ae60583",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15761,7 +15761,7 @@ const questionBanks = {
           "routeKey": "SLF2",
           "sourceRecordOrder": 19,
           "sourceId": 43187,
-          "sourceHash": "9bc21c5bd454aac7fabc080103eb8f2c710eaa5ff6b99d29c5a91ea84dfc8274",
+          "sourceHash": "66f76cdba1e2b1665e30cd07876b2c71224c985f8ec8e31b8b589a3e6ae60583",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15828,15 +15828,15 @@ const questionBanks = {
     {
       "id": "43177",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "A software firm develops a new commercial platform for long-term use. Under GDP conventions, what may it represent?",
+      "q": "A software firm develops a new platform for long-term use, buys an existing patent from another firm, and issues shares to finance both activities. Which evaluation is most accurate?",
       "options": [
-        "A transfer payment to software users",
-        "Investment in intellectual property products",
-        "A purchase of an existing financial claim",
-        "Household consumption of a used asset"
+        "All three activities are current intellectual-property investment because each has a price",
+        "Only the new platform may be current intellectual-property investment",
+        "Only the share issue is current GDP investment because it raises financial capital",
+        "The existing patent purchase creates new output, while developing the platform is current consumption"
       ],
       "tag": "saving-versus-investment",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF1",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15844,14 +15844,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_saving_and_investment",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving Versus Investment.",
-      "feedback": "Qualifying research and software development can be investment in intellectual property because it creates a productive asset.",
+      "feedback": "Qualifying development creates a new productive intangible asset. Buying an existing patent and issuing shares transfer ownership or financial claims rather than independently creating current output.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "c1713a36f6edb0b42d3697a11620beb4f1c3134a477acb4886188d716e2d25c1",
+      "aHash": "3bb9607ecdbd5426aa5bd045fd925d4a5ba1e31539f87bfb4718cb968fc69468",
       "canonicalId": "43177",
       "sourceId": 43177,
       "sourceChapter": [],
       "sourcePool": "legendaryBoss",
-      "sourceHash": "f382ac75f99eda27aa4ca7f0e05ee4642480b7972e90b7c49301f47b31d3d589",
+      "sourceHash": "e09a82d0c17aecbf3521ab64a57fae952fafb61abc0cd3224556e0e3285cb699",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15861,7 +15861,7 @@ const questionBanks = {
           "routeKey": "SLF1",
           "sourceRecordOrder": 9,
           "sourceId": 43177,
-          "sourceHash": "f382ac75f99eda27aa4ca7f0e05ee4642480b7972e90b7c49301f47b31d3d589",
+          "sourceHash": "e09a82d0c17aecbf3521ab64a57fae952fafb61abc0cd3224556e0e3285cb699",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15877,15 +15877,15 @@ const questionBanks = {
     {
       "id": "43191",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Income is $900, net taxes are $150, consumption is $600, and government purchases are $180. What are private and public saving?",
+      "q": "Initially Y = $900, T = $150, C = $600, and G = $180. Net taxes then rise by $20 and government purchases rise by $35 while Y and C stay fixed. What changes?",
       "options": [
-        "$120 and +$30",
-        "$300 and −$30",
-        "$150 and +$180",
-        "$150 and −$30"
+        "Private saving rises $20, public saving rises $15, and national saving rises $35",
+        "Private saving falls $20, public saving rises $20, and national saving is unchanged",
+        "Private saving is unchanged, public saving falls $35, and national saving falls $15",
+        "Private saving falls $20, public saving falls $15, and national saving falls $35"
       ],
       "tag": "private-public-national-saving",
-      "type": "calculation",
+      "type": "integration",
       "objective": "SLF2",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15893,14 +15893,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "calculate_national_saving",
       "commonError": "Uses a neighboring rule instead of the evidence required by Private, Public, and National Saving.",
-      "feedback": "Private saving is $900 − $150 − $600 = $150; public saving is $150 − $180 = −$30.",
+      "feedback": "Higher net taxes reduce private saving by $20. Public saving changes by +$20 − $35 = −$15. Together, national saving falls $35, matching the change in Y − C − G.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "2227f1e72ebf6168d665a2d80f9eb0220a18e62ef84e05bf8b00d44208651171",
+      "aHash": "4063c69ae996c0a5ef7f9a2574c63d3e46a70a3c26832270df8da391fa95e742",
       "canonicalId": "43191",
       "sourceId": 43191,
       "sourceChapter": [],
       "sourcePool": "legendaryBoss",
-      "sourceHash": "39a838618d2839aee9108e8259fc5710e42ce1ffe434fb6e5c98a431f9eb6029",
+      "sourceHash": "5230878b185326ebf2ee00f2ee0f76c5d52d8be510b2394e3fd0ff9d1484546e",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15910,7 +15910,7 @@ const questionBanks = {
           "routeKey": "SLF2",
           "sourceRecordOrder": 23,
           "sourceId": 43191,
-          "sourceHash": "39a838618d2839aee9108e8259fc5710e42ce1ffe434fb6e5c98a431f9eb6029",
+          "sourceHash": "5230878b185326ebf2ee00f2ee0f76c5d52d8be510b2394e3fd0ff9d1484546e",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15926,15 +15926,15 @@ const questionBanks = {
     {
       "id": "43205",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Why does national saving equal investment in the textbook closed-economy model?",
+      "q": "A student argues: ‘Because S = I in a closed economy, desired saving and desired investment are automatically equal at every real interest rate, and each saver funds one firm.’ Which correction is complete?",
       "options": [
-        "Every household finances one firm directly",
-        "Both equal Y − C − G",
-        "Government purchases always equal taxes",
-        "Consumption must equal private saving"
+        "S = I applies to each household, but only when the government budget is balanced",
+        "An aggregate equilibrium identity coordinated through financial markets",
+        "S = I means desired quantities can differ permanently because the real rate has no coordinating role",
+        "S = I is a rule for open economies only and does not describe aggregate accounting"
       ],
       "tag": "closed-economy-saving-investment-identity",
-      "type": "interpretation",
+      "type": "integration",
       "objective": "SLF3",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15942,14 +15942,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "apply_closed_economy_saving_identity",
       "commonError": "Uses a neighboring rule instead of the evidence required by Saving and Investment in a Closed Economy.",
-      "feedback": "National saving and investment are each equal to output not used for consumption or government purchases in this closed-economy accounting setup.",
+      "feedback": "The equality concerns aggregate realized saving and investment in the closed-economy model. Planned quantities need not match away from equilibrium, and intermediaries pool funds rather than pair savers with firms.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "7b304224287cd587a4037a420cc0cf1fbb6b57e3d104746b7405f6c7e730de25",
+      "aHash": "307619fb7c41f9de6c75a8e467922cdb84e34dfdf55d32fc5e6660273a9cc939",
       "canonicalId": "43205",
       "sourceId": 43205,
       "sourceChapter": [],
       "sourcePool": "legendaryBoss",
-      "sourceHash": "1e5e32c1cc9db0150abc3a193f0545e3281fbc27fe0626104eec52854680f14d",
+      "sourceHash": "8b97d8adc509f089b7c268b33992e03f36179b3ffaad0c0002fbdea09ae129df",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -15959,7 +15959,7 @@ const questionBanks = {
           "routeKey": "SLF3",
           "sourceRecordOrder": 37,
           "sourceId": 43205,
-          "sourceHash": "1e5e32c1cc9db0150abc3a193f0545e3281fbc27fe0626104eec52854680f14d",
+          "sourceHash": "8b97d8adc509f089b7c268b33992e03f36179b3ffaad0c0002fbdea09ae129df",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -15975,15 +15975,15 @@ const questionBanks = {
     {
       "id": "43219",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Refer to the graph above. Which labeled curve represents national saving?",
+      "q": "Refer to the graph above. In this closed economy, a student says point A proves that any increase in desired investment must be matched immediately by an identical outward shift of saving supply. What is wrong with the claim?",
       "options": [
-        "D0, the downward-sloping blue curve",
-        "The horizontal guide through 8 percent",
-        "The vertical guide through 140 units",
-        "S0, the upward-sloping red curve"
+        "Point A proves both curves must shift together because aggregate S = I at every possible rate",
+        "The investment curve cannot shift because it represents an accounting identity rather than behavior",
+        "Saving supply must shift left whenever expected investment profitability rises",
+        "Point A is the initial equilibrium; rate adjustment coordinates a new one"
       ],
       "tag": "loanable-funds-equilibrium",
-      "type": "graph_interpretation",
+      "type": "graph_integration",
       "objective": "SLF4",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -15991,9 +15991,9 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "The graph labels the upward-sloping supply of loanable funds as S0 (saving).",
+      "feedback": "The graph shows equality at the initial intersection, not automatic equality of planned quantities after a shock. Higher desired investment can shift demand, after which the real rate coordinates movements toward a new equilibrium.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "ff969442875be5fcacf3be9437f72625f795090e62155c4eed5a50d3f512fbe3",
+      "aHash": "c960adf5dd8845befab88096511a9bf0d8590add29cc7285d75cc5d8aefcc45a",
       "image": "question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp",
       "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
       "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent.",
@@ -16003,7 +16003,7 @@ const questionBanks = {
       "sourceId": 43219,
       "sourceChapter": [],
       "sourcePool": "legendaryBoss",
-      "sourceHash": "90a1f2daa9d60250261bbcebbdf5de37d4a2771dd06e67b7997a194d7af91c24",
+      "sourceHash": "1401b9f5d409168b83fec107a883566d2b3a40e6a3e564f25f954947a88fbb5e",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -16013,7 +16013,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 51,
           "sourceId": 43219,
-          "sourceHash": "90a1f2daa9d60250261bbcebbdf5de37d4a2771dd06e67b7997a194d7af91c24",
+          "sourceHash": "1401b9f5d409168b83fec107a883566d2b3a40e6a3e564f25f954947a88fbb5e",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -16029,15 +16029,15 @@ const questionBanks = {
     {
       "id": "43231",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "What adjustment is expected when the real interest rate is below equilibrium?",
+      "q": "At a real interest rate below equilibrium, desired investment exceeds desired saving. A student claims this disproves S = I in a closed economy. Which response is correct?",
       "options": [
-        "Excess supply puts downward pressure on the rate",
-        "Both curves permanently shift left",
-        "National saving becomes zero",
-        "Excess demand puts upward pressure on the rate"
+        "The student is correct because any planned imbalance permanently invalidates national accounting",
+        "S = I requires every saver to lend directly to one investor at the posted rate",
+        "The gap shows that closed economies can finance investment only through unrecorded foreign saving",
+        "Planned quantities can differ; rate adjustment restores aggregate equilibrium"
       ],
       "tag": "loanable-funds-equilibrium",
-      "type": "application",
+      "type": "integration",
       "objective": "SLF4",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -16045,14 +16045,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "analyze_loanable_funds_equilibrium",
       "commonError": "Uses a neighboring rule instead of the evidence required by Loanable-Funds Equilibrium.",
-      "feedback": "Below equilibrium, desired borrowing exceeds funds supplied, creating pressure for the real interest rate to rise.",
+      "feedback": "Planned supply and demand can differ at a disequilibrium rate. Excess demand creates upward rate pressure, coordinating decisions at equilibrium without turning the aggregate identity into one-to-one behavior.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "edbfd50bfdd32141ed4c421a71ede48eded91af3c9b700922dc64af51ec92272",
+      "aHash": "7998f7d3060dd071a121bc6da487102dc2d1f85e9f8fadd879f3ad61a67c3add",
       "canonicalId": "43231",
       "sourceId": 43231,
       "sourceChapter": [],
       "sourcePool": "legendaryBoss",
-      "sourceHash": "a92b269dab72cf3dec9003bb8f4d597e49fefed122595c6206837465ac3b572f",
+      "sourceHash": "5f34209abb27df22d2104fd3de61dda3ae5c38d18adac1fddadbfb66c9a2af29",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -16062,7 +16062,7 @@ const questionBanks = {
           "routeKey": "SLF4",
           "sourceRecordOrder": 63,
           "sourceId": 43231,
-          "sourceHash": "a92b269dab72cf3dec9003bb8f4d597e49fefed122595c6206837465ac3b572f",
+          "sourceHash": "5f34209abb27df22d2104fd3de61dda3ae5c38d18adac1fddadbfb66c9a2af29",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -16078,15 +16078,15 @@ const questionBanks = {
     {
       "id": "43245",
       "sourceGame": "saving-investment-loanable-funds-authoring",
-      "q": "Which wording contains the standard movement-versus-shift error?",
+      "q": "Improved technology raises expected project returns, and the resulting equilibrium real interest rate rises. How should a firm's investment response be decomposed?",
       "options": [
-        "A higher real rate lowers investment along demand",
-        "A higher real rate shifts investment demand left",
-        "Greater expected profit shifts investment demand right",
-        "More household saving shifts supply right"
+        "Technology causes movement along demand, while the higher rate shifts demand left",
+        "Demand shifts right; the higher rate partly offsets the increase",
+        "Both changes shift investment demand right because desired investment initially increases",
+        "The higher rate shifts saving supply left, leaving investment demand unchanged"
       ],
       "tag": "loanable-funds-movement-versus-shift",
-      "type": "interpretation",
+      "type": "integration",
       "objective": "SLF5",
       "difficulty": "legendary",
       "conceptCluster": "saving-investment-and-loanable-funds",
@@ -16094,14 +16094,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "distinguish_movement_from_shift_loanable_funds",
       "commonError": "Uses a neighboring rule instead of the evidence required by Movement Along Versus Shift.",
-      "feedback": "A higher rate changes the quantity of investment demanded; it does not change investment demand at every rate.",
+      "feedback": "Technology changes profitability at every rate and shifts demand right. The higher equilibrium rate is an endogenous price change that reduces quantity demanded along the shifted curve.",
       "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1",
-      "aHash": "af691ef24b16428039ee31915c9b14f58cdb20ec5705881325339e318db55006",
+      "aHash": "b50889e0a3ce70645514ff7a5aec30e8b2f141207816fc07bc0868f7c5727a5f",
       "canonicalId": "43245",
       "sourceId": 43245,
       "sourceChapter": [],
       "sourcePool": "legendaryBoss",
-      "sourceHash": "d1e799700eda1914a3f11a390abd5738c773755625977bafc8c94340eac5b56e",
+      "sourceHash": "25d7f83a16452b16b7dacd1f90c52a86e043c830aedb5f0f6cca654985b8fdd9",
       "sourceOccurrences": [
         {
           "sourceGame": "saving-investment-loanable-funds-authoring",
@@ -16111,7 +16111,7 @@ const questionBanks = {
           "routeKey": "SLF5",
           "sourceRecordOrder": 77,
           "sourceId": 43245,
-          "sourceHash": "d1e799700eda1914a3f11a390abd5738c773755625977bafc8c94340eac5b56e",
+          "sourceHash": "25d7f83a16452b16b7dacd1f90c52a86e043c830aedb5f0f6cca654985b8fdd9",
           "sourceCurationPhase": "phase-saving-investment-loanable-funds-question-pool-v1"
         }
       ],
@@ -16602,10 +16602,10 @@ const facultyCompositionMetadata = {
   "saveKeyNamespace": "mq-econ:saving-investment-loanable-funds-production-validation:21b0f60b56ff",
   "compositionFingerprint": "21b0f60b56ff203ff1e5ed08ae424f09c4fc6bdc3f69c9b76582c1596468c9cb",
   "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1",
-  "librarySha256": "fd8ebae2e12fe19d1542b07076247197a0bdd5982aaee78488118b87006f6c10",
+  "librarySha256": "16772f922e29a5442852dff2e5bec394f5827f567706c60bb982ebec59bb11b2",
   "templateSha256": "896062befef3daf11e2af814010e0a3f3d64dfa48572b75bf319c17adc151f85",
   "phase": "phase-saving-investment-loanable-funds-question-pool-v1",
-  "sourceVersion": "saving-investment-loanable-funds-production-v1"
+  "sourceVersion": "saving-investment-loanable-funds-production-v2-difficulty-calibration"
 };
 const facultyQuestionValidator = function validateFacultyQuestionRecord(question, poolName, availableAssets){
   const invalidFields = [];

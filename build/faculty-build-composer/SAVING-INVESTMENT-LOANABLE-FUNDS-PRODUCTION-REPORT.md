@@ -148,7 +148,7 @@ The report opened from the graph trial and used human-readable labels including 
 
 ## 30. Active Composer suite
 
-The final active suite passed **27/27** validators. This includes the focused SLF validator, SLF answer-length validator, checkpoint-remediation validator, Federal Budgets validator, relevant Macro and graph-mode validators, concept-review integration, and all ten mode validators. The focused SLF audit passes 754 checks. The publisher dry runs for both Federal Budgets and this phase pass on the forward baseline.
+The original production release passed **27/27** active validators. After the faculty difficulty-calibration diagnostic was added, the final active suite passed **28/28**. This includes the focused SLF validator, high-difficulty cognitive diagnostic, SLF answer-length validator, checkpoint-remediation validator, Federal Budgets validator, relevant Macro and graph-mode validators, concept-review integration, and all ten mode validators. The focused SLF audit passes 754 checks. The publisher dry runs for both Federal Budgets and this phase pass on the forward baseline.
 
 ## 31. Published totals
 
@@ -209,3 +209,45 @@ LOANABLE-09 and LOANABLE-10 need corrected source artwork before they can be reg
 ## 34. Recommended quick-start composition
 
 Recommend a future **Saving & Financial System** quick start containing Federal Budgets & Debt; Saving, Investment & Loanable Funds; Real versus Nominal Interest Rates; GDP Components; and Economic Growth Policy. Suggested modes are Standard Campaign, Trial by Graph, Quiz, Exam Drill, and Unlimited Practice. No quick-start file was changed in this phase.
+
+## 35. Faculty Difficulty Calibration Audit
+
+### Scope and findings
+
+The targeted calibration audited every high-difficulty record: 36 Hard, 12 Elite, and 12 Legendary questions, including all finalBoss and legendaryBoss assignments. Of the 60 audited records, 26 are graph-dependent. Faculty classification found 52 records below the cognitive standard assigned to their difficulty. The original high-difficulty distribution was A=26 direct-read/recognition, B=23 one-step application, C=10 causal or reverse inference, D=1 multistep integration, and E=0 synthesis or qualification.
+
+Fifty-four high-difficulty records were materially rewritten: all 52 under-calibrated records plus two already-valid high items with copy defects. Five additional Easy/Medium records received wording-only cleanup for shared template defects. No IDs, objectives, difficulties, pools, graph assignments, or runtime metadata changed.
+
+### Cognitive-task result
+
+The repaired high-difficulty distribution is A=0, B=0, C=31, D=19, and E=10. Among the 26 high-difficulty graph records, the distribution changed from A=20, B=1, C=5, D=0, E=0 to A=0, B=0, C=14, D=6, E=6. All 20 direct coordinate, point, quantity, or labeled-curve read-offs were removed from Hard and above.
+
+Hard graph tasks now require causal diagnosis, reverse inference, movement-versus-shift reasoning, or accounting linked to market consequences. Elite tasks integrate two mechanisms, such as private/public saving changes plus a graph or a behavioral shift plus the endogenous price response. Legendary tasks qualify what the graph establishes, reconcile simultaneous shocks, and distinguish the closed-economy identity from causal behavior.
+
+The high-graph inventory now includes three determinant tasks, three reverse-inference tasks, four movement-versus-shift tasks, seven deficit/crowding-out tasks, nine simultaneous-shift tasks, five accounting-plus-graph tasks, and six what-can-or-cannot-be-concluded tasks. Categories overlap when one question integrates multiple mechanisms. Direct equilibrium reads and coordinate comparisons at Hard+ are both zero.
+
+### Question-type and copy repair
+
+Thirty-six high-difficulty type labels changed. Direct `graph_calculation` and superficial `graph_interpretation` labels were replaced with `graph_integration` where the revised task actually combines graphical evidence with economics. Foundational definitions and calculations assigned to high pools were generally converted to application, interpretation, or integration tasks.
+
+Student-facing answer choices no longer use `unambiguously`. Mechanical wording such as “the displayed shift,” “which point is formed,” “makes the quantities,” and “which axis shows the price” was removed or made natural. Correct choices were deliberately shortened after the first regression exposed a longest-answer cue; feedback retains the full mechanism. High-difficulty distractors now encode plausible errors such as the wrong curve, the wrong direction, confusing movement with shift, ignoring one simultaneous change, confusing private with national saving, or treating `S = I` as individual matching.
+
+### Answer-length regression
+
+The retained answer-length validator passes. Longest-correct including ties is 55.63%; uniquely-longest is 20.00%; average correct length is 7.34 words; average distractor length is 7.38 words; the mean correct/distractor ratio is 0.994. Correct qualifier use is 0.100 per option versus 0.242 for distractors. Extreme-ratio incidence remains 0.63% (one pre-existing record), well below the 5% limit.
+
+### Validation and runtime regression
+
+The focused bank validator passes 754 checks. Its graph dependency, movement-versus-shift, saving-accounting, closed-economy, asset, hash, quarantine, mode, and publishing assertions all pass. The dedicated cognitive diagnostic passes and produces a record-by-record faculty list. The final active Composer suite passes 28/28 validators; the Factor Markets and Remaining Principles suites retain their 1,067- and 2,171-check coverage. Adaptive selection was not changed. Browser QA triggered Concept Repair 43202 → Bridge 43247 → Recovery Retest 43304 and returned to normal Unlimited Practice at Room 1. The checkpoint-remediation validator remains the authoritative repeated-state regression.
+
+### Browser QA
+
+A new 15-question Trial by Graph run completed at 14/15 (one intentional miss), with three Hard, two Elite, and two Legendary graph questions in its high-challenge half. Served high examples included movement-versus-shift ID 43290, reverse diagnosis 43249, cause-from-effect 43278, equilibrium adjustment 43217, accounting-plus-graph 43295, limits of inference 43273, and simultaneous accounting/curve shifts 43309. The run sampled all eight registered graph assets. No filename leakage, false precision, curve conflict, decorative graph use, console warning, or console error appeared.
+
+Unlimited Practice selected normally, completed the full repair chain, returned to adaptive practice, and generated a human-readable Mastery Report. A separate Standard Campaign spot-check intentionally missed Checkpoint One question 43168. The next checkpoint records were 43180 and 43172, no remediation interrupted the checkpoint, and completion returned to Room 11. Mastery Reports continued to show human-readable objective labels without raw SLF codes or the canonical concept ID.
+
+### Artifacts and unresolved issues
+
+The faculty-readable artifact is `build/faculty-build-composer/tests/saving-investment-loanable-funds-high-difficulty-audit-sample.html`. It contains all 26 Hard/Elite/Legendary/finalBoss/legendaryBoss graph questions plus a representative non-graph high-difficulty sample, with IDs, objectives, difficulty, pools, types, graphs, choices, keys, feedback, and A–E classifications.
+
+The remaining issues are unchanged: LOANABLE-09 and LOANABLE-10 require corrected source artwork before registration; no dedicated Concept Review PDF exists; and one legendaryBoss graph record remains intentionally outside Trial by Graph, leaving 59 graph-safe questions. No runtime logic or graph pixels changed.

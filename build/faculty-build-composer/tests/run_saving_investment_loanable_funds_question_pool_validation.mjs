@@ -25,13 +25,13 @@ const helpers = require("./composer-test-helpers.js");
 
 const PINS = Object.freeze({
   ids: "0d59129e6f17c4797c502dd165ce19fce90d04a253cbf292ab183e11de56041e",
-  answers: "84ee115b3930a8ce39863bbe05fd43634daa787bbd77add86c579c3128a00e8d",
+  answers: "ea8e4be7cad8d7b6d269e8a7ca9ca0f63b1aaaa498076642fa13a45e1660784a",
   skills: "efe3421b8b6dcfaa8f7b0c551b30466b46a506ddadc2cae34c95233b08e4ec04",
   objectives: "2b0fa311eec5602d55cd834ec7fc6e1cf2b51719df1c1701050b43c0a7736462",
   difficulties: "e56d49c807e43df4cff37909c0cc4b45230bbdbb204d2008fde8cc2d31eeb1d6",
   pools: "310f83a5ff27182506e0de005973c02b10423625143f831a983d896bed8bebc7",
   graphs: "269d975adc76dbe126e851fa591e3f1b5472afb6bdd2aa2ced620dbfa3e808ab",
-  stems: "03b0225eeb41887fe4f6133866d97b2a5fe23ecb37fe7a69f03b205bc1560e11"
+  stems: "e3b2f590366c84d24e87f51463ea8bb634a92d7ab57e3e833bb2267d6a641189"
 });
 
 const ASSETS = Object.freeze({

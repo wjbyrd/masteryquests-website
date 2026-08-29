@@ -1,7 +1,8 @@
 import { authoredRow, finalizeQuestions } from "./remaining_micro_question_pool_helpers.mjs";
+import { applyDifficultyCalibration } from "./saving_investment_loanable_funds_difficulty_calibration.mjs";
 
 export const PHASE = "phase-saving-investment-loanable-funds-question-pool-v1";
-export const SOURCE_VERSION = "saving-investment-loanable-funds-production-v1";
+export const SOURCE_VERSION = "saving-investment-loanable-funds-production-v2-difficulty-calibration";
 export const ID_FIRST = 43168;
 export const ID_LAST = 43327;
 export const CONCEPT_ID = "saving-investment-and-loanable-funds";
@@ -294,7 +295,7 @@ add("SLF10", "If private investment is $30 billion lower because of crowding out
 add("SLF10", "What distinguishes this capital-formation link from a full growth theory?", "It isolates one channel from investment to productive capacity", ["It explains every determinant of productivity", "It derives a complete production function", "It proves convergence across all economies"], "This Principles bridge identifies the physical-capital channel without rebuilding broader growth theory.", "interpretation");
 add("SLF10", "A saving increase lowers the real rate and raises investment. What is the next long-run link?", "More investment can add to the future capital stock", ["More investment must reduce productive capacity", "The real rate becomes a capital good", "Saving turns directly into current consumption"], "The market outcome finances more new capital, which can expand future productive capacity, all else equal.", "integration");
 
-export const productionQuestions = finalizeQuestions(rows, {
+export const uncalibratedProductionQuestions = finalizeQuestions(rows, {
   idFirst: ID_FIRST,
   idLast: ID_LAST,
   conceptId: CONCEPT_ID,
@@ -304,6 +305,8 @@ export const productionQuestions = finalizeQuestions(rows, {
   phase: PHASE,
   graphAssets: GRAPH_ASSETS
 });
+
+export const productionQuestions = applyDifficultyCalibration(uncalibratedProductionQuestions);
 
 if (productionQuestions.length !== 160) throw new Error(`Expected 160 questions; found ${productionQuestions.length}.`);
 if (productionQuestions.filter(question => question.graphRequired).length !== 60) throw new Error("Expected exactly 60 graph-dependent questions.");

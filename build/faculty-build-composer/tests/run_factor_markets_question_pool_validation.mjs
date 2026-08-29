@@ -184,7 +184,7 @@ check(nearDuplicates.length === 0, "near-duplicate stem audit", JSON.stringify(n
 const headById = new Map(entries(head).map(entry => [String(entry.question.id), stable(entry.question)]));
 const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), stable(entry.question)]));
 const auditScopeIds=new Set(Array.from({length:43059-42320+1},(_,index)=>String(42320+index)));
-const activeRepairIds=new Set(Array.from({length:43167-43060+1},(_,index)=>String(43060+index)));
+const activeRepairIds=new Set(Array.from({length:43327-43060+1},(_,index)=>String(43060+index)));
 const changedBaseline = [...headById].filter(([id, record]) => !auditScopeIds.has(id) && !activeRepairIds.has(id) && currentById.get(id) !== record).map(([id]) => id);
 check(changedBaseline.length === 0, "protected records outside active repair scope unchanged", changedBaseline.slice(0, 20).join(","));
 check(current.assetInventory.length === 494, "asset inventory total", String(current.assetInventory.length));

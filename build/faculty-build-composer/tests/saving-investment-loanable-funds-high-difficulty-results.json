@@ -1,0 +1,557 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "conceptId": "saving-investment-and-loanable-funds",
+  "audited": {
+    "hard": 36,
+    "elite": 12,
+    "legendary": 12,
+    "total": 60,
+    "highDifficultyGraph": 26
+  },
+  "tooEasyFound": 52,
+  "materiallyRewritten": 54,
+  "initialDirectReadGraphRecords": 20,
+  "remainingDirectReadHighDifficultyRecords": 0,
+  "typeLabelChanges": 36,
+  "typeChanges": [
+    {
+      "id": 43170,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43175,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43177,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43179,
+      "before": "application",
+      "after": "interpretation"
+    },
+    {
+      "id": 43184,
+      "before": "definition",
+      "after": "integration"
+    },
+    {
+      "id": 43187,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43189,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43191,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43196,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43199,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43203,
+      "before": "definition",
+      "after": "integration"
+    },
+    {
+      "id": 43205,
+      "before": "interpretation",
+      "after": "integration"
+    },
+    {
+      "id": 43207,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43210,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43213,
+      "before": "calculation",
+      "after": "integration"
+    },
+    {
+      "id": 43217,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43219,
+      "before": "graph_interpretation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43227,
+      "before": "definition",
+      "after": "integration"
+    },
+    {
+      "id": 43229,
+      "before": "interpretation",
+      "after": "integration"
+    },
+    {
+      "id": 43231,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43233,
+      "before": "bridge",
+      "after": "application"
+    },
+    {
+      "id": 43238,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43241,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43245,
+      "before": "interpretation",
+      "after": "integration"
+    },
+    {
+      "id": 43257,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43264,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43269,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43275,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43281,
+      "before": "application",
+      "after": "interpretation"
+    },
+    {
+      "id": 43283,
+      "before": "interpretation",
+      "after": "integration"
+    },
+    {
+      "id": 43285,
+      "before": "application",
+      "after": "integration"
+    },
+    {
+      "id": 43287,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43293,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43302,
+      "before": "interpretation",
+      "after": "integration"
+    },
+    {
+      "id": 43305,
+      "before": "graph_calculation",
+      "after": "graph_integration"
+    },
+    {
+      "id": 43323,
+      "before": "application",
+      "after": "interpretation"
+    }
+  ],
+  "cognitiveDistribution": {
+    "before": {
+      "A": 26,
+      "B": 23,
+      "C": 10,
+      "D": 1,
+      "E": 0
+    },
+    "after": {
+      "A": 0,
+      "B": 0,
+      "C": 31,
+      "D": 19,
+      "E": 10
+    }
+  },
+  "graphCognitiveDistribution": {
+    "before": {
+      "A": 20,
+      "B": 1,
+      "C": 5,
+      "D": 0,
+      "E": 0
+    },
+    "after": {
+      "A": 0,
+      "B": 0,
+      "C": 14,
+      "D": 6,
+      "E": 6
+    }
+  },
+  "graphTaskDiversity": {
+    "directEquilibriumReads": 0,
+    "coordinateComparisons": 0,
+    "determinantQuestions": 3,
+    "reverseInferenceQuestions": 3,
+    "movementVersusShiftQuestions": 4,
+    "deficitCrowdingOutQuestions": 7,
+    "simultaneousShiftQuestions": 9,
+    "accountingPlusGraphQuestions": 5,
+    "whatCanOrCannotBeConcludedQuestions": 6,
+    "note": "Categories overlap when one item integrates multiple mechanisms."
+  },
+  "graphRecords": [
+    {
+      "id": 43217,
+      "objective": "SLF4",
+      "difficulty": "elite",
+      "pool": "elite",
+      "type": "graph_integration",
+      "asset": "LOANABLE-01.webp",
+      "before": "A",
+      "after": "D",
+      "cognition": "Multistep integration or simultaneous mechanisms",
+      "stem": "Refer to the graph above. Suppose the real interest rate is temporarily 10 percent while the curves remain fixed. Which adjustment is consistent with the market returning to point A?"
+    },
+    {
+      "id": 43219,
+      "objective": "SLF4",
+      "difficulty": "legendary",
+      "pool": "legendaryBoss",
+      "type": "graph_integration",
+      "asset": "LOANABLE-01.webp",
+      "before": "A",
+      "after": "E",
+      "cognition": "Synthesis, qualification, or limits of inference",
+      "stem": "Refer to the graph above. In this closed economy, a student says point A proves that any increase in desired investment must be matched immediately by an identical outward shift of saving supply. What is wrong with the claim?"
+    },
+    {
+      "id": 43221,
+      "objective": "SLF4",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-01.webp",
+      "before": "C",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. At a real interest rate above 8 percent, which comparison does the graph imply?"
+    },
+    {
+      "id": 43224,
+      "objective": "SLF4",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-01.webp",
+      "before": "C",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. If the rate moves from 8 percent to 10 percent without any curve shift, what pattern is visible?"
+    },
+    {
+      "id": 43249,
+      "objective": "SLF6",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-02.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. The market moves from A to B. Which event is inconsistent with the change shown?"
+    },
+    {
+      "id": 43252,
+      "objective": "SLF6",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-02.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Congress reduces government purchases while output and consumption remain fixed. Which explanation connects that policy to the movement from A to B?"
+    },
+    {
+      "id": 43255,
+      "objective": "SLF6",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-02.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. From A to B, firms undertake more investment because the real interest rate falls. How should the firm's response be classified?"
+    },
+    {
+      "id": 43257,
+      "objective": "SLF6",
+      "difficulty": "elite",
+      "pool": "elite",
+      "type": "graph_integration",
+      "asset": "LOANABLE-03.webp",
+      "before": "A",
+      "after": "D",
+      "cognition": "Multistep integration or simultaneous mechanisms",
+      "stem": "Refer to the graph above. Private saving rises by $15 billion while a larger deficit reduces public saving by $30 billion. Which interpretation is consistent with A moving to B?"
+    },
+    {
+      "id": 43259,
+      "objective": "SLF6",
+      "difficulty": "legendary",
+      "pool": "legendary",
+      "type": "graph_integration",
+      "asset": "LOANABLE-03.webp",
+      "before": "A",
+      "after": "E",
+      "cognition": "Synthesis, qualification, or limits of inference",
+      "stem": "Refer to the graph above. A deficit reduces public saving while a technological improvement raises expected investment returns. Why can this graph not represent the complete scenario?"
+    },
+    {
+      "id": 43261,
+      "objective": "SLF6",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-03.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Can the 20-unit decline in equilibrium quantity be interpreted as the horizontal size of the saving-supply shift?"
+    },
+    {
+      "id": 43269,
+      "objective": "SLF7",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-04.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Both the real interest rate and equilibrium quantity rise from A to B while saving behavior is unchanged. Which diagnosis fits the evidence?"
+    },
+    {
+      "id": 43271,
+      "objective": "SLF7",
+      "difficulty": "elite",
+      "pool": "elite",
+      "type": "graph_integration",
+      "asset": "LOANABLE-04.webp",
+      "before": "A",
+      "after": "D",
+      "cognition": "Multistep integration or simultaneous mechanisms",
+      "stem": "Refer to the graph above. Improved technology raises investment demand, while households also become more willing to save. What limitation matters when using this graph for that scenario?"
+    },
+    {
+      "id": 43273,
+      "objective": "SLF7",
+      "difficulty": "legendary",
+      "pool": "legendary",
+      "type": "graph_integration",
+      "asset": "LOANABLE-04.webp",
+      "before": "A",
+      "after": "E",
+      "cognition": "Synthesis, qualification, or limits of inference",
+      "stem": "Refer to the graph above. Technology raises investment demand, but a new deficit simultaneously reduces national saving. Which conclusion goes beyond what this graph establishes?"
+    },
+    {
+      "id": 43275,
+      "objective": "SLF7",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-05.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. The market moves from A to B while saving behavior remains unchanged. Which change best explains the joint decline in the real rate and quantity?"
+    },
+    {
+      "id": 43278,
+      "objective": "SLF7",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-05.webp",
+      "before": "C",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. The market moves from A to B with saving supply fixed. Which change could have caused this outcome?"
+    },
+    {
+      "id": 43287,
+      "objective": "SLF8",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-06.webp",
+      "before": "A",
+      "after": "D",
+      "cognition": "Multistep integration or simultaneous mechanisms",
+      "stem": "Refer to the graph above. A deficit rises by $30 billion while private saving increases by only $10 billion. Which chain matches the movement from A to B?"
+    },
+    {
+      "id": 43290,
+      "objective": "SLF8",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-06.webp",
+      "before": "B",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Why is the fall in equilibrium investment from A to B a movement along D0 rather than a leftward shift of investment demand?"
+    },
+    {
+      "id": 43293,
+      "objective": "SLF8",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-07.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Private saving rises by $30 billion while public saving falls by $10 billion. Which interpretation is consistent with A moving to B?"
+    },
+    {
+      "id": 43295,
+      "objective": "SLF8",
+      "difficulty": "elite",
+      "pool": "elite",
+      "type": "graph_integration",
+      "asset": "LOANABLE-07.webp",
+      "before": "A",
+      "after": "D",
+      "cognition": "Multistep integration or simultaneous mechanisms",
+      "stem": "Refer to the graph above. A budget improvement raises public saving by $25 billion while private saving falls by $10 billion. What connects the accounting to the new equilibrium?"
+    },
+    {
+      "id": 43297,
+      "objective": "SLF8",
+      "difficulty": "legendary",
+      "pool": "legendary",
+      "type": "graph_integration",
+      "asset": "LOANABLE-07.webp",
+      "before": "A",
+      "after": "E",
+      "cognition": "Synthesis, qualification, or limits of inference",
+      "stem": "Refer to the graph above. In this closed economy, a student says the rise in investment from A to B occurs ‘because S = I forces firms to invest every extra unit households save at the old rate.’ Which correction is best?"
+    },
+    {
+      "id": 43299,
+      "objective": "SLF8",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-07.webp",
+      "before": "C",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. What market evidence indicates less crowding out than at A?"
+    },
+    {
+      "id": 43305,
+      "objective": "SLF9",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-08.webp",
+      "before": "A",
+      "after": "D",
+      "cognition": "Multistep integration or simultaneous mechanisms",
+      "stem": "Refer to the graph above. Saving supply and investment demand both increase. What does theory establish before the graph's marked intersections resolve the remaining issue?"
+    },
+    {
+      "id": 43307,
+      "objective": "SLF9",
+      "difficulty": "elite",
+      "pool": "elite",
+      "type": "graph_integration",
+      "asset": "LOANABLE-08.webp",
+      "before": "A",
+      "after": "E",
+      "cognition": "Synthesis, qualification, or limits of inference",
+      "stem": "Refer to the graph above. In general, simultaneous rightward shifts make the real-rate effect ambiguous. What does this particular outcome imply about the depicted shift magnitudes?"
+    },
+    {
+      "id": 43309,
+      "objective": "SLF9",
+      "difficulty": "legendary",
+      "pool": "legendary",
+      "type": "graph_integration",
+      "asset": "LOANABLE-08.webp",
+      "before": "A",
+      "after": "E",
+      "cognition": "Synthesis, qualification, or limits of inference",
+      "stem": "Refer to the graph above. Private saving rises by $25 billion, public saving falls by $10 billion, and technology raises desired investment. Which interpretation uses both the accounting and the graph?"
+    },
+    {
+      "id": 43311,
+      "objective": "SLF9",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-08.webp",
+      "before": "C",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Which pair of events could produce the two rightward shifts?"
+    },
+    {
+      "id": 43314,
+      "objective": "SLF9",
+      "difficulty": "hard",
+      "pool": "hard",
+      "type": "graph_integration",
+      "asset": "LOANABLE-08.webp",
+      "before": "A",
+      "after": "C",
+      "cognition": "Causal or reverse inference",
+      "stem": "Refer to the graph above. Why can the real interest rate remain at 6 percent even though equilibrium quantity doubles?"
+    }
+  ]
+}
