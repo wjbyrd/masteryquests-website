@@ -35,12 +35,22 @@ const expectedGuides = {
   'managerial-cost-directive':['principal','The Principal']
 };
 
-test('only three faculty-facing themes remain', () => {
+test('default plus three official faculty themes remain', () => {
   assert.deepStrictEqual(
     Object.values(themes.presets).filter(preset => preset.facultyVisible !== false).map(preset => preset.id),
-    Object.keys(expectedGuides)
+    ['default', ...Object.keys(expectedGuides)]
   );
+  assert.strictEqual(themes.defaultPresetId, 'default');
   assert(!themes.presets['national-ledger']);
+  assert(!themes.assets.some(asset => /national-ledger|^ledger-/i.test(`${asset.id} ${asset.sourceUrl} ${asset.origin} ${asset.themeFamilies}`)));
+  const defaultSelection = resolved('default');
+  assert(Object.values(defaultSelection.slots).every(slot => slot.source === 'fallback'));
+  assert.deepStrictEqual(core.createGuideConfig({guideName:''}, defaultSelection, themes), {
+    identity:'guide', displayName:'Guide', imageSlot:'guideImage',
+    introLines:["Greetings. I am Guide. I'll be with you as you make your way through this Quest.",'If you are ready, follow me.'],
+    custom:false
+  });
+  assert.strictEqual(core.createGuideConfig({guideName:'Dr. Chen'}, defaultSelection, themes).displayName, 'Dr. Chen');
 });
 
 for(const [presetId, [identity, displayName]] of Object.entries(expectedGuides)){
@@ -65,7 +75,7 @@ for(const [presetId, [identity, displayName]] of Object.entries(expectedGuides))
 test('custom guide name is used with custom guide art', () => {
   const id = 'faculty-0000000000000000';
   const custom = {[id]:{id,label:'Faculty guide',compatibleSlots:['guideImage'],dataUrl:'data:image/webp;base64,AA==',fileType:'image/webp',width:800,height:1000,sizeBytes:1,sha256:'0'.repeat(64)}};
-  const guide = core.createGuideConfig({guideName:'  Professor Rivera  '}, resolved('arcane-archive', custom, {guideImage:id}), themes);
+  const guide = core.createGuideConfig({guideName:'  Professor Rivera  '}, resolved('default', custom, {guideImage:id}), themes);
   assert.strictEqual(guide.identity, 'custom');
   assert.strictEqual(guide.displayName, 'Professor Rivera');
   assert.strictEqual(guide.custom, true);

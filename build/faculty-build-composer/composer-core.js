@@ -407,7 +407,8 @@ function createGuideConfig(recipe, resolvedTheme, themeLibrary){
   const identity = custom
     ? 'custom'
     : String(asset?.guideIdentity || preset?.guide?.identity || 'guide');
-  const displayName = custom
+  const facultyNamedGuide = custom || identity === 'guide';
+  const displayName = facultyNamedGuide
     ? String(recipe?.guideName || '').trim().slice(0, 80) || 'Guide'
     : String(asset?.displayName || preset?.guide?.displayName || 'Guide').trim() || 'Guide';
   const introLines = BUILT_IN_GUIDE_INTROS[identity]

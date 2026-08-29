@@ -73,7 +73,7 @@
   }
 
   const economic = '../../play/economic-realm/market-gate/';
-  add('economic-guide','The Chancellor',economic+'chancellor.webp',['guideImage'],1086,1448,146328,'df576dd008c7353db4a5f6d4cc16b46d766e0ff6b99df6a255393ad8b7ee4cbb',{alt:'The Chancellor, an Economic Realm guide',displayName:'The Chancellor',guideIdentity:'chancellor',origin:'Economic Realm',themeFamilies:['market-citadel','national-ledger']});
+  add('economic-guide','The Chancellor',economic+'chancellor.webp',['guideImage'],1086,1448,146328,'df576dd008c7353db4a5f6d4cc16b46d766e0ff6b99df6a255393ad8b7ee4cbb',{alt:'The Chancellor, an Economic Realm guide',displayName:'The Chancellor',guideIdentity:'chancellor',origin:'Economic Realm',themeFamilies:['market-citadel']});
   const economicModes = [
     ['standard','Standard Campaign','mode_standard.webp',900,520,156380,'ebba9fff124f76525e83023ef7ad3645cba04afd693ce59df47003428c8dc2cb'],
     ['timed','Timed Trial','mode_timed.webp',900,520,139248,'7f5722460235219d88ce8221f504cbf9f5c505d6703fcc13e2e1022e8097a2f9'],
@@ -83,7 +83,7 @@
     ['score','Score Attack','scoreattack.webp',1672,941,496596,'a434c5a0a6d8bd1580edefb1c49f4d3936b685e30f71ab7397e1e7f657113fb2']
   ];
   for(const [mode,label,file,width,height,size,hash] of economicModes){
-    add('economic-mode-'+mode,'Economic Realm '+label,economic+file,[modeSlot[mode]],width,height,size,hash,{origin:'Economic Realm',themeFamilies:['market-citadel','national-ledger']});
+    add('economic-mode-'+mode,'Economic Realm '+label,economic+file,[modeSlot[mode]],width,height,size,hash,{origin:'Economic Realm',themeFamilies:['market-citadel']});
   }
 
   const market = '../../play/economic-realm/market-gate/';
@@ -96,17 +96,6 @@
   add('market-artifact-1','Frontier Compass',market+'compass.webp',['artifact1','artifact2','artifact3'],1254,1254,321620,'404411cefb016dd681b5e498bb739656765c25b88afbdd68f474ea038538ab77',{alt:'Frontier Compass',displayName:'Frontier Compass',origin:'The Market Gate',themeFamilies:['market-citadel']});
   add('market-artifact-2','Signal Lens',market+'lens.webp',['artifact1','artifact2','artifact3'],1254,1254,291034,'6114191d937f646c6a2c7a64bbb1e26ea8e409fea90330a329b4469366e1a772',{alt:'Signal Lens',displayName:'Signal Lens',origin:'The Market Gate',themeFamilies:['market-citadel']});
   add('market-artifact-3',"Magistrate's Scales",market+'scales.webp',['artifact1','artifact2','artifact3'],1254,1254,301392,'475917c179da12b09a3ac743e786d2f5e7a2d0a186028bf5a3368d91a28ecbb2',{alt:"Magistrate's Scales",displayName:"Magistrate's Scales",origin:'The Market Gate',themeFamilies:['market-citadel']});
-
-  const ledger = '../../play/economic-realm/national-ledger/';
-  add('ledger-start','National Ledger entrance',ledger+'start screen image.webp',['startBackground'],1672,941,711016,'503fb04159eaedf8fbf544340e6770d6ae8898d4252c9772077ad05d186b8115',{origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-gameplay','National Ledger chamber',ledger+'question_background_image.webp',['gameplayBackground'],1535,1024,692144,'2728f602751770f946f0561ae410e7ee29b891d7272c8c2e530878139e738052',{origin:'The National Ledger',themeFamilies:['national-ledger']});
-  for(const [number,size,hash] of [[1,638012,'c986d6ea0dff70751b3b2ecb2281777387a530840541bb3f00b464bab660915b'],[2,675880,'05c8e0c37a4d699e4ca378b4e534c761137abe6801f2f001f9bd891e1badd2d3'],[3,579914,'99736440fce325b51da81d8a3517976c70180f6682d44ec656194cdf4c773240']]) add('ledger-hall-'+number,'Ledger hallway '+number,ledger+'hallway'+number+'.webp',['hallway1','hallway2','hallway3'],1672,941,size,hash,{origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-boss-1','The Registrar',ledger+'registrar.webp',['boss1','boss2','boss3'],1086,1448,245446,'d811086a0355a746307332d2adc2b20f4cf70dd6af6be47e6d50fd59f645f67f',{alt:'The Registrar',displayName:'The Registrar',origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-boss-2','The Warden of Measures',ledger+'warden.webp',['boss1','boss2','boss3'],1024,1536,572150,'cf326779b57849726e6593949578110d31e57d4ba3c23c40a2830c5bd5d554fc',{alt:'The Warden of Measures',displayName:'The Warden of Measures',origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-boss-3','The Comptroller',ledger+'comptroller.webp',['boss1','boss2','boss3'],1024,1536,819092,'e3bf953522b5b2ce95819ddc5290a59b38482e1856ff552cf12a73e3e3cd514b',{alt:'The Comptroller',displayName:'The Comptroller',origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-artifact-1',"Registrar's Seal",ledger+'seal.webp',['artifact1','artifact2','artifact3'],1254,1254,557078,'6aa0fb72d40ad0c56348d9c5c0adc6a35cebe2973704f699969a08c2a279d5ff',{alt:"Registrar's Seal",displayName:"Registrar's Seal",origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-artifact-2',"Warden's Prism",ledger+'prism.webp',['artifact1','artifact2','artifact3'],1254,1254,430660,'65acbdb7602cbd96688b55c1b465e1caefd8eb82146a69c5025b5086f56d5774',{alt:"Warden's Prism",displayName:"Warden's Prism",origin:'The National Ledger',themeFamilies:['national-ledger']});
-  add('ledger-artifact-3',"Comptroller's Crown",ledger+'crown.webp',['artifact1','artifact2','artifact3'],1254,1254,471094,'017a88f3a74a4cc52e7167bbd140230539f644658e473cac2e39b99c7bbfe81a',{alt:"Comptroller's Crown",displayName:"Comptroller's Crown",origin:'The National Ledger',themeFamilies:['national-ledger']});
 
   const directive = '../../play/managerial-intelligence-directorate/cost-directive/';
   add('directive-start','Cost Directive briefing room',directive+'start screen image.webp',['startBackground'],1672,941,320760,'a9aa8923dc383d8bab5f24470049e28b1a847d62970c279b7475a16593065483',{origin:'Managerial Intelligence Directorate / Cost Directive',themeFamilies:['cost-directive']});
@@ -144,11 +133,11 @@
     modeStandard:'directive-mode-standard',modeTimed:'directive-mode-timed',modeExam:'directive-mode-exam',modeQuiz:'directive-mode-quiz',modeUnlimited:'directive-mode-unlimited',modeLegendary:'directive-mode-legendary',modeScore:'directive-mode-score',modeFadingFortune:'directive-mode-fadingFortune',modeRiskReward:'directive-mode-riskReward'
   };
   const presets = {
-    default:{id:'default',label:'Default Mastery Quest',description:'Internal image-free fallback used for older recipes.',previewAssetId:null,values:{},facultyVisible:false},
+    default:{id:'default',label:'Default Mastery Quest',description:'Standard Mastery Quests presentation with a generic guide.',previewAssetId:null,values:{}},
     'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers led by the Archivist.',previewAssetId:'arcane-start',guide:{identity:'archivist',displayName:'The Archivist'},values:arcaneValues},
     'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls led by the Chancellor.',previewAssetId:'market-start',guide:{identity:'chancellor',displayName:'The Chancellor'},values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
     'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Managerial Intelligence Directorate briefing led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
   };
 
-  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'guide-intro-2026-08-29',defaultPresetId:'arcane-archive',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
+  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'guide-intro-2026-08-29',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
 });

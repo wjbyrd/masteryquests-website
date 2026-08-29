@@ -163,7 +163,7 @@ const state = {
     checkpointTwo: null,
     finalCheckpoint: null
   },
-  appearance: {presetId:ThemeLibrary?.defaultPresetId || 'arcane-archive', overrides:{}, customOverrides:{}},
+  appearance: {presetId:ThemeLibrary?.defaultPresetId || 'default', overrides:{}, customOverrides:{}},
   customAssets: {},
   customStatus: {},
   importWarnings: [],
@@ -1770,7 +1770,7 @@ async function init(){
     state.checkpointFocus = emptyCheckpointFocus();
     state.guideName = '';
     $('guideName').value = '';
-    state.appearance = {presetId:ThemeLibrary?.defaultPresetId || 'arcane-archive', overrides:{}, customOverrides:{}};
+    state.appearance = {presetId:ThemeLibrary?.defaultPresetId || 'default', overrides:{}, customOverrides:{}};
     state.customAssets = {};
     state.customStatus = {};
     state.importWarnings = [];
