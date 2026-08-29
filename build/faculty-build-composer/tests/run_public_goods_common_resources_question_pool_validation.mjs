@@ -156,9 +156,9 @@ async function run() {
   pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.4.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
   pass(library.composerVersion === "4.5s.3k", `Library version ${library.composerVersion}`);
-  pass(library.canonicalQuestionCount === 9379 && manifest.canonicalQuestionCount === 9379, "Canonical count mismatch");
-  pass(library.conceptCount === 134 && library.registry.concepts.length === 134, "Concept count mismatch");
-  pass(library.assetInventory.length === 486 && manifest.assetCount === 486, "Asset inventory count mismatch");
+  pass(library.canonicalQuestionCount === 9539 && manifest.canonicalQuestionCount === 9539, "Canonical count mismatch");
+  pass(library.conceptCount === 135 && library.registry.concepts.length === 135, "Concept count mismatch");
+  pass(library.assetInventory.length === 494 && manifest.assetCount === 494, "Asset inventory count mismatch");
   pass(productionQuestions.length === 160 && published.length === 160, `Question total ${productionQuestions.length}/${published.length}`);
   pass(authoredGraph.length === 43 && authoredNonGraph.length === 117, "Graph/non-graph total mismatch");
   pass(productionQuestions[0].id === ID_FIRST && productionQuestions.at(-1).id === ID_LAST, "ID range mismatch");
@@ -283,7 +283,7 @@ async function run() {
   }
   pass(!fs.existsSync(path.join(composerRoot, "data", "question-assets", "_incoming-public-goods")), "Incoming asset staging directory remains");
   const physicalWebPs = fs.readdirSync(path.join(composerRoot, "data", "question-assets"), { recursive: true }).filter(file => String(file).toLowerCase().endsWith(".webp"));
-  pass(physicalWebPs.length === 486, `Physical WebP count ${physicalWebPs.length}`);
+  pass(physicalWebPs.length === 496, `Physical WebP count ${physicalWebPs.length}`);
 
   const childModule = library.concepts[CONCEPT_ID];
   const childRegistry = library.registry.concepts.filter(record => record.canonicalConceptId === CONCEPT_ID);

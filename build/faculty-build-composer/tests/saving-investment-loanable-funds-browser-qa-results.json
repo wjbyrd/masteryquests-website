@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "date": "2026-08-28",
+  "browser": "Codex In-app Browser",
+  "standaloneArtifact": "saving-investment-loanable-funds-production-sample.html",
+  "modesExercised": [
+    "Standard Campaign",
+    "Trial by Graph",
+    "Unlimited Practice",
+    "Quiz",
+    "Exam Drill",
+    "Legendary Mode",
+    "Score Attack"
+  ],
+  "trialByGraph": {
+    "availableGraphSafeQuestions": 59,
+    "requestedQuestions": 15,
+    "completedQuestions": 15,
+    "correct": 14,
+    "intentionalIncorrect": 1,
+    "accuracyPercent": 93,
+    "assetsObserved": [
+      "LOANABLE-01.webp",
+      "LOANABLE-02.webp",
+      "LOANABLE-03.webp",
+      "LOANABLE-04.webp",
+      "LOANABLE-05.webp",
+      "LOANABLE-06.webp",
+      "LOANABLE-07.webp",
+      "LOANABLE-08.webp"
+    ],
+    "filenameLeakage": false,
+    "falsePrecisionObserved": false,
+    "curveLabelConflictObserved": false,
+    "decorativeGraphQuestionObserved": false
+  },
+  "adaptiveRouting": {
+    "repairObserved": true,
+    "repairQuestionId": 43183,
+    "bridgeObserved": true,
+    "bridgeQuestionId": 43266,
+    "recoveryRetestObserved": true,
+    "recoveryRetestQuestionId": 43320,
+    "originRoom": 1,
+    "returnedRoom": 1
+  },
+  "checkpoint": {
+    "checkpoint": "Checkpoint One",
+    "room": 10,
+    "q1QuestionId": 43190,
+    "q1IntentionalMiss": true,
+    "q2QuestionId": 43186,
+    "q3QuestionId": 43172,
+    "remediationDuringCheckpoint": false,
+    "q1MissRoutedDirectlyToQ2": true,
+    "completed": true,
+    "continueDestination": "Room 11"
+  },
+  "masteryReport": {
+    "opened": true,
+    "humanReadableObjectiveLabels": true,
+    "rawObjectiveCodesExposed": false,
+    "rawConceptIdExposed": false,
+    "labelsObserved": [
+      "Loanable Funds Equilibrium",
+      "Investment Demand",
+      "Changes In Saving",
+      "Simultaneous Loanable Funds Shifts",
+      "Deficits And Crowding Out"
+    ]
+  },
+  "consoleWarningsOrErrors": []
+}

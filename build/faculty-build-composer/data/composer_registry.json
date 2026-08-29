@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-08-27T18:00:00.000Z",
+  "generatedAt": "2026-08-28T18:00:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "aggregate-demand",
@@ -12928,12 +12928,99 @@
       "coverageStatusNote": "Standalone 108-record Phase 1 Macro bank with official CBO and Treasury data interpretation, exact deficit/debt and public-saving conventions, adaptive Repair and Bridge support, and no manufactured graph dependency.",
       "coverageFloorVersion": "FederalBudgetsDebt-2026.08.27-production-v1",
       "selectionRole": "standalone"
+    },
+    {
+      "canonicalConceptId": "saving-investment-and-loanable-funds",
+      "title": "Saving, Investment & Loanable Funds",
+      "description": "Connect saving to macroeconomic investment; calculate private, public, and national saving; analyze closed-economy saving-investment accounting and loanable-funds equilibrium; and trace shifts, crowding out, and capital formation.",
+      "includedSkills": [
+        "analyze_investment_demand_shift",
+        "analyze_loanable_funds_equilibrium",
+        "analyze_saving_supply_shift",
+        "analyze_simultaneous_loanable_funds_shifts",
+        "apply_closed_economy_saving_identity",
+        "calculate_national_saving",
+        "connect_investment_to_capital_formation",
+        "distinguish_movement_from_shift_loanable_funds",
+        "distinguish_saving_and_investment",
+        "trace_deficit_crowding_out"
+      ],
+      "excludedNeighboringSkills": [
+        "Federal Budgets & Debt retains federal deficit, debt, debt-to-GDP, debt-service, and introductory public-saving records.",
+        "Fiscal Multipliers and Crowding Out retains multiplier mechanics and the short-run aggregate-demand offset.",
+        "Economic Growth Policy retains broad productivity and long-run-growth determinants; this bank only bridges investment to physical capital and productive capacity.",
+        "Open-economy saving-investment relationships and international capital flows remain reserved for later Macro phases."
+      ],
+      "prerequisiteConceptIds": [
+        "federal-budgets-and-debt",
+        "gdp-components",
+        "gdp-measurement"
+      ],
+      "relatedConceptIds": [
+        "fiscal-multipliers-and-crowding-out",
+        "economic-growth-policy",
+        "federal-budgets-and-debt",
+        "real-versus-nominal-interest-rates"
+      ],
+      "sourceChapters": [],
+      "sourceObjectives": [
+        "SLF1",
+        "SLF2",
+        "SLF3",
+        "SLF4",
+        "SLF5",
+        "SLF6",
+        "SLF7",
+        "SLF8",
+        "SLF9",
+        "SLF10"
+      ],
+      "sourceGames": [
+        "saving-investment-loanable-funds-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 18,
+        "bridge": 6,
+        "calculation": 25,
+        "elite": 12,
+        "integration": 53,
+        "legendary": 6,
+        "legendaryBoss": 6,
+        "main": 106,
+        "repair": 6,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 40,
+        "medium": 60,
+        "hard": 36,
+        "elite": 12,
+        "legendary": 12
+      },
+      "repairCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 148
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 6,
+        "mainWithUsableSkill": 148
+      },
+      "calculationCoverage": 25,
+      "graphCoverage": 60,
+      "status": "active",
+      "notes": "Standalone 160-record Phase 2 Macro bank with 60 genuinely graph-dependent questions across eight validated LOANABLE assets, explicit net-tax saving conventions, closed-economy safeguards, and adaptive Repair and Bridge support.",
+      "instructionalClassification": "Standalone-ready",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Standalone 160-record Phase 2 Macro bank with 60 genuinely graph-dependent questions across eight validated LOANABLE assets, explicit net-tax saving conventions, closed-economy safeguards, and adaptive Repair and Bridge support.",
+      "coverageFloorVersion": "saving-investment-loanable-funds-production-v1",
+      "selectionRole": "standalone"
     }
   ],
   "curationPhase": "phaseGraph4-money-market-ad-transmission-v1",
   "curationSummary": "Phase Graph 4: seven approved money-market and money-market-to-AD assets plus 42 graph-dependent questions. Coverage emphasizes money-market equilibrium, money-supply expansion/contraction, simultaneous money shifts, and monetary transmission to aggregate demand.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1",
-  "canonicalQuestionCount": 9379,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1",
+  "canonicalQuestionCount": 9539,
   "composerVersion": "4.5s.3k",
-  "librarySha256": "101f2f8fdc40822fdd4ade7128bc6fc41799f96ed137a8f88d3d83dd137927e6"
+  "librarySha256": "fd8ebae2e12fe19d1542b07076247197a0bdd5982aaee78488118b87006f6c10"
 }
