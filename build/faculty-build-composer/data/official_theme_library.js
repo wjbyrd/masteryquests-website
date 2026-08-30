@@ -42,6 +42,11 @@
     });
   }
 
+  const defaults = './data/default-theme-assets/';
+  add('default-boss-1','The Challenger',defaults+'default-boss-challenger.webp',['boss1'],1086,1448,135408,'e37b0a4d94893d7011494713fe27a22d44a73aa8b7edc6c8786a1bc8ebf3f144',{alt:'The Challenger, first checkpoint guardian',displayName:'The Challenger',origin:'Default Mastery Quest',themeFamilies:['default']});
+  add('default-boss-2','The Enforcer',defaults+'default-boss-enforcer.webp',['boss2'],1086,1448,210866,'4897c8ad0d27bee1e3e86e3a1f6a56cb5d4cfa8fbf83530c55c94fa8109c9101',{alt:'The Enforcer, second checkpoint guardian',displayName:'The Enforcer',origin:'Default Mastery Quest',themeFamilies:['default']});
+  add('default-boss-3','The Warden',defaults+'default-boss-warden.webp',['boss3'],1086,1448,202650,'238ed2966af203e21bc4160015aecd5d561589f718f26e2b11346d25c376b05e',{alt:'The Warden, final checkpoint guardian',displayName:'The Warden',origin:'Default Mastery Quest',themeFamilies:['default']});
+
   const arcane = '../../play/micro-domains/labyrinth-of-choice/';
   add('arcane-start','Arcane Archive entrance',arcane+'start-screen-image.webp',['startBackground'],1448,1086,617998,'0dff35e8c640e00b71ed12e8c57aac43fe9f4a6336abd5f516d501692a5a9431',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
   add('arcane-gameplay','Arcane Archive chamber',arcane+'question_background_image.webp',['gameplayBackground'],1448,1086,310186,'3dc914e0fdaa3fff092b1c3d5b69758aafa33cc78f070ca49ff645ded94a39bc',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
@@ -133,11 +138,11 @@
     modeStandard:'directive-mode-standard',modeTimed:'directive-mode-timed',modeExam:'directive-mode-exam',modeQuiz:'directive-mode-quiz',modeUnlimited:'directive-mode-unlimited',modeLegendary:'directive-mode-legendary',modeScore:'directive-mode-score',modeFadingFortune:'directive-mode-fadingFortune',modeRiskReward:'directive-mode-riskReward'
   };
   const presets = {
-    default:{id:'default',label:'Default Mastery Quest',description:'Standard Mastery Quests presentation with a generic guide.',previewAssetId:null,values:{}},
+    default:{id:'default',label:'Default Mastery Quest',description:'Standard Mastery Quests presentation with a generic guide and three checkpoint guardians.',previewAssetId:'default-boss-1',values:{boss1:'default-boss-1',boss2:'default-boss-2',boss3:'default-boss-3'}},
     'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers led by the Archivist.',previewAssetId:'arcane-start',guide:{identity:'archivist',displayName:'The Archivist'},values:arcaneValues},
     'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls led by the Chancellor.',previewAssetId:'market-start',guide:{identity:'chancellor',displayName:'The Chancellor'},values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
     'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Managerial Intelligence Directorate briefing led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
   };
 
-  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'guide-intro-2026-08-29',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
+  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'exam-boss-reveal-2026-08-29',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
 });

@@ -44,7 +44,8 @@ test('default plus three official faculty themes remain', () => {
   assert(!themes.presets['national-ledger']);
   assert(!themes.assets.some(asset => /national-ledger|^ledger-/i.test(`${asset.id} ${asset.sourceUrl} ${asset.origin} ${asset.themeFamilies}`)));
   const defaultSelection = resolved('default');
-  assert(Object.values(defaultSelection.slots).every(slot => slot.source === 'fallback'));
+  assert(['boss1','boss2','boss3'].every(slotId => defaultSelection.slots[slotId].source === 'preset'));
+  assert(Object.entries(defaultSelection.slots).filter(([slotId]) => !['boss1','boss2','boss3'].includes(slotId)).every(([,slot]) => slot.source === 'fallback'));
   assert.deepStrictEqual(core.createGuideConfig({guideName:''}, defaultSelection, themes), {
     identity:'guide', displayName:'Guide', imageSlot:'guideImage',
     introLines:["Greetings. I am Guide. I'll be with you as you make your way through this Quest.",'If you are ready, follow me.'],

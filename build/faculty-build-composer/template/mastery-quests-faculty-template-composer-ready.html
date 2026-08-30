@@ -728,6 +728,26 @@ button:active {
         inset 0 0 10px rgba(0,0,0,0.76);
 }
 
+button.maze-box.exam-nav-room{
+    appearance:none;
+    padding:0;
+    color:#eef6ff;
+    font:800 14px/1 'Rajdhani',Arial,sans-serif;
+    cursor:pointer;
+}
+button.maze-box.exam-nav-room:hover,
+button.maze-box.exam-nav-room:focus-visible{
+    border-color:#8bdcff;
+    box-shadow:0 0 0 3px rgba(56,189,248,.18),0 0 14px rgba(56,189,248,.42);
+    outline:none;
+}
+button.maze-box.exam-nav-room.exam-answered{background:linear-gradient(180deg,rgba(12,92,78,.88),rgba(2,35,31,.98));border-color:rgba(110,231,183,.66)}
+button.maze-box.exam-nav-room.exam-unanswered{background:linear-gradient(180deg,rgba(30,58,88,.78),rgba(2,10,24,.98))}
+button.maze-box.exam-nav-room.exam-boss-ready{background:linear-gradient(180deg,rgba(154,104,26,.92),rgba(55,31,4,.98));border-color:#f7d982;box-shadow:0 0 16px rgba(247,217,130,.42)}
+button.maze-box.exam-nav-room:disabled{cursor:not-allowed;opacity:.34;filter:saturate(.35)}
+.maze-box.exam-committed{opacity:.58;background:linear-gradient(180deg,rgba(19,57,86,.72),rgba(3,10,24,.96));border-color:rgba(247,217,130,.28)}
+#answers button.selected,#answers button[aria-pressed="true"]{border-color:#f7d982!important;background:linear-gradient(180deg,rgba(30,78,110,.96),rgba(8,33,56,.98))!important;box-shadow:0 0 0 3px rgba(247,217,130,.16),0 0 18px rgba(56,189,248,.34)!important}
+
 /* Boss room highlights (10, 20, 30) — visual only */
 .maze-box:nth-child(10) {
     text-shadow:
@@ -2997,6 +3017,13 @@ body.guide-intro-active{overflow:hidden}
 .guide-intro-dialogue.secondary{margin-bottom:30px;color:rgba(224,242,254,.78);font-size:clamp(16px,1.7vw,21px)}
 .guide-intro-proceed{min-width:190px;padding:14px 30px;border:1px solid rgba(247,217,130,.72);border-radius:999px;color:#07111e;background:linear-gradient(180deg,#f7d982,#cda94c);box-shadow:0 0 24px rgba(247,217,130,.25),0 12px 30px rgba(0,0,0,.42);font:900 14px/1 inherit;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
 .guide-intro-proceed:hover,.guide-intro-proceed:focus-visible{transform:translateY(-1px);box-shadow:0 0 32px rgba(247,217,130,.4),0 14px 34px rgba(0,0,0,.48);outline:2px solid rgba(139,220,255,.7);outline-offset:3px}
+.boss-reveal-screen{z-index:6450;background:linear-gradient(115deg,rgba(2,6,23,.985),rgba(16,10,28,.94)),var(--mq-boss-reveal-image,none)}
+.boss-reveal-screen::before{background:radial-gradient(circle at 28% 42%,var(--bossRevealGlow,rgba(247,217,130,.2)),transparent 38%),linear-gradient(90deg,rgba(0,0,0,.12),transparent 48%,rgba(0,0,0,.42))}
+.boss-reveal-screen .guide-intro-portrait-frame{border-color:var(--bossRevealBorder,rgba(247,217,130,.42));background:radial-gradient(circle at 50% 34%,var(--bossRevealGlow,rgba(247,217,130,.18)),rgba(2,8,20,.86) 68%)}
+.boss-reveal-screen .guide-intro-image{filter:drop-shadow(0 20px 28px rgba(0,0,0,.7)) drop-shadow(0 0 18px var(--bossRevealGlow,rgba(247,217,130,.22)))}
+.boss-reveal-screen .guide-intro-kicker{color:#f7d982}
+.boss-reveal-screen .guide-intro-dialogue{max-width:30ch}
+body.boss-reveal-active{overflow:hidden}
 @media(max-width:760px){.guide-intro-screen{place-items:start center;padding:18px 16px 26px}.guide-intro-stage{grid-template-columns:1fr;gap:20px;max-width:560px}.guide-intro-portrait-frame{min-height:38vh;max-height:46vh;border-radius:18px}.guide-intro-image{height:44vh;max-height:440px}.guide-intro-copy{text-align:center;padding:0}.guide-intro-name{margin-bottom:16px}.guide-intro-dialogue{line-height:1.42}.guide-intro-dialogue.secondary{margin-bottom:22px}.guide-intro-proceed{width:min(280px,100%)}}
 @media(max-height:650px) and (min-width:761px){.guide-intro-screen{padding:20px 34px}.guide-intro-portrait-frame,.guide-intro-image{min-height:0;height:76vh}.guide-intro-name{font-size:42px;margin-bottom:14px}.guide-intro-dialogue{font-size:18px;line-height:1.4}.guide-intro-dialogue.secondary{margin-bottom:18px}}
 
@@ -3120,10 +3147,10 @@ Respect structure strictly.
   <span class="mode-card-text">Ten minutes. Correct answers advance. Misses push you back.</span>
 </button>
 
-<button class="mode-card" data-mode="exam" onclick="startSelectedMode('exam')" aria-label="Exam Drill. No checkpoints, no milestones, and no campaign progress. Just adaptive practice.">
+<button class="mode-card" data-mode="exam" onclick="startSelectedMode('exam')" aria-label="Exam Drill. Navigate and revise nine questions per section, then deliberately enter each adaptive checkpoint.">
   <div class="mode-symbol" aria-hidden="true">✎</div>
  <span class="mode-card-title">Exam Drill</span>
-  <span class="mode-card-text">No checkpoints. No milestones. No campaign progress. Just adaptive practice.</span>
+  <span class="mode-card-text">Navigate and revise each nine-question section. Enter its adaptive checkpoint when you are ready to commit.</span>
 </button>
 
 <button class="mode-card" data-mode="quiz" onclick="startSelectedMode('quiz')" aria-label="Quiz. Fixed-length classroom quiz using the concepts selected by your instructor. Choose from one to fifteen questions before launching.">
@@ -3190,6 +3217,21 @@ Respect structure strictly.
       <p id="guideIntroPrimary" class="guide-intro-dialogue"></p>
       <p id="guideIntroSecondary" class="guide-intro-dialogue secondary"></p>
       <button id="guideIntroProceed" class="guide-intro-proceed" type="button" onclick="proceedGuideIntroduction()">Proceed</button>
+    </div>
+  </div>
+</section>
+
+<section id="bossRevealScreen" class="guide-intro-screen boss-reveal-screen" role="dialog" aria-modal="true" aria-labelledby="bossRevealName" hidden>
+  <div class="guide-intro-stage">
+    <div class="guide-intro-portrait-frame">
+      <img id="bossRevealImage" class="guide-intro-image" alt="" hidden>
+      <div id="bossRevealFallback" class="guide-intro-fallback" aria-hidden="true">◆</div>
+    </div>
+    <div class="guide-intro-copy">
+      <p id="bossRevealKicker" class="guide-intro-kicker">Checkpoint</p>
+      <h1 id="bossRevealName" class="guide-intro-name">Checkpoint</h1>
+      <p id="bossRevealDialogue" class="guide-intro-dialogue"></p>
+      <button id="bossRevealProceed" class="guide-intro-proceed" type="button" onclick="proceedBossReveal()">Enter the checkpoint</button>
     </div>
   </div>
 </section>
@@ -3663,6 +3705,15 @@ let questionStartTime = 0;
 let streak = 0; 
 let startTime; // Will be set in startGame()
 let finalElapsedTimeMs = null;
+const EXAM_DRILL_SECTIONS = Object.freeze([
+    Object.freeze({index:0,start:1,end:9,boss:10,difficulty:"easy",bossDifficulty:"easyBoss"}),
+    Object.freeze({index:1,start:11,end:19,boss:20,difficulty:"medium",bossDifficulty:"mediumBoss"}),
+    Object.freeze({index:2,start:21,end:29,boss:30,difficulty:"hard",bossDifficulty:"finalBoss"})
+]);
+let examDrillState = null;
+let bossRevealShownKeys = new Set();
+let activeBossEncounter = null;
+let activeBossReveal = null;
 function getElapsedTimeMs(){ return Number.isFinite(finalElapsedTimeMs) ? finalElapsedTimeMs : (startTime ? (Date.now() - startTime) : 0); }
 function freezeCompletionTime(fallbackMs = 0){
     if(!Number.isFinite(finalElapsedTimeMs)){
@@ -4288,7 +4339,7 @@ window.addEventListener("pageshow", reconcileTimedModeClock);
 window.addEventListener("focus", reconcileTimedModeClock);
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
-function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
+function isBossRoomForMode(r){ if(gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
     if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
     if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
@@ -7410,6 +7461,8 @@ if(!hasSavedRun){
     answerSubmissionPending = false;
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
+    resetExamDrillState();
+    resetBossRevealState();
 
     // SCORE ATTACK MODE ADDITION:
     // Every new run starts with a clean score, while best score stays in localStorage.
@@ -7519,6 +7572,8 @@ function resetRunStateForNewMode(){
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
     resumedSavedRunThisSession = false;
+    resetExamDrillState();
+    resetBossRevealState();
 
     // SCORE ATTACK MODE ADDITION:
     // Reset score whenever a non-standard mode starts fresh from the mode menu.
@@ -7771,7 +7826,12 @@ function getDifficultyForMode(){
             || getLimitedRunPlannedDifficulty("quiz", quizQuestionsCompleted, quizQuestionTarget);
     }
 
-    if(gameMode === "exam" || gameMode === "timed" || gameMode === "unlimited"){
+    if(gameMode === "exam"){
+        const examSection = getExamSectionForRoom(room);
+        return room === examSection?.boss ? examSection.bossDifficulty : (examSection?.difficulty || "easy");
+    }
+
+    if(gameMode === "timed" || gameMode === "unlimited"){
         return (room <= 10) ? "easy"
             : (room <= 20) ? "medium"
             : "hard";
@@ -9317,10 +9377,378 @@ function randomQuestion(poolName) {
 // This is VISUAL ONLY.
 // It does NOT control game progression.
 // =============================================
+
+function createExamDrillState(){
+    return {
+        sections:EXAM_DRILL_SECTIONS.map(section => ({...section,committed:false,allAnsweredAt:0,committedAt:0})),
+        rooms:{},
+        activeRoom:null
+    };
+}
+
+function resetExamDrillState(){
+    examDrillState = createExamDrillState();
+}
+
+function getExamSectionForRoom(roomNumber){
+    return EXAM_DRILL_SECTIONS.find(section => roomNumber >= section.start && roomNumber <= section.boss) || null;
+}
+
+function getExamSectionState(roomNumber = room){
+    if(!examDrillState) resetExamDrillState();
+    const section = getExamSectionForRoom(roomNumber);
+    return section ? examDrillState.sections[section.index] : null;
+}
+
+function isExamOrdinaryRoom(roomNumber){
+    const section = getExamSectionForRoom(roomNumber);
+    return !!section && roomNumber >= section.start && roomNumber <= section.end;
+}
+
+function getExamRoomState(roomNumber, create = false){
+    if(!examDrillState) resetExamDrillState();
+    if(!examDrillState.rooms[roomNumber] && create){
+        examDrillState.rooms[roomNumber] = {
+            question:null,
+            selectedIndex:null,
+            initialSelectedIndex:null,
+            initialCorrect:null,
+            finalCorrect:null,
+            revisionCount:0,
+            viewedCount:0,
+            firstViewedAt:0,
+            viewStartedAt:0,
+            totalViewMs:0
+        };
+    }
+    return examDrillState.rooms[roomNumber] || null;
+}
+
+function isExamSectionComplete(sectionState){
+    if(!sectionState) return false;
+    for(let roomNumber = sectionState.start; roomNumber <= sectionState.end; roomNumber++){
+        if(getExamRoomState(roomNumber)?.selectedIndex === null || getExamRoomState(roomNumber)?.selectedIndex === undefined) return false;
+    }
+    return true;
+}
+
+function finalizeExamRoomView(nextRoom = null){
+    if(gameMode !== "exam" || !examDrillState?.activeRoom) return;
+    const previousRoom = examDrillState.activeRoom;
+    const state = getExamRoomState(previousRoom);
+    if(state?.viewStartedAt){
+        state.totalViewMs += Math.max(0, Date.now() - state.viewStartedAt);
+        state.viewStartedAt = 0;
+    }
+    if(nextRoom !== null && nextRoom !== previousRoom){
+        sendGameData({
+            runID,event:"exam_navigation",room:previousRoom,questionId:state?.question?.id || 0,
+            examSection:getExamSectionForRoom(previousRoom)?.index + 1,
+            examNavigationFrom:previousRoom,examNavigationTo:nextRoom,
+            examReturnVisit:0,examSkippedRevisit:0,examReviewTimeMs:state?.totalViewMs || 0
+        });
+    }
+    examDrillState.activeRoom = null;
+}
+
+function navigateExamRoom(targetRoom){
+    if(gameMode !== "exam" || !isExamOrdinaryRoom(targetRoom)) return false;
+    const targetSection = getExamSectionState(targetRoom);
+    const currentSection = getExamSectionState(room);
+    if(!targetSection || targetSection !== currentSection || targetSection.committed) return false;
+
+    const existing = getExamRoomState(targetRoom);
+    const isReturn = !!existing?.viewedCount;
+    const skippedRevisit = isReturn && existing.selectedIndex === null;
+    finalizeExamRoomView(targetRoom);
+    room = targetRoom;
+    sendGameData({
+        runID,event:"exam_navigation_arrive",room:targetRoom,questionId:existing?.question?.id || 0,
+        examSection:targetSection.index + 1,examNavigationTo:targetRoom,
+        examReturnVisit:isReturn ? 1 : 0,examSkippedRevisit:skippedRevisit ? 1 : 0
+    });
+    loadQuestion();
+    return true;
+}
+
+function selectExamQuestion(section){
+    const profile = getSelectionProfile();
+    const question = getAdaptiveQuestion(section.difficulty, getWeakestTag(), {
+        mode:"support",
+        preferredTypes:profile?.preferredTypes || [],
+        purpose:"exam-navigation"
+    });
+    const shuffled = shuffleOptions(question);
+    if(shuffled) shuffled.__mqDifficulty = section.difficulty;
+    return shuffled;
+}
+
+function loadExamDrillQuestion(){
+    const section = getExamSectionForRoom(room);
+    const sectionState = getExamSectionState(room);
+    if(!section || !sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return false;
+
+    finalizeExamRoomView(room);
+    const roomState = getExamRoomState(room, true);
+    if(!roomState.question) roomState.question = selectExamQuestion(section);
+    currentQuestion = roomState.question;
+    if(!currentQuestion){
+        showGameModal({title:"Question Selection Stopped",text:"Exam Drill could not select a valid question.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
+        return true;
+    }
+
+    const now = Date.now();
+    roomState.viewedCount++;
+    if(!roomState.firstViewedAt) roomState.firstViewedAt = now;
+    roomState.viewStartedAt = now;
+    examDrillState.activeRoom = room;
+    adaptiveMode = "exam-navigation";
+    renderQuestionGraph(currentQuestion);
+    wizardSpeak(getWizardLine(currentQuestion.type || "interpretation"));
+    document.getElementById("bossMessage").innerText = "";
+    document.getElementById("question").innerHTML = `<div>${currentQuestion.q}</div>`;
+    document.getElementById("formulaHint").innerText = currentQuestion.hint ? "💡 Hint: " + currentQuestion.hint : "";
+    document.getElementById("message").innerText = isExamSectionComplete(sectionState)
+        ? "All section questions have responses. Review freely, then enter the checkpoint when ready."
+        : "Select any room in this section. Responses remain revisable until you enter the checkpoint.";
+    displayQuestion();
+    updateMazeTrack();
+    return true;
+}
+
+function recordExamDraftAnswer(choice, isCorrect, responseTime){
+    const sectionState = getExamSectionState(room);
+    const roomState = getExamRoomState(room, true);
+    if(!sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return;
+
+    const previousChoice = roomState.selectedIndex;
+    const changed = previousChoice !== null && previousChoice !== choice;
+    if(roomState.initialSelectedIndex === null){
+        roomState.initialSelectedIndex = choice;
+        roomState.initialCorrect = !!isCorrect;
+    } else if(changed){
+        roomState.revisionCount++;
+    }
+    roomState.selectedIndex = choice;
+    roomState.finalCorrect = !!isCorrect;
+    if(isExamSectionComplete(sectionState) && !sectionState.allAnsweredAt) sectionState.allAnsweredAt = Date.now();
+
+    sendGameData({
+        runID,event:changed ? "exam_answer_revision" : "exam_answer_initial",room,
+        questionId:currentQuestion?.id || 0,selectedIndex:choice,correct:isCorrect ? 1 : 0,
+        tag:currentQuestion?.tag || "",type:currentQuestion?.type || "",objective:inferObjective(currentQuestion),
+        responseTime,examSection:sectionState.index + 1,
+        examInitialSelectedIndex:roomState.initialSelectedIndex,examFinalSelectedIndex:choice,
+        examRevisionCount:roomState.revisionCount,
+        examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
+        examChangedIncorrect:changed && roomState.initialCorrect && !isCorrect ? 1 : 0
+    });
+
+    answerSubmissionPending = false;
+    setAnswerButtonsDisabled(false);
+    displayQuestion();
+    updateMazeTrack();
+    document.getElementById("message").innerText = isExamSectionComplete(sectionState)
+        ? "All section questions have responses. Review freely, then enter the checkpoint when ready."
+        : "Response saved. You may revise it or choose another room.";
+    document.getElementById("srAnnouncements").innerText = `Response saved for Room ${room}.`;
+}
+
+function scoreCommittedExamResponse(roomNumber, roomState, sectionState){
+    const question = roomState.question;
+    const isCorrect = !!roomState.finalCorrect;
+    const responseTime = Math.max(0, roomState.totalViewMs);
+    Object.keys(conceptMemory).forEach(tag => { conceptMemory[tag] *= 0.95; });
+    totalAttempts++;
+    recordAdaptiveAttempt(question, isCorrect, responseTime);
+    if(isCorrect){
+        streak++;
+        correctAnswers++;
+        maxStreak = Math.max(maxStreak, streak);
+        if(question.tag) conceptMemory[question.tag] = Math.max(0, ((conceptMemory[question.tag] || 0) * .68) - .2);
+    } else {
+        streak = 0;
+        if(question.tag) conceptMemory[question.tag] = (conceptMemory[question.tag] || 0) + 1;
+    }
+    const dailyTelemetry = recordDailyGameplayEvent({correct:isCorrect,streak,question});
+    const changed = roomState.revisionCount > 0;
+    sendGameData({
+        runID,event:"question",room:roomNumber,questionId:question.id || 0,
+        selectedIndex:roomState.selectedIndex,correct:isCorrect ? 1 : 0,
+        tag:question.tag || "",type:question.type || "",objective:inferObjective(question),
+        responseTime,attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:"exam-commit",
+        examSection:sectionState.index + 1,examInitialSelectedIndex:roomState.initialSelectedIndex,
+        examFinalSelectedIndex:roomState.selectedIndex,examRevisionCount:roomState.revisionCount,
+        examReviewTimeMs:responseTime,
+        examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
+        examChangedIncorrect:changed && roomState.initialCorrect && !isCorrect ? 1 : 0,
+        ...dailyTelemetry
+    });
+    if(dailyTelemetry.dailyCompletedNow){
+        sendGameData({runID,event:"daily_complete",room:roomNumber,questionId:question.id || 0,totalTime:getElapsedTimeMs(),...dailyTelemetry});
+    }
+}
+
+function commitExamSection(sectionState){
+    if(gameMode !== "exam" || !sectionState || sectionState.committed || !isExamSectionComplete(sectionState)) return false;
+    finalizeExamRoomView(sectionState.boss);
+    sectionState.committed = true;
+    sectionState.committedAt = Date.now();
+    for(let roomNumber = sectionState.start; roomNumber <= sectionState.end; roomNumber++){
+        scoreCommittedExamResponse(roomNumber, getExamRoomState(roomNumber), sectionState);
+    }
+    sendGameData({
+        runID,event:"exam_section_commit",room:sectionState.boss,examSection:sectionState.index + 1,
+        examReviewTimeMs:sectionState.allAnsweredAt ? Math.max(0, sectionState.committedAt - sectionState.allAnsweredAt) : 0
+    });
+    room = sectionState.boss;
+    bossHealth = 3;
+    bossPool = [];
+    activeBossEncounter = null;
+    loadQuestion();
+    return true;
+}
+
+function selectExamCheckpoint(roomNumber){
+    const sectionState = getExamSectionState(roomNumber);
+    return !!sectionState && roomNumber === sectionState.boss && commitExamSection(sectionState);
+}
+
+function resetBossRevealState(){
+    bossRevealShownKeys = new Set();
+    activeBossEncounter = null;
+    activeBossReveal = null;
+    const screen = document.getElementById("bossRevealScreen");
+    if(screen) screen.hidden = true;
+    document.body.classList.remove("boss-reveal-active");
+}
+
+function getBossEncounterKey(roomNumber = room){
+    return `${gameMode}:${roomNumber}`;
+}
+
+function humanizeBossObjective(value){
+    const text = String(value || "").trim();
+    if(!text || /^LO\d+(?:\.\d+)*(?:[_-].*)?$/i.test(text) || text === "unassigned_objective") return "";
+    return text.replace(/[_-]+/g," ").replace(/\b([a-z])([A-Z])/g,"$1 $2").replace(/\s+/g," ").trim();
+}
+
+function getBossObjectiveLabel(objective, bank){
+    const match = (bank || []).find(question => getBossObjectiveKey(question) === objective) || null;
+    const candidates = [match?.objectiveLabel,match?.learningObjectiveLabel,match?.conceptLabel,match?.tag,match?.conceptId,objective];
+    for(const candidate of candidates){
+        const label = humanizeBossObjective(candidate);
+        if(label) return label;
+    }
+    return "";
+}
+
+function getBossChallengeLine(label){
+    const key = String(label || "").toLowerCase();
+    if(!key) return "Let's see what you've learned.";
+    if(/equilibrium/.test(key)) return "Time to see if you actually understand market equilibrium.";
+    if(/price ceiling|ceiling/.test(key)) return "Price ceilings have given you trouble. Show me what you know when it counts.";
+    if(/price floor|floor/.test(key)) return "Let's see whether you can reason through price floors under pressure.";
+    if(/elastic/.test(key)) return "Let's find out whether you really understand elasticity.";
+    if(/production possibilit|ppf|trade.?off|frontier/.test(key)) return "Tradeoffs have given you trouble. Show me you understand the frontier.";
+    if(/supply/.test(key)) return "Your supply analysis is the target. Make every shift count.";
+    if(/demand/.test(key)) return "Demand is where your reasoning has slipped. Correct it here.";
+    if(/externalit|public good/.test(key)) return "Market failure is your weak point. Show me you can diagnose it.";
+    if(/cost|marginal|average total/.test(key)) return "Cost analysis has exposed a gap. Close it now.";
+    if(/monopol|oligopol|competition|market structure/.test(key)) return "Market structure is your test. Read the incentives carefully.";
+    if(/inflation|unemployment|fiscal|monetary|aggregate/.test(key)) return "Your macroeconomic reasoning is under review. Make the connections.";
+    return `Let's see what you know about ${label.toLowerCase()}.`;
+}
+
+function prepareBossEncounter(diff){
+    const key = getBossEncounterKey();
+    if(activeBossEncounter?.key === key && bossPool?.length) return activeBossEncounter;
+    const bank = [...(questionBanks[diff] || [])];
+    const objective = getWeakestBossObjective(bank);
+    bossPool = buildBossQuestionSet(bank, diff, objective);
+    if(bossPool.length < 3) bossPool = shuffle([...bank]).slice(0, 3);
+    if(usedQuestions[diff]) bossPool.forEach(question => {
+        if(question && !usedQuestions[diff].includes(question.id)) usedQuestions[diff].push(question.id);
+    });
+    const label = getBossObjectiveLabel(objective, bossPool.length ? bossPool : bank);
+    activeBossEncounter = {key,diff,objective,label,line:getBossChallengeLine(label)};
+    return activeBossEncounter;
+}
+
+function openBossReveal(encounter){
+    if(!encounter || bossRevealShownKeys.has(encounter.key)) return false;
+    const screen = document.getElementById("bossRevealScreen");
+    const visual = getFacultyCheckpointSlot(room);
+    const bossName = getFacultyBossName();
+    const color = room === 20 ? "#38bdf8" : "#f7d982";
+    document.getElementById("bossRevealKicker").innerText = room === 10 ? "Checkpoint One" : room === 20 ? "Checkpoint Two" : "Final Checkpoint";
+    document.getElementById("bossRevealName").innerText = bossName;
+    document.getElementById("bossRevealDialogue").innerText = encounter.line;
+    const image = document.getElementById("bossRevealImage");
+    const fallback = document.getElementById("bossRevealFallback");
+    if(visual.src){
+        image.src = visual.src;
+        image.alt = visual.alt || `${bossName}, checkpoint guardian`;
+        image.hidden = false;
+        fallback.hidden = true;
+    } else {
+        image.hidden = true;
+        image.removeAttribute("src");
+        fallback.hidden = false;
+    }
+    screen.style.setProperty("--bossRevealGlow", color === "#38bdf8" ? "rgba(56,189,248,.25)" : "rgba(247,217,130,.22)");
+    screen.hidden = false;
+    document.body.classList.add("boss-reveal-active");
+    bossRevealShownKeys.add(encounter.key);
+    activeBossReveal = encounter;
+    sendGameData({runID,event:"boss_reveal",room,objective:encounter.objective || "",bossTargetLabel:encounter.label || ""});
+    document.getElementById("srAnnouncements").innerText = `${bossName}. ${encounter.line}`;
+    document.getElementById("bossRevealProceed")?.focus();
+    return true;
+}
+
+function proceedBossReveal(){
+    if(!activeBossReveal) return;
+    activeBossReveal = null;
+    const screen = document.getElementById("bossRevealScreen");
+    if(screen) screen.hidden = true;
+    document.body.classList.remove("boss-reveal-active");
+    loadQuestion();
+}
      
 function updateMazeTrack() {
     const track = document.getElementById("mazeTrack");
     track.innerHTML = ""; // Clear the old grid
+
+    if(gameMode === "exam"){
+        const activeSection = getExamSectionForRoom(room);
+        for(let i = 1; i <= 30; i++){
+            const section = getExamSectionForRoom(i);
+            const sectionState = getExamSectionState(i);
+            const isBoss = i === section?.boss;
+            const isCurrent = i === room;
+            const isActiveSection = section?.index === activeSection?.index;
+            const answered = !isBoss && getExamRoomState(i)?.selectedIndex !== null && getExamRoomState(i)?.selectedIndex !== undefined;
+            const bossReady = isBoss && isActiveSection && !sectionState.committed && isExamSectionComplete(sectionState);
+            const interactive = isActiveSection && !sectionState.committed && (!isBoss || bossReady);
+            const box = document.createElement(interactive ? "button" : "div");
+            box.className = "maze-box";
+            box.innerText = isBoss ? (i === 10 ? "I" : i === 20 ? "II" : "III") : String(i);
+            if(interactive){
+                box.type = "button";
+                box.classList.add("exam-nav-room",isBoss ? "exam-boss-ready" : answered ? "exam-answered" : "exam-unanswered");
+                box.onclick = () => isBoss ? selectExamCheckpoint(i) : navigateExamRoom(i);
+            } else {
+                box.setAttribute("role","img");
+                if(sectionState?.committed) box.classList.add("exam-committed");
+            }
+            if(isCurrent){ box.classList.add("active"); box.setAttribute("aria-current","step"); }
+            const stateLabel = isCurrent ? "current" : sectionState?.committed ? "committed" : isBoss ? (bossReady ? "available" : "locked") : answered ? "answered" : isActiveSection ? "unanswered" : "locked";
+            box.setAttribute("aria-label",`${isBoss ? "Checkpoint" : "Question"} ${i}, ${stateLabel}`);
+            track.appendChild(box);
+        }
+        return;
+    }
     
     for (let i = 1; i <= 30; i++) {
         const box = document.createElement("div");
@@ -9617,12 +10045,17 @@ function loadQuestion() {
     // 1. Determine Difficulty and Boss Status
 	let diff = getDifficultyForMode();
 
-   const isBoss = diff.includes("Boss") && gameMode !== "exam" && gameMode !== "timed" && gameMode !== "unlimited";
+   const isBoss = isBossRoomForMode(room) && diff.includes("Boss");
 
    // Only reset health if the bossPool is currently empty (meaning a new encounter)
      if (isBoss && (!bossPool || bossPool.length === 0)) {
     bossHealth = 3;
    }
+
+    if(isBoss){
+        const encounter = prepareBossEncounter(diff);
+        if(!bossRevealShownKeys.has(encounter.key) && openBossReveal(encounter)) return;
+    }
     
     // --- MUSIC CONTROL ---
     if(diff === "finalBoss" || (diff === "legendaryBoss" && room === 30)){
@@ -9675,26 +10108,8 @@ function loadQuestion() {
 
     // 3. Select the Question (CHANGE BOSS NAMES AND PNG)
 if (isBoss) {
-    // 1. If it's a new fight, build a three-question boss pool by objective.
-    // Boss pools are scaffolded by LO, not random tag soup.
-    if (bossHealth === 3 || !bossPool || bossPool.length === 0) {
-        const bank = [...(questionBanks[diff] || [])];
-        const chosenObjective = getWeakestBossObjective(bank);
-
-        bossPool = buildBossQuestionSet(bank, diff, chosenObjective);
-
-        if(bossPool.length < 3){
-            bossPool = shuffle([...bank]).slice(0, 3);
-        }
-
-        if (usedQuestions[diff]) {
-            bossPool.forEach(question => {
-                if (question && !usedQuestions[diff].includes(question.id)) {
-                    usedQuestions[diff].push(question.id);
-                }
-            });
-        }
-    }
+    // The pool and diagnosed target were prepared once for the reveal.
+    prepareBossEncounter(diff);
 
     // 2. Select the specific question based on boss health
     currentQuestion = shuffleOptions(bossPool[3 - bossHealth]);
@@ -9717,7 +10132,7 @@ if (isBoss) {
     document.getElementById("srAnnouncements").innerText =
         `Checkpoint encounter. ${bTitle}.`;
 
-    bossMsg.innerText = "⚠ CHECKPOINT ⚠";
+    bossMsg.innerText = "CHECKPOINT";
     bossMsg.style.color = bColor;
     gameBox.style.setProperty("--bossColor", bColor);
 
@@ -9735,6 +10150,8 @@ if (isBoss) {
     return;
 
 } else {
+
+    if(gameMode === "exam" && loadExamDrillQuestion()) return;
 
     if(gameMode === "quiz"){
         let deckQuestion = quizDeck[quizDeckIndex];
@@ -9863,9 +10280,7 @@ if(gameMode === "legendary"){
 
     wizardSpeak(getWizardLine(currentQuestion.type));
 
-    bossMsg.innerText = (room === 9 || room === 19 || room === 29)
-        ? "⚠️ LEGENDARY BOSS DETECTED IN NEXT ROOM ⚠️"
-        : "";
+    bossMsg.innerText = "";
     bossMsg.style.color = "#f97316";
 
     questionElement.innerHTML = `<div>${currentQuestion.q}</div>`;
@@ -9940,9 +10355,7 @@ renderQuestionGraph(currentQuestion);
     wizardSpeak(wizardText);
 
     // --- UI ---
-    bossMsg.innerText = ((gameMode === "standard" || gameMode === "legendary") && (room === 9 || room === 19 || room === 29))
-        ? (gameMode === "legendary" ? "⚠️ LEGENDARY BOSS DETECTED IN NEXT ROOM ⚠️" : "⚠️ DANGER: BOSS DETECTED IN NEXT ROOM ⚠️")
-        : "";
+    bossMsg.innerText = "";
     bossMsg.style.color = "#ef4444";
 
     questionElement.innerHTML = `
@@ -10005,6 +10418,11 @@ function displayQuestion() {
         btn.innerText = option;
         btn.dataset.answerIndex = String(index);
         btn.setAttribute("aria-label", `Answer option: ${option}`);
+        if(gameMode === "exam" && isExamOrdinaryRoom(room)){
+            const selected = getExamRoomState(room)?.selectedIndex === index;
+            btn.classList.toggle("selected", selected);
+            btn.setAttribute("aria-pressed", selected ? "true" : "false");
+        }
         if(modeUsesFadingFortune() && fadingFortuneFadedChoices.has(index)){
             btn.disabled = true;
             btn.tabIndex = -1;
@@ -10135,6 +10553,11 @@ async function answer(choice) {
             text: "The answer could not be verified. The question is still active; close this message and try again.",
             confirmText: "Return to Question"
         });
+        return;
+    }
+
+    if(gameMode === "exam" && isExamOrdinaryRoom(room)){
+        recordExamDraftAnswer(choice, isCorrect, responseTime);
         return;
     }
 
@@ -10487,6 +10910,11 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
        return;
    }
 
+   if(isBossRoomForMode(room)){
+       loadQuestion();
+       return;
+   }
+
    showHallwayTransition(currentQuestion.feedback);
    return;
     }      
@@ -10730,7 +11158,7 @@ function showHallwayTransition(feedback, options = {}){
     const text = document.getElementById("hallwayText");
     const slotId = options.slotId || (room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3");
     const hallwaySlot = getFacultyVisualSlot(slotId);
-    const nextAction = options.nextAction === "victory" ? "victory" : "question";
+    const nextAction = options.nextAction === "victory" ? "victory" : options.nextAction === "practice-results" ? "practice-results" : "question";
     const presentationDuration = options.duration ?? TIMING.feedback;
     const transitionFeedback = String(feedback || "Checkpoint complete.");
     const destinationText = options.destinationText || "Continue to the next room.";
@@ -10755,6 +11183,7 @@ function showHallwayTransition(feedback, options = {}){
         overlay.classList.remove("active");
         scheduleForCurrentRun(() => {
             if(nextAction === "victory") handleVictory();
+            else if(nextAction === "practice-results") handlePracticeModeComplete();
             else loadQuestion();
         }, 0);
     }, presentationDuration);
@@ -10871,7 +11300,7 @@ function showKnowledgeRoom(bossRoom) {
             : "FINAL CHECKPOINT COMPLETE";
 
     const summary = bossRoom === 30
-        ? "The full 30-room run is complete. Review your mastery report."
+        ? "The full three-section run is complete. Review your mastery report."
         : "The checkpoint is complete. Continue when you are ready.";
 
     qContainer.innerHTML = `
@@ -10895,7 +11324,7 @@ function showKnowledgeRoom(bossRoom) {
                 bossRoom === 30 ? "The final checkpoint is secured." : `Checkpoint ${bossRoom === 10 ? "One" : "Two"} is secured.`,
                 {
                     slotId,
-                    nextAction:bossRoom === 30 ? "victory" : "question",
+                    nextAction:bossRoom === 30 ? (gameMode === "exam" ? "practice-results" : "victory") : "question",
                     duration:TIMING.checkpointTransition,
                     destinationText:bossRoom === 30 ? "Continue to your results." : `Continue to Room ${bossRoom + 1}.`
                 }
@@ -12495,7 +12924,10 @@ const TELEMETRY_COLUMNS = [
     "dailyProgressBefore","dailyProgressAfter","dailyWindowAttempt","dailyCompleted",
     "dailyCompletionTimestamp","dailyAlreadyComplete","dailyPostCompletionQuestions",
     "dailyMsSinceCompletion","dailyQuestionsToComplete","dailyElapsedToCompleteMs",
-    "dailyConcept","dailyCompletedNow","dailyWindowFailed"
+    "dailyConcept","dailyCompletedNow","dailyWindowFailed",
+    "examSection","examInitialSelectedIndex","examFinalSelectedIndex","examRevisionCount",
+    "examNavigationFrom","examNavigationTo","examReturnVisit","examSkippedRevisit",
+    "examReviewTimeMs","examChangedCorrect","examChangedIncorrect","bossTargetLabel"
 ];
 
 function createTelemetryEventID(){
@@ -12529,7 +12961,7 @@ function sendGameData(data = {}){
         const questionID = Number(data.questionId ?? data.question ?? 0);
         const normalizedMode = String(data.mode || gameMode || "standard").replace(/-complete$/, "");
         const eventName = data.event || "";
-        const isResponseEvent = eventName === "question" || eventName === "rapid_guessing";
+        const isResponseEvent = eventName === "question" || eventName === "rapid_guessing" || eventName === "exam_answer_initial" || eventName === "exam_answer_revision";
         const isCompletionEvent = /(?:^|_)complete$/.test(eventName) || eventName === "complete";
         const priorExposureCount = questionID > 0
             ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
@@ -12598,7 +13030,19 @@ function sendGameData(data = {}){
             dailyElapsedToCompleteMs: Number(data.dailyElapsedToCompleteMs ?? dailyData.dailyElapsedToCompleteMs ?? 0),
             dailyConcept: data.dailyConcept ?? dailyData.dailyConcept ?? "",
             dailyCompletedNow: Number(data.dailyCompletedNow ?? 0),
-            dailyWindowFailed: Number(data.dailyWindowFailed ?? 0)
+            dailyWindowFailed: Number(data.dailyWindowFailed ?? 0),
+            examSection: Number(data.examSection ?? 0),
+            examInitialSelectedIndex: Number(data.examInitialSelectedIndex ?? -1),
+            examFinalSelectedIndex: Number(data.examFinalSelectedIndex ?? -1),
+            examRevisionCount: Number(data.examRevisionCount ?? 0),
+            examNavigationFrom: Number(data.examNavigationFrom ?? 0),
+            examNavigationTo: Number(data.examNavigationTo ?? 0),
+            examReturnVisit: Number(data.examReturnVisit ?? 0),
+            examSkippedRevisit: Number(data.examSkippedRevisit ?? 0),
+            examReviewTimeMs: Number(data.examReviewTimeMs ?? 0),
+            examChangedCorrect: Number(data.examChangedCorrect ?? 0),
+            examChangedIncorrect: Number(data.examChangedIncorrect ?? 0),
+            bossTargetLabel: data.bossTargetLabel || ""
         };
 
         records.push(record);

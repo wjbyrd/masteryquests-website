@@ -86,7 +86,7 @@ function countSeq(seq){
     fixedCompletion: html.includes('quizQuestionsCompleted >= quizQuestionTarget'),
     noQuizRemediation: /function remediationTransitionAllowed\(question\)[\s\S]*?gameMode !== "quiz"/.test(html)&&html.includes('if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion))'),
     noQuizSetbackBranch: html.includes('FIXED-LENGTH MODES: NO SETBACKS OR REMEDIATION DETOURS'),
-    quizNoBosses: html.includes('gameMode === "exam" || gameMode === "timed" || gameMode === "quiz"'),
+    quizNoBosses: html.includes('gameMode === "timed" || gameMode === "quiz"'),
     quizReport: html.includes('if(gameMode === "quiz") return "Quiz";'),
     quizConfigOnly: config.supportedModes.length===1 && config.supportedModes[0]==='quiz'
   };
