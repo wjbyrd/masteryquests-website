@@ -7,6 +7,7 @@ const {spawnSync} = require('child_process');
 
 const ACTIVE_RUNNERS = [
   'run_exam_navigation_boss_reveal_validation.js',
+  'run_checkpoint_artifact_exam_integrity_validation.js',
   'run_guide_intro_validation.js',
   'run_phase1_targeted_repair_validation.js',
   'run_phase15_production_hardening_validation.js',

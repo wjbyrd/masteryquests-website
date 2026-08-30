@@ -11,7 +11,7 @@
     hallway1:{label:'Hallway 1', group:'Progression', required:true, aspectRatio:'16:9', fallback:'shell-hallway'},
     hallway2:{label:'Hallway 2', group:'Progression', required:true, aspectRatio:'16:9', fallback:'shell-hallway'},
     hallway3:{label:'Hallway 3', group:'Progression', required:true, aspectRatio:'16:9', fallback:'shell-hallway'},
-    guideImage:{label:'Guide', group:'Characters', required:true, aspectRatio:'portrait-or-square', fallback:'shell-guide-symbol'},
+    guideImage:{label:'Guide', group:'Characters', required:true, aspectRatio:'portrait-or-square', fallback:'shell-guide-symbol', expectedDefaultAsset:'./data/default-theme-assets/default-guide.webp'},
     boss1:{label:'Boss 1', group:'Characters', required:true, aspectRatio:'portrait-or-square', fallback:'shell-boss-symbol'},
     boss2:{label:'Boss 2', group:'Characters', required:true, aspectRatio:'portrait-or-square', fallback:'shell-boss-symbol'},
     boss3:{label:'Boss 3', group:'Characters', required:true, aspectRatio:'portrait-or-square', fallback:'shell-boss-symbol'},
@@ -38,14 +38,15 @@
       alt:metadata.alt || '', description:metadata.description || label,
       displayName:metadata.displayName || '', origin:metadata.origin || '',
       guideIdentity:metadata.guideIdentity || '',
+      presentationMode:metadata.presentationMode || (compatibleSlots.some(slotId => slotId === 'guideImage' || /^boss[123]$/.test(slotId)) ? 'transparent-character' : ''),
       themeFamilies:metadata.themeFamilies || []
     });
   }
 
   const defaults = './data/default-theme-assets/';
-  add('default-boss-1','The Challenger',defaults+'default-boss-challenger.webp',['boss1'],1086,1448,135408,'e37b0a4d94893d7011494713fe27a22d44a73aa8b7edc6c8786a1bc8ebf3f144',{alt:'The Challenger, first checkpoint guardian',displayName:'The Challenger',origin:'Default Mastery Quest',themeFamilies:['default']});
-  add('default-boss-2','The Enforcer',defaults+'default-boss-enforcer.webp',['boss2'],1086,1448,210866,'4897c8ad0d27bee1e3e86e3a1f6a56cb5d4cfa8fbf83530c55c94fa8109c9101',{alt:'The Enforcer, second checkpoint guardian',displayName:'The Enforcer',origin:'Default Mastery Quest',themeFamilies:['default']});
-  add('default-boss-3','The Warden',defaults+'default-boss-warden.webp',['boss3'],1086,1448,202650,'238ed2966af203e21bc4160015aecd5d561589f718f26e2b11346d25c376b05e',{alt:'The Warden, final checkpoint guardian',displayName:'The Warden',origin:'Default Mastery Quest',themeFamilies:['default']});
+  add('default-boss-1','The Challenger',defaults+'default-boss-challenger.webp',['boss1'],1086,1448,135408,'e37b0a4d94893d7011494713fe27a22d44a73aa8b7edc6c8786a1bc8ebf3f144',{alt:'The Challenger, first checkpoint guardian',displayName:'The Challenger',origin:'Default Mastery Quest',presentationMode:'rectangular-character',themeFamilies:['default']});
+  add('default-boss-2','The Enforcer',defaults+'default-boss-enforcer.webp',['boss2'],1086,1448,210866,'4897c8ad0d27bee1e3e86e3a1f6a56cb5d4cfa8fbf83530c55c94fa8109c9101',{alt:'The Enforcer, second checkpoint guardian',displayName:'The Enforcer',origin:'Default Mastery Quest',presentationMode:'rectangular-character',themeFamilies:['default']});
+  add('default-boss-3','The Warden',defaults+'default-boss-warden.webp',['boss3'],1086,1448,202650,'238ed2966af203e21bc4160015aecd5d561589f718f26e2b11346d25c376b05e',{alt:'The Warden, final checkpoint guardian',displayName:'The Warden',origin:'Default Mastery Quest',presentationMode:'rectangular-character',themeFamilies:['default']});
 
   const arcane = '../../play/micro-domains/labyrinth-of-choice/';
   add('arcane-start','Arcane Archive entrance',arcane+'start-screen-image.webp',['startBackground'],1448,1086,617998,'0dff35e8c640e00b71ed12e8c57aac43fe9f4a6336abd5f516d501692a5a9431',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});

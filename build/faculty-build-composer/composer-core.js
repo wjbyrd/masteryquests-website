@@ -279,9 +279,13 @@ function resolveThemeSelection(input, themeLibrary, customAssets = {}){
     const presetId = preset.values?.[slotId];
     const overrideAsset = assets.get(overrideId);
     const presetAsset = assets.get(presetId);
+    const defaultPreset = themeLibrary?.presets?.[themeLibrary?.defaultPresetId || 'default'] || {};
+    const defaultAsset = assets.get(defaultPreset.values?.[slotId]);
     const officialAsset = isThemeAssetCompatible(overrideAsset, slotId)
       ? overrideAsset
-      : isThemeAssetCompatible(presetAsset, slotId) ? presetAsset : null;
+      : isThemeAssetCompatible(presetAsset, slotId)
+        ? presetAsset
+        : isThemeAssetCompatible(defaultAsset, slotId) ? defaultAsset : null;
     const asset = isThemeAssetCompatible(customAsset, slotId) ? customAsset : officialAsset;
     const semantic = definition.group === 'Characters' || definition.group === 'Rewards';
     const resolvedAsset = asset ? deepClone(asset) : null;
@@ -292,7 +296,7 @@ function resolveThemeSelection(input, themeLibrary, customAssets = {}){
     }
     resolvedSlots[slotId] = {
       slotId,
-      source: asset ? (asset === customAsset ? 'custom' : asset === overrideAsset ? 'override' : 'preset') : 'fallback',
+      source: asset ? (asset === customAsset ? 'custom' : asset === overrideAsset ? 'override' : asset === presetAsset ? 'preset' : 'default') : 'fallback',
       fallback: definition.fallback || 'shell-default',
       asset: resolvedAsset
     };
@@ -356,6 +360,7 @@ function createRuntimeThemeConfig(resolvedTheme, embeddedAssets = {}, supportedM
       label:asset.label || '',
       displayName:asset.displayName || asset.label || '',
       alt:asset.alt || '',
+      presentationMode:resolved.source === 'custom' ? 'custom-image' : asset.presentationMode || 'rectangular-character',
       source:resolved.source,
       src:resolved.source === 'custom' ? '' : embedded
     } : {
@@ -363,6 +368,7 @@ function createRuntimeThemeConfig(resolvedTheme, embeddedAssets = {}, supportedM
       label:'',
       displayName:'',
       alt:'',
+      presentationMode:'fallback',
       source:'fallback',
       src:''
     };
