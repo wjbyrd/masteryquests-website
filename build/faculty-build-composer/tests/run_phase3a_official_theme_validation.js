@@ -73,7 +73,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   pass(core.RECIPE_SCHEMA_VERSION === '1.4.0', 'Unexpected recipe schema');
   pass(themes.schemaVersion === '1.1.0', 'Unexpected theme schema');
   pass(Object.keys(themes.slots).length === 22, 'Unexpected visual-slot count');
-  pass(themes.assets.length === 64, 'Unexpected official-asset count');
+  pass(themes.assets.length === 65, 'Unexpected official-asset count');
   pass(presetIds.has('default'), 'Default theme is missing');
   pass(themes.defaultPresetId === 'default', 'Default Mastery Quest is not the faculty default');
   pass(JSON.stringify(Object.values(themes.presets).filter(preset => preset.id !== 'default' && preset.facultyVisible !== false).map(preset => preset.id)) === JSON.stringify(['arcane-archive','market-citadel','managerial-cost-directive']), 'Faculty-facing official theme list is not the approved three-theme set');
@@ -104,7 +104,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
     const bytes = fs.readFileSync(sourceFile(asset));
     return new Response(bytes, {status:200, headers:{'content-type':asset.fileType}});
   });
-  pass(Object.keys(productionPathEmbedded).length === 64, 'Production embed path did not verify all 64 official assets');
+  pass(Object.keys(productionPathEmbedded).length === 65, 'Production embed path did not verify all 65 official assets');
   pass(Object.values(productionPathEmbedded).every(value => value.startsWith('data:image/webp;base64,')), 'Production embed path returned a nonportable official asset');
 
   for(const [presetId, preset] of Object.entries(themes.presets)){
@@ -179,8 +179,8 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
     }
     if(fixtureRoot) fs.writeFileSync(path.join(fixtureRoot, `${presetId}.html`), build.html);
   }
-  pass(builds.default.selectedAssets.length === 3, 'Default theme did not embed exactly three checkpoint guardians');
-  pass(['boss1','boss2','boss3'].every(slotId => builds.default.config.visualTheme.slots[slotId].src.startsWith('data:image/webp;base64,')), 'Default checkpoint guardians were not embedded');
+  pass(builds.default.selectedAssets.length === 4, 'Default theme did not embed the Guide and three checkpoint guardians');
+  pass(['guideImage','boss1','boss2','boss3'].every(slotId => builds.default.config.visualTheme.slots[slotId].src.startsWith('data:image/webp;base64,')), 'Default character set was not embedded');
   pass(builds.default.config.guide.identity === 'guide' && builds.default.config.guide.displayName === 'Guide', 'Default theme forced an official guide identity');
   pass(builds['arcane-archive'].selectedAssets.length === 22, 'Arcane preset coverage changed');
   pass(builds['market-citadel'].config.visualTheme.slots.modeQuiz.source === 'fallback', 'Missing optional mode art did not fall back');

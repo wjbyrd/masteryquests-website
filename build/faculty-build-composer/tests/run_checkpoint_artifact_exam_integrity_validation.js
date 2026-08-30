@@ -127,14 +127,14 @@ function run(){
   check(standard.slots.boss1.asset.id === 'default-boss-1', 'Default Boss 1 does not resolve');
   check(standard.slots.boss2.asset.id === 'default-boss-2', 'Default Boss 2 does not resolve');
   check(standard.slots.boss3.asset.id === 'default-boss-3', 'Default Boss 3 does not resolve');
-  check(standard.slots.guideImage.source === 'fallback', 'Missing default Guide does not use safe fallback');
+  check(standard.slots.guideImage.source === 'preset' && standard.slots.guideImage.asset.id === 'default-guide', 'Default Guide does not resolve as a first-class preset asset');
   check(themes.slots.guideImage.expectedDefaultAsset.endsWith('default-guide.webp'), 'Default Guide replacement path is undocumented');
-  check(['default-boss-1','default-boss-2','default-boss-3'].every(id => themes.assets.find(asset => asset.id === id)?.presentationMode === 'rectangular-character'), 'Opaque default bosses are incorrectly marked transparent');
+  check(['default-guide','default-boss-1','default-boss-2','default-boss-3'].every(id => themes.assets.find(asset => asset.id === id)?.presentationMode === 'transparent-character'), 'Default character art is not registered for direct composition');
   const themed = core.resolveThemeSelection({presetId:'arcane-archive',overrides:{},customOverrides:{}}, themes, {});
   check(themed.slots.boss1.asset.id === 'arcane-boss-1', 'Theme boss does not override default boss');
   check(themed.slots.guideImage.asset.presentationMode === 'transparent-character' && themed.slots.boss1.asset.presentationMode === 'transparent-character', 'Verified transparent theme characters are not marked for direct composition');
   const runtime = core.createRuntimeThemeConfig(standard, {}, ['standard','exam','quiz']);
-  check(runtime.slots.boss1.presentationMode === 'rectangular-character', 'Character presentation metadata is not emitted at runtime');
+  check(runtime.slots.guideImage.presentationMode === 'transparent-character' && runtime.slots.boss1.presentationMode === 'transparent-character', 'Character presentation metadata is not emitted at runtime');
 
   console.log(`Checkpoint outcomes + artifact powers + Exam integrity validation passed (${checks} checks).`);
 }

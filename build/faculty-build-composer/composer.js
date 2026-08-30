@@ -611,7 +611,7 @@ function renderThemeSlots(){
         const customId = state.appearance.customOverrides?.[slotId] || '';
         const customAsset = customId ? state.customAssets[customId] : null;
         const options = themeAssetOptions(slotId);
-        const sourceLabel = current.source === 'custom' ? 'Custom image' : current.source === 'override' ? 'Official override' : current.source === 'preset' ? resolved.presetLabel : 'Default fallback';
+        const sourceLabel = current.source === 'custom' ? 'Custom image' : current.source === 'override' ? 'Official override' : current.source === 'preset' ? resolved.presetLabel : current.source === 'default' ? 'Default Mastery Quest' : 'Emergency fallback';
         const sourceClass = current.source === 'custom' ? 'custom' : current.source === 'override' ? 'override' : 'theme';
         const status = state.customStatus[slotId];
         const fitWarnings = customAsset ? CustomAssets.slotFitWarnings(customAsset.width, customAsset.height, definition) : [];
