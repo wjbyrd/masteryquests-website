@@ -22,6 +22,46 @@ function has(pattern, message){
   check(pattern.test(source), message);
 }
 
+function extractFunction(name){
+  const start = source.indexOf(`function ${name}(`);
+  check(start >= 0, `${name} is missing`);
+  const bodyStart = source.indexOf('{', start);
+  let depth = 0;
+  let quote = '';
+  let escaped = false;
+  for(let index = bodyStart; index < source.length; index++){
+    const char = source[index];
+    if(quote){
+      if(escaped) escaped = false;
+      else if(char === '\\') escaped = true;
+      else if(char === quote) quote = '';
+      continue;
+    }
+    if(char === '"' || char === "'" || char === '`'){
+      quote = char;
+      continue;
+    }
+    if(char === '{') depth++;
+    if(char === '}' && --depth === 0) return source.slice(start, index + 1);
+  }
+  throw new Error(`Could not extract ${name}`);
+}
+
+function evaluateBossIntro({byObjective = {}, recent = [], label = 'Demand', checkpointRoom = 10}){
+  const context = {masteryState:{byObjective,recent}, room:checkpointRoom};
+  const script = [
+    extractFunction('getObjectiveFamilyStats'),
+    extractFunction('getBossIntroPresentationState'),
+    extractFunction('getBossChallengeLine'),
+    `this.result = (() => {
+      const state = getBossIntroPresentationState('Demand');
+      return {state, line:getBossChallengeLine(${JSON.stringify(label)}, state, ${checkpointRoom})};
+    })();`
+  ].join('\n');
+  vm.runInNewContext(script, context);
+  return context.result;
+}
+
 function sha256(file){
   return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 }
@@ -53,7 +93,9 @@ function run(){
   has(/function openBossReveal\(encounter\)/, 'Boss reveal trigger is missing');
   has(/getFacultyCheckpointSlot\(room\)[\s\S]*getFacultyBossName\(\)/, 'Reveal does not resolve current boss identity and image');
   has(/getWeakestBossObjective\(bank\)[\s\S]*getBossObjectiveLabel/, 'Reveal is not tied to the adaptive boss target');
-  has(/return "Let's see what you've learned\.";/, 'Generic adaptive-dialogue fallback is missing');
+  has(/getBossIntroPresentationState\(objective\)/, 'Boss intro performance-state selector is missing');
+  has(/objectiveStats\.attempts >= 2[\s\S]*objectiveMisses >= 2[\s\S]*objectiveStats\.accuracy <= \(2 \/ 3\)/, 'Targeted weakness copy is not guarded by clear objective evidence');
+  has(/getBossChallengeLine\(label,presentationState\)/, 'Boss intro copy does not receive the evidence-backed presentation state');
   has(/proceedBossReveal[\s\S]*loadQuestion\(\)/, 'Reveal does not hand off to existing boss mechanics');
   has(/bossRevealShownKeys\.add\(encounter\.key\)/, 'Boss reveal has no one-time encounter guard');
   has(/id="guideIntroScreen"[\s\S]*function replayGuideIntroduction\(/, 'Guide Introduction or replay hook was damaged');
@@ -61,6 +103,33 @@ function run(){
   has(/id="returnMenuBtn"[\s\S]*fullscreen/i, 'Game Menu/fullscreen integration is missing');
   has(/aria-current","step"[\s\S]*aria-label/, 'Exam navigator does not expose current/state labels');
   has(/@media\(max-width:760px\)[\s\S]*guide-intro-stage\{grid-template-columns:1fr/, 'Boss reveal does not inherit responsive Guide Intro grammar');
+
+  const perfect = evaluateBossIntro({
+    byObjective:{Demand:{attempts:3,correct:3,avgTime:4000}},
+    recent:Array.from({length:9}, () => ({correct:true}))
+  });
+  check(perfect.state === 'strong-no-clear-weakness' && perfect.line === "You've done well. Now face my challenge.", 'Perfect run receives weakness-specific boss copy');
+
+  const targeted = evaluateBossIntro({
+    byObjective:{Demand:{attempts:4,correct:2,avgTime:4000}},
+    recent:[true,true,true,true,false,false].map(correct => ({correct}))
+  });
+  check(targeted.state === 'targeted-weakness' && /Demand is where your reasoning has slipped/.test(targeted.line), 'Clear objective weakness does not receive targeted copy');
+
+  const mixed = evaluateBossIntro({
+    byObjective:{Demand:{attempts:4,correct:3,avgTime:4000}},
+    recent:[true,true,true,false].map(correct => ({correct}))
+  });
+  check(mixed.state === 'mixed-non-specific' && mixed.line === "You've made progress, but this checkpoint will test your command.", 'Mixed performance receives an unsupported weakness callout');
+
+  const thinEvidence = evaluateBossIntro({
+    byObjective:{Demand:{attempts:1,correct:0,avgTime:4000}},
+    recent:[{correct:false}]
+  });
+  check(thinEvidence.state === 'mixed-non-specific' && !/Demand|slipped|weak|trouble/i.test(thinEvidence.line), 'One miss is incorrectly treated as a diagnosed weakness');
+
+  const noEvidence = evaluateBossIntro({});
+  check(noEvidence.state === 'strong-no-clear-weakness' && !/Demand|slipped|weak|trouble/i.test(noEvidence.line), 'No-evidence run receives weakness-specific boss copy');
 
   const defaultSelection = core.resolveThemeSelection({presetId:'default',overrides:{},customOverrides:{}}, themes, {});
   check(defaultSelection.slots.boss1.asset.id === 'default-boss-1' && defaultSelection.slots.boss2.asset.id === 'default-boss-2' && defaultSelection.slots.boss3.asset.id === 'default-boss-3', 'Default boss family does not resolve');

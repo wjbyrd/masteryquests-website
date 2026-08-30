@@ -9889,13 +9889,40 @@ function getBossObjectiveLabel(objective, bank){
     return "";
 }
 
-function getBossChallengeLine(label){
+function getBossIntroPresentationState(objective){
+    const objectiveStats = getObjectiveFamilyStats(objective);
+    const objectiveMisses = Math.max(0, objectiveStats.attempts - objectiveStats.correct);
+    const recent = Array.isArray(masteryState.recent) ? masteryState.recent : [];
+    const recentCorrect = recent.filter(item => item.correct).length;
+    const recentAccuracy = recent.length ? recentCorrect / recent.length : null;
+    const hasClearTargetedWeakness = Boolean(objective)
+        && objectiveStats.attempts >= 2
+        && objectiveMisses >= 2
+        && objectiveStats.accuracy <= (2 / 3);
+
+    if(hasClearTargetedWeakness) return "targeted-weakness";
+    if(recentAccuracy === null || recentAccuracy >= 0.80) return "strong-no-clear-weakness";
+    return "mixed-non-specific";
+}
+
+function getBossChallengeLine(label, presentationState, checkpointRoom = room){
+    if(presentationState === "strong-no-clear-weakness"){
+        if(checkpointRoom === 20) return "Your progress has been strong. Prove it at this checkpoint.";
+        if(checkpointRoom === 30) return "You've made it this far. Now show that your mastery holds.";
+        return "You've done well. Now face my challenge.";
+    }
+
+    if(presentationState === "mixed-non-specific"){
+        if(checkpointRoom === 30) return "Your path has been steady. Now prove your understanding under pressure.";
+        return "You've made progress, but this checkpoint will test your command.";
+    }
+
     const key = String(label || "").toLowerCase();
-    if(!key) return "Let's see what you've learned.";
-    if(/equilibrium/.test(key)) return "Time to see if you actually understand market equilibrium.";
+    if(!key) return "Your recent misses have revealed a target. Correct it here.";
+    if(/equilibrium/.test(key)) return "Market equilibrium is where your reasoning has slipped. Correct it here.";
     if(/price ceiling|ceiling/.test(key)) return "Price ceilings have given you trouble. Show me what you know when it counts.";
-    if(/price floor|floor/.test(key)) return "Let's see whether you can reason through price floors under pressure.";
-    if(/elastic/.test(key)) return "Let's find out whether you really understand elasticity.";
+    if(/price floor|floor/.test(key)) return "Price floors have given you trouble. Show me your reasoning under pressure.";
+    if(/elastic/.test(key)) return "Elasticity has given you trouble. Show me that you understand it now.";
     if(/production possibilit|ppf|trade.?off|frontier/.test(key)) return "Tradeoffs have given you trouble. Show me you understand the frontier.";
     if(/supply/.test(key)) return "Your supply analysis is the target. Make every shift count.";
     if(/demand/.test(key)) return "Demand is where your reasoning has slipped. Correct it here.";
@@ -9917,7 +9944,8 @@ function prepareBossEncounter(diff){
         if(question && !usedQuestions[diff].includes(question.id)) usedQuestions[diff].push(question.id);
     });
     const label = getBossObjectiveLabel(objective, bossPool.length ? bossPool : bank);
-    activeBossEncounter = {key,diff,objective,label,line:getBossChallengeLine(label)};
+    const presentationState = getBossIntroPresentationState(objective);
+    activeBossEncounter = {key,diff,objective,label,presentationState,line:getBossChallengeLine(label,presentationState)};
     checkpointAttemptState = {key,room:Number(room),objective,label,total:0,correct:0,incorrect:0};
     return activeBossEncounter;
 }
