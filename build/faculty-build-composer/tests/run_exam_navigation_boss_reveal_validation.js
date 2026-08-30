@@ -75,10 +75,10 @@ function run(){
   check(custom.slots.boss1.source === 'custom' && custom.slots.boss1.asset.id === customId, 'Faculty custom boss does not override default');
 
   const expectedAssets = [
-    ['default-guide.webp','f37a17ba7b84c39894d7a4bce700386d2b425bb2e2e31d165fbcc553683181ed'],
-    ['default-boss-challenger.webp','5919b06e647d10383a4c51315fb5d4deda6c360ed9165927ad60adb72e9d8902'],
-    ['default-boss-enforcer.webp','7711646bc16182c695446999a529507dccd89fd82dfc370ddb2ad99caa33fc63'],
-    ['default-boss-warden.webp','b5a6f5858508c4d9b346134b7d3d7beddb4795d3aca7096ea1f2c4d10b363f32']
+    ['default-guide.webp','07543456aee95178002b8d9ef09bac1bd5f4c9897f30dea0bb45287d82256854'],
+    ['default-boss-challenger.webp','b7ffb0c8b3482abc3e2d46e81c46d1b6d333dbc392cd012fae2ae24e2d5805e1'],
+    ['default-boss-enforcer.webp','c755306fb2b1b5cf5b0a7c42436127251ad2a60802010e320f5d73db39a3799a'],
+    ['default-boss-warden.webp','9c846508a91c58e2ffc99efc211117297dd9033025ae968f720c21314acb088c']
   ];
   for(const [name, hash] of expectedAssets){
     const file = path.join(ROOT, 'data', 'default-theme-assets', name);

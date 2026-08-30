@@ -44,10 +44,10 @@
   }
 
   const defaults = './data/default-theme-assets/';
-  add('default-guide','Guide',defaults+'default-guide.webp',['guideImage'],1024,1536,108120,'f37a17ba7b84c39894d7a4bce700386d2b425bb2e2e31d165fbcc553683181ed',{alt:'The Guide, a calm and welcoming Mastery Quests companion',displayName:'The Guide',guideIdentity:'guide',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
-  add('default-boss-1','The Challenger',defaults+'default-boss-challenger.webp',['boss1'],1084,1451,204778,'5919b06e647d10383a4c51315fb5d4deda6c360ed9165927ad60adb72e9d8902',{alt:'The Challenger, first checkpoint guardian',displayName:'The Challenger',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
-  add('default-boss-2','The Enforcer',defaults+'default-boss-enforcer.webp',['boss2'],1086,1448,284358,'7711646bc16182c695446999a529507dccd89fd82dfc370ddb2ad99caa33fc63',{alt:'The Enforcer, second checkpoint guardian',displayName:'The Enforcer',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
-  add('default-boss-3','The Warden',defaults+'default-boss-warden.webp',['boss3'],1086,1448,250666,'b5a6f5858508c4d9b346134b7d3d7beddb4795d3aca7096ea1f2c4d10b363f32',{alt:'The Warden, final checkpoint guardian',displayName:'The Warden',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
+  add('default-guide','Guide',defaults+'default-guide.webp',['guideImage'],916,1717,60956,'07543456aee95178002b8d9ef09bac1bd5f4c9897f30dea0bb45287d82256854',{alt:'The Guide, a calm and welcoming Mastery Quests companion',displayName:'The Guide',guideIdentity:'guide',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
+  add('default-boss-1','The Challenger',defaults+'default-boss-challenger.webp',['boss1'],916,1717,80474,'b7ffb0c8b3482abc3e2d46e81c46d1b6d333dbc392cd012fae2ae24e2d5805e1',{alt:'The Challenger, first checkpoint guardian',displayName:'The Challenger',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
+  add('default-boss-2','The Enforcer',defaults+'default-boss-enforcer.webp',['boss2'],916,1717,89176,'c755306fb2b1b5cf5b0a7c42436127251ad2a60802010e320f5d73db39a3799a',{alt:'The Enforcer, second checkpoint guardian',displayName:'The Enforcer',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
+  add('default-boss-3','The Warden',defaults+'default-boss-warden.webp',['boss3'],916,1717,98080,'9c846508a91c58e2ffc99efc211117297dd9033025ae968f720c21314acb088c',{alt:'The Warden, final checkpoint guardian',displayName:'The Warden',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
 
   const arcane = '../../play/micro-domains/labyrinth-of-choice/';
   add('arcane-start','Arcane Archive entrance',arcane+'start-screen-image.webp',['startBackground'],1448,1086,617998,'0dff35e8c640e00b71ed12e8c57aac43fe9f4a6336abd5f516d501692a5a9431',{origin:'Labyrinth of Choice',themeFamilies:['arcane-archive']});
@@ -146,5 +146,5 @@
     'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Managerial Intelligence Directorate briefing led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
   };
 
-  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'default-guide-polish-2026-08-30',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
+  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'default-character-refresh-2026-08-30',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
 });

@@ -35,14 +35,14 @@ function webpChunks(bytes){
 }
 
 const expected = [
-  {id:'default-guide',slot:'guideImage',file:'default-guide.webp',displayName:'The Guide',width:1024,height:1536,sizeBytes:108120,sha256:'f37a17ba7b84c39894d7a4bce700386d2b425bb2e2e31d165fbcc553683181ed'},
-  {id:'default-boss-1',slot:'boss1',file:'default-boss-challenger.webp',displayName:'The Challenger',width:1084,height:1451,sizeBytes:204778,sha256:'5919b06e647d10383a4c51315fb5d4deda6c360ed9165927ad60adb72e9d8902'},
-  {id:'default-boss-2',slot:'boss2',file:'default-boss-enforcer.webp',displayName:'The Enforcer',width:1086,height:1448,sizeBytes:284358,sha256:'7711646bc16182c695446999a529507dccd89fd82dfc370ddb2ad99caa33fc63'},
-  {id:'default-boss-3',slot:'boss3',file:'default-boss-warden.webp',displayName:'The Warden',width:1086,height:1448,sizeBytes:250666,sha256:'b5a6f5858508c4d9b346134b7d3d7beddb4795d3aca7096ea1f2c4d10b363f32'}
+  {id:'default-guide',slot:'guideImage',file:'default-guide.webp',displayName:'The Guide',width:916,height:1717,sizeBytes:60956,sha256:'07543456aee95178002b8d9ef09bac1bd5f4c9897f30dea0bb45287d82256854'},
+  {id:'default-boss-1',slot:'boss1',file:'default-boss-challenger.webp',displayName:'The Challenger',width:916,height:1717,sizeBytes:80474,sha256:'b7ffb0c8b3482abc3e2d46e81c46d1b6d333dbc392cd012fae2ae24e2d5805e1'},
+  {id:'default-boss-2',slot:'boss2',file:'default-boss-enforcer.webp',displayName:'The Enforcer',width:916,height:1717,sizeBytes:89176,sha256:'c755306fb2b1b5cf5b0a7c42436127251ad2a60802010e320f5d73db39a3799a'},
+  {id:'default-boss-3',slot:'boss3',file:'default-boss-warden.webp',displayName:'The Warden',width:916,height:1717,sizeBytes:98080,sha256:'9c846508a91c58e2ffc99efc211117297dd9033025ae968f720c21314acb088c'}
 ];
 
 function run(){
-  check(themes.libraryVersion === 'default-guide-polish-2026-08-30', 'Default character library version is stale');
+  check(themes.libraryVersion === 'default-character-refresh-2026-08-30', 'Default character library version is stale');
   check(themes.presets.default.values.guideImage === 'default-guide', 'Default preset does not register the real Guide');
   check(themes.presets.default.previewAssetId === 'default-guide', 'Default preset card does not preview the Guide');
 
