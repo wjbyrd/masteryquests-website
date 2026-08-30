@@ -93,12 +93,13 @@
         <section id="conceptBrowseToolbar" class="concept-browse-toolbar hidden" aria-labelledby="browseConceptsHeading">
           <div class="browse-toolbar-heading">
             <h3 id="browseConceptsHeading">Browse concepts</h3>
-            <p id="browseConceptCount">Choose an area to view its concept inventory.</p>
+            <p id="browseConceptCount" aria-live="polite" aria-atomic="true">Choose an area to view its concept inventory.</p>
           </div>
           <div class="browse-toolbar-controls">
             <div class="field browse-search">
               <label for="conceptSearch">Search concepts <span class="optional-label">(optional)</span></label>
-              <input id="conceptSearch" placeholder="Search concepts or descriptions" disabled>
+              <input id="conceptSearch" type="search" placeholder="Search concepts, families, or aliases" aria-describedby="conceptSearchHint" disabled>
+              <small id="conceptSearchHint">Try a title, family, skill, or abbreviation such as PPF, CPI, AD-AS, or Nash.</small>
             </div>
             <fieldset class="view-filter-field">
               <legend>View cards</legend>
@@ -116,6 +117,13 @@
               <option value="supporting">Supporting concepts</option>
             </select>
           </div>
+          <nav id="conceptFamilyIndex" class="concept-family-index" aria-labelledby="conceptFamilyIndexHeading">
+            <div class="concept-index-heading">
+              <h4 id="conceptFamilyIndexHeading">Jump to a concept family</h4>
+              <p>All sections stay open so browsing and comparison remain predictable.</p>
+            </div>
+            <div id="conceptFamilyIndexLinks" class="concept-family-index-links"></div>
+          </nav>
         </section>
 
         <div id="conceptGrid" class="concept-grid"></div>

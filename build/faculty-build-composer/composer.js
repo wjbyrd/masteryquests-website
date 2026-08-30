@@ -237,13 +237,28 @@ function changeActiveCourseArea(area){
   recalculate();
 }
 
-function conceptMatchesSearch(concept, search){
+function normalizeSearchText(value){
+  return String(value || '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function conceptMatchesSearch(concept, search, area){
+  const family = courseAreas.navigationFamilyFor(concept.canonicalConceptId, area);
   const haystack = [
+    concept.canonicalConceptId,
     concept.title,
     concept.description,
-    ...(concept.includedSkills || [])
-  ].join(' ').toLowerCase();
-  return !search || haystack.includes(search);
+    ...(concept.includedSkills || []),
+    ...(courseAreas.searchAliasesFor(concept.canonicalConceptId) || []),
+    family?.label,
+    ...(family?.aliases || [])
+  ].map(normalizeSearchText).join(' ');
+  const normalizedSearch = normalizeSearchText(search);
+  return !normalizedSearch || haystack.includes(normalizedSearch);
 }
 
 function conceptBrowseCategory(concept){
@@ -260,7 +275,7 @@ function updateBrowseFilterControls(area, search){
   const filter = $('selectionFilter').value || 'all';
   const candidates = area ? registry.filter(concept => {
     if(!isConceptVisibleForArea(concept, area)) return false;
-    return conceptMatchesSearch(concept, search);
+    return conceptMatchesSearch(concept, search, area);
   }) : [];
   const counts = {
     all: candidates.length,
@@ -277,6 +292,74 @@ function updateBrowseFilterControls(area, search){
     const count = button.querySelector(`[data-filter-count="${key}"]`);
     if(count) count.textContent = counts[key] ?? 0;
   });
+}
+
+function conceptFamilyAnchorId(area, familyId){
+  return `concept-family-${area}-${familyId}`;
+}
+
+function renderConceptFamilyIndex(area, visibleConcepts){
+  const container = $('conceptFamilyIndexLinks');
+  if(!container) return;
+  const visibleIds = new Set(visibleConcepts.map(concept => concept.canonicalConceptId));
+  const links = courseAreas.navigationFamiliesForArea(area).map(family => {
+    const visibleCount = family.conceptIds.filter(id => visibleIds.has(id)).length;
+    if(!visibleCount) return '';
+    const selectedCount = family.conceptIds.filter(id => state.selectedConceptIds.includes(id)).length;
+    return `
+      <a class="concept-family-index-link" href="#${conceptFamilyAnchorId(area, family.id)}">
+        <span>${esc(family.label)}</span>
+        <span class="concept-family-index-count" aria-label="${visibleCount} visible concept${visibleCount === 1 ? '' : 's'}">${visibleCount}</span>
+        ${selectedCount ? `<span class="concept-family-selected-count">${selectedCount} selected</span>` : ''}
+      </a>`;
+  }).join('');
+  container.innerHTML = links || '<p class="concept-index-empty">No family contains the current results.</p>';
+  container.querySelectorAll('a[href^="#concept-family-"]').forEach(link => {
+    link.addEventListener('click', () => {
+      const targetId = link.getAttribute('href').slice(1);
+      requestAnimationFrame(() => document.getElementById(targetId)?.querySelector('.concept-family-title')?.focus({preventScroll:true}));
+    });
+  });
+}
+
+function groupRenderedConceptCards(area, visibleConcepts){
+  const grid = $('conceptGrid');
+  if(!visibleConcepts.length){
+    renderConceptFamilyIndex(area, visibleConcepts);
+    return;
+  }
+  const cardsById = new Map([...grid.querySelectorAll('[data-concept-id]')]
+    .map(card => [card.dataset.conceptId, card]));
+  const visibleIds = new Set(visibleConcepts.map(concept => concept.canonicalConceptId));
+  const fragment = document.createDocumentFragment();
+
+  for(const family of courseAreas.navigationFamiliesForArea(area)){
+    const familyIds = family.conceptIds.filter(id => visibleIds.has(id));
+    if(!familyIds.length) continue;
+    const section = document.createElement('section');
+    const anchorId = conceptFamilyAnchorId(area, family.id);
+    section.id = anchorId;
+    section.className = 'concept-family-section';
+    section.setAttribute('aria-labelledby', `${anchorId}-heading`);
+    section.innerHTML = `
+      <div class="concept-family-heading">
+        <div>
+          <div id="${anchorId}-heading" class="concept-family-title" role="heading" aria-level="3" tabindex="-1">${esc(family.label)}</div>
+          <span>${familyIds.length} concept${familyIds.length === 1 ? '' : 's'}</span>
+        </div>
+        <a href="#conceptFamilyIndexHeading" class="concept-index-return">Back to index</a>
+      </div>
+      <div class="concept-family-grid"></div>`;
+    const familyGrid = section.querySelector('.concept-family-grid');
+    for(const id of familyIds){
+      const card = cardsById.get(id);
+      if(card) familyGrid.append(card);
+    }
+    fragment.append(section);
+  }
+
+  grid.replaceChildren(fragment);
+  renderConceptFamilyIndex(area, visibleConcepts);
 }
 
 function facultyCoverageDisplay(concept){
@@ -795,17 +878,18 @@ function renderConcepts(){
   if(!area){
     updateBrowseFilterControls('', '');
     $('conceptGrid').innerHTML = '';
+    if($('conceptFamilyIndexLinks')) $('conceptFamilyIndexLinks').innerHTML = '';
     $('conceptRecommendations').innerHTML = '';
     if($('browseConceptCount')) $('browseConceptCount').textContent = '';
     return;
   }
 
-  const search = $('conceptSearch').value.trim().toLowerCase();
+  const search = $('conceptSearch').value;
   const filter = $('selectionFilter').value;
   updateBrowseFilterControls(area, search);
   const visible = registry.filter(concept => {
     if(!isConceptVisibleForArea(concept, area)) return false;
-    if(!conceptMatchesSearch(concept, search)) return false;
+    if(!conceptMatchesSearch(concept, search, area)) return false;
     return matchesCurrentSubfilter(concept, filter);
   });
   const browseCount = $('browseConceptCount');
@@ -888,6 +972,7 @@ function renderConcepts(){
     `;
   }).join('') || '<p>No concepts match the current filters.</p>';
 
+  groupRenderedConceptCards(area, visible);
   $('conceptGrid').querySelectorAll('[data-concept]').forEach(input => {
     input.addEventListener('change', () => setSelected(input.dataset.concept, input.checked));
   });

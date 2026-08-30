@@ -1,31 +1,31 @@
 {
   "schemaVersion": "1.0.0",
   "status": "PASS",
-  "caseCount": 12,
+  "caseCount": 14,
   "cases": [
     {
       "id": "A",
       "name": "general + all",
       "status": "PASS",
-      "visibleCount": 13
+      "visibleCount": 22
     },
     {
       "id": "B",
       "name": "micro + all",
       "status": "PASS",
-      "visibleCount": 80
+      "visibleCount": 86
     },
     {
       "id": "C",
       "name": "macro + all",
       "status": "PASS",
-      "visibleCount": 54
+      "visibleCount": 65
     },
     {
       "id": "D",
       "name": "general + ready",
       "status": "PASS",
-      "visibleCount": 7
+      "visibleCount": 11
     },
     {
       "id": "E",
@@ -37,17 +37,17 @@
       "id": "F",
       "name": "macro + ready",
       "status": "PASS",
-      "visibleCount": 48
+      "visibleCount": 54
     },
     {
       "id": "G",
       "name": "General → Micro → Macro → General",
       "status": "PASS",
       "visibleCounts": [
-        13,
-        80,
-        54,
-        13
+        22,
+        86,
+        65,
+        22
       ]
     },
     {
@@ -81,40 +81,81 @@
       "name": "mobile/accent source contract",
       "status": "PASS",
       "accentWidthPx": 4
+    },
+    {
+      "id": "M",
+      "name": "family index is exhaustive and unique",
+      "status": "PASS",
+      "navigationAudit": {
+        "general": {
+          "familyCount": 4,
+          "conceptCount": 22
+        },
+        "micro": {
+          "familyCount": 12,
+          "conceptCount": 86
+        },
+        "macro": {
+          "familyCount": 13,
+          "conceptCount": 65
+        }
+      }
+    },
+    {
+      "id": "N",
+      "name": "concept, family, and abbreviation search",
+      "status": "PASS",
+      "ppfCount": 3,
+      "nashCount": 7,
+      "adAsCount": 4
     }
   ],
   "areaAudit": {
     "general": {
-      "eligibleConceptCount": 13,
-      "visibleCardCount": 13,
-      "parentCount": 1,
-      "childSubtopicCount": 0,
-      "standaloneCount": 12,
-      "readyCount": 7,
-      "supportingCount": 6
+      "eligibleConceptCount": 22,
+      "visibleCardCount": 22,
+      "parentCount": 0,
+      "childSubtopicCount": 4,
+      "standaloneCount": 18,
+      "readyCount": 11,
+      "supportingCount": 11
     },
     "micro": {
-      "eligibleConceptCount": 80,
-      "visibleCardCount": 80,
+      "eligibleConceptCount": 86,
+      "visibleCardCount": 86,
       "parentCount": 8,
       "childSubtopicCount": 54,
-      "standaloneCount": 18,
-      "readyCount": 53,
+      "standaloneCount": 24,
+      "readyCount": 59,
       "supportingCount": 27
     },
     "macro": {
-      "eligibleConceptCount": 54,
-      "visibleCardCount": 54,
-      "parentCount": 1,
-      "childSubtopicCount": 0,
-      "standaloneCount": 53,
-      "readyCount": 48,
-      "supportingCount": 6
+      "eligibleConceptCount": 65,
+      "visibleCardCount": 65,
+      "parentCount": 0,
+      "childSubtopicCount": 4,
+      "standaloneCount": 61,
+      "readyCount": 54,
+      "supportingCount": 11
+    }
+  },
+  "navigationAudit": {
+    "general": {
+      "familyCount": 4,
+      "conceptCount": 22
+    },
+    "micro": {
+      "familyCount": 12,
+      "conceptCount": 86
+    },
+    "macro": {
+      "familyCount": 13,
+      "conceptCount": 65
     }
   },
   "metadataDefectCount": 36,
-  "canonicalConceptCount": 126,
-  "canonicalConceptIdsSha256": "9aff9af3b239d01b1f24d37c8a1404b92d8308a978dcc250929f7f29789e931f",
-  "composerLibrarySha256": "5dfa6cbd327cf5922e9c071280b0a403fa4a2b3840803a5fbaca27a66dfd33d8",
+  "canonicalConceptCount": 135,
+  "canonicalConceptIdsSha256": "0ec0000ad8b61e559d1ee442f8eb20a92b0e8b4030ba13edeb57584f4448f68c",
+  "composerLibrarySha256": "5af12453b2b801b0cdf1e35f26319f589587121656f4b4adee5b41b0d3ce4942",
   "allTenModesExpected": true
 }

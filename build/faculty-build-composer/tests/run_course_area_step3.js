@@ -15,8 +15,18 @@ function loadLibrary(){
   const source = fs.readFileSync(path.join(root, 'data', 'composer_library.js'), 'utf8').trim();
   return {source, library:JSON.parse(source.slice('window.MQ_COMPOSER_LIBRARY='.length, -1))};
 }
-function searchMatch(concept, search){
-  return !search || [concept.title,concept.description,...(concept.includedSkills || [])].join(' ').toLowerCase().includes(search.toLowerCase());
+function normalizeSearch(value){
+  return String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+}
+function searchMatch(concept, search, area, model){
+  const family = model.navigationFamilyFor(concept.canonicalConceptId, area);
+  const haystack = [
+    concept.canonicalConceptId, concept.title, concept.description,
+    ...(concept.includedSkills || []), ...(model.searchAliasesFor(concept.canonicalConceptId) || []),
+    family?.label, ...(family?.aliases || [])
+  ].map(normalizeSearch).join(' ');
+  const query = normalizeSearch(search);
+  return !query || haystack.includes(query);
 }
 function extractPresets(){
   const source = fs.readFileSync(path.join(root, 'composer.js'), 'utf8');
@@ -36,7 +46,7 @@ function run(){
     const record = model.get(concept.canonicalConceptId);
     return Model.isConceptVisibleForArea({...concept,...record},area)
       && (filter === 'all' || Model.browseCategory(concept) === filter)
-      && searchMatch(concept,search);
+      && searchMatch(concept,search,area,model);
   });
 
   for(const [id,area,filter] of [
@@ -83,6 +93,26 @@ function run(){
   assert(css.includes('.concept-card[data-discipline="general"]') && css.includes('.concept-card[data-discipline="micro"]') && css.includes('.concept-card[data-discipline="macro"]'), 'Shared discipline selectors are incomplete.');
   pass('L','mobile/accent source contract',{accentWidthPx:4});
 
+  const navigationAudit = {};
+  for(const area of Model.AREA_KEYS){
+    const eligibleIds = visible(area).map(concept => concept.canonicalConceptId);
+    const families = model.navigationFamiliesForArea(area);
+    const indexedIds = families.flatMap(family => family.conceptIds);
+    assert(new Set(indexedIds).size === indexedIds.length, `${area} navigation contains duplicate concepts.`);
+    assert(eligibleIds.every(id => indexedIds.includes(id)) && indexedIds.every(id => eligibleIds.includes(id)), `${area} navigation is not exhaustive.`);
+    assert(!families.some(family => family.id === 'additional-concepts'), `${area} navigation fell back to an uncurated Additional concepts family.`);
+    navigationAudit[area] = {familyCount:families.length,conceptCount:indexedIds.length};
+  }
+  pass('M','family index is exhaustive and unique',{navigationAudit});
+
+  const ppfSearch = visible('micro','all','PPF');
+  const nashSearch = visible('micro','all','Nash');
+  const adAsSearch = visible('macro','all','AD-AS');
+  assert(ppfSearch.some(concept => concept.canonicalConceptId === 'production-possibilities-frontier'), 'PPF alias did not find Production Possibilities Frontier.');
+  assert(nashSearch.length === 7 && nashSearch.every(concept => model.navigationFamilyFor(concept.canonicalConceptId,'micro')?.id === 'oligopoly'), 'Nash did not surface the Oligopoly family.');
+  assert(adAsSearch.length === 4 && adAsSearch.every(concept => model.navigationFamilyFor(concept.canonicalConceptId,'macro')?.id === 'ad-as-equilibrium'), 'AD-AS did not surface the aggregate-equilibrium family.');
+  pass('N','concept, family, and abbreviation search',{ppfCount:ppfSearch.length,nashCount:nashSearch.length,adAsCount:adAsSearch.length});
+
   const oldGeneral = new Set(Model.GENERAL_AREA_IDS);
   const oldMicro = new Set(Model.MICRO_AREA_IDS);
   const corrections = registry.filter(concept => {
@@ -113,7 +143,7 @@ function run(){
 
   const canonicalIds = registry.map(concept => concept.canonicalConceptId);
   const output = {
-    schemaVersion:'1.0.0',status:'PASS',caseCount:cases.length,cases,areaAudit,
+    schemaVersion:'1.0.0',status:'PASS',caseCount:cases.length,cases,areaAudit,navigationAudit,
     metadataDefectCount:corrections.length,
     canonicalConceptCount:canonicalIds.length,
     canonicalConceptIdsSha256:crypto.createHash('sha256').update(JSON.stringify(canonicalIds)).digest('hex'),
