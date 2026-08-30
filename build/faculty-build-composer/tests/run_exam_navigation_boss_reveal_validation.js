@@ -75,7 +75,7 @@ function run(){
   check(custom.slots.boss1.source === 'custom' && custom.slots.boss1.asset.id === customId, 'Faculty custom boss does not override default');
 
   const expectedAssets = [
-    ['default-guide.webp','faadb8c2e39b38a237f1a94e955bc2b195b2ccadf24e982bb1905978b0c44b87'],
+    ['default-guide.webp','f37a17ba7b84c39894d7a4bce700386d2b425bb2e2e31d165fbcc553683181ed'],
     ['default-boss-challenger.webp','5919b06e647d10383a4c51315fb5d4deda6c360ed9165927ad60adb72e9d8902'],
     ['default-boss-enforcer.webp','7711646bc16182c695446999a529507dccd89fd82dfc370ddb2ad99caa33fc63'],
     ['default-boss-warden.webp','b5a6f5858508c4d9b346134b7d3d7beddb4795d3aca7096ea1f2c4d10b363f32']

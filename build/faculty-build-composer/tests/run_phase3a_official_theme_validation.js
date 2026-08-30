@@ -181,7 +181,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   }
   pass(builds.default.selectedAssets.length === 4, 'Default theme did not embed the Guide and three checkpoint guardians');
   pass(['guideImage','boss1','boss2','boss3'].every(slotId => builds.default.config.visualTheme.slots[slotId].src.startsWith('data:image/webp;base64,')), 'Default character set was not embedded');
-  pass(builds.default.config.guide.identity === 'guide' && builds.default.config.guide.displayName === 'Guide', 'Default theme forced an official guide identity');
+  pass(builds.default.config.guide.identity === 'guide' && builds.default.config.guide.displayName === 'The Guide', 'Default theme forced an official guide identity');
   pass(builds['arcane-archive'].selectedAssets.length === 22, 'Arcane preset coverage changed');
   pass(builds['market-citadel'].config.visualTheme.slots.modeQuiz.source === 'fallback', 'Missing optional mode art did not fall back');
   pass(builds['managerial-cost-directive'].config.visualTheme.slots.modeTrialGraph.source === 'fallback', 'Missing graph-mode art did not fall back');

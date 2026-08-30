@@ -44,7 +44,7 @@
   }
 
   const defaults = './data/default-theme-assets/';
-  add('default-guide','Guide',defaults+'default-guide.webp',['guideImage'],1024,1536,149278,'faadb8c2e39b38a237f1a94e955bc2b195b2ccadf24e982bb1905978b0c44b87',{alt:'Guide, a calm Mastery Quests mentor',displayName:'Guide',guideIdentity:'guide',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
+  add('default-guide','Guide',defaults+'default-guide.webp',['guideImage'],1024,1536,108120,'f37a17ba7b84c39894d7a4bce700386d2b425bb2e2e31d165fbcc553683181ed',{alt:'The Guide, a calm and welcoming Mastery Quests companion',displayName:'The Guide',guideIdentity:'guide',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
   add('default-boss-1','The Challenger',defaults+'default-boss-challenger.webp',['boss1'],1084,1451,204778,'5919b06e647d10383a4c51315fb5d4deda6c360ed9165927ad60adb72e9d8902',{alt:'The Challenger, first checkpoint guardian',displayName:'The Challenger',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
   add('default-boss-2','The Enforcer',defaults+'default-boss-enforcer.webp',['boss2'],1086,1448,284358,'7711646bc16182c695446999a529507dccd89fd82dfc370ddb2ad99caa33fc63',{alt:'The Enforcer, second checkpoint guardian',displayName:'The Enforcer',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
   add('default-boss-3','The Warden',defaults+'default-boss-warden.webp',['boss3'],1086,1448,250666,'b5a6f5858508c4d9b346134b7d3d7beddb4795d3aca7096ea1f2c4d10b363f32',{alt:'The Warden, final checkpoint guardian',displayName:'The Warden',origin:'Default Mastery Quest',presentationMode:'transparent-character',themeFamilies:['default']});
@@ -140,11 +140,11 @@
     modeStandard:'directive-mode-standard',modeTimed:'directive-mode-timed',modeExam:'directive-mode-exam',modeQuiz:'directive-mode-quiz',modeUnlimited:'directive-mode-unlimited',modeLegendary:'directive-mode-legendary',modeScore:'directive-mode-score',modeFadingFortune:'directive-mode-fadingFortune',modeRiskReward:'directive-mode-riskReward'
   };
   const presets = {
-    default:{id:'default',label:'Default Mastery Quest',description:'A neutral Guide and three escalating checkpoint guardians for an unthemed Quest.',previewAssetId:'default-guide',guide:{identity:'guide',displayName:'Guide'},values:{guideImage:'default-guide',boss1:'default-boss-1',boss2:'default-boss-2',boss3:'default-boss-3'}},
+    default:{id:'default',label:'Default Mastery Quest',description:'A neutral Guide and three escalating checkpoint guardians for an unthemed Quest.',previewAssetId:'default-guide',guide:{identity:'guide',displayName:'The Guide'},values:{guideImage:'default-guide',boss1:'default-boss-1',boss2:'default-boss-2',boss3:'default-boss-3'}},
     'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers led by the Archivist.',previewAssetId:'arcane-start',guide:{identity:'archivist',displayName:'The Archivist'},values:arcaneValues},
     'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls led by the Chancellor.',previewAssetId:'market-start',guide:{identity:'chancellor',displayName:'The Chancellor'},values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
     'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Managerial Intelligence Directorate briefing led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
   };
 
-  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'default-character-set-2026-08-30',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
+  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'default-guide-polish-2026-08-30',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
 });

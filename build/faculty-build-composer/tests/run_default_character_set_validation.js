@@ -35,14 +35,14 @@ function webpChunks(bytes){
 }
 
 const expected = [
-  {id:'default-guide',slot:'guideImage',file:'default-guide.webp',displayName:'Guide',width:1024,height:1536,sizeBytes:149278,sha256:'faadb8c2e39b38a237f1a94e955bc2b195b2ccadf24e982bb1905978b0c44b87'},
+  {id:'default-guide',slot:'guideImage',file:'default-guide.webp',displayName:'The Guide',width:1024,height:1536,sizeBytes:108120,sha256:'f37a17ba7b84c39894d7a4bce700386d2b425bb2e2e31d165fbcc553683181ed'},
   {id:'default-boss-1',slot:'boss1',file:'default-boss-challenger.webp',displayName:'The Challenger',width:1084,height:1451,sizeBytes:204778,sha256:'5919b06e647d10383a4c51315fb5d4deda6c360ed9165927ad60adb72e9d8902'},
   {id:'default-boss-2',slot:'boss2',file:'default-boss-enforcer.webp',displayName:'The Enforcer',width:1086,height:1448,sizeBytes:284358,sha256:'7711646bc16182c695446999a529507dccd89fd82dfc370ddb2ad99caa33fc63'},
   {id:'default-boss-3',slot:'boss3',file:'default-boss-warden.webp',displayName:'The Warden',width:1086,height:1448,sizeBytes:250666,sha256:'b5a6f5858508c4d9b346134b7d3d7beddb4795d3aca7096ea1f2c4d10b363f32'}
 ];
 
 function run(){
-  check(themes.libraryVersion === 'default-character-set-2026-08-30', 'Default character library version is stale');
+  check(themes.libraryVersion === 'default-guide-polish-2026-08-30', 'Default character library version is stale');
   check(themes.presets.default.values.guideImage === 'default-guide', 'Default preset does not register the real Guide');
   check(themes.presets.default.previewAssetId === 'default-guide', 'Default preset card does not preview the Guide');
 
@@ -78,9 +78,13 @@ function run(){
     check(runtime.slots[item.slot].id === item.id && runtime.slots[item.slot].src.startsWith('data:image/webp;base64,'), `Runtime did not embed ${item.slot}`);
     check(runtime.slots[item.slot].presentationMode === 'transparent-character', `Runtime lost direct-composition metadata for ${item.slot}`);
   }
-  check(core.createGuideConfig({guideName:''}, defaults, themes).displayName === 'Guide', 'Default Guide name is not neutral');
+  const defaultGuide = core.createGuideConfig({guideName:''}, defaults, themes);
+  check(defaultGuide.displayName === 'The Guide', 'Default Guide title is not neutral');
+  check(defaultGuide.introLines[0] === 'Greetings. I’ll be with you as you make your way through this Quest.', 'Default Guide intro is redundant or stale');
+  check(!/\bI am\b/i.test(defaultGuide.introLines.join(' ')), 'Default Guide body copy repeats the displayed title');
 
   check(/const guide = getFacultyVisualSlot\("guideImage"\)/.test(template), 'Guide presentations do not share the Guide slot');
+  check(/guide-intro-kicker">Your Guide<\/p>[\s\S]*guide-intro-name">The Guide<\/h1>/.test(template), 'Default Guide heading hierarchy is not preserved');
   check(/wizard\.appendChild\(image\)/.test(template), 'Gameplay does not render the resolved Guide image');
   check(/introImage\.src = guide\.src \|\| ""/.test(template), 'Guide Introduction does not render the resolved Guide image');
   check(/if\(introFallback\) introFallback\.hidden = Boolean\(guide\.src\)/.test(template), 'MQ icon is not limited to missing Guide art');

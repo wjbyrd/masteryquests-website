@@ -413,11 +413,15 @@ function createGuideConfig(recipe, resolvedTheme, themeLibrary){
   const identity = custom
     ? 'custom'
     : String(asset?.guideIdentity || preset?.guide?.identity || 'guide');
+  const enteredGuideName = String(recipe?.guideName || '').trim().slice(0, 80);
+  const untouchedDefaultGuide = !custom && identity === 'guide' && !enteredGuideName;
   const facultyNamedGuide = custom || identity === 'guide';
   const displayName = facultyNamedGuide
-    ? String(recipe?.guideName || '').trim().slice(0, 80) || 'Guide'
+    ? enteredGuideName || (untouchedDefaultGuide ? 'The Guide' : 'Guide')
     : String(asset?.displayName || preset?.guide?.displayName || 'Guide').trim() || 'Guide';
-  const introLines = BUILT_IN_GUIDE_INTROS[identity]
+  const introLines = untouchedDefaultGuide
+    ? ['Greetings. I’ll be with you as you make your way through this Quest.','If you are ready, follow me.']
+    : BUILT_IN_GUIDE_INTROS[identity]
     ? [...BUILT_IN_GUIDE_INTROS[identity]]
     : [
         `Greetings. I am ${spokenGuideName(displayName)}. I'll be with you as you make your way through this Quest.`,

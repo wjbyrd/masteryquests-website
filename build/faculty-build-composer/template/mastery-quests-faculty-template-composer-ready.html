@@ -3231,7 +3231,7 @@ Respect structure strictly.
     </div>
     <div class="guide-intro-copy">
       <p class="guide-intro-kicker">Your Guide</p>
-      <h1 id="guideIntroName" class="guide-intro-name">Guide</h1>
+      <h1 id="guideIntroName" class="guide-intro-name">The Guide</h1>
       <p id="guideIntroPrimary" class="guide-intro-dialogue"></p>
       <p id="guideIntroSecondary" class="guide-intro-dialogue secondary"></p>
       <button id="guideIntroProceed" class="guide-intro-proceed" type="button" onclick="proceedGuideIntroduction()">Proceed</button>
@@ -3789,9 +3789,9 @@ const FACULTY_COMPOSITION_CONFIG = {
     "selectedConceptIds": [],
     "guide": {
         "identity":"guide",
-        "displayName":"Guide",
+        "displayName":"The Guide",
         "imageSlot":"guideImage",
-        "introLines":["Greetings. I am your guide. I'll be with you as you make your way through this Quest.","If you are ready, follow me."],
+        "introLines":["Greetings. I’ll be with you as you make your way through this Quest.","If you are ready, follow me."],
         "custom":false
     },
     "appearance": {"presetId":"default","overrides":{}},
@@ -3889,7 +3889,7 @@ function applyFacultyVisualTheme(){
     const introName = document.getElementById("guideIntroName");
     const introLines = Array.isArray(guideConfig.introLines) ? guideConfig.introLines : [];
     if(introName) introName.textContent = guideDisplayName;
-    if(document.getElementById("guideIntroPrimary")) document.getElementById("guideIntroPrimary").textContent = introLines[0] || `Greetings. I am your guide. I'll be with you as you make your way through this Quest.`;
+    if(document.getElementById("guideIntroPrimary")) document.getElementById("guideIntroPrimary").textContent = introLines[0] || `Greetings. I’ll be with you as you make your way through this Quest.`;
     if(document.getElementById("guideIntroSecondary")) document.getElementById("guideIntroSecondary").textContent = introLines[1] || "If you are ready, follow me.";
     if(introImage){
         introImage.hidden = !guide.src;

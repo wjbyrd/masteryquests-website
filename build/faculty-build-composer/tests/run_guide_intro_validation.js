@@ -47,8 +47,8 @@ test('default plus three official faculty themes remain', () => {
   assert(['guideImage','boss1','boss2','boss3'].every(slotId => defaultSelection.slots[slotId].source === 'preset'));
   assert(Object.entries(defaultSelection.slots).filter(([slotId]) => !['guideImage','boss1','boss2','boss3'].includes(slotId)).every(([,slot]) => slot.source === 'fallback'));
   assert.deepStrictEqual(core.createGuideConfig({guideName:''}, defaultSelection, themes), {
-    identity:'guide', displayName:'Guide', imageSlot:'guideImage',
-    introLines:["Greetings. I am Guide. I'll be with you as you make your way through this Quest.",'If you are ready, follow me.'],
+    identity:'guide', displayName:'The Guide', imageSlot:'guideImage',
+    introLines:['Greetings. I’ll be with you as you make your way through this Quest.','If you are ready, follow me.'],
     custom:false
   });
   assert.strictEqual(core.createGuideConfig({guideName:'Dr. Chen'}, defaultSelection, themes).displayName, 'Dr. Chen');
