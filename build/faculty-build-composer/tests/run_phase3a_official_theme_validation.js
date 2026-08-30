@@ -73,7 +73,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   pass(core.RECIPE_SCHEMA_VERSION === '1.4.0', 'Unexpected recipe schema');
   pass(themes.schemaVersion === '1.1.0', 'Unexpected theme schema');
   pass(Object.keys(themes.slots).length === 22, 'Unexpected visual-slot count');
-  pass(themes.assets.length === 65, 'Unexpected official-asset count');
+  pass(themes.assets.length === 70, 'Unexpected official-asset count');
   pass(presetIds.has('default'), 'Default theme is missing');
   pass(themes.defaultPresetId === 'default', 'Default Mastery Quest is not the faculty default');
   pass(JSON.stringify(Object.values(themes.presets).filter(preset => preset.id !== 'default' && preset.facultyVisible !== false).map(preset => preset.id)) === JSON.stringify(['arcane-archive','market-citadel','managerial-cost-directive']), 'Faculty-facing official theme list is not the approved three-theme set');
@@ -104,7 +104,7 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
     const bytes = fs.readFileSync(sourceFile(asset));
     return new Response(bytes, {status:200, headers:{'content-type':asset.fileType}});
   });
-  pass(Object.keys(productionPathEmbedded).length === 65, 'Production embed path did not verify all 65 official assets');
+  pass(Object.keys(productionPathEmbedded).length === 70, 'Production embed path did not verify all 70 official assets');
   pass(Object.values(productionPathEmbedded).every(value => value.startsWith('data:image/webp;base64,')), 'Production embed path returned a nonportable official asset');
 
   for(const [presetId, preset] of Object.entries(themes.presets)){
@@ -183,8 +183,25 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   pass(['guideImage','boss1','boss2','boss3'].every(slotId => builds.default.config.visualTheme.slots[slotId].src.startsWith('data:image/webp;base64,')), 'Default character set was not embedded');
   pass(builds.default.config.guide.identity === 'guide' && builds.default.config.guide.displayName === 'The Guide', 'Default theme forced an official guide identity');
   pass(builds['arcane-archive'].selectedAssets.length === 22, 'Arcane preset coverage changed');
-  pass(builds['market-citadel'].config.visualTheme.slots.modeQuiz.source === 'fallback', 'Missing optional mode art did not fall back');
-  pass(builds['managerial-cost-directive'].config.visualTheme.slots.modeTrialGraph.source === 'fallback', 'Missing graph-mode art did not fall back');
+  pass(builds['market-citadel'].selectedAssets.length === 22, 'Market Gate does not have complete ten-mode artwork');
+  pass(builds['managerial-cost-directive'].selectedAssets.length === 22, 'Cost Directive does not have complete ten-mode artwork');
+  const expectedCompletedModeAssets = {
+    'economic-mode-quiz':'../../play/economic-realm/market-gate/quiz-mode.webp',
+    'economic-mode-trialGraph':'../../play/economic-realm/market-gate/trial-by-graph.webp',
+    'economic-mode-fadingFortune':'../../play/economic-realm/market-gate/fading-fortune.webp',
+    'economic-mode-riskReward':'../../play/economic-realm/market-gate/risk-and-reward.webp',
+    'directive-mode-trialGraph':'../../play/managerial-intelligence-directorate/cost-directive/trial-by-graph.webp'
+  };
+  for(const [assetId, expectedPath] of Object.entries(expectedCompletedModeAssets)){
+    const asset = themes.assets.find(candidate => candidate.id === assetId);
+    pass(asset?.sourceUrl === expectedPath, `${assetId} path is not canonical`);
+  }
+  for(const slotId of ['modeQuiz','modeTrialGraph','modeFadingFortune','modeRiskReward']){
+    pass(builds['market-citadel'].config.visualTheme.slots[slotId].source === 'preset', `Market Gate ${slotId} still falls back`);
+    pass(builds['market-citadel'].config.visualTheme.slots[slotId].src.startsWith('data:image/webp;base64,'), `Market Gate ${slotId} was not embedded`);
+  }
+  pass(builds['managerial-cost-directive'].config.visualTheme.slots.modeTrialGraph.source === 'preset', 'Cost Directive Trial by Graph still falls back');
+  pass(builds['managerial-cost-directive'].config.visualTheme.slots.modeTrialGraph.src.startsWith('data:image/webp;base64,'), 'Cost Directive Trial by Graph was not embedded');
   assertInlineScriptsCompile(builds['arcane-archive'].html, 'phase3a-arcane.html');
   checks++;
 

@@ -68,7 +68,8 @@ for(const [presetId, [identity, displayName]] of Object.entries(expectedGuides))
       assert(selection.slots.boss1.asset.sourceUrl.endsWith('/analyst.webp'));
       assert(selection.slots.boss2.asset.sourceUrl.endsWith('/manager.webp'));
       assert(selection.slots.boss3.asset.sourceUrl.endsWith('/director.webp'));
-      assert.strictEqual(selection.slots.modeTrialGraph.source, 'fallback');
+      assert.strictEqual(selection.slots.modeTrialGraph.source, 'preset');
+      assert.strictEqual(selection.slots.modeTrialGraph.asset.id, 'directive-mode-trialGraph');
     }
   });
 }

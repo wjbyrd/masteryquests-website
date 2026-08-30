@@ -85,9 +85,13 @@
     ['standard','Standard Campaign','mode_standard.webp',900,520,156380,'ebba9fff124f76525e83023ef7ad3645cba04afd693ce59df47003428c8dc2cb'],
     ['timed','Timed Trial','mode_timed.webp',900,520,139248,'7f5722460235219d88ce8221f504cbf9f5c505d6703fcc13e2e1022e8097a2f9'],
     ['exam','Exam Drill','mode_exam.webp',900,520,155464,'2c9898b0feccb30852c68c7aa919ed0e606737c31f4588f6711c930bf776ca0e'],
+    ['quiz','Quiz','quiz-mode.webp',1672,941,495812,'244adce16115b25d02c47a2935c035cccca6b919816dea2db3f98d77faf92a3b'],
     ['unlimited','Unlimited Practice','unlimited-mode.webp',1254,1254,822628,'b5f3ec0ec53b70123462a648998264c781b25f252279fedc48b37592c10fc7ab'],
     ['legendary','Legendary','mode_legendary.webp',900,520,157826,'90380766ea4fe7e520bd4f22ad929814c27e44369f543a060f404672c672a50c'],
-    ['score','Score Attack','scoreattack.webp',1672,941,496596,'a434c5a0a6d8bd1580edefb1c49f4d3936b685e30f71ab7397e1e7f657113fb2']
+    ['score','Score Attack','scoreattack.webp',1672,941,496596,'a434c5a0a6d8bd1580edefb1c49f4d3936b685e30f71ab7397e1e7f657113fb2'],
+    ['trialGraph','Trial by Graph','trial-by-graph.webp',1672,941,513336,'1cb6d5ff107bc00f78c31027695cee0794b9493e9982b8aaeb2947c354598a8c'],
+    ['fadingFortune','Fading Fortune','fading-fortune.webp',1672,941,569876,'a8218903904814f1d74c83dc1a8e7f43bb0dd4fdc1e0943b0d8701c96ccd6e4c'],
+    ['riskReward','Risk & Reward','risk-and-reward.webp',1672,941,524642,'16d9a745502b3239fa1f4c39fff717377adfef2cdd9c2e4e9925a8dd48b40f0b']
   ];
   for(const [mode,label,file,width,height,size,hash] of economicModes){
     add('economic-mode-'+mode,'Economic Realm '+label,economic+file,[modeSlot[mode]],width,height,size,hash,{origin:'Economic Realm',themeFamilies:['market-citadel']});
@@ -123,6 +127,7 @@
     ['unlimited','Unlimited Practice','mode_unlimited.webp',410426,'8d2d519b7c771791ca6bd0771d6115d89273aae34a54d4d6238f551fcd154501'],
     ['legendary','Legendary','mode_legendary.webp',389500,'2ed5582c29ad406e81e853902a9f1a75ff5eb3e81b6beb1fbd9300202703a364'],
     ['score','Score Attack','scoreattack.webp',366680,'09f4b867fe473c0635b891fd3522e4dc705b9293ffe8f1c1533ee6e577db0fef'],
+    ['trialGraph','Trial by Graph','trial-by-graph.webp',266328,'1d4f62d05a183400548bd2770afa57a37dd212fd02d3605fd3eacc6f9c50042c'],
     ['fadingFortune','Fading Fortune','mode_fading.webp',426984,'09c102eda6fc3bacba7a5289886929e35fe15bf1915a0da1be3f7a2760ed241a'],
     ['riskReward','Risk & Reward','mode_risk.webp',421930,'da37e146d426ca992c9e7c72e906675d8eb76e59ef1e6b582acc3af41de63240']
   ];
@@ -134,17 +139,17 @@
     startBackground:'arcane-start',gameplayBackground:'arcane-gameplay',hallway1:'arcane-hall-1',hallway2:'arcane-hall-2',hallway3:'arcane-hall-3',guideImage:'arcane-guide',boss1:'arcane-boss-1',boss2:'arcane-boss-2',boss3:'arcane-boss-3',artifact1:'arcane-artifact-1',artifact2:'arcane-artifact-2',artifact3:'arcane-artifact-3',
     modeStandard:'arcane-mode-standard',modeTimed:'arcane-mode-timed',modeExam:'arcane-mode-exam',modeQuiz:'arcane-mode-quiz',modeUnlimited:'arcane-mode-unlimited',modeLegendary:'arcane-mode-legendary',modeScore:'arcane-mode-score',modeTrialGraph:'arcane-mode-trialGraph',modeFadingFortune:'arcane-mode-fadingFortune',modeRiskReward:'arcane-mode-riskReward'
   };
-  const economicModeValues = {modeStandard:'economic-mode-standard',modeTimed:'economic-mode-timed',modeExam:'economic-mode-exam',modeUnlimited:'economic-mode-unlimited',modeLegendary:'economic-mode-legendary',modeScore:'economic-mode-score'};
+  const economicModeValues = {modeStandard:'economic-mode-standard',modeTimed:'economic-mode-timed',modeExam:'economic-mode-exam',modeQuiz:'economic-mode-quiz',modeUnlimited:'economic-mode-unlimited',modeLegendary:'economic-mode-legendary',modeScore:'economic-mode-score',modeTrialGraph:'economic-mode-trialGraph',modeFadingFortune:'economic-mode-fadingFortune',modeRiskReward:'economic-mode-riskReward'};
   const directiveValues = {
     startBackground:'directive-start',gameplayBackground:'directive-gameplay',hallway1:'directive-hall-1',hallway2:'directive-hall-2',hallway3:'directive-hall-3',guideImage:'directive-guide',boss1:'directive-boss-1',boss2:'directive-boss-2',boss3:'directive-boss-3',artifact1:'directive-artifact-1',artifact2:'directive-artifact-2',artifact3:'directive-artifact-3',
-    modeStandard:'directive-mode-standard',modeTimed:'directive-mode-timed',modeExam:'directive-mode-exam',modeQuiz:'directive-mode-quiz',modeUnlimited:'directive-mode-unlimited',modeLegendary:'directive-mode-legendary',modeScore:'directive-mode-score',modeFadingFortune:'directive-mode-fadingFortune',modeRiskReward:'directive-mode-riskReward'
+    modeStandard:'directive-mode-standard',modeTimed:'directive-mode-timed',modeExam:'directive-mode-exam',modeQuiz:'directive-mode-quiz',modeUnlimited:'directive-mode-unlimited',modeLegendary:'directive-mode-legendary',modeScore:'directive-mode-score',modeTrialGraph:'directive-mode-trialGraph',modeFadingFortune:'directive-mode-fadingFortune',modeRiskReward:'directive-mode-riskReward'
   };
   const presets = {
-    default:{id:'default',label:'Default Mastery Quest',description:'A neutral Guide and three escalating checkpoint guardians for an unthemed Quest.',previewAssetId:'default-guide',guide:{identity:'guide',displayName:'The Guide'},values:{guideImage:'default-guide',boss1:'default-boss-1',boss2:'default-boss-2',boss3:'default-boss-3'}},
-    'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers led by the Archivist.',previewAssetId:'arcane-start',guide:{identity:'archivist',displayName:'The Archivist'},values:arcaneValues},
-    'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls led by the Chancellor.',previewAssetId:'market-start',guide:{identity:'chancellor',displayName:'The Chancellor'},values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
-    'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Managerial Intelligence Directorate briefing led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
+    default:{id:'default',label:'Default Mastery Quest',description:'A lightweight gold Guide and three escalating checkpoint guardians.',previewAssetId:'default-guide',guide:{identity:'guide',displayName:'The Guide'},values:{guideImage:'default-guide',boss1:'default-boss-1',boss2:'default-boss-2',boss3:'default-boss-3'}},
+    'arcane-archive':{id:'arcane-archive',label:'Arcane Archive',description:'Mystic chambers, artifacts, and mode cards led by the Archivist.',previewAssetId:'arcane-start',guide:{identity:'archivist',displayName:'The Archivist'},values:arcaneValues},
+    'market-citadel':{id:'market-citadel',label:'Market Gate',description:'Marble market halls, artifacts, and mode cards led by the Chancellor.',previewAssetId:'market-start',guide:{identity:'chancellor',displayName:'The Chancellor'},values:{startBackground:'market-start',gameplayBackground:'market-gameplay',hallway1:'market-hall-1',hallway2:'market-hall-2',hallway3:'market-hall-3',guideImage:'economic-guide',boss1:'market-boss-1',boss2:'market-boss-2',boss3:'market-boss-3',artifact1:'market-artifact-1',artifact2:'market-artifact-2',artifact3:'market-artifact-3',...economicModeValues}},
+    'managerial-cost-directive':{id:'managerial-cost-directive',label:'Cost Directive',description:'A Directorate briefing with themed characters, artifacts, and mode cards led by the Principal.',previewAssetId:'directive-start',guide:{identity:'principal',displayName:'The Principal'},values:directiveValues}
   };
 
-  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'default-character-refresh-2026-08-30',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
+  return Object.freeze({schemaVersion:'1.1.0',libraryVersion:'official-mode-card-completion-2026-08-30',defaultPresetId:'default',slots:Object.freeze(slots),assets:Object.freeze(assets),presets:Object.freeze(presets)});
 });

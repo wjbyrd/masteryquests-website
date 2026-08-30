@@ -549,7 +549,7 @@ function renderModeOptions(){
           : mode === 'timed'
             ? 'Ten-minute adaptive run without checkpoint minimums.'
             : mode === 'exam'
-              ? 'Adaptive 30-room practice without checkpoints. Students may end early and generate a Mastery Report.'
+              ? 'Nine-question sections with review navigation and deliberate adaptive checkpoints. Correctness stays hidden until commitment.'
               : mode === 'quiz'
                 ? 'Fixed-length classroom quiz. Students choose 1–15 questions; faculty-selected concepts stay locked.'
                 : mode === 'unlimited'

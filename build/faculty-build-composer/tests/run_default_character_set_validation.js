@@ -42,7 +42,7 @@ const expected = [
 ];
 
 function run(){
-  check(themes.libraryVersion === 'default-character-refresh-2026-08-30', 'Default character library version is stale');
+  check(themes.libraryVersion === 'official-mode-card-completion-2026-08-30', 'Official theme library version is stale');
   check(themes.presets.default.values.guideImage === 'default-guide', 'Default preset does not register the real Guide');
   check(themes.presets.default.previewAssetId === 'default-guide', 'Default preset card does not preview the Guide');
 
