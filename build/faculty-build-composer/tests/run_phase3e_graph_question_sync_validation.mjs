@@ -19,6 +19,8 @@ const manifestPath = path.join(composerRoot, "data/composer_library_manifest.jso
 const phaseIds = new Set(ordinaryQuestions.map(question => String(question.id)));
 const foundationsRemediation = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "foundations_audit_remediation.json"), "utf8"));
 const foundationsExpectedById = new Map(foundationsRemediation.changes.map(change => [String(change.id), change.after]));
+const graphIntegrityRemediation = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "graph_assessment_integrity_remediation.json"), "utf8"));
+const graphIntegrityExpectedById = new Map(graphIntegrityRemediation.changes.map(change => [String(change.id), change.after]));
 
 const expectedConcept = new Map([
   ...range(40000, 40005).map(id => [id, "production-possibilities-frontier"]),
@@ -118,18 +120,20 @@ async function run() {
     const { conceptId, pool, question } = found;
     pass(conceptId === expectedConcept.get(author.id), `Concept mapping ${author.id}: ${conceptId}`);
     pass(pool === author.pool && question.difficulty === author.pool && question.canonicalDifficulty === author.pool, `Difficulty ${author.id}`);
-    const curated = foundationsExpectedById.get(String(author.id));
+    const curated = graphIntegrityExpectedById.get(String(author.id)) || foundationsExpectedById.get(String(author.id));
     pass(
       curated ? question.q === curated.q && question.feedback === curated.feedback : question.q === author.q && question.feedback === author.feedback,
       `Canonical copy changed ${author.id}`
     );
-    pass(question.type === author.type && question.objective === author.objective, `Type/objective ${author.id}`);
+    pass(question.type === (curated?.type || author.type) && question.objective === author.objective, `Type/objective ${author.id}`);
     pass(question.primarySkill === author.primarySkill && question.repairSkill === author.repairSkill, `Skill metadata ${author.id}`);
     pass(question.graphRequired === true && Boolean(question.image), `Graph requirement ${author.id}`);
-    pass(question.imageAlt === graphAssets[author.asset] && question.graphDescription === graphAssets[author.asset], `Accessibility metadata ${author.id}`);
+    const expectedAccessibility = curated?.imageAlt || graphAssets[author.asset];
+    pass(question.imageAlt === expectedAccessibility && question.graphDescription === (curated?.graphDescription || expectedAccessibility), `Accessibility metadata ${author.id}`);
     pass(!Object.hasOwn(question, "answer") && !Object.hasOwn(question, "correctAnswer") && !Object.hasOwn(question, "correctIndex"), `Plaintext answer field ${author.id}`);
     const correctHashes = question.options.filter(option => sha256(normalize(option)) === question.aHash);
-    pass(correctHashes.length === 1 && correctHashes[0] === author.answer, `Answer hash ${author.id}`);
+    const expectedAnswerHash = curated?.aHash || sha256(normalize(author.answer));
+    pass(correctHashes.length === 1 && question.aHash === expectedAnswerHash, `Answer hash ${author.id}`);
     const metadata = library.concepts[conceptId].assetMetadata.find(asset => asset.runtimePath === question.image);
     pass(Boolean(metadata), `Missing asset metadata ${author.id}`);
     if (metadata) {
@@ -144,7 +148,7 @@ async function run() {
 
   const allIds = ordinary.map(({ question }) => String(question.id));
   pass(new Set(allIds).size === allIds.length - 21, `Unexpected ordinary ID duplication delta ${allIds.length - new Set(allIds).size}`);
-  const phaseAssets = library.assetInventory.filter(asset => asset.sourceCurationPhase === "phase3e-market-gate-graph-sync-v1");
+  const phaseAssets = library.assetInventory.filter(asset => ["phase3e-market-gate-graph-sync-v1", graphIntegrityRemediation.phase].includes(asset.sourceCurationPhase));
   pass(phaseAssets.length === 21, `Phase 3E asset registration count ${phaseAssets.length}`);
   for (const asset of phaseAssets) {
     pass(synchronized.some(({ question }) => question.image === asset.runtimePath), `Orphan Phase 3E asset ${asset.conceptId}/${asset.filename}`);
@@ -177,6 +181,8 @@ async function run() {
   pass(synchronized.every(({ question }) => composition.trialGraphQuestionIds.includes(String(question.id))), "Trial by Graph omitted a Phase 3E question");
   pass(Object.values(composition.banks).flat().some(question => !question.image), "Non-graph regression fixture is missing");
   embedQuestionAssets(composition);
+  const generatedGraphValidation = core.validateGeneratedGraphAssets(composition);
+  pass(generatedGraphValidation.ok, `Generated graph integrity: ${generatedGraphValidation.issues.map(issue => `${issue.id} ${issue.issue}`).join(" | ")}`);
   const template = helpers.loadCanonicalTemplate();
   helpers.attachConceptReviewRuntime(core, composition, library, selectedConceptIds);
   const config = await core.createConfig(recipe, library, await core.sha256Hex(template));

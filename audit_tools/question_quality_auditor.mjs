@@ -20,6 +20,9 @@ const GRAPH_POINT_MOVEMENT = /\b(?:move|moves|moving|production moves|changes? p
 const GRAPH_QUANTIFIED_RESULT = /\b(?:increase|increases|increased|increasing|gain|gains|gained|gaining|rise|rises|rose|reduce|reduces|reduced|reducing|decrease|decreases|decreased|decreasing|fall|falls|fell|falling|drop|drops|dropped|dropping|sacrifice|sacrifices|sacrificed|sacrificing|give up|gives up|gave up|giving up|cost|costs|costing)\b[^?.;]{0,55}?(?:\$\s*)?\d+(?:\.\d+)?%?/gi;
 const GRAPH_COORDINATE_TRANSITION = /\b(?:move|moves|moving|changes? production)\s+from\s+(?:about\s+)?(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,45}?(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,20}?\bto\s+(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,45}?(?:\$\s*)?\d+(?:\.\d+)?/i;
 const GRAPH_COORDINATE_PAIR = /\b(?:point\s+)?[A-Z]\s+(?:is|lies|starts?|ends?|at)\s+(?:about\s+)?\(?\s*(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,45}(?:\$\s*)?\d+(?:\.\d+)?/gi;
+const GRAPH_LOW_VALUE_TASK = /\b(?:axes?\s+(?:lack|has no|have no)\s+(?:numeric|numerical)\s+ticks?|graph\b[^?]{0,60}\b(?:has no|lacks?)\s+(?:numeric|numerical)\s+ticks?|because\s+the\s+axes?\s+lacks?|what\s+can\s+be\s+determined\s+from\s+this\s+graph|which\s+information\s+cannot\s+be\s+read\s+exactly|which\s+statement\s+about\s+the\s+graph\s+labels|what\s+does\s+the\s+graph\s+allow\s+us\s+to\s+compare|can\s+exact\s+magnitudes\s+be\s+read|direction\s+and\s+ordering,?\s+not\s+exact\s+magnitudes)\b/i;
+const MULTISTAGE_GRAPH_TASK = /\b(?:two[- ]stages?|three[- ]stages?|initial\b[^?]{0,100}\bfinal|first\b[^?]{0,120}\bthen|subsequent\s+movement)\b/i;
+const GRAPH_ECONOMIC_CONCEPTS = new Set(["demand", "supply", "market-equilibrium", "production-possibilities-frontier"]);
 
 export function normalizeText(value) {
   return String(value ?? "")
@@ -40,6 +43,76 @@ export function normalizeComparable(value) {
 
 function sha256(value) {
   return crypto.createHash("sha256").update(value).digest("hex");
+}
+
+function isGraphLinked(question) {
+  return Boolean(question.image || question.asset || question.graphRequired || /graph/i.test(question.type || ""));
+}
+
+function exactCasePathExists(root, relativePath) {
+  const segments = String(relativePath || "").replaceAll("\\", "/").split("/").filter(Boolean);
+  let current = root;
+  for (const segment of segments) {
+    if (!fs.existsSync(current)) return false;
+    const exact = fs.readdirSync(current).find(name => name === segment);
+    if (!exact) return false;
+    current = path.join(current, exact);
+  }
+  return true;
+}
+
+function graphPointReferences(stem) {
+  const points = new Set();
+  const patterns = [
+    /\bpoint\s+([A-Z])\b/g,
+    /\bfrom\s+(?:point\s+)?([A-Z])\s+to\s+(?:point\s+)?([A-Z])\b/g,
+    /\b(?:begins?|starts?|ends?|located)\s+at\s+(?:point\s+)?([A-Z])\b/g,
+    /\b([A-Z])\s*\/\s*([A-Z])\s*\/\s*([A-Z])\b/g
+  ];
+  for (const pattern of patterns) {
+    for (const match of stem.matchAll(pattern)) for (const value of match.slice(1)) if (value) points.add(value);
+  }
+  return [...points];
+}
+
+function accessibilityAnswerLeak(stem, accessibility) {
+  if (!accessibility) return false;
+  const asksMarketChange = /\b(?:what\s+market\s+change|how\s+does\s+equilibrium\s+change|which\s+(?:curve|schedule)\s+shifted|which\s+explanation\b[^?]{0,100}\bidentifies?\s+the\s+curve\s+shift|which\s+description\b[^?]{0,100}\bseparates?\s+the\s+(?:demand|supply)\s+shift|identify\b[^?]{0,80}\bcurve\s+shift|why\b[^?]{0,80}\b(?:increase|decrease)\s+in\s+(?:demand|supply)|is\b[^?]{0,80}\b(?:increase|decrease)\s+in\s+(?:demand|supply))\b/i.test(stem);
+  const statesMarketChange = /\b(?:demand|supply)\b[^.;]{0,55}\b(?:shifts?|shifted|increase[sd]?|decrease[sd]?)\b(?:[^.;]{0,20}\b(?:left|right)\b)?/i.test(accessibility)
+    || /\bshift(?:s|ed|ing)?\s+(?:left|right)\b/i.test(accessibility);
+  if (asksMarketChange && statesMarketChange) return true;
+
+  const asksClassification = /\bwhich\s+point\b[^?]{0,80}\b(?:efficient|inefficient|attainable|unattainable)\b/i.test(stem);
+  const statesClassification = /\bpoint\s+[A-Z]\b[^.;]{0,60}\b(?:efficient|inefficient|attainable|unattainable)\b/i.test(accessibility);
+  if (asksClassification && statesClassification) return true;
+
+  const asksOutcome = /\b(?:what|which|determine|calculate)\b[^?]{0,100}\b(?:equilibrium\s+price|equilibrium\s+quantity|shortage|surplus|opportunity\s+cost|elasticity\s+classification)\b/i.test(stem);
+  const statesOutcome = /\b(?:equilibrium\s+(?:price|quantity)\s+(?:rises?|falls?|increases?|decreases?)|shortage\s+(?:is|equals|of)|surplus\s+(?:is|equals|of)|opportunity\s+cost\s+(?:is|equals)|(?:elastic|inelastic|unit\s+elastic))\b/i.test(accessibility);
+  return asksOutcome && statesOutcome;
+}
+
+function graphQuestionEvidenceMismatch(stem, accessibility, answerOptions) {
+  const points = graphPointReferences(stem);
+  const missingPoints = points.filter(point => !new RegExp(`\\b(?:point\\s+)?${point}\\b`).test(accessibility));
+  if (missingPoints.length) return `The stem references point${missingPoints.length > 1 ? "s" : ""} ${missingPoints.join(", ")}, but the graph/accessibility contract does not identify ${missingPoints.length > 1 ? "them" : "it"}.`;
+
+  const multistage = MULTISTAGE_GRAPH_TASK.test(stem);
+  const anchors = stem.match(/(?<![\p{L}])(?:\$\s*)?\d+(?:\.\d+)?%?(?![\p{L}])/gu) || [];
+  if (multistage && points.length < 2 && anchors.length < 2) {
+    return "The stem asks for a multi-stage graph path without identifying the observations or stages the learner should inspect.";
+  }
+
+  const optionPaths = answerOptions.filter(option => /(?:\d+(?:\.\d+)?\s*(?:→|->)\s*)+\d+(?:\.\d+)?/.test(option)).length;
+  if (multistage && optionPaths >= 2 && points.length < 2 && anchors.length < 2) {
+    return "The answer options define candidate graph paths while the stem does not identify which graph observations matter.";
+  }
+
+  const asksCombinedEquilibrium = /\b(?:new|final)\s+equilibrium\b/i.test(stem)
+    && /\b(?:income|production\s+cost|input\s+cost|technology|tax|demand|supply)\b/i.test(stem);
+  if (asksCombinedEquilibrium && !(/\bD\d\b/.test(accessibility) && /\bS\d\b/.test(accessibility))) {
+    return "The task requires a demand-and-supply equilibrium transition, but the graph contract does not identify both curve families.";
+  }
+  return "";
 }
 
 function answerHash(value) {
@@ -178,7 +251,7 @@ export function auditQuestionRecords(entries, options = {}) {
     const normalizedOptions = answerOptions.map(normalizeComparable);
     const difficulty = normalizeComparable(question.canonicalDifficulty || question.difficulty);
     const supportOnly = [...entry.pools].every(pool => ["repair", "repairSeed", "bridge"].includes(pool));
-    const graphLinked = Boolean(question.image || question.asset || question.graphRequired || /graph/i.test(question.type || ""));
+    const graphLinked = isGraphLinked(question);
     const image = String(question.image || question.asset || "").replaceAll("\\", "/");
 
     if (!stem) addFinding(findings, entry, "ERROR", "missing-stem", "Question stem is missing.");
@@ -213,15 +286,35 @@ export function auditQuestionRecords(entries, options = {}) {
     if (question.graphRequired && !image) addFinding(findings, entry, "ERROR", "graph-required-without-image", "graphRequired is true but no graph asset is attached.");
     if (image) {
       const asset = resolveAsset(assetMap, image);
+      const accessibility = normalizeText([
+        question.imageAlt,
+        question.graphDescription,
+        asset?.imageAlt,
+        asset?.graphDescription
+      ].filter(Boolean).join(" "));
       if (validateAssets && !asset) {
         addFinding(findings, entry, "ERROR", "unregistered-graph-asset", `Attached image '${image}' is not registered in the Composer asset inventory.`);
       } else if (validateAssets) {
         const diskPath = path.join(composerRoot, "data", String(asset.runtimePath || image));
-        if (!fs.existsSync(diskPath)) addFinding(findings, entry, "ERROR", "missing-graph-file", `Registered graph file does not exist: ${asset.runtimePath || image}.`);
+        const relativePath = String(asset.runtimePath || image);
+        if (!fs.existsSync(diskPath)) addFinding(findings, entry, "ERROR", "missing-graph-file", `Registered graph file does not exist: ${relativePath}.`);
+        else {
+          if (!exactCasePathExists(path.join(composerRoot, "data"), relativePath)) addFinding(findings, entry, "ERROR", "graph-asset-case-mismatch", `Registered graph path has incorrect filename or directory case: ${relativePath}.`);
+          const bytes = fs.readFileSync(diskPath);
+          if (Number.isFinite(asset.sizeBytes) && bytes.length !== asset.sizeBytes) addFinding(findings, entry, "ERROR", "graph-asset-size-mismatch", `Registered size ${asset.sizeBytes} does not match the graph file size ${bytes.length}.`);
+          if (asset.sha256 && sha256(bytes) !== asset.sha256) addFinding(findings, entry, "ERROR", "graph-asset-integrity-mismatch", "Registered SHA-256 does not match the current graph file.");
+        }
         const labels = [...new Set(`${stem} ${feedback}`.match(CURVE_LABEL) || [])];
         const assetDescription = `${asset.imageAlt || ""} ${asset.graphDescription || ""}`;
         const missingLabels = labels.filter(label => !new RegExp(`\\b${label.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}\\b`).test(assetDescription));
         if (missingLabels.length) addFinding(findings, entry, "REVIEW", "curve-label-metadata-mismatch", `Curve labels ${missingLabels.join(", ")} do not appear in the registered graph description.`, "Confirm that the wording, feedback, and displayed graph use the same labels.");
+      }
+      if (words(accessibility).length < 8) addFinding(findings, entry, "WARNING", "graph-accessibility-insufficient", "The graph lacks a sufficiently detailed accessible evidence description.", "Describe axes, curves, points, and task-relevant relationships without stating the assessed conclusion.");
+      if (accessibilityAnswerLeak(stem, accessibility)) addFinding(findings, entry, "REVIEW", "accessibility-answer-leak", "The accessibility representation appears to state the economic inference or classification the learner is being asked to determine.", "Provide equivalent structural evidence, coordinates, or relationships without naming the assessed conclusion.");
+      const evidenceMismatch = graphQuestionEvidenceMismatch(stem, accessibility, answerOptions);
+      if (evidenceMismatch) addFinding(findings, entry, "WARNING", "graph-question-evidence-mismatch", evidenceMismatch, "Make the intended graph observations identifiable from the stem and graph contract before the learner reads the options.");
+      if (GRAPH_ECONOMIC_CONCEPTS.has(entry.conceptId) && GRAPH_LOW_VALUE_TASK.test(`${stem} ${answerOptions.join(" ")}`)) {
+        addFinding(findings, entry, "REVIEW", "graph-task-low-economic-value", "The item appears to use an economics graph mainly to test formatting, labels, missing ticks, or generic graph limitations.", "Use the graph for meaningful economic reasoning unless graph literacy is the explicit learning objective.");
       }
       const stemUsesGraph = GRAPH_CUE.test(stem);
       if (stemUsesGraph && graphEvidenceRedundantInStem(stem)) {
@@ -436,7 +529,7 @@ export function renderMarkdownReport(result) {
 }
 
 function parseArgs(argv) {
-  const config = { concepts: [], pools: [], failOn: "error" };
+  const config = { concepts: [], pools: [], failOn: "error", graphLinkedOnly: false };
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     const next = () => {
@@ -452,6 +545,7 @@ function parseArgs(argv) {
     else if (arg === "--json") config.jsonPath = path.resolve(next());
     else if (arg === "--report") config.reportPath = path.resolve(next());
     else if (arg === "--fail-on") config.failOn = next().toLowerCase();
+    else if (arg === "--graph-linked-only") config.graphLinkedOnly = true;
     else if (arg === "--all") config.all = true;
     else if (arg === "--help" || arg === "-h") config.help = true;
     else throw new Error(`Unknown argument: ${arg}`);
@@ -460,7 +554,7 @@ function parseArgs(argv) {
 }
 
 function help() {
-  return `Question Quality Auditor\n\nUsage:\n  node audit_tools/question_quality_auditor.mjs --concepts demand,supply,market-equilibrium [options]\n\nOptions:\n  --concept ID       Audit one concept; repeat as needed.\n  --concepts A,B     Audit a comma-separated concept list.\n  --pool NAME        Limit to one pool; repeat as needed.\n  --pools A,B        Limit to comma-separated pools.\n  --all              Audit the whole Composer corpus.\n  --json PATH        Write the machine-readable report.\n  --report PATH      Write the Markdown report.\n  --fail-on LEVEL    error (default), warning, review, or none.\n  --library PATH     Override composer_library.js.\n`;
+  return `Question Quality Auditor\n\nUsage:\n  node audit_tools/question_quality_auditor.mjs --concepts demand,supply,market-equilibrium [options]\n\nOptions:\n  --concept ID       Audit one concept; repeat as needed.\n  --concepts A,B     Audit a comma-separated concept list.\n  --pool NAME        Limit to one pool; repeat as needed.\n  --pools A,B        Limit to comma-separated pools.\n  --graph-linked-only\n                      Inspect only questions linked to graph assets/metadata.\n  --all              Audit the whole Composer corpus.\n  --json PATH        Write the machine-readable report.\n  --report PATH      Write the Markdown report.\n  --fail-on LEVEL    error (default), warning, review, or none.\n  --library PATH     Override composer_library.js.\n`;
 }
 
 async function main() {
@@ -473,7 +567,8 @@ async function main() {
   if (!new Set(["error", "warning", "review", "none"]).has(config.failOn)) throw new Error("--fail-on must be error, warning, review, or none.");
   const library = loadComposerLibrary(config.libraryPath || DEFAULT_LIBRARY);
   const concepts = config.all ? Object.keys(library.concepts || {}).sort() : [...new Set(config.concepts)];
-  const entries = collectComposerQuestions(library, { concepts, pools: [...new Set(config.pools)] });
+  let entries = collectComposerQuestions(library, { concepts, pools: [...new Set(config.pools)] });
+  if (config.graphLinkedOnly) entries = entries.filter(entry => isGraphLinked(entry.question));
   const audit = auditQuestionRecords(entries, { assetMap: inventoryMap(library), composerRoot: DEFAULT_COMPOSER_ROOT });
   const grouped = new Map();
   for (const finding of audit.findings) {
@@ -502,7 +597,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     libraryVersion: library.libraryVersion,
     librarySha256: library.librarySha256,
-    scope: { concepts, pools: [...new Set(config.pools)], poolInventory, questionCount: entries.length, conceptQuestionCounts, questionCountsByPool },
+    scope: { concepts, pools: [...new Set(config.pools)], graphLinkedOnly: config.graphLinkedOnly, poolInventory, questionCount: entries.length, conceptQuestionCounts, questionCountsByPool },
     counts: audit.counts,
     ruleCounts: [...grouped.entries()].map(([key, count]) => {
       const [severity, ...rule] = key.split(":");

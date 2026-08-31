@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-31T17:38:12.468Z",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1",
+  "librarySha256": "29065eba1be81a67ced5ba542dd94172961a6a79bb76dbc313985c73551cad74",
+  "scope": {
+    "concepts": [
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "production-possibilities-frontier"
+    ],
+    "pools": [],
+    "graphLinkedOnly": true,
+    "poolInventory": [
+      "calculation",
+      "easy",
+      "elite",
+      "hard",
+      "legendary",
+      "medium"
+    ],
+    "questionCount": 115,
+    "conceptQuestionCounts": [
+      {
+        "concept": "demand",
+        "count": 25
+      },
+      {
+        "concept": "supply",
+        "count": 23
+      },
+      {
+        "concept": "market-equilibrium",
+        "count": 38
+      },
+      {
+        "concept": "production-possibilities-frontier",
+        "count": 29
+      }
+    ],
+    "questionCountsByPool": [
+      {
+        "pool": "calculation",
+        "count": 8
+      },
+      {
+        "pool": "easy",
+        "count": 8
+      },
+      {
+        "pool": "elite",
+        "count": 17
+      },
+      {
+        "pool": "hard",
+        "count": 27
+      },
+      {
+        "pool": "legendary",
+        "count": 21
+      },
+      {
+        "pool": "medium",
+        "count": 34
+      }
+    ]
+  },
+  "counts": {
+    "errors": 0,
+    "warnings": 1,
+    "reviews": 11
+  },
+  "ruleCounts": [
+    {
+      "severity": "REVIEW",
+      "rule": "accessibility-answer-leak",
+      "count": 5
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "graph-task-low-economic-value",
+      "count": 1
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "count": 4
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-question-evidence-mismatch",
+      "count": 1
+    }
+  ],
+  "conceptFindingCounts": [
+    {
+      "concept": "production-possibilities-frontier",
+      "count": 5
+    },
+    {
+      "concept": "demand",
+      "count": 3
+    },
+    {
+      "concept": "supply",
+      "count": 3
+    },
+    {
+      "concept": "market-equilibrium",
+      "count": 1
+    }
+  ],
+  "poolFindingCounts": [
+    {
+      "pool": "calculation",
+      "count": 3
+    },
+    {
+      "pool": "elite",
+      "count": 3
+    },
+    {
+      "pool": "legendary",
+      "count": 3
+    },
+    {
+      "pool": "medium",
+      "count": 2
+    },
+    {
+      "pool": "hard",
+      "count": 1
+    },
+    {
+      "pool": "easy",
+      "count": 0
+    }
+  ],
+  "findingSummary": {
+    "totalFindings": 12,
+    "uniqueQuestionsAffected": 12,
+    "questionsWithMultipleFindings": []
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "rule": "graph-question-evidence-mismatch",
+      "questionId": "PG1-DMD-L-002",
+      "concept": "demand",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem asks for a multi-stage graph path without identifying the observations or stages the learner should inspect.",
+      "suggestion": "Make the intended graph observations identifiable from the stem and graph contract before the learner reads the options.",
+      "wording": "Refer to the graph. Compare the two stages from the initial point on D0 to the final point on D1, and identify the accounting that separates the curve shift from movement caused by the price fall."
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "accessibility-answer-leak",
+      "questionId": "40009",
+      "concept": "demand",
+      "pools": [
+        "medium"
+      ],
+      "message": "The accessibility representation appears to state the economic inference or classification the learner is being asked to determine.",
+      "suggestion": "Provide equivalent structural evidence, coordinates, or relationships without naming the assessed conclusion.",
+      "wording": "How does equilibrium change as demand moves from D0 to D1?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "accessibility-answer-leak",
+      "questionId": "40011",
+      "concept": "demand",
+      "pools": [
+        "elite"
+      ],
+      "message": "The accessibility representation appears to state the economic inference or classification the learner is being asked to determine.",
+      "suggestion": "Provide equivalent structural evidence, coordinates, or relationships without naming the assessed conclusion.",
+      "wording": "Refer to the graph. Which description correctly separates the demand shift from the movement along supply?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "graph-task-low-economic-value",
+      "questionId": "40020",
+      "concept": "market-equilibrium",
+      "pools": [
+        "elite"
+      ],
+      "message": "The item appears to use an economics graph mainly to test formatting, labels, missing ticks, or generic graph limitations.",
+      "suggestion": "Use the graph for meaningful economic reasoning unless graph literacy is the explicit learning objective.",
+      "wording": "Refer to the graph. Because the axes lack numeric ticks, which result remains defensible?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "40005",
+      "concept": "production-possibilities-frontier",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph. What can the outward shift establish without knowing society's preferences?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-MG-HARD-250",
+      "concept": "production-possibilities-frontier",
+      "pools": [
+        "calculation"
+      ],
+      "message": "Stem is 100% token-similar to ECON-MG-HARD-251. Automated comparison indicates differences in: graph point.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from A to B?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-MG-HARD-251",
+      "concept": "production-possibilities-frontier",
+      "pools": [
+        "calculation"
+      ],
+      "message": "Stem is 100% token-similar to ECON-MG-HARD-252. Automated comparison indicates differences in: graph point.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from B to C?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-MG-HARD-252",
+      "concept": "production-possibilities-frontier",
+      "pools": [
+        "calculation"
+      ],
+      "message": "Stem is 100% token-similar to ECON-MG-HARD-255. Automated comparison indicates differences in: graph point, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from D to E?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-MG-LEGENDARY-9002",
+      "concept": "production-possibilities-frontier",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Stem is 100% token-similar to ECON-MG-HARD-250. Automated comparison indicates differences in: graph point, pedagogical role/pool (legendary vs calculation).",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from C to D?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "accessibility-answer-leak",
+      "questionId": "40006",
+      "concept": "supply",
+      "pools": [
+        "medium"
+      ],
+      "message": "The accessibility representation appears to state the economic inference or classification the learner is being asked to determine.",
+      "suggestion": "Provide equivalent structural evidence, coordinates, or relationships without naming the assessed conclusion.",
+      "wording": "What market change is shown from A to B?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "accessibility-answer-leak",
+      "questionId": "40007",
+      "concept": "supply",
+      "pools": [
+        "hard"
+      ],
+      "message": "The accessibility representation appears to state the economic inference or classification the learner is being asked to determine.",
+      "suggestion": "Provide equivalent structural evidence, coordinates, or relationships without naming the assessed conclusion.",
+      "wording": "Refer to the graph. Equilibrium moves from A to B after one market determinant changes. Evaluate the graph evidence: which explanation identifies the curve shift and connects it to the new price and quantity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "accessibility-answer-leak",
+      "questionId": "40008",
+      "concept": "supply",
+      "pools": [
+        "elite"
+      ],
+      "message": "The accessibility representation appears to state the economic inference or classification the learner is being asked to determine.",
+      "suggestion": "Provide equivalent structural evidence, coordinates, or relationships without naming the assessed conclusion.",
+      "wording": "Refer to the graph. Why is the move from A to B a decrease in supply rather than merely a decrease in quantity supplied?"
+    }
+  ]
+}

@@ -1609,6 +1609,11 @@ async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress 
   metadata.themeLibraryVersion = ThemeLibrary.libraryVersion;
   if(reportProgress) announce(composition.assets.length ? 'Embedding selected graph images.' : 'Preparing self-contained game file.');
   composition.embeddedQuestionAssets = await loadEmbeddedQuestionAssets(composition.assets);
+  const generatedGraphValidation = Core.validateGeneratedGraphAssets(composition);
+  if(!generatedGraphValidation.ok){
+    const details = generatedGraphValidation.issues.slice(0, 5).map(issue => `${issue.id}: ${issue.issue}`).join('; ');
+    throw new Error(`Generated Quest graph integrity validation failed for ${generatedGraphValidation.issues.length} question(s): ${details}`);
+  }
   composition.conceptReviewRuntimeSource = state.conceptReviewRuntimeSource;
   composition.conceptReviewRuntimeIndex = conceptReviews.runtimeIndex;
   const html = Core.buildHtml(state.templateText, composition, config, metadata);

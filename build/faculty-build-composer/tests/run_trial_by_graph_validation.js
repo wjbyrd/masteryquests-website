@@ -1,6 +1,7 @@
 const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
+const crypto=require('crypto');
 const root=path.resolve(__dirname,'..');
 const core=require('../composer-core.js');
 const {attachConceptReviewRuntime,assertCanonicalCoreVersion,assertGeneratedComposerVersion,writeTestArtifact}=require('./composer-test-helpers.js');
@@ -24,7 +25,40 @@ function extractFunction(src,name){
 }
 
 function recipe(id,modes=['trialGraph']){
-  return {schemaVersion:core.RECIPE_SCHEMA_VERSION,title:`Trial Graph ${id}`,slug:`trial-graph-${id}`,supportedModes:modes,selectedConceptIds:[id],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
+  const ids=Array.isArray(id)?id:[id];
+  return {schemaVersion:core.RECIPE_SCHEMA_VERSION,title:`Trial Graph ${ids.join(' ')}`,slug:`trial-graph-${ids.join('-')}`,supportedModes:modes,selectedConceptIds:ids,checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
+}
+
+function exactCasePathExists(rootPath,relativePath){
+  let current=rootPath;
+  for(const segment of String(relativePath||'').replaceAll('\\','/').split('/').filter(Boolean)){
+    if(!fs.existsSync(current)) return false;
+    const exact=fs.readdirSync(current).find(name=>name===segment);
+    if(!exact) return false;
+    current=path.join(current,exact);
+  }
+  return true;
+}
+
+function embedQuestionAssets(composition,{omitRuntimePath=''}={}){
+  const embedded={};
+  const issues=[];
+  for(const asset of composition.assets||[]){
+    const runtimePath=String(asset.runtimePath||'');
+    const filePath=path.join(root,'data',runtimePath);
+    if(!runtimePath||!exactCasePathExists(path.join(root,'data'),runtimePath)){
+      issues.push(`${runtimePath||'(missing path)'} has missing or case-mismatched source`);
+      continue;
+    }
+    const bytes=fs.readFileSync(filePath);
+    const actual=crypto.createHash('sha256').update(bytes).digest('hex');
+    if(actual!==asset.sha256) issues.push(`${runtimePath} hash mismatch`);
+    if(bytes.length!==asset.sizeBytes) issues.push(`${runtimePath} size mismatch`);
+    if(runtimePath!==omitRuntimePath) embedded[runtimePath]=`data:image/webp;base64,${bytes.toString('base64')}`;
+  }
+  if(issues.length) throw new Error(issues.join(' | '));
+  composition.embeddedQuestionAssets=embedded;
+  return embedded;
 }
 
 function runtimeDeckCheck(composition,target){
@@ -121,13 +155,41 @@ function runtimeDeckCheck(composition,target){
   if(noGraphValidation?.ok) issues.push('zero-graph concept incorrectly passes');
   if(!noGraph.errors.some(e=>String(e).includes('graphSafe needs 10'))) issues.push('zero-graph deficiency not surfaced');
 
-  const config=await core.createConfig(recipe('perfect-competition'),library,await core.sha256Hex(template));
-  const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:allEight.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:config.templateSha256};
-  const trialOnly=core.compose(library,recipe('perfect-competition'));
+  const representativeConcepts=['demand','supply','market-equilibrium','production-possibilities-frontier'];
+  const representativeRecipe=recipe(representativeConcepts);
+  const trialOnly=core.compose(library,representativeRecipe);
+  const config=await core.createConfig(representativeRecipe,library,await core.sha256Hex(template));
+  const metadata={schemaVersion:core.RECIPE_SCHEMA_VERSION,composerVersion:core.COMPOSER_VERSION,title:config.title,slug:config.slug,selectedConceptIds:config.selectedConceptIds,checkpointFocus:config.checkpointFocus,bossCoverage:trialOnly.bossCoverage,supportedModes:config.supportedModes,saveKeyNamespace:config.saveKeyNamespace,compositionFingerprint:config.compositionFingerprint,libraryVersion:library.libraryVersion,librarySha256:library.librarySha256,templateSha256:config.templateSha256};
+  const brokenGeneratedValidation=core.validateGeneratedGraphAssets(trialOnly);
+  if(brokenGeneratedValidation.ok||!brokenGeneratedValidation.issues.some(issue=>issue.issue.includes('not embedded'))) issues.push('broken generated graph was not rejected');
+  const omittedPath='question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp';
+  embedQuestionAssets(trialOnly,{omitRuntimePath:omittedPath});
+  const omittedGeneratedValidation=core.validateGeneratedGraphAssets(trialOnly);
+  if(omittedGeneratedValidation.ok||!omittedGeneratedValidation.issues.some(issue=>issue.image===omittedPath)) issues.push('selectively omitted generated graph was not rejected');
+  const embeddedAssets=embedQuestionAssets(trialOnly);
+  const validGeneratedValidation=core.validateGeneratedGraphAssets(trialOnly);
+  if(!validGeneratedValidation.ok) issues.push(...validGeneratedValidation.issues.map(issue=>`generated graph: ${issue.id} ${issue.issue}`));
+  for(const id of ['40006','PG1-DMD-L-002','40020']) if(!trialOnly.trialGraphQuestionIds.map(String).includes(id)) issues.push(`representative Trial output omitted ${id}`);
   attachConceptReviewRuntime(core,trialOnly,library,config.selectedConceptIds);
   const html=core.buildHtml(template,trialOnly,config,metadata);
   assertGeneratedComposerVersion(html);
   writeTestArtifact('tests/trial-by-graph-only.html',html);
+  const smokeIds=['40006','PG1-DMD-L-002','40020','40000','PG1-DMD-E-001','PG1-SUP-E-001','PG1-EQ-E-001','40003','40009','40018'];
+  const smoke=structuredClone(trialOnly);
+  for(const [pool,questions] of Object.entries(smoke.banks||{})) smoke.banks[pool]=(questions||[]).filter(question=>smokeIds.includes(String(question.id||question.canonicalId)));
+  smoke.challengeQuestionBanks={easyBoss:[],mediumBoss:[],finalBoss:[],legendaryBoss:[]};
+  smoke.repairQuestions=[];
+  smoke.bridgeQuestions=[];
+  smoke.skillRepairSeedPools={};
+  smoke.trialGraphQuestionIds=[...smokeIds];
+  const usedSmokePaths=new Set(Object.values(smoke.banks).flat().map(question=>question.image).filter(Boolean));
+  smoke.assets=smoke.assets.filter(asset=>usedSmokePaths.has(asset.runtimePath));
+  smoke.embeddedQuestionAssets=Object.fromEntries(Object.entries(smoke.embeddedQuestionAssets).filter(([runtimePath])=>usedSmokePaths.has(runtimePath)));
+  const smokeGeneratedValidation=core.validateGeneratedGraphAssets(smoke);
+  if(!smokeGeneratedValidation.ok) issues.push(...smokeGeneratedValidation.issues.map(issue=>`smoke graph: ${issue.id} ${issue.issue}`));
+  const smokeHtml=core.buildHtml(template,smoke,config,{...metadata,phase:'graph-assessment-integrity-smoke'});
+  assertGeneratedComposerVersion(smokeHtml);
+  writeTestArtifact('tests/graph-assessment-integrity-smoke.html',smokeHtml);
   const checks={
     card:html.includes('data-mode="trialGraph"'),
     setup:html.includes('id="trialGraphSetupModal"'),
@@ -138,7 +200,11 @@ function runtimeDeckCheck(composition,target){
     noBosses:html.includes('gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited"'),
     resultCount:html.includes('Graph Questions: ${trialGraphQuestionTarget}'),
     mastery:html.includes('if(gameMode === "trialGraph") return "Trial by Graph";'),
-    configOnly:config.supportedModes.length===1&&config.supportedModes[0]==='trialGraph'
+    configOnly:config.supportedModes.length===1&&config.supportedModes[0]==='trialGraph',
+    embeddedMovieTicket:Boolean(embeddedAssets[omittedPath])&&html.includes(`"${omittedPath}": "data:image/webp;base64,`),
+    embeddedTwoStage:Boolean(embeddedAssets['question-assets/demand/DEMAND-02.webp'])&&html.includes('"question-assets/demand/DEMAND-02.webp": "data:image/webp;base64,'),
+    embeddedFourIntersection:Boolean(embeddedAssets['question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp'])&&html.includes('"question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp": "data:image/webp;base64,'),
+    runtimeGraphFailureDefense:html.includes('Required graph failed to load.')&&html.includes('questionGraphLoadFailed')&&html.includes('setAnswerButtonsDisabled(true)')
   };
   Object.entries(checks).forEach(([k,v])=>{if(!v)issues.push(`missing ${k}`);});
 
@@ -146,6 +212,7 @@ function runtimeDeckCheck(composition,target){
     phase:'mode8-trial-by-graph-v1',ok:issues.length===0,composerVersion:core.COMPOSER_VERSION,
     canonicalQuestionCount:library.canonicalQuestionCount,auditedIds:auditIds.size,graphRequiredFlagged:flagged,
     examples:{perfectCompetition:allEight.counts.graphSafe,demand:demand.counts.graphSafe,aggregateDemand:ad.counts.graphSafe,bankMoneyCreation:noGraph.counts.graphSafe},
+    generatedGraphIntegrity:{brokenRejected:!brokenGeneratedValidation.ok,omittedRejected:!omittedGeneratedValidation.ok,validAccepted:validGeneratedValidation.ok,representativeConcepts,graphQuestions:validGeneratedValidation.questionCount,assets:validGeneratedValidation.assetCount,smokeQuestions:smokeGeneratedValidation.questionCount,smokeAssets:smokeGeneratedValidation.assetCount,smokeIds},
     supportedTargets:{perfectCompetition:deck20.supported,demand:demandRuntime.supported,aggregateDemand:adRuntime.supported},
     allEightModes:allEight.validation.modes.map(m=>({mode:m.mode,ok:m.ok})),issues
   };

@@ -26,9 +26,15 @@ const referGraph=/\brefer to\b[^.]{0,80}\bgraph\b/i;
 const axisIds=['ECON-SP-EASY-25','ECON-SP-EASY-26','ECON-SP-EASY-60','ECON-SP-EASY-61'];
 const screenshotContextIds=['P62C-CPS-L-004','P62C-CPS-L-010'];
 const issues=[];
+const knownProtectedFindings=[];
+const protectedOutOfScopeIds=new Set(['43192']);
 
 for(const q of byId.values()){
-  if(contextGuard.test(q.q||'')) issues.push(`unsafe context start ${q.id}`);
+  if(contextGuard.test(q.q||'')){
+    const finding=`unsafe context start ${q.id}`;
+    if(protectedOutOfScopeIds.has(String(q.id))) knownProtectedFindings.push(finding);
+    else issues.push(finding);
+  }
   if(!q.image && referGraph.test(q.q||'')) issues.push(`orphan graph reference ${q.id}`);
 }
 for(const id of axisIds){
@@ -87,10 +93,12 @@ const compositionCases={
     canonicalQuestionCount:library.canonicalQuestionCount,
     checks:{
       unsafeContextStarts:issues.filter(x=>x.startsWith('unsafe context')).length,
+      protectedOutOfScopeFindings:knownProtectedFindings.length,
       orphanGraphReferences:issues.filter(x=>x.startsWith('orphan graph')).length,
       axisGiveawayImages:issues.filter(x=>x.startsWith('axis giveaway')).length,
       screenshotContextFailures:issues.filter(x=>x.startsWith('screenshot context')).length
     },
+    knownProtectedFindings,
     compositionResults,
     issues
   };

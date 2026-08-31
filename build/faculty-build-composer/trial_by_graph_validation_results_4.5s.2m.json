@@ -11,6 +11,33 @@
     "aggregateDemand": 12,
     "bankMoneyCreation": 0
   },
+  "generatedGraphIntegrity": {
+    "brokenRejected": true,
+    "omittedRejected": true,
+    "validAccepted": true,
+    "representativeConcepts": [
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "production-possibilities-frontier"
+    ],
+    "graphQuestions": 115,
+    "assets": 20,
+    "smokeQuestions": 10,
+    "smokeAssets": 9,
+    "smokeIds": [
+      "40006",
+      "PG1-DMD-L-002",
+      "40020",
+      "40000",
+      "PG1-DMD-E-001",
+      "PG1-SUP-E-001",
+      "PG1-EQ-E-001",
+      "40003",
+      "40009",
+      "40018"
+    ]
+  },
   "supportedTargets": {
     "perfectCompetition": [
       10,

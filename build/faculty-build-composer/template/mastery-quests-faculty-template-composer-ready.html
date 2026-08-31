@@ -10175,9 +10175,12 @@ function getQuestionGraphAccessibility(question){
     };
 }
 
+let questionGraphLoadFailed = false;
+
 function renderQuestionGraph(question){
     const imageBox = document.getElementById("questionImageBox");
     if(!imageBox) return;
+    questionGraphLoadFailed = false;
     if(!question?.image){
         imageBox.innerHTML = "";
         imageBox.style.display = "none";
@@ -10188,6 +10191,14 @@ function renderQuestionGraph(question){
     const description = escapeHTML(accessibility.graphDescription);
     imageBox.innerHTML = `<img src="${resolveQuestionImage(question.image)}" alt="${alt}" aria-describedby="questionGraphDescription" data-graph-description="${description}" title="Click to enlarge" role="button" tabindex="0" aria-label="Open expanded graph: ${alt}"><p id="questionGraphDescription" class="sr-only">${description}</p><div class="graph-zoom-note">Click graph to enlarge</div>`;
     imageBox.style.display = "block";
+    const graphImage = imageBox.querySelector("img");
+    graphImage?.addEventListener("error", () => {
+        questionGraphLoadFailed = true;
+        imageBox.innerHTML = `<div role="alert"><strong>Required graph failed to load.</strong><br>This question cannot be answered safely. Return to the mode menu and regenerate the Quest.</div>`;
+        setAnswerButtonsDisabled(true);
+        const announcements = document.getElementById("srAnnouncements");
+        if(announcements) announcements.innerText = "Required graph failed to load. This question cannot be answered safely.";
+    }, {once:true});
 }
 
 function openGraphLightbox(src, altText, graphDescription){
@@ -10727,6 +10738,8 @@ function displayQuestion() {
 
         optionsElement.appendChild(btn);
     });
+
+    if(questionGraphLoadFailed) setAnswerButtonsDisabled(true);
 
     if(modeUsesFadingFortune()){
         updateFadingFortuneHud();

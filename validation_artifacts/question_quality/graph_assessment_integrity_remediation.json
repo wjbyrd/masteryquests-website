@@ -1,0 +1,1204 @@
+{
+  "phase": "phaseQH6-graph-assessment-integrity-v1",
+  "generatedAt": "2026-08-31T22:00:00.000Z",
+  "scope": {
+    "concepts": [
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "production-possibilities-frontier"
+    ],
+    "changedQuestionCount": 8,
+    "changedAssetMetadataCount": 3
+  },
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1",
+  "librarySha256": "fb44fd1abf25b0dcfffecef3b3fb6d7790767e52f2c45e04b3bed4058b26bbee",
+  "baselineAuditSha256": "94696b19552c19452a1fe059922cd7cbea21a2f2e0ebc8bc170f007ac9174be9",
+  "authorizationSha256": "2fcaada1b7b70a6efeaec91a03985260c56928e9bdb5330178dee0505b4498ba",
+  "changes": [
+    {
+      "id": "40006",
+      "conceptId": "supply",
+      "pool": "medium",
+      "rules": [
+        "accessibility-answer-leak",
+        "graph-prompt-cue"
+      ],
+      "reason": "Add a natural graph cue and replace answer-bearing shift language with equivalent structural evidence.",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "q",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "40006",
+        "sourceGame": "market-gate",
+        "q": "What market change is shown from A to B?",
+        "options": [
+          "Supply increases, lowering price and raising quantity",
+          "Demand increases, raising price and quantity",
+          "Supply decreases, raising price and reducing quantity",
+          "Demand decreases, lowering price and quantity"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "graphRequired": true,
+        "tag": "supply_shifters",
+        "type": "graph_interpretation",
+        "objective": "LO4.3",
+        "difficulty": "medium",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "supply_shifters",
+        "secondarySkills": [],
+        "repairSkill": "supply_shifters",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Supply shifts left; price rises from 10 to 12 and quantity falls from 200 to 150 thousand.",
+        "sourceCurationPhase": "phase2a-market-gate",
+        "aHash": "58ab4096e390de95baf61f50a33b9708909855af360ee372adace7575de1706e",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "canonicalId": "40006",
+        "sourceId": 40006,
+        "sourceChapter": [
+          4,
+          3
+        ],
+        "sourcePool": "medium",
+        "sourceHash": "8b10d0ec7efb665caba08d8b62317de4997ec6a769422bd28af041415c74fa62",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "medium",
+            "routeKey": null,
+            "sourceRecordOrder": 1,
+            "sourceId": 40006,
+            "sourceHash": "8b10d0ec7efb665caba08d8b62317de4997ec6a769422bd28af041415c74fa62"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "medium",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40006",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. What market change is shown from A to B?",
+        "options": [
+          "Supply increases, lowering price and raising quantity",
+          "Demand increases, raising price and quantity",
+          "Supply decreases, raising price and reducing quantity",
+          "Demand decreases, lowering price and quantity"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "graphRequired": true,
+        "tag": "supply_shifters",
+        "type": "graph_interpretation",
+        "objective": "LO4.3",
+        "difficulty": "medium",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "supply_shifters",
+        "secondarySkills": [],
+        "repairSkill": "supply_shifters",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Supply shifts left; price rises from 10 to 12 and quantity falls from 200 to 150 thousand.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "58ab4096e390de95baf61f50a33b9708909855af360ee372adace7575de1706e",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "canonicalId": "40006",
+        "sourceId": 40006,
+        "sourceChapter": [
+          4,
+          3
+        ],
+        "sourcePool": "medium",
+        "sourceHash": "b9c7e9cba23713fbbc505a665d5fccf22bc65e7b3578c7975c526479b3857acb",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "medium",
+            "routeKey": null,
+            "sourceRecordOrder": 1,
+            "sourceId": 40006,
+            "sourceHash": "b9c7e9cba23713fbbc505a665d5fccf22bc65e7b3578c7975c526479b3857acb",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "medium",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "40007",
+      "conceptId": "supply",
+      "pool": "hard",
+      "rules": [
+        "accessibility-answer-leak"
+      ],
+      "reason": "Replace answer-bearing shift language on the shared movie-ticket supply graph with equivalent structural evidence.",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "40007",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Equilibrium moves from A to B after one market determinant changes. Evaluate the graph evidence: which explanation identifies the curve shift and connects it to the new price and quantity?",
+        "options": [
+          "Higher theater operating costs shift supply left, raising price and reducing quantity",
+          "A higher substitute price shifts demand left, raising price and reducing quantity",
+          "Higher consumer income shifts supply left for a normal good, reducing quantity",
+          "A lower ticket price shifts supply left as firms move along the demand curve"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "graphRequired": true,
+        "tag": "supply_shifters",
+        "type": "graph_integration",
+        "objective": "LO4.3",
+        "difficulty": "hard",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "supply_shifters",
+        "secondarySkills": [],
+        "repairSkill": "supply_shifters",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Higher operating costs reduce supply, shifting it left from S0 to S1. With demand unchanged, the equilibrium moves from A to B: price rises and quantity falls.",
+        "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1",
+        "aHash": "f1c8e39aff46eba6aea464a12cc962cc7f8e2d65e6893825bd51e0644b4dfc85",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "canonicalId": "40007",
+        "sourceId": 40007,
+        "sourceChapter": [
+          4,
+          3
+        ],
+        "sourcePool": "hard",
+        "sourceHash": "77a986d29e6c7120611a0b64b478742eefcdac1d4e82e84c50955288cf01ac0e",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "hard",
+            "routeKey": null,
+            "sourceRecordOrder": 2,
+            "sourceId": 40007,
+            "sourceHash": "77a986d29e6c7120611a0b64b478742eefcdac1d4e82e84c50955288cf01ac0e",
+            "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "hard",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40007",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Equilibrium moves from A to B after one market determinant changes. Evaluate the graph evidence: which explanation identifies the curve shift and connects it to the new price and quantity?",
+        "options": [
+          "Higher theater operating costs shift supply left, raising price and reducing quantity",
+          "A higher substitute price shifts demand left, raising price and reducing quantity",
+          "Higher consumer income shifts supply left for a normal good, reducing quantity",
+          "A lower ticket price shifts supply left as firms move along the demand curve"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "graphRequired": true,
+        "tag": "supply_shifters",
+        "type": "graph_integration",
+        "objective": "LO4.3",
+        "difficulty": "hard",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "supply_shifters",
+        "secondarySkills": [],
+        "repairSkill": "supply_shifters",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Higher operating costs reduce supply, shifting it left from S0 to S1. With demand unchanged, the equilibrium moves from A to B: price rises and quantity falls.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "f1c8e39aff46eba6aea464a12cc962cc7f8e2d65e6893825bd51e0644b4dfc85",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "canonicalId": "40007",
+        "sourceId": 40007,
+        "sourceChapter": [
+          4,
+          3
+        ],
+        "sourcePool": "hard",
+        "sourceHash": "77a986d29e6c7120611a0b64b478742eefcdac1d4e82e84c50955288cf01ac0e",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "hard",
+            "routeKey": null,
+            "sourceRecordOrder": 2,
+            "sourceId": 40007,
+            "sourceHash": "77a986d29e6c7120611a0b64b478742eefcdac1d4e82e84c50955288cf01ac0e",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "hard",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "40008",
+      "conceptId": "supply",
+      "pool": "elite",
+      "rules": [
+        "accessibility-answer-leak"
+      ],
+      "reason": "Replace answer-bearing shift language on the shared movie-ticket supply graph with equivalent structural evidence.",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "40008",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Why is the move from A to B a decrease in supply rather than merely a decrease in quantity supplied?",
+        "options": [
+          "Supply itself shifts left from S0 to S1",
+          "Quantity supplied rises along the original S0 curve",
+          "Demand itself shifts right from D0 to D1",
+          "The market stays at A on the original curves"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "graphRequired": true,
+        "tag": "movement_vs_supply_shift",
+        "type": "graph_trap",
+        "objective": "LO4.3",
+        "difficulty": "elite",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "movement_vs_supply_shift",
+        "secondarySkills": [],
+        "repairSkill": "movement_vs_supply_shift",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+        "sourceCurationPhase": "phaseQH3-core-question-quality-gate-v1",
+        "aHash": "139638e2e0840647c1d738ed00772341ad3c09c79e8bb258964615af38e17e57",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "canonicalId": "40008",
+        "sourceId": 40008,
+        "sourceChapter": [
+          4,
+          3
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "8ce26954264694c47528e84cea0c6fcd4e4924e594ab9267374b249a7d28d2e5",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 2,
+            "sourceId": 40008,
+            "sourceHash": "8ce26954264694c47528e84cea0c6fcd4e4924e594ab9267374b249a7d28d2e5",
+            "sourceCurationPhase": "phaseQH3-core-question-quality-gate-v1"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40008",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Why is the move from A to B a decrease in supply rather than merely a decrease in quantity supplied?",
+        "options": [
+          "Supply itself shifts left from S0 to S1",
+          "Quantity supplied rises along the original S0 curve",
+          "Demand itself shifts right from D0 to D1",
+          "The market stays at A on the original curves"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "graphRequired": true,
+        "tag": "movement_vs_supply_shift",
+        "type": "graph_trap",
+        "objective": "LO4.3",
+        "difficulty": "elite",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "movement_vs_supply_shift",
+        "secondarySkills": [],
+        "repairSkill": "movement_vs_supply_shift",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "139638e2e0840647c1d738ed00772341ad3c09c79e8bb258964615af38e17e57",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "canonicalId": "40008",
+        "sourceId": 40008,
+        "sourceChapter": [
+          4,
+          3
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "8ce26954264694c47528e84cea0c6fcd4e4924e594ab9267374b249a7d28d2e5",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 2,
+            "sourceId": 40008,
+            "sourceHash": "8ce26954264694c47528e84cea0c6fcd4e4924e594ab9267374b249a7d28d2e5",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "40009",
+      "conceptId": "demand",
+      "pool": "medium",
+      "rules": [
+        "accessibility-answer-leak",
+        "shared-graph-accessibility-consistency"
+      ],
+      "reason": "Use one non-leaking structural description for every question linked to the shared movie-ticket demand graph.",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "40009",
+        "sourceGame": "market-gate",
+        "q": "How does equilibrium change as demand moves from D0 to D1?",
+        "options": [
+          "Demand decreases, lowering price and quantity",
+          "Demand increases, raising price and quantity",
+          "Supply decreases, raising price and reducing quantity",
+          "Supply increases, lowering price and raising quantity"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "graphRequired": true,
+        "tag": "demand_shifters",
+        "type": "graph_interpretation",
+        "objective": "LO4.2",
+        "difficulty": "medium",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "demand_shifters",
+        "secondarySkills": [],
+        "repairSkill": "demand_shifters",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Demand shifts right; price rises from 10 to 12 and quantity rises from 200 to 250 thousand.",
+        "sourceCurationPhase": "phase2a-market-gate",
+        "aHash": "05ed72762f23379e41ae326fd3b6a5ae1c31f153b1d4e2ed242cda08b7e7079a",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "canonicalId": "40009",
+        "sourceId": 40009,
+        "sourceChapter": [
+          4,
+          2
+        ],
+        "sourcePool": "medium",
+        "sourceHash": "798e7f40fe9fe6f7ddd63c30f4342f9a108e1e886b9f89e66ca67b64d38cfd17",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "medium",
+            "routeKey": null,
+            "sourceRecordOrder": 2,
+            "sourceId": 40009,
+            "sourceHash": "798e7f40fe9fe6f7ddd63c30f4342f9a108e1e886b9f89e66ca67b64d38cfd17"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "medium",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40009",
+        "sourceGame": "market-gate",
+        "q": "How does equilibrium change as demand moves from D0 to D1?",
+        "options": [
+          "Demand decreases, lowering price and quantity",
+          "Demand increases, raising price and quantity",
+          "Supply decreases, raising price and reducing quantity",
+          "Supply increases, lowering price and raising quantity"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "graphRequired": true,
+        "tag": "demand_shifters",
+        "type": "graph_interpretation",
+        "objective": "LO4.2",
+        "difficulty": "medium",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "demand_shifters",
+        "secondarySkills": [],
+        "repairSkill": "demand_shifters",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Demand shifts right; price rises from 10 to 12 and quantity rises from 200 to 250 thousand.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "05ed72762f23379e41ae326fd3b6a5ae1c31f153b1d4e2ed242cda08b7e7079a",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "canonicalId": "40009",
+        "sourceId": 40009,
+        "sourceChapter": [
+          4,
+          2
+        ],
+        "sourcePool": "medium",
+        "sourceHash": "9767cbbf9958b690f49ff3e3c932be64ae159dbd2874dce0e9a01491c0ba4124",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "medium",
+            "routeKey": null,
+            "sourceRecordOrder": 2,
+            "sourceId": 40009,
+            "sourceHash": "9767cbbf9958b690f49ff3e3c932be64ae159dbd2874dce0e9a01491c0ba4124",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "medium",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "40010",
+      "conceptId": "demand",
+      "pool": "hard",
+      "rules": [
+        "accessibility-answer-leak",
+        "shared-graph-accessibility-consistency"
+      ],
+      "reason": "Use one non-leaking structural description for every question linked to the shared movie-ticket demand graph.",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "40010",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Streaming subscriptions are substitutes for movie tickets, and demand shifts from D0 to D1 while supply remains S0. Which explanation connects a change in the streaming market to the new movie-ticket equilibrium?",
+        "options": [
+          "A higher streaming-subscription price shifts movie-ticket demand right, raising both equilibrium price and quantity",
+          "A lower streaming-subscription price shifts movie-ticket demand right, raising both equilibrium price and quantity",
+          "Higher theater operating costs shift movie-ticket demand right while leaving supply unchanged",
+          "A higher movie-ticket price shifts demand from D0 to D1 along the unchanged supply curve"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "graphRequired": true,
+        "tag": "related_goods_demand",
+        "type": "graph_integration",
+        "objective": "LO4.2",
+        "difficulty": "hard",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "related_goods_demand",
+        "secondarySkills": [],
+        "repairSkill": "related_goods_demand",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "A higher price for streaming makes movie tickets relatively more attractive. Movie-ticket demand shifts right from D0 to D1; with S0 fixed, equilibrium price and quantity both rise.",
+        "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1",
+        "aHash": "0bc49f7fb4aa0dfc00c3cd535dc553c7ff1254f9bf281310143bc61b5b590c15",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "canonicalId": "40010",
+        "sourceId": 40010,
+        "sourceChapter": [
+          4,
+          2
+        ],
+        "sourcePool": "hard",
+        "sourceHash": "7b430a9da5ee7224cc86b9ae78d27cc7fc66e248db89418eccbc8d8d5de776ba",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "hard",
+            "routeKey": null,
+            "sourceRecordOrder": 3,
+            "sourceId": 40010,
+            "sourceHash": "7b430a9da5ee7224cc86b9ae78d27cc7fc66e248db89418eccbc8d8d5de776ba",
+            "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "hard",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40010",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Streaming subscriptions are substitutes for movie tickets, and demand shifts from D0 to D1 while supply remains S0. Which explanation connects a change in the streaming market to the new movie-ticket equilibrium?",
+        "options": [
+          "A higher streaming-subscription price shifts movie-ticket demand right, raising both equilibrium price and quantity",
+          "A lower streaming-subscription price shifts movie-ticket demand right, raising both equilibrium price and quantity",
+          "Higher theater operating costs shift movie-ticket demand right while leaving supply unchanged",
+          "A higher movie-ticket price shifts demand from D0 to D1 along the unchanged supply curve"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "graphRequired": true,
+        "tag": "related_goods_demand",
+        "type": "graph_integration",
+        "objective": "LO4.2",
+        "difficulty": "hard",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "related_goods_demand",
+        "secondarySkills": [],
+        "repairSkill": "related_goods_demand",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "A higher price for streaming makes movie tickets relatively more attractive. Movie-ticket demand shifts right from D0 to D1; with S0 fixed, equilibrium price and quantity both rise.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "0bc49f7fb4aa0dfc00c3cd535dc553c7ff1254f9bf281310143bc61b5b590c15",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "canonicalId": "40010",
+        "sourceId": 40010,
+        "sourceChapter": [
+          4,
+          2
+        ],
+        "sourcePool": "hard",
+        "sourceHash": "7b430a9da5ee7224cc86b9ae78d27cc7fc66e248db89418eccbc8d8d5de776ba",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "hard",
+            "routeKey": null,
+            "sourceRecordOrder": 3,
+            "sourceId": 40010,
+            "sourceHash": "7b430a9da5ee7224cc86b9ae78d27cc7fc66e248db89418eccbc8d8d5de776ba",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "hard",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "40011",
+      "conceptId": "demand",
+      "pool": "elite",
+      "rules": [
+        "accessibility-answer-leak",
+        "shared-graph-accessibility-consistency"
+      ],
+      "reason": "Use one non-leaking structural description for every question linked to the shared movie-ticket demand graph.",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "40011",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Which description correctly separates the demand shift from the movement along supply?",
+        "options": [
+          "Quantity demanded rises only because price falls along D0",
+          "Supply shifts right and demand stays fixed",
+          "Both curves shift right equally",
+          "Demand shifts D0 to D1, and equilibrium moves upward along S0"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "graphRequired": true,
+        "tag": "movement_vs_demand_shift",
+        "type": "graph_trap",
+        "objective": "LO4.2",
+        "difficulty": "elite",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "movement_vs_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "movement_vs_demand_shift",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Demand changes curves; the higher equilibrium is also a movement along unchanged supply.",
+        "sourceCurationPhase": "phaseQH3-core-question-quality-gate-v1",
+        "aHash": "1e2d36bfa21e9c5938df7d5b39484da5fd22d45426e7f576bcf479e30e79aae2",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "canonicalId": "40011",
+        "sourceId": 40011,
+        "sourceChapter": [
+          4,
+          2
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "c9f70beb45ad8c76178a02a4379126171ad28ce15be3e91f776cc16d83a26240",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 3,
+            "sourceId": 40011,
+            "sourceHash": "c9f70beb45ad8c76178a02a4379126171ad28ce15be3e91f776cc16d83a26240",
+            "sourceCurationPhase": "phaseQH3-core-question-quality-gate-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40011",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Which description correctly separates the demand shift from the movement along supply?",
+        "options": [
+          "Quantity demanded rises only because price falls along D0",
+          "Supply shifts right and demand stays fixed",
+          "Both curves shift right equally",
+          "Demand shifts D0 to D1, and equilibrium moves upward along S0"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "graphRequired": true,
+        "tag": "movement_vs_demand_shift",
+        "type": "graph_trap",
+        "objective": "LO4.2",
+        "difficulty": "elite",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "movement_vs_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "movement_vs_demand_shift",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Demand changes curves; the higher equilibrium is also a movement along unchanged supply.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "1e2d36bfa21e9c5938df7d5b39484da5fd22d45426e7f576bcf479e30e79aae2",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "canonicalId": "40011",
+        "sourceId": 40011,
+        "sourceChapter": [
+          4,
+          2
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "c9f70beb45ad8c76178a02a4379126171ad28ce15be3e91f776cc16d83a26240",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 3,
+            "sourceId": 40011,
+            "sourceHash": "c9f70beb45ad8c76178a02a4379126171ad28ce15be3e91f776cc16d83a26240",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      }
+    },
+    {
+      "id": "PG1-DMD-L-002",
+      "conceptId": "demand",
+      "pool": "legendary",
+      "rules": [
+        "graph-question-evidence-mismatch"
+      ],
+      "reason": "Identify the two graph-reading stages before the answer choices without reproducing the graph-derived quantities.",
+      "authorizedFields": [
+        "q",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences"
+      ],
+      "before": {
+        "id": "PG1-DMD-L-002",
+        "q": "Refer to the graph. Compare the two stages from the initial point on D0 to the final point on D1, and identify the accounting that separates the curve shift from movement caused by the price fall.",
+        "options": [
+          "50→125 from the price fall; 125→225 from a supply shift.",
+          "50→150 from the demand shift; 150→225 from the price fall.",
+          "50→25 from the demand shift; 25→225 from the price fall.",
+          "50→125 from the demand shift; 125→225 from the price fall."
+        ],
+        "tag": "demand",
+        "type": "multi-step",
+        "objective": "LO4.2",
+        "difficulty": "legendary",
+        "conceptCluster": "supply_demand",
+        "primarySkill": "multiple_demand_shifters",
+        "secondarySkills": [
+          "movement_vs_demand_shift",
+          "demand_shift_direction"
+        ],
+        "repairSkill": "multiple_demand_shifters",
+        "commonError": "misreads_graph_or_confuses_shift_with_movement",
+        "feedback": "At $10 the shift from D0 to D1 raises quantity demanded from 50 to 125 thousand. Moving down D1 from $10 to $6 raises it again from 125 to 225 thousand, for a total increase of 175 thousand.",
+        "image": "question-assets/demand/DEMAND-02.webp",
+        "aHash": "f796e325631e9ceccaeb14b16250bc81c466677d5752a38540143cbe4047f423",
+        "canonicalId": "PG1-DMD-L-002",
+        "sourceId": 860011,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "demand"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "a3a4e827fa1b5eb7e34e2add2cc16e8b6226db5d870e5705059fd5c1f4b84984",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phaseGraph1-demand-supply-core-v1",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "multiple_demand_shifters",
+            "sourceRecordOrder": 11,
+            "sourceId": 860011,
+            "sourceHash": "a3a4e827fa1b5eb7e34e2add2cc16e8b6226db5d870e5705059fd5c1f4b84984",
+            "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "graphRequired": true,
+        "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+      },
+      "after": {
+        "id": "PG1-DMD-L-002",
+        "q": "Refer to the graph. First compare D0 with D1 at a price of $10. Then follow D1 as price falls from $10 to $6. Which option correctly decomposes the two quantity changes into a demand shift and a movement along D1?",
+        "options": [
+          "50→125 from the price fall; 125→225 from a supply shift.",
+          "50→150 from the demand shift; 150→225 from the price fall.",
+          "50→25 from the demand shift; 25→225 from the price fall.",
+          "50→125 from the demand shift; 125→225 from the price fall."
+        ],
+        "tag": "demand",
+        "type": "multi-step",
+        "objective": "LO4.2",
+        "difficulty": "legendary",
+        "conceptCluster": "supply_demand",
+        "primarySkill": "multiple_demand_shifters",
+        "secondarySkills": [
+          "movement_vs_demand_shift",
+          "demand_shift_direction"
+        ],
+        "repairSkill": "multiple_demand_shifters",
+        "commonError": "misreads_graph_or_confuses_shift_with_movement",
+        "feedback": "At $10 the shift from D0 to D1 raises quantity demanded from 50 to 125 thousand. Moving down D1 from $10 to $6 raises it again from 125 to 225 thousand, for a total increase of 175 thousand.",
+        "image": "question-assets/demand/DEMAND-02.webp",
+        "aHash": "f796e325631e9ceccaeb14b16250bc81c466677d5752a38540143cbe4047f423",
+        "canonicalId": "PG1-DMD-L-002",
+        "sourceId": 860011,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "demand"
+        ],
+        "sourcePool": "legendary",
+        "sourceHash": "ca3be207c78127024a2e64f9cd76b26ac3a3208eb2623951cf414e26e83d149c",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phaseGraph1-demand-supply-core-v1",
+            "sourceGlobal": "questions",
+            "sourcePool": "legendary",
+            "routeKey": "multiple_demand_shifters",
+            "sourceRecordOrder": 11,
+            "sourceId": 860011,
+            "sourceHash": "ca3be207c78127024a2e64f9cd76b26ac3a3208eb2623951cf414e26e83d149c",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "legendary",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "graphRequired": true,
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+      }
+    },
+    {
+      "id": "40020",
+      "conceptId": "market-equilibrium",
+      "pool": "elite",
+      "rules": [
+        "graph-task-low-economic-value"
+      ],
+      "reason": "Replace a graph-meta question with an Elite two-shift market-equilibrium application using the same rich graph.",
+      "authorizedFields": [
+        "aHash",
+        "feedback",
+        "graphDescription",
+        "imageAlt",
+        "options",
+        "q",
+        "sourceCurationPhase",
+        "sourceHash",
+        "sourceOccurrences",
+        "type"
+      ],
+      "before": {
+        "id": "40020",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. Because the axes lack numeric ticks, which result remains defensible?",
+        "options": [
+          "Direction and ordering, not exact magnitudes",
+          "Exact price and quantity changes can be calculated",
+          "No relative comparison among the four points is possible",
+          "Only the original point D can be identified"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "imageAlt": "The taco market has price vertically and quantity horizontally, without numeric tick labels. D1 is right of D0 and S1 is left of S0. A is D0-S1, B is D1-S1, C is D1-S0, and D is D0-S0. A is left of D, C is right of D, and B is vertically above D at the same quantity.",
+        "graphRequired": true,
+        "tag": "market_shift_analysis",
+        "type": "graph_trap",
+        "objective": "LO4.4",
+        "difficulty": "elite",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "market_shift_analysis",
+        "secondarySkills": [],
+        "repairSkill": "market_shift_analysis",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Labels support relative comparisons, not exact numerical changes.",
+        "sourceCurationPhase": "phaseQH3-core-question-quality-gate-v1",
+        "aHash": "20019933788372b3a6ef551afd6fa6c7baef08fd44ffb05e8d7034de0d800f9f",
+        "graphDescription": "The taco market has price vertically and quantity horizontally, without numeric tick labels. D1 is right of D0 and S1 is left of S0. A is D0-S1, B is D1-S1, C is D1-S0, and D is D0-S0. A is left of D, C is right of D, and B is vertically above D at the same quantity.",
+        "canonicalId": "40020",
+        "sourceId": 40020,
+        "sourceChapter": [
+          4,
+          4
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "0e0b0e65654ceed17668ddab67f7ac3c25425d6199a1544bf6d623a0bcccc463",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 8,
+            "sourceId": 40020,
+            "sourceHash": "0e0b0e65654ceed17668ddab67f7ac3c25425d6199a1544bf6d623a0bcccc463",
+            "sourceCurationPhase": "phaseQH3-core-question-quality-gate-v1"
+          }
+        ],
+        "primaryConceptId": "market-equilibrium",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "after": {
+        "id": "40020",
+        "sourceGame": "market-gate",
+        "q": "Refer to the graph. The taco market begins at point D. Tacos are a normal good. Consumer income rises while the cost of an important production input increases. Compare the two determinant effects and infer which labeled point becomes the new equilibrium.",
+        "options": [
+          "B — the intersection of D1 and S1",
+          "C — the intersection of D1 and S0",
+          "A — the intersection of D0 and S1",
+          "D — the intersection of D0 and S0"
+        ],
+        "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "imageAlt": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+        "graphRequired": true,
+        "tag": "market_shift_analysis",
+        "type": "multi-step",
+        "objective": "LO4.4",
+        "difficulty": "elite",
+        "conceptCluster": "phase2a_graph_reasoning",
+        "primarySkill": "market_shift_analysis",
+        "secondarySkills": [],
+        "repairSkill": "market_shift_analysis",
+        "commonError": "misreads_graph_relationship",
+        "feedback": "Because tacos are a normal good, higher consumer income shifts demand from D0 to D1. The higher input cost shifts supply from S0 to S1. The new D1-S1 equilibrium is point B.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1",
+        "aHash": "2823b991e6806daed8a8730bea480f1ced5d908e14b66f060818f4f3678776b0",
+        "graphDescription": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+        "canonicalId": "40020",
+        "sourceId": 40020,
+        "sourceChapter": [
+          4,
+          4
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "d57f026166917afc4187e1f6ce2b394923bd02b5827beb0a615524733353209a",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 8,
+            "sourceId": 40020,
+            "sourceHash": "d57f026166917afc4187e1f6ce2b394923bd02b5827beb0a615524733353209a",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        ],
+        "primaryConceptId": "market-equilibrium",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      }
+    }
+  ],
+  "assetChanges": [
+    {
+      "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase"
+      ],
+      "before": {
+        "conceptId": "supply",
+        "filename": "DEMAND-SUPPLY-03.webp",
+        "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "sha256": "d556ab1e15e8fdd79c3281acd25a66a4afc435e19a3608214ee5f008441b6a55",
+        "sizeBytes": 74022,
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+        "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+      },
+      "after": {
+        "conceptId": "supply",
+        "filename": "DEMAND-SUPPLY-03.webp",
+        "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+        "sha256": "d556ab1e15e8fdd79c3281acd25a66a4afc435e19a3608214ee5f008441b6a55",
+        "sizeBytes": 74022,
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+      },
+      "moduleCopies": [
+        {
+          "conceptId": "supply",
+          "before": {
+            "conceptId": "supply",
+            "filename": "DEMAND-SUPPLY-03.webp",
+            "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+            "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+            "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+            "sha256": "d556ab1e15e8fdd79c3281acd25a66a4afc435e19a3608214ee5f008441b6a55",
+            "sizeBytes": 74022,
+            "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+            "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand D0 is unchanged while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 150 and price 12 dollars.",
+            "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+          },
+          "after": {
+            "conceptId": "supply",
+            "filename": "DEMAND-SUPPLY-03.webp",
+            "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+            "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+            "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+            "sha256": "d556ab1e15e8fdd79c3281acd25a66a4afc435e19a3608214ee5f008441b6a55",
+            "sizeBytes": 74022,
+            "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+            "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        }
+      ]
+    },
+    {
+      "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase"
+      ],
+      "before": {
+        "conceptId": "demand",
+        "filename": "DEMAND-SUPPLY-04.webp",
+        "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "sha256": "43d6e497224a1dc6167fc2fc02f2d2bda20d3a883ca03aaae1af42baf28a05d5",
+        "sizeBytes": 73398,
+        "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+        "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+      },
+      "after": {
+        "conceptId": "demand",
+        "filename": "DEMAND-SUPPLY-04.webp",
+        "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+        "sha256": "43d6e497224a1dc6167fc2fc02f2d2bda20d3a883ca03aaae1af42baf28a05d5",
+        "sizeBytes": 73398,
+        "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+      },
+      "moduleCopies": [
+        {
+          "conceptId": "demand",
+          "before": {
+            "conceptId": "demand",
+            "filename": "DEMAND-SUPPLY-04.webp",
+            "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+            "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+            "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+            "sha256": "43d6e497224a1dc6167fc2fc02f2d2bda20d3a883ca03aaae1af42baf28a05d5",
+            "sizeBytes": 73398,
+            "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+            "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Supply S0 is unchanged while demand shifts right from D0 to D1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 250 and price 12 dollars.",
+            "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+          },
+          "after": {
+            "conceptId": "demand",
+            "filename": "DEMAND-SUPPLY-04.webp",
+            "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+            "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+            "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+            "sha256": "43d6e497224a1dc6167fc2fc02f2d2bda20d3a883ca03aaae1af42baf28a05d5",
+            "sizeBytes": 73398,
+            "imageAlt": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+            "graphDescription": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        }
+      ]
+    },
+    {
+      "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "authorizedFields": [
+        "graphDescription",
+        "imageAlt",
+        "sourceCurationPhase"
+      ],
+      "before": {
+        "conceptId": "market-equilibrium",
+        "filename": "DEMAND-SUPPLY-07.webp",
+        "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "sha256": "01f5ab1b9c1bf6aab9d2be05a238802b52416e97c0eabd8de04d2cdb7a8c3b69",
+        "sizeBytes": 70026,
+        "imageAlt": "The taco market has price vertically and quantity horizontally, without numeric tick labels. D1 is right of D0 and S1 is left of S0. A is D0-S1, B is D1-S1, C is D1-S0, and D is D0-S0. A is left of D, C is right of D, and B is vertically above D at the same quantity.",
+        "graphDescription": "The taco market has price vertically and quantity horizontally, without numeric tick labels. D1 is right of D0 and S1 is left of S0. A is D0-S1, B is D1-S1, C is D1-S0, and D is D0-S0. A is left of D, C is right of D, and B is vertically above D at the same quantity.",
+        "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+      },
+      "after": {
+        "conceptId": "market-equilibrium",
+        "filename": "DEMAND-SUPPLY-07.webp",
+        "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+        "sha256": "01f5ab1b9c1bf6aab9d2be05a238802b52416e97c0eabd8de04d2cdb7a8c3b69",
+        "sizeBytes": 70026,
+        "imageAlt": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+        "graphDescription": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+        "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+      },
+      "moduleCopies": [
+        {
+          "conceptId": "market-equilibrium",
+          "before": {
+            "conceptId": "market-equilibrium",
+            "filename": "DEMAND-SUPPLY-07.webp",
+            "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+            "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+            "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+            "sha256": "01f5ab1b9c1bf6aab9d2be05a238802b52416e97c0eabd8de04d2cdb7a8c3b69",
+            "sizeBytes": 70026,
+            "imageAlt": "The taco market has price vertically and quantity horizontally, without numeric tick labels. D1 is right of D0 and S1 is left of S0. A is D0-S1, B is D1-S1, C is D1-S0, and D is D0-S0. A is left of D, C is right of D, and B is vertically above D at the same quantity.",
+            "graphDescription": "The taco market has price vertically and quantity horizontally, without numeric tick labels. D1 is right of D0 and S1 is left of S0. A is D0-S1, B is D1-S1, C is D1-S0, and D is D0-S0. A is left of D, C is right of D, and B is vertically above D at the same quantity.",
+            "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+          },
+          "after": {
+            "conceptId": "market-equilibrium",
+            "filename": "DEMAND-SUPPLY-07.webp",
+            "sourceAssetPath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+            "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+            "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+            "sha256": "01f5ab1b9c1bf6aab9d2be05a238802b52416e97c0eabd8de04d2cdb7a8c3b69",
+            "sizeBytes": 70026,
+            "imageAlt": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+            "graphDescription": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+            "sourceCurationPhase": "phaseQH6-graph-assessment-integrity-v1"
+          }
+        }
+      ]
+    }
+  ]
+}
