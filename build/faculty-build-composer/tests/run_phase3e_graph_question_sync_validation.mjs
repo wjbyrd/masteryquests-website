@@ -17,6 +17,8 @@ const composerRoot = path.resolve(testRoot, "..");
 const repoRoot = path.resolve(composerRoot, "..", "..");
 const manifestPath = path.join(composerRoot, "data/composer_library_manifest.json");
 const phaseIds = new Set(ordinaryQuestions.map(question => String(question.id)));
+const foundationsRemediation = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "foundations_audit_remediation.json"), "utf8"));
+const foundationsExpectedById = new Map(foundationsRemediation.changes.map(change => [String(change.id), change.after]));
 
 const expectedConcept = new Map([
   ...range(40000, 40005).map(id => [id, "production-possibilities-frontier"]),
@@ -116,7 +118,11 @@ async function run() {
     const { conceptId, pool, question } = found;
     pass(conceptId === expectedConcept.get(author.id), `Concept mapping ${author.id}: ${conceptId}`);
     pass(pool === author.pool && question.difficulty === author.pool && question.canonicalDifficulty === author.pool, `Difficulty ${author.id}`);
-    pass(question.q === author.q && question.feedback === author.feedback, `Canonical copy changed ${author.id}`);
+    const curated = foundationsExpectedById.get(String(author.id));
+    pass(
+      curated ? question.q === curated.q && question.feedback === curated.feedback : question.q === author.q && question.feedback === author.feedback,
+      `Canonical copy changed ${author.id}`
+    );
     pass(question.type === author.type && question.objective === author.objective, `Type/objective ${author.id}`);
     pass(question.primarySkill === author.primarySkill && question.repairSkill === author.repairSkill, `Skill metadata ${author.id}`);
     pass(question.graphRequired === true && Boolean(question.image), `Graph requirement ${author.id}`);

@@ -1,6 +1,6 @@
-# Foundations Question Quality Audit
+# Question Quality Audit
 
-Generated: 2026-08-31T14:27:53.424Z
+Generated: 2026-08-31T15:21:51.412Z
 
 ## Scope
 
@@ -8,37 +8,17 @@ Generated: 2026-08-31T14:27:53.424Z
 - Pools: all pools
 - Pool inventory: boss, bridge, calculation, easy, elite, hard, legendary, legendaryBoss, medium, repair, repairSeed
 - Unique questions inspected: 563
-- Library: phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1
-- Library SHA-256: 1f3430d726edecd481b79c0c0659d037abdf12e40bee1be9a82b7c3fe8e82e91
-
-### Exact concept and role inventory
-
-| Concept title | Canonical ID | Easy | Medium | Hard | Elite | Legendary | Calculation | Boss | Legendary boss | Repair | Repair seed | Bridge | Total |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Scarcity and Tradeoffs | scarcity-and-tradeoffs | 10 | 10 | 10 | 4 | 27 | 0 | 12 | 9 | 7 | 3 | 4 | 96 |
-| Opportunity Cost | opportunity-cost | 10 | 12 | 12 | 6 | 27 | 2 | 15 | 9 | 8 | 1 | 6 | 108 |
-| Production Possibilities Frontier | production-possibilities-frontier | 8 | 10 | 11 | 7 | 14 | 11 | 9 | 5 | 7 | 0 | 8 | 90 |
-| Marginal Analysis | marginal-analysis | 10 | 12 | 12 | 6 | 27 | 2 | 15 | 9 | 8 | 1 | 6 | 108 |
-| Incentives | incentives | 10 | 10 | 10 | 4 | 27 | 0 | 12 | 9 | 7 | 1 | 5 | 95 |
-| Models and Assumptions | models-and-assumptions | 8 | 8 | 8 | 4 | 12 | 0 | 9 | 6 | 6 | 1 | 4 | 66 |
-
-The registry contains no separate `retest` role in this scope. The canonical `repair`, `repairSeed`, and `bridge` arrays cover adaptive support; all six concepts have zero `integration` records, so that empty pool is not present in the inventory above. Comparative advantage / gains from trade remains separable and was excluded.
-
-### Composer exposure evidence
-
-- The Composer Quick Start `general-foundations` includes all six audited IDs and describes “Choice, tradeoffs, models, incentives, policy language, and production possibilities.” It also contains other independently registered concepts; those were not pulled into this focused audit.
-- The test recipe `market-foundations.json` selects all six in stage one, alongside a broader course set.
-- `mixed-custom-course.json` and `standard-and-score.json` each select `opportunity-cost` in stage one.
-- Registry source-game metadata connects these banks to broadly reused Composer sources including Equilibrium Crisis, Market Gate, and the phase 7 Foundations expansions. This placement supports treating the grouping as high exposure.
+- Library: phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1
+- Library SHA-256: 29065eba1be81a67ced5ba542dd94172961a6a79bb76dbc313985c73551cad74
 
 ## Summary
 
-- ERROR: 5
-- WARNING: 86
-- REVIEW: 77
-- Total findings: 168
-- Unique questions affected: 153
-- Questions with multiple findings: 15
+- ERROR: 0
+- WARNING: 0
+- REVIEW: 68
+- Total findings: 68
+- Unique questions affected: 68
+- Questions with multiple findings: 0
 
 ERROR means a deterministic defect. WARNING means a strong machine-detectable reason to inspect. REVIEW requires semantic or pedagogical judgment.
 
@@ -46,785 +26,37 @@ ERROR means a deterministic defect. WARNING means a strong machine-detectable re
 
 | Severity | Rule | Count |
 |---|---|---:|
-| ERROR | invalid-answer-key | 5 |
-| REVIEW | answer-length-outlier | 1 |
-| REVIEW | near-duplicate-stem | 2 |
-| REVIEW | possible-difficulty-overstatement | 1 |
-| REVIEW | stem-answer-redundancy | 1 |
-| REVIEW | weak-absolute-distractors | 72 |
-| WARNING | graph-prompt-missing-cue | 6 |
-| WARNING | image-without-graph-required | 23 |
-| WARNING | repeated-feedback | 57 |
+| REVIEW | near-duplicate-stem | 4 |
+| REVIEW | weak-absolute-distractors | 64 |
 
 ## Findings by concept
 
 | Concept | Findings |
 |---|---:|
-| models-and-assumptions | 62 |
-| production-possibilities-frontier | 47 |
-| incentives | 23 |
-| opportunity-cost | 14 |
-| scarcity-and-tradeoffs | 13 |
+| incentives | 19 |
+| models-and-assumptions | 12 |
+| scarcity-and-tradeoffs | 11 |
+| opportunity-cost | 10 |
 | marginal-analysis | 9 |
+| production-possibilities-frontier | 7 |
 
 ## Findings by pool
 
 | Pool | Findings |
 |---|---:|
-| legendary | 31 |
-| medium | 22 |
-| hard | 20 |
-| repair | 20 |
-| boss | 18 |
-| easy | 16 |
-| elite | 12 |
-| calculation | 10 |
-| legendaryBoss | 9 |
-| bridge | 8 |
-| repairSeed | 2 |
-
-## Questions with multiple findings
-
-| Question | Concept | Pools | Findings | Rules |
-|---|---|---|---:|---|
-| 40005 | production-possibilities-frontier | legendary | 2 | graph-prompt-missing-cue, weak-absolute-distractors |
-| ECON-MG-HARD-250 | production-possibilities-frontier | calculation | 2 | image-without-graph-required, near-duplicate-stem |
-| ECON-MG-HARD-251 | production-possibilities-frontier | calculation | 2 | image-without-graph-required, near-duplicate-stem |
-| ECON-MG-HARD-254 | production-possibilities-frontier | hard | 2 | image-without-graph-required, possible-difficulty-overstatement |
-| ECON-MG-MEDIUM-150 | production-possibilities-frontier | medium | 2 | image-without-graph-required, weak-absolute-distractors |
-| ECON-MG-MEDIUM-157 | production-possibilities-frontier | medium | 2 | image-without-graph-required, weak-absolute-distractors |
-| P52B-MODL-E-002 | models-and-assumptions | easy | 2 | repeated-feedback, weak-absolute-distractors |
-| P52B-MODL-EL-001 | models-and-assumptions | elite | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-EL-003 | models-and-assumptions | elite | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-FB-003 | models-and-assumptions | boss | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-H-005 | models-and-assumptions | hard | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-L-009 | models-and-assumptions | legendary | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-L-012 | models-and-assumptions | legendary | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-R-003 | models-and-assumptions | repair | 2 | repeated-feedback, weak-absolute-distractors |
-| P76-MODL-R-004 | models-and-assumptions | repair | 2 | repeated-feedback, weak-absolute-distractors |
-
-## Foundations-focused review notes
-
-### Structural defects
-
-The five `invalid-answer-key` errors are indisputable: each stored `aHash` matches zero current options. They affect `P74-INC-H-010`, `P74-INC-L-015`, `ECON-MG-MEDIUM-100`, `P72-OPPC-H-009`, and `P71-SCAR-LB-004`. They are reported, not repaired, because this audit does not authorize selecting or rewriting an answer.
-
-### PPF and graph hygiene
-
-- 23 PPF questions explicitly direct the learner to an attached graph but omit `graphRequired`; these are graph-dependent metadata warnings, not recommendations to remove the graphs.
-- 6 PPF questions have `graphRequired: true` and an attached registered asset, but the stem lacks a clear visual-use cue.
-- 0 attached graphs in this scope met the new `attached-graph-possibly-decorative` REVIEW rule.
-- 0 missing files, unregistered assets, or curve-label/description mismatches were detected.
-- The one difficulty-calibration finding is `ECON-MG-HARD-254`: a Hard PPF item whose stem appears to ask direct pattern recognition.
-
-### Near duplicates
-
-Two REVIEW findings form a calculation sequence: `ECON-MG-HARD-250` is paired with `ECON-MG-HARD-251`, and `ECON-MG-HARD-251` is paired with `ECON-MG-HARD-252`. The automated comparison identifies changes in both numerical values and graph points. These are review aids, not a conclusion that the items are redundant.
-
-### Distractors and feedback
-
-- 72 items have two or more absolute-worded distractors while the keyed option is not absolute: incentives 20, scarcity/tradeoffs 12, models/assumptions 12, opportunity cost 11, marginal analysis 9, and PPF 8. Absolute wording alone is not treated as a defect; each remains REVIEW for misconception quality and cueing.
-- 57 repeated-feedback warnings occur in models/assumptions (50) and PPF (7). No generic-feedback or feedback-repeats-answer finding was produced.
-- One incentives repair-seed definition item has a correct-answer length outlier; one Hard opportunity-cost item repeats the complete keyed answer in its stem.
-
-### Economics, ambiguity, and calculations
-
-The audit applied the Foundations-specific checklist for scarcity versus shortage, next-best alternatives, PPF feasibility/efficiency and movement/shift distinctions, marginal-versus-total reasoning, probabilistic incentive response, and model limitations. No separate high-precision machine rule was added for those semantic distinctions: the inspected bank generally states the required ranking or margin, while the five unresolved answer keys prevent a defensible conclusion on those records. No semantic item was automatically rewritten.
-
-A numeric-token sweep identified 225 records containing quantities, currency, or percentages. Exact-one keyed-answer validation covered all 563 records. The 75 records explicitly typed `calculation` or `graph_calculation` were independently rederived from their stated values; no arithmetic, sign, unit, ratio, PPF-tradeoff, MB/MC, or percentage defect was found among records with a resolvable key. `P72-OPPC-H-009` is a numerical opportunity-cost scenario but remains blocked by its invalid answer hash.
-
-### Auditor changes made for this audit
-
-- Modified `image-without-graph-required` so it remains a WARNING only when the stem supplies a strong visual-use cue.
-- Added `attached-graph-possibly-decorative` as REVIEW when an image is attached without `graphRequired` and without a visual-use cue.
-- Enhanced `near-duplicate-stem` messages with heuristic difference labels for numbers, graph points, direction, pedagogical role/pool, and scenario/wording.
-- Added reusable report summaries for pool inventory, question counts, affected-question counts, multiple findings, concepts, pools, and library hash.
-- Documented rationale, severity, detection logic, examples, and limitations in the existing authoring standard. No parallel audit framework or new standards document was created.
-
-No question-bank content, answer metadata, graph metadata, or Quest fixtures were changed.
+| legendary | 14 |
+| boss | 9 |
+| repair | 9 |
+| medium | 8 |
+| elite | 7 |
+| hard | 6 |
+| bridge | 5 |
+| easy | 4 |
+| calculation | 3 |
+| legendaryBoss | 3 |
+| repairSeed | 0 |
 
 ## Findings
-
-### ERROR — P74-INC-H-010 — invalid-answer-key
-
-- Concept: incentives
-- Pools: hard
-- Current wording: A police department rewards citation counts. Citations rise, public trust falls, and serious-case work receives less time. Which conclusion is warranted?
-- Reason: The keyed answer matches 0 options; exactly one is required.
-
-### ERROR — P74-INC-L-015 — invalid-answer-key
-
-- Concept: incentives
-- Pools: legendary
-- Current wording: A charity matches the first $100 of each donation. A donor planning to give $300 still gives $300. How should the match be evaluated for that donor?
-- Reason: The keyed answer matches 0 options; exactly one is required.
-
-### ERROR — ECON-MG-MEDIUM-100 — invalid-answer-key
-
-- Concept: opportunity-cost
-- Pools: medium
-- Current wording: A laboratory assistant works an extra Saturday shift and gives up a study group that would improve preparation for a licensing exam. Which interpretation is best?
-- Reason: The keyed answer matches 0 options; exactly one is required.
-
-### ERROR — P72-OPPC-H-009 — invalid-answer-key
-
-- Concept: opportunity-cost
-- Pools: hard
-- Current wording: A government funds a coastal barrier valued at $30 million. The same engineers could instead complete a water system valued at $34 million or road repairs valued at $21 million. Which statement is correct?
-- Reason: The keyed answer matches 0 options; exactly one is required.
-
-### ERROR — P71-SCAR-LB-004 — invalid-answer-key
-
-- Concept: scarcity-and-tradeoffs
-- Pools: legendaryBoss
-- Current wording: A high-income country postpones either hospital upgrades or rail expansion because both require the same engineers. Which statement best explains why scarcity persists?
-- Reason: The keyed answer matches 0 options; exactly one is required.
-
-### WARNING — ECON-MG-EASY-18 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: A household-choice model omits brand colors and store music. Why can it still help explain how price affects purchases?
-- Reason: Identical feedback is reused across 4 distinct questions.
-
-### WARNING — ECON-MG-EASY-19 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: An economist studying commute time assumes gasoline prices stay unchanged. What is that assumption doing?
-- Reason: Identical feedback is reused across 3 distinct questions.
-
-### WARNING — ECON-MG-LEGENDARY-9080 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A local haircut model omits exchange rates and global shipping. What is the best evaluation of that omission?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P52B-MODL-BR-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: bridge
-- Current wording: A demand model predicts fewer purchases after a price increase. What connects model limits to positive analysis?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P52B-MODL-E-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: A manager uses a two-factor model of sales rather than listing every detail of the store. Why?
-- Reason: Identical feedback is reused across 4 distinct questions.
-
-### WARNING — P52B-MODL-E-002 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: An economist studies how price affects purchases while holding income constant. Why hold income constant?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P52B-MODL-EL-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: elite
-- Current wording: A model uses an unrealistic assumption but predicts well in a narrow setting. What is the strongest evaluation?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P52B-MODL-R-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: repair
-- Current wording: What role does an assumption play in a model?
-- Reason: Identical feedback is reused across 3 distinct questions.
-
-### WARNING — P52B-MODL-R-002 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: repair
-- Current wording: Must a model be rejected because it simplifies reality?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-BR-002 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: bridge
-- Current wording: A supply-and-demand model holds buyer income fixed. Which bridge connects the model to ceteris paribus?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-BR-003 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: bridge
-- Current wording: A policy model predicts lower emissions after a fee. How does model reasoning connect to policy analysis?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-E-005 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: A restaurant model tracks price and customer traffic but omits wall color. When is that simplification useful?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-E-006 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: A model is best understood as:
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-E-007 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: A bus-demand study asks what happens when fares rise, with service unchanged. Which condition is an assumption?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-E-008 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: easy
-- Current wording: Which question is a simple supply-and-demand model designed to address?
-- Reason: Identical feedback is reused across 4 distinct questions.
-
-### WARNING — P76-MODL-EB-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: Why can a map-like economic model omit many details?
-- Reason: Identical feedback is reused across 4 distinct questions.
-
-### WARNING — P76-MODL-EB-002 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: A study holds population constant while examining income and sales. What is population here?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-EB-003 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: Which statement best distinguishes a model from reality?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-EL-003 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: elite
-- Current wording: A complex model predicts purchases accurately, while a simpler model identifies a price mechanism. Which choice is best?
-- Reason: Identical feedback is reused across 3 distinct questions.
-
-### WARNING — P76-MODL-EL-004 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: elite
-- Current wording: A model predicts policy outcomes accurately in several cities, but its proposed mechanism was never measured. What follows?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-FB-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: Two models fit past data, but only one predicts behavior after a new fee. What evidence best separates them?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-FB-002 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: A policy conclusion disappears when one plausible assumption changes. What is the strongest evaluation?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-FB-003 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: A larger model fits old data better but predicts new data worse. What does this show?
-- Reason: Identical feedback is reused across 5 distinct questions.
-
-### WARNING — P76-MODL-H-005 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: hard
-- Current wording: A housing model estimated where construction is flexible is applied where zoning is strict. What is the central concern?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P76-MODL-H-006 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: hard
-- Current wording: Two labor models fit past employment equally well. One predicts a wage rule raises jobs; the other predicts a decline. What evidence is most useful?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-H-007 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: hard
-- Current wording: Adding dozens of variables improves historical fit but makes the mechanism impossible to interpret. What tradeoff appears?
-- Reason: Identical feedback is reused across 5 distinct questions.
-
-### WARNING — P76-MODL-H-008 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: hard
-- Current wording: A transit model worked before remote work became common but now overpredicts commuting. What should be reconsidered?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-L-005 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: During a pandemic, a model based on stable workplace commuting badly misses travel demand. What is the best diagnosis?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-L-006 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: An online-shopping model estimated before smartphones underpredicts impulse purchases after app alerts spread. What should change?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-L-007 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A rent model assumes landlords can adjust units quickly. In a city with long permit delays, which conclusion is strongest?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P76-MODL-L-008 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: Two energy models fit normal years. One includes storage constraints and predicts a price spike after a pipeline break. What is the best test?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-L-009 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A classroom market experiment predicts rapid price convergence, but a real market has search costs and long contracts. What follows?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P76-MODL-L-010 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A credit model fits defaults well but uses a proxy unrelated to the claimed borrower mechanism. What is justified?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-L-011 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A policy result reverses when a plausible behavioral assumption changes slightly. How should it be reported?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-L-012 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A detailed firm model improves forecasts slightly but requires costly data unavailable to decision-makers. Which model may be preferable?
-- Reason: Identical feedback is reused across 5 distinct questions.
-
-### WARNING — P76-MODL-L-013 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendary
-- Current wording: A central bank changes its policy rule, and a forecasting relationship estimated under the old rule breaks down. What lesson applies?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-LB-004 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendaryBoss
-- Current wording: A labor model built where unions are rare is transferred to a heavily unionized market. What is the decisive review?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P76-MODL-LB-005 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendaryBoss
-- Current wording: A forecasting model fits every historical recession but offers no evidence for its claimed credit mechanism. What can be concluded?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-LB-006 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: legendaryBoss
-- Current wording: Adding detailed behavior improves a model slightly but makes results highly sensitive to uncertain parameters. What is the best choice?
-- Reason: Identical feedback is reused across 5 distinct questions.
-
-### WARNING — P76-MODL-M-005 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: medium
-- Current wording: A wage model assumes workers can change jobs easily, but licenses block movement. What should the analyst do?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-M-006 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: medium
-- Current wording: A household model predicts spending from income, but families also face new credit limits. Why might the prediction change?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P76-MODL-M-007 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: medium
-- Current wording: One inflation model studies demand pressure; another studies supply disruptions. Which should be used after an energy shock?
-- Reason: Identical feedback is reused across 3 distinct questions.
-
-### WARNING — P76-MODL-M-008 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: medium
-- Current wording: A policy model misses one month of data but explains the broader pattern. What is the best response?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-MB-001 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: A restaurant-demand model assumes nearby competitors stay open, but two close. What should happen to the forecast?
-- Reason: Identical feedback is reused across 20 distinct questions.
-
-### WARNING — P76-MODL-MB-002 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: One model explains short-run layoffs; another explains long-run hiring. How should a firm choose?
-- Reason: Identical feedback is reused across 3 distinct questions.
-
-### WARNING — P76-MODL-MB-003 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: boss
-- Current wording: A model predicts well in rural areas but not dense cities. What is the first question to ask?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — P76-MODL-R-003 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: repair
-- Current wording: Does adding more detail automatically improve a model?
-- Reason: Identical feedback is reused across 5 distinct questions.
-
-### WARNING — P76-MODL-R-004 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: repair
-- Current wording: A prediction assumes income stays fixed. What if income changes?
-- Reason: Identical feedback is reused across 3 distinct questions.
-
-### WARNING — P76-MODL-R-005 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: repair
-- Current wording: A model fit past data well. Does that prove its proposed mechanism?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P76-MODL-R-006 — repeated-feedback
-
-- Concept: models-and-assumptions
-- Pools: repair
-- Current wording: When should a model be applied to a new setting?
-- Reason: Identical feedback is reused across 8 distinct questions.
-
-### WARNING — 40000 — graph-prompt-missing-cue
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Moving from A to B, what is the opportunity cost per additional pizza?
-- Reason: The graph is required, but the stem does not clearly direct the learner to visual evidence.
-- Suggested direction: Use a natural cue such as 'Refer to the graph...' when the graph is required.
-
-### WARNING — 40001 — graph-prompt-missing-cue
-
-- Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: As production moves farther right along bowed PPF0, what happens to the opportunity cost of additional pizzas?
-- Reason: The graph is required, but the stem does not clearly direct the learner to visual evidence.
-- Suggested direction: Use a natural cue such as 'Refer to the graph...' when the graph is required.
-
-### WARNING — 40002 — graph-prompt-missing-cue
-
-- Concept: production-possibilities-frontier
-- Pools: elite
-- Current wording: Which proposed change would require greater productive capacity rather than reallocation along PPF0?
-- Reason: The graph is required, but the stem does not clearly direct the learner to visual evidence.
-- Suggested direction: Use a natural cue such as 'Refer to the graph...' when the graph is required.
-
-### WARNING — 40003 — graph-prompt-missing-cue
-
-- Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: On PPF0, moving from A to B gains 20 burgers. What is the opportunity cost per additional burger?
-- Reason: The graph is required, but the stem does not clearly direct the learner to visual evidence.
-- Suggested direction: Use a natural cue such as 'Refer to the graph...' when the graph is required.
-
-### WARNING — 40004 — graph-prompt-missing-cue
-
-- Concept: production-possibilities-frontier
-- Pools: elite
-- Current wording: Which statement correctly distinguishes A to B from PPF0 to PPF1?
-- Reason: The graph is required, but the stem does not clearly direct the learner to visual evidence.
-- Suggested direction: Use a natural cue such as 'Refer to the graph...' when the graph is required.
-
-### WARNING — 40005 — graph-prompt-missing-cue
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: What can the outward shift establish without knowing society's preferences?
-- Reason: The graph is required, but the stem does not clearly direct the learner to visual evidence.
-- Suggested direction: Use a natural cue such as 'Refer to the graph...' when the graph is required.
-
-### WARNING — ECON-EC-LEGENDARY-14007 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: Refer to a bowed-out PPF. Moving from point A to B costs 4 units of Y for 5 units of X. Moving from D to E costs 14 units of Y for 5 units of X. What is the best interpretation?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-250 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from A to B increases Good X by 8 units and reduces Good Y by 5 units. What is the opportunity cost per additional unit of Good X?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-251 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from B to C increases Good X by 7 units and reduces Good Y by 10 units. What is the opportunity cost per additional unit of Good X?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-252 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from D to E increases Good X by 4 units and reduces Good Y by 20 units. What is the opportunity cost per additional unit of Good X?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-253 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: Refer to the PPF graph. Which move has the highest opportunity cost per additional unit of Good X?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-254 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: Refer to the PPF graph. What pattern is shown by the opportunity cost of Good X as the economy moves from A toward E?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-255 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from E to D means gaining 20 units of Good Y while giving up 4 units of Good X. What is the opportunity cost per additional unit of Good Y?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-256 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: Refer to the PPF graph. If the economy is at F and moves to B, what happens?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-HARD-257 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: Refer to the PPF graph. If the economy moves from F to C, what best describes the change?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-LEGENDARY-9000 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: Refer to the PPF graph. A move from B to C changes production from about 8 X and 45 Y to 15 X and 35 Y. Which answer best states the tradeoff?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-LEGENDARY-9001 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: Refer to the PPF graph. Which statement best compares points F and G?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-LEGENDARY-9002 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: Refer to the PPF graph. A move from C to D increases Good X from 15 to 21 while Good Y falls from 35 to 20. What is the opportunity cost per additional X?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-LEGENDARY-9003 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: Refer to the PPF graph. If the economy is at F, which move most directly shows improved use of currently idle resources rather than economic growth?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-LEGENDARY-9004 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: legendary
-- Current wording: Refer to the PPF graph. Why does the opportunity cost of Good X rise as production moves from A toward E?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-150 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. Which points are efficient production points?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-151 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. Which point is attainable but inefficient?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-152 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. Which point is currently unattainable?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-153 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from B to C increases production of Good X by how many units?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-154 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from B to C requires giving up how many units of Good Y?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-155 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. What is the opportunity cost of moving from C to D?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-156 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: calculation
-- Current wording: Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when moving from C to D?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-157 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. What does the bowed-out shape of the PPF suggest?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-MEDIUM-158 — image-without-graph-required
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. If the economy moves from F to C, what has happened?
-- Reason: The stem directs the learner to visual evidence, but graphRequired is not true.
-- Suggested direction: Set graphRequired to true after confirming the attached graph is the intended asset.
-
-### WARNING — ECON-MG-PPF-OPPORTUNITY-COST-5011 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: repair
-- Current wording: An economy moves from inside its PPF to the frontier without new resources. What changed?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P77-PPF-LB-006 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: legendaryBoss
-- Current wording: A new technology improves only medical production. How should the PPF change?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P77-PPF-LB-007 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: legendaryBoss
-- Current wording: An economy first removes unemployment, then gains new machinery. Which sequence is correct?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P77-PPF-R-002 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: repair
-- Current wording: Is a point inside the PPF unattainable?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P77-PPF-R-003 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: repair
-- Current wording: Does moving along a PPF represent economic growth?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P77-PPF-R-004 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: repair
-- Current wording: What shifts a PPF outward?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### WARNING — P77-PPF-R-005 — repeated-feedback
-
-- Concept: production-possibilities-frontier
-- Pools: repair
-- Current wording: Why can opportunity cost rise along a bowed-out PPF?
-- Reason: Identical feedback is reused across 7 distinct questions.
-
-### REVIEW — ECON-MG-CORE-INCENTIVES-30005 — answer-length-outlier
-
-- Concept: incentives
-- Pools: repairSeed
-- Current wording: Which definition best captures an economic incentive?
-- Reason: The correct answer is an extreme length outlier and may cue test-wise learners.
-- Suggested direction: Make distractors comparably specific without adding ambiguity.
-
-### REVIEW — ECON-MG-EASY-9 — weak-absolute-distractors
-
-- Concept: incentives
-- Pools: easy
-- Current wording: Gas prices rise and more consumers buy fuel-efficient cars. What principle does this show?
-- Reason: 2 distractors rely on absolute wording while the correct answer does not.
 
 ### REVIEW — ECON-MG-EASYBOSS-2006 — weak-absolute-distractors
 
@@ -1127,20 +359,6 @@ No question-bank content, answer metadata, graph metadata, or Quest fixtures wer
 - Current wording: A parent attends a free evening class and gives up two hours of family time. Why can the class still have an opportunity cost?
 - Reason: 2 distractors rely on absolute wording while the correct answer does not.
 
-### REVIEW — P52A-OPPC-H-005 — stem-answer-redundancy
-
-- Concept: opportunity-cost
-- Pools: hard
-- Current wording: A worker's hourly wage rises from $20 to $32. Holding preferences constant, the opportunity cost of taking an unpaid hour off:
-- Reason: The stem contains the complete correct-answer wording.
-
-### REVIEW — P52A-OPPC-M-005 — weak-absolute-distractors
-
-- Concept: opportunity-cost
-- Pools: medium
-- Current wording: A firm uses a warehouse it owns for storage instead of renting it out for $30,000 per year. The storage decision has an implicit cost of:
-- Reason: 2 distractors rely on absolute wording while the correct answer does not.
-
 ### REVIEW — P72-OPPC-BR-003 — weak-absolute-distractors
 
 - Concept: opportunity-cost
@@ -1194,28 +412,7 @@ No question-bank content, answer metadata, graph metadata, or Quest fixtures wer
 
 - Concept: production-possibilities-frontier
 - Pools: legendary
-- Current wording: What can the outward shift establish without knowing society's preferences?
-- Reason: 2 distractors rely on absolute wording while the correct answer does not.
-
-### REVIEW — ECON-MG-EASY-20 — weak-absolute-distractors
-
-- Concept: production-possibilities-frontier
-- Pools: easy
-- Current wording: The circular-flow model shows how dollars, goods and services, and resources move between:
-- Reason: 3 distractors rely on absolute wording while the correct answer does not.
-
-### REVIEW — ECON-MG-EASY-22 — weak-absolute-distractors
-
-- Concept: production-possibilities-frontier
-- Pools: easy
-- Current wording: In the simple circular-flow model, firms usually supply:
-- Reason: 3 distractors rely on absolute wording while the correct answer does not.
-
-### REVIEW — ECON-MG-EASY-23 — weak-absolute-distractors
-
-- Concept: production-possibilities-frontier
-- Pools: easy
-- Current wording: A production possibilities frontier shows:
+- Current wording: Refer to the graph. What can the outward shift establish without knowing society's preferences?
 - Reason: 2 distractors rely on absolute wording while the correct answer does not.
 
 ### REVIEW — ECON-MG-ELITE-327 — weak-absolute-distractors
@@ -1229,39 +426,33 @@ No question-bank content, answer metadata, graph metadata, or Quest fixtures wer
 
 - Concept: production-possibilities-frontier
 - Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from A to B increases Good X by 8 units and reduces Good Y by 5 units. What is the opportunity cost per additional unit of Good X?
-- Reason: Stem is 100% token-similar to ECON-MG-HARD-251. Automated comparison indicates differences in: numerical values, graph point.
+- Current wording: Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from A to B?
+- Reason: Stem is 100% token-similar to ECON-MG-HARD-251. Automated comparison indicates differences in: graph point.
 - Suggested direction: Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.
 
 ### REVIEW — ECON-MG-HARD-251 — near-duplicate-stem
 
 - Concept: production-possibilities-frontier
 - Pools: calculation
-- Current wording: Refer to the PPF graph. Moving from B to C increases Good X by 7 units and reduces Good Y by 10 units. What is the opportunity cost per additional unit of Good X?
-- Reason: Stem is 100% token-similar to ECON-MG-HARD-252. Automated comparison indicates differences in: numerical values, graph point.
+- Current wording: Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from B to C?
+- Reason: Stem is 100% token-similar to ECON-MG-HARD-252. Automated comparison indicates differences in: graph point.
 - Suggested direction: Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.
 
-### REVIEW — ECON-MG-HARD-254 — possible-difficulty-overstatement
+### REVIEW — ECON-MG-HARD-252 — near-duplicate-stem
 
 - Concept: production-possibilities-frontier
-- Pools: hard
-- Current wording: Refer to the PPF graph. What pattern is shown by the opportunity cost of Good X as the economy moves from A toward E?
-- Reason: hard metadata may overstate a direct recognition or graph-reading task.
-- Suggested direction: Confirm that the item requires work appropriate to its assigned difficulty.
+- Pools: calculation
+- Current wording: Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from D to E?
+- Reason: Stem is 100% token-similar to ECON-MG-HARD-255. Automated comparison indicates differences in: graph point, scenario or wording.
+- Suggested direction: Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.
 
-### REVIEW — ECON-MG-MEDIUM-150 — weak-absolute-distractors
-
-- Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. Which points are efficient production points?
-- Reason: 2 distractors rely on absolute wording while the correct answer does not.
-
-### REVIEW — ECON-MG-MEDIUM-157 — weak-absolute-distractors
+### REVIEW — ECON-MG-LEGENDARY-9002 — near-duplicate-stem
 
 - Concept: production-possibilities-frontier
-- Pools: medium
-- Current wording: Refer to the PPF graph. What does the bowed-out shape of the PPF suggest?
-- Reason: 2 distractors rely on absolute wording while the correct answer does not.
+- Pools: legendary
+- Current wording: Refer to the PPF graph. What is the opportunity cost per additional unit of Good X when production moves from C to D?
+- Reason: Stem is 100% token-similar to ECON-MG-HARD-250. Automated comparison indicates differences in: graph point, pedagogical role/pool (legendary vs calculation).
+- Suggested direction: Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.
 
 ### REVIEW — P52B-S4-PPF-B3-002 — weak-absolute-distractors
 
@@ -1269,13 +460,6 @@ No question-bank content, answer metadata, graph metadata, or Quest fixtures wer
 - Pools: boss
 - Current wording: Country A chooses more capital goods and fewer consumer goods today than Country B, with otherwise similar resources. What is the likely long-run implication?
 - Reason: 2 distractors rely on absolute wording while the correct answer does not.
-
-### REVIEW — ECON-MG-CORE-SCARCITY-30003 — weak-absolute-distractors
-
-- Concept: scarcity-and-tradeoffs
-- Pools: repairSeed
-- Current wording: Scarcity exists because:
-- Reason: 3 distractors rely on absolute wording while the correct answer does not.
 
 ### REVIEW — P52A-SCAR-E-001 — weak-absolute-distractors
 
@@ -1353,3 +537,4 @@ No question-bank content, answer metadata, graph metadata, or Quest fixtures wer
 - Pools: repair
 - Current wording: A grocery store temporarily runs out of bottled water after a storm. Why is this different from scarcity?
 - Reason: 2 distractors rely on absolute wording while the correct answer does not.
+

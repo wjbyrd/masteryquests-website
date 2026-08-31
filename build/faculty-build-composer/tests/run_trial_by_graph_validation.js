@@ -62,6 +62,8 @@ function runtimeDeckCheck(composition,target){
   const savingInvestmentIds=new Set(Object.values(library.concepts["saving-investment-and-loanable-funds"]?.questions||{}).flat().map(q=>String(q.canonicalId||q.id)));
   const qualityAuthorization=JSON.parse(fs.readFileSync(path.resolve(root,'..','..','validation_artifacts','question_quality','supply_demand_equilibrium_audit_authorization.json'),'utf8'));
   const qualityGraphIds=new Set(qualityAuthorization.changes.filter(change=>change.rules.includes('image-without-graph-required')).map(change=>String(change.id)));
+  const foundationsAuthorization=JSON.parse(fs.readFileSync(path.resolve(root,'..','..','validation_artifacts','question_quality','foundations_audit_authorization.json'),'utf8'));
+  const foundationsGraphIds=new Set(foundationsAuthorization.changes.filter(change=>change.rules.includes('image-without-graph-required')).map(change=>String(change.id)));
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -70,7 +72,7 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
@@ -78,7 +80,8 @@ function runtimeDeckCheck(composition,target){
   }
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
   if(qualityGraphIds.size!==23) issues.push(`quality remediation graph id count ${qualityGraphIds.size}`);
-  if(flagged!==1032) issues.push(`graphRequired count ${flagged}`);
+  if(foundationsGraphIds.size!==23) issues.push(`foundations remediation graph id count ${foundationsGraphIds.size}`);
+  if(flagged!==1055) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 

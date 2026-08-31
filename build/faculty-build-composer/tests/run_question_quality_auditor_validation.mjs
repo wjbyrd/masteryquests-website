@@ -109,6 +109,117 @@ assert(graphNecessity.findings.some(finding => finding.questionId === "SYNTHETIC
 assert(graphNecessity.findings.some(finding => finding.questionId === "SYNTHETIC-GRAPH-DECORATIVE" && finding.severity === "REVIEW" && finding.rule === "attached-graph-possibly-decorative"), "Possibly decorative graph was not classified as REVIEW");
 assert(!graphNecessity.findings.some(finding => finding.questionId === "SYNTHETIC-GRAPH-DECORATIVE" && finding.rule === "image-without-graph-required"), "Decorative graph was incorrectly treated as a deterministic metadata warning");
 
+const graphEvidence = auditAuthoredQuestions([{
+  id: "SYNTHETIC-GRAPH-EVIDENCE-LEAK",
+  q: "Refer to the graph. Moving from D to E increases X by 4 and reduces Y by 20. What is the opportunity cost per unit of X?",
+  answer: "5 units of Y",
+  distractors: ["0.2 units of Y", "4 units of Y", "20 units of Y"],
+  objective: "TEST.4",
+  primarySkill: "graph_calculation",
+  type: "graph_calculation",
+  difficulty: "hard",
+  feedback: "The graph shows that the move gives up 20 Y to gain 4 X, so the cost is 5 Y per X.",
+  graphRequired: true,
+  asset: "synthetic.webp"
+}, {
+  id: "SYNTHETIC-GRAPH-EVIDENCE-REQUIRED",
+  q: "Refer to the graph. What is the opportunity cost per unit of X when moving from D to E?",
+  answer: "5 units of Y",
+  distractors: ["0.2 units of Y", "4 units of Y", "20 units of Y"],
+  objective: "TEST.4",
+  primarySkill: "graph_calculation",
+  type: "graph_calculation",
+  difficulty: "hard",
+  feedback: "The graph shows that the move gives up 20 Y to gain 4 X, so the cost is 5 Y per X.",
+  graphRequired: true,
+  asset: "synthetic.webp"
+}, {
+  id: "SYNTHETIC-GRAPH-EXTERNAL-TECHNOLOGY",
+  q: "Refer to the graph. A new technology improves production of Good X. Which frontier represents the new production possibilities?",
+  answer: "The frontier that extends farther along the Good X axis",
+  distractors: ["The unchanged frontier", "The frontier entirely inside the original", "The point inside the original frontier"],
+  objective: "TEST.5",
+  primarySkill: "ppf_shift",
+  type: "graph_interpretation",
+  difficulty: "medium",
+  feedback: "Good-X-specific technology expands the attainable maximum of Good X.",
+  graphRequired: true,
+  asset: "synthetic.webp"
+}, {
+  id: "SYNTHETIC-GRAPH-EXTERNAL-TAX",
+  q: "Refer to the graph. A $5 tax is imposed. What price do buyers pay after the tax?",
+  answer: "$12",
+  distractors: ["$5", "$7", "$17"],
+  objective: "TEST.6",
+  primarySkill: "tax_graph_reading",
+  type: "graph_calculation",
+  difficulty: "medium",
+  feedback: "The tax is external scenario information; the buyer price must be read from the graph.",
+  graphRequired: true,
+  asset: "synthetic.webp"
+}], { conceptId: "synthetic", validateAssets: false });
+assert(graphEvidence.findings.some(finding => finding.questionId === "SYNTHETIC-GRAPH-EVIDENCE-LEAK" && finding.severity === "REVIEW" && finding.rule === "graph-evidence-redundant-in-stem"), "Graph-derived values reproduced in the stem were not flagged");
+for (const id of ["SYNTHETIC-GRAPH-EVIDENCE-REQUIRED", "SYNTHETIC-GRAPH-EXTERNAL-TECHNOLOGY", "SYNTHETIC-GRAPH-EXTERNAL-TAX"]) {
+  assert(!graphEvidence.findings.some(finding => finding.questionId === id && finding.rule === "graph-evidence-redundant-in-stem"), `${id} was incorrectly classified as graph-evidence leakage`);
+}
+
+const foundationsConcepts = [
+  "scarcity-and-tradeoffs",
+  "opportunity-cost",
+  "production-possibilities-frontier",
+  "marginal-analysis",
+  "incentives",
+  "models-and-assumptions"
+];
+const foundationsEntries = collectComposerQuestions(library, { concepts: foundationsConcepts });
+const foundationsResult = auditQuestionRecords(foundationsEntries, {
+  assetMap: assets,
+  composerRoot: path.join(repoRoot, "build", "faculty-build-composer")
+});
+assert.equal(foundationsEntries.length, 563, "Foundations audit scope changed");
+assert.deepEqual(foundationsResult.counts, { errors: 0, warnings: 0, reviews: 68 }, "Foundations post-remediation audit totals changed");
+assert.equal(foundationsResult.findings.filter(finding => finding.rule === "near-duplicate-stem").length, 4, "Foundations retained near-duplicate judgment count changed");
+assert.equal(foundationsResult.findings.filter(finding => finding.rule === "weak-absolute-distractors").length, 64, "Foundations retained weak-absolute judgment count changed");
+assert(foundationsResult.findings.every(finding => ["near-duplicate-stem", "weak-absolute-distractors"].includes(finding.rule)), "Foundations has an unreviewed post-remediation rule");
+for (const repairedRule of [
+  "invalid-answer-key",
+  "image-without-graph-required",
+  "graph-prompt-missing-cue",
+  "graph-evidence-redundant-in-stem",
+  "repeated-feedback",
+  "answer-length-outlier",
+  "stem-answer-redundancy",
+  "possible-difficulty-overstatement"
+]) assert.equal(foundationsResult.findings.filter(finding => finding.rule === repairedRule).length, 0, `Foundations rule ${repairedRule} returned after remediation`);
+
+const foundationsArtifactDir = path.join(repoRoot, "validation_artifacts", "question_quality");
+const foundationsAuthorization = JSON.parse(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_audit_authorization.json"), "utf8"));
+const foundationsRemediation = JSON.parse(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_audit_remediation.json"), "utf8"));
+assert.equal(foundationsAuthorization.phase, "phaseQH5-foundations-curation-graph-evidence-v1", "Foundations authorization phase changed");
+assert.equal(foundationsAuthorization.changes.length, 99, "Foundations authorization count changed");
+assert.equal(foundationsAuthorization.retainedReviews.length, 66, "Foundations baseline retained-review judgment count changed");
+assert.equal(foundationsAuthorization.anticipatedPostRemediationReviews.length, 4, "Foundations anticipated near-duplicate judgment count changed");
+assert.equal(foundationsRemediation.changes.length, 99, "Foundations remediation count changed");
+assert.equal(foundationsRemediation.librarySha256, library.librarySha256, "Foundations remediation library hash is stale");
+assert.equal(
+  sha256(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_quality_audit_pre_remediation.json"))),
+  foundationsRemediation.originalBaselineAuditSha256,
+  "Immutable Foundations baseline audit changed"
+);
+const foundationsById = new Map(foundationsEntries.map(entry => [String(entry.id), entry.question]));
+const answerHash = value => sha256(String(value).normalize("NFKC").trim().replace(/\s+/g, " ").toLowerCase());
+for (const change of foundationsRemediation.changes) {
+  const question = foundationsById.get(String(change.id));
+  assert(question, `Missing Foundations-remediated question ${change.id}`);
+  const payload = Object.fromEntries(["id", "q", "options", "image", "primarySkill", "primaryConceptId", "difficulty", "objective"].map(key => [key, question[key] ?? null]));
+  assert.equal(question.sourceHash, sha256(JSON.stringify(stable(payload))), `Stale Foundations source hash on ${change.id}`);
+  assert((question.sourceOccurrences || []).every(occurrence => occurrence.sourceHash === question.sourceHash && occurrence.sourceCurationPhase === foundationsAuthorization.phase), `Stale Foundations source occurrence on ${change.id}`);
+  assert.equal(question.options.filter(option => answerHash(option) === question.aHash).length, 1, `Foundations answer key no longer resolves uniquely on ${change.id}`);
+  assert.deepEqual(question, change.after, `Foundations remediation record is stale for ${change.id}`);
+}
+assert.equal(foundationsRemediation.changes.filter(change => change.rules.includes("image-without-graph-required")).length, 23, "Expected 23 graphRequired repairs");
+assert.equal(foundationsRemediation.changes.filter(change => change.rules.includes("repeated-feedback")).length, 57, "Expected 57 scenario-specific feedback repairs");
+
 const report = renderMarkdownReport({
   generatedAt: "validation",
   libraryVersion: library.libraryVersion,

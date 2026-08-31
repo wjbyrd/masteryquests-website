@@ -9,6 +9,9 @@ const expectedById = new Map(record.changes.map(change => [String(change.id), ch
 const auditRemediationPath = path.join(repoRoot, "validation_artifacts", "question_quality", "supply_demand_equilibrium_audit_remediation.json");
 const auditRemediation = JSON.parse(fs.readFileSync(auditRemediationPath, "utf8"));
 const auditExpectedById = new Map(auditRemediation.changes.map(change => [String(change.id), change]));
+const foundationsRemediationPath = path.join(repoRoot, "validation_artifacts", "question_quality", "foundations_audit_remediation.json");
+const foundationsRemediation = JSON.parse(fs.readFileSync(foundationsRemediationPath, "utf8"));
+const foundationsExpectedById = new Map(foundationsRemediation.changes.map(change => [String(change.id), change]));
 const ALLOWED_RECORD_KEYS = new Set(["q", "feedback", "sourceHash", "sourceCurationPhase", "sourceOccurrences"]);
 
 function stable(value) {
@@ -28,10 +31,15 @@ function immutableOccurrences(question) {
 }
 
 export const QUESTION_QUALITY_CURATION_PHASE = record.phase;
-export const AUTHORIZED_QUESTION_QUALITY_IDS = Object.freeze([...new Set([...expectedById.keys(), ...auditExpectedById.keys()])]);
+export const FOUNDATIONS_QUESTION_QUALITY_CURATION_PHASE = foundationsRemediation.phase;
+export const AUTHORIZED_QUESTION_QUALITY_IDS = Object.freeze([...new Set([...expectedById.keys(), ...auditExpectedById.keys(), ...foundationsExpectedById.keys()])]);
 export const AUTHORIZED_MARKET_GATE_AUTHOR_PATH = "play/economic-realm/market-gate/authoring/market_gate_phase2a_author.mjs";
 
 export function isAuthorizedQuestionQualityCuration(id, before, after) {
+  const foundationsExpected = foundationsExpectedById.get(String(id));
+  if (foundationsExpected) {
+    return Boolean(before && after) && stable(before) === stable(foundationsExpected.before) && stable(after) === stable(foundationsExpected.after);
+  }
   const auditExpected = auditExpectedById.get(String(id));
   if (auditExpected) {
     return Boolean(before && after) && stable(before) === stable(auditExpected.before) && stable(after) === stable(auditExpected.after);

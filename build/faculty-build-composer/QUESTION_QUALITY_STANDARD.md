@@ -17,6 +17,7 @@ Apply this standard to new banks, expansions, and audits before a pool is accept
 
 - Use natural faculty/student economics language. Make the tested decision explicit without giving away the answer.
 - When visual evidence is required, use a natural direction such as “Refer to the graph…” and make the graph materially necessary.
+- When visual evidence is required, do not reproduce graph-derived values, relationships, classifications, or other evidence in the stem. Scenario inputs may be supplied, but the evidence the learner is expected to read must remain in the graph.
 - Feedback must explain the economic relationship or reasoning. Do not merely identify a dot, line, or keyed option.
 - Assign difficulty by cognitive work, not by the presence of a graph. Hard and higher items should require genuine multi-step reasoning, synthesis, comparative statics, trap diagnosis, or deeper interpretation.
 - Use plausible, conceptually diagnostic distractors. Avoid duplicates, absurd category mismatches, answer-length giveaways, and clusters of absolute wording that cue the answer.
@@ -50,6 +51,17 @@ Apply this standard to new banks, expansions, and audits before a pool is accept
 - Detection: the existing token-similarity threshold is retained; the finding now reports heuristic differences in numerical values, graph points, direction, pool/role, or scenario/wording.
 - Example: two PPF tradeoff calculations that use different movements and quantities.
 - Limitation: the difference labels are review aids, not a semantic-equivalence judgment; a human still decides whether the pair tests meaningfully different reasoning.
+
+### `graph-evidence-redundant-in-stem`
+
+- Rationale: a graph-reading question does not test graph use when its stem has already translated the relevant visual evidence into numbers or prose.
+- Severity: `REVIEW`, because distinguishing graph-derived evidence from legitimate external scenario information can require semantic judgment.
+- Detection: a graph-directed item asks for a graph result while also supplying both endpoint coordinates, both changes in a labeled movement, repeated point-to-point tradeoffs, or an already stated shortage/surplus result.
+- Bad example: “Refer to the graph. Moving from D to E increases X by 4 and reduces Y by 20. What is the opportunity cost per X?”
+- Good example: “Refer to the graph. What is the opportunity cost per X when production moves from D to E?”
+- Limitation: numbers such as a new tax, income change, technology shock, or other external scenario input are not necessarily graph-derived. The rule uses narrow patterns and leaves the final necessity judgment to a reviewer.
+
+For every graph-required question, authors must identify (1) information supplied by the scenario and (2) evidence the learner must extract from the graph. Ask whether the item remains answerable if the graph is hidden. If it does, and graph reading is the intended skill, revise the item before finalization without removing its accessibility metadata.
 
 ## Audit commands
 

@@ -15,6 +15,11 @@ const REASONING_CUE = /\b(why|explain|compare|infer|evaluate|reason|because|ther
 const SIMPLE_READING = /\b(what|which)\b.{0,45}\b(shown|displayed|point|curve|price|quantity|intersection)\b/i;
 const ABSOLUTE_DISTRACTOR = /\b(always|never|only|all|none|must|entirely|automatically)\b/i;
 const CURVE_LABEL = /\b(?:D\d|S\d|AD\d|AS\d|SRAS\d|LRAS\d|MD\d|MS\d|MPB|MPC|MSB|MSC|MEB|MR|MC|ATC|AVC)\b/g;
+const GRAPH_RESULT_QUESTION = /\b(opportunity cost|tradeoff|slope|change|difference|pattern|interpretation|how many|how much|size|amount|price and quantity|quantity and price)\b/i;
+const GRAPH_POINT_MOVEMENT = /\b(?:move|moves|moving|production moves|changes? production)\s+from\s+(?:point\s+)?[A-Z0-9]+\s+to\s+(?:point\s+)?[A-Z0-9]+\b/i;
+const GRAPH_QUANTIFIED_RESULT = /\b(?:increase|increases|increased|increasing|gain|gains|gained|gaining|rise|rises|rose|reduce|reduces|reduced|reducing|decrease|decreases|decreased|decreasing|fall|falls|fell|falling|drop|drops|dropped|dropping|sacrifice|sacrifices|sacrificed|sacrificing|give up|gives up|gave up|giving up|cost|costs|costing)\b[^?.;]{0,55}?(?:\$\s*)?\d+(?:\.\d+)?%?/gi;
+const GRAPH_COORDINATE_TRANSITION = /\b(?:move|moves|moving|changes? production)\s+from\s+(?:about\s+)?(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,45}?(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,20}?\bto\s+(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,45}?(?:\$\s*)?\d+(?:\.\d+)?/i;
+const GRAPH_COORDINATE_PAIR = /\b(?:point\s+)?[A-Z]\s+(?:is|lies|starts?|ends?|at)\s+(?:about\s+)?\(?\s*(?:\$\s*)?\d+(?:\.\d+)?[^?.;]{0,45}(?:\$\s*)?\d+(?:\.\d+)?/gi;
 
 export function normalizeText(value) {
   return String(value ?? "")
@@ -38,7 +43,7 @@ function sha256(value) {
 }
 
 function answerHash(value) {
-  return sha256(normalizeText(value).toLowerCase());
+  return sha256(String(value ?? "").normalize("NFKC").trim().replace(/\s+/g, " ").toLowerCase());
 }
 
 function words(value) {
@@ -144,6 +149,19 @@ function resolveAsset(assetMap, image) {
   return assetMap.get(normalized) || assetMap.get(path.posix.basename(normalized));
 }
 
+function graphEvidenceRedundantInStem(stem) {
+  if (!GRAPH_CUE.test(stem) || !GRAPH_RESULT_QUESTION.test(stem)) return false;
+  const quantifiedResults = stem.match(GRAPH_QUANTIFIED_RESULT) || [];
+  const coordinatePairs = stem.match(GRAPH_COORDINATE_PAIR) || [];
+  const repeatsReportedResult = /\b(shortage|surplus)\s+(?:is|equals|of)\s+(?:\$\s*)?\d/i.test(stem)
+    && /\b(?:what|which)\b[^?]{0,80}\b(size|amount|shortage|surplus)\b/i.test(stem);
+  const givesBothMovementChanges = GRAPH_POINT_MOVEMENT.test(stem) && quantifiedResults.length >= 2;
+  const givesBothCoordinates = coordinatePairs.length >= 2 || GRAPH_COORDINATE_TRANSITION.test(stem);
+  const givesTwoPointTradeoffs = (stem.match(/\b(?:move|moving)\s+from\s+(?:point\s+)?[A-Z]\s+to\s+(?:point\s+)?[A-Z]\b/gi) || []).length >= 2
+    && (stem.match(/\bcosts?\b[^?.;]{0,45}\d/gi) || []).length >= 2;
+  return repeatsReportedResult || givesBothMovementChanges || givesBothCoordinates || givesTwoPointTradeoffs;
+}
+
 export function auditQuestionRecords(entries, options = {}) {
   const findings = [];
   const assetMap = options.assetMap || new Map();
@@ -206,6 +224,9 @@ export function auditQuestionRecords(entries, options = {}) {
         if (missingLabels.length) addFinding(findings, entry, "REVIEW", "curve-label-metadata-mismatch", `Curve labels ${missingLabels.join(", ")} do not appear in the registered graph description.`, "Confirm that the wording, feedback, and displayed graph use the same labels.");
       }
       const stemUsesGraph = GRAPH_CUE.test(stem);
+      if (stemUsesGraph && graphEvidenceRedundantInStem(stem)) {
+        addFinding(findings, entry, "REVIEW", "graph-evidence-redundant-in-stem", "The stem appears to reproduce graph-derived values needed for the requested result, allowing the learner to bypass meaningful graph inspection.", "Keep external scenario information in the stem, but remove coordinates, changes, or relationships the learner should extract from the attached graph.");
+      }
       if (!question.graphRequired && stemUsesGraph) {
         addFinding(findings, entry, "WARNING", "image-without-graph-required", "The stem directs the learner to visual evidence, but graphRequired is not true.", "Set graphRequired to true after confirming the attached graph is the intended asset.");
       } else if (!question.graphRequired) {
