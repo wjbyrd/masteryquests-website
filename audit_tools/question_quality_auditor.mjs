@@ -87,6 +87,35 @@ function jaccard(left, right) {
   return union ? intersection / union : 0;
 }
 
+function differenceSummary(left, right) {
+  const leftStem = normalizeText(left.question.q);
+  const rightStem = normalizeText(right.question.q);
+  const differences = [];
+  const numericPattern = /(?<![\p{L}])[-+]?[$]?[\d,.]+%?/gu;
+  const pointPattern = /\b(?:point\s+)?[A-Z](?=\b|\s+to\s+[A-Z])/g;
+  const leftNumbers = leftStem.match(numericPattern) || [];
+  const rightNumbers = rightStem.match(numericPattern) || [];
+  if (leftNumbers.join("|") !== rightNumbers.join("|")) differences.push("numerical values");
+  const leftPoints = leftStem.match(pointPattern) || [];
+  const rightPoints = rightStem.match(pointPattern) || [];
+  if (leftPoints.join("|") !== rightPoints.join("|")) differences.push("graph point");
+  const directionPattern = /\b(?:increase|decrease|rise|fall|expand|contract|outward|inward|inside|outside|attainable|unattainable|efficient|inefficient|left|right|up|down)(?:s|d|ing)?\b/gi;
+  const leftDirections = (leftStem.match(directionPattern) || []).map(value => value.toLowerCase());
+  const rightDirections = (rightStem.match(directionPattern) || []).map(value => value.toLowerCase());
+  if (leftDirections.join("|") !== rightDirections.join("|")) differences.push("direction of reasoning or curve/shift direction");
+  const leftPools = [...left.pools].sort().join(", ");
+  const rightPools = [...right.pools].sort().join(", ");
+  if (leftPools !== rightPools) differences.push(`pedagogical role/pool (${leftPools} vs ${rightPools})`);
+
+  const structuralNormalize = value => normalizeComparable(value)
+    .replace(numericPattern, " number ")
+    .replace(/\bpoint\s+[a-z]\b|\b[a-z]\s+to\s+[a-z]\b/g, " graphpoint ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!differences.length || structuralNormalize(leftStem) !== structuralNormalize(rightStem)) differences.push("scenario or wording");
+  return differences;
+}
+
 function addFinding(findings, entry, severity, rule, message, suggestion = "") {
   findings.push({
     severity,
@@ -176,8 +205,13 @@ export function auditQuestionRecords(entries, options = {}) {
         const missingLabels = labels.filter(label => !new RegExp(`\\b${label.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}\\b`).test(assetDescription));
         if (missingLabels.length) addFinding(findings, entry, "REVIEW", "curve-label-metadata-mismatch", `Curve labels ${missingLabels.join(", ")} do not appear in the registered graph description.`, "Confirm that the wording, feedback, and displayed graph use the same labels.");
       }
-      if (!question.graphRequired) addFinding(findings, entry, "WARNING", "image-without-graph-required", "A graph is attached but graphRequired is not true.");
-      if (!GRAPH_CUE.test(stem)) addFinding(findings, entry, "WARNING", "graph-prompt-missing-cue", "A graph is attached, but the stem does not clearly direct the learner to visual evidence.", "Use a natural cue such as 'Refer to the graph...' when the graph is required.");
+      const stemUsesGraph = GRAPH_CUE.test(stem);
+      if (!question.graphRequired && stemUsesGraph) {
+        addFinding(findings, entry, "WARNING", "image-without-graph-required", "The stem directs the learner to visual evidence, but graphRequired is not true.", "Set graphRequired to true after confirming the attached graph is the intended asset.");
+      } else if (!question.graphRequired) {
+        addFinding(findings, entry, "REVIEW", "attached-graph-possibly-decorative", "A graph is attached, but the stem neither marks it as required nor clearly directs the learner to use it.", "Decide whether the graph is instructionally necessary; require and cue it if necessary, or remove it only if it is genuinely decorative.");
+      }
+      if (question.graphRequired && !stemUsesGraph) addFinding(findings, entry, "WARNING", "graph-prompt-missing-cue", "The graph is required, but the stem does not clearly direct the learner to visual evidence.", "Use a natural cue such as 'Refer to the graph...' when the graph is required.");
     }
 
     if (/\bread the quantity\b/i.test(stem)) addFinding(findings, entry, "REVIEW", "awkward-graph-wording", "The phrase 'Read the quantity' is unnatural graph-prompt language.", "State what relationship or value the learner should infer from the graph.");
@@ -255,7 +289,10 @@ export function auditQuestionRecords(entries, options = {}) {
       const score = jaccard(left.tokens, right.tokens);
       if (score >= 0.88 && (!best || score > best.score)) best = { right, score };
     }
-    if (best) addFinding(findings, left.entry, "REVIEW", "near-duplicate-stem", `Stem is ${(best.score * 100).toFixed(0)}% token-similar to ${best.right.entry.id}.`, "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant.");
+    if (best) {
+      const differences = differenceSummary(left.entry, best.right.entry);
+      addFinding(findings, left.entry, "REVIEW", "near-duplicate-stem", `Stem is ${(best.score * 100).toFixed(0)}% token-similar to ${best.right.entry.id}. Automated comparison indicates differences in: ${differences.join(", ")}.`, "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.");
+    }
   }
 
   findings.sort((left, right) => {
@@ -324,14 +361,21 @@ export function renderMarkdownReport(result) {
     "",
     `- Concepts: ${result.scope.concepts.join(", ")}`,
     `- Pools: ${result.scope.pools.length ? result.scope.pools.join(", ") : "all pools"}`,
+    ...(result.scope.poolInventory?.length ? [`- Pool inventory: ${result.scope.poolInventory.join(", ")}`] : []),
     `- Unique questions inspected: ${result.scope.questionCount}`,
     `- Library: ${result.libraryVersion}`,
+    ...(result.librarySha256 ? [`- Library SHA-256: ${result.librarySha256}`] : []),
     "",
     "## Summary",
     "",
     `- ERROR: ${result.counts.errors}`,
     `- WARNING: ${result.counts.warnings}`,
     `- REVIEW: ${result.counts.reviews}`,
+    ...(result.findingSummary ? [
+      `- Total findings: ${result.findingSummary.totalFindings}`,
+      `- Unique questions affected: ${result.findingSummary.uniqueQuestionsAffected}`,
+      `- Questions with multiple findings: ${result.findingSummary.questionsWithMultipleFindings.length}`
+    ] : []),
     "",
     "ERROR means a deterministic defect. WARNING means a strong machine-detectable reason to inspect. REVIEW requires semantic or pedagogical judgment.",
     "",
@@ -341,6 +385,18 @@ export function renderMarkdownReport(result) {
     "|---|---|---:|"
   ];
   for (const row of result.ruleCounts) lines.push(`| ${row.severity} | ${row.rule} | ${row.count} |`);
+  if (result.conceptFindingCounts?.length) {
+    lines.push("", "## Findings by concept", "", "| Concept | Findings |", "|---|---:|");
+    for (const row of result.conceptFindingCounts) lines.push(`| ${row.concept} | ${row.count} |`);
+  }
+  if (result.poolFindingCounts?.length) {
+    lines.push("", "## Findings by pool", "", "| Pool | Findings |", "|---|---:|");
+    for (const row of result.poolFindingCounts) lines.push(`| ${row.pool} | ${row.count} |`);
+  }
+  if (result.findingSummary?.questionsWithMultipleFindings.length) {
+    lines.push("", "## Questions with multiple findings", "", "| Question | Concept | Pools | Findings | Rules |", "|---|---|---|---:|---|");
+    for (const row of result.findingSummary.questionsWithMultipleFindings) lines.push(`| ${row.questionId} | ${row.concept} | ${row.pools.join(", ")} | ${row.count} | ${row.rules.join(", ")} |`);
+  }
   lines.push("", "## Findings", "");
   if (!result.findings.length) lines.push("No findings.");
   for (const finding of result.findings) {
@@ -403,17 +459,41 @@ async function main() {
     const key = `${finding.severity}:${finding.rule}`;
     grouped.set(key, (grouped.get(key) || 0) + 1);
   }
+  const conceptQuestionCounts = concepts.map(concept => ({ concept, count: entries.filter(entry => entry.conceptId === concept).length }));
+  const poolInventory = [...new Set(entries.flatMap(entry => [...entry.pools]))].sort();
+  const questionCountsByPool = poolInventory.map(pool => ({ pool, count: entries.filter(entry => entry.pools.has(pool)).length }));
+  const conceptFindingCounts = concepts.map(concept => ({ concept, count: audit.findings.filter(finding => finding.concept === concept).length })).sort((left, right) => right.count - left.count || left.concept.localeCompare(right.concept));
+  const poolFindingCounts = poolInventory.map(pool => ({ pool, count: audit.findings.filter(finding => finding.pools.includes(pool)).length })).sort((left, right) => right.count - left.count || left.pool.localeCompare(right.pool));
+  const findingsByQuestion = new Map();
+  for (const finding of audit.findings) {
+    if (!findingsByQuestion.has(finding.questionId)) findingsByQuestion.set(finding.questionId, []);
+    findingsByQuestion.get(finding.questionId).push(finding);
+  }
+  const questionsWithMultipleFindings = [...findingsByQuestion.entries()].filter(([, findings]) => findings.length > 1).map(([questionId, findings]) => ({
+    questionId,
+    concept: findings[0].concept,
+    pools: findings[0].pools,
+    count: findings.length,
+    rules: [...new Set(findings.map(finding => finding.rule))].sort()
+  })).sort((left, right) => right.count - left.count || left.questionId.localeCompare(right.questionId));
   const result = {
     schemaVersion: "1.0.0",
     generatedAt: new Date().toISOString(),
     libraryVersion: library.libraryVersion,
     librarySha256: library.librarySha256,
-    scope: { concepts, pools: [...new Set(config.pools)], questionCount: entries.length },
+    scope: { concepts, pools: [...new Set(config.pools)], poolInventory, questionCount: entries.length, conceptQuestionCounts, questionCountsByPool },
     counts: audit.counts,
     ruleCounts: [...grouped.entries()].map(([key, count]) => {
       const [severity, ...rule] = key.split(":");
       return { severity, rule: rule.join(":"), count };
     }).sort((left, right) => left.severity.localeCompare(right.severity) || left.rule.localeCompare(right.rule)),
+    conceptFindingCounts,
+    poolFindingCounts,
+    findingSummary: {
+      totalFindings: audit.findings.length,
+      uniqueQuestionsAffected: findingsByQuestion.size,
+      questionsWithMultipleFindings
+    },
     findings: audit.findings
   };
   if (config.jsonPath) {

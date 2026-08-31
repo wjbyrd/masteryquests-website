@@ -80,6 +80,35 @@ assert(synthetic.findings.some(finding => finding.severity === "ERROR" && findin
 assert(synthetic.findings.some(finding => finding.severity === "WARNING" && finding.rule === "generic-feedback"), "Strong inspection signal was not classified as WARNING");
 assert(synthetic.findings.some(finding => finding.severity === "REVIEW" && finding.rule === "awkward-equilibrium-wording"), "Semantic issue was not classified as REVIEW");
 
+const graphNecessity = auditAuthoredQuestions([{
+  id: "SYNTHETIC-GRAPH-DEPENDENT",
+  q: "Refer to the graph. Which point is productively inefficient?",
+  answer: "Point B",
+  distractors: ["Point A", "Point C", "Point D"],
+  objective: "TEST.2",
+  primarySkill: "graph_interpretation",
+  type: "graph_interpretation",
+  difficulty: "medium",
+  feedback: "Point B lies inside the frontier.",
+  graphRequired: false,
+  asset: "synthetic.webp"
+}, {
+  id: "SYNTHETIC-GRAPH-DECORATIVE",
+  q: "What is scarcity?",
+  answer: "Unlimited wants competing for limited resources",
+  distractors: ["A temporary shortage", "Only a lack of money", "A surplus of every resource"],
+  objective: "TEST.3",
+  primarySkill: "scarcity",
+  type: "definition",
+  difficulty: "easy",
+  feedback: "Scarcity arises because resources are limited relative to wants.",
+  graphRequired: false,
+  asset: "synthetic.webp"
+}], { conceptId: "synthetic", validateAssets: false });
+assert(graphNecessity.findings.some(finding => finding.questionId === "SYNTHETIC-GRAPH-DEPENDENT" && finding.severity === "WARNING" && finding.rule === "image-without-graph-required"), "Graph-dependent missing metadata was not classified as WARNING");
+assert(graphNecessity.findings.some(finding => finding.questionId === "SYNTHETIC-GRAPH-DECORATIVE" && finding.severity === "REVIEW" && finding.rule === "attached-graph-possibly-decorative"), "Possibly decorative graph was not classified as REVIEW");
+assert(!graphNecessity.findings.some(finding => finding.questionId === "SYNTHETIC-GRAPH-DECORATIVE" && finding.rule === "image-without-graph-required"), "Decorative graph was incorrectly treated as a deterministic metadata warning");
+
 const report = renderMarkdownReport({
   generatedAt: "validation",
   libraryVersion: library.libraryVersion,
@@ -89,6 +118,19 @@ const report = renderMarkdownReport({
   findings: synthetic.findings.slice(0, 1)
 });
 assert(report.includes("# Question Quality Audit") && report.includes("Current wording"), "Human-readable report contract changed");
+
+const summarizedReport = renderMarkdownReport({
+  generatedAt: "validation",
+  libraryVersion: library.libraryVersion,
+  scope: { concepts, pools: [], poolInventory: ["easy", "hard"], questionCount: entries.length },
+  counts: result.counts,
+  ruleCounts: [],
+  conceptFindingCounts: [{ concept: "demand", count: 1 }],
+  poolFindingCounts: [{ pool: "hard", count: 1 }],
+  findingSummary: { totalFindings: 1, uniqueQuestionsAffected: 1, questionsWithMultipleFindings: [] },
+  findings: synthetic.findings.slice(0, 1)
+});
+assert(summarizedReport.includes("Unique questions affected: 1") && summarizedReport.includes("Findings by concept") && summarizedReport.includes("Findings by pool"), "Audit summary sections were not rendered");
 
 console.log(JSON.stringify({
   status: "PASS",
