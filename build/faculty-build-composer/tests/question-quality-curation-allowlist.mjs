@@ -6,6 +6,9 @@ const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const recordPath = path.join(repoRoot, "validation_artifacts", "question_quality", "supply_demand_equilibrium_quality_fixes.json");
 const record = JSON.parse(fs.readFileSync(recordPath, "utf8"));
 const expectedById = new Map(record.changes.map(change => [String(change.id), change]));
+const auditRemediationPath = path.join(repoRoot, "validation_artifacts", "question_quality", "supply_demand_equilibrium_audit_remediation.json");
+const auditRemediation = JSON.parse(fs.readFileSync(auditRemediationPath, "utf8"));
+const auditExpectedById = new Map(auditRemediation.changes.map(change => [String(change.id), change]));
 const ALLOWED_RECORD_KEYS = new Set(["q", "feedback", "sourceHash", "sourceCurationPhase", "sourceOccurrences"]);
 
 function stable(value) {
@@ -25,10 +28,14 @@ function immutableOccurrences(question) {
 }
 
 export const QUESTION_QUALITY_CURATION_PHASE = record.phase;
-export const AUTHORIZED_QUESTION_QUALITY_IDS = Object.freeze([...expectedById.keys()]);
+export const AUTHORIZED_QUESTION_QUALITY_IDS = Object.freeze([...new Set([...expectedById.keys(), ...auditExpectedById.keys()])]);
 export const AUTHORIZED_MARKET_GATE_AUTHOR_PATH = "play/economic-realm/market-gate/authoring/market_gate_phase2a_author.mjs";
 
 export function isAuthorizedQuestionQualityCuration(id, before, after) {
+  const auditExpected = auditExpectedById.get(String(id));
+  if (auditExpected) {
+    return Boolean(before && after) && stable(before) === stable(auditExpected.before) && stable(after) === stable(auditExpected.after);
+  }
   const expected = expectedById.get(String(id));
   if (!expected || !before || !after) return false;
   if (before.q !== expected.before.q || before.feedback !== expected.before.feedback || before.sourceHash !== expected.before.sourceHash) return false;

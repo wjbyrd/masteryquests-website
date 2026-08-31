@@ -55,6 +55,8 @@ for (const change of fixes.changes) {
 
 assert.equal(entries.length, 240, "Supply/Demand/Equilibrium audit scope changed");
 assert.equal(result.counts.errors, 0, "Target family has deterministic quality defects");
+assert.equal(result.counts.warnings, 0, "Target family retains quality warnings");
+assert.equal(result.counts.reviews, 0, "Target family retains REVIEW findings");
 for (const repairedRule of ["graph-prompt-missing-cue", "awkward-graph-wording", "awkward-equilibrium-wording", "visual-only-feedback"]) {
   assert.equal(result.findings.filter(finding => finding.rule === repairedRule).length, 0, `${repairedRule} returned after remediation`);
 }
@@ -84,7 +86,7 @@ const report = renderMarkdownReport({
   scope: { concepts, pools: [], questionCount: entries.length },
   counts: result.counts,
   ruleCounts: [],
-  findings: result.findings.slice(0, 1)
+  findings: synthetic.findings.slice(0, 1)
 });
 assert(report.includes("# Question Quality Audit") && report.includes("Current wording"), "Human-readable report contract changed");
 

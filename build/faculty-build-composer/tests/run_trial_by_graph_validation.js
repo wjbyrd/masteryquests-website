@@ -60,6 +60,8 @@ function runtimeDeckCheck(composition,target){
   const consumerChoiceIds=new Set(Array.from({length:46},(_,index)=>String(42560+index)));
   const inequalityIds=new Set(Array.from({length:42},(_,index)=>String(42720+index)));
   const savingInvestmentIds=new Set(Object.values(library.concepts["saving-investment-and-loanable-funds"]?.questions||{}).flat().map(q=>String(q.canonicalId||q.id)));
+  const qualityAuthorization=JSON.parse(fs.readFileSync(path.resolve(root,'..','..','validation_artifacts','question_quality','supply_demand_equilibrium_audit_authorization.json'),'utf8'));
+  const qualityGraphIds=new Set(qualityAuthorization.changes.filter(change=>change.rules.includes('image-without-graph-required')).map(change=>String(change.id)));
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -68,14 +70,15 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
     }
   }
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
-  if(flagged!==1009) issues.push(`graphRequired count ${flagged}`);
+  if(qualityGraphIds.size!==23) issues.push(`quality remediation graph id count ${qualityGraphIds.size}`);
+  if(flagged!==1032) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 
@@ -101,8 +104,8 @@ function runtimeDeckCheck(composition,target){
 
   const demand=core.compose(library,recipe('demand'));
   const demandRuntime=runtimeDeckCheck(demand,15);
-  if(demand.counts.graphSafe!==21) issues.push(`demand graphSafe ${demand.counts.graphSafe}`);
-  if(JSON.stringify(demandRuntime.supported)!==JSON.stringify([10,15,20])) issues.push(`21-inventory targets ${JSON.stringify(demandRuntime.supported)}`);
+  if(demand.counts.graphSafe!==25) issues.push(`demand graphSafe ${demand.counts.graphSafe}`);
+  if(JSON.stringify(demandRuntime.supported)!==JSON.stringify([10,15,20])) issues.push(`25-inventory targets ${JSON.stringify(demandRuntime.supported)}`);
   if(demandRuntime.deck.length!==15) issues.push('15 deck failed');
 
   const ad=core.compose(library,recipe('aggregate-demand'));
