@@ -1,7 +1,9 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "checks": 2186,
-  "errors": [],
+  "errors": [
+    "all records outside repaired and pinned forward concepts unchanged: PG1-DMD-E-001,40010,40011,PG1-EQ-M-002,40012,40013,40016,40017,40019,40020,PG1-SUP-E-001,40008,PG1-SUP-L-001"
+  ],
   "summary": {
     "conceptId": "federal-budgets-and-debt",
     "newQuestions": 108,
@@ -360,6 +362,6 @@
       "concepts": 135,
       "assets": 494
     },
-    "librarySha256": "16772f922e29a5442852dff2e5bec394f5827f567706c60bb982ebec59bb11b2"
+    "librarySha256": "5adbede70c22d23e021ce0aa0bc43eba7d38dec57eba5cd0bb15ff4008cb80ba"
   }
 }

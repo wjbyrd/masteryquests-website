@@ -575,40 +575,6 @@ button:active {
         inset 0 0 14px rgba(0,0,0,0.74);
 }
 
-/* Utility button (fullscreen toggle) — safe to restyle or move */	
-.fullscreenBtn {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    padding: 6px 12px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #e0f2fe;
-    background: linear-gradient(180deg, #12304f, #04101f);
-    border: 1px solid rgba(56,189,248,0.32);
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow:
-        0 0 10px rgba(56,189,248,0.22),
-        inset 0 0 7px rgba(0,0,0,0.80);
-    transition: all 0.15s ease;
-}
-
-.fullscreenBtn:hover {
-    background: linear-gradient(180deg, #1d4d73, #0b2238);
-    border-color: rgba(247,217,130,0.62);
-    box-shadow:
-        0 0 16px rgba(56,189,248,0.34),
-        inset 0 0 8px rgba(0,0,0,0.76);
-}
-
-.fullscreenBtn:active {
-    transform: scale(0.95);
-    box-shadow:
-        0 0 8px rgba(56,189,248,0.28),
-        inset 0 0 10px rgba(0,0,0,0.86);
-}
 
 .return-menu-btn{
     position: absolute;
@@ -762,6 +728,26 @@ button:active {
         inset 0 0 10px rgba(0,0,0,0.76);
 }
 
+button.maze-box.exam-nav-room{
+    appearance:none;
+    padding:0;
+    color:#eef6ff;
+    font:800 14px/1 'Rajdhani',Arial,sans-serif;
+    cursor:pointer;
+}
+button.maze-box.exam-nav-room:hover,
+button.maze-box.exam-nav-room:focus-visible{
+    border-color:#8bdcff;
+    box-shadow:0 0 0 3px rgba(56,189,248,.18),0 0 14px rgba(56,189,248,.42);
+    outline:none;
+}
+button.maze-box.exam-nav-room.exam-answered{background:linear-gradient(180deg,rgba(52,56,112,.9),rgba(14,18,52,.98));border-color:rgba(165,180,252,.68)}
+button.maze-box.exam-nav-room.exam-unanswered{background:linear-gradient(180deg,rgba(30,58,88,.78),rgba(2,10,24,.98))}
+button.maze-box.exam-nav-room.exam-boss-ready{background:linear-gradient(180deg,rgba(154,104,26,.92),rgba(55,31,4,.98));border-color:#f7d982;box-shadow:0 0 16px rgba(247,217,130,.42)}
+button.maze-box.exam-nav-room:disabled{cursor:not-allowed;opacity:.34;filter:saturate(.35)}
+.maze-box.exam-committed{opacity:.58;background:linear-gradient(180deg,rgba(19,57,86,.72),rgba(3,10,24,.96));border-color:rgba(247,217,130,.28)}
+#answers button.selected,#answers button[aria-pressed="true"]{border-color:#f7d982!important;background:linear-gradient(180deg,rgba(30,78,110,.96),rgba(8,33,56,.98))!important;box-shadow:0 0 0 3px rgba(247,217,130,.16),0 0 18px rgba(56,189,248,.34)!important}
+
 /* Boss room highlights (10, 20, 30) — visual only */
 .maze-box:nth-child(10) {
     text-shadow:
@@ -891,6 +877,14 @@ button:active {
     text-align:center;
     opacity: .28;
     transition: all .4s ease;
+    appearance:none;
+    border:1px solid rgba(56,189,248,.16);
+    border-radius:10px;
+    padding:9px 7px;
+    color:inherit;
+    background:rgba(2,10,24,.45);
+    font:inherit;
+    cursor:not-allowed;
 }
 
 /* Locked artifact image (dimmed effect) */    	
@@ -917,7 +911,15 @@ button:active {
 .artifactSlot.unlocked {
     opacity: 1;
     transform: scale(1.05);
+    cursor:pointer;
 }
+
+.artifactSlot.available{border-color:rgba(247,217,130,.58);box-shadow:0 0 14px rgba(247,217,130,.16)}
+.artifactSlot:disabled{cursor:not-allowed}
+.artifactSlot:not(:disabled):hover,.artifactSlot:not(:disabled):focus-visible{transform:translateY(-2px) scale(1.05);outline:2px solid rgba(139,220,255,.68);outline-offset:2px}
+.artifact-mechanic{max-width:150px;color:rgba(224,242,254,.78)!important;font-size:11px!important}
+.artifact-status{color:#f7d982!important;font-weight:800!important;font-size:11px!important;text-transform:uppercase}
+.artifact-eliminated{display:none!important}
 
 .artifactSlot.unlocked img {
     filter:
@@ -1140,6 +1142,38 @@ button:active {
   justify-content:center;
   gap:12px;
   flex-wrap:wrap;
+}
+
+.game-menu-options{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  width:min(360px, 100%);
+  margin:0 auto 18px;
+}
+
+.game-menu-options[hidden]{display:none;}
+
+.game-menu-option{
+  width:100%;
+  min-height:48px;
+  padding:11px 16px;
+  border:1px solid rgba(56,189,248,.38);
+  border-radius:10px;
+  color:#e0f2fe;
+  background:linear-gradient(180deg,rgba(18,48,79,.96),rgba(4,16,31,.98));
+  box-shadow:0 0 12px rgba(56,189,248,.15),inset 0 0 9px rgba(0,0,0,.72);
+  font:700 13px/1.25 inherit;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.game-menu-option:hover,
+.game-menu-option:focus-visible{
+  color:#f7d982;
+  border-color:rgba(247,217,130,.64);
+  outline:none;
 }
 
 .secondary-modal-btn{
@@ -1522,10 +1556,6 @@ Every pixel matters.
 
 @media (max-width: 768px){
 
-  /* Hide fullscreen on mobile. Keep the game menu alive. */
-  .fullscreenBtn{
-    display: none !important;
-  }
 
   .return-menu-btn{
     display: block !important;
@@ -2838,6 +2868,131 @@ body.game-active #soundToggle{
     }
 }
 
+
+
+
+
+
+/* =========================================
+   DAILY CHALLENGES V1 — COMPACT STATUS UI
+========================================= */
+.daily-task-dock{
+    position:fixed;
+    top:14px;
+    left:50%;
+    z-index:145;
+    width:min(360px, calc(100vw - 28px));
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    pointer-events:none;
+}
+
+.daily-task-pill{
+    pointer-events:auto;
+    min-height:38px;
+    padding:8px 16px;
+    border:1px solid rgba(247,217,130,.66);
+    border-radius:999px;
+    color:#f7d982;
+    background:linear-gradient(180deg,rgba(20,56,83,.98),rgba(3,12,25,.98));
+    box-shadow:0 0 18px rgba(56,189,248,.25),0 0 24px rgba(247,217,130,.12),inset 0 0 12px rgba(0,0,0,.62);
+    font:700 12px/1.2 inherit;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+
+.daily-task-pill:hover,
+.daily-task-pill:focus-visible{
+    transform:translateY(1px) scale(1.02);
+    border-color:#f7d982;
+    box-shadow:0 0 22px rgba(56,189,248,.38),0 0 30px rgba(247,217,130,.2),inset 0 0 12px rgba(0,0,0,.62);
+    outline:none;
+}
+
+.daily-task-pill.is-complete{
+    color:#d1fae5;
+    border-color:rgba(52,211,153,.72);
+    box-shadow:0 0 18px rgba(52,211,153,.24),inset 0 0 12px rgba(0,0,0,.62);
+}
+
+.daily-details-panel{
+    pointer-events:auto;
+    width:100%;
+    margin-top:8px;
+    padding:16px;
+    box-sizing:border-box;
+    border:1px solid rgba(247,217,130,.42);
+    border-radius:14px;
+    color:#e0f2fe;
+    background:linear-gradient(155deg,rgba(5,17,34,.98),rgba(2,7,18,.98));
+    box-shadow:0 14px 38px rgba(0,0,0,.72),0 0 22px rgba(56,189,248,.18),inset 0 0 18px rgba(56,189,248,.05);
+    text-align:left;
+}
+
+.daily-details-panel[hidden]{display:none;}
+body:not(.mode-selection-active) .daily-task-dock:not(.daily-panel-open){display:none;}
+body.game-active .daily-task-pill{display:none;}
+.daily-details-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
+.daily-details-close{flex:0 0 auto;width:30px;height:30px;padding:0;border:1px solid rgba(56,189,248,.32);border-radius:999px;color:#e0f2fe;background:rgba(4,16,31,.84);font:700 18px/1 inherit;cursor:pointer;}
+.daily-details-close:hover,.daily-details-close:focus-visible{color:#f7d982;border-color:rgba(247,217,130,.62);outline:none;}
+.daily-details-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+.daily-details-title{margin:7px 0 5px;color:#f8fbff;font-size:18px;line-height:1.3;}
+.daily-details-meta{margin:0;color:rgba(224,242,254,.76);font-size:12px;line-height:1.45;}
+.daily-progress-track{height:7px;margin:12px 0 10px;overflow:hidden;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.2);}
+.daily-progress-fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#38bdf8,#f7d982);box-shadow:0 0 12px rgba(247,217,130,.5);transition:width .25s ease;}
+.daily-details-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;}
+.daily-stat{padding:9px;border-radius:9px;background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.13);}
+.daily-stat-label{display:block;color:rgba(199,236,255,.68);font-size:10px;letter-spacing:1px;text-transform:uppercase;}
+.daily-stat-value{display:block;margin-top:3px;color:#f7d982;font-size:15px;font-weight:700;}
+
+.daily-toast-region{
+    position:fixed;
+    top:68px;
+    left:50%;
+    z-index:160;
+    width:min(420px, calc(100vw - 28px));
+    transform:translateX(-50%);
+    pointer-events:none;
+}
+
+.daily-toast{
+    pointer-events:auto;
+    padding:18px 20px;
+    border:1px solid rgba(247,217,130,.62);
+    border-radius:16px;
+    color:#eaf7ff;
+    background:linear-gradient(145deg,rgba(9,31,51,.98),rgba(2,8,20,.98));
+    box-shadow:0 16px 44px rgba(0,0,0,.78),0 0 30px rgba(56,189,248,.28),0 0 20px rgba(247,217,130,.14);
+    cursor:pointer;
+    animation:dailyToastIn .32s ease-out both;
+}
+.daily-toast.is-leaving{animation:dailyToastOut .24s ease-in both;}
+.daily-toast.is-complete{border-color:rgba(52,211,153,.72);box-shadow:0 16px 44px rgba(0,0,0,.78),0 0 30px rgba(52,211,153,.23),0 0 20px rgba(247,217,130,.12);}
+.daily-toast-kicker{color:#f7d982;font-size:11px;font-weight:700;letter-spacing:2.3px;text-transform:uppercase;}
+.daily-toast-title{margin:7px 0 5px;color:#fff;font-size:20px;font-weight:700;line-height:1.25;}
+.daily-toast-progress{color:#c7ecff;font-size:16px;font-weight:700;}
+.daily-toast-copy{margin-top:7px;color:rgba(224,242,254,.72);font-size:12px;line-height:1.4;}
+
+@keyframes dailyToastIn{from{opacity:0;transform:translateY(-12px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes dailyToastOut{to{opacity:0;transform:translateY(-8px) scale(.98)}}
+
+@media(max-width:560px){
+    .daily-task-dock{top:8px;width:calc(100vw - 20px);}
+    .daily-task-pill{min-height:34px;padding:7px 13px;font-size:11px;}
+    .daily-details-panel{padding:13px;}
+    .daily-toast-region{top:52px;width:calc(100vw - 20px);}
+    .daily-toast{padding:15px 16px;}
+    .daily-toast-title{font-size:18px;}
+}
+
+@media(prefers-reduced-motion:reduce){
+    .daily-toast,.daily-toast.is-leaving{animation:none;}
+    .daily-progress-fill,.daily-task-pill{transition:none;}
+}
 </style>
 
 <style id="targetedMasteryRepairStyles">
@@ -2847,6 +3002,8 @@ body.game-active #soundToggle{
 .repair-weak-areas-btn{order:-1;border-color:rgba(74,222,128,.75)!important;box-shadow:0 0 18px rgba(74,222,128,.22)!important}
 .target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
 @media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
+
+
 </style>
 <style id="facultyOfficialThemeStyles">
 body.blank-builder-template{--mq-gameplay-scene-overlay:linear-gradient(rgba(2,6,23,.30),rgba(2,6,23,.48))}
@@ -2859,6 +3016,36 @@ body.blank-builder-template.mq-themed{background-image:var(--mq-gameplay-scene-o
 .mode-card .mode-symbol[hidden]{display:none!important}
 .artifactSlot img{object-fit:contain}
 @media(max-width:560px){#wizardImage.mq-guide-image{max-width:122px}.generic-boss-image{height:150px;width:min(160px,48vw)}}
+
+.guide-intro-screen{position:fixed;inset:0;z-index:6500;display:grid;place-items:center;box-sizing:border-box;min-height:100dvh;padding:clamp(24px,5vw,72px);overflow:auto;color:#eef6ff;background:linear-gradient(115deg,rgba(2,6,23,.98),rgba(4,18,35,.90)),var(--mq-guide-intro-image,var(--mq-start-image,none));background-size:cover;background-position:center}
+.guide-intro-screen[hidden]{display:none}
+body.guide-intro-active{overflow:hidden}
+.guide-intro-screen::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 28% 42%,rgba(56,189,248,.16),transparent 36%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 48%,rgba(0,0,0,.36))}
+.guide-intro-stage{position:relative;display:grid;grid-template-columns:minmax(260px,42vw) minmax(300px,540px);align-items:center;gap:clamp(28px,6vw,90px);width:min(1120px,100%);margin:auto}
+.guide-intro-portrait-frame{display:grid;place-items:end center;min-height:min(68vh,680px);overflow:hidden;border:1px solid rgba(56,189,248,.28);border-radius:24px;background:radial-gradient(circle at 50% 34%,rgba(56,189,248,.19),rgba(2,8,20,.82) 66%);box-shadow:0 22px 70px rgba(0,0,0,.72),0 0 38px rgba(56,189,248,.15),inset 0 0 34px rgba(247,217,130,.06)}
+.guide-intro-portrait-frame.character-art-mode{overflow:visible;border-color:transparent;background:none;box-shadow:none}
+.guide-intro-portrait-frame.custom-image-mode{overflow:hidden}
+.guide-intro-image{display:block;width:100%;height:min(68vh,680px);object-fit:contain;object-position:center bottom;filter:drop-shadow(0 18px 22px rgba(0,0,0,.62))}
+.guide-intro-image[hidden],.guide-intro-fallback[hidden]{display:none}
+.guide-intro-fallback{align-self:center;color:#f7d982;font-size:clamp(110px,22vw,250px);filter:drop-shadow(0 0 28px rgba(56,189,248,.48))}
+.guide-intro-copy{padding:clamp(8px,2vw,24px) 0;text-shadow:0 2px 8px rgba(0,0,0,.85)}
+.guide-intro-kicker{margin:0 0 10px;color:#8bdcff;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+.guide-intro-name{margin:0 0 24px;color:#f7d982;font-size:clamp(36px,5vw,68px);line-height:.98;letter-spacing:2px;text-transform:uppercase}
+.guide-intro-dialogue{margin:0 0 18px;color:#f7fbff;font-size:clamp(18px,2.1vw,25px);line-height:1.55}
+.guide-intro-dialogue.secondary{margin-bottom:30px;color:rgba(224,242,254,.78);font-size:clamp(16px,1.7vw,21px)}
+.guide-intro-proceed{min-width:190px;padding:14px 30px;border:1px solid rgba(247,217,130,.72);border-radius:999px;color:#07111e;background:linear-gradient(180deg,#f7d982,#cda94c);box-shadow:0 0 24px rgba(247,217,130,.25),0 12px 30px rgba(0,0,0,.42);font:900 14px/1 inherit;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+.guide-intro-proceed:hover,.guide-intro-proceed:focus-visible{transform:translateY(-1px);box-shadow:0 0 32px rgba(247,217,130,.4),0 14px 34px rgba(0,0,0,.48);outline:2px solid rgba(139,220,255,.7);outline-offset:3px}
+.boss-reveal-screen{z-index:6450;background:linear-gradient(115deg,rgba(2,6,23,.985),rgba(16,10,28,.94)),var(--mq-boss-reveal-image,none)}
+.boss-reveal-screen::before{background:radial-gradient(circle at 28% 42%,var(--bossRevealGlow,rgba(247,217,130,.2)),transparent 38%),linear-gradient(90deg,rgba(0,0,0,.12),transparent 48%,rgba(0,0,0,.42))}
+.boss-reveal-screen .guide-intro-portrait-frame{border-color:var(--bossRevealBorder,rgba(247,217,130,.42));background:radial-gradient(circle at 50% 34%,var(--bossRevealGlow,rgba(247,217,130,.18)),rgba(2,8,20,.86) 68%)}
+.boss-reveal-screen .guide-intro-image{filter:drop-shadow(0 20px 28px rgba(0,0,0,.7)) drop-shadow(0 0 18px var(--bossRevealGlow,rgba(247,217,130,.22)))}
+.boss-reveal-screen .guide-intro-kicker{color:#f7d982}
+.boss-reveal-screen .guide-intro-dialogue{max-width:30ch}
+body.boss-reveal-active{overflow:hidden}
+@media(max-width:760px){.guide-intro-screen{place-items:start center;padding:18px 16px 26px}.guide-intro-stage{grid-template-columns:1fr;gap:20px;max-width:560px}.guide-intro-portrait-frame{min-height:38vh;max-height:46vh;border-radius:18px}.guide-intro-image{height:44vh;max-height:440px}.guide-intro-copy{text-align:center;padding:0}.guide-intro-name{margin-bottom:16px}.guide-intro-dialogue{line-height:1.42}.guide-intro-dialogue.secondary{margin-bottom:22px}.guide-intro-proceed{width:min(280px,100%)}}
+@media(max-height:650px) and (min-width:761px){.guide-intro-screen{padding:20px 34px}.guide-intro-portrait-frame,.guide-intro-image{min-height:0;height:76vh}.guide-intro-name{font-size:42px;margin-bottom:14px}.guide-intro-dialogue{font-size:18px;line-height:1.4}.guide-intro-dialogue.secondary{margin-bottom:18px}}
+
+
 </style>
 </head>
 
@@ -2922,6 +3109,28 @@ Respect structure strictly.
      style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;">
 </div>
 
+<!-- Daily Challenges is a persistent layer, not a game mode. -->
+<div id="dailyTaskDock" class="daily-task-dock" hidden>
+  <button id="dailyTaskPill" class="daily-task-pill" type="button" aria-expanded="false" aria-controls="dailyDetailsPanel">
+    DAILY TASK
+  </button>
+  <section id="dailyDetailsPanel" class="daily-details-panel" aria-label="Daily task details" hidden>
+    <div class="daily-details-heading">
+      <div class="daily-details-kicker">Today's Daily</div>
+      <button id="dailyDetailsClose" class="daily-details-close" type="button" aria-label="Close Daily Task details">×</button>
+    </div>
+    <h2 id="dailyDetailsTitle" class="daily-details-title"></h2>
+    <p id="dailyDetailsMeta" class="daily-details-meta"></p>
+    <div class="daily-progress-track" aria-hidden="true"><div id="dailyDetailsProgress" class="daily-progress-fill"></div></div>
+    <div class="daily-details-grid">
+      <div class="daily-stat"><span class="daily-stat-label">Dailies completed</span><span id="dailyLifetimeValue" class="daily-stat-value">0</span></div>
+      <div class="daily-stat"><span class="daily-stat-label">Next milestone</span><span id="dailyMilestoneValue" class="daily-stat-value">1</span></div>
+    </div>
+    <p id="dailyMilestoneMeta" class="daily-details-meta" style="margin-top:9px;"></p>
+  </section>
+</div>
+<div id="dailyToastRegion" class="daily-toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
 <!-- Transition overlay between rooms (safe to style, keep IDs) -->    
 <div id="hallwayTransition">
     <div id="hallwayText"></div>
@@ -2956,10 +3165,10 @@ Respect structure strictly.
   <span class="mode-card-text">Ten minutes. Correct answers advance. Misses push you back.</span>
 </button>
 
-<button class="mode-card" data-mode="exam" onclick="startSelectedMode('exam')" aria-label="Exam Drill. No checkpoints, no milestones, and no campaign progress. Just adaptive practice.">
+<button class="mode-card" data-mode="exam" onclick="startSelectedMode('exam')" aria-label="Exam Drill. Navigate and revise nine questions per section, then deliberately enter each adaptive checkpoint.">
   <div class="mode-symbol" aria-hidden="true">✎</div>
  <span class="mode-card-title">Exam Drill</span>
-  <span class="mode-card-text">No checkpoints. No milestones. No campaign progress. Just adaptive practice.</span>
+  <span class="mode-card-text">Navigate and revise each nine-question section. Enter its adaptive checkpoint when you are ready to commit.</span>
 </button>
 
 <button class="mode-card" data-mode="quiz" onclick="startSelectedMode('quiz')" aria-label="Quiz. Fixed-length classroom quiz using the concepts selected by your instructor. Choose from one to fifteen questions before launching.">
@@ -3013,6 +3222,37 @@ Respect structure strictly.
     <button class="mode-back-btn" onclick="returnToTitleScreen()">BACK</button>
   </div>
 </div>
+
+<section id="guideIntroScreen" class="guide-intro-screen" role="dialog" aria-modal="true" aria-labelledby="guideIntroName" hidden>
+  <div class="guide-intro-stage">
+    <div class="guide-intro-portrait-frame">
+      <img id="guideIntroImage" class="guide-intro-image" alt="" hidden>
+      <div id="guideIntroFallback" class="guide-intro-fallback" aria-hidden="true">✦</div>
+    </div>
+    <div class="guide-intro-copy">
+      <p class="guide-intro-kicker">Your Guide</p>
+      <h1 id="guideIntroName" class="guide-intro-name">The Guide</h1>
+      <p id="guideIntroPrimary" class="guide-intro-dialogue"></p>
+      <p id="guideIntroSecondary" class="guide-intro-dialogue secondary"></p>
+      <button id="guideIntroProceed" class="guide-intro-proceed" type="button" onclick="proceedGuideIntroduction()">Proceed</button>
+    </div>
+  </div>
+</section>
+
+<section id="bossRevealScreen" class="guide-intro-screen boss-reveal-screen" role="dialog" aria-modal="true" aria-labelledby="bossRevealName" hidden>
+  <div class="guide-intro-stage">
+    <div class="guide-intro-portrait-frame">
+      <img id="bossRevealImage" class="guide-intro-image" alt="" hidden>
+      <div id="bossRevealFallback" class="guide-intro-fallback" aria-hidden="true">◆</div>
+    </div>
+    <div class="guide-intro-copy">
+      <p id="bossRevealKicker" class="guide-intro-kicker">Checkpoint</p>
+      <h1 id="bossRevealName" class="guide-intro-name">Checkpoint</h1>
+      <p id="bossRevealDialogue" class="guide-intro-dialogue"></p>
+      <button id="bossRevealProceed" class="guide-intro-proceed" type="button" onclick="proceedBossReveal()">Enter the checkpoint</button>
+    </div>
+  </div>
+</section>
 
 <div id="quizSetupModal" class="quiz-setup-modal" role="dialog" aria-modal="true" aria-labelledby="quizSetupTitle">
   <div class="quiz-setup-card">
@@ -3100,8 +3340,7 @@ Respect structure strictly.
 </div>
 
 <div class="dungeon-container">
-    <button class="fullscreenBtn" onclick="goFullscreen()">FULLSCREEN</button>
-	<button id="returnMenuBtn" class="return-menu-btn" onclick="confirmReturnToModeMenu()">MODE MENU</button>
+	<button id="returnMenuBtn" class="return-menu-btn" type="button" onclick="openGameMenu()" aria-haspopup="dialog" aria-controls="gameModal">GAME MENU</button>
     <button id="soundToggle" class="sound-toggle" onclick="toggleGameSound()" aria-label="Toggle sound">Sound On</button>
 
 <!-- =========================================
@@ -3134,18 +3373,24 @@ DO NOT REMOVE:
 <div id="artifactVault" style="display:none;">
     <h3>Acquired Artifacts</h3>
     <div class="vaultRow">
-        <div id="vaultCompass" class="artifactSlot">
+        <button id="vaultCompass" class="artifactSlot" type="button" onclick="activateArtifactPower('compass')" disabled>
             <span aria-hidden="true">1</span>
-            <span>Milestone One</span>
-        </div>
-        <div id="vaultLens" class="artifactSlot">
+            <span class="artifact-name">Milestone One</span>
+            <span class="artifact-mechanic">Eliminate 1 wrong answer</span>
+            <span class="artifact-status">Not discovered</span>
+        </button>
+        <button id="vaultLens" class="artifactSlot" type="button" onclick="activateArtifactPower('lens')" disabled>
             <span aria-hidden="true">2</span>
-            <span>Milestone Two</span>
-        </div>
-        <div id="vaultScales" class="artifactSlot">
+            <span class="artifact-name">Milestone Two</span>
+            <span class="artifact-mechanic">Eliminate 2 wrong answers</span>
+            <span class="artifact-status">Not discovered</span>
+        </button>
+        <button id="vaultScales" class="artifactSlot" type="button" onclick="activateArtifactPower('scales')" disabled>
             <span aria-hidden="true">3</span>
-            <span>Milestone Three</span>
-        </div>
+            <span class="artifact-name">Milestone Three</span>
+            <span class="artifact-mechanic">Skip 2 normal rooms next run</span>
+            <span class="artifact-status">Not discovered</span>
+        </button>
     </div>
 </div>
 </div>
@@ -3234,7 +3479,14 @@ DO NOT REMOVE:
     <h2 id="gameModalTitle">Signal Warning</h2>
     <p id="gameModalText"></p>
 
-    <div class="game-modal-actions">
+    <div id="gameMenuOptions" class="game-menu-options" hidden>
+      <button id="gameMenuModeSelect" class="game-menu-option" type="button" onclick="chooseGameMenuModeSelection()">Mode Selection</button>
+      <button id="gameMenuFullscreen" class="game-menu-option" type="button" onclick="toggleGameMenuFullscreen()">Enter Fullscreen</button>
+      <button id="gameMenuDaily" class="game-menu-option" type="button" onclick="openDailyFromGameMenu()">Daily Task</button>
+      <button id="gameMenuGuideIntro" class="game-menu-option" type="button" onclick="replayGuideIntroduction()">Replay Introduction</button>
+    </div>
+
+    <div id="gameModalActions" class="game-modal-actions">
       <button id="gameModalConfirm" class="continue-btn">Continue</button>
       <button id="gameModalCancel" class="continue-btn secondary-modal-btn" style="display:none;">Cancel</button>
     </div>
@@ -3323,16 +3575,34 @@ function safePlay(){ return Promise.resolve(); }
 function resumeCurrentMusic(){ return Promise.resolve(); }
 function setGameControlsVisible(isVisible){
     document.body.classList.toggle("game-active", !!isVisible);
+    if(isVisible){
+        document.body.classList.remove("mode-selection-active");
+        const dock = document.getElementById("dailyTaskDock");
+        const panel = document.getElementById("dailyDetailsPanel");
+        const pill = document.getElementById("dailyTaskPill");
+        if(dock) dock.classList.remove("daily-panel-open");
+        if(panel) panel.hidden = true;
+        if(pill) pill.setAttribute("aria-expanded", "false");
+    }
 }
 
 restoreSoundSetting();
 setGameControlsVisible(false);
 
+function isGameFullscreen(){
+    return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+}
+
+function updateGameMenuFullscreenAction(){
+    const button = document.getElementById("gameMenuFullscreen");
+    if(button) button.textContent = isGameFullscreen() ? "Exit Fullscreen" : "Enter Fullscreen";
+}
+
 function goFullscreen(){
 let el = document.documentElement;
 
 // Check if we are ALREADY in fullscreen
-let isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
+let isFullscreen = isGameFullscreen();
 
 if (!isFullscreen) {
         // ENTER Fullscreen
@@ -3352,6 +3622,13 @@ if (!isFullscreen) {
         }
     }
 }
+
+function toggleGameMenuFullscreen(){
+    goFullscreen();
+}
+
+document.addEventListener("fullscreenchange", updateGameMenuFullscreenAction);
+document.addEventListener("webkitfullscreenchange", updateGameMenuFullscreenAction);
     
 // =============================================
 // 1. Initial UI State: Hide game until startGame runs
@@ -3452,6 +3729,19 @@ let questionStartTime = 0;
 let streak = 0; 
 let startTime; // Will be set in startGame()
 let finalElapsedTimeMs = null;
+const EXAM_DRILL_SECTIONS = Object.freeze([
+    Object.freeze({index:0,start:1,end:9,boss:10,difficulty:"easy",bossDifficulty:"easyBoss"}),
+    Object.freeze({index:1,start:11,end:19,boss:20,difficulty:"medium",bossDifficulty:"mediumBoss"}),
+    Object.freeze({index:2,start:21,end:29,boss:30,difficulty:"hard",bossDifficulty:"finalBoss"})
+]);
+let examDrillState = null;
+let bossRevealShownKeys = new Set();
+let activeBossEncounter = null;
+let activeBossReveal = null;
+let checkpointAttemptState = null;
+let lastCheckpointOutcome = null;
+let currentQuestionAssistance = null;
+let artifactSkipState = {remaining:0,skippedRooms:[]};
 function getElapsedTimeMs(){ return Number.isFinite(finalElapsedTimeMs) ? finalElapsedTimeMs : (startTime ? (Date.now() - startTime) : 0); }
 function freezeCompletionTime(fallbackMs = 0){
     if(!Number.isFinite(finalElapsedTimeMs)){
@@ -3482,6 +3772,7 @@ const FACULTY_COMPOSITION_CONFIG = {
     "selectedConceptIds": [
         "saving-investment-and-loanable-funds"
     ],
+    "guideName": "",
     "checkpointFocus": {
         "checkpointOne": null,
         "checkpointTwo": null,
@@ -3492,10 +3783,21 @@ const FACULTY_COMPOSITION_CONFIG = {
         "overrides": {},
         "customOverrides": {}
     },
-    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1",
-    "templateVersion": "phase4.5s.3e-market-gate-graph-sync-visual-ux-polish-phase3b-custom-assets-phase3a-official-themes-phase1.5-hardening",
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1",
+    "templateVersion": "guide-intro-v1-phase4.5s.3e-market-gate-graph-sync-visual-ux-polish-phase3b-custom-assets-phase3a-official-themes-phase1.5-hardening",
     "composerVersion": "4.5s.3k",
     "compositionId": "saving-investment-loanable-funds-production-validation",
+    "dailyChallengesEnabled": true,
+    "guide": {
+        "identity": "guide",
+        "displayName": "The Guide",
+        "imageSlot": "guideImage",
+        "introLines": [
+            "Greetings. I’ll be with you as you make your way through this Quest.",
+            "If you are ready, follow me."
+        ],
+        "custom": false
+    },
     "fadingFortune": {
         "enabled": true,
         "allowedTargets": [
@@ -3562,10 +3864,10 @@ const FACULTY_COMPOSITION_CONFIG = {
         "customAssetData": {},
         "slots": {}
     },
-    "saveKeyNamespace": "mq-econ:saving-investment-loanable-funds-production-validation:21b0f60b56ff",
-    "librarySha256": "16772f922e29a5442852dff2e5bec394f5827f567706c60bb982ebec59bb11b2",
-    "templateSha256": "896062befef3daf11e2af814010e0a3f3d64dfa48572b75bf319c17adc151f85",
-    "compositionFingerprint": "21b0f60b56ff203ff1e5ed08ae424f09c4fc6bdc3f69c9b76582c1596468c9cb"
+    "saveKeyNamespace": "mq-econ:saving-investment-loanable-funds-production-validation:eb67906448a3",
+    "librarySha256": "5adbede70c22d23e021ce0aa0bc43eba7d38dec57eba5cd0bb15ff4008cb80ba",
+    "templateSha256": "4e2d9f4425e419fdad9cad61de7c016667b7777fdcf13e099b760d7f9877e46c",
+    "compositionFingerprint": "eb67906448a342e4a91e64551988c9b3754353335661e3c61333eb19862a6f1b"
 };
 // =====================================================
 // END FACULTY COMPOSITION CONFIG
@@ -3578,9 +3880,18 @@ function isFacultyModeSupported(mode){
 
 function getFacultyVisualSlot(slotId){
     const slot = FACULTY_COMPOSITION_CONFIG.visualTheme?.slots?.[slotId];
-    if(!slot || typeof slot !== "object") return {id:null,label:"",displayName:"",alt:"",source:"fallback",src:""};
+    if(!slot || typeof slot !== "object") return {id:null,label:"",displayName:"",alt:"",source:"fallback",src:"",presentationMode:"fallback"};
     const embeddedCustom = slot.id ? FACULTY_COMPOSITION_CONFIG.visualTheme?.customAssetData?.[slot.id] : "";
     return {...slot, src:slot.src || embeddedCustom || ""};
+}
+
+function applyCharacterPresentationMode(image, slot){
+    const frame = image?.closest?.(".guide-intro-portrait-frame");
+    if(!frame) return;
+    const mode = slot?.source === "custom" ? "custom-image" : slot?.presentationMode === "transparent-character" ? "character-art" : "custom-image";
+    frame.classList.toggle("character-art-mode", mode === "character-art");
+    frame.classList.toggle("custom-image-mode", mode !== "character-art");
+    frame.dataset.presentationMode = mode;
 }
 
 function facultyEscapeAttribute(value){
@@ -3606,8 +3917,12 @@ function applyFacultyVisualTheme(){
         document.documentElement.style.setProperty("--mq-gameplay-image", `url("${gameplay.src}")`);
         document.body.classList.add("mq-themed");
     }
+    const introBackground = gameplay.src || start.src;
+    if(introBackground) document.documentElement.style.setProperty("--mq-guide-intro-image", `url("${introBackground}")`);
 
     const guide = getFacultyVisualSlot("guideImage");
+    const guideConfig = FACULTY_COMPOSITION_CONFIG.guide || {};
+    const guideDisplayName = guideConfig.displayName || guide.displayName || "Guide";
     const wizardBox = document.getElementById("wizardBox");
     const wizard = document.getElementById("wizardImage");
     const wizardName = document.getElementById("wizardName");
@@ -3616,7 +3931,7 @@ function applyFacultyVisualTheme(){
     if(guide.src && wizard){
         const image = document.createElement("img");
         image.src = guide.src;
-        image.alt = guide.alt || guide.displayName || guide.label || "Game guide";
+        image.alt = guide.alt || guideDisplayName;
         wizard.textContent = "";
         wizard.classList.remove("guide-symbol");
         wizard.classList.add("mq-guide-image");
@@ -3624,7 +3939,22 @@ function applyFacultyVisualTheme(){
         wizard.removeAttribute("aria-label");
         wizard.appendChild(image);
     }
-    if(wizardName && guide.displayName) wizardName.textContent = guide.displayName;
+    if(wizardName) wizardName.textContent = guideDisplayName;
+
+    const introImage = document.getElementById("guideIntroImage");
+    const introFallback = document.getElementById("guideIntroFallback");
+    const introName = document.getElementById("guideIntroName");
+    const introLines = Array.isArray(guideConfig.introLines) ? guideConfig.introLines : [];
+    if(introName) introName.textContent = guideDisplayName;
+    if(document.getElementById("guideIntroPrimary")) document.getElementById("guideIntroPrimary").textContent = introLines[0] || `Greetings. I’ll be with you as you make your way through this Quest.`;
+    if(document.getElementById("guideIntroSecondary")) document.getElementById("guideIntroSecondary").textContent = introLines[1] || "If you are ready, follow me.";
+    if(introImage){
+        introImage.hidden = !guide.src;
+        introImage.src = guide.src || "";
+        introImage.alt = guide.src ? `${guideDisplayName}, your guide` : "";
+        applyCharacterPresentationMode(introImage, guide);
+    }
+    if(introFallback) introFallback.hidden = Boolean(guide.src);
 
     const artifactRows = [
         ["vaultCompass","artifact1","Milestone One"],
@@ -3636,7 +3966,7 @@ function applyFacultyVisualTheme(){
         const slot = getFacultyVisualSlot(slotId);
         if(!row) return;
         const marker = row.querySelector("span[aria-hidden='true']");
-        const label = row.querySelector("span:last-child");
+        const label = row.querySelector(".artifact-name");
         if(slot.src && marker){
             const image = document.createElement("img");
             image.src = slot.src;
@@ -3714,11 +4044,18 @@ const PLAYER_KEY = `${STORAGE_PREFIX}:player`;
 const RUN_ID_KEY = `${STORAGE_PREFIX}:runID`;
 const ROOM_KEY = `${STORAGE_PREFIX}:standard:room`;
 const CURRENT_MODE_KEY = `${STORAGE_PREFIX}:currentMode`;
+const GUIDE_INTRO_SEEN_KEY = `${STORAGE_PREFIX}:guideIntroSeen`;
 const ARTIFACT_STORAGE_KEYS = {
     compass: `${STORAGE_PREFIX}:standard:artifact:one`,
     lens: `${STORAGE_PREFIX}:standard:artifact:two`,
     scales: `${STORAGE_PREFIX}:standard:artifact:three`
 };
+const ARTIFACT_INVENTORY_KEYS = {
+    compass: `${STORAGE_PREFIX}:artifact:inventory:one`,
+    lens: `${STORAGE_PREFIX}:artifact:inventory:two`,
+    scales: `${STORAGE_PREFIX}:artifact:inventory:three`
+};
+const ARTIFACT_PENDING_SKIP_KEY = `${STORAGE_PREFIX}:artifact:pendingSkipRooms`;
 let room = localStorage.getItem(ROOM_KEY) ? parseInt(localStorage.getItem(ROOM_KEY), 10) : 1;
 let currentQuestion = null;
 let answerSubmissionPending = false;
@@ -3803,6 +4140,15 @@ const REALM_PERFECT_CALIBRATION_KEY = `${STORAGE_PREFIX}:standard:perfectCheckpo
 const REALM_RETURN_AND_REBUILD_KEY = `${STORAGE_PREFIX}:standard:resumeComplete`;
 
 let gameMode = "standard";
+const DEFAULT_MODE_CAPABILITIES = Object.freeze({immediateCorrectnessFeedback:true,artifactPowersEnabled:false});
+const MODE_CAPABILITIES = Object.freeze({
+    standard:Object.freeze({immediateCorrectnessFeedback:true,artifactPowersEnabled:true}),
+    exam:Object.freeze({immediateCorrectnessFeedback:false,artifactPowersEnabled:false}),
+    quiz:Object.freeze({immediateCorrectnessFeedback:true,artifactPowersEnabled:false})
+});
+function getModeCapabilities(mode = gameMode){ return MODE_CAPABILITIES[mode] || DEFAULT_MODE_CAPABILITIES; }
+function modeAllowsImmediateCorrectnessFeedback(){ return getModeCapabilities().immediateCorrectnessFeedback !== false; }
+function modeAllowsArtifactPowers(){ return getModeCapabilities().artifactPowersEnabled === true; }
 let runSessionId = 0;
 let runEnding = false;
 let timedModeDurationMs = 10 * 60 * 1000;
@@ -4103,7 +4449,7 @@ window.addEventListener("pageshow", reconcileTimedModeClock);
 window.addEventListener("focus", reconcileTimedModeClock);
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
-function isBossRoomForMode(r){ if(gameMode === "exam" || gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
+function isBossRoomForMode(r){ if(gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
 function getModeDisplayName(){
     if(gameMode === "timed-ended-early") return "Timed Trial Ended Early";
     if(gameMode === "timed" || gameMode === "timed-complete") return "Timed Trial";
@@ -4305,6 +4651,10 @@ function saveGameState(){
         conceptMemory,
         masteryState,
         adaptiveMode,
+        checkpointAttemptState,
+        lastCheckpointOutcome,
+        currentQuestionAssistance,
+        artifactSkipState,
         tagHistory,
         lastTypes,
         usedQuestions,
@@ -4319,7 +4669,12 @@ function saveGameState(){
         artifacts: {
             vaultCompass: localStorage.getItem(ARTIFACT_STORAGE_KEYS.compass) === "true",
             vaultLens: localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens) === "true",
-            vaultScales: localStorage.getItem(ARTIFACT_STORAGE_KEYS.scales) === "true"
+            vaultScales: localStorage.getItem(ARTIFACT_STORAGE_KEYS.scales) === "true",
+            inventory: {
+                compass:getArtifactInventoryCount("compass"),
+                lens:getArtifactInventoryCount("lens"),
+                scales:getArtifactInventoryCount("scales")
+            }
         }
     };
 
@@ -4358,6 +4713,10 @@ function loadSavedGame(){
         if(!masteryState.byDifficulty) masteryState.byDifficulty = {};
         if(!masteryState.attemptEvidence) masteryState.attemptEvidence = [];
         adaptiveMode = saveData.adaptiveMode || "support";
+        checkpointAttemptState = saveData.checkpointAttemptState || null;
+        lastCheckpointOutcome = saveData.lastCheckpointOutcome || null;
+        currentQuestionAssistance = saveData.currentQuestionAssistance || null;
+        artifactSkipState = saveData.artifactSkipState || {remaining:0,skippedRooms:[]};
         tagHistory = saveData.tagHistory || [];
         lastTypes = saveData.lastTypes || [];
 
@@ -4370,6 +4729,9 @@ function loadSavedGame(){
         if(saveData.artifacts?.vaultCompass) localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
         if(saveData.artifacts?.vaultLens) localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
         if(saveData.artifacts?.vaultScales) localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
+        Object.entries(saveData.artifacts?.inventory || {}).forEach(([key,count]) => {
+            if(ARTIFACT_INVENTORY_KEYS[key]) setArtifactInventoryCount(key, count);
+        });
 
         return true;
     } catch(error){
@@ -4384,9 +4746,6 @@ function clearSavedGame(){
 
     if(modeAllowsSave()){
         localStorage.removeItem(ROOM_KEY);
-        if(!isRealmMissionComplete()){
-            Object.values(ARTIFACT_STORAGE_KEYS).forEach(key => localStorage.removeItem(key));
-        }
     }
 }
 
@@ -5618,9 +5977,192 @@ const TIMING = {
 // Do NOT remove bossHealth logic.
      
 const artifacts = {
-    compass: { img: getFacultyArtifactSlot("compass").src, title: getFacultyArtifactSlot("compass").displayName || "Milestone One", text: "The first checkpoint is complete." },
-    lens: { img: getFacultyArtifactSlot("lens").src, title: getFacultyArtifactSlot("lens").displayName || "Milestone Two", text: "The second checkpoint is complete." },
-    scales: { img: getFacultyArtifactSlot("scales").src, title: getFacultyArtifactSlot("scales").displayName || "Milestone Three", text: "The final checkpoint is complete." }
+    compass: { img: getFacultyArtifactSlot("compass").src, title: getFacultyArtifactSlot("compass").displayName || "Milestone One", text: "Eliminate 1 wrong answer on an eligible question.", removeCount:1 },
+    lens: { img: getFacultyArtifactSlot("lens").src, title: getFacultyArtifactSlot("lens").displayName || "Milestone Two", text: "Eliminate 2 wrong answers on an eligible question.", removeCount:2 },
+    scales: { img: getFacultyArtifactSlot("scales").src, title: getFacultyArtifactSlot("scales").displayName || "Milestone Three", text: "Skip 2 eligible normal rooms on your next run.", skipCount:2 }
+}
+
+function getArtifactInventoryCount(key){
+    const value = Number(localStorage.getItem(ARTIFACT_INVENTORY_KEYS[key]) || 0);
+    return Number.isFinite(value) ? Math.max(0, Math.floor(value)) : 0;
+}
+
+function setArtifactInventoryCount(key, count){
+    if(!ARTIFACT_INVENTORY_KEYS[key]) return;
+    localStorage.setItem(ARTIFACT_INVENTORY_KEYS[key], String(Math.max(0, Math.floor(Number(count) || 0))));
+}
+
+function updateArtifactVaultUI(){
+    const rows = {compass:"vaultCompass",lens:"vaultLens",scales:"vaultScales"};
+    Object.entries(rows).forEach(([key,id]) => {
+        const element = document.getElementById(id);
+        if(!element) return;
+        const discovered = localStorage.getItem(ARTIFACT_STORAGE_KEYS[key]) === "true";
+        const count = getArtifactInventoryCount(key);
+        element.classList.toggle("unlocked", discovered);
+        element.classList.toggle("available", count > 0 && modeAllowsArtifactPowers());
+        element.disabled = count < 1 || !modeAllowsArtifactPowers();
+        element.setAttribute("aria-disabled", element.disabled ? "true" : "false");
+        const status = element.querySelector(".artifact-status");
+        if(status) status.textContent = !discovered ? "Not discovered" : count > 0 ? `Available · ${count}` : "Consumed";
+    });
+}
+
+function earnArtifact(key){
+    if(!ARTIFACT_STORAGE_KEYS[key] || !ARTIFACT_INVENTORY_KEYS[key]) return;
+    const before = getArtifactInventoryCount(key);
+    localStorage.setItem(ARTIFACT_STORAGE_KEYS[key], "true");
+    setArtifactInventoryCount(key, before + 1);
+    updateMissionArtifactCountFromVault();
+    updateArtifactVaultUI();
+    sendGameData({runID,event:"artifact_earned",room,artifactSlot:key,artifactInventoryBefore:before,artifactInventoryAfter:before + 1,artifactAvailable:1});
+    showArtifact(artifacts[key].img, artifacts[key].title, artifacts[key].text);
+}
+
+function explainArtifactActivation(reason, key){
+    const messages = {
+        "not-owned":"No usable copy of this artifact is available.",
+        "excluded-mode":"Artifact powers are unavailable in this mode.",
+        "checkpoint":"Answer-elimination artifacts cannot be used at a checkpoint.",
+        "repair":"Artifact powers cannot alter repair, bridge, or retest evidence.",
+        "evidence-critical":"This required question cannot be assisted.",
+        "unsupported-question":"This question does not support answer elimination.",
+        "already-assisted":"An answer-elimination artifact is already active on this question.",
+        "already-armed":"Two future-room skips are already armed."
+    };
+    const message = messages[reason] || "This artifact cannot be used right now.";
+    const target = document.getElementById("message");
+    if(target) target.innerText = message;
+    sendGameData({runID,event:"artifact_activation_failed",room,questionId:currentQuestion?.id || 0,artifactSlot:key,artifactFailedReason:reason,artifactInventoryBefore:getArtifactInventoryCount(key),artifactInventoryAfter:getArtifactInventoryCount(key),objective:currentQuestion ? (currentQuestion.objective || inferObjective(currentQuestion)) : ""});
+    return false;
+}
+
+function isEvidenceCriticalArtifactQuestion(question = currentQuestion){
+    return Boolean(question && (question.evidenceCritical === true || question.diagnostic === true || question.requiredSpecial === true || question.specialRoom === true || question.requiredForCheckpoint === true));
+}
+
+function getArtifactEliminationBlockReason(){
+    if(!modeAllowsArtifactPowers()) return "excluded-mode";
+    if(isBossRoomForMode(room)) return "checkpoint";
+    if(remediationState?.active || ["repair","bridge","retest"].includes(adaptiveMode)) return "repair";
+    if(isEvidenceCriticalArtifactQuestion()) return "evidence-critical";
+    if(!currentQuestion || !Array.isArray(currentQuestion.options) || currentQuestion.options.length < 3) return "unsupported-question";
+    if(currentQuestionAssistance?.removedIndexes?.length) return "already-assisted";
+    return "";
+}
+
+async function activateAnswerEliminationArtifact(key){
+    const requested = Number(artifacts[key]?.removeCount || 0);
+    const blockReason = getArtifactEliminationBlockReason();
+    if(blockReason) return explainArtifactActivation(blockReason, key);
+    const correctness = await Promise.all(currentQuestion.options.map((option,index) => isQuestionAnswerCorrect(currentQuestion,index)));
+    const incorrect = correctness.map((correct,index) => correct ? -1 : index).filter(index => index >= 0);
+    if(requested < 1 || incorrect.length < requested) return explainArtifactActivation("unsupported-question", key);
+    const removedIndexes = incorrect.slice(0, requested);
+    const before = getArtifactInventoryCount(key);
+    if(before < 1) return explainArtifactActivation("not-owned", key);
+    removedIndexes.forEach(index => {
+        const button = document.querySelector(`#answers button[data-answer-index="${index}"]`);
+        if(!button) return;
+        button.disabled = true;
+        button.tabIndex = -1;
+        button.setAttribute("aria-hidden","true");
+        button.classList.add("artifact-eliminated");
+    });
+    currentQuestionAssistance = {questionId:currentQuestion.id || 0,artifactSlot:key,removedIndexes:[...removedIndexes],distractorsRemoved:removedIndexes.length};
+    setArtifactInventoryCount(key, before - 1);
+    updateArtifactVaultUI();
+    const message = document.getElementById("message");
+    if(message) message.innerText = `${removedIndexes.length} wrong answer${removedIndexes.length === 1 ? "" : "s"} eliminated.`;
+    sendGameData({runID,event:"artifact_activated",room,questionId:currentQuestion.id || 0,artifactSlot:key,artifactDistractorsRemoved:removedIndexes.length,artifactInventoryBefore:before,artifactInventoryAfter:before - 1,artifactAvailable:before > 0 ? 1 : 0,objective:currentQuestion.objective || inferObjective(currentQuestion)});
+    saveGameState();
+    return true;
+}
+
+function activateFutureRoomSkips(key){
+    if(localStorage.getItem(ARTIFACT_PENDING_SKIP_KEY)) return explainArtifactActivation("already-armed", key);
+    const before = getArtifactInventoryCount(key);
+    if(before < 1) return explainArtifactActivation("not-owned", key);
+    const pending = {credits:2,armedRunID:runID || "pre-run",armedAt:Date.now()};
+    localStorage.setItem(ARTIFACT_PENDING_SKIP_KEY, JSON.stringify(pending));
+    setArtifactInventoryCount(key, before - 1);
+    updateArtifactVaultUI();
+    const message = document.getElementById("message");
+    if(message) message.innerText = "Two eligible normal-room skips are armed for your next Standard run.";
+    sendGameData({runID,event:"artifact_activated",room,artifactSlot:key,artifactSkippedRooms:2,artifactInventoryBefore:before,artifactInventoryAfter:before - 1,artifactAvailable:1});
+    saveGameState();
+    return true;
+}
+
+async function activateArtifactPower(key){
+    if(!ARTIFACT_INVENTORY_KEYS[key] || getArtifactInventoryCount(key) < 1) return explainArtifactActivation("not-owned", key);
+    if(!modeAllowsArtifactPowers()) return explainArtifactActivation("excluded-mode", key);
+    if(key === "scales") return activateFutureRoomSkips(key);
+    try { return await activateAnswerEliminationArtifact(key); }
+    catch(error){ console.warn("Artifact activation failed:", error); return explainArtifactActivation("unsupported-question", key); }
+}
+
+function initializeArtifactSkipsForRun(){
+    artifactSkipState = {remaining:0,skippedRooms:[]};
+    if(gameMode !== "standard") return;
+    try {
+        const pending = JSON.parse(localStorage.getItem(ARTIFACT_PENDING_SKIP_KEY) || "null");
+        if(pending && Number(pending.credits) > 0 && pending.armedRunID !== runID){
+            artifactSkipState.remaining = Math.min(2, Math.floor(Number(pending.credits)));
+            localStorage.removeItem(ARTIFACT_PENDING_SKIP_KEY);
+        }
+    } catch(error){ localStorage.removeItem(ARTIFACT_PENDING_SKIP_KEY); }
+}
+
+function isArtifactSkipEligibleRoom(roomNumber = room, question = currentQuestion){
+    if(gameMode !== "standard" || !modeAllowsArtifactPowers()) return false;
+    if(isBossRoomForMode(roomNumber) || [9,19,29].includes(Number(roomNumber))) return false;
+    if(remediationState?.active || ["repair","bridge","retest"].includes(adaptiveMode)) return false;
+    if(isEvidenceCriticalArtifactQuestion(question)) return false;
+    return Boolean(question && Array.isArray(question.options));
+}
+
+function applyArtifactSkipIfEligible(){
+    if(Number(artifactSkipState?.remaining || 0) < 1 || !isArtifactSkipEligibleRoom(room,currentQuestion)) return false;
+    const skippedRoom = Number(room);
+    const skippedQuestionId = currentQuestion?.id || 0;
+    artifactSkipState.remaining--;
+    artifactSkipState.skippedRooms.push(skippedRoom);
+    sendGameData({runID,event:"artifact_room_skipped",room:skippedRoom,questionId:skippedQuestionId,artifactSlot:"scales",artifactSkippedRoomIDs:JSON.stringify([...artifactSkipState.skippedRooms]),artifactSkipRemaining:artifactSkipState.remaining,objective:currentQuestion?.objective || inferObjective(currentQuestion)});
+    currentQuestion = null;
+    currentQuestionAssistance = null;
+    room++;
+    localStorage.setItem(ROOM_KEY,String(room));
+    saveGameState();
+    scheduleForCurrentRun(loadQuestion,0);
+    return true;
+}
+
+function getCheckpointOutcome(state = checkpointAttemptState){
+    const correct = Math.max(0, Number(state?.correct || 0));
+    const total = Math.max(0, Number(state?.total || 0));
+    if(total >= 3 && correct === total) return "secured";
+    if(total >= 3 && correct >= 2) return "cleared";
+    return "not-secured";
+}
+
+function recordCheckpointAttempt(isCorrect){
+    if(!checkpointAttemptState || checkpointAttemptState.key !== getBossEncounterKey()){
+        checkpointAttemptState = {key:getBossEncounterKey(),room,objective:activeBossEncounter?.objective || "",label:activeBossEncounter?.label || "",total:0,correct:0,incorrect:0};
+    }
+    checkpointAttemptState.total++;
+    if(isCorrect) checkpointAttemptState.correct++;
+    else checkpointAttemptState.incorrect++;
+}
+
+function finalizeCheckpointOutcome(){
+    const state = checkpointAttemptState || {key:getBossEncounterKey(),room,total:3,correct:0,incorrect:3};
+    const outcome = getCheckpointOutcome(state);
+    const label = humanizeBossObjective(state.label || activeBossEncounter?.label || "");
+    lastCheckpointOutcome = {outcome,room:Number(room),correct:Number(state.correct || 0),total:Number(state.total || 0),objective:state.objective || activeBossEncounter?.objective || "",label};
+    sendGameData({runID,event:"checkpoint_outcome",room,checkpointOutcome:outcome,checkpointCorrect:lastCheckpointOutcome.correct,checkpointTotal:lastCheckpointOutcome.total,objective:lastCheckpointOutcome.objective,bossTargetLabel:label});
+    checkpointAttemptState = null;
+    return lastCheckpointOutcome;
 }
 
 function getFacultyBossName(){
@@ -5649,34 +6191,33 @@ function advanceCheckpointAttempt(){
 }
 
 function completeCheckpointEncounter(){
+    const completedOutcome = finalizeCheckpointOutcome();
     recordBossDefeatForAchievements();
     sendGameData({
         runID: runID,
         game: FACULTY_COMPOSITION_CONFIG.title,
         event: "boss_defeated",
         user: username,
-        room: room
+        room: room,
+        checkpointOutcome:completedOutcome.outcome,
+        checkpointCorrect:completedOutcome.correct,
+        checkpointTotal:completedOutcome.total,
+        bossTargetLabel:completedOutcome.label
     });
 
     bossPool = [];
 
     if(modeAllowsRealmProgress()){
         if(room === 10){
-            document.getElementById("vaultCompass").classList.add("unlocked");
-            localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
-            showArtifact(artifacts.compass.img, artifacts.compass.title, artifacts.compass.text);
+            earnArtifact("compass");
         }
 
         if(room === 20){
-            document.getElementById("vaultLens").classList.add("unlocked");
-            localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
-            showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
+            earnArtifact("lens");
         }
 
         if(room === 30){
-            document.getElementById("vaultScales").classList.add("unlocked");
-            localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
-            showArtifact(artifacts.scales.img, artifacts.scales.title, artifacts.scales.text);
+            earnArtifact("scales");
         }
 
         updateMissionArtifactCountFromVault();
@@ -6722,6 +7263,8 @@ function showModeSelect(){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
+    document.body.classList.add("mode-selection-active");
+    maybeShowDailyAnnouncement();
 }
 
 function returnToTitleScreen(){
@@ -6736,9 +7279,70 @@ function returnToTitleScreen(){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "none";
+    document.body.classList.remove("mode-selection-active");
+    closeDailyDetailsPanel(false);
 
     document.getElementById("startScreen").style.display = "flex";
     showContinueButtonIfSaved();
+}
+
+let activeGuideIntroduction = null;
+
+function hasSeenGuideIntroduction(){
+    return localStorage.getItem(GUIDE_INTRO_SEEN_KEY) === "true";
+}
+
+function setGuideIntroductionSeen(){
+    localStorage.setItem(GUIDE_INTRO_SEEN_KEY, "true");
+}
+
+function openGuideIntroduction({selectedMode = null, replay = false, onProceed = null} = {}){
+    const screen = document.getElementById("guideIntroScreen");
+    if(!screen){
+        if(typeof onProceed === "function") onProceed();
+        return;
+    }
+
+    activeGuideIntroduction = {selectedMode, replay:Boolean(replay), onProceed};
+    screen.dataset.selectedMode = selectedMode || "replay";
+    screen.dataset.replay = replay ? "true" : "false";
+    screen.hidden = false;
+    document.body.classList.add("guide-intro-active");
+
+    if(!replay){
+        const modeScreen = document.getElementById("modeSelectScreen");
+        if(modeScreen) modeScreen.style.display = "none";
+        document.body.classList.remove("mode-selection-active");
+    }
+
+    pauseFadingFortune("guide-intro");
+    document.getElementById("guideIntroProceed")?.focus();
+}
+
+function closeGuideIntroduction(){
+    const screen = document.getElementById("guideIntroScreen");
+    if(screen) screen.hidden = true;
+    document.body.classList.remove("guide-intro-active");
+    resumeFadingFortune("guide-intro");
+}
+
+function proceedGuideIntroduction(){
+    const intro = activeGuideIntroduction;
+    if(!intro) return;
+    activeGuideIntroduction = null;
+    setGuideIntroductionSeen();
+    closeGuideIntroduction();
+
+    if(typeof intro.onProceed === "function"){
+        intro.onProceed();
+        return;
+    }
+    if(intro.replay) document.getElementById("returnMenuBtn")?.focus();
+}
+
+function replayGuideIntroduction(){
+    closeGameModal();
+    openGuideIntroduction({replay:true});
 }
 
 function startSelectedMode(mode, options = {}){
@@ -6769,6 +7373,16 @@ function startSelectedMode(mode, options = {}){
         return;
     }
 
+    if(!options.guideIntroConfirmed && !hasSeenGuideIntroduction()){
+        openGuideIntroduction({
+            selectedMode:requestedMode,
+            onProceed:function(){
+                startSelectedMode(requestedMode, {...options, guideIntroConfirmed:true});
+            }
+        });
+        return;
+    }
+
     beginRunSession();
     runEnding = false;
     closeGraphLightbox();
@@ -6777,6 +7391,7 @@ function startSelectedMode(mode, options = {}){
 
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "none";
+    document.body.classList.remove("mode-selection-active");
 
     if(gameMode === "standard"){
         startGame(false);
@@ -6785,6 +7400,56 @@ function startSelectedMode(mode, options = {}){
 
     resetRunStateForNewMode();
     startGame(false);
+}
+
+function updateGameMenuDailyAction(){
+    const button = document.getElementById("gameMenuDaily");
+    if(!button) return;
+    const daily = dailyState?.today;
+    const available = Boolean(dailyChallengesAreEnabled() && daily);
+    button.hidden = !available;
+    if(!available) return;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    button.textContent = progress.completed
+        ? "Daily Task ✓"
+        : `Daily Task · ${Math.min(Number(progress.value || 0), daily.target)}/${daily.target}`;
+}
+
+function openGameMenu(){
+    const modal = document.getElementById("gameModal");
+    const titleEl = document.getElementById("gameModalTitle");
+    const textEl = document.getElementById("gameModalText");
+    const menuOptions = document.getElementById("gameMenuOptions");
+    const actions = document.getElementById("gameModalActions");
+    const confirmBtn = document.getElementById("gameModalConfirm");
+    const cancelBtn = document.getElementById("gameModalCancel");
+    if(!modal || !titleEl || !textEl || !menuOptions || !actions || !confirmBtn || !cancelBtn) return;
+
+    activeModalConfirmAction = null;
+    activeModalCancelAction = null;
+    titleEl.textContent = "Game Menu";
+    textEl.textContent = "Choose a utility or return to mode selection.";
+    menuOptions.hidden = false;
+    actions.style.display = "flex";
+    confirmBtn.style.display = "none";
+    cancelBtn.textContent = "Close";
+    cancelBtn.style.display = "inline-block";
+    cancelBtn.onclick = closeGameModal;
+    updateGameMenuFullscreenAction();
+    updateGameMenuDailyAction();
+    modal.style.display = "flex";
+    pauseFadingFortune("game-modal");
+    document.getElementById("gameMenuModeSelect")?.focus();
+}
+
+function chooseGameMenuModeSelection(){
+    closeGameModal();
+    confirmReturnToModeMenu();
+}
+
+function openDailyFromGameMenu(){
+    closeGameModal();
+    openDailyDetailsFromGameMenu();
 }
 
 function confirmReturnToModeMenu(){
@@ -6850,6 +7515,8 @@ function showGameModal({
     const textEl = document.getElementById("gameModalText");
     const confirmBtn = document.getElementById("gameModalConfirm");
     const cancelBtn = document.getElementById("gameModalCancel");
+    const menuOptions = document.getElementById("gameMenuOptions");
+    const actions = document.getElementById("gameModalActions");
 
     if(!modal || !titleEl || !textEl || !confirmBtn || !cancelBtn){
         console.warn("Game modal elements are missing.");
@@ -6861,7 +7528,10 @@ function showGameModal({
 
     titleEl.innerText = title;
     textEl.innerText = text;
+    if(menuOptions) menuOptions.hidden = true;
+    if(actions) actions.style.display = "flex";
     confirmBtn.innerText = confirmText;
+    confirmBtn.style.display = "inline-block";
 
     if(cancelText){
         cancelBtn.innerText = cancelText;
@@ -6894,7 +7564,9 @@ cancelBtn.onclick = function(){
 
 function closeGameModal(){
     const modal = document.getElementById("gameModal");
+    const menuOptions = document.getElementById("gameMenuOptions");
     if(modal) modal.style.display = "none";
+    if(menuOptions) menuOptions.hidden = true;
     resumeFadingFortune("game-modal");
 
     activeModalConfirmAction = null;
@@ -7094,6 +7766,12 @@ if(!hasSavedRun){
     answerSubmissionPending = false;
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
+    resetExamDrillState();
+    resetBossRevealState();
+    checkpointAttemptState = null;
+    lastCheckpointOutcome = null;
+    currentQuestionAssistance = null;
+    artifactSkipState = {remaining:0,skippedRooms:[]};
 
     // SCORE ATTACK MODE ADDITION:
     // Every new run starts with a clean score, while best score stays in localStorage.
@@ -7101,10 +7779,8 @@ if(!hasSavedRun){
 
     if(modeAllowsSave()){
         localStorage.removeItem(ROOM_KEY);
-        if(!isRealmMissionComplete()){
-            Object.values(ARTIFACT_STORAGE_KEYS).forEach(key => localStorage.removeItem(key));
-        }
     }
+    initializeArtifactSkipsForRun();
     syncRealmAttemptState();
 	
     questionHistory = {
@@ -7131,7 +7807,7 @@ if(!hasSavedRun){
     if(mazeTrackContainer) mazeTrackContainer.style.display = (gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward") ? "none" : "block";
     document.getElementById("gameShell").style.display = "flex";
     document.getElementById("gameBox").style.display = "block";
-    document.getElementById("artifactVault").style.display = modeAllowsRealmProgress() ? "block" : "none";
+    document.getElementById("artifactVault").style.display = modeAllowsArtifactPowers() ? "block" : "none";
     document.querySelectorAll(".torch").forEach(t => t.style.display = "block");
 
 
@@ -7141,17 +7817,7 @@ if(!hasSavedRun){
    // IMPORTANT:
    // localStorage keys must match the HTML element ids.
    // =============================================    
-if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.compass)){
-    document.getElementById("vaultCompass").classList.add("unlocked");
-}
-
-if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens)){
-    document.getElementById("vaultLens").classList.add("unlocked");
-}    
-
-if(modeAllowsRealmProgress() && localStorage.getItem(ARTIFACT_STORAGE_KEYS.scales)){
-    document.getElementById("vaultScales").classList.add("unlocked");
-}
+updateArtifactVaultUI();
   
 // Start game loop: music + timer + first question
     initializeRunForMode(gameMode);
@@ -7203,6 +7869,12 @@ function resetRunStateForNewMode(){
     bossMistakeCountThisRun = 0;
     bossesDefeatedThisRun = 0;
     resumedSavedRunThisSession = false;
+    resetExamDrillState();
+    resetBossRevealState();
+    checkpointAttemptState = null;
+    lastCheckpointOutcome = null;
+    currentQuestionAssistance = null;
+    artifactSkipState = {remaining:0,skippedRooms:[]};
 
     // SCORE ATTACK MODE ADDITION:
     // Reset score whenever a non-standard mode starts fresh from the mode menu.
@@ -7248,6 +7920,8 @@ function initializeRunForMode(mode){
     }
 
     updatePracticeEndControl();
+    updateImmediateFeedbackVisibility();
+    updateArtifactVaultUI();
 
     // SCORE ATTACK MODE ADDITION:
     // Keeps the HUD hidden in every other mode and visible in Score Attack.
@@ -7431,6 +8105,8 @@ function returnToModeSelectFromRun(){
     applyFacultyCompositionConfig();
     const modeScreen = document.getElementById("modeSelectScreen");
     if(modeScreen) modeScreen.style.display = "flex";
+    document.body.classList.add("mode-selection-active");
+    updateDailyUI();
     localStorage.removeItem(RUN_ID_KEY);
     runID = "";
 }
@@ -7453,7 +8129,12 @@ function getDifficultyForMode(){
             || getLimitedRunPlannedDifficulty("quiz", quizQuestionsCompleted, quizQuestionTarget);
     }
 
-    if(gameMode === "exam" || gameMode === "timed" || gameMode === "unlimited"){
+    if(gameMode === "exam"){
+        const examSection = getExamSectionForRoom(room);
+        return room === examSection?.boss ? examSection.bossDifficulty : (examSection?.difficulty || "easy");
+    }
+
+    if(gameMode === "timed" || gameMode === "unlimited"){
         return (room <= 10) ? "easy"
             : (room <= 20) ? "medium"
             : "hard";
@@ -16599,11 +17280,11 @@ const facultyCompositionMetadata = {
     "fadingFortune",
     "riskReward"
   ],
-  "saveKeyNamespace": "mq-econ:saving-investment-loanable-funds-production-validation:21b0f60b56ff",
-  "compositionFingerprint": "21b0f60b56ff203ff1e5ed08ae424f09c4fc6bdc3f69c9b76582c1596468c9cb",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1",
-  "librarySha256": "16772f922e29a5442852dff2e5bec394f5827f567706c60bb982ebec59bb11b2",
-  "templateSha256": "896062befef3daf11e2af814010e0a3f3d64dfa48572b75bf319c17adc151f85",
+  "saveKeyNamespace": "mq-econ:saving-investment-loanable-funds-production-validation:eb67906448a3",
+  "compositionFingerprint": "eb67906448a342e4a91e64551988c9b3754353335661e3c61333eb19862a6f1b",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1",
+  "librarySha256": "5adbede70c22d23e021ce0aa0bc43eba7d38dec57eba5cd0bb15ff4008cb80ba",
+  "templateSha256": "4e2d9f4425e419fdad9cad61de7c016667b7777fdcf13e099b760d7f9877e46c",
   "phase": "phase-saving-investment-loanable-funds-question-pool-v1",
   "sourceVersion": "saving-investment-loanable-funds-production-v2-difficulty-calibration"
 };
@@ -18195,6 +18876,693 @@ function getFacultyModePoolMinimum(mode, poolName){
         ?? 0;
 }
 
+// =============================================
+// DAILY CHALLENGES V1 — DETERMINISTIC CORE
+// Pure helpers are kept together so selection and progress can be regression-tested
+// without booting the rest of the game. The browser adapter immediately below owns
+// persistence, UI, and telemetry integration.
+// =============================================
+const DailyChallengesCore = (() => {
+    const FAMILY_ORDER = [
+        "correct_answers",
+        "streak",
+        "accuracy_window",
+        "perfect_stretch",
+        "graph_questions",
+        "concept_variety"
+    ];
+    const MILESTONES = [1,3,5,10,20,30,50,75,100];
+    const UNIVERSAL_FAMILIES = FAMILY_ORDER.slice(0, 4);
+    const GRAMMAR = {
+        correct_answers: [
+            {target:5,tier:"quick"},{target:8,tier:"standard"},{target:10,tier:"standard"},{target:12,tier:"stretch"}
+        ],
+        streak: [
+            {target:4,tier:"quick"},{target:5,tier:"standard"},{target:6,tier:"standard"},{target:8,tier:"stretch"}
+        ],
+        accuracy_window: [
+            {target:4,windowSize:5,tier:"quick"},{target:6,windowSize:8,tier:"standard"},{target:8,windowSize:10,tier:"stretch"}
+        ],
+        perfect_stretch: [
+            {target:3,tier:"quick"},{target:5,tier:"standard"},{target:7,tier:"stretch"}
+        ],
+        graph_questions: [
+            {target:2,tier:"quick",minimumAccessible:4},{target:3,tier:"standard",minimumAccessible:6},{target:5,tier:"stretch",minimumAccessible:10}
+        ],
+        concept_variety: [
+            {target:2,tier:"quick"},{target:3,tier:"standard"},{target:4,tier:"stretch"}
+        ]
+    };
+
+    function localDateKey(value = new Date()){
+        const date = value instanceof Date ? value : new Date(value);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+    }
+
+    function hash32(input){
+        let hash = 2166136261;
+        const text = String(input || "");
+        for(let index = 0; index < text.length; index++){
+            hash ^= text.charCodeAt(index);
+            hash = Math.imul(hash, 16777619);
+        }
+        return hash >>> 0;
+    }
+
+    function stableQuestionIdentity(question){
+        return String(question?.id ?? question?.questionId ?? `${question?.q || ""}:${JSON.stringify(question?.options || [])}`);
+    }
+
+    function isGraphQuestion(question){
+        return Boolean(
+            question?.image
+            || question?.graph
+            || question?.requiresGraph
+            || /(?:^|[_\s-])graph(?:$|[_\s-])/i.test(String(question?.type || ""))
+        );
+    }
+
+    function conceptIdentity(question){
+        return String(
+            question?.primaryConceptId
+            || question?.conceptId
+            || question?.objective
+            || question?.tag
+            || ""
+        ).trim();
+    }
+
+    function getAccessibleQuestions(banks, supportedModes, modeRequirements){
+        const poolNames = new Set();
+        (supportedModes || []).forEach(mode => {
+            (modeRequirements?.[mode] || []).forEach(poolName => {
+                if(poolName !== "repair" && poolName !== "bridge") poolNames.add(poolName);
+            });
+        });
+        const seen = new Set();
+        const questions = [];
+        poolNames.forEach(poolName => {
+            (Array.isArray(banks?.[poolName]) ? banks[poolName] : []).forEach(question => {
+                if(!question || !Array.isArray(question.options) || question.options.length < 2) return;
+                const identity = stableQuestionIdentity(question);
+                if(seen.has(identity)) return;
+                seen.add(identity);
+                questions.push(question);
+            });
+        });
+        return questions;
+    }
+
+    function getEligibilityContext(banks, supportedModes, modeRequirements){
+        const accessibleQuestions = getAccessibleQuestions(banks, supportedModes, modeRequirements);
+        const graphQuestionCount = accessibleQuestions.filter(isGraphQuestion).length;
+        const concepts = new Set(accessibleQuestions.map(conceptIdentity).filter(Boolean));
+        return {
+            accessibleQuestionCount: accessibleQuestions.length,
+            graphQuestionCount,
+            conceptCount: concepts.size
+        };
+    }
+
+    function getEligibleFamilies(context){
+        const eligible = [...UNIVERSAL_FAMILIES];
+        if(Number(context?.graphQuestionCount || 0) >= 4) eligible.push("graph_questions");
+        if(Number(context?.conceptCount || 0) >= 2) eligible.push("concept_variety");
+        return eligible;
+    }
+
+    function getParameterOptions(family, context){
+        const options = [...(GRAMMAR[family] || [])];
+        if(family === "graph_questions"){
+            return options.filter(option => Number(context?.graphQuestionCount || 0) >= option.minimumAccessible);
+        }
+        if(family === "concept_variety"){
+            return options.filter(option => Number(context?.conceptCount || 0) >= option.target);
+        }
+        return options;
+    }
+
+    function selectFamily(eligibleFamilies, seed, history = [], date){
+        const eligible = FAMILY_ORDER.filter(family => (eligibleFamilies || []).includes(family));
+        if(!eligible.length) return "correct_answers";
+        const recent = [...history]
+            .filter(item => item?.family && item?.date !== date)
+            .sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")))
+            .map(item => item.family);
+        let candidates = [...eligible];
+        const cooldownDepth = eligible.length >= 4 ? 2 : eligible.length >= 2 ? 1 : 0;
+        for(let index = 0; index < cooldownDepth; index++){
+            const filtered = candidates.filter(family => family !== recent[index]);
+            if(filtered.length) candidates = filtered;
+        }
+        return candidates[hash32(`${seed}:family`) % candidates.length];
+    }
+
+    function selectParameters(family, context, seed){
+        const options = getParameterOptions(family, context);
+        const fallback = GRAMMAR[family]?.[0] || {target:5,tier:"quick"};
+        if(!options.length) return {...fallback};
+        const tierRotation = ["quick","standard","standard","stretch"];
+        const desiredTier = tierRotation[hash32(`${seed}:tier`) % tierRotation.length];
+        const tierOptions = options.filter(option => option.tier === desiredTier);
+        const candidates = tierOptions.length ? tierOptions : options;
+        return {...candidates[hash32(`${seed}:parameters`) % candidates.length]};
+    }
+
+    function previousDateKey(date, offset = 1){
+        const parts = String(date || "").split("-").map(Number);
+        if(parts.length !== 3 || parts.some(part => !Number.isFinite(part))) return date;
+        const previous = new Date(parts[0], parts[1] - 1, parts[2]);
+        previous.setDate(previous.getDate() - offset);
+        return localDateKey(previous);
+    }
+
+    function describe(family, parameters){
+        const target = Number(parameters?.target || 0);
+        if(family === "correct_answers") return `Get ${target} correct answers`;
+        if(family === "streak") return `Reach a streak of ${target}`;
+        if(family === "accuracy_window") return `Get ${target} of the next ${parameters.windowSize} correct`;
+        if(family === "perfect_stretch") return `Get ${target} correct without a miss`;
+        if(family === "graph_questions") return `Get ${target} graph questions correct`;
+        if(family === "concept_variety") return `Get correct answers from ${target} different concepts`;
+        return `Get ${target} correct answers`;
+    }
+
+    function resolveDaily({identity,date,eligibleFamilies,history = [],context = {}}){
+        const seed = `${identity}|${date}`;
+        // Derive the cooldown window from the same deterministic rotation so a
+        // fresh browser and a returning browser resolve the same Quest/date alike.
+        // Persisted history remains available for diagnostics and migration, but
+        // cannot make today's locked Daily differ across devices.
+        const deterministicHistory = [];
+        for(let offset = 2; offset >= 1; offset--){
+            const priorDate = previousDateKey(date, offset);
+            const priorFamily = selectFamily(
+                eligibleFamilies,
+                `${identity}|${priorDate}`,
+                deterministicHistory,
+                priorDate
+            );
+            deterministicHistory.push({date:priorDate,family:priorFamily});
+        }
+        const cooldownHistory = deterministicHistory.length ? deterministicHistory : history;
+        let family = selectFamily(eligibleFamilies, seed, cooldownHistory, date);
+        let parameters = selectParameters(family, context, seed);
+        if(!parameters?.target){
+            family = "correct_answers";
+            parameters = selectParameters(family, context, seed);
+        }
+        return {
+            id: `${date}:${hash32(`${seed}:${family}:${parameters.target}:${parameters.windowSize || 0}`).toString(36)}`,
+            date,
+            family,
+            target:Number(parameters.target),
+            windowSize:Number(parameters.windowSize || 0),
+            tier:parameters.tier || "standard",
+            description:describe(family, parameters),
+            eligibleFamilies:[...(eligibleFamilies || [])],
+            eligibility:{
+                accessibleQuestionCount:Number(context.accessibleQuestionCount || 0),
+                graphQuestionCount:Number(context.graphQuestionCount || 0),
+                conceptCount:Number(context.conceptCount || 0)
+            }
+        };
+    }
+
+    function createProgress(){
+        return {
+            value:0,
+            completed:false,
+            startedAt:null,
+            completedAt:null,
+            qualifyingQuestions:0,
+            perfectCurrent:0,
+            windowAttempts:0,
+            windowCorrect:0,
+            windowNumber:1,
+            uniqueConcepts:[],
+            postCompletionQuestions:0,
+            lastQuestionAt:null
+        };
+    }
+
+    function applyProgress(daily, existingProgress, event){
+        const progress = {...createProgress(), ...(existingProgress || {})};
+        progress.uniqueConcepts = Array.isArray(progress.uniqueConcepts) ? [...progress.uniqueConcepts] : [];
+        const before = Number(progress.value || 0);
+        const alreadyComplete = Boolean(progress.completed);
+        const now = event?.timestamp || new Date().toISOString();
+        const windowAttemptBefore = Number(progress.windowNumber || 1);
+        const result = {progress,before,after:before,completedNow:false,alreadyComplete,windowFailed:false,windowAttemptBefore};
+        if(alreadyComplete){
+            progress.postCompletionQuestions = Number(progress.postCompletionQuestions || 0) + 1;
+            progress.lastQuestionAt = now;
+            return result;
+        }
+
+        if(!progress.startedAt) progress.startedAt = now;
+        progress.qualifyingQuestions = Number(progress.qualifyingQuestions || 0) + 1;
+        progress.lastQuestionAt = now;
+        const correct = Boolean(event?.correct);
+
+        if(daily.family === "correct_answers"){
+            if(correct) progress.value = before + 1;
+        } else if(daily.family === "streak"){
+            progress.value = Math.max(before, Number(event?.streak || 0));
+        } else if(daily.family === "perfect_stretch"){
+            progress.perfectCurrent = correct ? Number(progress.perfectCurrent || 0) + 1 : 0;
+            progress.value = progress.perfectCurrent;
+        } else if(daily.family === "graph_questions"){
+            if(correct && event?.isGraph) progress.value = before + 1;
+        } else if(daily.family === "concept_variety"){
+            if(correct && event?.concept && !progress.uniqueConcepts.includes(event.concept)){
+                progress.uniqueConcepts.push(event.concept);
+            }
+            progress.value = progress.uniqueConcepts.length;
+        } else if(daily.family === "accuracy_window"){
+            progress.windowAttempts = Number(progress.windowAttempts || 0) + 1;
+            if(correct) progress.windowCorrect = Number(progress.windowCorrect || 0) + 1;
+            progress.value = progress.windowCorrect;
+            if(progress.windowAttempts >= daily.windowSize){
+                if(progress.windowCorrect >= daily.target){
+                    progress.value = daily.target;
+                } else {
+                    result.windowFailed = true;
+                    progress.windowNumber = Number(progress.windowNumber || 1) + 1;
+                    progress.windowAttempts = 0;
+                    progress.windowCorrect = 0;
+                    progress.value = 0;
+                }
+            }
+        }
+
+        const accuracyWindowReady = daily.family !== "accuracy_window"
+            || progress.windowAttempts >= daily.windowSize;
+        if(Number(progress.value || 0) >= daily.target && accuracyWindowReady){
+            progress.value = daily.target;
+            progress.completed = true;
+            progress.completedAt = now;
+            result.completedNow = true;
+        }
+        result.after = Number(progress.value || 0);
+        return result;
+    }
+
+    return {
+        FAMILY_ORDER,
+        MILESTONES,
+        localDateKey,
+        hash32,
+        isGraphQuestion,
+        conceptIdentity,
+        getAccessibleQuestions,
+        getEligibilityContext,
+        getEligibleFamilies,
+        getParameterOptions,
+        selectFamily,
+        resolveDaily,
+        createProgress,
+        applyProgress
+    };
+})();
+globalThis.MQDailyChallengesCore = DailyChallengesCore;
+
+
+// =============================================
+// DAILY CHALLENGES V1 — BROWSER ADAPTER
+// =============================================
+const DAILY_STORAGE_KEY = `${STORAGE_PREFIX}:daily:v1`;
+const DAILY_ANNOUNCEMENT_SESSION_PREFIX = `${STORAGE_PREFIX}:daily:announced:`;
+let dailyState = null;
+let dailyToastTimer = null;
+let dailyRolloverTimer = null;
+
+function dailyChallengesAreEnabled(){
+    return FACULTY_COMPOSITION_CONFIG.dailyChallengesEnabled !== false;
+}
+
+function readDailyState(){
+    try {
+        const raw = localStorage.getItem(DAILY_STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+    } catch(error){
+        console.warn("Daily task state could not be read:", error);
+        return null;
+    }
+}
+
+function persistDailyState(){
+    if(!dailyState) return;
+    try {
+        localStorage.setItem(DAILY_STORAGE_KEY, JSON.stringify(dailyState));
+    } catch(error){
+        console.warn("Daily task state could not be saved:", error);
+    }
+}
+
+function getDailyQuestIdentity(){
+    return FACULTY_COMPOSITION_CONFIG.compositionFingerprint
+        || FACULTY_COMPOSITION_CONFIG.compositionId
+        || FACULTY_COMPOSITION_CONFIG.slug
+        || FACULTY_COMPOSITION_CONFIG.title
+        || "mastery-quest";
+}
+
+function getDailyEligibility(){
+    const supportedModes = (FACULTY_COMPOSITION_CONFIG.supportedModes || [])
+        .filter(mode => FACULTY_MODE_REQUIREMENTS[mode]);
+    const eligibilityBanks = {...questionBanks};
+    const eligibilityRequirements = {...FACULTY_MODE_REQUIREMENTS};
+    if(supportedModes.includes("trialGraph") && typeof getTrialGraphCandidates === "function"){
+        eligibilityBanks.trialGraph = getTrialGraphCandidates();
+        eligibilityRequirements.trialGraph = ["trialGraph"];
+    }
+    if(supportedModes.includes("fadingFortune") && typeof getFadingFortuneCandidates === "function"){
+        eligibilityBanks.fadingFortune = getFadingFortuneCandidates();
+        eligibilityRequirements.fadingFortune = ["fadingFortune"];
+    }
+    if(supportedModes.includes("riskReward") && typeof getRiskRewardCandidates === "function"){
+        eligibilityBanks.riskReward = getRiskRewardCandidates();
+        eligibilityRequirements.riskReward = ["riskReward"];
+    }
+    const context = DailyChallengesCore.getEligibilityContext(
+        eligibilityBanks,
+        supportedModes,
+        eligibilityRequirements
+    );
+    return {context, families:DailyChallengesCore.getEligibleFamilies(context)};
+}
+
+function normalizeDailyState(stored){
+    const creditedDates = Array.isArray(stored?.creditedDates)
+        ? [...new Set(stored.creditedDates.map(String))]
+        : [];
+    return {
+        version:1,
+        totalCompleted:Math.max(Number(stored?.totalCompleted || 0), creditedDates.length),
+        creditedDates,
+        familyHistory:Array.isArray(stored?.familyHistory) ? stored.familyHistory.slice(-8) : [],
+        today:stored?.today || null
+    };
+}
+
+function initializeDailyChallenges(now = new Date()){
+    const dock = document.getElementById("dailyTaskDock");
+    if(!dailyChallengesAreEnabled()){
+        if(dock) dock.hidden = true;
+        dailyState = null;
+        return null;
+    }
+
+    const date = DailyChallengesCore.localDateKey(now);
+    dailyState = normalizeDailyState(readDailyState());
+    if(!dailyState.today || dailyState.today.date !== date){
+        const eligibility = getDailyEligibility();
+        const daily = DailyChallengesCore.resolveDaily({
+            identity:getDailyQuestIdentity(),
+            date,
+            eligibleFamilies:eligibility.families,
+            history:dailyState.familyHistory,
+            context:eligibility.context
+        });
+        daily.progress = DailyChallengesCore.createProgress();
+        dailyState.today = daily;
+        dailyState.familyHistory = [
+            ...dailyState.familyHistory.filter(item => item?.date !== date),
+            {date,family:daily.family}
+        ].slice(-8);
+        persistDailyState();
+    } else {
+        dailyState.today.progress = {
+            ...DailyChallengesCore.createProgress(),
+            ...(dailyState.today.progress || {})
+        };
+    }
+    bindDailyUI();
+    updateDailyUI();
+    scheduleDailyRollover(now);
+    return dailyState.today;
+}
+
+function scheduleDailyRollover(now = new Date()){
+    if(dailyRolloverTimer) clearTimeout(dailyRolloverTimer);
+    const nextMidnight = new Date(now);
+    nextMidnight.setHours(24,0,0,100);
+    dailyRolloverTimer = setTimeout(() => initializeDailyChallenges(new Date()), Math.max(1000, nextMidnight - now));
+}
+
+function getNextDailyMilestone(total = 0){
+    return DailyChallengesCore.MILESTONES.find(value => value > total)
+        || DailyChallengesCore.MILESTONES[DailyChallengesCore.MILESTONES.length - 1];
+}
+
+function getDailyProgressText(daily = dailyState?.today){
+    if(!daily) return "";
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    if(daily.family === "accuracy_window" && !progress.completed){
+        return `${progress.windowCorrect}/${daily.target} · question ${progress.windowAttempts}/${daily.windowSize} · window ${progress.windowNumber}`;
+    }
+    return `${Math.min(Number(progress.value || 0), daily.target)} / ${daily.target}`;
+}
+
+function updateDailyUI(){
+    const daily = dailyState?.today;
+    const dock = document.getElementById("dailyTaskDock");
+    if(!dock || !dailyChallengesAreEnabled() || !daily){
+        if(dock) dock.hidden = true;
+        return;
+    }
+    dock.hidden = false;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    const total = Number(dailyState.totalCompleted || 0);
+    const milestone = getNextDailyMilestone(total);
+    const pill = document.getElementById("dailyTaskPill");
+    pill.textContent = progress.completed
+        ? "DAILY COMPLETE ✓"
+        : `DAILY TASK · ${Math.min(Number(progress.value || 0), daily.target)}/${daily.target}`;
+    pill.classList.toggle("is-complete", Boolean(progress.completed));
+    document.getElementById("dailyDetailsTitle").textContent = daily.description;
+    document.getElementById("dailyDetailsMeta").textContent = progress.completed
+        ? `Complete · ${getDailyProgressText(daily)}`
+        : `In progress · ${getDailyProgressText(daily)}`;
+    const percent = progress.completed
+        ? 100
+        : Math.min(95, Math.round((Number(progress.value || 0) / Math.max(1, daily.target)) * 100));
+    document.getElementById("dailyDetailsProgress").style.width = `${percent}%`;
+    document.getElementById("dailyLifetimeValue").textContent = String(total);
+    document.getElementById("dailyMilestoneValue").textContent = total >= DailyChallengesCore.MILESTONES.at(-1)
+        ? `${total}+`
+        : String(milestone);
+    document.getElementById("dailyMilestoneMeta").textContent = total >= DailyChallengesCore.MILESTONES.at(-1)
+        ? "All current milestones reached. Your lifetime total keeps growing."
+        : `${total} of ${milestone} lifetime Dailies completed.`;
+    if(typeof updateGameMenuDailyAction === "function") updateGameMenuDailyAction();
+}
+
+function closeDailyDetailsPanel(restoreFocus = true){
+    const dock = document.getElementById("dailyTaskDock");
+    const pill = document.getElementById("dailyTaskPill");
+    const panel = document.getElementById("dailyDetailsPanel");
+    if(panel) panel.hidden = true;
+    if(dock) dock.classList.remove("daily-panel-open");
+    if(pill){
+        pill.setAttribute("aria-expanded", "false");
+        if(restoreFocus && !pill.hidden && document.body.classList.contains("mode-selection-active")) pill.focus();
+    }
+}
+
+function openDailyDetailsFromGameMenu(){
+    if(!dailyState?.today) initializeDailyChallenges();
+    const dock = document.getElementById("dailyTaskDock");
+    const pill = document.getElementById("dailyTaskPill");
+    const panel = document.getElementById("dailyDetailsPanel");
+    if(!dock || !pill || !panel || !dailyState?.today) return;
+    dock.hidden = false;
+    dock.classList.add("daily-panel-open");
+    panel.hidden = false;
+    pill.setAttribute("aria-expanded", "true");
+    updateDailyUI();
+    document.getElementById("dailyDetailsClose")?.focus();
+}
+
+function bindDailyUI(){
+    const pill = document.getElementById("dailyTaskPill");
+    const panel = document.getElementById("dailyDetailsPanel");
+    const closeButton = document.getElementById("dailyDetailsClose");
+    if(!pill || !panel || pill.dataset.dailyBound === "true") return;
+    pill.dataset.dailyBound = "true";
+    pill.addEventListener("click", () => {
+        const shouldOpen = panel.hidden;
+        if(shouldOpen){
+            panel.hidden = false;
+            pill.setAttribute("aria-expanded", "true");
+            updateDailyUI();
+        } else {
+            closeDailyDetailsPanel(false);
+        }
+    });
+    if(closeButton) closeButton.addEventListener("click", () => closeDailyDetailsPanel(true));
+    document.addEventListener("keydown", event => {
+        if(event.key === "Escape" && !panel.hidden){
+            closeDailyDetailsPanel(true);
+        }
+    });
+}
+
+function dismissDailyToast(){
+    const region = document.getElementById("dailyToastRegion");
+    const toast = region?.querySelector(".daily-toast");
+    if(!toast) return;
+    if(dailyToastTimer) clearTimeout(dailyToastTimer);
+    toast.classList.add("is-leaving");
+    setTimeout(() => { if(toast.isConnected) toast.remove(); }, 250);
+}
+
+function showDailyToast({kicker,title,progress,copy,complete = false,duration = 5200}){
+    const region = document.getElementById("dailyToastRegion");
+    if(!region) return;
+    region.innerHTML = "";
+    const toast = document.createElement("div");
+    toast.className = `daily-toast${complete ? " is-complete" : ""}`;
+    toast.setAttribute("role", "status");
+    toast.setAttribute("tabindex", "0");
+    toast.setAttribute("aria-label", `${kicker}. ${title}. ${progress}. ${copy}`);
+    const kickerElement = document.createElement("div");
+    kickerElement.className = "daily-toast-kicker";
+    kickerElement.textContent = kicker;
+    const titleElement = document.createElement("div");
+    titleElement.className = "daily-toast-title";
+    titleElement.textContent = title;
+    const progressElement = document.createElement("div");
+    progressElement.className = "daily-toast-progress";
+    progressElement.textContent = progress;
+    const copyElement = document.createElement("div");
+    copyElement.className = "daily-toast-copy";
+    copyElement.textContent = copy;
+    toast.append(kickerElement,titleElement,progressElement,copyElement);
+    toast.addEventListener("click", dismissDailyToast);
+    toast.addEventListener("keydown", event => {
+        if(event.key === "Enter" || event.key === " ") dismissDailyToast();
+    });
+    region.appendChild(toast);
+    if(dailyToastTimer) clearTimeout(dailyToastTimer);
+    dailyToastTimer = setTimeout(dismissDailyToast, duration);
+}
+
+function maybeShowDailyAnnouncement(){
+    const daily = initializeDailyChallenges();
+    if(!daily || daily.progress?.completed) return;
+    const key = `${DAILY_ANNOUNCEMENT_SESSION_PREFIX}${daily.date}`;
+    try {
+        if(sessionStorage.getItem(key) === "true") return;
+        sessionStorage.setItem(key, "true");
+    } catch(error){
+        if(document.body.dataset.dailyAnnounced === daily.date) return;
+        document.body.dataset.dailyAnnounced = daily.date;
+    }
+    showDailyToast({
+        kicker:"Today's Daily",
+        title:daily.description,
+        progress:getDailyProgressText(daily),
+        copy:"Complete today's task in any eligible mode. Tap for details."
+    });
+}
+
+function creditDailyCompletion(date){
+    if(dailyState.creditedDates.includes(date)) return false;
+    dailyState.creditedDates.push(date);
+    dailyState.totalCompleted = Number(dailyState.totalCompleted || 0) + 1;
+    return true;
+}
+
+function getDailyTelemetrySnapshot(overrides = {}){
+    const daily = dailyState?.today;
+    if(!daily) return overrides;
+    const progress = daily.progress || DailyChallengesCore.createProgress();
+    const completedAtMs = progress.completedAt ? Date.parse(progress.completedAt) : 0;
+    const startedAtMs = progress.startedAt ? Date.parse(progress.startedAt) : 0;
+    return {
+        dailyID:daily.id,
+        dailyDate:daily.date,
+        dailyFamily:daily.family,
+        dailyTarget:daily.target,
+        dailyWindowSize:daily.windowSize || 0,
+        dailyEligibleFamilies:(daily.eligibleFamilies || []).join("|"),
+        dailyProgressBefore:Number(progress.value || 0),
+        dailyProgressAfter:Number(progress.value || 0),
+        dailyWindowAttempt:Number(progress.windowNumber || 1),
+        dailyCompleted:progress.completed ? 1 : 0,
+        dailyCompletionTimestamp:progress.completedAt || "",
+        dailyAlreadyComplete:progress.completed ? 1 : 0,
+        dailyPostCompletionQuestions:Number(progress.postCompletionQuestions || 0),
+        dailyMsSinceCompletion:completedAtMs ? Math.max(0, Date.now() - completedAtMs) : 0,
+        dailyQuestionsToComplete:progress.completed ? Number(progress.qualifyingQuestions || 0) : 0,
+        dailyElapsedToCompleteMs:progress.completed && startedAtMs && completedAtMs ? Math.max(0, completedAtMs - startedAtMs) : 0,
+        dailyConcept:"",
+        ...overrides
+    };
+}
+
+function recordDailyGameplayEvent({correct,streak:currentStreak,question,timestamp = new Date().toISOString()}){
+    if(!dailyChallengesAreEnabled()) return {};
+    const today = DailyChallengesCore.localDateKey();
+    if(!dailyState?.today || dailyState.today.date !== today) initializeDailyChallenges();
+    const daily = dailyState?.today;
+    if(!daily) return {};
+    const concept = DailyChallengesCore.conceptIdentity(question);
+    const result = DailyChallengesCore.applyProgress(daily,daily.progress,{
+        correct,
+        streak:currentStreak,
+        isGraph:DailyChallengesCore.isGraphQuestion(question),
+        concept,
+        timestamp
+    });
+    daily.progress = result.progress;
+    let creditedNow = false;
+    if(result.completedNow){
+        creditedNow = creditDailyCompletion(daily.date);
+    }
+    persistDailyState();
+    updateDailyUI();
+
+    if(result.completedNow){
+        const total = Number(dailyState.totalCompleted || 0);
+        const nextMilestone = getNextDailyMilestone(total);
+        showDailyToast({
+            kicker:"Daily Complete",
+            title:daily.description,
+            progress:`${daily.target} / ${daily.target} · ${total} Dailies completed`,
+            copy:total >= DailyChallengesCore.MILESTONES.at(-1)
+                ? "All current milestones reached. Keep building your lifetime total."
+                : `Next milestone: ${nextMilestone}`,
+            complete:true
+        });
+    }
+
+    const completedAtMs = daily.progress.completedAt ? Date.parse(daily.progress.completedAt) : 0;
+    return getDailyTelemetrySnapshot({
+        dailyProgressBefore:result.before,
+        dailyProgressAfter:result.after,
+        dailyWindowAttempt:Number(result.windowAttemptBefore || daily.progress.windowNumber || 1),
+        dailyCompleted:daily.progress.completed ? 1 : 0,
+        dailyAlreadyComplete:result.alreadyComplete ? 1 : 0,
+        dailyPostCompletionQuestions:Number(daily.progress.postCompletionQuestions || 0),
+        dailyMsSinceCompletion:result.alreadyComplete && completedAtMs ? Math.max(0, Date.now() - completedAtMs) : 0,
+        dailyConcept:concept,
+        dailyCompletedNow:result.completedNow ? 1 : 0,
+        dailyCreditedNow:creditedNow ? 1 : 0,
+        dailyWindowFailed:result.windowFailed ? 1 : 0
+    });
+}
+
+initializeDailyChallenges();
+document.addEventListener("visibilitychange", () => {
+    if(!document.hidden) initializeDailyChallenges();
+});
+
 function getFacultyPool(poolName){
     if(poolName === "repair") return getAllFacultyRepairQuestions();
     if(poolName === "bridge") return getAllFacultyBridgeQuestions();
@@ -18561,10 +19929,408 @@ function randomQuestion(poolName) {
 // This is VISUAL ONLY.
 // It does NOT control game progression.
 // =============================================
+
+function createExamDrillState(){
+    return {
+        sections:EXAM_DRILL_SECTIONS.map(section => ({...section,committed:false,allAnsweredAt:0,committedAt:0})),
+        rooms:{},
+        activeRoom:null
+    };
+}
+
+function resetExamDrillState(){
+    examDrillState = createExamDrillState();
+}
+
+function getExamSectionForRoom(roomNumber){
+    return EXAM_DRILL_SECTIONS.find(section => roomNumber >= section.start && roomNumber <= section.boss) || null;
+}
+
+function getExamSectionState(roomNumber = room){
+    if(!examDrillState) resetExamDrillState();
+    const section = getExamSectionForRoom(roomNumber);
+    return section ? examDrillState.sections[section.index] : null;
+}
+
+function isExamOrdinaryRoom(roomNumber){
+    const section = getExamSectionForRoom(roomNumber);
+    return !!section && roomNumber >= section.start && roomNumber <= section.end;
+}
+
+function getExamRoomState(roomNumber, create = false){
+    if(!examDrillState) resetExamDrillState();
+    if(!examDrillState.rooms[roomNumber] && create){
+        examDrillState.rooms[roomNumber] = {
+            question:null,
+            selectedIndex:null,
+            initialSelectedIndex:null,
+            initialCorrect:null,
+            finalCorrect:null,
+            revisionCount:0,
+            viewedCount:0,
+            firstViewedAt:0,
+            viewStartedAt:0,
+            totalViewMs:0
+        };
+    }
+    return examDrillState.rooms[roomNumber] || null;
+}
+
+function isExamSectionComplete(sectionState){
+    if(!sectionState) return false;
+    for(let roomNumber = sectionState.start; roomNumber <= sectionState.end; roomNumber++){
+        if(getExamRoomState(roomNumber)?.selectedIndex === null || getExamRoomState(roomNumber)?.selectedIndex === undefined) return false;
+    }
+    return true;
+}
+
+function finalizeExamRoomView(nextRoom = null){
+    if(gameMode !== "exam" || !examDrillState?.activeRoom) return;
+    const previousRoom = examDrillState.activeRoom;
+    const state = getExamRoomState(previousRoom);
+    if(state?.viewStartedAt){
+        state.totalViewMs += Math.max(0, Date.now() - state.viewStartedAt);
+        state.viewStartedAt = 0;
+    }
+    if(nextRoom !== null && nextRoom !== previousRoom){
+        sendGameData({
+            runID,event:"exam_navigation",room:previousRoom,questionId:state?.question?.id || 0,
+            examSection:getExamSectionForRoom(previousRoom)?.index + 1,
+            examNavigationFrom:previousRoom,examNavigationTo:nextRoom,
+            examReturnVisit:0,examSkippedRevisit:0,examReviewTimeMs:state?.totalViewMs || 0
+        });
+    }
+    examDrillState.activeRoom = null;
+}
+
+function navigateExamRoom(targetRoom){
+    if(gameMode !== "exam" || !isExamOrdinaryRoom(targetRoom)) return false;
+    const targetSection = getExamSectionState(targetRoom);
+    const currentSection = getExamSectionState(room);
+    if(!targetSection || targetSection !== currentSection || targetSection.committed) return false;
+
+    const existing = getExamRoomState(targetRoom);
+    const isReturn = !!existing?.viewedCount;
+    const skippedRevisit = isReturn && existing.selectedIndex === null;
+    finalizeExamRoomView(targetRoom);
+    room = targetRoom;
+    sendGameData({
+        runID,event:"exam_navigation_arrive",room:targetRoom,questionId:existing?.question?.id || 0,
+        examSection:targetSection.index + 1,examNavigationTo:targetRoom,
+        examReturnVisit:isReturn ? 1 : 0,examSkippedRevisit:skippedRevisit ? 1 : 0
+    });
+    loadQuestion();
+    return true;
+}
+
+function selectExamQuestion(section){
+    const profile = getSelectionProfile();
+    const question = getAdaptiveQuestion(section.difficulty, getWeakestTag(), {
+        mode:"support",
+        preferredTypes:profile?.preferredTypes || [],
+        purpose:"exam-navigation"
+    });
+    const shuffled = shuffleOptions(question);
+    if(shuffled) shuffled.__mqDifficulty = section.difficulty;
+    return shuffled;
+}
+
+function loadExamDrillQuestion(){
+    const section = getExamSectionForRoom(room);
+    const sectionState = getExamSectionState(room);
+    if(!section || !sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return false;
+
+    finalizeExamRoomView(room);
+    const roomState = getExamRoomState(room, true);
+    if(!roomState.question) roomState.question = selectExamQuestion(section);
+    currentQuestion = roomState.question;
+    if(!currentQuestion){
+        showGameModal({title:"Question Selection Stopped",text:"Exam Drill could not select a valid question.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
+        return true;
+    }
+
+    const now = Date.now();
+    roomState.viewedCount++;
+    if(!roomState.firstViewedAt) roomState.firstViewedAt = now;
+    roomState.viewStartedAt = now;
+    examDrillState.activeRoom = room;
+    adaptiveMode = "exam-navigation";
+    renderQuestionGraph(currentQuestion);
+    wizardSpeak(getWizardLine(currentQuestion.type || "interpretation"));
+    document.getElementById("bossMessage").innerText = "";
+    document.getElementById("question").innerHTML = `<div>${currentQuestion.q}</div>`;
+    document.getElementById("formulaHint").innerText = currentQuestion.hint ? "💡 Hint: " + currentQuestion.hint : "";
+    document.getElementById("message").innerText = isExamSectionComplete(sectionState)
+        ? "All section questions have responses. Review freely, then enter the checkpoint when ready."
+        : "Select any room in this section. Responses remain revisable until you enter the checkpoint.";
+    displayQuestion();
+    updateMazeTrack();
+    return true;
+}
+
+function recordExamDraftAnswer(choice, isCorrect, responseTime){
+    const sectionState = getExamSectionState(room);
+    const roomState = getExamRoomState(room, true);
+    if(!sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return;
+
+    const previousChoice = roomState.selectedIndex;
+    const changed = previousChoice !== null && previousChoice !== choice;
+    if(roomState.initialSelectedIndex === null){
+        roomState.initialSelectedIndex = choice;
+        roomState.initialCorrect = !!isCorrect;
+    } else if(changed){
+        roomState.revisionCount++;
+    }
+    roomState.selectedIndex = choice;
+    roomState.finalCorrect = !!isCorrect;
+    if(isExamSectionComplete(sectionState) && !sectionState.allAnsweredAt) sectionState.allAnsweredAt = Date.now();
+
+    sendGameData({
+        runID,event:changed ? "exam_answer_revision" : "exam_answer_initial",room,
+        questionId:currentQuestion?.id || 0,selectedIndex:choice,correct:isCorrect ? 1 : 0,
+        tag:currentQuestion?.tag || "",type:currentQuestion?.type || "",objective:inferObjective(currentQuestion),
+        responseTime,examSection:sectionState.index + 1,
+        examInitialSelectedIndex:roomState.initialSelectedIndex,examFinalSelectedIndex:choice,
+        examRevisionCount:roomState.revisionCount,
+        examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
+        examChangedIncorrect:changed && roomState.initialCorrect && !isCorrect ? 1 : 0
+    });
+
+    answerSubmissionPending = false;
+    setAnswerButtonsDisabled(false);
+    displayQuestion();
+    updateMazeTrack();
+    document.getElementById("message").innerText = isExamSectionComplete(sectionState)
+        ? "All section questions have responses. Review freely, then enter the checkpoint when ready."
+        : "Response saved. You may revise it or choose another room.";
+    document.getElementById("srAnnouncements").innerText = `Response saved for Room ${room}.`;
+}
+
+function scoreCommittedExamResponse(roomNumber, roomState, sectionState){
+    const question = roomState.question;
+    const isCorrect = !!roomState.finalCorrect;
+    const responseTime = Math.max(0, roomState.totalViewMs);
+    Object.keys(conceptMemory).forEach(tag => { conceptMemory[tag] *= 0.95; });
+    totalAttempts++;
+    recordAdaptiveAttempt(question, isCorrect, responseTime);
+    if(isCorrect){
+        streak++;
+        correctAnswers++;
+        maxStreak = Math.max(maxStreak, streak);
+        if(question.tag) conceptMemory[question.tag] = Math.max(0, ((conceptMemory[question.tag] || 0) * .68) - .2);
+    } else {
+        streak = 0;
+        if(question.tag) conceptMemory[question.tag] = (conceptMemory[question.tag] || 0) + 1;
+    }
+    const dailyTelemetry = recordDailyGameplayEvent({correct:isCorrect,streak,question});
+    const changed = roomState.revisionCount > 0;
+    sendGameData({
+        runID,event:"question",room:roomNumber,questionId:question.id || 0,
+        selectedIndex:roomState.selectedIndex,correct:isCorrect ? 1 : 0,
+        tag:question.tag || "",type:question.type || "",objective:inferObjective(question),
+        responseTime,attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:"exam-commit",
+        examSection:sectionState.index + 1,examInitialSelectedIndex:roomState.initialSelectedIndex,
+        examFinalSelectedIndex:roomState.selectedIndex,examRevisionCount:roomState.revisionCount,
+        examReviewTimeMs:responseTime,
+        examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
+        examChangedIncorrect:changed && roomState.initialCorrect && !isCorrect ? 1 : 0,
+        ...dailyTelemetry
+    });
+    if(dailyTelemetry.dailyCompletedNow){
+        sendGameData({runID,event:"daily_complete",room:roomNumber,questionId:question.id || 0,totalTime:getElapsedTimeMs(),...dailyTelemetry});
+    }
+}
+
+function commitExamSection(sectionState){
+    if(gameMode !== "exam" || !sectionState || sectionState.committed || !isExamSectionComplete(sectionState)) return false;
+    finalizeExamRoomView(sectionState.boss);
+    sectionState.committed = true;
+    sectionState.committedAt = Date.now();
+    for(let roomNumber = sectionState.start; roomNumber <= sectionState.end; roomNumber++){
+        scoreCommittedExamResponse(roomNumber, getExamRoomState(roomNumber), sectionState);
+    }
+    sendGameData({
+        runID,event:"exam_section_commit",room:sectionState.boss,examSection:sectionState.index + 1,
+        examReviewTimeMs:sectionState.allAnsweredAt ? Math.max(0, sectionState.committedAt - sectionState.allAnsweredAt) : 0
+    });
+    room = sectionState.boss;
+    bossHealth = 3;
+    bossPool = [];
+    activeBossEncounter = null;
+    loadQuestion();
+    return true;
+}
+
+function selectExamCheckpoint(roomNumber){
+    const sectionState = getExamSectionState(roomNumber);
+    return !!sectionState && roomNumber === sectionState.boss && commitExamSection(sectionState);
+}
+
+function resetBossRevealState(){
+    bossRevealShownKeys = new Set();
+    activeBossEncounter = null;
+    activeBossReveal = null;
+    const screen = document.getElementById("bossRevealScreen");
+    if(screen) screen.hidden = true;
+    document.body.classList.remove("boss-reveal-active");
+}
+
+function getBossEncounterKey(roomNumber = room){
+    return `${gameMode}:${roomNumber}`;
+}
+
+function humanizeBossObjective(value){
+    const text = String(value || "").trim();
+    if(!text || /^LO\d+(?:\.\d+)*(?:[_-].*)?$/i.test(text) || text === "unassigned_objective") return "";
+    return text.replace(/[_-]+/g," ").replace(/\b([a-z])([A-Z])/g,"$1 $2").replace(/\s+/g," ").trim();
+}
+
+function getBossObjectiveLabel(objective, bank){
+    const match = (bank || []).find(question => getBossObjectiveKey(question) === objective) || null;
+    const candidates = [match?.objectiveLabel,match?.learningObjectiveLabel,match?.conceptLabel,match?.tag,match?.conceptId,objective];
+    for(const candidate of candidates){
+        const label = humanizeBossObjective(candidate);
+        if(label) return label;
+    }
+    return "";
+}
+
+function getBossIntroPresentationState(objective){
+    const objectiveStats = getObjectiveFamilyStats(objective);
+    const objectiveMisses = Math.max(0, objectiveStats.attempts - objectiveStats.correct);
+    const recent = Array.isArray(masteryState.recent) ? masteryState.recent : [];
+    const recentCorrect = recent.filter(item => item.correct).length;
+    const recentAccuracy = recent.length ? recentCorrect / recent.length : null;
+    const hasClearTargetedWeakness = Boolean(objective)
+        && objectiveStats.attempts >= 2
+        && objectiveMisses >= 2
+        && objectiveStats.accuracy <= (2 / 3);
+
+    if(hasClearTargetedWeakness) return "targeted-weakness";
+    if(recentAccuracy === null || recentAccuracy >= 0.80) return "strong-no-clear-weakness";
+    return "mixed-non-specific";
+}
+
+function getBossChallengeLine(label, presentationState, checkpointRoom = room){
+    if(presentationState === "strong-no-clear-weakness"){
+        if(checkpointRoom === 20) return "Your progress has been strong. Prove it at this checkpoint.";
+        if(checkpointRoom === 30) return "You've made it this far. Now show that your mastery holds.";
+        return "You've done well. Now face my challenge.";
+    }
+
+    if(presentationState === "mixed-non-specific"){
+        if(checkpointRoom === 30) return "Your path has been steady. Now prove your understanding under pressure.";
+        return "You've made progress, but this checkpoint will test your command.";
+    }
+
+    const key = String(label || "").toLowerCase();
+    if(!key) return "Your recent misses have revealed a target. Correct it here.";
+    if(/equilibrium/.test(key)) return "Market equilibrium is where your reasoning has slipped. Correct it here.";
+    if(/price ceiling|ceiling/.test(key)) return "Price ceilings have given you trouble. Show me what you know when it counts.";
+    if(/price floor|floor/.test(key)) return "Price floors have given you trouble. Show me your reasoning under pressure.";
+    if(/elastic/.test(key)) return "Elasticity has given you trouble. Show me that you understand it now.";
+    if(/production possibilit|ppf|trade.?off|frontier/.test(key)) return "Tradeoffs have given you trouble. Show me you understand the frontier.";
+    if(/supply/.test(key)) return "Your supply analysis is the target. Make every shift count.";
+    if(/demand/.test(key)) return "Demand is where your reasoning has slipped. Correct it here.";
+    if(/externalit|public good/.test(key)) return "Market failure is your weak point. Show me you can diagnose it.";
+    if(/cost|marginal|average total/.test(key)) return "Cost analysis has exposed a gap. Close it now.";
+    if(/monopol|oligopol|competition|market structure/.test(key)) return "Market structure is your test. Read the incentives carefully.";
+    if(/inflation|unemployment|fiscal|monetary|aggregate/.test(key)) return "Your macroeconomic reasoning is under review. Make the connections.";
+    return `Let's see what you know about ${label.toLowerCase()}.`;
+}
+
+function prepareBossEncounter(diff){
+    const key = getBossEncounterKey();
+    if(activeBossEncounter?.key === key && bossPool?.length) return activeBossEncounter;
+    const bank = [...(questionBanks[diff] || [])];
+    const objective = getWeakestBossObjective(bank);
+    bossPool = buildBossQuestionSet(bank, diff, objective);
+    if(bossPool.length < 3) bossPool = shuffle([...bank]).slice(0, 3);
+    if(usedQuestions[diff]) bossPool.forEach(question => {
+        if(question && !usedQuestions[diff].includes(question.id)) usedQuestions[diff].push(question.id);
+    });
+    const label = getBossObjectiveLabel(objective, bossPool.length ? bossPool : bank);
+    const presentationState = getBossIntroPresentationState(objective);
+    activeBossEncounter = {key,diff,objective,label,presentationState,line:getBossChallengeLine(label,presentationState)};
+    checkpointAttemptState = {key,room:Number(room),objective,label,total:0,correct:0,incorrect:0};
+    return activeBossEncounter;
+}
+
+function openBossReveal(encounter){
+    if(!encounter || bossRevealShownKeys.has(encounter.key)) return false;
+    const screen = document.getElementById("bossRevealScreen");
+    const visual = getFacultyCheckpointSlot(room);
+    const bossName = getFacultyBossName();
+    const color = room === 20 ? "#38bdf8" : "#f7d982";
+    document.getElementById("bossRevealKicker").innerText = room === 10 ? "Checkpoint One" : room === 20 ? "Checkpoint Two" : "Final Checkpoint";
+    document.getElementById("bossRevealName").innerText = bossName;
+    document.getElementById("bossRevealDialogue").innerText = encounter.line;
+    const image = document.getElementById("bossRevealImage");
+    const fallback = document.getElementById("bossRevealFallback");
+    if(visual.src){
+        image.src = visual.src;
+        image.alt = visual.alt || `${bossName}, checkpoint guardian`;
+        image.hidden = false;
+        fallback.hidden = true;
+        applyCharacterPresentationMode(image, visual);
+    } else {
+        image.hidden = true;
+        image.removeAttribute("src");
+        fallback.hidden = false;
+    }
+    screen.style.setProperty("--bossRevealGlow", color === "#38bdf8" ? "rgba(56,189,248,.25)" : "rgba(247,217,130,.22)");
+    screen.hidden = false;
+    document.body.classList.add("boss-reveal-active");
+    bossRevealShownKeys.add(encounter.key);
+    activeBossReveal = encounter;
+    sendGameData({runID,event:"boss_reveal",room,objective:encounter.objective || "",bossTargetLabel:encounter.label || ""});
+    document.getElementById("srAnnouncements").innerText = `${bossName}. ${encounter.line}`;
+    document.getElementById("bossRevealProceed")?.focus();
+    return true;
+}
+
+function proceedBossReveal(){
+    if(!activeBossReveal) return;
+    activeBossReveal = null;
+    const screen = document.getElementById("bossRevealScreen");
+    if(screen) screen.hidden = true;
+    document.body.classList.remove("boss-reveal-active");
+    loadQuestion();
+}
      
 function updateMazeTrack() {
     const track = document.getElementById("mazeTrack");
     track.innerHTML = ""; // Clear the old grid
+
+    if(gameMode === "exam"){
+        const activeSection = getExamSectionForRoom(room);
+        for(let i = 1; i <= 30; i++){
+            const section = getExamSectionForRoom(i);
+            const sectionState = getExamSectionState(i);
+            const isBoss = i === section?.boss;
+            const isCurrent = i === room;
+            const isActiveSection = section?.index === activeSection?.index;
+            const answered = !isBoss && getExamRoomState(i)?.selectedIndex !== null && getExamRoomState(i)?.selectedIndex !== undefined;
+            const bossReady = isBoss && isActiveSection && !sectionState.committed && isExamSectionComplete(sectionState);
+            const interactive = isActiveSection && !sectionState.committed && (!isBoss || bossReady);
+            const box = document.createElement(interactive ? "button" : "div");
+            box.className = "maze-box";
+            box.innerText = isBoss ? (i === 10 ? "I" : i === 20 ? "II" : "III") : String(i);
+            if(interactive){
+                box.type = "button";
+                box.classList.add("exam-nav-room",isBoss ? "exam-boss-ready" : answered ? "exam-answered" : "exam-unanswered");
+                box.onclick = () => isBoss ? selectExamCheckpoint(i) : navigateExamRoom(i);
+            } else {
+                box.setAttribute("role","img");
+                if(sectionState?.committed) box.classList.add("exam-committed");
+            }
+            if(isCurrent){ box.classList.add("active"); box.setAttribute("aria-current","step"); }
+            const stateLabel = isCurrent ? "current" : sectionState?.committed ? "committed" : isBoss ? (bossReady ? "available" : "locked") : answered ? "answered" : isActiveSection ? "unanswered" : "locked";
+            box.setAttribute("aria-label",`${isBoss ? "Checkpoint" : "Question"} ${i}, ${stateLabel}`);
+            track.appendChild(box);
+        }
+        return;
+    }
     
     for (let i = 1; i <= 30; i++) {
         const box = document.createElement("div");
@@ -18812,6 +20578,7 @@ function loadQuestion() {
     if(modeUsesFadingFortune()) resetFadingFortuneQuestionState();
     if(modeUsesRiskReward()) resetRiskRewardQuestionState();
     answerSubmissionPending = false;
+    currentQuestionAssistance = null;
 
     if(isTimedModeExpired()){
         endTimedModeRun();
@@ -18861,12 +20628,17 @@ function loadQuestion() {
     // 1. Determine Difficulty and Boss Status
 	let diff = getDifficultyForMode();
 
-   const isBoss = diff.includes("Boss") && gameMode !== "exam" && gameMode !== "timed" && gameMode !== "unlimited";
+   const isBoss = isBossRoomForMode(room) && diff.includes("Boss");
 
    // Only reset health if the bossPool is currently empty (meaning a new encounter)
      if (isBoss && (!bossPool || bossPool.length === 0)) {
     bossHealth = 3;
    }
+
+    if(isBoss){
+        const encounter = prepareBossEncounter(diff);
+        if(!bossRevealShownKeys.has(encounter.key) && openBossReveal(encounter)) return;
+    }
     
     // --- MUSIC CONTROL ---
     if(diff === "finalBoss" || (diff === "legendaryBoss" && room === 30)){
@@ -18919,26 +20691,8 @@ function loadQuestion() {
 
     // 3. Select the Question (CHANGE BOSS NAMES AND PNG)
 if (isBoss) {
-    // 1. If it's a new fight, build a three-question boss pool by objective.
-    // Boss pools are scaffolded by LO, not random tag soup.
-    if (bossHealth === 3 || !bossPool || bossPool.length === 0) {
-        const bank = [...(questionBanks[diff] || [])];
-        const chosenObjective = getWeakestBossObjective(bank);
-
-        bossPool = buildBossQuestionSet(bank, diff, chosenObjective);
-
-        if(bossPool.length < 3){
-            bossPool = shuffle([...bank]).slice(0, 3);
-        }
-
-        if (usedQuestions[diff]) {
-            bossPool.forEach(question => {
-                if (question && !usedQuestions[diff].includes(question.id)) {
-                    usedQuestions[diff].push(question.id);
-                }
-            });
-        }
-    }
+    // The pool and diagnosed target were prepared once for the reveal.
+    prepareBossEncounter(diff);
 
     // 2. Select the specific question based on boss health
     currentQuestion = shuffleOptions(bossPool[3 - bossHealth]);
@@ -18958,10 +20712,11 @@ if (isBoss) {
         : room === 20 ? "#38bdf8"
         : "#f0c86a";
 
-    document.getElementById("srAnnouncements").innerText =
-        `Checkpoint encounter. ${bTitle}.`;
+    document.getElementById("srAnnouncements").innerText = modeAllowsImmediateCorrectnessFeedback()
+        ? `Checkpoint encounter. ${bTitle}.`
+        : `${bTitle}. Checkpoint question ${4 - bossHealth} of 3.`;
 
-    bossMsg.innerText = "⚠ CHECKPOINT ⚠";
+    bossMsg.innerText = modeAllowsImmediateCorrectnessFeedback() ? "CHECKPOINT" : `CHECKPOINT QUESTION ${4 - bossHealth} OF 3`;
     bossMsg.style.color = bColor;
     gameBox.style.setProperty("--bossColor", bColor);
 
@@ -18979,6 +20734,8 @@ if (isBoss) {
     return;
 
 } else {
+
+    if(gameMode === "exam" && loadExamDrillQuestion()) return;
 
     if(gameMode === "quiz"){
         let deckQuestion = quizDeck[quizDeckIndex];
@@ -19099,7 +20856,7 @@ if(gameMode === "legendary"){
         return;
     }
 
-    renderQuestionGraph(currentQuestion);
+renderQuestionGraph(currentQuestion);
 
     if(!currentQuestion.type){
         currentQuestion.type = "synthesis";
@@ -19107,9 +20864,7 @@ if(gameMode === "legendary"){
 
     wizardSpeak(getWizardLine(currentQuestion.type));
 
-    bossMsg.innerText = (room === 9 || room === 19 || room === 29)
-        ? "⚠️ LEGENDARY BOSS DETECTED IN NEXT ROOM ⚠️"
-        : "";
+    bossMsg.innerText = "";
     bossMsg.style.color = "#f97316";
 
     questionElement.innerHTML = `<div>${currentQuestion.q}</div>`;
@@ -19170,6 +20925,8 @@ if(!currentQuestion){
     showGameModal({title:"Question Selection Stopped",text:"A valid question could not be selected. Review the Faculty Question Banks section.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
     return;
 }
+
+if(applyArtifactSkipIfEligible()) return;
 		
 renderQuestionGraph(currentQuestion);
 
@@ -19184,9 +20941,7 @@ renderQuestionGraph(currentQuestion);
     wizardSpeak(wizardText);
 
     // --- UI ---
-    bossMsg.innerText = ((gameMode === "standard" || gameMode === "legendary") && (room === 9 || room === 19 || room === 29))
-        ? (gameMode === "legendary" ? "⚠️ LEGENDARY BOSS DETECTED IN NEXT ROOM ⚠️" : "⚠️ DANGER: BOSS DETECTED IN NEXT ROOM ⚠️")
-        : "";
+    bossMsg.innerText = "";
     bossMsg.style.color = "#ef4444";
 
     questionElement.innerHTML = `
@@ -19199,7 +20954,7 @@ renderQuestionGraph(currentQuestion);
     displayQuestion();
     
   // --- Final Boss Entrance Shake ---
-    if(diff === "finalBoss"){
+    if(diff === "finalBoss" && modeAllowsImmediateCorrectnessFeedback()){
         scheduleForCurrentRun(()=>{
         triggerBossShake();
         scheduleForCurrentRun(triggerBossShake,450);
@@ -19249,11 +21004,22 @@ function displayQuestion() {
         btn.innerText = option;
         btn.dataset.answerIndex = String(index);
         btn.setAttribute("aria-label", `Answer option: ${option}`);
+        if(gameMode === "exam" && isExamOrdinaryRoom(room)){
+            const selected = getExamRoomState(room)?.selectedIndex === index;
+            btn.classList.toggle("selected", selected);
+            btn.setAttribute("aria-pressed", selected ? "true" : "false");
+        }
         if(modeUsesFadingFortune() && fadingFortuneFadedChoices.has(index)){
             btn.disabled = true;
             btn.tabIndex = -1;
             btn.setAttribute("aria-hidden", "true");
             btn.classList.add("fading-fortune-gone");
+        }
+        if(currentQuestionAssistance?.questionId === (currentQuestion.id || 0) && currentQuestionAssistance?.removedIndexes?.includes(index)){
+            btn.disabled = true;
+            btn.tabIndex = -1;
+            btn.setAttribute("aria-hidden", "true");
+            btn.classList.add("artifact-eliminated");
         }
 
         btn.onclick = () => {
@@ -19350,6 +21116,7 @@ async function answer(choice) {
     }
 
     if(answerSubmissionPending || rapidGuessLocked) return;
+    if(currentQuestionAssistance && currentQuestionAssistance.questionId !== (currentQuestion?.id || 0)) currentQuestionAssistance = null;
     if(modeUsesRiskReward() && (!riskRewardWagerLocked || !riskRewardQuestionRevealed || riskRewardWagerSettled)) return;
 
     answerSubmissionPending = true;
@@ -19382,7 +21149,13 @@ async function answer(choice) {
         return;
     }
 
+    if(gameMode === "exam" && isExamOrdinaryRoom(room)){
+        recordExamDraftAnswer(choice, isCorrect, responseTime);
+        return;
+    }
+
     const isBossRoom = isBossRoomForMode(room);
+    const showImmediateFeedback = modeAllowsImmediateCorrectnessFeedback();
     const msgElement = document.getElementById("message");
     const wizard = document.getElementById("wizardImage");
 
@@ -19393,7 +21166,7 @@ async function answer(choice) {
 // =============================================
 const rapidGuess = checkRapidGuessing(isCorrect, responseTime);
 
-if(rapidGuess.triggered && !rapidGuessLocked){
+if(showImmediateFeedback && rapidGuess.triggered && !rapidGuessLocked){
     rapidGuessLocked = true;
     pauseFadingFortune("rapid-guess");
     resumeFadingFortune("answer-check");
@@ -19486,6 +21259,7 @@ if(gameMode === "riskReward"){
 }
 
 recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
+if(isBossRoom) recordCheckpointAttempt(isCorrect);
 
     // =============================================
     // 🔥 UPDATE STREAK FIRST (SOURCE OF TRUTH)
@@ -19497,7 +21271,14 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         streak = 0;
         recordBossMistakeForAchievements();
     }
-   
+
+    // Daily Challenges consumes the same validated answer event used by every mode.
+    // Rapid-guess lockouts return above, so they cannot create Daily progress.
+    const dailyTelemetry = recordDailyGameplayEvent({
+        correct:isCorrect,
+        streak,
+        question:currentQuestion
+    });
 
     // SCORE ATTACK MODE ADDITION:
     // Apply score after streak updates, because streak bonus depends on the new streak value.
@@ -19536,8 +21317,33 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         riskRewardWagerPercent: modeUsesRiskReward() ? Math.round(riskRewardCurrentWagerRatio * 100) : null,
         riskRewardWagerTier: modeUsesRiskReward() ? riskRewardTierLabel(riskRewardCurrentWagerRatio) : null,
         riskRewardBankrollAfter: modeUsesRiskReward() ? riskRewardBankroll : null,
-        riskRewardAllIn: modeUsesRiskReward() ? riskRewardCurrentWagerRatio >= 0.999 : null
+        riskRewardAllIn: modeUsesRiskReward() ? riskRewardCurrentWagerRatio >= 0.999 : null,
+        artifactAssisted: currentQuestionAssistance ? 1 : 0,
+        artifactSlot: currentQuestionAssistance?.artifactSlot || "",
+        artifactDistractorsRemoved: currentQuestionAssistance?.distractorsRemoved || 0,
+        artifactFinalAnswer: currentQuestionAssistance ? choice : null,
+        artifactAssistedCorrect: currentQuestionAssistance ? (isCorrect ? 1 : 0) : null,
+        ...dailyTelemetry
     });
+
+    if(dailyTelemetry.dailyCompletedNow){
+        sendGameData({
+            runID,
+            game:FACULTY_COMPOSITION_CONFIG.title,
+            event:"daily_complete",
+            user:username || "anonymous",
+            room,
+            questionId:currentQuestion.id || 0,
+            tag:currentQuestion.tag || "",
+            type:currentQuestion.type || "",
+            objective:currentQuestion.objective || inferObjective(currentQuestion),
+            attempt:totalAttempts ?? 0,
+            streak:streak ?? 0,
+            elapsedTime:getElapsedTimeMs(),
+            totalTime:getElapsedTimeMs(),
+            ...dailyTelemetry
+        });
+    }
 
     // SCORE ATTACK MODE ADDITION:
     // Pause only in Score Attack so the player can actually read the score result
@@ -19558,14 +21364,14 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
     // ✅ CORRECT ANSWER LOGIC
     // =============================================
     if (isCorrect) {
-        if(isBossRoom){
+        if(showImmediateFeedback && isBossRoom){
         sfxCorrect.pause();
         sfxCorrect.currentTime = 0;
 
         sfxBossHit.pause();
         sfxBossHit.currentTime = 0;
         sfxBossHit.play().catch(()=>{});
-    } else {
+    } else if(showImmediateFeedback) {
         sfxBossHit.pause();
         sfxBossHit.currentTime = 0;
 
@@ -19573,17 +21379,17 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         sfxCorrect.currentTime = 0;
         sfxCorrect.play().catch(()=>{});
     }
-        wizardSpeak(getWizardFeedback("correct"));
+        if(showImmediateFeedback) wizardSpeak(getWizardFeedback("correct"));
        
-        wizard.style.transform = "scale(1.1)";
-        scheduleForCurrentRun(()=>{
-        wizard.style.transform = "";
-        },200);
+        if(showImmediateFeedback){
+            wizard.style.transform = "scale(1.1)";
+            scheduleForCurrentRun(()=>{ wizard.style.transform = ""; },200);
+        }
 
 		correctAnswers++;
 		recordRealmCorrectAnswer();
 		recordRealmStreak(streak);
-        handleStreakVisuals();
+        if(showImmediateFeedback) handleStreakVisuals();
        
         // --- STAGED REMEDIATION SUCCESS PATH ---
   if(remediationState.active){
@@ -19665,7 +21471,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
         if(isBossRoom){
         const checkpointComplete = advanceCheckpointAttempt();
         
-		const bossLine = getFacultyBossLine({
+		const bossLine = showImmediateFeedback ? getFacultyBossLine({
  		 isCorrect: true,
  		 tag: currentQuestion.tag || "",
 		  type: currentQuestion.type || "",
@@ -19673,13 +21479,13 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
  		 streak,
  		 bossHealth,
  		 responseTime
-		});
+		}) : "";
 
-		msgElement.innerHTML =
-		  `<span style='color:#f87171;font-weight:bold;'>⚔ HIT! Boss Health: ${bossHealth}/3</span><br>
-   			<span class='fade-out-text'>${bossLine}</span>`;
+		msgElement.innerHTML = showImmediateFeedback
+		  ? `<span style='color:#f87171;font-weight:bold;'>⚔ HIT! Boss Health: ${bossHealth}/3</span><br><span class='fade-out-text'>${bossLine}</span>`
+          : `<span class='fade-out-text'>Response recorded.</span>`;
 
-		triggerBossShake();
+		if(showImmediateFeedback) triggerBossShake();
         
         if (!checkpointComplete) {
            scheduleForCurrentRun(loadQuestion, TIMING.boss);
@@ -19704,6 +21510,11 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
        return;
    }
 
+   if(isBossRoomForMode(room)){
+       loadQuestion();
+       return;
+   }
+
    showHallwayTransition(currentQuestion.feedback);
    return;
     }      
@@ -19711,24 +21522,26 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
 // ❌ WRONG ANSWER BLOCK — ALL FAILURE LOGIC
 // =============================================
        
-	if (isBossRoom) {
+	if (showImmediateFeedback && isBossRoom) {
   	  sfxWrong.volume = 0.7;
 	} else {
   	  sfxWrong.volume = 0.5;
 	}
 
-    sfxWrong.currentTime = 0;
-    sfxWrong.play().catch(() => {});
+    if(showImmediateFeedback){
+        sfxWrong.currentTime = 0;
+        sfxWrong.play().catch(() => {});
+    }
 
-    wizardSpeak(getWizardFeedback("wrong"));
+    if(showImmediateFeedback) wizardSpeak(getWizardFeedback("wrong"));
 
-    wizard.style.transform = "translateX(-6px)";
-    scheduleForCurrentRun(() => {
-        wizard.style.transform = "translateX(6px)";
+    if(showImmediateFeedback){
+        wizard.style.transform = "translateX(-6px)";
         scheduleForCurrentRun(() => {
-            wizard.style.transform = "";
+            wizard.style.transform = "translateX(6px)";
+            scheduleForCurrentRun(() => { wizard.style.transform = ""; }, 100);
         }, 100);
-    }, 100);
+    }
 
     // --- LEARNING: increase weakness ---
     if (currentQuestion.tag) {
@@ -19739,7 +21552,7 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
     }
 
 	if(isBossRoom){
-	  const bossLine = getFacultyBossLine({
+	  const bossLine = showImmediateFeedback ? getFacultyBossLine({
     	isCorrect: false,
     	tag: currentQuestion.tag || "",
     	type: currentQuestion.type || "",
@@ -19747,9 +21560,9 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
     	streak,
     	bossHealth,
     	responseTime
-  	 });
+     }) : "";
 
-     msgElement.innerHTML = `<span class='fade-out-text'>${bossLine}</span>`;
+     msgElement.innerHTML = `<span class='fade-out-text'>${showImmediateFeedback ? bossLine : "Response recorded."}</span>`;
 
      const checkpointComplete = advanceCheckpointAttempt();
      if(checkpointComplete){
@@ -19887,17 +21700,7 @@ showGameModal({
 // Requires matching ID format: "vault" + ArtifactName
 // Safe to customize artifact visuals/text only
 function unlockArtifact(key) {
-    const id = "vault" + key.charAt(0).toUpperCase() + key.slice(1);
-    const slot = document.getElementById(id);
-
-    if(slot){
-        slot.classList.add("unlocked");
-        const storageKey = ARTIFACT_STORAGE_KEYS[key];
-        if(storageKey) localStorage.setItem(storageKey, "true");
-        updateMissionArtifactCountFromVault();
-    }
-
-    showArtifact(artifacts[key].img, artifacts[key].title, artifacts[key].text);
+    earnArtifact(key);
 }
     
 // =============================================
@@ -19915,6 +21718,12 @@ function unlockArtifact(key) {
 function handleStreakVisuals() {
     const display = document.getElementById("streakDisplay");
     if(!display) return;
+    if(!modeAllowsImmediateCorrectnessFeedback()){
+        display.hidden = true;
+        display.innerText = "";
+        return;
+    }
+    display.hidden = false;
 
     if(streak === 5){
         display.innerHTML = '<span class="streak">◆ FIVE-CORRECT STREAK</span>';
@@ -19927,6 +21736,14 @@ function handleStreakVisuals() {
     } else {
         display.innerText = "";
     }
+}
+
+function updateImmediateFeedbackVisibility(){
+    const display = document.getElementById("streakDisplay");
+    if(!display) return;
+    display.hidden = !modeAllowsImmediateCorrectnessFeedback();
+    if(display.hidden) display.innerText = "";
+    else handleStreakVisuals();
 }
 
 // =============================================
@@ -19947,10 +21764,12 @@ function showHallwayTransition(feedback, options = {}){
     const text = document.getElementById("hallwayText");
     const slotId = options.slotId || (room <= 10 ? "hallway1" : room <= 20 ? "hallway2" : "hallway3");
     const hallwaySlot = getFacultyVisualSlot(slotId);
-    const nextAction = options.nextAction === "victory" ? "victory" : "question";
+    const nextAction = options.nextAction === "victory" ? "victory" : options.nextAction === "practice-results" ? "practice-results" : "question";
     const presentationDuration = options.duration ?? TIMING.feedback;
     const transitionFeedback = String(feedback || "Checkpoint complete.");
     const destinationText = options.destinationText || "Continue to the next room.";
+    const leadText = options.leadText || getWizardFeedback("correct");
+    const announcement = options.announcement || `${modeAllowsImmediateCorrectnessFeedback() ? "Correct. " : ""}${transitionFeedback}`;
 
     overlay.style.background =
         hallwaySlot.src
@@ -19960,18 +21779,19 @@ function showHallwayTransition(feedback, options = {}){
     overlay.style.backgroundPosition = "center";
 
     text.innerHTML = `
-        <div style="font-size:22px;margin-bottom:15px;color:#f0c86a;">${getWizardFeedback("correct")}</div>
+        <div style="font-size:22px;margin-bottom:15px;color:#f0c86a;">${leadText}</div>
         <div style="font-size:18px;opacity:.92;color:#f5e6b8;">${transitionFeedback}</div>
         <div style="margin-top:25px;font-size:14px;opacity:.74;color:#c4b5fd;">${destinationText}</div>
     `;
 
     overlay.classList.add("active");
-    document.getElementById("srAnnouncements").innerText = `Correct. ${transitionFeedback}`;
+    document.getElementById("srAnnouncements").innerText = announcement;
 
     scheduleForCurrentRun(() => {
         overlay.classList.remove("active");
         scheduleForCurrentRun(() => {
             if(nextAction === "victory") handleVictory();
+            else if(nextAction === "practice-results") handlePracticeModeComplete();
             else loadQuestion();
         }, 0);
     }, presentationDuration);
@@ -20071,6 +21891,31 @@ function triggerBossShake() {
 // Edit carefully.
 // =============================================
 	 
+function getCheckpointOutcomePresentation(bossRoom, result = lastCheckpointOutcome){
+    const ordinal = bossRoom === 10 ? "I" : bossRoom === 20 ? "II" : "III";
+    const concept = humanizeBossObjective(result?.label || "");
+    const safeConcept = concept || "this concept";
+    const bossName = getFacultyBossName();
+    if(result?.outcome === "secured") return {
+        title:`CHECKPOINT ${ordinal} SECURED`,
+        summary:`You proved your command of ${safeConcept}.`,
+        transition:`Checkpoint ${ordinal} is secured.`,
+        lead:"Mastery demonstrated."
+    };
+    if(result?.outcome === "cleared") return {
+        title:`CHECKPOINT ${ordinal} CLEARED`,
+        summary:`The encounter is complete, but ${safeConcept} still deserves attention.`,
+        transition:`Checkpoint ${ordinal} is cleared.`,
+        lead:"Encounter complete."
+    };
+    return {
+        title:"MASTERY NOT YET SECURED",
+        summary:`${bossName} exposed a weakness in ${safeConcept}.`,
+        transition:`Checkpoint ${ordinal} is complete, but mastery is not yet secured.`,
+        lead:"Weakness recorded for repair."
+    };
+}
+
 function showKnowledgeRoom(bossRoom) {
     playExplorationMusic();
 
@@ -20081,19 +21926,14 @@ function showKnowledgeRoom(bossRoom) {
     msgElement.innerText = "";
     msgElement.className = "";
 
-    const title = bossRoom === 10
-        ? "CHECKPOINT ONE COMPLETE"
-        : bossRoom === 20
-            ? "CHECKPOINT TWO COMPLETE"
-            : "FINAL CHECKPOINT COMPLETE";
-
-    const summary = bossRoom === 30
-        ? "The full 30-room run is complete. Review your mastery report."
-        : "The checkpoint is complete. Continue when you are ready.";
+    const outcome = Number(lastCheckpointOutcome?.room) === Number(bossRoom)
+        ? lastCheckpointOutcome
+        : {outcome:"not-secured",label:""};
+    const presentation = getCheckpointOutcomePresentation(bossRoom,outcome);
 
     qContainer.innerHTML = `
-        <span class="boss-title">${title}</span>
-        <div class="boss-q">${summary}</div>
+        <span class="boss-title">${facultyEscapeAttribute(presentation.title)}</span>
+        <div class="boss-q">${facultyEscapeAttribute(presentation.summary)}</div>
     `;
 
     const buttonLabel = bossRoom === 30 ? "VIEW RESULTS →" : `CONTINUE TO ROOM ${bossRoom + 1} →`;
@@ -20109,12 +21949,14 @@ function showKnowledgeRoom(bossRoom) {
             const slotId = bossRoom === 10 ? "hallway1" : bossRoom === 20 ? "hallway2" : "hallway3";
             if(bossRoom !== 30) room++;
             showHallwayTransition(
-                bossRoom === 30 ? "The final checkpoint is secured." : `Checkpoint ${bossRoom === 10 ? "One" : "Two"} is secured.`,
+                presentation.transition,
                 {
                     slotId,
-                    nextAction:bossRoom === 30 ? "victory" : "question",
+                    nextAction:bossRoom === 30 ? (gameMode === "exam" ? "practice-results" : "victory") : "question",
                     duration:TIMING.checkpointTransition,
-                    destinationText:bossRoom === 30 ? "Continue to your results." : `Continue to Room ${bossRoom + 1}.`
+                    destinationText:bossRoom === 30 ? "Continue to your results." : `Continue to Room ${bossRoom + 1}.`,
+                    leadText:presentation.lead,
+                    announcement:`${presentation.title}. ${presentation.summary}`
                 }
             );
         };
@@ -21707,7 +23549,19 @@ const TELEMETRY_COLUMNS = [
     "firstExposure","score","bestScore","totalTimeMs","accuracy","maxStreak",
     "totalAttempts","verificationCode","fadingFortuneScore","fadingFortuneQuestionValue",
     "fadingFortuneFadeCount","fadingFortuneIntervalMs","fadingFortunePausedDurationMs",
-    "fadingFortuneMaxScore","fadingFortuneAverageValue","fadingFortuneDistribution"
+    "fadingFortuneMaxScore","fadingFortuneAverageValue","fadingFortuneDistribution",
+    "dailyID","dailyDate","dailyFamily","dailyTarget","dailyWindowSize","dailyEligibleFamilies",
+    "dailyProgressBefore","dailyProgressAfter","dailyWindowAttempt","dailyCompleted",
+    "dailyCompletionTimestamp","dailyAlreadyComplete","dailyPostCompletionQuestions",
+    "dailyMsSinceCompletion","dailyQuestionsToComplete","dailyElapsedToCompleteMs",
+    "dailyConcept","dailyCompletedNow","dailyWindowFailed",
+    "examSection","examInitialSelectedIndex","examFinalSelectedIndex","examRevisionCount",
+    "examNavigationFrom","examNavigationTo","examReturnVisit","examSkippedRevisit",
+    "examReviewTimeMs","examChangedCorrect","examChangedIncorrect","bossTargetLabel",
+    "checkpointOutcome","checkpointCorrect","checkpointTotal",
+    "artifactAvailable","artifactSlot","artifactDistractorsRemoved","artifactFinalAnswer",
+    "artifactAssisted","artifactAssistedCorrect","artifactSkippedRooms","artifactSkippedRoomIDs",
+    "artifactSkipRemaining","artifactFailedReason","artifactInventoryBefore","artifactInventoryAfter"
 ];
 
 function createTelemetryEventID(){
@@ -21741,11 +23595,14 @@ function sendGameData(data = {}){
         const questionID = Number(data.questionId ?? data.question ?? 0);
         const normalizedMode = String(data.mode || gameMode || "standard").replace(/-complete$/, "");
         const eventName = data.event || "";
-        const isResponseEvent = eventName === "question" || eventName === "rapid_guessing";
+        const isResponseEvent = eventName === "question" || eventName === "rapid_guessing" || eventName === "exam_answer_initial" || eventName === "exam_answer_revision";
         const isCompletionEvent = /(?:^|_)complete$/.test(eventName) || eventName === "complete";
         const priorExposureCount = questionID > 0
             ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
             : 0;
+        const dailyData = typeof getDailyTelemetrySnapshot === "function"
+            ? getDailyTelemetrySnapshot()
+            : {};
 
         const record = {
             eventID: createTelemetryEventID(),
@@ -21788,7 +23645,53 @@ function sendGameData(data = {}){
             fadingFortunePausedDurationMs: Number(data.fadingFortunePausedDurationMs ?? 0),
             fadingFortuneMaxScore: Number(data.fadingFortuneMaxScore ?? 0),
             fadingFortuneAverageValue: Number(data.fadingFortuneAverageValue ?? 0),
-            fadingFortuneDistribution: data.fadingFortuneDistribution || ""
+            fadingFortuneDistribution: data.fadingFortuneDistribution || "",
+            dailyID: data.dailyID ?? dailyData.dailyID ?? "",
+            dailyDate: data.dailyDate ?? dailyData.dailyDate ?? "",
+            dailyFamily: data.dailyFamily ?? dailyData.dailyFamily ?? "",
+            dailyTarget: Number(data.dailyTarget ?? dailyData.dailyTarget ?? 0),
+            dailyWindowSize: Number(data.dailyWindowSize ?? dailyData.dailyWindowSize ?? 0),
+            dailyEligibleFamilies: data.dailyEligibleFamilies ?? dailyData.dailyEligibleFamilies ?? "",
+            dailyProgressBefore: Number(data.dailyProgressBefore ?? dailyData.dailyProgressBefore ?? 0),
+            dailyProgressAfter: Number(data.dailyProgressAfter ?? dailyData.dailyProgressAfter ?? 0),
+            dailyWindowAttempt: Number(data.dailyWindowAttempt ?? dailyData.dailyWindowAttempt ?? 0),
+            dailyCompleted: Number(data.dailyCompleted ?? dailyData.dailyCompleted ?? 0),
+            dailyCompletionTimestamp: data.dailyCompletionTimestamp ?? dailyData.dailyCompletionTimestamp ?? "",
+            dailyAlreadyComplete: Number(data.dailyAlreadyComplete ?? dailyData.dailyAlreadyComplete ?? 0),
+            dailyPostCompletionQuestions: Number(data.dailyPostCompletionQuestions ?? dailyData.dailyPostCompletionQuestions ?? 0),
+            dailyMsSinceCompletion: Number(data.dailyMsSinceCompletion ?? dailyData.dailyMsSinceCompletion ?? 0),
+            dailyQuestionsToComplete: Number(data.dailyQuestionsToComplete ?? dailyData.dailyQuestionsToComplete ?? 0),
+            dailyElapsedToCompleteMs: Number(data.dailyElapsedToCompleteMs ?? dailyData.dailyElapsedToCompleteMs ?? 0),
+            dailyConcept: data.dailyConcept ?? dailyData.dailyConcept ?? "",
+            dailyCompletedNow: Number(data.dailyCompletedNow ?? 0),
+            dailyWindowFailed: Number(data.dailyWindowFailed ?? 0),
+            examSection: Number(data.examSection ?? 0),
+            examInitialSelectedIndex: Number(data.examInitialSelectedIndex ?? -1),
+            examFinalSelectedIndex: Number(data.examFinalSelectedIndex ?? -1),
+            examRevisionCount: Number(data.examRevisionCount ?? 0),
+            examNavigationFrom: Number(data.examNavigationFrom ?? 0),
+            examNavigationTo: Number(data.examNavigationTo ?? 0),
+            examReturnVisit: Number(data.examReturnVisit ?? 0),
+            examSkippedRevisit: Number(data.examSkippedRevisit ?? 0),
+            examReviewTimeMs: Number(data.examReviewTimeMs ?? 0),
+            examChangedCorrect: Number(data.examChangedCorrect ?? 0),
+            examChangedIncorrect: Number(data.examChangedIncorrect ?? 0),
+            bossTargetLabel: data.bossTargetLabel || "",
+            checkpointOutcome: data.checkpointOutcome || "",
+            checkpointCorrect: Number(data.checkpointCorrect ?? 0),
+            checkpointTotal: Number(data.checkpointTotal ?? 0),
+            artifactAvailable: Number(data.artifactAvailable ?? 0),
+            artifactSlot: data.artifactSlot || "",
+            artifactDistractorsRemoved: Number(data.artifactDistractorsRemoved ?? 0),
+            artifactFinalAnswer: data.artifactFinalAnswer === null || data.artifactFinalAnswer === undefined ? "" : Number(data.artifactFinalAnswer),
+            artifactAssisted: Number(data.artifactAssisted ?? 0),
+            artifactAssistedCorrect: data.artifactAssistedCorrect === null || data.artifactAssistedCorrect === undefined ? "" : Number(data.artifactAssistedCorrect),
+            artifactSkippedRooms: Number(data.artifactSkippedRooms ?? 0),
+            artifactSkippedRoomIDs: data.artifactSkippedRoomIDs || "",
+            artifactSkipRemaining: Number(data.artifactSkipRemaining ?? 0),
+            artifactFailedReason: data.artifactFailedReason || "",
+            artifactInventoryBefore: Number(data.artifactInventoryBefore ?? 0),
+            artifactInventoryAfter: Number(data.artifactInventoryAfter ?? 0)
         };
 
         records.push(record);

@@ -9,6 +9,7 @@ import {
   PHASE, SOURCE_VERSION, ID_FIRST, ID_LAST, CONCEPT_ID, OBJECTIVES, SUBTOPICS,
   GRAPH_ASSETS, productionQuestions
 } from "../authoring/factor_markets_question_pool_author.mjs";
+import { isAuthorizedQuestionQualityCuration } from "./question-quality-curation-allowlist.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "../../..");
@@ -181,11 +182,11 @@ for (let left = 0; left < tokenized.length; left += 1) {
 }
 check(nearDuplicates.length === 0, "near-duplicate stem audit", JSON.stringify(nearDuplicates.slice(0, 10)));
 
-const headById = new Map(entries(head).map(entry => [String(entry.question.id), stable(entry.question)]));
-const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), stable(entry.question)]));
+const headById = new Map(entries(head).map(entry => [String(entry.question.id), entry.question]));
+const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), entry.question]));
 const auditScopeIds=new Set(Array.from({length:43059-42320+1},(_,index)=>String(42320+index)));
 const activeRepairIds=new Set(Array.from({length:43327-43060+1},(_,index)=>String(43060+index)));
-const changedBaseline = [...headById].filter(([id, record]) => !auditScopeIds.has(id) && !activeRepairIds.has(id) && currentById.get(id) !== record).map(([id]) => id);
+const changedBaseline = [...headById].filter(([id, record]) => !auditScopeIds.has(id) && !activeRepairIds.has(id) && stable(currentById.get(id)) !== stable(record) && !isAuthorizedQuestionQualityCuration(id, record, currentById.get(id))).map(([id]) => id);
 check(changedBaseline.length === 0, "protected records outside active repair scope unchanged", changedBaseline.slice(0, 20).join(","));
 check(current.assetInventory.length === 494, "asset inventory total", String(current.assetInventory.length));
 

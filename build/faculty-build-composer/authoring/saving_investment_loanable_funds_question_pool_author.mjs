@@ -303,7 +303,8 @@ export const uncalibratedProductionQuestions = finalizeQuestions(rows, {
   objectiveCounts: OBJECTIVE_COUNTS,
   difficultyQuotas: { easy: 40, medium: 60, hard: 36, elite: 12, legendary: 12 },
   phase: PHASE,
-  graphAssets: GRAPH_ASSETS
+  graphAssets: GRAPH_ASSETS,
+  enforceQualityGate: true
 });
 
 export const productionQuestions = applyDifficultyCalibration(uncalibratedProductionQuestions);

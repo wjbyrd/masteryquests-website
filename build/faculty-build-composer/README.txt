@@ -8,6 +8,17 @@ Canonical questions: 8,163
 Selectable concepts/family slices: 126
 Question assets: 427
 
+Question quality gate
+---------------------
+New banks and expansions must follow QUESTION_QUALITY_STANDARD.md. Run the reusable
+auditor from the repository root before a pool is accepted, for example:
+
+  node audit_tools/question_quality_auditor.mjs --concepts demand,supply,market-equilibrium
+
+ERROR findings block acceptance. WARNING and REVIEW findings require documented human
+review. The remaining-Principles authoring helper runs the audit automatically; new authoring
+configurations must pass enforceQualityGate: true so deterministic errors block serialization.
+
 
 
 Latest upgrade — Mode 10: Risk & Reward

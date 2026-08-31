@@ -9,6 +9,7 @@ import {
   PHASE, SOURCE_VERSION, ID_FIRST, ID_LAST, CONCEPT_ID, OBJECTIVES, SUBTOPICS,
   GRAPH_ASSETS, QUARANTINED_ASSETS, productionQuestions
 } from "../authoring/saving_investment_loanable_funds_question_pool_author.mjs";
+import { isAuthorizedQuestionQualityCuration } from "./question-quality-curation-allowlist.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "../../..");
@@ -199,10 +200,10 @@ const distractorSetCounts=distribution(productionQuestions,question=>question.di
 const maximumRepeatedDistractorSet=Math.max(...Object.values(distractorSetCounts));
 check(maximumRepeatedDistractorSet<=4,"repeated distractor-set cap",String(maximumRepeatedDistractorSet));
 
-const headById = new Map(entries(head).map(entry => [String(entry.question.id), stable(entry.question)]));
-const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), stable(entry.question)]));
+const headById = new Map(entries(head).map(entry => [String(entry.question.id), entry.question]));
+const currentById = new Map(currentEntries.map(entry => [String(entry.question.id), entry.question]));
 const phaseIds=new Set(productionQuestions.map(question=>String(question.id)));
-const changedBaseline = [...headById].filter(([id, record]) => !phaseIds.has(id) && currentById.get(id) !== record).map(([id]) => id);
+const changedBaseline = [...headById].filter(([id, record]) => !phaseIds.has(id) && stable(currentById.get(id)) !== stable(record) && !isAuthorizedQuestionQualityCuration(id, record, currentById.get(id))).map(([id]) => id);
 check(changedBaseline.length === 0, "protected records outside active repair scope unchanged", changedBaseline.slice(0, 20).join(","));
 check(current.assetInventory.length === 494, "asset inventory total", String(current.assetInventory.length));
 

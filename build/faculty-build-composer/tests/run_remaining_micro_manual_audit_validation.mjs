@@ -8,6 +8,7 @@ import * as factor from "../authoring/factor_markets_question_pool_author.mjs";
 import * as choice from "../authoring/consumer_choice_question_pool_author.mjs";
 import * as inequality from "../authoring/income_inequality_question_pool_author.mjs";
 import * as information from "../authoring/information_behavioral_political_economy_question_pool_author.mjs";
+import { isAuthorizedQuestionQualityCuration } from "./question-quality-curation-allowlist.mjs";
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const root=path.resolve(here,"../../..");
@@ -85,8 +86,10 @@ for(const module of TARGETS){const recipe={schemaVersion:core.RECIPE_SCHEMA_VERS
 const mixedRecipe={schemaVersion:core.RECIPE_SCHEMA_VERSION,title:"Remaining Micro Manual Audit",slug:"remaining-micro-manual-audit-production-sample",supportedModes:[...core.MODE_ORDER],selectedConceptIds:[...TARGET_IDS],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};
 const mixedComposition=core.compose(current,mixedRecipe);check(mixedComposition.errors.length===0,"mixed four-concept composition",mixedComposition.errors.join(" | "));embedAssets(mixedComposition);helpers.attachConceptReviewRuntime(core,mixedComposition,current,[...TARGET_IDS]);const canonicalTemplate=helpers.loadCanonicalTemplate();const mixedConfig=await core.createConfig(mixedRecipe,current,await core.sha256Hex(canonicalTemplate));const mixedMetadata=helpers.createMetadata(core,mixedComposition,mixedConfig,current,{phase:"remaining-micro-manual-audit",sourceVersion:"2026.08.27"});const mixedHtml=core.buildHtml(canonicalTemplate,mixedComposition,mixedConfig,mixedMetadata);helpers.assertInlineScriptsCompile(mixedHtml,"remaining-micro-manual-audit-production-sample.html");const mixedArtifact=helpers.writeTestArtifact("tests/remaining-micro-manual-audit-production-sample.html",mixedHtml);
 
-const currentProtected=entries(current).filter(item=>!TARGET_IDS.has(item.conceptId)&&item.conceptId!=="federal-budgets-and-debt"&&item.conceptId!=="saving-investment-and-loanable-funds").map(item=>stable(item));
-const headProtected=entries(head).filter(item=>!TARGET_IDS.has(item.conceptId)&&item.conceptId!=="federal-budgets-and-debt"&&item.conceptId!=="saving-investment-and-loanable-funds").map(item=>stable(item));
+const currentQuestionById=new Map(entries(current).map(item=>[String(item.question.id),item.question]));
+const headQuestionById=new Map(entries(head).map(item=>[String(item.question.id),item.question]));
+const currentProtected=entries(current).filter(item=>!TARGET_IDS.has(item.conceptId)&&item.conceptId!=="federal-budgets-and-debt"&&item.conceptId!=="saving-investment-and-loanable-funds"&&!isAuthorizedQuestionQualityCuration(item.question.id,headQuestionById.get(String(item.question.id)),item.question)).map(item=>stable(item));
+const headProtected=entries(head).filter(item=>!TARGET_IDS.has(item.conceptId)&&item.conceptId!=="federal-budgets-and-debt"&&item.conceptId!=="saving-investment-and-loanable-funds"&&!isAuthorizedQuestionQualityCuration(item.question.id,item.question,currentQuestionById.get(String(item.question.id)))).map(item=>stable(item));
 check(stable(currentProtected)===stable(headProtected),"protected concept slices unchanged");
 check(entries(current).filter(item=>item.conceptId==="federal-budgets-and-debt").length===108,"authorized Federal Budgets & Debt release delta");
 

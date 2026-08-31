@@ -1,4 +1,5 @@
 import crypto from "node:crypto";
+import { auditAuthoredQuestions } from "../../../audit_tools/question_quality_auditor.mjs";
 
 export const CONTEXTS = Object.freeze([
   "a campus dining plan", "a neighborhood grocery", "a commuter's weekly budget", "a public library program",
@@ -99,6 +100,15 @@ export function finalizeQuestions(rows, config) {
   if (new Set(questions.map(question => question.q.trim().toLowerCase())).size !== questions.length) throw new Error("Duplicate authored stems detected.");
   const difficulty = questions.reduce((acc, question) => (acc[question.difficulty] = (acc[question.difficulty] || 0) + 1, acc), {});
   for (const [level, expected] of Object.entries(difficultyQuotas)) if (difficulty[level] !== expected) throw new Error(`${level} expected ${expected}; found ${difficulty[level]}.`);
+  const quality = auditAuthoredQuestions(questions, { conceptId, validateAssets: false });
+  Object.defineProperty(questions, "qualityAudit", { value: quality, enumerable: false });
+  if (config.enforceQualityGate === true && quality.counts.errors) {
+    const details = quality.findings
+      .filter(finding => finding.severity === "ERROR")
+      .map(finding => `${finding.questionId}:${finding.rule}`)
+      .join(", ");
+    throw new Error(`Question-quality audit failed with ${quality.counts.errors} error(s): ${details}`);
+  }
   return questions;
 }
 

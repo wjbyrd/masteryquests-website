@@ -1,0 +1,224 @@
+{
+  "phase": "phaseQH3-core-question-quality-gate-v1",
+  "generatedAt": "2026-08-30T16:00:00.000Z",
+  "scope": {
+    "concepts": [
+      "demand",
+      "supply",
+      "market-equilibrium"
+    ],
+    "changedQuestionCount": 13
+  },
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1",
+  "librarySha256": "5adbede70c22d23e021ce0aa0bc43eba7d38dec57eba5cd0bb15ff4008cb80ba",
+  "changes": [
+    {
+      "id": "PG1-DMD-E-001",
+      "conceptId": "demand",
+      "pool": "easy",
+      "reason": "Explain the economic price-quantity relationship instead of only describing a plotted point.",
+      "before": {
+        "q": "On the displayed gourmet-donut demand curve, what price and quantity are shown at point A?",
+        "feedback": "Point A is plotted at a price of $10 and a quantity demanded of 100 thousand donuts.",
+        "sourceHash": "18320ac9194cfddbb12a31334a81b147c8b8a3793ee5a0fbf07731462c89c5fa"
+      },
+      "after": {
+        "q": "On the displayed gourmet-donut demand curve, what price and quantity are shown at point A?",
+        "feedback": "At point A, the demand curve pairs a price of $10 with a quantity demanded of 100 thousand donuts.",
+        "sourceHash": "a3a6154f809e698293543aad09433ae9c427c638535fa29160135d9a12bfd2d9"
+      }
+    },
+    {
+      "id": "40010",
+      "conceptId": "demand",
+      "pool": "hard",
+      "reason": "Connect the substitution question explicitly to the displayed demand shift.",
+      "before": {
+        "q": "If streaming subscriptions substitute for movie tickets, which event could produce the shift?",
+        "feedback": "A higher substitute price increases demand for movie tickets.",
+        "sourceHash": "bc98c3cb4dfb4d2acce010d13e3771040666d08be9e14f255d2f6d06726a7d24"
+      },
+      "after": {
+        "q": "Refer to the graph. If streaming subscriptions are substitutes for movie tickets, which event could produce the demand shift shown?",
+        "feedback": "A higher substitute price increases demand for movie tickets.",
+        "sourceHash": "c2ebb87c44e09bcf3ef7d06471015f0d755e69f03583abe7cf7b8190039c526a"
+      }
+    },
+    {
+      "id": "40011",
+      "conceptId": "demand",
+      "pool": "elite",
+      "reason": "Name the visual evidence and distinguish a curve shift from movement along the unchanged curve.",
+      "before": {
+        "q": "Which description separates the demand shift from the market movement?",
+        "feedback": "Demand changes curves; the higher equilibrium is also a movement along unchanged supply.",
+        "sourceHash": "c1be1a61af5cb9e845f7597110383813966166c537276e2c12138e63b354c753"
+      },
+      "after": {
+        "q": "Refer to the graph. Which description correctly separates the demand shift from the movement along supply?",
+        "feedback": "Demand changes curves; the higher equilibrium is also a movement along unchanged supply.",
+        "sourceHash": "c9f70beb45ad8c76178a02a4379126171ad28ce15be3e91f776cc16d83a26240"
+      }
+    },
+    {
+      "id": "PG1-SUP-E-001",
+      "conceptId": "supply",
+      "pool": "easy",
+      "reason": "Explain the economic price-quantity relationship and complete the unit.",
+      "before": {
+        "q": "On the displayed coffee supply curve, what price and quantity are shown at point A?",
+        "feedback": "Point A is plotted at a price of $6 and a quantity supplied of 100 thousand.",
+        "sourceHash": "8891dbe009727072594c0809bb81c6c46129886da5bd86b419cb9fef30b7cae5"
+      },
+      "after": {
+        "q": "On the displayed coffee supply curve, what price and quantity are shown at point A?",
+        "feedback": "At point A, the supply curve pairs a price of $6 with a quantity supplied of 100 thousand units.",
+        "sourceHash": "805ff537a487cc6017e7bb55b262305bce662393982b8da9d81b7581a2cba263"
+      }
+    },
+    {
+      "id": "40008",
+      "conceptId": "supply",
+      "pool": "elite",
+      "reason": "Use natural graph language and state the movement-versus-shift contrast directly.",
+      "before": {
+        "q": "Why is A to B not merely a decrease in quantity supplied?",
+        "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+        "sourceHash": "85b69d7a98fde5bf1e326af0c7056135933f6c00aa3485b9b963103d53d34b8a"
+      },
+      "after": {
+        "q": "Refer to the graph. Why is the move from A to B a decrease in supply rather than merely a decrease in quantity supplied?",
+        "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+        "sourceHash": "8ce26954264694c47528e84cea0c6fcd4e4924e594ab9267374b249a7d28d2e5"
+      }
+    },
+    {
+      "id": "PG1-SUP-L-001",
+      "conceptId": "supply",
+      "pool": "legendary",
+      "reason": "Direct the learner to the graph whose movement the claim interprets.",
+      "before": {
+        "q": "A producer says the move from A to B proves that supply increased by 125 thousand units. What is the correct diagnosis?",
+        "feedback": "A change in the good's own price changes quantity supplied along a fixed supply curve. A supply increase would require a rightward shift of the entire curve.",
+        "sourceHash": "a7515f51d86a19ffb41a8a5a58682b797d01ef9f4aaf26127f2950386d5169d0"
+      },
+      "after": {
+        "q": "Refer to the graph. A producer says the move from A to B proves that supply increased by 125 thousand units. What is the correct diagnosis?",
+        "feedback": "A change in the good's own price changes quantity supplied along a fixed supply curve. A supply increase would require a rightward shift of the entire curve.",
+        "sourceHash": "30228dc8ad7663797ddf542220c8aefc306a5cddd574466dbd14735524e7ecf8"
+      }
+    },
+    {
+      "id": "PG1-EQ-M-002",
+      "conceptId": "market-equilibrium",
+      "pool": "medium",
+      "reason": "Replace unnatural graph language with standard market terminology.",
+      "before": {
+        "q": "Read the gas market at $4 per gallon. Is the market short, long, or exactly balanced, and by how much?",
+        "feedback": "At $4, quantity supplied is 200 thousand and quantity demanded is 100 thousand, so the surplus is 100 thousand gallons.",
+        "sourceHash": "c86e038a04cd7df2293126c4d7589bc41202523708340dc7e4ded70f56a34abc"
+      },
+      "after": {
+        "q": "Refer to the graph. At $4 per gallon, does the gas market have a shortage, a surplus, or equilibrium, and by how much?",
+        "feedback": "At $4, quantity supplied is 200 thousand and quantity demanded is 100 thousand, so the surplus is 100 thousand gallons.",
+        "sourceHash": "082f6054ffcfbe85c6ee2d4cc9efeec6a2ec97f8c4de32fb59285d1fda9f90c7"
+      }
+    },
+    {
+      "id": "40012",
+      "conceptId": "market-equilibrium",
+      "pool": "hard",
+      "reason": "Identify both equilibrium dimensions and explicitly invoke the graph.",
+      "before": {
+        "q": "How does equilibrium change from A to B?",
+        "feedback": "The quantity effects offset while price rises from 10 to 14 dollars.",
+        "sourceHash": "8a3bbda9e2bcda0fb91abff9c716f8693d0b77c811d0883aab9e1d7bf66b3277"
+      },
+      "after": {
+        "q": "Refer to the graph. How do equilibrium price and quantity change from A to B?",
+        "feedback": "The quantity effects offset while price rises from 10 to 14 dollars.",
+        "sourceHash": "cb1d732c3b842c97be003abf6efc58c43e3a30e67119ebfd830dfc48aab03c7d"
+      }
+    },
+    {
+      "id": "40013",
+      "conceptId": "market-equilibrium",
+      "pool": "elite",
+      "reason": "Make the comparison and its visual evidence explicit.",
+      "before": {
+        "q": "Which statement distinguishes the general prediction from this result?",
+        "feedback": "Demand up and supply down reinforce price but oppose in quantity.",
+        "sourceHash": "b4eb263b9e963ea18a457f04a2ca21e747873946f99ba7158ee396d2e0e67211"
+      },
+      "after": {
+        "q": "Refer to the graph. Which statement distinguishes the general prediction for these simultaneous shifts from the particular outcome shown?",
+        "feedback": "Demand up and supply down reinforce price but oppose in quantity.",
+        "sourceHash": "534c125da7db0328dce02170394bf027be3ac56ab42473404bead93a55cf8c0a"
+      }
+    },
+    {
+      "id": "40016",
+      "conceptId": "market-equilibrium",
+      "pool": "elite",
+      "reason": "Explicitly connect the simultaneous-shift comparison to the graph.",
+      "before": {
+        "q": "From D to B, demand rises and supply falls. What do the equilibria show?",
+        "feedback": "Opposing quantity effects cancel; both shifts raise price.",
+        "sourceHash": "bb58e6e091f3bf469b5a2d54dc33a49291381c0aedba9bb40acccf5a1cc1cd80"
+      },
+      "after": {
+        "q": "Refer to the graph. From D to B, demand rises and supply falls. What do the two equilibria show?",
+        "feedback": "Opposing quantity effects cancel; both shifts raise price.",
+        "sourceHash": "8bbbe613809e01af65f03ddcedf3ba8e104a614607806af0bd8ad2912d373859"
+      }
+    },
+    {
+      "id": "40017",
+      "conceptId": "market-equilibrium",
+      "pool": "elite",
+      "reason": "Replace the known awkward construction and explain why the shift order does not change the final intersection.",
+      "before": {
+        "q": "Whether the market passes through A or C, why is B the same final equilibrium?",
+        "feedback": "Final equilibrium depends on final curves, not the order of shifts.",
+        "sourceHash": "eb4f0016ced85e52e745ba4735307fa7651fc21cccf5abbf5a5045c0d161b100"
+      },
+      "after": {
+        "q": "Refer to the graph. Why is B the final equilibrium regardless of whether demand or supply shifts first?",
+        "feedback": "The final equilibrium is the intersection of D1 and S1, so it depends on the final curves rather than the order of the shifts.",
+        "sourceHash": "b2fb555c77951238abbb36e713eb071f501b41899bbfb06304b49c9f05cf7f8b"
+      }
+    },
+    {
+      "id": "40019",
+      "conceptId": "market-equilibrium",
+      "pool": "elite",
+      "reason": "Replace marker-only feedback with the comparative-statics explanation.",
+      "before": {
+        "q": "What can be concluded about D to B?",
+        "feedback": "B is vertically above D at the same quantity.",
+        "sourceHash": "97c7fb1a0cade040ef54f5c3327b1f1b5cc80615d83272b869840dc79c686828"
+      },
+      "after": {
+        "q": "Refer to the graph. What can be concluded about the move from D to B?",
+        "feedback": "From D to B, the opposing quantity effects cancel while both shifts raise equilibrium price, so quantity is unchanged and price rises.",
+        "sourceHash": "8507bd13eacc284eafb88d3aa7a46c891db6548908c481d3ba0c778d92c4867c"
+      }
+    },
+    {
+      "id": "40020",
+      "conceptId": "market-equilibrium",
+      "pool": "elite",
+      "reason": "Direct the learner to the graph that limits the defensible inference.",
+      "before": {
+        "q": "Because the axes lack numeric ticks, which result remains defensible?",
+        "feedback": "Labels support relative comparisons, not exact numerical changes.",
+        "sourceHash": "5eddc1c12e5d0eea9d95e0cb5eba15d098c525f95aea3a38a7ac7f8585dec6b4"
+      },
+      "after": {
+        "q": "Refer to the graph. Because the axes lack numeric ticks, which result remains defensible?",
+        "feedback": "Labels support relative comparisons, not exact numerical changes.",
+        "sourceHash": "0e0b0e65654ceed17668ddab67f7ac3c25425d6199a1544bf6d623a0bcccc463"
+      }
+    }
+  ]
+}

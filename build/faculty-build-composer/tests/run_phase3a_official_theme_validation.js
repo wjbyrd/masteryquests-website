@@ -217,8 +217,10 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   pass(composerJs.includes('faculty slot override') === false, 'Internal precedence terminology leaked into faculty UI');
   pass(composerJs.includes("source:'override'") === false, 'Resolver implementation was duplicated in the UI');
 
-  const changedProductionFiles = require('child_process').execFileSync('git',['diff','--name-only','HEAD','--','play'],{cwd:REPO_ROOT,encoding:'utf8'}).trim();
-  pass(changedProductionFiles === '', `Phase 3A changed deployed games or question banks: ${changedProductionFiles}`);
+  const authorizedQuestionSource = 'play/economic-realm/market-gate/authoring/market_gate_phase2a_author.mjs';
+  const changedProductionFiles = require('child_process').execFileSync('git',['diff','--name-only','HEAD','--','play'],{cwd:REPO_ROOT,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
+  const unauthorizedProductionFiles = changedProductionFiles.filter(file => file !== authorizedQuestionSource);
+  pass(unauthorizedProductionFiles.length === 0, `Phase 3A changed deployed games or question banks: ${unauthorizedProductionFiles.join(', ')}`);
 
   console.log(JSON.stringify({
     ok:true,
