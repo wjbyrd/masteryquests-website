@@ -5646,12 +5646,14 @@ function getRemediationQuestion(state){
         }
 
         if(state.remediationConceptId){
-            const targeted = repairCandidates.filter(record => record?.primaryConceptId === state.remediationConceptId);
+            const targeted = repairCandidates.filter(record => record?.primaryConceptId === state.remediationConceptId
+                || record?.sourcePrimaryConceptId === state.remediationConceptId);
             if(targeted.length){
                 repairCandidates = targeted;
             } else {
                 const destinationPool = deduplicateQuestions(repairEntries.flatMap(([, pool]) => pool || []))
-                    .filter(record => record?.primaryConceptId === state.remediationConceptId
+                    .filter(record => (record?.primaryConceptId === state.remediationConceptId
+                        || record?.sourcePrimaryConceptId === state.remediationConceptId)
                         && !excludeIds.includes(record?.id ?? record?.questionId));
                 if(destinationPool.length) repairCandidates = destinationPool;
             }
@@ -5692,12 +5694,14 @@ function getRemediationQuestion(state){
         }
 
         if(state.remediationConceptId){
-            const targeted = bridgeCandidates.filter(record => record?.primaryConceptId === state.remediationConceptId);
+            const targeted = bridgeCandidates.filter(record => record?.primaryConceptId === state.remediationConceptId
+                || record?.sourcePrimaryConceptId === state.remediationConceptId);
             if(targeted.length){
                 bridgeCandidates = targeted;
             } else {
                 const destinationPool = deduplicateQuestions(bridgeEntries.flatMap(([, pool]) => pool || []))
-                    .filter(record => record?.primaryConceptId === state.remediationConceptId
+                    .filter(record => (record?.primaryConceptId === state.remediationConceptId
+                        || record?.sourcePrimaryConceptId === state.remediationConceptId)
                         && !excludeIds.includes(record?.id ?? record?.questionId));
                 if(destinationPool.length) bridgeCandidates = destinationPool;
             }

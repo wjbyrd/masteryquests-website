@@ -110,7 +110,7 @@ function run(){
   const adAsSearch = visible('macro','all','AD-AS');
   assert(ppfSearch.some(concept => concept.canonicalConceptId === 'production-possibilities-frontier'), 'PPF alias did not find Production Possibilities Frontier.');
   assert(nashSearch.length === 7 && nashSearch.every(concept => model.navigationFamilyFor(concept.canonicalConceptId,'micro')?.id === 'oligopoly'), 'Nash did not surface the Oligopoly family.');
-  assert(adAsSearch.length === 4 && adAsSearch.every(concept => model.navigationFamilyFor(concept.canonicalConceptId,'macro')?.id === 'ad-as-equilibrium'), 'AD-AS did not surface the aggregate-equilibrium family.');
+  assert(adAsSearch.length === 6 && adAsSearch.every(concept => model.navigationFamilyFor(concept.canonicalConceptId,'macro')?.id === 'ad-as-equilibrium'), 'AD-AS did not surface the aggregate-equilibrium family.');
   pass('N','concept, family, and abbreviation search',{ppfCount:ppfSearch.length,nashCount:nashSearch.length,adAsCount:adAsSearch.length});
 
   const oldGeneral = new Set(Model.GENERAL_AREA_IDS);

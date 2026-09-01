@@ -93,7 +93,12 @@ function runtimeDeckCheck(composition,target){
   const factorMarketIds=new Set(Array.from({length:64},(_,index)=>String(42320+index)));
   const consumerChoiceIds=new Set(Array.from({length:46},(_,index)=>String(42560+index)));
   const inequalityIds=new Set(Array.from({length:42},(_,index)=>String(42720+index)));
-  const savingInvestmentIds=new Set(Object.values(library.concepts["saving-investment-and-loanable-funds"]?.questions||{}).flat().map(q=>String(q.canonicalId||q.id)));
+  const savingInvestmentIds=new Set([
+    'saving-and-investment-identities',
+    'loanable-funds-equilibrium',
+    'loanable-funds-shifts',
+    'crowding-out-and-capital-formation'
+  ].flatMap(conceptId=>Object.values(library.concepts[conceptId]?.questions||{}).flat()).map(q=>String(q.canonicalId||q.id)));
   const qualityAuthorization=JSON.parse(fs.readFileSync(path.resolve(root,'..','..','validation_artifacts','question_quality','supply_demand_equilibrium_audit_authorization.json'),'utf8'));
   const qualityGraphIds=new Set(qualityAuthorization.changes.filter(change=>change.rules.includes('image-without-graph-required')).map(change=>String(change.id)));
   const foundationsAuthorization=JSON.parse(fs.readFileSync(path.resolve(root,'..','..','validation_artifacts','question_quality','foundations_audit_authorization.json'),'utf8'));

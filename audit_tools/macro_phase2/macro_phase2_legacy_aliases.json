@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-01T12:00:00.000Z",
+  "mechanism": "Existing composer-core concept taxonomy migration map, extended for six retired Macro IDs. Old IDs are absent from current cards and modules; imported recipes expand deterministically to current concepts.",
+  "oldSavedSelectionsResolve": true,
+  "supplementCompatibility": "Supplement records remain byte-for-byte unchanged. Legacy required concept IDs are satisfied only when all replacement descendants are selected; moved repair/bridge records retain sourcePrimaryConceptId for legacy remediation targeting.",
+  "aliases": [
+    {
+      "removedFacultyFacingId": "saving-investment-and-loanable-funds",
+      "replacementIds": [
+        "saving-and-investment-identities",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "crowding-out-and-capital-formation"
+      ],
+      "migratedSelectionIds": [
+        "saving-and-investment-identities",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "crowding-out-and-capital-formation"
+      ],
+      "oldQuestionUniverseCount": 160,
+      "resolvedUniqueQuestionUniverseCount": 160,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "federal-budgets-and-debt",
+      "replacementIds": [
+        "budget-accounting-and-public-saving",
+        "deficits-debt-and-government-borrowing",
+        "debt-measures-burden-and-fiscal-data"
+      ],
+      "migratedSelectionIds": [
+        "budget-accounting-and-public-saving",
+        "deficits-debt-and-government-borrowing",
+        "debt-measures-burden-and-fiscal-data"
+      ],
+      "oldQuestionUniverseCount": 108,
+      "resolvedUniqueQuestionUniverseCount": 108,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "bank-money-creation",
+      "replacementIds": [
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier"
+      ],
+      "migratedSelectionIds": [
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier"
+      ],
+      "oldQuestionUniverseCount": 90,
+      "resolvedUniqueQuestionUniverseCount": 90,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "aggregate-supply",
+      "replacementIds": [
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output"
+      ],
+      "migratedSelectionIds": [
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output"
+      ],
+      "oldQuestionUniverseCount": 63,
+      "resolvedUniqueQuestionUniverseCount": 63,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "macroeconomic-equilibrium-and-shocks",
+      "replacementIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "migratedSelectionIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "oldQuestionUniverseCount": 83,
+      "resolvedUniqueQuestionUniverseCount": 132,
+      "selectionResolves": true,
+      "compatibilityBehavior": "SUPERSET_DUE_TO_APPROVED_CHILDREN_DRAWING_FROM_BOTH_LEGACY_POOLS"
+    },
+    {
+      "removedFacultyFacingId": "long-run-macroeconomic-adjustment",
+      "replacementIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "migratedSelectionIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "oldQuestionUniverseCount": 49,
+      "resolvedUniqueQuestionUniverseCount": 63,
+      "selectionResolves": true,
+      "compatibilityBehavior": "SUPERSET_DUE_TO_APPROVED_CHILDREN_DRAWING_FROM_BOTH_LEGACY_POOLS"
+    }
+  ]
+}

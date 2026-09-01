@@ -173,18 +173,24 @@
         'natural-rate-of-unemployment'
       ]),
       family('saving-fiscal-foundations', 'Saving, investment, budgets, and debt', ['loanable funds','deficits','federal debt'], [
-        'saving-investment-and-loanable-funds','federal-budgets-and-debt'
+        'saving-and-investment-identities','loanable-funds-equilibrium',
+        'loanable-funds-shifts','crowding-out-and-capital-formation',
+        'budget-accounting-and-public-saving','deficits-debt-and-government-borrowing',
+        'debt-measures-burden-and-fiscal-data'
       ]),
       family('money-banking-fed', 'Money, banking, and the Federal Reserve', ['fed','central bank','money creation'], [
-        'money-functions-and-measures','central-bank-and-federal-reserve','bank-money-creation',
+        'money-functions-and-measures','central-bank-and-federal-reserve',
+        'bank-balance-sheets-reserves-and-capital','deposit-creation-and-money-multiplier',
         'monetary-policy-tools','monetary-control-limits'
       ]),
       family('money-growth-inflation', 'Money growth, inflation, and neutrality', ['qtm','fisher effect','quantity theory'], [
         'quantity-theory-of-money','monetary-neutrality','fisher-effect','inflation-tax-and-deflation'
       ]),
       family('ad-as-equilibrium', 'Aggregate demand, aggregate supply, and equilibrium', ['ad-as','adas','sras','lras','macro equilibrium'], [
-        'aggregate-demand','aggregate-supply','macroeconomic-equilibrium-and-shocks',
-        'long-run-macroeconomic-adjustment'
+        'aggregate-demand','short-run-aggregate-supply',
+        'long-run-aggregate-supply-and-potential-output',
+        'ad-as-equilibrium-and-output-gaps','demand-and-supply-shocks',
+        'long-run-macroeconomic-self-adjustment'
       ]),
       family('stabilization-policy', 'Stabilization and policy transmission', ['monetary policy','fiscal policy','crowding out','money market'], [
         'liquidity-preference-and-money-market','monetary-policy-transmission',
@@ -213,10 +219,22 @@
     'central-bank-and-federal-reserve':Object.freeze(['fed','federal reserve']),
     'quantity-theory-of-money':Object.freeze(['qtm','mv py']),
     'aggregate-demand':Object.freeze(['ad']),
-    'aggregate-supply':Object.freeze(['as','sras','lras']),
+    'short-run-aggregate-supply':Object.freeze(['as','sras','short run aggregate supply']),
+    'long-run-aggregate-supply-and-potential-output':Object.freeze(['as','lras','potential output','natural output']),
+    'ad-as-equilibrium-and-output-gaps':Object.freeze(['ad-as','adas','output gap','recessionary gap','inflationary gap']),
+    'demand-and-supply-shocks':Object.freeze(['ad-as shocks','demand shock','supply shock','stagflation']),
+    'long-run-macroeconomic-self-adjustment':Object.freeze(['self correction','self adjustment','long run adjustment']),
     'short-run-phillips-curve':Object.freeze(['srpc']),
     'long-run-phillips-curve':Object.freeze(['lrpc']),
-    'saving-investment-and-loanable-funds':Object.freeze(['loanable funds'])
+    'saving-and-investment-identities':Object.freeze(['national saving','private saving','public saving','saving investment identity']),
+    'loanable-funds-equilibrium':Object.freeze(['loanable funds','real interest rate equilibrium']),
+    'loanable-funds-shifts':Object.freeze(['loanable funds shifts']),
+    'crowding-out-and-capital-formation':Object.freeze(['crowding out','capital formation']),
+    'budget-accounting-and-public-saving':Object.freeze(['budget balance','public saving']),
+    'deficits-debt-and-government-borrowing':Object.freeze(['deficit','debt','government borrowing']),
+    'debt-measures-burden-and-fiscal-data':Object.freeze(['debt to gdp','debt service','fiscal data']),
+    'bank-balance-sheets-reserves-and-capital':Object.freeze(['bank balance sheet','required reserves','excess reserves','bank capital','leverage']),
+    'deposit-creation-and-money-multiplier':Object.freeze(['deposit creation','money multiplier','fractional reserve'])
   });
 
   function unique(items){ return [...new Set(items || [])]; }

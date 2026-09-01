@@ -130,7 +130,8 @@ const PRESETS = [
     description: 'Money creation, central banking, monetary tools, inflation, and the value of money.',
     conceptIds: [
       'money-functions-and-measures', 'central-bank-and-federal-reserve',
-      'bank-money-creation', 'monetary-policy-tools', 'monetary-control-limits',
+      'bank-balance-sheets-reserves-and-capital', 'deposit-creation-and-money-multiplier',
+      'monetary-policy-tools', 'monetary-control-limits',
       'quantity-theory-of-money', 'monetary-neutrality', 'fisher-effect',
       'inflation-costs', 'inflation-tax-and-deflation'
     ]
@@ -143,8 +144,10 @@ const PRESETS = [
     conceptIds: [
       'liquidity-preference-and-money-market', 'monetary-policy-transmission',
       'fiscal-policy-and-aggregate-demand', 'fiscal-multipliers-and-crowding-out',
-      'stabilization-policy', 'aggregate-demand', 'aggregate-supply',
-      'macroeconomic-equilibrium-and-shocks', 'long-run-macroeconomic-adjustment',
+      'stabilization-policy', 'aggregate-demand', 'short-run-aggregate-supply',
+      'long-run-aggregate-supply-and-potential-output',
+      'ad-as-equilibrium-and-output-gaps', 'demand-and-supply-shocks',
+      'long-run-macroeconomic-self-adjustment',
       'short-run-phillips-curve', 'long-run-phillips-curve',
       'phillips-curve-expectations', 'disinflation-and-policy', 'sacrifice-ratio',
     ]

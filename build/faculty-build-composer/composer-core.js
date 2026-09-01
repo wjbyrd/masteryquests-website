@@ -843,7 +843,7 @@ function resolveConceptReviews(library, manifest, selectedConceptIds){
   const errors = [...validation.errors];
   const warnings = [...validation.warnings];
   const {reviewByCode, conceptById} = conceptReviewManifestMaps(manifest);
-  const selectedIds = uniqueStrings(selectedConceptIds || []);
+  const selectedIds = migrateConceptSelectionIds(selectedConceptIds || []);
   const diagnosticSet = new Set();
 
   const addDiagnostic = id => {
@@ -1162,6 +1162,34 @@ const LEGACY_CONCEPT_SELECTION_MIGRATIONS = Object.freeze({
     'public-goods-and-common-resources',
     'market-power',
     'market-failures'
+  ]),
+  'saving-investment-and-loanable-funds':Object.freeze([
+    'saving-and-investment-identities',
+    'loanable-funds-equilibrium',
+    'loanable-funds-shifts',
+    'crowding-out-and-capital-formation'
+  ]),
+  'federal-budgets-and-debt':Object.freeze([
+    'budget-accounting-and-public-saving',
+    'deficits-debt-and-government-borrowing',
+    'debt-measures-burden-and-fiscal-data'
+  ]),
+  'bank-money-creation':Object.freeze([
+    'bank-balance-sheets-reserves-and-capital',
+    'deposit-creation-and-money-multiplier'
+  ]),
+  'aggregate-supply':Object.freeze([
+    'short-run-aggregate-supply',
+    'long-run-aggregate-supply-and-potential-output'
+  ]),
+  'macroeconomic-equilibrium-and-shocks':Object.freeze([
+    'ad-as-equilibrium-and-output-gaps',
+    'demand-and-supply-shocks',
+    'long-run-macroeconomic-self-adjustment'
+  ]),
+  'long-run-macroeconomic-adjustment':Object.freeze([
+    'ad-as-equilibrium-and-output-gaps',
+    'long-run-macroeconomic-self-adjustment'
   ])
 });
 
@@ -1174,10 +1202,14 @@ function migrateRecipe(recipe, library, themeLibrary){
   const sourceSelectedConceptIds = uniqueStrings(source.selectedConceptIds || source.concepts || []);
   const selectedConceptIds = migrateConceptSelectionIds(sourceSelectedConceptIds);
   const migrationWarnings = [];
-  if(sourceSelectedConceptIds.some(id => LEGACY_CONCEPT_SELECTION_MIGRATIONS[id])){
+  const migratedTaxonomyIds = sourceSelectedConceptIds.filter(id => LEGACY_CONCEPT_SELECTION_MIGRATIONS[id]);
+  if(migratedTaxonomyIds.length){
     migrationWarnings.push({
       type:'concept-taxonomy-migration',
-      message:'The legacy Market Failures selection was expanded into Externalities, Public Goods and Common Resources, and Market Power while retaining hidden compatibility support for its remaining general questions.'
+      migratedConceptIds:migratedTaxonomyIds,
+      message:migratedTaxonomyIds.includes('market-failures')
+        ? 'The legacy Market Failures selection was expanded into Externalities, Public Goods and Common Resources, and Market Power while retaining hidden compatibility support for its remaining general questions.'
+        : 'One or more retired Principles Macro selections were deterministically expanded into their current child concepts.'
     });
   }
   const customAssets = canonicalCustomAssets(source.customAssets, themeLibrary);
@@ -1270,7 +1302,7 @@ function validateRecipeShape(library, recipe){
   if(!modes.length) errors.push('Select at least one supported mode.');
 
   for(const id of selected){
-    if(!library?.concepts?.[id]) errors.push(`Unknown concept: ${id}`);
+    if(!library?.concepts?.[id] && !LEGACY_CONCEPT_SELECTION_MIGRATIONS[id]) errors.push(`Unknown concept: ${id}`);
   }
 
   const selectedSet = new Set(selected);
@@ -1376,7 +1408,12 @@ function compose(library, inputRecipe){
     for(const question of candidates){
       if(!question?.isCheckpointChallenge) continue;
       const required = Array.isArray(question.requiredConceptIds) ? question.requiredConceptIds : [];
-      if(required.length && !required.every(id => selectedInstructionSet.has(id))) continue;
+      if(required.length && !required.every(id => {
+        const replacements = LEGACY_CONCEPT_SELECTION_MIGRATIONS[id];
+        return replacements
+          ? replacements.every(replacementId => selectedInstructionSet.has(replacementId))
+          : selectedInstructionSet.has(id);
+      })) continue;
       const pool = challengeStagePool[question.challengeStage];
       if(!pool) continue;
       challengeQuestionBanks[pool].push(cloneQuestion(question, module.canonicalConceptId, module.assetConceptId || module.canonicalConceptId));

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T19:00:00.000Z",
+  "generatedAt": "2026-09-01T12:00:00.000Z",
   "schemaVersion": "1.0.0",
   "sourceLibrary": {
     "countByDiscipline": {
@@ -7,7 +7,7 @@
       "macro": 41,
       "micro": 68
     },
-    "manifestSha256": "bbeead410521c386657aecdcf92dba1b4d18e0569fdec1c5e084239355c4e965",
+    "manifestSha256": "17ea9e585ed327a9befd6688486fd066600817f5e0fa2339972e66daf671af76",
     "pdfCount": 135,
     "totalPdfBytes": 65131021
   },
@@ -337,24 +337,26 @@
         "questionCount": 919
       },
       "case": "E",
-      "diagnosticClosureSize": 14,
+      "diagnosticClosureSize": 16,
       "diagnosticConceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
         "aggregate-demand",
-        "aggregate-supply",
+        "demand-and-supply-shocks",
         "disinflation-and-policy",
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "liquidity-preference-and-money-market",
-        "long-run-macroeconomic-adjustment",
+        "long-run-aggregate-supply-and-potential-output",
+        "long-run-macroeconomic-self-adjustment",
         "long-run-phillips-curve",
-        "macroeconomic-equilibrium-and-shocks",
         "monetary-policy-transmission",
         "phillips-curve-expectations",
         "sacrifice-ratio",
+        "short-run-aggregate-supply",
         "short-run-phillips-curve",
         "stabilization-policy"
       ],
-      "generatedPackageBytes": 147961,
+      "generatedPackageBytes": 152097,
       "name": "macro-stabilization-starter",
       "questionCount": 919,
       "referencedPdfBytes": 7905449,
@@ -375,7 +377,7 @@
         "MACRO-41"
       ],
       "reviewPdfCount": 14,
-      "runtimeManifestBytes": 147961,
+      "runtimeManifestBytes": 152097,
       "selectedConceptCount": 14,
       "selectedConceptIds": [
         "liquidity-preference-and-money-market",
@@ -414,15 +416,16 @@
         "questionCount": 9427
       },
       "case": "F",
-      "diagnosticClosureSize": 133,
+      "diagnosticClosureSize": 141,
       "diagnosticConceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
         "aggregate-demand",
-        "aggregate-supply",
         "applications-of-elasticity",
         "average-costs",
-        "bank-money-creation",
+        "bank-balance-sheets-reserves-and-capital",
         "binding-price-ceilings",
         "binding-price-floors",
+        "budget-accounting-and-public-saving",
         "central-bank-and-federal-reserve",
         "competitive-efficiency-limits",
         "competitive-entry-exit-long-run",
@@ -442,7 +445,12 @@
         "cpi-bias",
         "cpi-versus-gdp-deflator",
         "cross-price-elasticity-of-demand",
+        "crowding-out-and-capital-formation",
+        "debt-measures-burden-and-fiscal-data",
+        "deficits-debt-and-government-borrowing",
         "demand",
+        "demand-and-supply-shocks",
+        "deposit-creation-and-money-multiplier",
         "disinflation-and-policy",
         "economic-costs",
         "economic-growth-policy",
@@ -453,7 +461,6 @@
         "elasticity-and-total-revenue",
         "externalities",
         "factor-markets",
-        "federal-budgets-and-debt",
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "fisher-effect",
@@ -474,10 +481,12 @@
         "limits-of-gdp",
         "liquidity-preference-and-money-market",
         "living-standards-and-growth",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "long-run-aggregate-supply-and-potential-output",
         "long-run-average-cost-scale",
-        "long-run-macroeconomic-adjustment",
+        "long-run-macroeconomic-self-adjustment",
         "long-run-phillips-curve",
-        "macroeconomic-equilibrium-and-shocks",
         "marginal-analysis",
         "marginal-cost-production-linkages",
         "market-equilibrium",
@@ -528,8 +537,9 @@
         "real-versus-nominal-gdp",
         "real-versus-nominal-interest-rates",
         "sacrifice-ratio",
-        "saving-investment-and-loanable-funds",
+        "saving-and-investment-identities",
         "scarcity-and-tradeoffs",
+        "short-run-aggregate-supply",
         "short-run-cost-curves",
         "short-run-phillips-curve",
         "short-run-production",
@@ -550,7 +560,7 @@
         "unemployment-measurement",
         "unemployment-types"
       ],
-      "generatedPackageBytes": 1396355,
+      "generatedPackageBytes": 1411263,
       "name": "large-all-top-level-concepts",
       "questionCount": 9427,
       "referencedPdfBytes": 64777418,
@@ -691,14 +701,15 @@
         "MICRO-68"
       ],
       "reviewPdfCount": 134,
-      "runtimeManifestBytes": 1396355,
-      "selectedConceptCount": 80,
+      "runtimeManifestBytes": 1411263,
+      "selectedConceptCount": 88,
       "selectedConceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
         "aggregate-demand",
-        "aggregate-supply",
-        "bank-money-creation",
+        "bank-balance-sheets-reserves-and-capital",
         "binding-price-ceilings",
         "binding-price-floors",
+        "budget-accounting-and-public-saving",
         "central-bank-and-federal-reserve",
         "competitive-markets",
         "consumer-and-producer-surplus",
@@ -707,14 +718,18 @@
         "cpi-and-inflation-measurement",
         "cpi-bias",
         "cpi-versus-gdp-deflator",
+        "crowding-out-and-capital-formation",
+        "debt-measures-burden-and-fiscal-data",
+        "deficits-debt-and-government-borrowing",
         "demand",
+        "demand-and-supply-shocks",
+        "deposit-creation-and-money-multiplier",
         "disinflation-and-policy",
         "economic-growth-policy",
         "economist-policy-role",
         "elasticity",
         "externalities",
         "factor-markets",
-        "federal-budgets-and-debt",
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "fisher-effect",
@@ -733,9 +748,11 @@
         "limits-of-gdp",
         "liquidity-preference-and-money-market",
         "living-standards-and-growth",
-        "long-run-macroeconomic-adjustment",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "long-run-aggregate-supply-and-potential-output",
+        "long-run-macroeconomic-self-adjustment",
         "long-run-phillips-curve",
-        "macroeconomic-equilibrium-and-shocks",
         "marginal-analysis",
         "market-equilibrium",
         "market-failures",
@@ -763,8 +780,9 @@
         "real-versus-nominal-gdp",
         "real-versus-nominal-interest-rates",
         "sacrifice-ratio",
-        "saving-investment-and-loanable-funds",
+        "saving-and-investment-identities",
         "scarcity-and-tradeoffs",
+        "short-run-aggregate-supply",
         "short-run-phillips-curve",
         "sources-of-productivity",
         "stabilization-policy",
@@ -830,6 +848,10 @@
       "ok": true,
       "warnings": [
         {
+          "canonicalConceptId": "budget-accounting-and-public-saving",
+          "type": "diagnosable-no-sheet-meta"
+        },
+        {
           "canonicalConceptId": "consumer-and-producer-surplus",
           "type": "diagnosable-parent-covered-by-children"
         },
@@ -838,12 +860,20 @@
           "type": "diagnosable-parent-covered-by-children"
         },
         {
-          "canonicalConceptId": "elasticity",
-          "type": "diagnosable-parent-covered-by-children"
+          "canonicalConceptId": "crowding-out-and-capital-formation",
+          "type": "diagnosable-no-sheet-meta"
         },
         {
-          "canonicalConceptId": "federal-budgets-and-debt",
+          "canonicalConceptId": "debt-measures-burden-and-fiscal-data",
           "type": "diagnosable-no-sheet-meta"
+        },
+        {
+          "canonicalConceptId": "deficits-debt-and-government-borrowing",
+          "type": "diagnosable-no-sheet-meta"
+        },
+        {
+          "canonicalConceptId": "elasticity",
+          "type": "diagnosable-parent-covered-by-children"
         },
         {
           "canonicalConceptId": "integrated-economic-analysis",
@@ -852,6 +882,14 @@
         {
           "canonicalConceptId": "international-trade-and-trade-policy",
           "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "loanable-funds-equilibrium",
+          "type": "diagnosable-no-sheet-meta"
+        },
+        {
+          "canonicalConceptId": "loanable-funds-shifts",
+          "type": "diagnosable-no-sheet-meta"
         },
         {
           "canonicalConceptId": "monopolistic-competition",
@@ -870,7 +908,7 @@
           "type": "diagnosable-parent-covered-by-children"
         },
         {
-          "canonicalConceptId": "saving-investment-and-loanable-funds",
+          "canonicalConceptId": "saving-and-investment-identities",
           "type": "diagnosable-no-sheet-meta"
         },
         {

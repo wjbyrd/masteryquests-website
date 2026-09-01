@@ -4,8 +4,8 @@
   "count": 36,
   "corrections": [
     {
-      "canonicalConceptId": "economic-costs",
-      "displayName": "Economic Costs: Explicit, Implicit & Opportunity Cost",
+      "canonicalConceptId": "average-costs",
+      "displayName": "Average Costs: AFC, AVC & ATC",
       "oldAreas": [
         "macro"
       ],
@@ -15,26 +15,92 @@
       "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "profit-concepts",
-      "displayName": "Accounting, Economic & Normal Profit",
+      "canonicalConceptId": "competitive-efficiency-limits",
+      "displayName": "Competitive Efficiency & Model Limits",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "short-run-production",
-      "displayName": "Short-Run Production & Diminishing Marginal Product",
+      "canonicalConceptId": "competitive-entry-exit-long-run",
+      "displayName": "Entry, Exit & Long-Run Equilibrium",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "competitive-industry-cost-conditions",
+      "displayName": "Long-Run Industry Supply & Cost Conditions",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "competitive-market-price-taking-revenue",
+      "displayName": "Market Structure, Price Taking & Firm Revenue",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "competitive-output-choice",
+      "displayName": "Profit-Maximizing Output & the MR = MC Rule",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "competitive-profit-loss",
+      "displayName": "Profit, Loss & Break-Even",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "competitive-short-run-supply",
+      "displayName": "Short-Run Supply & Cost Shifts",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "competitive-shutdown",
+      "displayName": "Shutdown & Short-Run Loss Minimization",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
       "canonicalConceptId": "cost-components-schedules",
@@ -48,41 +114,8 @@
       "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "average-costs",
-      "displayName": "Average Costs: AFC, AVC & ATC",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "marginal-cost-production-linkages",
-      "displayName": "Marginal Cost & Production–Cost Linkages",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "short-run-cost-curves",
-      "displayName": "Short-Run Cost Curves: Relationships & Shifts",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "sunk-avoidable-costs",
-      "displayName": "Sunk & Avoidable Costs",
+      "canonicalConceptId": "economic-costs",
+      "displayName": "Economic Costs: Explicit, Implicit & Opportunity Cost",
       "oldAreas": [
         "macro"
       ],
@@ -103,8 +136,8 @@
       "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "minimum-efficient-scale",
-      "displayName": "Minimum Efficient Scale & Constant Returns to Scale",
+      "canonicalConceptId": "marginal-cost-production-linkages",
+      "displayName": "Marginal Cost & Production–Cost Linkages",
       "oldAreas": [
         "macro"
       ],
@@ -112,39 +145,6 @@
         "micro"
       ],
       "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "mcomp-structure-differentiation",
-      "displayName": "Market Structure & Product Differentiation",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "mcomp-short-run-choice",
-      "displayName": "Short-Run Firm Choice, Profit/Loss & Shutdown",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "mcomp-entry-exit-long-run",
-      "displayName": "Entry, Exit & Long-Run Equilibrium",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
       "canonicalConceptId": "mcomp-advertising-nonprice",
@@ -169,15 +169,48 @@
       "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "monopoly-power-barriers",
-      "displayName": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "canonicalConceptId": "mcomp-entry-exit-long-run",
+      "displayName": "Entry, Exit & Long-Run Equilibrium",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Monopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "mcomp-short-run-choice",
+      "displayName": "Short-Run Firm Choice, Profit/Loss & Shutdown",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "mcomp-structure-differentiation",
+      "displayName": "Market Structure & Product Differentiation",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Monopolistic Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "minimum-efficient-scale",
+      "displayName": "Minimum Efficient Scale & Constant Returns to Scale",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
       "canonicalConceptId": "monopoly-demand-revenue",
@@ -193,6 +226,28 @@
     {
       "canonicalConceptId": "monopoly-output-price",
       "displayName": "Profit-Maximizing Output & Monopoly Price",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Monopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "monopoly-power-barriers",
+      "displayName": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Monopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "monopoly-price-discrimination",
+      "displayName": "Price Discrimination",
       "oldAreas": [
         "macro"
       ],
@@ -235,39 +290,6 @@
       "reason": "Child of the Microeconomics-only Monopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "monopoly-price-discrimination",
-      "displayName": "Price Discrimination",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Monopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "oligopoly-structure-concentration",
-      "displayName": "Oligopoly Structure, Strategic Interdependence & Concentration",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Oligopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "oligopoly-game-theory-foundations",
-      "displayName": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Oligopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
       "canonicalConceptId": "oligopoly-collusion-cartels",
       "displayName": "Collusion, Cartels & Prisoner’s-Dilemma Incentives",
       "oldAreas": [
@@ -290,8 +312,30 @@
       "reason": "Child of the Microeconomics-only Oligopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
+      "canonicalConceptId": "oligopoly-game-theory-foundations",
+      "displayName": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Oligopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
       "canonicalConceptId": "oligopoly-rivalry-coordination",
       "displayName": "Tacit Coordination, Price Leadership & Nonprice Competition",
+      "oldAreas": [
+        "macro"
+      ],
+      "newAreas": [
+        "micro"
+      ],
+      "reason": "Child of the Microeconomics-only Oligopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+    },
+    {
+      "canonicalConceptId": "oligopoly-structure-concentration",
+      "displayName": "Oligopoly Structure, Strategic Interdependence & Concentration",
       "oldAreas": [
         "macro"
       ],
@@ -312,92 +356,48 @@
       "reason": "Child of the Microeconomics-only Oligopoly family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "competitive-market-price-taking-revenue",
-      "displayName": "Market Structure, Price Taking & Firm Revenue",
+      "canonicalConceptId": "profit-concepts",
+      "displayName": "Accounting, Economic & Normal Profit",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "competitive-output-choice",
-      "displayName": "Profit-Maximizing Output & the MR = MC Rule",
+      "canonicalConceptId": "short-run-cost-curves",
+      "displayName": "Short-Run Cost Curves: Relationships & Shifts",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "competitive-profit-loss",
-      "displayName": "Profit, Loss & Break-Even",
+      "canonicalConceptId": "short-run-production",
+      "displayName": "Short-Run Production & Diminishing Marginal Product",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     },
     {
-      "canonicalConceptId": "competitive-shutdown",
-      "displayName": "Shutdown & Short-Run Loss Minimization",
+      "canonicalConceptId": "sunk-avoidable-costs",
+      "displayName": "Sunk & Avoidable Costs",
       "oldAreas": [
         "macro"
       ],
       "newAreas": [
         "micro"
       ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "competitive-short-run-supply",
-      "displayName": "Short-Run Supply & Cost Shifts",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "competitive-entry-exit-long-run",
-      "displayName": "Entry, Exit & Long-Run Equilibrium",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "competitive-industry-cost-conditions",
-      "displayName": "Long-Run Industry Supply & Cost Conditions",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
-    },
-    {
-      "canonicalConceptId": "competitive-efficiency-limits",
-      "displayName": "Competitive Efficiency & Model Limits",
-      "oldAreas": [
-        "macro"
-      ],
-      "newAreas": [
-        "micro"
-      ],
-      "reason": "Child of the Microeconomics-only Perfect Competition family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
+      "reason": "Child of the Microeconomics-only Costs of Production family; inherited the legacy Macro fallback because it was absent from the hard-coded Micro set."
     }
   ]
 }

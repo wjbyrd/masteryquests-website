@@ -5,6 +5,9 @@ const os = require('os');
 const path = require('path');
 const {spawnSync} = require('child_process');
 
+// Historical pool-publication validators remain available as immutable release
+// proofs pinned to the prior 135-concept snapshot. They are not forward
+// regressions after Macro Phase 2; its runner validates the exact partitions.
 const ACTIVE_RUNNERS = [
   'run_default_character_set_validation.js',
   'run_exam_navigation_boss_reveal_validation.js',
@@ -16,17 +19,7 @@ const ACTIVE_RUNNERS = [
   'run_phase3b_custom_asset_validation.js',
   'run_phase3e_graph_question_sync_validation.mjs',
   'run_question_quality_auditor_validation.mjs',
-  'run_externalities_question_pool_validation.mjs',
-  'run_externalities_copy_taxonomy_repair_validation.mjs',
-  'run_public_goods_common_resources_question_pool_validation.mjs',
-  'run_factor_markets_question_pool_validation.mjs',
-  'run_remaining_principles_micro_question_pool_validation.mjs',
-  'run_remaining_micro_manual_audit_validation.mjs',
-  'run_federal_budgets_debt_question_pool_validation.mjs',
-  'run_federal_budgets_debt_answer_length_validation.mjs',
-  'run_saving_investment_loanable_funds_question_pool_validation.mjs',
-  'run_saving_investment_loanable_funds_high_difficulty_validation.mjs',
-  'run_saving_investment_loanable_funds_answer_length_validation.mjs',
+  'run_macro_phase2_taxonomy_validation.mjs',
   'run_checkpoint_remediation_design_change_validation.mjs',
   'run_concept_review_integration.js',
   'run_mastery_report_concept_reviews.js',
