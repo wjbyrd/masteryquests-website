@@ -1,0 +1,1773 @@
+{
+  "schemaVersion": "1.0.0",
+  "analysisDate": "2026-09-01",
+  "summary": {
+    "currentMacroReviewPdfs": 41,
+    "currentMacroChildConcepts": 43,
+    "currentChildrenWithDedicatedReview": 41,
+    "currentChildrenWithoutReview": 2,
+    "orphanMacroReviewPdfs": 0,
+    "recommendedChildren": 51,
+    "recommendedChildrenNeedingNewOrRevisedResource": 14
+  },
+  "current": [
+    {
+      "familyConceptId": "gdp-national-income",
+      "canonicalConceptId": "gdp-measurement",
+      "displayName": "GDP Measurement",
+      "reviewCodes": [
+        "MACRO-01"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-01",
+          "pdfPath": "MACRO-01.pdf",
+          "title": "GDP Measurement",
+          "sha256": "5e0479e0e24bc9c340c108eaf2124ddd03e44e64ad93fcaa1dcf06589a7aec8e"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "gdp-national-income",
+      "canonicalConceptId": "gdp-components",
+      "displayName": "GDP Components",
+      "reviewCodes": [
+        "MACRO-02"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-02",
+          "pdfPath": "MACRO-02.pdf",
+          "title": "GDP Components",
+          "sha256": "f177ce7623c18c1fe03bb22034922619b45e5c60f9e65e912227ba1809719856"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "gdp-national-income",
+      "canonicalConceptId": "real-versus-nominal-gdp",
+      "displayName": "Real versus Nominal GDP",
+      "reviewCodes": [
+        "MACRO-03"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-03",
+          "pdfPath": "MACRO-03.pdf",
+          "title": "Real versus Nominal GDP",
+          "sha256": "3633a38d91344c53c3d35c749276e06048ebd4d1b56f2137d09e143915ca0f4b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "gdp-national-income",
+      "canonicalConceptId": "limits-of-gdp",
+      "displayName": "Limits of GDP",
+      "reviewCodes": [
+        "MACRO-04"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-04",
+          "pdfPath": "MACRO-04.pdf",
+          "title": "Limits of GDP",
+          "sha256": "6f2600f7edc7b57972262987f15ccbbb7d81b8c04783f4f2a556b3041dba4ae2"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "canonicalConceptId": "cpi-and-inflation-measurement",
+      "displayName": "CPI and Inflation Measurement",
+      "reviewCodes": [
+        "MACRO-05"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-05",
+          "pdfPath": "MACRO-05.pdf",
+          "title": "CPI and Inflation Measurement",
+          "sha256": "1421f034c9ad78305f5ba8c5b8255e85dc7ad2f80326d63523f3304bf5337245"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "canonicalConceptId": "cpi-bias",
+      "displayName": "CPI Bias",
+      "reviewCodes": [
+        "MACRO-06"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-06",
+          "pdfPath": "MACRO-06.pdf",
+          "title": "CPI Bias",
+          "sha256": "50caf2c4afea6a86ba6b7844719319b1a71c1ce58af9e814f68efd4d2e4cbcd4"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "canonicalConceptId": "cpi-versus-gdp-deflator",
+      "displayName": "CPI versus GDP Deflator",
+      "reviewCodes": [
+        "MACRO-07"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-07",
+          "pdfPath": "MACRO-07.pdf",
+          "title": "CPI versus GDP Deflator",
+          "sha256": "46be6f9a77d1e1bcce79f5f90708b9761cbd74d08487b8d53b3c000e1941dc2b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "canonicalConceptId": "indexing-and-real-values",
+      "displayName": "Indexing and Real Values",
+      "reviewCodes": [
+        "MACRO-08"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-08",
+          "pdfPath": "MACRO-08.pdf",
+          "title": "Indexing and Real Values",
+          "sha256": "17efdf5304c1008b923aee8e528f8bd656a7234817b20b701ef783f3f28390f4"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "canonicalConceptId": "real-versus-nominal-interest-rates",
+      "displayName": "Real versus Nominal Interest Rates",
+      "reviewCodes": [
+        "MACRO-09"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-09",
+          "pdfPath": "MACRO-09.pdf",
+          "title": "Real versus Nominal Interest Rates",
+          "sha256": "5458c87b8334d711a95cc61fe86d6e7e917e74bb77d2b93ff63237afb4bb43f0"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "canonicalConceptId": "inflation-costs",
+      "displayName": "Costs of Inflation",
+      "reviewCodes": [
+        "MACRO-26"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-26",
+          "pdfPath": "MACRO-26.pdf",
+          "title": "Costs of Inflation",
+          "sha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "canonicalConceptId": "living-standards-and-growth",
+      "displayName": "Living Standards and Growth",
+      "reviewCodes": [
+        "MACRO-10"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-10",
+          "pdfPath": "MACRO-10.pdf",
+          "title": "Living Standards and Growth",
+          "sha256": "f7a02aa89ccfd652da279d8461479435e69f49bfa8b88d8f1030b20a6ed846a9"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "canonicalConceptId": "productivity-measurement",
+      "displayName": "Productivity Measurement",
+      "reviewCodes": [
+        "MACRO-11"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-11",
+          "pdfPath": "MACRO-11.pdf",
+          "title": "Productivity Measurement",
+          "sha256": "832d18db2cdbbf439943118a876cbd2e8e381a77aeafc24c5fc65b6d0933fe8e"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "canonicalConceptId": "sources-of-productivity",
+      "displayName": "Sources of Productivity",
+      "reviewCodes": [
+        "MACRO-12"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-12",
+          "pdfPath": "MACRO-12.pdf",
+          "title": "Sources of Productivity",
+          "sha256": "2d5828179aaa62db831aba30f596f8f2bc62b3bcbd58beebe66a26a2825d24b1"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "canonicalConceptId": "economic-growth-policy",
+      "displayName": "Economic Growth Policy",
+      "reviewCodes": [
+        "MACRO-13"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-13",
+          "pdfPath": "MACRO-13.pdf",
+          "title": "Economic Growth Policy",
+          "sha256": "49d256cf53848968f3dce266a3fbeda024a31b803153cda9504a69c0dba67081"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "canonicalConceptId": "unemployment-measurement",
+      "displayName": "Unemployment Measurement",
+      "reviewCodes": [
+        "MACRO-14"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-14",
+          "pdfPath": "MACRO-14.pdf",
+          "title": "Unemployment Measurement",
+          "sha256": "493f14d337903b8e8186823c39464b399a512851b8d96a2eae4fa667eecdc69b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "canonicalConceptId": "unemployment-types",
+      "displayName": "Types of Unemployment",
+      "reviewCodes": [
+        "MACRO-15"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-15",
+          "pdfPath": "MACRO-15.pdf",
+          "title": "Types of Unemployment",
+          "sha256": "01325f624cbd4c0380f273201f273ca83d4ec73e4e1d30c84eaa3bc230a168cb"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "canonicalConceptId": "labor-market-institutions",
+      "displayName": "Labor-Market Institutions",
+      "reviewCodes": [
+        "MACRO-16"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-16",
+          "pdfPath": "MACRO-16.pdf",
+          "title": "Labor-Market Institutions",
+          "sha256": "4b8dfa63d28fcf00c2e9a334637f68c109a2c02ca6646f60a9afa7fc4a11d712"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "canonicalConceptId": "natural-rate-of-unemployment",
+      "displayName": "Natural Rate of Unemployment",
+      "reviewCodes": [
+        "MACRO-17"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-17",
+          "pdfPath": "MACRO-17.pdf",
+          "title": "Natural Rate of Unemployment",
+          "sha256": "6d3f90895f03cdf47ce6911d072f5b7f3bf81f3c3176597a64ab07d59c058d8b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "canonicalConceptId": "saving-investment-and-loanable-funds",
+      "displayName": "Saving, Investment & Loanable Funds",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META",
+      "dedicated": false,
+      "resourceDetails": []
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "canonicalConceptId": "federal-budgets-and-debt",
+      "displayName": "Federal Budgets & Debt",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META",
+      "dedicated": false,
+      "resourceDetails": []
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "canonicalConceptId": "money-functions-and-measures",
+      "displayName": "Money Functions and Measures",
+      "reviewCodes": [
+        "MACRO-18"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-18",
+          "pdfPath": "MACRO-18.pdf",
+          "title": "Money Functions and Measures",
+          "sha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "canonicalConceptId": "central-bank-and-federal-reserve",
+      "displayName": "Central Banking and the Federal Reserve",
+      "reviewCodes": [
+        "MACRO-19"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-19",
+          "pdfPath": "MACRO-19.pdf",
+          "title": "Central Banking and the Federal Reserve",
+          "sha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "canonicalConceptId": "bank-money-creation",
+      "displayName": "Bank Money Creation",
+      "reviewCodes": [
+        "MACRO-20"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-20",
+          "pdfPath": "MACRO-20.pdf",
+          "title": "Bank Money Creation",
+          "sha256": "20f7b1daeaec37ad8a87c5960506905a9fc2f17808c398dbfc774031b11e782e"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "canonicalConceptId": "monetary-policy-tools",
+      "displayName": "Monetary-Policy Tools",
+      "reviewCodes": [
+        "MACRO-21"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-21",
+          "pdfPath": "MACRO-21.pdf",
+          "title": "Monetary-Policy Tools",
+          "sha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "canonicalConceptId": "monetary-control-limits",
+      "displayName": "Limits of Monetary Control",
+      "reviewCodes": [
+        "MACRO-22"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-22",
+          "pdfPath": "MACRO-22.pdf",
+          "title": "Limits of Monetary Control",
+          "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "canonicalConceptId": "quantity-theory-of-money",
+      "displayName": "Quantity Theory of Money",
+      "reviewCodes": [
+        "MACRO-23"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-23",
+          "pdfPath": "MACRO-23.pdf",
+          "title": "Quantity Theory of Money",
+          "sha256": "6a4b084998f1afda4c5d18a084c7a2cc5af0675a9694cb38e2bbfd946826113b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "canonicalConceptId": "monetary-neutrality",
+      "displayName": "Monetary Neutrality",
+      "reviewCodes": [
+        "MACRO-24"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-24",
+          "pdfPath": "MACRO-24.pdf",
+          "title": "Monetary Neutrality",
+          "sha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "canonicalConceptId": "fisher-effect",
+      "displayName": "Fisher Effect",
+      "reviewCodes": [
+        "MACRO-25"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-25",
+          "pdfPath": "MACRO-25.pdf",
+          "title": "Fisher Effect",
+          "sha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "canonicalConceptId": "inflation-tax-and-deflation",
+      "displayName": "Inflation Tax and Deflation",
+      "reviewCodes": [
+        "MACRO-27"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-27",
+          "pdfPath": "MACRO-27.pdf",
+          "title": "Inflation Tax and Deflation",
+          "sha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "canonicalConceptId": "aggregate-demand",
+      "displayName": "Aggregate Demand",
+      "reviewCodes": [
+        "MACRO-33"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-33",
+          "pdfPath": "MACRO-33.pdf",
+          "title": "Aggregate Demand",
+          "sha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "canonicalConceptId": "aggregate-supply",
+      "displayName": "Aggregate Supply",
+      "reviewCodes": [
+        "MACRO-34"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-34",
+          "pdfPath": "MACRO-34.pdf",
+          "title": "Aggregate Supply",
+          "sha256": "b37fd709deee3612fedefd00a3b5a6383925edcd3031e07de5c4eb9f3c2d23ac"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "canonicalConceptId": "macroeconomic-equilibrium-and-shocks",
+      "displayName": "Macroeconomic Equilibrium and Shocks",
+      "reviewCodes": [
+        "MACRO-35"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-35",
+          "pdfPath": "MACRO-35.pdf",
+          "title": "Macroeconomic Equilibrium and Shocks",
+          "sha256": "928b0af905a78b37e98be4dfe795514df9f5ea7f5b048e76330c11867a278d06"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "canonicalConceptId": "long-run-macroeconomic-adjustment",
+      "displayName": "Long-Run Macroeconomic Adjustment",
+      "reviewCodes": [
+        "MACRO-36"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-36",
+          "pdfPath": "MACRO-36.pdf",
+          "title": "Long-Run Macroeconomic Adjustment",
+          "sha256": "f30f8fbdc4eae3628df020a9f5f11dfe7250b18cf7cf29aeba2273cacabbcb14"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "canonicalConceptId": "liquidity-preference-and-money-market",
+      "displayName": "Liquidity Preference and the Money Market",
+      "reviewCodes": [
+        "MACRO-28"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-28",
+          "pdfPath": "MACRO-28.pdf",
+          "title": "Liquidity Preference and the Money Market",
+          "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "canonicalConceptId": "monetary-policy-transmission",
+      "displayName": "Monetary-Policy Transmission",
+      "reviewCodes": [
+        "MACRO-29"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-29",
+          "pdfPath": "MACRO-29.pdf",
+          "title": "Monetary-Policy Transmission",
+          "sha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "canonicalConceptId": "fiscal-policy-and-aggregate-demand",
+      "displayName": "Fiscal Policy and Aggregate Demand",
+      "reviewCodes": [
+        "MACRO-30"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-30",
+          "pdfPath": "MACRO-30.pdf",
+          "title": "Fiscal Policy and Aggregate Demand",
+          "sha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "canonicalConceptId": "fiscal-multipliers-and-crowding-out",
+      "displayName": "Fiscal Multipliers and Crowding Out",
+      "reviewCodes": [
+        "MACRO-31"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-31",
+          "pdfPath": "MACRO-31.pdf",
+          "title": "Fiscal Multipliers and Crowding Out",
+          "sha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "canonicalConceptId": "stabilization-policy",
+      "displayName": "Stabilization Policy",
+      "reviewCodes": [
+        "MACRO-32"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-32",
+          "pdfPath": "MACRO-32.pdf",
+          "title": "Stabilization Policy",
+          "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "canonicalConceptId": "short-run-phillips-curve",
+      "displayName": "Short-Run Phillips Curve",
+      "reviewCodes": [
+        "MACRO-37"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-37",
+          "pdfPath": "MACRO-37.pdf",
+          "title": "Short-Run Phillips Curve",
+          "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "canonicalConceptId": "long-run-phillips-curve",
+      "displayName": "Long-Run Phillips Curve",
+      "reviewCodes": [
+        "MACRO-38"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-38",
+          "pdfPath": "MACRO-38.pdf",
+          "title": "Long-Run Phillips Curve",
+          "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "canonicalConceptId": "phillips-curve-expectations",
+      "displayName": "Phillips-Curve Expectations",
+      "reviewCodes": [
+        "MACRO-39"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-39",
+          "pdfPath": "MACRO-39.pdf",
+          "title": "Phillips-Curve Expectations",
+          "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "canonicalConceptId": "disinflation-and-policy",
+      "displayName": "Disinflation and Policy",
+      "reviewCodes": [
+        "MACRO-40"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-40",
+          "pdfPath": "MACRO-40.pdf",
+          "title": "Disinflation and Policy",
+          "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e"
+        }
+      ]
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "canonicalConceptId": "sacrifice-ratio",
+      "displayName": "Sacrifice Ratio",
+      "reviewCodes": [
+        "MACRO-41"
+      ],
+      "disposition": "REVIEW_SHEET",
+      "dedicated": true,
+      "resourceDetails": [
+        {
+          "code": "MACRO-41",
+          "pdfPath": "MACRO-41.pdf",
+          "title": "Sacrifice Ratio",
+          "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7"
+        }
+      ]
+    }
+  ],
+  "currentGaps": [
+    {
+      "canonicalConceptId": "saving-investment-and-loanable-funds",
+      "displayName": "Saving, Investment & Loanable Funds",
+      "disposition": "NO_SHEET_INTEGRATION_META",
+      "reason": "No concept review sheet is mapped."
+    },
+    {
+      "canonicalConceptId": "federal-budgets-and-debt",
+      "displayName": "Federal Budgets & Debt",
+      "disposition": "NO_SHEET_INTEGRATION_META",
+      "reason": "No concept review sheet is mapped."
+    }
+  ],
+  "orphanMacroResources": [],
+  "supplemental": {
+    "canonicalConceptId": "integrated-macroeconomic-analysis",
+    "disposition": "HIDDEN_SUPPLEMENTAL",
+    "reviewCodes": [],
+    "recommendation": "KEEP SUPPLEMENTAL; no normal faculty-facing review sheet is required while it remains a hidden checkpoint/integration pool."
+  },
+  "proposed": [
+    {
+      "familyConceptId": "gdp-national-income",
+      "recommendedConceptId": "gdp-measurement",
+      "displayName": "GDP Measurement",
+      "sourceCurrentConceptIds": [
+        "gdp-measurement"
+      ],
+      "currentReviewCodes": [
+        "MACRO-01"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-01",
+          "pdfPath": "MACRO-01.pdf",
+          "title": "GDP Measurement"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "gdp-national-income",
+      "recommendedConceptId": "gdp-components",
+      "displayName": "GDP Components",
+      "sourceCurrentConceptIds": [
+        "gdp-components"
+      ],
+      "currentReviewCodes": [
+        "MACRO-02"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-02",
+          "pdfPath": "MACRO-02.pdf",
+          "title": "GDP Components"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "gdp-national-income",
+      "recommendedConceptId": "real-versus-nominal-gdp",
+      "displayName": "Real versus Nominal GDP",
+      "sourceCurrentConceptIds": [
+        "real-versus-nominal-gdp"
+      ],
+      "currentReviewCodes": [
+        "MACRO-03"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-03",
+          "pdfPath": "MACRO-03.pdf",
+          "title": "Real versus Nominal GDP"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "gdp-national-income",
+      "recommendedConceptId": "limits-of-gdp",
+      "displayName": "Limits of GDP",
+      "sourceCurrentConceptIds": [
+        "limits-of-gdp"
+      ],
+      "currentReviewCodes": [
+        "MACRO-04"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-04",
+          "pdfPath": "MACRO-04.pdf",
+          "title": "Limits of GDP"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "recommendedConceptId": "cpi-and-inflation-measurement",
+      "displayName": "CPI and Inflation Measurement",
+      "sourceCurrentConceptIds": [
+        "cpi-and-inflation-measurement"
+      ],
+      "currentReviewCodes": [
+        "MACRO-05"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-05",
+          "pdfPath": "MACRO-05.pdf",
+          "title": "CPI and Inflation Measurement"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "recommendedConceptId": "cpi-bias",
+      "displayName": "CPI Bias",
+      "sourceCurrentConceptIds": [
+        "cpi-bias"
+      ],
+      "currentReviewCodes": [
+        "MACRO-06"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-06",
+          "pdfPath": "MACRO-06.pdf",
+          "title": "CPI Bias"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "recommendedConceptId": "cpi-versus-gdp-deflator",
+      "displayName": "CPI versus GDP Deflator",
+      "sourceCurrentConceptIds": [
+        "cpi-versus-gdp-deflator"
+      ],
+      "currentReviewCodes": [
+        "MACRO-07"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-07",
+          "pdfPath": "MACRO-07.pdf",
+          "title": "CPI versus GDP Deflator"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "recommendedConceptId": "indexing-and-real-values",
+      "displayName": "Indexing and Real Values",
+      "sourceCurrentConceptIds": [
+        "indexing-and-real-values"
+      ],
+      "currentReviewCodes": [
+        "MACRO-08"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-08",
+          "pdfPath": "MACRO-08.pdf",
+          "title": "Indexing and Real Values"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "recommendedConceptId": "real-versus-nominal-interest-rates",
+      "displayName": "Real versus Nominal Interest Rates",
+      "sourceCurrentConceptIds": [
+        "real-versus-nominal-interest-rates"
+      ],
+      "currentReviewCodes": [
+        "MACRO-09"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-09",
+          "pdfPath": "MACRO-09.pdf",
+          "title": "Real versus Nominal Interest Rates"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "inflation-real-values",
+      "recommendedConceptId": "inflation-costs",
+      "displayName": "Costs of Inflation",
+      "sourceCurrentConceptIds": [
+        "inflation-costs"
+      ],
+      "currentReviewCodes": [
+        "MACRO-26"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-26",
+          "pdfPath": "MACRO-26.pdf",
+          "title": "Costs of Inflation"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "recommendedConceptId": "living-standards-and-growth",
+      "displayName": "Living Standards and Growth",
+      "sourceCurrentConceptIds": [
+        "living-standards-and-growth"
+      ],
+      "currentReviewCodes": [
+        "MACRO-10"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-10",
+          "pdfPath": "MACRO-10.pdf",
+          "title": "Living Standards and Growth"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "recommendedConceptId": "productivity-measurement",
+      "displayName": "Productivity Measurement",
+      "sourceCurrentConceptIds": [
+        "productivity-measurement"
+      ],
+      "currentReviewCodes": [
+        "MACRO-11"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-11",
+          "pdfPath": "MACRO-11.pdf",
+          "title": "Productivity Measurement"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "recommendedConceptId": "sources-of-productivity",
+      "displayName": "Sources of Productivity",
+      "sourceCurrentConceptIds": [
+        "sources-of-productivity"
+      ],
+      "currentReviewCodes": [
+        "MACRO-12"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-12",
+          "pdfPath": "MACRO-12.pdf",
+          "title": "Sources of Productivity"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "growth-productivity",
+      "recommendedConceptId": "economic-growth-policy",
+      "displayName": "Economic Growth Policy",
+      "sourceCurrentConceptIds": [
+        "economic-growth-policy"
+      ],
+      "currentReviewCodes": [
+        "MACRO-13"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-13",
+          "pdfPath": "MACRO-13.pdf",
+          "title": "Economic Growth Policy"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "recommendedConceptId": "unemployment-measurement",
+      "displayName": "Unemployment Measurement",
+      "sourceCurrentConceptIds": [
+        "unemployment-measurement"
+      ],
+      "currentReviewCodes": [
+        "MACRO-14"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-14",
+          "pdfPath": "MACRO-14.pdf",
+          "title": "Unemployment Measurement"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "recommendedConceptId": "unemployment-types",
+      "displayName": "Types of Unemployment",
+      "sourceCurrentConceptIds": [
+        "unemployment-types"
+      ],
+      "currentReviewCodes": [
+        "MACRO-15"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-15",
+          "pdfPath": "MACRO-15.pdf",
+          "title": "Types of Unemployment"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "recommendedConceptId": "labor-market-institutions",
+      "displayName": "Labor-Market Institutions",
+      "sourceCurrentConceptIds": [
+        "labor-market-institutions"
+      ],
+      "currentReviewCodes": [
+        "MACRO-16"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-16",
+          "pdfPath": "MACRO-16.pdf",
+          "title": "Labor-Market Institutions"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "unemployment-labor",
+      "recommendedConceptId": "natural-rate-of-unemployment",
+      "displayName": "Natural Rate of Unemployment",
+      "sourceCurrentConceptIds": [
+        "natural-rate-of-unemployment"
+      ],
+      "currentReviewCodes": [
+        "MACRO-17"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-17",
+          "pdfPath": "MACRO-17.pdf",
+          "title": "Natural Rate of Unemployment"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "saving-and-investment-identities",
+      "displayName": "Saving, Investment, and National-Saving Identities",
+      "sourceCurrentConceptIds": [
+        "saving-investment-and-loanable-funds"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "loanable-funds-equilibrium",
+      "displayName": "Loanable-Funds Equilibrium",
+      "sourceCurrentConceptIds": [
+        "saving-investment-and-loanable-funds"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "loanable-funds-shifts",
+      "displayName": "Loanable-Funds Shifts",
+      "sourceCurrentConceptIds": [
+        "saving-investment-and-loanable-funds"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "crowding-out-and-capital-formation",
+      "displayName": "Crowding Out and Capital Formation",
+      "sourceCurrentConceptIds": [
+        "saving-investment-and-loanable-funds"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "budget-accounting-and-public-saving",
+      "displayName": "Budget Accounting and Public Saving",
+      "sourceCurrentConceptIds": [
+        "federal-budgets-and-debt"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "deficits-debt-and-government-borrowing",
+      "displayName": "Deficits, Debt, and Government Borrowing",
+      "sourceCurrentConceptIds": [
+        "federal-budgets-and-debt"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "saving-fiscal-foundations",
+      "recommendedConceptId": "debt-measures-burden-and-fiscal-data",
+      "displayName": "Debt Measures, Debt Burden, and Fiscal Data",
+      "sourceCurrentConceptIds": [
+        "federal-budgets-and-debt"
+      ],
+      "currentReviewCodes": [],
+      "currentResources": [],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW REVIEW RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "recommendedConceptId": "money-functions-and-measures",
+      "displayName": "Money Functions and Measures",
+      "sourceCurrentConceptIds": [
+        "money-functions-and-measures"
+      ],
+      "currentReviewCodes": [
+        "MACRO-18"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-18",
+          "pdfPath": "MACRO-18.pdf",
+          "title": "Money Functions and Measures"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "recommendedConceptId": "central-bank-and-federal-reserve",
+      "displayName": "Central Banking and the Federal Reserve",
+      "sourceCurrentConceptIds": [
+        "central-bank-and-federal-reserve"
+      ],
+      "currentReviewCodes": [
+        "MACRO-19"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-19",
+          "pdfPath": "MACRO-19.pdf",
+          "title": "Central Banking and the Federal Reserve"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "recommendedConceptId": "monetary-policy-tools",
+      "displayName": "Monetary-Policy Tools",
+      "sourceCurrentConceptIds": [
+        "monetary-policy-tools"
+      ],
+      "currentReviewCodes": [
+        "MACRO-21"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-21",
+          "pdfPath": "MACRO-21.pdf",
+          "title": "Monetary-Policy Tools"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "recommendedConceptId": "monetary-control-limits",
+      "displayName": "Limits of Monetary Control",
+      "sourceCurrentConceptIds": [
+        "monetary-control-limits"
+      ],
+      "currentReviewCodes": [
+        "MACRO-22"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-22",
+          "pdfPath": "MACRO-22.pdf",
+          "title": "Limits of Monetary Control"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "recommendedConceptId": "bank-balance-sheets-reserves-and-capital",
+      "displayName": "Bank Balance Sheets, Reserves, and Capital",
+      "sourceCurrentConceptIds": [
+        "bank-money-creation"
+      ],
+      "currentReviewCodes": [
+        "MACRO-20"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-20",
+          "pdfPath": "MACRO-20.pdf",
+          "title": "Bank Money Creation"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "money-banking-fed",
+      "recommendedConceptId": "deposit-creation-and-money-multiplier",
+      "displayName": "Deposit Creation and the Money Multiplier",
+      "sourceCurrentConceptIds": [
+        "bank-money-creation"
+      ],
+      "currentReviewCodes": [
+        "MACRO-20"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-20",
+          "pdfPath": "MACRO-20.pdf",
+          "title": "Bank Money Creation"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "recommendedConceptId": "quantity-theory-of-money",
+      "displayName": "Quantity Theory of Money",
+      "sourceCurrentConceptIds": [
+        "quantity-theory-of-money"
+      ],
+      "currentReviewCodes": [
+        "MACRO-23"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-23",
+          "pdfPath": "MACRO-23.pdf",
+          "title": "Quantity Theory of Money"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "recommendedConceptId": "monetary-neutrality",
+      "displayName": "Monetary Neutrality",
+      "sourceCurrentConceptIds": [
+        "monetary-neutrality"
+      ],
+      "currentReviewCodes": [
+        "MACRO-24"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-24",
+          "pdfPath": "MACRO-24.pdf",
+          "title": "Monetary Neutrality"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "recommendedConceptId": "fisher-effect",
+      "displayName": "Fisher Effect",
+      "sourceCurrentConceptIds": [
+        "fisher-effect"
+      ],
+      "currentReviewCodes": [
+        "MACRO-25"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-25",
+          "pdfPath": "MACRO-25.pdf",
+          "title": "Fisher Effect"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "money-growth-inflation",
+      "recommendedConceptId": "inflation-tax-and-deflation",
+      "displayName": "Inflation Tax and Deflation",
+      "sourceCurrentConceptIds": [
+        "inflation-tax-and-deflation"
+      ],
+      "currentReviewCodes": [
+        "MACRO-27"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-27",
+          "pdfPath": "MACRO-27.pdf",
+          "title": "Inflation Tax and Deflation"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "recommendedConceptId": "aggregate-demand",
+      "displayName": "Aggregate Demand",
+      "sourceCurrentConceptIds": [
+        "aggregate-demand"
+      ],
+      "currentReviewCodes": [
+        "MACRO-33"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-33",
+          "pdfPath": "MACRO-33.pdf",
+          "title": "Aggregate Demand"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "recommendedConceptId": "short-run-aggregate-supply",
+      "displayName": "Short-Run Aggregate Supply",
+      "sourceCurrentConceptIds": [
+        "aggregate-supply"
+      ],
+      "currentReviewCodes": [
+        "MACRO-34"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-34",
+          "pdfPath": "MACRO-34.pdf",
+          "title": "Aggregate Supply"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "recommendedConceptId": "long-run-aggregate-supply-and-potential-output",
+      "displayName": "Long-Run Aggregate Supply and Potential Output",
+      "sourceCurrentConceptIds": [
+        "aggregate-supply"
+      ],
+      "currentReviewCodes": [
+        "MACRO-34"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-34",
+          "pdfPath": "MACRO-34.pdf",
+          "title": "Aggregate Supply"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "recommendedConceptId": "ad-as-equilibrium-and-output-gaps",
+      "displayName": "AD-AS Equilibrium and Output Gaps",
+      "sourceCurrentConceptIds": [
+        "macroeconomic-equilibrium-and-shocks",
+        "long-run-macroeconomic-adjustment"
+      ],
+      "currentReviewCodes": [
+        "MACRO-35",
+        "MACRO-36"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-35",
+          "pdfPath": "MACRO-35.pdf",
+          "title": "Macroeconomic Equilibrium and Shocks"
+        },
+        {
+          "code": "MACRO-36",
+          "pdfPath": "MACRO-36.pdf",
+          "title": "Long-Run Macroeconomic Adjustment"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "recommendedConceptId": "demand-and-supply-shocks",
+      "displayName": "Demand and Supply Shocks",
+      "sourceCurrentConceptIds": [
+        "macroeconomic-equilibrium-and-shocks"
+      ],
+      "currentReviewCodes": [
+        "MACRO-35"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-35",
+          "pdfPath": "MACRO-35.pdf",
+          "title": "Macroeconomic Equilibrium and Shocks"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "ad-as-equilibrium",
+      "recommendedConceptId": "long-run-macroeconomic-self-adjustment",
+      "displayName": "Long-Run Macroeconomic Self-Adjustment",
+      "sourceCurrentConceptIds": [
+        "macroeconomic-equilibrium-and-shocks",
+        "long-run-macroeconomic-adjustment"
+      ],
+      "currentReviewCodes": [
+        "MACRO-35",
+        "MACRO-36"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-35",
+          "pdfPath": "MACRO-35.pdf",
+          "title": "Macroeconomic Equilibrium and Shocks"
+        },
+        {
+          "code": "MACRO-36",
+          "pdfPath": "MACRO-36.pdf",
+          "title": "Long-Run Macroeconomic Adjustment"
+        }
+      ],
+      "dedicatedToRecommendedConcept": false,
+      "resourceAction": "NEW OR REVISED DEDICATED RESOURCE REQUIRED IF TAXONOMY IS ADOPTED"
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "recommendedConceptId": "liquidity-preference-and-money-market",
+      "displayName": "Liquidity Preference and the Money Market",
+      "sourceCurrentConceptIds": [
+        "liquidity-preference-and-money-market"
+      ],
+      "currentReviewCodes": [
+        "MACRO-28"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-28",
+          "pdfPath": "MACRO-28.pdf",
+          "title": "Liquidity Preference and the Money Market"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "recommendedConceptId": "monetary-policy-transmission",
+      "displayName": "Monetary-Policy Transmission",
+      "sourceCurrentConceptIds": [
+        "monetary-policy-transmission"
+      ],
+      "currentReviewCodes": [
+        "MACRO-29"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-29",
+          "pdfPath": "MACRO-29.pdf",
+          "title": "Monetary-Policy Transmission"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "recommendedConceptId": "fiscal-policy-and-aggregate-demand",
+      "displayName": "Fiscal Policy and Aggregate Demand",
+      "sourceCurrentConceptIds": [
+        "fiscal-policy-and-aggregate-demand"
+      ],
+      "currentReviewCodes": [
+        "MACRO-30"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-30",
+          "pdfPath": "MACRO-30.pdf",
+          "title": "Fiscal Policy and Aggregate Demand"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "recommendedConceptId": "fiscal-multipliers-and-crowding-out",
+      "displayName": "Fiscal Multipliers and Crowding Out",
+      "sourceCurrentConceptIds": [
+        "fiscal-multipliers-and-crowding-out"
+      ],
+      "currentReviewCodes": [
+        "MACRO-31"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-31",
+          "pdfPath": "MACRO-31.pdf",
+          "title": "Fiscal Multipliers and Crowding Out"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "stabilization-policy",
+      "recommendedConceptId": "stabilization-policy",
+      "displayName": "Stabilization Policy",
+      "sourceCurrentConceptIds": [
+        "stabilization-policy"
+      ],
+      "currentReviewCodes": [
+        "MACRO-32"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-32",
+          "pdfPath": "MACRO-32.pdf",
+          "title": "Stabilization Policy"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "recommendedConceptId": "short-run-phillips-curve",
+      "displayName": "Short-Run Phillips Curve",
+      "sourceCurrentConceptIds": [
+        "short-run-phillips-curve"
+      ],
+      "currentReviewCodes": [
+        "MACRO-37"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-37",
+          "pdfPath": "MACRO-37.pdf",
+          "title": "Short-Run Phillips Curve"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "recommendedConceptId": "long-run-phillips-curve",
+      "displayName": "Long-Run Phillips Curve",
+      "sourceCurrentConceptIds": [
+        "long-run-phillips-curve"
+      ],
+      "currentReviewCodes": [
+        "MACRO-38"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-38",
+          "pdfPath": "MACRO-38.pdf",
+          "title": "Long-Run Phillips Curve"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "recommendedConceptId": "phillips-curve-expectations",
+      "displayName": "Phillips-Curve Expectations",
+      "sourceCurrentConceptIds": [
+        "phillips-curve-expectations"
+      ],
+      "currentReviewCodes": [
+        "MACRO-39"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-39",
+          "pdfPath": "MACRO-39.pdf",
+          "title": "Phillips-Curve Expectations"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "recommendedConceptId": "disinflation-and-policy",
+      "displayName": "Disinflation and Policy",
+      "sourceCurrentConceptIds": [
+        "disinflation-and-policy"
+      ],
+      "currentReviewCodes": [
+        "MACRO-40"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-40",
+          "pdfPath": "MACRO-40.pdf",
+          "title": "Disinflation and Policy"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    },
+    {
+      "familyConceptId": "phillips-disinflation",
+      "recommendedConceptId": "sacrifice-ratio",
+      "displayName": "Sacrifice Ratio",
+      "sourceCurrentConceptIds": [
+        "sacrifice-ratio"
+      ],
+      "currentReviewCodes": [
+        "MACRO-41"
+      ],
+      "currentResources": [
+        {
+          "code": "MACRO-41",
+          "pdfPath": "MACRO-41.pdf",
+          "title": "Sacrifice Ratio"
+        }
+      ],
+      "dedicatedToRecommendedConcept": true,
+      "resourceAction": "KEEP CURRENT DEDICATED SHEET"
+    }
+  ],
+  "note": "No PDF or mapping was created or changed. Proposed resource actions apply only if the proposed taxonomy is later authorized."
+}
