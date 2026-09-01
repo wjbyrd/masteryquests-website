@@ -22,6 +22,8 @@ const composerRoot = path.resolve(testRoot, "..");
 const repoRoot = path.resolve(composerRoot, "..", "..");
 const manifestPath = path.join(composerRoot, "data", "composer_library_manifest.json");
 const phaseIds = new Set(ordinaryQuestions.map(question => String(question.id)));
+const humanReadCuration = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "question_rewrite_master_execution_ledger.json"), "utf8"));
+const humanReadExpectedById = new Map(humanReadCuration.entries.map(change => [String(change.questionId), change.after]));
 
 const EXPECTED = Object.freeze({
   objectives: { "EXT.1": 14, "EXT.2": 28, "EXT.3": 16, "EXT.4": 26, "EXT.5": 26, "EXT.6": 20, "EXT.7": 12, "EXT.8": 8, "EXT.9": 10 },
@@ -172,16 +174,20 @@ async function run() {
     const found = publishedById.get(author.id);
     if (!found) continue;
     const { conceptId, pool, question } = found;
+    const curated = humanReadExpectedById.get(String(author.id));
     pass(conceptId === PARENT_CONCEPT_ID && pool === author.difficulty && question.subtopicIds?.includes(CONCEPT_ID), `Concept/pool ${author.id}`);
-    pass(question.q === author.q && question.type === author.type && question.objective === author.objective, `Published metadata ${author.id}`);
+    pass(question.q === (curated?.q ?? author.q) && question.type === (curated?.type ?? author.type) && question.objective === author.objective, `Published metadata ${author.id}`);
     pass(question.primarySkill === author.primarySkill && question.repairSkill === author.repairSkill, `Skill metadata ${author.id}`);
     pass(!["answer", "correctAnswer", "correctIndex", "a"].some(field => Object.hasOwn(question, field)), `Plaintext answer field ${author.id}`);
     const matching = question.options.filter(option => sha256(normalize(option)) === question.aHash);
-    pass(matching.length === 1 && matching[0] === author.answer, `Answer hash ${author.id}`);
-    answerPositions[question.options.findIndex(option => option === author.answer)] += 1;
+    const expectedOptions = curated?.options ?? [author.answer, ...author.distractors];
+    const expectedHash = curated?.aHash ?? sha256(normalize(author.answer));
+    const expectedAnswer = expectedOptions.find(option => sha256(normalize(option)) === expectedHash);
+    pass(matching.length === 1 && matching[0] === expectedAnswer, `Answer hash ${author.id}`);
+    answerPositions[question.options.findIndex(option => option === expectedAnswer)] += 1;
     if (author.graphRequired) {
-      pass(question.graphRequired === true && question.image.endsWith(author.asset), `Graph reference ${author.id}`);
-      pass(question.imageAlt === GRAPH_ASSETS[author.asset].imageAlt && question.graphDescription === GRAPH_ASSETS[author.asset].graphDescription, `Accessibility ${author.id}`);
+      pass(question.graphRequired === true && question.image.endsWith(curated?.image ? path.basename(curated.image) : author.asset), `Graph reference ${author.id}`);
+      pass(question.imageAlt === (curated?.imageAlt ?? GRAPH_ASSETS[author.asset].imageAlt) && question.graphDescription === (curated?.graphDescription ?? GRAPH_ASSETS[author.asset].graphDescription), `Accessibility ${author.id}`);
     } else {
       pass(!question.image && !question.graphRequired, `Non-graph pollution ${author.id}`);
     }

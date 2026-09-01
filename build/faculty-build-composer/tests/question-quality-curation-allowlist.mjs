@@ -15,6 +15,9 @@ const foundationsExpectedById = new Map(foundationsRemediation.changes.map(chang
 const graphIntegrityRemediationPath = path.join(repoRoot, "validation_artifacts", "question_quality", "graph_assessment_integrity_remediation.json");
 const graphIntegrityRemediation = JSON.parse(fs.readFileSync(graphIntegrityRemediationPath, "utf8"));
 const graphIntegrityExpectedById = new Map(graphIntegrityRemediation.changes.map(change => [String(change.id), change]));
+const humanReadCurationPath = path.join(repoRoot, "validation_artifacts", "question_quality", "question_rewrite_master_execution_ledger.json");
+const humanReadCuration = JSON.parse(fs.readFileSync(humanReadCurationPath, "utf8"));
+const humanReadExpectedById = new Map(humanReadCuration.entries.map(change => [String(change.questionId), change]));
 const ALLOWED_RECORD_KEYS = new Set(["q", "feedback", "sourceHash", "sourceCurationPhase", "sourceOccurrences"]);
 
 function stable(value) {
@@ -36,10 +39,15 @@ function immutableOccurrences(question) {
 export const QUESTION_QUALITY_CURATION_PHASE = record.phase;
 export const FOUNDATIONS_QUESTION_QUALITY_CURATION_PHASE = foundationsRemediation.phase;
 export const GRAPH_ASSESSMENT_INTEGRITY_CURATION_PHASE = graphIntegrityRemediation.phase;
-export const AUTHORIZED_QUESTION_QUALITY_IDS = Object.freeze([...new Set([...expectedById.keys(), ...auditExpectedById.keys(), ...foundationsExpectedById.keys(), ...graphIntegrityExpectedById.keys()])]);
+export const PRINCIPLES_MICRO_HUMAN_READ_CURATION_PHASE = humanReadCuration.phase;
+export const AUTHORIZED_QUESTION_QUALITY_IDS = Object.freeze([...new Set([...expectedById.keys(), ...auditExpectedById.keys(), ...foundationsExpectedById.keys(), ...graphIntegrityExpectedById.keys(), ...humanReadExpectedById.keys()])]);
 export const AUTHORIZED_MARKET_GATE_AUTHOR_PATH = "play/economic-realm/market-gate/authoring/market_gate_phase2a_author.mjs";
 
 export function isAuthorizedQuestionQualityCuration(id, before, after) {
+  const humanReadExpected = humanReadExpectedById.get(String(id));
+  if (humanReadExpected) {
+    return Boolean(before && after) && stable(before) === stable(humanReadExpected.before) && stable(after) === stable(humanReadExpected.after);
+  }
   const graphIntegrityExpected = graphIntegrityExpectedById.get(String(id));
   if (graphIntegrityExpected) {
     return Boolean(before && after) && stable(before) === stable(graphIntegrityExpected.before) && stable(after) === stable(graphIntegrityExpected.after);

@@ -36,7 +36,10 @@ export function normalizeText(value) {
 export function normalizeComparable(value) {
   return normalizeText(value)
     .toLowerCase()
-    .replace(/[^\p{L}\p{N}%$+-]+/gu, " ")
+    .replace(/≤/g, " <= ")
+    .replace(/≥/g, " >= ")
+    .replace(/≠/g, " != ")
+    .replace(/[^\p{L}\p{N}%$+\-<>=!]+/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -370,8 +373,15 @@ export function auditQuestionRecords(entries, options = {}) {
 
     const stemKey = normalizeComparable(stem);
     if (stemKey) {
-      if (!normalizedStemGroups.has(stemKey)) normalizedStemGroups.set(stemKey, []);
-      normalizedStemGroups.get(stemKey).push(entry);
+      // A graph-dependent prompt is not the complete assessment item: its
+      // registered evidence and assessment role are part of the question.
+      // Keep exact-stem detection strict within the same visual and role while
+      // avoiding false duplicates across distinct matrices, charts, or modes.
+      const duplicateKey = graphLinked
+        ? `${stemKey}\u0000${image}\u0000${normalizeComparable(question.type)}`
+        : stemKey;
+      if (!normalizedStemGroups.has(duplicateKey)) normalizedStemGroups.set(duplicateKey, []);
+      normalizedStemGroups.get(duplicateKey).push(entry);
     }
     const feedbackKey = normalizeComparable(feedback);
     if (feedbackKey) {

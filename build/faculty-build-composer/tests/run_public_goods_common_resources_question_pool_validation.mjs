@@ -26,6 +26,8 @@ const repoRoot = path.resolve(composerRoot, "..", "..");
 const manifestPath = path.join(composerRoot, "data", "composer_library_manifest.json");
 const publisherPath = path.join(repoRoot, "audit_tools", "publish_federal_budgets_debt_question_pool.mjs");
 const phaseIds = new Set(productionQuestions.map(question => String(question.id)));
+const humanReadCuration = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "question_rewrite_master_execution_ledger.json"), "utf8"));
+const humanReadExpectedById = new Map(humanReadCuration.entries.map(change => [String(change.questionId), change]));
 
 const EXPECTED = Object.freeze({
   objectives: { "PGCR.1": 18, "PGCR.2": 26, "PGCR.3": 14, "PGCR.4": 14, "PGCR.5": 22, "PGCR.6": 16, "PGCR.7": 14, "PGCR.8": 20, "PGCR.9": 16 },
@@ -242,16 +244,20 @@ async function run() {
   for (const author of productionQuestions) {
     const found = publishedById.get(author.id);
     if (!found) continue;
+    const curated = humanReadExpectedById.get(String(author.id))?.after;
     const expectedPool = ["easyBoss", "mediumBoss", "finalBoss"].includes(author.pool) ? "boss" : author.pool;
     pass(found.conceptId === undefined || found.conceptId === PARENT_CONCEPT_ID, `Physical concept ${author.id}`);
     pass(found.pool === expectedPool, `Published pool ${author.id}: ${found.pool}/${expectedPool}`);
-    pass(found.question.q === author.q && found.question.type === author.type && found.question.objective === author.objective, `Published metadata ${author.id}`);
+    pass(found.question.q === (curated?.q ?? author.q) && found.question.type === (curated?.type ?? author.type) && found.question.objective === author.objective, `Published metadata ${author.id}`);
     pass(found.question.primarySkill === author.primarySkill && found.question.repairSkill === author.repairSkill, `Published skills ${author.id}`);
     pass(found.question.subtopicIds?.length === 1 && found.question.subtopicIds[0] === CONCEPT_ID, `Published subtopic ${author.id}`);
     pass(!["answer", "correctAnswer", "correctIndex", "a"].some(field => Object.hasOwn(found.question, field)), `Plaintext answer field ${author.id}`);
     const correct = found.question.options.filter(option => sha256(normalize(option)) === found.question.aHash);
-    pass(correct.length === 1 && correct[0] === author.answer, `Answer hash ${author.id}`);
-    answerPositions[found.question.options.findIndex(option => option === author.answer)] += 1;
+    const expectedOptions = curated?.options ?? [author.answer, ...author.distractors];
+    const expectedHash = curated?.aHash ?? sha256(normalize(author.answer));
+    const expectedAnswer = expectedOptions.find(option => sha256(normalize(option)) === expectedHash);
+    pass(correct.length === 1 && correct[0] === expectedAnswer, `Answer hash ${author.id}`);
+    answerPositions[found.question.options.findIndex(option => option === expectedAnswer)] += 1;
     if (author.graphRequired) {
       pass(found.question.graphRequired === true && found.question.image.endsWith(author.asset), `Graph reference ${author.id}`);
       pass(found.question.imageAlt === GRAPH_ASSETS[author.asset].imageAlt && found.question.graphDescription === GRAPH_ASSETS[author.asset].graphDescription, `Graph accessibility ${author.id}`);
@@ -263,7 +269,11 @@ async function run() {
 
   pass(childEntries(library, CONCEPT_ID).length === 176, `Resulting concept total ${childEntries(library, CONCEPT_ID).length}`);
   for (const [conceptId, expectedDigest] of Object.entries(LEGACY_DIGESTS)) {
-    const entries = childEntries(library, conceptId, false);
+    const entries = conceptEntries(library.concepts[PARENT_CONCEPT_ID])
+      .map(entry => ({ ...entry, question: humanReadExpectedById.get(String(entry.question.id))?.before ?? entry.question }))
+      .filter(({ question }) => (question.subtopicIds || []).includes(conceptId))
+      .filter(({ question }) => question.sourceCurationPhase !== PHASE)
+      .sort((left, right) => String(left.question.id).localeCompare(String(right.question.id)) || left.pool.localeCompare(right.pool));
     const expectedCount = conceptId === "externalities" ? 177 : conceptId === "market-power" ? 9 : 16;
     pass(entries.length === expectedCount, `Protected ${conceptId} count ${entries.length}`);
     pass(digest(entries) === expectedDigest, `Protected ${conceptId} records changed`);
