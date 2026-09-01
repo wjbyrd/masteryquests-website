@@ -1,0 +1,572 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacro4-human-read-curation-v1",
+  "generatedAt": "2026-09-01T19:00:00.000Z",
+  "verdict": "PASS",
+  "summary": {
+    "checks": 25,
+    "passed": 25,
+    "failed": 0,
+    "authorizedRows": 292,
+    "blockedRows": 0,
+    "failedRows": 0,
+    "macroQuestions": 2870,
+    "protectedQuestions": 2578
+  },
+  "checks": [
+    {
+      "name": "Macro concept count preserved",
+      "status": "PASS",
+      "detail": "52/52"
+    },
+    {
+      "name": "Macro question count preserved",
+      "status": "PASS",
+      "detail": "2870/2870"
+    },
+    {
+      "name": "Exactly 292 authorized IDs resolved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No blocked or failed rows",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No unauthorized question changes",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "Authorized fields match approved after-state only",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "Only the four approved difficulty rows moved pools",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "Protected relative question order is unchanged",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "All answer keys remain uniquely valid at original positions",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "Source hashes regenerated",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "All 12 GROWTH-01 references resolve to verified concept-scoped assets",
+      "status": "PASS",
+      "detail": "12/12"
+    },
+    {
+      "name": "Restaurant service structural fix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Domestic-stage GDP structural fix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Crowding-out direction structural fix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Question-quality auditor inspected the same 2,870-question scope",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No unexpected deterministic errors on authorized questions",
+      "status": "PASS",
+      "detail": "0 unexpected errors; 5 approved exact-stem convergence review flags reported separately"
+    },
+    {
+      "name": "Stale GROWTH-01 audit errors cleared",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Fresh full-Macro composition succeeds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All generated modes pass preflight",
+      "status": "PASS",
+      "detail": "[{\"mode\":\"standard\",\"label\":\"Standard Campaign\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"easyBoss\",\"minimum\":3,\"count\":155},{\"pool\":\"mediumBoss\",\"minimum\":3,\"count\":157},{\"pool\":\"finalBoss\",\"minimum\":3,\"count\":163},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"timed\",\"label\":\"Timed Trial\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"exam\",\"label\":\"Exam Drill\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"legendary\",\"label\":\"Legendary Mode\",\"requirements\":[{\"pool\":\"legendary\",\"minimum\":6,\"count\":317},{\"pool\":\"legendaryBoss\",\"minimum\":3,\"count\":145}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"score\",\"label\":\"Score Attack\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"easyBoss\",\"minimum\":3,\"count\":155},{\"pool\":\"mediumBoss\",\"minimum\":3,\"count\":157},{\"pool\":\"finalBoss\",\"minimum\":3,\"count\":163},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true}]"
+    },
+    {
+      "name": "Generated package answer hashes verify",
+      "status": "PASS",
+      "detail": "0 issues"
+    },
+    {
+      "name": "Concept Review runtime resolves for full Macro package",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All selected question assets embed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Fresh ZIP generation succeeds",
+      "status": "PASS",
+      "detail": "validation_artifacts/macro_phase4/generated_packages/principles-macro/principles-macro-phase4.zip"
+    },
+    {
+      "name": "Generated HTML includes authorized structural fixes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Generated HTML embeds GROWTH-01 evidence",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "details": {
+    "protectedMismatches": [],
+    "authorizedMismatches": [],
+    "positionMismatches": [],
+    "orderMismatches": [],
+    "answerKeyMismatches": [],
+    "sourceHashMismatches": [],
+    "growthAssets": [
+      {
+        "questionId": "PM2B3-POL-H-001",
+        "runtimePath": "question-assets/economic-growth-policy/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-POL-FB-006",
+        "runtimePath": "question-assets/economic-growth-policy/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-POL-LB-001",
+        "runtimePath": "question-assets/economic-growth-policy/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-E-001",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-M-001",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-H-001",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-L-001",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-EB-002",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-FB-004",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-PROD-LB-002",
+        "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-SRC-EB-002",
+        "runtimePath": "question-assets/sources-of-productivity/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      },
+      {
+        "questionId": "PM2B3-SRC-FB-004",
+        "runtimePath": "question-assets/sources-of-productivity/GROWTH-01.webp",
+        "assetRegistered": true,
+        "fileExists": true,
+        "expectedSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "actualSha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+        "status": "PASS"
+      }
+    ],
+    "qualityAudit": {
+      "pre": {
+        "errors": 25,
+        "warnings": 835,
+        "reviews": 494
+      },
+      "post": {
+        "errors": 13,
+        "warnings": 726,
+        "reviews": 518
+      },
+      "newAuthorizedFindings": [
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AD-EL-002",
+          "concept": "aggregate-demand",
+          "pools": [
+            "elite"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "The price level rises at the same time that the government cuts taxes. Which graph description is correct?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AD-EL-003",
+          "concept": "aggregate-demand",
+          "pools": [
+            "elite"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Domestic interest rates fall because the central bank expands money supply, while foreign income also falls. What can be said about AD?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AD-EL-004",
+          "concept": "aggregate-demand",
+          "pools": [
+            "elite"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "A student says, \"Any fall in real GDP means AD shifted left.\" What is the best correction?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AD-H-001",
+          "concept": "aggregate-demand",
+          "pools": [
+            "hard"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Consumer confidence rises while firms become more pessimistic about future sales. What can be concluded about aggregate demand?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AD-L-006",
+          "concept": "aggregate-demand",
+          "pools": [
+            "legendary"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "A country's currency appreciates and foreign economies enter recession while domestic consumer confidence rises. The net AD effect is:"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AD-LB-001",
+          "concept": "aggregate-demand",
+          "pools": [
+            "legendaryBoss"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "The price level rises, taxes fall, and foreign income falls. Which description is correct?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-CENTRAL-BANK-ROLE-5004",
+          "concept": "central-bank-and-federal-reserve",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ECON-SP-EASY-7.",
+          "suggestion": "",
+          "wording": "What is the central bank of the United States?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-FOMC-ROLE-5005",
+          "concept": "central-bank-and-federal-reserve",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ECON-SP-EASY-8.",
+          "suggestion": "",
+          "wording": "Which group directs open-market operations?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-L-005",
+          "concept": "long-run-aggregate-supply-and-potential-output",
+          "pools": [
+            "legendary"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "A permanent improvement in education raises worker productivity, but a new regulation raises current compliance costs. Which statement is most complete?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-LB-003",
+          "concept": "long-run-aggregate-supply-and-potential-output",
+          "pools": [
+            "legendaryBoss"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Capital is destroyed while a new technology raises productivity. Which LRAS conclusion is valid?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-MONETARY-POLICY-AD-SHIFT-5082",
+          "concept": "monetary-policy-transmission",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ECON-SP-EASY-48.",
+          "suggestion": "",
+          "wording": "If the Fed decreases the money supply, aggregate demand usually:"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-VALUE-OF-MONEY-5016",
+          "concept": "quantity-theory-of-money",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: LG-Q-19.",
+          "suggestion": "",
+          "wording": "If the price level rises, the value of money:"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-5031",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: P52A-AS-B2-001.",
+          "suggestion": "",
+          "wording": "Higher expected prices usually shift SRAS:"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-EL-002",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "elite"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Workers expect 6 percent inflation, but actual inflation is 2 percent and wage contracts reflect the higher expectation. What happens to SRAS relative to contracts based on accurate expectations?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-EL-004",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "elite"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "A student says, \"Any rise in the price level shifts SRAS right.\" What is the best correction?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-H-001",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "hard"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Oil prices rise sharply, but firms also adopt a productivity-enhancing technology. What can be concluded about SRAS?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-L-002",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "legendary"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Expected inflation rises, productivity improves, and oil prices fall. What can be concluded about SRAS?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "answer-length-outlier",
+          "questionId": "P52A-AS-L-004",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "legendary"
+          ],
+          "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+          "suggestion": "Make distractors comparably specific without adding ambiguity.",
+          "wording": "Nominal wages are fixed for one year. The price level rises unexpectedly, then wage contracts reset to reflect the higher expected price level. What sequence is most likely?"
+        }
+      ],
+      "newAuthorizedErrors": [],
+      "approvedStemConvergenceFindings": [
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-CENTRAL-BANK-ROLE-5004",
+          "concept": "central-bank-and-federal-reserve",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ECON-SP-EASY-7.",
+          "suggestion": "",
+          "wording": "What is the central bank of the United States?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-FOMC-ROLE-5005",
+          "concept": "central-bank-and-federal-reserve",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ECON-SP-EASY-8.",
+          "suggestion": "",
+          "wording": "Which group directs open-market operations?"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-MONETARY-POLICY-AD-SHIFT-5082",
+          "concept": "monetary-policy-transmission",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ECON-SP-EASY-48.",
+          "suggestion": "",
+          "wording": "If the Fed decreases the money supply, aggregate demand usually:"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-VALUE-OF-MONEY-5016",
+          "concept": "quantity-theory-of-money",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: LG-Q-19.",
+          "suggestion": "",
+          "wording": "If the price level rises, the value of money:"
+        },
+        {
+          "severity": "REVIEW",
+          "rule": "approved-cross-role-stem-reuse",
+          "questionId": "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-5031",
+          "concept": "short-run-aggregate-supply",
+          "pools": [
+            "repair"
+          ],
+          "message": "The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: P52A-AS-B2-001.",
+          "suggestion": "",
+          "wording": "Higher expected prices usually shift SRAS:"
+        }
+      ],
+      "unexpectedAuthorizedErrors": []
+    },
+    "generatedPackage": {
+      "directory": "validation_artifacts/macro_phase4/generated_packages/principles-macro",
+      "htmlBytes": 14513068,
+      "htmlSha256": "3f2f06accf66ec7b2c2b5e5dc13f52e29e5e65d79c4ded89cec0c23b245eef80",
+      "assetsEmbedded": 59,
+      "answerVerification": {
+        "ok": true,
+        "questionCount": 2868,
+        "issues": []
+      },
+      "zip": {
+        "status": "PASS",
+        "path": "validation_artifacts/macro_phase4/generated_packages/principles-macro/principles-macro-phase4.zip",
+        "bytes": 4563889,
+        "sha256": "1dc54c1355a9db63553981a7ac471190d3f7975a5ae1fc89cad272db7172ac7d"
+      }
+    }
+  }
+}

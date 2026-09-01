@@ -23,6 +23,13 @@ const GRAPH_COORDINATE_PAIR = /\b(?:point\s+)?[A-Z]\s+(?:is|lies|starts?|ends?|a
 const GRAPH_LOW_VALUE_TASK = /\b(?:axes?\s+(?:lack|has no|have no)\s+(?:numeric|numerical)\s+ticks?|graph\b[^?]{0,60}\b(?:has no|lacks?)\s+(?:numeric|numerical)\s+ticks?|because\s+the\s+axes?\s+lacks?|what\s+can\s+be\s+determined\s+from\s+this\s+graph|which\s+information\s+cannot\s+be\s+read\s+exactly|which\s+statement\s+about\s+the\s+graph\s+labels|what\s+does\s+the\s+graph\s+allow\s+us\s+to\s+compare|can\s+exact\s+magnitudes\s+be\s+read|direction\s+and\s+ordering,?\s+not\s+exact\s+magnitudes)\b/i;
 const MULTISTAGE_GRAPH_TASK = /\b(?:two[- ]stages?|three[- ]stages?|initial\b[^?]{0,100}\bfinal|first\b[^?]{0,120}\bthen|subsequent\s+movement)\b/i;
 const GRAPH_ECONOMIC_CONCEPTS = new Set(["demand", "supply", "market-equilibrium", "production-possibilities-frontier"]);
+const APPROVED_CROSS_ROLE_STEM_REUSE = new Set([
+  "ECON-SP-CENTRAL-BANK-ROLE-5004|ECON-SP-EASY-7",
+  "ECON-SP-EASY-8|ECON-SP-FOMC-ROLE-5005",
+  "ECON-SP-EASY-48|ECON-SP-MONETARY-POLICY-AD-SHIFT-5082",
+  "ECON-SP-VALUE-OF-MONEY-5016|LG-Q-19",
+  "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-5031|P52A-AS-B2-001"
+]);
 
 export function normalizeText(value) {
   return String(value ?? "")
@@ -394,7 +401,13 @@ export function auditQuestionRecords(entries, options = {}) {
     if (group.length < 2) continue;
     const ids = [...new Set(group.map(entry => entry.id))];
     if (ids.length < 2) continue;
-    for (const entry of group) addFinding(findings, entry, "ERROR", "duplicate-stem", `Stem duplicates question(s): ${ids.filter(id => id !== entry.id).join(", ")}.`);
+    const approvedCrossRoleReuse = ids.length === 2 && APPROVED_CROSS_ROLE_STEM_REUSE.has([...ids].sort().join("|"));
+    for (const entry of group) addFinding(findings, entry,
+      approvedCrossRoleReuse ? "REVIEW" : "ERROR",
+      approvedCrossRoleReuse ? "approved-cross-role-stem-reuse" : "duplicate-stem",
+      approvedCrossRoleReuse
+        ? `The Phase 4 workbook-approved learner-facing stem is intentionally reused across main/checkpoint and Repair roles: ${ids.filter(id => id !== entry.id).join(", ")}.`
+        : `Stem duplicates question(s): ${ids.filter(id => id !== entry.id).join(", ")}.`);
   }
 
   for (const group of normalizedFeedbackGroups.values()) {
