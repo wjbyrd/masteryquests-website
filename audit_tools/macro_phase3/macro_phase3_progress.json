@@ -1,0 +1,980 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-01T18:11:49.360Z",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1",
+  "librarySha256": "1fbc515ceb3d4d876bfaf945c458f8ab966aab7cf7ff7ee5d319595a44afe919",
+  "allowedStatuses": [
+    "NOT_STARTED",
+    "IN_PROGRESS",
+    "COMPLETE"
+  ],
+  "concepts": [
+    {
+      "family": "GDP and national income",
+      "childConceptId": "gdp-measurement",
+      "conceptTitle": "GDP Measurement",
+      "questionCount": 73,
+      "questionsReviewed": 73,
+      "questionsFlagged": 12,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-INTERMEDIATE-VS-FINAL-GOODS-6002",
+      "completedAt": "2026-09-01T14:06:11.876Z",
+      "proposedQuestionIds": [
+        "ECON-NL-EASY-7",
+        "ECON-NL-INTERMEDIATE-VS-FINAL-GOODS-5004",
+        "ECON-NL-HARD-201",
+        "ECON-NL-MEDIUM-103",
+        "ECON-EC-EASYBOSS-17005",
+        "ECON-EC-EASYBOSS-17011",
+        "ECON-EC-EASYBOSS-17014",
+        "ECON-NL-LEGENDARYBOSS-9101",
+        "ECON-NL-LEGENDARYBOSS-9102",
+        "ECON-NL-LEGENDARYBOSS-9107",
+        "ECON-NL-HARD-207",
+        "ECON-NL-LEGENDARY-9016"
+      ]
+    },
+    {
+      "family": "GDP and national income",
+      "childConceptId": "gdp-components",
+      "conceptTitle": "GDP Components",
+      "questionCount": 63,
+      "questionsReviewed": 63,
+      "questionsFlagged": 18,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-INVENTORY-INVESTMENT-6005",
+      "completedAt": "2026-09-01T14:12:04.519Z",
+      "proposedQuestionIds": [
+        "PM2B1-GDPC-E-001",
+        "PM2B1-GDPC-M-002",
+        "PM2B1-GDPC-H-001",
+        "PM2B1-GDPC-H-002",
+        "PM2B1-GDPC-H-003",
+        "PM2B1-GDPC-H-004",
+        "ECON-NL-ELITE-310",
+        "ECON-NL-LEGENDARY-9008",
+        "ECON-NL-LEGENDARY-9021",
+        "PM2B1-GDPC-FB-004",
+        "PM2B1-GDPC-FB-005",
+        "PM2B1-GDPC-FB-006",
+        "ECON-NL-LEGENDARYBOSS-9100",
+        "ECON-NL-LEGENDARYBOSS-9106",
+        "PM2B1-GDPC-LB-001",
+        "ECON-NL-GDP-COMPONENTS-IDENTITY-6003",
+        "ECON-NL-IMPORTS-EXPORTS-NX-6004",
+        "ECON-NL-INVENTORY-INVESTMENT-6005"
+      ]
+    },
+    {
+      "family": "GDP and national income",
+      "childConceptId": "real-versus-nominal-gdp",
+      "conceptTitle": "Real versus Nominal GDP",
+      "questionCount": 49,
+      "questionsReviewed": 49,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-NOMINAL-VS-REAL-GDP-6006",
+      "completedAt": "2026-09-01T14:15:21.532Z",
+      "proposedQuestionIds": [
+        "ECON-NL-LEGENDARYBOSS-9103",
+        "ECON-NL-LEGENDARYBOSS-9104"
+      ]
+    },
+    {
+      "family": "GDP and national income",
+      "childConceptId": "limits-of-gdp",
+      "conceptTitle": "Limits of GDP",
+      "questionCount": 45,
+      "questionsReviewed": 45,
+      "questionsFlagged": 3,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-GDP-WELLBEING-LIMITS-6008",
+      "completedAt": "2026-09-01T14:16:09.991Z",
+      "proposedQuestionIds": [
+        "ECON-EC-EASYBOSS-17002",
+        "ECON-EC-EASYBOSS-17017",
+        "ECON-NL-LEGENDARYBOSS-9105"
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "childConceptId": "cpi-and-inflation-measurement",
+      "conceptTitle": "CPI and Inflation Measurement",
+      "questionCount": 60,
+      "questionsReviewed": 60,
+      "questionsFlagged": 4,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-INFLATION-RATE-6010",
+      "completedAt": "2026-09-01T14:17:16.584Z",
+      "proposedQuestionIds": [
+        "P52A-CPI-M-005",
+        "P52A-CPI-H-001",
+        "P52A-CPI-H-006",
+        "ECON-NL-LEGENDARYBOSS-9108"
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "childConceptId": "cpi-bias",
+      "conceptTitle": "CPI Bias",
+      "questionCount": 47,
+      "questionsReviewed": 47,
+      "questionsFlagged": 4,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-SUBSTITUTION-BIAS-6011",
+      "completedAt": "2026-09-01T14:18:10.002Z",
+      "proposedQuestionIds": [
+        "ECON-NL-ELITE-328",
+        "ECON-NL-LEGENDARYBOSS-9109",
+        "ECON-NL-LEGENDARYBOSS-9110",
+        "ECON-NL-LEGENDARYBOSS-9115"
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "childConceptId": "cpi-versus-gdp-deflator",
+      "conceptTitle": "CPI versus GDP Deflator",
+      "questionCount": 43,
+      "questionsReviewed": 43,
+      "questionsFlagged": 10,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-CPI-VS-GDP-DEFLATOR-6013",
+      "completedAt": "2026-09-01T14:21:35.207Z",
+      "proposedQuestionIds": [
+        "PM2B2-DEF-M-001",
+        "PM2B2-DEF-M-002",
+        "PM2B2-DEF-H-001",
+        "PM2B2-DEF-H-002",
+        "PM2B2-DEF-FB-006",
+        "PM2B2-DEF-MB-001",
+        "PM2B2-DEF-MB-002",
+        "PM2B2-DEF-MB-003",
+        "ECON-NL-LEGENDARYBOSS-9111",
+        "PM2B2-DEF-LB-002"
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "childConceptId": "indexing-and-real-values",
+      "conceptTitle": "Indexing and Real Values",
+      "questionCount": 49,
+      "questionsReviewed": 49,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-INFLATION-ADJUSTMENT-6014",
+      "completedAt": "2026-09-01T14:22:19.975Z",
+      "proposedQuestionIds": [
+        "ECON-NL-LEGENDARYBOSS-9112",
+        "ECON-NL-LEGENDARYBOSS-9113"
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "childConceptId": "real-versus-nominal-interest-rates",
+      "conceptTitle": "Real versus Nominal Interest Rates",
+      "questionCount": 46,
+      "questionsReviewed": 46,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-REAL-INTEREST-RATE-6015",
+      "completedAt": "2026-09-01T18:10:15.584Z",
+      "proposedQuestionIds": [
+        "PM2B2-RNI-M-002",
+        "PM2B2-RNI-FB-005"
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "childConceptId": "inflation-costs",
+      "conceptTitle": "Costs of Inflation",
+      "questionCount": 58,
+      "questionsReviewed": 58,
+      "questionsFlagged": 9,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6015",
+      "completedAt": "2026-09-01T18:11:15.692Z",
+      "proposedQuestionIds": [
+        "PM2C2-ICOST-H-001",
+        "PM2C2-ICOST-EB-001",
+        "PM2C2-ICOST-EB-002",
+        "PM2C2-ICOST-FB-006",
+        "ECON-SP-INFLATION-REDISTRIBUTION-5079",
+        "ECON-SP-MENU-COSTS-5022",
+        "ECON-SP-SHOELEATHER-COSTS-5021",
+        "ECON-SP-MENU-COSTS-6017",
+        "ECON-SP-SHOELEATHER-COSTS-6016"
+      ]
+    },
+    {
+      "family": "Economic growth and productivity",
+      "childConceptId": "living-standards-and-growth",
+      "conceptTitle": "Living Standards and Growth",
+      "questionCount": 56,
+      "questionsReviewed": 56,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-RULE-OF-70-6016",
+      "completedAt": "2026-09-01T18:11:23.946Z",
+      "proposedQuestionIds": [
+        "P52B-S2-LSG-B1-001"
+      ]
+    },
+    {
+      "family": "Economic growth and productivity",
+      "childConceptId": "productivity-measurement",
+      "conceptTitle": "Productivity Measurement",
+      "questionCount": 53,
+      "questionsReviewed": 53,
+      "questionsFlagged": 22,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-PRODUCTIVITY-CALCULATION-6018",
+      "completedAt": "2026-09-01T18:11:32.703Z",
+      "proposedQuestionIds": [
+        "PM2B3-PROD-E-001",
+        "PM2B3-PROD-E-002",
+        "PM2B3-PROD-E-003",
+        "PM2B3-PROD-E-004",
+        "PM2B3-PROD-M-001",
+        "PM2B3-PROD-M-002",
+        "PM2B3-PROD-M-003",
+        "PM2B3-PROD-M-004",
+        "PM2B3-PROD-H-001",
+        "PM2B3-PROD-H-002",
+        "PM2B3-PROD-H-003",
+        "PM2B3-PROD-H-004",
+        "PM2B3-PROD-L-001",
+        "PM2B3-PROD-L-002",
+        "PM2B3-PROD-EB-001",
+        "PM2B3-PROD-EB-002",
+        "PM2B3-PROD-EB-003",
+        "PM2B3-PROD-FB-004",
+        "PM2B3-PROD-FB-005",
+        "PM2B3-PROD-FB-006",
+        "PM2B3-PROD-LB-001",
+        "PM2B3-PROD-LB-002"
+      ]
+    },
+    {
+      "family": "Economic growth and productivity",
+      "childConceptId": "sources-of-productivity",
+      "conceptTitle": "Sources of Productivity",
+      "questionCount": 72,
+      "questionsReviewed": 72,
+      "questionsFlagged": 6,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-TECHNOLOGICAL-KNOWLEDGE-6022",
+      "completedAt": "2026-09-01T18:11:41.043Z",
+      "proposedQuestionIds": [
+        "ECON-NL-MEDIUM-149",
+        "PM2B3-SRC-EB-001",
+        "PM2B3-SRC-EB-002",
+        "PM2B3-SRC-FB-004",
+        "PM2B3-SRC-FB-005",
+        "PM2B3-SRC-FB-006"
+      ]
+    },
+    {
+      "family": "Economic growth and productivity",
+      "childConceptId": "economic-growth-policy",
+      "conceptTitle": "Economic Growth Policy",
+      "questionCount": 50,
+      "questionsReviewed": 50,
+      "questionsFlagged": 15,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-GROWTH-POLICY-6025",
+      "completedAt": "2026-09-01T18:11:49.360Z",
+      "proposedQuestionIds": [
+        "PM2B3-POL-E-001",
+        "PM2B3-POL-E-002",
+        "PM2B3-POL-M-001",
+        "PM2B3-POL-M-002",
+        "PM2B3-POL-H-001",
+        "PM2B3-POL-H-002",
+        "PM2B3-POL-L-001",
+        "PM2B3-POL-L-002",
+        "PM2B3-POL-EB-001",
+        "PM2B3-POL-EB-002",
+        "PM2B3-POL-EB-003",
+        "PM2B3-POL-FB-004",
+        "PM2B3-POL-FB-005",
+        "PM2B3-POL-FB-006",
+        "PM2B3-POL-LB-001"
+      ]
+    },
+    {
+      "family": "Unemployment and labor markets",
+      "childConceptId": "unemployment-measurement",
+      "conceptTitle": "Unemployment Measurement",
+      "questionCount": 79,
+      "questionsReviewed": 79,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-UNEMPLOYMENT-RATE-6027",
+      "completedAt": "2026-09-01T18:06:16.581Z",
+      "proposedQuestionIds": [
+        "ECON-NL-LEGENDARYBOSS-9124",
+        "ECON-NL-LEGENDARYBOSS-9125"
+      ]
+    },
+    {
+      "family": "Unemployment and labor markets",
+      "childConceptId": "unemployment-types",
+      "conceptTitle": "Types of Unemployment",
+      "questionCount": 57,
+      "questionsReviewed": 57,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2B4-UTYPE-BR-001",
+      "completedAt": "2026-09-01T18:06:32.731Z",
+      "proposedQuestionIds": [
+        "ECON-NL-LEGENDARYBOSS-9127"
+      ]
+    },
+    {
+      "family": "Unemployment and labor markets",
+      "childConceptId": "labor-market-institutions",
+      "conceptTitle": "Labor-Market Institutions",
+      "questionCount": 58,
+      "questionsReviewed": 58,
+      "questionsFlagged": 5,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2B4-LMI-BR-001",
+      "completedAt": "2026-09-01T18:06:50.642Z",
+      "proposedQuestionIds": [
+        "PM2B4-LMI-M-002",
+        "PM2B4-LMI-H-002",
+        "PM2B4-LMI-EB-002",
+        "ECON-NL-LEGENDARYBOSS-9128",
+        "ECON-NL-LEGENDARYBOSS-9129"
+      ]
+    },
+    {
+      "family": "Unemployment and labor markets",
+      "childConceptId": "natural-rate-of-unemployment",
+      "conceptTitle": "Natural Rate of Unemployment",
+      "questionCount": 44,
+      "questionsReviewed": 44,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-NL-NATURAL-RATE-6036",
+      "completedAt": "2026-09-01T18:07:06.811Z",
+      "proposedQuestionIds": [
+        "ECON-NL-LEGENDARYBOSS-9130",
+        "ECON-NL-LEGENDARYBOSS-9131"
+      ]
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "saving-and-investment-identities",
+      "conceptTitle": "Saving, Investment, and National-Saving Identities",
+      "questionCount": 49,
+      "questionsReviewed": 49,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "43215",
+      "completedAt": "2026-09-01T17:56:35.188Z",
+      "proposedQuestionIds": [
+        "43205"
+      ]
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "loanable-funds-equilibrium",
+      "conceptTitle": "Loanable-Funds Equilibrium",
+      "questionCount": 32,
+      "questionsReviewed": 32,
+      "questionsFlagged": 0,
+      "status": "COMPLETE",
+      "lastQuestionId": "43247",
+      "completedAt": "2026-09-01T17:56:45.346Z",
+      "proposedQuestionIds": []
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "loanable-funds-shifts",
+      "conceptTitle": "Loanable-Funds Shifts",
+      "questionCount": 52,
+      "questionsReviewed": 52,
+      "questionsFlagged": 0,
+      "status": "COMPLETE",
+      "lastQuestionId": "43266",
+      "completedAt": "2026-09-01T17:56:56.969Z",
+      "proposedQuestionIds": []
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "crowding-out-and-capital-formation",
+      "conceptTitle": "Crowding Out and Capital Formation",
+      "questionCount": 27,
+      "questionsReviewed": 27,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "43321",
+      "completedAt": "2026-09-01T17:57:07.905Z",
+      "proposedQuestionIds": [
+        "43326"
+      ]
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "budget-accounting-and-public-saving",
+      "conceptTitle": "Budget Accounting and Public Saving",
+      "questionCount": 37,
+      "questionsReviewed": 37,
+      "questionsFlagged": 3,
+      "status": "COMPLETE",
+      "lastQuestionId": "43113",
+      "completedAt": "2026-09-01T17:57:18.795Z",
+      "proposedQuestionIds": [
+        "43092",
+        "43100",
+        "43102"
+      ]
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "deficits-debt-and-government-borrowing",
+      "conceptTitle": "Deficits, Debt, and Government Borrowing",
+      "questionCount": 28,
+      "questionsReviewed": 28,
+      "questionsFlagged": 3,
+      "status": "COMPLETE",
+      "lastQuestionId": "43160",
+      "completedAt": "2026-09-01T17:57:28.193Z",
+      "proposedQuestionIds": [
+        "43158",
+        "43154",
+        "43160"
+      ]
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "childConceptId": "debt-measures-burden-and-fiscal-data",
+      "conceptTitle": "Debt Measures, Debt Burden, and Fiscal Data",
+      "questionCount": 43,
+      "questionsReviewed": 43,
+      "questionsFlagged": 0,
+      "status": "COMPLETE",
+      "lastQuestionId": "43149",
+      "completedAt": "2026-09-01T17:57:37.965Z",
+      "proposedQuestionIds": []
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "childConceptId": "money-functions-and-measures",
+      "conceptTitle": "Money Functions and Measures",
+      "questionCount": 66,
+      "questionsReviewed": 66,
+      "questionsFlagged": 12,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6001",
+      "completedAt": "2026-09-01T17:57:48.429Z",
+      "proposedQuestionIds": [
+        "LG-Q-1",
+        "LG-Q-2",
+        "LG-Q-3",
+        "LG-Q-4",
+        "LG-R-5000",
+        "ECON-SP-DISTINGUISH-M1-M2-6001",
+        "ECON-SP-COMMODITY-VS-FIAT-MONEY-5067",
+        "ECON-SP-DISTINGUISH-M1-M2-5002",
+        "ECON-SP-DISTINGUISH-M1-M2-5003",
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-5000",
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-5001",
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-6000"
+      ]
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "childConceptId": "central-bank-and-federal-reserve",
+      "conceptTitle": "Central Banking and the Federal Reserve",
+      "questionCount": 50,
+      "questionsReviewed": 50,
+      "questionsFlagged": 7,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6002",
+      "completedAt": "2026-09-01T17:57:57.201Z",
+      "proposedQuestionIds": [
+        "PM2C1-FED-FB-005",
+        "LG-R-5006",
+        "LG-R-5010",
+        "ECON-SP-FOMC-ROLE-6003",
+        "ECON-SP-CENTRAL-BANK-ROLE-5004",
+        "ECON-SP-FOMC-ROLE-5005",
+        "ECON-SP-CENTRAL-BANK-ROLE-6002"
+      ]
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "childConceptId": "bank-balance-sheets-reserves-and-capital",
+      "conceptTitle": "Bank Balance Sheets, Reserves, and Capital",
+      "questionCount": 53,
+      "questionsReviewed": 53,
+      "questionsFlagged": 5,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6004",
+      "completedAt": "2026-09-01T17:58:05.725Z",
+      "proposedQuestionIds": [
+        "ECON-SP-CALCULATE-EXCESS-RESERVES-5007",
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-5006",
+        "LG-R-5012",
+        "ECON-SP-CALCULATE-EXCESS-RESERVES-6005",
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004"
+      ]
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "childConceptId": "deposit-creation-and-money-multiplier",
+      "conceptTitle": "Deposit Creation and the Money Multiplier",
+      "questionCount": 37,
+      "questionsReviewed": 37,
+      "questionsFlagged": 5,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6005",
+      "completedAt": "2026-09-01T17:58:13.774Z",
+      "proposedQuestionIds": [
+        "P52A-BANK-M-006",
+        "ECON-SP-CALCULATE-MONEY-MULTIPLIER-EFFECT-5008",
+        "ECON-SP-DEPOSIT-CREATION-5070",
+        "LG-R-5013",
+        "ECON-SP-CALCULATE-MONEY-MULTIPLIER-EFFECT-6006"
+      ]
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "childConceptId": "monetary-policy-tools",
+      "conceptTitle": "Monetary-Policy Tools",
+      "questionCount": 60,
+      "questionsReviewed": 60,
+      "questionsFlagged": 8,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6007",
+      "completedAt": "2026-09-01T17:58:21.836Z",
+      "proposedQuestionIds": [
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-5009",
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-5010",
+        "ECON-SP-INTEREST-ON-RESERVES-POLICY-5080",
+        "LG-R-5018",
+        "LG-R-5020",
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007",
+        "LG-B-6006",
+        "LG-B-6007"
+      ]
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "childConceptId": "monetary-control-limits",
+      "conceptTitle": "Limits of Monetary Control",
+      "questionCount": 60,
+      "questionsReviewed": 60,
+      "questionsFlagged": 8,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6008",
+      "completedAt": "2026-09-01T17:58:29.950Z",
+      "proposedQuestionIds": [
+        "LG-Q-121",
+        "LG-Q-9024",
+        "PM2C1-MCL-MB-002",
+        "LG-Q-9114",
+        "ECON-SP-BANK-LEVERAGE-RISK-5012",
+        "ECON-SP-LIMITS-OF-MONETARY-CONTROL-5011",
+        "ECON-SP-BANK-LEVERAGE-RISK-6009",
+        "ECON-SP-LIMITS-OF-MONETARY-CONTROL-6008"
+      ]
+    },
+    {
+      "family": "Money growth, inflation, and neutrality",
+      "childConceptId": "quantity-theory-of-money",
+      "conceptTitle": "Quantity Theory of Money",
+      "questionCount": 81,
+      "questionsReviewed": 81,
+      "questionsFlagged": 9,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6010",
+      "completedAt": "2026-09-01T17:58:39.212Z",
+      "proposedQuestionIds": [
+        "LG-Q-334",
+        "LG-Q-9027",
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-5015",
+        "ECON-SP-QUANTITY-EQUATION-5013",
+        "ECON-SP-QUANTITY-EQUATION-5014",
+        "ECON-SP-VALUE-OF-MONEY-5016",
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-6011",
+        "ECON-SP-QUANTITY-EQUATION-6010",
+        "ECON-SP-VALUE-OF-MONEY-6012"
+      ]
+    },
+    {
+      "family": "Money growth, inflation, and neutrality",
+      "childConceptId": "monetary-neutrality",
+      "conceptTitle": "Monetary Neutrality",
+      "questionCount": 62,
+      "questionsReviewed": 62,
+      "questionsFlagged": 4,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2C2-NEUT-BR-001",
+      "completedAt": "2026-09-01T17:58:48.145Z",
+      "proposedQuestionIds": [
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-5017",
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-5018",
+        "ECON-SP-MONETARY-NEUTRALITY-6014",
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-6013"
+      ]
+    },
+    {
+      "family": "Money growth, inflation, and neutrality",
+      "childConceptId": "fisher-effect",
+      "conceptTitle": "Fisher Effect",
+      "questionCount": 52,
+      "questionsReviewed": 52,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2C2-FISH-BR-001",
+      "completedAt": "2026-09-01T17:58:58.166Z",
+      "proposedQuestionIds": [
+        "ECON-SP-NOMINAL-REAL-INTEREST-RATE-5083",
+        "ECON-SP-FISHER-EFFECT-6015"
+      ]
+    },
+    {
+      "family": "Money growth, inflation, and neutrality",
+      "childConceptId": "inflation-tax-and-deflation",
+      "conceptTitle": "Inflation Tax and Deflation",
+      "questionCount": 48,
+      "questionsReviewed": 48,
+      "questionsFlagged": 2,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6016",
+      "completedAt": "2026-09-01T17:59:06.890Z",
+      "proposedQuestionIds": [
+        "ECON-SP-INFLATION-TAX-6018",
+        "LG-B-6016"
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "childConceptId": "aggregate-demand",
+      "conceptTitle": "Aggregate Demand",
+      "questionCount": 59,
+      "questionsReviewed": 59,
+      "questionsFlagged": 20,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-IDENTIFY-AD-SHIFTERS-6020",
+      "completedAt": "2026-09-01T17:52:59.697Z",
+      "proposedQuestionIds": [
+        "P52A-AD-H-001",
+        "P52A-AD-H-003",
+        "P52A-AD-H-004",
+        "P52A-AD-EL-002",
+        "P52A-AD-EL-003",
+        "P52A-AD-EL-004",
+        "P52A-AD-L-001",
+        "P52A-AD-L-004",
+        "P52A-AD-L-006",
+        "P52A-AD-B3-001",
+        "P52A-AD-B3-002",
+        "P52A-AD-LB-001",
+        "P52A-AD-LB-003",
+        "ECON-SP-EXPLAIN-AD-SLOPE-5024",
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-5025",
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-5026",
+        "ECON-SP-READ-AD-AS-AXES-5085",
+        "ECON-SP-READ-AD-SHIFT-5087",
+        "ECON-SP-EXPLAIN-AD-SLOPE-6019",
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-6020"
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "childConceptId": "short-run-aggregate-supply",
+      "conceptTitle": "Short-Run Aggregate Supply",
+      "questionCount": 48,
+      "questionsReviewed": 48,
+      "questionsFlagged": 16,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-IDENTIFY-SRAS-SHIFTERS-6023",
+      "completedAt": "2026-09-01T17:53:15.866Z",
+      "proposedQuestionIds": [
+        "P52A-AS-M-003",
+        "P52A-AS-H-001",
+        "P52A-AS-H-004",
+        "P52A-AS-EL-002",
+        "P52A-AS-EL-003",
+        "P52A-AS-EL-004",
+        "P52A-AS-L-002",
+        "P52A-AS-L-004",
+        "P52A-AS-B3-003",
+        "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-5031",
+        "ECON-SP-EXPLAIN-SRAS-UPWARD-5028",
+        "ECON-SP-IDENTIFY-SRAS-SHIFTERS-5029",
+        "ECON-SP-IDENTIFY-SRAS-SHIFTERS-5030",
+        "ECON-SP-READ-SRAS-SHIFT-5092",
+        "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-6024",
+        "ECON-SP-EXPLAIN-SRAS-UPWARD-6022"
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "childConceptId": "long-run-aggregate-supply-and-potential-output",
+      "conceptTitle": "Long-Run Aggregate Supply and Potential Output",
+      "questionCount": 15,
+      "questionsReviewed": 15,
+      "questionsFlagged": 6,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-IDENTIFY-LRAS-6021",
+      "completedAt": "2026-09-01T17:53:23.142Z",
+      "proposedQuestionIds": [
+        "P52A-AS-EL-001",
+        "P52A-AS-L-001",
+        "P52A-AS-L-005",
+        "P52A-AS-LB-003",
+        "ECON-SP-IDENTIFY-LRAS-5027",
+        "ECON-SP-IDENTIFY-LRAS-6021"
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "childConceptId": "ad-as-equilibrium-and-output-gaps",
+      "conceptTitle": "AD-AS Equilibrium and Output Gaps",
+      "questionCount": 30,
+      "questionsReviewed": 30,
+      "questionsFlagged": 6,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-CLASSIFY-OUTPUT-GAP-6027",
+      "completedAt": "2026-09-01T17:53:30.442Z",
+      "proposedQuestionIds": [
+        "ECON-SP-CONNECT-OUTPUT-UNEMPLOYMENT-5068",
+        "ECON-SP-READ-AD-AS-EQUILIBRIUM-5086",
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-5034",
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-5035",
+        "ECON-SP-IDENTIFY-NATURAL-OUTPUT-5076",
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-6027"
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "childConceptId": "demand-and-supply-shocks",
+      "conceptTitle": "Demand and Supply Shocks",
+      "questionCount": 69,
+      "questionsReviewed": 69,
+      "questionsFlagged": 11,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-TRACE-SUPPLY-SHOCK-6026",
+      "completedAt": "2026-09-01T17:53:37.886Z",
+      "proposedQuestionIds": [
+        "ECON-SP-EASY-35",
+        "ECON-SP-MEDIUM-138",
+        "ECON-SP-CLASSIFY-DEMAND-SHOCK-5065",
+        "ECON-SP-CLASSIFY-SUPPLY-SHOCK-5066",
+        "ECON-SP-DEFINE-STAGFLATION-5069",
+        "ECON-SP-EVALUATE-SUPPLY-SHOCK-POLICY-5062",
+        "ECON-SP-TRACE-COMBINED-SHOCKS-5093",
+        "ECON-SP-TRACE-DEMAND-SHOCK-5032",
+        "ECON-SP-TRACE-SUPPLY-SHOCK-5033",
+        "ECON-SP-EVALUATE-SUPPLY-SHOCK-POLICY-6053",
+        "ECON-SP-TRACE-SUPPLY-SHOCK-6026"
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "childConceptId": "long-run-macroeconomic-self-adjustment",
+      "conceptTitle": "Long-Run Macroeconomic Self-Adjustment",
+      "questionCount": 33,
+      "questionsReviewed": 33,
+      "questionsFlagged": 3,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-6028",
+      "completedAt": "2026-09-01T17:53:46.443Z",
+      "proposedQuestionIds": [
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-5036",
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-5037",
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-6028"
+      ]
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "childConceptId": "liquidity-preference-and-money-market",
+      "conceptTitle": "Liquidity Preference and the Money Market",
+      "questionCount": 104,
+      "questionsReviewed": 104,
+      "questionsFlagged": 5,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2C3-LPMM-BR-001",
+      "completedAt": "2026-09-01T17:53:53.599Z",
+      "proposedQuestionIds": [
+        "ECON-SP-LIQUIDITY-PREFERENCE-THEORY-5038",
+        "ECON-SP-MONEY-DEMAND-INTEREST-RATE-5039",
+        "ECON-SP-READ-MONEY-MARKET-EQUILIBRIUM-5088",
+        "ECON-SP-LIQUIDITY-PREFERENCE-THEORY-6029",
+        "ECON-SP-MONEY-DEMAND-INTEREST-RATE-6030"
+      ]
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "childConceptId": "monetary-policy-transmission",
+      "conceptTitle": "Monetary-Policy Transmission",
+      "questionCount": 87,
+      "questionsReviewed": 87,
+      "questionsFlagged": 4,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6020",
+      "completedAt": "2026-09-01T17:54:01.405Z",
+      "proposedQuestionIds": [
+        "ECON-SP-MONETARY-POLICY-AD-SHIFT-5082",
+        "ECON-SP-MONETARY-POLICY-TRANSMISSION-5040",
+        "ECON-SP-READ-MONEY-MARKET-SHIFT-5089",
+        "ECON-SP-MONETARY-POLICY-TRANSMISSION-6031"
+      ]
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "childConceptId": "fiscal-policy-and-aggregate-demand",
+      "conceptTitle": "Fiscal Policy and Aggregate Demand",
+      "questionCount": 54,
+      "questionsReviewed": 54,
+      "questionsFlagged": 4,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6021",
+      "completedAt": "2026-09-01T17:54:10.162Z",
+      "proposedQuestionIds": [
+        "P52A-FISCAD-EL-002",
+        "P52A-FISCAD-B2-002",
+        "ECON-SP-FISCAL-POLICY-AD-SHIFT-6032",
+        "ECON-SP-TAX-CUT-AD-6033"
+      ]
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "childConceptId": "fiscal-multipliers-and-crowding-out",
+      "conceptTitle": "Fiscal Multipliers and Crowding Out",
+      "questionCount": 76,
+      "questionsReviewed": 76,
+      "questionsFlagged": 8,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6023",
+      "completedAt": "2026-09-01T17:54:17.884Z",
+      "proposedQuestionIds": [
+        "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-5044",
+        "ECON-SP-CROWDING-OUT-EFFECT-5045",
+        "ECON-SP-FISCAL-POLICY-MAGNITUDE-5071",
+        "ECON-SP-MULTIPLIER-EFFECT-5043",
+        "ECON-SP-READ-MULTIPLIER-GRAPH-5090",
+        "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-6035",
+        "ECON-SP-CROWDING-OUT-EFFECT-6036",
+        "ECON-SP-MULTIPLIER-EFFECT-6034"
+      ]
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "childConceptId": "stabilization-policy",
+      "conceptTitle": "Stabilization Policy",
+      "questionCount": 82,
+      "questionsReviewed": 82,
+      "questionsFlagged": 8,
+      "status": "COMPLETE",
+      "lastQuestionId": "LG-B-6025",
+      "completedAt": "2026-09-01T17:54:25.855Z",
+      "proposedQuestionIds": [
+        "LG-Q-282",
+        "LG-Q-9140",
+        "ECON-SP-AUTOMATIC-STABILIZERS-5064",
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-5063",
+        "ECON-SP-LIQUIDITY-TRAP-5047",
+        "ECON-SP-POLICY-LAGS-5046",
+        "ECON-SP-LIQUIDITY-TRAP-6038",
+        "ECON-SP-POLICY-LAGS-6037"
+      ]
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "childConceptId": "short-run-phillips-curve",
+      "conceptTitle": "Short-Run Phillips Curve",
+      "questionCount": 62,
+      "questionsReviewed": 62,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-READ-PC-AXES-6040",
+      "completedAt": "2026-09-01T17:54:33.075Z",
+      "proposedQuestionIds": [
+        "ECON-SP-MOVE-ALONG-SRPC-6041"
+      ]
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "childConceptId": "long-run-phillips-curve",
+      "conceptTitle": "Long-Run Phillips Curve",
+      "questionCount": 49,
+      "questionsReviewed": 49,
+      "questionsFlagged": 0,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2A-LRPC-BR-022",
+      "completedAt": "2026-09-01T17:54:41.089Z",
+      "proposedQuestionIds": []
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "childConceptId": "phillips-curve-expectations",
+      "conceptTitle": "Phillips-Curve Expectations",
+      "questionCount": 57,
+      "questionsReviewed": 57,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045",
+      "completedAt": "2026-09-01T17:54:49.999Z",
+      "proposedQuestionIds": [
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045"
+      ]
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "childConceptId": "disinflation-and-policy",
+      "conceptTitle": "Disinflation and Policy",
+      "questionCount": 43,
+      "questionsReviewed": 43,
+      "questionsFlagged": 0,
+      "status": "COMPLETE",
+      "lastQuestionId": "PM2A-DIS-BR-021",
+      "completedAt": "2026-09-01T17:55:04.802Z",
+      "proposedQuestionIds": []
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "childConceptId": "sacrifice-ratio",
+      "conceptTitle": "Sacrifice Ratio",
+      "questionCount": 51,
+      "questionsReviewed": 51,
+      "questionsFlagged": 1,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051",
+      "completedAt": "2026-09-01T17:55:16.938Z",
+      "proposedQuestionIds": [
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050"
+      ]
+    },
+    {
+      "family": "Advanced Macro Checkpoint Supplement",
+      "childConceptId": "integrated-macroeconomic-analysis",
+      "conceptTitle": "Advanced Macro Checkpoint Supplement",
+      "questionCount": 112,
+      "questionsReviewed": 112,
+      "questionsFlagged": 8,
+      "status": "COMPLETE",
+      "lastQuestionId": "ECON-SP-MAP-AD-AS-TO-PC-6052",
+      "completedAt": "2026-09-01T17:55:28.443Z",
+      "proposedQuestionIds": [
+        "ECON-SP-EASYBOSS-2014",
+        "ECON-SP-FINALBOSS-4005",
+        "ECON-NL-LEGENDARYBOSS-9132",
+        "ECON-SP-LEGENDARYBOSS-9101",
+        "ECON-SP-LEGENDARYBOSS-9106",
+        "ECON-SP-LEGENDARYBOSS-9119",
+        "ECON-SP-MAP-AD-AS-TO-PC-5061",
+        "ECON-SP-MAP-AD-AS-TO-PC-6052"
+      ]
+    }
+  ],
+  "ordinaryReviewed": 2758,
+  "supplementReviewed": 112,
+  "totalReviewed": 2870,
+  "totalProposed": 292
+}

@@ -1,0 +1,775 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-01T18:17:59.307Z",
+  "status": "COMPLETE",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1",
+  "librarySha256": "1fbc515ceb3d4d876bfaf945c458f8ab966aab7cf7ff7ee5d319595a44afe919",
+  "expected": {
+    "ordinary": 2758,
+    "supplement": 112,
+    "total": 2870
+  },
+  "actual": {
+    "ordinaryReviewed": 2758,
+    "supplementReviewed": 112,
+    "totalReviewed": 2870,
+    "totalProposed": 292
+  },
+  "coverage": {
+    "expectedMacroQuestions": 2870,
+    "uniqueQuestionsReviewed": 2870,
+    "ordinaryReviewed": 2758,
+    "supplementReviewed": 112,
+    "missingFromHumanRead": 0,
+    "reviewedTwice": 0,
+    "proposedRowsWithUnknownId": 0,
+    "duplicateProposedIds": 0
+  },
+  "workbook": {
+    "path": "audit_tools/macro_question_rewrite_master.xlsx",
+    "proposalRows": 292,
+    "uniqueQuestionIds": 292
+  },
+  "structuralFindings": {
+    "total": 15,
+    "byCategory": {
+      "ANSWER_KEY_OR_OPTION_SET_MISMATCH": 2,
+      "CALCULATION_AND_CONCEPT_SCOPE_MISMATCH": 1,
+      "missing-image-asset": 12
+    }
+  },
+  "qualityControlSample": [
+    {
+      "family": "GDP and national income",
+      "unflagged": [
+        "ECON-NL-EASYBOSS-2010",
+        "ECON-NL-MEDIUM-110",
+        "ECON-NL-EASYBOSS-2016",
+        "PM2B1-GDPL-FB-006",
+        "ECON-NL-ELITE-304"
+      ],
+      "flagged": [
+        "ECON-NL-GDP-COMPONENTS-IDENTITY-6003",
+        "ECON-NL-MEDIUM-103",
+        "ECON-NL-EASY-7",
+        "ECON-NL-LEGENDARYBOSS-9104",
+        "ECON-NL-LEGENDARYBOSS-9106"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "unflagged": [
+        "PM2B2-DEF-L-001",
+        "ECON-NL-EASY-22",
+        "LG-Q-142",
+        "ECON-NL-LEGENDARY-9023",
+        "PM2B2-DEF-E-002"
+      ],
+      "flagged": [
+        "ECON-NL-LEGENDARYBOSS-9115",
+        "PM2B2-DEF-M-001",
+        "PM2B2-DEF-MB-003",
+        "ECON-SP-MENU-COSTS-6017",
+        "P52A-CPI-H-006"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Economic growth and productivity",
+      "unflagged": [
+        "ECON-NL-MEDIUMBOSS-3003",
+        "P52B-S2-LSG-M-003",
+        "ECON-NL-MEDIUM-159",
+        "ECON-NL-LEGENDARY-9060",
+        "ECON-NL-ELITE-357"
+      ],
+      "flagged": [
+        "PM2B3-PROD-LB-001",
+        "PM2B3-POL-EB-001",
+        "PM2B3-PROD-L-002",
+        "PM2B3-PROD-M-002",
+        "PM2B3-PROD-H-002"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Unemployment and labor markets",
+      "unflagged": [
+        "ECON-NL-FINALBOSS-4033",
+        "PM2B4-NRU-MB-006",
+        "PM2B4-NRU-MB-005",
+        "ECON-NL-EASY-71",
+        "ECON-NL-ELITE-378"
+      ],
+      "flagged": [
+        "ECON-NL-LEGENDARYBOSS-9131",
+        "ECON-NL-LEGENDARYBOSS-9130",
+        "PM2B4-LMI-H-002",
+        "ECON-NL-LEGENDARYBOSS-9125",
+        "PM2B4-LMI-EB-002"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "unflagged": [
+        "43277",
+        "43172",
+        "43214",
+        "43133",
+        "43116"
+      ],
+      "flagged": [
+        "43160",
+        "43326",
+        "43102",
+        "43158",
+        "43205"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "unflagged": [
+        "LG-Q-17",
+        "LG-Q-7",
+        "LG-Q-221",
+        "ECON-SP-MEDIUM-109",
+        "LG-B-6000"
+      ],
+      "flagged": [
+        "ECON-SP-DISTINGUISH-M1-M2-6001",
+        "ECON-SP-BANK-LEVERAGE-RISK-5012",
+        "LG-Q-1",
+        "ECON-SP-DEPOSIT-CREATION-5070",
+        "LG-R-5018"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Money growth, inflation, and neutrality",
+      "unflagged": [
+        "ECON-SP-INFLATION-TAX-5023",
+        "LG-Q-30",
+        "LG-Q-234",
+        "LG-Q-354",
+        "PM2C2-ITAX-L-001"
+      ],
+      "flagged": [
+        "ECON-SP-NOMINAL-REAL-INTEREST-RATE-5083",
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-6011",
+        "LG-B-6016",
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-6013",
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-5018"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "unflagged": [
+        "P52A-AD-L-003",
+        "PG3-MEQ-EL-002",
+        "ECON-SP-ELITE-312",
+        "ECON-SP-HARD-223",
+        "PG3-AD-E-001"
+      ],
+      "flagged": [
+        "P52A-AD-L-004",
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-5034",
+        "P52A-AS-EL-002",
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-5026",
+        "ECON-SP-IDENTIFY-LRAS-6021"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "unflagged": [
+        "LG-Q-168",
+        "LG-R-5051",
+        "LG-Q-9074",
+        "ECON-SP-ELITE-342",
+        "LG-Q-9067"
+      ],
+      "flagged": [
+        "ECON-SP-READ-MONEY-MARKET-EQUILIBRIUM-5088",
+        "ECON-SP-CROWDING-OUT-EFFECT-5045",
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-5063",
+        "ECON-SP-POLICY-LAGS-6037",
+        "ECON-SP-MONETARY-POLICY-AD-SHIFT-5082"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "unflagged": [
+        "PM2A-SRPC-FB-010",
+        "PG5-PC-H-004",
+        "ECON-SP-EASY-66",
+        "PM2A-SRPC-EB-009",
+        "ECON-SP-READ-PC-AXES-5049"
+      ],
+      "flagged": [
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045",
+        "ECON-SP-MOVE-ALONG-SRPC-6041",
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    },
+    {
+      "family": "Advanced Macro Checkpoint Supplement",
+      "unflagged": [
+        "ECON-SP-FINALBOSS-4000",
+        "PM2E-CH-OPEN-002",
+        "ECON-SP-FINALBOSS-4021",
+        "ECON-SP-ELITE-332",
+        "ECON-SP-LEGENDARYBOSS-9105",
+        "ECON-SP-LEGENDARY-9010",
+        "ECON-SP-LEGENDARY-9054",
+        "ECON-SP-FINALBOSS-4003",
+        "ECON-SP-LEGENDARY-9013",
+        "ECON-SP-LEGENDARYBOSS-9109"
+      ],
+      "flagged": [
+        "ECON-SP-FINALBOSS-4005",
+        "ECON-SP-LEGENDARYBOSS-9106",
+        "ECON-SP-LEGENDARYBOSS-9101",
+        "ECON-SP-LEGENDARYBOSS-9119",
+        "ECON-SP-EASYBOSS-2014",
+        "ECON-SP-MAP-AD-AS-TO-PC-5061",
+        "ECON-NL-LEGENDARYBOSS-9132",
+        "ECON-SP-MAP-AD-AS-TO-PC-6052"
+      ],
+      "result": "CONSISTENT",
+      "note": "Re-opened after the full sweep to confirm the material-defect threshold and proposal specificity were applied consistently."
+    }
+  ],
+  "families": [
+    {
+      "family": "GDP and national income",
+      "questionCount": 230,
+      "questionsReviewed": 230,
+      "proposedChanges": 35,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "gdp-measurement",
+          "conceptTitle": "GDP Measurement",
+          "questionCount": 73,
+          "questionsReviewed": 73,
+          "proposedChanges": 12,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "gdp-components",
+          "conceptTitle": "GDP Components",
+          "questionCount": 63,
+          "questionsReviewed": 63,
+          "proposedChanges": 18,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "real-versus-nominal-gdp",
+          "conceptTitle": "Real versus Nominal GDP",
+          "questionCount": 49,
+          "questionsReviewed": 49,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "limits-of-gdp",
+          "conceptTitle": "Limits of GDP",
+          "questionCount": 45,
+          "questionsReviewed": 45,
+          "proposedChanges": 3,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Inflation measurement and real values",
+      "questionCount": 303,
+      "questionsReviewed": 303,
+      "proposedChanges": 31,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "cpi-and-inflation-measurement",
+          "conceptTitle": "CPI and Inflation Measurement",
+          "questionCount": 60,
+          "questionsReviewed": 60,
+          "proposedChanges": 4,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "cpi-bias",
+          "conceptTitle": "CPI Bias",
+          "questionCount": 47,
+          "questionsReviewed": 47,
+          "proposedChanges": 4,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "cpi-versus-gdp-deflator",
+          "conceptTitle": "CPI versus GDP Deflator",
+          "questionCount": 43,
+          "questionsReviewed": 43,
+          "proposedChanges": 10,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "indexing-and-real-values",
+          "conceptTitle": "Indexing and Real Values",
+          "questionCount": 49,
+          "questionsReviewed": 49,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "real-versus-nominal-interest-rates",
+          "conceptTitle": "Real versus Nominal Interest Rates",
+          "questionCount": 46,
+          "questionsReviewed": 46,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "inflation-costs",
+          "conceptTitle": "Costs of Inflation",
+          "questionCount": 58,
+          "questionsReviewed": 58,
+          "proposedChanges": 9,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Economic growth and productivity",
+      "questionCount": 231,
+      "questionsReviewed": 231,
+      "proposedChanges": 44,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "living-standards-and-growth",
+          "conceptTitle": "Living Standards and Growth",
+          "questionCount": 56,
+          "questionsReviewed": 56,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "productivity-measurement",
+          "conceptTitle": "Productivity Measurement",
+          "questionCount": 53,
+          "questionsReviewed": 53,
+          "proposedChanges": 22,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "sources-of-productivity",
+          "conceptTitle": "Sources of Productivity",
+          "questionCount": 72,
+          "questionsReviewed": 72,
+          "proposedChanges": 6,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "economic-growth-policy",
+          "conceptTitle": "Economic Growth Policy",
+          "questionCount": 50,
+          "questionsReviewed": 50,
+          "proposedChanges": 15,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Unemployment and labor markets",
+      "questionCount": 238,
+      "questionsReviewed": 238,
+      "proposedChanges": 10,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "unemployment-measurement",
+          "conceptTitle": "Unemployment Measurement",
+          "questionCount": 79,
+          "questionsReviewed": 79,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "unemployment-types",
+          "conceptTitle": "Types of Unemployment",
+          "questionCount": 57,
+          "questionsReviewed": 57,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "labor-market-institutions",
+          "conceptTitle": "Labor-Market Institutions",
+          "questionCount": 58,
+          "questionsReviewed": 58,
+          "proposedChanges": 5,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "natural-rate-of-unemployment",
+          "conceptTitle": "Natural Rate of Unemployment",
+          "questionCount": 44,
+          "questionsReviewed": 44,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Saving, investment, budgets, and debt",
+      "questionCount": 268,
+      "questionsReviewed": 268,
+      "proposedChanges": 8,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "saving-and-investment-identities",
+          "conceptTitle": "Saving, Investment, and National-Saving Identities",
+          "questionCount": 49,
+          "questionsReviewed": 49,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "loanable-funds-equilibrium",
+          "conceptTitle": "Loanable-Funds Equilibrium",
+          "questionCount": 32,
+          "questionsReviewed": 32,
+          "proposedChanges": 0,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "loanable-funds-shifts",
+          "conceptTitle": "Loanable-Funds Shifts",
+          "questionCount": 52,
+          "questionsReviewed": 52,
+          "proposedChanges": 0,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "crowding-out-and-capital-formation",
+          "conceptTitle": "Crowding Out and Capital Formation",
+          "questionCount": 27,
+          "questionsReviewed": 27,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "budget-accounting-and-public-saving",
+          "conceptTitle": "Budget Accounting and Public Saving",
+          "questionCount": 37,
+          "questionsReviewed": 37,
+          "proposedChanges": 3,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "deficits-debt-and-government-borrowing",
+          "conceptTitle": "Deficits, Debt, and Government Borrowing",
+          "questionCount": 28,
+          "questionsReviewed": 28,
+          "proposedChanges": 3,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "debt-measures-burden-and-fiscal-data",
+          "conceptTitle": "Debt Measures, Debt Burden, and Fiscal Data",
+          "questionCount": 43,
+          "questionsReviewed": 43,
+          "proposedChanges": 0,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Money, banking, and the Federal Reserve",
+      "questionCount": 326,
+      "questionsReviewed": 326,
+      "proposedChanges": 45,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "money-functions-and-measures",
+          "conceptTitle": "Money Functions and Measures",
+          "questionCount": 66,
+          "questionsReviewed": 66,
+          "proposedChanges": 12,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "central-bank-and-federal-reserve",
+          "conceptTitle": "Central Banking and the Federal Reserve",
+          "questionCount": 50,
+          "questionsReviewed": 50,
+          "proposedChanges": 7,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "bank-balance-sheets-reserves-and-capital",
+          "conceptTitle": "Bank Balance Sheets, Reserves, and Capital",
+          "questionCount": 53,
+          "questionsReviewed": 53,
+          "proposedChanges": 5,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "deposit-creation-and-money-multiplier",
+          "conceptTitle": "Deposit Creation and the Money Multiplier",
+          "questionCount": 37,
+          "questionsReviewed": 37,
+          "proposedChanges": 5,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "monetary-policy-tools",
+          "conceptTitle": "Monetary-Policy Tools",
+          "questionCount": 60,
+          "questionsReviewed": 60,
+          "proposedChanges": 8,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "monetary-control-limits",
+          "conceptTitle": "Limits of Monetary Control",
+          "questionCount": 60,
+          "questionsReviewed": 60,
+          "proposedChanges": 8,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Money growth, inflation, and neutrality",
+      "questionCount": 243,
+      "questionsReviewed": 243,
+      "proposedChanges": 17,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "quantity-theory-of-money",
+          "conceptTitle": "Quantity Theory of Money",
+          "questionCount": 81,
+          "questionsReviewed": 81,
+          "proposedChanges": 9,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "monetary-neutrality",
+          "conceptTitle": "Monetary Neutrality",
+          "questionCount": 62,
+          "questionsReviewed": 62,
+          "proposedChanges": 4,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "fisher-effect",
+          "conceptTitle": "Fisher Effect",
+          "questionCount": 52,
+          "questionsReviewed": 52,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "inflation-tax-and-deflation",
+          "conceptTitle": "Inflation Tax and Deflation",
+          "questionCount": 48,
+          "questionsReviewed": 48,
+          "proposedChanges": 2,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Aggregate demand, aggregate supply, and equilibrium",
+      "questionCount": 254,
+      "questionsReviewed": 254,
+      "proposedChanges": 62,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "aggregate-demand",
+          "conceptTitle": "Aggregate Demand",
+          "questionCount": 59,
+          "questionsReviewed": 59,
+          "proposedChanges": 20,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "short-run-aggregate-supply",
+          "conceptTitle": "Short-Run Aggregate Supply",
+          "questionCount": 48,
+          "questionsReviewed": 48,
+          "proposedChanges": 16,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "long-run-aggregate-supply-and-potential-output",
+          "conceptTitle": "Long-Run Aggregate Supply and Potential Output",
+          "questionCount": 15,
+          "questionsReviewed": 15,
+          "proposedChanges": 6,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "ad-as-equilibrium-and-output-gaps",
+          "conceptTitle": "AD-AS Equilibrium and Output Gaps",
+          "questionCount": 30,
+          "questionsReviewed": 30,
+          "proposedChanges": 6,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "demand-and-supply-shocks",
+          "conceptTitle": "Demand and Supply Shocks",
+          "questionCount": 69,
+          "questionsReviewed": 69,
+          "proposedChanges": 11,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "long-run-macroeconomic-self-adjustment",
+          "conceptTitle": "Long-Run Macroeconomic Self-Adjustment",
+          "questionCount": 33,
+          "questionsReviewed": 33,
+          "proposedChanges": 3,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Stabilization and policy transmission",
+      "questionCount": 403,
+      "questionsReviewed": 403,
+      "proposedChanges": 29,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "liquidity-preference-and-money-market",
+          "conceptTitle": "Liquidity Preference and the Money Market",
+          "questionCount": 104,
+          "questionsReviewed": 104,
+          "proposedChanges": 5,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "monetary-policy-transmission",
+          "conceptTitle": "Monetary-Policy Transmission",
+          "questionCount": 87,
+          "questionsReviewed": 87,
+          "proposedChanges": 4,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "fiscal-policy-and-aggregate-demand",
+          "conceptTitle": "Fiscal Policy and Aggregate Demand",
+          "questionCount": 54,
+          "questionsReviewed": 54,
+          "proposedChanges": 4,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "fiscal-multipliers-and-crowding-out",
+          "conceptTitle": "Fiscal Multipliers and Crowding Out",
+          "questionCount": 76,
+          "questionsReviewed": 76,
+          "proposedChanges": 8,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "stabilization-policy",
+          "conceptTitle": "Stabilization Policy",
+          "questionCount": 82,
+          "questionsReviewed": 82,
+          "proposedChanges": 8,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Phillips curves and disinflation",
+      "questionCount": 262,
+      "questionsReviewed": 262,
+      "proposedChanges": 3,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "short-run-phillips-curve",
+          "conceptTitle": "Short-Run Phillips Curve",
+          "questionCount": 62,
+          "questionsReviewed": 62,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "long-run-phillips-curve",
+          "conceptTitle": "Long-Run Phillips Curve",
+          "questionCount": 49,
+          "questionsReviewed": 49,
+          "proposedChanges": 0,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "phillips-curve-expectations",
+          "conceptTitle": "Phillips-Curve Expectations",
+          "questionCount": 57,
+          "questionsReviewed": 57,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "disinflation-and-policy",
+          "conceptTitle": "Disinflation and Policy",
+          "questionCount": 43,
+          "questionsReviewed": 43,
+          "proposedChanges": 0,
+          "status": "COMPLETE"
+        },
+        {
+          "childConceptId": "sacrifice-ratio",
+          "conceptTitle": "Sacrifice Ratio",
+          "questionCount": 51,
+          "questionsReviewed": 51,
+          "proposedChanges": 1,
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "family": "Advanced Macro Checkpoint Supplement",
+      "questionCount": 112,
+      "questionsReviewed": 112,
+      "proposedChanges": 8,
+      "status": "COMPLETE",
+      "children": [
+        {
+          "childConceptId": "integrated-macroeconomic-analysis",
+          "conceptTitle": "Advanced Macro Checkpoint Supplement",
+          "questionCount": 112,
+          "questionsReviewed": 112,
+          "proposedChanges": 8,
+          "status": "COMPLETE"
+        }
+      ]
+    }
+  ]
+}
