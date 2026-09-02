@@ -51,6 +51,17 @@ export function normalizeComparable(value) {
     .trim();
 }
 
+export function normalizeDuplicateOption(value) {
+  return normalizeText(value)
+    .toLowerCase()
+    .replace(/[\u2010-\u2015\u2212\uFE63\uFF0D]/g, "-")
+    .replace(/[\u2794\u279C\u279D\u279E\u279F\u27A0\u27A1\u27A2\u27A3\u27A4\u27A5\u27A6\u27A7\u27A8\u27A9\u27AA\u27AB\u27AC\u27AD\u27AE\u27AF\u27B1\u27B2\u27B3\u27B5\u27B8\u27BA\u27BB\u27BC\u27BD\u27BE\u21D2\u27F6\u27F9]/g, "→")
+    .replace(/[\u21D0\u27F5\u27F8]/g, "←")
+    .replace(/\s*([←→↑↓])\s*/g, "$1")
+    .replace(/[.!?]+$/g, "")
+    .trim();
+}
+
 function sha256(value) {
   return crypto.createHash("sha256").update(value).digest("hex");
 }
@@ -258,7 +269,7 @@ export function auditQuestionRecords(entries, options = {}) {
     const stem = normalizeText(question.q);
     const feedback = normalizeText(question.feedback);
     const { options: answerOptions, correctIndex, hashMatchCount } = optionState(question);
-    const normalizedOptions = answerOptions.map(normalizeComparable);
+    const normalizedOptions = answerOptions.map(normalizeDuplicateOption);
     const difficulty = normalizeComparable(question.canonicalDifficulty || question.difficulty);
     const supportOnly = [...entry.pools].every(pool => ["repair", "repairSeed", "bridge"].includes(pool));
     const graphLinked = isGraphLinked(question);

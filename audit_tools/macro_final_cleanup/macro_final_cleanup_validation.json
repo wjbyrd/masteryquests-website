@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroFinalCleanup-v1",
+  "generatedAt": "2026-09-01T21:00:00.000Z",
+  "verdict": "PASS",
+  "summary": {
+    "checks": 41,
+    "passed": 41,
+    "failed": 0,
+    "macroQuestions": 2870,
+    "authorizedChanged": 9,
+    "unauthorizedChanged": 0,
+    "taxonomyDrift": 0,
+    "preErrors": 13,
+    "postErrors": 0
+  },
+  "checks": [
+    {
+      "name": "Macro question universe preserved",
+      "status": "PASS",
+      "detail": "2870/2870"
+    },
+    {
+      "name": "Ordinary Macro question count preserved",
+      "status": "PASS",
+      "detail": "2758/2758"
+    },
+    {
+      "name": "Advanced Macro Checkpoint Supplement count preserved",
+      "status": "PASS",
+      "detail": "112/112"
+    },
+    {
+      "name": "Macro selectable child and supplement counts preserved",
+      "status": "PASS",
+      "detail": "52 total = 51 ordinary + 1 supplement"
+    },
+    {
+      "name": "Ten Macro family parents preserved",
+      "status": "PASS",
+      "detail": "10/10 canonical Phase 2 parents"
+    },
+    {
+      "name": "Exactly nine authorized question fingerprints changed",
+      "status": "PASS",
+      "detail": "PM2C2-FISH-BR-001, PM2C2-NEUT-BR-001, PM2E-CH-FINAL-001, PM2E-CH-FINAL-002, PM2E-CH-LEG-001, PM2E-CH-LEG-002, PM2E-CH-MID-002, PM2E-CH-OPEN-001, PM2E-CH-OPEN-002"
+    },
+    {
+      "name": "No authorized question was missed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No unauthorized Macro question changed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Four duplicate-rule false positives are content-identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No taxonomy or pool-role drift",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "No questions added or lost globally",
+      "status": "PASS",
+      "detail": "added=0, lost=0"
+    },
+    {
+      "name": "No unrelated Micro question content changed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Global student-facing question changes are exactly the nine authorized IDs",
+      "status": "PASS",
+      "detail": "PM2C2-FISH-BR-001, PM2C2-NEUT-BR-001, PM2E-CH-FINAL-001, PM2E-CH-FINAL-002, PM2E-CH-LEG-001, PM2E-CH-LEG-002, PM2E-CH-MID-002, PM2E-CH-OPEN-001, PM2E-CH-OPEN-002"
+    },
+    {
+      "name": "Macro deterministic ERROR count is zero",
+      "status": "PASS",
+      "detail": "13 → 0"
+    },
+    {
+      "name": "All 13 named deterministic findings are gone",
+      "status": "PASS",
+      "detail": "0 remain"
+    },
+    {
+      "name": "Warnings were not mass-remediated",
+      "status": "PASS",
+      "detail": "726 → 726"
+    },
+    {
+      "name": "43065 no longer triggers duplicate normalization",
+      "status": "PASS",
+      "detail": "-$0.8 trillion | $0.8 trillion | $5.1 trillion | $11.0 trillion"
+    },
+    {
+      "name": "PG4-MM-L-005 no longer triggers duplicate normalization",
+      "status": "PASS",
+      "detail": "md↑; rate↓; interest-sensitive spending↑; ad→; gdp and prices↑ | md↑; rate↑; interest-sensitive spending↓; ad←; gdp and prices↓ | ms↑; rate↑; interest-sensitive spending↓; ad←; gdp and prices↑ | md↓; rate↑; interest-sensitive spending↑; ad→; gdp and prices↑"
+    },
+    {
+      "name": "PG4-MPT-H-001 no longer triggers duplicate normalization",
+      "status": "PASS",
+      "detail": "ms↑→rate↑→spending↓→ad←→output and price level↓ | ms↑→rate↓→spending↑→ad→→output and price level↑ | ms↓→rate↓→spending↑→ad→→output and price level↑ | md↑→rate↓→spending↑→sras→→output and price level↓"
+    },
+    {
+      "name": "PG4-MPT-H-002 no longer triggers duplicate normalization",
+      "status": "PASS",
+      "detail": "ms↓→rate↓→spending↑→ad→→output and price level↑ | ms↑→rate↑→spending↓→ad←→output and price level↓ | md↓→rate↑→spending↓→sras←→output and price level↑ | ms↓→rate↑→spending↓→ad←→output and price level↓"
+    },
+    {
+      "name": "True duplicates still normalize together",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Positive and negative signs remain distinct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Sequence direction remains distinct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Directional graph tokens remain distinct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Seven supplement answer keys resolve uniquely at A",
+      "status": "PASS",
+      "detail": "[{\"questionId\":\"PM2E-CH-FINAL-001\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"Aggregate demand can still rise, but crowding out makes the increase smaller than the simple multiplier predicts.\"},{\"questionId\":\"PM2E-CH-FINAL-002\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"Supporting output can worsen inflation, while restraining inflation can deepen the output and unemployment loss.\"},{\"questionId\":\"PM2E-CH-LEG-001\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"Fiscal expansion and monetary tightening push aggregate demand in opposite directions; rising expected inflation can also shift the short-run Phillips curve.\"},{\"questionId\":\"PM2E-CH-LEG-002\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"The lower unemployment rate alone is misleading; falling participation and below-potential GDP still indicate economic weakness.\"},{\"questionId\":\"PM2E-CH-MID-002\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"Money can affect real activity during short-run adjustment even though its long-run monetary effects are mainly nominal.\"},{\"questionId\":\"PM2E-CH-OPEN-001\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"Real output likely fell, so nominal GDP growth alone does not show a real expansion.\"},{\"questionId\":\"PM2E-CH-OPEN-002\",\"matches\":[0],\"correctIndex\":0,\"correctValue\":\"It can expand productive capacity rather than only push spending toward the existing capacity limit.\"}]"
+    },
+    {
+      "name": "PM2E-CH-FINAL-002 has the exact authorized four-option order",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PM2E-CH-FINAL-002 feedback explains the two-sided tradeoff",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Both BR records remain Bridge adaptive-support records",
+      "status": "PASS",
+      "detail": "[{\"questionId\":\"PM2C2-FISH-BR-001\",\"container\":\"bridgeQuestions\",\"pool\":\"bridge\",\"role\":\"bridge\",\"difficulty\":\"elite\",\"canonicalDifficulty\":\"elite\"},{\"questionId\":\"PM2C2-NEUT-BR-001\",\"container\":\"bridgeQuestions\",\"pool\":\"bridge\",\"role\":\"bridge\",\"difficulty\":\"elite\",\"canonicalDifficulty\":\"elite\"}]"
+    },
+    {
+      "name": "Both BR records use supported elite difficulty",
+      "status": "PASS",
+      "detail": "[{\"questionId\":\"PM2C2-FISH-BR-001\",\"container\":\"bridgeQuestions\",\"pool\":\"bridge\",\"role\":\"bridge\",\"difficulty\":\"elite\",\"canonicalDifficulty\":\"elite\"},{\"questionId\":\"PM2C2-NEUT-BR-001\",\"container\":\"bridgeQuestions\",\"pool\":\"bridge\",\"role\":\"bridge\",\"difficulty\":\"elite\",\"canonicalDifficulty\":\"elite\"}]"
+    },
+    {
+      "name": "Bridge difficulty upstream source is synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Composer library SHA-256 is current",
+      "status": "PASS",
+      "detail": "fb1c1b43e43cb4d2551a924d4043cb74fb1df4be054c0f1b9474dacfb0dd87a2 vs fb1c1b43e43cb4d2551a924d4043cb74fb1df4be054c0f1b9474dacfb0dd87a2"
+    },
+    {
+      "name": "Embedded and standalone registries match",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Generated manifest points to the current library",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Cleanup synchronization is idempotent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "Fresh full-Macro composition succeeds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All supported modes pass preflight",
+      "status": "PASS",
+      "detail": "[{\"mode\":\"standard\",\"label\":\"Standard Campaign\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"easyBoss\",\"minimum\":3,\"count\":155},{\"pool\":\"mediumBoss\",\"minimum\":3,\"count\":157},{\"pool\":\"finalBoss\",\"minimum\":3,\"count\":163},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"timed\",\"label\":\"Timed Trial\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"exam\",\"label\":\"Exam Drill\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"legendary\",\"label\":\"Legendary Mode\",\"requirements\":[{\"pool\":\"legendary\",\"minimum\":6,\"count\":317},{\"pool\":\"legendaryBoss\",\"minimum\":3,\"count\":145}],\"deficiencies\":[],\"issues\":[],\"ok\":true},{\"mode\":\"score\",\"label\":\"Score Attack\",\"requirements\":[{\"pool\":\"easy\",\"minimum\":6,\"count\":379},{\"pool\":\"medium\",\"minimum\":6,\"count\":419},{\"pool\":\"hard\",\"minimum\":6,\"count\":392},{\"pool\":\"easyBoss\",\"minimum\":3,\"count\":155},{\"pool\":\"mediumBoss\",\"minimum\":3,\"count\":157},{\"pool\":\"finalBoss\",\"minimum\":3,\"count\":163},{\"pool\":\"repair\",\"minimum\":1,\"count\":221},{\"pool\":\"bridge\",\"minimum\":1,\"count\":139}],\"deficiencies\":[],\"issues\":[],\"ok\":true}]"
+    },
+    {
+      "name": "Generated package answer hashes verify",
+      "status": "PASS",
+      "detail": "0 issues"
+    },
+    {
+      "name": "Concept Review runtime resolves",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All selected question assets embed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Fresh full-Macro HTML and ZIP generation succeeds",
+      "status": "PASS",
+      "detail": "validation_artifacts/macro_final_cleanup/generated_packages/principles-macro/principles-macro-final-cleanup.zip"
+    },
+    {
+      "name": "Generated HTML contains PM2E-CH-FINAL-002 revised options",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "details": {
+    "fingerprint": {
+      "before": {
+        "digest": "2aa3d42f50484123f8716af3b15300e4c23884ed31846cf4ce7ed28deebef561",
+        "questionCount": 2870
+      },
+      "after": {
+        "digest": "c13f0036cc70ff0ea21778500389b52f6f6b4e02e8e185af9eb11f890d47cf64",
+        "questionCount": 2870
+      },
+      "changedIds": [
+        "PM2C2-FISH-BR-001",
+        "PM2C2-NEUT-BR-001",
+        "PM2E-CH-FINAL-001",
+        "PM2E-CH-FINAL-002",
+        "PM2E-CH-LEG-001",
+        "PM2E-CH-LEG-002",
+        "PM2E-CH-MID-002",
+        "PM2E-CH-OPEN-001",
+        "PM2E-CH-OPEN-002"
+      ],
+      "unauthorizedQuestionChanges": [],
+      "authorizedNotChanged": [],
+      "falsePositiveDrift": [],
+      "taxonomyDrift": []
+    },
+    "globalQuestionComparison": {
+      "before": 9539,
+      "after": 9539,
+      "added": [],
+      "lost": [],
+      "changedIds": [
+        "PM2C2-FISH-BR-001",
+        "PM2C2-NEUT-BR-001",
+        "PM2E-CH-FINAL-001",
+        "PM2E-CH-FINAL-002",
+        "PM2E-CH-LEG-001",
+        "PM2E-CH-LEG-002",
+        "PM2E-CH-MID-002",
+        "PM2E-CH-OPEN-001",
+        "PM2E-CH-OPEN-002"
+      ],
+      "microChangedIds": []
+    },
+    "qualityAudit": {
+      "before": {
+        "errors": 13,
+        "warnings": 726,
+        "reviews": 518
+      },
+      "after": {
+        "errors": 0,
+        "warnings": 726,
+        "reviews": 520
+      },
+      "remainingTargetFindings": [],
+      "newlyVisibleNonErrorFindings": [
+        {
+          "questionId": "PM2E-CH-LEG-002",
+          "severity": "REVIEW",
+          "rule": "weak-absolute-distractors",
+          "message": "2 distractors rely on absolute wording while the correct answer does not."
+        },
+        {
+          "questionId": "PM2E-CH-OPEN-001",
+          "severity": "REVIEW",
+          "rule": "weak-absolute-distractors",
+          "message": "2 distractors rely on absolute wording while the correct answer does not."
+        }
+      ]
+    },
+    "keyVerification": [
+      {
+        "questionId": "PM2E-CH-FINAL-001",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "Aggregate demand can still rise, but crowding out makes the increase smaller than the simple multiplier predicts."
+      },
+      {
+        "questionId": "PM2E-CH-FINAL-002",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "Supporting output can worsen inflation, while restraining inflation can deepen the output and unemployment loss."
+      },
+      {
+        "questionId": "PM2E-CH-LEG-001",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "Fiscal expansion and monetary tightening push aggregate demand in opposite directions; rising expected inflation can also shift the short-run Phillips curve."
+      },
+      {
+        "questionId": "PM2E-CH-LEG-002",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "The lower unemployment rate alone is misleading; falling participation and below-potential GDP still indicate economic weakness."
+      },
+      {
+        "questionId": "PM2E-CH-MID-002",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "Money can affect real activity during short-run adjustment even though its long-run monetary effects are mainly nominal."
+      },
+      {
+        "questionId": "PM2E-CH-OPEN-001",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "Real output likely fell, so nominal GDP growth alone does not show a real expansion."
+      },
+      {
+        "questionId": "PM2E-CH-OPEN-002",
+        "matches": [
+          0
+        ],
+        "correctIndex": 0,
+        "correctValue": "It can expand productive capacity rather than only push spending toward the existing capacity limit."
+      }
+    ],
+    "bridgeVerification": [
+      {
+        "questionId": "PM2C2-FISH-BR-001",
+        "container": "bridgeQuestions",
+        "pool": "bridge",
+        "role": "bridge",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite"
+      },
+      {
+        "questionId": "PM2C2-NEUT-BR-001",
+        "container": "bridgeQuestions",
+        "pool": "bridge",
+        "role": "bridge",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite"
+      }
+    ],
+    "idempotence": {
+      "phase": "phaseMacroFinalCleanup-v1",
+      "dryRun": true,
+      "macroQuestionCount": 2870,
+      "authorized": 9,
+      "resolved": 9,
+      "appliedFromBeforeState": 0,
+      "semanticChangedFiles": [],
+      "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1",
+      "librarySha256": "fb1c1b43e43cb4d2551a924d4043cb74fb1df4be054c0f1b9474dacfb0dd87a2"
+    },
+    "generatedPackage": {
+      "directory": "validation_artifacts/macro_final_cleanup/generated_packages/principles-macro",
+      "htmlBytes": 14513258,
+      "htmlSha256": "caf0803714f2ec04aff71bd0ba5c9c5bfda66944b56377b807a7aeee419e41bb",
+      "assetsEmbedded": 59,
+      "answerVerification": {
+        "ok": true,
+        "questionCount": 2868,
+        "issues": []
+      },
+      "zip": {
+        "status": "PASS",
+        "path": "validation_artifacts/macro_final_cleanup/generated_packages/principles-macro/principles-macro-final-cleanup.zip",
+        "bytes": 4563934,
+        "sha256": "017d3f4b0eb12385334f3306df3e29a2ddf7a14f52dbd7649594c0adfcd53163"
+      }
+    }
+  }
+}

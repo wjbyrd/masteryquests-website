@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroFinalCleanup-v1",
+  "generatedAt": "2026-09-01T21:00:00.000Z",
+  "scope": {
+    "macroQuestions": 2870,
+    "authorizedQuestionIds": 9,
+    "falsePositiveQuestionIds": 4
+  },
+  "falsePositiveQuestionIds": [
+    "43065",
+    "PG4-MM-L-005",
+    "PG4-MPT-H-001",
+    "PG4-MPT-H-002"
+  ],
+  "changes": [
+    {
+      "questionId": "PM2E-CH-FINAL-001",
+      "category": "answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.boss",
+      "changedFields": [
+        "aHash"
+      ],
+      "expectedBefore": {
+        "aHash": "sha256:817a3b9d5d70ae82af1e95f0294a98e7e75aa37e309cd1f55832e013507477a5"
+      },
+      "expectedAfter": {
+        "aHash": "817a3b9d5d70ae82af1e95f0294a98e7e75aa37e309cd1f55832e013507477a5"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2E-CH-LEG-001",
+      "category": "answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.legendaryBoss",
+      "changedFields": [
+        "aHash"
+      ],
+      "expectedBefore": {
+        "aHash": "sha256:335ec61cfed3ebdb9d747b3150440934151794a72a82b6d09d112c806f9fba9b"
+      },
+      "expectedAfter": {
+        "aHash": "335ec61cfed3ebdb9d747b3150440934151794a72a82b6d09d112c806f9fba9b"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2E-CH-LEG-002",
+      "category": "answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.legendaryBoss",
+      "changedFields": [
+        "aHash"
+      ],
+      "expectedBefore": {
+        "aHash": "sha256:63aa48c11e11a416a1badd7f81ec933a420c4aaa97943a460dda7706e51da021"
+      },
+      "expectedAfter": {
+        "aHash": "63aa48c11e11a416a1badd7f81ec933a420c4aaa97943a460dda7706e51da021"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2E-CH-MID-002",
+      "category": "answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.boss",
+      "changedFields": [
+        "aHash"
+      ],
+      "expectedBefore": {
+        "aHash": "sha256:ad47ef207025f90e351e0113523656eb34f3d84ec769a44731acf21354bf3852"
+      },
+      "expectedAfter": {
+        "aHash": "ad47ef207025f90e351e0113523656eb34f3d84ec769a44731acf21354bf3852"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2E-CH-OPEN-001",
+      "category": "answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.boss",
+      "changedFields": [
+        "aHash"
+      ],
+      "expectedBefore": {
+        "aHash": "sha256:53253b46d717eec7204fe673e331bae964cd0f44c7282000fa6d83ceb88860bd"
+      },
+      "expectedAfter": {
+        "aHash": "53253b46d717eec7204fe673e331bae964cd0f44c7282000fa6d83ceb88860bd"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2E-CH-OPEN-002",
+      "category": "answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.boss",
+      "changedFields": [
+        "aHash"
+      ],
+      "expectedBefore": {
+        "aHash": "sha256:c8ccfaca7d8e803ea5fe85d2cbceda301523b302bf45a9703a21c20d2118c568"
+      },
+      "expectedAfter": {
+        "aHash": "c8ccfaca7d8e803ea5fe85d2cbceda301523b302bf45a9703a21c20d2118c568"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2E-CH-FINAL-002",
+      "category": "option-and-answer-key-correction",
+      "authoritativeSource": "audit_tools/macro_final_cleanup/macro_final_cleanup_question_changes.json",
+      "generatedLocation": "integrated-macroeconomic-analysis/questions.boss",
+      "changedFields": [
+        "options",
+        "feedback",
+        "aHash"
+      ],
+      "expectedBefore": {
+        "options": [
+          "Supporting output can worsen inflation, while restraining inflation can deepen the output and unemployment loss.",
+          "Expansionary demand policy simultaneously lowers inflation and unemployment after every adverse supply-side shock.",
+          "Contractionary demand policy shifts short-run aggregate supply right and restores potential output immediately.",
+          "The combination of higher inflation and unemployment proves aggregate demand must have shifted to the right."
+        ],
+        "feedback": "An adverse supply shock creates a tradeoff: supporting demand can worsen inflation, while restraining demand can worsen the output and unemployment loss.",
+        "aHash": "sha256:09588d3465f75abf577103d7afe18912196cc061b41168c5a9c1646c697540e8"
+      },
+      "expectedAfter": {
+        "options": [
+          "Supporting output can worsen inflation, while restraining inflation can deepen the output and unemployment loss.",
+          "Supporting output can reduce unemployment, but because inflation originated from aggregate demand, inflation will necessarily fall as output recovers.",
+          "Restraining aggregate demand can reduce inflation, but it may also lower output further before the supply-side problem is resolved.",
+          "Because inflation and unemployment rise together, policymakers can stabilize both by returning aggregate demand to its original level."
+        ],
+        "feedback": "An adverse supply shock creates a stabilization tradeoff because expansionary demand policy can support output and employment but worsen inflation, while contractionary demand policy can reduce inflation pressure but further weaken output and employment.",
+        "aHash": "09588d3465f75abf577103d7afe18912196cc061b41168c5a9c1646c697540e8"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2C2-FISH-BR-001",
+      "category": "difficulty-metadata-correction",
+      "authoritativeSource": "audit_tools/apply_macro_m2c2_money_growth_inflation.mjs",
+      "generatedLocation": "fisher-effect/bridgeQuestions",
+      "changedFields": [
+        "difficulty",
+        "canonicalDifficulty"
+      ],
+      "expectedBefore": {
+        "difficulty": "bridge",
+        "canonicalDifficulty": "bridge"
+      },
+      "expectedAfter": {
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite"
+      },
+      "expectedCorrectIndex": 0
+    },
+    {
+      "questionId": "PM2C2-NEUT-BR-001",
+      "category": "difficulty-metadata-correction",
+      "authoritativeSource": "audit_tools/apply_macro_m2c2_money_growth_inflation.mjs",
+      "generatedLocation": "monetary-neutrality/bridgeQuestions",
+      "changedFields": [
+        "difficulty",
+        "canonicalDifficulty"
+      ],
+      "expectedBefore": {
+        "difficulty": "bridge",
+        "canonicalDifficulty": "bridge"
+      },
+      "expectedAfter": {
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite"
+      },
+      "expectedCorrectIndex": 0
+    }
+  ],
+  "baseline": {
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1",
+    "librarySha256": "12f3005c5dc15135f2e9c67c71f8b7ad4ce287f9b7713d98b8a163eca0827839",
+    "fingerprintDigest": "2aa3d42f50484123f8716af3b15300e4c23884ed31846cf4ce7ed28deebef561"
+  },
+  "after": {
+    "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1",
+    "librarySha256": "fb1c1b43e43cb4d2551a924d4043cb74fb1df4be054c0f1b9474dacfb0dd87a2",
+    "macroQuestionCount": 2870
+  },
+  "execution": {
+    "authorized": 9,
+    "resolved": 9,
+    "answerKeyCorrections": 6,
+    "optionRewrites": 1,
+    "difficultyCorrections": 2,
+    "records": [
+      {
+        "questionId": "PM2E-CH-FINAL-001",
+        "category": "answer-key-correction",
+        "changedFields": [
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "boss",
+            "index": 34
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "301242a75a7d4731d412c275f2519cad72c6c0cd0fa8a2562fa390a511bb6c5c",
+        "afterFingerprint": "c3dcb41f74c2ea67886f9400527d4e1106966dbab72830dea1b25fe7b5190022"
+      },
+      {
+        "questionId": "PM2E-CH-LEG-001",
+        "category": "answer-key-correction",
+        "changedFields": [
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "legendaryBoss",
+            "index": 22
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "2b5277a2fcc48b6c0cc2c5495aca08d9615308ff8492ac0fdaf9d8bd4fc5411d",
+        "afterFingerprint": "ca46c53356c17613c293e448398a48c433cce7ddc8d3d10d71a0b0d1d9815bcf"
+      },
+      {
+        "questionId": "PM2E-CH-LEG-002",
+        "category": "answer-key-correction",
+        "changedFields": [
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "legendaryBoss",
+            "index": 23
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "8e4971a6d3888d565ccd533ab40d1865368fcf9a6bc39c73350fc38170ad5d4a",
+        "afterFingerprint": "adf16e3747e3510ab41735be82daf9dd151f33dc0d1e450766f73b2d2b8713e0"
+      },
+      {
+        "questionId": "PM2E-CH-MID-002",
+        "category": "answer-key-correction",
+        "changedFields": [
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "boss",
+            "index": 37
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "e9c615eba8c96e181b77de0c15ba87dc0c9f24cb30924b37bd4a28dd06021c9f",
+        "afterFingerprint": "80c9dedd65994d88fbaf33c1540dad65822073320154adf381c351785fab8e8e"
+      },
+      {
+        "questionId": "PM2E-CH-OPEN-001",
+        "category": "answer-key-correction",
+        "changedFields": [
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "boss",
+            "index": 38
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "8e792ebfd63239346384869febc57d521630acecc1e2e62b2fd5478202284982",
+        "afterFingerprint": "e3090d9037d6480249ae3695668310e2635358286d619d9ae27526c76a111c42"
+      },
+      {
+        "questionId": "PM2E-CH-OPEN-002",
+        "category": "answer-key-correction",
+        "changedFields": [
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "boss",
+            "index": 39
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "9cccdd8e32c37a34abfac6c77007d90e9d2c0beea18764e1db7bfba87ac09472",
+        "afterFingerprint": "97123bbb7ce26d3167d62096a412110436a54898d8ef482d29c1827952465f6f"
+      },
+      {
+        "questionId": "PM2E-CH-FINAL-002",
+        "category": "option-and-answer-key-correction",
+        "changedFields": [
+          "options",
+          "feedback",
+          "aHash"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "integrated-macroeconomic-analysis",
+            "container": "questions",
+            "pool": "boss",
+            "index": 35
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "9937f9cd7d785d06a898f3b928d76410a43f29f30368571d70f5d5c70540e8a3",
+        "afterFingerprint": "a072c21a94b19edcb624bc0dc3120ce5249850d5839f3defe5f3cc76a62d54da"
+      },
+      {
+        "questionId": "PM2C2-FISH-BR-001",
+        "category": "difficulty-metadata-correction",
+        "changedFields": [
+          "difficulty",
+          "canonicalDifficulty"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "fisher-effect",
+            "container": "bridgeQuestions",
+            "pool": "bridge",
+            "index": 2
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "c21b3570490b05a652e9fdf4b15dfe6695e0bed6ecf5cc276df554ff7a6bbe22",
+        "afterFingerprint": "41aa26e2b69cd16c2ce01741d7e7aca849c0c3e5d2c88231e6f63e510aa289a0"
+      },
+      {
+        "questionId": "PM2C2-NEUT-BR-001",
+        "category": "difficulty-metadata-correction",
+        "changedFields": [
+          "difficulty",
+          "canonicalDifficulty"
+        ],
+        "result": "AFTER_STATE_VERIFIED",
+        "occurrenceCount": 1,
+        "occurrences": [
+          {
+            "conceptId": "monetary-neutrality",
+            "container": "bridgeQuestions",
+            "pool": "bridge",
+            "index": 4
+          }
+        ],
+        "correctIndex": 0,
+        "beforeFingerprint": "8a3abfab843adec0fdb29e1b1782d46621b5ad80de21f03f791905f5dc0f2071",
+        "afterFingerprint": "aa4f3fce148a74479fa5e141d143916770bcf39fed46afb640818bab45d48b2e"
+      }
+    ]
+  }
+}
